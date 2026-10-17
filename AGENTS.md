@@ -1,3 +1,7 @@
+## Latest chart-product priority (2026-10-17 23:12 Asia/Taipei)
+
+Read CONTINUE_IN_WORK_MODE.md top section, PROJECT_VISION.md newest section and M1_V019_LONG_HISTORY_CHART_HANDOFF.md first. User says synthetic examples are not product grade: the target is a technical-analysis main chart with real long-history navigation and recognized opportunities overlaid, plus aligned volume/MACD. Next Codex handles this defined engineering; do not gate it on testing every synthetic case or completing every undefined classification. Inspect actual saved OHLCV coverage before promising long history; no invented data or automatic reference rules. Android now PARTIAL_EVIDENCE_OBSERVED: two portrait screenshots, one byte-exact uploaded JSON, general user-reported success for prior instructions; rotation details remain unobserved. Latest evidence ledger supersedes older NOT_TESTED statements below. No new product code/tests in this documentation handoff.
+
 # Twstockai: start here
 
 ## Latest attempt-view integration
