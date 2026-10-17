@@ -1,5 +1,12 @@
 # Twstockai: start here
 
+## User's long-term goals and visual-first collaboration
+
+Read [PROJECT_VISION.md](PROJECT_VISION.md) before core strategy, UI or roadmap decisions. User-confirmed completion goals are: (1) whole TWSE/TPEx ordinary-stock chart recognition and strong-stock opportunity selection; (2) opportunity-cost and return-per-unit-time momentum/rotation decisions among new stocks, holdings and cash; (3) a closed loop of capital allocation, entry/exit, cash recovery and redeployment for time-compounding asset growth. These are goals, not implemented or validated results.
+
+The user trades by recognizing shapes. Ask strategy questions through simple price/chart examples, and UI questions through visible mockups. The assistant must translate accepted visual judgments into mathematics/algorithms and test cases; do not push formulas or routine engineering choices back to the user. Use new visual counterexamples only for actual core ambiguity. Keep hypothetical sketches separate from real saved evidence and device QA.
+
+
 The latest additive implementation is the M1 v0.19 independent product candidate under 股票系統M1_v0_18/product_candidate/. The project directory retains its v0.18 name for compatibility. The root v0.17 ZIPs and previous v0.18 pages are immutable historical inputs/artifacts.
 
 1. Before editing, prepare assets from this repository root. On the current Git-tracked source checkout run `python3 codex/bootstrap_m1.py --hydrate-missing`; it verifies a private 852-file baseline and restores missing assets while preserving source changes. The default `python3 codex/bootstrap_m1.py` is for a first import or a strict unchanged-baseline check. Both use the standard library with no downloads or API keys.
