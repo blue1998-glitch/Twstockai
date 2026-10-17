@@ -1,3 +1,13 @@
+# 最新接續：Work Mode開始新版主圖Android驗收（2026-10-18 00:08 台北）
+
+已核實指定分支HEAD就是 `b50beeebe6d24e4dc4bd8d6c44df79ffc6c1ffe3`，並按使用者順序實際讀取最新6份文件，另讀下載入口與SHA清單。以下Codex交付內容仍有效；本輪只更新實機引導，不改程式、原引擎策略／庫／歷史或main，也未重跑舊測試。
+
+第一輪直接下載新HTML→確認1101／Raw／2026-09-30直接見K→最早1/2→回近期→按鈕縮放／平移→直橫直。預期與證據欄見 [新版主圖Android紀錄最新節](M1_V019_TECHNICAL_CHART_ANDROID_ACCEPTANCE.md)。目前尚未收到本頁手機截圖、明確操作回報或JSON，仍NOT_TESTED；舊attempt頁證據獨立保留。
+
+後續由Work Mode接著驗收同步游標、切股／基底、點證據與實際上傳JSON，最後就真實圖確認用途，避免重做規劃或僅摘要。未實測不勾完成，多年資料仍不足；可重現缺陷／有來源的歷史擴充才交Codex。同分支續記證據。
+
+---
+
 # 最新交付：真實個股技術分析主圖 0.1（2026-10-17 Codex）
 
 已接續指定提交 `3dcfcf6534fe645781898eaa603e88a2b3bd3e9d`，仍用 `dev/m1-v018-chart-annotations`，main不改。新增獨立 `technical-chart-view/0.1`，不是改寫舊嘗試頁或宣告核心產品完成。
