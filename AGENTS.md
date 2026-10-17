@@ -1,5 +1,9 @@
 # Twstockai: start here
 
+## Latest attempt-view integration
+
+Continue on dev/m1-v018-chart-annotations. Read CONTINUE_IN_WORK_MODE.md top section, M1_V019_ATTEMPT_CORE_HANDOFF.md, product_candidate/ATTEMPT_VIEW.md and validation_attempt_view_20261017/驗收報告.md under 股票系統M1_v0_18. The unchanged attempt-evidence-candidate/0.1 is now connected to a NEW opt-in page via attempt-view-adapter/0.1, not the old candidate renderer. Seven explicitly synthetic sources / 28 observations only; real source/basis authentication and automatic reference selection are not implemented and cannot be promoted. Latest actual checks: 325 Python, 28 core-prefix/artifact checks, real Chromium 87 checks / 56 byte-exact downloads. Old core/source/view files and historical stores remain unchanged. Physical Android and core product/classification/trading value remain unvalidated. Preserve the earlier reports as history; do not claim full-market, rotation or capital-loop goals complete. Next use Work Mode for actual-device observations and genuinely undefined visual core cases; Codex handles defined rules or reproducible bugs.
+
 ## User's long-term goals and visual-first collaboration
 
 Read [PROJECT_VISION.md](PROJECT_VISION.md) before core strategy, UI or roadmap decisions. User-confirmed completion goals are: (1) whole TWSE/TPEx ordinary-stock chart recognition and strong-stock opportunity selection; (2) opportunity-cost and return-per-unit-time momentum/rotation decisions among new stocks, holdings and cash; (3) a closed loop of capital allocation, entry/exit, cash recovery and redeployment for time-compounding asset growth. These are goals, not implemented or validated results.

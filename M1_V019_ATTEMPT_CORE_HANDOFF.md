@@ -1,3 +1,5 @@
+> 後續實作更新（2026-10-17 Codex）：已依本交接接入新的獨立候選頁／重播／下載。核心本體與原引擎、策略、歷史未改；目前僅7個假想工程來源。325 Python、28成品／核心前綴、真實Chromium87檢查／56下載通過，Android與真實分類／績效未測。詳細見 CONTINUE_IN_WORK_MODE.md 最新節與 股票系統M1_v0_18/product_candidate/ATTEMPT_VIEW.md、validation_attempt_view_20261017/驗收報告.md。以下「UI未接入／未測」保留為本文件原先交接時點，不代表後續未完成。
+
 # 接續建構：嘗試關卡與量先價核心已可整合
 
 本輪基於 `dev/m1-v018-chart-annotations` 原頭 `99d41200b2207b654f080e497804e5b94edfc3e3`，新增獨立 `attempt-evidence-candidate/0.1`。使用本文件所在分支的最新提交，**不要從 main、54a3ea3 或舊 ZIP 覆蓋本次新增程式**。原 v0.19 網頁成品與歷史引擎／庫保留。

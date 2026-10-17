@@ -26,3 +26,7 @@
 實際通過286項Python（270原測試＋16新候選）、最後顯示調整後16項候選重測；真實保存6組1490時點／12個截短前綴；最後HTML真實Chromium66檢查、48次精確JSON下載，含觸控手勢與旋轉。完整命令、原始log、hash、截圖在 `product_candidate/validation_20261017/`。合成情境測試與真實保存資料的因果核對分開，不把兩者當作正式分類正確率。
 
 確定缺口已補：可讀證據主線、前後時點鏈、主要／完整證據分開、獨立MACD、原股數量、任意可用日期／時間與價格尺度操作、共用游標重播。仍未完成：完整生命階段、正式型態、重要性判斷品質、盤中及持有人資料、使用者核心用途認可和Android實機。具體核心案例與下一輪裁決在根目錄 `M1_V019_CORE_RULE_DECISIONS.md`；不是全部核心功能完成。
+
+## 45aaeec 之後的嘗試證據接入
+
+依最新使用者101／106／量先價裁決及 M1_V019_ATTEMPT_CORE_HANDOFF.md，新增獨立 attempt-view-adapter/0.1。畫面／重播／下載只讀原 attempt-evidence-candidate/0.1 結果，7個假想來源共28時點；原核心及舊candidate source不改。325 Python、28成品前綴、Chromium87檢查／56精確下載通過，證據另存 product_candidate/validation_attempt_view_20261017/。這補的是已定義核心接入，不補造原表仍缺的正式型態／生命階段／重要性／真實來源／持倉與資金規則；全市場等三大目標、Android實機與SQLite根因仍未完成。

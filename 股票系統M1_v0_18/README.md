@@ -1,3 +1,11 @@
+# 最新：嘗試關卡／量先價獨立候選畫面
+
+本輪依提交45aaeec接入新頁 `M1_v0_19_attempt_candidate.html`，先勾選啟用並明選來源／時點。101／106、量先價／先後未知、盤中／完成日、後來跌回與完整下載分開保存；只接7個假想工程來源，沒有自動選區、真實盤中／完整交易資格。原核心及舊頁／庫／策略不改。命令與使用見 [ATTEMPT_VIEW.md](product_candidate/ATTEMPT_VIEW.md)，本環境325 Python／Chromium87檢查及56下載證據見 [接入驗收](product_candidate/validation_attempt_view_20261017/驗收報告.md)。Android實機未測。
+
+完整離線ZIP的新頁在 `product_candidate/generated/`；Git source先root bootstrap --hydrate-missing，下載入口及下一步見root CONTINUE_IN_WORK_MODE.md。
+
+## 以下為原候選README沿革
+
 # 最新：M1 v0.19 獨立產品候選
 
 專案目錄保留v0.18名稱；最新source在 [product_candidate/README.md](product_candidate/README.md)，實測在 [候選驗收報告](product_candidate/validation_20261017/驗收報告.md)。新頁補逐日上下文／證據鏈、任意時間及價格尺度、原股數成交量與獨立MACD。原引擎／策略／門檻／schema／歷史庫／舊頁保留。生命階段、正式型態及核心用途認可仍未完成，Android實機未測。

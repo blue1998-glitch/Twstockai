@@ -1,3 +1,38 @@
+# 最新接續：嘗試關卡／量先價已接入獨立候選畫面（2026-10-17 Codex）
+
+指定分支仍為 `dev/m1-v018-chart-annotations`；本輪接續 `45aaeecf92fabee80a4f2729328ae161e0d0203b`，main未改。**已完成這次明確授權的畫面、逐觀察重播及精確下載接入**；不將原核心測試或假想圖升格成真實分類／交易價值驗收。
+
+先讀 [M1_V019_ATTEMPT_CORE_HANDOFF.md](M1_V019_ATTEMPT_CORE_HANDOFF.md)、[新頁契約與命令](股票系統M1_v0_18/product_candidate/ATTEMPT_VIEW.md)、[本輪實測](股票系統M1_v0_18/product_candidate/validation_attempt_view_20261017/驗收報告.md)。原 [PROJECT_VISION.md](PROJECT_VISION.md) 與 [最新圖形裁決](M1_V019_VISUAL_RULE_NOTES.md) 持續有效。下面「UI尚未接入」是上輪歷史，不能拿來覆蓋本輪實作。
+
+## 本輪可使用
+
+- 新頁 `M1_v0_19_attempt_candidate.html`，獨立 `attempt-view-adapter/0.1`；原 `attempt-evidence-candidate/0.1` 本體、原策略、舊候選計算／頁面、schema及歷史庫未改。
+- 先勾選啟用，再明選來源／觀察時點；顯示來源檔明選近期高點／左區來源，沒有自動選區或代選最新。101／106條件、量先價／先後未知、盤中／完成日及後來跌回分開；不因放量直接寫成已過106，不抹掉原嘗試。
+- 當時K／量、僅本日已提供觀察點、事件時序、支持／反面／缺證；歷史片段與原股數單位明示。只有完成日線時盤中缺少，不補造。未接持倉／成交，不產生賣出指令。
+- 每個時點下載Python預先序列化的完整來源前綴／核心輸出／ID／基底與原精度；瀏覽器不重算分析或重寫大整數。新來源／新檔名／新schema與舊版分離。
+
+本輪來源為**7個假想工程例、共28觀察**；真實行情／盤中、自動圖形辨識、真實基底／歷史可得認證未接入。adapter會拒絕將未認證來源標為真實資料，不把缺選取資料送去全市場選股。全市場辨識、動能換股及資金閉環三大最終目標仍未完成。
+
+## 實際驗證
+
+- **325項Python全套通過**：原270＋原候選16＋上輪核心24＋本輪接入15；歷次重測不加總。
+- 實際匯出成品與未修改核心逐前綴28時點核對通過；截短／改未來不改舊view／下載／事件ID。84個既有受保護檔案SHA不變。
+- 新頁真實Chromium桌面／手機模擬 **87檢查、56次原始位元組下載核對通過**，含重播、條件分離、量缺少／先後未知、原精度、canvas／DPR、單指原生捲動、全螢幕與旋轉；JS錯誤／外部請求／橫向溢位未見。第一輪高速下載逾時保留為FAIL診斷，最終以150ms節奏重跑全部下載，沒有減少案例或放寬斷言。
+- Android本機開檔／實機效能與操作仍NOT_TESTED。分類NOT_VALIDATED、完整交易資格NOT_EVALUATED、強勢延續NOT_CLASSIFIED、勝率null；原SQLite事故根因NOT_ESTABLISHED，326人工覆核UNREVIEWED。新頁不借用舊66／48或72下載報告。
+
+## 下載與繼續
+
+[最新成品入口](deliveries/m1-v019-attempt-view-20261017/README.md)：新單頁小ZIP、獨立HTML／JSON、三個完整離線ZIP、檔案指紋、實測／解壓／GitHub下載核對。完整三包各含部分檔案，解壓至同一資料夾；候選新頁位於 `股票系統M1_v0_18/product_candidate/generated/`。Git checkout才需root `python3 codex/bootstrap_m1.py --hydrate-missing` 保留修改補缺資產，完整離線ZIP不需舊包或bootstrap。
+
+**下一步工作模式對話**：用新頁已接入的假想例確認呈現是否符合原圖含義，並引導新版Android實測；真正未決核心再用圖釐清，不重問101是否必須等106或一般工程授權。原1101／2884案例、正式型態／生命階段／重要性與持倉／資金規則仍保留未決，不擅補閾值。有明確定義或可重現程式問題後回Codex。若工作模式無GitHub工具，須明說未讀source，改用三個完整ZIP，不把摘要當完整讀取。
+
+可直接交接：
+> 請使用 blue1998-glitch/Twstockai 的 dev/m1-v018-chart-annotations 分支，先讀 CONTINUE_IN_WORK_MODE.md 最上方、M1_V019_ATTEMPT_CORE_HANDOFF.md、PROJECT_VISION.md、M1_V019_VISUAL_RULE_NOTES.md 及 product_candidate/ATTEMPT_VIEW.md／validation_attempt_view_20261017/驗收報告.md。101／106與量先價已接入假想候選頁；請用實際開啟的新頁檢視原圖含義與逐時點證據，協助Android實測。分開記錄使用者回報、實際觀察、檔案核對與未測項目。僅對真正未定核心用圖討論，不自行發明門檻、不把工程測試當策略完成；有明確規則／可重現程式問題後交Codex。成果更新同一分支，不改main。
+
+---
+
+## 以下為接入前的交接沿革
+
 # 最新接續：101／106與量先價獨立核心已實作，可交Codex接入畫面（2026-10-17）
 
 **先讀 [M1_V019_ATTEMPT_CORE_HANDOFF.md](M1_V019_ATTEMPT_CORE_HANDOFF.md)**，再讀最新 [圖形裁決](M1_V019_VISUAL_RULE_NOTES.md)。本輪新增可執行程式，不再只是討論筆記；仍在 dev/m1-v018-chart-annotations，不改main。

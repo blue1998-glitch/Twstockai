@@ -1,3 +1,15 @@
+# 最新：嘗試關卡／量先價已接入畫面
+
+接續45aaeec，新增 attempt-view-adapter/0.1 與獨立 `M1_v0_19_attempt_candidate.html`。原 attempt_evidence.py、原src、舊candidate計算／UI、schema與歷史保持不變。先讀root最新CONTINUE與 M1_V019_ATTEMPT_CORE_HANDOFF，再讀 product_candidate/ATTEMPT_VIEW.md 及 validation_attempt_view_20261017/驗收報告.md。新頁先啟用、明選來源／觀察；核心在離線Python計算，JS只渲染既有子條件／事件與原精度下載。
+
+本輪325 Python通過，7假想來源／28成品核心前綴一致，新頁真實Chromium87檢查／56精確下載通過；84個原受保護檔SHA不變。初輪連續高速下載逾時保留FAIL診斷，修正測試節奏後全部重新核對。沒有新增真實行情、盤中供應、自動選取、正式分類／勝率或交易績效；Android實機未測，SQLite根因仍未知。三大最終目標未完成。
+
+下一步工作模式檢視新頁與Android實測，真正未定核心才再用圖討論，不重問101必須等106；明確規則或程式故障回Codex。GitHub成品與交接更新同一獨立分支，main保留，禁止部署／付費／交易／訊息／子代理。
+
+---
+
+## 以下為先前交接沿革
+
 # 最新 Codex 交接：v0.19 獨立候選
 
 2026-10-17最新使用者回饋要求修正核心用途，取代下面歷史「只做Android／不新增必要功能」範圍。先讀root CONTINUE_IN_WORK_MODE.md、M1_V018_PRODUCT_GAP_HANDOFF.md、M1_V019_REQUIREMENTS_TRACE.md；source在 product_candidate/，新規則為 product-context-candidate/0.1 及 macd-12-26-9-sma-seed/0.1，未改原引擎、共同schema、舊庫或舊頁。
