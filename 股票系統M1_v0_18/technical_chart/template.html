@@ -1,0 +1,14 @@
+<!doctype html><html lang="zh-Hant"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>M1 個股技術分析主圖 0.1</title><style>@@STYLE@@</style></head><body>
+<header><b>M1 技術分析</b><label>個股 <select id="stock" aria-label="個股"></select></label><label>基底 <select id="mode" aria-label="價格基底"></select></label><span id="close"></span><button id="focus">專注主圖</button></header>
+<main><section id="workspace" aria-label="日K、成交量及MACD同步主圖">
+<div class="toolbar"><label>分析日 <select id="asOf" aria-label="分析日期"></select></label><button id="prev" aria-label="前一分析日">◀日</button><button id="next" aria-label="後一分析日">日▶</button><button id="play">重播</button><button id="download">下載 JSON</button></div>
+<div class="toolbar navigation"><button id="earliest">最早</button><button id="left" aria-label="向較早平移">←</button><button id="zoomIn" aria-label="放大時間">＋</button><button id="zoomOut" aria-label="縮小時間">－</button><button id="right" aria-label="向近期平移">→</button><button id="all">全段</button><button id="recent">回近期</button><select id="interaction" aria-label="觸控操作"><option value="scroll">單指捲頁</option><option value="pan">單指移圖／雙指縮放</option></select></div>
+<p id="window" class="compact" aria-live="polite"></p><canvas id="chart" aria-label="真實日K、成交量與MACD，共用時間軸。可使用上方按鈕瀏覽。" tabindex="0"></canvas>
+<div id="cursorValues" aria-live="polite"></div><div class="toolbar"><button id="inspectDate">以游標日回看分析</button><button id="showEvidence">圖中證據</button><label><input id="allProfiles" type="checkbox">顯示 minor</label><label><input id="historyZones" type="checkbox">已失效區</label></div>
+<p id="boundary" class="compact"></p>
+</section>
+<details id="details"><summary>來源、資料缺口與顯示說明</summary><p id="coverage"></p><p>只有保存日線，視為已完成日K；盤中序列與量價先後未知。收盤越區、接觸、兩收盤失效均沿用 structure-0.3-research 保存事件；不是新嘗試核心的101／106關卡，也不是正式突破買點。major／minor是既有參數組，並非已認可重要性排名。圖形顯示兩位小數，JSON保留原精度。</p><p>圖上高低點畫在發生日，但只在選定分析日已確認時顯示；點選查看發生、首次觀察與確認日。色帶從保存建立日至失效日／分析日。收盤事件只疊相同有效公司行動基底；其他基底請切分析日期查看。JSON另保留當時以前的全部原始事件，各自標示錨定，不混用數值。瀏覽時間窗與分析日期分開；需要當時判斷，請選「以游標日回看分析」。整檔含之後可明選的資料，當前繪圖／下載只讀選中前綴。</p><p>MACD沿用獨立候選12／26／9 SMA種子版本，柱為2×(DIF−DEA)；缺值／暖機保留，Raw公司行動日重置。Adjusted為既有投影函數產生的獨立候選OHLC，不冒充原保存Adjusted OHLC。公司行動及歷史公布時刻未完整驗證；非即時行情、非完整多年歷史、分類 NOT_VALIDATED、交易資格 NOT_EVALUATED。</p></details>
+<p class="foot">候選研究證據，非交易指令。未定生命階段／正式型態／自動參照仍未知。手機模擬不等於 Android 實機驗收。</p>
+</main>
+<aside id="evidence" hidden aria-label="圖形證據"><div class="drawerhead"><b id="evidenceTitle">圖中證據</b><button id="dismiss">關閉證據</button></div><div id="evidenceBody"></div></aside>
+<script type="application/json" id="payload">@@DATA@@</script><script>@@SCRIPT@@</script></body></html>

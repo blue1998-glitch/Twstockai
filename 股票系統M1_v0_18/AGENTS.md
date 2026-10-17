@@ -1,3 +1,5 @@
+> 最新獨立主圖交付：請讀repository root CONTINUE_IN_WORK_MODE.md最上方及本專案 technical_chart/README.md、technical_chart/validation_20261017/驗收報告.md。新頁technical-chart-view/0.1直接呈現真實日K／量／MACD、導航、原保存證據與JSON。1101／2884僅179根、6488／8069僅283根，無多年或真實盤中。新主圖Android NOT_TESTED；舊嘗試頁PARTIAL_EVIDENCE_OBSERVED獨立保留。原引擎、策略、schema、庫與舊頁不改；下方舊狀態按其歷史時點閱讀。
+
 # Project instructions
 
 - Latest attempt-core integration is a NEW opt-in page via product_candidate/attempt_view.py and attempt_template.html / attempt_viewer.js. Read product_candidate/ATTEMPT_VIEW.md and validation_attempt_view_20261017/驗收報告.md. It only enables explicitly synthetic fixtures, not real market authentication or automatic references. The original attempt core and all old candidate calculation/view sources remain immutable. Latest tests: 325 Python, 28 source/core prefix checks, real Chromium87 / 56 exact downloads; physical Android and product/trading acceptance remain unvalidated.

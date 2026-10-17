@@ -1,3 +1,24 @@
+# 最新交付：真實個股技術分析主圖 0.1（2026-10-17 Codex）
+
+已接續指定提交 `3dcfcf6534fe645781898eaa603e88a2b3bd3e9d`，仍用 `dev/m1-v018-chart-annotations`，main不改。新增獨立 `technical-chart-view/0.1`，不是改寫舊嘗試頁或宣告核心產品完成。
+
+**先下載 [新主圖成品與三個完整ZIP](deliveries/m1-v019-technical-chart-20261017/README.md)**。主頁位於 `股票系統M1_v0_18/technical_chart/generated/M1_v0_19_technical_chart.html`；完整ZIP解壓即可用，不必bootstrap。Git checkout先 `python3 codex/bootstrap_m1.py --hydrate-missing` 保留差異，再依 [主圖契約與重現命令](股票系統M1_v0_18/technical_chart/README.md)。[實測報告](股票系統M1_v0_18/technical_chart/validation_20261017/驗收報告.md)及 [新主圖手機步驟](M1_V019_TECHNICAL_CHART_ANDROID_ACCEPTANCE.md) 為本輪依據。
+
+開啟直接看到1101 Raw、明列固定2026-09-30分析入口，K／量／MACD共用時間窗及游標；可切股／基底／分析日、最早／全段／近期、縮放平移、手機手勢、逐日重播、點保存標記查原始證據與JSON下載。瀏覽不改分析日；回到游標日須明選。下載保留當時前綴及全部原歷史事件，各自標示來源／基底；不合併跨錨定數值。
+
+**真實歷史仍有限**：1101／2884各179根，2026-01-02～09-30；6488／8069各283根，2025-08-01～2026-09-30，後兩檔提供Raw及Adjusted候選。各組對提供的行事曆缺日／額外日0、OHLC／量缺值0，但不是完整官方日曆認證。1101／2884全部18個保存官方月回應SHA與OHLCV相同。沒有多年或9/30後資料，也沒有真實盤中；不以1490分析frame或假想圖冒充。公司行動／歷史公布時間限制保留，1101／2884沒有Adjusted。
+
+實際本輪：Python全套336通過，最後下載調整後主圖11項再測通過（不相加）；原Node介面模擬16檢查／18真實對照通過；新主圖真實Chromium87檢查／60精度下載通過；成品1490時點證據／前綴核對，原候選數值全等。桌面、390直向、844橫向、320窄屏及手勢已在雲端測，**不是Android實機**。新主圖Android NOT_TESTED；舊嘗試頁PARTIAL_EVIDENCE_OBSERVED紀錄原封保留。
+
+原引擎、策略、src、product_candidate原程式、SQLite、歷史結果及舊頁未改；只新增主圖／接入／測試／交付與更新說明。保存已確認結構仍是研究候選，未升格成已認可買點；生命階段／正式型態／重要性／自動左區或關卡未知。101／106未硬套真實股票，全市場辨識／換股／資金閉環、分類品質／績效及SQLite原事故根因仍未完成／未證實。
+
+**下一步工作模式**：協助使用者開新主圖，直→橫→直、看最早→近期、切股、點標記、下載JSON；分開記錄實際畫面、使用者回報、檔案核對與未測。討論真正未定的核心才用圖，別重問已決101／106。若有可重現缺陷或需擴充多年真實資料，交Codex，先確認免費官方來源／網路與公司行動證據，不改main或捏造資料。若工作模式無法讀GitHub，下載三個完整ZIP，明說實際讀到的檔案範圍。每次成果更新同一分支。
+
+可直接交接：
+> 接續 blue1998-glitch/Twstockai，分支 dev/m1-v018-chart-annotations 最新提交。先讀 CONTINUE_IN_WORK_MODE.md 最上方、M1_V019_LONG_HISTORY_CHART_HANDOFF.md 最新節、technical_chart/README.md、本輪驗收報告及 M1_V019_TECHNICAL_CHART_ANDROID_ACCEPTANCE.md。請引導我使用真實個股主圖，完成新版Android實機紀錄及用途回饋；不能沿用舊假想頁手機結果，不能把雲端模擬當真機。多年歷史仍缺，未決核心不補門檻；可重現工程問題交Codex，所有紀錄更新同分支，不改main。
+
+---
+
 # 最新主線：長歷史技術分析主圖＋機會疊圖，交Codex推進（2026-10-17 23:12 台北）
 
 先讀 [長歷史圖形主介面交接](M1_V019_LONG_HISTORY_CHART_HANDOFF.md)、[PROJECT_VISION最新要求](PROJECT_VISION.md)及[實機紀錄最新節](M1_V019_ATTEMPT_ANDROID_ACCEPTANCE.md)。仍使用dev/m1-v018-chart-annotations最新提交，main不改；既有成品程式基準709cde6。本輪僅文件／證據交接，沒有實作新頁或新工程測試。

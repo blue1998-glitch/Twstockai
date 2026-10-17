@@ -1,3 +1,5 @@
+> 最新獨立主圖交付：請讀repository root CONTINUE_IN_WORK_MODE.md最上方及本專案 technical_chart/README.md、technical_chart/validation_20261017/驗收報告.md。新頁technical-chart-view/0.1直接呈現真實日K／量／MACD、導航、原保存證據與JSON。1101／2884僅179根、6488／8069僅283根，無多年或真實盤中。新主圖Android NOT_TESTED；舊嘗試頁PARTIAL_EVIDENCE_OBSERVED獨立保留。原引擎、策略、schema、庫與舊頁不改；下方舊狀態按其歷史時點閱讀。
+
 # 最新：嘗試關卡／量先價獨立候選畫面
 
 本輪依提交45aaeec接入新頁 `M1_v0_19_attempt_candidate.html`，先勾選啟用並明選來源／時點。101／106、量先價／先後未知、盤中／完成日、後來跌回與完整下載分開保存；只接7個假想工程來源，沒有自動選區、真實盤中／完整交易資格。原核心及舊頁／庫／策略不改。命令與使用見 [ATTEMPT_VIEW.md](product_candidate/ATTEMPT_VIEW.md)，本環境325 Python／Chromium87檢查及56下載證據見 [接入驗收](product_candidate/validation_attempt_view_20261017/驗收報告.md)。Android實機未測。
