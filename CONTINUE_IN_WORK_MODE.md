@@ -1,3 +1,24 @@
+# 最新接續：M1 v0.19 獨立候選（2026-10-17 Codex 實作）
+
+**目前分支仍為 `dev/m1-v018-chart-annotations`，main 未合併。** 專案目錄保留 `股票系統M1_v0_18/`，新候選 source 在 `product_candidate/`。以下舊 v0.18 狀態是歷史；本節為最新實作狀態。
+
+本輪先建立 [M1_V019_REQUIREMENTS_TRACE.md](M1_V019_REQUIREMENTS_TRACE.md)，再補確定缺口：原保存高低點／波段／區域的上下文、支持／反證／缺證、逐日連結與重播、任意可用時間區間及價格尺度、共用時間軸K線／股數量／獨立MACD候選。圖形與原始事件不是完成標準；預設呈現主要狀態，完整次級事件可展開。未改原引擎、策略、門檻、schema、歷史庫及舊頁。
+
+**核心產品用途仍未獲驗收。** 五種生命階段、正式修正／三種整理／盤中點線與長紅牆／反彈失敗條件尚缺定義，保留UNKNOWN；量價不能證明籌碼集中。最新確認主要低點只是一個候選參照，不代表重要性判斷已完成。分類NOT_VALIDATED、交易資格NOT_EVALUATED、SQLite事故根因NOT_ESTABLISHED、326人工覆核UNREVIEWED。
+
+實際驗證：286 Python通過；最後純顯示調整後16項候選重測通過；1490個真實保存frame及12個截短前綴通過；最後HTML真實Chromium66檢查、48次精確JSON下載通過，含桌面／手機模擬、拖曳／雙指縮放、原生捲動、任意日期、價格尺度、共同游標、全螢幕及旋轉。Android實機仍NOT_TESTED。詳細執行範圍、原始log、hash及截圖見 [候選驗收報告](股票系統M1_v0_18/product_candidate/validation_20261017/驗收報告.md)，不要把舊72下載或未重跑項目混成本輪。
+
+成品入口：[deliveries/m1-v019-context-20261017/README.md](deliveries/m1-v019-context-20261017/README.md)。包含單頁小ZIP、獨立HTML／候選JSON與三包完整離線專案。三包各自含部分檔案，解壓到同一資料夾即可；完整資產已內附，不需舊ZIP。Git checkout才需要先跑 `python3 codex/bootstrap_m1.py --hydrate-missing`，保留修改並補資產。
+
+**下一步使用工作模式對話**：先讀本入口、原 [M1_V018_PRODUCT_GAP_HANDOFF.md](M1_V018_PRODUCT_GAP_HANDOFF.md)、[需求對照](M1_V019_REQUIREMENTS_TRACE.md)、[具體核心待定案例](M1_V019_CORE_RULE_DECISIONS.md)、候選README及驗收報告。針對1101混合高低點與2884結構仍在但動能轉弱的具體時點，釐清階段／修正、主要關鍵低點及三種整理的必要／排除／失效條件；不自行添加門檻。可引導新版Android實機測試並保留實際證據。定義明確或有可重現程式錯誤後回Codex。工作模式沒有GitHub工具時，必須明說未讀到source，改使用三個完整ZIP，不能只讀摘要就說已取得專案。
+
+可直接給工作模式：
+> 請讀取 blue1998-glitch/Twstockai 的 dev/m1-v018-chart-annotations 分支，先讀 CONTINUE_IN_WORK_MODE.md、M1_V019_REQUIREMENTS_TRACE.md、M1_V019_CORE_RULE_DECISIONS.md 及 product_candidate 的README／驗收報告。v0.19是獨立工程候選，不代表核心用途通過；請根據具體保存案例與原規格整理生命階段／修正、主要關鍵低點及三種整理的必要條件與反證，缺少定義保留未知，不擅定門檻。協助我實測候選頁Android，分開記錄使用者回報、實際觀察、檔案核對與未測項目；保留原策略與歷史結果。成果更新同一獨立分支；定義明確後交回Codex實作。
+
+---
+
+## 以下為 v0.18 交接沿革
+
 # 工作模式／Codex 接續入口
 
 目前版本：**M1 v0.18 結構標記版**。來源儲存庫為 blue1998-glitch/Twstockai，最新接續分支為 `dev/m1-v018-chart-annotations`。請明確選此分支；main 尚未合併這次成品。

@@ -1,5 +1,8 @@
 # Project instructions
 
+- Latest authorized product work is additive v0.19 in product_candidate/ (directory name remains v0.18). Read root CONTINUE_IN_WORK_MODE.md, M1_V018_PRODUCT_GAP_HANDOFF.md, M1_V019_REQUIREMENTS_TRACE.md and product_candidate/README.md first. Latest feedback supersedes historical Android-only/no-new-stage restrictions below. This is not approval of new strategy thresholds or core lifecycle definitions.
+- The independent explicit offline candidate producer reads original stores and projects newly labelled candidate OHLC/MACD; it never changes old engines, schemas, stores or pages. Its UI performs no analysis calculation. Product/lifecycle/pattern acceptance remains unknown, classification NOT_VALIDATED, trades NOT_EVALUATED. Final real Chromium checks are PASS, physical Android NOT_TESTED; historical BLOCKED notes below describe earlier environments. See product_candidate/validation_20261017/驗收報告.md. Standing GitHub branch file-delivery authorization from root AGENTS applies; deployment/payment/trading/messages and subagents remain prohibited.
+
 - User-authorized saved-evidence annotations are now implemented in 日週月研究對照_結構標記_v0_18.html; read docs/結構標記顯示契約.md and annotations/validation_20261017/驗收報告.md. The two reference diagrams are visual input, not authority to invent long-candle resistance, platform-breakout or failed-rebound rules. Only daily saved pivots/zones are overlaid. Original pages and numeric data stay immutable. New-page real Chromium acceptance is now PASS via loopback HTTP; physical Android is still NOT_TESTED.
 
 - This is a Traditional Chinese stock-system research prototype for a non-engineer user.

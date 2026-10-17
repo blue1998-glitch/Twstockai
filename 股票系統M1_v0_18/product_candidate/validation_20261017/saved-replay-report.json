@@ -1,0 +1,411 @@
+{
+  "status": "PASS",
+  "bundle_id": "sha256:fbc7d238092f74938a80b344cc1c2ba1740c501590cac56b5da256b60884dc41",
+  "checks": [
+    {
+      "kind": "REAL_SAVED_PREFIX_INVARIANCE",
+      "code": "8069",
+      "mode": "ADJUSTED_CANDIDATE",
+      "prefix": 91,
+      "through": "2025-12-11"
+    },
+    {
+      "kind": "REAL_SAVED_PREFIX_INVARIANCE",
+      "code": "8069",
+      "mode": "ADJUSTED_CANDIDATE",
+      "prefix": 151,
+      "through": "2026-03-19"
+    },
+    {
+      "kind": "REAL_SAVED_PREFIX_INVARIANCE",
+      "code": "8069",
+      "mode": "RAW_CANDIDATE",
+      "prefix": 91,
+      "through": "2025-12-11"
+    },
+    {
+      "kind": "REAL_SAVED_PREFIX_INVARIANCE",
+      "code": "8069",
+      "mode": "RAW_CANDIDATE",
+      "prefix": 151,
+      "through": "2026-03-19"
+    },
+    {
+      "kind": "REAL_SAVED_PREFIX_INVARIANCE",
+      "code": "1101",
+      "mode": "RAW_CANDIDATE",
+      "prefix": 91,
+      "through": "2026-05-25"
+    },
+    {
+      "kind": "REAL_SAVED_PREFIX_INVARIANCE",
+      "code": "1101",
+      "mode": "RAW_CANDIDATE",
+      "prefix": 151,
+      "through": "2026-08-19"
+    },
+    {
+      "kind": "REAL_SAVED_PREFIX_INVARIANCE",
+      "code": "6488",
+      "mode": "RAW_CANDIDATE",
+      "prefix": 91,
+      "through": "2025-12-11"
+    },
+    {
+      "kind": "REAL_SAVED_PREFIX_INVARIANCE",
+      "code": "6488",
+      "mode": "RAW_CANDIDATE",
+      "prefix": 151,
+      "through": "2026-03-19"
+    },
+    {
+      "kind": "REAL_SAVED_PREFIX_INVARIANCE",
+      "code": "6488",
+      "mode": "ADJUSTED_CANDIDATE",
+      "prefix": 91,
+      "through": "2025-12-11"
+    },
+    {
+      "kind": "REAL_SAVED_PREFIX_INVARIANCE",
+      "code": "6488",
+      "mode": "ADJUSTED_CANDIDATE",
+      "prefix": 151,
+      "through": "2026-03-19"
+    },
+    {
+      "kind": "REAL_SAVED_PREFIX_INVARIANCE",
+      "code": "2884",
+      "mode": "RAW_CANDIDATE",
+      "prefix": 91,
+      "through": "2026-05-25"
+    },
+    {
+      "kind": "REAL_SAVED_PREFIX_INVARIANCE",
+      "code": "2884",
+      "mode": "RAW_CANDIDATE",
+      "prefix": 151,
+      "through": "2026-08-19"
+    }
+  ],
+  "real_examples": [
+    {
+      "code": "8069",
+      "mode": "ADJUSTED_CANDIDATE",
+      "date": "2026-09-30",
+      "frame_id": "sha256:b8490de0908bd3c126c7af3b9ceb98971b296590f9f2ce60cc4e555c6add9185",
+      "original_record_id": "sha256:3fbdb1c2be44cf3eb244c344acbc2671335634fa0ce603e41e984280afae89b8",
+      "structure_snapshot_id": "sha256:5bef4b670414e0a89e7dec035435a65637fd5be410e446eb799525caa904075f",
+      "structure": {
+        "candidate_state": "MIXED_SWING_EVIDENCE",
+        "high_relation": "HIGHER",
+        "low_relation": "LOWER",
+        "primary_low_condition": "NOT_BREACHED",
+        "primary_low_zone_id": "zone:major:LOW:2026-05-04:2026-05-04:119",
+        "scope": "LATEST_CONFIRMED_LOW_IS_A_REFERENCE_NOT_A_VALIDATED_IMPORTANCE_RANKING"
+      },
+      "opposing": [
+        {
+          "code": "FALLING_DAILY_MA",
+          "reason": "Moving-average risk is not cancelled by positive structure evidence",
+          "references": [
+            "daily_ma:20"
+          ]
+        },
+        {
+          "code": "FALLING_DAILY_MA",
+          "reason": "Moving-average risk is not cancelled by positive structure evidence",
+          "references": [
+            "daily_ma:260"
+          ]
+        },
+        {
+          "code": "FALLING_DAILY_MA",
+          "reason": "Moving-average risk is not cancelled by positive structure evidence",
+          "references": [
+            "daily_ma:5"
+          ]
+        },
+        {
+          "code": "FALLING_DAILY_MA",
+          "reason": "Moving-average risk is not cancelled by positive structure evidence",
+          "references": [
+            "daily_ma:60"
+          ]
+        },
+        {
+          "code": "RETURNED_INTO_OR_BELOW_PREVIOUSLY_BREACHED_RESISTANCE",
+          "reason": "Observable re-entry; formal false-breakout classification remains undefined; no automatic role swap",
+          "references": [
+            "zone:major:HIGH:2025-11-21:2025-11-24:57"
+          ]
+        },
+        {
+          "code": "RETURNED_INTO_OR_BELOW_PREVIOUSLY_BREACHED_RESISTANCE",
+          "reason": "Observable re-entry; formal false-breakout classification remains undefined; no automatic role swap",
+          "references": [
+            "zone:major:HIGH:2026-02-11:2026-02-11:81"
+          ]
+        },
+        {
+          "code": "RETURNED_INTO_OR_BELOW_PREVIOUSLY_BREACHED_RESISTANCE",
+          "reason": "Observable re-entry; formal false-breakout classification remains undefined; no automatic role swap",
+          "references": [
+            "zone:major:HIGH:2026-04-22:2026-04-22:110"
+          ]
+        },
+        {
+          "code": "TIMEFRAME_CONFLICT",
+          "references": [
+            "monthly:6:DAILY_DOWN_VS_PERIOD_UP"
+          ]
+        }
+      ],
+      "missing": [
+        "LIFECYCLE_OPERATIONAL_RULES_UNDEFINED",
+        "THREE_FORMAL_PATTERN_RULES_UNDEFINED",
+        "HOLDER_AND_BROKER_DATA_UNAVAILABLE",
+        "FULL_STOCK_LIFECYCLE_NOT_COVERED",
+        "INTRADAY_EVENTS_UNAVAILABLE",
+        "OFFICIAL_CALENDAR_NOT_AUTHENTICATED",
+        "COMPLETE_ACTIONS_AND_PUBLICATION_TIMING_UNVERIFIED"
+      ]
+    },
+    {
+      "code": "8069",
+      "mode": "RAW_CANDIDATE",
+      "date": "2026-09-30",
+      "frame_id": "sha256:d40da3c30ae5de9ff2a5667f002c5467bdbec37b6d756d5a491c9026c72c88e3",
+      "original_record_id": "sha256:ef80cdedbc07512ff07a66b68da40a361b191eba238e7e2775786f18397600f8",
+      "structure_snapshot_id": "sha256:f09f8665510f91f70ecca9dbbbd7d4f2ce0b9fcc87e7c463b202ab2d758984d0",
+      "structure": {
+        "candidate_state": "UNKNOWN",
+        "high_relation": "UNKNOWN",
+        "low_relation": "UNKNOWN",
+        "primary_low_condition": "UNKNOWN",
+        "primary_low_zone_id": null,
+        "scope": "LATEST_CONFIRMED_LOW_IS_A_REFERENCE_NOT_A_VALIDATED_IMPORTANCE_RANKING"
+      },
+      "opposing": [
+        {
+          "code": "FALLING_DAILY_MA",
+          "reason": "Moving-average risk is not cancelled by positive structure evidence",
+          "references": [
+            "daily_ma:20"
+          ]
+        },
+        {
+          "code": "FALLING_DAILY_MA",
+          "reason": "Moving-average risk is not cancelled by positive structure evidence",
+          "references": [
+            "daily_ma:260"
+          ]
+        },
+        {
+          "code": "FALLING_DAILY_MA",
+          "reason": "Moving-average risk is not cancelled by positive structure evidence",
+          "references": [
+            "daily_ma:5"
+          ]
+        },
+        {
+          "code": "FALLING_DAILY_MA",
+          "reason": "Moving-average risk is not cancelled by positive structure evidence",
+          "references": [
+            "daily_ma:60"
+          ]
+        },
+        {
+          "code": "TIMEFRAME_CONFLICT",
+          "references": [
+            "monthly:6:DAILY_DOWN_VS_PERIOD_UP"
+          ]
+        }
+      ],
+      "missing": [
+        "LIFECYCLE_OPERATIONAL_RULES_UNDEFINED",
+        "THREE_FORMAL_PATTERN_RULES_UNDEFINED",
+        "HOLDER_AND_BROKER_DATA_UNAVAILABLE",
+        "FULL_STOCK_LIFECYCLE_NOT_COVERED",
+        "INTRADAY_EVENTS_UNAVAILABLE",
+        "OFFICIAL_CALENDAR_NOT_AUTHENTICATED",
+        "COMPLETE_ACTIONS_AND_PUBLICATION_TIMING_UNVERIFIED",
+        "NO_CONFIRMED_MAJOR_LOW_REFERENCE_IN_CURRENT_EPISODE"
+      ]
+    },
+    {
+      "code": "1101",
+      "mode": "RAW_CANDIDATE",
+      "date": "2026-09-30",
+      "frame_id": "sha256:dbf310e97a64edb11cc7c3b43cc40413e0d5103312eeda54c092b7fb6cb45551",
+      "original_record_id": "sha256:5fe1faee3b027b88e394aa77ecb16c653b6bd3e519c53e985031ee645c3ed82c",
+      "structure_snapshot_id": "sha256:a53eeb01f0cf88df16e9bf8008b7f53557c63c632e92d52f78c90c1468e3f5c2",
+      "structure": {
+        "candidate_state": "MIXED_SWING_EVIDENCE",
+        "high_relation": "LOWER",
+        "low_relation": "HIGHER",
+        "primary_low_condition": "NOT_BREACHED",
+        "primary_low_zone_id": "zone:major:LOW:2026-09-16:2026-09-16:119",
+        "scope": "LATEST_CONFIRMED_LOW_IS_A_REFERENCE_NOT_A_VALIDATED_IMPORTANCE_RANKING"
+      },
+      "opposing": [],
+      "missing": [
+        "LIFECYCLE_OPERATIONAL_RULES_UNDEFINED",
+        "THREE_FORMAL_PATTERN_RULES_UNDEFINED",
+        "HOLDER_AND_BROKER_DATA_UNAVAILABLE",
+        "FULL_STOCK_LIFECYCLE_NOT_COVERED",
+        "INTRADAY_EVENTS_UNAVAILABLE",
+        "OFFICIAL_CALENDAR_NOT_AUTHENTICATED",
+        "COMPLETE_ACTIONS_AND_PUBLICATION_TIMING_UNVERIFIED"
+      ]
+    },
+    {
+      "code": "6488",
+      "mode": "RAW_CANDIDATE",
+      "date": "2026-09-30",
+      "frame_id": "sha256:c0f867cf0eb622732c4e0271761111c7c587b92574f33e1d3dbef82f2eb66edf",
+      "original_record_id": "sha256:254a43be5ece80ccfb7211227306dc552eae6e3353e3b5647d7175bab385dcfb",
+      "structure_snapshot_id": "sha256:c260acd15fa43bd70d11341627f00cc2790bce19943b066b2ccfbe61b3420615",
+      "structure": {
+        "candidate_state": "UNKNOWN",
+        "high_relation": "UNKNOWN",
+        "low_relation": "UNKNOWN",
+        "primary_low_condition": "UNKNOWN",
+        "primary_low_zone_id": null,
+        "scope": "LATEST_CONFIRMED_LOW_IS_A_REFERENCE_NOT_A_VALIDATED_IMPORTANCE_RANKING"
+      },
+      "opposing": [
+        {
+          "code": "FALLING_DAILY_MA",
+          "reason": "Moving-average risk is not cancelled by positive structure evidence",
+          "references": [
+            "daily_ma:60"
+          ]
+        }
+      ],
+      "missing": [
+        "LIFECYCLE_OPERATIONAL_RULES_UNDEFINED",
+        "THREE_FORMAL_PATTERN_RULES_UNDEFINED",
+        "HOLDER_AND_BROKER_DATA_UNAVAILABLE",
+        "FULL_STOCK_LIFECYCLE_NOT_COVERED",
+        "INTRADAY_EVENTS_UNAVAILABLE",
+        "OFFICIAL_CALENDAR_NOT_AUTHENTICATED",
+        "COMPLETE_ACTIONS_AND_PUBLICATION_TIMING_UNVERIFIED",
+        "NO_CONFIRMED_MAJOR_LOW_REFERENCE_IN_CURRENT_EPISODE"
+      ]
+    },
+    {
+      "code": "6488",
+      "mode": "ADJUSTED_CANDIDATE",
+      "date": "2026-09-30",
+      "frame_id": "sha256:40e4039828863705dc658f5fd019ad9aa20648455a6547d84cfb5fa07725c508",
+      "original_record_id": "sha256:6bfa1244cec4803f08d40baa9fae35e217543f695a34183cbb8c243b72f7bff5",
+      "structure_snapshot_id": "sha256:72b160ab0c7a1cad1805edf9cdbb23eb8abfe7e9dd8c5e45fd0e2f66777f15fb",
+      "structure": {
+        "candidate_state": "RISING_SWINGS_REFERENCE_INTACT",
+        "high_relation": "HIGHER",
+        "low_relation": "HIGHER",
+        "primary_low_condition": "NOT_BREACHED",
+        "primary_low_zone_id": "zone:major:LOW:2026-06-29:2026-06-29:173",
+        "scope": "LATEST_CONFIRMED_LOW_IS_A_REFERENCE_NOT_A_VALIDATED_IMPORTANCE_RANKING"
+      },
+      "opposing": [
+        {
+          "code": "FALLING_DAILY_MA",
+          "reason": "Moving-average risk is not cancelled by positive structure evidence",
+          "references": [
+            "daily_ma:60"
+          ]
+        },
+        {
+          "code": "RETURNED_INTO_OR_BELOW_PREVIOUSLY_BREACHED_RESISTANCE",
+          "reason": "Observable re-entry; formal false-breakout classification remains undefined; no automatic role swap",
+          "references": [
+            "zone:major:HIGH:2026-06-01:2026-06-01:154"
+          ]
+        },
+        {
+          "code": "RETURNED_INTO_OR_BELOW_PREVIOUSLY_BREACHED_RESISTANCE",
+          "reason": "Observable re-entry; formal false-breakout classification remains undefined; no automatic role swap",
+          "references": [
+            "zone:major:HIGH:2026-06-22:2026-06-22:168"
+          ]
+        }
+      ],
+      "missing": [
+        "LIFECYCLE_OPERATIONAL_RULES_UNDEFINED",
+        "THREE_FORMAL_PATTERN_RULES_UNDEFINED",
+        "HOLDER_AND_BROKER_DATA_UNAVAILABLE",
+        "FULL_STOCK_LIFECYCLE_NOT_COVERED",
+        "INTRADAY_EVENTS_UNAVAILABLE",
+        "OFFICIAL_CALENDAR_NOT_AUTHENTICATED",
+        "COMPLETE_ACTIONS_AND_PUBLICATION_TIMING_UNVERIFIED"
+      ]
+    },
+    {
+      "code": "2884",
+      "mode": "RAW_CANDIDATE",
+      "date": "2026-09-30",
+      "frame_id": "sha256:8adc1209272933bde2787a80288038092c378cee010afaa03adf7a5f9d968428",
+      "original_record_id": "sha256:e6aaf2c31fd1b03a5a48d152f2c7f06df20a60a919c2f1f496eaa4dffecdc38c",
+      "structure_snapshot_id": "sha256:9ae078e54aae44ec16611eb67dd535f480b527e6945fbad26485d54e99f52be1",
+      "structure": {
+        "candidate_state": "RISING_SWINGS_REFERENCE_INTACT",
+        "high_relation": "HIGHER",
+        "low_relation": "HIGHER",
+        "primary_low_condition": "NOT_BREACHED",
+        "primary_low_zone_id": "zone:major:LOW:2026-07-01:2026-07-01:86",
+        "scope": "LATEST_CONFIRMED_LOW_IS_A_REFERENCE_NOT_A_VALIDATED_IMPORTANCE_RANKING"
+      },
+      "opposing": [
+        {
+          "code": "FALLING_DAILY_MA",
+          "reason": "Moving-average risk is not cancelled by positive structure evidence",
+          "references": [
+            "daily_ma:5"
+          ]
+        }
+      ],
+      "missing": [
+        "LIFECYCLE_OPERATIONAL_RULES_UNDEFINED",
+        "THREE_FORMAL_PATTERN_RULES_UNDEFINED",
+        "HOLDER_AND_BROKER_DATA_UNAVAILABLE",
+        "FULL_STOCK_LIFECYCLE_NOT_COVERED",
+        "INTRADAY_EVENTS_UNAVAILABLE",
+        "OFFICIAL_CALENDAR_NOT_AUTHENTICATED",
+        "COMPLETE_ACTIONS_AND_PUBLICATION_TIMING_UNVERIFIED"
+      ]
+    }
+  ],
+  "classification_quality": "NOT_VALIDATED",
+  "product_acceptance": "NOT_ESTABLISHED",
+  "interpretation": "Observed saved facts and prefix invariance, not retrospectively labelled pattern accuracy",
+  "frames_checked": 1490,
+  "series_checked": 6,
+  "observed_state_counts": {
+    "UNKNOWN": 322,
+    "MIXED_SWING_EVIDENCE": 703,
+    "PRIMARY_LOW_REFERENCE_CHALLENGED": 6,
+    "PRIMARY_LOW_REFERENCE_BREACHED": 146,
+    "FALLING_SWING_RELATION": 133,
+    "RISING_SWINGS_REFERENCE_INTACT": 180
+  },
+  "oracle_cases": 24,
+  "historical_manifest": {
+    "entries": 851,
+    "exact_matches": 844,
+    "differences": [
+      "AGENTS.md",
+      "README.md",
+      "docs/CODEX交接.md",
+      "src/cross_view_cli.py",
+      "src/cross_view_export.py",
+      "tests/test_cross_view.cjs",
+      "tests/test_mobile_viewer_browser.cjs"
+    ],
+    "protected_engine_database_html_checked": 51,
+    "protected_status": "ALL_MATCH",
+    "old_src_vs_git_head": "ALL_MATCH",
+    "compared_git_head": "00800a5f94e1f879c04b702f656008d44790fa18",
+    "whole_checkout_baseline": "NOT_CLAIMED"
+  }
+}

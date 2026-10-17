@@ -1,3 +1,11 @@
+# 最新：M1 v0.19 獨立產品候選
+
+專案目錄保留v0.18名稱；最新source在 [product_candidate/README.md](product_candidate/README.md)，實測在 [候選驗收報告](product_candidate/validation_20261017/驗收報告.md)。新頁補逐日上下文／證據鏈、任意時間及價格尺度、原股數成交量與獨立MACD。原引擎／策略／門檻／schema／歷史庫／舊頁保留。生命階段、正式型態及核心用途認可仍未完成，Android實機未測。
+
+Git checkout先在repository root跑 `python3 codex/bootstrap_m1.py --hydrate-missing`，保留修改。完整離線ZIP已附歷史資產，直接進本目錄使用；候選頁在 product_candidate/generated/。最新下載與接續入口見root CONTINUE_IN_WORK_MODE.md。
+
+## 原 v0.18 README
+
 # 股票系統 M1 v0.18：手機閱讀修正
 
 新增成品：**日週月研究對照_結構標記_v0_18.html**。在日線上顯示原引擎已保存的主要／次級轉折候選，以及支撐／壓力區候選。可點圖或用證據清單查看發生／首次觀察／確認日期與狀態；可切換歷史區域、60／130 筆／全部。

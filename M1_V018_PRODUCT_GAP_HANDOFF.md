@@ -1,3 +1,5 @@
+> 2026-10-17 Codex 實作後續：本文件保留原需求與當時附件核對，下面「未實作／未測」指原交接時點。最新可確定缺口已實作為獨立 v0.19 候選，見 CONTINUE_IN_WORK_MODE.md、M1_V019_REQUIREMENTS_TRACE.md、product_candidate/README.md 及其 validation_20261017/驗收報告.md。工程測試通過，不代表本文件核心用途已獲使用者認可；未定義生命階段／正式型態仍UNKNOWN。具體未決案例見 M1_V019_CORE_RULE_DECISIONS.md。
+
 # M1 v0.18 核心用途落差與 Codex 修正交接
 
 日期：2026-10-17（台北時間）。

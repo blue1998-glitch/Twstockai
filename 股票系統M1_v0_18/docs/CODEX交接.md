@@ -1,3 +1,17 @@
+# 最新 Codex 交接：v0.19 獨立候選
+
+2026-10-17最新使用者回饋要求修正核心用途，取代下面歷史「只做Android／不新增必要功能」範圍。先讀root CONTINUE_IN_WORK_MODE.md、M1_V018_PRODUCT_GAP_HANDOFF.md、M1_V019_REQUIREMENTS_TRACE.md；source在 product_candidate/，新規則為 product-context-candidate/0.1 及 macd-12-26-9-sma-seed/0.1，未改原引擎、共同schema、舊庫或舊頁。
+
+已補逐日已保存證據上下文／波段關係／主要低點參照、支持／反證／缺證與狀態連結、任意日期／時間及價格尺度、共用時間軸的K／量／MACD。Adjusted候選K是新離線投影，明示並非舊日線保存OHLC；UI不計算分析。最近低點參照不是已驗證重要性排名。生命週期／修正／正式型態保留UNKNOWN，盤中與持有人資訊缺少；不得為填滿畫面創造規則。
+
+本環境實際驗證286 Python，最後純顯示調整後16項候選重測；真實保存1490frame與12截短前綴；最後HTML真實Chromium66檢查／48次精確下載。Android實機NOT_TESTED，核心用途NOT_ESTABLISHED，分類NOT_VALIDATED、交易NOT_EVALUATED，原SQLite根因NOT_ESTABLISHED。原始log／hash／截圖與精確執行範圍在 product_candidate/validation_20261017/驗收報告.md；可重現命令在 product_candidate/README.md。舊套件／72下載與三輪SQLite測試本輪未另重跑，保留為歷史。
+
+下一步工作模式用root M1_V019_CORE_RULE_DECISIONS.md 的具體時點處理真正未定義核心思想，並可做新版Android實機驗收；有具體規則／程式故障再回Codex。常態授權允許成品與source更新同一GitHub獨立分支，main保留；不部署、付費、交易、發訊息或開子代理。
+
+---
+
+## 以下為 v0.18 交接沿革（當時狀態）
+
 # Codex 交接：M1 v0.18 手機閱讀修正
 
 ## 本環境最新接續（2026-10-17）
