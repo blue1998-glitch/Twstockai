@@ -1,6 +1,6 @@
 # M1 v0.18：結構標記版交付
 
-只想使用：下載 [M1_v0_18_annotations.html](M1_v0_18_annotations.html?raw=true)，儲存在裝置後以瀏覽器開啟。內含原保存資料，不必另外下載資料庫，也不連線新行情。
+只想使用：下載 [單頁網頁 ZIP](M1_v0_18_annotations_page.zip?raw=true)，解壓後在裝置以瀏覽器開啟。也可直接儲存 [HTML](M1_v0_18_annotations.html?raw=true)。內含原保存資料，不必另外下載資料庫，也不連線新行情。
 
 完整交接：下列三包各自包含部分檔案，全部下載並解壓到同一資料夾即可，不需要舊 ZIP。
 - [M1_v0_18_annotations_01.zip](M1_v0_18_annotations_01.zip?raw=true)：19.02 MB
