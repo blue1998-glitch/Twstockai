@@ -1,0 +1,64 @@
+{
+  "schema_version": "analysis-evidence/1.0",
+  "code": "8069",
+  "coverage_status": "UNVERIFIED",
+  "records": [
+    {
+      "kind": "INDIVIDUAL_REVIEWED_CASH_EVENTS",
+      "records": [
+        {
+          "code": "8069",
+          "effective_date": "2026-07-20",
+          "cash_dividend": "5.88820682",
+          "previous_close": "181.50",
+          "official_reference": "175.61",
+          "theoretical_reference": "175.61179318",
+          "factor": "0.9675580891460055096418732782",
+          "formula": "(previous_close-cash_dividend)/previous_close",
+          "source_file": "ex_2026.json",
+          "source_sha256": "2fa46e2c5ad959714ff5b29d09c0d33857fcf0fcfa84c551a4fce504dda80efc",
+          "observed_at": "2026-10-16T04:31:49.951166+00:00",
+          "published_at": null,
+          "historical_publication_time": "NOT_VERIFIED",
+          "rule_version": "adjustment-0.1-cash-only-candidate"
+        }
+      ],
+      "complete_period_coverage": "UNVERIFIED"
+    },
+    {
+      "kind": "EXTERNAL_CALENDAR_AUDIT",
+      "audit": {
+        "code": "8069",
+        "exchange": "TPEX",
+        "window": [
+          "2025-08-01",
+          "2026-09-30"
+        ],
+        "before_exception": {
+          "status": "DIFFERENCES_REQUIRE_EVIDENCE",
+          "observed": 283,
+          "planned": 284,
+          "missing_dates": [
+            "2026-07-10"
+          ],
+          "unexpected_dates": [],
+          "individual_suspensions": "UNVERIFIED",
+          "ad_hoc_closures": "UNVERIFIED",
+          "interpretation": "Differences are evidence requests, not automatically missing-price defects"
+        },
+        "after_evidenced_exceptions": {
+          "status": "MATCHES_PLANNED_SCHEDULE",
+          "observed": 283,
+          "planned": 283,
+          "missing_dates": [],
+          "unexpected_dates": [],
+          "individual_suspensions": "UNVERIFIED",
+          "ad_hoc_closures": "UNVERIFIED",
+          "interpretation": "Differences are evidence requests, not automatically missing-price defects"
+        },
+        "note": "Only exchange-specific reviewed closure cases applied; no exhaustive calendar or individual-suspension certification"
+      }
+    }
+  ],
+  "controlled_evidence_revision": "EVIDENCE_CONTEXT_TEST_2_NO_VERIFICATION_UPGRADE"
+}
