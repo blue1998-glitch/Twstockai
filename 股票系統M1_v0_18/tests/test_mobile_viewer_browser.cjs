@@ -2,11 +2,12 @@
 const fs=require('fs'),path=require('path'),http=require('http'),assert=require('assert/strict');
 const {pathToFileURL}=require('url');
 const root=path.resolve(__dirname,'..'),out=path.resolve(process.env.M1_BROWSER_OUTPUT_DIR||path.join(root,'mobile_viewer/output/browser'));
-const htmlPath=path.join(root,'日週月研究對照_手機版_v0_18.html');
+const htmlPath=path.join(root,process.env.M1_BROWSER_HTML||'日週月研究對照_手機版_v0_18.html');
+const annotated=path.basename(htmlPath)==='日週月研究對照_結構標記_v0_18.html';
 const transport=process.env.M1_BROWSER_TRANSPORT||'file';
 fs.mkdirSync(out,{recursive:true});
 const cases=[],startedAt=new Date().toISOString();let browser,server;
-function write(value){fs.writeFileSync(path.join(out,'手機版真實瀏覽器驗收.json'),JSON.stringify({started_at_utc:startedAt,ended_at_utc:new Date().toISOString(),transport,physical_android_new_version:'NOT_TESTED',cases,...value},null,2))}
+function write(value){fs.writeFileSync(path.join(out,'手機版真實瀏覽器驗收.json'),JSON.stringify({started_at_utc:startedAt,ended_at_utc:new Date().toISOString(),html:path.basename(htmlPath),transport,physical_android_new_version:'NOT_TESTED',cases,...value},null,2))}
 (async()=>{
  try{
   assert(['file','http'].includes(transport),'M1_BROWSER_TRANSPORT must be file or http');
@@ -38,6 +39,17 @@ function write(value){fs.writeFileSync(path.join(out,'手機版真實瀏覽器�
     await page.selectOption('#daily',originalCase.daily_key);await page.selectOption('#period',originalCase.period_key);
     if(mobile)await page.locator('#load').tap();else await page.locator('#load').click();
     assert(await page.locator('#result').isVisible());assert.match(await page.locator('#badge').textContent(),/輸入對齊/);
+    if(annotated){
+     await page.selectOption('#annotationLevel','major');await page.selectOption('#annotationHistory','active');await page.selectOption('#annotationWindow','130');
+     const saved=JSON.parse(fs.readFileSync(path.join(root,'cross_view/output',originalCase.case+'_VIEW.json'),'utf8'));
+     const structure=saved.daily.snapshot.structure,dates=saved.daily.source_candles.slice(-130).map(bar=>bar.date);
+     const wantedPivots=structure.pivots.filter(p=>p.profile==='major'&&dates.includes(p.occurred_at));
+     const wantedZones=structure.zones.filter(z=>z.profile==='major'&&z.state==='ACTIVE_CANDIDATE'&&z.created_at<=dates.at(-1)&&!z.invalidated_at);
+     const actual=await page.evaluate(()=>annotationState.items.map(item=>({type:item.type,saved:item.saved})));
+     assert.deepEqual(actual.filter(item=>item.type==='pivot').map(item=>item.saved),wantedPivots);
+     assert.deepEqual(actual.filter(item=>item.type==='zone').map(item=>item.saved),wantedZones);
+     assert.equal(await page.locator('#annotationSelect option').count(),actual.length+1);
+    }
     for(const basis of ['candidate','elapsed']){
      await page.selectOption('#basis',basis);
      const wanted={daily:row.daily,...row[basis]};
@@ -62,6 +74,29 @@ function write(value){fs.writeFileSync(path.join(out,'手機版真實瀏覽器�
      cases.push({viewport,case:originalCase.case,basis,status:'PASS',download_exact:true,display_two_decimals:true,canvas_backing:canvasState});
     }
     if(originalCase.price_mode==='ADJUSTED_CANDIDATE')assert.match(await page.locator('#dailyFacts').textContent(),/還原日 K 沒有存入/);
+    if(annotated){
+     const exact=await page.evaluate(()=>JSON.stringify(current));
+     const visible=await page.evaluate(()=>annotationState.items.map(item=>({key:item.key,saved:item.saved})));
+     if(visible.length){
+      await page.selectOption('#annotationSelect',visible[0].key);
+      assert((await page.locator('#annotationDetail').textContent()).includes(visible[0].saved.id));
+      await page.locator('#dailyChart').scrollIntoViewIfNeeded();
+      const hit=await page.evaluate(()=>annotationState.hits.find(item=>item.type==='pivot'));
+      if(hit){const rect=await page.locator('#dailyChart').boundingBox();
+       if(mobile)await page.touchscreen.tap(rect.x+hit.x,rect.y+hit.y);else await page.mouse.click(rect.x+hit.x,rect.y+hit.y);
+       assert(await page.evaluate(()=>annotationState.selected.startsWith('pivot:')));
+      }
+     }
+     if(originalCase.code==='8069'&&originalCase.as_of==='2026-09-30'&&originalCase.structure_version==='structure-0.3-research'){
+      await page.locator('#dailyBoard').screenshot({path:path.join(out,viewport.width+'-'+originalCase.price_mode+'-annotations.png')});
+      await page.screenshot({path:path.join(out,viewport.width+'-'+originalCase.price_mode+'-page.png'),fullPage:true});
+     }
+     await page.selectOption('#annotationLevel','both');await page.selectOption('#annotationHistory','all');await page.selectOption('#annotationWindow','all');
+     assert(await page.evaluate(()=>annotationState.items.every(item=>item.type!=='zone'||(item.start>=item.saved.created_at&&(!item.saved.invalidated_at||item.end<=item.saved.invalidated_at)))));
+     await page.selectOption('#annotationLevel','off');assert.equal(await page.evaluate(()=>annotationState.items.length),0);
+     assert.equal(await page.evaluate(()=>JSON.stringify(current)),exact);
+     assert(await page.evaluate(()=>document.documentElement.scrollWidth<=innerWidth));
+    }
    }
    const before=await page.evaluate(()=>JSON.stringify(current));
    await page.setViewportSize({width:mobile?844:1000,height:mobile?390:900});

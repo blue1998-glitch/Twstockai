@@ -9,11 +9,16 @@ import tempfile
 
 TEMPLATE=Path(__file__).with_name('cross_view_template.html')
 MOBILE_TEMPLATE=Path(__file__).with_name('cross_view_mobile_template.html')
+ANNOTATED_TEMPLATE=Path(__file__).with_name('cross_view_annotated_template.html')
+ANNOTATION_SCRIPT=Path(__file__).with_name('chart_annotations.js')
 
 
 def render(payload, *, template=TEMPLATE):
     require(payload.get('schema_version')==SCHEMA,'catalog.schema_version')
     text=Path(template).read_text(encoding='utf-8');require(text.count('@@CROSS_DATA@@')==1,'template')
+    if '@@ANNOTATION_CODE@@' in text:
+        require(text.count('@@ANNOTATION_CODE@@')==1,'annotation_template')
+        text=text.replace('@@ANNOTATION_CODE@@',ANNOTATION_SCRIPT.read_text(encoding='utf-8'))
     encoded=canonical(payload)
     for char,escaped in [('&','\\u0026'),('<','\\u003c'),('>','\\u003e'),('\u2028','\\u2028'),('\u2029','\\u2029')]:encoded=encoded.replace(char,escaped)
     return text.replace('@@CROSS_DATA@@',encoded)
@@ -21,7 +26,7 @@ def render(payload, *, template=TEMPLATE):
 
 def protect(config,output,inputs=(), *, template=TEMPLATE):
     validate_config(config)
-    files=list(map(Path,inputs))+[TEMPLATE,MOBILE_TEMPLATE,Path(template),Path(__file__)]
+    files=list(map(Path,inputs))+[TEMPLATE,MOBILE_TEMPLATE,ANNOTATED_TEMPLATE,ANNOTATION_SCRIPT,Path(template),Path(__file__)]
     for p in config['daily_stores'].values():
         files.extend(Path(str(p)+suffix) for suffix in ('','-journal','-wal','-shm'))
     for root in config['period_stores'].values():protect_output(root,output,files)

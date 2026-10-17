@@ -10,10 +10,10 @@ class Element{
  set textContent(v){this._text=String(v);this.children=[]}get textContent(){return this._text+this.children.map(x=>x.textContent).join('')}
  replaceChildren(...n){this._text='';this.children=n}append(...n){this.children.push(...n)}addEventListener(t,f){this.listeners[t]=f}fire(t){this.listeners[t]()}click(){this.clicked=true}
 }
-function setup(payload=data){
- const ids=[...new Set([...html.matchAll(/id="([^"]+)"/g)].map(m=>m[1]))];const elements=Object.fromEntries(ids.map(id=>[id,new Element()]));elements['cross-data'].textContent=payload;elements.basis.value='elapsed';const calls={daily:[],weekly:[],monthly:[]},downloads=[],links=[];
+function setup(payload=data,source=html){
+ const ids=[...new Set([...source.matchAll(/id="([^"]+)"/g)].map(m=>m[1]))];const elements=Object.fromEntries(ids.map(id=>[id,new Element()]));elements['cross-data'].textContent=payload;elements.basis.value='elapsed';const calls={daily:[],weekly:[],monthly:[]},downloads=[],links=[];
  for(const tf of ['daily','weekly','monthly']){const ctx=new Proxy({},{get(t,k){if(k in t)return t[k];return(...args)=>{for(const a of args)if(typeof a==='number')assert(Number.isFinite(a),'nonfinite '+k);calls[tf].push([k,...args])}},set(t,k,v){calls[tf].push(['set',k,v]);t[k]=v;return true}});elements[tf+'Chart'].getContext=()=>ctx}
- const context=vm.createContext({document:{getElementById:id=>elements[id],createElement:tag=>{const e=new Element();if(tag==='a')links.push(e);return e}},Blob:class{constructor(p){downloads.push(p.join(''))}},URL:{createObjectURL:()=>'blob:test',revokeObjectURL:()=>{}}});vm.runInContext(script,context);
+ const context=vm.createContext({document:{getElementById:id=>elements[id],createElement:tag=>{const e=new Element();if(tag==='a')links.push(e);return e}},Blob:class{constructor(p){downloads.push(p.join(''))}},URL:{createObjectURL:()=>'blob:test',revokeObjectURL:()=>{}}});vm.runInContext(source.match(/<script>\n([\s\S]*?)<\/script>/)[1],context);
  return{el:elements,calls,downloads,links,run:s=>vm.runInContext(s,context),change(id,value){elements[id].value=value;elements[id].fire('change')}}
 }
 function canonical(v){if(Array.isArray(v))return '['+v.map(canonical).join(',')+']';if(v&&typeof v==='object')return '{'+Object.keys(v).sort().map(k=>JSON.stringify(k)+':'+canonical(v[k])).join(',')+'}';return JSON.stringify(v)}

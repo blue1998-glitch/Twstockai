@@ -1,5 +1,19 @@
 # Codex 交接：M1 v0.18 手機閱讀修正
 
+## 本環境最新接續（2026-10-17）
+
+原 v0.18 新手機頁已完成真實 Chromium HTTP 驗收，72 次下載核對通過。使用者新增兩張點位／色帶範例後，另交付「日週月研究對照_結構標記_v0_18.html」；同樣完成 72 次下載核對，另測證據清單、滑鼠／觸控標記、層級／歷史／視窗過濾與旋轉重畫。先讀 docs/結構標記顯示契約.md 與 annotations/validation_20261017/驗收報告.md。
+
+現在是 270 項 Python 全通過（新增5項只讀匯出相容／防護）、根目錄 bootstrap hydration 整合測試1項通過、原頁16＋手機基礎16＋手機顯示6＋標記8項 Node 檢查通過。未重跑無改動的三輪 SQLite fault runner，不能算成本輪新增結果。原手機版與舊頁輸出仍逐字相同，原保存數值及引擎不變。以下 BLOCKED 是來源環境歷史狀態；新證據另存，未覆蓋歷史報告。
+
+標記版重現：`python3 src/cross_view_cli.py --config cross_view/sources.json --html --annotations --output 日週月研究對照_結構標記_v0_18.html`。瀏覽器命令在原指令加 `M1_BROWSER_HTML=日週月研究對照_結構標記_v0_18.html`，輸出至新的證據目錄。若只驗原手機版，省略此變數。日線標記來自原 structure 快照，週月不自行新增結構，Adjusted 不生成 OHLC，原策略／門檻不變。
+
+Git 現在追蹤可審查 source；新 checkout 先從 repository root 跑 `python3 codex/bootstrap_m1.py --hydrate-missing` 補齊未追蹤資產，再匯出標記頁。該選項只補缺檔，保留並報告差異；預設 bootstrap 仍為嚴格歷史基準驗證。不要以覆蓋或刪除方式讓歷史指紋看似通過。
+
+下一步使用工作模式對話，針對新標記頁做實體 Android 開檔、點選證據、選單／旋轉／下載內容驗收。若實機有程式問題，再轉 Codex 修正。原 SQLite 根因、分類與交易資格維持原限制，不新增功能階段。
+
+## 原交接沿革
+
 先讀 AGENTS.md、README.md、docs/手機顯示修正_v0.18.md，再讀原 docs/日週月唯讀對照契約.md。數值規則與資料限制仍有效。
 
 本版因使用者實機截圖與兩位小數要求而修正顯示，新增 日週月研究對照_手機版_v0_18.html 和 src/cross_view_mobile_template.html。價格顯示採十進位字串進位；內部、曲線來源、快照和下載 JSON 均保留原值。Responsive canvas 使用實際 CSS 尺寸及 DPR，表格換行、期間放數字下方。原 HTML 與原模板保留。

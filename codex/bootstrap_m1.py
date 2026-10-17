@@ -5,12 +5,14 @@ Standard library only; no network, trading, engine execution or DB recovery.
 Existing work is verified and never overwritten. New files stage privately.
 """
 import hashlib
+import argparse
 import json
 from pathlib import Path, PurePosixPath
 import re
 import stat
 import sys
 import tempfile
+import shutil
 import zipfile
 
 sys.dont_write_bytecode = True
@@ -53,13 +55,41 @@ def verify_project(root, plan):
     return len(manifest['files']) + 1
 
 
-def prepare(repository):
+def hydrate_missing(stage, target):
+    """Restore verified baseline assets without overwriting later development."""
+    missing, differing = [], []
+    for source in sorted(stage.rglob('*')):
+        if not source.is_file():
+            continue
+        relative = source.relative_to(stage)
+        destination = target / relative
+        require(not destination.is_symlink(), 'Linked existing file preserved: ' + str(relative))
+        require(destination.resolve().is_relative_to(target.resolve()), 'Existing path escapes project root')
+        if destination.exists():
+            require(destination.is_file(), 'Existing non-file preserved: ' + str(relative))
+            if sha256(destination) != sha256(source):
+                differing.append(str(relative))
+        else:
+            missing.append((source, destination))
+    for source, destination in missing:
+        destination.parent.mkdir(parents=True, exist_ok=True)
+        # Exclusive creation also preserves files created after the preflight.
+        with source.open('rb') as original, destination.open('xb') as output:
+            shutil.copyfileobj(original, output)
+    return dict(status='HYDRATED_PRESERVING_CHANGES', project=str(target),
+                restored_files=len(missing), differing_files_preserved=differing,
+                baseline_verified=True, current_tree_matches_baseline=not differing,
+                action_qualification='NOT_EVALUATED')
+
+
+def prepare(repository, *, hydrate=False):
     repository = Path(repository).resolve()
     resources = Path(__file__).resolve().parent
     plan = json.loads((resources / 'handoff.json').read_text(encoding='utf-8'))
     target = repository / '股票系統M1_v0_18'
     require(not target.is_symlink(), 'Existing project root is a symlink; preserved')
-    if target.exists():
+    existing = target.exists()
+    if existing and not hydrate:
         count = verify_project(target, plan)
         return dict(status='ALREADY_PREPARED',project=str(target),verified_files=count,action_qualification='NOT_EVALUATED')
     for archive in plan['baseline_archives']:
@@ -110,14 +140,20 @@ def prepare(repository):
             sys.path.pop(0)
         (stage / plan['generated_html']).write_text(rendered, encoding='utf-8')
         count = verify_project(stage, plan)
+        if existing:
+            return hydrate_missing(stage, target)
         require(not target.exists(), 'Target appeared during preparation; no overwrite')
         stage.rename(target)
     return dict(status='PREPARED',project=str(target),verified_files=count,action_qualification='NOT_EVALUATED')
 
 
 def main():
+    parser = argparse.ArgumentParser(description=__doc__)
+    parser.add_argument('--hydrate-missing', action='store_true',
+                        help='Verify a private baseline and restore missing files only; preserve and report existing edits')
+    args = parser.parse_args()
     try:
-        print(json.dumps(prepare(Path(__file__).resolve().parents[1]), ensure_ascii=False))
+        print(json.dumps(prepare(Path(__file__).resolve().parents[1], hydrate=args.hydrate_missing), ensure_ascii=False))
         return 0
     except (OSError, ValueError, KeyError, zipfile.BadZipFile) as error:
         print(json.dumps(dict(status='PREPARATION_FAILED',detail=str(error),existing_work='PRESERVED'), ensure_ascii=False),file=sys.stderr)

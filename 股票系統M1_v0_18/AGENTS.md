@@ -1,5 +1,7 @@
 # Project instructions
 
+- User-authorized saved-evidence annotations are now implemented in 日週月研究對照_結構標記_v0_18.html; read docs/結構標記顯示契約.md and annotations/validation_20261017/驗收報告.md. The two reference diagrams are visual input, not authority to invent long-candle resistance, platform-breakout or failed-rebound rules. Only daily saved pivots/zones are overlaid. Original pages and numeric data stay immutable. New-page real Chromium acceptance is now PASS via loopback HTTP; physical Android is still NOT_TESTED.
+
 - This is a Traditional Chinese stock-system research prototype for a non-engineer user.
 - Preserve independent numeric engines. UI renders their outputs; no LLM-generated core numbers or states.
 - Read README.md, docs/候選規則_v0.1.md and docs/CODEX交接.md first.
