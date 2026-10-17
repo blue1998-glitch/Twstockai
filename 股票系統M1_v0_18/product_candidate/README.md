@@ -54,3 +54,9 @@ TMPDIR="$PWD/product_candidate/tmp" PYTHONDONTWRITEBYTECODE=1 \
 `M1_v0_19_candidate.html` 為內嵌資料單頁，無網路請求。明選資料與日終日期後：讀取概覽及反證，日期滑桿重播，任意起訖、平移／縮放、價格尺度、同日期量與 MACD、JSON 下載。單指預設捲動；切到圖表平移才啟用單指 pan／雙指 pinch。沒有原生全螢幕時會明示頁內專注模式。下載保留當時完整數值與來源。
 
 雲端瀏覽器實測僅透過 loopback HTTP，不能當成 Android 本機開檔驗收。實測報告、截圖與命令見 `validation_20261017/驗收報告.md`；工程資料追溯與合成案例不代表正式分類品質或使用者產品認可。
+
+## 新增獨立嘗試／量先價核心（2026-10-17）
+
+`attempt_evidence.py`（`attempt-evidence-candidate/0.1`）已可明確呼叫，處理人工明選的近期高點與左側區域上緣兩個嘗試關卡，以及左區最高量／量先價、盤中與收盤及後續跌回的時序證據。沒有把它自動接入原 build／viewer，不改舊策略或歷史。價格子條件與完整交易資格分開，沒有校準勝率或正式強勢股分類。
+
+契約與限制見 [ATTEMPT_EVIDENCE.md](ATTEMPT_EVIDENCE.md)，本輪24項新測試、16項既有回歸及CLI讀回見 [新核心驗收報告](validation_attempts_20261017/驗收報告.md)。候選畫面接入、真實盤中及Android未完成；下一段依根目錄 M1_V019_ATTEMPT_CORE_HANDOFF.md 進行。
