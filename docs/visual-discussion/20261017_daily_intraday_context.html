@@ -1,0 +1,84 @@
+<div id="daily-intraday-context">
+  <h3>先看日線，再看同一天的盤中</h3>
+  <div class="text-small text-muted">全部為假想案例・昨收 100.00・A 高點 101.00</div>
+  <div class="viz-controls" role="group" aria-label="只看截至該時點的資料">
+    <button type="button" class="btn" data-time="2" aria-pressed="false">09:10 首次過 A</button>
+    <button type="button" class="btn" data-time="12" aria-pressed="true">10:00 回到 +2%</button>
+  </div>
+  <div data-chart="daily"></div>
+  <div class="text-small">紅漲綠跌・實線：5 日均線・虛線：20 日均線</div>
+  <div data-chart="volume"></div>
+  <div data-chart="macd"></div>
+  <div class="text-small">MACD：實線 DIF、虛線訊號線；柱狀為兩線差（OSC）</div>
+  <div data-chart="intraday"></div>
+  <div data-status aria-live="polite" class="tabular-nums"></div>
+  <style>
+    #daily-intraday-context{width:100%;color:var(--foreground)}
+    #daily-intraday-context .linked-chart{display:block;width:100%;margin-block:8px}
+    #daily-intraday-context .linked-chart text{font:12px system-ui,sans-serif;fill:var(--foreground);paint-order:stroke;stroke:var(--background);stroke-width:4;stroke-linejoin:round}
+  </style>
+  <script>
+  (()=>{
+    const root=document.getElementById('daily-intraday-context'),ns='http://www.w3.org/2000/svg';
+    const closes=[94,95,96,97,98,99,100,99,97,95,93,94,96,98,99,99.5,98,97,98,98.5,99,98.5,99,99.5,99,99.5,100];
+    const volumes=[1800,2100,2400,2600,2800,3200,4500,3600,3000,2900,2800,2400,2300,2600,3100,3400,2700,2200,2000,1800,1700,1500,1450,1400,1350,1300,1250];
+    const intraday=[100.5,100,101.5,102,102.5,102.5,102,102.5,102.5,103,102.5,102.5,102];
+    const cumulative=[80,180,450,620,800,910,1000,1080,1150,1500,1650,1800,1900];
+    const warmup=Array.from({length:80},(_,i)=>80+i*.175);
+    const history=closes.map((c,i)=>{const o=i?closes[i-1]:93.5;return {o,c,h:i===6?101:i===15?100.5:Math.max(o,c)+.5,l:i===10?92:Math.min(o,c)-.5,v:volumes[i]}});
+    let end=12;
+    function el(tag,attrs={},value){const e=document.createElementNS(ns,tag);for(const[k,v]of Object.entries(attrs))e.setAttribute(k,String(v));if(value!==undefined)e.textContent=value;return e}
+    function ema(a,n){const alpha=2/(n+1);return a.reduce((out,v,i)=>{out.push(i?alpha*v+(1-alpha)*out[i-1]:v);return out},[])}
+    function mean(a,n){return a.map((_,i)=>i+1<n?null:a.slice(i-n+1,i+1).reduce((s,v)=>s+v,0)/n)}
+    function frame(key,height,title,unit,low,high,count){
+      const host=root.querySelector('[data-chart="'+key+'"]'),w=Math.floor(host.getBoundingClientRect().width)||320,L=64,R=w-18,T=31,B=height-36;
+      const svg=el('svg',{class:'linked-chart',viewBox:`0 0 ${w} ${height}`,height,role:'img','aria-labelledby':'linked-'+key+'-title'});
+      svg.append(el('title',{id:'linked-'+key+'-title'},title+'；假想資料，截至'+(end===2?'09:10':'10:00')));
+      const label=(x,y,value,anchor='start',attrs={})=>svg.append(el('text',{x,y,'text-anchor':anchor,...attrs},value));
+      svg.append(el('rect',{x:L,y:T,width:R-L,height:B-T,fill:'none',stroke:'var(--border)','data-chart-frame':''}));
+      label(L,16,title+'（'+unit+'）','start',{class:'axis-title','data-axis':'y'});
+      label(R,height-4,key==='intraday'?'盤中時間':'交易日順序','end',{class:'axis-title','data-axis':'x'});
+      const x=i=>L+7+(R-L-14)*i/(count-1),y=v=>B-5-(v-low)/(high-low)*(B-T-10);
+      host.replaceChildren(svg);return {svg,w,L,R,T,B,x,y,label};
+    }
+    function line(f,values,color,dash){f.svg.append(el('path',{d:values.map((v,i)=>(i?'L':'M')+f.x(i)+','+f.y(v)).join(' '),fill:'none',stroke:color,'stroke-width':1.5,...(dash?{'stroke-dasharray':dash}:{})}))}
+    function horizontal(f,value,text){f.svg.append(el('line',{x1:f.L,x2:f.R,y1:f.y(value),y2:f.y(value),stroke:'var(--foreground)','stroke-width':1,'stroke-dasharray':'5 4'}));if(text)f.label(f.L+7,f.y(value)-8,text)}
+    function dayTicks(f,n){f.label(f.x(0),f.B+18,'前 27 日');f.label(f.x(n-1),f.B+18,'今日未收','end')}
+    function draw(){
+      const seen=intraday.slice(0,end+1),today={o:seen[0],h:Math.max(...seen),l:Math.min(...seen),c:seen[end],v:cumulative[end]},days=history.concat([today]),n=days.length;
+      const allCloses=warmup.concat(closes,[today.c]),ma5=mean(allCloses,5).slice(-n),ma20=mean(allCloses,20).slice(-n);
+      const fast=ema(allCloses,12),slow=ema(allCloses,26),dif=fast.map((v,i)=>v-slow[i]),signal=ema(dif,9),df=dif.slice(-n),sg=signal.slice(-n),osc=df.map((v,i)=>v-sg[i]);
+      const domain=days.flatMap(d=>[d.l,d.h]).concat(ma5,ma20,[101]);
+      const f=frame('daily',265,'日 K 線','元',Math.min(...domain)-1.5,Math.max(...domain)+1.5,n);
+      const candleWidth=Math.max(2,(f.R-f.L-14)/(n-1)*.56);
+      f.svg.append(el('rect',{x:f.x(20),y:f.y(100.5),width:f.x(26)-f.x(20),height:f.y(98)-f.y(100.5),fill:'var(--viz-series-2)','fill-opacity':.1}));
+      for(const value of[92,96,100,104])if(value>=Math.min(...domain)-1.5&&value<=Math.max(...domain)+1.5){f.label(f.L-10,f.y(value)+4,value.toFixed(0),'end')}
+      horizontal(f,101,'A 101.00');
+      line(f,ma5,'var(--viz-series-1)');line(f,ma20,'var(--viz-series-2)','4 3');
+      days.forEach((d,i)=>{const color=d.c>=d.o?'var(--red)':'var(--green)';f.svg.append(el('line',{x1:f.x(i),x2:f.x(i),y1:f.y(d.h),y2:f.y(d.l),stroke:color,'stroke-width':1,...(i===n-1?{'stroke-dasharray':'3 2'}:{})}));f.svg.append(el('rect',{x:f.x(i)-candleWidth/2,y:f.y(Math.max(d.o,d.c)),width:candleWidth,height:Math.max(1,Math.abs(f.y(d.o)-f.y(d.c))),fill:color,'fill-opacity':i===n-1?.5:1}))});
+      f.label(f.x(10),f.y(92)+20,'B','middle');f.label(f.x(15),f.y(100.5)-11,'C','middle');
+      if(f.w>430)f.label(f.x(20),f.y(98)+18,'近期整理區');
+      f.label(f.x(27)-2,f.y(today.h)-15,'今','end');dayTicks(f,n);
+      const v=frame('volume',115,'成交量','張',0,Math.max(...days.map(d=>d.v))*1.2,n);
+      days.forEach((d,i)=>v.svg.append(el('rect',{x:v.x(i)-candleWidth/2,y:v.y(d.v),width:candleWidth,height:v.y(0)-v.y(d.v),fill:d.c>=d.o?'var(--red)':'var(--green)','fill-opacity':i===n-1?.45:.7})));
+      v.label(v.L-8,v.y(0)+4,'0','end');v.label(v.R-3,v.T+12,'今量僅累計 '+today.v,'end');
+      const macdValues=df.concat(sg,osc,[0]),mlo=Math.min(...macdValues),mhi=Math.max(...macdValues),mpad=(mhi-mlo)*.16||.1;
+      const m=frame('macd',145,'MACD 12／26／9','元',mlo-mpad,mhi+mpad,n);
+      horizontal(m,0);m.label(m.L-9,m.y(0)+4,'0','end');
+      osc.forEach((value,i)=>m.svg.append(el('rect',{x:m.x(i)-candleWidth/2,y:Math.min(m.y(0),m.y(value)),width:candleWidth,height:Math.max(.5,Math.abs(m.y(value)-m.y(0))),fill:value>=0?'var(--red)':'var(--green)','fill-opacity':i===n-1?.35:.55})));
+      line(m,df,'var(--viz-series-1)');line(m,sg,'var(--viz-series-2)','4 3');
+      m.label(m.R-3,m.T+12,'今日值暫估','end');
+      const pct=p=>p-100,ip=seen.map(pct),ih=Math.max(...ip),il=Math.min(...ip,0);
+      const q=frame('intraday',225,'當天盤中','較昨收 %',il-.45,ih+.7,end+1);
+      for(const value of[0,1,2,3])if(value>=il-.45&&value<=ih+.7)q.label(q.L-9,q.y(value)+4,(value>0?'+':'')+value+'%','end');
+      horizontal(q,1,'同一個 A：+1.00%');line(q,ip,'var(--viz-series-1)');
+      for(const[i,name]of[[2,'P'],[9,'高點'],[12,'X']])if(i<=end){q.svg.append(el('circle',{cx:q.x(i),cy:q.y(ip[i]),r:4,fill:'var(--viz-series-1)'}));q.label(q.x(i)-2,q.y(ip[i])+(i===9?-17:22),name,i===end?'end':'middle')}
+      q.label(q.x(0),q.B+18,'09:00');q.label(q.x(end),q.B+18,end===2?'09:10':'10:00','end');
+      root.querySelector('[data-status]').textContent=(end===2?'09:10':'10:00')+'｜現價 '+today.c.toFixed(2)+'（+'+pct(today.c).toFixed(2)+'%）｜日線背景：待你判讀';
+      root.querySelectorAll('[data-time]').forEach(b=>b.setAttribute('aria-pressed',String(Number(b.dataset.time)===end)));
+    }
+    root.querySelectorAll('[data-time]').forEach(b=>b.addEventListener('click',()=>{end=Number(b.dataset.time);draw()}));
+    let previous=0;new ResizeObserver(()=>{const w=Math.floor(root.getBoundingClientRect().width);if(w!==previous){previous=w;draw()}}).observe(root);draw();
+  })();
+  </script>
+</div>
