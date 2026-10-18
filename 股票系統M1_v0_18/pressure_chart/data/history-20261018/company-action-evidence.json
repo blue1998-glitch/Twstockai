@@ -1,0 +1,197 @@
+{
+  "schema_version": "company-action-evidence-inventory/0.1",
+  "known_retained_samples": {
+    "8069": {
+      "original_source_id": "sha256:a8d02938983fa3979fc5e18aa40215d45001e1cdf3533b6a2d8ce76554169c86",
+      "original_coverage": "CASH_ONLY_VERIFIED_SAMPLE",
+      "known_sample_events": [
+        {
+          "cash_dividend": "5.88820682",
+          "code": "8069",
+          "effective_date": "2026-07-20",
+          "factor": "0.9675580891460055096418732782",
+          "formula": "(previous_close-cash_dividend)/previous_close",
+          "historical_publication_time": "NOT_VERIFIED",
+          "observed_at": "2026-10-16T04:31:49.951166+00:00",
+          "official_reference": "175.61",
+          "previous_close": "181.50",
+          "published_at": null,
+          "rule_version": "adjustment-0.1-cash-only-candidate",
+          "source_file": "ex_2026.json",
+          "source_sha256": "2fa46e2c5ad959714ff5b29d09c0d33857fcf0fcfa84c551a4fce504dda80efc",
+          "theoretical_reference": "175.61179318"
+        }
+      ]
+    },
+    "1101": {
+      "original_source_id": "sha256:ad5177c58cea30978f1bed3b9206a45c3615bc5bec42603a79b4191f7c7f8e53",
+      "original_coverage": "UNVERIFIED",
+      "known_sample_events": []
+    },
+    "6488": {
+      "original_source_id": "sha256:30a8aca899eded89f7053241edeed294f2b6a7a5b52cfc571f3c1e3a29f5f533",
+      "original_coverage": "CASH_ONLY_VERIFIED_SAMPLE",
+      "known_sample_events": [
+        {
+          "cash_dividend": "2.00000000",
+          "code": "6488",
+          "effective_date": "2025-12-31",
+          "factor": "0.9951573849878934624697336562",
+          "formula": "(previous_close-cash_dividend)/previous_close",
+          "historical_publication_time": "NOT_VERIFIED",
+          "observed_at": "2026-10-16T04:31:49.949814+00:00",
+          "official_reference": "411.00",
+          "previous_close": "413.00",
+          "published_at": null,
+          "rule_version": "adjustment-0.1-cash-only-candidate",
+          "source_file": "ex_2025.json",
+          "source_sha256": "a2bf61dc2ecca713801d998b8d5463855c6aac17fd0a5ec543d856a30a92d3a1",
+          "theoretical_reference": "411.00000000"
+        },
+        {
+          "cash_dividend": "5.70000000",
+          "code": "6488",
+          "effective_date": "2026-07-16",
+          "factor": "0.9961486486486486486486486486",
+          "formula": "(previous_close-cash_dividend)/previous_close",
+          "historical_publication_time": "NOT_VERIFIED",
+          "observed_at": "2026-10-16T04:31:49.951166+00:00",
+          "official_reference": "1474.30",
+          "previous_close": "1480.00",
+          "published_at": null,
+          "rule_version": "adjustment-0.1-cash-only-candidate",
+          "source_file": "ex_2026.json",
+          "source_sha256": "2fa46e2c5ad959714ff5b29d09c0d33857fcf0fcfa84c551a4fce504dda80efc",
+          "theoretical_reference": "1474.30000000"
+        }
+      ]
+    },
+    "2884": {
+      "original_source_id": "sha256:219f15bbf9b711a89794f7065e094780536b4c520de60e3e25b754ae60563d08",
+      "original_coverage": "UNVERIFIED",
+      "known_sample_events": []
+    }
+  },
+  "literal_source_flags": [
+    {
+      "code": "1101",
+      "source_month": "2022-07",
+      "raw_date": "111/07/21",
+      "change_field": "X0.00",
+      "note": "",
+      "response_sha256": "f7095fe8f6374c7d996ac73a2a7b3cc60e26c1604682894631df3c56b2d17ad5",
+      "status": "LITERAL_SOURCE_FLAG_NOT_VERIFIED_ACTION_OR_ADJUSTMENT_FACTOR"
+    },
+    {
+      "code": "1101",
+      "source_month": "2023-07",
+      "raw_date": "112/07/11",
+      "change_field": "X0.00",
+      "note": "",
+      "response_sha256": "d37cb57480c732d80e879432785119857ca4d65de00f95acd9742079357acc5f",
+      "status": "LITERAL_SOURCE_FLAG_NOT_VERIFIED_ACTION_OR_ADJUSTMENT_FACTOR"
+    },
+    {
+      "code": "1101",
+      "source_month": "2024-07",
+      "raw_date": "113/07/01",
+      "change_field": "X0.00",
+      "note": "",
+      "response_sha256": "6b117fefe7fb891567977f52c12b630521166073c7ae3fbb614a91f769e8e583",
+      "status": "LITERAL_SOURCE_FLAG_NOT_VERIFIED_ACTION_OR_ADJUSTMENT_FACTOR"
+    },
+    {
+      "code": "1101",
+      "source_month": "2025-07",
+      "raw_date": "114/07/02",
+      "change_field": "X0.00",
+      "note": "",
+      "response_sha256": "10180aebadfc6127be3692b395116fef63137cb3b4f59b53719d0b7f3732dd65",
+      "status": "LITERAL_SOURCE_FLAG_NOT_VERIFIED_ACTION_OR_ADJUSTMENT_FACTOR"
+    },
+    {
+      "code": "1101",
+      "source_month": "2025-08",
+      "raw_date": "114/08/14",
+      "change_field": "X0.00",
+      "note": "",
+      "response_sha256": "17445ab092ce42de89d852302470e3f38913f0a28aeef20e52a4cb73e2db9d67",
+      "status": "LITERAL_SOURCE_FLAG_NOT_VERIFIED_ACTION_OR_ADJUSTMENT_FACTOR"
+    },
+    {
+      "code": "1101",
+      "source_month": "2026-07",
+      "raw_date": "115/07/01",
+      "change_field": "X0.00",
+      "note": "",
+      "response_sha256": "a7e3b6a9965e5171304d269d86111672d4cb7f2838ed0b95165a9b5e4ffdbc8f",
+      "status": "LITERAL_SOURCE_FLAG_NOT_VERIFIED_ACTION_OR_ADJUSTMENT_FACTOR"
+    },
+    {
+      "code": "2884",
+      "source_month": "2022-07",
+      "raw_date": "111/07/28",
+      "change_field": "X0.00",
+      "note": "",
+      "response_sha256": "c9117153af3314c7af68cd930a2928a2096f825e09641fbc88434f7a58b13a6a",
+      "status": "LITERAL_SOURCE_FLAG_NOT_VERIFIED_ACTION_OR_ADJUSTMENT_FACTOR"
+    },
+    {
+      "code": "2884",
+      "source_month": "2023-04",
+      "raw_date": "112/04/07",
+      "change_field": "X0.00",
+      "note": "",
+      "response_sha256": "be2d3973790a699ab5a42201a9a7eee2f023e0fb6112c5a53f6627accd086971",
+      "status": "LITERAL_SOURCE_FLAG_NOT_VERIFIED_ACTION_OR_ADJUSTMENT_FACTOR"
+    },
+    {
+      "code": "2884",
+      "source_month": "2023-07",
+      "raw_date": "112/07/27",
+      "change_field": "X0.00",
+      "note": "",
+      "response_sha256": "f1d51eec34b8909576b2344f88d9a1ef4ca86f8bea9f74f0a05e27c18404ba77",
+      "status": "LITERAL_SOURCE_FLAG_NOT_VERIFIED_ACTION_OR_ADJUSTMENT_FACTOR"
+    },
+    {
+      "code": "2884",
+      "source_month": "2025-07",
+      "raw_date": "114/07/22",
+      "change_field": "X0.00",
+      "note": "",
+      "response_sha256": "7ecad5eadd1715a242345386646066da73de8afe991edef41d3c1a84fccd61ba",
+      "status": "LITERAL_SOURCE_FLAG_NOT_VERIFIED_ACTION_OR_ADJUSTMENT_FACTOR"
+    },
+    {
+      "code": "2884",
+      "source_month": "2025-11",
+      "raw_date": "114/11/06",
+      "change_field": "X0.00",
+      "note": "",
+      "response_sha256": "27b7ca4a6d4a3f555557e0d22da278c9c5ae417e9c1a6fe246096bb17fe28e9e",
+      "status": "LITERAL_SOURCE_FLAG_NOT_VERIFIED_ACTION_OR_ADJUSTMENT_FACTOR"
+    },
+    {
+      "code": "2884",
+      "source_month": "2026-07",
+      "raw_date": "115/07/01",
+      "change_field": "X0.00",
+      "note": "",
+      "response_sha256": "4c99424f7a1230c5b0cd21cafb45cdfeb6802abe8a0fb92039935b4de76b18de",
+      "status": "LITERAL_SOURCE_FLAG_NOT_VERIFIED_ACTION_OR_ADJUSTMENT_FACTOR"
+    }
+  ],
+  "full_2021_2026_actions": "NOT_AUTHENTICATED",
+  "adjusted_five_year_series": "NOT_PRODUCED",
+  "publication_time": "UNVERIFIED",
+  "twse_previously_security_denied_exright_endpoint": "NOT_RETRIED_PER_AGENTS",
+  "missing": [
+    "Complete cash dividends",
+    "Rights and stock dividends",
+    "Splits, reductions and face-value changes",
+    "Effective trading dates with official primary evidence",
+    "Historical publication timing"
+  ],
+  "normalization": "Retained sample events may reset Raw MACD only; no new factor is inferred from OHLCV flags"
+}

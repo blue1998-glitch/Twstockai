@@ -1,3 +1,11 @@
+# 最新：五年官方Raw已接入（2026-10-18 Codex）
+
+見CONTINUE最上方及M1_V019_LEFT_PRESSURE_WALLS_HANDOFF.md最新節。pressure_chart/為新獨立來源／壓力主圖：四股244份官方月回應、1213／1214根到10/16，18／24日曆月仍畫日K、約五年平移、畫外價量提示／定位、K量MACD同步、右下縮放及1101覆核追蹤已實測。舊technical_chart與其數值／庫／頁未覆寫。
+
+下方「尚無多年」僅描述當時舊來源；新五年Raw不等於完整上市歷史或已校正壓力。完整公司行動／公布時間、六日主證與五年Adjusted尚缺，正式區界／自動重要性／魔王及增量未知。新頁Android NOT_TESTED；舊頁PARTIAL_EVIDENCE_OBSERVED不沿用。
+
+---
+
 # 最新：左側價格／成交量高牆；單畫面18～24月、整體約五年（2026-10-18 10:59 台北）
 
 **Codex先讀 [本輪完整實作交接](M1_V019_LEFT_PRESSURE_WALLS_HANDOFF.md)**。使用同一dev/m1-v018-chart-annotations最新提交，不從main或舊ZIP覆蓋。本輪更新核心思想與工程要求，沒有新增程式／行情或測試，五年資料尚未取得；原主圖Android仍PARTIAL_EVIDENCE_OBSERVED。
