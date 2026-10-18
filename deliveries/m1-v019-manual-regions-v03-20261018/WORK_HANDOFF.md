@@ -2,7 +2,7 @@
 
 儲存庫：blue1998-glitch/Twstockai
 分支：dev/m1-v018-chart-annotations
-本輪成品提交：ARTIFACT_COMMIT_PENDING
+本輪成品提交：31d80971b265942eb3d7573fddf00f6782f20a55
 必須包含原交接7569d12b249080d305f2cf0dbd36b35485785bfb。
 先確認分支及祖先；若已有更新，讀最新交接並保留成果，不用main或舊ZIP覆蓋。此指令若在後續提交才保存，以其所在最新分支及收據為準。不能存取GitHub／附件或執行時，列實際可見檔案、能力與錯誤，不假稱已讀／已測。
 
