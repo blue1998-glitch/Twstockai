@@ -1,3 +1,7 @@
+## 固定交接偏好（2026-10-18 使用者要求）
+
+每次建議切回或改用工作模式（Work）時，必須同時附上可直接複製貼給 Work 的交接指令，不可只說「下一步用工作模式」。指令應包含儲存庫、指定分支、最新已確認的 GitHub 提交、必讀文件、本輪目標、已完成實測與尚未完成的限制，並要求保留後續成果、不改 main、未測不得標完成。尚未確認的遠端保存狀態須明示，不得虛填。此偏好持續適用於後續交接。
+
 ## Latest pressure/source-history delivery (2026-10-18 Codex)
 
 Read CONTINUE_IN_WORK_MODE.md top, M1_V019_LEFT_PRESSURE_WALLS_HANDOFF.md latest, 股票系統M1_v0_18/pressure_chart/README.md and validation_20261018/驗收報告.md. New pressure-chart-view/0.1 uses244 captured official month responses plus12 planned calendars:1101/2884 each1213 bars;6488/8069 each1214,2021-10-18–2026-10-16. New RAW indicator series reuse unchanged SMA/MACD; original numerical bundle1490 frames, structure engines/stores/old pages unchanged. Do not promote RAW extrema/monthly source containers to formal walls, boss selection, ownership distribution or lifetime highs. Full actions and6 closure-date primary proofs remain incomplete; no five-year Adjusted produced. Keep reviewed1101 original source/snapshot binding and later review timing separate from new-source followup; volume expansion/decay/anomaly/region rules unknown. Python357 full plus21 focused after fix, real Chromium194/100 precision downloads and all4854 new source frames verified. New pressure-page physical Android NOT_TESTED_NEW_BUILD; old technical-page PARTIAL_EVIDENCE_OBSERVED remains separate. Next Work Mode for new-device/usefulness evidence; Codex for reproducible defects or properly sourced action/calendar work. Same dev branch; preserve main and existing edits; no subagents/deployment/trades/messages.

@@ -1,5 +1,7 @@
 # 最新交付：四檔約五年官方Raw＋雙維壓力來源主圖（2026-10-18 Codex）
 
+**固定交接偏好（使用者要求）**：之後每次建議切回工作模式（Work），都要一併提供可直接複製貼上的指令，列出儲存庫、指定分支、最新已確認的 GitHub 提交、必讀文件、本輪目標、實測成果及未完成限制；要求保留後續成果、不改 main、未測不得標完成。不得只告知切換模式；遠端尚未確認時必須明示。
+
 已接續指定 `a3a58d4972d1efb5da8196e83954be574b0670c9`，使用同一 `dev/m1-v018-chart-annotations`，main不改。**不是只更新交接：新source、官方原檔、主圖、測試與完整下載均已交付。** [成品入口](deliveries/m1-v019-pressure-walls-20261018/README.md)；新頁 `股票系統M1_v0_18/pressure_chart/generated/M1_v0_19_pressure_chart.html`。
 
 先讀 [左側高牆交接最新節](M1_V019_LEFT_PRESSURE_WALLS_HANDOFF.md)、[新接入契約／命令](股票系統M1_v0_18/pressure_chart/README.md)、[本輪實測](股票系統M1_v0_18/pressure_chart/validation_20261018/驗收報告.md)、[新版手機清單](M1_V019_PRESSURE_CHART_ANDROID_ACCEPTANCE.md)。原technical_chart頁與原保存分析沒有覆寫。
