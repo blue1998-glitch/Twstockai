@@ -1,3 +1,13 @@
+# 0.3人工時間區域新主圖：NOT_TESTED_NEW_BUILD（2026-10-18 Codex）
+
+新頁manual-region-chart-view/0.3，HTML `M1_v0_19_manual_regions_v03.html`；[成品／完整新版差異驗收指令](deliveries/m1-v019-manual-regions-v03-20261018/README.md)。新增G1約九月→C、G2精確1/16～8/16時間帶、拖曳查詢／移圖分開、逐交易日完整OHLCV及獨立草稿匯出。沒有本版Android原圖／操作回報／新JSON，不能從雲端Chromium補為手機成功。UI接入也不是核心用途認可。
+
+舊0.2仍PARTIAL_EVIDENCE_OBSERVED；下方20:03等原圖與USER_REPORTED內容保持，不重索相同舊圖／JSON、不重開已收束標籤驗收。只驗0.3新差異：版號／來源、區域焦點與返回、查詢不移窗／不改分析日、逐筆讀值、草稿精度與重開清空。手機開檔方式／旋轉／下載若未實際操作仍未測；無新證據不得改狀態。不得要求停用保護或重試已知file://管理政策阻擋。
+
+G2精確日期已核，不能再詢問；G1精確起日和其他核心未知按最新交接。完整Raw公司行動／五年Adjusted／歷史公布可得、來源資料缺口及SQLite未知根因保留。核心用途、分類與交易資格仍未認可。後續Work按新版本差異逐項區分OBSERVED／USER_REPORTED／NOT_TESTED，必要新證據最小收取。
+
+---
+
 # 20:03 0.2指定標籤差異驗收收束；下一步核心用途（2026-10-18 Work）
 
 使用者回覆「成功」，承接G1定位→分析日仍10/16→24月返回486根→關閉看G2／G3超軸提示，記為**USER_REPORTED**整組成功；本輪無新圖／JSON，不代填直接觀察。[本輪分項紀錄](股票系統M1_v0_18/hurdle_chart/validation_android_labels_v02_20261018/evidence-2003.md)。

@@ -1,3 +1,15 @@
+# 人工價量時間區域主圖0.3已接入；下一步Work只驗新版差異（2026-10-18 Codex）
+
+本輪從7569d12b249080d305f2cf0dbd36b35485785bfb接續，新增獨立`region_chart/`與`manual-region-chart-view/0.3`，原0.1／0.2、人工原JSON、Android證據、數值引擎／策略／庫／歷史保留。**G2精確2023-01-16～2023-08-16已接入，5/2高40.25不變，不再追問；G1約2023年9月→C，精確起日仍null。** 價格區界、整區量／量口徑、自動分區／選關、增量、強度／衰減及生命階段未定，沒有新增策略門檻。
+
+[0.3 HTML／小ZIP、SHA、GitHub讀回收據及完整Work指令](deliveries/m1-v019-manual-regions-v03-20261018/README.md)；[實作說明](股票系統M1_v0_18/region_chart/README.md)；[本輪實測／畫面／失敗紀錄](股票系統M1_v0_18/region_chart/validation_20261018/驗收報告.md)。主圖G1／G2聚焦、C開放參照、原代表點、拖曳查詢／移圖分開、逐交易日完整OHLCV及獨立未提交草稿下載。視窗／游標不改分析日，其他股票、日期、source／frame／basis不套此案例；較早查詢只讀分析日前綴。
+
+**0.3 Android NOT_TESTED_NEW_BUILD**；0.2仍PARTIAL_EVIDENCE_OBSERVED，舊指定標籤差異已收束，不重索相同原圖／JSON。本輪真實Chromium HTTP檢查不是手機實機／file開檔或核心用途通過；原file://管理政策阻礙不重試、不繞過。UI接入不代表自動辨識或用途認可，NOT_ESTABLISHED／NOT_VALIDATED／NOT_EVALUATED維持。Raw／公司行動／五年Adjusted／歷史公布可得／資料缺口與SQLite未知根因保留；Darvas正文未完整讀，無套用箱型規則。
+
+下一步用**Work**，貼交付目錄WORK_HANDOFF.md全文，先讀最新交接與實際成品，僅收新版差異。明確可重現工程問題回Codex；核心仍未知要用具體真實圖詢問，不阻擋已明確工程。不得改main、部署、付費、交易、發訊息或啟動子代理。
+
+---
+
 # G2精確起訖已核對；下一步Codex接入G1／G2區域主圖（2026-10-18 Work）
 
 使用者已回報G2起點2023-01-16、終點2023-08-16，取代先前約2～8月；兩日10項OHLCV與已保存1213根原JSON直接核對全相符，SHA256仍369947bad71ab3fdff894c21511ebf242e1ddb12b59822d02ed93f0580bd2796。代表點2023-05-02／40.25不變，分析日仍10/16。不要再說精確日待回報，不重索舊圖／JSON。[原話／新獨立契約／核對](docs/visual-discussion/20261018_g2_endpoints/README.md)。

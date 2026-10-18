@@ -1,3 +1,19 @@
+# 0.3獨立時間區域主圖已實作（2026-10-18 Codex最新）
+
+狀態：IMPLEMENTED_DEFINED_UI_SCOPE；核心用途NOT_ESTABLISHED，Android NOT_TESTED_NEW_BUILD。下方READY_FOR_IMPLEMENTATION是前輪Work交接歷史，本節及實測報告優先。接續指定7569d12，未使用main或舊ZIP覆蓋；原三關／G1／G2案例逐字保存。
+
+新版[region_chart/README.md](股票系統M1_v0_18/region_chart/README.md)，[本輪驗收報告](股票系統M1_v0_18/region_chart/validation_20261018/驗收報告.md)，[小ZIP／指紋／HTML／GitHub收據及Work全文](deliveries/m1-v019-manual-regions-v03-20261018/README.md)。G1不確定九月起緣→C、G2精確1/16～8/16及原代表點在真實K／量／MACD主圖；C後僅虛線開放參照，未判所有後續K歸屬。日量參照按真實10/18、11/30標示，不冒充整區量或最高量規則。原①④與三關另有折疊入口，軸內可讀線標籤、超軸提示與定位保持。
+
+預設拖曳查詢；另選移圖，支援雙指／按鈕縮放、24月486與全1213、逐交易日前後查詢及完整OHLCV。游標／圖窗／聚焦不改10/16分析日；「以游標日回看分析」才改日；其他來源、日期、股票、基底不套人工層。離線binder核對原檔指紋、G2端點10欄位及原代表high，數值payload與凍結0.2全等，只加新版層／下載契約。原JSON內接入未實作是歷史，未回寫。
+
+可記起終點為版本化草稿JSON，精確來源／frame／basis／分析日／OHLCV；DRAFT_NOT_SUBMITTED_NOT_APPROVED，只存記憶體，重開或切來源／分析日清空，逆序不自動交換。草稿與主分析下載分開，不提交／自動更新案例。
+
+0.2舊Android證據保留，不重索相同舊檔；0.3須另驗新區域、查詢／移圖及草稿差異，雲端模擬不能代填實機。原file://阻礙不重試／繞過。G1精確起日、價格區界、量口徑、自動分區、強度衰減等未決；Raw校正／歷史公布可得／五年Adjusted與其他來源缺口、SQLite根因未知、Darvas正文未完整閱讀保持。沒有正式自動規則、策略買點、持股精確數、全史高或核心用途通過。
+
+下一步Work依交付目錄WORK_HANDOFF.md收新版差異，只有可重現工程缺口再交Codex；不要重新追問已確認G2起訖。
+
+---
+
 # G1／G2人工價量區域接入新版主圖：Codex實作交接
 
 日期2026-10-18 Asia/Taipei。狀態：READY_FOR_IMPLEMENTATION；**本交接未實作產品，尚無0.3 HTML／ZIP**。接續dev/m1-v018-chart-annotations，保留後續提交。基線2f4360a2a008f709d9b1f6ceb8a4c5ba2ea38b1f已核為當時分支頭；本檔提交之後以最新分支／交接為準，不用main或舊ZIP覆蓋。
