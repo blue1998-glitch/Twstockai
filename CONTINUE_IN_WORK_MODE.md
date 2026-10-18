@@ -1,3 +1,17 @@
+# 最新手機證據：新版五年圖已見，單一原JSON已核對（2026-10-18，截圖14:08）
+
+接續已保存提交 `3942950f95f4fe9c8dc81e6dbc3a928be08fb59d`，產品基準仍 `b9c38d6fbd56257f41e28657cf5fd6bd88e1ad3b`，未修改成品。新壓力頁Android改記 **PARTIAL_EVIDENCE_OBSERVED**；下方13:20「尚無」是收件前歷史，不能誤讀為目前狀態。
+
+已直接看到1101新Raw／10/16直向五年1213根、K／量／MACD及右下＋／−。實讀使用者提供的1,173,373-byte原JSON，全部解析欄位與固定交付HTML及Python producer同一選擇相等；末日OHLCV與截圖相符，saved_analysis／retrospective_review為null，retrospective_followup保留回溯資格。本輪實際下載交付ZIP與解出HTML重算SHA均符合清單；不是獨立重算官方資料或指標，也未重跑既有整套測試。
+
+[完整分項驗收](M1_V019_PRESSURE_CHART_ANDROID_ACCEPTANCE.md)；[原PNG／JSON證據包、SHA及機器核對](股票系統M1_v0_18/pressure_chart/validation_android_20261018/README.md)。原檔未改；只新增獨立證據與交接，不沿用舊頁手機結果。
+
+**下一步仍本對話Work**：相同1101／新Raw／10/16按24月（預期486根）→直向→橫向→直向，查看近期①／④與游標，再打開④來源證據。只有靜態五年圖，尚無逐項操作回報；旋轉、拖曳、按鈕、返回近期、來源點選、切股／基底、效能和核心用途皆未通過。五年概覽右端近期關卡擁擠，需較短視窗實圖再判讀，不能視為正式規則完成。
+
+原限制全部保留：完整公司行動／五年Adjusted、歷史公布可得、TPEX六日主證、正式整理區／自動選關／魔王／時間衰減／異常門檻／急緩跌強度／增量、SQLite根因等。TWSE六日補證沿用394紀錄，未因手機核對接入產品。五年Raw高不當完整歷史或完整校正壓力。未見可重現故障，不創造程式修正；main、原引擎／策略／庫／歷史／舊頁保留。
+
+---
+
 # Work接續：新版壓力頁手機驗收已備妥；另補TWSE六日主證（2026-10-18 13:20 台北）
 
 指定分支最新已核實為 `b9c38d6fbd56257f41e28657cf5fd6bd88e1ad3b`（本輪文件交付前），與使用者指定相同。成品基準仍是該提交pressure-chart-view/0.1，不是舊technical或attempt。已依序實讀指定8文件、成品入口、原coverage-audit、SHA及原browser-report；不是只看使用者摘要，也沒有宣稱已讀全專案。
