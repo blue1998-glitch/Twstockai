@@ -1,3 +1,13 @@
+# G2精確起訖已核對；下一步Codex接入G1／G2區域主圖（2026-10-18 Work）
+
+使用者已回報G2起點2023-01-16、終點2023-08-16，取代先前約2～8月；兩日10項OHLCV與已保存1213根原JSON直接核對全相符，SHA256仍369947bad71ab3fdff894c21511ebf242e1ddb12b59822d02ed93f0580bd2796。代表點2023-05-02／40.25不變，分析日仍10/16。不要再說精確日待回報，不重索舊圖／JSON。[原話／新獨立契約／核對](docs/visual-discussion/20261018_g2_endpoints/README.md)。
+
+**下一步Codex直接依[M1_V019_MANUAL_REGIONS_INTEGRATION_HANDOFF.md](M1_V019_MANUAL_REGIONS_INTEGRATION_HANDOFF.md)實作新獨立主圖**：G1約9月至C與C後新平緩帶、G2精確時間帶、原代表點及可移動／放大／逐根OHLCV查詢；區域時間與價格上下緣分開，未知門檻不補。G1精確起日、價格區界／量口徑／自動選法等仍未定，不妨礙已明確工程。原0.1／0.2及三關JSON保留。
+
+本輪只完成端點原檔核對、案例與可執行交接，**未實作主圖／無0.3成品，沒有新Python產品／Chromium／Android測試或新手機JSON**。先前討論圖118 PASS及產品10／208／44各保留原範圍，不搬作新版本通過。原0.2手機PARTIAL_EVIDENCE_OBSERVED，指定標籤差異已收束，其他未測不變；新版本須NOT_TESTED_NEW_BUILD。原file://拒絕不重試、不繞過。Darvas箱型正文未完整讀取；核心用途NOT_ESTABLISHED及Raw／公司行動／Adjusted／歷史／資料／SQLite限制保留。原引擎策略／庫／歷史／舊頁／main不改，無部署／付費／交易／訊息／子代理。
+
+---
+
 # G2已確認約2～8月；新版座標查詢已交付（2026-10-18 21:52 Work）
 
 使用者指G2約2023年2月到8月，精確日待可移動座標查詢後補；不要再問同一大致區間，或把2/1～8/31當正式窗計量。另指定Nicolas Darvas《我如何在股市賺到200萬美元》箱型理論為概念相近的研究參照，非全盤採用其規則。[本輪新圖／完整原話／契約／原著查核範圍／實測](docs/visual-discussion/20261018_g2_coordinate/README.md)。

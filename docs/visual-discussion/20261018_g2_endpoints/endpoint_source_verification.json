@@ -1,0 +1,111 @@
+{
+  "schema_version": "g2-endpoint-source-verification/0.1",
+  "result": "PASS",
+  "evidence_kind": "DIRECT_LOCAL_ORIGINAL_FILE_RECHECK",
+  "source_export_sha256": "369947bad71ab3fdff894c21511ebf242e1ddb12b59822d02ed93f0580bd2796",
+  "source_bar_count": 1213,
+  "endpoint_field_checks": [
+    {
+      "date": "2023-01-16",
+      "field": "open",
+      "user_reported": "36.55",
+      "source_value": "36.55",
+      "equal": true
+    },
+    {
+      "date": "2023-01-16",
+      "field": "high",
+      "user_reported": "36.90",
+      "source_value": "36.90",
+      "equal": true
+    },
+    {
+      "date": "2023-01-16",
+      "field": "low",
+      "user_reported": "36.15",
+      "source_value": "36.15",
+      "equal": true
+    },
+    {
+      "date": "2023-01-16",
+      "field": "close",
+      "user_reported": "36.50",
+      "source_value": "36.50",
+      "equal": true
+    },
+    {
+      "date": "2023-01-16",
+      "field": "volume_shares_scaled",
+      "user_reported": "34494589",
+      "source_value": "34494589",
+      "equal": true
+    },
+    {
+      "date": "2023-08-16",
+      "field": "open",
+      "user_reported": "36.55",
+      "source_value": "36.55",
+      "equal": true
+    },
+    {
+      "date": "2023-08-16",
+      "field": "high",
+      "user_reported": "36.60",
+      "source_value": "36.60",
+      "equal": true
+    },
+    {
+      "date": "2023-08-16",
+      "field": "low",
+      "user_reported": "36.00",
+      "source_value": "36.00",
+      "equal": true
+    },
+    {
+      "date": "2023-08-16",
+      "field": "close",
+      "user_reported": "36.05",
+      "source_value": "36.05",
+      "equal": true
+    },
+    {
+      "date": "2023-08-16",
+      "field": "volume_shares_scaled",
+      "user_reported": "30022247",
+      "source_value": "30022247",
+      "equal": true
+    }
+  ],
+  "endpoints": {
+    "2023-01-16": {
+      "close": "36.50",
+      "date": "2023-01-16",
+      "high": "36.90",
+      "low": "36.15",
+      "open": "36.55",
+      "volume_shares_scaled": "34494589"
+    },
+    "2023-08-16": {
+      "close": "36.05",
+      "date": "2023-08-16",
+      "high": "36.60",
+      "low": "36.00",
+      "open": "36.55",
+      "volume_shares_scaled": "30022247"
+    }
+  },
+  "representative": {
+    "close": "39.90",
+    "date": "2023-05-02",
+    "high": "40.25",
+    "low": "38.90",
+    "open": "39.00",
+    "volume_shares_scaled": "69164237"
+  },
+  "endpoint_dates_are_real_records": true,
+  "original_bytes_changed": false,
+  "new_android_json": false,
+  "browser_or_android_tests_executed_this_turn": false,
+  "region_statistics_computed": false,
+  "product_integration": "NOT_IMPLEMENTED_THIS_TURN"
+}
