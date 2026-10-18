@@ -1,0 +1,9 @@
+#manualPanel{margin:4px 0 6px;border-left:3px solid #c59cfa;padding-left:6px}
+#manualStrip{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:4px}
+.hurdleCard{min-width:0;background:#1c293d;border:1px solid #705e8e;border-radius:6px;padding:4px;display:flex;flex-direction:column;gap:3px}
+.hurdleCard>span{font-size:11px;color:#cfbbdf;overflow-wrap:anywhere;line-height:1.4}
+.hurdleCard button{min-height:44px;font-size:12px;padding:4px;text-align:left;line-height:1.4}
+.hurdleCard .hurdleLocate{background:#243649;color:#c9e9ff;text-align:center;margin-top:auto}
+#manualPosition{color:#9ee6d4}#manualQualification{color:#d4bbf3;font-size:11px}
+#manualUnavailable{color:#b5cadf}#evidenceBody details pre{overflow-wrap:anywhere}
+@media(min-width:700px){.hurdleCard{display:grid;grid-template-columns:1fr auto;align-items:center}.hurdleEvidence{grid-column:1}.hurdleLocate{grid-column:2;grid-row:1/4}.hurdleCard>span{grid-column:1}}

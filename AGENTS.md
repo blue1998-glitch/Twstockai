@@ -1,3 +1,7 @@
+## Latest manual-three-hurdle delivery (2026-10-18 Codex)
+
+Read CONTINUE_IN_WORK_MODE.md top, M1_V019_1101_THREE_HURDLES_HANDOFF.md latest, 股票系統M1_v0_18/hurdle_chart/README.md and its validation_20261018/驗收報告.md. NEW hurdle-chart-view/0.1 binds only user-reviewed1101 newRaw/2026-10-16 exact source/frame/basis: G1=35.50, G2=40.25, G3=50.20 with all five equal-high dates and no unique assignment. Original①④ remain separate. Offscreen/above-axis hints,44px source locations,compact evidence and precise JSON are implemented; no automatic selection or core thresholds. Old code/stores/pages/data immutable; original manual JSON retained. Actual Python365 PASS; Chromium208 HTTP checks including100 oracle downloads plus2 manual downloads PASS; local file:// blocked by managed policy (PASS_WITH_BLOCKED_CHECK), physical new Android NOT_TESTED_NEW_BUILD. Old pressure-page Android PARTIAL_EVIDENCE_OBSERVED remains separate. Next Work Mode uses the new downloadable HTML for device/usefulness evidence, with copyable handoff instructions. Same branch, preserve main; no agents/deployment/trades/messages.
+
 ## 固定交接偏好（2026-10-18 使用者要求）
 
 每次建議切回或改用工作模式（Work）時，必須同時附上可直接複製貼給 Work 的交接指令，不可只說「下一步用工作模式」。指令應包含儲存庫、指定分支、最新已確認的 GitHub 提交、必讀文件、本輪目標、已完成實測與尚未完成的限制，並要求保留後續成果、不改 main、未測不得標完成。尚未確認的遠端保存狀態須明示，不得虛填。此偏好持續適用於後續交接。

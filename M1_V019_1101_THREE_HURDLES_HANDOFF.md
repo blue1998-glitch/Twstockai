@@ -1,3 +1,13 @@
+# 已完成：獨立人工三關主圖工程（2026-10-18 Codex）
+
+本輪已接續5713fe2，原案例與下方交接原文保留。新hurdle-chart-view/0.1及下載hurdle-chart-selection/0.1位於股票系統M1_v0_18/hurdle_chart/，原pressure code／HTML不改。G1/G2/G3精確綁新Raw／10/16 source-frame-basis，其餘日期／股票不套；原①④分開、來源畫外提示、超軸不拉價軸、44px定位／返回、G3五日證據、折疊長ID／JSON及精確下載均已實作。
+
+[新版成品／SHA](deliveries/m1-v019-three-hurdles-20261018/README.md)；[契約與重現](股票系統M1_v0_18/hurdle_chart/README.md)；[本輪實測](股票系統M1_v0_18/hurdle_chart/validation_20261018/驗收報告.md)。365 Python PASS；Chromium HTTP208 PASS含100 oracle下載＋2人工層下載；file://額外檢查ERR_BLOCKED_BY_ADMINISTRATOR，整體PASS_WITH_BLOCKED_CHECK。HTML原244源檔／4854新Raw／1490原時點與整份parent欄位全等；只有1個人工層。
+
+新版Android NOT_TESTED_NEW_BUILD，原pressure版PARTIAL_EVIDENCE_OBSERVED不沿用，最新手機清單在M1_V019_PRESSURE_CHART_ANDROID_ACCEPTANCE.md最上方。下一步Work用新版小ZIP實機觀察與用途回饋；有可重現缺陷再交Codex。未定核心與Raw／公司行動／五年覆蓋、資料缺口全部保留，不把本次人工工程當全市場辨識完成。
+
+---
+
 # 1101三個左側關卡：已選點，待接入主圖
 
 使用者裁決：2026-10-18 15:19台北。本次接續分支dev/m1-v018-chart-annotations，收件前核實HEAD為718360c0495f3d29879ffa00de266e58ecb2023f。原引擎／策略／庫／歷史／舊成品／main保留。

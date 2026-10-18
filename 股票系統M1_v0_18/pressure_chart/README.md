@@ -1,3 +1,9 @@
+# 後續獨立三關版本入口（2026-10-18）
+
+1101新Raw／10/16人工G1 35.50、G2 40.25、G3 50.20已接入**新**hurdle_chart/，請讀[新版契約](../hurdle_chart/README.md)與root最新交接。舊pressure_chart程式、generated HTML及下方原0.1契約保留。新版Android另開NOT_TESTED_NEW_BUILD，原pressure頁部分實機證據不沿用；這個入口更新不代表改動原數值／策略或批准自動選關。
+
+---
+
 # 左側壓力主圖 pressure-chart-view/0.1
 
 本輪接續指定a3a58d4972d1efb5da8196e83954be574b0670c9，新增獨立主圖、官方歷史接入與描述事實候選，原technical_chart／product_candidate／src、策略參數、共同schema、所有舊庫及頁面未改。全市場自動辨識、正式高牆／魔王選取與交易價值不是本輪完成項。

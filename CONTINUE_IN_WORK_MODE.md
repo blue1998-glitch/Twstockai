@@ -1,3 +1,19 @@
+# 最新交付：1101人工三關已接入獨立新版主圖（2026-10-18 Codex）
+
+已包含指定5713fe248915dc47030de8e7573e2751457a53c5並保留其後Work證據。新頁 **hurdle-chart-view/0.1**：股票系統M1_v0_18/hurdle_chart/generated/M1_v0_19_three_hurdles.html；[新版小ZIP／SHA／下載入口](deliveries/m1-v019-three-hurdles-20261018/README.md)。舊pressure主圖與成品不覆寫。
+
+原①26.10／④26.85目前收盤已過點價，另列G1 2023-11-28／35.50、G2 2023-05-02／40.25、G3 50.20／五個同價日。三關近期24月仍提示畫外／超軸，定位不改10/16分析；不強拉50.20進Y軸。只有新1101 Raw／指定source-frame-basis／10/16接人工層，其他時點null，不倒灌歷史。證據先讀日期、點價、關係及10/18回溯資格，長ID／JSON折疊；G3不選唯一日、不自造區界。
+
+**本輪實測**：Python全套365項PASS（含新8項）；最後實際Chromium HTTP208項PASS，含100次下載對Python值／精度指紋與另2次人工層核對。額外file://開檔受管理政策ERR_BLOCKED_BY_ADMINISTRATOR，報告PASS_WITH_BLOCKED_CHECK，沒有繞過，不能稱開檔全過。交付HTML核對244源檔、4854新Raw／1490原frame、整份parent原欄位不變與唯一人工綁定；詳[本輪驗收](股票系統M1_v0_18/hurdle_chart/validation_20261018/驗收報告.md)。
+
+**新版Android NOT_TESTED_NEW_BUILD**，舊pressure-page PARTIAL_EVIDENCE_OBSERVED及原JSON證據保留但不沿用。下一步Work讀本節、[三關交接](M1_V019_1101_THREE_HURDLES_HANDOFF.md)、[新頁契約](股票系統M1_v0_18/hurdle_chart/README.md)、[Android最上方](M1_V019_PRESSURE_CHART_ANDROID_ACCEPTANCE.md)，以新檔測G1/G2/G3來源定位／24月返回、超軸不壓扁、直橫與JSON；只要求尚未測的新版本項目，不把舊回報刪掉重來。
+
+核心區界／整區量／增量／強度／衰減／自動選關／生命階段仍未知，公司行動／歷史公布可得與五年Adjusted未完成，Raw／五年高限制保留。TWSE六日Work主證是獨立補充，尚未接產品稽核，TPEX仍待；SQLite根因未證實。原引擎／策略／資料庫／歷史及main不改。來源人工JSON未回寫；其中NOT_IMPLEMENTED為原時點歷史，新wrapper另記接入狀態。
+
+每次建議轉模式，附完整可複製指令；本輪Work範本在新下載入口的WORK_HANDOFF.md，最終回覆另附最新已確認提交。GitHub是否保存以實際遠端及下載收據為準，不把本地結果當已上傳。
+
+---
+
 # 15:19使用者已指定1101三個後續左側關卡；可接人工參照層（2026-10-18）
 
 使用者指定2023-11-28 high35.50為左側第一關、2023-05-02 high40.25第二關、50.20第三關。原下載新Raw／10/16資料逐點相符；G3只指定價位，現有五個同價日期完整列出，未擅自指定唯一日。詳見 [三關實作交接](M1_V019_1101_THREE_HURDLES_HANDOFF.md)、[精確來源人工案例](docs/visual-discussion/20261018_1101_selected_hurdles.json)及[真實日K定位圖](docs/visual-discussion/20261018_1101_selected_hurdles.png)。
