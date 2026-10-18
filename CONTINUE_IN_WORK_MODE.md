@@ -1,3 +1,19 @@
+# Work接續：新版壓力頁手機驗收已備妥；另補TWSE六日主證（2026-10-18 13:20 台北）
+
+指定分支最新已核實為 `b9c38d6fbd56257f41e28657cf5fd6bd88e1ad3b`（本輪文件交付前），與使用者指定相同。成品基準仍是該提交pressure-chart-view/0.1，不是舊technical或attempt。已依序實讀指定8文件、成品入口、原coverage-audit、SHA及原browser-report；不是只看使用者摘要，也沒有宣稱已讀全專案。
+
+**本輪主線：直接手機開檔與回傳證據**，見 [新頁Android紀錄最上方](M1_V019_PRESSURE_CHART_ANDROID_ACCEPTANCE.md)。小ZIP解壓新HTML，預期1101／新Raw／10/16日收27.30、預設24月486根；18／24月→約5年1213根（最早2021-10-18）→近期，＋／−及直橫直，回傳原JSON與截圖。本輪尚無新頁手機畫面／操作回報／JSON，仍NOT_TESTED_NEW_BUILD，舊頁證據不沿用。
+
+原browser-report194／100與交付HTML SHA一致；這是報告間相符，不是本輪重跑瀏覽器／Python。大型history-candidate透過connector取得空content，本輪沒有獨立重算全部4854時點或整份HTML，後續JSON核對按實際可讀原檔進行。
+
+**已實際完成的額外工作**：找到並逐份直接下載／解析六個待證日的TWSE交易部原始新聞稿，核對日期／集中市場全日休市與原PDF SHA。補充在pressure_chart/validation_work_20261018/closure-primary-supplement.md／json及closure-audit-review-overlay.json。只支持集中市場1101／2884，不把它外推TPEX6488／8069；櫃買主證仍未取得，原稽核／產品未修改或重跑。下一次Codex可接市場別證據清單與新稽核，保留舊報告。
+
+完整五年公司行動／Adjusted、歷史公布可得、TPEX六日主證、正式區界／衰減／異常／急緩跌強度／重要性／魔王／增量、SQLite根因等未完成。Raw舊高不當已校正壓力，五年不當上市全史。原引擎策略／庫／歷史／舊頁／main保留；本輪只更新文件與補證。
+
+**下一步仍本對話Work**接實機結果，不提前切回Codex或重做規劃；有可重現程式問題或資料證據接入才交Codex。凡建議另切模式，必附含最新已確認GitHub提交的完整可貼指令。
+
+---
+
 # 最新交付：四檔約五年官方Raw＋雙維壓力來源主圖（2026-10-18 Codex）
 
 **固定交接偏好（使用者要求）**：之後每次建議切回工作模式（Work），都要一併提供可直接複製貼上的指令，列出儲存庫、指定分支、最新已確認的 GitHub 提交、必讀文件、本輪目標、實測成果及未完成限制；要求保留後續成果、不改 main、未測不得標完成。不得只告知切換模式；遠端尚未確認時必須明示。

@@ -1,3 +1,43 @@
+# Work開始新版壓力頁實機引導；尚未收到本頁手機結果（2026-10-18 13:20 台北）
+
+已直接查得指定分支HEAD等於 `b9c38d6fbd56257f41e28657cf5fd6bd88e1ad3b`，因此包含使用者交接提交；沒有其他更新需先保留。依使用者次序讀取AGENTS、CONTINUE最新、PROJECT_VISION、LEFT_PRESSURE_WALLS_HANDOFF最新、VISUAL_RULE_NOTES最新、pressure_chart/README、validation_20261018/驗收報告及本檔，另讀下載入口、SHA清單、原coverage-audit與原始browser-report。
+
+## 實際完成的讀取／核對
+
+- 確認新頁不是舊technical／attempt頁；下載檔名 `M1_v0_19_pressure_chart.html`，成品固定於上述提交。
+- 實際讀取browser-report.json：status PASS、checks陣列194筆、exact_precision_downloads100、physical_android NOT_TESTED_NEW_BUILD。其source_html_sha256與交付SHA清單的 `0b66a00c7b72c559973fd37011fee5a39b5ab933d04fc2bcc9347748ec65e430` 相同。
+- 這是原始報告與交付指紋之間的相符核對，**未重新下載／重算整份35MiB HTML，也未重跑357／21、194／100或新來源4854時點**。不能把讀取原報告當成本輪重測。
+- 大型history-candidate.json由GitHub connector只回傳空content與blob SHA；本輪未讀得該大檔全文，沒有宣稱獨立重算所有新日線。此限制不影響已讀文件／報告或使用者直接下載成品。
+- 另完成六份TWSE休市原始PDF的實際下載、日期／市場文字與原檔SHA核對，見 [主證補充](股票系統M1_v0_18/pressure_chart/validation_work_20261018/closure-primary-supplement.md)。TPEX主證及正式稽核接入仍未完成，與手機驗收分開。
+
+## 第一輪手機指引（待使用者執行）
+
+1. 下載小ZIP，從檔案／下載解壓，瀏覽器開 `M1_v0_19_pressure_chart.html`。
+2. 預期直接1101／Raw｜新官方日線／2026-10-16，日收27.30；預設24日曆月486根、2024-10-16～2026-10-16。這些是交付契約預期，不是本輪已觀察手機。
+3. 按18月／24月／約5年；全段預期2021-10-18～2026-10-16共1213根。回近期／24月，分析日、股票與來源不能被縮放移圖暗改。
+4. 點K面板右下＋／−；直向→橫向→直向，觀察顯示與資料保留，是否卡頓或遮擋。
+5. 在同一1101新Raw／10/16下載JSON原檔，附直／橫向畫面回本對話，按實際來源／分析日核對，不以檔名當通過。
+
+## 本輪證據狀態
+
+| 分類 | 現況 |
+|---|---|
+| 指定分支／文件／原始報告 | 已實際讀取與限定範圍核對 |
+| 新壓力頁Android直接畫面 | 尚無 |
+| 新壓力頁使用者操作回報 | 尚無 |
+| 新壓力頁手機下載原JSON | 尚無，NOT_VERIFIED |
+| 新壓力頁整體實機 | NOT_TESTED_NEW_BUILD |
+| 真實主圖用途認可 | 尚未取得，不因有來源／點線而認可 |
+| 月份容器／正式整理區 | 仍須分清，月份不是正式型態 |
+| 程式／新增瀏覽器測試 | 本輪未做；僅新增證據／紀錄／交接 |
+| 原technical與attempt實機 | 獨立沿革保留，不沿用新頁 |
+
+接收本輪手機結果後再依序測手勢、畫外來源定位、游標同步、切股／基底、原覆核①→④證據、來源區間、回看前綴與JSON；未覆蓋的項目保留未測。用真實圖確認目前位置、已過／下一關與價量高牆是否可讀；不把來源月份直接當整理區、不為追求標記完整補核心門檻。
+
+目前下一步仍在Work接收實機證據。若另開Work對話，須附儲存庫／分支／本文件所在最新已確認提交／必讀文件／本輪目標／原工程證據與未完成限制，依使用者固定偏好提供完整可複製交接。
+
+---
+
 # 左側壓力／五年Raw主圖：新版Android驗收
 
 版本pressure-chart-view/0.1；目前 **NOT_TESTED_NEW_BUILD**。先前technical-chart-view/0.1的PARTIAL_EVIDENCE_OBSERVED與attempt舊證據各自保留，不能沿用。此清單不是預先填PASS。
