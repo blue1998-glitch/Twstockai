@@ -6,7 +6,7 @@
 請接續股票系統M1，驗收最新人工三關主圖，不只提出計畫。
 儲存庫：blue1998-glitch/Twstockai
 分支：dev/m1-v018-chart-annotations
-必須包含交接提交5713fe248915dc47030de8e7573e2751457a53c5及其後Codex的hurdle-chart-view/0.1工程。先確認最新提交並保留後續成果，不用main或舊ZIP覆蓋。
+已核實成品提交：87ec609ef51d7346554e2546e520a9dbc4ac2235，包含交接5713fe248915dc47030de8e7573e2751457a53c5及hurdle-chart-view/0.1工程；同目錄後續收據提交亦保留。先確認指定分支包含此提交；若有更新，讀最新交接並保留後續成果，不用main或舊ZIP覆蓋。
 
 依序讀AGENTS.md、CONTINUE_IN_WORK_MODE.md最上方、M1_V019_1101_THREE_HURDLES_HANDOFF.md最新節、股票系統M1_v0_18/hurdle_chart/README.md及validation_20261018/驗收報告.md、M1_V019_PRESSURE_CHART_ANDROID_ACCEPTANCE.md最上方，再讀M1_V019_VISUAL_RULE_NOTES.md與docs/visual-discussion/20261018_1101_selected_hurdles.json。
 
