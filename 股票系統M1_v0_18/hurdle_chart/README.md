@@ -1,3 +1,36 @@
+# 最新：線標籤修正版 hurdle-chart-view/0.2
+
+開`generated/labels_v02/M1_v0_19_three_hurdles_labels_v02.html`；[獨立小ZIP／SHA](../../deliveries/m1-v019-hurdle-labels-v02-20261018/README.md)。0.1成品及下方契約／手機證據保留為歷史，不覆寫；新Android NOT_TESTED_NEW_BUILD，0.1的PARTIAL_EVIDENCE_OBSERVED不能沿用。
+
+本輪只修線標籤與來源點分離：價格在軸內，主圖右側就可讀關卡／兩位小數價格，不受來源日期畫外限制。來源圓點仍綁真實日期；G2／G3超軸只有提示，不強拉價軸／假貼邊。標籤48×44px，在K右側獨立欄，刻度／縮放鈕分開；多標籤必要時錯開並用短線連回真實價位，不把標籤當來源點。人工層存在時多留30px gutter，最小圖高340px容納三個觸控標籤。點標籤開同關證據，不改分析日／游標／圖窗；定位來源才明示移動游標。
+
+[前後實圖](validation_labels_v02_20261018/前後畫面.md)及[本輪驗收](validation_labels_v02_20261018/驗收報告.md)：10 Python專項、208實際Chromium HTTP回歸與44標籤專項PASS。未重跑全套365；file://舊管理拒絕未重試／未繞過。來源、數值、人工案例、精度與未知規則不變，新view_version為0.2；selection schema仍0.1，讀舊payload保留舊顯示版本，不升級歷史。
+
+重現（在股票系統M1_v0_18；Git checkout先root bootstrap --hydrate-missing保留差異）：
+
+```bash
+PYTHONDONTWRITEBYTECODE=1 python3 -m hurdle_chart.build \
+  --history pressure_chart/data/history-20261018/history-candidate.json \
+  --output-dir hurdle_chart/output/labels-v02-rebuild
+PYTHONDONTWRITEBYTECODE=1 python3 -m hurdle_chart.verify_artifact \
+  --html hurdle_chart/output/labels-v02-rebuild/M1_v0_19_three_hurdles_labels_v02.html \
+  --history pressure_chart/data/history-20261018/history-candidate.json \
+  --oracle hurdle_chart/output/labels-v02-rebuild/selection-oracle.json \
+  --report hurdle_chart/output/labels-v02-rebuild/source-report.json
+M1_HURDLE_DIR="$PWD/hurdle_chart/output/labels-v02-rebuild" \
+M1_LABEL_BROWSER_OUTPUT_DIR="$PWD/hurdle_chart/output/labels-v02-browser" \
+CODEX_BROWSER_EXECUTABLE_PATH=/usr/bin/chromium node hurdle_chart/test_labels.cjs
+M1_HURDLE_DIR="$PWD/hurdle_chart/output/labels-v02-rebuild" \
+M1_HURDLE_BROWSER_OUTPUT_DIR="$PWD/hurdle_chart/output/labels-v02-regression" \
+CODEX_BROWSER_EXECUTABLE_PATH=/usr/bin/chromium node hurdle_chart/test_browser.cjs
+TMPDIR="$PWD/product_candidate/tmp" PYTHONDONTWRITEBYTECODE=1 \
+  python3 -m unittest discover -s tests -p test_hurdle_chart.py -v
+```
+
+核心／Raw／公司行動／五年與資料缺口沿用。Work先看0.2 G1差異，不重要求同版舊圖／JSON，其他未測項目保留。以下是0.1歷史說明與命令；重現舊0.1 producer請用其固定成品提交87ec609，不拿目前0.2預設命令覆寫舊目錄。
+
+---
+
 # 1101人工三關主圖 hurdle-chart-view/0.1
 
 獨立入口：`generated/M1_v0_19_three_hurdles.html`。沿用原壓力主圖的真實日K、成交量、MACD與原有數值；舊pressure_chart、technical_chart、所有引擎／資料庫／歷史HTML不覆寫。新版只有人工案例接入及顯示工程，不是一般自動選關或策略完成。

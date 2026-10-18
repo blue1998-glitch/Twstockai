@@ -5,6 +5,7 @@ import json
 from pathlib import Path
 import re
 import unittest
+import zipfile
 
 from hurdle_chart.build import ROOT, CASE, attach, selection
 from hurdle_chart.manual import bind
@@ -101,6 +102,32 @@ class ManualHurdleTests(unittest.TestCase):
             actual['view_version'] = expected['view_version']
             self.assertEqual(actual, expected)
         self.assertEqual(selection(augmented, self.source['key'], '2026-10-16')['manual_hurdles'], self.layer)
+
+    def test_label_revision_preserves_every_old_payload_field_except_view_identity(self):
+        html = (ROOT / 'hurdle_chart/generated/M1_v0_19_three_hurdles.html').read_text()
+        old = unpack(json.loads(re.search(r'id="payload">(.*?)</script>', html, re.S).group(1)))
+        new = attach(self.old)
+        self.assertEqual(new['view_version'], 'hurdle-chart-view/0.2')
+        for key in old:
+            if key not in ('view_version', 'artifact_id'):
+                self.assertEqual(new[key], old[key], key)
+        self.assertNotEqual(old['artifact_id'], new['artifact_id'])
+
+    def test_label_revision_download_matches_verified_android_json_except_view_version(self):
+        source = ROOT / 'hurdle_chart/validation_android_20261018/android-original-evidence-1713.zip'
+        with zipfile.ZipFile(source) as archive:
+            exports = [n for n in archive.namelist() if n.endswith('.json')]
+            self.assertEqual(len(exports), 1)
+            raw = archive.read(exports[0])
+        self.assertEqual(hashlib.sha256(raw).hexdigest(), '369947bad71ab3fdff894c21511ebf242e1ddb12b59822d02ed93f0580bd2796')
+        actual = selection(attach(self.old), self.source['key'], '2026-10-16')
+        old = json.loads(raw)
+        html = (ROOT / 'hurdle_chart/generated/M1_v0_19_three_hurdles.html').read_text()
+        old_payload = unpack(json.loads(re.search(r'id="payload">(.*?)</script>', html, re.S).group(1)))
+        self.assertEqual(selection(old_payload, self.source['key'], '2026-10-16'), old)
+        self.assertEqual(old.pop('view_version'), 'hurdle-chart-view/0.1')
+        self.assertEqual(actual.pop('view_version'), 'hurdle-chart-view/0.2')
+        self.assertEqual(actual, old)
 
 
 if __name__ == '__main__':

@@ -14,8 +14,8 @@ from technical_chart.build import pack, unpack
 from product_candidate.build import publish_immutable
 from hurdle_chart.manual import bind, VERSION as LAYER_VERSION
 
-VERSION = 'hurdle-chart-view/0.1'
-NAME = 'M1_v0_19_three_hurdles.html'
+VERSION = 'hurdle-chart-view/0.2'
+NAME = 'M1_v0_19_three_hurdles_labels_v02.html'
 CASE = ROOT.parent / 'docs/visual-discussion/20261018_1101_selected_hurdles.json'
 
 
@@ -46,7 +46,7 @@ def selection(payload, key, as_of):
     value = pressure_selection(payload, key, as_of)
     s = next(s for s in [*payload['numbers']['series'], *payload['history_series']] if s['key'] == key)
     frame = next(f for f in s['frames'] if f['as_of'] == as_of)
-    value.update(schema_version='hurdle-chart-selection/0.1', view_version=VERSION,
+    value.update(schema_version='hurdle-chart-selection/0.1', view_version=payload['view_version'],
                  manual_hurdles=deepcopy(payload['manual_hurdle_layers'][key][frame['index']]))
     return value
 

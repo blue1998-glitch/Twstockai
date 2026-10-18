@@ -17,15 +17,35 @@ function updateManualStrip(){
  }
 }
 function drawManualOverlay(ctx,x,y,price){
+ updateManualLineLabels(ctx,y,price);
  if(!manual)return;
  for(const item of manual.references){const r=item.reference,py=y(r.raw_high);if(py<price.top||py>price.bottom)continue;
   ctx.save();ctx.strokeStyle='#d5abff';ctx.setLineDash([3,5]);ctx.beginPath();ctx.moveTo(geometry.left,py);ctx.lineTo(geometry.right,py);ctx.stroke();ctx.setLineDash([]);
   for(const i of item.source_indices){if(i<view.start||i>view.end)continue;ctx.fillStyle='#d5abff';ctx.beginPath();ctx.arc(x(i),py,5,0,Math.PI*2);ctx.fill();
    hits.push({kind:'pressure',id:'manual:'+r.id+':'+i,x:x(i),y:py,index:i,label:r.id+' 人工點價 '+fmt(r.raw_high),source:{type:'manual',id:r.id}});
   }
-  // Upper/lower out-of-axis levels stay in the strip, never at a false coordinate.
-  const visible=item.source_indices.find(i=>i>=view.start&&i<=view.end);
-  if(visible!==undefined){ctx.fillStyle='#d5abff';ctx.font='10px system-ui';ctx.fillText(r.id+' '+fmt(r.raw_high),Math.max(geometry.left,Math.min(geometry.right-56,x(visible)+7)),Math.max(price.top+10,py-12));}ctx.restore();
+  ctx.restore();
+ }
+}
+function updateManualLineLabels(ctx,y,price){
+ const holder=$('manualLineLabels');holder.replaceChildren();
+ // Axis visibility belongs to a price line; source-date visibility belongs only
+ // to the actual candle marker. This is layout, never a new analysis condition.
+ const labels=(manual?.references||[]).map(item=>({item,actualY:y(item.reference.raw_high)}))
+  .filter(row=>row.actualY>=price.top&&row.actualY<=price.bottom).sort((a,b)=>a.actualY-b.actualY);
+ const height=44,gap=2,min=price.top+height/2,max=price.bottom-height/2;
+ for(let i=0;i<labels.length;i++)labels[i].center=Math.max(min,Math.min(max,labels[i].actualY),i?labels[i-1].center+height+gap:min);
+ if(labels.length&&labels.at(-1).center>max){labels.at(-1).center=max;for(let i=labels.length-2;i>=0;i--)labels[i].center=Math.min(labels[i].center,labels[i+1].center-height-gap);}
+ for(const row of labels){const r=row.item.reference,button=text('button','',holder);button.className='manualPriceLabel';button.dataset.reference=r.id;
+  button.style.left=(geometry.right+40)+'px';button.style.top=(row.center-height/2)+'px';
+  button.dataset.actualY=String(row.actualY);button.dataset.price=r.raw_high;
+  button.setAttribute('aria-label',`${r.id} 線標籤 ${fmt(r.raw_high)}，查看人工證據`);
+  button.title=`${r.id} ${fmt(r.raw_high)} · ${r.matching_source_dates.every(outside)?'來源畫外':'保留真實來源日'} · 人工回溯點價`;
+  text('span',r.id,button);text('span',fmt(r.raw_high),button);
+  button.onclick=e=>{e.stopPropagation();openManual(r.id);};
+  // A short gutter leader identifies the exact line ordinate if labels have to
+  // move apart. It is not a source point and never invents a date or price.
+  ctx.save();ctx.strokeStyle='#d5abff';ctx.setLineDash([]);ctx.beginPath();ctx.moveTo(geometry.right+36,row.actualY);ctx.lineTo(geometry.right+38,row.actualY);ctx.lineTo(geometry.right+38,row.center);ctx.lineTo(geometry.right+40,row.center);ctx.stroke();ctx.restore();
  }
 }
 function openManual(id){

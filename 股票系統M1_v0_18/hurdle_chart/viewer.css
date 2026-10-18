@@ -6,4 +6,8 @@
 .hurdleCard .hurdleLocate{background:#243649;color:#c9e9ff;text-align:center;margin-top:auto}
 #manualPosition{color:#9ee6d4}#manualQualification{color:#d4bbf3;font-size:11px}
 #manualUnavailable{color:#b5cadf}#evidenceBody details pre{overflow-wrap:anywhere}
+#manualLineLabels{position:absolute;inset:0;pointer-events:none}
+#manualLineLabels .manualPriceLabel{position:absolute;pointer-events:auto;width:48px;height:44px;min-height:44px;padding:2px;display:flex;flex-direction:column;align-items:center;justify-content:center;gap:1px;font-size:11px;line-height:1.15;color:#f1ddff;background:#243047;border:1px solid #d5abff;border-radius:5px;font-variant-numeric:tabular-nums;z-index:1}
+#manualLineLabels .manualPriceLabel span:last-child{font-size:12px}
+#manualPanel:not([hidden])~#chartWrap #chart{min-height:340px}
 @media(min-width:700px){.hurdleCard{display:grid;grid-template-columns:1fr auto;align-items:center}.hurdleEvidence{grid-column:1}.hurdleLocate{grid-column:2;grid-row:1/4}.hurdleCard>span{grid-column:1}}

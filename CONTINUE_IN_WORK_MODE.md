@@ -1,3 +1,17 @@
+# 最新交付：主圖畫外G1線標籤修正版0.2（2026-10-18 Codex）
+
+已接續指定e3e837ca20669d974fc994fd6565292105fd15b1，保留所有Work後續原圖／原JSON及核對。新hurdle-chart-view/0.2入口：股票系統M1_v0_18/hurdle_chart/generated/labels_v02/M1_v0_19_three_hurdles_labels_v02.html；[獨立小ZIP／SHA](deliveries/m1-v019-hurdle-labels-v02-20261018/README.md)。原0.1成品不覆寫。
+
+**已修正**：價格在軸內就顯示名稱與價格，即使來源日期畫外；來源圓點仍只在真實日期。近期24月G1 35.50可在主圖右側辨認、可點查證，卡片捲走也不消失；標籤與刻度／K／縮放鈕分區，互相過近用短線指回真實價位。G2／G3超軸仍提示，不強拉價軸或假貼邊。定位／回24月及標籤點擊不改10/16分析日／游標（定位僅明示移游標）。
+
+**本輪實測**：10項Python專項PASS，未重跑原整套365；208個實際Chromium HTTP回歸PASS（含100 oracle下載與另2次人工層下載）、44標籤專項PASS（四視窗）。[實際前後畫面](股票系統M1_v0_18/hurdle_chart/validation_labels_v02_20261018/前後畫面.md)及[實測報告](股票系統M1_v0_18/hurdle_chart/validation_labels_v02_20261018/驗收報告.md)。交付HTML SHA fe0d27111f9a03b23ea587cb195a5b5b3987b4862e7af6ee20684be1b69fbce6；核244源檔／4854新Raw／1490原時點與唯一人工層。舊手機JSON與舊payload全欄位相等，新下載除view_version外全相等，數值／來源／精度／未知規則不變。
+
+原file://管理拒絕保留、未重試或繞過，本輪報告PASS_WITH_KNOWN_BLOCKER，不當新版開檔通過。**0.2 Android NOT_TESTED_NEW_BUILD**；0.1 Pixel9Pro立即載入自報、直／橫主圖、G3五日及原JSON核對PARTIAL_EVIDENCE_OBSERVED原樣保留。下一步Work先收0.2標籤閱讀／點選不跳日差異，不再要求相同0.1截圖／JSON；其他未測手勢／游標／旋轉等依[手機最新紀錄](M1_V019_PRESSURE_CHART_ANDROID_ACCEPTANCE.md)保留。
+
+沿[本次標籤交接](M1_V019_HURDLE_LABEL_READABILITY_HANDOFF.md)及[hurdle_chart最新README](股票系統M1_v0_18/hurdle_chart/README.md)繼續。區界／整區量／增量／強度／衰減／自動選關／生命階段未定，公司行動／歷史公布可得／五年Adjusted未完成，Raw／五年覆蓋及資料缺口與SQLite未知根因保留。原策略、引擎、庫、歷史、舊頁及main不改；核心用途未認可。若建議轉模式必附完整可貼指令；本輪範本在新下載入口WORK_HANDOFF.md。
+
+---
+
 # 17:41近期24月橫向主圖已確認；畫外G1線缺標籤交Codex（2026-10-18）
 
 新圖直接顯示2024-10-16～2026-10-16、486／1213根、分析10/16，K／量／MACD及底部完整讀值可見。OHLC27.10／27.70／26.95／27.30、量57,437,884股、DIF0.63／DEA0.45／柱0.36與前輪全欄位相符原JSON一致；價軸約18.43～37.27，未因50.20壓扁近期K。[原圖與紀錄](股票系統M1_v0_18/hurdle_chart/validation_android_20261018/evidence-1741.md)。24月近期窗返回結果已確認，不再重要求相同圖／G3表／原JSON；移動游標等其他操作仍未測。

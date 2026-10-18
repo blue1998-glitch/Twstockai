@@ -1,3 +1,13 @@
+# 已完成顯示修正：獨立0.2線標籤（2026-10-18 Codex）
+
+已包含指定e3e837ca20669d974fc994fd6565292105fd15b1，以下原問題／交接保留。新hurdle-chart-view/0.2、M1_v0_19_three_hurdles_labels_v02.html獨立交付，原0.1 HTML／ZIP／oracle／手機證據不覆寫。[新下載與SHA](deliveries/m1-v019-hurdle-labels-v02-20261018/README.md)；[前後真實頁面圖](股票系統M1_v0_18/hurdle_chart/validation_labels_v02_20261018/前後畫面.md)；[本輪實測](股票系統M1_v0_18/hurdle_chart/validation_labels_v02_20261018/驗收報告.md)。
+
+線標籤只看價軸、來源點只看真實日期，48×44px標籤在刻度／縮放鈕之間分區，錯開時用短線指回原價位；不遮K、不假移來源／價格、不改分析日。G2／G3超軸提示與原價軸保留。下載schema仍0.1，view_version改0.2；舊payload仍輸出舊0.1版本及完整舊手機JSON，新下載數值與來源逐欄位不變。
+
+實際10項Python專項、208 HTTP瀏覽器回歸及44標籤專項PASS；未重跑全套365。實際交付核244源檔／4854新Raw／1490原時點。原file://管理拒絕未重試，報告PASS_WITH_KNOWN_BLOCKER。0.2 Android NOT_TESTED_NEW_BUILD；0.1部分實機證據全部保留，不重要求同版相同圖／JSON，下一步Work先核新版G1標籤可讀與點擊不跳日的差異。核心／資料未知與原引擎／庫／策略／歷史／main原則不變。
+
+---
+
 # 三關主圖畫外來源線缺標籤：Codex修正交接
 
 ## 問題與重現
