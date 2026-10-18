@@ -1,3 +1,15 @@
+# 17:13新頁JSON全欄位相符，G3五日證據已見（2026-10-18）
+
+實際收到新版原JSON與G3直向證據圖：[分項紀錄／原始證據包／重現腳本](股票系統M1_v0_18/hurdle_chart/validation_android_20261018/evidence-1713.md)。本輪無新口頭操作回報。裝置沿上輪Pixel9Pro／Google瀏覽器自報。
+
+原JSON1,185,454 bytes，SHA256369947bad71ab3fdff894c21511ebf242e1ddb12b59822d02ed93f0580bd2796，全部解析欄位與固定交付HTML及Python producer相同新1101Raw／10/16選擇完全相等，schema hurdle-chart-selection/0.1。已核對manual_hurdles、三關、G3.source_date=null／五同價日、來源與前綴指紋、全部數值精度、1213根K／指標及wrapper已接入狀態；原案例NOT_IMPLEMENTED歷史保留。不是重新抓行情或獨立重算指標，未重跑365／208。
+
+截圖直接看到G3五日全50.20、各定位按鈕、非唯一選日說明、返回近期24月按鈕及兩個詳細資訊折疊入口。按鈕可見不等於五列逐一定位／返回／展開都通過；主圖遮住、無新橫向圖。
+
+Android維持PARTIAL_EVIDENCE_OBSERVED；JSON單檔核對新增FILE_VERIFIED，G3表新增OBSERVED，核心用途仍未認可。下一步仍同對話Work補新版24月橫向主圖：關閉證據→24月→專注主圖→橫向。本次JSON已核對，不重要求相同下載。其他定位／游標同步／手勢／排除其他日股等缺證據項目保留；資料／核心未知與原政策阻礙沿用。沒有產品、引擎、策略、庫、歷史／main變更。
+
+---
+
 # 16:19新三關頁已在Pixel9Pro開啟：部分實機證據已收到（2026-10-18）
 
 使用者回報Pixel9Pro／手機Google瀏覽器／Android稱最新版本、「馬上就開好了」。這是快速載入的主觀回報，沒有量測秒數／確切OS與瀏覽器版號或連續操作卡頓結論。新標頭、1101新Raw、分析10/16收27.30、①④已過與G1/G2/G3分層均直接可見；本機content開檔後已渲染。
