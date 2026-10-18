@@ -7,7 +7,7 @@
 
 儲存庫：blue1998-glitch/Twstockai
 分支：dev/m1-v018-chart-annotations
-必須包含e3e837ca20669d974fc994fd6565292105fd15b1及其後hurdle-chart-view/0.2修正。先確認指定分支最新提交；若有更新先讀最新交接並保留後續成果，不用main或舊ZIP覆蓋。
+已核實成品提交：e226d4faea72b8390280c0f66cf4dd293416f73c，包含e3e837ca20669d974fc994fd6565292105fd15b1及hurdle-chart-view/0.2修正；後續收據提交亦保留。先確認指定分支包含此提交；若有更新先讀最新交接並保留後續成果，不用main或舊ZIP覆蓋。
 
 依序讀AGENTS.md、CONTINUE_IN_WORK_MODE.md最上方、M1_V019_HURDLE_LABEL_READABILITY_HANDOFF.md最新節、股票系統M1_v0_18/hurdle_chart/README.md、validation_labels_v02_20261018/驗收報告.md與前後畫面.md、M1_V019_PRESSURE_CHART_ANDROID_ACCEPTANCE.md最上方。
 

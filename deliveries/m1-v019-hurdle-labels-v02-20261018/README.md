@@ -2,7 +2,7 @@
 
 請開新檔 **M1_v0_19_three_hurdles_labels_v02.html**，頁頂「M1 三關主圖0.2」。原0.1的HTML／ZIP／實機原圖與JSON保留，不拿舊檔代替新版差異驗收。
 
-- [直接下載修正版小ZIP](https://github.com/blue1998-glitch/Twstockai/raw/refs/heads/dev/m1-v018-chart-annotations/deliveries/m1-v019-hurdle-labels-v02-20261018/M1_v019_three_hurdles_labels_v02.zip)
+- [直接下載修正版小ZIP](https://github.com/blue1998-glitch/Twstockai/raw/e226d4faea72b8390280c0f66cf4dd293416f73c/deliveries/m1-v019-hurdle-labels-v02-20261018/M1_v019_three_hurdles_labels_v02.zip)
 - [ZIP SHA256](SHA256SUMS.txt)／[CRC與解壓逐檔指紋](PACKAGE_VERIFICATION.json)
 - [可見修正前後畫面](../../股票系統M1_v0_18/hurdle_chart/validation_labels_v02_20261018/前後畫面.md)
 - [本輪實測報告](../../股票系統M1_v0_18/hurdle_chart/validation_labels_v02_20261018/驗收報告.md)／[使用及重現](../../股票系統M1_v0_18/hurdle_chart/README.md)
@@ -19,3 +19,5 @@
 區界、整區量、增量、強度、衰減、自動選關、生命階段未定；完整公司行動／歷史公布可得／五年Adjusted未完成。Raw舊高不認證共同校正壓力、五年高不是完整歷史高，其他資料缺口／SQLite未知根因保留。原引擎／策略／資料庫／歷史／舊已交付頁與main不改，沒有部署、付費、交易、發訊息或子代理。
 
 GitHub實際保存與下載核對以同目錄GITHUB_DOWNLOAD_VERIFICATION.json為準；沒有收據前不把本地結果當已下載驗證。
+
+已實際從固定成品提交`e226d4faea72b8390280c0f66cf4dd293416f73c`讀回72檔／49,310,380 bytes，全部與本地相同；遠端小ZIP實際CRC／解壓逐檔SHA通過。[GitHub下載收據](GITHUB_DOWNLOAD_VERIFICATION.json)。後續提交只保存收據、固定入口及Work指令，不改這份已測成品。
