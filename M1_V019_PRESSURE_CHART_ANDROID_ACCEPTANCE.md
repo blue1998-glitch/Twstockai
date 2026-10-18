@@ -1,3 +1,37 @@
+# Work已核對新版下載，開始收Android證據（2026-10-18）
+
+本輪開始時直接確認指定分支HEAD等於使用者交接提交 **e37ea8e7c553b115dc150b9a33401d04f55dacd0**，包含該提交，沒有從main或舊ZIP覆蓋。依序實讀AGENTS、CONTINUE最上方、三關交接最新節、hurdle_chart README、其validation_20261018/驗收報告、Android最上方、VISUAL_RULE_NOTES最新裁決及人工案例完整JSON，另讀新版下載入口及原始browser-report.json。
+
+**實際下載核對已完成**：從固定成品提交87ec609ef51d7346554e2546e520a9dbc4ac2235下載小ZIP，4,358,045 bytes，SHA256 b82ca6f599e0f8fd5d115a133e126ea283cc9519781debd8c2bbb2795470659d。ZIP CRC與內部三檔SHA逐一相符；解出HTML36,712,014 bytes，SHA2564cbe923936f9841652e7a303ec60029f9159dffe3b266e468d04b573f060706c。HTML原碼實讀標頭「M1 三關主圖 0.1」。見[本輪下載核對原始紀錄](股票系統M1_v0_18/hurdle_chart/validation_work_20261018/work-download-verification.json)。這是ZIP／交付檔案核對，**沒有執行瀏覽器或手機，也沒有重跑365／208**。
+
+原browser-report實讀status=PASS_WITH_BLOCKED_CHECK、checks208、exact_precision_downloads100、physical_android=NOT_TESTED_NEW_BUILD；blocked_checks保留file:// ERR_BLOCKED_BY_ADMINISTRATOR。報告HTML SHA與本輪實算一致。不把雲端HTTP或ZIP可讀當Android content開檔成功，不重試繞過管理政策。
+
+## 目前證據分類
+
+| 類別 | 新hurdle-chart-view/0.1目前狀態 |
+|---|---|
+| 新版原檔下載／CRC／內部SHA／HTML身分 | FILE_VERIFIED，本輪實際完成 |
+| Android直接畫面 | 尚未收到新版畫面，NOT_TESTED |
+| 使用者操作回報 | 尚無新版回報 |
+| 頁面下載原JSON | 尚未收到，NOT_VERIFIED；ZIP內案例不是頁面匯出 |
+| 實機故障 | 尚無可重現故障，不預先判定PASS或FAIL |
+| 新版Android整體 | NOT_TESTED_NEW_BUILD |
+| 核心用途／分類與交易價值 | NOT_ESTABLISHED |
+
+舊pressure的PARTIAL_EVIDENCE_OBSERVED、原PNG／JSON與使用者舊回報全保留，不能套用本版。
+
+## 先做手機第一輪
+
+從新版小ZIP解壓，在檔案／下載以瀏覽器開 **M1_v0_19_three_hurdles.html**，確認標頭、1101／Raw｜新官方日線／10/16收27.30、24月486根、原①④與G1／G2／G3分開。先回傳直向主圖，記手機型號／Android／瀏覽器（未知可留待補）、實際開檔方式、約幾秒載入、有無卡頓；標頭被捲出畫面時先看頁頂。預期值是待驗條件，不代填成功。
+
+後續按本檔既有新版六步清單：直橫與超軸可讀性→G1/G2定位與24月返回→G3五日證據／逐日定位→圖點、移圖縮放、K量MACD游標、切10/15／其他來源不套→從新版頁面下載原JSON核對hurdle-chart-selection/0.1、manual_hurdles、G3.source_date=null、來源／精度與wrapper接入資格。24月返回486根與「回近期」60根分開。可捲動看MACD，不要求橫向三窗硬擠同屏。
+
+沒有本輪新版JSON／截圖就不新增手機通過項目。原案例NOT_IMPLEMENTED是歷史欄位，新wrapper整合狀態另存，不能改原案例或因其歷史字樣誤判未接入。區界／量／增量／強度／衰減／自動選關／生命階段、Raw完整公司行動／Adjusted／歷史公布可得、其他資料缺口與SQLite根因等限制全部保留。
+
+下一步仍**本對話Work**接本人新版實機回報與檔案；可重現工程缺陷再附版本／來源／日期／操作／原圖／JSON交Codex。本輪僅新增下載證據與交接，未改成品、引擎、策略、庫、歷史或main，未部署／付費／交易／發訊息／子代理。若建議切換另附完整可貼指令。
+
+---
+
 # 新版人工三關主圖：另開Android驗收（2026-10-18 Codex）
 
 版本 **hurdle-chart-view/0.1**，檔名 **M1_v0_19_three_hurdles.html**，HTML SHA256 `4cbe923936f9841652e7a303ec60029f9159dffe3b266e468d04b573f060706c`。本版 **NOT_TESTED_NEW_BUILD**。下方原pressure-chart-view/0.1的PARTIAL_EVIDENCE_OBSERVED及原圖／JSON保留；不可沿用新版。
