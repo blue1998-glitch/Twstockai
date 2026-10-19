@@ -1,3 +1,5 @@
+最新進度（2026-10-19 13:50）：使用者回覆「可以」，本項底色與K線辨識驗收已按USER_REPORTED_STYLE_ACCEPTED收束。[原話與資格](../../股票系統M1_v0_18/soft_region_chart_v043/validation_user_20261019/style-accepted-1350.md)。不要再要求重測此項、重索相同舊圖／JSON或建立新版本。下一步同Work回核心圖形判讀；下面原驗收指令保留歷史，已收束的樣式步驟不再執行。其他未測／策略／資料／file://限制保持。本輪無新測試或產品修改。
+
 # M1 K線淡底色主圖0.4.3
 
 [下載新版小ZIP](https://raw.githubusercontent.com/blue1998-glitch/Twstockai/ba78194d5b385324be76c026ba499eedd32c4647/deliveries/m1-v019-soft-regions-v043-20261019/M1_v019_soft_regions_v043.zip)，解壓開 **M1_v0_19_soft_regions_v043.html**，標頭「M1 K線淡底色主圖 0.4.3」。1101／新官方Raw／2026-10-16、日收27.30，24月486根。

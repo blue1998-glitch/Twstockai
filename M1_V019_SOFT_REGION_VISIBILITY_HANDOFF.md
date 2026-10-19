@@ -1,3 +1,11 @@
+# 2026-10-19 13:50：0.4.3樣式獲使用者回報認可，差異驗收收束
+
+使用者回覆「可以」，對應前一0.4.3底色與K線同時清楚的新觀感。記 **USER_REPORTED_STYLE_ACCEPTED／CLOSED_BY_USER_REPORT**；[本輪原話與資格](股票系統M1_v0_18/soft_region_chart_v043/validation_user_20261019/style-accepted-1350.md)。本項不再重驗或索舊圖JSON，不建立新版本。Android只新增PARTIAL_USER_REPORTED_STYLE_ONLY，無新圖、裝置／實開版本未獨立核實，不推成全版實機或核心用途通過；其他未測／政策阻擋保持。
+
+成品仍ba78194d5b385324be76c026ba499eedd32c4647的0.4.3，前一下載交接e64a6ecda89dc130b824fdb3e0b4f6f373ebe32e；[入口](deliveries/m1-v019-soft-regions-v043-20261019/README.md)。本輪只保存回報與交接，沒有改產品／執行新測試。下一步仍同Work，回到價量區域的核心圖形判讀與規則整理；新核心圖尚未準備，所有未知策略／資料限制與舊成果保留，不改main，不部署付費交易訊息子代理。
+
+---
+
 固定0.4.3成品提交：ba78194d5b385324be76c026ba499eedd32c4647；新ZIP已實際從GitHub下載核SHA／CRC／內部SHA，與PACKAGE_VERIFICATION及最終32項HTTP報告合計3檔核對通過。[本次實際下載收據](deliveries/m1-v019-soft-regions-v043-20261019/GITHUB_DOWNLOAD_VERIFICATION.json)。原38檔全面回讀於工作區維護清理後無法確認收據，不宣稱已完成；成品／源碼／證據已先保存GitHub，不受本地清理影響。最新交接以本檔所在分支提交為準。
 
 # 2026-10-19 最新：0.4.3背景與K線須同時清楚

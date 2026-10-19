@@ -1,3 +1,9 @@
+# Latest0.4.3 style acceptance closed by user report (2026-10-19 13:50 Work)
+
+User replied 可以 to0.4.3 shade/candle readability: USER_REPORTED_STYLE_ACCEPTED, CLOSED_BY_USER_REPORT. Read CONTINUE top and 股票系統M1_v0_18/soft_region_chart_v043/validation_user_20261019/style-accepted-1350.md. No new screenshot/device/version verification or tests; Android PARTIAL_USER_REPORTED_STYLE_ONLY, no full Android/core approval. Do not reopen shade acceptance, request identical old evidence, or build0.4.4. Product/strategy/data unchanged, all unknowns and file:// blocker persist. Next same Work returns to visual core-rule discussion with zoomable real charts, not prepared this turn; retain old confirmed G1/G2 facts. Preserve branch/main/history; no agents/deployment/payments/trades/messages.
+
+---
+
 # Latest0.4.3 background/candle distinction (2026-10-19 Work)
 
 User reports0.4.2 shade now visible, requests deeper shade with both region and candles clear. Device/version not independently confirmed, no new image. New independent soft_region_chart_v043 default18% and12/18/26% controls; original extent/numerics/foreground preserved. Actual32 HTTP checks PASS,24 foreground samples and101067 opaque pixels unchanged; ZIP CRC/SHA verified. Failures/corrections preserved, fullPython/old suites not rerun. Read CONTINUE top, visibility handoff latest, new report and delivery Work instructions. NewAndroid NOT_TESTED_NEW_BUILD; next same Work only shade/K readability. Preserve all old evidence/engines/strategies/stores/main and restrictions; no subagents/deployment/payments/trades/messages.

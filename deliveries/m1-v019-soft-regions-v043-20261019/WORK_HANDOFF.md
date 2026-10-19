@@ -1,3 +1,5 @@
+最新進度（2026-10-19 13:50）：使用者回覆「可以」，本項底色與K線辨識驗收已按USER_REPORTED_STYLE_ACCEPTED收束。[原話與資格](../../股票系統M1_v0_18/soft_region_chart_v043/validation_user_20261019/style-accepted-1350.md)。不要再要求重測此項、重索相同舊圖／JSON或建立新版本。下一步同Work回核心圖形判讀；下面原驗收指令保留歷史，已收束的樣式步驟不再執行。其他未測／策略／資料／file://限制保持。本輪無新測試或產品修改。
+
 固定0.4.3成品提交：ba78194d5b385324be76c026ba499eedd32c4647；固定ZIP：https://raw.githubusercontent.com/blue1998-glitch/Twstockai/ba78194d5b385324be76c026ba499eedd32c4647/deliveries/m1-v019-soft-regions-v043-20261019/M1_v019_soft_regions_v043.zip
 已核GitHub實際下載ZIP SHA／CRC／內部SHA與包裝／最終32項HTTP報告，共3檔，見GITHUB_DOWNLOAD_VERIFICATION.json。初次38檔全面回讀因工作區維護失去收據確認，本次不宣稱38檔全通過；舊證據已存GitHub。最新交接以本檔所在分支提交為準。
 

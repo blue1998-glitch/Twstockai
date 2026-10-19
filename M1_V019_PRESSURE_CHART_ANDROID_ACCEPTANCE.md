@@ -1,3 +1,11 @@
+# 2026-10-19 13:50：0.4.3樣式獲使用者回報認可，差異驗收收束
+
+使用者回覆「可以」，對應前一0.4.3底色與K線同時清楚的新觀感。記 **USER_REPORTED_STYLE_ACCEPTED／CLOSED_BY_USER_REPORT**；[本輪原話與資格](股票系統M1_v0_18/soft_region_chart_v043/validation_user_20261019/style-accepted-1350.md)。本項不再重驗或索舊圖JSON，不建立新版本。Android只新增PARTIAL_USER_REPORTED_STYLE_ONLY，無新圖、裝置／實開版本未獨立核實，不推成全版實機或核心用途通過；其他未測／政策阻擋保持。
+
+成品仍ba78194d5b385324be76c026ba499eedd32c4647的0.4.3，前一下載交接e64a6ecda89dc130b824fdb3e0b4f6f373ebe32e；[入口](deliveries/m1-v019-soft-regions-v043-20261019/README.md)。本輪只保存回報與交接，沒有改產品／執行新測試。下一步仍同Work，回到價量區域的核心圖形判讀與規則整理；新核心圖尚未準備，所有未知策略／資料限制與舊成果保留，不改main，不部署付費交易訊息子代理。
+
+---
+
 # 2026-10-19 最新：已看得到底色，要求背景與K線同時清楚
 
 USER_REPORTED：使用者「已經看的見了，顏色可在深一些標準是能一眼辨識背景卻也能清楚看見K線兩者必須能清楚分別辨識。」上一0.4.2語境底色已可見，仍要加深；同句重送不計兩次測試。本輪無新圖，裝置／實開版本／選項未獨立確認，不代填完整Android或K線可讀已通過。0.4.3新Android NOT_TESTED_NEW_BUILD。
