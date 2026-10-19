@@ -1,3 +1,9 @@
+# Latest shade visibility0.4.2 (2026-10-19 Work)
+
+User reports shade is invisible; new independent soft_region_chart_v042 uses12% opacity and local8/12/20% choices, no region border. Read CONTINUE top and M1_V019_SOFT_REGION_VISIBILITY_HANDOFF.md, new module report and delivery WORK_HANDOFF. Actual28 focused Chromium HTTP checks PASS, immutable payload values except view_version/artifact_id, ZIP CRC/SHA verified; fullPython/old suites not rerun. Android NOT_TESTED_NEW_BUILD; latest report has no new screenshot or independently confirmed device/version. Preserve all prior evidence and sources; same branch, main unchanged. Next same Work checks only shade appearance; no old-function retest, no subagents/deployment/payments/trades/messages.
+
+---
+
 # Latest borderless translucent style0.4.1 (2026-10-19 Work)
 
 Read CONTINUE_IN_WORK_MODE.md top and M1_V019_SOFT_REGION_FILL_HANDOFF.md. New soft_region_chart preserves immutable0.4 payload except view_version/artifact_id; only region borders removed and3% backgrounds added with G1 uncertain-edge fade. New ZIP is in deliveries/m1-v019-soft-regions-v041-20261019; HTML is inside ZIP, rebuildable from source. Actual24 focused Chromium HTTP checks PASS, fullPython/old browser suites not rerun. NewAndroid NOT_TESTED_NEW_BUILD; old0.4-family screenshot observed and user accepted this G2 extent, requesting different style. All old sources/engines/stores/cases/builds/evidence/main preserved; strategy/source/file-policy limits unchanged. Next same Work only checks shade appearance. No subagents/deployment/payments/trades/messages.

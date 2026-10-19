@@ -1,3 +1,9 @@
+# 2026-10-19 最新0.4.2底色可辨識性：待新實機證據
+
+USER_REPORTED：使用者「看不到底色區域」，上一交付0.4.1語境；本輪無新圖、裝置／實開版本未獨立確認，記VISIBILITY_INSUFFICIENT，不推定Android成功。OBSERVED僅工程：新0.4.2預設12%／可選8/12/20%，28項真實Chromium HTTP PASS與前後PNG，詳soft_region_chart_v042/validation_20261019/驗收報告.md。原檔核對僅新包CRC／SHA與payload無損。0.4.2 Android=NOT_TESTED_NEW_BUILD；舊各版證據維持原資格。BLOCKED歷史file://未重試／繞過。下一步只收新版底色觀感，未實際驗手機下載不索JSON，不重開舊功能。入口deliveries/m1-v019-soft-regions-v042-20261019/README.md。
+
+---
+
 # 透明底色0.4.1已完成，下一步只看底色觀感（2026-10-19 Work）
 
 使用者已回報本例G2範圍正確，要求去除邊框改更透明背景；新0.4-family手機圖與原話已保存，其他操作未代填。Work本輪直接實作獨立soft_region_chart／0.4.1：區域無周邊線、3%底色，G1近似起緣漸淡，價量分離／MACD不染色；原點與關卡虛線保留。完整0.4 payload除view_version／artifact_id全等。

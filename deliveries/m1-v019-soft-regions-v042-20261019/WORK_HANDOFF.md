@@ -1,0 +1,8 @@
+請接續股票系統M1，只驗0.4.2淡底色可辨識性；不要重開舊整套功能驗收。
+儲存庫blue1998-glitch/Twstockai，分支dev/m1-v018-chart-annotations；保留本檔所在提交及後續成果，不用main／舊ZIP覆蓋。先確認分支含0.4.1最新交接bea34e0501a15e7ccf8a74b27b5b3c1402ed5601與本0.4.2成品／交接。
+依序實讀AGENTS、CONTINUE最上方、M1_V019_SOFT_REGION_VISIBILITY_HANDOFF.md、PROJECT_VISION與M1_V019_VISUAL_RULE_NOTES最新、股票系統M1_v0_18/soft_region_chart_v042/README及validation_20261019/驗收報告、本交付README／PACKAGE_VERIFICATION／GitHub實際下載收據、Android驗收最新。必要原案例與舊圖按0.4交接引用讀，不重索相同原檔。工具不能讀或測／保存須具體明說。
+下載本交付固定ZIP，核SHA 8906fa3b794504109c5a4d533c5f1c97d4cb12eda6b60e4bcd3daac5773bdb8f，解壓開M1_v0_19_soft_regions_v042.html，標頭「M1 K線淡底色主圖 0.4.2」，1101／新Raw／2026-10-16／日收27.30／24月486根。
+上輪使用者「看不到底色區域」只記USER_REPORTED_VISIBILITY_INSUFFICIENT，當時裝置／實開版本未獨立確認、無新圖。新版預設12%底色，選項較淡8%／標準12%／明顯20%，無區域周邊框。只請使用者按G2／G1看原區域是否可見且K仍可讀，必要選「明顯」。不把關卡虛線當區域框。量區獨立、MACD無底色；不重開手勢／草稿／全JSON驗收。只有實際驗新下載才索0.4.2原JSON；舊檔不可代替。先文字回報，診斷需要時才收必要新版圖，不再索0.3／0.4舊圖。
+本輪實際28項Chromium133 HTTP PASS及16張工程原尺寸畫面，payload除view_version／artifact_id無損相同、包裝CRC與SHA通過；沒有重跑整套Python或舊完整瀏覽器回歸。QA繁中字體僅測試條件，非產品網路依賴。工程／直接畫面／USER_REPORTED／原檔核對／NOT_TESTED／BLOCKED分開；0.4.2 Android NOT_TESTED_NEW_BUILD。已知file://政策阻擋不重試／不繞過／不要求停用保護。舊0.1～0.4.1證據保留但不搬為新版成功。
+G2 2023-01-16～08-16／136筆及35.90～40.25只作原全選段顯示外包，非正式壓力區界或分價持股；原5/2／40.25代表點保留。G1精確起日未知，九月起緣漸淡，不把9/1當正式起日；C後終點未知，不固定4/30或分類全部後續K。整區量／量口徑／增量／自動分區選關／強度衰減／生命階段仍未定。Raw公司行動、五年Adjusted、歷史公布可得、原資料缺口與SQLite未知根因保持；Darvas箱型正文未完整讀取。UI接入不是核心用途認可，核心用途NOT_ESTABLISHED、分類NOT_VALIDATED、行動NOT_EVALUATED。
+一般可逆問題直接處理。可重現工程問題附0.4.2來源、操作、必要新版原圖／JSON再交Codex；核心策略未知才用可放大的實際圖討論。原引擎策略／庫／歷史／舊頁／案例／證據／main不改，不部署／付費／交易／發訊息／啟動子代理。將新回報與交接保存同分支並實際確認GitHub，不能保存明說，未測不填完成。結束列實際完成／未完成、入口、最新提交、下一步同Work或Codex；切換模式附完整可貼指令。

@@ -1,3 +1,9 @@
+# 最新：0.4.2底色濃淡可調（2026-10-19 Work）
+
+使用者「看不到底色區域」，上輪3%底色不足；本輪新獨立0.4.2預設12%，底色選單較淡8%／標準12%／明顯20%，無區域周邊框、原價量範圍及MACD不染色保留。成品入口deliveries/m1-v019-soft-regions-v042-20261019/README.md，完整指令WORK_HANDOFF.md，先讀M1_V019_SOFT_REGION_VISIBILITY_HANDOFF.md及新模組報告。實際28項HTTP／16張工程圖、payload無損與ZIP核對完成；整套Python／舊回歸未重跑。新Android NOT_TESTED_NEW_BUILD，最新文字回報無新圖／裝置版本未獨立確認，不搬作新版通過。下一步同Work只收底色是否可見／不遮K，不索舊圖JSON。GitHub保存只按實際收據；保留舊成果及所有策略／來源限制，main不動，不部署付費交易訊息子代理。
+
+---
+
 # 透明底色0.4.1已完成，下一步只看底色觀感（2026-10-19 Work）
 
 使用者已回報本例G2範圍正確，要求去除邊框改更透明背景；新0.4-family手機圖與原話已保存，其他操作未代填。Work本輪直接實作獨立soft_region_chart／0.4.1：區域無周邊線、3%底色，G1近似起緣漸淡，價量分離／MACD不染色；原點與關卡虛線保留。完整0.4 payload除view_version／artifact_id全等。
