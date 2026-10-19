@@ -1,3 +1,5 @@
+16:17人工說明固定提交：0c09e2362673742f4014dac86618c4fec9f48927；7份文件GitHub精確讀回及僅文件差異已核。收據：docs/visual-discussion/20261019_latest_close_anchor/GITHUB_BOUNDARY_REVIEW_READBACK.json。最新交接以本檔所在分支提交為準。
+
 # 最新完整接續補充（2026-10-19 16:17，取代下方6/3待問）
 
 請接續blue1998-glitch/Twstockai，分支dev/m1-v018-chart-annotations，確認包含391554548ca396e93a4f46be84c35a6ebe1824e5及本檔所在提交；如有更新先讀最新並保留，不用main或舊ZIP覆蓋。依序實讀AGENTS.md、CONTINUE_IN_WORK_MODE.md最上方、本檔、PROJECT_VISION.md、M1_V019_VISUAL_RULE_NOTES.md最新節、docs/visual-discussion/20261019_latest_close_anchor/README.md與boundary_review_1617.json，必要來源查source_verification.json／source.json及原始收據。不能讀執行保存要明說，不將摘要當實讀。
