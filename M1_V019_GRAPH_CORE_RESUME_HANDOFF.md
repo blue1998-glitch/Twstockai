@@ -1,3 +1,9 @@
+# 最新Work差異檢視：工程可用，整體結構未重現（2026-10-19）
+
+新ZIP已實下載與指紋／CRC核對，HTML及獨立1101 core全等；本輪只讀成品，不執行完整工程、不bootstrap、不沿別環境準備。有限HTTP看5圖並讀來源／反證，非Codex21／60／115／72重跑或Android。B77為月份主帶子段；B44／B80抓到局部但來源末轉折不是人工39筆終點；同尺度版本鏈與跨尺度同幾何不能當獨立箱成功數。B77廣義後來箱32個不是直接下一箱；B88同價1/27不代表六月後歸屬完成。詳[實際判讀／來源／圖／限制](docs/visual-discussion/20261019_graph_core_review/README.md)與[完整可貼Codex指令](docs/visual-discussion/20261019_graph_core_review/WORK_HANDOFF.md)。原新核心保持研究資格，本輪助手分析未獲使用者批准。下一步Codex補拒絕原因與日期／候選關係透明診斷，不調參、不寫死人工日期、無正式重要性／合併策略。舊案例／圖片／0.4.3／Android證據及所有未知保持。
+
+---
+
 # 最新：準備已實際成功；獨立研究核心與真實圖已接入（2026-10-19 Codex）
 
 接續指定83506ff，bootstrap --hydrate-missing本輪實跑成功，三個歷史ZIP均核SHA；保留7差異、0補檔，未使用小成品包冒充舊基準。下方Work無checkout／binary受阻與PREPARATION_FAILED是歷史原紀錄，未改寫；新環境、輸出及測試見新驗收報告。
