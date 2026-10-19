@@ -1,3 +1,13 @@
+# 最新：自動辨識追溯診斷已交付，原核心不改（2026-10-19 Codex）
+
+接續631f6db9及原成品2d480bff，本環境重新bootstrap --hydrate-missing成功（0補檔／7差異保留）。新增獨立graph_diagnostics數值附層／graph-diagnostic-view/0.1，逐串保留被拒／通過未選原因、數值餘量及來源，分離來源末轉折／確認／研究離箱／人工整箱終點、來源前綴版本／跨尺度同幾何／局部子串、廣義後來與直接承接未知、各價量與下跌觀察窗。原核心／參數／候選／JSON／舊頁完全保留，不調參或寫死人工答案。B77左擴到較早可枚舉5/2高群餘量−2.4800，右延4/8低群−0.7825；未枚舉任意六月日並非拒絕人工月份主帶。89候選及84來源幾何組皆非獨立型態數／accuracy，primary_pressure_id=null。
+
+[新ZIP／SHA／回讀／完整可貼Work指令](deliveries/m1-v019-graph-diagnostics-20261019/README.md)、[純數值及顯示契約](股票系統M1_v0_18/graph_diagnostics/README.md)、[小型實際原因與來源報告](股票系統M1_v0_18/graph_diagnostics/generated/review-diagnostics.json)、[本輪實測／中止／畫面及限制](股票系統M1_v0_18/graph_diagnostics/validation_20261019/驗收報告.md)。35 Python PASS；60核心及60診斷前綴實際重算／60 oracle；最終文字重繪封包逐位元相等，45新Chromium HTTP PASS／12完整下載、四寬16圖，0JS錯誤／外部請求。不是舊115／72／398重跑，不是Android。原4854日OHLCV／MACD／SMA／frame／原結果／預設呈現全等；仍只60分析日，不假稱每日均算。
+
+下一步Work實讀新診斷與原整體判讀差異，不重開101圖片／0.4.3／舊Android按鈕。人工月份主帶／39筆歸屬／六月後整箱與正式合併／分區／界線／量口徑／增量／重要性衰減／直接承接／生命階段仍未完成，核心NOT_ESTABLISHED／分類NOT_VALIDATED／行動NOT_EVALUATED。新Android NOT_TESTED_NEW_BUILD；file://不重試不繞過。已答案例、私人圖片庫、Raw公司行動／五年Adjusted／歷史可得／資料缺口／Darvas正文／SQLite未知保持。保留main、引擎策略／庫／歷史／舊頁及後續成果，不部署付費交易訊息子代理。換模式必附完整可貼指令。
+
+---
+
 # 最新：Work已實看自動結果，辨識層級與日期語義仍有缺口（2026-10-19 21:00後）
 
 從fb94be48接續，已新下載固定0.1 ZIP核9成員／CRC／SHA與HTML內外core全等；有限Chromium133 HTTP實看5圖，分析日／result不變，非Android或核心重算。詳見[新差異判讀及完整箱ID／原尺寸圖](docs/visual-discussion/20261019_graph_core_review/README.md)。B77僅2023/10/24～2025/3/12，非完整月份主帶；B44／B80同四轉折來源4/8～5/13，已記6/2研究破底但非人工39筆歸屬。source_end／確認／初離前日／人工終點語義分開。B67到B77有同尺度歷史前綴鏈，89候選非89獨立型態；B77的32個successor只是破底後全部後來箱，不是直接承接。近期B88含1/27同價，尚非六月後整體自動箱。新分析未經使用者裁決，不調參湊答案；下一步Codex只補可追溯被拒原因／版本及同幾何關係／日期與觀察長度，完整指令見本輪WORK_HANDOFF。保留主壓力null、全部未定策略／來源限制、原成果／案例／私人圖與Android資格，不改main或引擎策略／庫／舊頁，不部署付費交易訊息子代理。

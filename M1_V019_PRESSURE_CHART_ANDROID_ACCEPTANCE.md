@@ -1,3 +1,11 @@
+# 新追溯診斷頁：Android NOT_TESTED_NEW_BUILD（2026-10-19 Codex）
+
+獨立graph-diagnostic-view/0.1／M1_v019_graph_diagnostics_v01.html，[新成品與完整Work指令](deliveries/m1-v019-graph-diagnostics-20261019/README.md)。本輪只有真實雲端Chromium HTTP四寬及CDP單指／滑鼠移圖、JSON核對；沒有此版Android畫面／裝置身分／實開／下載證據。明記NOT_TESTED_NEW_BUILD，不沿原0.1／0.4.3或舊PARTIAL證據升級。原裝置證據與政策阻擋全部保留，file://不重試不繞過。
+
+下一步優先Work判讀診斷中的整體結構／被拒原因，非重開Android按鈕問卷或索同舊圖JSON。若自然取得新版證據，分OBSERVED／USER_REPORTED／NOT_TESTED／BLOCKED記錄。新圖工程通過不等主壓力辨識、核心用途／分類／交易認可；所有未定策略／來源限制照最新交接保留。
+
+---
+
 # 新圖形辨識研究頁：Android NOT_TESTED_NEW_BUILD（2026-10-19 Codex）
 
 獨立graph-recognition-view/0.1／M1_v019_graph_recognition_v01.html，[成品／完整Work指令](deliveries/m1-v019-graph-core-20261019/README.md)。新頁顯示自動研究候選與真實K量MACD、前綴回放與JSON；原0.4.3樣式已收束、所有舊Android分項證據原樣保留，不重要求相同檔案。沒有本頁新手機原圖／版本身份／操作或下載證據，**NOT_TESTED_NEW_BUILD**，不得由雲端測試或0.4.3使用者回報升級。
