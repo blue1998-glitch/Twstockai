@@ -1,3 +1,7 @@
+最新接續：已按本方法準備[一箱／分箱的同源真實圖對照](M1_V019_BOX_SCALE_COMPARISON_HANDOFF.md)，狀態WAITING_FOR_USER_BOX_SCALE_JUDGMENT。所有箱界為助手假說、不是使用者批准；下一步同Work只收分組判斷，不重新追平緩帶終點。下方方法及限制保持。
+
+---
+
 # 箱型結構方法更正：完整可貼接續指令
 
 請接續股票系統M1，儲存庫blue1998-glitch/Twstockai，分支dev/m1-v018-chart-annotations。確認包含3cb1bd58dade066871ea34b175777619514cd99a與本檔所在提交；若有更新先讀最新保留，不用main或舊ZIP覆蓋。

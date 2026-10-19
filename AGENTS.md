@@ -1,3 +1,9 @@
+# Latest box-scale comparison (2026-10-19 Work)
+
+New independent visual compares whole B vs split B1/B2 on identical source K/volume with common context A. Read CONTINUE top and M1_V019_BOX_SCALE_COMPARISON_HANDOFF.md. All boxes/endpoints/wick envelopes are assistant hypotheses, not user-approved or automatic rules; pending user choice only about grouping. Do not re-open flat-band endpoint or0.4.3 shade acceptance. Actual32 new discussion HTTP checks PASS,8 original-size images, exact1213 source bars/frame/basis and per-mode foreground equality; first QA selector failure retained. No product/engine/strategy/store/main change or new version, no old full suites/Android/chat host/user CDN validation; file blocker and all strategy/data limits persist. Same Work receives whole/split/other without inferring all boundaries or trade approval. No agents/deployment/payments/trades/messages.
+
+---
+
 # Latest box-structure method correction (2026-10-19 14:22 Work)
 
 User rejects fixed flat-band/bottom naming. First identify highs/lows, regions and boxes; then interpret relative position and price/volume for settlement, strengthening/advance or breakdown. A breakdown can be followed by new boxes. Read CONTINUE top and M1_V019_BOX_STRUCTURE_METHOD_HANDOFF.md; new docs/visual-discussion/20261019_box_method preserves exact quote and source checks. Supersede the old single flat-band-end question, do not demand that endpoint or assume Apr02 is one. Preserve prior G1/G2 dates and historical quotes, geometry separate from dated interpretations, unknown algorithms/bounds/volume/lifecycle remain unknown. This turn documentation/source reads only, no new product/tests/Android evidence. Existing style acceptance closed; no strategy/store/old-page/main edits, no agents/deployment/payments/trades/messages. Next same Work uses zoomable real box examples for actual core ambiguity.
