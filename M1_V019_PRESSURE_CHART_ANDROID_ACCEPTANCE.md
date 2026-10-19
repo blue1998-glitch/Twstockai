@@ -1,3 +1,11 @@
+# 2026-10-19 Work：0.4外框待手機差異圖，仍NOT_TESTED_NEW_BUILD
+
+已實際重新下載固定0.4小ZIP並核ZIP／HTML SHA、CRC及7成員；工程保存圖已目視，與Android分開。尚無本版手機新圖／操作回報／JSON，A G2／B G1／C裁切返回均NOT_TESTED，無新手機BLOCKED。[本輪台帳](股票系統M1_v0_18/candle_region_chart/validation_android_20261019/README.md)。
+
+先收新版G2主圖與身份文字回報，再看G1與裁切；不重開舊手勢／草稿整套，不索0.3舊圖／舊JSON。舊0.3-family與0.2證據保留，不移為0.4通過。前輪398 Python及208／44／55／32未在本輪重跑；file://拒絕未重試／繞過。UI不代表核心用途認可，所有未知／資料與SQLite限制保持。
+
+---
+
 # 0.4 K線影線外包修正版：NOT_TESTED_NEW_BUILD（2026-10-19 Codex）
 
 新成品candle-region-chart-view/0.4／M1_v0_19_candle_regions_v04.html；[入口及完整Work差異驗收指令](deliveries/m1-v019-candle-regions-v04-20261019/README.md)。只更正價量區域畫法：G2以136筆所選來源影線35.90～40.25包框、量圖獨立框、MACD不填區域；G1近似九月左緣未閉合、C後無假封閉框。數字是display extent，不批准正式壓力區界／整區量或新策略。

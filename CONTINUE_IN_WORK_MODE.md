@@ -1,3 +1,13 @@
+# 0.4 Work外框驗收已啟動：下載核對完成，手機仍未測（2026-10-19）
+
+已核指定分支包含cf3b521交接及d83f92c成品，依序實讀指定文件與完整WORK_HANDOFF。本輪重新下載固定ZIP，核ZIP／HTML SHA、CRC、內部SHA及7成員全相符；直接源碼標頭「M1 K線範圍區域主圖 0.4」。另讀四張保存的工程前後／裁切圖並核指紋，價框／量框分開、MACD無底色只記工程圖片觀察，**不是手機通過**。[本輪分項紀錄](股票系統M1_v0_18/candle_region_chart/validation_android_20261019/README.md)／[本輪下載核對](股票系統M1_v0_18/candle_region_chart/validation_android_20261019/download-verification.json)。
+
+0.4 Android仍NOT_TESTED_NEW_BUILD：尚無本版使用者新圖／回報／JSON；A G2外框、B G1近似開放邊界、C裁切與返回各NOT_TESTED，沒有新手機BLOCKED。398 Python／208／44／55／32為Codex歷史實測，本輪未重跑／無瀏覽器執行；file://拒絕不重試／繞過。舊0.3與0.2證據保留不重索、不沿用。
+
+下一步仍同一**Work**，先協助下載解壓0.4並按G2收一張新主圖及身份文字回報，再驗G1與裁切／返回。不重開手勢／草稿舊整套，不追問G2日期，非驗手機下載不索新JSON。所有策略／來源／Raw／Adjusted／歷史／SQLite限制與核心用途未認可保持；不改main／原產品或引擎策略／庫／歷史，無部署／付費／交易／訊息／子代理。
+
+---
+
 # K線範圍外框0.4已交付；Work只驗新外框差異（2026-10-19 Codex）
 
 從指定570bfd4a4e99f5672a1666d28b6541a150b55dd6接續，新增獨立`candle_region_chart/`／`candle-region-chart-view/0.4`，原0.1／0.2／0.3與所有來源、引擎、庫、歷史、人工原JSON及手機證據保留。**G2日期不變：2023-01-16～2023-08-16含136筆，僅將完整選段影線35.90～40.25作顯示外包框；正式price_bounds仍null。** 量框獨立在volume pane，不跨MACD。G1九月近似起緣虛線／左邊未閉合，精確起日未知；C後開放參照、終點未定。全選段extent在縮放／平移時固定，只裁切，不拉伸價軸、不把畫外框線貼邊。不是批准正式價格區界、自動分區或量口徑。
