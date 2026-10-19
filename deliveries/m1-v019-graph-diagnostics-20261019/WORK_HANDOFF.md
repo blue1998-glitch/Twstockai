@@ -2,7 +2,7 @@
 
 儲存庫：blue1998-glitch/Twstockai
 分支：dev/m1-v018-chart-annotations
-必須包含交接631f6db9b17f666a283bc61b586bd4b77b27dd8f與原成品2d480bffcaebfa09768e04a283227effc3fc0a00。本輪成品固定提交以此目錄README最新遠端收據為準。若有後續先讀最新交接保留，不從main或舊ZIP覆蓋。不能讀取／下載／執行或保存時列實際錯誤，不假稱成功。
+必須包含交接631f6db9b17f666a283bc61b586bd4b77b27dd8f與原成品2d480bffcaebfa09768e04a283227effc3fc0a00。本輪source／成品固定提交57e3d9e55c226c5dd0e69fcbd26883d0da81667e；後續收據文件以分支最新為準。GitHub本輪已實下載87檔／70,735,165 bytes逐字相同、遠端ZIP CRC／8成員SHA及四份gzip解壓與ZIP一致，收據請實讀。若有後續先讀最新交接保留，不從main或舊ZIP覆蓋。不能讀取／下載／執行或保存時列實際錯誤，不假稱成功。
 
 依序實讀：AGENTS.md、CONTINUE_IN_WORK_MODE.md最上方、M1_V019_GRAPH_CORE_RESUME_HANDOFF.md最新節、PROJECT_VISION.md及M1_V019_VISUAL_RULE_NOTES.md最新要求；再讀股票系統M1_v0_18/graph_diagnostics/README.md、validation_20261019/驗收報告.md、generated/review-diagnostics.json，以及本交付README／PACKAGE_VERIFICATION.json／SOURCE_HASHES.json／GITHUB_DOWNLOAD_VERIFICATION.json。本檔全文與docs/visual-discussion/20261019_graph_core_review/README.md、structural-comparison.json、browser-observation.json、WORK_HANDOFF.md均需實讀。必要時讀原graph_core契約及程式，不重下載／重讀101私人圖。
 
