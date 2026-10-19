@@ -27,3 +27,5 @@
 build.py可用--template指父目錄固定成品discussion_fragment.html，--out及--fragment指定輸出，無需重取行情；測試現環境`LD_LIBRARY_PATH=core-next/browser/runtime/al2023/lib node reviewed-box/test_browser.cjs`，需既有Playwright／Chromium133／D3／QA字體fixture，不假稱缺fixture也能直接跑。
 
 下一步仍Work，從已存最新收盤回看這一前箱內較有意義的代表價量位置，不重問日期／6/3歸屬／1/27理由，不任意拆小或機械取最高。此箱代表、正式價格區界、整區量／量口徑／增量、強度衰減／生命階段、自動選箱選關仍未定。Raw完整公司行動／五年Adjusted／歷史公布可得／資料缺口／Darvas正文未完整讀／SQLite根因及核心NOT_ESTABLISHED、分類NOT_VALIDATED、行動NOT_EVALUATED保留。0.4.3樣式收束，不索同舊圖JSON；原引擎策略／庫／歷史／舊頁／來源案例證據／main不改，不部署付費交易訊息子代理。新增本輪GitHub核對收據在讀回後另存。
+
+本輪39筆新圖與核對固定提交：b007fdd8ec4d984936d912e5cf393dcd0846a6ed。14文字及8PNG已由GitHub connector從固定提交實際讀回，文字／原始影像位元組相符，見[GITHUB_READBACK.json](GITHUB_READBACK.json)。本收據、README追加與交接為核對後另存提交，不宣稱收據已在被核對成品，也不代表正式箱界／策略／Android已認可。

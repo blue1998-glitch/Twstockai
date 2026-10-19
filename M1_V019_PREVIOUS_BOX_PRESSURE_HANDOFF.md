@@ -1,3 +1,5 @@
+39筆新圖／人工時間核對固定成品：b007fdd8ec4d984936d912e5cf393dcd0846a6ed。14文字及8PNG原始位元組GitHub精確讀回已核，收據docs/visual-discussion/20261019_previous_box_pressure/reviewed_1635/GITHUB_READBACK.json在核對後另存。最新交接以本檔所在分支提交為準。
+
 # 最新完整Work接續：前箱精確4/7～6/2已核（16:35）
 
 請接續blue1998-glitch/Twstockai，分支dev/m1-v018-chart-annotations。確認包含f6049240f959184a8348e31bac05b80e7505a0dd與本檔所在提交；有更新先讀最新保留，不用main／舊ZIP覆蓋。依序實讀AGENTS.md、CONTINUE_IN_WORK_MODE.md最上方、本檔、PROJECT_VISION.md與M1_V019_VISUAL_RULE_NOTES.md最新節、docs/visual-discussion/20261019_previous_box_pressure/README.md、reviewed_1635/README.md、user_review.json、source_verification.json、source.json、browser-report.json與該目錄GitHub讀回收據（如已保存）。原前箱候選pending只是舊歷史，不能將摘要當實讀，工具不能讀執行保存須列具體錯誤。
