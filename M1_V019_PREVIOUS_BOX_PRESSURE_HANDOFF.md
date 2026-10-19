@@ -1,3 +1,5 @@
+主壓力帶層級更正／新圖固定成品：60e06663b58a09306675c38aac48690e26be9abd；17文字及4PNG原位元組GitHub精確讀回相符，收據docs/visual-discussion/20261019_major_pressure_hierarchy/GITHUB_READBACK.json在核對後另存。最新交接以本檔所在分支提交為準。
+
 # 最新完整Work接續：主要壓力帶與局部箱的層級
 
 請接續股票系統M1，儲存庫blue1998-glitch/Twstockai，分支dev/m1-v018-chart-annotations，確認包含6a4078ceec2e1afbdc90d0c658f04d3e9dfbcdf0與本檔所在提交；有更新先讀最新並保留，不用main／舊ZIP覆蓋。依序實讀AGENTS.md、CONTINUE_IN_WORK_MODE.md最上方、本檔、PROJECT_VISION.md及M1_V019_VISUAL_RULE_NOTES.md最新節、docs/visual-discussion/20261019_major_pressure_hierarchy/README.md、user_review.json、source_verification.json、source.json、browser-report.json、browser-first-failure.json、qa-correction.json及GitHub讀回收據（如已有）；另讀20261019_previous_box_representative/review_resolution.json，工具不能讀／執行／保存列實際錯誤，不將摘要當實讀。
