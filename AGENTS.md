@@ -1,3 +1,13 @@
+# 最新：前箱價峰／量峰分離，待有意義代表點判讀（2026-10-19 Work）
+
+前箱精確2025-04-07～06-02／39筆已核，不再追問日期。新可放大對話圖見[docs/visual-discussion/20261019_previous_box_representative/README.md](docs/visual-discussion/20261019_previous_box_representative/README.md)，同一45筆閱讀窗可按4/7量峰、5/13價峰、6/2區間末讀真實OHLCV，這些只查詢、不選定案例代表；預設5/13也不是答案。4/7高30.80／量118,749,437、5/13高31.40／量10,264,322、6/2高29.05／量93,266,178，量峰／價峰不同；11.57倍只是描述比，不是權重或門檻。
+
+下一步同Work只收此箱哪個日／價位更能代表對已存最新27.30的相關壓力及必要理由，可答其他位置／多參照，不強迫最高價、最大量或三選一，不自動選G關。候選代表／正式區界／量口徑／自動公式仍null；6/3在外、1/27較重要理由、舊①④／G1G2G3與0.4.3樣式收束不重問。
+
+本輪實際新圖Chromium133 HTTP20項PASS，四寬、4張390／1280查詢PNG；核1213原值／39筆及顯示不改、三日查詢／K量同步／DOM圖元幾何前景不改、無案例批准／逐筆與縮放／畫外不造點／分析不變／不溢位。不是像素相等測試；檢查名稱pixels誤字只修正表述，斷言／圖不變。父28項及舊全Python／產品回歸未重跑，Android／宿主／用戶CDN未驗，file://阻擋未重試未繞過。仍獨立討論圖，未接產品版本／引擎。保留main、引擎策略／庫／歷史／舊頁／來源案例證據及所有策略／Raw／Adjusted／歷史／資料／Darvas／SQLite未知和核心未認可，不部署付費交易訊息子代理。
+
+---
+
 # 最新前箱時間已核：2025-04-07～06-02／39筆（2026-10-19 16:35 Work）
 
 使用者答「4/7到6/2號」，已按眼前2025年前箱案例保存為含兩端的精確時間區間，來源39筆；前箱辨識／時間問題CLOSED_BY_USER_EXACT_DATES_DO_NOT_REASK。見[docs/visual-discussion/20261019_previous_box_pressure/reviewed_1635/README.md](docs/visual-discussion/20261019_previous_box_pressure/reviewed_1635/README.md)與M1_V019_PREVIOUS_BOX_PRESSURE_HANDOFF.md最新節。舊4/8～5/29／37筆／28.45只是被取代助手假說，原圖／來源／測試保留，不能沿用為已認可範圍。
@@ -145,6 +155,7 @@ The current Work Mode entry point is `CONTINUE_IN_WORK_MODE.md`. Update it when 
 The new offline candidate builder is an explicit separate producer, not a change to the old read-only exporter. It may project new candidate OHLC with the existing helper and calculate separately versioned MACD; label these new outputs, never pretend they existed in old adjusted snapshots. Browser code only renders the results. Preserve every original schema, engine, strategy threshold and store. Next core questions have concrete saved examples in M1_V019_CORE_RULE_DECISIONS.md.
 
 After the initial import, Git contains editable v0.18 source but omits historical data/build outputs. On an existing or fresh source checkout use `python3 codex/bootstrap_m1.py --hydrate-missing` to verify a private baseline and restore missing assets only. It reports and preserves differing source files; it does not certify them against the historical manifest. The default command remains a strict baseline check and must not be used to overwrite development changes. Read `股票系統M1_v0_18/docs/結構標記顯示契約.md` and the latest acceptance report for the saved-evidence annotation page. Do not calculate new strategy states from example images.
+
 
 
 
