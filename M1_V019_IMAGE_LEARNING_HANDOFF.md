@@ -2,7 +2,7 @@
 
 目前為CORPUS_FOUNDATION_FIRST_PASS_NOT_TRAINED。使用者要求長期圖形學習並在額度中斷後接續，已恢復最後可核節點；不得把已完成的101原檔下載、91張首輪視覺判讀或13張單張複讀重做當新進度。
 
-儲存庫blue1998-glitch/Twstockai，分支dev/m1-v018-chart-annotations。父提交bda9ecf0b96d97799930bb5fb006f5607b98faa9，成品提交由GITHUB_READBACK.json與下一節釘選。若分支有更新，先讀最新交接並保留後續成果，不用main或舊ZIP覆蓋。
+儲存庫blue1998-glitch/Twstockai，分支dev/m1-v018-chart-annotations。父提交bda9ecf0b96d97799930bb5fb006f5607b98faa9，成品提交e8c0a1afd5da2e2e257e90ed3eb07e731c7d5cd4已保存並經15個檔案不可變ref回讀完全相等；收據見docs/visual-learning/20261019_drive_intake/GITHUB_READBACK.json。若分支有更新，先讀最新交接並保留後續成果，不用main或舊ZIP覆蓋。
 
 依序讀AGENTS.md、CONTINUE_IN_WORK_MODE.md最上方、本檔、docs/visual-learning/20261019_drive_intake/README.md、feature_contract.json及本輪驗證/回讀收據；再讀原PROJECT_VISION.md與M1_V019_VISUAL_RULE_NOTES.md的主壓力層級/箱型方法最新要求。需要新案例細節時，透過Google Drive插件讀未分享資料夾「M1_圖形辨識學習案例_20261019」的corpus.json/review_addenda/分析報告與「已核對可續接_v2」ZIP，不從Git摘要假稱讀過原圖。
 
@@ -17,5 +17,5 @@
 可以貼給下一次Work：
 
 ```text
-請接續股票系統M1的Drive圖形學習第一批。儲存庫blue1998-glitch/Twstockai，分支dev/m1-v018-chart-annotations。確認最新分支並依序實讀AGENTS.md、CONTINUE_IN_WORK_MODE.md頂部、M1_V019_IMAGE_LEARNING_HANDOFF.md、docs/visual-learning/20261019_drive_intake/README.md與收據及feature_contract.json；保留較新成果，不用main或舊包覆蓋。透過Google Drive插件讀私人「M1_圖形辨識學習案例_20261019」內corpus.json、review_addenda、分析報告及已核對可續接_v2 ZIP。101原檔/91首輪/13複讀已完成，不重下載或重判；新增只看新/改動檔案。下一步從跨尺度箱體與突破/失敗路徑對應可核行情前綴，不自訂門檻、不重問已答代表/日期、不把教材說法或UI測試當核心通過。8資料資格/14 HTTP及Drive原檔/ZIP/復建已核，Android/模型/準確率未測。所有未定策略與來源限制、原引擎策略/庫/歷史/舊頁/案例證據/main保持；不部署付費交易訊息子代理，file://阻擋不重試不繞過。若工具無法實讀/執行/保存請明說，新增成果保存在同分支並確認GitHub。
+請接續股票系統M1的Drive圖形學習第一批。儲存庫blue1998-glitch/Twstockai，分支dev/m1-v018-chart-annotations。確認分支包含成品提交e8c0a1afd5da2e2e257e90ed3eb07e731c7d5cd4並保留更新，再依序實讀AGENTS.md、CONTINUE_IN_WORK_MODE.md頂部、M1_V019_IMAGE_LEARNING_HANDOFF.md、docs/visual-learning/20261019_drive_intake/README.md與收據及feature_contract.json；保留較新成果，不用main或舊包覆蓋。透過Google Drive插件讀私人「M1_圖形辨識學習案例_20261019」內corpus.json、review_addenda、分析報告及已核對可續接_v2 ZIP。101原檔/91首輪/13複讀已完成，不重下載或重判；新增只看新/改動檔案。下一步從跨尺度箱體與突破/失敗路徑對應可核行情前綴，不自訂門檻、不重問已答代表/日期、不把教材說法或UI測試當核心通過。8資料資格/14 HTTP及Drive原檔/ZIP/復建已核，Android/模型/準確率未測。所有未定策略與來源限制、原引擎策略/庫/歷史/舊頁/案例證據/main保持；不部署付費交易訊息子代理，file://阻擋不重試不繞過。若工具無法實讀/執行/保存請明說，新增成果保存在同分支並確認GitHub。
 ```
