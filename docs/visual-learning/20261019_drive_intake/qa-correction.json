@@ -1,0 +1,7 @@
+{
+  "status": "FIXED_AND_RETESTED",
+  "issue": "完整案例編號搜尋會命中其他案例的交叉引用，IMG-016初次回傳3張",
+  "fix": "完整IMG-NNN查詢使用case_id相等，其他文字維持全文查詢",
+  "retest": "同一14項真實Chromium HTTP全通過，未削弱斷言",
+  "prior_source_reviews_changed": false
+}
