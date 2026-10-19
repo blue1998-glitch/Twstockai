@@ -45,4 +45,4 @@ python3 docs/visual-discussion/20261019_box_scale_comparison/build.py --template
 
 build讀同目錄box_controls.html及box_layer.js，核原bars／來源及全候選段影線外包。test_browser.cjs以BOX_FRAGMENT指新片段、BOX_QA_FIXTURE指含d3.min.js／qa-font.otf／browser/runtime/chromium的測試fixture目錄；Playwright使用目前primary runtime。沒有新增產品網路／字體依賴；不將測試瀏覽器交使用者。
 
-下一步同Work只問B一箱／分箱／其他切法。回覆只針對這個分組，不能順帶認證A、全部精確日期／正式上下界／破底規則／自動算法。高低點確認、分箱拆合延伸、正式價格區界、整區量／量口徑、增量、強度衰減、生命階段仍未定；原G1/G2已定事項不重問。Raw公司行動／五年Adjusted／歷史公布可得、來源缺口、Darvas正文未完整讀、SQLite根因與核心用途NOT_ESTABLISHED／NOT_VALIDATED／NOT_EVALUATED保留。原引擎策略／庫／歷史／舊頁／案例／證據／main不改，不部署付費交易訊息子代理。GitHub保存須實際核對後另記。
+下一步同Work只問B一箱／分箱／其他切法。回覆只針對這個分組，不能順帶認證A、全部精確日期／正式上下界／破底規則／自動算法。高低點確認、分箱拆合延伸、正式價格區界、整區量／量口徑、增量、強度衰減、生命階段仍未定；原G1/G2已定事項不重問。Raw公司行動／五年Adjusted／歷史公布可得、來源缺口、Darvas正文未完整讀、SQLite根因與核心用途NOT_ESTABLISHED／NOT_VALIDATED／NOT_EVALUATED保留。原引擎策略／庫／歷史／舊頁／案例／證據／main不改，不部署付費交易訊息子代理。固定討論成品提交`3857c6fd371b16868a06486c4f29cbe4f7a66a29`已實際核對：16份文字精確讀回、8張PNG遠端下載逐位元組及SHA相符，見[GITHUB_READBACK.json](GITHUB_READBACK.json)。本README／收據／交接為成品後獨立提交，不宣稱收據自我包含於成品。

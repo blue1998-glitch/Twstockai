@@ -1,3 +1,5 @@
+固定討論成品提交：3857c6fd371b16868a06486c4f29cbe4f7a66a29；16文字精確讀回與8原尺寸PNG實際下載核對已通過，收據docs/visual-discussion/20261019_box_scale_comparison/GITHUB_READBACK.json在後續交接保存。最新交接以本檔所在指定分支為準。
+
 # 箱型分段尺度對照：完整接續Work指令
 
 請接續blue1998-glitch/Twstockai，分支dev/m1-v018-chart-annotations，確認含719f214f78a792d120d720932f04fa938c3b881f與本檔所在提交；有更新先讀最新保留，不用main／舊ZIP覆蓋。
