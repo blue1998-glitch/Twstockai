@@ -1,3 +1,9 @@
+# Latest C-right core question (2026-10-19 Work)
+
+Style0.4.3 acceptance remains closed. New independent zoomable real K/volume discussion asks only where the flatter region right of C2024-01-19 ends; pending user judgment, no endpoint assumed. Read CONTINUE top, M1_V019_C_RIGHT_REGION_DISCUSSION_HANDOFF.md and docs/visual-discussion/20261019_c_right_end records. Actual32 new discussion HTTP checks PASS,1213 exact bars from pinned ZIP with576-row/source/frame/basis equality; not product0.4.3 tests. Chat host/Android/user CDN untested; failures and file blocker retained. No product/strategy/store/old-case changes, no new UI version. Same Work receives date/month/still unknown; keep old G1/G2 decisions, all unknown limits and main/history. No agents/deployment/payments/trades/messages.
+
+---
+
 # Latest0.4.3 style acceptance closed by user report (2026-10-19 13:50 Work)
 
 User replied 可以 to0.4.3 shade/candle readability: USER_REPORTED_STYLE_ACCEPTED, CLOSED_BY_USER_REPORT. Read CONTINUE top and 股票系統M1_v0_18/soft_region_chart_v043/validation_user_20261019/style-accepted-1350.md. No new screenshot/device/version verification or tests; Android PARTIAL_USER_REPORTED_STYLE_ONLY, no full Android/core approval. Do not reopen shade acceptance, request identical old evidence, or build0.4.4. Product/strategy/data unchanged, all unknowns and file:// blocker persist. Next same Work returns to visual core-rule discussion with zoomable real charts, not prepared this turn; retain old confirmed G1/G2 facts. Preserve branch/main/history; no agents/deployment/payments/trades/messages.

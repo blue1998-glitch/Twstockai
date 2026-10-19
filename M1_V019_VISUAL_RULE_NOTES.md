@@ -1,3 +1,13 @@
+# 2026-10-19：C右側新平緩帶的終點，待使用者圖形判讀
+
+WAITING_FOR_USER_C_RIGHT_END_JUDGMENT。0.4.3底色已收束，本輪只準備同源1101 Raw的可放大K／量討論圖，問C=2024-01-19右側新帶在哪裡結束。不重問G1已定含義與G2日期，不把4/30／閱讀窗7/31當終點，也不把C硬定為精確起日。終點／價格區界／整區量／自動分區仍null。
+
+[圖、原尺寸備圖、精確來源與本輪32項HTTP](docs/visual-discussion/20261019_c_right_end/README.md)。直接讀核SHA固定0.4.3 ZIP取同源1213根，source／frame／basis吻合，舊576根全欄位相等；最早手機JSON本輪未重讀，不索舊檔。新32項只屬這張討論圖，不是產品0.4.3舊32項重跑；QA固定D3／字體條件及首次失敗修正均保存。ChatGPT宿主／Android／用戶CDN未獨立驗，原file://阻擋未重試。原引擎策略／庫／歷史／舊頁／案例／證據／main不改；所有核心、Raw、Adjusted、歷史可得、資料缺口、Darvas正文及SQLite限制保持，無部署付費交易訊息子代理。
+
+下一步同Work只收日期、月份或仍未定，再原值核對及形式化；本地記終點僅DRAFT_NOT_SUBMITTED_NOT_APPROVED，不是已回報／已批准。[完整交接](M1_V019_C_RIGHT_REGION_DISCUSSION_HANDOFF.md)。
+
+---
+
 # 2026-10-19 13:50：0.4.3樣式獲使用者回報認可，差異驗收收束
 
 使用者回覆「可以」，對應前一0.4.3底色與K線同時清楚的新觀感。記 **USER_REPORTED_STYLE_ACCEPTED／CLOSED_BY_USER_REPORT**；[本輪原話與資格](股票系統M1_v0_18/soft_region_chart_v043/validation_user_20261019/style-accepted-1350.md)。本項不再重驗或索舊圖JSON，不建立新版本。Android只新增PARTIAL_USER_REPORTED_STYLE_ONLY，無新圖、裝置／實開版本未獨立核實，不推成全版實機或核心用途通過；其他未測／政策阻擋保持。
