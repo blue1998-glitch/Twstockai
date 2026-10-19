@@ -1,3 +1,13 @@
+# 透明底色0.4.1已完成，下一步只看底色觀感（2026-10-19 Work）
+
+使用者已回報本例G2範圍正確，要求去除邊框改更透明背景；新0.4-family手機圖與原話已保存，其他操作未代填。Work本輪直接實作獨立soft_region_chart／0.4.1：區域無周邊線、3%底色，G1近似起緣漸淡，價量分離／MACD不染色；原點與關卡虛線保留。完整0.4 payload除view_version／artifact_id全等。
+
+[新小ZIP／指紋／接續指令](deliveries/m1-v019-soft-regions-v041-20261019/README.md)；[實際24項HTTP／畫面／未測](股票系統M1_v0_18/soft_region_chart/validation_20261019/驗收報告.md)；[完整交接](M1_V019_SOFT_REGION_FILL_HANDOFF.md)。HTML在ZIP內，source可重建。新0.4.1 Android NOT_TESTED_NEW_BUILD；0.4-family改PARTIAL_EVIDENCE_OBSERVED_VERSION_UNCONFIRMED，範圍認可與樣式更正分開。
+
+下一步同Work只請看新底色是否符合閱讀，不重開整套舊驗收，不重索相同圖／JSON。24項是本輪實測，不沿用398／208等。字體QA問題／原file拒絕／所有策略與來源限制保留；UI不是核心用途認可。不改main、引擎策略／庫／歷史／舊頁，無部署／付費／交易／訊息／子代理。
+
+---
+
 # 2026-10-19 Work：0.4外框待手機差異圖，仍NOT_TESTED_NEW_BUILD
 
 已實際重新下載固定0.4小ZIP並核ZIP／HTML SHA、CRC及7成員；工程保存圖已目視，與Android分開。尚無本版手機新圖／操作回報／JSON，A G2／B G1／C裁切返回均NOT_TESTED，無新手機BLOCKED。[本輪台帳](股票系統M1_v0_18/candle_region_chart/validation_android_20261019/README.md)。

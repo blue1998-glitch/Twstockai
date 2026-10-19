@@ -1,3 +1,13 @@
+# 透明底色0.4.1已完成，下一步只看底色觀感（2026-10-19 Work）
+
+使用者已回報本例G2範圍正確，要求去除邊框改更透明背景；新0.4-family手機圖與原話已保存，其他操作未代填。Work本輪直接實作獨立soft_region_chart／0.4.1：區域無周邊線、3%底色，G1近似起緣漸淡，價量分離／MACD不染色；原點與關卡虛線保留。完整0.4 payload除view_version／artifact_id全等。
+
+[新小ZIP／指紋／接續指令](deliveries/m1-v019-soft-regions-v041-20261019/README.md)；[實際24項HTTP／畫面／未測](股票系統M1_v0_18/soft_region_chart/validation_20261019/驗收報告.md)；[完整交接](M1_V019_SOFT_REGION_FILL_HANDOFF.md)。HTML在ZIP內，source可重建。新0.4.1 Android NOT_TESTED_NEW_BUILD；0.4-family改PARTIAL_EVIDENCE_OBSERVED_VERSION_UNCONFIRMED，範圍認可與樣式更正分開。
+
+下一步同Work只請看新底色是否符合閱讀，不重開整套舊驗收，不重索相同圖／JSON。24項是本輪實測，不沿用398／208等。字體QA問題／原file拒絕／所有策略與來源限制保留；UI不是核心用途認可。不改main、引擎策略／庫／歷史／舊頁，無部署／付費／交易／訊息／子代理。
+
+---
+
 # 0.4 Work外框驗收已啟動：下載核對完成，手機仍未測（2026-10-19）
 
 已核指定分支包含cf3b521交接及d83f92c成品，依序實讀指定文件與完整WORK_HANDOFF。本輪重新下載固定ZIP，核ZIP／HTML SHA、CRC、內部SHA及7成員全相符；直接源碼標頭「M1 K線範圍區域主圖 0.4」。另讀四張保存的工程前後／裁切圖並核指紋，價框／量框分開、MACD無底色只記工程圖片觀察，**不是手機通過**。[本輪分項紀錄](股票系統M1_v0_18/candle_region_chart/validation_android_20261019/README.md)／[本輪下載核對](股票系統M1_v0_18/candle_region_chart/validation_android_20261019/download-verification.json)。
