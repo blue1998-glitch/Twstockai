@@ -1,0 +1,73 @@
+{
+  "schema_version": "user-reviewed-box-structure-method/0.1",
+  "reviewed_at": "2026-10-19T14:22:21+08:00",
+  "review_kind": "EXPLICIT_USER_METHOD_AND_NAMING_CORRECTION",
+  "user_quote": "請注意我不會使用平緩帶來命名該區間。你可以發現這是我說的箱型理論罷了，以他的波動和後來的走勢你可以看到他根本不是平緩帶也不是底部，因為4/2日後又破底往下了，而後來又可以繼續畫出箱型。\n\n記住就是找高低點、區間帶、畫箱型，然後根據相對位置價量去判斷是不是籌碼沉澱、是不是轉強上攻、是不是又破底罷了。",
+  "context": {
+    "code": "1101",
+    "analysis_as_of": "2026-10-16",
+    "previous_discussion": "docs/visual-discussion/20261019_c_right_end",
+    "earlier_source_and_case_dates_preserved": true
+  },
+  "confirmed_method": {
+    "ordered_geometry": [
+      "IDENTIFY_HIGHS_AND_LOWS",
+      "IDENTIFY_PRICE_TIME_REGIONS",
+      "DRAW_BOXES"
+    ],
+    "contextual_interpretation": [
+      "RELATIVE_POSITION_OF_POINTS_REGIONS_AND_BOXES",
+      "PRICE_AND_VOLUME_EVIDENCE",
+      "WHETHER_SHARES_APPEAR_MORE_SETTLED",
+      "WHETHER_STRUCTURE_STRENGTHENS_AND_ADVANCES",
+      "WHETHER_PRICE_BREAKS_LOWER"
+    ],
+    "region_name": "BOX_OR_REGION_NEUTRAL_NAME",
+    "fixed_name_flat_band": false,
+    "box_implies_bottom": false,
+    "box_implies_settlement": false,
+    "box_implies_bullish_opportunity": false,
+    "subsequent_breakdown_can_be_followed_by_new_boxes": true
+  },
+  "user_case_interpretation": {
+    "quote_reference": "4/2日後又破底往下了，而後來又可以繼續畫出箱型",
+    "year_interpretation": "2024_FROM_DISPLAYED_CHART_CONTEXT_NOT_EXPLICIT_YEAR_IN_MESSAGE",
+    "exact_box_bounds": null,
+    "exact_box_end_date": null,
+    "automatic_breakdown_event_created": false,
+    "source_record_check": "date-source-check.json",
+    "qualification": "USER_REPORTED_VISUAL_INTERPRETATION_WITH_SEPARATE_RECORD_CHECK"
+  },
+  "supersedes": {
+    "assistant_fixed_naming": "C右側新平緩帶",
+    "assistant_task": "Insist on a single endpoint of a pre-labelled flat band",
+    "pending_question_resolution": "SUPERSEDED_BY_USER_BOX_METHOD_CORRECTION",
+    "old_user_quotes_and_G1_G2_cases": "PRESERVED_AS_HISTORY_NOT_REWRITTEN"
+  },
+  "assistant_formalization": {
+    "geometry_vs_interpretation": "Record source-bound geometry separately from dated, evidence-qualified interpretations",
+    "temporal_rule": "Do not use later outcomes to relabel what was known earlier; preserve breakdown and subsequent new boxes as separate records",
+    "unknowns_are_not_formula_approval": true
+  },
+  "unknowns": [
+    "AUTOMATIC_PIVOT_CONFIRMATION",
+    "BOX_SPLIT_EXTENSION_AND_INCLUSION",
+    "FORMAL_PRICE_BOUNDS",
+    "REGION_VOLUME_MEASURE_AND_INCREMENT",
+    "STRENGTH_DECAY_LIFECYCLE",
+    "AUTOMATIC_REFERENCE_SELECTION_AND_CLASSIFICATION"
+  ],
+  "external_reference": {
+    "user_calls_method_box_theory": true,
+    "Darvas_reference_preserved": true,
+    "full_box_chapter_read": false,
+    "all_Darvas_rules_adopted": false
+  },
+  "status": "USER_METHOD_CLARIFIED_AUTOMATIC_ALGORITHM_NOT_DEFINED",
+  "classification_quality": "NOT_VALIDATED",
+  "action_qualification": "NOT_EVALUATED",
+  "core_usefulness": "NOT_ESTABLISHED",
+  "product_modified": false,
+  "new_tests": false,
+  "new_android_evidence": false
+}

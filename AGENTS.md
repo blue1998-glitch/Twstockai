@@ -1,3 +1,9 @@
+# Latest box-structure method correction (2026-10-19 14:22 Work)
+
+User rejects fixed flat-band/bottom naming. First identify highs/lows, regions and boxes; then interpret relative position and price/volume for settlement, strengthening/advance or breakdown. A breakdown can be followed by new boxes. Read CONTINUE top and M1_V019_BOX_STRUCTURE_METHOD_HANDOFF.md; new docs/visual-discussion/20261019_box_method preserves exact quote and source checks. Supersede the old single flat-band-end question, do not demand that endpoint or assume Apr02 is one. Preserve prior G1/G2 dates and historical quotes, geometry separate from dated interpretations, unknown algorithms/bounds/volume/lifecycle remain unknown. This turn documentation/source reads only, no new product/tests/Android evidence. Existing style acceptance closed; no strategy/store/old-page/main edits, no agents/deployment/payments/trades/messages. Next same Work uses zoomable real box examples for actual core ambiguity.
+
+---
+
 # Latest C-right core question (2026-10-19 Work)
 
 Style0.4.3 acceptance remains closed. New independent zoomable real K/volume discussion asks only where the flatter region right of C2024-01-19 ends; pending user judgment, no endpoint assumed. Read CONTINUE top, M1_V019_C_RIGHT_REGION_DISCUSSION_HANDOFF.md and docs/visual-discussion/20261019_c_right_end records. Actual32 new discussion HTTP checks PASS,1213 exact bars from pinned ZIP with576-row/source/frame/basis equality; not product0.4.3 tests. Chat host/Android/user CDN untested; failures and file blocker retained. No product/strategy/store/old-case changes, no new UI version. Same Work receives date/month/still unknown; keep old G1/G2 decisions, all unknown limits and main/history. No agents/deployment/payments/trades/messages.
