@@ -32,3 +32,5 @@ build.py依前輪模板與c-right-source產生新圖，測試需core-next已備C
 ## 接續
 
 下一步同一Work只對齊6/3起跌較高影線與1/27代表的箱頂關係，再依最新收盤回看更左側壓力；不重問B拆箱、平緩帶終點、G2精確日或舊樣式。不可只憑本例填自動高低點／分箱延伸／價格區界／整區量／增量／強度衰減／生命階段門檻。Raw公司行動未完整、五年Adjusted／歷史公布可得未完成、資料缺口及SQLite根因未知保留，Darvas正文未完整讀。核心用途NOT_ESTABLISHED、分類NOT_VALIDATED、行動NOT_EVALUATED。原引擎策略／庫／歷史／舊頁／案例／證據及main保留，不部署付費交易訊息子代理。GitHub保存另以實際讀回收據確認。
+
+固定本輪討論成品提交：7a4eb8037ba22570269ebb97cc1b88a95c98de6d。16份文字精確讀回及8張PNG從固定GitHub提交實際下載逐位元組／SHA相符，見[GITHUB_READBACK.json](GITHUB_READBACK.json)。本收據及本README追加核對是成品後的獨立交接提交，不宣稱收據包含於被核對成品。

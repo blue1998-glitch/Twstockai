@@ -1,3 +1,5 @@
+固定本輪討論成品提交：7a4eb8037ba22570269ebb97cc1b88a95c98de6d，已核16文字及8PNG遠端原位元組；收據docs/visual-discussion/20261019_latest_close_anchor/GITHUB_READBACK.json。最新交接以本檔所在分支提交為準。
+
 # 完整接續Work指令：最新收盤由右往左找箱型
 
 請接續股票系統M1。儲存庫blue1998-glitch/Twstockai，分支dev/m1-v018-chart-annotations。確認包含ddf0e0eaf6f79a0a6a8cc92e9b6176589ed29b6c與本檔所在提交；有更新先讀最新交接並保留，不用main或舊ZIP覆蓋。
