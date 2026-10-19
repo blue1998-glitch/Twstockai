@@ -1,3 +1,13 @@
+# 08:51新圖已讀；價量帶須貼合K線範圍，交Codex修正（2026-10-19 Work）
+
+使用者明確要求標示真實K線範圍，拒絕將整個圖垂直空間框滿。兩張新圖已實讀並原位元組保存：[直接觀察／未測／來源核對](股票系統M1_v0_18/region_chart/validation_android_20261019/evidence-0851.md)。G2 1/16～8/16、40.25點／線與貫穿K量MACD底色直接可見；另一張是C後終點未定證據，**不是G2端點面板**。0.3-family改為PARTIAL_EVIDENCE_OBSERVED_VERSION_UNCONFIRMED；頁頂版號、1101代碼未入鏡、無新JSON／操作序列，端點／返回24月／手勢／橫向／草稿仍未測，不把新圖當全通過。
+
+**呈現CHANGES_REQUESTED，下一步Codex依[貼合K線修正交接](M1_V019_CANDLE_BOUNDED_REGION_HANDOFF.md)實作新獨立版本。** 原始碼已確認span填price.top至macd.bottom；G2選段原檔136筆、high40.25／low35.90只可作顯示外包範圍，正式價格區界仍null。G1精確起日與C後終點未知，不藉外框補規則。原0.3保留，本輪尚無修正版HTML／ZIP，沒有新產品Python／Chromium／Android操作測試。
+
+舊0.2證據、不重索同檔、Raw／公司行動／Adjusted／歷史／資料／SQLite及file阻擋限制保持；UI接入不代表核心用途認可。原引擎／策略／庫／歷史／舊頁／main不改，無部署／付費／交易／訊息／子代理。修正完成才回Work驗新外框差異，附完整可貼指令。
+
+---
+
 # 2026-10-19 Work：0.3驗收啟動，手機仍未測
 
 已實讀交接／完整分項指令並重新下載核ZIP／HTML SHA、CRC與內部7成員，直接源碼標頭為「M1 價量區域主圖 0.3」。這是FILE_VERIFIED，**不是Android OBSERVED**。[本輪分項台帳](股票系統M1_v0_18/region_chart/validation_android_20261019/README.md)。
