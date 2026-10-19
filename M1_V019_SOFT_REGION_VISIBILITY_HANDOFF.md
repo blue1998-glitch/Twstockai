@@ -6,7 +6,7 @@
 
 本輪實際28項Chromium133 HTTP PASS、16張前後／裁切工程PNG與CRC／SHA包裝核對；已目視G2-390／G1-844，底色可見。不是實體Android或核心用途通過，整套Python及舊完整瀏覽器測試未重跑。詳細來源、測試字體條件、狀態與限制在[新報告](股票系統M1_v0_18/soft_region_chart_v042/validation_20261019/驗收報告.md)。
 
-[成品入口](deliveries/m1-v019-soft-regions-v042-20261019/README.md)，[完整可貼Work指令](deliveries/m1-v019-soft-regions-v042-20261019/WORK_HANDOFF.md)。遠端成品與交接提交及SHA收據以實際發佈後記錄為準；不以本地產物冒充GitHub核對。
+[成品入口](deliveries/m1-v019-soft-regions-v042-20261019/README.md)，[完整可貼Work指令](deliveries/m1-v019-soft-regions-v042-20261019/WORK_HANDOFF.md)。固定成品提交0aa3cd3c32da7c494f48e6b672cbc7319f4ff7e8。已從GitHub固定提交實際下載核對36檔共5,810,763 bytes，ZIP CRC／內部SHA及指定0.4祖先提交核對通過；[遠端收據](deliveries/m1-v019-soft-regions-v042-20261019/GITHUB_DOWNLOAD_VERIFICATION.json)於成品後交接保存，最新交接以本檔所在分支提交為準。
 
 下一步仍同Work，只看新底色是否清楚／不遮K；原Android狀態NOT_TESTED_NEW_BUILD，不索舊圖或JSON，不重開舊功能。已知file://阻擋不重試或繞過。保存全部舊成果，不動main，不啟動子代理。
 

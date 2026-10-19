@@ -1,3 +1,6 @@
+固定成品提交：0aa3cd3c32da7c494f48e6b672cbc7319f4ff7e8；固定ZIP位址：https://raw.githubusercontent.com/blue1998-glitch/Twstockai/0aa3cd3c32da7c494f48e6b672cbc7319f4ff7e8/deliveries/m1-v019-soft-regions-v042-20261019/M1_v019_soft_regions_v042.zip
+GitHub核對36檔／5,810,763 bytes及ZIP CRC／內部SHA，見GITHUB_DOWNLOAD_VERIFICATION.json；最新交接以本檔所在指定分支為準。
+
 請接續股票系統M1，只驗0.4.2淡底色可辨識性；不要重開舊整套功能驗收。
 儲存庫blue1998-glitch/Twstockai，分支dev/m1-v018-chart-annotations；保留本檔所在提交及後續成果，不用main／舊ZIP覆蓋。先確認分支含0.4.1最新交接bea34e0501a15e7ccf8a74b27b5b3c1402ed5601與本0.4.2成品／交接。
 依序實讀AGENTS、CONTINUE最上方、M1_V019_SOFT_REGION_VISIBILITY_HANDOFF.md、PROJECT_VISION與M1_V019_VISUAL_RULE_NOTES最新、股票系統M1_v0_18/soft_region_chart_v042/README及validation_20261019/驗收報告、本交付README／PACKAGE_VERIFICATION／GitHub實際下載收據、Android驗收最新。必要原案例與舊圖按0.4交接引用讀，不重索相同原檔。工具不能讀或測／保存須具體明說。
