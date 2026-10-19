@@ -1,3 +1,5 @@
+固定討論圖成品提交：adfb8f7abc2ea43bc5b215384b5821b39e6c8c69；14文字精確讀回、4原尺寸PNG遠端下載核對通過，收據docs/visual-discussion/20261019_c_right_end/GITHUB_READBACK.json另存於後續交接。最新交接以本檔所在分支為準。
+
 # C右側新平緩帶討論：完整接續指令（2026-10-19）
 
 請接續股票系統M1，儲存庫blue1998-glitch/Twstockai，分支dev/m1-v018-chart-annotations。確認含c5212141ef9cedb09ef9bef1ea305e4eda5366e0及本檔所在提交；如有更新先讀最新保留，不用main或舊ZIP覆蓋。

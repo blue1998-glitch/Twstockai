@@ -36,4 +36,4 @@ HTTP QA腳本test_c.cjs需Playwright、Chromium、同版本d3.min.js及Noto字�
 
 G1精確起日、新平緩帶精確起日及C後終點、價格區界、整區量／量口徑、增量、自動分區選關、強度衰減與生命階段仍未定。G2日期已確認，不重問；35.90～40.25只是顯示外包，不是正式壓力區界。Raw公司行動／五年Adjusted／歷史公布可得、原資料缺口、Darvas箱型正文未完整閱讀及SQLite未知根因維持。核心用途NOT_ESTABLISHED，分類NOT_VALIDATED，行動NOT_EVALUATED。
 
-成果保存原dev/m1-v018-chart-annotations，不改main／舊頁／原引擎策略／庫／歷史／案例／證據；不部署付費交易訊息子代理。下一步同Work只收本問題判讀，真正可重現工程問題再交Codex。GitHub實際保存須另確認，不能以本地完成代填。
+成果保存原dev/m1-v018-chart-annotations，不改main／舊頁／原引擎策略／庫／歷史／案例／證據；不部署付費交易訊息子代理。下一步同Work只收本問題判讀，真正可重現工程問題再交Codex。已確認GitHub固定成品提交`adfb8f7abc2ea43bc5b215384b5821b39e6c8c69`：14份文字精確讀回、4張PNG下載逐位元組相等，見[GITHUB_READBACK.json](GITHUB_READBACK.json)。本README／收據／交接為之後獨立提交，不宣稱收據自我包含於成品。
