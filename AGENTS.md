@@ -1,3 +1,9 @@
+# Latest0.4.3 background/candle distinction (2026-10-19 Work)
+
+User reports0.4.2 shade now visible, requests deeper shade with both region and candles clear. Device/version not independently confirmed, no new image. New independent soft_region_chart_v043 default18% and12/18/26% controls; original extent/numerics/foreground preserved. Actual32 HTTP checks PASS,24 foreground samples and101067 opaque pixels unchanged; ZIP CRC/SHA verified. Failures/corrections preserved, fullPython/old suites not rerun. Read CONTINUE top, visibility handoff latest, new report and delivery Work instructions. NewAndroid NOT_TESTED_NEW_BUILD; next same Work only shade/K readability. Preserve all old evidence/engines/strategies/stores/main and restrictions; no subagents/deployment/payments/trades/messages.
+
+---
+
 # Latest shade visibility0.4.2 (2026-10-19 Work)
 
 User reports shade is invisible; new independent soft_region_chart_v042 uses12% opacity and local8/12/20% choices, no region border. Read CONTINUE top and M1_V019_SOFT_REGION_VISIBILITY_HANDOFF.md, new module report and delivery WORK_HANDOFF. Actual28 focused Chromium HTTP checks PASS, immutable payload values except view_version/artifact_id, ZIP CRC/SHA verified; fullPython/old suites not rerun. Android NOT_TESTED_NEW_BUILD; latest report has no new screenshot or independently confirmed device/version. Preserve all prior evidence and sources; same branch, main unchanged. Next same Work checks only shade appearance; no old-function retest, no subagents/deployment/payments/trades/messages.

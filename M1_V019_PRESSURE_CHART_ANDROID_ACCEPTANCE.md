@@ -1,3 +1,10 @@
+# 2026-10-19 最新：已看得到底色，要求背景與K線同時清楚
+
+USER_REPORTED：使用者「已經看的見了，顏色可在深一些標準是能一眼辨識背景卻也能清楚看見K線兩者必須能清楚分別辨識。」上一0.4.2語境底色已可見，仍要加深；同句重送不計兩次測試。本輪無新圖，裝置／實開版本／選項未獨立確認，不代填完整Android或K線可讀已通過。0.4.3新Android NOT_TESTED_NEW_BUILD。
+OBSERVED工程：32項Chromium HTTP、24組原前景繪製／101067純色像素核對、16張工程圖與ZIP CRC／SHA，詳新soft_region_chart_v043/validation_20261019/驗收報告.md；首次啟動及像素假設失敗另存。NOT_TESTED：新實機／手機新JSON／整套Python／舊完整回歸／核心用途。BLOCKED歷史file://不重試／繞過。下一步同Work只看新版預設18%是否讓背景一眼可辨且K實體／影線清楚；不索相同舊圖／JSON或重開舊功能。入口deliveries/m1-v019-soft-regions-v043-20261019/README.md。
+
+---
+
 # 2026-10-19 最新0.4.2底色可辨識性：待新實機證據
 
 USER_REPORTED：使用者「看不到底色區域」，上一交付0.4.1語境；本輪無新圖、裝置／實開版本未獨立確認，記VISIBILITY_INSUFFICIENT，不推定Android成功。OBSERVED僅工程：新0.4.2預設12%／可選8/12/20%，28項真實Chromium HTTP PASS與前後PNG，詳soft_region_chart_v042/validation_20261019/驗收報告.md。原檔核對僅新包CRC／SHA與payload無損。0.4.2 Android=NOT_TESTED_NEW_BUILD；舊各版證據維持原資格。BLOCKED歷史file://未重試／繞過。下一步只收新版底色觀感，未實際驗手機下載不索JSON，不重開舊功能。入口deliveries/m1-v019-soft-regions-v042-20261019/README.md。

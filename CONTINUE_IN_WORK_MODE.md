@@ -1,3 +1,15 @@
+# 2026-10-19 最新：0.4.3背景與K線須同時清楚
+
+使用者原話：「已經看的見了，顏色可在深一些標準是能一眼辨識背景卻也能清楚看見K線兩者必須能清楚分別辨識。」上一0.4.2語境已能看見，屬USER_REPORTED_REGION_VISIBLE_WITH_DARKER_REQUEST；重送只記一次。沒有新圖或裝置／實開版號獨立確認，不升級完整Android驗收。標準是背景一眼可辨、K實體與影線同時清楚。
+
+新增獨立soft_region_chart_v043，預設18%不透明度、較淡12%／明顯26%，背景先畫、K／量原色與100%前景保持。仍無區域框、原範圍與數值不變、MACD不染色。實際32項Chromium133 HTTP PASS，24組前景繪製／101067純色像素核對，16張工程圖保存並目視G2-390／G1-844；payload無損與ZIP CRC／SHA通過。首次啟動太早及像素假設失敗保存並修正，沒有改產品迎合測試。整套Python／舊完整回歸未重跑。
+
+[成品入口](deliveries/m1-v019-soft-regions-v043-20261019/README.md)、[完整可貼Work指令](deliveries/m1-v019-soft-regions-v043-20261019/WORK_HANDOFF.md)、[32項／失敗修正／限制](股票系統M1_v0_18/soft_region_chart_v043/validation_20261019/驗收報告.md)。遠端保存以實際提交後收據為準。
+
+0.4.3 Android NOT_TESTED_NEW_BUILD。下一步仍同Work只看新版預設顏色，無須重測舊功能或索舊圖JSON；工程通過不是核心用途認可。全部原策略／來源未知與file://阻擋保留，不改main、不部署付費交易訊息子代理。
+
+---
+
 # 最新：0.4.2底色濃淡可調（2026-10-19 Work）
 
 使用者「看不到底色區域」，上輪3%底色不足；本輪新獨立0.4.2預設12%，底色選單較淡8%／標準12%／明顯20%，無區域周邊框、原價量範圍及MACD不染色保留。成品入口deliveries/m1-v019-soft-regions-v042-20261019/README.md，完整指令WORK_HANDOFF.md，先讀M1_V019_SOFT_REGION_VISIBILITY_HANDOFF.md及新模組報告。實際28項HTTP／16張工程圖、payload無損與ZIP核對完成；整套Python／舊回歸未重跑。新Android NOT_TESTED_NEW_BUILD，最新文字回報無新圖／裝置版本未獨立確認，不搬作新版通過。下一步同Work只收底色是否可見／不遮K，不索舊圖JSON。GitHub保存只按實際收據；保留舊成果及所有策略／來源限制，main不動，不部署付費交易訊息子代理。
