@@ -6,13 +6,13 @@
 
 ## 入口
 
-- [下載研究主圖ZIP（5.04 MB）](https://raw.githubusercontent.com/blue1998-glitch/Twstockai/dev/m1-v018-chart-annotations/deliveries/m1-v019-graph-core-20261019/M1_v019_graph_recognition_v01.zip)
+- [下載研究主圖ZIP（5.04 MB）](https://raw.githubusercontent.com/blue1998-glitch/Twstockai/2d480bffcaebfa09768e04a283227effc3fc0a00/deliveries/m1-v019-graph-core-20261019/M1_v019_graph_recognition_v01.zip)
 - [ZIP SHA256](SHA256SUMS.txt)、[實際CRC／9成員解壓核對](PACKAGE_VERIFICATION.json)
-- [HTML原檔（13.75 MB，下載後開啟）](../../股票系統M1_v0_18/graph_core_chart/generated/M1_v019_graph_recognition_v01.html)
+- [HTML原檔（13.75 MB，下載後開啟）](https://raw.githubusercontent.com/blue1998-glitch/Twstockai/2d480bffcaebfa09768e04a283227effc3fc0a00/%E8%82%A1%E7%A5%A8%E7%B3%BB%E7%B5%B1M1_v0_18/graph_core_chart/generated/M1_v019_graph_recognition_v01.html)
 - [實測／畫面／失敗／辨識缺口](../../股票系統M1_v0_18/graph_core_chart/validation_20261019/驗收報告.md)
 - [可直接讀的小型辨識差異及參數敏感度](../../股票系統M1_v0_18/graph_core_chart/generated/recognition-audit.json)
 - [研究核心公式與限制](../../股票系統M1_v0_18/graph_core/README.md)、[重建與使用](../../股票系統M1_v0_18/graph_core_chart/README.md)
-- [完整可貼Work指令](WORK_HANDOFF.md)、[source指紋](SOURCE_HASHES.json)、[GitHub實際下載收據](GITHUB_DOWNLOAD_VERIFICATION.json)（收據實際建立且PASS後才代表遠端核對）
+- [完整可貼Work指令](WORK_HANDOFF.md)、[source指紋](SOURCE_HASHES.json)、[GitHub實際下載收據](GITHUB_DOWNLOAD_VERIFICATION.json)：已實際PASS，固定成品提交88檔共42,077,859 bytes下載逐字相同；遠端ZIP CRC／全部解壓SHA亦核對。此後README／Work全文／收據另存交接提交，不宣稱收據自我包含於成品提交。
 
 ZIP **5,040,045 bytes**，SHA256 `934c54ec033de14d402cb4b8110ed53e9a99b311a934144f9139950c05046783`。
 HTML **13,748,260 bytes**，SHA256 `fbca1e1d7e82d5dc9dcca8da0d3c8619f59431c1119d2cd8cb4c8ffc8293a724`。
@@ -30,3 +30,5 @@ HTML **13,748,260 bytes**，SHA256 `fbca1e1d7e82d5dc9dcca8da0d3c8619f59431c1119d
 - Android NOT_TESTED_NEW_BUILD；原file://政策阻擋未重試／未繞過。沒有改main、部署、付費、交易、訊息或子代理。
 
 下一步用**Work**看新自動結果相對已答大帶／前箱的實際結構差異，貼WORK_HANDOFF全文。不重問已答日期／代表，不重做101原圖或0.4.3樣式。小ZIP是自足研究結果與latest JSON，不冒充完整source備份；source保存在指定分支。
+
+固定成品提交：`2d480bffcaebfa09768e04a283227effc3fc0a00`，已push且實際由GitHub下載核對。最新交接沿同一分支；main仍`9c5b168c09ba80010c74f03b9c537e8b7474256a`，未變。下載入口固定成品提交，不隨後續分支修改而漂移。
