@@ -1,3 +1,6 @@
+固定0.4.3成品提交：ba78194d5b385324be76c026ba499eedd32c4647；固定ZIP：https://raw.githubusercontent.com/blue1998-glitch/Twstockai/ba78194d5b385324be76c026ba499eedd32c4647/deliveries/m1-v019-soft-regions-v043-20261019/M1_v019_soft_regions_v043.zip
+已核GitHub實際下載ZIP SHA／CRC／內部SHA與包裝／最終32項HTTP報告，共3檔，見GITHUB_DOWNLOAD_VERIFICATION.json。初次38檔全面回讀因工作區維護失去收據確認，本次不宣稱38檔全通過；舊證據已存GitHub。最新交接以本檔所在分支提交為準。
+
 請接續股票系統M1，只收0.4.3底色與K線是否同時清楚的新觀感，不重開舊整套功能驗收。
 儲存庫blue1998-glitch/Twstockai；分支dev/m1-v018-chart-annotations。確認包含0.4.2最新交接c70a9c32fa1dfdf98081dd1c1f9f543145d2066c及本交付所在成品／交接；如有更新，先讀最新並保留，不用main／舊ZIP覆蓋。
 依序實讀AGENTS、CONTINUE最上方、M1_V019_SOFT_REGION_VISIBILITY_HANDOFF.md最新、PROJECT_VISION／M1_V019_VISUAL_RULE_NOTES最新、股票系統M1_v0_18/soft_region_chart_v043/README與validation_20261019/驗收報告、本交付README／PACKAGE_VERIFICATION／GitHub下載收據、Android驗收最新。無法讀取／執行／保存列具體錯誤，不假稱已讀已測。

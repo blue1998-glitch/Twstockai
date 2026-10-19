@@ -1,3 +1,5 @@
+固定0.4.3成品提交：ba78194d5b385324be76c026ba499eedd32c4647；新ZIP已實際從GitHub下載核SHA／CRC／內部SHA，與PACKAGE_VERIFICATION及最終32項HTTP報告合計3檔核對通過。[本次實際下載收據](deliveries/m1-v019-soft-regions-v043-20261019/GITHUB_DOWNLOAD_VERIFICATION.json)。原38檔全面回讀於工作區維護清理後無法確認收據，不宣稱已完成；成品／源碼／證據已先保存GitHub，不受本地清理影響。最新交接以本檔所在分支提交為準。
+
 # 2026-10-19 最新：0.4.3背景與K線須同時清楚
 
 使用者原話：「已經看的見了，顏色可在深一些標準是能一眼辨識背景卻也能清楚看見K線兩者必須能清楚分別辨識。」上一0.4.2語境已能看見，屬USER_REPORTED_REGION_VISIBLE_WITH_DARKER_REQUEST；重送只記一次。沒有新圖或裝置／實開版號獨立確認，不升級完整Android驗收。標準是背景一眼可辨、K實體與影線同時清楚。
