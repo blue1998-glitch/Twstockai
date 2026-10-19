@@ -1,3 +1,5 @@
+固定成品提交：5e1dbdebe660292e8408c8f8bc4b766947d1e582；最新交接以本檔所在指定分支為準。
+
 請接續blue1998-glitch/Twstockai，分支dev/m1-v018-chart-annotations，保留本檔所在提交及所有後續成果，不用main／舊ZIP覆蓋。
 先讀AGENTS、CONTINUE最上方、M1_V019_SOFT_REGION_FILL_HANDOFF.md、soft_region_chart README／驗收報告、本交付README／PACKAGE_VERIFICATION與GitHub遠端下載收據。
 用固定提交ZIP下載並核SHA，解壓開M1_v0_19_soft_regions_v041.html，標頭「M1 K線淡底色主圖 0.4.1」。來源1101／新Raw／2026-10-16／日收27.30。
