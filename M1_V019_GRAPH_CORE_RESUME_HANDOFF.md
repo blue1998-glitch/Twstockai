@@ -1,3 +1,19 @@
+# 最新：準備已實際成功；獨立研究核心與真實圖已接入（2026-10-19 Codex）
+
+接續指定83506ff，bootstrap --hydrate-missing本輪實跑成功，三個歷史ZIP均核SHA；保留7差異、0補檔，未使用小成品包冒充舊基準。下方Work無checkout／binary受阻與PREPARATION_FAILED是歷史原紀錄，未改寫；新環境、輸出及測試見新驗收報告。
+
+新增純數值graph_core/core.py（graph-recognition-research/0.1），不輸入任何人工日期／價格答案；從當時完成收盤前綴找三尺度轉折與反覆箱、跨尺度包含、左側可比壓力、後續跌幅／用時／離箱量比、假越後跌回及破底後新箱。3／6／12%與35%是明示研究設定，拒絕當日新極值與反轉先後不明、缺價／已知缺日／基底跨越；保留同價來源與確認延遲。重要性採研究多目標比較而無唯一排名，正式權重／區界／量口徑等仍未定。
+
+graph_core_chart獨立主圖可縮放／移圖／逐真實交易日查詢，K量MACD同步；每股15個、共60前綴回放與完整精度JSON。原OHLCV／SMA／MACD／frame ID沿核驗父檔，數值核心不依賴UI／SQL／網路／舊引擎，不改舊策略或保存結果。新JSON graph-recognition-selection/0.1，人工對照在core以外明示後來資格。原0.4.3及既有圖片庫保持，不重新讀101原圖或重開樣式驗收。
+
+[核心研究契約](股票系統M1_v0_18/graph_core/README.md)、[主圖與重建](股票系統M1_v0_18/graph_core_chart/README.md)、[本輪實測／失敗／畫面](股票系統M1_v0_18/graph_core_chart/validation_20261019/驗收報告.md)、[描述／敏感度／人工差異小報告](股票系統M1_v0_18/graph_core_chart/generated/recognition-audit.json)、[小ZIP／SHA／GitHub收據與完整Work指令](deliveries/m1-v019-graph-core-20261019/README.md)。
+
+**工程完成不等核心用途完成：** 1101本設定89箱／171轉折／25個研究前緣，兩尺度有1/27／26.95但3/4、3/20才確認；不能倒灌1/27已知。人工前箱4/7～6/2的39筆未獲同起訖自動匹配、主帶2023-06～2025-04僅月份的整體未完整重現，需真實新結果釐清漏檢／合併／層級；不寫死答案或調參湊相符。敏感度不是準確率，沒有訓練、獨立市場評估或全市場篩選／交易資格。primary_pressure_id=null；沉澱、生命階段、正式量增與強度衰減仍未知。
+
+下一步Work依交付WORK_HANDOFF看**新自動結果與既有整體判讀差異**，不重問1/27、6/3、5/13、前箱或G2日期，不重新讀101圖、索同舊圖JSON或重開0.4.3樣式。新頁Android NOT_TESTED_NEW_BUILD；原file政策未重試／繞過。Raw／公司行動／五年Adjusted／歷史公布可得、原缺口／Darvas未完整讀／SQLite根因保持；核心NOT_ESTABLISHED／NOT_VALIDATED／NOT_EVALUATED。不改main、部署、付費、交易、發訊息或啟動子代理。
+
+---
+
 # 圖形辨識核心續接：執行環境阻擋（2026-10-19）
 
 最新使用者要求：「繼續，要完成最重要的圖形系統」。本輪未完成核心，沒有將圖片首輪判讀或主圖樣式當作辨識完成。

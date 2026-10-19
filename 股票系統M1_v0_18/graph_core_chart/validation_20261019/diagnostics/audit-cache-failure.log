@@ -1,0 +1,16 @@
+Traceback (most recent call last):
+  File "<frozen runpy>", line 198, in _run_module_as_main
+  File "<frozen runpy>", line 88, in _run_code
+  File "/workspace/Twstockai/股票系統M1_v0_18/graph_core_chart/evaluate_research.py", line 37, in <module>
+    p=argparse.ArgumentParser();p.add_argument('--html',required=True);p.add_argument('--report',required=True);a=p.parse_args();r=evaluate(a.html)
+                                                                                                                                   ^^^^^^^^^^^^^^^^
+  File "/workspace/Twstockai/股票系統M1_v0_18/graph_core_chart/evaluate_research.py", line 21, in evaluate
+    cfg=deepcopy(DEFAULT_CONFIG);cfg.update(change);other=analyze(payload,as_of=r['as_of'],config=cfg)
+                                                          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/workspace/Twstockai/股票系統M1_v0_18/graph_core/core.py", line 320, in analyze
+    path=trace_reference(rows,p['price'],p['confirmed_index'],stop_dates=resets),
+         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/workspace/Twstockai/股票系統M1_v0_18/graph_core/core.py", line 50, in trace_reference
+    if i not in volume_cache:volume_cache[i]=volume_observation(rows,i,resets)
+                ^^^^^^^^^^^^
+NameError: name 'volume_cache' is not defined

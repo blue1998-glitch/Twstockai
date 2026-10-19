@@ -1,3 +1,19 @@
+# 最新：獨立圖形辨識研究核心已可執行，辨識用途仍未認可（2026-10-19 Codex）
+
+從指定83506ff70c707db46c90d642396ed1c0cc6e268a接續，完整checkout及三份歷史ZIP已實際核SHA；本輪重跑bootstrap --hydrate-missing成功，0補檔、7差異保留。**上輪Work PREPARATION_FAILED是歷史，本輪準備成功另有實測紀錄，未改驗證或覆寫差異。** 未重下載／重讀101圖片，未重開0.4.3樣式驗收。
+
+新增獨立純數值`graph_core/`／graph-recognition-research/0.1，自動確認跨尺度轉折、反覆高低箱候選、最新收盤相對壓力、父子包含、離箱／跌回／破底後新箱及價量反證。人工案例不輸入核心。3%／6%／12%反向與35%高低群穩定度是明示研究設定，不是已批准策略；多目標比較保留衝突，primary_pressure_id=null，正式區界／量口徑／增量／衰減／生命階段未定。沒有訓練圖片模型或宣稱準確率。
+
+[新HTML／ZIP／SHA／遠端收據／完整Work指令](deliveries/m1-v019-graph-core-20261019/README.md)；[核心契約與公式](股票系統M1_v0_18/graph_core/README.md)；[圖表重現](股票系統M1_v0_18/graph_core_chart/README.md)；[實測／失敗／畫面](股票系統M1_v0_18/graph_core_chart/validation_20261019/驗收報告.md)；[小型辨識差異／敏感度報告](股票系統M1_v0_18/graph_core_chart/generated/recognition-audit.json)。原4854根OHLCV、MACD／SMA及來源frame完整保留；每股15個、共60個分析前綴，查詢K線不抽樣，回放只播已算日期，不假稱全歷史每天均已算。可CLI另加日，不在UI補算。
+
+**辨識缺口必留：** 1/27／26.95在兩尺度有自動同價來源，但到3/4、3/20才確認；10/12～16越過／跌回保存。人工4/7～6/2／39筆沒有精確同起訖自動匹配，較大月份主帶也未完整重現。不能把局部同價或箱數當有用主壓力核心已完成，不調參湊人工日期、不推大／舊或總量永遠贏。參數敏感度已有實算，非準確率。先前已答日期／代表與所有案例保持。
+
+新頁graph-recognition-view/0.1接真實可縮放K／量／MACD、同步查詢、已算前綴回放、研究箱證據與精確JSON；數值與UI分離，原引擎／策略／schema／庫／歷史／舊頁不變。21項定向Python、60前綴重算與實際Chromium下載／互動結果見最終報告；失敗及修正保留，不沿舊398／111等數字替代本版。原file://阻擋未重試／未繞過。
+
+下一步**Work看新自動結果與既有大帶／前箱的差異**，不重新做圖片首輪、不問已答日期或0.4.3底色、不把Android按鈕驗收代替辨識品質。先讀交付WORK_HANDOFF全文，使用真實可放大候選與反證釐清實際漏檢／合併／層級，真正已定規則再交Codex；新頁Android NOT_TESTED_NEW_BUILD。核心用途NOT_ESTABLISHED／分類NOT_VALIDATED／行動NOT_EVALUATED，Raw公司行動／五年Adjusted／歷史公布可得、原資料缺口／Darvas正文／SQLite未知保持。不改main、不部署付費交易訊息子代理。
+
+---
+
 # 最新：圖形辨識核心續接受環境準備阻擋（2026-10-19）
 
 使用者要求完成最重要的圖形系統。已實讀既有structure／attempt_evidence／MACD數值源碼，確認自動跨尺度箱型與重要壓力階層尚缺；沒有新增核心。本環境無Git checkout，原bootstrap在隔離恢復暫存實跑exit2：PREPARATION_FAILED，缺M1_v0_17_01.zip；GitHub文字可讀、binary取回失敗。依AGENTS準備規則停止產品修改，僅保存錯誤與接續紀錄。不是852檔準備成功，無新Python／Chromium／Android或核心認可。保留圖片庫首輪成果、所有歷史案例及未知，不重讀101圖。下一步Codex在完整checkout準備成功後做獨立純數值辨識核心；[完整接續指令與實讀缺口](M1_V019_GRAPH_CORE_RESUME_HANDOFF.md)，[環境證據](docs/core-recognition/20261019_resume/environment_report.json)。

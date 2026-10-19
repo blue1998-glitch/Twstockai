@@ -1,3 +1,11 @@
+# 新圖形辨識研究頁：Android NOT_TESTED_NEW_BUILD（2026-10-19 Codex）
+
+獨立graph-recognition-view/0.1／M1_v019_graph_recognition_v01.html，[成品／完整Work指令](deliveries/m1-v019-graph-core-20261019/README.md)。新頁顯示自動研究候選與真實K量MACD、前綴回放與JSON；原0.4.3樣式已收束、所有舊Android分項證據原樣保留，不重要求相同檔案。沒有本頁新手機原圖／版本身份／操作或下載證據，**NOT_TESTED_NEW_BUILD**，不得由雲端測試或0.4.3使用者回報升級。
+
+下一步優先在Work看新核心實際箱型／主壓力差異，不以重做Android按鈕或舊色帶驗收替代圖形辨識品質。若自然取得本頁手機新證據，分OBSERVED／USER_REPORTED／NOT_TESTED記錄，靜態圖不代填操作序列；只有驗新下載才收本頁新JSON。原file://管理政策阻擋不重試、不繞過、不要求停用保護。人工39筆與月份主帶未完整重現、核心用途與所有策略／Raw／Adjusted／歷史／來源／SQLite未知照新交接保持。
+
+---
+
 # 2026-10-19 13:50：0.4.3樣式獲使用者回報認可，差異驗收收束
 
 使用者回覆「可以」，對應前一0.4.3底色與K線同時清楚的新觀感。記 **USER_REPORTED_STYLE_ACCEPTED／CLOSED_BY_USER_REPORT**；[本輪原話與資格](股票系統M1_v0_18/soft_region_chart_v043/validation_user_20261019/style-accepted-1350.md)。本項不再重驗或索舊圖JSON，不建立新版本。Android只新增PARTIAL_USER_REPORTED_STYLE_ONLY，無新圖、裝置／實開版本未獨立核實，不推成全版實機或核心用途通過；其他未測／政策阻擋保持。
