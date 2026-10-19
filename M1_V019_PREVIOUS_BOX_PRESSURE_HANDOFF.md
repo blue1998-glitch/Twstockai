@@ -1,3 +1,5 @@
+前箱價峰／量峰新討論成品：8a85d05a6d2046dd6072d22b7de259f4ff97db45；12文字及4PNG原位元組GitHub精確讀回相符，收據docs/visual-discussion/20261019_previous_box_representative/GITHUB_READBACK.json在核對後另存。最新交接以本檔所在分支提交為準。
+
 # 最新完整Work接續：前箱整體代表判讀
 
 請接續股票系統M1，儲存庫blue1998-glitch/Twstockai，分支dev/m1-v018-chart-annotations，確認含05443d9277d90bf78e5954c27791364877267cce與本檔所在提交；有更新先讀最新並保留，不用main／舊ZIP覆蓋。依序實讀AGENTS.md、CONTINUE_IN_WORK_MODE.md最上方、本檔、PROJECT_VISION.md及M1_V019_VISUAL_RULE_NOTES.md最新節、docs/visual-discussion/20261019_previous_box_representative/README.md、pending_review.json、source_verification.json、source.json、browser-report.json及GitHub讀回收據（如已保存）；另讀前輪previous_box_pressure/reviewed_1635/user_review.json，工具不能讀／執行／保存列具體錯誤，不將摘要當實讀。

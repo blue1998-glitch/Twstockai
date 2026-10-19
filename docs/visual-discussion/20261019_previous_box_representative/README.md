@@ -29,3 +29,5 @@ build.py以--template指前輪reviewed_1635/discussion_fragment.html可重建，
 [pending_review.json](pending_review.json)只收整箱代表的核心判讀：哪個日／價位最能代表此箱對最新27.30的相關壓力，及必要理由；可以答其他位置／多參照，不強迫選最高或最大量，也不再問39筆日期、6/3或1/27已答理由。使用者回覆後依真實來源核對、只綁此案例與資格，才整理能泛化的規則；不自動填公式或把本例變全部股票通則。
 
 正式區界、整區量口徑／增量、強度衰減／生命階段、自動選箱／選關與Raw公司行動／五年Adjusted／歷史公布可得／原資料缺口／Darvas正文未完整讀／SQLite根因未知保持。核心NOT_ESTABLISHED、分類NOT_VALIDATED、行動NOT_EVALUATED。保留原引擎策略／庫／歷史／舊頁／來源案例證據與main，不部署付費交易訊息子代理；GitHub核對收據在讀回後另存。
+
+固定本輪討論成品：8a85d05a6d2046dd6072d22b7de259f4ff97db45。12文字及4PNG已由GitHub connector從固定提交精確讀回，文字／影像原始位元組相同，見[GITHUB_READBACK.json](GITHUB_READBACK.json)。收據、本README追加及交接是核對後另存提交；不宣稱收據包含在被核對成品，不代表代表點／策略／Android已批准。
