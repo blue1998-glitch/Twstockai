@@ -1,3 +1,5 @@
+固定新討論成品提交：bd47cc9b424e10a1c6ec683d1ea6200e92f0e798；14文字及8PNG原位元組GitHub讀回相符，收據docs/visual-discussion/20261019_previous_box_pressure/GITHUB_READBACK.json在核對後另存。最新交接以本檔所在分支提交為準。
+
 # 前一箱壓力候選：完整可貼Work接續指令
 
 請接續股票系統M1，儲存庫blue1998-glitch/Twstockai，分支dev/m1-v018-chart-annotations。確認含10e6a896d3826a048acb2920fc2086a80f825979與本檔所在提交；有更新先讀最新交接並保留，不用main／舊ZIP覆蓋。

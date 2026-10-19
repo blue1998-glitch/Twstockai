@@ -32,3 +32,5 @@
 [pending_review.json](pending_review.json)：淡色這段4月急跌後、到5月底的整理，是否就是6/3離開的前一箱？只收整體結構的判讀；即使回可以，也不順帶批准37筆精確起訖、上下界、自動規則、量指標或交易資格。不要再問6/3排除理由／1/27理由、B拆箱、平緩帶終點或G2日期。仍同Work，未有可重現工程缺陷或已明確工程前不轉Codex，不重開舊手機樣式驗收。
 
 自動高低點／分箱／延伸／正式價格界／整區量／增量／強度衰減／生命階段未定，Raw公司行動／五年Adjusted／歷史公布可得／資料缺口／Darvas正文未完整讀／SQLite根因保留，核心NOT_ESTABLISHED、分類NOT_VALIDATED、行動NOT_EVALUATED。原引擎策略／庫／歷史／舊頁／來源案例及證據與main不改，不部署付費交易訊息子代理。GitHub保存只以實際遠端讀回確認，收據另存於核對後提交。
+
+固定討論成品提交：bd47cc9b424e10a1c6ec683d1ea6200e92f0e798。14份文字與8張PNG已經GitHub connector從此固定提交實際讀回，文字及影像原位元組相同，見[GITHUB_READBACK.json](GITHUB_READBACK.json)。收據及本README追加段為核對後另存交接，不宣稱收據已包含於被核對成品，也不代表候選或Android已批准。
