@@ -1,3 +1,5 @@
+最新接續入口已推進至[M1_V019_PREVIOUS_BOX_PRESSURE_HANDOFF.md](M1_V019_PREVIOUS_BOX_PRESSURE_HANDOFF.md)：6/3已答，不重問；新圖只收4月急跌後到5月底是否前一箱的結構判讀。原記錄如下保留。
+
 16:17人工說明固定提交：0c09e2362673742f4014dac86618c4fec9f48927；7份文件GitHub精確讀回及僅文件差異已核。收據：docs/visual-discussion/20261019_latest_close_anchor/GITHUB_BOUNDARY_REVIEW_READBACK.json。最新交接以本檔所在分支提交為準。
 
 # 最新完整接續補充（2026-10-19 16:17，取代下方6/3待問）
@@ -33,3 +35,4 @@
 下一步仍Work討論核心真實圖；只在形成已明確認可工程或可重現問題後交Codex，附新版來源／操作／原圖及必要新JSON。所有未知自動高低點／分箱延伸／正式區界／整區量口徑／增量／強度衰減／生命階段不補門檻。Raw公司行動／五年Adjusted／歷史公布可得／原資料缺口／Darvas正文未完整讀／SQLite根因及核心NOT_ESTABLISHED、分類NOT_VALIDATED、行動NOT_EVALUATED保留。
 
 一般可逆工作直接處理；不改原引擎策略／庫／歷史／舊頁／案例／證據或main，不部署、付費、交易、發訊息或啟動子代理。新增回報／核對／失敗／未測分開保存同分支並確認GitHub，不能保存須明說。結束列實際完成／未完成、入口、最新提交、下一步Work或Codex；切換附完整可貼指令。
+
