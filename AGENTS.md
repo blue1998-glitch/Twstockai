@@ -1,3 +1,13 @@
+# 2026-10-19：以最新收盤為錨，由右往左找有意義箱型
+
+使用者撤回任意藍／黃區間切箱的方向：依最新K線收盤回看左側相關壓力／支撐帶，以有判斷用途的整體箱型與代表點為先；跨過本箱後再往更左找壓力，不為分段而切小。舊B一箱／B1B2待答已撤下，假說／圖／來源保留為歷史，不是使用者批准。實讀[M1_V019_LATEST_CLOSE_ANCHOR_HANDOFF.md](M1_V019_LATEST_CLOSE_ANCHOR_HANDOFF.md)及[本輪原話、同源原值與新圖](docs/visual-discussion/20261019_latest_close_anchor/README.md)。
+
+1101／新官方Raw／已存分析日2026-10-16收27.30；使用者候選2025-06-03～最新336筆，選2026-01-27高26.95代表，收盤確已越過；似乎量增／可能突破為暫定判讀。來源有一處待對齊：6/3高28.00、6/4高27.45，故1/27不是全窗Raw數值最高；保留相關代表，不自行刪起跌K／改日期或基底／補箱頂算法，也不以機械最高值否定箱型用途。原④1/29／26.85不同，G1G2G3及①④不改。量比前日+36.06%，比前5筆均量−15.50%，比前20筆均量+22.25%（排除本日），只是描述比較，未定量資格；10/12越過、10/13跌回、10/14越過、10/15跌回、10/16又越過的收盤歷程保留。
+
+新獨立可放大真實K量圖只對齊來源與參照，實際24項Chromium133 HTTP PASS／四寬8原尺寸圖，1213原值不改；不是新產品版本、Android／宿主／CDN或核心用途通過，未重跑舊全套。0.4.3樣式已收束，不索舊原圖JSON，原file://阻擋未重試／未繞過。下一步同Work只對齊6/3起跌較高影線與本箱代表上緣關係，再看更左壓力；不重問B拆箱、平緩帶終點、G2已定日期。自動高低點／分箱／延伸／區界／整區量／增量／強度衰減／生命階段與Raw公司行動／Adjusted／歷史可得／來源缺口／Darvas未完整讀／SQLite未知、核心未認可保持。不改main、引擎策略／庫／歷史／舊頁／案例證據，不部署付費交易訊息子代理。
+
+---
+
 # Latest box-scale comparison (2026-10-19 Work)
 
 New independent visual compares whole B vs split B1/B2 on identical source K/volume with common context A. Read CONTINUE top and M1_V019_BOX_SCALE_COMPARISON_HANDOFF.md. All boxes/endpoints/wick envelopes are assistant hypotheses, not user-approved or automatic rules; pending user choice only about grouping. Do not re-open flat-band endpoint or0.4.3 shade acceptance. Actual32 new discussion HTTP checks PASS,8 original-size images, exact1213 source bars/frame/basis and per-mode foreground equality; first QA selector failure retained. No product/engine/strategy/store/main change or new version, no old full suites/Android/chat host/user CDN validation; file blocker and all strategy/data limits persist. Same Work receives whole/split/other without inferring all boundaries or trade approval. No agents/deployment/payments/trades/messages.
@@ -103,3 +113,4 @@ The current Work Mode entry point is `CONTINUE_IN_WORK_MODE.md`. Update it when 
 The new offline candidate builder is an explicit separate producer, not a change to the old read-only exporter. It may project new candidate OHLC with the existing helper and calculate separately versioned MACD; label these new outputs, never pretend they existed in old adjusted snapshots. Browser code only renders the results. Preserve every original schema, engine, strategy threshold and store. Next core questions have concrete saved examples in M1_V019_CORE_RULE_DECISIONS.md.
 
 After the initial import, Git contains editable v0.18 source but omits historical data/build outputs. On an existing or fresh source checkout use `python3 codex/bootstrap_m1.py --hydrate-missing` to verify a private baseline and restore missing assets only. It reports and preserves differing source files; it does not certify them against the historical manifest. The default command remains a strict baseline check and must not be used to overwrite development changes. Read `股票系統M1_v0_18/docs/結構標記顯示契約.md` and the latest acceptance report for the saved-evidence annotation page. Do not calculate new strategy states from example images.
+

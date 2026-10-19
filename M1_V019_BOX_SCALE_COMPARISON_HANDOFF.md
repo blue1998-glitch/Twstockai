@@ -1,3 +1,5 @@
+> 2026-10-19最新更正：本檔的一箱／拆箱問題已撤下，不再等待回答。使用者要求以最新收盤從右向左找有意義的箱與代表；舊藍黃區域未獲認可。原內容保留為歷史，請先讀M1_V019_LATEST_CLOSE_ANCHOR_HANDOFF.md及review_resolution.json。
+
 固定討論成品提交：3857c6fd371b16868a06486c4f29cbe4f7a66a29；16文字精確讀回與8原尺寸PNG實際下載核對已通過，收據docs/visual-discussion/20261019_box_scale_comparison/GITHUB_READBACK.json在後續交接保存。最新交接以本檔所在指定分支為準。
 
 # 箱型分段尺度對照：完整接續Work指令
@@ -13,3 +15,4 @@
 最終本圖32項Chromium133 HTTP PASS，四視窗，源相同、模式與實際wick／量峰對齊、無邊框、換層K／量繪製屬性與游標／窗／分析相同、兩個價比較、縮放裁切／返回、查詢4/3後依真記錄到4/8、無溢位、重開預設保持日期。8張原尺寸圖與失敗修正保存；首測selector同時匹配root／button失敗後修QA selector，最後候選片段取4/26而非舊4/30視窗後重build／全32重跑通過。不是產品舊32或前C圖32，無整套Python／舊完整回歸／新手機JSON。QA固定D3位元組與Noto字體，Chat宿主／用戶CDN／Android NOT_TESTED；file://已知阻擋不重試繞過。
 來源來自前一精確討論源，父圖源自核SHA0.4.3固定ZIP；本輪未重讀最早手機JSON或重抓行情，不索舊檔。產品0.4.3、不改主圖／原引擎策略／庫／歷史／舊頁／案例／證據，無新版本。自動高低點、分箱拆合延伸、正式價格區界、量口徑／增量、強度衰減及生命階段未定；Raw公司行動／五年Adjusted／歷史可得／缺口／Darvas正文未完整讀／SQLite根因未知與核心NOT_ESTABLISHED、分類NOT_VALIDATED、行動NOT_EVALUATED保持。
 一般可逆工程直接做，真可重現工程問題才附來源／操作／必要新圖JSON交Codex。新回覆與成果保存同分支並實核GitHub，不能保存明說，未測不填成功。不改main，不部署付費交易訊息子代理。結束列實際完成／未完成、入口、最新提交及下一步同Work或Codex；切換附完整可貼指令。
+
