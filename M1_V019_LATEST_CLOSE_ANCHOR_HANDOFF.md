@@ -1,3 +1,17 @@
+# 最新完整接續補充（2026-10-19 16:17，取代下方6/3待問）
+
+請接續blue1998-glitch/Twstockai，分支dev/m1-v018-chart-annotations，確認包含391554548ca396e93a4f46be84c35a6ebe1824e5及本檔所在提交；如有更新先讀最新並保留，不用main或舊ZIP覆蓋。依序實讀AGENTS.md、CONTINUE_IN_WORK_MODE.md最上方、本檔、PROJECT_VISION.md、M1_V019_VISUAL_RULE_NOTES.md最新節、docs/visual-discussion/20261019_latest_close_anchor/README.md與boundary_review_1617.json，必要來源查source_verification.json／source.json及原始收據。不能讀執行保存要明說，不將摘要當實讀。
+
+使用者已答6/3原高28.00在本箱外，為另一箱跌破下緣的K；代表1/27高26.95較近現價，且1/27到最新可視為有籌碼沉澱，因此較重要。6/3歸屬問題已CLOSED_BY_USER_EXPLANATION，不再追問。保存為本例人工結構／價量判讀，不推成所有股票通用的最近pivot／最高值／沉澱或破底算法。前箱正式界線未知，不假稱自動檢查破底已過；336根只是舊閱讀窗，不將整窗都批准為本箱，不擅定6/4等其餘K歸屬、新箱精確起日／箱底。保留6/3原值與前箱脈絡供向左找壓力，不刪原K或變更價格基底。
+
+分析仍1101新官方Raw／已存2026-10-16收27.30（非即時行情），高於1/27高26.95事實保持；原①④與G1G2G3不改。使用者先前量增／可能突破仍暫定，量比較基準／增量資格與自動規則未定；沉澱判讀不等於已測得剩餘持股。下一步同Work以最新收盤向左找前一箱壓力與相對位置，圖可放大；不要再問B拆箱／平緩帶終點／已答6/3，不重開0.4.3樣式或索相同舊圖JSON。
+
+本輪只保存判讀／交接與遠端核對，沒有新圖、產品修改、Python／Chromium／Android測試。前輪24HTTP及8PNG保留原時點，不用來證明新判讀已渲染或產品用途通過；原file://阻擋不重試不繞過。先前直接HTTP讀GitHub metadata403已在boundary_review記錄，實際GitHub connector讀檔與branch同頭比對成功；不得寫成整體GitHub不可讀。
+
+自動高低點／分箱延伸／正式區界／整區量口徑／增量／強度衰減／生命階段與Raw公司行動／五年Adjusted／歷史公布可得／原資料缺口／Darvas正文未完整讀／SQLite未知保留。核心NOT_ESTABLISHED、分類NOT_VALIDATED、行動NOT_EVALUATED。保留main、原引擎策略／庫／歷史／舊頁／來源案例與證據，不部署、付費、交易、發訊息或啟動子代理。一般可逆工作直接處理；可重現工程問題或明確認可工程才交Codex，轉模式附完整可貼指令。新增記錄保存同分支並確認GitHub，未測不得標完成，結束列實際完成／未完成、入口、最新提交及Work或Codex。
+
+---
+
 固定本輪討論成品提交：7a4eb8037ba22570269ebb97cc1b88a95c98de6d，已核16文字及8PNG遠端原位元組；收據docs/visual-discussion/20261019_latest_close_anchor/GITHUB_READBACK.json。最新交接以本檔所在分支提交為準。
 
 # 完整接續Work指令：最新收盤由右往左找箱型
