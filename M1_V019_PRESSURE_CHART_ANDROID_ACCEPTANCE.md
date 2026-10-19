@@ -1,3 +1,13 @@
+# 0.4 K線影線外包修正版：NOT_TESTED_NEW_BUILD（2026-10-19 Codex）
+
+新成品candle-region-chart-view/0.4／M1_v0_19_candle_regions_v04.html；[入口及完整Work差異驗收指令](deliveries/m1-v019-candle-regions-v04-20261019/README.md)。只更正價量區域畫法：G2以136筆所選來源影線35.90～40.25包框、量圖獨立框、MACD不填區域；G1近似九月左緣未閉合、C後無假封閉框。數字是display extent，不批准正式壓力區界／整區量或新策略。
+
+**0.4 Android NOT_TESTED_NEW_BUILD**：沒有本版手機原圖、操作／身份回報或新JSON，不能從雲端398 Python及208／44／55／32 Chromium代填。下一步Work只驗新外框差異；原0.3-family兩張圖PARTIAL_EVIDENCE_OBSERVED_VERSION_UNCONFIRMED、0.2部分證據及所有OBSERVED／USER_REPORTED／NOT_TESTED分項保留，不重索同檔、不搬為0.4通過。已知file://管理政策拒絕未重試／繞過，無新手機BLOCKED回報。
+
+新版本自然確認0.4／1101／新Raw／10/16身份，聚焦G2、G1看外框與獨立量圖、MACD無色帶，再看縮放裁切／返回分析日。只有真的驗手機新JSON精度才收0.4新原檔。若只回成功記USER_REPORTED，看到新原圖才記OBSERVED；靜態圖不證明全部操作序列。G1精確起日與C後終點、價格區界／量口徑等未知，其他核心／來源／Raw／Adjusted／歷史／SQLite限制保持。
+
+---
+
 # 08:51新圖已讀；價量帶須貼合K線範圍，交Codex修正（2026-10-19 Work）
 
 使用者明確要求標示真實K線範圍，拒絕將整個圖垂直空間框滿。兩張新圖已實讀並原位元組保存：[直接觀察／未測／來源核對](股票系統M1_v0_18/region_chart/validation_android_20261019/evidence-0851.md)。G2 1/16～8/16、40.25點／線與貫穿K量MACD底色直接可見；另一張是C後終點未定證據，**不是G2端點面板**。0.3-family改為PARTIAL_EVIDENCE_OBSERVED_VERSION_UNCONFIRMED；頁頂版號、1101代碼未入鏡、無新JSON／操作序列，端點／返回24月／手勢／橫向／草稿仍未測，不把新圖當全通過。

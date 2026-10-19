@@ -1,0 +1,191 @@
+CREATED
+{
+  "status": "PASS",
+  "source_html_sha256": "8642986a70a1c315046327b4ec97452eae19ba78fbe619a713ce2965de42d44f",
+  "original_numeric_bundle_exact_equal": true,
+  "original_saved_frames": 1490,
+  "new_official_raw_frames": 4854,
+  "source_response_files": 244,
+  "series": [
+    {
+      "code": "1101",
+      "frames": 1213,
+      "first": "2021-10-18",
+      "last": "2026-10-16",
+      "monthly_source_responses": 61,
+      "exact_date_monthly_detail_frames": 61,
+      "original_source_days_equal": true,
+      "status": "PASS"
+    },
+    {
+      "code": "2884",
+      "frames": 1213,
+      "first": "2021-10-18",
+      "last": "2026-10-16",
+      "monthly_source_responses": 61,
+      "exact_date_monthly_detail_frames": 61,
+      "original_source_days_equal": true,
+      "status": "PASS"
+    },
+    {
+      "code": "6488",
+      "frames": 1214,
+      "first": "2021-10-18",
+      "last": "2026-10-16",
+      "monthly_source_responses": 61,
+      "exact_date_monthly_detail_frames": 61,
+      "original_source_days_equal": true,
+      "status": "PASS"
+    },
+    {
+      "code": "8069",
+      "frames": 1214,
+      "first": "2021-10-18",
+      "last": "2026-10-16",
+      "monthly_source_responses": 61,
+      "exact_date_monthly_detail_frames": 61,
+      "original_source_days_equal": true,
+      "status": "PASS"
+    }
+  ],
+  "full_market_or_lifetime_history": "NOT_CLAIMED",
+  "full_five_year_actions": "UNVERIFIED",
+  "physical_android": "NOT_TESTED_NEW_BUILD",
+  "frozen_0_3_payload_preserved": true,
+  "exact_region_case_frames": 1,
+  "display_extents": {
+    "action_qualification": "NOT_EVALUATED",
+    "analysis_as_of": "2026-10-16",
+    "c_right_extent": null,
+    "c_right_qualification": "OPEN_REFERENCE_ONLY_NO_CLOSED_REGION",
+    "chart_base": "sha256:50e560b77640da3b7d000c0db67fc73a3f5b69d0bd744871ccb03483f8ec115e",
+    "classification_quality": "NOT_VALIDATED",
+    "extents": {
+      "G1": {
+        "first_index": 456,
+        "first_source_date": "2023-09-01",
+        "formal_bar_membership": null,
+        "formal_price_bounds": null,
+        "formal_volume_measure": null,
+        "included_source_bars": 97,
+        "last_index": 552,
+        "last_source_date": "2024-01-19",
+        "left_edge": "OPEN_UNCERTAIN_MONTH_ANCHOR",
+        "price": {
+          "axis_effect": "NONE",
+          "basis": "FULL_SELECTED_SOURCE_WICKS_NOT_VISIBLE_SUBWINDOW",
+          "high": "35.50",
+          "high_dates": [
+            "2023-09-14",
+            "2023-11-28"
+          ],
+          "low": "31.35",
+          "low_dates": [
+            "2023-10-24"
+          ]
+        },
+        "qualification": "SELECTED_SOURCE_CANDLE_ENVELOPE_DISPLAY_ONLY_NOT_FORMAL_PRESSURE_BOUNDS",
+        "schema_version": "candle-region-display-extent/0.1",
+        "selected_source_rows_fingerprint": "sha256:311e9be25b690aeca1cdcfa2e192afaba4590fee10c9c6e67d78b7f4bc57532f",
+        "uncertain_start_month": "2023-09",
+        "volume": {
+          "completeness": "COMPLETE_SOURCE_ROWS",
+          "known_max_dates": [
+            "2023-10-18"
+          ],
+          "known_max_volume_shares_scaled": "110992007",
+          "known_records": 97,
+          "max_volume_shares_scaled": "110992007",
+          "missing_dates": [],
+          "qualification": "DISPLAY_HIGHEST_SOURCE_COLUMN_NOT_REGION_TOTAL_OR_STRATEGY_MAXIMUM",
+          "true_zero_dates": []
+        }
+      },
+      "G2": {
+        "first_index": 309,
+        "first_source_date": "2023-01-16",
+        "formal_bar_membership": null,
+        "formal_price_bounds": null,
+        "formal_volume_measure": null,
+        "included_source_bars": 136,
+        "last_index": 444,
+        "last_source_date": "2023-08-16",
+        "left_edge": "EXACT_INCLUDED_SOURCE_DAY",
+        "price": {
+          "axis_effect": "NONE",
+          "basis": "FULL_SELECTED_SOURCE_WICKS_NOT_VISIBLE_SUBWINDOW",
+          "high": "40.25",
+          "high_dates": [
+            "2023-05-02"
+          ],
+          "low": "35.90",
+          "low_dates": [
+            "2023-01-17"
+          ]
+        },
+        "qualification": "SELECTED_SOURCE_CANDLE_ENVELOPE_DISPLAY_ONLY_NOT_FORMAL_PRESSURE_BOUNDS",
+        "schema_version": "candle-region-display-extent/0.1",
+        "selected_source_rows_fingerprint": "sha256:0141b2507550525246f3dab80f0833a76deb8db4ccd5aaa308323faa969d3132",
+        "uncertain_start_month": null,
+        "volume": {
+          "completeness": "COMPLETE_SOURCE_ROWS",
+          "known_max_dates": [
+            "2023-04-24"
+          ],
+          "known_max_volume_shares_scaled": "82247780",
+          "known_records": 136,
+          "max_volume_shares_scaled": "82247780",
+          "missing_dates": [],
+          "qualification": "DISPLAY_HIGHEST_SOURCE_COLUMN_NOT_REGION_TOTAL_OR_STRATEGY_MAXIMUM",
+          "true_zero_dates": []
+        }
+      }
+    },
+    "formal_price_bounds": null,
+    "frame_id": "sha256:b7215491c924570f3b40594fbd859f4b5c2532b247b62b6e625a8fcb66964f70",
+    "review_sources": {
+      "g1": {
+        "path": "docs/visual-discussion/20261018_g1_region_review/user_review.json",
+        "sha256": "df6d0668bd0a2b7a20ad1f7a02db7829b00823504e0375aab6745dbf4c73e21c"
+      },
+      "g1_facts": {
+        "path": "docs/visual-discussion/20261018_g1_region_review/g1_region_review_facts.json",
+        "sha256": "470be7d0a0d608ecc9d7b8177ae2b583b00cc16b071216dfd0560bb631fd39f6"
+      },
+      "g2": {
+        "path": "docs/visual-discussion/20261018_g2_endpoints/user_review.json",
+        "sha256": "9ff93bec1129500eec8cc03663925f63a63f11229d5995681a091048d09382b5"
+      },
+      "g2_verification": {
+        "path": "docs/visual-discussion/20261018_g2_endpoints/endpoint_source_verification.json",
+        "sha256": "2c9adb690f1b2cffc05074b220cb21e14a925a7dbdd1743e41f2728c62d4a759"
+      }
+    },
+    "schema_version": "manual-candle-region-display-layer/0.1",
+    "source_id": "sha256:adea7f78a97d18b6b51fbba103e08c0db33dc6fb1eb613b960b0aabe213b534b",
+    "total_volume": null
+  },
+  "selection_oracles": 50,
+  "g2_endpoint_fields_verified": 10,
+  "g1_exact_start": null,
+  "region_price_bounds": null,
+  "region_volume_rule": null,
+  "review_sources": {
+    "g1": {
+      "path": "docs/visual-discussion/20261018_g1_region_review/user_review.json",
+      "sha256": "df6d0668bd0a2b7a20ad1f7a02db7829b00823504e0375aab6745dbf4c73e21c"
+    },
+    "g1_facts": {
+      "path": "docs/visual-discussion/20261018_g1_region_review/g1_region_review_facts.json",
+      "sha256": "470be7d0a0d608ecc9d7b8177ae2b583b00cc16b071216dfd0560bb631fd39f6"
+    },
+    "g2": {
+      "path": "docs/visual-discussion/20261018_g2_endpoints/user_review.json",
+      "sha256": "9ff93bec1129500eec8cc03663925f63a63f11229d5995681a091048d09382b5"
+    },
+    "g2_verification": {
+      "path": "docs/visual-discussion/20261018_g2_endpoints/endpoint_source_verification.json",
+      "sha256": "2c9adb690f1b2cffc05074b220cb21e14a925a7dbdd1743e41f2728c62d4a759"
+    }
+  }
+}

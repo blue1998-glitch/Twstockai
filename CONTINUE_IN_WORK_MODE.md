@@ -1,3 +1,17 @@
+# K線範圍外框0.4已交付；Work只驗新外框差異（2026-10-19 Codex）
+
+從指定570bfd4a4e99f5672a1666d28b6541a150b55dd6接續，新增獨立`candle_region_chart/`／`candle-region-chart-view/0.4`，原0.1／0.2／0.3與所有來源、引擎、庫、歷史、人工原JSON及手機證據保留。**G2日期不變：2023-01-16～2023-08-16含136筆，僅將完整選段影線35.90～40.25作顯示外包框；正式price_bounds仍null。** 量框獨立在volume pane，不跨MACD。G1九月近似起緣虛線／左邊未閉合，精確起日未知；C後開放參照、終點未定。全選段extent在縮放／平移時固定，只裁切，不拉伸價軸、不把畫外框線貼邊。不是批准正式價格區界、自動分區或量口徑。
+
+[0.4小ZIP／HTML／SHA／遠端收據／完整Work指令](deliveries/m1-v019-candle-regions-v04-20261019/README.md)；[實作與重現](股票系統M1_v0_18/candle_region_chart/README.md)；[本輪實測及修正前後畫面](股票系統M1_v0_18/candle_region_chart/validation_20261019/驗收報告.md)。主JSON新schema manual-region-chart-selection/0.2增region_display，原人工層與數值精度保持；查詢／移圖、逐日OHLCV、分析日、草稿、原代表點／①④／G3五日與軸內外標籤皆回歸。缺量不造0或假框，真0獨立保留；區域不改MACD與pane間隙像素。
+
+本輪實際15定向Python及完整398 PASS；最終HTML真實Chromium208 HTTP／44標籤／55區域操作／32外框PASS；244源檔／4854新Raw+1490原frame／50oracle、凍結0.3、ZIP CRC／SHA核對。不是搬前輪383／208／44／55代填；新報告均對本版HTML SHA。測試匯入首次失敗及修正已保存。整體HTTP runner仍PASS_WITH_KNOWN_BLOCKER，原file://管理政策阻礙未重試／未繞過。
+
+**0.4 Android NOT_TESTED_NEW_BUILD**；0.3-family兩張原圖仍PARTIAL_EVIDENCE_OBSERVED_VERSION_UNCONFIRMED，0.2舊部分證據亦保留，不重索相同圖／JSON。下一步**Work只驗新外框呈現差異**，先讀交付WORK_HANDOFF.md全文；來源及版號辨識自然隨新版本補，不重開整套舊功能驗收。只在確實驗手機新下載時收本版新JSON；可重現工程問題再回Codex，附完整指令。
+
+核心用途NOT_ESTABLISHED、NOT_VALIDATED／NOT_EVALUATED維持。G1精確起日／價格區界／整區量／增量／量口徑／自動分區選關／強度衰減／生命階段未知；Raw完整公司行動／五年Adjusted／歷史公布可得、原資料缺口、Darvas未完整讀、SQLite根因未知保持。沒有改main、策略、原庫、歷史或舊頁，無部署／付費／交易／訊息／子代理。未測不標完成。
+
+---
+
 # 08:51新圖已讀；價量帶須貼合K線範圍，交Codex修正（2026-10-19 Work）
 
 使用者明確要求標示真實K線範圍，拒絕將整個圖垂直空間框滿。兩張新圖已實讀並原位元組保存：[直接觀察／未測／來源核對](股票系統M1_v0_18/region_chart/validation_android_20261019/evidence-0851.md)。G2 1/16～8/16、40.25點／線與貫穿K量MACD底色直接可見；另一張是C後終點未定證據，**不是G2端點面板**。0.3-family改為PARTIAL_EVIDENCE_OBSERVED_VERSION_UNCONFIRMED；頁頂版號、1101代碼未入鏡、無新JSON／操作序列，端點／返回24月／手勢／橫向／草稿仍未測，不把新圖當全通過。

@@ -1,3 +1,15 @@
+# 0.4貼合K線修正已實作（2026-10-19 Codex最新）
+
+狀態IMPLEMENTED_DEFINED_RENDERING_SCOPE；下方READY_FOR_IMPLEMENTATION為原Work交接歷史。從指定570bfd4接續，獨立candle-region-chart-view/0.4，沒有覆寫原0.3／案例／來源／歷史。G2精確日期、136筆及影線35.90～40.25核實，量圖最高來源柱82,247,780股另框；這些只作display geometry，formal price_bounds／volume_measure保持null。G1九月近似錨以虛線未閉合左緣顯示，精確起日仍null；C後無封閉外框／固定終點。影線與量柱範圍只在各自pane裁切，不跨MACD、不拉伸價軸、不以可見子窗重算。
+
+[新成品／SHA／ZIP／遠端下載核對／完整Work指令](deliveries/m1-v019-candle-regions-v04-20261019/README.md)；[實作契約與重現](股票系統M1_v0_18/candle_region_chart/README.md)；[本輪實測／前後原尺寸畫面／失敗及未測](股票系統M1_v0_18/candle_region_chart/validation_20261019/驗收報告.md)。主下載schema manual-region-chart-selection/0.2另加region_display；原manual_regions／manual_hurdles、OHLCV、SMA／MACD及其他舊欄位值不變。指紋、代表點、同步查詢／移圖、分析日／前綴、草稿與軸內外提示已回歸。
+
+本輪實際398 Python（含15新外框資料測試）、真實Chromium208 HTTP／44標籤／55操作／32外框均PASS；既有file://政策阻礙照記未重試，HTTP不是全環境或Android通過。244源檔／4854新Raw及1490原frame、50oracle與凍結0.3全欄位核對、ZIP CRC及逐檔SHA已實測。最初測試匯入順序失敗保留，修正後通過；沒有策略／資料錯誤證據或新增門檻。
+
+**新0.4 Android NOT_TESTED_NEW_BUILD**；0.3-family兩張原圖與不確定身份紀錄保留，不重索；0.2原部分證據保留。下一步Work只驗新版影線外包、量框分離、MACD無區域填色、縮放裁切不假貼邊的差異。不是重新驗整套手勢／草稿；只有必要手機新下載精度驗證才收本版新JSON。Core用途NOT_ESTABLISHED、策略／來源／Raw公司行動／Adjusted／歷史／缺口／SQLite與Darvas限制不變。不改main、部署、付費、交易、發訊息或啟動子代理。
+
+---
+
 # 價量區域貼合真實K線範圍：Codex修正交接（2026-10-19）
 
 狀態READY_FOR_IMPLEMENTATION；本輪Work尚未改產品。沿blue1998-glitch/Twstockai、dev/m1-v018-chart-annotations；目前讀取基線996dbdec068918cf81b344234c12d77082a2750a，須保留本檔之後所有成果。原0.3成品31d80971b265942eb3d7573fddf00f6782f20a55不覆寫。
