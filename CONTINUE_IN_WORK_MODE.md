@@ -1,3 +1,9 @@
+# 最新：圖形辨識核心續接受環境準備阻擋（2026-10-19）
+
+使用者要求完成最重要的圖形系統。已實讀既有structure／attempt_evidence／MACD數值源碼，確認自動跨尺度箱型與重要壓力階層尚缺；沒有新增核心。本環境無Git checkout，原bootstrap在隔離恢復暫存實跑exit2：PREPARATION_FAILED，缺M1_v0_17_01.zip；GitHub文字可讀、binary取回失敗。依AGENTS準備規則停止產品修改，僅保存錯誤與接續紀錄。不是852檔準備成功，無新Python／Chromium／Android或核心認可。保留圖片庫首輪成果、所有歷史案例及未知，不重讀101圖。下一步Codex在完整checkout準備成功後做獨立純數值辨識核心；[完整接續指令與實讀缺口](M1_V019_GRAPH_CORE_RESUME_HANDOFF.md)，[環境證據](docs/core-recognition/20261019_resume/environment_report.json)。
+
+---
+
 # 最新：Drive圖形學習第一批與額度中斷續接（2026-10-19 Work）
 
 使用者授權以過往教學圖片建立圖形辨識基礎，並要求從已確認節點續接、不要重做。101原PNG／279,350,101 bytes已讀且核大小/解碼/SHA；去重91張、10相同副本；91首輪視覺判讀、13單張原圖或原尺寸裁切複讀，另5組主教材近重複。續接保留全部既有判讀，未重下載或重讀原101圖。完整私人案例庫/來源索引/報告/可搜尋索引及可恢復ZIP存回同帳號未分享Drive資料夾；Git只存通用契約/驗證與交接，不含私人原圖、來源連結或逐圖內容。讀[M1_V019_IMAGE_LEARNING_HANDOFF.md](M1_V019_IMAGE_LEARNING_HANDOFF.md)及[本輪入口](docs/visual-learning/20261019_drive_intake/README.md)。
