@@ -1,3 +1,13 @@
+# 0.3 Work驗收已啟動；下載原檔已核，手機差異仍未測（2026-10-19）
+
+Work已核分支包含交接c96195b及成品31d8097，依序實讀指定文件及完整WORK_HANDOFF。實際從固定成品提交下載小ZIP，ZIP／HTML SHA、CRC、內部SHA與7成員均相符；源檔標頭實際「M1 價量區域主圖 0.3」（版號前有空格）。[本輪紀錄與分項台帳](股票系統M1_v0_18/region_chart/validation_android_20261019/README.md)／[本輪下載核對](股票系統M1_v0_18/region_chart/validation_android_20261019/download-verification.json)。
+
+**0.3 Android仍NOT_TESTED_NEW_BUILD**：尚無本版手機新圖／回報／JSON，G2、G1、查詢移圖、跨休市逐根及草稿全部NOT_TESTED，沒有手機BLOCKED新回報。原0.2 PARTIAL_EVIDENCE_OBSERVED保留，不重索相同舊檔。先前383 Python／208 HTTP／44標籤／55區域為Codex實測，本輪未重跑，沒有瀏覽器執行；舊file://拒絕不重試、不繞過。
+
+下一步仍同一**Work**：引導下載固定ZIP、解壓開新版，先收G2主圖與區域證據的少量新畫面／實際回報，再按完整WORK_HANDOFF B～E逐項接續。未測不得改成功；核心用途與所有未定規則／Raw／來源／SQLite限制保持。不改main或產品來源，無部署／付費／交易／訊息／子代理。
+
+---
+
 # 人工價量時間區域主圖0.3已接入；下一步Work只驗新版差異（2026-10-18 Codex）
 
 本輪從7569d12b249080d305f2cf0dbd36b35485785bfb接續，新增獨立`region_chart/`與`manual-region-chart-view/0.3`，原0.1／0.2、人工原JSON、Android證據、數值引擎／策略／庫／歷史保留。**G2精確2023-01-16～2023-08-16已接入，5/2高40.25不變，不再追問；G1約2023年9月→C，精確起日仍null。** 價格區界、整區量／量口徑、自動分區／選關、增量、強度／衰減及生命階段未定，沒有新增策略門檻。

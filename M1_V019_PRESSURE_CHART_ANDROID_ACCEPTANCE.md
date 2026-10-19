@@ -1,3 +1,11 @@
+# 2026-10-19 Work：0.3驗收啟動，手機仍未測
+
+已實讀交接／完整分項指令並重新下載核ZIP／HTML SHA、CRC與內部7成員，直接源碼標頭為「M1 價量區域主圖 0.3」。這是FILE_VERIFIED，**不是Android OBSERVED**。[本輪分項台帳](股票系統M1_v0_18/region_chart/validation_android_20261019/README.md)。
+
+0.3 Android仍NOT_TESTED_NEW_BUILD；身份開檔、G2、G1、查詢與移圖／直橫、跨休市及草稿均NOT_TESTED，尚無新使用者手機回報／原圖／JSON或手機BLOCKED。舊0.2部分證據及收束狀態保留，不重索相同舊檔。先收G2新版主圖與證據，再逐項接續；原file://阻擋不重試、不繞過。核心與來源／SQLite等限制不變；本輪沒有重跑產品Python／Chromium或改成品。
+
+---
+
 # 0.3人工時間區域新主圖：NOT_TESTED_NEW_BUILD（2026-10-18 Codex）
 
 新頁manual-region-chart-view/0.3，HTML `M1_v0_19_manual_regions_v03.html`；[成品／完整新版差異驗收指令](deliveries/m1-v019-manual-regions-v03-20261018/README.md)。新增G1約九月→C、G2精確1/16～8/16時間帶、拖曳查詢／移圖分開、逐交易日完整OHLCV及獨立草稿匯出。沒有本版Android原圖／操作回報／新JSON，不能從雲端Chromium補為手機成功。UI接入也不是核心用途認可。
