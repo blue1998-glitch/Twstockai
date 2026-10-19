@@ -1,3 +1,9 @@
+# 最新：代表5/13已答，主要壓力帶層級需修正
+
+16:55使用者選5/13／31.40，同時指出2023年6月～2025年4月有更大壓力帶，局部小箱選點沒有主要用途。原問題已答不再問；此點只保留局部角色，不能冒稱主關卡／核心用途已認可。讀[review_resolution.json](review_resolution.json)及[新主帶紀錄](../20261019_major_pressure_hierarchy/README.md)。原pending／查詢圖／測試如下保留為歷史，不再當作待選代表的最新任務。
+
+---
+
 # 前箱價峰與量峰分離：代表點判讀
 
 使用者16:44要求下一步。已確認的前箱2025-04-07～06-02含兩端39筆、6/3在外、1/27優先理由與0.4.3樣式收束保持，不重問。這次只處理整箱代表點選法的實際歧義，沒有任意拆小或新增箱界。
@@ -31,3 +37,4 @@ build.py以--template指前輪reviewed_1635/discussion_fragment.html可重建，
 正式區界、整區量口徑／增量、強度衰減／生命階段、自動選箱／選關與Raw公司行動／五年Adjusted／歷史公布可得／原資料缺口／Darvas正文未完整讀／SQLite根因未知保持。核心NOT_ESTABLISHED、分類NOT_VALIDATED、行動NOT_EVALUATED。保留原引擎策略／庫／歷史／舊頁／來源案例證據與main，不部署付費交易訊息子代理；GitHub核對收據在讀回後另存。
 
 固定本輪討論成品：8a85d05a6d2046dd6072d22b7de259f4ff97db45。12文字及4PNG已由GitHub connector從固定提交精確讀回，文字／影像原始位元組相同，見[GITHUB_READBACK.json](GITHUB_READBACK.json)。收據、本README追加及交接是核對後另存提交；不宣稱收據包含在被核對成品，不代表代表點／策略／Android已批准。
+

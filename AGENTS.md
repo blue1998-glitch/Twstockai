@@ -1,3 +1,13 @@
+# 最新：5/13局部代表已答，主要壓力帶層級更正（2026-10-19 16:55 Work）
+
+使用者原話「選5/13但是這一樣沒有什麼意義，因為2023年6月到2025年4月有更大的壓力帶」。實讀[docs/visual-discussion/20261019_major_pressure_hierarchy/user_review.json](docs/visual-discussion/20261019_major_pressure_hierarchy/user_review.json)、README.md及M1_V019_PREVIOUS_BOX_PRESSURE_HANDOFF.md最新節。5/13／31.40已確定為2025/4/7～6/2／39筆局部箱代表，**不等於主壓力或用途認可**；原代表問題已答不再問。重點轉為已存現價由右回看跨尺度主要壓力，不沿最近小箱逐一選點就當分析完成。此例長期帶比小箱重要，不能推較舊／較大或量總和永遠勝出的通則。
+
+主帶時間僅2023-06～2025-04月份精度；精確起終／正式價格界線／整區量／主帶代表／重要性算法仍null。不追月初月底日期作前置，不將完整月份讀圖463根、Raw外包28.45～39.25認成正式箱成員或界線；兩邊月份漸淡。原G1=2023/11/28／35.50與2025/3/12高35.45只作真實參照，不自動升格整個主帶唯一代表或認證Raw共同校正壓力。原1/27、6/3歸屬、①④／G2／G3和0.4.3樣式收束保持，不索舊原圖JSON。
+
+新獨立可放大圖以主帶為主、小箱為次級，可看長期493筆／同看已存現價820筆／局部／近期，K量同步，原1213筆/source/frame/basis與分析日10/16收27.30不改，非即時今日。本輪實際新Chromium133 HTTP20項PASS／四寬／4PNG，原像素offset oracle首敗與完整修正重跑保留；圖與來源未改、0.1px容差未放寬。父圖及舊全Python／產品回歸未重跑；非Android／宿主／用戶CDN或核心用途通過，file://阻擋未重試未繞過。下一步仍Work優先主帶反覆價量結構與階層，不重問已答小箱代表。保留main、原引擎策略／庫／歷史／舊頁／來源案例證據及所有策略／Raw／Adjusted／歷史可得／資料缺口／Darvas正文／SQLite未知和核心NOT_ESTABLISHED／NOT_VALIDATED／NOT_EVALUATED，不部署付費交易訊息子代理。
+
+---
+
 # 最新：前箱價峰／量峰分離，待有意義代表點判讀（2026-10-19 Work）
 
 前箱精確2025-04-07～06-02／39筆已核，不再追問日期。新可放大對話圖見[docs/visual-discussion/20261019_previous_box_representative/README.md](docs/visual-discussion/20261019_previous_box_representative/README.md)，同一45筆閱讀窗可按4/7量峰、5/13價峰、6/2區間末讀真實OHLCV，這些只查詢、不選定案例代表；預設5/13也不是答案。4/7高30.80／量118,749,437、5/13高31.40／量10,264,322、6/2高29.05／量93,266,178，量峰／價峰不同；11.57倍只是描述比，不是權重或門檻。
@@ -155,6 +165,7 @@ The current Work Mode entry point is `CONTINUE_IN_WORK_MODE.md`. Update it when 
 The new offline candidate builder is an explicit separate producer, not a change to the old read-only exporter. It may project new candidate OHLC with the existing helper and calculate separately versioned MACD; label these new outputs, never pretend they existed in old adjusted snapshots. Browser code only renders the results. Preserve every original schema, engine, strategy threshold and store. Next core questions have concrete saved examples in M1_V019_CORE_RULE_DECISIONS.md.
 
 After the initial import, Git contains editable v0.18 source but omits historical data/build outputs. On an existing or fresh source checkout use `python3 codex/bootstrap_m1.py --hydrate-missing` to verify a private baseline and restore missing assets only. It reports and preserves differing source files; it does not certify them against the historical manifest. The default command remains a strict baseline check and must not be used to overwrite development changes. Read `股票系統M1_v0_18/docs/結構標記顯示契約.md` and the latest acceptance report for the saved-evidence annotation page. Do not calculate new strategy states from example images.
+
 
 
 
