@@ -1,3 +1,15 @@
+# 最新：多參照反應事實附層已實作（2026-10-20 Codex）
+
+接續c871eeb；本環境重新bootstrap --hydrate-missing成功，0補檔／7差異保留。新增reaction_facts獨立純數值附層／來源adapter／CLI／完整精度JSON，不改已完成主圖或原core／schema／策略。重用原number／fingerprint／ratio，補多參照close/high/low三態、精確差值、實體與前收方向、相鄰Raw幾何、前保存量分母窗口、原MACD及全部轉換；來源可知、原確認與後來實際選取分開，historical_signal_eligible=false。新1213筆／4明示來源／49分欄位轉換或分段索引，不是49交易訊號或型態。
+
+[成品／來源／實測／完整Work指令](deliveries/m1-v019-reaction-facts-20261020/README.md)。新22 Python契約測試PASS，含真實九筆oracle、前綴／追加改未來、未可知／延後可知、相等精度、缺漏零分母、來源基底frame拒絕、完整路徑、CLI精確JSON／竄改拒絕及ZIP。原固定診斷ZIP重新核CRC／SHA，原bars／量／MACD／SMA／source／basis／完整core與manual audit全等。新資料ZIP965955 bytes、6成員CRC／bytes／SHA已核。初例檔同價＋同確認日各找到2來源而斷言停止，連帶缺selection錯誤保存；改用原明示B77／B88圖層ID，不任選或調參。GitHub逐檔回讀另有後續收據。
+
+本輪無UI變更，無新瀏覽器／觸控／Android測試，不沿用舊7／47或35／60作通過。原2155追蹤檔在交接更新前全未改，現在只於3根交接前加最新節；核心參數策略／庫／歷史／舊頁／來源案例證據／main保留。Android NOT_TESTED_NEW_BUILD、file://不重試不繞過。primary_pressure_id=null與整體解除／有效突破未知；全部正式區界／量口徑增量權重／強度衰減重要性／合併直接承接／生命階段及Raw公司行動／五年Adjusted／歷史公布可得／9待核日期非窮盡日曆／Darvas／SQLite未知不變。核心NOT_ESTABLISHED、分類NOT_VALIDATED、行動NOT_EVALUATED。
+
+下一步Work配合原真實圖讀新多參照事實，研究局部與整體壓力關係；已確認分別判斷原則及舊案例不重問。這不是主壓力自動辨識或交易價值通過，不寫死人工日期／價位、不調參新增選關／解除／買賣規則。新策略仍回Work，以具體圖釐清；不重讀101圖／0.4.3或舊手機驗收。不部署付費交易訊息子代理；結束必附最新已核SHA及完整可貼續接。
+
+---
+
 # 最新：多參照反應事實層已備妥有限工程交接（2026-10-20 Work）
 
 [新真實圖／原值／完整有限契約／可貼Codex指令](docs/visual-discussion/20261020_reaction_facts_contract/README.md)。接續c0d0630；使用者已確認局部事件與整體解除分別判斷，不重問。本輪繼續授權不是新策略核准。5/19跌回後20／21再站30.05上但高仍低於5/14的30.50，22又跌回；5/14本身紅K卻較前收跌0.75，原股數比前筆約3.28僅描述。10/16高低雙端上移，收27.30高於26.95但低於10/14高27.40；日高27.70不等收盤越27.40，低26.95相等不證日內回測。
