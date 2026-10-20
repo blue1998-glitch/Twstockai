@@ -1,3 +1,7 @@
+> 最新更正（2026-10-20 16:42）：使用者拒絕此小窗作分析依據，指出11/25價量未過、非關鍵點。前述一月三選一已撤回 WITHDRAWN_RESEARCH_WINDOW_INSUFFICIENT，不是選第三項，不再待答。本頁下方保留歷史；最新以[廣角研究與使用者更正](../20261020_broad_context_correction/README.md)及[完整續接](../20261020_broad_context_correction/WORK_HANDOFF.md)為準。
+
+---
+
 請接續股票系統M1，在Work研究正式整體歸屬。本輪新增「2025年1月B74→B76跌到舊研究下緣以下再回升」的具體局部圖，待使用者判讀結構延續／向下擴張、另成新段或證據不足；不是調降舊整體重要性或正式解除。使用者只說下一步，尚未裁決，不當批准。共享交界舊問題亦PENDING，不重問。
 
 儲存庫blue1998-glitch/Twstockai，分支dev/m1-v018-chart-annotations；本輪起點37194f7f9ff5e96cdfbc1914841607496627246e，研究提交見本目錄GITHUB_READBACK.json，收據另回讀；最新以實際HEAD為準。先確認包含此起點及e0bd48c9245c877fda8ebca5598f69ff346a99cb、e45d972406cc6a4ef1a9babf1ba9865d97073096與fff47915523fab8c8de8279de8bbb7a26b05647b，若有更新先讀交接保留全部成果，不用main／舊ZIP覆蓋。不能讀GitHub明說未取得，不假設已讀。
