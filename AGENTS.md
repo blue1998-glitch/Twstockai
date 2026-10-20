@@ -1,3 +1,9 @@
+## 2026-10-20 最新：自動觀察起點候選研究，正式終點仍未定
+
+入口 `docs/visual-discussion/20261020_observation_start_proposals_work_review/README.md`；兩頁新可放大PDF、兩PNG、proposals／summary／verification／manual-qa、完整WORK_HANDOFF與回讀收據同目錄。原三頁不重做。新純研究函數只接受來源／截止日，不輸入目標起日／長度／標籤。比較反向價格外包擴張（舊K及下一筆）、收盤轉折平台與共同價位短尾窗；不改原核心2高2低／3、6、12%。2884截至10/7可用223筆，外包66候選含9/17、收盤111、共同價位僅10/5起3筆；ABC截至6/2可用139筆，外包25含4/7與5/13，收盤67但漏5/13影線代表，共同短窗5/28起3筆。這些是多個觀察種子，不是正式起點命中／整理分類／主壓力或交易資格。4/7在5/14內部跳空後仍保留；但到6/3仍有4/7至6/3的40筆觀察提案，與原39筆成員不同，終點限制已展示未修好。6/2／6/3提案各別保存，不能直接正式延伸。下一步Work研究停止／保留／後續候選，同時保留6/2創低仍在內、6/3在外與內部跳空不強切；不重問已答或硬編通用切段。保守可用段依已列缺日隔離資料疑點，非市場真起點，較早舊帶背景仍在。實際生成1次5截止，驗證1次含五案獨立幾何、未來污染／截斷、正仿射價格、合成平台與362逐截止相等；非分類準確率或獨立樣本。圖3次嘗試首語法錯無PDF，後兩次成功，最終2頁渲染實看。無原核心指標／adapter CLI／bootstrap／舊測試／瀏覽器Android。Android NOT_TESTED_NEW_BUILD、分類NOT_VALIDATED、用途NOT_ESTABLISHED、行動NOT_EVALUATED，歷史選取null／historical_signal_eligible=false／primary_pressure_id=null。原正式未知／來源限制／所有已答沿完整前鏈；保留main與全成果，不部署付費交易訊息子代理。
+
+---
+
 ## 2026-10-20 最新：區間形成的價格停留／方向／末端證據研究
 
 入口 `docs/visual-discussion/20261020_formation_features_work_review/README.md`，三頁可放大PDF與三PNG、hypotheses／evidence／control-scan／verification／manual-qa、完整WORK_HANDOFF及回讀收據同目錄。本輪唯讀計算2884截至10/7原1207筆；9/17至10/7的13筆僅研究窗非正式起末。枚舉1195窗、原已列缺日跨窗排除72、計算1123、淨下且全相鄰重疊128；按位移比最大選4/15至5/4作事後方向對照，非盲測／歷史訊號／獨立樣本／負例。A/B皆12/12重疊與9/13涵蓋，末端路徑不同；完整3至13尾段保存，無門檻／權重。ABC原39含6/2窗低27.65收27.70，自己的區間與末端轉弱並存，不能用不創低當所有區間必要條件；6/3在外等已答保持，不重問。區間存在、回穩轉強及逐參照反應分判；幾何涵蓋非成交分價／籌碼，B標籤null。下一步Work研究如何截止當下自動提出有意義起點／範圍，不能人工先指定13筆就冒稱找到整理。新研究程式非產品分類器，不改原2高2低及3／6／12%；10/7無原快照仍null。實際research.py7次、獨立核24組與ABC39，verify_evidence.py3次、最終三頁渲染實看及人工QA指紋綁定；PDF產檔錯誤與修復記WORK_LOG，根因未確定。無原核心指標／adapter CLI／bootstrap／舊產品測試／新瀏覽器Android；Android NOT_TESTED_NEW_BUILD、分類NOT_VALIDATED、用途NOT_ESTABLISHED、行動NOT_EVALUATED。原正式未知及來源限制全部保持，primary_pressure_id=null、歷史選取null／historical_signal_eligible=false；不部署付費交易訊息子代理。下列為歷史，各批實測不得當本批重跑。
