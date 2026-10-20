@@ -1,3 +1,9 @@
+# 最新裁決（2026-10-20 21:46:37 台北）
+
+使用者對第2頁截至10/7是否已足夠辨認整理，回答「足夠辨認了」。USER_CONFIRMED_DO_NOT_REASK；[裁決及完整續接](../20261020_recognition_timing_user_decision/README.md)。下方問題與timing-evidence／verification是生成當時歷史快照，已由新裁決取代；原圖不重畫。10/7非已定最早日，無原核心快照資格不變，historical_signal_eligible=false、primary_pressure_id=null。
+
+---
+
 # 2884 整理辨認時點｜Work 真實截點圖
 
 本批承接使用者已確認的「上漲中短暫回來整理，後來再漲」，不重問本例是否整理。新問題只研究較早截點是否已有足夠資訊辨認；尚無答案，不把後來標籤倒填歷史。
@@ -15,3 +21,4 @@
 沒有產品修改、reaction或source-query重做、CLI／adapter／bootstrap／14或22或60等舊測試、新行情、ZIP、瀏覽器或Android驗收。Android NOT_TESTED_NEW_BUILD，file://不重試不繞過。Raw公司行動／五年Adjusted／歷史公開可得／九待核非窮盡日曆／Darvas／SQLite未知；正式成員區界代表、增量量權重、重要性衰減、合併直接承接、解除生命階段未知。相等不補過破、OHLC不證日內先後、不同窗不排名。
 
 仍在Work研究辨認時點，不交Codex實作未定算法。完整續接見[WORK_HANDOFF.md](WORK_HANDOFF.md)；逐檔GitHub精確回讀及研究提交見GITHUB_READBACK.json，收據提交亦另回讀。原核心參數策略庫歷史舊頁案例及main保留。
+

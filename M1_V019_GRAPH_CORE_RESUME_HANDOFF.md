@@ -1,3 +1,9 @@
+## 2026-10-20 21:46 最新裁決：截至10/7已可辨認整理
+
+使用者直接回答「足夠辨認了」，對應2884截點圖第2頁截至2026/10/7。USER_CONFIRMED_DO_NOT_REASK；完整走勢整理及10/7截點足夠皆已定，前題關閉。入口 `docs/visual-discussion/20261020_recognition_timing_user_decision/README.md`，原話與範圍user-decision.json、實際verification／GITHUB_READBACK及完整WORK_HANDOFF同目錄。原圖不重畫，舊pending已resolved、舊README加新裁決；舊證據／QA維持歷史快照。本例不必等待10/15上漲才給整理描述；不指定最早成立日／正式起末區界或新通用門檻，10/14未另裁決留null而不重問10/7。回顧截點非盲測，10/7無原保存核心／numeric_frame仍null，historical_selection_time=null／historical_signal_eligible=false／primary_pressure_id=null。實際audit.py一次唯讀核原SHA及1207筆前綴與末K原指標、原話範圍，不重算核心MACD或跑舊測試，不重畫PDF／新瀏覽器ZIPAndroid；Android NOT_TESTED_NEW_BUILD，file://不重試不繞過。原參數、所有已答案例與正式未知／來源限制保持，仍Work整理當前形態與後續反應分開的有限需求，不硬編案例或交Codex未定算法。不部署付費交易訊息子代理。以下為歷史，舊PENDING由新裁決取代，前輪執行不算本次重跑。
+
+---
+
 ## 2026-10-20 最新續接：2884 整理辨認時點真實截點圖
 
 入口 `docs/visual-discussion/20261020_interval_recognition_timing_work_review/README.md`，全文續接及實際執行／限制見同目錄WORK_HANDOFF.md、verification.json及GITHUB_READBACK.json。起點7a5cc315b7f8e98607027ef5d5a83dc79844accd，全成果保留。三頁新可放大截點PDF：五年背景至10/7、近期至10/7與至10/14。原1207／1211筆；10/7沒有獨立保存核心快照／numeric_frame，僅截原價量保存指標，不補造；10/14原結果讀取未重算。原完整走勢整理標籤USER_CONFIRMED不重問；新問題只問截至10/7是否足以辨認，PENDING_USER_REVIEW，較晚10/14供對照。不要求精確起日或正式區界，下一步不算答案。事後看過後續的截點複核非盲測非歷史選取，historical_selection_time=null、historical_signal_eligible=false、primary_pressure_id=null。build_review.py一次，原SHA／包指紋／來源全等、截點無未來列、10/14原結果指紋核同；新三頁逐頁實看與400%裁片，未重算核心MA MACD、未跑舊測試或adapter CLI、ZIP瀏覽器Android。Android NOT_TESTED_NEW_BUILD；file://不重試不繞過。其他正式未知、全部原使用者裁決與來源限制沿用。仍Work，已定規則或可重現工程缺陷才Codex；不部署付費交易訊息子代理。下列為歷史紀錄，不代表本批重跑。
@@ -471,4 +477,5 @@ graph_core_chart獨立主圖可縮放／移圖／逐真實交易日查詢，K量
 
 一般可逆工作直接做；不改main、不部署付費交易發訊息、不啟動子代理。完成源碼、成品、可重現測試、錯誤與限制、最新接續入口保存此分支並逐檔GitHub回讀確認。結束列實際完成／未完成、入口、提交與下一步Work或Codex。
 ```
+
 

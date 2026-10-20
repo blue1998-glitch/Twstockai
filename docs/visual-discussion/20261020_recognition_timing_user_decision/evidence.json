@@ -1,0 +1,50 @@
+{
+  "schema": "m1-human-prefix-positive-evidence/1",
+  "label": {
+    "sufficient": true,
+    "source": "USER_CONFIRMED"
+  },
+  "cutoff": "2026-10-07",
+  "source_records": 1207,
+  "current_user_decision_at": "2026-10-20T21:46:37+08:00",
+  "current_user_quote": "足夠辨認了",
+  "last_original_bar": {
+    "close": "45.75",
+    "date": "2026-10-07",
+    "high": "45.85",
+    "low": "45.40",
+    "open": "45.60",
+    "volume_shares_scaled": "11827886"
+  },
+  "last_original_saved_macd": {
+    "dea": "1.4529531263317395928363004962618726724141537911009",
+    "dif": "1.109302153851743977627000727259656573761468140536",
+    "histogram": "-0.6873019449599912304185995380044321973053713011298",
+    "reason": "AVAILABLE"
+  },
+  "source_values_fingerprint": "sha256:a985e6a5fab8c8df4e13501f3f8fbeb71495f80729b17c2fcc99757c94e752ea",
+  "prior_timing_evidence_sha256": "932951965d74184a8b7e927f402a974cea6689d0998a5e874c45e027ba222e7c",
+  "unchanged_PDF_sha256": "16e7ad3d5b488fb497c3a5dde29730ae2df9266ad43cf65f419c8674441a7414",
+  "source_data_sha256": "ab87a51b5b8afd076603f290b10f415bd60d31ae47c5ab2f6d9d609ad4014901",
+  "saved_core_result_id": null,
+  "saved_numeric_frame_id": null,
+  "coexisting_raw_facts": {
+    "close_below_Sep17_daily_high": true,
+    "reference_bar": {
+      "close": "47.30",
+      "date": "2026-09-17",
+      "high": "47.35",
+      "low": "45.90",
+      "open": "46.10",
+      "volume_shares_scaled": "51011663"
+    },
+    "negative_saved_MACD_histogram": true
+  },
+  "finite_requirement": "This confirmed case can be described as recognizable consolidation before subsequent Oct15 rise; no universal detector or threshold inferred.",
+  "earliest_recognition_date": null,
+  "formal_start_end_bounds_membership": null,
+  "historical_selection_time": null,
+  "historical_signal_eligible": false,
+  "primary_pressure_id": null,
+  "review_qualification": "RETROSPECTIVE_NOT_BLIND_NOT_ORIGINAL_ENGINE_OUTPUT"
+}

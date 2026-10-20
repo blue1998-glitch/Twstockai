@@ -1,18 +1,37 @@
 {
   "schema": "m1-recognition-timing-user-review/1",
-  "status": "PENDING_USER_REVIEW",
-  "answer_received": false,
+  "status": "RESOLVED_USER_CONFIRMED",
+  "answer_received": true,
   "code": "2884",
   "question_zh": "只看截至10/7的資料，是否已足以辨認這個整理區間？還需要10/7以後更多K線才足夠？",
   "visual_entry": "output/pdf/m1-2884-recognition-timing.pdf",
-  "pages": {"long_background": 1, "through_Oct7": 2, "through_Oct14": 3},
+  "pages": {
+    "long_background": 1,
+    "through_Oct7": 2,
+    "through_Oct14": 3
+  },
   "full_chart_consolidation_label": "USER_CONFIRMED_DO_NOT_REASK",
-  "earlier_prefix_sufficiency": {"2026-10-07": null, "2026-10-14": null},
+  "earlier_prefix_sufficiency": {
+    "2026-10-07": true,
+    "2026-10-14": null
+  },
   "review_qualification": "RETROSPECTIVE_TRUNCATED_REVIEW_NOT_BLIND",
   "exact_first_recognition_day": null,
   "formal_bounds": null,
   "historical_selection_time": null,
   "historical_signal_eligible": false,
   "primary_pressure_id": null,
-  "not_implied_by_answer": ["general detector or threshold", "formal membership or bounds", "automatic recognition accuracy", "historical public availability", "actual historical selection or signal", "clearance or lifecycle", "importance weights or trading qualification"]
+  "not_implied_by_answer": [
+    "general detector or threshold",
+    "formal membership or bounds",
+    "automatic recognition accuracy",
+    "historical public availability",
+    "actual historical selection or signal",
+    "clearance or lifecycle",
+    "importance weights or trading qualification"
+  ],
+  "user_quote": "足夠辨認了",
+  "user_time": "2026-10-20T21:46:37+08:00",
+  "resolved_by": "../20261020_recognition_timing_user_decision/user-decision.json"
 }
+
