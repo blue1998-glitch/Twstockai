@@ -1,0 +1,211 @@
+{
+  "schema": "m1-stop-retain-followup-github-readback/1",
+  "repository": "blue1998-glitch/Twstockai",
+  "branch": "dev/m1-v018-chart-annotations",
+  "base_commit": "f34635187baf0efa0c9d66d5884e06b114fd95c7",
+  "research_commit": "93dda6a41b1ee4104679ee7db43c22eb642dc801",
+  "research_tree": "8871870865374e6a7064ff704ae14418161d94be",
+  "result": "PASS_18_PINNED_FILES_EXACT_CONTENT_AND_GIT_BLOB_SHA",
+  "text_files": 13,
+  "binary_files": 5,
+  "binary_check": "Whitespace-normalized base64 exact equality to complete local bytes; Git blob SHA matched independently computed local SHA. Includes full gzip pool, three PNGs and PDF.",
+  "source_policy": "Existing source and prior generator SHA verified; no new market data, original engine recomputation or original product tests.",
+  "readbacks": [
+    {
+      "path": "docs/visual-discussion/20261021_stop_retain_followup_work_review/README.md",
+      "bytes": 5361,
+      "sha256": "69f32613fce9d0e8ba84f5d4ab0fe69d261cbd7704895891b3cee45dc1580054",
+      "git_blob_sha": "11a612810b201a7f5a8cf828cc99716a91467129",
+      "binary": false,
+      "content_match": "EXACT",
+      "remote_blob_sha": "11a612810b201a7f5a8cf828cc99716a91467129",
+      "readback_ref": "93dda6a41b1ee4104679ee7db43c22eb642dc801"
+    },
+    {
+      "path": "docs/visual-discussion/20261021_stop_retain_followup_work_review/WORK_LOG.md",
+      "bytes": 2581,
+      "sha256": "a980e3ec4064d85b900146e50401e2c9e93f0696e6728141fdfc0e7f0919a6bb",
+      "git_blob_sha": "db3ef06c68564431c4a7c32b94b221b9363108cb",
+      "binary": false,
+      "content_match": "EXACT",
+      "remote_blob_sha": "db3ef06c68564431c4a7c32b94b221b9363108cb",
+      "readback_ref": "93dda6a41b1ee4104679ee7db43c22eb642dc801"
+    },
+    {
+      "path": "docs/visual-discussion/20261021_stop_retain_followup_work_review/WORK_HANDOFF.md",
+      "bytes": 7628,
+      "sha256": "9ab4c96784c87b090d612816c919448c55c7783565957ad5bfb02022afab8e02",
+      "git_blob_sha": "1ec1233074f4a17d2c511ce473985c01afcc126a",
+      "binary": false,
+      "content_match": "EXACT",
+      "remote_blob_sha": "1ec1233074f4a17d2c511ce473985c01afcc126a",
+      "readback_ref": "93dda6a41b1ee4104679ee7db43c22eb642dc801"
+    },
+    {
+      "path": "docs/visual-discussion/20261021_stop_retain_followup_work_review/branch_research.py",
+      "bytes": 8330,
+      "sha256": "49ff259bab864f6adf574273fc19fe1da7bee5b2e4e4d00fe2704385615e3d4d",
+      "git_blob_sha": "1da0e5b514bc84ca0b25d8a01ac42c4fd129a04c",
+      "binary": false,
+      "content_match": "EXACT",
+      "remote_blob_sha": "1da0e5b514bc84ca0b25d8a01ac42c4fd129a04c",
+      "readback_ref": "93dda6a41b1ee4104679ee7db43c22eb642dc801"
+    },
+    {
+      "path": "docs/visual-discussion/20261021_stop_retain_followup_work_review/verify_branches.py",
+      "bytes": 8424,
+      "sha256": "f61ad1cf6489c639b4866fb25a0094ca556824005732e637fbba397119b5f76a",
+      "git_blob_sha": "5abbba3685c2d8bdee7efc93c87ed9f9d73d0cd2",
+      "binary": false,
+      "content_match": "EXACT",
+      "remote_blob_sha": "5abbba3685c2d8bdee7efc93c87ed9f9d73d0cd2",
+      "readback_ref": "93dda6a41b1ee4104679ee7db43c22eb642dc801"
+    },
+    {
+      "path": "docs/visual-discussion/20261021_stop_retain_followup_work_review/build_figures.py",
+      "bytes": 8594,
+      "sha256": "8e5eac543e75eb9a316d9a977d413f9f43405b79a6c782b935fd06a817e342a9",
+      "git_blob_sha": "0a5edd3e436a2828ecc05ae0c7bfc9234d75f8b4",
+      "binary": false,
+      "content_match": "EXACT",
+      "remote_blob_sha": "0a5edd3e436a2828ecc05ae0c7bfc9234d75f8b4",
+      "readback_ref": "93dda6a41b1ee4104679ee7db43c22eb642dc801"
+    },
+    {
+      "path": "docs/visual-discussion/20261021_stop_retain_followup_work_review/reviewed-scope-tests.json",
+      "bytes": 31925,
+      "sha256": "908df0304688a232d2b14e3fd79bb70c962a25a334c88bbccd564c90114bc07c",
+      "git_blob_sha": "a84a2d010cc1bcdfd3d3b34cdbd72149e2cc45d6",
+      "binary": false,
+      "content_match": "EXACT",
+      "remote_blob_sha": "a84a2d010cc1bcdfd3d3b34cdbd72149e2cc45d6",
+      "readback_ref": "93dda6a41b1ee4104679ee7db43c22eb642dc801"
+    },
+    {
+      "path": "docs/visual-discussion/20261021_stop_retain_followup_work_review/summary.json",
+      "bytes": 3685,
+      "sha256": "5ffce3632ad03e5c033a4aba25ee4569ffc864c7dc53f75c4c2c8439bd2d2577",
+      "git_blob_sha": "5d18824105089b3c580e6d2dac29e25f6642ad03",
+      "binary": false,
+      "content_match": "EXACT",
+      "remote_blob_sha": "5d18824105089b3c580e6d2dac29e25f6642ad03",
+      "readback_ref": "93dda6a41b1ee4104679ee7db43c22eb642dc801"
+    },
+    {
+      "path": "docs/visual-discussion/20261021_stop_retain_followup_work_review/verification.json",
+      "bytes": 1451,
+      "sha256": "518fd818ad187e3542fd56648ce776b83c82ed8c2d3ea8e8011b3b0ec5ca1498",
+      "git_blob_sha": "3be22c0c425f1ab7e15b66e650dafcce91ae3128",
+      "binary": false,
+      "content_match": "EXACT",
+      "remote_blob_sha": "3be22c0c425f1ab7e15b66e650dafcce91ae3128",
+      "readback_ref": "93dda6a41b1ee4104679ee7db43c22eb642dc801"
+    },
+    {
+      "path": "docs/visual-discussion/20261021_stop_retain_followup_work_review/manual-qa.json",
+      "bytes": 1611,
+      "sha256": "1fcf5c8a24379d4e4ae1af444141a8444910b53ac883f9b0e065aac41775e5c5",
+      "git_blob_sha": "d45f8f1ff452f4ab1c6bb2f78b2e9b01453a9ca3",
+      "binary": false,
+      "content_match": "EXACT",
+      "remote_blob_sha": "d45f8f1ff452f4ab1c6bb2f78b2e9b01453a9ca3",
+      "readback_ref": "93dda6a41b1ee4104679ee7db43c22eb642dc801"
+    },
+    {
+      "path": "docs/visual-discussion/20261021_stop_retain_followup_work_review/candidate-pools.json.gz",
+      "bytes": 282244,
+      "sha256": "97ee3be1288fd09e1891939b7ef01530daf624f187d5f40ec8d132483a266bb8",
+      "git_blob_sha": "164468ec9c5632e13dc02c8a4ef61c0d7f165562",
+      "binary": true,
+      "content_match": "EXACT",
+      "remote_blob_sha": "164468ec9c5632e13dc02c8a4ef61c0d7f165562",
+      "readback_ref": "93dda6a41b1ee4104679ee7db43c22eb642dc801"
+    },
+    {
+      "path": "docs/visual-discussion/20261021_stop_retain_followup_work_review/page-1.png",
+      "bytes": 142374,
+      "sha256": "f85a27e67b6f37d39354102071934b42a039a178f1fa9af1795f17d7335697be",
+      "git_blob_sha": "415c8d8b3a4ae3c73e74768385bdecaebf57bb99",
+      "binary": true,
+      "content_match": "EXACT",
+      "remote_blob_sha": "415c8d8b3a4ae3c73e74768385bdecaebf57bb99",
+      "readback_ref": "93dda6a41b1ee4104679ee7db43c22eb642dc801"
+    },
+    {
+      "path": "docs/visual-discussion/20261021_stop_retain_followup_work_review/page-2.png",
+      "bytes": 132685,
+      "sha256": "5e8506ca76e1ba54956a6e76d24ff57813d070c66658391cfabd4c869c5b0d1b",
+      "git_blob_sha": "345c8f413e2c196b5b427f53bb05e47a620e1a57",
+      "binary": true,
+      "content_match": "EXACT",
+      "remote_blob_sha": "345c8f413e2c196b5b427f53bb05e47a620e1a57",
+      "readback_ref": "93dda6a41b1ee4104679ee7db43c22eb642dc801"
+    },
+    {
+      "path": "docs/visual-discussion/20261021_stop_retain_followup_work_review/page-3.png",
+      "bytes": 137536,
+      "sha256": "e7496634e95288f4e5f1942d66c62a96902061782df24c0852cf2042bf45c765",
+      "git_blob_sha": "15ccd082f92adde9c6e313ec0195ae8aa9756728",
+      "binary": true,
+      "content_match": "EXACT",
+      "remote_blob_sha": "15ccd082f92adde9c6e313ec0195ae8aa9756728",
+      "readback_ref": "93dda6a41b1ee4104679ee7db43c22eb642dc801"
+    },
+    {
+      "path": "docs/visual-discussion/20261021_stop_retain_followup_work_review/output/pdf/m1-stop-retain-followup-branches.pdf",
+      "bytes": 212063,
+      "sha256": "e6d6a98134ba6803b9e0ec835bc94cf2f7cb68cdc3bc16e12e5baa3721174a5b",
+      "git_blob_sha": "2ce491997cbfc9060694618ac07408eb4ea54cc6",
+      "binary": true,
+      "content_match": "EXACT",
+      "remote_blob_sha": "2ce491997cbfc9060694618ac07408eb4ea54cc6",
+      "readback_ref": "93dda6a41b1ee4104679ee7db43c22eb642dc801"
+    },
+    {
+      "path": "AGENTS.md",
+      "bytes": 127799,
+      "sha256": "75fbd5be91eebccb292f4dba8598fef2d212cb596cdbe091b87fe2e41f915c63",
+      "git_blob_sha": "ef9a89b4cf9e6f1b4ed726fc92edc740a63c8df3",
+      "binary": false,
+      "content_match": "EXACT",
+      "remote_blob_sha": "ef9a89b4cf9e6f1b4ed726fc92edc740a63c8df3",
+      "readback_ref": "93dda6a41b1ee4104679ee7db43c22eb642dc801"
+    },
+    {
+      "path": "CONTINUE_IN_WORK_MODE.md",
+      "bytes": 223247,
+      "sha256": "855d041611cdca0c57f1ad79d3b38ccd0be77f1a284725f0574b96784ac298ea",
+      "git_blob_sha": "96274a8e75662dd9d8bc7471accda3f95b2191cd",
+      "binary": false,
+      "content_match": "EXACT",
+      "remote_blob_sha": "96274a8e75662dd9d8bc7471accda3f95b2191cd",
+      "readback_ref": "93dda6a41b1ee4104679ee7db43c22eb642dc801"
+    },
+    {
+      "path": "M1_V019_GRAPH_CORE_RESUME_HANDOFF.md",
+      "bytes": 101499,
+      "sha256": "aa19d53d94ecc8d76923cc632e182c1ba5f709c284e68c65b934647fafbcab7c",
+      "git_blob_sha": "076c26f67ac812466648aa2c7c6a18626b560030",
+      "binary": false,
+      "content_match": "EXACT",
+      "remote_blob_sha": "076c26f67ac812466648aa2c7c6a18626b560030",
+      "readback_ref": "93dda6a41b1ee4104679ee7db43c22eb642dc801"
+    }
+  ],
+  "receipt_policy": "This receipt is added in a following commit with the research commit as its sole parent. Its own commit cannot be embedded without circularity; verify receipt exact readback and live branch HEAD externally.",
+  "research_status": {
+    "candidate_generation": "PREVIOUSLY_TESTED_UNCHANGED_FUNCTION_REUSED",
+    "branch_geometry": "PASS_FINITE_RESEARCH_CHECKS",
+    "formal_branch_selection": "NOT_ESTABLISHED",
+    "formal_endpoint_rule": "NOT_ESTABLISHED",
+    "classification": "NOT_VALIDATED",
+    "core_usefulness": "NOT_ESTABLISHED",
+    "actions": "NOT_EVALUATED",
+    "Android": "NOT_TESTED_NEW_BUILD",
+    "primary_pressure_id": null,
+    "historical_selection_time": null,
+    "historical_signal_eligible": false
+  },
+  "next_work": "Role/scale evidence for local stop versus larger continuation and accumulation of follow-up seeds; preserve ABC39 and G2 constraints without hardcoded endpoints.",
+  "preservation": "Only same development branch fast-forwarded. main, old artifacts, data, core and parameters preserved. No agents, deployment, payments, trading or messages."
+}
