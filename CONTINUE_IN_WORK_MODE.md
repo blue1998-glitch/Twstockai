@@ -1,3 +1,15 @@
+# 最新：既有診斷單一來源反查已實作（2026-10-20 Codex）
+
+接續df25a67，本環境重新bootstrap --hydrate-missing成功，0補檔／7差異保留。新增graph_diagnostics/source_query.py純函式、來源adapter與CLI，直接讀原pivots／boxes，不改diagnose輸出／原核心／參數／策略／庫／歷史／舊頁／reaction_facts／圖表。不重算辨識、轉折、箱、MACD或反應事實；重用fingerprint／number／_validate／publish_immutable。明示ID反查所有原箱引用／序位、完整同座標別名各自確認，以及同尺度同段from/to的完整原路徑；無自動猜終點、裁箱、跳尺度、遞迴吸納或合併。
+
+[30KB精確JSON／source／實測／完整Work指令](deliveries/m1-v019-source-query-20261020/README.md)。最終14新Python契約測試PASS，含171原來源／89原箱全反查、真實A三箱與9點路徑／119背景、同座標與source_dates、錯誤／混合／未確認／跨尺度段／倒序拒絕、未選未來追加改動不改舊前綴、確定性／不變性、禁重算mock與CLI精確JSON／實際時戳／衝突拒絕。強化守衛後有1次測試fixture未隔離而FAIL，保留原log，修fixture使獨立原K檢查仍必須拒絕，未放寬斷言，最終重測PASS。固定原ZIP CRC／SHA與原完整來源／MACD／core／manual audit全等另核。新JSON30584 bytes；3明示來源／8原箱／17原點／9點路徑，不是型態或重要性票。GitHub逐檔回讀另存後續收據。
+
+原2220追蹤檔在交接更新前全未改，現在只加3根交接最新節。無UI／瀏覽器／Android／新ZIP或舊22／47等重跑；Android NOT_TESTED_NEW_BUILD、file://不重試不繞過。comparison內diagnostics僅摘要，明示未驗完整diagnostic_id；來源自洽不認證外部行情或歷史公開可得。原確認下限與後來實際selected_at分開，historical_signal_eligible=false。
+
+下一步Work用原來源研究正式整體歸屬，不重做查詢／圖表／reaction。已確認異質形態整體概念、局部整體分判、不因低位整理先降未挑戰舊帶高點之本例重要性及所有舊案例不重問。primary_pressure_id=null，正式成員區界代表／增量量權重／衰減重要性／合併直接承接／解除生命階段未知；Raw公司行動／五年Adjusted／歷史可得／九待核非窮盡日曆／Darvas／SQLite與核心NOT_ESTABLISHED／分類NOT_VALIDATED／行動NOT_EVALUATED保持。原拒絕餘量、五月十月反例、49轉換非訊號、89版本84幾何非獨立及不同窗不排名保持。不改main，不調參寫死人工答案，不部署付費交易訊息子代理；結束必附最新已核SHA及完整續接。
+
+---
+
 # 最新：來源反查有限契約已備，可轉Codex（2026-10-20 Work）
 
 [新研究／完整契約／可貼Codex指令](docs/visual-discussion/20261020_source_query_contract/README.md)。接續a30b62f，確認分支相同並讀最新交接。原3%／segment0全119點從2021-11-29到2026-10-13；前輪9點路徑前33後77，證同尺度同段相鄰不等經濟同帶或正式起訖，不能一路串接歷史。新probe只讀核119原點／原K、9點子串、兩組完整source_dates與原來源bytes，無辨識／MACD／reaction重算。
