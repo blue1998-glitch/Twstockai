@@ -1,3 +1,5 @@
+本次source／查詢成品已核提交：`e45d972406cc6a4ef1a9babf1ba9865d97073096`；GitHub逐檔回下載27檔／15,211,000 bytes全等，遠端JSON同原來源／完整query逐值重現。回讀收據與本段另存後續交接提交，最新請實際核分支HEAD。
+
 請接續股票系統M1，同Work使用已完成的來源反查研究正式整體歸屬，不重做查詢／圖表／reaction_facts，不自行合併。
 
 儲存庫：blue1998-glitch/Twstockai

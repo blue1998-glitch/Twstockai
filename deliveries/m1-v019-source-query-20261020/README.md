@@ -2,7 +2,7 @@
 
 已新增既有graph_diagnostics內的純數值來源反查、原封包adapter及CLI；沒有新UI、圖表、反應事實或自動大帶合併。
 
-- [下載／讀取查詢JSON](../../股票系統M1_v0_18/graph_diagnostics/source_query_generated/source-query.json)：30,584 bytes，含原結果／context／完整query、17個原轉折、8個原箱來源、3個明示點的箱引用與座標對照、一條完整9點路徑。
+- [下載／讀取查詢JSON](https://raw.githubusercontent.com/blue1998-glitch/Twstockai/e45d972406cc6a4ef1a9babf1ba9865d97073096/股票系統M1_v0_18/graph_diagnostics/source_query_generated/source-query.json)：30,584 bytes，含原結果／context／完整query、17個原轉折、8個原箱來源、3個明示點的箱引用與座標對照、一條完整9點路徑。
 - JSON SHA256：`4a43a8c0f03bbffacb86306f064b7c807a7a83bdaf7e737bc76cd654a2c1dbb0`；[來源與逐值核對](../../股票系統M1_v0_18/graph_diagnostics/source_query_validation_20261020/verification.json)。
 - [明示request例檔](../../股票系統M1_v0_18/graph_diagnostics/source_query_examples/request.json)、[模組契約／CLI](../../股票系統M1_v0_18/graph_diagnostics/SOURCE_QUERY.md)、[實測報告](../../股票系統M1_v0_18/graph_diagnostics/source_query_validation_20261020/驗收報告.md)、[完整Work續接](WORK_HANDOFF.md)。
 
@@ -17,3 +17,5 @@
 primary_pressure_id=null；正式成員、整體區界／代表、重要性衰減、量權重／增量、合併直接承接、解除及生命階段未知。Raw公司行動／五年Adjusted／歷史可得／九待核非窮盡日曆／Darvas／SQLite未知保持；核心NOT_ESTABLISHED／分類NOT_VALIDATED／行動NOT_EVALUATED。Android NOT_TESTED_NEW_BUILD，file://不重試不繞過。
 
 下一步 **Work** 用可查來源研究正式整體歸屬；工具完成不等主壓力辨識完成。不重問三個已確認概念或舊案例，不因未挑戰舊帶高點前的低位整理先降本例重要性。不自動串接／合併／排名，不將39.25／35.50／35.45／40.25指定整體代表。不改main，不部署付費交易訊息子代理。新成品固定提交及逐檔GitHub回讀收據另由後續交接保存。
+
+固定新source／成品提交：`e45d972406cc6a4ef1a9babf1ba9865d97073096`。已實際逐檔GitHub回下載**27檔／15,211,000 bytes**全等，遠端查詢JSON以同原來源與完整query逐值重現；[逐檔回讀收據](GITHUB_READBACK.json)。本收據與固定下載連結另存後續文件提交，不冒稱收據涵蓋自身或Android。直接JSON連結可能顯示原文，可另存；這是數值成品，不是新HTML。
