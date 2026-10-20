@@ -2,7 +2,7 @@
 
 儲存庫：blue1998-glitch/Twstockai
 分支：dev/m1-v018-chart-annotations
-必須包含最新前交接cc71899668e1cd6f061af64739d279772a26287a與原固定診斷成品57e3d9e55c226c5dd0e69fcbd26883d0da81667e。本輪新成品固定提交與遠端回讀見同目錄README及收據；若分支更新先讀最新交接、保留後續成果，不用main或舊ZIP覆蓋。不能讀取／下載／執行／保存須列實際錯誤，不假稱完成。
+必須包含最新前交接cc71899668e1cd6f061af64739d279772a26287a與原固定診斷成品57e3d9e55c226c5dd0e69fcbd26883d0da81667e。本輪新source／成品固定提交fff47915523fab8c8de8279de8bbb7a26b05647b；GitHub本輪已實際回下載108檔／37,832,269 bytes逐字相同（含原固定診斷ZIP），新ZIP CRC／6成員SHA通過，收據見同目錄。後續連結與收據文件以分支最新為準；若分支更新先讀最新交接、保留後續成果，不用main或舊ZIP覆蓋。不能讀取／下載／執行／保存須列實際錯誤，不假稱完成。
 
 依序實讀AGENTS.md、CONTINUE_IN_WORK_MODE.md最上方、M1_V019_GRAPH_CORE_RESUME_HANDOFF.md最新節，然後本目錄README／PACKAGE_VERIFICATION.json／SOURCE_HASHES.json／GITHUB_DOWNLOAD_VERIFICATION.json及本檔全文；股票系統M1_v0_18/cross_scale_chart/README.md、generated/source-acquisition.json、generated/artifact-verification.json、validation_20261020/驗收報告.md。沿讀PROJECT_VISION.md／M1_V019_VISUAL_RULE_NOTES.md最新要求、docs/core-recognition/20261020_work_diagnostic_read_review.md、20261020_cross_scale_structure_work_review.md、20261020_cross_scale_comparison_reader.html、20261020_cross_scale_reader_validation.md與原graph_core_review四份文件；舊人工案例與診斷資格保留，不重讀101圖片。
 
@@ -12,7 +12,7 @@
 
 固定1101／Raw／2026-10-16收27.30，非即時。新增頁只讀結果，沒跑或改原核心／參數／策略／庫／歷史／舊頁，沒有新市場資料或五年Adjusted。MACD原列沒有日期，按原K線索引保存順序相配，未補造日期。範圍內已存OHLCV無空值不等日曆完整；原9個待核日期／公司行動／歷史公布可得限制保留，不補假K。
 
-本輪實測7項定向Python PASS；真正重讀最終HTML及獨立JSON，與固定診斷成品逐值比較全部真實數列、來源識別與完整原core，全等；沒有冒稱重算60前綴。最終47真實Chromium HTTP／12完整JSON下載PASS，1280×900 DPR1、390×844／844×390／320×740 DPR2、原生滑鼠／CDP單指查詢和平移／雙指縮放、K量MACD與日期軸x座標／物理左緣寬度同步、來源／時點定位不改分析、跨休市逐記錄查詢、MACD像素在關全部覆核層前後相同、0JS錯誤／外部請求。28最終PNG，首個MACD欄位KeyError／0測試執行、18px日期軸錯位失敗與較早版證據保留。舊35／60／45／398都不是本輪重跑；不沿數字假稱Work或Android測過。
+本輪實測7項定向Python PASS；真正重讀最終HTML及獨立JSON，與固定診斷成品逐值比較全部真實數列、來源識別與完整原core，全等；沒有冒稱重算60前綴。最終47真實Chromium HTTP／12完整JSON下載PASS，1280×900 DPR1、390×844／844×390／320×740 DPR2、原生滑鼠／CDP單指查詢和平移／雙指縮放、K量MACD與日期軸x座標／物理左緣寬度同步、來源／時點定位不改分析、跨休市逐記錄查詢、近期模式目前覆核層全關前後MACD像素相同（不擴稱所有模式逐張像素相等）、0JS錯誤／外部請求。28最終PNG，首個MACD欄位KeyError／0測試執行、18px日期軸錯位失敗與較早版證據保留。舊35／60／45／398都不是本輪重跑；不沿數字假稱Work或Android測過。
 
 本輪Work優先看實際圖，不重做舊按鈕問卷：
 1. 「跨尺度全景」直接看真實K量MACD上的七組來源：「人工月份閱讀」「B77原候選」「左擴被拒」「右延被拒」「人工39筆」「B44/B80同幾何」「B88近期」。圖上短圖例與勾選可區分，來源色塊／虛線外框用完整原K影線外包，不是正式價界；量底色與MACD分開。
