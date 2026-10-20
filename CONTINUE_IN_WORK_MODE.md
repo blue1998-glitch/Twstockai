@@ -1,3 +1,15 @@
+# 最新：真實跨尺度K／量／MACD比較圖已接入（2026-10-20 Codex）
+
+接續cc718996及原固定診斷成品57e3d9e，本環境重新bootstrap成功（0補檔／7差異保留）；實際核固定診斷ZIP／CRC／SHA並解出1101完整1,213根真實OHLCV、原MACD／SMA／source／Raw basis／frame／prefix與完整原core。上一Work的DNS下載阻礙與僅時間軸未完成K圖紀錄保持，未假稱同環境修復。新獨立cross_scale_chart／cross-scale-real-chart/0.1直接顯示可放大、拖曳查詢／移圖／雙指縮放的K量MACD，與下方日期證據軸同x／窗／游標；七組人工月份主帶、B77、左右被拒串、人工39筆、B44/B80同幾何、B88分別顯示，主圖短圖例不遮K線，來源／確認／研究界外／人工終點分開。人工日期只讀舊audit，未作自動辨識答案。
+
+[直接HTML／750KB小ZIP／SHA／實測與完整Work指令](deliveries/m1-v019-cross-scale-real-20261020/README.md)、[來源取得](股票系統M1_v0_18/cross_scale_chart/generated/source-acquisition.json)、[可直接讀的完整數列／原core與比較JSON](股票系統M1_v0_18/cross_scale_chart/generated/comparison-data.json)、[契約及重現](股票系統M1_v0_18/cross_scale_chart/README.md)、[本輪實測／失敗／28真實PNG](股票系統M1_v0_18/cross_scale_chart/validation_20261020/驗收報告.md)。7定向Python PASS；最終HTML逐值核固定來源與完整原core全等；47新Chromium HTTP／12完整精度下載PASS、四寬DPR1／2、原生單指／雙指、實際MACD像素在隱藏覆核層前後相同、0JS錯誤／外部請求。首MACD欄位假設與18px軸錯位失敗／修正保留，不沿舊35／60／45／398當本輪通過。
+
+固定1101／Raw／2026-10-16收27.30非即時；查久遠K不等回播當時訊號。原9個待核日期／日曆非窮盡、Raw公司行動／五年Adjusted／歷史可得、Darvas／SQLite未知保持。完成圖表工程，不等主帶／39筆／六月後整箱的自動辨識或用途認可；正式區界／量口徑／增量／強度衰減／重要性／合併／直接承接／生命階段仍未知，primary_pressure_id=null。89版本／84幾何組非獨立型態數，不等長觀察不作公平排序。新Android NOT_TESTED_NEW_BUILD／使用者開檔與效能未測，file://不重試不繞過。
+
+下一步Work直接看真實跨尺度比較與已答整體判讀差異；不重讀101圖片、不重開0.4.3或舊Android按鈕、不重問已答案例、不調參或寫死人工日期。原核心／參數／策略／庫／歷史／舊頁／案例／證據與main保持，不部署付費交易訊息子代理。換模式必附最新已核提交與完整可貼續接。
+
+---
+
 # 最新：自動辨識追溯診斷已交付，原核心不改（2026-10-19 Codex）
 
 接續631f6db9及原成品2d480bff，本環境重新bootstrap --hydrate-missing成功（0補檔／7差異保留）。新增獨立graph_diagnostics數值附層／graph-diagnostic-view/0.1，逐串保留被拒／通過未選原因、數值餘量及來源，分離來源末轉折／確認／研究離箱／人工整箱終點、來源前綴版本／跨尺度同幾何／局部子串、廣義後來與直接承接未知、各價量與下跌觀察窗。原核心／參數／候選／JSON／舊頁完全保留，不調參或寫死人工答案。B77左擴到較早可枚舉5/2高群餘量−2.4800，右延4/8低群−0.7825；未枚舉任意六月日並非拒絕人工月份主帶。89候選及84來源幾何組皆非獨立型態數／accuracy，primary_pressure_id=null。

@@ -1,0 +1,16 @@
+Traceback (most recent call last):
+  File "<frozen runpy>", line 198, in _run_module_as_main
+  File "<frozen runpy>", line 88, in _run_code
+  File "/workspace/Twstockai/股票系統M1_v0_18/cross_scale_chart/build.py", line 148, in <module>
+    if __name__=='__main__':main()
+                            ^^^^^^
+  File "/workspace/Twstockai/股票系統M1_v0_18/cross_scale_chart/build.py", line 138, in main
+    data=make();report=dict(status='PASS',fixed_zip_sha256=ZIP_SHA,fixed_html_sha256=HTML_SHA,records=len(data['bars']),
+         ^^^^^^
+  File "/workspace/Twstockai/股票系統M1_v0_18/cross_scale_chart/build.py", line 70, in make
+    if len(s['macd'])!=len(rows) or any(v['date']!=row['date'] for v,row in zip(s['macd'],rows)):
+                                    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/workspace/Twstockai/股票系統M1_v0_18/cross_scale_chart/build.py", line 70, in <genexpr>
+    if len(s['macd'])!=len(rows) or any(v['date']!=row['date'] for v,row in zip(s['macd'],rows)):
+                                        ~^^^^^^^^
+KeyError: 'date'

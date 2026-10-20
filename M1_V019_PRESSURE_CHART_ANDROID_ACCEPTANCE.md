@@ -1,3 +1,11 @@
+# 真實跨尺度比較新頁：Android NOT_TESTED_NEW_BUILD（2026-10-20 Codex）
+
+新cross-scale-real-chart/0.1／M1_v019_cross_scale_real_v01.html，[HTML／小ZIP／完整續接](deliveries/m1-v019-cross-scale-real-20261020/README.md)。本輪實際只有Chromium HTTP四寬、DPR1／2與CDP單指／雙指等雲端實測；沒有本頁Android實機、使用者開檔分享或裝置效能證據，仍NOT_TESTED_NEW_BUILD，不沿任何舊PARTIAL或0.4.3回報升級。原file://政策未重試／未繞過。
+
+下一步Work先看新真實跨尺度圖的結構差異，不重做舊按鈕／色帶或索相同舊圖JSON。自然取得新圖／操作回報再分OBSERVED／USER_REPORTED／NOT_TESTED／BLOCKED，不能從模擬推實機。圖表工程完成不等自動主壓力、核心用途／分類／交易資格；全部原策略與來源未知照最新交接保留。
+
+---
+
 # 新追溯診斷頁：Android NOT_TESTED_NEW_BUILD（2026-10-19 Codex）
 
 獨立graph-diagnostic-view/0.1／M1_v019_graph_diagnostics_v01.html，[新成品與完整Work指令](deliveries/m1-v019-graph-diagnostics-20261019/README.md)。本輪只有真實雲端Chromium HTTP四寬及CDP單指／滑鼠移圖、JSON核對；沒有此版Android畫面／裝置身分／實開／下載證據。明記NOT_TESTED_NEW_BUILD，不沿原0.1／0.4.3或舊PARTIAL證據升級。原裝置證據與政策阻擋全部保留，file://不重試不繞過。
