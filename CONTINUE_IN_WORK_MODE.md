@@ -1,3 +1,17 @@
+# 最新：可放大圖冊；四月構成來源或後續反應待判（2026-10-20 Work）
+
+[兩頁PDF／原尺寸PNG／原值與完整續接](docs/visual-discussion/20261020_april_role_visual_review/README.md)。接續84e0dd1。落實新圖可放大要求：第1頁保留原597筆全景，第2頁新增2024/7～2025/6全241筆原K量MA20/60/130/260與MACD向量圖，A/B/C僅討論標記；黃色四月非正式成員界。PDF及PNG附原尺寸，原互動產品／引擎不變，不重建查詢reaction或主圖。
+
+新核心問題PENDING_USER_ADJUDICATION：在完整舊大帶脈絡中，四月急跌A、低位反彈B與再下探C哪些屬構成來源、哪些只是後續反應？可分開，不要求整月同角色或精確終點。助手工作假說A先作後續轉弱觀測、B/C先保留低位局部，未有歸屬證據不直接納舊帶；尚未答、不當批准。這不重問月份跨度／局部整體分判／異質形態或重要性不先降，不重開5/13、6/3、1/27。舊共享角色PENDING_NOT_REASKED，一月小窗問已撤回，11/25非關鍵點保持。
+
+A4/7 O29.20 H30.80 L29.20 C29.80量118,749,437，紅K但較前保存4/2 C32.40跌；B4/10 O30.95 H31.20 L30 C30.75量48,104,987，綠K但較4/9 C28.50漲，6%於4/18確認；C4/22低28.50／收28.60，6%於5/5確認，高於4/8低28.45、不補相等破低。4/7收在原B77研究30.05下、4/10上、4/11收30又下，反覆保留，不據此判正式界／解除。5/13原31.40只作已答背景。
+
+本輪完成兩頁PDF與PNG、241連續原值字串／SHA核同，reportlab原全景＋Matplotlib向量頁、pypdf頁數文字／字形核對，pdftoppm渲染view_image逐頁看最終稿；400%靜態渲染裁片亦實看清楚，非Android手勢測試。首稿CFF Type42相容警告改Type3嵌入字形後無警告重繪核看；最終CLI整理後渲染與已看稿全等。不冒稱新瀏覽器截圖或產品驗收，本機重查無瀏覽器binary、不安裝不file://。無原核心MACDreaction／query adapter CLI／bootstrap／14、22或舊產品測試／ZIP／Android；Android NOT_TESTED_NEW_BUILD。
+
+primary_pressure_id=null、歷史選取null／historical_signal_eligible=false；正式成員區界代表／增量量權重／衰減重要性／合併直接承接／解除生命階段及Raw公司行動／五年Adjusted／歷史可得／九待核非窮盡日曆／Darvas／SQLite未知，核心NOT_ESTABLISHED／分類NOT_VALIDATED／行動NOT_EVALUATED。五月十月反例、來源時點、相等日OHLC、原拒絕餘量、89版本84幾何非獨立及不同窗不排名保持。下一步仍Work用足夠背景圖裁決角色，不以原箱起訖代答；已定規則或可重現缺陷才交Codex。不調參硬編、不新增自動合併主壓力／解除／買賣門檻，不改原核心參數策略庫歷史舊頁案例及main，不部署付費交易訊息子代理。同分支逐檔GitHub回讀，結束附已核SHA、圖入口完成未完成與完整續接。
+
+---
+
 # 最新：來源角色底稿／左右跨箱缺口／新圖須可放大（2026-10-20 Work）
 
 [原來源與候選角色／完整續接](docs/visual-discussion/20261020_attribution_roles_work_review/README.md)。接續6e1d84d，使用者17:09要求下次圖片可放大、這次可沿用；已存display-preference.json，未做新放大UI／瀏覽器Android驗收，之後新圖須附可用放大檢視方式及原尺寸圖，不可僅縮圖。11/25本例非關鍵點、一月小窗三選一已撤回及全部已答更正保持不重問。
