@@ -1,3 +1,17 @@
+# 最新：Work已讀新反應事實與整體壓力證據範圍（2026-10-20）
+
+接續db000b9，包含數值成品2d9c9aad及原真實圖fff4791。[新全景／局部圖／完整研究與續接](docs/visual-discussion/20261020_reaction_pressure_work_review/README.md)。本輪新下載965,955-byte資料ZIP核SHA／CRC／manifest；取得完整11,672,241-byte新JSON，全部1213原K／原MACD與原資料全等、原comparison-data逐字同前輪。按需讀catalog、10筆完整案例與近期窗口，不重算附層或核心／指標，不搬22測試／33回讀當本輪重跑。
+
+新研究ASSISTANT_ANALYSIS_NOT_USER_ADJUDICATED：四參照各答不同主張，不多空投票。26.95來源為B88研究高界，同價不等人工1/27同語義；27.40日高過而收未過只反駁該收復主張；30.05是B77研究下界，最新高／收與本輪31筆近期窗日高均在下，只證尚未返回該研究走廊，不直接證舊帶正在壓制這波，也不是人工整帶正式底線。四參照未提供完整大帶正式區界／強度算法。
+
+真正新核心歧義尚未獲答：未回到舊大帶前，低位長期整理與反覆成交能否支持先調降舊帶重要性，或需回到該處看實際反應才調整？助手暫建議先分開後續挑戰能力與舊帶本身賣壓，未採新衰減或權重；不改本例大帶較重要的既有判讀。使用者已答局部／整體分別判斷，不重問原則／月份／39筆／5/13／6/3／1/27等。
+
+原HTML Chromium133 HTTP有限2窗配新JSON參照疊線／觀察字型，2PNG、原data/core/分析身分及新JSON bytes不變、0pageerror；不是新UI、完整互動觸控下載或Android、bootstrap、22／7／47重跑。Android NOT_TESTED_NEW_BUILD，file://未用未重試未繞過。下一步仍Work以全景裁決新歧義，已定規則或工程缺陷才交Codex，本輪無必須先修工程阻礙。
+
+primary_pressure_id=null與正式區界／增量／衰減重要性／合併直接承接／生命階段及Raw公司行動／五年Adjusted／歷史可得／九待核日期非窮盡日曆／Darvas／SQLite未知保持，核心NOT_ESTABLISHED／分類NOT_VALIDATED／行動NOT_EVALUATED保持。原拒絕餘量−2.4800／−0.7825、來源時點語義保持；49轉換或分段非訊號、89版本／84幾何非獨立型態，廣義後來非直接承接，不等長窗不排名。保留核心參數策略庫歷史舊頁案例證據與main，不調參硬編答案、不重讀101圖／0.4.3，不部署付費交易訊息子代理；結束附最新已核SHA與完整續接。
+
+---
+
 # 最新：多參照反應事實附層已實作（2026-10-20 Codex）
 
 接續c871eeb；本環境重新bootstrap --hydrate-missing成功，0補檔／7差異保留。新增reaction_facts獨立純數值附層／來源adapter／CLI／完整精度JSON，不改已完成主圖或原core／schema／策略。重用原number／fingerprint／ratio，補多參照close/high/low三態、精確差值、實體與前收方向、相鄰Raw幾何、前保存量分母窗口、原MACD及全部轉換；來源可知、原確認與後來實際選取分開，historical_signal_eligible=false。新1213筆／4明示來源／49分欄位轉換或分段索引，不是49交易訊號或型態。

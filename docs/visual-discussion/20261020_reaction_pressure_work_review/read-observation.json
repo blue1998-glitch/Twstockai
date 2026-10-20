@@ -1,0 +1,3043 @@
+{
+  "scope": "WORK_NEW_DOWNLOAD_AND_READ_ONLY_SAVED_RESULT_COMPARISON_NOT_ENGINE_OR_TEST_RERUN",
+  "base_commit": "db000b9a7a09c2bbc693e9d2094482a5edd6b867",
+  "artifact_commit": "2d9c9aad4b88b53d9552e479a3f625377f2b7161",
+  "original_chart_commit": "fff47915523fab8c8de8279de8bbb7a26b05647b",
+  "members": {
+    "README.txt": {
+      "bytes": 591,
+      "sha256": "c51a7daf6007778255881ff1d022c505a315c3c23b32177787cb07bcaafe0b63"
+    },
+    "SHA256SUMS.txt": {
+      "bytes": 430,
+      "sha256": "50e671b4d4fca696d84d29056f5309f4ad0ccf66611990efc04462d704c86795"
+    },
+    "SOURCE_PROVENANCE.json": {
+      "bytes": 882,
+      "sha256": "d13c2cf3807f82e1a875cc407cd3733eee429d1f2bf06bbdffdb178fb47bd9d0"
+    },
+    "comparison-data.json": {
+      "bytes": 3117969,
+      "sha256": "184bdef0b687ec0ab7bfcaaac2157ff7916fbc1000ef312d81b5efc0c2e73e15"
+    },
+    "reaction-facts.json": {
+      "bytes": 11672241,
+      "sha256": "097971c913b52fbf69dbb286c6e2df380ded3c3d166ca6391de5c5bdb4047c48"
+    },
+    "reaction-facts.zip": {
+      "bytes": 965955,
+      "sha256": "a18150ff8d548cb0456a2df446711a472e31f93abf06bfd663238a28f0ba546e"
+    },
+    "reference-selection.json": {
+      "bytes": 1072,
+      "sha256": "b8d1ebf4775b1aad79e06d8dabbb02d747130909d1056fca329c48e63bd9f997"
+    }
+  },
+  "zip_crc": "PASS",
+  "manifest_hashes": "PASS",
+  "all_1213_bars_and_original_macd_equal": true,
+  "context_identifiers_equal": true,
+  "original_core_id": "sha256:ec7bca9ed6aa176c328fd8c4e94a31ea66967832e7089ac20a44090461f49da4",
+  "reaction_result_id": "sha256:2dcff9ba28edf89c370c976a82ec5b7bd6c11cce06743ba3e870e15a0d58c966",
+  "selection": {
+    "schema_version": "explicit-reaction-reference-selection/0.1",
+    "binding": {
+      "code": "1101",
+      "source_id": "sha256:adea7f78a97d18b6b51fbba103e08c0db33dc6fb1eb613b960b0aabe213b534b",
+      "price_basis_id": "sha256:50e560b77640da3b7d000c0db67fc73a3f5b69d0bd744871ccb03483f8ec115e",
+      "source_frame_id": "sha256:b7215491c924570f3b40594fbd859f4b5c2532b247b62b6e625a8fcb66964f70",
+      "source_prefix_fingerprint": "sha256:e1651ca453df5b818e091575ded756953f69271f69f69d6008bb544f2fe76832"
+    },
+    "selected_at": "2026-10-20T02:03:12.608303+00:00",
+    "references": [
+      {
+        "kind": "RESEARCH_BOUND",
+        "box_id": "sha256:3753f89be8aef29f8f6c7910cbb979ddde8a68a37e496b5148f72dc74311db20",
+        "field": "low"
+      },
+      {
+        "kind": "BAR_FIELD",
+        "date": "2025-05-14",
+        "field": "high"
+      },
+      {
+        "kind": "RESEARCH_BOUND",
+        "box_id": "sha256:9fbf971f46c19caa9b00657d0b805bc2bd4d782ab617b3818b50ddfe211b7d39",
+        "field": "high"
+      },
+      {
+        "kind": "BAR_FIELD",
+        "date": "2026-10-14",
+        "field": "high"
+      }
+    ]
+  },
+  "reference_catalog": [
+    {
+      "id": "sha256:49e1061c6c2ea51fab91aa35b08edd0c86a4238bb70b577a588a86f510f2ea76",
+      "binding": {
+        "code": "1101",
+        "source_id": "sha256:adea7f78a97d18b6b51fbba103e08c0db33dc6fb1eb613b960b0aabe213b534b",
+        "price_basis_id": "sha256:50e560b77640da3b7d000c0db67fc73a3f5b69d0bd744871ccb03483f8ec115e",
+        "source_frame_id": "sha256:b7215491c924570f3b40594fbd859f4b5c2532b247b62b6e625a8fcb66964f70",
+        "source_prefix_fingerprint": "sha256:e1651ca453df5b818e091575ded756953f69271f69f69d6008bb544f2fe76832"
+      },
+      "price": "30.05",
+      "origin_id": "sha256:3753f89be8aef29f8f6c7910cbb979ddde8a68a37e496b5148f72dc74311db20",
+      "source_kind": "RESEARCH_BOUND",
+      "source_field": "low",
+      "occurred_at": "2025-03-12",
+      "known_on": "2025-03-24",
+      "selected_at": "2026-10-20T02:03:12.608303+00:00",
+      "historical_selection_time": null,
+      "historical_signal_eligible": false,
+      "qualification": "CONFIRMED_RESEARCH_BOUND",
+      "explicit_selector": {
+        "kind": "RESEARCH_BOUND",
+        "box_id": "sha256:3753f89be8aef29f8f6c7910cbb979ddde8a68a37e496b5148f72dc74311db20",
+        "field": "low"
+      },
+      "selection_qualification": "LATER_EXPLICIT_RESEARCH_OR_SELECTION_UNVERIFIED_NOT_HISTORICAL_SIGNAL",
+      "value_availability_at_as_of": "AVAILABLE"
+    },
+    {
+      "id": "sha256:861cff152163a63b4da4fcbd06811e3cf8273b95d84b8140bab5ccbfb5c59e8a",
+      "binding": {
+        "code": "1101",
+        "source_id": "sha256:adea7f78a97d18b6b51fbba103e08c0db33dc6fb1eb613b960b0aabe213b534b",
+        "price_basis_id": "sha256:50e560b77640da3b7d000c0db67fc73a3f5b69d0bd744871ccb03483f8ec115e",
+        "source_frame_id": "sha256:b7215491c924570f3b40594fbd859f4b5c2532b247b62b6e625a8fcb66964f70",
+        "source_prefix_fingerprint": "sha256:e1651ca453df5b818e091575ded756953f69271f69f69d6008bb544f2fe76832"
+      },
+      "price": "30.50",
+      "origin_id": "sha256:7bd9049610cdac589fd9d6c97860c413c36b5a5baf0c4d8dd15590cd2be0334d",
+      "source_kind": "BAR_FIELD",
+      "source_field": "high",
+      "occurred_at": "2025-05-14",
+      "known_on": "2025-05-14",
+      "selected_at": "2026-10-20T02:03:12.608303+00:00",
+      "historical_selection_time": null,
+      "historical_signal_eligible": false,
+      "qualification": "EXPLICIT_RESEARCH_QUERY",
+      "explicit_selector": {
+        "kind": "BAR_FIELD",
+        "date": "2025-05-14",
+        "field": "high"
+      },
+      "selection_qualification": "LATER_EXPLICIT_RESEARCH_OR_SELECTION_UNVERIFIED_NOT_HISTORICAL_SIGNAL",
+      "value_availability_at_as_of": "AVAILABLE"
+    },
+    {
+      "id": "sha256:d63e7759051cdd7ad12c18d0f5beee624c57f49dabca43c9d665cf61bdc62e9b",
+      "binding": {
+        "code": "1101",
+        "source_id": "sha256:adea7f78a97d18b6b51fbba103e08c0db33dc6fb1eb613b960b0aabe213b534b",
+        "price_basis_id": "sha256:50e560b77640da3b7d000c0db67fc73a3f5b69d0bd744871ccb03483f8ec115e",
+        "source_frame_id": "sha256:b7215491c924570f3b40594fbd859f4b5c2532b247b62b6e625a8fcb66964f70",
+        "source_prefix_fingerprint": "sha256:e1651ca453df5b818e091575ded756953f69271f69f69d6008bb544f2fe76832"
+      },
+      "price": "26.95",
+      "origin_id": "sha256:9fbf971f46c19caa9b00657d0b805bc2bd4d782ab617b3818b50ddfe211b7d39",
+      "source_kind": "RESEARCH_BOUND",
+      "source_field": "high",
+      "occurred_at": "2026-07-14",
+      "known_on": "2026-09-01",
+      "selected_at": "2026-10-20T02:03:12.608303+00:00",
+      "historical_selection_time": null,
+      "historical_signal_eligible": false,
+      "qualification": "CONFIRMED_RESEARCH_BOUND",
+      "explicit_selector": {
+        "kind": "RESEARCH_BOUND",
+        "box_id": "sha256:9fbf971f46c19caa9b00657d0b805bc2bd4d782ab617b3818b50ddfe211b7d39",
+        "field": "high"
+      },
+      "selection_qualification": "LATER_EXPLICIT_RESEARCH_OR_SELECTION_UNVERIFIED_NOT_HISTORICAL_SIGNAL",
+      "value_availability_at_as_of": "AVAILABLE"
+    },
+    {
+      "id": "sha256:3b06e1fab3e34dd44027722290cf9cdddbbff0d947ed560ec6773b2d7121cd97",
+      "binding": {
+        "code": "1101",
+        "source_id": "sha256:adea7f78a97d18b6b51fbba103e08c0db33dc6fb1eb613b960b0aabe213b534b",
+        "price_basis_id": "sha256:50e560b77640da3b7d000c0db67fc73a3f5b69d0bd744871ccb03483f8ec115e",
+        "source_frame_id": "sha256:b7215491c924570f3b40594fbd859f4b5c2532b247b62b6e625a8fcb66964f70",
+        "source_prefix_fingerprint": "sha256:e1651ca453df5b818e091575ded756953f69271f69f69d6008bb544f2fe76832"
+      },
+      "price": "27.40",
+      "origin_id": "sha256:98ff1a3f691d01e80e8ba6a3a829f3ea5cec32c5b0b34d52467e15daaa1a34e5",
+      "source_kind": "BAR_FIELD",
+      "source_field": "high",
+      "occurred_at": "2026-10-14",
+      "known_on": "2026-10-14",
+      "selected_at": "2026-10-20T02:03:12.608303+00:00",
+      "historical_selection_time": null,
+      "historical_signal_eligible": false,
+      "qualification": "EXPLICIT_RESEARCH_QUERY",
+      "explicit_selector": {
+        "kind": "BAR_FIELD",
+        "date": "2026-10-14",
+        "field": "high"
+      },
+      "selection_qualification": "LATER_EXPLICIT_RESEARCH_OR_SELECTION_UNVERIFIED_NOT_HISTORICAL_SIGNAL",
+      "value_availability_at_as_of": "AVAILABLE"
+    }
+  ],
+  "selected_records": [
+    {
+      "date": "2025-05-14",
+      "original_bar": {
+        "close": "30.35",
+        "date": "2025-05-14",
+        "high": "30.50",
+        "low": "30.05",
+        "open": "30.30",
+        "volume_shares_scaled": "33711861"
+      },
+      "original_value_known_on": "2025-05-14",
+      "intraday_sequence": "UNKNOWN_FROM_DAILY_OHLC",
+      "body": {
+        "relation": "ABOVE",
+        "delta": "0.05",
+        "reason": "AVAILABLE"
+      },
+      "adjacent": {
+        "previous_record_date": "2025-05-13",
+        "reason": null,
+        "close": {
+          "relation": "BELOW",
+          "delta": "-0.75",
+          "reason": "AVAILABLE"
+        },
+        "high": {
+          "relation": "BELOW",
+          "delta": "-0.90",
+          "reason": "AVAILABLE"
+        },
+        "low": {
+          "relation": "BELOW",
+          "delta": "-0.85",
+          "reason": "AVAILABLE"
+        },
+        "range_direction": "BOTH_ENDS_DOWN",
+        "range_geometry": "ENTIRELY_BELOW",
+        "qualification": "ADJACENT_SAVED_RAW_RECORDS_NOT_CONFIRMED_SWINGS_OR_AUTHENTICATED_GAP"
+      },
+      "continuity": {
+        "reason": null,
+        "known_gap_dates": [],
+        "basis_break_dates": []
+      },
+      "volume": {
+        "current_shares": "33711861",
+        "previous_shares": "10264322",
+        "numerator_date": "2025-05-14",
+        "denominator_dates": [
+          "2025-05-13"
+        ],
+        "baseline_includes_current": false,
+        "reason": "AVAILABLE",
+        "ratio": "3.2843728986678321276359023031428671080272033554676",
+        "ratio_precision": "50_SIGNIFICANT_DECIMAL_DIGITS_HALF_EVEN_ORIGINAL_NUMERATOR_DENOMINATOR_RETAINED",
+        "qualification": "PREVIOUS_SAVED_RECORD_DESCRIPTION_NOT_VOLUME_SIGNAL"
+      },
+      "macd": {
+        "original": {
+          "dea": "-0.31345237860449427132905260764530004094727011763479",
+          "dif": "-0.067242317087149751378441504164882927078871129118",
+          "histogram": "0.49242012303468903990122220696083422773679797703358",
+          "reason": "AVAILABLE"
+        },
+        "reason": "AVAILABLE",
+        "field_observations": {
+          "dif": {
+            "value": "-0.067242317087149751378441504164882927078871129118",
+            "reason": "AVAILABLE",
+            "sign": {
+              "relation": "BELOW",
+              "delta": "-0.067242317087149751378441504164882927078871129118",
+              "reason": "AVAILABLE"
+            },
+            "versus_previous": {
+              "relation": "BELOW",
+              "delta": "-0.005461792626633009390164090631172344196376056475",
+              "reason": "AVAILABLE"
+            }
+          },
+          "dea": {
+            "value": "-0.31345237860449427132905260764530004094727011763479",
+            "reason": "AVAILABLE",
+            "sign": {
+              "relation": "BELOW",
+              "delta": "-0.31345237860449427132905260764530004094727011763479",
+              "reason": "AVAILABLE"
+            },
+            "versus_previous": {
+              "relation": "ABOVE",
+              "delta": "0.06155251537933612998765277587010427846709974712920",
+              "reason": "AVAILABLE"
+            }
+          },
+          "histogram": {
+            "value": "0.49242012303468903990122220696083422773679797703358",
+            "reason": "AVAILABLE",
+            "sign": {
+              "relation": "ABOVE",
+              "delta": "0.49242012303468903990122220696083422773679797703358",
+              "reason": "AVAILABLE"
+            },
+            "versus_previous": {
+              "relation": "BELOW",
+              "delta": "-0.13402861601193827875563373300255324532695160720840",
+              "reason": "AVAILABLE"
+            }
+          }
+        }
+      },
+      "references": {
+        "sha256:49e1061c6c2ea51fab91aa35b08edd0c86a4238bb70b577a588a86f510f2ea76": {
+          "status": "SOURCE_VALUE_COMPARISON_ONLY",
+          "reason": null,
+          "historical_signal_eligible": false,
+          "fields": {
+            "close": {
+              "relation": "ABOVE",
+              "delta": "0.30",
+              "reason": "AVAILABLE",
+              "transition": {
+                "kind": "UNCHANGED",
+                "previous_date": "2025-05-13",
+                "from_relation": "ABOVE",
+                "to_relation": "ABOVE",
+                "reason": "AVAILABLE"
+              }
+            },
+            "high": {
+              "relation": "ABOVE",
+              "delta": "0.45",
+              "reason": "AVAILABLE",
+              "transition": {
+                "kind": "UNCHANGED",
+                "previous_date": "2025-05-13",
+                "from_relation": "ABOVE",
+                "to_relation": "ABOVE",
+                "reason": "AVAILABLE"
+              }
+            },
+            "low": {
+              "relation": "EQUAL",
+              "delta": "0.00",
+              "reason": "AVAILABLE",
+              "transition": {
+                "kind": "ABOVE_TO_EQUAL",
+                "previous_date": "2025-05-13",
+                "from_relation": "ABOVE",
+                "to_relation": "EQUAL",
+                "reason": "AVAILABLE"
+              }
+            }
+          }
+        },
+        "sha256:861cff152163a63b4da4fcbd06811e3cf8273b95d84b8140bab5ccbfb5c59e8a": {
+          "status": "SOURCE_VALUE_COMPARISON_ONLY",
+          "reason": null,
+          "historical_signal_eligible": false,
+          "fields": {
+            "close": {
+              "relation": "BELOW",
+              "delta": "-0.15",
+              "reason": "AVAILABLE",
+              "transition": {
+                "kind": "SEGMENT_START",
+                "previous_date": null,
+                "from_relation": null,
+                "to_relation": "BELOW",
+                "reason": "NO_CONTIGUOUS_PRIOR_POSITION"
+              }
+            },
+            "high": {
+              "relation": "EQUAL",
+              "delta": "0.00",
+              "reason": "AVAILABLE",
+              "transition": {
+                "kind": "SEGMENT_START",
+                "previous_date": null,
+                "from_relation": null,
+                "to_relation": "EQUAL",
+                "reason": "NO_CONTIGUOUS_PRIOR_POSITION"
+              }
+            },
+            "low": {
+              "relation": "BELOW",
+              "delta": "-0.45",
+              "reason": "AVAILABLE",
+              "transition": {
+                "kind": "SEGMENT_START",
+                "previous_date": null,
+                "from_relation": null,
+                "to_relation": "BELOW",
+                "reason": "NO_CONTIGUOUS_PRIOR_POSITION"
+              }
+            }
+          }
+        },
+        "sha256:d63e7759051cdd7ad12c18d0f5beee624c57f49dabca43c9d665cf61bdc62e9b": {
+          "status": "NOT_AVAILABLE",
+          "reason": "REFERENCE_NOT_YET_KNOWN",
+          "historical_signal_eligible": false,
+          "fields": {
+            "close": {
+              "relation": null,
+              "delta": null,
+              "reason": "REFERENCE_NOT_YET_KNOWN",
+              "transition": {
+                "kind": "NOT_AVAILABLE",
+                "previous_date": null,
+                "from_relation": null,
+                "to_relation": null,
+                "reason": "REFERENCE_NOT_YET_KNOWN"
+              }
+            },
+            "high": {
+              "relation": null,
+              "delta": null,
+              "reason": "REFERENCE_NOT_YET_KNOWN",
+              "transition": {
+                "kind": "NOT_AVAILABLE",
+                "previous_date": null,
+                "from_relation": null,
+                "to_relation": null,
+                "reason": "REFERENCE_NOT_YET_KNOWN"
+              }
+            },
+            "low": {
+              "relation": null,
+              "delta": null,
+              "reason": "REFERENCE_NOT_YET_KNOWN",
+              "transition": {
+                "kind": "NOT_AVAILABLE",
+                "previous_date": null,
+                "from_relation": null,
+                "to_relation": null,
+                "reason": "REFERENCE_NOT_YET_KNOWN"
+              }
+            }
+          }
+        },
+        "sha256:3b06e1fab3e34dd44027722290cf9cdddbbff0d947ed560ec6773b2d7121cd97": {
+          "status": "NOT_AVAILABLE",
+          "reason": "REFERENCE_NOT_YET_KNOWN",
+          "historical_signal_eligible": false,
+          "fields": {
+            "close": {
+              "relation": null,
+              "delta": null,
+              "reason": "REFERENCE_NOT_YET_KNOWN",
+              "transition": {
+                "kind": "NOT_AVAILABLE",
+                "previous_date": null,
+                "from_relation": null,
+                "to_relation": null,
+                "reason": "REFERENCE_NOT_YET_KNOWN"
+              }
+            },
+            "high": {
+              "relation": null,
+              "delta": null,
+              "reason": "REFERENCE_NOT_YET_KNOWN",
+              "transition": {
+                "kind": "NOT_AVAILABLE",
+                "previous_date": null,
+                "from_relation": null,
+                "to_relation": null,
+                "reason": "REFERENCE_NOT_YET_KNOWN"
+              }
+            },
+            "low": {
+              "relation": null,
+              "delta": null,
+              "reason": "REFERENCE_NOT_YET_KNOWN",
+              "transition": {
+                "kind": "NOT_AVAILABLE",
+                "previous_date": null,
+                "from_relation": null,
+                "to_relation": null,
+                "reason": "REFERENCE_NOT_YET_KNOWN"
+              }
+            }
+          }
+        }
+      }
+    },
+    {
+      "date": "2025-05-19",
+      "original_bar": {
+        "close": "29.80",
+        "date": "2025-05-19",
+        "high": "30.25",
+        "low": "29.70",
+        "open": "30.15",
+        "volume_shares_scaled": "19015004"
+      },
+      "original_value_known_on": "2025-05-19",
+      "intraday_sequence": "UNKNOWN_FROM_DAILY_OHLC",
+      "body": {
+        "relation": "BELOW",
+        "delta": "-0.35",
+        "reason": "AVAILABLE"
+      },
+      "adjacent": {
+        "previous_record_date": "2025-05-16",
+        "reason": null,
+        "close": {
+          "relation": "BELOW",
+          "delta": "-0.30",
+          "reason": "AVAILABLE"
+        },
+        "high": {
+          "relation": "BELOW",
+          "delta": "-0.15",
+          "reason": "AVAILABLE"
+        },
+        "low": {
+          "relation": "BELOW",
+          "delta": "-0.35",
+          "reason": "AVAILABLE"
+        },
+        "range_direction": "BOTH_ENDS_DOWN",
+        "range_geometry": "OVERLAPPING",
+        "qualification": "ADJACENT_SAVED_RAW_RECORDS_NOT_CONFIRMED_SWINGS_OR_AUTHENTICATED_GAP"
+      },
+      "continuity": {
+        "reason": null,
+        "known_gap_dates": [],
+        "basis_break_dates": []
+      },
+      "volume": {
+        "current_shares": "19015004",
+        "previous_shares": "13229790",
+        "numerator_date": "2025-05-19",
+        "denominator_dates": [
+          "2025-05-16"
+        ],
+        "baseline_includes_current": false,
+        "reason": "AVAILABLE",
+        "ratio": "1.4372869108277606825202818790018586840758621263074",
+        "ratio_precision": "50_SIGNIFICANT_DECIMAL_DIGITS_HALF_EVEN_ORIGINAL_NUMERATOR_DENOMINATOR_RETAINED",
+        "qualification": "PREVIOUS_SAVED_RECORD_DESCRIPTION_NOT_VOLUME_SIGNAL"
+      },
+      "macd": {
+        "original": {
+          "dea": "-0.21824974945991030370160081663155547649379062103810",
+          "dif": "-0.144330383657547668189565102214097218579307176628",
+          "histogram": "0.14783873160472527102407142883491651582896688882020",
+          "reason": "AVAILABLE"
+        },
+        "reason": "AVAILABLE",
+        "field_observations": {
+          "dif": {
+            "value": "-0.144330383657547668189565102214097218579307176628",
+            "reason": "AVAILABLE",
+            "sign": {
+              "relation": "BELOW",
+              "delta": "-0.144330383657547668189565102214097218579307176628",
+              "reason": "AVAILABLE"
+            },
+            "versus_previous": {
+              "relation": "BELOW",
+              "delta": "-0.036288620699971626246739596553672005945942512349",
+              "reason": "AVAILABLE"
+            }
+          },
+          "dea": {
+            "value": "-0.21824974945991030370160081663155547649379062103810",
+            "reason": "AVAILABLE",
+            "sign": {
+              "relation": "BELOW",
+              "delta": "-0.21824974945991030370160081663155547649379062103810",
+              "reason": "AVAILABLE"
+            },
+            "versus_previous": {
+              "relation": "ABOVE",
+              "delta": "0.01847984145059065887800892860436456447862086110252",
+              "reason": "AVAILABLE"
+            }
+          },
+          "histogram": {
+            "value": "0.14783873160472527102407142883491651582896688882020",
+            "reason": "AVAILABLE",
+            "sign": {
+              "relation": "ABOVE",
+              "delta": "0.14783873160472527102407142883491651582896688882020",
+              "reason": "AVAILABLE"
+            },
+            "versus_previous": {
+              "relation": "BELOW",
+              "delta": "-0.10953692430112457024949705031607314084912674690304",
+              "reason": "AVAILABLE"
+            }
+          }
+        }
+      },
+      "references": {
+        "sha256:49e1061c6c2ea51fab91aa35b08edd0c86a4238bb70b577a588a86f510f2ea76": {
+          "status": "SOURCE_VALUE_COMPARISON_ONLY",
+          "reason": null,
+          "historical_signal_eligible": false,
+          "fields": {
+            "close": {
+              "relation": "BELOW",
+              "delta": "-0.25",
+              "reason": "AVAILABLE",
+              "transition": {
+                "kind": "ABOVE_TO_BELOW",
+                "previous_date": "2025-05-16",
+                "from_relation": "ABOVE",
+                "to_relation": "BELOW",
+                "reason": "AVAILABLE"
+              }
+            },
+            "high": {
+              "relation": "ABOVE",
+              "delta": "0.20",
+              "reason": "AVAILABLE",
+              "transition": {
+                "kind": "UNCHANGED",
+                "previous_date": "2025-05-16",
+                "from_relation": "ABOVE",
+                "to_relation": "ABOVE",
+                "reason": "AVAILABLE"
+              }
+            },
+            "low": {
+              "relation": "BELOW",
+              "delta": "-0.35",
+              "reason": "AVAILABLE",
+              "transition": {
+                "kind": "EQUAL_TO_BELOW",
+                "previous_date": "2025-05-16",
+                "from_relation": "EQUAL",
+                "to_relation": "BELOW",
+                "reason": "AVAILABLE"
+              }
+            }
+          }
+        },
+        "sha256:861cff152163a63b4da4fcbd06811e3cf8273b95d84b8140bab5ccbfb5c59e8a": {
+          "status": "SOURCE_VALUE_COMPARISON_ONLY",
+          "reason": null,
+          "historical_signal_eligible": false,
+          "fields": {
+            "close": {
+              "relation": "BELOW",
+              "delta": "-0.70",
+              "reason": "AVAILABLE",
+              "transition": {
+                "kind": "UNCHANGED",
+                "previous_date": "2025-05-16",
+                "from_relation": "BELOW",
+                "to_relation": "BELOW",
+                "reason": "AVAILABLE"
+              }
+            },
+            "high": {
+              "relation": "BELOW",
+              "delta": "-0.25",
+              "reason": "AVAILABLE",
+              "transition": {
+                "kind": "UNCHANGED",
+                "previous_date": "2025-05-16",
+                "from_relation": "BELOW",
+                "to_relation": "BELOW",
+                "reason": "AVAILABLE"
+              }
+            },
+            "low": {
+              "relation": "BELOW",
+              "delta": "-0.80",
+              "reason": "AVAILABLE",
+              "transition": {
+                "kind": "UNCHANGED",
+                "previous_date": "2025-05-16",
+                "from_relation": "BELOW",
+                "to_relation": "BELOW",
+                "reason": "AVAILABLE"
+              }
+            }
+          }
+        },
+        "sha256:d63e7759051cdd7ad12c18d0f5beee624c57f49dabca43c9d665cf61bdc62e9b": {
+          "status": "NOT_AVAILABLE",
+          "reason": "REFERENCE_NOT_YET_KNOWN",
+          "historical_signal_eligible": false,
+          "fields": {
+            "close": {
+              "relation": null,
+              "delta": null,
+              "reason": "REFERENCE_NOT_YET_KNOWN",
+              "transition": {
+                "kind": "NOT_AVAILABLE",
+                "previous_date": null,
+                "from_relation": null,
+                "to_relation": null,
+                "reason": "REFERENCE_NOT_YET_KNOWN"
+              }
+            },
+            "high": {
+              "relation": null,
+              "delta": null,
+              "reason": "REFERENCE_NOT_YET_KNOWN",
+              "transition": {
+                "kind": "NOT_AVAILABLE",
+                "previous_date": null,
+                "from_relation": null,
+                "to_relation": null,
+                "reason": "REFERENCE_NOT_YET_KNOWN"
+              }
+            },
+            "low": {
+              "relation": null,
+              "delta": null,
+              "reason": "REFERENCE_NOT_YET_KNOWN",
+              "transition": {
+                "kind": "NOT_AVAILABLE",
+                "previous_date": null,
+                "from_relation": null,
+                "to_relation": null,
+                "reason": "REFERENCE_NOT_YET_KNOWN"
+              }
+            }
+          }
+        },
+        "sha256:3b06e1fab3e34dd44027722290cf9cdddbbff0d947ed560ec6773b2d7121cd97": {
+          "status": "NOT_AVAILABLE",
+          "reason": "REFERENCE_NOT_YET_KNOWN",
+          "historical_signal_eligible": false,
+          "fields": {
+            "close": {
+              "relation": null,
+              "delta": null,
+              "reason": "REFERENCE_NOT_YET_KNOWN",
+              "transition": {
+                "kind": "NOT_AVAILABLE",
+                "previous_date": null,
+                "from_relation": null,
+                "to_relation": null,
+                "reason": "REFERENCE_NOT_YET_KNOWN"
+              }
+            },
+            "high": {
+              "relation": null,
+              "delta": null,
+              "reason": "REFERENCE_NOT_YET_KNOWN",
+              "transition": {
+                "kind": "NOT_AVAILABLE",
+                "previous_date": null,
+                "from_relation": null,
+                "to_relation": null,
+                "reason": "REFERENCE_NOT_YET_KNOWN"
+              }
+            },
+            "low": {
+              "relation": null,
+              "delta": null,
+              "reason": "REFERENCE_NOT_YET_KNOWN",
+              "transition": {
+                "kind": "NOT_AVAILABLE",
+                "previous_date": null,
+                "from_relation": null,
+                "to_relation": null,
+                "reason": "REFERENCE_NOT_YET_KNOWN"
+              }
+            }
+          }
+        }
+      }
+    },
+    {
+      "date": "2025-05-20",
+      "original_bar": {
+        "close": "30.15",
+        "date": "2025-05-20",
+        "high": "30.30",
+        "low": "29.70",
+        "open": "29.80",
+        "volume_shares_scaled": "13705767"
+      },
+      "original_value_known_on": "2025-05-20",
+      "intraday_sequence": "UNKNOWN_FROM_DAILY_OHLC",
+      "body": {
+        "relation": "ABOVE",
+        "delta": "0.35",
+        "reason": "AVAILABLE"
+      },
+      "adjacent": {
+        "previous_record_date": "2025-05-19",
+        "reason": null,
+        "close": {
+          "relation": "ABOVE",
+          "delta": "0.35",
+          "reason": "AVAILABLE"
+        },
+        "high": {
+          "relation": "ABOVE",
+          "delta": "0.05",
+          "reason": "AVAILABLE"
+        },
+        "low": {
+          "relation": "EQUAL",
+          "delta": "0.00",
+          "reason": "AVAILABLE"
+        },
+        "range_direction": "MIXED_OR_ONE_EQUAL",
+        "range_geometry": "OVERLAPPING",
+        "qualification": "ADJACENT_SAVED_RAW_RECORDS_NOT_CONFIRMED_SWINGS_OR_AUTHENTICATED_GAP"
+      },
+      "continuity": {
+        "reason": null,
+        "known_gap_dates": [],
+        "basis_break_dates": []
+      },
+      "volume": {
+        "current_shares": "13705767",
+        "previous_shares": "19015004",
+        "numerator_date": "2025-05-20",
+        "denominator_dates": [
+          "2025-05-19"
+        ],
+        "baseline_includes_current": false,
+        "reason": "AVAILABLE",
+        "ratio": "0.72078696381026267467521963182337484651594078023859",
+        "ratio_precision": "50_SIGNIFICANT_DECIMAL_DIGITS_HALF_EVEN_ORIGINAL_NUMERATOR_DENOMINATOR_RETAINED",
+        "qualification": "PREVIOUS_SAVED_RECORD_DESCRIPTION_NOT_VOLUME_SIGNAL"
+      },
+      "macd": {
+        "original": {
+          "dea": "-0.20323912368283493132574360459900594044412297044068",
+          "dif": "-0.143196620574533441822314756468807796245452368051",
+          "histogram": "0.12008500621660297900685769626039628839734120477936",
+          "reason": "AVAILABLE"
+        },
+        "reason": "AVAILABLE",
+        "field_observations": {
+          "dif": {
+            "value": "-0.143196620574533441822314756468807796245452368051",
+            "reason": "AVAILABLE",
+            "sign": {
+              "relation": "BELOW",
+              "delta": "-0.143196620574533441822314756468807796245452368051",
+              "reason": "AVAILABLE"
+            },
+            "versus_previous": {
+              "relation": "ABOVE",
+              "delta": "0.001133763083014226367250345745289422333854808577",
+              "reason": "AVAILABLE"
+            }
+          },
+          "dea": {
+            "value": "-0.20323912368283493132574360459900594044412297044068",
+            "reason": "AVAILABLE",
+            "sign": {
+              "relation": "BELOW",
+              "delta": "-0.20323912368283493132574360459900594044412297044068",
+              "reason": "AVAILABLE"
+            },
+            "versus_previous": {
+              "relation": "ABOVE",
+              "delta": "0.01501062577707537237585721203254953604966765059742",
+              "reason": "AVAILABLE"
+            }
+          },
+          "histogram": {
+            "value": "0.12008500621660297900685769626039628839734120477936",
+            "reason": "AVAILABLE",
+            "sign": {
+              "relation": "ABOVE",
+              "delta": "0.12008500621660297900685769626039628839734120477936",
+              "reason": "AVAILABLE"
+            },
+            "versus_previous": {
+              "relation": "BELOW",
+              "delta": "-0.02775372538812229201721373257452022743162568404084",
+              "reason": "AVAILABLE"
+            }
+          }
+        }
+      },
+      "references": {
+        "sha256:49e1061c6c2ea51fab91aa35b08edd0c86a4238bb70b577a588a86f510f2ea76": {
+          "status": "SOURCE_VALUE_COMPARISON_ONLY",
+          "reason": null,
+          "historical_signal_eligible": false,
+          "fields": {
+            "close": {
+              "relation": "ABOVE",
+              "delta": "0.10",
+              "reason": "AVAILABLE",
+              "transition": {
+                "kind": "BELOW_TO_ABOVE",
+                "previous_date": "2025-05-19",
+                "from_relation": "BELOW",
+                "to_relation": "ABOVE",
+                "reason": "AVAILABLE"
+              }
+            },
+            "high": {
+              "relation": "ABOVE",
+              "delta": "0.25",
+              "reason": "AVAILABLE",
+              "transition": {
+                "kind": "UNCHANGED",
+                "previous_date": "2025-05-19",
+                "from_relation": "ABOVE",
+                "to_relation": "ABOVE",
+                "reason": "AVAILABLE"
+              }
+            },
+            "low": {
+              "relation": "BELOW",
+              "delta": "-0.35",
+              "reason": "AVAILABLE",
+              "transition": {
+                "kind": "UNCHANGED",
+                "previous_date": "2025-05-19",
+                "from_relation": "BELOW",
+                "to_relation": "BELOW",
+                "reason": "AVAILABLE"
+              }
+            }
+          }
+        },
+        "sha256:861cff152163a63b4da4fcbd06811e3cf8273b95d84b8140bab5ccbfb5c59e8a": {
+          "status": "SOURCE_VALUE_COMPARISON_ONLY",
+          "reason": null,
+          "historical_signal_eligible": false,
+          "fields": {
+            "close": {
+              "relation": "BELOW",
+              "delta": "-0.35",
+              "reason": "AVAILABLE",
+              "transition": {
+                "kind": "UNCHANGED",
+                "previous_date": "2025-05-19",
+                "from_relation": "BELOW",
+                "to_relation": "BELOW",
+                "reason": "AVAILABLE"
+              }
+            },
+            "high": {
+              "relation": "BELOW",
+              "delta": "-0.20",
+              "reason": "AVAILABLE",
+              "transition": {
+                "kind": "UNCHANGED",
+                "previous_date": "2025-05-19",
+                "from_relation": "BELOW",
+                "to_relation": "BELOW",
+                "reason": "AVAILABLE"
+              }
+            },
+            "low": {
+              "relation": "BELOW",
+              "delta": "-0.80",
+              "reason": "AVAILABLE",
+              "transition": {
+                "kind": "UNCHANGED",
+                "previous_date": "2025-05-19",
+                "from_relation": "BELOW",
+                "to_relation": "BELOW",
+                "reason": "AVAILABLE"
+              }
+            }
+          }
+        },
+        "sha256:d63e7759051cdd7ad12c18d0f5beee624c57f49dabca43c9d665cf61bdc62e9b": {
+          "status": "NOT_AVAILABLE",
+          "reason": "REFERENCE_NOT_YET_KNOWN",
+          "historical_signal_eligible": false,
+          "fields": {
+            "close": {
+              "relation": null,
+              "delta": null,
+              "reason": "REFERENCE_NOT_YET_KNOWN",
+              "transition": {
+                "kind": "NOT_AVAILABLE",
+                "previous_date": null,
+                "from_relation": null,
+                "to_relation": null,
+                "reason": "REFERENCE_NOT_YET_KNOWN"
+              }
+            },
+            "high": {
+              "relation": null,
+              "delta": null,
+              "reason": "REFERENCE_NOT_YET_KNOWN",
+              "transition": {
+                "kind": "NOT_AVAILABLE",
+                "previous_date": null,
+                "from_relation": null,
+                "to_relation": null,
+                "reason": "REFERENCE_NOT_YET_KNOWN"
+              }
+            },
+            "low": {
+              "relation": null,
+              "delta": null,
+              "reason": "REFERENCE_NOT_YET_KNOWN",
+              "transition": {
+                "kind": "NOT_AVAILABLE",
+                "previous_date": null,
+                "from_relation": null,
+                "to_relation": null,
+                "reason": "REFERENCE_NOT_YET_KNOWN"
+              }
+            }
+          }
+        },
+        "sha256:3b06e1fab3e34dd44027722290cf9cdddbbff0d947ed560ec6773b2d7121cd97": {
+          "status": "NOT_AVAILABLE",
+          "reason": "REFERENCE_NOT_YET_KNOWN",
+          "historical_signal_eligible": false,
+          "fields": {
+            "close": {
+              "relation": null,
+              "delta": null,
+              "reason": "REFERENCE_NOT_YET_KNOWN",
+              "transition": {
+                "kind": "NOT_AVAILABLE",
+                "previous_date": null,
+                "from_relation": null,
+                "to_relation": null,
+                "reason": "REFERENCE_NOT_YET_KNOWN"
+              }
+            },
+            "high": {
+              "relation": null,
+              "delta": null,
+              "reason": "REFERENCE_NOT_YET_KNOWN",
+              "transition": {
+                "kind": "NOT_AVAILABLE",
+                "previous_date": null,
+                "from_relation": null,
+                "to_relation": null,
+                "reason": "REFERENCE_NOT_YET_KNOWN"
+              }
+            },
+            "low": {
+              "relation": null,
+              "delta": null,
+              "reason": "REFERENCE_NOT_YET_KNOWN",
+              "transition": {
+                "kind": "NOT_AVAILABLE",
+                "previous_date": null,
+                "from_relation": null,
+                "to_relation": null,
+                "reason": "REFERENCE_NOT_YET_KNOWN"
+              }
+            }
+          }
+        }
+      }
+    },
+    {
+      "date": "2025-05-21",
+      "original_bar": {
+        "close": "30.30",
+        "date": "2025-05-21",
+        "high": "30.40",
+        "low": "29.70",
+        "open": "30.05",
+        "volume_shares_scaled": "22391564"
+      },
+      "original_value_known_on": "2025-05-21",
+      "intraday_sequence": "UNKNOWN_FROM_DAILY_OHLC",
+      "body": {
+        "relation": "ABOVE",
+        "delta": "0.25",
+        "reason": "AVAILABLE"
+      },
+      "adjacent": {
+        "previous_record_date": "2025-05-20",
+        "reason": null,
+        "close": {
+          "relation": "ABOVE",
+          "delta": "0.15",
+          "reason": "AVAILABLE"
+        },
+        "high": {
+          "relation": "ABOVE",
+          "delta": "0.10",
+          "reason": "AVAILABLE"
+        },
+        "low": {
+          "relation": "EQUAL",
+          "delta": "0.00",
+          "reason": "AVAILABLE"
+        },
+        "range_direction": "MIXED_OR_ONE_EQUAL",
+        "range_geometry": "OVERLAPPING",
+        "qualification": "ADJACENT_SAVED_RAW_RECORDS_NOT_CONFIRMED_SWINGS_OR_AUTHENTICATED_GAP"
+      },
+      "continuity": {
+        "reason": null,
+        "known_gap_dates": [],
+        "basis_break_dates": []
+      },
+      "volume": {
+        "current_shares": "22391564",
+        "previous_shares": "13705767",
+        "numerator_date": "2025-05-21",
+        "denominator_dates": [
+          "2025-05-20"
+        ],
+        "baseline_includes_current": false,
+        "reason": "AVAILABLE",
+        "ratio": "1.6337330118044469893585670907728111823293070719793",
+        "ratio_precision": "50_SIGNIFICANT_DECIMAL_DIGITS_HALF_EVEN_ORIGINAL_NUMERATOR_DENOMINATOR_RETAINED",
+        "qualification": "PREVIOUS_SAVED_RECORD_DESCRIPTION_NOT_VOLUME_SIGNAL"
+      },
+      "macd": {
+        "original": {
+          "dea": "-0.18833343142007660150580820300383250970878094008774",
+          "dif": "-0.128710662369043282226066596623138786767412818676",
+          "histogram": "0.11924553810206663855948321276138744588273624282348",
+          "reason": "AVAILABLE"
+        },
+        "reason": "AVAILABLE",
+        "field_observations": {
+          "dif": {
+            "value": "-0.128710662369043282226066596623138786767412818676",
+            "reason": "AVAILABLE",
+            "sign": {
+              "relation": "BELOW",
+              "delta": "-0.128710662369043282226066596623138786767412818676",
+              "reason": "AVAILABLE"
+            },
+            "versus_previous": {
+              "relation": "ABOVE",
+              "delta": "0.014485958205490159596248159845669009478039549375",
+              "reason": "AVAILABLE"
+            }
+          },
+          "dea": {
+            "value": "-0.18833343142007660150580820300383250970878094008774",
+            "reason": "AVAILABLE",
+            "sign": {
+              "relation": "BELOW",
+              "delta": "-0.18833343142007660150580820300383250970878094008774",
+              "reason": "AVAILABLE"
+            },
+            "versus_previous": {
+              "relation": "ABOVE",
+              "delta": "0.01490569226275832981993540159517343073534203035294",
+              "reason": "AVAILABLE"
+            }
+          },
+          "histogram": {
+            "value": "0.11924553810206663855948321276138744588273624282348",
+            "reason": "AVAILABLE",
+            "sign": {
+              "relation": "ABOVE",
+              "delta": "0.11924553810206663855948321276138744588273624282348",
+              "reason": "AVAILABLE"
+            },
+            "versus_previous": {
+              "relation": "BELOW",
+              "delta": "-0.00083946811453634044737448349900884251460496195588",
+              "reason": "AVAILABLE"
+            }
+          }
+        }
+      },
+      "references": {
+        "sha256:49e1061c6c2ea51fab91aa35b08edd0c86a4238bb70b577a588a86f510f2ea76": {
+          "status": "SOURCE_VALUE_COMPARISON_ONLY",
+          "reason": null,
+          "historical_signal_eligible": false,
+          "fields": {
+            "close": {
+              "relation": "ABOVE",
+              "delta": "0.25",
+              "reason": "AVAILABLE",
+              "transition": {
+                "kind": "UNCHANGED",
+                "previous_date": "2025-05-20",
+                "from_relation": "ABOVE",
+                "to_relation": "ABOVE",
+                "reason": "AVAILABLE"
+              }
+            },
+            "high": {
+              "relation": "ABOVE",
+              "delta": "0.35",
+              "reason": "AVAILABLE",
+              "transition": {
+                "kind": "UNCHANGED",
+                "previous_date": "2025-05-20",
+                "from_relation": "ABOVE",
+                "to_relation": "ABOVE",
+                "reason": "AVAILABLE"
+              }
+            },
+            "low": {
+              "relation": "BELOW",
+              "delta": "-0.35",
+              "reason": "AVAILABLE",
+              "transition": {
+                "kind": "UNCHANGED",
+                "previous_date": "2025-05-20",
+                "from_relation": "BELOW",
+                "to_relation": "BELOW",
+                "reason": "AVAILABLE"
+              }
+            }
+          }
+        },
+        "sha256:861cff152163a63b4da4fcbd06811e3cf8273b95d84b8140bab5ccbfb5c59e8a": {
+          "status": "SOURCE_VALUE_COMPARISON_ONLY",
+          "reason": null,
+          "historical_signal_eligible": false,
+          "fields": {
+            "close": {
+              "relation": "BELOW",
+              "delta": "-0.20",
+              "reason": "AVAILABLE",
+              "transition": {
+                "kind": "UNCHANGED",
+                "previous_date": "2025-05-20",
+                "from_relation": "BELOW",
+                "to_relation": "BELOW",
+                "reason": "AVAILABLE"
+              }
+            },
+            "high": {
+              "relation": "BELOW",
+              "delta": "-0.10",
+              "reason": "AVAILABLE",
+              "transition": {
+                "kind": "UNCHANGED",
+                "previous_date": "2025-05-20",
+                "from_relation": "BELOW",
+                "to_relation": "BELOW",
+                "reason": "AVAILABLE"
+              }
+            },
+            "low": {
+              "relation": "BELOW",
+              "delta": "-0.80",
+              "reason": "AVAILABLE",
+              "transition": {
+                "kind": "UNCHANGED",
+                "previous_date": "2025-05-20",
+                "from_relation": "BELOW",
+                "to_relation": "BELOW",
+                "reason": "AVAILABLE"
+              }
+            }
+          }
+        },
+        "sha256:d63e7759051cdd7ad12c18d0f5beee624c57f49dabca43c9d665cf61bdc62e9b": {
+          "status": "NOT_AVAILABLE",
+          "reason": "REFERENCE_NOT_YET_KNOWN",
+          "historical_signal_eligible": false,
+          "fields": {
+            "close": {
+              "relation": null,
+              "delta": null,
+              "reason": "REFERENCE_NOT_YET_KNOWN",
+              "transition": {
+                "kind": "NOT_AVAILABLE",
+                "previous_date": null,
+                "from_relation": null,
+                "to_relation": null,
+                "reason": "REFERENCE_NOT_YET_KNOWN"
+              }
+            },
+            "high": {
+              "relation": null,
+              "delta": null,
+              "reason": "REFERENCE_NOT_YET_KNOWN",
+              "transition": {
+                "kind": "NOT_AVAILABLE",
+                "previous_date": null,
+                "from_relation": null,
+                "to_relation": null,
+                "reason": "REFERENCE_NOT_YET_KNOWN"
+              }
+            },
+            "low": {
+              "relation": null,
+              "delta": null,
+              "reason": "REFERENCE_NOT_YET_KNOWN",
+              "transition": {
+                "kind": "NOT_AVAILABLE",
+                "previous_date": null,
+                "from_relation": null,
+                "to_relation": null,
+                "reason": "REFERENCE_NOT_YET_KNOWN"
+              }
+            }
+          }
+        },
+        "sha256:3b06e1fab3e34dd44027722290cf9cdddbbff0d947ed560ec6773b2d7121cd97": {
+          "status": "NOT_AVAILABLE",
+          "reason": "REFERENCE_NOT_YET_KNOWN",
+          "historical_signal_eligible": false,
+          "fields": {
+            "close": {
+              "relation": null,
+              "delta": null,
+              "reason": "REFERENCE_NOT_YET_KNOWN",
+              "transition": {
+                "kind": "NOT_AVAILABLE",
+                "previous_date": null,
+                "from_relation": null,
+                "to_relation": null,
+                "reason": "REFERENCE_NOT_YET_KNOWN"
+              }
+            },
+            "high": {
+              "relation": null,
+              "delta": null,
+              "reason": "REFERENCE_NOT_YET_KNOWN",
+              "transition": {
+                "kind": "NOT_AVAILABLE",
+                "previous_date": null,
+                "from_relation": null,
+                "to_relation": null,
+                "reason": "REFERENCE_NOT_YET_KNOWN"
+              }
+            },
+            "low": {
+              "relation": null,
+              "delta": null,
+              "reason": "REFERENCE_NOT_YET_KNOWN",
+              "transition": {
+                "kind": "NOT_AVAILABLE",
+                "previous_date": null,
+                "from_relation": null,
+                "to_relation": null,
+                "reason": "REFERENCE_NOT_YET_KNOWN"
+              }
+            }
+          }
+        }
+      }
+    },
+    {
+      "date": "2025-05-22",
+      "original_bar": {
+        "close": "30.00",
+        "date": "2025-05-22",
+        "high": "30.30",
+        "low": "29.70",
+        "open": "30.20",
+        "volume_shares_scaled": "27968889"
+      },
+      "original_value_known_on": "2025-05-22",
+      "intraday_sequence": "UNKNOWN_FROM_DAILY_OHLC",
+      "body": {
+        "relation": "BELOW",
+        "delta": "-0.20",
+        "reason": "AVAILABLE"
+      },
+      "adjacent": {
+        "previous_record_date": "2025-05-21",
+        "reason": null,
+        "close": {
+          "relation": "BELOW",
+          "delta": "-0.30",
+          "reason": "AVAILABLE"
+        },
+        "high": {
+          "relation": "BELOW",
+          "delta": "-0.10",
+          "reason": "AVAILABLE"
+        },
+        "low": {
+          "relation": "EQUAL",
+          "delta": "0.00",
+          "reason": "AVAILABLE"
+        },
+        "range_direction": "MIXED_OR_ONE_EQUAL",
+        "range_geometry": "OVERLAPPING",
+        "qualification": "ADJACENT_SAVED_RAW_RECORDS_NOT_CONFIRMED_SWINGS_OR_AUTHENTICATED_GAP"
+      },
+      "continuity": {
+        "reason": null,
+        "known_gap_dates": [],
+        "basis_break_dates": []
+      },
+      "volume": {
+        "current_shares": "27968889",
+        "previous_shares": "22391564",
+        "numerator_date": "2025-05-22",
+        "denominator_dates": [
+          "2025-05-21"
+        ],
+        "baseline_includes_current": false,
+        "reason": "AVAILABLE",
+        "ratio": "1.2490815290972975358041090832243786097299858107276",
+        "ratio_precision": "50_SIGNIFICANT_DECIMAL_DIGITS_HALF_EVEN_ORIGINAL_NUMERATOR_DENOMINATOR_RETAINED",
+        "qualification": "PREVIOUS_SAVED_RECORD_DESCRIPTION_NOT_VOLUME_SIGNAL"
+      },
+      "macd": {
+        "original": {
+          "dea": "-0.17863196527027679404993252540629688036066086147319",
+          "dif": "-0.139826100671077564226429815016154362968180547015",
+          "histogram": "0.07761172919839845964700542078028503478496062891638",
+          "reason": "AVAILABLE"
+        },
+        "reason": "AVAILABLE",
+        "field_observations": {
+          "dif": {
+            "value": "-0.139826100671077564226429815016154362968180547015",
+            "reason": "AVAILABLE",
+            "sign": {
+              "relation": "BELOW",
+              "delta": "-0.139826100671077564226429815016154362968180547015",
+              "reason": "AVAILABLE"
+            },
+            "versus_previous": {
+              "relation": "BELOW",
+              "delta": "-0.011115438302034282000363218393015576200767728339",
+              "reason": "AVAILABLE"
+            }
+          },
+          "dea": {
+            "value": "-0.17863196527027679404993252540629688036066086147319",
+            "reason": "AVAILABLE",
+            "sign": {
+              "relation": "BELOW",
+              "delta": "-0.17863196527027679404993252540629688036066086147319",
+              "reason": "AVAILABLE"
+            },
+            "versus_previous": {
+              "relation": "ABOVE",
+              "delta": "0.00970146614979980745587567759753562934812007861455",
+              "reason": "AVAILABLE"
+            }
+          },
+          "histogram": {
+            "value": "0.07761172919839845964700542078028503478496062891638",
+            "reason": "AVAILABLE",
+            "sign": {
+              "relation": "ABOVE",
+              "delta": "0.07761172919839845964700542078028503478496062891638",
+              "reason": "AVAILABLE"
+            },
+            "versus_previous": {
+              "relation": "BELOW",
+              "delta": "-0.04163380890366817891247779198110241109777561390710",
+              "reason": "AVAILABLE"
+            }
+          }
+        }
+      },
+      "references": {
+        "sha256:49e1061c6c2ea51fab91aa35b08edd0c86a4238bb70b577a588a86f510f2ea76": {
+          "status": "SOURCE_VALUE_COMPARISON_ONLY",
+          "reason": null,
+          "historical_signal_eligible": false,
+          "fields": {
+            "close": {
+              "relation": "BELOW",
+              "delta": "-0.05",
+              "reason": "AVAILABLE",
+              "transition": {
+                "kind": "ABOVE_TO_BELOW",
+                "previous_date": "2025-05-21",
+                "from_relation": "ABOVE",
+                "to_relation": "BELOW",
+                "reason": "AVAILABLE"
+              }
+            },
+            "high": {
+              "relation": "ABOVE",
+              "delta": "0.25",
+              "reason": "AVAILABLE",
+              "transition": {
+                "kind": "UNCHANGED",
+                "previous_date": "2025-05-21",
+                "from_relation": "ABOVE",
+                "to_relation": "ABOVE",
+                "reason": "AVAILABLE"
+              }
+            },
+            "low": {
+              "relation": "BELOW",
+              "delta": "-0.35",
+              "reason": "AVAILABLE",
+              "transition": {
+                "kind": "UNCHANGED",
+                "previous_date": "2025-05-21",
+                "from_relation": "BELOW",
+                "to_relation": "BELOW",
+                "reason": "AVAILABLE"
+              }
+            }
+          }
+        },
+        "sha256:861cff152163a63b4da4fcbd06811e3cf8273b95d84b8140bab5ccbfb5c59e8a": {
+          "status": "SOURCE_VALUE_COMPARISON_ONLY",
+          "reason": null,
+          "historical_signal_eligible": false,
+          "fields": {
+            "close": {
+              "relation": "BELOW",
+              "delta": "-0.50",
+              "reason": "AVAILABLE",
+              "transition": {
+                "kind": "UNCHANGED",
+                "previous_date": "2025-05-21",
+                "from_relation": "BELOW",
+                "to_relation": "BELOW",
+                "reason": "AVAILABLE"
+              }
+            },
+            "high": {
+              "relation": "BELOW",
+              "delta": "-0.20",
+              "reason": "AVAILABLE",
+              "transition": {
+                "kind": "UNCHANGED",
+                "previous_date": "2025-05-21",
+                "from_relation": "BELOW",
+                "to_relation": "BELOW",
+                "reason": "AVAILABLE"
+              }
+            },
+            "low": {
+              "relation": "BELOW",
+              "delta": "-0.80",
+              "reason": "AVAILABLE",
+              "transition": {
+                "kind": "UNCHANGED",
+                "previous_date": "2025-05-21",
+                "from_relation": "BELOW",
+                "to_relation": "BELOW",
+                "reason": "AVAILABLE"
+              }
+            }
+          }
+        },
+        "sha256:d63e7759051cdd7ad12c18d0f5beee624c57f49dabca43c9d665cf61bdc62e9b": {
+          "status": "NOT_AVAILABLE",
+          "reason": "REFERENCE_NOT_YET_KNOWN",
+          "historical_signal_eligible": false,
+          "fields": {
+            "close": {
+              "relation": null,
+              "delta": null,
+              "reason": "REFERENCE_NOT_YET_KNOWN",
+              "transition": {
+                "kind": "NOT_AVAILABLE",
+                "previous_date": null,
+                "from_relation": null,
+                "to_relation": null,
+                "reason": "REFERENCE_NOT_YET_KNOWN"
+              }
+            },
+            "high": {
+              "relation": null,
+              "delta": null,
+              "reason": "REFERENCE_NOT_YET_KNOWN",
+              "transition": {
+                "kind": "NOT_AVAILABLE",
+                "previous_date": null,
+                "from_relation": null,
+                "to_relation": null,
+                "reason": "REFERENCE_NOT_YET_KNOWN"
+              }
+            },
+            "low": {
+              "relation": null,
+              "delta": null,
+              "reason": "REFERENCE_NOT_YET_KNOWN",
+              "transition": {
+                "kind": "NOT_AVAILABLE",
+                "previous_date": null,
+                "from_relation": null,
+                "to_relation": null,
+                "reason": "REFERENCE_NOT_YET_KNOWN"
+              }
+            }
+          }
+        },
+        "sha256:3b06e1fab3e34dd44027722290cf9cdddbbff0d947ed560ec6773b2d7121cd97": {
+          "status": "NOT_AVAILABLE",
+          "reason": "REFERENCE_NOT_YET_KNOWN",
+          "historical_signal_eligible": false,
+          "fields": {
+            "close": {
+              "relation": null,
+              "delta": null,
+              "reason": "REFERENCE_NOT_YET_KNOWN",
+              "transition": {
+                "kind": "NOT_AVAILABLE",
+                "previous_date": null,
+                "from_relation": null,
+                "to_relation": null,
+                "reason": "REFERENCE_NOT_YET_KNOWN"
+              }
+            },
+            "high": {
+              "relation": null,
+              "delta": null,
+              "reason": "REFERENCE_NOT_YET_KNOWN",
+              "transition": {
+                "kind": "NOT_AVAILABLE",
+                "previous_date": null,
+                "from_relation": null,
+                "to_relation": null,
+                "reason": "REFERENCE_NOT_YET_KNOWN"
+              }
+            },
+            "low": {
+              "relation": null,
+              "delta": null,
+              "reason": "REFERENCE_NOT_YET_KNOWN",
+              "transition": {
+                "kind": "NOT_AVAILABLE",
+                "previous_date": null,
+                "from_relation": null,
+                "to_relation": null,
+                "reason": "REFERENCE_NOT_YET_KNOWN"
+              }
+            }
+          }
+        }
+      }
+    },
+    {
+      "date": "2026-10-12",
+      "original_bar": {
+        "close": "27.00",
+        "date": "2026-10-12",
+        "high": "27.20",
+        "low": "25.95",
+        "open": "25.95",
+        "volume_shares_scaled": "128673485"
+      },
+      "original_value_known_on": "2026-10-12",
+      "intraday_sequence": "UNKNOWN_FROM_DAILY_OHLC",
+      "body": {
+        "relation": "ABOVE",
+        "delta": "1.05",
+        "reason": "AVAILABLE"
+      },
+      "adjacent": {
+        "previous_record_date": "2026-10-08",
+        "reason": null,
+        "close": {
+          "relation": "ABOVE",
+          "delta": "1.30",
+          "reason": "AVAILABLE"
+        },
+        "high": {
+          "relation": "ABOVE",
+          "delta": "1.30",
+          "reason": "AVAILABLE"
+        },
+        "low": {
+          "relation": "ABOVE",
+          "delta": "0.50",
+          "reason": "AVAILABLE"
+        },
+        "range_direction": "BOTH_ENDS_UP",
+        "range_geometry": "ENTIRELY_ABOVE",
+        "qualification": "ADJACENT_SAVED_RAW_RECORDS_NOT_CONFIRMED_SWINGS_OR_AUTHENTICATED_GAP"
+      },
+      "continuity": {
+        "reason": null,
+        "known_gap_dates": [],
+        "basis_break_dates": []
+      },
+      "volume": {
+        "current_shares": "128673485",
+        "previous_shares": "33060614",
+        "numerator_date": "2026-10-12",
+        "denominator_dates": [
+          "2026-10-08"
+        ],
+        "baseline_includes_current": false,
+        "reason": "AVAILABLE",
+        "ratio": "3.8920476492057890999846524326499199319165699705396",
+        "ratio_precision": "50_SIGNIFICANT_DECIMAL_DIGITS_HALF_EVEN_ORIGINAL_NUMERATOR_DENOMINATOR_RETAINED",
+        "qualification": "PREVIOUS_SAVED_RECORD_DESCRIPTION_NOT_VOLUME_SIGNAL"
+      },
+      "macd": {
+        "original": {
+          "dea": "0.28297900542268286990866556364730079122232221722161",
+          "dif": "0.419810335620579568468928535854730837985996023545",
+          "histogram": "0.27366266039579339712052594441486009352734761264678",
+          "reason": "AVAILABLE"
+        },
+        "reason": "AVAILABLE",
+        "field_observations": {
+          "dif": {
+            "value": "0.419810335620579568468928535854730837985996023545",
+            "reason": "AVAILABLE",
+            "sign": {
+              "relation": "ABOVE",
+              "delta": "0.419810335620579568468928535854730837985996023545",
+              "reason": "AVAILABLE"
+            },
+            "versus_previous": {
+              "relation": "ABOVE",
+              "delta": "0.116728555046661411168983256672907333676680038891",
+              "reason": "AVAILABLE"
+            }
+          },
+          "dea": {
+            "value": "0.28297900542268286990866556364730079122232221722161",
+            "reason": "AVAILABLE",
+            "sign": {
+              "relation": "ABOVE",
+              "delta": "0.28297900542268286990866556364730079122232221722161",
+              "reason": "AVAILABLE"
+            },
+            "versus_previous": {
+              "relation": "ABOVE",
+              "delta": "0.03420783254947417464006574305185751169091845158085",
+              "reason": "AVAILABLE"
+            }
+          },
+          "histogram": {
+            "value": "0.27366266039579339712052594441486009352734761264678",
+            "reason": "AVAILABLE",
+            "sign": {
+              "relation": "ABOVE",
+              "delta": "0.27366266039579339712052594441486009352734761264678",
+              "reason": "AVAILABLE"
+            },
+            "versus_previous": {
+              "relation": "ABOVE",
+              "delta": "0.16504144499437447305783502724209964397152317462030",
+              "reason": "AVAILABLE"
+            }
+          }
+        }
+      },
+      "references": {
+        "sha256:49e1061c6c2ea51fab91aa35b08edd0c86a4238bb70b577a588a86f510f2ea76": {
+          "status": "SOURCE_VALUE_COMPARISON_ONLY",
+          "reason": null,
+          "historical_signal_eligible": false,
+          "fields": {
+            "close": {
+              "relation": "BELOW",
+              "delta": "-3.05",
+              "reason": "AVAILABLE",
+              "transition": {
+                "kind": "UNCHANGED",
+                "previous_date": "2026-10-08",
+                "from_relation": "BELOW",
+                "to_relation": "BELOW",
+                "reason": "AVAILABLE"
+              }
+            },
+            "high": {
+              "relation": "BELOW",
+              "delta": "-2.85",
+              "reason": "AVAILABLE",
+              "transition": {
+                "kind": "UNCHANGED",
+                "previous_date": "2026-10-08",
+                "from_relation": "BELOW",
+                "to_relation": "BELOW",
+                "reason": "AVAILABLE"
+              }
+            },
+            "low": {
+              "relation": "BELOW",
+              "delta": "-4.10",
+              "reason": "AVAILABLE",
+              "transition": {
+                "kind": "UNCHANGED",
+                "previous_date": "2026-10-08",
+                "from_relation": "BELOW",
+                "to_relation": "BELOW",
+                "reason": "AVAILABLE"
+              }
+            }
+          }
+        },
+        "sha256:861cff152163a63b4da4fcbd06811e3cf8273b95d84b8140bab5ccbfb5c59e8a": {
+          "status": "SOURCE_VALUE_COMPARISON_ONLY",
+          "reason": null,
+          "historical_signal_eligible": false,
+          "fields": {
+            "close": {
+              "relation": "BELOW",
+              "delta": "-3.50",
+              "reason": "AVAILABLE",
+              "transition": {
+                "kind": "UNCHANGED",
+                "previous_date": "2026-10-08",
+                "from_relation": "BELOW",
+                "to_relation": "BELOW",
+                "reason": "AVAILABLE"
+              }
+            },
+            "high": {
+              "relation": "BELOW",
+              "delta": "-3.30",
+              "reason": "AVAILABLE",
+              "transition": {
+                "kind": "UNCHANGED",
+                "previous_date": "2026-10-08",
+                "from_relation": "BELOW",
+                "to_relation": "BELOW",
+                "reason": "AVAILABLE"
+              }
+            },
+            "low": {
+              "relation": "BELOW",
+              "delta": "-4.55",
+              "reason": "AVAILABLE",
+              "transition": {
+                "kind": "UNCHANGED",
+                "previous_date": "2026-10-08",
+                "from_relation": "BELOW",
+                "to_relation": "BELOW",
+                "reason": "AVAILABLE"
+              }
+            }
+          }
+        },
+        "sha256:d63e7759051cdd7ad12c18d0f5beee624c57f49dabca43c9d665cf61bdc62e9b": {
+          "status": "SOURCE_VALUE_COMPARISON_ONLY",
+          "reason": null,
+          "historical_signal_eligible": false,
+          "fields": {
+            "close": {
+              "relation": "ABOVE",
+              "delta": "0.05",
+              "reason": "AVAILABLE",
+              "transition": {
+                "kind": "BELOW_TO_ABOVE",
+                "previous_date": "2026-10-08",
+                "from_relation": "BELOW",
+                "to_relation": "ABOVE",
+                "reason": "AVAILABLE"
+              }
+            },
+            "high": {
+              "relation": "ABOVE",
+              "delta": "0.25",
+              "reason": "AVAILABLE",
+              "transition": {
+                "kind": "BELOW_TO_ABOVE",
+                "previous_date": "2026-10-08",
+                "from_relation": "BELOW",
+                "to_relation": "ABOVE",
+                "reason": "AVAILABLE"
+              }
+            },
+            "low": {
+              "relation": "BELOW",
+              "delta": "-1.00",
+              "reason": "AVAILABLE",
+              "transition": {
+                "kind": "UNCHANGED",
+                "previous_date": "2026-10-08",
+                "from_relation": "BELOW",
+                "to_relation": "BELOW",
+                "reason": "AVAILABLE"
+              }
+            }
+          }
+        },
+        "sha256:3b06e1fab3e34dd44027722290cf9cdddbbff0d947ed560ec6773b2d7121cd97": {
+          "status": "NOT_AVAILABLE",
+          "reason": "REFERENCE_NOT_YET_KNOWN",
+          "historical_signal_eligible": false,
+          "fields": {
+            "close": {
+              "relation": null,
+              "delta": null,
+              "reason": "REFERENCE_NOT_YET_KNOWN",
+              "transition": {
+                "kind": "NOT_AVAILABLE",
+                "previous_date": null,
+                "from_relation": null,
+                "to_relation": null,
+                "reason": "REFERENCE_NOT_YET_KNOWN"
+              }
+            },
+            "high": {
+              "relation": null,
+              "delta": null,
+              "reason": "REFERENCE_NOT_YET_KNOWN",
+              "transition": {
+                "kind": "NOT_AVAILABLE",
+                "previous_date": null,
+                "from_relation": null,
+                "to_relation": null,
+                "reason": "REFERENCE_NOT_YET_KNOWN"
+              }
+            },
+            "low": {
+              "relation": null,
+              "delta": null,
+              "reason": "REFERENCE_NOT_YET_KNOWN",
+              "transition": {
+                "kind": "NOT_AVAILABLE",
+                "previous_date": null,
+                "from_relation": null,
+                "to_relation": null,
+                "reason": "REFERENCE_NOT_YET_KNOWN"
+              }
+            }
+          }
+        }
+      }
+    },
+    {
+      "date": "2026-10-13",
+      "original_bar": {
+        "close": "26.35",
+        "date": "2026-10-13",
+        "high": "26.85",
+        "low": "26.25",
+        "open": "26.85",
+        "volume_shares_scaled": "55126796"
+      },
+      "original_value_known_on": "2026-10-13",
+      "intraday_sequence": "UNKNOWN_FROM_DAILY_OHLC",
+      "body": {
+        "relation": "BELOW",
+        "delta": "-0.50",
+        "reason": "AVAILABLE"
+      },
+      "adjacent": {
+        "previous_record_date": "2026-10-12",
+        "reason": null,
+        "close": {
+          "relation": "BELOW",
+          "delta": "-0.65",
+          "reason": "AVAILABLE"
+        },
+        "high": {
+          "relation": "BELOW",
+          "delta": "-0.35",
+          "reason": "AVAILABLE"
+        },
+        "low": {
+          "relation": "ABOVE",
+          "delta": "0.30",
+          "reason": "AVAILABLE"
+        },
+        "range_direction": "MIXED_OR_ONE_EQUAL",
+        "range_geometry": "OVERLAPPING",
+        "qualification": "ADJACENT_SAVED_RAW_RECORDS_NOT_CONFIRMED_SWINGS_OR_AUTHENTICATED_GAP"
+      },
+      "continuity": {
+        "reason": null,
+        "known_gap_dates": [],
+        "basis_break_dates": []
+      },
+      "volume": {
+        "current_shares": "55126796",
+        "previous_shares": "128673485",
+        "numerator_date": "2026-10-13",
+        "denominator_dates": [
+          "2026-10-12"
+        ],
+        "baseline_includes_current": false,
+        "reason": "AVAILABLE",
+        "ratio": "0.42842389789940017556841644570363505737021112002990",
+        "ratio_precision": "50_SIGNIFICANT_DECIMAL_DIGITS_HALF_EVEN_ORIGINAL_NUMERATOR_DENOMINATOR_RETAINED",
+        "qualification": "PREVIOUS_SAVED_RECORD_DESCRIPTION_NOT_VOLUME_SIGNAL"
+      },
+      "macd": {
+        "original": {
+          "dea": "0.31730886764194857417775216460823443214721824720489",
+          "dif": "0.454628316519011391254098568451968995846802367138",
+          "histogram": "0.27463889775412563415269280768746912739916823986622",
+          "reason": "AVAILABLE"
+        },
+        "reason": "AVAILABLE",
+        "field_observations": {
+          "dif": {
+            "value": "0.454628316519011391254098568451968995846802367138",
+            "reason": "AVAILABLE",
+            "sign": {
+              "relation": "ABOVE",
+              "delta": "0.454628316519011391254098568451968995846802367138",
+              "reason": "AVAILABLE"
+            },
+            "versus_previous": {
+              "relation": "ABOVE",
+              "delta": "0.034817980898431822785170032597238157860806343593",
+              "reason": "AVAILABLE"
+            }
+          },
+          "dea": {
+            "value": "0.31730886764194857417775216460823443214721824720489",
+            "reason": "AVAILABLE",
+            "sign": {
+              "relation": "ABOVE",
+              "delta": "0.31730886764194857417775216460823443214721824720489",
+              "reason": "AVAILABLE"
+            },
+            "versus_previous": {
+              "relation": "ABOVE",
+              "delta": "0.03432986221926570426908660096093364092489602998328",
+              "reason": "AVAILABLE"
+            }
+          },
+          "histogram": {
+            "value": "0.27463889775412563415269280768746912739916823986622",
+            "reason": "AVAILABLE",
+            "sign": {
+              "relation": "ABOVE",
+              "delta": "0.27463889775412563415269280768746912739916823986622",
+              "reason": "AVAILABLE"
+            },
+            "versus_previous": {
+              "relation": "ABOVE",
+              "delta": "0.00097623735833223703216686327260903387182062721944",
+              "reason": "AVAILABLE"
+            }
+          }
+        }
+      },
+      "references": {
+        "sha256:49e1061c6c2ea51fab91aa35b08edd0c86a4238bb70b577a588a86f510f2ea76": {
+          "status": "SOURCE_VALUE_COMPARISON_ONLY",
+          "reason": null,
+          "historical_signal_eligible": false,
+          "fields": {
+            "close": {
+              "relation": "BELOW",
+              "delta": "-3.70",
+              "reason": "AVAILABLE",
+              "transition": {
+                "kind": "UNCHANGED",
+                "previous_date": "2026-10-12",
+                "from_relation": "BELOW",
+                "to_relation": "BELOW",
+                "reason": "AVAILABLE"
+              }
+            },
+            "high": {
+              "relation": "BELOW",
+              "delta": "-3.20",
+              "reason": "AVAILABLE",
+              "transition": {
+                "kind": "UNCHANGED",
+                "previous_date": "2026-10-12",
+                "from_relation": "BELOW",
+                "to_relation": "BELOW",
+                "reason": "AVAILABLE"
+              }
+            },
+            "low": {
+              "relation": "BELOW",
+              "delta": "-3.80",
+              "reason": "AVAILABLE",
+              "transition": {
+                "kind": "UNCHANGED",
+                "previous_date": "2026-10-12",
+                "from_relation": "BELOW",
+                "to_relation": "BELOW",
+                "reason": "AVAILABLE"
+              }
+            }
+          }
+        },
+        "sha256:861cff152163a63b4da4fcbd06811e3cf8273b95d84b8140bab5ccbfb5c59e8a": {
+          "status": "SOURCE_VALUE_COMPARISON_ONLY",
+          "reason": null,
+          "historical_signal_eligible": false,
+          "fields": {
+            "close": {
+              "relation": "BELOW",
+              "delta": "-4.15",
+              "reason": "AVAILABLE",
+              "transition": {
+                "kind": "UNCHANGED",
+                "previous_date": "2026-10-12",
+                "from_relation": "BELOW",
+                "to_relation": "BELOW",
+                "reason": "AVAILABLE"
+              }
+            },
+            "high": {
+              "relation": "BELOW",
+              "delta": "-3.65",
+              "reason": "AVAILABLE",
+              "transition": {
+                "kind": "UNCHANGED",
+                "previous_date": "2026-10-12",
+                "from_relation": "BELOW",
+                "to_relation": "BELOW",
+                "reason": "AVAILABLE"
+              }
+            },
+            "low": {
+              "relation": "BELOW",
+              "delta": "-4.25",
+              "reason": "AVAILABLE",
+              "transition": {
+                "kind": "UNCHANGED",
+                "previous_date": "2026-10-12",
+                "from_relation": "BELOW",
+                "to_relation": "BELOW",
+                "reason": "AVAILABLE"
+              }
+            }
+          }
+        },
+        "sha256:d63e7759051cdd7ad12c18d0f5beee624c57f49dabca43c9d665cf61bdc62e9b": {
+          "status": "SOURCE_VALUE_COMPARISON_ONLY",
+          "reason": null,
+          "historical_signal_eligible": false,
+          "fields": {
+            "close": {
+              "relation": "BELOW",
+              "delta": "-0.60",
+              "reason": "AVAILABLE",
+              "transition": {
+                "kind": "ABOVE_TO_BELOW",
+                "previous_date": "2026-10-12",
+                "from_relation": "ABOVE",
+                "to_relation": "BELOW",
+                "reason": "AVAILABLE"
+              }
+            },
+            "high": {
+              "relation": "BELOW",
+              "delta": "-0.10",
+              "reason": "AVAILABLE",
+              "transition": {
+                "kind": "ABOVE_TO_BELOW",
+                "previous_date": "2026-10-12",
+                "from_relation": "ABOVE",
+                "to_relation": "BELOW",
+                "reason": "AVAILABLE"
+              }
+            },
+            "low": {
+              "relation": "BELOW",
+              "delta": "-0.70",
+              "reason": "AVAILABLE",
+              "transition": {
+                "kind": "UNCHANGED",
+                "previous_date": "2026-10-12",
+                "from_relation": "BELOW",
+                "to_relation": "BELOW",
+                "reason": "AVAILABLE"
+              }
+            }
+          }
+        },
+        "sha256:3b06e1fab3e34dd44027722290cf9cdddbbff0d947ed560ec6773b2d7121cd97": {
+          "status": "NOT_AVAILABLE",
+          "reason": "REFERENCE_NOT_YET_KNOWN",
+          "historical_signal_eligible": false,
+          "fields": {
+            "close": {
+              "relation": null,
+              "delta": null,
+              "reason": "REFERENCE_NOT_YET_KNOWN",
+              "transition": {
+                "kind": "NOT_AVAILABLE",
+                "previous_date": null,
+                "from_relation": null,
+                "to_relation": null,
+                "reason": "REFERENCE_NOT_YET_KNOWN"
+              }
+            },
+            "high": {
+              "relation": null,
+              "delta": null,
+              "reason": "REFERENCE_NOT_YET_KNOWN",
+              "transition": {
+                "kind": "NOT_AVAILABLE",
+                "previous_date": null,
+                "from_relation": null,
+                "to_relation": null,
+                "reason": "REFERENCE_NOT_YET_KNOWN"
+              }
+            },
+            "low": {
+              "relation": null,
+              "delta": null,
+              "reason": "REFERENCE_NOT_YET_KNOWN",
+              "transition": {
+                "kind": "NOT_AVAILABLE",
+                "previous_date": null,
+                "from_relation": null,
+                "to_relation": null,
+                "reason": "REFERENCE_NOT_YET_KNOWN"
+              }
+            }
+          }
+        }
+      }
+    },
+    {
+      "date": "2026-10-14",
+      "original_bar": {
+        "close": "27.05",
+        "date": "2026-10-14",
+        "high": "27.40",
+        "low": "26.60",
+        "open": "26.70",
+        "volume_shares_scaled": "80795741"
+      },
+      "original_value_known_on": "2026-10-14",
+      "intraday_sequence": "UNKNOWN_FROM_DAILY_OHLC",
+      "body": {
+        "relation": "ABOVE",
+        "delta": "0.35",
+        "reason": "AVAILABLE"
+      },
+      "adjacent": {
+        "previous_record_date": "2026-10-13",
+        "reason": null,
+        "close": {
+          "relation": "ABOVE",
+          "delta": "0.70",
+          "reason": "AVAILABLE"
+        },
+        "high": {
+          "relation": "ABOVE",
+          "delta": "0.55",
+          "reason": "AVAILABLE"
+        },
+        "low": {
+          "relation": "ABOVE",
+          "delta": "0.35",
+          "reason": "AVAILABLE"
+        },
+        "range_direction": "BOTH_ENDS_UP",
+        "range_geometry": "OVERLAPPING",
+        "qualification": "ADJACENT_SAVED_RAW_RECORDS_NOT_CONFIRMED_SWINGS_OR_AUTHENTICATED_GAP"
+      },
+      "continuity": {
+        "reason": null,
+        "known_gap_dates": [],
+        "basis_break_dates": []
+      },
+      "volume": {
+        "current_shares": "80795741",
+        "previous_shares": "55126796",
+        "numerator_date": "2026-10-14",
+        "denominator_dates": [
+          "2026-10-13"
+        ],
+        "baseline_includes_current": false,
+        "reason": "AVAILABLE",
+        "ratio": "1.4656346253099853653747625746288610714832764813685",
+        "ratio_precision": "50_SIGNIFICANT_DECIMAL_DIGITS_HALF_EVEN_ORIGINAL_NUMERATOR_DENOMINATOR_RETAINED",
+        "qualification": "PREVIOUS_SAVED_RECORD_DESCRIPTION_NOT_VOLUME_SIGNAL"
+      },
+      "macd": {
+        "original": {
+          "dea": "0.36036046766294102688128661044275491607137127348171",
+          "dif": "0.532566867746910837695424393780836851767983378589",
+          "histogram": "0.34441280016793962162827556667616387139322421021458",
+          "reason": "AVAILABLE"
+        },
+        "reason": "AVAILABLE",
+        "field_observations": {
+          "dif": {
+            "value": "0.532566867746910837695424393780836851767983378589",
+            "reason": "AVAILABLE",
+            "sign": {
+              "relation": "ABOVE",
+              "delta": "0.532566867746910837695424393780836851767983378589",
+              "reason": "AVAILABLE"
+            },
+            "versus_previous": {
+              "relation": "ABOVE",
+              "delta": "0.077938551227899446441325825328867855921181011451",
+              "reason": "AVAILABLE"
+            }
+          },
+          "dea": {
+            "value": "0.36036046766294102688128661044275491607137127348171",
+            "reason": "AVAILABLE",
+            "sign": {
+              "relation": "ABOVE",
+              "delta": "0.36036046766294102688128661044275491607137127348171",
+              "reason": "AVAILABLE"
+            },
+            "versus_previous": {
+              "relation": "ABOVE",
+              "delta": "0.04305160002099245270353444583452048392415302627682",
+              "reason": "AVAILABLE"
+            }
+          },
+          "histogram": {
+            "value": "0.34441280016793962162827556667616387139322421021458",
+            "reason": "AVAILABLE",
+            "sign": {
+              "relation": "ABOVE",
+              "delta": "0.34441280016793962162827556667616387139322421021458",
+              "reason": "AVAILABLE"
+            },
+            "versus_previous": {
+              "relation": "ABOVE",
+              "delta": "0.06977390241381398747558275898869474399405597034836",
+              "reason": "AVAILABLE"
+            }
+          }
+        }
+      },
+      "references": {
+        "sha256:49e1061c6c2ea51fab91aa35b08edd0c86a4238bb70b577a588a86f510f2ea76": {
+          "status": "SOURCE_VALUE_COMPARISON_ONLY",
+          "reason": null,
+          "historical_signal_eligible": false,
+          "fields": {
+            "close": {
+              "relation": "BELOW",
+              "delta": "-3.00",
+              "reason": "AVAILABLE",
+              "transition": {
+                "kind": "UNCHANGED",
+                "previous_date": "2026-10-13",
+                "from_relation": "BELOW",
+                "to_relation": "BELOW",
+                "reason": "AVAILABLE"
+              }
+            },
+            "high": {
+              "relation": "BELOW",
+              "delta": "-2.65",
+              "reason": "AVAILABLE",
+              "transition": {
+                "kind": "UNCHANGED",
+                "previous_date": "2026-10-13",
+                "from_relation": "BELOW",
+                "to_relation": "BELOW",
+                "reason": "AVAILABLE"
+              }
+            },
+            "low": {
+              "relation": "BELOW",
+              "delta": "-3.45",
+              "reason": "AVAILABLE",
+              "transition": {
+                "kind": "UNCHANGED",
+                "previous_date": "2026-10-13",
+                "from_relation": "BELOW",
+                "to_relation": "BELOW",
+                "reason": "AVAILABLE"
+              }
+            }
+          }
+        },
+        "sha256:861cff152163a63b4da4fcbd06811e3cf8273b95d84b8140bab5ccbfb5c59e8a": {
+          "status": "SOURCE_VALUE_COMPARISON_ONLY",
+          "reason": null,
+          "historical_signal_eligible": false,
+          "fields": {
+            "close": {
+              "relation": "BELOW",
+              "delta": "-3.45",
+              "reason": "AVAILABLE",
+              "transition": {
+                "kind": "UNCHANGED",
+                "previous_date": "2026-10-13",
+                "from_relation": "BELOW",
+                "to_relation": "BELOW",
+                "reason": "AVAILABLE"
+              }
+            },
+            "high": {
+              "relation": "BELOW",
+              "delta": "-3.10",
+              "reason": "AVAILABLE",
+              "transition": {
+                "kind": "UNCHANGED",
+                "previous_date": "2026-10-13",
+                "from_relation": "BELOW",
+                "to_relation": "BELOW",
+                "reason": "AVAILABLE"
+              }
+            },
+            "low": {
+              "relation": "BELOW",
+              "delta": "-3.90",
+              "reason": "AVAILABLE",
+              "transition": {
+                "kind": "UNCHANGED",
+                "previous_date": "2026-10-13",
+                "from_relation": "BELOW",
+                "to_relation": "BELOW",
+                "reason": "AVAILABLE"
+              }
+            }
+          }
+        },
+        "sha256:d63e7759051cdd7ad12c18d0f5beee624c57f49dabca43c9d665cf61bdc62e9b": {
+          "status": "SOURCE_VALUE_COMPARISON_ONLY",
+          "reason": null,
+          "historical_signal_eligible": false,
+          "fields": {
+            "close": {
+              "relation": "ABOVE",
+              "delta": "0.10",
+              "reason": "AVAILABLE",
+              "transition": {
+                "kind": "BELOW_TO_ABOVE",
+                "previous_date": "2026-10-13",
+                "from_relation": "BELOW",
+                "to_relation": "ABOVE",
+                "reason": "AVAILABLE"
+              }
+            },
+            "high": {
+              "relation": "ABOVE",
+              "delta": "0.45",
+              "reason": "AVAILABLE",
+              "transition": {
+                "kind": "BELOW_TO_ABOVE",
+                "previous_date": "2026-10-13",
+                "from_relation": "BELOW",
+                "to_relation": "ABOVE",
+                "reason": "AVAILABLE"
+              }
+            },
+            "low": {
+              "relation": "BELOW",
+              "delta": "-0.35",
+              "reason": "AVAILABLE",
+              "transition": {
+                "kind": "UNCHANGED",
+                "previous_date": "2026-10-13",
+                "from_relation": "BELOW",
+                "to_relation": "BELOW",
+                "reason": "AVAILABLE"
+              }
+            }
+          }
+        },
+        "sha256:3b06e1fab3e34dd44027722290cf9cdddbbff0d947ed560ec6773b2d7121cd97": {
+          "status": "SOURCE_VALUE_COMPARISON_ONLY",
+          "reason": null,
+          "historical_signal_eligible": false,
+          "fields": {
+            "close": {
+              "relation": "BELOW",
+              "delta": "-0.35",
+              "reason": "AVAILABLE",
+              "transition": {
+                "kind": "SEGMENT_START",
+                "previous_date": null,
+                "from_relation": null,
+                "to_relation": "BELOW",
+                "reason": "NO_CONTIGUOUS_PRIOR_POSITION"
+              }
+            },
+            "high": {
+              "relation": "EQUAL",
+              "delta": "0.00",
+              "reason": "AVAILABLE",
+              "transition": {
+                "kind": "SEGMENT_START",
+                "previous_date": null,
+                "from_relation": null,
+                "to_relation": "EQUAL",
+                "reason": "NO_CONTIGUOUS_PRIOR_POSITION"
+              }
+            },
+            "low": {
+              "relation": "BELOW",
+              "delta": "-0.80",
+              "reason": "AVAILABLE",
+              "transition": {
+                "kind": "SEGMENT_START",
+                "previous_date": null,
+                "from_relation": null,
+                "to_relation": "BELOW",
+                "reason": "NO_CONTIGUOUS_PRIOR_POSITION"
+              }
+            }
+          }
+        }
+      }
+    },
+    {
+      "date": "2026-10-15",
+      "original_bar": {
+        "close": "26.80",
+        "date": "2026-10-15",
+        "high": "27.05",
+        "low": "26.60",
+        "open": "26.95",
+        "volume_shares_scaled": "42215985"
+      },
+      "original_value_known_on": "2026-10-15",
+      "intraday_sequence": "UNKNOWN_FROM_DAILY_OHLC",
+      "body": {
+        "relation": "BELOW",
+        "delta": "-0.15",
+        "reason": "AVAILABLE"
+      },
+      "adjacent": {
+        "previous_record_date": "2026-10-14",
+        "reason": null,
+        "close": {
+          "relation": "BELOW",
+          "delta": "-0.25",
+          "reason": "AVAILABLE"
+        },
+        "high": {
+          "relation": "BELOW",
+          "delta": "-0.35",
+          "reason": "AVAILABLE"
+        },
+        "low": {
+          "relation": "EQUAL",
+          "delta": "0.00",
+          "reason": "AVAILABLE"
+        },
+        "range_direction": "MIXED_OR_ONE_EQUAL",
+        "range_geometry": "OVERLAPPING",
+        "qualification": "ADJACENT_SAVED_RAW_RECORDS_NOT_CONFIRMED_SWINGS_OR_AUTHENTICATED_GAP"
+      },
+      "continuity": {
+        "reason": null,
+        "known_gap_dates": [],
+        "basis_break_dates": []
+      },
+      "volume": {
+        "current_shares": "42215985",
+        "previous_shares": "80795741",
+        "numerator_date": "2026-10-15",
+        "denominator_dates": [
+          "2026-10-14"
+        ],
+        "baseline_includes_current": false,
+        "reason": "AVAILABLE",
+        "ratio": "0.52250260320033453248482491174875170709802636750370",
+        "ratio_precision": "50_SIGNIFICANT_DECIMAL_DIGITS_HALF_EVEN_ORIGINAL_NUMERATOR_DENOMINATOR_RETAINED",
+        "qualification": "PREVIOUS_SAVED_RECORD_DESCRIPTION_NOT_VOLUME_SIGNAL"
+      },
+      "macd": {
+        "original": {
+          "dea": "0.40181190956958382347179673371453957270998306466537",
+          "dif": "0.567617677196155009833837226801678199264430229400",
+          "histogram": "0.33161153525314237272408098617427725310889432946926",
+          "reason": "AVAILABLE"
+        },
+        "reason": "AVAILABLE",
+        "field_observations": {
+          "dif": {
+            "value": "0.567617677196155009833837226801678199264430229400",
+            "reason": "AVAILABLE",
+            "sign": {
+              "relation": "ABOVE",
+              "delta": "0.567617677196155009833837226801678199264430229400",
+              "reason": "AVAILABLE"
+            },
+            "versus_previous": {
+              "relation": "ABOVE",
+              "delta": "0.035050809449244172138412833020841347496446850811",
+              "reason": "AVAILABLE"
+            }
+          },
+          "dea": {
+            "value": "0.40181190956958382347179673371453957270998306466537",
+            "reason": "AVAILABLE",
+            "sign": {
+              "relation": "ABOVE",
+              "delta": "0.40181190956958382347179673371453957270998306466537",
+              "reason": "AVAILABLE"
+            },
+            "versus_previous": {
+              "relation": "ABOVE",
+              "delta": "0.04145144190664279659051012327178465663861179118366",
+              "reason": "AVAILABLE"
+            }
+          },
+          "histogram": {
+            "value": "0.33161153525314237272408098617427725310889432946926",
+            "reason": "AVAILABLE",
+            "sign": {
+              "relation": "ABOVE",
+              "delta": "0.33161153525314237272408098617427725310889432946926",
+              "reason": "AVAILABLE"
+            },
+            "versus_previous": {
+              "relation": "BELOW",
+              "delta": "-0.01280126491479724890419458050188661828432988074532",
+              "reason": "AVAILABLE"
+            }
+          }
+        }
+      },
+      "references": {
+        "sha256:49e1061c6c2ea51fab91aa35b08edd0c86a4238bb70b577a588a86f510f2ea76": {
+          "status": "SOURCE_VALUE_COMPARISON_ONLY",
+          "reason": null,
+          "historical_signal_eligible": false,
+          "fields": {
+            "close": {
+              "relation": "BELOW",
+              "delta": "-3.25",
+              "reason": "AVAILABLE",
+              "transition": {
+                "kind": "UNCHANGED",
+                "previous_date": "2026-10-14",
+                "from_relation": "BELOW",
+                "to_relation": "BELOW",
+                "reason": "AVAILABLE"
+              }
+            },
+            "high": {
+              "relation": "BELOW",
+              "delta": "-3.00",
+              "reason": "AVAILABLE",
+              "transition": {
+                "kind": "UNCHANGED",
+                "previous_date": "2026-10-14",
+                "from_relation": "BELOW",
+                "to_relation": "BELOW",
+                "reason": "AVAILABLE"
+              }
+            },
+            "low": {
+              "relation": "BELOW",
+              "delta": "-3.45",
+              "reason": "AVAILABLE",
+              "transition": {
+                "kind": "UNCHANGED",
+                "previous_date": "2026-10-14",
+                "from_relation": "BELOW",
+                "to_relation": "BELOW",
+                "reason": "AVAILABLE"
+              }
+            }
+          }
+        },
+        "sha256:861cff152163a63b4da4fcbd06811e3cf8273b95d84b8140bab5ccbfb5c59e8a": {
+          "status": "SOURCE_VALUE_COMPARISON_ONLY",
+          "reason": null,
+          "historical_signal_eligible": false,
+          "fields": {
+            "close": {
+              "relation": "BELOW",
+              "delta": "-3.70",
+              "reason": "AVAILABLE",
+              "transition": {
+                "kind": "UNCHANGED",
+                "previous_date": "2026-10-14",
+                "from_relation": "BELOW",
+                "to_relation": "BELOW",
+                "reason": "AVAILABLE"
+              }
+            },
+            "high": {
+              "relation": "BELOW",
+              "delta": "-3.45",
+              "reason": "AVAILABLE",
+              "transition": {
+                "kind": "UNCHANGED",
+                "previous_date": "2026-10-14",
+                "from_relation": "BELOW",
+                "to_relation": "BELOW",
+                "reason": "AVAILABLE"
+              }
+            },
+            "low": {
+              "relation": "BELOW",
+              "delta": "-3.90",
+              "reason": "AVAILABLE",
+              "transition": {
+                "kind": "UNCHANGED",
+                "previous_date": "2026-10-14",
+                "from_relation": "BELOW",
+                "to_relation": "BELOW",
+                "reason": "AVAILABLE"
+              }
+            }
+          }
+        },
+        "sha256:d63e7759051cdd7ad12c18d0f5beee624c57f49dabca43c9d665cf61bdc62e9b": {
+          "status": "SOURCE_VALUE_COMPARISON_ONLY",
+          "reason": null,
+          "historical_signal_eligible": false,
+          "fields": {
+            "close": {
+              "relation": "BELOW",
+              "delta": "-0.15",
+              "reason": "AVAILABLE",
+              "transition": {
+                "kind": "ABOVE_TO_BELOW",
+                "previous_date": "2026-10-14",
+                "from_relation": "ABOVE",
+                "to_relation": "BELOW",
+                "reason": "AVAILABLE"
+              }
+            },
+            "high": {
+              "relation": "ABOVE",
+              "delta": "0.10",
+              "reason": "AVAILABLE",
+              "transition": {
+                "kind": "UNCHANGED",
+                "previous_date": "2026-10-14",
+                "from_relation": "ABOVE",
+                "to_relation": "ABOVE",
+                "reason": "AVAILABLE"
+              }
+            },
+            "low": {
+              "relation": "BELOW",
+              "delta": "-0.35",
+              "reason": "AVAILABLE",
+              "transition": {
+                "kind": "UNCHANGED",
+                "previous_date": "2026-10-14",
+                "from_relation": "BELOW",
+                "to_relation": "BELOW",
+                "reason": "AVAILABLE"
+              }
+            }
+          }
+        },
+        "sha256:3b06e1fab3e34dd44027722290cf9cdddbbff0d947ed560ec6773b2d7121cd97": {
+          "status": "SOURCE_VALUE_COMPARISON_ONLY",
+          "reason": null,
+          "historical_signal_eligible": false,
+          "fields": {
+            "close": {
+              "relation": "BELOW",
+              "delta": "-0.60",
+              "reason": "AVAILABLE",
+              "transition": {
+                "kind": "UNCHANGED",
+                "previous_date": "2026-10-14",
+                "from_relation": "BELOW",
+                "to_relation": "BELOW",
+                "reason": "AVAILABLE"
+              }
+            },
+            "high": {
+              "relation": "BELOW",
+              "delta": "-0.35",
+              "reason": "AVAILABLE",
+              "transition": {
+                "kind": "EQUAL_TO_BELOW",
+                "previous_date": "2026-10-14",
+                "from_relation": "EQUAL",
+                "to_relation": "BELOW",
+                "reason": "AVAILABLE"
+              }
+            },
+            "low": {
+              "relation": "BELOW",
+              "delta": "-0.80",
+              "reason": "AVAILABLE",
+              "transition": {
+                "kind": "UNCHANGED",
+                "previous_date": "2026-10-14",
+                "from_relation": "BELOW",
+                "to_relation": "BELOW",
+                "reason": "AVAILABLE"
+              }
+            }
+          }
+        }
+      }
+    },
+    {
+      "date": "2026-10-16",
+      "original_bar": {
+        "close": "27.30",
+        "date": "2026-10-16",
+        "high": "27.70",
+        "low": "26.95",
+        "open": "27.10",
+        "volume_shares_scaled": "57437884"
+      },
+      "original_value_known_on": "2026-10-16",
+      "intraday_sequence": "UNKNOWN_FROM_DAILY_OHLC",
+      "body": {
+        "relation": "ABOVE",
+        "delta": "0.20",
+        "reason": "AVAILABLE"
+      },
+      "adjacent": {
+        "previous_record_date": "2026-10-15",
+        "reason": null,
+        "close": {
+          "relation": "ABOVE",
+          "delta": "0.50",
+          "reason": "AVAILABLE"
+        },
+        "high": {
+          "relation": "ABOVE",
+          "delta": "0.65",
+          "reason": "AVAILABLE"
+        },
+        "low": {
+          "relation": "ABOVE",
+          "delta": "0.35",
+          "reason": "AVAILABLE"
+        },
+        "range_direction": "BOTH_ENDS_UP",
+        "range_geometry": "OVERLAPPING",
+        "qualification": "ADJACENT_SAVED_RAW_RECORDS_NOT_CONFIRMED_SWINGS_OR_AUTHENTICATED_GAP"
+      },
+      "continuity": {
+        "reason": null,
+        "known_gap_dates": [],
+        "basis_break_dates": []
+      },
+      "volume": {
+        "current_shares": "57437884",
+        "previous_shares": "42215985",
+        "numerator_date": "2026-10-16",
+        "denominator_dates": [
+          "2026-10-15"
+        ],
+        "baseline_includes_current": false,
+        "reason": "AVAILABLE",
+        "ratio": "1.3605719255395793797065258574447570037747549891350",
+        "ratio_precision": "50_SIGNIFICANT_DECIMAL_DIGITS_HALF_EVEN_ORIGINAL_NUMERATOR_DENOMINATOR_RETAINED",
+        "qualification": "PREVIOUS_SAVED_RECORD_DESCRIPTION_NOT_VOLUME_SIGNAL"
+      },
+      "macd": {
+        "original": {
+          "dea": "0.44714884764746645236741177260178191782968455633330",
+          "dif": "0.628496599958996967949871928150751298308490523005",
+          "histogram": "0.36269550462306103116492031109793876095761193334340",
+          "reason": "AVAILABLE"
+        },
+        "reason": "AVAILABLE",
+        "field_observations": {
+          "dif": {
+            "value": "0.628496599958996967949871928150751298308490523005",
+            "reason": "AVAILABLE",
+            "sign": {
+              "relation": "ABOVE",
+              "delta": "0.628496599958996967949871928150751298308490523005",
+              "reason": "AVAILABLE"
+            },
+            "versus_previous": {
+              "relation": "ABOVE",
+              "delta": "0.060878922762841958116034701349073099044060293605",
+              "reason": "AVAILABLE"
+            }
+          },
+          "dea": {
+            "value": "0.44714884764746645236741177260178191782968455633330",
+            "reason": "AVAILABLE",
+            "sign": {
+              "relation": "ABOVE",
+              "delta": "0.44714884764746645236741177260178191782968455633330",
+              "reason": "AVAILABLE"
+            },
+            "versus_previous": {
+              "relation": "ABOVE",
+              "delta": "0.04533693807788262889561503888724234511970149166793",
+              "reason": "AVAILABLE"
+            }
+          },
+          "histogram": {
+            "value": "0.36269550462306103116492031109793876095761193334340",
+            "reason": "AVAILABLE",
+            "sign": {
+              "relation": "ABOVE",
+              "delta": "0.36269550462306103116492031109793876095761193334340",
+              "reason": "AVAILABLE"
+            },
+            "versus_previous": {
+              "relation": "ABOVE",
+              "delta": "0.03108396936991865844083932492366150784871760387414",
+              "reason": "AVAILABLE"
+            }
+          }
+        }
+      },
+      "references": {
+        "sha256:49e1061c6c2ea51fab91aa35b08edd0c86a4238bb70b577a588a86f510f2ea76": {
+          "status": "SOURCE_VALUE_COMPARISON_ONLY",
+          "reason": null,
+          "historical_signal_eligible": false,
+          "fields": {
+            "close": {
+              "relation": "BELOW",
+              "delta": "-2.75",
+              "reason": "AVAILABLE",
+              "transition": {
+                "kind": "UNCHANGED",
+                "previous_date": "2026-10-15",
+                "from_relation": "BELOW",
+                "to_relation": "BELOW",
+                "reason": "AVAILABLE"
+              }
+            },
+            "high": {
+              "relation": "BELOW",
+              "delta": "-2.35",
+              "reason": "AVAILABLE",
+              "transition": {
+                "kind": "UNCHANGED",
+                "previous_date": "2026-10-15",
+                "from_relation": "BELOW",
+                "to_relation": "BELOW",
+                "reason": "AVAILABLE"
+              }
+            },
+            "low": {
+              "relation": "BELOW",
+              "delta": "-3.10",
+              "reason": "AVAILABLE",
+              "transition": {
+                "kind": "UNCHANGED",
+                "previous_date": "2026-10-15",
+                "from_relation": "BELOW",
+                "to_relation": "BELOW",
+                "reason": "AVAILABLE"
+              }
+            }
+          }
+        },
+        "sha256:861cff152163a63b4da4fcbd06811e3cf8273b95d84b8140bab5ccbfb5c59e8a": {
+          "status": "SOURCE_VALUE_COMPARISON_ONLY",
+          "reason": null,
+          "historical_signal_eligible": false,
+          "fields": {
+            "close": {
+              "relation": "BELOW",
+              "delta": "-3.20",
+              "reason": "AVAILABLE",
+              "transition": {
+                "kind": "UNCHANGED",
+                "previous_date": "2026-10-15",
+                "from_relation": "BELOW",
+                "to_relation": "BELOW",
+                "reason": "AVAILABLE"
+              }
+            },
+            "high": {
+              "relation": "BELOW",
+              "delta": "-2.80",
+              "reason": "AVAILABLE",
+              "transition": {
+                "kind": "UNCHANGED",
+                "previous_date": "2026-10-15",
+                "from_relation": "BELOW",
+                "to_relation": "BELOW",
+                "reason": "AVAILABLE"
+              }
+            },
+            "low": {
+              "relation": "BELOW",
+              "delta": "-3.55",
+              "reason": "AVAILABLE",
+              "transition": {
+                "kind": "UNCHANGED",
+                "previous_date": "2026-10-15",
+                "from_relation": "BELOW",
+                "to_relation": "BELOW",
+                "reason": "AVAILABLE"
+              }
+            }
+          }
+        },
+        "sha256:d63e7759051cdd7ad12c18d0f5beee624c57f49dabca43c9d665cf61bdc62e9b": {
+          "status": "SOURCE_VALUE_COMPARISON_ONLY",
+          "reason": null,
+          "historical_signal_eligible": false,
+          "fields": {
+            "close": {
+              "relation": "ABOVE",
+              "delta": "0.35",
+              "reason": "AVAILABLE",
+              "transition": {
+                "kind": "BELOW_TO_ABOVE",
+                "previous_date": "2026-10-15",
+                "from_relation": "BELOW",
+                "to_relation": "ABOVE",
+                "reason": "AVAILABLE"
+              }
+            },
+            "high": {
+              "relation": "ABOVE",
+              "delta": "0.75",
+              "reason": "AVAILABLE",
+              "transition": {
+                "kind": "UNCHANGED",
+                "previous_date": "2026-10-15",
+                "from_relation": "ABOVE",
+                "to_relation": "ABOVE",
+                "reason": "AVAILABLE"
+              }
+            },
+            "low": {
+              "relation": "EQUAL",
+              "delta": "0.00",
+              "reason": "AVAILABLE",
+              "transition": {
+                "kind": "BELOW_TO_EQUAL",
+                "previous_date": "2026-10-15",
+                "from_relation": "BELOW",
+                "to_relation": "EQUAL",
+                "reason": "AVAILABLE"
+              }
+            }
+          }
+        },
+        "sha256:3b06e1fab3e34dd44027722290cf9cdddbbff0d947ed560ec6773b2d7121cd97": {
+          "status": "SOURCE_VALUE_COMPARISON_ONLY",
+          "reason": null,
+          "historical_signal_eligible": false,
+          "fields": {
+            "close": {
+              "relation": "BELOW",
+              "delta": "-0.10",
+              "reason": "AVAILABLE",
+              "transition": {
+                "kind": "UNCHANGED",
+                "previous_date": "2026-10-15",
+                "from_relation": "BELOW",
+                "to_relation": "BELOW",
+                "reason": "AVAILABLE"
+              }
+            },
+            "high": {
+              "relation": "ABOVE",
+              "delta": "0.30",
+              "reason": "AVAILABLE",
+              "transition": {
+                "kind": "BELOW_TO_ABOVE",
+                "previous_date": "2026-10-15",
+                "from_relation": "BELOW",
+                "to_relation": "ABOVE",
+                "reason": "AVAILABLE"
+              }
+            },
+            "low": {
+              "relation": "BELOW",
+              "delta": "-0.45",
+              "reason": "AVAILABLE",
+              "transition": {
+                "kind": "UNCHANGED",
+                "previous_date": "2026-10-15",
+                "from_relation": "BELOW",
+                "to_relation": "BELOW",
+                "reason": "AVAILABLE"
+              }
+            }
+          }
+        }
+      }
+    }
+  ],
+  "new_engine_run": false,
+  "python_contract_tests_rerun": false,
+  "bootstrap_executed": false,
+  "physical_android": "NOT_TESTED_NEW_BUILD",
+  "new_research": "ASSISTANT_ANALYSIS_NOT_USER_ADJUDICATED",
+  "comparison_data_bytes_equal_to_prior_fixed_artifact": true
+}
