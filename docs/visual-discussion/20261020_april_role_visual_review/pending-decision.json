@@ -1,9 +1,9 @@
 {
-  "status": "PENDING_USER_ADJUDICATION",
+  "status": "USER_CONFIRMED_CASE_DO_NOT_REASK",
   "case": "April 2025 constituent-role vs subsequent-response role in broad original context",
   "question": "在完整大帶脈絡中，四月急跌及之後低位反彈／再下探，哪些是舊帶的構成來源，哪些僅是後續反應？可分開判讀，不必整月同一角色。",
   "assistant_proposal_not_approved": "先將急跌記為原區之後續轉弱觀測、低位反覆單獨保留，未有歸屬依據前不自動納入舊帶構成；舊帶重要性不因而調降。",
-  "user_answer": null,
+  "user_answer": "ABC是自己一個區間沒錯和舊大帶相比他就是跳空下跌，更為弱勢的區間",
   "not_asking": [
     "already supplied month span",
     "local vs overall general principle",
@@ -16,5 +16,19 @@
   "formal_membership": null,
   "formal_end": null,
   "primary_pressure_id": null,
-  "historical_signal_eligible": false
+  "historical_signal_eligible": false,
+  "answered_at": "2026-10-20T17:26:41+08:00",
+  "manual_grouping": {
+    "markers": [
+      "A",
+      "B",
+      "C"
+    ],
+    "same_own_interval": true,
+    "distinct_from_old_major_band": true,
+    "relative_structure": "GAP_DOWN_AND_WEAKER_THAN_OLD_MAJOR_BAND"
+  },
+  "assistant_proposal_status": "SUPERSEDED_BY_USER_CASE_JUDGMENT_DO_NOT_SPLIT_A_OUT_OF_ABC",
+  "formal_membership_scope": "Exhaustive machine source membership and new precise boundaries not assigned; manual ABC grouping and relative weakness are confirmed.",
+  "latest_decision": "../20261020_april_interval_user_decision/user-decision.json"
 }

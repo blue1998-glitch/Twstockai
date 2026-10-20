@@ -1,3 +1,7 @@
+> 最新已答（2026-10-20 17:26）：使用者確認「ABC是自己一個區間沒錯和舊大帶相比他就是跳空下跌，更為弱勢的區間」。本例USER_CONFIRMED_CASE_DO_NOT_REASK，A/B/C同自己的區間，舊PENDING已關閉；勿沿助手A-vs-BC暫案拆出A。原圖冊問句及下方文字保留為裁決前歷史；最新看[使用者判讀與證據](../20261020_april_interval_user_decision/README.md)及[完整續接](../20261020_april_interval_user_decision/WORK_HANDOFF.md)。不據此泛化所有跳空或自動歸屬，舊帶重要性不調降。
+
+---
+
 請接續股票系統M1，仍在Work用實際廣角圖討論右端「構成來源」與「後續反應」的核心差別。新問題PENDING_USER_ADJUDICATION：四月急跌A及其後低位反彈B、再下探C，哪些是舊帶本身構成、哪些只屬後續反應？可分開，不必整月同一角色。助手工作假說是A先作後續轉弱觀測、B/C先獨立保留低位局部觀測，未有歸屬依據不自動納入舊帶；未獲答，不當批准，不交Codex實作。
 
 儲存庫blue1998-glitch/Twstockai，分支dev/m1-v018-chart-annotations，本輪起點84e0dd176d6f98d994cd6d3c45978688e5c19925，研究提交與逐檔回讀見本目錄GITHUB_READBACK.json，收據另回讀；最新以實際HEAD為準。先確認包含起點、e0bd48c9245c877fda8ebca5598f69ff346a99cb／e45d972406cc6a4ef1a9babf1ba9865d97073096及fff47915523fab8c8de8279de8bbb7a26b05647b；若有更新先讀最新交接保留全部成果，不用main或舊ZIP覆蓋，不能讀GitHub明說未取得。

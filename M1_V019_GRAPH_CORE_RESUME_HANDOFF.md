@@ -1,3 +1,17 @@
+# 最新：ABC獨立區間／跳空下跌更弱勢已確認（2026-10-20 Work）
+
+[使用者裁決／跳空原值／完整續接](docs/visual-discussion/20261020_april_interval_user_decision/README.md)。接續b94ffcc。使用者17:26原話「ABC是自己一個區間沒錯和舊大帶相比他就是跳空下跌，更為弱勢的區間」。USER_CONFIRMED_CASE_DO_NOT_REASK，前輪四月構成／反應問題關閉，不留PENDING；A/B/C同自己的低位區間，相對舊帶跳空下跌更弱勢。助手A作反應、B/C另列的暫案被本例判讀取代，不能拆A出ABC；A仍可提供轉弱反應證據。此例人工分組與相對弱勢已定，不能再全標UNKNOWN；通用自動歸屬與全原來源機器成員表未定。
+
+原值新核：4/7 A H30.80低於前保存4/2 L32.25，日K範圍間隔1.45；O29.20較前C32.40低3.20、C29.80低2.60。僅保存Raw相鄰記錄，不冒稱日曆／公司行動已核。A紅K但前收跌，B4/10綠K但前收漲保留。ABC均在原已答4/7～6/2含端39筆內；既有39筆／5/13局部代表／6/3排除不重問、不用新答改精確端點或等同B44/B80。
+
+本輪保存原話／案例分組與弱勢關係、更新前輪pending與入口，研究audit只讀原K及Decimal間隔開收差、紅綠前收、39筆與ABC落內，原comparison／query SHA保持。無原產品分類器／源碼參數、原辨識MACDreaction／query adapter CLI／bootstrap／14、22或舊產品測試、新圖PDF／瀏覽器／ZIP或Android。前輪圖冊與400%靜態渲染是歷史非重跑；新圖仍須可放大及原尺寸，Android NOT_TESTED_NEW_BUILD，file://不重試不繞過。
+
+舊帶重要性不調降、不宣告解除；本例不泛化所有跳空都分新區間、不新增自動合併／選主壓力／量門檻或買賣。primary_pressure_id=null、歷史選取null／historical_signal_eligible=false，正式精確邊界／全部原成員與代表／增量量權重／衰減重要性／合併直接承接／解除生命階段未知。原已定三概念／月份39筆5/13、6/3、1/27與11/25非關鍵點不重問，一月小窗問撤回；舊共享來源角色PENDING_NOT_REASKED不由本次代答。五月十月反例、原拒絕餘量／時點、相等日OHLC、89版本84幾何非獨立及不同窗不排名保持；Raw公司行動／五年Adjusted／歷史可得／九待核非窮盡日曆／Darvas／SQLite未知，核心NOT_ESTABLISHED／分類NOT_VALIDATED／行動NOT_EVALUATED。
+
+下一步仍Work以已定本例與反例研究可泛化的結構關係，不無限重問同例，也不寫死日期價格答案；已定可重現規則或工程缺陷才交Codex。原核心參數策略庫歷史舊頁案例及main保留，不部署付費交易訊息子代理。同分支逐檔回讀，結束附最新已核SHA、入口完成未完成及完整續接。
+
+---
+
 # 最新：可放大圖冊；四月構成來源或後續反應待判（2026-10-20 Work）
 
 [兩頁PDF／原尺寸PNG／原值與完整續接](docs/visual-discussion/20261020_april_role_visual_review/README.md)。接續84e0dd1。落實新圖可放大要求：第1頁保留原597筆全景，第2頁新增2024/7～2025/6全241筆原K量MA20/60/130/260與MACD向量圖，A/B/C僅討論標記；黃色四月非正式成員界。PDF及PNG附原尺寸，原互動產品／引擎不變，不重建查詢reaction或主圖。
