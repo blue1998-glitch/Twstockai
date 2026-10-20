@@ -1,3 +1,15 @@
+# 最新：局部與整體分別判斷已由使用者確認（2026-10-20 Work）
+
+使用者09:31回覆「認同，繼續」，直接承接「重返／突破局部與整體壓力已解除應分別判斷？」；此命題USER_CONFIRMED_PRINCIPLE／DO_NOT_REASK。局部證據仍可影響整體，分別判斷不等各層互相隔離。前輪未答狀態為歷史，已由本輪覆蓋；不是批准全部助手判讀、正式整帶解除／區界、合併承接、量權重或交易規則。
+
+[本輪原話／兩張真實標註圖／精確反例與完整續接](docs/visual-discussion/20261020_pressure_update_evidence/README.md)。5/19收29.80跌回B77研究下緣30.05下方，但MACD柱仍+0.1478…，5/26才轉負−0.0030…；5/14收30.35仍在上方不提前標跌回。10/12～16原五個上／下位置全保留，10/13柱略增仍收回26.95下方，10/16後未知。新分析不等出場／有效突破規則；不讓指標抹去價格反證，不以兩位顯示代替原精度判斷。
+
+沿原fff4791 HTML／JSON核SHA，Chromium133 HTTP改兩個閱讀窗、觀察黃虛線／①②③與字型後保存2PNG，完整data/core/分析身分全等、原HTML SHA不變、0pageerror。另Decimal只讀核原序列，不是引擎／指標重算、bootstrap、7／47重跑、互動下載回歸或Android；Android NOT_TESTED_NEW_BUILD，file://未用未重試未繞過。前期查詢缺暫存初始化參數已改明示repo／SHA成功，無保存影響。
+
+primary_pressure_id=null；正式區界／量口徑增量／衰減重要性／合併直接承接／生命階段與Raw公司行動／五年Adjusted／歷史可得／9待核日期日曆非窮盡／缺口／Darvas／SQLite未知、核心NOT_ESTABLISHED／分類NOT_VALIDATED／行動NOT_EVALUATED保持。原拒絕餘量−2.4800／−0.7825、來源時點與已答案例保持，不調參硬編日期。下一步仍Work研究保持與反證對較大壓力的證據，不重問已定原則或舊日期；已定規則或工程缺陷才交Codex。保留核心參數策略庫歷史舊頁案例證據與main，不重讀101圖／0.4.3，不部署付費交易訊息子代理。換模式附最新已核SHA及完整續接。
+
+---
+
 # 最新：跨尺度壓力部分修復研究（2026-10-20 Work）
 
 接續e0dc1328，固定fff4791圖表工程保持。新研究入口[真實全景／回返重疊／早段下移與完整續接](docs/visual-discussion/20261020_pressure_relations/README.md)。沿用原HTML／JSON重新核SHA，Chromium133 HTTP僅改閱讀窗／勾選保存3張新PNG，完整data/core/分析身分全等、0pageerror；觀察用字型替換明示，非新ZIP CRC／互動下載回歸／47或7重跑／Android／bootstrap／引擎重跑。
