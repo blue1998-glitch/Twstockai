@@ -1,3 +1,13 @@
+# 最新：跨尺度壓力部分修復研究（2026-10-20 Work）
+
+接續e0dc1328，固定fff4791圖表工程保持。新研究入口[真實全景／回返重疊／早段下移與完整續接](docs/visual-discussion/20261020_pressure_relations/README.md)。沿用原HTML／JSON重新核SHA，Chromium133 HTTP僅改閱讀窗／勾選保存3張新PNG，完整data/core/分析身分全等、0pageerror；觀察用字型替換明示，非新ZIP CRC／互動下載回歸／47或7重跑／Android／bootstrap／引擎重跑。
+
+新命題ASSISTANT_ANALYSIS_NOT_USER_ADJUDICATED：局部成箱與整體壓力背景分開，重返局部不直接解除整帶。真實5/13高31.40回到B77原研究範圍下半部，但仍低於3/12高35.45，後又回落；兩段影線外包交集30.05～31.40僅幾何，不是正式壓力界、合併、父子或直接承接。B77來源3/12停止後另15筆仍在原研究界內，不能將末來源當整箱終點。下一步同Work裁決這一新增關係，不重問已答日期或代表，不將繼續授權當策略批准。
+
+原拒絕餘量−2.4800／−0.7825、所有來源時點、89版本／84幾何組非獨立型態、廣義後來非直接承接、不等長窗不排名保持。primary_pressure_id=null及全部正式規則、Raw公司行動／Adjusted／歷史可得／缺口／Darvas／SQLite未知、核心NOT_ESTABLISHED／分類NOT_VALIDATED／行動NOT_EVALUATED、Android NOT_TESTED_NEW_BUILD保持。file://未用未重試未繞過；不重讀101圖／0.4.3，不改核心參數策略庫歷史舊頁案例證據或main，不部署付費交易訊息子代理。只有已定規則或工程缺陷再交Codex，換模式附最新已核SHA及完整續接。
+
+---
+
 # 最新：Work已實看真實跨尺度比較圖（2026-10-20）
 
 本輪從afb116d接續，實際下載749,695-byte新ZIP核SHA／CRC／6成員SHA、HTML與獨立完整JSON全等；Chromium133 loopback HTTP有限讀圖及5組核對，13張PNG、0pageerror，1400／390寬。觀察用字型替換獨立記錄，成品及完整數值／core不改；不是7 Python／47 Chromium／12下載重跑、觸控或Android。Android NOT_TESTED_NEW_BUILD，file://未重試未繞過；無bootstrap或引擎重跑，不冒用別環境準備成功。
