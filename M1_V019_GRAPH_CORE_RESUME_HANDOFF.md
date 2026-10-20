@@ -1,3 +1,13 @@
+# 最新：使用者否定未挑戰舊帶高點前先降權（2026-10-20 Work）
+
+使用者10:34原話：「怎麼可能調降，他的價格就還沒挑戰左側舊大帶的高點。」[完整更正與範圍](docs/visual-discussion/20261020_reaction_pressure_work_review/USER_CORRECTION.md)。本例不因右側低位整理／局部修復，在尚未挑戰左側舊大帶高點時先調降舊帶重要性。助手前輪把上攻能力改善延伸成可先降舊帶權重的提問撤回；問題CLOSED_BY_USER／DO_NOT_REASK。局部與整體分別判斷的已確認原則保持，舊問題／研究只留歷史。
+
+不擅定整帶代表高點，不把35.50／35.45／39.25補為答案，不推觸及即解除或未過最高價禁止進場；正式價界／代表／解除、量增衰減重要性等未知與primary_pressure_id=null保持。下一步同Work保留舊帶重要性，研究局部修復如何接近並挑戰上方舊帶的真實路徑，不再用低位整理先替未挑戰的舊帶降權。已定規則或工程缺陷才交Codex。
+
+本輪僅使用者更正與交接保存，無新圖／bootstrap／引擎指標或Python瀏覽器Android測試；reaction_facts與原主圖數值不改，Android NOT_TESTED_NEW_BUILD、file://不重試不繞過。全部來源時點、拒絕餘量、49轉換非訊號／89版本84幾何非獨立型態、不同窗不排名及Raw／Adjusted／歷史可得／九待核日曆／Darvas／SQLite未知保持。不改main或核心參數策略庫歷史舊頁案例證據，不重讀101圖／0.4.3，不部署付費交易訊息子代理；最新完整續接見該研究目錄WORK_HANDOFF.md。
+
+---
+
 # 最新：Work已讀新反應事實與整體壓力證據範圍（2026-10-20）
 
 接續db000b9，包含數值成品2d9c9aad及原真實圖fff4791。[新全景／局部圖／完整研究與續接](docs/visual-discussion/20261020_reaction_pressure_work_review/README.md)。本輪新下載965,955-byte資料ZIP核SHA／CRC／manifest；取得完整11,672,241-byte新JSON，全部1213原K／原MACD與原資料全等、原comparison-data逐字同前輪。按需讀catalog、10筆完整案例與近期窗口，不重算附層或核心／指標，不搬22測試／33回讀當本輪重跑。
