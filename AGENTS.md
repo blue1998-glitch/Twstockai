@@ -1,3 +1,13 @@
+# 最新：Work已實看真實跨尺度比較圖（2026-10-20）
+
+本輪從afb116d接續，實際下載749,695-byte新ZIP核SHA／CRC／6成員SHA、HTML與獨立完整JSON全等；Chromium133 loopback HTTP有限讀圖及5組核對，13張PNG、0pageerror，1400／390寬。觀察用字型替換獨立記錄，成品及完整數值／core不改；不是7 Python／47 Chromium／12下載重跑、觸控或Android。Android NOT_TESTED_NEW_BUILD，file://未重試未繞過；無bootstrap或引擎重跑，不冒用別環境準備成功。
+
+[本輪實看、原尺寸真實圖、來源驗證與完整續接](docs/visual-discussion/20261020_cross_scale_real_work_review/README.md)。助手新判讀未經使用者裁決：B77只涵蓋較低反覆走廊，早段高位下移與右側急跌需另研究整體壓力關係；原左拒−2.4800、右拒−0.7825保留，不調參／硬編日期。25來源不等39整體歸屬，6/2同日研究界外與人工終點語義分開；B88不涵蓋六月後先前下跌，1/27同價不等整段完成。主帶月份／已答案例不重問。下一步同Work用真實圖研究跨層次壓力脈絡，沒有必須先修的工程阻礙；已定規則或工程缺陷才交Codex。
+
+primary_pressure_id=null與全部正式規則／Raw公司行動／五年Adjusted／歷史可得／9待核日期與日曆非窮盡／Darvas正文／SQLite未知、核心NOT_ESTABLISHED／分類NOT_VALIDATED／行動NOT_EVALUATED保持。89版本／84幾何組非獨立型態，廣義後來非直接承接，不等長後續窗不排名。保留全部後續成果、引擎參數策略／庫／歷史／舊頁／案例證據／main，不重讀101圖／0.4.3或舊手機按鈕，不部署付費交易訊息子代理。換模式附最新已核SHA與完整續接。
+
+---
+
 # Latest: real cross-scale comparison chart (2026-10-20 Codex)
 
 Read CONTINUE top and graph-core resume newest, then cross_scale_chart/README.md, generated/source-acquisition.json and validation_20261020/驗收報告.md under 股票系統M1_v0_18; full handoff at deliveries/m1-v019-cross-scale-real-20261020/WORK_HANDOFF.md. Fresh bootstrap succeeded0 restored/7 differences preserved. Fixed57e3d9e ZIP was actually CRC/SHA verified and1101 all1213 real OHLCV/MACD/SMA/frame/source/core values extracted unchanged; previous Work DNS blocker/time-only reader remains historical. New independent HTML compares month-only manual context,B77,left/right rejected source runs,manual39,B44/B80 same geometry,B88 over real K/volume/MACD with aligned date axis/native navigation.7 Python PASS,final47 Chromium HTTP/12 exact JSON downloads across4 widths/DPR1-2 PASS; actual MACD pixels unchanged when overlays hidden. No original core/settings/strategy/store/history/page/case changes or rerun of unrelated35/60/398. New Android NOT_TESTED_NEW_BUILD; file policy not retried/bypassed. Known9 calendar dates/Raw/actions/Adjusted/history/SQLite limits and all unknown formal rules remain,primary pressure null. UI comparison is not core usefulness or automatic major-band acceptance. Next Work reads real comparison,not101 images/0.4.3/old Android button QA. No hardcoded manual answers in automatic core,no main/deployment/payments/trades/messages/subagents. Include full pasteable mode handoff.

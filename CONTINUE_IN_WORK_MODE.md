@@ -1,3 +1,13 @@
+# 最新：Work已實看真實跨尺度比較圖（2026-10-20）
+
+本輪從afb116d接續，實際下載749,695-byte新ZIP核SHA／CRC／6成員SHA、HTML與獨立完整JSON全等；Chromium133 loopback HTTP有限讀圖及5組核對，13張PNG、0pageerror，1400／390寬。觀察用字型替換獨立記錄，成品及完整數值／core不改；不是7 Python／47 Chromium／12下載重跑、觸控或Android。Android NOT_TESTED_NEW_BUILD，file://未重試未繞過；無bootstrap或引擎重跑，不冒用別環境準備成功。
+
+[本輪實看、原尺寸真實圖、來源驗證與完整續接](docs/visual-discussion/20261020_cross_scale_real_work_review/README.md)。助手新判讀未經使用者裁決：B77只涵蓋較低反覆走廊，早段高位下移與右側急跌需另研究整體壓力關係；原左拒−2.4800、右拒−0.7825保留，不調參／硬編日期。25來源不等39整體歸屬，6/2同日研究界外與人工終點語義分開；B88不涵蓋六月後先前下跌，1/27同價不等整段完成。主帶月份／已答案例不重問。下一步同Work用真實圖研究跨層次壓力脈絡，沒有必須先修的工程阻礙；已定規則或工程缺陷才交Codex。
+
+primary_pressure_id=null與全部正式規則／Raw公司行動／五年Adjusted／歷史可得／9待核日期與日曆非窮盡／Darvas正文／SQLite未知、核心NOT_ESTABLISHED／分類NOT_VALIDATED／行動NOT_EVALUATED保持。89版本／84幾何組非獨立型態，廣義後來非直接承接，不等長後續窗不排名。保留全部後續成果、引擎參數策略／庫／歷史／舊頁／案例證據／main，不重讀101圖／0.4.3或舊手機按鈕，不部署付費交易訊息子代理。換模式附最新已核SHA與完整續接。
+
+---
+
 # 最新：真實跨尺度K／量／MACD比較圖已接入（2026-10-20 Codex）
 
 接續cc718996及原固定診斷成品57e3d9e，本環境重新bootstrap成功（0補檔／7差異保留）；實際核固定診斷ZIP／CRC／SHA並解出1101完整1,213根真實OHLCV、原MACD／SMA／source／Raw basis／frame／prefix與完整原core。上一Work的DNS下載阻礙與僅時間軸未完成K圖紀錄保持，未假稱同環境修復。新獨立cross_scale_chart／cross-scale-real-chart/0.1直接顯示可放大、拖曳查詢／移圖／雙指縮放的K量MACD，與下方日期證據軸同x／窗／游標；七組人工月份主帶、B77、左右被拒串、人工39筆、B44/B80同幾何、B88分別顯示，主圖短圖例不遮K線，來源／確認／研究界外／人工終點分開。人工日期只讀舊audit，未作自動辨識答案。
