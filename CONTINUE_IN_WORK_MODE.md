@@ -1,3 +1,15 @@
+# 最新：來源反查有限契約已備，可轉Codex（2026-10-20 Work）
+
+[新研究／完整契約／可貼Codex指令](docs/visual-discussion/20261020_source_query_contract/README.md)。接續a30b62f，確認分支相同並讀最新交接。原3%／segment0全119點從2021-11-29到2026-10-13；前輪9點路徑前33後77，證同尺度同段相鄰不等經濟同帶或正式起訖，不能一路串接歷史。新probe只讀核119原點／原K、9點子串、兩組完整source_dates與原來源bytes，無辨識／MACD／reaction重算。
+
+已完整讀原graph_diagnostics README／build／diagnose／viewer；原資料已有完整來源序列及箱source_turn_ids，不另造第二套診斷。可交Codex的已定範圍是既有診斷中的單一來源反查：明示pivot ID查所有原箱引用、完整同座標來源與各自確認、同尺度同段明示from/to的完整有序路徑。重用已有等價功能與原fingerprint／number／來源驗證，不改原核心或diagnose輸出、不新UI／圖表／reaction_facts，不輸入人工月份答案或自動猜終點、不沿連接自動合併。契約READY_FOR_BOUNDED_ENGINEERING，生產查詢NOT_IMPLEMENTED、契約測試NOT_RUN；不是大帶辨識完成。實作／測試／逐檔回讀後回Work研究正式歸屬；目前仍無自動合併充分條件。
+
+不同形態整體概念、局部與整體分判及未挑戰舊帶高點前不先降本例重要性均已定不重問；月份／39筆／5/13／6/3／1/27不重問。不擅定39.25／35.50／35.45／40.25為正式整體代表。保留五月十月反例、原拒絕餘量、來源末轉折／確認／研究離箱／人工終點、原值可知與實際選取時間分開、相等及日OHLC限制；historical_signal_eligible=false。primary_pressure_id=null與正式區界代表／增量衰減重要性／合併直接承接／生命階段及Raw公司行動／五年Adjusted／歷史可得／九待核非窮盡日曆／Darvas／SQLite未知、89版本84幾何非獨立型態、不同窗不排名及核心NOT_ESTABLISHED／分類NOT_VALIDATED／行動NOT_EVALUATED保持。
+
+本輪無bootstrap／新ZIP／22測試／新瀏覽器Android，舊驗收不當新跑；原圖沿用非新截圖，Android NOT_TESTED_NEW_BUILD、file://不重試不繞過。讀錯core.py與不支援目錄URL的暫存讀取失敗已定位實際diagnose.py成功，無產品修改。工程必須在實際完整checkout依AGENTS準備，不能冒用他環境成功。不調參硬編答案、不改原核心參數策略庫歷史舊頁案例證據或main，不部署付費交易訊息子代理。成果同分支逐檔回讀；完整續接見新目錄CODEX_HANDOFF.md，結束附最新已核SHA、入口完成未完成及續接。
+
+---
+
 # 最新：不同形態概念已確認；來源歸屬反例與路徑已核（2026-10-20 Work）
 
 使用者11:04原話「可以，下一步」，承接整體可含高位下移與內部橫箱、不要求整體再符合局部橫箱同條件；USER_CONFIRMED_CONCEPT／DO_NOT_REASK，前輪PENDING為歷史。只確認形態容許，不批准自動歸屬合併／正式區界代表／解除權重。[新原值研究／使用者收據／完整續接](docs/visual-discussion/20261020_structure_membership_work_review/README.md)。
