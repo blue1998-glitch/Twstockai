@@ -1,3 +1,15 @@
+# 最新：早段高位已存在，研究尺度不等壓力層級（2026-10-20 Work）
+
+[新真實對照／來源ID／完整研究與續接](docs/visual-discussion/20261020_high_source_roles_work_review/README.md)。接續c74695d；使用者未挑戰舊帶高點前不因低位整理先降本例舊帶重要性的更正保持，舊問題CLOSED不重問。原core已有6/5高39.25的3%轉折來源、6/28確認；B77有11/28高35.50的6%來源、次年1/16確認，同價另有3%來源。這些原值不是本輪新增演算法。較細尺度可能保留較早高位，不能以較大尺度B77替代完整人工大帶；也不將39.25／35.50指定整體代表或設最高價優先規則。
+
+新研究ASSISTANT_ANALYSIS_NOT_USER_ADJUDICATED：區分來源存在、有限查詢覆蓋、整體角色辨識。reaction_facts四參照例檔未含31.40，但原B44/B80已含此已答局部代表；不是附層缺陷。下一步同Work以已有早段高位與後段反覆來源研究整體關係，不再把增加小參照算術當主壓力辨識接近完成。不新增正式組合、重要性、合併或自動選關門檻；已定規則或工程缺陷才交Codex。
+
+本輪只讀原core/pivots及附層catalog，原兩JSON核SHA；Chromium133 HTTP原HTML兩窗加觀察A/B及字型，2PNG、原來源ID與K高核等、data/core/分析身分不變、0pageerror；無引擎／reaction／MACD重算、bootstrap、新ZIP、22或7／47重跑、產品UI／觸控下載／Android驗收。Android NOT_TESTED_NEW_BUILD，file://未用不重試不繞過，圖為後來研究非歷史當時訊號。
+
+primary_pressure_id=null及正式區界／整體代表／增量衰減重要性／合併直接承接／生命階段與Raw公司行動／五年Adjusted／歷史可得／九待核非窮盡日曆／Darvas／SQLite未知、核心NOT_ESTABLISHED／分類NOT_VALIDATED／行動NOT_EVALUATED保持。原拒絕餘量−2.4800／−0.7825、時點語義、49轉換非訊號／89版本84幾何非獨立型態、廣義後來非直接承接、不等長窗不排名保持。不重問月份／39筆／5/13／6/3／1/27，不重讀101圖／0.4.3，不改核心參數策略庫歷史舊頁案例證據或main，不調參硬編答案，不部署付費交易訊息子代理；結束附最新已核SHA與完整續接。
+
+---
+
 # 最新：使用者否定未挑戰舊帶高點前先降權（2026-10-20 Work）
 
 使用者10:34原話：「怎麼可能調降，他的價格就還沒挑戰左側舊大帶的高點。」[完整更正與範圍](docs/visual-discussion/20261020_reaction_pressure_work_review/USER_CORRECTION.md)。本例不因右側低位整理／局部修復，在尚未挑戰左側舊大帶高點時先調降舊帶重要性。助手前輪把上攻能力改善延伸成可先降舊帶權重的提問撤回；問題CLOSED_BY_USER／DO_NOT_REASK。局部與整體分別判斷的已確認原則保持，舊問題／研究只留歷史。
