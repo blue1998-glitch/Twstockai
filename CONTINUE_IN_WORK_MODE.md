@@ -1,3 +1,9 @@
+## 2026-10-20 最新續接：2884 整理辨認時點真實截點圖
+
+入口 `docs/visual-discussion/20261020_interval_recognition_timing_work_review/README.md`，全文續接及實際執行／限制見同目錄WORK_HANDOFF.md、verification.json及GITHUB_READBACK.json。起點7a5cc315b7f8e98607027ef5d5a83dc79844accd，全成果保留。三頁新可放大截點PDF：五年背景至10/7、近期至10/7與至10/14。原1207／1211筆；10/7沒有獨立保存核心快照／numeric_frame，僅截原價量保存指標，不補造；10/14原結果讀取未重算。原完整走勢整理標籤USER_CONFIRMED不重問；新問題只問截至10/7是否足以辨認，PENDING_USER_REVIEW，較晚10/14供對照。不要求精確起日或正式區界，下一步不算答案。事後看過後續的截點複核非盲測非歷史選取，historical_selection_time=null、historical_signal_eligible=false、primary_pressure_id=null。build_review.py一次，原SHA／包指紋／來源全等、截點無未來列、10/14原結果指紋核同；新三頁逐頁實看與400%裁片，未重算核心MA MACD、未跑舊測試或adapter CLI、ZIP瀏覽器Android。Android NOT_TESTED_NEW_BUILD；file://不重試不繞過。其他正式未知、全部原使用者裁決與來源限制沿用。仍Work，已定規則或可重現工程缺陷才Codex；不部署付費交易訊息子代理。下列為歷史紀錄，不代表本批重跑。
+
+---
+
 # 最新：兩個部分人工案例＋三原保存截點；參照與時點分開（2026-10-20 Work）
 
 [共同案例／三截點原值／有限驗收證據與完整續接](docs/visual-discussion/20261020_paired_cases_prefix_work_review/README.md)。接續1061430。使用者21:18:28允許一次多步，重要才問，本批沒有新增問題。兩例已定不重問，既有長背景圖沿用不新畫。
@@ -1380,6 +1386,7 @@ Codex原始紀錄：Python325通過，真實Chromium87檢查／56下載通過；
 使用者已常態授權之後成品直接更新至本GitHub儲存庫的獨立分支；每次提供分支／提交、交接說明、實際驗收結果與可下載成品，讓兩種模式沿用同版。main保留，除非另有明確指示。此授權不等同部署網站、發布雲端環境、付費、交易或發送訊息。
 
 目前下一步使用 **Codex**，先讀 M1_V018_PRODUCT_GAP_HANDOFF.md，完成核心要求追溯並進行可逆修正；具體核心策略或重大架構未決時回工作模式處理。新版 Android 全面驗收仍未完成，不能用附件下載成功代替。
+
 
 
 
