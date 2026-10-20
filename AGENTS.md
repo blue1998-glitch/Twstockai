@@ -1,3 +1,15 @@
+# 最新：已讀新來源反查，交界來源角色待裁決（2026-10-20 Work）
+
+[新成品閱讀／原圖交界／證據與完整續接](docs/visual-discussion/20261020_whole_membership_work_review/README.md)。接續e0bd48c，確認包含來源反查e45d972與原圖fff4791，分支無較新更新。全文讀新交付三檔、SOURCE_QUERY／驗收／request／完整30584-byte JSON及原契約、歸屬研究／user-decision／USER_CORRECTION。新JSON核SHA與17原點／8原箱回傳欄位全等原資料，不執行已完成query／adapter／CLI，不重做圖或reaction；14測試／27回下載及fixture初敗修正是已讀工程紀錄，不是本輪重跑。
+
+新具體問題PENDING_USER_ADJUDICATION：正式區段是否允許同一實際K線低點由相鄰區段分別引用、記錄不同角色，而不強迫只能歸一邊，也不因共享就合併？原10/24低31.35，3%記錄為B19末來源／11/2確認，6%同座標記錄為B77首來源／11/20確認；原B77到2025-03-24才確認，不能回填2023已知完整箱。B19末來源非正式整箱終點、B77首來源非人工大帶已定起點。原ID各自保持，助手建議角色並存但未獲答；同意亦不等本例正式分段／成員區界代表／合併直接承接批准。B77關係另讀原core，不冒稱新JSON遞迴查出或漏檢。原9點末高35.50較前高34.15升1.35，但與9/14高35.50相等、差0.00，不補突破。
+
+已確認三概念及月份／39筆／5/13／6/3／1/27不重問，未挑戰舊帶高點前不因低位整理先降本例重要性保持。A三箱六月前40.25保留不自動歸整體；119／前33後77非起訖條件，同座標不合併不投票、不跨尺度冒充路徑。五月十月反例、原拒絕餘量、來源時點、相等及日OHLC限制、89版本84幾何非獨立及不同窗不排名保持。primary_pressure_id=null／歷史選取null／historical_signal_eligible=false；正式成員區界代表／增量量權重衰減重要性／合併直接承接／解除生命階段及Raw公司行動／五年Adjusted／歷史可得／九待核非窮盡日曆／Darvas／SQLite未知與核心NOT_ESTABLISHED／分類NOT_VALIDATED／行動NOT_EVALUATED保持。
+
+原圖PNG從GitHub逐byte再核等，沿用舊真實閱讀窗；新標註截圖NOT_COMPLETED。先因觀察腳本SHA字串誤植在啟動前被拒、改正後前輪Chromium執行檔已失，查本機無可用瀏覽器，未安裝未走file://、無新PNG或成功瀏覽器驗收。非產品缺陷，不交Codex重做查詢。無bootstrap／原辨識MACDreaction重算／14或舊測試／新ZIP或Android；Android NOT_TESTED_NEW_BUILD，file://不重試不繞過。下一步仍Work用原圖裁決此新角色問題，已定規則或可重現產品缺陷才交Codex。不調參硬編答案、不改原核心參數策略庫歷史舊頁案例證據或main，不部署付費交易訊息子代理。同分支逐檔回讀，結束附最新已核SHA、入口完成未完成及完整續接。
+
+---
+
 # 最新：既有診斷單一來源反查已實作（2026-10-20 Codex）
 
 接續df25a67，本環境重新bootstrap --hydrate-missing成功，0補檔／7差異保留。新增graph_diagnostics/source_query.py純函式、來源adapter與CLI，直接讀原pivots／boxes，不改diagnose輸出／原核心／參數／策略／庫／歷史／舊頁／reaction_facts／圖表。不重算辨識、轉折、箱、MACD或反應事實；重用fingerprint／number／_validate／publish_immutable。明示ID反查所有原箱引用／序位、完整同座標別名各自確認，以及同尺度同段from/to的完整原路徑；無自動猜終點、裁箱、跳尺度、遞迴吸納或合併。
