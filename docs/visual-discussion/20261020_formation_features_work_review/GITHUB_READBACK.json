@@ -1,0 +1,113 @@
+{
+  "schema": "m1-formation-research-github-readback/1",
+  "branch": "dev/m1-v018-chart-annotations",
+  "research_commit": "5c4ab4d78121db257046cf106655017fac306c7d",
+  "parent_commit": "a9b292a1b9708b31151f0f7709ba5e6d1953bd7a",
+  "text_files": [
+    {
+      "path": "docs/visual-discussion/20261020_formation_features_work_review/README.md",
+      "git_blob_sha": "09c54475fab93c2ee85c33f6ffc8df606775e85e",
+      "exact_utf8_content_equal": true
+    },
+    {
+      "path": "docs/visual-discussion/20261020_formation_features_work_review/hypotheses.json",
+      "git_blob_sha": "05d321d2380d85fe101896c97eb47e18883bdb9d",
+      "exact_utf8_content_equal": true
+    },
+    {
+      "path": "docs/visual-discussion/20261020_formation_features_work_review/WORK_LOG.md",
+      "git_blob_sha": "fb7e59677a70a7677c26c38e23b91d8be614af32",
+      "exact_utf8_content_equal": true
+    },
+    {
+      "path": "docs/visual-discussion/20261020_formation_features_work_review/WORK_HANDOFF.md",
+      "git_blob_sha": "5ec633fa4bb07bb11c972f41426ecd772333d06d",
+      "exact_utf8_content_equal": true
+    },
+    {
+      "path": "docs/visual-discussion/20261020_formation_features_work_review/research.py",
+      "git_blob_sha": "428830f372b12ef9d9b0f395b7674d4d80934bde",
+      "exact_utf8_content_equal": true
+    },
+    {
+      "path": "docs/visual-discussion/20261020_formation_features_work_review/verify_evidence.py",
+      "git_blob_sha": "8166372b02977bfee49b963da925278344d99693",
+      "exact_utf8_content_equal": true
+    },
+    {
+      "path": "docs/visual-discussion/20261020_formation_features_work_review/evidence.json",
+      "git_blob_sha": "5bd95c297590b5322c8ea127c0b1d1a15b3660eb",
+      "exact_utf8_content_equal": true
+    },
+    {
+      "path": "docs/visual-discussion/20261020_formation_features_work_review/control-scan.json",
+      "git_blob_sha": "dc10389bd9102dbd80f6307249d457c0a55a7b79",
+      "exact_utf8_content_equal": true
+    },
+    {
+      "path": "docs/visual-discussion/20261020_formation_features_work_review/verification.json",
+      "git_blob_sha": "c8b12fe4bdb554feb4a11a423655611fee23f8e5",
+      "exact_utf8_content_equal": true
+    },
+    {
+      "path": "docs/visual-discussion/20261020_formation_features_work_review/manual-qa.json",
+      "git_blob_sha": "499a11bb56e104fb8f918c5707207a2a3bed4f38",
+      "exact_utf8_content_equal": true
+    },
+    {
+      "path": "AGENTS.md",
+      "git_blob_sha": "5a344e781719ec67e9b7bc71fd82281638509cf8",
+      "exact_utf8_content_equal": true
+    },
+    {
+      "path": "CONTINUE_IN_WORK_MODE.md",
+      "git_blob_sha": "62b3f5e5162aec79d89f76e544df3f1f24677af7",
+      "exact_utf8_content_equal": true
+    },
+    {
+      "path": "M1_V019_GRAPH_CORE_RESUME_HANDOFF.md",
+      "git_blob_sha": "4b5d7aaad2163184d6e1dd9b17e9e004e4ca079f",
+      "exact_utf8_content_equal": true
+    }
+  ],
+  "binary_files": [
+    {
+      "path": "docs/visual-discussion/20261020_formation_features_work_review/page-1.png",
+      "bytes": 122990,
+      "sha256": "14c08bb511a786d95c6f9a3a16ee6df4754c63dc439c5e3a8d687914fc11bea7",
+      "git_blob_sha": "7f2c07f6e0e78c1fdfbfa911cb2e85d5715389ce",
+      "downloaded_bytes_equal_local": true
+    },
+    {
+      "path": "docs/visual-discussion/20261020_formation_features_work_review/page-2.png",
+      "bytes": 187567,
+      "sha256": "75868c51e3f7bd64bd6703354a2ff4d48fdd0752b4a6c0b15bdc4cee58ee029c",
+      "git_blob_sha": "74ff0c565769d15e647b55ce30cf7eda118f1c93",
+      "downloaded_bytes_equal_local": true
+    },
+    {
+      "path": "docs/visual-discussion/20261020_formation_features_work_review/page-3.png",
+      "bytes": 126740,
+      "sha256": "764e3dc2405aed3f4d3f7771ebc5e43eefe7862329031817fb9b0f033524ce65",
+      "git_blob_sha": "3747ef3996afe75b1f195bba8f5115e1ba1b3b01",
+      "downloaded_bytes_equal_local": true
+    },
+    {
+      "path": "docs/visual-discussion/20261020_formation_features_work_review/output/pdf/m1-formation-evidence-comparison.pdf",
+      "bytes": 234632,
+      "sha256": "258300cea40dbe7ecf6d4b8aad1e309795c06928f44233afe01f3bc0bd9d838e",
+      "git_blob_sha": "034b5bfe90a1f2f133d82141cbc62dd6307bab51",
+      "downloaded_bytes_equal_local": true
+    }
+  ],
+  "methods": {
+    "text": "Fetch each pinned path and compare UTF-8 content exactly with prepared content.",
+    "binary": "Fetch base64 at each pinned path, decode locally, compare complete bytes to rendered/inspected local artifacts, then verify SHA256 and Git blob identity.",
+    "receipt": "Saved in following commit and fetched separately for exact content comparison."
+  },
+  "scope": "Read-only exploratory measurements and PDF; not a product classifier, browser or Android validation.",
+  "manual_visual_record": "manual-qa.json",
+  "source_and_independent_checks": "verification.json",
+  "historical_signal_eligible": false,
+  "primary_pressure_id": null
+}
