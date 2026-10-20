@@ -1,3 +1,9 @@
+## 2026-10-20 接續完成：10/7裁決已上分支，形態與後續反應要求分開
+
+已恢復中斷前建立的 fa3216ff3420b4dc794477bfe8b6a2cea0d490c8（父451205f），非強制更新同分支；11檔固定提交回讀物件身分全符，中斷原audit不重跑。原時點裁決收據已補齊。最新入口 `docs/visual-discussion/20261020_present_form_reaction_requirements/README.md`；有限要求requirements.json、完整接續WORK_HANDOFF.md、本批回讀GITHUB_READBACK.json同目錄。2884截至10/7已可辨認整理及完整上漲整理再漲均已答不重問；10/7非最早日，無原核心／numeric_frame仍null。已整理當下形態、前段背景、逐參照後續反應、證據時點及行動資格分開；不等未來上漲才給本例整理描述。這是既有裁決有限形式化，非偵測器、非產品測試。下一步Work研究區間形成的可重現正面條件與有區辨力對照，不再只堆原值／欄位報告、不硬編案例或改原參數。正式未知、原已答案例及來源限制全部沿原完整交接。無核心指標、adapter CLI、bootstrap或舊測試重跑，無新圖PDF／瀏覽器Android；Android NOT_TESTED_NEW_BUILD、分類NOT_VALIDATED、用途NOT_ESTABLISHED、行動NOT_EVALUATED。實際保存以本批收據與HEAD為準；保留main及全成果，不部署付費交易訊息子代理。
+
+---
+
 ## 2026-10-20 21:46 最新裁決：截至10/7已可辨認整理
 
 使用者直接回答「足夠辨認了」，對應2884截點圖第2頁截至2026/10/7。USER_CONFIRMED_DO_NOT_REASK；完整走勢整理及10/7截點足夠皆已定，前題關閉。入口 `docs/visual-discussion/20261020_recognition_timing_user_decision/README.md`，原話與範圍user-decision.json、實際verification／GITHUB_READBACK及完整WORK_HANDOFF同目錄。原圖不重畫，舊pending已resolved、舊README加新裁決；舊證據／QA維持歷史快照。本例不必等待10/15上漲才給整理描述；不指定最早成立日／正式起末區界或新通用門檻，10/14未另裁決留null而不重問10/7。回顧截點非盲測，10/7無原保存核心／numeric_frame仍null，historical_selection_time=null／historical_signal_eligible=false／primary_pressure_id=null。實際audit.py一次唯讀核原SHA及1207筆前綴與末K原指標、原話範圍，不重算核心MACD或跑舊測試，不重畫PDF／新瀏覽器ZIPAndroid；Android NOT_TESTED_NEW_BUILD，file://不重試不繞過。原參數、所有已答案例與正式未知／來源限制保持，仍Work整理當前形態與後續反應分開的有限需求，不硬編案例或交Codex未定算法。不部署付費交易訊息子代理。以下為歷史，舊PENDING由新裁決取代，前輪執行不算本次重跑。
