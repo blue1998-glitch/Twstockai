@@ -1,3 +1,5 @@
+本次新source／固定成品已核提交：`2d9c9aad4b88b53d9552e479a3f625377f2b7161`；逐檔GitHub回下載33檔／18,327,179 bytes、ZIP CRC／6成員SHA與抽出bytes PASS。回讀收據及本段另存後續文件提交，最新交接請實際讀分支HEAD。
+
 請接續股票系統M1，同Work使用已完成的多參照反應事實附層研究整體壓力，不重做圖表／附層工程，不重問已答原則或案例。
 
 儲存庫：blue1998-glitch/Twstockai

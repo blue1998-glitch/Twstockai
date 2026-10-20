@@ -2,9 +2,9 @@
 
 新增獨立純數值附層，不改原主圖、核心、參數、策略、資料庫、歷史或舊schema。原真實圖仍為固定成品fff47915523fab8c8de8279de8bbb7a26b05647b；本包是完整精度JSON，不是另一份HTML或自動選關。
 
-- [下載資料小ZIP](M1_v019_reaction_facts_v01.zip)：965,955 bytes；6成員含原完整comparison-data、實際後來明示selection、新reaction-facts、來源收據、README及SHA。
+- [下載資料小ZIP](https://raw.githubusercontent.com/blue1998-glitch/Twstockai/2d9c9aad4b88b53d9552e479a3f625377f2b7161/deliveries/m1-v019-reaction-facts-20261020/M1_v019_reaction_facts_v01.zip)：965,955 bytes；6成員含原完整comparison-data、實際後來明示selection、新reaction-facts、來源收據、README及SHA。
 - ZIP SHA256：`a18150ff8d548cb0456a2df446711a472e31f93abf06bfd663238a28f0ba546e`；[SHA檔](SHA256SUMS.txt)、[CRC與成員SHA](PACKAGE_VERIFICATION.json)。
-- [直接讀新JSON](../../股票系統M1_v0_18/reaction_facts/generated/reaction-facts.json)、[明示來源例檔](../../股票系統M1_v0_18/reaction_facts/examples/selection.json)。
+- [直接讀新JSON](https://raw.githubusercontent.com/blue1998-glitch/Twstockai/2d9c9aad4b88b53d9552e479a3f625377f2b7161/股票系統M1_v0_18/reaction_facts/generated/reaction-facts.json)、[明示來源例檔](../../股票系統M1_v0_18/reaction_facts/examples/selection.json)。
 - [source、schema與CLI重現](../../股票系統M1_v0_18/reaction_facts/README.md)、[本輪實測與失敗](../../股票系統M1_v0_18/reaction_facts/validation_20261020/驗收報告.md)、[完整可貼Work指令](WORK_HANDOFF.md)。
 - [沿用真實互動圖入口](../m1-v019-cross-scale-real-20261020/README.md)：下載原HTML看圖，本次沒有改圖或重開樣式驗收。
 
@@ -19,3 +19,5 @@
 未知保持：primary_pressure_id=null，整體解除／有效突破null；正式區界、量口徑增量／權重、強度衰減／重要性、合併／直接承接、生命階段、主壓力辨識用途仍未定。Raw公司行動、五年Adjusted、歷史公布可得、九待核日期／非窮盡日曆、Darvas正文及SQLite根因未核。來源待核缺日只保守分段，不補假K；日OHLC不證日內回測或先後。核心NOT_ESTABLISHED、分類NOT_VALIDATED、行動NOT_EVALUATED；Android **NOT_TESTED_NEW_BUILD**，file://不重試不繞過。
 
 下一步 **Work** 用原互動圖配合新事實JSON研究整體壓力關係，不能把局部算術層完成當主壓力辨識或交易價值認可。未知策略取得明確裁決或有可重現缺陷才回Codex。不改main、不部署付費交易訊息子代理；換模式附最新已核SHA及完整續接。
+
+固定新source／成品提交：`2d9c9aad4b88b53d9552e479a3f625377f2b7161`。已實際GitHub回下載**33檔／18,327,179 bytes**與本機相等，遠端ZIP CRC／6成員SHA與抽出原資料／選取／結果bytes再核PASS；[逐檔回讀收據](GITHUB_READBACK.json)。本收據與固定連結另以後續文件提交保存，沒有冒稱收據涵蓋自身或Android驗收。
