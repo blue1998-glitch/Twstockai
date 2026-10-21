@@ -24,6 +24,22 @@
 
 ---
 
+## 2026-10-21 最新口徑已答：除權息後約2～3月還原，大盤空頭原日K優先
+
+使用者原話：「通常除權息後要以還原權息去做分析持續時間大約2-3個月，大盤是空頭市場時則一切以原日k分析。」完整原話與資格見 `docs/visual-discussion/20261021_price_basis_policy_decision/decision.json`；README／source-check／verification／WORK_HANDOFF與回讀收據同目錄。承接7ffb2dca，仍Work，最高資金增值閉環／飛輪目標不改。
+
+定性偏好已確認：大盤已判空頭時Raw原日K優先於一般除權息後還原；通常除權息後Adjusted約2～3個月。約數不換固定60／90天，不自定期滿自動切回或新事件重起。空頭定義／大盤指標／生效時點、精確截止及期滿切換、具體調整因子版本仍未定，不套20％或均線門檻。未知市場狀態非已證非空頭，缺Adjusted不是擅用Raw替代的理由；不因例行工程細節停下重問已答方向。這是使用者策略口徑，不冒稱通用標準或已驗成效。
+
+同次比較的K、左側完整帶及高低參照需同基準／版本；Raw與Adjusted分存，不覆原K、不將還原價對舊Raw高點。切換另存新分析版本，不改舊結果或倒用未來事件／市場分類。成交量口徑另存、不自行還原量。空頭選Raw仍保留除權息事件：機械落差不因大盤空頭而消失，不單憑落差證賣壓跌破；TWSE公式常識補核另記，非把空頭改成強制還原。
+
+B七月舊Raw圖與原價量事實全留，但市場狀態NOT_ESTABLISHED／完整Adjusted未核，preferred_basis_under_new_policy=null、new_policy_validation_status=NOT_COMPLETED_RAW_RESEARCH_ONLY。前輪改用七月新來源只是有限Raw研究，不能替代本輪政策要求的還原分析。公司行動事件鏈／前輪官方交易日列未讀通、原actions等未知不因使用者答方法而升已驗；10/27急變仍未知。
+
+本輪只有文件一致性與四入口歷史完整保留核對；新圖／行情／調整因子／core／MACD／舊driver／分類器產品測試／瀏覽器Android皆0，無自動切換實作。原全部A ABC G2與B答案、量非硬門檻、後續守價及形成點不多票保持。正式規則未定、historical_signal_eligible=false，分類NOT_VALIDATED、用途NOT_ESTABLISHED、新Android NOT_TESTED_NEW_BUILD、行動與飛輪NOT_EVALUATED，原Raw／完整日曆／歷史公開可得及全部缺日限制保持。
+
+下一步Work先補B當時市場狀態、公司行動及同口徑還原來源，再由最新K向左完整帶重讀。圖至少六個月且看清大小範圍，同附圖片及放大版；約2～3月是口徑期間不是裁圖長度。真正重要新核心才備充分圖問，不重問口徑方向。例行可逆多步及原分支交付已授權，不改main／原引擎策略資料舊圖全後續，不部署付費交易訊息子代理。以下為歷史，非本輪重跑。
+
+---
+
 ## 2026-10-21 最新人工方法：偏甲但切法非標準；以最新K向左辨完整價格帶及價量
 
 使用者已答B同層提案：「我比較認同甲一點，但這樣切法也不是標準答案。」原甲乙問題結束為CLOSED_WITH_QUALIFIED_PREFERENCE_AND_METHOD_REFINEMENT，不再待答／重問；偏向同一小帶多次活動不等原三框精確起末價界成員、恰三帶或通用合併算法已核。完整原話與五步見 `docs/visual-discussion/20261021_right_to_left_method_decision/decision.json`，README／WORK_HANDOFF／verification與同分支回讀收據同目錄。

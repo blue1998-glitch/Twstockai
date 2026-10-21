@@ -1,0 +1,71 @@
+{
+  "schema": "user-price-basis-reading-policy/1",
+  "date_taipei": "2026-10-21",
+  "base_commit": "7ffb2dcacf88461ffeac87158e28c5f71aba8528",
+  "user_quote": "通常除權息後要以還原權息去做分析持續時間大約2-3個月，大盤是空頭市場時則一切以原日k分析。",
+  "status": "USER_CONFIRMED_QUALITATIVE_POLICY_NOT_IMPLEMENTED_AUTOMATIC_SWITCH",
+  "priority": [
+    {
+      "order": 1,
+      "condition": "BROAD_MARKET_BEAR_STATE_ESTABLISHED_FOR_ANALYSIS_AS_OF",
+      "preferred_analysis_basis": "RAW_DAILY_K",
+      "role": "OVERRIDES_GENERAL_POST_EX_RIGHT_DIVIDEND_ADJUSTED_PREFERENCE"
+    },
+    {
+      "order": 2,
+      "condition": "GENERAL_POST_EX_RIGHT_DIVIDEND_READING_PERIOD_WITHOUT_BEAR_OVERRIDE",
+      "preferred_analysis_basis": "ADJUSTED_FOR_CORPORATE_ACTIONS",
+      "approximate_calendar_months": [2, 3],
+      "period_kind": "APPROXIMATE_GUIDANCE_NOT_FIXED_DAY_COUNT",
+      "exact_day_count": null,
+      "exact_end_date_rule": null,
+      "automatic_switch_back_at_expiry": null
+    }
+  ],
+  "unresolved": {
+    "bear_market_detection_formula": null,
+    "broad_market_index_selection": null,
+    "bear_state_effective_date_rule": null,
+    "automatic_handling_if_market_state_unknown": null,
+    "post_approximate_period_basis_rule": null,
+    "new_or_overlapping_action_restart_rule": null,
+    "policy_specific_adjustment_method_and_factor_version": null
+  },
+  "operational_handling": {
+    "unknown_market_state_is_not_non_bear_confirmation": true,
+    "missing_adjusted_data_is_not_raw_override_authorization": true,
+    "retain_both_raw_and_adjusted_separately": true,
+    "raw_ohlcv_not_overwritten": true,
+    "price_references_and_k_use_same_basis_and_version": true,
+    "switch_does_not_rewrite_old_evidence": true,
+    "history_as_of_does_not_import_later_actions_or_market_classification": true,
+    "volume_basis_managed_separately_from_price": true,
+    "no_new_volume_adjustment_formula_approved": true,
+    "raw_mode_does_not_remove_corporate_action_gap": true,
+    "mechanical_action_gap_alone_does_not_prove_selling_pressure_or_structural_breakdown": true,
+    "chart_horizon_minimum_calendar_months": 6,
+    "approximate_2_to_3_month_policy_is_not_chart_crop_length": true
+  },
+  "b_july_existing_review": {
+    "prior_review_commit": "d0aa0f13cf1bfde20531f3511bb07fb1edcd2290",
+    "raw_observations_remain_saved_facts": true,
+    "historical_market_state": "NOT_ESTABLISHED",
+    "preferred_basis_under_new_policy": null,
+    "adjusted_series_verified": false,
+    "new_policy_validation_status": "NOT_COMPLETED_RAW_RESEARCH_ONLY",
+    "july_local_reference_does_not_substitute_for_adjusted_basis_when_policy_calls_for_adjustment": true
+  },
+  "scope_limits": {
+    "two_to_three_month_rule_is_universal_verified_market_fact": false,
+    "bear_raw_preference_performance_verified": false,
+    "new_market_downloads": 0,
+    "new_adjusted_series_or_factors_created": 0,
+    "new_charts": 0,
+    "automatic_switch_implemented": false,
+    "classifier": "NOT_VALIDATED",
+    "usefulness": "NOT_ESTABLISHED",
+    "android": "NOT_TESTED_NEW_BUILD",
+    "actions_and_flywheel": "NOT_EVALUATED",
+    "historical_signal_eligible": false
+  }
+}
