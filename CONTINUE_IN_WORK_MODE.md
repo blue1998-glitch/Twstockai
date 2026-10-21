@@ -4,6 +4,18 @@
 
 ---
 
+## 2026-10-21 最新：真實返回分到達與收回，先前見證不覆寫
+
+入口 `docs/visual-discussion/20261021_real_return_paths_work_review/README.md`；新廣角加近看PNG、study／build_figure兩程式、return-paths／verification／figure-build／manual-qa、WORK_HANDOFF及回讀收據同目錄。從499a11ba接續（含使用者507cf5e），先補前輪20檔byte／SHA256／Git blob SHA回讀收據；原研究兩頁PDF與程式不改不重跑。資金閉環／飛輪最高目標保持第一節、PROJECT_VISION不改，仍Work。
+
+新真實返回：G2原36.15之4/11上移保留，7/21 L=C36.10、H36.65首次後日K再含且收下；7/25 C37.40又收上。原37.15之7/10 C36.85下移保留，7/13 H37.25 C36.80先到達未收回，7/14 H37.15恰等且C37.00仍下，7/25 C37.40才收上、7/26 C37.25仍上。原參照36.15與37.15不同，不合成新帶或計多次反應；返回更新當前位置不抹掉先前上移下移，也不直接判較大結構失效恢復。原G2人工136與5/2 H40.25代表、ABC39及5/13代表、10/7足夠與所有已答保持。
+
+兩條事後指定重疊路徑，15截止／前綴／未來價量人工污染／原出生首見證固定／獨立首返回事件及2相等缺日合成通過；新driver1、圖builder2，最終圖實看綁SHA。舊driver／verifier／產品測試0，無新行情瀏覽器Android。圖止8/2、不跨8/3已列缺日，非全日曆認證；來源Raw及公司行動／歷史公開可得限制保持。正式反應／結構變化／獨立反應次數／primary_pressure_id=null，historical_signal_eligible=false；分類NOT_VALIDATED、用途NOT_ESTABLISHED、Android NOT_TESTED_NEW_BUILD、行動與飛輪成效NOT_EVALUATED。
+
+下一步仍Work將真實返回回連既存局部活動及較大背景，研究反面證據只改當前片段或需要重檢較大觀察；收盤跨原參照即可更新問題，不強制等新小帶。不得以一次收回下穿、同側、量較大或候選數定整體，不發明帶寬分數，不重問已答，不降原主要帶。保留main及全後續、原引擎策略參數舊圖，不部署付費交易訊息子代理。以下為歷史，非本輪重跑。
+
+---
+
 ## 2026-10-21 最新：反應候選按時點更新，當日收回與量較大都不足單獨確認
 
 入口 `docs/visual-discussion/20261021_response_witnesses_work_review/README.md`；新兩頁PDF／兩PNG、response-witnesses／queries／summary／exploration-notes／verification／source-provenance／figure-build／manual-qa、三程式與完整WORK_HANDOFF及回讀收據同目錄。從507cf5e接續，最高資金閉環／飛輪目標仍AGENTS／CONTINUE第一節，PROJECT_VISION不改，維持Work不接產品。
@@ -1508,6 +1520,7 @@ Codex原始紀錄：Python325通過，真實Chromium87檢查／56下載通過；
 使用者已常態授權之後成品直接更新至本GitHub儲存庫的獨立分支；每次提供分支／提交、交接說明、實際驗收結果與可下載成品，讓兩種模式沿用同版。main保留，除非另有明確指示。此授權不等同部署網站、發布雲端環境、付費、交易或發送訊息。
 
 目前下一步使用 **Codex**，先讀 M1_V018_PRODUCT_GAP_HANDOFF.md，完成核心要求追溯並進行可逆修正；具體核心策略或重大架構未決時回工作模式處理。新版 Android 全面驗收仍未完成，不能用附件下載成功代替。
+
 
 
 
