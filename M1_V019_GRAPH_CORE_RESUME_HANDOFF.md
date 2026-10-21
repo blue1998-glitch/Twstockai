@@ -1,3 +1,19 @@
+## 2026-10-21 最新：B跨過返回須對準來源；七月自身參照與跨除息口徑分開
+
+入口 `docs/visual-discussion/20261021_b_reference_path_work_review/README.md`，evidence／source-check／verification／figure-manifest／manual-qa／source-provenance及build_review／verify_review、WORK_HANDOFF同目錄。兩頁向量PDF `output/pdf/b-reference-path-review.pdf`與六月／七月兩PNG。承接c87f1578，仍Work，原最高資金閉環／飛輪目標不改，B甲乙及A ABC G2所有已答不重問。
+
+六月舊結果接整圖：6/9收回33.20後14筆全收上；2/26高35.50於6/22過、6/24收下，6/30 C34.45仍上33.20下35.50，局部支持不代整體成立。新七月來源7/17 H35.50與二月同價不同來源；7/20 C35.85過，後四筆全收上，7/23、24低35.40／35.05卻收35.65／35.95，屬連續返回片段不當兩獨立成功。7/20起點日低35.10不充後續回測。7/21 H37.20是當日原高非自動轉折完成；7/22高相等、之後三筆全收37.20下，局部守價支持不等最新前高收復。
+
+七月量參照事前凍結7/1～17共12保存K的最大量97753866（7/17），7/20量80234731／7/21量66290064皆未超，後續仍有局部守價支持。只為局部保存窗非正式完整小帶／代表量線／成功率，原110試線不移作標準，未放量不否決保持。
+
+公司行動補查有新增網路文件核對、無新行情：公司官網2026股利表現金1.4、基準日7/7、發放7/27，基準日非除息交易日；多二手資料指7/1，但官方交易日事件明細web讀不通、MOPS只回入口，狀態PARTIAL_DOCUMENT_REVIEW_NOT_FULL_ACTION_AUTHENTICATION。跨7/1舊Raw不直接當經濟跌破／回測，不自行舊高減1.4／新造還原價。七月改用自身來源，仍限Raw事實，不宣稱期間無其他公司行動。原actions覆蓋／source_gaps保持；10/27急變仍未知，非本輪一併驗證。
+
+builder2／render2（修註記重疊及補交易日資格）、verify1，37截止前綴／未來價量污染及既有六月摘要、相等起點後續／量峰凍結／SHA／圖窗筆數通過。兩頁最終全實看，358與194保存K，兩窗逾六個月，截止各6/30與7/24，不借後續補證。原core／MACD／舊60,483研究／產品測試／瀏覽器Android皆未重跑；非分類或策略成效驗證。
+
+下一步Work優先補公司行動事件與跨期同口徑後再接更左帶；不因同價承接同源、不把連續K或重用形成點當多反應。正式分帶合併父子主次／界成員／代表量算法／站穩反應仍未定，historical_signal_eligible=false；分類NOT_VALIDATED、用途NOT_ESTABLISHED、新Android NOT_TESTED_NEW_BUILD、行動與飛輪NOT_EVALUATED，Raw／完整日曆／歷史公開可得及所有原缺日限制保持。圖至少六個月且足夠大到小，同附圖片與放大版；例行可逆多步及原分支交付已授權，重要新核心才備圖問。不改main或原引擎策略資料舊圖後續，不部署付費交易訊息子代理。以下為歷史，非本輪重跑。
+
+---
+
 ## 2026-10-21 最新：B已依最新K向左整圖實讀，價峰量峰與範圍敏感性分開
 
 入口 `docs/visual-discussion/20261021_b_right_to_left_work_review/README.md`，evidence／verification／figure-manifest／manual-qa／build_review／verify_review及WORK_HANDOFF同目錄；三頁向量放大PDF `output/pdf/b-right-to-left-review.pdf`、三PNG。承接91cfcd5，維持Work；原甲乙較認同甲但切法非標準已結束，不重問A ABC G2或B微小段。
