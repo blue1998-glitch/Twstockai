@@ -1,3 +1,17 @@
+## 2026-10-21 最新：原參照收盤跨越可更新觀察，形成點重用不算後續反應
+
+入口 `docs/visual-discussion/20261021_reference_paths_work_review/README.md`；新兩頁PDF／兩PNG、reference-paths／queries／formation-point-reuse-audit／summary／verification／source-provenance／figure-build／manual-qa、三程式與完整WORK_HANDOFF及回讀收據同目錄。從6c6eaf8接續，最高資金閉環／飛輪目標仍AGENTS／CONTINUE第一節、PROJECT_VISION不改，仍Work研究不接產品。
+
+新研究途徑：已可用原參照被保存收盤嚴格跨過，當日可更新跨過後路徑的觀察問題，不必等新局部雙向價帶完成；不等於正式新大結構、舊終點、清除壓力或交易資格。A原高47.35於9/23確認，10/14 H=C47.30仍下，10/15 O48.35 L47.60 C48.80已整根上且日K未含原價；前批「離開後再等下一根整根外」9/17框事件仍known10/16，不回寫。ABC原4/8低28.45於4/10確認，6/2 L27.65 C27.70已下但H29.05仍跨含，6/3 H28.00才整根下；6/2仍人工第39筆，不等6/12框下活動才更新觀察，也不定通用終點。
+
+同側局部活動不證受原參照約束。G2九個影線框含40.25全重用5/2形成高點，A五框含44.20全重用10/1形成低點；各原確認後無日K價域再含其原價，不算九次測壓／五次回測。ABC35.45與31.40確認後亦無精確原價再含；保留較大背景／代表，不由同側認證反壓，也不以精確點未再含否定較大帶。35.45不補主帶正式上緣，原主要帶月精度及未挑戰舊高前不降重要性保持。日K價域含點仍不證日內先後或精確成交，原形成來源與確認後新增證據分開。
+
+三組六事後指定原3%點、17截止／37參照視圖（34可用3遮罩），非主點選取或歷史快照。新driver1、verify2（新增形成點重用反例才重驗）、新圖builder1／渲染1，兩頁實看綁SHA；17截止／前綴／未來價人工污染／未可用參照值污染／正式未知、136全路徑及首事件、1047局部位置與可用時序、34不推作用／重要性、3遮罩、A與ABC時序各1、3同側無精確再含、4觀察問題出生追加保持、2方向合成、2形成來源重用、8輸入SHA通過。舊driver／圖／core指標／CLI bootstrap舊產品測試0重跑，無新行情瀏覽器Android。
+
+正式形成起末成員／主結構重要性／父子合併未定，support_or_pressure_response_demonstrated／importance_score、selected_role／primary_pressure_id／歷史選取仍null、historical_signal_eligible=false，10/7原snapshot／numeric_frame不補造；分類NOT_VALIDATED、用途NOT_ESTABLISHED、行動與飛輪成效NOT_EVALUATED、新Android NOT_TESTED_NEW_BUILD。下一步仍Work用確有原日K再含、收盤跨過及後來返回的有限案例，研究反應證據，並列原參照位置更新與已完成跨活動閱讀，不把同側／形成K重用當反應，不發明帶寬／接近或主要性門檻、不每片段升層。所有原已答不重問，保留main及全後續、原參數策略來源舊圖，不部署付費交易訊息子代理。以下為歷史，非本輪重跑。
+
+---
+
 ## 2026-10-21 最新：局部補充與較大閱讀已分開，正式大結構仍未定
 
 入口 `docs/visual-discussion/20261021_broader_observation_topics_work_review/README.md`，新兩頁PDF／兩PNG、八對照二十截止reading-proposals／queries、summary／verification／source-provenance／figure-build／manual-qa、三程式與完整WORK_HANDOFF、回讀收據同目錄。從7790e911接續，最高資金閉環／飛輪目標仍AGENTS／CONTINUE第一節、PROJECT_VISION不改，仍Work研究不轉產品接入。

@@ -1,0 +1,165 @@
+{
+  "groups": 3,
+  "cutoff_views": 17,
+  "reference_views": 37,
+  "available_reference_views": 34,
+  "original_references": 6,
+  "latest": {
+    "A": [
+      {
+        "reference_id": "sha256:1a1c1cd695fbda45df17d1cf4ec7b451eb0eeb681ca82a676d605351f1049572",
+        "price": "47.35",
+        "kind": "HIGH",
+        "first_events": {
+          "daily_price_range_contains_reference": null,
+          "strict_extreme_excursion": {
+            "close": "48.80",
+            "date": "2026-10-15",
+            "high": "49.50",
+            "low": "47.60",
+            "open": "48.35",
+            "volume_shares_scaled": "63086494"
+          },
+          "strict_close_beyond_original_extreme": {
+            "close": "48.80",
+            "date": "2026-10-15",
+            "high": "49.50",
+            "low": "47.60",
+            "open": "48.35",
+            "volume_shares_scaled": "63086494"
+          },
+          "whole_bar_beyond_original_extreme": {
+            "close": "48.80",
+            "date": "2026-10-15",
+            "high": "49.50",
+            "low": "47.60",
+            "open": "48.35",
+            "volume_shares_scaled": "63086494"
+          }
+        },
+        "local_candidates": 6,
+        "entire_raw_paths_below": 6,
+        "entire_raw_paths_above": 0,
+        "daily_range_contains_count": 0,
+        "post_cross_complete_local_candidates": 0
+      },
+      {
+        "reference_id": "sha256:97f99946efffc956c39b03dc68b03c125ed5da80b7e98e8cab86f184a932aac3",
+        "price": "44.20",
+        "kind": "LOW",
+        "first_events": {
+          "daily_price_range_contains_reference": null,
+          "strict_extreme_excursion": null,
+          "strict_close_beyond_original_extreme": null,
+          "whole_bar_beyond_original_extreme": null
+        },
+        "local_candidates": 6,
+        "entire_raw_paths_below": 0,
+        "entire_raw_paths_above": 1,
+        "daily_range_contains_count": 0,
+        "post_cross_complete_local_candidates": 0
+      }
+    ],
+    "ABC": [
+      {
+        "reference_id": "sha256:e9041e36b00e24173c6697db2352894ae17a88ee983164049a5e1a2ad1b055b2",
+        "price": "35.45",
+        "kind": "HIGH",
+        "first_events": {
+          "daily_price_range_contains_reference": null,
+          "strict_extreme_excursion": null,
+          "strict_close_beyond_original_extreme": null,
+          "whole_bar_beyond_original_extreme": null
+        },
+        "local_candidates": 40,
+        "entire_raw_paths_below": 40,
+        "entire_raw_paths_above": 0,
+        "daily_range_contains_count": 0,
+        "post_cross_complete_local_candidates": 0
+      },
+      {
+        "reference_id": "sha256:45c65aa99ad5bd42bf7575d2388269c540c85883dd1ae9c332b2a408e7c72818",
+        "price": "28.45",
+        "kind": "LOW",
+        "first_events": {
+          "daily_price_range_contains_reference": {
+            "close": "27.70",
+            "date": "2025-06-02",
+            "high": "29.05",
+            "low": "27.65",
+            "open": "29.05",
+            "volume_shares_scaled": "93266178"
+          },
+          "strict_extreme_excursion": {
+            "close": "27.70",
+            "date": "2025-06-02",
+            "high": "29.05",
+            "low": "27.65",
+            "open": "29.05",
+            "volume_shares_scaled": "93266178"
+          },
+          "strict_close_beyond_original_extreme": {
+            "close": "27.70",
+            "date": "2025-06-02",
+            "high": "29.05",
+            "low": "27.65",
+            "open": "29.05",
+            "volume_shares_scaled": "93266178"
+          },
+          "whole_bar_beyond_original_extreme": {
+            "close": "26.85",
+            "date": "2025-06-03",
+            "high": "28.00",
+            "low": "26.55",
+            "open": "28.00",
+            "volume_shares_scaled": "107474363"
+          }
+        },
+        "local_candidates": 40,
+        "entire_raw_paths_below": 1,
+        "entire_raw_paths_above": 39,
+        "daily_range_contains_count": 1,
+        "post_cross_complete_local_candidates": 1
+      },
+      {
+        "reference_id": "sha256:203d0b11418597215257e8eb0551095b5cb563d72fe1cc7e1c8ae3d2e4644f5e",
+        "price": "31.40",
+        "kind": "HIGH",
+        "first_events": {
+          "daily_price_range_contains_reference": null,
+          "strict_extreme_excursion": null,
+          "strict_close_beyond_original_extreme": null,
+          "whole_bar_beyond_original_extreme": null
+        },
+        "local_candidates": 40,
+        "entire_raw_paths_below": 29,
+        "entire_raw_paths_above": 0,
+        "daily_range_contains_count": 0,
+        "post_cross_complete_local_candidates": 0
+      }
+    ],
+    "G2": [
+      {
+        "reference_id": "sha256:98d84393f1ab674fd512365416f50228b5b7af2cf917e59d369de7116ece333e",
+        "price": "40.25",
+        "kind": "HIGH",
+        "first_events": {
+          "daily_price_range_contains_reference": null,
+          "strict_extreme_excursion": null,
+          "strict_close_beyond_original_extreme": null,
+          "whole_bar_beyond_original_extreme": null
+        },
+        "local_candidates": 170,
+        "entire_raw_paths_below": 161,
+        "entire_raw_paths_above": 0,
+        "daily_range_contains_count": 0,
+        "post_cross_complete_local_candidates": 0
+      }
+    ]
+  },
+  "research_driver_runs": 1,
+  "new_original_pivot_or_local_candidate_generation": 0,
+  "prior_driver_reruns": 0,
+  "response_or_constraint_inference": "NOT_ESTABLISHED",
+  "classifier": "NOT_VALIDATED"
+}
