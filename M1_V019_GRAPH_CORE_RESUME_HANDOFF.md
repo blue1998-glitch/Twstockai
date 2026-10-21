@@ -1,3 +1,17 @@
+## 2026-10-21 最新：反應候選按時點更新，當日收回與量較大都不足單獨確認
+
+入口 `docs/visual-discussion/20261021_response_witnesses_work_review/README.md`；新兩頁PDF／兩PNG、response-witnesses／queries／summary／exploration-notes／verification／source-provenance／figure-build／manual-qa、三程式與完整WORK_HANDOFF及回讀收據同目錄。從507cf5e接續，最高資金閉環／飛輪目標仍AGENTS／CONTINUE第一節，PROJECT_VISION不改，維持Work不接產品。
+
+本輪把原參照確認後日K價域相交的當日候選，與後續影線／首個後收分開。凍結第一相交K原高低只作描述地標，不是新箱、正式反應必要充分條件或停損。G2原3/13低36.15於3/23確認，3/28 L36.10 H36.65 C36.20仍原低上，3/29影線36.05下探、4/6影線先上越，但4/11 C37.45才後收在該K上；原5/15低37.15於5/30確認，7/7 L36.90 H37.50 C37.30同收原低上，下一筆7/10 C36.85卻在該K下。兩例不能當日固定成成功支撐；後收見證日量均比相交日大（27.29→32.19、19.47→26.00百萬股），方向相反，量較大不單獨指向上漲。
+
+ABC原4/10高31.20於4/11確認，5/12 H=C31.20相等不收過；5/13 H31.40 C31.10仍在5/12凍結30.80..31.20內，5/14 C30.35才後收在下，不改5/13代表／升31.20主壓力。原4/8低28.45於4/10確認，6/2 C27.70已在下、6/3 C26.85續下，人工ABC39仍保留。相鄰相交段3/28..31四筆／7/7..10兩筆／5/12..13兩筆不作多次獨立測試；續段K不另起獨立出生。A10/15跳過47.35無日K相交仍保留原參照跨越觀察，形成K及同日確認來源不當確認後反應。首見證是過去事實不是當前趨勢，返回保留首見證並更新當前路徑；日K相交不證日內先後或精確成交。
+
+一次事後探索挑相反路徑，非盲掃描／成功率；新driver1，六指定對照22截止／四合資格出生。新verify2（第二次加返回合成）、圖builder2／渲染2（移開原參照標籤），最終兩頁實看綁SHA。22視圖／前綴／未來價量人工污染／未可用參照污染／正式未知、13首後收及凍結／26影線／13相交段／18精確量比較、4出生保持與相等雙影線零量缺日返回等反例、7來源SHA通過。舊driver／圖／core指標／CLI bootstrap舊產品測試0重跑，無新行情瀏覽器Android。
+
+支撐壓力作用／量資格／主要性及正式反應未定，support_or_pressure_response_demonstrated／volume_qualification／importance_score／formal_reaction_confirmation仍null；正式形成起末成員／父子合併／selected_role／primary_pressure_id／歷史選取null，historical_signal_eligible=false，10/7原snapshot／numeric_frame不補造。分類NOT_VALIDATED、用途NOT_ESTABLISHED、行動與飛輪成效NOT_EVALUATED、新Android NOT_TESTED_NEW_BUILD。下一步仍Work把當日候選與後續正反路徑回連既存局部活動及較大背景，分清反證只改當前片段或需重檢較大觀察；不以單次正負／量較大／同側／接近／候選數定整體，不發明帶寬或分數。不因時間自動升確定性，不把原高未再含當大帶不存在，原所有答案不重問、不降原代表與較大帶。保留main及全後續、原參數策略來源舊圖，不部署付費交易訊息子代理。以下為歷史，非本輪重跑。
+
+---
+
 ## 2026-10-21 最新：原參照收盤跨越可更新觀察，形成點重用不算後續反應
 
 入口 `docs/visual-discussion/20261021_reference_paths_work_review/README.md`；新兩頁PDF／兩PNG、reference-paths／queries／formation-point-reuse-audit／summary／verification／source-provenance／figure-build／manual-qa、三程式與完整WORK_HANDOFF及回讀收據同目錄。從6c6eaf8接續，最高資金閉環／飛輪目標仍AGENTS／CONTINUE第一節、PROJECT_VISION不改，仍Work研究不接產品。
