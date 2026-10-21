@@ -1,3 +1,15 @@
+## 2026-10-21 最新更正：B圖窗不足，撤回窄窗二選一並補廣角
+
+使用者明確指出：「你若要問圖形問題，圖片切的範圍一定要夠多。這樣的範圍資料無法回答你的問題」。往後真正新核心圖形問題須先給足前後背景及可放大廣角，再附局部；不能以局部裁切逼整體歸屬或限制起末。範圍不足先補圖、撤回原裁決要求，不把無法回答當否決或批准。事後形狀背景與歷史當時可知資料必須明示分開。
+
+最新入口 `docs/visual-discussion/20261021_b_wide_context_work_review/README.md`，四頁向量圖冊 `output/pdf/b-wide-context.pdf`：兩年485筆主圖、五年1213筆總覽、一年241筆細節及截至4/28一年半368筆；四張PNG、build_context.py、figure-manifest、review-state、source-provenance、manual-qa與WORK_HANDOFF同目錄。前三圖4/28右側117筆僅供事後背景，不回填歷史判斷。紫色只定位原B來源，非整體邊界；本次圖窗不是通用結構窗。
+
+前輪B4/16～4/27二選一及助手方案二偏好均撤回，優先取代下方舊「首次核心待答」。user_decision=UNDETERMINED、previous_question=WITHDRAWN_INSUFFICIENT_CHART_CONTEXT、assistant_preference=null，未取得使用者整體合併／拆分答案；補圖完成亦非使用者已認可範圍充分。原數值與兩方案只保留歷史，不預設原八根K是整體起末，不再照問同一二選一。先從完整走勢辨認所談過程，再比較活動歸屬；B正式結構仍未定。
+
+本輪builder4次，最終四頁PDF渲染實看、原1213唯一有序K／四窗筆數與截止／來源SHA核對，無新行情、結構或指標重算、舊測試／瀏覽器Android。原A、ABC、G2答案不重問；跨原參照即可更新問題但非正式大結構，重用形成點不算多次反應保持。正式合併父子／起末／價界／主次／反應仍null，historical_signal_eligible=false；分類NOT_VALIDATED、用途NOT_ESTABLISHED、新Android NOT_TESTED_NEW_BUILD、行動與飛輪成效NOT_EVALUATED。原來源與Raw公司行動／日曆／歷史公開可得限制保持。維持Work，保留main全後續原引擎策略來源舊圖，不部署付費交易訊息子代理；例行多步與同分支GitHub保存已授權，僅重要新核心有充分圖才問。以下歷史不當本輪重跑。
+
+---
+
 ## 2026-10-21 最新：B具體合併兩方案已備，首次核心圖形裁決待答
 
 入口 `docs/visual-discussion/20261021_b_merge_options_work_review/README.md`；b-merge-options.png、merge-proposals／study-inputs／evidence-views、prepare_review／build_figure、provenance／verification／manual-qa／figure-build與WORK_HANDOFF及回讀收據同目錄。從4540d4af接續，最高資金閉環／飛輪目標仍第一節、PROJECT_VISION不改，維持Work不接分類器產品。
