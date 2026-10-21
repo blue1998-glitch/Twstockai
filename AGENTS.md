@@ -4,6 +4,20 @@
 
 ---
 
+## 2026-10-21 最新：B具體合併兩方案已備，首次核心圖形裁決待答
+
+入口 `docs/visual-discussion/20261021_b_merge_options_work_review/README.md`；b-merge-options.png、merge-proposals／study-inputs／evidence-views、prepare_review／build_figure、provenance／verification／manual-qa／figure-build與WORK_HANDOFF及回讀收據同目錄。從4540d4af接續，最高資金閉環／飛輪目標仍第一節、PROJECT_VISION不改，維持Work不接分類器產品。
+
+本輪B-shared-path／2884只問高亮4/16..4/27來源段：方案一同一局部整理內部下移，方案二上方整理轉弱、較低活動另列（仍可同屬較大觀察鏈）。原上方4/16..23共6筆／3段，共同32.75..33.00、raw32.35..33.20，4/24才知；下方4/22..27共4筆／2段，共同32.45..32.55、raw32.00..33.10，4/28知。共享4/22..23一段下跌及2筆，去重4段8筆；交集空不當通用合併否決，共段也不決定合併。
+
+4/23 C32.45在其後4/24才確認上方共同區下；4/24與27 C32.55、4/28 C32.45均未收回上方，4/28 H32.95卻影線返回上方區，反面證據保留、不稱無接觸或壓力成功。助手研究偏好方案二是分析，不是使用者裁決。user_decision=PENDING_NEW_CORE_REVIEW、manual_B_structure_label／formal_merge=null、兩方案user_approved=false；需展示已完成圖後問一次新的核心形狀身份。無答不可採助手偏好；答覆僅此例形狀不自動定最早起末、正式價界或通用門檻。原A／ABC39／G2人工136及全部原答案不重問。
+
+新source audit1，4截止／前綴／未來價量人工污染／未可用幾何污染、兩原K與leg幾何、共段去重8筆、4/28影線返回與收盤未回、4來源SHA通過；圖builder2、最終圖實看綁SHA。廣角2/26..4/28及兩個相同K線／座標近圖，不用其後行情，框只示候選來源範圍、非已定價界起末，4/28不硬納原來源期；原4/16H33.20可見不倒填4/30才可用原3%點。舊driver／verifier／產品測試0，無新行情瀏覽器Android。
+
+正式合併／父子／起末／價界／主次／反應仍null、historical_signal_eligible=false；分類NOT_VALIDATED、用途NOT_ESTABLISHED、Android NOT_TESTED_NEW_BUILD、行動與飛輪成效NOT_EVALUATED。原參數策略、Raw／公司行動／日曆／歷史公開可得及所有缺日限制保持，10/7原snapshot／numeric_frame無仍不補造。下一步Work先承接B首次核心答案，不再重問A ABC G2、不重跑無新變更；不以同價／共段／最近／最大窗／包含／全分離／候選數或空交集單獨決定合併，不發明帶寬分數。保留main全後續與原引擎策略來源舊圖，不部署付費交易訊息子代理。以下為歷史，非本輪重跑。
+
+---
+
 ## 2026-10-21 最新：同一較大觀察與局部並列可共存，正式合併另判
 
 入口 `docs/visual-discussion/20261021_process_scope_work_review/CORE_SCOPE_DECISION.md`；兩新PNG、README／WORK_HANDOFF、study-inputs／source-facts／relationship-proposals、prepare_review／build_figures、provenance／verification／manual-qa／figure-build及回讀收據同目錄。從e41fecc3接續，最高資金閉環／飛輪目標仍第一節，PROJECT_VISION不改，維持Work語意研究不接分類器產品。
