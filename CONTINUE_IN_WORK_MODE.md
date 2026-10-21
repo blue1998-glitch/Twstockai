@@ -4,7 +4,20 @@
 
 ---
 
-## 2026-10-21 最新口徑已答：除權息後約2～3月還原，大盤空頭原日K優先
+#
+## 2026-10-22 最新：B官方除息列已核，單次換算與市場背景另存研究
+
+接續17a480ec，入口 `docs/visual-discussion/20261022_b_basis_source_work_review/README.md`，完整WORK_HANDOFF、evidence、11份官方原件與source-capture、comparison-data、verification、manual-qa、recovery-audit同目錄；三頁PDF及三PNG。原最高資金閉環／飛輪目標與既有答案不改。
+
+新取得TWSE 7/1官方事件列：前收34.45、參考33.05、息1.40；與原前收及新擷取六月／七月至7/24共38筆190欄OHLCV全等。新加權收盤1/2～7/24共133筆同個股日期，只作背景，非正式政策指標。市場身份仍NOT_ESTABLISHED、首選口徑null。單次現金除息比例研究另版保存：7/1前OHLC乘33.05/34.45、量不變；二月原高35.50換算34.057329…於7/6收34.45在上，七月17日新高35.50於7/20收35.85在上；首次只指除息後／新來源後，六月舊跨越歷程保留。同原價不同來源／換算參照，不當同一關卡或獨立成功票。
+
+新study1、builder3、verifier4，最終42項通過，三頁最終渲染全實看；初字型與第三PNG不完整已修，補暫存驗後替換。原core／MACD／舊driver／產品瀏覽器Android皆未重跑，未改原引擎策略資料舊圖。完整actions鏈／歷史公開可得未核，TWT49U明列排除類別，10/27急變及11/6註記仍未解；complete_adjusted_history=false，不升正式政策還原。原source_gaps保持，historical_signal_eligible=false，分類NOT_VALIDATED、用途NOT_ESTABLISHED、新Android NOT_TESTED_NEW_BUILD、行動與飛輪NOT_EVALUATED。
+
+下一步仍Work，以本輪充分大盤圖釐清使用者所稱空頭的實際情境，無20％／均線自定門檻，不重問已答2～3月方向或B甲乙／大小帶／A ABC G2／微小段。之後按可核同口徑由右往左讀完整帶；六個月非固定帶窗。例行多步與原分支交付已授權，保留main及全部後續，不部署付費交易訊息子代理。詳細限制與接續見本輪WORK_HANDOFF。以下為歷史。
+
+---
+
+# 2026-10-21 最新口徑已答：除權息後約2～3月還原，大盤空頭原日K優先
 
 使用者原話：「通常除權息後要以還原權息去做分析持續時間大約2-3個月，大盤是空頭市場時則一切以原日k分析。」完整原話與資格見 `docs/visual-discussion/20261021_price_basis_policy_decision/decision.json`；README／source-check／verification／WORK_HANDOFF與回讀收據同目錄。承接7ffb2dca，仍Work，最高資金增值閉環／飛輪目標不改。
 
