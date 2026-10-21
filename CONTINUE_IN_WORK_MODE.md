@@ -4,6 +4,24 @@
 
 ---
 
+## 2026-10-21 最新：B同層身份兩讀法已備，唯一新問題待答
+
+入口 `docs/visual-discussion/20261021_same_level_contrast_work_review/README.md`；review-state／registry-query／study-inputs／contrast-evidence／cutoff-views／verification／source-provenance／source-locations／figure-manifest／manual-qa、study／verify／build_review與WORK_HANDOFF同目錄。兩頁向量放大PDF `output/pdf/b-same-level-review.pdf`、b-source-contrast.png及b-same-level-proposals.png。承接71dbc062，仍Work。原B大帶含多小帶已答，不重問；A ABC G2及4月微小段均不重問。
+
+本輪唯一新核心：同一B大帶背景，1十二月底、2二月前段、3二月底至三月初，是同一小帶多次活動、各自保留小帶候選，或只是大帶內不值得分小帶的波動／應調範圍。這會改系統同層身份，不能用原B「方案二」代答。review-state=PREPARED_FOR_PRESENTATION_AWAITING_USER，user_decision／assistant_preference=null；提案user_approved=false，正式merge／split／bounds／members／parent仍null。框僅示觀察範圍，不強制三帶或精確起末價界；有新答先保存原話及範圍再對來源。
+
+原參照12/22～31共同33.75～33.85、raw32.75～34.15，1/2知。後2/2～23共同33.70～34.00於2/24知，9筆中2/10 C33.80在舊共同內；後2/26～3/5共同33.65～34.05於3/6知，5筆無收盤在舊共同內，但3/4 C33.65下、3/5 C34.05上，兩日日K皆接觸。沒收在窄共同區非沒有返回；異側保存收盤跨越不證日內順序／連續成交／反應成功。三來源是原保存活動，不是已核三小帶，確認K不納來源期。
+
+查保存登錄明示B/2884 cohort：源起2025/11/6以後、後段至2026/5/29知，完整後段左證據晚於舊可知、共同及raw均正寬交疊、無已列缺日；任一源碰4/16～27微小段均排除。434符合保存配對；同舊參照且後段共同上下界相同的17組有兩造訪狀態，卻0個後段來源期非重疊對照，不能把擴窗重疊版本當獨立反例。粗幾何條件下有93個非重疊對照組合，明示選這兩源，後段上下界不完全相同，非全數值相等控制實驗。全部非市場獨立樣本／成功率／已核合併正負例；有收盤進入不代替正式合併答案。
+
+前期登錄探索2、新study1／verify1：11截止前綴／未來價量未知幾何／全量1／人工標籤污染、出生固定、3原活動及leg-turn幾何／434原價造訪／嚴格0粗93重數／兩後段不共來源／2觸及與雙邊跨越／原B答案及4來源SHA通過。builder1／render1，2頁實看、零影像物件、EOF與暫存核後替換／import不動成品、四窗筆數另核；兩提案同K同xlim／ylim，原分支4來源blob SHA相符。前批6活動與原60,483 driver不重算；原core／MACD／舊driver／舊verifier／過破量研究／產品測試及新行情瀏覽器Android皆0。
+
+廣角2024/10～2026/5 399筆，細圖與兩提案2025/9～2026/5各177筆，四主窗逾六個月且先大後小，同附PNG及放大版；3/6右方只事後背景，不回填當時。原B大小帶／A ABC G2全答案、量非硬門檻、G2返回raw而共同未到的更正保持。正式同層合併父子主次／完整界成員／站穩反應仍未知；historical_signal_eligible=false，分類NOT_VALIDATED、用途NOT_ESTABLISHED、新Android NOT_TESTED_NEW_BUILD、行動與飛輪成效NOT_EVALUATED。Raw公司行動／完整日曆／歷史公開可得及全部原缺日保持。
+
+下一步Work只承接這次同層身份新答案，不將定性答覆升精確日價全成員或通用門檻；不發明N日深度百分比量倍數帶寬分數，不以交疊／無共turn／目前同側等單獨選合併父子主次。保留main全後續與原引擎策略來源舊圖，例行多步及原分支交付已授權，不部署付費交易訊息子代理。以下歷史非本輪重跑。
+
+---
+
 ## 2026-10-21 最新：B活動可連看推進返回；G2已返回來源外圍，僅共同價位未到
 
 入口 `docs/visual-discussion/20261021_activity_bridge_work_review/README.md`；EVIDENCE_SCOPE_CONTRACT、relationship-proposals、study-inputs／activity-evidence／cutoff-views／verification／source-provenance／source-locations／figure-manifest／manual-qa、study／verify／build_review與WORK_HANDOFF同目錄，兩頁放大PDF `output/pdf/activity-bridge-review.pdf`及B／G2兩PNG。承接2f7bf898，維持Work，無新人工問題，不重問原A ABC G2及B大小帶／微小段。
