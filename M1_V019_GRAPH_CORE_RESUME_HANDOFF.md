@@ -1,3 +1,17 @@
+## 2026-10-21 最新：ABC與A跨案對照，分層讀法一致但跨越範圍不同
+
+入口 `docs/visual-discussion/20261021_cross_case_reading_work_review/README.md`；ABC／A新對照PNG、study-inputs／cross-case-views／cross-case-findings、study／verify／build_figure、provenance／verification／manual-qa／figure-build、WORK_HANDOFF及回讀收據同目錄。從93f64e61接續，最高資金閉環／飛輪目標仍第一節，PROJECT_VISION不改，維持Work不接分類器產品。
+
+三指定案例可用同一閱讀順序，未見時序矛盾但非通用分類規則驗證。G2舊保存7/25 C37.40回37.15、仍下較早38.05..38.25及40.25；ABC5/26完成活動共同區30.55..30.60→29.80..30.30下移且raw交疊，6/2 C27.70已在原28.45及較早raw28.50下、H29.05仍跨含，6/3才整根外、6/12才知6/6..11下方活動。收破當日更新不等新小帶、不定通用終點，人工ABC39保持。原5/13右確認K H31.40不改較早來源raw31.20；原高標記5/14才知，人工代表不撤。
+
+A10/6 C45.45只過近端共同區、仍下較早45.65；10/14 H=C47.30恰等較早共同上緣且未過47.35；10/15 L47.60 C48.80整根在較早raw47.35及同價原高上、日K不含原價，10/16 C49.15仍上。跨越範圍比G2較近參照收回更廣，但原高與較早raw同源9/17，非兩獨立票／回測成功／新大結構。最新兩A局部共turn、左證據10/2早於前段10/6可知，不當全新獨立票。原A上漲整理再漲及10/7足夠、ABC較弱39及5/13代表、G2人工136及5/2代表全部保持；自動正式映射未定不撤人工答案，原35.45不補舊主帶正式上緣、不因小core降大背景。
+
+新driver1、verify1，21截止／前綴／未來價量人工污染／未可用幾何污染／追加保留／正式未知、六活動原K與leg幾何／六對來源、ABC與A相等過破／可知時序／來源重用、6來源SHA通過。G2只讀前輪固定視圖不重算，新圖builder2、最終圖實看綁SHA；舊driver／verifier／產品測試0，無新行情瀏覽器Android。有限事後指定非盲掃描／分類率，Raw／公司行動／日曆／歷史公開可得與缺日限制保持。正式結構／父子合併／終點／反應／主要性／獨立確認數／primary_pressure_id=null，historical_signal_eligible=false；分類NOT_VALIDATED、用途NOT_ESTABLISHED、Android NOT_TESTED_NEW_BUILD、行動與飛輪成效NOT_EVALUATED。
+
+下一步仍Work回到多段活動何時屬同一較大過程或只並列局部的角色歧義，用已清楚價格事實縮小問題，不重做同樣過破時序或只堆欄位，不依最近／最大窗／同價／共段／全分離／當前在內／數量自選主結構父子，不發明帶寬分數。全部已答不重問、保留main全後續與原引擎策略來源舊圖，不部署付費交易訊息子代理。以下為歷史，非本輪重跑。
+
+---
+
 ## 2026-10-21 最新：返回回連局部與背景，反證先對準原判斷
 
 入口 `docs/visual-discussion/20261021_return_context_work_review/README.md`；新廣角加局部PNG、study-inputs／context-views、study／verify／build_figure、provenance／verification／manual-qa／figure-build與WORK_HANDOFF及回讀收據同目錄。從cf0b7325接續，最高資金閉環／飛輪目標保持第一節，PROJECT_VISION不改，仍Work不接產品。
