@@ -4,6 +4,22 @@
 
 ---
 
+## 2026-10-21 最新：跨案後續支持只對準相應參照，觀察鏈不等於帶合併
+
+入口 `docs/visual-discussion/20261021_cross_case_followup_work_review/README.md`，三頁向量放大PDF `output/pdf/cross-case-followup-review.pdf`與三PNG、study／verify／build_review、study-inputs／followup-results／cutoff-views／comparison-findings／source-provenance／source-locations／verification／figure-manifest／manual-qa及WORK_HANDOFF同目錄。承接8e2260dc，仍Work，無新增人工問題，不重問A ABC G2、B大小帶與原微小段。
+
+G2對37.15：7/10收下後10筆收下，7/25起7筆收上；7/13影線過收仍下、7/14高恰等。7/25收回後6筆全收上，7/28低穿收上、7/31及8/2低恰等；同期最高37.80仍低較早共同38.05～38.25（7/7知）。有局部收回支持，不能升整體G2恢復／較早區收復。ABC6/2 C27.70收下28.45，H29.05仍跨含；之後8筆整根下、最高28.00，不等6/12新活動才更新，原39不延長。A10/15越47.35，10/16一筆L48.00 C49.15續上；沒返回觀察非已驗回測，不能借別案後續補證據。B前輪摘要只拷貝未重算；A9/17同源原高／raw不重複票。
+
+四新查詢未見讀法時序矛盾，只是有限事後指定一致性，非盲測／分類率。證據綁原參照來源／起點／截止；出生固定、後續更新目前位置，不倒填不刪舊跨越，不用相同等待筆數才承認新的收回。G2兩起點同參照演變鏈非新帶或獨立樣本；與較早活動同G2背景、各自價位來源保持並列。ABC39與後8可連看弱化但不合併身份；A跨越隔日續行非另生帶。四項觀察關係提案不升正式合併父子。原G2人工1/16～8/16的136／5/2代表、ABC39／5/13代表、A上漲短整再漲與10/7足夠及全部已答保持。
+
+study1／verify1：15案例截止／23查詢截止前綴、未來價量污染、全量1、方向價格鏡射角色、4原價結果、出生固定與未來起點不漏、相等嚴格整根、同源不多票及B全等通過；鏡射不驗上下交易策略對稱。builder1／render1、3頁全實看、零影像物件、EOF與暫存核後替換／import不動成品、6來源SHA及圖窗筆數另核，原分支6來源blob SHA回讀相符。原core／MACD／舊driver／舊verifier／原過破量研究／產品測試與新行情瀏覽器Android皆0。
+
+主背景G2382／ABC346／A432保存K，各有至少六個月細圖136／126／135；G2新細圖1/3～8/2恰136與原人工1/16～8/16共136是不同範圍，不混身份。全六窗逾六個月，先大後小，同附圖片與可放大版；六個月非固定結構窗。Raw公司行動／完整日曆／歷史公開可得及全部舊缺日保持。正式站穩／成功失敗／確認日、同層合併父子主次、價界成員及反應仍null；分類NOT_VALIDATED、用途NOT_ESTABLISHED、新Android NOT_TESTED_NEW_BUILD、行動與飛輪成效NOT_EVALUATED，historical_signal_eligible=false。
+
+下一步Work將單一參照的支持接回較早活動與整體範圍，先分已到／未收復，再比較活動歸屬候選；不重做同批事件或機械堆欄位，不發明N日深度百分比量倍數或帶寬分數。真正重要新核心才附充分廣角圖問。保留main全後續與原引擎策略來源舊圖，例行多步與原分支交付已授權，不部署付費交易訊息子代理。以下歷史非本輪重跑。
+
+---
+
 ## 2026-10-21 最新：B突破後守價／返回／收回的後續證據已核，未定固定天數
 
 入口 `docs/visual-discussion/20261021_b_followup_holding_work_review/README.md`；兩頁可放大向量PDF `output/pdf/b-followup-holding-review.pdf`、新PNG、study_followup／verify_followup／build_review、followup-evidence／cutoff-views／episode-summaries／verification／source-provenance／figure-manifest／manual-qa及WORK_HANDOFF同目錄。承接2805d811，量可支持但未放量不否決；B大小帶包含關係、原微小段與A ABC G2已答均不重問，沒有新增人工問題。

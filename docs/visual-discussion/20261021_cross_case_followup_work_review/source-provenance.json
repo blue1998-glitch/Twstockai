@@ -1,0 +1,70 @@
+{
+  "base_commit": "8e2260dc9d146244976b8bd4b1b8a87ed70f97ae",
+  "inputs": [
+    {
+      "local": "/workspace/scratch/54685b8dac93/real-review/input/comparison-data.json",
+      "sha256": "184bdef0b687ec0ab7bfcaaac2157ff7916fbc1000ef312d81b5efc0c2e73e15"
+    },
+    {
+      "local": "/workspace/scratch/54685b8dac93/independent-level-review/source-data-2884.json",
+      "sha256": "ab87a51b5b8afd076603f290b10f415bd60d31ae47c5ab2f6d9d609ad4014901"
+    },
+    {
+      "local": "/workspace/scratch/e9363d3b9105/cross-case-reading-research/study-inputs.json",
+      "sha256": "41674425e87026ec8dda527d0fa31f545ec204c41923275eb87b188e33de80b4"
+    },
+    {
+      "local": "/workspace/scratch/e9363d3b9105/return-path-research/return-paths.json",
+      "sha256": "a20cb2937cb35b3586043e42ef6557f220899620d1df055965d5e8bd9f70d081"
+    },
+    {
+      "local": "/workspace/scratch/e9363d3b9105/return-context-research/study-inputs.json",
+      "sha256": "921cfc7c9615a8ff51f4e105ecffa45624606b9e9ec6246a978dae044d105d40"
+    },
+    {
+      "local": "/workspace/scratch/e9363d3b9105/b-followup-holding-research/episode-summaries.json",
+      "sha256": "1c9909ae1932210cea37c193c83d87b40c85e3aa1f49a110f3c6f55fc2e2d1fa"
+    }
+  ],
+  "source_gaps": {
+    "1101": {
+      "actions_coverage": "UNVERIFIED_NO_NEW_ACTION_AUTHENTICATION",
+      "calendar_status": "PLANNED_PLUS_REVIEWED_EXCEPTIONS_ONLY_NOT_EXHAUSTIVE",
+      "historical_publication_timing": "UNVERIFIED",
+      "known_calendar_missing_dates": [
+        "2022-01-27",
+        "2022-01-28",
+        "2023-08-03",
+        "2024-07-24",
+        "2024-07-25",
+        "2024-10-02",
+        "2024-10-03",
+        "2024-10-31",
+        "2025-08-13"
+      ]
+    },
+    "2884": {
+      "actions_coverage": "UNVERIFIED_NO_NEW_ACTION_AUTHENTICATION",
+      "calendar_status": "PLANNED_PLUS_REVIEWED_EXCEPTIONS_ONLY_NOT_EXHAUSTIVE",
+      "historical_publication_timing": "UNVERIFIED",
+      "known_calendar_missing_dates": [
+        "2022-01-27",
+        "2022-01-28",
+        "2023-08-03",
+        "2024-07-24",
+        "2024-07-25",
+        "2024-10-02",
+        "2024-10-03",
+        "2024-10-31",
+        "2025-11-05"
+      ]
+    }
+  },
+  "price_basis_id": {
+    "1101": "sha256:50e560b77640da3b7d000c0db67fc73a3f5b69d0bd744871ccb03483f8ec115e",
+    "2884": "sha256:3ce70b8fe0dfc818490a4b6209413232aedc76fcab39ba359ed4a3170d75785d"
+  },
+  "old_driver_verifier_crossing_or_volume_study_rerun": 0,
+  "new_downloads": 0,
+  "method": "Four fixed previous crossings, later-only raw price views. Previous B summaries copied, not recomputed. No formal bands, holding thresholds, event scan or source qualification changes."
+}
