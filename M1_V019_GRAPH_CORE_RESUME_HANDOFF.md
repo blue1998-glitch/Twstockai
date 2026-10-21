@@ -1,3 +1,17 @@
+## 2026-10-21 最新：B小層向大層原高推進的價量路徑已核，兩層分開更新
+
+入口 `docs/visual-discussion/20261021_b_breakout_path_work_review/README.md`；兩頁向量PDF `output/pdf/b-nested-price-volume-path.pdf`、兩PNG、study／verify_study／build_figures、path-evidence／cutoff-views／selected-events／verification／provenance／figure-manifest／manual-qa與WORK_HANDOFF同目錄。承接e5766424已答大小帶包含關係，無新人工問題；A ABC G2及B大小帶／原微小段皆不重問。
+
+只以4/16 H33.20與2/26 H35.50作小／大層原高代理，非已核正式帶界，不追認原任意小框。6/3影線過33.20收未過；6/4 C33.45上跨、6/8 H33.10 C32.90整根回下、6/9 C34.20再跨；6/10／11低在33.20下而收仍上。6/17 C35.50僅相等、6/18 H36.25 C35.40影線過收未過且由等回下，不當嚴格異側跨越；6/22 C35.80收過35.50、6/24 C35.00回大參照下而小參照仍上。6/9至6/30所有保存收盤仍在33.20上。保留反覆與兩層當前狀態，不用一個已突破旗標，不把同一過程當獨立成功樣本或倒刪當日事實。
+
+量只作對前一保存日、凍結3/16～5/29共52筆中位量35,679,356股及此前20筆均量（不含當筆）三種描述，非三票或已定門檻；5/29未完整前中位量不可用。6/4 V71,753,146雖比前筆低，對兩基準為2.01／1.47倍；6/9為2.48／1.69；6/22為2.97／1.66。6/5的1.38／0.98與6/23的1.58／0.84保留基準分歧。量資格仍null，不把倍數或大於均量直升正式帶量／支撐或行動資格。
+
+study2／新verify2，修正相等離開與嚴格跨越；10截止前綴／未來價量污染、9原價路徑、3當筆量翻倍不改基準、來源中位量可用時點、分歧與原SHA通過。圖builder3／PDF渲染2，最終兩頁實看、零影像物件；曾核出不完整PDF（原因未定）已重建，改主入口與暫存核完再替換，最終pypdf／pdfinfo與import不改成品核通過。358筆一年半背景、167筆逾八個月細節，同附圖片與放大PDF，滿足至少六個月且看清大小範圍。沒有原core／MACD／舊driver／舊verifier／產品測試或新行情瀏覽器Android重跑。
+
+大小帶層次已答保持；正式帶界成員父子／反應／帶量資格仍null，historical_signal_eligible=false；分類NOT_VALIDATED、用途NOT_ESTABLISHED、新Android NOT_TESTED_NEW_BUILD、行動與飛輪成效NOT_EVALUATED。Raw公司行動／完整日曆／歷史公開可得與原缺日限制不改。下一步Work研究跨過當日與續行／返回期間量描述角色及基準差異，不重做同一過破或急選量門檻，真正重要新核心才附足夠圖問。保留main全後續原引擎策略來源舊圖，不部署付費交易訊息子代理。以下為歷史，非本輪重跑。
+
+---
+
 ## 2026-10-21 最新人工答案：B大帶內有多個小帶，關注帶量突破的跨層路徑
 
 使用者認同方案二，明確理由是方案一大帶內包含方案二多個小帶；兩層同時存在。B幾個月整體問題已答ANSWERED_NESTED_LARGE_AND_SMALL_BANDS，取代下方PENDING_B_MONTHS_OVERALL_REVIEW。不能只存選二而沿用「三個互不相屬獨立大帶」或「大小帶互斥」；助手前輪僅較大觀察優先的方案表述須依此修正。最新入口 `docs/visual-discussion/20261021_b_nested_band_decision/README.md`、decision.json及WORK_HANDOFF.md，圖沿前輪四頁PDF與PNG。
