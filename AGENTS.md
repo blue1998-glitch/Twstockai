@@ -4,6 +4,20 @@
 
 ---
 
+## 2026-10-21 最新：B已依最新K向左整圖實讀，價峰量峰與範圍敏感性分開
+
+入口 `docs/visual-discussion/20261021_b_right_to_left_work_review/README.md`，evidence／verification／figure-manifest／manual-qa／build_review／verify_review及WORK_HANDOFF同目錄；三頁向量放大PDF `output/pdf/b-right-to-left-review.pdf`、三PNG。承接91cfcd5，維持Work；原甲乙較認同甲但切法非標準已結束，不重問A ABC G2或B微小段。
+
+依五步以歷史選定2026/5/29 C30.95作右端，無六月後續，先1118筆近五年、484筆兩年、156筆約八月價量。助手閱讀提案：較近3/16～5/29高33.20低30.65；較大10/27～5/29高35.50低29.40；較早7/10～10/23高台35.40／31.65並列比較。框與原K極值非使用者新增正式起末界成員父子；4/16高點只放回數月活動作參照，不重開已答微小段。不同來源相近價非多次反應票。
+
+價峰2/26量101501150；較大閱讀量峰10/27為280910308；改11/3起讀，高低不變而量峰改12/8為146711672。未定成員不能拿小框量峰叫正式整帶量，10/27原價急變原因仍待公司行動核，不直接升經濟跌破／籌碼事件或正式帶起點。依12/22～24原量峰助手試畫110百萬股代表線，來源保留、未核、非算術均量／SMA／倍量，formal_baseline=null。5/29量119510199高於試線但低兩量峰，C30.95仍低33.20／35.40／35.50，不稱向上突破；未放量不否決、後續守價另觀察仍有效。
+
+builder1／驗證1／PDF渲染1、三頁實看、零影像物件／EOF／SHA、全部範圍極值同值日與截止前綴／量線原柱／圖窗筆數通過；只驗保存事實與呈現。無新行情、core／MACD／舊driver／產品測試／瀏覽器Android。原2884來源、basis與source_gaps沿已核鏈保持。正式帶／合併父子／價界成員／代表量線算法／站穩反應仍未定，historical_signal_eligible=false；分類NOT_VALIDATED、用途NOT_ESTABLISHED、新Android NOT_TESTED_NEW_BUILD、行動與飛輪NOT_EVALUATED，Raw公司行動／日曆／歷史公開可得及全部原缺日保持。
+
+下一步仍Work，沿整圖相應高點研究跨越及後續返回，先核價量參照的同口徑限制；不要把助手閱讀框或110量線升標準、不要再從窄框互比起步。圖至少六個月且足以大到小，同附圖片＋放大版。例行可逆多步與原分支交付已授權，重要新核心才備充分圖問，不改main或原引擎策略資料舊圖後續，不部署付費交易訊息子代理。以下為歷史，非本輪重跑。
+
+---
+
 ## 2026-10-21 最新人工方法：偏甲但切法非標準；以最新K向左辨完整價格帶及價量
 
 使用者已答B同層提案：「我比較認同甲一點，但這樣切法也不是標準答案。」原甲乙問題結束為CLOSED_WITH_QUALIFIED_PREFERENCE_AND_METHOD_REFINEMENT，不再待答／重問；偏向同一小帶多次活動不等原三框精確起末價界成員、恰三帶或通用合併算法已核。完整原話與五步見 `docs/visual-discussion/20261021_right_to_left_method_decision/decision.json`，README／WORK_HANDOFF／verification與同分支回讀收據同目錄。
