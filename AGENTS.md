@@ -4,6 +4,22 @@
 
 ---
 
+## 2026-10-21 最新：同一較大觀察與局部並列可共存，正式合併另判
+
+入口 `docs/visual-discussion/20261021_process_scope_work_review/CORE_SCOPE_DECISION.md`；兩新PNG、README／WORK_HANDOFF、study-inputs／source-facts／relationship-proposals、prepare_review／build_figures、provenance／verification／manual-qa／figure-build及回讀收據同目錄。從e41fecc3接續，最高資金閉環／飛輪目標仍第一節，PROJECT_VISION不改，維持Work語意研究不接分類器產品。
+
+本輪研究處理：多段活動可放在同一較大過程觀察，同時保留局部身份；不把合看等同同ID正式合併。A與G2沿用原整體答案，ABC原39內活動保持內部並列；ABC6/2收破→6/3整根外→6/12才知下方活動，可作原弱化問題觀察鏈，但原39不延長成研究窗47，後續8筆不納原ABC。五條關係註記非互斥：原人工背景、觀察鏈提案、局部比較分開，非新增已核正式交易規則／歷史分類輸入。
+
+G2局部反例：1/17..2/9共同36.60..36.75、2/10知；3/15..24共同36.35..37.10、3/27知，幾何包含舊共同區，但來源8筆保存收盤皆未在舊區，3/27確認K C36.65另記。可同時屬既有G2情境與局部僅幾何比較，不因此合併或認證回測；也不以未有保存收盤再入否定日內成交／影線或整個G2。原G2人工136及5/2代表、A上漲整理再漲／10/7足夠、ABC39及5/13代表與全部已答保持，不重問。
+
+新source audit1：八活動原K筆數高低／右確認K、ABC39／後8分開、G2人工136、價格橋接時序、八筆反例及3/27另記、8/3原缺日、7來源SHA通過；source_facts函式無人工標籤輸入。本輪非歷史prefix模擬或正式合併算法驗證，勿沿用前21截止當新測。新圖builder2、兩圖實看綁SHA，括弧只標時間、高度非價位；A8/12僅示例窗非正式起點，G2只放大1/16..3/27保留完整人工範圍資格。舊driver／verifier／產品測試0，無新行情瀏覽器Android。
+
+尚未定已縮至同層正式合併判準與唯一父／主結構；正式起末成員價界／主要性／父子合併／反應／獨立確認數／primary_pressure_id仍null，historical_signal_eligible=false；分類NOT_VALIDATED、用途NOT_ESTABLISHED、Android NOT_TESTED_NEW_BUILD、行動與飛輪成效NOT_EVALUATED。Raw／公司行動／日曆／歷史公開可得及全缺日限制保持，10/7原snapshot／numeric_frame無仍不補造。舊主帶月精度及重要性保持，不補35.45正式上緣。
+
+下一步仍Work用原B-shared-path等尚無人工整體答案的方向對照，準備真正同層合併方案廣角圖，重要新核心歧義才問；B未有人工負區間標籤不得代填。不重做相同過破時序、不只堆欄位、不把本輪觀察容器當正式合併規則，不以同價／近／最近／最大窗／共來源／共段／包含／全分離／現價在內／數量自選主結構父子或主要性，不發明帶寬分數。保留main全後續及原引擎策略來源舊圖，不部署付費交易訊息子代理。以下為歷史，非本輪重跑。
+
+---
+
 ## 2026-10-21 最新：ABC與A跨案對照，分層讀法一致但跨越範圍不同
 
 入口 `docs/visual-discussion/20261021_cross_case_reading_work_review/README.md`；ABC／A新對照PNG、study-inputs／cross-case-views／cross-case-findings、study／verify／build_figure、provenance／verification／manual-qa／figure-build、WORK_HANDOFF及回讀收據同目錄。從93f64e61接續，最高資金閉環／飛輪目標仍第一節，PROJECT_VISION不改，維持Work不接分類器產品。
