@@ -1,3 +1,21 @@
+## 2026-10-21 最新：B活動可連看推進返回；G2已返回來源外圍，僅共同價位未到
+
+入口 `docs/visual-discussion/20261021_activity_bridge_work_review/README.md`；EVIDENCE_SCOPE_CONTRACT、relationship-proposals、study-inputs／activity-evidence／cutoff-views／verification／source-provenance／source-locations／figure-manifest／manual-qa、study／verify／build_review與WORK_HANDOFF同目錄，兩頁放大PDF `output/pdf/activity-bridge-review.pdf`及B／G2兩PNG。承接2f7bf898，維持Work，無新人工問題，不重問原A ABC G2及B大小帶／微小段。
+
+重要更正：前輪「G2未到較早活動」過廣。較早來源raw37.20～38.50；7/25～28回升四筆收盤全在其中，日高卻均未到共同38.05～38.25。正確為已回到較早來源範圍、尚未到共同價位，不說完全沒返回，也不由raw返回升反應成功／正式合併。原數值與人工答案不變，舊圖保留歷史，本節與新圖優先。
+
+B原保存三活動：6/9～17共同33.65～34.20、raw32.90～35.90，6/18知；6/17～23共同35.40～35.50、raw35.05～36.60，6/24知；6/22～25共同35.00～35.45、raw34.90～36.60，6/26知。可連看小參照收回、向較大原高推進及跨後返回，來源身份仍各保留，非新核三小帶。相鄰組各共一turn與來源K，不當三次獨立測試；首末無共turn但後段左證據6/18等前段可知日，仍非全來源全新。末段共同雖下35.50，四筆來源收盤2上2下；6/26可確認時C34.55已低來源34.90，活動形成與目前位置分開。
+
+G2較早→下移36.75～37.00→回升37.25～37.35，可知分7/7、7/19、7/31。後兩段完整來源較晚不共turn，支持新局部回升，非統計獨立或整體恢復。8/2 C37.20雖低回升共同仍高原37.15；較早raw返回與共同未到並存。B曾收過35.50後返回，不能與G2未到較早共同籠統混同。共同價位非全部K來源、確認K不納來源期、觀察鏈非同帶合併；原B大小帶包含及全部A ABC G2答案保持。
+
+新study4次嘗試3成功（首輪欄位鍵錯未輸出，後修正並補實際返回／目前位置及清楚鍵名）、verify1：14截止前綴／未來價量未知幾何事件污染／全量1、6原活動及6來源配對／實際造訪、出生固定、leg-turn幾何可知日、5嚴格相等邊界、兩原登錄全等、7來源SHA通過。builder1／render1、2頁實看、零影像物件、EOF與暫存核後替換／import不動成品、圖窗筆數另核、7原分支來源blob SHA相符。原core／MACD／舊driver／舊verifier／原過破量研究／產品測試及新行情瀏覽器Android皆0。
+
+B廣角358／細167保存K，G2廣角382／細136，四窗全逾六個月；原G2人工1/16～8/16的136與新細圖1/3～8/2的136不混身份。持續先大後小、至少六個月且看清大小範圍，同附PNG與放大版，非固定結構窗。正式同層合併父子主次／完整界成員／站穩反應仍null，historical_signal_eligible=false；分類NOT_VALIDATED、用途NOT_ESTABLISHED、新Android NOT_TESTED_NEW_BUILD、行動與飛輪成效NOT_EVALUATED。Raw公司行動／完整日曆／歷史公開可得及全部原缺日保持。
+
+下一步Work為同層合併找來源／價位／路徑相近而整體角色不同的有區辨力正反對照，不再反覆增這六活動欄位。重要新核心才附充分圖問；不以相交／全分離／共turn／來源全新／現價同側／最近最大窗或候選數自定合併父子主次，不發明N日深度百分比量倍數帶寬分數。保留main全後續與原引擎策略來源舊圖，例行多步及原分支交付已授權，不部署付費交易訊息子代理。以下歷史非本輪重跑。
+
+---
+
 ## 2026-10-21 最新：跨案後續支持只對準相應參照，觀察鏈不等於帶合併
 
 入口 `docs/visual-discussion/20261021_cross_case_followup_work_review/README.md`，三頁向量放大PDF `output/pdf/cross-case-followup-review.pdf`與三PNG、study／verify／build_review、study-inputs／followup-results／cutoff-views／comparison-findings／source-provenance／source-locations／verification／figure-manifest／manual-qa及WORK_HANDOFF同目錄。承接8e2260dc，仍Work，無新增人工問題，不重問A ABC G2、B大小帶與原微小段。
