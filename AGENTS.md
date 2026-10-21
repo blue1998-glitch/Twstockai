@@ -4,6 +4,18 @@
 
 ---
 
+## 2026-10-21 最新人工原則：未放量不否決成功，優先觀察突破後站穩
+
+使用者明確確認：「是有帶量很好，沒帶量不一定就沒成功，還是看事後股價有沒有站穩突破高點價位」。量能放大是支持證據，非突破成功必要或充分條件；未放量不得直接判失敗。此處未放量不偷換為無成交或資料缺失。價格跨過、量能支持與事後守價結果分開保存，不刪量資料、不因沒量抹除已跨過事實。
+
+最新入口 `docs/visual-discussion/20261021_b_price_hold_decision/README.md`、decision.json及WORK_HANDOFF.md。新原則已答，不再重問。下一步Work優先研究大小層各自突破後的守價、返回與重收回，當時量能作支持或反面背景；前輪三種量比較仍僅描述，不需先挑帶量倍數才能研究價格路徑。
+
+事後站穩只可在後續資料出現時逐步確認，不倒填原突破日；返回也不抹除當日確有跨過。原B6/9～6/30收在33.20上、6/24回35.50下仍在33.20上只是分層證據，原高代理非正式帶界。站穩的時間／容許影線收盤返回／深度／重收回處理及數值充分條件仍null，不發明N日、百分比、倍量或自動交易規則。B大小帶並存、小帶可推進大帶以及A ABC G2全已答保持不問。
+
+本輪僅人工原則與交接保存，新圖行情／指標結構／驗證器產品測試／瀏覽器Android皆0。圖沿前輪兩頁放大PDF與PNG；之後判讀圖至少六個月且能看清大小範圍，同附放大版。分類NOT_VALIDATED、用途NOT_ESTABLISHED、新Android NOT_TESTED_NEW_BUILD、行動與飛輪成效NOT_EVALUATED，historical_signal_eligible=false；原Raw公司行動／完整日曆／歷史公開可得及全部缺日限制保持。維持Work，保留main全後續原引擎策略來源舊圖，例行多步自行完成，真正重要新核心才附充分圖問，不部署付費交易訊息子代理。以下舊量能資格表述按本節量非硬門檻解讀，非本輪重跑。
+
+---
+
 ## 2026-10-21 最新：B小層向大層原高推進的價量路徑已核，兩層分開更新
 
 入口 `docs/visual-discussion/20261021_b_breakout_path_work_review/README.md`；兩頁向量PDF `output/pdf/b-nested-price-volume-path.pdf`、兩PNG、study／verify_study／build_figures、path-evidence／cutoff-views／selected-events／verification／provenance／figure-manifest／manual-qa與WORK_HANDOFF同目錄。承接e5766424已答大小帶包含關係，無新人工問題；A ABC G2及B大小帶／原微小段皆不重問。
