@@ -4,6 +4,12 @@
 
 ---
 
+## 2026-10-21 最新：共同往返價帶可串片段，共用路徑不等於同核心
+
+入口 `docs/visual-discussion/20261021_common_price_bands_work_review/README.md`；新三頁PDF／三PNG、完整登錄gzip、selected-common-spans／pool-summaries／summary／hypotheses／verification／manual-qa、完整WORK_HANDOFF與回讀收據同目錄。本批從92cd074接續，保留cfce9ad後三筆資金閉環／飛輪最高目標更新，PROJECT_VISION不改且目標節仍置AGENTS／CONTINUE最上方；研究對飛輪成效NOT_EVALUATED。新研究收盤轉向需右側完成不等收盤，連續完成上落的端點域取嚴格正寬交集，全部長度候選保留；當前最大延伸只是可變view，確切turn／leg／zone及出生來源回連ID不回寫，非原pivot或正式箱界。A截至10/6可知9/30低44.85→10/1至10/2高45.35→10/5低44.80兩段共同44.85..45.35，10/7收45.75在核心上仍不否定整理，也不宣稱最早日。方向對照先32.75..33.00（4/24知擴展）後32.45..32.55（4/28知），共用4/22至4/23下跌段但核心不相交，不正式拆併或升負例。ABC後續至6/11僅1完成段，6/12才知27.15..27.30；原ABC39可含3局部核心，G2人工完整136筆可含20局部核心，不取代原較大涵蓋／5/2代表，原8/3來源疑點不跨接。5/13右證據K影線31.40完整保留，不被收盤核心取代。243舊種子觀察去重128新收盤轉向／126段／360候選，重疊非市場樣本或票；driver2次後次只無損儲存縮至125503bytes，verify1次獨立核14594候選及現值重建／65439前批見證回連／1473關係／299外部候選／211逐截止與16案污染正仿射合成平台相等不相交缺日等。新圖builder1次成功三頁渲染實看綁SHA，原圖重建0；無原核心指標／舊driver／CLI／bootstrap／舊產品測試或新瀏覽器Android。正式形成起末／成員／選定及合併仍null，分類NOT_VALIDATED、用途NOT_ESTABLISHED、行動／飛輪成效NOT_EVALUATED、Android NOT_TESTED_NEW_BUILD；primary_pressure_id／歷史選取null、historical_signal_eligible=false，10/7無原快照不補造。仍Work研究局部核心對較大觀察範圍的角色，合看原影線、離開後返回與現值，不用同價共段重疊或最長窗直接正式合併，也不強制較大整體只有一核心。所有原已答及來源限制保持不重問，保留main、原參數策略來源舊圖，不部署付費交易訊息子代理。下列為歷史，不算本批重跑。
+
+---
+
 ## 2026-10-21 最新：已知價位重訪片段可自動提出，正式範圍形成仍未定
 
 入口 `docs/visual-discussion/20261021_revisit_frames_work_review/README.md`；新三頁PDF／三PNG、完整登錄gzip／pool-summaries／selected-revisits／summary／hypotheses／verification／manual-qa、完整WORK_HANDOFF及回讀收據同目錄。從既有種子逐筆加入已出現的低／高／收盤參照，只用出生後收盤上-下-上或下-上-下留重訪見證；相等不跨，返回前凍結第一造訪至前筆原K範圍，收盤回內與同側超出範圍分開，影線可創新高低，當前關係另更新，不升正式區間。2884參照9/24 L45.10，9/24 C45.60→9/29 C44.90→10/1 C45.35，先前44.75..45.95，10/1低44.20而收回，10/7 C45.75仍框內；10/1不是新宣稱最早辨認日，10/7已答不重問。方向對照亦有較早4/16低32.80往返，但5/4 C31.30已在4個回入框下，不能說從無區間或升人工負例。ABC後續以6/4高27.45，6/4低側→6/5高側→6/9低側回入先前26.55..27.65，至6/13仍在內，不把片段起日當正式起點。ABC39即使末收對58早先回入見證全在下仍為已答自己的區間；G2局部離開不否定大涵蓋。5/13影線31.40無收盤兩側往返仍登錄不刪。243舊種子觀察產937去重見證／430框，重疊非樣本或多票；driver3次後兩次只無損儲存布局縮至135169bytes，verify1次獨立枚舉31410出現及同數現值重建、107去重逐截止／十一案污染與正仿射／合成單向常數相等越界新影線缺日／5/13保留通過。新圖builder1次成功、三頁渲染逐頁實看SHA綁定，價量各貼K範圍，原圖重建0；舊driver／核心指標／CLI／bootstrap／舊測試／瀏覽器Android未跑。正式形成／起末成員／選框null，分類NOT_VALIDATED、用途NOT_ESTABLISHED、行動NOT_EVALUATED、Android NOT_TESTED_NEW_BUILD；歷史選取／primary_pressure_id=null、historical_signal_eligible=false，10/7原快照／numeric_frame不補造。仍Work研究多片段共同範圍與高低影線代表，不以重疊合併、數量投票、最短最長窗勝出或當前在內當所有區間必要條件。原所有已答及來源限制沿前鏈，不改main、原核心參數策略來源舊圖，不部署付費交易訊息子代理。下列為歷史，不算本批重跑。

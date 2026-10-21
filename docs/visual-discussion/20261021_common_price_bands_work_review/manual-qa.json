@@ -1,0 +1,37 @@
+{
+  "schema": "m1-common-span-manual-qa/1",
+  "pdf_path": "output/pdf/m1-common-return-price-bands.pdf",
+  "pdf_sha256": "576215dee44fdd8fa8f57c9615bb54c2ac5df7c1b5bffaacdc35b64371a11d3c",
+  "pdf_bytes": 202774,
+  "pages": 3,
+  "figure_builder_runs": 1,
+  "old_figures_rebuilt": 0,
+  "final_previews": [
+    {
+      "path": "page-1.png",
+      "bytes": 139399,
+      "sha256": "eb8cbf4c74f5cd9d65175a4edba8e3b39a801fd2e5403464378d65cc46dd7872",
+      "manual_review": "PASS_FINAL_RENDER_MANUALLY_VIEWED"
+    },
+    {
+      "path": "page-2.png",
+      "bytes": 130975,
+      "sha256": "3290cde12ce712b723cfcef365ba06ff025e1e75faef77464dcb44f711663e19",
+      "manual_review": "PASS_FINAL_RENDER_MANUALLY_VIEWED"
+    },
+    {
+      "path": "page-3.png",
+      "bytes": 146744,
+      "sha256": "7c77eb3d498e9ace893d824c1094b0da77130ab60db3559609e4d180d911331b",
+      "manual_review": "PASS_FINAL_RENDER_MANUALLY_VIEWED"
+    }
+  ],
+  "manual_findings": [
+    "All three final Poppler renders manually viewed without clipping, overlapping labels or missing glyphs.",
+    "Purple regions are bounded by original saved candle date/price ranges; volume separate. Gold/blue cores are explicitly shared completed-close spans, not formal box bounds or trade density.",
+    "Page1 separates endpoint dates, right-evidence availability and current close above the core from user-confirmed consolidation.",
+    "Page2 shows disjoint cores on a shared descending leg and preserves earlier shorter candidates; not a negative interval label.",
+    "Page3 keeps full manual G2 scope, May2 high40.25 and original missing-date qualification; local cores do not formally split G2. ABC follow-up right confirmation date June12 shown."
+  ],
+  "scope": "STATIC_RESEARCH_PDF_ONLY_NOT_NEW_BROWSER_OR_ANDROID"
+}
