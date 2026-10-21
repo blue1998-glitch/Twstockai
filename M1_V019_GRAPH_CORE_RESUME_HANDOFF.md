@@ -1,3 +1,21 @@
+## 2026-10-21 最新人工方法：偏甲但切法非標準；以最新K向左辨完整價格帶及價量
+
+使用者已答B同層提案：「我比較認同甲一點，但這樣切法也不是標準答案。」原甲乙問題結束為CLOSED_WITH_QUALIFIED_PREFERENCE_AND_METHOD_REFINEMENT，不再待答／重問；偏向同一小帶多次活動不等原三框精確起末價界成員、恰三帶或通用合併算法已核。完整原話與五步見 `docs/visual-discussion/20261021_right_to_left_method_decision/decision.json`，README／WORK_HANDOFF／verification與同分支回讀收據同目錄。
+
+後續主流程：所選截止最新可用K作右端→向左找相關價格高低→由高低辨完整價格帶並看帶內最高量或視覺代表量位→由該帶繼續向左畫較早帶→比較各帶相對高點，辨認要越過哪一層。承接原10/19最新收盤回左找整體帶；既有小共同區及來源配對是輔助研究，不能取代主選帶流程。先大後小，非機械取最近微小轉折或固定窗全域最高低。保存來源最新日不冒即時今日，歷史截止不看未來。
+
+最高價K不必是最高量K，價峰量峰分別找；最高量同值日全保留，綁整帶成員與截止。使用者整體均量是從密集量柱相近高點畫代表線，先存視覺代表量位及所依量柱日期，不直接換成算術平均／20日均量／中位量／固定倍數。正式完整帶／代表量線演算法仍null，不拿任意小框計算冒稱整帶量。
+
+原句「右邊的量也超過該均價或是該價格帶的最高點」原文保存；助手僅按量綱分開：價格比相對高點、量比代表量位／帶內最高量，不把量比價格或擅轉VWAP。正式價量或／且結合與門檻未定，此解讀非額外數值規則核准，本輪不因此逐項問工程細節。「成功率提升／籌碼乾淨」記為使用者圖形價量假說，未驗成功率或測得實際持股分布／賣壓耗盡，不升機率、交易資格或績效保證。
+
+先前量支持但非成功必要充分、未放量不否決、後續是否站穩另觀察、當日價格跨參照即更新但非大結構、重用形成點非多反應均保持。B大小帶／微小段及A ABC G2全已答不重問。圖至少六個月且看清大小範圍，同附圖片及放大版，六個月非固定結構窗。
+
+本輪只保存新人工答覆及方法，沒有新圖行情／指標結構／研究driver／分類器產品測試／瀏覽器Android重跑；文件一致性及四入口原文保留核對另記，不冒舊測試為新完成。PROJECT_VISION最高資金閉環飛輪目的不改，只加本方法節。正式高低／整帶／合併父子主次／界成員／量線／站穩反應充分條件仍未定，historical_signal_eligible=false；分類NOT_VALIDATED、用途NOT_ESTABLISHED、新Android NOT_TESTED_NEW_BUILD、行動與飛輪成效NOT_EVALUATED。Raw公司行動／完整日曆／歷史公開可得及全部原缺日保持。
+
+下一步維持Work，用原已答案例及充分廣角真圖做最新K向左的整圖讀法，逐帶標價峰／量峰／代表量位來源，再看更左相對高點；不再先切小框迫使用者給標準答案。真正重要新核心才附充分圖問，不重問甲乙。保留main全後續與原引擎策略來源舊圖，例行可逆多步及原分支交付已授權，不部署付費交易訊息子代理。以下舊待答以本節已答及新方法為準，非本輪重跑。
+
+---
+
 ## 2026-10-21 最新：B同層身份兩讀法已備，唯一新問題待答
 
 入口 `docs/visual-discussion/20261021_same_level_contrast_work_review/README.md`；review-state／registry-query／study-inputs／contrast-evidence／cutoff-views／verification／source-provenance／source-locations／figure-manifest／manual-qa、study／verify／build_review與WORK_HANDOFF同目錄。兩頁向量放大PDF `output/pdf/b-same-level-review.pdf`、b-source-contrast.png及b-same-level-proposals.png。承接71dbc062，仍Work。原B大帶含多小帶已答，不重問；A ABC G2及4月微小段均不重問。

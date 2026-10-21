@@ -1,0 +1,107 @@
+{
+  "schema": "user-right-to-left-band-reading-method/1",
+  "date": "2026-10-21",
+  "timezone": "Asia/Taipei",
+  "base_commit": "7367ed61636e080d955fa7bdd49f5fa677e7c354",
+  "user_quote": "我比較認同甲一點，但這樣切法也不是標準答案。\n\n我先提供劃分步驟。1.找到最新的k線 2.往左找到找到價格高點和低點 3.從哪個高點低點找出該高點的整個價格帶，並且留意該價格帶的最高量（因為可能不是最高價那根k線就是最高量）或是整體均量（均量可以從密集的柱狀圖中找到相近的高點畫一條線，若右邊的量也超過該均價或是該價格帶的最高點，則可稱價量配合成功率會提升、籌碼則乾淨。4.從該價格帶不斷往左邊查看高點低點並畫出左側的價格帶。5.讓價格帶彼此間相互比較就可以知道，要超越哪些相對高點才是價格帶突破了。",
+  "prior_review": {
+    "source": "docs/visual-discussion/20261021_same_level_contrast_work_review/review-state.json",
+    "status": "CLOSED_WITH_QUALIFIED_PREFERENCE_AND_METHOD_REFINEMENT",
+    "user_preference": "LEAN_TOWARD_A_SAME_SMALL_BAND_REPEATED_ACTIVITY",
+    "preference_is_unqualified_standard_answer": false,
+    "previous_drawn_segmentation_approved": false,
+    "previous_dates_bounds_membership_or_exact_three_bands_approved": false,
+    "new_same_question_needed": false
+  },
+  "method_status": "USER_PROVIDED_READING_WORKFLOW_CONFIRMED_NOT_AUTOMATIC_DETECTOR",
+  "steps": [
+    {
+      "order": 1,
+      "action": "ANCHOR_AT_LATEST_AVAILABLE_K_FOR_SELECTED_AS_OF",
+      "historical_cutoff_must_not_use_later_K": true
+    },
+    {
+      "order": 2,
+      "action": "LOOK_LEFT_FOR_RELEVANT_PRICE_HIGHS_AND_LOWS",
+      "nearest_minor_pivot_automatically_controls": false,
+      "global_extreme_in_fixed_window_automatically_controls": false
+    },
+    {
+      "order": 3,
+      "action": "IDENTIFY_WHOLE_PRICE_BAND_AROUND_RELEVANT_SWING_AND_RETAIN_VOLUME_CONTEXT",
+      "whole_band_not_just_preselected_common_span": true,
+      "price_extrema_and_volume_extrema_are_independent": true,
+      "volume_reference_candidates": [
+        "BAND_MAXIMUM_VOLUME_WITH_ALL_TIED_DATES",
+        "REPRESENTATIVE_VOLUME_LEVEL_FROM_CLUSTERED_SIMILAR_BAR_PEAKS"
+      ],
+      "visual_representative_level_is_automatically_arithmetic_mean": false
+    },
+    {
+      "order": 4,
+      "action": "CONTINUE_LEFT_FROM_IDENTIFIED_BAND_AND_MAP_EARLIER_BANDS",
+      "arbitrary_fixed_band_count_or_max_scan_window_approved": false
+    },
+    {
+      "order": 5,
+      "action": "COMPARE_BANDS_AND_THEIR_RELATIVE_HIGHS_TO_IDENTIFY_WHICH_REFERENCE_IS_CROSSED",
+      "small_band_crossing_equals_large_band_crossing": false,
+      "single_irreversible_breakout_flag_approved": false
+    }
+  ],
+  "volume_reading": {
+    "band_maximum_volume_bar_need_not_be_highest_price_bar": true,
+    "all_tied_maximum_volume_dates_retained": true,
+    "representative_volume_line_status": "VISUAL_USER_METHOD_NOT_YET_A_FIXED_NUMERICAL_ESTIMATOR",
+    "representative_line_supporting_bar_dates_should_be_traceable": true,
+    "arithmetic_mean_window": null,
+    "median_or_mean_substitution_approved": false,
+    "volume_expansion_required_for_breakout_success": false,
+    "volume_expansion_sufficient_for_breakout_success": false,
+    "subsequent_holding_is_followup_observation_focus": true
+  },
+  "dimensional_handling": {
+    "original_mixed_wording_preserved": true,
+    "price_comparisons_use_price_units": true,
+    "volume_comparisons_use_consistent_volume_units": true,
+    "assistant_interpretation": "Keep price versus relevant high separate from right-side volume versus representative-volume or maximum-volume reference. Do not compare volume numerically with a price.",
+    "raw_term_jun_jia_not_converted_to_vwap": true,
+    "formal_price_volume_and_or_logic": null,
+    "formal_baseline_or_threshold": null,
+    "question_not_required_before_saving_method": true
+  },
+  "user_heuristics": {
+    "price_volume_alignment_may_improve_success_reading": "USER_EXPECTATION_NOT_YET_VALIDATED",
+    "chips_cleaner": "USER_CHART_VOLUME_INTERPRETATION_NOT_MEASURED_OWNERSHIP_OR_PROVEN_SELLING_EXHAUSTION",
+    "calibrated_success_probability": null,
+    "verified_success_rate_improvement": false,
+    "verified_chip_cleanliness": false,
+    "trade_eligibility_approved": false
+  },
+  "continuation": {
+    "main_reading_order": "LATEST_K_TO_WHOLE_BANDS_LEFTWARD_THEN_RELATIVE_PRICE_AND_VOLUME_COMPARISON",
+    "prior_small_zone_geometry_role": "SUPPORTING_SOURCE_RESEARCH_NOT_THE_MAIN_BAND_SELECTION_RULE",
+    "reuse_prior_A_ABC_G2_and_B_answers_without_reasking": true,
+    "chart_minimum_calendar_months": 6,
+    "chart_window_must_show_larger_and_smaller_context": true,
+    "show_image_and_zoomable_version": true
+  },
+  "unresolved": {
+    "formal_same_level_merge": null,
+    "formal_parent_primary_ids": null,
+    "formal_boundaries_membership": null,
+    "pivot_selection_formula": null,
+    "whole_band_detection_formula": null,
+    "representative_volume_line_formula": null,
+    "holding_duration_depth_rule": null,
+    "volume_to_price_alignment_sufficient_rule": null
+  },
+  "historical_signal_eligible": false,
+  "classifier": "NOT_VALIDATED",
+  "usefulness": "NOT_ESTABLISHED",
+  "Android": "NOT_TESTED_NEW_BUILD",
+  "actions_and_flywheel_effect": "NOT_EVALUATED",
+  "new_market_downloads_indicators_classifier_tests_figures_or_Android_runs": 0,
+  "next_mode": "Work",
+  "new_manual_question": false
+}
