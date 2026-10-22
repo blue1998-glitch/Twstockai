@@ -1,3 +1,13 @@
+# 2026-10-22 Work｜直接配股比及其他公司行動來源已補；工程未實作
+
+接續46d09d4，最新入口 `股票系統M1_v0_18/rotation_research/source_review_20261022/README.md`、REPORT／CODEX_TASK／WORK_HANDOFF；固定GitHub逐檔回讀見 `deliveries/m1-source-review-20261022/GITHUB_READBACK.md`。本輪新checkout bootstrap實際補545檔、保留7差異；6官方原件（三PDF、三HTML）已封存，來源核對不是新版引擎測試。
+
+2884官方直接每千股10.015129股與原0.010015129相符，仍非未圓整比／個人實配／2025可交易日證明。三商壽換股兩版本及2026/9/1權利證書、零股／匯費只屬原2867股東，不套既有2884或2025股利。台泥資本公積0.8元僅本輪所見董事會提案來源，最終決議／細項與淨模型未核。新健保署原件封存HTTP403保留未重試；web觀察不冒原件。原MOPS／權息端點／TWTAUU／file://不重試繞過。
+
+完整公司行動／減資及7/25後權息、2884未圓整／可賣日／零股、淨分配與期初權利仍不足；空白證據表不是零權利證明。讀回舊72窗仍70拒算／2不足、總淨報酬合格0，**未執行新帳或六方案**，無新catalog／產品／UI／瀏覽器Android，原測試不冒新通過。所有舊來源／引擎／策略／庫／歷史／成品／main保持。下一步Codex重新bootstrap後依CODEX_TASK獨立接來源與防混用，不重問P0～P1／比例；完整可貼指令見本輪WORK_HANDOFF。以下原文完整保留。
+
+---
+
 # 2026-10-22 Codex｜官方公司行動來源0.2：2884面額／公司發放報告已補
 
 接續6185297e，保留全部先前成果；新入口 `股票系統M1_v0_18/rotation_research/official_actions_20261022/README.md`、REPORT／CONTRACT／WORK_HANDOFF。新ZIP及固定GitHub逐檔核對見 `deliveries/m1-official-actions-20261022/README.md`。原0.1、日曆、P1-7及舊包全部保持；下方是歷史。

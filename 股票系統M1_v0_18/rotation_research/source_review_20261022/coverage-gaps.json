@@ -1,0 +1,103 @@
+{
+  "schema": "rotation-source-gap-review/0.1",
+  "period": {
+    "start": "2025-07-01",
+    "end": "2026-10-16"
+  },
+  "codes": [
+    "1101",
+    "2884"
+  ],
+  "matrix": [
+    {
+      "item": "完整公司行動／減資覆蓋",
+      "status": "INCOMPLETE",
+      "known_addition": "2884股份轉換事件及新權利證書時程已見官方文件",
+      "missing": "兩股全期間減資／分割／現增及其他權利異動完整名冊；事件逐筆核對及對舊股東影響",
+      "can_assume_no_events": false
+    },
+    {
+      "item": "2026-07-25至2026-10-16權息",
+      "status": "INCOMPLETE",
+      "missing": "該段可認證權息／其他公司行動完整來源；新股份轉換文件非完整權息清單",
+      "can_assume_no_events": false
+    },
+    {
+      "item": "2884直接配股比",
+      "status": "DIRECT_PUBLISHED_PRECISION_CONFIRMED",
+      "new_source": "esun-direct-2025-ratio",
+      "published_shares_per_share": "0.010015129",
+      "missing": "未圓整最終計算依據與個人實配／零股處置"
+    },
+    {
+      "item": "2884 2025新股可交易日",
+      "status": "UNKNOWN",
+      "value": null,
+      "discovery_lead": "有轉載稱2025-08-27，未保存可用直接原件，不提升；2026換股權利證書日期不可替用"
+    },
+    {
+      "item": "2884 2025配股零股",
+      "status": "POLICY_ONLY",
+      "missing": "原案併湊截止／個人選擇／實配／折現／費用與實際入帳",
+      "other_case_policy_must_not_transfer": true
+    },
+    {
+      "item": "淨分配",
+      "status": "UNKNOWN",
+      "value": null,
+      "missing": "投資人稅籍、投保／豁免條件、分配來源性質、匯費、各筆淨入帳；或來源完整且情境明示的模型",
+      "zero_default_allowed": false
+    },
+    {
+      "item": "期初權利來源",
+      "status": "UNKNOWN",
+      "missing": "每個起點收盤持股及現金、既有股利／股份／減資應收和未交割應付的證明；不能從起點持股推斷先前除權持股",
+      "zero_default_allowed": false
+    }
+  ],
+  "research_start_dates_requiring_opening_evidence": [
+    "2026-01-02",
+    "2026-02-02",
+    "2026-03-02",
+    "2026-04-01",
+    "2026-05-04",
+    "2026-06-01",
+    "2026-07-01",
+    "2026-08-03",
+    "2026-09-01"
+  ],
+  "prior_window_result_observed_not_rerun": {
+    "calendar_qualified_windows": 70,
+    "refused_windows": 70,
+    "insufficient_forward_rows": 2,
+    "qualified_total_net_return_windows": 0,
+    "new_ledger_calls": 0,
+    "new_strategy_replays": 0
+  },
+  "quote_gaps_unchanged": [
+    {
+      "code": "1101",
+      "date": "2025-08-13",
+      "reason": "UNKNOWN"
+    },
+    {
+      "code": "2884",
+      "date": "2025-11-05",
+      "reason": "UNKNOWN"
+    }
+  ],
+  "prohibited_retry_or_bypass": [
+    "MOPS server-java/t39sb01?quick=1 safety denial",
+    "TWSE TWT49U/TWT48U",
+    "TWTAUU historical HTTP307",
+    "file:// safety block",
+    "new NHI direct archive HTTP403 not retried"
+  ],
+  "not_supported_as_completion_proof": [
+    "search zero hits",
+    "issuer dividend summary only",
+    "derivative contract adjustment notice",
+    "current forecast only",
+    "issuer completion equals investor cash receipt"
+  ]
+}
