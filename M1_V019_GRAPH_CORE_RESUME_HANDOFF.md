@@ -1,3 +1,11 @@
+## 2026-10-22｜目前接續以最新P0／P1裁決與真實截止研究為準
+
+先讀CONTINUE_IN_WORK_MODE最新節、`docs/visual-discussion/20261022_causal_volume_cutoff_review/WORK_HANDOFF.md`及README。人工Raw／Adjusted獨立頁已於76be6f5交付，以下「僅需求保存」是歷史狀態；其後P0-1紫框成立／量優先、P0-3事實狀態、P0-4代表量與P1／P1-6新答已由後續提交保存，按原話與版本採用，不重問舊題。本輪另存兩真實案例九截止K量，51項資料核對及Chrome151九oracle／390px通過，非正式辨識或Android驗收。參照底未核則拒判、量角色不預標成功、後見解釋另存；跨年份案例不當換股比較。
+
+下一步仍Work按P1-7已答方向做同期持股／候選／現金及轉移方案研究，比例與短期效率尚未核定，不重問舊題；先讀最新交接、保留之後新提交。最高資金閉環、分析／資料／UI分離、原碼原數值與main保持；未測不稱通過。
+
+---
+
 ## 2026-10-22 最新決定：原始日K／還原K由人工選分析模式
 
 使用者原話：「大盤空頭需要很多綜合指標來判斷，因此建議是可以切換日K或還原K模式由人工方式決定分析模式。」完整保存與接續見 `docs/visual-discussion/20261022_manual_price_basis_decision/README.md`、decision.json、verification.json、WORK_HANDOFF及GITHUB_READBACK。人工選的是分析價格基準，不只畫面；不等系統自動判空頭，也不再要求先回答前輪大盤空頭／拉回題才能切換。市場身份可未知，明確人工選Raw不以先證空頭為前提。原約2～3月及空頭Raw偏好保留為人工判斷背景，無自動時間或市場強制切換。
