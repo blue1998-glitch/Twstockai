@@ -1,3 +1,9 @@
+## 2026-10-22｜多層箱型下緣來源已整理，待使用者在原圖裁決
+
+先讀 [`多層箱型下緣研究`](docs/visual-discussion/20261022_multilevel_box_floor_review/README.md) 與 [Work 交接](docs/visual-discussion/20261022_multilevel_box_floor_review/WORK_HANDOFF.md)，再看使用者原標註紀錄。已實看使用者私有標註圖及生成底圖，圖片未放進公開 Git。綠色新高後回到藍色舊高下方，使用者仍辨認右側褐色後繼箱，不能要求新箱「必守舊高」。紫／褐大箱底究竟依回檔低點、後續多次支撐或突破前支點仍未知，需在原圖只問這一個核心問題。與 2884 A、1101 ABC 原保存案例僅做時序反例對照，沒有新行情、演算法、數值／產品測試或 Android 驗收。原人工模式成品和最高資金閉環目標不變。
+
+---
+
 ## 2026-10-22｜人工分析模式 0.1 已另版實作與驗證
 
 先讀根 AGENTS、M1_V019_GRAPH_CORE_RESUME_HANDOFF 最新節，以及 [人工模式交付與接續](deliveries/m1-v019-manual-basis-20261022/WORK_HANDOFF.md)、[子專案 README](股票系統M1_v0_18/manual_basis_chart/README.md) 和 [本輪驗收報告](股票系統M1_v0_18/manual_basis_chart/validation_20261022/驗收報告.md)。分支仍 `dev/m1-v018-chart-annotations`，main 與原 0.4.3 圖／數值／策略不改。人工 Raw／Adjusted 研究候選切換、精確來源／日期與不可覆寫選擇紀錄已另版保存；無來源不退另一模式。4 Python tests 和真實 headless Chrome HTTP 桌面／手機模擬已通過原保存數值對照；新版 Android 未測，Adjusted 仍只有兩股 283 根現金事件候選，不能當完整還原。最終 Commit 以 GitHub 回讀為準。

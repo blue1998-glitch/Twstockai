@@ -1,3 +1,9 @@
+## 2026-10-22｜多層箱型下緣仍需原圖人工裁決
+
+接續 `docs/visual-discussion/20261022_multilevel_box_floor_review/README.md` 與 WORK_HANDOFF。已在原私有標註圖看到綠高之後回到藍高以下仍有使用者辨認的褐色後繼箱；禁止把「必守舊高」升為條件。紫／褐大箱下緣及灰箱和褐箱的底部關係尚未裁決；不得用圖上模擬值、前輪研究幾何或單一低點公式替代。原圖片不進公開 Git。最高資金閉環目標與所有後續原成品保留。
+
+---
+
 ## 2026-10-22｜人工模式獨立候選與新圖形標註
 
 保持下方最高資金飛輪目標優先。最新人工 Raw／Adjusted 模式候選另版交付，入口 `deliveries/m1-v019-manual-basis-20261022/WORK_HANDOFF.md` 與 `股票系統M1_v0_18/manual_basis_chart/README.md`；固定 0.4.3 原數值與舊頁。模式僅載已存同基底結果，缺資料明示，不推市況／補還原因子。實體 Android、完整還原鏈、辨識與交易品質未驗。接續圖形研究還要讀 `docs/visual-discussion/20261022_user_simulated_multilevel_box_evolution/README.md`，該新提交的人工多層箱型關係與大箱底未決不可跳過或當成數值規則。根 AGENTS 原 bootstrap、架構、保存及未驗規定持續適用。
