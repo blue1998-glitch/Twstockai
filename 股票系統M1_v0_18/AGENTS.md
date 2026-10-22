@@ -1,3 +1,5 @@
+> 最新獨立人工 Raw／Adjusted 候選主圖在 manual_basis_chart/，外部純解析／保存層在 manual_basis/；先讀 root CONTINUE_IN_WORK_MODE.md 最新節與 manual_basis_chart/README.md／validation_20261022/驗收報告.md。原 0.4.3 及既有引擎／研究數值不改；Adjusted 仍限兩股 283 根現金事件候選，來源缺漏阻擋，Chrome 模擬已驗但 Android 實機未測。最新人工多層箱型判讀另見 root 交接，箱底尚未核定。下方 pressure_chart/ 與其他舊狀態為歷史保留，不覆蓋最新成果。
+
 > 最新交付為pressure_chart/的獨立五年官方Raw／雙維壓力來源主圖；先讀root CONTINUE_IN_WORK_MODE.md最新節、pressure_chart/README.md與validation_20261018/驗收報告.md。四股1213／1214根、244月回應到2026-10-16，原引擎／策略／庫／舊頁與原1490frame數值未變。五年Adjusted／完整公司行動及六日主證未完成；正式高牆／魔王／衰減與增量門檻未知。新頁Android NOT_TESTED_NEW_BUILD，舊technical部分證據分開保留。下方為歷史交接，不覆蓋最新狀態。
 
 > 最新獨立主圖交付：請讀repository root CONTINUE_IN_WORK_MODE.md最上方及本專案 technical_chart/README.md、technical_chart/validation_20261017/驗收報告.md。新頁technical-chart-view/0.1直接呈現真實日K／量／MACD、導航、原保存證據與JSON。1101／2884僅179根、6488／8069僅283根，無多年或真實盤中。新主圖Android NOT_TESTED；舊嘗試頁PARTIAL_EVIDENCE_OBSERVED獨立保留。原引擎、策略、schema、庫與舊頁不改；下方舊狀態按其歷史時點閱讀。
