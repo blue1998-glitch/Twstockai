@@ -1,3 +1,13 @@
+# 2026-10-22｜P1-7 可執行研究、同期對照與手機報告已完成
+
+入口 `股票系統M1_v0_18/rotation_research/WORK_HANDOFF.md`、RESEARCH_REPORT.md及generated/report.html。來源快照9dd0554f；工程先保存cf10dbdb。最終18定向unittest、9982來源／帳務／前綴斷言、CLI RUN/READ逐位元相同、Chrome151新36檢查與JSON／SVG真下載通過；390／1400無頁面水平溢出，非Android。70同期對照×6＝420方案、216敏感度方案、4同一帳戶閉環實驗；2個40筆不足拒算。20,000股A確保25%整張等分，容量不足全換亦可分日成交。
+
+**投資驗證未通過**：完整公司行動／股利／歷史公布及日曆未核，只是條件式扣模擬成本價格報酬；正式總淨報酬、弱勢占用分類、最適全換／分批與飛輪未完成。20筆原高低／25及50%／量比前日／5筆延後／10筆檢討全是實驗設定，不是已批准策略；正式結構UNKNOWN、交易false。原P0～P1答覆、人工Raw/Adjusted、全部原引擎庫舊圖及main保持。
+
+下一步建議Codex接資料資格與公司行動／股利應收／配股減資的總報酬帳工程，再補真正獨立市場樣本；無需現在請使用者猜比例。完整可貼指令在新WORK_HANDOFF。所有完整結果與PNG／SVG／HTML／測試封包在同目錄P1-7_rotation_research_v01.zip。下方歷史完成節點不刪。
+
+---
+
 ## 2026-10-22｜目前接續以最新P0／P1裁決與真實截止研究為準
 
 先讀CONTINUE_IN_WORK_MODE最新節、`docs/visual-discussion/20261022_causal_volume_cutoff_review/WORK_HANDOFF.md`及README。人工Raw／Adjusted獨立頁已於76be6f5交付，以下「僅需求保存」是歷史狀態；其後P0-1紫框成立／量優先、P0-3事實狀態、P0-4代表量與P1／P1-6新答已由後續提交保存，按原話與版本採用，不重問舊題。本輪另存兩真實案例九截止K量，51項資料核對及Chrome151九oracle／390px通過，非正式辨識或Android驗收。參照底未核則拒判、量角色不預標成功、後見解釋另存；跨年份案例不當換股比較。

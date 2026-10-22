@@ -43,7 +43,7 @@ def build_input():
                       'volume_unit':'SHARES_REPORTED','bars':bars,'exchange':'TWSE',
                       'security_type':'COMMON_STOCK_EXISTING_PROJECT_SCOPE_NOT_NEW_MASTER_AUDIT'}
     return {'schema':'rotation-input/0.1','source_commit':HEAD,'mode':'RAW','strict':False,
-            'proxy_window':20,'initial_shares':10000,'initial_cash':'0',
+            'proxy_window':20,'initial_shares':20000,'initial_cash':'0',
             'execution':{'fee_rate':'0.001425','minimum_fee':'20','sell_tax':'0.003',
                          'slippage_bps':'10','participation':'0.001','lot':1000,'settlement_lag':0},
             'eligibility':{'company_actions':'UNVERIFIED_INCOMPLETE',
