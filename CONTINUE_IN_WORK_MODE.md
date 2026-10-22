@@ -1,3 +1,9 @@
+# 2026-10-22｜P1-7 獨立換股研究已可執行（工程完成節點）
+
+接續9dd0554f，讀 `股票系統M1_v0_18/rotation_research/README.md`、WORK_HANDOFF與generated/design.json。獨立純數值core／連續帳戶loop／外部不可覆寫store／CLI已實作，18定向測試通過；420方案、216敏感度方案及4閉環帳戶已計算，2個40筆不足拒算。中文圖表／瀏覽器驗收接續進行。真實資料受完整公司行動／股利、歷史公布與日曆限制，僅條件式扣模擬成本價格報酬，不是實際總淨報酬或已驗交易策略。比例／觸發／20筆原高低等全部為實驗代理，非正式圖形規則；正式結構UNKNOWN，交易與策略不批准。原P0～P1已答、人工Raw/Adjusted、最高飛輪與所有後續保持。bootstrap本環境545補缺／7差異保留成功；原引擎庫舊圖不改。
+
+---
+
 ## 2026-10-22｜真實價量九截止已保存，當日量角色與後見解釋分開
 
 先讀 [新研究與實測](docs/visual-discussion/20261022_causal_volume_cutoff_review/README.md)、[Work交接](docs/visual-discussion/20261022_causal_volume_cutoff_review/WORK_HANDOFF.md)。1101／2884保存原始K量做兩案例九截止，逐張只顯當時以前資料，原量角色UNKNOWN；人工事後解釋另選顯示並記2026-10-22。51項資料／前綴污染核對、Chrome151九精確oracle與390px無溢出通過，無Android或分類／交易驗收。新研究揭示ABC39最高價K和最大量K不同，28.45閱讀最低不得直接當核定箱底；2884價格續高而量低於一根舊柱不推否決。來源／限制／重現／未完整checkout均已記錄。
