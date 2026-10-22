@@ -1,3 +1,9 @@
+# 本輪最新：官方來源資格補充（原交付完整保留）
+
+先讀 [source_qualification_20261022/README.md](source_qualification_20261022/README.md)、REPORT／SOURCE_CONTRACT／WORK_HANDOFF。新15項測試及16官方月報317市場日／473曆日核對通過，只解除70窗口的日曆缺口；全部仍因公司行動／淨分配／期初權利拒算，2窗口不足，總淨報酬合格0。原action帳44與P1-7測試未重跑。兩個官方來源網域設定草稿已保存但未套用，需環境設定檢閱後再核特定來源；HTTP307及未核配股等保持。成品／逐檔GitHub收據：根deliveries/m1-source-qualification-20261022/。下一步Codex補可核來源，不重問已答策略或擅加門檻；舊引擎／數據／ZIP及main保持。
+
+---
+
 # 2026-10-22 新增獨立事件帳（原0.1保留）
 
 請先讀 [action_data_20261022/README.md](action_data_20261022/README.md)、[實測報告](action_data_20261022/REPORT.md) 及 [契約](action_data_20261022/CONTRACT.md)。新action_ledger／sources／CLI／study獨立實作，44新測試通過，122原件與舊輸入核對一致；70原研究窗全部拒算，真正總淨報酬比較合格窗0，無六方案重算或策略認可。舊18／9982／Chrome36是下方歷史，未在本輪重跑。下一步Codex補完整官方事件／淨分配／日曆／期初權利；完整來源缺口、新成品與接續在新入口。下方只描述舊版本資格，不把「尚未實作舊core會計」混為新獨立模組未實作。

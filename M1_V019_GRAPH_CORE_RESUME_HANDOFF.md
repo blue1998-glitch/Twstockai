@@ -1,3 +1,15 @@
+# 2026-10-22 Codex｜官方市場交易日已補核；總淨報酬仍拒算
+
+接續50d8c5e，最新來源入口 `股票系統M1_v0_18/rotation_research/source_qualification_20261022/README.md`、REPORT／SOURCE_CONTRACT／WORK_HANDOFF；新小包與固定GitHub回讀收據入口 `deliveries/m1-source-qualification-20261022/README.md`。原事件帳0.1及P1-7、全部舊成品保持，下方是歷史。
+
+本環境重新bootstrap成功（0補缺／7差異保留）。新15項來源測試通過；取得16份官方FMTQIK月報，核得2025/7/1～2026/10/16的317市場日／473曆日，與1101／2884各317保存日完全相符，122舊原件再核一致。兩筆null（1101 2025/8/13、2884 2025/11/5）均為市場開市但個股無報價，原因未知，不補價。只核此TWSE窗口，不認證券商T+2、五年／TPEx或歷史公布可得。
+
+70研究窗只解除日曆未核原因，公司行動／淨分配／期初權利仍全REFUSED；2窗40筆不足，總淨報酬合格0，無六方案成交重跑／新排名／勝出比例。新減資歷史TWTAUU請求HTTP307已保存、未重試；當前減資預告及209筆申報表零命中不證明無事件。2884配股比／可交易日／零股、完整公司行動及7/25後權息、淨分配與期初權利仍缺。原source／core／action_ledger／策略／庫／歷史／舊圖／舊ZIP及main保持，前輪44及18／9982／Chrome36未重跑；無新UI／瀏覽器／Android，Android未測。
+
+已保存環境設定草稿：保留TWSE／TPEx及presets，新增www.esunbank.com與mops.twse.com.tw，更新start_skill；install_script等未改。工具requires_publish=true，草稿不是runtime已套用，兩新域未驗可讀。具體來源及設定缺口見configuration-review.json。下一步Codex：使用者於環境設定檢閱／套用後核對runtime及單一必要官方來源；不要原樣反覆請求失敗，不重試／繞過舊禁權息端點或file://。不重問P0～P1、不加正式門檻／主壓力／比例；Raw/Adjusted、歷史可得、五年Adjusted、主檔與SQLite未知保持。不部署付費交易訊息或子代理。切Work附完整WORK_HANDOFF指令。以下原文完整保留。
+
+---
+
 # 2026-10-22 Codex｜來源事件表＋獨立逐日資金帳已實作
 
 已核起點354a9c01；來源完成節點e3cadaf88ff6cf3a62374df262f73ad6b5a26c1a。新入口 `股票系統M1_v0_18/rotation_research/action_data_20261022/README.md`、REPORT.md、CONTRACT.md；下載與遠端核對入口 `deliveries/m1-actions-ledger-20261022/README.md`。原P1-7交付不變，下方舊數字是歷史。
