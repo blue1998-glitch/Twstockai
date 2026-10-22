@@ -1,0 +1,178 @@
+{
+  "schema": "rotation-action-input/0.1",
+  "mode": "RAW",
+  "start": "2026-01-05",
+  "end": "2026-01-12",
+  "sources": {
+    "fixture": {
+      "kind": "ENGINEERED_ACCOUNTING_FIXTURE_NOT_MARKET",
+      "url": "fixture://explicit-values",
+      "sha256": "ffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffff",
+      "captured_at": "2026-10-22T00:00:00Z"
+    }
+  },
+  "assets": {
+    "A": {
+      "source_id": "fixture",
+      "basis_id": "RAW:fixture:A",
+      "quote_source_ids": [
+        "fixture"
+      ],
+      "quotes": {
+        "2026-01-05": "10",
+        "2026-01-06": "9",
+        "2026-01-07": "9",
+        "2026-01-08": "9",
+        "2026-01-09": "9",
+        "2026-01-12": "9"
+      }
+    },
+    "B": {
+      "source_id": "fixture",
+      "basis_id": "RAW:fixture:B",
+      "quote_source_ids": [
+        "fixture"
+      ],
+      "quotes": {
+        "2026-01-05": "20",
+        "2026-01-06": "20",
+        "2026-01-07": "20",
+        "2026-01-08": "20",
+        "2026-01-09": "20",
+        "2026-01-12": "20"
+      }
+    }
+  },
+  "calendar": [
+    {
+      "date": "2026-01-05",
+      "trading": true
+    },
+    {
+      "date": "2026-01-06",
+      "trading": true
+    },
+    {
+      "date": "2026-01-07",
+      "trading": true
+    },
+    {
+      "date": "2026-01-08",
+      "trading": true
+    },
+    {
+      "date": "2026-01-09",
+      "trading": true
+    },
+    {
+      "date": "2026-01-10",
+      "trading": false
+    },
+    {
+      "date": "2026-01-11",
+      "trading": false
+    },
+    {
+      "date": "2026-01-12",
+      "trading": true
+    }
+  ],
+  "events": [
+    {
+      "type": "CASH_DIVIDEND",
+      "code": "A",
+      "basis_id": "RAW:fixture:A",
+      "ex_date": "2026-01-06",
+      "source_ids": [
+        "fixture"
+      ],
+      "gross_per_share": "1",
+      "net_per_share": "0.8",
+      "pay_date": "2026-01-09",
+      "field_sources": {
+        "ex_date": [
+          {
+            "source_id": "fixture",
+            "locator": "engineered.ex_date"
+          }
+        ],
+        "gross_per_share": [
+          {
+            "source_id": "fixture",
+            "locator": "engineered.gross_per_share"
+          }
+        ],
+        "net_per_share": [
+          {
+            "source_id": "fixture",
+            "locator": "engineered.net_per_share"
+          }
+        ],
+        "pay_date": [
+          {
+            "source_id": "fixture",
+            "locator": "engineered.pay_date"
+          }
+        ]
+      },
+      "id": "sha256:c3698c6dd1e254cd523134ce5a82fe6be79c9a3c6cc030a6fba36be5596d781c"
+    }
+  ],
+  "coverage": {
+    "A": {
+      "status": "VERIFIED_COMPLETE",
+      "start": "2026-01-05",
+      "end": "2026-01-12",
+      "types": [
+        "CASH_DIVIDEND",
+        "STOCK_DIVIDEND",
+        "CAPITAL_REDUCTION"
+      ],
+      "other_actions_checked": true,
+      "source_ids": [
+        "fixture"
+      ],
+      "event_ids": [
+        "sha256:c3698c6dd1e254cd523134ce5a82fe6be79c9a3c6cc030a6fba36be5596d781c"
+      ]
+    },
+    "B": {
+      "status": "VERIFIED_COMPLETE",
+      "start": "2026-01-05",
+      "end": "2026-01-12",
+      "types": [
+        "CASH_DIVIDEND",
+        "STOCK_DIVIDEND",
+        "CAPITAL_REDUCTION"
+      ],
+      "other_actions_checked": true,
+      "source_ids": [
+        "fixture"
+      ],
+      "event_ids": []
+    }
+  },
+  "qualification": {
+    "calendar": "VERIFIED_COMPLETE",
+    "opening_claims": "VERIFIED",
+    "net_distributions": "VERIFIED",
+    "execution_costs": "SCENARIO",
+    "investor_cashflows": "SCENARIO"
+  },
+  "opening": {
+    "cash": "0",
+    "shares": {
+      "A": "100",
+      "B": "0"
+    },
+    "cash_claims": [],
+    "share_claims": []
+  },
+  "fills": [],
+  "terminal_costs": {
+    "fee_rate": "0",
+    "minimum_fee": "0",
+    "sell_tax": "0",
+    "slippage_bps": "0"
+  }
+}

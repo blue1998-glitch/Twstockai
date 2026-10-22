@@ -1,3 +1,9 @@
+# 2026-10-22 新增獨立事件帳（原0.1保留）
+
+請先讀 [action_data_20261022/README.md](action_data_20261022/README.md)、[實測報告](action_data_20261022/REPORT.md) 及 [契約](action_data_20261022/CONTRACT.md)。新action_ledger／sources／CLI／study獨立實作，44新測試通過，122原件與舊輸入核對一致；70原研究窗全部拒算，真正總淨報酬比較合格窗0，無六方案重算或策略認可。舊18／9982／Chrome36是下方歷史，未在本輪重跑。下一步Codex補完整官方事件／淨分配／日曆／期初權利；完整來源缺口、新成品與接續在新入口。下方只描述舊版本資格，不把「尚未實作舊core會計」混為新獨立模組未實作。
+
+---
+
 # P1-7 動態換股研究候選 0.1
 
 狀態：**已實作且工程測試通過；投資策略／總淨績效未通過驗證**。純 Python、無網路、UI、SQL、Streamlit 或真實下單依賴。輸入 `rotation-input/0.1`；輸出 `rotation-result/0.1`、`rotation-loop/0.1`；外部保存 `rotation-record/0.1`。固定初始 A 股數及現金，不採歷史買入成本作換股門檻。研究樣本不是使用者持倉。
