@@ -1,0 +1,53 @@
+{
+  "schema": "manual-analysis-price-basis-decision/0.1",
+  "date_taipei": "2026-10-22",
+  "base_commit": "610e94b88ed68a4fcc596e563ab5b259e71513c0",
+  "user_quote": "大盤空頭需要很多綜合指標來判斷，因此建議是可以切換日K或還原K模式由人工方式決定分析模式。",
+  "status": "USER_CONFIRMED_MANUAL_ANALYSIS_MODE_DIRECTION_NOT_NEW_PRODUCT_ACCEPTANCE",
+  "confirmed": {
+    "decision_owner": "USER_MANUAL",
+    "available_mode_intent": [
+      "RAW_DAILY_K",
+      "ADJUSTED_K"
+    ],
+    "scope": "ANALYSIS_PRICE_BASIS_NOT_DISPLAY_ONLY",
+    "automatic_market_regime_detection_required": false,
+    "automatic_basis_switch_authorized": false,
+    "market_regime_answer_required_to_choose_mode": false
+  },
+  "supersedes": {
+    "prior_question": "Classify displayed June-July market as bear versus pullback before basis selection",
+    "status": "CLOSED_BY_MANUAL_SELECTION_DIRECTION_DO_NOT_REASK_AS_PREREQUISITE",
+    "market_regime_can_remain_unknown": true,
+    "unknown_market_state_does_not_prohibit_explicit_manual_raw_choice": true
+  },
+  "prior_guidance": {
+    "post_action_approximately_two_to_three_months": "RETAINED_AS_USER_MANUAL_JUDGMENT_CONTEXT_NOT_AUTOMATIC_TIMER",
+    "bear_raw_preference": "RETAINED_AS_USER_MANUAL_JUDGMENT_CONTEXT_NOT_AUTOMATIC_OVERRIDE"
+  },
+  "derived_engineering_requirements": {
+    "same_basis_prices_references_and_indicators": true,
+    "record_explicit_choice_and_data_versions": true,
+    "keep_raw_adjusted_and_prior_results_separate": true,
+    "missing_adjusted_must_not_fall_back_to_raw_silently": true,
+    "changing_mode_must_load_matching_results_or_run_separate_analysis": true,
+    "no_relabeling_old_raw_results_as_adjusted": true,
+    "no_new_volume_adjustment": true
+  },
+  "b_case": {
+    "actual_user_selected_mode": null,
+    "manual_selection_policy_does_not_choose_specific_case": true,
+    "single_event_candidate_complete_adjusted_history": false,
+    "full_action_chain": "NOT_AUTHENTICATED",
+    "old_raw_and_candidate_evidence": "PRESERVED_WITH_ORIGINAL_QUALIFICATIONS"
+  },
+  "implementation_scope": {
+    "new_product_code_changes": 0,
+    "new_charts": 0,
+    "new_market_downloads": 0,
+    "product_tests": 0,
+    "browser_android_tests": 0,
+    "functional_switch_acceptance": "NOT_VERIFIED_THIS_TURN",
+    "historical_signal_eligible": false
+  }
+}

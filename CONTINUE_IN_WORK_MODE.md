@@ -4,7 +4,19 @@
 
 ---
 
-#
+## 2026-10-22 最新決定：原始日K／還原K由人工選分析模式
+
+使用者原話：「大盤空頭需要很多綜合指標來判斷，因此建議是可以切換日K或還原K模式由人工方式決定分析模式。」完整保存與接續見 `docs/visual-discussion/20261022_manual_price_basis_decision/README.md`、decision.json、verification.json、WORK_HANDOFF及GITHUB_READBACK。人工選的是分析價格基準，不只畫面；不等系統自動判空頭，也不再要求先回答前輪大盤空頭／拉回題才能切換。市場身份可未知，明確人工選Raw不以先證空頭為前提。原約2～3月及空頭Raw偏好保留為人工判斷背景，無自動時間或市場強制切換。
+
+同次K、指標與價量結構參照需配對同基底／版本；保存人工選擇及實際來源，切換載相符結果或另存新分析，不只改標籤、不覆舊結果；還原資料不足明示，不默默退Raw、不造因子。量口徑另管。B此次未實際指定模式，原官方事件已核與單次換算非完整還原、歷史可得及source_gaps等限制保持。
+
+已讀原碼：technical_chart／pressure_chart既有mode選單與pressure_chart來源解析／下載，但未證人工模式跨個股保留、持久儲存或完整同步分析已落實。本輪僅方向與工程要求保存及文件核對，0產品程式改動／新圖行情／core指標舊研究重算／瀏覽器Android；不冒功能完成。分類NOT_VALIDATED、用途NOT_ESTABLISHED、新Android NOT_TESTED_NEW_BUILD、行動及飛輪NOT_EVALUATED、historical_signal_eligible=false。
+
+下一步繼續Work，依本輪交接接資料資格及模式切換整合；不再把空頭自動分類當阻塞或重問已答圖形。保留最高資金閉環飛輪目標、main與全部後續原引擎策略資料舊圖；例行多步與原分支交付已授權，不部署付費交易訊息子代理。以下舊待答／自動口徑資格按本節更新解讀。
+
+---
+
+
 ## 2026-10-22 最新：B官方除息列已核，單次換算與市場背景另存研究
 
 接續17a480ec，入口 `docs/visual-discussion/20261022_b_basis_source_work_review/README.md`，完整WORK_HANDOFF、evidence、11份官方原件與source-capture、comparison-data、verification、manual-qa、recovery-audit同目錄；三頁PDF及三PNG。原最高資金閉環／飛輪目標與既有答案不改。
@@ -17,7 +29,7 @@
 
 ---
 
-# 2026-10-21 最新口徑已答：除權息後約2～3月還原，大盤空頭原日K優先
+## 2026-10-21 最新口徑已答：除權息後約2～3月還原，大盤空頭原日K優先
 
 使用者原話：「通常除權息後要以還原權息去做分析持續時間大約2-3個月，大盤是空頭市場時則一切以原日k分析。」完整原話與資格見 `docs/visual-discussion/20261021_price_basis_policy_decision/decision.json`；README／source-check／verification／WORK_HANDOFF與回讀收據同目錄。承接7ffb2dca，仍Work，最高資金增值閉環／飛輪目標不改。
 
