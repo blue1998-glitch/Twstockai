@@ -1,3 +1,15 @@
+# 2026-10-22 Codex｜官方公司行動來源0.2：2884面額／公司發放報告已補
+
+接續6185297e，保留全部先前成果；新入口 `股票系統M1_v0_18/rotation_research/official_actions_20261022/README.md`、REPORT／CONTRACT／WORK_HANDOFF。新ZIP及固定GitHub逐檔核對見 `deliveries/m1-official-actions-20261022/README.md`。原0.1、日曆、P1-7及舊包全部保持；下方是歷史。
+
+本環境重新bootstrap成功（0補缺／7差異保留），runtime spec3新域已列允許；實際取得玉山兩官方PDF。2025會議同次增資面額10元、最終公開股票股利金額0.10015129／10導出0.010015129股／原股；僅公開金額精度推導，非已核未圓整最終比例／個人實配。公司後續報告8/27發放完畢不是個人淨到款／新股可交易日；零股政策已存但期限／實際處置未核。新catalog0.2補一個原股票組件，四現金組件不動，announced_at仍null；新觀察時點不倒填舊可知時點。
+
+新17定向測試通過，122價量原件重核、70研究窗仍拒算、2不足，真正總淨報酬合格0；無新六方案回放／排名。MOPS入口HTTP200卻為明確安全拒絕，原件保存、不重試繞過；原權息禁端點／TWTAUU／file://限制保留。完整行動／減資及2026/7/25後權息、2884可交易日／精確實配與零股、淨分配／期初權利仍缺。沒有把公司完成報告當投資人績效。
+
+初次表格抽字／測試oracle失敗及修正均留檔；本輪無UI／瀏覽器／Android，Android仍NOT_TESTED_NEW_BUILD，前輪44／15及18／9982／Chrome36未重跑。原core／action_ledger／策略參數／庫／歷史／舊頁／舊ZIP及main保持，不重問已答P0～P1，不改全換／分批研究資格，不部署付費交易訊息或子代理。下一步Work補可核官方來源；需要工程用Codex，完整可貼指令見新WORK_HANDOFF。Raw／五年Adjusted、歷史公布／主檔與SQLite未知持續。以下原文完整保留。
+
+---
+
 # 本輪最新：官方來源資格補充（原交付完整保留）
 
 先讀 [source_qualification_20261022/README.md](source_qualification_20261022/README.md)、REPORT／SOURCE_CONTRACT／WORK_HANDOFF。新15項測試及16官方月報317市場日／473曆日核對通過，只解除70窗口的日曆缺口；全部仍因公司行動／淨分配／期初權利拒算，2窗口不足，總淨報酬合格0。原action帳44與P1-7測試未重跑。兩個官方來源網域設定草稿已保存但未套用，需環境設定檢閱後再核特定來源；HTTP307及未核配股等保持。成品／逐檔GitHub收據：根deliveries/m1-source-qualification-20261022/。下一步Codex補可核來源，不重問已答策略或擅加門檻；舊引擎／數據／ZIP及main保持。
