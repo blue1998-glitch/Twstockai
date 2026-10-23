@@ -1,3 +1,15 @@
+# 2026-10-23 Codex｜三新來源皆CONNECT403，0.7未建立
+
+本既有唯一Codex已核遠端2d2dbf1及祖先並保留全部後續；最新完整0.6／575舊成員與全部parent、資料、策略、庫、歷史及成品不改。重新bootstrap成功（0補缺／7差異保留）。新受阻紀錄 `股票系統M1_v0_18/rotation_research/source_followup_attempt_20261023/README.md`、WORK_HANDOFF與 `deliveries/m1-source-followup-attempt-20261023/` 固定逐檔回讀；這不是0.7或新來源成品。
+
+精確三URL各GET一次：期交所玉山DN1106復牌公文、玉山D0565FF2併購完成新聞、台泥115年第2季合併財報。全部在代理CONNECT階段403，沒有原站回應、PDF／HTML原始bytes、SHA或語義驗收，captured_at／readback_at為null。Work摘要及SHA只是線索，不冒已取得；沒有0.7／新catalog／parser／產品測試／資格重算／每日帳／六方案。前輪91項與70拒算／2不足／8換股未支援／真正總淨報酬0都未在本輪重跑。
+
+三新網域www.taifex.com.tw、www.esunfhc.com、media.taiwancement.com已透過支援工具追加草稿，保留原七custom domains與presets；saved但未套用／未發布。runtime仍顯原四custom hosts，network state unknown，不認證設定已生效。未重試、未跟隨重新導向、未改主機路徑或代理／TLS。環境設定檢閱／儲存／發布與下一輪新明確重試授權是必要前提，本輪不自行發布、不要求使用者手機搬檔。舊禁止端點及三舊網域403限制保持，不因草稿而放寬。
+
+PENDING_SOURCE_BOUNDARIES只保存使用者已明確的期交所佐證／普通股公告區別、公司完成／個人權利與日期矛盾、仟元／仟股／月份／掃描抽字界線，未實作未驗收。原0.6及全部parent、舊UNKNOWN、Raw null、缺價拒算、execution_qualified=false、imputed_close／valuation null、historical_signal_eligible=false、primary_pressure_id=null、policy_authorized=false保持。無新UI／Android，不改main、不部署付費交易訊息或子代理。Work仍只來源／GitHub唯讀，不工程／產品測試／commit／push，不開第二個Codex；完整可貼續接見新WORK_HANDOFF。以下歷史原文完整保留。
+
+---
+
 # 2026-10-23 Codex｜離線原件0.6已接入，舊UNKNOWN與淨帳拒算保留
 
 已安全取得遠端f65a894及8aecb50橋接附件，保留先前未收到checkpoint及全部後續。唯一既有Codex工作執行，沒有平行寫入／子代理。原ZIP941229bytes、SHA ecc413ca28fce87085666b87b3c3a6d1bf784ef553b32d2198b8bb72bebeedce、41成員／40manifest皆實核，固定GitHub raw全bytes回讀相同。已全文讀包內CODEX_HANDOFF，重新bootstrap成功（0補缺／7差異保留）後才實作；不再要求手機附件。原前身91項是Work證詞，Codex只獨立驗本橋接40項，不混為已驗前身大包。
