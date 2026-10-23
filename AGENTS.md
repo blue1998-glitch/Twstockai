@@ -1,3 +1,15 @@
+# 2026-10-23 Codex｜來源0.3適用對象／版本核對已實作
+
+接續983b3559，保留354a9c01以來全部後續；新入口 `股票系統M1_v0_18/rotation_research/action_scope_20261023/README.md`、REPORT／CONTRACT／WORK_HANDOFF，ZIP／固定GitHub逐檔核對見 `deliveries/m1-action-scope-20261023/README.md`。原事件帳、來源0.2、Work核對小包及P1-7保持；下方是歷史。
+
+重新bootstrap成功（0補缺／7差異保留）。新純數值action_scope與離線source producer接入六官方原件，提升2884直接公開比例精度並分開issuer／受領原股／事件／版本／instrument／日期角色。三商壽0.2486／0.2596與Q&A只屬原2867股東，不配給既有2884；9/1證書上市及零股／匯費不補2025股利。台泥0.8資本公積仍提案，不補最終來源／淨稅費。新觀察時點與文件自載日期分開，announced_at仍null。
+
+24新定向測試通過，122價量原件與舊輸入再核；新資格實跑70研究窗＋1probe，70拒算／2不足，其中8窗增加換股影響不支援原因。原每日numeric replay與六方案重跑0，真正總淨報酬合格0；5來源版本屬3文件家族，非5獨立事件。input自行改完整旗標亦不能蓋過catalog來源不足；不省略已知公司行動或假定既有2884無影響。
+
+完整行動／減資及7/25後權息、未圓整實配／2025可賣日／零股、台泥最終決議／細項法規、淨分配及期初權利仍缺。MOPS／權息端點／TWTAUU／file://／NHI403均未重試繞過，缺價原因未知不補價；本輪無新官方網路／UI／瀏覽器Android，Android NOT_TESTED_NEW_BUILD。原producer／action_ledger／core／策略參數／庫／歷史／舊catalog頁面及ZIP／main不改，舊17／44／15及18／9982／Chrome36未重跑。下一步Work補來源，工程Codex；完整可貼指令見新WORK_HANDOFF。不重問P0～P1、不定全換／分批、不部署付費交易訊息或子代理，Raw／五年Adjusted／歷史公布／主檔／SQLite未知保持。以下原文完整保留。
+
+---
+
 # 2026-10-22 Work｜直接配股比及其他公司行動來源已補；工程未實作
 
 接續46d09d4，最新入口 `股票系統M1_v0_18/rotation_research/source_review_20261022/README.md`、REPORT／CODEX_TASK／WORK_HANDOFF；固定GitHub逐檔回讀見 `deliveries/m1-source-review-20261022/GITHUB_READBACK.md`。本輪新checkout bootstrap實際補545檔、保留7差異；6官方原件（三PDF、三HTML）已封存，來源核對不是新版引擎測試。
