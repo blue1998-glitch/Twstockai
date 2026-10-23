@@ -1,3 +1,15 @@
+# 2026-10-23 Codex｜台泥114年報來源歸檔：1月／3月留差異，不建0.11
+
+原環境恢復connected/running（spec8；policy state仍unknown，不冒enforced）後，核遠端71e6ff26及指定祖先，按AGENTS bootstrap成功0補缺／7差異保留。新年報精確URL一次HTTP200／4932379bytes／SHA7406e30d1f02f083611f594459b952494816d87237bf2203734ce6afb487155d，與Work參照相符；無轉址重試。入口 `docs/source-research/20261023_tcc_annual_capture/README.md`、REPORT／CONTRACT／WORK_HANDOFF、observations／date-roles／visual-review；來源包及固定原bytes回讀見 `deliveries/m1-tcc-annual-source-20261023/README.md`。
+
+實際只視讀物理52／57／58／60（印刷102–103／112–113／114–115／118–119），非113頁全書。1/13董事會、2/23公司報告核准函、115.03股本表月份分角色；函原件未取得，不造生效日。舊第二季財報115年1月與年報115.03未調和，不覆舊值／選日期／拆事件，actual_effective_at及announced_at仍null。28,000,000股與28,000仟股只同家族佐證，不當股東現金事件；含特別股實收總數不當普通股或個人權利。3/24自載截至／PDF與HTTP元資料不證歷史可得。
+
+新pdfinfo／抽字／四頁轉圖return0，抽字完整stderr7992bytes／222行Invalid Font Weight，各圖2行同警告，完整保存，不冒Work原stderr已取得或舊Fontconfig／xref已消除。只來源／封包核對，無新產品／catalog／0.11，不回寫parent null；producer／資格／產品回歸／每日帳／六方案／Android未跑，歷史53及70／2／8／合格0不冒重測。全部原版本、策略引擎、庫、Raw null／UNKNOWN、歷史原件／圖／成品與main保持。
+
+下一步Work僅來源研究／GitHub唯讀，完整指令在新WORK_HANDOFF。缺口／九期初權利與所有資格false/null保持；舊Work包／meta未取得，不冒交付。已存年報／CTBC／舊PDF與全部受拒入口不重抓或繞過，嘉新逾時路徑不重試，不因unrestricted解禁。唯一既有Codex寫入，不部署付費交易訊息或子代理。以下原文完整保留。
+
+---
+
 # 2026-10-23 Codex｜CTBC單次新授權取得成功；僅來源交叉佐證，不建0.11
 
 已核遠端773b13b3及固定0.10 f423447，保留全部後續。使用者發佈環境並明示單次新授權後，先核runtime spec6／observed6、current=true、unrestricted/enforced，再對精確CTBC URL一次GET取得HTTP200、647329bytes／SHA ac8340b658018958e500f576bdc7605475cea0f48dac010e2c5251a1750aa310，與Work參照相符；沒有轉址／改設定或重試其他受拒入口。新入口 `docs/source-research/20261023_ctbc_capture/README.md`、WORK_HANDOFF、selection／engineering-assessment及raw原件meta；來源小包與固定逐檔讀回見 `deliveries/m1-ctbc-source-corroboration-20261023/README.md`。
