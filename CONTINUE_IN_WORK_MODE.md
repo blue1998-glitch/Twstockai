@@ -1,3 +1,15 @@
+# 2026-10-23 Codex｜CTBC研究包未取得；0.10 Fontconfig摘要勘誤
+
+已唯讀核遠端907bc298及固定0.10工程f423447，保留全部後續。新入口 `docs/source-research/20261023_ctbc_intake/README.md`、WORK_HANDOFF及availability／warning-erratum-evidence；文件固定逐檔讀回見 `deliveries/m1-ctbc-intake-20261023/README.md`。本輪未收到新研究包、WORK_RESEARCH_HANDOFF.md或CTBC原件／meta：附件目錄不存在，既有下載只有舊v0.17，遠端路徑及70舊ZIP成員名稱未見；沒有原件URL可取得，未發CTBC請求、未冒網路拒絕。已請求研究包GitHub位置，不要求手機搬檔，工程實益待實際原件核定，不建0.11。
+
+0.10原摘要「全部stderr空／無Fontconfig」有誤：固定f423447的pdf-extraction-verification.json原bytes已GitHub讀回，五頁轉圖return0，四議事錄頁stderr空，但表決頁有Fontconfig快取不可寫診斷；抽字stderr空。新勘誤明示警告，原0.10 PDF／JSON／PNG／catalog／REPORT／ZIP與SHA全留史不改，沒有重抽／重畫／改系統設定，不抹舊xref。這是文件修正，非新產品行為或CTBC來源接入。
+
+文件前本環境重新bootstrap實際成功0補缺／7差異保留；本輪沒有產品新測／回歸／producer／每日帳／六方案或Android，原53及70／2／8／合格0僅歷史，不冒本輪重跑。CTBC表若取得只公司層級交叉佐證，年度／1101與1101B／日期角色／單位精度分開，不重計事件、不證個人到款或完整覆蓋。全部舊版本、策略參數／引擎／庫／Raw null／UNKNOWN歷史、原件／舊頁成品與main保持；execution_qualified=false、imputed_close／valuation=null、historical_signal_eligible=false、primary_pressure_id=null、policy_authorized=false及來源缺口保持。
+
+下一步Work唯讀交回可讀研究包位置及完整原件／指令，再由此原唯一Codex判斷工程實益；完整可貼指令見新WORK_HANDOFF。未取得／未讀／未實作／未執行／未測／未讀回分列，不重試繞過受拒入口，不部署、付費、交易、訊息或子代理。以下歷史原文完整保留，0.10摘要警告處併讀本勘誤。
+
+---
+
 # 2026-10-23 Codex｜子公司IPO方案來源0.10：場次矛盾與個人權利分離
 
 唯一既有Codex接續5a5ccab，核包含固定0.9工程，重新bootstrap成功0補缺／7差異保留後才工程。重用庫內台泥索引原href，兩新精確官方PDF各一次HTTP200，大小／SHA與Work比對值一致，不重抓舊公開說明書或Follow-up、不重試受拒入口。Work附件／meta仍未取得未讀，使用者提供捕捉時點僅另存陳述，本Codex新取得／讀回／觀察分開，work_github_readback_at及announced_at仍null。
