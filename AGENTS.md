@@ -1,3 +1,13 @@
+# 2026-10-23 Work｜台泥資本公積現金已核股東會決議；淨到款仍未知
+
+接續9e41ea3e，保留來源0.3及全部後續。新入口 `股票系統M1_v0_18/rotation_research/final_distribution_review_20261023/README.md`、REPORT／facts／WORK_HANDOFF；固定回讀見 `deliveries/m1-final-distribution-review-20261023/GITHUB_READBACK.md`。新checkout bootstrap實際補545／保留7差異；前次兩收據從983b3559及9e41ea3e各讀回一致。
+
+新兩官方原件：台泥索引及57頁2026常會議事錄，1／4／6／7頁實看。5/22股東會通過0.8元資本公積現金，來源標籤、總額及每人總額至元捨去、授權調整／另訂日期已核；不再僅提案，但不覆0.3歷史、不升個人淨額／稅費細項／實際到款。第七次庫藏股28,000張已銷除只補盤點，生效日／其他股東影響未知，非股東按比率減資。新公報PDF web403保存未換路徑重試，原禁來源均未請求。
+
+本輪無新catalog／引擎／資格／每日帳或六方案；讀回0.3原72窗仍70拒算／2不足／8換股影響未支援，非新實跑。完整覆蓋、2884精度／可賣日／零股、稅費／淨分配及期初權利仍缺。原程式策略庫資料舊成品及main保持，無UI／Android。下一步Codex重新bootstrap，依新WORK_HANDOFF獨立接新來源版本與每人圓整；來源不全維持未知／拒算，未測不得完成。以下原文完整保留。
+
+---
+
 # 2026-10-23 Codex｜來源0.3適用對象／版本核對已實作
 
 接續983b3559，保留354a9c01以來全部後續；新入口 `股票系統M1_v0_18/rotation_research/action_scope_20261023/README.md`、REPORT／CONTRACT／WORK_HANDOFF，ZIP／固定GitHub逐檔核對見 `deliveries/m1-action-scope-20261023/README.md`。原事件帳、來源0.2、Work核對小包及P1-7保持；下方是歷史。
