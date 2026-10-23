@@ -1,3 +1,17 @@
+# 2026-10-23 Codex｜來源研究0.8：契約條件、持有人與增資分項
+
+原既有唯一Codex接續6a993fd並核包含固定0.7工程，重新bootstrap成功（0補缺／7差異保留）後才工程。重用公開說明書原件，固定GitHub同bytes讀回；只視讀162／163／175／176／461，765頁未全書核閱，xref警告保留。新2026Follow-up精確URL一次HTTP200／56,705bytes／指定SHA一致，一頁已核。Twstockai-v07-Work-source-handoff附件／meta未見，完整報告未讀，Work讀回時間未知；依使用者完整文字及實際原件接入，不要求手機搬檔，不倒填announced_at。
+
+新入口 `股票系統M1_v0_18/rotation_research/source_contracts_20261023/README.md`、CONTRACT／REPORT／WORK_HANDOFF。離線包、SHA、manifest／解壓與固定GitHub回讀見 `deliveries/m1-source-contracts-20261023/README.md`。獨立source_contracts純事實／producer精確嵌完整parent0.7，原0.7／0.6／0.5／正式0.4／0.3、策略引擎參數、庫、Raw／歷史、原件、舊頁成品及main不變。
+
+甲方2884／乙方2867第9條只是依法異議條件，個人資格行權／款股／後續修約仍null；0.2486與後續0.2596分版本，原2867畸零不套2025股利或既有2884，預計非完成、同權非零影響。2025股東紅利1,602,000仟元、員工522,900仟元、總178,200仟股分持有人／單位，總數不全配股東、不用面額反推員工股數，登記非上市。新一頁只決議／核准，不覆0.7新聞日期矛盾，canonical_effective_at=null；稅費契約非個人免稅／零費／淨額。7筆角色觀察不當7獨立行動。
+
+本輪31新＋實跑0.7相關29＝60項通過，新解壓同60不累加，舊59不冒本輪重跑。producer實核122價量原件／16日曆並按實際輸入重算70拒算／2不足／8換股影響未支援／真正總淨報酬0，daily／journal空、numeric replay／六方案0。missing-quotes精確等parent，舊UNKNOWN／Raw null與不可成交／估值null保持；完整行動覆蓋、直接可賣／個人實配畸零／既有股東影響、台泥調整細項／個人淨收及九起日期初權利仍缺。
+
+historical_signal_eligible=false、primary_pressure_id=null、policy_authorized=false及Raw／五年Adjusted／歷史公布／主檔／SQLite未知保持。無UI／瀏覽器Android新驗收；轉圖return0與字型快取警告／重試均留存，不改原件或系統設定。所有既拒入口與三舊403不重試／繞過。不部署、付費、交易、訊息或子代理。下一步Work僅來源研究／GitHub唯讀，不工程／測試／commit／push或開另一Codex；完整可貼指令見新WORK_HANDOFF。以下歷史原文完整保留。
+
+---
+
 # 2026-10-23 Codex｜三新官方原件取得，獨立來源0.7完成實測
 
 使用者發布環境並明示再試後，runtime spec4／observed4已核，三個新精確URL各一次全HTTP200，無需人工搬檔。前輪CONNECT403與全部舊受拒入口保留，未改主機／路徑／代理或TLS。重新bootstrap成功（0補缺／7差異保留）後，新增獨立source_followup純事實附層與離線producer，精確嵌入parent0.6，原0.6／0.5／正式action_resolution0.4／0.3及全部策略／引擎／庫／歷史／舊成品／main保持。
