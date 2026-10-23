@@ -1,3 +1,17 @@
+# 2026-10-23 Codex｜子公司IPO方案來源0.10：場次矛盾與個人權利分離
+
+唯一既有Codex接續5a5ccab，核包含固定0.9工程，重新bootstrap成功0補缺／7差異保留後才工程。重用庫內台泥索引原href，兩新精確官方PDF各一次HTTP200，大小／SHA與Work比對值一致，不重抓舊公開說明書或Follow-up、不重試受拒入口。Work附件／meta仍未取得未讀，使用者提供捕捉時點僅另存陳述，本Codex新取得／讀回／觀察分開，work_github_readback_at及announced_at仍null。
+
+新入口 `股票系統M1_v0_18/rotation_research/subsidiary_proposal_20261023/README.md`、CONTRACT／REPORT／WORK_HANDOFF；來源包、SHA／manifest、新解壓及固定逐檔讀回見 `deliveries/m1-subsidiary-proposal-20261023/README.md`。新純事實層／離線producer精確嵌完整parent0.9，全部舊版／parent null、策略參數／引擎／庫／Raw／UNKNOWN歷史、原件／舊頁成品及main保持。
+
+議事錄四頁掃描，native只有4個formfeed，五頁PNG實際視讀；人工盤點與原生表決解析分開，詳細掃描條款parser未實作，不冒OCR／native。索引／路徑第一次、議事錄p1第二次、表決未載場次矛盾保留，canonical_meeting_ordinal=null，不拆兩事件。僅1101公司報告子公司Cimpor International Holdings海外IPO方案通過／授權，非IPO完成、1101股東減資／配股或零影響。94.74%只票比例，原合計99.98不正規化，兩來源一案例、帳務事件／市場樣本新增0。會議日10/13、Last-Modified10/19及PDF建立／捕捉都不證公告或10/16前可得，actual_effective_at=null。
+
+本輪24新＋實跑0.9相關29＝53通過，新解壓同53不累加106，舊60不冒重跑。producer實核122價量／16日曆，按真輸入重算70拒算／2不足／8換股影響未支援／合格總淨報酬0，daily／journal空、numeric replay／六方案0，missing-quotes精確等parent、execution_qualified=false及估值null保持。詳細失敗／讀取輔助錯誤與修正見execution-diagnostic，產品首probe／首測通過，全部抽字轉圖return0、此輪stderr空，舊xref警告不抹除。
+
+完整行動減資／7/25後權息、直接復牌／可交易、個人實配畸零與既有2884影響、台泥最後調整／細稅源、個人淨款與九期初權利仍缺；不補零或假定無事件。historical_signal_eligible=false、primary_pressure_id=null、policy_authorized=false及Raw／五年Adjusted／歷史公布／主檔／SQLite未知不變。無新UI／Android，NOT_TESTED_NEW_BUILD保持。下一步Work只來源研究／GitHub唯讀，不bootstrap／工程／產品測試／寫入或開第二Codex；完整可貼指令見新WORK_HANDOFF。受拒入口／三舊403不重試繞過、不部署付費交易訊息或子代理。以下歷史原文完整保留。
+
+---
+
 # 2026-10-23 Codex｜公司分項來源0.9：股東160200／員工18000仟股
 
 唯一既有Codex接續4f9b106，核包含固定0.8工程，重新bootstrap成功（0補缺／7差異保留）後才工程。官方新增原件／官方及原PDF GitHub請求均0，只重用既存公開說明書，實際重抽／視讀391印刷11、456印刷76；新字節與舊全文對應頁同，xref警告保留，不改PDF、不冒765頁全書核閱。舊Work附件／meta仍未取得／未讀；使用者提供Work本機11:37:58.421958Z僅本機重用陳述，不補官方／GitHub時點或舊Work未知時間。
