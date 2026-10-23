@@ -1,3 +1,15 @@
+# 2026-10-23 Codex｜獨立來源診斷0.5，正式0.4保持
+
+本輪唯一Codex寫入；接續0d6e86a並核包含正式dae1f6e，無平行工作／子代理。完整checkout重新bootstrap成功（0補缺／7差異保留）。新入口 `股票系統M1_v0_18/rotation_research/source_diagnostics_20261023/README.md`、CONTRACT／REPORT／WORK_HANDOFF；成品與固定回讀 `deliveries/m1-source-diagnostics-20261023/README.md`。正式action_resolution／action_resolution_sources及parent0.3、所有歷史保持，不採平行草稿。
+
+附件研究ZIP本環境不可見；按使用者明示6個獨立URL擷取一次，取得台泥復牌及玉山兩PDF，另3網域代理403，來源／錯誤／xref警告／視讀範圍皆保存。網路最小追加草稿saved但未套用／未發布，沒有重試或繞過。公開說明書SHA精確同使用者指定，只核第1／55頁，非765頁全驗。台泥8/14復牌不單獨證8/13停牌起日，兩缺價日新舊仍UNKNOWN、Raw null、市場開市；不補價／估值。員工6/30登記與7/7基準、原2867預計換股發行、既有2884權利及公司7/27每股1.40報告發放分開，非個人淨收。一般法律API僅合成契約測試，真原件未取得。
+
+30新診斷＋31正式回歸＝61項本輪實測通過；新70窗資格仍70拒算／2不足／8換股影響未支援／真正總淨報酬0。沒有每日帳、六方案或績效。首次字形／欄位交錯解析失敗及一次錯cwd測試匯入失敗皆已保存修正，原件與數字不改。封包新解壓驗證及逐檔GitHub回讀以delivery為準。原策略／引擎／庫／歷史／舊頁ZIP／main完整保留；完整行動減資、7/25後權息、實配／可賣／畸零／既有股東換股影響、台泥最後調整與稅務、淨收及九起日期初權利仍缺，來源完整旗標不能蓋缺口。
+
+無新UI／Android；Raw／五年Adjusted／歷史公布／主檔／SQLite未知、historical_signal_eligible=false、primary_pressure_id=null、policy_authorized=false不變。下一步Work只做來源研究與GitHub唯讀，不bootstrap／工程／測試／commit／push，不開另一Codex寫入工作；完整可貼指令見新WORK_HANDOFF。本既有唯一Codex負責後續工程。禁止端點不重試／繞過，不重問已答規則／比例，不部署付費交易訊息或子代理。以下歷史原文完整保留。
+
+---
+
 # 2026-10-23 Codex｜採用遠端正式0.4並完成本環境驗收
 
 已保留作業期間新增的dae1f6e580f466c4f44cb271a350f4b420d5b5eb正式工程及e3a76eb2eac8dfd50bb5f6b7794fb77d84224b30收據，沒有用本地平行草稿覆蓋。正式程式維持action_resolution／action_resolution_sources；新補充入口 `股票系統M1_v0_18/rotation_research/resolution_validation_20261023/README.md`、REPORT／WORK_HANDOFF，下載與逐檔回讀入口 `deliveries/m1-resolution-validation-20261023/README.md`。原0.3、正式0.4與所有歷史保留。

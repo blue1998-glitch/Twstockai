@@ -1,0 +1,17 @@
+Traceback (most recent call last):
+  File "<frozen runpy>", line 198, in _run_module_as_main
+  File "<frozen runpy>", line 88, in _run_code
+  File "/workspace/Twstockai/股票系統M1_v0_18/rotation_research/source_diagnostics_sources.py", line 241, in <module>
+    main()
+  File "/workspace/Twstockai/股票系統M1_v0_18/rotation_research/source_diagnostics_sources.py", line 230, in main
+    outputs = run()
+              ^^^^^
+  File "/workspace/Twstockai/股票系統M1_v0_18/rotation_research/source_diagnostics_sources.py", line 198, in run
+    catalog = build_catalog()
+              ^^^^^^^^^^^^^^^
+  File "/workspace/Twstockai/股票系統M1_v0_18/rotation_research/source_diagnostics_sources.py", line 173, in build_catalog
+    sid = 'esun-prospectus-20260722'; p = parse_prospectus(texts[sid])
+                                          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/workspace/Twstockai/股票系統M1_v0_18/rotation_research/source_diagnostics_sources.py", line 99, in parse_prospectus
+    raise ValueError('Expected-issuance/target/date scope missing')
+ValueError: Expected-issuance/target/date scope missing
