@@ -1,3 +1,17 @@
+# 2026-10-23 Codex｜離線原件0.6已接入，舊UNKNOWN與淨帳拒算保留
+
+已安全取得遠端f65a894及8aecb50橋接附件，保留先前未收到checkpoint及全部後續。唯一既有Codex工作執行，沒有平行寫入／子代理。原ZIP941229bytes、SHA ecc413ca28fce87085666b87b3c3a6d1bf784ef553b32d2198b8bb72bebeedce、41成員／40manifest皆實核，固定GitHub raw全bytes回讀相同。已全文讀包內CODEX_HANDOFF，重新bootstrap成功（0補缺／7差異保留）後才實作；不再要求手機附件。原前身91項是Work證詞，Codex只獨立驗本橋接40項，不混為已驗前身大包。
+
+新入口 `股票系統M1_v0_18/rotation_research/offline_source_bridge_20261023/README.md`、CONTRACT／REPORT／WORK_HANDOFF；成品／SHA／固定逐檔回讀見 `deliveries/m1-offline-source-layer-20261023/README.md`。獨立offline_source_bridge及source producer精確嵌入parent0.5，原0.5／正式action_resolution 0.4／parent0.3與全部原策略引擎庫歷史成品保持。兩停牌PDF及5法律來源鏈原件離線核驗，原captured_at與新ingested_at分開，announced_at仍null。
+
+新診斷已接1101自2025/8/13、2884自11/5起停牌，僅限明示起日，不推終日／整段或其他股票；保留精確parent原UNKNOWN，Raw null、缺價拒算、execution_qualified=false與無估值不改。1101原8/14復牌另存，2884復牌原件仍缺。真財政部API及官方page／script／query／搜尋鏈已驗，slash日期用新獨立parser，舊合成parser不改。一般函釋不是台泥資金最細來源、個人稅籍／免稅／零稅費或淨入帳。
+
+本輪30新＋重跑61回歸＝91項通過；首輪1個反例失敗揭露標題／內文起日矛盾未拒，已修正並保留紀錄。兩PDF本輪抽字／視讀、重抽bytes同封存；新解壓重驗以delivery為準。新70窗資格仍70拒算／2不足／8換股影響未支援／真正總淨報酬0，daily／journal空，numeric replay及六方案0。缺完整行動減資、7/25後權息、2884直接實配／可賣／畸零／換股影響、台泥最後調整／細項、個人淨額及九起日期初權利，不能靠完整旗標蓋掉。
+
+受拒端點及三網域403未重試，離線來源不代表網域限制解除，草稿未套用。Raw／五年Adjusted／歷史公布／主檔／SQLite未知、historical_signal_eligible=false、primary_pressure_id=null、policy_authorized=false不變，無新UI／Android。下一步Work唯讀補來源，不bootstrap／工程／產品測試／commit／push或開第二個Codex；完整可貼指令見新WORK_HANDOFF，工程仍回此唯一既有Codex。不改main，不部署付費交易訊息或子代理。以下歷史原文完整保留。
+
+---
+
 # 2026-10-23 Codex｜獨立來源診斷0.5，正式0.4保持
 
 本輪唯一Codex寫入；接續0d6e86a並核包含正式dae1f6e，無平行工作／子代理。完整checkout重新bootstrap成功（0補缺／7差異保留）。新入口 `股票系統M1_v0_18/rotation_research/source_diagnostics_20261023/README.md`、CONTRACT／REPORT／WORK_HANDOFF；成品與固定回讀 `deliveries/m1-source-diagnostics-20261023/README.md`。正式action_resolution／action_resolution_sources及parent0.3、所有歷史保持，不採平行草稿。
