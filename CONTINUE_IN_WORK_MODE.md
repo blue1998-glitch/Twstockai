@@ -1,3 +1,17 @@
+# 2026-10-23 Codex｜公司分項來源0.9：股東160200／員工18000仟股
+
+唯一既有Codex接續4f9b106，核包含固定0.8工程，重新bootstrap成功（0補缺／7差異保留）後才工程。官方新增原件／官方及原PDF GitHub請求均0，只重用既存公開說明書，實際重抽／視讀391印刷11、456印刷76；新字節與舊全文對應頁同，xref警告保留，不改PDF、不冒765頁全書核閱。舊Work附件／meta仍未取得／未讀；使用者提供Work本機11:37:58.421958Z僅本機重用陳述，不補官方／GitHub時點或舊Work未知時間。
+
+新入口 `股票系統M1_v0_18/rotation_research/capital_components_20261023/README.md`、CONTRACT／REPORT／WORK_HANDOFF。離線包、SHA／manifest、解壓與固定逐檔GitHub讀回見 `deliveries/m1-capital-components-20261023/README.md`。獨立capital_components純事實／producer精確嵌完整parent0.8，全部舊版本、策略參數／引擎、庫、Raw／UNKNOWN歷史、原件、舊頁成品與main不變。
+
+391頁限113/12/31後、114/12/31前：B9股東160200仟股，N1員工18000仟股；N1股本180000／公積342900／總權益522900為仟元，不借上半部313800仟股。456頁113年度／2025/3/7／29.05公司計算參照，114年度／2026/3/13／33.05另版。160200＋18000＝178200仟股只連parent461頁同家族對帳，新增交易事件／獨立市場樣本0；不由酬勞除面額反推股數、不補Raw或估值、不由年末或總額推個人比率。
+
+本輪29新＋實跑0.8相關31＝60通過，與前輪31新＋29回歸的60範圍不同，解壓同60不累加。首次真原文probe因刪空白黏接前列餘額與年度而失敗，已保留列界修正並保存診斷／回歸，數值未改。producer實核122價量／16日曆並按實際輸入重算70拒算／2不足／8換股影響未支援／合格總淨報酬0，daily／journal空、numeric replay／六方案0，缺價診斷精確等parent。
+
+公司分項股數已於新0.9可知，parent舊null仍留史；個人未圓整／實配／畸零／2025可賣／淨款／期初權利與既有2884換股影響未知。完整行動／7/25後權息、直接復牌、台泥最後調整／最細稅源等缺口保持；execution_qualified=false、估值null、historical_signal_eligible=false、primary_pressure_id=null、policy_authorized=false及Raw／五年Adjusted／歷史公布／主檔／SQLite未知不變。無UI／Android新測，不重試受拒入口／三舊403，不部署付費交易訊息或子代理。下一步Work唯讀補來源，不bootstrap／工程／測試／commit／push或另開Codex；完整可貼指令見新WORK_HANDOFF。以下歷史原文完整保留。
+
+---
+
 # 2026-10-23 Codex｜來源研究0.8：契約條件、持有人與增資分項
 
 原既有唯一Codex接續6a993fd並核包含固定0.7工程，重新bootstrap成功（0補缺／7差異保留）後才工程。重用公開說明書原件，固定GitHub同bytes讀回；只視讀162／163／175／176／461，765頁未全書核閱，xref警告保留。新2026Follow-up精確URL一次HTTP200／56,705bytes／指定SHA一致，一頁已核。Twstockai-v07-Work-source-handoff附件／meta未見，完整報告未讀，Work讀回時間未知；依使用者完整文字及實際原件接入，不要求手機搬檔，不倒填announced_at。
