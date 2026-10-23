@@ -1,3 +1,15 @@
+# 2026-10-23 Codex｜三新官方原件取得，獨立來源0.7完成實測
+
+使用者發布環境並明示再試後，runtime spec4／observed4已核，三個新精確URL各一次全HTTP200，無需人工搬檔。前輪CONNECT403與全部舊受拒入口保留，未改主機／路徑／代理或TLS。重新bootstrap成功（0補缺／7差異保留）後，新增獨立source_followup純事實附層與離線producer，精確嵌入parent0.6，原0.6／0.5／正式action_resolution0.4／0.3及全部策略／引擎／庫／歷史／舊成品／main保持。
+
+入口 `股票系統M1_v0_18/rotation_research/source_followup_20261023/README.md`、CONTRACT／REPORT／WORK_HANDOFF。下載、SHA、全新解壓與固定逐檔GitHub讀回見 `deliveries/m1-source-followup-20261023/README.md`。兩PDF與Work SHA相同，玉山HTML新版本SHA不同已另存實際bytes，不冒Work同檔。期交所只佐證2884復牌，非TWSE普通股直接公告；DN／股票與文件／復牌日期分開，不推停牌終點。玉山公司完成／頁面9/2對正文今(1)日矛盾／董事會160億元批准與保戶對象分存，個人權利未知。台泥2026-01註銷28,000仟股保留月份，不變股東比例減資；半年度餘額不是三事件。財報5,994,545仟元不覆議事錄5,994,545,394元；第7頁抽字空但實有掃描表格。只視讀六頁，非全財報核閱。
+
+本輪29新＋實際重跑0.6相關30＝59項通過；全新解壓同59不累加，舊61／91不冒本輪全重跑。producer重核122原價量檔與16日曆報告，70窗仍拒算／2不足／8換股影響未支援／真正總淨報酬0；daily／journal空、numeric replay／六方案0。舊UNKNOWN與Raw null、execution_qualified=false、imputed_close／valuation null保持，完整公司行動／7/25後權息／直接實配可賣畸零換股影響／最後調整細項／個人淨收及九起日期初權利仍缺。
+
+historical_signal_eligible=false、primary_pressure_id=null、policy_authorized=false及Raw／五年Adjusted／歷史公布／主檔／SQLite未知保持，無UI／Android新驗收。只有此既有唯一Codex寫入，不開平行工作或子代理。下一步Work只來源研究／GitHub唯讀，不bootstrap／工程／產品測試／commit／push；完整可貼指令見新WORK_HANDOFF。新來源可讀不等舊受拒入口解禁，不重試／繞過。不部署、付費、交易或訊息。以下歷史原文完整保留。
+
+---
+
 # 2026-10-23 Codex｜離線原件0.6已接入，舊UNKNOWN與淨帳拒算保留
 
 已安全取得遠端f65a894及8aecb50橋接附件，保留先前未收到checkpoint及全部後續。唯一既有Codex工作執行，沒有平行寫入／子代理。原ZIP941229bytes、SHA ecc413ca28fce87085666b87b3c3a6d1bf784ef553b32d2198b8bb72bebeedce、41成員／40manifest皆實核，固定GitHub raw全bytes回讀相同。已全文讀包內CODEX_HANDOFF，重新bootstrap成功（0補缺／7差異保留）後才實作；不再要求手機附件。原前身91項是Work證詞，Codex只獨立驗本橋接40項，不混為已驗前身大包。
