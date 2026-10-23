@@ -1,3 +1,5 @@
+> 後續環境準備：[NETWORK_REVIEW](../../docs/source-research/20261023_ctbc_acquisition_attempts/NETWORK_REVIEW.md)／[草稿後端讀回](../../docs/source-research/20261023_ctbc_acquisition_attempts/network-draft-review.json)。只新增ecorp.ctbcbank.com，其他設定保留；requires_publish=true，runtime尚未套用、來源GET未重試。下一步留在本原唯一Codex處理正式環境套用與明示單次新授權，無需手機下載上傳。下列原件未取得與全部界線保持。
+
 # CTBC兩次取得受阻紀錄
 
 本輪沒有新CTBC原件、研究包或0.11／新產品ZIP；保留原0.10及全部舊成品。實際保存的是兩次單次GET失敗的meta與接續紀錄。

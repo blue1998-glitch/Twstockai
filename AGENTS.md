@@ -1,3 +1,13 @@
+# 2026-10-23 Codex｜CTBC最小網路草稿已存未套用，等待環境檢閱與發佈
+
+兩個精確URL各一次CONNECT403的完整歸檔已保存固定dd8eae9980c95629ddefe0e7123b14a7efdb8a65並逐檔GitHub原bytes讀回15文件一致，研究包／WORK_RESEARCH_HANDOFF及CTBC原件仍未取得未讀，不建0.11。後續透過正式環境工具讀取草稿，只在原十域外追加ecorp.ctbcbank.com；presets、repository/ref、安裝／啟動、變數／secrets等全不變。status=saved、requires_publish=true，後端再次讀回revision11確認；runtime仍spec4／observed4且CTBC未列允許，草稿未套用或發佈，來源GET沒有重試。
+
+詳 `docs/source-research/20261023_ctbc_acquisition_attempts/NETWORK_REVIEW.md`、network-draft-review.json，以及 `deliveries/m1-ctbc-acquisition-attempts-20261023/README.md`。下一步留在此原唯一Codex：使用者於環境設定檢閱／儲存並發佈後明示授權精確CTBC URL再一次GET，先核runtime變化，未授權／未套用不重試。完整可貼Codex文字在NETWORK_REVIEW，Work唯讀全文指令仍在WORK_HANDOFF；不要求下載上傳、不重試library或其他舊拒絕入口。此為必要設定草稿，不是部署、已通網或原件取得／產品實作。
+
+本輪bootstrap0補缺／7差異保留；無新產品測試／回歸／producer／資格重算／每日帳／六方案／Android，舊53及70／2／8／合格0僅歷史。全部舊來源／版本／策略／引擎／庫／Raw null／UNKNOWN／歷史／成品與main、Fontconfig勘誤與原PDF／JSON／PNG／catalog／ZIP及舊xref保持。execution_qualified=false、imputed_close／valuation=null、historical_signal_eligible=false、primary_pressure_id=null、policy_authorized=false及來源缺口不改。未取得／未讀／未實作／未執行／未測／未讀回分列，不部署付費交易訊息或子代理。以下本輪早期歸檔與歷史原文完整保留。
+
+---
+
 # 2026-10-23 Codex｜研究包與CTBC公開原URL各一次CONNECT403，原件仍未取得
 
 已核遠端af822910及固定0.10 f423447，全部後續保留。新入口 `docs/source-research/20261023_ctbc_acquisition_attempts/README.md`、WORK_HANDOFF、availability及兩份attempts meta；文件固定逐檔讀回見 `deliveries/m1-ctbc-acquisition-attempts-20261023/README.md`。依使用者正式library URL先一次GET，再對新CTBC公開原URL一次GET，兩者皆代理CONNECT階段403；尚無來源HTTP／headers或任何原始bytes，已停、不重試／改主機路徑。空buffer指紋不是原件，不發布空.response冒充來源；未要求手機下載上傳。

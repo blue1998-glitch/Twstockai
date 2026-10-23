@@ -1,3 +1,5 @@
+> 後續更新：已保存僅追加ecorp.ctbcbank.com的環境草稿，requires_publish=true、後端讀回確認，但runtime仍未套用，來源沒有重試。下一步留在原唯一Codex，由使用者正式檢閱／儲存並發佈環境，再明示單次新授權；完整步驟與可貼文字見NETWORK_REVIEW.md／network-draft-review.json。以下Work唯讀指令仍有效，「未改網路設定」描述受拒當時；現在只有未套用草稿，研究包／原件仍未取得。
+
 # 下一輪Work唯讀續接完整指令
 
 最新已核SHA與固定文件提交以deliveries/m1-ctbc-acquisition-attempts-20261023/GITHUB_READBACK.md／JSON及實際分支頭為準。本輪沒有新增0.11或CTBC產品工程。
