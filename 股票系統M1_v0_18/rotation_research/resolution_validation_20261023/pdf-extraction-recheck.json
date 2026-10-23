@@ -1,0 +1,20 @@
+{
+  "status": "PASS_SCOPED_FIELDS_AND_PAGES_EXACT",
+  "source_pdf_sha256": "ec3bf135a859a611a2851b744294af8312e829be192d86995fd9203d63472d14",
+  "original_tool_version": "pdftotext 24.02.0",
+  "current_tool_version": "pdftotext 25.03.0",
+  "whole_document_text_byte_equal": false,
+  "current_text_sha256": "30d80532cc2745b5b922650db557677578afa53ae977388e58c92950b8142f6d",
+  "claimed_pages_byte_equal": [
+    1,
+    3,
+    4,
+    6,
+    7
+  ],
+  "all_resolution_fields_equal": true,
+  "all_treasury_fields_equal": true,
+  "diagnosis": "Two appendix layout changes in current extractor; no claimed page or parsed-field change. Original archive preserved.",
+  "failed_initial_byte_assertion_preserved": "pdf-extraction-first-failure.json",
+  "scope": "CLAIMED_SOURCE_FIELDS_ONLY_NOT_FULL_EVENT_COVERAGE"
+}

@@ -1,3 +1,15 @@
+# 2026-10-23 Codex｜採用遠端正式0.4並完成本環境驗收
+
+已保留作業期間新增的dae1f6e580f466c4f44cb271a350f4b420d5b5eb正式工程及e3a76eb2eac8dfd50bb5f6b7794fb77d84224b30收據，沒有用本地平行草稿覆蓋。正式程式維持action_resolution／action_resolution_sources；新補充入口 `股票系統M1_v0_18/rotation_research/resolution_validation_20261023/README.md`、REPORT／WORK_HANDOFF，下載與逐檔回讀入口 `deliveries/m1-resolution-validation-20261023/README.md`。原0.3、正式0.4與所有歷史保留。
+
+本環境重新bootstrap成功（0補缺／7差異保留）。正式29項＋新增2項＝31項本環境實測通過，並在新封包解壓重驗；原511成員及六層manifest全保留。新解壓正式producer實跑70窗仍拒算、2不足、8換股影響未支援，真正總淨報酬0，numeric replay／六方案0。台泥批准來源與每人總額圓整已接，但假想毛額不是淨額／到款／期初權利，不做net_per_share或股東減資推定。
+
+額外PDF抽字25.03與原24.02全文byte assertion失敗已保存，所用1／3／4／6／7頁及正式解析欄位精確同；不說全文byte equal。一次保存輔助命令誤用工作目錄也已留診斷並改絕對根重核，來源／金融程式不改。本地平行草稿封存未發布，其26測試不是正式交付計數。正式28檔已獨立固定GitHub回讀，本輪新增檔再另固定回讀。
+
+所有原策略／引擎／庫／資料／catalog／頁／ZIP與main保持；完整行動／減資、7/25後權息、2884可賣日／實配／零股與換股影響、台泥最後調整／直接有效稅務來源、個人淨分配／期初權利仍缺。已記錄安全拒絕未重試繞過，缺價原因及Raw／五年Adjusted／歷史公布／主檔／SQLite未知保持，無新UI／Android。下一步Work補來源，工程Codex；完整可貼指令見新WORK_HANDOFF。不重問已答規則／比例、不部署付費交易訊息或子代理。以下原文完整保留。
+
+---
+
 # 2026-10-23 Codex｜獨立來源0.4：台泥通過決議與每人總額圓整
 
 接續遠端d11cd18，保留9e41ea3後全部來源及收據。新入口 `股票系統M1_v0_18/rotation_research/action_resolution_20261023/README.md`、CONTRACT／REPORT／WORK_HANDOFF；封包與固定逐檔回讀見 `deliveries/m1-action-resolution-20261023/`。新worktree重新bootstrap成功，補545／保留7差異；舊工作目錄不改。
