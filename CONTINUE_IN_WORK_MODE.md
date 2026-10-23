@@ -1,3 +1,13 @@
+# 2026-10-23 Codex｜橋接原件尚未收到，工程未啟動
+
+已實核遠端7ae4e80及正式dae1f6e祖先，全部後續保留；本既有唯一Codex工作接續，沒有平行寫入／子代理。最新接收紀錄 `股票系統M1_v0_18/rotation_research/offline_bridge_intake_20261023/README.md`、WORK_HANDOFF與 `deliveries/m1-offline-bridge-intake-20261023/` 固定回讀。重新bootstrap成功（0補缺／7差異保留），原來源0.5／正式0.4／parent0.3及舊成品不改。
+
+指定TWstockai_Offline_Source_Bridge_20261023.zip本體不可見，附件目錄不存在；可見91個ZIP中無指定檔名，檔案庫僅舊v0.17包，搜尋的Permission denied另存。未取得封包bytes、未核其SHA／manifest、未讀其中CODEX_HANDOFF或PDF／真API；使用者摘要及預期SHA不是原件。沒有新增來源版本、產品測試、資格重算、每日帳或六方案。舊61項／70拒算／2不足／8換股未支援／合格0仍是歷史，不算本輪重跑。
+
+下一步需將橋接ZIP本體實際附至同一既有Codex對話，預期SHA ecc413ca28fce87085666b87b3c3a6d1bf784ef553b32d2198b8bb72bebeedce；收到後先核bytes及包內完整交接，再依最新AGENTS重新bootstrap才建立精確parent0.5的新來源附層。所有禁止入口與三網域403未重試，網路草稿未套用，Raw null／舊UNKNOWN與缺價拒算維持。不推停牌終日、不補價、不以一般法規當個人淨額。完整Work唯讀續接見新WORK_HANDOFF；Work不得工程／測試／commit／push或開第二個Codex。策略／引擎／庫／歷史／舊頁ZIP／main保持，無新UI／Android，不部署付費交易訊息或子代理。以下歷史原文完整保留。
+
+---
+
 # 2026-10-23 Codex｜獨立來源診斷0.5，正式0.4保持
 
 本輪唯一Codex寫入；接續0d6e86a並核包含正式dae1f6e，無平行工作／子代理。完整checkout重新bootstrap成功（0補缺／7差異保留）。新入口 `股票系統M1_v0_18/rotation_research/source_diagnostics_20261023/README.md`、CONTRACT／REPORT／WORK_HANDOFF；成品與固定回讀 `deliveries/m1-source-diagnostics-20261023/README.md`。正式action_resolution／action_resolution_sources及parent0.3、所有歷史保持，不採平行草稿。
