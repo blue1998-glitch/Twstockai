@@ -1,3 +1,17 @@
+# 2026-10-23 Codex｜研究包與CTBC公開原URL各一次CONNECT403，原件仍未取得
+
+已核遠端af822910及固定0.10 f423447，全部後續保留。新入口 `docs/source-research/20261023_ctbc_acquisition_attempts/README.md`、WORK_HANDOFF、availability及兩份attempts meta；文件固定逐檔讀回見 `deliveries/m1-ctbc-acquisition-attempts-20261023/README.md`。依使用者正式library URL先一次GET，再對新CTBC公開原URL一次GET，兩者皆代理CONNECT階段403；尚無來源HTTP／headers或任何原始bytes，已停、不重試／改主機路徑。空buffer指紋不是原件，不發布空.response冒充來源；未要求手機下載上傳。
+
+研究包28364bytes／SHA及CTBC647329bytes／SHA僅使用者比對參照；六成員／MANIFEST／WORK_RESEARCH_HANDOFF全文／Work原件meta與Codex新CTBC原件均未取得未讀未驗。製表日、表頭及四筆1101／1101B列尚未由原件核實，未產生已核facts。工程實益待原件，不建0.11、不改catalog／parent null或新產品行為。
+
+歸檔前本環境重新bootstrap成功0補缺／7差異保留，只保存單次錯誤／文件／SHA保留與GitHub讀回，沒有產品新測／回歸／producer／資格重算／每日帳／六方案或Android。歷史53及70／2／8／合格0未冒本輪重跑。Fontconfig勘誤、原PDF／JSON／PNG／catalog／ZIP及舊xref留史不改不重抓；原引擎策略／庫／Raw null／UNKNOWN／歷史成品與main保持。
+
+CTBC若日後取得只公司層級交叉佐證：年度、1101／1101B、對象、日期角色及精度分開，製表非公告／完整覆蓋，捕捉不倒填announced_at，2.0262不覆較精確乙特來源；發放非個人實收，起日前除息權利不自動歸起日後持有人，沒2884列不證無事件，不重計事件／市場樣本。完整來源缺口與execution_qualified=false、imputed_close／valuation=null、historical_signal_eligible=false、primary_pressure_id=null、policy_authorized=false保持。
+
+完整Work唯讀續接指令見新WORK_HANDOFF；未取得／未讀／未實作／未執行／未測／未讀回分列，原唯一Codex工程寫入、不開平行工作／子代理。所有舊拒絕入口及本輪chatgpt.com library／ecorp.ctbcbank.com精確URL均不重試／繞過；未改網路設定、不部署付費交易訊息。以下歷史原文完整保留。
+
+---
+
 # 2026-10-23 Codex｜CTBC研究包未取得；0.10 Fontconfig摘要勘誤
 
 已唯讀核遠端907bc298及固定0.10工程f423447，保留全部後續。新入口 `docs/source-research/20261023_ctbc_intake/README.md`、WORK_HANDOFF及availability／warning-erratum-evidence；文件固定逐檔讀回見 `deliveries/m1-ctbc-intake-20261023/README.md`。本輪未收到新研究包、WORK_RESEARCH_HANDOFF.md或CTBC原件／meta：附件目錄不存在，既有下載只有舊v0.17，遠端路徑及70舊ZIP成員名稱未見；沒有原件URL可取得，未發CTBC請求、未冒網路拒絕。已請求研究包GitHub位置，不要求手機搬檔，工程實益待實際原件核定，不建0.11。
