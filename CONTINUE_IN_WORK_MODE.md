@@ -1,3 +1,15 @@
+# 2026-10-23 Codex｜獨立來源0.4：台泥通過決議與每人總額圓整
+
+接續遠端d11cd18，保留9e41ea3後全部來源及收據。新入口 `股票系統M1_v0_18/rotation_research/action_resolution_20261023/README.md`、CONTRACT／REPORT／WORK_HANDOFF；封包與固定逐檔回讀見 `deliveries/m1-action-resolution-20261023/`。新worktree重新bootstrap成功，補545／保留7差異；舊工作目錄不改。
+
+新增獨立action_resolution及離線producer／0.4 catalog，嵌入精確parent0.3；台泥通過決議、批准來源標籤、每人現金總額至元捨去已接，原提案不覆。兩庫藏股分次報告只盤點，不變股東減資帳；八來源版本非八獨立行動。假想權利股數毛額預覽非淨額／到款／期初權利，稅費／實收／最終比率日期保持未知。
+
+29新定向測試通過；新資格實跑70窗仍拒算、2不足、8換股影響未支援，總淨報酬合格0，numeric replay及六方案0。8份直接補核原件與122價量原件離線再核，無新官方網路請求。來源／精度／權利不足不補零；已記錄阻擋未重試繞過。完整覆蓋、2884可賣日／實配／零股、淨分配／期初權利仍缺。封包重建／解壓驗收依delivery實際紀錄，未測不升完成。
+
+原scope／producer／action_ledger／core／策略參數／庫／資料／歷史／舊catalog頁ZIP及main保持。無新UI／瀏覽器Android，Android NOT_TESTED_NEW_BUILD；舊24／17／44／15及18／9982／Chrome36不冒新重跑。下一步Work補獨立官方來源，工程Codex重新bootstrap；完整可貼指令見新WORK_HANDOFF。最高飛輪目標、Raw／五年Adjusted／歷史公布／主檔／SQLite未知及policy_authorized=false保持。以下原文完整保留。
+
+---
+
 # 2026-10-23 Work｜台泥資本公積現金已核股東會決議；淨到款仍未知
 
 接續9e41ea3e，保留來源0.3及全部後續。新入口 `股票系統M1_v0_18/rotation_research/final_distribution_review_20261023/README.md`、REPORT／facts／WORK_HANDOFF；固定回讀見 `deliveries/m1-final-distribution-review-20261023/GITHUB_READBACK.md`。新checkout bootstrap實際補545／保留7差異；前次兩收據從983b3559及9e41ea3e各讀回一致。
