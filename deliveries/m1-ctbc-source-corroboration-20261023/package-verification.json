@@ -1,0 +1,36 @@
+{
+  "status": "PASS",
+  "scope": "SOURCE_PACKAGE_VERIFICATION_NOT_PRODUCT_TESTS",
+  "filename": "ctbc-codex-source-corroboration-20261023.zip",
+  "bytes": 34078,
+  "sha256": "4617406c67f1c70898561ebbc81b3e303c9e640c7715bf1d57a5479560e71cb6",
+  "members": 14,
+  "crc_unique_safe_paths": true,
+  "manifest_entries_verified": 13,
+  "original_source_bytes": 647329,
+  "original_source_sha256": "ac8340b658018958e500f576bdc7605475cea0f48dac010e2c5251a1750aa310",
+  "offline_command": [
+    "python3",
+    "verify_capture.py"
+  ],
+  "offline_returncode": 0,
+  "offline_result": {
+    "status": "PASS",
+    "scope": "OFFLINE_SOURCE_ARCHIVE_VERIFICATION_NOT_PRODUCT_TESTS",
+    "actual_source_bytes": 647329,
+    "source_sha256": "ac8340b658018958e500f576bdc7605475cea0f48dac010e2c5251a1750aa310",
+    "selected_rows": 4,
+    "six_header_roles_verified": true,
+    "raw_decimal_strings_preserved": true,
+    "preparation_not_announcement": true,
+    "record_and_personal_rights_unknown": true,
+    "exact_source_and_selection_equal": true,
+    "company_scope_only": true,
+    "product_tests_run": 0
+  },
+  "all_members_byte_unchanged_after_recheck": true,
+  "product_tests_run": 0,
+  "product_regressions_run": 0,
+  "producer_or_qualification_rerun": false,
+  "work_archive_obtained": false
+}

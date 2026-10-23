@@ -1,3 +1,17 @@
+# 2026-10-23 Codex｜CTBC單次新授權取得成功；僅來源交叉佐證，不建0.11
+
+已核遠端773b13b3及固定0.10 f423447，保留全部後續。使用者發佈環境並明示單次新授權後，先核runtime spec6／observed6、current=true、unrestricted/enforced，再對精確CTBC URL一次GET取得HTTP200、647329bytes／SHA ac8340b658018958e500f576bdc7605475cea0f48dac010e2c5251a1750aa310，與Work參照相符；沒有轉址／改設定或重試其他受拒入口。新入口 `docs/source-research/20261023_ctbc_capture/README.md`、WORK_HANDOFF、selection／engineering-assessment及raw原件meta；來源小包與固定逐檔讀回見 `deliveries/m1-ctbc-source-corroboration-20261023/README.md`。
+
+實讀六欄／四列與製表115/09/18；1101普通股0.8／1及2026／2025除息／發放日期均與既有events-v04兩事件相符，1101B乙特2.0262另存，不覆更精確來源。只有新交叉來源及最後過戶日盤點，工程實益核定為歸檔即可，不新增帳務事件／獨立樣本、catalog或0.11，不回寫parent null。最後過戶不作基準日，製表非公告／完整覆蓋，捕捉不倒填announced_at，發放非個人實收，起日前除息權利不自動歸起日後持有人；原表無2884列不證無事件。
+
+本輪是新Codex捕捉，不是Work ZIP／完整WORK_RESEARCH_HANDOFF／meta／selection已取得；Work封包仍未取得未讀未驗，未重試library。公開meta遮蔽Set-Cookie值，原HTML bytes不變，不把公開meta冒完整原header bytes。重新bootstrap0補缺／7差異保留；只來源SHA／選列／舊事件核對、來源小包離線重驗與GitHub讀回，無產品測試／回歸／producer／資格重算／每日帳／六方案／Android，舊53及70／2／8／合格0僅歷史不冒重跑。
+
+原0.10／全部parent、策略／引擎／庫／Raw null／UNKNOWN／歷史／成品與main不改。Fontconfig勘誤、原PDF／JSON／PNG／catalog／ZIP與舊xref不重抓重畫；IPO方案非完成、場次矛盾及完整行動減資／區間權息、直接復牌／可交易、個人實配畸零／既有2884影響、台泥最後調整／最細稅源、個人淨額及九期初權利缺口保持。execution_qualified=false、imputed_close／valuation=null、historical_signal_eligible=false、primary_pressure_id=null、policy_authorized=false不變。
+
+下一步Work僅來源／GitHub唯讀，完整可貼指令在新WORK_HANDOFF；不重抓已存CTBC、library或其他舊受拒入口，不因unrestricted解禁。仍只原唯一Codex工程寫入，未取得／未讀／未實作／未執行／未測／未讀回分列，不部署付費交易訊息或子代理。以下原文完整保留，前輪「草稿未套用」為歷史狀態，依本輪runtime6實測更新解讀。
+
+---
+
 # 2026-10-23 Codex｜CTBC最小網路草稿已存未套用，等待環境檢閱與發佈
 
 兩個精確URL各一次CONNECT403的完整歸檔已保存固定dd8eae9980c95629ddefe0e7123b14a7efdb8a65並逐檔GitHub原bytes讀回15文件一致，研究包／WORK_RESEARCH_HANDOFF及CTBC原件仍未取得未讀，不建0.11。後續透過正式環境工具讀取草稿，只在原十域外追加ecorp.ctbcbank.com；presets、repository/ref、安裝／啟動、變數／secrets等全不變。status=saved、requires_publish=true，後端再次讀回revision11確認；runtime仍spec4／observed4且CTBC未列允許，草稿未套用或發佈，來源GET沒有重試。
