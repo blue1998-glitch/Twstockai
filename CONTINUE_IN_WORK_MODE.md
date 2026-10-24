@@ -1,3 +1,15 @@
+# 2026-10-24 Codex｜P0-3用途檢視後顯示0.2：事件／手機繪圖區／日期分欄
+
+最新完整接續 `M1_P03_READABILITY_HANDOFF.md`；成品／直接PNG與固定回讀在 `deliveries/m1-p03-readability-20261024/README.md`。只增量呈現，不改structure_state／reaction_facts／graph_core、角色、狀態、事件、ID、K／MA／MACD及五份原JSON；原0.1工程702e9144與收據34d6f782／全部舊成品保留。新view_version0.2不是來源0.11。
+
+預設事件列直接看日期／收盤／相對三參照／狀態變化；10/12原突破與返回後狀態不足同時說明，未來高點及事件不洩漏。原突破26.95／返回高26.85／研究下緣20.25分開，B88正式price_bounds仍null、後來明示研究角色未升人工正式原箱。手機390有效plot225→309px，價格範圍不變；44px縮放移K／量間，三面板與游標同軸。來源日期逐欄分原價位K／末轉折／確認／原值及角色可知／後來選取；量較前筆以中性量觀察顯示，不稱好壞或新量資格，原核心支持／反面完整保留。既有事件抽屜及人工Raw／Adjusted模式已實作，沿用不重做。
+
+本輪只實跑6個新顯示Python及最終94項本次Chromium三視窗／9下載檢查；與歷史65／94不同批，不累加中間91／91／94或新解壓重驗。首次text helper缺parent的載入失敗與修正留史；舊原件／引擎／0.10全部parent／庫／Raw null／UNKNOWN／main及舊警告不改。不重抓來源、不建來源0.11、不跑producer／每日帳／六方案／獲利或Android，file://不重試。Android NOT_TESTED_NEW_BUILD，全部false/null資格及來源缺口保持。
+
+下一步只交Work看新圖用途差異，完整可貼指令見新handoff；不重問P0-3，不以顯示改善冒自動完整帶／全市場／換股／資金飛輪完成。原唯一Codex工程寫入，無平行工作／子代理，不部署付費交易訊息。以下歷史原文完整保留。
+
+---
+
 # 2026-10-24 Codex｜回到核心：P0-3結構狀態已接入既有人工模式主圖
 
 本輪依最新使用者指令將主線由來源研究轉回已確認核心工程。`manual_basis/`／`manual_basis_chart/`的人工Raw／Adjusted模式切換已有完成，不重做，也不再列未實作；較早「未證／尚未整合」段落保留為其當時狀態。新增 `股票系統M1_v0_18/structure_state/` 純數值P0-3附層及 `structure_state_chart/` 增量主圖，重用reaction_facts三態／路徑與原模式路由；原K／MA／MACD數值樹不改。最新完整接續 `M1_P03_STRUCTURE_STATE_HANDOFF.md`；直接廣角／局部PNG、HTML／JSON／ZIP與固定原bytes讀回見 `deliveries/m1-p03-structure-state-20261024/README.md`。

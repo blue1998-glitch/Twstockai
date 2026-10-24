@@ -1,0 +1,20 @@
+{
+  "initial_status": "FAIL",
+  "initial_failure": "New section used existing text helper without required parent; async loader replaced page with load-error message; test timed out looking for case button",
+  "initial_evidence": "browser-initial-failure.json",
+  "fix": "Supply parent before moving new sections; wait for final display hook",
+  "core_or_data_changed": false,
+  "intermediate_chromium_checks": [
+    91,
+    91,
+    94
+  ],
+  "final_chromium_checks": 94,
+  "counts_not_added": true,
+  "final_python_tests": 6,
+  "old_65_python_94_chromium_not_rerun": true,
+  "visual_followup": "Shortened repeated relation names; moved reference evidence targets outside candles; pre-return unavailable title no longer mislabels first-ever insufficient date as today breakout",
+  "last_title_original_state_changed_on_unchanged_in_json": true,
+  "panel_capture_not_product_tests": true,
+  "physical_android": "NOT_TESTED_NEW_BUILD"
+}

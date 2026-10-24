@@ -1,3 +1,5 @@
+> 顯示最新0.2：讀[READABILITY.md](READABILITY.md)、[本輪實測](validation_readability_20261024/驗收報告.md)及[新版PNG／HTML／JSON／ZIP入口](../../deliveries/m1-p03-readability-20261024/README.md)。原0.1核心、五份JSON及下方舊工程／驗收保持；不是來源0.11，不重跑歷史65／94。
+
 # P0-3：接入既有人工模式研究主圖
 
 [獨立純數值附層](../structure_state/README.md)接到原manual_basis_chart；沿用人工Raw／Adjusted解析、不可fallback、localStorage與JSON選擇紀錄，以及原K／SMA／MACD與全部既有操作。未修改原頁、舊引擎、參數或來源。不是重做整套UI，也不是來源0.11。

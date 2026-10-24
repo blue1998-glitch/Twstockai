@@ -1,3 +1,5 @@
+> 最新P0-3顯示0.2接續root M1_P03_READABILITY_HANDOFF.md及structure_state_chart/READABILITY.md、validation_readability_20261024/驗收報告。只事件可讀性／手機有效繪圖／來源日期及中性量觀察，原核心／JSON／0.1成品完整保留；本輪6 Python／94新腳本Chromium，不與歷史65／94相加。Android未測，下一步只Work看新圖用途差異。下方原文留史。
+
 > 2026-10-24最新：P0-3獨立結構狀態與既有人工模式主圖已接入，讀structure_state/README.md、structure_state_chart/README.md及validation_20261024/驗收報告.md，直接PNG／HTML／JSON／ZIP入口在root deliveries/m1-p03-structure-state-20261024。manual_basis／manual_basis_chart模式切換已實作，不重做；新附層只接受明示來源角色，不等自動選帶或正式策略。真實B88案例是研究角色提案，非人工核定原箱；39新＋26相關Python／94 Chromium實跑通過，Android未測，全部原來源／引擎／庫／歷史限制保持。最新完整Work指令見root M1_P03_STRUCTURE_STATE_HANDOFF.md；下方歷史原文保留。
 
 > 最新獨立人工 Raw／Adjusted 候選主圖在 manual_basis_chart/，外部純解析／保存層在 manual_basis/；先讀 root CONTINUE_IN_WORK_MODE.md 最新節與 manual_basis_chart/README.md／validation_20261022/驗收報告.md。原 0.4.3 及既有引擎／研究數值不改；Adjusted 仍限兩股 283 根現金事件候選，來源缺漏阻擋，Chrome 模擬已驗但 Android 實機未測。最新人工多層箱型判讀另見 root 交接，箱底尚未核定。下方 pressure_chart/ 與其他舊狀態為歷史保留，不覆蓋最新成果。
