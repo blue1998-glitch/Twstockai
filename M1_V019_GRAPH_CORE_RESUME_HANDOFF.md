@@ -1,3 +1,13 @@
+# 2026-10-24 Codex｜資金決策第一階段隔離研究
+
+最新完整接續 `M1_CAPITAL_RESEARCH_PHASE1_HANDOFF.md`；成果`股票系統M1_v0_18/capital_research/`、固定SHA／GitHub讀回在`deliveries/m1-capital-research-phase1-20261024/`。此為使用者新授權工程，沒有改graph_core、P0-3、reaction_facts、manual_basis、量峰、策略參數、schema、庫、來源或舊成品。全部入帳重用action_ledger，非第二套資金帳。三層證據／新資金／移轉與建議／資格／授權分開。
+
+46個唯一新定向測試PASS，原資本支付費用、共同完整權利、多候選預留、交割／未成交／部分成交、未來隔離與事件去重／保存重播均有合成證據；中間40／43及重現不加總。R1有限提案／可行性完成；C/E外部合成數量非最佳比例。R2／F求解、券商額度完整帳、期初應付／既有待成交完整重播明示未實作／拒絕。無真實producer／淨帳／市場六方案／UI／Android新驗證，來源0.10保存70／2／8／0僅核檔未重跑，全部parents／false／null／UNKNOWN及缺口保持。
+
+Astra報告全文未取得未讀，正式工具無Library reader、未HTTP試探或要求搬檔；只依本輪完整指令，不冒讀全文或策略批准。下一步Work唯讀研究契約與正反例驗收；已定義工程仍由原唯一Codex處理，新handoff附完整指令。不重問P0-3／P0-4，不重做模式、不升量峰群為正式線，不重抓已結清band-volume／來源或重試拒入口；不部署下單付費訊息或子代理。以下原文完整留史。
+
+---
+
 # 2026-10-24 Codex｜獨立密集量峰候選研究已實作：群／範圍／同票，不定正式單線
 
 本次是使用者新授權的有限研究工程，入口`M1_VOLUME_PEAK_RESEARCH_HANDOFF.md`、`股票系統M1_v0_18/volume_peak_research/README.md`及`deliveries/m1-volume-peak-research-20261024/README.md`。原完整band-volume讀取已結清，不重取分片／大檔／blob／原10圖／舊ZIP／來源或重驗舊交付。按AGENTS重新bootstrap成功0補缺、7差異保留，遠端3b6fe93及祖先保留；以下較早「只文件歸檔」是當時範圍，不能否定本次明示新需求。

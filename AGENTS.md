@@ -1,3 +1,15 @@
+# 2026-10-24 Codex｜資金決策第一階段：隔離機制工程完成
+
+最新入口 `M1_CAPITAL_RESEARCH_PHASE1_HANDOFF.md`、`股票系統M1_v0_18/capital_research/README.md`／INVENTORY／CONTRACT／REPORT及`deliveries/m1-capital-research-phase1-20261024/README.md`。本輪為使用者明示授權的獨立研究工程，較早「不跑每日帳／六方案」是當時範圍；本輪只跑明標合成帳務機制，不跑真實績效或解除來源拒算。起始遠端392b94a4保留1085b17／3b6fe93及全部後續，bootstrap0補缺／7 baseline差異保留。
+
+新增純數值決策／R1有限全配置提案／成交adapter及CLI，三層判斷、共同資本權利、多候選預留、成本交割／部分未成交、事件相依與保存重播分開。所有入帳重用未改action_ledger，不建第二帳。R2／F完整求解、券商額度帳務、期初應付／既有待成交完整重播明示未實作／拒絕；決策預算可盤點，不能冒重播支援。C/E為外部合成數量提案，沒有最適比例或固定批數正式規則。
+
+46個新定向方法PASS，初輪40含1案例假設失敗及43中間批／CLI／新解壓不累加；舊測試0、真實producer／每日帳／市場六方案0、無UI／Android。原0.10保存檔核對仍70拒算／2不足／8換股影響／合格總淨0，這是保存狀態，不是本輪producer重跑。所有舊來源版本／parents／原件／null／UNKNOWN、警告、策略參數／引擎／schema／庫／頁及main保持。
+
+Astra報告libfile_8ae424394ee88191a64125c72ffdaee6全文未取得未讀：正式工具無Library reader，未HTTP試探或要求搬檔；本輪依使用者完整指令，不把摘要當報告。全部數值均合成，不宣稱市場績效／圖形品質或正式授權；全部資格false、主壓力null。下一步Work唯讀研究驗收，工程仍只原唯一Codex；完整兩模式接續見新handoff。已結清band-volume／舊來源不重取，受拒入口不重試，不重問P0-3／P0-4或重做人工模式；不部署下單付費訊息或子代理。以下原文完整留史。
+
+---
+
 # 2026-10-24 Codex｜獨立密集量峰候選研究已實作：群／範圍／同票，不定正式單線
 
 本次是使用者新授權的有限研究工程，入口`M1_VOLUME_PEAK_RESEARCH_HANDOFF.md`、`股票系統M1_v0_18/volume_peak_research/README.md`及`deliveries/m1-volume-peak-research-20261024/README.md`。原完整band-volume讀取已結清，不重取分片／大檔／blob／原10圖／舊ZIP／來源或重驗舊交付。按AGENTS重新bootstrap成功0補缺、7差異保留，遠端3b6fe93及祖先保留；以下較早「只文件歸檔」是當時範圍，不能否定本次明示新需求。

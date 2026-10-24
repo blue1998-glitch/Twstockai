@@ -1,0 +1,26 @@
+{
+  "unresolved_failures": [],
+  "events": [
+    {
+      "stage": "initial_smoke",
+      "error": "Exact numeric source string required",
+      "cause": "Passed internal Decimal arithmetic to graph_core strict source-string number",
+      "fix": "Separate internal Decimal handling; external floats still refused"
+    },
+    {
+      "stage": "initial_40_methods",
+      "error": "expected 60 total B shares but actual 99",
+      "cause": "Split buy orders allowed 49-share first order from initial settled cash before second observation; test expectation mixed observation capacities",
+      "fix": "Explicit zero capacity on first B observation; same-observation shared capacity 60 verified",
+      "production_code_changed_for_this_failure": false
+    },
+    {
+      "stage": "read_only_real_gate_probe_initial",
+      "error": "Ledger event components must bind exact catalog version",
+      "cause": "Old 0.1 probe events paired with formal 0.10/0.4 catalog",
+      "fix": "Use exact existing formal resolution events/sources/inventory bindings; gate then refuses incomplete accounting as intended",
+      "original_contract_relaxed": false
+    }
+  ],
+  "warning": "No old PDF, Fontconfig, xref or source warnings were removed"
+}
