@@ -1,3 +1,13 @@
+# 2026-10-24｜Work完整band-volume讀取已結清：本輪僅文件歸檔
+
+Work已實際取得固定6d35b7f0e8aefa8d28f1640d0619b28754c4024f全部16片，逐片bytes／SHA相符；按order原bytes零分隔串接4,102,710bytes／SHA256 `03961ba8e322a4a1d2cfde52eeb4840f39b4540b2ad61fec8e55c27328621384`，完整JSON成功解析並遍讀物件樹：10根鍵、1213日期快照、2021-10-18～2026-10-16。這是使用者轉交的Work實際結果，不是Codex本輪重驗或新產品／來源／核心驗收。**完整band-volume.json的未取得／未讀項已結清，不再重取。**
+
+歸檔與完整Work唯讀續接指令見[本輪紀錄](docs/work-reviews/20261024_band_volume_read_closure/README.md)及同目錄work-observation.json；固定文件原bytes讀回收據另存GITHUB_READBACK.md／JSON，避免自指。沿用已看10圖、五項用途及五JSON證據；不重抓分片／原大檔／blob／圖／ZIP／來源，不重跑bootstrap、舊驗證、32 Python／88 Chromium、producer或指標，不新增產品版本、來源0.11、catalog或策略門檻。
+
+全部parent、策略／引擎／庫、Raw null／UNKNOWN、P0-3狀態／事件／ID、角色與價格參照、歷史／舊成品／main及警告保持。各項false/null資格、Android NOT_TESTED_NEW_BUILD及來源／個人權利缺口保持；file://及全部受拒入口不重試，不跑每日淨帳／六方案或稱已驗獲利。只交Work唯讀承接；沒有新具體需求就交付目前成果，不再為相同讀取結果往返歸檔，不自行新增工程階段。以下原文留史；其中「待取得完整JSON／再看原10圖」不再是目前待辦。
+
+---
+
 # 明示研究帶最大量已接線：交回Work看用途差異
 
 固定工程及最新已核SHA見deliveries/m1-explicit-band-volume-20261024/GITHUB_READBACK MD／JSON及最終回覆，收據另存避免自指。開始f9f71f5、原顯示ebe27cb3、原P0-3核心702e9144保持。
