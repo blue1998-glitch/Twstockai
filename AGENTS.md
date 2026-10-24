@@ -1,3 +1,17 @@
+# 2026-10-24 Codex｜獨立密集量峰候選研究已實作：群／範圍／同票，不定正式單線
+
+本次是使用者新授權的有限研究工程，入口`M1_VOLUME_PEAK_RESEARCH_HANDOFF.md`、`股票系統M1_v0_18/volume_peak_research/README.md`及`deliveries/m1-volume-peak-research-20261024/README.md`。原完整band-volume讀取已結清，不重取分片／大檔／blob／原10圖／舊ZIP／來源或重驗舊交付。按AGENTS重新bootstrap成功0補缺、7差異保留，遠端3b6fe93及祖先保留；以下較早「只文件歸檔」是當時範圍，不能否定本次明示新需求。
+
+新增與正式產品分離的純數值研究core＋小原料IO builder；重用原BINDING、fingerprint、compare及volume_facts最大量／全部同量日。完整跨度群max<=min*r，列全部不能擴張集合、全部同票與重疊原柱，不貪婪取唯一；平台潛在等量保存原日並拒判，不取首日。k=1/2/3、r=1.10/1.15/1.20僅明示研究探針；正式representative_volume_line維持NOT_IMPLEMENTED/null，明示合法原柱anchor最多PROPOSAL_NOT_APPROVED，真實九組全null。
+
+真實1101 Raw B88155保存成員，k3/r1.15重現21確認研究峰、13最大群、全部5同票群各7筆；異常最大量98217134原柱完整保留，最後展示群對10/16量差+3239107，對原最大差-40779250，未判好壞／突破成敗。7/9在k3少一筆來源內右窗保留待確認，不冒最終完整峰集合；全部來源／基底／版本、時點／截止、原K、群端點及精確比較可追溯。B88正式區界／成員資格仍null，不是自動完整帶或主壓力認證。
+
+最終37項新測試PASS（33合成工程方法＋4真實保存來源方法），獨立子集合窮舉、平台／同票／重疊、極大量、零缺值、精確邊界、來源／基底與指紋衝突、知時及整個結果未來隔離均覆蓋；31／36中間批及新解壓重現不累加。只讀庫內12月小原件，meta未記HTTP保持null，原捕捉／本地重用／新研究選取分存；不是新來源GET／完整史artifact重驗。原graph_core、P0-3、band_volume.py、UI、指標、策略／庫／行情及舊產物未改，舊32／88、producer／每日帳／六方案未跑。無新UI，Android NOT_TESTED_NEW_BUILD、file://不重試。
+
+來源0.10及全部parent、不建來源0.11／catalog、不回寫null；Raw／UNKNOWN、歷史、main、警告、全部來源／個人權利缺口及各項false/null資格保持，不補零／行情／前價／估值，不公開私人原件、不重試受拒入口。只交Work看本輪有限研究輸出，不宣稱辨識品質或獲利已驗，不強迫正式單線／最適參數；完整可貼指令在新handoff。原唯一Codex工程寫入，不部署付費交易訊息或子代理。以下原文留史。
+
+---
+
 # 2026-10-24 Codex｜明示研究段最大量已接入：不改P0-3、不估密集量峰
 
 最新接續M1_EXPLICIT_BAND_VOLUME_HANDOFF.md，成品及固定原bytes收據入口deliveries/m1-explicit-band-volume-20261024/README.md。原段量helper已存在，本輪只補來源／可知資格及主圖對照：沿graph_core保存candidate.volume（不重跑analyze／_volume）、pressure_chart.volume_facts、candle_region_chart.envelope、reaction_facts.compare／make_input，無平行最大量算法。新reaction_facts/band_volume.py純接線、build_volume外部IO、band_volume.js只呈現；原P0-3／指標／模式路由及五JSON、角色／狀態／事件／ID保持。
