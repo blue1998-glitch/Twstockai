@@ -1,0 +1,1 @@
+本三包為完整離線專案，各含部分檔案，全部解壓到同一資料夾。既有資產已附，不需舊版ZIP；不要執行bootstrap覆蓋來源。先讀 CONTINUE_IN_WORK_MODE.md。候選HTML在 股票系統M1_v0_18/product_candidate/generated/。若是Git checkout才需從repository root執行 python3 codex/bootstrap_m1.py --hydrate-missing。原manifest為歷史基準，合法差異另有報告；本次精確檔案hash用 PROJECT_FILE_MANIFEST.json。核心產品與Android實機仍未驗收。

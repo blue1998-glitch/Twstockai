@@ -1,0 +1,147 @@
+{
+  "schema": "b-basis-source-comparison/0.1",
+  "base_commit": "17a480ec770bfbeb0c179115a48d99a4647b978c",
+  "observed_on_taipei": "2026-10-22",
+  "research_cutoff": "2026-07-24",
+  "window_start": "2026-01-02",
+  "saved_bars": 133,
+  "saved_source": {
+    "path": "docs/visual-discussion/20261020_independent_source_levels_work_review/source-data-2884.json",
+    "git_blob": "074a7e4668f3f1bb0f91045e6dba3d1988c34661",
+    "sha256": "ab87a51b5b8afd076603f290b10f415bd60d31ae47c5ab2f6d9d609ad4014901"
+  },
+  "event": {
+    "資料日期": "115年07月01日",
+    "股票代號": "2884",
+    "股票名稱": "玉山金",
+    "除權息前收盤價": "34.45",
+    "除權息參考價": "33.05",
+    "權值+息值": "1.400000",
+    "權/息": "息",
+    "漲停價格": "36.35",
+    "跌停價格": "29.75",
+    "開盤競價基準": "33.05",
+    "減除股利參考價": "33.05",
+    "詳細資料": "2884,20260701",
+    "最近一次申報資料 季別/日期": "115年第2季(https://mops.twse.com.tw/mops/web/t163sb01)",
+    "最近一次申報每股 (單位)淨值": "17.40",
+    "最近一次申報每股 (單位)盈餘": "1.32"
+  },
+  "event_status": "PRIMARY_TWSE_EVENT_ROW_CAPTURED_AND_PRICE_RECONCILED",
+  "action_table_limits": [
+    "股利資料自民國92年5月5日起開始提供",
+    "如果無該項配股率則用'0'帶入",
+    "開盤競價基準：當不含現金增資除權時，取最接近除權息參考價之檔位價，遇含現金增資除權時，則取最接近減除股利參考價之檔位價。",
+    "權值+息值=除權息前收盤價-除權息參考價",
+    "自民國100年3月28日起，除權息前一交易日如無收盤價格，以本公司營業細則第58-3條第2項第2款之原則所決定價格替代。",
+    "本表不含除息併案辦理退還股款減資或分割減資之資料。",
+    "本表所列股票、臺灣存託憑證、ETF、受益證券等財報資料，係發行公司最近一次申報資料，僅供參考，實際資料仍以公開資訊觀測發行公司公告資料為準，網址為：<a href='https://mops.twse.com.tw' target=_blank title='點擊前往公開資訊觀測站(另開新視窗)'>點擊前往公開資訊觀測站</a> 。ETF、受益證券無每股 (單位)盈餘，以「N/A」表示；特別股同普通股最新申報資料。"
+  ],
+  "fresh_raw_checks": {
+    "records": 38,
+    "ohlcv_fields": 190,
+    "all_equal": true
+  },
+  "candidate_method": {
+    "id": "b-single-cash-event-backward-ratio-research/0.1",
+    "formula": "(previous_close-cash_dividend)/previous_close; multiply pre-event OHLC only",
+    "prior_method_context": "Existing adjustment-0.1-cash-only-candidate sample formula; no original engine execution or modification",
+    "factor": "0.95936139332365747460087082728592162554426705370102",
+    "precision": 50,
+    "event_effective": "2026-07-01",
+    "volume": "ORIGINAL_NATIVE_SHARES_UNCHANGED",
+    "complete_adjusted_history": false,
+    "product_policy_approved_method": false,
+    "historical_signal_eligible": false
+  },
+  "references": [
+    {
+      "source_date": "2026-02-26",
+      "source_field": "high",
+      "raw": "35.50",
+      "candidate": "34.057329462989840348330914368650217706821480406386",
+      "first_later_close_above_after_action_or_source": "2026-07-06",
+      "role": "MANUALLY_SPECIFIED_ORIGINAL_HIGH_NOT_AUTOMATIC_CONFIRMED_TURN_OR_FORMAL_BAND"
+    },
+    {
+      "source_date": "2026-07-17",
+      "source_field": "high",
+      "raw": "35.50",
+      "candidate": "35.50",
+      "first_later_close_above_after_action_or_source": "2026-07-20",
+      "role": "MANUALLY_SPECIFIED_ORIGINAL_HIGH_NOT_AUTOMATIC_CONFIRMED_TURN_OR_FORMAL_BAND"
+    }
+  ],
+  "market": {
+    "series": "TWSE_TAIEX_CLOSE_CONTEXT_ONLY_NOT_APPROVED_POLICY_INDEX",
+    "records": 133,
+    "first": {
+      "date": "2026-01-02",
+      "close": "29349.81"
+    },
+    "last": {
+      "date": "2026-07-24",
+      "close": "43654.84"
+    },
+    "window_high_close": {
+      "date": "2026-06-22",
+      "close": "47741.51"
+    },
+    "last_vs_window_high_percent": "-8.5599931799392185123595797451735397560739071721860",
+    "last_vs_first_percent": "48.739770376707719743330536040948817045152932846920",
+    "regime": "NOT_ESTABLISHED",
+    "preferred_basis_under_policy": null,
+    "no_20_percent_or_MA_threshold_created": true
+  },
+  "earlier_2025_table": {
+    "2884_rows": [
+      [
+        "114年07月22日",
+        "2884",
+        "玉山金",
+        "34.20",
+        "32.67",
+        "1.527222",
+        "權息",
+        "35.90",
+        "29.45",
+        "32.65",
+        "32.67",
+        "2884,20250722",
+        "115年第2季(https://mops.twse.com.tw/mops/web/t163sb01)",
+        "17.40",
+        "1.32"
+      ]
+    ],
+    "no_oct27_action_cause_established": true,
+    "nov6_flag_not_explained": true
+  },
+  "scope": {
+    "official_event_row_newly_verified": true,
+    "full_corporate_action_chain": "NOT_AUTHENTICATED",
+    "historical_publication_time": "NOT_AUTHENTICATED",
+    "historical_signal_eligible": false,
+    "formal_structure": "NOT_VALIDATED",
+    "usefulness": "NOT_ESTABLISHED",
+    "android": "NOT_TESTED_NEW_BUILD",
+    "capital_loop": "NOT_EVALUATED",
+    "original_source_gaps": {
+      "actions_coverage": "UNVERIFIED_NO_NEW_ACTION_AUTHENTICATION",
+      "calendar_status": "PLANNED_PLUS_REVIEWED_EXCEPTIONS_ONLY_NOT_EXHAUSTIVE",
+      "historical_publication_timing": "UNVERIFIED",
+      "known_calendar_missing_dates": [
+        "2022-01-27",
+        "2022-01-28",
+        "2023-08-03",
+        "2024-07-24",
+        "2024-07-25",
+        "2024-10-02",
+        "2024-10-03",
+        "2024-10-31",
+        "2025-11-05"
+      ]
+    },
+    "old_raw_findings_retained": true,
+    "automatic_policy_switch_implemented": false
+  }
+}

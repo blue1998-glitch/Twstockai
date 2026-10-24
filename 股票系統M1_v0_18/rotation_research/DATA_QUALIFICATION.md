@@ -1,0 +1,72 @@
+# 2026-10-23 Codex｜採用遠端正式0.4並完成本環境驗收
+
+已保留作業期間新增的dae1f6e580f466c4f44cb271a350f4b420d5b5eb正式工程及e3a76eb2eac8dfd50bb5f6b7794fb77d84224b30收據，沒有用本地平行草稿覆蓋。正式程式維持action_resolution／action_resolution_sources；新補充入口 `股票系統M1_v0_18/rotation_research/resolution_validation_20261023/README.md`、REPORT／WORK_HANDOFF，下載與逐檔回讀入口 `deliveries/m1-resolution-validation-20261023/README.md`。原0.3、正式0.4與所有歷史保留。
+
+本環境重新bootstrap成功（0補缺／7差異保留）。正式29項＋新增2項＝31項本環境實測通過，並在新封包解壓重驗；原511成員及六層manifest全保留。新解壓正式producer實跑70窗仍拒算、2不足、8換股影響未支援，真正總淨報酬0，numeric replay／六方案0。台泥批准來源與每人總額圓整已接，但假想毛額不是淨額／到款／期初權利，不做net_per_share或股東減資推定。
+
+額外PDF抽字25.03與原24.02全文byte assertion失敗已保存，所用1／3／4／6／7頁及正式解析欄位精確同；不說全文byte equal。一次保存輔助命令誤用工作目錄也已留診斷並改絕對根重核，來源／金融程式不改。本地平行草稿封存未發布，其26測試不是正式交付計數。正式28檔已獨立固定GitHub回讀，本輪新增檔再另固定回讀。
+
+所有原策略／引擎／庫／資料／catalog／頁／ZIP與main保持；完整行動／減資、7/25後權息、2884可賣日／實配／零股與換股影響、台泥最後調整／直接有效稅務來源、個人淨分配／期初權利仍缺。已記錄安全拒絕未重試繞過，缺價原因及Raw／五年Adjusted／歷史公布／主檔／SQLite未知保持，無新UI／Android。下一步Work補來源，工程Codex；完整可貼指令見新WORK_HANDOFF。不重問已答規則／比例、不部署付費交易訊息或子代理。以下原文完整保留。
+
+---
+
+# 2026-10-23 Codex｜來源0.3適用對象／版本核對已實作
+
+接續983b3559，保留354a9c01以來全部後續；新入口 `股票系統M1_v0_18/rotation_research/action_scope_20261023/README.md`、REPORT／CONTRACT／WORK_HANDOFF，ZIP／固定GitHub逐檔核對見 `deliveries/m1-action-scope-20261023/README.md`。原事件帳、來源0.2、Work核對小包及P1-7保持；下方是歷史。
+
+重新bootstrap成功（0補缺／7差異保留）。新純數值action_scope與離線source producer接入六官方原件，提升2884直接公開比例精度並分開issuer／受領原股／事件／版本／instrument／日期角色。三商壽0.2486／0.2596與Q&A只屬原2867股東，不配給既有2884；9/1證書上市及零股／匯費不補2025股利。台泥0.8資本公積仍提案，不補最終來源／淨稅費。新觀察時點與文件自載日期分開，announced_at仍null。
+
+24新定向測試通過，122價量原件與舊輸入再核；新資格實跑70研究窗＋1probe，70拒算／2不足，其中8窗增加換股影響不支援原因。原每日numeric replay與六方案重跑0，真正總淨報酬合格0；5來源版本屬3文件家族，非5獨立事件。input自行改完整旗標亦不能蓋過catalog來源不足；不省略已知公司行動或假定既有2884無影響。
+
+完整行動／減資及7/25後權息、未圓整實配／2025可賣日／零股、台泥最終決議／細項法規、淨分配及期初權利仍缺。MOPS／權息端點／TWTAUU／file://／NHI403均未重試繞過，缺價原因未知不補價；本輪無新官方網路／UI／瀏覽器Android，Android NOT_TESTED_NEW_BUILD。原producer／action_ledger／core／策略參數／庫／歷史／舊catalog頁面及ZIP／main不改，舊17／44／15及18／9982／Chrome36未重跑。下一步Work補來源，工程Codex；完整可貼指令見新WORK_HANDOFF。不重問P0～P1、不定全換／分批、不部署付費交易訊息或子代理，Raw／五年Adjusted／歷史公布／主檔／SQLite未知保持。以下原文完整保留。
+
+---
+
+# 2026-10-22 Codex｜官方公司行動來源0.2：2884面額／公司發放報告已補
+
+接續6185297e，保留全部先前成果；新入口 `股票系統M1_v0_18/rotation_research/official_actions_20261022/README.md`、REPORT／CONTRACT／WORK_HANDOFF。新ZIP及固定GitHub逐檔核對見 `deliveries/m1-official-actions-20261022/README.md`。原0.1、日曆、P1-7及舊包全部保持；下方是歷史。
+
+本環境重新bootstrap成功（0補缺／7差異保留），runtime spec3新域已列允許；實際取得玉山兩官方PDF。2025會議同次增資面額10元、最終公開股票股利金額0.10015129／10導出0.010015129股／原股；僅公開金額精度推導，非已核未圓整最終比例／個人實配。公司後續報告8/27發放完畢不是個人淨到款／新股可交易日；零股政策已存但期限／實際處置未核。新catalog0.2補一個原股票組件，四現金組件不動，announced_at仍null；新觀察時點不倒填舊可知時點。
+
+新17定向測試通過，122價量原件重核、70研究窗仍拒算、2不足，真正總淨報酬合格0；無新六方案回放／排名。MOPS入口HTTP200卻為明確安全拒絕，原件保存、不重試繞過；原權息禁端點／TWTAUU／file://限制保留。完整行動／減資及2026/7/25後權息、2884可交易日／精確實配與零股、淨分配／期初權利仍缺。沒有把公司完成報告當投資人績效。
+
+初次表格抽字／測試oracle失敗及修正均留檔；本輪無UI／瀏覽器／Android，Android仍NOT_TESTED_NEW_BUILD，前輪44／15及18／9982／Chrome36未重跑。原core／action_ledger／策略參數／庫／歷史／舊頁／舊ZIP及main保持，不重問已答P0～P1，不改全換／分批研究資格，不部署付費交易訊息或子代理。下一步Work補可核官方來源；需要工程用Codex，完整可貼指令見新WORK_HANDOFF。Raw／五年Adjusted、歷史公布／主檔與SQLite未知持續。以下原文完整保留。
+
+---
+
+# 本輪最新：官方來源資格補充（原交付完整保留）
+
+先讀 [source_qualification_20261022/README.md](source_qualification_20261022/README.md)、REPORT／SOURCE_CONTRACT／WORK_HANDOFF。新15項測試及16官方月報317市場日／473曆日核對通過，只解除70窗口的日曆缺口；全部仍因公司行動／淨分配／期初權利拒算，2窗口不足，總淨報酬合格0。原action帳44與P1-7測試未重跑。兩個官方來源網域設定草稿已保存但未套用，需環境設定檢閱後再核特定來源；HTTP307及未核配股等保持。成品／逐檔GitHub收據：根deliveries/m1-source-qualification-20261022/。下一步Codex補可核來源，不重問已答策略或擅加門檻；舊引擎／數據／ZIP及main保持。
+
+---
+
+# 2026-10-22 新增獨立事件帳（原0.1保留）
+
+請先讀 [action_data_20261022/README.md](action_data_20261022/README.md)、[實測報告](action_data_20261022/REPORT.md) 及 [契約](action_data_20261022/CONTRACT.md)。新action_ledger／sources／CLI／study獨立實作，44新測試通過，122原件與舊輸入核對一致；70原研究窗全部拒算，真正總淨報酬比較合格窗0，無六方案重算或策略認可。舊18／9982／Chrome36是下方歷史，未在本輪重跑。下一步Codex補完整官方事件／淨分配／日曆／期初權利；完整來源缺口、新成品與接續在新入口。下方只描述舊版本資格，不把「尚未實作舊core會計」混為新獨立模組未實作。
+
+---
+
+# 實際資料資格核對
+
+本輪只使用目前分支保存的TWSE原始逐月回應，不把模擬圖片放入行情。完整來源路徑、SHA256、官方URL及擷取時間在generated/sources.json；兩股共122份逐月原件，含資料窗外原件，逐份與meta及Git來源快照核對。數值輸入僅保留2025-07-01～2026-10-16，兩股各317筆日期；股數不乘1000，RAW不混還原價。
+
+|資格|本輪證據與結果|
+|---|---|
+|原件一致性|122份原件SHA與meta一致，且與9dd0554f Git blob逐位元一致。|
+|日期／缺值|兩股保存日期相符；1101 2025-08-13及2884 2025-11-05原為零量／無報價，轉null保留；需要該筆的窗拒算，不補價。|
+|交易日完整性|相符日期不等於官方完整日曆。原專案已知缺日及非窮盡休市驗證仍保持。|
+|歷史公開時間|主要擷取在2026-10-16／18，歷史決策日實際當時可下載的版本未驗。只能驗數學前綴，不稱當時可實盤交易。|
+|公司行動|pressure_chart/data/history-20261018/company-action-evidence.json 對1101與2884仍列UNVERIFIED；後續2884單次事件的已核證據保持，不等於完整覆蓋。|
+|公司頁／交易所日期|本輪再讀玉山官網英文股東頁，2026列1.4元、發放7/27，但表頭Ex Date下顯7/7；既有B研究已區分公司基準日與交易所7/1事件日。不得將公司表欄直接當交易日或覆蓋原已核原件。|
+|舊端點失敗|event_audit/raw/twse_ex_results_2026.json.meta.json保留HTTP307；遵守子AGENTS，不重試／繞過曾安全拒絕的除權端點。|
+|證券種類|只沿用專案兩個已知上市普通股研究範圍，沒有新全市場普通股主檔認證，不宣稱含上櫃。|
+|成交可行性|僅日OHLC與全日量，無集合競價簿、券商額度、價差及逐筆量，不能認證次筆開盤可全額成交。|
+
+成本官方依據：證交所投資指南，手續費由券商自行訂定，普通股票賣出價金課0.3%；交割通常T+2。本研究採0.1425%／最低20／整元向上取整及滑價10、30bps是明示情境，非使用者實際成交費率。T+2現金情境亦只用保存日序號，不冒稱已認證交割日曆。
+
+本輪2026-10-22讀取的官方頁：
+- https://www.twse.com.tw/zh/about/company/guide.html
+- https://www.twse.com.tw/zh/clearing/clearing/operations.html
+- https://www.esunfhc.com/en/investor-relations/shareholders/shareholder-Information
+
+結果：`CONDITIONAL_PRICE_ONLY_NOT_TOTAL_RETURN`。strict模式拒絕公司行動／日曆／歷史可得未核資料，非空公司行動表亦拒絕，避免尚未實作的股利會計被靜默忽略。不是因讀到公司單次股利就可以宣稱期間沒有其他事件。下一必要工程是具來源／生效／可知／發放時間的事件帳與股利應收、配股、減資，再對真正合格窗口驗證總淨報酬；不是先增加換股規則。

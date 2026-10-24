@@ -1,0 +1,46 @@
+{
+  "schema": "m1-common-span-hypotheses/1",
+  "implemented_representation": [
+    "Completed close turns require opposite later unequal close; initial/final unconfirmed extrema excluded.",
+    "All contiguous sequences of at least two completed alternating legs with strictly positive shared endpoint-price width retained. Two is the mathematical minimum for both directions, not a production formation threshold.",
+    "Every exact leg sequence has immutable candidate ID and birth time. Available-maximal status is cutoff-local and may change as longer sequences become available.",
+    "Shared physical legs, overlapping core prices and formal structure membership are separate relationships.",
+    "Old saved revisit witnesses link only if anchor price lies in core and their three visits occur within path plus right-evidence window by candidate birth. Shared source does not supply independent votes."
+  ],
+  "finite_results": {
+    "A_Oct6_core": [
+      "44.85",
+      "45.35"
+    ],
+    "B_Apr28_cores": [
+      [
+        "32.75",
+        "33.00"
+      ],
+      [
+        "32.45",
+        "32.55"
+      ]
+    ],
+    "B_shared_path_formal_merge": null,
+    "ABC_next_core_known_on": "2025-06-12",
+    "G2_full_available_maximal_local_cores": 20
+  },
+  "constraints": [
+    "A core or raw envelope is not an approved box bound.",
+    "Current close need not be in a local core for a larger confirmed interval to exist.",
+    "G2 and ABC may contain different local cores; no universal single-core requirement.",
+    "May13 raw wick31.40 is retained in right evidence and source even if outside close cores.",
+    "No minimum core width, ranking, probability, volume qualification, formal endpoint or trading rule added."
+  ],
+  "source_gaps": "Do not form turns, legs or zones across original listed missing dates; prior manual G2 coverage stays source-qualified.",
+  "north_star": "Read and preserve the three newer goal-document commits through92cd074. Research supports future traceability of structure/risks; effectiveness for capital growth flywheel NOT_EVALUATED.",
+  "storage": {
+    "driver_runs": 2,
+    "gzip_bytes_in_order": [
+      1745280,
+      125503
+    ],
+    "change": "Lossless immutable object tables plus prior witness references/current snapshot; current views, relations and joins independently reconstructed."
+  }
+}

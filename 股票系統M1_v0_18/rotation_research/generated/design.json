@@ -1,0 +1,36 @@
+{
+  "source_commit": "9dd0554f723cb598f9c88f2e0928dead28fa6166",
+  "selection": "FIRST_SAVED_SESSION_OF_EACH_MONTH_BOTH_DIRECTIONS",
+  "cutoffs": [
+    "2026-01-02",
+    "2026-02-02",
+    "2026-03-02",
+    "2026-04-01",
+    "2026-05-04",
+    "2026-06-01",
+    "2026-07-01",
+    "2026-08-03",
+    "2026-09-01"
+  ],
+  "horizons": [
+    5,
+    10,
+    20,
+    40
+  ],
+  "development_period": "2026-01..2026-04",
+  "temporal_holdout": "2026-05..2026-09",
+  "holdout_status": "TEMPORAL_PARTITION_ONLY_NOT_GENUINELY_UNSEEN_MARKET_VALIDATION",
+  "parameter_selection": "FIXED_BEFORE_THIS_RUN_NO_BEST_PARAMETER_SELECTION",
+  "proxies": "20 prior daily highs/lows, not approved structure",
+  "plans": {
+    "hold": "retain original A shares",
+    "full": "sell A at next open; buy B with modeled available cash",
+    "staged25": "25% initial A shares per new B price/volume evidence, up to 4 steps",
+    "staged50": "50% initial A shares per new B price/volume evidence, up to 2 steps",
+    "cash": "sell A at next open; no reinvestment/interest",
+    "delay5": "retain A five additional sessions; full switch on session 6"
+  },
+  "staging_event": "prior close > frozen B proxy AND prior close > previous close AND prior volume > previous volume",
+  "sensitivity": "10/30 bps slippage and settled-cash T+2 variant at 20 sessions"
+}

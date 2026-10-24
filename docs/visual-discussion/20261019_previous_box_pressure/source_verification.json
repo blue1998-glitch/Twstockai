@@ -1,0 +1,100 @@
+{
+  "status": "PASS_SOURCE_FACTS_ONLY",
+  "source_original_bytes_sha256": "48a8ea5f0a49719917ceb48b15149dbc6c5fa854f9bf36897b527bf9a0f990bb",
+  "all_1213_bars_unchanged": true,
+  "source_binding": {
+    "source_id": "sha256:adea7f78a97d18b6b51fbba103e08c0db33dc6fb1eb613b960b0aabe213b534b",
+    "frame_id": "sha256:b7215491c924570f3b40594fbd859f4b5c2532b247b62b6e625a8fcb66964f70",
+    "chart_base": "sha256:50e560b77640da3b7d000c0db67fc73a3f5b69d0bd744871ccb03483f8ec115e",
+    "analysis_as_of": "2026-10-16"
+  },
+  "original_phone_json_reread": false,
+  "source_window_is_box_membership": false,
+  "candidate": {
+    "display_start": "2025-04-08",
+    "display_end": "2025-05-29",
+    "wick_low": "28.45",
+    "wick_high": "31.40",
+    "volume_max_shares": 91798136,
+    "records": 37,
+    "status": "ASSISTANT_HYPOTHESIS_NOT_USER_APPROVED",
+    "formal_start": null,
+    "formal_end": null,
+    "formal_price_bounds": null,
+    "why_this_candidate": "nearest consolidation before lateMay/June decline, viewed from latest saved close27.30; not arbitrary historical split"
+  },
+  "latest_saved_close": "27.30",
+  "latest_below_candidate_low": true,
+  "distance_to_candidate_low": "1.15",
+  "distance_to_candidate_low_percent": "4.212454212454212454212454200",
+  "source_records": [
+    {
+      "close": "29.80",
+      "date": "2025-04-07",
+      "high": "30.80",
+      "low": "29.20",
+      "open": "29.20",
+      "volume_shares_scaled": "118749437"
+    },
+    {
+      "close": "29.65",
+      "date": "2025-04-08",
+      "high": "30.70",
+      "low": "28.45",
+      "open": "30.30",
+      "volume_shares_scaled": "73115113"
+    },
+    {
+      "close": "31.10",
+      "date": "2025-05-13",
+      "high": "31.40",
+      "low": "30.90",
+      "open": "31.30",
+      "volume_shares_scaled": "10264322"
+    },
+    {
+      "close": "29.35",
+      "date": "2025-05-29",
+      "high": "29.35",
+      "low": "28.70",
+      "open": "29.15",
+      "volume_shares_scaled": "91798136"
+    },
+    {
+      "close": "27.70",
+      "date": "2025-06-02",
+      "high": "29.05",
+      "low": "27.65",
+      "open": "29.05",
+      "volume_shares_scaled": "93266178"
+    },
+    {
+      "close": "26.85",
+      "date": "2025-06-03",
+      "high": "28.00",
+      "low": "26.55",
+      "open": "28.00",
+      "volume_shares_scaled": "107474363"
+    },
+    {
+      "close": "26.05",
+      "date": "2026-01-27",
+      "high": "26.95",
+      "low": "25.95",
+      "open": "26.50",
+      "volume_shares_scaled": "40314054"
+    },
+    {
+      "close": "27.30",
+      "date": "2026-10-16",
+      "high": "27.70",
+      "low": "26.95",
+      "open": "27.10",
+      "volume_shares_scaled": "57437884"
+    }
+  ],
+  "jun03_role": "USER_REPORTED_PREVIOUS_BOX_BREAKDOWN_NOT_CURRENT_BOX_MEMBER",
+  "jun02_relation": "close27.70 is below candidate28.45, candidate not approved; do not callJun03 first breakdown",
+  "candidate_approved": false,
+  "fragment_sha256": "237bc7d0ec6a4e712829f4d07d403b4a32a20a6ed901e5e4f7f9df1cae679566"
+}

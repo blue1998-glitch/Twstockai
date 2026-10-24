@@ -1,0 +1,490 @@
+{
+  "scope": "LIMITED_READ_ONLY_THREE_VIEW_CAPTURE_NOT_INTERACTION_REGRESSION",
+  "browser": "133.0.6943.0",
+  "html_sha256": "f5b3b4e5e03da1c8291ff5854e0a6dfbb974286fe5cfbcb9a466ec6e138203ee",
+  "font": "Observation-only DOM/Canvas ReviewCJK substitution; original artifact unchanged; original font screenshot retained in prior review",
+  "data_core_analysis_unchanged": true,
+  "errors": [],
+  "observations": [
+    {
+      "spec": {
+        "name": "whole-context",
+        "start": "2023-06-01",
+        "end": "2026-10-16",
+        "layers": [
+          "major",
+          "b77",
+          "manual39",
+          "recent"
+        ],
+        "select": "b77"
+      },
+      "state": {
+        "view": {
+          "start": 393,
+          "end": 1212,
+          "cursor": 1212
+        },
+        "selected_layer": "b77",
+        "visible_layers": [
+          "major",
+          "b77",
+          "manual39",
+          "recent"
+        ],
+        "geometry": {
+          "left": 26,
+          "right": 1274,
+          "width": 1384,
+          "height": 693,
+          "priceLow": 18.35,
+          "priceHigh": 41.53,
+          "price": {
+            "top": 27,
+            "bottom": 401.94
+          },
+          "volume": {
+            "top": 450.45,
+            "bottom": 540.54
+          },
+          "macd": {
+            "top": 589.05,
+            "bottom": 670
+          },
+          "overlay_regions": [
+            {
+              "layer": "major",
+              "pane": "price",
+              "left": 26,
+              "right": 730.6634146341463,
+              "top": 63.87934426229509,
+              "bottom": 238.5709749784297
+            },
+            {
+              "layer": "b77",
+              "pane": "price",
+              "left": 173.62926829268295,
+              "right": 680.4390243902438,
+              "top": 124.5361604831752,
+              "bottom": 212.69073339085418
+            },
+            {
+              "layer": "manual39",
+              "pane": "price",
+              "left": 703.2682926829268,
+              "right": 762.6243902439024,
+              "top": 190.85427955133738,
+              "bottom": 251.51109577221746
+            },
+            {
+              "layer": "recent",
+              "pane": "price",
+              "left": 939.1707317073171,
+              "right": 1175.0731707317073,
+              "top": 262.83370146678175,
+              "bottom": 371.2072131147541
+            }
+          ],
+          "source_points": [
+            {
+              "date": "2023-10-24",
+              "index": 490,
+              "price": "31.35"
+            },
+            {
+              "date": "2023-11-28",
+              "index": 515,
+              "price": "35.50"
+            },
+            {
+              "date": "2024-03-20",
+              "index": 587,
+              "price": "30.80"
+            },
+            {
+              "date": "2024-07-26",
+              "index": 673,
+              "price": "35.20"
+            },
+            {
+              "date": "2024-09-12",
+              "index": 707,
+              "price": "31.20"
+            },
+            {
+              "date": "2024-09-30",
+              "index": 718,
+              "price": "34.20"
+            },
+            {
+              "date": "2024-11-01",
+              "index": 738,
+              "price": "31.70"
+            },
+            {
+              "date": "2024-11-25",
+              "index": 754,
+              "price": "34.20"
+            },
+            {
+              "date": "2025-01-13",
+              "index": 788,
+              "price": "30.05"
+            },
+            {
+              "date": "2025-03-12",
+              "index": 822,
+              "price": "35.45"
+            }
+          ]
+        },
+        "laneGeometry": {
+          "left": 26,
+          "right": 1274,
+          "cursor_x": 1273.239024390244,
+          "rows": [
+            {
+              "id": "major",
+              "y": 13,
+              "start": "2023-06-01",
+              "end": "2025-04-30",
+              "markers": []
+            },
+            {
+              "id": "b77",
+              "y": 36,
+              "start": "2023-10-24",
+              "end": "2025-03-12",
+              "markers": [
+                {
+                  "kind": "SOURCE_LAST_TURN",
+                  "date": "2025-03-12",
+                  "box_id": "sha256:3753f89be8aef29f8f6c7910cbb979ddde8a68a37e496b5148f72dc74311db20"
+                },
+                {
+                  "kind": "CONFIRMED",
+                  "date": "2025-03-24",
+                  "box_id": "sha256:3753f89be8aef29f8f6c7910cbb979ddde8a68a37e496b5148f72dc74311db20"
+                },
+                {
+                  "kind": "FIRST_OUTSIDE_RESEARCH_CLOSE",
+                  "date": "2025-04-07",
+                  "box_id": "sha256:3753f89be8aef29f8f6c7910cbb979ddde8a68a37e496b5148f72dc74311db20"
+                }
+              ]
+            },
+            {
+              "id": "manual39",
+              "y": 105,
+              "start": "2025-04-07",
+              "end": "2025-06-02",
+              "markers": [
+                {
+                  "kind": "MANUAL_WHOLE_END",
+                  "date": "2025-06-02"
+                }
+              ]
+            },
+            {
+              "id": "recent",
+              "y": 151,
+              "start": "2025-11-19",
+              "end": "2026-07-14",
+              "markers": [
+                {
+                  "kind": "SOURCE_LAST_TURN",
+                  "date": "2026-07-14",
+                  "box_id": "sha256:9fbf971f46c19caa9b00657d0b805bc2bd4d782ab617b3818b50ddfe211b7d39"
+                },
+                {
+                  "kind": "CONFIRMED",
+                  "date": "2026-09-01",
+                  "box_id": "sha256:9fbf971f46c19caa9b00657d0b805bc2bd4d782ab617b3818b50ddfe211b7d39"
+                },
+                {
+                  "kind": "FIRST_OUTSIDE_RESEARCH_CLOSE",
+                  "date": "2026-10-12",
+                  "box_id": "sha256:9fbf971f46c19caa9b00657d0b805bc2bd4d782ab617b3818b50ddfe211b7d39"
+                }
+              ]
+            }
+          ]
+        }
+      },
+      "window": "2023-06-01～2026-10-16｜820／1213根；分析固定 2026-10-16；游標 2026-10-16。",
+      "readout": "2026-10-16　開27.10 高27.70 低26.95 收27.30｜量57437884股｜DIF 0.63 DEA 0.45 柱 0.36"
+    },
+    {
+      "spec": {
+        "name": "overlap-context",
+        "start": "2025-01-02",
+        "end": "2025-06-26",
+        "layers": [
+          "b77",
+          "manual39",
+          "same"
+        ],
+        "select": "manual39"
+      },
+      "state": {
+        "view": {
+          "start": 781,
+          "end": 894,
+          "cursor": 894
+        },
+        "selected_layer": "manual39",
+        "visible_layers": [
+          "b77",
+          "manual39",
+          "same"
+        ],
+        "geometry": {
+          "left": 26,
+          "right": 1274,
+          "width": 1384,
+          "height": 693,
+          "priceLow": 23.68,
+          "priceHigh": 36.734,
+          "price": {
+            "top": 27,
+            "bottom": 401.94
+          },
+          "volume": {
+            "top": 450.45,
+            "bottom": 540.54
+          },
+          "macd": {
+            "top": 589.05,
+            "bottom": 670
+          },
+          "overlay_regions": [
+            {
+              "layer": "b77",
+              "pane": "price",
+              "left": 26,
+              "right": 485.7894736842105,
+              "top": 62.443232725601376,
+              "bottom": 218.9793902252183
+            },
+            {
+              "layer": "manual39",
+              "pane": "price",
+              "left": 650,
+              "right": 1076.9473684210525,
+              "top": 180.20437873448756,
+              "bottom": 287.9127439865176
+            },
+            {
+              "layer": "same",
+              "pane": "price",
+              "left": 660.9473684210526,
+              "right": 934.6315789473684,
+              "top": 180.20437873448756,
+              "bottom": 264.93495939941783
+            }
+          ],
+          "source_points": []
+        },
+        "laneGeometry": {
+          "left": 26,
+          "right": 1274,
+          "cursor_x": 1268.5263157894738,
+          "rows": [
+            {
+              "id": "b77",
+              "y": 36,
+              "start": "2023-10-24",
+              "end": "2025-03-12",
+              "markers": [
+                {
+                  "kind": "SOURCE_LAST_TURN",
+                  "date": "2025-03-12",
+                  "box_id": "sha256:3753f89be8aef29f8f6c7910cbb979ddde8a68a37e496b5148f72dc74311db20"
+                },
+                {
+                  "kind": "CONFIRMED",
+                  "date": "2025-03-24",
+                  "box_id": "sha256:3753f89be8aef29f8f6c7910cbb979ddde8a68a37e496b5148f72dc74311db20"
+                },
+                {
+                  "kind": "FIRST_OUTSIDE_RESEARCH_CLOSE",
+                  "date": "2025-04-07",
+                  "box_id": "sha256:3753f89be8aef29f8f6c7910cbb979ddde8a68a37e496b5148f72dc74311db20"
+                }
+              ]
+            },
+            {
+              "id": "manual39",
+              "y": 105,
+              "start": "2025-04-07",
+              "end": "2025-06-02",
+              "markers": [
+                {
+                  "kind": "MANUAL_WHOLE_END",
+                  "date": "2025-06-02"
+                }
+              ]
+            },
+            {
+              "id": "same",
+              "y": 128,
+              "start": "2025-04-08",
+              "end": "2025-05-13",
+              "markers": [
+                {
+                  "kind": "SOURCE_LAST_TURN",
+                  "date": "2025-05-13",
+                  "box_id": "sha256:84d06011ea42c8890e2c271c1612ccd92341c82696721b9519bace0af364aa32"
+                },
+                {
+                  "kind": "CONFIRMED",
+                  "date": "2025-05-14",
+                  "box_id": "sha256:84d06011ea42c8890e2c271c1612ccd92341c82696721b9519bace0af364aa32"
+                },
+                {
+                  "kind": "FIRST_OUTSIDE_RESEARCH_CLOSE",
+                  "date": "2025-06-02",
+                  "box_id": "sha256:84d06011ea42c8890e2c271c1612ccd92341c82696721b9519bace0af364aa32"
+                },
+                {
+                  "kind": "SOURCE_LAST_TURN",
+                  "date": "2025-05-13",
+                  "box_id": "sha256:8bc16b7b1f4d83cc1cdf9f4ffc5644941e58dcd2356a6c1fd02b66695d43bdd5"
+                },
+                {
+                  "kind": "CONFIRMED",
+                  "date": "2025-05-27",
+                  "box_id": "sha256:8bc16b7b1f4d83cc1cdf9f4ffc5644941e58dcd2356a6c1fd02b66695d43bdd5"
+                },
+                {
+                  "kind": "FIRST_OUTSIDE_RESEARCH_CLOSE",
+                  "date": "2025-06-02",
+                  "box_id": "sha256:8bc16b7b1f4d83cc1cdf9f4ffc5644941e58dcd2356a6c1fd02b66695d43bdd5"
+                }
+              ]
+            }
+          ]
+        }
+      },
+      "window": "2025-01-02～2025-06-26｜114／1213根；分析固定 2026-10-16；游標 2025-06-26。",
+      "readout": "2025-06-26　開25.75 高26.25 低25.70 收25.80｜量16521929股｜DIF -0.98 DEA -0.95 柱 -0.06"
+    },
+    {
+      "spec": {
+        "name": "earlier-descent",
+        "start": "2023-05-02",
+        "end": "2024-01-19",
+        "layers": [
+          "major",
+          "b77"
+        ],
+        "select": "b77"
+      },
+      "state": {
+        "view": {
+          "start": 371,
+          "end": 552,
+          "cursor": 552
+        },
+        "selected_layer": "b77",
+        "visible_layers": [
+          "major",
+          "b77"
+        ],
+        "geometry": {
+          "left": 26,
+          "right": 1274,
+          "width": 1384,
+          "height": 693,
+          "priceLow": 30.46,
+          "priceHigh": 41.318,
+          "price": {
+            "top": 27,
+            "bottom": 401.94
+          },
+          "volume": {
+            "top": 450.45,
+            "bottom": 540.54
+          },
+          "macd": {
+            "top": 589.05,
+            "bottom": 670
+          },
+          "overlay_regions": [
+            {
+              "layer": "major",
+              "pane": "price",
+              "left": 176.85714285714286,
+              "right": 1274,
+              "top": 98.41056548167245,
+              "bottom": 401.94
+            },
+            {
+              "layer": "b77",
+              "pane": "price",
+              "left": 841.9999999999999,
+              "right": 1274,
+              "top": 227.9026450543378,
+              "bottom": 401.94
+            }
+          ],
+          "source_points": [
+            {
+              "date": "2023-10-24",
+              "index": 490,
+              "price": "31.35"
+            },
+            {
+              "date": "2023-11-28",
+              "index": 515,
+              "price": "35.50"
+            }
+          ]
+        },
+        "laneGeometry": {
+          "left": 26,
+          "right": 1274,
+          "cursor_x": 1270.5714285714284,
+          "rows": [
+            {
+              "id": "major",
+              "y": 13,
+              "start": "2023-06-01",
+              "end": "2025-04-30",
+              "markers": []
+            },
+            {
+              "id": "b77",
+              "y": 36,
+              "start": "2023-10-24",
+              "end": "2025-03-12",
+              "markers": [
+                {
+                  "kind": "SOURCE_LAST_TURN",
+                  "date": "2025-03-12",
+                  "box_id": "sha256:3753f89be8aef29f8f6c7910cbb979ddde8a68a37e496b5148f72dc74311db20"
+                },
+                {
+                  "kind": "CONFIRMED",
+                  "date": "2025-03-24",
+                  "box_id": "sha256:3753f89be8aef29f8f6c7910cbb979ddde8a68a37e496b5148f72dc74311db20"
+                },
+                {
+                  "kind": "FIRST_OUTSIDE_RESEARCH_CLOSE",
+                  "date": "2025-04-07",
+                  "box_id": "sha256:3753f89be8aef29f8f6c7910cbb979ddde8a68a37e496b5148f72dc74311db20"
+                }
+              ]
+            }
+          ]
+        }
+      },
+      "window": "2023-05-02～2024-01-19｜182／1213根；分析固定 2026-10-16；游標 2024-01-19。",
+      "readout": "2024-01-19　開32.00 高32.40 低31.80 收32.40｜量14495609股｜DIF -0.45 DEA -0.20 柱 -0.51"
+    }
+  ],
+  "physical_android": "NOT_TESTED_NEW_BUILD",
+  "file_protocol_used": false,
+  "core_executed": false,
+  "bootstrap_executed": false
+}

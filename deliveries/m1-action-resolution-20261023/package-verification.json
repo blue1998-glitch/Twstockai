@@ -1,0 +1,35 @@
+{
+  "archive_sha256": "5a238227839de19449d234cb2e56c5bed73c82546f5bb58e976f359caab11740",
+  "commands": [
+    {
+      "command": [
+        "python3",
+        "-m",
+        "unittest",
+        "rotation_research.test_action_resolution",
+        "-v"
+      ],
+      "exit_code": 0,
+      "log": "package-tests.log"
+    },
+    {
+      "command": [
+        "python3",
+        "-m",
+        "rotation_research.action_resolution_sources"
+      ],
+      "exit_code": 0,
+      "log": "package-build.log"
+    }
+  ],
+  "same_29_tests_reexecuted_inside_extracted_package": true,
+  "regenerated_outputs_byte_equal": {
+    "events-v04.json": true,
+    "window-qualification.json": true,
+    "gross-previews.json": true,
+    "verification.json": true
+  },
+  "deterministic_archive_rebuild_passed": true,
+  "previous_zip_members_byte_exact": 470,
+  "all_pass": true
+}

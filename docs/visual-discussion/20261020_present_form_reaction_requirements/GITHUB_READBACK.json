@@ -1,0 +1,57 @@
+{
+  "schema": "m1-github-exact-readback/1",
+  "branch": "dev/m1-v018-chart-annotations",
+  "research_commit": "1af1eb815e88957f606eada417b4e07f0476c30d",
+  "parent_commit": "fa3216ff3420b4dc794477bfe8b6a2cea0d490c8",
+  "files": [
+    {
+      "path": "docs/visual-discussion/20261020_recognition_timing_user_decision/GITHUB_READBACK.json",
+      "git_blob_sha": "af14a99fd78e17a559bd487b3a15081646e9838f",
+      "exact_text_equal": true
+    },
+    {
+      "path": "docs/visual-discussion/20261020_present_form_reaction_requirements/README.md",
+      "git_blob_sha": "5bc00b12aeeffd6ed22fab2ed1a5959796f5c397",
+      "exact_text_equal": true
+    },
+    {
+      "path": "docs/visual-discussion/20261020_present_form_reaction_requirements/requirements.json",
+      "git_blob_sha": "d3b4ca7aa7c13dae86a3fbfadbed0931a1a4267d",
+      "exact_text_equal": true
+    },
+    {
+      "path": "docs/visual-discussion/20261020_present_form_reaction_requirements/WORK_HANDOFF.md",
+      "git_blob_sha": "f2e9801e44644ad59d9443ec1fdc047d60104455",
+      "exact_text_equal": true
+    },
+    {
+      "path": "AGENTS.md",
+      "git_blob_sha": "2c9933e5757895caeca18653c11e731737691c5b",
+      "exact_text_equal": true
+    },
+    {
+      "path": "CONTINUE_IN_WORK_MODE.md",
+      "git_blob_sha": "dd90a2b9f3d87de753195be6d6b3ef4b259ca9ad",
+      "exact_text_equal": true
+    },
+    {
+      "path": "M1_V019_GRAPH_CORE_RESUME_HANDOFF.md",
+      "git_blob_sha": "179d753eb1907c82a641b6dcf44d611d146e3690",
+      "exact_text_equal": true
+    },
+    {
+      "path": "docs/visual-discussion/20261020_present_form_reaction_requirements/verification.json",
+      "git_blob_sha": "8f2e65116e54229f6d55e9e1e3c530efe1eab388",
+      "exact_text_equal": true
+    }
+  ],
+  "method": "Each file fetched at pinned research commit and returned UTF-8 content compared character-for-character with prepared content; no trimming or normalization.",
+  "original_decision_recovery": {
+    "commit": "fa3216ff3420b4dc794477bfe8b6a2cea0d490c8",
+    "files": 11,
+    "method": "Pinned-path Git blob SHA matched interrupted manifest; local byte length SHA256 and Git blob SHA recomputed and matched manifest."
+  },
+  "execution_record": "verification.json",
+  "receipt_self_readback": "Receipt is saved in a subsequent commit, then fetched and compared exactly. No self-commit hash is embedded.",
+  "scope": "Documentation and source consistency; not classifier validation, product/browser/Android validation."
+}

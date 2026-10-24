@@ -1,0 +1,37 @@
+{
+  "schema": "m1-revisit-frame-manual-qa/1",
+  "pdf_path": "output/pdf/m1-anchored-revisit-frames.pdf",
+  "pdf_sha256": "2b058546802228102e27a30d5733b0f2f3877f2b8b4e588ee8a83770e59a084c",
+  "pdf_bytes": 191545,
+  "pages": 3,
+  "figure_builder_runs": 1,
+  "old_figures_rebuilt": 0,
+  "final_previews": [
+    {
+      "path": "page-1.png",
+      "bytes": 132832,
+      "sha256": "1d6d8cdff7ea4bcf9171ea922867e9ae9e3f597c379cd57f4651d31696cc22ce",
+      "manual_review": "PASS_FINAL_RENDER_MANUALLY_VIEWED"
+    },
+    {
+      "path": "page-2.png",
+      "bytes": 134257,
+      "sha256": "6dc33de3a7d3162c31a45da20dc2a691e8700e5d997d8e642c7129be86a15391",
+      "manual_review": "PASS_FINAL_RENDER_MANUALLY_VIEWED"
+    },
+    {
+      "path": "page-3.png",
+      "bytes": 144629,
+      "sha256": "2937e21dfd29be41d3a29bb3df6b7169fa88683f50d030fc808d09024e884aa0",
+      "manual_review": "PASS_FINAL_RENDER_MANUALLY_VIEWED"
+    }
+  ],
+  "manual_findings": [
+    "All three final Poppler pages visually inspected; no clipped text, label overlap or missing glyphs.",
+    "All price shading bounded by the selected saved candles low/high and date span; volume shading separate and bounded, no full-height price background.",
+    "Page1 known anchor and pre-return frame distinguished from October1 return bar new low and October7 current close.",
+    "Page2 older local revisit preserved separately from current downward relation; no negative interval label assigned.",
+    "Page3 old ABC39, wick representative31.40 and new follow-up witness separated; figure example selection does not feed discovery."
+  ],
+  "scope": "STATIC_RESEARCH_PDF_NOT_BROWSER_OR_ANDROID"
+}

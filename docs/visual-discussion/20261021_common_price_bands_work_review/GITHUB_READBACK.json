@@ -1,0 +1,262 @@
+{
+  "schema": "m1-common-price-band-github-readback/1",
+  "repository": "blue1998-glitch/Twstockai",
+  "branch": "dev/m1-v018-chart-annotations",
+  "base_commit": "92cd074ae204553ec27a3845bcd36a1adedba447",
+  "research_commit": "abe82e5cc7c1825da662a058a222c69a392160bb",
+  "research_tree": "e753db97641f2fe9dcd11d958e398e7c7185d5b1",
+  "inherited_goal_commits": [
+    "b57b662220a878fbea31e94a9a4ad4f611f4e036",
+    "8c0332eb46c1ba73e14501de369d300715462be6",
+    "92cd074ae204553ec27a3845bcd36a1adedba447"
+  ],
+  "goal_document_preservation": {
+    "path": "PROJECT_VISION.md",
+    "old_ref": "92cd074ae204553ec27a3845bcd36a1adedba447",
+    "new_ref": "abe82e5cc7c1825da662a058a222c69a392160bb",
+    "blob_sha": "b6cfb4c116bbae9f7b5b52cdc9726d98c5edf714",
+    "check": "EXACT_CONTENT_UNCHANGED"
+  },
+  "root_preservation": "AGENTS and CONTINUE keep inherited highest-goal section first. Removing only the inserted research section exactly restores each inherited full root text; exact prepared roots read back successfully.",
+  "result": "PASS_20_PINNED_FILES_EXACT_CONTENT_AND_GIT_BLOB_SHA",
+  "text_files": 15,
+  "binary_files": 5,
+  "readbacks": [
+    {
+      "path": "docs/visual-discussion/20261021_common_price_bands_work_review/README.md",
+      "bytes": 6625,
+      "binary": false,
+      "sha256": "74dcb7a675e6fb507313cbe33ddcbc635144d60b29998d77e0e05e6cee43ff19",
+      "git_blob_sha": "a42dc5ff3c8380c2754bea31d27ca3cf7a6cc274",
+      "readback_ref": "abe82e5cc7c1825da662a058a222c69a392160bb",
+      "content_match": "EXACT",
+      "remote_blob_sha": "a42dc5ff3c8380c2754bea31d27ca3cf7a6cc274"
+    },
+    {
+      "path": "docs/visual-discussion/20261021_common_price_bands_work_review/WORK_LOG.md",
+      "bytes": 2809,
+      "binary": false,
+      "sha256": "9ef2a680638d260d97f754a0e4509410c972d74357b20a274995adfa1c58b2ad",
+      "git_blob_sha": "49023470b4f87f37f45e251f62d7bb8d96fc5e6e",
+      "readback_ref": "abe82e5cc7c1825da662a058a222c69a392160bb",
+      "content_match": "EXACT",
+      "remote_blob_sha": "49023470b4f87f37f45e251f62d7bb8d96fc5e6e"
+    },
+    {
+      "path": "docs/visual-discussion/20261021_common_price_bands_work_review/WORK_HANDOFF.md",
+      "bytes": 10158,
+      "binary": false,
+      "sha256": "b890cae5ca2944fdf2af6cc77d8464e816a96ec19596d442b603777d238e1b2c",
+      "git_blob_sha": "9f2d7feb7fd875001c16b20397e2d893133feb6e",
+      "readback_ref": "abe82e5cc7c1825da662a058a222c69a392160bb",
+      "content_match": "EXACT",
+      "remote_blob_sha": "9f2d7feb7fd875001c16b20397e2d893133feb6e"
+    },
+    {
+      "path": "docs/visual-discussion/20261021_common_price_bands_work_review/common_research.py",
+      "bytes": 13152,
+      "binary": false,
+      "sha256": "e8a7016fb59e549e1ce3c198249df260c17a30183391eecc9db5f13810097680",
+      "git_blob_sha": "6677d1cb3497b1d78e49ab2e9eb5492944d3387b",
+      "readback_ref": "abe82e5cc7c1825da662a058a222c69a392160bb",
+      "content_match": "EXACT",
+      "remote_blob_sha": "6677d1cb3497b1d78e49ab2e9eb5492944d3387b"
+    },
+    {
+      "path": "docs/visual-discussion/20261021_common_price_bands_work_review/verify_common.py",
+      "bytes": 12226,
+      "binary": false,
+      "sha256": "2d23413b4cb94165fb753fbbb5165d17d272698b33cff2ed49dd5163917b02c3",
+      "git_blob_sha": "08f5ed43154b4704df238f9401cb6a61a91b5c26",
+      "readback_ref": "abe82e5cc7c1825da662a058a222c69a392160bb",
+      "content_match": "EXACT",
+      "remote_blob_sha": "08f5ed43154b4704df238f9401cb6a61a91b5c26"
+    },
+    {
+      "path": "docs/visual-discussion/20261021_common_price_bands_work_review/build_figures.py",
+      "bytes": 8740,
+      "binary": false,
+      "sha256": "dd95c46f5effcc3c8c2bcf13d4acf9dce3bf5ebf7b49040343093bdcd9c5a315",
+      "git_blob_sha": "3bae14acf6774cdc6c4dd7d0115e28c9adea4b1d",
+      "readback_ref": "abe82e5cc7c1825da662a058a222c69a392160bb",
+      "content_match": "EXACT",
+      "remote_blob_sha": "3bae14acf6774cdc6c4dd7d0115e28c9adea4b1d"
+    },
+    {
+      "path": "docs/visual-discussion/20261021_common_price_bands_work_review/hypotheses.json",
+      "bytes": 2348,
+      "binary": false,
+      "sha256": "432a19bf9854a5d12677d3442b75b6bb862647269612877764e2fad303360a9c",
+      "git_blob_sha": "9d9c3fd7cf9a40b07ef68b20f0c944390565c4d3",
+      "readback_ref": "abe82e5cc7c1825da662a058a222c69a392160bb",
+      "content_match": "EXACT",
+      "remote_blob_sha": "9d9c3fd7cf9a40b07ef68b20f0c944390565c4d3"
+    },
+    {
+      "path": "docs/visual-discussion/20261021_common_price_bands_work_review/pool-summaries.json",
+      "bytes": 64010,
+      "binary": false,
+      "sha256": "fc07f907ca53ac005583c3c32e03507d9a74fcd37121f34d71a73ae667cb802e",
+      "git_blob_sha": "602c96e8c9955251f0b777e3208d7b2192c1aca0",
+      "readback_ref": "abe82e5cc7c1825da662a058a222c69a392160bb",
+      "content_match": "EXACT",
+      "remote_blob_sha": "602c96e8c9955251f0b777e3208d7b2192c1aca0"
+    },
+    {
+      "path": "docs/visual-discussion/20261021_common_price_bands_work_review/selected-common-spans.json",
+      "bytes": 810577,
+      "binary": false,
+      "sha256": "432bc2a92b35ac2f167fd212943ff06e1b3513654aa7dbdcee40591071e0ea3a",
+      "git_blob_sha": "ced7c077568c565efc4b71b4d32ade8b2b1786bd",
+      "readback_ref": "abe82e5cc7c1825da662a058a222c69a392160bb",
+      "content_match": "EXACT",
+      "remote_blob_sha": "ced7c077568c565efc4b71b4d32ade8b2b1786bd"
+    },
+    {
+      "path": "docs/visual-discussion/20261021_common_price_bands_work_review/summary.json",
+      "bytes": 12698,
+      "binary": false,
+      "sha256": "21747da3d525fdd40636787fb0cd2da41e2ab3ed6f0cdb66e07dde54f9611dee",
+      "git_blob_sha": "7a28e5d18f8502363c04c12b7a483d40fa980f26",
+      "readback_ref": "abe82e5cc7c1825da662a058a222c69a392160bb",
+      "content_match": "EXACT",
+      "remote_blob_sha": "7a28e5d18f8502363c04c12b7a483d40fa980f26"
+    },
+    {
+      "path": "docs/visual-discussion/20261021_common_price_bands_work_review/verification.json",
+      "bytes": 2077,
+      "binary": false,
+      "sha256": "0aa6fe41b23a2dbf777dde639a25dc29fd3640142b3b7be7a14fb1fc3b4a3e6e",
+      "git_blob_sha": "cab64a0f88191ade7dcbafcdd21ab7710bb10dc3",
+      "readback_ref": "abe82e5cc7c1825da662a058a222c69a392160bb",
+      "content_match": "EXACT",
+      "remote_blob_sha": "cab64a0f88191ade7dcbafcdd21ab7710bb10dc3"
+    },
+    {
+      "path": "docs/visual-discussion/20261021_common_price_bands_work_review/manual-qa.json",
+      "bytes": 1786,
+      "binary": false,
+      "sha256": "179dbff8996ad3c0f44fbaa3b1749e20d95178bc7c59472f38a3d0f3721fa054",
+      "git_blob_sha": "2ac609992eef4d07bf2d30829d4ec40c00c68bcd",
+      "readback_ref": "abe82e5cc7c1825da662a058a222c69a392160bb",
+      "content_match": "EXACT",
+      "remote_blob_sha": "2ac609992eef4d07bf2d30829d4ec40c00c68bcd"
+    },
+    {
+      "path": "docs/visual-discussion/20261021_common_price_bands_work_review/pool-common-span-registry.json.gz",
+      "bytes": 125503,
+      "binary": true,
+      "sha256": "31f3af6f5ea7eacc7d8a85adf9f90ae5433fd2f6d0b0e35324f33d88b0c017c5",
+      "git_blob_sha": "1dbf711597c60d65600fba7be78ec865552360a3",
+      "readback_ref": "abe82e5cc7c1825da662a058a222c69a392160bb",
+      "content_match": "EXACT",
+      "remote_blob_sha": "1dbf711597c60d65600fba7be78ec865552360a3"
+    },
+    {
+      "path": "docs/visual-discussion/20261021_common_price_bands_work_review/page-1.png",
+      "bytes": 139399,
+      "binary": true,
+      "sha256": "eb8cbf4c74f5cd9d65175a4edba8e3b39a801fd2e5403464378d65cc46dd7872",
+      "git_blob_sha": "31be829816864462836544f243b0f9e479297fff",
+      "readback_ref": "abe82e5cc7c1825da662a058a222c69a392160bb",
+      "content_match": "EXACT",
+      "remote_blob_sha": "31be829816864462836544f243b0f9e479297fff"
+    },
+    {
+      "path": "docs/visual-discussion/20261021_common_price_bands_work_review/page-2.png",
+      "bytes": 130975,
+      "binary": true,
+      "sha256": "3290cde12ce712b723cfcef365ba06ff025e1e75faef77464dcb44f711663e19",
+      "git_blob_sha": "95c3697e2dd0d45a078c33affe41539745ce91b4",
+      "readback_ref": "abe82e5cc7c1825da662a058a222c69a392160bb",
+      "content_match": "EXACT",
+      "remote_blob_sha": "95c3697e2dd0d45a078c33affe41539745ce91b4"
+    },
+    {
+      "path": "docs/visual-discussion/20261021_common_price_bands_work_review/page-3.png",
+      "bytes": 146744,
+      "binary": true,
+      "sha256": "7c77eb3d498e9ace893d824c1094b0da77130ab60db3559609e4d180d911331b",
+      "git_blob_sha": "b7284b7e844764413858c098d5b9187b11cf4223",
+      "readback_ref": "abe82e5cc7c1825da662a058a222c69a392160bb",
+      "content_match": "EXACT",
+      "remote_blob_sha": "b7284b7e844764413858c098d5b9187b11cf4223"
+    },
+    {
+      "path": "docs/visual-discussion/20261021_common_price_bands_work_review/output/pdf/m1-common-return-price-bands.pdf",
+      "bytes": 202774,
+      "binary": true,
+      "sha256": "576215dee44fdd8fa8f57c9615bb54c2ac5df7c1b5bffaacdc35b64371a11d3c",
+      "git_blob_sha": "2f5838958197ec37532def74bab11c507e552263",
+      "readback_ref": "abe82e5cc7c1825da662a058a222c69a392160bb",
+      "content_match": "EXACT",
+      "remote_blob_sha": "2f5838958197ec37532def74bab11c507e552263"
+    },
+    {
+      "path": "AGENTS.md",
+      "bytes": 135568,
+      "binary": false,
+      "sha256": "d2bfe8ed3be20347d5086cd1a031fa17513eefc80c990786bc9303087cccfaf1",
+      "git_blob_sha": "5be49492ac60609f8b6464a34b72f3fd6b6f1c50",
+      "readback_ref": "abe82e5cc7c1825da662a058a222c69a392160bb",
+      "content_match": "EXACT",
+      "remote_blob_sha": "5be49492ac60609f8b6464a34b72f3fd6b6f1c50"
+    },
+    {
+      "path": "CONTINUE_IN_WORK_MODE.md",
+      "bytes": 231016,
+      "binary": false,
+      "sha256": "52b2985a62b22fb4137d22aef33d36d3a1ba4f1ad79412c73c1e62152ed63f9d",
+      "git_blob_sha": "8bbf02d91cd9c1f60590ad7dc1b0bd267cf737d5",
+      "readback_ref": "abe82e5cc7c1825da662a058a222c69a392160bb",
+      "content_match": "EXACT",
+      "remote_blob_sha": "8bbf02d91cd9c1f60590ad7dc1b0bd267cf737d5"
+    },
+    {
+      "path": "M1_V019_GRAPH_CORE_RESUME_HANDOFF.md",
+      "bytes": 108424,
+      "binary": false,
+      "sha256": "15ad46b37ad5764d4ec7941f87acb14e9b2f412f2d4d073acb9e1172a422ddc2",
+      "git_blob_sha": "1314667e9777b9c37f2922e2155c01c644aee27f",
+      "readback_ref": "abe82e5cc7c1825da662a058a222c69a392160bb",
+      "content_match": "EXACT",
+      "remote_blob_sha": "1314667e9777b9c37f2922e2155c01c644aee27f"
+    }
+  ],
+  "binary_check": "Whole local bytes encoded as base64 matched whitespace-normalized remote base64, with independently computed local Git blob SHAs. Includes normalized full registry gzip, PDF and three PNGs.",
+  "evidence": {
+    "automatic_observations": 243,
+    "unique_new_close_turns": 128,
+    "unique_completed_legs": 126,
+    "unique_common_span_candidates": 360,
+    "independent_zone_occurrence_checks": 14594,
+    "current_view_reconstructions": 14594,
+    "saved_revisit_provenance_joins": 65439,
+    "shared_path_relations": 1473,
+    "selected_zone_checks": 299,
+    "unique_selected_prefix_checks": 211,
+    "source_scope": "Overlapping retrospective research, not independent market samples or classifier accuracy.",
+    "driver_runs": 2,
+    "rerun_reason": "Lossless storage layout normalization only.",
+    "verification_runs": 1,
+    "figure_builder_runs": 1
+  },
+  "status": {
+    "formal_formation_rule": "NOT_ESTABLISHED",
+    "formal_interval": null,
+    "formal_end": null,
+    "formal_membership": null,
+    "selected_zone": null,
+    "classification": "NOT_VALIDATED",
+    "core_usefulness": "NOT_ESTABLISHED",
+    "actions": "NOT_EVALUATED",
+    "capital_growth_flywheel_effectiveness": "NOT_EVALUATED",
+    "Android": "NOT_TESTED_NEW_BUILD",
+    "primary_pressure_id": null,
+    "historical_selection_time": null,
+    "historical_signal_eligible": false
+  },
+  "next_work": "Study roles linking local common-price bands and larger observed structures using original wick representatives, actual returns after departures and current position. Do not merge based on shared paths/overlap/longest spans or force one core per larger interval.",
+  "preservation": "main, all prior artifacts/data/core/parameters and inherited goal updates preserved. No old driver/core/CLI/bootstrap/product tests or browser/Android, agents, deployment, payments, trading or messages.",
+  "receipt_policy": "Receipt added in a following sole-parent commit; own commit verified externally by exact receipt readback and live branch HEAD, avoiding circular self-reference."
+}

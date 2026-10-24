@@ -1,0 +1,30 @@
+{
+  "status": "PASS_SCOPED_RESPONSE_WITNESS_RESEARCH",
+  "checks": {
+    "saved_cutoff_view_reconstruction": 22,
+    "source_prefix_truncation": 22,
+    "future_price_volume_and_manual_label_poison": 22,
+    "unavailable_reference_value_poison": 22,
+    "formal_product_and_action_unknowns": 22,
+    "independent_frozen_bar_and_first_close_witness": 13,
+    "independent_wick_witnesses": 26,
+    "consecutive_saved_intersection_streak_not_independent_tests": 13,
+    "exact_volume_descriptions_no_signal_threshold": 18,
+    "same_contact_close_side_and_higher_volume_opposite_followup": 1,
+    "wick_cross_does_not_backfill_later_close_witness": 1,
+    "ABC_equality_then_wick_then_down_close_distinct_dates": 1,
+    "close_through_gap_and_forming_source_controls": 1,
+    "fixed_birth_and_anchor_range_across_cutoffs": 4,
+    "continued_intersection_not_recounted_as_new_anchor": 1,
+    "synthetic_equal_close_both_wicks_zero_volume_direction": 2,
+    "synthetic_later_return_preserves_first_witness_updates_current_path": 2,
+    "synthetic_listed_gap_blocks_contiguous_witness": 1,
+    "unchanged_input_hashes": 7
+  },
+  "new_research_driver_runs": 1,
+  "new_verifier_runs": 2,
+  "prior_drivers_and_product_tests_rerun": 0,
+  "reaction_classifier": "NOT_VALIDATED",
+  "Android": "NOT_TESTED_NEW_BUILD",
+  "support_or_pressure_response_demonstrated": null
+}

@@ -1,0 +1,154 @@
+{
+  "schema": "work-recovery-audit/0.1",
+  "date_taipei": "2026-10-22",
+  "base_commit": "17a480ec770bfbeb0c179115a48d99a4647b978c",
+  "branch": "dev/m1-v018-chart-annotations",
+  "tree_entries": 3151,
+  "tree_truncated": false,
+  "recent_commit_chain": [
+    {
+      "sha": "17a480ec770bfbeb0c179115a48d99a4647b978c",
+      "message": "docs(work): record exact price-basis policy decision readback",
+      "parents": [
+        "99a332e8895993a0f63f92c9559d040288a25ad4"
+      ]
+    },
+    {
+      "sha": "99a332e8895993a0f63f92c9559d040288a25ad4",
+      "message": "docs(work): preserve user post-action adjusted preference and bear-market raw override",
+      "parents": [
+        "7ffb2dcacf88461ffeac87158e28c5f71aba8528"
+      ]
+    },
+    {
+      "sha": "7ffb2dcacf88461ffeac87158e28c5f71aba8528",
+      "message": "docs(work): record exact B source-specific return review readback",
+      "parents": [
+        "d0aa0f13cf1bfde20531f3511bb07fb1edcd2290"
+      ]
+    },
+    {
+      "sha": "d0aa0f13cf1bfde20531f3511bb07fb1edcd2290",
+      "message": "docs(work): bind B return evidence to source-specific references and flag ex-dividend comparability",
+      "parents": [
+        "c87f1578d5d5b674c63e9c6b485f83df8081eae2"
+      ]
+    },
+    {
+      "sha": "c87f1578d5d5b674c63e9c6b485f83df8081eae2",
+      "message": "docs(work): record exact B whole-chart review readback",
+      "parents": [
+        "91de646b1a2f2a1bce62e5ac4ae27432e6b9bf5f"
+      ]
+    },
+    {
+      "sha": "91de646b1a2f2a1bce62e5ac4ae27432e6b9bf5f",
+      "message": "docs(work): read B whole bands right to left with independent price and volume peaks",
+      "parents": [
+        "91cfcd5aed50b559473dbefb0e7b8889b884de68"
+      ]
+    }
+  ],
+  "files_read": [
+    {
+      "path": "AGENTS.md",
+      "git_blob": "faff2632840e8350c827a93c00073b57579ed4ca"
+    },
+    {
+      "path": "CONTINUE_IN_WORK_MODE.md",
+      "git_blob": "116687e42924ff3bc9bba0fbad551b0fdf75d4e6"
+    },
+    {
+      "path": "M1_V019_GRAPH_CORE_RESUME_HANDOFF.md",
+      "git_blob": "6fa568affe13419451d1afdb07b70fa971c752cc"
+    },
+    {
+      "path": "PROJECT_VISION.md",
+      "git_blob": "e01a6dc90b3495ac8aeb49c731aa9b09c1041e8e"
+    },
+    {
+      "path": "docs/visual-discussion/20261021_price_basis_policy_decision/WORK_HANDOFF.md",
+      "git_blob": "13dc5ddb7ca5bd90be0900338f49f12c483662fe"
+    },
+    {
+      "path": "docs/visual-discussion/20261021_price_basis_policy_decision/decision.json",
+      "git_blob": "7153a0c51f5ca0ed0f69987653fba867b2512aff"
+    },
+    {
+      "path": "docs/visual-discussion/20261021_b_reference_path_work_review/source-check.json",
+      "git_blob": "aa234fc58377aaf3dac6ed72f1ca7c6229428d28"
+    },
+    {
+      "path": "docs/visual-discussion/20261021_b_reference_path_work_review/WORK_HANDOFF.md",
+      "git_blob": "a7b633d89d9469bd1396920077130c00700a352a"
+    },
+    {
+      "path": "docs/visual-discussion/20261021_b_reference_path_work_review/source-provenance.json",
+      "git_blob": "0585329793678ce443cf3633eb90d03a5f955e8f"
+    },
+    {
+      "path": "docs/visual-discussion/20261021_b_reference_path_work_review/verification.json",
+      "git_blob": "d86697ef28ca579eb48aab3c8a7135a2f3b75158"
+    },
+    {
+      "path": "股票系統M1_v0_18/pressure_chart/data/history-20261018/company-action-evidence.json",
+      "git_blob": "16674413c3a37c80c6ac09089195d05d0963f5c5"
+    },
+    {
+      "path": "股票系統M1_v0_18/pressure_chart/history.py",
+      "git_blob": "878460b5826894b22ace6de9eb27e37b3ff0e3eb"
+    },
+    {
+      "path": "股票系統M1_v0_18/reaction_facts/validation_20261020/驗收報告.md",
+      "git_blob": "417b48c3304553dc73d6a5d8ec5e502b7ba588a0"
+    },
+    {
+      "path": "股票系統M1_v0_18/graph_diagnostics/README.md",
+      "git_blob": "d0796c36998b0615d35339fd256cd15089de9d5d"
+    }
+  ],
+  "last_confirmed_node": "Price-basis policy saved and read back; prior July Raw study not new-policy validation",
+  "resumed_work": "Official event row, market context and separate single-event ratio comparison",
+  "repeated_prior_research": false,
+  "old_test_scope": "Historical reports inspected; no original suite rerun",
+  "completed_verified": [
+    "primary event row and prior close reconciliation",
+    "38 fresh raw OHLCV records / 190 fields equality",
+    "133 matched-date market context records",
+    "single-event research candidate and reference-source comparison",
+    "42 focused data / cutoff / output integrity checks",
+    "three final vector PDF pages and PNG reviewed"
+  ],
+  "saved_not_formally_validated": [
+    "single-event research adjusted candidate; incomplete corporate-action chain",
+    "market context; user bear-state interpretation pending",
+    "all new structure/usefulness/trading claims remain unvalidated"
+  ],
+  "not_executed": [
+    "automatic price-basis switch",
+    "original core or MACD",
+    "full original research drivers / product suites",
+    "browser / Android",
+    "full-market scans / rotation / capital loop performance"
+  ],
+  "root_history_preservation": [
+    {
+      "path": "AGENTS.md",
+      "base_blob": "faff2632840e8350c827a93c00073b57579ed4ca",
+      "original_text_exact_outside_insert": true
+    },
+    {
+      "path": "CONTINUE_IN_WORK_MODE.md",
+      "base_blob": "116687e42924ff3bc9bba0fbad551b0fdf75d4e6",
+      "original_text_exact_outside_insert": true
+    },
+    {
+      "path": "M1_V019_GRAPH_CORE_RESUME_HANDOFF.md",
+      "base_blob": "6fa568affe13419451d1afdb07b70fa971c752cc",
+      "original_text_exact_outside_insert": true
+    }
+  ],
+  "unchanged_vision": true,
+  "unresolved_core_question": "On displayed Jan2-Jul24 market context, what does user mean by a bear market versus local pullback?",
+  "sources_observed_now_not_historical_signal_eligibility": true
+}

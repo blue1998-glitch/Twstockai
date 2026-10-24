@@ -1,0 +1,57 @@
+{
+  "scope": "ASSISTANT_RESEARCH_RELATIONSHIPS_NOT_USER_FORMAL_BAND_ADJUDICATION",
+  "working_reading": {
+    "B": {
+      "observation_process": "SMALL_REFERENCE_RECLAIM_TO_BROADER_HIGH_ADVANCE_THEN_RETURN",
+      "activities": [
+        "B_advance",
+        "B_high",
+        "B_return"
+      ],
+      "source_identity_preserved": true,
+      "relative_to_small_reference": "All three common spans above raw proxy33.20; latter two full source ranges above it",
+      "relative_to_broader_reference": "Close crossing35.50 occurredJune22, returnedbelowJune24; last source common35.00..35.45 below but two of its four source closes above35.50",
+      "source_dependency": "Adjacent activity pairs share turning sources; B_advance and B_return have no shared turns but later left evidence equals older known date, so not all-fresh",
+      "formal_merge": null,
+      "formal_parent": null
+    },
+    "G2": {
+      "observation_process": "EARLIER_ACTIVITY_TO_LOWER_ACTIVITY_THEN_LOCAL_RETURN",
+      "activities": [
+        "G_earlier",
+        "G_lower",
+        "G_rebound"
+      ],
+      "source_identity_preserved": true,
+      "source_freshness": "Later complete left evidence after earlier known date; not statistical independence",
+      "actual_return": "All four rebound-source closes inside earlier raw37.20..38.50; none of the four ranges reaches earlier common38.05..38.25",
+      "formal_merge": null,
+      "formal_parent": null
+    }
+  },
+  "rejected_inferences": [
+    "Three drawn activities mean three independent successful tests.",
+    "No shared leg or turn by itself means all source evidence is new.",
+    "A raised common span means every source wick is above the old reference.",
+    "Current close outside a common span means the activity never existed.",
+    "New activity is available means the current price is still inside its source range.",
+    "Raw source overlap or an actual return automatically merges two price bands.",
+    "No common-span return means no contact with any part of the earlier activity.",
+    "B broader close-cross-and-return equals G2 not-yet-reaching-earlier-common path."
+  ],
+  "wording_correction": {
+    "old_broad_phrase": "G2 has not returned to earlier activity",
+    "replacement": "G2 has returned to the earlier source raw range but has not reached its common price span",
+    "previous_price_or_reference_values_changed": false,
+    "old_artifacts_preserved": true
+  },
+  "facts_vs_judgment": {
+    "facts": "Six source activities, six source-pair relationships, actual per-source visits and current locations are audited data.",
+    "analysis": "Keep one observation process while retaining separate activity identities.",
+    "not_determined": "Formal same-level merges, exact large/small membership, unique parent/primary, holding criteria, reactions and action eligibility."
+  },
+  "original_manual_answers_preserved": true,
+  "new_manual_question": false,
+  "historical_signal_eligible": false,
+  "next_work": "Seek genuinely discriminating activity-membership counterexamples, rather than repeat these exact six source activities or add same-event fields."
+}

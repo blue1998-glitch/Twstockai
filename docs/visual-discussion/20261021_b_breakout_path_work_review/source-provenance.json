@@ -1,0 +1,39 @@
+{
+  "base_commit": "e57664243e662b82918c38a8877355a249ff3979",
+  "source_repo_path": "docs/visual-discussion/20261020_independent_source_levels_work_review/source-data-2884.json",
+  "source_sha256": "ab87a51b5b8afd076603f290b10f415bd60d31ae47c5ab2f6d9d609ad4014901",
+  "source_gaps": {
+    "actions_coverage": "UNVERIFIED_NO_NEW_ACTION_AUTHENTICATION",
+    "calendar_status": "PLANNED_PLUS_REVIEWED_EXCEPTIONS_ONLY_NOT_EXHAUSTIVE",
+    "historical_publication_timing": "UNVERIFIED",
+    "known_calendar_missing_dates": [
+      "2022-01-27",
+      "2022-01-28",
+      "2023-08-03",
+      "2024-07-24",
+      "2024-07-25",
+      "2024-10-02",
+      "2024-10-03",
+      "2024-10-31",
+      "2025-11-05"
+    ]
+  },
+  "price_basis_id": "sha256:3ce70b8fe0dfc818490a4b6209413232aedc76fcab39ba359ed4a3170d75785d",
+  "study_price_references": {
+    "lower_activity_high": {
+      "date": "2026-04-16",
+      "field": "high",
+      "value": "33.20",
+      "role": "RAW_PRICE_PROXY_NOT_CONFIRMED_FORMAL_SMALL_BAND_EDGE"
+    },
+    "broader_high": {
+      "date": "2026-02-26",
+      "field": "high",
+      "value": "35.50",
+      "role": "RAW_PRICE_PROXY_NOT_CONFIRMED_FORMAL_LARGE_BAND_EDGE"
+    }
+  },
+  "manual_nested_band_decision": "docs/visual-discussion/20261021_b_nested_band_decision/decision.json",
+  "volume_comparisons": "Previous saved day; frozen Mar16-May29 source median; previous20 saved bars mean excluding current day. Descriptive only, not three voting qualifications or a selected strategy threshold.",
+  "formal_signal_eligible": false
+}

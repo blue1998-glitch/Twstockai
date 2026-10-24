@@ -1,0 +1,72 @@
+{
+  "base_commit": "2f7bf898a615a45507d110f6b6e9a7e11c09a16a",
+  "inputs": [
+    {
+      "local": "/workspace/scratch/54685b8dac93/independent-level-review/source-data-2884.json",
+      "sha256": "ab87a51b5b8afd076603f290b10f415bd60d31ae47c5ab2f6d9d609ad4014901"
+    },
+    {
+      "local": "/workspace/scratch/54685b8dac93/real-review/input/comparison-data.json",
+      "sha256": "184bdef0b687ec0ab7bfcaaac2157ff7916fbc1000ef312d81b5efc0c2e73e15"
+    },
+    {
+      "local": "/workspace/scratch/89f271ea68f4/overlap-role-research/overlap-role-registry.json.gz",
+      "sha256": "270a0b20ae2ac5e8e258c79b4170988f4b63d1272ab4c96c90bc6ace6740ef82"
+    },
+    {
+      "local": "/workspace/scratch/89f271ea68f4/source-role-research/source-role-registry.json.gz",
+      "sha256": "173127538c11ff01594ac566e644404bbb8624674f0951e2a3d6931f1c436895"
+    },
+    {
+      "local": "/workspace/scratch/e9363d3b9105/return-context-research/study-inputs.json",
+      "sha256": "921cfc7c9615a8ff51f4e105ecffa45624606b9e9ec6246a978dae044d105d40"
+    },
+    {
+      "local": "/workspace/scratch/e9363d3b9105/b-breakout-path-research/path-evidence.json",
+      "sha256": "049576ec93adcfea3880780499f29243c7024bfeb70d64b996da4c92965888a5"
+    },
+    {
+      "local": "/workspace/scratch/e9363d3b9105/cross-case-followup-research/followup-results.json",
+      "sha256": "2db5859bc56cefb06182ba5ce3b83152387d37523fe2d2aca9ae62ae86c2638e"
+    }
+  ],
+  "source_gaps": {
+    "2884": {
+      "actions_coverage": "UNVERIFIED_NO_NEW_ACTION_AUTHENTICATION",
+      "calendar_status": "PLANNED_PLUS_REVIEWED_EXCEPTIONS_ONLY_NOT_EXHAUSTIVE",
+      "historical_publication_timing": "UNVERIFIED",
+      "known_calendar_missing_dates": [
+        "2022-01-27",
+        "2022-01-28",
+        "2023-08-03",
+        "2024-07-24",
+        "2024-07-25",
+        "2024-10-02",
+        "2024-10-03",
+        "2024-10-31",
+        "2025-11-05"
+      ]
+    },
+    "1101": {
+      "actions_coverage": "UNVERIFIED_NO_NEW_ACTION_AUTHENTICATION",
+      "calendar_status": "PLANNED_PLUS_REVIEWED_EXCEPTIONS_ONLY_NOT_EXHAUSTIVE",
+      "historical_publication_timing": "UNVERIFIED",
+      "known_calendar_missing_dates": [
+        "2022-01-27",
+        "2022-01-28",
+        "2023-08-03",
+        "2024-07-24",
+        "2024-07-25",
+        "2024-10-02",
+        "2024-10-03",
+        "2024-10-31",
+        "2025-08-13"
+      ]
+    }
+  },
+  "price_basis_id": {
+    "2884": "sha256:3ce70b8fe0dfc818490a4b6209413232aedc76fcab39ba359ed4a3170d75785d",
+    "1101": "sha256:50e560b77640da3b7d000c0db67fc73a3f5b69d0bd744871ccb03483f8ec115e"
+  },
+  "method": "Copy 6 original activities, all dependent legs/turns and 6 existing crossing anchors; new cutoff projection and pair/source audit only. No original classifier, price-cross or volume study rerun."
+}

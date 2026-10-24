@@ -1,0 +1,142 @@
+{
+  "schema_version": "m1-user-reviewed-chart-case/0.1",
+  "case_id": "1101-raw-20260930-focus-1-4-review-20261018",
+  "reviewed_at": "2026-10-18T10:09:10+08:00",
+  "analysis_as_of": "2026-09-30",
+  "code": "1101",
+  "price_mode": "RAW_CANDIDATE",
+  "source_id": "sha256:ad5177c58cea30978f1bed3b9206a45c3615bc5bec42603a79b4191f7c7f8e53",
+  "source_attachment_sha256": "3415380eb707d5a9dca143c3a18e36b96df44d78ef818199afa2ac0fdb812df8",
+  "structure_snapshot_id": "sha256:a53eeb01f0cf88df16e9bf8008b7f53557c63c632e92d52f78c90c1468e3f5c2",
+  "user_quote": "突破1值得觀察，但是1的量很大所以後續上漲要開始增量。再來我關注的左側壓力會自然移到4，不過左側壓力區量不大所以觀察價有沒有突破即可。",
+  "confirmed_for_this_case": {
+    "breakout_reference": {
+      "label": "①",
+      "date": "2026-09-01",
+      "price": "26.10",
+      "confirmed_at": "2026-09-07",
+      "id": "major:HIGH:2026-09-01:2026-09-01:106",
+      "profile": "major"
+    },
+    "breakout_fact": {
+      "close": "26.30",
+      "relationship": "ABOVE",
+      "date": "2026-09-30"
+    },
+    "observation": "WORTH_OBSERVING",
+    "followup_volume_requirement": "Subsequent rising price should begin to expand volume; quantitative sufficiency not defined",
+    "next_primary_pressure_reference": {
+      "label": "④",
+      "date": "2026-01-29",
+      "price": "26.85",
+      "confirmed_at": "2026-03-09",
+      "id": "major:HIGH:2026-01-29:2026-01-29:3",
+      "profile": "major"
+    },
+    "pressure_volume_assessment": "USER_DESCRIBED_LEFT_REGION_VOLUME_NOT_LARGE",
+    "pressure_focus": "Watch actual price crossing; no mandatory volume-breakout condition specified for this left region",
+    "secondary_references": [
+      {
+        "label": "②",
+        "date": "2026-04-10",
+        "price": "26.40",
+        "confirmed_at": "2026-05-05",
+        "id": "major:HIGH:2026-04-10:2026-04-10:48",
+        "profile": "major"
+      },
+      {
+        "label": "③",
+        "date": "2026-02-25",
+        "price": "26.65",
+        "confirmed_at": "2026-03-04",
+        "id": "minor:HIGH:2026-02-25:2026-02-25:19",
+        "profile": "minor"
+      }
+    ],
+    "secondary_display": "Context preserved, not equal primary prominence"
+  },
+  "unknown": {
+    "volume_expansion_baseline": null,
+    "volume_expansion_threshold": null,
+    "volume_expansion_duration": null,
+    "left_region_dates": null,
+    "left_region_upper_boundary": null,
+    "general_automatic_reference_selection": null,
+    "action_qualification": "NOT_EVALUATED",
+    "classification_quality": "NOT_VALIDATED",
+    "post_breakout_volume_evidence": "NOT_PROVIDED: source ends on2026-09-30 crossing day;9/23 is before this completed crossing"
+  },
+  "source_observations": {
+    "earlier_cluster_high": {
+      "date": "2026-01-27",
+      "price": "26.95",
+      "status": "SOURCE_FACT_NOT_APPROVED_REGION_BOUNDARY"
+    },
+    "note": "1/27 high26.95 exceeds the selected1/29 pivot26.85. Do not assert26.85 is the entire region maximum; raw corporate-action and source limits retained.",
+    "volume_bars": [
+      [
+        "2026-01-29",
+        "26.35",
+        "26.85",
+        "26.30",
+        "26.50",
+        "41662819"
+      ],
+      [
+        "2026-08-31",
+        "24.30",
+        "24.45",
+        "24.05",
+        "24.40",
+        "557094159"
+      ],
+      [
+        "2026-09-01",
+        "24.60",
+        "26.10",
+        "24.60",
+        "25.30",
+        "108834320"
+      ],
+      [
+        "2026-09-23",
+        "24.85",
+        "26.10",
+        "24.65",
+        "25.65",
+        "130648955"
+      ],
+      [
+        "2026-09-24",
+        "25.70",
+        "25.70",
+        "25.10",
+        "25.25",
+        "39328798"
+      ],
+      [
+        "2026-09-29",
+        "25.40",
+        "25.60",
+        "25.05",
+        "25.30",
+        "31598983"
+      ],
+      [
+        "2026-09-30",
+        "25.35",
+        "26.70",
+        "25.20",
+        "26.30",
+        "104957435"
+      ]
+    ]
+  },
+  "not_promoted": [
+    "No automatic all-market rule",
+    "No buy instruction",
+    "No new formal lifecycle or pattern classification",
+    "No volume proxy for ownership concentration",
+    "No Android download or performance acceptance"
+  ]
+}

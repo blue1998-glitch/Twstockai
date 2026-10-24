@@ -1,0 +1,857 @@
+{
+  "action_qualification": "NOT_EVALUATED",
+  "adapter_version": "attempt-view-adapter/0.1",
+  "chart": {
+    "daily": [
+      {
+        "close": "105",
+        "date": "2026-09-01",
+        "high": "106",
+        "is_close": true,
+        "known_at": "2026-09-01T14:00:00+08:00",
+        "low": "104",
+        "open": "104",
+        "volume_shares": "6000"
+      },
+      {
+        "close": "104.5",
+        "date": "2026-09-02",
+        "high": "106",
+        "is_close": true,
+        "known_at": "2026-09-02T14:00:00+08:00",
+        "low": "104",
+        "open": "105",
+        "volume_shares": "8000"
+      },
+      {
+        "close": "100",
+        "date": "2026-09-10",
+        "high": "101",
+        "is_close": true,
+        "known_at": "2026-09-10T14:00:00+08:00",
+        "low": "99",
+        "open": "100",
+        "volume_shares": "4000"
+      },
+      {
+        "close": "100",
+        "date": "2026-09-11",
+        "high": "100.5",
+        "is_close": true,
+        "known_at": "2026-09-11T14:00:00+08:00",
+        "low": "99",
+        "open": "100",
+        "volume_shares": "3500"
+      },
+      {
+        "close": "102",
+        "date": "2026-09-14",
+        "high": "103",
+        "is_close": true,
+        "known_at": "2026-09-14T13:30:00+08:00",
+        "low": "100",
+        "open": "100.5",
+        "volume_shares": "9000"
+      },
+      {
+        "close": "107",
+        "date": "2026-09-15",
+        "high": "108",
+        "is_close": true,
+        "known_at": "2026-09-15T13:30:00+08:00",
+        "low": "102",
+        "open": "102",
+        "volume_shares": "11000"
+      },
+      {
+        "close": "105",
+        "date": "2026-09-16",
+        "high": "107",
+        "is_close": true,
+        "known_at": "2026-09-16T13:30:00+08:00",
+        "low": "104",
+        "open": "107",
+        "volume_shares": "7000"
+      },
+      {
+        "close": "100",
+        "date": "2026-09-17",
+        "high": "105",
+        "is_close": true,
+        "known_at": "2026-09-17T13:30:00+08:00",
+        "low": "99",
+        "open": "105",
+        "volume_shares": "6500"
+      }
+    ],
+    "intraday": {
+      "points": [],
+      "status": "INTRADAY_DATA_MISSING"
+    },
+    "left_zone": {
+      "bar_dates": [
+        "2026-09-01",
+        "2026-09-02"
+      ],
+      "high": "106",
+      "low": "104"
+    },
+    "near_high": {
+      "bar_date": "2026-09-10",
+      "price": "101"
+    },
+    "volume_benchmark": "8000"
+  },
+  "classification_quality": "NOT_VALIDATED",
+  "core_version": "attempt-evidence-candidate/0.1",
+  "dataset": {
+    "data_kind": "SYNTHETIC_ENGINEERING_FIXTURE",
+    "history_coverage": "PARTIAL_SUPPLIED_HISTORY",
+    "id": "explicit_101_106",
+    "label": "假想101／106｜盤中與完成日",
+    "price_mode": "RAW_CANDIDATE",
+    "reference_selection": "EXPLICIT_SOURCE_FILE_SELECTION_NOT_AUTOMATIC"
+  },
+  "input": {
+    "context": {
+      "price_basis_id": "SYNTHETIC:RAW:1",
+      "price_mode": "RAW_CANDIDATE",
+      "series_id": "SYNTHETIC_NOT_MARKET:101-106",
+      "source_id": "HAND_AUTHORED_ENGINEERING_FIXTURE",
+      "volume_unit": "SHARES_REPORTED"
+    },
+    "history": [
+      {
+        "close": "105",
+        "date": "2026-09-01",
+        "high": "106",
+        "known_at": "2026-09-01T14:00:00+08:00",
+        "low": "104",
+        "open": "104",
+        "price_basis_id": "SYNTHETIC:RAW:1",
+        "volume_shares": "6000"
+      },
+      {
+        "close": "104.5",
+        "date": "2026-09-02",
+        "high": "106",
+        "known_at": "2026-09-02T14:00:00+08:00",
+        "low": "104",
+        "open": "105",
+        "price_basis_id": "SYNTHETIC:RAW:1",
+        "volume_shares": "8000"
+      },
+      {
+        "close": "100",
+        "date": "2026-09-10",
+        "high": "101",
+        "known_at": "2026-09-10T14:00:00+08:00",
+        "low": "99",
+        "open": "100",
+        "price_basis_id": "SYNTHETIC:RAW:1",
+        "volume_shares": "4000"
+      },
+      {
+        "close": "100",
+        "date": "2026-09-11",
+        "high": "100.5",
+        "known_at": "2026-09-11T14:00:00+08:00",
+        "low": "99",
+        "open": "100",
+        "price_basis_id": "SYNTHETIC:RAW:1",
+        "volume_shares": "3500"
+      }
+    ],
+    "observations": [
+      {
+        "date": "2026-09-14",
+        "high": "101.5",
+        "is_close": false,
+        "last": "101.5",
+        "low": "100",
+        "observed_at": "2026-09-14T09:10:00+08:00",
+        "open": "100.5",
+        "price_basis_id": "SYNTHETIC:RAW:1",
+        "volume_shares": "4500"
+      },
+      {
+        "date": "2026-09-14",
+        "high": "103",
+        "is_close": false,
+        "last": "102.5",
+        "low": "100",
+        "observed_at": "2026-09-14T09:30:00+08:00",
+        "open": "100.5",
+        "price_basis_id": "SYNTHETIC:RAW:1",
+        "volume_shares": "8500"
+      },
+      {
+        "date": "2026-09-14",
+        "high": "103",
+        "is_close": true,
+        "last": "102",
+        "low": "100",
+        "observed_at": "2026-09-14T13:30:00+08:00",
+        "open": "100.5",
+        "price_basis_id": "SYNTHETIC:RAW:1",
+        "volume_shares": "9000"
+      },
+      {
+        "date": "2026-09-15",
+        "high": "107",
+        "is_close": false,
+        "last": "107",
+        "low": "102",
+        "observed_at": "2026-09-15T09:30:00+08:00",
+        "open": "102",
+        "price_basis_id": "SYNTHETIC:RAW:1",
+        "volume_shares": "9500"
+      },
+      {
+        "date": "2026-09-15",
+        "high": "108",
+        "is_close": true,
+        "last": "107",
+        "low": "102",
+        "observed_at": "2026-09-15T13:30:00+08:00",
+        "open": "102",
+        "price_basis_id": "SYNTHETIC:RAW:1",
+        "volume_shares": "11000"
+      },
+      {
+        "date": "2026-09-16",
+        "high": "107",
+        "is_close": true,
+        "last": "105",
+        "low": "104",
+        "observed_at": "2026-09-16T13:30:00+08:00",
+        "open": "107",
+        "price_basis_id": "SYNTHETIC:RAW:1",
+        "volume_shares": "7000"
+      },
+      {
+        "date": "2026-09-17",
+        "high": "105",
+        "is_close": true,
+        "last": "100",
+        "low": "99",
+        "observed_at": "2026-09-17T13:30:00+08:00",
+        "open": "105",
+        "price_basis_id": "SYNTHETIC:RAW:1",
+        "volume_shares": "6500"
+      }
+    ],
+    "references": {
+      "id": "USER_VISUAL_101_106_EXAMPLE_V1",
+      "known_at": "2026-09-11T14:00:00+08:00",
+      "left_zone": {
+        "bar_dates": [
+          "2026-09-01",
+          "2026-09-02"
+        ],
+        "high": "106",
+        "low": "104"
+      },
+      "near_high": {
+        "bar_date": "2026-09-10",
+        "price": "101"
+      }
+    },
+    "schema_version": "attempt-evidence-input/0.1"
+  },
+  "input_fingerprint": "dc6a980a72981bafa7ed7cc65ad709573831c39d3ea3fa3aa97345ccf47cc613",
+  "result": {
+    "action_qualification": "NOT_EVALUATED",
+    "classification_quality": "NOT_VALIDATED",
+    "context": {
+      "price_basis_id": "SYNTHETIC:RAW:1",
+      "price_mode": "RAW_CANDIDATE",
+      "series_id": "SYNTHETIC_NOT_MARKET:101-106",
+      "source_id": "HAND_AUTHORED_ENGINEERING_FIXTURE",
+      "volume_unit": "SHARES_REPORTED"
+    },
+    "events": [
+      {
+        "bar_date": "2026-09-14",
+        "confirmed_at": null,
+        "evidence": {
+          "price": "101.5",
+          "reference_price": "101"
+        },
+        "first_observed_at": "2026-09-14T09:10:00+08:00",
+        "id": "29081fe3b7da4de821e9a54718d9c370e6f9b34283c13d304b06ebcf61ba40ae",
+        "kind": "INTRADAY_CROSSED_ABOVE",
+        "observation_index": 0,
+        "occurred_at": null,
+        "reference_id": "NEAR_HIGH"
+      },
+      {
+        "bar_date": "2026-09-14",
+        "confirmed_at": null,
+        "evidence": {
+          "benchmark_shares": "8000",
+          "left_zone_upper": "106",
+          "observed_high": "103",
+          "volume_shares": "8500"
+        },
+        "first_observed_at": "2026-09-14T09:30:00+08:00",
+        "id": "d8171be0d60a234fe3183d56ebdd1c9c9093d81eb0ada344fe46bc5f24e3c9f5",
+        "kind": "VOLUME_LEAD_OBSERVED",
+        "observation_index": 1,
+        "occurred_at": null,
+        "reference_id": "LEFT_ZONE_VOLUME_MAX"
+      },
+      {
+        "bar_date": "2026-09-14",
+        "confirmed_at": "2026-09-14T13:30:00+08:00",
+        "evidence": {
+          "price": "102",
+          "reference_price": "101"
+        },
+        "first_observed_at": "2026-09-14T13:30:00+08:00",
+        "id": "24fc28c3de1d14f3259505b620249956fed8a76fb6af9a00d7624e9e03de47b4",
+        "kind": "CLOSE_CROSSED_ABOVE",
+        "observation_index": 2,
+        "occurred_at": null,
+        "reference_id": "NEAR_HIGH"
+      },
+      {
+        "bar_date": "2026-09-14",
+        "confirmed_at": "2026-09-14T13:30:00+08:00",
+        "evidence": {
+          "price": "102",
+          "reference_price": "106"
+        },
+        "first_observed_at": "2026-09-14T13:30:00+08:00",
+        "id": "ca77bb65d75cbffd15a70663578bfdc1b7febf9bd7d5fe09f0723e9658d6f3b8",
+        "kind": "CLOSE_BELOW_LEVEL",
+        "observation_index": 2,
+        "occurred_at": null,
+        "reference_id": "LEFT_ZONE_UPPER"
+      },
+      {
+        "bar_date": "2026-09-15",
+        "confirmed_at": null,
+        "evidence": {
+          "price": "107",
+          "reference_price": "106"
+        },
+        "first_observed_at": "2026-09-15T09:30:00+08:00",
+        "id": "4cef83b50e041b2e2b897e438105b169f89869c58a72eaec1320206ee513e08f",
+        "kind": "INTRADAY_CROSSED_ABOVE",
+        "observation_index": 3,
+        "occurred_at": null,
+        "reference_id": "LEFT_ZONE_UPPER"
+      },
+      {
+        "bar_date": "2026-09-15",
+        "confirmed_at": null,
+        "evidence": {
+          "benchmark_shares": "8000",
+          "left_zone_upper": "106",
+          "observed_high": "107",
+          "volume_shares": "9500"
+        },
+        "first_observed_at": "2026-09-15T09:30:00+08:00",
+        "id": "b75542be67aad6828aaae1f88e78ba868fccb7a90b61f4b107400a0739cfd823",
+        "kind": "VOLUME_EXCESS_ORDER_UNKNOWN",
+        "observation_index": 3,
+        "occurred_at": null,
+        "reference_id": "LEFT_ZONE_VOLUME_MAX"
+      },
+      {
+        "bar_date": "2026-09-15",
+        "confirmed_at": "2026-09-15T13:30:00+08:00",
+        "evidence": {
+          "price": "107",
+          "reference_price": "101"
+        },
+        "first_observed_at": "2026-09-15T13:30:00+08:00",
+        "id": "59ad15ea871eb054b68cab903503c8214668142e941bd58d6ec5010211ca3975",
+        "kind": "CLOSE_STILL_ABOVE",
+        "observation_index": 4,
+        "occurred_at": null,
+        "reference_id": "NEAR_HIGH"
+      },
+      {
+        "bar_date": "2026-09-15",
+        "confirmed_at": "2026-09-15T13:30:00+08:00",
+        "evidence": {
+          "price": "107",
+          "reference_price": "106"
+        },
+        "first_observed_at": "2026-09-15T13:30:00+08:00",
+        "id": "07a95a5c34c78a5e128a7c5872a1d1071d93d36e12e43eac028b62297b4536ed",
+        "kind": "CLOSE_CROSSED_ABOVE",
+        "observation_index": 4,
+        "occurred_at": null,
+        "reference_id": "LEFT_ZONE_UPPER"
+      },
+      {
+        "bar_date": "2026-09-16",
+        "confirmed_at": "2026-09-16T13:30:00+08:00",
+        "evidence": {
+          "price": "105",
+          "reference_price": "101"
+        },
+        "first_observed_at": "2026-09-16T13:30:00+08:00",
+        "id": "f667c1c886e43652a72cf095cf9102fdd5ea5a50ca219f7fb7d4b0687c9c563b",
+        "kind": "CLOSE_STILL_ABOVE",
+        "observation_index": 5,
+        "occurred_at": null,
+        "reference_id": "NEAR_HIGH"
+      },
+      {
+        "bar_date": "2026-09-16",
+        "confirmed_at": "2026-09-16T13:30:00+08:00",
+        "evidence": {
+          "price": "105",
+          "reference_price": "106"
+        },
+        "first_observed_at": "2026-09-16T13:30:00+08:00",
+        "id": "f83b125b8d0c2027305a857eaeab490d4483aa6c6c9ceca2a9b0f474e4b5a9f4",
+        "kind": "CLOSE_RETURNED_BELOW",
+        "observation_index": 5,
+        "occurred_at": null,
+        "reference_id": "LEFT_ZONE_UPPER"
+      },
+      {
+        "bar_date": "2026-09-17",
+        "confirmed_at": "2026-09-17T13:30:00+08:00",
+        "evidence": {
+          "price": "100",
+          "reference_price": "101"
+        },
+        "first_observed_at": "2026-09-17T13:30:00+08:00",
+        "id": "473eefa4479934e28d32a2ec6dba6b70241b1b5ea0b626bd449a99c37b260c82",
+        "kind": "CLOSE_RETURNED_BELOW",
+        "observation_index": 6,
+        "occurred_at": null,
+        "reference_id": "NEAR_HIGH"
+      },
+      {
+        "bar_date": "2026-09-17",
+        "confirmed_at": "2026-09-17T13:30:00+08:00",
+        "evidence": {
+          "price": "100",
+          "reference_price": "106"
+        },
+        "first_observed_at": "2026-09-17T13:30:00+08:00",
+        "id": "b69e042b43e01f4091b12df314cacd9f49c2b11488aa9c1abd16079b099524d0",
+        "kind": "CLOSE_BELOW_LEVEL",
+        "observation_index": 6,
+        "occurred_at": null,
+        "reference_id": "LEFT_ZONE_UPPER"
+      }
+    ],
+    "evidence_scope": "SUPPLIED_HISTORY_AND_OBSERVATION_PREFIX_ONLY",
+    "frames": [
+      {
+        "action_qualification": "NOT_EVALUATED",
+        "attempt_levels": [
+          {
+            "latest_completed_close_relation": "BELOW",
+            "price": "101",
+            "price_attempt_condition": "MET",
+            "reference_id": "NEAR_HIGH",
+            "relation": "ABOVE"
+          },
+          {
+            "latest_completed_close_relation": "BELOW",
+            "price": "106",
+            "price_attempt_condition": "NOT_MET",
+            "reference_id": "LEFT_ZONE_UPPER",
+            "relation": "BELOW"
+          }
+        ],
+        "bar_date": "2026-09-14",
+        "current_price": "101.5",
+        "event_ids": [
+          "29081fe3b7da4de821e9a54718d9c370e6f9b34283c13d304b06ebcf61ba40ae"
+        ],
+        "frame_id": "5083e56744793a762943574281ee29dd5ac1dedf5de165049351f1f6ab31b227",
+        "is_close": false,
+        "left_zone_max_volume_shares": "8000",
+        "observed_at": "2026-09-14T09:10:00+08:00",
+        "previous_frame_id": null,
+        "probability_estimate": null,
+        "source_observation": {
+          "date": "2026-09-14",
+          "high": "101.5",
+          "is_close": false,
+          "last": "101.5",
+          "low": "100",
+          "observed_at": "2026-09-14T09:10:00+08:00",
+          "open": "100.5",
+          "price_basis_id": "SYNTHETIC:RAW:1",
+          "volume_shares": "4500"
+        },
+        "trend_strength": "NOT_CLASSIFIED",
+        "volume_lead_evidence_ids": [],
+        "volume_relation": "LOWER",
+        "volume_shares": "4500"
+      },
+      {
+        "action_qualification": "NOT_EVALUATED",
+        "attempt_levels": [
+          {
+            "latest_completed_close_relation": "BELOW",
+            "price": "101",
+            "price_attempt_condition": "MET",
+            "reference_id": "NEAR_HIGH",
+            "relation": "ABOVE"
+          },
+          {
+            "latest_completed_close_relation": "BELOW",
+            "price": "106",
+            "price_attempt_condition": "NOT_MET",
+            "reference_id": "LEFT_ZONE_UPPER",
+            "relation": "BELOW"
+          }
+        ],
+        "bar_date": "2026-09-14",
+        "current_price": "102.5",
+        "event_ids": [
+          "d8171be0d60a234fe3183d56ebdd1c9c9093d81eb0ada344fe46bc5f24e3c9f5"
+        ],
+        "frame_id": "442c314e9b63aad43f967151b436ebfd7500ffdee15628a15630c5ca0cd667f9",
+        "is_close": false,
+        "left_zone_max_volume_shares": "8000",
+        "observed_at": "2026-09-14T09:30:00+08:00",
+        "previous_frame_id": "5083e56744793a762943574281ee29dd5ac1dedf5de165049351f1f6ab31b227",
+        "probability_estimate": null,
+        "source_observation": {
+          "date": "2026-09-14",
+          "high": "103",
+          "is_close": false,
+          "last": "102.5",
+          "low": "100",
+          "observed_at": "2026-09-14T09:30:00+08:00",
+          "open": "100.5",
+          "price_basis_id": "SYNTHETIC:RAW:1",
+          "volume_shares": "8500"
+        },
+        "trend_strength": "NOT_CLASSIFIED",
+        "volume_lead_evidence_ids": [
+          "d8171be0d60a234fe3183d56ebdd1c9c9093d81eb0ada344fe46bc5f24e3c9f5"
+        ],
+        "volume_relation": "HIGHER",
+        "volume_shares": "8500"
+      },
+      {
+        "action_qualification": "NOT_EVALUATED",
+        "attempt_levels": [
+          {
+            "latest_completed_close_relation": "ABOVE",
+            "price": "101",
+            "price_attempt_condition": "MET",
+            "reference_id": "NEAR_HIGH",
+            "relation": "ABOVE"
+          },
+          {
+            "latest_completed_close_relation": "BELOW",
+            "price": "106",
+            "price_attempt_condition": "NOT_MET",
+            "reference_id": "LEFT_ZONE_UPPER",
+            "relation": "BELOW"
+          }
+        ],
+        "bar_date": "2026-09-14",
+        "current_price": "102",
+        "event_ids": [
+          "24fc28c3de1d14f3259505b620249956fed8a76fb6af9a00d7624e9e03de47b4",
+          "ca77bb65d75cbffd15a70663578bfdc1b7febf9bd7d5fe09f0723e9658d6f3b8"
+        ],
+        "frame_id": "b85a497d2f8b78012f02863b9d58315c7588bb538b53eba022b8af7e54aa56ea",
+        "is_close": true,
+        "left_zone_max_volume_shares": "8000",
+        "observed_at": "2026-09-14T13:30:00+08:00",
+        "previous_frame_id": "442c314e9b63aad43f967151b436ebfd7500ffdee15628a15630c5ca0cd667f9",
+        "probability_estimate": null,
+        "source_observation": {
+          "date": "2026-09-14",
+          "high": "103",
+          "is_close": true,
+          "last": "102",
+          "low": "100",
+          "observed_at": "2026-09-14T13:30:00+08:00",
+          "open": "100.5",
+          "price_basis_id": "SYNTHETIC:RAW:1",
+          "volume_shares": "9000"
+        },
+        "trend_strength": "NOT_CLASSIFIED",
+        "volume_lead_evidence_ids": [
+          "d8171be0d60a234fe3183d56ebdd1c9c9093d81eb0ada344fe46bc5f24e3c9f5"
+        ],
+        "volume_relation": "HIGHER",
+        "volume_shares": "9000"
+      },
+      {
+        "action_qualification": "NOT_EVALUATED",
+        "attempt_levels": [
+          {
+            "latest_completed_close_relation": "ABOVE",
+            "price": "101",
+            "price_attempt_condition": "MET",
+            "reference_id": "NEAR_HIGH",
+            "relation": "ABOVE"
+          },
+          {
+            "latest_completed_close_relation": "BELOW",
+            "price": "106",
+            "price_attempt_condition": "MET",
+            "reference_id": "LEFT_ZONE_UPPER",
+            "relation": "ABOVE"
+          }
+        ],
+        "bar_date": "2026-09-15",
+        "current_price": "107",
+        "event_ids": [
+          "4cef83b50e041b2e2b897e438105b169f89869c58a72eaec1320206ee513e08f",
+          "b75542be67aad6828aaae1f88e78ba868fccb7a90b61f4b107400a0739cfd823"
+        ],
+        "frame_id": "a907bf5ad2a92eb0f0ac6be7ba0de392ca162de26028b1f9423e0514fa88412d",
+        "is_close": false,
+        "left_zone_max_volume_shares": "8000",
+        "observed_at": "2026-09-15T09:30:00+08:00",
+        "previous_frame_id": "b85a497d2f8b78012f02863b9d58315c7588bb538b53eba022b8af7e54aa56ea",
+        "probability_estimate": null,
+        "source_observation": {
+          "date": "2026-09-15",
+          "high": "107",
+          "is_close": false,
+          "last": "107",
+          "low": "102",
+          "observed_at": "2026-09-15T09:30:00+08:00",
+          "open": "102",
+          "price_basis_id": "SYNTHETIC:RAW:1",
+          "volume_shares": "9500"
+        },
+        "trend_strength": "NOT_CLASSIFIED",
+        "volume_lead_evidence_ids": [
+          "d8171be0d60a234fe3183d56ebdd1c9c9093d81eb0ada344fe46bc5f24e3c9f5"
+        ],
+        "volume_relation": "HIGHER",
+        "volume_shares": "9500"
+      },
+      {
+        "action_qualification": "NOT_EVALUATED",
+        "attempt_levels": [
+          {
+            "latest_completed_close_relation": "ABOVE",
+            "price": "101",
+            "price_attempt_condition": "MET",
+            "reference_id": "NEAR_HIGH",
+            "relation": "ABOVE"
+          },
+          {
+            "latest_completed_close_relation": "ABOVE",
+            "price": "106",
+            "price_attempt_condition": "MET",
+            "reference_id": "LEFT_ZONE_UPPER",
+            "relation": "ABOVE"
+          }
+        ],
+        "bar_date": "2026-09-15",
+        "current_price": "107",
+        "event_ids": [
+          "59ad15ea871eb054b68cab903503c8214668142e941bd58d6ec5010211ca3975",
+          "07a95a5c34c78a5e128a7c5872a1d1071d93d36e12e43eac028b62297b4536ed"
+        ],
+        "frame_id": "090ef5d36e78d5cee19f58e2645c01841f16ef01d24d52d29f4ae0dd345afa85",
+        "is_close": true,
+        "left_zone_max_volume_shares": "8000",
+        "observed_at": "2026-09-15T13:30:00+08:00",
+        "previous_frame_id": "a907bf5ad2a92eb0f0ac6be7ba0de392ca162de26028b1f9423e0514fa88412d",
+        "probability_estimate": null,
+        "source_observation": {
+          "date": "2026-09-15",
+          "high": "108",
+          "is_close": true,
+          "last": "107",
+          "low": "102",
+          "observed_at": "2026-09-15T13:30:00+08:00",
+          "open": "102",
+          "price_basis_id": "SYNTHETIC:RAW:1",
+          "volume_shares": "11000"
+        },
+        "trend_strength": "NOT_CLASSIFIED",
+        "volume_lead_evidence_ids": [
+          "d8171be0d60a234fe3183d56ebdd1c9c9093d81eb0ada344fe46bc5f24e3c9f5"
+        ],
+        "volume_relation": "HIGHER",
+        "volume_shares": "11000"
+      },
+      {
+        "action_qualification": "NOT_EVALUATED",
+        "attempt_levels": [
+          {
+            "latest_completed_close_relation": "ABOVE",
+            "price": "101",
+            "price_attempt_condition": "MET",
+            "reference_id": "NEAR_HIGH",
+            "relation": "ABOVE"
+          },
+          {
+            "latest_completed_close_relation": "BELOW",
+            "price": "106",
+            "price_attempt_condition": "NOT_MET",
+            "reference_id": "LEFT_ZONE_UPPER",
+            "relation": "BELOW"
+          }
+        ],
+        "bar_date": "2026-09-16",
+        "current_price": "105",
+        "event_ids": [
+          "f667c1c886e43652a72cf095cf9102fdd5ea5a50ca219f7fb7d4b0687c9c563b",
+          "f83b125b8d0c2027305a857eaeab490d4483aa6c6c9ceca2a9b0f474e4b5a9f4"
+        ],
+        "frame_id": "f613430c3be27c435a2dd10e5d288d0eafc796678b8f2e94ac5051bc4fa4816e",
+        "is_close": true,
+        "left_zone_max_volume_shares": "8000",
+        "observed_at": "2026-09-16T13:30:00+08:00",
+        "previous_frame_id": "090ef5d36e78d5cee19f58e2645c01841f16ef01d24d52d29f4ae0dd345afa85",
+        "probability_estimate": null,
+        "source_observation": {
+          "date": "2026-09-16",
+          "high": "107",
+          "is_close": true,
+          "last": "105",
+          "low": "104",
+          "observed_at": "2026-09-16T13:30:00+08:00",
+          "open": "107",
+          "price_basis_id": "SYNTHETIC:RAW:1",
+          "volume_shares": "7000"
+        },
+        "trend_strength": "NOT_CLASSIFIED",
+        "volume_lead_evidence_ids": [
+          "d8171be0d60a234fe3183d56ebdd1c9c9093d81eb0ada344fe46bc5f24e3c9f5"
+        ],
+        "volume_relation": "LOWER",
+        "volume_shares": "7000"
+      },
+      {
+        "action_qualification": "NOT_EVALUATED",
+        "attempt_levels": [
+          {
+            "latest_completed_close_relation": "BELOW",
+            "price": "101",
+            "price_attempt_condition": "NOT_MET",
+            "reference_id": "NEAR_HIGH",
+            "relation": "BELOW"
+          },
+          {
+            "latest_completed_close_relation": "BELOW",
+            "price": "106",
+            "price_attempt_condition": "NOT_MET",
+            "reference_id": "LEFT_ZONE_UPPER",
+            "relation": "BELOW"
+          }
+        ],
+        "bar_date": "2026-09-17",
+        "current_price": "100",
+        "event_ids": [
+          "473eefa4479934e28d32a2ec6dba6b70241b1b5ea0b626bd449a99c37b260c82",
+          "b69e042b43e01f4091b12df314cacd9f49c2b11488aa9c1abd16079b099524d0"
+        ],
+        "frame_id": "40524657b0a89d2cbc93f7731664afb59c300a262da28bc2beb0af391f8b6cb7",
+        "is_close": true,
+        "left_zone_max_volume_shares": "8000",
+        "observed_at": "2026-09-17T13:30:00+08:00",
+        "previous_frame_id": "f613430c3be27c435a2dd10e5d288d0eafc796678b8f2e94ac5051bc4fa4816e",
+        "probability_estimate": null,
+        "source_observation": {
+          "date": "2026-09-17",
+          "high": "105",
+          "is_close": true,
+          "last": "100",
+          "low": "99",
+          "observed_at": "2026-09-17T13:30:00+08:00",
+          "open": "105",
+          "price_basis_id": "SYNTHETIC:RAW:1",
+          "volume_shares": "6500"
+        },
+        "trend_strength": "NOT_CLASSIFIED",
+        "volume_lead_evidence_ids": [
+          "d8171be0d60a234fe3183d56ebdd1c9c9093d81eb0ada344fe46bc5f24e3c9f5"
+        ],
+        "volume_relation": "LOWER",
+        "volume_shares": "6500"
+      }
+    ],
+    "history_fingerprint": "9199bd5be1916f48efa0175e9c4536edffc633b1de82093f00b77aa029f6c3f6",
+    "left_zone_max_volume_shares": "8000",
+    "left_zone_volume_source_dates": [
+      "2026-09-01",
+      "2026-09-02"
+    ],
+    "limitations": [
+      "REAL_MARKET_HISTORY_COVERAGE_NOT_AUTHENTICATED",
+      "CORPORATE_ACTION_AND_COMMON_BASIS_DECLARED_BY_CALLER_NOT_VERIFIED",
+      "NO_HOLDER_DATA_OR_CALIBRATED_SUCCESS_PROBABILITY",
+      "DAILY_OHLC_DOES_NOT_ESTABLISH_INTRADAY_ORDER",
+      "NO_AUTOMATIC_DEFENSE_RAISE_EXIT_OR_TREND_CLASSIFICATION"
+    ],
+    "reference_selection": "EXPLICIT_CALLER_SELECTION_NOT_AUTO_RECOGNIZED",
+    "reference_set": {
+      "id": "USER_VISUAL_101_106_EXAMPLE_V1",
+      "known_at": "2026-09-11T14:00:00+08:00",
+      "left_zone": {
+        "bar_dates": [
+          "2026-09-01",
+          "2026-09-02"
+        ],
+        "high": "106",
+        "low": "104"
+      },
+      "near_high": {
+        "bar_date": "2026-09-10",
+        "price": "101"
+      }
+    },
+    "schema_version": "attempt-evidence-candidate/0.1",
+    "source_history": [
+      {
+        "close": "105",
+        "date": "2026-09-01",
+        "high": "106",
+        "known_at": "2026-09-01T14:00:00+08:00",
+        "low": "104",
+        "open": "104",
+        "price_basis_id": "SYNTHETIC:RAW:1",
+        "volume_shares": "6000"
+      },
+      {
+        "close": "104.5",
+        "date": "2026-09-02",
+        "high": "106",
+        "known_at": "2026-09-02T14:00:00+08:00",
+        "low": "104",
+        "open": "105",
+        "price_basis_id": "SYNTHETIC:RAW:1",
+        "volume_shares": "8000"
+      },
+      {
+        "close": "100",
+        "date": "2026-09-10",
+        "high": "101",
+        "known_at": "2026-09-10T14:00:00+08:00",
+        "low": "99",
+        "open": "100",
+        "price_basis_id": "SYNTHETIC:RAW:1",
+        "volume_shares": "4000"
+      },
+      {
+        "close": "100",
+        "date": "2026-09-11",
+        "high": "100.5",
+        "known_at": "2026-09-11T14:00:00+08:00",
+        "low": "99",
+        "open": "100",
+        "price_basis_id": "SYNTHETIC:RAW:1",
+        "volume_shares": "3500"
+      }
+    ]
+  },
+  "schema_version": "attempt-view-selection/0.1"
+}

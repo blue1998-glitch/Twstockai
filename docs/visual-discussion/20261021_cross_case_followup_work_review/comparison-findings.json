@@ -1,0 +1,111 @@
+{
+  "scope": "FINITE_RETROSPECTIVE_READING_COMPARISON_NOT_FORMAL_BAND_OR_HOLD_CLASSIFICATION",
+  "facts": [
+    {
+      "case": "G2",
+      "query": "G2-reclaim-37.15",
+      "as_of": "2023-08-02",
+      "later_bars": 6,
+      "closes_above": 6,
+      "strict_low_return_dates": [
+        "2023-07-28"
+      ],
+      "equal_low_dates": [
+        "2023-07-31",
+        "2023-08-02"
+      ],
+      "maximum_later_high": "37.80",
+      "earlier_common_range": [
+        "38.05",
+        "38.25"
+      ]
+    },
+    {
+      "case": "ABC",
+      "query": "ABC-down-28.45",
+      "as_of": "2025-06-12",
+      "later_bars": 8,
+      "whole_bars_below": 8,
+      "maximum_later_high": "28.00",
+      "original_manual_end": "2025-06-02",
+      "original_manual_records": 39
+    },
+    {
+      "case": "A",
+      "query": "A-up-47.35",
+      "as_of": "2026-10-16",
+      "later_bars": 1,
+      "later_low": "48.00",
+      "later_close": "49.15",
+      "return_path_observed": false
+    }
+  ],
+  "analysis": [
+    "G2 supports holding relative to 37.15 while all later highs remain below the earlier common range. No whole-G2 recovery or successful pressure reaction follows from that fact alone.",
+    "G2 July10 below-history and July25 reclaim are one reference history; an opposite-side close updates the current position immediately, without deleting prior prices or requiring a symmetric waiting count.",
+    "ABC later whole-bars below add evidence of departure without extending the original user-reviewed 39 bars or waiting for a new completed lower activity.",
+    "A has an actual close crossing and one later continuation, with an open-ended short follow-up. No observed return is not a verified retest.",
+    "No temporal contradiction was found in four fixed follow-up queries. This does not establish generalization, sample independence, calibrated probabilities or trading rules."
+  ],
+  "relationship_proposals": [
+    {
+      "id": "G2-same-reference-history",
+      "members": [
+        "G2-down-37.15",
+        "G2-reclaim-37.15"
+      ],
+      "observational_relation": "SAME_REFERENCE_EVOLVING_HISTORY",
+      "formal_merge": null,
+      "new_band_inferred": false,
+      "independent_successes_inferred": false
+    },
+    {
+      "id": "G2-local-and-earlier-activity",
+      "observational_relation": "SHARED_REVIEWED_G2_BACKGROUND_WITH_SEPARATE_REFERENCE_SCOPES",
+      "local_reference": "37.15",
+      "earlier_common": [
+        "38.05",
+        "38.25"
+      ],
+      "earlier_source_activity_preserved": true,
+      "earlier_reclaimed": false,
+      "formal_parent_assignment": null
+    },
+    {
+      "id": "ABC-departure-and-later-lower-activity",
+      "observational_relation": "LINKED_WEAKENING_OBSERVATION_WITH_DISTINCT_ORIGINAL_AND_LATER_SOURCES",
+      "original_manual_records": 39,
+      "later_records": 8,
+      "original_end_preserved": true,
+      "formal_merge": null
+    },
+    {
+      "id": "A-cross-and-next-bar",
+      "observational_relation": "ONE_CROSSING_AND_ITS_FOLLOWUP",
+      "separate_new_band_inferred": false,
+      "shared_September17_high_not_two_votes": true,
+      "formal_structure_change": null
+    }
+  ],
+  "retained_B_context": "Previous episode-summaries copied unchanged. B nested large/small relation remains the user answer; not deduced from a single-reference holding count.",
+  "minimum_evidence_semantics": [
+    "Bind evidence to source/reference, origin and cutoff",
+    "Freeze birth; append later observations without retroactive confirmation",
+    "Keep strict intraday crossing, equality and closing return separate",
+    "Keep reference-scoped support separate from unresolved earlier/larger scopes",
+    "Keep distinct activities and original manual intervals even when linked in one observation history"
+  ],
+  "not_defined": {
+    "formal_same_level_merge": null,
+    "formal_parent_or_primary_id": null,
+    "formal_band_bounds_or_membership": null,
+    "holding_duration_or_depth_rule": null,
+    "success_or_failure": null,
+    "confirmation_date": null,
+    "probability": null,
+    "action_eligibility": "NOT_EVALUATED"
+  },
+  "historical_signal_eligible": false,
+  "next_work": "Use these scoped evidence relationships when comparing activity membership proposals; preserve all answered cases and avoid repeating identical price-event research.",
+  "new_manual_question": false
+}

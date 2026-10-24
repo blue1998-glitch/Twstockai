@@ -1,0 +1,23 @@
+{
+  "scope": "DELIVERY_FIXTURE_PREPARATION_NOT_PRODUCTION_ENGINE_FAILURE",
+  "ambiguous": [
+    {
+      "origin": "B77 original research lower bound",
+      "same_price_confirmation_matches": [
+        "sha256:3753f89be8aef29f8f6c7910cbb979ddde8a68a37e496b5148f72dc74311db20",
+        "sha256:c04eb6180508a865ca9f29e5dccc535e7287ebf21936ddb72e9466d61af09311"
+      ],
+      "initial_attempt": "ABORTED_ASSERT_UNIQUE_NO_ARTIFACT_WRITTEN"
+    },
+    {
+      "origin": "B88 original research upper bound and separately existing Jan27 manual reference",
+      "same_price_confirmation_matches": [
+        "sha256:9fbf971f46c19caa9b00657d0b805bc2bd4d782ab617b3818b50ddfe211b7d39",
+        "sha256:06ed5a33f1815df185856333cb471ec3061d4bd613a662c327c2f079205715bd"
+      ],
+      "initial_attempt": "ABORTED_ASSERT_UNIQUE_NO_ARTIFACT_WRITTEN"
+    }
+  ],
+  "correction": "Use exact existing explicitly labeled comparison layer box_ids, never arbitrary same-price selection",
+  "subsequent_missing_selection_errors": "Initial selection file was not written, dependent build/verify/package failed with FileNotFoundError; no artifact overwritten"
+}

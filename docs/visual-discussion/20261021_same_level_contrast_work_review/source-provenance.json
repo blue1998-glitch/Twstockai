@@ -1,0 +1,39 @@
+{
+  "base_commit": "71dbc062a88efbe21e3b2d360b9156c1d4a14dab",
+  "inputs": [
+    {
+      "local": "/workspace/scratch/54685b8dac93/independent-level-review/source-data-2884.json",
+      "sha256": "ab87a51b5b8afd076603f290b10f415bd60d31ae47c5ab2f6d9d609ad4014901"
+    },
+    {
+      "local": "/workspace/scratch/89f271ea68f4/overlap-role-research/overlap-role-registry.json.gz",
+      "sha256": "270a0b20ae2ac5e8e258c79b4170988f4b63d1272ab4c96c90bc6ace6740ef82"
+    },
+    {
+      "local": "/workspace/scratch/e9363d3b9105/b-nested-band-decision/decision.json",
+      "sha256": "0ee61f21a1df8542028b1a5f74cd229519a69a13436eb464aca6f8bc243194d4"
+    },
+    {
+      "local": "/workspace/scratch/e9363d3b9105/b-price-hold-decision/decision.json",
+      "sha256": "f030c0a4b6667c0c24af949ec748f54e6fef60ac9428526eba4436e35317eaab"
+    }
+  ],
+  "price_basis_id": "sha256:3ce70b8fe0dfc818490a4b6209413232aedc76fcab39ba359ed4a3170d75785d",
+  "source_gaps": {
+    "actions_coverage": "UNVERIFIED_NO_NEW_ACTION_AUTHENTICATION",
+    "calendar_status": "PLANNED_PLUS_REVIEWED_EXCEPTIONS_ONLY_NOT_EXHAUSTIVE",
+    "historical_publication_timing": "UNVERIFIED",
+    "known_calendar_missing_dates": [
+      "2022-01-27",
+      "2022-01-28",
+      "2023-08-03",
+      "2024-07-24",
+      "2024-07-25",
+      "2024-10-02",
+      "2024-10-03",
+      "2024-10-31",
+      "2025-11-05"
+    ]
+  },
+  "method": "Query fixed saved pair cohort; copy three exact frozen activities. New interval-side/close-visit projection only. Manual same-level identity remains unanswered."
+}

@@ -1,0 +1,60 @@
+{
+  "schema_version": "work-v03-package-verification/0.1",
+  "review_date": "2026-10-19",
+  "timezone": "Asia/Taipei",
+  "artifact_commit": "31d80971b265942eb3d7573fddf00f6782f20a55",
+  "handoff_commit": "c96195ba52cda852ce8473bdadd10071087afb11",
+  "download": "PASS",
+  "zip_bytes": 4371652,
+  "zip_sha256": "ef258e1dfa1bd965168f630c642b56475cc132fc7184b85dbbfe999e1fde2f9b",
+  "crc": "PASS",
+  "internal_sha256sums": "PASS",
+  "members": {
+    "M1_v0_19_manual_regions_v03.html": {
+      "bytes": 36744203,
+      "sha256": "0a1513b361c1473c4e38bb3c5db2f3477054fe2bb4779592f31b5b73fc84bb8e"
+    },
+    "README.txt": {
+      "bytes": 2465,
+      "sha256": "24b210514f7805e8600c63e53a0e79e314493d583f7080b0b6b12661cfeb7334"
+    },
+    "cases/g1.json": {
+      "bytes": 4408,
+      "sha256": "df6d0668bd0a2b7a20ad1f7a02db7829b00823504e0375aab6745dbf4c73e21c"
+    },
+    "cases/g1_facts.json": {
+      "bytes": 1711,
+      "sha256": "470be7d0a0d608ecc9d7b8177ae2b583b00cc16b071216dfd0560bb631fd39f6"
+    },
+    "cases/g2.json": {
+      "bytes": 3907,
+      "sha256": "9ff93bec1129500eec8cc03663925f63a63f11229d5995681a091048d09382b5"
+    },
+    "cases/g2_verification.json": {
+      "bytes": 2637,
+      "sha256": "2c9adb690f1b2cffc05074b220cb21e14a925a7dbdd1743e41f2728c62d4a759"
+    },
+    "SHA256SUMS.txt": {
+      "bytes": 515,
+      "sha256": "84499c0602e7284b54ae6a0d89600c2ead599d1df91eb15f604a3bbf56dca020"
+    }
+  },
+  "header_direct_source_observation": "M1 價量區域主圖 0.3",
+  "execution": "NOT_EXECUTED",
+  "android": "NOT_TESTED_NEW_BUILD",
+  "initial_verification_failure": {
+    "kind": "WORK_VERIFIER_ASSERTION",
+    "check": "literal header without space before 0.3",
+    "result": "FAILED",
+    "cause": "actual header has a space before 0.3; ZIP and HTML hashes already matched",
+    "resolution": "inspect literal original source; check actual header with space; rerun package verification",
+    "product_modified": false
+  },
+  "limits": [
+    "No browser or Android execution this turn",
+    "No user mobile download or screenshot evidence received",
+    "Prior 383 Python and 208/44/55 browser results read as engineering history, not rerun",
+    "Known file policy blocker not retried or bypassed"
+  ],
+  "matches_published_package_members": true
+}

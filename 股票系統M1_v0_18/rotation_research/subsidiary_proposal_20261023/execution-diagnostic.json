@@ -1,0 +1,15 @@
+{
+  "stage": "POST_TEST_LOG_DISPLAY",
+  "error": "tail used project prefix while cwd already inside project; no such file",
+  "impact": "DISPLAY_ONLY_NO_PRODUCT_TEST_OR_PRODUCER_FAILURE",
+  "correction": "Read rotation_research/subsidiary_proposal_20261023/tests-initial.log from project cwd",
+  "parser_initial_status": "PASS",
+  "product_initial_tests": "24_PASS",
+  "regression_tests": "53_PASS",
+  "prior_evidence_read_helper_error": {
+    "exception": "FileNotFoundError for prior capital_components/tests.json",
+    "cause": "Prior evidence is tests.log, not tests.json",
+    "correction": "Read actual tests-initial.log and tests.log; prior files unchanged",
+    "stage": "READ_ONLY_OLD_EVIDENCE_INVENTORY"
+  }
+}

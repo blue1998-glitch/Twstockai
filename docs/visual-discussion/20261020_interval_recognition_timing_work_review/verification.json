@@ -1,0 +1,65 @@
+{
+  "schema": "m1-recognition-timing-execution-record/1",
+  "build_review_py_runs": 1,
+  "source_checks": {
+    "original_HTML_SHA_and_bundle_fingerprint": "PASS",
+    "extracted_source_SHA_and_bars_MA_MACD_frames_equal_original": "PASS",
+    "two_prefix_date_lengths_and_values": "PASS_1207_AND_1211",
+    "Oct7_saved_core_and_frame_absent": "PASS_NULL_NOT_FABRICATED",
+    "Oct14_original_result_fingerprint": "PASS_READ_ONLY",
+    "no_after_cutoff_rows_or_indicators_plotted": "PASS",
+    "original_source_unchanged_after_plot": "PASS"
+  },
+  "PDF": {
+    "pages": 3,
+    "page_size_points": [
+      1224,
+      792
+    ],
+    "vector_price_volume_indicators": true,
+    "all_pages_rerendered_and_visually_inspected": true,
+    "page2_400percent_crop_rendered_and_visually_inspected": true,
+    "no_clipping_or_label_overlap_seen": true,
+    "text_extraction_lengths": [
+      762,
+      1047,
+      1071
+    ],
+    "sha256": "16e7ad3d5b488fb497c3a5dde29730ae2df9266ad43cf65f419c8674441a7414"
+  },
+  "PNGs": {
+    "page-1.png": {
+      "size": [
+        2550,
+        1650
+      ],
+      "sha256": "1b48a9cf1b4a80c6d04d0d46411fa0dd77d4ef4830face4f2633c82a8bcbfa85"
+    },
+    "page-2.png": {
+      "size": [
+        2550,
+        1650
+      ],
+      "sha256": "bb70cd690e99bbc9e13c43f5c9ef4c252b3dc27185e59e3c444a9e56ece6c37b"
+    },
+    "page-3.png": {
+      "size": [
+        2550,
+        1650
+      ],
+      "sha256": "292cc146db18c1ccd96f499d248378032bb3794630d633852ab739657d2679d6"
+    }
+  },
+  "setup_inspection_failure": {
+    "error": "KeyError as_of from context",
+    "resolution": "Read top-level as_of; inspected all15 saved dates; no saved Oct7 result exists",
+    "product_execution": false
+  },
+  "pending_question": "NOT_ANSWERED",
+  "core_and_indicator_recomputations": 0,
+  "original_core_reaction_source_query_adapter_CLI_bootstrap_old_tests": "NOT_RUN",
+  "browser_ZIP": "NOT_RUN",
+  "Android": "NOT_TESTED_NEW_BUILD",
+  "historical_signal_eligible": false,
+  "primary_pressure_id": null
+}

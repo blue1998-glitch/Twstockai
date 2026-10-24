@@ -1,0 +1,164 @@
+{
+  "pool_cases": {
+    "2884-Oct7": {
+      "candidate_starts": 66,
+      "branch_proposals": 195
+    },
+    "2884-Oct16": {
+      "candidate_starts": 63,
+      "branch_proposals": 260
+    },
+    "2884-control-May4": {
+      "candidate_starts": 36,
+      "branch_proposals": 55
+    },
+    "ABC-May14": {
+      "candidate_starts": 27,
+      "branch_proposals": 39
+    },
+    "ABC-Jun2": {
+      "candidate_starts": 25,
+      "branch_proposals": 30
+    },
+    "ABC-Jun3": {
+      "candidate_starts": 26,
+      "branch_proposals": 54
+    }
+  },
+  "scope_tests": {
+    "2884-reviewed-cutoff": {
+      "events": [
+        [
+          "FIRST_CLOSE_OUTSIDE_OBSERVED_FRAME",
+          "2026-09-30"
+        ],
+        [
+          "RETURNED_INSIDE_FROZEN_FRAME",
+          "2026-10-01"
+        ]
+      ],
+      "proposed_ends": [],
+      "source_gap_qualification": []
+    },
+    "2884-later-rise": {
+      "events": [
+        [
+          "FIRST_CLOSE_OUTSIDE_OBSERVED_FRAME",
+          "2026-09-30"
+        ],
+        [
+          "RETURNED_INSIDE_FROZEN_FRAME",
+          "2026-10-01"
+        ],
+        [
+          "FIRST_CLOSE_OUTSIDE_OBSERVED_FRAME",
+          "2026-10-15"
+        ],
+        [
+          "WHOLE_BAR_OUTSIDE_FROZEN_FRAME",
+          "2026-10-16"
+        ]
+      ],
+      "proposed_ends": [
+        "2026-10-15"
+      ],
+      "source_gap_qualification": []
+    },
+    "2884-direction-control": {
+      "events": [
+        [
+          "FIRST_CLOSE_OUTSIDE_OBSERVED_FRAME",
+          "2026-04-23"
+        ],
+        [
+          "RETURNED_INSIDE_FROZEN_FRAME",
+          "2026-04-24"
+        ],
+        [
+          "FIRST_CLOSE_OUTSIDE_OBSERVED_FRAME",
+          "2026-04-30"
+        ]
+      ],
+      "proposed_ends": [],
+      "source_gap_qualification": []
+    },
+    "ABC-reviewed-39": {
+      "events": [
+        [
+          "FIRST_CLOSE_OUTSIDE_OBSERVED_FRAME",
+          "2025-06-02"
+        ]
+      ],
+      "proposed_ends": [],
+      "source_gap_qualification": []
+    },
+    "ABC-next-record": {
+      "events": [
+        [
+          "FIRST_CLOSE_OUTSIDE_OBSERVED_FRAME",
+          "2025-06-02"
+        ],
+        [
+          "WHOLE_BAR_OUTSIDE_FROZEN_FRAME",
+          "2025-06-03"
+        ]
+      ],
+      "proposed_ends": [
+        "2025-06-02"
+      ],
+      "source_gap_qualification": []
+    },
+    "G2-manual-scope-test": {
+      "events": [
+        [
+          "FIRST_CLOSE_OUTSIDE_OBSERVED_FRAME",
+          "2023-01-17"
+        ],
+        [
+          "OPPOSITE_CLOSE_BEFORE_WHOLE_BAR_EVENT",
+          "2023-01-30"
+        ],
+        [
+          "RETURNED_INSIDE_FROZEN_FRAME",
+          "2023-01-31"
+        ],
+        [
+          "FIRST_CLOSE_OUTSIDE_OBSERVED_FRAME",
+          "2023-02-17"
+        ],
+        [
+          "WHOLE_BAR_OUTSIDE_FROZEN_FRAME",
+          "2023-02-21"
+        ],
+        [
+          "FIRST_CLOSE_OUTSIDE_OBSERVED_FRAME",
+          "2023-02-23"
+        ],
+        [
+          "WHOLE_BAR_OUTSIDE_FROZEN_FRAME",
+          "2023-02-24"
+        ],
+        [
+          "FIRST_CLOSE_OUTSIDE_OBSERVED_FRAME",
+          "2023-05-02"
+        ],
+        [
+          "RETURNED_INSIDE_FROZEN_FRAME",
+          "2023-05-03"
+        ]
+      ],
+      "proposed_ends": [
+        "2023-02-20",
+        "2023-02-23"
+      ],
+      "source_gap_qualification": [
+        "2023-08-03"
+      ]
+    }
+  },
+  "source_sha256": "ab87a51b5b8afd076603f290b10f415bd60d31ae47c5ab2f6d9d609ad4014901",
+  "comparison_sha256": "184bdef0b687ec0ab7bfcaaac2157ff7916fbc1000ef312d81b5efc0c2e73e15",
+  "prior_generator_sha256": "7e7ccc3d4d9fcb091c502c0ae7ee813a9a2722fd7bb70459d9aa8039d6606483",
+  "formal_endpoint_rule": "NOT_ESTABLISHED",
+  "selected_branch": null
+}

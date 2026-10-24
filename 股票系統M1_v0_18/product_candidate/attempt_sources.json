@@ -1,0 +1,54 @@
+{
+  "schema_version": "attempt-view-sources/0.1",
+  "cases": [
+    {
+      "id": "explicit_101_106",
+      "label": "假想101／106｜盤中與完成日",
+      "data_kind": "SYNTHETIC_ENGINEERING_FIXTURE",
+      "history_coverage": "PARTIAL_SUPPLIED_HISTORY",
+      "input": "fixtures/attempt_evidence_v01.json"
+    },
+    {
+      "id": "daily_order",
+      "label": "假想日線｜同日高價與總量",
+      "data_kind": "SYNTHETIC_ENGINEERING_FIXTURE",
+      "history_coverage": "PARTIAL_SUPPLIED_HISTORY",
+      "input": "fixtures/view_daily_order.json"
+    },
+    {
+      "id": "missing_volume",
+      "label": "假想來源｜左區量缺值",
+      "data_kind": "SYNTHETIC_ENGINEERING_FIXTURE",
+      "history_coverage": "PARTIAL_SUPPLIED_HISTORY",
+      "input": "fixtures/view_missing_volume.json"
+    },
+    {
+      "id": "price_precision",
+      "label": "假想原精度｜極接近近期關卡",
+      "data_kind": "SYNTHETIC_ENGINEERING_FIXTURE",
+      "history_coverage": "PARTIAL_SUPPLIED_HISTORY",
+      "input": "fixtures/view_price_precision.json"
+    },
+    {
+      "id": "completed_days",
+      "label": "假想來源｜只提供完成日線",
+      "data_kind": "SYNTHETIC_ENGINEERING_FIXTURE",
+      "history_coverage": "PARTIAL_SUPPLIED_HISTORY",
+      "input": "fixtures/view_completed_days.json"
+    },
+    {
+      "id": "adjusted_basis",
+      "label": "假想Adjusted｜宣告共同錨定",
+      "data_kind": "SYNTHETIC_ENGINEERING_FIXTURE",
+      "history_coverage": "PARTIAL_SUPPLIED_HISTORY",
+      "input": "fixtures/view_adjusted_basis.json"
+    },
+    {
+      "id": "integer_precision",
+      "label": "假想精度壓力例｜大整數股數",
+      "data_kind": "SYNTHETIC_ENGINEERING_FIXTURE",
+      "history_coverage": "PARTIAL_SUPPLIED_HISTORY",
+      "input": "fixtures/view_integer_precision.json"
+    }
+  ]
+}

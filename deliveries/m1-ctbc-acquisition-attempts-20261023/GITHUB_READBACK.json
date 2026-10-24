@@ -1,0 +1,150 @@
+{
+  "scope": "FAILED_ACQUISITION_ARCHIVAL_DOCUMENTS_ONLY_NO_NEW_SOURCE_OR_PRODUCT",
+  "archival_commit": "dd8eae9980c95629ddefe0e7123b14a7efdb8a65",
+  "parent_commit": "af822910278e82a2bf738195411525af8554b08f",
+  "unchanged_product_v010_commit": "f423447c9396bfdd7c524f4c5f63173be1ebb47d",
+  "observed_at": "2026-10-23T14:27:25.165662+00:00",
+  "files": 15,
+  "all_pass": true,
+  "remote_head": "dd8eae9980c95629ddefe0e7123b14a7efdb8a65",
+  "main_head": "9c5b168c09ba80010c74f03b9c537e8b7474256a",
+  "main_unchanged": true,
+  "new_CTBC_source_readback": false,
+  "checks": [
+    {
+      "path": "AGENTS.md",
+      "url": "https://raw.githubusercontent.com/blue1998-glitch/Twstockai/dd8eae9980c95629ddefe0e7123b14a7efdb8a65/AGENTS.md",
+      "http": 200,
+      "bytes": 261438,
+      "sha256": "26cc627fd636f7f4145249f9148006e17baae2dbc523909d6252b16fd4afc0a1",
+      "full_bytes_equal": true,
+      "passed": true
+    },
+    {
+      "path": "CONTINUE_IN_WORK_MODE.md",
+      "url": "https://raw.githubusercontent.com/blue1998-glitch/Twstockai/dd8eae9980c95629ddefe0e7123b14a7efdb8a65/CONTINUE_IN_WORK_MODE.md",
+      "http": 200,
+      "bytes": 363116,
+      "sha256": "07e3edd3d7f942e3e8d3ae0e4c86165b98cf05857fcb935007fc7afe24bb792e",
+      "full_bytes_equal": true,
+      "passed": true
+    },
+    {
+      "path": "M1_V019_GRAPH_CORE_RESUME_HANDOFF.md",
+      "url": "https://raw.githubusercontent.com/blue1998-glitch/Twstockai/dd8eae9980c95629ddefe0e7123b14a7efdb8a65/M1_V019_GRAPH_CORE_RESUME_HANDOFF.md",
+      "http": 200,
+      "bytes": 230320,
+      "sha256": "e119e71d963fe67685e42c05b67e7c9be08c6673650d786785ef9603df44adfe",
+      "full_bytes_equal": true,
+      "passed": true
+    },
+    {
+      "path": "deliveries/m1-ctbc-acquisition-attempts-20261023/README.md",
+      "url": "https://raw.githubusercontent.com/blue1998-glitch/Twstockai/dd8eae9980c95629ddefe0e7123b14a7efdb8a65/deliveries/m1-ctbc-acquisition-attempts-20261023/README.md",
+      "http": 200,
+      "bytes": 2441,
+      "sha256": "ec96f460d6ac8167e68a97391773d83984609bcae48813a1eedd3899788633d5",
+      "full_bytes_equal": true,
+      "passed": true
+    },
+    {
+      "path": "docs/source-research/20261023_ctbc_acquisition_attempts/README.md",
+      "url": "https://raw.githubusercontent.com/blue1998-glitch/Twstockai/dd8eae9980c95629ddefe0e7123b14a7efdb8a65/docs/source-research/20261023_ctbc_acquisition_attempts/README.md",
+      "http": 200,
+      "bytes": 5167,
+      "sha256": "c9d2739518155a7f2fd5dc836e4d85d3c93fedd37bc81f02e706d18622270d2a",
+      "full_bytes_equal": true,
+      "passed": true
+    },
+    {
+      "path": "docs/source-research/20261023_ctbc_acquisition_attempts/WORK_HANDOFF.md",
+      "url": "https://raw.githubusercontent.com/blue1998-glitch/Twstockai/dd8eae9980c95629ddefe0e7123b14a7efdb8a65/docs/source-research/20261023_ctbc_acquisition_attempts/WORK_HANDOFF.md",
+      "http": 200,
+      "bytes": 5132,
+      "sha256": "3dff19555c902d620df88f4fe519a19eb438800192b3b6e6025c0507658ad0d0",
+      "full_bytes_equal": true,
+      "passed": true
+    },
+    {
+      "path": "docs/source-research/20261023_ctbc_acquisition_attempts/attempts/acquire_once.executed.py",
+      "url": "https://raw.githubusercontent.com/blue1998-glitch/Twstockai/dd8eae9980c95629ddefe0e7123b14a7efdb8a65/docs/source-research/20261023_ctbc_acquisition_attempts/attempts/acquire_once.executed.py",
+      "http": 200,
+      "bytes": 2622,
+      "sha256": "79e37ab6e6b6da57cca3ca90fa1feafe06554fa385a65a92ee790f4f8405e253",
+      "full_bytes_equal": true,
+      "passed": true
+    },
+    {
+      "path": "docs/source-research/20261023_ctbc_acquisition_attempts/attempts/ctbc-direct-attempt.meta.json",
+      "url": "https://raw.githubusercontent.com/blue1998-glitch/Twstockai/dd8eae9980c95629ddefe0e7123b14a7efdb8a65/docs/source-research/20261023_ctbc_acquisition_attempts/attempts/ctbc-direct-attempt.meta.json",
+      "http": 200,
+      "bytes": 757,
+      "sha256": "5352a7f5c351ee5e0059da9d48e2e54aa09aeb4dc69ed96f94aee88b5f863ae8",
+      "full_bytes_equal": true,
+      "passed": true
+    },
+    {
+      "path": "docs/source-research/20261023_ctbc_acquisition_attempts/attempts/library-download-attempt.meta.json",
+      "url": "https://raw.githubusercontent.com/blue1998-glitch/Twstockai/dd8eae9980c95629ddefe0e7123b14a7efdb8a65/docs/source-research/20261023_ctbc_acquisition_attempts/attempts/library-download-attempt.meta.json",
+      "http": 200,
+      "bytes": 783,
+      "sha256": "e811fb9c4da44ddf62b664add3970df322424c8fb7b897df0f70d8ca11b95e29",
+      "full_bytes_equal": true,
+      "passed": true
+    },
+    {
+      "path": "docs/source-research/20261023_ctbc_acquisition_attempts/availability.json",
+      "url": "https://raw.githubusercontent.com/blue1998-glitch/Twstockai/dd8eae9980c95629ddefe0e7123b14a7efdb8a65/docs/source-research/20261023_ctbc_acquisition_attempts/availability.json",
+      "http": 200,
+      "bytes": 1898,
+      "sha256": "a2701670e648940600faa22017460bbd4b8f11d92a11e7c3171b1d25b2b9c5f0",
+      "full_bytes_equal": true,
+      "passed": true
+    },
+    {
+      "path": "docs/source-research/20261023_ctbc_acquisition_attempts/bootstrap.log",
+      "url": "https://raw.githubusercontent.com/blue1998-glitch/Twstockai/dd8eae9980c95629ddefe0e7123b14a7efdb8a65/docs/source-research/20261023_ctbc_acquisition_attempts/bootstrap.log",
+      "http": 200,
+      "bytes": 429,
+      "sha256": "775a9224ebb2f9ab4d64a8bb5f194c8b6874001c051500a57fc31f6bd43cd885",
+      "full_bytes_equal": true,
+      "passed": true
+    },
+    {
+      "path": "docs/source-research/20261023_ctbc_acquisition_attempts/document-checks.json",
+      "url": "https://raw.githubusercontent.com/blue1998-glitch/Twstockai/dd8eae9980c95629ddefe0e7123b14a7efdb8a65/docs/source-research/20261023_ctbc_acquisition_attempts/document-checks.json",
+      "http": 200,
+      "bytes": 3201,
+      "sha256": "34bf3aac3f41d121e74bec40d8aed89ef8810da9ec1ba15ff63a960e5e0191e4",
+      "full_bytes_equal": true,
+      "passed": true
+    },
+    {
+      "path": "docs/source-research/20261023_ctbc_acquisition_attempts/network-observation.json",
+      "url": "https://raw.githubusercontent.com/blue1998-glitch/Twstockai/dd8eae9980c95629ddefe0e7123b14a7efdb8a65/docs/source-research/20261023_ctbc_acquisition_attempts/network-observation.json",
+      "http": 200,
+      "bytes": 765,
+      "sha256": "cb4f7d5b299d5edb10d372249ce658e3fab49995959fbbd7340f1b48aebe88c4",
+      "full_bytes_equal": true,
+      "passed": true
+    },
+    {
+      "path": "docs/source-research/20261023_ctbc_acquisition_attempts/preservation.json",
+      "url": "https://raw.githubusercontent.com/blue1998-glitch/Twstockai/dd8eae9980c95629ddefe0e7123b14a7efdb8a65/docs/source-research/20261023_ctbc_acquisition_attempts/preservation.json",
+      "http": 200,
+      "bytes": 431,
+      "sha256": "4a765145d58e7be1ba4475e55f0fcbe9659ed58ca3eacbe948893d1e7cce3f4c",
+      "full_bytes_equal": true,
+      "passed": true
+    },
+    {
+      "path": "docs/source-research/20261023_ctbc_acquisition_attempts/prior-read-inventory.json",
+      "url": "https://raw.githubusercontent.com/blue1998-glitch/Twstockai/dd8eae9980c95629ddefe0e7123b14a7efdb8a65/docs/source-research/20261023_ctbc_acquisition_attempts/prior-read-inventory.json",
+      "http": 200,
+      "bytes": 3270,
+      "sha256": "5e6e1f9696da2ed02fc6d648b035f8cf7f0498d186c174b9c1ba4dc3559e4d65",
+      "full_bytes_equal": true,
+      "passed": true
+    }
+  ]
+}

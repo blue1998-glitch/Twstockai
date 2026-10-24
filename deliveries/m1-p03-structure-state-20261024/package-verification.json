@@ -1,0 +1,82 @@
+{
+  "status": "PASS",
+  "scope": "CURRENT_P03_ENGINE_UI_REPRODUCTION_NOT_MARKET_ACCURACY_OR_ANDROID",
+  "filename": "M1_P03_structure_state_v01_20261024.zip",
+  "bytes": 20458481,
+  "sha256": "a7c7ca4137b4a360dfaeb59a9e916e793dc34ae31d9586df1139c984ecc159b0",
+  "members": 361,
+  "manifest_entries": 360,
+  "crc_unique_safe_paths": true,
+  "all_member_lengths_sha_verified": true,
+  "new_extraction_runs": [
+    {
+      "label": "core-tests",
+      "command": [
+        "python3",
+        "-m",
+        "unittest",
+        "discover",
+        "-s",
+        "tests",
+        "-p",
+        "test_structure_state.py",
+        "-v"
+      ],
+      "returncode": 0,
+      "log": "core-tests-extracted.log"
+    },
+    {
+      "label": "headless",
+      "command": [
+        "python3",
+        "-m",
+        "structure_state.cli",
+        "--input",
+        "/workspace/m1-p03-structure-state-20261024/p03-extracted-cjq8s5bh/artifacts/facts-input.json",
+        "--scenario",
+        "/workspace/m1-p03-structure-state-20261024/p03-extracted-cjq8s5bh/artifacts/scenario.json",
+        "--as-of",
+        "2026-10-16",
+        "--output",
+        "/workspace/m1-p03-structure-state-20261024/p03-extracted-cjq8s5bh/new-headless.json"
+      ],
+      "returncode": 0,
+      "log": "headless-extracted.log"
+    },
+    {
+      "label": "rebuild-html",
+      "command": [
+        "python3",
+        "-m",
+        "structure_state_chart.build",
+        "--output-dir",
+        "structure_state_chart/output/reproduced"
+      ],
+      "returncode": 0,
+      "log": "rebuild-html-extracted.log"
+    }
+  ],
+  "headless_exact_bytes_equal": true,
+  "rebuilt_files_exact_bytes_equal": [
+    "build-verification.json",
+    "facts-input.json",
+    "role-selection.json",
+    "structure-state.json",
+    "scenario.json",
+    "chart-layer.json",
+    "M1_P03_structure_state_v01.html"
+  ],
+  "archive_members_unchanged": true,
+  "current_unique_python_tests": {
+    "new": 39,
+    "reaction_regression": 22,
+    "manual_basis_regression": 4,
+    "total": 65
+  },
+  "new_extraction_same_39_not_added_again": true,
+  "browser_checks": 94,
+  "physical_android": "NOT_TESTED_NEW_BUILD",
+  "file_policy_not_retried": true,
+  "source_version_011_created": false,
+  "new_market_data_or_net_performance": false
+}

@@ -1,0 +1,14 @@
+{
+  "status": "FAIL",
+  "checks": [
+    {
+      "size": {
+        "width": 390,
+        "height": 844
+      },
+      "name": "source1213/frame/basis fixed;local39-row repMay13 recorded;major priority and month precision kept without invented exact boundaries",
+      "status": "PASS"
+    }
+  ],
+  "error": "AssertionError [ERR_ASSERTION]: The expression evaluated to a falsy value:\n\n  assert(Math.abs(g.top-g.expectTop)<.1&&Math.abs(g.bottom-g.expectBottom)<.1)\n\n    at /workspace/scratch/ca1bc9758970/major-pressure/test_browser.cjs:30:3"
+}

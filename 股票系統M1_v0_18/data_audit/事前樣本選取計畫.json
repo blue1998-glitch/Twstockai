@@ -1,0 +1,17 @@
+{
+  "recorded_at_utc": "2026-10-16T06:06:52.010035+00:00",
+  "purpose": "Engineering cross-stock input and deterministic pipeline validation only; no parameter tuning or classification-performance claims",
+  "selection_method": "Predeclare two existing listed common-stock identities, 1101 and 2884, before fetching their prices; add TWSE and non-semiconductor cases beyond existing two TPEX samples",
+  "codes": [
+    "1101",
+    "2884"
+  ],
+  "window": [
+    "2026-01-01",
+    "2026-09-30"
+  ],
+  "price_mode": "RAW_CANDIDATE",
+  "corporate_action_coverage": "UNVERIFIED until separately evidenced; no adjusted outputs without supported verified factors",
+  "rules": "Keep v0.5 algorithms and parameters frozen; record all fetch failures; do not replace symbols based on price pattern or outcomes",
+  "calendar_scope": "Official planned holidays plus actual date comparison; distinguish ad-hoc closures, individual suspensions, no-trade days and source omissions; no full-calendar certification from weekday subtraction alone"
+}

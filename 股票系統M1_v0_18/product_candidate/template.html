@@ -1,0 +1,27 @@
+<!doctype html><html lang="zh-Hant"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<meta http-equiv="Content-Security-Policy" content="default-src 'none'; script-src 'unsafe-inline'; style-src 'unsafe-inline'; connect-src 'none'; object-src 'none'; base-uri 'none'; form-action 'none'">
+<title>M1 v0.19｜結構與動態證據候選</title><style>@@STYLE@@</style></head><body>
+<header><p class="eyebrow">M1 v0.19 · 獨立工程候選</p><h1>結構與動態證據</h1><p>波段關係 → 結構變化 → 量價與動能 → 支持、反證及失效條件。沒有買賣資格或綜合分數。</p></header>
+<aside class="notice">生命週期與三種正式型態仍缺可辨識條件，本版保留未知；價量不能證明吸籌、出貨或持股集中。工程檢查通過不代表核心用途已獲使用者認可。</aside>
+<section class="panel controls"><label>股票／價格模式／保存版本<select id="series"><option value="">請明選資料與版本</option></select></label><label>分析時點（日終）<select id="asOf" disabled></select></label><button id="load" disabled>讀取當時保存證據</button></section>
+<p id="message" role="status">請先明選資料與分析時點。本頁不取得行情、不運算新指標。</p>
+<main id="result" hidden>
+<section class="panel"><div class="headline"><div><p id="scope" class="eyebrow"></p><h2 id="state"></h2></div><button id="download">下載此時點候選 JSON</button></div><p id="coverage"></p>
+<div class="cards"><article><h3>波段與主要參照</h3><p id="structure"></p><p id="structureLimit" class="muted"></p></article><article><h3>生命週期／修正／型態</h3><p id="unknown"></p></article><article><h3>動能與量價現象</h3><p id="activity"></p><p class="muted">MACD 12/26/9、SMA 起始、完整暖機、柱值2×(DIF−DEA)為工程候選；不等於交易規則。</p></article></div>
+<div class="cards"><article><h3>支持證據</h3><ul id="supporting"></ul></article><article><h3>反面／衝突證據</h3><ul id="opposing"></ul></article><article><h3>還缺什麼</h3><ul id="missing"></ul></article></div>
+<h3>本日主要變化</h3><ul id="changes"></ul><details><summary>展開全部接觸、次級變化與原引擎事件</summary><pre id="allChanges"></pre></details><details><summary>版本、結構連結與原始追溯</summary><pre id="lineage"></pre></details></section>
+<section id="charts" class="panel"><div class="chart-toolbar"><button id="previousDay">前一分析日</button><input id="replay" type="range" min="0" max="0" value="0" aria-label="逐日重播"><button id="nextDay">下一分析日</button><button id="full">全螢幕／專注模式</button><button id="exitFocus" hidden>退出專注模式</button></div>
+<div class="controls"><label>視窗起日<input id="from" type="date"></label><label>視窗迄日<input id="to" type="date"></label><button id="applyRange">套用任意日期區間</button><label>觸控方式<select id="interaction"><option value="scroll">單指捲動頁面／點選日期</option><option value="pan">單指平移圖表／雙指縮放</option></select></label></div>
+<div class="chart-toolbar"><button id="zoomIn">時間放大 ＋</button><button id="zoomOut">時間縮小 −</button><button id="left">向前平移</button><button id="right">向後平移</button><button id="reset">全部可用歷史／重設</button></div>
+<details id="priceControls"><summary>價格尺度調整（放大、縮小與上下平移）</summary><div class="chart-toolbar"><button id="priceIn">價格放大</button><button id="priceOut">價格縮小</button><button id="priceUp">價格上移</button><button id="priceDown">價格下移</button><button id="priceAuto">價格自動尺度</button></div></details>
+<p id="range" class="muted" role="status"></p><p id="fullscreenStatus" class="muted"></p><p class="muted">三圖共用日期。橫向拖曳及雙指縮放需先選「圖表平移」；捲動模式可正常上下閱讀。圖表價格使用所選分析日的錨定，回看當時判斷請用重播。</p>
+<h3 id="priceTitle">日 K 與原保存均線</h3><canvas id="price" role="img" aria-label="日K價格與保存均線"></canvas>
+<h3>成交量｜股（原股數，不再次換算）</h3><canvas id="volume" role="img" aria-label="同日期成交量股數"></canvas>
+<h3>MACD｜DIF / DEA / 2×差值 · 工程候選</h3><canvas id="macd" role="img" aria-label="同日期MACD工程候選"></canvas>
+<p id="cursorValues" class="cursor" role="status"></p><button id="inspectDate">以游標日期重播當時判斷</button></section>
+<section class="panel"><h2>當前主結構參照與攻防</h2><p class="muted">依主要層級、與本結構關聯及已保存狀態分組；不是依接近現價或總分認定重要。失效區域不自動變成相反角色。</p><div id="levels" class="level-grid"></div><h3>已確認波段連結</h3><div id="legs"></div><details><summary>展開完整次級／歷史證據</summary><pre id="allEvidence"></pre></details></section>
+<section class="panel"><h2>週月背景（不替代日線必要條件）</h2><p id="background"></p><details><summary>同源、同日保存背景與各口徑</summary><pre id="backgroundRaw"></pre></details></section>
+<section class="panel"><h2>本版仍未完成的核心判斷</h2><p>醞釀、初升、主升、末升、出貨與三種正式整理型態尚無完整可執行定義。本版提供證據鏈與工程候選，未把股票硬分入階段；沒有盤中資料，不辨識盤中點線階梯；缺持有人／分點資料，不宣稱籌碼集中。分類 NOT_VALIDATED、交易資格 NOT_EVALUATED。僅有樣本起訖，並非股票完整生命週期。</p></section>
+</main><script id="candidateData" type="application/json">@@DATA@@</script><script>
+@@SCRIPT@@
+</script></body></html>

@@ -1,0 +1,62 @@
+{
+  "status": "FAIL",
+  "checks": [
+    {
+      "size": {
+        "width": 390,
+        "height": 844
+      },
+      "name": "1213 exact real bars, C low31.80 and no invented closed region or G2 reference",
+      "status": "PASS"
+    },
+    {
+      "size": {
+        "width": 390,
+        "height": 844
+      },
+      "name": "actual zoom controls and C reset update window",
+      "status": "PASS"
+    },
+    {
+      "size": {
+        "width": 390,
+        "height": 844
+      },
+      "name": "pan controls move true source window and reset",
+      "status": "PASS"
+    },
+    {
+      "size": {
+        "width": 390,
+        "height": 844
+      },
+      "name": "drag query selects a real bar without moving window",
+      "status": "PASS"
+    },
+    {
+      "size": {
+        "width": 390,
+        "height": 844
+      },
+      "name": "next/previous follow actual records, no synthetic holiday bars",
+      "status": "PASS"
+    },
+    {
+      "size": {
+        "width": 390,
+        "height": 844
+      },
+      "name": "endpoint records exact OHLCV as unsubmitted local draft without source mutation",
+      "status": "PASS"
+    },
+    {
+      "size": {
+        "width": 390,
+        "height": 844
+      },
+      "name": "responsive controls and readable axis labels remain inside viewport",
+      "status": "PASS"
+    }
+  ],
+  "error": "AssertionError [ERR_ASSERTION]: Expected values to be strictly equal:\n\ntrue !== false\n\n    at /workspace/scratch/ca1bc9758970/core-next/test_c.cjs:19:85"
+}

@@ -1,0 +1,142 @@
+<!doctype html><html lang="zh-Hant"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<meta http-equiv="Content-Security-Policy" content="default-src 'none'; script-src 'unsafe-inline'; style-src 'unsafe-inline'; connect-src 'none'; object-src 'none'; base-uri 'none'; form-action 'none'">
+<title>日・週・月研究對照｜手機閱讀版 v0.18</title><style>
+:root{font:16px/1.6 system-ui,sans-serif;color:#163240;background:#eff4f5}*{box-sizing:border-box}[hidden]{display:none!important}body{max-width:1420px;margin:auto;padding:20px}h1{font-size:1.85rem;margin:0}h2{font-size:1.2rem;margin:0 0 8px}h3{font-size:1rem}.sub{color:#536b76}.banner{padding:14px;background:#fff1d1;border-left:4px solid #ad7915}.panel{background:white;padding:18px;border:1px solid #d7e2e5;border-radius:12px;margin:16px 0;min-width:0}.controls{display:grid;grid-template-columns:repeat(auto-fit,minmax(210px,1fr));gap:12px}label{display:flex;flex-direction:column;font-weight:600;min-width:0}select,button{font:inherit;padding:10px;border:1px solid #9fb5be;border-radius:7px;min-height:46px;min-width:0;width:100%;background:white;color:#163240}button{background:#145d68;color:white;cursor:pointer}button:disabled{opacity:.45;cursor:default}:focus-visible{outline:3px solid #d79e33;outline-offset:2px}.boards{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:14px}.board{margin:0}canvas{width:100%;height:260px;display:block}table{border-collapse:collapse;width:100%;font-size:.87rem;white-space:nowrap}td,th{text-align:left;padding:8px;border-bottom:1px solid #dce6e9}th{background:#edf4f5}.scroll{overflow:auto;max-width:100%}.wrap{white-space:normal;word-break:break-word}.badge{display:inline-block;border-radius:6px;padding:5px 10px;background:#d9ece7;font-weight:700}.bad{background:#ffe5de;color:#8b3024}.soft{background:#fff0c9;color:#6d4a06}#message{font-weight:600}details{margin:12px 0}summary{cursor:pointer;font-weight:600}pre{white-space:pre-wrap;word-break:break-all;font-size:.8rem}.legend{font-size:.8rem;display:flex;gap:10px;flex-wrap:wrap}.facts{font-size:.9rem;word-break:break-word}.muted{color:#627982}.empty{padding:18px;background:#f4f7f8;color:#536b76}#download{max-width:400px}#load{align-self:end}@media(max-width:1000px){.boards{grid-template-columns:1fr}}@media(max-width:600px){body{padding:12px}.panel{padding:12px}h1{font-size:1.5rem}.controls{grid-template-columns:1fr}canvas{height:260px}}
+.value-table{table-layout:fixed;white-space:normal;font-size:.94rem}.value-table th:first-child{width:64px}.value-table td{vertical-align:top;overflow-wrap:anywhere}.value-table .amount{font-variant-numeric:tabular-nums;font-size:1.05rem;font-weight:600}.value-context{display:block;margin-top:3px;color:#536b76;font-size:.8rem;line-height:1.65;overflow-wrap:anywhere}.display-note{font-size:.84rem;color:#536b76}canvas{height:280px;max-width:100%}@media(max-width:600px){.value-table td,.value-table th{padding:10px 7px}canvas{height:280px}.facts{line-height:1.8}.legend{font-size:.85rem;gap:12px}}
+</style></head><body>
+<h1>日・週・月研究對照</h1><p class="sub">M1 v0.18 手機閱讀版｜同一分析日、同一價格基準；讀取已保存資料。</p>
+<p class="banner">日線看操作資訊、週線作輔助、月線看背景。本頁只對照原有數值與證據，不把三者合成買賣建議。分類品質未驗證（NOT_VALIDATED）；交易資格未評估（NOT_EVALUATED）。</p>
+<section class="panel controls" aria-label="選擇保存結果">
+<label>股票／市場<select id="stock"></select></label><label>價格模式<select id="mode"></select></label><label>分析截至日（日終）<select id="date"></select></label>
+<label>日線版本與保存來源<select id="daily"></select></label><label>週月版本與保存來源<select id="period"></select></label><button id="load" disabled>讀取所選對照</button>
+</section><p id="message" role="status" aria-live="polite">請先選擇股票、模式與分析日，再明確選擇保存版本。</p>
+<section id="result" hidden>
+<section class="panel"><span id="badge" class="badge"></span><h2 id="title"></h2><p id="warnings" class="facts"></p><p id="basisNote" class="sub"></p><div class="controls"><label>週／月均線口徑<select id="basis"><option value="elapsed">只用已走完日曆期間</option><option value="candidate">包含尚未走完的當期候選</option></select></label><button id="download" disabled>下載所選原資料與對齊檢查 JSON</button></div>
+<p class="display-note">價格與均線顯示小數兩位（四捨五入）；原始精度保留於下載資料。資料不足保留原因。</p><details><summary>資料對齊檢查、版本與指紋</summary><div class="scroll"><table><thead><tr><th>檢查</th><th>日線</th><th>週月</th><th>結果</th></tr></thead><tbody id="checks"></tbody></table></div><pre id="provenance"></pre></details></section>
+<div id="boards" class="boards">
+<section class="panel board" id="dailyBoard"><h2>日線｜操作資訊</h2><p id="dailyFacts" class="facts"></p><div id="dailyLegend" class="legend"></div><canvas id="dailyChart" width="900" height="300" aria-label="保存的日線均線與可用原始K線" role="img"></canvas><div class="scroll"><table class="value-table"><thead><tr><th>均線</th><th>顯示值／原因</th></tr></thead><tbody id="dailyValues"></tbody></table></div><details><summary>當日來源 K 線（原始價）</summary><pre id="rawBar"></pre></details><details><summary>日線資料品質與原證據</summary><pre id="dailyQuality"></pre></details></section>
+<section class="panel board" id="weeklyBoard"><h2>週線｜輔助</h2><p id="weeklyFacts" class="facts"></p><div id="weeklyLegend" class="legend"></div><canvas id="weeklyChart" width="900" height="300" aria-label="保存的週K與週均線" role="img"></canvas><div class="scroll"><table class="value-table"><thead><tr><th>均線</th><th>顯示值／原因</th></tr></thead><tbody id="weeklyValues"></tbody></table></div><details><summary>週期間明細與空值原因</summary><div class="scroll"><table><tbody id="weeklyBars"></tbody></table></div></details></section>
+<section class="panel board" id="monthlyBoard"><h2>月線｜背景</h2><p id="monthlyFacts" class="facts"></p><div id="monthlyLegend" class="legend"></div><canvas id="monthlyChart" width="900" height="300" aria-label="保存的月K與月均線" role="img"></canvas><div class="scroll"><table class="value-table"><thead><tr><th>均線</th><th>顯示值／原因</th></tr></thead><tbody id="monthlyValues"></tbody></table></div><details><summary>月期間明細與空值原因</summary><div class="scroll"><table><tbody id="monthlyBars"></tbody></table></div></details></section>
+</div>
+<section class="panel" id="structurePanel"><h2>原有日線結構證據</h2><p id="structureFacts" class="facts"></p><p class="sub">「候選規則成立」不代表正式型態或買賣資格。發生、首次觀察與確認時間分開保留。</p><details><summary>轉折候選</summary><div class="scroll"><table><thead><tr><th>層級／方向</th><th>價格</th><th>發生</th><th>首次觀察</th><th>確認</th><th>原狀態</th></tr></thead><tbody id="pivots"></tbody></table></div></details><details><summary>價格區域候選</summary><div class="scroll"><table><thead><tr><th>角色／層級</th><th>下緣～上緣</th><th>建立</th><th>失效</th><th>接觸次數</th><th>原狀態</th></tr></thead><tbody id="zones"></tbody></table></div></details><details><summary>未確認候選與當日事件（原 JSON）</summary><pre id="events"></pre></details></section>
+</section>
+<p class="sub">資料範圍僅為已保存研究樣本，沒有即時報價。已走完日曆期間不保證市場資料完整。原日曆、公司行動涵蓋與歷史版本限制皆保留。</p>
+<script id="cross-data" type="application/json">@@CROSS_DATA@@</script>
+<script>
+'use strict';
+const DATA=JSON.parse(document.getElementById('cross-data').textContent),el=id=>document.getElementById(id);
+let current=null;
+const modes={RAW_CANDIDATE:'原始價候選（Raw）',ADJUSTED_CANDIDATE:'還原價候選（Adjusted）'};
+const reasons={VALUE_AVAILABLE:'有值',INSUFFICIENT_CONTIGUOUS_PERIODS:'連續有效期間不足',OPEN_PERIOD_EXCLUDED:'當期尚未走完，排除',SUPPLIED_NO_TRADING_PERIOD:'提供日曆宣告整期無交易（未認證）',NO_PRICE_RECORDS:'沒有價格資料',LEFT_EDGE_UNCERTAIN:'起始期間不完整',CALENDAR_MISMATCH:'與提供日曆不符',NO_ELAPSED_PERIODS:'沒有已走完期間',EMPTY_INPUT:'沒有來源資料'};
+const reason=x=>(reasons[x]||x)+' ['+x+']';
+const stock=e=>e.exchange+' / '+e.code,unique=xs=>[...new Set(xs)].sort();
+const colours=['#176c85','#b26422','#8060a5','#287951','#a64468'];
+function options(id,values,empty='請選擇'){const node=el(id);node.replaceChildren();const o=document.createElement('option');o.value='';o.textContent=values.length?({stock:'請選擇股票／市場',mode:'請選擇價格模式',date:'請選擇分析日',daily:'請選擇日線保存版本',period:'請選擇週月保存版本'}[id]||'請選擇'):empty;node.append(o);for(const [v,t] of values){const n=document.createElement('option');n.value=v;n.textContent=t;node.append(n)}node.value='';node.disabled=values.length===0}
+function clear(){current=null;el('result').hidden=true;el('download').disabled=true;for(const id of ['checks','provenance','warnings','basisNote','title','dailyFacts','weeklyFacts','monthlyFacts','dailyValues','weeklyValues','monthlyValues','weeklyBars','monthlyBars','pivots','zones','events','rawBar','dailyQuality','structureFacts','dailyLegend','weeklyLegend','monthlyLegend'])el(id).replaceChildren();for(const tf of ['daily','weekly','monthly']){const canvas=el(tf+'Chart'),ctx=canvas.getContext('2d');ctx.setTransform(1,0,0,1,0,0);ctx.clearRect(0,0,canvas.width||900,canvas.height||300)}}
+function matches(e){return stock(e)===el('stock').value&&e.price_mode===el('mode').value&&e.as_of===el('date').value}
+function ready(){const ds=DATA.daily.filter(matches),ps=DATA.period.filter(matches);el('load').disabled=(!ds.length&&!ps.length)||(ds.length>0&&!el('daily').value)||(ps.length>0&&!el('period').value);el('message').textContent=!ds.length&&ps.length?'此日期沒有保存日線；可查看獨立週月資料。':ds.length&&!ps.length?'此日期沒有保存週月；可查看獨立日線資料。':'請明確選擇保存版本，再讀取對照。'}
+function cell(row,text){const td=document.createElement('td');td.textContent=text;row.append(td)}
+function row(body,values){const tr=document.createElement('tr');for(const v of values)cell(tr,v);el(body).append(tr)}
+const plotNumber=v=>Number(typeof v==='string'?v.replaceAll(',',''):v);
+// Decimal-string formatting is display-only. Do not round saved data via Number.
+function displayPrice(value){
+ if(value===null||value===undefined)return '—';
+ const original=String(value),match=original.match(/^([+-]?)(\d+|\d{1,3}(?:,\d{3})+)(?:\.(\d+))?$/);
+ if(!match)return original;
+ const whole=match[2].replaceAll(',',''),fraction=(match[3]||'')+'000';
+ let cents=BigInt(whole+fraction.slice(0,2));
+ if(fraction[2]>='5')cents+=1n;
+ const digits=cents.toString().padStart(3,'0');
+ const integer=digits.slice(0,-2).replace(/\B(?=(\d{3})+(?!\d))/g,',');
+ return (match[1]==='-'&&cents!==0n?'-':'')+integer+'.'+digits.slice(-2);
+}
+function valueRow(body,label,value,emptyReason,context=''){
+ const tr=document.createElement('tr');cell(tr,label);
+ const td=document.createElement('td'),amount=document.createElement('span');
+ amount.className='amount';amount.textContent=value===null?'— '+emptyReason:displayPrice(value);td.append(amount);
+ if(context){const note=document.createElement('span');note.className='value-context';note.textContent=context;td.append(note)}
+ tr.append(td);el(body).append(tr);
+}
+function chart(tf,dates,bars,series){
+ const canvas=el(tf+'Chart'),ctx=canvas.getContext('2d');
+ const bounds=typeof canvas.getBoundingClientRect==='function'?canvas.getBoundingClientRect():{width:900,height:300};
+ if(bounds.width<=0||bounds.height<=0)return;
+ const width=bounds.width,height=bounds.height;
+ const deviceRatio=typeof window==='undefined'?1:window.devicePixelRatio||1;
+ const ratio=Number.isFinite(deviceRatio)&&deviceRatio>0?deviceRatio:1;
+ canvas.width=Math.max(1,Math.round(width*ratio));canvas.height=Math.max(1,Math.round(height*ratio));
+ ctx.setTransform(ratio,0,0,ratio,0,0);ctx.clearRect(0,0,width,height);
+ el(tf+'Legend').replaceChildren();
+ series.forEach((s,i)=>{const label=document.createElement('span');label.textContent=s.name;label.style.color=colours[i];el(tf+'Legend').append(label)});
+ const all=series.flatMap(s=>s.values.filter(value=>value!==null).map(plotNumber));
+ for(const bar of bars)if(bar&&bar.close!==null)all.push(plotNumber(bar.high),plotNumber(bar.low));
+ if(!all.length)return;
+ if(all.some(value=>!Number.isFinite(value))){el(tf+'Facts').textContent+=' 圖表座標超出範圍，請查看下方數值。';return}
+ const low=Math.min(...all),high=Math.max(...all),span=high-low||Math.max(Math.abs(high)*.01,1);
+ const axisLabels=Array.from({length:5},(_,index)=>displayPrice(String(high-(high-low)*index/4)));
+ ctx.font='13px system-ui, sans-serif';
+ const measured=axisLabels.map(label=>typeof ctx.measureText==='function'?ctx.measureText(label):null);
+ const measuredWidth=Math.max(0,...measured.map(size=>size&&Number.isFinite(size.width)?size.width:0));
+ const left=Math.max(52,Math.min(width*.36,measuredWidth+12)),right=12,top=15,bottom=height-34;
+ const plotWidth=Math.max(1,width-left-right),plotHeight=bottom-top;
+ const x=index=>left+plotWidth*index/Math.max(dates.length-1,1);
+ const y=value=>bottom-(plotNumber(value)-low+span*.05)/(span*1.1)*plotHeight;
+ ctx.textAlign='right';ctx.textBaseline='middle';
+ for(let index=0;index<5;index++){
+  const level=high-(high-low)*index/4,position=y(level);
+  ctx.strokeStyle='#e6edef';ctx.lineWidth=1;ctx.beginPath();ctx.moveTo(left,position);ctx.lineTo(width-right,position);ctx.stroke();
+  ctx.fillStyle='#536b76';ctx.fillText(axisLabels[index],left-7,position);
+ }
+ ctx.textAlign='left';ctx.textBaseline='alphabetic';
+ if(dates.length){ctx.fillText(dates[0],left,height-9);ctx.textAlign='right';ctx.fillText(dates[dates.length-1],width-right,height-9)}
+ const candleWidth=Math.max(.8,Math.min(10,plotWidth/Math.max(dates.length,1)*.65));
+ ctx.save();ctx.beginPath();ctx.rect(left-candleWidth/2,top-2,plotWidth+candleWidth,plotHeight+4);ctx.clip();
+ bars.forEach((bar,index)=>{
+  if(!bar||bar.close===null)return;
+  const colour=plotNumber(bar.close)>plotNumber(bar.open)?'#c53737':plotNumber(bar.close)<plotNumber(bar.open)?'#178052':'#657783';
+  ctx.strokeStyle=colour;ctx.fillStyle=colour;ctx.lineWidth=1;ctx.beginPath();ctx.moveTo(x(index),y(bar.high));ctx.lineTo(x(index),y(bar.low));ctx.stroke();
+  ctx.fillRect(x(index)-candleWidth/2,Math.min(y(bar.open),y(bar.close)),candleWidth,Math.max(1,Math.abs(y(bar.open)-y(bar.close))));
+ });
+ series.forEach((s,index)=>{
+  ctx.strokeStyle=colours[index];ctx.lineWidth=1.7;ctx.beginPath();let pen=false;
+  s.values.forEach((value,i)=>{if(value===null){pen=false;return}if(pen)ctx.lineTo(x(i),y(value));else ctx.moveTo(x(i),y(value));pen=true});ctx.stroke();
+ });
+ ctx.restore();
+}
+function daily(d){
+ el('dailyValues').replaceChildren();el('pivots').replaceChildren();el('zones').replaceChildren();
+ if(!d){el('dailyFacts').textContent='此選擇沒有日線保存結果，不補算。';el('structurePanel').hidden=true;return}
+ const structure=d.snapshot.structure,ma=d.snapshot.daily_ma;
+ el('dailyFacts').textContent=d.versions.structure+' / '+d.versions.daily_ma+'；'+d.source_candles.length+' 筆來源。'+(d.price_mode==='ADJUSTED_CANDIDATE'?'還原日 K 沒有存入此契約，本圖只畫保存均線，不在頁面推算。':'K 線使用保存工作單的原始 OHLC，紅漲綠跌。');
+ for(const period of [5,20,60,130,260])valueRow('dailyValues',period+' 日',ma.curves[String(period)].at(-1),'資料不足；需要 '+period+' 筆，保存 '+ma.bars+' 筆');
+ chart('daily',d.source_candles.map(bar=>bar.date),d.price_mode==='RAW_CANDIDATE'?d.source_candles:[],[5,20,60,130,260].map(period=>({name:period+' 日',values:ma.curves[String(period)]})));
+ el('rawBar').textContent=JSON.stringify(d.source_candles.at(-1)||null,null,2);
+ el('dailyQuality').textContent=JSON.stringify({source:d.source,data_quality:structure.data_quality,evidence_coverage:d.snapshot.evidence_coverage,corporate_action_coverage:d.snapshot.corporate_action_coverage,calendar_context:d.calendar_context},null,2);
+ el('structurePanel').hidden=false;
+ el('structureFacts').textContent='原結構狀態 '+structure.structure_status+'；證據充分程度 '+structure.evidence_sufficiency+'；交易資格 '+structure.action_qualification;
+ for(const pivot of structure.pivots)row('pivots',[(pivot.profile==='major'?'主要':'次級')+' / '+(pivot.kind==='HIGH'?'高點':'低點'),displayPrice(pivot.price),pivot.occurred_at,pivot.first_observed_at,pivot.confirmed_at,pivot.status]);
+ for(const zone of structure.zones)row('zones',[zone.role+' / '+zone.profile,displayPrice(zone.low)+' ~ '+displayPrice(zone.high),zone.created_at,zone.invalidated_at||'—',zone.touch_episodes,zone.state]);
+ el('events').textContent=JSON.stringify({pending:structure.pending,daily_events:structure.daily_events},null,2);
+}
+function period(tf,p){
+ el(tf+'Values').replaceChildren();el(tf+'Bars').replaceChildren();
+ if(!p){el(tf+'Facts').textContent='此選擇沒有週月保存結果，不補算。';return}
+ const snapshot=p.record.result.snapshot,block=snapshot[tf],values=block[el('basis').value];
+ el(tf+'Facts').textContent='分析錨定 '+snapshot.as_of+'；最後實際價格日 '+(snapshot.last_price_date||'—')+'；日曆 '+snapshot.calendar_authentication+'。K 棒包含已保存的當期；均線口徑另依選擇，紅漲綠跌。';
+ for(const n of block.periods){
+  const latest=values.latest[String(n)],why=reasons[latest.reason]||latest.reason;
+  valueRow(tf+'Values',n+(tf==='weekly'?' 週':' 月'),latest.value,why,'期間 '+(latest.period||'—')+' · 最後價格日 '+(latest.last_price_date||'—'));
+ }
+ chart(tf,block.bars.map(bar=>bar.period),block.bars,block.periods.map(n=>({name:n+(tf==='weekly'?' 週':' 月'),values:values.curves[String(n)]})));
+ for(const [index,bar] of block.bars.entries())row(tf+'Bars',[bar.period,bar.calendar_state==='OPEN_CALENDAR_PERIOD'?'尚未走完':'日曆已走完',bar.period_start+' ~ '+bar.period_end,'觀察至 '+bar.observed_through,'最後價日 '+(bar.last_price_date||'—'),'OHLC '+[bar.open,bar.high,bar.low,bar.close].map(displayPrice).join(' / '),'完整量 '+(bar.volume_shares===null?'—':bar.volume_shares)+' / 已知 '+(bar.known_volume_sum_shares===null?'—':bar.known_volume_sum_shares),bar.calendar_status,...block.periods.map(n=>values.curves[String(n)][index]===null?reason(values.point_status[String(n)][index]):displayPrice(values.curves[String(n)][index]))]);
+}
+function draw(){if(!current)return;el('basisNote').textContent=(el('basis').value==='elapsed'?'週月均線只使用已走完日曆期間。':'週月均線包含當期候選值。')+' 不混用其他分析日的還原尺度；空值斷線，價格顯示小數兩位；下載保留原始精度。';daily(current.daily);period('weekly',current.period);period('monthly',current.period)}
+function show(){clear();try{const ds=DATA.daily.filter(matches),ps=DATA.period.filter(matches);if(ds.length&&!el('daily').value||ps.length&&!el('period').value)throw Error('請選擇保存版本');const d=ds.find(x=>x.key===el('daily').value)||null,p=ps.find(x=>x.key===el('period').value)||null;if(ds.length&&!d||ps.length&&!p||!d&&!p)throw Error('沒有指定的保存紀錄，不選替代版本');const v=DATA.views.find(x=>x.daily_key===(d?d.key:null)&&x.period_key===(p?p.key:null)&&x.scope.as_of===el('date').value&&x.scope.code===(d||p).code);if(!v)throw Error('沒有預先驗證的對齊結果');current={alignment:v,daily:d,period:p};el('result').hidden=false;el('download').disabled=false;el('title').textContent=el('stock').value+'｜'+modes[(d||p).price_mode]+'｜'+el('date').value;const conflict=v.status==='CONFLICT';el('badge').className='badge'+(conflict?' bad':v.allow_comparison?'':' soft');el('badge').textContent=conflict?'資料矛盾，停止合併展示':v.allow_comparison?'保存輸入對齊，分類與策略仍未驗證':v.status==='MISSING_DAILY'?'缺少日線，只顯示獨立週月':'缺少週月，只顯示獨立日線';el('warnings').textContent=v.warnings.join(' ');for(const c of v.checks)row('checks',[c.field,typeof c.daily==='string'?c.daily:JSON.stringify(c.daily),typeof c.period==='string'?c.period:JSON.stringify(c.period),c.status]);el('provenance').textContent=JSON.stringify({view_id:v.view_id,daily:d?{store:d.store,record_id:d.record_id,versions:d.versions,reason:d.reason,lineage:d.lineage}:null,period:p?{store:p.store,analysis_id:p.analysis_id,reason:p.record.reason,metadata:p.record.metadata,record_fingerprint:p.record.record_fingerprint}:null},null,2);el('boards').hidden=conflict;el('structurePanel').hidden=conflict;if(!conflict)draw();el('message').textContent=conflict?'檢查未通過；原資料與矛盾原因可下載。':'已讀取指定保存資料；沒有重新計算。'}catch(error){clear();el('message').textContent='無法顯示：'+error.message}}
+el('stock').addEventListener('change',()=>{clear();for(const id of ['mode','date','daily','period'])options(id,[]);const rows=[...DATA.daily,...DATA.period].filter(e=>stock(e)===el('stock').value);options('mode',unique(rows.map(e=>e.price_mode)).map(x=>[x,modes[x]]));el('load').disabled=true;el('message').textContent='請選擇價格模式與分析日。'});
+el('mode').addEventListener('change',()=>{clear();for(const id of ['date','daily','period'])options(id,[]);const rows=[...DATA.daily,...DATA.period].filter(e=>stock(e)===el('stock').value&&e.price_mode===el('mode').value);options('date',unique(rows.map(e=>e.as_of)).map(x=>[x,x]));el('load').disabled=true});
+el('date').addEventListener('change',()=>{clear();const ds=DATA.daily.filter(matches),ps=DATA.period.filter(matches);options('daily',ds.map(d=>[d.key,d.versions.structure+' / '+d.versions.daily_ma+'｜'+d.store+'｜'+d.record_id.slice(7,19)]),'沒有保存日線');options('period',ps.map(p=>[p.key,p.record.result.snapshot.rule_version+' / '+p.record.result.adapter_version+'｜'+p.store+'｜'+p.analysis_id.slice(7,19)]),'沒有保存週月');ready()});
+for(const id of ['daily','period'])el(id).addEventListener('change',()=>{clear();ready()});el('load').addEventListener('click',show);el('basis').addEventListener('change',()=>{if(current&&current.alignment.status!=='CONFLICT')draw()});
+el('download').addEventListener('click',()=>{if(!current)return;const s=current.alignment.scope;const value={schema_version:'cross-timeframe-view/1.0',selection:{schema_version:'cross-timeframe-selection/1.0',...s,daily:current.daily?{store:current.daily.store,record_id:current.daily.record_id}:null,period:current.period?{store:current.period.store,analysis_id:current.period.analysis_id}:null},alignment:current.alignment,daily:current.daily,period:current.period,classification_quality:'NOT_VALIDATED',action_qualification:'NOT_EVALUATED'};const url=URL.createObjectURL(new Blob([JSON.stringify(value,null,2)],{type:'application/json'}));const a=document.createElement('a');a.href=url;a.download=s.code+'_'+s.price_mode+'_'+s.as_of+'_研究對照.json';a.click();URL.revokeObjectURL(url)});
+if(typeof window!=='undefined')window.addEventListener('resize',()=>{if(current&&current.alignment.status!=='CONFLICT')draw()});
+options('stock',unique([...DATA.daily,...DATA.period].map(stock)).map(x=>[x,x]));for(const id of ['mode','date','daily','period'])options(id,[]);clear();el('load').disabled=true;
+</script></body></html>

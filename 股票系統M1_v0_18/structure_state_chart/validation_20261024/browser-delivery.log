@@ -1,0 +1,14 @@
+AssertionError [ERR_ASSERTION]: The expression evaluated to a falsy value:
+
+  assert.ok(afterPan.view.start<beforePan.view.start)
+
+    at /workspace/Twstockai/股票系統M1_v0_18/structure_state_chart/test_browser.cjs:56:113
+    at ok (/workspace/Twstockai/股票系統M1_v0_18/structure_state_chart/test_browser.cjs:12:22)
+    at run (/workspace/Twstockai/股票系統M1_v0_18/structure_state_chart/test_browser.cjs:56:4) {
+  generatedMessage: true,
+  code: 'ERR_ASSERTION',
+  actual: false,
+  expected: true,
+  operator: '==',
+  diff: 'simple'
+}

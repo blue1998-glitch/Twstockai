@@ -1,0 +1,52 @@
+{
+  "assets": {
+    "1101": {
+      "saved_dates": 317,
+      "official_market_dates": 317,
+      "missing_saved_rows": [],
+      "saved_dates_without_market_session": [],
+      "open_market_no_security_quote": [
+        {
+          "date": "2025-08-13",
+          "source_id": "archived-months:fd5674f6d424dadbfe0644453e4f54c9ed8943fe3149b6f681f24932176db801",
+          "basis_id": "RAW:fd5674f6d424dadbfe0644453e4f54c9ed8943fe3149b6f681f24932176db801",
+          "status": "MARKET_OPEN_SECURITY_NO_QUOTE_CAUSE_UNKNOWN_NOT_IMPUTED"
+        }
+      ]
+    },
+    "2884": {
+      "saved_dates": 317,
+      "official_market_dates": 317,
+      "missing_saved_rows": [],
+      "saved_dates_without_market_session": [],
+      "open_market_no_security_quote": [
+        {
+          "date": "2025-11-05",
+          "source_id": "archived-months:c27514e56b61b669362aaf8fdd7223acb7caaabcdaf0fa6ccf4a17909ba9ac60",
+          "basis_id": "RAW:c27514e56b61b669362aaf8fdd7223acb7caaabcdaf0fa6ccf4a17909ba9ac60",
+          "status": "MARKET_OPEN_SECURITY_NO_QUOTE_CAUSE_UNKNOWN_NOT_IMPUTED"
+        }
+      ]
+    }
+  },
+  "planned_calendar_crosscheck": [
+    {
+      "year": 2025,
+      "path": "股票系統M1_v0_18/pressure_chart/data/calendars-20261018/TWSE_2025.calendar.json",
+      "source_url": "https://www.twse.com.tw/rwd/zh/holidaySchedule/holidaySchedule?response=json&date=20250101",
+      "source_sha256": "5c85396aa2c0bf45add08a257aa6343aac2d48f9d6bb54da17c7f88fefcb71f8",
+      "planned_closed_but_market_open": [],
+      "weekday_no_market_row_not_in_planned": []
+    },
+    {
+      "year": 2026,
+      "path": "股票系統M1_v0_18/pressure_chart/data/calendars-20261018/TWSE_2026.calendar.json",
+      "source_url": "https://www.twse.com.tw/rwd/zh/holidaySchedule/holidaySchedule?response=json&date=20260101",
+      "source_sha256": "7fefe785ea7155a5004a2eb74486ad865ea5c4b5f02ee0cffbbdacb1ca2ea390",
+      "planned_closed_but_market_open": [],
+      "weekday_no_market_row_not_in_planned": [
+        "2026-07-10"
+      ]
+    }
+  ]
+}
