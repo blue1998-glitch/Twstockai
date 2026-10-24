@@ -1,3 +1,5 @@
+> 最新明示研究段最大量對照：[BAND_VOLUME.md](BAND_VOLUME.md)、[本輪驗收](validation_band_volume_20261024/驗收報告.md)、[新PNG／JSON／HTML／ZIP](../../deliveries/m1-explicit-band-volume-20261024/README.md)。沿用0.2主圖與原五JSON，P0-3及來源0.10不改，密集量峰代表線未實作。本輪32 Python／88 Chromium，不累加下方歷史。
+
 > 顯示最新0.2：讀[READABILITY.md](READABILITY.md)、[本輪實測](validation_readability_20261024/驗收報告.md)及[新版PNG／HTML／JSON／ZIP入口](../../deliveries/m1-p03-readability-20261024/README.md)。原0.1核心、五份JSON及下方舊工程／驗收保持；不是來源0.11，不重跑歷史65／94。
 
 # P0-3：接入既有人工模式研究主圖

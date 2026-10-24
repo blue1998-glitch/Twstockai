@@ -1,3 +1,15 @@
+# 2026-10-24 Codex｜明示研究段最大量已接入：不改P0-3、不估密集量峰
+
+最新接續M1_EXPLICIT_BAND_VOLUME_HANDOFF.md，成品及固定原bytes收據入口deliveries/m1-explicit-band-volume-20261024/README.md。原段量helper已存在，本輪只補來源／可知資格及主圖對照：沿graph_core保存candidate.volume（不重跑analyze／_volume）、pressure_chart.volume_facts、candle_region_chart.envelope、reaction_facts.compare／make_input，無平行最大量算法。新reaction_facts/band_volume.py純接線、build_volume外部IO、band_volume.js只呈現；原P0-3／指標／模式路由及五JSON、角色／狀態／事件／ID保持。
+
+1101 Raw／B88完整明示保存來源155根，2025-11-19～2026-07-14；最大量1/12的98,217,134股，10/16為57,437,884、BELOW差額-40,779,250。來源原K與最高價K不同；量日／候選確認及參照可知9/1／實際後來選取分存，確認前不露完整reference。同量全來源、缺日／缺量／基底或指紋衝突拒比，完整指保存成員不冒完整市場日曆。前筆量與最大量分開，未越不判壞、不取消過線。B88 formal_price_bounds=null仍研究候選；密集量峰代表線NOT_IMPLEMENTED及理由保留，不用平均／中位數／固定比例替代。
+
+本輪26新Python＋6相關回歸＝32，最終88項新Chromium三視窗／4下載檢查通過；初次mock函式名稱錯誤及截圖廣角調整留史，不累加中間88／新解壓同26或歷史65／94、上一輪6／94。桌面／手機直橫廣角局部與來源PNG、原精度JSON及可重現ZIP已交付；Android NOT_TESTED_NEW_BUILD、file://未重試。只交Work看新圖用途差異，完整指令見新handoff，不重問已答P0-3／P0-4。
+
+來源0.10及全部parent／庫／Raw null／UNKNOWN／策略引擎／歷史／舊成品／main及舊警告不改，不建來源0.11／catalog、不回寫null、不重抓來源或重試受拒入口。完整行動／個人權利／淨分配、Raw／Adjusted／歷史公布／主檔／SQLite等缺口保持，不跑每日淨帳／六方案／績效，全部false/null資格保持。最大量工程不等密集量峰、完整帶自動切段／主壓力、全市場、換股或飛輪完成。不部署付費交易訊息或子代理。以下原文留史。
+
+---
+
 # 2026-10-24 Codex｜P0-3用途檢視後顯示0.2：事件／手機繪圖區／日期分欄
 
 最新完整接續 `M1_P03_READABILITY_HANDOFF.md`；成品／直接PNG與固定回讀在 `deliveries/m1-p03-readability-20261024/README.md`。只增量呈現，不改structure_state／reaction_facts／graph_core、角色、狀態、事件、ID、K／MA／MACD及五份原JSON；原0.1工程702e9144與收據34d6f782／全部舊成品保留。新view_version0.2不是來源0.11。

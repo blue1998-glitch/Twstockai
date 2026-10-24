@@ -1,3 +1,5 @@
+> 最新明示研究段最大量接線讀root M1_EXPLICIT_BAND_VOLUME_HANDOFF.md、structure_state_chart/BAND_VOLUME.md及validation_band_volume_20261024。只重用既有最大量helper，不改原P0-3／五JSON／模式路由或估密集量峰；本輪26新＋6相關Python／88 Chromium，Android未測，不累加歷史。下一步只Work新圖用途檢視。下方原文留史。
+
 > 最新P0-3顯示0.2接續root M1_P03_READABILITY_HANDOFF.md及structure_state_chart/READABILITY.md、validation_readability_20261024/驗收報告。只事件可讀性／手機有效繪圖／來源日期及中性量觀察，原核心／JSON／0.1成品完整保留；本輪6 Python／94新腳本Chromium，不與歷史65／94相加。Android未測，下一步只Work看新圖用途差異。下方原文留史。
 
 > 2026-10-24最新：P0-3獨立結構狀態與既有人工模式主圖已接入，讀structure_state/README.md、structure_state_chart/README.md及validation_20261024/驗收報告.md，直接PNG／HTML／JSON／ZIP入口在root deliveries/m1-p03-structure-state-20261024。manual_basis／manual_basis_chart模式切換已實作，不重做；新附層只接受明示來源角色，不等自動選帶或正式策略。真實B88案例是研究角色提案，非人工核定原箱；39新＋26相關Python／94 Chromium實跑通過，Android未測，全部原來源／引擎／庫／歷史限制保持。最新完整Work指令見root M1_P03_STRUCTURE_STATE_HANDOFF.md；下方歷史原文保留。
