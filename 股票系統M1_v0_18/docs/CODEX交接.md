@@ -1,3 +1,5 @@
+> 2026-10-24最新：P0-3獨立結構狀態與既有人工模式主圖已接入，讀structure_state/README.md、structure_state_chart/README.md及validation_20261024/驗收報告.md，直接PNG／HTML／JSON／ZIP入口在root deliveries/m1-p03-structure-state-20261024。manual_basis／manual_basis_chart模式切換已實作，不重做；新附層只接受明示來源角色，不等自動選帶或正式策略。真實B88案例是研究角色提案，非人工核定原箱；39新＋26相關Python／94 Chromium實跑通過，Android未測，全部原來源／引擎／庫／歷史限制保持。最新完整Work指令見root M1_P03_STRUCTURE_STATE_HANDOFF.md；下方歷史原文保留。
+
 > 最新交付為pressure_chart/的獨立五年官方Raw／雙維壓力來源主圖；先讀root CONTINUE_IN_WORK_MODE.md最新節、pressure_chart/README.md與validation_20261018/驗收報告.md。四股1213／1214根、244月回應到2026-10-16，原引擎／策略／庫／舊頁與原1490frame數值未變。五年Adjusted／完整公司行動及六日主證未完成；正式高牆／魔王／衰減與增量門檻未知。新頁Android NOT_TESTED_NEW_BUILD，舊technical部分證據分開保留。下方為歷史交接，不覆蓋最新狀態。
 
 > 最新獨立主圖交付：請讀repository root CONTINUE_IN_WORK_MODE.md最上方及本專案 technical_chart/README.md、technical_chart/validation_20261017/驗收報告.md。新頁technical-chart-view/0.1直接呈現真實日K／量／MACD、導航、原保存證據與JSON。1101／2884僅179根、6488／8069僅283根，無多年或真實盤中。新主圖Android NOT_TESTED；舊嘗試頁PARTIAL_EVIDENCE_OBSERVED獨立保留。原引擎、策略、schema、庫與舊頁不改；下方舊狀態按其歷史時點閱讀。

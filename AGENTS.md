@@ -1,3 +1,19 @@
+# 2026-10-24 Codex｜回到核心：P0-3結構狀態已接入既有人工模式主圖
+
+本輪依最新使用者指令將主線由來源研究轉回已確認核心工程。`manual_basis/`／`manual_basis_chart/`的人工Raw／Adjusted模式切換已有完成，不重做，也不再列未實作；較早「未證／尚未整合」段落保留為其當時狀態。新增 `股票系統M1_v0_18/structure_state/` 純數值P0-3附層及 `structure_state_chart/` 增量主圖，重用reaction_facts三態／路徑與原模式路由；原K／MA／MACD數值樹不改。最新完整接續 `M1_P03_STRUCTURE_STATE_HANDOFF.md`；直接廣角／局部PNG、HTML／JSON／ZIP與固定原bytes讀回見 `deliveries/m1-p03-structure-state-20261024/README.md`。
+
+有效明示參照下：收盤嚴格過回檔高點轉強；未過也未破原箱底整理；嚴格破箱底轉弱。相等獨立保留、不當越過或跌破；淺回檔線不作硬性判弱界，量／MACD另列不否定過線。缺來源／角色／時序／同基底版本或中斷／矛盾就證據不足；核心無UI／IO，來源／角色可知與後來選取分開，未來資料不回寫舊狀態事件，保留最初突破與先前轉弱，不推盤中先後。
+
+真實1101原Raw1213根及B88僅明示研究角色，正式price_bounds仍null，非人工核定原箱。研究上緣26.95與下緣20.25原K／來源末轉折／確認各分存；10/13高26.85作單次返回階段研究提案，不借原④5/13同價，不是通用選高公式。條件式10/13整理→14轉強→15整理→16轉強；10/12原突破保留，實例無轉弱／相等，工程反例另存非行情。核心規則工程完成不等自動完整帶／主要壓力、全市場、勝率、換股或資金飛輪完成。
+
+本輪39新＋22 reaction／4模式相關回歸＝65個Python唯一測試範圍，Chromium154最後94檢查PASS；早期32／37子集、71介面檢查及重驗不累加。實際三視窗、拖曳／移圖／觸控放大、同步、定位、下載與重播已驗，首截圖裁切及手機測試座標越出視野的失敗／修正保留。無網頁真實CLI輸出與成品結果完整bytes相同；新Android仍NOT_TESTED_NEW_BUILD，file://不重試。圖中文字型當前可讀不抹舊Fontconfig／xref。
+
+來源0.10及全部parent、策略參數／舊引擎、庫、Raw null／UNKNOWN、原件、歷史／舊成品及main保持；不建來源0.11或重複catalog，不回寫null。完整公司行動／權息／個人權利／淨分配及九起點等缺口不解除，也不作本輪工程無限前置。execution_qualified=false、imputed_close／valuation=null、historical_signal_eligible=false、primary_pressure_id=null、policy_authorized=false；不跑每日淨帳／六方案／績效，全部受拒入口及舊來源未重試重抓。
+
+下一步只Work看新真實廣角／局部與用途差異，完整可貼指令在M1_P03_STRUCTURE_STATE_HANDOFF；不重問P0-3或轉回無限來源歸檔。Work唯讀，不bootstrap／工程／測試／寫入；真正新核心歧義才配充分真圖詢問，明確缺陷交回原唯一Codex。無子代理、不改main、不部署付費交易訊息。以下歷史原文完整保留。
+
+---
+
 # 2026-10-23 Codex｜台泥114年報來源歸檔：1月／3月留差異，不建0.11
 
 原環境恢復connected/running（spec8；policy state仍unknown，不冒enforced）後，核遠端71e6ff26及指定祖先，按AGENTS bootstrap成功0補缺／7差異保留。新年報精確URL一次HTTP200／4932379bytes／SHA7406e30d1f02f083611f594459b952494816d87237bf2203734ce6afb487155d，與Work參照相符；無轉址重試。入口 `docs/source-research/20261023_tcc_annual_capture/README.md`、REPORT／CONTRACT／WORK_HANDOFF、observations／date-roles／visual-review；來源包及固定原bytes回讀見 `deliveries/m1-tcc-annual-source-20261023/README.md`。

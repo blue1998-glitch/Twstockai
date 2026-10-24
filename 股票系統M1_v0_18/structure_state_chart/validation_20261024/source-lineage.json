@@ -1,0 +1,58 @@
+{
+  "schema_version": "p03-chart-build-verification/0.1",
+  "status": "PASS",
+  "source_series_key": "sha256:8ac1c3e871ff175c7012ec72d3cc70791eb15f336cdeeb08825c894f95c80967",
+  "source_id": "sha256:adea7f78a97d18b6b51fbba103e08c0db33dc6fb1eb613b960b0aabe213b534b",
+  "price_basis_id": "sha256:50e560b77640da3b7d000c0db67fc73a3f5b69d0bd744871ccb03483f8ec115e",
+  "source_frame_id": "sha256:b7215491c924570f3b40594fbd859f4b5c2532b247b62b6e625a8fcb66964f70",
+  "parent_interned_payload_sha256": "a632ac6200b87f8fdc44d2a80c05056019f89e356e0815ec69ac2ad5287d3d30",
+  "parent_numeric_tree_preserved": true,
+  "source_and_indicators_exactly_equal": true,
+  "state_records": 1213,
+  "events": 14,
+  "state_counts": {
+    "STRENGTHENING": 2,
+    "CONSOLIDATING": 2,
+    "WEAKENING": 0,
+    "INSUFFICIENT": 1209
+  },
+  "real_case_missing_states": [
+    "WEAKENING",
+    "EQUALITY_BOUNDARY"
+  ],
+  "role_qualification": "EXPLICIT_RESEARCH_ROLES_NOT_FORMAL_BOX",
+  "full_market_accuracy_tested": false,
+  "new_indicators_or_automatic_reference_selection": false,
+  "physical_android": "NOT_TESTED_NEW_BUILD",
+  "files": {
+    "M1_P03_structure_state_v01.html": {
+      "bytes": 9941521,
+      "sha256": "a894da62dbc8ccb81f539e34c06705378dfac0d9cc4dd38df4f0e2a696c6fa47"
+    },
+    "structure-state.json": {
+      "bytes": 3339350,
+      "sha256": "37a75a6979fb5d101323bc1b4498ca63aec437d6c2f118c0589877c22242710d"
+    },
+    "chart-layer.json": {
+      "bytes": 3588392,
+      "sha256": "2658be2b133ea4466b3ab627e44d9252d1d8ed184ab9ac527a13ac9950ddc8ee"
+    },
+    "role-selection.json": {
+      "bytes": 3963,
+      "sha256": "f66cad408f1bc04f34d7ea49329ec3002400cfce59a1b33d026c35c7aded57f4"
+    },
+    "facts-input.json": {
+      "bytes": 398654,
+      "sha256": "27e227124ac24a5ccdb3b2ca63209134b39d7e43cb69d45bb0de674ecd46d1d3"
+    },
+    "scenario.json": {
+      "bytes": 3610,
+      "sha256": "e43d813bccf1dd6c5fe0c53722b9bc18dbf9daea56af2c1d92bba0efb5edaba2"
+    }
+  },
+  "original_comparison_artifact_id": "sha256:6ba81060243c45f38a99b33ae8ff34dd4824c9bbbaf7bbd4ac719d1e1c7511c9",
+  "raw_price_qualification": "UNVERIFIED_CORPORATE_ACTION_COMPARABILITY_NOT_COMMON_ADJUSTED_PRESSURE",
+  "historical_publication": "UNVERIFIED",
+  "independent_real_cases": 1,
+  "production_core_contains_case_stock_or_dates": false
+}
