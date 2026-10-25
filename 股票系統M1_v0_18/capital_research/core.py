@@ -8,8 +8,9 @@ from datetime import datetime
 from decimal import Decimal, localcontext
 from graph_core.core import fingerprint, number as source_number
 from rotation_research.core import fees
+from .eligibility import entry_review, known_fact, validity_status
 
-VERSION = 'capital-decision/0.1'
+VERSION = 'capital-decision/0.3'
 FEATURES = ('price_volume', 'box', 'key_position', 'momentum', 'cross_scale')
 BINDING = ('source_id', 'basis_id', 'adjustment_version')
 
@@ -191,6 +192,7 @@ def _decide(data):
             if not _known(e, cutoff, decision):
                 continue
             _binding(e, asset)
+            e=known_fact(e,data['data_cutoff'],data['decision_at'])
             if e['feature'] not in FEATURES or e['stance'] not in ('support', 'refutation', 'unknown'):
                 raise ValueError('Invalid separated evidence category')
             if e['id'] in evidence and evidence[e['id']] != e:
@@ -198,7 +200,7 @@ def _decide(data):
             evidence[e['id']] = deepcopy(e)
             facts[e['feature']][e['stance']].append(deepcopy(e))
             tokens = evidence_tokens(e)
-            if not tokens & used:
+            if not tokens & used and validity_status(e,data['data_cutoff'],data['decision_at']) in ('WITHIN_DECLARED_INTERVAL','ONGOING_REQUIRES_CURRENT_REVIEW'):
                 novel[e['id']] = tokens
             used.update(tokens)
         for f in facts:
@@ -206,7 +208,7 @@ def _decide(data):
                 facts[f]['unknown'].append({'reason': 'NO_KNOWN_EVIDENCE'})
         layer1[code] = dict(features=facts, strength_probability=None, combined_score=None,
                             conclusion='EVIDENCE_ONLY_NO_STRENGTH_RANKING')
-        entry = asset['entry_context']
+        entry = known_fact(asset['entry_context'],data['data_cutoff'],data['decision_at'])
         if timestamp(entry['available_at']) > decision:
             entry = dict(position=None, formal_reference=None, invalidation_risk=None, liquidity_shares=None)
         else:
@@ -216,6 +218,7 @@ def _decide(data):
         missing = [k for k in ('position', 'formal_reference', 'invalidation_risk', 'liquidity_shares') if entry[k] is None]
         ref = entry['formal_reference']
         if ref is not None:
+            ref=known_fact(ref,data['data_cutoff'],data['decision_at'])
             _binding(ref, asset)
             if not _known(ref, cutoff, decision) or ref['reference_role'] != 'FORMAL_RESISTANCE' or number(ref['price']) <= 0:
                 raise ValueError('Unknown/wrong formal reference')
@@ -224,7 +227,8 @@ def _decide(data):
                             invalidation_risk=deepcopy(entry['invalidation_risk']),
                             liquidity_shares=entry['liquidity_shares'],
                             reasonable_space=None if ref is None else str(number(ref['price']) - marks[code]),
-                            reference=deepcopy(ref), guaranteed_target=None, data_qualified=False)
+                            reference=deepcopy(ref), guaranteed_target=None, data_qualified=False,
+                            capital_eligibility=entry_review(asset,code,data,evidence))
     q, nav, available, locked = _account(data, marks)
     baseline_q = dict(q)
     for o in data['account']['pending_orders']:
@@ -279,6 +283,8 @@ def _decide(data):
             friction += x['fee'] + x['tax'] + x['slippage']
             if change > 0:
                 buys += x['cash']
+                if not layer2[c]['capital_eligibility']['qualified_for_synthetic_proposal']:
+                    reasons.append('NEW_CAPITAL_NOT_QUALIFIED:'+c)
                 if layer2[c]['status'] == 'UNKNOWN':
                     reasons.append('ENTRY_EVIDENCE_UNKNOWN:' + c)
                 elif change > quantity(layer2[c]['liquidity_shares']):
@@ -322,7 +328,8 @@ def _decide(data):
                    broker_credit_separate=str(credit), funding=funding,
                    final_cash_after_all_settlements_estimate=str(number(data['account']['settled_cash']) + sells - buys),
                    scenario_values=scenario_values,
-                   scenario_value_qualification='SYNTHETIC_MARK_TO_MARK_STRESS_NOT_RETURN_OR_FILL_FORECAST')
+                   scenario_value_qualification='STATIC_TARGET_ATTAINED_STRESS_EXCLUDES_WAITING_AND_NONFILLS',
+                   dominance_scope='STATIC_TARGETS_ONLY',policy_dominance='NOT_EVALUATED')
         alternatives.append(out)
     # Pareto comparisons use the same common scenarios and friction, never a score.
     for a in alternatives:
@@ -339,25 +346,36 @@ def _decide(data):
         cost_model=deepcopy(cfg), execution_model=deepcopy(model), risk_limits=deepcopy(data['risk_limits']),
         scenario_set=deepcopy(data['scenario_set']),
         common_account_id=common_id, initial_capital=str(nav), layer1=layer1, layer2=layer2,
-        layer3=dict(alternatives=alternatives, comparison='COMMON_SCENARIO_PARETO_NO_COMBINED_SCORE'),
-        research_recommendation=dict(status='REVIEW_FEASIBLE_SET_NO_AUTOMATIC_WINNER',
-            candidate_ids=[p['id'] for p in alternatives if p['feasible'] and not p['dominated_by']]),
+        layer3=dict(alternatives=alternatives, comparison='STATIC_TARGET_SCENARIO_PARETO_NOT_POLICY_COMPARISON'),
+        research_recommendation=dict(status='REVIEW_ALL_FEASIBLE_POLICIES_STATIC_DOMINANCE_IS_DIAGNOSTIC_ONLY',
+            candidate_ids=[p['id'] for p in alternatives if p['feasible']]),
         data_qualified=False, execution_model_qualified=False, historical_signal_eligible=False,
         policy_authorized=False, live_execution_authorized=False, primary_pressure_id=None,
         new_evidence_tokens=sorted(set().union(*novel.values())) if novel else [],
         reviewed_evidence_tokens=sorted(used),
+        reserved_cash=data['account']['reserved_cash'],
+        continuity_qualification='INDEPENDENT_SNAPSHOT_NOT_A_CONTINUOUS_CAPITAL_CHAIN',
         R2_status='NOT_IMPLEMENTED_REQUIRES_OUT_OF_SAMPLE_COMPARISON_WITH_R1')
     decision_result['decision_id'] = fingerprint(decision_result)
     return dict(decision=decision_result, source_integrity_metadata=deepcopy(data['source_integrity_metadata']))
 
 
-def resume_decision(previous, data):
-    """Carry reviewed event identities into a later explicit account snapshot."""
+def resume_decision(previous, data, *, checkpoint=None, cancelled_order_ids=()):
+    """Carry tokens only after proving the next account from original ledger fills."""
     old=previous['decision']
     if old['schema'] != VERSION or old['decision_id'] != fingerprint({k:v for k,v in old.items() if k!='decision_id'}):
         raise ValueError('Invalid saved predecessor decision')
     if timestamp(data['decision_at']) <= timestamp(old['decision_at']) or timestamp(data['data_cutoff']) < timestamp(old['data_cutoff']):
         raise ValueError('Resume must advance decision time without moving cutoff backward')
+    if checkpoint is None:
+        raise ValueError('LEDGER_CHECKPOINT_REQUIRED: token carry does not prove capital continuity')
+    from .continuity import bind_resume
+    linkage=bind_resume(previous,data,checkpoint,cancelled_order_ids)
     next_input=deepcopy(data)
-    next_input['consumed_evidence_tokens']=sorted(set(next_input['consumed_evidence_tokens']) | set(old['reviewed_evidence_tokens']))
-    return decide(next_input)
+    next_input['consumed_evidence_tokens']=sorted(set(next_input['consumed_evidence_tokens']) | set(old['reviewed_evidence_tokens']) | set(checkpoint['state']['reviewed_evidence_tokens']))
+    result=decide(next_input)
+    d=result['decision'];d.pop('decision_id')
+    d['continuity_qualification']=linkage['qualification'];d['continuity']=linkage
+    d['decision_id']=fingerprint(d)
+    result['source_integrity_metadata']['continuity']=deepcopy(checkpoint['integrity'])
+    return result

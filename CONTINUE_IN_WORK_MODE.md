@@ -1,3 +1,21 @@
+# 2026-10-25 最新本地接續｜0.3定向修復待Work唯讀
+
+讀`M1_CAPITAL_RESEARCH_REPAIR_20261025_HANDOFF.md`及`股票系統M1_v0_18/capital_research/repair_20261025/`的REPORT／CONTRACT_0_3／新before與artifacts／tests-final／preservation。最新已核遠端與本地基線仍6be4333d490bcccfe952c7606dffb802b76cdd5c；0.2與0.3均未提交，原差異及78檔快照保持。沒有commit/push授權，不能把GitHub舊0.1當新0.3或冒Work已讀原件。
+
+五個缺陷先實跑重現再最小修復；部分成交取消／到期在0.2已成立，本輪補完整權利／reserve證據。最終38唯一方法PASS＝33新＋5必要回歸，初37及舊51／46不累加。只一條假想市場的資格正反變體共10序列，不是市場樣本／策略勝負；未重跑九路徑、真實producer或UI。無來源限售解除等不足仍拒絕，全部正式資格false、70／2／8／0與Astra未讀保持。下一步Work只讀新契約及反例，真正工程回原唯一Codex；不bootstrap／測試／寫入／commit/push／子代理，不改正式策略圖形、不重問P0-3/P0-4、不部署下單付費訊息。以下原文完整留史。
+
+---
+
+# 2026-10-25 最新本地接續｜0.2修復待Work審查，沒有commit/push
+
+讀 `M1_CAPITAL_RESEARCH_REVIEW_20261025_HANDOFF.md`完整可貼指令及`股票系統M1_v0_18/capital_research/review_20261025/REPORT.md`、CONTRACT_0_2.md、OUT_OF_SAMPLE_PROTOCOL.md與before／artifacts／tests-final。最新已核遠端及本地基線仍`6be4333d490bcccfe952c7606dffb802b76cdd5c`；本輪使用者要求先可審查差異，不自動commit／push。新檔只在共享workspace，不能把GitHub舊0.1冒新0.2；不能讀本地須明列未讀，不要求使用者搬檔。
+
+四缺陷已先實跑重現後修復；逐觀察共同風險／條件方案新決策／共同tape／原帳checkpoint、趨勢延續知識狀態、9×5逐輪合成競爭完成，最終51唯一方法PASS（46新＋5必要回歸），舊46及中間批不累加。所有入帳沿原action_ledger；0.1保存證據／來源0.10及parents／null／UNKNOWN／警告不改，70／2／8／合格0不冒重跑。靜態支配不當政策支配，零交易控制超限不當合格建議，R2/F及未支援帳務仍明確未實作。
+
+Astra全文Codex未取得未讀，Work已讀狀態另存證詞；不HTTP試探／重試拒絕入口，不重問P0-3／P0-4、不造未知參照或無限空間，不重做UI／人工模式。下一步只Work唯讀，具體缺陷回原唯一Codex，沒有新保存指示前不commit/push。不部署下單付費訊息或子代理。以下完整留史。
+
+---
+
 # 2026-10-24 最新接續｜資金決策第一階段已交付，Work唯讀驗收
 
 請先讀 `M1_CAPITAL_RESEARCH_PHASE1_HANDOFF.md`全文及`股票系統M1_v0_18/capital_research/README.md`、INVENTORY.md、CONTRACT.md、REPORT.md；固定工程／最新已核SHA與GitHub讀回在`deliveries/m1-capital-research-phase1-20261024/`。本輪明示新授權允許隔離合成機制工程，保留全部舊圖形／來源與量峰成果，不把舊任務的暫停範圍套成本輪永久禁令。

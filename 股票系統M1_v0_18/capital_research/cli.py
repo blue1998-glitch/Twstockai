@@ -10,6 +10,8 @@ def main():
     p.add_argument('operation', choices=['RUN','EXECUTE','READ'])
     p.add_argument('--input');p.add_argument('--store',required=True);p.add_argument('--id',required=True)
     p.add_argument('--prior-id',help='For a later RUN, carry reviewed event identities from a saved decision')
+    p.add_argument('--checkpoint',help='Original-ledger execution checkpoint required with --prior-id')
+    p.add_argument('--cancel-orders',nargs='*',default=[],help='Explicit unfilled order identities cancelled at this review')
     a=p.parse_args();store=Journal(a.store)
     if a.operation=='READ':
         saved=store.read(a.id)
@@ -18,7 +20,9 @@ def main():
         value=json.loads(Path(a.input).read_text())
         if a.operation=='RUN':
             from .core import decide, resume_decision
-            result=resume_decision(store.read(a.prior_id)['value'],value) if a.prior_id else decide(value)
+            if a.prior_id and not a.checkpoint:p.error('--prior-id requires --checkpoint; tokens alone do not prove account continuity')
+            result=resume_decision(store.read(a.prior_id)['value'],value,
+                checkpoint=json.loads(Path(a.checkpoint).read_text()),cancelled_order_ids=a.cancel_orders) if a.prior_id else decide(value)
         else:
             from .execution import simulate
             result=simulate(value)

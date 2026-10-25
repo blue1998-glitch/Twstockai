@@ -22,7 +22,7 @@ def write_new(path,value):
     with path.open('xb') as f:f.write(body)
 
 
-def build(output):
+def _frozen_v01_reference(output):
     out=Path(output);data=fixture();decision=decide(data)
     write_new(out/'input.json',data);write_new(out/'execution-input.json',job())
     store=Journal(out/'records')
@@ -76,6 +76,10 @@ def build(output):
         assert store.read(key)['id']==key
     return dict(status='SYNTHETIC_ARTIFACTS_SAVED_AND_READ',decision_id=decision['decision']['decision_id'],
                 tests_rerun=False,market_producer_rerun=False,total_net_return_comparison_qualified=False)
+
+
+def build(output):
+    raise ValueError('Frozen phase-1/0.1 producer: use fixed ea380cf for historical reproduction, or capital_research.review_20261025.build for new 0.2 evidence; no old artifact overwrite')
 
 
 def main():

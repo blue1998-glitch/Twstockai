@@ -1,0 +1,75 @@
+test_checkpoint_modification_is_not_repaired_or_silently_accepted (capital_research.test_review.ReviewTests.test_checkpoint_modification_is_not_repaired_or_silently_accepted) ... ok
+test_checkpoint_rights_flow_through_without_double_counting (capital_research.test_review.ReviewTests.test_checkpoint_rights_flow_through_without_double_counting) ... ok
+test_continued_fills_keep_original_capital_and_only_one_cash_ledger (capital_research.test_review.ReviewTests.test_continued_fills_keep_original_capital_and_only_one_cash_ledger) ... ok
+test_failed_exit_cannot_fund_a_joint_risk_breach (capital_research.test_review.ReviewTests.test_failed_exit_cannot_fund_a_joint_risk_breach) ... ok
+test_invalidated_breakout_cancels_even_below_buy_limit (capital_research.test_review.ReviewTests.test_invalidated_breakout_cancels_even_below_buy_limit) ... ok
+test_joint_market_comparison_rejects_different_state_price_capacity_or_availability (capital_research.test_review.ReviewTests.test_joint_market_comparison_rejects_different_state_price_capacity_or_availability) ... ok
+test_modified_cash_or_dropped_rights_cannot_resume (capital_research.test_review.ReviewTests.test_modified_cash_or_dropped_rights_cannot_resume) ... ok
+test_new_decision_binds_account_evidence_cutoff_and_fill_decision (capital_research.test_review.ReviewTests.test_new_decision_binds_account_evidence_cutoff_and_fill_decision) ... ok
+test_no_checkpoint_means_no_continuity_claim (capital_research.test_review.ReviewTests.test_no_checkpoint_means_no_continuity_claim) ... ok
+test_observed_market_breach_does_not_invent_an_exit (capital_research.test_review.ReviewTests.test_observed_market_breach_does_not_invent_an_exit) ... ok
+test_partial_exit_is_not_a_complete_risk_release (capital_research.test_review.ReviewTests.test_partial_exit_is_not_a_complete_risk_release) ... ok
+test_pre_funded_persistent_order_can_continue_without_funding_reassessment (capital_research.test_review.ReviewTests.test_pre_funded_persistent_order_can_continue_without_funding_reassessment) ... ok
+test_reassessment_cannot_override_observed_invalidation (capital_research.test_review.ReviewTests.test_reassessment_cannot_override_observed_invalidation) ... ok
+test_same_market_allows_different_orders (capital_research.test_review.ReviewTests.test_same_market_allows_different_orders) ... ok
+test_share_rights_count_even_before_they_become_sellable (capital_research.test_review.ReviewTests.test_share_rights_count_even_before_they_become_sellable) ... ok
+test_stale_held_mark_blocks_risk_increase_without_inventing_price (capital_research.test_review.ReviewTests.test_stale_held_mark_blocks_risk_increase_without_inventing_price) ... ok
+test_static_pareto_is_not_a_policy_elimination_rule (capital_research.test_review.ReviewTests.test_static_pareto_is_not_a_policy_elimination_rule) ... ok
+test_successful_exit_releases_risk_after_actual_fill (capital_research.test_review.ReviewTests.test_successful_exit_releases_risk_after_actual_fill) ... ok
+test_unfilled_order_cannot_disappear_at_a_review (capital_research.test_review.ReviewTests.test_unfilled_order_cannot_disappear_at_a_review) ... ok
+test_waiting_for_settlement_never_self_reauthorizes (capital_research.test_review.ReviewTests.test_waiting_for_settlement_never_self_reauthorizes) ... ok
+test_wrong_checkpoint_or_decision_id_refuses_reassessment (capital_research.test_review.ReviewTests.test_wrong_checkpoint_or_decision_id_refuses_reassessment) ... ok
+test_all_nine_paths_and_five_policy_intents_really_execute (capital_research.test_trend.TrendTests.test_all_nine_paths_and_five_policy_intents_really_execute) ... ok
+test_continuation_is_reversible_and_prior_refutation_remains_saved (capital_research.test_trend.TrendTests.test_continuation_is_reversible_and_prior_refutation_remains_saved) ... ok
+test_evaluation_labels_cannot_rewrite_any_decision (capital_research.test_trend.TrendTests.test_evaluation_labels_cannot_rewrite_any_decision) ... ok
+test_evidence_source_or_version_conflicts_are_not_accepted_support (capital_research.test_trend.TrendTests.test_evidence_source_or_version_conflicts_are_not_accepted_support) ... ok
+test_exit_then_repair_reentry_uses_later_decision_and_actual_cash (capital_research.test_trend.TrendTests.test_exit_then_repair_reentry_uses_later_decision_and_actual_cash) ... ok
+test_geometric_growth_uses_one_original_account_not_trade_profit_per_day (capital_research.test_trend.TrendTests.test_geometric_growth_uses_one_original_account_not_trade_profit_per_day) ... FAIL
+test_hold_qualification_is_not_add_qualification (capital_research.test_trend.TrendTests.test_hold_qualification_is_not_add_qualification) ... ok
+test_invalid_future_evidence_and_prices_do_not_rewrite_prefix (capital_research.test_trend.TrendTests.test_invalid_future_evidence_and_prices_do_not_rewrite_prefix) ... ok
+test_limit_blocks_are_real_unfilled_orders_not_assumed_exits (capital_research.test_trend.TrendTests.test_limit_blocks_are_real_unfilled_orders_not_assumed_exits) ... FAIL
+test_market_paths_are_shared_but_realized_exposure_is_not_falsely_equal (capital_research.test_trend.TrendTests.test_market_paths_are_shared_but_realized_exposure_is_not_falsely_equal) ... ok
+test_no_identifiable_pressure_requires_a_verified_bounded_scope (capital_research.test_trend.TrendTests.test_no_identifiable_pressure_requires_a_verified_bounded_scope) ... ok
+test_no_participation_policy_is_preselected_as_best (capital_research.test_trend.TrendTests.test_no_participation_policy_is_preselected_as_best) ... ok
+test_participation_is_variable_and_not_a_permanent_floor (capital_research.test_trend.TrendTests.test_participation_is_variable_and_not_a_permanent_floor) ... ok
+test_pressure_data_gap_checked_absence_broken_and_remaining_are_distinct (capital_research.test_trend.TrendTests.test_pressure_data_gap_checked_absence_broken_and_remaining_are_distinct) ... ok
+test_same_prefix_all_future_paths_have_identical_initial_decision (capital_research.test_trend.TrendTests.test_same_prefix_all_future_paths_have_identical_initial_decision) ... FAIL
+test_small_new_step_never_clears_an_old_major_pressure (capital_research.test_trend.TrendTests.test_small_new_step_never_clears_an_old_major_pressure) ... ok
+test_source_basis_change_is_unknown_not_a_new_buy_signal (capital_research.test_trend.TrendTests.test_source_basis_change_is_unknown_not_a_new_buy_signal) ... ok
+test_target_reached_or_elapsed_time_does_not_force_exit (capital_research.test_trend.TrendTests.test_target_reached_or_elapsed_time_does_not_force_exit) ... ok
+test_virtual_purposes_partition_holdings_and_keep_entitlements_once (capital_research.test_trend.TrendTests.test_virtual_purposes_partition_holdings_and_keep_entitlements_once) ... ok
+test_winner_label_cannot_relax_hard_risk (capital_research.test_trend.TrendTests.test_winner_label_cannot_relax_hard_risk) ... ok
+
+======================================================================
+FAIL: test_geometric_growth_uses_one_original_account_not_trade_profit_per_day (capital_research.test_trend.TrendTests.test_geometric_growth_uses_one_original_account_not_trade_profit_per_day)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/workspace/Twstockai/股票系統M1_v0_18/capital_research/test_trend.py", line 119, in test_geometric_growth_uses_one_original_account_not_trade_profit_per_day
+    m=p['metrics'];self.assertEqual(m['initial_capital'],'2000')
+                   ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+AssertionError: '2000.0' != '2000'
+- 2000.0
+?     --
++ 2000
+
+
+======================================================================
+FAIL: test_limit_blocks_are_real_unfilled_orders_not_assumed_exits (capital_research.test_trend.TrendTests.test_limit_blocks_are_real_unfilled_orders_not_assumed_exits)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/workspace/Twstockai/股票系統M1_v0_18/capital_research/test_trend.py", line 134, in test_limit_blocks_are_real_unfilled_orders_not_assumed_exits
+    self.assertTrue(any(e.get('reason')=='MARKET_BLOCK' for e in events))
+AssertionError: False is not true
+
+======================================================================
+FAIL: test_same_prefix_all_future_paths_have_identical_initial_decision (capital_research.test_trend.TrendTests.test_same_prefix_all_future_paths_have_identical_initial_decision)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/workspace/Twstockai/股票系統M1_v0_18/capital_research/test_trend.py", line 27, in test_same_prefix_all_future_paths_have_identical_initial_decision
+    self.assertEqual(len(ids),1)
+AssertionError: 2 != 1
+
+----------------------------------------------------------------------
+Ran 41 tests in 7.282s
+
+FAILED (failures=3)

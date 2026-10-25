@@ -1,4 +1,38 @@
-# 資金決策獨立研究 0.1｜第一階段
+# 當前本地研究修復0.3｜尚未提交
+
+最新入口：[repair_20261025/REPORT.md](repair_20261025/REPORT.md)、[CONTRACT_0_3.md](repair_20261025/CONTRACT_0_3.md)及root `M1_CAPITAL_RESEARCH_REPAIR_20261025_HANDOFF.md`。原0.2全文、source差異與證據保存在新baseline_0_2與原review_20261025，沒有覆寫舊before／after／log。最新遠端／本地基線仍6be4333d，不commit/push。
+
+純數值core／execution 0.3增加每股新資金review及有效期、明示日終可知證據；checkpoint0.2分開origin／latest身份與完整token，保留fill/order／預留；無來源限售解除明確拒絕。趨勢加碼資格不再只顯示標籤。所有入帳仍由原action_ledger。38唯一方法＝33新＋5必要回歸PASS，舊51／46不累加；不證策略績效。
+
+本專案目錄的當前重現入口（只寫新的輸出目錄）：
+
+```bash
+PYTHONDONTWRITEBYTECODE=1 python3 -m capital_research.repair_20261025.verify
+PYTHONDONTWRITEBYTECODE=1 python3 -m capital_research.repair_20261025.build --output /tmp/NEW-capital-repair-evidence
+```
+
+下方0.2與0.1命令／結果為歷史契約，不能拿新0.3 source重跑後冒舊版重現；歷史原碼見baseline_0_2或固定工程，不能覆蓋現況。READ維持原樣。R2/F、信用、期初應付、外部既有單完整重播、無來源限售解除及市場資格仍不足；Astra Codex仍未取得未讀。
+
+---
+
+# 當前本地研究修復0.2｜尚未提交
+
+2026-10-25最新工程入口：[review_20261025/REPORT.md](review_20261025/REPORT.md)、[0.2契約](review_20261025/CONTRACT_0_2.md)、[樣本外條件](review_20261025/OUT_OF_SAMPLE_PROTOCOL.md)及root `M1_CAPITAL_RESEARCH_REVIEW_20261025_HANDOFF.md`。遠端與本地基線仍為6be4333d；本輪依使用者指令不commit／push，下面0.1段落與46 PASS只作舊工程歷史，不代表當前0.2重跑結果。
+
+目前有逐觀察真實持股／權利／可能買單風險閘門、交割後新決策綁定、共同外生tape身份、原帳檢查點與有限連續追加回放；靜態目標Pareto不再宣稱政策支配。新增趨勢延續研究狀態與九條共同前綴合成路徑、五種數量意圖的逐輪競爭，不是新正式圖形／交易策略。51項本輪實測＝46新增＋5必要回歸，中間批不累加。
+
+本輪精確重現命令（在本專案目錄）：
+
+```bash
+PYTHONDONTWRITEBYTECODE=1 python3 -m capital_research.review_20261025.verify
+PYTHONDONTWRITEBYTECODE=1 python3 -m capital_research.review_20261025.build --output /tmp/NEW-capital-review-evidence
+```
+
+數值core無IO，外部builder只寫新檔。舊`build_evidence`已明示凍結，防止0.2產生冒稱0.1結果或覆寫舊證據；原0.1完全重現只看固定ea380cf source，不從舊ZIP覆蓋此工作目錄。舊READ仍可用，版本與原bytes不改。R2/F、信用借還款、期初應付、不中斷承接既有委託完整重播及真實樣本外驗證仍未實作。Astra全文仍僅Work已讀證詞，Codex未取得未讀。
+
+---
+
+# 資金決策獨立研究 0.1｜第一階段（歷史保留）
 
 本目錄驗證資訊與資金機制，**不是策略批准、真實績效或正式持倉系統**。全部數值案例都是合成研究。Astra Library 報告全文未取得／未讀；本輪依使用者第一階段完整指令實作，沒有將指令或摘要冒稱全文。
 

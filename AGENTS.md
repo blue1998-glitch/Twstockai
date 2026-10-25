@@ -1,3 +1,21 @@
+# 2026-10-25 本地未提交｜資金研究0.3定向修復
+
+最新入口 `M1_CAPITAL_RESEARCH_REPAIR_20261025_HANDOFF.md`、`股票系統M1_v0_18/capital_research/repair_20261025/REPORT.md`／CONTRACT_0_3。使用者新授權只做指定隔離研究重現與最小修復，沒有commit/push授權；遠端／本地基線仍6be4333d。修改前0.2完整差異與78檔快照保留，新before／after與38唯一方法（33新＋5必要回歸）另存，不累加舊51／46或中間批。原帳與來源、圖形、庫、歷史及舊證據不改。
+
+新資金資格已接提案，明示有效期／失效不由新ID復活；日終可知、最新前身／完整token與原帳fill鏈已補。無來源限售解除明確拒絕，不造可賣權利；部分成交取消／到期原0.2已成立，本輪補證不冒修帳。R2/F／信用／期初應付／外部既有單完整重播及真實日終資格仍未實作。只最小標準庫準備，bootstrap／hydrate0；全部資格false與70／2／8／0保持，Astra於Codex未取得未讀，不HTTP試探／要求搬檔。下一步Work唯讀，工程仍原唯一Codex，無子代理／部署下單付費訊息。以下原文完整保留。
+
+---
+
+# 2026-10-25 本地未提交｜資金研究0.2修復與趨勢延續
+
+最新本地入口 `M1_CAPITAL_RESEARCH_REVIEW_20261025_HANDOFF.md`、`股票系統M1_v0_18/capital_research/review_20261025/REPORT.md`／CONTRACT_0_2／OUT_OF_SAMPLE_PROTOCOL。本輪使用者明示**不自動commit/push**，優先於下方舊常態GitHub交付授權；遠端與本地基線仍6be4333d，不冒新GitHub已讀回。新source／證據只在共享工作目錄，舊0.1／validation_20261024／來源／歷史全部保留。
+
+四項Work推導已先存before實跑重現，再補實股／權利／可能買單風險、交割後新決策、共同tape及原帳checkpoint；仍沿原action_ledger，無第二帳。新增可逆趨勢研究狀態與9路徑×5外部數量意圖逐輪合成回放，不是正式圖形／量峰／交易規則。最終51唯一方法＝46新增＋5必要回歸PASS，不累加舊46、中間批或45序列。真實producer／新資格／市場六方案／UI／Android皆未跑；R2/F、信用、期初應付、不中斷外部既有單完整重播仍未實作／拒絕。
+
+本次依使用者最小準備要求，只核既有標準庫／source與必要語法，不bootstrap／hydrate或舊包覆蓋。Astra全文於Codex仍未取得未讀，Work已讀459行／48887bytes只另記證詞，不HTTP試探／重試或要求搬檔。全部資格false、70／2／8／0及原缺口保持。下一步Work只讀本地新差異；若工具只能讀GitHub須明列未取得未讀，不冒讀到0.2。工程仍原唯一Codex，不另開代理，不部署下單付費訊息。以下歷史原文完整保留。
+
+---
+
 # 2026-10-24 Codex｜資金決策第一階段：隔離機制工程完成
 
 最新入口 `M1_CAPITAL_RESEARCH_PHASE1_HANDOFF.md`、`股票系統M1_v0_18/capital_research/README.md`／INVENTORY／CONTRACT／REPORT及`deliveries/m1-capital-research-phase1-20261024/README.md`。本輪為使用者明示授權的獨立研究工程，較早「不跑每日帳／六方案」是當時範圍；本輪只跑明標合成帳務機制，不跑真實績效或解除來源拒算。起始遠端392b94a4保留1085b17／3b6fe93及全部後續，bootstrap0補缺／7 baseline差異保留。

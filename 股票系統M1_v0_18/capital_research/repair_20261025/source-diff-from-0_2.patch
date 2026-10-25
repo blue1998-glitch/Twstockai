@@ -1,0 +1,1378 @@
+--- a/AGENTS.md
++++ b/AGENTS.md
+@@ -1,3 +1,11 @@
++# 2026-10-25 本地未提交｜資金研究0.3定向修復
++
++最新入口 `M1_CAPITAL_RESEARCH_REPAIR_20261025_HANDOFF.md`、`股票系統M1_v0_18/capital_research/repair_20261025/REPORT.md`／CONTRACT_0_3。使用者新授權只做指定隔離研究重現與最小修復，沒有commit/push授權；遠端／本地基線仍6be4333d。修改前0.2完整差異與78檔快照保留，新before／after與38唯一方法（33新＋5必要回歸）另存，不累加舊51／46或中間批。原帳與來源、圖形、庫、歷史及舊證據不改。
++
++新資金資格已接提案，明示有效期／失效不由新ID復活；日終可知、最新前身／完整token與原帳fill鏈已補。無來源限售解除明確拒絕，不造可賣權利；部分成交取消／到期原0.2已成立，本輪補證不冒修帳。R2/F／信用／期初應付／外部既有單完整重播及真實日終資格仍未實作。只最小標準庫準備，bootstrap／hydrate0；全部資格false與70／2／8／0保持，Astra於Codex未取得未讀，不HTTP試探／要求搬檔。下一步Work唯讀，工程仍原唯一Codex，無子代理／部署下單付費訊息。以下原文完整保留。
++
++---
++
+ # 2026-10-25 本地未提交｜資金研究0.2修復與趨勢延續
+ 
+ 最新本地入口 `M1_CAPITAL_RESEARCH_REVIEW_20261025_HANDOFF.md`、`股票系統M1_v0_18/capital_research/review_20261025/REPORT.md`／CONTRACT_0_2／OUT_OF_SAMPLE_PROTOCOL。本輪使用者明示**不自動commit/push**，優先於下方舊常態GitHub交付授權；遠端與本地基線仍6be4333d，不冒新GitHub已讀回。新source／證據只在共享工作目錄，舊0.1／validation_20261024／來源／歷史全部保留。
+--- a/CONTINUE_IN_WORK_MODE.md
++++ b/CONTINUE_IN_WORK_MODE.md
+@@ -1,3 +1,11 @@
++# 2026-10-25 最新本地接續｜0.3定向修復待Work唯讀
++
++讀`M1_CAPITAL_RESEARCH_REPAIR_20261025_HANDOFF.md`及`股票系統M1_v0_18/capital_research/repair_20261025/`的REPORT／CONTRACT_0_3／新before與artifacts／tests-final／preservation。最新已核遠端與本地基線仍6be4333d490bcccfe952c7606dffb802b76cdd5c；0.2與0.3均未提交，原差異及78檔快照保持。沒有commit/push授權，不能把GitHub舊0.1當新0.3或冒Work已讀原件。
++
++五個缺陷先實跑重現再最小修復；部分成交取消／到期在0.2已成立，本輪補完整權利／reserve證據。最終38唯一方法PASS＝33新＋5必要回歸，初37及舊51／46不累加。只一條假想市場的資格正反變體共10序列，不是市場樣本／策略勝負；未重跑九路徑、真實producer或UI。無來源限售解除等不足仍拒絕，全部正式資格false、70／2／8／0與Astra未讀保持。下一步Work只讀新契約及反例，真正工程回原唯一Codex；不bootstrap／測試／寫入／commit/push／子代理，不改正式策略圖形、不重問P0-3/P0-4、不部署下單付費訊息。以下原文完整留史。
++
++---
++
+ # 2026-10-25 最新本地接續｜0.2修復待Work審查，沒有commit/push
+ 
+ 讀 `M1_CAPITAL_RESEARCH_REVIEW_20261025_HANDOFF.md`完整可貼指令及`股票系統M1_v0_18/capital_research/review_20261025/REPORT.md`、CONTRACT_0_2.md、OUT_OF_SAMPLE_PROTOCOL.md與before／artifacts／tests-final。最新已核遠端及本地基線仍`6be4333d490bcccfe952c7606dffb802b76cdd5c`；本輪使用者要求先可審查差異，不自動commit／push。新檔只在共享workspace，不能把GitHub舊0.1冒新0.2；不能讀本地須明列未讀，不要求使用者搬檔。
+--- /dev/null
++++ b/M1_CAPITAL_RESEARCH_REPAIR_20261025_HANDOFF.md
+@@ -0,0 +1,38 @@
++# Work接續：資金研究0.3定向修復（未提交）
++
++原工作區`/workspace/Twstockai`。最新已核遠端與本地Git基線仍`6be4333d490bcccfe952c7606dffb802b76cdd5c`；沒有commit/push，0.2、0.3及快照皆為本地差異。下列可直接貼給Work，不能把本文件當Work已取得原件。
++
++```text
++接續 blue1998-glitch/Twstockai，分支 dev/m1-v018-chart-annotations。
++最新已核遠端及本地基線：6be4333d490bcccfe952c7606dffb802b76cdd5c。
++保留ea380cf7d9ae7fa8e204c2b02dfea72f51b3fa01、1085b17ccbbc09269908bb95442ec309910d1399、3b6fe93fe582ba943451374491f081f23af42f59及全部後續／未提交成果。
++先唯讀查最新ref、祖先與本地差異；不reset、checkout覆蓋、強推或用main／舊ZIP替換。只有原既有唯一Codex工程，不開第二Codex、子代理或競爭分支。
++
++目前沒有commit/push，七個原tracked修改仍保留；0.2／0.3及快照均未提交，暫存區空，實際新增檔數以新CHANGE_MANIFEST與git為準。GitHub仍0.1，不能冒稱讀到0.3。Work沒有原件時先讀Codex本輪回覆摘要，保持「Codex實讀，Work原件未取得／未讀」；只有正式workspace工具能讀才核本地，不要求使用者搬檔、不自行發布。
++
++本輪Work僅唯讀驗收，不工程、bootstrap、執行測試或producer、commit/push、部署、下單、付費或發訊息。
++讀根AGENTS.md、CONTINUE_IN_WORK_MODE.md、PROJECT_VISION.md、M1_V019_GRAPH_CORE_RESUME_HANDOFF.md、M1_CAPITAL_RESEARCH_PHASE1_HANDOFF.md、M1_CAPITAL_RESEARCH_REVIEW_20261025_HANDOFF.md及本新交接最新有效全文。
++
++新證據根：股票系統M1_v0_18/capital_research/repair_20261025。
++全文讀REPORT、CONTRACT_0_3、intake、execution、diagnostics、preservation、CHANGE_MANIFEST、tests-final.log、baseline_0_2、before與artifacts。必要原碼core、execution、continuity、eligibility、close_clock、trend、trend_replay、trend_fixtures及repair目錄fixtures／reproduce／test_repairs／verify／build。舊review_20261025、validation_20261024、正式action_resolution0.4、來源0.10與全部parents、P0-3/P0-4／reaction_facts／人工基底契約繼續有效。
++
++修改前封存原0.2的78檔、source/doc patch及逐檔指紋，七個修前probe全保存。五個缺陷實際重現：NOT_QUALIFIED仍買、sellable0變100、09:00提前取得日終995、新前身被拒舊前身接受、過期事實仍買。部分成交取消與到期兩例在原0.2已成立，只補驗證，不冒稱修了不存在的帳務錯誤。
++
++逐項核：
++1. 每股新資金review綁當期截止／時點／來源基底／證據ID，未合格增加目標須排除建議及成交。原再進場同市場路徑負例NOT_QUALIFIED不買，明示資格正例1/19買A100；全部正式資格仍false。
++2. checkpoint保留opening_unavailable_shares，無來源解除則明確SELLABLE_LIMIT_CONTINUATION_NOT_IMPLEMENTED，不自動把實股變可賣。
++3. 明示synthetic ledger_close_proof分開as_of與available_at；09:00不能標日終，延後可知前不能建立下一決策可用帳戶，不推真實收盤或券商T+2。
++4. origin與latest decision/account分開，最新前身精確驗指紋／順序，原完整fills／權利／本金和全部已看token續接；舊前身拒絕。看artifacts/reassessment-and-next-round.json。
++5. 明示過期／失效不能由新ID復活；有效舊事實可保留原ID經當期review，不變新trigger。未來撤銷不改早期決策。看old-facts-current-review及before／after。
++6. 部分成交後取消／到期：原始2180，首輪A80／B7、現金1056.660、現金權利80、股份權利10；原A剩30／B剩13未成交。下一輪沿同一opening追加，終點現金2069.720＋A10×10＝2169.720；2180＝2169.720＋費稅9＋滑價1.28。一般reserve100保持，可用1969.720。A10是既有權利後來交付，不假稱全現金。核fill_order_ids、剩餘量、到期／取消與權利只入帳一次。
++
++最終38唯一方法PASS＝33新增＋5必要回歸；首37失敗／修正批不累加，舊51／46不重跑全suite，probe／builder／10合成序列不算新增測試或獨立樣本。初批1FAIL／2ERROR及修正均保存；最後來源覆核補精確整數對帳與低Decimal精度方法。原CLI READ stdout與舊保存log全bytes一致，未重算。
++
++優先找可推翻上述接線、日終可知、最新前身、權利與預留守恆的反例；不為新PASS重跑舊suite／來源／band-volume。R2/F、信用、期初應付、不中斷外部既有單完整重播、無來源限售解除、真實日終與交割資格及實現曝險配對仍未實作。
++只跑一條假想市場的兩種資格變體×五意圖×五輪，未重跑原九路徑45序列；獨立市場樣本0、ranking=null。R1/R2仍須事前凍結共同point-in-time環境、完整權利與逐輪帳、未見切分及purge/embargo、真實成本容量交割、市況與同風險／實現曝險對照；評價全帳戶幾何成長、回撤恢復、成本、現金、大贏家參與與回吐，不用單筆報酬÷天數或事後最高價。R2無穩定額外價值就保留R1。
++
++原70拒算／2不足／其中8換股影響未支援／真實總淨合格0保持，僅核保存檔。完整行動／個人淨額及期初權利／畸零／既有2884影響／歷史可得與原缺價仍缺；不補零、行情、零事件或放寬拒算。所有正式資格false，主壓力未知null，不改策略／圖形／歷史schema，不接UI、不重做人工模式、不重問P0-3/P0-4，不預定比例、永久底倉或策略勝者。
++Astra libfile_8ae424394ee88191a64125c72ffdaee6：Codex仍未取得／未讀；Work前輪讀過不等Codex已讀。只有正式檔案工具可讀才全文對照，不HTTP試探／重試拒絕入口或要求搬檔。
++
++交付實讀／未讀、已證／未證、反例及尚未覆蓋邊界，明分保存測試與Work本輪執行0。工程問題回原既有唯一Codex，沒有新授權不自動工程；仍無commit/push授權。最後附最新遠端、本地基線、未提交狀態與可直接貼用的完整下一輪指令，不要求使用者搬檔。
++```
+--- a/股票系統M1_v0_18/capital_research/README.md
++++ b/股票系統M1_v0_18/capital_research/README.md
+@@ -1,3 +1,20 @@
++# 當前本地研究修復0.3｜尚未提交
++
++最新入口：[repair_20261025/REPORT.md](repair_20261025/REPORT.md)、[CONTRACT_0_3.md](repair_20261025/CONTRACT_0_3.md)及root `M1_CAPITAL_RESEARCH_REPAIR_20261025_HANDOFF.md`。原0.2全文、source差異與證據保存在新baseline_0_2與原review_20261025，沒有覆寫舊before／after／log。最新遠端／本地基線仍6be4333d，不commit/push。
++
++純數值core／execution 0.3增加每股新資金review及有效期、明示日終可知證據；checkpoint0.2分開origin／latest身份與完整token，保留fill/order／預留；無來源限售解除明確拒絕。趨勢加碼資格不再只顯示標籤。所有入帳仍由原action_ledger。38唯一方法＝33新＋5必要回歸PASS，舊51／46不累加；不證策略績效。
++
++本專案目錄的當前重現入口（只寫新的輸出目錄）：
++
++```bash
++PYTHONDONTWRITEBYTECODE=1 python3 -m capital_research.repair_20261025.verify
++PYTHONDONTWRITEBYTECODE=1 python3 -m capital_research.repair_20261025.build --output /tmp/NEW-capital-repair-evidence
++```
++
++下方0.2與0.1命令／結果為歷史契約，不能拿新0.3 source重跑後冒舊版重現；歷史原碼見baseline_0_2或固定工程，不能覆蓋現況。READ維持原樣。R2/F、信用、期初應付、外部既有單完整重播、無來源限售解除及市場資格仍不足；Astra Codex仍未取得未讀。
++
++---
++
+ # 當前本地研究修復0.2｜尚未提交
+ 
+ 2026-10-25最新工程入口：[review_20261025/REPORT.md](review_20261025/REPORT.md)、[0.2契約](review_20261025/CONTRACT_0_2.md)、[樣本外條件](review_20261025/OUT_OF_SAMPLE_PROTOCOL.md)及root `M1_CAPITAL_RESEARCH_REVIEW_20261025_HANDOFF.md`。遠端與本地基線仍為6be4333d；本輪依使用者指令不commit／push，下面0.1段落與46 PASS只作舊工程歷史，不代表當前0.2重跑結果。
+--- /dev/null
++++ b/股票系統M1_v0_18/capital_research/close_clock.py
+@@ -0,0 +1,19 @@
++"""Explicit synthetic day-end availability; never invent a real exchange close."""
++from copy import deepcopy
++from .core import timestamp
++
++
++def close_record(origin, proof, as_of):
++    if not proof or proof.get('schema')!='synthetic-ledger-close-clock/0.1':
++        raise ValueError('EXPLICIT_LEDGER_CLOSE_PROOF_REQUIRED')
++    if proof.get('qualification')!='DECLARED_SYNTHETIC_DAY_END_NOT_REAL_MARKET_OR_BROKER_PROOF':
++        raise ValueError('Synthetic close-clock qualification required')
++    day=as_of[:10]
++    if day not in {r['date'] for r in origin['calendar']} or day not in proof['closes']:
++        raise ValueError('Missing explicit ledger daily close')
++    row=proof['closes'][day]
++    if row['as_of']!=as_of or timestamp(row['available_at'])<timestamp(row['as_of']):
++        raise ValueError('DAILY_CLOSE_WATERMARK_REQUIRED: cannot relabel an end-of-day ledger as intraday')
++    if not row['source_ids'] or any(s not in origin['sources'] or origin['sources'][s]['kind']!='ENGINEERED_ACCOUNTING_FIXTURE_NOT_MARKET' for s in row['source_ids']):
++        raise ValueError('Close proof must bind explicit synthetic ledger sources')
++    return deepcopy(row)
+--- a/股票系統M1_v0_18/capital_research/continuity.py
++++ b/股票系統M1_v0_18/capital_research/continuity.py
+@@ -6,8 +6,9 @@
+ from graph_core.core import fingerprint
+ from rotation_research.action_ledger import replay
+ from .core import timestamp, number, quantity
++from .close_clock import close_record
+ 
+-CHECKPOINT = 'capital-account-checkpoint/0.1'
++CHECKPOINT = 'capital-account-checkpoint/0.2'
+ 
+ 
+ def ledger_prefix(origin, fills, day):
+@@ -32,10 +33,40 @@
+ 
+ 
+ def _check_result(execution):
+-    if execution['schema'] not in ('capital-execution/0.1','capital-execution/0.2') or execution['status']!='SYNTHETIC_EXECUTION_REPLAY':
+-        raise ValueError('Successful explicit synthetic execution result required')
++    if execution['schema']!='capital-execution/0.3' or execution['status']!='SYNTHETIC_EXECUTION_REPLAY':
++        raise ValueError('LIFECYCLE_PROOF_REQUIRED: historical results remain readable, not implicitly upgraded')
+     if execution['result_id']!=fingerprint({k:v for k,v in execution.items() if k!='result_id'}):
+         raise ValueError('Execution fingerprint conflict')
++    ids=execution['decision_ids'];records=execution['decision_records']
++    if not ids or len(ids)!=len(set(ids)) or set(ids)!=set(records):
++        raise ValueError('Exact ordered decision history required')
++    for key,d in records.items():
++        if d['schema']!='capital-decision/0.3' or d['decision_id']!=key or fingerprint({k:v for k,v in d.items() if k!='decision_id'})!=key:
++            raise ValueError('Decision history fingerprint conflict')
++    times=[timestamp(records[key]['decision_at']) for key in ids]
++    if times!=sorted(set(times)):raise ValueError('Decision history must be chronological')
++    if execution['decision_id'] not in records or records[execution['decision_id']]['common_account_id']!=execution['common_account_id']:
++        raise ValueError('Execution starting decision/account identity conflict')
++    latest=records[ids[-1]]
++    if execution['latest_decision_id']!=ids[-1] or execution['latest_common_account_id']!=latest['common_account_id']:
++        raise ValueError('Latest predecessor identity conflict')
++    tokens=set().union(*(set(d['reviewed_evidence_tokens']) for d in records.values()))
++    if set(execution['reviewed_evidence_tokens'])!=tokens or not tokens<=set(latest['reviewed_evidence_tokens']):
++        raise ValueError('Reviewed evidence history was dropped')
++    orders={o['id']:o for o in execution['order_history']}
++    if len(orders)!=len(execution['order_history']) or set(orders)!=set(execution['order_states']):
++        raise ValueError('Order history/state identity conflict')
++    fills={f['id']:f for f in execution['fills']};mapping=execution['fill_order_ids']
++    if len(fills)!=len(execution['fills']) or set(fills)!=set(mapping):raise ValueError('Exact fill/order linkage required')
++    for key,f in fills.items():
++        o=orders.get(mapping[key])
++        if o is None or any(o[k]!=f[k] for k in ('code','side')):raise ValueError('Fill belongs to another order')
++    for key,o in orders.items():
++        st=execution['order_states'][key]
++        # Counts are exact integers; a caller's Decimal context must not round them.
++        filled=sum(int(quantity(f['shares'])) for k,f in fills.items() if mapping[k]==key)
++        if int(quantity(o['shares']))!=filled+int(quantity(st['remaining'])):raise ValueError('Filled/remaining quantity does not reconcile')
++        if st['status'].startswith(('CANCELLED','EXPIRED')) and number(st['reserved_cash']):raise ValueError('Closed order retained a reservation')
+ 
+ 
+ def make_checkpoint(origin, execution, *, through_at):
+@@ -46,6 +77,10 @@
+         raise ValueError('Execution contains a future fill beyond its watermark')
+     if execution.get('origin_ledger_input_id',fingerprint(origin))!=fingerprint(origin):
+         raise ValueError('Origin ledger changed')
++    close=close_record(origin,execution['ledger_close_proof'],through_at)
++    unavailable=execution['opening_unavailable_shares']
++    if set(unavailable)!=set(origin['assets']) or any(quantity(unavailable[c])>quantity(origin['opening']['shares'][c]) for c in unavailable):
++        raise ValueError('Opening sellability proof conflict')
+     row,r=row_at(origin,execution['fills'],through_at[:10])
+     orders=execution.get('order_history',execution['orders'])
+     active=[]
+@@ -56,16 +91,22 @@
+     state=dict(through_at=through_at,ledger_version=r['schema'],row=deepcopy(row),
+                accepted_fills=deepcopy(execution['fills']),unfilled_orders=active,
+                order_states=deepcopy(execution['order_states']),
+-               origin_initial_capital=r['initial_equity'],external_flow='0')
++               origin_initial_capital=r['initial_equity'],external_flow='0',
++               ledger_close=close,opening_unavailable_shares=deepcopy(unavailable),
++               general_reserved_cash=execution['decision_records'][execution['latest_decision_id']]['reserved_cash'],
++               latest_decision_id=execution['latest_decision_id'],latest_common_account_id=execution['latest_common_account_id'],
++               reviewed_evidence_tokens=deepcopy(execution['reviewed_evidence_tokens']))
+     # Full-source and execution fingerprints are integrity metadata, not prefix decisions.
+     result=dict(schema=CHECKPOINT,state=state,state_id=fingerprint(state),
+         origin_ledger_input=deepcopy(origin),execution_result=deepcopy(execution),
+-        integrity=dict(origin_ledger_input_id=fingerprint(origin),execution_result_id=execution['result_id']))
++        integrity=dict(origin_ledger_input_id=fingerprint(origin),execution_result_id=execution['result_id'],
++                       ledger_close_proof_id=fingerprint(execution['ledger_close_proof'])))
+     result['checkpoint_id']=fingerprint(dict(schema=CHECKPOINT,state_id=result['state_id']))
+     return result
+ 
+ 
+ def validate_checkpoint(checkpoint):
++    if checkpoint['schema']!=CHECKPOINT:raise ValueError('Versioned lifecycle checkpoint required; no historical migration')
+     rebuilt=make_checkpoint(checkpoint['origin_ledger_input'],checkpoint['execution_result'],
+                             through_at=checkpoint['state']['through_at'])
+     if rebuilt!=checkpoint:
+@@ -73,10 +114,17 @@
+     return checkpoint
+ 
+ 
+-def account_at_checkpoint(checkpoint, *, decision_at, cancelled_order_ids=(), reserved_cash='0'):
++def account_at_checkpoint(checkpoint, *, decision_at, cancelled_order_ids=(), reserved_cash=None):
+     validate_checkpoint(checkpoint)
+     if timestamp(decision_at)<=timestamp(checkpoint['state']['through_at']):
+         raise ValueError('New decision must follow the recorded daily close')
++    if timestamp(decision_at)<timestamp(checkpoint['state']['ledger_close']['available_at']):
++        raise ValueError('LEDGER_CLOSE_NOT_YET_AVAILABLE')
++    if any(quantity(n) for n in checkpoint['state']['opening_unavailable_shares'].values()):
++        raise ValueError('SELLABLE_LIMIT_CONTINUATION_NOT_IMPLEMENTED: no sourced release; cannot promote physical shares to sellable')
++    authoritative_reserve=checkpoint['state']['general_reserved_cash']
++    if reserved_cash is not None and reserved_cash!=authoritative_reserve:
++        raise ValueError('General cash reserve cannot silently disappear or change')
+     row=checkpoint['state']['row']
+     if number(row['purchase_payable']):
+         raise ValueError('OPENING_PAYABLE_CONTINUATION_NOT_IMPLEMENTED')
+@@ -87,7 +135,7 @@
+         raise ValueError('Duplicate cancellation identity')
+     return dict(as_of=checkpoint['state']['through_at'],available_at=decision_at,
+         holdings={c:dict(shares=n,sellable=n) for c,n in row['shares'].items()},
+-        settled_cash=row['settled_cash'],reserved_cash=reserved_cash,
++        settled_cash=row['settled_cash'],reserved_cash=authoritative_reserve,
+         cash_claims=deepcopy(row['cash_claims']),share_claims=deepcopy(row['share_receivables']),
+         payables=[],pending_orders=[])
+ 
+@@ -95,15 +143,16 @@
+ def bind_resume(previous, data, checkpoint, cancelled_order_ids):
+     validate_checkpoint(checkpoint)
+     result=checkpoint['execution_result'];old=previous['decision']
+-    ids=result.get('decision_ids',[result['decision_id']])
+-    if old['decision_id'] not in ids or result['common_account_id']!=old['common_account_id']:
+-        raise ValueError('Checkpoint does not descend from the supplied decision/account')
++    if (old['decision_id']!=result['latest_decision_id'] or result['latest_common_account_id']!=old['common_account_id']
++            or old!=result['decision_records'][result['latest_decision_id']]):
++        raise ValueError('LATEST_PREDECESSOR_REQUIRED: checkpoint must descend from the exact latest decision/account')
+     expected=account_at_checkpoint(checkpoint,decision_at=data['decision_at'],cancelled_order_ids=cancelled_order_ids,
+                                    reserved_cash=old.get('reserved_cash','0'))
+     if data['account']!=expected or data['data_cutoff']!=checkpoint['state']['through_at']:
+         raise ValueError('Next account/cutoff resets or drops authoritative cash, rights, holdings or orders')
+     return dict(checkpoint_id=checkpoint['checkpoint_id'],state_id=checkpoint['state_id'],
+                 origin_initial_capital=checkpoint['state']['origin_initial_capital'],external_flow='0',
++                latest_predecessor_id=old['decision_id'],
+                 cancelled_order_ids=sorted(cancelled_order_ids),
+                 qualification='VERIFIED_SYNTHETIC_LEDGER_PREFIX_NOT_INVESTOR_AUTHORITY')
+ 
+--- a/股票系統M1_v0_18/capital_research/core.py
++++ b/股票系統M1_v0_18/capital_research/core.py
+@@ -8,8 +8,9 @@
+ from decimal import Decimal, localcontext
+ from graph_core.core import fingerprint, number as source_number
+ from rotation_research.core import fees
+-
+-VERSION = 'capital-decision/0.2'
++from .eligibility import entry_review, known_fact, validity_status
++
++VERSION = 'capital-decision/0.3'
+ FEATURES = ('price_volume', 'box', 'key_position', 'momentum', 'cross_scale')
+ BINDING = ('source_id', 'basis_id', 'adjustment_version')
+ 
+@@ -191,6 +192,7 @@
+             if not _known(e, cutoff, decision):
+                 continue
+             _binding(e, asset)
++            e=known_fact(e,data['data_cutoff'],data['decision_at'])
+             if e['feature'] not in FEATURES or e['stance'] not in ('support', 'refutation', 'unknown'):
+                 raise ValueError('Invalid separated evidence category')
+             if e['id'] in evidence and evidence[e['id']] != e:
+@@ -198,7 +200,7 @@
+             evidence[e['id']] = deepcopy(e)
+             facts[e['feature']][e['stance']].append(deepcopy(e))
+             tokens = evidence_tokens(e)
+-            if not tokens & used:
++            if not tokens & used and validity_status(e,data['data_cutoff'],data['decision_at']) in ('WITHIN_DECLARED_INTERVAL','ONGOING_REQUIRES_CURRENT_REVIEW'):
+                 novel[e['id']] = tokens
+             used.update(tokens)
+         for f in facts:
+@@ -206,7 +208,7 @@
+                 facts[f]['unknown'].append({'reason': 'NO_KNOWN_EVIDENCE'})
+         layer1[code] = dict(features=facts, strength_probability=None, combined_score=None,
+                             conclusion='EVIDENCE_ONLY_NO_STRENGTH_RANKING')
+-        entry = asset['entry_context']
++        entry = known_fact(asset['entry_context'],data['data_cutoff'],data['decision_at'])
+         if timestamp(entry['available_at']) > decision:
+             entry = dict(position=None, formal_reference=None, invalidation_risk=None, liquidity_shares=None)
+         else:
+@@ -216,6 +218,7 @@
+         missing = [k for k in ('position', 'formal_reference', 'invalidation_risk', 'liquidity_shares') if entry[k] is None]
+         ref = entry['formal_reference']
+         if ref is not None:
++            ref=known_fact(ref,data['data_cutoff'],data['decision_at'])
+             _binding(ref, asset)
+             if not _known(ref, cutoff, decision) or ref['reference_role'] != 'FORMAL_RESISTANCE' or number(ref['price']) <= 0:
+                 raise ValueError('Unknown/wrong formal reference')
+@@ -224,7 +227,8 @@
+                             invalidation_risk=deepcopy(entry['invalidation_risk']),
+                             liquidity_shares=entry['liquidity_shares'],
+                             reasonable_space=None if ref is None else str(number(ref['price']) - marks[code]),
+-                            reference=deepcopy(ref), guaranteed_target=None, data_qualified=False)
++                            reference=deepcopy(ref), guaranteed_target=None, data_qualified=False,
++                            capital_eligibility=entry_review(asset,code,data,evidence))
+     q, nav, available, locked = _account(data, marks)
+     baseline_q = dict(q)
+     for o in data['account']['pending_orders']:
+@@ -279,6 +283,8 @@
+             friction += x['fee'] + x['tax'] + x['slippage']
+             if change > 0:
+                 buys += x['cash']
++                if not layer2[c]['capital_eligibility']['qualified_for_synthetic_proposal']:
++                    reasons.append('NEW_CAPITAL_NOT_QUALIFIED:'+c)
+                 if layer2[c]['status'] == 'UNKNOWN':
+                     reasons.append('ENTRY_EVIDENCE_UNKNOWN:' + c)
+                 elif change > quantity(layer2[c]['liquidity_shares']):
+@@ -366,7 +372,7 @@
+     from .continuity import bind_resume
+     linkage=bind_resume(previous,data,checkpoint,cancelled_order_ids)
+     next_input=deepcopy(data)
+-    next_input['consumed_evidence_tokens']=sorted(set(next_input['consumed_evidence_tokens']) | set(old['reviewed_evidence_tokens']))
++    next_input['consumed_evidence_tokens']=sorted(set(next_input['consumed_evidence_tokens']) | set(old['reviewed_evidence_tokens']) | set(checkpoint['state']['reviewed_evidence_tokens']))
+     result=decide(next_input)
+     d=result['decision'];d.pop('decision_id')
+     d['continuity_qualification']=linkage['qualification'];d['continuity']=linkage
+--- /dev/null
++++ b/股票系統M1_v0_18/capital_research/eligibility.py
+@@ -0,0 +1,93 @@
++"""Point-in-time synthetic capital permission, separate from chart strength.
++
++An explicit current review may reuse a valid older fact. It cannot revive an
++expired/invalidated fact or create any data, trading or live authorization.
++"""
++from copy import deepcopy
++from datetime import datetime
++
++
++def _time(value):
++    t=datetime.fromisoformat(value.replace('Z','+00:00'))
++    if t.utcoffset() is None:raise ValueError('Timezone required for eligibility')
++    return t
++
++
++def validity_status(record, cutoff, decision):
++    v=record.get('validity')
++    if v is None:return 'UNSPECIFIED'
++    now=_time(decision);end=_time(cutoff)
++    if _time(v['available_at'])>now:return 'NOT_AVAILABLE'
++    if v['schema']!='capital-fact-validity/0.1' or record['source_id'] not in v['source_ids']:
++        raise ValueError('Explicit same-source synthetic validity required')
++    start=_time(v['valid_from']);until=_time(v['valid_until']) if v['valid_until'] is not None else None
++    if until is not None and until<=start:raise ValueError('Invalid declared validity interval')
++    invalid=v['invalidation']
++    if invalid is not None and _time(invalid['available_at'])<=now and _time(invalid['occurred_at'])<=now:
++        if not invalid['evidence_id'] or record['source_id'] not in invalid['source_ids']:
++            raise ValueError('Sourced invalidation identity required')
++        return 'INVALIDATED'
++    if start>end:return 'NOT_YET_VALID'
++    if until is not None and now>=until:return 'EXPIRED'
++    if until is None:
++        if v['qualification']!='EXPLICIT_SYNTHETIC_ONGOING_REQUIRES_REVIEW':
++            raise ValueError('Null expiry is not implicit perpetual qualification')
++        return 'ONGOING_REQUIRES_CURRENT_REVIEW'
++    if v['qualification'] not in ('EXPLICIT_SYNTHETIC_INTERVAL','EXPLICIT_SYNTHETIC_ONGOING_REQUIRES_REVIEW'):
++        raise ValueError('Unsupported validity declaration')
++    return 'WITHIN_DECLARED_INTERVAL'
++
++
++def known_fact(record, cutoff, decision):
++    """Do not put not-yet-known revocations into a decision's numeric identity."""
++    r=deepcopy(record);v=r.get('validity')
++    if v is not None:
++        if _time(v['available_at'])>_time(decision):
++            r.pop('validity');r['validity_visibility']='NOT_AVAILABLE'
++        elif v['invalidation'] is not None:
++            i=v['invalidation']
++            if _time(i['available_at'])>_time(decision) or _time(i['occurred_at'])>_time(decision):v['invalidation']=None
++    return r
++
++
++def entry_review(asset, code, data, evidence):
++    r=asset.get('capital_eligibility');reasons=[]
++    out=dict(qualified_for_synthetic_proposal=False,reasons=reasons,review=None,
++             authority='SYNTHETIC_RESEARCH_ONLY_NOT_DATA_OR_EXECUTION_AUTHORIZATION')
++    if r is None:reasons.append('MISSING_CAPITAL_REVIEW');return out
++    now=_time(data['decision_at']);cutoff=data['data_cutoff']
++    if _time(r['available_at'])>now:reasons.append('CAPITAL_REVIEW_NOT_AVAILABLE');return out
++    if r['schema']!='capital-entry-review/0.1' or r['code']!=code or any(r[k]!=asset[k] for k in ('source_id','basis_id','adjustment_version')):
++        raise ValueError('Capital review source/basis/asset mismatch')
++    if asset['source_id'] not in r['source_ids']:raise ValueError('Capital review source required')
++    if not _time(cutoff)<=_time(r['assessed_at'])<=_time(r['available_at'])<=now:
++        reasons.append('REVIEW_NOT_CURRENT_AT_DECISION')
++    if r['data_cutoff']!=cutoff:reasons.append('REVIEW_CUTOFF_MISMATCH')
++    if r['status'] not in ('QUALIFIED_SYNTHETIC_RESEARCH','NOT_QUALIFIED','UNKNOWN'):
++        raise ValueError('Unsupported capital-review status')
++    if r['status']!='QUALIFIED_SYNTHETIC_RESEARCH':reasons.append('CAPITAL_'+r['status'])
++    ids=r['evidence_ids']
++    if not ids or len(set(ids))!=len(ids):reasons.append('MISSING_OR_DUPLICATE_REVIEW_EVIDENCE')
++    for key in ids:
++        fact=evidence.get(key)
++        if fact is None or fact['source_id']!=asset['source_id']:
++            reasons.append('REVIEW_EVIDENCE_UNKNOWN:'+key);continue
++        status=validity_status(fact,cutoff,data['decision_at'])
++        if status not in ('WITHIN_DECLARED_INTERVAL','ONGOING_REQUIRES_CURRENT_REVIEW'):
++            reasons.append('EVIDENCE_'+status+':'+key)
++    for label,fact in [('ENTRY',asset['entry_context']),('REFERENCE',asset['entry_context']['formal_reference'])]:
++        if fact is None:reasons.append(label+'_UNKNOWN');continue
++        status=validity_status(fact,cutoff,data['decision_at'])
++        if status not in ('WITHIN_DECLARED_INTERVAL','ONGOING_REQUIRES_CURRENT_REVIEW'):
++            reasons.append(label+'_'+status)
++    out['review']=deepcopy(r);out['qualified_for_synthetic_proposal']=not reasons
++    return out
++
++
++def expired_entry_reasons(asset, at):
++    """Standing orders retain approval, but explicit expiry/revocation cancels."""
++    ids=set(asset.get('capital_eligibility',{}).get('evidence_ids',[]))
++    facts=[('ENTRY',asset['entry_context']),('REFERENCE',asset['entry_context']['formal_reference'])]
++    facts += [(e['id'],e) for e in asset['evidence'] if e['id'] in ids]
++    return [label+':'+s for label,f in facts if f is not None
++            for s in [validity_status(f,at,at)] if s in ('EXPIRED','INVALIDATED')]
+--- a/股票系統M1_v0_18/capital_research/execution.py
++++ b/股票系統M1_v0_18/capital_research/execution.py
+@@ -10,8 +10,10 @@
+ from .core import decide, resume_decision, costs, quantity, timestamp, nonnegative, validate_costs, number
+ from .continuity import row_at, ledger_prefix, make_checkpoint, validate_checkpoint
+ from .transition_risk import inspect_risk
+-
+-VERSION = 'capital-execution/0.2'
++from .close_clock import close_record
++from .eligibility import expired_entry_reasons
++
++VERSION = 'capital-execution/0.3'
+ 
+ 
+ def _refusal(reason):
+@@ -68,6 +70,13 @@
+     reasons = qualify(ledger_input)
+     if reasons:
+         return _refusal('EXISTING_ACTION_LEDGER_REFUSED:' + '|'.join(reasons))
++    clock=job.get('ledger_close_proof')
++    opening_close=close_record(ledger_input,clock,data['data_cutoff'])
++    close_record(ledger_input,clock,job['observed_until'])
++    if timestamp(opening_close['available_at'])>timestamp(data['decision_at']):
++        raise ValueError('LEDGER_CLOSE_NOT_YET_AVAILABLE')
++    if continuation and clock!=continuation['checkpoint']['execution_result']['ledger_close_proof']:
++        raise ValueError('Continuous account must reuse the exact close-availability proof')
+     cfg = data['cost_model']; validate_costs(cfg)
+     for k in ('fee_rate', 'minimum_fee', 'sell_tax', 'slippage_bps'):
+         if ledger_input['terminal_costs'][k] != cfg[k]:
+@@ -121,7 +130,22 @@
+     initial_fill_count=len(initial_fills)
+     fills = deepcopy(initial_fills)
+     risk_observations=[];reassessments=[]
+-    decision_ids=[result['decision_id']]
++    decision_ids=deepcopy(inherited['decision_ids']) if inherited else []
++    decision_records=deepcopy(inherited['decision_records']) if inherited else {}
++    decision_ids.append(result['decision_id']);decision_records[result['decision_id']]=deepcopy(result)
++    fill_order_ids=deepcopy(inherited['fill_order_ids']) if inherited else {}
++    unavailable=deepcopy(inherited['opening_unavailable_shares']) if inherited else {
++        c:str(quantity(x['shares'])-quantity(x['sellable'])) for c,x in a['holdings'].items()}
++    origin_common=inherited['origin_common_account_id'] if inherited else result['common_account_id']
++    latest_result=result
++
++    def lineage():
++        latest=decision_records[decision_ids[-1]]
++        return dict(decision_ids=deepcopy(decision_ids),decision_records=deepcopy(decision_records),
++            latest_decision_id=latest['decision_id'],latest_common_account_id=latest['common_account_id'],
++            origin_common_account_id=origin_common,opening_unavailable_shares=deepcopy(unavailable),
++            reviewed_evidence_tokens=sorted(set().union(*(set(d['reviewed_evidence_tokens']) for d in decision_records.values()))),
++            fill_order_ids=deepcopy(fill_order_ids),ledger_close_proof=deepcopy(clock))
+     marks={c:dict(price=next(m['price'] for m in x['marks'] if m['occurred_at']==data['data_cutoff'] and timestamp(m['available_at'])<=timestamp(data['decision_at'])),
+                         at=data['data_cutoff'],source_id=x['source_id'],basis_id=x['basis_id']) for c,x in data['assets'].items()}
+     risk_data=data
+@@ -151,6 +175,9 @@
+         # Current intraday balance = prior day end, with today's accepted fills.
+         current = replay(dict(ledger_input, fills=deepcopy(fills)))
+         prior = [x for x in current['daily'] if x['date'] < day][-1]
++        prior_close=close_record(ledger_input,clock,clock['closes'][prior['date']]['as_of'])
++        if timestamp(prior_close['available_at'])>when:
++            raise ValueError('LEDGER_CLOSE_NOT_YET_AVAILABLE_FOR_EXECUTION')
+         cash = number(prior['available_cash_strict']) - nonnegative(a['reserved_cash'])
+         sellable = {c:number(prior['shares'][c]) for c in data['assets']}
+         for f in [f for f in fills if f['date']==day]:
+@@ -163,6 +190,13 @@
+                 if o['side']=='BUY' and o['code']==obs['code'] and number(st['remaining']):
+                     st.update(status='CANCELLED_EVIDENCE',reserved_cash='0')
+                     decisions.append(dict(at=obs['at'],order_id=o['id'],status='CANCELLED_EVIDENCE',reason=obs['evidence_status']))
++        for o in orders:
++            st=order_state[o['id']]
++            if o['side']=='BUY' and number(st['remaining']) and not st['status'].startswith(('CANCELLED','EXPIRED')):
++                invalid=expired_entry_reasons(risk_data['assets'][o['code']],obs['at'])
++                if invalid:
++                    st.update(status='CANCELLED_EVIDENCE',reserved_cash='0')
++                    decisions.append(dict(at=obs['at'],order_id=o['id'],status='CANCELLED_EVIDENCE',reason='DECLARED_VALIDITY_ENDED',details=invalid))
+         # Funding is not a reauthorization. A new decision must bind the actual
+         # prior-close account, original fill path and explicit order cancellations.
+         for review in job.get('reassessments',[]):
+@@ -178,18 +212,21 @@
+             provisional=dict(schema=VERSION,status='SYNTHETIC_EXECUTION_REPLAY',decision_id=result['decision_id'],
+                 common_account_id=result['common_account_id'],origin_ledger_input_id=fingerprint(ledger_input),
+                 observed_until=fresh['data_cutoff'],orders=deepcopy(orders),order_history=deepcopy(order_history),
+-                order_states=deepcopy(order_state),fills=deepcopy(fills),decision_ids=decision_ids)
++                order_states=deepcopy(order_state),fills=deepcopy(fills),**lineage())
+             provisional['result_id']=fingerprint(provisional)
+             cp=make_checkpoint(ledger_input,provisional,through_at=fresh['data_cutoff'])
+             if review['checkpoint_id']!=cp['checkpoint_id']:
+                 raise ValueError('Reassessment checkpoint does not match executed fills, rights and unfilled orders')
+-            fresh_result=resume_decision(dict(decision=result),fresh,checkpoint=cp,
++            fresh_result=resume_decision(dict(decision=latest_result),fresh,checkpoint=cp,
+                 cancelled_order_ids=review['cancelled_order_ids'])['decision']
+             if fresh_result['decision_id']!=review['decision_id']:
+                 raise ValueError('Reassessment decision_id mismatch')
+             fresh_plan=next((p for p in fresh_result['layer3']['alternatives'] if p['id']==review['plan_id']),None)
+             if fresh_plan is None or not fresh_plan['feasible'] or fresh_plan.get('funding')!='SETTLED':
+-                decisions.append(dict(at=obs['at'],order_id=o['id'],status='WAITING_REASSESSMENT',reason='NEW_DECISION_NOT_FEASIBLE_AND_SETTLED'))
++                invalid=expired_entry_reasons(fresh['assets'][o['code']],fresh['decision_at'])
++                if invalid:st.update(status='CANCELLED_EVIDENCE',reserved_cash='0')
++                decisions.append(dict(at=obs['at'],order_id=o['id'],status='CANCELLED_EVIDENCE' if invalid else 'WAITING_REASSESSMENT',
++                                      reason='NEW_DECISION_EVIDENCE_EXPIRED_OR_INVALIDATED' if invalid else 'NEW_DECISION_NOT_FEASIBLE_AND_SETTLED'))
+                 continue
+             if any(fresh['assets'][c][k]!=data['assets'][c][k] for c in data['assets'] for k in ('source_id','basis_id','adjustment_version')):
+                 raise ValueError('Reassessment cannot silently change price basis')
+@@ -200,7 +237,8 @@
+             for key in review['cancelled_order_ids']:
+                 order_state[key].update(status='CANCELLED_REASSESSMENT',reserved_cash='0')
+             st.update(status='WAITING',requires_reassessment=False,active_decision_at=fresh['decision_at'],active_decision_id=fresh_result['decision_id'])
+-            risk_data=fresh;decision_ids.append(fresh_result['decision_id'])
++            risk_data=fresh;latest_result=fresh_result;decision_ids.append(fresh_result['decision_id'])
++            decision_records[fresh_result['decision_id']]=deepcopy(fresh_result)
+             reassessments.append(dict(id=review['id'],at=obs['at'],order_id=o['id'],checkpoint_id=cp['checkpoint_id'],
+                 decision_id=fresh_result['decision_id'],cancelled_order_ids=review['cancelled_order_ids']))
+         # Release expired orders and reserve all active buys jointly, in explicit order.
+@@ -257,6 +295,7 @@
+                      price=str(effective_price), fee=str(x['fee']), tax=str(x['tax']), date=day,
+                      decision_date=st['active_decision_at'][:10], settlement_date=obs['settlement_date'], source_ids=[obs['source_id']])
+             fills.append(f)
++            fill_order_ids[f['id']]=o['id']
+             if o['side']=='BUY':
+                 cash -= x['cash']; reserved -= number(st['reserved_cash'])
+             else:
+@@ -285,7 +324,7 @@
+                origin_ledger_input_id=fingerprint(ledger_input),opening_checkpoint_id=continuation['checkpoint']['checkpoint_id'] if continuation else None,
+                execution_model_version=data['execution_model']['version'], observed_until=job['observed_until'],
+                orders=orders,order_history=order_history, order_states=order_state, execution_events=decisions, fills=fills, ledger=final,
+-               new_fill_ids=[f['id'] for f in fills[initial_fill_count:]],decision_ids=decision_ids,
++               new_fill_ids=[f['id'] for f in fills[initial_fill_count:]],**lineage(),
+                observation_only=observation_only,selected_plan_feasible=selected['feasible'],
+                risk_observations=risk_observations,reassessments=reassessments,
+                data_qualified=False, execution_model_qualified=False, historical_signal_eligible=False,
+@@ -302,9 +341,10 @@
+     for j in jobs.values():
+         li=deepcopy(j['ledger_input']); li.pop('fills')
+         identities.append(fingerprint(dict(ledger=li, decision_input=j['decision_input'],tape=j['tape'],observed_until=j['observed_until'],
++            ledger_close_proof=j.get('ledger_close_proof'),
+             predecessor_state=j.get('continuation',{}).get('checkpoint',{}).get('state_id'))))
+     if len(set(identities)) != 1:
+         raise ValueError('Alternatives must share exact capital/rights AND exogenous prices/capacity/states/availability/settlement path')
+-    return dict(schema='capital-comparison/0.2', synthetic=True, common_input_id=identities[0],
++    return dict(schema='capital-comparison/0.3', synthetic=True, common_input_id=identities[0],
+                 results={k:simulate(j) for k,j in jobs.items()}, ranking=None,
+                 total_net_return_comparison_qualified=False, policy_authorized=False)
+--- /dev/null
++++ b/股票系統M1_v0_18/capital_research/repair_20261025/CONTRACT_0_3.md
+@@ -0,0 +1,37 @@
++# 隔離研究修復契約0.3（未提交）
++
++固定Git基線與最新已核遠端仍為 `6be4333d490bcccfe952c7606dffb802b76cdd5c`。新決策／成交／比較輸出0.3、checkpoint 0.2、trend／trend-policy-competition 0.2；原action_ledger 0.1完全不改。舊0.1／0.2輸入、保存結果、契約及log不移轉、不重算；原0.2 source／文件／證據另有逐檔快照。JSON傳輸外殼仍可標原input/0.1，但0.3研究執行必須通過下列新資格profile，舊欄位缺少資格不能默認可投入資金。
++
++## 每股新資金資格
++
++`assets[code].capital_eligibility` 為 `capital-entry-review/0.1`：code、source_id、basis_id、adjustment_version、source_ids、evidence_ids、status、data_cutoff、assessed_at、available_at。status只准QUALIFIED_SYNTHETIC_RESEARCH／NOT_QUALIFIED／UNKNOWN。review截止必精確等於本次data_cutoff；cutoff≤assessed_at≤available_at≤decision_at；同股同源基底版本，明示非空且唯一evidence_ids均須在當時已知事實中。缺失、尚不可得、舊截止或未合格均不准增加該股目標。
++
++`layer2[code].capital_eligibility.qualified_for_synthetic_proposal`只表示上述合成提案資格，不是data_qualified或任何授權。每個正股數變動都另外檢查；NOT_QUALIFIED不能只作顯示標籤。續抱、風險降低與新投入分開。被拒方案不列research_recommendation；零交易觀察控制仍遵循原限制。沒有不合格買進的隱藏控制模式。
++
++## 有效舊事實、到期與失效
++
++事實、entry_context及正式參照可附`capital-fact-validity/0.1`：available_at、valid_from、valid_until、invalidation、source_ids、qualification。已知明示的EXPIRED／INVALIDATED不得由新decision_id或新review復活。有效舊事實仍可由當期review引用同一ID，不強迫新事件，也不把它重新當獨立trigger。
++
++valid_until可為來源明示截止；null必須明標EXPLICIT_SYNTHETIC_ONGOING_REQUIRES_REVIEW，且新投入仍需當期review，不等永久有效或無限合理空間。沒有有效期資料是UNSPECIFIED，不能補成合格。沒有任何固定有效天數或交易門檻。
++
++invalidation另有evidence_id、occurred_at、available_at、source_ids。只處理決策時已知的失效；未來撤銷不進當前decision身份。完整原輸入保存，不改寫原件。明示到期與當時已知失效會取消仍未成交買單，即使限價內；已合格且持續有效的舊單仍可在期限內執行，不因每個觀察自動要求新決策。條件式等待交割買單仍必須有新decision與checkpoint。
++
++## 日終可知證據
++
++execution job新增`ledger_close_proof`，schema=synthetic-ledger-close-clock/0.1、qualification=DECLARED_SYNTHETIC_DAY_END_NOT_REAL_MARKET_OR_BROKER_PROOF、closes[date]={as_of,available_at,source_ids}。只有明示engineered來源可用；不產生真實收盤或券商交割證明，不推真實T+2。
++
++opening、observed_until及checkpoint的as_of必精確匹配明示日終。不能以09:00標記重播出的整日日終帳。available_at≥as_of；可能延後可知，下一decision必已到available_at，執行時使用的前日帳亦須已可知。checkpoint可作離線保存，但可知前不能供下一帳戶決策使用。日終時間、可知時間與decision_at分開。
++
++## 最新前身與連續帳
++
++新execution同時保存origin_common_account_id、當輪起始decision_id/common_account_id、latest_decision_id/latest_common_account_id、完整decision_ids／decision_records及reviewed_evidence_tokens。decision_records逐筆驗指紋與時間順序；下一輪必精確承接最後一筆decision，不能只檢查出現在歷史清單。重評後亦沿同一身份鏈接續，所有已看token累積。
++
++checkpoint 0.2仍由原ledger opening及全部accepted fills重播。新fill_order_ids把每筆成交精確連到歷史委託，整數原數量=成交量＋剩餘量；驗證不受呼叫者Decimal精度影響。取消／到期保留剩餘量與歷史，只釋放委託預留；一般reserved_cash獨立承接，不可無聲歸零。現金、應收應付、持股、股份權利與原始資本仍只有原action_ledger入帳。
++
++opening_unavailable_shares保存原始不可賣量。當存在未有來源解除的可賣限制，本版明確SELLABLE_LIMIT_CONTINUATION_NOT_IMPLEMENTED；不把實股全部升成可賣，也沒有新增解除限制引擎。買進應付未結清與不中斷外部既有單完整重播仍拒絕。舊結果可READ，不能自動升級成新checkpoint。
++
++共同市場身份另綁完整ledger_close_proof；原價格、容量、交易狀態、available_at、來源基底及交割路徑綁定保持。新的同路徑正反變體只改明示新資金資格，不是市場樣本或R1/R2勝負。
++
++## 邊界
++
++全部data_qualified、execution_model_qualified、historical_signal_eligible、policy_authorized、live_execution_authorized=false。主壓力未知仍null，不造參照。R2/F、信用借還款、期初應付、外部既有單無縫重播、無來源限售解除及實現曝險配對未實作。原70拒算／2不足／8換股影響未支援／真實總淨合格0保留；所有正式來源、parents、原件與歷史不改。沒有正式策略、圖形、UI或schema遷移。
+--- /dev/null
++++ b/股票系統M1_v0_18/capital_research/repair_20261025/REPORT.md
+@@ -0,0 +1,53 @@
++# 資金研究0.3：定向重現與最小修復
++
++本輪只有原既有唯一Codex，沒有commit/push。遠端及本地Git基線仍`6be4333d490bcccfe952c7606dffb802b76cdd5c`，指定祖先及全部後續保留。不是新的GitHub交付，也不代表Work已取得原件。
++
++## 先保存再修
++
++修改數值程式前，封存原未提交0.2的78檔（完整72個差異檔加相關未改source）、141416bytes source/doc patch及tracked diff。逐檔bytes／SHA見intake.json與baseline_0_2/files；原before／after／log／validation_20261024及來源保持。只用現有標準庫與source，bootstrap／hydrate／舊包覆蓋0次。
++
++七個修前probe均在0.2實跑並create-only保存，含完整輸入／預期／實際／來源版本。原先三個靜態疑點已實際重現；部分成交兩例則本來就成立，未冒稱發現帳務缺陷。
++
++|案例|修前實際|修後實際|
++|---|---|---|
++|新資金資格|B為NOT_QUALIFIED，C-event仍可行並買B20；既存0.2原件另有NOT_QUALIFIED仍買回A100|每股新投入必通過current review；負例候選拒絕／零買單。原再進場同市場路徑另給明示資格正例，1/19買A100|
++|可賣限制跨輪|A100／sellable0，無解除事件，下一account卻sellable100|保存不可賣量，無來源解除則明確拒絕continuation，沒有發明可賣權利|
++|盤中日終帳|1/8 09:00 watermark已有日終結清款995，現金1995|不符明示日終即拒絕；延後可知的日終帳在available_at前亦拒絕|
++|最新前身|重評新decision作前身被拒，舊初始decision反而接受|新前身可接下一決策及實際下一輪成交，舊前身拒絕；新審閱token不重用|
++|明示證據到期|已過明示有效期仍可行並買B20|過期／已知失效不能被新review或新ID復活；持續有效舊事實可保留原ID|
++|部分成交後取消|0.2已能承接成交、權利與原始資本|新增定向證據，明示取消剩餘單，只釋放訂單預留，一般reserve100保持|
++|部分成交後到期|0.2已能保留到期剩餘量再接續|新增定向證據，EXPIRED_UNFILLED及剩餘量保留，不假造取消或成交|
++
++新對照在artifacts/after；重評後再成交在reassessment-and-next-round.json；有效舊事實正例在old-facts-current-review.json；原0.2再進場只作既存保存件引用，明標NOT_RERUN，不把後來摘錄冒修前新執行。
++
++## 必要修改
++
++core／execution升0.3，新增純eligibility及close_clock。continuity升checkpoint0.2，分開origin與latest身份、逐筆decision紀錄、fill/order連結及一般預留；無來源限售解除明確未實作。trend／trend-policy-competition升0.2，把加碼資格真正接到資金提案；其他股票也要各自明示資格，不從原股續抱推導。仍只呼叫原action_ledger，不新增入帳引擎。
++
++未修改正式交易／圖形規則、P0-3/P0-4、人工模式、歷史schema、來源producer／catalog／庫或UI。舊0.2 builder／verify屬封存版本，在新source上不作舊結果重現入口。新驗證與builder在本repair目錄，輸出只能另建新目錄。
++
++## 實際驗證與診斷
++
++最終38個唯一方法PASS＝33新增＋5必要回歸。命令及完整方法見execution.json／verify.py／tests-final.log。原51／舊46只保存，不重跑全suite；首37批與修正37批不累加，probe／builder／同路徑10序列不算新增方法。
++
++首批37有1個FAIL與2個ERROR：共同市場測例把available_at改成原來同一值，預期差異被反證，已改用真正不同且合法的可得時點；延伸跨輪fixture沒有同步延伸委託期限與明示交割日，已修正合成輸入；新close驗證早於原來源拒算，掩蓋缺淨額的既有REFUSED路徑，已還原先行來源資格拒算。所有失敗log保留，沒有放寬拒算。37修正批通過後，原碼覆核補成交量對帳採精確整數及低Decimal精度反例，最終同範圍加1方法共38通過。
++
++正例包含有資格重新進場、舊有效事實經當期review繼續使用、一般已合格舊單延續、完整可賣帳戶減風險；反例包含缺資格、錯來源基底、舊截止、過期／失效、尚不可知日終帳、錯前身、掉權利、清除一般reserve、未結應付及錯fill/order連結。必要回歸只五個READ／保存衝突／缺淨額／非法輸入／缺價方法。
++
++另以CLI READ讀原validation_20261024/cli-records/execution-v1，stdout與舊cli-READ.log完整bytes一致；沒有數值重算或舊檔改寫。證據在artifacts/old-READ-verification.json。
++
++## 資金、權利與未成交證據
++
++部分成交案例期初2180＝現金1000＋A100×10＋現金權利80＋股份權利10×10。首輪只賣A20／買B7；1/8已結1056.660、A80／B7、現金權利80與股份權利10仍在，A剩30／B剩13未成交。取消或到期只解除訂單預留，一般reserve100留存。
++
++下一輪沿原opening及全部fills追加，後來現金權利入帳一次、股份權利成為A10一次；終點現金2069.720＋A10×10＝2169.720。2180＝2169.720＋實際模擬費稅9＋有效價滑價1.28；一般reserve100仍佔額，可用額1969.720。A10不是遺漏退出，而是既有股份權利於後來交付可交易後的實股；沒有假稱全現金。
++
++未來撤銷資料與未來ledger價格只影響相應完整性metadata，不改當前prefix決策的定向反例通過。沒有宣稱任何未知未來或真實市場已全面驗收。
++
++## 尚不能證明
++
++單一假想再進場市場路徑的兩種資格變體，各五個數量意圖／五輪，共10序列，只為接線正反例，獨立市場樣本0、ranking=null。沒有重跑九路徑45序列，也不預定保留部位、R1或R2最好。
++
++R2/F、信用借還款、期初應付、不中斷外部既有單完整重播、無來源限售解除、真實日終／交割認證及實現曝險配對未實作。真實producer／新資格／市場六方案／UI／Android／樣本外實驗未執行。完整公司行動、個人淨額與期初權利、畸零與既有2884影響、歷史可得與原缺價仍不足；70拒算／2不足／8不支援／真實總淨合格0僅核保存檔。
++
++Astra全文Codex仍未取得／未讀，Work已讀只記使用者提供狀態；無HTTP試探、拒絕重試或要求搬檔。全部外部資格及授權false，主壓力未知保持null。下一步Work唯讀研究驗收，完整可貼指令在根M1_CAPITAL_RESEARCH_REPAIR_20261025_HANDOFF.md。
+--- /dev/null
++++ b/股票系統M1_v0_18/capital_research/repair_20261025/build.py
+@@ -0,0 +1,98 @@
++"""Create-only repair evidence. Does not run old producers or mutate old files."""
++from copy import deepcopy
++from pathlib import Path
++from datetime import datetime,timezone
++import argparse
++import hashlib
++import json
++import subprocess
++import sys
++from capital_research.core import decide,resume_decision,VERSION as DECISION_VERSION
++from capital_research.execution import simulate,VERSION as EXECUTION_VERSION
++from capital_research.continuity import make_checkpoint,CHECKPOINT
++from capital_research.trend import VERSION as TREND_VERSION
++from capital_research.trend_fixtures import path_fixture
++from capital_research.trend_replay import run_fixture
++from .fixtures import execution_job,prefix,advance,reassessed_job,continuation_job
++from .reproduce import capture
++
++
++def write_new(path,value):
++    path=Path(path);path.parent.mkdir(parents=True,exist_ok=True)
++    body=(json.dumps(value,ensure_ascii=False,sort_keys=True,indent=2,allow_nan=False)+'\n').encode()
++    with path.open('xb') as f:f.write(body)
++
++
++def build(output):
++    out=Path(output)
++    if any(x in out.parts for x in ('review_20261025','validation_20261024','baseline_0_2')):
++        raise ValueError('Frozen evidence cannot be a repair output destination')
++    out.mkdir(parents=True,exist_ok=False)
++    capture(out/'after')
++    j,old,new=reassessed_job(extend=True);first=simulate(j)
++    second=continuation_job(j,first,new);last=simulate(second)
++    assert first['fills']==last['fills'][:len(first['fills'])] and last['ledger']['initial_equity']=='2000'
++    write_new(out/'reassessment-and-next-round.json',dict(first_input=j,old_decision=old,new_decision=new,
++        first_execution=first,next_input=second,next_execution=last))
++    j=prefix(execution_job());r=simulate(j);cp=make_checkpoint(j['ledger_input'],r,through_at=j['observed_until'])
++    fresh,ids=advance(j['decision_input'],cp);reviewed=resume_decision(decide(j['decision_input']),fresh,checkpoint=cp,cancelled_order_ids=ids)
++    second=continuation_job(j,r,decide(j['decision_input']),plan='B-full',fresh=fresh,ids=ids)
++    write_new(out/'old-facts-current-review.json',dict(first_input=j,first_execution=r,checkpoint=cp,
++        current_input=fresh,current_decision=reviewed,next_input=second,next_execution=simulate(second),
++        evidence_bytes_equal=j['decision_input']['assets']['B']['evidence']==fresh['assets']['B']['evidence']))
++    negative=path_fixture('exit_repair_reentry');positive=deepcopy(negative)
++    for row in (positive['frames'][3],positive['trend_input']['records'][3]):row['new_capital_evidence_qualified']=True
++    competitions={}
++    for label,fixture in [('not-qualified',negative),('qualified',positive)]:
++        result=run_fixture(fixture);competitions[label]=result
++        write_new(out/'trend-reentry'/f'{label}-fixture.json',fixture)
++        write_new(out/'trend-reentry'/f'{label}-competition.json',result)
++    a=competitions['not-qualified']['policy_results']['structure_hold']['rounds'][3]
++    b=competitions['qualified']['policy_results']['structure_hold']['rounds'][3]
++    assert not a['selected_policy_proposal']['feasible'] and not a['new_fill_ids']
++    assert b['selected_policy_proposal']['feasible'] and b['new_fill_ids']
++    assert competitions['not-qualified']['common_market_path_id']==competitions['qualified']['common_market_path_id']
++    # This is a read of an old saved result, not a regeneration of its old policy.
++    old_dir=Path('capital_research/validation_20261024')
++    command=[sys.executable,'-m','capital_research.cli','READ','--store',str(old_dir/'cli-records'),'--id','execution-v1']
++    read=subprocess.run(command,capture_output=True)
++    with (out/'old-READ.log').open('xb') as f:f.write(read.stdout)
++    read_evidence=dict(command=command,exit_code=read.returncode,
++        exact_saved_stdout=read.stdout==(old_dir/'cli-READ.log').read_bytes(),stderr=read.stderr.decode(),numeric_recomputation=False)
++    write_new(out/'old-READ-verification.json',read_evidence)
++    assert read.returncode==0 and read_evidence['exact_saved_stdout']
++    old_path=Path('capital_research/review_20261025/artifacts/paths/exit_repair_reentry/competition.json')
++    old_result=json.loads(old_path.read_text())['policy_results']['structure_hold']['rounds'][3]
++    write_new(out/'original-saved-reentry-reference.json',dict(role='PREVIOUSLY_SAVED_V02_NOT_RERUN',
++        path=str(old_path),sha256=hashlib.sha256(old_path.read_bytes()).hexdigest(),
++        pointer='policy_results.structure_hold.rounds[3]',record=old_result))
++    after={f.stem:json.loads(f.read_text()) for f in (out/'after').glob('*.json')}
++    assert all(x['error'] is None for x in after.values())
++    aa=after['latest-predecessor']['value']['actual']
++    assert aa['latest']['error'] is None and aa['stale']['error']
++    partial=after['partial-cancel-chain']['value']['actual'];row=partial['next_execution']['ledger']['daily'][-1]
++    summary=dict(synthetic=True,generated_at=datetime.now(timezone.utc).isoformat(),
++        before_cases=7,after_cases=7,reproduced_defects=5,
++        partial_cancel_and_expiry='SUPPORTED_ALREADY_IN_V02; ADDITIONAL_DIRECTED_EVIDENCE_NOT_A_NEW_ACCOUNTING_IMPLEMENTATION',
++        entry_gate=dict(negative_feasible=a['selected_policy_proposal']['feasible'],negative_new_fill_ids=a['new_fill_ids'],
++            positive_feasible=b['selected_policy_proposal']['feasible'],positive_new_fill_ids=b['new_fill_ids']),
++        latest_predecessor=dict(latest_accepted=aa['latest']['error'] is None,old_predecessor_error=aa['stale']['error']),
++        partial_account=dict(root_capital=partial['next_execution']['ledger']['initial_equity'],terminal_settled_cash=row['settled_cash'],
++            terminal_shares=row['shares'],terminal_equity=row['net_accrual_equity'],general_reserved_cash='100',
++            expected_fill_fee_tax='9',expected_effective_price_slippage='1.28',external_flows='0'),
++        trend_variants=2,market_paths_in_trend_probe=1,synthetic_policy_sequences=10,rounds_per_sequence=5,
++        independent_market_samples=0,ranking=None,R2_F='NOT_IMPLEMENTED',
++        qualifications=dict(data_qualified=False,execution_model_qualified=False,historical_signal_eligible=False,policy_authorized=False,live_execution_authorized=False))
++    write_new(out/'summary.json',summary)
++    sources={str(p):hashlib.sha256(p.read_bytes()).hexdigest() for p in Path('capital_research').glob('*.py')}
++    sources.update({str(p):hashlib.sha256(p.read_bytes()).hexdigest() for p in Path('capital_research/repair_20261025').glob('*.py')})
++    write_new(out/'source-versions.json',dict(decision=DECISION_VERSION,execution=EXECUTION_VERSION,
++        checkpoint=CHECKPOINT,trend=TREND_VERSION,sources=sources,
++        original_action_ledger_sha256=hashlib.sha256(Path('rotation_research/action_ledger.py').read_bytes()).hexdigest(),
++        git_base='6be4333d490bcccfe952c7606dffb802b76cdd5c',uncommitted=True))
++    return dict(status='NEW_REPAIR_ARTIFACTS_SAVED',before_cases=7,after_cases=7,old_READ_exact=True,market_validation=False)
++
++
++if __name__=='__main__':
++    p=argparse.ArgumentParser();p.add_argument('--output',required=True);a=p.parse_args()
++    print(json.dumps(build(a.output),ensure_ascii=False,sort_keys=True))
+--- /dev/null
++++ b/股票系統M1_v0_18/capital_research/repair_20261025/fixtures.py
+@@ -0,0 +1,117 @@
++"""Only hypothetical repair inputs; no historical market producer."""
++from copy import deepcopy
++from datetime import timedelta,date
++from capital_research.fixtures import fixture, job, observation
++from capital_research.core import decide, resume_decision, timestamp
++from capital_research.execution import simulate
++from capital_research.continuity import make_checkpoint, account_at_checkpoint
++
++
++def validity(at):
++    return dict(schema='capital-fact-validity/0.1', available_at=at,
++                valid_from=at, valid_until=None, invalidation=None,
++                source_ids=['fixture'], qualification='EXPLICIT_SYNTHETIC_ONGOING_REQUIRES_REVIEW')
++
++
++def review(asset, code, cutoff, at, qualified=True):
++    return dict(schema='capital-entry-review/0.1', code=code,
++                status='QUALIFIED_SYNTHETIC_RESEARCH' if qualified else 'NOT_QUALIFIED',
++                data_cutoff=cutoff, assessed_at=at, available_at=at,
++                evidence_ids=[e['id'] for e in asset['evidence']], source_ids=['fixture'],
++                source_id=asset['source_id'], basis_id=asset['basis_id'],
++                adjustment_version=asset['adjustment_version'])
++
++
++def data_fixture():
++    d=fixture()
++    for c,a in d['assets'].items():
++        for e in a['evidence']:e['validity']=validity(e['available_at'])
++        a['entry_context']['validity']=validity(d['data_cutoff'])
++        a['entry_context']['formal_reference']['validity']=validity(d['data_cutoff'])
++        a['capital_eligibility']=review(a,c,d['data_cutoff'],d['decision_at'])
++    return d
++
++
++def close_proof(origin, initial_cutoff):
++    return dict(schema='synthetic-ledger-close-clock/0.1',
++        qualification='DECLARED_SYNTHETIC_DAY_END_NOT_REAL_MARKET_OR_BROKER_PROOF',
++        closes={r['date']:dict(as_of=initial_cutoff if r['date']==origin['start'] else r['date']+'T16:00:00+08:00',
++            available_at=initial_cutoff if r['date']==origin['start'] else r['date']+'T16:00:00+08:00',
++            source_ids=['fixture']) for r in origin['calendar']})
++
++
++def execution_job(plan='B-full', data=None):
++    j=job(plan,data or data_fixture())
++    j['ledger_close_proof']=close_proof(j['ledger_input'],j['decision_input']['data_cutoff'])
++    return j
++
++
++def prefix(j, through='2026-01-08T16:00:00+08:00'):
++    j=deepcopy(j);j['observed_until']=through
++    j['tape']=[o for o in j['tape'] if timestamp(o['at'])<=timestamp(through)]
++    return j
++
++
++def advance(previous, cp, *, at=None, qualified=True):
++    d=deepcopy(previous);cutoff=cp['state']['through_at']
++    at=at or (timestamp(cutoff)+timedelta(hours=1)).isoformat()
++    ids=[x['order']['id'] for x in cp['state']['unfilled_orders']]
++    d.update(decision_at=at,data_cutoff=cutoff)
++    d['account']=account_at_checkpoint(cp,decision_at=at,cancelled_order_ids=ids,
++                                      reserved_cash=previous['account']['reserved_cash'])
++    for c,a in d['assets'].items():
++        mark=deepcopy(a['marks'][0]);mark.update(price=cp['state']['row']['marks'][c]['value'],
++            occurred_at=cutoff,available_at=cp['state'].get('ledger_close',{}).get('available_at',cutoff));a['marks']=[mark]
++        a['capital_eligibility']=review(a,c,cutoff,at,qualified)
++    return d,ids
++
++
++def reassessed_job(*, extend=False):
++    j=execution_job()
++    if extend:
++        origin=j['ledger_input'];old_end=date.fromisoformat(origin['end']);origin['end']='2026-01-16'
++        for i in range(1,(date(2026,1,16)-old_end).days+1):
++            day=old_end+timedelta(days=i);origin['calendar'].append(dict(date=day.isoformat(),trading=day.weekday()<5))
++            for c,a in origin['assets'].items():a['quotes'][day.isoformat()]={'A':'10','B':'20','C':'25'}[c]
++        for coverage in origin['coverage'].values():coverage['end']=origin['end']
++        j['ledger_close_proof']=close_proof(origin,j['decision_input']['data_cutoff'])
++    first=prefix(j);prior=simulate(first)
++    cp=make_checkpoint(j['ledger_input'],prior,through_at=first['observed_until'])
++    fresh,ids=advance(j['decision_input'],cp)
++    # New but genuinely independent fact: later resume must carry this token too.
++    e=deepcopy(fresh['assets']['B']['evidence'][0])
++    e.update(id='B-reviewed-repair',formation_id='B-new-formation',volume_bar_id='B-new-bar',
++             event_id='B-reviewed-repair',occurred_at=fresh['data_cutoff'],available_at=fresh['data_cutoff'])
++    e['validity']=validity(fresh['data_cutoff']);fresh['assets']['B']['evidence'].append(e)
++    fresh['assets']['B']['capital_eligibility']=review(fresh['assets']['B'],'B',fresh['data_cutoff'],fresh['decision_at'])
++    original=decide(j['decision_input'])
++    new=resume_decision(original,fresh,checkpoint=cp,cancelled_order_ids=ids)
++    j['reassessments']=[dict(id='repair-settled-review',order_id='B-buy',decision_input=fresh,
++        decision_id=new['decision']['decision_id'],plan_id='B-full',checkpoint_id=cp['checkpoint_id'],cancelled_order_ids=ids)]
++    return j,original,new
++
++
++def continuation_job(first_job, prior, previous_decision, *, plan='D-cash', fresh=None, ids=None):
++    cp=make_checkpoint(first_job['ledger_input'],prior,through_at=prior['observed_until'])
++    if fresh is None:fresh,ids=advance(first_job['decision_input'],cp)
++    j=execution_job(plan,fresh);j['ledger_input']=deepcopy(first_job['ledger_input'])
++    j['ledger_close_proof']=deepcopy(first_job['ledger_close_proof'])
++    day=(timestamp(fresh['data_cutoff'])+timedelta(days=1)).date().isoformat()
++    endpoint=first_job['ledger_input']['end'];j['observed_until']=endpoint+'T16:00:00+08:00'
++    for o in j['orders']:
++        o.update(id='next-'+o['id'],decision_at=fresh['decision_at'],submitted_at=day+'T08:00:00+08:00',expires_at=j['observed_until'])
++    j['tape']=[observation(c,day+f'T09:0{i}:00+08:00',settlement=endpoint) for i,c in enumerate(('A','B','C'))]
++    j['continuation']=dict(previous_decision=previous_decision,checkpoint=cp,cancelled_order_ids=ids)
++    return j
++
++
++def partial_first(*, expire=False):
++    d=data_fixture();d['account']['reserved_cash']='100'
++    d['account']['cash_claims']=[dict(id='opening-cash',amount='80',pay_date='2026-01-12',source_ids=['fixture'])]
++    d['account']['share_claims']=[dict(id='opening-shares',code='A',shares='10',delivery_date='2026-01-09',tradable_date='2026-01-12',source_ids=['fixture'])]
++    d['plans'].append(dict(id='E-partial',family='E',route='R1',targets=dict(A='50',B='20',C='0'),
++        edge_budget='1000',trigger_ids=[],conditions=['EXPLICIT_PARTIAL_REPAIR_CASE']))
++    j=prefix(execution_job('E-partial',d));j['tape'][0]['capacity_shares']='20';j['tape'][1]['capacity_shares']='7'
++    if expire:
++        for o in j['orders']:o['expires_at']=j['observed_until']
++    return j
+--- /dev/null
++++ b/股票系統M1_v0_18/capital_research/repair_20261025/reproduce.py
+@@ -0,0 +1,81 @@
++"""Capture probes with inputs/expectations/versions before modifying numerical code."""
++from copy import deepcopy
++from pathlib import Path
++from decimal import Decimal, localcontext
++import argparse
++import hashlib
++import json
++from capital_research.core import decide, resume_decision, VERSION as DECISION_VERSION
++from capital_research.execution import simulate, VERSION as EXECUTION_VERSION
++from capital_research.continuity import make_checkpoint, account_at_checkpoint
++from .fixtures import data_fixture, execution_job, prefix, advance, reassessed_job, continuation_job, partial_first
++
++
++EXPECTED={
++    'entry-gate':'NOT_QUALIFIED must exclude the increasing target and prevent the buy',
++    'sellable-chain':'Unreleased sellable=0 must be preserved, or continuation explicitly refused',
++    'intraday-close':'09:00 watermark cannot expose the 995 end-of-day settlement or authorize 09:01 use',
++    'latest-predecessor':'Latest reassessed decision must resume; an older predecessor must refuse',
++    'expired-evidence':'An expired supporting fact cannot qualify fresh capital despite a new decision ID',
++    'partial-cancel-chain':'Partial fills, claims, pending rights and general reserve must survive explicit cancellation and continuation',
++    'partial-expiry-chain':'Expiry releases only order reservations; preserves remaining quantity, rights and original capital'}
++
++
++def attempt(call):
++    try:return dict(value=call(),error=None)
++    except (ValueError,KeyError) as e:return dict(value=None,error=type(e).__name__+': '+str(e))
++
++
++def probe(name):
++    if name in ('entry-gate','expired-evidence'):
++        d=data_fixture()
++        if name=='entry-gate':
++            d['assets']['B']['capital_eligibility']['status']='NOT_QUALIFIED'
++            plan='C-event'
++        else:
++            # The expiry is a declared hypothetical source fact, not a fixed-age rule.
++            d['assets']['B']['evidence'][0]['validity']['valid_until']='2026-01-05T13:59:00+08:00'
++            d['assets']['B']['evidence'][0]['validity']['valid_from']='2026-01-02T14:00:00+08:00'
++            plan='C-event'
++        j=execution_job(plan,d);r=simulate(j)
++        return dict(input=j,actual=dict(decision=decide(d),execution=r))
++    if name=='sellable-chain':
++        d=data_fixture();d['account']['holdings']['A']['sellable']='0';j=prefix(execution_job('A-zero',d));r=simulate(j)
++        cp=make_checkpoint(j['ledger_input'],r,through_at=j['observed_until'])
++        a=attempt(lambda:advance(d,cp));out=dict(input=j,first_execution=r,checkpoint=cp,advance=a)
++        if a['value']:
++            fresh,ids=a['value'];out['next_decision']=attempt(lambda:resume_decision(decide(d),fresh,checkpoint=cp,cancelled_order_ids=ids))
++        return dict(input=j,actual=out)
++    if name=='intraday-close':
++        j=prefix(execution_job(),through='2026-01-08T09:00:00+08:00');r=attempt(lambda:simulate(j));out=dict(execution=r)
++        if r['value']:
++            cp=attempt(lambda:make_checkpoint(j['ledger_input'],r['value'],through_at=j['observed_until']));out['checkpoint']=cp
++            if cp['value']:out['next_input']=attempt(lambda:advance(j['decision_input'],cp['value'],at='2026-01-08T09:01:00+08:00'))
++        return dict(input=j,actual=out)
++    if name=='latest-predecessor':
++        j,old,new=reassessed_job();r=simulate(j);cp=make_checkpoint(j['ledger_input'],r,through_at=j['observed_until'])
++        fresh,ids=advance(j['reassessments'][0]['decision_input'],cp)
++        return dict(input=j,actual=dict(execution=r,checkpoint=cp,next_input=fresh,cancelled_order_ids=ids,
++            latest=attempt(lambda:resume_decision(new,fresh,checkpoint=cp,cancelled_order_ids=ids)),
++            stale=attempt(lambda:resume_decision(old,fresh,checkpoint=cp,cancelled_order_ids=ids))))
++    j=partial_first(expire=name=='partial-expiry-chain');r=simulate(j)
++    second=continuation_job(j,r,decide(j['decision_input']));out=simulate(second)
++    return dict(input=dict(first=j,next=second),actual=dict(first_execution=r,next_execution=out))
++
++
++def capture(output):
++    out=Path(output);out.mkdir(parents=True,exist_ok=True)
++    sources={p.name:hashlib.sha256(p.read_bytes()).hexdigest() for p in Path('capital_research').glob('*.py')}
++    sources.update({'repair_20261025/'+p.name:hashlib.sha256(p.read_bytes()).hexdigest() for p in Path('capital_research/repair_20261025').glob('*.py')})
++    for name,expected in EXPECTED.items():
++        with localcontext() as ctx:
++            ctx.prec=50
++            result=attempt(lambda:probe(name))
++        record=dict(synthetic=True,case=name,expected=expected,versions=dict(decision=DECISION_VERSION,execution=EXECUTION_VERSION),
++                    source_sha256=sources,**result)
++        with (out/(name+'.json')).open('x') as f:json.dump(record,f,ensure_ascii=False,sort_keys=True,indent=2,allow_nan=False);f.write('\n')
++        print(name,'CAPTURED',result['error'] or '')
++
++
++if __name__=='__main__':
++    p=argparse.ArgumentParser();p.add_argument('--output',required=True);a=p.parse_args();capture(a.output)
+--- /dev/null
++++ b/股票系統M1_v0_18/capital_research/repair_20261025/test_repairs.py
+@@ -0,0 +1,270 @@
++"""Directed properties of this repair, not a strategy-performance suite."""
++from copy import deepcopy
++from decimal import Decimal,localcontext
++import unittest
++from unittest.mock import patch
++from graph_core.core import fingerprint
++from capital_research.core import decide,resume_decision
++from capital_research.execution import simulate,compare_jobs
++from capital_research.continuity import make_checkpoint,validate_checkpoint,account_at_checkpoint
++from capital_research.trend_fixtures import path_fixture
++from capital_research.trend_replay import run_fixture
++from .fixtures import data_fixture,execution_job,prefix,advance,reassessed_job,continuation_job,partial_first,review
++
++
++def candidate(result,key):
++    return next(p for p in result['decision']['layer3']['alternatives'] if p['id']==key)
++
++
++class RepairTests(unittest.TestCase):
++    def test_not_qualified_excludes_candidate_and_prevents_fill(self):
++        d=data_fixture();d['assets']['B']['capital_eligibility']['status']='NOT_QUALIFIED'
++        r=decide(d);self.assertIn('NEW_CAPITAL_NOT_QUALIFIED:B',candidate(r,'C-event')['reasons'])
++        self.assertNotIn('C-event',r['decision']['research_recommendation']['candidate_ids'])
++        self.assertEqual(simulate(execution_job('C-event',d))['fills'],[])
++
++    def test_missing_review_cannot_use_legacy_input_to_bypass_gate(self):
++        d=data_fixture();d['assets']['B'].pop('capital_eligibility')
++        self.assertFalse(candidate(decide(d),'C-event')['feasible'])
++
++    def test_every_new_asset_needs_its_own_qualification(self):
++        d=data_fixture();d['assets']['C']['capital_eligibility']['status']='NOT_QUALIFIED'
++        r=decide(d);self.assertIn('NEW_CAPITAL_NOT_QUALIFIED:C',candidate(r,'E-joint')['reasons'])
++        self.assertTrue(candidate(r,'C-event')['feasible'])
++
++    def test_old_valid_facts_survive_a_current_review_without_becoming_new_events(self):
++        j=prefix(execution_job());r=simulate(j);cp=make_checkpoint(j['ledger_input'],r,through_at=j['observed_until'])
++        fresh,ids=advance(j['decision_input'],cp)
++        self.assertEqual(fresh['assets']['B']['evidence'],j['decision_input']['assets']['B']['evidence'])
++        old=decide(j['decision_input']);new=resume_decision(old,fresh,checkpoint=cp,cancelled_order_ids=ids)
++        self.assertTrue(candidate(new,'B-full')['feasible']);self.assertEqual(new['decision']['new_evidence_tokens'],[])
++        self.assertIn('NO_NEW_INDEPENDENT_TRIGGER',candidate(new,'C-event')['reasons'])
++        second=continuation_job(j,r,old,plan='B-full',fresh=fresh,ids=ids);out=simulate(second)
++        self.assertEqual([(f['code'],f['shares'],f['decision_date']) for f in out['fills'] if f['id'] in out['new_fill_ids']], [('B','99','2026-01-08')])
++
++    def test_future_review_is_not_a_today_qualification_or_identity_input(self):
++        d=data_fixture();d['assets']['B']['capital_eligibility']['available_at']='2026-01-08T17:00:00+08:00'
++        a=decide(d);d['assets']['B']['capital_eligibility']['status']='UNKNOWN';b=decide(d)
++        self.assertEqual(a['decision'],b['decision']);self.assertFalse(candidate(a,'C-event')['feasible'])
++
++    def test_review_cutoff_source_and_price_basis_are_bound(self):
++        d=data_fixture();d['assets']['B']['capital_eligibility']['data_cutoff']='2026-01-02T14:00:00+08:00'
++        self.assertFalse(candidate(decide(d),'C-event')['feasible'])
++        for key in ('source_id','basis_id','adjustment_version'):
++            d=data_fixture();d['assets']['B']['capital_eligibility'][key]='wrong'
++            with self.assertRaisesRegex(ValueError,'source/basis'):decide(d)
++
++    def test_unreleased_sellable_limit_refuses_instead_of_promoting_shares(self):
++        d=data_fixture();d['account']['holdings']['A']['sellable']='0';j=prefix(execution_job('A-zero',d));r=simulate(j)
++        cp=make_checkpoint(j['ledger_input'],r,through_at=j['observed_until'])
++        self.assertEqual(cp['state']['opening_unavailable_shares']['A'],'100')
++        with self.assertRaisesRegex(ValueError,'SELLABLE_LIMIT_CONTINUATION_NOT_IMPLEMENTED'):advance(d,cp)
++
++    def test_fully_sellable_account_can_continue_and_reduce_risk(self):
++        j=prefix(execution_job('A-zero'));r=simulate(j)
++        out=simulate(continuation_job(j,r,decide(j['decision_input'])))
++        self.assertEqual(out['ledger']['initial_equity'],'2000')
++        self.assertEqual(out['ledger']['daily'][-1]['shares'],dict(A='0',B='0',C='0'))
++
++    def test_intraday_watermark_refuses_before_ledger_execution(self):
++        j=prefix(execution_job(),through='2026-01-08T09:00:00+08:00')
++        with patch('capital_research.execution.replay',side_effect=AssertionError('must refuse before replay')):
++            with self.assertRaisesRegex(ValueError,'DAILY_CLOSE_WATERMARK_REQUIRED'):simulate(j)
++
++    def test_missing_daily_close_proof_is_not_filled_in(self):
++        j=execution_job('A-zero');j.pop('ledger_close_proof')
++        with self.assertRaisesRegex(ValueError,'EXPLICIT_LEDGER_CLOSE_PROOF_REQUIRED'):simulate(j)
++
++    def test_delayed_daily_close_must_be_available_before_next_decision(self):
++        j=prefix(execution_job());j['ledger_close_proof']['closes']['2026-01-08']['available_at']='2026-01-08T17:30:00+08:00'
++        r=simulate(j);cp=make_checkpoint(j['ledger_input'],r,through_at=j['observed_until'])
++        with self.assertRaisesRegex(ValueError,'NOT_YET_AVAILABLE'):advance(j['decision_input'],cp,at='2026-01-08T17:00:00+08:00')
++        fresh,ids=advance(j['decision_input'],cp,at='2026-01-08T17:31:00+08:00')
++        self.assertEqual(fresh['account']['settled_cash'],'1995.000')
++        self.assertTrue(candidate(resume_decision(decide(j['decision_input']),fresh,checkpoint=cp,cancelled_order_ids=ids),'B-full')['feasible'])
++
++    def test_close_proof_source_and_availability_cannot_be_mismatched(self):
++        for key,value in [('source_ids',['unknown']),('available_at','2026-01-08T15:00:00+08:00')]:
++            j=prefix(execution_job());j['ledger_close_proof']['closes']['2026-01-08'][key]=value
++            with self.assertRaises(ValueError):simulate(j)
++
++    def test_common_market_identity_includes_close_availability(self):
++        a=execution_job('A-zero');b=deepcopy(a)
++        b['ledger_close_proof']['closes']['2026-01-08']['available_at']='2026-01-08T17:00:00+08:00'
++        with self.assertRaisesRegex(ValueError,'exogenous'):compare_jobs(dict(a=a,b=b))
++
++    def test_latest_reassessment_resumes_and_old_predecessor_refuses(self):
++        j,old,new=reassessed_job();r=simulate(j);cp=make_checkpoint(j['ledger_input'],r,through_at=j['observed_until'])
++        fresh,ids=advance(j['reassessments'][0]['decision_input'],cp)
++        good=resume_decision(new,fresh,checkpoint=cp,cancelled_order_ids=ids)
++        self.assertEqual(good['decision']['continuity']['latest_predecessor_id'],new['decision']['decision_id'])
++        with self.assertRaisesRegex(ValueError,'LATEST_PREDECESSOR_REQUIRED'):resume_decision(old,fresh,checkpoint=cp,cancelled_order_ids=ids)
++
++    def test_reassessment_then_another_execution_keeps_all_fills_and_tokens(self):
++        j,old,new=reassessed_job(extend=True);r=simulate(j)
++        second=continuation_job(j,r,new);out=simulate(second)
++        self.assertEqual(out['fills'][:len(r['fills'])],r['fills'])
++        self.assertEqual(out['ledger']['initial_equity'],'2000')
++        self.assertEqual(len(out['fills']),3)
++        self.assertIn(new['decision']['decision_id'],out['decision_records'])
++        token='fixture:event_id:B-reviewed-repair'
++        self.assertIn(token,out['reviewed_evidence_tokens'])
++        latest=out['decision_records'][out['latest_decision_id']]
++        self.assertNotIn(token,latest['new_evidence_tokens'])
++
++    def test_wrong_account_cutoff_or_missing_cancellation_does_not_resume(self):
++        j=prefix(execution_job());r=simulate(j);cp=make_checkpoint(j['ledger_input'],r,through_at=j['observed_until'])
++        fresh,ids=advance(j['decision_input'],cp);old=decide(j['decision_input'])
++        for key in ('cash','cutoff','cancellation'):
++            d=deepcopy(fresh);cancel=ids
++            if key=='cash':d['account']['settled_cash']='9000'
++            elif key=='cutoff':d['data_cutoff']='2026-01-09T16:00:00+08:00'
++            else:cancel=[]
++            with self.assertRaises(ValueError):resume_decision(old,d,checkpoint=cp,cancelled_order_ids=cancel)
++
++    def test_no_reassessment_record_does_not_self_reauthorize(self):
++        r=simulate(execution_job())
++        self.assertEqual([f['code'] for f in r['fills']],['A'])
++        self.assertTrue(any(e['status']=='WAITING_REASSESSMENT' for e in r['execution_events']))
++
++    def test_bad_reassessment_identity_and_observed_invalidation_refuse(self):
++        j,_,_=reassessed_job();j['reassessments'][0]['decision_id']='wrong'
++        with self.assertRaisesRegex(ValueError,'decision_id mismatch'):simulate(j)
++        j,_,_=reassessed_job();j['tape'][2]['evidence_status']='INVALIDATED'
++        r=simulate(j);self.assertEqual([f['code'] for f in r['fills']],['A'])
++
++    def test_expired_fact_cannot_be_revived_by_a_current_review(self):
++        j=execution_job();j['decision_input']['assets']['B']['evidence'][0]['validity']['valid_until']='2026-01-07T16:00:00+08:00'
++        first=prefix(j);r=simulate(first);cp=make_checkpoint(j['ledger_input'],r,through_at=first['observed_until'])
++        fresh,ids=advance(j['decision_input'],cp);new=resume_decision(decide(j['decision_input']),fresh,checkpoint=cp,cancelled_order_ids=ids)
++        self.assertFalse(candidate(new,'B-full')['feasible'])
++        self.assertTrue(any('EXPIRED' in x for x in new['decision']['layer2']['B']['capital_eligibility']['reasons']))
++
++    def test_expiry_and_invalidation_cancel_standing_orders_inside_limit(self):
++        for invalid in (False,True):
++            j=execution_job('C-event');v=j['decision_input']['assets']['B']['evidence'][0]['validity']
++            if invalid:v['invalidation']=dict(evidence_id='revoked',occurred_at='2026-01-06T09:00:00+08:00',available_at='2026-01-06T09:00:00+08:00',source_ids=['fixture'])
++            else:v['valid_until']='2026-01-06T09:00:00+08:00'
++            r=simulate(j);self.assertEqual([f['code'] for f in r['fills']],['A'])
++            self.assertEqual(r['order_states']['B-buy']['status'],'CANCELLED_EVIDENCE')
++
++    def test_future_revocation_does_not_rewrite_current_decision(self):
++        d=data_fixture();base=decide(d)
++        d['assets']['B']['evidence'][0]['validity']['invalidation']=dict(evidence_id='future',occurred_at='2026-01-09T09:00:00+08:00',available_at='2026-01-09T09:00:00+08:00',source_ids=['fixture'])
++        self.assertEqual(base['decision'],decide(d)['decision'])
++
++    def test_old_future_ledger_integrity_is_separate_from_prefix_decision(self):
++        a=prefix(execution_job());b=deepcopy(a);b['ledger_input']['assets']['B']['quotes']['2026-01-12']='999'
++        results=[]
++        for j in (a,b):
++            r=simulate(j);cp=make_checkpoint(j['ledger_input'],r,through_at=j['observed_until']);d,ids=advance(j['decision_input'],cp)
++            results.append(resume_decision(decide(j['decision_input']),d,checkpoint=cp,cancelled_order_ids=ids))
++        self.assertEqual(results[0]['decision'],results[1]['decision'])
++        self.assertNotEqual(results[0]['source_integrity_metadata'],results[1]['source_integrity_metadata'])
++
++    def test_partial_fills_cancel_and_continue_without_losing_claims_or_reserves(self):
++        self._check_partial(False)
++
++    def test_partial_fills_expire_and_continue_without_inventing_cancellation(self):
++        self._check_partial(True)
++
++    def _check_partial(self,expire):
++        j=partial_first(expire=expire);r=simulate(j);cp=make_checkpoint(j['ledger_input'],r,through_at=j['observed_until'])
++        self.assertEqual(r['ledger']['initial_equity'],'2180')
++        self.assertEqual(cp['state']['row']['settled_cash'],'1056.660')
++        self.assertEqual(cp['state']['row']['shares'],dict(A='80',B='7',C='0'))
++        self.assertEqual(cp['state']['row']['cash_claims'][0]['amount'],'80')
++        self.assertEqual(cp['state']['row']['share_receivables'][0]['shares'],'10')
++        self.assertEqual({k:v['remaining'] for k,v in r['order_states'].items()}, {'A-sell':'30','B-buy':'13'})
++        self.assertEqual(cp['state']['general_reserved_cash'],'100')
++        second=continuation_job(j,r,decide(j['decision_input']));out=simulate(second)
++        self.assertEqual(second['decision_input']['account']['reserved_cash'],'100')
++        self.assertEqual(out['fills'][:2],r['fills']);self.assertEqual(len(out['fills']),4)
++        for key in ('A-sell','B-buy'):
++            self.assertEqual(out['order_states'][key]['reserved_cash'],'0')
++            self.assertEqual(out['order_states'][key]['status'],'EXPIRED_UNFILLED' if expire else 'CANCELLED_AT_REVIEW')
++        last=out['ledger']['daily'][-1]
++        self.assertEqual(last['settled_cash'],'2069.720');self.assertEqual(last['shares'],dict(A='10',B='0',C='0'))
++        self.assertEqual(last['cash_claims'],[]);self.assertEqual(last['share_receivables'],[])
++        self.assertEqual(Decimal(last['net_accrual_equity'])+Decimal('9')+Decimal('1.28'),Decimal('2180'))
++        for row in out['ledger']['daily']:
++            rights={c:sum(Decimal(x['shares']) for x in row['share_receivables'] if x['code']==c) for c in row['shares']}
++            value=Decimal(row['settled_cash'])+Decimal(row['cash_receivable'])-Decimal(row['purchase_payable'])
++            value+=sum((Decimal(n)+rights[c])*Decimal(row['marks'][c]['value']) for c,n in row['shares'].items())
++            self.assertEqual(value,Decimal(row['net_accrual_equity']))
++        endcp=make_checkpoint(j['ledger_input'],out,through_at=out['observed_until']);fresh,ids=advance(second['decision_input'],endcp)
++        d=resume_decision(dict(decision=out['decision_records'][out['latest_decision_id']]),fresh,checkpoint=endcp,cancelled_order_ids=ids)
++        self.assertEqual(Decimal(candidate(d,'A-zero')['available_settled_cash']),Decimal('1969.720'))
++
++    def test_unsettled_purchase_payable_still_refuses_continuation(self):
++        j=partial_first();j['observed_until']='2026-01-06T16:00:00+08:00';r=simulate(j)
++        cp=make_checkpoint(j['ledger_input'],r,through_at=j['observed_until'])
++        self.assertGreater(Decimal(cp['state']['row']['purchase_payable']),0)
++        with self.assertRaisesRegex(ValueError,'PAYABLE_CONTINUATION_NOT_IMPLEMENTED'):advance(j['decision_input'],cp)
++
++    def test_rehashed_wrong_fill_order_link_is_not_a_valid_checkpoint(self):
++        j=partial_first();r=simulate(j);r['fill_order_ids'][r['fills'][0]['id']]='B-buy'
++        r['result_id']=fingerprint({k:v for k,v in r.items() if k!='result_id'})
++        with self.assertRaisesRegex(ValueError,'another order'):make_checkpoint(j['ledger_input'],r,through_at=j['observed_until'])
++
++    def test_checkpoint_share_reconciliation_ignores_callers_decimal_precision(self):
++        d=data_fixture();d['plans'].append(dict(id='E-count',family='E',route='R1',targets=dict(A='1',B='0',C='0'),trigger_ids=[],edge_budget='1000',conditions=['EXACT_INTEGER_COUNT']))
++        j=prefix(execution_job('E-count',d));j['tape'][0]['capacity_shares']='33';r=simulate(j)
++        regular=make_checkpoint(j['ledger_input'],r,through_at=j['observed_until'])
++        with localcontext() as context:
++            context.prec=1
++            low=make_checkpoint(j['ledger_input'],r,through_at=j['observed_until'])
++        self.assertEqual(regular,low)
++
++    def test_rights_or_reserve_cannot_disappear_from_next_account(self):
++        j=partial_first();r=simulate(j);cp=make_checkpoint(j['ledger_input'],r,through_at=j['observed_until']);fresh,ids=advance(j['decision_input'],cp)
++        for field,value in [('reserved_cash','0'),('cash_claims',[]),('share_claims',[])]:
++            d=deepcopy(fresh);d['account'][field]=value
++            with self.assertRaises(ValueError):resume_decision(decide(j['decision_input']),d,checkpoint=cp,cancelled_order_ids=ids)
++
++    def test_failed_exit_still_cannot_release_joint_risk(self):
++        d=data_fixture()
++        for a in d['assets'].values():a['group']='shared'
++        d['risk_limits']['group_value']={'shared':'1100'}
++        d['plans'].append(dict(id='E-risk',family='E',route='R1',targets=dict(A='0',B='40',C='0'),trigger_ids=[],edge_budget='1000',conditions=['REPAIR_REGRESSION']))
++        j=prefix(execution_job('E-risk',d));j['tape'][0]['market_state']='LIMIT_DOWN_NO_SELL';r=simulate(j)
++        self.assertEqual(r['fills'],[])
++        self.assertTrue(any(Decimal(x['joint_possible_fill_violations']['group:shared'])>0 for x in r['risk_observations']))
++
++    def test_market_price_capacity_state_availability_source_and_basis_stay_bound(self):
++        for key,value in [('price','21'),('capacity_shares','1'),('market_state','LIMIT_UP_NO_BUY'),('available_at','2026-01-06T09:00:30+08:00'),('source_id','wrong'),('basis_id','wrong')]:
++            a=execution_job('A-zero');b=deepcopy(a);b['tape'][1][key]=value
++            with self.assertRaisesRegex(ValueError,'exogenous'):compare_jobs(dict(a=a,b=b))
++
++    def test_research_permission_never_grants_external_qualification_or_R2(self):
++        d=data_fixture();r=decide(d);out=simulate(execution_job('C-event',d))
++        for obj in (r['decision'],out):
++            for k in ('data_qualified','execution_model_qualified','historical_signal_eligible','policy_authorized','live_execution_authorized'):self.assertIs(obj[k],False)
++        self.assertIsNone(out['ledger']['total_net_return']);self.assertEqual(candidate(r,'F-min-regret')['status'],'NOT_IMPLEMENTED')
++
++
++class TrendRepairTests(unittest.TestCase):
++    @classmethod
++    def setUpClass(cls):
++        cls.negative=path_fixture('exit_repair_reentry');cls.positive=deepcopy(cls.negative)
++        for f in (cls.positive['frames'][3],cls.positive['trend_input']['records'][3]):f['new_capital_evidence_qualified']=True
++        cls.without=run_fixture(cls.negative);cls.with_review=run_fixture(cls.positive)
++
++    def test_saved_reentry_counterexample_is_now_infeasible_and_unfilled(self):
++        r=self.without['policy_results']['structure_hold']['rounds'][3]
++        self.assertEqual(r['point_in_time_trend']['additional_capital_qualification'],'NOT_QUALIFIED')
++        self.assertFalse(r['selected_policy_proposal']['feasible'])
++        self.assertEqual(r['execution']['new_fill_ids'],[])
++        self.assertNotIn('structure_hold',r['decision']['decision']['research_recommendation']['candidate_ids'])
++
++    def test_explicit_qualified_reentry_fills_under_same_market_and_risk(self):
++        a=self.with_review['policy_results']['structure_hold'];r=a['rounds'][3]
++        self.assertTrue(r['selected_policy_proposal']['feasible'])
++        fills=[f for f in r['execution']['fills'] if f['id'] in r['new_fill_ids']]
++        self.assertEqual([(f['code'],f['shares'],f['date']) for f in fills],[('A','100','2026-01-19')])
++        self.assertEqual(self.without['common_market_path_id'],self.with_review['common_market_path_id'])
++        self.assertEqual(a['rounds'][0]['decision'],self.without['policy_results']['structure_hold']['rounds'][0]['decision'])
++        self.assertIsNone(self.with_review['ranking'])
++
++
++if __name__=='__main__':unittest.main()
+--- /dev/null
++++ b/股票系統M1_v0_18/capital_research/repair_20261025/verify.py
+@@ -0,0 +1,20 @@
++"""Only this repair scope and five necessary storage/input regressions."""
++import sys
++import unittest
++
++TESTS=[
++    'capital_research.repair_20261025.test_repairs',
++    'capital_research.test_mechanisms.MechanismTests.test_cli_READ_never_imports_or_recalculates_engines',
++    'capital_research.test_mechanisms.MechanismTests.test_immutable_store_conflict_and_partial_file_preserved',
++    'capital_research.test_mechanisms.MechanismTests.test_missing_company_action_net_still_refused',
++    'capital_research.test_mechanisms.MechanismTests.test_real_flag_and_unknown_numeric_inputs_fail_closed',
++    'capital_research.test_mechanisms.MechanismTests.test_missing_mark_never_fills_or_zeros']
++
++
++def main():
++    suite=unittest.defaultTestLoader.loadTestsFromNames(TESTS)
++    result=unittest.TextTestRunner(verbosity=2).run(suite)
++    return 0 if result.wasSuccessful() else 1
++
++
++if __name__=='__main__':sys.exit(main())
+--- a/股票系統M1_v0_18/capital_research/trend.py
++++ b/股票系統M1_v0_18/capital_research/trend.py
+@@ -6,8 +6,9 @@
+ from copy import deepcopy
+ from graph_core.core import fingerprint
+ from .core import timestamp,number
++from .eligibility import validity_status
+ 
+-VERSION='trend-continuation-research/0.1'
++VERSION='trend-continuation-research/0.2'
+ FEATURES=('box','dense_volume_peaks','point_line_steps','momentum_repair','dynamic_balance','cross_scale')
+ PRESSURE=('DATA_MISSING','NO_IDENTIFIABLE_UPPER_PRESSURE_IN_VERIFIED_SCOPE','BROKEN_OLD_REFERENCE','UPPER_PRESSURE_REMAINS')
+ 
+@@ -22,7 +23,7 @@
+     for row in rows:
+         if timestamp(row['data_cutoff'])>timestamp(row['decision_at']) or timestamp(row['available_at'])>timestamp(row['decision_at']):
+             raise ValueError('Evidence became available after its claimed decision')
+-        support=[];opposition=[];missing=[];evidence_ids=[]
++        support=[];opposition=[];missing=[];evidence_ids=[];known_evidence=[]
+         compatible=all(row['binding'][k]==binding[k] for k in ('code','source_id','basis_id','adjustment_version'))
+         if not compatible:missing.append('SOURCE_OR_BASIS_CHANGED_REVALIDATION_REQUIRED')
+         for f in FEATURES:
+@@ -35,6 +36,7 @@
+                 if e['source_id']!=row['binding']['source_id'] or e['binding']!=row['binding']:
+                     raise ValueError('Trend evidence source/basis/version mismatch')
+                 evidence_ids.append(e['id'])
++                known_evidence.append(e)
+                 if e['stance']=='support':support.append(e['id'])
+                 elif e['stance']=='refutation':opposition.append(e['id'])
+                 elif e['stance']=='unknown':missing.append(e['id'])
+@@ -73,7 +75,9 @@
+         hold='CONDITIONAL_RESEARCH_HOLD' if state=='CONTINUATION_SUPPORTED' else ('REFUTED' if state=='CONTINUATION_REFUTED' else 'UNKNOWN_OR_REVIEW')
+         if risk_breaches:hold='RISK_REDUCTION_REQUIRED'
+         add=(state=='CONTINUATION_SUPPORTED' and not risk_breaches and row['new_capital_evidence_qualified'] is True
+-             and compatible and status not in ('DATA_MISSING','NO_IDENTIFIABLE_UPPER_PRESSURE_IN_VERIFIED_SCOPE'))
++             and compatible and status not in ('DATA_MISSING','NO_IDENTIFIABLE_UPPER_PRESSURE_IN_VERIFIED_SCOPE')
++             and bool(known_evidence) and all(validity_status(e,row['data_cutoff'],row['decision_at']) in
++                 ('WITHIN_DECLARED_INTERVAL','ONGOING_REQUIRES_CURRENT_REVIEW') for e in known_evidence))
+         rec=dict(decision_at=row['decision_at'],data_cutoff=row['data_cutoff'],available_at=row['available_at'],
+             binding=deepcopy(row['binding']),state=state,support=support,refutation=opposition,unknown=missing,
+             evidence_ids=evidence_ids,pressure_status=status,known_upper_reference_ids=upper,
+--- a/股票系統M1_v0_18/capital_research/trend_fixtures.py
++++ b/股票系統M1_v0_18/capital_research/trend_fixtures.py
+@@ -30,6 +30,12 @@
+         day+=timedelta(days=1)
+     reviews=[sessions[i] for i in (0,3,6,9,12,15)]
+     data=fixture()
++    def declared_validity(at):
++        return dict(schema='capital-fact-validity/0.1',available_at=at,valid_from=at,valid_until=None,
++            invalidation=None,source_ids=['fixture'],qualification='EXPLICIT_SYNTHETIC_ONGOING_REQUIRES_REVIEW')
++    for a in data['assets'].values():
++        a['entry_context']['validity']=declared_validity(data['data_cutoff'])
++        a['entry_context']['formal_reference']['validity']=declared_validity(data['data_cutoff'])
+     for a in data['assets'].values():a['group']='shared'
+     data['risk_limits']['group_value']={'shared':'3000'}
+     origin=ledger(data);origin['end']=sessions[-1]
+@@ -71,7 +77,7 @@
+         for f in FEATURES:
+             stance='refutation' if state=='WEAKENING' and f in ('box','dynamic_balance') else 'support'
+             evidence[f]=[dict(id=f+'-'+d,source_id='fixture',binding=deepcopy(rb),stance=stance,
+-                             occurred_at=cutoff,available_at=cutoff)]
++                             occurred_at=cutoff,available_at=cutoff,validity=declared_validity(cutoff))]
+         price=Decimal(p);budget_shares=min(100,int(Decimal('2800')/price))
+         participation=min(budget_shares,([100,77,43,61,35,82][i]))
+         adaptive=budget_shares if state!='WEAKENING' else 0
+@@ -90,7 +96,11 @@
+             reached_original_target=price>=Decimal('12'),elapsed_sessions=i*3,
+             baseline_exit_trigger=price>=Decimal('12'),structure_shares=str(budget_shares),
+             participation_shares=str(participation),adaptive_shares=str(adaptive),account_targets=account))
+-    return dict(schema='trend-policy-fixture/0.1',synthetic=True,name=name,origin=origin,base_input=data,
++    clock=dict(schema='synthetic-ledger-close-clock/0.1',
++        qualification='DECLARED_SYNTHETIC_DAY_END_NOT_REAL_MARKET_OR_BROKER_PROOF',
++        closes={r['date']:dict(as_of=data['data_cutoff'] if r['date']==origin['start'] else r['date']+'T16:00:00+08:00',
++            available_at=data['data_cutoff'] if r['date']==origin['start'] else r['date']+'T16:00:00+08:00',source_ids=['fixture']) for r in origin['calendar']})
++    return dict(schema='trend-policy-fixture/0.2',synthetic=True,name=name,origin=origin,base_input=data,ledger_close_proof=clock,
+         common_tape=tape,reviews=reviews,frames=frames,trend_input=dict(schema='trend-continuation-input/0.1',
+             synthetic=True,binding=b,references=[ref],records=deepcopy(frames)),
+         evaluation_labels=dict(named_asset='A',role='EX_POST_EVALUATION_ONLY_NEVER_AVAILABLE_TO_POLICY'),
+--- a/股票系統M1_v0_18/capital_research/trend_replay.py
++++ b/股票系統M1_v0_18/capital_research/trend_replay.py
+@@ -35,6 +35,15 @@
+                 occurred_at=e['occurred_at'],available_at=e['available_at'],formation_id='review-'+frame['data_cutoff'],
+                 event_id=e['id'],volume_bar_id=frame['data_cutoff'] if feature=='dense_volume_peaks' else None,
+                 source_id=a['source_id'],basis_id=a['basis_id'],adjustment_version=a['adjustment_version']))
++            if compatible and 'validity' in e:a['evidence'][-1]['validity']=deepcopy(e['validity'])
++    a['capital_eligibility']=dict(schema='capital-entry-review/0.1',code='A',
++        status='QUALIFIED_SYNTHETIC_RESEARCH' if trend_record['additional_capital_qualification']=='CONDITIONAL_RESEARCH_ONLY' else 'NOT_QUALIFIED',
++        data_cutoff=frame['data_cutoff'],assessed_at=frame['decision_at'],available_at=frame['decision_at'],
++        evidence_ids=deepcopy(trend_record['evidence_ids']),source_ids=[a['source_id']],
++        source_id=a['source_id'],basis_id=a['basis_id'],adjustment_version=a['adjustment_version'])
++    for code,r in frame.get('capital_reviews',{}).items():
++        if code=='A':raise ValueError('A capital review must bind the current trend qualification')
++        d['assets'][code]['capital_eligibility']=deepcopy(r)
+     d['plans']=[dict(id=p,family='E',route='R1',targets=deepcopy(targets[p]),trigger_ids=[],edge_budget='1000',
+                     conditions=['EXPLICIT_SYNTHETIC_REVIEW_INTENT_NOT_APPROVED_RULE']) for p in POLICIES]
+     return d
+@@ -136,7 +145,7 @@
+             for order in orders:order['expires_at']=next_cutoff[:10]+'T16:00:00+08:00'
+             tape=[deepcopy(t) for t in fixture['common_tape'] if frame['data_cutoff'][:10]<t['at'][:10]<=next_cutoff[:10]]
+             work=dict(schema='capital-execution-input/0.1',decision_input=data,plan_id=selected_id,ledger_input=fixture['origin'],
+-                      orders=orders,tape=tape,observed_until=next_cutoff)
++                      orders=orders,tape=tape,observed_until=next_cutoff,ledger_close_proof=fixture['ledger_close_proof'])
+             if continuation:work['continuation']=continuation
+             current=simulate(work)
+             if current['status']!='SYNTHETIC_EXECUTION_REPLAY':
+@@ -153,7 +162,7 @@
+                 observed_risk_breach_count=sum(any(number(v)>0 for v in o['actual_violations'].values()) for rr in rounds for o in rr['execution']['risk_observations']),
+                 qualification='OBSERVATIONAL_ZERO_TRADE_CONTROL_NOT_RISK_QUALIFIED_RECOMMENDATION' if policy=='original_baseline' else 'SYNTHETIC_POLICY_INTENT_SUBJECT_TO_EXECUTION_RISK_GATES',
+                 metrics=portfolio_metrics(current,fixture,fixture['evaluation_labels']))
+-    return dict(schema='trend-policy-competition/0.1',synthetic=True,origin_ledger_input_id=common_origin,
++    return dict(schema='trend-policy-competition/0.2',synthetic=True,origin_ledger_input_id=common_origin,
+         common_market_path_id=common_market,policy_results=outputs,ranking=None,
+         evaluation_qualification='WHOLE_ACCOUNT_SYNTHETIC_COUNTEREXAMPLES_NOT_STRATEGY_OR_R1_R2_EVIDENCE',
+         R2_F='NOT_IMPLEMENTED',data_qualified=False,execution_model_qualified=False,
