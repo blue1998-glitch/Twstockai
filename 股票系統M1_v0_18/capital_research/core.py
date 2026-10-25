@@ -10,7 +10,7 @@ from graph_core.core import fingerprint, number as source_number
 from rotation_research.core import fees
 from .eligibility import entry_review, known_fact, validity_status
 
-VERSION = 'capital-decision/0.3'
+VERSION = 'capital-decision/0.4'
 FEATURES = ('price_volume', 'box', 'key_position', 'momentum', 'cross_scale')
 BINDING = ('source_id', 'basis_id', 'adjustment_version')
 
@@ -176,6 +176,7 @@ def _decide(data):
     marks, layer1, layer2, evidence, novel = {}, {}, {}, {}, {}
     used = set(data['consumed_evidence_tokens'])
     for code, asset in data['assets'].items():
+        asset_evidence = {}
         rows = [r for r in asset['marks'] if _known(r, cutoff, decision)]
         if not rows:
             raise ValueError('Missing as-of mark; no zero/forward fill: ' + code)
@@ -198,6 +199,7 @@ def _decide(data):
             if e['id'] in evidence and evidence[e['id']] != e:
                 raise ValueError('Conflicting evidence identity')
             evidence[e['id']] = deepcopy(e)
+            asset_evidence[e['id']] = deepcopy(e)
             facts[e['feature']][e['stance']].append(deepcopy(e))
             tokens = evidence_tokens(e)
             if not tokens & used and validity_status(e,data['data_cutoff'],data['decision_at']) in ('WITHIN_DECLARED_INTERVAL','ONGOING_REQUIRES_CURRENT_REVIEW'):
@@ -228,7 +230,7 @@ def _decide(data):
                             liquidity_shares=entry['liquidity_shares'],
                             reasonable_space=None if ref is None else str(number(ref['price']) - marks[code]),
                             reference=deepcopy(ref), guaranteed_target=None, data_qualified=False,
-                            capital_eligibility=entry_review(asset,code,data,evidence))
+                            capital_eligibility=entry_review(asset,code,data,asset_evidence))
     q, nav, available, locked = _account(data, marks)
     baseline_q = dict(q)
     for o in data['account']['pending_orders']:

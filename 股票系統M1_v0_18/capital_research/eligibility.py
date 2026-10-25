@@ -68,10 +68,13 @@ def entry_review(asset, code, data, evidence):
     if r['status']!='QUALIFIED_SYNTHETIC_RESEARCH':reasons.append('CAPITAL_'+r['status'])
     ids=r['evidence_ids']
     if not ids or len(set(ids))!=len(ids):reasons.append('MISSING_OR_DUPLICATE_REVIEW_EVIDENCE')
+    owned_ids={e['id'] for e in asset['evidence']}
     for key in ids:
         fact=evidence.get(key)
-        if fact is None or fact['source_id']!=asset['source_id']:
+        if fact is None:
             reasons.append('REVIEW_EVIDENCE_UNKNOWN:'+key);continue
+        if key not in owned_ids or any(fact[k]!=asset[k] for k in ('source_id','basis_id','adjustment_version')):
+            reasons.append('REVIEW_EVIDENCE_NOT_OWNED_OR_BINDING_MISMATCH:'+key);continue
         status=validity_status(fact,cutoff,data['decision_at'])
         if status not in ('WITHIN_DECLARED_INTERVAL','ONGOING_REQUIRES_CURRENT_REVIEW'):
             reasons.append('EVIDENCE_'+status+':'+key)

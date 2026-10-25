@@ -1,3 +1,9 @@
+# A/B定向修復0.4
+
+0.3固定保存：`34b5dfa22b77cfe5c85a818e156389d5d0f9a444`。最新研究入口 [repair_ab_20261025/REPORT.md](repair_ab_20261025/REPORT.md)／[CONTRACT_0_4.md](repair_ab_20261025/CONTRACT_0_4.md)，完整交接見根 M1_CAPITAL_RESEARCH_AB_20261025_HANDOFF.md。只修本股證據所有權及未承接活單區間；舊結果原樣READ，0.3歷史指紋對固定快照。單批20唯一方法＝11新＋9必要回歸PASS，不累加舊證據；沒有市場績效或正式資格結論。以下舊文留史。
+
+---
+
 # 當前本地研究修復0.3｜尚未提交
 
 最新入口：[repair_20261025/REPORT.md](repair_20261025/REPORT.md)、[CONTRACT_0_3.md](repair_20261025/CONTRACT_0_3.md)及root `M1_CAPITAL_RESEARCH_REPAIR_20261025_HANDOFF.md`。原0.2全文、source差異與證據保存在新baseline_0_2與原review_20261025，沒有覆寫舊before／after／log。最新遠端／本地基線仍6be4333d，不commit/push。

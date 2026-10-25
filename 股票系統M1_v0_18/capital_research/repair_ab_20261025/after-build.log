@@ -1,0 +1,7 @@
+A-foreign-ABC {"error": null, "status": "REFUSED", "new_fills": [], "B_qualified": false, "recommendations": ["A-zero", "D-cash"]}
+A-foreign-BAC {"error": null, "status": "REFUSED", "new_fills": [], "B_qualified": false, "recommendations": ["A-zero", "D-cash"]}
+A-own-evidence {"error": null, "status": "SYNTHETIC_EXECUTION_REPLAY", "new_fills": [{"code": "A", "side": "SELL", "shares": "20", "date": "2026-01-06"}, {"code": "B", "side": "BUY", "shares": "7", "date": "2026-01-06"}], "B_qualified": true, "recommendations": ["A-zero", "C-event", "D-cash", "E-joint", "E-partial"]}
+B-delayed-cancel {"error": "ValueError: ACTIVE_ORDER_GAP_CONTINUATION_NOT_IMPLEMENTED: obtain a complete later ledger/order checkpoint before cancelling or reusing reservations", "status": null, "new_fills": []}
+B-delayed-omitted-tape {"error": "ValueError: ACTIVE_ORDER_GAP_CONTINUATION_NOT_IMPLEMENTED: obtain a complete later ledger/order checkpoint before cancelling or reusing reservations", "status": null, "new_fills": []}
+B-same-close-review {"error": null, "status": "SYNTHETIC_EXECUTION_REPLAY", "new_fills": [{"code": "A", "side": "SELL", "shares": "80", "date": "2026-01-09"}, {"code": "B", "side": "SELL", "shares": "7", "date": "2026-01-09"}]}
+B-already-expired {"error": null, "status": "SYNTHETIC_EXECUTION_REPLAY", "new_fills": [{"code": "A", "side": "SELL", "shares": "80", "date": "2026-01-12"}, {"code": "B", "side": "SELL", "shares": "7", "date": "2026-01-12"}]}

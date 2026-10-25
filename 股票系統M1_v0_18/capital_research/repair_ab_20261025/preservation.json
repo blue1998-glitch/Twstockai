@@ -1,0 +1,37 @@
+{
+  "baseline": "34b5dfa22b77cfe5c85a818e156389d5d0f9a444",
+  "stage1_files": 207,
+  "frozen_stage1_files_exact": 200,
+  "allowed_current_source_or_prefixed_doc_changes": [
+    "AGENTS.md",
+    "CONTINUE_IN_WORK_MODE.md",
+    "股票系統M1_v0_18/capital_research/README.md",
+    "股票系統M1_v0_18/capital_research/continuity.py",
+    "股票系統M1_v0_18/capital_research/core.py",
+    "股票系統M1_v0_18/capital_research/eligibility.py",
+    "股票系統M1_v0_18/capital_research/execution.py"
+  ],
+  "original_doc_bodies_preserved": true,
+  "before_after_inputs": {
+    "A-foreign-ABC": "EXACT_INPUT_EQUAL",
+    "A-foreign-BAC": "EXACT_INPUT_EQUAL",
+    "A-own-evidence": "EXACT_INPUT_EQUAL",
+    "B-delayed-cancel": "EXOGENOUS_JOB_AND_ECONOMIC_PREFIX_EQUAL; VERSIONED_LINEAGE_EXPLICITLY_REMINTED",
+    "B-delayed-omitted-tape": "EXOGENOUS_JOB_AND_ECONOMIC_PREFIX_EQUAL; VERSIONED_LINEAGE_EXPLICITLY_REMINTED",
+    "B-same-close-review": "EXOGENOUS_JOB_AND_ECONOMIC_PREFIX_EQUAL; VERSIONED_LINEAGE_EXPLICITLY_REMINTED",
+    "B-already-expired": "EXOGENOUS_JOB_AND_ECONOMIC_PREFIX_EQUAL; VERSIONED_LINEAGE_EXPLICITLY_REMINTED"
+  },
+  "original_action_ledger_unchanged": true,
+  "saved_real_source_state": {
+    "refused": 70,
+    "insufficient": 2,
+    "exchange_unsupported": 8,
+    "qualified_total_net": 0,
+    "producer_run_this_round": false
+  },
+  "formal_qualifications": false,
+  "primary_pressure_id": null,
+  "old_0_2_and_0_3_outputs_logs_snapshots_unchanged": true,
+  "astra_codex_obtained": false,
+  "astra_codex_read": false
+}

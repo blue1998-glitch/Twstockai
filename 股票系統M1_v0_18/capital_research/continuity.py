@@ -8,7 +8,7 @@ from rotation_research.action_ledger import replay
 from .core import timestamp, number, quantity
 from .close_clock import close_record
 
-CHECKPOINT = 'capital-account-checkpoint/0.2'
+CHECKPOINT = 'capital-account-checkpoint/0.3'
 
 
 def ledger_prefix(origin, fills, day):
@@ -33,7 +33,7 @@ def row_at(origin, fills, day):
 
 
 def _check_result(execution):
-    if execution['schema']!='capital-execution/0.3' or execution['status']!='SYNTHETIC_EXECUTION_REPLAY':
+    if execution['schema']!='capital-execution/0.4' or execution['status']!='SYNTHETIC_EXECUTION_REPLAY':
         raise ValueError('LIFECYCLE_PROOF_REQUIRED: historical results remain readable, not implicitly upgraded')
     if execution['result_id']!=fingerprint({k:v for k,v in execution.items() if k!='result_id'}):
         raise ValueError('Execution fingerprint conflict')
@@ -41,7 +41,7 @@ def _check_result(execution):
     if not ids or len(ids)!=len(set(ids)) or set(ids)!=set(records):
         raise ValueError('Exact ordered decision history required')
     for key,d in records.items():
-        if d['schema']!='capital-decision/0.3' or d['decision_id']!=key or fingerprint({k:v for k,v in d.items() if k!='decision_id'})!=key:
+        if d['schema']!='capital-decision/0.4' or d['decision_id']!=key or fingerprint({k:v for k,v in d.items() if k!='decision_id'})!=key:
             raise ValueError('Decision history fingerprint conflict')
     times=[timestamp(records[key]['decision_at']) for key in ids]
     if times!=sorted(set(times)):raise ValueError('Decision history must be chronological')
@@ -133,6 +133,15 @@ def account_at_checkpoint(checkpoint, *, decision_at, cancelled_order_ids=(), re
         raise ValueError('EXISTING_ORDER_CONTINUATION_NOT_IMPLEMENTED: explicitly cancel all unfilled orders at review')
     if len(set(cancelled_order_ids))!=len(cancelled_order_ids):
         raise ValueError('Duplicate cancellation identity')
+    # This adapter has daily closes, not an uninterrupted intraday old-order
+    # replay. A live order crossing another declared trading date may have filled
+    # before review. Missing tape is not proof of no fills; fail closed using the
+    # origin's explicit calendar, never an invented market-opening time or T+2.
+    close_at=timestamp(checkpoint['state']['through_at'])
+    review_day=timestamp(decision_at).astimezone(close_at.tzinfo).date().isoformat()
+    if active and any(r['trading'] and close_at.date().isoformat()<r['date']<=review_day
+                      for r in checkpoint['origin_ledger_input']['calendar']):
+        raise ValueError('ACTIVE_ORDER_GAP_CONTINUATION_NOT_IMPLEMENTED: obtain a complete later ledger/order checkpoint before cancelling or reusing reservations')
     return dict(as_of=checkpoint['state']['through_at'],available_at=decision_at,
         holdings={c:dict(shares=n,sellable=n) for c,n in row['shares'].items()},
         settled_cash=row['settled_cash'],reserved_cash=authoritative_reserve,
@@ -154,6 +163,7 @@ def bind_resume(previous, data, checkpoint, cancelled_order_ids):
                 origin_initial_capital=checkpoint['state']['origin_initial_capital'],external_flow='0',
                 latest_predecessor_id=old['decision_id'],
                 cancelled_order_ids=sorted(cancelled_order_ids),
+                cancellation_effective_at=data['decision_at'] if cancelled_order_ids else None,
                 qualification='VERIFIED_SYNTHETIC_LEDGER_PREFIX_NOT_INVESTOR_AUTHORITY')
 
 

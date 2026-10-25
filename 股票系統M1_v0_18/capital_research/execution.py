@@ -13,7 +13,7 @@ from .transition_risk import inspect_risk
 from .close_clock import close_record
 from .eligibility import expired_entry_reasons
 
-VERSION = 'capital-execution/0.3'
+VERSION = 'capital-execution/0.4'
 
 
 def _refusal(reason):
@@ -118,15 +118,18 @@ def _simulate(job):
     order_history=deepcopy(inherited.get('order_history',inherited['orders'])) if inherited else []
     if set(order_state)&{o['id'] for o in orders}:
         raise ValueError('New order identity collides with earlier account history')
+    decisions = []
     if continuation:
         for key in continuation['cancelled_order_ids']:
-            order_state[key].update(status='CANCELLED_AT_REVIEW',reserved_cash='0')
+            at=result['continuity']['cancellation_effective_at']
+            order_state[key].update(status='CANCELLED_AT_REVIEW',reserved_cash='0',cancelled_at=at)
+            decisions.append(dict(at=at,order_id=key,status='CANCELLED_AT_REVIEW',
+                                  reason='EXPLICIT_REVIEW_BEFORE_NEXT_DECLARED_TRADING_DATE'))
     for o in orders:
         order_state[o['id']]=dict(remaining=o['shares'],status='WAITING',reserved_cash='0',
             requires_reassessment=bool(o['side']=='BUY' and selected['funding']!='SETTLED'),
             active_decision_at=o['decision_at'],active_decision_id=result['decision_id'])
     order_history+=deepcopy(orders)
-    decisions = []
     initial_fill_count=len(initial_fills)
     fills = deepcopy(initial_fills)
     risk_observations=[];reassessments=[]
@@ -345,6 +348,6 @@ def compare_jobs(jobs):
             predecessor_state=j.get('continuation',{}).get('checkpoint',{}).get('state_id'))))
     if len(set(identities)) != 1:
         raise ValueError('Alternatives must share exact capital/rights AND exogenous prices/capacity/states/availability/settlement path')
-    return dict(schema='capital-comparison/0.3', synthetic=True, common_input_id=identities[0],
+    return dict(schema='capital-comparison/0.4', synthetic=True, common_input_id=identities[0],
                 results={k:simulate(j) for k,j in jobs.items()}, ranking=None,
                 total_net_return_comparison_qualified=False, policy_authorized=False)

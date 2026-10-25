@@ -1,3 +1,11 @@
+# 2026-10-25 最新｜0.3已固定保存，A/B修復0.4
+
+0.3原樣快照 `34b5dfa22b77cfe5c85a818e156389d5d0f9a444` 已正常push並GitHub讀回。本輪使用者明確授權兩階段分別保存，優先於下方歷史未提交／無push授權敘述。新入口 `M1_CAPITAL_RESEARCH_AB_20261025_HANDOFF.md`、`股票系統M1_v0_18/capital_research/repair_ab_20261025/REPORT.md`／CONTRACT_0_4。A跨股事實與順序依賴、B延後取消漏掉活單區間均先另存before實跑重現，再最小修復；決策／成交0.4、checkpoint0.3，原action_ledger不改。
+
+本輪僅一批20唯一方法PASS＝11新＋9必要回歸；第一階段測試0，不累加歷史38／51／46或合成序列。舊0.2／0.3原件、manifest、快照及log不改，舊source指紋對各固定版本。新資金事實只取本股；活單跨明示交易日但無完整帳／委託前綴拒絕，不推開盤／固定檢討天數；已到期、同日review及明示非交易日正例保留。全部資格false、主壓力null與70／2／8／0保持。R2/F及未支援帳務不擴張，無producer／UI／Android／樣本外；Astra及第一Cloud診斷未取得未讀。下一步Work唯讀新固定提交，工程只此唯一Codex／原工作區，無子代理、部署或下單。以下原文完整留史。
+
+---
+
 # 2026-10-25 最新本地接續｜0.3定向修復待Work唯讀
 
 讀`M1_CAPITAL_RESEARCH_REPAIR_20261025_HANDOFF.md`及`股票系統M1_v0_18/capital_research/repair_20261025/`的REPORT／CONTRACT_0_3／新before與artifacts／tests-final／preservation。最新已核遠端與本地基線仍6be4333d490bcccfe952c7606dffb802b76cdd5c；0.2與0.3均未提交，原差異及78檔快照保持。沒有commit/push授權，不能把GitHub舊0.1當新0.3或冒Work已讀原件。
