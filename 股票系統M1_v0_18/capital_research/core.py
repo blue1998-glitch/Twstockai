@@ -9,8 +9,9 @@ from decimal import Decimal, localcontext
 from graph_core.core import fingerprint, number as source_number
 from rotation_research.core import fees
 from .eligibility import entry_review, known_fact, validity_status
+from .fact_lineage import source_snapshot, history_at, visible, issues as fact_issues, asset_issues
 
-VERSION = 'capital-decision/0.4'
+VERSION = 'capital-decision/0.6'
 FEATURES = ('price_volume', 'box', 'key_position', 'momentum', 'cross_scale')
 BINDING = ('source_id', 'basis_id', 'adjustment_version')
 
@@ -156,7 +157,7 @@ def decide(data):
         return _decide(data)
 
 
-def _decide(data):
+def _decide(data, *, prior_fact_sources=()):
     if data['schema'] != 'capital-decision-input/0.1' or data['synthetic'] is not True:
         raise ValueError('Phase 1 accepts explicitly synthetic research only; real-source route remains refused')
     decision, cutoff = timestamp(data['decision_at']), timestamp(data['data_cutoff'])
@@ -173,6 +174,7 @@ def _decide(data):
     for s in data['scenario_set']['scenarios']:
         if set(s['prices']) != set(data['assets']) or any(number(v) <= 0 for v in s['prices'].values()):
             raise ValueError('Complete positive scenario assumptions required')
+    history = history_at([*prior_fact_sources, source_snapshot(data)], data['decision_at'])
     marks, layer1, layer2, evidence, novel = {}, {}, {}, {}, {}
     used = set(data['consumed_evidence_tokens'])
     for code, asset in data['assets'].items():
@@ -193,7 +195,7 @@ def _decide(data):
             if not _known(e, cutoff, decision):
                 continue
             _binding(e, asset)
-            e=known_fact(e,data['data_cutoff'],data['decision_at'])
+            e=visible(e,data['data_cutoff'],data['decision_at'])
             if e['feature'] not in FEATURES or e['stance'] not in ('support', 'refutation', 'unknown'):
                 raise ValueError('Invalid separated evidence category')
             if e['id'] in evidence and evidence[e['id']] != e:
@@ -202,7 +204,8 @@ def _decide(data):
             asset_evidence[e['id']] = deepcopy(e)
             facts[e['feature']][e['stance']].append(deepcopy(e))
             tokens = evidence_tokens(e)
-            if not tokens & used and validity_status(e,data['data_cutoff'],data['decision_at']) in ('WITHIN_DECLARED_INTERVAL','ONGOING_REQUIRES_CURRENT_REVIEW'):
+            if (not tokens & used and not fact_issues(history,code,asset,'EVIDENCE',e,data['decision_at'])
+                    and validity_status(e,data['data_cutoff'],data['decision_at']) in ('WITHIN_DECLARED_INTERVAL','ONGOING_REQUIRES_CURRENT_REVIEW')):
                 novel[e['id']] = tokens
             used.update(tokens)
         for f in facts:
@@ -230,7 +233,8 @@ def _decide(data):
                             liquidity_shares=entry['liquidity_shares'],
                             reasonable_space=None if ref is None else str(number(ref['price']) - marks[code]),
                             reference=deepcopy(ref), guaranteed_target=None, data_qualified=False,
-                            capital_eligibility=entry_review(asset,code,data,asset_evidence))
+                            capital_eligibility=entry_review(asset,code,data,asset_evidence,
+                                history_reasons=asset_issues(history,code,asset,data['decision_at'])))
     q, nav, available, locked = _account(data, marks)
     baseline_q = dict(q)
     for o in data['account']['pending_orders']:
@@ -354,7 +358,7 @@ def _decide(data):
         data_qualified=False, execution_model_qualified=False, historical_signal_eligible=False,
         policy_authorized=False, live_execution_authorized=False, primary_pressure_id=None,
         new_evidence_tokens=sorted(set().union(*novel.values())) if novel else [],
-        reviewed_evidence_tokens=sorted(used),
+        reviewed_evidence_tokens=sorted(used),fact_history=history,
         reserved_cash=data['account']['reserved_cash'],
         continuity_qualification='INDEPENDENT_SNAPSHOT_NOT_A_CONTINUOUS_CAPITAL_CHAIN',
         R2_status='NOT_IMPLEMENTED_REQUIRES_OUT_OF_SAMPLE_COMPARISON_WITH_R1')
@@ -375,7 +379,11 @@ def resume_decision(previous, data, *, checkpoint=None, cancelled_order_ids=()):
     linkage=bind_resume(previous,data,checkpoint,cancelled_order_ids)
     next_input=deepcopy(data)
     next_input['consumed_evidence_tokens']=sorted(set(next_input['consumed_evidence_tokens']) | set(old['reviewed_evidence_tokens']) | set(checkpoint['state']['reviewed_evidence_tokens']))
-    result=decide(next_input)
+    execution=checkpoint['execution_result']
+    prior=[execution['fact_sources'][key] for key in execution['decision_ids']]
+    with localcontext() as ctx:
+        ctx.prec=50
+        result=_decide(next_input,prior_fact_sources=prior)
     d=result['decision'];d.pop('decision_id')
     d['continuity_qualification']=linkage['qualification'];d['continuity']=linkage
     d['decision_id']=fingerprint(d)

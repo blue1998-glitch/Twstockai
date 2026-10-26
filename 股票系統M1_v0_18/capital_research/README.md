@@ -1,3 +1,15 @@
+# 遭拒宣告限制衝突0.6（本地未提交）
+
+入口[evidence_conflicts_20261026/REPORT.md](evidence_conflicts_20261026/REPORT.md)／[CONTRACT_0_6.md](evidence_conflicts_20261026/CONTRACT_0_6.md)，完整交接見根M1_CAPITAL_RESEARCH_CONFLICTS_20261026_HANDOFF.md。0.5主三輪資格復活先實跑重現，0.6保留遭拒宣告的新限制衝突UNKNOWN；有效原件及獨立新事實正例保持。25唯一方法＝13新＋12必要回歸PASS，不累加修前單例或歷史結果。原0.5 source對新baseline_0_5封存，舊證據原樣；無commit/push、正式資格或策略成效結論。
+
+---
+
+# 跨輪事實保全0.5（本地未提交）
+
+最新入口[evidence_lineage_20261025/REPORT.md](evidence_lineage_20261025/REPORT.md)／[CONTRACT_0_5.md](evidence_lineage_20261025/CONTRACT_0_5.md)，完整交接見根M1_CAPITAL_RESEARCH_FACT_LINEAGE_20261025_HANDOFF.md。基線4339a146，沒有新commit/push授權；已知失效跨輪不被ID／review洗掉，有效舊事實及真正新事實仍可競爭。最終35唯一方法＝25新＋10必要回歸，不累加舊結果；原帳、正式資格及來源限制保持。以下舊文完整保留。
+
+---
+
 # A/B定向修復0.4
 
 0.3固定保存：`34b5dfa22b77cfe5c85a818e156389d5d0f9a444`。最新研究入口 [repair_ab_20261025/REPORT.md](repair_ab_20261025/REPORT.md)／[CONTRACT_0_4.md](repair_ab_20261025/CONTRACT_0_4.md)，完整交接見根 M1_CAPITAL_RESEARCH_AB_20261025_HANDOFF.md。只修本股證據所有權及未承接活單區間；舊結果原樣READ，0.3歷史指紋對固定快照。單批20唯一方法＝11新＋9必要回歸PASS，不累加舊證據；沒有市場績效或正式資格結論。以下舊文留史。

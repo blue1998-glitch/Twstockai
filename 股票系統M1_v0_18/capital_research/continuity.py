@@ -7,8 +7,9 @@ from graph_core.core import fingerprint
 from rotation_research.action_ledger import replay
 from .core import timestamp, number, quantity
 from .close_clock import close_record
+from .fact_lineage import history_at
 
-CHECKPOINT = 'capital-account-checkpoint/0.3'
+CHECKPOINT = 'capital-account-checkpoint/0.5'
 
 
 def ledger_prefix(origin, fills, day):
@@ -33,16 +34,23 @@ def row_at(origin, fills, day):
 
 
 def _check_result(execution):
-    if execution['schema']!='capital-execution/0.4' or execution['status']!='SYNTHETIC_EXECUTION_REPLAY':
+    if execution['schema']!='capital-execution/0.6' or execution['status']!='SYNTHETIC_EXECUTION_REPLAY':
         raise ValueError('LIFECYCLE_PROOF_REQUIRED: historical results remain readable, not implicitly upgraded')
     if execution['result_id']!=fingerprint({k:v for k,v in execution.items() if k!='result_id'}):
         raise ValueError('Execution fingerprint conflict')
     ids=execution['decision_ids'];records=execution['decision_records']
     if not ids or len(ids)!=len(set(ids)) or set(ids)!=set(records):
         raise ValueError('Exact ordered decision history required')
-    for key,d in records.items():
-        if d['schema']!='capital-decision/0.4' or d['decision_id']!=key or fingerprint({k:v for k,v in d.items() if k!='decision_id'})!=key:
+    sources=execution['fact_sources']
+    if set(sources)!=set(ids):raise ValueError('Complete fact declaration history required')
+    for index,key in enumerate(ids):
+        d=records[key]
+        if d['schema']!='capital-decision/0.6' or d['decision_id']!=key or fingerprint({k:v for k,v in d.items() if k!='decision_id'})!=key:
             raise ValueError('Decision history fingerprint conflict')
+        if any(sources[key][k]!=d[k] for k in ('decision_at','data_cutoff')):
+            raise ValueError('Fact declaration decision/cutoff conflict')
+        expected=history_at([sources[k] for k in ids[:index+1]],d['decision_at'])
+        if expected!=d['fact_history']:raise ValueError('Fact history differs from original declarations')
     times=[timestamp(records[key]['decision_at']) for key in ids]
     if times!=sorted(set(times)):raise ValueError('Decision history must be chronological')
     if execution['decision_id'] not in records or records[execution['decision_id']]['common_account_id']!=execution['common_account_id']:
@@ -95,7 +103,8 @@ def make_checkpoint(origin, execution, *, through_at):
                ledger_close=close,opening_unavailable_shares=deepcopy(unavailable),
                general_reserved_cash=execution['decision_records'][execution['latest_decision_id']]['reserved_cash'],
                latest_decision_id=execution['latest_decision_id'],latest_common_account_id=execution['latest_common_account_id'],
-               reviewed_evidence_tokens=deepcopy(execution['reviewed_evidence_tokens']))
+               reviewed_evidence_tokens=deepcopy(execution['reviewed_evidence_tokens']),
+               fact_history=history_at([execution['fact_sources'][k] for k in execution['decision_ids']],through_at))
     # Full-source and execution fingerprints are integrity metadata, not prefix decisions.
     result=dict(schema=CHECKPOINT,state=state,state_id=fingerprint(state),
         origin_ledger_input=deepcopy(origin),execution_result=deepcopy(execution),

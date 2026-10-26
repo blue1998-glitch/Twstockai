@@ -12,8 +12,9 @@ from .continuity import row_at, ledger_prefix, make_checkpoint, validate_checkpo
 from .transition_risk import inspect_risk
 from .close_clock import close_record
 from .eligibility import expired_entry_reasons
+from .fact_lineage import source_snapshot, history_at, asset_issues, first_issue_at
 
-VERSION = 'capital-execution/0.4'
+VERSION = 'capital-execution/0.6'
 
 
 def _refusal(reason):
@@ -136,6 +137,8 @@ def _simulate(job):
     decision_ids=deepcopy(inherited['decision_ids']) if inherited else []
     decision_records=deepcopy(inherited['decision_records']) if inherited else {}
     decision_ids.append(result['decision_id']);decision_records[result['decision_id']]=deepcopy(result)
+    fact_sources=deepcopy(inherited['fact_sources']) if inherited else {}
+    fact_sources[result['decision_id']]=source_snapshot(data)
     fill_order_ids=deepcopy(inherited['fill_order_ids']) if inherited else {}
     unavailable=deepcopy(inherited['opening_unavailable_shares']) if inherited else {
         c:str(quantity(x['shares'])-quantity(x['sellable'])) for c,x in a['holdings'].items()}
@@ -148,7 +151,8 @@ def _simulate(job):
             latest_decision_id=latest['decision_id'],latest_common_account_id=latest['common_account_id'],
             origin_common_account_id=origin_common,opening_unavailable_shares=deepcopy(unavailable),
             reviewed_evidence_tokens=sorted(set().union(*(set(d['reviewed_evidence_tokens']) for d in decision_records.values()))),
-            fill_order_ids=deepcopy(fill_order_ids),ledger_close_proof=deepcopy(clock))
+            fill_order_ids=deepcopy(fill_order_ids),ledger_close_proof=deepcopy(clock),
+            fact_sources=deepcopy(fact_sources))
     marks={c:dict(price=next(m['price'] for m in x['marks'] if m['occurred_at']==data['data_cutoff'] and timestamp(m['available_at'])<=timestamp(data['decision_at'])),
                         at=data['data_cutoff'],source_id=x['source_id'],basis_id=x['basis_id']) for c,x in data['assets'].items()}
     risk_data=data
@@ -193,13 +197,18 @@ def _simulate(job):
                 if o['side']=='BUY' and o['code']==obs['code'] and number(st['remaining']):
                     st.update(status='CANCELLED_EVIDENCE',reserved_cash='0')
                     decisions.append(dict(at=obs['at'],order_id=o['id'],status='CANCELLED_EVIDENCE',reason=obs['evidence_status']))
+        known_history=history_at([fact_sources[k] for k in decision_ids],obs['at'])
         for o in orders:
             st=order_state[o['id']]
             if o['side']=='BUY' and number(st['remaining']) and not st['status'].startswith(('CANCELLED','EXPIRED')):
                 invalid=expired_entry_reasons(risk_data['assets'][o['code']],obs['at'])
+                invalid+=asset_issues(known_history,o['code'],risk_data['assets'][o['code']],obs['at'])
                 if invalid:
+                    effective=first_issue_at([fact_sources[k] for k in decision_ids],o['code'],risk_data['assets'][o['code']],
+                                             after=st['active_decision_at'],through=obs['at']) or obs['at']
+                    if timestamp(effective)>=timestamp(o['expires_at']):continue
                     st.update(status='CANCELLED_EVIDENCE',reserved_cash='0')
-                    decisions.append(dict(at=obs['at'],order_id=o['id'],status='CANCELLED_EVIDENCE',reason='DECLARED_VALIDITY_ENDED',details=invalid))
+                    decisions.append(dict(at=effective,observed_at=obs['at'],order_id=o['id'],status='CANCELLED_EVIDENCE',reason='DECLARED_VALIDITY_ENDED',details=invalid))
         # Funding is not a reauthorization. A new decision must bind the actual
         # prior-close account, original fill path and explicit order cancellations.
         for review in job.get('reassessments',[]):
@@ -242,6 +251,7 @@ def _simulate(job):
             st.update(status='WAITING',requires_reassessment=False,active_decision_at=fresh['decision_at'],active_decision_id=fresh_result['decision_id'])
             risk_data=fresh;latest_result=fresh_result;decision_ids.append(fresh_result['decision_id'])
             decision_records[fresh_result['decision_id']]=deepcopy(fresh_result)
+            fact_sources[fresh_result['decision_id']]=source_snapshot(fresh)
             reassessments.append(dict(id=review['id'],at=obs['at'],order_id=o['id'],checkpoint_id=cp['checkpoint_id'],
                 decision_id=fresh_result['decision_id'],cancelled_order_ids=review['cancelled_order_ids']))
         # Release expired orders and reserve all active buys jointly, in explicit order.
@@ -315,8 +325,18 @@ def _simulate(job):
     final_time = timestamp(job['observed_until'])
     if times and final_time < times[-1]:
         raise ValueError('Execution watermark before tape')
+    final_history=history_at([fact_sources[k] for k in decision_ids],job['observed_until'])
     for o in orders:
         st=order_state[o['id']]
+        if o['side']=='BUY' and number(st['remaining']) and not st['status'].startswith(('CANCELLED','EXPIRED')):
+            invalid=asset_issues(final_history,o['code'],risk_data['assets'][o['code']],job['observed_until'])
+            if invalid:
+                effective=first_issue_at([fact_sources[k] for k in decision_ids],o['code'],risk_data['assets'][o['code']],
+                                         after=st['active_decision_at'],through=job['observed_until'])
+                if effective is not None and timestamp(effective)<timestamp(o['expires_at']):
+                    st.update(status='CANCELLED_EVIDENCE',reserved_cash='0')
+                    decisions.append(dict(at=effective,observed_at=job['observed_until'],order_id=o['id'],status='CANCELLED_EVIDENCE',
+                                          reason='KNOWN_FACT_HISTORY_AT_WATERMARK',details=invalid))
         if number(st['remaining']) and final_time >= timestamp(o['expires_at']) and not st['status'].startswith('CANCELLED'):
             st.update(status='EXPIRED_UNFILLED', reserved_cash='0')
             decisions.append(dict(at=o['expires_at'],order_id=o['id'],status='EXPIRED_UNFILLED',reason='EXPLICIT_ORDER_DEADLINE',remaining=st['remaining']))
@@ -348,6 +368,6 @@ def compare_jobs(jobs):
             predecessor_state=j.get('continuation',{}).get('checkpoint',{}).get('state_id'))))
     if len(set(identities)) != 1:
         raise ValueError('Alternatives must share exact capital/rights AND exogenous prices/capacity/states/availability/settlement path')
-    return dict(schema='capital-comparison/0.4', synthetic=True, common_input_id=identities[0],
+    return dict(schema='capital-comparison/0.6', synthetic=True, common_input_id=identities[0],
                 results={k:simulate(j) for k,j in jobs.items()}, ranking=None,
                 total_net_return_comparison_qualified=False, policy_authorized=False)

@@ -1,3 +1,19 @@
+# 2026-10-26 最新本地｜限制衝突0.6待唯讀，沒有commit/push
+
+最新入口M1_CAPITAL_RESEARCH_CONFLICTS_20261026_HANDOFF.md及capital_research/evidence_conflicts_20261026/REPORT.md／CONTRACT_0_6。使用者已明確授權定向工程、必要測試，先不commit/push；遠端／HEAD仍4339a146。主三輪與四變體在0.5實跑資格復活，0.6按root保留遭拒宣告新限制UNKNOWN；純改寫恢復與獨立新事實正例保留。原0.5的36份source／文件已封存，舊manifest對封存原件，不改舊證據。
+
+本輪25唯一方法PASS＝13新＋12必要回歸；修前單例FAIL與歷史35等不累加。主第三輪只驗資格，沒有1/13行情；明示較早時序另存四個時間控制actual，同時到期已有新證據。原帳／權利／reserve／latest／token保持，無第二帳。valid_from較晚獨立案例、完整更正／分叉及原未支援項未完成；正式false、主壓力null及70／2／8／0保持。Work未取得本地原件，不冒獨立驗收；Astra／救援原件未讀。下一輪先唯讀，無新授權不工程或commit/push。以下歷史原文保留。
+
+---
+
+# 2026-10-25 最新本地｜跨輪事實保全0.5，未提交
+
+新入口 `M1_CAPITAL_RESEARCH_FACT_LINEAGE_20261025_HANDOFF.md`、`股票系統M1_v0_18/capital_research/evidence_lineage_20261025/REPORT.md`／CONTRACT_0_5。遠端／本地HEAD仍4339a146d22dd849a6131a8c13f08f2e56145a2f，本輪明示無commit/push授權，優先於下方上一輪兩階段保存授權。只在本既有Codex／工作區做跨輪失效事實重現與最小接線，舊0.4／0.3／0.2原件不改。第一工作區由客服恢復，不等待／重建或推定890檔存亡。
+
+同ID刪撤銷、期限改null／延後、明示別名洗掉失效及中間review省略未來撤銷均已先存before實跑；新fact_lineage承接當時可知歷史及完整宣告，未知身分／更正不自動批准。決策／成交0.5、checkpoint0.4，原action_ledger不改；有效舊原件可review、真正新事實不永久封鎖，共用量柱不推同一事實。最終35唯一方法PASS＝25新＋10必要回歸，首31／33及恢復、無tape到期兩個單例FAIL留史不累加；修去重及事件先後後原斷言通過。全部資格false、主壓力null與70／2／8／0保持；R2/F及其他原未實作不擴張。無bootstrap／hydrate、真實producer、六方案、UI／Android、樣本外或子代理；Astra／救援原件未取得未讀。下一步Work唯讀，沒有新保存指示不commit/push。以下原文完整保留。
+
+---
+
 # 2026-10-25 最新｜0.3已固定保存，A/B修復0.4
 
 0.3原樣快照 `34b5dfa22b77cfe5c85a818e156389d5d0f9a444` 已正常push並GitHub讀回。本輪使用者明確授權兩階段分別保存，優先於下方歷史未提交／無push授權敘述。新入口 `M1_CAPITAL_RESEARCH_AB_20261025_HANDOFF.md`、`股票系統M1_v0_18/capital_research/repair_ab_20261025/REPORT.md`／CONTRACT_0_4。A跨股事實與順序依賴、B延後取消漏掉活單區間均先另存before實跑重現，再最小修復；決策／成交0.4、checkpoint0.3，原action_ledger不改。

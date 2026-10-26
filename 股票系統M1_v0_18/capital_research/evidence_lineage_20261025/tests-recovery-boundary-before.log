@@ -1,0 +1,14 @@
+test_rejected_rewrite_does_not_permanently_taint_unchanged_valid_fact (capital_research.evidence_lineage_20261025.test_lineage.FactLineageTests.test_rejected_rewrite_does_not_permanently_taint_unchanged_valid_fact) ... FAIL
+
+======================================================================
+FAIL: test_rejected_rewrite_does_not_permanently_taint_unchanged_valid_fact (capital_research.evidence_lineage_20261025.test_lineage.FactLineageTests.test_rejected_rewrite_does_not_permanently_taint_unchanged_valid_fact)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/workspace/Twstockai/股票系統M1_v0_18/capital_research/evidence_lineage_20261025/test_lineage.py", line 214, in test_rejected_rewrite_does_not_permanently_taint_unchanged_valid_fact
+    self.assertTrue(d['layer2']['B']['capital_eligibility']['qualified_for_synthetic_proposal'])
+AssertionError: False is not true
+
+----------------------------------------------------------------------
+Ran 1 test in 0.358s
+
+FAILED (failures=1)

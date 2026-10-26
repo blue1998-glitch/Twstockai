@@ -50,7 +50,7 @@ def known_fact(record, cutoff, decision):
     return r
 
 
-def entry_review(asset, code, data, evidence):
+def entry_review(asset, code, data, evidence, *, history_reasons=()):
     r=asset.get('capital_eligibility');reasons=[]
     out=dict(qualified_for_synthetic_proposal=False,reasons=reasons,review=None,
              authority='SYNTHETIC_RESEARCH_ONLY_NOT_DATA_OR_EXECUTION_AUTHORIZATION')
@@ -66,6 +66,7 @@ def entry_review(asset, code, data, evidence):
     if r['status'] not in ('QUALIFIED_SYNTHETIC_RESEARCH','NOT_QUALIFIED','UNKNOWN'):
         raise ValueError('Unsupported capital-review status')
     if r['status']!='QUALIFIED_SYNTHETIC_RESEARCH':reasons.append('CAPITAL_'+r['status'])
+    reasons.extend(history_reasons)
     ids=r['evidence_ids']
     if not ids or len(set(ids))!=len(ids):reasons.append('MISSING_OR_DUPLICATE_REVIEW_EVIDENCE')
     owned_ids={e['id'] for e in asset['evidence']}

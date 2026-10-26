@@ -1,0 +1,37 @@
+{
+  "schema": "capital-conflict-diagnostics/0.1",
+  "before_wrong_admissions": [
+    "mixed-null-revocation",
+    "mixed-later-revocation",
+    "rejected-value-revocation",
+    "rejected-value-earlier-expiry",
+    "alias-after-conflict"
+  ],
+  "main_reproduced": true,
+  "before_log": "tests-before-one.log",
+  "before_actual": "before/mixed-null-revocation/actual.json",
+  "before_assertion": "self.assertEqual(actual['B_qualified'], expected['B_qualified'])",
+  "before_failure": "True != False",
+  "oracle_changes": 0,
+  "case_specification_changes": 0,
+  "economic_decision_input_changes": 0,
+  "fix": "Retain unresolved root-scoped additional restrictions from rejected declarations; original restoration does not clear conflicts",
+  "final_actual": "after-final/mixed-null-revocation/actual.json",
+  "final_reasons": [
+    "FACT_RESTRICTION_CONFLICT_UNKNOWN"
+  ],
+  "unresolved_test_failures": [],
+  "final_methods": 25,
+  "historical_counts_not_added": true,
+  "before_probe_same_method_in_final": true,
+  "untested": [
+    "Independent valid_from-later case",
+    "Full correction and fork matrix",
+    "Separate complete v0.6 partial-fill artifact sequence"
+  ],
+  "not_implemented": [
+    "Source correction certification and conflict release",
+    "Complex identity merges and arbitrary forgery detection",
+    "R2/F and originally unsupported accounting"
+  ]
+}
