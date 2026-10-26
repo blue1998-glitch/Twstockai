@@ -1,3 +1,15 @@
+# 2026-10-26 最新本地｜台泥財報第58頁日期角色附錄0.1，未提交
+
+最新入口 `M1_TCC_P58_DATE_ROLES_20261026_HANDOFF.md`、rotation_research/treasury_date_roles_20261026/REPORT.md及CONTRACT.md。使用者有限授權只增補已保存財報第58頁與必要定向驗證，先不commit/push。遠端／HEAD基線41c82485e5b7056657cc1ac1e069a91ea1957b9e；資金框架仍0.8、來源catalog仍0.10及全部parents，0.8已由Work結清，不重跑。
+
+先保存原PDF／全文／頁面及舊catalog指紋、input／expected，再新增純核心及單筆IO接線：公司報告2026-01董事會通過註銷、2026-02完成變更登記，28000／THOUSAND_SHARES。確切日／生效日／announced_at／個人款股與權利全null，不把月份補日，不回填一月可知或推股東減資退資。明示同源連結原0.7觀察，帳務事件／獨立市場樣本新增0；原catalog／原件／資格／accounting／策略／圖形全部不改。
+
+本輪13個新唯一方法PASS，舊suite／窗口producer0，不累加歷史22等結果。另只轉繪並實讀同原PDF第58頁，視讀時間另存，不覆寫既有觀察。純核心無IO、查詢重用既有精確resolve_field；未知／歷史／FINAL_LEDGER拒用。所有外部資格false、主壓力null及70／2／其中8／0保持。
+
+只原唯一Codex／原工作區，不開代理／worktree／分支，無新來源、bootstrap/hydrate、六方案、UI／Android、樣本外、封包、部署／交易／付費／訊息。R2/F及原未實作不擴張。Work未取得本地附錄原件，不冒獨立驗收；Astra／第一工作區救援原件仍未取得未讀。下一輪先唯讀，沒有新明確保存授權不commit/push。以下歷史原文完整保留。
+
+---
+
 # 2026-10-26 最新本地｜review同ID內容保全0.8，未提交
 
 最新入口 `M1_CAPITAL_RESEARCH_REVIEW_IDENTITY_20261026_HANDOFF.md`、capital_research/review_identity_20261026/REPORT.md及CONTRACT_0_8。使用者本輪只授權兩案定向重現、最小修復及必要測試，先不commit/push。遠端／HEAD基線2ca618a15be296821b02ba139c2ee194fc51b01e，0.7已保存；下方舊「未提交」按當時歷史閱讀。
