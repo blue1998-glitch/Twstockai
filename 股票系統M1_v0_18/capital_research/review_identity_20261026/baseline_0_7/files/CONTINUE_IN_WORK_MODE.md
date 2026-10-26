@@ -1,0 +1,2271 @@
+# 2026-10-26 最新本地｜遭拒中途重評限制收件0.7，未提交
+
+最新入口 `M1_CAPITAL_RESEARCH_REJECTED_REASSESSMENT_20261026_HANDOFF.md`、capital_research/rejected_reassessment_20261026/REPORT.md及CONTRACT_0_7。使用者本輪只授權定向重現／最小修復／必要測試，不commit/push。遠端與本地基線135f73b65e9622a664fcf05adb4cdb09a9c70e02；0.5／0.6已在此固定提交保存，下方「未發布」按當時歷史閱讀。
+
+主兩案先保存輸入／預期／版本並在0.6實跑：遭拒限制未接續，恢復舊bytes放行資格；備款舊單B20仍成交。0.7按收件保留拒絕attempt／原宣告及全部token，不批准提案／替換latest；同觀察成交前擋限制衝突。純value改寫拒絕的有效舊單及合法重評仍B20；未來撤銷不提前生效，合法B7不倒刪、剩13取消。原action_ledger／opening／權利／reserve／fills完整保留，無第二帳。
+
+最終24唯一方法PASS＝15新增＋9必要回歸；修前單例FAIL在集合內，6／14中間批與歷史25／35／20／38／51／46不累加。before首批conditional B99被既有成本擋住留史；before-final只修對照至B90，主五案before-final／after-final的輸入及oracle逐bytes相同。新decision／execution／comparison0.7，checkpoint0.6，fact-history0.3，舊READ不重算或隱式遷移。只原唯一Codex／原工作區，不開代理／worktree／分支。無bootstrap/hydrate、真實producer、六方案、UI／Android、樣本外、部署／交易／訊息。
+
+70／2／其中8／0、正式false、主壓力null及所有來源／圖形契約保持；通用來源認證、更正／自動解除、完整分叉、R2/F及原未支援帳務仍未完成。原件恢復只證資格，無第三輪成交或1/13行情；本版部分成交actual不是完整跨輪execution矩陣。Work尚未取得未提交0.7，不冒獨立驗收。Astra／第一工作區救援原件未取得未讀，不重建／推定890檔。下一輪先原唯一Codex唯讀審查；無新明確保存授權不commit/push。以下歷史原文完整保留。
+
+---
+
+# 2026-10-26 最新本地｜限制衝突0.6待唯讀，沒有commit/push
+
+最新入口M1_CAPITAL_RESEARCH_CONFLICTS_20261026_HANDOFF.md及capital_research/evidence_conflicts_20261026/REPORT.md／CONTRACT_0_6。使用者已明確授權定向工程、必要測試，先不commit/push；遠端／HEAD仍4339a146。主三輪與四變體在0.5實跑資格復活，0.6按root保留遭拒宣告新限制UNKNOWN；純改寫恢復與獨立新事實正例保留。原0.5的36份source／文件已封存，舊manifest對封存原件，不改舊證據。
+
+本輪25唯一方法PASS＝13新＋12必要回歸；修前單例FAIL與歷史35等不累加。主第三輪只驗資格，沒有1/13行情；明示較早時序另存四個時間控制actual，同時到期已有新證據。原帳／權利／reserve／latest／token保持，無第二帳。valid_from較晚獨立案例、完整更正／分叉及原未支援項未完成；正式false、主壓力null及70／2／8／0保持。Work未取得本地原件，不冒獨立驗收；Astra／救援原件未讀。下一輪先唯讀，無新授權不工程或commit/push。以下歷史原文保留。
+
+---
+
+# 2026-10-25 最新本地｜跨輪事實保全0.5，未提交
+
+新入口 `M1_CAPITAL_RESEARCH_FACT_LINEAGE_20261025_HANDOFF.md`、`股票系統M1_v0_18/capital_research/evidence_lineage_20261025/REPORT.md`／CONTRACT_0_5。遠端／本地HEAD仍4339a146d22dd849a6131a8c13f08f2e56145a2f，本輪明示無commit/push授權，優先於下方上一輪兩階段保存授權。只在本既有Codex／工作區做跨輪失效事實重現與最小接線，舊0.4／0.3／0.2原件不改。第一工作區由客服恢復，不等待／重建或推定890檔存亡。
+
+同ID刪撤銷、期限改null／延後、明示別名洗掉失效及中間review省略未來撤銷均已先存before實跑；新fact_lineage承接當時可知歷史及完整宣告，未知身分／更正不自動批准。決策／成交0.5、checkpoint0.4，原action_ledger不改；有效舊原件可review、真正新事實不永久封鎖，共用量柱不推同一事實。最終35唯一方法PASS＝25新＋10必要回歸，首31／33及恢復、無tape到期兩個單例FAIL留史不累加；修去重及事件先後後原斷言通過。全部資格false、主壓力null與70／2／8／0保持；R2/F及其他原未實作不擴張。無bootstrap／hydrate、真實producer、六方案、UI／Android、樣本外或子代理；Astra／救援原件未取得未讀。下一步Work唯讀，沒有新保存指示不commit/push。以下原文完整保留。
+
+---
+
+# 2026-10-25 最新｜0.3已固定保存，A/B修復0.4
+
+0.3原樣快照 `34b5dfa22b77cfe5c85a818e156389d5d0f9a444` 已正常push並GitHub讀回。本輪使用者明確授權兩階段分別保存，優先於下方歷史未提交／無push授權敘述。新入口 `M1_CAPITAL_RESEARCH_AB_20261025_HANDOFF.md`、`股票系統M1_v0_18/capital_research/repair_ab_20261025/REPORT.md`／CONTRACT_0_4。A跨股事實與順序依賴、B延後取消漏掉活單區間均先另存before實跑重現，再最小修復；決策／成交0.4、checkpoint0.3，原action_ledger不改。
+
+本輪僅一批20唯一方法PASS＝11新＋9必要回歸；第一階段測試0，不累加歷史38／51／46或合成序列。舊0.2／0.3原件、manifest、快照及log不改，舊source指紋對各固定版本。新資金事實只取本股；活單跨明示交易日但無完整帳／委託前綴拒絕，不推開盤／固定檢討天數；已到期、同日review及明示非交易日正例保留。全部資格false、主壓力null與70／2／8／0保持。R2/F及未支援帳務不擴張，無producer／UI／Android／樣本外；Astra及第一Cloud診斷未取得未讀。下一步Work唯讀新固定提交，工程只此唯一Codex／原工作區，無子代理、部署或下單。以下原文完整留史。
+
+---
+
+# 2026-10-25 最新本地接續｜0.3定向修復待Work唯讀
+
+讀`M1_CAPITAL_RESEARCH_REPAIR_20261025_HANDOFF.md`及`股票系統M1_v0_18/capital_research/repair_20261025/`的REPORT／CONTRACT_0_3／新before與artifacts／tests-final／preservation。最新已核遠端與本地基線仍6be4333d490bcccfe952c7606dffb802b76cdd5c；0.2與0.3均未提交，原差異及78檔快照保持。沒有commit/push授權，不能把GitHub舊0.1當新0.3或冒Work已讀原件。
+
+五個缺陷先實跑重現再最小修復；部分成交取消／到期在0.2已成立，本輪補完整權利／reserve證據。最終38唯一方法PASS＝33新＋5必要回歸，初37及舊51／46不累加。只一條假想市場的資格正反變體共10序列，不是市場樣本／策略勝負；未重跑九路徑、真實producer或UI。無來源限售解除等不足仍拒絕，全部正式資格false、70／2／8／0與Astra未讀保持。下一步Work只讀新契約及反例，真正工程回原唯一Codex；不bootstrap／測試／寫入／commit/push／子代理，不改正式策略圖形、不重問P0-3/P0-4、不部署下單付費訊息。以下原文完整留史。
+
+---
+
+# 2026-10-25 最新本地接續｜0.2修復待Work審查，沒有commit/push
+
+讀 `M1_CAPITAL_RESEARCH_REVIEW_20261025_HANDOFF.md`完整可貼指令及`股票系統M1_v0_18/capital_research/review_20261025/REPORT.md`、CONTRACT_0_2.md、OUT_OF_SAMPLE_PROTOCOL.md與before／artifacts／tests-final。最新已核遠端及本地基線仍`6be4333d490bcccfe952c7606dffb802b76cdd5c`；本輪使用者要求先可審查差異，不自動commit／push。新檔只在共享workspace，不能把GitHub舊0.1冒新0.2；不能讀本地須明列未讀，不要求使用者搬檔。
+
+四缺陷已先實跑重現後修復；逐觀察共同風險／條件方案新決策／共同tape／原帳checkpoint、趨勢延續知識狀態、9×5逐輪合成競爭完成，最終51唯一方法PASS（46新＋5必要回歸），舊46及中間批不累加。所有入帳沿原action_ledger；0.1保存證據／來源0.10及parents／null／UNKNOWN／警告不改，70／2／8／合格0不冒重跑。靜態支配不當政策支配，零交易控制超限不當合格建議，R2/F及未支援帳務仍明確未實作。
+
+Astra全文Codex未取得未讀，Work已讀狀態另存證詞；不HTTP試探／重試拒絕入口，不重問P0-3／P0-4、不造未知參照或無限空間，不重做UI／人工模式。下一步只Work唯讀，具體缺陷回原唯一Codex，沒有新保存指示前不commit/push。不部署下單付費訊息或子代理。以下完整留史。
+
+---
+
+# 2026-10-24 最新接續｜資金決策第一階段已交付，Work唯讀驗收
+
+請先讀 `M1_CAPITAL_RESEARCH_PHASE1_HANDOFF.md`全文及`股票系統M1_v0_18/capital_research/README.md`、INVENTORY.md、CONTRACT.md、REPORT.md；固定工程／最新已核SHA與GitHub讀回在`deliveries/m1-capital-research-phase1-20261024/`。本輪明示新授權允許隔離合成機制工程，保留全部舊圖形／來源與量峰成果，不把舊任務的暫停範圍套成本輪永久禁令。
+
+已完成純數值三層判斷、A～F共同契約、R1有限成本／風控全配置提案、既有action_ledger成交adapter、多候選預留、交割／未成交／部分成交、事件去重及不可覆寫READ。46個唯一新方法PASS；中間40／43、CLI與新解壓不累加。所有數值為合成，原來源0.10保存70拒算／2不足／8不支援／合格0僅核檔，未重跑真實producer／淨帳／市場六方案。R2/F完整求解與券商額度／期初應付／既有待成交完整重播未實作，介面或明確拒絕都有保存。
+
+Astra Library全文未取得未讀，沒有正式Library檔案工具，未HTTP試探／重試舊拒入口／要求手機搬檔。本輪不把指令當報告，不證明策略或圖形辨識通過；全部來源資格／授權false、主壓力null及原缺口保持。
+
+下一步只Work按新handoff看共同前綴未來隔離、完整資本／權利、分批與現金正反路徑，對照研究意圖找反例；若正式工具可讀Astra全文再列差異，否則保持待讀。不bootstrap／工程／commit/push／開子代理，明確工程問題回原既有唯一Codex。舊已結清band-volume、來源／舊圖／ZIP不重抓；不重問P0-3／P0-4、不重做人工Raw/Adjusted、不擅定比例／檢討日，不改正式規則／schema／main、不部署下單付費訊息。以下原文完整留史。
+
+---
+
+# 2026-10-24 Codex｜獨立密集量峰候選研究已實作：群／範圍／同票，不定正式單線
+
+本次是使用者新授權的有限研究工程，入口`M1_VOLUME_PEAK_RESEARCH_HANDOFF.md`、`股票系統M1_v0_18/volume_peak_research/README.md`及`deliveries/m1-volume-peak-research-20261024/README.md`。原完整band-volume讀取已結清，不重取分片／大檔／blob／原10圖／舊ZIP／來源或重驗舊交付。按AGENTS重新bootstrap成功0補缺、7差異保留，遠端3b6fe93及祖先保留；以下較早「只文件歸檔」是當時範圍，不能否定本次明示新需求。
+
+新增與正式產品分離的純數值研究core＋小原料IO builder；重用原BINDING、fingerprint、compare及volume_facts最大量／全部同量日。完整跨度群max<=min*r，列全部不能擴張集合、全部同票與重疊原柱，不貪婪取唯一；平台潛在等量保存原日並拒判，不取首日。k=1/2/3、r=1.10/1.15/1.20僅明示研究探針；正式representative_volume_line維持NOT_IMPLEMENTED/null，明示合法原柱anchor最多PROPOSAL_NOT_APPROVED，真實九組全null。
+
+真實1101 Raw B88155保存成員，k3/r1.15重現21確認研究峰、13最大群、全部5同票群各7筆；異常最大量98217134原柱完整保留，最後展示群對10/16量差+3239107，對原最大差-40779250，未判好壞／突破成敗。7/9在k3少一筆來源內右窗保留待確認，不冒最終完整峰集合；全部來源／基底／版本、時點／截止、原K、群端點及精確比較可追溯。B88正式區界／成員資格仍null，不是自動完整帶或主壓力認證。
+
+最終37項新測試PASS（33合成工程方法＋4真實保存來源方法），獨立子集合窮舉、平台／同票／重疊、極大量、零缺值、精確邊界、來源／基底與指紋衝突、知時及整個結果未來隔離均覆蓋；31／36中間批及新解壓重現不累加。只讀庫內12月小原件，meta未記HTTP保持null，原捕捉／本地重用／新研究選取分存；不是新來源GET／完整史artifact重驗。原graph_core、P0-3、band_volume.py、UI、指標、策略／庫／行情及舊產物未改，舊32／88、producer／每日帳／六方案未跑。無新UI，Android NOT_TESTED_NEW_BUILD、file://不重試。
+
+來源0.10及全部parent、不建來源0.11／catalog、不回寫null；Raw／UNKNOWN、歷史、main、警告、全部來源／個人權利缺口及各項false/null資格保持，不補零／行情／前價／估值，不公開私人原件、不重試受拒入口。只交Work看本輪有限研究輸出，不宣稱辨識品質或獲利已驗，不強迫正式單線／最適參數；完整可貼指令在新handoff。原唯一Codex工程寫入，不部署付費交易訊息或子代理。以下原文留史。
+
+---
+
+# 2026-10-24｜Work完整band-volume讀取已結清：本輪僅文件歸檔
+
+Work已實際取得固定6d35b7f0e8aefa8d28f1640d0619b28754c4024f全部16片，逐片bytes／SHA相符；按order原bytes零分隔串接4,102,710bytes／SHA256 `03961ba8e322a4a1d2cfde52eeb4840f39b4540b2ad61fec8e55c27328621384`，完整JSON成功解析並遍讀物件樹：10根鍵、1213日期快照、2021-10-18～2026-10-16。這是使用者轉交的Work實際結果，不是Codex本輪重驗或新產品／來源／核心驗收。**完整band-volume.json的未取得／未讀項已結清，不再重取。**
+
+歸檔與完整Work唯讀續接指令見[本輪紀錄](docs/work-reviews/20261024_band_volume_read_closure/README.md)及同目錄work-observation.json；固定文件原bytes讀回收據另存GITHUB_READBACK.md／JSON，避免自指。沿用已看10圖、五項用途及五JSON證據；不重抓分片／原大檔／blob／圖／ZIP／來源，不重跑bootstrap、舊驗證、32 Python／88 Chromium、producer或指標，不新增產品版本、來源0.11、catalog或策略門檻。
+
+全部parent、策略／引擎／庫、Raw null／UNKNOWN、P0-3狀態／事件／ID、角色與價格參照、歷史／舊成品／main及警告保持。各項false/null資格、Android NOT_TESTED_NEW_BUILD及來源／個人權利缺口保持；file://及全部受拒入口不重試，不跑每日淨帳／六方案或稱已驗獲利。只交Work唯讀承接；沒有新具體需求就交付目前成果，不再為相同讀取結果往返歸檔，不自行新增工程階段。以下原文留史；其中「待取得完整JSON／再看原10圖」不再是目前待辦。
+
+---
+
+# 2026-10-24 Codex｜明示研究段最大量已接入：不改P0-3、不估密集量峰
+
+最新接續M1_EXPLICIT_BAND_VOLUME_HANDOFF.md，成品及固定原bytes收據入口deliveries/m1-explicit-band-volume-20261024/README.md。原段量helper已存在，本輪只補來源／可知資格及主圖對照：沿graph_core保存candidate.volume（不重跑analyze／_volume）、pressure_chart.volume_facts、candle_region_chart.envelope、reaction_facts.compare／make_input，無平行最大量算法。新reaction_facts/band_volume.py純接線、build_volume外部IO、band_volume.js只呈現；原P0-3／指標／模式路由及五JSON、角色／狀態／事件／ID保持。
+
+1101 Raw／B88完整明示保存來源155根，2025-11-19～2026-07-14；最大量1/12的98,217,134股，10/16為57,437,884、BELOW差額-40,779,250。來源原K與最高價K不同；量日／候選確認及參照可知9/1／實際後來選取分存，確認前不露完整reference。同量全來源、缺日／缺量／基底或指紋衝突拒比，完整指保存成員不冒完整市場日曆。前筆量與最大量分開，未越不判壞、不取消過線。B88 formal_price_bounds=null仍研究候選；密集量峰代表線NOT_IMPLEMENTED及理由保留，不用平均／中位數／固定比例替代。
+
+本輪26新Python＋6相關回歸＝32，最終88項新Chromium三視窗／4下載檢查通過；初次mock函式名稱錯誤及截圖廣角調整留史，不累加中間88／新解壓同26或歷史65／94、上一輪6／94。桌面／手機直橫廣角局部與來源PNG、原精度JSON及可重現ZIP已交付；Android NOT_TESTED_NEW_BUILD、file://未重試。只交Work看新圖用途差異，完整指令見新handoff，不重問已答P0-3／P0-4。
+
+來源0.10及全部parent／庫／Raw null／UNKNOWN／策略引擎／歷史／舊成品／main及舊警告不改，不建來源0.11／catalog、不回寫null、不重抓來源或重試受拒入口。完整行動／個人權利／淨分配、Raw／Adjusted／歷史公布／主檔／SQLite等缺口保持，不跑每日淨帳／六方案／績效，全部false/null資格保持。最大量工程不等密集量峰、完整帶自動切段／主壓力、全市場、換股或飛輪完成。不部署付費交易訊息或子代理。以下原文留史。
+
+---
+
+# 2026-10-24 Codex｜P0-3用途檢視後顯示0.2：事件／手機繪圖區／日期分欄
+
+最新完整接續 `M1_P03_READABILITY_HANDOFF.md`；成品／直接PNG與固定回讀在 `deliveries/m1-p03-readability-20261024/README.md`。只增量呈現，不改structure_state／reaction_facts／graph_core、角色、狀態、事件、ID、K／MA／MACD及五份原JSON；原0.1工程702e9144與收據34d6f782／全部舊成品保留。新view_version0.2不是來源0.11。
+
+預設事件列直接看日期／收盤／相對三參照／狀態變化；10/12原突破與返回後狀態不足同時說明，未來高點及事件不洩漏。原突破26.95／返回高26.85／研究下緣20.25分開，B88正式price_bounds仍null、後來明示研究角色未升人工正式原箱。手機390有效plot225→309px，價格範圍不變；44px縮放移K／量間，三面板與游標同軸。來源日期逐欄分原價位K／末轉折／確認／原值及角色可知／後來選取；量較前筆以中性量觀察顯示，不稱好壞或新量資格，原核心支持／反面完整保留。既有事件抽屜及人工Raw／Adjusted模式已實作，沿用不重做。
+
+本輪只實跑6個新顯示Python及最終94項本次Chromium三視窗／9下載檢查；與歷史65／94不同批，不累加中間91／91／94或新解壓重驗。首次text helper缺parent的載入失敗與修正留史；舊原件／引擎／0.10全部parent／庫／Raw null／UNKNOWN／main及舊警告不改。不重抓來源、不建來源0.11、不跑producer／每日帳／六方案／獲利或Android，file://不重試。Android NOT_TESTED_NEW_BUILD，全部false/null資格及來源缺口保持。
+
+下一步只交Work看新圖用途差異，完整可貼指令見新handoff；不重問P0-3，不以顯示改善冒自動完整帶／全市場／換股／資金飛輪完成。原唯一Codex工程寫入，無平行工作／子代理，不部署付費交易訊息。以下歷史原文完整保留。
+
+---
+
+# 2026-10-24 Codex｜回到核心：P0-3結構狀態已接入既有人工模式主圖
+
+本輪依最新使用者指令將主線由來源研究轉回已確認核心工程。`manual_basis/`／`manual_basis_chart/`的人工Raw／Adjusted模式切換已有完成，不重做，也不再列未實作；較早「未證／尚未整合」段落保留為其當時狀態。新增 `股票系統M1_v0_18/structure_state/` 純數值P0-3附層及 `structure_state_chart/` 增量主圖，重用reaction_facts三態／路徑與原模式路由；原K／MA／MACD數值樹不改。最新完整接續 `M1_P03_STRUCTURE_STATE_HANDOFF.md`；直接廣角／局部PNG、HTML／JSON／ZIP與固定原bytes讀回見 `deliveries/m1-p03-structure-state-20261024/README.md`。
+
+有效明示參照下：收盤嚴格過回檔高點轉強；未過也未破原箱底整理；嚴格破箱底轉弱。相等獨立保留、不當越過或跌破；淺回檔線不作硬性判弱界，量／MACD另列不否定過線。缺來源／角色／時序／同基底版本或中斷／矛盾就證據不足；核心無UI／IO，來源／角色可知與後來選取分開，未來資料不回寫舊狀態事件，保留最初突破與先前轉弱，不推盤中先後。
+
+真實1101原Raw1213根及B88僅明示研究角色，正式price_bounds仍null，非人工核定原箱。研究上緣26.95與下緣20.25原K／來源末轉折／確認各分存；10/13高26.85作單次返回階段研究提案，不借原④5/13同價，不是通用選高公式。條件式10/13整理→14轉強→15整理→16轉強；10/12原突破保留，實例無轉弱／相等，工程反例另存非行情。核心規則工程完成不等自動完整帶／主要壓力、全市場、勝率、換股或資金飛輪完成。
+
+本輪39新＋22 reaction／4模式相關回歸＝65個Python唯一測試範圍，Chromium154最後94檢查PASS；早期32／37子集、71介面檢查及重驗不累加。實際三視窗、拖曳／移圖／觸控放大、同步、定位、下載與重播已驗，首截圖裁切及手機測試座標越出視野的失敗／修正保留。無網頁真實CLI輸出與成品結果完整bytes相同；新Android仍NOT_TESTED_NEW_BUILD，file://不重試。圖中文字型當前可讀不抹舊Fontconfig／xref。
+
+來源0.10及全部parent、策略參數／舊引擎、庫、Raw null／UNKNOWN、原件、歷史／舊成品及main保持；不建來源0.11或重複catalog，不回寫null。完整公司行動／權息／個人權利／淨分配及九起點等缺口不解除，也不作本輪工程無限前置。execution_qualified=false、imputed_close／valuation=null、historical_signal_eligible=false、primary_pressure_id=null、policy_authorized=false；不跑每日淨帳／六方案／績效，全部受拒入口及舊來源未重試重抓。
+
+下一步只Work看新真實廣角／局部與用途差異，完整可貼指令在M1_P03_STRUCTURE_STATE_HANDOFF；不重問P0-3或轉回無限來源歸檔。Work唯讀，不bootstrap／工程／測試／寫入；真正新核心歧義才配充分真圖詢問，明確缺陷交回原唯一Codex。無子代理、不改main、不部署付費交易訊息。以下歷史原文完整保留。
+
+---
+
+# 2026-10-23 Codex｜台泥114年報來源歸檔：1月／3月留差異，不建0.11
+
+原環境恢復connected/running（spec8；policy state仍unknown，不冒enforced）後，核遠端71e6ff26及指定祖先，按AGENTS bootstrap成功0補缺／7差異保留。新年報精確URL一次HTTP200／4932379bytes／SHA7406e30d1f02f083611f594459b952494816d87237bf2203734ce6afb487155d，與Work參照相符；無轉址重試。入口 `docs/source-research/20261023_tcc_annual_capture/README.md`、REPORT／CONTRACT／WORK_HANDOFF、observations／date-roles／visual-review；來源包及固定原bytes回讀見 `deliveries/m1-tcc-annual-source-20261023/README.md`。
+
+實際只視讀物理52／57／58／60（印刷102–103／112–113／114–115／118–119），非113頁全書。1/13董事會、2/23公司報告核准函、115.03股本表月份分角色；函原件未取得，不造生效日。舊第二季財報115年1月與年報115.03未調和，不覆舊值／選日期／拆事件，actual_effective_at及announced_at仍null。28,000,000股與28,000仟股只同家族佐證，不當股東現金事件；含特別股實收總數不當普通股或個人權利。3/24自載截至／PDF與HTTP元資料不證歷史可得。
+
+新pdfinfo／抽字／四頁轉圖return0，抽字完整stderr7992bytes／222行Invalid Font Weight，各圖2行同警告，完整保存，不冒Work原stderr已取得或舊Fontconfig／xref已消除。只來源／封包核對，無新產品／catalog／0.11，不回寫parent null；producer／資格／產品回歸／每日帳／六方案／Android未跑，歷史53及70／2／8／合格0不冒重測。全部原版本、策略引擎、庫、Raw null／UNKNOWN、歷史原件／圖／成品與main保持。
+
+下一步Work僅來源研究／GitHub唯讀，完整指令在新WORK_HANDOFF。缺口／九期初權利與所有資格false/null保持；舊Work包／meta未取得，不冒交付。已存年報／CTBC／舊PDF與全部受拒入口不重抓或繞過，嘉新逾時路徑不重試，不因unrestricted解禁。唯一既有Codex寫入，不部署付費交易訊息或子代理。以下原文完整保留。
+
+---
+
+# 2026-10-23 Codex｜CTBC單次新授權取得成功；僅來源交叉佐證，不建0.11
+
+已核遠端773b13b3及固定0.10 f423447，保留全部後續。使用者發佈環境並明示單次新授權後，先核runtime spec6／observed6、current=true、unrestricted/enforced，再對精確CTBC URL一次GET取得HTTP200、647329bytes／SHA ac8340b658018958e500f576bdc7605475cea0f48dac010e2c5251a1750aa310，與Work參照相符；沒有轉址／改設定或重試其他受拒入口。新入口 `docs/source-research/20261023_ctbc_capture/README.md`、WORK_HANDOFF、selection／engineering-assessment及raw原件meta；來源小包與固定逐檔讀回見 `deliveries/m1-ctbc-source-corroboration-20261023/README.md`。
+
+實讀六欄／四列與製表115/09/18；1101普通股0.8／1及2026／2025除息／發放日期均與既有events-v04兩事件相符，1101B乙特2.0262另存，不覆更精確來源。只有新交叉來源及最後過戶日盤點，工程實益核定為歸檔即可，不新增帳務事件／獨立樣本、catalog或0.11，不回寫parent null。最後過戶不作基準日，製表非公告／完整覆蓋，捕捉不倒填announced_at，發放非個人實收，起日前除息權利不自動歸起日後持有人；原表無2884列不證無事件。
+
+本輪是新Codex捕捉，不是Work ZIP／完整WORK_RESEARCH_HANDOFF／meta／selection已取得；Work封包仍未取得未讀未驗，未重試library。公開meta遮蔽Set-Cookie值，原HTML bytes不變，不把公開meta冒完整原header bytes。重新bootstrap0補缺／7差異保留；只來源SHA／選列／舊事件核對、來源小包離線重驗與GitHub讀回，無產品測試／回歸／producer／資格重算／每日帳／六方案／Android，舊53及70／2／8／合格0僅歷史不冒重跑。
+
+原0.10／全部parent、策略／引擎／庫／Raw null／UNKNOWN／歷史／成品與main不改。Fontconfig勘誤、原PDF／JSON／PNG／catalog／ZIP與舊xref不重抓重畫；IPO方案非完成、場次矛盾及完整行動減資／區間權息、直接復牌／可交易、個人實配畸零／既有2884影響、台泥最後調整／最細稅源、個人淨額及九期初權利缺口保持。execution_qualified=false、imputed_close／valuation=null、historical_signal_eligible=false、primary_pressure_id=null、policy_authorized=false不變。
+
+下一步Work僅來源／GitHub唯讀，完整可貼指令在新WORK_HANDOFF；不重抓已存CTBC、library或其他舊受拒入口，不因unrestricted解禁。仍只原唯一Codex工程寫入，未取得／未讀／未實作／未執行／未測／未讀回分列，不部署付費交易訊息或子代理。以下原文完整保留，前輪「草稿未套用」為歷史狀態，依本輪runtime6實測更新解讀。
+
+---
+
+# 2026-10-23 Codex｜CTBC最小網路草稿已存未套用，等待環境檢閱與發佈
+
+兩個精確URL各一次CONNECT403的完整歸檔已保存固定dd8eae9980c95629ddefe0e7123b14a7efdb8a65並逐檔GitHub原bytes讀回15文件一致，研究包／WORK_RESEARCH_HANDOFF及CTBC原件仍未取得未讀，不建0.11。後續透過正式環境工具讀取草稿，只在原十域外追加ecorp.ctbcbank.com；presets、repository/ref、安裝／啟動、變數／secrets等全不變。status=saved、requires_publish=true，後端再次讀回revision11確認；runtime仍spec4／observed4且CTBC未列允許，草稿未套用或發佈，來源GET沒有重試。
+
+詳 `docs/source-research/20261023_ctbc_acquisition_attempts/NETWORK_REVIEW.md`、network-draft-review.json，以及 `deliveries/m1-ctbc-acquisition-attempts-20261023/README.md`。下一步留在此原唯一Codex：使用者於環境設定檢閱／儲存並發佈後明示授權精確CTBC URL再一次GET，先核runtime變化，未授權／未套用不重試。完整可貼Codex文字在NETWORK_REVIEW，Work唯讀全文指令仍在WORK_HANDOFF；不要求下載上傳、不重試library或其他舊拒絕入口。此為必要設定草稿，不是部署、已通網或原件取得／產品實作。
+
+本輪bootstrap0補缺／7差異保留；無新產品測試／回歸／producer／資格重算／每日帳／六方案／Android，舊53及70／2／8／合格0僅歷史。全部舊來源／版本／策略／引擎／庫／Raw null／UNKNOWN／歷史／成品與main、Fontconfig勘誤與原PDF／JSON／PNG／catalog／ZIP及舊xref保持。execution_qualified=false、imputed_close／valuation=null、historical_signal_eligible=false、primary_pressure_id=null、policy_authorized=false及來源缺口不改。未取得／未讀／未實作／未執行／未測／未讀回分列，不部署付費交易訊息或子代理。以下本輪早期歸檔與歷史原文完整保留。
+
+---
+
+# 2026-10-23 Codex｜研究包與CTBC公開原URL各一次CONNECT403，原件仍未取得
+
+已核遠端af822910及固定0.10 f423447，全部後續保留。新入口 `docs/source-research/20261023_ctbc_acquisition_attempts/README.md`、WORK_HANDOFF、availability及兩份attempts meta；文件固定逐檔讀回見 `deliveries/m1-ctbc-acquisition-attempts-20261023/README.md`。依使用者正式library URL先一次GET，再對新CTBC公開原URL一次GET，兩者皆代理CONNECT階段403；尚無來源HTTP／headers或任何原始bytes，已停、不重試／改主機路徑。空buffer指紋不是原件，不發布空.response冒充來源；未要求手機下載上傳。
+
+研究包28364bytes／SHA及CTBC647329bytes／SHA僅使用者比對參照；六成員／MANIFEST／WORK_RESEARCH_HANDOFF全文／Work原件meta與Codex新CTBC原件均未取得未讀未驗。製表日、表頭及四筆1101／1101B列尚未由原件核實，未產生已核facts。工程實益待原件，不建0.11、不改catalog／parent null或新產品行為。
+
+歸檔前本環境重新bootstrap成功0補缺／7差異保留，只保存單次錯誤／文件／SHA保留與GitHub讀回，沒有產品新測／回歸／producer／資格重算／每日帳／六方案或Android。歷史53及70／2／8／合格0未冒本輪重跑。Fontconfig勘誤、原PDF／JSON／PNG／catalog／ZIP及舊xref留史不改不重抓；原引擎策略／庫／Raw null／UNKNOWN／歷史成品與main保持。
+
+CTBC若日後取得只公司層級交叉佐證：年度、1101／1101B、對象、日期角色及精度分開，製表非公告／完整覆蓋，捕捉不倒填announced_at，2.0262不覆較精確乙特來源；發放非個人實收，起日前除息權利不自動歸起日後持有人，沒2884列不證無事件，不重計事件／市場樣本。完整來源缺口與execution_qualified=false、imputed_close／valuation=null、historical_signal_eligible=false、primary_pressure_id=null、policy_authorized=false保持。
+
+完整Work唯讀續接指令見新WORK_HANDOFF；未取得／未讀／未實作／未執行／未測／未讀回分列，原唯一Codex工程寫入、不開平行工作／子代理。所有舊拒絕入口及本輪chatgpt.com library／ecorp.ctbcbank.com精確URL均不重試／繞過；未改網路設定、不部署付費交易訊息。以下歷史原文完整保留。
+
+---
+
+# 2026-10-23 Codex｜CTBC研究包未取得；0.10 Fontconfig摘要勘誤
+
+已唯讀核遠端907bc298及固定0.10工程f423447，保留全部後續。新入口 `docs/source-research/20261023_ctbc_intake/README.md`、WORK_HANDOFF及availability／warning-erratum-evidence；文件固定逐檔讀回見 `deliveries/m1-ctbc-intake-20261023/README.md`。本輪未收到新研究包、WORK_RESEARCH_HANDOFF.md或CTBC原件／meta：附件目錄不存在，既有下載只有舊v0.17，遠端路徑及70舊ZIP成員名稱未見；沒有原件URL可取得，未發CTBC請求、未冒網路拒絕。已請求研究包GitHub位置，不要求手機搬檔，工程實益待實際原件核定，不建0.11。
+
+0.10原摘要「全部stderr空／無Fontconfig」有誤：固定f423447的pdf-extraction-verification.json原bytes已GitHub讀回，五頁轉圖return0，四議事錄頁stderr空，但表決頁有Fontconfig快取不可寫診斷；抽字stderr空。新勘誤明示警告，原0.10 PDF／JSON／PNG／catalog／REPORT／ZIP與SHA全留史不改，沒有重抽／重畫／改系統設定，不抹舊xref。這是文件修正，非新產品行為或CTBC來源接入。
+
+文件前本環境重新bootstrap實際成功0補缺／7差異保留；本輪沒有產品新測／回歸／producer／每日帳／六方案或Android，原53及70／2／8／合格0僅歷史，不冒本輪重跑。CTBC表若取得只公司層級交叉佐證，年度／1101與1101B／日期角色／單位精度分開，不重計事件、不證個人到款或完整覆蓋。全部舊版本、策略參數／引擎／庫／Raw null／UNKNOWN歷史、原件／舊頁成品與main保持；execution_qualified=false、imputed_close／valuation=null、historical_signal_eligible=false、primary_pressure_id=null、policy_authorized=false及來源缺口保持。
+
+下一步Work唯讀交回可讀研究包位置及完整原件／指令，再由此原唯一Codex判斷工程實益；完整可貼指令見新WORK_HANDOFF。未取得／未讀／未實作／未執行／未測／未讀回分列，不重試繞過受拒入口，不部署、付費、交易、訊息或子代理。以下歷史原文完整保留，0.10摘要警告處併讀本勘誤。
+
+---
+
+# 2026-10-23 Codex｜子公司IPO方案來源0.10：場次矛盾與個人權利分離
+
+唯一既有Codex接續5a5ccab，核包含固定0.9工程，重新bootstrap成功0補缺／7差異保留後才工程。重用庫內台泥索引原href，兩新精確官方PDF各一次HTTP200，大小／SHA與Work比對值一致，不重抓舊公開說明書或Follow-up、不重試受拒入口。Work附件／meta仍未取得未讀，使用者提供捕捉時點僅另存陳述，本Codex新取得／讀回／觀察分開，work_github_readback_at及announced_at仍null。
+
+新入口 `股票系統M1_v0_18/rotation_research/subsidiary_proposal_20261023/README.md`、CONTRACT／REPORT／WORK_HANDOFF；來源包、SHA／manifest、新解壓及固定逐檔讀回見 `deliveries/m1-subsidiary-proposal-20261023/README.md`。新純事實層／離線producer精確嵌完整parent0.9，全部舊版／parent null、策略參數／引擎／庫／Raw／UNKNOWN歷史、原件／舊頁成品及main保持。
+
+議事錄四頁掃描，native只有4個formfeed，五頁PNG實際視讀；人工盤點與原生表決解析分開，詳細掃描條款parser未實作，不冒OCR／native。索引／路徑第一次、議事錄p1第二次、表決未載場次矛盾保留，canonical_meeting_ordinal=null，不拆兩事件。僅1101公司報告子公司Cimpor International Holdings海外IPO方案通過／授權，非IPO完成、1101股東減資／配股或零影響。94.74%只票比例，原合計99.98不正規化，兩來源一案例、帳務事件／市場樣本新增0。會議日10/13、Last-Modified10/19及PDF建立／捕捉都不證公告或10/16前可得，actual_effective_at=null。
+
+本輪24新＋實跑0.9相關29＝53通過，新解壓同53不累加106，舊60不冒重跑。producer實核122價量／16日曆，按真輸入重算70拒算／2不足／8換股影響未支援／合格總淨報酬0，daily／journal空、numeric replay／六方案0，missing-quotes精確等parent、execution_qualified=false及估值null保持。詳細失敗／讀取輔助錯誤與修正見execution-diagnostic，產品首probe／首測通過，全部抽字轉圖return0、此輪stderr空，舊xref警告不抹除。
+
+完整行動減資／7/25後權息、直接復牌／可交易、個人實配畸零與既有2884影響、台泥最後調整／細稅源、個人淨款與九期初權利仍缺；不補零或假定無事件。historical_signal_eligible=false、primary_pressure_id=null、policy_authorized=false及Raw／五年Adjusted／歷史公布／主檔／SQLite未知不變。無新UI／Android，NOT_TESTED_NEW_BUILD保持。下一步Work只來源研究／GitHub唯讀，不bootstrap／工程／產品測試／寫入或開第二Codex；完整可貼指令見新WORK_HANDOFF。受拒入口／三舊403不重試繞過、不部署付費交易訊息或子代理。以下歷史原文完整保留。
+
+---
+
+# 2026-10-23 Codex｜公司分項來源0.9：股東160200／員工18000仟股
+
+唯一既有Codex接續4f9b106，核包含固定0.8工程，重新bootstrap成功（0補缺／7差異保留）後才工程。官方新增原件／官方及原PDF GitHub請求均0，只重用既存公開說明書，實際重抽／視讀391印刷11、456印刷76；新字節與舊全文對應頁同，xref警告保留，不改PDF、不冒765頁全書核閱。舊Work附件／meta仍未取得／未讀；使用者提供Work本機11:37:58.421958Z僅本機重用陳述，不補官方／GitHub時點或舊Work未知時間。
+
+新入口 `股票系統M1_v0_18/rotation_research/capital_components_20261023/README.md`、CONTRACT／REPORT／WORK_HANDOFF。離線包、SHA／manifest、解壓與固定逐檔GitHub讀回見 `deliveries/m1-capital-components-20261023/README.md`。獨立capital_components純事實／producer精確嵌完整parent0.8，全部舊版本、策略參數／引擎、庫、Raw／UNKNOWN歷史、原件、舊頁成品與main不變。
+
+391頁限113/12/31後、114/12/31前：B9股東160200仟股，N1員工18000仟股；N1股本180000／公積342900／總權益522900為仟元，不借上半部313800仟股。456頁113年度／2025/3/7／29.05公司計算參照，114年度／2026/3/13／33.05另版。160200＋18000＝178200仟股只連parent461頁同家族對帳，新增交易事件／獨立市場樣本0；不由酬勞除面額反推股數、不補Raw或估值、不由年末或總額推個人比率。
+
+本輪29新＋實跑0.8相關31＝60通過，與前輪31新＋29回歸的60範圍不同，解壓同60不累加。首次真原文probe因刪空白黏接前列餘額與年度而失敗，已保留列界修正並保存診斷／回歸，數值未改。producer實核122價量／16日曆並按實際輸入重算70拒算／2不足／8換股影響未支援／合格總淨報酬0，daily／journal空、numeric replay／六方案0，缺價診斷精確等parent。
+
+公司分項股數已於新0.9可知，parent舊null仍留史；個人未圓整／實配／畸零／2025可賣／淨款／期初權利與既有2884換股影響未知。完整行動／7/25後權息、直接復牌、台泥最後調整／最細稅源等缺口保持；execution_qualified=false、估值null、historical_signal_eligible=false、primary_pressure_id=null、policy_authorized=false及Raw／五年Adjusted／歷史公布／主檔／SQLite未知不變。無UI／Android新測，不重試受拒入口／三舊403，不部署付費交易訊息或子代理。下一步Work唯讀補來源，不bootstrap／工程／測試／commit／push或另開Codex；完整可貼指令見新WORK_HANDOFF。以下歷史原文完整保留。
+
+---
+
+# 2026-10-23 Codex｜來源研究0.8：契約條件、持有人與增資分項
+
+原既有唯一Codex接續6a993fd並核包含固定0.7工程，重新bootstrap成功（0補缺／7差異保留）後才工程。重用公開說明書原件，固定GitHub同bytes讀回；只視讀162／163／175／176／461，765頁未全書核閱，xref警告保留。新2026Follow-up精確URL一次HTTP200／56,705bytes／指定SHA一致，一頁已核。Twstockai-v07-Work-source-handoff附件／meta未見，完整報告未讀，Work讀回時間未知；依使用者完整文字及實際原件接入，不要求手機搬檔，不倒填announced_at。
+
+新入口 `股票系統M1_v0_18/rotation_research/source_contracts_20261023/README.md`、CONTRACT／REPORT／WORK_HANDOFF。離線包、SHA、manifest／解壓與固定GitHub回讀見 `deliveries/m1-source-contracts-20261023/README.md`。獨立source_contracts純事實／producer精確嵌完整parent0.7，原0.7／0.6／0.5／正式0.4／0.3、策略引擎參數、庫、Raw／歷史、原件、舊頁成品及main不變。
+
+甲方2884／乙方2867第9條只是依法異議條件，個人資格行權／款股／後續修約仍null；0.2486與後續0.2596分版本，原2867畸零不套2025股利或既有2884，預計非完成、同權非零影響。2025股東紅利1,602,000仟元、員工522,900仟元、總178,200仟股分持有人／單位，總數不全配股東、不用面額反推員工股數，登記非上市。新一頁只決議／核准，不覆0.7新聞日期矛盾，canonical_effective_at=null；稅費契約非個人免稅／零費／淨額。7筆角色觀察不當7獨立行動。
+
+本輪31新＋實跑0.7相關29＝60項通過，新解壓同60不累加，舊59不冒本輪重跑。producer實核122價量原件／16日曆並按實際輸入重算70拒算／2不足／8換股影響未支援／真正總淨報酬0，daily／journal空、numeric replay／六方案0。missing-quotes精確等parent，舊UNKNOWN／Raw null與不可成交／估值null保持；完整行動覆蓋、直接可賣／個人實配畸零／既有股東影響、台泥調整細項／個人淨收及九起日期初權利仍缺。
+
+historical_signal_eligible=false、primary_pressure_id=null、policy_authorized=false及Raw／五年Adjusted／歷史公布／主檔／SQLite未知保持。無UI／瀏覽器Android新驗收；轉圖return0與字型快取警告／重試均留存，不改原件或系統設定。所有既拒入口與三舊403不重試／繞過。不部署、付費、交易、訊息或子代理。下一步Work僅來源研究／GitHub唯讀，不工程／測試／commit／push或開另一Codex；完整可貼指令見新WORK_HANDOFF。以下歷史原文完整保留。
+
+---
+
+# 2026-10-23 Codex｜三新官方原件取得，獨立來源0.7完成實測
+
+使用者發布環境並明示再試後，runtime spec4／observed4已核，三個新精確URL各一次全HTTP200，無需人工搬檔。前輪CONNECT403與全部舊受拒入口保留，未改主機／路徑／代理或TLS。重新bootstrap成功（0補缺／7差異保留）後，新增獨立source_followup純事實附層與離線producer，精確嵌入parent0.6，原0.6／0.5／正式action_resolution0.4／0.3及全部策略／引擎／庫／歷史／舊成品／main保持。
+
+入口 `股票系統M1_v0_18/rotation_research/source_followup_20261023/README.md`、CONTRACT／REPORT／WORK_HANDOFF。下載、SHA、全新解壓與固定逐檔GitHub讀回見 `deliveries/m1-source-followup-20261023/README.md`。兩PDF與Work SHA相同，玉山HTML新版本SHA不同已另存實際bytes，不冒Work同檔。期交所只佐證2884復牌，非TWSE普通股直接公告；DN／股票與文件／復牌日期分開，不推停牌終點。玉山公司完成／頁面9/2對正文今(1)日矛盾／董事會160億元批准與保戶對象分存，個人權利未知。台泥2026-01註銷28,000仟股保留月份，不變股東比例減資；半年度餘額不是三事件。財報5,994,545仟元不覆議事錄5,994,545,394元；第7頁抽字空但實有掃描表格。只視讀六頁，非全財報核閱。
+
+本輪29新＋實際重跑0.6相關30＝59項通過；全新解壓同59不累加，舊61／91不冒本輪全重跑。producer重核122原價量檔與16日曆報告，70窗仍拒算／2不足／8換股影響未支援／真正總淨報酬0；daily／journal空、numeric replay／六方案0。舊UNKNOWN與Raw null、execution_qualified=false、imputed_close／valuation null保持，完整公司行動／7/25後權息／直接實配可賣畸零換股影響／最後調整細項／個人淨收及九起日期初權利仍缺。
+
+historical_signal_eligible=false、primary_pressure_id=null、policy_authorized=false及Raw／五年Adjusted／歷史公布／主檔／SQLite未知保持，無UI／Android新驗收。只有此既有唯一Codex寫入，不開平行工作或子代理。下一步Work只來源研究／GitHub唯讀，不bootstrap／工程／產品測試／commit／push；完整可貼指令見新WORK_HANDOFF。新來源可讀不等舊受拒入口解禁，不重試／繞過。不部署、付費、交易或訊息。以下歷史原文完整保留。
+
+---
+
+# 2026-10-23 Codex｜三新來源皆CONNECT403，0.7未建立
+
+本既有唯一Codex已核遠端2d2dbf1及祖先並保留全部後續；最新完整0.6／575舊成員與全部parent、資料、策略、庫、歷史及成品不改。重新bootstrap成功（0補缺／7差異保留）。新受阻紀錄 `股票系統M1_v0_18/rotation_research/source_followup_attempt_20261023/README.md`、WORK_HANDOFF與 `deliveries/m1-source-followup-attempt-20261023/` 固定逐檔回讀；這不是0.7或新來源成品。
+
+精確三URL各GET一次：期交所玉山DN1106復牌公文、玉山D0565FF2併購完成新聞、台泥115年第2季合併財報。全部在代理CONNECT階段403，沒有原站回應、PDF／HTML原始bytes、SHA或語義驗收，captured_at／readback_at為null。Work摘要及SHA只是線索，不冒已取得；沒有0.7／新catalog／parser／產品測試／資格重算／每日帳／六方案。前輪91項與70拒算／2不足／8換股未支援／真正總淨報酬0都未在本輪重跑。
+
+三新網域www.taifex.com.tw、www.esunfhc.com、media.taiwancement.com已透過支援工具追加草稿，保留原七custom domains與presets；saved但未套用／未發布。runtime仍顯原四custom hosts，network state unknown，不認證設定已生效。未重試、未跟隨重新導向、未改主機路徑或代理／TLS。環境設定檢閱／儲存／發布與下一輪新明確重試授權是必要前提，本輪不自行發布、不要求使用者手機搬檔。舊禁止端點及三舊網域403限制保持，不因草稿而放寬。
+
+PENDING_SOURCE_BOUNDARIES只保存使用者已明確的期交所佐證／普通股公告區別、公司完成／個人權利與日期矛盾、仟元／仟股／月份／掃描抽字界線，未實作未驗收。原0.6及全部parent、舊UNKNOWN、Raw null、缺價拒算、execution_qualified=false、imputed_close／valuation null、historical_signal_eligible=false、primary_pressure_id=null、policy_authorized=false保持。無新UI／Android，不改main、不部署付費交易訊息或子代理。Work仍只來源／GitHub唯讀，不工程／產品測試／commit／push，不開第二個Codex；完整可貼續接見新WORK_HANDOFF。以下歷史原文完整保留。
+
+---
+
+# 2026-10-23 Codex｜離線原件0.6已接入，舊UNKNOWN與淨帳拒算保留
+
+已安全取得遠端f65a894及8aecb50橋接附件，保留先前未收到checkpoint及全部後續。唯一既有Codex工作執行，沒有平行寫入／子代理。原ZIP941229bytes、SHA ecc413ca28fce87085666b87b3c3a6d1bf784ef553b32d2198b8bb72bebeedce、41成員／40manifest皆實核，固定GitHub raw全bytes回讀相同。已全文讀包內CODEX_HANDOFF，重新bootstrap成功（0補缺／7差異保留）後才實作；不再要求手機附件。原前身91項是Work證詞，Codex只獨立驗本橋接40項，不混為已驗前身大包。
+
+新入口 `股票系統M1_v0_18/rotation_research/offline_source_bridge_20261023/README.md`、CONTRACT／REPORT／WORK_HANDOFF；成品／SHA／固定逐檔回讀見 `deliveries/m1-offline-source-layer-20261023/README.md`。獨立offline_source_bridge及source producer精確嵌入parent0.5，原0.5／正式action_resolution 0.4／parent0.3與全部原策略引擎庫歷史成品保持。兩停牌PDF及5法律來源鏈原件離線核驗，原captured_at與新ingested_at分開，announced_at仍null。
+
+新診斷已接1101自2025/8/13、2884自11/5起停牌，僅限明示起日，不推終日／整段或其他股票；保留精確parent原UNKNOWN，Raw null、缺價拒算、execution_qualified=false與無估值不改。1101原8/14復牌另存，2884復牌原件仍缺。真財政部API及官方page／script／query／搜尋鏈已驗，slash日期用新獨立parser，舊合成parser不改。一般函釋不是台泥資金最細來源、個人稅籍／免稅／零稅費或淨入帳。
+
+本輪30新＋重跑61回歸＝91項通過；首輪1個反例失敗揭露標題／內文起日矛盾未拒，已修正並保留紀錄。兩PDF本輪抽字／視讀、重抽bytes同封存；新解壓重驗以delivery為準。新70窗資格仍70拒算／2不足／8換股影響未支援／真正總淨報酬0，daily／journal空，numeric replay及六方案0。缺完整行動減資、7/25後權息、2884直接實配／可賣／畸零／換股影響、台泥最後調整／細項、個人淨額及九起日期初權利，不能靠完整旗標蓋掉。
+
+受拒端點及三網域403未重試，離線來源不代表網域限制解除，草稿未套用。Raw／五年Adjusted／歷史公布／主檔／SQLite未知、historical_signal_eligible=false、primary_pressure_id=null、policy_authorized=false不變，無新UI／Android。下一步Work唯讀補來源，不bootstrap／工程／產品測試／commit／push或開第二個Codex；完整可貼指令見新WORK_HANDOFF，工程仍回此唯一既有Codex。不改main，不部署付費交易訊息或子代理。以下歷史原文完整保留。
+
+---
+
+# 2026-10-23 Codex｜橋接原件尚未收到，工程未啟動
+
+已實核遠端7ae4e80及正式dae1f6e祖先，全部後續保留；本既有唯一Codex工作接續，沒有平行寫入／子代理。最新接收紀錄 `股票系統M1_v0_18/rotation_research/offline_bridge_intake_20261023/README.md`、WORK_HANDOFF與 `deliveries/m1-offline-bridge-intake-20261023/` 固定回讀。重新bootstrap成功（0補缺／7差異保留），原來源0.5／正式0.4／parent0.3及舊成品不改。
+
+指定TWstockai_Offline_Source_Bridge_20261023.zip本體不可見，附件目錄不存在；可見91個ZIP中無指定檔名，檔案庫僅舊v0.17包，搜尋的Permission denied另存。未取得封包bytes、未核其SHA／manifest、未讀其中CODEX_HANDOFF或PDF／真API；使用者摘要及預期SHA不是原件。沒有新增來源版本、產品測試、資格重算、每日帳或六方案。舊61項／70拒算／2不足／8換股未支援／合格0仍是歷史，不算本輪重跑。
+
+下一步需將橋接ZIP本體實際附至同一既有Codex對話，預期SHA ecc413ca28fce87085666b87b3c3a6d1bf784ef553b32d2198b8bb72bebeedce；收到後先核bytes及包內完整交接，再依最新AGENTS重新bootstrap才建立精確parent0.5的新來源附層。所有禁止入口與三網域403未重試，網路草稿未套用，Raw null／舊UNKNOWN與缺價拒算維持。不推停牌終日、不補價、不以一般法規當個人淨額。完整Work唯讀續接見新WORK_HANDOFF；Work不得工程／測試／commit／push或開第二個Codex。策略／引擎／庫／歷史／舊頁ZIP／main保持，無新UI／Android，不部署付費交易訊息或子代理。以下歷史原文完整保留。
+
+---
+
+# 2026-10-23 Codex｜獨立來源診斷0.5，正式0.4保持
+
+本輪唯一Codex寫入；接續0d6e86a並核包含正式dae1f6e，無平行工作／子代理。完整checkout重新bootstrap成功（0補缺／7差異保留）。新入口 `股票系統M1_v0_18/rotation_research/source_diagnostics_20261023/README.md`、CONTRACT／REPORT／WORK_HANDOFF；成品與固定回讀 `deliveries/m1-source-diagnostics-20261023/README.md`。正式action_resolution／action_resolution_sources及parent0.3、所有歷史保持，不採平行草稿。
+
+附件研究ZIP本環境不可見；按使用者明示6個獨立URL擷取一次，取得台泥復牌及玉山兩PDF，另3網域代理403，來源／錯誤／xref警告／視讀範圍皆保存。網路最小追加草稿saved但未套用／未發布，沒有重試或繞過。公開說明書SHA精確同使用者指定，只核第1／55頁，非765頁全驗。台泥8/14復牌不單獨證8/13停牌起日，兩缺價日新舊仍UNKNOWN、Raw null、市場開市；不補價／估值。員工6/30登記與7/7基準、原2867預計換股發行、既有2884權利及公司7/27每股1.40報告發放分開，非個人淨收。一般法律API僅合成契約測試，真原件未取得。
+
+30新診斷＋31正式回歸＝61項本輪實測通過；新70窗資格仍70拒算／2不足／8換股影響未支援／真正總淨報酬0。沒有每日帳、六方案或績效。首次字形／欄位交錯解析失敗及一次錯cwd測試匯入失敗皆已保存修正，原件與數字不改。封包新解壓驗證及逐檔GitHub回讀以delivery為準。原策略／引擎／庫／歷史／舊頁ZIP／main完整保留；完整行動減資、7/25後權息、實配／可賣／畸零／既有股東換股影響、台泥最後調整與稅務、淨收及九起日期初權利仍缺，來源完整旗標不能蓋缺口。
+
+無新UI／Android；Raw／五年Adjusted／歷史公布／主檔／SQLite未知、historical_signal_eligible=false、primary_pressure_id=null、policy_authorized=false不變。下一步Work只做來源研究與GitHub唯讀，不bootstrap／工程／測試／commit／push，不開另一Codex寫入工作；完整可貼指令見新WORK_HANDOFF。本既有唯一Codex負責後續工程。禁止端點不重試／繞過，不重問已答規則／比例，不部署付費交易訊息或子代理。以下歷史原文完整保留。
+
+---
+
+# 2026-10-23 Codex｜採用遠端正式0.4並完成本環境驗收
+
+已保留作業期間新增的dae1f6e580f466c4f44cb271a350f4b420d5b5eb正式工程及e3a76eb2eac8dfd50bb5f6b7794fb77d84224b30收據，沒有用本地平行草稿覆蓋。正式程式維持action_resolution／action_resolution_sources；新補充入口 `股票系統M1_v0_18/rotation_research/resolution_validation_20261023/README.md`、REPORT／WORK_HANDOFF，下載與逐檔回讀入口 `deliveries/m1-resolution-validation-20261023/README.md`。原0.3、正式0.4與所有歷史保留。
+
+本環境重新bootstrap成功（0補缺／7差異保留）。正式29項＋新增2項＝31項本環境實測通過，並在新封包解壓重驗；原511成員及六層manifest全保留。新解壓正式producer實跑70窗仍拒算、2不足、8換股影響未支援，真正總淨報酬0，numeric replay／六方案0。台泥批准來源與每人總額圓整已接，但假想毛額不是淨額／到款／期初權利，不做net_per_share或股東減資推定。
+
+額外PDF抽字25.03與原24.02全文byte assertion失敗已保存，所用1／3／4／6／7頁及正式解析欄位精確同；不說全文byte equal。一次保存輔助命令誤用工作目錄也已留診斷並改絕對根重核，來源／金融程式不改。本地平行草稿封存未發布，其26測試不是正式交付計數。正式28檔已獨立固定GitHub回讀，本輪新增檔再另固定回讀。
+
+所有原策略／引擎／庫／資料／catalog／頁／ZIP與main保持；完整行動／減資、7/25後權息、2884可賣日／實配／零股與換股影響、台泥最後調整／直接有效稅務來源、個人淨分配／期初權利仍缺。已記錄安全拒絕未重試繞過，缺價原因及Raw／五年Adjusted／歷史公布／主檔／SQLite未知保持，無新UI／Android。下一步Work補來源，工程Codex；完整可貼指令見新WORK_HANDOFF。不重問已答規則／比例、不部署付費交易訊息或子代理。以下原文完整保留。
+
+---
+
+# 2026-10-23 Codex｜獨立來源0.4：台泥通過決議與每人總額圓整
+
+接續遠端d11cd18，保留9e41ea3後全部來源及收據。新入口 `股票系統M1_v0_18/rotation_research/action_resolution_20261023/README.md`、CONTRACT／REPORT／WORK_HANDOFF；封包與固定逐檔回讀見 `deliveries/m1-action-resolution-20261023/`。新worktree重新bootstrap成功，補545／保留7差異；舊工作目錄不改。
+
+新增獨立action_resolution及離線producer／0.4 catalog，嵌入精確parent0.3；台泥通過決議、批准來源標籤、每人現金總額至元捨去已接，原提案不覆。兩庫藏股分次報告只盤點，不變股東減資帳；八來源版本非八獨立行動。假想權利股數毛額預覽非淨額／到款／期初權利，稅費／實收／最終比率日期保持未知。
+
+29新定向測試通過；新資格實跑70窗仍拒算、2不足、8換股影響未支援，總淨報酬合格0，numeric replay及六方案0。8份直接補核原件與122價量原件離線再核，無新官方網路請求。來源／精度／權利不足不補零；已記錄阻擋未重試繞過。完整覆蓋、2884可賣日／實配／零股、淨分配／期初權利仍缺。封包重建／解壓驗收依delivery實際紀錄，未測不升完成。
+
+原scope／producer／action_ledger／core／策略參數／庫／資料／歷史／舊catalog頁ZIP及main保持。無新UI／瀏覽器Android，Android NOT_TESTED_NEW_BUILD；舊24／17／44／15及18／9982／Chrome36不冒新重跑。下一步Work補獨立官方來源，工程Codex重新bootstrap；完整可貼指令見新WORK_HANDOFF。最高飛輪目標、Raw／五年Adjusted／歷史公布／主檔／SQLite未知及policy_authorized=false保持。以下原文完整保留。
+
+---
+
+# 2026-10-23 Work｜台泥資本公積現金已核股東會決議；淨到款仍未知
+
+接續9e41ea3e，保留來源0.3及全部後續。新入口 `股票系統M1_v0_18/rotation_research/final_distribution_review_20261023/README.md`、REPORT／facts／WORK_HANDOFF；固定回讀見 `deliveries/m1-final-distribution-review-20261023/GITHUB_READBACK.md`。新checkout bootstrap實際補545／保留7差異；前次兩收據從983b3559及9e41ea3e各讀回一致。
+
+新兩官方原件：台泥索引及57頁2026常會議事錄，1／4／6／7頁實看。5/22股東會通過0.8元資本公積現金，來源標籤、總額及每人總額至元捨去、授權調整／另訂日期已核；不再僅提案，但不覆0.3歷史、不升個人淨額／稅費細項／實際到款。第七次庫藏股28,000張已銷除只補盤點，生效日／其他股東影響未知，非股東按比率減資。新公報PDF web403保存未換路徑重試，原禁來源均未請求。
+
+本輪無新catalog／引擎／資格／每日帳或六方案；讀回0.3原72窗仍70拒算／2不足／8換股影響未支援，非新實跑。完整覆蓋、2884精度／可賣日／零股、稅費／淨分配及期初權利仍缺。原程式策略庫資料舊成品及main保持，無UI／Android。下一步Codex重新bootstrap，依新WORK_HANDOFF獨立接新來源版本與每人圓整；來源不全維持未知／拒算，未測不得完成。以下原文完整保留。
+
+---
+
+# 2026-10-23 Codex｜來源0.3適用對象／版本核對已實作
+
+接續983b3559，保留354a9c01以來全部後續；新入口 `股票系統M1_v0_18/rotation_research/action_scope_20261023/README.md`、REPORT／CONTRACT／WORK_HANDOFF，ZIP／固定GitHub逐檔核對見 `deliveries/m1-action-scope-20261023/README.md`。原事件帳、來源0.2、Work核對小包及P1-7保持；下方是歷史。
+
+重新bootstrap成功（0補缺／7差異保留）。新純數值action_scope與離線source producer接入六官方原件，提升2884直接公開比例精度並分開issuer／受領原股／事件／版本／instrument／日期角色。三商壽0.2486／0.2596與Q&A只屬原2867股東，不配給既有2884；9/1證書上市及零股／匯費不補2025股利。台泥0.8資本公積仍提案，不補最終來源／淨稅費。新觀察時點與文件自載日期分開，announced_at仍null。
+
+24新定向測試通過，122價量原件與舊輸入再核；新資格實跑70研究窗＋1probe，70拒算／2不足，其中8窗增加換股影響不支援原因。原每日numeric replay與六方案重跑0，真正總淨報酬合格0；5來源版本屬3文件家族，非5獨立事件。input自行改完整旗標亦不能蓋過catalog來源不足；不省略已知公司行動或假定既有2884無影響。
+
+完整行動／減資及7/25後權息、未圓整實配／2025可賣日／零股、台泥最終決議／細項法規、淨分配及期初權利仍缺。MOPS／權息端點／TWTAUU／file://／NHI403均未重試繞過，缺價原因未知不補價；本輪無新官方網路／UI／瀏覽器Android，Android NOT_TESTED_NEW_BUILD。原producer／action_ledger／core／策略參數／庫／歷史／舊catalog頁面及ZIP／main不改，舊17／44／15及18／9982／Chrome36未重跑。下一步Work補來源，工程Codex；完整可貼指令見新WORK_HANDOFF。不重問P0～P1、不定全換／分批、不部署付費交易訊息或子代理，Raw／五年Adjusted／歷史公布／主檔／SQLite未知保持。以下原文完整保留。
+
+---
+
+# 2026-10-22 Work｜直接配股比及其他公司行動來源已補；工程未實作
+
+接續46d09d4，最新入口 `股票系統M1_v0_18/rotation_research/source_review_20261022/README.md`、REPORT／CODEX_TASK／WORK_HANDOFF；固定GitHub逐檔回讀見 `deliveries/m1-source-review-20261022/GITHUB_READBACK.md`。本輪新checkout bootstrap實際補545檔、保留7差異；6官方原件（三PDF、三HTML）已封存，來源核對不是新版引擎測試。
+
+2884官方直接每千股10.015129股與原0.010015129相符，仍非未圓整比／個人實配／2025可交易日證明。三商壽換股兩版本及2026/9/1權利證書、零股／匯費只屬原2867股東，不套既有2884或2025股利。台泥資本公積0.8元僅本輪所見董事會提案來源，最終決議／細項與淨模型未核。新健保署原件封存HTTP403保留未重試；web觀察不冒原件。原MOPS／權息端點／TWTAUU／file://不重試繞過。
+
+完整公司行動／減資及7/25後權息、2884未圓整／可賣日／零股、淨分配與期初權利仍不足；空白證據表不是零權利證明。讀回舊72窗仍70拒算／2不足、總淨報酬合格0，**未執行新帳或六方案**，無新catalog／產品／UI／瀏覽器Android，原測試不冒新通過。所有舊來源／引擎／策略／庫／歷史／成品／main保持。下一步Codex重新bootstrap後依CODEX_TASK獨立接來源與防混用，不重問P0～P1／比例；完整可貼指令見本輪WORK_HANDOFF。以下原文完整保留。
+
+---
+
+# 2026-10-22 Codex｜官方公司行動來源0.2：2884面額／公司發放報告已補
+
+接續6185297e，保留全部先前成果；新入口 `股票系統M1_v0_18/rotation_research/official_actions_20261022/README.md`、REPORT／CONTRACT／WORK_HANDOFF。新ZIP及固定GitHub逐檔核對見 `deliveries/m1-official-actions-20261022/README.md`。原0.1、日曆、P1-7及舊包全部保持；下方是歷史。
+
+本環境重新bootstrap成功（0補缺／7差異保留），runtime spec3新域已列允許；實際取得玉山兩官方PDF。2025會議同次增資面額10元、最終公開股票股利金額0.10015129／10導出0.010015129股／原股；僅公開金額精度推導，非已核未圓整最終比例／個人實配。公司後續報告8/27發放完畢不是個人淨到款／新股可交易日；零股政策已存但期限／實際處置未核。新catalog0.2補一個原股票組件，四現金組件不動，announced_at仍null；新觀察時點不倒填舊可知時點。
+
+新17定向測試通過，122價量原件重核、70研究窗仍拒算、2不足，真正總淨報酬合格0；無新六方案回放／排名。MOPS入口HTTP200卻為明確安全拒絕，原件保存、不重試繞過；原權息禁端點／TWTAUU／file://限制保留。完整行動／減資及2026/7/25後權息、2884可交易日／精確實配與零股、淨分配／期初權利仍缺。沒有把公司完成報告當投資人績效。
+
+初次表格抽字／測試oracle失敗及修正均留檔；本輪無UI／瀏覽器／Android，Android仍NOT_TESTED_NEW_BUILD，前輪44／15及18／9982／Chrome36未重跑。原core／action_ledger／策略參數／庫／歷史／舊頁／舊ZIP及main保持，不重問已答P0～P1，不改全換／分批研究資格，不部署付費交易訊息或子代理。下一步Work補可核官方來源；需要工程用Codex，完整可貼指令見新WORK_HANDOFF。Raw／五年Adjusted、歷史公布／主檔與SQLite未知持續。以下原文完整保留。
+
+---
+
+# 2026-10-22 Codex｜官方市場交易日已補核；總淨報酬仍拒算
+
+接續50d8c5e，最新來源入口 `股票系統M1_v0_18/rotation_research/source_qualification_20261022/README.md`、REPORT／SOURCE_CONTRACT／WORK_HANDOFF；新小包與固定GitHub回讀收據入口 `deliveries/m1-source-qualification-20261022/README.md`。原事件帳0.1及P1-7、全部舊成品保持，下方是歷史。
+
+本環境重新bootstrap成功（0補缺／7差異保留）。新15項來源測試通過；取得16份官方FMTQIK月報，核得2025/7/1～2026/10/16的317市場日／473曆日，與1101／2884各317保存日完全相符，122舊原件再核一致。兩筆null（1101 2025/8/13、2884 2025/11/5）均為市場開市但個股無報價，原因未知，不補價。只核此TWSE窗口，不認證券商T+2、五年／TPEx或歷史公布可得。
+
+70研究窗只解除日曆未核原因，公司行動／淨分配／期初權利仍全REFUSED；2窗40筆不足，總淨報酬合格0，無六方案成交重跑／新排名／勝出比例。新減資歷史TWTAUU請求HTTP307已保存、未重試；當前減資預告及209筆申報表零命中不證明無事件。2884配股比／可交易日／零股、完整公司行動及7/25後權息、淨分配與期初權利仍缺。原source／core／action_ledger／策略／庫／歷史／舊圖／舊ZIP及main保持，前輪44及18／9982／Chrome36未重跑；無新UI／瀏覽器／Android，Android未測。
+
+已保存環境設定草稿：保留TWSE／TPEx及presets，新增www.esunbank.com與mops.twse.com.tw，更新start_skill；install_script等未改。工具requires_publish=true，草稿不是runtime已套用，兩新域未驗可讀。具體來源及設定缺口見configuration-review.json。下一步Codex：使用者於環境設定檢閱／套用後核對runtime及單一必要官方來源；不要原樣反覆請求失敗，不重試／繞過舊禁權息端點或file://。不重問P0～P1、不加正式門檻／主壓力／比例；Raw/Adjusted、歷史可得、五年Adjusted、主檔與SQLite未知保持。不部署付費交易訊息或子代理。切Work附完整WORK_HANDOFF指令。以下原文完整保留。
+
+---
+
+# 2026-10-22 Codex｜來源事件表＋獨立逐日資金帳已實作
+
+已核起點354a9c01；來源完成節點e3cadaf88ff6cf3a62374df262f73ad6b5a26c1a。新入口 `股票系統M1_v0_18/rotation_research/action_data_20261022/README.md`、REPORT.md、CONTRACT.md；下載與遠端核對入口 `deliveries/m1-actions-ledger-20261022/README.md`。原P1-7交付不變，下方舊數字是歷史。
+
+本環境已重新bootstrap成功（0補缺／7差異保留），新44項定向測試通過；122份官方原價量原件及舊輸入一致。四份已存官方事件原件提取五組件（四現金、一配股）。獨立純數值核心支持股利應收／日終發放、股份應收／交付／可交易、減資轉股／退資、顯式成交交割及每日資產；獨立CLI重用原不可覆寫Journal，READ不算。工程數值案例與真實毛時程預覽分開，後者淨現金／報酬null。
+
+原72組計畫窗口＝70有足夠保存筆數＋2不足；新核心對70組全部明確拒算，合格總淨報酬窗0，無新六方案績效／排名／勝出比例。仍缺完整公司行動／減資覆蓋、2026/7/25～10/16交易所事件、2884配股比／可交易日及零股處理、淨股利／日曆／期初權利。一次官方PDF補查Tunnel403保留原錯誤，不繞過；不是所有來源已封鎖。公布可得／主檔／Raw及Adjusted／SQLite未知保持。
+
+保留原core／loop／參數策略、全部舊庫／歷史圖／P1-7與main；未新增正式策略或下單。無新UI／瀏覽器／Android；Android NOT_TESTED_NEW_BUILD，file://不重試。下一步用Codex補可核資料，再在合格窗口接顯式成交路徑比較；切Work時讀新WORK_HANDOFF完整指令，不重問已答P0～P1或比例。不因新增純數值帳而認證圖形／交易／飛輪。以下歷史原文完整保留。
+
+---
+
+# 2026-10-22｜P1-7 可執行研究、同期對照與手機報告已完成
+
+入口 `股票系統M1_v0_18/rotation_research/WORK_HANDOFF.md`、RESEARCH_REPORT.md及generated/report.html。來源快照9dd0554f；工程先保存cf10dbdb。最終18定向unittest、9982來源／帳務／前綴斷言、CLI RUN/READ逐位元相同、Chrome151新36檢查與JSON／SVG真下載通過；390／1400無頁面水平溢出，非Android。70同期對照×6＝420方案、216敏感度方案、4同一帳戶閉環實驗；2個40筆不足拒算。20,000股A確保25%整張等分，容量不足全換亦可分日成交。
+
+**投資驗證未通過**：完整公司行動／股利／歷史公布及日曆未核，只是條件式扣模擬成本價格報酬；正式總淨報酬、弱勢占用分類、最適全換／分批與飛輪未完成。20筆原高低／25及50%／量比前日／5筆延後／10筆檢討全是實驗設定，不是已批准策略；正式結構UNKNOWN、交易false。原P0～P1答覆、人工Raw/Adjusted、全部原引擎庫舊圖及main保持。
+
+下一步建議Codex接資料資格與公司行動／股利應收／配股減資的總報酬帳工程，再補真正獨立市場樣本；無需現在請使用者猜比例。完整可貼指令在新WORK_HANDOFF。所有完整結果與PNG／SVG／HTML／測試封包在同目錄P1-7_rotation_research_v01.zip。下方歷史完成節點不刪。
+
+---
+
+# 2026-10-22｜P1-7 獨立換股研究已可執行（工程完成節點）
+
+接續9dd0554f，讀 `股票系統M1_v0_18/rotation_research/README.md`、WORK_HANDOFF與generated/design.json。獨立純數值core／連續帳戶loop／外部不可覆寫store／CLI已實作，18定向測試通過；420方案、216敏感度方案及4閉環帳戶已計算，2個40筆不足拒算。中文圖表／瀏覽器驗收接續進行。真實資料受完整公司行動／股利、歷史公布與日曆限制，僅條件式扣模擬成本價格報酬，不是實際總淨報酬或已驗交易策略。比例／觸發／20筆原高低等全部為實驗代理，非正式圖形規則；正式結構UNKNOWN，交易與策略不批准。原P0～P1已答、人工Raw/Adjusted、最高飛輪與所有後續保持。bootstrap本環境545補缺／7差異保留成功；原引擎庫舊圖不改。
+
+---
+
+## 2026-10-22｜真實價量九截止已保存，當日量角色與後見解釋分開
+
+先讀 [新研究與實測](docs/visual-discussion/20261022_causal_volume_cutoff_review/README.md)、[Work交接](docs/visual-discussion/20261022_causal_volume_cutoff_review/WORK_HANDOFF.md)。1101／2884保存原始K量做兩案例九截止，逐張只顯當時以前資料，原量角色UNKNOWN；人工事後解釋另選顯示並記2026-10-22。51項資料／前綴污染核對、Chrome151九精確oracle與390px無溢出通過，無Android或分類／交易驗收。新研究揭示ABC39最高價K和最大量K不同，28.45閱讀最低不得直接當核定箱底；2884價格續高而量低於一根舊柱不推否決。來源／限制／重現／未完整checkout均已記錄。
+
+寫入前已整合91478b9e的P1-6新答：急速深跌後量未跟是特定背景疑慮，不改成普遍最高量門檻。P1-7方向已於3205261補答，接同一截止的續抱／全換／分批／現金方案研究，不要求使用者現在猜最佳比例；本研究跨年份案例不可拿來作同期換股。原P0-1/3/4、P1與P1-6已答不重問，最高資金閉環、人工Raw／Adjusted及main保持。
+
+---
+
+## 2026-10-22｜P1-6 人工回答已存：急跌後價先量未跟是可疑修復，不是通用突破否決
+
+最新入口 `docs/visual-discussion/20261022_p1_6_momentum_repair_pressure_wall_decision/README.md`。使用者基本認可純模擬 A 反彈、B 動能修復、C 真正重新轉強圖，問題 3 補答：「通常迅速跌很深卻沒有帶量上漲，都可能是假的，此時疑心較重，尤其是沒有突破最高量的量先價而行都不太算安全。」這是**前段快速深跌＋反彈未帶量**的條件性疑慮，非所有沒超越最高量都判失敗。必須分開價格事實、量能證據、壓力是否已解除、重新持有資格；無法預測或聲稱真實假突破概率，不能自創量倍數及天數門檻。P0-3 已答價格轉強/整理/轉弱，P0-4 已答未過最高量但過密集量峰仍可關注；P1-5 換手不可提前確認的時序保持。此輪僅文檔保存，不是自動引擎／交易驗證，`classifier=NOT_VALIDATED`、`historical_signal_eligible=false`、`action_and_flywheel=NOT_EVALUATED`。**下一題 P1-7：持有 A 浮虧、B 為候選強勢、現金作備選的資金機會成本與換股時點**。維持 Work，以兩股同一分析截止的 6 個月以上 K／量模擬圖向使用者取核心判斷；不修改 main 及既有成果。
+
+---
+
+## 2026-10-22｜P1 點演變線／階梯：B「成功換手」標籤撤回，破箱後才能判斷賣壓角色
+
+先讀 `docs/visual-discussion/20261022_p1_point_to_line_turnover_reinterpretation/README.md`，使用者原話：「除了B圖的換手標記是錯誤的，其他都是對的。（你根本當下不知道換手有沒有成功，事後看跌破箱型下緣才知道不是換手，而是賣壓，也就是說那個量變成套牢量了）」。A 急漲點→整理線→再次上攻、B 高位整理後跌破下緣再反彈等**完整模擬路徑方向**獲認可，但 B 高檔大量當下只記錄可見量價，不標已知成功換手或已知出貨；後來跌破箱底時才可將那批量作「待消化的套牢賣壓」候選解讀，仍非可量化實際持有人。嚴守形成時點與後見解讀不互相污染，不增加倍量、天數或 OSC 硬條件，P0-3 轉強／整理／跌破轉弱照原答案。此輪只有人工規則文件，沒有新真實行情、引擎或 Android 產品驗證；分類 NOT_VALIDATED、歷史訊號不可用，Work 用逐時點正反例驗證後才進 Codex。main、人工 Raw/Adjusted、原資料與最高資金飛輪願景均保留。
+
+---
+
+## 2026-10-22｜P0-4 代表量線四題已人工答完，後續用真實正反案例研究
+
+最新入口：`docs/visual-discussion/20261022_p0_4_volume_reference_decision/README.md`。四點已核：① 量先越密集量峰開始注意，連全帶最大量都越過更佳；② 最新量只越密集線、未越最大量，不負面解釋，持續觀察價格；③ 不排除任何異常成交量，下跌大量可以作為套牢／待消化賣壓的人工結構候選，原支撐／壓力角色可隨價格及換手互換，觀察是否持續願意往更高價交易；④ 本張示意紫色虛線畫法已確認。模擬數字不是實際股價/成交量、量單位圖上標示與題目有出入，不轉成真實驗證；不能把圖片後製說明冒稱使用者全部核准。量的經濟含義不是可由 OHLCV 精準推知持有人分布；不訂固定 20 日均量、倍數、天數、放量成功必要條件，不以此自動買賣。P0-4 已答免再逐項問；後續 Work 找有真實來源的量峰／極端量／角色翻轉正反案例及時間截止檢查，只在重大歧義才用圖請裁決。此輪只新增文件、無引擎／產品／Android 測試，`classification=NOT_VALIDATED`、`historical_signal_eligible=false`、`action/flywheel=NOT_EVALUATED`。最高資金閉環、人工 Raw/Adjusted、全既存成果與 main 不動。
+
+---
+
+## 2026-10-22｜P0-3 已答：突破後返回只有客觀轉強／整理／轉弱，禁止推測概率代替結構
+
+最新入口 `docs/visual-discussion/20261022_p0_3_return_reclaim_state_decision/README.md`。使用者原話：「其實就是在等他轉強再次超越他上次回檔時留下的高點。因為股票就是動態平衡來確認的，有超越就轉強、沒超越也沒破橘線就是悶著整理、跌破橘線就是轉弱。我們也沒辦法預測什麼。就是照著事實走。」先前破紫未破橘的問題**已回答為整理**；紫線的淺回檔觀察不另設轉弱資格。不要再問同一個中間狀態，或把「高機率」、「自動賣出」推成此人工規則。歷史過線事實保留，結構狀態隨最新價更新；成交量、OSC、動能與買賣資格另管。此輪只文字記錄及接續，沒有新引擎／分類／Android 測試，歷史訊號仍不可用、資金飛輪未驗；維持 Work，用既有可追溯案例建正反對照，再考慮交 Codex。main、原人工 Raw/Adjusted、P0-1/2 答案與全部原成果不動。
+
+---
+
+## 2026-10-22｜P0-2 B 模擬 K 新裁決：先找真正重要 32.X 高點，動能與價格平衡決定後續
+
+請先讀 [本輪決定](docs/visual-discussion/20261022_b_pressure_priority_momentum_decision/README.md)。使用者在助手產生的 B **模擬圖**（非真實 2884 數值）另畫約 32.X 藍色近高，否定以助手預設 33.20 為本圖優先判斷；四月低點到五月底類碗底右側回升，5/29 模擬收 30.95 尚在 32.X 下。挑戰 35.50 與進場價值需看動能的多因素（紅 K 實體、跳空、成交量等），歸結成價格動態平衡是否開始向上推進／突破大高點，不是只算兩高點距離。不新增固定量門檻、成功分數、OSC 硬條件或預判未來已突破；結構／證據／行動分離。助手右列 A/B/C 僅假設示意，非真實後續。此答已裁決，不重問 33.20 是否應先突破；後續 Work 先比對正反例，分類 NOT_VALIDATED，交易與飛輪 NOT_EVALUATED，main 及人工模式／原案例全部保留。
+
+---
+
+## 2026-10-22｜新人工裁決：紫框成立時點與紫橘量能主次
+
+接續 `docs/visual-discussion/20261022_multilevel_box_breakout_volume_decision/README.md`。使用者明示：「紫框成立時間點就是綠線高點那邊突破時，而且你可以看到紫框才有較高的量，因此才不看橘框。」必須修正前輪詢問：**紫框成立時點已答**，不是綠高回跌走平才成立；橘框是可見的更廣支撐候選，不能因其包含紫框就把橘框當本例同等重要的主箱，使用者依紫框較高量**選紫不選橘**。量是候選價格帶取捨證據，與是否放量突破成功的必要條件不同。現無確切 K 成員／量口徑／門檻，不推成已完成自動規則；歷史回放只准當時可知價量，不回填褐灰後續。前輪下緣研究是待驗對照，不再重問已答紫框時點。保持原分類與策略 NOT_VALIDATED、historical_signal_eligible=false；人工模式、原成果、main 全保留。
+
+---
+
+## 2026-10-22｜多層箱型下緣來源已整理，待使用者在原圖裁決
+
+先讀 [`多層箱型下緣研究`](docs/visual-discussion/20261022_multilevel_box_floor_review/README.md) 與 [Work 交接](docs/visual-discussion/20261022_multilevel_box_floor_review/WORK_HANDOFF.md)，再看使用者原標註紀錄。已實看使用者私有標註圖及生成底圖，圖片未放進公開 Git。綠色新高後回到藍色舊高下方，使用者仍辨認右側褐色後繼箱，不能要求新箱「必守舊高」。紫／褐大箱底究竟依回檔低點、後續多次支撐或突破前支點仍未知，需在原圖只問這一個核心問題。與 2884 A、1101 ABC 原保存案例僅做時序反例對照，沒有新行情、演算法、數值／產品測試或 Android 驗收。原人工模式成品和最高資金閉環目標不變。
+
+---
+
+## 2026-10-22｜人工分析模式 0.1 已另版實作與驗證
+
+先讀根 AGENTS、M1_V019_GRAPH_CORE_RESUME_HANDOFF 最新節，以及 [人工模式交付與接續](deliveries/m1-v019-manual-basis-20261022/WORK_HANDOFF.md)、[子專案 README](股票系統M1_v0_18/manual_basis_chart/README.md) 和 [本輪驗收報告](股票系統M1_v0_18/manual_basis_chart/validation_20261022/驗收報告.md)。分支仍 `dev/m1-v018-chart-annotations`，main 與原 0.4.3 圖／數值／策略不改。人工 Raw／Adjusted 研究候選切換、精確來源／日期與不可覆寫選擇紀錄已另版保存；無來源不退另一模式。4 Python tests 和真實 headless Chrome HTTP 桌面／手機模擬已通過原保存數值對照；新版 Android 未測，Adjusted 仍只有兩股 283 根現金事件候選，不能當完整還原。最終 Commit 以 GitHub 回讀為準。
+
+工作中遠端另新增 `1f12d64` 的使用者多層箱型模擬圖人工判讀，已整合且未更改它；下一步 Work 看該文件的紫／褐大箱底來源與包含關係，必要時用真實保存圖驗證，不替使用者補固定門檻。最高資金增值閉環與前輪已答內容保留，核心辨識／分類／交易仍未驗證，不把這個 UI 工程當全系統完成。
+
+---
+
+## 2026-10-21｜長期最高目標已更新（使用者正式確認）
+
+股票系統的最終目的是**資金增值閉環＋正向資本成長飛輪**：圖形辨識找機會→動能換股比較原持股／候選股／現金的機會成本→風控下配置與進出、資金回收再投入→淨績效回饋驗證，以改善長期風險調整後資本成長。三項既定核心目標是此最高目的的三大引擎，非分立終點。正式完整定義與衡量／邊界見 [PROJECT_VISION.md](PROJECT_VISION.md) 最上方。本節僅更新目標與未來優先順序，**無新增算法、交易門檻或績效保證**；已完成／待驗狀態、使用者已答案例、M1當前研究進度、main及所有原資料均不變。往後Work／Codex接續先讀此目標，再按最近交接研究工作；不授權自動下單。
+
+---
+
+## 2026-10-22 最新決定：原始日K／還原K由人工選分析模式
+
+使用者原話：「大盤空頭需要很多綜合指標來判斷，因此建議是可以切換日K或還原K模式由人工方式決定分析模式。」完整保存與接續見 `docs/visual-discussion/20261022_manual_price_basis_decision/README.md`、decision.json、verification.json、WORK_HANDOFF及GITHUB_READBACK。人工選的是分析價格基準，不只畫面；不等系統自動判空頭，也不再要求先回答前輪大盤空頭／拉回題才能切換。市場身份可未知，明確人工選Raw不以先證空頭為前提。原約2～3月及空頭Raw偏好保留為人工判斷背景，無自動時間或市場強制切換。
+
+同次K、指標與價量結構參照需配對同基底／版本；保存人工選擇及實際來源，切換載相符結果或另存新分析，不只改標籤、不覆舊結果；還原資料不足明示，不默默退Raw、不造因子。量口徑另管。B此次未實際指定模式，原官方事件已核與單次換算非完整還原、歷史可得及source_gaps等限制保持。
+
+已讀原碼：technical_chart／pressure_chart既有mode選單與pressure_chart來源解析／下載，但未證人工模式跨個股保留、持久儲存或完整同步分析已落實。本輪僅方向與工程要求保存及文件核對，0產品程式改動／新圖行情／core指標舊研究重算／瀏覽器Android；不冒功能完成。分類NOT_VALIDATED、用途NOT_ESTABLISHED、新Android NOT_TESTED_NEW_BUILD、行動及飛輪NOT_EVALUATED、historical_signal_eligible=false。
+
+下一步繼續Work，依本輪交接接資料資格及模式切換整合；不再把空頭自動分類當阻塞或重問已答圖形。保留最高資金閉環飛輪目標、main與全部後續原引擎策略資料舊圖；例行多步與原分支交付已授權，不部署付費交易訊息子代理。以下舊待答／自動口徑資格按本節更新解讀。
+
+---
+
+
+## 2026-10-22 最新：B官方除息列已核，單次換算與市場背景另存研究
+
+接續17a480ec，入口 `docs/visual-discussion/20261022_b_basis_source_work_review/README.md`，完整WORK_HANDOFF、evidence、11份官方原件與source-capture、comparison-data、verification、manual-qa、recovery-audit同目錄；三頁PDF及三PNG。原最高資金閉環／飛輪目標與既有答案不改。
+
+新取得TWSE 7/1官方事件列：前收34.45、參考33.05、息1.40；與原前收及新擷取六月／七月至7/24共38筆190欄OHLCV全等。新加權收盤1/2～7/24共133筆同個股日期，只作背景，非正式政策指標。市場身份仍NOT_ESTABLISHED、首選口徑null。單次現金除息比例研究另版保存：7/1前OHLC乘33.05/34.45、量不變；二月原高35.50換算34.057329…於7/6收34.45在上，七月17日新高35.50於7/20收35.85在上；首次只指除息後／新來源後，六月舊跨越歷程保留。同原價不同來源／換算參照，不當同一關卡或獨立成功票。
+
+新study1、builder3、verifier4，最終42項通過，三頁最終渲染全實看；初字型與第三PNG不完整已修，補暫存驗後替換。原core／MACD／舊driver／產品瀏覽器Android皆未重跑，未改原引擎策略資料舊圖。完整actions鏈／歷史公開可得未核，TWT49U明列排除類別，10/27急變及11/6註記仍未解；complete_adjusted_history=false，不升正式政策還原。原source_gaps保持，historical_signal_eligible=false，分類NOT_VALIDATED、用途NOT_ESTABLISHED、新Android NOT_TESTED_NEW_BUILD、行動與飛輪NOT_EVALUATED。
+
+下一步仍Work，以本輪充分大盤圖釐清使用者所稱空頭的實際情境，無20％／均線自定門檻，不重問已答2～3月方向或B甲乙／大小帶／A ABC G2／微小段。之後按可核同口徑由右往左讀完整帶；六個月非固定帶窗。例行多步與原分支交付已授權，保留main及全部後續，不部署付費交易訊息子代理。詳細限制與接續見本輪WORK_HANDOFF。以下為歷史。
+
+---
+
+## 2026-10-21 最新口徑已答：除權息後約2～3月還原，大盤空頭原日K優先
+
+使用者原話：「通常除權息後要以還原權息去做分析持續時間大約2-3個月，大盤是空頭市場時則一切以原日k分析。」完整原話與資格見 `docs/visual-discussion/20261021_price_basis_policy_decision/decision.json`；README／source-check／verification／WORK_HANDOFF與回讀收據同目錄。承接7ffb2dca，仍Work，最高資金增值閉環／飛輪目標不改。
+
+定性偏好已確認：大盤已判空頭時Raw原日K優先於一般除權息後還原；通常除權息後Adjusted約2～3個月。約數不換固定60／90天，不自定期滿自動切回或新事件重起。空頭定義／大盤指標／生效時點、精確截止及期滿切換、具體調整因子版本仍未定，不套20％或均線門檻。未知市場狀態非已證非空頭，缺Adjusted不是擅用Raw替代的理由；不因例行工程細節停下重問已答方向。這是使用者策略口徑，不冒稱通用標準或已驗成效。
+
+同次比較的K、左側完整帶及高低參照需同基準／版本；Raw與Adjusted分存，不覆原K、不將還原價對舊Raw高點。切換另存新分析版本，不改舊結果或倒用未來事件／市場分類。成交量口徑另存、不自行還原量。空頭選Raw仍保留除權息事件：機械落差不因大盤空頭而消失，不單憑落差證賣壓跌破；TWSE公式常識補核另記，非把空頭改成強制還原。
+
+B七月舊Raw圖與原價量事實全留，但市場狀態NOT_ESTABLISHED／完整Adjusted未核，preferred_basis_under_new_policy=null、new_policy_validation_status=NOT_COMPLETED_RAW_RESEARCH_ONLY。前輪改用七月新來源只是有限Raw研究，不能替代本輪政策要求的還原分析。公司行動事件鏈／前輪官方交易日列未讀通、原actions等未知不因使用者答方法而升已驗；10/27急變仍未知。
+
+本輪只有文件一致性與四入口歷史完整保留核對；新圖／行情／調整因子／core／MACD／舊driver／分類器產品測試／瀏覽器Android皆0，無自動切換實作。原全部A ABC G2與B答案、量非硬門檻、後續守價及形成點不多票保持。正式規則未定、historical_signal_eligible=false，分類NOT_VALIDATED、用途NOT_ESTABLISHED、新Android NOT_TESTED_NEW_BUILD、行動與飛輪NOT_EVALUATED，原Raw／完整日曆／歷史公開可得及全部缺日限制保持。
+
+下一步Work先補B當時市場狀態、公司行動及同口徑還原來源，再由最新K向左完整帶重讀。圖至少六個月且看清大小範圍，同附圖片及放大版；約2～3月是口徑期間不是裁圖長度。真正重要新核心才備充分圖問，不重問口徑方向。例行可逆多步及原分支交付已授權，不改main／原引擎策略資料舊圖全後續，不部署付費交易訊息子代理。以下為歷史，非本輪重跑。
+
+---
+
+## 2026-10-21 最新：B跨過返回須對準來源；七月自身參照與跨除息口徑分開
+
+入口 `docs/visual-discussion/20261021_b_reference_path_work_review/README.md`，evidence／source-check／verification／figure-manifest／manual-qa／source-provenance及build_review／verify_review、WORK_HANDOFF同目錄。兩頁向量PDF `output/pdf/b-reference-path-review.pdf`與六月／七月兩PNG。承接c87f1578，仍Work，原最高資金閉環／飛輪目標不改，B甲乙及A ABC G2所有已答不重問。
+
+六月舊結果接整圖：6/9收回33.20後14筆全收上；2/26高35.50於6/22過、6/24收下，6/30 C34.45仍上33.20下35.50，局部支持不代整體成立。新七月來源7/17 H35.50與二月同價不同來源；7/20 C35.85過，後四筆全收上，7/23、24低35.40／35.05卻收35.65／35.95，屬連續返回片段不當兩獨立成功。7/20起點日低35.10不充後續回測。7/21 H37.20是當日原高非自動轉折完成；7/22高相等、之後三筆全收37.20下，局部守價支持不等最新前高收復。
+
+七月量參照事前凍結7/1～17共12保存K的最大量97753866（7/17），7/20量80234731／7/21量66290064皆未超，後續仍有局部守價支持。只為局部保存窗非正式完整小帶／代表量線／成功率，原110試線不移作標準，未放量不否決保持。
+
+公司行動補查有新增網路文件核對、無新行情：公司官網2026股利表現金1.4、基準日7/7、發放7/27，基準日非除息交易日；多二手資料指7/1，但官方交易日事件明細web讀不通、MOPS只回入口，狀態PARTIAL_DOCUMENT_REVIEW_NOT_FULL_ACTION_AUTHENTICATION。跨7/1舊Raw不直接當經濟跌破／回測，不自行舊高減1.4／新造還原價。七月改用自身來源，仍限Raw事實，不宣稱期間無其他公司行動。原actions覆蓋／source_gaps保持；10/27急變仍未知，非本輪一併驗證。
+
+builder2／render2（修註記重疊及補交易日資格）、verify1，37截止前綴／未來價量污染及既有六月摘要、相等起點後續／量峰凍結／SHA／圖窗筆數通過。兩頁最終全實看，358與194保存K，兩窗逾六個月，截止各6/30與7/24，不借後續補證。原core／MACD／舊60,483研究／產品測試／瀏覽器Android皆未重跑；非分類或策略成效驗證。
+
+下一步Work優先補公司行動事件與跨期同口徑後再接更左帶；不因同價承接同源、不把連續K或重用形成點當多反應。正式分帶合併父子主次／界成員／代表量算法／站穩反應仍未定，historical_signal_eligible=false；分類NOT_VALIDATED、用途NOT_ESTABLISHED、新Android NOT_TESTED_NEW_BUILD、行動與飛輪NOT_EVALUATED，Raw／完整日曆／歷史公開可得及所有原缺日限制保持。圖至少六個月且足夠大到小，同附圖片與放大版；例行可逆多步及原分支交付已授權，重要新核心才備圖問。不改main或原引擎策略資料舊圖後續，不部署付費交易訊息子代理。以下為歷史，非本輪重跑。
+
+---
+
+## 2026-10-21 最新：B已依最新K向左整圖實讀，價峰量峰與範圍敏感性分開
+
+入口 `docs/visual-discussion/20261021_b_right_to_left_work_review/README.md`，evidence／verification／figure-manifest／manual-qa／build_review／verify_review及WORK_HANDOFF同目錄；三頁向量放大PDF `output/pdf/b-right-to-left-review.pdf`、三PNG。承接91cfcd5，維持Work；原甲乙較認同甲但切法非標準已結束，不重問A ABC G2或B微小段。
+
+依五步以歷史選定2026/5/29 C30.95作右端，無六月後續，先1118筆近五年、484筆兩年、156筆約八月價量。助手閱讀提案：較近3/16～5/29高33.20低30.65；較大10/27～5/29高35.50低29.40；較早7/10～10/23高台35.40／31.65並列比較。框與原K極值非使用者新增正式起末界成員父子；4/16高點只放回數月活動作參照，不重開已答微小段。不同來源相近價非多次反應票。
+
+價峰2/26量101501150；較大閱讀量峰10/27為280910308；改11/3起讀，高低不變而量峰改12/8為146711672。未定成員不能拿小框量峰叫正式整帶量，10/27原價急變原因仍待公司行動核，不直接升經濟跌破／籌碼事件或正式帶起點。依12/22～24原量峰助手試畫110百萬股代表線，來源保留、未核、非算術均量／SMA／倍量，formal_baseline=null。5/29量119510199高於試線但低兩量峰，C30.95仍低33.20／35.40／35.50，不稱向上突破；未放量不否決、後續守價另觀察仍有效。
+
+builder1／驗證1／PDF渲染1、三頁實看、零影像物件／EOF／SHA、全部範圍極值同值日與截止前綴／量線原柱／圖窗筆數通過；只驗保存事實與呈現。無新行情、core／MACD／舊driver／產品測試／瀏覽器Android。原2884來源、basis與source_gaps沿已核鏈保持。正式帶／合併父子／價界成員／代表量線算法／站穩反應仍未定，historical_signal_eligible=false；分類NOT_VALIDATED、用途NOT_ESTABLISHED、新Android NOT_TESTED_NEW_BUILD、行動與飛輪NOT_EVALUATED，Raw公司行動／日曆／歷史公開可得及全部原缺日保持。
+
+下一步仍Work，沿整圖相應高點研究跨越及後續返回，先核價量參照的同口徑限制；不要把助手閱讀框或110量線升標準、不要再從窄框互比起步。圖至少六個月且足以大到小，同附圖片＋放大版。例行可逆多步與原分支交付已授權，重要新核心才備充分圖問，不改main或原引擎策略資料舊圖後續，不部署付費交易訊息子代理。以下為歷史，非本輪重跑。
+
+---
+
+## 2026-10-21 最新人工方法：偏甲但切法非標準；以最新K向左辨完整價格帶及價量
+
+使用者已答B同層提案：「我比較認同甲一點，但這樣切法也不是標準答案。」原甲乙問題結束為CLOSED_WITH_QUALIFIED_PREFERENCE_AND_METHOD_REFINEMENT，不再待答／重問；偏向同一小帶多次活動不等原三框精確起末價界成員、恰三帶或通用合併算法已核。完整原話與五步見 `docs/visual-discussion/20261021_right_to_left_method_decision/decision.json`，README／WORK_HANDOFF／verification與同分支回讀收據同目錄。
+
+後續主流程：所選截止最新可用K作右端→向左找相關價格高低→由高低辨完整價格帶並看帶內最高量或視覺代表量位→由該帶繼續向左畫較早帶→比較各帶相對高點，辨認要越過哪一層。承接原10/19最新收盤回左找整體帶；既有小共同區及來源配對是輔助研究，不能取代主選帶流程。先大後小，非機械取最近微小轉折或固定窗全域最高低。保存來源最新日不冒即時今日，歷史截止不看未來。
+
+最高價K不必是最高量K，價峰量峰分別找；最高量同值日全保留，綁整帶成員與截止。使用者整體均量是從密集量柱相近高點畫代表線，先存視覺代表量位及所依量柱日期，不直接換成算術平均／20日均量／中位量／固定倍數。正式完整帶／代表量線演算法仍null，不拿任意小框計算冒稱整帶量。
+
+原句「右邊的量也超過該均價或是該價格帶的最高點」原文保存；助手僅按量綱分開：價格比相對高點、量比代表量位／帶內最高量，不把量比價格或擅轉VWAP。正式價量或／且結合與門檻未定，此解讀非額外數值規則核准，本輪不因此逐項問工程細節。「成功率提升／籌碼乾淨」記為使用者圖形價量假說，未驗成功率或測得實際持股分布／賣壓耗盡，不升機率、交易資格或績效保證。
+
+先前量支持但非成功必要充分、未放量不否決、後續是否站穩另觀察、當日價格跨參照即更新但非大結構、重用形成點非多反應均保持。B大小帶／微小段及A ABC G2全已答不重問。圖至少六個月且看清大小範圍，同附圖片及放大版，六個月非固定結構窗。
+
+本輪只保存新人工答覆及方法，沒有新圖行情／指標結構／研究driver／分類器產品測試／瀏覽器Android重跑；文件一致性及四入口原文保留核對另記，不冒舊測試為新完成。PROJECT_VISION最高資金閉環飛輪目的不改，只加本方法節。正式高低／整帶／合併父子主次／界成員／量線／站穩反應充分條件仍未定，historical_signal_eligible=false；分類NOT_VALIDATED、用途NOT_ESTABLISHED、新Android NOT_TESTED_NEW_BUILD、行動與飛輪成效NOT_EVALUATED。Raw公司行動／完整日曆／歷史公開可得及全部原缺日保持。
+
+下一步維持Work，用原已答案例及充分廣角真圖做最新K向左的整圖讀法，逐帶標價峰／量峰／代表量位來源，再看更左相對高點；不再先切小框迫使用者給標準答案。真正重要新核心才附充分圖問，不重問甲乙。保留main全後續與原引擎策略來源舊圖，例行可逆多步及原分支交付已授權，不部署付費交易訊息子代理。以下舊待答以本節已答及新方法為準，非本輪重跑。
+
+---
+
+## 2026-10-21 最新：B同層身份兩讀法已備，唯一新問題待答
+
+入口 `docs/visual-discussion/20261021_same_level_contrast_work_review/README.md`；review-state／registry-query／study-inputs／contrast-evidence／cutoff-views／verification／source-provenance／source-locations／figure-manifest／manual-qa、study／verify／build_review與WORK_HANDOFF同目錄。兩頁向量放大PDF `output/pdf/b-same-level-review.pdf`、b-source-contrast.png及b-same-level-proposals.png。承接71dbc062，仍Work。原B大帶含多小帶已答，不重問；A ABC G2及4月微小段均不重問。
+
+本輪唯一新核心：同一B大帶背景，1十二月底、2二月前段、3二月底至三月初，是同一小帶多次活動、各自保留小帶候選，或只是大帶內不值得分小帶的波動／應調範圍。這會改系統同層身份，不能用原B「方案二」代答。review-state=PREPARED_FOR_PRESENTATION_AWAITING_USER，user_decision／assistant_preference=null；提案user_approved=false，正式merge／split／bounds／members／parent仍null。框僅示觀察範圍，不強制三帶或精確起末價界；有新答先保存原話及範圍再對來源。
+
+原參照12/22～31共同33.75～33.85、raw32.75～34.15，1/2知。後2/2～23共同33.70～34.00於2/24知，9筆中2/10 C33.80在舊共同內；後2/26～3/5共同33.65～34.05於3/6知，5筆無收盤在舊共同內，但3/4 C33.65下、3/5 C34.05上，兩日日K皆接觸。沒收在窄共同區非沒有返回；異側保存收盤跨越不證日內順序／連續成交／反應成功。三來源是原保存活動，不是已核三小帶，確認K不納來源期。
+
+查保存登錄明示B/2884 cohort：源起2025/11/6以後、後段至2026/5/29知，完整後段左證據晚於舊可知、共同及raw均正寬交疊、無已列缺日；任一源碰4/16～27微小段均排除。434符合保存配對；同舊參照且後段共同上下界相同的17組有兩造訪狀態，卻0個後段來源期非重疊對照，不能把擴窗重疊版本當獨立反例。粗幾何條件下有93個非重疊對照組合，明示選這兩源，後段上下界不完全相同，非全數值相等控制實驗。全部非市場獨立樣本／成功率／已核合併正負例；有收盤進入不代替正式合併答案。
+
+前期登錄探索2、新study1／verify1：11截止前綴／未來價量未知幾何／全量1／人工標籤污染、出生固定、3原活動及leg-turn幾何／434原價造訪／嚴格0粗93重數／兩後段不共來源／2觸及與雙邊跨越／原B答案及4來源SHA通過。builder1／render1，2頁實看、零影像物件、EOF與暫存核後替換／import不動成品、四窗筆數另核；兩提案同K同xlim／ylim，原分支4來源blob SHA相符。前批6活動與原60,483 driver不重算；原core／MACD／舊driver／舊verifier／過破量研究／產品測試及新行情瀏覽器Android皆0。
+
+廣角2024/10～2026/5 399筆，細圖與兩提案2025/9～2026/5各177筆，四主窗逾六個月且先大後小，同附PNG及放大版；3/6右方只事後背景，不回填當時。原B大小帶／A ABC G2全答案、量非硬門檻、G2返回raw而共同未到的更正保持。正式同層合併父子主次／完整界成員／站穩反應仍未知；historical_signal_eligible=false，分類NOT_VALIDATED、用途NOT_ESTABLISHED、新Android NOT_TESTED_NEW_BUILD、行動與飛輪成效NOT_EVALUATED。Raw公司行動／完整日曆／歷史公開可得及全部原缺日保持。
+
+下一步Work只承接這次同層身份新答案，不將定性答覆升精確日價全成員或通用門檻；不發明N日深度百分比量倍數帶寬分數，不以交疊／無共turn／目前同側等單獨選合併父子主次。保留main全後續與原引擎策略來源舊圖，例行多步及原分支交付已授權，不部署付費交易訊息子代理。以下歷史非本輪重跑。
+
+---
+
+## 2026-10-21 最新：B活動可連看推進返回；G2已返回來源外圍，僅共同價位未到
+
+入口 `docs/visual-discussion/20261021_activity_bridge_work_review/README.md`；EVIDENCE_SCOPE_CONTRACT、relationship-proposals、study-inputs／activity-evidence／cutoff-views／verification／source-provenance／source-locations／figure-manifest／manual-qa、study／verify／build_review與WORK_HANDOFF同目錄，兩頁放大PDF `output/pdf/activity-bridge-review.pdf`及B／G2兩PNG。承接2f7bf898，維持Work，無新人工問題，不重問原A ABC G2及B大小帶／微小段。
+
+重要更正：前輪「G2未到較早活動」過廣。較早來源raw37.20～38.50；7/25～28回升四筆收盤全在其中，日高卻均未到共同38.05～38.25。正確為已回到較早來源範圍、尚未到共同價位，不說完全沒返回，也不由raw返回升反應成功／正式合併。原數值與人工答案不變，舊圖保留歷史，本節與新圖優先。
+
+B原保存三活動：6/9～17共同33.65～34.20、raw32.90～35.90，6/18知；6/17～23共同35.40～35.50、raw35.05～36.60，6/24知；6/22～25共同35.00～35.45、raw34.90～36.60，6/26知。可連看小參照收回、向較大原高推進及跨後返回，來源身份仍各保留，非新核三小帶。相鄰組各共一turn與來源K，不當三次獨立測試；首末無共turn但後段左證據6/18等前段可知日，仍非全來源全新。末段共同雖下35.50，四筆來源收盤2上2下；6/26可確認時C34.55已低來源34.90，活動形成與目前位置分開。
+
+G2較早→下移36.75～37.00→回升37.25～37.35，可知分7/7、7/19、7/31。後兩段完整來源較晚不共turn，支持新局部回升，非統計獨立或整體恢復。8/2 C37.20雖低回升共同仍高原37.15；較早raw返回與共同未到並存。B曾收過35.50後返回，不能與G2未到較早共同籠統混同。共同價位非全部K來源、確認K不納來源期、觀察鏈非同帶合併；原B大小帶包含及全部A ABC G2答案保持。
+
+新study4次嘗試3成功（首輪欄位鍵錯未輸出，後修正並補實際返回／目前位置及清楚鍵名）、verify1：14截止前綴／未來價量未知幾何事件污染／全量1、6原活動及6來源配對／實際造訪、出生固定、leg-turn幾何可知日、5嚴格相等邊界、兩原登錄全等、7來源SHA通過。builder1／render1、2頁實看、零影像物件、EOF與暫存核後替換／import不動成品、圖窗筆數另核、7原分支來源blob SHA相符。原core／MACD／舊driver／舊verifier／原過破量研究／產品測試及新行情瀏覽器Android皆0。
+
+B廣角358／細167保存K，G2廣角382／細136，四窗全逾六個月；原G2人工1/16～8/16的136與新細圖1/3～8/2的136不混身份。持續先大後小、至少六個月且看清大小範圍，同附PNG與放大版，非固定結構窗。正式同層合併父子主次／完整界成員／站穩反應仍null，historical_signal_eligible=false；分類NOT_VALIDATED、用途NOT_ESTABLISHED、新Android NOT_TESTED_NEW_BUILD、行動與飛輪成效NOT_EVALUATED。Raw公司行動／完整日曆／歷史公開可得及全部原缺日保持。
+
+下一步Work為同層合併找來源／價位／路徑相近而整體角色不同的有區辨力正反對照，不再反覆增這六活動欄位。重要新核心才附充分圖問；不以相交／全分離／共turn／來源全新／現價同側／最近最大窗或候選數自定合併父子主次，不發明N日深度百分比量倍數帶寬分數。保留main全後續與原引擎策略來源舊圖，例行多步及原分支交付已授權，不部署付費交易訊息子代理。以下歷史非本輪重跑。
+
+---
+
+## 2026-10-21 最新：跨案後續支持只對準相應參照，觀察鏈不等於帶合併
+
+入口 `docs/visual-discussion/20261021_cross_case_followup_work_review/README.md`，三頁向量放大PDF `output/pdf/cross-case-followup-review.pdf`與三PNG、study／verify／build_review、study-inputs／followup-results／cutoff-views／comparison-findings／source-provenance／source-locations／verification／figure-manifest／manual-qa及WORK_HANDOFF同目錄。承接8e2260dc，仍Work，無新增人工問題，不重問A ABC G2、B大小帶與原微小段。
+
+G2對37.15：7/10收下後10筆收下，7/25起7筆收上；7/13影線過收仍下、7/14高恰等。7/25收回後6筆全收上，7/28低穿收上、7/31及8/2低恰等；同期最高37.80仍低較早共同38.05～38.25（7/7知）。有局部收回支持，不能升整體G2恢復／較早區收復。ABC6/2 C27.70收下28.45，H29.05仍跨含；之後8筆整根下、最高28.00，不等6/12新活動才更新，原39不延長。A10/15越47.35，10/16一筆L48.00 C49.15續上；沒返回觀察非已驗回測，不能借別案後續補證據。B前輪摘要只拷貝未重算；A9/17同源原高／raw不重複票。
+
+四新查詢未見讀法時序矛盾，只是有限事後指定一致性，非盲測／分類率。證據綁原參照來源／起點／截止；出生固定、後續更新目前位置，不倒填不刪舊跨越，不用相同等待筆數才承認新的收回。G2兩起點同參照演變鏈非新帶或獨立樣本；與較早活動同G2背景、各自價位來源保持並列。ABC39與後8可連看弱化但不合併身份；A跨越隔日續行非另生帶。四項觀察關係提案不升正式合併父子。原G2人工1/16～8/16的136／5/2代表、ABC39／5/13代表、A上漲短整再漲與10/7足夠及全部已答保持。
+
+study1／verify1：15案例截止／23查詢截止前綴、未來價量污染、全量1、方向價格鏡射角色、4原價結果、出生固定與未來起點不漏、相等嚴格整根、同源不多票及B全等通過；鏡射不驗上下交易策略對稱。builder1／render1、3頁全實看、零影像物件、EOF與暫存核後替換／import不動成品、6來源SHA及圖窗筆數另核，原分支6來源blob SHA回讀相符。原core／MACD／舊driver／舊verifier／原過破量研究／產品測試與新行情瀏覽器Android皆0。
+
+主背景G2382／ABC346／A432保存K，各有至少六個月細圖136／126／135；G2新細圖1/3～8/2恰136與原人工1/16～8/16共136是不同範圍，不混身份。全六窗逾六個月，先大後小，同附圖片與可放大版；六個月非固定結構窗。Raw公司行動／完整日曆／歷史公開可得及全部舊缺日保持。正式站穩／成功失敗／確認日、同層合併父子主次、價界成員及反應仍null；分類NOT_VALIDATED、用途NOT_ESTABLISHED、新Android NOT_TESTED_NEW_BUILD、行動與飛輪成效NOT_EVALUATED，historical_signal_eligible=false。
+
+下一步Work將單一參照的支持接回較早活動與整體範圍，先分已到／未收復，再比較活動歸屬候選；不重做同批事件或機械堆欄位，不發明N日深度百分比量倍數或帶寬分數。真正重要新核心才附充分廣角圖問。保留main全後續與原引擎策略來源舊圖，例行多步與原分支交付已授權，不部署付費交易訊息子代理。以下歷史非本輪重跑。
+
+---
+
+## 2026-10-21 最新：B突破後守價／返回／收回的後續證據已核，未定固定天數
+
+入口 `docs/visual-discussion/20261021_b_followup_holding_work_review/README.md`；兩頁可放大向量PDF `output/pdf/b-followup-holding-review.pdf`、新PNG、study_followup／verify_followup／build_review、followup-evidence／cutoff-views／episode-summaries／verification／source-provenance／figure-manifest／manual-qa及WORK_HANDOFF同目錄。承接2805d811，量可支持但未放量不否決；B大小帶包含關係、原微小段與A ABC G2已答均不重問，沒有新增人工問題。
+
+三起點後續均排除當筆：6/4收過33.20後17筆16上1下，6/8收下、6/9收回；6/9再收過後14筆全收上，6/10／11低點穿價而收上，最低後續C33.65／L33.05；6/22收過35.50後6筆1上5下，6/24收下截至6/30無再收上，6/25 H35.80 C35.45只是影線越過，末3筆整根在下。相對33.20有較完整守價支持，相對35.50有未收復反面，兩層可並存。6/4與6/9是同一參照返回／收回歷程，不當兩個獨立成功樣本。原高代理非正式帶界，不追認任意小框。
+
+固定原出生價格證據，後續隨截止逐步更新，不倒填原突破日、不刪已跨過。新增支持來自具體價格事實而非時間本身；14／5等只計保存紀錄，非N日成功／失敗門檻或獨立票。正式站穩、成功失敗與確認日期仍null，觀察截至6/30開放，不補其後行情。低穿後收上、收下未收復、收下後再收上分開；描述視圖非正式生命階段分類器。
+
+新study1／verify1：12截止前綴、未來價量污染及全部量改為1不改價格證據，3固定既有出生、3原K結果、未來起點不暴露、後續不含當筆與來源SHA通過。三原跨越回連前輪path-evidence，不重跑原過破或量比較；新研究無量硬門檻，非低量突破成功率驗證。builder2／render2，第二次僅改圖中1／2／3避免混原案例；最終兩頁實看、零影像物件，第一頁沿用原358筆向量背景且內容流全等，非重建；第二頁新167筆，均逾六個月。暫存核完整才替換。原core／MACD／舊driver／舊verifier／產品測試及新行情瀏覽器Android皆0。
+
+下一步仍Work，用三種後續角色對照其他保存原價路徑，檢查支持與反面如何改變各層閱讀，不再重做同批事件或只堆相同欄位，不先凍結天數／深度／百分比／量倍數。正式界成員父子與反應仍未定；分類NOT_VALIDATED、用途NOT_ESTABLISHED、新Android NOT_TESTED_NEW_BUILD、行動與飛輪成效NOT_EVALUATED，historical_signal_eligible=false。Raw公司行動／完整日曆／歷史公開可得及全部原缺日限制保持。判讀圖至少六個月且足以看清大小範圍，同附圖片與放大版；真正重要新核心才問。保留main全後續與原引擎策略來源舊圖，例行多步及同分支交付已授權，不部署付費交易訊息子代理。以下歷史非本輪重跑。
+
+---
+
+## 2026-10-21 最新人工原則：未放量不否決成功，優先觀察突破後站穩
+
+使用者明確確認：「是有帶量很好，沒帶量不一定就沒成功，還是看事後股價有沒有站穩突破高點價位」。量能放大是支持證據，非突破成功必要或充分條件；未放量不得直接判失敗。此處未放量不偷換為無成交或資料缺失。價格跨過、量能支持與事後守價結果分開保存，不刪量資料、不因沒量抹除已跨過事實。
+
+最新入口 `docs/visual-discussion/20261021_b_price_hold_decision/README.md`、decision.json及WORK_HANDOFF.md。新原則已答，不再重問。下一步Work優先研究大小層各自突破後的守價、返回與重收回，當時量能作支持或反面背景；前輪三種量比較仍僅描述，不需先挑帶量倍數才能研究價格路徑。
+
+事後站穩只可在後續資料出現時逐步確認，不倒填原突破日；返回也不抹除當日確有跨過。原B6/9～6/30收在33.20上、6/24回35.50下仍在33.20上只是分層證據，原高代理非正式帶界。站穩的時間／容許影線收盤返回／深度／重收回處理及數值充分條件仍null，不發明N日、百分比、倍量或自動交易規則。B大小帶並存、小帶可推進大帶以及A ABC G2全已答保持不問。
+
+本輪僅人工原則與交接保存，新圖行情／指標結構／驗證器產品測試／瀏覽器Android皆0。圖沿前輪兩頁放大PDF與PNG；之後判讀圖至少六個月且能看清大小範圍，同附放大版。分類NOT_VALIDATED、用途NOT_ESTABLISHED、新Android NOT_TESTED_NEW_BUILD、行動與飛輪成效NOT_EVALUATED，historical_signal_eligible=false；原Raw公司行動／完整日曆／歷史公開可得及全部缺日限制保持。維持Work，保留main全後續原引擎策略來源舊圖，例行多步自行完成，真正重要新核心才附充分圖問，不部署付費交易訊息子代理。以下舊量能資格表述按本節量非硬門檻解讀，非本輪重跑。
+
+---
+
+## 2026-10-21 最新：B小層向大層原高推進的價量路徑已核，兩層分開更新
+
+入口 `docs/visual-discussion/20261021_b_breakout_path_work_review/README.md`；兩頁向量PDF `output/pdf/b-nested-price-volume-path.pdf`、兩PNG、study／verify_study／build_figures、path-evidence／cutoff-views／selected-events／verification／provenance／figure-manifest／manual-qa與WORK_HANDOFF同目錄。承接e5766424已答大小帶包含關係，無新人工問題；A ABC G2及B大小帶／原微小段皆不重問。
+
+只以4/16 H33.20與2/26 H35.50作小／大層原高代理，非已核正式帶界，不追認原任意小框。6/3影線過33.20收未過；6/4 C33.45上跨、6/8 H33.10 C32.90整根回下、6/9 C34.20再跨；6/10／11低在33.20下而收仍上。6/17 C35.50僅相等、6/18 H36.25 C35.40影線過收未過且由等回下，不當嚴格異側跨越；6/22 C35.80收過35.50、6/24 C35.00回大參照下而小參照仍上。6/9至6/30所有保存收盤仍在33.20上。保留反覆與兩層當前狀態，不用一個已突破旗標，不把同一過程當獨立成功樣本或倒刪當日事實。
+
+量只作對前一保存日、凍結3/16～5/29共52筆中位量35,679,356股及此前20筆均量（不含當筆）三種描述，非三票或已定門檻；5/29未完整前中位量不可用。6/4 V71,753,146雖比前筆低，對兩基準為2.01／1.47倍；6/9為2.48／1.69；6/22為2.97／1.66。6/5的1.38／0.98與6/23的1.58／0.84保留基準分歧。量資格仍null，不把倍數或大於均量直升正式帶量／支撐或行動資格。
+
+study2／新verify2，修正相等離開與嚴格跨越；10截止前綴／未來價量污染、9原價路徑、3當筆量翻倍不改基準、來源中位量可用時點、分歧與原SHA通過。圖builder3／PDF渲染2，最終兩頁實看、零影像物件；曾核出不完整PDF（原因未定）已重建，改主入口與暫存核完再替換，最終pypdf／pdfinfo與import不改成品核通過。358筆一年半背景、167筆逾八個月細節，同附圖片與放大PDF，滿足至少六個月且看清大小範圍。沒有原core／MACD／舊driver／舊verifier／產品測試或新行情瀏覽器Android重跑。
+
+大小帶層次已答保持；正式帶界成員父子／反應／帶量資格仍null，historical_signal_eligible=false；分類NOT_VALIDATED、用途NOT_ESTABLISHED、新Android NOT_TESTED_NEW_BUILD、行動與飛輪成效NOT_EVALUATED。Raw公司行動／完整日曆／歷史公開可得與原缺日限制不改。下一步Work研究跨過當日與續行／返回期間量描述角色及基準差異，不重做同一過破或急選量門檻，真正重要新核心才附足夠圖問。保留main全後續原引擎策略來源舊圖，不部署付費交易訊息子代理。以下為歷史，非本輪重跑。
+
+---
+
+## 2026-10-21 最新人工答案：B大帶內有多個小帶，關注帶量突破的跨層路徑
+
+使用者認同方案二，明確理由是方案一大帶內包含方案二多個小帶；兩層同時存在。B幾個月整體問題已答ANSWERED_NESTED_LARGE_AND_SMALL_BANDS，取代下方PENDING_B_MONTHS_OVERALL_REVIEW。不能只存選二而沿用「三個互不相屬獨立大帶」或「大小帶互斥」；助手前輪僅較大觀察優先的方案表述須依此修正。最新入口 `docs/visual-discussion/20261021_b_nested_band_decision/README.md`、decision.json及WORK_HANDOFF.md，圖沿前輪四頁PDF與PNG。
+
+小帶帶量突破，可能進一步挑戰／突破大帶；大帶價量配合突破，可能走出行情。保留大小帶各自身份及包含層次，研究小帶形成／辨認、價格跨過、量是否支持、向大帶推進、大帶跨過與返回。小帶突破可在尚未觸大帶高低前有意義，不把「在內部」當全部無用；原4/16～4/27微小段已答不重要仍保持，不自動把任意小框或三個月份段追認為已核小帶。可能不等於必然突破、已校準機率或自動交易資格，反面路徑保持。
+
+已確認此例大小帶層次及突破研究方向；精確日級起末價界、全成員數目代表、來源父子ID與自動充分條件仍未定。原29.40～35.50／月份框不升正式數值核准；帶量基準／門檻／觀察窗／持續性仍null，不補倍數分數機率。下一步維持Work以原B價量研究跨層路徑，不再重問此整體答案、A ABC G2或B微小段。判讀圖至少六個月、能看清大小範圍且同附圖片與放大版持續有效。
+
+本輪只保存新人工答案與交接，新圖行情／結構指標／分類器／舊測試／瀏覽器Android皆0。分類NOT_VALIDATED、用途NOT_ESTABLISHED、新Android NOT_TESTED_NEW_BUILD、行動與飛輪成效NOT_EVALUATED，historical_signal_eligible=false。原Raw公司行動／完整日曆／歷史公開可得及全部缺日限制、收盤跨參照可更新問題而非大結構成立、重用形成點非多次反應保持。保留main全後續原引擎策略來源舊圖，例行多步與同分支交付已授權，不部署付費交易訊息子代理。以下舊待答與互斥方案文字以本節人工答案為準，不當本輪重跑。
+
+---
+
+## 2026-10-21 最新：B較大帶兩方案；判讀圖至少六個月且附放大版
+
+使用者明確要求：圖形判讀主圖時間至少六個月，仍須擴展到能看清大範圍與小範圍；同時提供圖片及可放大版本。六個月只是下限，不是充分範圍或固定結構窗。後續先由大到小，不再從局部圈起只跟自己比較。已存display-policy.json。
+
+最新入口 `docs/visual-discussion/20261021_b_broad_merge_work_review/README.md`，四頁向量PDF `output/pdf/b-broad-merge-review.pdf`及四張PNG、build_review.py、proposals／evidence／figure-manifest／manual-qa／source-provenance、WORK_HANDOFF同目錄。主背景2025/1～2026/6共358筆，兩方案及路徑頁2025/6～2026/6共263筆，截至4/28背景2024/10～2026/4共368筆；全逾六個月。兩方案用相同日K、價量座標；4/28後只作事後背景，第三頁完全無後續K。
+
+B原4/16～4/27微小波動人工角色已答且局部問題結案，不再重開。這次比較11月低位、12月至翌年2月回升、3月至5月回落：方案一合看較大帶候選觀察且保留內部階段；方案二三組價格帶候選並列。工作讀法先保留方案一觀察容器，非使用者新大範圍核准或正式合併。閱讀分段非正式起末，原總域29.40～35.50非正式價界；12/4～3/13原30.40～35.50包含3/16～5/29原30.65～33.20，只能指出重心變動不足，不能用包含倒推合併。正式整體裁決仍未定，新增待答PENDING_B_MONTHS_OVERALL_REVIEW只問2025/11～2026/5是否同一較大帶或有應獨立成帶的活動；範圍可調整、不強制二選一，不重開原4月微小段。這會影響帶內變化與離開舊帶的判讀，屬重要核心。
+
+新原價路徑：5/28 C30.70已低於3/23 L30.85，仍高於11/10 L29.40，不能把較近低點下穿直升大帶跌破。對2/26 H35.50，6/17 H35.90 C35.50收平、6/18 H36.25 C35.40影線過收未過，6/22 C35.80為保存日K中2/26後首次收過，6/24 C35.00又回下；可當日更新問題不等新小帶，非正式突破／反應或行動資格。5～6月不回填4/28可知判斷。
+
+本輪builder2、PDF渲染2，最終四頁實看；原1213有序唯一K／SHA、全圖六個月下限、兩方案同軸與原域／精確原價路徑通過，舊driver／verifier／產品測試與新行情瀏覽器Android皆0。A ABC G2原答案全保留不問，形成點重用非多次反應保持。正式合併父子／起末／價界／全成員仍null、historical_signal_eligible=false；分類NOT_VALIDATED、用途NOT_ESTABLISHED、新Android NOT_TESTED_NEW_BUILD、行動與飛輪成效NOT_EVALUATED。Raw公司行動／完整日曆／歷史公開可得及原缺日限制不改。維持Work，保留main全後續原引擎策略來源舊圖，不部署付費交易訊息子代理；例行多步自行推進，真正重要整體歧義才附充分圖問。以下為歷史，非本輪重跑。
+
+---
+
+## 2026-10-21 最新人工答案：B只是大帶內微小波動，研究由大看到小
+
+使用者看完廣角後明確指出，原圈選B4/16～4/27未觸及較大價格帶高低點，只是帶內微小波動，對這次整體判斷不重要；應先從大範圍辨認同一價格區塊帶，再看內部細節。原局部一個或兩個整理的問題CLOSED_NOT_MATERIAL_TO_OVERALL_BAND，不再提問。B整體角色已有人工答案INTERNAL_MINOR_FLUCTUATION，不能仍概括為全部未定；但本次未指定正式大帶精確起末價界／代表點／全成員，也未選原局部方案一或二。
+
+最新入口 `docs/visual-discussion/20261021_top_down_band_work_review/README.md`、decision.json及WORK_HANDOFF.md。廣角圖沿前輪四頁PDF與原PNG。本輪只保存人工答案及調整研究順序，沒有新圖行情、指標結構／分類器／產品測試或Android驗證，舊證據保持。
+
+後續先以足夠廣角辨認較大價格帶及高低參照，再看觸及／跨過／返回，最後看內部活動是否改變整體判斷；不得讓自行圈的小段只與自己比較，或把每個局部差異升為重要主結構裁決。由大到小是判讀順序，不等於最長窗／最寬框自選主帶；本例不擴張為所有未觸邊波動一律無用的通用策略門檻，不增造帶寬分數。微小例行問題自行依已定原則處理，真正重要新核心才附充分前後可放大真圖問。
+
+A ABC G2所有原答案、跨原參照即可更新問題但非新大結構、重用形成點非多次反應均保持不重問。正式合併父子起末價界仍null、historical_signal_eligible=false，分類NOT_VALIDATED、新Android NOT_TESTED_NEW_BUILD、行動與飛輪成效NOT_EVALUATED；來源Raw公司行動／日曆／歷史公開可得限制保持。維持Work，保留main與全後續原引擎策略來源舊圖，不部署付費交易訊息子代理。以下舊B未答文字須按本節新角色答案解讀，非本輪重跑。
+
+---
+
+## 2026-10-21 最新更正：B圖窗不足，撤回窄窗二選一並補廣角
+
+使用者明確指出：「你若要問圖形問題，圖片切的範圍一定要夠多。這樣的範圍資料無法回答你的問題」。往後真正新核心圖形問題須先給足前後背景及可放大廣角，再附局部；不能以局部裁切逼整體歸屬或限制起末。範圍不足先補圖、撤回原裁決要求，不把無法回答當否決或批准。事後形狀背景與歷史當時可知資料必須明示分開。
+
+最新入口 `docs/visual-discussion/20261021_b_wide_context_work_review/README.md`，四頁向量圖冊 `output/pdf/b-wide-context.pdf`：兩年485筆主圖、五年1213筆總覽、一年241筆細節及截至4/28一年半368筆；四張PNG、build_context.py、figure-manifest、review-state、source-provenance、manual-qa與WORK_HANDOFF同目錄。前三圖4/28右側117筆僅供事後背景，不回填歷史判斷。紫色只定位原B來源，非整體邊界；本次圖窗不是通用結構窗。
+
+前輪B4/16～4/27二選一及助手方案二偏好均撤回，優先取代下方舊「首次核心待答」。user_decision=UNDETERMINED、previous_question=WITHDRAWN_INSUFFICIENT_CHART_CONTEXT、assistant_preference=null，未取得使用者整體合併／拆分答案；補圖完成亦非使用者已認可範圍充分。原數值與兩方案只保留歷史，不預設原八根K是整體起末，不再照問同一二選一。先從完整走勢辨認所談過程，再比較活動歸屬；B正式結構仍未定。
+
+本輪builder4次，最終四頁PDF渲染實看、原1213唯一有序K／四窗筆數與截止／來源SHA核對，無新行情、結構或指標重算、舊測試／瀏覽器Android。原A、ABC、G2答案不重問；跨原參照即可更新問題但非正式大結構，重用形成點不算多次反應保持。正式合併父子／起末／價界／主次／反應仍null，historical_signal_eligible=false；分類NOT_VALIDATED、用途NOT_ESTABLISHED、新Android NOT_TESTED_NEW_BUILD、行動與飛輪成效NOT_EVALUATED。原來源與Raw公司行動／日曆／歷史公開可得限制保持。維持Work，保留main全後續原引擎策略來源舊圖，不部署付費交易訊息子代理；例行多步與同分支GitHub保存已授權，僅重要新核心有充分圖才問。以下歷史不當本輪重跑。
+
+---
+
+## 2026-10-21 最新：B具體合併兩方案已備，首次核心圖形裁決待答
+
+入口 `docs/visual-discussion/20261021_b_merge_options_work_review/README.md`；b-merge-options.png、merge-proposals／study-inputs／evidence-views、prepare_review／build_figure、provenance／verification／manual-qa／figure-build與WORK_HANDOFF及回讀收據同目錄。從4540d4af接續，最高資金閉環／飛輪目標仍第一節、PROJECT_VISION不改，維持Work不接分類器產品。
+
+本輪B-shared-path／2884只問高亮4/16..4/27來源段：方案一同一局部整理內部下移，方案二上方整理轉弱、較低活動另列（仍可同屬較大觀察鏈）。原上方4/16..23共6筆／3段，共同32.75..33.00、raw32.35..33.20，4/24才知；下方4/22..27共4筆／2段，共同32.45..32.55、raw32.00..33.10，4/28知。共享4/22..23一段下跌及2筆，去重4段8筆；交集空不當通用合併否決，共段也不決定合併。
+
+4/23 C32.45在其後4/24才確認上方共同區下；4/24與27 C32.55、4/28 C32.45均未收回上方，4/28 H32.95卻影線返回上方區，反面證據保留、不稱無接觸或壓力成功。助手研究偏好方案二是分析，不是使用者裁決。user_decision=PENDING_NEW_CORE_REVIEW、manual_B_structure_label／formal_merge=null、兩方案user_approved=false；需展示已完成圖後問一次新的核心形狀身份。無答不可採助手偏好；答覆僅此例形狀不自動定最早起末、正式價界或通用門檻。原A／ABC39／G2人工136及全部原答案不重問。
+
+新source audit1，4截止／前綴／未來價量人工污染／未可用幾何污染、兩原K與leg幾何、共段去重8筆、4/28影線返回與收盤未回、4來源SHA通過；圖builder2、最終圖實看綁SHA。廣角2/26..4/28及兩個相同K線／座標近圖，不用其後行情，框只示候選來源範圍、非已定價界起末，4/28不硬納原來源期；原4/16H33.20可見不倒填4/30才可用原3%點。舊driver／verifier／產品測試0，無新行情瀏覽器Android。
+
+正式合併／父子／起末／價界／主次／反應仍null、historical_signal_eligible=false；分類NOT_VALIDATED、用途NOT_ESTABLISHED、Android NOT_TESTED_NEW_BUILD、行動與飛輪成效NOT_EVALUATED。原參數策略、Raw／公司行動／日曆／歷史公開可得及所有缺日限制保持，10/7原snapshot／numeric_frame無仍不補造。下一步Work先承接B首次核心答案，不再重問A ABC G2、不重跑無新變更；不以同價／共段／最近／最大窗／包含／全分離／候選數或空交集單獨決定合併，不發明帶寬分數。保留main全後續與原引擎策略來源舊圖，不部署付費交易訊息子代理。以下為歷史，非本輪重跑。
+
+---
+
+## 2026-10-21 最新：同一較大觀察與局部並列可共存，正式合併另判
+
+入口 `docs/visual-discussion/20261021_process_scope_work_review/CORE_SCOPE_DECISION.md`；兩新PNG、README／WORK_HANDOFF、study-inputs／source-facts／relationship-proposals、prepare_review／build_figures、provenance／verification／manual-qa／figure-build及回讀收據同目錄。從e41fecc3接續，最高資金閉環／飛輪目標仍第一節，PROJECT_VISION不改，維持Work語意研究不接分類器產品。
+
+本輪研究處理：多段活動可放在同一較大過程觀察，同時保留局部身份；不把合看等同同ID正式合併。A與G2沿用原整體答案，ABC原39內活動保持內部並列；ABC6/2收破→6/3整根外→6/12才知下方活動，可作原弱化問題觀察鏈，但原39不延長成研究窗47，後續8筆不納原ABC。五條關係註記非互斥：原人工背景、觀察鏈提案、局部比較分開，非新增已核正式交易規則／歷史分類輸入。
+
+G2局部反例：1/17..2/9共同36.60..36.75、2/10知；3/15..24共同36.35..37.10、3/27知，幾何包含舊共同區，但來源8筆保存收盤皆未在舊區，3/27確認K C36.65另記。可同時屬既有G2情境與局部僅幾何比較，不因此合併或認證回測；也不以未有保存收盤再入否定日內成交／影線或整個G2。原G2人工136及5/2代表、A上漲整理再漲／10/7足夠、ABC39及5/13代表與全部已答保持，不重問。
+
+新source audit1：八活動原K筆數高低／右確認K、ABC39／後8分開、G2人工136、價格橋接時序、八筆反例及3/27另記、8/3原缺日、7來源SHA通過；source_facts函式無人工標籤輸入。本輪非歷史prefix模擬或正式合併算法驗證，勿沿用前21截止當新測。新圖builder2、兩圖實看綁SHA，括弧只標時間、高度非價位；A8/12僅示例窗非正式起點，G2只放大1/16..3/27保留完整人工範圍資格。舊driver／verifier／產品測試0，無新行情瀏覽器Android。
+
+尚未定已縮至同層正式合併判準與唯一父／主結構；正式起末成員價界／主要性／父子合併／反應／獨立確認數／primary_pressure_id仍null，historical_signal_eligible=false；分類NOT_VALIDATED、用途NOT_ESTABLISHED、Android NOT_TESTED_NEW_BUILD、行動與飛輪成效NOT_EVALUATED。Raw／公司行動／日曆／歷史公開可得及全缺日限制保持，10/7原snapshot／numeric_frame無仍不補造。舊主帶月精度及重要性保持，不補35.45正式上緣。
+
+下一步仍Work用原B-shared-path等尚無人工整體答案的方向對照，準備真正同層合併方案廣角圖，重要新核心歧義才問；B未有人工負區間標籤不得代填。不重做相同過破時序、不只堆欄位、不把本輪觀察容器當正式合併規則，不以同價／近／最近／最大窗／共來源／共段／包含／全分離／現價在內／數量自選主結構父子或主要性，不發明帶寬分數。保留main全後續及原引擎策略來源舊圖，不部署付費交易訊息子代理。以下為歷史，非本輪重跑。
+
+---
+
+## 2026-10-21 最新：ABC與A跨案對照，分層讀法一致但跨越範圍不同
+
+入口 `docs/visual-discussion/20261021_cross_case_reading_work_review/README.md`；ABC／A新對照PNG、study-inputs／cross-case-views／cross-case-findings、study／verify／build_figure、provenance／verification／manual-qa／figure-build、WORK_HANDOFF及回讀收據同目錄。從93f64e61接續，最高資金閉環／飛輪目標仍第一節，PROJECT_VISION不改，維持Work不接分類器產品。
+
+三指定案例可用同一閱讀順序，未見時序矛盾但非通用分類規則驗證。G2舊保存7/25 C37.40回37.15、仍下較早38.05..38.25及40.25；ABC5/26完成活動共同區30.55..30.60→29.80..30.30下移且raw交疊，6/2 C27.70已在原28.45及較早raw28.50下、H29.05仍跨含，6/3才整根外、6/12才知6/6..11下方活動。收破當日更新不等新小帶、不定通用終點，人工ABC39保持。原5/13右確認K H31.40不改較早來源raw31.20；原高標記5/14才知，人工代表不撤。
+
+A10/6 C45.45只過近端共同區、仍下較早45.65；10/14 H=C47.30恰等較早共同上緣且未過47.35；10/15 L47.60 C48.80整根在較早raw47.35及同價原高上、日K不含原價，10/16 C49.15仍上。跨越範圍比G2較近參照收回更廣，但原高與較早raw同源9/17，非兩獨立票／回測成功／新大結構。最新兩A局部共turn、左證據10/2早於前段10/6可知，不當全新獨立票。原A上漲整理再漲及10/7足夠、ABC較弱39及5/13代表、G2人工136及5/2代表全部保持；自動正式映射未定不撤人工答案，原35.45不補舊主帶正式上緣、不因小core降大背景。
+
+新driver1、verify1，21截止／前綴／未來價量人工污染／未可用幾何污染／追加保留／正式未知、六活動原K與leg幾何／六對來源、ABC與A相等過破／可知時序／來源重用、6來源SHA通過。G2只讀前輪固定視圖不重算，新圖builder2、最終圖實看綁SHA；舊driver／verifier／產品測試0，無新行情瀏覽器Android。有限事後指定非盲掃描／分類率，Raw／公司行動／日曆／歷史公開可得與缺日限制保持。正式結構／父子合併／終點／反應／主要性／獨立確認數／primary_pressure_id=null，historical_signal_eligible=false；分類NOT_VALIDATED、用途NOT_ESTABLISHED、Android NOT_TESTED_NEW_BUILD、行動與飛輪成效NOT_EVALUATED。
+
+下一步仍Work回到多段活動何時屬同一較大過程或只並列局部的角色歧義，用已清楚價格事實縮小問題，不重做同樣過破時序或只堆欄位，不依最近／最大窗／同價／共段／全分離／當前在內／數量自選主結構父子，不發明帶寬分數。全部已答不重問、保留main全後續與原引擎策略來源舊圖，不部署付費交易訊息子代理。以下為歷史，非本輪重跑。
+
+---
+
+## 2026-10-21 最新：返回回連局部與背景，反證先對準原判斷
+
+入口 `docs/visual-discussion/20261021_return_context_work_review/README.md`；新廣角加局部PNG、study-inputs／context-views、study／verify／build_figure、provenance／verification／manual-qa／figure-build與WORK_HANDOFF及回讀收據同目錄。從cf0b7325接續，最高資金閉環／飛輪目標保持第一節，PROJECT_VISION不改，仍Work不接產品。
+
+本輪原G2三組活動：6/28..7/6共同38.05..38.25，7/7知；7/14..18共同36.75..37.00、raw36.50..37.15，7/19知；7/25..28共同37.25..37.35、raw36.80..37.65，7/31知。7/25 C37.40可當日更新收回37.15，不等7/31，但仍低於較早共同區及原39.25／40.25；7/31新增完成局部活動支持回升，raw仍交疊，不當整根完全分離。反證先對準原判斷：收回改目前仍下，新完成活動回升改局部一路下移，不能連較早區與原高一起升成已收復。可將較早活動→下移→返回合看，未定新較大結構／大G2恢復。
+
+原3%框4/24..5/15（5/30知37.15..40.25）與5/2..7/24（7/25知36.00..40.25）共享原5/2高、5/15低兩turn，不當新增測壓或兩張獨立票；7/24原K低36.00當日可見與原3%標記7/25才可用分開。三指定局部兩兩無共leg／turn、完整左證據晚於前可知只作來源新鮮度，不是統計獨立或升層。
+
+新driver1、verify1，13截止／前綴／未來價量人工污染／未可用zone context pivot值污染／追加保留／正式未知，三活動原K與leg幾何、三對來源關係、精確時序與7來源SHA通過；新圖builder2，最終圖實看綁SHA。有限事後同G2研究，非盲掃描／分類率；舊driver／verifier／產品測試0，無新行情瀏覽器Android。最晚8/2、不跨8/3原缺日，Raw／公司行動／日曆／歷史公開可得限制保持。正式結構／主次父子合併／反應／獨立確認數／primary_pressure_id仍null，historical_signal_eligible=false；分類NOT_VALIDATED、用途NOT_ESTABLISHED、Android NOT_TESTED_NEW_BUILD、行動與飛輪成效NOT_EVALUATED。
+
+下一步仍Work用既有ABC較弱活動／A上越相反方向對照，研究回到單一舊參照與收復較早完成活動差異，不由G2單例推廣。保留原G2人工136與5/2代表、ABC39與5/13代表、10/7足夠及全部已答，不重問、不因新小core降較大主要帶；不以一次收回下穿／量較大／同側／來源重用或候選數定整體，不發明帶寬分數。保留main及全後續、原引擎策略參數舊圖，不部署付費交易訊息子代理。以下為歷史，非本輪重跑。
+
+---
+
+## 2026-10-21 最新：真實返回分到達與收回，先前見證不覆寫
+
+入口 `docs/visual-discussion/20261021_real_return_paths_work_review/README.md`；新廣角加近看PNG、study／build_figure兩程式、return-paths／verification／figure-build／manual-qa、WORK_HANDOFF及回讀收據同目錄。從499a11ba接續（含使用者507cf5e），先補前輪20檔byte／SHA256／Git blob SHA回讀收據；原研究兩頁PDF與程式不改不重跑。資金閉環／飛輪最高目標保持第一節、PROJECT_VISION不改，仍Work。
+
+新真實返回：G2原36.15之4/11上移保留，7/21 L=C36.10、H36.65首次後日K再含且收下；7/25 C37.40又收上。原37.15之7/10 C36.85下移保留，7/13 H37.25 C36.80先到達未收回，7/14 H37.15恰等且C37.00仍下，7/25 C37.40才收上、7/26 C37.25仍上。原參照36.15與37.15不同，不合成新帶或計多次反應；返回更新當前位置不抹掉先前上移下移，也不直接判較大結構失效恢復。原G2人工136與5/2 H40.25代表、ABC39及5/13代表、10/7足夠與所有已答保持。
+
+兩條事後指定重疊路徑，15截止／前綴／未來價量人工污染／原出生首見證固定／獨立首返回事件及2相等缺日合成通過；新driver1、圖builder2，最終圖實看綁SHA。舊driver／verifier／產品測試0，無新行情瀏覽器Android。圖止8/2、不跨8/3已列缺日，非全日曆認證；來源Raw及公司行動／歷史公開可得限制保持。正式反應／結構變化／獨立反應次數／primary_pressure_id=null，historical_signal_eligible=false；分類NOT_VALIDATED、用途NOT_ESTABLISHED、Android NOT_TESTED_NEW_BUILD、行動與飛輪成效NOT_EVALUATED。
+
+下一步仍Work將真實返回回連既存局部活動及較大背景，研究反面證據只改當前片段或需要重檢較大觀察；收盤跨原參照即可更新問題，不強制等新小帶。不得以一次收回下穿、同側、量較大或候選數定整體，不發明帶寬分數，不重問已答，不降原主要帶。保留main及全後續、原引擎策略參數舊圖，不部署付費交易訊息子代理。以下為歷史，非本輪重跑。
+
+---
+
+## 2026-10-21 最新：反應候選按時點更新，當日收回與量較大都不足單獨確認
+
+入口 `docs/visual-discussion/20261021_response_witnesses_work_review/README.md`；新兩頁PDF／兩PNG、response-witnesses／queries／summary／exploration-notes／verification／source-provenance／figure-build／manual-qa、三程式與完整WORK_HANDOFF及回讀收據同目錄。從507cf5e接續，最高資金閉環／飛輪目標仍AGENTS／CONTINUE第一節，PROJECT_VISION不改，維持Work不接產品。
+
+本輪把原參照確認後日K價域相交的當日候選，與後續影線／首個後收分開。凍結第一相交K原高低只作描述地標，不是新箱、正式反應必要充分條件或停損。G2原3/13低36.15於3/23確認，3/28 L36.10 H36.65 C36.20仍原低上，3/29影線36.05下探、4/6影線先上越，但4/11 C37.45才後收在該K上；原5/15低37.15於5/30確認，7/7 L36.90 H37.50 C37.30同收原低上，下一筆7/10 C36.85卻在該K下。兩例不能當日固定成成功支撐；後收見證日量均比相交日大（27.29→32.19、19.47→26.00百萬股），方向相反，量較大不單獨指向上漲。
+
+ABC原4/10高31.20於4/11確認，5/12 H=C31.20相等不收過；5/13 H31.40 C31.10仍在5/12凍結30.80..31.20內，5/14 C30.35才後收在下，不改5/13代表／升31.20主壓力。原4/8低28.45於4/10確認，6/2 C27.70已在下、6/3 C26.85續下，人工ABC39仍保留。相鄰相交段3/28..31四筆／7/7..10兩筆／5/12..13兩筆不作多次獨立測試；續段K不另起獨立出生。A10/15跳過47.35無日K相交仍保留原參照跨越觀察，形成K及同日確認來源不當確認後反應。首見證是過去事實不是當前趨勢，返回保留首見證並更新當前路徑；日K相交不證日內先後或精確成交。
+
+一次事後探索挑相反路徑，非盲掃描／成功率；新driver1，六指定對照22截止／四合資格出生。新verify2（第二次加返回合成）、圖builder2／渲染2（移開原參照標籤），最終兩頁實看綁SHA。22視圖／前綴／未來價量人工污染／未可用參照污染／正式未知、13首後收及凍結／26影線／13相交段／18精確量比較、4出生保持與相等雙影線零量缺日返回等反例、7來源SHA通過。舊driver／圖／core指標／CLI bootstrap舊產品測試0重跑，無新行情瀏覽器Android。
+
+支撐壓力作用／量資格／主要性及正式反應未定，support_or_pressure_response_demonstrated／volume_qualification／importance_score／formal_reaction_confirmation仍null；正式形成起末成員／父子合併／selected_role／primary_pressure_id／歷史選取null，historical_signal_eligible=false，10/7原snapshot／numeric_frame不補造。分類NOT_VALIDATED、用途NOT_ESTABLISHED、行動與飛輪成效NOT_EVALUATED、新Android NOT_TESTED_NEW_BUILD。下一步仍Work把當日候選與後續正反路徑回連既存局部活動及較大背景，分清反證只改當前片段或需重檢較大觀察；不以單次正負／量較大／同側／接近／候選數定整體，不發明帶寬或分數。不因時間自動升確定性，不把原高未再含當大帶不存在，原所有答案不重問、不降原代表與較大帶。保留main及全後續、原參數策略來源舊圖，不部署付費交易訊息子代理。以下為歷史，非本輪重跑。
+
+---
+
+## 2026-10-21 最新：原參照收盤跨越可更新觀察，形成點重用不算後續反應
+
+入口 `docs/visual-discussion/20261021_reference_paths_work_review/README.md`；新兩頁PDF／兩PNG、reference-paths／queries／formation-point-reuse-audit／summary／verification／source-provenance／figure-build／manual-qa、三程式與完整WORK_HANDOFF及回讀收據同目錄。從6c6eaf8接續，最高資金閉環／飛輪目標仍AGENTS／CONTINUE第一節、PROJECT_VISION不改，仍Work研究不接產品。
+
+新研究途徑：已可用原參照被保存收盤嚴格跨過，當日可更新跨過後路徑的觀察問題，不必等新局部雙向價帶完成；不等於正式新大結構、舊終點、清除壓力或交易資格。A原高47.35於9/23確認，10/14 H=C47.30仍下，10/15 O48.35 L47.60 C48.80已整根上且日K未含原價；前批「離開後再等下一根整根外」9/17框事件仍known10/16，不回寫。ABC原4/8低28.45於4/10確認，6/2 L27.65 C27.70已下但H29.05仍跨含，6/3 H28.00才整根下；6/2仍人工第39筆，不等6/12框下活動才更新觀察，也不定通用終點。
+
+同側局部活動不證受原參照約束。G2九個影線框含40.25全重用5/2形成高點，A五框含44.20全重用10/1形成低點；各原確認後無日K價域再含其原價，不算九次測壓／五次回測。ABC35.45與31.40確認後亦無精確原價再含；保留較大背景／代表，不由同側認證反壓，也不以精確點未再含否定較大帶。35.45不補主帶正式上緣，原主要帶月精度及未挑戰舊高前不降重要性保持。日K價域含點仍不證日內先後或精確成交，原形成來源與確認後新增證據分開。
+
+三組六事後指定原3%點、17截止／37參照視圖（34可用3遮罩），非主點選取或歷史快照。新driver1、verify2（新增形成點重用反例才重驗）、新圖builder1／渲染1，兩頁實看綁SHA；17截止／前綴／未來價人工污染／未可用參照值污染／正式未知、136全路徑及首事件、1047局部位置與可用時序、34不推作用／重要性、3遮罩、A與ABC時序各1、3同側無精確再含、4觀察問題出生追加保持、2方向合成、2形成來源重用、8輸入SHA通過。舊driver／圖／core指標／CLI bootstrap舊產品測試0重跑，無新行情瀏覽器Android。
+
+正式形成起末成員／主結構重要性／父子合併未定，support_or_pressure_response_demonstrated／importance_score、selected_role／primary_pressure_id／歷史選取仍null、historical_signal_eligible=false，10/7原snapshot／numeric_frame不補造；分類NOT_VALIDATED、用途NOT_ESTABLISHED、行動與飛輪成效NOT_EVALUATED、新Android NOT_TESTED_NEW_BUILD。下一步仍Work用確有原日K再含、收盤跨過及後來返回的有限案例，研究反應證據，並列原參照位置更新與已完成跨活動閱讀，不把同側／形成K重用當反應，不發明帶寬／接近或主要性門檻、不每片段升層。所有原已答不重問，保留main及全後續、原參數策略來源舊圖，不部署付費交易訊息子代理。以下為歷史，非本輪重跑。
+
+---
+
+## 2026-10-21 最新：局部補充與較大閱讀已分開，正式大結構仍未定
+
+入口 `docs/visual-discussion/20261021_broader_observation_topics_work_review/README.md`，新兩頁PDF／兩PNG、八對照二十截止reading-proposals／queries、summary／verification／source-provenance／figure-build／manual-qa、三程式與完整WORK_HANDOFF、回讀收據同目錄。從7790e911接續，最高資金閉環／飛輪目標仍AGENTS／CONTINUE第一節、PROJECT_VISION不改，仍Work研究不轉產品接入。
+
+本輪區分「足以另提跨活動閱讀」與「正式較大結構已成立」。ABC5/26可比較前後下移活動，出生閱讀4/8..5/26共34筆，仍補原ABC內部、不改人工39。ABC6/12才有6/6..11框下完成活動，可連舊28.45..31.40及同次離開歷程，出生閱讀4/7..6/12共47筆；6/13當前48不是人工成員。G2 4/27才有4/24..26框上完成活動，出生閱讀1/16..4/27共61；5/12 C37.80返回更新當前閱讀71，61出生證據／ID不改，不仍稱在框上、不刪或自動合併。三閱讀提案只是比相關局部證據更廣，沒有認定比人工已確認ABC／G2更高階的新結構。全新同價實收造訪只補重訪，幾何同價無path造訪與確認K當日入內分開；A來源重用、B共段只補已有活動；A10/16本次9/17框新離開無完成後續，追蹤不補未來。所有已答保持不重問，較大原參照不因新局部描述刪除降權。
+
+新假說主流程1、驗證1、圖builder1、渲染1，兩頁最終實看綁SHA；20視圖／前綴／未來價與人工標籤污染／正式未知、12原值範圍、14指定反例、3出生追加保留／3未可用幾何污染、2人工涵蓋及9來源SHA通過。是有限事後指定研究，不是盲掃描或通用充分條件／分類準確率；人工不入函式，舊driver／圖／core指標／CLI bootstrap舊產品測試0重跑，無新行情瀏覽器Android。正式形成起末成員／主要性／父子合併／選取仍null，primary_pressure_id／歷史選取null、historical_signal_eligible=false，10/7原snapshot／numeric_frame不補造；分類NOT_VALIDATED、用途NOT_ESTABLISHED、行動與飛輪成效NOT_EVALUATED、新Android NOT_TESTED_NEW_BUILD。
+
+下一步仍Work比較多段局部活動是否持續相對同一批較大原參照發展，辨別只改局部描述與更完整較大過程的觀察需求；不每片段升層，不只堆同價配對欄位或重畫同圖。原構成來源結束日不是正式較大終點／參照失效日；不單靠最近／最大窗／包含／共段／全新／分離／現價在內／數量選主父結構。不因新小core降低未挑戰舊主要帶高點重要性，原月精度與資料資格全保留。保留main及全後續、原參數策略來源舊圖，不部署付費交易訊息子代理。以下為歷史，不算本輪重跑。
+
+---
+
+## 2026-10-21 最新：截止觀察整合，研究局部活動連結較大背景
+
+入口 `docs/visual-discussion/20261021_structure_link_bundles_work_review/README.md`；先看新三頁PDF及STRUCTURE_LINK_RESEARCH.md，完整WORK_HANDOFF與原分支回讀收據同目錄。從9afc83d5接續，最高資金閉環／飛輪目標仍AGENTS／CONTINUE第一節，PROJECT_VISION不改。按四組23截止把原參照、局部共同活動、來源新鮮度、離開返回與現值合看，不選唯一主範圍。整合發現39缺比較、22未追蹤至截止，依既有純函式另存39比較／22延伸／26後續link，22舊截止前投影不變；最終指定23觀察缺比較及追蹤缺覆蓋皆0，不代表任意窗已齊。舊檔不改、基線另存及加防覆寫保護。過期開放追蹤不能當現在仍持續在外；當前價格與追蹤覆蓋分開。
+
+使用者最新明示下一步繼續Work研究局部價帶連結較大結構。新約束：原構成來源結束日不是較大結構終點／參照失效日。ABC原3%研究箱4/8..5/13、5/14知，後段5/19..23影線29.50..30.40／共同29.80..30.30、5/26知，仍可補充人工ABC內部活動；6/6..11框下活動6/12才知，連離開歷程，不把人工39延長成至6/13研究48。A同局部價帶可同時對更早36.30..47.35及較晚44.20..47.35原鄰接價域，價含但時間不全含，後者10/7才可用不填10/6；價域不是箱，不能選父。G2局部外移返回不截人工136，5/2 H40.25原3%5/9確認，4/27不得帶入。活動來源關係與較大背景參照關係分開保留，來源期／可知日／局部完整證據期／較大實際涵蓋期分開，不以價含或時間晚直接定父子或切斷背景。所有人工標籤另層事後顯示，未送組合器／連結函式，10/7足夠等原已答不重問。
+
+新組合主流程3、基線無損轉存1、驗證2；補充生成1及防覆寫拒絕檢查1；新結構對照程式2命令嘗試（首SyntaxError流程前失敗，修正後1成功）。23截止／前綴／污染、19追加保留、23基線事實、22延伸前綴、39新比較、7來源SHA及六指定參照／五前綴／不可用污染／G2點／兩事後人工涵蓋等通過。新圖builder1，最終三頁PNG逐頁實看綁SHA。舊圖／driver／原core指標／CLI bootstrap舊產品測試0重跑，無新行情瀏覽器Android。正式形成起末成員／價界／主要性／父子合併仍null，primary_pressure_id／歷史選取null、historical_signal_eligible=false；10/7原snapshot／numeric_frame不補造。分類NOT_VALIDATED、用途NOT_ESTABLISHED、行動與飛輪成效NOT_EVALUATED、新Android NOT_TESTED_NEW_BUILD。下一步仍Work研究原高低參照保留時，內部移動／框外活動／返回怎樣只改局部描述或足以另提較大觀察，不只堆欄位配對或重畫同圖；不以最近／最大窗／同價共段／包含／全分離／現價在內／候選數選正式主結構。不因新小core降未挑戰舊主要帶高點重要性。保留main及全後續、原參數策略來源舊圖，已答不重問，不部署付費交易訊息子代理。以下為歷史，非本輪重跑。
+
+---
+
+## 2026-10-21 最新：交疊中已可分全新活動、共段與來源重用
+
+入口 `docs/visual-discussion/20261021_overlap_fresh_evidence_work_review/README.md`；新三頁PDF／三PNG、overlap-role-registry gzip、selected-comparisons／selected-query-specs／figure-case-data、三程式、summary／source-provenance／verification／storage-verification／manual-qa、完整WORK_HANDOFF與回讀收據同目錄。從2b92f01接續，保留資金閉環／飛輪最高目標第一節，PROJECT_VISION不改。只讀531舊common zone及200研究turn／195leg，同保存觀察窗共存、known_on嚴格較晚才比較；共段、無共段但後段最早左證據日不晚於前段可知日、完整來源均較晚三類分開，後者不是統計獨立／較重要或多票。ABC較早30.55..30.60（5/13知，raw28.50..31.20，5/13 H31.40右證據另存），後段5/19..23共同29.80..30.30（完整左證據5/16，5/26知，raw29.50..30.40），可提出全新內部活動下移，即使影線仍交疊，不拆人工39筆／改5/13代表。G2新往返2/10確認36.60..36.75，2/7、8、9實收確在舊36.25..36.95內；另一3/15..24共同36.35..37.10雖涵蓋舊36.60..36.75，path內無保存收盤入內，3/27確認K C36.65入內只按當日記，不倒填／不推日內成交。B兩核心下移但共4/22..23 leg，A後組10/12知雖不共leg仍共10/5低收turn且左證據10/2早於前組10/6，不當全部來源全新；10/7足夠及全原已答保持。259觀察60483配對，743同日不排序；3948共段／2638重用期間／53897完整來源較晚，229幾何同價但無path實收造訪、984跨已列缺日保留資格，均重疊非市場獨立樣本或率。新driver1、儲存重建轉換1（核60483原ID及完整欄位，gzip2637902→276689byte，不依外部OHLC可完整展開）、verify1：60483獨立關係／531原框／12指定／42前綴／12污染／4未知不曝資料／4正仿射／8合成／5輸入SHA通過。新圖builder3，修ABC舊raw上緣及明示3/27當日入內後，最終三頁重渲染實看、五圖例核登錄與確認bar、綁SHA；舊圖／driver／core指標／CLI bootstrap舊產品測試0重跑，無新行情瀏覽器Android。正式形成起末成員／主要性／父子合併選取仍null，primary_pressure_id／歷史選取null、historical_signal_eligible=false，10/7原snapshot／numeric_frame不補造；分類NOT_VALIDATED、用途NOT_ESTABLISHED、行動與飛輪成效NOT_EVALUATED、Android NOT_TESTED_NEW_BUILD。下一步仍Work把全新移動／全新同價往返／共段共turn延伸／確認K入內與既存原高低參照、離開返回合看，研究保留較大觀察與並列後續片段的角色條件；不能單靠同價／共段／完全分離／現價在內／最近／最大窗或數量選正式主區間父子合併，不以新小core降低未挑戰舊主要帶高點重要性。全部已答不重問，保留main與全成果、原參數策略來源舊圖，不部署付費交易訊息子代理。以下為歷史，不算本輪重跑。
+
+---
+
+## 2026-10-21 最新：可另列外側局部活動，返回後的另次離開不倒接
+
+入口 `docs/visual-discussion/20261021_separated_followup_roles_work_review/README.md`；新三頁PDF／三PNG、followup-role-registry與selected-role-proposals兩gzip、三程式、summary／source-provenance／verification／storage-verification／manual-qa／完整WORK_HANDOFF及回讀收據同目錄。從71b90d5接續，最高資金閉環／飛輪目標仍AGENTS／CONTINUE第一節，PROJECT_VISION不改。只讀舊整根離開事件及531不可變共同zone，逐筆對固定舊框分外側收盤歷程：收回／收到對側結束，影線觸不代收回，已列缺日停止連續性不當價格返回。某次歷程先有整根外移，再有路徑影線全嚴格同側外的完成雙向共同活動，才另列外側局部活動角色候選，非正式新箱／舊終點／父子或所有整理必要條件；確認K已返回則只保留過去活動，不說目前仍外。不可變出生link與可變當前角色分開，後來返回不刪證據／不自動合併。ABC6/3整根在舊28.45..31.40下，6/6..11 raw26.90..27.65與共同27.15..27.30，到6/12才知，可另列框下活動，6/11無此完整候選；原ABC39／5/13代表／舊較大主要帶保持。G2二月歷程3/1 C37.80回35.90..37.85已結束；4/21另次外收、4/24整根上，4/24..26 raw38.20..39.80及共同38.50..39.10於4/27知，須連4/21歷程不倒接二月，5/12又回，仍保留人工大G2與5/2代表。2884 10/16來源最後單筆無新種子雙向證據，不補未來、不否定已答10/7整理；方向對照核心下移但影線框交疊，不能只核心不相交就說分離。637事件截止觀察含自動633出現＋外部新增4、357原去重事件、503池內歷程出生／10175去重role links；重疊非市場樣本或投票。新driver1、無損儲存轉換1（gzip2128679→694638byte、展開全等）、新verify1：650查詢／913歷程視圖／20503link出現獨立原K重建、531原框、13指定／128逐筆前綴、13污染／13正仿射／7合成及6輸入SHA通過。新圖builder1，三頁渲染實看綁SHA；原圖／原driver／core指標／CLI bootstrap舊測試0重跑，無新行情瀏覽器Android。事後保存候選宇宙非盲掃描或歷史選取證明，10/7無原snapshot／numeric_frame不補造；歷史選取／primary_pressure_id與正式起末成員父子角色仍null、historical_signal_eligible=false；分類NOT_VALIDATED、用途NOT_ESTABLISHED、行動與飛輪成效NOT_EVALUATED、Android NOT_TESTED_NEW_BUILD。下一步仍Work研究內部價位移動與外側活動交界，合看影線交疊／共同核心移動／原高低點／返回與目前位置；不以完全分離當所有區間必要、不用最近／同價／共段／最大窗／數量選主區間，不以新小核心降低未挑戰舊主要帶高點重要性。全部已答保持不重問，保留main與全成果、原策略參數來源舊圖，不部署付費交易訊息子代理。以下為歷史，不算本輪重跑。
+
+---
+
+## 2026-10-21 最新：局部價帶與較大原來源關係，價格包含不足以定父子
+
+入口 `docs/visual-discussion/20261021_original_source_roles_work_review/README.md`；新三頁PDF／三PNG、source-role-registry與selected-source-roles兩gzip、summary／source-provenance／verification／storage-verification／manual-qa、三程式與完整WORK_HANDOFF及回讀收據同目錄。從cfe73ac接續，保留資金閉環／飛輪最高目標第一節，PROJECT_VISION不改。只讀原已保存pivot／box靜態白名單，按原confirmed_at／first_observed_at及來源日期篩可用，不帶截至10/16的path／pending／anchor_relation等解讀，不冒稱較早原核心快照或公開可得。保留同scale同原segment相鄰異類點價域（非箱）與原research box，和既存common zone按價格／來源時間／右證據窗／原點日期分連結，出生可用與較晚新增分開，不倒填。A共同44.85..45.35在10/6有完整證據；原3%9/17高47.35→10/1低44.20於10/7才可用，價域包含核心而時間未包完整9/30..10/5；更早36.30..47.35亦包含但來源全在前，不能定父子或主區間。原2884共34研究箱high最高39.10，無當前core相容箱仍有高低點參照，不新增假原箱或當故障。10/14收47.30在44.20..47.35內，10/15、16收在上非正式突破解除。ABC原4/8..5/13研究28.45..31.40，3%5/14／6%5/27才知，同幾何不回填加票；6/2收在框下仍屬已答39筆。G2代表5/2 H40.25原值當天知、原3%高5/9確認，20局部core不替大涵蓋。531既存zone含外部範圍，297原點／291同尺度鄰接價域＋123原箱共414來源／17175相交連結，11467出生可用／5708後加，243觀察22視圖重疊非市場獨立票。新driver1／verify1：297原點、414來源界鄰接、17175關係獨立重建、243池、22視圖、238逐截止與19有zone污染及5原SHA等通過；選定JSON驗後無損gzip轉存1次未重跑driver。新圖builder2次，QA修正箭頭及巢狀底色後最終三頁重渲染實看綁SHA，舊圖／driver／原核心指標CLI bootstrap舊測試0重跑，無新瀏覽器Android。正式父子／形成／起末成員／選取仍null，primary_pressure_id／歷史選取null、historical_signal_eligible=false；分類NOT_VALIDATED、用途NOT_ESTABLISHED、行動與飛輪成效NOT_EVALUATED、Android NOT_TESTED_NEW_BUILD。10/7無原快照／numeric_frame不補造，10/7足夠及全部舊裁決不重問。下一步仍Work研究前段背景、局部共同活動與較早大帶來源的角色候選，結合既存離開返回現值；不能僅因價格包含／較近／最近／共用段／最大窗選唯一主區間，也不以現值在局部core外否定整理或新小窗降低未挑戰舊高重要性。保留main、全成果、原參數策略來源舊圖，不部署付費交易訊息子代理。以下為歷史，非本輪重跑。
+
+---
+
+## 2026-10-21 最新：共同往返價帶可串片段，共用路徑不等於同核心
+
+入口 `docs/visual-discussion/20261021_common_price_bands_work_review/README.md`；新三頁PDF／三PNG、完整登錄gzip、selected-common-spans／pool-summaries／summary／hypotheses／verification／manual-qa、完整WORK_HANDOFF與回讀收據同目錄。本批從92cd074接續，保留cfce9ad後三筆資金閉環／飛輪最高目標更新，PROJECT_VISION不改且目標節仍置AGENTS／CONTINUE最上方；研究對飛輪成效NOT_EVALUATED。新研究收盤轉向需右側完成不等收盤，連續完成上落的端點域取嚴格正寬交集，全部長度候選保留；當前最大延伸只是可變view，確切turn／leg／zone及出生來源回連ID不回寫，非原pivot或正式箱界。A截至10/6可知9/30低44.85→10/1至10/2高45.35→10/5低44.80兩段共同44.85..45.35，10/7收45.75在核心上仍不否定整理，也不宣稱最早日。方向對照先32.75..33.00（4/24知擴展）後32.45..32.55（4/28知），共用4/22至4/23下跌段但核心不相交，不正式拆併或升負例。ABC後續至6/11僅1完成段，6/12才知27.15..27.30；原ABC39可含3局部核心，G2人工完整136筆可含20局部核心，不取代原較大涵蓋／5/2代表，原8/3來源疑點不跨接。5/13右證據K影線31.40完整保留，不被收盤核心取代。243舊種子觀察去重128新收盤轉向／126段／360候選，重疊非市場樣本或票；driver2次後次只無損儲存縮至125503bytes，verify1次獨立核14594候選及現值重建／65439前批見證回連／1473關係／299外部候選／211逐截止與16案污染正仿射合成平台相等不相交缺日等。新圖builder1次成功三頁渲染實看綁SHA，原圖重建0；無原核心指標／舊driver／CLI／bootstrap／舊產品測試或新瀏覽器Android。正式形成起末／成員／選定及合併仍null，分類NOT_VALIDATED、用途NOT_ESTABLISHED、行動／飛輪成效NOT_EVALUATED、Android NOT_TESTED_NEW_BUILD；primary_pressure_id／歷史選取null、historical_signal_eligible=false，10/7無原快照不補造。仍Work研究局部核心對較大觀察範圍的角色，合看原影線、離開後返回與現值，不用同價共段重疊或最長窗直接正式合併，也不強制較大整體只有一核心。所有原已答及來源限制保持不重問，保留main、原參數策略來源舊圖，不部署付費交易訊息子代理。下列為歷史，不算本批重跑。
+
+---
+
+## 2026-10-21 最新：已知價位重訪片段可自動提出，正式範圍形成仍未定
+
+入口 `docs/visual-discussion/20261021_revisit_frames_work_review/README.md`；新三頁PDF／三PNG、完整登錄gzip／pool-summaries／selected-revisits／summary／hypotheses／verification／manual-qa、完整WORK_HANDOFF及回讀收據同目錄。從既有種子逐筆加入已出現的低／高／收盤參照，只用出生後收盤上-下-上或下-上-下留重訪見證；相等不跨，返回前凍結第一造訪至前筆原K範圍，收盤回內與同側超出範圍分開，影線可創新高低，當前關係另更新，不升正式區間。2884參照9/24 L45.10，9/24 C45.60→9/29 C44.90→10/1 C45.35，先前44.75..45.95，10/1低44.20而收回，10/7 C45.75仍框內；10/1不是新宣稱最早辨認日，10/7已答不重問。方向對照亦有較早4/16低32.80往返，但5/4 C31.30已在4個回入框下，不能說從無區間或升人工負例。ABC後續以6/4高27.45，6/4低側→6/5高側→6/9低側回入先前26.55..27.65，至6/13仍在內，不把片段起日當正式起點。ABC39即使末收對58早先回入見證全在下仍為已答自己的區間；G2局部離開不否定大涵蓋。5/13影線31.40無收盤兩側往返仍登錄不刪。243舊種子觀察產937去重見證／430框，重疊非樣本或多票；driver3次後兩次只無損儲存布局縮至135169bytes，verify1次獨立枚舉31410出現及同數現值重建、107去重逐截止／十一案污染與正仿射／合成單向常數相等越界新影線缺日／5/13保留通過。新圖builder1次成功、三頁渲染逐頁實看SHA綁定，價量各貼K範圍，原圖重建0；舊driver／核心指標／CLI／bootstrap／舊測試／瀏覽器Android未跑。正式形成／起末成員／選框null，分類NOT_VALIDATED、用途NOT_ESTABLISHED、行動NOT_EVALUATED、Android NOT_TESTED_NEW_BUILD；歷史選取／primary_pressure_id=null、historical_signal_eligible=false，10/7原快照／numeric_frame不補造。仍Work研究多片段共同範圍與高低影線代表，不以重疊合併、數量投票、最短最長窗勝出或當前在內當所有區間必要條件。原所有已答及來源限制沿前鏈，不改main、原核心參數策略來源舊圖，不部署付費交易訊息子代理。下列為歷史，不算本批重跑。
+
+---
+
+## 2026-10-21 最新：離開後持續追蹤與價位歸組，正式形成／角色仍未定
+
+入口 `docs/visual-discussion/20261021_scope_followup_work_review/README.md`；新兩頁PDF／兩PNG、完整boundary-families／pool-followup-summaries／selected-followups／summary／verification／manual-qa、完整WORK_HANDOFF及回讀收據同目錄。讀前批不可變633整根事件另建持續追蹤，不改舊算法：G2 2/22低37.85等跨越界但收38.05仍在上，3/1收37.80才回原框；ABC 6/3至6/13含9筆全整根在28.45下，新種子6/6高收6/9可知、6/10低收6/11可知。返回、持續分離及自身往返都是逐時點證據，不能回寫較早截止、把雙轉向當區間成立或返回當正式合併。2884 10/16只有來源最後一筆，未造後續。ABC同日24事件只跨28.45／28.70，2884同日59事件只跨47.30／47.35；依股票／日／方向／價位歸組保留各完整框與原K來源，不當24／59票或合併正式結構。六池633追蹤歸119池內群組，重疊非獨立樣本；本批新driver1、verify1，28143日K幾何／633成員來源／119群組／21去重事件逐截止與八截點污染／正仿射及合成相等對側缺日未可知拒絕已測。原driver／362／208與舊測試未重跑。新圖builder2次成功、首p2標註碰標題已移入，最終兩頁渲染實看SHA綁定，舊圖重建0；G2圖較廣背景至3/16與各截止證據明分。正式終點／成員／選擇／新區間仍null，分類NOT_VALIDATED、用途NOT_ESTABLISHED、行動NOT_EVALUATED、Android NOT_TESTED_NEW_BUILD；primary_pressure_id／歷史選取null，historical_signal_eligible=false。10/7足夠、原ABC39／G2與所有已答及來源限制保持不重問。仍Work合看舊價位重訪／分離與新種子停留、雙向路徑、影線代表，研究形成／角色條件，不硬編日期或把單一描述當充分規則。保留main、原核心參數策略來源舊圖，不部署付費交易訊息子代理。下列各批為歷史，不算本批重跑。
+
+---
+
+## 2026-10-21 最新：候選停止／保留／後續種子競爭研究，正式分支未選定
+
+入口 `docs/visual-discussion/20261021_stop_retain_followup_work_review/README.md`；新三頁可放大PDF、三PNG、完整自動池gzip、範圍軌跡／summary／verification／manual-qa、完整WORK_HANDOFF與回讀收據同目錄。沿用未改起點生成函數，首次完成收盤離開前外包凍結，返回解除待觀察，後來整根在凍結框同側外時並列舊觀察止於前筆／本筆新種子／原範圍延續，不自動選分支。ABC 6/2收27.70低此前28.45但本日仍跨框，6/3高28.00整根在下，當日可提出舊觀察止6/2共39筆與6/3新種子，同留40筆延續；5/14內部跳空不強切。2884 9/30收離開、10/1返回，至10/7無停止；10/16可提案觀察止10/15，非核定正式終點。G2人工1/16至8/16外部範圍測試早2月已有同類局部事件，若強制停止會截短已確認大涵蓋；故停止與較大延續須並存，不能說通用終點已解。G2非自動找到，跨原列8/3缺日仍保留資格。六池243觀察／633分支為重疊研究輸出，2284事件幾何／633分支一致性／208去重逐截止、六範圍污染隔離與正仿射、合成事件已測，非獨立市場樣本或分類準確率。driver與verify各1次，前批362未重跑；新圖builder2次成功，三頁最終人工靜態QA，頁3截斷PNG另重渲染核同後實看，根因未定；原圖重建0。正式起末／成員／分支選擇null，歷史選取null／historical_signal_eligible=false／primary_pressure_id=null，分類NOT_VALIDATED、核心NOT_ESTABLISHED、行動NOT_EVALUATED、Android NOT_TESTED_NEW_BUILD。無原核心指標／CLI／bootstrap／舊產品測試或新瀏覽器Android。下一步仍Work研究角色／尺度選擇與後續種子累積，不能硬編日期或整根離開即全尺度終止；已答不重問，10/7足夠與原ABC39／G2及全部來源限制保持。不改main、原參數策略歷史資料舊圖、不部署付費交易訊息子代理。以下各批為歷史，不算本輪重跑。
+
+---
+
+## 2026-10-20 最新：自動觀察起點候選研究，正式終點仍未定
+
+入口 `docs/visual-discussion/20261020_observation_start_proposals_work_review/README.md`；兩頁新可放大PDF、兩PNG、proposals／summary／verification／manual-qa、完整WORK_HANDOFF與回讀收據同目錄。原三頁不重做。新純研究函數只接受來源／截止日，不輸入目標起日／長度／標籤。比較反向價格外包擴張（舊K及下一筆）、收盤轉折平台與共同價位短尾窗；不改原核心2高2低／3、6、12%。2884截至10/7可用223筆，外包66候選含9/17、收盤111、共同價位僅10/5起3筆；ABC截至6/2可用139筆，外包25含4/7與5/13，收盤67但漏5/13影線代表，共同短窗5/28起3筆。這些是多個觀察種子，不是正式起點命中／整理分類／主壓力或交易資格。4/7在5/14內部跳空後仍保留；但到6/3仍有4/7至6/3的40筆觀察提案，與原39筆成員不同，終點限制已展示未修好。6/2／6/3提案各別保存，不能直接正式延伸。下一步Work研究停止／保留／後續候選，同時保留6/2創低仍在內、6/3在外與內部跳空不強切；不重問已答或硬編通用切段。保守可用段依已列缺日隔離資料疑點，非市場真起點，較早舊帶背景仍在。實際生成1次5截止，驗證1次含五案獨立幾何、未來污染／截斷、正仿射價格、合成平台與362逐截止相等；非分類準確率或獨立樣本。圖3次嘗試首語法錯無PDF，後兩次成功，最終2頁渲染實看。無原核心指標／adapter CLI／bootstrap／舊測試／瀏覽器Android。Android NOT_TESTED_NEW_BUILD、分類NOT_VALIDATED、用途NOT_ESTABLISHED、行動NOT_EVALUATED，歷史選取null／historical_signal_eligible=false／primary_pressure_id=null。原正式未知／來源限制／所有已答沿完整前鏈；保留main與全成果，不部署付費交易訊息子代理。
+
+---
+
+## 2026-10-20 最新：區間形成的價格停留／方向／末端證據研究
+
+入口 `docs/visual-discussion/20261020_formation_features_work_review/README.md`，三頁可放大PDF與三PNG、hypotheses／evidence／control-scan／verification／manual-qa、完整WORK_HANDOFF及回讀收據同目錄。本輪唯讀計算2884截至10/7原1207筆；9/17至10/7的13筆僅研究窗非正式起末。枚舉1195窗、原已列缺日跨窗排除72、計算1123、淨下且全相鄰重疊128；按位移比最大選4/15至5/4作事後方向對照，非盲測／歷史訊號／獨立樣本／負例。A/B皆12/12重疊與9/13涵蓋，末端路徑不同；完整3至13尾段保存，無門檻／權重。ABC原39含6/2窗低27.65收27.70，自己的區間與末端轉弱並存，不能用不創低當所有區間必要條件；6/3在外等已答保持，不重問。區間存在、回穩轉強及逐參照反應分判；幾何涵蓋非成交分價／籌碼，B標籤null。下一步Work研究如何截止當下自動提出有意義起點／範圍，不能人工先指定13筆就冒稱找到整理。新研究程式非產品分類器，不改原2高2低及3／6／12%；10/7無原快照仍null。實際research.py7次、獨立核24組與ABC39，verify_evidence.py3次、最終三頁渲染實看及人工QA指紋綁定；PDF產檔錯誤與修復記WORK_LOG，根因未確定。無原核心指標／adapter CLI／bootstrap／舊產品測試／新瀏覽器Android；Android NOT_TESTED_NEW_BUILD、分類NOT_VALIDATED、用途NOT_ESTABLISHED、行動NOT_EVALUATED。原正式未知及來源限制全部保持，primary_pressure_id=null、歷史選取null／historical_signal_eligible=false；不部署付費交易訊息子代理。下列為歷史，各批實測不得當本批重跑。
+
+---
+
+## 2026-10-20 接續完成：10/7裁決已上分支，形態與後續反應要求分開
+
+已恢復中斷前建立的 fa3216ff3420b4dc794477bfe8b6a2cea0d490c8（父451205f），非強制更新同分支；11檔固定提交回讀物件身分全符，中斷原audit不重跑。原時點裁決收據已補齊。最新入口 `docs/visual-discussion/20261020_present_form_reaction_requirements/README.md`；有限要求requirements.json、完整接續WORK_HANDOFF.md、本批回讀GITHUB_READBACK.json同目錄。2884截至10/7已可辨認整理及完整上漲整理再漲均已答不重問；10/7非最早日，無原核心／numeric_frame仍null。已整理當下形態、前段背景、逐參照後續反應、證據時點及行動資格分開；不等未來上漲才給本例整理描述。這是既有裁決有限形式化，非偵測器、非產品測試。下一步Work研究區間形成的可重現正面條件與有區辨力對照，不再只堆原值／欄位報告、不硬編案例或改原參數。正式未知、原已答案例及來源限制全部沿原完整交接。無核心指標、adapter CLI、bootstrap或舊測試重跑，無新圖PDF／瀏覽器Android；Android NOT_TESTED_NEW_BUILD、分類NOT_VALIDATED、用途NOT_ESTABLISHED、行動NOT_EVALUATED。實際保存以本批收據與HEAD為準；保留main及全成果，不部署付費交易訊息子代理。
+
+---
+
+## 2026-10-20 21:46 最新裁決：截至10/7已可辨認整理
+
+使用者直接回答「足夠辨認了」，對應2884截點圖第2頁截至2026/10/7。USER_CONFIRMED_DO_NOT_REASK；完整走勢整理及10/7截點足夠皆已定，前題關閉。入口 `docs/visual-discussion/20261020_recognition_timing_user_decision/README.md`，原話與範圍user-decision.json、實際verification／GITHUB_READBACK及完整WORK_HANDOFF同目錄。原圖不重畫，舊pending已resolved、舊README加新裁決；舊證據／QA維持歷史快照。本例不必等待10/15上漲才給整理描述；不指定最早成立日／正式起末區界或新通用門檻，10/14未另裁決留null而不重問10/7。回顧截點非盲測，10/7無原保存核心／numeric_frame仍null，historical_selection_time=null／historical_signal_eligible=false／primary_pressure_id=null。實際audit.py一次唯讀核原SHA及1207筆前綴與末K原指標、原話範圍，不重算核心MACD或跑舊測試，不重畫PDF／新瀏覽器ZIPAndroid；Android NOT_TESTED_NEW_BUILD，file://不重試不繞過。原參數、所有已答案例與正式未知／來源限制保持，仍Work整理當前形態與後續反應分開的有限需求，不硬編案例或交Codex未定算法。不部署付費交易訊息子代理。以下為歷史，舊PENDING由新裁決取代，前輪執行不算本次重跑。
+
+---
+
+## 2026-10-20 最新續接：2884 整理辨認時點真實截點圖
+
+入口 `docs/visual-discussion/20261020_interval_recognition_timing_work_review/README.md`，全文續接及實際執行／限制見同目錄WORK_HANDOFF.md、verification.json及GITHUB_READBACK.json。起點7a5cc315b7f8e98607027ef5d5a83dc79844accd，全成果保留。三頁新可放大截點PDF：五年背景至10/7、近期至10/7與至10/14。原1207／1211筆；10/7沒有獨立保存核心快照／numeric_frame，僅截原價量保存指標，不補造；10/14原結果讀取未重算。原完整走勢整理標籤USER_CONFIRMED不重問；新問題只問截至10/7是否足以辨認，PENDING_USER_REVIEW，較晚10/14供對照。不要求精確起日或正式區界，下一步不算答案。事後看過後續的截點複核非盲測非歷史選取，historical_selection_time=null、historical_signal_eligible=false、primary_pressure_id=null。build_review.py一次，原SHA／包指紋／來源全等、截點無未來列、10/14原結果指紋核同；新三頁逐頁實看與400%裁片，未重算核心MA MACD、未跑舊測試或adapter CLI、ZIP瀏覽器Android。Android NOT_TESTED_NEW_BUILD；file://不重試不繞過。其他正式未知、全部原使用者裁決與來源限制沿用。仍Work，已定規則或可重現工程缺陷才Codex；不部署付費交易訊息子代理。下列為歷史紀錄，不代表本批重跑。
+
+---
+
+# 最新：兩個部分人工案例＋三原保存截點；參照與時點分開（2026-10-20 Work）
+
+[共同案例／三截點原值／有限驗收證據與完整續接](docs/visual-discussion/20261020_paired_cases_prefix_work_review/README.md)。接續1061430。使用者21:18:28允許一次多步，重要才問，本批沒有新增問題。兩例已定不重問，既有長背景圖沿用不新畫。
+
+共同紀錄分形態、走勢描述、明示參照反應與人工時點。2884已確認上漲中的短暫整理後再漲；ABC已確認自己區間、相對舊帶跳空下跌更弱。ABC未另確認細項留null，不當false／負例，不把相對弱勢補為所有尺度一路下跌；4/10局部收漲仍保留。2884助手17觀察窗與1101使用者39涵蓋資格不同，不比寬度天數總量勝率或跨股重要性。兩例不是全市場驗證或通用自動偵測條件。
+
+新只讀2884原10/14、15、16三保存結果及其指紋／來源數1211/1212/1213、原numeric_frame／prefix／原K MA MACD與參數；不是重跑core。兩已確認3%來源ID／確認穩定，當時未確認高47.30→49.50→49.95均UNCONFIRMED_NOT_A_PIVOT。原manual_case_inputs_used=false保持，後來人工標籤未倒填歷史結果。
+
+R1明示9/17原高47.35，完成收盤10/14低→10/15上→10/16仍上。R2明示10/15原高49.50，10/14不可知、值及關係null；可用兩筆收盤48.80／49.15皆在下，日高相等49.50→49.95在上。因此這兩筆完成收盤無先站上R2，不把10/16叫完成收盤突破後跌回49.50。日高越另留、不推日內先後；對R2未收過不抹R1在上或已確認整理再漲。本次後來明示選擇不證歷史曾選，historical_selection_time=null／historical_signal_eligible=false。
+
+prefix-observations是有限研究原值比對，不是新reaction附層／adapter／CLI輸出或引擎回放，不替代已完成工具。case-comparison為部分人工標籤，evidence-contract為未來有限驗收證據，不是已跑產品分類器測試或已定通用偵測條件。原min高／低turn研究設定各2未改，不改點數調參。一般正式成員區界代表／增量量權重／衰減重要性／合併直接承接／正式解除生命階段未知，primary_pressure_id=null、核心NOT_ESTABLISHED／分類NOT_VALIDATED／行動NOT_EVALUATED；已答定性標籤保持已確認。
+
+實際audit兩次只讀原HTML SHA／包指紋、三結果指紋來源數原值、原兩確認點與未確認極值、原比較與兩裁決SHA／GitHub物件、有限時點與部分標籤；大源檔用已核本機檔核SHA，無新行情。無原核心MACDreaction source-query adapter CLI/bootstrap/14、22、60或舊產品測試／新圖PDF／ZIP／瀏覽器Android。Android NOT_TESTED_NEW_BUILD，file://不重試不繞過；2884跨格式adapter仍未執行驗證，不拿本研究當通過。
+
+局部整體分判、異質整體、未挑戰舊帶高點不先降重要性、兩案例、39筆／5/13／6/3／1/27、11/25非關鍵點及小窗撤問不重問；舊共享角色仍PENDING_NOT_REASKED。五月十月反例、相等OHLC／拒絕餘量時點／89版本84幾何非獨立與不同窗不排名保持。Raw公司行動／五年Adjusted／歷史可得／九待核非窮盡日曆／Darvas／SQLite未知，兩股日曆分開。
+
+下一步仍Work用已核有限資料研究可泛化區間形成／輸出條件，不再重建本表、問已答概念或把人工標籤當完整算法。已定算法或可重現工程缺陷才交Codex，原工具無正式形態不冒稱故障。重要新核心歧義才附廣角可放大實圖問；保留原核心參數策略庫歷史舊頁案例及main，不調參硬編、新自動選關解除量權重買賣門檻，不部署付費交易訊息子代理。同分支逐檔回讀，結束附已核SHA入口完成未完成與完整續接。
+
+---
+
+# 最新：2884上升整理已確認；形態與前後走勢相容（2026-10-20 21:07 Work）
+
+[原話／正面人工案例／原證據與完整續接](docs/visual-discussion/20261020_rising_interval_user_decision/README.md)。接續6c50b19。使用者原話「既然你辨認的出來就可以當成一個整理區間，而且他的確是上漲中短暫回來整理後來又再度上漲」。USER_CONFIRMED_CASE_AND_CONCEPT_DO_NOT_REASK：本例是上漲中的短暫整理區間，之後再漲；上一輪新題關閉，不留PENDING。
+
+「可辨認整理區間」與「上漲中回檔整理後再漲」同時成立。助手上一輪的二選一排他問法已更正，區間形態與所處／前後走勢分開記錄，不用上漲回檔否定整理，不再逐例重問同一概念。後續例行助手判讀保留來源資格，區分助手描述與使用者已確認，不把本例批准推所有未來自動輸出。
+
+本例定性正面標籤已定，不再全標UNKNOWN；一般偵測公式、完整正式成員區界代表／增量量權重／衰減重要性／合併直接承接／正式解除與生命階段仍未知。原17筆9/17至10/14是助手觀察窗，未成正式起末；44.20／47.35未定正式箱底頂。49.95仍UNCONFIRMED_NOT_A_PIVOT，使用者看見再上漲不會提前原轉折資格。primary_pressure_id=null、歷史選取null／historical_signal_eligible=false、行動NOT_EVALUATED，分類NOT_VALIDATED／整體用途NOT_ESTABLISHED保持。
+
+保存user-decision、positive-case及證據；positive-case為未來有限正面驗收證據，不是已跑生產分類器或日期價位算法。只讀研究audit兩次核原研究SHA、原話／範圍／相容標籤、五原OHLCV MA MACD與兩參照／未確認極值，未知欄保持。舊pending-decision更新已解決並連裁決、舊README最上方標最新；原evidence/verification/PDF/PNG/腳本保持為裁決前快照。新核原圖檔SHA不變與跨檔已解決狀態一致，不重畫或重跑舊QA。
+
+原10/15、16整根日K高9/17原47.35，但10/16收49.15低前日49.50，兩參照並存；不用單一未收過否定已確認形態，也不補所有參照皆過。原值可知／確認／後來選取與21:07人工判讀分開，相等不補過破，OHLC不證日內次序。既有reaction adapter公開入口cross-scale-real-chart/0.1，而2884摘錄為獨立schema，本輪只契約檢查，跨格式轉接未執行／驗證，未新增adapter或判工具故障、未冒稱時間遮罩新輸出完成。
+
+無原產品代碼／核心MACDreaction source-query adapter CLI/bootstrap/14、22、60或舊產品測試／新圖PDF／ZIP／瀏覽器Android。原PDF靜態QA歷史PASS未重跑，Android NOT_TESTED_NEW_BUILD，file://不重試不繞過。Raw公司行動／五年Adjusted／歷史可得／九待核非窮盡日曆／Darvas／SQLite未知，兩股待核日曆分開。
+
+ABC自己的跳空下跌更弱勢區間、39筆／5/13／6/3／1/27、局部整體分判、異質整體、未挑戰舊帶高點不先降重要性、11/25非關鍵點與小窗撤問不重問；舊共享角色仍PENDING_NOT_REASKED，此答不代答。來源覆蓋已核不重做；五月十月反例、原拒絕餘量時點、89版本84幾何非獨立及不同窗不排名保持。
+
+下一步仍Work用已確認上升整理與ABC較弱區間作形態／方向／原反應正面對照，可推導細節直接做；重要新核心歧義才用廣角可放大實圖問。未定偵測不交Codex硬編，已定規則或可重現工程缺陷才交實作。保留核心參數策略庫歷史舊頁案例及main，不調參硬編、新自動選關正式解除量權重買賣門檻，不部署付費交易訊息子代理。同分支逐檔回讀，結束附已核SHA、入口、完成未完成與完整續接。
+
+---
+
+# 最新：2884上升整理正面案例；新視覺判讀待答（2026-10-20 Work）
+
+[三頁可放大圖冊／原值證據／唯一新題與完整續接](docs/visual-discussion/20261020_rising_interval_work_review/README.md)。接續4f28a2e。使用者20:40:34允許連續多步，先完成原值核對、圖冊QA及保存回讀才問重要歧義。改用既存2884近期上升例，補正面區間辨認，不再對ABC反覆證否定規則。原五年1213筆／兩年兩頁原樣沿用，新第三頁2026/5至10月115筆原K量MA MACD，非重建主圖或來源工具。
+
+唯一新核心問題PENDING_USER_VISUAL_ADJUDICATION：圖中9月至10月反覆，是否已可辨認為整理區間並把10/15開始視為向上離開，還是僅上漲中回檔、尚不足成區間？助手暫案是前者，未當批准；單純下一步不算作答。這影響結構標籤才詢問，不要求精確起末箱界、量權重、公式或買賣。9/17至10/14的17筆僅助手觀察窗，非正式端點；完整115筆及長背景都保留。若認同僅確認本例定性形態與向上離開，不推通用算法、正式突破解除或交易資格。
+
+原9/17 H47.35／C47.30，3%9/23確認；10/1 L44.20，3%10/7確認，同段原兩點連續不跨尺度拼接。10/14收47.30等原9/17收，仍低日高47.35。10/15 L47.60 C48.80 H49.50；10/16 L48.00 C49.15 H49.95，兩日整根在47.35上，但10/16對前日49.50僅日高越收未越，同時保留兩參照，不壓成單一過／沒過。49.95仍未確認，不冒充新高轉折。44.20／47.35只是原值參照，不定箱頂底。10/15量63,086,494、10/16量49,892,439，原MACD10/14柱負10/15正，只作描述不成獨立票、合格量或交易門檻。
+
+只讀audit兩次核2884原摘錄／core SHA、code/asof/result、115連續原索引OHLCV MACD MA字串、17窗高低／兩來源確認與原連續、等收未過高／兩參照／未確認高。沒有行情擷取或指標核心重算。新PDF沿用舊兩頁內容流圖像bytes，最終逐頁核看（背景重繪render bytes亦同）與400%新頁裁片；首稿低點文字遮較早K線已移空白重繪核看。源檔用先前已核本機檔，此輪核SHA，非重新GitHub下載舊資料或舊驗收重跑。新檔及三入口逐檔回讀，收據另回讀。
+
+無產品改碼／原核心MACDreaction source query adapter CLI/bootstrap/14、22、60或舊產品測試／ZIP／瀏覽器Android。Android NOT_TESTED_NEW_BUILD，file://不重試不繞過。原34箱候選資格不因人工作假說改寫，不當工具故障。primary_pressure_id=null、歷史選取null／historical_signal_eligible=false，正式成員區界代表／增量量權重／衰減重要性／合併直接承接／解除生命階段未知；核心NOT_ESTABLISHED／分類NOT_VALIDATED／行動NOT_EVALUATED。
+
+ABC、39筆／5/13／6/3／1/27、局部整體分判／異質整體／未挑戰舊帶高點不先降重要性、11/25非關鍵點與小窗撤問不重問；原共享角色PENDING_NOT_REASKED，新題不代答。上批來源覆蓋已完成不重做，五月十月反例、拒絕餘量時點、89版本84幾何非獨立、相等OHLC與不同窗不排名保持。Raw公司行動／五年Adjusted／歷史可得／九待核非窮盡日曆／Darvas／SQLite未知，2884末待核2025-11-05不可套1101日期。
+
+下一步仍Work對新真實圖作定性判讀，未答不填人工標籤，不交Codex實作未定規則。已定規則或可重現工程缺陷才交實作，本批無新產品缺陷。不調參硬編、新自動選關正式解除量權重買賣門檻；保留原核心參數策略庫歷史舊頁案例及main，不部署付費交易訊息子代理。結束附已核SHA、圖入口、完成未完成及完整續接。
+
+---
+
+# 最新：人工K線涵蓋不等原轉折資格；完整對照已核（2026-10-20 Work）
+
+[三頁可放大圖冊／39逐筆原值來源對照／完整續接](docs/visual-discussion/20261020_source_coverage_work_review/README.md)。接續8e90a31。使用者19:06:45允許一次多步、有重要性才問，本輪無新增問題，不啟動子代理。已讀最新交接與PROJECT_VISION；本批覆蓋差別已完成，不再反覆重做同例或索答。
+
+新核A=2025/4/7原3%/6%/12%全部171轉折與source_dates皆無，但A明確在已確認ABC自己的跳空下跌更弱勢區間，原日K與反應事實存在。原已答39筆4/7至6/2只有四日期4/8、4/10、4/22、5/13／跨尺度8原ID，其餘35無轉折或別名，是表示差別非漏判率。6/2亦無轉折；已排除此箱的6/3卻有原3%低26.55，6/5確認。因此有無轉折都不能單獨決定區間K線歸屬；不排掉A、不自動延至6/3。39筆時間涵蓋不等完整機器正式成員。
+
+B44/B80來源4/8至5/13、研究低28.45，39筆實際最低6/2 L27.65差-0.80；研究界不代人工正式界，27.65只作有限窗Raw統計，不補正式箱底、破底／解除或生命階段。四日期原引用B43/44/79/80完整保存，跨11/25不升關鍵點或整箱納入。同座標不投票，B/C兩尺度確認保持，原共享角色PENDING_NOT_REASKED不代答。
+
+可推導資料要求僅原K涵蓋／確認轉折／原箱引用／人工判讀分開。原source-query只接受pivot ID契約無故障，reaction已完整日K、comparison已有39筆稽核，不新工具或重做adapter CLI／主圖；不造A的pivot ID，無新工程實作契約。正式通用歸屬／成員區界代表／增量量權重／衰減重要性／合併直接承接／解除生命階段未知，primary_pressure_id=null、歷史選取null／historical_signal_eligible=false。
+
+audit只讀兩次核原SHA、全部1213原OHLCV/MACD字串、39連續索引、171來源別名、8ID/四日、A／末日／下一排除日資格及四箱原來源／研究界；evidence含39逐筆與六原反應樣本。兩大JSON核本機既有已核SHA非本輪新下載；原圖冊本輪GitHub exact bytes回讀、user-decision物件核同。新PDF只加證據頁，沿用已裁決gap圖冊前兩頁597／241筆，內容流圖像不變未重畫，最終逐頁靜態渲染與400%新頁裁片核看。首稿較舊圖含歷史待答標題，已換較新已裁決圖，避免重開ABC。非瀏覽器Android驗收。
+
+無產品改碼／核心MACD／行情／source-query reaction adapter CLI／bootstrap／14、22、60或其他舊測試／ZIP／瀏覽器Android，Android NOT_TESTED_NEW_BUILD，file://不重試不繞過。Raw公司行動／五年Adjusted／歷史可得／九待核非窮盡日曆／Darvas／SQLite及核心NOT_ESTABLISHED／分類NOT_VALIDATED／行動NOT_EVALUATED保持。
+
+ABC、39筆／5/13／6/3／1/27、局部整體分判、異質形態整體、未挑戰舊帶高點不先降重要性、11/25非關鍵點及小窗撤問不重問；五月十月反例、拒絕餘量時點、89版本84幾何非獨立、相等OHLC與不同窗不排名保持。前批2884空箱不是解除，兩股待核日曆分開。
+
+下一步仍Work研究正式歸屬正面依據，用已有人工整體與完整同尺度來源／價量過程；不能再只證否定規則或為同例堆覆蓋報告，也不用相鄰共點重疊硬定充分條件。真正重要新核心歧義才附廣角可放大真實圖問；已定規則或可重現缺陷才交Codex，本批無新缺陷。保留原核心參數策略庫歷史舊頁案例及main，不調參硬編或新增自動選關正式解除量權重買賣門檻，不部署付費交易訊息子代理。同分支逐檔回讀，結束附已核SHA、入口完成未完成與完整續接。
+
+---
+
+# 最新：2884獨立來源層級對照；空箱候選不代替正式整體（2026-10-20 Work）
+
+[三頁可放大圖冊／原精確摘錄／證據及完整續接](docs/visual-discussion/20261020_independent_source_levels_work_review/README.md)。接續4c8d483。使用者17:48再次允許一次完成多步、有重要性才問；本輪連續讀來源、核指紋、核候選與確認、製圖QA及保存回讀，沒有新增待答問題，不啟動子代理。PROJECT_VISION已全文讀，錨定最新保存收盤，避免拿遠端舊箱問分段。
+
+獨立2884原凍結1213筆至2026-10-16 C49.15，原34箱研究上界最高39.10均在錨下；anchor_relation=ABOVE指錨高於箱。上方可比箱／前緣0只限原箱候選。最高原確認高轉折47.35於9/17發生9/23確認；前日10/15 Raw H49.50高於本日C，本日H49.95越前H而C49.15未越；49.95仍UNCONFIRMED_NOT_A_PIVOT。不從空箱推出無其他來源／無風險／解除／買入，不把49.50自動升關鍵點或49.95升確認轉折。原K、確認轉折、研究箱界、正式整體分開。不是1101歸屬答案，2884無人工標籤，不跨股票或不同窗排名。
+
+B11為B12同3%前綴，B13為後綴且幾何同，非獨立票；B12/B14只共原5/28低點，不是完整前綴承接，不推正式合併／成員／重要性。原reference_candidates有63筆，不叫總來源0；同座標異尺度確認分開。已讀原viewer.js，原文字已限定上方可比0／研究前緣0／唯一主壓力未定／Raw跨年未完整校正，沒有新產品缺陷，不重做工具。
+
+原HTML SHA及內嵌包指紋、獨立core blob與物件全等；精確摘錄1213原OHLCV／MA／MACD、來源缺證，暖機null保持。audit只讀15預存結果核時點及原關係，非15次引擎回放／非原60前綴驗收重跑。三頁新研究PDF含五年全景／兩年價量MA MACD／來源層級，兩原尺寸PNG，最終逐頁實看與400%靜態放大、文字檢查通過；首稿標籤與渲染不完整修正如實保存WORK_LOG。不冒充新瀏覽器／Android。無新行情／核心MACDreaction/source query adapter CLI/bootstrap/14、22或舊產品測試／ZIP。Android NOT_TESTED_NEW_BUILD，file://不重試不繞過。
+
+2884自己的九待核末筆2025-11-05，不複製1101日期；Raw公司行動／五年Adjusted／歷史可得／非窮盡日曆／Darvas／SQLite未知。primary_pressure_id=null、歷史實際選取null／historical_signal_eligible=false。正式整體成員區界代表／增量量權重／衰減重要性／合併直接承接／解除生命階段仍未知；核心NOT_ESTABLISHED／分類NOT_VALIDATED／行動NOT_EVALUATED，這輪只完成來源資格邊界與獨立對照。
+
+ABC同自己的跳空下跌更弱勢區間、39筆／5/13／6/3／1/27、局部整體分判、整體可含不同形態、舊大帶未挑戰高點前不因低位整理先降重要性、11/25非關鍵點與小窗撤問已定不重問；共享來源角色PENDING_NOT_REASKED，不由本批代答。五月十月反例、原拒絕餘量來源時點、89版本84幾何非獨立、相等不補過破與OHLC不證日內次序保持。
+
+下一步仍Work用已有人工整體判讀與完整同尺度來源作正面角色對照，不繼續對未標籤遠箱或本次數字硬定分類；真正重要新歧義才附廣角可放大實圖討論，已定規則或可重現缺陷才交Codex。保留原核心參數策略庫歷史舊頁案例與main，不調參硬編、新自動選關解除或買賣門檻，不部署付費交易訊息子代理。同分支逐檔回讀，結束附最新已核SHA、入口、完成未完成與完整續接。
+
+---
+
+# 最新：一次多步正反對照；重用原附層，避免同層切碎（2026-10-20 Work）
+
+[三頁可放大圖冊／53原記錄／驗收證據與完整續接](docs/visual-discussion/20261020_gap_contrast_work_review/README.md)。接續0f26f8e。使用者17:31允許一次完成多步、有重要性才問；本輪已連續完成原事實清點／原值路徑／假說篩除／驗收證據／圖冊與工程範圍判斷，無需新增作答。例行工作直接完成，不因讀檔核對交付反覆停問；真正重要核心歧義才附廣角可放大實圖問。不授權子代理或原禁止行動。
+
+沿用完成reaction-facts的1213筆，與原comparison逐筆核OHLCV/MACD及全部1206可比較幾何全等。原53整段在下／31在上／43接觸／1079重疊，6連續性＋首筆無前值保持未知。8/14跨待核8/13表面Raw不重疊不列入53；只讀後續原值比較在首個原連續性中斷前停止，null非永不回復。不重建reaction／query／adapter CLI。53非獨立型態或市場缺口認證／準確率。
+
+ABC原39筆最高H31.40仍低於4/7前保存日低32.25達0.85；4/10 H31.20進部分原間隔，不稱缺口從未碰。整窗結論最早6/2才可知，不能倒灌4/7信號。5/14 H30.50<5/13 L30.90亦整段在下，仍位於已答39筆父層，因此每跳空就強制拆同層不足；不否認可能更細內部結構、不把5/14標任何尺度皆非新段。僅未返回至選定端點或一次收回B77研究30.05亦不足正式歸屬。不比較不同觀察長度勝率或從1.45/.40/.05挑門檻，這些是助手邏輯篩除、非新批准算法或原引擎測試失敗。
+
+1/10僅原觀察：1/14 H30.90先越30.80、1/15 C30.80等、1/16 C30.95才上，不重開撤回的一月問。4/18原TOUCHING不補在下。前綴研究核5/13截點43原生日事實與全檔同、事件不越截點；非重跑生產核心前綴測試。三原JSON SHA不變。acceptance-evidence是將來分類器可用有限證據、不是已執行產品測試或生產日期常數。工程結論重用現有工具，尚無自動選層／正式成員正面充分規則，不交Codex重做或調參。
+
+新三頁PDF第1原597筆全景圖像bytes保持，第2原241筆價量MACD MA及39筆背景／內部D跳空、第3正反證；原尺寸PNG同附。逐頁渲染實看與400%靜態放大、文字字形核對完成；標註移離K線及頁邊後重繪核看，未變頁render bytes同。不是產品UI重做／新瀏覽器或Android。無原核心MACDreaction/source query CLI/bootstrap/14、22或舊產品測試/ZIP/瀏覽器/Android，Android NOT_TESTED_NEW_BUILD，file://不重試不繞過。
+
+ABC自己的跳空下跌更弱勢區間已定不重問；同39筆／5/13局部代表／6/3排除／1/27、三已定概念、11/25非關鍵點及小窗撤問保持。共享來源角色PENDING_NOT_REASKED，不由此次代答。未挑戰舊帶高點前不因低位整理先降重要性，primary_pressure_id=null、歷史選取null／historical_signal_eligible=false。通用正式成員區界代表／增量量權重／衰減重要性／合併直接承接／解除生命階段與Raw公司行動／五年Adjusted／歷史可得／九待核非窮盡日曆／Darvas／SQLite未知；五月十月反例、原拒絕餘量／時點、相等OHLC、89版本84幾何非獨立及不同窗不排名保持，核心NOT_ESTABLISHED／分類NOT_VALIDATED／行動NOT_EVALUATED。
+
+下一步仍Work補有足夠背景及明確標籤的獨立對照，不無限重問ABC或對同三價格選門檻；已定規則或可重現缺陷才交Codex。不調參硬編、不新增自動合併主壓力解除或買賣門檻，不改原核心參數策略庫歷史舊頁案例及main，不部署付費交易訊息子代理。同分支逐檔回讀，結束附已核SHA圖入口、完成未完成與完整續接。
+
+---
+
+# 最新：ABC獨立區間／跳空下跌更弱勢已確認（2026-10-20 Work）
+
+[使用者裁決／跳空原值／完整續接](docs/visual-discussion/20261020_april_interval_user_decision/README.md)。接續b94ffcc。使用者17:26原話「ABC是自己一個區間沒錯和舊大帶相比他就是跳空下跌，更為弱勢的區間」。USER_CONFIRMED_CASE_DO_NOT_REASK，前輪四月構成／反應問題關閉，不留PENDING；A/B/C同自己的低位區間，相對舊帶跳空下跌更弱勢。助手A作反應、B/C另列的暫案被本例判讀取代，不能拆A出ABC；A仍可提供轉弱反應證據。此例人工分組與相對弱勢已定，不能再全標UNKNOWN；通用自動歸屬與全原來源機器成員表未定。
+
+原值新核：4/7 A H30.80低於前保存4/2 L32.25，日K範圍間隔1.45；O29.20較前C32.40低3.20、C29.80低2.60。僅保存Raw相鄰記錄，不冒稱日曆／公司行動已核。A紅K但前收跌，B4/10綠K但前收漲保留。ABC均在原已答4/7～6/2含端39筆內；既有39筆／5/13局部代表／6/3排除不重問、不用新答改精確端點或等同B44/B80。
+
+本輪保存原話／案例分組與弱勢關係、更新前輪pending與入口，研究audit只讀原K及Decimal間隔開收差、紅綠前收、39筆與ABC落內，原comparison／query SHA保持。無原產品分類器／源碼參數、原辨識MACDreaction／query adapter CLI／bootstrap／14、22或舊產品測試、新圖PDF／瀏覽器／ZIP或Android。前輪圖冊與400%靜態渲染是歷史非重跑；新圖仍須可放大及原尺寸，Android NOT_TESTED_NEW_BUILD，file://不重試不繞過。
+
+舊帶重要性不調降、不宣告解除；本例不泛化所有跳空都分新區間、不新增自動合併／選主壓力／量門檻或買賣。primary_pressure_id=null、歷史選取null／historical_signal_eligible=false，正式精確邊界／全部原成員與代表／增量量權重／衰減重要性／合併直接承接／解除生命階段未知。原已定三概念／月份39筆5/13、6/3、1/27與11/25非關鍵點不重問，一月小窗問撤回；舊共享來源角色PENDING_NOT_REASKED不由本次代答。五月十月反例、原拒絕餘量／時點、相等日OHLC、89版本84幾何非獨立及不同窗不排名保持；Raw公司行動／五年Adjusted／歷史可得／九待核非窮盡日曆／Darvas／SQLite未知，核心NOT_ESTABLISHED／分類NOT_VALIDATED／行動NOT_EVALUATED。
+
+下一步仍Work以已定本例與反例研究可泛化的結構關係，不無限重問同例，也不寫死日期價格答案；已定可重現規則或工程缺陷才交Codex。原核心參數策略庫歷史舊頁案例及main保留，不部署付費交易訊息子代理。同分支逐檔回讀，結束附最新已核SHA、入口完成未完成及完整續接。
+
+---
+
+# 最新：可放大圖冊；四月構成來源或後續反應待判（2026-10-20 Work）
+
+[兩頁PDF／原尺寸PNG／原值與完整續接](docs/visual-discussion/20261020_april_role_visual_review/README.md)。接續84e0dd1。落實新圖可放大要求：第1頁保留原597筆全景，第2頁新增2024/7～2025/6全241筆原K量MA20/60/130/260與MACD向量圖，A/B/C僅討論標記；黃色四月非正式成員界。PDF及PNG附原尺寸，原互動產品／引擎不變，不重建查詢reaction或主圖。
+
+新核心問題PENDING_USER_ADJUDICATION：在完整舊大帶脈絡中，四月急跌A、低位反彈B與再下探C哪些屬構成來源、哪些只是後續反應？可分開，不要求整月同角色或精確終點。助手工作假說A先作後續轉弱觀測、B/C先保留低位局部，未有歸屬證據不直接納舊帶；尚未答、不當批准。這不重問月份跨度／局部整體分判／異質形態或重要性不先降，不重開5/13、6/3、1/27。舊共享角色PENDING_NOT_REASKED，一月小窗問已撤回，11/25非關鍵點保持。
+
+A4/7 O29.20 H30.80 L29.20 C29.80量118,749,437，紅K但較前保存4/2 C32.40跌；B4/10 O30.95 H31.20 L30 C30.75量48,104,987，綠K但較4/9 C28.50漲，6%於4/18確認；C4/22低28.50／收28.60，6%於5/5確認，高於4/8低28.45、不補相等破低。4/7收在原B77研究30.05下、4/10上、4/11收30又下，反覆保留，不據此判正式界／解除。5/13原31.40只作已答背景。
+
+本輪完成兩頁PDF與PNG、241連續原值字串／SHA核同，reportlab原全景＋Matplotlib向量頁、pypdf頁數文字／字形核對，pdftoppm渲染view_image逐頁看最終稿；400%靜態渲染裁片亦實看清楚，非Android手勢測試。首稿CFF Type42相容警告改Type3嵌入字形後無警告重繪核看；最終CLI整理後渲染與已看稿全等。不冒稱新瀏覽器截圖或產品驗收，本機重查無瀏覽器binary、不安裝不file://。無原核心MACDreaction／query adapter CLI／bootstrap／14、22或舊產品測試／ZIP／Android；Android NOT_TESTED_NEW_BUILD。
+
+primary_pressure_id=null、歷史選取null／historical_signal_eligible=false；正式成員區界代表／增量量權重／衰減重要性／合併直接承接／解除生命階段及Raw公司行動／五年Adjusted／歷史可得／九待核非窮盡日曆／Darvas／SQLite未知，核心NOT_ESTABLISHED／分類NOT_VALIDATED／行動NOT_EVALUATED。五月十月反例、來源時點、相等日OHLC、原拒絕餘量、89版本84幾何非獨立及不同窗不排名保持。下一步仍Work用足夠背景圖裁決角色，不以原箱起訖代答；已定規則或可重現缺陷才交Codex。不調參硬編、不新增自動合併主壓力／解除／買賣門檻，不改原核心參數策略庫歷史舊頁案例及main，不部署付費交易訊息子代理。同分支逐檔GitHub回讀，結束附已核SHA、圖入口完成未完成與完整續接。
+
+---
+
+# 最新：來源角色底稿／左右跨箱缺口／新圖須可放大（2026-10-20 Work）
+
+[原來源與候選角色／完整續接](docs/visual-discussion/20261020_attribution_roles_work_review/README.md)。接續6e1d84d，使用者17:09要求下次圖片可放大、這次可沿用；已存display-preference.json，未做新放大UI／瀏覽器Android驗收，之後新圖須附可用放大檢視方式及原尺寸圖，不可僅縮圖。11/25本例非關鍵點、一月小窗三選一已撤回及全部已答更正保持不重問。
+
+新研究底稿分A早高位、原3%九點下移含反彈、B77原6%十點後段反覆、四月轉弱／低位反彈待歸屬四角色；全部只是助手候選描述，formal_membership=null。左端A6/5原39.25在B16／17／18，但箱起4/19、4/26、5/2；右端B77末源3/12／3/24確認無四月點，B44／80含四月源卻延到5/13、整箱5/14／5/27確認。整箱全收／全丟均不足表達此人工整體研究描述，來源與原箱引用並列、不裁原箱、不把月份定正式邊界、不自動納入40.25或五月源。
+
+新核原6%同段連續五點：2025/3/12 H35.45／3/24確認→4/8 L28.45／4/10→4/10 H31.20／4/18→4/22 L28.50／5/5→5/13 H31.40／5/27，後四ID全等B80來源。前四點是右端過程觀察，第五為明列後續背景，不猜終點；相鄰不等正式直接承接。4/22發生與5/5確認分開，不刪四月行情、不回填資格。B44／80同日期價位但原ID尺度確認分開。原query九點與B77在10/24、11/28同座標不同ID，僅對照，不跨尺度冒一路徑、不批准共享角色；共享角色仍PENDING_NOT_REASKED。
+
+本輪只讀研究audit核A三箱引用、九點同尺度完整子串／原K、B77十來源／確認、兩同座標不同ID、右端6%五點連續及B80後四源、B44／80原日期價位各自確認，原comparison／query SHA不變；無新query／adapter／CLI、原核心MACDreaction／產品執行、bootstrap、14／22或舊測試、新圖／UI／瀏覽器／ZIP／Android。Android NOT_TESTED_NEW_BUILD，file://不重試不繞過，前輪缺Chromium未解除。既有597筆全景與完整反彈價量研究沿用，不重做已完成工具或圖表。
+
+三已定概念與月份39筆5/13、6/3、1/27不重問，未挑戰舊帶高點前不因低位整理先降本例重要性。primary_pressure_id=null、歷史選取null／historical_signal_eligible=false；正式成員區界代表／增量量權重／衰減重要性／合併直接承接／解除生命階段與Raw公司行動／五年Adjusted／歷史可得／九待核非窮盡日曆／Darvas／SQLite未知。五月十月反例、原拒絕餘量／來源時點、相等日OHLC、89版本84幾何非獨立及不同窗不排名保持；核心NOT_ESTABLISHED／分類NOT_VALIDATED／行動NOT_EVALUATED。下一步仍Work按來源角色與廣角完整過程研究正式歸屬，已定規則或可重現缺陷才交Codex；不調參硬編、不新增自動合併選主壓力或正式解除、不改原核心參數策略庫歷史舊頁案例及main，不部署付費交易訊息子代理。同分支逐檔回讀，結束附已核SHA入口、完成未完成及完整續接。
+
+---
+
+# 最新：廣角反彈過程；最大量／最高收／最高日高不同日（2026-10-20 Work）
+
+[完整原值路徑／既有全景／續接](docs/visual-discussion/20261020_rally_path_work_review/README.md)。接續c12f1c0，保留使用者更正：11/25本例非關鍵點，一月小窗分段問題已撤回、不重問。沿用前輪597筆全景，不新繪／不縮回小窗；讀2025-01-13～03-24全43筆作原低點至原6%高點確認的研究窗，非正式整體／局部／波段起訖。
+
+新事實：同窗最大量2/25為57,322,068股／H35.10 C34.95；最高收2/26為35.25／H35.35量35,394,831；最高日高3/12為35.45／C34.50量22,178,529。三者不同日。對2024/7/26原高35.20，全43筆僅2/26收上，2/27收35.10回下、日高相等35.20；3/5及3/12日高越而收未越。3/13收33.40量41,559,442回落。最高35.45低於更左2023/11/28原35.50達0.05，43筆無日高達35.50或原A39.25；這些僅明示研究參照、不指定正式代表／區界或以43筆冒全歷史。原3/12的6%轉折到3/24才確認，歷史不可倒灌。
+
+左側2023/11/28 H35.50 C34.50量65,709,089，11/30 H35.30 C34.95量106,415,572；形成價量不能只由轉折日量概括。3/12、3/13原DIF／DEA正但柱負、價格回落，原指標逐值保留。研究方向是接近、跨越、收盤保持／跌回、後續反應的連續證據一起看，不以一根最高K包辦過程；未把3/12升關鍵點，未定幾日量、選窗、合併或買賣公式，非新工程契約，不交Codex重做查詢／reaction。
+
+本輪只讀研究audit核43連續原索引／完整OHLCV MACD、同窗三最大值、三參照逐筆Decimal關係、原來源ID確認及左側相鄰三筆，原comparison／query SHA不變；沿用PNG從GitHub核等。無新繪圖／瀏覽器／產品源碼引擎／原辨識MACDreaction／query adapter CLI／bootstrap／14、22或舊產品測試／ZIP或Android；Android NOT_TESTED_NEW_BUILD，file://不重試不繞過，前輪缺Chromium未解除。
+
+三已定概念／月份39筆5/13、6/3、1/27不重問，未挑戰舊帶高點前不因低位整理先降本例重要性；舊共享角色PENDING_NOT_REASKED。primary_pressure_id=null、歷史選取null／historical_signal_eligible=false；正式成員區界代表／增量量權重／衰減重要性／合併直接承接／解除生命階段與Raw公司行動／五年Adjusted／歷史可得／九待核非窮盡日曆／Darvas／SQLite未知。五月十月全部反例、原拒絕餘量／時點、相等與日OHLC、89版本84幾何非獨立及不同窗不排名保持；核心NOT_ESTABLISHED／分類NOT_VALIDATED／行動NOT_EVALUATED。下一步仍Work廣角完整過程對整體角色的正反證，已定規則或可重現缺陷才交Codex。不調參硬編、不新增自動選關合併解除，不改原核心參數策略庫歷史舊頁案例及main，不部署付費交易訊息子代理。成果同分支逐檔回讀，結束附已核SHA、入口完成未完成及完整續接。
+
+---
+
+# 最新：使用者否定小窗判讀；撤回一月分段問，恢復廣角（2026-10-20 Work）
+
+[使用者更正／597筆廣角價量／完整續接](docs/visual-discussion/20261020_broad_context_correction/README.md)。接續3e74a88。使用者16:42原話「你的圖不足以分析，應該說分析了也沒意義。範圍太小了。我只知道11/25的高點價量都沒過因此也不是關鍵點。」本例11/25為2024-11-25；更正已定DO_NOT_REASK。前輪一月延續／另段三選一撤回WITHDRAWN_RESEARCH_WINDOW_INSUFFICIENT，不是選第三項，勿再留PENDING催答。原68筆圖、資料、程式及算法轉折保留作歷史；舊決策與入口加最新更正，不抹舊證據。
+
+改以2023-01-03～2025-06-30全597保存日K／量／原MA20、60、130、260與MACD作靜態研究全景，非新互動UI或瀏覽器截圖、不重算。先看較早高位形成、整段下移與反覆／反彈回落再定位局部；轉折存在≠有意義關鍵點≠正式代表。11/25原34.20／量43,141,500；助手例示對照2023/11/28為35.50／65,709,089，均未過；與2024/9/30同高34.20但量略多41,315,092，不改說比所有舊點量縮。使用者比較錨／量口徑未明示，不擅補或泛化價量雙過公式，不刪原來源、不寫死該日答案進算法。
+
+本輪只讀研究核597連續原索引／完整OHLCV MACD MA字串、Decimal兩組例示比較及原comparison／query SHA不變；實看全景、修首稿y低限裁六月K後重繪再看。圖窗非正式起訖或整體成員，40.25前背景不自動納入。原圖／核心／查詢／reaction均保留；無bootstrap／產品修改執行／原辨識MACDreaction／query adapter CLI／14、22或舊產品測試／ZIP／瀏覽器／Android。Android NOT_TESTED_NEW_BUILD、file://不重試不繞過，前輪Chromium缺失未解除。
+
+局部整體分判／容許異質形態整體／未挑戰舊帶高點前不因低位整理先降重要性保持；月份39筆5/13、6/3、1/27不重問，舊共享交界角色PENDING_NOT_REASKED。primary_pressure_id=null、歷史選取null／historical_signal_eligible=false；正式成員區界代表／增量量權重／衰減重要性／合併直接承接／解除生命階段及Raw公司行動／五年Adjusted／歷史可得／九待核非窮盡日曆／Darvas／SQLite未知。五月十月反例、來源時點、相等日OHLC、原拒絕餘量、89版本84幾何非獨立／不同窗不排名保持。核心NOT_ESTABLISHED／分類NOT_VALIDATED／行動NOT_EVALUATED。下一步仍Work廣角結構研究，不交未定自動選關合併給Codex。原核心參數策略庫歷史舊頁案例及main保留、不調參硬編、不部署付費交易訊息子代理。成果同分支逐檔回讀，結束附最新已核提交入口、完成未完成與完整續接。
+
+---
+
+# 最新：一月下探回返局部圖，結構身分待判（2026-10-20 Work）
+
+[新原值研究圖／精確資料／完整續接](docs/visual-discussion/20261020_version_continuity_work_review/README.md)。接續37194f7，保留所有成品。新增靜態研究摘圖，非產品UI重做／原互動頁新截圖：原comparison的2024-11-01～2025-02-14共68保存日K／量／MACD／MA20、60逐筆直接讀取不重算，視窗非正式起訖。B74舊研究下緣30.80自12/20確認；1/10收30.25在下、1/13低30.05／收30.50、1/15收30.80相等、1/16收30.95在上，後續回落保留。B76及1/13新增6%低來源到2/12才確認，30.05線只從2/12開始，不能回填舊30.80未破。
+
+B74八來源是B76九來源完整前綴，證機械版本延長，不證正式經濟結構同一；跨界也不單獨證另段。新真實局部問題PENDING_USER_ADJUDICATION：此例延續／擴張、前段結束後另段或證據不足？只問本例局部分段，不問舊整體重要性／正式解除；使用者只有下一步未作答，舊共享交界問題亦PENDING不重問。未挑戰舊帶高點前不因低位整理先降重要性、局部整體分判、異質形態整體及舊月份39筆5/13、6/3、1/27均不重問。答覆只作人工研究案例，不硬編算法或直接升自動規則。
+
+本輪實跑僅只讀研究繪圖程式，核68連續索引／原欄位、前綴新來源確認與Decimal低等高比較；原comparison／query SHA不變，view_image實看PNG中文字／K量MACD與界線時點。無bootstrap／產品源碼修改執行／原辨識MACDreaction／query adapter CLI／14、22或舊產品測試／新ZIP／瀏覽器／Android；靜態圖不解除前輪缺Chromium，Android NOT_TESTED_NEW_BUILD，file://不重試不繞過。
+
+primary_pressure_id=null、歷史選取null／historical_signal_eligible=false；正式成員區界代表／增量量權重／衰減重要性／合併直接承接／解除生命階段與Raw公司行動／五年Adjusted／歷史可得／九待核非窮盡日曆／Darvas／SQLite仍未知，核心NOT_ESTABLISHED／分類NOT_VALIDATED／行動NOT_EVALUATED。五月十月反例、相等與日OHLC限制、原拒絕餘量／時點、89版本84幾何非獨立與不同窗不排名保持。下一步仍Work具體圖裁決或補有區辨力的反例；已定規則／可重現產品缺陷才交Codex，不實作未定自動分段合併／主壓力／正式解除。原核心參數策略庫歷史舊頁案例及main保留，不調參、不部署付費交易訊息子代理。成果同分支逐檔回讀，結束提供已核SHA、入口、完成未完成及完整續接。
+
+---
+
+# 最新：正面結構來源與中間路徑／版本對照（2026-10-20 Work）
+
+[新真實對照／完整證據及續接](docs/visual-discussion/20261020_intervening_path_work_review/README.md)。接續7b0450b，分支相同。研究描述支持早段高位＋原9點下移及反彈銜接＋B77原反覆區，尚未批准正式歸屬。B77五高35.50、35.20、34.20、34.20、35.45，末高較前高升1.25但較首高低0.05，不補相等或突破，不替代整個人工大帶或選正式代表。
+
+新區辨維度：B6與B77同價域，但中間B6原path從2023-01-12收35.40上越34.70，5/2日高40.25／收39.90，再9/6收34.40回內、9/13收35.30再上、9/20收34.35回內、10/18收32.45在32.50下。B6原確認日至B77首來源前198保存記錄，直接收盤掃描與6個原事件全等；同價不等一直在同一區反覆。共同80筆窗內B6研究高低界都被收盤走過，但全日高低於A原39.25；只比路徑不排名或宣告解除，40.25不自動歸入人工整體。
+
+同時核已保存7條來源前綴邊，B74→B76有反例：舊下緣30.80，1/10收30.25在下，1/15收30.80相等回界；B76到2/12才確認、原研究低擴到30.05，B74來源ID為B76完整前綴。離區回返不能單獨切新獨立帶，版本關係也不認證正式同帶；後來30.05不能回填當時未破30.80。原path事件名稱不當已驗短線假突破／正式解除。新候選維度是中間路徑與來源身分並列，未成充分歸屬規則，不交Codex自動分段。
+
+本輪只讀原core/path/OHLC與7前綴邊，核B77十來源與原K、6事件／198窗、80共同窗及原comparison／query SHA不變；舊真實PNG從GitHub核等，無新瀏覽器嘗試／截圖／query adapter CLI／原辨識MACDreaction／bootstrap／14或舊測試／ZIP／Android。Android NOT_TESTED_NEW_BUILD，file://不重試不繞過。共享交界角色仍PENDING，不把下一步當批准也不重問；三個已定概念／月份39筆5/13、6/3、1/27與五月十月反例、原拒絕餘量／時點／相等日OHLC限制、89版本84幾何非獨立及不同窗不排名保持。
+
+primary_pressure_id=null、歷史選取null／historical_signal_eligible=false；正式成員區界代表／增量量權重衰減重要性／合併直接承接／解除生命階段與Raw公司行動／五年Adjusted／歷史可得／九待核非窮盡日曆／Darvas／SQLite未知、核心NOT_ESTABLISHED／分類NOT_VALIDATED／行動NOT_EVALUATED。未挑戰舊帶高點前不因低位整理先降本例重要性，亦不額外排名加權。下一步仍Work檢查候選路徑證據與來源身分對具體歸屬假說的支持／反例／缺證；已定規則或可重現產品缺陷才交Codex。不調參硬編答案，不改原核心參數策略庫歷史舊頁案例或main，不部署付費交易訊息子代理。成果同分支逐檔回讀，結束附最新已核SHA、入口完成未完成及完整續接。
+
+---
+
+# 最新：形成來源與後續觀測分判；未升正式歸屬（2026-10-20 Work）
+
+[跨月份來源／反彈覆蓋／原圖與完整續接](docs/visual-discussion/20261020_membership_vs_reaction_work_review/README.md)。接續711ef52，分支相同。使用者15:54只說下一步；共享交界正式角色問題仍PENDING，本輪不依賴答案也不重問，不作批准。沿用已完成來源反查，無需新增工具或交Codex重做查詢／圖表／reaction。
+
+本輪只讀原B44/B80同四來源與確認：4/8低28.45、4/10高31.20、4/22低28.50、5/13高31.40；3%確認4/10、4/11、4/29、5/14，6%確認4/10、4/18、5/5、5/27，原整箱5/14／5/27才確認。三點發生四月不等後來完整四點箱四月已形成，不倒灌不同尺度較早資格；4/30只作已答月份閱讀末日，不補正式終點或按此裁箱。原39筆最高日高31.40，全低於B77原研究高群34.20～35.50下緣、差2.80；影線外包交集30.05～31.40僅幾何。13上0等26下只是相對30.05同窗收盤統計，不是票數／26次跌破或新權重，不取代完整反應路徑。
+
+研究判讀：後來局部箱引用較早來源或價域重疊，可提供相對舊區低部的觀測，但不能據此升格正式整體成員、自動延長舊帶或認證壓力因果；也未到該原研究高群，不據此稱挑戰人工整體高點。研究高群不補人工正式區界／代表。舊帶未挑戰高位的重要性維持，不因局部失敗額外加權。正式歸屬仍未知，這不是新生產算法。
+
+原comparison及已完成source-query SHA／core身分保持，只讀8尺度來源與原K、39筆及原研究區；五月例另按原same層讀core，不是查詢例檔漏檢或新遞迴。舊PNG從GitHub核等，首比空白正規表示式誤植已修正、內容全等不改圖；無新瀏覽器嘗試／截圖／14或舊測試／query adapter CLI／引擎MACDreaction／bootstrap／ZIP或Android。前輪缺Chromium未冒稱解除；Android NOT_TESTED_NEW_BUILD，file://不重試不繞過。
+
+三個已定概念及月份39筆5/13、6/3、1/27不重問，五月十月反例、原拒絕餘量、來源時點、相等與日OHLC限制、49轉換非訊號、89版本84幾何非獨立與不同窗不排名保持。primary_pressure_id=null、歷史選取null／historical_signal_eligible=false；正式成員區界代表／增量量權重衰減重要性／合併直接承接／解除生命階段及Raw公司行動／五年Adjusted／歷史可得／九待核非窮盡日曆／Darvas／SQLite未知、核心NOT_ESTABLISHED／分類NOT_VALIDATED／行動NOT_EVALUATED。下一步仍Work比較正式歸屬假說正反證與缺證，已定規則或可重現產品缺陷才交Codex。不調參硬編答案，不改原核心參數策略庫歷史舊頁案例或main，不部署付費交易訊息子代理。同分支逐檔回讀，結束附最新已核SHA、入口完成未完成與完整續接。
+
+---
+
+# 最新：已讀新來源反查，交界來源角色待裁決（2026-10-20 Work）
+
+[新成品閱讀／原圖交界／證據與完整續接](docs/visual-discussion/20261020_whole_membership_work_review/README.md)。接續e0bd48c，確認包含來源反查e45d972與原圖fff4791，分支無較新更新。全文讀新交付三檔、SOURCE_QUERY／驗收／request／完整30584-byte JSON及原契約、歸屬研究／user-decision／USER_CORRECTION。新JSON核SHA與17原點／8原箱回傳欄位全等原資料，不執行已完成query／adapter／CLI，不重做圖或reaction；14測試／27回下載及fixture初敗修正是已讀工程紀錄，不是本輪重跑。
+
+新具體問題PENDING_USER_ADJUDICATION：正式區段是否允許同一實際K線低點由相鄰區段分別引用、記錄不同角色，而不強迫只能歸一邊，也不因共享就合併？原10/24低31.35，3%記錄為B19末來源／11/2確認，6%同座標記錄為B77首來源／11/20確認；原B77到2025-03-24才確認，不能回填2023已知完整箱。B19末來源非正式整箱終點、B77首來源非人工大帶已定起點。原ID各自保持，助手建議角色並存但未獲答；同意亦不等本例正式分段／成員區界代表／合併直接承接批准。B77關係另讀原core，不冒稱新JSON遞迴查出或漏檢。原9點末高35.50較前高34.15升1.35，但與9/14高35.50相等、差0.00，不補突破。
+
+已確認三概念及月份／39筆／5/13／6/3／1/27不重問，未挑戰舊帶高點前不因低位整理先降本例重要性保持。A三箱六月前40.25保留不自動歸整體；119／前33後77非起訖條件，同座標不合併不投票、不跨尺度冒充路徑。五月十月反例、原拒絕餘量、來源時點、相等及日OHLC限制、89版本84幾何非獨立及不同窗不排名保持。primary_pressure_id=null／歷史選取null／historical_signal_eligible=false；正式成員區界代表／增量量權重衰減重要性／合併直接承接／解除生命階段及Raw公司行動／五年Adjusted／歷史可得／九待核非窮盡日曆／Darvas／SQLite未知與核心NOT_ESTABLISHED／分類NOT_VALIDATED／行動NOT_EVALUATED保持。
+
+原圖PNG從GitHub逐byte再核等，沿用舊真實閱讀窗；新標註截圖NOT_COMPLETED。先因觀察腳本SHA字串誤植在啟動前被拒、改正後前輪Chromium執行檔已失，查本機無可用瀏覽器，未安裝未走file://、無新PNG或成功瀏覽器驗收。非產品缺陷，不交Codex重做查詢。無bootstrap／原辨識MACDreaction重算／14或舊測試／新ZIP或Android；Android NOT_TESTED_NEW_BUILD，file://不重試不繞過。下一步仍Work用原圖裁決此新角色問題，已定規則或可重現產品缺陷才交Codex。不調參硬編答案、不改原核心參數策略庫歷史舊頁案例證據或main，不部署付費交易訊息子代理。同分支逐檔回讀，結束附最新已核SHA、入口完成未完成及完整續接。
+
+---
+
+# 最新：既有診斷單一來源反查已實作（2026-10-20 Codex）
+
+接續df25a67，本環境重新bootstrap --hydrate-missing成功，0補檔／7差異保留。新增graph_diagnostics/source_query.py純函式、來源adapter與CLI，直接讀原pivots／boxes，不改diagnose輸出／原核心／參數／策略／庫／歷史／舊頁／reaction_facts／圖表。不重算辨識、轉折、箱、MACD或反應事實；重用fingerprint／number／_validate／publish_immutable。明示ID反查所有原箱引用／序位、完整同座標別名各自確認，以及同尺度同段from/to的完整原路徑；無自動猜終點、裁箱、跳尺度、遞迴吸納或合併。
+
+[30KB精確JSON／source／實測／完整Work指令](deliveries/m1-v019-source-query-20261020/README.md)。最終14新Python契約測試PASS，含171原來源／89原箱全反查、真實A三箱與9點路徑／119背景、同座標與source_dates、錯誤／混合／未確認／跨尺度段／倒序拒絕、未選未來追加改動不改舊前綴、確定性／不變性、禁重算mock與CLI精確JSON／實際時戳／衝突拒絕。強化守衛後有1次測試fixture未隔離而FAIL，保留原log，修fixture使獨立原K檢查仍必須拒絕，未放寬斷言，最終重測PASS。固定原ZIP CRC／SHA與原完整來源／MACD／core／manual audit全等另核。新JSON30584 bytes；3明示來源／8原箱／17原點／9點路徑，不是型態或重要性票。GitHub逐檔回讀另存後續收據。
+
+原2220追蹤檔在交接更新前全未改，現在只加3根交接最新節。無UI／瀏覽器／Android／新ZIP或舊22／47等重跑；Android NOT_TESTED_NEW_BUILD、file://不重試不繞過。comparison內diagnostics僅摘要，明示未驗完整diagnostic_id；來源自洽不認證外部行情或歷史公開可得。原確認下限與後來實際selected_at分開，historical_signal_eligible=false。
+
+下一步Work用原來源研究正式整體歸屬，不重做查詢／圖表／reaction。已確認異質形態整體概念、局部整體分判、不因低位整理先降未挑戰舊帶高點之本例重要性及所有舊案例不重問。primary_pressure_id=null，正式成員區界代表／增量量權重／衰減重要性／合併直接承接／解除生命階段未知；Raw公司行動／五年Adjusted／歷史可得／九待核非窮盡日曆／Darvas／SQLite與核心NOT_ESTABLISHED／分類NOT_VALIDATED／行動NOT_EVALUATED保持。原拒絕餘量、五月十月反例、49轉換非訊號、89版本84幾何非獨立及不同窗不排名保持。不改main，不調參寫死人工答案，不部署付費交易訊息子代理；結束必附最新已核SHA及完整續接。
+
+---
+
+# 最新：來源反查有限契約已備，可轉Codex（2026-10-20 Work）
+
+[新研究／完整契約／可貼Codex指令](docs/visual-discussion/20261020_source_query_contract/README.md)。接續a30b62f，確認分支相同並讀最新交接。原3%／segment0全119點從2021-11-29到2026-10-13；前輪9點路徑前33後77，證同尺度同段相鄰不等經濟同帶或正式起訖，不能一路串接歷史。新probe只讀核119原點／原K、9點子串、兩組完整source_dates與原來源bytes，無辨識／MACD／reaction重算。
+
+已完整讀原graph_diagnostics README／build／diagnose／viewer；原資料已有完整來源序列及箱source_turn_ids，不另造第二套診斷。可交Codex的已定範圍是既有診斷中的單一來源反查：明示pivot ID查所有原箱引用、完整同座標來源與各自確認、同尺度同段明示from/to的完整有序路徑。重用已有等價功能與原fingerprint／number／來源驗證，不改原核心或diagnose輸出、不新UI／圖表／reaction_facts，不輸入人工月份答案或自動猜終點、不沿連接自動合併。契約READY_FOR_BOUNDED_ENGINEERING，生產查詢NOT_IMPLEMENTED、契約測試NOT_RUN；不是大帶辨識完成。實作／測試／逐檔回讀後回Work研究正式歸屬；目前仍無自動合併充分條件。
+
+不同形態整體概念、局部與整體分判及未挑戰舊帶高點前不先降本例重要性均已定不重問；月份／39筆／5/13／6/3／1/27不重問。不擅定39.25／35.50／35.45／40.25為正式整體代表。保留五月十月反例、原拒絕餘量、來源末轉折／確認／研究離箱／人工終點、原值可知與實際選取時間分開、相等及日OHLC限制；historical_signal_eligible=false。primary_pressure_id=null與正式區界代表／增量衰減重要性／合併直接承接／生命階段及Raw公司行動／五年Adjusted／歷史可得／九待核非窮盡日曆／Darvas／SQLite未知、89版本84幾何非獨立型態、不同窗不排名及核心NOT_ESTABLISHED／分類NOT_VALIDATED／行動NOT_EVALUATED保持。
+
+本輪無bootstrap／新ZIP／22測試／新瀏覽器Android，舊驗收不當新跑；原圖沿用非新截圖，Android NOT_TESTED_NEW_BUILD、file://不重試不繞過。讀錯core.py與不支援目錄URL的暫存讀取失敗已定位實際diagnose.py成功，無產品修改。工程必須在實際完整checkout依AGENTS準備，不能冒用他環境成功。不調參硬編答案、不改原核心參數策略庫歷史舊頁案例證據或main，不部署付費交易訊息子代理。成果同分支逐檔回讀；完整續接見新目錄CODEX_HANDOFF.md，結束附最新已核SHA、入口完成未完成及續接。
+
+---
+
+# 最新：不同形態概念已確認；來源歸屬反例與路徑已核（2026-10-20 Work）
+
+使用者11:04原話「可以，下一步」，承接整體可含高位下移與內部橫箱、不要求整體再符合局部橫箱同條件；USER_CONFIRMED_CONCEPT／DO_NOT_REASK，前輪PENDING為歷史。只確認形態容許，不批准自動歸屬合併／正式區界代表／解除權重。[新原值研究／使用者收據／完整續接](docs/visual-discussion/20261020_structure_membership_work_review/README.md)。
+
+接續60d8cf2。A原6/5高39.25已存在B16/B17/B18，但三箱起於六月月份背景前；只收全在背景內的整箱會漏A，相交整箱全部納入則帶進5/2高40.25等背景前來源。分開單一來源角色與原箱成員，不裁改原箱、不將月份閱讀端點正式化、不選A或40.25為整體代表。新只讀九點路徑保留原3%高低與時點；10/24低31.35、11/28高35.50與B77原6%來源同日同價但不同ID／確認，末高反彈不可簡化全程下移。連續路徑及同座標是觀測，不等持股者一致／正式合併直接承接，8/3待核日保持。
+
+另核價格重疊不足：B77與2022年B6研究價域重疊，時間不相交、無共享轉折；89候選3916對1630正重疊／1相等接觸／2285分離；只以正重疊連通會讓B77組含50候選版本、延到2022-11～2025-05。不是50獨立型態或合併成功，89版本84幾何非獨立限制保持。新audit.py僅研究目錄只讀原JSON，最終核9原轉折、89來源摘要、全配對／84幾何／兩法連通結果及原兩JSON SHA不變；無原核心／MACD／reaction重算、bootstrap、22測試、新ZIP／瀏覽器／Android。Android NOT_TESTED_NEW_BUILD，file://不重試不繞過。
+
+下一步仍Work研究具有區辨力的來源關係；不把整箱時間篩、來源相鄰或價格重疊當充分自動歸屬法，未定規則不交Codex自動合併。未挑戰舊帶高點前不因低位整理先降本例重要性的更正CLOSED；已答局部與整體分別判斷／月份／39筆／5/13／6/3／1/27不重問。五月十月反例、原拒絕餘量、來源時點、相等及OHLC日內順序限制、不同窗不排名保持。primary_pressure_id=null，正式區界代表／增量衰減重要性／合併直接承接／生命階段與Raw公司行動／五年Adjusted／歷史可得／九待核非窮盡日曆／Darvas／SQLite未知、核心NOT_ESTABLISHED／分類NOT_VALIDATED／行動NOT_EVALUATED不變。不調參硬編答案，不改原核心參數策略庫歷史舊頁案例證據或main，不部署付費交易訊息子代理。同分支逐檔回讀；結束附最新SHA、入口完成未完成及完整續接。
+
+---
+
+# 最新：整體結構形態待裁決（2026-10-20 Work）
+
+[真實圖與新核心問題／完整續接](docs/visual-discussion/20261020_structure_composition_work_review/README.md)。接續56b308b並確認指定db000b9／2d9c9aad／fff4791祖先；沿用前輪A較早高位與綠色B77全景，不重做圖。新概念PENDING_USER_ADJUDICATION：整體大帶可由早段較高區、價位下移及後段反覆橫箱等不同部分構成，不要求整體再符合局部橫箱同一穩定價界條件。尚未獲答；此問是結構形態，不重問已答局部／整體分別判斷。即使認同亦不等正式合併、成員、區界或代表已定，不將所有下跌與後來箱自動相接。原左右拒絕及餘量不改。
+
+未挑戰舊帶高點前不因低位整理先降本例舊帶重要性的更正CLOSED保持，不重問月份／39筆／5/13／6/3／1/27，不擅定A39.25或B35.50為整體代表。五月與十月全部反例、來源可知與實際選取分開、相等及日OHLC限制不變。primary_pressure_id=null；正式區界代表／增量／衰減重要性／合併直接承接／生命階段及Raw公司行動／五年Adjusted／歷史可得／九待核日期非窮盡日曆／Darvas／SQLite未知、89版本84幾何非獨立型態與不等長窗不排名保持。
+
+本輪僅交接／原來源／既有圖審閱及提案保存，無新瀏覽器／圖表／Python22測試／引擎附層MACD／bootstrap／ZIP或Android；舊驗收不當新跑。Android NOT_TESTED_NEW_BUILD，file://不重試不繞過；核心NOT_ESTABLISHED／分類NOT_VALIDATED／行動NOT_EVALUATED。不調參硬編答案，不改原核心參數策略庫歷史舊頁證據或main，不部署付費交易訊息子代理。已定規則或工程缺陷才交Codex；同分支逐檔回讀，完整續接見新目錄WORK_HANDOFF.md。
+
+---
+
+# 最新：早段高位已存在，研究尺度不等壓力層級（2026-10-20 Work）
+
+[新真實對照／來源ID／完整研究與續接](docs/visual-discussion/20261020_high_source_roles_work_review/README.md)。接續c74695d；使用者未挑戰舊帶高點前不因低位整理先降本例舊帶重要性的更正保持，舊問題CLOSED不重問。原core已有6/5高39.25的3%轉折來源、6/28確認；B77有11/28高35.50的6%來源、次年1/16確認，同價另有3%來源。這些原值不是本輪新增演算法。較細尺度可能保留較早高位，不能以較大尺度B77替代完整人工大帶；也不將39.25／35.50指定整體代表或設最高價優先規則。
+
+新研究ASSISTANT_ANALYSIS_NOT_USER_ADJUDICATED：區分來源存在、有限查詢覆蓋、整體角色辨識。reaction_facts四參照例檔未含31.40，但原B44/B80已含此已答局部代表；不是附層缺陷。下一步同Work以已有早段高位與後段反覆來源研究整體關係，不再把增加小參照算術當主壓力辨識接近完成。不新增正式組合、重要性、合併或自動選關門檻；已定規則或工程缺陷才交Codex。
+
+本輪只讀原core/pivots及附層catalog，原兩JSON核SHA；Chromium133 HTTP原HTML兩窗加觀察A/B及字型，2PNG、原來源ID與K高核等、data/core/分析身分不變、0pageerror；無引擎／reaction／MACD重算、bootstrap、新ZIP、22或7／47重跑、產品UI／觸控下載／Android驗收。Android NOT_TESTED_NEW_BUILD，file://未用不重試不繞過，圖為後來研究非歷史當時訊號。
+
+primary_pressure_id=null及正式區界／整體代表／增量衰減重要性／合併直接承接／生命階段與Raw公司行動／五年Adjusted／歷史可得／九待核非窮盡日曆／Darvas／SQLite未知、核心NOT_ESTABLISHED／分類NOT_VALIDATED／行動NOT_EVALUATED保持。原拒絕餘量−2.4800／−0.7825、時點語義、49轉換非訊號／89版本84幾何非獨立型態、廣義後來非直接承接、不等長窗不排名保持。不重問月份／39筆／5/13／6/3／1/27，不重讀101圖／0.4.3，不改核心參數策略庫歷史舊頁案例證據或main，不調參硬編答案，不部署付費交易訊息子代理；結束附最新已核SHA與完整續接。
+
+---
+
+# 最新：使用者否定未挑戰舊帶高點前先降權（2026-10-20 Work）
+
+使用者10:34原話：「怎麼可能調降，他的價格就還沒挑戰左側舊大帶的高點。」[完整更正與範圍](docs/visual-discussion/20261020_reaction_pressure_work_review/USER_CORRECTION.md)。本例不因右側低位整理／局部修復，在尚未挑戰左側舊大帶高點時先調降舊帶重要性。助手前輪把上攻能力改善延伸成可先降舊帶權重的提問撤回；問題CLOSED_BY_USER／DO_NOT_REASK。局部與整體分別判斷的已確認原則保持，舊問題／研究只留歷史。
+
+不擅定整帶代表高點，不把35.50／35.45／39.25補為答案，不推觸及即解除或未過最高價禁止進場；正式價界／代表／解除、量增衰減重要性等未知與primary_pressure_id=null保持。下一步同Work保留舊帶重要性，研究局部修復如何接近並挑戰上方舊帶的真實路徑，不再用低位整理先替未挑戰的舊帶降權。已定規則或工程缺陷才交Codex。
+
+本輪僅使用者更正與交接保存，無新圖／bootstrap／引擎指標或Python瀏覽器Android測試；reaction_facts與原主圖數值不改，Android NOT_TESTED_NEW_BUILD、file://不重試不繞過。全部來源時點、拒絕餘量、49轉換非訊號／89版本84幾何非獨立型態、不同窗不排名及Raw／Adjusted／歷史可得／九待核日曆／Darvas／SQLite未知保持。不改main或核心參數策略庫歷史舊頁案例證據，不重讀101圖／0.4.3，不部署付費交易訊息子代理；最新完整續接見該研究目錄WORK_HANDOFF.md。
+
+---
+
+# 最新：Work已讀新反應事實與整體壓力證據範圍（2026-10-20）
+
+接續db000b9，包含數值成品2d9c9aad及原真實圖fff4791。[新全景／局部圖／完整研究與續接](docs/visual-discussion/20261020_reaction_pressure_work_review/README.md)。本輪新下載965,955-byte資料ZIP核SHA／CRC／manifest；取得完整11,672,241-byte新JSON，全部1213原K／原MACD與原資料全等、原comparison-data逐字同前輪。按需讀catalog、10筆完整案例與近期窗口，不重算附層或核心／指標，不搬22測試／33回讀當本輪重跑。
+
+新研究ASSISTANT_ANALYSIS_NOT_USER_ADJUDICATED：四參照各答不同主張，不多空投票。26.95來源為B88研究高界，同價不等人工1/27同語義；27.40日高過而收未過只反駁該收復主張；30.05是B77研究下界，最新高／收與本輪31筆近期窗日高均在下，只證尚未返回該研究走廊，不直接證舊帶正在壓制這波，也不是人工整帶正式底線。四參照未提供完整大帶正式區界／強度算法。
+
+真正新核心歧義尚未獲答：未回到舊大帶前，低位長期整理與反覆成交能否支持先調降舊帶重要性，或需回到該處看實際反應才調整？助手暫建議先分開後續挑戰能力與舊帶本身賣壓，未採新衰減或權重；不改本例大帶較重要的既有判讀。使用者已答局部／整體分別判斷，不重問原則／月份／39筆／5/13／6/3／1/27等。
+
+原HTML Chromium133 HTTP有限2窗配新JSON參照疊線／觀察字型，2PNG、原data/core/分析身分及新JSON bytes不變、0pageerror；不是新UI、完整互動觸控下載或Android、bootstrap、22／7／47重跑。Android NOT_TESTED_NEW_BUILD，file://未用未重試未繞過。下一步仍Work以全景裁決新歧義，已定規則或工程缺陷才交Codex，本輪無必須先修工程阻礙。
+
+primary_pressure_id=null與正式區界／增量／衰減重要性／合併直接承接／生命階段及Raw公司行動／五年Adjusted／歷史可得／九待核日期非窮盡日曆／Darvas／SQLite未知保持，核心NOT_ESTABLISHED／分類NOT_VALIDATED／行動NOT_EVALUATED保持。原拒絕餘量−2.4800／−0.7825、來源時點語義保持；49轉換或分段非訊號、89版本／84幾何非獨立型態，廣義後來非直接承接，不等長窗不排名。保留核心參數策略庫歷史舊頁案例證據與main，不調參硬編答案、不重讀101圖／0.4.3，不部署付費交易訊息子代理；結束附最新已核SHA與完整續接。
+
+---
+
+# 最新：多參照反應事實附層已實作（2026-10-20 Codex）
+
+接續c871eeb；本環境重新bootstrap --hydrate-missing成功，0補檔／7差異保留。新增reaction_facts獨立純數值附層／來源adapter／CLI／完整精度JSON，不改已完成主圖或原core／schema／策略。重用原number／fingerprint／ratio，補多參照close/high/low三態、精確差值、實體與前收方向、相鄰Raw幾何、前保存量分母窗口、原MACD及全部轉換；來源可知、原確認與後來實際選取分開，historical_signal_eligible=false。新1213筆／4明示來源／49分欄位轉換或分段索引，不是49交易訊號或型態。
+
+[成品／來源／實測／完整Work指令](deliveries/m1-v019-reaction-facts-20261020/README.md)。新22 Python契約測試PASS，含真實九筆oracle、前綴／追加改未來、未可知／延後可知、相等精度、缺漏零分母、來源基底frame拒絕、完整路徑、CLI精確JSON／竄改拒絕及ZIP。原固定診斷ZIP重新核CRC／SHA，原bars／量／MACD／SMA／source／basis／完整core與manual audit全等。新資料ZIP965955 bytes、6成員CRC／bytes／SHA已核。初例檔同價＋同確認日各找到2來源而斷言停止，連帶缺selection錯誤保存；改用原明示B77／B88圖層ID，不任選或調參。GitHub逐檔回讀另有後續收據。
+
+本輪無UI變更，無新瀏覽器／觸控／Android測試，不沿用舊7／47或35／60作通過。原2155追蹤檔在交接更新前全未改，現在只於3根交接前加最新節；核心參數策略／庫／歷史／舊頁／來源案例證據／main保留。Android NOT_TESTED_NEW_BUILD、file://不重試不繞過。primary_pressure_id=null與整體解除／有效突破未知；全部正式區界／量口徑增量權重／強度衰減重要性／合併直接承接／生命階段及Raw公司行動／五年Adjusted／歷史公布可得／9待核日期非窮盡日曆／Darvas／SQLite未知不變。核心NOT_ESTABLISHED、分類NOT_VALIDATED、行動NOT_EVALUATED。
+
+下一步Work配合原真實圖讀新多參照事實，研究局部與整體壓力關係；已確認分別判斷原則及舊案例不重問。這不是主壓力自動辨識或交易價值通過，不寫死人工日期／價位、不調參新增選關／解除／買賣規則。新策略仍回Work，以具體圖釐清；不重讀101圖／0.4.3或舊手機驗收。不部署付費交易訊息子代理；結束必附最新已核SHA及完整可貼續接。
+
+---
+
+# 最新：多參照反應事實層已備妥有限工程交接（2026-10-20 Work）
+
+[新真實圖／原值／完整有限契約／可貼Codex指令](docs/visual-discussion/20261020_reaction_facts_contract/README.md)。接續c0d0630；使用者已確認局部事件與整體解除分別判斷，不重問。本輪繼續授權不是新策略核准。5/19跌回後20／21再站30.05上但高仍低於5/14的30.50，22又跌回；5/14本身紅K卻較前收跌0.75，原股數比前筆約3.28僅描述。10/16高低雙端上移，收27.30高於26.95但低於10/14高27.40；日高27.70不等收盤越27.40，低26.95相等不證日內回測。
+
+下一步可轉Codex，依REACTION_FACTS_CONTRACT及CODEX_HANDOFF做獨立純數值事實附層：逐參照存close/high/low上／下／相等、實體方向與前收方向、相鄰原K高低、原量MACD及完整轉換。先重用已有等價功能、不改原核心或選關／解除算法；原值可知與參照實際被選取時間分開，後來查詢不當歷史訊號。30.50／27.40僅明示觀察，不寫死生產常數。本輪NOT_IMPLEMENTED；契約驗收NOT_RUN，不能把文件當新核心完成；正式主壓力及策略仍須Work研究。
+
+本輪沿原fff4791 HTML／JSON核SHA，Chromium133 HTTP兩窗觀察疊線與字型、2PNG、完整data/core/分析身分不變、0pageerror；另Decimal只讀核9筆原值與前筆。不含bootstrap、辨識指標重算、7／47重跑、觸控下載回歸或Android；Android NOT_TESTED_NEW_BUILD，file://未用未重試未繞過。新工程須在實際完整checkout依AGENTS準備，不能冒用別環境成功。
+
+primary_pressure_id=null及正式區界／量口徑增量／衰減重要性／合併直接承接／生命階段、Raw公司行動／五年Adjusted／歷史可得／9待核日期日曆非窮盡／缺口／Darvas／SQLite未知，核心NOT_ESTABLISHED／分類NOT_VALIDATED／行動NOT_EVALUATED保持。原拒絕餘量−2.4800／−0.7825、時點語義與已答案例、89版本／84幾何組非獨立型態、廣義後來非直接承接、不等長窗不排名保持。不調參硬編日期、不重讀101圖／0.4.3、不改核心參數策略庫歷史舊頁案例證據或main，不部署付費交易訊息子代理。結束須附最新已核SHA與完整可貼續接。
+
+---
+
+# 最新：局部與整體分別判斷已由使用者確認（2026-10-20 Work）
+
+使用者09:31回覆「認同，繼續」，直接承接「重返／突破局部與整體壓力已解除應分別判斷？」；此命題USER_CONFIRMED_PRINCIPLE／DO_NOT_REASK。局部證據仍可影響整體，分別判斷不等各層互相隔離。前輪未答狀態為歷史，已由本輪覆蓋；不是批准全部助手判讀、正式整帶解除／區界、合併承接、量權重或交易規則。
+
+[本輪原話／兩張真實標註圖／精確反例與完整續接](docs/visual-discussion/20261020_pressure_update_evidence/README.md)。5/19收29.80跌回B77研究下緣30.05下方，但MACD柱仍+0.1478…，5/26才轉負−0.0030…；5/14收30.35仍在上方不提前標跌回。10/12～16原五個上／下位置全保留，10/13柱略增仍收回26.95下方，10/16後未知。新分析不等出場／有效突破規則；不讓指標抹去價格反證，不以兩位顯示代替原精度判斷。
+
+沿原fff4791 HTML／JSON核SHA，Chromium133 HTTP改兩個閱讀窗、觀察黃虛線／①②③與字型後保存2PNG，完整data/core/分析身分全等、原HTML SHA不變、0pageerror。另Decimal只讀核原序列，不是引擎／指標重算、bootstrap、7／47重跑、互動下載回歸或Android；Android NOT_TESTED_NEW_BUILD，file://未用未重試未繞過。前期查詢缺暫存初始化參數已改明示repo／SHA成功，無保存影響。
+
+primary_pressure_id=null；正式區界／量口徑增量／衰減重要性／合併直接承接／生命階段與Raw公司行動／五年Adjusted／歷史可得／9待核日期日曆非窮盡／缺口／Darvas／SQLite未知、核心NOT_ESTABLISHED／分類NOT_VALIDATED／行動NOT_EVALUATED保持。原拒絕餘量−2.4800／−0.7825、來源時點與已答案例保持，不調參硬編日期。下一步仍Work研究保持與反證對較大壓力的證據，不重問已定原則或舊日期；已定規則或工程缺陷才交Codex。保留核心參數策略庫歷史舊頁案例證據與main，不重讀101圖／0.4.3，不部署付費交易訊息子代理。換模式附最新已核SHA及完整續接。
+
+---
+
+# 最新：跨尺度壓力部分修復研究（2026-10-20 Work）
+
+接續e0dc1328，固定fff4791圖表工程保持。新研究入口[真實全景／回返重疊／早段下移與完整續接](docs/visual-discussion/20261020_pressure_relations/README.md)。沿用原HTML／JSON重新核SHA，Chromium133 HTTP僅改閱讀窗／勾選保存3張新PNG，完整data/core/分析身分全等、0pageerror；觀察用字型替換明示，非新ZIP CRC／互動下載回歸／47或7重跑／Android／bootstrap／引擎重跑。
+
+新命題ASSISTANT_ANALYSIS_NOT_USER_ADJUDICATED：局部成箱與整體壓力背景分開，重返局部不直接解除整帶。真實5/13高31.40回到B77原研究範圍下半部，但仍低於3/12高35.45，後又回落；兩段影線外包交集30.05～31.40僅幾何，不是正式壓力界、合併、父子或直接承接。B77來源3/12停止後另15筆仍在原研究界內，不能將末來源當整箱終點。下一步同Work裁決這一新增關係，不重問已答日期或代表，不將繼續授權當策略批准。
+
+原拒絕餘量−2.4800／−0.7825、所有來源時點、89版本／84幾何組非獨立型態、廣義後來非直接承接、不等長窗不排名保持。primary_pressure_id=null及全部正式規則、Raw公司行動／Adjusted／歷史可得／缺口／Darvas／SQLite未知、核心NOT_ESTABLISHED／分類NOT_VALIDATED／行動NOT_EVALUATED、Android NOT_TESTED_NEW_BUILD保持。file://未用未重試未繞過；不重讀101圖／0.4.3，不改核心參數策略庫歷史舊頁案例證據或main，不部署付費交易訊息子代理。只有已定規則或工程缺陷再交Codex，換模式附最新已核SHA及完整續接。
+
+---
+
+# 最新：Work已實看真實跨尺度比較圖（2026-10-20）
+
+本輪從afb116d接續，實際下載749,695-byte新ZIP核SHA／CRC／6成員SHA、HTML與獨立完整JSON全等；Chromium133 loopback HTTP有限讀圖及5組核對，13張PNG、0pageerror，1400／390寬。觀察用字型替換獨立記錄，成品及完整數值／core不改；不是7 Python／47 Chromium／12下載重跑、觸控或Android。Android NOT_TESTED_NEW_BUILD，file://未重試未繞過；無bootstrap或引擎重跑，不冒用別環境準備成功。
+
+[本輪實看、原尺寸真實圖、來源驗證與完整續接](docs/visual-discussion/20261020_cross_scale_real_work_review/README.md)。助手新判讀未經使用者裁決：B77只涵蓋較低反覆走廊，早段高位下移與右側急跌需另研究整體壓力關係；原左拒−2.4800、右拒−0.7825保留，不調參／硬編日期。25來源不等39整體歸屬，6/2同日研究界外與人工終點語義分開；B88不涵蓋六月後先前下跌，1/27同價不等整段完成。主帶月份／已答案例不重問。下一步同Work用真實圖研究跨層次壓力脈絡，沒有必須先修的工程阻礙；已定規則或工程缺陷才交Codex。
+
+primary_pressure_id=null與全部正式規則／Raw公司行動／五年Adjusted／歷史可得／9待核日期與日曆非窮盡／Darvas正文／SQLite未知、核心NOT_ESTABLISHED／分類NOT_VALIDATED／行動NOT_EVALUATED保持。89版本／84幾何組非獨立型態，廣義後來非直接承接，不等長後續窗不排名。保留全部後續成果、引擎參數策略／庫／歷史／舊頁／案例證據／main，不重讀101圖／0.4.3或舊手機按鈕，不部署付費交易訊息子代理。換模式附最新已核SHA與完整續接。
+
+---
+
+# 最新：真實跨尺度K／量／MACD比較圖已接入（2026-10-20 Codex）
+
+接續cc718996及原固定診斷成品57e3d9e，本環境重新bootstrap成功（0補檔／7差異保留）；實際核固定診斷ZIP／CRC／SHA並解出1101完整1,213根真實OHLCV、原MACD／SMA／source／Raw basis／frame／prefix與完整原core。上一Work的DNS下載阻礙與僅時間軸未完成K圖紀錄保持，未假稱同環境修復。新獨立cross_scale_chart／cross-scale-real-chart/0.1直接顯示可放大、拖曳查詢／移圖／雙指縮放的K量MACD，與下方日期證據軸同x／窗／游標；七組人工月份主帶、B77、左右被拒串、人工39筆、B44/B80同幾何、B88分別顯示，主圖短圖例不遮K線，來源／確認／研究界外／人工終點分開。人工日期只讀舊audit，未作自動辨識答案。
+
+[直接HTML／750KB小ZIP／SHA／實測與完整Work指令](deliveries/m1-v019-cross-scale-real-20261020/README.md)、[來源取得](股票系統M1_v0_18/cross_scale_chart/generated/source-acquisition.json)、[可直接讀的完整數列／原core與比較JSON](股票系統M1_v0_18/cross_scale_chart/generated/comparison-data.json)、[契約及重現](股票系統M1_v0_18/cross_scale_chart/README.md)、[本輪實測／失敗／28真實PNG](股票系統M1_v0_18/cross_scale_chart/validation_20261020/驗收報告.md)。7定向Python PASS；最終HTML逐值核固定來源與完整原core全等；47新Chromium HTTP／12完整精度下載PASS、四寬DPR1／2、原生單指／雙指、實際MACD像素在隱藏覆核層前後相同、0JS錯誤／外部請求。首MACD欄位假設與18px軸錯位失敗／修正保留，不沿舊35／60／45／398當本輪通過。
+
+固定1101／Raw／2026-10-16收27.30非即時；查久遠K不等回播當時訊號。原9個待核日期／日曆非窮盡、Raw公司行動／五年Adjusted／歷史可得、Darvas／SQLite未知保持。完成圖表工程，不等主帶／39筆／六月後整箱的自動辨識或用途認可；正式區界／量口徑／增量／強度衰減／重要性／合併／直接承接／生命階段仍未知，primary_pressure_id=null。89版本／84幾何組非獨立型態數，不等長觀察不作公平排序。新Android NOT_TESTED_NEW_BUILD／使用者開檔與效能未測，file://不重試不繞過。
+
+下一步Work直接看真實跨尺度比較與已答整體判讀差異；不重讀101圖片、不重開0.4.3或舊Android按鈕、不重問已答案例、不調參或寫死人工日期。原核心／參數／策略／庫／歷史／舊頁／案例／證據與main保持，不部署付費交易訊息子代理。換模式必附最新已核提交與完整可貼續接。
+
+---
+
+# 最新：自動辨識追溯診斷已交付，原核心不改（2026-10-19 Codex）
+
+接續631f6db9及原成品2d480bff，本環境重新bootstrap --hydrate-missing成功（0補檔／7差異保留）。新增獨立graph_diagnostics數值附層／graph-diagnostic-view/0.1，逐串保留被拒／通過未選原因、數值餘量及來源，分離來源末轉折／確認／研究離箱／人工整箱終點、來源前綴版本／跨尺度同幾何／局部子串、廣義後來與直接承接未知、各價量與下跌觀察窗。原核心／參數／候選／JSON／舊頁完全保留，不調參或寫死人工答案。B77左擴到較早可枚舉5/2高群餘量−2.4800，右延4/8低群−0.7825；未枚舉任意六月日並非拒絕人工月份主帶。89候選及84來源幾何組皆非獨立型態數／accuracy，primary_pressure_id=null。
+
+[新ZIP／SHA／回讀／完整可貼Work指令](deliveries/m1-v019-graph-diagnostics-20261019/README.md)、[純數值及顯示契約](股票系統M1_v0_18/graph_diagnostics/README.md)、[小型實際原因與來源報告](股票系統M1_v0_18/graph_diagnostics/generated/review-diagnostics.json)、[本輪實測／中止／畫面及限制](股票系統M1_v0_18/graph_diagnostics/validation_20261019/驗收報告.md)。35 Python PASS；60核心及60診斷前綴實際重算／60 oracle；最終文字重繪封包逐位元相等，45新Chromium HTTP PASS／12完整下載、四寬16圖，0JS錯誤／外部請求。不是舊115／72／398重跑，不是Android。原4854日OHLCV／MACD／SMA／frame／原結果／預設呈現全等；仍只60分析日，不假稱每日均算。
+
+下一步Work實讀新診斷與原整體判讀差異，不重開101圖片／0.4.3／舊Android按鈕。人工月份主帶／39筆歸屬／六月後整箱與正式合併／分區／界線／量口徑／增量／重要性衰減／直接承接／生命階段仍未完成，核心NOT_ESTABLISHED／分類NOT_VALIDATED／行動NOT_EVALUATED。新Android NOT_TESTED_NEW_BUILD；file://不重試不繞過。已答案例、私人圖片庫、Raw公司行動／五年Adjusted／歷史可得／資料缺口／Darvas正文／SQLite未知保持。保留main、引擎策略／庫／歷史／舊頁及後續成果，不部署付費交易訊息子代理。換模式必附完整可貼指令。
+
+---
+
+# 最新：Work已實看自動結果，辨識層級與日期語義仍有缺口（2026-10-19 21:00後）
+
+從fb94be48接續，已新下載固定0.1 ZIP核9成員／CRC／SHA與HTML內外core全等；有限Chromium133 HTTP實看5圖，分析日／result不變，非Android或核心重算。詳見[新差異判讀及完整箱ID／原尺寸圖](docs/visual-discussion/20261019_graph_core_review/README.md)。B77僅2023/10/24～2025/3/12，非完整月份主帶；B44／B80同四轉折來源4/8～5/13，已記6/2研究破底但非人工39筆歸屬。source_end／確認／初離前日／人工終點語義分開。B67到B77有同尺度歷史前綴鏈，89候選非89獨立型態；B77的32個successor只是破底後全部後來箱，不是直接承接。近期B88含1/27同價，尚非六月後整體自動箱。新分析未經使用者裁決，不調參湊答案；下一步Codex只補可追溯被拒原因／版本及同幾何關係／日期與觀察長度，完整指令見本輪WORK_HANDOFF。保留主壓力null、全部未定策略／來源限制、原成果／案例／私人圖與Android資格，不改main或引擎策略／庫／舊頁，不部署付費交易訊息子代理。
+
+---
+
+# 最新：獨立圖形辨識研究核心已可執行，辨識用途仍未認可（2026-10-19 Codex）
+
+從指定83506ff70c707db46c90d642396ed1c0cc6e268a接續，完整checkout及三份歷史ZIP已實際核SHA；本輪重跑bootstrap --hydrate-missing成功，0補檔、7差異保留。**上輪Work PREPARATION_FAILED是歷史，本輪準備成功另有實測紀錄，未改驗證或覆寫差異。** 未重下載／重讀101圖片，未重開0.4.3樣式驗收。
+
+新增獨立純數值`graph_core/`／graph-recognition-research/0.1，自動確認跨尺度轉折、反覆高低箱候選、最新收盤相對壓力、父子包含、離箱／跌回／破底後新箱及價量反證。人工案例不輸入核心。3%／6%／12%反向與35%高低群穩定度是明示研究設定，不是已批准策略；多目標比較保留衝突，primary_pressure_id=null，正式區界／量口徑／增量／衰減／生命階段未定。沒有訓練圖片模型或宣稱準確率。
+
+[新HTML／ZIP／SHA／遠端收據／完整Work指令](deliveries/m1-v019-graph-core-20261019/README.md)；[核心契約與公式](股票系統M1_v0_18/graph_core/README.md)；[圖表重現](股票系統M1_v0_18/graph_core_chart/README.md)；[實測／失敗／畫面](股票系統M1_v0_18/graph_core_chart/validation_20261019/驗收報告.md)；[小型辨識差異／敏感度報告](股票系統M1_v0_18/graph_core_chart/generated/recognition-audit.json)。原4854根OHLCV、MACD／SMA及來源frame完整保留；每股15個、共60個分析前綴，查詢K線不抽樣，回放只播已算日期，不假稱全歷史每天均已算。可CLI另加日，不在UI補算。
+
+**辨識缺口必留：** 1/27／26.95在兩尺度有自動同價來源，但到3/4、3/20才確認；10/12～16越過／跌回保存。人工4/7～6/2／39筆沒有精確同起訖自動匹配，較大月份主帶也未完整重現。不能把局部同價或箱數當有用主壓力核心已完成，不調參湊人工日期、不推大／舊或總量永遠贏。參數敏感度已有實算，非準確率。先前已答日期／代表與所有案例保持。
+
+新頁graph-recognition-view/0.1接真實可縮放K／量／MACD、同步查詢、已算前綴回放、研究箱證據與精確JSON；數值與UI分離，原引擎／策略／schema／庫／歷史／舊頁不變。21項定向Python、60前綴重算與實際Chromium下載／互動結果見最終報告；失敗及修正保留，不沿舊398／111等數字替代本版。原file://阻擋未重試／未繞過。
+
+下一步**Work看新自動結果與既有大帶／前箱的差異**，不重新做圖片首輪、不問已答日期或0.4.3底色、不把Android按鈕驗收代替辨識品質。先讀交付WORK_HANDOFF全文，使用真實可放大候選與反證釐清實際漏檢／合併／層級，真正已定規則再交Codex；新頁Android NOT_TESTED_NEW_BUILD。核心用途NOT_ESTABLISHED／分類NOT_VALIDATED／行動NOT_EVALUATED，Raw公司行動／五年Adjusted／歷史公布可得、原資料缺口／Darvas正文／SQLite未知保持。不改main、不部署付費交易訊息子代理。
+
+---
+
+# 最新：圖形辨識核心續接受環境準備阻擋（2026-10-19）
+
+使用者要求完成最重要的圖形系統。已實讀既有structure／attempt_evidence／MACD數值源碼，確認自動跨尺度箱型與重要壓力階層尚缺；沒有新增核心。本環境無Git checkout，原bootstrap在隔離恢復暫存實跑exit2：PREPARATION_FAILED，缺M1_v0_17_01.zip；GitHub文字可讀、binary取回失敗。依AGENTS準備規則停止產品修改，僅保存錯誤與接續紀錄。不是852檔準備成功，無新Python／Chromium／Android或核心認可。保留圖片庫首輪成果、所有歷史案例及未知，不重讀101圖。下一步Codex在完整checkout準備成功後做獨立純數值辨識核心；[完整接續指令與實讀缺口](M1_V019_GRAPH_CORE_RESUME_HANDOFF.md)，[環境證據](docs/core-recognition/20261019_resume/environment_report.json)。
+
+---
+
+# 最新：Drive圖形學習第一批與額度中斷續接（2026-10-19 Work）
+
+使用者授權以過往教學圖片建立圖形辨識基礎，並要求從已確認節點續接、不要重做。101原PNG／279,350,101 bytes已讀且核大小/解碼/SHA；去重91張、10相同副本；91首輪視覺判讀、13單張原圖或原尺寸裁切複讀，另5組主教材近重複。續接保留全部既有判讀，未重下載或重讀原101圖。完整私人案例庫/來源索引/報告/可搜尋索引及可恢復ZIP存回同帳號未分享Drive資料夾；Git只存通用契約/驗證與交接，不含私人原圖、來源連結或逐圖內容。讀[M1_V019_IMAGE_LEARNING_HANDOFF.md](M1_V019_IMAGE_LEARNING_HANDOFF.md)及[本輪入口](docs/visual-learning/20261019_drive_intake/README.md)。
+
+實做8項資料一致性/故障注入、14項Chromium HTTP索引PASS，390/1280字體與排版目視；精確搜尋首敗、測試字型缺失與封包恢復首敗及修正保留。7個Drive主檔回下載byte相等；最終v2 ZIP CRC/SHA與Drive原件回下載相等，無原圖乾淨環境復建corpus byte相等。不是模型訓練/辨識率/全市場、Android、M1產品回歸或核心用途通過；舊全Python未重跑，file://政策未重試未繞過。
+
+每張分可見圖形/作者說法/助手候選/反例/限制。教材固定振幅、月份、均量倍數、概率、低量即沉澱/主力因果不自動採納；圖中目標價非真實高、事後註記/未完成K/標的日期衝突與同族拆分洩漏均需資格檢查。尚未訓練或自動監看。下一步同Work以跨尺度正反例對應可核原始前綴，再把已定義規則交Codex；不重問已答日期/代表或舊手機原檔。先前主帶層級更正、1/27、6/3、5/13及G1/G2/G3/①④保持，所有正式區界/量口徑/自動門檻與Raw/Adjusted/歷史可得/資料缺口/Darvas正文/SQLite未知和核心NOT_ESTABLISHED/NOT_VALIDATED/NOT_EVALUATED不變。保留引擎策略/庫/歷史/舊頁/來源案例證據/main，不部署付費交易訊息子代理。
+
+---
+
+# 最新：5/13局部代表已答，主要壓力帶層級更正（2026-10-19 16:55 Work）
+
+使用者原話「選5/13但是這一樣沒有什麼意義，因為2023年6月到2025年4月有更大的壓力帶」。實讀[docs/visual-discussion/20261019_major_pressure_hierarchy/user_review.json](docs/visual-discussion/20261019_major_pressure_hierarchy/user_review.json)、README.md及M1_V019_PREVIOUS_BOX_PRESSURE_HANDOFF.md最新節。5/13／31.40已確定為2025/4/7～6/2／39筆局部箱代表，**不等於主壓力或用途認可**；原代表問題已答不再問。重點轉為已存現價由右回看跨尺度主要壓力，不沿最近小箱逐一選點就當分析完成。此例長期帶比小箱重要，不能推較舊／較大或量總和永遠勝出的通則。
+
+主帶時間僅2023-06～2025-04月份精度；精確起終／正式價格界線／整區量／主帶代表／重要性算法仍null。不追月初月底日期作前置，不將完整月份讀圖463根、Raw外包28.45～39.25認成正式箱成員或界線；兩邊月份漸淡。原G1=2023/11/28／35.50與2025/3/12高35.45只作真實參照，不自動升格整個主帶唯一代表或認證Raw共同校正壓力。原1/27、6/3歸屬、①④／G2／G3和0.4.3樣式收束保持，不索舊原圖JSON。
+
+新獨立可放大圖以主帶為主、小箱為次級，可看長期493筆／同看已存現價820筆／局部／近期，K量同步，原1213筆/source/frame/basis與分析日10/16收27.30不改，非即時今日。本輪實際新Chromium133 HTTP20項PASS／四寬／4PNG，原像素offset oracle首敗與完整修正重跑保留；圖與來源未改、0.1px容差未放寬。父圖及舊全Python／產品回歸未重跑；非Android／宿主／用戶CDN或核心用途通過，file://阻擋未重試未繞過。下一步仍Work優先主帶反覆價量結構與階層，不重問已答小箱代表。保留main、原引擎策略／庫／歷史／舊頁／來源案例證據及所有策略／Raw／Adjusted／歷史可得／資料缺口／Darvas正文／SQLite未知和核心NOT_ESTABLISHED／NOT_VALIDATED／NOT_EVALUATED，不部署付費交易訊息子代理。
+
+---
+
+# 最新：前箱價峰／量峰分離，待有意義代表點判讀（2026-10-19 Work）
+
+前箱精確2025-04-07～06-02／39筆已核，不再追問日期。新可放大對話圖見[docs/visual-discussion/20261019_previous_box_representative/README.md](docs/visual-discussion/20261019_previous_box_representative/README.md)，同一45筆閱讀窗可按4/7量峰、5/13價峰、6/2區間末讀真實OHLCV，這些只查詢、不選定案例代表；預設5/13也不是答案。4/7高30.80／量118,749,437、5/13高31.40／量10,264,322、6/2高29.05／量93,266,178，量峰／價峰不同；11.57倍只是描述比，不是權重或門檻。
+
+下一步同Work只收此箱哪個日／價位更能代表對已存最新27.30的相關壓力及必要理由，可答其他位置／多參照，不強迫最高價、最大量或三選一，不自動選G關。候選代表／正式區界／量口徑／自動公式仍null；6/3在外、1/27較重要理由、舊①④／G1G2G3與0.4.3樣式收束不重問。
+
+本輪實際新圖Chromium133 HTTP20項PASS，四寬、4張390／1280查詢PNG；核1213原值／39筆及顯示不改、三日查詢／K量同步／DOM圖元幾何前景不改、無案例批准／逐筆與縮放／畫外不造點／分析不變／不溢位。不是像素相等測試；檢查名稱pixels誤字只修正表述，斷言／圖不變。父28項及舊全Python／產品回歸未重跑，Android／宿主／用戶CDN未驗，file://阻擋未重試未繞過。仍獨立討論圖，未接產品版本／引擎。保留main、引擎策略／庫／歷史／舊頁／來源案例證據及所有策略／Raw／Adjusted／歷史／資料／Darvas／SQLite未知和核心未認可，不部署付費交易訊息子代理。
+
+---
+
+# 最新前箱時間已核：2025-04-07～06-02／39筆（2026-10-19 16:35 Work）
+
+使用者答「4/7到6/2號」，已按眼前2025年前箱案例保存為含兩端的精確時間區間，來源39筆；前箱辨識／時間問題CLOSED_BY_USER_EXACT_DATES_DO_NOT_REASK。見[docs/visual-discussion/20261019_previous_box_pressure/reviewed_1635/README.md](docs/visual-discussion/20261019_previous_box_pressure/reviewed_1635/README.md)與M1_V019_PREVIOUS_BOX_PRESSURE_HANDOFF.md最新節。舊4/8～5/29／37筆／28.45只是被取代助手假說，原圖／來源／測試保留，不能沿用為已認可範圍。
+
+新完整選段影線外包為27.65～31.40、最大單日量118,749,437股（4/7），只作顯示；正式壓力界線、此箱代表點／整區量／量口徑／增量／自動門檻仍null。6/2含於前箱，6/3在外，不能因6/2低於舊假說28.45就排除它；6/3破箱與1/27重要性判讀保留，不再追問，不推成所有破箱K皆排除的一般法。原分析日10/16／收27.30、1/27高26.95及①④／G1G2G3不改。
+
+新獨立可放大討論圖更新39筆18%無框底色／價量分開，實際新Chromium133 HTTP28項PASS、四寬8PNG、來源1213根全欄位不改，時間已確認／價界未定資格明示。不是產品新版本／Android／宿主／用戶CDN通過；舊全Python／產品回歸未重跑，file://阻擋不重試不繞過。下一步同Work從現價回看此已確認時間段的有意義價量代表，不重問已答日期、不任意切小。0.4.3樣式已收束；原引擎策略／庫／歷史／舊頁／來源案例證據／main保留，所有未定策略／Raw公司行動／Adjusted／歷史可得／資料缺口／Darvas正文／SQLite與核心未認可保持，不部署付費交易訊息子代理。
+
+---
+
+# 最新：已存27.30往左的前箱候選，待整體結構判讀（2026-10-19 Work）
+
+新可放大真實K／量討論圖已準備，見[docs/visual-discussion/20261019_previous_box_pressure/README.md](docs/visual-discussion/20261019_previous_box_pressure/README.md)與M1_V019_PREVIOUS_BOX_PRESSURE_HANDOFF.md。從最新27.30已越過1/27／26.95的位置往左，助手提出4月急跌後到5月底整理作最近上方壓力候選；4/8低28.45、5/13高31.40，37筆淡底只是顯示假說ASSISTANT_HYPOTHESIS_NOT_USER_APPROVED，正式起訖／箱界／量判準仍null。只問「這段是否就是6/3離開的前一箱」，不要求任意拆箱；可以只認整體結構，不擴大為精確日期／全界線／算法批准。候選因與現價和前次破箱直接相鄰而選，不是隨機圈歷史。
+
+6/3屬前箱破底、排除現箱與1/27較重要的理由已由使用者說明，不重問。6/2收27.70已低於助手候選28.45，故不稱6/3為首次跌破此候選下緣。舊G1G2G3及①④不改、0.4.3樣式收束不重開；不用平緩帶／底部命名或逐根問卷。源1213筆與GitHub前輪source實讀相同，固定分析日2026-10-16，不當即時今日。
+
+本輪新討論圖實際28項Chromium133 HTTP PASS、四寬8PNG，價量底色分開且完整影線外包固定，真實A/B/C日期點、畫外1/27不造點、放大／查詢／回最新／更左背景／來源與分析不變已核；初次build末尾列印TypeError及修正保存。不是產品新版本、Android／宿主／使用者CDN或核心用途通過，舊全Python／產品回歸未重跑；file://阻擋未重試未繞過。下一步同Work只收這一前箱結構判讀，已定來源／舊例不重索。原引擎策略／庫／歷史／舊頁／案例證據／main保留，所有未定規則／Raw公司行動／Adjusted／歷史可得／來源缺口／Darvas正文／SQLite與核心NOT_ESTABLISHED／NOT_VALIDATED／NOT_EVALUATED保留，不部署付費交易訊息子代理。
+
+---
+
+# 2026-10-19 16:17：6/3屬前箱破底K，1/27優先理由已說明
+
+[最新使用者原話與分項資格](docs/visual-discussion/20261019_latest_close_anchor/boundary_review_1617.json)。使用者已明確將2025-06-03／Raw高28.00歸在本箱之外，理由是它是另一箱跌破下緣的K線；保存為USER_REPORTED結構判讀，不虛稱前箱界線或自動破底檢查已完成。原始28.00資料保留，上一個「6/3如何納入本箱」問題已回答，不再追問。
+
+本例代表2026-01-27／26.95較重要有兩個理由：離已存最新價格較近，以及使用者將1/27至最新的結構判讀為可能的籌碼沉澱。按最新收盤由右回左時，先辨別舊箱破底／轉換K與本箱整理，再比較相關代表的重要性；這是助手對案例的規則整理，尚非通用偵測公式，不化成「越近永遠越重要」或任意窗口取最高。沉澱為圖形價量判讀，不代稱實際剩餘持股量已測得。原336根只是閱讀窗，並非每根都已批准屬於同箱；不擅定精確新箱起日／箱底、前箱上下界、其餘K歸屬或量門檻，也不將逐根問卷當後續前置。保留6/3前箱破底脈絡供向左找壓力，非刪歷史。
+
+原分析日2026-10-16／收27.30高於1/27高26.95的事實保持；似乎量增／可能突破不升為確定資格。原④1/29／26.85及G1G2G3案例不改。下一步仍同Work，從現價向左看前一箱壓力與相對位置，停止B一箱兩箱／平緩帶終點／6/3歸屬的重複問題；必要新真實圖可放大，不重開0.4.3樣式或索舊原圖JSON。
+
+本輪僅實讀GitHub與保存最新判讀／交接，沒有新圖、產品修改、Python／Chromium測試或Android證據。舊24項HTTP、8PNG及核對收據仍是前輪範圍；原file://阻擋未重試／未繞過。自動分區／區界／整區量／增量／強度衰減／生命階段與Raw公司行動／五年Adjusted／歷史可得／資料缺口／Darvas正文／SQLite未知保持，核心NOT_ESTABLISHED、分類NOT_VALIDATED、行動NOT_EVALUATED。不改main、原引擎策略／庫／歷史／舊頁／來源案例證據，不部署付費交易訊息子代理。
+
+---
+
+# 2026-10-19：以最新收盤為錨，由右往左找有意義箱型
+
+使用者撤回任意藍／黃區間切箱的方向：依最新K線收盤回看左側相關壓力／支撐帶，以有判斷用途的整體箱型與代表點為先；跨過本箱後再往更左找壓力，不為分段而切小。舊B一箱／B1B2待答已撤下，假說／圖／來源保留為歷史，不是使用者批准。實讀[M1_V019_LATEST_CLOSE_ANCHOR_HANDOFF.md](M1_V019_LATEST_CLOSE_ANCHOR_HANDOFF.md)及[本輪原話、同源原值與新圖](docs/visual-discussion/20261019_latest_close_anchor/README.md)。
+
+1101／新官方Raw／已存分析日2026-10-16收27.30；使用者候選2025-06-03～最新336筆，選2026-01-27高26.95代表，收盤確已越過；似乎量增／可能突破為暫定判讀。來源有一處待對齊：6/3高28.00、6/4高27.45，故1/27不是全窗Raw數值最高；保留相關代表，不自行刪起跌K／改日期或基底／補箱頂算法，也不以機械最高值否定箱型用途。原④1/29／26.85不同，G1G2G3及①④不改。量比前日+36.06%，比前5筆均量−15.50%，比前20筆均量+22.25%（排除本日），只是描述比較，未定量資格；10/12越過、10/13跌回、10/14越過、10/15跌回、10/16又越過的收盤歷程保留。
+
+新獨立可放大真實K量圖只對齊來源與參照，實際24項Chromium133 HTTP PASS／四寬8原尺寸圖，1213原值不改；不是新產品版本、Android／宿主／CDN或核心用途通過，未重跑舊全套。0.4.3樣式已收束，不索舊原圖JSON，原file://阻擋未重試／未繞過。下一步同Work只對齊6/3起跌較高影線與本箱代表上緣關係，再看更左壓力；不重問B拆箱、平緩帶終點、G2已定日期。自動高低點／分箱／延伸／區界／整區量／增量／強度衰減／生命階段與Raw公司行動／Adjusted／歷史可得／來源缺口／Darvas未完整讀／SQLite未知、核心未認可保持。不改main、引擎策略／庫／歷史／舊頁／案例證據，不部署付費交易訊息子代理。
+
+---
+
+# 2026-10-19：下一個核心對照，B畫一箱或拆B1／B2
+
+WAITING_FOR_USER_BOX_SCALE_JUDGMENT。已按最新方法準備同源1101 Raw可放大K／量對照，切換B一箱／分兩箱；共用A、原K線／量柱／游標／圖窗不變。所有箱與日期／外包界均為**助手比較假說，未經使用者認可**，不預設底部、沉澱或轉強，也不將4/2或4/26補為使用者已定終點。分組切換只在本地，不發送答案或自動更新案例。
+
+[圖、兩模式原尺寸圖、來源與本輪32項HTTP](docs/visual-discussion/20261019_box_scale_comparison/README.md)，[完整可貼指令](M1_V019_BOX_SCALE_COMPARISON_HANDOFF.md)。本輪32只屬本張新討論圖，不是產品0.4.3或前C圖32項重跑；源1213根與父片段全欄位相等、source/frame/basis固定，價量外包與真實源點相符，換層不改K／量／查詢。8張原尺寸圖保存、已目視，初次QA selector失敗與修正保留。用戶CDN／Chat宿主／Android未獨立驗證，file://阻擋未重試。
+
+下一步同Work只收「一箱／拆開／另一種切法」，不把此回答擴大為全部日期／正式上下界／自動門檻認可。0.4.3樣式已收束，舊G1/G2事實及原案例保持；原圖及上一方法更正保存。本輪沒有產品新版本或引擎／策略／庫改動，核心用途／分類／行動資格與所有Raw、Adjusted、歷史、來源缺口、Darvas未完整讀、SQLite未知保持。不改main，不部署付費交易訊息子代理。
+
+---
+
+# 2026-10-19 14:22：先高低點／區間／箱型，再依位置價量判讀；撤回固定「平緩帶」命名
+
+使用者明確更正：先找高低點、區間帶、畫箱型，再根據相對位置與價量判斷籌碼沉澱、轉強上攻或又破底。**箱型／區間是結構，平緩、底部、沉澱與轉強不是畫出箱型就成立的名稱或結論。** 破底後還能形成後續新箱，不能把C右側全部套成同一平緩帶／底部；舊破底事實與後續箱型並存，依當時證據記錄，不用未來回寫過去。
+
+[完整原話／新獨立契約／來源核對](docs/visual-discussion/20261019_box_method/README.md)，[接續指令](M1_V019_BOX_STRUCTURE_METHOD_HANDOFF.md)。本更正取代助手上一輪固定命名及「請替新平緩帶定單一終點」的待辦，不重問同一端點；原G1／G2人工日期／來源／歷史原話保留。4/2後破底保存為使用者箱型案例判讀，實際哪些箱底／區界未指定，不代填4/2為箱終點或新增自動破底事件。
+
+本輪只保存方法更正與同源日期記錄核對，沒有新主圖／產品代碼、測試、Android或手機JSON。0.4.3樣式驗收已收束；舊圖／報告保留為歷史，不能延用其「平緩帶」標題當最新結論。下一步仍同Work，由助手以可放大真實圖整理高低點、相鄰箱及突破／破底後新箱的關係，形狀與價量判讀分開，只有真正核心歧義再用對照圖確認，不替使用者預設門檻。
+
+自動高低點、分箱／延伸／箱界、量口徑／增量、強度衰減及生命階段未定；原Raw／公司行動／Adjusted／歷史可得／資料缺口／Darvas正文未完整讀／SQLite根因與核心未認可保持。保留原引擎策略／庫／歷史／案例／證據／舊頁，不改main，不部署付費交易訊息子代理。
+
+---
+
+# 2026-10-19：C右側新平緩帶的終點，待使用者圖形判讀
+
+WAITING_FOR_USER_C_RIGHT_END_JUDGMENT。0.4.3底色已收束，本輪只準備同源1101 Raw的可放大K／量討論圖，問C=2024-01-19右側新帶在哪裡結束。不重問G1已定含義與G2日期，不把4/30／閱讀窗7/31當終點，也不把C硬定為精確起日。終點／價格區界／整區量／自動分區仍null。
+
+[圖、原尺寸備圖、精確來源與本輪32項HTTP](docs/visual-discussion/20261019_c_right_end/README.md)。直接讀核SHA固定0.4.3 ZIP取同源1213根，source／frame／basis吻合，舊576根全欄位相等；最早手機JSON本輪未重讀，不索舊檔。新32項只屬這張討論圖，不是產品0.4.3舊32項重跑；QA固定D3／字體條件及首次失敗修正均保存。ChatGPT宿主／Android／用戶CDN未獨立驗，原file://阻擋未重試。原引擎策略／庫／歷史／舊頁／案例／證據／main不改；所有核心、Raw、Adjusted、歷史可得、資料缺口、Darvas正文及SQLite限制保持，無部署付費交易訊息子代理。
+
+下一步同Work只收日期、月份或仍未定，再原值核對及形式化；本地記終點僅DRAFT_NOT_SUBMITTED_NOT_APPROVED，不是已回報／已批准。[完整交接](M1_V019_C_RIGHT_REGION_DISCUSSION_HANDOFF.md)。
+
+---
+
+# 2026-10-19 13:50：0.4.3樣式獲使用者回報認可，差異驗收收束
+
+使用者回覆「可以」，對應前一0.4.3底色與K線同時清楚的新觀感。記 **USER_REPORTED_STYLE_ACCEPTED／CLOSED_BY_USER_REPORT**；[本輪原話與資格](股票系統M1_v0_18/soft_region_chart_v043/validation_user_20261019/style-accepted-1350.md)。本項不再重驗或索舊圖JSON，不建立新版本。Android只新增PARTIAL_USER_REPORTED_STYLE_ONLY，無新圖、裝置／實開版本未獨立核實，不推成全版實機或核心用途通過；其他未測／政策阻擋保持。
+
+成品仍ba78194d5b385324be76c026ba499eedd32c4647的0.4.3，前一下載交接e64a6ecda89dc130b824fdb3e0b4f6f373ebe32e；[入口](deliveries/m1-v019-soft-regions-v043-20261019/README.md)。本輪只保存回報與交接，沒有改產品／執行新測試。下一步仍同Work，回到價量區域的核心圖形判讀與規則整理；新核心圖尚未準備，所有未知策略／資料限制與舊成果保留，不改main，不部署付費交易訊息子代理。
+
+---
+
+# 2026-10-19 最新：0.4.3背景與K線須同時清楚
+
+使用者原話：「已經看的見了，顏色可在深一些標準是能一眼辨識背景卻也能清楚看見K線兩者必須能清楚分別辨識。」上一0.4.2語境已能看見，屬USER_REPORTED_REGION_VISIBLE_WITH_DARKER_REQUEST；重送只記一次。沒有新圖或裝置／實開版號獨立確認，不升級完整Android驗收。標準是背景一眼可辨、K實體與影線同時清楚。
+
+新增獨立soft_region_chart_v043，預設18%不透明度、較淡12%／明顯26%，背景先畫、K／量原色與100%前景保持。仍無區域框、原範圍與數值不變、MACD不染色。實際32項Chromium133 HTTP PASS，24組前景繪製／101067純色像素核對，16張工程圖保存並目視G2-390／G1-844；payload無損與ZIP CRC／SHA通過。首次啟動太早及像素假設失敗保存並修正，沒有改產品迎合測試。整套Python／舊完整回歸未重跑。
+
+[成品入口](deliveries/m1-v019-soft-regions-v043-20261019/README.md)、[完整可貼Work指令](deliveries/m1-v019-soft-regions-v043-20261019/WORK_HANDOFF.md)、[32項／失敗修正／限制](股票系統M1_v0_18/soft_region_chart_v043/validation_20261019/驗收報告.md)。遠端保存以實際提交後收據為準。
+
+0.4.3 Android NOT_TESTED_NEW_BUILD。下一步仍同Work只看新版預設顏色，無須重測舊功能或索舊圖JSON；工程通過不是核心用途認可。全部原策略／來源未知與file://阻擋保留，不改main、不部署付費交易訊息子代理。
+
+---
+
+# 最新：0.4.2底色濃淡可調（2026-10-19 Work）
+
+使用者「看不到底色區域」，上輪3%底色不足；本輪新獨立0.4.2預設12%，底色選單較淡8%／標準12%／明顯20%，無區域周邊框、原價量範圍及MACD不染色保留。成品入口deliveries/m1-v019-soft-regions-v042-20261019/README.md，完整指令WORK_HANDOFF.md，先讀M1_V019_SOFT_REGION_VISIBILITY_HANDOFF.md及新模組報告。實際28項HTTP／16張工程圖、payload無損與ZIP核對完成；整套Python／舊回歸未重跑。新Android NOT_TESTED_NEW_BUILD，最新文字回報無新圖／裝置版本未獨立確認，不搬作新版通過。下一步同Work只收底色是否可見／不遮K，不索舊圖JSON。GitHub保存只按實際收據；保留舊成果及所有策略／來源限制，main不動，不部署付費交易訊息子代理。
+
+---
+
+# 透明底色0.4.1已完成，下一步只看底色觀感（2026-10-19 Work）
+
+使用者已回報本例G2範圍正確，要求去除邊框改更透明背景；新0.4-family手機圖與原話已保存，其他操作未代填。Work本輪直接實作獨立soft_region_chart／0.4.1：區域無周邊線、3%底色，G1近似起緣漸淡，價量分離／MACD不染色；原點與關卡虛線保留。完整0.4 payload除view_version／artifact_id全等。
+
+[新小ZIP／指紋／接續指令](deliveries/m1-v019-soft-regions-v041-20261019/README.md)；[實際24項HTTP／畫面／未測](股票系統M1_v0_18/soft_region_chart/validation_20261019/驗收報告.md)；[完整交接](M1_V019_SOFT_REGION_FILL_HANDOFF.md)。HTML在ZIP內，source可重建。新0.4.1 Android NOT_TESTED_NEW_BUILD；0.4-family改PARTIAL_EVIDENCE_OBSERVED_VERSION_UNCONFIRMED，範圍認可與樣式更正分開。
+
+下一步同Work只請看新底色是否符合閱讀，不重開整套舊驗收，不重索相同圖／JSON。24項是本輪實測，不沿用398／208等。字體QA問題／原file拒絕／所有策略與來源限制保留；UI不是核心用途認可。不改main、引擎策略／庫／歷史／舊頁，無部署／付費／交易／訊息／子代理。
+
+---
+
+# 0.4 Work外框驗收已啟動：下載核對完成，手機仍未測（2026-10-19）
+
+已核指定分支包含cf3b521交接及d83f92c成品，依序實讀指定文件與完整WORK_HANDOFF。本輪重新下載固定ZIP，核ZIP／HTML SHA、CRC、內部SHA及7成員全相符；直接源碼標頭「M1 K線範圍區域主圖 0.4」。另讀四張保存的工程前後／裁切圖並核指紋，價框／量框分開、MACD無底色只記工程圖片觀察，**不是手機通過**。[本輪分項紀錄](股票系統M1_v0_18/candle_region_chart/validation_android_20261019/README.md)／[本輪下載核對](股票系統M1_v0_18/candle_region_chart/validation_android_20261019/download-verification.json)。
+
+0.4 Android仍NOT_TESTED_NEW_BUILD：尚無本版使用者新圖／回報／JSON；A G2外框、B G1近似開放邊界、C裁切與返回各NOT_TESTED，沒有新手機BLOCKED。398 Python／208／44／55／32為Codex歷史實測，本輪未重跑／無瀏覽器執行；file://拒絕不重試／繞過。舊0.3與0.2證據保留不重索、不沿用。
+
+下一步仍同一**Work**，先協助下載解壓0.4並按G2收一張新主圖及身份文字回報，再驗G1與裁切／返回。不重開手勢／草稿舊整套，不追問G2日期，非驗手機下載不索新JSON。所有策略／來源／Raw／Adjusted／歷史／SQLite限制與核心用途未認可保持；不改main／原產品或引擎策略／庫／歷史，無部署／付費／交易／訊息／子代理。
+
+---
+
+# K線範圍外框0.4已交付；Work只驗新外框差異（2026-10-19 Codex）
+
+從指定570bfd4a4e99f5672a1666d28b6541a150b55dd6接續，新增獨立`candle_region_chart/`／`candle-region-chart-view/0.4`，原0.1／0.2／0.3與所有來源、引擎、庫、歷史、人工原JSON及手機證據保留。**G2日期不變：2023-01-16～2023-08-16含136筆，僅將完整選段影線35.90～40.25作顯示外包框；正式price_bounds仍null。** 量框獨立在volume pane，不跨MACD。G1九月近似起緣虛線／左邊未閉合，精確起日未知；C後開放參照、終點未定。全選段extent在縮放／平移時固定，只裁切，不拉伸價軸、不把畫外框線貼邊。不是批准正式價格區界、自動分區或量口徑。
+
+[0.4小ZIP／HTML／SHA／遠端收據／完整Work指令](deliveries/m1-v019-candle-regions-v04-20261019/README.md)；[實作與重現](股票系統M1_v0_18/candle_region_chart/README.md)；[本輪實測及修正前後畫面](股票系統M1_v0_18/candle_region_chart/validation_20261019/驗收報告.md)。主JSON新schema manual-region-chart-selection/0.2增region_display，原人工層與數值精度保持；查詢／移圖、逐日OHLCV、分析日、草稿、原代表點／①④／G3五日與軸內外標籤皆回歸。缺量不造0或假框，真0獨立保留；區域不改MACD與pane間隙像素。
+
+本輪實際15定向Python及完整398 PASS；最終HTML真實Chromium208 HTTP／44標籤／55區域操作／32外框PASS；244源檔／4854新Raw+1490原frame／50oracle、凍結0.3、ZIP CRC／SHA核對。不是搬前輪383／208／44／55代填；新報告均對本版HTML SHA。測試匯入首次失敗及修正已保存。整體HTTP runner仍PASS_WITH_KNOWN_BLOCKER，原file://管理政策阻礙未重試／未繞過。
+
+**0.4 Android NOT_TESTED_NEW_BUILD**；0.3-family兩張原圖仍PARTIAL_EVIDENCE_OBSERVED_VERSION_UNCONFIRMED，0.2舊部分證據亦保留，不重索相同圖／JSON。下一步**Work只驗新外框呈現差異**，先讀交付WORK_HANDOFF.md全文；來源及版號辨識自然隨新版本補，不重開整套舊功能驗收。只在確實驗手機新下載時收本版新JSON；可重現工程問題再回Codex，附完整指令。
+
+核心用途NOT_ESTABLISHED、NOT_VALIDATED／NOT_EVALUATED維持。G1精確起日／價格區界／整區量／增量／量口徑／自動分區選關／強度衰減／生命階段未知；Raw完整公司行動／五年Adjusted／歷史公布可得、原資料缺口、Darvas未完整讀、SQLite根因未知保持。沒有改main、策略、原庫、歷史或舊頁，無部署／付費／交易／訊息／子代理。未測不標完成。
+
+---
+
+# 08:51新圖已讀；價量帶須貼合K線範圍，交Codex修正（2026-10-19 Work）
+
+使用者明確要求標示真實K線範圍，拒絕將整個圖垂直空間框滿。兩張新圖已實讀並原位元組保存：[直接觀察／未測／來源核對](股票系統M1_v0_18/region_chart/validation_android_20261019/evidence-0851.md)。G2 1/16～8/16、40.25點／線與貫穿K量MACD底色直接可見；另一張是C後終點未定證據，**不是G2端點面板**。0.3-family改為PARTIAL_EVIDENCE_OBSERVED_VERSION_UNCONFIRMED；頁頂版號、1101代碼未入鏡、無新JSON／操作序列，端點／返回24月／手勢／橫向／草稿仍未測，不把新圖當全通過。
+
+**呈現CHANGES_REQUESTED，下一步Codex依[貼合K線修正交接](M1_V019_CANDLE_BOUNDED_REGION_HANDOFF.md)實作新獨立版本。** 原始碼已確認span填price.top至macd.bottom；G2選段原檔136筆、high40.25／low35.90只可作顯示外包範圍，正式價格區界仍null。G1精確起日與C後終點未知，不藉外框補規則。原0.3保留，本輪尚無修正版HTML／ZIP，沒有新產品Python／Chromium／Android操作測試。
+
+舊0.2證據、不重索同檔、Raw／公司行動／Adjusted／歷史／資料／SQLite及file阻擋限制保持；UI接入不代表核心用途認可。原引擎／策略／庫／歷史／舊頁／main不改，無部署／付費／交易／訊息／子代理。修正完成才回Work驗新外框差異，附完整可貼指令。
+
+---
+
+# 0.3 Work驗收已啟動；下載原檔已核，手機差異仍未測（2026-10-19）
+
+Work已核分支包含交接c96195b及成品31d8097，依序實讀指定文件及完整WORK_HANDOFF。實際從固定成品提交下載小ZIP，ZIP／HTML SHA、CRC、內部SHA與7成員均相符；源檔標頭實際「M1 價量區域主圖 0.3」（版號前有空格）。[本輪紀錄與分項台帳](股票系統M1_v0_18/region_chart/validation_android_20261019/README.md)／[本輪下載核對](股票系統M1_v0_18/region_chart/validation_android_20261019/download-verification.json)。
+
+**0.3 Android仍NOT_TESTED_NEW_BUILD**：尚無本版手機新圖／回報／JSON，G2、G1、查詢移圖、跨休市逐根及草稿全部NOT_TESTED，沒有手機BLOCKED新回報。原0.2 PARTIAL_EVIDENCE_OBSERVED保留，不重索相同舊檔。先前383 Python／208 HTTP／44標籤／55區域為Codex實測，本輪未重跑，沒有瀏覽器執行；舊file://拒絕不重試、不繞過。
+
+下一步仍同一**Work**：引導下載固定ZIP、解壓開新版，先收G2主圖與區域證據的少量新畫面／實際回報，再按完整WORK_HANDOFF B～E逐項接續。未測不得改成功；核心用途與所有未定規則／Raw／來源／SQLite限制保持。不改main或產品來源，無部署／付費／交易／訊息／子代理。
+
+---
+
+# 人工價量時間區域主圖0.3已接入；下一步Work只驗新版差異（2026-10-18 Codex）
+
+本輪從7569d12b249080d305f2cf0dbd36b35485785bfb接續，新增獨立`region_chart/`與`manual-region-chart-view/0.3`，原0.1／0.2、人工原JSON、Android證據、數值引擎／策略／庫／歷史保留。**G2精確2023-01-16～2023-08-16已接入，5/2高40.25不變，不再追問；G1約2023年9月→C，精確起日仍null。** 價格區界、整區量／量口徑、自動分區／選關、增量、強度／衰減及生命階段未定，沒有新增策略門檻。
+
+[0.3 HTML／小ZIP、SHA、GitHub讀回收據及完整Work指令](deliveries/m1-v019-manual-regions-v03-20261018/README.md)；[實作說明](股票系統M1_v0_18/region_chart/README.md)；[本輪實測／畫面／失敗紀錄](股票系統M1_v0_18/region_chart/validation_20261018/驗收報告.md)。主圖G1／G2聚焦、C開放參照、原代表點、拖曳查詢／移圖分開、逐交易日完整OHLCV及獨立未提交草稿下載。視窗／游標不改分析日，其他股票、日期、source／frame／basis不套此案例；較早查詢只讀分析日前綴。
+
+**0.3 Android NOT_TESTED_NEW_BUILD**；0.2仍PARTIAL_EVIDENCE_OBSERVED，舊指定標籤差異已收束，不重索相同原圖／JSON。本輪真實Chromium HTTP檢查不是手機實機／file開檔或核心用途通過；原file://管理政策阻礙不重試、不繞過。UI接入不代表自動辨識或用途認可，NOT_ESTABLISHED／NOT_VALIDATED／NOT_EVALUATED維持。Raw／公司行動／五年Adjusted／歷史公布可得／資料缺口與SQLite未知根因保留；Darvas正文未完整讀，無套用箱型規則。
+
+下一步用**Work**，貼交付目錄WORK_HANDOFF.md全文，先讀最新交接與實際成品，僅收新版差異。明確可重現工程問題回Codex；核心仍未知要用具體真實圖詢問，不阻擋已明確工程。不得改main、部署、付費、交易、發訊息或啟動子代理。
+
+---
+
+# G2精確起訖已核對；下一步Codex接入G1／G2區域主圖（2026-10-18 Work）
+
+使用者已回報G2起點2023-01-16、終點2023-08-16，取代先前約2～8月；兩日10項OHLCV與已保存1213根原JSON直接核對全相符，SHA256仍369947bad71ab3fdff894c21511ebf242e1ddb12b59822d02ed93f0580bd2796。代表點2023-05-02／40.25不變，分析日仍10/16。不要再說精確日待回報，不重索舊圖／JSON。[原話／新獨立契約／核對](docs/visual-discussion/20261018_g2_endpoints/README.md)。
+
+**下一步Codex直接依[M1_V019_MANUAL_REGIONS_INTEGRATION_HANDOFF.md](M1_V019_MANUAL_REGIONS_INTEGRATION_HANDOFF.md)實作新獨立主圖**：G1約9月至C與C後新平緩帶、G2精確時間帶、原代表點及可移動／放大／逐根OHLCV查詢；區域時間與價格上下緣分開，未知門檻不補。G1精確起日、價格區界／量口徑／自動選法等仍未定，不妨礙已明確工程。原0.1／0.2及三關JSON保留。
+
+本輪只完成端點原檔核對、案例與可執行交接，**未實作主圖／無0.3成品，沒有新Python產品／Chromium／Android測試或新手機JSON**。先前討論圖118 PASS及產品10／208／44各保留原範圍，不搬作新版本通過。原0.2手機PARTIAL_EVIDENCE_OBSERVED，指定標籤差異已收束，其他未測不變；新版本須NOT_TESTED_NEW_BUILD。原file://拒絕不重試、不繞過。Darvas箱型正文未完整讀取；核心用途NOT_ESTABLISHED及Raw／公司行動／Adjusted／歷史／資料／SQLite限制保留。原引擎策略／庫／歷史／舊頁／main不改，無部署／付費／交易／訊息／子代理。
+
+---
+
+# G2已確認約2～8月；新版座標查詢已交付（2026-10-18 21:52 Work）
+
+使用者指G2約2023年2月到8月，精確日待可移動座標查詢後補；不要再問同一大致區間，或把2/1～8/31當正式窗計量。另指定Nicolas Darvas《我如何在股市賺到200萬美元》箱型理論為概念相近的研究參照，非全盤採用其規則。[本輪新圖／完整原話／契約／原著查核範圍／實測](docs/visual-discussion/20261018_g2_coordinate/README.md)。
+
+新對話圖/workspace/g2-coordinate-query.html（長期源discussion_fragment.html）：預設拖曳查詢吸附真實日K、日期與完整OHLCV、K量十字游標、前後1根、獨立移圖模式；記起點／終點只作尚未提交草稿。放大平移及雙指保留；507根原值不變、分析日仍10/16。使用者回覆兩日期再綁案例；未收前精確日／價格邊界／整區量為null。
+
+**本輪118項真實Chromium133 HTTP PASS**，四視窗，含查詢不移窗／跨休市逐根／讀值／草稿及原縮放回歸，四圖目視。最初844測試因捲頁後沿用舊座標失敗，原失敗報告保留，修正腳本定位後全跑118通過，非放寬產品判定。不是Android或ChatGPT宿主已通過，未跑M1既有整套／10／208／44。原file://拒絕未重試。
+
+原著只直接核到官方出版資訊與Everand目錄／初段試閱，第四章標題可見，**箱型章節正文尚未完整讀取**，不假稱已讀全書或用通用Darvas算法取代使用者案例。使用者原話、G1／G2語意、原精度數值與引擎分工持續有效。其餘核心／Raw／公司行動／Adjusted／歷史／資料缺口／SQLite限制與原0.2手機狀態保留；原成品／引擎／策略／庫／歷史／main不改。
+
+---
+
+# G2可放大真實K量圖已交付；等待區域判讀（2026-10-18 Work）
+
+已落實「示意圖要能放大」：G2互動圖有放大／縮小、左右／拖曳／雙指縮放、點日K讀OHLCV與G2附近定位，K／量同步；附2240×1280靜態原尺寸參考。[圖源／資料／實際測試／備圖](docs/visual-discussion/20261018_g2_zoom/README.md)。本輪對話片段/workspace/g2-region-zoom.html，長期來源為該目錄discussion_fragment.html，**不是M1新產品版本或部署**。
+
+同一已核原JSON保留507根2022-01-03～2024-01-31原值，G2=2023-05-02 high40.25／volume69,164,237股，分析日10/16不隨移圖改動。初始顯示2022-11～2023-08僅閱讀窗；尚未選區、不填整區量或自動門檻。唯一待決：G2代表哪一段共同起伏價量帶，請使用者按圖用月份／位置描述。G1本例已確認部分不重問。
+
+**實際最終70項Chromium133 HTTP PASS**，四種視窗含真實CDP雙指事件與觸控／拖曳／放大，逐值來源相等、K量同步／分析不變／無溢位。已補測試環境繁中字體並目視四圖。CDN測試使用原始固定D3位元組回應，沒有驗使用者端CDN／ChatGPT宿主；**本輪Android NOT_TESTED**，不可由桌面觸控模擬代填。瀏覽器安裝／預設tmp解包失敗與解決範圍在報告保留，原file://政策拒絕未測／未繞過。
+
+原0.2 PARTIAL_EVIDENCE_OBSERVED及未測互動保留；未跑產品10／208／44或整套Python。核心用途、策略未定、Raw／公司行動／Adjusted／歷史公布可得／資料缺口／SQLite限制全部維持。下一步仍Work收G2區域判讀；原引擎／策略／庫／歷史／舊頁／main不改。
+
+---
+
+# 21:22後續討論圖必須可放大；下一張G2依此交付（2026-10-18 Work）
+
+使用者同意往G2繼續，另明確要求示意圖能放大，否則細節難辨。此偏好已寫入PROJECT_VISION.md最上方新節，適用真實K線、策略示意與對照圖。之後優先提供可操作的放大／縮小及局部查看方式，必要時附原尺寸入口與局部放大圖，不只貼縮小密集全景；保持K量／日期／標記可讀，放大不改分析或來源。
+
+**本輪僅保存要求，沒有產生G2新圖或宣稱縮放功能／手機互動已測。** 下一步仍Work製作可放大G2圖，檢驗分區能否延伸；不把「可以」當G2尚未展示區界已認可，不重問G1已確認部分。原0.2差異驗收、G1價量代表／C換帶及全部未定規則／資料／核心用途狀態保持。
+
+---
+
+# 21:04 G1區域含義已確認：代表點＋舊價量帶＋C後新平緩帶（2026-10-18 Work）
+
+使用者明確指出：G1由高點與高量選為整個價格帶／成交量帶的代表，區域約2023年9月到C；其共同起伏結構不同於C右側新的平緩帶，後者判讀為籌碼更沉澱。**本例含義已答，不再重問G1是否只有單一點或逼定9/1起日。** [完整原話／來源契約／新圖／實際檢查](docs/visual-discussion/20261018_g1_region_review/README.md)。
+
+本輪實讀原1213根同源JSON重核指紋及五日原值，實際Python畫新圖並目視。9/14與G1同為35.50，但量18,247,932與65,709,089股不同；10/18、11/30量更大但high低於35.50。故價量代表與量峰分開保存；9月高價為「不高於35.50，含同價」，不改G1人工選日。約9月仍精度為月份／起日null，C=2024-01-19為結構轉換參照；未填正式bar歸屬／價格上下緣／整區量。更沉澱保存為使用者結構判讀，不等於已追蹤實際持倉。
+
+已交付獨立人工區域契約與價量示圖，**手機產品接入未實作，本輪沒有0.3成品**。自動分區／代表點公式／平緩門檻／量比較／強度衰減／生命階段仍未知；可明確工程不應被精確起日問卷阻擋，後續以其他真實區域檢驗泛化，不重問本例。0.2顯示差異驗收保留，無新Android／Chromium／產品Python測試，核心整體用途未認可。Raw／公司行動／Adjusted／歷史公布可得／資料缺口／SQLite／file://限制與原引擎策略／庫／歷史／舊頁／main保留。
+
+---
+
+# 下一個核心圖形問題：G1的同一交易區涵蓋哪一段（2026-10-18 Work）
+
+0.2指定標籤差異已收束，不重開按鈕驗收。本輪已取回並實際重核保存的0.1原JSON指紋，從同一1213根1101新Raw來源畫出G1附近真實K／成交量：背景576根、放大181根，非新行情、非新0.2手機下載。[圖／原精度子集／生成腳本／本輪檢查](docs/visual-discussion/20261018_g1_region/README.md)。
+
+**WAITING_FOR_USER_REGION_JUDGMENT**：G1=2023-11-28／35.50已定；現在只問判斷其壓力時，哪段K線及成交量算同一交易區。圖中A（10/24 low31.35）／C（1/19 low31.80）只是指圖位置，不是認可區界／轉折。使用者可用月份或位置描述，更小、更大、分段均可。窗口不是區間；未選區、不算整區量、不補量倍數或自動算法。
+
+本輪實際Python重畫、子集逐值相等與PNG目視驗證；未跑產品Python／Chromium／Android或交易驗證。0.2 PARTIAL_EVIDENCE_OBSERVED／其餘未測、核心用途NOT_ESTABLISHED及全部Raw／公司行動／Adjusted／歷史／資料／SQLite／政策限制不變。下一步仍同Work收真正核心圖形判讀，再由助手形式化；原引擎策略／庫／歷史／舊頁／main保留。
+
+---
+
+# 20:03 0.2指定標籤差異驗收收束；下一步核心用途（2026-10-18 Work）
+
+使用者回覆「成功」，承接G1定位→分析日仍10/16→24月返回486根→關閉看G2／G3超軸提示，記為**USER_REPORTED**整組成功；本輪無新圖／JSON，不代填直接觀察。[本輪分項紀錄](股票系統M1_v0_18/hurdle_chart/validation_android_labels_v02_20261018/evidence-2003.md)。
+
+0.2維持**PARTIAL_EVIDENCE_OBSERVED**。19:31直／橫標籤不遮擋與價軸、19:56來源／回溯資格畫面為OBSERVED；頁頂0.2、點標籤不跳日／關閉保持及本輪定位返回／超軸提示為USER_REPORTED。本輪指定顯示差異可告一段落，不是全Android、核心用途、策略或交易價值PASS；不再重要求相同原圖／舊JSON。
+
+下一步仍同一Work對話驗主圖實際用途，以真實圖討論尚未確定的核心圖形判讀，不能以人工三關顯示代替自動辨識。0.2新手機JSON與其餘未測互動按最新紀錄保留，不藉此重開整套按鈕驗收；有可重現工程問題才交Codex並附完整指令。
+
+本輪只更新文件，未跑Python／Chromium或改成品／引擎／策略／庫／歷史／main；0.1證據完整保留。所有核心未知、Raw／公司行動／Adjusted／歷史公布可得／資料缺口／SQLite及file://原政策限制不變。
+
+---
+
+# 19:56 G1證據已見；0.2身份及關閉保持由使用者確認（2026-10-18 Work）
+
+使用者回覆「1、2、3都可以」，依前輪三步記為：頁頂0.2已確認、點主圖G1標籤成功、關閉後486根／游標／分析日保持的**USER_REPORTED**。不再重要求相同頁頂／直橫圖。新截圖**直接OBSERVED** G1來源2023-11-28／35.50、日收27.30、人工覆核2026-10-18T15:19:32+08:00及分析日10/16，明示後來回溯資格與Raw限制；面板遮圖，關閉後保持不是助手直接觀察。[本輪原圖／指紋／分項紀錄](股票系統M1_v0_18/hurdle_chart/validation_android_labels_v02_20261018/evidence-1956.md)。
+
+0.2改記**PARTIAL_EVIDENCE_OBSERVED**：19:31閱讀差異與本輪證據畫面、操作回報合併；之前VERSION_UNCONFIRMED是歷史，版本身份現由使用者回報補足。0.1證據與JSON保留。無0.2新JSON／精確HTML指紋核對，無新產品FAIL，不當完整Android或核心用途認可。
+
+下一步仍本對話Work：G1證據按「定位」→確認真實來源日／35.50及分析日10/16→按24月回486根；關閉面板看G2／G3超軸提示，一次回報即可。定位／返回及提示尚未本輪驗到，不預填。其他舊未測互動保留，不強迫全重測；另驗手機下載才收0.2新原JSON。
+
+本輪只新增原圖與文件，沒有產品、引擎、策略、庫、歷史、舊頁或main修改，沒有重跑10／208／44或整套Python。Raw／公司行動／五年Adjusted／歷史公布可得、策略未定與資料缺口／SQLite未知根因／file://政策拒絕全部保留。
+
+---
+
+# 19:31新版G1標籤直橫差異已見；版本與點選互動待確認（2026-10-18 Work）
+
+本輪收到兩張新截圖並實讀附件：卡片在畫面外時，主圖右側G1／35.50在直向與橫向仍可讀，未見遮K／刻度／＋／−；兩圖仍24月486／1213根、分析10/16、收27.30，價軸約18.43～37.27未被50.20拉高。這是直接畫面觀察，不是使用者口頭回報或重跑工程測試。[原圖、收到檔案指紋及分項紀錄](股票系統M1_v0_18/hurdle_chart/validation_android_labels_v02_20261018/evidence-1931.md)。
+
+**身份限制**：頁頂版本標頭未入鏡，畫面外觀符合0.2差異，但精確0.2版本尚未直接確認；新收件狀態記PARTIAL_EVIDENCE_OBSERVED_VERSION_UNCONFIRMED。下方0.2 NOT_TESTED_NEW_BUILD是收件前歷史，0.1部分證據原樣保留。沒有新操作文字／JSON，不把靜態圖當旋轉保留、點擊不跳日或0.2原檔全欄位核對。G2／G3超軸提示未入鏡，尚未直接驗到。
+
+下一步仍本對話Work：看頁頂回報是否「M1 三關主圖0.2」即可；點**主圖右側G1線標籤**收2023-11-28／35.50及後來人工覆核資格的證據畫面，再關閉並回報圖窗／游標是否保持、分析日仍10/16。不重收本次直橫圖或0.1已核對JSON。定位來源／24月返回與其他未測互動按最新清單另留待補；另驗手機下載才收0.2新原JSON。
+
+本輪只新增證據及文件，未跑Python／Chromium、未改成品／引擎／策略／庫／歷史／main；10／208／44仍屬前輪Codex實測。核心用途與所有未定規則／Raw／公司行動／Adjusted／歷史公布可得／資料缺口／SQLite限制保留。沒有產品FAIL可據以交修，原file://拒絕未重試。
+
+---
+
+# 最新交付：主圖畫外G1線標籤修正版0.2（2026-10-18 Codex）
+
+已接續指定e3e837ca20669d974fc994fd6565292105fd15b1，保留所有Work後續原圖／原JSON及核對。新hurdle-chart-view/0.2入口：股票系統M1_v0_18/hurdle_chart/generated/labels_v02/M1_v0_19_three_hurdles_labels_v02.html；[獨立小ZIP／SHA](deliveries/m1-v019-hurdle-labels-v02-20261018/README.md)。原0.1成品不覆寫。
+
+**已修正**：價格在軸內就顯示名稱與價格，即使來源日期畫外；來源圓點仍只在真實日期。近期24月G1 35.50可在主圖右側辨認、可點查證，卡片捲走也不消失；標籤與刻度／K／縮放鈕分區，互相過近用短線指回真實價位。G2／G3超軸仍提示，不強拉價軸或假貼邊。定位／回24月及標籤點擊不改10/16分析日／游標（定位僅明示移游標）。
+
+**本輪實測**：10項Python專項PASS，未重跑原整套365；208個實際Chromium HTTP回歸PASS（含100 oracle下載與另2次人工層下載）、44標籤專項PASS（四視窗）。[實際前後畫面](股票系統M1_v0_18/hurdle_chart/validation_labels_v02_20261018/前後畫面.md)及[實測報告](股票系統M1_v0_18/hurdle_chart/validation_labels_v02_20261018/驗收報告.md)。交付HTML SHA fe0d27111f9a03b23ea587cb195a5b5b3987b4862e7af6ee20684be1b69fbce6；核244源檔／4854新Raw／1490原時點與唯一人工層。舊手機JSON與舊payload全欄位相等，新下載除view_version外全相等，數值／來源／精度／未知規則不變。
+
+原file://管理拒絕保留、未重試或繞過，本輪報告PASS_WITH_KNOWN_BLOCKER，不當新版開檔通過。**0.2 Android NOT_TESTED_NEW_BUILD**；0.1 Pixel9Pro立即載入自報、直／橫主圖、G3五日及原JSON核對PARTIAL_EVIDENCE_OBSERVED原樣保留。下一步Work先收0.2標籤閱讀／點選不跳日差異，不再要求相同0.1截圖／JSON；其他未測手勢／游標／旋轉等依[手機最新紀錄](M1_V019_PRESSURE_CHART_ANDROID_ACCEPTANCE.md)保留。
+
+沿[本次標籤交接](M1_V019_HURDLE_LABEL_READABILITY_HANDOFF.md)及[hurdle_chart最新README](股票系統M1_v0_18/hurdle_chart/README.md)繼續。區界／整區量／增量／強度／衰減／自動選關／生命階段未定，公司行動／歷史公布可得／五年Adjusted未完成，Raw／五年覆蓋及資料缺口與SQLite未知根因保留。原策略、引擎、庫、歷史、舊頁及main不改；核心用途未認可。若建議轉模式必附完整可貼指令；本輪範本在新下載入口WORK_HANDOFF.md。
+
+---
+
+# 17:41近期24月橫向主圖已確認；畫外G1線缺標籤交Codex（2026-10-18）
+
+新圖直接顯示2024-10-16～2026-10-16、486／1213根、分析10/16，K／量／MACD及底部完整讀值可見。OHLC27.10／27.70／26.95／27.30、量57,437,884股、DIF0.63／DEA0.45／柱0.36與前輪全欄位相符原JSON一致；價軸約18.43～37.27，未因50.20壓扁近期K。[原圖與紀錄](股票系統M1_v0_18/hurdle_chart/validation_android_20261018/evidence-1741.md)。24月近期窗返回結果已確認，不再重要求相同圖／G3表／原JSON；移動游標等其他操作仍未測。
+
+**可重現顯示缺口**：G1 35.50價位在軸內，但來源日畫外時主圖只畫紫線不畫關卡名稱，卡片捲出視野後難辨。已讀manual_viewer.js，確認fillText依visible來源條件才執行，與實機相符。[Codex修正交接](M1_V019_HURDLE_LABEL_READABILITY_HANDOFF.md)：線標籤與真實來源點分開，維持超軸提示與價軸，不改策略／參照／數值，產生可見修正前後與獨立新交付。
+
+Android仍PARTIAL_EVIDENCE_OBSERVED；不是全項通過或核心用途認可。下一步可切Codex作此明確顯示修正，之後Work僅就新版差異再驗；修正版不沿用本版實機狀態。各關逐日定位、回近期60根、手勢／移動同步、完整旋轉、10/15／其他股排除與效能仍列未測。核心／資料／原政策阻礙與SQLite限制保留。本輪無產品修改或新瀏覽器測試，原引擎策略／庫／歷史／main未改。
+
+---
+
+# 17:25新版橫向G3來源窗已見；近期24月返回仍待（2026-10-18）
+
+新截圖直接可見K／成交量／MACD與G3 50.20來源點群、五同價來源提示、G1/G2在畫外／低於軸提示，分析日仍10/16。當前是2021-10-18～2022-04-29、129根歷史來源窗，**不是近期24月486根**。同源已核對JSON重讀確認129根及五個同價日。[原圖與分項證據](股票系統M1_v0_18/hurdle_chart/validation_android_20261018/evidence-1725.md)。
+
+Android維持PARTIAL_EVIDENCE_OBSERVED，新增橫向來源窗／三窗渲染OBSERVED；靜態游標對齊不當移動同步通過，單張圖不當全部定位／旋轉保留通過。沒有新JSON／口頭操作回報，前輪JSON完整核對保留。
+
+下一步仍同對話Work：回操作列按24月，見2024-10-16～2026-10-16／486根、分析10/16後直接傳橫向主圖。若按了仍停舊窗需明確回報再重現，目前不猜程式失效。JSON及G3表不用重傳。其餘互動／用途、核心與資料限制沿用；本輪無產品修改或新工程測試，原引擎策略／歷史／main保留。
+
+---
+
+# 17:13新頁JSON全欄位相符，G3五日證據已見（2026-10-18）
+
+實際收到新版原JSON與G3直向證據圖：[分項紀錄／原始證據包／重現腳本](股票系統M1_v0_18/hurdle_chart/validation_android_20261018/evidence-1713.md)。本輪無新口頭操作回報。裝置沿上輪Pixel9Pro／Google瀏覽器自報。
+
+原JSON1,185,454 bytes，SHA256369947bad71ab3fdff894c21511ebf242e1ddb12b59822d02ed93f0580bd2796，全部解析欄位與固定交付HTML及Python producer相同新1101Raw／10/16選擇完全相等，schema hurdle-chart-selection/0.1。已核對manual_hurdles、三關、G3.source_date=null／五同價日、來源與前綴指紋、全部數值精度、1213根K／指標及wrapper已接入狀態；原案例NOT_IMPLEMENTED歷史保留。不是重新抓行情或獨立重算指標，未重跑365／208。
+
+截圖直接看到G3五日全50.20、各定位按鈕、非唯一選日說明、返回近期24月按鈕及兩個詳細資訊折疊入口。按鈕可見不等於五列逐一定位／返回／展開都通過；主圖遮住、無新橫向圖。
+
+Android維持PARTIAL_EVIDENCE_OBSERVED；JSON單檔核對新增FILE_VERIFIED，G3表新增OBSERVED，核心用途仍未認可。下一步仍同對話Work補新版24月橫向主圖：關閉證據→24月→專注主圖→橫向。本次JSON已核對，不重要求相同下載。其他定位／游標同步／手勢／排除其他日股等缺證據項目保留；資料／核心未知與原政策阻礙沿用。沒有產品、引擎、策略、庫、歷史／main變更。
+
+---
+
+# 16:19新三關頁已在Pixel9Pro開啟：部分實機證據已收到（2026-10-18）
+
+使用者回報Pixel9Pro／手機Google瀏覽器／Android稱最新版本、「馬上就開好了」。這是快速載入的主觀回報，沒有量測秒數／確切OS與瀏覽器版號或連續操作卡頓結論。新標頭、1101新Raw、分析10/16收27.30、①④已過與G1/G2/G3分層均直接可見；本機content開檔後已渲染。
+
+新頁Android改記 **PARTIAL_EVIDENCE_OBSERVED**，不沿用舊頁。完整[分項紀錄與原圖](股票系統M1_v0_18/hurdle_chart/validation_android_20261018/evidence-1619.md)。截圖當前已是2022-11-23～2024-11-28歷史窗、486根，分析日仍10/16；G1/G2來源可見，G3畫外／超軸提示保留，價格軸沒有被拉到50.20。單張圖不證明開頁預設錯誤或兩個定位按鈕均測完。MACD在截圖之外、其他互動及用途仍未驗。
+
+前輪已核對源JSON重讀確認該歷史窗確486根、G1/G2高價相符；**本次沒有新版頁面下載JSON**，來源檔不能代替hurdle-chart-selection/0.1原檔。原Codex file://管理政策阻礙報告保留，不改寫原環境結果。
+
+下一輪仍本對話Work：按24月回到2024-10-16～2026-10-16／486根並提供橫向主圖；點G3標題提供五日／回溯證據；關閉證據後從新版頁下載原JSON。回近期60根、G3各日定位、圖點／移圖縮放／游標同步、旋轉保留與其他股／日期不套仍待實際證據。核心／資料限制沿用；本輪無程式修改或新工程測試，原引擎策略／庫／歷史／main不改。
+
+---
+
+# Work已核對新版下載，開始收Android證據（2026-10-18）
+
+本輪開始時直接確認指定分支HEAD等於使用者交接提交 **e37ea8e7c553b115dc150b9a33401d04f55dacd0**，包含該提交，沒有從main或舊ZIP覆蓋。依序實讀AGENTS、CONTINUE最上方、三關交接最新節、hurdle_chart README、其validation_20261018/驗收報告、Android最上方、VISUAL_RULE_NOTES最新裁決及人工案例完整JSON，另讀新版下載入口及原始browser-report.json。
+
+**實際下載核對已完成**：從固定成品提交87ec609ef51d7346554e2546e520a9dbc4ac2235下載小ZIP，4,358,045 bytes，SHA256 b82ca6f599e0f8fd5d115a133e126ea283cc9519781debd8c2bbb2795470659d。ZIP CRC與內部三檔SHA逐一相符；解出HTML36,712,014 bytes，SHA2564cbe923936f9841652e7a303ec60029f9159dffe3b266e468d04b573f060706c。HTML原碼實讀標頭「M1 三關主圖 0.1」。見[本輪下載核對原始紀錄](股票系統M1_v0_18/hurdle_chart/validation_work_20261018/work-download-verification.json)。這是ZIP／交付檔案核對，**沒有執行瀏覽器或手機，也沒有重跑365／208**。
+
+原browser-report實讀status=PASS_WITH_BLOCKED_CHECK、checks208、exact_precision_downloads100、physical_android=NOT_TESTED_NEW_BUILD；blocked_checks保留file:// ERR_BLOCKED_BY_ADMINISTRATOR。報告HTML SHA與本輪實算一致。不把雲端HTTP或ZIP可讀當Android content開檔成功，不重試繞過管理政策。
+
+## 目前證據分類
+
+| 類別 | 新hurdle-chart-view/0.1目前狀態 |
+|---|---|
+| 新版原檔下載／CRC／內部SHA／HTML身分 | FILE_VERIFIED，本輪實際完成 |
+| Android直接畫面 | 尚未收到新版畫面，NOT_TESTED |
+| 使用者操作回報 | 尚無新版回報 |
+| 頁面下載原JSON | 尚未收到，NOT_VERIFIED；ZIP內案例不是頁面匯出 |
+| 實機故障 | 尚無可重現故障，不預先判定PASS或FAIL |
+| 新版Android整體 | NOT_TESTED_NEW_BUILD |
+| 核心用途／分類與交易價值 | NOT_ESTABLISHED |
+
+舊pressure的PARTIAL_EVIDENCE_OBSERVED、原PNG／JSON與使用者舊回報全保留，不能套用本版。
+
+## 先做手機第一輪
+
+從新版小ZIP解壓，在檔案／下載以瀏覽器開 **M1_v0_19_three_hurdles.html**，確認標頭、1101／Raw｜新官方日線／10/16收27.30、24月486根、原①④與G1／G2／G3分開。先回傳直向主圖，記手機型號／Android／瀏覽器（未知可留待補）、實際開檔方式、約幾秒載入、有無卡頓；標頭被捲出畫面時先看頁頂。預期值是待驗條件，不代填成功。
+
+後續按本檔既有新版六步清單：直橫與超軸可讀性→G1/G2定位與24月返回→G3五日證據／逐日定位→圖點、移圖縮放、K量MACD游標、切10/15／其他來源不套→從新版頁面下載原JSON核對hurdle-chart-selection/0.1、manual_hurdles、G3.source_date=null、來源／精度與wrapper接入資格。24月返回486根與「回近期」60根分開。可捲動看MACD，不要求橫向三窗硬擠同屏。
+
+沒有本輪新版JSON／截圖就不新增手機通過項目。原案例NOT_IMPLEMENTED是歷史欄位，新wrapper整合狀態另存，不能改原案例或因其歷史字樣誤判未接入。區界／量／增量／強度／衰減／自動選關／生命階段、Raw完整公司行動／Adjusted／歷史公布可得、其他資料缺口與SQLite根因等限制全部保留。
+
+下一步仍**本對話Work**接本人新版實機回報與檔案；可重現工程缺陷再附版本／來源／日期／操作／原圖／JSON交Codex。本輪僅新增下載證據與交接，未改成品、引擎、策略、庫、歷史或main，未部署／付費／交易／發訊息／子代理。若建議切換另附完整可貼指令。
+
+---
+
+# 最新交付：1101人工三關已接入獨立新版主圖（2026-10-18 Codex）
+
+已包含指定5713fe248915dc47030de8e7573e2751457a53c5並保留其後Work證據。新頁 **hurdle-chart-view/0.1**：股票系統M1_v0_18/hurdle_chart/generated/M1_v0_19_three_hurdles.html；[新版小ZIP／SHA／下載入口](deliveries/m1-v019-three-hurdles-20261018/README.md)。舊pressure主圖與成品不覆寫。
+
+原①26.10／④26.85目前收盤已過點價，另列G1 2023-11-28／35.50、G2 2023-05-02／40.25、G3 50.20／五個同價日。三關近期24月仍提示畫外／超軸，定位不改10/16分析；不強拉50.20進Y軸。只有新1101 Raw／指定source-frame-basis／10/16接人工層，其他時點null，不倒灌歷史。證據先讀日期、點價、關係及10/18回溯資格，長ID／JSON折疊；G3不選唯一日、不自造區界。
+
+**本輪實測**：Python全套365項PASS（含新8項）；最後實際Chromium HTTP208項PASS，含100次下載對Python值／精度指紋與另2次人工層核對。額外file://開檔受管理政策ERR_BLOCKED_BY_ADMINISTRATOR，報告PASS_WITH_BLOCKED_CHECK，沒有繞過，不能稱開檔全過。交付HTML核對244源檔、4854新Raw／1490原frame、整份parent原欄位不變與唯一人工綁定；詳[本輪驗收](股票系統M1_v0_18/hurdle_chart/validation_20261018/驗收報告.md)。
+
+**新版Android NOT_TESTED_NEW_BUILD**，舊pressure-page PARTIAL_EVIDENCE_OBSERVED及原JSON證據保留但不沿用。下一步Work讀本節、[三關交接](M1_V019_1101_THREE_HURDLES_HANDOFF.md)、[新頁契約](股票系統M1_v0_18/hurdle_chart/README.md)、[Android最上方](M1_V019_PRESSURE_CHART_ANDROID_ACCEPTANCE.md)，以新檔測G1/G2/G3來源定位／24月返回、超軸不壓扁、直橫與JSON；只要求尚未測的新版本項目，不把舊回報刪掉重來。
+
+核心區界／整區量／增量／強度／衰減／自動選關／生命階段仍未知，公司行動／歷史公布可得與五年Adjusted未完成，Raw／五年高限制保留。TWSE六日Work主證是獨立補充，尚未接產品稽核，TPEX仍待；SQLite根因未證實。原引擎／策略／資料庫／歷史及main不改。來源人工JSON未回寫；其中NOT_IMPLEMENTED為原時點歷史，新wrapper另記接入狀態。
+
+每次建議轉模式，附完整可複製指令；本輪Work範本在新下載入口的WORK_HANDOFF.md，最終回覆另附最新已確認提交。GitHub是否保存以實際遠端及下載收據為準，不把本地結果當已上傳。
+
+---
+
+# 15:19使用者已指定1101三個後續左側關卡；可接人工參照層（2026-10-18）
+
+使用者指定2023-11-28 high35.50為左側第一關、2023-05-02 high40.25第二關、50.20第三關。原下載新Raw／10/16資料逐點相符；G3只指定價位，現有五個同價日期完整列出，未擅自指定唯一日。詳見 [三關實作交接](M1_V019_1101_THREE_HURDLES_HANDOFF.md)、[精確來源人工案例](docs/visual-discussion/20261018_1101_selected_hurdles.json)及[真實日K定位圖](docs/visual-discussion/20261018_1101_selected_hurdles.png)。
+
+三關全部在目前24月視窗之外，接入後須保留畫外來源及超Y軸提示；不能因近期畫面看不到而消失，也不強拉遠高價把近期K壓扁。新三關不取代原①④，人工選點不冒充自動辨識或原歷史訊號。完整公司行動未核實、Raw可比性與五年覆蓋限制保留；點價不是正式區界，區間量／增量／強度／衰減／自動選區仍未定。
+
+本輪實際做原檔三點／同價日核對、1213根真實日K定位圖與目視檢查、保存案例及交接；沒有改手機成品或新增Android／瀏覽器測試，不能說三關已在HTML上線。Android仍PARTIAL_EVIDENCE_OBSERVED。
+
+**下一步可交Codex**依新交接完成獨立主圖人工三關接入、顯示簡化、來源定位／JSON與必要測試。原引擎策略／庫／歷史／舊產物／main保留，指定分支後續成果保留。正式自動規則未定部分留Work圖形討論；不能藉這次案例補門檻。
+
+---
+
+# 15:04橫向24月主圖已觀察；下一關辨識用途仍未完成（2026-10-18）
+
+新截圖直接顯示1101／新官方Raw、分析10/16、視窗2024-10-16～2026-10-16、486／1213根。K與量已見、＋／−專用區及畫外來源提示可見；下緣在量面板，MACD沒有收進截圖，不宣稱缺失或橫向三窗完整通過。[原圖與分項紀錄](股票系統M1_v0_18/pressure_chart/validation_android_20261018/evidence-1504.md)。
+
+重讀前輪已核對原JSON：10/16收27.30，①26.10與④26.85關係均ABOVE。截圖④卡片已有收盤已過點價，不誤報完全沒狀態。主圖仍未清楚表達已過事件與下一個左側區域的關係；較高舊交易區、五年Raw最高來源及正式價量高牆不能混稱。50.20未完整校正，不直接加魔王；最高日量5.57億不等於已選區總套牢量。
+
+Android維持PARTIAL_EVIDENCE_OBSERVED。先前14:49「沒有問題」是一般性使用者回報，本圖補橫向及24月文字觀察；完整旋轉序列／移動游標同步／拖曳縮放實按／其他股票日期／效能等未直接覆蓋。沒有新JSON、成品修改、建置或程式／瀏覽器測試，核心用途未認可。
+
+下一步仍同對話Work，用這張真實圖讓使用者指出①④已過後最在意的下一個左側區域。不能強迫分類、先發明區界或自動選牆。可確定的事件／圖例與證據簡化顯示缺口已交接，但尚未實作；原引擎策略／歷史／main不改，既有資料限制全部保留。
+
+---
+
+# 14:49使用者回報：前輪操作沒有問題（2026-10-18）
+
+使用者原話「沒有問題」，緊接前輪關閉證據→切Raw｜新官方日線→確認10/16／27.30→24月→直橫直的指引。按語境記為該組操作一般性 **USER_REPORTED_NO_PROBLEM**；不是逐項測量、資料值核對或助手直接觀察。無新增截圖／JSON，24月實際起訖與486根、旋轉前後保留值及橫向版面仍未直接核對，不補造實測細節。
+
+新版Android整體維持 **PARTIAL_EVIDENCE_OBSERVED**。前14:08原JSON全欄位核對與14:31原案例來源證據已觀察紀錄保留。拖曳、縮放按鈕、移動游標同步、返回近期、其他股票／基底／日期、效能及核心圖形用途未因這句回報自動通過。
+
+下一步仍本對話Work：保持1101新Raw／10/16／24月，按「專注主圖」提供橫向完整圖；直接檢查目前位置、已過①／④、左側價量來源及主圖可讀性。缺少的互動驗收另外列，不用重複要求已回報無問題的旋轉來阻擋圖形用途討論。本次只更新紀錄，未修改成品、策略、引擎、歷史或main，未新增程式／瀏覽器測試。
+
+---
+
+# 14:31新增：原①→④證據面板已見，旋轉仍未測（2026-10-18）
+
+使用者提供直向證據面板截圖，當前是原1101 Raw／2026-09-30／收26.30。實際讀圖並與固定交付HTML核對source與snapshot完整ID，符合原179根案例，④1/29點價26.85與1/27真實high26.95分開；10/18人工回溯資格明示。只確認證據已呈現，不把靜態圖當點擊過程、切換過程或操作不跳日皆通過。
+
+[完整14:31紀錄與原圖](股票系統M1_v0_18/pressure_chart/validation_android_20261018/evidence-1431.md)。這次無新JSON／橫向圖／逐項口頭操作回報；本圖證據覆蓋主圖，24月486根、旋轉、拖曳、同步移動及新來源證據仍未測。14:08新Raw／10/16原JSON的先前核對保留，不能拿它代替本圖原案例JSON。
+
+已讀viewer.js：④按鈕只定位開證據，原覆核入口才切原來源；無實際操作序列，不能認定點④把10/16誤跳9/30。畫面長ID／JSON的閱讀密度問題已記錄，未改成品。整體維持PARTIAL_EVIDENCE_OBSERVED。
+
+下一步仍本對話Work：關閉證據，頂端基底選Raw｜新官方日線，確認10/16／27.30，按24月，再直→橫→直回傳圖／回報。原策略／歷史／main未改，其他限制沿用。
+
+---
+
+# 最新手機證據：新版五年圖已見，單一原JSON已核對（2026-10-18，截圖14:08）
+
+接續已保存提交 `3942950f95f4fe9c8dc81e6dbc3a928be08fb59d`，產品基準仍 `b9c38d6fbd56257f41e28657cf5fd6bd88e1ad3b`，未修改成品。新壓力頁Android改記 **PARTIAL_EVIDENCE_OBSERVED**；下方13:20「尚無」是收件前歷史，不能誤讀為目前狀態。
+
+已直接看到1101新Raw／10/16直向五年1213根、K／量／MACD及右下＋／−。實讀使用者提供的1,173,373-byte原JSON，全部解析欄位與固定交付HTML及Python producer同一選擇相等；末日OHLCV與截圖相符，saved_analysis／retrospective_review為null，retrospective_followup保留回溯資格。本輪實際下載交付ZIP與解出HTML重算SHA均符合清單；不是獨立重算官方資料或指標，也未重跑既有整套測試。
+
+[完整分項驗收](M1_V019_PRESSURE_CHART_ANDROID_ACCEPTANCE.md)；[原PNG／JSON證據包、SHA及機器核對](股票系統M1_v0_18/pressure_chart/validation_android_20261018/README.md)。原檔未改；只新增獨立證據與交接，不沿用舊頁手機結果。
+
+**下一步仍本對話Work**：相同1101／新Raw／10/16按24月（預期486根）→直向→橫向→直向，查看近期①／④與游標，再打開④來源證據。只有靜態五年圖，尚無逐項操作回報；旋轉、拖曳、按鈕、返回近期、來源點選、切股／基底、效能和核心用途皆未通過。五年概覽右端近期關卡擁擠，需較短視窗實圖再判讀，不能視為正式規則完成。
+
+原限制全部保留：完整公司行動／五年Adjusted、歷史公布可得、TPEX六日主證、正式整理區／自動選關／魔王／時間衰減／異常門檻／急緩跌強度／增量、SQLite根因等。TWSE六日補證沿用394紀錄，未因手機核對接入產品。五年Raw高不當完整歷史或完整校正壓力。未見可重現故障，不創造程式修正；main、原引擎／策略／庫／歷史／舊頁保留。
+
+---
+
+# Work接續：新版壓力頁手機驗收已備妥；另補TWSE六日主證（2026-10-18 13:20 台北）
+
+指定分支最新已核實為 `b9c38d6fbd56257f41e28657cf5fd6bd88e1ad3b`（本輪文件交付前），與使用者指定相同。成品基準仍是該提交pressure-chart-view/0.1，不是舊technical或attempt。已依序實讀指定8文件、成品入口、原coverage-audit、SHA及原browser-report；不是只看使用者摘要，也沒有宣稱已讀全專案。
+
+**本輪主線：直接手機開檔與回傳證據**，見 [新頁Android紀錄最上方](M1_V019_PRESSURE_CHART_ANDROID_ACCEPTANCE.md)。小ZIP解壓新HTML，預期1101／新Raw／10/16日收27.30、預設24月486根；18／24月→約5年1213根（最早2021-10-18）→近期，＋／−及直橫直，回傳原JSON與截圖。本輪尚無新頁手機畫面／操作回報／JSON，仍NOT_TESTED_NEW_BUILD，舊頁證據不沿用。
+
+原browser-report194／100與交付HTML SHA一致；這是報告間相符，不是本輪重跑瀏覽器／Python。大型history-candidate透過connector取得空content，本輪沒有獨立重算全部4854時點或整份HTML，後續JSON核對按實際可讀原檔進行。
+
+**已實際完成的額外工作**：找到並逐份直接下載／解析六個待證日的TWSE交易部原始新聞稿，核對日期／集中市場全日休市與原PDF SHA。補充在pressure_chart/validation_work_20261018/closure-primary-supplement.md／json及closure-audit-review-overlay.json。只支持集中市場1101／2884，不把它外推TPEX6488／8069；櫃買主證仍未取得，原稽核／產品未修改或重跑。下一次Codex可接市場別證據清單與新稽核，保留舊報告。
+
+完整五年公司行動／Adjusted、歷史公布可得、TPEX六日主證、正式區界／衰減／異常／急緩跌強度／重要性／魔王／增量、SQLite根因等未完成。Raw舊高不當已校正壓力，五年不當上市全史。原引擎策略／庫／歷史／舊頁／main保留；本輪只更新文件與補證。
+
+**下一步仍本對話Work**接實機結果，不提前切回Codex或重做規劃；有可重現程式問題或資料證據接入才交Codex。凡建議另切模式，必附含最新已確認GitHub提交的完整可貼指令。
+
+---
+
+# 最新交付：四檔約五年官方Raw＋雙維壓力來源主圖（2026-10-18 Codex）
+
+**固定交接偏好（使用者要求）**：之後每次建議切回工作模式（Work），都要一併提供可直接複製貼上的指令，列出儲存庫、指定分支、最新已確認的 GitHub 提交、必讀文件、本輪目標、實測成果及未完成限制；要求保留後續成果、不改 main、未測不得標完成。不得只告知切換模式；遠端尚未確認時必須明示。
+
+已接續指定 `a3a58d4972d1efb5da8196e83954be574b0670c9`，使用同一 `dev/m1-v018-chart-annotations`，main不改。**不是只更新交接：新source、官方原檔、主圖、測試與完整下載均已交付。** [成品入口](deliveries/m1-v019-pressure-walls-20261018/README.md)；新頁 `股票系統M1_v0_18/pressure_chart/generated/M1_v0_19_pressure_chart.html`。
+
+先讀 [左側高牆交接最新節](M1_V019_LEFT_PRESSURE_WALLS_HANDOFF.md)、[新接入契約／命令](股票系統M1_v0_18/pressure_chart/README.md)、[本輪實測](股票系統M1_v0_18/pressure_chart/validation_20261018/驗收報告.md)、[新版手機清單](M1_V019_PRESSURE_CHART_ANDROID_ACCEPTANCE.md)。原technical_chart頁與原保存分析沒有覆寫。
+
+## 本輪實際成果
+
+- **真實五年Raw已取得**：1101／2884各1213根、6488／8069各1214根，2021-10-18～2026-10-16；目標起點10/16為週末。每檔61份官方月回應，合計244份，另有12份兩市場2021～2026計畫年曆；原檔、抓取時間、SHA及單位保留。所有原保存日的OHLCV與新來源逐數字等值。
+- 主圖預設24日曆月**日K**；18／24月、約5年、平移／縮放／近期、K量MACD共用軸與游標。＋／−在K面板右下44px專用區，圖例不誤移游標。畫外較早價格高／最高日量仍提示、可定位，不拿可見窗當分析範圍。
+- 價牆與量牆**來源證據分開**：全段已供真實high、原量／總量／最高日量、來源日／區間、經過多久與每日下跌路徑。月份只是可明選的資料容器，非正式整理區；不依最近N點或總分自動決定主要高牆／魔王。資料有量缺值時，確定總量及最高量均未知，不能用已知部分代替。
+- 1101原①→④覆核只在原source／snapshot／9/30精確吻合時直連。新Raw來源核對原179日後，另保留9/30之後真實日線追蹤／收盤越點及跌回事件；增量基準／門檻／持續時間仍null。10/18人工覆核是回溯註記，不是當時自動訊號；不套其他股票，不把④26.85當全區最高，1/27真實26.95仍保留。
+- 新Raw指標直接重用原SMA／MACD數值模組，沒有對新五年重算原結構引擎／寫DB，也沒有新正式分類。原6組保存分析與4組新Raw各有來源入口；原Adjusted仍是舊樣本，未假稱五年Adjusted。
+
+## 實測與保留限制
+
+Python全套**357項通過**；最後缺量防線修正後**21項專項再測通過**（不相加）。最後新頁真實Chromium **194檢查／100次下載值與精度指紋核對通過**，含實際五年／18及24月、畫外定位、手勢、44px按鈕、圖例／區間證據、回看前綴、旋轉、320窄屏與無JS錯誤／外部請求。實際HTML核對244官方原檔、4854新Raw時點及1490原保存時點；原數值bundle全等。不是Android驗收。
+
+**缺口不能略過**：[最終日期稽核](股票系統M1_v0_18/pressure_chart/data/history-20261018/coverage-audit.json)列6個仍需臨時休市／停牌主證日期（2023-08-03、2024-07-24／25、10-02／03／31）。1101的2025-08-13及2884的2025-11-05各有官方0量／全缺價列，沒有補0價。月檔齊不等於完整交易日認證。公司行動只保留舊3筆樣本與12個原欄位待查提示，完整五年事件／公布時間未核實，**未製作五年Adjusted，Raw舊高不是已校正的共同基底壓力**。只有五年不能宣稱完整歷史新高或沒有更早套牢區。
+
+新頁Android **NOT_TESTED_NEW_BUILD**；原technical-chart-view/0.1的PARTIAL_EVIDENCE_OBSERVED及attempt證據原樣保留，不能沿用。為限制離線檔大小，來源月份明細只在月末最後供應日／截止日匯出；其他日只用當時全段價量／日K指標，明示未匯出而不借後來詳表。正式區界、時間衰減、異常量價、急緩跌強度、自動魔王／重要性／增量尚未定義；分類NOT_VALIDATED、交易NOT_EVALUATED，全市場／換股／資金閉環及SQLite原事故根因未完成／未證實。
+
+## 下一步
+
+**工作模式**：依新手機清單實測新壓力頁（不要開舊technical或attempt頁），分開記錄觀察／回報／原檔核對；看真實五年圖確認用途與真正未定區間，不把工程測試或點線當核心認可。若有可重現錯誤，帶版本、股票／來源／分析日、操作、原截圖與JSON交Codex。公司行動／6日主證及未定規則亦如實保留，不能在Work Mode猜因子或填門檻。source／成品／證據直接更新同分支，不改main。
+
+完整三ZIP各自解壓到同一**新**資料夾，已有資產不需bootstrap。Git checkout才從root跑 `python3 codex/bootstrap_m1.py --hydrate-missing`，保留既有差異。若工作模式讀不到GitHub，明說限制，改讀完整三包，不把摘要當完整讀檔。
+
+---
+
+# 最新：左側價格／成交量高牆；單畫面18～24月、整體約五年（2026-10-18 10:59 台北）
+
+**Codex先讀 [本輪完整實作交接](M1_V019_LEFT_PRESSURE_WALLS_HANDOFF.md)**。使用同一dev/m1-v018-chart-annotations最新提交，不從main或舊ZIP覆蓋。本輪更新核心思想與工程要求，沒有新增程式／行情或測試，五年資料尚未取得；原主圖Android仍PARTIAL_EVIDENCE_OBSERVED。
+
+使用者新增：壓力一般隨時間遠而減弱，但異常價格／成交量高牆不能只因老而忽略；小整理區依當前位置形成小關卡，最高區是魔王關卡。強度關注區間量與其後下跌時間／急跌或整理緩跌。分開**成交量高牆／價格高牆**；不補衰減係數、異常門檻或急緩跌強弱方向。
+
+使用者明確要求日K一畫面可縮放容納約1.5～2年，整體約5年可回看，以免漏掉畫外更早大套牢區。分析範圍不能等於顯示視窗，資料不足須明示，畫外參照可定位。五年是新工程目標，不能再拿179／283根當達成，也不能拿五年局部最高冒稱歷史新高／沒有所有過往套牢區。
+
+策略保留以區間成交量判讀套牢量；數據層保留歷史成交量及區間，不稱已核實仍未解套持股數。日OHLCV不能編造分價籌碼。Raw／Adjusted／公司行動與完整歷史覆蓋限制必須保留；單一pivot不能冒充整區最高。
+
+下一步轉Codex，按交接優先取得免費官方五年日線及9/30後資料、實作18～24月日K縮放、五年瀏覽、畫外壓力提示／定位、兩種高牆的可追溯證據與已覆核1101焦點、右下角縮放鈕。未決策略不阻止已定工程，也不自設門檻；網路／來源受阻具體記BLOCKED，其他工程繼續。交付同分支source／成品／實測／最新交接，保留原引擎策略與庫／歷史／main。
+
+---
+
+# 最新：1101主圖焦點已裁決為①→④，量價分工已明確（2026-10-18 10:09 台北）
+
+先讀 [圖形裁決最新節](M1_V019_VISUAL_RULE_NOTES.md)、[主圖焦點交接](M1_V019_CHART_FOCUS_REFINEMENT.md)及[本例可讀契約](docs/visual-discussion/20261018_1101_user_reviewed_case.json)。仍在dev/m1-v018-chart-annotations，成品程式基準b50beeebe6d24e4dc4bd8d6c44df79ffc6c1ffe3；本輪沒有修改成品程式／原引擎策略／庫／歷史或main。
+
+使用者已答前輪問題：突破①值得觀察，因①附近量大，後續上漲要看增量；主要左側壓力自然移到④，該左區量不大，主要看價格能否突破。②③保留來源但不再同等突出。這是具體1101案例裁決，不是全市場自動參照法；不重問哪些左點該保留。
+
+保存獨立m1-user-reviewed-chart-case/0.1，人工覆核時間10/18與分析日9/30分開。可交Codex接來源吻合的**人工覆核焦點層**與右下角縮放／去碰撞UI，不冒稱原引擎自動重要性或買訊。增量基準／門檻／持續時間未定，顯示待觀察；不得自設必須過①日量或8/31最大量。
+
+來源新核實：①9/1量108,834,320，鄰近8/31量557,094,159；④1/29pivot26.85，附近1/27實際high26.95。不得把單一點價當整區最高，也不因本例就擅改研究引擎。壓力區邊界／自動選法仍未知，Raw與公司行動限制保留。
+
+新圖與資料：docs/visual-discussion/20261018_1101_price_volume_focus.html／data.json。全段／近期共用K量視窗；9/23量130,648,955、9/30量104,957,435標出；9/30是所給9/1之後首個收盤越過①之日，資料也在此日結束。沒有突破後K量，不能用9/23替代後續驗證；須補9/30以後真實來源。只做來源與語法／簡化DOM核對，無新真實瀏覽器、Android或下載測試；原主圖Android仍PARTIAL_EVIDENCE_OBSERVED。
+
+下一步轉Codex做已明確的本例焦點接入、縮放整理及有來源的9/30後行情擴充；免費官方來源若受網路限制，記實際BLOCKED，不造資料。Work Mode在取得真實後續圖後才釐清仍未定的增量／區邊界；不以待定細節阻止已定工程，也不為補進度發明策略門檻。三大目標及正式分類等未完成狀態保留。
+
+---
+
+# 最新：1101左側參照真實圖已提供，待圖形判讀（2026-10-18 01:03 台北）
+
+先讀 [主圖焦點交接最新節](M1_V019_CHART_FOCUS_REFINEMENT.md)。使用本分支最新提交；成品程式基準仍b50beeebe6d24e4dc4bd8d6c44df79ffc6c1ffe3。原主圖實機PARTIAL_EVIDENCE_OBSERVED、縮放右下角待Codex，與本輪討論圖分開。
+
+本輪直接讀較早實際上傳的1101完整研究JSON，重繪其179根Raw／原20、60日線及量；非假想圖，也不是本輪新主圖JSON驗收。9/9 OHLCV與手機讀值相符。圖與來源存docs/visual-discussion/20261018_1101_reference_focus*.html／json。四個高點僅為討論參照，不代表已認可重要性；圖索引①/②/③/④不沿用舊假想交易點語意。
+
+9/30收26.30高於9/1高26.10；低於4/10高26.40、2/25高26.65、1/29高26.85。當日最高26.70與收盤判斷分開，不將曾觸及當成收盤已過。沒有把三點合成正式壓力區，也沒有自動防守／買訊。
+
+**下一步Work Mode只問核心差異**：較早三個高點中哪些值得保留為這次上攻參照，或應看另一段？可多個、不強迫分類，不再重問既定收盤過／破規則。使用者「繼續」不是對這張新圖的認可。圖形判讀未答，先保留未知。
+
+本輪只有來源一致性／腳本語法與簡化互動檢查、資料圖檢視；未跑真實瀏覽器／Android，未改成品、策略、庫／歷史或main。其餘缺口保留。
+
+---
+
+# 最新實機回饋：直橫主圖已見，縮放位置可修；標記仍未達用途要求（2026-10-18 00:51 台北）
+
+先讀 [新版主圖Android紀錄最新節](M1_V019_TECHNICAL_CHART_ANDROID_ACCEPTANCE.md)及[縮放／標記焦點交接](M1_V019_CHART_FOCUS_REFINEMENT.md)。成品基準仍b50beeebe6d24e4dc4bd8d6c44df79ffc6c1ffe3，同一dev分支。此次只記實機證據、回饋與位置提案，沒有修改主圖程式或新測試。
+
+已實際讀取使用者直向／橫向兩張本機content://圖：1101 Raw／9/30分析、全段179根（1/2～9/30），K／量／MACD均可見，兩圖9/9游標讀值相同。使用者回報「是有成功」，記前輪操作的整體USER_REPORTED_SUCCESS，不把所有未描述細項逐一勾過。新版Android更新PARTIAL_EVIDENCE_OBSERVED；切股／基底、證據抽屜、原JSON、詳細效能等仍未測，不能沿用舊假想頁檔案。
+
+使用者要求**＋／−移至K線右下角的小按鈕**，這項已明確可交Codex直接修。另明確指出標記看不到重點、不夠簡潔：截圖確見候選帶近鄰／重疊、通用高低點與底部「事」疊字。不能只把標記變少就宣稱辨識用途通過，也不能任意以最近點或major組別當重要性。
+
+下一步仍Work Mode用這張真實1101釐清焦點結構；縮放與去碰撞等明確呈現工程可由Codex同步接手，不需一般工程再確認。未定核心不補門檻，原策略引擎／庫／歷史／main保留。沒有多年資料、分類／交易用途及SQLite根因等限制不變。
+
+下方「新頁全未測／尚無畫面」是前輪沿革，由本節與新實機紀錄更新。
+
+---
+
+# 最新接續：Work Mode開始新版主圖Android驗收（2026-10-18 00:08 台北）
+
+已核實指定分支HEAD就是 `b50beeebe6d24e4dc4bd8d6c44df79ffc6c1ffe3`，並按使用者順序實際讀取最新6份文件，另讀下載入口與SHA清單。以下Codex交付內容仍有效；本輪只更新實機引導，不改程式、原引擎策略／庫／歷史或main，也未重跑舊測試。
+
+第一輪直接下載新HTML→確認1101／Raw／2026-09-30直接見K→最早1/2→回近期→按鈕縮放／平移→直橫直。預期與證據欄見 [新版主圖Android紀錄最新節](M1_V019_TECHNICAL_CHART_ANDROID_ACCEPTANCE.md)。目前尚未收到本頁手機截圖、明確操作回報或JSON，仍NOT_TESTED；舊attempt頁證據獨立保留。
+
+後續由Work Mode接著驗收同步游標、切股／基底、點證據與實際上傳JSON，最後就真實圖確認用途，避免重做規劃或僅摘要。未實測不勾完成，多年資料仍不足；可重現缺陷／有來源的歷史擴充才交Codex。同分支續記證據。
+
+---
+
+# 最新交付：真實個股技術分析主圖 0.1（2026-10-17 Codex）
+
+已接續指定提交 `3dcfcf6534fe645781898eaa603e88a2b3bd3e9d`，仍用 `dev/m1-v018-chart-annotations`，main不改。新增獨立 `technical-chart-view/0.1`，不是改寫舊嘗試頁或宣告核心產品完成。
+
+**先下載 [新主圖成品與三個完整ZIP](deliveries/m1-v019-technical-chart-20261017/README.md)**。主頁位於 `股票系統M1_v0_18/technical_chart/generated/M1_v0_19_technical_chart.html`；完整ZIP解壓即可用，不必bootstrap。Git checkout先 `python3 codex/bootstrap_m1.py --hydrate-missing` 保留差異，再依 [主圖契約與重現命令](股票系統M1_v0_18/technical_chart/README.md)。[實測報告](股票系統M1_v0_18/technical_chart/validation_20261017/驗收報告.md)及 [新主圖手機步驟](M1_V019_TECHNICAL_CHART_ANDROID_ACCEPTANCE.md) 為本輪依據。
+
+開啟直接看到1101 Raw、明列固定2026-09-30分析入口，K／量／MACD共用時間窗及游標；可切股／基底／分析日、最早／全段／近期、縮放平移、手機手勢、逐日重播、點保存標記查原始證據與JSON下載。瀏覽不改分析日；回到游標日須明選。下載保留當時前綴及全部原歷史事件，各自標示來源／基底；不合併跨錨定數值。
+
+**真實歷史仍有限**：1101／2884各179根，2026-01-02～09-30；6488／8069各283根，2025-08-01～2026-09-30，後兩檔提供Raw及Adjusted候選。各組對提供的行事曆缺日／額外日0、OHLC／量缺值0，但不是完整官方日曆認證。1101／2884全部18個保存官方月回應SHA與OHLCV相同。沒有多年或9/30後資料，也沒有真實盤中；不以1490分析frame或假想圖冒充。公司行動／歷史公布時間限制保留，1101／2884沒有Adjusted。
+
+實際本輪：Python全套336通過，最後下載調整後主圖11項再測通過（不相加）；原Node介面模擬16檢查／18真實對照通過；新主圖真實Chromium87檢查／60精度下載通過；成品1490時點證據／前綴核對，原候選數值全等。桌面、390直向、844橫向、320窄屏及手勢已在雲端測，**不是Android實機**。新主圖Android NOT_TESTED；舊嘗試頁PARTIAL_EVIDENCE_OBSERVED紀錄原封保留。
+
+原引擎、策略、src、product_candidate原程式、SQLite、歷史結果及舊頁未改；只新增主圖／接入／測試／交付與更新說明。保存已確認結構仍是研究候選，未升格成已認可買點；生命階段／正式型態／重要性／自動左區或關卡未知。101／106未硬套真實股票，全市場辨識／換股／資金閉環、分類品質／績效及SQLite原事故根因仍未完成／未證實。
+
+**下一步工作模式**：協助使用者開新主圖，直→橫→直、看最早→近期、切股、點標記、下載JSON；分開記錄實際畫面、使用者回報、檔案核對與未測。討論真正未定的核心才用圖，別重問已決101／106。若有可重現缺陷或需擴充多年真實資料，交Codex，先確認免費官方來源／網路與公司行動證據，不改main或捏造資料。若工作模式無法讀GitHub，下載三個完整ZIP，明說實際讀到的檔案範圍。每次成果更新同一分支。
+
+可直接交接：
+> 接續 blue1998-glitch/Twstockai，分支 dev/m1-v018-chart-annotations 最新提交。先讀 CONTINUE_IN_WORK_MODE.md 最上方、M1_V019_LONG_HISTORY_CHART_HANDOFF.md 最新節、technical_chart/README.md、本輪驗收報告及 M1_V019_TECHNICAL_CHART_ANDROID_ACCEPTANCE.md。請引導我使用真實個股主圖，完成新版Android實機紀錄及用途回饋；不能沿用舊假想頁手機結果，不能把雲端模擬當真機。多年歷史仍缺，未決核心不補門檻；可重現工程問題交Codex，所有紀錄更新同分支，不改main。
+
+---
+
+# 最新主線：長歷史技術分析主圖＋機會疊圖，交Codex推進（2026-10-17 23:12 台北）
+
+先讀 [長歷史圖形主介面交接](M1_V019_LONG_HISTORY_CHART_HANDOFF.md)、[PROJECT_VISION最新要求](PROJECT_VISION.md)及[實機紀錄最新節](M1_V019_ATTEMPT_ANDROID_ACCEPTANCE.md)。仍使用dev/m1-v018-chart-annotations最新提交，main不改；既有成品程式基準709cde6。本輪僅文件／證據交接，沒有實作新頁或新工程測試。
+
+使用者回覆「成功」，附第二張手機直向截圖：102.50過101未過106；8500股、左區最高量未知，缺量不取部分最大值，符合預期。這是直接可見結果；使用者對前輪旋轉／來源切換指引的整體成功回報另記USER_REPORTED_SUCCESS，沒有逐項或橫向直接證據。無新JSON；原第7時點下載核對保留。Android仍PARTIAL_EVIDENCE_OBSERVED。
+
+**使用者明確提醒這些例子不是成品等級；目標是像元大app點開技術分析，切換看很久遠K線，同時把辨識出的機會標入圖形系統。** 假想規則例保留回歸，不能繼續以逐個驗收假想例取代成品工程。以K圖為主入口，真實長歷史瀏覽、量／MACD聯動、可追溯機會疊圖及證據點選為下一段；新嘗試頁目前沒有MACD，不能混稱已有。
+
+**下一步Codex**：依新交接核實現有真實日OHLCV範圍並建主圖，優先檢查1101／2884資料是否足用；沒有多年資料就具體列缺口，不拿假想或frame數冒充。沿用已認可規則，不發明自動關卡／型態門檻。未定核心可回Work Mode圖形裁決，不必等所有分類定義完才做已明確UI與接入。交付同分支source／成品／實測，保留原引擎策略歷史與main。
+
+下方舊「繼續Work Mode只補手機操作」為前輪沿革，由本節更新下一步；仍未測項目不勾完成，三大最終目標與SQLite等限制保留。
+
+---
+
+# 目前工作模式：收到首份實機截圖與JSON，已完成限定範圍核對（2026-10-17 22:55）
+
+先讀 [Android驗收紀錄](M1_V019_ATTEMPT_ANDROID_ACCEPTANCE.md) 最新節。新成品基準仍為 `709cde693612a842f7e77dd00d64d97551125539`；同一分支。本輪僅補證據與交接，不改程式、策略、歷史或main。
+
+使用者提供手機直向截圖及 `SYNTHETIC_explicit_101_106_7_attempt_candidate.json`。圖片已實際可讀，本機content://頁面／日K／橘色高點與區帶可見；附件中的圖片路徑錯誤字樣不是股票頁失敗證據。
+
+**上傳JSON是第7時點9/17 13:30完成日，現價100；已與成品該時點的預序列化下載逐位元組吻合，7觀察／8根K／12事件，原輸入重跑未修改核心結果全等。** 先前量先價、過101／106及跌回皆保留。原檔與機器核對紀錄存product_candidate/validation_attempt_android_20261017/。
+
+可更新：本機開檔／直向K圖為截圖可見，這一份JSON內容核對通過。不能更新成全機驗收：旋轉、來源切換、全螢幕、量圖／盤中圖與效能尚無充分證據；下載按鈕點擊過程未直接觀察，09:10／09:30畫面亦未取得。Android總狀態為PARTIAL_EVIDENCE_OBSERVED。
+
+**下一步仍Work Mode**：補直→橫→直，確認同來源／9/17時點保留；切到「假想來源｜左區量缺值」看舊結果清除，再選9/14 09:30讀取。應顯示左區最高量未知、101成立、106未成立；請使用者提供截圖與旋轉回報。無重現缺陷則不先交Codex亂改。
+
+下面「尚未收到附件／全部未測」保留為最初指引沿革，由本節更新已有證據；其餘真實行情／分類／績效／三大目標、1101／2884核心覆核及SQLite根因等限制仍保留。
+
+---
+
+# 目前工作模式：已讀 Codex 最新交付，開始 Android 實機驗收（2026-10-17）
+
+成品基準提交 `709cde693612a842f7e77dd00d64d97551125539`，同一分支 `dev/m1-v018-chart-annotations`。先讀 [Android驗收紀錄](M1_V019_ATTEMPT_ANDROID_ACCEPTANCE.md)。下方 Codex 接入交接與來源契約保留；本次只新增驗收追蹤與下載核對，不修改程式或main。
+
+Work Mode 已實際讀取最新交接／契約／原始報告、來源與實際新HTML；HTML 722186 bytes、SHA-256與交付清單相同。另將實際成品7例／28個view的完整輸入交給未修改核心逐份比對，結果與下載文字指紋一致。這是成品內容核對，**未重跑瀏覽器，也不是Android實機結果**。
+
+Codex原始紀錄：Python325通過，真實Chromium87檢查／56下載通過；本輪為文件／原始證據讀取，不能說Work Mode剛重跑了325或瀏覽器。7例均假想，不是真實全市場分析或分類績效完成。
+
+第一輪引導：下載單一新HTML→明確啟用→選假想101／106及09:10→讀取；101成立、106未成立、4500／8000。下一觀察09:30為8500／8000及量先價支持，106仍未成立；在此時點旋轉並下載JSON，待使用者交回截圖／原檔。
+
+**目前新頁手機開檔、操作回報、截圖、手機下載檔皆尚未取得，全部NOT_TESTED。** 詳細清單與09:10／09:30預期下載指紋已保存。不能把使用者說「Codex做完」當成手機驗收通過。
+
+下一步繼續 **Work Mode**，分開記錄使用者回報、直接畫面觀察、下載內容核對與未測；需要修程式時整理可重現證據交Codex。全市場辨識／換股／資金閉環、正式型態／生命階段、1101／2884核心覆核及SQLite原根因等未完成狀態不變。
+
+---
+
+# 最新接續：嘗試關卡／量先價已接入獨立候選畫面（2026-10-17 Codex）
+
+指定分支仍為 `dev/m1-v018-chart-annotations`；本輪接續 `45aaeecf92fabee80a4f2729328ae161e0d0203b`，main未改。**已完成這次明確授權的畫面、逐觀察重播及精確下載接入**；不將原核心測試或假想圖升格成真實分類／交易價值驗收。
+
+先讀 [M1_V019_ATTEMPT_CORE_HANDOFF.md](M1_V019_ATTEMPT_CORE_HANDOFF.md)、[新頁契約與命令](股票系統M1_v0_18/product_candidate/ATTEMPT_VIEW.md)、[本輪實測](股票系統M1_v0_18/product_candidate/validation_attempt_view_20261017/驗收報告.md)。原 [PROJECT_VISION.md](PROJECT_VISION.md) 與 [最新圖形裁決](M1_V019_VISUAL_RULE_NOTES.md) 持續有效。下面「UI尚未接入」是上輪歷史，不能拿來覆蓋本輪實作。
+
+## 本輪可使用
+
+- 新頁 `M1_v0_19_attempt_candidate.html`，獨立 `attempt-view-adapter/0.1`；原 `attempt-evidence-candidate/0.1` 本體、原策略、舊候選計算／頁面、schema及歷史庫未改。
+- 先勾選啟用，再明選來源／觀察時點；顯示來源檔明選近期高點／左區來源，沒有自動選區或代選最新。101／106條件、量先價／先後未知、盤中／完成日及後來跌回分開；不因放量直接寫成已過106，不抹掉原嘗試。
+- 當時K／量、僅本日已提供觀察點、事件時序、支持／反面／缺證；歷史片段與原股數單位明示。只有完成日線時盤中缺少，不補造。未接持倉／成交，不產生賣出指令。
+- 每個時點下載Python預先序列化的完整來源前綴／核心輸出／ID／基底與原精度；瀏覽器不重算分析或重寫大整數。新來源／新檔名／新schema與舊版分離。
+
+本輪來源為**7個假想工程例、共28觀察**；真實行情／盤中、自動圖形辨識、真實基底／歷史可得認證未接入。adapter會拒絕將未認證來源標為真實資料，不把缺選取資料送去全市場選股。全市場辨識、動能換股及資金閉環三大最終目標仍未完成。
+
+## 實際驗證
+
+- **325項Python全套通過**：原270＋原候選16＋上輪核心24＋本輪接入15；歷次重測不加總。
+- 實際匯出成品與未修改核心逐前綴28時點核對通過；截短／改未來不改舊view／下載／事件ID。84個既有受保護檔案SHA不變。
+- 新頁真實Chromium桌面／手機模擬 **87檢查、56次原始位元組下載核對通過**，含重播、條件分離、量缺少／先後未知、原精度、canvas／DPR、單指原生捲動、全螢幕與旋轉；JS錯誤／外部請求／橫向溢位未見。第一輪高速下載逾時保留為FAIL診斷，最終以150ms節奏重跑全部下載，沒有減少案例或放寬斷言。
+- Android本機開檔／實機效能與操作仍NOT_TESTED。分類NOT_VALIDATED、完整交易資格NOT_EVALUATED、強勢延續NOT_CLASSIFIED、勝率null；原SQLite事故根因NOT_ESTABLISHED，326人工覆核UNREVIEWED。新頁不借用舊66／48或72下載報告。
+
+## 下載與繼續
+
+[最新成品入口](deliveries/m1-v019-attempt-view-20261017/README.md)：新單頁小ZIP、獨立HTML／JSON、三個完整離線ZIP、檔案指紋、實測／解壓／GitHub下載核對。完整三包各含部分檔案，解壓至同一資料夾；候選新頁位於 `股票系統M1_v0_18/product_candidate/generated/`。Git checkout才需root `python3 codex/bootstrap_m1.py --hydrate-missing` 保留修改補缺資產，完整離線ZIP不需舊包或bootstrap。
+
+**下一步工作模式對話**：用新頁已接入的假想例確認呈現是否符合原圖含義，並引導新版Android實測；真正未決核心再用圖釐清，不重問101是否必須等106或一般工程授權。原1101／2884案例、正式型態／生命階段／重要性與持倉／資金規則仍保留未決，不擅補閾值。有明確定義或可重現程式問題後回Codex。若工作模式無GitHub工具，須明說未讀source，改用三個完整ZIP，不把摘要當完整讀取。
+
+可直接交接：
+> 請使用 blue1998-glitch/Twstockai 的 dev/m1-v018-chart-annotations 分支，先讀 CONTINUE_IN_WORK_MODE.md 最上方、M1_V019_ATTEMPT_CORE_HANDOFF.md、PROJECT_VISION.md、M1_V019_VISUAL_RULE_NOTES.md 及 product_candidate/ATTEMPT_VIEW.md／validation_attempt_view_20261017/驗收報告.md。101／106與量先價已接入假想候選頁；請用實際開啟的新頁檢視原圖含義與逐時點證據，協助Android實測。分開記錄使用者回報、實際觀察、檔案核對與未測項目。僅對真正未定核心用圖討論，不自行發明門檻、不把工程測試當策略完成；有明確規則／可重現程式問題後交Codex。成果更新同一分支，不改main。
+
+---
+
+## 以下為接入前的交接沿革
+
+# 最新接續：101／106與量先價獨立核心已實作，可交Codex接入畫面（2026-10-17）
+
+**先讀 [M1_V019_ATTEMPT_CORE_HANDOFF.md](M1_V019_ATTEMPT_CORE_HANDOFF.md)**，再讀最新 [圖形裁決](M1_V019_VISUAL_RULE_NOTES.md)。本輪新增可執行程式，不再只是討論筆記；仍在 dev/m1-v018-chart-annotations，不改main。
+
+使用者21:39已確認：越過101可先嘗試；量先超過左側104～106區的最高量是提高成功機會的支持，成功仍看後續實際價格；越過106是另一個新嘗試，延續趨勢可成強勢股。不能規定一定先過106才允許101，也不虛構勝率或固定延續門檻。
+
+## 已完成
+
+- 新純核心 product_candidate/attempt_evidence.py，版本 attempt-evidence-candidate/0.1；標準Python、無UI／資料庫／API依賴，只有明確呼叫才啟用。
+- 101／106分開記價格子條件；左區來源明選、最高量精確比較；量先價與順序未知分開；盤中／收盤／後來跌回追加保留；來源、指紋、原精度可讀回。
+- 契約、假想輸入、7 frame／12事件實際CLI輸出、新核心測試及驗收報告已保存，路徑見新交接。
+- 最終新測試24＋原候選回歸16通過；CLI讀回吻合。這40項是工程驗證，不是核心交易績效通過，不與舊286相加。
+
+## 界線
+
+人工選關卡／左區，不是自動辨識；整體資格NOT_EVALUATED、分類NOT_VALIDATED、強勢延續分類未做、勝率未校準。原引擎／策略／schema／歷史庫／舊HTML保留，既有網頁尚未接新核心。沒有新瀏覽器／Android／真實盤中／績效測試；SQLite原事故根因未知。三大最終目標與既有1101／2884核心覆核仍未全部完成。
+
+## 下一步
+
+**可轉Codex進行已明確的整合工程**，直接依新交接接入獨立候選畫面與重播／下載，不必再問101／106是否可作嘗試或一般工程許可。不得由瀏覽器重算分析，不由日OHLC編造盤中，不把來源未選完整的資料自動升級買訊。真正未決核心才回Work Mode用圖釐清。
+
+下方舊「目前只更新圖與文件」及待答問題保留作歷史，以上最新實作與使用者裁決優先。
+
+---
+
+# 最新接續：向左擴大日線，釐清舊交易區對進場的影響（2026-10-17 21:26 台北）
+
+先讀 [M1_V019_VISUAL_RULE_NOTES.md](M1_V019_VISUAL_RULE_NOTES.md) 最上方。使用者已確認前圖日線過 101 有可買依據，但需再往前看更多日 K，確認左側是否有套牢賣壓。前輪「日線是否有理由」已回答，不重問。
+
+使用者要求少重複理解，直接繼續下一個核心問題；若已足以達成專案目標，可自主建構。已明確的呈現／工程細節不需逐項請准，未決交易規則不能冒稱獲准。
+
+本輪新增 [更長日線討論圖](docs/visual-discussion/20261017_left_history_supply.html)：保留原 27 根歷史 OHLC／量與當日路徑，向左新增 18 根，左側 104～106 曾較大量交易，其後跌回再回升；近期 A 101、當下 10:00 價格 102。圖上顯示到 104 的距離約 +1.96%，不當成報酬預測。所有數字為假想；較大量交易不直接證明當前套牢持有者或壓力強度。完整序列與計算見來源。
+
+**當前唯一待決**：這段更早的交易歷史，如何影響 102 的進場判斷？請直接指圖，不預設一律禁買、一定過歷史最高才買，或固定幅度／天數規則。原突破事件保留。
+
+已讀現有 viewer 源碼，原版已有可用歷史／目前視窗範圍與全範圍操作，不能宣稱本輪剛新增。日線自動壓力辨識及資格影響仍需核心判讀；不在 UI 亂補引擎結論。
+
+本輪只保存裁決、新圖來源與交接，候選 App／引擎／策略／歷史／main 未改。僅做示意語法及簡化 DOM 切換檢查；沒有實際瀏覽器、Android、分類或績效測試。其他未完成項目維持。
+
+下一步繼續 **Work Mode**，直接看左側交易區的圖形問題；明確部分自主處理，核心足夠後再交 Codex。
+
+---
+
+# 當前接續：已展示假想日線／盤中聯動圖，等待日線判讀（2026-10-17 21:16 台北）
+
+讀 [M1_V019_VISUAL_RULE_NOTES.md](M1_V019_VISUAL_RULE_NOTES.md) 最新節及 [討論圖來源](docs/visual-discussion/20261017_daily_intraday_context.html)。本輪使用者說「好」是授權繼續製作，沒有批准尚未看過的新圖。
+
+助手已提供 27 根假想日 K＋今日暫時 K、5／20 日均線、日成交量、MACD／OSC及對應盤中路徑。A 101、B 92、C 100.50 為示意標記；昨收 100，今日 09:10 首次過 A 至 101.50，10:00 為 102（+2%），此前高點 103（+3%）。可切換 09:10／10:00，今日 K、累計量與指標只用截至當時資料，並截去盤中未來段。
+
+**下一個核心問題只有日線背景是否已提供參與理由**，請使用者直接指圖上的關鍵位置或缺證；不是讓使用者再次單看盤中買不買。不將助手標記、今日過 A、均線或 MACD 自動視為買點或正式型態；缺更長背景時補圖。
+
+全部數字為假想；今日量累計與歷史全日量不可當等時量比較；MACD 的示意初始化與暖機說明見最新筆記，不改原引擎。沒有真實盤中資料配對，不宣稱新圖已通過策略／分類／績效驗收。
+
+僅做示意腳本語法及簡化 DOM 前綴切換檢查，沒有實際瀏覽器、版面或 Android 測試；候選 App、引擎、策略、歷史與 main 未改。既有未完成事項不變。
+
+下一步繼續 **Work Mode，看日線＋盤中聯動圖**；取得核心判讀後再交 Codex。
+
+---
+
+# 最新接續：先看日線脈絡，再看盤中進場與回吐風險（2026-10-17 20:53 台北）
+
+先讀 [M1_V019_VISUAL_RULE_NOTES.md](M1_V019_VISUAL_RULE_NOTES.md) 最上方使用者最新裁決。下方兩種回吐圖已獲回答，不再列為待回答。
+
+- 兩圖要不要買都要回到日線，不能單靠盤中折線。
+- 上圖（+3% 回到 +2%）沒有明顯盤中必須進場處，除非日線本身已有進場依據；否則當天沒有明顯需要干預的理由。
+- 下圖（+8% 回到 +2%）回落過大，不宜新進場。即使 X 仍高於 A，也不因此自動合格。
+- 假如已在下圖橘色色帶區進場，則承擔隨後回落風險；這是假設，不是真實成交回報，也不是已批准立即出場／續抱等處置。
+- 不把示意回落 5.56% 凍結成門檻。原 P／U／V 及 X 個案裁決保留，但不得外推成無日線脈絡的通用買訊。
+
+**下一步繼續 Work Mode**：日線背景與對應盤中圖一起討論，附價格／百分比／時間尺度。先交代日線為何值得參與，再評估盤中當下是否仍值得承擔；日線有依據不自動抵銷盤中反證。新進場、已有持倉、假設成交及實際成交分開。
+
+本輪沒有新增聯動圖或真實日線／盤中資料配對。真實案例如缺盤中序列，明確標缺少，不用日 OHLC 合成歷史；假想雙尺度案例則兩者都標示意。盤中時點不得偷用當天最終 K、量或 OSC。不得繼續只換盤中折線反覆問買不買。
+
+詳細待實作接受條件已記入最新筆記。未改策略、引擎、歷史或 main；未做新應用、績效或 Android 實機測試。日線進場必要條件、回吐幅度的背景判斷與已持倉處置仍待逐圖釐清，其餘原有未完成事項保留。
+
+---
+
+# 當前接續：等待有尺度的兩種回吐圖形裁決（2026-10-17 20:47 台北）
+
+讀 [M1_V019_VISUAL_RULE_NOTES.md](M1_V019_VISUAL_RULE_NOTES.md) 最上方。本輪使用者僅說「繼續」，未增加策略結論。助手新增對照：昨收 100、A 101、10:00 X 102 均相同；同為 09:45 見高、15 分鐘後回到 X；小幅高點 103（+3%）回吐 0.97%，大幅高點 108（+8%）回吐 5.56%。同一百分比刻度，數字與時間均是假想。量／OSC 未設定，不宣稱其他未提供證據完全相同。
+
+**核心答案待定**：兩個 X 是否同樣沒關係，還是較大回吐會使判讀／處置提前改變；由使用者直接指圖，資訊不足可指出要補什麼。不預設大幅例轉弱、出場、百分比停利或新防守，也不重問前輪原 X 已答結論。
+
+兩條完整示意序列及條件已保存於最新筆記。僅更新圖與文件，未改策略／引擎／歷史／main；示意語法和百分比已核對，沒有新增應用、績效或 Android 實機驗收。其餘未完成項目維持。
+
+下一步繼續 **Work Mode**，看圖裁決後再交 Codex，不將尚未回答的例子實作成正式規則。
+
+---
+
+# 最新接續：X 高於 A 本例沒關係；以後圖形必須附漲跌幅尺度（2026-10-17 20:32 台北）
+
+先讀 [M1_V019_VISUAL_RULE_NOTES.md](M1_V019_VISUAL_RULE_NOTES.md) 最新段落。使用者已回答上一輪 X：這是盤中，仍在原 A 高點上，所以本例沒關係；不把跌出右側平緩區自動當減碼／退出或 A 防守失敗。
+
+使用者要求更準確討論必須加入盤中漲跌幅。助手本輪補上明示假設的昨收、百分比縱軸、V／X 價格與相對昨收漲幅、高點到 X 回落幅度。假設昨收 38.50、A 39.00、V 41.45（+7.66%）、X 40.25（+4.55%），高點回落 2.90%。這些是新補的假想尺度，不是實際資料或使用者認可的閾值。高點回落與漲幅縮減的百分點分開；局部圖不冒稱全日振幅或真實時間速度。
+
+下方 20:26 所寫 X 尚未判斷，現由本節更新。P／U／V、收盤過／破、原防守規則繼續保留；不任意上移防守，不推論所有幅度均安全。
+
+本輪只更新示意圖與交接，未修改策略／引擎／歷史／main；示意百分比及腳本語法已核對，但沒有新增應用、績效或 Android 實機測試。其餘原有未完成項目不變。
+
+下一步繼續 **Work Mode**，用有尺度的圖形討論；若要比較幅度造成的影響，另畫固定背景的具體案例，不先逼使用者訂數字門檻。
+
+---
+
+# 當前接續：用 X 圖釐清上方平緩區受破壞的含義（2026-10-17 20:26 台北）
+
+先讀 [M1_V019_VISUAL_RULE_NOTES.md](M1_V019_VISUAL_RULE_NOTES.md) 最上方。P／U／V 已確認，不重問是否可買。本輪只新增反例：沿用共同前綴，V 後回落到 X，X 跌出右側較高平緩區但仍高於原 A／C 關卡；圖停在盤中 X，沒有畫未來。
+
+**等待使用者判讀，尚無新核心結論**：X 是否足以撤回或調整上方籌碼穩定的判斷；若單靠價格不足，需補何種量、OSC、時間或其他證據。右側線下緣是否為新防守／警示仍未定，不強迫分類或出場，不將 X 當作原 A 關卡已失守。
+
+圖為假想、P 前局部放大，沒有實際量／OSC／時間資料，不能冒稱完整個股分析。僅更新圖形討論及接續紀錄；未改策略、引擎、歷史或 main，未執行新的工程／績效／Android 實機驗收。實作及實機待辦沿用下方記錄。
+
+下一步繼續 **Work Mode，看圖討論 X**；先取得核心判讀再交 Codex，不預設使用者答案。
+
+---
+
+# 最新接續：U 已可進場，V 再確認且成本更高（2026-10-17 20:21 台北）
+
+先讀 [PROJECT_VISION.md](PROJECT_VISION.md) 與 [M1_V019_VISUAL_RULE_NOTES.md](M1_V019_VISUAL_RULE_NOTES.md) 最上方最新裁決。維持圖形先行，由助手轉成形式化需求；本階段繼續 **Work Mode**。
+
+本輪使用者已回答新增較高平緩線案例：
+- P 越過左側 A 關卡即已有進場依據。
+- U 在右側平緩區內回升，本身可買，不必等待 V。
+- V 再確認一次，也可買，但進場價格與成本更高。
+- 盤中價格持續變化，因此在各時點持續重估風險與報酬；更多確認不能直接等同更佳機會或更高實證勝率。
+- 不得把右側線下緣自動當成新防守；不以未來 V 回填 U 當時的判斷。
+- 本新增平緩區案例不改寫前輪「純直拉原圖只有 P」的個別裁決。下方舊紀錄所寫 U／V 尚待判斷，現已由本節更新。
+
+本輪僅記錄需求並更新假想示意圖，未修改策略、引擎、歷史結果；未跑工程／績效／Android 實機測試。既有工程測試通過紀錄不代表本輪規則已實作或核心用途已獲認可。生命階段、正式三種整理型態、主要關鍵低點及重要性判斷仍須依原規格與保存案例逐圖釐清；1101／2884、實機驗收與 SQLite 原事故根因仍維持未完成狀態。
+
+交接實作應保留 P／U／V 的當時證據與時序，分開呈現進場依據、確認增加、價格成本與風險報酬。詳細接受條件及未決界線見最新圖形裁決。更新同一獨立分支，不改 main。
+
+---
+
+## 以下保留前輪接續紀錄
+
+# 最新接續：圖形進場與心理執行已區分（2026-10-17 20:00 台北）
+
+先讀 [PROJECT_VISION.md](PROJECT_VISION.md) 與 [M1_V019_VISUAL_RULE_NOTES.md](M1_V019_VISUAL_RULE_NOTES.md) 最新段落。往後保持圖形先行，由助手形式化，不重開文字門檻問卷。
+
+本輪使用者明確確認：
+- 原純直拉示例只有P。
+- 回測再推示例有P，以及Q之後「已重新向上」的機會；Q低點本身不是進場點，R仍可但偏好已成立回升機會中較早參與。
+- Q附近若平緩一段時間可視為線；右線高於左線可作籌碼穩定的圖形判讀，需保存點轉線的動態時間與原事件。
+- 直拉難下決心、回測較安心是人類心理對執行的影響，不代表哪種型態績效更好。股價動態平衡與新資料才逐案證明／推翻判斷。
+
+最新對話圖回填已確認位置，並新增「直拉後形成較高平緩線」的獨立情境，分別停在U（線內回升）或V（越過右線上緣）。**U／V是否構成新機會尚未回答，不准預設合格。** 原純直拉只有P的判讀維持；新增區域如產生新結構，另行討論。
+
+**下一步繼續工作模式看圖**，釐清新平緩區情境的U／V及所需上升證據，再由助手轉成候選規則與正反例。不能用之後看到的上升，回填成Q最低價當時已能確認進場。
+
+本輪僅更新圖形討論與文件，無分析程式、歷史結果或main修改；沒有新Android、應用或績效測試。示意圖的語法／點位檢查不算上述測試。
+
+---
+
+## 前輪：完成目標與圖形溝通方式已明確（2026-10-17 19:35 台北）
+
+**先讀 [PROJECT_VISION.md](PROJECT_VISION.md)**。使用者明確指定三項完整成品目標：全上市櫃普通股圖形辨識選股；機會成本與單位時間報酬的動能換股抉擇；資金進出及再配置閉環，累積時間複利效果。這些是長期完成目標，不能把現有少量樣本或工程測試當整套完成。
+
+往後策略問題直接用圖形，UI用介面模擬圖。助手負責把認可的圖形判讀轉成必要條件、反證、數學／演算法與驗收案例；不用大量文字、公式或閾值問卷要求使用者代做工程。
+
+此目標與合作方式已實際保存至本檔、PROJECT_VISION與root AGENTS的必讀指引。本環境無直接寫入帳號「已儲存記憶」的工具，不能把專案保存冒稱帳號記憶修改。
+
+**下一步繼續工作模式**：以盤中簡圖比較相同背景下「越過後直接拉高」與「越過後回測再推」，請使用者直接指出開始考慮進場的位置與圖形理由；此比較尚未得到使用者答案，不能預設偏好回測或追價。圖為假想，不是實機測試或已認可交易規則。
+
+本輪只新增長期目標文件、更新交接與圖形討論，未改分析引擎、策略程式、數值門檻、歷史庫或main；未執行新應用／Android測試。
+
+---
+
+## 前輪：收盤事實已釐清，接下來討論盤中決策（2026-10-17 19:11 台北）
+
+先讀 [M1_V019_VISUAL_RULE_NOTES.md](M1_V019_VISUAL_RULE_NOTES.md) 最上方最新澄清。
+
+使用者已確認：對所選A／C較高價關卡，收盤過了就承認當日突破，之後收盤跌破該上移防守就記本次失敗。紅K、量、OSC不否決已發生的收盤價格事實；不能加入兩日或未來續漲才算等額外門檻。之前突破與後來失敗分別留存，不回寫歷史。
+
+真正未決的是盤中下單時如何研判：價格仍在改變、當日最終收盤未知。盤中觀察、收盤事實、交易資格分開；量／OSC等在盤中行動的角色仍待用圖討論。這次不再追問「量OSC不過能否承認收盤突破」。尚無盤中真實序列，示意圖不是日OHLC還原。
+
+同一獨立分支、main與歷史引擎／庫不改。舊候選區域的兩筆規則保留為歷史結果，新收盤價格事件需獨立定義與版本，不拿舊規則推翻使用者這次明確定義。本輪只更新筆記及對話簡圖，未改分析程式、未做應用／Android測試。
+
+**下一步繼續工作模式，用盤中圖釐清出手前的結構／價量／動能證據與反證；明確後再交Codex。**
+
+---
+
+## 前輪：用簡圖釐清核心判讀（2026-10-17）
+
+先讀 [M1_V019_VISUAL_RULE_NOTES.md](M1_V019_VISUAL_RULE_NOTES.md)。使用者要求先透過簡圖討論，圖是系統核心；目前繼續工作模式，暫不轉回程式開發。
+
+本輪使用者明確指出：整理中的防守是B，上方關卡取A／C的最高價；向上推進後防守上移到該價；跌回其下標示原防守失守。先前助手把D直接視為防守的畫法已被更正。價格過高後仍看紅K長度，示例量與OSC未過前高。
+
+這些只確認本簡圖的關係，沒有批准全域低點選法、生命階段／三種整理型態、買賣資格或數值門檻。優先尚待釐清：量與OSC未過前高時，較長紅K可否支持有效突破／推進，或仍須等待確認；不自行補成硬性全部必過或單K即買。
+
+重新呈現假想圖及保存判讀紀錄；未改引擎、策略、歷史庫或正式成品，未做新Android實機測試。圖的語法／示意值檢查不等於應用測試。明確規則取得後再交Codex，以獨立候選實作。
+
+---
+
+## 前輪接續：v0.19 核心規則討論稿與案例核對
+
+分支仍為 `dev/m1-v018-chart-annotations`；本輪來源提交為 `54a3ea31aae6c009937c64be7a296212b5bbd7cf`。原候選成品及雲端測試保留，本輪沒有新增應用程式版本或改策略。
+
+請先讀 [M1_V019_RULE_REVIEW_WORKING.md](M1_V019_RULE_REVIEW_WORKING.md) 與 [保存案例摘錄](M1_V019_CASE_REVIEW_EVIDENCE.json)，再接續下方原 v0.19 交接。
+
+本輪實際完成：依序讀指定七份文件及原規格；取得來源分支並成功hydrate缺檔、保留既有差異；下載完整candidate.json並核對公布SHA；抽取1101／2884共10個指定保存時點，核對選取前綴與日期範圍。這些不是重跑整套應用測試或分類驗收。
+
+新增具體觀察：
+- 1101 9/30的「高點降低」只指最近兩個已確認主要點26.40→26.10；當日最高26.70仍pending、收盤26.30正挑戰舊區域。舊轉折關係與新上攻必須並列。
+- 2884 9/30柱值從前一筆約-0.56到-0.71，是負柱擴大；7/1的32.80舊主要低點未失效，不能單獨證明目前回檔健康。
+- 已整理可直接由既有規格保留的約束、生命階段語意草案、關鍵低點用途分層提案、三型共同條件、10項驗收規劃與Android操作清單。語意草案及用途分層尚未獲使用者確認；三種整理正式名稱／條件仍未找回，不選助手暫名冒充。
+- 客觀呈現缺口已定位至context.py／viewer.js：確認點與現價的範圍標示、負MACD變化分列、遠期防守參照用途、四捨五入後相等但原精度不同的關係說明。只有交接，尚未修程式。
+
+**下一步繼續工作模式**：先取得使用者對「較大波段防守與近期操作防守分列」的核心裁決，以及原三種整理的名稱／描述；同時引導新版Android實測。尚無新版實機截圖、操作回報或下載檔，實機全部NOT_TESTED。具體規則明確後再交Codex實作，未測項目不可標記PASS。
+
+---
+
+## v0.19 原實作交接（2026-10-17 Codex）
+
+**目前分支仍為 `dev/m1-v018-chart-annotations`，main 未合併。** 專案目錄保留 `股票系統M1_v0_18/`，新候選 source 在 `product_candidate/`。以下舊 v0.18 狀態是歷史；本節為最新實作狀態。
+
+本輪先建立 [M1_V019_REQUIREMENTS_TRACE.md](M1_V019_REQUIREMENTS_TRACE.md)，再補確定缺口：原保存高低點／波段／區域的上下文、支持／反證／缺證、逐日連結與重播、任意可用時間區間及價格尺度、共用時間軸K線／股數量／獨立MACD候選。圖形與原始事件不是完成標準；預設呈現主要狀態，完整次級事件可展開。未改原引擎、策略、門檻、schema、歷史庫及舊頁。
+
+**核心產品用途仍未獲驗收。** 五種生命階段、正式修正／三種整理／盤中點線與長紅牆／反彈失敗條件尚缺定義，保留UNKNOWN；量價不能證明籌碼集中。最新確認主要低點只是一個候選參照，不代表重要性判斷已完成。分類NOT_VALIDATED、交易資格NOT_EVALUATED、SQLite事故根因NOT_ESTABLISHED、326人工覆核UNREVIEWED。
+
+實際驗證：286 Python通過；最後純顯示調整後16項候選重測通過；1490個真實保存frame及12個截短前綴通過；最後HTML真實Chromium66檢查、48次精確JSON下載通過，含桌面／手機模擬、拖曳／雙指縮放、原生捲動、任意日期、價格尺度、共同游標、全螢幕及旋轉。Android實機仍NOT_TESTED。詳細執行範圍、原始log、hash及截圖見 [候選驗收報告](股票系統M1_v0_18/product_candidate/validation_20261017/驗收報告.md)，不要把舊72下載或未重跑項目混成本輪。
+
+成品入口：[deliveries/m1-v019-context-20261017/README.md](deliveries/m1-v019-context-20261017/README.md)。包含單頁小ZIP、獨立HTML／候選JSON與三包完整離線專案。三包各自含部分檔案，解壓到同一資料夾即可；完整資產已內附，不需舊ZIP。Git checkout才需要先跑 `python3 codex/bootstrap_m1.py --hydrate-missing`，保留修改並補資產。
+
+**下一步使用工作模式對話**：先讀本入口、原 [M1_V018_PRODUCT_GAP_HANDOFF.md](M1_V018_PRODUCT_GAP_HANDOFF.md)、[需求對照](M1_V019_REQUIREMENTS_TRACE.md)、[具體核心待定案例](M1_V019_CORE_RULE_DECISIONS.md)、候選README及驗收報告。針對1101混合高低點與2884結構仍在但動能轉弱的具體時點，釐清階段／修正、主要關鍵低點及三種整理的必要／排除／失效條件；不自行添加門檻。可引導新版Android實機測試並保留實際證據。定義明確或有可重現程式錯誤後回Codex。工作模式沒有GitHub工具時，必須明說未讀到source，改使用三個完整ZIP，不能只讀摘要就說已取得專案。
+
+可直接給工作模式：
+> 請讀取 blue1998-glitch/Twstockai 的 dev/m1-v018-chart-annotations 分支，先讀 CONTINUE_IN_WORK_MODE.md、M1_V019_REQUIREMENTS_TRACE.md、M1_V019_CORE_RULE_DECISIONS.md 及 product_candidate 的README／驗收報告。v0.19是獨立工程候選，不代表核心用途通過；請根據具體保存案例與原規格整理生命階段／修正、主要關鍵低點及三種整理的必要條件與反證，缺少定義保留未知，不擅定門檻。協助我實測候選頁Android，分開記錄使用者回報、實際觀察、檔案核對與未測項目；保留原策略與歷史結果。成果更新同一獨立分支；定義明確後交回Codex實作。
+
+---
+
+## 以下為 v0.18 交接沿革
+
+# 工作模式／Codex 接續入口
+
+目前版本：**M1 v0.18 結構標記版**。來源儲存庫為 blue1998-glitch/Twstockai，最新接續分支為 `dev/m1-v018-chart-annotations`。請明確選此分支；main 尚未合併這次成品。
+
+## 2026-10-17 最新方向修正：核心用途未獲使用者認可
+
+使用者實測後認為標記欠缺重點，未圍繞生命週期與動態股價平衡，並指出 K 線縮放、成交量及 MACD 缺口。下一步改為 Codex 規格追溯與修正，不再限於完成舊頁 Android 操作驗收。
+
+**先讀 [M1_V018_PRODUCT_GAP_HANDOFF.md](M1_V018_PRODUCT_GAP_HANDOFF.md)**：包括使用者回饋、兩份下載 JSON 的實際核對、分析主線、可實作工作及驗收條件。兩份 JSON 各 317193 bytes，逐位元組相同；此不等於全部實機項目通過。沒有新程式交付或新應用測試。本次只更新文件；原引擎與歷史結果保留。
+
+下列雲端成果仍有效，但不代表核心分析用途已通過使用者驗收。
+
+## 歷史已完成
+
+- v0.18 原手機版完成真實 Chromium HTTP 驗收，72次精確 JSON 下載核對通過。
+- 新結構標記頁在日線顯示原保存的主要／次級轉折候選與支撐／壓力區候選；可點選或用清單查看原 ID、發生／首次觀察／確認日期及區域狀態。
+- 標記頁也完成72次真實 Chromium下載核對，包括桌面、觸控手機模擬、旋轉、canvas、兩種週月口徑與精確 JSON；不是實體 Android 驗收。
+- 本次270項Python、1項bootstrap整合、46項相關Node檢查通過。原引擎、策略、門檻、資料庫、歷史數值與舊頁不變。
+- 原SQLite事故根因仍NOT_ESTABLISHED；分類NOT_VALIDATED，交易資格NOT_EVALUATED，326筆人工覆核UNREVIEWED。
+
+## 讀取順序
+
+1. 根目錄 AGENTS.md。
+2. 股票系統M1_v0_18/AGENTS.md、README.md、docs/CODEX交接.md。
+3. 股票系統M1_v0_18/docs/結構標記顯示契約.md。
+4. 股票系統M1_v0_18/annotations/validation_20261017/驗收報告.md。
+
+完整程式與證據直接在本分支可審查。下載入口為 `deliveries/m1-v018-annotations-20261017/README.md`；該目錄包含單頁小ZIP、獨立HTML、三個完整ZIP及SHA-256清單。成品本體的已驗證提交為 `5315979bddbdcf1972ac419ffabbeaa3c909f038`；後續交接文件更新不代表重跑應用程式測試。
+
+若工作模式沒有讀取GitHub的工具，必須明確告知尚未讀到程式，改請使用者提供此目錄的三個完整ZIP；不能把讀到這份摘要當成讀完完整專案。三包各自含部分檔案，解壓到同一資料夾即可，無需舊版ZIP。
+
+## 舊 Android 驗收計畫（未測範圍保留，後續範圍以最新修正交接為準）
+
+工作模式可引導使用者在實體Android下載單頁小ZIP、解壓並以瀏覽器開啟「日週月研究對照_結構標記_v0_18.html」。先選TWSE / 1101、Raw、2026-09-30、structure-0.3-research日線版本及可用週月版本，再讀取。
+
+檢查實機開檔、原生選單、點／色帶及證據清單、主要／次級切換、有效／歷史區域、60／130筆／全部、直橫向旋轉，以及實際下載JSON的內容。根據使用者實測、截圖或下載檔，分別記錄已觀察、使用者回報、獨立核對與未測範圍；不把模擬測試視為實機完成。
+
+8069 Raw所選日期沒有有效主要區域，顯示0是保存結果。Adjusted日線沒有保存還原OHLC，仍只畫原MA及同錨定結構，不能造K。兩張範例圖沒有授權新增長紅K壓力、反彈失敗、平臺突破或買賣規則。
+
+若實機出現可定位的程式問題，整理相同分支、選取條件、重現步驟、預期／實際畫面及證據，轉Codex診斷並作必要可逆修正。本輪已有使用者對產品用途的明確負面回饋，允許依最新修正交接處理必要功能缺口；此不授權自行凍結新策略或隱藏未測範圍。
+
+## Codex 準備與交付
+
+從這個分支的repository root執行 `python3 codex/bootstrap_m1.py --hydrate-missing`，保留來源修改並補缺歷史資產。再進入 股票系統M1_v0_18，依交接匯出標記頁及執行與變更相關的檢查。預設strict bootstrap遇到合法source差異會拒絕，不能刪除或覆寫修改來壓過指紋。
+
+使用者已常態授權之後成品直接更新至本GitHub儲存庫的獨立分支；每次提供分支／提交、交接說明、實際驗收結果與可下載成品，讓兩種模式沿用同版。main保留，除非另有明確指示。此授權不等同部署網站、發布雲端環境、付費、交易或發送訊息。
+
+目前下一步使用 **Codex**，先讀 M1_V018_PRODUCT_GAP_HANDOFF.md，完成核心要求追溯並進行可逆修正；具體核心策略或重大架構未決時回工作模式處理。新版 Android 全面驗收仍未完成，不能用附件下載成功代替。

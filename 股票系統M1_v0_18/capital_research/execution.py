@@ -13,9 +13,9 @@ from .transition_risk import inspect_risk
 from .close_clock import close_record
 from .eligibility import expired_entry_reasons
 from .fact_lineage import source_snapshot, history_at, asset_issues, first_issue_at
-from .reassessment_history import declaration_sources, reviewed_tokens, make_attempt
+from .reassessment_history import declaration_sources, reviewed_tokens, make_attempt, check_request_retry
 
-VERSION = 'capital-execution/0.7'
+VERSION = 'capital-execution/0.8'
 
 
 def _refusal(reason):
@@ -226,12 +226,19 @@ def _simulate(job):
         # Funding is not a reauthorization. A new decision must bind the actual
         # prior-close account, original fill path and explicit order cancellations.
         for review in job.get('reassessments',[]):
+            prior=next((a for a in reassessment_attempts if a['id']==review['id']),None)
             o=next((o for o in orders if o['id']==review['order_id']),None)
+            if o is None and prior is not None:
+                # Exact retries can name a cancelled historical order. This is
+                # only a lookup for identity checking, never old-order replay.
+                o=next((o for o in order_history if o['id']==review['order_id']),None)
             if o is None:raise ValueError('Reassessment references an unknown order')
-            st=order_state[o['id']]
             fresh=review['decision_input']
-            if (o['code']!=obs['code'] or review['id'] in {x['id'] for x in reassessment_attempts}
-                    or timestamp(fresh['decision_at'])>when):continue
+            if o['code']!=obs['code'] or timestamp(fresh['decision_at'])>when:continue
+            if prior is not None:
+                check_request_retry(review,prior)
+                continue
+            st=order_state[o['id']]
             if st['status'] in ('CANCELLED_EVIDENCE','EXPIRED_UNFILLED') or not number(st['remaining']):continue
             if fresh['data_cutoff'][:10]>=day or any(f['date']>fresh['data_cutoff'][:10] for f in fills):
                 raise ValueError('Reassessment requires a genuine prior daily close with no later fill hidden')
@@ -387,6 +394,6 @@ def compare_jobs(jobs):
             predecessor_state=j.get('continuation',{}).get('checkpoint',{}).get('state_id'))))
     if len(set(identities)) != 1:
         raise ValueError('Alternatives must share exact capital/rights AND exogenous prices/capacity/states/availability/settlement path')
-    return dict(schema='capital-comparison/0.7', synthetic=True, common_input_id=identities[0],
+    return dict(schema='capital-comparison/0.8', synthetic=True, common_input_id=identities[0],
                 results={k:simulate(j) for k,j in jobs.items()}, ranking=None,
                 total_net_return_comparison_qualified=False, policy_authorized=False)

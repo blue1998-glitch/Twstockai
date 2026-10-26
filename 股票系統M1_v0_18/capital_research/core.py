@@ -11,7 +11,7 @@ from rotation_research.core import fees
 from .eligibility import entry_review, known_fact, validity_status
 from .fact_lineage import source_snapshot, history_at, visible, issues as fact_issues, asset_issues
 
-VERSION = 'capital-decision/0.7'
+VERSION = 'capital-decision/0.8'
 FEATURES = ('price_volume', 'box', 'key_position', 'momentum', 'cross_scale')
 BINDING = ('source_id', 'basis_id', 'adjustment_version')
 

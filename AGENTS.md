@@ -1,3 +1,15 @@
+# 2026-10-26 最新本地｜review同ID內容保全0.8，未提交
+
+最新入口 `M1_CAPITAL_RESEARCH_REVIEW_IDENTITY_20261026_HANDOFF.md`、capital_research/review_identity_20261026/REPORT.md及CONTRACT_0_8。使用者本輪只授權兩案定向重現、最小修復及必要測試，先不commit/push。遠端／HEAD基線2ca618a15be296821b02ba139c2ee194fc51b01e，0.7已保存；下方舊「未提交」按當時歷史閱讀。
+
+同job／跨輪兩案修前都實跑同ID新限制被略過、B20成交；換新ID控制則取消。0.8保存完整request及內容指紋，相同內容才略過、不同內容明確拒絕；跨輪已知ID可核對歷史單的exact retry，不復活舊單。碰撞修後是ERROR／execution=null，不包裝成成功零成交。原帳／權利／reserve／latest／全部token完整承接，原action_ledger／fact_lineage不改。
+
+最終22唯一方法PASS＝13新＋9必要回歸；修前單例與首12中間批不累加或加歷史PASS。篡改案例初被原事件引用防線擋住，保留診斷及原測例，只補齊偽造輸入引用、原斷言不改。六案原輸入及oracle前後同bytes；26封存／26最終source指紋另存。decision／execution／comparison0.8、checkpoint0.7、attempt0.2；fact-history0.3／receipt0.1不變，舊READ不重算／不隱式遷移。
+
+只原唯一Codex／原工作區，不開代理／worktree／競爭分支，不bootstrap/hydrate、真實producer、六方案、UI／Android或樣本外。70／2／其中8／0、正式false、主壓力null及全部正式來源／圖形／人工契約保持。通用認證／更正／完整分叉、R2/F及未支援帳務不擴張。Work未取得本地0.8原件，不冒獨立驗收；Astra／第一工作區救援原件未讀，不重建／推定890檔。下一輪先唯讀；沒有新明確保存授權不commit/push。以下歷史原文完整保留。
+
+---
+
 # 2026-10-26 最新本地｜遭拒中途重評限制收件0.7，未提交
 
 最新入口 `M1_CAPITAL_RESEARCH_REJECTED_REASSESSMENT_20261026_HANDOFF.md`、capital_research/rejected_reassessment_20261026/REPORT.md及CONTRACT_0_7。使用者本輪只授權定向重現／最小修復／必要測試，不commit/push。遠端與本地基線135f73b65e9622a664fcf05adb4cdb09a9c70e02；0.5／0.6已在此固定提交保存，下方「未發布」按當時歷史閱讀。

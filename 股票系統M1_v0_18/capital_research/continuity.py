@@ -8,9 +8,9 @@ from rotation_research.action_ledger import replay
 from .core import timestamp, number, quantity
 from .close_clock import close_record
 from .fact_lineage import history_at
-from .reassessment_history import ATTEMPT, declaration_sources, reviewed_tokens
+from .reassessment_history import ATTEMPT, declaration_sources, reviewed_tokens, validate_request_binding
 
-CHECKPOINT = 'capital-account-checkpoint/0.6'
+CHECKPOINT = 'capital-account-checkpoint/0.7'
 
 
 def ledger_prefix(origin, fills, day):
@@ -35,7 +35,7 @@ def row_at(origin, fills, day):
 
 
 def _check_result(execution):
-    if execution['schema']!='capital-execution/0.7' or execution['status']!='SYNTHETIC_EXECUTION_REPLAY':
+    if execution['schema']!='capital-execution/0.8' or execution['status']!='SYNTHETIC_EXECUTION_REPLAY':
         raise ValueError('LIFECYCLE_PROOF_REQUIRED: historical results remain readable, not implicitly upgraded')
     if execution['result_id']!=fingerprint({k:v for k,v in execution.items() if k!='result_id'}):
         raise ValueError('Execution fingerprint conflict')
@@ -55,8 +55,9 @@ def _check_result(execution):
     for i,a in enumerate(attempts):
         if a['schema']!=ATTEMPT or a['attempt_id']!=fingerprint({k:v for k,v in a.items() if k!='attempt_id'}):
             raise ValueError('Reassessment attempt fingerprint conflict')
+        validate_request_binding(a)
         d=a['decision'];source=a['fact_source']
-        if d['schema']!='capital-decision/0.7' or d['decision_id']!=fingerprint({k:v for k,v in d.items() if k!='decision_id'}):
+        if d['schema']!='capital-decision/0.8' or d['decision_id']!=fingerprint({k:v for k,v in d.items() if k!='decision_id'}):
             raise ValueError('Reassessment decision fingerprint conflict')
         if any(source[k]!=d[k] for k in ('decision_at','data_cutoff')):
             raise ValueError('Reassessment source decision/cutoff conflict')
@@ -78,7 +79,7 @@ def _check_result(execution):
             raise ValueError('Rejected reassessment cannot become an accepted decision')
     for index,key in enumerate(ids):
         d=records[key]
-        if d['schema']!='capital-decision/0.7' or d['decision_id']!=key or fingerprint({k:v for k,v in d.items() if k!='decision_id'})!=key:
+        if d['schema']!='capital-decision/0.8' or d['decision_id']!=key or fingerprint({k:v for k,v in d.items() if k!='decision_id'})!=key:
             raise ValueError('Decision history fingerprint conflict')
         if any(sources[key][k]!=d[k] for k in ('decision_at','data_cutoff')):
             raise ValueError('Fact declaration decision/cutoff conflict')
