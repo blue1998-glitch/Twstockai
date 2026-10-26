@@ -1,3 +1,11 @@
+# 最新功能里程碑：分批換股數量候選0.1
+
+入口[quantity_candidates_20261026/REPORT.md](quantity_candidates_20261026/REPORT.md)及[CONTRACT.md](quantity_candidates_20261026/CONTRACT.md)。純API為`quantity_candidates.generate(request)`；原資金框架仍0.8，沿既有decide／resume_decision、allocation.full_transfer及token檢查，不改帳務、資格或歷史。有限完整整股域產生續抱、退A留現金、部分換股及全換端點，分開當期可行／交割後重評／拒絕／未支援；不選比例、不建單／成交。新增B固定family C，依已知本股前綴及獨立token，不能用family或未來原件尾段繞過。
+
+最終結果只讀`after-final/*/actual.json`與summary；`cases/*/actual.json`為修前結果，input／expected皆凍結不改。21個最終合成案例符合oracle，18必要方法PASS，不累加中間批／歷史數字。已按本輪明確功能里程碑授權由原Codex自審及正常保存，固定SHA以Git提交／回覆為準；下方未提交／無保存授權為歷史。一般工作方式沿根AGENTS／CONTINUE，不另立政策。
+
+---
+
 # 遭拒宣告限制衝突0.6（本地未提交）
 
 入口[evidence_conflicts_20261026/REPORT.md](evidence_conflicts_20261026/REPORT.md)／[CONTRACT_0_6.md](evidence_conflicts_20261026/CONTRACT_0_6.md)，完整交接見根M1_CAPITAL_RESEARCH_CONFLICTS_20261026_HANDOFF.md。0.5主三輪資格復活先實跑重現，0.6保留遭拒宣告的新限制衝突UNKNOWN；有效原件及獨立新事實正例保持。25唯一方法＝13新＋12必要回歸PASS，不累加修前單例或歷史結果。原0.5 source對新baseline_0_5封存，舊證據原樣；無commit/push、正式資格或策略成效結論。

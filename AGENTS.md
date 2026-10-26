@@ -1,3 +1,17 @@
+# 2026-10-26 最新有效｜功能里程碑交付與分批換股數量候選0.1
+
+使用者最新工作方式已整合於本既有入口及CONTINUE_IN_WORK_MODE.md，不另立平行規則：僅原唯一Codex、/workspace/Twstockai、dev/m1-v018-chart-annotations執行明確指定任務。每輪先說明能力、驗收與範圍，再完成有限實作、必要測試、自審、正常commit/push及GitHub固定SHA讀回。此保存授權適用明確指定工程，優先於下方歷史「先不commit/push」；一般可逆實作／必要修復／保存不逐步詢問。未指定的新功能不擴張。
+
+重用既有能力、測試及證據；無新變更／失敗／疑點，不重跑相同檢查、不重做結清研究、封包或歸檔。不以PASS數／文件數衡量進度。一般工程由原Codex自審，不預設逐輪轉Work；資金／權利／成交／未來資訊的重要接線列本功能額外複核項，集中審查。遇改變使用者規則的策略歧義或無法安全解決的衝突，列具體案例再詢問，不自訂比例／天數／最佳門檻或勝者。
+
+阻塞只限制相依功能。1101 2026-01-02期初cash_claims為帳戶證據阻塞，維持UNKNOWN與拒算，停止針對它搜尋公開資料，不收私人文件。來源認證、真實期初權利、70／2／其中8／真實總淨合格0、全部正式false、主壓力null保持；合成機制、功能用途與真實成效分開。不開Codex／代理／worktree／競爭分支，不改main、強推、reset/clean或覆蓋成果；只提交本輪內容。部署、交易、付費及對外訊息仍需另行明確授權。
+
+本次唯一里程碑為capital_research/quantity_candidates.py及quantity_candidates_20261026/REPORT.md、CONTRACT.md：有限完整整股域生成續抱、退A留現金、部分換股與既有full_transfer端點，沿0.8檢查及resume，不選比例、不建單／成交。所有新增B固定family C，透過已知前綴及既有token擋共柱別名與未來身分借用；舊0.8原碼／帳務不改。修前actual／source及準備失敗診斷完整留史，after-final才綁最終source。最終21定向案例、18必要方法PASS；不累加初批／修前反例或歷史PASS。候選仍是靜態研究，不是政策績效；全換無可新增B時可與退A留現金同目標合併，不冒稱已買B。
+
+最低已核遠端／本地基線1b200d681a6b68168c45591775e107174f064138；保留全部祖先與後續。新帳務／R2/F／來源認證、真實producer／六方案／九路徑重跑／UI／Android／樣本外及bootstrap/hydrate均不在範圍。Astra與第一工作區救援原件未取得未讀，不等待／重建或推定890檔。以下原文按當時歷史完整保留，不把舊未提交文字當目前未保存事實。
+
+---
+
 # 2026-10-26 最新本地｜台泥財報第58頁日期角色附錄0.1，未提交
 
 最新入口 `M1_TCC_P58_DATE_ROLES_20261026_HANDOFF.md`、rotation_research/treasury_date_roles_20261026/REPORT.md及CONTRACT.md。使用者有限授權只增補已保存財報第58頁與必要定向驗證，先不commit/push。遠端／HEAD基線41c82485e5b7056657cc1ac1e069a91ea1957b9e；資金框架仍0.8、來源catalog仍0.10及全部parents，0.8已由Work結清，不重跑。
