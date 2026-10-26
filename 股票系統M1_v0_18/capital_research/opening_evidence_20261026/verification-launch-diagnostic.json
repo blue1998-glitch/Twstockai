@@ -1,0 +1,19 @@
+{
+  "schema": "opening-evidence-command-diagnostic/0.1",
+  "recorded_at": "2026-10-26T09:27:29.203985+00:00",
+  "command": [
+    "python3",
+    "-B",
+    "-m",
+    "capital_research.opening_evidence_20261026.verify"
+  ],
+  "cwd": "/workspace/Twstockai",
+  "exit_code": 1,
+  "stderr": "Error while finding module specification for 'capital_research.opening_evidence_20261026.verify' (ModuleNotFoundError: No module named 'capital_research')",
+  "checker_executed": false,
+  "tests_executed": 0,
+  "producer_executed": false,
+  "diagnosis": "Verifier command was started from repository root instead of documented 股票系統M1_v0_18 working directory",
+  "correction": "Run the same read-only verifier from /workspace/Twstockai/股票系統M1_v0_18; no source, oracle or test change",
+  "original_manifest_preserved": "manifest-before-launch-diagnostic.json"
+}

@@ -1,0 +1,627 @@
+{
+  "schema": "opening-evidence-synthetic-summary/0.1",
+  "cases": [
+    {
+      "case": "sourced-zero",
+      "status": "STRUCTURALLY_COMPLETE_NOT_AUTHENTICATED",
+      "assertions": {
+        "status": true,
+        "classification": true,
+        "preserved_value": true,
+        "gap": true,
+        "unsupported": true,
+        "authenticity_verified": true,
+        "opening_entitlements_verified": true,
+        "ledger_called": true,
+        "legacy_qualification_updates": true
+      },
+      "matched": true,
+      "input": {
+        "bytes": 10027,
+        "sha256": "d7eecb1fbc60dc407ffc7ce3ceadb7f37bfe2a313ffaebaaf6e5c69b05009898"
+      },
+      "expected": {
+        "bytes": 371,
+        "sha256": "f89a3fb9398509184df9522b0c8a889655269ce2b8fbee52dba1b32307452a56"
+      },
+      "actual": {
+        "bytes": 3894,
+        "sha256": "88ded5e69081237fa4274216503035d487bc57694049004d5879f51bd22dfa5d"
+      }
+    },
+    {
+      "case": "empty-is-unknown",
+      "status": "GAPS_PRESENT",
+      "assertions": {
+        "status": true,
+        "classification": true,
+        "preserved_value": true,
+        "gap": true,
+        "unsupported": true,
+        "authenticity_verified": true,
+        "opening_entitlements_verified": true,
+        "ledger_called": true,
+        "legacy_qualification_updates": true
+      },
+      "matched": true,
+      "input": {
+        "bytes": 9963,
+        "sha256": "e895603c19cec1db62683e31838cde34cb26921c27e7081813d0e15c9030f338"
+      },
+      "expected": {
+        "bytes": 344,
+        "sha256": "63b91410347247a509803180446af1714bb263b3ab0763c1d25b04f144761ed7"
+      },
+      "actual": {
+        "bytes": 3934,
+        "sha256": "999539c0032c1c324a5f5d70cf999cbee767e641603d7d4fc2f4041a5644829c"
+      }
+    },
+    {
+      "case": "missing-is-unknown",
+      "status": "GAPS_PRESENT",
+      "assertions": {
+        "status": true,
+        "classification": true,
+        "preserved_value": true,
+        "gap": true,
+        "unsupported": true,
+        "authenticity_verified": true,
+        "opening_entitlements_verified": true,
+        "ledger_called": true,
+        "legacy_qualification_updates": true
+      },
+      "matched": true,
+      "input": {
+        "bytes": 9847,
+        "sha256": "4e712a60f78a297f2b78fa02d35874c837c5ffc5a76f2ffad01834917da73d13"
+      },
+      "expected": {
+        "bytes": 346,
+        "sha256": "44d0c2913eba32378f7dd6acf0aff54f9eddb877af4b4c562780fa4a304b74be"
+      },
+      "actual": {
+        "bytes": 3936,
+        "sha256": "c1acbd04ac6a4201ba0fad902d17da29ca29b83088f3c9029e60076fdf2cc67b"
+      }
+    },
+    {
+      "case": "hypothetical-zero",
+      "status": "ASSUMPTIONS_PRESENT",
+      "assertions": {
+        "status": true,
+        "classification": true,
+        "preserved_value": true,
+        "gap": true,
+        "unsupported": true,
+        "authenticity_verified": true,
+        "opening_entitlements_verified": true,
+        "ledger_called": true,
+        "legacy_qualification_updates": true
+      },
+      "matched": true,
+      "input": {
+        "bytes": 10065,
+        "sha256": "db64074853516d4d00851a99539c5deb1f9e705e9e9df1e0d73bc253a761f0ea"
+      },
+      "expected": {
+        "bytes": 350,
+        "sha256": "85eacd992085bf6c0371bf063e47568a7522b1ef8615055e7fb9fc15a8e8e280"
+      },
+      "actual": {
+        "bytes": 3819,
+        "sha256": "511e8786d5f26bd8423fea9e55c75e68b03a5b271f008ebb0e1967ad9df45da9"
+      }
+    },
+    {
+      "case": "wrong-account_id",
+      "status": "GAPS_PRESENT",
+      "assertions": {
+        "status": true,
+        "classification": true,
+        "preserved_value": true,
+        "gap": true,
+        "unsupported": true,
+        "authenticity_verified": true,
+        "opening_entitlements_verified": true,
+        "ledger_called": true,
+        "legacy_qualification_updates": true
+      },
+      "matched": true,
+      "input": {
+        "bytes": 10021,
+        "sha256": "7e9a562ae626bfeb4e3e0256b14b0bf4001e39001feca14a173861fafba7f83e"
+      },
+      "expected": {
+        "bytes": 348,
+        "sha256": "466a46e80cd4c07e2fc3fa0fb8d16de4fe8436340a662f9f1188c014b878bf49"
+      },
+      "actual": {
+        "bytes": 3998,
+        "sha256": "055a61ec4e14dfe8468c3869da81d6d23d83f81a4e3f827631e57e30db0131c2"
+      }
+    },
+    {
+      "case": "wrong-scenario_id",
+      "status": "GAPS_PRESENT",
+      "assertions": {
+        "status": true,
+        "classification": true,
+        "preserved_value": true,
+        "gap": true,
+        "unsupported": true,
+        "authenticity_verified": true,
+        "opening_entitlements_verified": true,
+        "ledger_called": true,
+        "legacy_qualification_updates": true
+      },
+      "matched": true,
+      "input": {
+        "bytes": 10022,
+        "sha256": "50fec6c1f18bcd724938f2ab4a671bf07359c35fa9b055bf63aba333bb0dbd79"
+      },
+      "expected": {
+        "bytes": 348,
+        "sha256": "466a46e80cd4c07e2fc3fa0fb8d16de4fe8436340a662f9f1188c014b878bf49"
+      },
+      "actual": {
+        "bytes": 3998,
+        "sha256": "7a6f23b1324a5bd098b609aa362cb7a05130b32faf07ce097b7acb807d92d6a6"
+      }
+    },
+    {
+      "case": "wrong-code",
+      "status": "GAPS_PRESENT",
+      "assertions": {
+        "status": true,
+        "classification": true,
+        "preserved_value": true,
+        "gap": true,
+        "unsupported": true,
+        "authenticity_verified": true,
+        "opening_entitlements_verified": true,
+        "ledger_called": true,
+        "legacy_qualification_updates": true
+      },
+      "matched": true,
+      "input": {
+        "bytes": 10027,
+        "sha256": "ae09a83bf89dd4080f9c312cdd859e8a89b0f51ecf88f5ffd908060a1ab65dab"
+      },
+      "expected": {
+        "bytes": 348,
+        "sha256": "466a46e80cd4c07e2fc3fa0fb8d16de4fe8436340a662f9f1188c014b878bf49"
+      },
+      "actual": {
+        "bytes": 3998,
+        "sha256": "7e83404019c279154dab644f457396814ac2de0d52b2e13a91a191b81b1cfed3"
+      }
+    },
+    {
+      "case": "wrong-price_source_id",
+      "status": "GAPS_PRESENT",
+      "assertions": {
+        "status": true,
+        "classification": true,
+        "preserved_value": true,
+        "gap": true,
+        "unsupported": true,
+        "authenticity_verified": true,
+        "opening_entitlements_verified": true,
+        "ledger_called": true,
+        "legacy_qualification_updates": true
+      },
+      "matched": true,
+      "input": {
+        "bytes": 10018,
+        "sha256": "1eb34e99ec98b2d26f5ffc50bd36e4a87469060b429b0602cc51d9d6e65ee929"
+      },
+      "expected": {
+        "bytes": 348,
+        "sha256": "466a46e80cd4c07e2fc3fa0fb8d16de4fe8436340a662f9f1188c014b878bf49"
+      },
+      "actual": {
+        "bytes": 3998,
+        "sha256": "6643600b2260f118271eb3b037317954094b032e1c3e1a9f8bd26f7483d7aec5"
+      }
+    },
+    {
+      "case": "wrong-basis_id",
+      "status": "GAPS_PRESENT",
+      "assertions": {
+        "status": true,
+        "classification": true,
+        "preserved_value": true,
+        "gap": true,
+        "unsupported": true,
+        "authenticity_verified": true,
+        "opening_entitlements_verified": true,
+        "ledger_called": true,
+        "legacy_qualification_updates": true
+      },
+      "matched": true,
+      "input": {
+        "bytes": 10032,
+        "sha256": "c186c861475c665091d89e7b094f63a27d6dedf17438e16b88b7c3b90516f1c1"
+      },
+      "expected": {
+        "bytes": 348,
+        "sha256": "466a46e80cd4c07e2fc3fa0fb8d16de4fe8436340a662f9f1188c014b878bf49"
+      },
+      "actual": {
+        "bytes": 3998,
+        "sha256": "d01557662045a58fe26629fca1cffc87817f649162039bd58cfe13d29094255d"
+      }
+    },
+    {
+      "case": "wrong-adjustment_version",
+      "status": "GAPS_PRESENT",
+      "assertions": {
+        "status": true,
+        "classification": true,
+        "preserved_value": true,
+        "gap": true,
+        "unsupported": true,
+        "authenticity_verified": true,
+        "opening_entitlements_verified": true,
+        "ledger_called": true,
+        "legacy_qualification_updates": true
+      },
+      "matched": true,
+      "input": {
+        "bytes": 10030,
+        "sha256": "be62ba5186e297be95729adbbba16b95d6534a41a47f03ddba5103db8e85f89f"
+      },
+      "expected": {
+        "bytes": 348,
+        "sha256": "466a46e80cd4c07e2fc3fa0fb8d16de4fe8436340a662f9f1188c014b878bf49"
+      },
+      "actual": {
+        "bytes": 3998,
+        "sha256": "b8171743e0eb7f1fcf8698d0776088da8f42c075f31a2693c1a06d33ff12ef6c"
+      }
+    },
+    {
+      "case": "incomplete-zero",
+      "status": "GAPS_PRESENT",
+      "assertions": {
+        "status": true,
+        "classification": true,
+        "preserved_value": true,
+        "gap": true,
+        "unsupported": true,
+        "authenticity_verified": true,
+        "opening_entitlements_verified": true,
+        "ledger_called": true,
+        "legacy_qualification_updates": true
+      },
+      "matched": true,
+      "input": {
+        "bytes": 10028,
+        "sha256": "47c5a9757eda3f444c65afea8268e8216b9a4705bb03386fe93aff5cd5cfd11f"
+      },
+      "expected": {
+        "bytes": 368,
+        "sha256": "4c7df2aaaffa535b888fdc34a37d8a5578a43505d36b61d0a0c699d90ca2d5d0"
+      },
+      "actual": {
+        "bytes": 4038,
+        "sha256": "069de7d80a3652c80b20c28d9cf93c31bdc43f437570f6819b3818d308f9e54f"
+      }
+    },
+    {
+      "case": "content-conflict",
+      "status": "GAPS_PRESENT",
+      "assertions": {
+        "status": true,
+        "classification": true,
+        "preserved_value": true,
+        "gap": true,
+        "unsupported": true,
+        "authenticity_verified": true,
+        "opening_entitlements_verified": true,
+        "ledger_called": true,
+        "legacy_qualification_updates": true
+      },
+      "matched": true,
+      "input": {
+        "bytes": 10338,
+        "sha256": "5a730c37fd4b1ee06cbfb00e19693a9b1ab4a3b6c7e6ee3ded7e82083f628196"
+      },
+      "expected": {
+        "bytes": 348,
+        "sha256": "d81eafaa2275933ad6b7be877f4ab5affbeb970aa76dfe6faccd7520a57117ee"
+      },
+      "actual": {
+        "bytes": 3998,
+        "sha256": "1d8ad830c7a8ec6538279bb2a927391dd173dfc5e5ef25031e32c01eca965f17"
+      }
+    },
+    {
+      "case": "prior-right-without-holding",
+      "status": "STRUCTURALLY_COMPLETE_NOT_AUTHENTICATED",
+      "assertions": {
+        "status": true,
+        "classification": true,
+        "preserved_value": true,
+        "gap": true,
+        "unsupported": true,
+        "authenticity_verified": true,
+        "opening_entitlements_verified": true,
+        "ledger_called": true,
+        "legacy_qualification_updates": true
+      },
+      "matched": true,
+      "input": {
+        "bytes": 10633,
+        "sha256": "b43c450b503cd650cf88c246adb6efdedb8f1659089f0e122170bdb063609164"
+      },
+      "expected": {
+        "bytes": 645,
+        "sha256": "c0ee5f4bf2603d61f5579fda5be9cca11c699f9746a3f5eba2560b1622f2536d"
+      },
+      "actual": {
+        "bytes": 4497,
+        "sha256": "8e4bfe7ebbc377fcca313851421bd31ff47ba854a80f9e7bf78b6c41d364ec6c"
+      }
+    },
+    {
+      "case": "late-proof",
+      "status": "GAPS_PRESENT",
+      "assertions": {
+        "status": true,
+        "classification": true,
+        "preserved_value": true,
+        "gap": true,
+        "unsupported": true,
+        "authenticity_verified": true,
+        "opening_entitlements_verified": true,
+        "ledger_called": true,
+        "legacy_qualification_updates": true
+      },
+      "matched": true,
+      "input": {
+        "bytes": 10027,
+        "sha256": "7b8e20ff52b85b2e622dbc60a1d5892811c648c66586eafd1eb82e23de8cf18e"
+      },
+      "expected": {
+        "bytes": 351,
+        "sha256": "1669500068505d8d9223f8ef6c1fa76088902d045959c899ca5fa349de193825"
+      },
+      "actual": {
+        "bytes": 4004,
+        "sha256": "41226ebe8ef653537f97cba1195d5f5482580ec05b2dfa4e4fde5028a7f4ea0b"
+      }
+    },
+    {
+      "case": "equal-timezone-boundary",
+      "status": "STRUCTURALLY_COMPLETE_NOT_AUTHENTICATED",
+      "assertions": {
+        "status": true,
+        "classification": true,
+        "preserved_value": true,
+        "gap": true,
+        "unsupported": true,
+        "authenticity_verified": true,
+        "opening_entitlements_verified": true,
+        "ledger_called": true,
+        "legacy_qualification_updates": true
+      },
+      "matched": true,
+      "input": {
+        "bytes": 10027,
+        "sha256": "fd51fb908800457201969a67e556bef5b2dab33844dc05ddae703fee672ee8cb"
+      },
+      "expected": {
+        "bytes": 371,
+        "sha256": "f89a3fb9398509184df9522b0c8a889655269ce2b8fbee52dba1b32307452a56"
+      },
+      "actual": {
+        "bytes": 3894,
+        "sha256": "1323917b140b7a282dd9ab55096b2ae41d0af73235a29dcda02c439362b01e78"
+      }
+    },
+    {
+      "case": "unknown-net-and-pay-date",
+      "status": "GAPS_PRESENT",
+      "assertions": {
+        "status": true,
+        "classification": true,
+        "preserved_value": true,
+        "gap": true,
+        "unsupported": true,
+        "authenticity_verified": true,
+        "opening_entitlements_verified": true,
+        "ledger_called": true,
+        "legacy_qualification_updates": true
+      },
+      "matched": true,
+      "input": {
+        "bytes": 10635,
+        "sha256": "70f945e8aca064416d3f6d3287823511ad17b81c1d2c0602f88c06861139cb4d"
+      },
+      "expected": {
+        "bytes": 607,
+        "sha256": "a8fdc00bc9c87ee6a76b740ddf207675cf3395b8aae19dbd064814f9248f4262"
+      },
+      "actual": {
+        "bytes": 4424,
+        "sha256": "d676e94182862e134334e3dba4bcddcaab0b459676617a9204624c66d5a6e1bc"
+      }
+    },
+    {
+      "case": "unknown-share-dates",
+      "status": "GAPS_PRESENT",
+      "assertions": {
+        "status": true,
+        "classification": true,
+        "preserved_value": true,
+        "gap": true,
+        "unsupported": true,
+        "authenticity_verified": true,
+        "opening_entitlements_verified": true,
+        "ledger_called": true,
+        "legacy_qualification_updates": true
+      },
+      "matched": true,
+      "input": {
+        "bytes": 10641,
+        "sha256": "a73d3d4fb6495d8ea3a7abaa3f7845fc6cc355b60b9fb2e099d4962b11d683cd"
+      },
+      "expected": {
+        "bytes": 614,
+        "sha256": "3659325b00fd582c56514e367c1eb1af3b0063da5405e92db26a10a528876e76"
+      },
+      "actual": {
+        "bytes": 4437,
+        "sha256": "557d3341672ba5c28af987c88dbc3da2ec2aaa27cee42e7afca7c9438f403918"
+      }
+    },
+    {
+      "case": "fractional-right",
+      "status": "STRUCTURALLY_COMPLETE_NOT_AUTHENTICATED",
+      "assertions": {
+        "status": true,
+        "classification": true,
+        "preserved_value": true,
+        "gap": true,
+        "unsupported": true,
+        "authenticity_verified": true,
+        "opening_entitlements_verified": true,
+        "ledger_called": true,
+        "legacy_qualification_updates": true
+      },
+      "matched": true,
+      "input": {
+        "bytes": 10675,
+        "sha256": "6580f297a5a0af08beb836920d7b728c8c296296af80df408b065da5822f7a75"
+      },
+      "expected": {
+        "bytes": 702,
+        "sha256": "65f98fe8cb4c6062c9c2e07664d18fed4ae9ad75e5c5a4cc06436a74c389b8d1"
+      },
+      "actual": {
+        "bytes": 4673,
+        "sha256": "9216ecb1d4e988ab8012b3b91d2ce07d41654c4b4749964933d8dc9a3c00de8d"
+      }
+    },
+    {
+      "case": "nonempty-payables",
+      "status": "STRUCTURALLY_COMPLETE_NOT_AUTHENTICATED",
+      "assertions": {
+        "status": true,
+        "classification": true,
+        "preserved_value": true,
+        "gap": true,
+        "unsupported": true,
+        "authenticity_verified": true,
+        "opening_entitlements_verified": true,
+        "ledger_called": true,
+        "legacy_qualification_updates": true
+      },
+      "matched": true,
+      "input": {
+        "bytes": 10207,
+        "sha256": "d0f4099c0577d909a2bb41f812bf8257306c5771933db64a232db58c163e9ae1"
+      },
+      "expected": {
+        "bytes": 459,
+        "sha256": "49f11b625ec7a7d066d0a3262908332faecf9201d5fbb71a8c047e727ffa84ce"
+      },
+      "actual": {
+        "bytes": 4176,
+        "sha256": "79ceb006dca516e056be84e5675f8ef0b2784d0386f3fbbc496dc35cc7fee197"
+      }
+    },
+    {
+      "case": "nonempty-pending_orders",
+      "status": "STRUCTURALLY_COMPLETE_NOT_AUTHENTICATED",
+      "assertions": {
+        "status": true,
+        "classification": true,
+        "preserved_value": true,
+        "gap": true,
+        "unsupported": true,
+        "authenticity_verified": true,
+        "opening_entitlements_verified": true,
+        "ledger_called": true,
+        "legacy_qualification_updates": true
+      },
+      "matched": true,
+      "input": {
+        "bytes": 10395,
+        "sha256": "ee1660d9b4d51b72c5be7409779a4605125986a24047eb0b22ce4674e9cd7932"
+      },
+      "expected": {
+        "bytes": 555,
+        "sha256": "dececc03142ab6fa3ee7e8df7d9feba1472f8f81320dbc58f57f5c228a3f309a"
+      },
+      "actual": {
+        "bytes": 4378,
+        "sha256": "3183cc3e16a27b897685bbdfac07d0df57b09979888317573070d556d9259eb0"
+      }
+    },
+    {
+      "case": "future-entitlement",
+      "status": "GAPS_PRESENT",
+      "assertions": {
+        "status": true,
+        "classification": true,
+        "preserved_value": true,
+        "gap": true,
+        "unsupported": true,
+        "authenticity_verified": true,
+        "opening_entitlements_verified": true,
+        "ledger_called": true,
+        "legacy_qualification_updates": true
+      },
+      "matched": true,
+      "input": {
+        "bytes": 10649,
+        "sha256": "4b4f073d977437e6c697a99e5d63bfc7b2b2b5208dfe1462e3d889719be3f4c4"
+      },
+      "expected": {
+        "bytes": 622,
+        "sha256": "47bd77a132d4732233bfdeefb50baa3dac05ddb86dde96aeb4d33a8bb3a5486d"
+      },
+      "actual": {
+        "bytes": 4315,
+        "sha256": "0c9051520d0ab1149174662a4ed1fc3c8b748257bd4b5c0d6d6190437229f257"
+      }
+    },
+    {
+      "case": "duplicate-right",
+      "status": "GAPS_PRESENT",
+      "assertions": {
+        "status": true,
+        "classification": true,
+        "preserved_value": true,
+        "gap": true,
+        "unsupported": true,
+        "authenticity_verified": true,
+        "opening_entitlements_verified": true,
+        "ledger_called": true,
+        "legacy_qualification_updates": true
+      },
+      "matched": true,
+      "input": {
+        "bytes": 11293,
+        "sha256": "eb66e69836dd74a630fb4dd531b378ebc09f27bb064535ad369ab8b61cb5435e"
+      },
+      "expected": {
+        "bytes": 633,
+        "sha256": "25a467dae9074af3711df23a4906741de7b87e1cb4df2d3024ed51ff8a9884e4"
+      },
+      "actual": {
+        "bytes": 4769,
+        "sha256": "df68dea02c50960cd0aa21c8e3ce1d7be6f7ada78503c0b8b2c14d9a1dbfd6b7"
+      }
+    }
+  ],
+  "all_matched": true,
+  "synthetic_only": true,
+  "independent_market_samples": 0,
+  "real_account_qualifications_added": 0,
+  "ledger_calls": 0,
+  "note": "22 synthetic fixtures are not 22 independent market samples or a test-method count"
+}

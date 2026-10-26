@@ -1,0 +1,24 @@
+{
+  "schema": "opening-evidence-readonly-audit/0.1",
+  "checks": {
+    "input_and_oracle_unchanged": true,
+    "source_versions_unchanged": true,
+    "protected_old_files_unchanged": true,
+    "cases_saved_before_implementation": true,
+    "no_old_tracked_diff": true,
+    "index_empty": true,
+    "exact_original_tracked_index": true,
+    "all_saved_oracles_matched": true,
+    "diagnostic_flags_remain_false": true,
+    "artifact_hashes_match": true,
+    "checker_imports_only_stdlib": true,
+    "saved_test_log_consistent": true
+  },
+  "all_passed": true,
+  "manifest_checked": false,
+  "manifest_entries": null,
+  "saved_test_methods": 21,
+  "tests_executed_by_this_audit": 0,
+  "producer_calls": 0,
+  "note": "File/JSON/log consistency only; no original-source authentication, strategy validation or fresh PASS count"
+}

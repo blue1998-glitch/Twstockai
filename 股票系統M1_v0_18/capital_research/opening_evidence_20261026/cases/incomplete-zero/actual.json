@@ -1,0 +1,146 @@
+{
+  "schema": "opening-entitlement-evidence-diagnostic/0.1",
+  "synthetic": true,
+  "research_only": true,
+  "status": "GAPS_PRESENT",
+  "input_id": "sha256:7f58248b365738133fc99f5c57076f11ddebcaae9b7fa50981a814391e3e9241",
+  "binding": {
+    "account_id": "SYNTHETIC-ACCOUNT-1",
+    "scenario_id": "SYNTHETIC-OPENING-1",
+    "currency": "TWD"
+  },
+  "as_of": "2026-01-02T16:00:00+08:00",
+  "data_cutoff": "2026-01-02T16:00:00+08:00",
+  "decision_at": "2026-01-02T17:00:00+08:00",
+  "fields": {
+    "settled_cash": {
+      "classification": "SOURCED_ZERO_DECLARATION",
+      "declared_value": "0",
+      "diagnostic_value": "0",
+      "evidence_ids": [
+        "evidence:settled_cash"
+      ],
+      "gaps": []
+    },
+    "reserved_cash": {
+      "classification": "SOURCED_ZERO_DECLARATION",
+      "declared_value": "0",
+      "diagnostic_value": "0",
+      "evidence_ids": [
+        "evidence:reserved_cash"
+      ],
+      "gaps": []
+    },
+    "payables": {
+      "classification": "SOURCED_ZERO_DECLARATION",
+      "declared_value": [],
+      "diagnostic_value": [],
+      "evidence_ids": [
+        "evidence:payables"
+      ],
+      "gaps": []
+    },
+    "pending_orders": {
+      "classification": "SOURCED_ZERO_DECLARATION",
+      "declared_value": [],
+      "diagnostic_value": [],
+      "evidence_ids": [
+        "evidence:pending_orders"
+      ],
+      "gaps": []
+    },
+    "holdings.1101.shares": {
+      "classification": "SOURCED_NONZERO_DECLARATION",
+      "declared_value": "20000",
+      "diagnostic_value": "20000",
+      "evidence_ids": [
+        "evidence:holdings.1101.shares"
+      ],
+      "gaps": []
+    },
+    "holdings.1101.sellable": {
+      "classification": "SOURCED_NONZERO_DECLARATION",
+      "declared_value": "20000",
+      "diagnostic_value": "20000",
+      "evidence_ids": [
+        "evidence:holdings.1101.sellable"
+      ],
+      "gaps": []
+    },
+    "entitlements.1101.cash_claims": {
+      "classification": "UNKNOWN",
+      "declared_value": [],
+      "diagnostic_value": null,
+      "evidence_ids": [
+        "evidence:entitlements.1101.cash_claims"
+      ],
+      "gaps": [
+        "OUTSTANDING_INVENTORY_NOT_DECLARED_COMPLETE"
+      ]
+    },
+    "entitlements.1101.share_claims": {
+      "classification": "SOURCED_ZERO_DECLARATION",
+      "declared_value": [],
+      "diagnostic_value": [],
+      "evidence_ids": [
+        "evidence:entitlements.1101.share_claims"
+      ],
+      "gaps": []
+    },
+    "holdings.2884.shares": {
+      "classification": "SOURCED_ZERO_DECLARATION",
+      "declared_value": "0",
+      "diagnostic_value": "0",
+      "evidence_ids": [
+        "evidence:holdings.2884.shares"
+      ],
+      "gaps": []
+    },
+    "holdings.2884.sellable": {
+      "classification": "SOURCED_ZERO_DECLARATION",
+      "declared_value": "0",
+      "diagnostic_value": "0",
+      "evidence_ids": [
+        "evidence:holdings.2884.sellable"
+      ],
+      "gaps": []
+    },
+    "entitlements.2884.cash_claims": {
+      "classification": "SOURCED_ZERO_DECLARATION",
+      "declared_value": [],
+      "diagnostic_value": [],
+      "evidence_ids": [
+        "evidence:entitlements.2884.cash_claims"
+      ],
+      "gaps": []
+    },
+    "entitlements.2884.share_claims": {
+      "classification": "SOURCED_ZERO_DECLARATION",
+      "declared_value": [],
+      "diagnostic_value": [],
+      "evidence_ids": [
+        "evidence:entitlements.2884.share_claims"
+      ],
+      "gaps": []
+    }
+  },
+  "gaps": [
+    {
+      "field": "entitlements.1101.cash_claims",
+      "reason": "OUTSTANDING_INVENTORY_NOT_DECLARED_COMPLETE"
+    }
+  ],
+  "unsupported_capabilities": [],
+  "authenticity_verified": false,
+  "opening_entitlements_verified": false,
+  "data_qualified": false,
+  "execution_model_qualified": false,
+  "historical_signal_eligible": false,
+  "policy_authorized": false,
+  "live_execution_authorized": false,
+  "primary_pressure_id": null,
+  "ledger_called": false,
+  "legacy_qualification_updates": {},
+  "cash_or_share_postings": [],
+  "usable_cash": "NOT_COMPUTED_NO_LEDGER_CALL"
+}
