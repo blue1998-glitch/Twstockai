@@ -1,3 +1,13 @@
+# 2026-10-26 最新有效｜保存摘要共同條件唯讀並列0.1
+
+入口股票系統M1_v0_18/capital_research/lifecycle_compare_20261026/REPORT.md、CONTRACT.md；純API lifecycle_compare.compare_saved與stdout-only CLI lifecycle_compare_read（python -B）。重用未改lifecycle，先核完整期初帳戶／權利、截止、當期初始環境及共同模型，再核保存tape的價格／容量／狀態／available_at／來源基底交割。期末差異是結果；不一致REFUSED且columns空，缺原job／市場或停止前歷史帳拒比，不補資料。4個同條件控制可並列但不選勝者，所有正式false／主壓力null。
+
+最終21個READ規格、11唯一方法通過；顯示補欄只補2方法，共13次執行不加成13唯一，不加案例或歷史。after-final JSON及views-final文字、tests-final／tests-display才是最終入口；initial及source快照留史。64項只是診斷顯示上限，完整拒比檢查不中斷。未改原引擎／帳務／摘要或舊原件，不重跑producer。原job→execution因果、來源認證及策略績效仍未驗，原未知／70／2／其中8／0限制保持。
+
+沿既有功能里程碑授權原唯一Codex在原工作區／分支自審、正常commit/push及GitHub讀回。無bootstrap、新來源、私人文件、UI／Android、樣本外、部署交易付費訊息。下一項C類已核准原單重評尚未工程，不改family或新批觸發要求。以下原文完整留史。
+
+---
+
 # 2026-10-26 最新有效｜原批次生命週期唯讀摘要0.1
 
 本輪入口股票系統M1_v0_18/capital_research/lifecycle_20261026/REPORT.md、CONTRACT.md；純API lifecycle.summarize_saved及只讀CLI lifecycle_read（python -B）。只讀quantity replay0.1／conditional review0.1保存原件，不匯入或呼叫數值／帳務引擎。原提案列一次、原order逐單列核准量／實際成交／待交割／活單／取消到期／預留及重評理由；同單review不變新批，新order另列，原資本／權利／reserve／latest／tokens照原帳。缺逐筆交割證明保持UNKNOWN，不按價格或全帳應付重建；停止前歷史帳明標，不補零或新批准。

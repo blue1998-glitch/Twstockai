@@ -1,3 +1,11 @@
+# 最新：保存生命週期摘要唯讀並列0.1
+
+API `lifecycle_compare.compare_saved(request)`及`python3 -B -m capital_research.lifecycle_compare_read 標籤=原件路徑 ...`。入口[REPORT](lifecycle_compare_20261026/REPORT.md)、[CONTRACT](lifecycle_compare_20261026/CONTRACT.md)、[合法並列表](lifecycle_compare_20261026/views-final/wait-versus-reviewed.txt)、[容量不同拒比](lifecycle_compare_20261026/after-final/capacity-mismatch/readable.txt)。期初帳戶／權利、截止、共同模型與完整保存市場路徑相同才並列，不比較期末帳相等、不重算、評分或選勝者。
+
+21個READ規格、11唯一方法通過；只補2顯示相依方法，實際13方法執行不加歷史。after-final JSON與views-final文字綁最終；initial保留。沒有原job／tape、歷史停止帳或市場錯配就拒比。原核心／帳／摘要／來源不改；UNKNOWN、false/null、1101與70／2／其中8／真實總淨合格0保持。下方原文保留。
+
+---
+
 # 最新：原批次生命週期唯讀摘要0.1
 
 純API `lifecycle.summarize_saved(saved)`，CLI `python3 -B -m capital_research.lifecycle_read <保存JSON>`。入口[REPORT](lifecycle_20261026/REPORT.md)、[CONTRACT](lifecycle_20261026/CONTRACT.md)、[白話表](lifecycle_20261026/after-final/partial-pending/readable.txt)。只讀現存JSON，不匯入引擎／重算／下單。原提案一次列共享order；核准原單量、成交、待交割、活單、取消／到期、reserve與重評理由分開。現金權利／latest／token原樣保留；缺交割journal不因日期已到就補結清。
