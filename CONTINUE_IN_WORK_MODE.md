@@ -1,3 +1,13 @@
+# 2026-10-26 最新有效｜原數量條件單重評接線0.1
+
+最新入口股票系統M1_v0_18/capital_research/conditional_quantity_review_20261026/REPORT.md、CONTRACT.md；純API conditional_quantity_review.reassess_conditional。先過原quantity完整外層閘門，再從原實際prefix帳與唯一原B活單取得remaining，委派未改execution0.8當期重評；同ID、限價／到期及數量上限不變。有效舊事實可review，不變新獨立事件。被拒的宣告／限制由原attempt機制保留，交割本身不批准。原quantity_replay0.1／quantity_candidates0.2及全部原核心／帳務不改。
+
+17個最終合成案例與16唯一方法本輪實跑通過；首兩批切段／檢查器診斷原樣留史，after-final才綁最終source，不加歷史PASS或案例數。部分B7／取消13、應付141.140、原權利／reserve／latest／全部token及三種未來尾段隔離有保存actual。原input／expected不改，無1/13行情。未執行真實producer、舊suite／九路徑、UI／Android或樣本外；不代表市場績效。
+
+只限本回放最後一輪單一待條件重評買單；C追加單續評、多活單、外部既有單及原未支援帳務不擴張，不以換family繞過。1101 cash_claims UNKNOWN／拒算、70／2／其中8／真實總淨合格0、正式false／主壓力null維持。沿既有里程碑授權原唯一Codex自審、正常commit/push及GitHub讀回，不預設轉Work。下一個純讀生命週期摘要尚未工程；以下原文完整留史。
+
+---
+
 # 2026-10-26 最新有效｜受控數量候選逐輪回放0.1
 
 新入口capital_research/quantity_replay_20261026/REPORT.md與CONTRACT.md，純接線quantity_replay.replay_sequence。輸入明示候選選擇與合成委託／tape，不自訂比例／限價帶；先核0.2外層完整閘門，才交原0.8執行。逐輪從同一原帳的實際回放checkpoint導入當期account，保留opening／fills／權利／reserve／latest／token，沒有第二帳。

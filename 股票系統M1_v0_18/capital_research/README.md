@@ -1,3 +1,11 @@
+# 最新：原數量條件單中途重評0.1
+
+API `conditional_quantity_review.reassess_conditional(request)`；入口[REPORT](conditional_quantity_review_20261026/REPORT.md)、[CONTRACT](conditional_quantity_review_20261026/CONTRACT.md)、[最終保存結果](conditional_quantity_review_20261026/after-final/summary.json)。先核原quantity完整外層閘門，再以真實原帳prefix綁當期review，續用同一條件B買單的原remaining，不創新單／新批／比例。被拒宣告與限制、已成交B7及取消13、應付及預留保持；有效舊事實可review。
+
+17個合成案例、16唯一方法本輪實跑通過，不加歷史／中間批。原quantity0.2、replay0.1及core／execution0.8不改，舊READ不重算。C追加單續評、多活單及外部既有單未支援；一般工作方式沿根有效規則，全部來源／資格／UNKNOWN限制保持。下方原文完整保留。
+
+---
+
 # 最新：數量候選受控逐輪回放接線0.1
 
 API `quantity_replay.replay_sequence(request)`；入口[quantity_replay_20261026/REPORT.md](quantity_replay_20261026/REPORT.md)、[CONTRACT.md](quantity_replay_20261026/CONTRACT.md)。由明示合成選擇／orders／tape串接未改的quantity0.2與execution0.8，不產生策略、最佳數量或委託。先核外層閘門，實際回放後才用原checkpoint接下輪帳戶。等待資金仍須新重評；部分成交、過期／取消、原權利及全部token完整承接。

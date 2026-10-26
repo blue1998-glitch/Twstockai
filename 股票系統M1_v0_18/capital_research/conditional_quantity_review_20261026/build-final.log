@@ -1,0 +1,17 @@
+basis-change-refused PASS STOPPED_INPUT_ERROR 
+close-not-yet-known PASS STOPPED_INPUT_ERROR 
+future-A-wins PASS REPLAYED_ACCEPTED_REVIEW 
+future-B-wins PASS REPLAYED_ACCEPTED_REVIEW 
+future-both-fall PASS REPLAYED_ACCEPTED_REVIEW 
+limit-up-after-review PASS REPLAYED_ACCEPTED_REVIEW 
+multiple-live-orders-unsupported PASS STOPPED_NOT_IMPLEMENTED 
+outer-gate-refused PASS STOPPED_ORIGINAL_GATE 
+partial-original-order PASS REPLAYED_ACCEPTED_REVIEW 
+partial-then-known-cancel PASS REPLAYED_ACCEPTED_REVIEW 
+rejected-conflict-retained PASS REPLAYED_REJECTED_REVIEW 
+rejected-restriction-retained PASS REPLAYED_REJECTED_REVIEW 
+sale-unsettled PASS REPLAYED_REJECTED_REVIEW 
+target-injection-refused PASS STOPPED_INPUT_ERROR 
+unknown-current-qualification PASS REPLAYED_REJECTED_REVIEW 
+unknown-order-refused PASS STOPPED_INPUT_ERROR 
+valid-old-fact PASS REPLAYED_ACCEPTED_REVIEW 

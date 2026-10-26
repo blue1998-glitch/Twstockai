@@ -1,0 +1,147 @@
+[
+  {
+    "case": "basis-change-refused",
+    "status": "FAIL",
+    "error": "AssertionError(('STOPPED_ORIGINAL_GATE', ['Execution watermark before tape']))",
+    "actual_status": "STOPPED_ORIGINAL_GATE",
+    "reasons": [
+      "Execution watermark before tape"
+    ]
+  },
+  {
+    "case": "close-not-yet-known",
+    "status": "FAIL",
+    "error": "AssertionError(('STOPPED_ORIGINAL_GATE', ['Execution watermark before tape']))",
+    "actual_status": "STOPPED_ORIGINAL_GATE",
+    "reasons": [
+      "Execution watermark before tape"
+    ]
+  },
+  {
+    "case": "future-A-wins",
+    "status": "FAIL",
+    "error": "AssertionError(('STOPPED_ORIGINAL_GATE', ['Execution watermark before tape']))",
+    "actual_status": "STOPPED_ORIGINAL_GATE",
+    "reasons": [
+      "Execution watermark before tape"
+    ]
+  },
+  {
+    "case": "future-B-wins",
+    "status": "FAIL",
+    "error": "AssertionError(('STOPPED_ORIGINAL_GATE', ['Execution watermark before tape']))",
+    "actual_status": "STOPPED_ORIGINAL_GATE",
+    "reasons": [
+      "Execution watermark before tape"
+    ]
+  },
+  {
+    "case": "future-both-fall",
+    "status": "FAIL",
+    "error": "AssertionError(('STOPPED_ORIGINAL_GATE', ['Execution watermark before tape']))",
+    "actual_status": "STOPPED_ORIGINAL_GATE",
+    "reasons": [
+      "Execution watermark before tape"
+    ]
+  },
+  {
+    "case": "limit-up-after-review",
+    "status": "FAIL",
+    "error": "AssertionError(('STOPPED_ORIGINAL_GATE', ['Execution watermark before tape']))",
+    "actual_status": "STOPPED_ORIGINAL_GATE",
+    "reasons": [
+      "Execution watermark before tape"
+    ]
+  },
+  {
+    "case": "multiple-live-orders-unsupported",
+    "status": "FAIL",
+    "error": "AssertionError(('STOPPED_ORIGINAL_GATE', ['Execution watermark before tape']))",
+    "actual_status": "STOPPED_ORIGINAL_GATE",
+    "reasons": [
+      "Execution watermark before tape"
+    ]
+  },
+  {
+    "case": "outer-gate-refused",
+    "status": "PASS",
+    "error": null,
+    "actual_status": "STOPPED_ORIGINAL_GATE",
+    "reasons": [
+      "BATCH_PHASE_UNKNOWN",
+      "NO_NEW_INDEPENDENT_TRIGGER"
+    ]
+  },
+  {
+    "case": "partial-original-order",
+    "status": "FAIL",
+    "error": "AssertionError(('STOPPED_ORIGINAL_GATE', ['Execution watermark before tape']))",
+    "actual_status": "STOPPED_ORIGINAL_GATE",
+    "reasons": [
+      "Execution watermark before tape"
+    ]
+  },
+  {
+    "case": "partial-then-known-cancel",
+    "status": "FAIL",
+    "error": "AssertionError(('STOPPED_ORIGINAL_GATE', ['Execution watermark before tape']))",
+    "actual_status": "STOPPED_ORIGINAL_GATE",
+    "reasons": [
+      "Execution watermark before tape"
+    ]
+  },
+  {
+    "case": "rejected-restriction-retained",
+    "status": "FAIL",
+    "error": "AssertionError(('STOPPED_ORIGINAL_GATE', ['Execution watermark before tape']))",
+    "actual_status": "STOPPED_ORIGINAL_GATE",
+    "reasons": [
+      "Execution watermark before tape"
+    ]
+  },
+  {
+    "case": "sale-unsettled",
+    "status": "FAIL",
+    "error": "AssertionError(('STOPPED_ORIGINAL_GATE', ['Execution watermark before tape']))",
+    "actual_status": "STOPPED_ORIGINAL_GATE",
+    "reasons": [
+      "Execution watermark before tape"
+    ]
+  },
+  {
+    "case": "target-injection-refused",
+    "status": "PASS",
+    "error": null,
+    "actual_status": "STOPPED_INPUT_ERROR",
+    "reasons": [
+      "TEMPLATE_ACCOUNT_OR_PLANS_FORBIDDEN"
+    ]
+  },
+  {
+    "case": "unknown-current-qualification",
+    "status": "FAIL",
+    "error": "AssertionError(('STOPPED_ORIGINAL_GATE', ['Execution watermark before tape']))",
+    "actual_status": "STOPPED_ORIGINAL_GATE",
+    "reasons": [
+      "Execution watermark before tape"
+    ]
+  },
+  {
+    "case": "unknown-order-refused",
+    "status": "FAIL",
+    "error": "AssertionError(('STOPPED_ORIGINAL_GATE', ['Execution watermark before tape']))",
+    "actual_status": "STOPPED_ORIGINAL_GATE",
+    "reasons": [
+      "Execution watermark before tape"
+    ]
+  },
+  {
+    "case": "valid-old-fact",
+    "status": "FAIL",
+    "error": "AssertionError(('STOPPED_ORIGINAL_GATE', ['Execution watermark before tape']))",
+    "actual_status": "STOPPED_ORIGINAL_GATE",
+    "reasons": [
+      "Execution watermark before tape"
+    ]
+  }
+]
