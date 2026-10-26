@@ -1,3 +1,13 @@
+# 2026-10-26 最新有效｜原批次生命週期唯讀摘要0.1
+
+本輪入口股票系統M1_v0_18/capital_research/lifecycle_20261026/REPORT.md、CONTRACT.md；純API lifecycle.summarize_saved及只讀CLI lifecycle_read（python -B）。只讀quantity replay0.1／conditional review0.1保存原件，不匯入或呼叫數值／帳務引擎。原提案列一次、原order逐單列核准量／實際成交／待交割／活單／取消到期／預留及重評理由；同單review不變新批，新order另列，原資本／權利／reserve／latest／tokens照原帳。缺逐筆交割證明保持UNKNOWN，不按價格或全帳應付重建；停止前歷史帳明標，不補零或新批准。
+
+最終19個READ案例、13唯一方法通過；首批12及最終13共25方法執行不加成25唯一，首批log副本不加計，所有歷史PASS不累加。after-final及tests-after-final.log才綁最終source；initial保留。fresh process阻擋引擎import及寫檔／網路的CLI驗證通過。原core／execution0.8、quantity0.2、回放及舊原件全部不改，沒有producer／舊suite重跑。來源／資格／UNKNOWN及1101／70／2／其中8／真實總淨合格0保持，非策略或來源認證驗收。
+
+沿既有功能里程碑授權原唯一Codex於原工作區／分支自審、正常commit/push及GitHub固定SHA讀回，不預設轉Work。下一項唯讀並列比較入口尚未工程；無新來源、私人文件、bootstrap、UI／Android、樣本外、部署交易付費訊息。以下原文完整留史。
+
+---
+
 # 2026-10-26 最新有效｜原數量條件單重評接線0.1
 
 最新入口股票系統M1_v0_18/capital_research/conditional_quantity_review_20261026/REPORT.md、CONTRACT.md；純API conditional_quantity_review.reassess_conditional。先過原quantity完整外層閘門，再從原實際prefix帳與唯一原B活單取得remaining，委派未改execution0.8當期重評；同ID、限價／到期及數量上限不變。有效舊事實可review，不變新獨立事件。被拒的宣告／限制由原attempt機制保留，交割本身不批准。原quantity_replay0.1／quantity_candidates0.2及全部原核心／帳務不改。

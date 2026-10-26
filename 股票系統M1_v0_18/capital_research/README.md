@@ -1,3 +1,11 @@
+# 最新：原批次生命週期唯讀摘要0.1
+
+純API `lifecycle.summarize_saved(saved)`，CLI `python3 -B -m capital_research.lifecycle_read <保存JSON>`。入口[REPORT](lifecycle_20261026/REPORT.md)、[CONTRACT](lifecycle_20261026/CONTRACT.md)、[白話表](lifecycle_20261026/after-final/partial-pending/readable.txt)。只讀現存JSON，不匯入引擎／重算／下單。原提案一次列共享order；核准原單量、成交、待交割、活單、取消／到期、reserve與重評理由分開。現金權利／latest／token原樣保留；缺交割journal不因日期已到就補結清。
+
+19個最終READ案例、13唯一方法通過；首批12＋最終13是25次方法執行，不加歷史／副本。原producer與source不改不重跑，正式資格false／主壓力null、1101及來源拒算保持。after-final與tests-after-final.log才綁最終source，initial留史。工作方式沿根有效規則；下方原文保留。
+
+---
+
 # 最新：原數量條件單中途重評0.1
 
 API `conditional_quantity_review.reassess_conditional(request)`；入口[REPORT](conditional_quantity_review_20261026/REPORT.md)、[CONTRACT](conditional_quantity_review_20261026/CONTRACT.md)、[最終保存結果](conditional_quantity_review_20261026/after-final/summary.json)。先核原quantity完整外層閘門，再以真實原帳prefix綁當期review，續用同一條件B買單的原remaining，不創新單／新批／比例。被拒宣告與限制、已成交B7及取消13、應付及預留保持；有效舊事實可review。
