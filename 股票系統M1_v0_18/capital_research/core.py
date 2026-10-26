@@ -11,7 +11,7 @@ from rotation_research.core import fees
 from .eligibility import entry_review, known_fact, validity_status
 from .fact_lineage import source_snapshot, history_at, visible, issues as fact_issues, asset_issues
 
-VERSION = 'capital-decision/0.6'
+VERSION = 'capital-decision/0.7'
 FEATURES = ('price_volume', 'box', 'key_position', 'momentum', 'cross_scale')
 BINDING = ('source_id', 'basis_id', 'adjustment_version')
 
@@ -380,7 +380,8 @@ def resume_decision(previous, data, *, checkpoint=None, cancelled_order_ids=()):
     next_input=deepcopy(data)
     next_input['consumed_evidence_tokens']=sorted(set(next_input['consumed_evidence_tokens']) | set(old['reviewed_evidence_tokens']) | set(checkpoint['state']['reviewed_evidence_tokens']))
     execution=checkpoint['execution_result']
-    prior=[execution['fact_sources'][key] for key in execution['decision_ids']]
+    from .reassessment_history import declaration_sources
+    prior=declaration_sources(execution)
     with localcontext() as ctx:
         ctx.prec=50
         result=_decide(next_input,prior_fact_sources=prior)

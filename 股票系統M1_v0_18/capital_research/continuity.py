@@ -8,8 +8,9 @@ from rotation_research.action_ledger import replay
 from .core import timestamp, number, quantity
 from .close_clock import close_record
 from .fact_lineage import history_at
+from .reassessment_history import ATTEMPT, declaration_sources, reviewed_tokens
 
-CHECKPOINT = 'capital-account-checkpoint/0.5'
+CHECKPOINT = 'capital-account-checkpoint/0.6'
 
 
 def ledger_prefix(origin, fills, day):
@@ -34,7 +35,7 @@ def row_at(origin, fills, day):
 
 
 def _check_result(execution):
-    if execution['schema']!='capital-execution/0.6' or execution['status']!='SYNTHETIC_EXECUTION_REPLAY':
+    if execution['schema']!='capital-execution/0.7' or execution['status']!='SYNTHETIC_EXECUTION_REPLAY':
         raise ValueError('LIFECYCLE_PROOF_REQUIRED: historical results remain readable, not implicitly upgraded')
     if execution['result_id']!=fingerprint({k:v for k,v in execution.items() if k!='result_id'}):
         raise ValueError('Execution fingerprint conflict')
@@ -43,13 +44,46 @@ def _check_result(execution):
         raise ValueError('Exact ordered decision history required')
     sources=execution['fact_sources']
     if set(sources)!=set(ids):raise ValueError('Complete fact declaration history required')
+    attempts=execution['reassessment_attempts']
+    if len({a['id'] for a in attempts})!=len(attempts):
+        raise ValueError('Duplicate reassessment attempt identity')
+    referenced={e['reassessment_attempt_id'] for e in execution.get('execution_events',[]) if 'reassessment_attempt_id' in e}
+    if not referenced<={a['attempt_id'] for a in attempts}:
+        raise ValueError('Execution event lost its reassessment receipt')
+    receipt_times=[timestamp(a['observed_at']) for a in attempts]
+    if receipt_times!=sorted(receipt_times):raise ValueError('Reassessment receipts must be chronological')
+    for i,a in enumerate(attempts):
+        if a['schema']!=ATTEMPT or a['attempt_id']!=fingerprint({k:v for k,v in a.items() if k!='attempt_id'}):
+            raise ValueError('Reassessment attempt fingerprint conflict')
+        d=a['decision'];source=a['fact_source']
+        if d['schema']!='capital-decision/0.7' or d['decision_id']!=fingerprint({k:v for k,v in d.items() if k!='decision_id'}):
+            raise ValueError('Reassessment decision fingerprint conflict')
+        if any(source[k]!=d[k] for k in ('decision_at','data_cutoff')):
+            raise ValueError('Reassessment source decision/cutoff conflict')
+        if not timestamp(d['decision_at'])<=timestamp(a['observed_at'])<=timestamp(execution['observed_until']):
+            raise ValueError('Reassessment receipt outside the execution watermark')
+        prior_ids=[key for key in ids if timestamp(records[key]['decision_at'])<timestamp(d['decision_at'])]
+        expected=history_at(declaration_sources(execution,decision_ids=prior_ids,attempt_limit=i)+[source],d['decision_at'])
+        if expected!=d['fact_history']:raise ValueError('Reassessment fact history differs from received declarations')
+        if not prior_ids or d['continuity']['latest_predecessor_id']!=prior_ids[-1] or a['checkpoint_id']!=d['continuity']['checkpoint_id']:
+            raise ValueError('Reassessment predecessor/checkpoint conflict')
+        p=next((p for p in d['layer3']['alternatives'] if p['id']==a['plan_id']),None)
+        accepted=bool(p and p['feasible'] and p.get('funding')=='SETTLED')
+        if a['outcome']!=('ACCEPTED' if accepted else 'REJECTED'):
+            raise ValueError('Reassessment outcome differs from its proposed plan')
+        if accepted:
+            if records.get(d['decision_id'])!=d or sources.get(d['decision_id'])!=source:
+                raise ValueError('Accepted reassessment must bind the active decision/source')
+        elif d['decision_id'] in records:
+            raise ValueError('Rejected reassessment cannot become an accepted decision')
     for index,key in enumerate(ids):
         d=records[key]
-        if d['schema']!='capital-decision/0.6' or d['decision_id']!=key or fingerprint({k:v for k,v in d.items() if k!='decision_id'})!=key:
+        if d['schema']!='capital-decision/0.7' or d['decision_id']!=key or fingerprint({k:v for k,v in d.items() if k!='decision_id'})!=key:
             raise ValueError('Decision history fingerprint conflict')
         if any(sources[key][k]!=d[k] for k in ('decision_at','data_cutoff')):
             raise ValueError('Fact declaration decision/cutoff conflict')
-        expected=history_at([sources[k] for k in ids[:index+1]],d['decision_at'])
+        own=next((i for i,a in enumerate(attempts) if a['outcome']=='ACCEPTED' and a['decision']['decision_id']==key),None)
+        expected=history_at(declaration_sources(execution,decision_ids=ids[:index+1],attempt_limit=own),d['decision_at'])
         if expected!=d['fact_history']:raise ValueError('Fact history differs from original declarations')
     times=[timestamp(records[key]['decision_at']) for key in ids]
     if times!=sorted(set(times)):raise ValueError('Decision history must be chronological')
@@ -58,12 +92,14 @@ def _check_result(execution):
     latest=records[ids[-1]]
     if execution['latest_decision_id']!=ids[-1] or execution['latest_common_account_id']!=latest['common_account_id']:
         raise ValueError('Latest predecessor identity conflict')
-    tokens=set().union(*(set(d['reviewed_evidence_tokens']) for d in records.values()))
-    if set(execution['reviewed_evidence_tokens'])!=tokens or not tokens<=set(latest['reviewed_evidence_tokens']):
+    tokens=set(reviewed_tokens(execution))
+    if set(execution['reviewed_evidence_tokens'])!=tokens:
         raise ValueError('Reviewed evidence history was dropped')
     orders={o['id']:o for o in execution['order_history']}
     if len(orders)!=len(execution['order_history']) or set(orders)!=set(execution['order_states']):
         raise ValueError('Order history/state identity conflict')
+    if any(a['order_id'] not in orders for a in attempts):
+        raise ValueError('Reassessment receipt belongs to an unknown order')
     fills={f['id']:f for f in execution['fills']};mapping=execution['fill_order_ids']
     if len(fills)!=len(execution['fills']) or set(fills)!=set(mapping):raise ValueError('Exact fill/order linkage required')
     for key,f in fills.items():
@@ -104,7 +140,7 @@ def make_checkpoint(origin, execution, *, through_at):
                general_reserved_cash=execution['decision_records'][execution['latest_decision_id']]['reserved_cash'],
                latest_decision_id=execution['latest_decision_id'],latest_common_account_id=execution['latest_common_account_id'],
                reviewed_evidence_tokens=deepcopy(execution['reviewed_evidence_tokens']),
-               fact_history=history_at([execution['fact_sources'][k] for k in execution['decision_ids']],through_at))
+               fact_history=history_at(declaration_sources(execution),through_at))
     # Full-source and execution fingerprints are integrity metadata, not prefix decisions.
     result=dict(schema=CHECKPOINT,state=state,state_id=fingerprint(state),
         origin_ledger_input=deepcopy(origin),execution_result=deepcopy(execution),

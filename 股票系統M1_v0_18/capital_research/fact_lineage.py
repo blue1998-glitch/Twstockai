@@ -7,7 +7,7 @@ from copy import deepcopy
 from graph_core.core import fingerprint
 from .eligibility import _time, known_fact, validity_status
 
-SCHEMA = 'capital-fact-history/0.2'
+SCHEMA = 'capital-fact-history/0.3'
 BINDING = ('source_id', 'basis_id', 'adjustment_version')
 
 
@@ -98,9 +98,15 @@ def history_at(sources, at):
     """
     events = []
     for source in sources:
+        received_at = None
+        if source['schema'] == 'capital-fact-receipt/0.1':
+            received_at = _time(source['received_at'])
+            source = source['source']
         if source['schema'] != 'capital-fact-declarations/0.1':
             raise ValueError('Versioned fact declarations required')
         start = _time(source['decision_at'])
+        if received_at is not None:
+            start = max(start, received_at)
         if start > _time(at): continue
         for row in source['records']:
             fact = row['fact']; times = {start}
@@ -190,13 +196,18 @@ def history_at(sources, at):
     return result
 
 
-def issues(history, code, asset, kind, fact, at):
+def issues(history, code, asset, kind, fact, at, *, accepted_order=False):
     if fact is None: return ['FACT_IDENTITY_UNKNOWN']
     key = key_of(identity(code, asset, kind, fact))
     reasons = list(history['rejected'].get(key, [])) + list(history['unresolved'].get(key, []))
     root = history['aliases'].get(key)
     if root is None: reasons.append('FACT_IDENTITY_UNKNOWN')
     else:
+        if accepted_order and body(fact) == body(history['roots'][root]['fact']):
+            # A refused body/validity proposal is not the old order's authority.
+            # Its known additional restrictions still block that root below.
+            reasons = [r for r in reasons if r not in (
+                'FACT_CONTENT_REWRITE_NOT_IMPLEMENTED', 'FACT_VALIDITY_REWRITE_NOT_IMPLEMENTED')]
         if history['restriction_conflicts'].get(root):
             reasons.append('FACT_RESTRICTION_CONFLICT_UNKNOWN')
         status = validity_status(history['roots'][root]['fact'], at, at)
@@ -205,18 +216,18 @@ def issues(history, code, asset, kind, fact, at):
     return sorted(set(reasons))
 
 
-def asset_issues(history, code, asset, at):
+def asset_issues(history, code, asset, at, *, accepted_order=False):
     ids = set(asset.get('capital_eligibility', {}).get('evidence_ids', []))
     result = []
     for fact in asset['evidence']:
-        if fact['id'] in ids: result += issues(history, code, asset, 'EVIDENCE', fact, at)
+        if fact['id'] in ids: result += issues(history, code, asset, 'EVIDENCE', fact, at, accepted_order=accepted_order)
     entry = deepcopy(asset['entry_context']); ref = entry.pop('formal_reference')
-    result += issues(history, code, asset, 'ENTRY', entry, at)
-    result += issues(history, code, asset, 'REFERENCE', ref, at)
+    result += issues(history, code, asset, 'ENTRY', entry, at, accepted_order=accepted_order)
+    result += issues(history, code, asset, 'REFERENCE', ref, at, accepted_order=accepted_order)
     return sorted(set(result))
 
 
-def first_issue_at(sources, code, asset, *, after, through):
+def first_issue_at(sources, code, asset, *, after, through, accepted_order=False):
     """First declared known disqualification, separate from processing time."""
     final = history_at(sources, through); candidates = {_time(after)}
     for row in final['observations']:
@@ -227,6 +238,6 @@ def first_issue_at(sources, code, asset, *, after, through):
             candidates.add(max(observed, _time(v['valid_until'])))
     for when in sorted(candidates):
         if _time(after) <= when <= _time(through):
-            if asset_issues(history_at(sources, when.isoformat()), code, asset, when.isoformat()):
+            if asset_issues(history_at(sources, when.isoformat()), code, asset, when.isoformat(), accepted_order=accepted_order):
                 return when.isoformat()
     return None

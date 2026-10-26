@@ -1,3 +1,15 @@
+# 2026-10-26 最新本地｜遭拒中途重評限制收件0.7，未提交
+
+最新入口 `M1_CAPITAL_RESEARCH_REJECTED_REASSESSMENT_20261026_HANDOFF.md`、capital_research/rejected_reassessment_20261026/REPORT.md及CONTRACT_0_7。使用者本輪只授權定向重現／最小修復／必要測試，不commit/push。遠端與本地基線135f73b65e9622a664fcf05adb4cdb09a9c70e02；0.5／0.6已在此固定提交保存，下方「未發布」按當時歷史閱讀。
+
+主兩案先保存輸入／預期／版本並在0.6實跑：遭拒限制未接續，恢復舊bytes放行資格；備款舊單B20仍成交。0.7按收件保留拒絕attempt／原宣告及全部token，不批准提案／替換latest；同觀察成交前擋限制衝突。純value改寫拒絕的有效舊單及合法重評仍B20；未來撤銷不提前生效，合法B7不倒刪、剩13取消。原action_ledger／opening／權利／reserve／fills完整保留，無第二帳。
+
+最終24唯一方法PASS＝15新增＋9必要回歸；修前單例FAIL在集合內，6／14中間批與歷史25／35／20／38／51／46不累加。before首批conditional B99被既有成本擋住留史；before-final只修對照至B90，主五案before-final／after-final的輸入及oracle逐bytes相同。新decision／execution／comparison0.7，checkpoint0.6，fact-history0.3，舊READ不重算或隱式遷移。只原唯一Codex／原工作區，不開代理／worktree／分支。無bootstrap/hydrate、真實producer、六方案、UI／Android、樣本外、部署／交易／訊息。
+
+70／2／其中8／0、正式false、主壓力null及所有來源／圖形契約保持；通用來源認證、更正／自動解除、完整分叉、R2/F及原未支援帳務仍未完成。原件恢復只證資格，無第三輪成交或1/13行情；本版部分成交actual不是完整跨輪execution矩陣。Work尚未取得未提交0.7，不冒獨立驗收。Astra／第一工作區救援原件未取得未讀，不重建／推定890檔。下一輪先原唯一Codex唯讀審查；無新明確保存授權不commit/push。以下歷史原文完整保留。
+
+---
+
 # 2026-10-26 最新本地｜遭拒宣告限制衝突0.6，未提交
 
 使用者已明確答覆授權定向重現、最小修復及必要測試，先不commit/push。最新入口M1_CAPITAL_RESEARCH_CONFLICTS_20261026_HANDOFF.md、capital_research/evidence_conflicts_20261026/REPORT.md及CONTRACT_0_6。主三輪混合期限放寬／新撤銷與四變體均先存before實跑重現，再按原事實root保留限制衝突UNKNOWN；有效原件正例與獨立新事實保持，不建第二帳。決策／成交／比較0.6、checkpoint0.5、fact-history0.2。原0.5 source封存36份，舊證據／oracle／log不改；舊manifest對封存版本。
