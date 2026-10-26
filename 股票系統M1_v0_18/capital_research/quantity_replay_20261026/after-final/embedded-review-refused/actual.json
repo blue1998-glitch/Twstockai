@@ -1,0 +1,58 @@
+{
+  "replay": {
+    "schema": "capital-quantity-replay/0.1",
+    "synthetic": true,
+    "status": "STOPPED_INPUT_ERROR",
+    "run_policy": {
+      "version": "explicit-synthetic-round-budget/0.1",
+      "parameter_source": "ENGINEERED_SYNTHETIC_REPLAY_NOT_STRATEGY",
+      "available_at": "2026-01-05T14:00:00+08:00",
+      "max_rounds": "8"
+    },
+    "implementation_round_limit": 8,
+    "rounds": [
+      {
+        "index": 0,
+        "id": "r1",
+        "status": "STOPPED_INPUT_ERROR",
+        "quantity_request": null,
+        "generation": null,
+        "selected_candidate": null,
+        "execution_job": null,
+        "execution": null,
+        "checkpoint": null,
+        "numeric_prefix": null,
+        "cancellations_requested": [],
+        "cancellations_applied": false,
+        "reasons": [
+          "ROUND_FIELDS_NOT_SUPPORTED"
+        ],
+        "error_type": "ValueError",
+        "failed_stage": "ROUND_INPUT"
+      }
+    ],
+    "execution_calls": 0,
+    "stopped_at": "r1",
+    "reasons": [
+      "ROUND_FIELDS_NOT_SUPPORTED"
+    ],
+    "last_execution": null,
+    "historical_checkpoint": null,
+    "execution_watermark": null,
+    "checkpoint_resume_api": "NOT_IMPLEMENTED_REPLAY_COMPLETE_EXPLICIT_INPUT_ONLY",
+    "ranking": null,
+    "selected_strategy": null,
+    "strategy_validated": false,
+    "data_qualified": false,
+    "execution_model_qualified": false,
+    "historical_signal_eligible": false,
+    "policy_authorized": false,
+    "live_execution_authorized": false,
+    "primary_pressure_id": null
+  },
+  "source_integrity_metadata": {
+    "full_input_id": "sha256:08da07dc636a27d146f7b5bd8a53b23c9e2b153dd1c6ac122f05b5b74aec526f",
+    "original_ledger_input_id": "sha256:157af3c20da88039510200ba651afa2e23010ddc632ed2281cc0fa5bcdad45de",
+    "close_proof_id": "sha256:91a505b10b66e5d5f281a2c9994f1a3b1a121424882fbc88735c245c2e59378c"
+  }
+}

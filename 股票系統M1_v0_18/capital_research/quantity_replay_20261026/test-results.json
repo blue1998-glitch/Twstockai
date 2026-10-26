@@ -1,0 +1,30 @@
+{
+  "schema": "quantity-replay-method-status/0.1",
+  "unique_methods": 15,
+  "total_method_executions": 16,
+  "original_run_log": "tests-final.log",
+  "original_passes": 14,
+  "original_failures": 1,
+  "corrected_method_log": "tests-gate-control.log",
+  "corrected_method": "test_outer_gate_is_applied_before_executor_not_raw_core_only",
+  "original_assertions_preserved": true,
+  "unchanged_method_bodies_not_rerun": 14,
+  "final_method_statuses": {
+    "test_embedded_reassessment_cannot_bypass_quantity_gate": "PASS",
+    "test_exact_decision_latest_fills_reserve_and_tokens_remain_bound": "PASS",
+    "test_explicit_cancel_and_new_review_do_not_resurrect_old_order": "PASS",
+    "test_explicit_hold_immutability_and_no_automatic_order_generation": "PASS",
+    "test_explicit_order_exceeding_target_is_still_rejected_by_original_executor": "PASS",
+    "test_future_prefix_and_full_integrity_are_compared_separately": "PASS",
+    "test_late_close_and_account_reset_are_rejected_before_new_generation": "PASS",
+    "test_new_batch_cannot_reuse_trigger_first_label_or_shared_bar": "PASS",
+    "test_outer_gate_is_applied_before_executor_not_raw_core_only": "PASS",
+    "test_partial_fills_then_independent_round_preserves_original_capital": "PASS",
+    "test_price_limit_and_unsold_A_do_not_become_completed_rotation": "PASS",
+    "test_replay_is_not_strategy_performance_or_authorization": "PASS",
+    "test_resource_budget_and_missing_selection_have_no_fallback": "PASS",
+    "test_settled_money_does_not_release_conditional_buy": "PASS",
+    "test_unsupported_payable_retains_actual_prefix_and_liabilities": "PASS"
+  },
+  "all_final_methods_pass": true
+}

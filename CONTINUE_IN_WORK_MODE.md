@@ -1,3 +1,15 @@
+# 2026-10-26 最新有效｜受控數量候選逐輪回放0.1
+
+新入口capital_research/quantity_replay_20261026/REPORT.md與CONTRACT.md，純接線quantity_replay.replay_sequence。輸入明示候選選擇與合成委託／tape，不自訂比例／限價帶；先核0.2外層完整閘門，才交原0.8執行。逐輪從同一原帳的實際回放checkpoint導入當期account，保留opening／fills／權利／reserve／latest／token，沒有第二帳。
+
+18個最終合成案例（17主案例＋1強化外層閘門對照），15唯一方法最終通過；首批1個方法因fixture未單獨隔離外層而失敗，原斷言不減，只補該方法，舊log留史，不加成16。修前cases/*/actual及根summary不是最終結果；最終看after-final及gate-control-summary，source-versions-final-with-control綁最終source，生產bridge與17案after-final版本相同。
+
+停止狀態保留歷史execution及本輪review原件，不視為可略過拒絕輪的resume狀態；無自動fallback或取消。原引擎可用能力以本接口接線範圍為限，同區間原條件單重評尚未接入；期初應付／外部活單等原未支援保持。交割到款不自動買進，部分成交按實際持股接續。合成機制不代表策略或真實績效。
+
+原工作區／分支／唯一Codex，本輪已核基線bca6409c72b5eebefe9532877033b25d6a6b879b；沿既有里程碑授權自審及正常保存讀回，不預設轉Work。原0.2／0.8程式、舊研究／來源／資格／1101帳戶證據阻塞不變，無新來源／私人文件／bootstrap／真實producer／九路徑或部署交易。以下原文完整保留。
+
+---
+
 # 2026-10-26 最新有效｜同一里程碑補齊數量候選0.2
 
 先讀capital_research/quantity_candidates_v02_20261026/REPORT.md及CONTRACT.md。沿既有generate新增0.2明示A賣量／B新增量及FIRST_ENTRY／ADDITIONAL_BATCH／UNKNOWN階段；首次核當期資金資格與同帳階段邊界，追加須獨立觸發。有效舊事實可review，不能以首次／family／ID／別名／新review洗掉已知B交易、委託或失效歷史。原單不由生成器撤銷或重下；未支援活單承接明示NOT_IMPLEMENTED，預留與共同風險仍由0.8計算。

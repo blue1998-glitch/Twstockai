@@ -1,3 +1,11 @@
+# 最新：數量候選受控逐輪回放接線0.1
+
+API `quantity_replay.replay_sequence(request)`；入口[quantity_replay_20261026/REPORT.md](quantity_replay_20261026/REPORT.md)、[CONTRACT.md](quantity_replay_20261026/CONTRACT.md)。由明示合成選擇／orders／tape串接未改的quantity0.2與execution0.8，不產生策略、最佳數量或委託。先核外層閘門，實際回放後才用原checkpoint接下輪帳戶。等待資金仍須新重評；部分成交、過期／取消、原權利及全部token完整承接。
+
+最終18案例、15唯一方法（僅補跑1個強化fixture方法，未重跑其餘）為本輪證據；最終結果在after-final，修前case actual／log及測試斷言留史。同區間原條件單重評未接入，原帳務／活單未支援仍停止，不fallback或自行撤單。一般讀取不執行引擎；工作方式沿根有效入口，不另立規則。下方原成果完整保留。
+
+---
+
 # 最新：同一數量候選功能補齊0.2
 
 沿原`quantity_candidates.generate`接受`capital-quantity-candidates-input/0.2`：明示sell_A／additional_B域，涵蓋A全賣但B僅部分配置；FIRST_ENTRY／ADDITIONAL_BATCH／UNKNOWN分開檢查。首次須原帳階段邊界及當期新資金資格，追加仍須新獨立token，不藉標籤或review重置。既有B買單預留保持，新批次完整承接未支援時NOT_IMPLEMENTED；不撤單或生成委託。0.1 schema行為保留，舊JSON不重算。

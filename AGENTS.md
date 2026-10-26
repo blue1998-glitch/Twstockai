@@ -1,3 +1,15 @@
+# 2026-10-26 最新有效｜數量候選到逐輪合成回放接線0.1
+
+本輪唯一能力為capital_research/quantity_replay.py及quantity_replay_20261026/REPORT.md、CONTRACT.md。輸入明示選擇／orders／限價期限／tape，先重算0.2完整外層閘門，再委派未改execution0.8；不選數量、比例、策略或生成委託。下一輪account只從原帳實際fills／權利／未成交狀態／reserve／latest／token的原checkpoint取得，不重開本金。舊quantity_candidates0.2、core／execution0.8及原trend_replay均不改。
+
+只支援明示切段回放；同區間reassessments／外部checkpoint注入不接受，未支援期初應付／不中斷外部活單仍停止。交割到款不批准買進，新批須新閘門；原條件單如由輸入明示取消後重提，只按原引擎實際記錄處理，不自行撤單。拒絕／錯誤不fallback續抱，不把請求取消當已生效；停止結果保留新review原件與歷史execution，沒有可跳過拒絕輪的resume API。
+
+先存契約／精確input與expected／source版本。最終18個合成案例（原17＋強化閘門對照1）；15個唯一方法最終通過，首批14通過及1個強化fixture方法補跑通過，不加成16。修前錯誤分類actual、失敗log及原測試斷言留史；after-final才是最終source結果。沒有改oracle、舊source或重跑舊suite／九路徑／prefix producer。
+
+本輪基線bca6409c72b5eebefe9532877033b25d6a6b879b；保存方式沿既有功能里程碑授權，由原Codex自審、正常commit/push及GitHub讀回，不預設轉Work。集中複核資金／權利／成交／未來隔離，全部正式false、主壓力null、1101期初cash_claims UNKNOWN／拒算與70／2／其中8／真實總淨合格0保持。無新來源、私人原件、bootstrap、真實producer、策略績效、UI／Android、樣本外、部署交易付費訊息。原未支援與全部祖先保留；以下原文按歷史完整保留。
+
+---
+
 # 2026-10-26 最新有效｜分批換股數量候選0.2補齊指定需求
 
 本次仍是同一數量候選功能里程碑，沿既有quantity_candidates.generate延伸0.2，不平行重做。最低已核1b200d6的後續c1e59f1完整保留；新入口capital_research/quantity_candidates_v02_20261026/REPORT.md及CONTRACT.md。0.2明示sell_A／additional_B整股範圍，包含賣完A而僅配置部分B；退出A不冒稱全帳清倉，其他資產／權利保持。所有財務檢查仍委派未改的core／execution0.8與full_transfer。
