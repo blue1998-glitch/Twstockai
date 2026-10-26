@@ -1,3 +1,11 @@
+# 最新：C原單保存結果唯讀並列範例0.1
+
+直接讀[c_order_compare_20261026/README.md](c_order_compare_20261026/README.md)、[合格／未知等待主表](c_order_compare_20261026/actual/reviewed-versus-unknown-wait/readable.txt)、[拒比範例](c_order_compare_20261026/actual/capacity-mismatch/readable.txt)、[REPORT](c_order_compare_20261026/REPORT.md)及[CONTRACT](c_order_compare_20261026/CONTRACT.md)。沿既有純READ API／CLI，原source不改、不重跑；共同起點／截止／市場一致才並列，否則columns空。
+
+六個保存原件組合：兩組可並列、四組拒比；共引用七份原件，不是六個獨立市場樣本。主表等待欄是當期資格UNKNOWN遭拒後仍等待，不是無重評控制。4個必要唯一方法通過，不加歷史PASS；原帳／權利／reserve／latest／token與正式false/null保持，不選勝者。工作方式沿根有效入口；下方原文完整保留。
+
+---
+
 # 最新：C類原條件單同單重評0.1
 
 入口[c_order_review_20261026/README.md](c_order_review_20261026/README.md)、[REPORT](c_order_review_20261026/REPORT.md)、[CONTRACT](c_order_review_20261026/CONTRACT.md)及[原單白話摘要](c_order_review_20261026/readback/valid-C-same-order.txt)。原API新增明示input／review0.2處理C原單，綁原trigger／order／remaining，維持C及原token；新批仍須新獨立觸發。數值檢查與帳務沿原機制，新scope決策／execution0.9、checkpoint0.8，舊版不隱式遷移。

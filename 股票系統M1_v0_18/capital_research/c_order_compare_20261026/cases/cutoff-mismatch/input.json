@@ -1,0 +1,23 @@
+{
+  "schema": "capital-c-order-comparison-example/0.1",
+  "base_commit": "63a81306b0d181dd47339b3bca01fd6347b94881",
+  "synthetic": true,
+  "items": [
+    {
+      "label": "原1月9日截止",
+      "source": {
+        "path": "股票系統M1_v0_18/capital_research/c_order_review_20261026/after-checkpoint-fix/valid-C-same-order/actual.json",
+        "bytes": 644653,
+        "sha256": "2570de4d79b7cc70dcd4fcc1cb04d17244fe596130498dbf0c8a95e6a8d0b695"
+      }
+    },
+    {
+      "label": "另一1月12日截止",
+      "source": {
+        "path": "股票系統M1_v0_18/capital_research/c_order_review_20261026/after-checkpoint-fix/future-revocation-known-after-partial/actual.json",
+        "bytes": 669376,
+        "sha256": "f8976e827dc63c12c151e4387bdc76fbcbcf0aabb38d730e6e890f2eb72333e8"
+      }
+    }
+  ]
+}

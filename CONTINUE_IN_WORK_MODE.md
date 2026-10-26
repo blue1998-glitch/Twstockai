@@ -1,3 +1,13 @@
+# 2026-10-26 最新有效｜C原單保存結果唯讀並列範例0.1
+
+最新入口股票系統M1_v0_18/capital_research/c_order_compare_20261026/README.md、REPORT.md及CONTRACT.md；沿原lifecycle_compare／lifecycle_compare_read，只讀已保存C review0.2／execution0.9結果，原比較／摘要／數值／帳務source不改。六個精確來源引用／expected先凍結，兩組可並列、四組因容量／交易狀態／截止／期初帳不同而拒比，columns空；不補行情、截短、重跑或評分。
+
+主表為原C單重評合格B20成交，對當期資格UNKNOWN遭拒後活單20等待；不是完全未重評控制，也不是相同每輪資訊的策略競爭。原帳資本1430／權利／reserve／latest／全部token只投影一次，完整來源ID與當期identity分開。最終actual/、文字readable.txt及tests.log可直接讀。4個本輪唯一方法／4次執行通過，含fresh-process成功／拒比CLI阻擋引擎、寫檔與網路；不累加六範例／兩子程序或歷史PASS。
+
+最低基線63a81306b0d181dd47339b3bca01fd6347b94881，固定提交以Git／回覆為準。沿既有功能里程碑授權原唯一Codex／原工作區／原分支自審、正常commit/push及GitHub讀回，不預設Work逐輪驗收；本輪無需人工操作。1101 UNKNOWN、70／2／其中8／真實總淨合格0、正式false／主壓力null、來源／圖形／原未支援全部保持。無舊suite／真實producer／九路徑／bootstrap或部署交易。下一項C原單遭拒後受控再次重評尚未指定／工程，不自行擴張。以下原文完整留史。
+
+---
+
 # 2026-10-26 最新有效｜C類已核准條件買單同單重評0.1
 
 最新入口股票系統M1_v0_18/capital_research/c_order_review_20261026/README.md、REPORT.md、CONTRACT.md。原API conditional_quantity_review.reassess_conditional新增明示input／review0.2，僅C原單；舊0.1仍B/E。綁原C/R1唯一核准、原觸發／order／remaining及checkpoint／latest／完整token；不換family、不增量、不建第二帳。當期資格／成本／資金／reserve／風險／事實限制照原機制；有效舊事實可續評，新批仍須新獨立觸發。
