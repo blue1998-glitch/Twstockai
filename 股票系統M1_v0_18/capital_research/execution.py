@@ -151,6 +151,10 @@ def _simulate(job):
         return dict(decision_ids=decision_ids,decision_records=decision_records,
                     fact_sources=fact_sources,reassessment_attempts=reassessment_attempts)
 
+    def result_version():
+        rows=list(decision_records.values())+[a['decision'] for a in reassessment_attempts]
+        return 'capital-execution/0.9' if any(d['schema']=='capital-decision/0.9' for d in rows) else VERSION
+
     def lineage():
         latest=decision_records[decision_ids[-1]]
         return dict(decision_ids=deepcopy(decision_ids),decision_records=deepcopy(decision_records),
@@ -242,7 +246,7 @@ def _simulate(job):
             if st['status'] in ('CANCELLED_EVIDENCE','EXPIRED_UNFILLED') or not number(st['remaining']):continue
             if fresh['data_cutoff'][:10]>=day or any(f['date']>fresh['data_cutoff'][:10] for f in fills):
                 raise ValueError('Reassessment requires a genuine prior daily close with no later fill hidden')
-            provisional=dict(schema=VERSION,status='SYNTHETIC_EXECUTION_REPLAY',decision_id=result['decision_id'],
+            provisional=dict(schema=result_version(),status='SYNTHETIC_EXECUTION_REPLAY',decision_id=result['decision_id'],
                 common_account_id=result['common_account_id'],origin_ledger_input_id=fingerprint(ledger_input),
                 observed_until=fresh['data_cutoff'],orders=deepcopy(orders),order_history=deepcopy(order_history),
                 order_states=deepcopy(order_state),fills=deepcopy(fills),**lineage())
@@ -250,8 +254,14 @@ def _simulate(job):
             cp=make_checkpoint(ledger_input,provisional,through_at=fresh['data_cutoff'])
             if review['checkpoint_id']!=cp['checkpoint_id']:
                 raise ValueError('Reassessment checkpoint does not match executed fills, rights and unfilled orders')
+            same_order_id=None
+            marker=review.get('same_order_review')
+            if marker is not None:
+                if set(marker)!={'schema','order_id'} or marker['schema']!='capital-same-order-review/0.1' or marker['order_id']!=o['id']:
+                    raise ValueError('SAME_ORDER_REVIEW_MARKER_CONFLICT')
+                same_order_id=o['id']
             fresh_result=resume_decision(dict(decision=latest_result),fresh,checkpoint=cp,
-                cancelled_order_ids=review['cancelled_order_ids'])['decision']
+                cancelled_order_ids=review['cancelled_order_ids'],same_order_id=same_order_id)['decision']
             if fresh_result['decision_id']!=review['decision_id']:
                 raise ValueError('Reassessment decision_id mismatch')
             fresh_plan=next((p for p in fresh_result['layer3']['alternatives'] if p['id']==review['plan_id']),None)
@@ -368,7 +378,7 @@ def _simulate(job):
             decisions.append(dict(at=o['expires_at'],order_id=o['id'],status='EXPIRED_UNFILLED',reason='EXPLICIT_ORDER_DEADLINE',remaining=st['remaining']))
     final = replay(ledger_prefix(ledger_input,fills,job['observed_until'][:10]))
     # Return qualification is inherited as synthetic; never rename it to real performance.
-    out = dict(schema=VERSION, status='SYNTHETIC_EXECUTION_REPLAY', decision_id=result['decision_id'],
+    out = dict(schema=result_version(), status='SYNTHETIC_EXECUTION_REPLAY', decision_id=result['decision_id'],
                common_account_id=result['common_account_id'], ledger_version=final['schema'],
                origin_ledger_input_id=fingerprint(ledger_input),opening_checkpoint_id=continuation['checkpoint']['checkpoint_id'] if continuation else None,
                execution_model_version=data['execution_model']['version'], observed_until=job['observed_until'],

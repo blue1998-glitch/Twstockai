@@ -40,10 +40,11 @@ def _signed(value,key):
 
 
 def _snapshot(e,cp,pointer):
-    _require(e['schema']=='capital-execution/0.8' and e['status']=='SYNTHETIC_EXECUTION_REPLAY','UNSUPPORTED_SAVED_EXECUTION')
+    _require(e['schema'] in ('capital-execution/0.8','capital-execution/0.9') and e['status']=='SYNTHETIC_EXECUTION_REPLAY','UNSUPPORTED_SAVED_EXECUTION')
     _require(all(e[k] is False for k in FLAGS),'SOURCE_QUALIFICATION_NOT_RESEARCH_ONLY')
     _require(e['result_id']==_fp({k:v for k,v in e.items() if k!='result_id'}),'EXECUTION_FINGERPRINT_CONFLICT')
-    _require(cp['schema']=='capital-account-checkpoint/0.7','UNSUPPORTED_SAVED_CHECKPOINT')
+    expected_cp='capital-account-checkpoint/0.8' if e['schema']=='capital-execution/0.9' else 'capital-account-checkpoint/0.7'
+    _require(cp['schema']==expected_cp,'UNSUPPORTED_SAVED_CHECKPOINT')
     s=cp['state'];_require(cp['state_id']==_fp(s),'CHECKPOINT_STATE_FINGERPRINT_CONFLICT')
     _require(cp['checkpoint_id']==_fp(dict(schema=cp['schema'],state_id=cp['state_id'])),'CHECKPOINT_ID_CONFLICT')
     _require(s['through_at']==e['observed_until'] and s['ledger_close']['as_of']==s['through_at'],'SAVED_WATERMARK_CONFLICT')
@@ -61,13 +62,16 @@ def _snapshot(e,cp,pointer):
     ids=e['decision_ids'];records=e['decision_records']
     _require(len(ids)==len(set(ids)) and set(ids)==set(records) and ids[-1]==e['latest_decision_id'],'DECISION_HISTORY_CONFLICT')
     for key,d in records.items():
-        _signed(d,'decision_id');_require(key==d['decision_id'] and d['schema']=='capital-decision/0.8','DECISION_ID_CONFLICT')
+        _signed(d,'decision_id');_require(key==d['decision_id'] and d['schema'] in ('capital-decision/0.8','capital-decision/0.9'),'DECISION_ID_CONFLICT')
+        _read_scope(d,e)
     _require(records[e['latest_decision_id']]['common_account_id']==e['latest_common_account_id'],'LATEST_ACCOUNT_CONFLICT')
     _require(s['general_reserved_cash']==records[e['latest_decision_id']]['reserved_cash'],'GENERAL_RESERVE_CONFLICT')
     attempts=e['reassessment_attempts'];_require(len({a['id'] for a in attempts})==len(attempts),'REVIEW_ID_COLLISION')
+    scoped=any(d['schema']=='capital-decision/0.9' for d in list(records.values())+[a['decision'] for a in attempts])
+    _require((e['schema']=='capital-execution/0.9')==scoped,'SAVED_SCOPE_EXECUTION_VERSION_CONFLICT')
     for a in attempts:
         _require(a['schema']=='capital-reassessment-attempt/0.2','UNSUPPORTED_REVIEW_ATTEMPT')
-        _signed(a,'attempt_id');_signed(a['decision'],'decision_id')
+        _signed(a,'attempt_id');_signed(a['decision'],'decision_id');_read_scope(a['decision'],e)
         _require(a['request_content_id']==_fp(a['request']),'REVIEW_REQUEST_CONTENT_CONFLICT')
         _require(a['order_id'] in orders and a['outcome'] in ('ACCEPTED','REJECTED'),'REVIEW_ORDER_OR_OUTCOME_CONFLICT')
         _require(_time(a['decision']['decision_at'])<=_time(a['observed_at'])<=_time(s['through_at']),'REVIEW_OUTSIDE_WATERMARK')
@@ -89,9 +93,28 @@ def _snapshot(e,cp,pointer):
     return dict(execution=e,checkpoint=cp,pointer=pointer)
 
 
+def _read_scope(d,e):
+    """Only saved structural links. Never import the numerical scope validator."""
+    if d['schema']=='capital-decision/0.8':
+        _require('same_order_continuation' not in d,'UNEXPECTED_SCOPE_IN_LEGACY_DECISION');return
+    _require(d['schema']=='capital-decision/0.9','UNSUPPORTED_SAVED_DECISION')
+    s=d['same_order_continuation'];_require(s['schema']=='capital-same-order-scope/0.1','UNSUPPORTED_ORDER_SCOPE')
+    _require(s['use']=='SAME_ORIGINAL_ORDER_ONLY_NOT_NEW_BATCH','UNSUPPORTED_ORDER_SCOPE_USE')
+    _signed(s,'scope_id')
+    order=next((o for o in e['order_history'] if o['id']==s['order_id']),None)
+    _require(order is not None,'SAVED_ORDER_SCOPE_ORDER_MISSING')
+    _require(_fp(order)==s['order_fingerprint'] and s['account_id']==d['common_account_id'] and
+        s['checkpoint_id']==d['continuity']['checkpoint_id'] and s['latest_predecessor_id']==d['continuity']['latest_predecessor_id'],
+        'SAVED_ORDER_SCOPE_BINDING_CONFLICT')
+    original=e['decision_records'][s['original_decision_id']]
+    p=next((p for p in original['layer3']['alternatives'] if p['id']==s['plan_id']),None)
+    _require(p is not None and original['decision_at']==order['decision_at'] and p['family']=='C' and p['trigger_ids']==s['trigger_ids'],
+        'SAVED_ORDER_SCOPE_ORIGINAL_CONFLICT')
+
+
 def _collect(saved):
     snapshots=[];approvals={}
-    if 'review' in saved and saved['review']['schema']=='capital-conditional-quantity-review/0.1':
+    if 'review' in saved and saved['review']['schema'] in ('capital-conditional-quantity-review/0.1','capital-conditional-quantity-review/0.2'):
         r=saved['review'];kind='conditional';status=r['status']
         _require(status in {'REPLAYED_ACCEPTED_REVIEW','REPLAYED_REJECTED_REVIEW','STOPPED_ORIGINAL_GATE',
             'STOPPED_INPUT_ERROR','STOPPED_NOT_IMPLEMENTED','STOPPED_EXECUTION_REFUSAL'},'UNSUPPORTED_SAVED_STATUS')
@@ -217,6 +240,7 @@ def summarize_saved(saved):
                     restriction_conflicts=deepcopy(d['fact_history']['restriction_conflicts']),
                     new_evidence_tokens=deepcopy(d['new_evidence_tokens']),
                     source_pointer=pointer+'/reassessment_attempts/'+str(j)))
+                if d['schema']=='capital-decision/0.9':reviews[-1]['same_order_continuation']=deepcopy(d['same_order_continuation'])
             out['orders'].append(dict(order_id=key,code=o['code'],side=o['side'],origin_decision_id=origin['decision_id'],
                 original_order=deepcopy(o),approval_status='SAVED_RESEARCH_APPROVAL' if approved else 'UNKNOWN',
                 approved_order_quantity=o['shares'] if approved else None,

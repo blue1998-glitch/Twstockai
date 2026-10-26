@@ -9,6 +9,8 @@ from .execution import simulate
 
 INPUT='capital-conditional-quantity-review-input/0.1'
 SCHEMA='capital-conditional-quantity-review/0.1'
+INPUT_C='capital-conditional-quantity-review-input/0.2'
+SCHEMA_C='capital-conditional-quantity-review/0.2'
 
 
 def reassess_conditional(request):
@@ -19,7 +21,8 @@ def reassess_conditional(request):
 
 
 def _reassess_conditional(request):
-    out=dict(schema=SCHEMA,synthetic=True,status='PENDING',reasons=[],
+    c_review=request.get('schema')==INPUT_C
+    out=dict(schema=SCHEMA_C if c_review else SCHEMA,synthetic=True,status='PENDING',reasons=[],
         prefix_execution=None,prefix_checkpoint=None,original_approval=None,
         review_request=None,review_decision=None,execution_job=None,execution=None,checkpoint=None,
         original_replay_status=None,numeric_result=None,ranking=None,
@@ -31,7 +34,7 @@ def _reassess_conditional(request):
         out.update(status=status,reasons=[reason]);return wrap()
     stage='INPUT'
     try:
-        if set(request)!={'schema','synthetic','replay_input','review'} or request['schema']!=INPUT or request['synthetic'] is not True:
+        if set(request)!={'schema','synthetic','replay_input','review'} or request['schema'] not in (INPUT,INPUT_C) or request['synthetic'] is not True:
             raise ValueError('EXPLICIT_SYNTHETIC_CONDITIONAL_REVIEW_REQUIRED')
         intent=request['review']
         if set(intent)!={'id','order_id','decision_template','policy'} or not isinstance(intent['id'],str) or not intent['id']:
@@ -74,7 +77,7 @@ def _reassess_conditional(request):
         if active!=[order['id']]:
             return stop('STOPPED_NOT_IMPLEMENTED','SINGLE_OWN_CONDITIONAL_BUY_ONLY')
         approved=record['selected_candidate'];plan=approved['plan']
-        if plan is None or plan['family'] not in ('B','E') or plan['route']!='R1':
+        if plan is None or plan['family'] not in (('C',) if c_review else ('B','E')) or plan['route']!='R1':
             return stop('STOPPED_NOT_IMPLEMENTED','ORIGINAL_FAMILY_CONTINUATION_NOT_IMPLEMENTED')
         remaining=quantity(st['remaining'])
         if not 0<remaining<=quantity(order['shares'])<=quantity(approved['additional_B']):
@@ -98,9 +101,11 @@ def _reassess_conditional(request):
         bound_plan['targets'][destination]=str(quantity(account['holdings'][destination]['shares'])+remaining)
         bound_plan['edge_budget']=policy['edge_budget'];data['plans']=[bound_plan]
         previous=dict(decision=deepcopy(execution['decision_records'][execution['latest_decision_id']]))
-        decision=resume_decision(previous,data,checkpoint=cp,cancelled_order_ids=active)['decision']
+        decision=resume_decision(previous,data,checkpoint=cp,cancelled_order_ids=active,
+            same_order_id=order['id'] if c_review else None)['decision']
         review=dict(id=intent['id'],order_id=order['id'],decision_input=data,decision_id=decision['decision_id'],
             plan_id=bound_plan['id'],checkpoint_id=cp['checkpoint_id'],cancelled_order_ids=active)
+        if c_review:review['same_order_review']=dict(schema='capital-same-order-review/0.1',order_id=order['id'])
         out.update(original_approval=dict(candidate_id=approved['id'],classification=approved['classification'],
             original_decision_id=approved['core_decision_id'],original_plan=deepcopy(plan),
             order=deepcopy(order),remaining=str(remaining),origin_ledger_input_id=execution['origin_ledger_input_id'],

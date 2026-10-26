@@ -1,0 +1,12 @@
+{
+  "base_case": "valid-C-same-order",
+  "edit": {
+    "target": "previous",
+    "path": [
+      "decision",
+      "decision_id"
+    ],
+    "value": "sha256:wrong"
+  },
+  "expected_error": "Invalid saved predecessor"
+}

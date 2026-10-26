@@ -11,6 +11,7 @@ from .fact_lineage import history_at
 from .reassessment_history import ATTEMPT, declaration_sources, reviewed_tokens, validate_request_binding
 
 CHECKPOINT = 'capital-account-checkpoint/0.7'
+CHECKPOINT_C = 'capital-account-checkpoint/0.8'
 
 
 def ledger_prefix(origin, fills, day):
@@ -35,7 +36,7 @@ def row_at(origin, fills, day):
 
 
 def _check_result(execution):
-    if execution['schema']!='capital-execution/0.8' or execution['status']!='SYNTHETIC_EXECUTION_REPLAY':
+    if execution['schema'] not in ('capital-execution/0.8','capital-execution/0.9') or execution['status']!='SYNTHETIC_EXECUTION_REPLAY':
         raise ValueError('LIFECYCLE_PROOF_REQUIRED: historical results remain readable, not implicitly upgraded')
     if execution['result_id']!=fingerprint({k:v for k,v in execution.items() if k!='result_id'}):
         raise ValueError('Execution fingerprint conflict')
@@ -45,6 +46,9 @@ def _check_result(execution):
     sources=execution['fact_sources']
     if set(sources)!=set(ids):raise ValueError('Complete fact declaration history required')
     attempts=execution['reassessment_attempts']
+    scoped=any(d['schema']=='capital-decision/0.9' for d in list(records.values())+[a['decision'] for a in attempts])
+    if execution['schema']!=('capital-execution/0.9' if scoped else 'capital-execution/0.8'):
+        raise ValueError('Execution version does not match same-order decision history')
     if len({a['id'] for a in attempts})!=len(attempts):
         raise ValueError('Duplicate reassessment attempt identity')
     referenced={e['reassessment_attempt_id'] for e in execution.get('execution_events',[]) if 'reassessment_attempt_id' in e}
@@ -57,8 +61,10 @@ def _check_result(execution):
             raise ValueError('Reassessment attempt fingerprint conflict')
         validate_request_binding(a)
         d=a['decision'];source=a['fact_source']
-        if d['schema']!='capital-decision/0.8' or d['decision_id']!=fingerprint({k:v for k,v in d.items() if k!='decision_id'}):
+        if d['schema'] not in ('capital-decision/0.8','capital-decision/0.9') or d['decision_id']!=fingerprint({k:v for k,v in d.items() if k!='decision_id'}):
             raise ValueError('Reassessment decision fingerprint conflict')
+        from .order_review import validate_saved
+        validate_saved(d,execution)
         if any(source[k]!=d[k] for k in ('decision_at','data_cutoff')):
             raise ValueError('Reassessment source decision/cutoff conflict')
         if not timestamp(d['decision_at'])<=timestamp(a['observed_at'])<=timestamp(execution['observed_until']):
@@ -79,8 +85,10 @@ def _check_result(execution):
             raise ValueError('Rejected reassessment cannot become an accepted decision')
     for index,key in enumerate(ids):
         d=records[key]
-        if d['schema']!='capital-decision/0.8' or d['decision_id']!=key or fingerprint({k:v for k,v in d.items() if k!='decision_id'})!=key:
+        if d['schema'] not in ('capital-decision/0.8','capital-decision/0.9') or d['decision_id']!=key or fingerprint({k:v for k,v in d.items() if k!='decision_id'})!=key:
             raise ValueError('Decision history fingerprint conflict')
+        from .order_review import validate_saved
+        validate_saved(d,execution)
         if any(sources[key][k]!=d[k] for k in ('decision_at','data_cutoff')):
             raise ValueError('Fact declaration decision/cutoff conflict')
         own=next((i for i,a in enumerate(attempts) if a['outcome']=='ACCEPTED' and a['decision']['decision_id']==key),None)
@@ -143,16 +151,16 @@ def make_checkpoint(origin, execution, *, through_at):
                reviewed_evidence_tokens=deepcopy(execution['reviewed_evidence_tokens']),
                fact_history=history_at(declaration_sources(execution),through_at))
     # Full-source and execution fingerprints are integrity metadata, not prefix decisions.
-    result=dict(schema=CHECKPOINT,state=state,state_id=fingerprint(state),
+    result=dict(schema=CHECKPOINT_C if execution['schema']=='capital-execution/0.9' else CHECKPOINT,state=state,state_id=fingerprint(state),
         origin_ledger_input=deepcopy(origin),execution_result=deepcopy(execution),
         integrity=dict(origin_ledger_input_id=fingerprint(origin),execution_result_id=execution['result_id'],
                        ledger_close_proof_id=fingerprint(execution['ledger_close_proof'])))
-    result['checkpoint_id']=fingerprint(dict(schema=CHECKPOINT,state_id=result['state_id']))
+    result['checkpoint_id']=fingerprint(dict(schema=result['schema'],state_id=result['state_id']))
     return result
 
 
 def validate_checkpoint(checkpoint):
-    if checkpoint['schema']!=CHECKPOINT:raise ValueError('Versioned lifecycle checkpoint required; no historical migration')
+    if checkpoint['schema'] not in (CHECKPOINT,CHECKPOINT_C):raise ValueError('Versioned lifecycle checkpoint required; no historical migration')
     rebuilt=make_checkpoint(checkpoint['origin_ledger_input'],checkpoint['execution_result'],
                             through_at=checkpoint['state']['through_at'])
     if rebuilt!=checkpoint:

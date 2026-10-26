@@ -1,3 +1,11 @@
+# 最新：C類原條件單同單重評0.1
+
+入口[c_order_review_20261026/README.md](c_order_review_20261026/README.md)、[REPORT](c_order_review_20261026/REPORT.md)、[CONTRACT](c_order_review_20261026/CONTRACT.md)及[原單白話摘要](c_order_review_20261026/readback/valid-C-same-order.txt)。原API新增明示input／review0.2處理C原單，綁原trigger／order／remaining，維持C及原token；新批仍須新獨立觸發。數值檢查與帳務沿原機制，新scope決策／execution0.9、checkpoint0.8，舊版不隱式遷移。
+
+最終14案看after-checkpoint-fix，下一批資格對照看new-batch-final；initial／after-final／new-batch是留史中途結果。13唯一方法首批2失敗，修正版本指紋後5相依方法通過，共18次執行不加成18唯一。舊E相容、READ無引擎／寫檔、部分B7保留與撤銷13、原帳／權利／reserve／latest／token有保存證據。全部合成，無新批成交／1/13行情，非策略有效性。原阻塞與正式false/null不變，工作方式沿根既有有效規則。下方原文完整留史。
+
+---
+
 # 最新：保存生命週期摘要唯讀並列0.1
 
 API `lifecycle_compare.compare_saved(request)`及`python3 -B -m capital_research.lifecycle_compare_read 標籤=原件路徑 ...`。入口[REPORT](lifecycle_compare_20261026/REPORT.md)、[CONTRACT](lifecycle_compare_20261026/CONTRACT.md)、[合法並列表](lifecycle_compare_20261026/views-final/wait-versus-reviewed.txt)、[容量不同拒比](lifecycle_compare_20261026/after-final/capacity-mismatch/readable.txt)。期初帳戶／權利、截止、共同模型與完整保存市場路徑相同才並列，不比較期末帳相等、不重算、評分或選勝者。

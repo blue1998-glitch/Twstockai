@@ -157,7 +157,7 @@ def decide(data):
         return _decide(data)
 
 
-def _decide(data, *, prior_fact_sources=()):
+def _decide(data, *, prior_fact_sources=(), same_order_scope=None):
     if data['schema'] != 'capital-decision-input/0.1' or data['synthetic'] is not True:
         raise ValueError('Phase 1 accepts explicitly synthetic research only; real-source route remains refused')
     decision, cutoff = timestamp(data['decision_at']), timestamp(data['data_cutoff'])
@@ -279,7 +279,11 @@ def _decide(data, *, prior_fact_sources=()):
             raise ValueError('Cash alternative must target zero shares')
         reasons = out['reasons']
         if p['family'] == 'C':
-            if not p['trigger_ids'] or any(e not in novel for e in p['trigger_ids']) or len(set(p['trigger_ids'])) != len(p['trigger_ids']):
+            if same_order_scope is not None and p['id']==same_order_scope['plan_id']:
+                from .order_review import trigger_reasons
+                reasons.extend(trigger_reasons(same_order_scope,data,history,evidence))
+                out['approval_use']='CONTINUE_SAVED_ORDER_NOT_NEW_BATCH'
+            elif not p['trigger_ids'] or any(e not in novel for e in p['trigger_ids']) or len(set(p['trigger_ids'])) != len(p['trigger_ids']):
                 reasons.append('NO_NEW_INDEPENDENT_TRIGGER')
         buys, sells, friction = Decimal(0), Decimal(0), Decimal(0)
         for c in q:
@@ -362,14 +366,16 @@ def _decide(data, *, prior_fact_sources=()):
         reserved_cash=data['account']['reserved_cash'],
         continuity_qualification='INDEPENDENT_SNAPSHOT_NOT_A_CONTINUOUS_CAPITAL_CHAIN',
         R2_status='NOT_IMPLEMENTED_REQUIRES_OUT_OF_SAMPLE_COMPARISON_WITH_R1')
+    if same_order_scope is not None:
+        decision_result.update(schema='capital-decision/0.9',same_order_continuation=deepcopy(same_order_scope))
     decision_result['decision_id'] = fingerprint(decision_result)
     return dict(decision=decision_result, source_integrity_metadata=deepcopy(data['source_integrity_metadata']))
 
 
-def resume_decision(previous, data, *, checkpoint=None, cancelled_order_ids=()):
+def resume_decision(previous, data, *, checkpoint=None, cancelled_order_ids=(), same_order_id=None):
     """Carry tokens only after proving the next account from original ledger fills."""
     old=previous['decision']
-    if old['schema'] != VERSION or old['decision_id'] != fingerprint({k:v for k,v in old.items() if k!='decision_id'}):
+    if old['schema'] not in (VERSION,'capital-decision/0.9') or old['decision_id'] != fingerprint({k:v for k,v in old.items() if k!='decision_id'}):
         raise ValueError('Invalid saved predecessor decision')
     if timestamp(data['decision_at']) <= timestamp(old['decision_at']) or timestamp(data['data_cutoff']) < timestamp(old['data_cutoff']):
         raise ValueError('Resume must advance decision time without moving cutoff backward')
@@ -377,6 +383,10 @@ def resume_decision(previous, data, *, checkpoint=None, cancelled_order_ids=()):
         raise ValueError('LEDGER_CHECKPOINT_REQUIRED: token carry does not prove capital continuity')
     from .continuity import bind_resume
     linkage=bind_resume(previous,data,checkpoint,cancelled_order_ids)
+    same_order_scope=None
+    if same_order_id is not None:
+        from .order_review import build_scope
+        same_order_scope=build_scope(previous,data,checkpoint,same_order_id)
     next_input=deepcopy(data)
     next_input['consumed_evidence_tokens']=sorted(set(next_input['consumed_evidence_tokens']) | set(old['reviewed_evidence_tokens']) | set(checkpoint['state']['reviewed_evidence_tokens']))
     execution=checkpoint['execution_result']
@@ -384,7 +394,7 @@ def resume_decision(previous, data, *, checkpoint=None, cancelled_order_ids=()):
     prior=declaration_sources(execution)
     with localcontext() as ctx:
         ctx.prec=50
-        result=_decide(next_input,prior_fact_sources=prior)
+        result=_decide(next_input,prior_fact_sources=prior,same_order_scope=same_order_scope)
     d=result['decision'];d.pop('decision_id')
     d['continuity_qualification']=linkage['qualification'];d['continuity']=linkage
     d['decision_id']=fingerprint(d)

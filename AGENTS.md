@@ -1,3 +1,15 @@
+# 2026-10-26 最新有效｜C類已核准條件買單同單重評0.1
+
+最新入口股票系統M1_v0_18/capital_research/c_order_review_20261026/README.md、REPORT.md、CONTRACT.md。原API conditional_quantity_review.reassess_conditional新增明示input／review0.2，僅C原單；舊0.1仍B/E。綁原C/R1唯一核准、原觸發／order／remaining及checkpoint／latest／完整token；不換family、不增量、不建第二帳。當期資格／成本／資金／reserve／風險／事實限制照原機制；有效舊事實可續評，新批仍須新獨立觸發。
+
+新同單決策0.9附scope0.1，實際納入該決策／attempt後execution0.9及checkpoint0.8才生效；舊0.8／0.7行為／原件不遷移，普通新批無同單豁免。lifecycle純READ增新版本結構核讀；lifecycle_compare不改，不評分。最終actual只看after-checkpoint-fix及new-batch-final，gateway原prefix仍0.8／0.7；initial／after-final／new-batch均為中途歷史，不作最終。白話入口readback/。
+
+14個本輪合成案例及7個scope拒絕符合預期；13唯一方法首批2個READ失敗，修正checkpoint版本指紋後只補5相依方法通過，共18次方法執行、不加成18唯一。失敗log／修前source／原斷言保留；舊E逐值相容。原單B20／部分B7剩13、撤銷後保留B7取消13、原權利／reserve／latest／token與未來隔離有保存actual；下一批只驗資格，無新增1/13行情或成交。
+
+沿既有功能里程碑授權原唯一Codex於原工作區／原分支自審、正常commit/push及GitHub讀回；不預設Work逐輪驗收。本輪最低基線5be3d8bea1008361642b3ec3a6bfdafaa16373a9，固定SHA以Git／回覆為準。1101帳戶證據UNKNOWN、70／2／其中8／真實總淨合格0、正式false／主壓力null及原帳務／來源／圖形契約保持。無舊suite／真實producer／九路徑／bootstrap／部署交易；多活單／外部單／期初應付等原未支援不擴張。下一個只讀使用範例尚未工程；以下原文完整留史。
+
+---
+
 # 2026-10-26 最新有效｜保存摘要共同條件唯讀並列0.1
 
 入口股票系統M1_v0_18/capital_research/lifecycle_compare_20261026/REPORT.md、CONTRACT.md；純API lifecycle_compare.compare_saved與stdout-only CLI lifecycle_compare_read（python -B）。重用未改lifecycle，先核完整期初帳戶／權利、截止、當期初始環境及共同模型，再核保存tape的價格／容量／狀態／available_at／來源基底交割。期末差異是結果；不一致REFUSED且columns空，缺原job／市場或停止前歷史帳拒比，不補資料。4個同條件控制可並列但不選勝者，所有正式false／主壓力null。
