@@ -1,3 +1,11 @@
+# 最新：同一數量候選功能補齊0.2
+
+沿原`quantity_candidates.generate`接受`capital-quantity-candidates-input/0.2`：明示sell_A／additional_B域，涵蓋A全賣但B僅部分配置；FIRST_ENTRY／ADDITIONAL_BATCH／UNKNOWN分開檢查。首次須原帳階段邊界及當期新資金資格，追加仍須新獨立token，不藉標籤或review重置。既有B買單預留保持，新批次完整承接未支援時NOT_IMPLEMENTED；不撤單或生成委託。0.1 schema行為保留，舊JSON不重算。
+
+入口[quantity_candidates_v02_20261026/REPORT.md](quantity_candidates_v02_20261026/REPORT.md)與[CONTRACT.md](quantity_candidates_v02_20261026/CONTRACT.md)。27新定向案例、14必要方法（含兩個0.1相容案例）屬本輪，不累加歷史。外層classification／feasible_for_research仍為完整閘門；內層core_evaluation不是建單授權。工作方式沿根有效接續文件。下方原0.1交付完整留史。
+
+---
+
 # 最新功能里程碑：分批換股數量候選0.1
 
 入口[quantity_candidates_20261026/REPORT.md](quantity_candidates_20261026/REPORT.md)及[CONTRACT.md](quantity_candidates_20261026/CONTRACT.md)。純API為`quantity_candidates.generate(request)`；原資金框架仍0.8，沿既有decide／resume_decision、allocation.full_transfer及token檢查，不改帳務、資格或歷史。有限完整整股域產生續抱、退A留現金、部分換股及全換端點，分開當期可行／交割後重評／拒絕／未支援；不選比例、不建單／成交。新增B固定family C，依已知本股前綴及獨立token，不能用family或未來原件尾段繞過。

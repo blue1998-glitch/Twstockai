@@ -1,3 +1,13 @@
+# 2026-10-26 最新有效｜同一里程碑補齊數量候選0.2
+
+先讀capital_research/quantity_candidates_v02_20261026/REPORT.md及CONTRACT.md。沿既有generate新增0.2明示A賣量／B新增量及FIRST_ENTRY／ADDITIONAL_BATCH／UNKNOWN階段；首次核當期資金資格與同帳階段邊界，追加須獨立觸發。有效舊事實可review，不能以首次／family／ID／別名／新review洗掉已知B交易、委託或失效歷史。原單不由生成器撤銷或重下；未支援活單承接明示NOT_IMPLEMENTED，預留與共同風險仍由0.8計算。
+
+27個新定向input／expected／actual、14必要方法PASS（含兩個0.1相容案例）是本輪證據，不與原0.1的21案例／18方法累加。證據目錄cases/*/actual.json才是本輪最終source結果；來源指紋見source-versions-before-run.json。核心／執行器仍0.8，0.1 schema與舊成果保留，不重跑九路徑、舊整套或prefix producer。原始資本／其他資產／權利／reserve／latest及token完整回連；沒有新帳、數量勝者、委託或成交。
+
+最低已核遠端／本地起點c1e59f1f1a39d8b2b56b217eb07f25c53d8b1726，包含使用者已知1b200d681a6b68168c45591775e107174f064138祖先。工作方式及正常保存／讀回授權沿本檔與AGENTS原有效規則，不另建平行規則、不預設轉Work。1101帳戶證據阻塞／UNKNOWN／拒算、70／2／其中8／真實總淨合格0、正式false及原未支援能力不變，不找來源、不收私人文件、無部署交易。以下原文完整留史。
+
+---
+
 # 2026-10-26 最新有效｜功能里程碑交付：分批換股數量候選0.1
 
 使用者已授權明確指定工程由原唯一Codex在/workspace/Twstockai及dev/m1-v018-chart-annotations完成能力說明、有限實作、必要測試、自審、正常commit/push與GitHub讀回。一般可逆工作／必要修復／保存不逐步詢問，不另開代理／worktree／分支。新功能仍須明確指定；不改main、不強推、reset/clean或覆蓋成果，只提交本輪內容。部署／交易／付費／對外訊息另需明確授權。

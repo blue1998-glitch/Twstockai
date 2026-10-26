@@ -7,9 +7,56 @@ from .core import decide, resume_decision, quantity, nonnegative, timestamp, fin
 
 SCHEMA='capital-quantity-candidates/0.1'
 INPUT='capital-quantity-candidates-input/0.1'
+INPUT_V2='capital-quantity-candidates-input/0.2'
+SCHEMA_V2='capital-quantity-candidates/0.2'
 MAX_GRID_COMBINATIONS=1024
 REQUIRED={'schema','synthetic','decision_input','incumbent','destination','bounds',
           'max_grid_combinations','trigger_ids','continuation','policy'}
+
+
+def _validate_batch_context(request):
+    context=request['batch_context'];data=request['decision_input'];b=request['destination']
+    required={'version','parameter_source','available_at','phase','origin','code','source_id','basis_id','adjustment_version','account_id'}
+    if not isinstance(context,dict) or set(context)!=required:
+        raise ValueError('Explicit batch context with exact account/asset binding required')
+    if (not context['version'] or not context['parameter_source'] or
+            timestamp(context['available_at'])>timestamp(data['decision_at'])):
+        raise ValueError('Batch context missing provenance or not yet available')
+    if context['code']!=b or any(context[k]!=data['assets'][b][k] for k in ('source_id','basis_id','adjustment_version')):
+        raise ValueError('Batch context source/basis/asset mismatch')
+    if context['account_id']!=fingerprint(data['account']):
+        raise ValueError('Batch context account mismatch')
+    if context['phase'] not in ('FIRST_ENTRY','ADDITIONAL_BATCH','UNKNOWN'):
+        raise ValueError('Explicit supported batch phase required')
+    expected='CHECKPOINT_EPISODE' if request['continuation'] is not None else 'DECLARED_SYNTHETIC_OPENING'
+    if context['origin']!=expected:
+        raise ValueError('Batch context origin does not match supplied continuity')
+
+
+def _first_entry_reasons(request, known):
+    """No ledger reconstruction here: reuse the already-validated checkpoint."""
+    data=request['decision_input'];b=request['destination'];a=data['account']
+    if request['batch_context']['phase']=='UNKNOWN':
+        return ['BATCH_PHASE_UNKNOWN']
+    if request['batch_context']['phase']!='FIRST_ENTRY':
+        return []
+    participated=bool(quantity(a['holdings'][b]['shares']) or
+        any(x['code']==b and quantity(x['shares']) for x in a['share_claims']))
+    continuation=request['continuation']
+    if continuation is not None:
+        cp=continuation['checkpoint'];origin=cp['origin_ledger_input']['opening']
+        participated |= bool(quantity(origin['shares'][b]) or
+            any(x['code']==b and quantity(x['shares']) for x in origin['share_claims']))
+        participated |= any(f['code']==b and f['side']=='BUY' and quantity(f['shares']) for f in cp['state']['accepted_fills'])
+        execution=cp['execution_result']
+        participated |= any(o['code']==b and o['side']=='BUY' for o in execution.get('order_history',execution['orders']))
+    if participated:
+        return ['FIRST_ENTRY_CONTRADICTS_B_EPISODE_HISTORY']
+    if continuation is None:
+        tokens=set().union(*(evidence_tokens(e) for e in known.values())) if known else set()
+        if tokens & set(data['consumed_evidence_tokens']):
+            return ['FIRST_ENTRY_HISTORY_NOT_ESTABLISHED']
+    return []
 
 
 def _evaluate(data, plans, continuation):
@@ -33,7 +80,9 @@ def generate(request):
 
 
 def _generate(request):
-    if set(request)!=REQUIRED or request['schema']!=INPUT or request['synthetic'] is not True:
+    v2=request.get('schema')==INPUT_V2
+    required=REQUIRED|{'batch_context'} if v2 else REQUIRED
+    if set(request)!=required or request['schema'] not in (INPUT,INPUT_V2) or request['synthetic'] is not True:
         raise ValueError('Explicit synthetic quantity contract required; no family/route override')
     data=request['decision_input'];a,b=request['incumbent'],request['destination']
     if a==b or a not in data['assets'] or b not in data['assets']:
@@ -45,10 +94,11 @@ def _generate(request):
     if incumbent<=0:
         raise ValueError('Positive incumbent holding required for this bounded workflow')
     bounds=request['bounds'];policy=request['policy']
-    if set(bounds)!={'retained_A','additional_B'} or set(policy)!={'version','parameter_source','available_at','edge_budget'}:
+    a_key='sell_A' if v2 else 'retained_A'
+    if set(bounds)!={a_key,'additional_B'} or set(policy)!={'version','parameter_source','available_at','edge_budget'}:
         raise ValueError('Explicit bounded quantity policy required')
     endpoints=[]
-    for key in ('retained_A','additional_B'):
+    for key in (a_key,'additional_B'):
         row=bounds[key]
         if set(row)!={'minimum','maximum'}:
             raise ValueError('Only inclusive whole-share endpoints, no implicit sampling step')
@@ -57,7 +107,11 @@ def _generate(request):
             raise ValueError('Inverted quantity range')
         endpoints.append((low,high))
     (amin,amax),(bmin,bmax)=endpoints
-    if not 1<=amin<=amax<=incumbent:
+    if v2:
+        if not 0<=amin<=amax<=incumbent:
+            raise ValueError('Explicit A sale range must be within physical incumbent shares')
+        amin,amax=incumbent-amax,incumbent-amin
+    elif not 1<=amin<=amax<=incumbent:
         raise ValueError('Partial grid must retain between one and all incumbent shares')
     if not policy['version'] or not policy['parameter_source'] or timestamp(policy['available_at'])>timestamp(data['decision_at']):
         raise ValueError('Quantity policy unavailable or missing provenance')
@@ -68,9 +122,10 @@ def _generate(request):
     continuation=request['continuation']
     if continuation is not None and set(continuation)!={'previous_decision','checkpoint','cancelled_order_ids'}:
         raise ValueError('Exact existing continuation contract required')
+    if v2:_validate_batch_context(request)
     configured_limit=int(quantity(request['max_grid_combinations']))
     points=(amax-amin+1)*(bmax-bmin+1)
-    result=dict(schema=SCHEMA,synthetic=True,status='COMPLETE',incumbent=a,destination=b,
+    result=dict(schema=SCHEMA_V2 if v2 else SCHEMA,synthetic=True,status='COMPLETE',incumbent=a,destination=b,
         generator_policy=deepcopy(policy),bounds=deepcopy(bounds),grid_points=points,
         configured_grid_limit=configured_limit,implementation_grid_limit=MAX_GRID_COMBINATIONS,
         legacy_full_builder_limit=20000,enumeration_complete=False,baseline=None,candidates=[],
@@ -79,6 +134,11 @@ def _generate(request):
         candidate_scope='MUTUALLY_EXCLUSIVE_ALTERNATIVES_FROM_ONE_ACCOUNT_NOT_SIMULTANEOUS_ORDERS',
         reasons=[],data_qualified=False,execution_model_qualified=False,historical_signal_eligible=False,
         policy_authorized=False,live_execution_authorized=False,primary_pressure_id=None)
+    if v2:
+        result.update(batch_context=deepcopy(request['batch_context']),batch_phase_reasons=[],
+            policy_governs=['bounds','max_grid_combinations','edge_budget'],
+            account_liquidation_claimed=False,
+            original_pending_B_orders=deepcopy([o for o in data['account']['pending_orders'] if o['code']==b]))
     def wrap():
         return dict(research=result,source_integrity_metadata=dict(full_request_id=fingerprint(request),
             original=deepcopy(data['source_integrity_metadata'])))
@@ -118,6 +178,10 @@ def _generate(request):
     owned=set(known)
     review=baseline['layer2'][b]['capital_eligibility']['review']
     review_ids=set(review['evidence_ids']) if review else set()
+    first_entry=v2 and request['batch_context']['phase']=='FIRST_ENTRY'
+    phase_reasons=_first_entry_reasons(request,known) if v2 else []
+    pending_b_buy=v2 and any(o['code']==b and o['side']=='BUY' for o in data['account']['pending_orders'])
+    if v2:result['batch_phase_reasons']=phase_reasons
     def add(targets,kind):
         targets={code:str(int(quantity(value))) for code,value in targets.items()}
         key=fingerprint(targets)
@@ -126,20 +190,22 @@ def _generate(request):
             return
         buying=quantity(targets[b])>quantity(q[b])
         same=targets==q
-        plan=dict(id='A-zero' if same else 'quantity:'+key,family='A' if same else 'C' if buying else 'E',route='R1',
-            targets=deepcopy(targets),trigger_ids=deepcopy(triggers) if buying else [],
+        plan=dict(id='A-zero' if same else 'quantity:'+key,family='A' if same else 'C' if buying and not first_entry else 'E',route='R1',
+            targets=deepcopy(targets),trigger_ids=deepcopy(triggers) if buying and not first_entry else [],
             edge_budget='0' if same else policy['edge_budget'],
             conditions=['CURRENT_RESEARCH_INTENT_ONLY','REASSESS_AFTER_SETTLEMENT','NEW_INDEPENDENT_TRIGGER_FOR_NEXT_BUY_BATCH'])
         evaluated=baseline if same else _evaluate(data,[plan],continuation)
         evaluation=deepcopy(next(x for x in evaluated['layer3']['alternatives'] if x['id']==plan['id']))
         gate=[]
-        if buying and any(t not in owned for t in triggers):
+        if buying and not first_entry and any(t not in owned for t in triggers):
             gate.append('BATCH_TRIGGER_NOT_OWNED_BY_DESTINATION')
-        if buying and any(evidence_tokens(known[t]) & evidence_tokens(known[old])
+        if buying and not first_entry and any(evidence_tokens(known[t]) & evidence_tokens(known[old])
                           for t in triggers if t in known for old in review_ids
                           if old in known and old!=t):
             gate.append('NO_NEW_INDEPENDENT_TRIGGER')
-        classification='REJECTED' if gate else _classification(evaluation)
+        if buying:gate.extend(phase_reasons)
+        if buying and pending_b_buy:gate.append('EXTERNAL_EXISTING_B_BUY_CONTINUATION_NOT_IMPLEMENTED')
+        classification='NOT_IMPLEMENTED' if buying and pending_b_buy else 'REJECTED' if gate else _classification(evaluation)
         candidate=dict(id=plan['id'],kinds=[kind],plan=plan,core_decision_id=evaluated['decision_id'],
             core_schema=evaluated['schema'],core_evaluation=evaluation,batch_gate_reasons=gate,
             reasons=sorted(set(evaluation['reasons']+gate)),classification=classification,
@@ -150,7 +216,8 @@ def _generate(request):
         by_target[key]=candidate
         result['candidates'].append(candidate)
     add(q,'HOLD')
-    for retained in range(amin,amax+1):
+    retained_values=range(amax,amin-1,-1) if v2 else range(amin,amax+1)
+    for retained in retained_values:
         for added in range(bmin,bmax+1):
             targets=deepcopy(q);targets[a]=str(retained);targets[b]=str(original_b+added)
             kind='PARTIAL_TRANSFER' if added else 'REDUCE_A_KEEP_CASH' if retained<incumbent else 'GRID_HOLD'
@@ -164,8 +231,13 @@ def _generate(request):
     else:
         add(full['targets'],'FULL_TRANSFER')
     for candidate in result['candidates']:
+        if v2:
+            candidate['sold_A']=str(incumbent-int(candidate['plan']['targets'][a])) if candidate['plan'] else None
+            candidate['generation_reasons']=list(candidate['kinds'])
+            candidate['generation_policy_version']=policy['version']
         result['groups'][candidate['classification']].append(candidate['id'])
     result['enumeration_complete']=True
     result['evaluated_unique_targets']=len(by_target)
-    result['full_proposal_source']='allocation.full_transfer -> current 0.8 recheck; every additional buy uses family C'
+    result['full_proposal_source']=('allocation.full_transfer -> current 0.8 recheck; first-entry gate or independent additional-batch gate'
+        if v2 else 'allocation.full_transfer -> current 0.8 recheck; every additional buy uses family C')
     return wrap()

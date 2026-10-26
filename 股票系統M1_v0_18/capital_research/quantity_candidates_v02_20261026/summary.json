@@ -1,0 +1,298 @@
+{
+  "schema": "quantity-candidates-v02-synthetic-summary/0.1",
+  "cases": [
+    {
+      "case": "first-manual-grid",
+      "checks": {
+        "status": true,
+        "manual_grid": true,
+        "probe": true,
+        "buy_family": true,
+        "no_winner": true,
+        "formal_false": true
+      },
+      "matched": true
+    },
+    {
+      "case": "all-A-sale-partial-B",
+      "checks": {
+        "status": true,
+        "grid_points": true,
+        "probe": true,
+        "preserve_C": true,
+        "no_winner": true,
+        "formal_false": true
+      },
+      "matched": true
+    },
+    {
+      "case": "first-old-fact-reviewed",
+      "checks": {
+        "status": true,
+        "probe": true,
+        "buy_family": true,
+        "capital_qualified": true,
+        "no_winner": true,
+        "formal_false": true
+      },
+      "matched": true
+    },
+    {
+      "case": "additional-old-trigger",
+      "checks": {
+        "status": true,
+        "all_buys": true,
+        "reason": true,
+        "no_winner": true,
+        "formal_false": true
+      },
+      "matched": true
+    },
+    {
+      "case": "additional-independent",
+      "checks": {
+        "status": true,
+        "probe": true,
+        "buy_family": true,
+        "no_winner": true,
+        "formal_false": true
+      },
+      "matched": true
+    },
+    {
+      "case": "cannot-relabel-first-after-fill",
+      "checks": {
+        "status": true,
+        "all_buys": true,
+        "reason": true,
+        "no_winner": true,
+        "formal_false": true
+      },
+      "matched": true
+    },
+    {
+      "case": "cannot-reset-first-without-history",
+      "checks": {
+        "status": true,
+        "all_buys": true,
+        "reason": true,
+        "no_winner": true,
+        "formal_false": true
+      },
+      "matched": true
+    },
+    {
+      "case": "additional-after-partial-fill",
+      "checks": {
+        "status": true,
+        "all_buys": true,
+        "reason": true,
+        "no_winner": true,
+        "formal_false": true
+      },
+      "matched": true
+    },
+    {
+      "case": "unknown-batch-phase",
+      "checks": {
+        "status": true,
+        "all_buys": true,
+        "reason": true,
+        "no_winner": true,
+        "formal_false": true
+      },
+      "matched": true
+    },
+    {
+      "case": "first-capital-unknown",
+      "checks": {
+        "status": true,
+        "all_buys": true,
+        "reason": true,
+        "no_winner": true,
+        "formal_false": true
+      },
+      "matched": true
+    },
+    {
+      "case": "first-invalidated",
+      "checks": {
+        "status": true,
+        "all_buys": true,
+        "reason": true,
+        "no_winner": true,
+        "formal_false": true
+      },
+      "matched": true
+    },
+    {
+      "case": "known-history-not-erased",
+      "checks": {
+        "status": true,
+        "all_buys": true,
+        "reason": true,
+        "no_winner": true,
+        "formal_false": true
+      },
+      "matched": true
+    },
+    {
+      "case": "review-mismatch-source_id",
+      "checks": {
+        "error": true,
+        "no_fake_research": true
+      },
+      "matched": true
+    },
+    {
+      "case": "review-mismatch-basis_id",
+      "checks": {
+        "error": true,
+        "no_fake_research": true
+      },
+      "matched": true
+    },
+    {
+      "case": "liquidity-limit",
+      "checks": {
+        "status": true,
+        "probe": true,
+        "reason": true,
+        "no_winner": true,
+        "formal_false": true
+      },
+      "matched": true
+    },
+    {
+      "case": "common-risk-limit",
+      "checks": {
+        "status": true,
+        "probe": true,
+        "reason": true,
+        "no_winner": true,
+        "formal_false": true
+      },
+      "matched": true
+    },
+    {
+      "case": "cost-cannot-be-free",
+      "checks": {
+        "status": true,
+        "probe": true,
+        "reason": true,
+        "available": true,
+        "no_winner": true,
+        "formal_false": true
+      },
+      "matched": true
+    },
+    {
+      "case": "receivable-not-spendable",
+      "checks": {
+        "status": true,
+        "probe": true,
+        "reason": true,
+        "available": true,
+        "no_winner": true,
+        "formal_false": true
+      },
+      "matched": true
+    },
+    {
+      "case": "wait-sale-settlement",
+      "checks": {
+        "status": true,
+        "probe": true,
+        "no_winner": true,
+        "formal_false": true
+      },
+      "matched": true
+    },
+    {
+      "case": "non-monotone",
+      "checks": {
+        "status": true,
+        "non_monotone": true,
+        "no_winner": true,
+        "formal_false": true
+      },
+      "matched": true
+    },
+    {
+      "case": "grid-over-limit",
+      "checks": {
+        "status": true,
+        "candidate_count": true,
+        "no_winner": true,
+        "formal_false": true
+      },
+      "matched": true
+    },
+    {
+      "case": "full-over-limit",
+      "checks": {
+        "status": true,
+        "candidate_count": true,
+        "no_winner": true,
+        "formal_false": true
+      },
+      "matched": true
+    },
+    {
+      "case": "existing-B-order",
+      "checks": {
+        "status": true,
+        "all_buys": true,
+        "reason": true,
+        "available": true,
+        "no_winner": true,
+        "formal_false": true
+      },
+      "matched": true
+    },
+    {
+      "case": "sell-locked-A",
+      "checks": {
+        "status": true,
+        "probe": true,
+        "reason": true,
+        "no_winner": true,
+        "formal_false": true
+      },
+      "matched": true
+    },
+    {
+      "case": "future-A-wins",
+      "checks": {
+        "status": true,
+        "future_isolation": true,
+        "no_winner": true,
+        "formal_false": true
+      },
+      "matched": true
+    },
+    {
+      "case": "future-B-wins",
+      "checks": {
+        "status": true,
+        "future_isolation": true,
+        "no_winner": true,
+        "formal_false": true
+      },
+      "matched": true
+    },
+    {
+      "case": "future-both-fall",
+      "checks": {
+        "status": true,
+        "future_isolation": true,
+        "no_winner": true,
+        "formal_false": true
+      },
+      "matched": true
+    }
+  ],
+  "all_matched": true,
+  "independent_market_samples": 0,
+  "qualification_upgrades": 0
+}

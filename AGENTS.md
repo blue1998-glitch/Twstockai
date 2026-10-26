@@ -1,3 +1,15 @@
+# 2026-10-26 最新有效｜分批換股數量候選0.2補齊指定需求
+
+本次仍是同一數量候選功能里程碑，沿既有quantity_candidates.generate延伸0.2，不平行重做。最低已核1b200d6的後續c1e59f1完整保留；新入口capital_research/quantity_candidates_v02_20261026/REPORT.md及CONTRACT.md。0.2明示sell_A／additional_B整股範圍，包含賣完A而僅配置部分B；退出A不冒稱全帳清倉，其他資產／權利保持。所有財務檢查仍委派未改的core／execution0.8與full_transfer。
+
+首次與追加分開：FIRST_ENTRY須綁定同一合成帳戶／B來源／基底／版本／可知時間，由明示假想起點或合法checkpoint核對B參與歷史，不能只憑目前B零股或新ID／review就重置。合法首次仍核新資金資格，沒有額外強制新事件；有效舊事實可當期review。ADDITIONAL_BATCH仍family C及新獨立token；UNKNOWN拒絕新增。已有B買單則不撤單／重下，新批次完整承接未支援時NOT_IMPLEMENTED，原預留照算。
+
+先凍結新input／expected／契約／來源版本，27定向案例符合預期（含兩個明確輸入拒絕），14必要方法PASS，內含兩個0.1相容案例，不加歷史18／21或案例數。舊0.1成果及九路徑只READ；沒有重跑舊suite／prefix producer或修改舊oracle／actual／log／manifest。0.1 schema保留原行為，0.2才使用新階段與賣出域，不隱式遷移。
+
+保存／交付沿下方既有功能里程碑授權：原唯一Codex、原工作區／分支、自審、正常commit/push及GitHub讀回，不預設轉Work，不新增平行工作規則。額外複核項為首次標籤不能重置已知批次、原帳／權利／token、活單預留及未來隔離；來源認證仍未實作。1101期初cash_claims UNKNOWN與拒算、70／2／其中8／真實總淨合格0、正式false／主壓力null及原全部限制保持。無新來源／私人文件／bootstrap／真實producer／部署或交易。下方原文完整保留。
+
+---
+
 # 2026-10-26 最新有效｜功能里程碑交付與分批換股數量候選0.1
 
 使用者最新工作方式已整合於本既有入口及CONTINUE_IN_WORK_MODE.md，不另立平行規則：僅原唯一Codex、/workspace/Twstockai、dev/m1-v018-chart-annotations執行明確指定任務。每輪先說明能力、驗收與範圍，再完成有限實作、必要測試、自審、正常commit/push及GitHub固定SHA讀回。此保存授權適用明確指定工程，優先於下方歷史「先不commit/push」；一般可逆實作／必要修復／保存不逐步詢問。未指定的新功能不擴張。

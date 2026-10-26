@@ -1,0 +1,212 @@
+{
+  "schema": "quantity-v02-self-review/0.1",
+  "reviewer": "original_unique_Codex",
+  "reviewed_at": "2026-10-26T12:31:04.799449+00:00",
+  "all_checks_passed": true,
+  "manual_grid_exact_including_separate_endpoints": true,
+  "all_A_sale_grid_exact": true,
+  "original_source_and_accounting_unchanged": 17,
+  "frozen_input_oracle_unchanged": true,
+  "core_execution_version_unchanged": "0.8",
+  "legacy_v01_compatibility_examples": 2,
+  "new_unique_methods": 14,
+  "method_names": [
+    "test_additional_requires_new_independent_event",
+    "test_cost_reserve_receivable_and_wait_are_distinct",
+    "test_existing_buy_is_not_cancelled_reissued_or_double_reserved",
+    "test_first_entry_requires_capital_but_not_new_trigger",
+    "test_first_label_unknown_or_review_cannot_reset_history",
+    "test_future_path_cannot_change_current_quantities_or_phase",
+    "test_liquidity_common_risk_and_locked_shares",
+    "test_manual_grid_and_all_A_sold_domain_are_complete",
+    "test_new_input_immutability_and_context_provenance",
+    "test_no_winner_order_fill_or_formal_qualification",
+    "test_non_monotone_and_both_search_limits",
+    "test_original_capital_rights_latest_and_tokens_remain_bound",
+    "test_source_and_basis_mismatch_are_errors_not_zero_results",
+    "test_v01_compatibility_only_two_necessary_regressions"
+  ],
+  "expected_input_errors": 2,
+  "normal_diagnostic_cases": 25,
+  "case_results": [
+    {
+      "case": "first-manual-grid",
+      "status": "COMPLETE",
+      "phase": "FIRST_ENTRY",
+      "candidates": 11
+    },
+    {
+      "case": "all-A-sale-partial-B",
+      "status": "COMPLETE",
+      "phase": "FIRST_ENTRY",
+      "candidates": 8
+    },
+    {
+      "case": "first-old-fact-reviewed",
+      "status": "COMPLETE",
+      "phase": "FIRST_ENTRY",
+      "candidates": 6
+    },
+    {
+      "case": "additional-old-trigger",
+      "status": "COMPLETE",
+      "phase": "ADDITIONAL_BATCH",
+      "candidates": 6
+    },
+    {
+      "case": "additional-independent",
+      "status": "COMPLETE",
+      "phase": "ADDITIONAL_BATCH",
+      "candidates": 6
+    },
+    {
+      "case": "cannot-relabel-first-after-fill",
+      "status": "COMPLETE",
+      "phase": "FIRST_ENTRY",
+      "candidates": 6
+    },
+    {
+      "case": "cannot-reset-first-without-history",
+      "status": "COMPLETE",
+      "phase": "FIRST_ENTRY",
+      "candidates": 11
+    },
+    {
+      "case": "additional-after-partial-fill",
+      "status": "COMPLETE",
+      "phase": "ADDITIONAL_BATCH",
+      "candidates": 6
+    },
+    {
+      "case": "unknown-batch-phase",
+      "status": "COMPLETE",
+      "phase": "UNKNOWN",
+      "candidates": 11
+    },
+    {
+      "case": "first-capital-unknown",
+      "status": "COMPLETE",
+      "phase": "FIRST_ENTRY",
+      "candidates": 10
+    },
+    {
+      "case": "first-invalidated",
+      "status": "COMPLETE",
+      "phase": "FIRST_ENTRY",
+      "candidates": 10
+    },
+    {
+      "case": "known-history-not-erased",
+      "status": "COMPLETE",
+      "phase": "ADDITIONAL_BATCH",
+      "candidates": 6
+    },
+    {
+      "case": "liquidity-limit",
+      "status": "COMPLETE",
+      "phase": "FIRST_ENTRY",
+      "candidates": 11
+    },
+    {
+      "case": "common-risk-limit",
+      "status": "COMPLETE",
+      "phase": "FIRST_ENTRY",
+      "candidates": 11
+    },
+    {
+      "case": "cost-cannot-be-free",
+      "status": "COMPLETE",
+      "phase": "FIRST_ENTRY",
+      "candidates": 4
+    },
+    {
+      "case": "receivable-not-spendable",
+      "status": "COMPLETE",
+      "phase": "FIRST_ENTRY",
+      "candidates": 4
+    },
+    {
+      "case": "wait-sale-settlement",
+      "status": "COMPLETE",
+      "phase": "FIRST_ENTRY",
+      "candidates": 4
+    },
+    {
+      "case": "non-monotone",
+      "status": "COMPLETE",
+      "phase": "FIRST_ENTRY",
+      "candidates": 6
+    },
+    {
+      "case": "grid-over-limit",
+      "status": "REFUSED_SEARCH_LIMIT",
+      "phase": "FIRST_ENTRY",
+      "candidates": 0
+    },
+    {
+      "case": "full-over-limit",
+      "status": "REFUSED_SEARCH_LIMIT",
+      "phase": "FIRST_ENTRY",
+      "candidates": 0
+    },
+    {
+      "case": "existing-B-order",
+      "status": "COMPLETE",
+      "phase": "ADDITIONAL_BATCH",
+      "candidates": 4
+    },
+    {
+      "case": "sell-locked-A",
+      "status": "COMPLETE",
+      "phase": "FIRST_ENTRY",
+      "candidates": 4
+    },
+    {
+      "case": "future-A-wins",
+      "status": "COMPLETE",
+      "phase": "FIRST_ENTRY",
+      "candidates": 11
+    },
+    {
+      "case": "future-B-wins",
+      "status": "COMPLETE",
+      "phase": "FIRST_ENTRY",
+      "candidates": 11
+    },
+    {
+      "case": "future-both-fall",
+      "status": "COMPLETE",
+      "phase": "FIRST_ENTRY",
+      "candidates": 11
+    }
+  ],
+  "extra_review_items": [
+    {
+      "topic": "first-entry label cannot erase known B episode",
+      "evidence": "cannot-relabel-first-after-fill + cannot-reset-first-without-history + first-old-fact-reviewed"
+    },
+    {
+      "topic": "pending order, reserve and new quantity separated",
+      "evidence": "existing-B-order: original retained, available 878, new batch NOT_IMPLEMENTED"
+    },
+    {
+      "topic": "cash, fees, receivables, liquidity, joint risk and locks",
+      "evidence": "cost-cannot-be-free + receivable-not-spendable + wait-sale-settlement + limit/lock cases"
+    },
+    {
+      "topic": "original capital, rights, latest and all tokens",
+      "evidence": "additional-after-partial-fill saved checkpoint and original 0.8 validation"
+    },
+    {
+      "topic": "future information and consumer gate",
+      "evidence": "three future prefixes identical research; consumers must use outer classification/feasible_for_research"
+    }
+  ],
+  "limits": [
+    "synthetic initial-boundary declarations are not authenticated investor history",
+    "no full flat-exit-reentry/fork matrix",
+    "no new order or execution consumer",
+    "no strategy/profit conclusion"
+  ],
+  "work_independent_review": "NOT_REQUIRED_OR_CLAIMED; original Codex milestone self-review"
+}
