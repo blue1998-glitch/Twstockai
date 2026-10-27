@@ -1,0 +1,29 @@
+{
+  "status": "LIMITED_SYNTHETIC_WORKFLOW_SELF_REVIEW_COMPLETE",
+  "original_numeric_sources_unchanged": true,
+  "old_schema_or_READ_changed": false,
+  "original_oracles_changed": false,
+  "new_prices_orders_or_strategy_rules": false,
+  "second_account": false,
+  "retained": [
+    "ORIGIN_CAPITAL",
+    "CASH_AND_SHARE_RIGHTS",
+    "GENERAL_AND_ORDER_RESERVATIONS",
+    "LATEST_PREDECESSOR",
+    "ALL_TOKENS"
+  ],
+  "review_topics": [
+    "SAVE_READBACK_BEFORE_EVALUATION",
+    "REFUSAL_NULLS_VS_STORAGE",
+    "READ_HAS_NO_BACKEND_IMPORTS",
+    "IMMUTABLE_STAGE_BINDINGS_AND_ACK_LOSS_BOUNDARIES"
+  ],
+  "not_claimed": [
+    "SOURCE_AUTHENTICATION",
+    "FULL_ACCOUNTING_REPROOF",
+    "STRATEGY_VALIDITY",
+    "MULTIPROCESS_EXACTLY_ONCE",
+    "REAL_POWER_FAILURE"
+  ],
+  "requires_user_action": false
+}

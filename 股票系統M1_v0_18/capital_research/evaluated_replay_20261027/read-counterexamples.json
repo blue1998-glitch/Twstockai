@@ -1,0 +1,32 @@
+[
+  {
+    "name": "missing-evaluation",
+    "mutation": "REMOVE_TEMP_EVALUATION_FILE",
+    "expected": "UNREADABLE"
+  },
+  {
+    "name": "missing-result",
+    "mutation": "REMOVE_TEMP_RESULT_FILE",
+    "expected": "INCOMPLETE_SAVED_PREFIX"
+  },
+  {
+    "name": "swapped-evaluation",
+    "mutation": "COPY_DIFFERENT_OPERATION_EVALUATION_VALUE",
+    "expected": "UNREADABLE"
+  },
+  {
+    "name": "changed-summary",
+    "mutation": "CHANGE_GROWTH_AND_RESIGN_RESULT_ONLY",
+    "expected": "UNREADABLE"
+  },
+  {
+    "name": "changed-replay",
+    "mutation": "CHANGE_SAVED_REPLAY_STATUS_WITHOUT_REBINDING",
+    "expected": "UNREADABLE"
+  },
+  {
+    "name": "changed-time",
+    "mutation": "CHANGE_EVALUATION_RECORD_TIME_AND_RESIGN",
+    "expected": "UNREADABLE"
+  }
+]

@@ -1,3 +1,13 @@
+# 2026-10-27 最新有效｜明示合成回放完成後另存評估0.1
+
+入口evaluated_replay_20261027/README.md、CONTRACT.md、REPORT.md及actual-final/。新evaluated_replay外部RUN沿原quantity回放，保存並讀回原件後沿原account_metrics評估，再另存evaluation與結果；request／replay／evaluation／result分開保存、資格分開。完整才有指標，停止／權利未完整仍保存REFUSED與null；原帳／權利／reserve／latest／全部token、數值公式、舊schema與READ不改。
+
+3個新明示合成RUN符合預期，回放與評估各3次、原simulate2次；不是重跑舊actual或新行情。8唯一方法首次通過，不加歷史／副本／子程序；四階段UNKNOWN、同id不重跑／衝突、缺檔與跨階段錯配有證據。fresh READ禁數值引擎／評估／寫檔／網路；讀出拒算仍拒算。初次監看fdopen誤判在回放前停止，原失敗／空request留史，只修監看、另用runs-final；oracle及production未因診斷修改。
+
+最低基線11c914ad5235682822b2c22e07e00d092ab3b6de；沿里程碑原唯一Codex自審、正常commit/push及GitHub固定SHA讀回，無人工操作、不預設Work。僅明示quantity-replay新入口，保存選擇意圖不因此接成交，不補1/13行情。完整分叉、多程序exactly-once／自動恢復、來源認證、R2/F及原未支援保持。1101 UNKNOWN與70／2／其中8／真實總淨合格0、正式false／主壓力null及來源／圖形／人工契約不變。無bootstrap、真實producer、舊suite／九路徑、UI／Android／樣本外或部署交易。下方原文完整留史。
+
+---
+
 # 2026-10-27 最新有效｜完整合成帳務全帳戶評估0.1
 
 入口account_metrics_20261027/README.md、CONTRACT.md、REPORT.md及final/。新account_metrics.evaluate_saved純數值評估完整quantity-replay/0.1，沿原lifecycle READ校驗，再核完整checkpoint／原帳／連續日曲線前綴。只取最後原帳曲線一次，輸出期間應計成長、回撤與恢復／未恢復截尾；原帳期末退出成本及成長另列，不重扣費用，不冒每日能清倉。不重播、補行情、排名或接成交；原帳／權利／reserve／latest／全部token及舊source保持。

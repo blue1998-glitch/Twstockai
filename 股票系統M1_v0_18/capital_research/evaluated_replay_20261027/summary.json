@@ -1,0 +1,41 @@
+[
+  {
+    "name": "complete",
+    "workflow_status": "COMPLETED_EVALUATED",
+    "observed": {
+      "replay_status": "COMPLETED_PROVIDED_ROUNDS",
+      "evaluation_status": "EVALUATED"
+    },
+    "calls": {
+      "replay": 1,
+      "evaluation": 1,
+      "execution": 1
+    }
+  },
+  {
+    "name": "incomplete",
+    "workflow_status": "COMPLETED_EVALUATION_REFUSED",
+    "observed": {
+      "replay_status": "COMPLETED_PROVIDED_ROUNDS",
+      "evaluation_status": "REFUSED"
+    },
+    "calls": {
+      "replay": 1,
+      "evaluation": 1,
+      "execution": 1
+    }
+  },
+  {
+    "name": "stopped",
+    "workflow_status": "COMPLETED_EVALUATION_REFUSED",
+    "observed": {
+      "replay_status": "STOPPED_CANDIDATE_GATE",
+      "evaluation_status": "REFUSED"
+    },
+    "calls": {
+      "replay": 1,
+      "evaluation": 1,
+      "execution": 0
+    }
+  }
+]
