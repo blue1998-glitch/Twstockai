@@ -1,0 +1,88 @@
+{
+  "error": null,
+  "traceback": null,
+  "calls": {
+    "decide": 0,
+    "resume": 1,
+    "inner_decide": 1,
+    "bind_resume": 1,
+    "ledger_replay": 2,
+    "simulate": 0,
+    "replay_sequence": 0,
+    "save": 0
+  },
+  "caller_before": {
+    "prec": 28,
+    "rounding": "ROUND_HALF_EVEN",
+    "Emin": -999999,
+    "Emax": 999999,
+    "capitals": 1,
+    "clamp": 0,
+    "traps": {
+      "InvalidOperation": true,
+      "FloatOperation": false,
+      "DivisionByZero": true,
+      "Overflow": true,
+      "Underflow": false,
+      "Subnormal": false,
+      "Inexact": false,
+      "Rounded": false,
+      "Clamped": false
+    },
+    "flags": {
+      "InvalidOperation": false,
+      "FloatOperation": false,
+      "DivisionByZero": false,
+      "Overflow": false,
+      "Underflow": false,
+      "Subnormal": false,
+      "Inexact": false,
+      "Rounded": false,
+      "Clamped": false
+    }
+  },
+  "caller_after": {
+    "prec": 28,
+    "rounding": "ROUND_HALF_EVEN",
+    "Emin": -999999,
+    "Emax": 999999,
+    "capitals": 1,
+    "clamp": 0,
+    "traps": {
+      "InvalidOperation": true,
+      "FloatOperation": false,
+      "DivisionByZero": true,
+      "Overflow": true,
+      "Underflow": false,
+      "Subnormal": false,
+      "Inexact": false,
+      "Rounded": false,
+      "Clamped": false
+    },
+    "flags": {
+      "InvalidOperation": false,
+      "FloatOperation": false,
+      "DivisionByZero": false,
+      "Overflow": false,
+      "Underflow": false,
+      "Subnormal": false,
+      "Inexact": false,
+      "Rounded": false,
+      "Clamped": false
+    }
+  },
+  "input_id": "sha256:3c3f137aeafd30d9081ad199fd6b8f60398916f96a01f962eaf093c69cf08d56",
+  "input_unchanged": true,
+  "caller_context_unchanged": true,
+  "source_version": {
+    "path": "capital_research/core.py",
+    "bytes": 23619,
+    "sha256": "53d5dd9fde3ca598da8732fdc6c2450bd1b9449f7b1de1b1179b2a7375a60d36"
+  },
+  "actual": {
+    "kind": "EXACT_SAVED_DECISION_AND_METADATA_PROJECTION",
+    "case": "resume",
+    "id": "sha256:76a0566d6154461d8736ef4aaef6c91c1cfc6a08e4990a46c4c1801196f2ca00"
+  },
+  "equal_original": true
+}

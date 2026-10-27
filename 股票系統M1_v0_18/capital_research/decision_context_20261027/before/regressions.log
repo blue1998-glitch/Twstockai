@@ -1,0 +1,10 @@
+wrong-latest normal {'type': 'ValueError', 'detail': 'LATEST_PREDECESSOR_REQUIRED: checkpoint must descend from the exact latest decision/account'} True
+wrong-latest preset {'type': 'Clamped', 'detail': "[<class 'decimal.Clamped'>]"} False
+checkpoint-token-change normal {'type': 'ValueError', 'detail': 'Checkpoint differs from original ledger/fills/order states'} True
+checkpoint-token-change preset {'type': 'Clamped', 'detail': "[<class 'decimal.Clamped'>]"} False
+reserve-drop normal {'type': 'ValueError', 'detail': 'Next account/cutoff resets or drops authoritative cash, rights, holdings or orders'} True
+reserve-drop preset {'type': 'Clamped', 'detail': "[<class 'decimal.Clamped'>]"} False
+cash-right-drop normal {'type': 'ValueError', 'detail': 'Next account/cutoff resets or drops authoritative cash, rights, holdings or orders'} True
+cash-right-drop preset {'type': 'Clamped', 'detail': "[<class 'decimal.Clamped'>]"} False
+missing-checkpoint normal {'type': 'ValueError', 'detail': 'LEDGER_CHECKPOINT_REQUIRED: token carry does not prove capital continuity'} True
+missing-checkpoint preset {'type': 'ValueError', 'detail': 'LEDGER_CHECKPOINT_REQUIRED: token carry does not prove capital continuity'} True

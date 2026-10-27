@@ -1,3 +1,15 @@
+# 2026-10-27 最新有效｜直接決策及完整續接數值環境隔離0.9.1
+
+入口decision_context_20261027/README.md、REPORT.md、CONTRACT.md及before/after。取既有完整回放兩輪的原決策參數直接decide／resume_decision，不重播市場；先凍結input／expected／source，再修前actual。預期decision是原execution保存欄位，metadata按原契約綁原input／checkpoint，明示投影、不冒另存過wrapper或用新RUN填oracle。
+
+修前只有兩個狹窄指數Overflow，其餘八組（含Inexact）相符；resume在bind_resume原帳核對中斷，inner_decide0。五拒絕變體normal正確，preset四個被Clamped遮蔽，缺checkpoint仍拒絕；從未因此合格或成交。只固定兩公開入口完整標準50位Context，resume本體原樣移私有helper，revision0.9.1／schema0.8與同單0.9保持，公式／資格／帳務不改。
+
+十組修後全文及身分相符；十組拒絕回到原ValueError，input／caller／DefaultContext保持。六唯一新方法首次通過，不加歷史或控制／子程序。原本金2230與當期估值2226.660、現金1056.660／reserve100／A80/B7/C2／現金80與A10權利、兩筆原部分成交及A30／B13到期餘量、latest與全部token保留，沒有第二帳或重設本金。候選入口相依整合全文相符；未重跑完整同單0.9矩陣，其他直接成交／原單重評／帳務入口不宣稱全面隔離。
+
+基線5f18238d6b2d2e1dec87da22d23a5bd3e1ff351a；原唯一Codex沿里程碑自審、正常保存及GitHub固定SHA讀回，無人工操作、不預設Work驗收。舊READ不重算或遷移；fresh的原帳核對initial0／resume2、simulate／replay_sequence／save各0，不冒全部ledger呼叫0。1101 UNKNOWN、70／2／其中8／真實總淨合格0、正式false／主壓力null、來源parents／圖形／人工及原未支援保持。無舊suite／九路徑／真實producer、新行情來源、bootstrap、UI／Android／樣本外或部署交易；Astra／救援原件未取得未讀。策略仍由Work／使用者決定；下一項可有限確認直接EXECUTE外層，不在本輪擴張。下方原文完整留史。
+
+---
+
 # 2026-10-27 最新有效｜完成原單重評後接回候選的外層數值隔離0.1.1
 
 入口after_retry_context_20261027/README.md、REPORT.md、CONTRACT.md及before/after。只定向確認generate_after_retry外層，重用原新觸發／舊觸發／UNKNOWN完整請求、oracle及五組控制；先存原件／預期／source再修前實跑。三例各重現Inexact與Overflow，正常及兩種捨入相符。邊界stack證明都在首次checkpoint ledger核對中斷，內層generate尚未呼叫，不將靜態推導冒actual。

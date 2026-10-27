@@ -5,13 +5,14 @@ All numeric inputs are decimal strings; quantities are explicit integer shares.
 """
 from copy import deepcopy
 from datetime import datetime
-from decimal import Decimal, localcontext
+from decimal import Decimal, Context, InvalidOperation, DivisionByZero, Overflow, ROUND_HALF_EVEN, localcontext
 from graph_core.core import fingerprint, number as source_number
 from rotation_research.core import fees
 from .eligibility import entry_review, known_fact, validity_status
 from .fact_lineage import source_snapshot, history_at, visible, issues as fact_issues, asset_issues
 
 VERSION = 'capital-decision/0.8'
+IMPLEMENTATION_REVISION = '0.9.1-deterministic-decimal-context'
 FEATURES = ('price_volume', 'box', 'key_position', 'momentum', 'cross_scale')
 BINDING = ('source_id', 'basis_id', 'adjustment_version')
 
@@ -152,8 +153,8 @@ def _risk(q, marks, nav, data):
 
 
 def decide(data):
-    with localcontext() as ctx:
-        ctx.prec = 50
+    with localcontext(Context(prec=50,rounding=ROUND_HALF_EVEN,Emin=-999999,Emax=999999,
+            capitals=1,clamp=0,flags=[],traps=[InvalidOperation,DivisionByZero,Overflow])):
         return _decide(data)
 
 
@@ -373,6 +374,14 @@ def _decide(data, *, prior_fact_sources=(), same_order_scope=None):
 
 
 def resume_decision(previous, data, *, checkpoint=None, cancelled_order_ids=(), same_order_id=None):
+    """Isolate the complete resume, including original-ledger predecessor proof."""
+    with localcontext(Context(prec=50,rounding=ROUND_HALF_EVEN,Emin=-999999,Emax=999999,
+            capitals=1,clamp=0,flags=[],traps=[InvalidOperation,DivisionByZero,Overflow])):
+        return _resume_decision(previous,data,checkpoint=checkpoint,
+            cancelled_order_ids=cancelled_order_ids,same_order_id=same_order_id)
+
+
+def _resume_decision(previous, data, *, checkpoint=None, cancelled_order_ids=(), same_order_id=None):
     """Carry tokens only after proving the next account from original ledger fills."""
     old=previous['decision']
     if old['schema'] not in (VERSION,'capital-decision/0.9') or old['decision_id'] != fingerprint({k:v for k,v in old.items() if k!='decision_id'}):
