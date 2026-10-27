@@ -1,3 +1,11 @@
+# 2026-10-27 最新有效｜研究選擇紀錄純READ文字摘要0.1
+
+入口股票系統M1_v0_18/capital_research/research_choice_text_20261027/README.md、CONTRACT.md及actual/*/readable.txt。沿既有research_choice_cli READ新增--format text，預設JSON／原退出碼保持；SELECT只接受JSON。純research_choice_view.render_text先沿原validate_record校驗；原read_choice／Journal／數值／帳務及全部舊原件不改。只分一般／條件／拒絕研究意圖，顯示目標、理由／條件、來源／帳／截止／latest及reviewed token資訊；目標不當持股／成交，缺綁定保持UNKNOWN，不補帳或行情。
+
+三份原件的兩格式actual與六項拒絕診斷另存；4唯一方法首次通過，不加歷史PASS。fresh READ阻擋引擎、重選／保存、寫檔及網路，預設JSON逐字相容舊receipt，舊SELECT只作受控相容檢查。最低基線521e0a168c0793859387dc1a0a378788d109d512；沿原里程碑自審、正常commit/push及GitHub固定SHA讀回，無人工操作、不預設Work。正式false／主壓力null、1101 UNKNOWN、70／2／其中8／0及來源／圖形／原未支援保持。無舊suite／producer／bootstrap／部署交易；以下原文完整留史。
+
+---
+
 # 2026-10-27 最新有效｜保存generation的明示研究選擇紀錄0.1
 
 入口股票系統M1_v0_18/capital_research/research_choice_20261027/README.md、REPORT.md及CONTRACT.md；純API research_choice.choose_saved，外部research_choice_workflow與SELECT／READ CLI沿未改Journal。只讀完整已保存quantity-after-retry0.1及generation0.2，綁來源／原帳／截止／latest／全部token並唯一匹配明示股數與理由；外層資格保留，同候選ID不跨generation借用。等待交割只記條件意圖，原selected_id仍null。不重算、不建單／成交，不新增行情或提升正式資格。

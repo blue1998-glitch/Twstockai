@@ -1,3 +1,11 @@
+# 最新：研究選擇紀錄純READ文字摘要0.1
+
+入口[白話說明](research_choice_text_20261027/README.md)、[CONTRACT](research_choice_text_20261027/CONTRACT.md)、[一般意圖](research_choice_text_20261027/actual/grid-intent/readable.txt)、[條件意圖](research_choice_text_20261027/actual/conditional-intent/readable.txt)及[拒絕理由](research_choice_text_20261027/actual/rejected-old-trigger/readable.txt)。既有CLI READ新增--format text，預設JSON及退出碼保持；純view沿原讀取／校驗，不重選、改帳或接成交。目標未執行，時間／來源／latest／reviewed tokens照保存值，缺資料不補零。
+
+三份保存原件與六項拒讀診斷、4唯一方法本輪通過；無舊suite／producer，不加歷史PASS。正式false／主壓力null及全部來源／帳務未知保持；工作方式沿根既有里程碑。下方原文完整保留。
+
+---
+
 # 最新：保存候選的明示研究選擇紀錄0.1
 
 入口[白話說明](research_choice_20261027/README.md)、[REPORT](research_choice_20261027/REPORT.md)、[CONTRACT](research_choice_20261027/CONTRACT.md)及[一般意圖](research_choice_20261027/views/grid-intent.json)／[條件意圖](research_choice_20261027/views/conditional-intent.json)／[拒絕原件](research_choice_20261027/journal/rejected-old-trigger.json)。純API research_choice.choose_saved；保存與READ沿原Journal。來源／帳／截止／latest／全部token綁定，必須唯一明示選擇與理由，保留外層資格；相同目標ID不能借用另一generation資格。
