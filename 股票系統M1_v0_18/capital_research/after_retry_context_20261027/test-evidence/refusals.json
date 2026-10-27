@@ -1,0 +1,506 @@
+[
+  {
+    "case": "wrong-latest",
+    "context": "normal",
+    "actual": {
+      "kind": "EXACT_EXISTING_ACTUAL",
+      "source": {
+        "path": "capital_research/quantity_after_retry_20261027/after-final/wrong-latest/actual.json",
+        "bytes": 823,
+        "sha256": "4025a5ac0e25dbe520ae4361412d9817d040c00dcc02cc879988392e0ecde14c"
+      },
+      "id": "sha256:51668e5b119b8d559c2d9a574211449fec9d95d8ace3e57b4ce7ca1fb6583435"
+    },
+    "trace": {
+      "error": null,
+      "caller_before": {
+        "prec": 28,
+        "rounding": "ROUND_HALF_EVEN",
+        "Emin": -999999,
+        "Emax": 999999,
+        "capitals": 1,
+        "clamp": 0,
+        "traps": {
+          "InvalidOperation": true,
+          "FloatOperation": false,
+          "DivisionByZero": true,
+          "Overflow": true,
+          "Underflow": false,
+          "Subnormal": false,
+          "Inexact": false,
+          "Rounded": false,
+          "Clamped": false
+        },
+        "flags": {
+          "InvalidOperation": false,
+          "FloatOperation": false,
+          "DivisionByZero": false,
+          "Overflow": false,
+          "Underflow": false,
+          "Subnormal": false,
+          "Inexact": false,
+          "Rounded": false,
+          "Clamped": false
+        }
+      },
+      "caller_after": {
+        "prec": 28,
+        "rounding": "ROUND_HALF_EVEN",
+        "Emin": -999999,
+        "Emax": 999999,
+        "capitals": 1,
+        "clamp": 0,
+        "traps": {
+          "InvalidOperation": true,
+          "FloatOperation": false,
+          "DivisionByZero": true,
+          "Overflow": true,
+          "Underflow": false,
+          "Subnormal": false,
+          "Inexact": false,
+          "Rounded": false,
+          "Clamped": false
+        },
+        "flags": {
+          "InvalidOperation": false,
+          "FloatOperation": false,
+          "DivisionByZero": false,
+          "Overflow": false,
+          "Underflow": false,
+          "Subnormal": false,
+          "Inexact": false,
+          "Rounded": false,
+          "Clamped": false
+        }
+      },
+      "input_id": "sha256:33b2d0226ff7f8b56e888adc532331eeb6a5ea3fd287b32fb46784e04868ab25",
+      "input_unchanged": true,
+      "caller_context_unchanged": true,
+      "source_version": {
+        "path": "capital_research/quantity_after_retry.py",
+        "bytes": 9435,
+        "sha256": "b625d1b5c90c10d18fd8329713cbd381319c3056cac4e9127a0eaf7eb1691973"
+      }
+    }
+  },
+  {
+    "case": "wrong-latest",
+    "context": "preset",
+    "actual": {
+      "kind": "EXACT_EXISTING_ACTUAL",
+      "source": {
+        "path": "capital_research/quantity_after_retry_20261027/after-final/wrong-latest/actual.json",
+        "bytes": 823,
+        "sha256": "4025a5ac0e25dbe520ae4361412d9817d040c00dcc02cc879988392e0ecde14c"
+      },
+      "id": "sha256:51668e5b119b8d559c2d9a574211449fec9d95d8ace3e57b4ce7ca1fb6583435"
+    },
+    "trace": {
+      "error": null,
+      "caller_before": {
+        "prec": 5,
+        "rounding": "ROUND_FLOOR",
+        "Emin": -2,
+        "Emax": 2,
+        "capitals": 0,
+        "clamp": 1,
+        "traps": {
+          "InvalidOperation": true,
+          "FloatOperation": true,
+          "DivisionByZero": true,
+          "Overflow": true,
+          "Underflow": true,
+          "Subnormal": true,
+          "Inexact": true,
+          "Rounded": true,
+          "Clamped": true
+        },
+        "flags": {
+          "InvalidOperation": false,
+          "FloatOperation": false,
+          "DivisionByZero": false,
+          "Overflow": false,
+          "Underflow": false,
+          "Subnormal": false,
+          "Inexact": true,
+          "Rounded": true,
+          "Clamped": false
+        }
+      },
+      "caller_after": {
+        "prec": 5,
+        "rounding": "ROUND_FLOOR",
+        "Emin": -2,
+        "Emax": 2,
+        "capitals": 0,
+        "clamp": 1,
+        "traps": {
+          "InvalidOperation": true,
+          "FloatOperation": true,
+          "DivisionByZero": true,
+          "Overflow": true,
+          "Underflow": true,
+          "Subnormal": true,
+          "Inexact": true,
+          "Rounded": true,
+          "Clamped": true
+        },
+        "flags": {
+          "InvalidOperation": false,
+          "FloatOperation": false,
+          "DivisionByZero": false,
+          "Overflow": false,
+          "Underflow": false,
+          "Subnormal": false,
+          "Inexact": true,
+          "Rounded": true,
+          "Clamped": false
+        }
+      },
+      "input_id": "sha256:33b2d0226ff7f8b56e888adc532331eeb6a5ea3fd287b32fb46784e04868ab25",
+      "input_unchanged": true,
+      "caller_context_unchanged": true,
+      "source_version": {
+        "path": "capital_research/quantity_after_retry.py",
+        "bytes": 9435,
+        "sha256": "b625d1b5c90c10d18fd8329713cbd381319c3056cac4e9127a0eaf7eb1691973"
+      }
+    }
+  },
+  {
+    "case": "tampered-token-history",
+    "context": "normal",
+    "actual": {
+      "kind": "EXACT_EXISTING_ACTUAL",
+      "source": {
+        "path": "capital_research/quantity_after_retry_20261027/after-final/tampered-token-history/actual.json",
+        "bytes": 868,
+        "sha256": "11f7eb57901b1fa7f51e524d8d6de09f1c8fea754812dcdce5d5b266e5d313e1"
+      },
+      "id": "sha256:3fbd91bf6ffe9042f82eb599d220ba6c833f640d74884c8f19f52023cc4318e4"
+    },
+    "trace": {
+      "error": null,
+      "caller_before": {
+        "prec": 28,
+        "rounding": "ROUND_HALF_EVEN",
+        "Emin": -999999,
+        "Emax": 999999,
+        "capitals": 1,
+        "clamp": 0,
+        "traps": {
+          "InvalidOperation": true,
+          "FloatOperation": false,
+          "DivisionByZero": true,
+          "Overflow": true,
+          "Underflow": false,
+          "Subnormal": false,
+          "Inexact": false,
+          "Rounded": false,
+          "Clamped": false
+        },
+        "flags": {
+          "InvalidOperation": false,
+          "FloatOperation": false,
+          "DivisionByZero": false,
+          "Overflow": false,
+          "Underflow": false,
+          "Subnormal": false,
+          "Inexact": false,
+          "Rounded": false,
+          "Clamped": false
+        }
+      },
+      "caller_after": {
+        "prec": 28,
+        "rounding": "ROUND_HALF_EVEN",
+        "Emin": -999999,
+        "Emax": 999999,
+        "capitals": 1,
+        "clamp": 0,
+        "traps": {
+          "InvalidOperation": true,
+          "FloatOperation": false,
+          "DivisionByZero": true,
+          "Overflow": true,
+          "Underflow": false,
+          "Subnormal": false,
+          "Inexact": false,
+          "Rounded": false,
+          "Clamped": false
+        },
+        "flags": {
+          "InvalidOperation": false,
+          "FloatOperation": false,
+          "DivisionByZero": false,
+          "Overflow": false,
+          "Underflow": false,
+          "Subnormal": false,
+          "Inexact": false,
+          "Rounded": false,
+          "Clamped": false
+        }
+      },
+      "input_id": "sha256:61871c02436977689386343307bb0ce5b0d5deaf3d2339e8314dcb7bcdf46971",
+      "input_unchanged": true,
+      "caller_context_unchanged": true,
+      "source_version": {
+        "path": "capital_research/quantity_after_retry.py",
+        "bytes": 9435,
+        "sha256": "b625d1b5c90c10d18fd8329713cbd381319c3056cac4e9127a0eaf7eb1691973"
+      }
+    }
+  },
+  {
+    "case": "tampered-token-history",
+    "context": "preset",
+    "actual": {
+      "kind": "EXACT_EXISTING_ACTUAL",
+      "source": {
+        "path": "capital_research/quantity_after_retry_20261027/after-final/tampered-token-history/actual.json",
+        "bytes": 868,
+        "sha256": "11f7eb57901b1fa7f51e524d8d6de09f1c8fea754812dcdce5d5b266e5d313e1"
+      },
+      "id": "sha256:3fbd91bf6ffe9042f82eb599d220ba6c833f640d74884c8f19f52023cc4318e4"
+    },
+    "trace": {
+      "error": null,
+      "caller_before": {
+        "prec": 5,
+        "rounding": "ROUND_FLOOR",
+        "Emin": -2,
+        "Emax": 2,
+        "capitals": 0,
+        "clamp": 1,
+        "traps": {
+          "InvalidOperation": true,
+          "FloatOperation": true,
+          "DivisionByZero": true,
+          "Overflow": true,
+          "Underflow": true,
+          "Subnormal": true,
+          "Inexact": true,
+          "Rounded": true,
+          "Clamped": true
+        },
+        "flags": {
+          "InvalidOperation": false,
+          "FloatOperation": false,
+          "DivisionByZero": false,
+          "Overflow": false,
+          "Underflow": false,
+          "Subnormal": false,
+          "Inexact": true,
+          "Rounded": true,
+          "Clamped": false
+        }
+      },
+      "caller_after": {
+        "prec": 5,
+        "rounding": "ROUND_FLOOR",
+        "Emin": -2,
+        "Emax": 2,
+        "capitals": 0,
+        "clamp": 1,
+        "traps": {
+          "InvalidOperation": true,
+          "FloatOperation": true,
+          "DivisionByZero": true,
+          "Overflow": true,
+          "Underflow": true,
+          "Subnormal": true,
+          "Inexact": true,
+          "Rounded": true,
+          "Clamped": true
+        },
+        "flags": {
+          "InvalidOperation": false,
+          "FloatOperation": false,
+          "DivisionByZero": false,
+          "Overflow": false,
+          "Underflow": false,
+          "Subnormal": false,
+          "Inexact": true,
+          "Rounded": true,
+          "Clamped": false
+        }
+      },
+      "input_id": "sha256:61871c02436977689386343307bb0ce5b0d5deaf3d2339e8314dcb7bcdf46971",
+      "input_unchanged": true,
+      "caller_context_unchanged": true,
+      "source_version": {
+        "path": "capital_research/quantity_after_retry.py",
+        "bytes": 9435,
+        "sha256": "b625d1b5c90c10d18fd8329713cbd381319c3056cac4e9127a0eaf7eb1691973"
+      }
+    }
+  },
+  {
+    "case": "search-limit",
+    "context": "normal",
+    "actual": {
+      "kind": "EXACT_EXISTING_ACTUAL",
+      "source": {
+        "path": "capital_research/quantity_after_retry_20261027/after-final/search-limit/actual.json",
+        "bytes": 548064,
+        "sha256": "c17a647a46f223afd2d1f5b5fc5ebd4999ee17e4d809f294c4499116cd8b5478"
+      },
+      "id": "sha256:927ec106fb1b645c623ce0842be65349b601a5e7c0adbc61885e28da1ca18202"
+    },
+    "trace": {
+      "error": null,
+      "caller_before": {
+        "prec": 28,
+        "rounding": "ROUND_HALF_EVEN",
+        "Emin": -999999,
+        "Emax": 999999,
+        "capitals": 1,
+        "clamp": 0,
+        "traps": {
+          "InvalidOperation": true,
+          "FloatOperation": false,
+          "DivisionByZero": true,
+          "Overflow": true,
+          "Underflow": false,
+          "Subnormal": false,
+          "Inexact": false,
+          "Rounded": false,
+          "Clamped": false
+        },
+        "flags": {
+          "InvalidOperation": false,
+          "FloatOperation": false,
+          "DivisionByZero": false,
+          "Overflow": false,
+          "Underflow": false,
+          "Subnormal": false,
+          "Inexact": false,
+          "Rounded": false,
+          "Clamped": false
+        }
+      },
+      "caller_after": {
+        "prec": 28,
+        "rounding": "ROUND_HALF_EVEN",
+        "Emin": -999999,
+        "Emax": 999999,
+        "capitals": 1,
+        "clamp": 0,
+        "traps": {
+          "InvalidOperation": true,
+          "FloatOperation": false,
+          "DivisionByZero": true,
+          "Overflow": true,
+          "Underflow": false,
+          "Subnormal": false,
+          "Inexact": false,
+          "Rounded": false,
+          "Clamped": false
+        },
+        "flags": {
+          "InvalidOperation": false,
+          "FloatOperation": false,
+          "DivisionByZero": false,
+          "Overflow": false,
+          "Underflow": false,
+          "Subnormal": false,
+          "Inexact": false,
+          "Rounded": false,
+          "Clamped": false
+        }
+      },
+      "input_id": "sha256:43c82ae28a7313d4716f7029f2ebf28fa8959cda2152b53daf791c8f04e16a64",
+      "input_unchanged": true,
+      "caller_context_unchanged": true,
+      "source_version": {
+        "path": "capital_research/quantity_after_retry.py",
+        "bytes": 9435,
+        "sha256": "b625d1b5c90c10d18fd8329713cbd381319c3056cac4e9127a0eaf7eb1691973"
+      }
+    }
+  },
+  {
+    "case": "search-limit",
+    "context": "preset",
+    "actual": {
+      "kind": "EXACT_EXISTING_ACTUAL",
+      "source": {
+        "path": "capital_research/quantity_after_retry_20261027/after-final/search-limit/actual.json",
+        "bytes": 548064,
+        "sha256": "c17a647a46f223afd2d1f5b5fc5ebd4999ee17e4d809f294c4499116cd8b5478"
+      },
+      "id": "sha256:927ec106fb1b645c623ce0842be65349b601a5e7c0adbc61885e28da1ca18202"
+    },
+    "trace": {
+      "error": null,
+      "caller_before": {
+        "prec": 5,
+        "rounding": "ROUND_FLOOR",
+        "Emin": -2,
+        "Emax": 2,
+        "capitals": 0,
+        "clamp": 1,
+        "traps": {
+          "InvalidOperation": true,
+          "FloatOperation": true,
+          "DivisionByZero": true,
+          "Overflow": true,
+          "Underflow": true,
+          "Subnormal": true,
+          "Inexact": true,
+          "Rounded": true,
+          "Clamped": true
+        },
+        "flags": {
+          "InvalidOperation": false,
+          "FloatOperation": false,
+          "DivisionByZero": false,
+          "Overflow": false,
+          "Underflow": false,
+          "Subnormal": false,
+          "Inexact": true,
+          "Rounded": true,
+          "Clamped": false
+        }
+      },
+      "caller_after": {
+        "prec": 5,
+        "rounding": "ROUND_FLOOR",
+        "Emin": -2,
+        "Emax": 2,
+        "capitals": 0,
+        "clamp": 1,
+        "traps": {
+          "InvalidOperation": true,
+          "FloatOperation": true,
+          "DivisionByZero": true,
+          "Overflow": true,
+          "Underflow": true,
+          "Subnormal": true,
+          "Inexact": true,
+          "Rounded": true,
+          "Clamped": true
+        },
+        "flags": {
+          "InvalidOperation": false,
+          "FloatOperation": false,
+          "DivisionByZero": false,
+          "Overflow": false,
+          "Underflow": false,
+          "Subnormal": false,
+          "Inexact": true,
+          "Rounded": true,
+          "Clamped": false
+        }
+      },
+      "input_id": "sha256:43c82ae28a7313d4716f7029f2ebf28fa8959cda2152b53daf791c8f04e16a64",
+      "input_unchanged": true,
+      "caller_context_unchanged": true,
+      "source_version": {
+        "path": "capital_research/quantity_after_retry.py",
+        "bytes": 9435,
+        "sha256": "b625d1b5c90c10d18fd8329713cbd381319c3056cac4e9127a0eaf7eb1691973"
+      }
+    }
+  }
+]

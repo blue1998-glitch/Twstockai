@@ -1,3 +1,15 @@
+# 2026-10-27 最新有效｜完成原單重評後接回候選的外層數值隔離0.1.1
+
+入口股票系統M1_v0_18/capital_research/after_retry_context_20261027/README.md、REPORT.md、CONTRACT.md及before/after。只定向確認generate_after_retry外層，重用原新觸發／舊觸發／UNKNOWN完整請求、oracle及五組控制；先存原件／預期／source再修前實跑。三例各重現Inexact與Overflow，正常及兩種捨入相符。邊界stack證明都在首次checkpoint ledger核對中斷，內層generate尚未呼叫，不將靜態推導冒actual。
+
+只固定公開外層完整標準50位local Context，revision0.1.1、schema0.1不變，不改_generate本體或任何帳務／資格／策略與下游source。十五組修後全文／身分相符原件，呼叫端及input保持；五唯一新方法首次通過，不加歷史或40次有限診斷。原本金1430與當期估值1425.100分開，現金275.100／reserve100／A60/B25/C2、完整原帳／權利／fills／未成交歷史、latest及12歷史token保持。舊觸發與UNKNOWN、錯前身／token及搜尋超限仍拒絕，全換仍等待交割重評，不新增單或成交。
+
+基線3b472ae8575f4f4f6c5acaf504f29d0ded078bdd；原唯一Codex依里程碑自審、正常保存及GitHub固定SHA讀回，無人工操作、不預設Work工程驗收。fresh程序DefaultContext與caller保持，simulate／replay_sequence／retry／save各0，原ledger核對14次，不宣稱全部帳務呼叫0。舊READ不重算或遷移，其他直接決策／成交／重評與帳務入口的靜態缺口尚未因此解決，不無限拆helper或重跑舊矩陣。
+
+1101 UNKNOWN、70／2／其中8／真實總淨合格0、正式false／主壓力null、全部來源parents／圖形／人工契約及原未支援保持。無舊suite／完整20案／九路徑／真實producer、bootstrap、新行情來源、UI／Android／樣本外或部署交易；Astra／救援原件未取得未讀。Work／使用者仍決定未定策略。下一項可有限確認直接決策及checkpoint續接，不在本輪擴張工程。下方原文完整留史。
+
+---
+
 # 2026-10-27 最新有效｜獨立數量候選入口數值環境隔離0.2.1
 
 入口股票系統M1_v0_18/capital_research/candidate_context_20261027/README.md、REPORT.md、CONTRACT.md及before/after。重用原保存initial與old-trigger的精確請求／generation及五組控制；修前狹窄指數兩案Overflow，其餘八組相符，不冒稱捨入或Inexact缺陷。本次只固定quantity_candidates.generate內部完整標準50位Context，revision0.2.1、原0.1／0.2 schema保持，不改公式、資格、帳務或策略。

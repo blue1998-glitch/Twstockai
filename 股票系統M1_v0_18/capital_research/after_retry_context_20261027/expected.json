@@ -1,0 +1,26 @@
+{
+  "all_complete_outputs_equal_pinned_original": true,
+  "original_schema": "capital-quantity-after-retry/0.1",
+  "input_unchanged": true,
+  "caller_context_unchanged": true,
+  "origin_initial_capital": "1430",
+  "current_account_value": "1425.100",
+  "settled_cash": "275.100",
+  "general_reserved_cash": "100",
+  "holdings": {
+    "A": "60",
+    "B": "25",
+    "C": "2"
+  },
+  "historical_tokens": 12,
+  "received_attempt_outcomes": [
+    "REJECTED",
+    "ACCEPTED"
+  ],
+  "buys": {
+    "new_independent_trigger": "FEASIBLE_EXISTS",
+    "old_trigger": "NO_NEW_INDEPENDENT_TRIGGER",
+    "unknown_qualification": "NEW_CAPITAL_NOT_QUALIFIED:B"
+  },
+  "new_order_or_execution": "NOT_PERFORMED"
+}

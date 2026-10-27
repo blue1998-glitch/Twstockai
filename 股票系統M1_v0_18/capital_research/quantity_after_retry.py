@@ -1,6 +1,6 @@
 """Bound completed synthetic retry output to the existing quantity generator."""
 from copy import deepcopy
-from decimal import localcontext
+from decimal import Context, InvalidOperation, DivisionByZero, Overflow, ROUND_HALF_EVEN, localcontext
 
 from .conditional_retry import predecessor
 from .continuity import validate_checkpoint, account_at_checkpoint
@@ -10,6 +10,7 @@ from .quantity_replay import _quantity_request
 
 INPUT = 'capital-quantity-after-retry-input/0.1'
 SCHEMA = 'capital-quantity-after-retry/0.1'
+IMPLEMENTATION_REVISION = '0.1.1-deterministic-decimal-context'
 FLAGS = ('data_qualified', 'execution_model_qualified', 'historical_signal_eligible',
          'policy_authorized', 'live_execution_authorized')
 
@@ -20,8 +21,10 @@ def _require(condition, reason):
 
 
 def generate_after_retry(request):
-    with localcontext() as ctx:
-        ctx.prec = 50
+    # Protect checkpoint validation and account derivation as well as generation.
+    # Do not inherit the caller's traps, flags, rounding or exponent bounds.
+    with localcontext(Context(prec=50,rounding=ROUND_HALF_EVEN,Emin=-999999,Emax=999999,
+            capitals=1,clamp=0,flags=[],traps=[InvalidOperation,DivisionByZero,Overflow])):
         return _generate(request)
 
 
