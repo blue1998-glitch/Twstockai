@@ -1,3 +1,11 @@
+# 最新：研究選擇與明示完整來源純READ核對並列0.1
+
+入口[說明與命令](research_choice_source_20261027/README.md)、[CONTRACT](research_choice_source_20261027/CONTRACT.md)、[來源相符仍遭拒](research_choice_source_20261027/actual/rejected/readable.txt)及[同ID錯來源拒比](research_choice_source_20261027/actual/wrong-source-same-candidate-id/readable.txt)。新check_saved及source_read CLI沿原校驗，完整綁定與唯一快照相符才兩欄。核對狀態與研究資格分開，不重選／改帳或接成交；缺綁定不猜，無快照明示。
+
+12輸入、2 IO診斷及5唯一方法首次通過，不加歷史PASS；actual另存、舊原件／source不改。全部正式false/null與來源拒算保持；工作方式沿根里程碑，不預設Work逐輪驗收。下方原文完整保留。
+
+---
+
 # 最新：研究選擇紀錄純READ文字摘要0.1
 
 入口[白話說明](research_choice_text_20261027/README.md)、[CONTRACT](research_choice_text_20261027/CONTRACT.md)、[一般意圖](research_choice_text_20261027/actual/grid-intent/readable.txt)、[條件意圖](research_choice_text_20261027/actual/conditional-intent/readable.txt)及[拒絕理由](research_choice_text_20261027/actual/rejected-old-trigger/readable.txt)。既有CLI READ新增--format text，預設JSON及退出碼保持；純view沿原讀取／校驗，不重選、改帳或接成交。目標未執行，時間／來源／latest／reviewed tokens照保存值，缺資料不補零。

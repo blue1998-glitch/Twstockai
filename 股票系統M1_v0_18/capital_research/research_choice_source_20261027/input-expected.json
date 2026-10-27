@@ -1,0 +1,401 @@
+[
+  {
+    "input": {
+      "name": "general",
+      "choice_source": {
+        "path": "股票系統M1_v0_18/capital_research/research_choice_20261027/journal/grid-intent.json",
+        "bytes": 7492,
+        "sha256": "e1539b257ef9644464c00c413434ebb72eea2a478f3f79c2f84214bf5c2ff781"
+      },
+      "explicit_source": {
+        "path": "股票系統M1_v0_18/capital_research/quantity_after_retry_20261027/after-final/new-independent-trigger/actual.json",
+        "bytes": 627600,
+        "sha256": "159900c478cc4fd69b63c40eb57bc85457b69aecc6d2d795d7d213671fd1fe49"
+      },
+      "choice_edits": [],
+      "source_edits": [],
+      "duplicate_candidate": false,
+      "refresh_source_content_ids": false,
+      "resign_record": false,
+      "bare_generation": false,
+      "evidence_kind": "SAVED_READ_INPUT_NOT_NEW_PRODUCER",
+      "materialized_input_id": "sha256:d4f88311acb1947cab719005e61fce3b5d94c61457644ee835bd72e413807759"
+    },
+    "expected": {
+      "check_status": "MATCHED",
+      "choice_status": "RECORDED_RESEARCH_INTENT",
+      "candidate_check": "EXACT_UNIQUE_MEMBER",
+      "candidate_qualification": "CURRENTLY_FEASIBLE",
+      "columns": 2,
+      "exit_code": 0,
+      "reason": null
+    }
+  },
+  {
+    "input": {
+      "name": "conditional",
+      "choice_source": {
+        "path": "股票系統M1_v0_18/capital_research/research_choice_20261027/journal/conditional-intent.json",
+        "bytes": 7548,
+        "sha256": "154b5d5af0659382dbd7b3315780e550c3acf993c75c984c5430223305d6bdab"
+      },
+      "explicit_source": {
+        "path": "股票系統M1_v0_18/capital_research/quantity_after_retry_20261027/after-final/new-independent-trigger/actual.json",
+        "bytes": 627600,
+        "sha256": "159900c478cc4fd69b63c40eb57bc85457b69aecc6d2d795d7d213671fd1fe49"
+      },
+      "choice_edits": [],
+      "source_edits": [],
+      "duplicate_candidate": false,
+      "refresh_source_content_ids": false,
+      "resign_record": false,
+      "bare_generation": false,
+      "evidence_kind": "SAVED_READ_INPUT_NOT_NEW_PRODUCER",
+      "materialized_input_id": "sha256:079d7534899d031d8e7f76fe9f9b5a48cd97346837decaff0c14ddc9bceed6b7"
+    },
+    "expected": {
+      "check_status": "MATCHED",
+      "choice_status": "RECORDED_CONDITIONAL_RESEARCH_INTENT",
+      "candidate_check": "EXACT_UNIQUE_MEMBER",
+      "candidate_qualification": "WAIT_SETTLEMENT_REASSESSMENT",
+      "columns": 2,
+      "exit_code": 0,
+      "reason": null
+    }
+  },
+  {
+    "input": {
+      "name": "rejected",
+      "choice_source": {
+        "path": "股票系統M1_v0_18/capital_research/research_choice_20261027/journal/rejected-old-trigger.json",
+        "bytes": 7597,
+        "sha256": "f5e2f91e0ee0f756d5ba396db982f5153a1858140a121377af2ec7350cae99bb"
+      },
+      "explicit_source": {
+        "path": "股票系統M1_v0_18/capital_research/quantity_after_retry_20261027/after-final/old-trigger/actual.json",
+        "bytes": 627841,
+        "sha256": "f42d7466f57b94350a172e6156b41148d432ea64095d5edae90d2e9d91999388"
+      },
+      "choice_edits": [],
+      "source_edits": [],
+      "duplicate_candidate": false,
+      "refresh_source_content_ids": false,
+      "resign_record": false,
+      "bare_generation": false,
+      "evidence_kind": "SAVED_READ_INPUT_NOT_NEW_PRODUCER",
+      "materialized_input_id": "sha256:c4b73aba0199fe9d5b8351f1f3ac1db8ee375fe413edd291f07533c981cb1529"
+    },
+    "expected": {
+      "check_status": "MATCHED",
+      "choice_status": "REFUSED",
+      "candidate_check": "EXACT_UNIQUE_MEMBER",
+      "candidate_qualification": "REJECTED",
+      "columns": 2,
+      "exit_code": 0,
+      "reason": null
+    }
+  },
+  {
+    "input": {
+      "name": "wrong-source-same-candidate-id",
+      "choice_source": {
+        "path": "股票系統M1_v0_18/capital_research/research_choice_20261027/journal/grid-intent.json",
+        "bytes": 7492,
+        "sha256": "e1539b257ef9644464c00c413434ebb72eea2a478f3f79c2f84214bf5c2ff781"
+      },
+      "explicit_source": {
+        "path": "股票系統M1_v0_18/capital_research/quantity_after_retry_20261027/after-final/old-trigger/actual.json",
+        "bytes": 627841,
+        "sha256": "f42d7466f57b94350a172e6156b41148d432ea64095d5edae90d2e9d91999388"
+      },
+      "choice_edits": [],
+      "source_edits": [],
+      "duplicate_candidate": false,
+      "refresh_source_content_ids": false,
+      "resign_record": false,
+      "bare_generation": false,
+      "evidence_kind": "SAVED_READ_INPUT_NOT_NEW_PRODUCER",
+      "materialized_input_id": "sha256:9c17c1fdb5c91d4ff162157c2801ec7efb1338a15a129bd3c59b15d4d78f678f"
+    },
+    "expected": {
+      "check_status": "REFUSED",
+      "columns": 0,
+      "exit_code": 2,
+      "reason": "SOURCE_BINDING_MISMATCH"
+    }
+  },
+  {
+    "input": {
+      "name": "no-snapshot",
+      "choice_source": {
+        "path": "股票系統M1_v0_18/capital_research/research_choice_20261027/after-final/missing-reason/actual.json",
+        "bytes": 3922,
+        "sha256": "bc1f0547fefc059af0a8fad85c47ef098db74c4ce91a85a3007d6b7f21413646"
+      },
+      "explicit_source": {
+        "path": "股票系統M1_v0_18/capital_research/quantity_after_retry_20261027/after-final/new-independent-trigger/actual.json",
+        "bytes": 627600,
+        "sha256": "159900c478cc4fd69b63c40eb57bc85457b69aecc6d2d795d7d213671fd1fe49"
+      },
+      "choice_edits": [],
+      "source_edits": [],
+      "duplicate_candidate": false,
+      "refresh_source_content_ids": false,
+      "resign_record": false,
+      "bare_generation": false,
+      "evidence_kind": "SAVED_READ_INPUT_NOT_NEW_PRODUCER",
+      "materialized_input_id": "sha256:becad92df1b93a958d75e3c386a440b717de33bf34a13eebc65f5669e9fc892b"
+    },
+    "expected": {
+      "check_status": "MATCHED",
+      "choice_status": "REFUSED",
+      "candidate_check": "NO_SAVED_CANDIDATE",
+      "candidate_qualification": null,
+      "columns": 2,
+      "exit_code": 0,
+      "reason": null
+    }
+  },
+  {
+    "input": {
+      "name": "unknown-binding",
+      "choice_source": {
+        "path": "股票系統M1_v0_18/capital_research/research_choice_20261027/after-final/same-id-cross-generation-refused/actual.json",
+        "bytes": 1044,
+        "sha256": "99842acf4ac843549ef7aca3bf95f22090b2a36fe0571be738173679bcefe274"
+      },
+      "explicit_source": {
+        "path": "股票系統M1_v0_18/capital_research/quantity_after_retry_20261027/after-final/new-independent-trigger/actual.json",
+        "bytes": 627600,
+        "sha256": "159900c478cc4fd69b63c40eb57bc85457b69aecc6d2d795d7d213671fd1fe49"
+      },
+      "choice_edits": [],
+      "source_edits": [],
+      "duplicate_candidate": false,
+      "refresh_source_content_ids": false,
+      "resign_record": false,
+      "bare_generation": false,
+      "evidence_kind": "SAVED_READ_INPUT_NOT_NEW_PRODUCER",
+      "materialized_input_id": "sha256:3ca0f43148f71d13f6bd598bfb00bda8ea49e4db0297631349f0bd713c65fc40"
+    },
+    "expected": {
+      "check_status": "REFUSED",
+      "columns": 0,
+      "exit_code": 2,
+      "reason": "CHOICE_SOURCE_BINDING_UNKNOWN"
+    }
+  },
+  {
+    "input": {
+      "name": "bare-generation",
+      "choice_source": {
+        "path": "股票系統M1_v0_18/capital_research/research_choice_20261027/journal/grid-intent.json",
+        "bytes": 7492,
+        "sha256": "e1539b257ef9644464c00c413434ebb72eea2a478f3f79c2f84214bf5c2ff781"
+      },
+      "explicit_source": {
+        "path": "股票系統M1_v0_18/capital_research/quantity_after_retry_20261027/after-final/new-independent-trigger/actual.json",
+        "bytes": 627600,
+        "sha256": "159900c478cc4fd69b63c40eb57bc85457b69aecc6d2d795d7d213671fd1fe49"
+      },
+      "choice_edits": [],
+      "source_edits": [],
+      "duplicate_candidate": false,
+      "refresh_source_content_ids": false,
+      "resign_record": false,
+      "bare_generation": true,
+      "evidence_kind": "SAVED_READ_INPUT_NOT_NEW_PRODUCER",
+      "materialized_input_id": "sha256:f538410cf44f4b99742237049a1f66062d2d5446a0bb20987b1ec5b975163cd1"
+    },
+    "expected": {
+      "check_status": "REFUSED",
+      "columns": 0,
+      "exit_code": 2,
+      "reason": "COMPLETE_EXPLICIT_SOURCE_WRAPPER_REQUIRED"
+    }
+  },
+  {
+    "input": {
+      "name": "edited-record",
+      "choice_source": {
+        "path": "股票系統M1_v0_18/capital_research/research_choice_20261027/journal/grid-intent.json",
+        "bytes": 7492,
+        "sha256": "e1539b257ef9644464c00c413434ebb72eea2a478f3f79c2f84214bf5c2ff781"
+      },
+      "explicit_source": {
+        "path": "股票系統M1_v0_18/capital_research/quantity_after_retry_20261027/after-final/new-independent-trigger/actual.json",
+        "bytes": 627600,
+        "sha256": "159900c478cc4fd69b63c40eb57bc85457b69aecc6d2d795d7d213671fd1fe49"
+      },
+      "choice_edits": [
+        {
+          "path": [
+            "choice",
+            "selected",
+            "plan",
+            "targets",
+            "B"
+          ],
+          "value": "27"
+        }
+      ],
+      "source_edits": [],
+      "duplicate_candidate": false,
+      "refresh_source_content_ids": false,
+      "resign_record": false,
+      "bare_generation": false,
+      "evidence_kind": "SAVED_READ_INPUT_NOT_NEW_PRODUCER",
+      "materialized_input_id": "sha256:22614129f6c9dc71fc064f8c813dab61bfd5a442c0dae383ae71233c3345e182"
+    },
+    "expected": {
+      "check_status": "REFUSED",
+      "columns": 0,
+      "exit_code": 2,
+      "reason": "RECORD_ID_FINGERPRINT_CONFLICT"
+    }
+  },
+  {
+    "input": {
+      "name": "snapshot-content-mismatch",
+      "choice_source": {
+        "path": "股票系統M1_v0_18/capital_research/research_choice_20261027/journal/grid-intent.json",
+        "bytes": 7492,
+        "sha256": "e1539b257ef9644464c00c413434ebb72eea2a478f3f79c2f84214bf5c2ff781"
+      },
+      "explicit_source": {
+        "path": "股票系統M1_v0_18/capital_research/quantity_after_retry_20261027/after-final/new-independent-trigger/actual.json",
+        "bytes": 627600,
+        "sha256": "159900c478cc4fd69b63c40eb57bc85457b69aecc6d2d795d7d213671fd1fe49"
+      },
+      "choice_edits": [
+        {
+          "path": [
+            "choice",
+            "selected",
+            "core_evaluation",
+            "estimated_cost"
+          ],
+          "value": "999.99"
+        }
+      ],
+      "source_edits": [],
+      "duplicate_candidate": false,
+      "refresh_source_content_ids": false,
+      "resign_record": true,
+      "bare_generation": false,
+      "evidence_kind": "SAVED_READ_INPUT_NOT_NEW_PRODUCER",
+      "materialized_input_id": "sha256:ab4208fe847d03aca65d7a9358eb49c3e720d27434ea0502eab0c611c664213d"
+    },
+    "expected": {
+      "check_status": "REFUSED",
+      "columns": 0,
+      "exit_code": 2,
+      "reason": "CANDIDATE_SNAPSHOT_MISMATCH"
+    }
+  },
+  {
+    "input": {
+      "name": "duplicate-candidate-id",
+      "choice_source": {
+        "path": "股票系統M1_v0_18/capital_research/research_choice_20261027/journal/grid-intent.json",
+        "bytes": 7492,
+        "sha256": "e1539b257ef9644464c00c413434ebb72eea2a478f3f79c2f84214bf5c2ff781"
+      },
+      "explicit_source": {
+        "path": "股票系統M1_v0_18/capital_research/quantity_after_retry_20261027/after-final/new-independent-trigger/actual.json",
+        "bytes": 627600,
+        "sha256": "159900c478cc4fd69b63c40eb57bc85457b69aecc6d2d795d7d213671fd1fe49"
+      },
+      "choice_edits": [],
+      "source_edits": [],
+      "duplicate_candidate": true,
+      "refresh_source_content_ids": true,
+      "resign_record": true,
+      "bare_generation": false,
+      "evidence_kind": "SAVED_READ_INPUT_NOT_NEW_PRODUCER",
+      "materialized_input_id": "sha256:624ff503101d1613a44fea42f07cb3dd8ba06766fab2143a0acda51e40c8f822"
+    },
+    "expected": {
+      "check_status": "REFUSED",
+      "columns": 0,
+      "exit_code": 2,
+      "reason": "CANDIDATE_ID_NOT_UNIQUE"
+    }
+  },
+  {
+    "input": {
+      "name": "wrong-latest",
+      "choice_source": {
+        "path": "股票系統M1_v0_18/capital_research/research_choice_20261027/journal/grid-intent.json",
+        "bytes": 7492,
+        "sha256": "e1539b257ef9644464c00c413434ebb72eea2a478f3f79c2f84214bf5c2ff781"
+      },
+      "explicit_source": {
+        "path": "股票系統M1_v0_18/capital_research/quantity_after_retry_20261027/after-final/new-independent-trigger/actual.json",
+        "bytes": 627600,
+        "sha256": "159900c478cc4fd69b63c40eb57bc85457b69aecc6d2d795d7d213671fd1fe49"
+      },
+      "choice_edits": [
+        {
+          "path": [
+            "choice",
+            "source_binding",
+            "latest_decision_id"
+          ],
+          "value": "wrong-latest"
+        }
+      ],
+      "source_edits": [],
+      "duplicate_candidate": false,
+      "refresh_source_content_ids": false,
+      "resign_record": true,
+      "bare_generation": false,
+      "evidence_kind": "SAVED_READ_INPUT_NOT_NEW_PRODUCER",
+      "materialized_input_id": "sha256:ce48becbfc9a9b31a9860c864f1a3be7bedf1d217dcaca66f3c1fa8b1c2ed5bc"
+    },
+    "expected": {
+      "check_status": "REFUSED",
+      "columns": 0,
+      "exit_code": 2,
+      "reason": "SOURCE_BINDING_MISMATCH"
+    }
+  },
+  {
+    "input": {
+      "name": "missing-historical-token",
+      "choice_source": {
+        "path": "股票系統M1_v0_18/capital_research/research_choice_20261027/journal/grid-intent.json",
+        "bytes": 7492,
+        "sha256": "e1539b257ef9644464c00c413434ebb72eea2a478f3f79c2f84214bf5c2ff781"
+      },
+      "explicit_source": {
+        "path": "股票系統M1_v0_18/capital_research/quantity_after_retry_20261027/after-final/new-independent-trigger/actual.json",
+        "bytes": 627600,
+        "sha256": "159900c478cc4fd69b63c40eb57bc85457b69aecc6d2d795d7d213671fd1fe49"
+      },
+      "choice_edits": [
+        {
+          "path": [
+            "choice",
+            "source_binding",
+            "historical_reviewed_tokens"
+          ],
+          "value": []
+        }
+      ],
+      "source_edits": [],
+      "duplicate_candidate": false,
+      "refresh_source_content_ids": false,
+      "resign_record": true,
+      "bare_generation": false,
+      "evidence_kind": "SAVED_READ_INPUT_NOT_NEW_PRODUCER",
+      "materialized_input_id": "sha256:cba7085657b175f22da27045386c7910bd9cdeb3a2c725ff9fb237fc4b494502"
+    },
+    "expected": {
+      "check_status": "REFUSED",
+      "columns": 0,
+      "exit_code": 2,
+      "reason": "SOURCE_BINDING_MISMATCH"
+    }
+  }
+]

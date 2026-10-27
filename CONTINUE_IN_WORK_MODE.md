@@ -1,3 +1,11 @@
+# 2026-10-27 最新有效｜研究選擇與明示完整來源純READ核對並列0.1
+
+入口股票系統M1_v0_18/capital_research/research_choice_source_20261027/README.md、CONTRACT.md及actual/。新純API research_choice_source.check_saved及獨立research_choice_source_read CLI沿原read_choice／validate_record／bind_saved_source，必須明示完整來源wrapper，核完整內容／帳戶／截止／latest／checkpoint／tokens／版本，再核唯一成員及完整快照相同。MATCHED才兩欄，錯配columns空；不重選或找新版。check_status與choice_status／保存資格分開；遭拒仍遭拒，WAIT仍條件意圖，無快照只證來源綁定。新CLI exit0只指來源相符，舊CLI格式／退出碼不改。
+
+12定向輸入及2 IO診斷符合預期，5唯一方法首次通過，不加歷史。原件／輸入／tokens不改；結構變體只證READ防線，fresh CLI禁止引擎／選擇／保存／寫檔／網路。原數值、帳務、會計、READ及舊證據source全不改。最低基線424689ce351e6fb548e6ff5a3d1c74c84a12e820；沿既有里程碑原唯一Codex自審、正常保存及GitHub固定SHA讀回，無人工操作／不預設Work。來源認證／策略比較／R2/F及原未支援不擴張；1101 UNKNOWN、70／2／其中8／0、正式false／主壓力null及來源／圖形契約保持。以下原文完整留史。
+
+---
+
 # 2026-10-27 最新有效｜研究選擇紀錄純READ文字摘要0.1
 
 入口股票系統M1_v0_18/capital_research/research_choice_text_20261027/README.md、CONTRACT.md及actual/*/readable.txt。沿既有research_choice_cli READ新增--format text，預設JSON／原退出碼保持；SELECT只接受JSON。純research_choice_view.render_text先沿原validate_record校驗；原read_choice／Journal／數值／帳務及全部舊原件不改。只分一般／條件／拒絕研究意圖，顯示目標、理由／條件、來源／帳／截止／latest及reviewed token資訊；目標不當持股／成交，缺綁定保持UNKNOWN，不補帳或行情。
