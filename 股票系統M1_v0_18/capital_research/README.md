@@ -1,3 +1,13 @@
+# 2026-10-27 最新有效｜完整合成帳務全帳戶評估0.1
+
+入口account_metrics_20261027/README.md、CONTRACT.md、REPORT.md及final/。新account_metrics.evaluate_saved純數值評估完整quantity-replay/0.1，沿原lifecycle READ校驗，再核完整checkpoint／原帳／連續日曲線前綴。只取最後原帳曲線一次，輸出期間應計成長、回撤與恢復／未恢復截尾；原帳期末退出成本及成長另列，不重扣費用，不冒每日能清倉。不重播、補行情、排名或接成交；原帳／權利／reserve／latest／全部token及舊source保持。
+
+7手算曲線、18保存／結構案例（2可評估、16拒算）與5算術反例；本輪8唯一方法通過，自審補來源原價／交易日不得沿舊價後只補6相依方法，共14次方法執行不加歷史。fresh CLI禁引擎／寫檔／網路。final/、cli-final/與time-final/才綁最終source，actual/／after-final/留史。原oracle未改；資本反例由既有較早ORIGIN_CAPITAL_CHANGED防線拒絕，有診斷而非改預期。
+
+最低基線4313799a78d3d319a12da83ad8a0f661126c54cd；沿里程碑原唯一Codex自審、正常保存及GitHub固定SHA原件讀回，無人工操作、不預設Work逐輪驗收。新CLI是明示讀原件計算新評估，不是舊READ重算。僅支持完整合成quantity回放；其他schema／外部現金流、年化／歸因／R2/F及原未支援不擴張。正式false／主壓力null、1101 UNKNOWN及70／2／其中8／真實總淨合格0、來源／圖形／人工契約保持。沒有bootstrap、真實producer／九路徑／舊suite、UI／Android／樣本外或部署交易。下一項可將評估接至既有明示合成回放完成步驟，尚未工程，不自行接策略或新行情。下方原文完整留史。
+
+---
+
 # 最新：同父補選共同條件純READ並列0.1
 
 入口[使用與證據](supplement_compare_20261027/README.md)、[CONTRACT](supplement_compare_20261027/CONTRACT.md)、[一般／條件／拒絕並列](supplement_compare_20261027/actual/with-refusal/readable.txt)及[同父ID不同內容拒比](supplement_compare_20261027/actual/same-parent-id-different-content/readable.txt)。沿原補選READ完整校驗，再核整份父綁定，一致才並列。保留狀態與null，不加總互斥部位或排名；只比保存意圖，非績效。
