@@ -1,3 +1,13 @@
+# 2026-10-27 最新有效｜全帳戶評估數值環境隔離修復0.1.1
+
+入口decimal_context_20261027/README.md、REPORT.md、CONTRACT.md及before/after。本輪先核GitHub與全專案進度，找到既有account_metrics受呼叫端Decimal影響的具體缺陷；ROUND_DOWN造成不同結果，Inexact trap／狹窄指數造成例外，原正常及ROUND_UP控制相符。先凍結input／expected／原件指紋與source，再重現，未改oracle。
+
+只在原公開評估內建立明示50位／ROUND_HALF_EVEN／標準traps與指數範圍的local Context，revision0.1.1、schema0.1不變。五組修後與原正常完整結果／evaluation_id相同，呼叫端與input保持；5唯一新方法首次通過，不加舊PASS或前後控制。既有評估hook沿用，缺資料仍拒算；原帳／權利／reserve／latest／tokens、公式、READ與所有其他engine不改。舊manifest/source版本屬歷史，不要求現在source等於舊版，也不重算歷史結果。
+
+基線829fd4af25e12f061e49e0c77446ed2ac4528119；原唯一Codex依里程碑自審、正常保存及GitHub固定SHA讀回，無人工操作、不預設Work工程驗收。未確認續抱／移轉觸發、比較期間、風險／資金與分批規則由Work及使用者討論；A整理／B突破回測再推僅待驗假說，不接自動選擇或成交。已知權利阻塞不擋獨立合成修復。1101 UNKNOWN、70／2／其中8／真實總淨合格0、正式false／主壓力null及全部來源／圖形契約保持；未擴其他數值引擎、帳務、R2/F、來源認證／完整分叉。不新增READ／並列工具，無舊suite／真實producer／回放、bootstrap、UI／Android／樣本外或部署交易。下方原文完整留史。
+
+---
+
 # 2026-10-27 最新有效｜明示合成回放完成後另存評估0.1
 
 入口evaluated_replay_20261027/README.md、CONTRACT.md、REPORT.md及actual-final/。新evaluated_replay外部RUN沿原quantity回放，保存並讀回原件後沿原account_metrics評估，再另存evaluation與結果；request／replay／evaluation／result分開保存、資格分開。完整才有指標，停止／權利未完整仍保存REFUSED與null；原帳／權利／reserve／latest／全部token、數值公式、舊schema與READ不改。

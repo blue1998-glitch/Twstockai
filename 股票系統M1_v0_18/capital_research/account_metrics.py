@@ -5,12 +5,13 @@ hypothetical liquidation is reported separately, exactly as the original ledger.
 """
 from copy import deepcopy
 from datetime import date, timedelta
-from decimal import Decimal, InvalidOperation, localcontext
+from decimal import Decimal, Context, InvalidOperation, DivisionByZero, Overflow, ROUND_HALF_EVEN, localcontext
 from .lifecycle import summarize_saved, _fp, _time, FLAGS
 
 INPUT='capital-account-metrics-input/0.1'
 SCHEMA='capital-account-metrics/0.1'
 BASIS='SAVED_NET_ACCRUAL_AFTER_RECORDED_COSTS_BEFORE_HYPOTHETICAL_EXIT'
+IMPLEMENTATION_REVISION='0.1.1-deterministic-decimal-context'
 
 
 class MetricsError(ValueError):
@@ -189,8 +190,12 @@ def evaluate_saved(request):
         valuation_basis=BASIS,validation_scope='SAVED_STRUCTURAL_AND_CURVE_CHECKS_NOT_LEDGER_REPLAY_OR_SOURCE_AUTHENTICATION',
         ranking=None,selected_strategy=None,strategy_validated=False,primary_pressure_id=None,**{k:False for k in FLAGS})
     try:
-        with localcontext() as ctx:
-            ctx.prec=50;out.update(_evaluate(request));out['status']='EVALUATED'
+        # Reproduce the original standard-context results, independently of the
+        # caller's rounding, exponent limits, traps, flags or DefaultContext.
+        # Creating an explicit local context also leaves the caller untouched.
+        with localcontext(Context(prec=50,rounding=ROUND_HALF_EVEN,Emin=-999999,Emax=999999,
+                capitals=1,clamp=0,flags=[],traps=[InvalidOperation,DivisionByZero,Overflow])):
+            out.update(_evaluate(request));out['status']='EVALUATED'
     except (ValueError,KeyError,TypeError,AttributeError,IndexError,InvalidOperation,OverflowError) as exc:
         out['reasons']=[dict(reason=str(exc),path=getattr(exc,'path',''),
             classification='SAVED_RESULT_OR_REQUIRED_VALUE_NOT_SUPPORTED',guard_reasons=getattr(exc,'guard_reasons',[]))]
