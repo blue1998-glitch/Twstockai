@@ -1,0 +1,28 @@
+{
+  "base": "2ccfae04a71124ce36b581181ab131666e0c6850",
+  "protected_engines_stores_old_evidence_unchanged": true,
+  "existing_docs_original_suffix_retained": true,
+  "pre_run_versions_match_except_preserved_display_only_CLI": true,
+  "CLI_changes_only_render_function": true,
+  "all_new_saved_journal_originals_match_initial_READ_fingerprints": true,
+  "real_new_synthetic_generation_calls": 5,
+  "cached_fault_backend_not_new_RUN": true,
+  "unique_test_methods": 6,
+  "method_executions": 6,
+  "display_only_fresh_READ_checks": 4,
+  "old_suite_runs": 0,
+  "real_market_producer_runs": 0,
+  "unrelated_changes": 0,
+  "sensitive_scan": {
+    "files": 74,
+    "findings": 0,
+    "scope": "proposed UTF8 content and file types; pattern-based self-review"
+  },
+  "limits": [
+    "One new synchronous RUN and explicit immutable READ only",
+    "No automatic resume, later selection or multi-process exactly-once guarantee",
+    "Injected faults are not real power failure evidence",
+    "No source authentication, orders, fills or strategy performance",
+    "All formal qualifications false; real source/account blockers unchanged"
+  ]
+}

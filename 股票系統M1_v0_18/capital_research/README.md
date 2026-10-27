@@ -1,3 +1,11 @@
+# 最新：明示合成研究操作RUN／READ協調0.1
+
+入口[使用與證據](research_operation_20261027/README.md)、[CONTRACT](research_operation_20261027/CONTRACT.md)、[一般意圖](research_operation_20261027/views-final/general.txt)、[條件意圖](research_operation_20261027/views-final/conditional.txt)及[缺選擇停止](research_operation_20261027/views-final/no-selection.txt)。新協調器沿原生成、保存讀回、明示選擇與來源核對；RUN／READ分開，既有ID不重跑，缺選擇不預設HOLD，任何保存UNKNOWN停止留檔。不改帳／權利／token或接成交，資格與保存分開。
+
+5個新合成RUN、6唯一方法首次通過；故障／錯配診斷用暫存副本，不加市場樣本。initial保存最終數值／JSON；文字補明示目標後看views-final，沒有重跑生成或方法。原引擎／舊schema不變，原限制保持；工作方式沿根里程碑，不預設Work逐輪驗收。下方原文完整保留。
+
+---
+
 # 最新：研究選擇與明示完整來源純READ核對並列0.1
 
 入口[說明與命令](research_choice_source_20261027/README.md)、[CONTRACT](research_choice_source_20261027/CONTRACT.md)、[來源相符仍遭拒](research_choice_source_20261027/actual/rejected/readable.txt)及[同ID錯來源拒比](research_choice_source_20261027/actual/wrong-source-same-candidate-id/readable.txt)。新check_saved及source_read CLI沿原校驗，完整綁定與唯一快照相符才兩欄。核對狀態與研究資格分開，不重選／改帳或接成交；缺綁定不猜，無快照明示。

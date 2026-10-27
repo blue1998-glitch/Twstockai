@@ -1,3 +1,13 @@
+# 2026-10-27 最新有效｜明示合成研究操作RUN／READ協調0.1
+
+入口股票系統M1_v0_18/capital_research/research_operation_20261027/README.md、CONTRACT.md、initial/與views-final/。新外部research_operation及CLI串未改的after-retry候選生成、Journal保存讀回、明示選擇保存及來源核對。新操作先存完整canonical request_json；只生成一次，後段綁同一保存generation。不自動選候選／來源，selection:null停在候選；選擇遭拒不繼續核對。四階段保存與研究／資格結果分開，UNKNOWN停止且留檔。既有ID RUN不重跑；READ僅核保存指紋／接線，不生成、重選、重做來源verdict或寫檔。
+
+五個新明示合成RUN各生成一次，6唯一方法首次通過；另四階段UNKNOWN與跨階段錯配是暫存副本診斷，不加數值RUN／市場樣本。原本金1430、現金275.100、A60/B25/C2、reserve100及完整state／權利／latest／token保持。initial即最終數值／JSON，文字補明示目標只用保存結果與四次fresh READ，最終看views-final；舊CLI／文字留史，無新RUN或重跑方法。原數值／帳務／資格／舊READ source全不改。
+
+最低基線2ccfae04a71124ce36b581181ab131666e0c6850；沿里程碑原唯一Codex自審、正常commit/push及GitHub固定SHA讀回。沒有補選／中斷自動續跑／多程序exactly-once或真實斷電驗證，不以重跑修復；原Journal界線不擴張。1101 UNKNOWN、70／2／其中8／0、正式false／主壓力null、來源／圖形／原未支援保持，無人工操作、不預設Work。無舊suite／真實producer／bootstrap／部署交易。以下原文完整留史。
+
+---
+
 # 2026-10-27 最新有效｜研究選擇與明示完整來源純READ核對並列0.1
 
 入口股票系統M1_v0_18/capital_research/research_choice_source_20261027/README.md、CONTRACT.md及actual/。新純API research_choice_source.check_saved及獨立research_choice_source_read CLI沿原read_choice／validate_record／bind_saved_source，必須明示完整來源wrapper，核完整內容／帳戶／截止／latest／checkpoint／tokens／版本，再核唯一成員及完整快照相同。MATCHED才兩欄，錯配columns空；不重選或找新版。check_status與choice_status／保存資格分開；遭拒仍遭拒，WAIT仍條件意圖，無快照只證來源綁定。新CLI exit0只指來源相符，舊CLI格式／退出碼不改。
