@@ -1,0 +1,9 @@
+{
+  "issue": "TEST_HARNESS_FDOPEN_PATH",
+  "actual": "tests.log",
+  "preserved_source": "test_choice-before-audit-fix.py",
+  "reason": "os.fdopen emits audit open with an integer file descriptor; path string 3 is not the owned Journal path",
+  "expected_unchanged": "SELECT writes only inside declared store; READ writes nowhere",
+  "next": "Resolve descriptor via /proc/self/fd, retain containment assertion, rerun affected method only",
+  "source_sha256": "d99d3b60ed68a840e13b3f2b317ff592449d42b223f8f24f3fa63eddde13489f"
+}

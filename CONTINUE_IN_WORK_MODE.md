@@ -1,3 +1,13 @@
+# 2026-10-27 最新有效｜保存generation的明示研究選擇紀錄0.1
+
+入口股票系統M1_v0_18/capital_research/research_choice_20261027/README.md、REPORT.md及CONTRACT.md；純API research_choice.choose_saved，外部research_choice_workflow與SELECT／READ CLI沿未改Journal。只讀完整已保存quantity-after-retry0.1及generation0.2，綁來源／原帳／截止／latest／全部token並唯一匹配明示股數與理由；外層資格保留，同候選ID不跨generation借用。等待交割只記條件意圖，原selected_id仍null。不重算、不建單／成交，不新增行情或提升正式資格。
+
+原quantity_replay._select本體抽成共用純比對函式，舊wrapper／解析器／schema保持；直接相容測試，沒有回放RUN。18個凍結合成選擇案例符合預期；7唯一方法最終通過、實際8次執行（測試fdopen監看誤判修正後只補1相依方法）。原失敗log／測試快照留史，production及oracle不改。Journal三份真實保存／READ紀錄在journal與receipts，views只投影，不冒市場績效。
+
+最低基線c5b966f52eb38715b6871362ef610469f282297e；固定SHA以Git／回覆為準。沿既有里程碑由原唯一Codex／原工作區／原分支自審、正常commit/push及GitHub固定SHA讀回，無人工操作、不預設Work逐輪驗收。原帳1430／權利／reserve／latest／歷史12及當期reviewed15token不改；來源認證／完整分叉／Journal原持久性界線不擴張。1101 UNKNOWN、70／2／其中8／真實總淨合格0、正式false／主壓力null及原未支援／來源／圖形契約保持。下一項只能先核純READ摘要接線，不自行接交易或補行情。以下原文完整留史。
+
+---
+
 # 2026-10-27 最新有效｜0.3結果至數量候選受控轉接0.1
 
 入口股票系統M1_v0_18/capital_research/quantity_after_retry_20261027/README.md、REPORT.md及CONTRACT.md；純API quantity_after_retry.generate_after_retry。只接已完成0.3原件及相符完整checkpoint0.8，導出同一原帳／latest／全部token，再沿原quantity_replay._quantity_request與quantity_candidates.generate0.2；原數值／帳務／比較／READ source不改。僅無活單、無應付、可追溯唯一原A且仍有正持股才接；不能換原A、改原核准提案、偽首次或重開本金。新增B仍須新獨立觸發。

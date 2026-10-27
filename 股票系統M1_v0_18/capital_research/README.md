@@ -1,3 +1,11 @@
+# 最新：保存候選的明示研究選擇紀錄0.1
+
+入口[白話說明](research_choice_20261027/README.md)、[REPORT](research_choice_20261027/REPORT.md)、[CONTRACT](research_choice_20261027/CONTRACT.md)及[一般意圖](research_choice_20261027/views/grid-intent.json)／[條件意圖](research_choice_20261027/views/conditional-intent.json)／[拒絕原件](research_choice_20261027/journal/rejected-old-trigger.json)。純API research_choice.choose_saved；保存與READ沿原Journal。來源／帳／截止／latest／全部token綁定，必須唯一明示選擇與理由，保留外層資格；相同目標ID不能借用另一generation資格。
+
+18個事前案例符合預期；7唯一方法最終通過，測試監看誤判修正後只補1方法，總執行8次不加歷史。失敗診斷／原測試／oracle留史，after-final綁原production；三份Journal及receipts可READ不重算。等待交割只記條件意圖，不修改原generation、帳、reserve或token，不建單／成交、補行情或選勝者。一般工作方式沿根有效文件；來源UNKNOWN／正式false／主壓力null與原未支援保持。下方原文完整留史。
+
+---
+
 # 最新：0.3結果接回數量候選0.1
 
 入口[quantity_after_retry_20261027/README.md](quantity_after_retry_20261027/README.md)、[完整候選白話表](quantity_after_retry_20261027/views/new-independent-trigger.txt)、[舊觸發拒絕](quantity_after_retry_20261027/views/old-trigger.txt)、[REPORT](quantity_after_retry_20261027/REPORT.md)及[CONTRACT](quantity_after_retry_20261027/CONTRACT.md)。純API quantity_after_retry.generate_after_retry，核0.3完整原件／checkpoint／latest，沿原帳導出account及全部token，再交原數量產生器；無活單／應付、原A可識別且仍正持股才接。不換family、不建單／成交。
