@@ -1,0 +1,82 @@
+[
+  {
+    "name": "general",
+    "status": "PASS",
+    "workflow_status": "COMPLETED_SUPPLEMENT_INTENT",
+    "calls": {
+      "generation": 0,
+      "choice": 1,
+      "source_check": 1
+    }
+  },
+  {
+    "name": "conditional",
+    "status": "PASS",
+    "workflow_status": "COMPLETED_SUPPLEMENT_CONDITIONAL_INTENT",
+    "calls": {
+      "generation": 0,
+      "choice": 1,
+      "source_check": 1
+    }
+  },
+  {
+    "name": "unlisted-quantity",
+    "status": "PASS",
+    "workflow_status": "SUPPLEMENT_CHOICE_REFUSED",
+    "calls": {
+      "generation": 0,
+      "choice": 1,
+      "source_check": 0
+    }
+  },
+  {
+    "name": "wrong-parent-state",
+    "status": "PASS",
+    "workflow_status": "PARENT_REFUSED",
+    "calls": {
+      "generation": 0,
+      "choice": 0,
+      "source_check": 0
+    }
+  },
+  {
+    "name": "wrong-result-binding",
+    "status": "PASS",
+    "workflow_status": "PARENT_REFUSED",
+    "calls": {
+      "generation": 0,
+      "choice": 0,
+      "source_check": 0
+    }
+  },
+  {
+    "name": "missing-parent-token",
+    "status": "PASS",
+    "workflow_status": "PARENT_REFUSED",
+    "calls": {
+      "generation": 0,
+      "choice": 0,
+      "source_check": 0
+    }
+  },
+  {
+    "name": "no-selection",
+    "status": "PASS",
+    "workflow_status": "INPUT_REFUSED",
+    "calls": {
+      "generation": 0,
+      "choice": 0,
+      "source_check": 0
+    }
+  },
+  {
+    "name": "parent-key-overlap",
+    "status": "PASS",
+    "workflow_status": "INPUT_REFUSED",
+    "calls": {
+      "generation": 0,
+      "choice": 0,
+      "source_check": 0
+    }
+  }
+]

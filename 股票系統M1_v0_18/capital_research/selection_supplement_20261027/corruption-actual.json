@@ -1,0 +1,384 @@
+[
+  {
+    "name": "cross-result",
+    "actual": {
+      "schema": "capital-selection-supplement-receipt/0.1",
+      "mode": "READ",
+      "supplement_id": "supp-general",
+      "workflow_status": "UNREADABLE",
+      "reasons": [
+        "CHILD_RESULT_CHAIN_CONFLICT"
+      ],
+      "failed_stage": "result",
+      "keys": {
+        "request": "supp-general--request",
+        "choice": "supp-general--choice",
+        "result": "supp-general--result"
+      },
+      "parent_binding": {
+        "parent_operation_id": "demo-no-selection",
+        "parent_header_id": "sha256:9b7c3c8bbd7487e9eac97d18fe1a4208eeb4afbc745b6a527a9aac4a3cf584e8",
+        "parent_request_id": "sha256:45da9caa2dae3ec1925da12fd4863b7e6c7a676cbc726dae4967d5e023b991be",
+        "parent_result_id": "sha256:b426b70347924c87074c2a9be86e9580cd9b8e6c2ee51269e86ab49243a85b56",
+        "generation_id": "sha256:c5e6483eb0180f5b948ff0f730be8c844d196b59bbf2d35cd2245223dee04897",
+        "source_binding": {
+          "source_document_id": "sha256:c5e6483eb0180f5b948ff0f730be8c844d196b59bbf2d35cd2245223dee04897",
+          "generation_document_id": "sha256:b439353befd087d47939869547a99972ee8e7cd3cf55dae3e5277b675a37fe50",
+          "quantity_request_id": "sha256:ab7b7539e4abcfaa05531ed5f5aeaa4cb397aa4b0eefd9bd70b99d09d0fba90a",
+          "source_input_id": "sha256:afa7b9084f0ec41168442e8cc913881da32a2a71ad8d4877b78c729fee9ceed2",
+          "account_id": "sha256:8ba782b921772678f8be492480ccc08d8c8b5e85bdde3c4fea55cc4a2f5aca6d",
+          "checkpoint_id": "sha256:7b29db36fd70625194c4780f722afd2c1b8f9e8da284bb06ae1e0a7e8ee90573",
+          "state_id": "sha256:35c53e286afb907f69ebb4627dcbd947896196f18d419b6b8041275544e27cf8",
+          "execution_result_id": "sha256:eceefb90ad3547042a2dc0a0d762dec463bbb27e868c48c657b5a52a71965aaf",
+          "origin_ledger_input_id": "sha256:39b145ccd42d3aa43b201f285abbe8efadc6b0df59071ac3d1c91ef0ad9ef018",
+          "latest_decision_id": "sha256:f03924f56d36f1ef856520caf25f3d5103335e63e94dddfdcb5ce37e4fa527a5",
+          "latest_common_account_id": "sha256:ca41094f720d2001d6162737a2841ef815e02c728023977faa61e426bfc71696",
+          "data_cutoff": "2026-01-12T16:00:00+08:00",
+          "decision_at": "2026-01-12T17:00:00+08:00",
+          "historical_reviewed_tokens": [
+            "fixture:event_id:A-event",
+            "fixture:event_id:B-event",
+            "fixture:event_id:B-prior-approved",
+            "fixture:event_id:C-event",
+            "fixture:formation_id:A-formation",
+            "fixture:formation_id:B-formation",
+            "fixture:formation_id:B-prior-formation",
+            "fixture:formation_id:C-formation",
+            "fixture:volume_bar_id:A-bar",
+            "fixture:volume_bar_id:B-bar",
+            "fixture:volume_bar_id:B-prior-bar",
+            "fixture:volume_bar_id:C-bar"
+          ],
+          "decision_reviewed_tokens": [
+            "fixture:event_id:A-event",
+            "fixture:event_id:B-event",
+            "fixture:event_id:B-new-independent",
+            "fixture:event_id:B-prior-approved",
+            "fixture:event_id:C-event",
+            "fixture:formation_id:A-formation",
+            "fixture:formation_id:B-formation",
+            "fixture:formation_id:B-new-formation",
+            "fixture:formation_id:B-prior-formation",
+            "fixture:formation_id:C-formation",
+            "fixture:volume_bar_id:A-bar",
+            "fixture:volume_bar_id:B-bar",
+            "fixture:volume_bar_id:B-new-bar",
+            "fixture:volume_bar_id:B-prior-bar",
+            "fixture:volume_bar_id:C-bar"
+          ],
+          "received_attempt_ids": [
+            "sha256:0f9a09cf7e0248afab11a6e77c1c61fb9a59211549f86155c4b552b24af0fb62",
+            "sha256:7338fd88c811a7d80b1fcb8cb7169217c18fbabea91b3816c184b5e2d1e18162"
+          ],
+          "versions": {
+            "adapter": "capital-quantity-after-retry/0.1",
+            "generation": "capital-quantity-candidates/0.2",
+            "checkpoint": "capital-account-checkpoint/0.8",
+            "decision": "capital-decision/0.8"
+          }
+        }
+      },
+      "storage": {
+        "request": "READ_ONLY",
+        "choice": "READ_ONLY",
+        "result": "READ_ONLY"
+      },
+      "observed": {
+        "choice_status": "RECORDED_RESEARCH_INTENT",
+        "check_status": null
+      },
+      "supplement": null,
+      "saved_files_preserved": true,
+      "generation": "NOT_PERFORMED_REUSED_SAVED_PARENT",
+      "order_generation": "NOT_PERFORMED",
+      "execution": "NOT_PERFORMED",
+      "execution_authorized": false,
+      "primary_pressure_id": null,
+      "data_qualified": false,
+      "execution_model_qualified": false,
+      "historical_signal_eligible": false,
+      "policy_authorized": false,
+      "live_execution_authorized": false
+    },
+    "before": {
+      "supp-general--request.json": "dbb4019ff1beb6d8e13fe97074ee4c145dca695616a741a53d1199193f67fb30",
+      "supp-general--choice.json": "4516b25a55836efbe97b33ba022efe7feb32890d941959af1c2f8617bd06c3b3",
+      "supp-general--result.json": "80ce9d8a5064ef194e19a9815b649e833aac6413fc24f1617e8a1c8467efeee0"
+    },
+    "after": {
+      "supp-general--request.json": "dbb4019ff1beb6d8e13fe97074ee4c145dca695616a741a53d1199193f67fb30",
+      "supp-general--choice.json": "4516b25a55836efbe97b33ba022efe7feb32890d941959af1c2f8617bd06c3b3",
+      "supp-general--result.json": "80ce9d8a5064ef194e19a9815b649e833aac6413fc24f1617e8a1c8467efeee0"
+    }
+  },
+  {
+    "name": "missing-choice",
+    "actual": {
+      "schema": "capital-selection-supplement-receipt/0.1",
+      "mode": "READ",
+      "supplement_id": "supp-general",
+      "workflow_status": "UNREADABLE",
+      "reasons": [
+        "SUPPLEMENT_CHOICE_MISSING"
+      ],
+      "failed_stage": "result",
+      "keys": {
+        "request": "supp-general--request",
+        "choice": "supp-general--choice",
+        "result": "supp-general--result"
+      },
+      "parent_binding": {
+        "parent_operation_id": "demo-no-selection",
+        "parent_header_id": "sha256:9b7c3c8bbd7487e9eac97d18fe1a4208eeb4afbc745b6a527a9aac4a3cf584e8",
+        "parent_request_id": "sha256:45da9caa2dae3ec1925da12fd4863b7e6c7a676cbc726dae4967d5e023b991be",
+        "parent_result_id": "sha256:b426b70347924c87074c2a9be86e9580cd9b8e6c2ee51269e86ab49243a85b56",
+        "generation_id": "sha256:c5e6483eb0180f5b948ff0f730be8c844d196b59bbf2d35cd2245223dee04897",
+        "source_binding": {
+          "source_document_id": "sha256:c5e6483eb0180f5b948ff0f730be8c844d196b59bbf2d35cd2245223dee04897",
+          "generation_document_id": "sha256:b439353befd087d47939869547a99972ee8e7cd3cf55dae3e5277b675a37fe50",
+          "quantity_request_id": "sha256:ab7b7539e4abcfaa05531ed5f5aeaa4cb397aa4b0eefd9bd70b99d09d0fba90a",
+          "source_input_id": "sha256:afa7b9084f0ec41168442e8cc913881da32a2a71ad8d4877b78c729fee9ceed2",
+          "account_id": "sha256:8ba782b921772678f8be492480ccc08d8c8b5e85bdde3c4fea55cc4a2f5aca6d",
+          "checkpoint_id": "sha256:7b29db36fd70625194c4780f722afd2c1b8f9e8da284bb06ae1e0a7e8ee90573",
+          "state_id": "sha256:35c53e286afb907f69ebb4627dcbd947896196f18d419b6b8041275544e27cf8",
+          "execution_result_id": "sha256:eceefb90ad3547042a2dc0a0d762dec463bbb27e868c48c657b5a52a71965aaf",
+          "origin_ledger_input_id": "sha256:39b145ccd42d3aa43b201f285abbe8efadc6b0df59071ac3d1c91ef0ad9ef018",
+          "latest_decision_id": "sha256:f03924f56d36f1ef856520caf25f3d5103335e63e94dddfdcb5ce37e4fa527a5",
+          "latest_common_account_id": "sha256:ca41094f720d2001d6162737a2841ef815e02c728023977faa61e426bfc71696",
+          "data_cutoff": "2026-01-12T16:00:00+08:00",
+          "decision_at": "2026-01-12T17:00:00+08:00",
+          "historical_reviewed_tokens": [
+            "fixture:event_id:A-event",
+            "fixture:event_id:B-event",
+            "fixture:event_id:B-prior-approved",
+            "fixture:event_id:C-event",
+            "fixture:formation_id:A-formation",
+            "fixture:formation_id:B-formation",
+            "fixture:formation_id:B-prior-formation",
+            "fixture:formation_id:C-formation",
+            "fixture:volume_bar_id:A-bar",
+            "fixture:volume_bar_id:B-bar",
+            "fixture:volume_bar_id:B-prior-bar",
+            "fixture:volume_bar_id:C-bar"
+          ],
+          "decision_reviewed_tokens": [
+            "fixture:event_id:A-event",
+            "fixture:event_id:B-event",
+            "fixture:event_id:B-new-independent",
+            "fixture:event_id:B-prior-approved",
+            "fixture:event_id:C-event",
+            "fixture:formation_id:A-formation",
+            "fixture:formation_id:B-formation",
+            "fixture:formation_id:B-new-formation",
+            "fixture:formation_id:B-prior-formation",
+            "fixture:formation_id:C-formation",
+            "fixture:volume_bar_id:A-bar",
+            "fixture:volume_bar_id:B-bar",
+            "fixture:volume_bar_id:B-new-bar",
+            "fixture:volume_bar_id:B-prior-bar",
+            "fixture:volume_bar_id:C-bar"
+          ],
+          "received_attempt_ids": [
+            "sha256:0f9a09cf7e0248afab11a6e77c1c61fb9a59211549f86155c4b552b24af0fb62",
+            "sha256:7338fd88c811a7d80b1fcb8cb7169217c18fbabea91b3816c184b5e2d1e18162"
+          ],
+          "versions": {
+            "adapter": "capital-quantity-after-retry/0.1",
+            "generation": "capital-quantity-candidates/0.2",
+            "checkpoint": "capital-account-checkpoint/0.8",
+            "decision": "capital-decision/0.8"
+          }
+        }
+      },
+      "storage": {
+        "request": "READ_ONLY",
+        "choice": "MISSING",
+        "result": "READ_ONLY"
+      },
+      "observed": {
+        "choice_status": null,
+        "check_status": null
+      },
+      "supplement": null,
+      "saved_files_preserved": true,
+      "generation": "NOT_PERFORMED_REUSED_SAVED_PARENT",
+      "order_generation": "NOT_PERFORMED",
+      "execution": "NOT_PERFORMED",
+      "execution_authorized": false,
+      "primary_pressure_id": null,
+      "data_qualified": false,
+      "execution_model_qualified": false,
+      "historical_signal_eligible": false,
+      "policy_authorized": false,
+      "live_execution_authorized": false
+    },
+    "before": {
+      "supp-general--request.json": "dbb4019ff1beb6d8e13fe97074ee4c145dca695616a741a53d1199193f67fb30",
+      "supp-general--result.json": "35bca5953ecd02b488963f95c109a3c549582c7e2e54e0aad72c86a82ea6c5f0"
+    },
+    "after": {
+      "supp-general--request.json": "dbb4019ff1beb6d8e13fe97074ee4c145dca695616a741a53d1199193f67fb30",
+      "supp-general--result.json": "35bca5953ecd02b488963f95c109a3c549582c7e2e54e0aad72c86a82ea6c5f0"
+    }
+  },
+  {
+    "name": "missing-choice-token",
+    "actual": {
+      "schema": "capital-selection-supplement-receipt/0.1",
+      "mode": "READ",
+      "supplement_id": "supp-general",
+      "workflow_status": "UNREADABLE",
+      "reasons": [
+        "SAVED_CHOICE_OPERATION_CONFLICT"
+      ],
+      "failed_stage": "result",
+      "keys": {
+        "request": "supp-general--request",
+        "choice": "supp-general--choice",
+        "result": "supp-general--result"
+      },
+      "parent_binding": {
+        "parent_operation_id": "demo-no-selection",
+        "parent_header_id": "sha256:9b7c3c8bbd7487e9eac97d18fe1a4208eeb4afbc745b6a527a9aac4a3cf584e8",
+        "parent_request_id": "sha256:45da9caa2dae3ec1925da12fd4863b7e6c7a676cbc726dae4967d5e023b991be",
+        "parent_result_id": "sha256:b426b70347924c87074c2a9be86e9580cd9b8e6c2ee51269e86ab49243a85b56",
+        "generation_id": "sha256:c5e6483eb0180f5b948ff0f730be8c844d196b59bbf2d35cd2245223dee04897",
+        "source_binding": {
+          "source_document_id": "sha256:c5e6483eb0180f5b948ff0f730be8c844d196b59bbf2d35cd2245223dee04897",
+          "generation_document_id": "sha256:b439353befd087d47939869547a99972ee8e7cd3cf55dae3e5277b675a37fe50",
+          "quantity_request_id": "sha256:ab7b7539e4abcfaa05531ed5f5aeaa4cb397aa4b0eefd9bd70b99d09d0fba90a",
+          "source_input_id": "sha256:afa7b9084f0ec41168442e8cc913881da32a2a71ad8d4877b78c729fee9ceed2",
+          "account_id": "sha256:8ba782b921772678f8be492480ccc08d8c8b5e85bdde3c4fea55cc4a2f5aca6d",
+          "checkpoint_id": "sha256:7b29db36fd70625194c4780f722afd2c1b8f9e8da284bb06ae1e0a7e8ee90573",
+          "state_id": "sha256:35c53e286afb907f69ebb4627dcbd947896196f18d419b6b8041275544e27cf8",
+          "execution_result_id": "sha256:eceefb90ad3547042a2dc0a0d762dec463bbb27e868c48c657b5a52a71965aaf",
+          "origin_ledger_input_id": "sha256:39b145ccd42d3aa43b201f285abbe8efadc6b0df59071ac3d1c91ef0ad9ef018",
+          "latest_decision_id": "sha256:f03924f56d36f1ef856520caf25f3d5103335e63e94dddfdcb5ce37e4fa527a5",
+          "latest_common_account_id": "sha256:ca41094f720d2001d6162737a2841ef815e02c728023977faa61e426bfc71696",
+          "data_cutoff": "2026-01-12T16:00:00+08:00",
+          "decision_at": "2026-01-12T17:00:00+08:00",
+          "historical_reviewed_tokens": [
+            "fixture:event_id:A-event",
+            "fixture:event_id:B-event",
+            "fixture:event_id:B-prior-approved",
+            "fixture:event_id:C-event",
+            "fixture:formation_id:A-formation",
+            "fixture:formation_id:B-formation",
+            "fixture:formation_id:B-prior-formation",
+            "fixture:formation_id:C-formation",
+            "fixture:volume_bar_id:A-bar",
+            "fixture:volume_bar_id:B-bar",
+            "fixture:volume_bar_id:B-prior-bar",
+            "fixture:volume_bar_id:C-bar"
+          ],
+          "decision_reviewed_tokens": [
+            "fixture:event_id:A-event",
+            "fixture:event_id:B-event",
+            "fixture:event_id:B-new-independent",
+            "fixture:event_id:B-prior-approved",
+            "fixture:event_id:C-event",
+            "fixture:formation_id:A-formation",
+            "fixture:formation_id:B-formation",
+            "fixture:formation_id:B-new-formation",
+            "fixture:formation_id:B-prior-formation",
+            "fixture:formation_id:C-formation",
+            "fixture:volume_bar_id:A-bar",
+            "fixture:volume_bar_id:B-bar",
+            "fixture:volume_bar_id:B-new-bar",
+            "fixture:volume_bar_id:B-prior-bar",
+            "fixture:volume_bar_id:C-bar"
+          ],
+          "received_attempt_ids": [
+            "sha256:0f9a09cf7e0248afab11a6e77c1c61fb9a59211549f86155c4b552b24af0fb62",
+            "sha256:7338fd88c811a7d80b1fcb8cb7169217c18fbabea91b3816c184b5e2d1e18162"
+          ],
+          "versions": {
+            "adapter": "capital-quantity-after-retry/0.1",
+            "generation": "capital-quantity-candidates/0.2",
+            "checkpoint": "capital-account-checkpoint/0.8",
+            "decision": "capital-decision/0.8"
+          }
+        }
+      },
+      "storage": {
+        "request": "READ_ONLY",
+        "choice": "READ_ONLY",
+        "result": "READ_ONLY"
+      },
+      "observed": {
+        "choice_status": null,
+        "check_status": null
+      },
+      "supplement": null,
+      "saved_files_preserved": true,
+      "generation": "NOT_PERFORMED_REUSED_SAVED_PARENT",
+      "order_generation": "NOT_PERFORMED",
+      "execution": "NOT_PERFORMED",
+      "execution_authorized": false,
+      "primary_pressure_id": null,
+      "data_qualified": false,
+      "execution_model_qualified": false,
+      "historical_signal_eligible": false,
+      "policy_authorized": false,
+      "live_execution_authorized": false
+    },
+    "before": {
+      "supp-general--request.json": "dbb4019ff1beb6d8e13fe97074ee4c145dca695616a741a53d1199193f67fb30",
+      "supp-general--choice.json": "f2542d08715b69ce92bcb07bc20d0592130eaf5e6e2789cb4a965b2e12b1ee61",
+      "supp-general--result.json": "35bca5953ecd02b488963f95c109a3c549582c7e2e54e0aad72c86a82ea6c5f0"
+    },
+    "after": {
+      "supp-general--request.json": "dbb4019ff1beb6d8e13fe97074ee4c145dca695616a741a53d1199193f67fb30",
+      "supp-general--choice.json": "f2542d08715b69ce92bcb07bc20d0592130eaf5e6e2789cb4a965b2e12b1ee61",
+      "supp-general--result.json": "35bca5953ecd02b488963f95c109a3c549582c7e2e54e0aad72c86a82ea6c5f0"
+    }
+  },
+  {
+    "name": "parent-prefix-only",
+    "actual": {
+      "schema": "capital-selection-supplement-receipt/0.1",
+      "mode": "SELECT",
+      "supplement_id": "new",
+      "workflow_status": "PARENT_REFUSED",
+      "reasons": [
+        "PARENT_NOT_COMPLETE"
+      ],
+      "failed_stage": "parent",
+      "keys": {
+        "request": "new--request",
+        "choice": "new--choice",
+        "result": "new--result"
+      },
+      "parent_binding": null,
+      "storage": {
+        "request": "NOT_PERFORMED",
+        "choice": "NOT_PERFORMED",
+        "result": "NOT_PERFORMED"
+      },
+      "observed": {
+        "choice_status": null,
+        "check_status": null
+      },
+      "supplement": null,
+      "saved_files_preserved": true,
+      "generation": "NOT_PERFORMED_REUSED_SAVED_PARENT",
+      "order_generation": "NOT_PERFORMED",
+      "execution": "NOT_PERFORMED",
+      "execution_authorized": false,
+      "primary_pressure_id": null,
+      "data_qualified": false,
+      "execution_model_qualified": false,
+      "historical_signal_eligible": false,
+      "policy_authorized": false,
+      "live_execution_authorized": false
+    },
+    "before": {
+      "demo-no-selection--generation.json": "1b0ab3f3b768c62abe0d66c93389630018b1cd081aa0759de1fcca6428f12b73",
+      "demo-no-selection--request.json": "11172b186ac60e42e8d5122f5b9ee0282107a38de70f94b01eb31984bf621ed9"
+    },
+    "after": {
+      "demo-no-selection--generation.json": "1b0ab3f3b768c62abe0d66c93389630018b1cd081aa0759de1fcca6428f12b73",
+      "demo-no-selection--request.json": "11172b186ac60e42e8d5122f5b9ee0282107a38de70f94b01eb31984bf621ed9"
+    }
+  }
+]

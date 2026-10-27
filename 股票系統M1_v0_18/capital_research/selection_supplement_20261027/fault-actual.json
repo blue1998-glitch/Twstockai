@@ -1,0 +1,1073 @@
+[
+  {
+    "stage": "request",
+    "actual": {
+      "schema": "capital-selection-supplement-receipt/0.1",
+      "mode": "SELECT",
+      "supplement_id": "fault",
+      "workflow_status": "STOPPED_STORAGE",
+      "reasons": [
+        "INJECTED_AFTER_CHILD_SAVE:request"
+      ],
+      "failed_stage": "request",
+      "keys": {
+        "request": "fault--request",
+        "choice": "fault--choice",
+        "result": "fault--result"
+      },
+      "parent_binding": {
+        "parent_operation_id": "demo-no-selection",
+        "parent_header_id": "sha256:9b7c3c8bbd7487e9eac97d18fe1a4208eeb4afbc745b6a527a9aac4a3cf584e8",
+        "parent_request_id": "sha256:45da9caa2dae3ec1925da12fd4863b7e6c7a676cbc726dae4967d5e023b991be",
+        "parent_result_id": "sha256:b426b70347924c87074c2a9be86e9580cd9b8e6c2ee51269e86ab49243a85b56",
+        "generation_id": "sha256:c5e6483eb0180f5b948ff0f730be8c844d196b59bbf2d35cd2245223dee04897",
+        "source_binding": {
+          "source_document_id": "sha256:c5e6483eb0180f5b948ff0f730be8c844d196b59bbf2d35cd2245223dee04897",
+          "generation_document_id": "sha256:b439353befd087d47939869547a99972ee8e7cd3cf55dae3e5277b675a37fe50",
+          "quantity_request_id": "sha256:ab7b7539e4abcfaa05531ed5f5aeaa4cb397aa4b0eefd9bd70b99d09d0fba90a",
+          "source_input_id": "sha256:afa7b9084f0ec41168442e8cc913881da32a2a71ad8d4877b78c729fee9ceed2",
+          "account_id": "sha256:8ba782b921772678f8be492480ccc08d8c8b5e85bdde3c4fea55cc4a2f5aca6d",
+          "checkpoint_id": "sha256:7b29db36fd70625194c4780f722afd2c1b8f9e8da284bb06ae1e0a7e8ee90573",
+          "state_id": "sha256:35c53e286afb907f69ebb4627dcbd947896196f18d419b6b8041275544e27cf8",
+          "execution_result_id": "sha256:eceefb90ad3547042a2dc0a0d762dec463bbb27e868c48c657b5a52a71965aaf",
+          "origin_ledger_input_id": "sha256:39b145ccd42d3aa43b201f285abbe8efadc6b0df59071ac3d1c91ef0ad9ef018",
+          "latest_decision_id": "sha256:f03924f56d36f1ef856520caf25f3d5103335e63e94dddfdcb5ce37e4fa527a5",
+          "latest_common_account_id": "sha256:ca41094f720d2001d6162737a2841ef815e02c728023977faa61e426bfc71696",
+          "data_cutoff": "2026-01-12T16:00:00+08:00",
+          "decision_at": "2026-01-12T17:00:00+08:00",
+          "historical_reviewed_tokens": [
+            "fixture:event_id:A-event",
+            "fixture:event_id:B-event",
+            "fixture:event_id:B-prior-approved",
+            "fixture:event_id:C-event",
+            "fixture:formation_id:A-formation",
+            "fixture:formation_id:B-formation",
+            "fixture:formation_id:B-prior-formation",
+            "fixture:formation_id:C-formation",
+            "fixture:volume_bar_id:A-bar",
+            "fixture:volume_bar_id:B-bar",
+            "fixture:volume_bar_id:B-prior-bar",
+            "fixture:volume_bar_id:C-bar"
+          ],
+          "decision_reviewed_tokens": [
+            "fixture:event_id:A-event",
+            "fixture:event_id:B-event",
+            "fixture:event_id:B-new-independent",
+            "fixture:event_id:B-prior-approved",
+            "fixture:event_id:C-event",
+            "fixture:formation_id:A-formation",
+            "fixture:formation_id:B-formation",
+            "fixture:formation_id:B-new-formation",
+            "fixture:formation_id:B-prior-formation",
+            "fixture:formation_id:C-formation",
+            "fixture:volume_bar_id:A-bar",
+            "fixture:volume_bar_id:B-bar",
+            "fixture:volume_bar_id:B-new-bar",
+            "fixture:volume_bar_id:B-prior-bar",
+            "fixture:volume_bar_id:C-bar"
+          ],
+          "received_attempt_ids": [
+            "sha256:0f9a09cf7e0248afab11a6e77c1c61fb9a59211549f86155c4b552b24af0fb62",
+            "sha256:7338fd88c811a7d80b1fcb8cb7169217c18fbabea91b3816c184b5e2d1e18162"
+          ],
+          "versions": {
+            "adapter": "capital-quantity-after-retry/0.1",
+            "generation": "capital-quantity-candidates/0.2",
+            "checkpoint": "capital-account-checkpoint/0.8",
+            "decision": "capital-decision/0.8"
+          }
+        }
+      },
+      "storage": {
+        "request": "UNKNOWN",
+        "choice": "NOT_PERFORMED",
+        "result": "NOT_PERFORMED"
+      },
+      "observed": {
+        "choice_status": null,
+        "check_status": null
+      },
+      "supplement": null,
+      "saved_files_preserved": true,
+      "generation": "NOT_PERFORMED_REUSED_SAVED_PARENT",
+      "order_generation": "NOT_PERFORMED",
+      "execution": "NOT_PERFORMED",
+      "execution_authorized": false,
+      "primary_pressure_id": null,
+      "data_qualified": false,
+      "execution_model_qualified": false,
+      "historical_signal_eligible": false,
+      "policy_authorized": false,
+      "live_execution_authorized": false
+    },
+    "explicit_READ": {
+      "schema": "capital-selection-supplement-receipt/0.1",
+      "mode": "READ",
+      "supplement_id": "fault",
+      "workflow_status": "INCOMPLETE_SUPPLEMENT_PREFIX",
+      "reasons": [
+        "NO_SAVED_CHILD_RESULT_NO_AUTOMATIC_RESUME"
+      ],
+      "failed_stage": null,
+      "keys": {
+        "request": "fault--request",
+        "choice": "fault--choice",
+        "result": "fault--result"
+      },
+      "parent_binding": {
+        "parent_operation_id": "demo-no-selection",
+        "parent_header_id": "sha256:9b7c3c8bbd7487e9eac97d18fe1a4208eeb4afbc745b6a527a9aac4a3cf584e8",
+        "parent_request_id": "sha256:45da9caa2dae3ec1925da12fd4863b7e6c7a676cbc726dae4967d5e023b991be",
+        "parent_result_id": "sha256:b426b70347924c87074c2a9be86e9580cd9b8e6c2ee51269e86ab49243a85b56",
+        "generation_id": "sha256:c5e6483eb0180f5b948ff0f730be8c844d196b59bbf2d35cd2245223dee04897",
+        "source_binding": {
+          "source_document_id": "sha256:c5e6483eb0180f5b948ff0f730be8c844d196b59bbf2d35cd2245223dee04897",
+          "generation_document_id": "sha256:b439353befd087d47939869547a99972ee8e7cd3cf55dae3e5277b675a37fe50",
+          "quantity_request_id": "sha256:ab7b7539e4abcfaa05531ed5f5aeaa4cb397aa4b0eefd9bd70b99d09d0fba90a",
+          "source_input_id": "sha256:afa7b9084f0ec41168442e8cc913881da32a2a71ad8d4877b78c729fee9ceed2",
+          "account_id": "sha256:8ba782b921772678f8be492480ccc08d8c8b5e85bdde3c4fea55cc4a2f5aca6d",
+          "checkpoint_id": "sha256:7b29db36fd70625194c4780f722afd2c1b8f9e8da284bb06ae1e0a7e8ee90573",
+          "state_id": "sha256:35c53e286afb907f69ebb4627dcbd947896196f18d419b6b8041275544e27cf8",
+          "execution_result_id": "sha256:eceefb90ad3547042a2dc0a0d762dec463bbb27e868c48c657b5a52a71965aaf",
+          "origin_ledger_input_id": "sha256:39b145ccd42d3aa43b201f285abbe8efadc6b0df59071ac3d1c91ef0ad9ef018",
+          "latest_decision_id": "sha256:f03924f56d36f1ef856520caf25f3d5103335e63e94dddfdcb5ce37e4fa527a5",
+          "latest_common_account_id": "sha256:ca41094f720d2001d6162737a2841ef815e02c728023977faa61e426bfc71696",
+          "data_cutoff": "2026-01-12T16:00:00+08:00",
+          "decision_at": "2026-01-12T17:00:00+08:00",
+          "historical_reviewed_tokens": [
+            "fixture:event_id:A-event",
+            "fixture:event_id:B-event",
+            "fixture:event_id:B-prior-approved",
+            "fixture:event_id:C-event",
+            "fixture:formation_id:A-formation",
+            "fixture:formation_id:B-formation",
+            "fixture:formation_id:B-prior-formation",
+            "fixture:formation_id:C-formation",
+            "fixture:volume_bar_id:A-bar",
+            "fixture:volume_bar_id:B-bar",
+            "fixture:volume_bar_id:B-prior-bar",
+            "fixture:volume_bar_id:C-bar"
+          ],
+          "decision_reviewed_tokens": [
+            "fixture:event_id:A-event",
+            "fixture:event_id:B-event",
+            "fixture:event_id:B-new-independent",
+            "fixture:event_id:B-prior-approved",
+            "fixture:event_id:C-event",
+            "fixture:formation_id:A-formation",
+            "fixture:formation_id:B-formation",
+            "fixture:formation_id:B-new-formation",
+            "fixture:formation_id:B-prior-formation",
+            "fixture:formation_id:C-formation",
+            "fixture:volume_bar_id:A-bar",
+            "fixture:volume_bar_id:B-bar",
+            "fixture:volume_bar_id:B-new-bar",
+            "fixture:volume_bar_id:B-prior-bar",
+            "fixture:volume_bar_id:C-bar"
+          ],
+          "received_attempt_ids": [
+            "sha256:0f9a09cf7e0248afab11a6e77c1c61fb9a59211549f86155c4b552b24af0fb62",
+            "sha256:7338fd88c811a7d80b1fcb8cb7169217c18fbabea91b3816c184b5e2d1e18162"
+          ],
+          "versions": {
+            "adapter": "capital-quantity-after-retry/0.1",
+            "generation": "capital-quantity-candidates/0.2",
+            "checkpoint": "capital-account-checkpoint/0.8",
+            "decision": "capital-decision/0.8"
+          }
+        }
+      },
+      "storage": {
+        "request": "READ_ONLY",
+        "choice": "MISSING",
+        "result": "MISSING"
+      },
+      "observed": {
+        "choice_status": null,
+        "check_status": null
+      },
+      "supplement": null,
+      "saved_files_preserved": true,
+      "generation": "NOT_PERFORMED_REUSED_SAVED_PARENT",
+      "order_generation": "NOT_PERFORMED",
+      "execution": "NOT_PERFORMED",
+      "execution_authorized": false,
+      "primary_pressure_id": null,
+      "data_qualified": false,
+      "execution_model_qualified": false,
+      "historical_signal_eligible": false,
+      "policy_authorized": false,
+      "live_execution_authorized": false
+    },
+    "choice_calls": 0,
+    "check_calls": 0,
+    "before": {
+      "fault--request.json": "101a792657fa423da43dc19b61c10f01203d5230f4069bc9480425850fbea30c"
+    },
+    "after": {
+      "fault--request.json": "101a792657fa423da43dc19b61c10f01203d5230f4069bc9480425850fbea30c"
+    }
+  },
+  {
+    "stage": "choice",
+    "actual": {
+      "schema": "capital-selection-supplement-receipt/0.1",
+      "mode": "SELECT",
+      "supplement_id": "fault",
+      "workflow_status": "STOPPED_STORAGE",
+      "reasons": [
+        "INJECTED_AFTER_CHILD_SAVE:choice"
+      ],
+      "failed_stage": "choice",
+      "keys": {
+        "request": "fault--request",
+        "choice": "fault--choice",
+        "result": "fault--result"
+      },
+      "parent_binding": {
+        "parent_operation_id": "demo-no-selection",
+        "parent_header_id": "sha256:9b7c3c8bbd7487e9eac97d18fe1a4208eeb4afbc745b6a527a9aac4a3cf584e8",
+        "parent_request_id": "sha256:45da9caa2dae3ec1925da12fd4863b7e6c7a676cbc726dae4967d5e023b991be",
+        "parent_result_id": "sha256:b426b70347924c87074c2a9be86e9580cd9b8e6c2ee51269e86ab49243a85b56",
+        "generation_id": "sha256:c5e6483eb0180f5b948ff0f730be8c844d196b59bbf2d35cd2245223dee04897",
+        "source_binding": {
+          "source_document_id": "sha256:c5e6483eb0180f5b948ff0f730be8c844d196b59bbf2d35cd2245223dee04897",
+          "generation_document_id": "sha256:b439353befd087d47939869547a99972ee8e7cd3cf55dae3e5277b675a37fe50",
+          "quantity_request_id": "sha256:ab7b7539e4abcfaa05531ed5f5aeaa4cb397aa4b0eefd9bd70b99d09d0fba90a",
+          "source_input_id": "sha256:afa7b9084f0ec41168442e8cc913881da32a2a71ad8d4877b78c729fee9ceed2",
+          "account_id": "sha256:8ba782b921772678f8be492480ccc08d8c8b5e85bdde3c4fea55cc4a2f5aca6d",
+          "checkpoint_id": "sha256:7b29db36fd70625194c4780f722afd2c1b8f9e8da284bb06ae1e0a7e8ee90573",
+          "state_id": "sha256:35c53e286afb907f69ebb4627dcbd947896196f18d419b6b8041275544e27cf8",
+          "execution_result_id": "sha256:eceefb90ad3547042a2dc0a0d762dec463bbb27e868c48c657b5a52a71965aaf",
+          "origin_ledger_input_id": "sha256:39b145ccd42d3aa43b201f285abbe8efadc6b0df59071ac3d1c91ef0ad9ef018",
+          "latest_decision_id": "sha256:f03924f56d36f1ef856520caf25f3d5103335e63e94dddfdcb5ce37e4fa527a5",
+          "latest_common_account_id": "sha256:ca41094f720d2001d6162737a2841ef815e02c728023977faa61e426bfc71696",
+          "data_cutoff": "2026-01-12T16:00:00+08:00",
+          "decision_at": "2026-01-12T17:00:00+08:00",
+          "historical_reviewed_tokens": [
+            "fixture:event_id:A-event",
+            "fixture:event_id:B-event",
+            "fixture:event_id:B-prior-approved",
+            "fixture:event_id:C-event",
+            "fixture:formation_id:A-formation",
+            "fixture:formation_id:B-formation",
+            "fixture:formation_id:B-prior-formation",
+            "fixture:formation_id:C-formation",
+            "fixture:volume_bar_id:A-bar",
+            "fixture:volume_bar_id:B-bar",
+            "fixture:volume_bar_id:B-prior-bar",
+            "fixture:volume_bar_id:C-bar"
+          ],
+          "decision_reviewed_tokens": [
+            "fixture:event_id:A-event",
+            "fixture:event_id:B-event",
+            "fixture:event_id:B-new-independent",
+            "fixture:event_id:B-prior-approved",
+            "fixture:event_id:C-event",
+            "fixture:formation_id:A-formation",
+            "fixture:formation_id:B-formation",
+            "fixture:formation_id:B-new-formation",
+            "fixture:formation_id:B-prior-formation",
+            "fixture:formation_id:C-formation",
+            "fixture:volume_bar_id:A-bar",
+            "fixture:volume_bar_id:B-bar",
+            "fixture:volume_bar_id:B-new-bar",
+            "fixture:volume_bar_id:B-prior-bar",
+            "fixture:volume_bar_id:C-bar"
+          ],
+          "received_attempt_ids": [
+            "sha256:0f9a09cf7e0248afab11a6e77c1c61fb9a59211549f86155c4b552b24af0fb62",
+            "sha256:7338fd88c811a7d80b1fcb8cb7169217c18fbabea91b3816c184b5e2d1e18162"
+          ],
+          "versions": {
+            "adapter": "capital-quantity-after-retry/0.1",
+            "generation": "capital-quantity-candidates/0.2",
+            "checkpoint": "capital-account-checkpoint/0.8",
+            "decision": "capital-decision/0.8"
+          }
+        }
+      },
+      "storage": {
+        "request": "SAVED_AND_READ_BACK",
+        "choice": "UNKNOWN",
+        "result": "NOT_PERFORMED"
+      },
+      "observed": {
+        "choice_status": null,
+        "check_status": null
+      },
+      "supplement": null,
+      "saved_files_preserved": true,
+      "generation": "NOT_PERFORMED_REUSED_SAVED_PARENT",
+      "order_generation": "NOT_PERFORMED",
+      "execution": "NOT_PERFORMED",
+      "execution_authorized": false,
+      "primary_pressure_id": null,
+      "data_qualified": false,
+      "execution_model_qualified": false,
+      "historical_signal_eligible": false,
+      "policy_authorized": false,
+      "live_execution_authorized": false
+    },
+    "explicit_READ": {
+      "schema": "capital-selection-supplement-receipt/0.1",
+      "mode": "READ",
+      "supplement_id": "fault",
+      "workflow_status": "INCOMPLETE_SUPPLEMENT_PREFIX",
+      "reasons": [
+        "NO_SAVED_CHILD_RESULT_NO_AUTOMATIC_RESUME"
+      ],
+      "failed_stage": null,
+      "keys": {
+        "request": "fault--request",
+        "choice": "fault--choice",
+        "result": "fault--result"
+      },
+      "parent_binding": {
+        "parent_operation_id": "demo-no-selection",
+        "parent_header_id": "sha256:9b7c3c8bbd7487e9eac97d18fe1a4208eeb4afbc745b6a527a9aac4a3cf584e8",
+        "parent_request_id": "sha256:45da9caa2dae3ec1925da12fd4863b7e6c7a676cbc726dae4967d5e023b991be",
+        "parent_result_id": "sha256:b426b70347924c87074c2a9be86e9580cd9b8e6c2ee51269e86ab49243a85b56",
+        "generation_id": "sha256:c5e6483eb0180f5b948ff0f730be8c844d196b59bbf2d35cd2245223dee04897",
+        "source_binding": {
+          "source_document_id": "sha256:c5e6483eb0180f5b948ff0f730be8c844d196b59bbf2d35cd2245223dee04897",
+          "generation_document_id": "sha256:b439353befd087d47939869547a99972ee8e7cd3cf55dae3e5277b675a37fe50",
+          "quantity_request_id": "sha256:ab7b7539e4abcfaa05531ed5f5aeaa4cb397aa4b0eefd9bd70b99d09d0fba90a",
+          "source_input_id": "sha256:afa7b9084f0ec41168442e8cc913881da32a2a71ad8d4877b78c729fee9ceed2",
+          "account_id": "sha256:8ba782b921772678f8be492480ccc08d8c8b5e85bdde3c4fea55cc4a2f5aca6d",
+          "checkpoint_id": "sha256:7b29db36fd70625194c4780f722afd2c1b8f9e8da284bb06ae1e0a7e8ee90573",
+          "state_id": "sha256:35c53e286afb907f69ebb4627dcbd947896196f18d419b6b8041275544e27cf8",
+          "execution_result_id": "sha256:eceefb90ad3547042a2dc0a0d762dec463bbb27e868c48c657b5a52a71965aaf",
+          "origin_ledger_input_id": "sha256:39b145ccd42d3aa43b201f285abbe8efadc6b0df59071ac3d1c91ef0ad9ef018",
+          "latest_decision_id": "sha256:f03924f56d36f1ef856520caf25f3d5103335e63e94dddfdcb5ce37e4fa527a5",
+          "latest_common_account_id": "sha256:ca41094f720d2001d6162737a2841ef815e02c728023977faa61e426bfc71696",
+          "data_cutoff": "2026-01-12T16:00:00+08:00",
+          "decision_at": "2026-01-12T17:00:00+08:00",
+          "historical_reviewed_tokens": [
+            "fixture:event_id:A-event",
+            "fixture:event_id:B-event",
+            "fixture:event_id:B-prior-approved",
+            "fixture:event_id:C-event",
+            "fixture:formation_id:A-formation",
+            "fixture:formation_id:B-formation",
+            "fixture:formation_id:B-prior-formation",
+            "fixture:formation_id:C-formation",
+            "fixture:volume_bar_id:A-bar",
+            "fixture:volume_bar_id:B-bar",
+            "fixture:volume_bar_id:B-prior-bar",
+            "fixture:volume_bar_id:C-bar"
+          ],
+          "decision_reviewed_tokens": [
+            "fixture:event_id:A-event",
+            "fixture:event_id:B-event",
+            "fixture:event_id:B-new-independent",
+            "fixture:event_id:B-prior-approved",
+            "fixture:event_id:C-event",
+            "fixture:formation_id:A-formation",
+            "fixture:formation_id:B-formation",
+            "fixture:formation_id:B-new-formation",
+            "fixture:formation_id:B-prior-formation",
+            "fixture:formation_id:C-formation",
+            "fixture:volume_bar_id:A-bar",
+            "fixture:volume_bar_id:B-bar",
+            "fixture:volume_bar_id:B-new-bar",
+            "fixture:volume_bar_id:B-prior-bar",
+            "fixture:volume_bar_id:C-bar"
+          ],
+          "received_attempt_ids": [
+            "sha256:0f9a09cf7e0248afab11a6e77c1c61fb9a59211549f86155c4b552b24af0fb62",
+            "sha256:7338fd88c811a7d80b1fcb8cb7169217c18fbabea91b3816c184b5e2d1e18162"
+          ],
+          "versions": {
+            "adapter": "capital-quantity-after-retry/0.1",
+            "generation": "capital-quantity-candidates/0.2",
+            "checkpoint": "capital-account-checkpoint/0.8",
+            "decision": "capital-decision/0.8"
+          }
+        }
+      },
+      "storage": {
+        "request": "READ_ONLY",
+        "choice": "READ_ONLY",
+        "result": "MISSING"
+      },
+      "observed": {
+        "choice_status": "RECORDED_RESEARCH_INTENT",
+        "check_status": null
+      },
+      "supplement": null,
+      "saved_files_preserved": true,
+      "generation": "NOT_PERFORMED_REUSED_SAVED_PARENT",
+      "order_generation": "NOT_PERFORMED",
+      "execution": "NOT_PERFORMED",
+      "execution_authorized": false,
+      "primary_pressure_id": null,
+      "data_qualified": false,
+      "execution_model_qualified": false,
+      "historical_signal_eligible": false,
+      "policy_authorized": false,
+      "live_execution_authorized": false
+    },
+    "choice_calls": 1,
+    "check_calls": 0,
+    "before": {
+      "fault--choice.json": "852d2487d702a685340fa992ebf5b54fd6b8ffccdcdb964349e1f15447979cab",
+      "fault--request.json": "101a792657fa423da43dc19b61c10f01203d5230f4069bc9480425850fbea30c"
+    },
+    "after": {
+      "fault--choice.json": "852d2487d702a685340fa992ebf5b54fd6b8ffccdcdb964349e1f15447979cab",
+      "fault--request.json": "101a792657fa423da43dc19b61c10f01203d5230f4069bc9480425850fbea30c"
+    }
+  },
+  {
+    "stage": "result",
+    "actual": {
+      "schema": "capital-selection-supplement-receipt/0.1",
+      "mode": "SELECT",
+      "supplement_id": "fault",
+      "workflow_status": "STOPPED_STORAGE",
+      "reasons": [
+        "INJECTED_AFTER_CHILD_SAVE:result"
+      ],
+      "failed_stage": "result",
+      "keys": {
+        "request": "fault--request",
+        "choice": "fault--choice",
+        "result": "fault--result"
+      },
+      "parent_binding": {
+        "parent_operation_id": "demo-no-selection",
+        "parent_header_id": "sha256:9b7c3c8bbd7487e9eac97d18fe1a4208eeb4afbc745b6a527a9aac4a3cf584e8",
+        "parent_request_id": "sha256:45da9caa2dae3ec1925da12fd4863b7e6c7a676cbc726dae4967d5e023b991be",
+        "parent_result_id": "sha256:b426b70347924c87074c2a9be86e9580cd9b8e6c2ee51269e86ab49243a85b56",
+        "generation_id": "sha256:c5e6483eb0180f5b948ff0f730be8c844d196b59bbf2d35cd2245223dee04897",
+        "source_binding": {
+          "source_document_id": "sha256:c5e6483eb0180f5b948ff0f730be8c844d196b59bbf2d35cd2245223dee04897",
+          "generation_document_id": "sha256:b439353befd087d47939869547a99972ee8e7cd3cf55dae3e5277b675a37fe50",
+          "quantity_request_id": "sha256:ab7b7539e4abcfaa05531ed5f5aeaa4cb397aa4b0eefd9bd70b99d09d0fba90a",
+          "source_input_id": "sha256:afa7b9084f0ec41168442e8cc913881da32a2a71ad8d4877b78c729fee9ceed2",
+          "account_id": "sha256:8ba782b921772678f8be492480ccc08d8c8b5e85bdde3c4fea55cc4a2f5aca6d",
+          "checkpoint_id": "sha256:7b29db36fd70625194c4780f722afd2c1b8f9e8da284bb06ae1e0a7e8ee90573",
+          "state_id": "sha256:35c53e286afb907f69ebb4627dcbd947896196f18d419b6b8041275544e27cf8",
+          "execution_result_id": "sha256:eceefb90ad3547042a2dc0a0d762dec463bbb27e868c48c657b5a52a71965aaf",
+          "origin_ledger_input_id": "sha256:39b145ccd42d3aa43b201f285abbe8efadc6b0df59071ac3d1c91ef0ad9ef018",
+          "latest_decision_id": "sha256:f03924f56d36f1ef856520caf25f3d5103335e63e94dddfdcb5ce37e4fa527a5",
+          "latest_common_account_id": "sha256:ca41094f720d2001d6162737a2841ef815e02c728023977faa61e426bfc71696",
+          "data_cutoff": "2026-01-12T16:00:00+08:00",
+          "decision_at": "2026-01-12T17:00:00+08:00",
+          "historical_reviewed_tokens": [
+            "fixture:event_id:A-event",
+            "fixture:event_id:B-event",
+            "fixture:event_id:B-prior-approved",
+            "fixture:event_id:C-event",
+            "fixture:formation_id:A-formation",
+            "fixture:formation_id:B-formation",
+            "fixture:formation_id:B-prior-formation",
+            "fixture:formation_id:C-formation",
+            "fixture:volume_bar_id:A-bar",
+            "fixture:volume_bar_id:B-bar",
+            "fixture:volume_bar_id:B-prior-bar",
+            "fixture:volume_bar_id:C-bar"
+          ],
+          "decision_reviewed_tokens": [
+            "fixture:event_id:A-event",
+            "fixture:event_id:B-event",
+            "fixture:event_id:B-new-independent",
+            "fixture:event_id:B-prior-approved",
+            "fixture:event_id:C-event",
+            "fixture:formation_id:A-formation",
+            "fixture:formation_id:B-formation",
+            "fixture:formation_id:B-new-formation",
+            "fixture:formation_id:B-prior-formation",
+            "fixture:formation_id:C-formation",
+            "fixture:volume_bar_id:A-bar",
+            "fixture:volume_bar_id:B-bar",
+            "fixture:volume_bar_id:B-new-bar",
+            "fixture:volume_bar_id:B-prior-bar",
+            "fixture:volume_bar_id:C-bar"
+          ],
+          "received_attempt_ids": [
+            "sha256:0f9a09cf7e0248afab11a6e77c1c61fb9a59211549f86155c4b552b24af0fb62",
+            "sha256:7338fd88c811a7d80b1fcb8cb7169217c18fbabea91b3816c184b5e2d1e18162"
+          ],
+          "versions": {
+            "adapter": "capital-quantity-after-retry/0.1",
+            "generation": "capital-quantity-candidates/0.2",
+            "checkpoint": "capital-account-checkpoint/0.8",
+            "decision": "capital-decision/0.8"
+          }
+        }
+      },
+      "storage": {
+        "request": "SAVED_AND_READ_BACK",
+        "choice": "SAVED_AND_READ_BACK",
+        "result": "UNKNOWN"
+      },
+      "observed": {
+        "choice_status": "RECORDED_RESEARCH_INTENT",
+        "check_status": "MATCHED"
+      },
+      "supplement": null,
+      "saved_files_preserved": true,
+      "generation": "NOT_PERFORMED_REUSED_SAVED_PARENT",
+      "order_generation": "NOT_PERFORMED",
+      "execution": "NOT_PERFORMED",
+      "execution_authorized": false,
+      "primary_pressure_id": null,
+      "data_qualified": false,
+      "execution_model_qualified": false,
+      "historical_signal_eligible": false,
+      "policy_authorized": false,
+      "live_execution_authorized": false,
+      "computed_outcome": "COMPLETED_SUPPLEMENT_INTENT"
+    },
+    "explicit_READ": {
+      "schema": "capital-selection-supplement-receipt/0.1",
+      "mode": "READ",
+      "supplement_id": "fault",
+      "workflow_status": "READ_ONLY",
+      "reasons": [],
+      "failed_stage": null,
+      "keys": {
+        "request": "fault--request",
+        "choice": "fault--choice",
+        "result": "fault--result"
+      },
+      "parent_binding": {
+        "parent_operation_id": "demo-no-selection",
+        "parent_header_id": "sha256:9b7c3c8bbd7487e9eac97d18fe1a4208eeb4afbc745b6a527a9aac4a3cf584e8",
+        "parent_request_id": "sha256:45da9caa2dae3ec1925da12fd4863b7e6c7a676cbc726dae4967d5e023b991be",
+        "parent_result_id": "sha256:b426b70347924c87074c2a9be86e9580cd9b8e6c2ee51269e86ab49243a85b56",
+        "generation_id": "sha256:c5e6483eb0180f5b948ff0f730be8c844d196b59bbf2d35cd2245223dee04897",
+        "source_binding": {
+          "source_document_id": "sha256:c5e6483eb0180f5b948ff0f730be8c844d196b59bbf2d35cd2245223dee04897",
+          "generation_document_id": "sha256:b439353befd087d47939869547a99972ee8e7cd3cf55dae3e5277b675a37fe50",
+          "quantity_request_id": "sha256:ab7b7539e4abcfaa05531ed5f5aeaa4cb397aa4b0eefd9bd70b99d09d0fba90a",
+          "source_input_id": "sha256:afa7b9084f0ec41168442e8cc913881da32a2a71ad8d4877b78c729fee9ceed2",
+          "account_id": "sha256:8ba782b921772678f8be492480ccc08d8c8b5e85bdde3c4fea55cc4a2f5aca6d",
+          "checkpoint_id": "sha256:7b29db36fd70625194c4780f722afd2c1b8f9e8da284bb06ae1e0a7e8ee90573",
+          "state_id": "sha256:35c53e286afb907f69ebb4627dcbd947896196f18d419b6b8041275544e27cf8",
+          "execution_result_id": "sha256:eceefb90ad3547042a2dc0a0d762dec463bbb27e868c48c657b5a52a71965aaf",
+          "origin_ledger_input_id": "sha256:39b145ccd42d3aa43b201f285abbe8efadc6b0df59071ac3d1c91ef0ad9ef018",
+          "latest_decision_id": "sha256:f03924f56d36f1ef856520caf25f3d5103335e63e94dddfdcb5ce37e4fa527a5",
+          "latest_common_account_id": "sha256:ca41094f720d2001d6162737a2841ef815e02c728023977faa61e426bfc71696",
+          "data_cutoff": "2026-01-12T16:00:00+08:00",
+          "decision_at": "2026-01-12T17:00:00+08:00",
+          "historical_reviewed_tokens": [
+            "fixture:event_id:A-event",
+            "fixture:event_id:B-event",
+            "fixture:event_id:B-prior-approved",
+            "fixture:event_id:C-event",
+            "fixture:formation_id:A-formation",
+            "fixture:formation_id:B-formation",
+            "fixture:formation_id:B-prior-formation",
+            "fixture:formation_id:C-formation",
+            "fixture:volume_bar_id:A-bar",
+            "fixture:volume_bar_id:B-bar",
+            "fixture:volume_bar_id:B-prior-bar",
+            "fixture:volume_bar_id:C-bar"
+          ],
+          "decision_reviewed_tokens": [
+            "fixture:event_id:A-event",
+            "fixture:event_id:B-event",
+            "fixture:event_id:B-new-independent",
+            "fixture:event_id:B-prior-approved",
+            "fixture:event_id:C-event",
+            "fixture:formation_id:A-formation",
+            "fixture:formation_id:B-formation",
+            "fixture:formation_id:B-new-formation",
+            "fixture:formation_id:B-prior-formation",
+            "fixture:formation_id:C-formation",
+            "fixture:volume_bar_id:A-bar",
+            "fixture:volume_bar_id:B-bar",
+            "fixture:volume_bar_id:B-new-bar",
+            "fixture:volume_bar_id:B-prior-bar",
+            "fixture:volume_bar_id:C-bar"
+          ],
+          "received_attempt_ids": [
+            "sha256:0f9a09cf7e0248afab11a6e77c1c61fb9a59211549f86155c4b552b24af0fb62",
+            "sha256:7338fd88c811a7d80b1fcb8cb7169217c18fbabea91b3816c184b5e2d1e18162"
+          ],
+          "versions": {
+            "adapter": "capital-quantity-after-retry/0.1",
+            "generation": "capital-quantity-candidates/0.2",
+            "checkpoint": "capital-account-checkpoint/0.8",
+            "decision": "capital-decision/0.8"
+          }
+        }
+      },
+      "storage": {
+        "request": "READ_ONLY",
+        "choice": "READ_ONLY",
+        "result": "READ_ONLY"
+      },
+      "observed": {
+        "choice_status": "RECORDED_RESEARCH_INTENT",
+        "check_status": "MATCHED"
+      },
+      "supplement": {
+        "choice_record_id": "sha256:40c71526bd93617a49f914e226066ceea82e4c55212f8dd42a084b68bf66b639",
+        "choice_status": "RECORDED_RESEARCH_INTENT",
+        "data_qualified": false,
+        "execution": "NOT_PERFORMED",
+        "execution_authorized": false,
+        "execution_model_qualified": false,
+        "header_id": "sha256:39704cb69ca113f4a1308929307b66614a97117993a32180abac5bb6e06a46d0",
+        "historical_signal_eligible": false,
+        "live_execution_authorized": false,
+        "order_generation": "NOT_PERFORMED",
+        "outcome": "COMPLETED_SUPPLEMENT_INTENT",
+        "parent_binding": {
+          "generation_id": "sha256:c5e6483eb0180f5b948ff0f730be8c844d196b59bbf2d35cd2245223dee04897",
+          "parent_header_id": "sha256:9b7c3c8bbd7487e9eac97d18fe1a4208eeb4afbc745b6a527a9aac4a3cf584e8",
+          "parent_operation_id": "demo-no-selection",
+          "parent_request_id": "sha256:45da9caa2dae3ec1925da12fd4863b7e6c7a676cbc726dae4967d5e023b991be",
+          "parent_result_id": "sha256:b426b70347924c87074c2a9be86e9580cd9b8e6c2ee51269e86ab49243a85b56",
+          "source_binding": {
+            "account_id": "sha256:8ba782b921772678f8be492480ccc08d8c8b5e85bdde3c4fea55cc4a2f5aca6d",
+            "checkpoint_id": "sha256:7b29db36fd70625194c4780f722afd2c1b8f9e8da284bb06ae1e0a7e8ee90573",
+            "data_cutoff": "2026-01-12T16:00:00+08:00",
+            "decision_at": "2026-01-12T17:00:00+08:00",
+            "decision_reviewed_tokens": [
+              "fixture:event_id:A-event",
+              "fixture:event_id:B-event",
+              "fixture:event_id:B-new-independent",
+              "fixture:event_id:B-prior-approved",
+              "fixture:event_id:C-event",
+              "fixture:formation_id:A-formation",
+              "fixture:formation_id:B-formation",
+              "fixture:formation_id:B-new-formation",
+              "fixture:formation_id:B-prior-formation",
+              "fixture:formation_id:C-formation",
+              "fixture:volume_bar_id:A-bar",
+              "fixture:volume_bar_id:B-bar",
+              "fixture:volume_bar_id:B-new-bar",
+              "fixture:volume_bar_id:B-prior-bar",
+              "fixture:volume_bar_id:C-bar"
+            ],
+            "execution_result_id": "sha256:eceefb90ad3547042a2dc0a0d762dec463bbb27e868c48c657b5a52a71965aaf",
+            "generation_document_id": "sha256:b439353befd087d47939869547a99972ee8e7cd3cf55dae3e5277b675a37fe50",
+            "historical_reviewed_tokens": [
+              "fixture:event_id:A-event",
+              "fixture:event_id:B-event",
+              "fixture:event_id:B-prior-approved",
+              "fixture:event_id:C-event",
+              "fixture:formation_id:A-formation",
+              "fixture:formation_id:B-formation",
+              "fixture:formation_id:B-prior-formation",
+              "fixture:formation_id:C-formation",
+              "fixture:volume_bar_id:A-bar",
+              "fixture:volume_bar_id:B-bar",
+              "fixture:volume_bar_id:B-prior-bar",
+              "fixture:volume_bar_id:C-bar"
+            ],
+            "latest_common_account_id": "sha256:ca41094f720d2001d6162737a2841ef815e02c728023977faa61e426bfc71696",
+            "latest_decision_id": "sha256:f03924f56d36f1ef856520caf25f3d5103335e63e94dddfdcb5ce37e4fa527a5",
+            "origin_ledger_input_id": "sha256:39b145ccd42d3aa43b201f285abbe8efadc6b0df59071ac3d1c91ef0ad9ef018",
+            "quantity_request_id": "sha256:ab7b7539e4abcfaa05531ed5f5aeaa4cb397aa4b0eefd9bd70b99d09d0fba90a",
+            "received_attempt_ids": [
+              "sha256:0f9a09cf7e0248afab11a6e77c1c61fb9a59211549f86155c4b552b24af0fb62",
+              "sha256:7338fd88c811a7d80b1fcb8cb7169217c18fbabea91b3816c184b5e2d1e18162"
+            ],
+            "source_document_id": "sha256:c5e6483eb0180f5b948ff0f730be8c844d196b59bbf2d35cd2245223dee04897",
+            "source_input_id": "sha256:afa7b9084f0ec41168442e8cc913881da32a2a71ad8d4877b78c729fee9ceed2",
+            "state_id": "sha256:35c53e286afb907f69ebb4627dcbd947896196f18d419b6b8041275544e27cf8",
+            "versions": {
+              "adapter": "capital-quantity-after-retry/0.1",
+              "checkpoint": "capital-account-checkpoint/0.8",
+              "decision": "capital-decision/0.8",
+              "generation": "capital-quantity-candidates/0.2"
+            }
+          }
+        },
+        "policy_authorized": false,
+        "primary_pressure_id": null,
+        "reasons": [],
+        "recorded_at": "2026-10-27T12:00:00+08:00",
+        "request_id": "sha256:91c096e4c25444e026938288f532bb72bd74f79f10c26d8b83d7557f88e2ddf4",
+        "requested_selection": {
+          "additional_B": "1",
+          "mode": "GRID",
+          "reason": "EXPLICIT_SYNTHETIC_SUPPLEMENT_NOT_NEW_TRADE",
+          "sell_A": "0"
+        },
+        "result_id": "sha256:deaaaef5455ce404a824df453801afd210feea5d6ab65fb5b66db88a55618a74",
+        "schema": "capital-selection-supplement-result/0.1",
+        "selected_targets": {
+          "A": "60",
+          "B": "26",
+          "C": "2"
+        },
+        "source_check": {
+          "candidate_check": "EXACT_UNIQUE_MEMBER",
+          "candidate_qualification": "CURRENTLY_FEASIBLE",
+          "candidate_role": "SELECTED",
+          "check_status": "MATCHED",
+          "choice_status": "RECORDED_RESEARCH_INTENT",
+          "choice_summary": {
+            "reasons": [],
+            "recorded_at": "2026-10-27T12:00:00+08:00",
+            "requested_selection": {
+              "additional_B": "1",
+              "mode": "GRID",
+              "reason": "EXPLICIT_SYNTHETIC_SUPPLEMENT_NOT_NEW_TRADE",
+              "sell_A": "0"
+            }
+          },
+          "columns": [
+            {
+              "binding": {
+                "account_id": "sha256:8ba782b921772678f8be492480ccc08d8c8b5e85bdde3c4fea55cc4a2f5aca6d",
+                "checkpoint_id": "sha256:7b29db36fd70625194c4780f722afd2c1b8f9e8da284bb06ae1e0a7e8ee90573",
+                "data_cutoff": "2026-01-12T16:00:00+08:00",
+                "decision_at": "2026-01-12T17:00:00+08:00",
+                "decision_reviewed_tokens": [
+                  "fixture:event_id:A-event",
+                  "fixture:event_id:B-event",
+                  "fixture:event_id:B-new-independent",
+                  "fixture:event_id:B-prior-approved",
+                  "fixture:event_id:C-event",
+                  "fixture:formation_id:A-formation",
+                  "fixture:formation_id:B-formation",
+                  "fixture:formation_id:B-new-formation",
+                  "fixture:formation_id:B-prior-formation",
+                  "fixture:formation_id:C-formation",
+                  "fixture:volume_bar_id:A-bar",
+                  "fixture:volume_bar_id:B-bar",
+                  "fixture:volume_bar_id:B-new-bar",
+                  "fixture:volume_bar_id:B-prior-bar",
+                  "fixture:volume_bar_id:C-bar"
+                ],
+                "execution_result_id": "sha256:eceefb90ad3547042a2dc0a0d762dec463bbb27e868c48c657b5a52a71965aaf",
+                "generation_document_id": "sha256:b439353befd087d47939869547a99972ee8e7cd3cf55dae3e5277b675a37fe50",
+                "historical_reviewed_tokens": [
+                  "fixture:event_id:A-event",
+                  "fixture:event_id:B-event",
+                  "fixture:event_id:B-prior-approved",
+                  "fixture:event_id:C-event",
+                  "fixture:formation_id:A-formation",
+                  "fixture:formation_id:B-formation",
+                  "fixture:formation_id:B-prior-formation",
+                  "fixture:formation_id:C-formation",
+                  "fixture:volume_bar_id:A-bar",
+                  "fixture:volume_bar_id:B-bar",
+                  "fixture:volume_bar_id:B-prior-bar",
+                  "fixture:volume_bar_id:C-bar"
+                ],
+                "latest_common_account_id": "sha256:ca41094f720d2001d6162737a2841ef815e02c728023977faa61e426bfc71696",
+                "latest_decision_id": "sha256:f03924f56d36f1ef856520caf25f3d5103335e63e94dddfdcb5ce37e4fa527a5",
+                "origin_ledger_input_id": "sha256:39b145ccd42d3aa43b201f285abbe8efadc6b0df59071ac3d1c91ef0ad9ef018",
+                "quantity_request_id": "sha256:ab7b7539e4abcfaa05531ed5f5aeaa4cb397aa4b0eefd9bd70b99d09d0fba90a",
+                "received_attempt_ids": [
+                  "sha256:0f9a09cf7e0248afab11a6e77c1c61fb9a59211549f86155c4b552b24af0fb62",
+                  "sha256:7338fd88c811a7d80b1fcb8cb7169217c18fbabea91b3816c184b5e2d1e18162"
+                ],
+                "source_document_id": "sha256:c5e6483eb0180f5b948ff0f730be8c844d196b59bbf2d35cd2245223dee04897",
+                "source_input_id": "sha256:afa7b9084f0ec41168442e8cc913881da32a2a71ad8d4877b78c729fee9ceed2",
+                "state_id": "sha256:35c53e286afb907f69ebb4627dcbd947896196f18d419b6b8041275544e27cf8",
+                "versions": {
+                  "adapter": "capital-quantity-after-retry/0.1",
+                  "checkpoint": "capital-account-checkpoint/0.8",
+                  "decision": "capital-decision/0.8",
+                  "generation": "capital-quantity-candidates/0.2"
+                }
+              },
+              "candidate": {
+                "additional_B": "1",
+                "batch_gate_reasons": [],
+                "classification": "CURRENTLY_FEASIBLE",
+                "core_decision_id": "sha256:af98952a4a0949f745b93424695d227023a2fb4b3d2cb0386a6e0aeca1cf91e2",
+                "core_evaluation": {
+                  "available_settled_cash": "175.100",
+                  "broker_credit_separate": "0",
+                  "cancel_conditions": [
+                    "EVIDENCE_INVALIDATED",
+                    "BASIS_OR_SOURCE_CHANGED",
+                    "RISK_OR_LIQUIDITY_CHANGED"
+                  ],
+                  "common_account_id": "sha256:8ba782b921772678f8be492480ccc08d8c8b5e85bdde3c4fea55cc4a2f5aca6d",
+                  "conditions": [
+                    "CURRENT_RESEARCH_INTENT_ONLY",
+                    "REASSESS_AFTER_SETTLEMENT",
+                    "NEW_INDEPENDENT_TRIGGER_FOR_NEXT_BUY_BATCH"
+                  ],
+                  "dominance_scope": "STATIC_TARGETS_ONLY",
+                  "dominated_by": [],
+                  "estimated_cost": "1.02",
+                  "family": "C",
+                  "feasible": true,
+                  "final_cash_after_all_settlements_estimate": "254.080",
+                  "funding": "SETTLED",
+                  "id": "quantity:sha256:fee3496efe33cc6e54d3f830d34194d05f181dd804b44f04599ccc1247728f0f",
+                  "indistinguishable_from": [],
+                  "initial_capital": "1425.100",
+                  "next_review_conditions": [
+                    "NEW_INDEPENDENT_EVENT",
+                    "FILL_OR_SETTLEMENT_UPDATE"
+                  ],
+                  "policy_dominance": "NOT_EVALUATED",
+                  "purchase_payable_estimate": "21.02",
+                  "reasons": [],
+                  "remaining_risk_violations": {
+                    "account_stress": "0",
+                    "group:new": "0",
+                    "group:original": "0",
+                    "group:other": "0",
+                    "single:A": "0",
+                    "single:B": "0",
+                    "single:C": "0"
+                  },
+                  "risk_reducing": false,
+                  "route": "R1",
+                  "sale_receivable_estimate": "0",
+                  "scenario_value_qualification": "STATIC_TARGET_ATTAINED_STRESS_EXCLUDES_WAITING_AND_NONFILLS",
+                  "scenario_values": {
+                    "A_wins": "1666.080",
+                    "B_accelerates": "1798.080",
+                    "both_fall": "1018.080"
+                  },
+                  "status": "FEASIBLE",
+                  "targets": {
+                    "A": "60",
+                    "B": "26",
+                    "C": "2"
+                  },
+                  "trigger_ids": [
+                    "B-new-independent"
+                  ]
+                },
+                "core_schema": "capital-decision/0.8",
+                "feasible_for_research": true,
+                "generation_policy_version": "synthetic-after-retry-domain/0.1",
+                "generation_reasons": [
+                  "PARTIAL_TRANSFER"
+                ],
+                "id": "quantity:sha256:fee3496efe33cc6e54d3f830d34194d05f181dd804b44f04599ccc1247728f0f",
+                "kinds": [
+                  "PARTIAL_TRANSFER"
+                ],
+                "plan": {
+                  "conditions": [
+                    "CURRENT_RESEARCH_INTENT_ONLY",
+                    "REASSESS_AFTER_SETTLEMENT",
+                    "NEW_INDEPENDENT_TRIGGER_FOR_NEXT_BUY_BATCH"
+                  ],
+                  "edge_budget": "1000",
+                  "family": "C",
+                  "id": "quantity:sha256:fee3496efe33cc6e54d3f830d34194d05f181dd804b44f04599ccc1247728f0f",
+                  "route": "R1",
+                  "targets": {
+                    "A": "60",
+                    "B": "26",
+                    "C": "2"
+                  },
+                  "trigger_ids": [
+                    "B-new-independent"
+                  ]
+                },
+                "reasons": [],
+                "sold_A": "0"
+              },
+              "label": "選擇紀錄保存值"
+            },
+            {
+              "binding": {
+                "account_id": "sha256:8ba782b921772678f8be492480ccc08d8c8b5e85bdde3c4fea55cc4a2f5aca6d",
+                "checkpoint_id": "sha256:7b29db36fd70625194c4780f722afd2c1b8f9e8da284bb06ae1e0a7e8ee90573",
+                "data_cutoff": "2026-01-12T16:00:00+08:00",
+                "decision_at": "2026-01-12T17:00:00+08:00",
+                "decision_reviewed_tokens": [
+                  "fixture:event_id:A-event",
+                  "fixture:event_id:B-event",
+                  "fixture:event_id:B-new-independent",
+                  "fixture:event_id:B-prior-approved",
+                  "fixture:event_id:C-event",
+                  "fixture:formation_id:A-formation",
+                  "fixture:formation_id:B-formation",
+                  "fixture:formation_id:B-new-formation",
+                  "fixture:formation_id:B-prior-formation",
+                  "fixture:formation_id:C-formation",
+                  "fixture:volume_bar_id:A-bar",
+                  "fixture:volume_bar_id:B-bar",
+                  "fixture:volume_bar_id:B-new-bar",
+                  "fixture:volume_bar_id:B-prior-bar",
+                  "fixture:volume_bar_id:C-bar"
+                ],
+                "execution_result_id": "sha256:eceefb90ad3547042a2dc0a0d762dec463bbb27e868c48c657b5a52a71965aaf",
+                "generation_document_id": "sha256:b439353befd087d47939869547a99972ee8e7cd3cf55dae3e5277b675a37fe50",
+                "historical_reviewed_tokens": [
+                  "fixture:event_id:A-event",
+                  "fixture:event_id:B-event",
+                  "fixture:event_id:B-prior-approved",
+                  "fixture:event_id:C-event",
+                  "fixture:formation_id:A-formation",
+                  "fixture:formation_id:B-formation",
+                  "fixture:formation_id:B-prior-formation",
+                  "fixture:formation_id:C-formation",
+                  "fixture:volume_bar_id:A-bar",
+                  "fixture:volume_bar_id:B-bar",
+                  "fixture:volume_bar_id:B-prior-bar",
+                  "fixture:volume_bar_id:C-bar"
+                ],
+                "latest_common_account_id": "sha256:ca41094f720d2001d6162737a2841ef815e02c728023977faa61e426bfc71696",
+                "latest_decision_id": "sha256:f03924f56d36f1ef856520caf25f3d5103335e63e94dddfdcb5ce37e4fa527a5",
+                "origin_ledger_input_id": "sha256:39b145ccd42d3aa43b201f285abbe8efadc6b0df59071ac3d1c91ef0ad9ef018",
+                "quantity_request_id": "sha256:ab7b7539e4abcfaa05531ed5f5aeaa4cb397aa4b0eefd9bd70b99d09d0fba90a",
+                "received_attempt_ids": [
+                  "sha256:0f9a09cf7e0248afab11a6e77c1c61fb9a59211549f86155c4b552b24af0fb62",
+                  "sha256:7338fd88c811a7d80b1fcb8cb7169217c18fbabea91b3816c184b5e2d1e18162"
+                ],
+                "source_document_id": "sha256:c5e6483eb0180f5b948ff0f730be8c844d196b59bbf2d35cd2245223dee04897",
+                "source_input_id": "sha256:afa7b9084f0ec41168442e8cc913881da32a2a71ad8d4877b78c729fee9ceed2",
+                "state_id": "sha256:35c53e286afb907f69ebb4627dcbd947896196f18d419b6b8041275544e27cf8",
+                "versions": {
+                  "adapter": "capital-quantity-after-retry/0.1",
+                  "checkpoint": "capital-account-checkpoint/0.8",
+                  "decision": "capital-decision/0.8",
+                  "generation": "capital-quantity-candidates/0.2"
+                }
+              },
+              "candidate": {
+                "additional_B": "1",
+                "batch_gate_reasons": [],
+                "classification": "CURRENTLY_FEASIBLE",
+                "core_decision_id": "sha256:af98952a4a0949f745b93424695d227023a2fb4b3d2cb0386a6e0aeca1cf91e2",
+                "core_evaluation": {
+                  "available_settled_cash": "175.100",
+                  "broker_credit_separate": "0",
+                  "cancel_conditions": [
+                    "EVIDENCE_INVALIDATED",
+                    "BASIS_OR_SOURCE_CHANGED",
+                    "RISK_OR_LIQUIDITY_CHANGED"
+                  ],
+                  "common_account_id": "sha256:8ba782b921772678f8be492480ccc08d8c8b5e85bdde3c4fea55cc4a2f5aca6d",
+                  "conditions": [
+                    "CURRENT_RESEARCH_INTENT_ONLY",
+                    "REASSESS_AFTER_SETTLEMENT",
+                    "NEW_INDEPENDENT_TRIGGER_FOR_NEXT_BUY_BATCH"
+                  ],
+                  "dominance_scope": "STATIC_TARGETS_ONLY",
+                  "dominated_by": [],
+                  "estimated_cost": "1.02",
+                  "family": "C",
+                  "feasible": true,
+                  "final_cash_after_all_settlements_estimate": "254.080",
+                  "funding": "SETTLED",
+                  "id": "quantity:sha256:fee3496efe33cc6e54d3f830d34194d05f181dd804b44f04599ccc1247728f0f",
+                  "indistinguishable_from": [],
+                  "initial_capital": "1425.100",
+                  "next_review_conditions": [
+                    "NEW_INDEPENDENT_EVENT",
+                    "FILL_OR_SETTLEMENT_UPDATE"
+                  ],
+                  "policy_dominance": "NOT_EVALUATED",
+                  "purchase_payable_estimate": "21.02",
+                  "reasons": [],
+                  "remaining_risk_violations": {
+                    "account_stress": "0",
+                    "group:new": "0",
+                    "group:original": "0",
+                    "group:other": "0",
+                    "single:A": "0",
+                    "single:B": "0",
+                    "single:C": "0"
+                  },
+                  "risk_reducing": false,
+                  "route": "R1",
+                  "sale_receivable_estimate": "0",
+                  "scenario_value_qualification": "STATIC_TARGET_ATTAINED_STRESS_EXCLUDES_WAITING_AND_NONFILLS",
+                  "scenario_values": {
+                    "A_wins": "1666.080",
+                    "B_accelerates": "1798.080",
+                    "both_fall": "1018.080"
+                  },
+                  "status": "FEASIBLE",
+                  "targets": {
+                    "A": "60",
+                    "B": "26",
+                    "C": "2"
+                  },
+                  "trigger_ids": [
+                    "B-new-independent"
+                  ]
+                },
+                "core_schema": "capital-decision/0.8",
+                "feasible_for_research": true,
+                "generation_policy_version": "synthetic-after-retry-domain/0.1",
+                "generation_reasons": [
+                  "PARTIAL_TRANSFER"
+                ],
+                "id": "quantity:sha256:fee3496efe33cc6e54d3f830d34194d05f181dd804b44f04599ccc1247728f0f",
+                "kinds": [
+                  "PARTIAL_TRANSFER"
+                ],
+                "plan": {
+                  "conditions": [
+                    "CURRENT_RESEARCH_INTENT_ONLY",
+                    "REASSESS_AFTER_SETTLEMENT",
+                    "NEW_INDEPENDENT_TRIGGER_FOR_NEXT_BUY_BATCH"
+                  ],
+                  "edge_budget": "1000",
+                  "family": "C",
+                  "id": "quantity:sha256:fee3496efe33cc6e54d3f830d34194d05f181dd804b44f04599ccc1247728f0f",
+                  "route": "R1",
+                  "targets": {
+                    "A": "60",
+                    "B": "26",
+                    "C": "2"
+                  },
+                  "trigger_ids": [
+                    "B-new-independent"
+                  ]
+                },
+                "reasons": [],
+                "sold_A": "0"
+              },
+              "label": "明示來源保存值"
+            }
+          ],
+          "data_qualified": false,
+          "execution": "NOT_PERFORMED",
+          "execution_authorized": false,
+          "execution_model_qualified": false,
+          "historical_signal_eligible": false,
+          "live_execution_authorized": false,
+          "mismatch_fields": [],
+          "order_generation": "NOT_PERFORMED",
+          "policy_authorized": false,
+          "primary_pressure_id": null,
+          "reasons": [],
+          "record_id": "sha256:40c71526bd93617a49f914e226066ceea82e4c55212f8dd42a084b68bf66b639",
+          "schema": "capital-research-choice-source-check/0.1",
+          "scope": "ONE_CHOICE_AND_ITS_EXPLICIT_SOURCE_NOT_POLICY_COMPARISON",
+          "synthetic": true
+        },
+        "supplement_id": "fault",
+        "synthetic": true
+      },
+      "saved_files_preserved": true,
+      "generation": "NOT_PERFORMED_REUSED_SAVED_PARENT",
+      "order_generation": "NOT_PERFORMED",
+      "execution": "NOT_PERFORMED",
+      "execution_authorized": false,
+      "primary_pressure_id": null,
+      "data_qualified": false,
+      "execution_model_qualified": false,
+      "historical_signal_eligible": false,
+      "policy_authorized": false,
+      "live_execution_authorized": false
+    },
+    "choice_calls": 1,
+    "check_calls": 1,
+    "before": {
+      "fault--result.json": "c62c27396570641f7e9f18dbc4d30beccf49c0ce204d7f790ff26a7e7c862e60",
+      "fault--choice.json": "852d2487d702a685340fa992ebf5b54fd6b8ffccdcdb964349e1f15447979cab",
+      "fault--request.json": "101a792657fa423da43dc19b61c10f01203d5230f4069bc9480425850fbea30c"
+    },
+    "after": {
+      "fault--result.json": "c62c27396570641f7e9f18dbc4d30beccf49c0ce204d7f790ff26a7e7c862e60",
+      "fault--choice.json": "852d2487d702a685340fa992ebf5b54fd6b8ffccdcdb964349e1f15447979cab",
+      "fault--request.json": "101a792657fa423da43dc19b61c10f01203d5230f4069bc9480425850fbea30c"
+    }
+  }
+]

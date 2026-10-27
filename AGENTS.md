@@ -1,3 +1,13 @@
+# 2026-10-27 最新有效｜等待結果的明示補選0.1
+
+入口股票系統M1_v0_18/capital_research/selection_supplement_20261027/README.md、CONTRACT.md及actual/。獨立selection_supplement SELECT／READ只接完整可讀AWAITING_EXPLICIT_SELECTION父結果，綁parent header／request／result、generation及原source_binding（帳／截止／latest／完整tokens）；以新child request／choice／result沿舊資格、Journal保存與來源核對。原等待結果留史，不補寫父choice、不複製generation或新帳；不重新生成、不把晚補選當新決策或今日交易資格。
+
+八個定向輸入符合預期，6唯一方法首次通過；生成／數值／交易回放0，不加歷史PASS。原本金1430、現金275.100、reserve100、A60/B25/C2、權利／state／latest／tokens保持。fresh雙入口禁止引擎／生成／網路；READ另禁重選／check／保存／寫檔。child重送／衝突不改寫，三階段UNKNOWN停止留檔，錯鏈／缺父拒絕；故障僅暫存副本，不冒真實斷電。父子key不能重疊，來源一致不等正式資格。
+
+最低基線101c1d3744d18ba0837c4839ff8b6e10dc621a9d；原環境斷線在首次寫入程序啟動前，恢復後原路徑／HEAD與乾淨狀態重新核實，無換工作區或重建。沿里程碑自審、正常保存及GitHub固定SHA讀回，無人工操作、不預設Work。正式false／主壓力null、1101 UNKNOWN、70／2／其中8／0、來源／圖形／原未支援保持。無舊suite／producer／bootstrap／部署交易。下方原0.1「未支援補選」屬其歷史版本，完整留史。
+
+---
+
 # 2026-10-27 最新有效｜明示合成研究操作RUN／READ協調0.1
 
 入口股票系統M1_v0_18/capital_research/research_operation_20261027/README.md、CONTRACT.md、initial/與views-final/。新外部research_operation及CLI串未改的after-retry候選生成、Journal保存讀回、明示選擇保存及來源核對。新操作先存完整canonical request_json；只生成一次，後段綁同一保存generation。不自動選候選／來源，selection:null停在候選；選擇遭拒不繼續核對。四階段保存與研究／資格結果分開，UNKNOWN停止且留檔。既有ID RUN不重跑；READ僅核保存指紋／接線，不生成、重選、重做來源verdict或寫檔。

@@ -1,3 +1,11 @@
+# 最新：等待結果的明示補選0.1
+
+入口[使用命令與證據](selection_supplement_20261027/README.md)、[CONTRACT](selection_supplement_20261027/CONTRACT.md)、[一般補選](selection_supplement_20261027/actual/general/readable.txt)、[條件補選](selection_supplement_20261027/actual/conditional/readable.txt)及[未列數量拒絕](selection_supplement_20261027/actual/unlisted-quantity/readable.txt)。新child綁完整原等待結果／generation／帳／截止／latest／tokens，沿舊資格／保存／來源核對；原等待結果不變，不重新生成或建單／成交。
+
+八輸入、6唯一方法首次通過，不加歷史；原件與state／權利／reserve保持，UNKNOWN停止及READ不重選／寫入有保存證據。正式false/null與來源拒算不變，工作方式沿根里程碑；下方未支援補選為原版本歷史，不覆寫。
+
+---
+
 # 最新：明示合成研究操作RUN／READ協調0.1
 
 入口[使用與證據](research_operation_20261027/README.md)、[CONTRACT](research_operation_20261027/CONTRACT.md)、[一般意圖](research_operation_20261027/views-final/general.txt)、[條件意圖](research_operation_20261027/views-final/conditional.txt)及[缺選擇停止](research_operation_20261027/views-final/no-selection.txt)。新協調器沿原生成、保存讀回、明示選擇與來源核對；RUN／READ分開，既有ID不重跑，缺選擇不預設HOLD，任何保存UNKNOWN停止留檔。不改帳／權利／token或接成交，資格與保存分開。
