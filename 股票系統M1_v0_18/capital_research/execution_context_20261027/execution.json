@@ -1,0 +1,161 @@
+{
+  "baseline": "cef4d09f08d9d0850adb4c03a9eac651146cded3",
+  "scope": "Only complete public execution.simulate numerical environment",
+  "version": "0.9.1-deterministic-decimal-context",
+  "schemas_unchanged": [
+    "capital-execution/0.8",
+    "capital-execution/0.9"
+  ],
+  "before": {
+    "controls": 10,
+    "matching_original": 5,
+    "complete_output_difference": 1,
+    "Inexact": 2,
+    "Overflow": 2
+  },
+  "after": {
+    "controls": 10,
+    "matching_original": 10
+  },
+  "rejections": {
+    "before_controls": 6,
+    "after_controls": 6,
+    "all_same_expected_ValueError": true
+  },
+  "tests": {
+    "unique_methods": 6,
+    "method_executions": 6,
+    "all_pass_first_run": true,
+    "historical_PASS_added": 0
+  },
+  "direct_simulate_calls": 36,
+  "these_calls_are_not_tests_or_independent_samples": true,
+  "rounding_difference": {
+    "case": "continuation",
+    "context": "round-up",
+    "differences": [
+      {
+        "path": "/ledger/scenario_net_return",
+        "expected": "-0.00604035874439461883408071748878923766816143497758",
+        "actual": "-0.00604035874439461883408071748878923766816143497757"
+      },
+      {
+        "path": "/result_id",
+        "expected": "sha256:a6b77d09ca32baadab8354524077d4a908d528aa5082befab730f9ba9b3096c8",
+        "actual": "sha256:e77f295992ae7b4dfbf804b6855b08537f3104f7750f37d93918830f22b5d2d2"
+      }
+    ],
+    "fills_unchanged": true,
+    "daily_ledger_unchanged": true,
+    "orders_and_states_unchanged": true,
+    "interpretation": "Saved result identity and return tail differ; this does not demonstrate a difference in investor cash, holdings or executed proceeds."
+  },
+  "additional_financial_review": {
+    "origin_initial_capital": "2230",
+    "general_reserve": "100",
+    "first_cash": "1056.660",
+    "first_shares": {
+      "A": "80",
+      "B": "7",
+      "C": "2"
+    },
+    "first_pending_cash": "80",
+    "first_pending_shares": "10",
+    "final_cash": "1115.640",
+    "final_shares": {
+      "A": "90",
+      "B": "8",
+      "C": "2"
+    },
+    "final_accrual": "2225.640",
+    "fill_fees_and_tax": "4",
+    "all_3_fills_settle_exactly_once_on_saved_dates": true,
+    "opening_rights_each_received_once": true,
+    "unfilled_A30_B13_remain_expired": true,
+    "daily_and_journal_exact_prefix": true,
+    "origin_latest_all_tokens_unchanged": true,
+    "checkpoint_exactly_matches_original": true,
+    "not_just_terminal_equality": true,
+    "first_incomplete_ledger_missing_fields_and_null_preserved": true
+  },
+  "fresh_process_calls": [
+    {
+      "case": "initial",
+      "actual_id": "sha256:5faa7603c3d4bbf1020ab744fe48aeb1657ec4a255a54393ebb663df9ca7a2ba",
+      "result_id": "sha256:8d9df123a161b3fe69fcfab0993df813b64ee0e278823e0f8259286f9db2f8d9",
+      "equal_original_execution": true,
+      "input_unchanged": true,
+      "caller_unchanged": true,
+      "DefaultContext_unchanged": true,
+      "calls": {
+        "simulate": 1,
+        "decide": 1,
+        "resume": 0,
+        "ledger_replay": 11,
+        "risk": 4,
+        "replay_sequence": 0,
+        "generate": 0,
+        "save": 0
+      },
+      "guard": "ONE_DIRECT_SYNTHETIC_SIMULATE_NO_QUANTITY_PRODUCER_NO_WRITE_NO_NETWORK"
+    },
+    {
+      "case": "continuation",
+      "actual_id": "sha256:2ff6a94eea86fe7221e6bdf7b6bc42e1d4f636c79a05ec912d47d753f541b5fb",
+      "result_id": "sha256:a6b77d09ca32baadab8354524077d4a908d528aa5082befab730f9ba9b3096c8",
+      "equal_original_execution": true,
+      "input_unchanged": true,
+      "caller_unchanged": true,
+      "DefaultContext_unchanged": true,
+      "calls": {
+        "simulate": 1,
+        "decide": 0,
+        "resume": 1,
+        "ledger_replay": 12,
+        "risk": 4,
+        "replay_sequence": 0,
+        "generate": 0,
+        "save": 0
+      },
+      "guard": "ONE_DIRECT_SYNTHETIC_SIMULATE_NO_QUANTITY_PRODUCER_NO_WRITE_NO_NETWORK"
+    }
+  ],
+  "self_review": {
+    "no_formula_strategy_accounting_qualification_changes": true,
+    "whole_internal_simulate_AST_unchanged": true,
+    "input_caller_DefaultContext_preserved": true,
+    "refusals_not_promoted": true,
+    "no_implicit_schema_migration": true
+  },
+  "not_executed": [
+    "old suites",
+    "quantity replay producer",
+    "full C/same-order0.9 matrix",
+    "nine paths",
+    "real producer or source qualification recomputation",
+    "new prices/sources",
+    "full future-prefix matrix",
+    "UI/Android",
+    "out of sample"
+  ],
+  "formal_qualification": false,
+  "primary_pressure": null,
+  "true_source_counts": {
+    "refused": 70,
+    "insufficient": 2,
+    "exchange_unsupported_in_refused": 8,
+    "qualified_real_total_net": 0
+  },
+  "unsupported_unchanged": [
+    "R2/F",
+    "source authentication",
+    "credit",
+    "opening payables/external ongoing orders",
+    "full branch matrix"
+  ],
+  "Astra": "NOT_OBTAINED_NOT_READ",
+  "rescue_originals": "NOT_OBTAINED_NOT_READ",
+  "manual_action_required": false,
+  "authorization": "Standing functional milestone normal commit/push and fixed-SHA GitHub readback; no deployment/trade/message",
+  "save_status": "Prepared; exact fixed commit and readback reported after normal save"
+}

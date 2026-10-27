@@ -1,3 +1,15 @@
+# 2026-10-27 最新有效｜直接execution.simulate數值環境隔離0.9.1
+
+入口execution_context_20261027/README.md、REPORT.md、CONTRACT.md及before/after。重用原兩輪execution_job／execution／checkpoint，先凍結input／expected／source再直接simulate，不跑quantity producer。修前兩例各Inexact／Overflow，續接ROUND_UP另改報酬尾數／result_id，成交／現金／持股不變；其餘五控制相符。stack證明例外在決策返回後的外層ledger核對。
+
+只固定simulate公開完整標準50位Context，revision0.9.1／schema0.8及同單0.9保持，_simulate本體／core／ledger與帳務、成交、風險、資格公式全不改。十組修後全文及身分相符；三拒絕變體×normal／preset前後均原ValueError。六唯一新方法首次通過，不加歷史、前後控制或36次有限診斷。
+
+額外核原本金2230／reserve100、逐日prefix／journal／原單歷史／權利／latest及全部token。首輪A20／B7部分成交、A30／B13到期不復活；後輪只B1，現金80及A10各到位一次，原三筆費稅4，終點現金1115.640／A90/B8/C2／應計2225.640。首輪未完結的ledger缺欄及null保持，總淨仍不合格，不以終點相等推定中途無重用。兩個原checkpoint相容；fresh各simulate1、ledger11／12、risk各4，quantity producer／generate／save各0，input／caller／DefaultContext保持。
+
+基線cef4d09f08d9d0850adb4c03a9eac651146cded3；原唯一Codex沿里程碑自審、正常保存及GitHub固定SHA讀回，無人工操作、不預設Work驗收。舊READ不重算，未跑同單0.9完整矩陣或全部未來前綴矩陣；其他獨立C重評／再評、全換及帳務入口不宣稱全面隔離。1101 UNKNOWN、70／2／其中8／真實總淨合格0、正式false／主壓力null、全部來源parents／圖形／人工及原未支援保持。無舊suite／九路徑／真實producer、新行情來源、bootstrap、UI／Android／樣本外或部署交易；Astra／救援未取得未讀。策略仍由Work／使用者決定，下一項可有限確認C兩公開外層，不在本輪擴張。下方原文完整留史。
+
+---
+
 # 2026-10-27 最新有效｜直接決策及完整續接數值環境隔離0.9.1
 
 入口decision_context_20261027/README.md、REPORT.md、CONTRACT.md及before/after。取既有完整回放兩輪的原決策參數直接decide／resume_decision，不重播市場；先凍結input／expected／source，再修前actual。預期decision是原execution保存欄位，metadata按原契約綁原input／checkpoint，明示投影、不冒另存過wrapper或用新RUN填oracle。

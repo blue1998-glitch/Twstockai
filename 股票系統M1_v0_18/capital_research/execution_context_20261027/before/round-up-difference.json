@@ -1,0 +1,20 @@
+{
+  "case": "continuation",
+  "context": "round-up",
+  "differences": [
+    {
+      "path": "/ledger/scenario_net_return",
+      "expected": "-0.00604035874439461883408071748878923766816143497758",
+      "actual": "-0.00604035874439461883408071748878923766816143497757"
+    },
+    {
+      "path": "/result_id",
+      "expected": "sha256:a6b77d09ca32baadab8354524077d4a908d528aa5082befab730f9ba9b3096c8",
+      "actual": "sha256:e77f295992ae7b4dfbf804b6855b08537f3104f7750f37d93918830f22b5d2d2"
+    }
+  ],
+  "fills_unchanged": true,
+  "daily_ledger_unchanged": true,
+  "orders_and_states_unchanged": true,
+  "interpretation": "Saved result identity and return tail differ; this does not demonstrate a difference in investor cash, holdings or executed proceeds."
+}

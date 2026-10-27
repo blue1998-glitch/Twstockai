@@ -1,0 +1,1008 @@
+[
+  {
+    "case": "initial",
+    "origin_ledger_input_id": "sha256:157af3c20da88039510200ba651afa2e23010ddc632ed2281cc0fa5bcdad45de",
+    "origin_common_account_id": "sha256:2369150777f3a0396a56e16a8b1d0531e9de4568da044f6a7a2d996e9835e8c2",
+    "initial_capital": "2230",
+    "general_reserve": "100",
+    "latest_decision_id": "sha256:7520a8976aa10516292a1e5d50e21c6bba16187ea263ca11fc66cd127712263c",
+    "latest_common_account_id": "sha256:2369150777f3a0396a56e16a8b1d0531e9de4568da044f6a7a2d996e9835e8c2",
+    "tokens": [
+      "fixture:event_id:A-event",
+      "fixture:event_id:B-event",
+      "fixture:event_id:C-event",
+      "fixture:formation_id:A-formation",
+      "fixture:formation_id:B-formation",
+      "fixture:formation_id:C-formation",
+      "fixture:volume_bar_id:A-bar",
+      "fixture:volume_bar_id:B-bar",
+      "fixture:volume_bar_id:C-bar"
+    ],
+    "fills": [
+      {
+        "code": "A",
+        "date": "2026-01-06",
+        "decision_date": "2026-01-05",
+        "fee": "1",
+        "id": "r1-A-fill-0",
+        "price": "9.990",
+        "settlement_date": "2026-01-08",
+        "shares": "20",
+        "side": "SELL",
+        "source_ids": [
+          "fixture"
+        ],
+        "tax": "1"
+      },
+      {
+        "code": "B",
+        "date": "2026-01-06",
+        "decision_date": "2026-01-05",
+        "fee": "1",
+        "id": "r1-B-fill-1",
+        "price": "20.020",
+        "settlement_date": "2026-01-08",
+        "shares": "7",
+        "side": "BUY",
+        "source_ids": [
+          "fixture"
+        ],
+        "tax": "0"
+      }
+    ],
+    "order_states": {
+      "r1-A": {
+        "active_decision_at": "2026-01-05T15:00:00+08:00",
+        "active_decision_id": "sha256:7520a8976aa10516292a1e5d50e21c6bba16187ea263ca11fc66cd127712263c",
+        "remaining": "30",
+        "requires_reassessment": false,
+        "reserved_cash": "0",
+        "status": "EXPIRED_UNFILLED"
+      },
+      "r1-B": {
+        "active_decision_at": "2026-01-05T15:00:00+08:00",
+        "active_decision_id": "sha256:7520a8976aa10516292a1e5d50e21c6bba16187ea263ca11fc66cd127712263c",
+        "remaining": "13",
+        "requires_reassessment": false,
+        "reserved_cash": "0",
+        "status": "EXPIRED_UNFILLED"
+      }
+    },
+    "events": [
+      {
+        "at": "2026-01-06T09:00:00+08:00",
+        "decision_id": "sha256:7520a8976aa10516292a1e5d50e21c6bba16187ea263ca11fc66cd127712263c",
+        "fill_id": "r1-A-fill-0",
+        "order_id": "r1-A",
+        "remaining": "30",
+        "reserved_cash_total": "402.0006",
+        "status": "PARTIAL"
+      },
+      {
+        "at": "2026-01-06T09:01:00+08:00",
+        "decision_id": "sha256:7520a8976aa10516292a1e5d50e21c6bba16187ea263ca11fc66cd127712263c",
+        "fill_id": "r1-B-fill-1",
+        "order_id": "r1-B",
+        "remaining": "13",
+        "reserved_cash_total": "261.65039",
+        "status": "PARTIAL"
+      },
+      {
+        "at": "2026-01-08T16:00:00+08:00",
+        "order_id": "r1-A",
+        "reason": "EXPLICIT_ORDER_DEADLINE",
+        "remaining": "30",
+        "status": "EXPIRED_UNFILLED"
+      },
+      {
+        "at": "2026-01-08T16:00:00+08:00",
+        "order_id": "r1-B",
+        "reason": "EXPLICIT_ORDER_DEADLINE",
+        "remaining": "13",
+        "status": "EXPIRED_UNFILLED"
+      }
+    ],
+    "risk_observations": [
+      {
+        "actual_violations": {
+          "account_stress": "0",
+          "group:new": "0",
+          "group:original": "0",
+          "group:other": "0",
+          "single:A": "0",
+          "single:B": "0",
+          "single:C": "0"
+        },
+        "at": "2026-01-06T09:00:00+08:00",
+        "joint_group_values": {
+          "new": "400.60",
+          "original": "1100",
+          "other": "50"
+        },
+        "joint_possible_fill_violations": {
+          "account_stress": "0",
+          "group:new": "0",
+          "group:original": "0",
+          "group:other": "0",
+          "single:A": "0",
+          "single:B": "0",
+          "single:C": "0"
+        },
+        "kind": "OBSERVED_ACCOUNT_AND_LIVE_ORDERS",
+        "marks": {
+          "A": {
+            "at": "2026-01-06T09:00:00+08:00",
+            "basis_id": "RAW:fixture:A",
+            "price": "10",
+            "source_id": "fixture"
+          },
+          "B": {
+            "at": "2026-01-05T14:00:00+08:00",
+            "basis_id": "RAW:fixture:B",
+            "price": "20",
+            "source_id": "fixture"
+          },
+          "C": {
+            "at": "2026-01-05T14:00:00+08:00",
+            "basis_id": "RAW:fixture:C",
+            "price": "25",
+            "source_id": "fixture"
+          }
+        },
+        "qualification": "DECLARED_SCENARIOS_AND_OBSERVED_MARKS_NOT_MAXIMUM_LOSS_GUARANTEE",
+        "rights": [
+          {
+            "code": "A",
+            "delivery_date": "2026-01-09",
+            "id": "opening-shares",
+            "shares": "10",
+            "source_ids": [
+              "fixture"
+            ],
+            "tradable_date": "2026-01-12"
+          }
+        ],
+        "stale_exposure_marks": [
+          "B",
+          "C"
+        ]
+      },
+      {
+        "actual_violations": {
+          "account_stress": "0",
+          "group:new": "0",
+          "group:original": "0",
+          "group:other": "0",
+          "single:A": "0",
+          "single:B": "0",
+          "single:C": "0"
+        },
+        "at": "2026-01-06T09:00:30+08:00",
+        "joint_group_values": {
+          "new": "400.60",
+          "original": "900",
+          "other": "50"
+        },
+        "joint_possible_fill_violations": {
+          "account_stress": "0",
+          "group:new": "0",
+          "group:original": "0",
+          "group:other": "0",
+          "single:A": "0",
+          "single:B": "0",
+          "single:C": "0"
+        },
+        "kind": "OBSERVED_ACCOUNT_AND_LIVE_ORDERS",
+        "marks": {
+          "A": {
+            "at": "2026-01-06T09:00:00+08:00",
+            "basis_id": "RAW:fixture:A",
+            "price": "10",
+            "source_id": "fixture"
+          },
+          "B": {
+            "at": "2026-01-05T14:00:00+08:00",
+            "basis_id": "RAW:fixture:B",
+            "price": "20",
+            "source_id": "fixture"
+          },
+          "C": {
+            "at": "2026-01-06T09:00:30+08:00",
+            "basis_id": "RAW:fixture:C",
+            "price": "25",
+            "source_id": "fixture"
+          }
+        },
+        "qualification": "DECLARED_SCENARIOS_AND_OBSERVED_MARKS_NOT_MAXIMUM_LOSS_GUARANTEE",
+        "rights": [
+          {
+            "code": "A",
+            "delivery_date": "2026-01-09",
+            "id": "opening-shares",
+            "shares": "10",
+            "source_ids": [
+              "fixture"
+            ],
+            "tradable_date": "2026-01-12"
+          }
+        ],
+        "stale_exposure_marks": [
+          "B"
+        ]
+      },
+      {
+        "actual_violations": {
+          "account_stress": "0",
+          "group:new": "0",
+          "group:original": "0",
+          "group:other": "0",
+          "single:A": "0",
+          "single:B": "0",
+          "single:C": "0"
+        },
+        "at": "2026-01-06T09:01:00+08:00",
+        "joint_group_values": {
+          "new": "400.60",
+          "original": "900",
+          "other": "50"
+        },
+        "joint_possible_fill_violations": {
+          "account_stress": "0",
+          "group:new": "0",
+          "group:original": "0",
+          "group:other": "0",
+          "single:A": "0",
+          "single:B": "0",
+          "single:C": "0"
+        },
+        "kind": "OBSERVED_ACCOUNT_AND_LIVE_ORDERS",
+        "marks": {
+          "A": {
+            "at": "2026-01-06T09:00:00+08:00",
+            "basis_id": "RAW:fixture:A",
+            "price": "10",
+            "source_id": "fixture"
+          },
+          "B": {
+            "at": "2026-01-06T09:01:00+08:00",
+            "basis_id": "RAW:fixture:B",
+            "price": "20",
+            "source_id": "fixture"
+          },
+          "C": {
+            "at": "2026-01-06T09:00:30+08:00",
+            "basis_id": "RAW:fixture:C",
+            "price": "25",
+            "source_id": "fixture"
+          }
+        },
+        "qualification": "DECLARED_SCENARIOS_AND_OBSERVED_MARKS_NOT_MAXIMUM_LOSS_GUARANTEE",
+        "rights": [
+          {
+            "code": "A",
+            "delivery_date": "2026-01-09",
+            "id": "opening-shares",
+            "shares": "10",
+            "source_ids": [
+              "fixture"
+            ],
+            "tradable_date": "2026-01-12"
+          }
+        ],
+        "stale_exposure_marks": []
+      },
+      {
+        "actual_violations": {
+          "account_stress": "0",
+          "group:new": "0",
+          "group:original": "0",
+          "group:other": "0",
+          "single:A": "0",
+          "single:B": "0",
+          "single:C": "0"
+        },
+        "at": "2026-01-06T09:01:00+08:00",
+        "joint_group_values": {
+          "new": "400.60",
+          "original": "900",
+          "other": "50"
+        },
+        "joint_possible_fill_violations": {
+          "account_stress": "0",
+          "group:new": "0",
+          "group:original": "0",
+          "group:other": "0",
+          "single:A": "0",
+          "single:B": "0",
+          "single:C": "0"
+        },
+        "marks": {
+          "A": {
+            "at": "2026-01-06T09:00:00+08:00",
+            "basis_id": "RAW:fixture:A",
+            "price": "10",
+            "source_id": "fixture"
+          },
+          "B": {
+            "at": "2026-01-06T09:01:00+08:00",
+            "basis_id": "RAW:fixture:B",
+            "price": "20",
+            "source_id": "fixture"
+          },
+          "C": {
+            "at": "2026-01-06T09:00:30+08:00",
+            "basis_id": "RAW:fixture:C",
+            "price": "25",
+            "source_id": "fixture"
+          }
+        },
+        "order_id": "r1-B",
+        "qualification": "DECLARED_SCENARIOS_AND_OBSERVED_MARKS_NOT_MAXIMUM_LOSS_GUARANTEE",
+        "rights": [
+          {
+            "code": "A",
+            "delivery_date": "2026-01-09",
+            "id": "opening-shares",
+            "shares": "10",
+            "source_ids": [
+              "fixture"
+            ],
+            "tradable_date": "2026-01-12"
+          }
+        ],
+        "stale_exposure_marks": []
+      }
+    ],
+    "account_curve": [
+      {
+        "date": "2026-01-05",
+        "settled_cash": "1000",
+        "available_cash_strict": "1000",
+        "cash_receivable": "80",
+        "purchase_payable": "0",
+        "shares": {
+          "A": "100",
+          "B": "0",
+          "C": "2"
+        },
+        "share_receivables": [
+          {
+            "code": "A",
+            "delivery_date": "2026-01-09",
+            "id": "opening-shares",
+            "shares": "10",
+            "source_ids": [
+              "fixture"
+            ],
+            "tradable_date": "2026-01-12"
+          }
+        ],
+        "net_accrual_equity": "2230"
+      },
+      {
+        "date": "2026-01-06",
+        "settled_cash": "1000",
+        "available_cash_strict": "858.860",
+        "cash_receivable": "277.800",
+        "purchase_payable": "141.140",
+        "shares": {
+          "A": "80",
+          "B": "7",
+          "C": "2"
+        },
+        "share_receivables": [
+          {
+            "code": "A",
+            "delivery_date": "2026-01-09",
+            "id": "opening-shares",
+            "shares": "10",
+            "source_ids": [
+              "fixture"
+            ],
+            "tradable_date": "2026-01-12"
+          }
+        ],
+        "net_accrual_equity": "2226.660"
+      },
+      {
+        "date": "2026-01-07",
+        "settled_cash": "1000",
+        "available_cash_strict": "858.860",
+        "cash_receivable": "277.800",
+        "purchase_payable": "141.140",
+        "shares": {
+          "A": "80",
+          "B": "7",
+          "C": "2"
+        },
+        "share_receivables": [
+          {
+            "code": "A",
+            "delivery_date": "2026-01-09",
+            "id": "opening-shares",
+            "shares": "10",
+            "source_ids": [
+              "fixture"
+            ],
+            "tradable_date": "2026-01-12"
+          }
+        ],
+        "net_accrual_equity": "2226.660"
+      },
+      {
+        "date": "2026-01-08",
+        "settled_cash": "1056.660",
+        "available_cash_strict": "1056.660",
+        "cash_receivable": "80",
+        "purchase_payable": "0",
+        "shares": {
+          "A": "80",
+          "B": "7",
+          "C": "2"
+        },
+        "share_receivables": [
+          {
+            "code": "A",
+            "delivery_date": "2026-01-09",
+            "id": "opening-shares",
+            "shares": "10",
+            "source_ids": [
+              "fixture"
+            ],
+            "tradable_date": "2026-01-12"
+          }
+        ],
+        "net_accrual_equity": "2226.660"
+      }
+    ]
+  },
+  {
+    "case": "continuation",
+    "origin_ledger_input_id": "sha256:157af3c20da88039510200ba651afa2e23010ddc632ed2281cc0fa5bcdad45de",
+    "origin_common_account_id": "sha256:2369150777f3a0396a56e16a8b1d0531e9de4568da044f6a7a2d996e9835e8c2",
+    "initial_capital": "2230",
+    "general_reserve": "100",
+    "latest_decision_id": "sha256:00d8d3890b7f3c433d1c1a39b1f0dde5206d5d6e773e5f476273536c4918b962",
+    "latest_common_account_id": "sha256:dbe562ef6d2d77baf5221d7e22c35038404f46a731f941a53d54358f8e2780ea",
+    "tokens": [
+      "fixture:event_id:A-event",
+      "fixture:event_id:B-event",
+      "fixture:event_id:B-next-round",
+      "fixture:event_id:C-event",
+      "fixture:formation_id:A-formation",
+      "fixture:formation_id:B-formation",
+      "fixture:formation_id:B-next-formation",
+      "fixture:formation_id:C-formation",
+      "fixture:volume_bar_id:A-bar",
+      "fixture:volume_bar_id:B-bar",
+      "fixture:volume_bar_id:B-next-bar",
+      "fixture:volume_bar_id:C-bar"
+    ],
+    "fills": [
+      {
+        "code": "A",
+        "date": "2026-01-06",
+        "decision_date": "2026-01-05",
+        "fee": "1",
+        "id": "r1-A-fill-0",
+        "price": "9.990",
+        "settlement_date": "2026-01-08",
+        "shares": "20",
+        "side": "SELL",
+        "source_ids": [
+          "fixture"
+        ],
+        "tax": "1"
+      },
+      {
+        "code": "B",
+        "date": "2026-01-06",
+        "decision_date": "2026-01-05",
+        "fee": "1",
+        "id": "r1-B-fill-1",
+        "price": "20.020",
+        "settlement_date": "2026-01-08",
+        "shares": "7",
+        "side": "BUY",
+        "source_ids": [
+          "fixture"
+        ],
+        "tax": "0"
+      },
+      {
+        "code": "B",
+        "date": "2026-01-09",
+        "decision_date": "2026-01-08",
+        "fee": "1",
+        "id": "r2-B-fill-2",
+        "price": "20.020",
+        "settlement_date": "2026-01-12",
+        "shares": "1",
+        "side": "BUY",
+        "source_ids": [
+          "fixture"
+        ],
+        "tax": "0"
+      }
+    ],
+    "order_states": {
+      "r1-A": {
+        "active_decision_at": "2026-01-05T15:00:00+08:00",
+        "active_decision_id": "sha256:7520a8976aa10516292a1e5d50e21c6bba16187ea263ca11fc66cd127712263c",
+        "remaining": "30",
+        "requires_reassessment": false,
+        "reserved_cash": "0",
+        "status": "EXPIRED_UNFILLED"
+      },
+      "r1-B": {
+        "active_decision_at": "2026-01-05T15:00:00+08:00",
+        "active_decision_id": "sha256:7520a8976aa10516292a1e5d50e21c6bba16187ea263ca11fc66cd127712263c",
+        "remaining": "13",
+        "requires_reassessment": false,
+        "reserved_cash": "0",
+        "status": "EXPIRED_UNFILLED"
+      },
+      "r2-B": {
+        "active_decision_at": "2026-01-08T17:00:00+08:00",
+        "active_decision_id": "sha256:00d8d3890b7f3c433d1c1a39b1f0dde5206d5d6e773e5f476273536c4918b962",
+        "remaining": "0",
+        "requires_reassessment": false,
+        "reserved_cash": "0",
+        "status": "FILLED"
+      }
+    },
+    "events": [
+      {
+        "at": "2026-01-09T09:01:00+08:00",
+        "decision_id": "sha256:00d8d3890b7f3c433d1c1a39b1f0dde5206d5d6e773e5f476273536c4918b962",
+        "fill_id": "r2-B-fill-2",
+        "order_id": "r2-B",
+        "remaining": "0",
+        "reserved_cash_total": "0.00000",
+        "status": "FILLED"
+      }
+    ],
+    "risk_observations": [
+      {
+        "actual_violations": {
+          "account_stress": "0",
+          "group:new": "0",
+          "group:original": "0",
+          "group:other": "0",
+          "single:A": "0",
+          "single:B": "0",
+          "single:C": "0"
+        },
+        "at": "2026-01-09T09:00:00+08:00",
+        "joint_group_values": {
+          "new": "160.03",
+          "original": "900",
+          "other": "50"
+        },
+        "joint_possible_fill_violations": {
+          "account_stress": "0",
+          "group:new": "0",
+          "group:original": "0",
+          "group:other": "0",
+          "single:A": "0",
+          "single:B": "0",
+          "single:C": "0"
+        },
+        "kind": "OBSERVED_ACCOUNT_AND_LIVE_ORDERS",
+        "marks": {
+          "A": {
+            "at": "2026-01-09T09:00:00+08:00",
+            "basis_id": "RAW:fixture:A",
+            "price": "10",
+            "source_id": "fixture"
+          },
+          "B": {
+            "at": "2026-01-08T16:00:00+08:00",
+            "basis_id": "RAW:fixture:B",
+            "price": "20",
+            "source_id": "fixture"
+          },
+          "C": {
+            "at": "2026-01-08T16:00:00+08:00",
+            "basis_id": "RAW:fixture:C",
+            "price": "25",
+            "source_id": "fixture"
+          }
+        },
+        "qualification": "DECLARED_SCENARIOS_AND_OBSERVED_MARKS_NOT_MAXIMUM_LOSS_GUARANTEE",
+        "rights": [
+          {
+            "code": "A",
+            "delivery_date": "2026-01-09",
+            "id": "opening-shares",
+            "shares": "10",
+            "source_ids": [
+              "fixture"
+            ],
+            "tradable_date": "2026-01-12"
+          }
+        ],
+        "stale_exposure_marks": [
+          "B",
+          "C"
+        ]
+      },
+      {
+        "actual_violations": {
+          "account_stress": "0",
+          "group:new": "0",
+          "group:original": "0",
+          "group:other": "0",
+          "single:A": "0",
+          "single:B": "0",
+          "single:C": "0"
+        },
+        "at": "2026-01-09T09:00:30+08:00",
+        "joint_group_values": {
+          "new": "160.03",
+          "original": "900",
+          "other": "50"
+        },
+        "joint_possible_fill_violations": {
+          "account_stress": "0",
+          "group:new": "0",
+          "group:original": "0",
+          "group:other": "0",
+          "single:A": "0",
+          "single:B": "0",
+          "single:C": "0"
+        },
+        "kind": "OBSERVED_ACCOUNT_AND_LIVE_ORDERS",
+        "marks": {
+          "A": {
+            "at": "2026-01-09T09:00:00+08:00",
+            "basis_id": "RAW:fixture:A",
+            "price": "10",
+            "source_id": "fixture"
+          },
+          "B": {
+            "at": "2026-01-08T16:00:00+08:00",
+            "basis_id": "RAW:fixture:B",
+            "price": "20",
+            "source_id": "fixture"
+          },
+          "C": {
+            "at": "2026-01-09T09:00:30+08:00",
+            "basis_id": "RAW:fixture:C",
+            "price": "25",
+            "source_id": "fixture"
+          }
+        },
+        "qualification": "DECLARED_SCENARIOS_AND_OBSERVED_MARKS_NOT_MAXIMUM_LOSS_GUARANTEE",
+        "rights": [
+          {
+            "code": "A",
+            "delivery_date": "2026-01-09",
+            "id": "opening-shares",
+            "shares": "10",
+            "source_ids": [
+              "fixture"
+            ],
+            "tradable_date": "2026-01-12"
+          }
+        ],
+        "stale_exposure_marks": [
+          "B"
+        ]
+      },
+      {
+        "actual_violations": {
+          "account_stress": "0",
+          "group:new": "0",
+          "group:original": "0",
+          "group:other": "0",
+          "single:A": "0",
+          "single:B": "0",
+          "single:C": "0"
+        },
+        "at": "2026-01-09T09:01:00+08:00",
+        "joint_group_values": {
+          "new": "160.03",
+          "original": "900",
+          "other": "50"
+        },
+        "joint_possible_fill_violations": {
+          "account_stress": "0",
+          "group:new": "0",
+          "group:original": "0",
+          "group:other": "0",
+          "single:A": "0",
+          "single:B": "0",
+          "single:C": "0"
+        },
+        "kind": "OBSERVED_ACCOUNT_AND_LIVE_ORDERS",
+        "marks": {
+          "A": {
+            "at": "2026-01-09T09:00:00+08:00",
+            "basis_id": "RAW:fixture:A",
+            "price": "10",
+            "source_id": "fixture"
+          },
+          "B": {
+            "at": "2026-01-09T09:01:00+08:00",
+            "basis_id": "RAW:fixture:B",
+            "price": "20",
+            "source_id": "fixture"
+          },
+          "C": {
+            "at": "2026-01-09T09:00:30+08:00",
+            "basis_id": "RAW:fixture:C",
+            "price": "25",
+            "source_id": "fixture"
+          }
+        },
+        "qualification": "DECLARED_SCENARIOS_AND_OBSERVED_MARKS_NOT_MAXIMUM_LOSS_GUARANTEE",
+        "rights": [
+          {
+            "code": "A",
+            "delivery_date": "2026-01-09",
+            "id": "opening-shares",
+            "shares": "10",
+            "source_ids": [
+              "fixture"
+            ],
+            "tradable_date": "2026-01-12"
+          }
+        ],
+        "stale_exposure_marks": []
+      },
+      {
+        "actual_violations": {
+          "account_stress": "0",
+          "group:new": "0",
+          "group:original": "0",
+          "group:other": "0",
+          "single:A": "0",
+          "single:B": "0",
+          "single:C": "0"
+        },
+        "at": "2026-01-09T09:01:00+08:00",
+        "joint_group_values": {
+          "new": "160.03",
+          "original": "900",
+          "other": "50"
+        },
+        "joint_possible_fill_violations": {
+          "account_stress": "0",
+          "group:new": "0",
+          "group:original": "0",
+          "group:other": "0",
+          "single:A": "0",
+          "single:B": "0",
+          "single:C": "0"
+        },
+        "marks": {
+          "A": {
+            "at": "2026-01-09T09:00:00+08:00",
+            "basis_id": "RAW:fixture:A",
+            "price": "10",
+            "source_id": "fixture"
+          },
+          "B": {
+            "at": "2026-01-09T09:01:00+08:00",
+            "basis_id": "RAW:fixture:B",
+            "price": "20",
+            "source_id": "fixture"
+          },
+          "C": {
+            "at": "2026-01-09T09:00:30+08:00",
+            "basis_id": "RAW:fixture:C",
+            "price": "25",
+            "source_id": "fixture"
+          }
+        },
+        "order_id": "r2-B",
+        "qualification": "DECLARED_SCENARIOS_AND_OBSERVED_MARKS_NOT_MAXIMUM_LOSS_GUARANTEE",
+        "rights": [
+          {
+            "code": "A",
+            "delivery_date": "2026-01-09",
+            "id": "opening-shares",
+            "shares": "10",
+            "source_ids": [
+              "fixture"
+            ],
+            "tradable_date": "2026-01-12"
+          }
+        ],
+        "stale_exposure_marks": []
+      }
+    ],
+    "account_curve": [
+      {
+        "date": "2026-01-05",
+        "settled_cash": "1000",
+        "available_cash_strict": "1000",
+        "cash_receivable": "80",
+        "purchase_payable": "0",
+        "shares": {
+          "A": "100",
+          "B": "0",
+          "C": "2"
+        },
+        "share_receivables": [
+          {
+            "code": "A",
+            "delivery_date": "2026-01-09",
+            "id": "opening-shares",
+            "shares": "10",
+            "source_ids": [
+              "fixture"
+            ],
+            "tradable_date": "2026-01-12"
+          }
+        ],
+        "net_accrual_equity": "2230"
+      },
+      {
+        "date": "2026-01-06",
+        "settled_cash": "1000",
+        "available_cash_strict": "858.860",
+        "cash_receivable": "277.800",
+        "purchase_payable": "141.140",
+        "shares": {
+          "A": "80",
+          "B": "7",
+          "C": "2"
+        },
+        "share_receivables": [
+          {
+            "code": "A",
+            "delivery_date": "2026-01-09",
+            "id": "opening-shares",
+            "shares": "10",
+            "source_ids": [
+              "fixture"
+            ],
+            "tradable_date": "2026-01-12"
+          }
+        ],
+        "net_accrual_equity": "2226.660"
+      },
+      {
+        "date": "2026-01-07",
+        "settled_cash": "1000",
+        "available_cash_strict": "858.860",
+        "cash_receivable": "277.800",
+        "purchase_payable": "141.140",
+        "shares": {
+          "A": "80",
+          "B": "7",
+          "C": "2"
+        },
+        "share_receivables": [
+          {
+            "code": "A",
+            "delivery_date": "2026-01-09",
+            "id": "opening-shares",
+            "shares": "10",
+            "source_ids": [
+              "fixture"
+            ],
+            "tradable_date": "2026-01-12"
+          }
+        ],
+        "net_accrual_equity": "2226.660"
+      },
+      {
+        "date": "2026-01-08",
+        "settled_cash": "1056.660",
+        "available_cash_strict": "1056.660",
+        "cash_receivable": "80",
+        "purchase_payable": "0",
+        "shares": {
+          "A": "80",
+          "B": "7",
+          "C": "2"
+        },
+        "share_receivables": [
+          {
+            "code": "A",
+            "delivery_date": "2026-01-09",
+            "id": "opening-shares",
+            "shares": "10",
+            "source_ids": [
+              "fixture"
+            ],
+            "tradable_date": "2026-01-12"
+          }
+        ],
+        "net_accrual_equity": "2226.660"
+      },
+      {
+        "date": "2026-01-09",
+        "settled_cash": "1056.660",
+        "available_cash_strict": "1035.640",
+        "cash_receivable": "80",
+        "purchase_payable": "21.020",
+        "shares": {
+          "A": "80",
+          "B": "8",
+          "C": "2"
+        },
+        "share_receivables": [
+          {
+            "code": "A",
+            "delivery_date": "2026-01-09",
+            "id": "opening-shares",
+            "shares": "10",
+            "source_ids": [
+              "fixture"
+            ],
+            "tradable_date": "2026-01-12"
+          }
+        ],
+        "net_accrual_equity": "2225.640"
+      },
+      {
+        "date": "2026-01-10",
+        "settled_cash": "1056.660",
+        "available_cash_strict": "1035.640",
+        "cash_receivable": "80",
+        "purchase_payable": "21.020",
+        "shares": {
+          "A": "80",
+          "B": "8",
+          "C": "2"
+        },
+        "share_receivables": [
+          {
+            "code": "A",
+            "delivery_date": "2026-01-09",
+            "id": "opening-shares",
+            "shares": "10",
+            "source_ids": [
+              "fixture"
+            ],
+            "tradable_date": "2026-01-12"
+          }
+        ],
+        "net_accrual_equity": "2225.640"
+      },
+      {
+        "date": "2026-01-11",
+        "settled_cash": "1056.660",
+        "available_cash_strict": "1035.640",
+        "cash_receivable": "80",
+        "purchase_payable": "21.020",
+        "shares": {
+          "A": "80",
+          "B": "8",
+          "C": "2"
+        },
+        "share_receivables": [
+          {
+            "code": "A",
+            "delivery_date": "2026-01-09",
+            "id": "opening-shares",
+            "shares": "10",
+            "source_ids": [
+              "fixture"
+            ],
+            "tradable_date": "2026-01-12"
+          }
+        ],
+        "net_accrual_equity": "2225.640"
+      },
+      {
+        "date": "2026-01-12",
+        "settled_cash": "1115.640",
+        "available_cash_strict": "1115.640",
+        "cash_receivable": "0",
+        "purchase_payable": "0",
+        "shares": {
+          "A": "90",
+          "B": "8",
+          "C": "2"
+        },
+        "share_receivables": [],
+        "net_accrual_equity": "2225.640"
+      }
+    ]
+  }
+]

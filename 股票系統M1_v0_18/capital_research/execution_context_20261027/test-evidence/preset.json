@@ -1,0 +1,140 @@
+[
+  {
+    "case": "initial",
+    "actual": {
+      "kind": "EXACT_EXISTING_EXECUTION",
+      "case": "initial",
+      "id": "sha256:5faa7603c3d4bbf1020ab744fe48aeb1657ec4a255a54393ebb663df9ca7a2ba"
+    },
+    "caller_before": {
+      "prec": 5,
+      "rounding": "ROUND_FLOOR",
+      "Emin": -2,
+      "Emax": 2,
+      "capitals": 0,
+      "clamp": 1,
+      "traps": {
+        "InvalidOperation": true,
+        "FloatOperation": true,
+        "DivisionByZero": true,
+        "Overflow": true,
+        "Underflow": true,
+        "Subnormal": true,
+        "Inexact": true,
+        "Rounded": true,
+        "Clamped": true
+      },
+      "flags": {
+        "InvalidOperation": false,
+        "FloatOperation": false,
+        "DivisionByZero": false,
+        "Overflow": false,
+        "Underflow": false,
+        "Subnormal": false,
+        "Inexact": true,
+        "Rounded": true,
+        "Clamped": false
+      }
+    },
+    "caller_after": {
+      "prec": 5,
+      "rounding": "ROUND_FLOOR",
+      "Emin": -2,
+      "Emax": 2,
+      "capitals": 0,
+      "clamp": 1,
+      "traps": {
+        "InvalidOperation": true,
+        "FloatOperation": true,
+        "DivisionByZero": true,
+        "Overflow": true,
+        "Underflow": true,
+        "Subnormal": true,
+        "Inexact": true,
+        "Rounded": true,
+        "Clamped": true
+      },
+      "flags": {
+        "InvalidOperation": false,
+        "FloatOperation": false,
+        "DivisionByZero": false,
+        "Overflow": false,
+        "Underflow": false,
+        "Subnormal": false,
+        "Inexact": true,
+        "Rounded": true,
+        "Clamped": false
+      }
+    },
+    "input_unchanged": true
+  },
+  {
+    "case": "continuation",
+    "actual": {
+      "kind": "EXACT_EXISTING_EXECUTION",
+      "case": "continuation",
+      "id": "sha256:2ff6a94eea86fe7221e6bdf7b6bc42e1d4f636c79a05ec912d47d753f541b5fb"
+    },
+    "caller_before": {
+      "prec": 5,
+      "rounding": "ROUND_FLOOR",
+      "Emin": -2,
+      "Emax": 2,
+      "capitals": 0,
+      "clamp": 1,
+      "traps": {
+        "InvalidOperation": true,
+        "FloatOperation": true,
+        "DivisionByZero": true,
+        "Overflow": true,
+        "Underflow": true,
+        "Subnormal": true,
+        "Inexact": true,
+        "Rounded": true,
+        "Clamped": true
+      },
+      "flags": {
+        "InvalidOperation": false,
+        "FloatOperation": false,
+        "DivisionByZero": false,
+        "Overflow": false,
+        "Underflow": false,
+        "Subnormal": false,
+        "Inexact": true,
+        "Rounded": true,
+        "Clamped": false
+      }
+    },
+    "caller_after": {
+      "prec": 5,
+      "rounding": "ROUND_FLOOR",
+      "Emin": -2,
+      "Emax": 2,
+      "capitals": 0,
+      "clamp": 1,
+      "traps": {
+        "InvalidOperation": true,
+        "FloatOperation": true,
+        "DivisionByZero": true,
+        "Overflow": true,
+        "Underflow": true,
+        "Subnormal": true,
+        "Inexact": true,
+        "Rounded": true,
+        "Clamped": true
+      },
+      "flags": {
+        "InvalidOperation": false,
+        "FloatOperation": false,
+        "DivisionByZero": false,
+        "Overflow": false,
+        "Underflow": false,
+        "Subnormal": false,
+        "Inexact": true,
+        "Rounded": true,
+        "Clamped": false
+      }
+    },
+    "input_unchanged": true
+  }
+]

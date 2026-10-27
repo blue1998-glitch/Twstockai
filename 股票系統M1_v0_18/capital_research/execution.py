@@ -4,7 +4,7 @@ Reservations and order states live here; no second share/cash posting engine.
 Every observation replays explicit accepted fills through the unchanged ledger.
 """
 from copy import deepcopy
-from decimal import Decimal, localcontext
+from decimal import Decimal, Context, InvalidOperation, DivisionByZero, Overflow, ROUND_HALF_EVEN, localcontext
 from graph_core.core import fingerprint
 from rotation_research.action_ledger import replay, qualify
 from .core import decide, resume_decision, costs, quantity, timestamp, nonnegative, validate_costs, number
@@ -16,6 +16,7 @@ from .fact_lineage import source_snapshot, history_at, asset_issues, first_issue
 from .reassessment_history import declaration_sources, reviewed_tokens, make_attempt, check_request_retry
 
 VERSION = 'capital-execution/0.8'
+IMPLEMENTATION_REVISION = '0.9.1-deterministic-decimal-context'
 
 
 def _refusal(reason):
@@ -25,8 +26,9 @@ def _refusal(reason):
 
 
 def simulate(job):
-    with localcontext() as ctx:
-        ctx.prec = 50
+    # Include reservations, fills, risk and ledger checks after the decision call.
+    with localcontext(Context(prec=50,rounding=ROUND_HALF_EVEN,Emin=-999999,Emax=999999,
+            capitals=1,clamp=0,flags=[],traps=[InvalidOperation,DivisionByZero,Overflow])):
         return _simulate(job)
 
 

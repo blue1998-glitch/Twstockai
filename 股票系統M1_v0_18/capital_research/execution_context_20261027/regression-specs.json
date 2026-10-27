@@ -1,0 +1,20 @@
+[
+  {
+    "name": "cost-mismatch",
+    "source_case": "initial",
+    "change": "Only ledger_input.terminal_costs.fee_rate=0",
+    "error": "Decision/execution/terminal cost model mismatch"
+  },
+  {
+    "name": "opening-right-drop",
+    "source_case": "initial",
+    "change": "Only ledger_input.opening.cash_claims=[]",
+    "error": "Unequal opening holdings/cash/rights"
+  },
+  {
+    "name": "wrong-latest",
+    "source_case": "continuation",
+    "change": "Only continuation.previous_decision uses the valid saved first baseline",
+    "error": "LATEST_PREDECESSOR_REQUIRED"
+  }
+]
