@@ -1,3 +1,13 @@
+# 2026-10-27 最新有效｜quantity回放數值環境隔離0.1.1
+
+入口股票系統M1_v0_18/capital_research/quantity_context_20261027/README.md、REPORT.md、CONTRACT.md及before/after。只確認原公開replay_sequence的ambient Decimal疑點，先存精確input／expected／原source再實跑；正常及ROUND_DOWN相符，ROUND_UP改場景報酬尾數／保存身分，Inexact／Overflow例外已重現，不把持股現金未變的尾數差異當投資收益影響。
+
+只固定入口local Context為原標準50位／ROUND_HALF_EVEN／完整traps、flags及指數範圍，revision0.1.1、schema0.1不變，不改下游公式或策略。五組修後完整輸出等於修前正常，input／呼叫端保持；5唯一新方法首次通過。逐輪核三筆fill、原資本2230、A10／現金80權利各到位一次、reserve100、未成交狀態／latest／全部token，舊觸發仍拒絕；不是只核終點或只看金額。objects內容定址完整留存，前後版本分開，不覆寫原件或oracle。
+
+基線ea33452d9cc15c626b87748444a4b6377e3d84a3；原唯一Codex依里程碑自審、正常保存及GitHub固定SHA讀回，無人工操作、不預設Work工程驗收。本輪14次有限入口診斷呼叫不是14測試／市場樣本；無舊suite／九路徑或真實producer。原READ／時序／未來隔離接線及所有其他engine保持，獨立候選入口ambient疑點未測，不能宣稱全面修復。Work仍決定未定觸發、期間、風險／資金與分批，待驗假說不接自動選擇／成交。1101 UNKNOWN、70／2／其中8／真實總淨合格0、正式false／主壓力null、來源／圖形／人工契約與原未支援保持；不bootstrap、新行情／來源、UI／Android／樣本外或部署交易。下方原文完整留史。
+
+---
+
 # 2026-10-27 最新有效｜全帳戶評估數值環境隔離修復0.1.1
 
 入口股票系統M1_v0_18/capital_research/decimal_context_20261027/README.md、REPORT.md、CONTRACT.md及before/after。本輪先核GitHub與全專案進度，找到既有account_metrics受呼叫端Decimal影響的具體缺陷；ROUND_DOWN造成不同結果，Inexact trap／狹窄指數造成例外，原正常及ROUND_UP控制相符。先凍結input／expected／原件指紋與source，再重現，未改oracle。

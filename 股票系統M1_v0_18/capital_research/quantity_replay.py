@@ -1,6 +1,6 @@
 """Gated, explicit-choice synthetic replay using existing quantity/ledger engines."""
 from copy import deepcopy
-from decimal import localcontext
+from decimal import Context, InvalidOperation, DivisionByZero, Overflow, ROUND_HALF_EVEN, localcontext
 
 from .core import fingerprint, quantity, timestamp
 from .quantity_candidates import generate, INPUT_V2, REQUIRED
@@ -11,6 +11,7 @@ from .quantity_choice_rules import select_candidate
 INPUT='capital-quantity-replay-input/0.1'
 SCHEMA='capital-quantity-replay/0.1'
 MAX_ROUNDS=8
+IMPLEMENTATION_REVISION='0.1.1-deterministic-decimal-context'
 FRAME_FIELDS={'id','decision_template','quantity_template','selection','orders','tape','observed_until','cancelled_order_ids'}
 
 
@@ -49,8 +50,10 @@ def _numeric_prefix(generation,selected,orders,execution,checkpoint):
 
 def replay_sequence(request):
     """No selection/ordering policy: callers explicitly supply each intent/order."""
-    with localcontext() as ctx:
-        ctx.prec=50
+    # Keep the original standard-context behavior for the complete operation,
+    # without inheriting caller rounding, traps, flags or exponent limits.
+    with localcontext(Context(prec=50,rounding=ROUND_HALF_EVEN,Emin=-999999,Emax=999999,
+            capitals=1,clamp=0,flags=[],traps=[InvalidOperation,DivisionByZero,Overflow])):
         return _replay_sequence(request)
 
 

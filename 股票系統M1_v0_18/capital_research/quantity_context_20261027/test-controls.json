@@ -1,0 +1,29 @@
+{
+  "preset": {
+    "prec": 5,
+    "rounding": "ROUND_FLOOR",
+    "Emin": -2,
+    "Emax": 2,
+    "capitals": 0,
+    "clamp": 1,
+    "traps": [
+      "InvalidOperation",
+      "DivisionByZero",
+      "Overflow",
+      "Inexact",
+      "Rounded",
+      "Underflow",
+      "Subnormal",
+      "Clamped",
+      "FloatOperation"
+    ],
+    "flags": [
+      "Inexact",
+      "Rounded"
+    ]
+  },
+  "expected_full_output_equal_normal": true,
+  "expected_old_trigger": "STOPPED_CANDIDATE_GATE",
+  "expected_reason": "NO_NEW_INDEPENDENT_TRIGGER",
+  "no_hidden_new_orders": true
+}
