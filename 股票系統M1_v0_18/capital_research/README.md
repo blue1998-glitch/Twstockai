@@ -1,3 +1,11 @@
+# 最新：0.3結果接回數量候選0.1
+
+入口[quantity_after_retry_20261027/README.md](quantity_after_retry_20261027/README.md)、[完整候選白話表](quantity_after_retry_20261027/views/new-independent-trigger.txt)、[舊觸發拒絕](quantity_after_retry_20261027/views/old-trigger.txt)、[REPORT](quantity_after_retry_20261027/REPORT.md)及[CONTRACT](quantity_after_retry_20261027/CONTRACT.md)。純API quantity_after_retry.generate_after_retry，核0.3完整原件／checkpoint／latest，沿原帳導出account及全部token，再交原數量產生器；無活單／應付、原A可識別且仍正持股才接。不換family、不建單／成交。
+
+after-final20案符合事前預期；6唯一方法通過，換綁最終證據僅補1方法，7次執行不加成7唯一。原A自審反例、首修欄位錯誤及中間source留史；最終actual與views不混舊批。新觸發走完整外層，舊觸發／UNKNOWN不能追加；原資本1430／當期估值1425.100、權利／reserve／latest／歷史token保持，全部正式false/null及來源拒算不變。工作方式沿根既有規則；下方原文完整保留。
+
+---
+
 # 最新：C原單遭拒後再次重評0.1
 
 入口[c_order_retry_20261027/README.md](c_order_retry_20261027/README.md)、[REPORT](c_order_retry_20261027/REPORT.md)、[CONTRACT](c_order_retry_20261027/CONTRACT.md)及[成功白話摘要](c_order_retry_20261027/readback/qualification-restored.txt)。純API conditional_retry.retry_rejected，先核原0.2完整閘門與保存拒評原件，再沿原帳／原單／remaining追加一次當期review；不換family、不增量，新批仍須新獨立觸發。新wrapper0.3只增READ識別，原決策／執行0.9及帳務不改。

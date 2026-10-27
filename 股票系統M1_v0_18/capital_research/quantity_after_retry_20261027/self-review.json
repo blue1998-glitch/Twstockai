@@ -1,0 +1,38 @@
+{
+  "base": "51e6db4798ab4c3099200f14632a718b49f818a6",
+  "frozen_files_checked": 58,
+  "materialized_inputs": 20,
+  "protected_sources": 13,
+  "all_old_sources_unchanged": true,
+  "historical_document_bytes_preserved": true,
+  "original_assertions_retained": true,
+  "final_actual_source_matches": true,
+  "initial18_and_final_role2_bytes_match_final20": true,
+  "unique_unittest_methods": 6,
+  "unittest_method_executions": 7,
+  "unittest_failures": 0,
+  "directed_role_check_failures": 1,
+  "diagnostic": "diagnostics/role-binding-check-failure.json",
+  "final_cases": 20,
+  "market_execution_calls": 0,
+  "old_retry_runs": 0,
+  "old_suite_runs": 0,
+  "new_orders": 0,
+  "new_fills": 0,
+  "sensitive_scan": {
+    "files": 114,
+    "findings": []
+  },
+  "limits": [
+    "no active orders",
+    "no opening payables",
+    "positive uniquely identifiable original incumbent",
+    "no source authentication",
+    "no replay resume expansion"
+  ],
+  "unmeasured": [
+    "original incumbent identity absent/non-unique dedicated valid actual",
+    "complete branching matrix"
+  ],
+  "formal_qualification_unchanged": true
+}

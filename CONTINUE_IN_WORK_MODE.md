@@ -1,3 +1,15 @@
+# 2026-10-27 最新有效｜0.3結果至數量候選受控轉接0.1
+
+入口股票系統M1_v0_18/capital_research/quantity_after_retry_20261027/README.md、REPORT.md及CONTRACT.md；純API quantity_after_retry.generate_after_retry。只接已完成0.3原件及相符完整checkpoint0.8，導出同一原帳／latest／全部token，再沿原quantity_replay._quantity_request與quantity_candidates.generate0.2；原數值／帳務／比較／READ source不改。僅無活單、無應付、可追溯唯一原A且仍有正持股才接；不能換原A、改原核准提案、偽首次或重開本金。新增B仍須新獨立觸發。
+
+原資本1430與當期估值1425.100分開；現金275.100／預留100、A60/B25/C2、12歷史token及REJECTED／ACCEPTED receipts保持。四格明示合成域加原端點，只列互斥候選，不評分、不建單／成交。GENERATED不等所有買進合格，全換仍保留等待交割重評。
+
+最終after-final綁source，20定向輸入符合原預期；6唯一方法通過，換綁最終證據只補1相依方法，7次執行不加成7唯一。自審原A兩案先凍結再修前重現；首修錯取未保存edge欄位的actual／診斷留史，原oracle不變。initial／before-role／after-role中間階段原樣保留，views只投影最終JSON，無新數值RUN。活單／應付／零A結構變體只證拒絕，不冒完整帳務重播。
+
+最低基線51e6db4798ab4c3099200f14632a718b49f818a6，固定SHA以Git／回覆為準。沿原里程碑授權原唯一Codex／原工作區／原分支自審、正常commit/push及GitHub讀回，無需人工操作、不預設轉Work。1101 UNKNOWN、70／2／其中8／真實總淨合格0、正式false／主壓力null及原未支援／來源／圖形契約保持。沒有原retry／舊suite／市場simulate／真實producer／bootstrap或部署交易。新generation接回明示選擇／回放入口尚未工程，不自行擴張；以下原文完整留史。
+
+---
+
 # 2026-10-27 最新有效｜C原單遭拒後再次重評0.1
 
 最新入口股票系統M1_v0_18/capital_research/c_order_retry_20261027/README.md、REPORT.md及CONTRACT.md；純API conditional_retry.retry_rejected。只接一份已保存review0.2的C拒評結果，沿原完整quantity／重評閘門核對原輸入與保存結果，再綁精確document／execution／checkpoint／latest account與全部token。從原帳導出當期account，原單／觸發／family／remaining不變；不是新批、沒有第二帳或新數量規則。
