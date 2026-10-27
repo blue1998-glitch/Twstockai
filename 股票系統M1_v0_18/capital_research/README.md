@@ -1,3 +1,11 @@
+# 最新：同父補選共同條件純READ並列0.1
+
+入口[使用與證據](supplement_compare_20261027/README.md)、[CONTRACT](supplement_compare_20261027/CONTRACT.md)、[一般／條件／拒絕並列](supplement_compare_20261027/actual/with-refusal/readable.txt)及[同父ID不同內容拒比](supplement_compare_20261027/actual/same-parent-id-different-content/readable.txt)。沿原補選READ完整校驗，再核整份父綁定，一致才並列。保留狀態與null，不加總互斥部位或排名；只比保存意圖，非績效。
+
+九案、6唯一方法本輪首次通過，不加歷史PASS；原件／輸入不變，fresh CLI無引擎／生成／選擇／寫檔／網路。新結構fixture不冒producer原件；全部正式false/null、來源／帳務未知與拒算保持。工作方式沿根里程碑；下方原文完整保留。
+
+---
+
 # 最新：等待結果的明示補選0.1
 
 入口[使用命令與證據](selection_supplement_20261027/README.md)、[CONTRACT](selection_supplement_20261027/CONTRACT.md)、[一般補選](selection_supplement_20261027/actual/general/readable.txt)、[條件補選](selection_supplement_20261027/actual/conditional/readable.txt)及[未列數量拒絕](selection_supplement_20261027/actual/unlisted-quantity/readable.txt)。新child綁完整原等待結果／generation／帳／截止／latest／tokens，沿舊資格／保存／來源核對；原等待結果不變，不重新生成或建單／成交。

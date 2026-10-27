@@ -1,3 +1,13 @@
+# 2026-10-27 最新有效｜同父補選共同條件純READ並列0.1
+
+入口股票系統M1_v0_18/capital_research/supplement_compare_20261027/README.md、CONTRACT.md及actual/。新supplement_compare_read沿原read_supplement逐份完整校驗，再由純compare_read_receipts重用舊差異helper核整份parent_binding；同父ID不夠，一致才COMPARABLE並列，錯配columns空。一般／條件／拒絕狀態保留，null不補零，不加總互斥股數／成本／資金、不評分或選勝者；紀錄時間逐欄顯示，非新決策。
+
+九個定向案例符合預期，6唯一方法首次通過，不加歷史；生成／選擇／來源verdict／交易回放0。相同父ID不同內容是兩份各自READ_ONLY的結構fixture，再由共同條件拒比；不是新producer或來源認證。完整原件與fixture前後SHA相同，fresh CLI禁引擎／寫檔／網路。沿舊2..8欄及64項診斷顯示上限，全差異照查、不靜默截斷。原數值／帳務／選擇／READ及舊證據source全不改。
+
+最低基線841ab8cdd9750eb4915f69c5924d7bc8ffae52a6；沿里程碑原唯一Codex自審、正常保存及GitHub固定SHA原件讀回。無人工操作、不預設Work；只比保存研究意圖，不比未來市場路徑或績效。正式false／主壓力null、1101 UNKNOWN、70／2／其中8／0、來源／圖形及原未支援保持。無舊suite／producer／bootstrap／部署交易。下方原文完整留史。
+
+---
+
 # 2026-10-27 最新有效｜等待結果的明示補選0.1
 
 入口股票系統M1_v0_18/capital_research/selection_supplement_20261027/README.md、CONTRACT.md及actual/。獨立selection_supplement SELECT／READ只接完整可讀AWAITING_EXPLICIT_SELECTION父結果，綁parent header／request／result、generation及原source_binding（帳／截止／latest／完整tokens）；以新child request／choice／result沿舊資格、Journal保存與來源核對。原等待結果留史，不補寫父choice、不複製generation或新帳；不重新生成、不把晚補選當新決策或今日交易資格。

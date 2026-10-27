@@ -1,0 +1,9 @@
+{
+  "schema": "supplement-comparison-read-fixture-recipes/0.1",
+  "kind": "SYNTHETIC_STRUCTURAL_READ_VARIANTS_NOT_NEW_PRODUCER",
+  "alternate_parent": "Copy original no-selection parent; same parent ID, change its explicit request recorded_at to 2026-10-27T13:00:00+08:00, update request/header/result fingerprints. Generation value unchanged. Rebind copied conditional child header/result to that parent; choice value unchanged.",
+  "incomplete_child": "Copy general request/choice only; no result",
+  "missing_token": "Copy general; set choice source_binding historical_reviewed_tokens empty and resign choice only; old result stays",
+  "wrong_generation": "Copy general; change header request parent_binding generation_id to wrong-generation and resign request/header only",
+  "later_record_time": "Copy conditional; change explicit child request/choice recorded_at to 2026-10-27T13:00:00+08:00; recompute choice request fingerprint against unchanged parent generation, choice/header/result IDs and source_check record/time links. No new event or producer."
+}
