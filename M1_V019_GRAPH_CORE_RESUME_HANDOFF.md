@@ -1,3 +1,15 @@
+# 2026-10-27 最新有效｜首個明示市場案例準備/資格接線0.1
+
+入口股票系統M1_v0_18/rotation_research/market_case_20261027/README.md、REPORT.md、CONTRACT.md及after-final。新增market_case純準備/當期前綴與market_case_io明示來源保存入口，不新增READ工具、帳務或策略。使用者指定1101 3/12 high25.20、4/8 close25.40、4/9 close25.10及2884 2/26 high35.50、6/22 close35.80與保存RAW相符；B首個嚴格突破在完整保存前綴核對，缺報價仍UNKNOWN。四月不引用六月，三種未來尾段不改四月prefix；source完整身分另列，歷史available_at仍null、usable signal空，不倒填擷取時間或升正式主壓力。
+
+三路共同期間/全新假想現金帳/成本交割模型/全部提供外生觀察逐欄綁定，保留同opening與完整模型fills，不六月重開本金。原案例缺參數原樣null，AWAITING_EXPLICIT_INPUT；10000/10股僅接線控制，非採用值。完整控制沿原study_input/來源0.10及所有parents qualifier仍REFUSED，正式0.4父層五事件及7/1淨分配null全保留；沒有數值dispatch。接線完成僅指準備/綁定/拒算；市場帳務實例未執行、策略未驗證，不能冒全帳連續資金回放已證。
+
+after-final 18項準備診斷、8唯一方法首次全過，不累加歷史或中間階段。錯帳戶/市場/模型、四月借六月、重設opening及重標synthetic等拒絕；自審發現quote-0雖存在但月份錯，原輸入留史、正例另存，實際拒絕有證據。fresh source qualify3、ledger/舊producer0，Context/原件保持；IO沿原Journal保存讀回。根actual及summary屬初始source，after-final才綁最終source，舊證據不覆寫。
+
+基線74e7c8e07d9d2446376305ace68b56c76f6732f3，已含Work最低3b472ae及全部後續；唯一Codex依里程碑自審、原分支正常保存/GitHub固定SHA讀回，不預設Work工程驗收。下一步Work只確認本例外部研究參數/意圖及來源證明範圍，不替使用者選比例/門檻/勝者。無私人檔案或下載上傳需求；不抓新來源/跑窗口producer/舊suite/九路徑/市場績效/部署交易。1101舊UNKNOWN、70/2/其中8/真實合格0、正式false/主壓力null及原未支援保持，Astra/救援未讀。下方原文完整留史。
+
+---
+
 # 2026-10-27 最新有效｜獨立公司行動帳RUN數值環境隔離0.1.1
 
 入口股票系統M1_v0_18/rotation_research/ledger_context_20261027/README.md、REPORT.md、CONTRACT.md及before/after。只重用已保存合成input/result：修前原現金分配窄指數Overflow、嵌入式action_cli.main RUN於既有preset Clamped（無保存record）；先凍結input/expected/source，actual分版本留史。初始證據準備路徑錯誤及前置失敗log保留，尚無數值呼叫；不是修前帳務actual。

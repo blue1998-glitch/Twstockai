@@ -1,0 +1,328 @@
+{
+  "spec": {
+    "date": "2026-06-22",
+    "field": "close",
+    "prefix_decision": "A-return",
+    "expected_same_prefix": true,
+    "source_integrity_metadata_must_differ": true,
+    "scope": "COUNTERFACTUAL_TAIL_FOR_PREFIX_UNIT_TEST_ONLY_NOT_NEW_MARKET_SOURCE_OR_LEDGER_INPUT"
+  },
+  "original": {
+    "source_integrity_metadata": {
+      "quotes": "sha256:a75ab687106a64988b2f5e4c4433a86b569ec974fac6ae3806cb890f5bc4ca7c",
+      "quote_manifest": "sha256:503b5905a7c133f24d763e03c36e9a61eaea6c9e1e6ad5eb47f235b5bd14b3bf",
+      "catalog": "sha256:a137969400c6149c17434e8991467afee71ebfc68597279f1ed6049c1b332fa3",
+      "calendar": "sha256:8b431ca5ec65e460c70b0a5fc4cbc2a7f63381052fa7e5ed85f449728d8fb113"
+    },
+    "prefix": {
+      "decision_id": "A-return",
+      "market_date": "2026-04-09",
+      "decision_at": null,
+      "data_cutoff": null,
+      "observations": [
+        {
+          "id": "A-reference",
+          "code": "1101",
+          "date": "2026-03-12",
+          "field": "high",
+          "value": "25.20",
+          "source_id": "archived-months:fd5674f6d424dadbfe0644453e4f54c9ed8943fe3149b6f681f24932176db801",
+          "basis_id": "RAW:fd5674f6d424dadbfe0644453e4f54c9ed8943fe3149b6f681f24932176db801",
+          "available_at": null,
+          "availability": "HISTORICAL_PUBLICATION_NOT_AUTHENTICATED",
+          "role": "EXPLICIT_CASE_REFERENCE_NOT_FORMAL_PRIMARY_PRESSURE"
+        },
+        {
+          "id": "A-breakout",
+          "code": "1101",
+          "date": "2026-04-08",
+          "field": "close",
+          "value": "25.40",
+          "source_id": "archived-months:fd5674f6d424dadbfe0644453e4f54c9ed8943fe3149b6f681f24932176db801",
+          "basis_id": "RAW:fd5674f6d424dadbfe0644453e4f54c9ed8943fe3149b6f681f24932176db801",
+          "available_at": null,
+          "availability": "HISTORICAL_PUBLICATION_NOT_AUTHENTICATED",
+          "role": "SAVED_PRICE_OBSERVATION_NOT_ORDER"
+        },
+        {
+          "id": "A-return",
+          "code": "1101",
+          "date": "2026-04-09",
+          "field": "close",
+          "value": "25.10",
+          "source_id": "archived-months:fd5674f6d424dadbfe0644453e4f54c9ed8943fe3149b6f681f24932176db801",
+          "basis_id": "RAW:fd5674f6d424dadbfe0644453e4f54c9ed8943fe3149b6f681f24932176db801",
+          "available_at": null,
+          "availability": "HISTORICAL_PUBLICATION_NOT_AUTHENTICATED",
+          "role": "SAVED_PRICE_OBSERVATION_NOT_ORDER"
+        },
+        {
+          "id": "B-reference",
+          "code": "2884",
+          "date": "2026-02-26",
+          "field": "high",
+          "value": "35.50",
+          "source_id": "archived-months:c27514e56b61b669362aaf8fdd7223acb7caaabcdaf0fa6ccf4a17909ba9ac60",
+          "basis_id": "RAW:c27514e56b61b669362aaf8fdd7223acb7caaabcdaf0fa6ccf4a17909ba9ac60",
+          "available_at": null,
+          "availability": "HISTORICAL_PUBLICATION_NOT_AUTHENTICATED",
+          "role": "EXPLICIT_CASE_REFERENCE_NOT_FORMAL_PRIMARY_PRESSURE"
+        }
+      ],
+      "referenced_evidence_ids": [
+        "A-reference",
+        "A-return"
+      ],
+      "usable_historical_signal_ids": [],
+      "historical_availability": "UNKNOWN_NOT_BACKFILLED_FROM_CAPTURE",
+      "reassessment_required": true,
+      "automatic_exit_or_transfer": false,
+      "prefix_id": "sha256:0733e323090cb62a5aca71a00d4e793b0612fbeb63f0e0430ab1e4c9d2185827"
+    }
+  },
+  "controls": [
+    {
+      "control": {
+        "name": "B-rise-A-fall",
+        "A_future": "10.00",
+        "B_future": "50.00"
+      },
+      "actual": {
+        "source_integrity_metadata": {
+          "quotes": "sha256:cd193f1200d3e6a71dc40f3708699afc99553a6dcc3e48c4521d91ebaa09b097",
+          "quote_manifest": "sha256:503b5905a7c133f24d763e03c36e9a61eaea6c9e1e6ad5eb47f235b5bd14b3bf",
+          "catalog": "sha256:a137969400c6149c17434e8991467afee71ebfc68597279f1ed6049c1b332fa3",
+          "calendar": "sha256:8b431ca5ec65e460c70b0a5fc4cbc2a7f63381052fa7e5ed85f449728d8fb113"
+        },
+        "prefix": {
+          "decision_id": "A-return",
+          "market_date": "2026-04-09",
+          "decision_at": null,
+          "data_cutoff": null,
+          "observations": [
+            {
+              "id": "A-reference",
+              "code": "1101",
+              "date": "2026-03-12",
+              "field": "high",
+              "value": "25.20",
+              "source_id": "archived-months:fd5674f6d424dadbfe0644453e4f54c9ed8943fe3149b6f681f24932176db801",
+              "basis_id": "RAW:fd5674f6d424dadbfe0644453e4f54c9ed8943fe3149b6f681f24932176db801",
+              "available_at": null,
+              "availability": "HISTORICAL_PUBLICATION_NOT_AUTHENTICATED",
+              "role": "EXPLICIT_CASE_REFERENCE_NOT_FORMAL_PRIMARY_PRESSURE"
+            },
+            {
+              "id": "A-breakout",
+              "code": "1101",
+              "date": "2026-04-08",
+              "field": "close",
+              "value": "25.40",
+              "source_id": "archived-months:fd5674f6d424dadbfe0644453e4f54c9ed8943fe3149b6f681f24932176db801",
+              "basis_id": "RAW:fd5674f6d424dadbfe0644453e4f54c9ed8943fe3149b6f681f24932176db801",
+              "available_at": null,
+              "availability": "HISTORICAL_PUBLICATION_NOT_AUTHENTICATED",
+              "role": "SAVED_PRICE_OBSERVATION_NOT_ORDER"
+            },
+            {
+              "id": "A-return",
+              "code": "1101",
+              "date": "2026-04-09",
+              "field": "close",
+              "value": "25.10",
+              "source_id": "archived-months:fd5674f6d424dadbfe0644453e4f54c9ed8943fe3149b6f681f24932176db801",
+              "basis_id": "RAW:fd5674f6d424dadbfe0644453e4f54c9ed8943fe3149b6f681f24932176db801",
+              "available_at": null,
+              "availability": "HISTORICAL_PUBLICATION_NOT_AUTHENTICATED",
+              "role": "SAVED_PRICE_OBSERVATION_NOT_ORDER"
+            },
+            {
+              "id": "B-reference",
+              "code": "2884",
+              "date": "2026-02-26",
+              "field": "high",
+              "value": "35.50",
+              "source_id": "archived-months:c27514e56b61b669362aaf8fdd7223acb7caaabcdaf0fa6ccf4a17909ba9ac60",
+              "basis_id": "RAW:c27514e56b61b669362aaf8fdd7223acb7caaabcdaf0fa6ccf4a17909ba9ac60",
+              "available_at": null,
+              "availability": "HISTORICAL_PUBLICATION_NOT_AUTHENTICATED",
+              "role": "EXPLICIT_CASE_REFERENCE_NOT_FORMAL_PRIMARY_PRESSURE"
+            }
+          ],
+          "referenced_evidence_ids": [
+            "A-reference",
+            "A-return"
+          ],
+          "usable_historical_signal_ids": [],
+          "historical_availability": "UNKNOWN_NOT_BACKFILLED_FROM_CAPTURE",
+          "reassessment_required": true,
+          "automatic_exit_or_transfer": false,
+          "prefix_id": "sha256:0733e323090cb62a5aca71a00d4e793b0612fbeb63f0e0430ab1e4c9d2185827"
+        }
+      },
+      "same_current_prefix": true
+    },
+    {
+      "control": {
+        "name": "A-rise-B-fall",
+        "A_future": "40.00",
+        "B_future": "10.00"
+      },
+      "actual": {
+        "source_integrity_metadata": {
+          "quotes": "sha256:ff161033fd636534361f6373af4d4f45a2456804fc9e0f36cc5e5cf4f77e078b",
+          "quote_manifest": "sha256:503b5905a7c133f24d763e03c36e9a61eaea6c9e1e6ad5eb47f235b5bd14b3bf",
+          "catalog": "sha256:a137969400c6149c17434e8991467afee71ebfc68597279f1ed6049c1b332fa3",
+          "calendar": "sha256:8b431ca5ec65e460c70b0a5fc4cbc2a7f63381052fa7e5ed85f449728d8fb113"
+        },
+        "prefix": {
+          "decision_id": "A-return",
+          "market_date": "2026-04-09",
+          "decision_at": null,
+          "data_cutoff": null,
+          "observations": [
+            {
+              "id": "A-reference",
+              "code": "1101",
+              "date": "2026-03-12",
+              "field": "high",
+              "value": "25.20",
+              "source_id": "archived-months:fd5674f6d424dadbfe0644453e4f54c9ed8943fe3149b6f681f24932176db801",
+              "basis_id": "RAW:fd5674f6d424dadbfe0644453e4f54c9ed8943fe3149b6f681f24932176db801",
+              "available_at": null,
+              "availability": "HISTORICAL_PUBLICATION_NOT_AUTHENTICATED",
+              "role": "EXPLICIT_CASE_REFERENCE_NOT_FORMAL_PRIMARY_PRESSURE"
+            },
+            {
+              "id": "A-breakout",
+              "code": "1101",
+              "date": "2026-04-08",
+              "field": "close",
+              "value": "25.40",
+              "source_id": "archived-months:fd5674f6d424dadbfe0644453e4f54c9ed8943fe3149b6f681f24932176db801",
+              "basis_id": "RAW:fd5674f6d424dadbfe0644453e4f54c9ed8943fe3149b6f681f24932176db801",
+              "available_at": null,
+              "availability": "HISTORICAL_PUBLICATION_NOT_AUTHENTICATED",
+              "role": "SAVED_PRICE_OBSERVATION_NOT_ORDER"
+            },
+            {
+              "id": "A-return",
+              "code": "1101",
+              "date": "2026-04-09",
+              "field": "close",
+              "value": "25.10",
+              "source_id": "archived-months:fd5674f6d424dadbfe0644453e4f54c9ed8943fe3149b6f681f24932176db801",
+              "basis_id": "RAW:fd5674f6d424dadbfe0644453e4f54c9ed8943fe3149b6f681f24932176db801",
+              "available_at": null,
+              "availability": "HISTORICAL_PUBLICATION_NOT_AUTHENTICATED",
+              "role": "SAVED_PRICE_OBSERVATION_NOT_ORDER"
+            },
+            {
+              "id": "B-reference",
+              "code": "2884",
+              "date": "2026-02-26",
+              "field": "high",
+              "value": "35.50",
+              "source_id": "archived-months:c27514e56b61b669362aaf8fdd7223acb7caaabcdaf0fa6ccf4a17909ba9ac60",
+              "basis_id": "RAW:c27514e56b61b669362aaf8fdd7223acb7caaabcdaf0fa6ccf4a17909ba9ac60",
+              "available_at": null,
+              "availability": "HISTORICAL_PUBLICATION_NOT_AUTHENTICATED",
+              "role": "EXPLICIT_CASE_REFERENCE_NOT_FORMAL_PRIMARY_PRESSURE"
+            }
+          ],
+          "referenced_evidence_ids": [
+            "A-reference",
+            "A-return"
+          ],
+          "usable_historical_signal_ids": [],
+          "historical_availability": "UNKNOWN_NOT_BACKFILLED_FROM_CAPTURE",
+          "reassessment_required": true,
+          "automatic_exit_or_transfer": false,
+          "prefix_id": "sha256:0733e323090cb62a5aca71a00d4e793b0612fbeb63f0e0430ab1e4c9d2185827"
+        }
+      },
+      "same_current_prefix": true
+    },
+    {
+      "control": {
+        "name": "both-fall",
+        "A_future": "10.00",
+        "B_future": "10.00"
+      },
+      "actual": {
+        "source_integrity_metadata": {
+          "quotes": "sha256:90ab8f7da2d107b78f1f8734790e432a4487b1491301273cbee5da8f40f11bee",
+          "quote_manifest": "sha256:503b5905a7c133f24d763e03c36e9a61eaea6c9e1e6ad5eb47f235b5bd14b3bf",
+          "catalog": "sha256:a137969400c6149c17434e8991467afee71ebfc68597279f1ed6049c1b332fa3",
+          "calendar": "sha256:8b431ca5ec65e460c70b0a5fc4cbc2a7f63381052fa7e5ed85f449728d8fb113"
+        },
+        "prefix": {
+          "decision_id": "A-return",
+          "market_date": "2026-04-09",
+          "decision_at": null,
+          "data_cutoff": null,
+          "observations": [
+            {
+              "id": "A-reference",
+              "code": "1101",
+              "date": "2026-03-12",
+              "field": "high",
+              "value": "25.20",
+              "source_id": "archived-months:fd5674f6d424dadbfe0644453e4f54c9ed8943fe3149b6f681f24932176db801",
+              "basis_id": "RAW:fd5674f6d424dadbfe0644453e4f54c9ed8943fe3149b6f681f24932176db801",
+              "available_at": null,
+              "availability": "HISTORICAL_PUBLICATION_NOT_AUTHENTICATED",
+              "role": "EXPLICIT_CASE_REFERENCE_NOT_FORMAL_PRIMARY_PRESSURE"
+            },
+            {
+              "id": "A-breakout",
+              "code": "1101",
+              "date": "2026-04-08",
+              "field": "close",
+              "value": "25.40",
+              "source_id": "archived-months:fd5674f6d424dadbfe0644453e4f54c9ed8943fe3149b6f681f24932176db801",
+              "basis_id": "RAW:fd5674f6d424dadbfe0644453e4f54c9ed8943fe3149b6f681f24932176db801",
+              "available_at": null,
+              "availability": "HISTORICAL_PUBLICATION_NOT_AUTHENTICATED",
+              "role": "SAVED_PRICE_OBSERVATION_NOT_ORDER"
+            },
+            {
+              "id": "A-return",
+              "code": "1101",
+              "date": "2026-04-09",
+              "field": "close",
+              "value": "25.10",
+              "source_id": "archived-months:fd5674f6d424dadbfe0644453e4f54c9ed8943fe3149b6f681f24932176db801",
+              "basis_id": "RAW:fd5674f6d424dadbfe0644453e4f54c9ed8943fe3149b6f681f24932176db801",
+              "available_at": null,
+              "availability": "HISTORICAL_PUBLICATION_NOT_AUTHENTICATED",
+              "role": "SAVED_PRICE_OBSERVATION_NOT_ORDER"
+            },
+            {
+              "id": "B-reference",
+              "code": "2884",
+              "date": "2026-02-26",
+              "field": "high",
+              "value": "35.50",
+              "source_id": "archived-months:c27514e56b61b669362aaf8fdd7223acb7caaabcdaf0fa6ccf4a17909ba9ac60",
+              "basis_id": "RAW:c27514e56b61b669362aaf8fdd7223acb7caaabcdaf0fa6ccf4a17909ba9ac60",
+              "available_at": null,
+              "availability": "HISTORICAL_PUBLICATION_NOT_AUTHENTICATED",
+              "role": "EXPLICIT_CASE_REFERENCE_NOT_FORMAL_PRIMARY_PRESSURE"
+            }
+          ],
+          "referenced_evidence_ids": [
+            "A-reference",
+            "A-return"
+          ],
+          "usable_historical_signal_ids": [],
+          "historical_availability": "UNKNOWN_NOT_BACKFILLED_FROM_CAPTURE",
+          "reassessment_required": true,
+          "automatic_exit_or_transfer": false,
+          "prefix_id": "sha256:0733e323090cb62a5aca71a00d4e793b0612fbeb63f0e0430ab1e4c9d2185827"
+        }
+      },
+      "same_current_prefix": true
+    }
+  ]
+}
