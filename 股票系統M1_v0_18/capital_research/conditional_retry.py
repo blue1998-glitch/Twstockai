@@ -1,6 +1,6 @@
 """One bounded retry of a saved rejected C review, using the original book."""
 from copy import deepcopy
-from decimal import localcontext
+from decimal import Context, InvalidOperation, DivisionByZero, Overflow, ROUND_HALF_EVEN, localcontext
 
 from .conditional_quantity_review import reassess_conditional, INPUT_C, SCHEMA_C
 from .core import fingerprint, quantity, timestamp, nonnegative, resume_decision
@@ -12,6 +12,7 @@ from .reassessment_history import declaration_sources
 
 INPUT = 'capital-conditional-retry-input/0.1'
 SCHEMA = 'capital-conditional-quantity-review/0.3'
+IMPLEMENTATION_REVISION = '0.3.1-deterministic-decimal-context'
 
 
 def _require(condition, reason):
@@ -34,8 +35,9 @@ def predecessor(saved):
 
 
 def retry_rejected(request):
-    with localcontext() as ctx:
-        ctx.prec = 50
+    # The retry's own checkpoint work remains outside its protected child calls.
+    with localcontext(Context(prec=50,rounding=ROUND_HALF_EVEN,Emin=-999999,Emax=999999,
+            capitals=1,clamp=0,flags=[],traps=[InvalidOperation,DivisionByZero,Overflow])):
         return _retry(request)
 
 

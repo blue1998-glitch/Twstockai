@@ -1,0 +1,98 @@
+{
+  "error": null,
+  "traceback": null,
+  "calls": {
+    "review": 1,
+    "retry": 0,
+    "quantity_replay": 1,
+    "simulate": 2,
+    "ledger_replay": 40,
+    "generate": 1,
+    "save": 0
+  },
+  "caller_before": {
+    "prec": 28,
+    "rounding": "ROUND_HALF_EVEN",
+    "Emin": -999999,
+    "Emax": 999999,
+    "capitals": 1,
+    "clamp": 0,
+    "traps": {
+      "InvalidOperation": true,
+      "FloatOperation": false,
+      "DivisionByZero": true,
+      "Overflow": true,
+      "Underflow": false,
+      "Subnormal": false,
+      "Inexact": false,
+      "Rounded": false,
+      "Clamped": false
+    },
+    "flags": {
+      "InvalidOperation": false,
+      "FloatOperation": false,
+      "DivisionByZero": false,
+      "Overflow": false,
+      "Underflow": false,
+      "Subnormal": false,
+      "Inexact": false,
+      "Rounded": false,
+      "Clamped": false
+    }
+  },
+  "caller_after": {
+    "prec": 28,
+    "rounding": "ROUND_HALF_EVEN",
+    "Emin": -999999,
+    "Emax": 999999,
+    "capitals": 1,
+    "clamp": 0,
+    "traps": {
+      "InvalidOperation": true,
+      "FloatOperation": false,
+      "DivisionByZero": true,
+      "Overflow": true,
+      "Underflow": false,
+      "Subnormal": false,
+      "Inexact": false,
+      "Rounded": false,
+      "Clamped": false
+    },
+    "flags": {
+      "InvalidOperation": false,
+      "FloatOperation": false,
+      "DivisionByZero": false,
+      "Overflow": false,
+      "Underflow": false,
+      "Subnormal": false,
+      "Inexact": false,
+      "Rounded": false,
+      "Clamped": false
+    }
+  },
+  "input_id": "sha256:a96d44814d7db38e42bad7f4016de70c95c319362a39f96cf18719bfa521a6e9",
+  "input_unchanged": true,
+  "caller_context_unchanged": true,
+  "source_versions": {
+    "conditional_quantity_review.py": {
+      "path": "capital_research/conditional_quantity_review.py",
+      "bytes": 10106,
+      "sha256": "88de2d5c4fe8be2e64d9794d5791af210d2e781bf87842a23879394fb58cea51"
+    },
+    "conditional_retry.py": {
+      "path": "capital_research/conditional_retry.py",
+      "bytes": 11524,
+      "sha256": "fb388e74846e512e7a412b3a0facfe8ca4aa603efb896d5733c5fb19dfd66142"
+    }
+  },
+  "actual": {
+    "kind": "EXACT_EXISTING_ACTUAL",
+    "source": {
+      "path": "capital_research/c_order_review_20261026/after-checkpoint-fix/future-revocation-known-after-partial/actual.json",
+      "bytes": 669376,
+      "sha256": "f8976e827dc63c12c151e4387bdc76fbcbcf0aabb38d730e6e890f2eb72333e8"
+    },
+    "id": "sha256:711659cb9ea377245c339f6ae7631aa243dea4eaa7f1a049dd613b85dbee7b27"
+  },
+  "equal_original": true
+}

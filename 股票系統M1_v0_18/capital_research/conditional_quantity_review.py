@@ -1,6 +1,6 @@
 """Order-bound review of a gated synthetic conditional quantity buy; no IO."""
 from copy import deepcopy
-from decimal import localcontext
+from decimal import Context, InvalidOperation, DivisionByZero, Overflow, ROUND_HALF_EVEN, localcontext
 
 from .core import fingerprint, quantity, nonnegative, timestamp, resume_decision
 from .quantity_replay import replay_sequence
@@ -11,12 +11,14 @@ INPUT='capital-conditional-quantity-review-input/0.1'
 SCHEMA='capital-conditional-quantity-review/0.1'
 INPUT_C='capital-conditional-quantity-review-input/0.2'
 SCHEMA_C='capital-conditional-quantity-review/0.2'
+IMPLEMENTATION_REVISION='0.2.1-deterministic-decimal-context'
 
 
 def reassess_conditional(request):
     """One explicit review, same local order, unchanged limits and original book."""
-    with localcontext() as context:
-        context.prec=50
+    # Include account/checkpoint work after the protected original replay returns.
+    with localcontext(Context(prec=50,rounding=ROUND_HALF_EVEN,Emin=-999999,Emax=999999,
+            capitals=1,clamp=0,flags=[],traps=[InvalidOperation,DivisionByZero,Overflow])):
         return _reassess_conditional(request)
 
 

@@ -1,3 +1,15 @@
+# 2026-10-27 最新有效｜C原單重評／一次再評外層數值隔離0.2.1／0.3.1
+
+入口股票系統M1_v0_18/capital_research/c_review_context_20261027/README.md、REPORT.md、CONTRACT.md及before／after-review-only／after。先凍結兩份source、完整input／expected／actual指紋，再定向重現。修前重評Overflow、再評Overflow／Inexact；先只修重評，中間actual證明再評仍在自己的前置／最終checkpoint失敗，才修第二入口，不把相依缺陷當兩份獨立證明。
+
+只固定兩公開完整標準50位Context，revision重評0.2.1／再評0.3.1；內部本體、core／execution／ledger、原單數量／family／觸發、帳務／資格／策略全不改，原schema0.1／0.2／0.3及decision／execution0.9／checkpoint0.8保持。after才綁最終source：十主控制與十二邊界全文相符原件，六唯一方法首次通過，不累加歷史PASS、控制／子程序或53個頂層診斷請求。
+
+原本金1430／reserve100、r1-B剩餘20、B-event／C及new_tokens=[]保持；原帳／權利／fills／latest／全部token回連，第一次REJECTED不消失或變accepted record。UNKNOWN仍不買、部分7後13按原已知撤銷取消／期限到期，錯單／前身仍停；不是新批或保證成交。fresh主例各必需內部quantity1／generate1，重評simulate2／ledger34、再評simulate3／ledger66，save0；不冒無引擎READ。caller／DefaultContext／input保持，原lifecycle READ禁引擎仍全文相符，不新增READ工具。
+
+基線c8d95bca07057b05f038ca1c906635331ba2e0df；原唯一Codex沿里程碑自審、正常保存及GitHub固定SHA讀回，無人工操作、不預設Work驗收。只八個既有保存請求，無整套C矩陣／legacy0.1 B/E／完整未來路徑驗證，不宣稱全換／獨立checkpoint／ledger／舊trend入口全面隔離。下一項僅收斂剩餘獨立入口是否影響現行明示流程，沒有實際缺口就停止同類修補，不逐helper盲測。1101 UNKNOWN、70／2／其中8／真實總淨合格0、正式false／主壓力null、來源parents／圖形／人工及原未支援保持；無真實producer、舊suite／九路徑、新行情來源、bootstrap、UI／Android／樣本外或部署交易。Astra／救援未取得未讀，策略仍由Work／使用者決定。下方原文完整留史。
+
+---
+
 # 2026-10-27 最新有效｜直接execution.simulate數值環境隔離0.9.1
 
 入口股票系統M1_v0_18/capital_research/execution_context_20261027/README.md、REPORT.md、CONTRACT.md及before/after。重用原兩輪execution_job／execution／checkpoint，先凍結input／expected／source再直接simulate，不跑quantity producer。修前兩例各Inexact／Overflow，續接ROUND_UP另改報酬尾數／result_id，成交／現金／持股不變；其餘五控制相符。stack證明例外在決策返回後的外層ledger核對。
