@@ -1,0 +1,553 @@
+{
+  "schema": "capital-c-order-retry-manifest/0.1",
+  "base": "3fb991255cdba69df97cdd677e5ea53c01122a8a",
+  "excludes_self": true,
+  "files": [
+    {
+      "path": "AGENTS.md",
+      "bytes": 310255,
+      "sha256": "3e40105bf37ac4b7a8c42a6312ea119fa405713fe5045e94fc00495e24b32eff",
+      "git_blob_sha": "ea4f7d485daba40579e0f0db47dc5c9979f42fcf"
+    },
+    {
+      "path": "CONTINUE_IN_WORK_MODE.md",
+      "bytes": 411832,
+      "sha256": "e5661a0bd93d84547cd29ee704c2b7761a078306aaf2a2293c5678beb9f3ad5e",
+      "git_blob_sha": "6e21dbd0463b5910440e85141699e7752a90fbc8"
+    },
+    {
+      "path": "股票系統M1_v0_18/capital_research/README.md",
+      "bytes": 16323,
+      "sha256": "9967bbd6d74ce4a4fe15b3ccb888dc879b7af84e56138db4ba6da41e845548fc",
+      "git_blob_sha": "5cd70434ab8d0a95a2d5b3efc97924bd30649090"
+    },
+    {
+      "path": "股票系統M1_v0_18/capital_research/c_order_retry_20261027/CONTRACT.md",
+      "bytes": 4504,
+      "sha256": "2b97ad0c91c6cce85b2b8502bf04bd250d321bdf87179095f0bf7572a3d2390e",
+      "git_blob_sha": "c070037e817fee310c0a7ad85cc7821873944827"
+    },
+    {
+      "path": "股票系統M1_v0_18/capital_research/c_order_retry_20261027/README.md",
+      "bytes": 2424,
+      "sha256": "6af7f5ac38147ce573d76582d4bc726bfb9485112e0356b429cbe46587595c39",
+      "git_blob_sha": "4da35d4952192a52220e95f394f5278013094a08"
+    },
+    {
+      "path": "股票系統M1_v0_18/capital_research/c_order_retry_20261027/REPORT.md",
+      "bytes": 7303,
+      "sha256": "9440a9c7e2d35029f9ad1fcb370a7810715cb859117a381d9213c4c8cddf1ea8",
+      "git_blob_sha": "22138c4ad1c058b04744596865cbd1987b686fa0"
+    },
+    {
+      "path": "股票系統M1_v0_18/capital_research/c_order_retry_20261027/additional/summary.json",
+      "bytes": 74,
+      "sha256": "955b84ef012eaf641139c225cee7d01e5bc8a9bd1a587cdce7d26283942ee4af",
+      "git_blob_sha": "805c4c3833680ba53f71fc091de86321554e925d"
+    },
+    {
+      "path": "股票系統M1_v0_18/capital_research/c_order_retry_20261027/additional/tampered-rejected-history/actual.json",
+      "bytes": 987,
+      "sha256": "e0e3cb37dff4f23ee11d0aea6901c8650e78bcd924913766e5bb1438f8fb7687",
+      "git_blob_sha": "43e7120118b2919845dddde37571eb439daf9416"
+    },
+    {
+      "path": "股票系統M1_v0_18/capital_research/c_order_retry_20261027/build.py",
+      "bytes": 2543,
+      "sha256": "7a279fd1808b6a46a38fdba722c4a25a36b5194af5bdd59dd37b8259ea0b1012",
+      "git_blob_sha": "7f5e3a53b107c8a4246bd31e50482d5a64fb3a20"
+    },
+    {
+      "path": "股票系統M1_v0_18/capital_research/c_order_retry_20261027/cases/accepted-order-not-retry/expected.json",
+      "bytes": 84,
+      "sha256": "d1065bfce916b31aee11e5a7e04eafd9ff75f2256158e8af308b0e3a821c574f",
+      "git_blob_sha": "541a32f9bf4314788b9bccf8cd4f25d775ba84ba"
+    },
+    {
+      "path": "股票系統M1_v0_18/capital_research/c_order_retry_20261027/cases/accepted-order-not-retry/input.json",
+      "bytes": 740417,
+      "sha256": "6439d644a1daba11468822423e8a7f37e841b2574c78080e9066638d496e39c6",
+      "git_blob_sha": "dec076224a15aeb9f5cc0483a9fcfc1ca800beaf"
+    },
+    {
+      "path": "股票系統M1_v0_18/capital_research/c_order_retry_20261027/cases/cancelled-no-revival/expected.json",
+      "bytes": 91,
+      "sha256": "23d6434eac1822133602fe020d0e9fe4b067e8b92bbdd8dd1b91c3dc203ff98c",
+      "git_blob_sha": "a69933aa7099749da0cb64e82bbbf5b0d061b7ea"
+    },
+    {
+      "path": "股票系統M1_v0_18/capital_research/c_order_retry_20261027/cases/cancelled-no-revival/input.json",
+      "bytes": 678453,
+      "sha256": "5fa2ef9c34fbc4209e6be2465a26e0bf07528525573edefc6106e0d41daa50f8",
+      "git_blob_sha": "ff086bbdaad5881c2e7778004a4f904c64c7242a"
+    },
+    {
+      "path": "股票系統M1_v0_18/capital_research/c_order_retry_20261027/cases/conflict-retained/expected.json",
+      "bytes": 207,
+      "sha256": "36152ebab9acdd01fffb332f59a04c4e9544ad9563cbdd235ddf00c5e528086d",
+      "git_blob_sha": "490724a9f6b2959465af6eb3a0f3e0c6c7a3ff2e"
+    },
+    {
+      "path": "股票系統M1_v0_18/capital_research/c_order_retry_20261027/cases/conflict-retained/input.json",
+      "bytes": 665152,
+      "sha256": "0d53f6f01b23e3d7fce068a53a80673b9f41c3f134250813f9b279541b441ca4",
+      "git_blob_sha": "8d87f8a0625754d792c1903e3e3f2233b726d6f8"
+    },
+    {
+      "path": "股票系統M1_v0_18/capital_research/c_order_retry_20261027/cases/currently-revoked/expected.json",
+      "bytes": 175,
+      "sha256": "0aa993cf7b3ca9272b430545e4ebc5ec70bae80f256295b931d557440ee89720",
+      "git_blob_sha": "3bf835a906aea38d29f1ba0ffd5359bf9f5fae83"
+    },
+    {
+      "path": "股票系統M1_v0_18/capital_research/c_order_retry_20261027/cases/currently-revoked/input.json",
+      "bytes": 665425,
+      "sha256": "2968068e24c831209232a7690df7c1f075f9a8ce532165bc636370253d7df26d",
+      "git_blob_sha": "97ce6ebfa6c734b4bdb454e714ab87291c9ff451"
+    },
+    {
+      "path": "股票系統M1_v0_18/capital_research/c_order_retry_20261027/cases/extra-quantity-forbidden/expected.json",
+      "bytes": 81,
+      "sha256": "343d583b4fa2a172fad0c88e6a1badaf3fc33d8b386f977c996542b300438c6d",
+      "git_blob_sha": "e2a81de94f1b4f7d92504aa334eaac2c18a5e42e"
+    },
+    {
+      "path": "股票系統M1_v0_18/capital_research/c_order_retry_20261027/cases/extra-quantity-forbidden/input.json",
+      "bytes": 665181,
+      "sha256": "4da125a61ed77da8f68318acd263bc8e999c13c03a5dced4369e0eb2eab61917",
+      "git_blob_sha": "3be67fde8b48d171572cfabbcb38fc360ece1c03"
+    },
+    {
+      "path": "股票系統M1_v0_18/capital_research/c_order_retry_20261027/cases/limit-before-activation-unsupported/expected.json",
+      "bytes": 109,
+      "sha256": "3c6c3234f115603a32ba92d6430a154b687f1c6b2903f6b75bf0979fdbf4995b",
+      "git_blob_sha": "c39c7432c826873493cd097a53efe3c8676ed66e"
+    },
+    {
+      "path": "股票系統M1_v0_18/capital_research/c_order_retry_20261027/cases/limit-before-activation-unsupported/input.json",
+      "bytes": 665159,
+      "sha256": "2961b1911a68ff81ed2dbd799f06c1c41275955f24048f8453f9d77427c6b198",
+      "git_blob_sha": "7df15195ddf45f715d6cf1c34b65eb0387753109"
+    },
+    {
+      "path": "股票系統M1_v0_18/capital_research/c_order_retry_20261027/cases/limit-up-no-fill/expected.json",
+      "bytes": 221,
+      "sha256": "66affc74a607940acf6c434561c0c841cb98ac8df7d231149a002244044a6fc4",
+      "git_blob_sha": "023825433782d532ff52570b33a697e1de85d39b"
+    },
+    {
+      "path": "股票系統M1_v0_18/capital_research/c_order_retry_20261027/cases/limit-up-no-fill/input.json",
+      "bytes": 665162,
+      "sha256": "fbfb649969d2207d4f2b66dc5cbc629963715fd778f5c4c4818246a4783a517f",
+      "git_blob_sha": "9281646f0fb02525020b060fe3cc805e8e596839"
+    },
+    {
+      "path": "股票系統M1_v0_18/capital_research/c_order_retry_20261027/cases/missing-tokens/expected.json",
+      "bytes": 86,
+      "sha256": "88a7f42d1bc5c1f0f3858368c7db6faa5ea1938f93a6e69028ce661782b8158f",
+      "git_blob_sha": "95ed98a660d0ed3e7747d2e8fb548cc7a413d085"
+    },
+    {
+      "path": "股票系統M1_v0_18/capital_research/c_order_retry_20261027/cases/missing-tokens/input.json",
+      "bytes": 664674,
+      "sha256": "173ccd3b6a45b3f5c499e35617e1e7227474dbf08a9aed9748ecf67871de2aa4",
+      "git_blob_sha": "1a56652a7647993ad3d423ee5f427dd8561db6e3"
+    },
+    {
+      "path": "股票系統M1_v0_18/capital_research/c_order_retry_20261027/cases/partial-seven/expected.json",
+      "bytes": 312,
+      "sha256": "29756f84ca7c1c62904e90adb30996e44262390078b606e1c4470fbdc81310e7",
+      "git_blob_sha": "edad5c7a8945a0914e4642f8b124cb2b452a8722"
+    },
+    {
+      "path": "股票系統M1_v0_18/capital_research/c_order_retry_20261027/cases/partial-seven/input.json",
+      "bytes": 665150,
+      "sha256": "874aee7b7003c40567be7af888676b237743a50d70ffc9ca00f3eb4fa5544f3f",
+      "git_blob_sha": "88c428d7eb0d6d0355d0dac0ba8c2118ed2c139d"
+    },
+    {
+      "path": "股票系統M1_v0_18/capital_research/c_order_retry_20261027/cases/qualification-restored/expected.json",
+      "bytes": 254,
+      "sha256": "fd16bca29fbf372b12301d4cf778ca7c08537dc58f6b8d87e22a8e34fd461158",
+      "git_blob_sha": "55d749109d9d0fa3ab4e5c65756cb97380ab1f96"
+    },
+    {
+      "path": "股票系統M1_v0_18/capital_research/c_order_retry_20261027/cases/qualification-restored/input.json",
+      "bytes": 665151,
+      "sha256": "bea382b8021d45c7eb22c6d45cef2d380096242d2ffbb8045311706b8749de1f",
+      "git_blob_sha": "700580669852411660dfc7f93a8f964600da263d"
+    },
+    {
+      "path": "股票系統M1_v0_18/capital_research/c_order_retry_20261027/cases/review-id-reused/expected.json",
+      "bytes": 82,
+      "sha256": "8492fb17deabfbdb0323450dfb00115ea8cdb31a66b642b72db18222d1f9261b",
+      "git_blob_sha": "9954d6aa9094f7d24e28d7124663610f196c562a"
+    },
+    {
+      "path": "股票系統M1_v0_18/capital_research/c_order_retry_20261027/cases/review-id-reused/input.json",
+      "bytes": 665158,
+      "sha256": "c12ab5f13f9b7acae9fbc54f7509c359dc62d1ba688e673111414878fda64e9c",
+      "git_blob_sha": "4fe50d7642dc617a631c8a2228deb6ff5415c12a"
+    },
+    {
+      "path": "股票系統M1_v0_18/capital_research/c_order_retry_20261027/cases/still-unknown/expected.json",
+      "bytes": 173,
+      "sha256": "06637e05f5812048886281adab5705bafd5f8faf7fe2d16ca823b7fac4893f0b",
+      "git_blob_sha": "deb1e88485e0662b9a7f763674b681f65634a02b"
+    },
+    {
+      "path": "股票系統M1_v0_18/capital_research/c_order_retry_20261027/cases/still-unknown/input.json",
+      "bytes": 665130,
+      "sha256": "523f3a6a40d4fb1e83dc75ce7e303b7c4356d3161d2e404ea51c57f25329ae68",
+      "git_blob_sha": "873097c3ca135667bc06fed1f5b176eead73930b"
+    },
+    {
+      "path": "股票系統M1_v0_18/capital_research/c_order_retry_20261027/cases/tampered-rejected-history/expected.json",
+      "bytes": 102,
+      "sha256": "1db65cd5d3ead50334dc23c53d4fac0f51624240da2d791252d328911c3b3f5c",
+      "git_blob_sha": "0158f75fd165874c383da7c4c4f0152957926f58"
+    },
+    {
+      "path": "股票系統M1_v0_18/capital_research/c_order_retry_20261027/cases/tampered-rejected-history/input.json",
+      "bytes": 568033,
+      "sha256": "fec5ff51ec5a69271ab72f1e3a30a535bdd6d8e2950ca73e36a0dd37a5a9ebe8",
+      "git_blob_sha": "37848b1160ae0329d62dbbac361dc49dc0f753e5"
+    },
+    {
+      "path": "股票系統M1_v0_18/capital_research/c_order_retry_20261027/cases/wrong-basis/expected.json",
+      "bytes": 88,
+      "sha256": "bcc4efc6c8e985dc060a88a2cd53690d4b0124927de71b954785eb61d33f3f8b",
+      "git_blob_sha": "fc315d8e5325ecb5d43065c7ed63467ecfd34181"
+    },
+    {
+      "path": "股票系統M1_v0_18/capital_research/c_order_retry_20261027/cases/wrong-basis/input.json",
+      "bytes": 665149,
+      "sha256": "1e0b58e16a8e0b55915d036f148103ea194a489cc83a66ae809f6e63f07b0eb0",
+      "git_blob_sha": "cd8ddd48ae40931b9724a24e429ff3f4ded98d3d"
+    },
+    {
+      "path": "股票系統M1_v0_18/capital_research/c_order_retry_20261027/cases/wrong-cutoff/expected.json",
+      "bytes": 84,
+      "sha256": "3dc9a5039dbda5bbae7c0803531159389a81f0ab570eea8cc8456cb823d4a136",
+      "git_blob_sha": "8d20fd0c6addec9a5e2140448bce933139a90a63"
+    },
+    {
+      "path": "股票系統M1_v0_18/capital_research/c_order_retry_20261027/cases/wrong-cutoff/input.json",
+      "bytes": 665151,
+      "sha256": "167d755203f43831dcc695cc6c1dd25c503130d4e97b672b117731ef78b7bc73",
+      "git_blob_sha": "70fa4088b5e96e674e183dcec8870fd4ef2afc91"
+    },
+    {
+      "path": "股票系統M1_v0_18/capital_research/c_order_retry_20261027/cases/wrong-order/expected.json",
+      "bytes": 82,
+      "sha256": "1c09523f1dcfa70ba3d0c5f84497399a20d7fb5f97d65476b00091b0476cb126",
+      "git_blob_sha": "bb2a00a8d2b1c005604f8ffeb420708b14fc5cbb"
+    },
+    {
+      "path": "股票系統M1_v0_18/capital_research/c_order_retry_20261027/cases/wrong-order/input.json",
+      "bytes": 665160,
+      "sha256": "4dc613d044ef1d6da15c1504a53372609c843199a6ba2a517298ca360d899f12",
+      "git_blob_sha": "cdd6f75aeb813f603eff189d6647f50bb4560779"
+    },
+    {
+      "path": "股票系統M1_v0_18/capital_research/c_order_retry_20261027/cases/wrong-predecessor/expected.json",
+      "bytes": 86,
+      "sha256": "88a7f42d1bc5c1f0f3858368c7db6faa5ea1938f93a6e69028ce661782b8158f",
+      "git_blob_sha": "95ed98a660d0ed3e7747d2e8fb548cc7a413d085"
+    },
+    {
+      "path": "股票系統M1_v0_18/capital_research/c_order_retry_20261027/cases/wrong-predecessor/input.json",
+      "bytes": 665093,
+      "sha256": "5d5e20bc6eecd901f4c32e92ada1bd7092ca029078057215490249653cbe3a74",
+      "git_blob_sha": "35543a4e7d6f5a3845807540b993b8c98ba5e81b"
+    },
+    {
+      "path": "股票系統M1_v0_18/capital_research/c_order_retry_20261027/diagnostics/lifecycle-before-schema-guard.py",
+      "bytes": 20846,
+      "sha256": "501d3578a2bfac70db6948ad8fddfbf00255f79f8d39a992d96851eb7a382f7f",
+      "git_blob_sha": "78b529ab9469d764460106ed91308c594257ca5c"
+    },
+    {
+      "path": "股票系統M1_v0_18/capital_research/c_order_retry_20261027/diagnostics/test_retry-before-schema-guard.py",
+      "bytes": 7903,
+      "sha256": "da3614734c3550c9814e693e3eb18f3a1402e3c3253e41195c1d62aacf0df8c8",
+      "git_blob_sha": "e9327579368d866e09ef9f98cff0138a6e190b53"
+    },
+    {
+      "path": "股票系統M1_v0_18/capital_research/c_order_retry_20261027/history-tamper-intake.json",
+      "bytes": 493,
+      "sha256": "dce8949221ed685bbf9e021aeb4457fb58725d3c306eade8fc5233c3a7a57e1d",
+      "git_blob_sha": "f227401823e99b7ec2be07dfd0c8985088b026ab"
+    },
+    {
+      "path": "股票系統M1_v0_18/capital_research/c_order_retry_20261027/initial/accepted-order-not-retry/actual.json",
+      "bytes": 941,
+      "sha256": "d7e1f2cf9f014083761369390e3edf452b4261d1f97491135adf81571ab59c47",
+      "git_blob_sha": "b53518a495054fb04e17d902fc7988f11d91a942"
+    },
+    {
+      "path": "股票系統M1_v0_18/capital_research/c_order_retry_20261027/initial/cancelled-no-revival/actual.json",
+      "bytes": 948,
+      "sha256": "c3c03c24b475eae10a4314bc5420874563a8a60b1a79c3d5f484c7d5e43fe191",
+      "git_blob_sha": "4fd084e7dc0de5d04d422210fd6d73f0f5a22b3b"
+    },
+    {
+      "path": "股票系統M1_v0_18/capital_research/c_order_retry_20261027/initial/conflict-retained/actual.json",
+      "bytes": 822461,
+      "sha256": "6d21ea236897f94e43b2e67aa54e8a06829c4dafc9fe72835ca3620bc1db29a2",
+      "git_blob_sha": "5c6ea69a6441fa93fce659498b73afb6a92e8e84"
+    },
+    {
+      "path": "股票系統M1_v0_18/capital_research/c_order_retry_20261027/initial/currently-revoked/actual.json",
+      "bytes": 819594,
+      "sha256": "6ff5488b5a466b7a5ec18355bc39b2cf80ffe93e94fd047676e0efc198612881",
+      "git_blob_sha": "ddcd9ee9d71808b06839f9d78de38b802c53648b"
+    },
+    {
+      "path": "股票系統M1_v0_18/capital_research/c_order_retry_20261027/initial/extra-quantity-forbidden/actual.json",
+      "bytes": 938,
+      "sha256": "09e406320237268d246ae8a45ec996599c090d72f65164668f11488533bbc9ad",
+      "git_blob_sha": "eb802da9624af54ca1decf51ab77d6e1ab69b0d2"
+    },
+    {
+      "path": "股票系統M1_v0_18/capital_research/c_order_retry_20261027/initial/limit-before-activation-unsupported/actual.json",
+      "bytes": 300320,
+      "sha256": "c753472e3bb50d8c45e290cf9b6ba06a65eb9b8bc704fc59f1f4353be9fa566b",
+      "git_blob_sha": "ee7e865b408fe812abf84037cbf4805725ec44dd"
+    },
+    {
+      "path": "股票系統M1_v0_18/capital_research/c_order_retry_20261027/initial/limit-up-no-fill/actual.json",
+      "bytes": 874956,
+      "sha256": "974183f2586577695727ec81834d92f3b3d347796abe372c35c16a19bdcbcbcd",
+      "git_blob_sha": "0f0fa779d158be90a33806f6f6ad3a891a2013a6"
+    },
+    {
+      "path": "股票系統M1_v0_18/capital_research/c_order_retry_20261027/initial/missing-tokens/actual.json",
+      "bytes": 943,
+      "sha256": "be59bdfba7bc4816bcbd6906dc7e48c928f06e83bbbeeedd94e9866e34c073fd",
+      "git_blob_sha": "6f986d241bc7102de90d9d5da30d0a639f1b0b38"
+    },
+    {
+      "path": "股票系統M1_v0_18/capital_research/c_order_retry_20261027/initial/partial-seven/actual.json",
+      "bytes": 879777,
+      "sha256": "12156b68c572f394d32d0ee97187ef2a23c10c3c04cb8b4f59b299a4a9d26733",
+      "git_blob_sha": "31d272823a829b39af2f7d873261437e75a9bccc"
+    },
+    {
+      "path": "股票系統M1_v0_18/capital_research/c_order_retry_20261027/initial/qualification-restored/actual.json",
+      "bytes": 879308,
+      "sha256": "2def5eb9e5b97d27ac1a8acf6f10cfae5ddd017d23c204293cabe45a402f7ff1",
+      "git_blob_sha": "3ef02ed3410e43c2b27a78bf3c59d1a5e2c6ab35"
+    },
+    {
+      "path": "股票系統M1_v0_18/capital_research/c_order_retry_20261027/initial/review-id-reused/actual.json",
+      "bytes": 229755,
+      "sha256": "c15e6319cd44585cda2689456c9e37726a7a0a291d3e20b9e3b44fb7147c7549",
+      "git_blob_sha": "5469f854cee7c2e55ee33007ef8f75e69f5360d1"
+    },
+    {
+      "path": "股票系統M1_v0_18/capital_research/c_order_retry_20261027/initial/still-unknown/actual.json",
+      "bytes": 806370,
+      "sha256": "671a6b4f95d23235e0cb4f815ae4f4c13f8b96dcac4230c74c299b5f776a47c5",
+      "git_blob_sha": "9bef6636483677d22e3ea5e15d0ed6b623402a46"
+    },
+    {
+      "path": "股票系統M1_v0_18/capital_research/c_order_retry_20261027/initial/summary.json",
+      "bytes": 1411,
+      "sha256": "acc37291189309acfbf4eb4fce4b249a333eefb2f3dcb04c7d572e096d6e8dc9",
+      "git_blob_sha": "59b634c461e5c8ab287878f76455f1cd0200d50c"
+    },
+    {
+      "path": "股票系統M1_v0_18/capital_research/c_order_retry_20261027/initial/wrong-basis/actual.json",
+      "bytes": 229761,
+      "sha256": "d2ec657e359c67228a92fc09539568670b32fa4a92df560b5ca983ee967c9c2c",
+      "git_blob_sha": "2dc9e42a8d49259996f2dec6b544ae2e7565ef2f"
+    },
+    {
+      "path": "股票系統M1_v0_18/capital_research/c_order_retry_20261027/initial/wrong-cutoff/actual.json",
+      "bytes": 229757,
+      "sha256": "dffacb9fb8c9394b32e7208ed3629bdfb9d0370dd8d9ccc9a311109a55dc665e",
+      "git_blob_sha": "565af33ed1ec03a6a94130b8e7f16513a16a7307"
+    },
+    {
+      "path": "股票系統M1_v0_18/capital_research/c_order_retry_20261027/initial/wrong-order/actual.json",
+      "bytes": 939,
+      "sha256": "e9f487bf16b6592bd2c37fd92069c41ac79709a2741c706b56ea974026c82469",
+      "git_blob_sha": "4f37c68b57af864cadf17ac04e6e6ff571267e73"
+    },
+    {
+      "path": "股票系統M1_v0_18/capital_research/c_order_retry_20261027/initial/wrong-predecessor/actual.json",
+      "bytes": 943,
+      "sha256": "0829a1b0cb44ac02beb17731e802a39591e0ce430b0d869fe9a1acf309305584",
+      "git_blob_sha": "83a55d02e1a90aa6cce2488cb47e714e7356d17b"
+    },
+    {
+      "path": "股票系統M1_v0_18/capital_research/c_order_retry_20261027/intake.json",
+      "bytes": 12098,
+      "sha256": "917d6550c54a319d33ffeb66595b2cda21d631c7609bda4f389d619c1223b145",
+      "git_blob_sha": "aae90bf9aca1a32f39299826aaa002a041371f71"
+    },
+    {
+      "path": "股票系統M1_v0_18/capital_research/c_order_retry_20261027/new-batch/expected.json",
+      "bytes": 155,
+      "sha256": "b34e4140f2a62f48d562c859390c3d593841358c4bff57f4360f10bca3e241e1",
+      "git_blob_sha": "ee2a294e7f5e104f1d6e7939a4f8cf3ef6e5e490"
+    },
+    {
+      "path": "股票系統M1_v0_18/capital_research/c_order_retry_20261027/new-batch/new-trigger-actual.json",
+      "bytes": 51674,
+      "sha256": "62b957963395c636215adb48f62fba933e4740c3f6ec96b3fe384ee74e105513",
+      "git_blob_sha": "4701db5a9c686951af98e3224ed981f354273375"
+    },
+    {
+      "path": "股票系統M1_v0_18/capital_research/c_order_retry_20261027/new-batch/new-trigger-input.json",
+      "bytes": 472227,
+      "sha256": "6a54fd7d76dd141561baa7d878accc4c2d249ad96401bb953239cb46e9df356e",
+      "git_blob_sha": "33f243ffa24216589d74e98604589dd35afcf172"
+    },
+    {
+      "path": "股票系統M1_v0_18/capital_research/c_order_retry_20261027/new-batch/old-trigger-actual.json",
+      "bytes": 47182,
+      "sha256": "74e1bd4d9c078463dbfe904ce5d221bebb3d12716df82ce6551a759f1c8c5621",
+      "git_blob_sha": "5b1f9bdfdde83b5ec4bd2e4fbdf4ba0434157eb8"
+    },
+    {
+      "path": "股票系統M1_v0_18/capital_research/c_order_retry_20261027/new-batch/old-trigger-input.json",
+      "bytes": 471190,
+      "sha256": "16a7043e0ee014f6d41df274560ca2c1bda9b77484c7699c051d740c1e61305d",
+      "git_blob_sha": "37b30c057540a8527d6d3f010835b2842ae01056"
+    },
+    {
+      "path": "股票系統M1_v0_18/capital_research/c_order_retry_20261027/new-batch/summary.json",
+      "bytes": 181,
+      "sha256": "4807ec8566824b1cca976c77b7774df0a31b84da5151d48dd11bdbb693cff7ce",
+      "git_blob_sha": "20a759e58af0a3290a43d018f8a3acbfe9d75bca"
+    },
+    {
+      "path": "股票系統M1_v0_18/capital_research/c_order_retry_20261027/readback/currently-revoked.json",
+      "bytes": 26571,
+      "sha256": "34e3744bac1378c28ca73483ce3a92a43eb0daafe63797eaa46f1d07f8bd0101",
+      "git_blob_sha": "47fb0ea954ccf01241a9a4b7defc078eb4b5c1a5"
+    },
+    {
+      "path": "股票系統M1_v0_18/capital_research/c_order_retry_20261027/readback/currently-revoked.txt",
+      "bytes": 1075,
+      "sha256": "7d7abbb79d5935fcbda472b76e1dcf3febe7832fdbfdb005ac12444dc7143745",
+      "git_blob_sha": "764ab908d881e2b0b4b4cabbe69f9e9f58929195"
+    },
+    {
+      "path": "股票系統M1_v0_18/capital_research/c_order_retry_20261027/readback/limit-before-activation-unsupported.json",
+      "bytes": 19125,
+      "sha256": "47804d1e95b4b4939aa891b64319d5c46af78f965f8da116321974b827ccd339",
+      "git_blob_sha": "122ccfbf6694d744e839c293492c09a4aa97f7f1"
+    },
+    {
+      "path": "股票系統M1_v0_18/capital_research/c_order_retry_20261027/readback/limit-before-activation-unsupported.txt",
+      "bytes": 928,
+      "sha256": "b41653cfb834951872c39f866ce9b9c19a6a90837240d06cf436a81613e4e49f",
+      "git_blob_sha": "4155d02bad53766769dcbdf81a4e226e3b1610eb"
+    },
+    {
+      "path": "股票系統M1_v0_18/capital_research/c_order_retry_20261027/readback/partial-seven.json",
+      "bytes": 27681,
+      "sha256": "966d8c640b55e74825cbb906cc2afcc446942bf3d6a59984039018a8b3e5bdf1",
+      "git_blob_sha": "5384e621dfd013753070743739353bb6cc2ea8f0"
+    },
+    {
+      "path": "股票系統M1_v0_18/capital_research/c_order_retry_20261027/readback/partial-seven.txt",
+      "bytes": 925,
+      "sha256": "37a6925a25bb6876888d8a5ebb6c53dc808eb3c1987b7dd35d41bc93855da433",
+      "git_blob_sha": "504ba52c25698f6a65d421badacc33d69c145608"
+    },
+    {
+      "path": "股票系統M1_v0_18/capital_research/c_order_retry_20261027/readback/qualification-restored.json",
+      "bytes": 27343,
+      "sha256": "0313bac82ca313dde9f92f5ab252cab61d957b254fe764bc28ebaddac7c6218a",
+      "git_blob_sha": "15aaed79068ba83f803f37f18b573009baddf88b"
+    },
+    {
+      "path": "股票系統M1_v0_18/capital_research/c_order_retry_20261027/readback/qualification-restored.txt",
+      "bytes": 925,
+      "sha256": "6956be43bf822b9d1a40b2141cd25ba11b10d6320c0de5e26f0c851f60659881",
+      "git_blob_sha": "b0dae8e2f22daef3e3dc8a5e83c02e3ae3f3944e"
+    },
+    {
+      "path": "股票系統M1_v0_18/capital_research/c_order_retry_20261027/readback/still-unknown.json",
+      "bytes": 27028,
+      "sha256": "dbc18e4d108b6f82b7c8cb37ab97d2fef85b302bb29dd3cec3a5db5730d72b7c",
+      "git_blob_sha": "981a1c39d82d5240f79399efb801dffd3aadb8e9"
+    },
+    {
+      "path": "股票系統M1_v0_18/capital_research/c_order_retry_20261027/readback/still-unknown.txt",
+      "bytes": 983,
+      "sha256": "d49461cc9a9da7ac177fc244a47cdb3c7ac02e04006d11b417ee73c31d61634c",
+      "git_blob_sha": "5cf474600df764285d5562aa48fd5c50d4eb4b30"
+    },
+    {
+      "path": "股票系統M1_v0_18/capital_research/c_order_retry_20261027/run-initial.log",
+      "bytes": 410,
+      "sha256": "d54f6e54b0ba868fb985bc31ee739979c18d7938693ad6035a480ef7b9bbd767",
+      "git_blob_sha": "fce4f1ccfd392c531f2b7ed912fc9c45b5d47b01"
+    },
+    {
+      "path": "股票系統M1_v0_18/capital_research/c_order_retry_20261027/self-review.json",
+      "bytes": 1440,
+      "sha256": "5b568f3560ae45780bf9e109f0baccbc80947349ca16a8a865aedf2c2549f37b",
+      "git_blob_sha": "f994e480bb08b310fb76269e1fcb684c28cc1725"
+    },
+    {
+      "path": "股票系統M1_v0_18/capital_research/c_order_retry_20261027/source-versions-before-run.json",
+      "bytes": 668,
+      "sha256": "7a519c13119abaa51c2f6a2deebbfd3bc862266e3630309d855675d1496f725b",
+      "git_blob_sha": "cedcf2e02ee944f8eab031f3857e3a5690dc224c"
+    },
+    {
+      "path": "股票系統M1_v0_18/capital_research/c_order_retry_20261027/source-versions-final.json",
+      "bytes": 951,
+      "sha256": "46baff1cd9d02cd2628e4302a51f5709af82b8b6a3e256f7f5e8ae84b6b0e9a2",
+      "git_blob_sha": "d94a495f0219df174e2e953d6ae9e7c7ecd53b98"
+    },
+    {
+      "path": "股票系統M1_v0_18/capital_research/c_order_retry_20261027/test-version-before-run.json",
+      "bytes": 144,
+      "sha256": "2e225a73d22c8804e396e27cb92b59e9dae8556169863527d2b0ef66d395b8aa",
+      "git_blob_sha": "2fab3397266bcf9f5b0b51a882992ab6ec593875"
+    },
+    {
+      "path": "股票系統M1_v0_18/capital_research/c_order_retry_20261027/test_retry.py",
+      "bytes": 8114,
+      "sha256": "4d35334bcea24c29d95f67a935ec7e754e7d1a4a33ee1cca0025e60ba43c579f",
+      "git_blob_sha": "5f527d0ce59508e89431ad2f5305fd42ea8788e1"
+    },
+    {
+      "path": "股票系統M1_v0_18/capital_research/c_order_retry_20261027/tests-READ-schema.log",
+      "bytes": 458,
+      "sha256": "69a38a0ea3f9edda6ed436f9a12be94c6e432d3cea225bd691438cd2cfd3368a",
+      "git_blob_sha": "21f75006a52019b0bbcf6e90c04658a206ad284b"
+    },
+    {
+      "path": "股票系統M1_v0_18/capital_research/c_order_retry_20261027/tests.log",
+      "bytes": 1313,
+      "sha256": "0db3077ce58717d00c4d2c718f5370140f38ceec05a8d7330a2fc0ef72b64447",
+      "git_blob_sha": "cc2059a5b9d353527c39b888899e2e837ee8b691"
+    },
+    {
+      "path": "股票系統M1_v0_18/capital_research/c_order_retry_20261027/verify.py",
+      "bytes": 3575,
+      "sha256": "8ee55da7315862221755265ff87c44055c1b6e5ab9c6f648a8166fd231f6b2ce",
+      "git_blob_sha": "4f6187c016bf864040522b01328d667e801001d8"
+    },
+    {
+      "path": "股票系統M1_v0_18/capital_research/conditional_retry.py",
+      "bytes": 11182,
+      "sha256": "5731657818dc1a01dd435687a976d3cc988a160faf32808ad0b6043c02761cfa",
+      "git_blob_sha": "c9f1cbfc60903db69e69ed3e971506b02e26d1a6"
+    },
+    {
+      "path": "股票系統M1_v0_18/capital_research/lifecycle.py",
+      "bytes": 20952,
+      "sha256": "2bfaa86c809397d0885d181010fdec3a4ed7790996d0e879f8591f25364a2296",
+      "git_blob_sha": "8ca164e53a9c498a51162c695eaed712e7e74190"
+    }
+  ]
+}

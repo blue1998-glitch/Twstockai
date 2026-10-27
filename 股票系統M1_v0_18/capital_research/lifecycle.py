@@ -114,10 +114,12 @@ def _read_scope(d,e):
 
 def _collect(saved):
     snapshots=[];approvals={}
-    if 'review' in saved and saved['review']['schema'] in ('capital-conditional-quantity-review/0.1','capital-conditional-quantity-review/0.2'):
+    if 'review' in saved and saved['review']['schema'] in ('capital-conditional-quantity-review/0.1','capital-conditional-quantity-review/0.2','capital-conditional-quantity-review/0.3'):
         r=saved['review'];kind='conditional';status=r['status']
-        _require(status in {'REPLAYED_ACCEPTED_REVIEW','REPLAYED_REJECTED_REVIEW','STOPPED_ORIGINAL_GATE',
-            'STOPPED_INPUT_ERROR','STOPPED_NOT_IMPLEMENTED','STOPPED_EXECUTION_REFUSAL'},'UNSUPPORTED_SAVED_STATUS')
+        statuses={'REPLAYED_ACCEPTED_REVIEW','REPLAYED_REJECTED_REVIEW','STOPPED_ORIGINAL_GATE',
+            'STOPPED_INPUT_ERROR','STOPPED_NOT_IMPLEMENTED','STOPPED_EXECUTION_REFUSAL'}
+        if r['schema']=='capital-conditional-quantity-review/0.3':statuses.add('REPLAYED_RETRY_NOT_ACTIVATED')
+        _require(status in statuses,'UNSUPPORTED_SAVED_STATUS')
         for key,ck in [('prefix_execution','prefix_checkpoint'),('execution','checkpoint')]:
             if r[key] is not None and r[ck] is not None:
                 snapshots.append(_snapshot(r[key],r[ck],'/review/'+key))

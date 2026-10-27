@@ -1,3 +1,11 @@
+# 最新：C原單遭拒後再次重評0.1
+
+入口[c_order_retry_20261027/README.md](c_order_retry_20261027/README.md)、[REPORT](c_order_retry_20261027/REPORT.md)、[CONTRACT](c_order_retry_20261027/CONTRACT.md)及[成功白話摘要](c_order_retry_20261027/readback/qualification-restored.txt)。純API conditional_retry.retry_rejected，先核原0.2完整閘門與保存拒評原件，再沿原帳／原單／remaining追加一次當期review；不換family、不增量，新批仍須新獨立觸發。新wrapper0.3只增READ識別，原決策／執行0.9及帳務不改。
+
+17個精確合成input／expected符合結果；7唯一方法首次全通過，補READ schema防線後只重跑2相依方法，不加成9唯一。最終數值actual在initial/與additional/，純READ文字在readback/；新限制於較晚啟動前生效明示未支援，不假裝成交。原帳／權利／reserve／latest／全部token與拒評紀錄保留。全部正式false/null、1101與來源拒算保持，工作方式沿根既有規則。下方原文完整保留。
+
+---
+
 # 最新：C原單保存結果唯讀並列範例0.1
 
 直接讀[c_order_compare_20261026/README.md](c_order_compare_20261026/README.md)、[合格／未知等待主表](c_order_compare_20261026/actual/reviewed-versus-unknown-wait/readable.txt)、[拒比範例](c_order_compare_20261026/actual/capacity-mismatch/readable.txt)、[REPORT](c_order_compare_20261026/REPORT.md)及[CONTRACT](c_order_compare_20261026/CONTRACT.md)。沿既有純READ API／CLI，原source不改、不重跑；共同起點／截止／市場一致才並列，否則columns空。

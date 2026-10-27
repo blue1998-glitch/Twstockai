@@ -1,3 +1,15 @@
+# 2026-10-27 最新有效｜C原單遭拒後再次重評0.1
+
+最新入口股票系統M1_v0_18/capital_research/c_order_retry_20261027/README.md、REPORT.md及CONTRACT.md；純API conditional_retry.retry_rejected。只接一份已保存review0.2的C拒評結果，沿原完整quantity／重評閘門核對原輸入與保存結果，再綁精確document／execution／checkpoint／latest account與全部token。從原帳導出當期account，原單／觸發／family／remaining不變；不是新批、沒有第二帳或新數量規則。
+
+新輸出review0.3，原decision／execution0.9、checkpoint0.8及scope0.1不改。只增lifecycle明示0.3／新狀態READ識別；舊schema不能借新狀態。有效舊事實可再評，原拒評receipt不消失或變latest；新批仍須新獨立trigger。原數值／帳務／比較source完全不改。較晚啟動前限制生效明示NOT_IMPLEMENTED，保留新request與停止前prefix；期初應付／外部活單等原未支援不擴張。
+
+首16案initial/與另先凍結的第17案additional/皆符合預期；initial即最終數值source結果，之後只有READ schema防線補強，不重跑16案。成功買原B20、部分7剩13到期、UNKNOWN仍不買、撤銷／衝突取消，以及前身／token／原單／基底／cutoff／篡改歷史拒絕有actual。7唯一方法首次通過，READ改動後只補2相依方法，9次執行不加成9唯一；歷史PASS不累加。新批資格對照不建單／成交、不增1/13行情。
+
+最低基線3fb991255cdba69df97cdd677e5ea53c01122a8a，固定提交以Git／回覆為準。沿既有里程碑授權原唯一Codex／原工作區／原分支自審、正常保存及GitHub讀回，無需人工操作、不預設轉Work。1101 UNKNOWN、70／2／其中8／真實總淨合格0、正式false／主壓力null及來源／圖形／人工契約保持。無舊整套／真實producer／九路徑／bootstrap或部署交易。0.3後續接回數量候選尚未工程，不自動循環或擴帳務；以下原文完整留史。
+
+---
+
 # 2026-10-26 最新有效｜C原單保存結果唯讀並列範例0.1
 
 最新入口股票系統M1_v0_18/capital_research/c_order_compare_20261026/README.md、REPORT.md及CONTRACT.md；沿原lifecycle_compare／lifecycle_compare_read，只讀已保存C review0.2／execution0.9結果，原比較／摘要／數值／帳務source不改。六個精確來源引用／expected先凍結，兩組可並列、四組因容量／交易狀態／截止／期初帳不同而拒比，columns空；不補行情、截短、重跑或評分。

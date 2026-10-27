@@ -1,0 +1,51 @@
+{
+  "base": "3fb991255cdba69df97cdd677e5ea53c01122a8a",
+  "frozen_inputs_and_originals_checked": 42,
+  "protected_sources": 13,
+  "numerical_sources_unchanged": true,
+  "only_legacy_source_change": "lifecycle explicit READ schema gate",
+  "retry_source_unchanged_since_actual": true,
+  "original_test_assertions_retained": true,
+  "history_documents_preserved": true,
+  "synthetic_cases": 17,
+  "unique_methods": 7,
+  "method_executions": 9,
+  "affected_READ_reruns": 2,
+  "failures": 0,
+  "new_batch_execution": false,
+  "new_prices_outside_original_window": 0,
+  "formal_flags_false": true,
+  "old_suite_runs": 0,
+  "real_producer_runs": 0,
+  "sensitive_scan": {
+    "files": 89,
+    "findings": []
+  },
+  "unsupported": [
+    "automatic repeated 0.3 chain",
+    "restriction effective before late activation",
+    "original unsupported accounting",
+    "source authentication",
+    "full branching matrix"
+  ],
+  "untested": [
+    "REPLAYED_RETRY_NOT_ACTIVATED dedicated actual"
+  ],
+  "scope": {
+    "tracked": [
+      "AGENTS.md",
+      "CONTINUE_IN_WORK_MODE.md",
+      "股票系統M1_v0_18/capital_research/README.md",
+      "股票系統M1_v0_18/capital_research/lifecycle.py"
+    ],
+    "new_roots": [
+      "股票系統M1_v0_18/capital_research/c_order_retry_20261027",
+      "股票系統M1_v0_18/capital_research/conditional_retry.py"
+    ]
+  },
+  "initial_state": {
+    "tracked": 0,
+    "index": 0,
+    "untracked": 0
+  }
+}
