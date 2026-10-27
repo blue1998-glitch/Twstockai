@@ -1,0 +1,244 @@
+[
+  {
+    "case": "initial",
+    "request_id": "sha256:68973916c49564c7f94388c4a86cd26e2e45a7653e5934b1cecb0903df03ad38",
+    "expected_generation_id": "sha256:281f6cfb290ef257902aaf6ea2d3e78ed8683ef71771f76a484f1a6591faf4cd",
+    "account_id": "sha256:2369150777f3a0396a56e16a8b1d0531e9de4568da044f6a7a2d996e9835e8c2",
+    "current_account_value": "2230",
+    "batch_context": {
+      "account_id": "sha256:2369150777f3a0396a56e16a8b1d0531e9de4568da044f6a7a2d996e9835e8c2",
+      "adjustment_version": "RAW:synthetic/1",
+      "available_at": "2026-01-05T15:00:00+08:00",
+      "basis_id": "RAW:fixture:B",
+      "code": "B",
+      "origin": "DECLARED_SYNTHETIC_OPENING",
+      "parameter_source": "EXPLICIT_SYNTHETIC_RESEARCH_EPISODE_NOT_AUTHENTICATED_HISTORY",
+      "phase": "FIRST_ENTRY",
+      "source_id": "fixture",
+      "version": "synthetic-batch-phase/0.1"
+    },
+    "original_account": {
+      "as_of": "2026-01-05T14:00:00+08:00",
+      "available_at": "2026-01-05T14:00:00+08:00",
+      "cash_claims": [
+        {
+          "amount": "80",
+          "id": "opening-cash",
+          "pay_date": "2026-01-12",
+          "source_ids": [
+            "fixture"
+          ]
+        }
+      ],
+      "holdings": {
+        "A": {
+          "sellable": "100",
+          "shares": "100"
+        },
+        "B": {
+          "sellable": "0",
+          "shares": "0"
+        },
+        "C": {
+          "sellable": "2",
+          "shares": "2"
+        }
+      },
+      "payables": [],
+      "pending_orders": [],
+      "reserved_cash": "100",
+      "settled_cash": "1000",
+      "share_claims": [
+        {
+          "code": "A",
+          "delivery_date": "2026-01-09",
+          "id": "opening-shares",
+          "shares": "10",
+          "source_ids": [
+            "fixture"
+          ],
+          "tradable_date": "2026-01-12"
+        }
+      ]
+    },
+    "baseline_reserved_cash": "100",
+    "baseline_tokens": [
+      "fixture:event_id:A-event",
+      "fixture:event_id:B-event",
+      "fixture:event_id:C-event",
+      "fixture:formation_id:A-formation",
+      "fixture:formation_id:B-formation",
+      "fixture:formation_id:C-formation",
+      "fixture:volume_bar_id:A-bar",
+      "fixture:volume_bar_id:B-bar",
+      "fixture:volume_bar_id:C-bar"
+    ],
+    "baseline_continuity": null,
+    "candidates": [
+      {
+        "id": "A-zero",
+        "kinds": [
+          "HOLD"
+        ],
+        "classification": "CURRENTLY_FEASIBLE",
+        "reasons": [],
+        "additional_B": "0"
+      },
+      {
+        "id": "quantity:sha256:56f76c7d40f2c39d22607b6ed2cd15253513daf95d2f53f487bbf7380cd119a0",
+        "kinds": [
+          "PARTIAL_TRANSFER"
+        ],
+        "classification": "CURRENTLY_FEASIBLE",
+        "reasons": [],
+        "additional_B": "20"
+      },
+      {
+        "id": "quantity:sha256:ce4ecc52c54773f7d4691d00c737be32e63017011dc2204a74bad533e675cb6e",
+        "kinds": [
+          "EXIT_A_KEEP_CASH"
+        ],
+        "classification": "CURRENTLY_FEASIBLE",
+        "reasons": [],
+        "additional_B": "0"
+      },
+      {
+        "id": "quantity:sha256:fd4b9ce15dfb644c21686fce08f6807ce08774899f818e692005a68981719448",
+        "kinds": [
+          "FULL_TRANSFER"
+        ],
+        "classification": "WAIT_SETTLEMENT_REASSESSMENT",
+        "reasons": [],
+        "additional_B": "94"
+      }
+    ]
+  },
+  {
+    "case": "old-trigger",
+    "request_id": "sha256:3954e62dae21fbbdbf988b6e0fa6aef98b9c5ef6704106e644a6ccbaba287428",
+    "expected_generation_id": "sha256:c5779992b16c55ee49caf0b5493358a7a698cff194e032d4cf880cac6c64439e",
+    "account_id": "sha256:dbe562ef6d2d77baf5221d7e22c35038404f46a731f941a53d54358f8e2780ea",
+    "current_account_value": "2226.660",
+    "batch_context": {
+      "account_id": "sha256:dbe562ef6d2d77baf5221d7e22c35038404f46a731f941a53d54358f8e2780ea",
+      "adjustment_version": "RAW:synthetic/1",
+      "available_at": "2026-01-08T17:00:00+08:00",
+      "basis_id": "RAW:fixture:B",
+      "code": "B",
+      "origin": "CHECKPOINT_EPISODE",
+      "parameter_source": "EXPLICIT_SYNTHETIC_RESEARCH_EPISODE_NOT_AUTHENTICATED_HISTORY",
+      "phase": "ADDITIONAL_BATCH",
+      "source_id": "fixture",
+      "version": "synthetic-batch-phase/0.1"
+    },
+    "original_account": {
+      "as_of": "2026-01-08T16:00:00+08:00",
+      "available_at": "2026-01-08T17:00:00+08:00",
+      "cash_claims": [
+        {
+          "amount": "80",
+          "id": "opening-cash",
+          "kind": "OPENING_RECEIVABLE",
+          "pay_date": "2026-01-12",
+          "source_ids": [
+            "fixture"
+          ]
+        }
+      ],
+      "holdings": {
+        "A": {
+          "sellable": "80",
+          "shares": "80"
+        },
+        "B": {
+          "sellable": "7",
+          "shares": "7"
+        },
+        "C": {
+          "sellable": "2",
+          "shares": "2"
+        }
+      },
+      "payables": [],
+      "pending_orders": [],
+      "reserved_cash": "100",
+      "settled_cash": "1056.660",
+      "share_claims": [
+        {
+          "code": "A",
+          "delivery_date": "2026-01-09",
+          "id": "opening-shares",
+          "shares": "10",
+          "source_ids": [
+            "fixture"
+          ],
+          "tradable_date": "2026-01-12"
+        }
+      ]
+    },
+    "baseline_reserved_cash": "100",
+    "baseline_tokens": [
+      "fixture:event_id:A-event",
+      "fixture:event_id:B-event",
+      "fixture:event_id:C-event",
+      "fixture:formation_id:A-formation",
+      "fixture:formation_id:B-formation",
+      "fixture:formation_id:C-formation",
+      "fixture:volume_bar_id:A-bar",
+      "fixture:volume_bar_id:B-bar",
+      "fixture:volume_bar_id:C-bar"
+    ],
+    "baseline_continuity": {
+      "cancellation_effective_at": null,
+      "cancelled_order_ids": [],
+      "checkpoint_id": "sha256:95c223e0d446bb69f270854e82a6492e7f4194bcaba69ad4a921513ba4bc9093",
+      "external_flow": "0",
+      "latest_predecessor_id": "sha256:42f0bf308728ee43f727b520d29dea4ff78ae4e064297995f71c2dca0451fc26",
+      "origin_initial_capital": "2230",
+      "qualification": "VERIFIED_SYNTHETIC_LEDGER_PREFIX_NOT_INVESTOR_AUTHORITY",
+      "state_id": "sha256:f87ca0441e3cb577e6cb8c353f974c43733f2d1ed98e714281240788da2147ad"
+    },
+    "candidates": [
+      {
+        "id": "A-zero",
+        "kinds": [
+          "HOLD"
+        ],
+        "classification": "CURRENTLY_FEASIBLE",
+        "reasons": [],
+        "additional_B": "0"
+      },
+      {
+        "id": "quantity:sha256:b8b6a21840091a7514b9058f60b3afa140757f492290e1739eedaade9731b519",
+        "kinds": [
+          "PARTIAL_TRANSFER"
+        ],
+        "classification": "REJECTED",
+        "reasons": [
+          "NO_NEW_INDEPENDENT_TRIGGER"
+        ],
+        "additional_B": "1"
+      },
+      {
+        "id": "quantity:sha256:c9355e8472a3af53ff1f2b905fb8a4d7b6392941b1caf727eaac041d1808f801",
+        "kinds": [
+          "EXIT_A_KEEP_CASH"
+        ],
+        "classification": "CURRENTLY_FEASIBLE",
+        "reasons": [],
+        "additional_B": "0"
+      },
+      {
+        "id": "quantity:sha256:fd4b9ce15dfb644c21686fce08f6807ce08774899f818e692005a68981719448",
+        "kinds": [
+          "FULL_TRANSFER"
+        ],
+        "classification": "REJECTED",
+        "reasons": [
+          "NO_NEW_INDEPENDENT_TRIGGER"
+        ],
+        "additional_B": "87"
+      }
+    ]
+  }
+]

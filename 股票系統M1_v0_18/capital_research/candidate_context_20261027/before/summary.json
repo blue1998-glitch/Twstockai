@@ -1,0 +1,88 @@
+[
+  {
+    "case": "initial",
+    "context": "normal",
+    "equal_original": true,
+    "error": null,
+    "input_unchanged": true,
+    "caller_context_unchanged": true
+  },
+  {
+    "case": "initial",
+    "context": "round-up",
+    "equal_original": true,
+    "error": null,
+    "input_unchanged": true,
+    "caller_context_unchanged": true
+  },
+  {
+    "case": "initial",
+    "context": "round-down",
+    "equal_original": true,
+    "error": null,
+    "input_unchanged": true,
+    "caller_context_unchanged": true
+  },
+  {
+    "case": "initial",
+    "context": "inexact-trap",
+    "equal_original": true,
+    "error": null,
+    "input_unchanged": true,
+    "caller_context_unchanged": true
+  },
+  {
+    "case": "initial",
+    "context": "narrow-exponents",
+    "equal_original": false,
+    "error": {
+      "type": "Overflow",
+      "detail": "[<class 'decimal.Overflow'>]"
+    },
+    "input_unchanged": true,
+    "caller_context_unchanged": true
+  },
+  {
+    "case": "old-trigger",
+    "context": "normal",
+    "equal_original": true,
+    "error": null,
+    "input_unchanged": true,
+    "caller_context_unchanged": true
+  },
+  {
+    "case": "old-trigger",
+    "context": "round-up",
+    "equal_original": true,
+    "error": null,
+    "input_unchanged": true,
+    "caller_context_unchanged": true
+  },
+  {
+    "case": "old-trigger",
+    "context": "round-down",
+    "equal_original": true,
+    "error": null,
+    "input_unchanged": true,
+    "caller_context_unchanged": true
+  },
+  {
+    "case": "old-trigger",
+    "context": "inexact-trap",
+    "equal_original": true,
+    "error": null,
+    "input_unchanged": true,
+    "caller_context_unchanged": true
+  },
+  {
+    "case": "old-trigger",
+    "context": "narrow-exponents",
+    "equal_original": false,
+    "error": {
+      "type": "Overflow",
+      "detail": "[<class 'decimal.Overflow'>]"
+    },
+    "input_unchanged": true,
+    "caller_context_unchanged": true
+  }
+]

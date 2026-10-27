@@ -1,6 +1,6 @@
 """Bounded synthetic A/B/cash quantity intents; no IO, orders or optimizer."""
 from copy import deepcopy
-from decimal import localcontext
+from decimal import Context, InvalidOperation, DivisionByZero, Overflow, ROUND_HALF_EVEN, localcontext
 
 from . import allocation
 from .core import decide, resume_decision, quantity, nonnegative, timestamp, fingerprint, evidence_tokens
@@ -10,6 +10,7 @@ INPUT='capital-quantity-candidates-input/0.1'
 INPUT_V2='capital-quantity-candidates-input/0.2'
 SCHEMA_V2='capital-quantity-candidates/0.2'
 MAX_GRID_COMBINATIONS=1024
+IMPLEMENTATION_REVISION='0.2.1-deterministic-decimal-context'
 REQUIRED={'schema','synthetic','decision_input','incumbent','destination','bounds',
           'max_grid_combinations','trigger_ids','continuation','policy'}
 
@@ -74,8 +75,10 @@ def _classification(evaluation):
 
 def generate(request):
     """Complete the explicit bounded domain; keep alternatives mutually exclusive."""
-    with localcontext() as ctx:
-        ctx.prec=50
+    # Direct callers receive the same numerical environment as the standard
+    # replay path, without inheriting ambient traps, rounding or exponent limits.
+    with localcontext(Context(prec=50,rounding=ROUND_HALF_EVEN,Emin=-999999,Emax=999999,
+            capitals=1,clamp=0,flags=[],traps=[InvalidOperation,DivisionByZero,Overflow])):
         return _generate(request)
 
 

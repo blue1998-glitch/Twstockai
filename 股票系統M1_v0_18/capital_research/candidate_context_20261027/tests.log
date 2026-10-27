@@ -1,0 +1,22 @@
+test_fresh_process_DefaultContext_has_no_effect_or_side_effects (capital_research.candidate_context_20261027.test_context.CandidateContextTests.test_fresh_process_DefaultContext_has_no_effect_or_side_effects) ... ok
+test_frozen_before_after_results_separate_actual_failures_from_matching_controls (capital_research.candidate_context_20261027.test_context.CandidateContextTests.test_frozen_before_after_results_separate_actual_failures_from_matching_controls) ... ok
+test_initial_and_checkpoint_candidates_preserve_accounts_rights_tokens_WAIT_and_rejections (capital_research.candidate_context_20261027.test_context.CandidateContextTests.test_initial_and_checkpoint_candidates_preserve_accounts_rights_tokens_WAIT_and_rejections) ... FAIL
+test_preset_flags_traps_and_input_unchanged_without_file_IO (capital_research.candidate_context_20261027.test_context.CandidateContextTests.test_preset_flags_traps_and_input_unchanged_without_file_IO) ... ok
+test_search_limit_still_refuses_and_never_promotes_candidates (capital_research.candidate_context_20261027.test_context.CandidateContextTests.test_search_limit_still_refuses_and_never_promotes_candidates) ... ok
+
+======================================================================
+FAIL: test_initial_and_checkpoint_candidates_preserve_accounts_rights_tokens_WAIT_and_rejections (capital_research.candidate_context_20261027.test_context.CandidateContextTests.test_initial_and_checkpoint_candidates_preserve_accounts_rights_tokens_WAIT_and_rejections)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/workspace/Twstockai/股票系統M1_v0_18/capital_research/candidate_context_20261027/test_context.py", line 71, in test_initial_and_checkpoint_candidates_preserve_accounts_rights_tokens_WAIT_and_rejections
+    self.assertEqual(result['initial_capital'],'2230');self.assertEqual(baseline['reserved_cash'],'100')
+    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+AssertionError: '2226.660' != '2230'
+- 2226.660
++ 2230
+
+
+----------------------------------------------------------------------
+Ran 5 tests in 1.008s
+
+FAILED (failures=1)

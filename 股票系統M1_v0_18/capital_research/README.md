@@ -1,3 +1,15 @@
+# 2026-10-27 最新有效｜獨立數量候選入口數值環境隔離0.2.1
+
+入口candidate_context_20261027/README.md、REPORT.md、CONTRACT.md及before/after。重用原保存initial與old-trigger的精確請求／generation及五組控制；修前狹窄指數兩案Overflow，其餘八組相符，不冒稱捨入或Inexact缺陷。本次只固定quantity_candidates.generate內部完整標準50位Context，revision0.2.1、原0.1／0.2 schema保持，不改公式、資格、帳務或策略。
+
+十組修後全文／指紋均等於原件，呼叫端／input保持；WAIT仍待交割重評、舊觸發增加B仍拒絕。原帳／現金及股份權利／reserve100／latest／全部tokens沿原checkpoint保持，當期估值2226.660與原本金2230分開。五唯一方法最終通過，共六次執行：首次一個新測試混用估值／本金，原失敗及source留史，只修斷言並補一方法；oracle／production不因該斷言改動，不累加舊PASS或前後控制。
+
+基線9efc3f34ae46df21411ef738a57d61c2fca7a540；沿里程碑原唯一Codex自審、正常commit/push及GitHub固定SHA讀回，無人工操作、不預設Work工程驗收。沒有新委託／成交／回放或行情，舊READ不重算；continuation沿原ledger核前綴，不宣稱所有ledger呼叫0。只驗本兩份schema0.2，不宣稱所有入口全面隔離；下一項可一次唯讀盤點其餘公開數值入口與既有證據，只列實際缺口，不無限逐helper擴張。
+
+1101 UNKNOWN、70／2／其中8／真實總淨合格0、正式false／主壓力null、全部來源parents／圖形／人工及原未支援保持。無bootstrap、舊suite／九路徑／真實producer、UI／Android／樣本外、部署交易。Work與使用者仍決定未定策略，本輪未升觸發、期間、比例或風險門檻。Astra／救援原件未取得未讀。下方原文完整留史。
+
+---
+
 # 2026-10-27 最新有效｜quantity回放數值環境隔離0.1.1
 
 入口quantity_context_20261027/README.md、REPORT.md、CONTRACT.md及before/after。只確認原公開replay_sequence的ambient Decimal疑點，先存精確input／expected／原source再實跑；正常及ROUND_DOWN相符，ROUND_UP改場景報酬尾數／保存身分，Inexact／Overflow例外已重現，不把持股現金未變的尾數差異當投資收益影響。
