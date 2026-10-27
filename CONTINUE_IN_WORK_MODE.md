@@ -1,3 +1,13 @@
+# 2026-10-27 最新有效｜獨立公司行動帳RUN數值環境隔離0.1.1
+
+入口股票系統M1_v0_18/rotation_research/ledger_context_20261027/README.md、REPORT.md、CONTRACT.md及before/after。只重用已保存合成input/result：修前原現金分配窄指數Overflow、嵌入式action_cli.main RUN於既有preset Clamped（無保存record）；先凍結input/expected/source，actual分版本留史。初始證據準備路徑錯誤及前置失敗log保留，尚無數值呼叫；不是修前帳務actual。
+
+只固定完整公開action_ledger.replay的標準50位Context；原本體原封移入_replay_checked，AST核一致，帳務公式/來源/資格/CLI/Journal/compare不改。revision0.1.1，schema rotation-action-ledger/0.1保持，舊READ不重算。修後13個API控制及兩個RUN控制符合原件/拒算預期；6唯一方法首次全過，不累加控制/子程序/舊PASS。三份新舊READ禁ledger import/寫入仍全文相同，fresh caller/DefaultContext/input保持；一次原continuation execution完整相同，simulate1/ledger12，無generate/replay_sequence/save，不冒READ。
+
+基線43bc493fa592ced26202116b22337d66183313f1；唯一Codex沿里程碑自審及原分支正常commit/push、GitHub固定SHA讀回。不預設Work例行驗收、無人工操作。不修其他helper或宣稱所有入口已隔離，沒有新缺口就停止同類盲測；下一項僅依既有明確優先順序確認，未定策略仍由Work/使用者討論。1101 UNKNOWN、70/2/其中8/真實合格0、正式false/主壓力null、全部來源parents/圖形/人工及原未支援保持。無真實producer、舊suite/九路徑、新來源行情、bootstrap/UI/Android/樣本外/部署交易；Astra與救援未取得未讀。下方原文完整留史。
+
+---
+
 # 2026-10-27 最新有效｜C原單重評／一次再評外層數值隔離0.2.1／0.3.1
 
 入口股票系統M1_v0_18/capital_research/c_review_context_20261027/README.md、REPORT.md、CONTRACT.md及before／after-review-only／after。先凍結兩份source、完整input／expected／actual指紋，再定向重現。修前重評Overflow、再評Overflow／Inexact；先只修重評，中間actual證明再評仍在自己的前置／最終checkpoint失敗，才修第二入口，不把相依缺陷當兩份獨立證明。

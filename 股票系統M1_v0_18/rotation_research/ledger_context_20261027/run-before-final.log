@@ -1,0 +1,14 @@
+cash-net-withholding normal True None
+cash-net-withholding round-up True None
+cash-net-withholding round-down True None
+cash-net-withholding inexact-trap True None
+cash-net-withholding narrow-exponents False {'type': 'Overflow', 'detail': "[<class 'decimal.Overflow'>]"}
+stock-delivery normal True None
+stock-delivery preset False {'type': 'Clamped', 'detail': "[<class 'decimal.Clamped'>]"}
+capital-reduction normal True None
+capital-reduction preset False {'type': 'Clamped', 'detail': "[<class 'decimal.Clamped'>]"}
+opening-unknown normal True None
+opening-unknown preset True None
+net-unknown normal True None
+net-unknown preset True None
+cli [{'path': 'before/cli/normal/actual.json', 'equal_original': True, 'error': None, 'saved': True}, {'path': 'before/cli/preset/actual.json', 'equal_original': False, 'error': {'type': 'Clamped', 'detail': "[<class 'decimal.Clamped'>]"}, 'saved': False}]

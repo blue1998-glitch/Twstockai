@@ -5,12 +5,14 @@ Scheduled cash credits occur at day end; receivables cannot fund earlier buys.
 """
 from copy import deepcopy
 from datetime import date, timedelta
-from decimal import Decimal, localcontext, ROUND_FLOOR
+from decimal import (Decimal, Context, localcontext, ROUND_FLOOR, ROUND_HALF_EVEN,
+                     InvalidOperation, DivisionByZero, Overflow)
 import re
 from graph_core.core import number, fingerprint
 from .core import fees
 
 VERSION = 'rotation-action-ledger/0.1'
+IMPLEMENTATION_REVISION = '0.1.1-deterministic-decimal-context'
 TYPES = ('CASH_DIVIDEND', 'STOCK_DIVIDEND', 'CAPITAL_REDUCTION')
 
 
@@ -90,6 +92,14 @@ def qualify(data):
 
 
 def replay(data):
+    """Use a complete private numeric environment, including qualification."""
+    with localcontext(Context(prec=50, rounding=ROUND_HALF_EVEN,
+            Emin=-999999, Emax=999999, capitals=1, clamp=0, flags=[],
+            traps=[InvalidOperation, DivisionByZero, Overflow])):
+        return _replay_checked(data)
+
+
+def _replay_checked(data):
     reasons = qualify(data)
     base = dict(schema=VERSION, input_id=fingerprint(data), start=data['start'], end=data['end'],
                 policy_authorized=False, historical_signal_eligible=False, research_only=True,
