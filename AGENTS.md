@@ -1,3 +1,9 @@
+# 2026-10-28 最新專案目標補充｜後續工作先讀
+
+後續任何圖形、全市場掃描、資金帳、換股及市場環境實作，須先讀 [純價量市場環境與資金閉環目標](docs/strategy-research/20261028_price_volume_market_regime_capital_loop.md) 與 PROJECT_VISION.md。使用者只以當時可知圖形／股價／量決策；全市場比較須包含持現金，連續資金帳須處理無法成交與交割；同類突破連續失敗時研究降曝險及暫停新倉，不強制換下一檔。冠西電及2026年7月市場走弱屬研究案例，門檻、策略勝者與真實市場績效尚未驗證。沿用原時序、來源、UNKNOWN、正式資格與人工最後決策契約。下方原件完整留史。
+
+---
+
 # 2026-10-27 最新有效｜首個明示市場案例準備/資格接線0.1
 
 入口股票系統M1_v0_18/rotation_research/market_case_20261027/README.md、REPORT.md、CONTRACT.md及after-final。新增market_case純準備/當期前綴與market_case_io明示來源保存入口，不新增READ工具、帳務或策略。使用者指定1101 3/12 high25.20、4/8 close25.40、4/9 close25.10及2884 2/26 high35.50、6/22 close35.80與保存RAW相符；B首個嚴格突破在完整保存前綴核對，缺報價仍UNKNOWN。四月不引用六月，三種未來尾段不改四月prefix；source完整身分另列，歷史available_at仍null、usable signal空，不倒填擷取時間或升正式主壓力。
