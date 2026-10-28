@@ -1,3 +1,9 @@
+# 最新：原未完成委託／未交割款跨輪續播0.1
+
+入口[使用及證據](standing_orders_20261028/README.md)、[報告](standing_orders_20261028/REPORT.md)、[事前契約](standing_orders_20261028/CONTRACT.md)。resume_orders從完整root_job／原checkpoint恢復原單，只處理明示尾段；不撤掉重下、不新決策／批次。原ledger／費稅不改，應收應付、reserve、權利及latest／全部token保存。八主例逐觀察／每日／終態與原一次執行相同，兩次續播與賣出應收另有actual；9唯一方法通過，不累加初批或歷史PASS。原已結清入口相容；未知期初應付／外部單／缺完整路徑與新review仍拒絕，正式false／真實拒算保持。下方歷史留存。
+
+---
+
 # 最新：同原帳兩輪明示合成案例0.1
 
 入口[兩輪使用與證據](cash_two_rounds_20261028/README.md)、[報告](cash_two_rounds_20261028/REPORT.md)、[契約](cash_two_rounds_20261028/CONTRACT.md)。既有入口直接承接，產品程式不改；第一輪只READ，第二輪新獨立事件沿原已結清checkpoint執行。原窗口／tape不增，原本金1180、reserve100、權利／fills／latest及9舊＋3新token保留。六互斥案例／4唯一方法首次通過，第二輪simulate只1次；舊觸發、假首次、reserve／應收及錯前身停止。無新工具、策略、行情或市場回放；下一市場②輸入與來源由Work研究，非例行工程驗收。下方歷史保持。

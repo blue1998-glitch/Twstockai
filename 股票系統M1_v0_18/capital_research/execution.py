@@ -16,7 +16,7 @@ from .fact_lineage import source_snapshot, history_at, asset_issues, first_issue
 from .reassessment_history import declaration_sources, reviewed_tokens, make_attempt, check_request_retry
 
 VERSION = 'capital-execution/0.8'
-IMPLEMENTATION_REVISION = '0.9.1-deterministic-decimal-context'
+IMPLEMENTATION_REVISION = '0.10.1-standing-order-runtime'
 
 
 def _refusal(reason):
@@ -32,122 +32,140 @@ def simulate(job):
         return _simulate(job)
 
 
-def _simulate(job):
-    if job['schema'] != 'capital-execution-input/0.1':
-        raise ValueError('Explicit isolated execution contract required')
-    data = job['decision_input']
-    continuation=job.get('continuation')
-    if continuation:
-        result=resume_decision(continuation['previous_decision'],data,checkpoint=continuation['checkpoint'],
-                               cancelled_order_ids=continuation['cancelled_order_ids'])['decision']
+def _simulate(job, *, _carry=None, _trace=None, _capture=None):
+    # Only execution_continuation supplies a verified, internally rebuilt frame.
+    if _carry is None:
+        if job['schema'] != 'capital-execution-input/0.1':
+            raise ValueError('Explicit isolated execution contract required')
+        data = job['decision_input']
+        continuation=job.get('continuation')
+        if continuation:
+            result=resume_decision(continuation['previous_decision'],data,checkpoint=continuation['checkpoint'],
+                                   cancelled_order_ids=continuation['cancelled_order_ids'])['decision']
+        else:
+            result = decide(data)['decision']
+        selected = next((p for p in result['layer3']['alternatives'] if p['id'] == job['plan_id']), None)
+        if selected is not None and selected['status']=='NOT_IMPLEMENTED':
+            return _refusal('SELECTED_PLAN_NOT_IMPLEMENTED')
+        observation_only=bool(selected is not None and not selected['feasible'] and job['plan_id']=='A-zero' and not job['orders'])
+        if selected is None or (not selected['feasible'] and not observation_only):
+            return _refusal('SELECTED_PLAN_NOT_FEASIBLE')
+        if data['execution_model']['buying_power'] != 'SETTLED_CASH_ONLY':
+            return _refusal('BROKER_CREDIT_ACCOUNTING_NOT_IMPLEMENTED_NO_SYNTHETIC_LOAN_OR_CASH')
+        a = data['account']
+        if a['payables']:
+            return _refusal('OPENING_PAYABLE_REPLAY_NOT_SUPPORTED_BY_EXISTING_LEDGER')
+        if a['pending_orders']:
+            return _refusal('OPENING_PENDING_ORDER_REPLAY_NOT_IMPLEMENTED_DECISION_RESERVATIONS_SUPPORTED')
+        ledger_input = deepcopy(job['ledger_input'])
+        if ledger_input['fills']:
+            raise ValueError('Explicit empty new fill path required')
+        if (not continuation and ledger_input['start'] != data['data_cutoff'][:10]) or a['as_of'] != data['data_cutoff']:
+            raise ValueError('Opening ledger/cutoff mismatch')
+        expected = dict(cash=a['settled_cash'], shares={c:x['shares'] for c,x in a['holdings'].items()},
+                        cash_claims=a['cash_claims'], share_claims=a['share_claims'])
+        if (not continuation and ledger_input['opening'] != expected) or set(ledger_input['assets']) != set(data['assets']):
+            raise ValueError('Unequal opening holdings/cash/rights')
+        if continuation and ledger_input!=continuation['checkpoint']['origin_ledger_input']:
+            raise ValueError('Continuous account must reuse the exact original ledger input')
+        if any(s['kind'] != 'ENGINEERED_ACCOUNTING_FIXTURE_NOT_MARKET' for s in ledger_input['sources'].values()):
+            raise ValueError('Synthetic adapter cannot publish a real-data replay')
+        for c, asset in ledger_input['assets'].items():
+            if asset['source_id'] != data['assets'][c]['source_id'] or asset['basis_id'] != data['assets'][c]['basis_id']:
+                raise ValueError('Ledger source/basis mismatch')
+        reasons = qualify(ledger_input)
+        if reasons:
+            return _refusal('EXISTING_ACTION_LEDGER_REFUSED:' + '|'.join(reasons))
+        clock=job.get('ledger_close_proof')
+        opening_close=close_record(ledger_input,clock,data['data_cutoff'])
+        close_record(ledger_input,clock,job['observed_until'])
+        if timestamp(opening_close['available_at'])>timestamp(data['decision_at']):
+            raise ValueError('LEDGER_CLOSE_NOT_YET_AVAILABLE')
+        if continuation and clock!=continuation['checkpoint']['execution_result']['ledger_close_proof']:
+            raise ValueError('Continuous account must reuse the exact close-availability proof')
+        cfg = data['cost_model']; validate_costs(cfg)
+        for k in ('fee_rate', 'minimum_fee', 'sell_tax', 'slippage_bps'):
+            if ledger_input['terminal_costs'][k] != cfg[k]:
+                raise ValueError('Decision/execution/terminal cost model mismatch')
+        initial_fills=deepcopy(continuation['checkpoint']['state']['accepted_fills']) if continuation else []
+        state = replay(dict(ledger_input,fills=initial_fills))
+        if not state['daily'] or state['daily'][0]['net_accrual_equity'] is None:
+            return _refusal('OPENING_LEDGER_UNAVAILABLE')
+        opening_row=next(x for x in state['daily'] if x['date']==data['data_cutoff'][:10])
+        if number(opening_row['net_accrual_equity']) != number(result['initial_capital']):
+            raise ValueError('Opening valuation/capital mismatch')
+        for c in data['assets']:
+            mark = [m for m in data['assets'][c]['marks'] if m['occurred_at'] == data['data_cutoff'] and timestamp(m['available_at']) <= timestamp(data['decision_at'])]
+            if len(mark) != 1 or number(ledger_input['assets'][c]['quotes'][data['data_cutoff'][:10]]) != number(mark[0]['price']):
+                raise ValueError('Ledger opening mark differs from decision mark')
+        orders = deepcopy(job['orders'])
+        if len({o['id'] for o in orders}) != len(orders):
+            raise ValueError('Duplicate order identity')
+        requested = {c:Decimal(0) for c in data['assets']}
+        for o in orders:
+            if o['code'] not in requested or o['side'] not in ('BUY', 'SELL'):
+                raise ValueError('Unknown order asset/side')
+            n = quantity(o['shares'])
+            if n <= 0 or number(o['limit_price']) <= 0:
+                raise ValueError('Positive order/limit required')
+            t = timestamp(o['decision_at'])
+            if t != timestamp(data['decision_at']) or timestamp(o['submitted_at']) < t or timestamp(o['expires_at']) <= timestamp(o['submitted_at']):
+                raise ValueError('Order decision/submission/expiry chronology mismatch')
+            requested[o['code']] += n * (1 if o['side'] == 'BUY' else -1)
+        for c, n in requested.items():
+            delta = quantity(selected['targets'][c]) - quantity(a['holdings'][c]['shares'])
+            if (n and n * delta < 0) or abs(n) > abs(delta):
+                raise ValueError('Order exceeds selected target change')
+        # Both gross buy and sell orders for one asset would defeat the net check.
+        if any(len({o['side'] for o in orders if o['code']==c}) > 1 for c in requested):
+            raise ValueError('Opposite same-asset orders require a separate decision')
+        inherited=continuation['checkpoint']['execution_result'] if continuation else None
+        order_state=deepcopy(inherited['order_states']) if inherited else {}
+        order_history=deepcopy(inherited.get('order_history',inherited['orders'])) if inherited else []
+        if set(order_state)&{o['id'] for o in orders}:
+            raise ValueError('New order identity collides with earlier account history')
+        decisions = []
+        if continuation:
+            for key in continuation['cancelled_order_ids']:
+                at=result['continuity']['cancellation_effective_at']
+                order_state[key].update(status='CANCELLED_AT_REVIEW',reserved_cash='0',cancelled_at=at)
+                decisions.append(dict(at=at,order_id=key,status='CANCELLED_AT_REVIEW',
+                                      reason='EXPLICIT_REVIEW_BEFORE_NEXT_DECLARED_TRADING_DATE'))
+        for o in orders:
+            order_state[o['id']]=dict(remaining=o['shares'],status='WAITING',reserved_cash='0',
+                requires_reassessment=bool(o['side']=='BUY' and selected['funding']!='SETTLED'),
+                active_decision_at=o['decision_at'],active_decision_id=result['decision_id'])
+        order_history+=deepcopy(orders)
+        initial_fill_count=len(initial_fills)
+        fills = deepcopy(initial_fills)
+        risk_observations=[];reassessments=[]
+        decision_ids=deepcopy(inherited['decision_ids']) if inherited else []
+        decision_records=deepcopy(inherited['decision_records']) if inherited else {}
+        decision_ids.append(result['decision_id']);decision_records[result['decision_id']]=deepcopy(result)
+        fact_sources=deepcopy(inherited['fact_sources']) if inherited else {}
+        fact_sources[result['decision_id']]=source_snapshot(data)
+        reassessment_attempts=deepcopy(inherited['reassessment_attempts']) if inherited else []
+        fill_order_ids=deepcopy(inherited['fill_order_ids']) if inherited else {}
+        unavailable=deepcopy(inherited['opening_unavailable_shares']) if inherited else {
+            c:str(quantity(x['shares'])-quantity(x['sellable'])) for c,x in a['holdings'].items()}
+        origin_common=inherited['origin_common_account_id'] if inherited else result['common_account_id']
+        latest_result=result
     else:
-        result = decide(data)['decision']
-    selected = next((p for p in result['layer3']['alternatives'] if p['id'] == job['plan_id']), None)
-    if selected is not None and selected['status']=='NOT_IMPLEMENTED':
-        return _refusal('SELECTED_PLAN_NOT_IMPLEMENTED')
-    observation_only=bool(selected is not None and not selected['feasible'] and job['plan_id']=='A-zero' and not job['orders'])
-    if selected is None or (not selected['feasible'] and not observation_only):
-        return _refusal('SELECTED_PLAN_NOT_FEASIBLE')
-    if data['execution_model']['buying_power'] != 'SETTLED_CASH_ONLY':
-        return _refusal('BROKER_CREDIT_ACCOUNTING_NOT_IMPLEMENTED_NO_SYNTHETIC_LOAN_OR_CASH')
-    a = data['account']
-    if a['payables']:
-        return _refusal('OPENING_PAYABLE_REPLAY_NOT_SUPPORTED_BY_EXISTING_LEDGER')
-    if a['pending_orders']:
-        return _refusal('OPENING_PENDING_ORDER_REPLAY_NOT_IMPLEMENTED_DECISION_RESERVATIONS_SUPPORTED')
-    ledger_input = deepcopy(job['ledger_input'])
-    if ledger_input['fills']:
-        raise ValueError('Explicit empty new fill path required')
-    if (not continuation and ledger_input['start'] != data['data_cutoff'][:10]) or a['as_of'] != data['data_cutoff']:
-        raise ValueError('Opening ledger/cutoff mismatch')
-    expected = dict(cash=a['settled_cash'], shares={c:x['shares'] for c,x in a['holdings'].items()},
-                    cash_claims=a['cash_claims'], share_claims=a['share_claims'])
-    if (not continuation and ledger_input['opening'] != expected) or set(ledger_input['assets']) != set(data['assets']):
-        raise ValueError('Unequal opening holdings/cash/rights')
-    if continuation and ledger_input!=continuation['checkpoint']['origin_ledger_input']:
-        raise ValueError('Continuous account must reuse the exact original ledger input')
-    if any(s['kind'] != 'ENGINEERED_ACCOUNTING_FIXTURE_NOT_MARKET' for s in ledger_input['sources'].values()):
-        raise ValueError('Synthetic adapter cannot publish a real-data replay')
-    for c, asset in ledger_input['assets'].items():
-        if asset['source_id'] != data['assets'][c]['source_id'] or asset['basis_id'] != data['assets'][c]['basis_id']:
-            raise ValueError('Ledger source/basis mismatch')
-    reasons = qualify(ledger_input)
-    if reasons:
-        return _refusal('EXISTING_ACTION_LEDGER_REFUSED:' + '|'.join(reasons))
-    clock=job.get('ledger_close_proof')
-    opening_close=close_record(ledger_input,clock,data['data_cutoff'])
-    close_record(ledger_input,clock,job['observed_until'])
-    if timestamp(opening_close['available_at'])>timestamp(data['decision_at']):
-        raise ValueError('LEDGER_CLOSE_NOT_YET_AVAILABLE')
-    if continuation and clock!=continuation['checkpoint']['execution_result']['ledger_close_proof']:
-        raise ValueError('Continuous account must reuse the exact close-availability proof')
-    cfg = data['cost_model']; validate_costs(cfg)
-    for k in ('fee_rate', 'minimum_fee', 'sell_tax', 'slippage_bps'):
-        if ledger_input['terminal_costs'][k] != cfg[k]:
-            raise ValueError('Decision/execution/terminal cost model mismatch')
-    initial_fills=deepcopy(continuation['checkpoint']['state']['accepted_fills']) if continuation else []
-    state = replay(dict(ledger_input,fills=initial_fills))
-    if not state['daily'] or state['daily'][0]['net_accrual_equity'] is None:
-        return _refusal('OPENING_LEDGER_UNAVAILABLE')
-    opening_row=next(x for x in state['daily'] if x['date']==data['data_cutoff'][:10])
-    if number(opening_row['net_accrual_equity']) != number(result['initial_capital']):
-        raise ValueError('Opening valuation/capital mismatch')
-    for c in data['assets']:
-        mark = [m for m in data['assets'][c]['marks'] if m['occurred_at'] == data['data_cutoff'] and timestamp(m['available_at']) <= timestamp(data['decision_at'])]
-        if len(mark) != 1 or number(ledger_input['assets'][c]['quotes'][data['data_cutoff'][:10]]) != number(mark[0]['price']):
-            raise ValueError('Ledger opening mark differs from decision mark')
-    orders = deepcopy(job['orders'])
-    if len({o['id'] for o in orders}) != len(orders):
-        raise ValueError('Duplicate order identity')
-    requested = {c:Decimal(0) for c in data['assets']}
-    for o in orders:
-        if o['code'] not in requested or o['side'] not in ('BUY', 'SELL'):
-            raise ValueError('Unknown order asset/side')
-        n = quantity(o['shares'])
-        if n <= 0 or number(o['limit_price']) <= 0:
-            raise ValueError('Positive order/limit required')
-        t = timestamp(o['decision_at'])
-        if t != timestamp(data['decision_at']) or timestamp(o['submitted_at']) < t or timestamp(o['expires_at']) <= timestamp(o['submitted_at']):
-            raise ValueError('Order decision/submission/expiry chronology mismatch')
-        requested[o['code']] += n * (1 if o['side'] == 'BUY' else -1)
-    for c, n in requested.items():
-        delta = quantity(selected['targets'][c]) - quantity(a['holdings'][c]['shares'])
-        if (n and n * delta < 0) or abs(n) > abs(delta):
-            raise ValueError('Order exceeds selected target change')
-    # Both gross buy and sell orders for one asset would defeat the net check.
-    if any(len({o['side'] for o in orders if o['code']==c}) > 1 for c in requested):
-        raise ValueError('Opposite same-asset orders require a separate decision')
-    inherited=continuation['checkpoint']['execution_result'] if continuation else None
-    order_state=deepcopy(inherited['order_states']) if inherited else {}
-    order_history=deepcopy(inherited.get('order_history',inherited['orders'])) if inherited else []
-    if set(order_state)&{o['id'] for o in orders}:
-        raise ValueError('New order identity collides with earlier account history')
-    decisions = []
-    if continuation:
-        for key in continuation['cancelled_order_ids']:
-            at=result['continuity']['cancellation_effective_at']
-            order_state[key].update(status='CANCELLED_AT_REVIEW',reserved_cash='0',cancelled_at=at)
-            decisions.append(dict(at=at,order_id=key,status='CANCELLED_AT_REVIEW',
-                                  reason='EXPLICIT_REVIEW_BEFORE_NEXT_DECLARED_TRADING_DATE'))
-    for o in orders:
-        order_state[o['id']]=dict(remaining=o['shares'],status='WAITING',reserved_cash='0',
-            requires_reassessment=bool(o['side']=='BUY' and selected['funding']!='SETTLED'),
-            active_decision_at=o['decision_at'],active_decision_id=result['decision_id'])
-    order_history+=deepcopy(orders)
-    initial_fill_count=len(initial_fills)
-    fills = deepcopy(initial_fills)
-    risk_observations=[];reassessments=[]
-    decision_ids=deepcopy(inherited['decision_ids']) if inherited else []
-    decision_records=deepcopy(inherited['decision_records']) if inherited else {}
-    decision_ids.append(result['decision_id']);decision_records[result['decision_id']]=deepcopy(result)
-    fact_sources=deepcopy(inherited['fact_sources']) if inherited else {}
-    fact_sources[result['decision_id']]=source_snapshot(data)
-    reassessment_attempts=deepcopy(inherited['reassessment_attempts']) if inherited else []
-    fill_order_ids=deepcopy(inherited['fill_order_ids']) if inherited else {}
-    unavailable=deepcopy(inherited['opening_unavailable_shares']) if inherited else {
-        c:str(quantity(x['shares'])-quantity(x['sellable'])) for c,x in a['holdings'].items()}
-    origin_common=inherited['origin_common_account_id'] if inherited else result['common_account_id']
-    latest_result=result
+        (
+            data, result, selected, observation_only, a,
+            ledger_input, clock, cfg, orders, order_state,
+            order_history, decisions, fills, risk_observations, reassessments,
+            decision_ids, decision_records, fact_sources, reassessment_attempts, fill_order_ids,
+            unavailable, origin_common, latest_result, initial_fill_count, continuation,
+            marks, risk_data,
+        ) = (deepcopy(_carry[k]) for k in (
+            'data', 'result', 'selected', 'observation_only', 'a',
+            'ledger_input', 'clock', 'cfg', 'orders', 'order_state',
+            'order_history', 'decisions', 'fills', 'risk_observations', 'reassessments',
+            'decision_ids', 'decision_records', 'fact_sources', 'reassessment_attempts', 'fill_order_ids',
+            'unavailable', 'origin_common', 'latest_result', 'initial_fill_count', 'continuation',
+            'marks', 'risk_data',
+        ))
 
     def knowledge():
         return dict(decision_ids=decision_ids,decision_records=decision_records,
@@ -165,9 +183,10 @@ def _simulate(job):
             reviewed_evidence_tokens=reviewed_tokens(knowledge()),
             fill_order_ids=deepcopy(fill_order_ids),ledger_close_proof=deepcopy(clock),
             fact_sources=deepcopy(fact_sources),reassessment_attempts=deepcopy(reassessment_attempts))
-    marks={c:dict(price=next(m['price'] for m in x['marks'] if m['occurred_at']==data['data_cutoff'] and timestamp(m['available_at'])<=timestamp(data['decision_at'])),
-                        at=data['data_cutoff'],source_id=x['source_id'],basis_id=x['basis_id']) for c,x in data['assets'].items()}
-    risk_data=data
+    if _carry is None:
+        marks={c:dict(price=next(m['price'] for m in x['marks'] if m['occurred_at']==data['data_cutoff'] and timestamp(m['available_at'])<=timestamp(data['decision_at'])),
+                            at=data['data_cutoff'],source_id=x['source_id'],basis_id=x['basis_id']) for c,x in data['assets'].items()}
+        risk_data=data
 
     def cancel_known_restrictions(at, reason):
         sources=declaration_sources(knowledge())
@@ -359,6 +378,12 @@ def _simulate(job):
             current = replay(dict(ledger_input, fills=deepcopy(fills)))
             decisions.append(dict(at=obs['at'], order_id=o['id'], status=st['status'], fill_id=f['id'],
                                   decision_id=st['active_decision_id'],reserved_cash_total=str(reserved), remaining=st['remaining']))
+        if _trace is not None:
+            _trace.append(dict(schema='capital-standing-observation/0.1',at=obs['at'],
+                order_states=deepcopy(order_state),accepted_fills=deepcopy(fills),marks=deepcopy(marks),
+                cash_after_general_reserve=str(cash),order_reserved_cash=str(reserved),
+                fact_history=history_at(declaration_sources(knowledge()),obs['at']),
+                latest_decision_id=latest_result['decision_id'],reviewed_evidence_tokens=reviewed_tokens(knowledge())))
     final_time = timestamp(job['observed_until'])
     if times and final_time < times[-1]:
         raise ValueError('Execution watermark before tape')
@@ -377,7 +402,8 @@ def _simulate(job):
                                           reason='KNOWN_FACT_HISTORY_AT_WATERMARK',details=invalid))
         if number(st['remaining']) and final_time >= timestamp(o['expires_at']) and not st['status'].startswith('CANCELLED'):
             st.update(status='EXPIRED_UNFILLED', reserved_cash='0')
-            decisions.append(dict(at=o['expires_at'],order_id=o['id'],status='EXPIRED_UNFILLED',reason='EXPLICIT_ORDER_DEADLINE',remaining=st['remaining']))
+            if _carry is None or not any(e['order_id']==o['id'] and e['status']=='EXPIRED_UNFILLED' and e['at']==o['expires_at'] for e in decisions):
+                decisions.append(dict(at=o['expires_at'],order_id=o['id'],status='EXPIRED_UNFILLED',reason='EXPLICIT_ORDER_DEADLINE',remaining=st['remaining']))
     final = replay(ledger_prefix(ledger_input,fills,job['observed_until'][:10]))
     # Return qualification is inherited as synthetic; never rename it to real performance.
     out = dict(schema=result_version(), status='SYNTHETIC_EXECUTION_REPLAY', decision_id=result['decision_id'],
@@ -391,6 +417,15 @@ def _simulate(job):
                data_qualified=False, execution_model_qualified=False, historical_signal_eligible=False,
                policy_authorized=False, live_execution_authorized=False)
     out['result_id']=fingerprint(out)
+    if _capture is not None:
+        _capture.update(deepcopy(dict(
+            data=data, result=result, selected=selected, observation_only=observation_only, a=a,
+            ledger_input=ledger_input, clock=clock, cfg=cfg, orders=orders, order_state=order_state,
+            order_history=order_history, decisions=decisions, fills=fills, risk_observations=risk_observations, reassessments=reassessments,
+            decision_ids=decision_ids, decision_records=decision_records, fact_sources=fact_sources, reassessment_attempts=reassessment_attempts, fill_order_ids=fill_order_ids,
+            unavailable=unavailable, origin_common=origin_common, latest_result=latest_result, initial_fill_count=initial_fill_count, continuation=continuation,
+            marks=marks, risk_data=risk_data,
+        )))
     return out
 
 

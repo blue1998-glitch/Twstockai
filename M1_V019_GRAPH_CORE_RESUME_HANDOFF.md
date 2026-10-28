@@ -1,3 +1,15 @@
+# 2026-10-28 最新有效｜原未完成委託與未交割款跨輪續播0.1
+
+入口股票系統M1_v0_18/capital_research/standing_orders_20261028/README.md、REPORT.md、CONTRACT.md及after-final。新增純execution_continuation.resume_orders，完整root_job／原checkpoint／latest／明示合成完整path綁定，先重建原歷史核對，再以原execution私有carry共用原迴圈只處理尾段。原單ID／限價／期限／剩餘、fills、應收應付、其他股份權利、一般reserve、fact／重評歷史與全部token保存，不重新送單／決策或重設本金。費稅／ledger／core／continuity／來源與風險公式未改；新決策入口的活單／應付拒絕仍保留。內層execution0.8／0.9及checkpoint0.7／0.8不遷移，實作revision0.10.1，外層新契約0.1。
+
+主例B7／剩13及141.14應付，交割後原單再成交13、261.26應付再按原日曆結清，原本金1180、reserve100、80現金權利／C2股份權利各到位一次，終現金677.60/B20/C4。八主正例逐明示觀察／每日列／完整終態均等於未改引擎一次執行；兩次續播及無tape水位取消、較晚公布保留B7、accepted／rejected收據與原資本2230的賣出應收控制另存。十六主拒絕及未收到review反例拒絕；缺段／空日完整性、錯前身／原帳／單／fills等不推定無成交。需要新決策的條件單仍等待，尚未收到的review不因自稱較早就可放行。
+
+最終9唯一方法通過，不累加初批8、歷史PASS或合成案例；兩必要舊明示行動完整結果相容。完整Decimal／未來尾段／input不變／無IO與無新批控制通過。舊歷史fixture固定review checkpoint綁定不符的intake失敗留史，另名正確綁定，不改oracle；after-final才綁最終產品source。唯一Codex沿里程碑自審／正常保存／GitHub固定SHA讀回，無人工操作、不預設Work例行驗收。基線bd76bb4d3b31d7d3d87acef324f18c59ce6e66f7，原工作區起始全淨，無代理／worktree／新分支。
+
+本版只續原已核單的完整明示合成原窗，任意外部活單／缺歷史／未知期初應付、限售解除、尾段新review／新決策／新批、R2/F、來源認證及完整分叉仍不支援；不擴自動協調器。逐時只指明示觀察點與日終，較早保存限制的observed_at可與一次執行不同，不能推定所有任意切點收據bytes相同。70/2/其中8/真實合格0、1101 UNKNOWN、正式false／主壓力null、全部parents與圖形人工保持；無市場回放／producer／資格重算／九路徑／UI/Android／樣本外、行情／bootstrap／部署交易。Astra／Work原件／救援仍未讀。下一項若授權，先核已結清續播checkpoint能否直接回既有明示行動入口，無缺口就重用，不先增建工具。下方歷史原文完整保留。
+
+---
+
 # 2026-10-28 最新有效｜同原帳兩輪明示合成案例0.1
 
 入口股票系統M1_v0_18/capital_research/cash_two_rounds_20261028/README.md、REPORT.md、CONTRACT.md及actual。既有cash_action.evaluate/execute直接支援，產品模組改動0，無新協調／READ／並列工具。第一輪opening-B20保存結果只READ不重跑；1/8已結清、無活單／應付的原checkpoint接第二輪1/8 17:00明示追加，原1/9 tape／日曆／origin／close proof全文重用，窗口仍止1/12，新增行情0。
