@@ -1,3 +1,9 @@
+# 2026-10-28 最新需求｜純價量市場環境與資金閉環
+
+使用者要求把近期冠西電案例、全市場機會成本與7月底後假突破／換股連鎖損失的觀察，更新為全專案後續建置方向。先讀 [完整新增規格](docs/strategy-research/20261028_price_volume_market_regime_capital_loop.md) 與 PROJECT_VISION.md。決策只看圖形、價格、成交量；持有、換股、部分換、持現金要在相同連續帳與可成交條件下比較。市場普遍假突破時研究降曝險／停止新進場及恢復條件，不把換股當預設。此為方向與研究候選，尚未核准門檻、比例、策略勝者，未執行真實全市場回測或交易；原合成帳務、來源資格、UNKNOWN、正式false、歷史原件與既有接續工作保持。下方舊交接保留。
+
+---
+
 # 2026-10-27 最新有效｜首個明示市場案例準備/資格接線0.1
 
 入口股票系統M1_v0_18/rotation_research/market_case_20261027/README.md、REPORT.md、CONTRACT.md及after-final。新增market_case純準備/當期前綴與market_case_io明示來源保存入口，不新增READ工具、帳務或策略。使用者指定1101 3/12 high25.20、4/8 close25.40、4/9 close25.10及2884 2/26 high35.50、6/22 close35.80與保存RAW相符；B首個嚴格突破在完整保存前綴核對，缺報價仍UNKNOWN。四月不引用六月，三種未來尾段不改四月prefix；source完整身分另列，歷史available_at仍null、usable signal空，不倒填擷取時間或升正式主壓力。
