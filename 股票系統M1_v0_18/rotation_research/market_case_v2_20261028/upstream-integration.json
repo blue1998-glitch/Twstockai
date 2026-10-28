@@ -1,0 +1,54 @@
+{
+  "baseline": "e60649162241b5287496ee7cc66472301a710c29",
+  "feature_commit": "3b02795d6fc273884b0f7f8abb14a56650a57839",
+  "upstream_tip": "2d211f108bc9870246c833ad548b3f738e86c38f",
+  "upstream_commits_preserved": [
+    "32a8cbd0051705cc98b71813bd162cabe7932474",
+    "52e95b27ece4e3f185782aac560bdeff64d24875",
+    "d226ba0ec04beca26908abc26c7894939f7ce5f3",
+    "2d211f108bc9870246c833ad548b3f738e86c38f"
+  ],
+  "upstream_changed_files": [
+    "AGENTS.md",
+    "CONTINUE_IN_WORK_MODE.md",
+    "PROJECT_VISION.md",
+    "docs/strategy-research/20261028_price_volume_market_regime_capital_loop.md"
+  ],
+  "upstream_only_documentation": true,
+  "goal_document_read_in_full": true,
+  "new_goals_do_not_expand_this_authorized_task": true,
+  "conflicts": [
+    {
+      "path": "AGENTS.md",
+      "upstream_prefix_bytes": 744,
+      "upstream_prefix_sha256": "dcb8b43732b9d30a05d3b2122954494778a580647a56c28595193987d4ffe77f",
+      "feature_bytes_preserved_as_suffix": true,
+      "original_baseline_bytes_preserved_as_suffix": true
+    },
+    {
+      "path": "CONTINUE_IN_WORK_MODE.md",
+      "upstream_prefix_bytes": 829,
+      "upstream_prefix_sha256": "3b2a6091c620ed91b9b9b76c16b85bb875232fba4a712baf51b0f2b989a2bb3d",
+      "feature_bytes_preserved_as_suffix": true,
+      "original_baseline_bytes_preserved_as_suffix": true
+    },
+    {
+      "path": "PROJECT_VISION.md",
+      "upstream_prefix_bytes": 684,
+      "upstream_prefix_sha256": "1d825977a6cf96ca3c2ddd9885c3c11fe39fca3150a1a2236a37ffe197a81181",
+      "feature_bytes_preserved_as_suffix": true,
+      "original_baseline_bytes_preserved_as_suffix": true
+    }
+  ],
+  "upstream_goal_file": {
+    "path": "docs/strategy-research/20261028_price_volume_market_regime_capital_loop.md",
+    "bytes": 6087,
+    "sha256": "0094a53d2f655ad31b4dea3c890e6b78523b15ec160153f6164cae9bfb2a01be",
+    "exact_upstream_bytes_preserved": true
+  },
+  "normal_merge_no_force_or_history_rewrite": true,
+  "production_tested_source_changed": false,
+  "tests_rerun_after_merge": 0,
+  "historical_manifest_preserved_at": "diagnostics/change-manifest-before-upstream-merge.json",
+  "final_manifest_rebuilt_for_actual_merged_docs": true
+}

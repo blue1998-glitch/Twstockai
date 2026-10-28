@@ -29,3 +29,6 @@
 最終證據看final/。根actual、summary與source-versions-before-run是初始診斷；當時6488已被拒絕，但拒絕碼較早落在主線綁定；補明確範圍檢查後另存final，沒有改oracle或覆寫原件。diagnostics保存初版source與說明。13案例不是13項測試或市場樣本；8唯一方法一次通過，不加歷史PASS。
 
 來源0.10／全部parents仍不完整、正式旗標false、主壓力與報酬null；市場數值回放／qualify／帳戶重建均0。Work v0.24及JSON0.16兩Library原件未讀，work-summary.json只是使用者摘要。Astra／救援未讀及原1101 UNKNOWN、70/2/其中8/真實合格0不變。
+
+
+保存期間新增的遠端文件已正常合併：32a8cbd、52e95b2、d226ba0及2d211f1的純價量市場環境/資金閉環目標全部保留。最新三根目標節置前，本輪②進度緊接，歷史原文不刪。新增目標文件已全文讀，沒有據此擴本輪到冠西電/市場閘門或新策略。程式與已測source不變，未重跑測試。原本輪manifest已留diagnostics，最終CHANGE_MANIFEST核合併後實際檔案；詳upstream-integration.json及最終對話固定SHA。

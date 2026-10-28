@@ -1,17 +1,19 @@
 {
   "schema": "research-change-manifest/0.1",
   "baseline": "e60649162241b5287496ee7cc66472301a710c29",
+  "integration_upstream": "2d211f108bc9870246c833ad548b3f738e86c38f",
   "self_excluded": true,
+  "original_feature_manifest_preserved": "diagnostics/change-manifest-before-upstream-merge.json",
   "files": [
     {
       "path": "AGENTS.md",
-      "bytes": 345573,
-      "sha256": "c700d9973debbd7ce45d67a546710f37f9736cb137e06f3340f440a4fccc514f"
+      "bytes": 346317,
+      "sha256": "ba8f0d8652431c573b87e423add2065cba4c89e6ca90dc868549c1c516ff0806"
     },
     {
       "path": "CONTINUE_IN_WORK_MODE.md",
-      "bytes": 447150,
-      "sha256": "041f903da7fc48c1e5fb48fea8253a55ed6efb50a0a220aa5d881e7b2d55d3a1"
+      "bytes": 447979,
+      "sha256": "dbb6edcddfcaeb4061ee608d267f4128ce2018676e530bb91c07c1f445490534"
     },
     {
       "path": "M1_V019_GRAPH_CORE_RESUME_HANDOFF.md",
@@ -20,8 +22,13 @@
     },
     {
       "path": "PROJECT_VISION.md",
-      "bytes": 72097,
-      "sha256": "2c3aac553991c6e4cbd6767758a9ab9bc58c03206ede63d70b33e79039389d45"
+      "bytes": 72781,
+      "sha256": "853e44a8466f6a40738b568b2051271984b2a5e48f1d70543be82271205cd7c0"
+    },
+    {
+      "path": "docs/strategy-research/20261028_price_volume_market_regime_capital_loop.md",
+      "bytes": 6087,
+      "sha256": "0094a53d2f655ad31b4dea3c890e6b78523b15ec160153f6164cae9bfb2a01be"
     },
     {
       "path": "股票系統M1_v0_18/rotation_research/README.md",
@@ -40,13 +47,13 @@
     },
     {
       "path": "股票系統M1_v0_18/rotation_research/market_case_v2_20261028/README.md",
-      "bytes": 3475,
-      "sha256": "b907b6764c4051b93afe651c41451dbe683364cfa2f5b54cf501a06545e7139d"
+      "bytes": 3981,
+      "sha256": "1abd7e74d4d5a0cf658397f8970a4e6288570d4032e67f1d28cf6ae1e369de64"
     },
     {
       "path": "股票系統M1_v0_18/rotation_research/market_case_v2_20261028/REPORT.md",
-      "bytes": 6498,
-      "sha256": "25859a19851b66a0f835cfcf1ce9fc5f33a90163a8c9e166e392441bdef17622"
+      "bytes": 7004,
+      "sha256": "b3f65fd109df4f6e20978cb2fb0a6f89c12a9efd2963d390ad07dbc814462dcf"
     },
     {
       "path": "股票系統M1_v0_18/rotation_research/market_case_v2_20261028/__init__.py",
@@ -142,6 +149,11 @@
       "path": "股票系統M1_v0_18/rotation_research/market_case_v2_20261028/diagnostics/build-initial.py",
       "bytes": 3289,
       "sha256": "e5e0eda74d5710e213d974aeed27061ca1a82455540002698d8c9ccc3abcf137"
+    },
+    {
+      "path": "股票系統M1_v0_18/rotation_research/market_case_v2_20261028/diagnostics/change-manifest-before-upstream-merge.json",
+      "bytes": 15799,
+      "sha256": "4c8d956028e98a3554072cdfa641c0fd27d98b996358a383cd48c28ff88f9bc0"
     },
     {
       "path": "股票系統M1_v0_18/rotation_research/market_case_v2_20261028/diagnostics/initial-scope-rejection.json",
@@ -279,6 +291,11 @@
       "sha256": "9b5fb5d16a6b9879dc9fd5e36153953a39fa335d405600252cb02ea2d5a60bb1"
     },
     {
+      "path": "股票系統M1_v0_18/rotation_research/market_case_v2_20261028/publication-after-merge.json",
+      "bytes": 358,
+      "sha256": "719b63d5ca2c3052f7988d5fd14c37c88a0224778530290744e2b0870270d4cc"
+    },
+    {
       "path": "股票系統M1_v0_18/rotation_research/market_case_v2_20261028/publication-review.json",
       "bytes": 1195,
       "sha256": "72d889268104bf3f8b5753de9c95f2142c5afe0bd480b788c0d9960e89e47d65"
@@ -342,6 +359,11 @@
       "path": "股票系統M1_v0_18/rotation_research/market_case_v2_20261028/tests-first.log",
       "bytes": 1560,
       "sha256": "c521dc557a6e425691ee26e17594598503b7c8a17d16362a606cefc1ce4c1846"
+    },
+    {
+      "path": "股票系統M1_v0_18/rotation_research/market_case_v2_20261028/upstream-integration.json",
+      "bytes": 2180,
+      "sha256": "bb32b3899a29c14bb95e899f2a977bf755cfb9bedb384d7c53bdb4d814baa86c"
     },
     {
       "path": "股票系統M1_v0_18/rotation_research/market_case_v2_20261028/verification-source-versions.json",
