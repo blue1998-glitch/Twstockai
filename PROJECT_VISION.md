@@ -4,6 +4,18 @@
 
 ---
 
+# 2026-10-28 最新有效｜明示行動接原合成執行0.1
+
+入口股票系統M1_v0_18/capital_research/cash_execution_20261028/README.md、REPORT.md、CONTRACT.md及actual。新增cash_action_execution.execute，綁完整cash_action input／checked結果與明示full ID，沿原evaluate重驗外層資格再接原simulate／make_checkpoint；不是READ重算或只看core feasible。錯原結果／metadata／輸入、遭拒但core可行、超量拆單／SELL或HOLD夾單均在simulate前拒絕。原origin／close proof全文綁定，latest取原checkpoint；委託／tape／日曆全部外部明示，不生成股數、委託、策略或新帳。
+
+原A可保留用現金買B，或沿已退出A的原帳接買B；原資本2180／reserve100、995賣出應收與80現金權利／C2股份權利完整承接。部分B7／剩13活單及預留261.65039保留；較晚已知撤銷／到期才關13，B7不消失。27份新input/expected先凍結，7唯一方法首次全過，不累加案例／控制／舊PASS；部分未交割手算把available當cash，原稿留史另附欄位勘誤，不改帳務。逐日現金／應付／權利／NAV及舊fills、closed orders、latest、全部token／fact sources承接有證據。已結清checkpoint接原HOLD通過，部分活單仍NOT_IMPLEMENTED。
+
+未來原ledger尾段不同不改較早numeric_result，來源完整性ID分開；正常／惡劣完整Context及input不變，無IO／網路／quantity生成，合成simulate及ledger為必要呼叫，不冒0引擎READ。原cash_action/core/execution/continuity/ledger/quantity/②全部未改。基線5dd3aab979d5442486442344b8e8ff476e2b75d8，唯一Codex按里程碑自審／原分支正常保存/GitHub固定SHA讀回，無人工操作或Work例行驗收需求。
+
+本輪只完成一項明示行動的原合成執行接線；多輪使用只重用已支持的原窗／已結清checkpoint，未另建協調器。活單／期初應付不中斷回放、限售釋放、八行動dispatcher、整張域、R2/F／來源認證與完整分叉矩陣不擴張；0.9同單複合承接未新增全面驗證。市場回放／真實producer／資格重算／舊suite／九路徑／UI/Android／樣本外均0，不補1/13或市場RAW。1101 UNKNOWN、70/2/其中8/真實合格0、正式false／主壓力null、來源0.10所有parents／圖形／人工與原未支援保持。N／比例／風險及市場政策仍Work與使用者決定；Work原件／Astra／救援仍未讀。下方歷史原文保持。
+
+---
+
 # 2026-10-28 最新有效｜明示現金／退出後原帳行動接線0.1
 
 入口股票系統M1_v0_18/capital_research/cash_action_20261028/README.md、REPORT.md、CONTRACT.md及after-final。新增純cash_action.evaluate，只核外部明示HOLD／BUY_FROM_SETTLED_CASH；不經正持股quantity產生器，不生成／選擇數量、委託或成交。現金、A已退出及原A仍在皆可核；其他持股／權利不清零。完整checkpoint沿原validate/account_at_checkpoint/resume取得原帳、精確latest、fills／closed orders、fact/attempt歷史及全部token；無活單／期初應付才續接，原限售拒絕保持。不能手填帳／token、改source/basis或用應收／一般reserve買進。

@@ -1,3 +1,9 @@
+# 最新：明示行動接原合成執行0.1
+
+入口[cash_execution使用及證據](cash_execution_20261028/README.md)、[報告](cash_execution_20261028/REPORT.md)、[事前契約](cash_execution_20261028/CONTRACT.md)。完整已核行動／原input明示綁定、重驗外層閘門，再用原simulate/make_checkpoint；原帳／權利／reserve／latest／全部token承接。27新有限案例，7唯一方法首次通過；部分7／剩13、未成／到期／較晚撤銷與逐日權利對帳有actual。外層遭拒或改寫0次執行，無新策略／委託生成／市場回放。原引擎／資格不改，手算現金欄位原稿及勘誤分存；沿根里程碑自審保存，下方歷史完整保持。
+
+---
+
 # 最新：明示現金／退出後原帳行動接線0.1
 
 入口[cash_action使用與證據](cash_action_20261028/README.md)、[報告](cash_action_20261028/REPORT.md)、[事前契約](cash_action_20261028/CONTRACT.md)。純evaluate沿原decide/resume檢查HOLD／用已結現金買進；原A可為0，不重寫quantity。原帳／權利／reserve／latest／全部token保持，假首次／舊觸發／應收借用拒絕，無活單及應付才續接。31有限案例、7唯一方法首次通過；沒有新委託／成交／市場回放，正式資格及拒算保持。初版／最終／手算勘誤分存。沿根里程碑交付，不新增平行規則；下方歷史保留。
