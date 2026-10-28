@@ -1,3 +1,9 @@
+# 最新：同原帳兩輪明示合成案例0.1
+
+入口[兩輪使用與證據](cash_two_rounds_20261028/README.md)、[報告](cash_two_rounds_20261028/REPORT.md)、[契約](cash_two_rounds_20261028/CONTRACT.md)。既有入口直接承接，產品程式不改；第一輪只READ，第二輪新獨立事件沿原已結清checkpoint執行。原窗口／tape不增，原本金1180、reserve100、權利／fills／latest及9舊＋3新token保留。六互斥案例／4唯一方法首次通過，第二輪simulate只1次；舊觸發、假首次、reserve／應收及錯前身停止。無新工具、策略、行情或市場回放；下一市場②輸入與來源由Work研究，非例行工程驗收。下方歷史保持。
+
+---
+
 # 最新：明示行動接原合成執行0.1
 
 入口[cash_execution使用及證據](cash_execution_20261028/README.md)、[報告](cash_execution_20261028/REPORT.md)、[事前契約](cash_execution_20261028/CONTRACT.md)。完整已核行動／原input明示綁定、重驗外層閘門，再用原simulate/make_checkpoint；原帳／權利／reserve／latest／全部token承接。27新有限案例，7唯一方法首次通過；部分7／剩13、未成／到期／較晚撤銷與逐日權利對帳有actual。外層遭拒或改寫0次執行，無新策略／委託生成／市場回放。原引擎／資格不改，手算現金欄位原稿及勘誤分存；沿根里程碑自審保存，下方歷史完整保持。

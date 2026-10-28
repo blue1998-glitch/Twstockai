@@ -1,3 +1,15 @@
+# 2026-10-28 最新有效｜同原帳兩輪明示合成案例0.1
+
+入口股票系統M1_v0_18/capital_research/cash_two_rounds_20261028/README.md、REPORT.md、CONTRACT.md及actual。既有cash_action.evaluate/execute直接支援，產品模組改動0，無新協調／READ／並列工具。第一輪opening-B20保存結果只READ不重跑；1/8已結清、無活單／應付的原checkpoint接第二輪1/8 17:00明示追加，原1/9 tape／日曆／origin／close proof全文重用，窗口仍止1/12，新增行情0。
+
+原始本金1180與當期淨值1178.6分開；第二輪B20成本401.4，1/9原現金598.6／應付401.4／嚴格可用197.2，reserve100另留，1/12原80權利到位及C2可交易後現金277.2、B40/C4，淨值1177.2僅為合成成本對帳。原opening、第一輪逐日前綴／fills／orders、latest／fact sources及全部9舊token保留，3新獨立token加入共12；不把原B-event或假FIRST_ENTRY變新批。六個第二輪分支互斥，正例simulate1，其餘舊觸發／假首次／reserve／應收／錯前身皆執行0。
+
+先存精確input/expected/來源，再RUN；4唯一方法首次全過，不加第一輪歷史PASS／案例數，舊suite、數值環境／未來隔離控制未重跑。無失敗、勘誤或產品修補。基線5d41b937144a239a64e016c7b8accde20c49b3ae，唯一Codex沿里程碑自審／原分支正常保存及GitHub固定SHA讀回，無人工操作或Work例行工程驗收需求。
+
+本輪範圍已完成、未見必修程式缺口，不再為繼續新增包裝。真實②仍需Work與使用者研究最少比較輸入及來源證明，不由Codex定N／比例／政策，假想帳不解除市場來源缺口。1101 UNKNOWN、70/2/其中8/真實合格0、正式false／主壓力null、來源0.10所有parents／圖形人工及原未支援保持；活單／期初應付不中斷續接、R2/F、來源認證與完整分叉不擴張。無市場回放／producer／資格重算／九路徑／UI/Android／樣本外、新行情／bootstrap或部署交易。Work原件／Astra／救援仍未讀。下方歷史原文保留。
+
+---
+
 # 2026-10-28 最新有效｜明示行動接原合成執行0.1
 
 入口股票系統M1_v0_18/capital_research/cash_execution_20261028/README.md、REPORT.md、CONTRACT.md及actual。新增cash_action_execution.execute，綁完整cash_action input／checked結果與明示full ID，沿原evaluate重驗外層資格再接原simulate／make_checkpoint；不是READ重算或只看core feasible。錯原結果／metadata／輸入、遭拒但core可行、超量拆單／SELL或HOLD夾單均在simulate前拒絕。原origin／close proof全文綁定，latest取原checkpoint；委託／tape／日曆全部外部明示，不生成股數、委託、策略或新帳。
