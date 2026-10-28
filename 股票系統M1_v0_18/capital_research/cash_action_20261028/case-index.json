@@ -1,0 +1,43 @@
+{
+  "cases": [
+    "opening-cash-first-B",
+    "opening-hold-zero-A",
+    "original-cash-no-sale-A",
+    "exit-unsettled-first-B-small",
+    "exit-settled-first-B",
+    "receivable-not-buying-power",
+    "settled-larger-B",
+    "reserve-not-spendable",
+    "fees-paid-from-original-cash",
+    "reentry-old-trigger",
+    "reentry-independent-A",
+    "reentry-shared-bar",
+    "cross-stock-trigger",
+    "false-first-after-exit",
+    "unknown-phase",
+    "unknown-capital-review",
+    "revoked-evidence",
+    "joint-risk",
+    "liquidity",
+    "wrong-latest",
+    "wrong-checkpoint",
+    "account-override",
+    "token-override",
+    "active-partial-order",
+    "opening-payable",
+    "batch-basis-mismatch",
+    "checkpoint-source-mismatch",
+    "real-source-refused",
+    "family-override",
+    "future-policy",
+    "future-revocation-prefix"
+  ],
+  "fixture_checkpoint_builds": 4,
+  "market_samples": 0,
+  "contract": {
+    "path": "股票系統M1_v0_18/capital_research/cash_action_20261028/CONTRACT.md",
+    "bytes": 5018,
+    "sha256": "3e2246bfe3fda173f38d52d7e031cb0ff9c0d6c0bbb307362bbbaaf33c4198c9"
+  },
+  "inputs_and_oracles_frozen_before_adapter": true
+}

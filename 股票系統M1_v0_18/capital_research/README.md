@@ -1,3 +1,9 @@
+# 最新：明示現金／退出後原帳行動接線0.1
+
+入口[cash_action使用與證據](cash_action_20261028/README.md)、[報告](cash_action_20261028/REPORT.md)、[事前契約](cash_action_20261028/CONTRACT.md)。純evaluate沿原decide/resume檢查HOLD／用已結現金買進；原A可為0，不重寫quantity。原帳／權利／reserve／latest／全部token保持，假首次／舊觸發／應收借用拒絕，無活單及應付才續接。31有限案例、7唯一方法首次通過；沒有新委託／成交／市場回放，正式資格及拒算保持。初版／最終／手算勘誤分存。沿根里程碑交付，不新增平行規則；下方歷史保留。
+
+---
+
 # 2026-10-27 最新有效｜C原單重評／一次再評外層數值隔離0.2.1／0.3.1
 
 入口c_review_context_20261027/README.md、REPORT.md、CONTRACT.md及before／after-review-only／after。先凍結兩份source、完整input／expected／actual指紋，再定向重現。修前重評Overflow、再評Overflow／Inexact；先只修重評，中間actual證明再評仍在自己的前置／最終checkpoint失敗，才修第二入口，不把相依缺陷當兩份獨立證明。

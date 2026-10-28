@@ -4,6 +4,18 @@
 
 ---
 
+# 2026-10-28 最新有效｜明示現金／退出後原帳行動接線0.1
+
+入口股票系統M1_v0_18/capital_research/cash_action_20261028/README.md、REPORT.md、CONTRACT.md及after-final。新增純cash_action.evaluate，只核外部明示HOLD／BUY_FROM_SETTLED_CASH；不經正持股quantity產生器，不生成／選擇數量、委託或成交。現金、A已退出及原A仍在皆可核；其他持股／權利不清零。完整checkpoint沿原validate/account_at_checkpoint/resume取得原帳、精確latest、fills／closed orders、fact/attempt歷史及全部token；無活單／期初應付才續接，原限售拒絕保持。不能手填帳／token、改source/basis或用應收／一般reserve買進。
+
+FIRST_ENTRY沿原episode核對，退出後不能假首次；有效舊事實可當期review。新批固定C、本股獨立觸發且全部舊token去重，共量柱／跨股／舊事件不通過；外層拒絕不能沿raw core診斷升合格建議。完整輸入與core metadata移完整性區，未來撤銷不改早期research。新行動无simulate／quantity generation／市場回放；checkpoint核對仍用原ledger，不冒帳務呼叫0。
+
+先存契約／input/expected/source，再準備4份原合成job checkpoint，31份action oracle凍結後才實作。after-final 31案符合預期，7唯一方法首次通過，不累加初版／準備／歷史PASS。原本金2180／reserve100與995賣出應收、80現金權利及C2股份權利沿原帳到位；無新本金。初版手算漏既有整元稅進位，原expected留史另作勘誤，費稅公式／31案oracle不改。初版source／actual保留，最終source以after-final綁定；缺token／改opening／較晚可知close另存邊界。
+
+本輪最低d77c244d122af879b84cd85d6a9f7ac3aea0149e，原唯一Codex沿功能里程碑自審、原分支正常保存/GitHub固定SHA讀回，無人工操作、不預設Work例行驗收。重大複核集中原帳權利／reserve交割／latest及token／首次與新批／未來隔離。八行動完整dispatcher、明示行動接原合成執行、整張域及市場數值回放尚未實作；原core/quantity/execution/ledger/②/舊成果全不改。N/比例/政策/風險仍Work與使用者確認。1101 UNKNOWN、70/2/其中8/真實合格0、正式false/主壓力null、0.10全部parents／圖形／人工及原未支援保持。Work原件／Astra／救援未讀，不擴6488、R2/F、來源認證，不新抓來源、舊suite／producer／UI／bootstrap或部署交易。下方歷史原文完整留史。
+
+---
+
 # 2026-10-28 最新有效｜②主線案例情境適配0.2
 
 入口股票系統M1_v0_18/rotation_research/market_case_v2_20261028/README.md、REPORT.md、CONTRACT.md及final。只完成能力核對第1項：新增market_case_v2純情境與前綴、外部IO沿原load_saved/Journal；不改舊0.1/原件/來源/帳務，不另建回測或READ。日期/價格/角色為明示輸入；②4/9主線分開①4/9開25.50。4/10普通開25.35核庫內RAW，零股首筆25.60只據Work摘要，原始首筆來源/時刻/容量未知，均非成交。選擇只明示單一素材ID，不自動選或批准模型。
