@@ -1,3 +1,15 @@
+# 2026-10-28 最新有效｜②主線案例情境適配0.2
+
+入口股票系統M1_v0_18/rotation_research/market_case_v2_20261028/README.md、REPORT.md、CONTRACT.md及final。只完成能力核對第1項：新增market_case_v2純情境與前綴、外部IO沿原load_saved/Journal；不改舊0.1/原件/來源/帳務，不另建回測或READ。日期/價格/角色為明示輸入；②4/9主線分開①4/9開25.50。4/10普通開25.35核庫內RAW，零股首筆25.60只據Work摘要，原始首筆來源/時刻/容量未知，均非成交。選擇只明示單一素材ID，不自動選或批准模型。
+
+③圖形確認不自動加碼；24.80本例守位不自動全退。④4/15、4/17後續新低尚未完成、⑤4/22反證逐時保存；前綴只投影有日期類型化角色，不複製含未來內容的整段來源原文。B截至4/15圖形機會與局部32.85可保存，原35.50另保留，局部參照不猜原K日；6488不擴入。兩未來價格/反證變體及未來無效模型價不改較早prefix；完整來源身分另列，歷史available_at/role-known仍null、usable signals空，不冒當時正式可交易。
+
+先凍結精確input/expected/正反例/來源指紋，再實作。13個最終準備診斷符合預期；8唯一方法首次全過，不累加控制/初終批/舊PASS。初次6488已被較早主線綁定拒絕，補前置範圍校驗得到明確範圍拒絕，原source/actual/oracle留史；final才綁最終source。fresh context1、qualify/replay0，無IO且caller/DefaultContext保持。119舊原件/資料指紋保持，舊0.1不遷移。
+
+基線e60649162241b5287496ee7cc66472301a710c29，唯一Codex沿里程碑自審、原分支正常保存/GitHub固定SHA讀回；無人工操作、不預設Work例行驗收。本輪無市場回放/帳戶重建、八行動dispatcher、現金續接或整張數量域；第2項若要開工須另明示。本金N/股數/比例/預留/期間/風險/概率/排名及執行模型全null，K/X4/R4_X5/X5未批。Work原件v0.24/JSON0.16未取得未讀，只保存使用者摘要；Astra/救援未讀。source0.10全部parents/coverage INCOMPLETE、原1101 UNKNOWN、70/2/其中8/真實合格0、正式false/主壓力null及原未支援保持，無舊suite/producer/九路徑、新來源/私人檔案、UI/Android/部署交易。下方原文完整留史。
+
+---
+
 # 2026-10-27 最新有效｜首個明示市場案例準備/資格接線0.1
 
 入口股票系統M1_v0_18/rotation_research/market_case_20261027/README.md、REPORT.md、CONTRACT.md及after-final。新增market_case純準備/當期前綴與market_case_io明示來源保存入口，不新增READ工具、帳務或策略。使用者指定1101 3/12 high25.20、4/8 close25.40、4/9 close25.10及2884 2/26 high35.50、6/22 close35.80與保存RAW相符；B首個嚴格突破在完整保存前綴核對，缺報價仍UNKNOWN。四月不引用六月，三種未來尾段不改四月prefix；source完整身分另列，歷史available_at仍null、usable signal空，不倒填擷取時間或升正式主壓力。

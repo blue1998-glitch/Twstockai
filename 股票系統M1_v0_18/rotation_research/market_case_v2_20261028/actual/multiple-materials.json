@@ -1,0 +1,17 @@
+{
+  "actual": null,
+  "error": "EXPLICIT_SINGLE_KNOWN_MATERIAL_REQUIRED",
+  "traceback": "Traceback (most recent call last):\n  File \"/workspace/Twstockai/股票系統M1_v0_18/rotation_research/market_case_v2_20261028/build.py\", line 28, in probe\n    try:actual=prepare_context(request,saved,summary);error=None;trace=None\n               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"/workspace/Twstockai/股票系統M1_v0_18/rotation_research/market_case_v2.py\", line 138, in prepare_context\n    opportunity=_header(request,saved,work_summary)\n                ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"/workspace/Twstockai/股票系統M1_v0_18/rotation_research/market_case_v2.py\", line 51, in _header\n    require(selected is None or (isinstance(selected,str) and selected in known),'EXPLICIT_SINGLE_KNOWN_MATERIAL_REQUIRED')\n  File \"/workspace/Twstockai/股票系統M1_v0_18/rotation_research/market_case.py\", line 27, in require\n    if not ok:raise CaseError(reason)\n              ^^^^^^^^^^^^^^^^^^^^^^^\nrotation_research.market_case.CaseError: EXPLICIT_SINGLE_KNOWN_MATERIAL_REQUIRED\n",
+  "calls": {
+    "context": 1,
+    "source_validate": 0,
+    "qualify": 0,
+    "ledger_replay": 0,
+    "capital_simulate": 0,
+    "quantity_replay": 0,
+    "legacy_prepare": 0
+  },
+  "input_unchanged": true,
+  "sources_unchanged": true,
+  "summary_unchanged": true
+}
