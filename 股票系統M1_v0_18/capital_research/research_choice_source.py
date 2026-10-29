@@ -1,7 +1,7 @@
 """Pure saved-choice/source consistency check, never selection or execution."""
 from copy import deepcopy
 from .lifecycle import FLAGS
-from .research_choice import validate_record, bind_saved_source
+from .research_choice import validate_record, bind_saved_source, source_research, V04_SOURCE, SCHEMA_V2
 
 SCHEMA = 'capital-research-choice-source-check/0.1'
 
@@ -23,9 +23,10 @@ def check_saved(choice_value, explicit_source):
         c = validate_record(choice_value)['choice']
         out.update(choice_status=c['status'], record_id=c['record_id'])
         _require(c['source_binding'] is not None, 'CHOICE_SOURCE_BINDING_UNKNOWN')
-        _require(isinstance(explicit_source, dict) and isinstance(explicit_source.get('adapter'), dict),
+        _require(isinstance(explicit_source, dict) and (isinstance(explicit_source.get('adapter'), dict) or explicit_source.get('schema')==V04_SOURCE),
             'COMPLETE_EXPLICIT_SOURCE_WRAPPER_REQUIRED')
         binding = bind_saved_source(explicit_source)
+        _require((explicit_source.get('schema')==V04_SOURCE)==(c['schema']==SCHEMA_V2),'EXPLICIT_CHOICE_SOURCE_VERSION_CONFLICT')
         if c['source_binding'] != binding:
             declared = c['source_binding']
             out['mismatch_fields'] = sorted(k for k in set(declared) | set(binding)
@@ -35,11 +36,14 @@ def check_saved(choice_value, explicit_source):
         role = 'SELECTED' if c['selected'] is not None else 'REJECTED_SNAPSHOT' if snapshot is not None else 'NONE'
         member = None
         if snapshot is not None:
-            candidates = explicit_source['adapter']['generation']['research']['candidates']
+            candidates = source_research(explicit_source)['candidates']
             matches = [row for row in candidates if row['id'] == snapshot['id']]
             _require(len(matches) == 1, 'CANDIDATE_ID_NOT_UNIQUE')
             member = matches[0]
             _require(snapshot == member, 'CANDIDATE_SNAPSHOT_MISMATCH')
+        if c['schema']==SCHEMA_V2 and c['source_roles'] is not None:
+            q=explicit_source['quantity_request']
+            _require(c['source_roles']==dict(incumbent=q['incumbent'],destination=q['destination']),'SAVED_SOURCE_ROLES_CONFLICT')
         out.update(check_status='MATCHED', candidate_role=role,
             candidate_check='EXACT_UNIQUE_MEMBER' if snapshot is not None else 'NO_SAVED_CANDIDATE',
             candidate_qualification=snapshot['classification'] if snapshot is not None else None,

@@ -5,6 +5,9 @@ from .quantity_choice_rules import select_candidate
 
 INPUT = 'capital-research-choice-input/0.1'
 SCHEMA = 'capital-research-choice/0.1'
+INPUT_V2 = 'capital-research-choice-input/0.2'
+SCHEMA_V2 = 'capital-research-choice/0.2'
+V04_SOURCE = 'capital-saved-quantity-source/0.1'
 ELIGIBLE = {'CURRENTLY_FEASIBLE': 'FEASIBLE', 'WAIT_SETTLEMENT_REASSESSMENT': 'CONDITIONAL'}
 
 
@@ -15,6 +18,9 @@ def _require(condition, reason):
 
 def bind_saved_source(saved):
     """Validate saved structural links, never rerun a numerical producer."""
+    if saved.get('schema') == V04_SOURCE:
+        from .research_quantity_source import bind_source
+        return bind_source(saved)
     a = saved['adapter']; g = a['generation']; r = g['research'] if g is not None else None
     _require(a['schema'] == 'capital-quantity-after-retry/0.1' and a['synthetic'] is True and
         a['status'] == 'GENERATED' and r is not None and r['schema'] == 'capital-quantity-candidates/0.2' and
@@ -59,6 +65,11 @@ def bind_saved_source(saved):
         versions=dict(adapter=a['schema'], generation=r['schema'], checkpoint=cp['schema'], decision=baseline['schema']))
 
 
+def source_research(saved):
+    """The caller must validate the explicit source before reading its members."""
+    return (saved['generation'] if saved.get('schema') == V04_SOURCE else saved['adapter']['generation'])['research']
+
+
 def _qualified(candidate):
     classification = candidate['classification']
     if classification not in ELIGIBLE or candidate['feasible_for_research'] is not True:
@@ -75,25 +86,34 @@ def _qualified(candidate):
 
 
 def choose_saved(request):
-    r = dict(schema=SCHEMA, synthetic=True, status='REFUSED', reasons=[], request_id=_fp(request),
+    v2=request.get('schema')==INPUT_V2
+    r = dict(schema=SCHEMA_V2 if v2 else SCHEMA, synthetic=True, status='REFUSED', reasons=[], request_id=_fp(request),
         source_binding=None, requested_selection=deepcopy(request.get('selection')),
         recorded_at=request.get('recorded_at'), selected=None, rejected_candidate=None,
         purpose='EXPLICIT_RESEARCH_INTENT_ONLY', ranking=None, execution_authorized=False,
         order_generation='NOT_PERFORMED', execution='NOT_PERFORMED', primary_pressure_id=None,
         **{k: False for k in FLAGS})
+    if v2:r['source_roles']=None
     try:
         _require(set(request) == {'schema', 'synthetic', 'saved_result', 'source_binding', 'selection', 'recorded_at'} and
-            request['schema'] == INPUT and request['synthetic'] is True, 'EXPLICIT_RESEARCH_CHOICE_REQUIRED')
+            request['schema'] in (INPUT,INPUT_V2) and request['synthetic'] is True, 'EXPLICIT_RESEARCH_CHOICE_REQUIRED')
+        _require((request['saved_result'].get('schema')==V04_SOURCE)==v2,'EXPLICIT_CHOICE_SOURCE_VERSION_CONFLICT')
         binding = bind_saved_source(request['saved_result'])
         _require(request['source_binding'] == binding, 'SOURCE_BINDING_MISMATCH')
         r['source_binding'] = binding
         _require(_time(request['recorded_at']) >= _time(binding['decision_at']), 'RECORD_TIME_PRECEDES_SOURCE_DECISION')
-        research = request['saved_result']['adapter']['generation']['research']
+        research = source_research(request['saved_result'])
+        if v2:
+            q=request['saved_result']['quantity_request']
+            r['source_roles']=dict(incumbent=q['incumbent'],destination=q['destination'])
         candidate = select_candidate(research['candidates'], request['selection'], _integer)
         reason = request['selection']['reason']
         _require(isinstance(reason, str) and bool(reason.strip()), 'EXPLICIT_TEXT_REASON_REQUIRED')
         r['rejected_candidate'] = deepcopy(candidate)
         classification = _qualified(candidate)
+        if v2:
+            from .research_quantity_source import validate_selected
+            validate_selected(candidate,binding,roles=r['source_roles'])
         _require(candidate['core_evaluation']['common_account_id'] == binding['account_id'], 'SELECTED_ACCOUNT_CONFLICT')
         r.update(status='RECORDED_CONDITIONAL_RESEARCH_INTENT' if classification == 'WAIT_SETTLEMENT_REASSESSMENT'
             else 'RECORDED_RESEARCH_INTENT', selected=deepcopy(candidate), rejected_candidate=None)
@@ -107,7 +127,7 @@ def validate_record(saved):
     """READ only: validate the saved record, without choosing or fetching source."""
     _require(set(saved) == {'choice'}, 'CHOICE_RECORD_ENVELOPE_REQUIRED')
     r = saved['choice']
-    _require(r['schema'] == SCHEMA and r['synthetic'] is True and
+    _require(r['schema'] in (SCHEMA,SCHEMA_V2) and r['synthetic'] is True and
         r['purpose'] == 'EXPLICIT_RESEARCH_INTENT_ONLY', 'UNSUPPORTED_CHOICE_RECORD')
     _signed(r, 'record_id')
     _require(all(r[k] is False for k in FLAGS) and r['execution_authorized'] is False and
@@ -117,6 +137,9 @@ def validate_record(saved):
         _require(r['selected'] is None and bool(r['reasons']), 'REFUSED_CHOICE_CONFLICT')
     else:
         classification = _qualified(r['selected'])
+        if r['schema']==SCHEMA_V2:
+            from .research_quantity_source import validate_selected
+            validate_selected(r['selected'],r['source_binding'],roles=r['source_roles'])
         expected = 'RECORDED_CONDITIONAL_RESEARCH_INTENT' if classification == 'WAIT_SETTLEMENT_REASSESSMENT' else 'RECORDED_RESEARCH_INTENT'
         _require(r['status'] == expected and r['source_binding'] is not None and not r['reasons'] and
             r['rejected_candidate'] is None, 'RECORDED_CHOICE_CONFLICT')

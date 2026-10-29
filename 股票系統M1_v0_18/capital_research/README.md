@@ -1,3 +1,15 @@
+# 2026-10-29 最新有效｜保存0.4候選的明示研究選擇0.2
+
+入口股票系統M1_v0_18/capital_research/choice_v04_20261029/README.md、CONTRACT.md、REPORT.md及final。沿原choose_saved／Journal／來源核對新增choice-input/0.2 → choice/0.2；明示完整0.4 request＋generation來源，不重新產生候選／重播，不把0.4降版或假包after-retry。原0.1及其0.2候選來源相容，原匹配、Journal、CLI／view與數值source不改。
+
+新純READ helper綁完整來源／單位及搜尋政策／逐點收據、原帳快照／權利／reserve、截止／時點、origin/latest與全部token；新opening不造checkpoint，原checkpoint限已結清無活單／應付／未解除限售。主例B93只記條件意圖，B2一般意圖；舊觸發0新增不冒新買，UNKNOWN／錯配／超限拒絕，FULL拒絕不誤擋合法HOLD。READ不重選或重算，來源一致性不是來源認證。
+
+32案事前凍結；31符合原預期，1份missing-token反例實際與正例bytes完全相同，原oracle與actual留史、不計有效拒絕。另凍結真正刪去保存baseline歷史token的反例並保存明確拒絕。初版新READ誤把after-retry input token慣例套到原resume，已改核保存union；舊input[]及全部歷史token原樣保留，未改數值producer。actual留初版，final綁最後source。8唯一方法首次全PASS，不累加build／案例／歷史PASS；fresh process禁數值imports與網路、Journal同內容／衝突／READ／UNKNOWN、完整Context及input不變、三份舊版控制精確相同皆有證據。
+
+唯一Codex沿里程碑自審、原分支正常保存及GitHub固定SHA讀回；起始9d7931c4dad658044385751533736f216423a91f且淨。無人工操作或例行Work驗收；新choice/0.2未接research_operation／supplement／比較或成交，下一步先核既有研究操作接線，不增同類READ工具。70/2/其中8/真實合格0、1101 UNKNOWN、正式false／主壓力null、來源parents／圖形人工與R2/F／原未支援及未讀原件保持。下方歷史完整保留。
+
+---
+
 # 2026-10-29 最新有效｜單位感知全換有界搜尋0.4
 
 入口股票系統M1_v0_18/capital_research/unit_full_search_20261029/README.md、CONTRACT.md、REPORT.md及actual。原quantity_candidates.generate新增明示0.4／full_search資源來源與時點；沿原allocation共用guard／寬鬆界及完整build/core/resume/batch/unit閘門逐點檢查合法新增量，不取整舊94端點、不假設單調。舊0.1／0.2／0.3當輪控制原樣相等；core／execution／continuity／ledger／成本風險公式保持。
