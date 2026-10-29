@@ -4,6 +4,16 @@
 
 ---
 
+# 2026-10-29 最新有效｜續播結清後接既有明示行動0.1
+
+入口股票系統M1_v0_18/capital_research/settled_resume_action_20261029/README.md、REPORT.md、CONTRACT.md及actual。原1/8續播結清checkpoint只READ，直接接cash_action.evaluate/execute；產品程式改動0，無新轉接／READ／協調器。原本金1180／現金858.86／reserve100、B7/C2及80現金權利／C2股份權利完整承接；原單剩13到期不復活。兩互斥正例：HOLD無新成交、終現金938.86/B7/C4；既有新獨立B-step2明示B20，只新單成交20、終現金537.46/B27/C4。1/9新應付401.4直到原1/12才結，原tape／日曆／窗口不增。
+
+先凍結七份精確input/expected/source，後保存checked及execute actual；兩新行動simulate各1，舊觸發／假首次／reserve／錯latest／仍活單五反例simulate0。4唯一方法首次全過，不加歷史PASS／案例數；逐日帳／原prefix／完整前身、fills／closed order／權利／fact／重評收據／latest與9舊＋3新token均核。原到期事件在完整前身回查，不冒新execution_events已攤平所有歷史。原續播／兩輪producer與舊suite均0，數值環境／未來隔離沿未變source證據重用，不增驗證主張。唯一Codex按里程碑自審、正常保存及GitHub固定SHA讀回，無人工操作／Work例行驗收需求；起始89df50bc5f5a2a044585938a3976e723b2c5108e，本地／遠端一致且工作區淨。
+
+本項完成不再新增包裝；下一具體工程邊界可先核新批再次部分成交後，含前輪歷史root_job能否直接重用原續播。本輪未擴做，也不把1/12末端補行情。策略／數量及市場來源仍由Work與使用者研究；70/2/其中8/真實合格0、1101 UNKNOWN、正式false／主壓力null與全部來源parents／圖形人工保持。未知期初款、限售解除、R2/F、來源認證及完整分叉未支援不變，無市場回放／producer／資格重算／九路徑／UI/Android／樣本外／bootstrap或部署交易。Astra／Work原件／救援仍未取得未讀。下方歷史完整保留。
+
+---
+
 # 2026-10-28 最新有效｜原未完成委託與未交割款跨輪續播0.1
 
 入口股票系統M1_v0_18/capital_research/standing_orders_20261028/README.md、REPORT.md、CONTRACT.md及after-final。新增純execution_continuation.resume_orders，完整root_job／原checkpoint／latest／明示合成完整path綁定，先重建原歷史核對，再以原execution私有carry共用原迴圈只處理尾段。原單ID／限價／期限／剩餘、fills、應收應付、其他股份權利、一般reserve、fact／重評歷史與全部token保存，不重新送單／決策或重設本金。費稅／ledger／core／continuity／來源與風險公式未改；新決策入口的活單／應付拒絕仍保留。內層execution0.8／0.9及checkpoint0.7／0.8不遷移，實作revision0.10.1，外層新契約0.1。

@@ -1,3 +1,9 @@
+# 最新：續播結清後接既有明示行動0.1
+
+入口[使用及證據](settled_resume_action_20261029/README.md)、[報告](settled_resume_action_20261029/REPORT.md)、[事前契約](settled_resume_action_20261029/CONTRACT.md)。保存的1/8已結清續播checkpoint直接接既有cash_action.evaluate/execute，產品程式0改動。HOLD／新獨立B20兩互斥正例成功，五反例皆simulate前停；原單剩13到期、原帳／權利／reserve／latest及所有token保持。4唯一方法首次通過，不加歷史PASS，原續播不重跑，tape／日曆不增。未支援及正式false／真實拒算維持；不再新增轉接或READ包裝，下方歷史保持。
+
+---
+
 # 最新：原未完成委託／未交割款跨輪續播0.1
 
 入口[使用及證據](standing_orders_20261028/README.md)、[報告](standing_orders_20261028/REPORT.md)、[事前契約](standing_orders_20261028/CONTRACT.md)。resume_orders從完整root_job／原checkpoint恢復原單，只處理明示尾段；不撤掉重下、不新決策／批次。原ledger／費稅不改，應收應付、reserve、權利及latest／全部token保存。八主例逐觀察／每日／終態與原一次執行相同，兩次續播與賣出應收另有actual；9唯一方法通過，不累加初批或歷史PASS。原已結清入口相容；未知期初應付／外部單／缺完整路徑與新review仍拒絕，正式false／真實拒算保持。下方歷史留存。
