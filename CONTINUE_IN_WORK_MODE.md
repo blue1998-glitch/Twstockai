@@ -4,6 +4,16 @@
 
 ---
 
+# 2026-10-29 最新有效｜外部明示交易單位候選數量域0.3
+
+入口股票系統M1_v0_18/capital_research/quantity_domain_20261029/README.md、CONTRACT.md、REPORT.md及final。原quantity_candidates.generate新增顯式0.3／quantity_domain，舊0.1／0.2保持；A／B單位、通道、來源／基底／調整版本、account及available_at外部明示，不預設1000、不定N／比例／策略。先列合法交易變動量再套原1024上限；單位不套既有股數／權利，HOLD保持原股，EXIT不整除即拒絕。FULL只重用原端點；不合單位明標NOT_IMPLEMENTED，不取整或冒稱單位最大量已求得。
+
+人工9格、A1000單位1000僅兩格／無嚴格部分量、空域／端點及全部原財務／批次閘門有證據。33原凍結案中32符合預期；一份B3 fixture錯改完整checkpoint持股，被原帳防線正確拒絕，input／expected／actual留史，另存合法獨立合成opening B3加2達5正例，不重設原帳或放寬防線。原合法checkpoint之origin2180／latest／全部token保持。8唯一方法最終全過，不加中間批／案例／舊PASS；unit1與舊版、三種未來／完整Context／input不變及主例無成交／IO控制通過。原core／allocation／ledger／風險成本公式未改；continuation仍重用既有原帳校驗，不冒所有請求ledger呼叫0。
+
+自審另補未知時點的明確ValueError，修前AttributeError原件封存，未補日期；actual／validation留初版，final／validation-final／tests-final.log綁現行source。唯一Codex依里程碑自審、原分支正常保存及GitHub固定SHA讀回，起始3dfe5b222f47f0798876687808eac98daaabe6f7，本地／遠端一致且淨；無人工或Work例行驗收需求。本輪不接0.3下游成交／回放，單位感知全換求解、混合通道／容量撮合仍未支援。下一個具體工程邊界是單位約束下的機械全換端點，另有限授權後才做；不增READ包裝。70/2/其中8/真實合格0、1101 UNKNOWN、正式false／主壓力null、來源parents／圖形人工及原未支援／未讀保持；下方歷史完整留存。
+
+---
+
 # 2026-10-29 最新有效｜既有行動評估明示匯入保存0.1
 
 入口股票系統M1_v0_18/capital_research/action_evaluation_store_20261029/README.md、CONTRACT.md、REPORT.md及actual。新增action_evaluation_store.import_evaluation／read_evaluation與明示IMPORT／READ CLI，完整來源／既有評估及外部pinned IDs一份record綁定；直接重用原Journal／_persist，不另建store／四階段協調器。七個純來源校驗函式原樣抽到saved_action_source，原evaluate_saved本文／公式保持；IMPORT及READ不載入評估器，也不計成長／回撤／帳務或回放。
