@@ -4,6 +4,16 @@
 
 ---
 
+# 2026-10-29 最新有效｜既有行動評估明示匯入保存0.1
+
+入口股票系統M1_v0_18/capital_research/action_evaluation_store_20261029/README.md、CONTRACT.md、REPORT.md及actual。新增action_evaluation_store.import_evaluation／read_evaluation與明示IMPORT／READ CLI，完整來源／既有評估及外部pinned IDs一份record綁定；直接重用原Journal／_persist，不另建store／四階段協調器。七個純來源校驗函式原樣抽到saved_action_source，原evaluate_saved本文／公式保持；IMPORT及READ不載入評估器，也不計成長／回撤／帳務或回放。
+
+16凍結案（5保存／11拒絕）及8功能唯一方法首批通過；提交前EOF格式／指紋檢查失敗另留史，更正後只重驗來源指紋方法通過，不加歷史PASS或案例數。同內容重送不改bytes／mtime，異內容／錯來源／截止／latest／token／reserve／資格／schema拒絕；原帳／權利與全部原件保留。寫入／讀回不確定為UNKNOWN，只明示READ核對；缺檔NOT_FOUND、破損UNREADABLE，不修復。新程序禁producer／評估器，READ再禁寫檔／save／mkdir／網路，完整Context與input不變控制通過；數值評估及交易帳務呼叫0，無舊suite／producer或新資料。
+
+保存狀態與evaluation_status分開，REFUSED可保存但null／正式false保持；拒算原件沒有producer input attestation，只保存EXPLICIT_REFUSAL_ASSOCIATION_NOT_REEVALUATED明示配對，不認證原因或所有重簽造假。唯一Codex依里程碑自審、原分支正常保存及GitHub固定SHA讀回，無人工操作或Work例行工程驗收需求；起始a33bfc416881e58e390c3086523ccf0d6a743a07，本地／遠端一致且淨。本項結清不再增加相同保存／READ工具；未定買賣規則／期間／比例及市場來源留回研究。70/2/其中8/真實合格0、1101 UNKNOWN、正式false／主壓力null、所有來源parents／圖形人工及原未支援／未讀原件限制保持；下方歷史原文完整留存。
+
+---
+
 # 2026-10-29 最新有效｜完整明示行動全帳戶評估轉接0.1
 
 入口股票系統M1_v0_18/capital_research/action_metrics_20261029/README.md、CONTRACT.md、REPORT.md及final-corrected。新action_account_metrics.evaluate_saved讀完整原action_request／action_result與可選一份同原單續播；沿lifecycle純READ及原account_metrics共用檢查／成長／回撤／恢復公式，不重播帳務、決策或重建checkpoint。原CLI只增明示--source-kind action，預設quantity不變；不改原帳、來源、策略／成本公式或歷史schema。

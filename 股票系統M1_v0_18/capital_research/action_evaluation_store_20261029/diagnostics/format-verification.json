@@ -1,0 +1,9 @@
+{
+  "first_metadata_update": "Wrong repository-relative path from project cwd; FileNotFoundError before writing",
+  "historical_failure_log": "tests-format.log",
+  "failure_meaning": "Test still used the pre-EOF source SHA; no function or saved result changed",
+  "correction": "Test source verification explicitly uses final-source-versions.json; original test source archived",
+  "final_log": "tests-format-corrected.log",
+  "reexecuted_unique_method": "test_01_all_frozen_originals_and_expected_statuses",
+  "unique_method_total_stays": 8
+}
