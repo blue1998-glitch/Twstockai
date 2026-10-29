@@ -1,3 +1,13 @@
+# 2026-10-29 最新有效｜新批部分成交後重用原續播0.1
+
+入口股票系統M1_v0_18/capital_research/partial_batch_resume_20261029/README.md、REPORT.md、CONTRACT.md及actual。已結清原帳接新B-step2明示批20，改用既存1/9容量7 tape另存模型，保留完整root_job.continuation前身與原限價／期限／日曆，直接重用原execute／resume_orders；產品程式改動0。舊B7與舊到期剩13不變，新批只成7、B合計14，新單剩13／預留261.65039／應付141.14沿原帳續播；一般reserve100、80現金權利／C2股份權利及本金1180保持。1/12只交割一次並到期，現金797.72/B14/C4、應付0／新單預留0，無新成交或新決策／token。
+
+一次續播及1/9→1/10→1/12兩段續播均與同root完整一次執行的共同三個觀察／全部日帳／完整execution及checkpoint相同；root起點1/8前身與外層當前水位1/9／1/10分開，latest、兩決策／12token／fact／原單及fills完整保留。錯latest、刪root前身、容量500錯路徑、重複fill與缺空日宣告五反例皆尾段前拒絕。4唯一方法首次全過，不加歷史PASS或案例數；所有input／原件／oracle／source與JSON讀回保持，無失敗或修補。原已存續播只READ；數值環境／未來證據沿未改source重用，無舊suite／producer／quantity協調器或新增行情／日曆。
+
+尾段觀察0係完整明示合成path的1/12空日宣告，缺宣告仍拒絕。本例只驗交割及剩13到期，未證剩13再次成交；不補行情、不覆寫舊B20全成actual，不預定策略或比例。起始5c6d04b487375f85f611ef34cc2fdbdc0037e583本地／遠端一致且淨，唯一Codex沿里程碑自審／正常保存及GitHub固定SHA讀回，無人工操作／Work例行驗收需求。本項結清不再新增相同包裝；買賣觸發／期間／風險仍需Work與使用者研究。70/2/其中8/真實合格0、1101 UNKNOWN、正式false／主壓力null及全部來源／圖形人工保持，原未支援與Astra／Work／救援未讀不變。無代理／worktree／新分支、bootstrap／市場回放／部署交易付費訊息；下方歷史完整保留。
+
+---
+
 # 2026-10-29 最新有效｜續播結清後接既有明示行動0.1
 
 入口股票系統M1_v0_18/capital_research/settled_resume_action_20261029/README.md、REPORT.md、CONTRACT.md及actual。原1/8續播結清checkpoint只READ，直接接cash_action.evaluate/execute；產品程式改動0，無新轉接／READ／協調器。原本金1180／現金858.86／reserve100、B7/C2及80現金權利／C2股份權利完整承接；原單剩13到期不復活。兩互斥正例：HOLD無新成交、終現金938.86/B7/C4；既有新獨立B-step2明示B20，只新單成交20、終現金537.46/B27/C4。1/9新應付401.4直到原1/12才結，原tape／日曆／窗口不增。

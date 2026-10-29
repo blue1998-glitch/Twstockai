@@ -1,3 +1,9 @@
+# 最新：新批部分成交後重用原續播0.1
+
+入口[使用及證據](partial_batch_resume_20261029/README.md)、[報告](partial_batch_resume_20261029/REPORT.md)、[事前契約](partial_batch_resume_20261029/CONTRACT.md)。已結清原帳的新批20只成交7後，含完整前身的root_job可直接重用resume_orders，不改產品程式。一次／兩段續播與完整一次執行逐觀察、逐日及完整終態相同；原本金1180、reserve100、權利／原單／latest及12token保留。應付141.14於原1/12結清、新單剩13到期，終現金797.72/B14/C4。五反例尾段前拒絕，4唯一方法首次全過；無新行情／日曆或剩13再成交證據，正式false／真實拒算保持。本項結清，不再新增相同轉接或READ工具，下方歷史留存。
+
+---
+
 # 最新：續播結清後接既有明示行動0.1
 
 入口[使用及證據](settled_resume_action_20261029/README.md)、[報告](settled_resume_action_20261029/REPORT.md)、[事前契約](settled_resume_action_20261029/CONTRACT.md)。保存的1/8已結清續播checkpoint直接接既有cash_action.evaluate/execute，產品程式0改動。HOLD／新獨立B20兩互斥正例成功，五反例皆simulate前停；原單剩13到期、原帳／權利／reserve／latest及所有token保持。4唯一方法首次通過，不加歷史PASS，原續播不重跑，tape／日曆不增。未支援及正式false／真實拒算維持；不再新增轉接或READ包裝，下方歷史保持。
