@@ -1,0 +1,44 @@
+{
+  "base_artifact_path": "股票系統M1_v0_18/capital_research/repair_20261025/artifacts/after/partial-cancel-chain.json",
+  "base_artifact_available": false,
+  "original_input": null,
+  "constructed_test_input": null,
+  "versions": {
+    "required_repair_version": "0.3",
+    "observed_repair_version": null,
+    "original_input_sha256": null,
+    "original_module_sha256": null,
+    "local_head": "392b94a4f29b2e53fbfc0b7bda8a3fc1d0592b25",
+    "remote_head": "6be4333d490bcccfe952c7606dffb802b76cdd5c"
+  },
+  "actual": {
+    "status": "NOT_RUN_MISSING_ORIGINAL_0_3_INPUT_AND_SOURCE",
+    "file_error": {
+      "type": "FileNotFoundError",
+      "errno": 2,
+      "missing_path": "股票系統M1_v0_18/capital_research/repair_20261025/artifacts/after/partial-cancel-chain.json",
+      "message": "[Errno 2] No such file or directory: '/workspace/Twstockai/股票系統M1_v0_18/capital_research/repair_20261025/artifacts/after/partial-cancel-chain.json'"
+    }
+  },
+  "test_methods_executed": 0,
+  "defect_reproduced": null,
+  "defect_disproved": null,
+  "oracle_modified": false,
+  "case": "A-A_then_B",
+  "selector": "value.input.first",
+  "requested_transform": {
+    "asset_order": "A_THEN_B",
+    "scheme": "E-partial",
+    "B_evidence": [],
+    "B_capital_eligibility_evidence_ids": [
+      "A-event"
+    ],
+    "B_review_stock_basis_and_other_inputs": "PRESERVE_ORIGINAL"
+  },
+  "expected": {
+    "B_new_capital_eligibility": false,
+    "borrow_other_stock_evidence": false,
+    "correct_own_stock_evidence_positive_control": "MUST_BE_PRESERVED_NOT_RUN"
+  },
+  "hypothesis": "STATIC_REVIEW_ONLY_REQUIRES_EXECUTION_NOT_CONFIRMED"
+}
