@@ -7,6 +7,7 @@ from copy import deepcopy
 from decimal import Context, InvalidOperation, DivisionByZero, Overflow, ROUND_HALF_EVEN, localcontext
 
 from .cash_action import evaluate as evaluate_action
+from .cash_action import INPUT_V2 as ACTION_INPUT_V2, SCHEMA_V2 as ACTION_SCHEMA_V2
 from .core import fingerprint, quantity, timestamp
 from .execution import simulate
 from .continuity import make_checkpoint
@@ -14,6 +15,8 @@ from .close_clock import close_record
 
 INPUT='capital-cash-action-execution-input/0.1'
 SCHEMA='capital-cash-action-execution/0.1'
+INPUT_V2='capital-cash-action-execution-input/0.2'
+SCHEMA_V2='capital-cash-action-execution/0.2'
 FLAGS=('data_qualified','execution_model_qualified','historical_signal_eligible','policy_authorized','live_execution_authorized')
 ORDER_FIELDS={'id','code','side','shares','limit_price','decision_at','submitted_at','expires_at'}
 
@@ -55,18 +58,19 @@ def _job(action_input, checked, spec):
         if timestamp(obs['at'])>timestamp(spec['observed_until']) or timestamp(obs['at'])<timestamp(data['decision_at']):
             raise ValueError('OBSERVATION_OUTSIDE_EXPLICIT_WATERMARK')
     intent=checked['research']['intent'];action=intent['external_action']
+    selling=checked['research']['schema']==ACTION_SCHEMA_V2
     if action['kind']=='HOLD' and spec['orders']:
         raise ValueError('HOLD_CANNOT_CREATE_ORDERS')
     count=0
     for order in spec['orders']:
         if not isinstance(order,dict) or set(order)!=ORDER_FIELDS:
             raise ValueError('EXACT_EXPLICIT_ORDER_REQUIRED')
-        if order['side']!='BUY' or order['code']!=action['code']:
+        if order['side']!=('SELL' if selling else 'BUY') or order['code']!=action['code']:
             raise ValueError('ORDER_OUTSIDE_CHECKED_ACTION_SCOPE')
         n=int(quantity(order['shares']))
         if n<=0:raise ValueError('POSITIVE_EXPLICIT_ORDER_REQUIRED')
         count+=n
-    if count>int(quantity(action['additional_shares'])):
+    if count>int(quantity(action['sell_shares'] if selling else action['additional_shares'])):
         raise ValueError('AGGREGATE_ORDER_EXCEEDS_CHECKED_ACTION')
     job=dict(schema='capital-execution-input/0.1',decision_input=data,plan_id=intent['evaluated_plan_id'],
         ledger_input=deepcopy(ledger),ledger_close_proof=deepcopy(spec['ledger_close_proof']),orders=deepcopy(spec['orders']),
@@ -79,7 +83,8 @@ def _job(action_input, checked, spec):
 
 
 def _execute(request):
-    out=dict(schema=SCHEMA,synthetic=True,status='PENDING',reasons=[],execution_calls=0,binding=None,
+    selling=isinstance(request,dict) and request.get('schema')==INPUT_V2
+    out=dict(schema=SCHEMA_V2 if selling else SCHEMA,synthetic=True,status='PENDING',reasons=[],execution_calls=0,binding=None,
         execution_job=None,execution=None,checkpoint=None,numeric_result=None,
         order_generation='NOT_PERFORMED',ranking=None,selected_strategy=None,strategy_validated=False,
         **{k:False for k in FLAGS},primary_pressure_id=None)
@@ -88,7 +93,7 @@ def _execute(request):
     stage='BIND_FULL_ACTION'
     try:
         if (not isinstance(request,dict) or set(request)!={'schema','synthetic','action_input','checked_action','expected_checked_action_id','execution_spec'}
-                or request['schema']!=INPUT or request['synthetic'] is not True):
+                or request['schema'] not in (INPUT,INPUT_V2) or request['synthetic'] is not True):
             raise ValueError('EXPLICIT_SYNTHETIC_CASH_EXECUTION_REQUIRED')
         checked=request['checked_action'];original=request['action_input']
         checked_id=fingerprint(checked)
@@ -96,8 +101,10 @@ def _execute(request):
             raise ValueError('FULL_CHECKED_ACTION_ID_MISMATCH')
         if checked['source_integrity_metadata']['full_request_id']!=fingerprint(original):
             raise ValueError('ACTION_INPUT_ID_MISMATCH')
-        if checked['research']['schema']!='capital-cash-action/0.1':
+        if checked['research']['schema']!=(ACTION_SCHEMA_V2 if selling else 'capital-cash-action/0.1'):
             raise ValueError('SUPPORTED_FULL_CHECKED_ACTION_REQUIRED_NO_MIGRATION')
+        if selling and original['schema']!=ACTION_INPUT_V2:
+            raise ValueError('EXECUTION_ACTION_VERSION_MISMATCH')
         fresh=evaluate_action(original)
         if fresh!=checked:
             raise ValueError('BOUND_ACTION_RESULT_MISMATCH')

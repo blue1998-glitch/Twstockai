@@ -12,6 +12,8 @@ from .quantity_candidates import _validate_batch_context, _first_entry_reasons
 
 INPUT='capital-cash-action-input/0.1'
 SCHEMA='capital-cash-action/0.1'
+INPUT_V2='capital-cash-action-input/0.2'
+SCHEMA_V2='capital-cash-action/0.2'
 
 
 def evaluate(request):
@@ -71,7 +73,8 @@ def _account_source(source, template):
 
 
 def _evaluate(request):
-    out=dict(schema=SCHEMA,synthetic=True,status='PENDING',reasons=[],intent=None,
+    selling=isinstance(request,dict) and request.get('schema')==INPUT_V2
+    out=dict(schema=SCHEMA_V2 if selling else SCHEMA,synthetic=True,status='PENDING',reasons=[],intent=None,
         core_decision=None,account_binding=None,research_recommendation=dict(candidate_ids=[],selected_id=None,ranking=None),
         order_generation='NOT_PERFORMED',execution='NOT_PERFORMED',account_posting='NOT_PERFORMED',
         strategy_validated=False,data_qualified=False,execution_model_qualified=False,historical_signal_eligible=False,
@@ -81,7 +84,7 @@ def _evaluate(request):
         return dict(research=out,source_integrity_metadata=integrity)
     try:
         if (not isinstance(request,dict) or set(request)!={'schema','synthetic','decision_template','account_source','action','policy'}
-                or request['schema']!=INPUT or request['synthetic'] is not True
+                or request['schema'] not in (INPUT,INPUT_V2) or request['synthetic'] is not True
                 or any(not isinstance(request[k],dict) for k in ('decision_template','account_source','action','policy'))
                 or request['decision_template'].get('synthetic') is not True):
             raise ValueError('EXPLICIT_SYNTHETIC_CASH_ACTION_REQUIRED')
@@ -90,7 +93,8 @@ def _evaluate(request):
             raise ValueError('DERIVED_ACCOUNT_PLANS_TOKENS_CANNOT_BE_OVERRIDDEN')
         if {'orders','tape','continuation','ledger_input','reassessments','selected_candidate'} & set(template):
             raise ValueError('DECISION_TEMPLATE_EXECUTION_FIELDS_FORBIDDEN')
-        if set(action)!={'id','kind','code','additional_shares','trigger_ids','batch_context'}:
+        fields={'id','kind','code','sell_shares','reason'} if selling else {'id','kind','code','additional_shares','trigger_ids','batch_context'}
+        if set(action)!=fields:
             raise ValueError('EXACT_EXPLICIT_ACTION_REQUIRED')
         if not isinstance(action['id'],str) or not action['id'] or action['id']=='A-zero':
             raise ValueError('EXPLICIT_NONBASELINE_ACTION_ID_REQUIRED')
@@ -101,15 +105,46 @@ def _evaluate(request):
         nonnegative(policy['edge_budget'])
         if template['execution_model']['buying_power']!='SETTLED_CASH_ONLY':
             raise ValueError('CREDIT_CONTINUATION_NOT_IMPLEMENTED')
+        if selling:
+            source=request['account_source']
+            if source.get('kind')!='CHECKPOINT':
+                raise ValueError('CHECKPOINT_REQUIRED_FOR_SELL')
+            sources=source['checkpoint']['origin_ledger_input']['sources']
+            if not sources or any(s['kind']!='ENGINEERED_ACCOUNTING_FIXTURE_NOT_MARKET' for s in sources.values()):
+                raise ValueError('EXPLICIT_SYNTHETIC_SELL_CHECKPOINT_REQUIRED')
         account,tokens,previous,cp,binding=_account_source(request['account_source'],template)
         data=deepcopy(template);data.update(account=account,consumed_evidence_tokens=tokens,plans=[])
         continuation=None if cp is None else dict(previous_decision=previous,checkpoint=cp,cancelled_order_ids=[])
         targets={c:str(int(quantity(row['shares']))) for c,row in account['holdings'].items()}
-        triggers=action['trigger_ids']
+        triggers=[] if selling else action['trigger_ids']
         if not isinstance(triggers,list) or any(not isinstance(t,str) or not t for t in triggers):
             raise ValueError('EXPLICIT_TRIGGER_LIST_REQUIRED')
         first=False;batch=None
-        if action['kind']=='HOLD':
+        sale_scope=None
+        if selling:
+            if action['kind'] not in ('REDUCE_HOLDING','EXIT_SELLABLE_HOLDING'):
+                raise ValueError('EXPLICIT_SELL_ACTION_KIND_REQUIRED')
+            if not isinstance(action['reason'],str) or not action['reason'].strip():
+                raise ValueError('EXPLICIT_SELL_REASON_REQUIRED')
+            code=action['code']
+            if code not in targets:
+                raise ValueError('EXPLICIT_HELD_ASSET_REQUIRED')
+            n=quantity(action['sell_shares']);held=quantity(account['holdings'][code]['shares']);sellable=quantity(account['holdings'][code]['sellable'])
+            if n<=0:
+                raise ValueError('POSITIVE_EXPLICIT_SELL_SHARES_REQUIRED')
+            if n>sellable:
+                raise ValueError('SELL_QUANTITY_EXCEEDS_AVAILABLE_SHARES')
+            if action['kind']=='REDUCE_HOLDING' and n>=held:
+                raise ValueError('REDUCTION_MUST_LEAVE_SPECIFIED_HOLDING')
+            if action['kind']=='EXIT_SELLABLE_HOLDING' and n!=sellable:
+                raise ValueError('EXIT_MUST_MATCH_CURRENT_SELLABLE_SHARES')
+            targets[code]=str(held-n)
+            sale_scope=dict(code=code,authorized_sell_shares=str(n),original_shares=str(held),original_sellable=str(sellable),
+                target_remaining_shares=targets[code],completion='INTENT_ONLY_CHECK_ACTUAL_FILLS',account_liquidation_claimed=False)
+            plan=dict(id=action['id'],family='E',route='R1',targets=targets,trigger_ids=[],edge_budget=policy['edge_budget'],
+                conditions=['EXPLICIT_SELL_INTENT_NOT_STRATEGY_SIGNAL','PRESERVE_OTHER_ASSETS_AND_RIGHTS','SALE_PROCEEDS_WAIT_EXPLICIT_SETTLEMENT'])
+            data['plans']=[plan];plan_id=plan['id']
+        elif action['kind']=='HOLD':
             if action['code'] is not None or action['batch_context'] is not None or quantity(action['additional_shares']) or triggers:
                 raise ValueError('HOLD_MUST_PRESERVE_ALL_SHARES_WITHOUT_BUY_SCOPE')
             plan=None;plan_id='A-zero'
@@ -160,6 +195,8 @@ def _evaluate(request):
                 feasible_for_research=passed,other_asset_targets_preserved=True,
                 account_liquidation_claimed=False,purpose='ONE_EXPLICIT_INTENT_NOT_OPTIMIZATION_OR_EXECUTION'))
         out['research_recommendation']['candidate_ids']=[plan_id] if passed else []
+        if selling:
+            out['intent']['sale_scope']=sale_scope
         return wrap()
     except (ValueError,KeyError,TypeError,IndexError,StopIteration) as exc:
         reason=str(exc);unsupported=reason.split(':',1)[0].endswith('NOT_IMPLEMENTED')

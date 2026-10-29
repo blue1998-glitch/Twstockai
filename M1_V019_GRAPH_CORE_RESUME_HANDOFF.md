@@ -1,3 +1,13 @@
+# 2026-10-29 最新有效｜已結清原帳明示減碼／退出0.2
+
+入口股票系統M1_v0_18/capital_research/explicit_sell_20261029/README.md、REPORT.md、CONTRACT.md及initial／controls。cash_action.evaluate與cash_action_execution.execute新增顯式0.2 SELL契約；原0.1 HOLD／BUY完整保持。從已結清、無活單／應付的完整原checkpoint，外部明示指定股、減碼／退出股數、理由、委託、tape及日曆；原core／execution／continuity／ledger與財務公式未改，不選時點／比例或建單。拆單總量限核准量，BUY／別股／改checked／交叉版本拒絕；退出意圖不等已成交，退出一股不等全帳現金。
+
+事前77項凍結／17保護原件／兩份舊source快照完整；原環境中斷未寫入patch，恢復先核原件另留診斷，未重建oracle。23凍結案與另存錯股單控制符合預期，8唯一方法首次全過，不累加舊PASS／案例。減B3終現金996.80/B4/C4；退出B7終1076.72/B0/C4；拆3+4費稅按原逐fill，終1074.72。B20退出意圖只成7，剩13沿原單續至1/12交割／到期，終816.46/B13/C4；逐明示觀察、逐日、完整execution／checkpoint與同root一次執行相同。原本金1180、reserve100、80現金權利／C2股份權利、latest、fact／重評與9舊token保留，賣出應收不提前當現金。
+
+完整Decimal／未來隔離／input不變／API無IO網路控制通過；三份舊0.1結果完整相同，不重跑舊suite、producer、九路徑或市場回放。initial綁最終source，舊結果只READ。本輪唯一Codex依里程碑自審、正常保存及GitHub固定SHA讀回，無人工操作或Work例行驗收需求；起始da8a9bf4e95898c6e9d95369c8cbc141b27bfe74，本地／遠端一致。未擴活單新決策、限售解除、信用、未知期初款、R2/F／來源認證／市場策略；70/2/其中8/真實合格0、1101 UNKNOWN、正式false／主壓力null、來源parents／圖形人工及Astra／Work／救援未讀保持。後續先核既有明確優先順序，不增相同READ包裝或發明政策。下方歷史原文完整留存。
+
+---
+
 # 2026-10-29 最新有效｜新批部分成交後重用原續播0.1
 
 入口股票系統M1_v0_18/capital_research/partial_batch_resume_20261029/README.md、REPORT.md、CONTRACT.md及actual。已結清原帳接新B-step2明示批20，改用既存1/9容量7 tape另存模型，保留完整root_job.continuation前身與原限價／期限／日曆，直接重用原execute／resume_orders；產品程式改動0。舊B7與舊到期剩13不變，新批只成7、B合計14，新單剩13／預留261.65039／應付141.14沿原帳續播；一般reserve100、80現金權利／C2股份權利及本金1180保持。1/12只交割一次並到期，現金797.72/B14/C4、應付0／新單預留0，無新成交或新決策／token。
