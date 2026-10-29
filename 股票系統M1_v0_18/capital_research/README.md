@@ -1,3 +1,15 @@
+# 2026-10-29 最新有效｜單位感知全換有界搜尋0.4
+
+入口股票系統M1_v0_18/capital_research/unit_full_search_20261029/README.md、CONTRACT.md、REPORT.md及actual。原quantity_candidates.generate新增明示0.4／full_search資源來源與時點；沿原allocation共用guard／寬鬆界及完整build/core/resume/batch/unit閘門逐點檢查合法新增量，不取整舊94端點、不假設單調。舊0.1／0.2／0.3當輪控制原樣相等；core／execution／continuity／ledger／成本風險公式保持。
+
+主例A100/B0/C2及權利、現金1000/reserve100保持；單位A2/B3，依序111/108/105/102/99/96拒絕後得B93，仍WAIT_SETTLEMENT_REASSESSMENT。非單調0拒/1及2可/3拒得2；UNKNOWN／舊觸發不能借其他family放行，0新增只標退出留現金，不冒B買進資格。原B3新增單位2可達97，限制交易增量不改原持股；完全不整除A／限售／資源超限明確拒絕，較高未支援點則最大未知。
+
+22份事前凍結input/expected符合保存actual，三版控制及完整Decimal／input不變／未來隔離／原帳latest與全部token核對。8唯一方法最終全過；初批6 PASS/1 ERROR/1 FAIL屬測試封套與UNKNOWN路由斷言錯誤，原件留史，修正測試後只重跑兩方法PASS，不加案例／中間批／舊PASS，不改oracle。新候選無simulate／成交；checkpoint仍重用原帳校驗，不冒ledger0。唯一Codex依里程碑自審、正常commit/push與GitHub固定SHA讀回，起始d8306380f55898b153d06a853ee9e69080272fce且淨；無人工操作或例行Work驗收。
+
+本項只完成合成數量機制；0.4下游選擇／回放未接，不可刪domain降版。尚未支援混合通道／容量撮合、R2/F、來源認證、自動解除衝突與原未支援帳務，不預定策略／比例／勝者。70/2/其中8/真實合格0、1101 UNKNOWN、正式false／主壓力null、來源parents／圖形人工及未讀原件保持。下方歷史完整保留。
+
+---
+
 # 2026-10-29 最新有效｜外部明示交易單位候選數量域0.3
 
 入口股票系統M1_v0_18/capital_research/quantity_domain_20261029/README.md、CONTRACT.md、REPORT.md及final。原quantity_candidates.generate新增顯式0.3／quantity_domain，舊0.1／0.2保持；A／B單位、通道、來源／基底／調整版本、account及available_at外部明示，不預設1000、不定N／比例／策略。先列合法交易變動量再套原1024上限；單位不套既有股數／權利，HOLD保持原股，EXIT不整除即拒絕。FULL只重用原端點；不合單位明標NOT_IMPLEMENTED，不取整或冒稱單位最大量已求得。

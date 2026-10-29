@@ -12,6 +12,8 @@ INPUT_V2='capital-quantity-candidates-input/0.2'
 SCHEMA_V2='capital-quantity-candidates/0.2'
 INPUT_V3='capital-quantity-candidates-input/0.3'
 SCHEMA_V3='capital-quantity-candidates/0.3'
+INPUT_V4='capital-quantity-candidates-input/0.4'
+SCHEMA_V4='capital-quantity-candidates/0.4'
 MAX_GRID_COMBINATIONS=1024
 IMPLEMENTATION_REVISION='0.2.1-deterministic-decimal-context'
 REQUIRED={'schema','synthetic','decision_input','incumbent','destination','bounds',
@@ -86,10 +88,11 @@ def generate(request):
 
 
 def _generate(request):
-    v3=request.get('schema')==INPUT_V3
+    v4=request.get('schema')==INPUT_V4
+    v3=v4 or request.get('schema')==INPUT_V3
     v2=v3 or request.get('schema')==INPUT_V2
-    required=(REQUIRED|{'batch_context'} if v2 else REQUIRED)|({'quantity_domain'} if v3 else set())
-    if set(request)!=required or request['schema'] not in (INPUT,INPUT_V2,INPUT_V3) or request['synthetic'] is not True:
+    required=(REQUIRED|{'batch_context'} if v2 else REQUIRED)|({'quantity_domain'} if v3 else set())|({'full_search'} if v4 else set())
+    if set(request)!=required or request['schema'] not in (INPUT,INPUT_V2,INPUT_V3,INPUT_V4) or request['synthetic'] is not True:
         raise ValueError('Explicit synthetic quantity contract required; no family/route override')
     data=request['decision_input'];a,b=request['incumbent'],request['destination']
     if a==b or a not in data['assets'] or b not in data['assets']:
@@ -131,6 +134,18 @@ def _generate(request):
         raise ValueError('Exact existing continuation contract required')
     if v2:_validate_batch_context(request)
     units=quantity_domain.validate(request) if v3 else None
+    if v4:
+        search=request['full_search']
+        if (not isinstance(search,dict) or set(search)!={'schema','version','parameter_source','available_at','max_probes'}
+                or search['schema']!='capital-full-unit-search/0.1'
+                or any(not isinstance(search[k],str) or not search[k] for k in ('version','parameter_source','available_at'))):
+            raise ValueError('EXPLICIT_FULL_SEARCH_PROVENANCE_REQUIRED')
+        if timestamp(search['available_at'])>timestamp(data['decision_at']):
+            raise ValueError('FULL_SEARCH_POLICY_NOT_YET_AVAILABLE')
+        value=search['max_probes']
+        if not isinstance(value,str) or not value.isascii() or not value.isdigit() or int(value)<=0:
+            raise ValueError('EXPLICIT_POSITIVE_FULL_SEARCH_LIMIT_REQUIRED')
+        max_probes=int(value)
     configured_limit=int(quantity(request['max_grid_combinations']))
     points=(amax-amin+1)*(bmax-bmin+1)
     raw_points=points
@@ -138,7 +153,7 @@ def _generate(request):
         sale_axis,sales=quantity_domain.axis(incumbent-amax,incumbent-amin,units[a])
         buy_axis,buys=quantity_domain.axis(bmin,bmax,units[b])
         points=sale_axis['count']*buy_axis['count']
-    result=dict(schema=SCHEMA_V3 if v3 else SCHEMA_V2 if v2 else SCHEMA,synthetic=True,status='COMPLETE',incumbent=a,destination=b,
+    result=dict(schema=SCHEMA_V4 if v4 else SCHEMA_V3 if v3 else SCHEMA_V2 if v2 else SCHEMA,synthetic=True,status='COMPLETE',incumbent=a,destination=b,
         generator_policy=deepcopy(policy),bounds=deepcopy(bounds),grid_points=points,
         configured_grid_limit=configured_limit,implementation_grid_limit=MAX_GRID_COMBINATIONS,
         legacy_full_builder_limit=20000,enumeration_complete=False,baseline=None,candidates=[],
@@ -160,6 +175,10 @@ def _generate(request):
             domain_reasons=(['NO_LEGAL_GRID_QUANTITIES_IN_EXPLICIT_BOUNDS'] if points==0 else [])+
                 (['NO_LEGAL_STRICT_PARTIAL_A_SALE_IN_BOUNDS'] if not strict['count'] else []),
             full_proposal_status='NOT_ATTEMPTED',enumeration_scope='EXPLICIT_LEGAL_GRID_NOT_UNIT_AWARE_FULL_SOLVER')
+    if v4:
+        result.update(full_search_policy=deepcopy(search),full_search_receipt=None,
+            enumeration_scope='EXPLICIT_LEGAL_GRID_AND_BOUNDED_COMPLETE_GATE_FULL_SEARCH')
+        result['policy_governs'].append('full_search.max_probes')
     def wrap():
         return dict(research=result,source_integrity_metadata=dict(full_request_id=fingerprint(request),
             original=deepcopy(data['source_integrity_metadata'])))
@@ -178,7 +197,7 @@ def _generate(request):
     prepared=deepcopy(data);prepared['plans']=[];prepared['full_transfer_edge_budget']=policy['edge_budget']
     full_error=None
     try:
-        full=allocation.full_transfer(prepared,incumbent=a,destination=b)
+        full=None if v4 else allocation.full_transfer(prepared,incumbent=a,destination=b)
     except ValueError as exc:
         message=str(exc)
         if message=='Finite phase-1 proposal enumeration limit exceeded; solver not implemented':
@@ -203,13 +222,9 @@ def _generate(request):
     phase_reasons=_first_entry_reasons(request,known) if v2 else []
     pending_b_buy=v2 and any(o['code']==b and o['side']=='BUY' for o in data['account']['pending_orders'])
     if v2:result['batch_phase_reasons']=phase_reasons
-    def add(targets,kind,*,in_grid=False):
+    def build(targets,kind,*,in_grid=False):
         targets={code:str(int(quantity(value))) for code,value in targets.items()}
         key=fingerprint(targets)
-        if key in by_target:
-            by_target[key]['kinds'].append(kind)
-            if v3:by_target[key]['in_explicit_grid'] |= in_grid
-            return
         buying=quantity(targets[b])>quantity(q[b])
         same=targets==q
         plan=dict(id='A-zero' if same else 'quantity:'+key,family='A' if same else 'C' if buying and not first_entry else 'E',route='R1',
@@ -238,8 +253,25 @@ def _generate(request):
         if v3:candidate.update(unit_gate_reasons=unit_reasons,in_explicit_grid=in_grid)
         if candidate['feasible_for_research'] and evaluation['common_account_id']!=baseline['common_account_id']:
             raise ValueError('Candidate account changed during enumeration')
+        return candidate
+    def add(targets,kind,*,in_grid=False,prepared_candidate=None):
+        targets={code:str(int(quantity(value))) for code,value in targets.items()}
+        key=fingerprint(targets)
+        if key in by_target:
+            by_target[key]['kinds'].append(kind)
+            if v3:by_target[key]['in_explicit_grid'] |= in_grid
+            return by_target[key]
+        candidate=prepared_candidate if prepared_candidate is not None else build(targets,kind,in_grid=in_grid)
         by_target[key]=candidate
         result['candidates'].append(candidate)
+        return candidate
+    if v4:
+        full_candidate,receipt=allocation._unit_full_search(prepared,a,b,baseline=baseline,units=units,
+            max_probes=max_probes,probe=lambda targets:build(targets,'FULL_TRANSFER'))
+        result.update(full_search_receipt=receipt,full_proposal_status=receipt['status'])
+        if receipt['status']=='REFUSED_SEARCH_LIMIT':
+            result.update(status='REFUSED_SEARCH_LIMIT',reasons=deepcopy(receipt['reasons']))
+            return wrap()
     add(q,'HOLD')
     retained_values=((incumbent-n for n in sales) if points else ()) if v3 else range(amax,amin-1,-1) if v2 else range(amin,amax+1)
     for retained in retained_values:
@@ -248,7 +280,15 @@ def _generate(request):
             kind='PARTIAL_TRANSFER' if added else 'REDUCE_A_KEEP_CASH' if retained<incumbent else 'GRID_HOLD'
             add(targets,kind,in_grid=True)
     cash=deepcopy(q);cash[a]='0';add(cash,'EXIT_A_KEEP_CASH')
-    if full_error:
+    if v4:
+        if full_candidate is not None:
+            add(full_candidate['plan']['targets'],'FULL_TRANSFER',prepared_candidate=full_candidate)
+        else:
+            classification='NOT_IMPLEMENTED' if receipt['status']=='NOT_IMPLEMENTED' else 'REJECTED'
+            result['candidates'].append(dict(id='quantity:full-unit-unavailable',kinds=['FULL_TRANSFER'],plan=None,
+                classification=classification,reasons=deepcopy(receipt['reasons']),feasible_for_research=False,
+                additional_B=None,core_evaluation=None,batch_gate_reasons=[],unit_gate_reasons=[],in_explicit_grid=False))
+    elif full_error:
         if v3:result['full_proposal_status']='LEGACY_FULL_ENDPOINT_UNAVAILABLE'
         classification,reason=full_error
         result['candidates'].append(dict(id='quantity:full-unavailable',kinds=['FULL_TRANSFER'],plan=None,
@@ -275,4 +315,5 @@ def _generate(request):
     result['evaluated_unique_targets']=len(by_target)
     result['full_proposal_source']=('allocation.full_transfer -> current 0.8 recheck; first-entry gate or independent additional-batch gate'
         if v2 else 'allocation.full_transfer -> current 0.8 recheck; every additional buy uses family C')
+    if v4:result['full_proposal_source']='allocation shared bound -> descending legal deltas -> same complete build/core/resume/batch/unit gate'
     return wrap()
