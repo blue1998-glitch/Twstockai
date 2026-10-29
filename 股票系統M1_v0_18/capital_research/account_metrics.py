@@ -132,7 +132,13 @@ def _evaluate(request):
     _require(set(request)=={'schema','synthetic','evaluation_at','saved_result'} and request['schema']==INPUT
         and request['synthetic'] is True,'EXPLICIT_SYNTHETIC_METRICS_INPUT_REQUIRED')
     evaluation_at=_time(request['evaluation_at'])
-    snapshots,summary=_snapshots(request['saved_result']);last=snapshots[-1][0]
+    snapshots,summary=_snapshots(request['saved_result'])
+    return _evaluate_snapshots(request,snapshots,summary)
+
+
+def _evaluate_snapshots(request,snapshots,summary):
+    """Shared checked-source evaluation; callers must validate their own receipts."""
+    evaluation_at=_time(request['evaluation_at']);last=snapshots[-1][0]
     origin=snapshots[0][1]['origin_ledger_input'];initial=None;previous=None
     sources=origin['sources']
     _require(bool(sources) and all(v['kind']=='ENGINEERED_ACCOUNTING_FIXTURE_NOT_MARKET' for v in sources.values()),

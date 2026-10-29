@@ -4,6 +4,16 @@
 
 ---
 
+# 2026-10-29 最新有效｜完整明示行動全帳戶評估轉接0.1
+
+入口股票系統M1_v0_18/capital_research/action_metrics_20261029/README.md、CONTRACT.md、REPORT.md及final-corrected。新action_account_metrics.evaluate_saved讀完整原action_request／action_result與可選一份同原單續播；沿lifecycle純READ及原account_metrics共用檢查／成長／回撤／恢復公式，不重播帳務、決策或重建checkpoint。原CLI只增明示--source-kind action，預設quantity不變；不改原帳、來源、策略／成本公式或歷史schema。
+
+29凍結案及兩個自審反例最終符合預期，8唯一方法通過，不累加中間批／歷史PASS／案例。自審兩漏檢（續播換原close proof、衍生基底與原事實來源不符）均先存input／expected／修前actual後補精確綁定；錯誤碼不一致的tests-reviewed.log FAIL保留，未改oracle，tests-corrected.log最終全過。initial／after-final／final原樣留史；只有final-corrected綁現行source。原本金1180／reserve100、權利、latest／全部token保持，父輪只核對，最後8日日帳一次評估；已記錄費稅不再扣，期末假想退出成本另列。部分前綴／缺資料／過早可知與來源帳戶錯配拒算、statistics=null。
+
+舊quantity完整結果精確相同，完整Decimal／input不變、fresh process禁producer／IO／網路與CLI明示路徑通過；帳務／執行／續播／決策呼叫0，無舊suite／真實producer或新行情。唯一Codex依里程碑自審、原分支正常保存及GitHub固定SHA讀回，不需人工或Work例行驗收；起始64d2bd5dc17012743b07f8ef15bb8771ca2c1a7b，本地／遠端一致且淨。只支援完整明示合成原窗及一份續播，不證來源真偽／每筆分錄或策略。70/2/其中8/真實合格0、1101 UNKNOWN、正式false／主壓力null、來源parents／圖形人工及未讀原件限制保持。後續若授權先核既有保存流程是否可另存本評估，不重建協調器或發明政策；下方歷史完整保留。
+
+---
+
 # 2026-10-29 最新有效｜已結清原帳明示減碼／退出0.2
 
 入口股票系統M1_v0_18/capital_research/explicit_sell_20261029/README.md、REPORT.md、CONTRACT.md及initial／controls。cash_action.evaluate與cash_action_execution.execute新增顯式0.2 SELL契約；原0.1 HOLD／BUY完整保持。從已結清、無活單／應付的完整原checkpoint，外部明示指定股、減碼／退出股數、理由、委託、tape及日曆；原core／execution／continuity／ledger與財務公式未改，不選時點／比例或建單。拆單總量限核准量，BUY／別股／改checked／交叉版本拒絕；退出意圖不等已成交，退出一股不等全帳現金。
