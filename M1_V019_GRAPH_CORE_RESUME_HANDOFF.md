@@ -1,3 +1,15 @@
+# 2026-10-30 最新進度同步｜原 Codex 成果保存已結清
+
+依使用者要求核對修復上傳並同步進度。實核基準 `36b9e2779286537579f6680dd382fee1143b03e2`，原分支 `dev/m1-v018-chart-annotations` 保留 `9d7931c4` 及其後7個提交（ahead 7／behind 0），含修復結清 `4094f130` 與候選選擇接線 `c9bbc5db`。
+
+[本輪進度、證據範圍與後續分工](docs/work-reviews/20261030_original_codex_progress_sync/README.md)；[機器可讀核對](docs/work-reviews/20261030_original_codex_progress_sync/verification.json)。兩份完整manifest共16,839路徑已作結構核對；29 ZIP在目前樹中，Git blob及大小與原交付固定樹一致。沿用已讀原始讀回／CRC／成員SHA證據，不冒稱本輪重新下載解壓或重跑產品測試。6份歷史衝突只封存，不覆蓋現行版本。舊工作區 `392b94a4` 不是新工程起點；保存結清不證實平台環境、舊對話或唯一寫入者協調已修復。
+
+目前工程已含數量候選0.4及明示研究選擇choice/0.2；下游research_operation／supplement／比較與成交尚未接好。Work市場環境研究最新0.9、資料截止10/29，報告與證據包仍另存；本輪只同步其狀態，未把完整研究包匯入GitHub或宣稱Codex已讀。正式參數、最佳比例、真實淨績效、全市場辨識及自動配置仍未完成；1101 UNKNOWN、真實合格0、正式false、主壓力null與所有來源限制保持。
+
+本輪Work只同步文件，不改產品源碼、策略或來源。後續工程仍由指定唯一Codex從最新遠端接續；救援原件「已保存／本輪已核清單」與「工程者已實讀內容」分開，未讀不能自動改成已讀。下方原文完整留史。
+
+---
+
 # 2026-10-29 最新有效｜保存0.4候選的明示研究選擇0.2
 
 入口股票系統M1_v0_18/capital_research/choice_v04_20261029/README.md、CONTRACT.md、REPORT.md及final。沿原choose_saved／Journal／來源核對新增choice-input/0.2 → choice/0.2；明示完整0.4 request＋generation來源，不重新產生候選／重播，不把0.4降版或假包after-retry。原0.1及其0.2候選來源相容，原匹配、Journal、CLI／view與數值source不改。
