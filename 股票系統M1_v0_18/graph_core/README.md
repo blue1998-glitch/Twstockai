@@ -1,3 +1,5 @@
+> M2-3新增有限來源轉接見[finmind_20261030/README.md](finmind_20261030/README.md)。FinMind真實原始行情與完整分析只留Git外；既有core.py、辨識算法、參數及下方契約原樣保持。新來源通過工程檢查不代表歷史可得、跨基底連續或正式圖形資格。
+
 # 獨立圖形辨識研究核心 0.1
 
 這是可執行自動候選，沒有匯入人工案例、股票名稱或特定日期／答案。沒有修改原structure、attempt_evidence、MACD、策略、資料庫或歷史。工程完成與辨識品質／核心用途／交易價值分開；NOT_VALIDATED／NOT_EVALUATED／NOT_ESTABLISHED保持。

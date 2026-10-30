@@ -1,0 +1,3903 @@
+{
+  "source_kind": "SYNTHETIC_ONLY_NOT_MARKET_PERFORMANCE",
+  "positive_summary": {
+    "schema_version": "finmind-graph-public-summary/0.1",
+    "adapter_version": "finmind-graph-adapter/0.1",
+    "core_version": "graph-recognition-research/0.1",
+    "code": "2884",
+    "as_of": "2026-07-21",
+    "status": "RESEARCH_COMPUTED_NOT_QUALIFIED",
+    "source_records": 37,
+    "basis_break_dates": [
+      "2026-07-01"
+    ],
+    "historical_available_at": "UNKNOWN",
+    "calendar_completeness": "UNKNOWN",
+    "corporate_action_type": "UNKNOWN",
+    "continuous_structure_qualified": false,
+    "classification_quality": "NOT_VALIDATED",
+    "qualified_interpretation": "ABSTAIN_APPROVED_CORE_USEFULNESS_UNESTABLISHED",
+    "primary_pressure_id": null,
+    "data_qualified": false,
+    "execution_model_qualified": false,
+    "historical_signal_eligible": false,
+    "policy_authorized": false,
+    "live_execution_authorized": false,
+    "limitations": [
+      "HISTORICAL_AVAILABLE_AT_UNKNOWN",
+      "CALENDAR_COMPLETENESS_UNKNOWN",
+      "CORPORATE_ACTIONS_UNKNOWN",
+      "CROSS_BASIS_CONTINUITY_NOT_QUALIFIED",
+      "GRAPH_RECOGNITION_NOT_VALIDATED",
+      "REDISTRIBUTION_NOT_AUTHORIZED"
+    ]
+  },
+  "positive_core_result": {
+    "schema_version": "graph-recognition-research/0.1",
+    "context": {
+      "code": "2884",
+      "exchange": "TWSE",
+      "source_id": "SYNTHETIC-FINMIND-NOT-REAL-QUOTES",
+      "price_basis_id": "synthetic-raw",
+      "price_mode": "RAW_CANDIDATE",
+      "volume_unit": "SHARES_REPORTED",
+      "source_kind": "FINMIND_TAIWAN_STOCK_PRICE_RETROSPECTIVE",
+      "corporate_action_comparability": "UNKNOWN_NO_CROSS_BASIS_CERTIFICATION",
+      "historical_publication_timing": "UNKNOWN"
+    },
+    "as_of": "2026-07-21",
+    "anchor": {
+      "date": "2026-07-21",
+      "close": "104",
+      "index": 36,
+      "price_mode": "RAW_CANDIDATE",
+      "price_basis_id": "synthetic-raw"
+    },
+    "parameters": {
+      "reversals": [
+        "0.03",
+        "0.06",
+        "0.12"
+      ],
+      "cluster_spread_fraction": "0.35",
+      "enumeration": "LONGEST_COMPATIBLE_RUN_AND_LATEST_FOUR_TURN_SEED",
+      "minimum_high_turns": 2,
+      "minimum_low_turns": 2,
+      "status": "RESEARCH_SETTINGS_NOT_USER_APPROVED_STRATEGY"
+    },
+    "source_prefix_fingerprint": "sha256:167a3750ac76cfba10f2098063f904477862dadbcef2ae91cdef23d03a37764c",
+    "source_records": 37,
+    "anchor_volume": {
+      "current_shares": "2036",
+      "ratio_to_previous_means": {
+        "1": "1.0004914004914004914004914004914004914004914004914",
+        "5": "1.0014756517461878996556812592228234136743728480079",
+        "20": null
+      },
+      "baseline_includes_current": false,
+      "qualification": "DESCRIPTIVE_1_5_20_RECORD_COMPARISONS_NOT_VOLUME_EXPANSION_OR_SETTLEMENT_RULE"
+    },
+    "pivots": [
+      {
+        "kind": "HIGH",
+        "price": "111",
+        "occurred_index": 2,
+        "occurred_at": "2026-06-03",
+        "source_dates": [
+          "2026-06-03"
+        ],
+        "confirmed_index": 4,
+        "confirmed_at": "2026-06-05",
+        "first_observed_at": "2026-06-05",
+        "scale": "0.03",
+        "segment": 0,
+        "confirmation": "LATER_COMPLETED_CLOSE_REVERSAL_RESEARCH",
+        "id": "sha256:e8571d38325bffa9bf66be4cea60fd5ec254f7083c89dc3cd2040aec68c0945a"
+      },
+      {
+        "kind": "LOW",
+        "price": "99",
+        "occurred_index": 5,
+        "occurred_at": "2026-06-08",
+        "source_dates": [
+          "2026-06-08"
+        ],
+        "confirmed_index": 6,
+        "confirmed_at": "2026-06-09",
+        "first_observed_at": "2026-06-09",
+        "scale": "0.03",
+        "segment": 0,
+        "confirmation": "LATER_COMPLETED_CLOSE_REVERSAL_RESEARCH",
+        "id": "sha256:0c5edf851cec105c30926d177115311c87a432d845821dab7b44f6234468465c"
+      },
+      {
+        "kind": "HIGH",
+        "price": "110",
+        "occurred_index": 7,
+        "occurred_at": "2026-06-10",
+        "source_dates": [
+          "2026-06-10"
+        ],
+        "confirmed_index": 8,
+        "confirmed_at": "2026-06-11",
+        "first_observed_at": "2026-06-11",
+        "scale": "0.03",
+        "segment": 0,
+        "confirmation": "LATER_COMPLETED_CLOSE_REVERSAL_RESEARCH",
+        "id": "sha256:a7864a13d3b3374e9c3f48bd5b0bab0917baaed644453c71ab03237cfd7fce47"
+      },
+      {
+        "kind": "LOW",
+        "price": "98",
+        "occurred_index": 10,
+        "occurred_at": "2026-06-15",
+        "source_dates": [
+          "2026-06-15"
+        ],
+        "confirmed_index": 11,
+        "confirmed_at": "2026-06-16",
+        "first_observed_at": "2026-06-16",
+        "scale": "0.03",
+        "segment": 0,
+        "confirmation": "LATER_COMPLETED_CLOSE_REVERSAL_RESEARCH",
+        "id": "sha256:d0ae111eb123350fd6b1eb4cfca513f6deee1c3b3baf3f670db3059c82d55ae2"
+      },
+      {
+        "kind": "HIGH",
+        "price": "112",
+        "occurred_index": 12,
+        "occurred_at": "2026-06-17",
+        "source_dates": [
+          "2026-06-17"
+        ],
+        "confirmed_index": 13,
+        "confirmed_at": "2026-06-18",
+        "first_observed_at": "2026-06-18",
+        "scale": "0.03",
+        "segment": 0,
+        "confirmation": "LATER_COMPLETED_CLOSE_REVERSAL_RESEARCH",
+        "id": "sha256:92ef4d0f6f173eacf614ddd0e606ac7ee97af20865b037bb2becb21c8f45741a"
+      },
+      {
+        "kind": "LOW",
+        "price": "99",
+        "occurred_index": 15,
+        "occurred_at": "2026-06-22",
+        "source_dates": [
+          "2026-06-22"
+        ],
+        "confirmed_index": 16,
+        "confirmed_at": "2026-06-23",
+        "first_observed_at": "2026-06-23",
+        "scale": "0.03",
+        "segment": 0,
+        "confirmation": "LATER_COMPLETED_CLOSE_REVERSAL_RESEARCH",
+        "id": "sha256:0fcc9dd968eb4b747000ddbc9827ac1f4b55d9cd445e4fe1e1a3059fe8a9d80e"
+      },
+      {
+        "kind": "HIGH",
+        "price": "111",
+        "occurred_index": 17,
+        "occurred_at": "2026-06-24",
+        "source_dates": [
+          "2026-06-24"
+        ],
+        "confirmed_index": 19,
+        "confirmed_at": "2026-06-26",
+        "first_observed_at": "2026-06-26",
+        "scale": "0.03",
+        "segment": 0,
+        "confirmation": "LATER_COMPLETED_CLOSE_REVERSAL_RESEARCH",
+        "id": "sha256:26723bb97601df91a519c5bc17f4572eaea56e81ac4dca6de337158eebe95bfd"
+      },
+      {
+        "kind": "LOW",
+        "price": "99",
+        "occurred_index": 20,
+        "occurred_at": "2026-06-29",
+        "source_dates": [
+          "2026-06-29"
+        ],
+        "confirmed_index": 21,
+        "confirmed_at": "2026-06-30",
+        "first_observed_at": "2026-06-30",
+        "scale": "0.03",
+        "segment": 0,
+        "confirmation": "LATER_COMPLETED_CLOSE_REVERSAL_RESEARCH",
+        "id": "sha256:cfa7d94ed290b96cba122114c60391fc70f1bfd9f0fc913917217f5dd5b6be22"
+      },
+      {
+        "kind": "LOW",
+        "price": "98",
+        "occurred_index": 25,
+        "occurred_at": "2026-07-06",
+        "source_dates": [
+          "2026-07-06"
+        ],
+        "confirmed_index": 26,
+        "confirmed_at": "2026-07-07",
+        "first_observed_at": "2026-07-07",
+        "scale": "0.03",
+        "segment": 1,
+        "confirmation": "LATER_COMPLETED_CLOSE_REVERSAL_RESEARCH",
+        "id": "sha256:a6d3923644604141d9b5943c544f85ec598ab1449a6b5741c93d6bdba7c31d3d"
+      },
+      {
+        "kind": "HIGH",
+        "price": "112",
+        "occurred_index": 27,
+        "occurred_at": "2026-07-08",
+        "source_dates": [
+          "2026-07-08"
+        ],
+        "confirmed_index": 28,
+        "confirmed_at": "2026-07-09",
+        "first_observed_at": "2026-07-09",
+        "scale": "0.03",
+        "segment": 1,
+        "confirmation": "LATER_COMPLETED_CLOSE_REVERSAL_RESEARCH",
+        "id": "sha256:f3d4052849bcd56b3d88ca34981bcfb9f54130f948c31d6e74c7707d7c50b14d"
+      },
+      {
+        "kind": "LOW",
+        "price": "99",
+        "occurred_index": 30,
+        "occurred_at": "2026-07-13",
+        "source_dates": [
+          "2026-07-13"
+        ],
+        "confirmed_index": 31,
+        "confirmed_at": "2026-07-14",
+        "first_observed_at": "2026-07-14",
+        "scale": "0.03",
+        "segment": 1,
+        "confirmation": "LATER_COMPLETED_CLOSE_REVERSAL_RESEARCH",
+        "id": "sha256:36495a4bfb868bb6503cd7bd5ce398e1ab012be6e5c5060844e25ada8b2d4c3b"
+      },
+      {
+        "kind": "HIGH",
+        "price": "111",
+        "occurred_index": 32,
+        "occurred_at": "2026-07-15",
+        "source_dates": [
+          "2026-07-15"
+        ],
+        "confirmed_index": 34,
+        "confirmed_at": "2026-07-17",
+        "first_observed_at": "2026-07-17",
+        "scale": "0.03",
+        "segment": 1,
+        "confirmation": "LATER_COMPLETED_CLOSE_REVERSAL_RESEARCH",
+        "id": "sha256:c35e080ab32996468bb9959674de08847eab64a3bd045e6267f73d3fd10bd83e"
+      },
+      {
+        "kind": "LOW",
+        "price": "99",
+        "occurred_index": 35,
+        "occurred_at": "2026-07-20",
+        "source_dates": [
+          "2026-07-20"
+        ],
+        "confirmed_index": 36,
+        "confirmed_at": "2026-07-21",
+        "first_observed_at": "2026-07-21",
+        "scale": "0.03",
+        "segment": 1,
+        "confirmation": "LATER_COMPLETED_CLOSE_REVERSAL_RESEARCH",
+        "id": "sha256:2dea0cd8174395444908776c4161f90e3fcc38e1a6bd252a4cee483dc1f61d80"
+      },
+      {
+        "kind": "HIGH",
+        "price": "111",
+        "occurred_index": 2,
+        "occurred_at": "2026-06-03",
+        "source_dates": [
+          "2026-06-03"
+        ],
+        "confirmed_index": 4,
+        "confirmed_at": "2026-06-05",
+        "first_observed_at": "2026-06-05",
+        "scale": "0.06",
+        "segment": 0,
+        "confirmation": "LATER_COMPLETED_CLOSE_REVERSAL_RESEARCH",
+        "id": "sha256:e15071072ae9dafb73f8f99d4b00ef2da31bcbd1c8e45db9d4b17ae8c0ad20e3"
+      },
+      {
+        "kind": "LOW",
+        "price": "99",
+        "occurred_index": 5,
+        "occurred_at": "2026-06-08",
+        "source_dates": [
+          "2026-06-08"
+        ],
+        "confirmed_index": 7,
+        "confirmed_at": "2026-06-10",
+        "first_observed_at": "2026-06-10",
+        "scale": "0.06",
+        "segment": 0,
+        "confirmation": "LATER_COMPLETED_CLOSE_REVERSAL_RESEARCH",
+        "id": "sha256:0aa7b9b03fc6341e6243b52fabc616b6781fb5970e0095c27e626ad2e0a66d42"
+      },
+      {
+        "kind": "HIGH",
+        "price": "110",
+        "occurred_index": 7,
+        "occurred_at": "2026-06-10",
+        "source_dates": [
+          "2026-06-10"
+        ],
+        "confirmed_index": 9,
+        "confirmed_at": "2026-06-12",
+        "first_observed_at": "2026-06-12",
+        "scale": "0.06",
+        "segment": 0,
+        "confirmation": "LATER_COMPLETED_CLOSE_REVERSAL_RESEARCH",
+        "id": "sha256:0bae5fab6e6fe5d851c409c7c19bba7d99e7f10f7c311970fa1e0ae5d8509eb6"
+      },
+      {
+        "kind": "LOW",
+        "price": "98",
+        "occurred_index": 10,
+        "occurred_at": "2026-06-15",
+        "source_dates": [
+          "2026-06-15"
+        ],
+        "confirmed_index": 12,
+        "confirmed_at": "2026-06-17",
+        "first_observed_at": "2026-06-17",
+        "scale": "0.06",
+        "segment": 0,
+        "confirmation": "LATER_COMPLETED_CLOSE_REVERSAL_RESEARCH",
+        "id": "sha256:a4bede2e9be4c721b63aa93a883d559f310c58b6424e75760836fd51a58801e6"
+      },
+      {
+        "kind": "HIGH",
+        "price": "112",
+        "occurred_index": 12,
+        "occurred_at": "2026-06-17",
+        "source_dates": [
+          "2026-06-17"
+        ],
+        "confirmed_index": 14,
+        "confirmed_at": "2026-06-19",
+        "first_observed_at": "2026-06-19",
+        "scale": "0.06",
+        "segment": 0,
+        "confirmation": "LATER_COMPLETED_CLOSE_REVERSAL_RESEARCH",
+        "id": "sha256:a9b75edc6bae69470342fa03e55d1e30ee679a1660b60220ceb154a689e13474"
+      },
+      {
+        "kind": "LOW",
+        "price": "99",
+        "occurred_index": 15,
+        "occurred_at": "2026-06-22",
+        "source_dates": [
+          "2026-06-22"
+        ],
+        "confirmed_index": 17,
+        "confirmed_at": "2026-06-24",
+        "first_observed_at": "2026-06-24",
+        "scale": "0.06",
+        "segment": 0,
+        "confirmation": "LATER_COMPLETED_CLOSE_REVERSAL_RESEARCH",
+        "id": "sha256:58a68e371d93332609b7e4fd60ce0b840424b50ee652b7ecc77934c300bef54e"
+      },
+      {
+        "kind": "HIGH",
+        "price": "111",
+        "occurred_index": 17,
+        "occurred_at": "2026-06-24",
+        "source_dates": [
+          "2026-06-24"
+        ],
+        "confirmed_index": 19,
+        "confirmed_at": "2026-06-26",
+        "first_observed_at": "2026-06-26",
+        "scale": "0.06",
+        "segment": 0,
+        "confirmation": "LATER_COMPLETED_CLOSE_REVERSAL_RESEARCH",
+        "id": "sha256:4b3b3b31dff6ac8ede2a90f3ad0ceff31feeecc1d1b370797d8fb60e76609ba1"
+      },
+      {
+        "kind": "LOW",
+        "price": "98",
+        "occurred_index": 25,
+        "occurred_at": "2026-07-06",
+        "source_dates": [
+          "2026-07-06"
+        ],
+        "confirmed_index": 27,
+        "confirmed_at": "2026-07-08",
+        "first_observed_at": "2026-07-08",
+        "scale": "0.06",
+        "segment": 1,
+        "confirmation": "LATER_COMPLETED_CLOSE_REVERSAL_RESEARCH",
+        "id": "sha256:eae3260d3c94997fde2c41a49398e28b11c6e275592f9e3d49fcd14aceaf320e"
+      },
+      {
+        "kind": "HIGH",
+        "price": "112",
+        "occurred_index": 27,
+        "occurred_at": "2026-07-08",
+        "source_dates": [
+          "2026-07-08"
+        ],
+        "confirmed_index": 29,
+        "confirmed_at": "2026-07-10",
+        "first_observed_at": "2026-07-10",
+        "scale": "0.06",
+        "segment": 1,
+        "confirmation": "LATER_COMPLETED_CLOSE_REVERSAL_RESEARCH",
+        "id": "sha256:3741d086a330408f9bc471c9a9ec6941f57e78ff7e2d7292f3fcf7d65b4edfc0"
+      },
+      {
+        "kind": "LOW",
+        "price": "99",
+        "occurred_index": 30,
+        "occurred_at": "2026-07-13",
+        "source_dates": [
+          "2026-07-13"
+        ],
+        "confirmed_index": 32,
+        "confirmed_at": "2026-07-15",
+        "first_observed_at": "2026-07-15",
+        "scale": "0.06",
+        "segment": 1,
+        "confirmation": "LATER_COMPLETED_CLOSE_REVERSAL_RESEARCH",
+        "id": "sha256:f40e30ca549aeef9365ee0f804bae90058623171ba35f8e70090d714271564e1"
+      },
+      {
+        "kind": "HIGH",
+        "price": "111",
+        "occurred_index": 32,
+        "occurred_at": "2026-07-15",
+        "source_dates": [
+          "2026-07-15"
+        ],
+        "confirmed_index": 34,
+        "confirmed_at": "2026-07-17",
+        "first_observed_at": "2026-07-17",
+        "scale": "0.06",
+        "segment": 1,
+        "confirmation": "LATER_COMPLETED_CLOSE_REVERSAL_RESEARCH",
+        "id": "sha256:1e743a2967117131ae8693932e55bde21196419b1e19f76ac33249872d2366de"
+      }
+    ],
+    "pending_extrema": [
+      {
+        "direction": "UP",
+        "high": {
+          "index": 36,
+          "price": "105",
+          "source_dates": [
+            "2026-07-21"
+          ]
+        },
+        "low": {
+          "index": 36,
+          "price": "103",
+          "source_dates": [
+            "2026-07-21"
+          ]
+        },
+        "qualification": "UNCONFIRMED_NOT_A_PIVOT"
+      },
+      {
+        "direction": "DOWN",
+        "high": {
+          "index": 34,
+          "price": "102",
+          "source_dates": [
+            "2026-07-17"
+          ]
+        },
+        "low": {
+          "index": 35,
+          "price": "99",
+          "source_dates": [
+            "2026-07-20"
+          ]
+        },
+        "qualification": "UNCONFIRMED_NOT_A_PIVOT"
+      },
+      {
+        "direction": "UP",
+        "high": {
+          "index": 27,
+          "price": "112",
+          "source_dates": [
+            "2026-07-08"
+          ]
+        },
+        "low": {
+          "index": 25,
+          "price": "98",
+          "source_dates": [
+            "2026-07-06"
+          ]
+        },
+        "qualification": "UNCONFIRMED_NOT_A_PIVOT"
+      }
+    ],
+    "boxes": [
+      {
+        "scale": "0.03",
+        "segment": 0,
+        "first_index": 2,
+        "last_index": 10,
+        "formed_index": 11,
+        "start": "2026-06-03",
+        "source_end": "2026-06-15",
+        "first_observed_at": "2026-06-16",
+        "confirmed_at": "2026-06-16",
+        "source_turn_ids": [
+          "sha256:e8571d38325bffa9bf66be4cea60fd5ec254f7083c89dc3cd2040aec68c0945a",
+          "sha256:0c5edf851cec105c30926d177115311c87a432d845821dab7b44f6234468465c",
+          "sha256:a7864a13d3b3374e9c3f48bd5b0bab0917baaed644453c71ab03237cfd7fce47",
+          "sha256:d0ae111eb123350fd6b1eb4cfca513f6deee1c3b3baf3f670db3059c82d55ae2"
+        ],
+        "turns": 4,
+        "duration_records": 9,
+        "research_bounds": {
+          "low": "98",
+          "high": "111",
+          "pressure_band": [
+            "110",
+            "111"
+          ],
+          "support_band": [
+            "98",
+            "99"
+          ],
+          "high_cluster_spread_to_span": "0.076923076923076923076923076923076923076923076923077",
+          "low_cluster_spread_to_span": "0.076923076923076923076923076923076923076923076923077"
+        },
+        "formal_price_bounds": null,
+        "formal_region_membership": null,
+        "display_extent": {
+          "low": "98",
+          "high": "111",
+          "source_rows_fingerprint": "sha256:157c4f8cc2c1c7a4978d6d17817c71b29d92ad1e67e4a50534430796027dbe42"
+        },
+        "volume": {
+          "unit": "SHARES_REPORTED",
+          "records": 9,
+          "known_records": 9,
+          "missing_dates": [],
+          "supplied_interval_total": "18054",
+          "known_partial_sum": "18054",
+          "mean": "2006",
+          "maximum": "2010",
+          "maximum_dates": [
+            "2026-06-15"
+          ],
+          "prior_equal_record_window": {
+            "first_date": "2026-06-01",
+            "last_date": "2026-06-02",
+            "complete": false,
+            "includes_selected": false
+          },
+          "mean_to_prior_ratio": null,
+          "qualification": "DESCRIPTIVE_RESEARCH_INTERVAL_VOLUME_NOT_APPROVED_REGION_MEASURE_OR_REMAINING_SHARES"
+        },
+        "qualification": "AUTOMATIC_REPEATED_SWING_RANGE_CANDIDATE_NOT_APPROVED_BOX",
+        "id": "sha256:dd20bdece075f1b391a881f377471b7d58405827eea28bce95bfd3d8fde499d4",
+        "path": {
+          "events": [
+            {
+              "type": "INITIAL_CLOSE_LOCATION",
+              "date": "2026-06-16",
+              "first_observed_at": "2026-06-16",
+              "previous": null,
+              "location": "INSIDE",
+              "close": "103",
+              "bounds_id": "sha256:dd20bdece075f1b391a881f377471b7d58405827eea28bce95bfd3d8fde499d4",
+              "volume": {
+                "current_shares": "2011",
+                "ratio_to_previous_means": {
+                  "1": "1.0004975124378109452736318407960199004975124378109",
+                  "5": "1.0014940239043824701195219123505976095617529880478",
+                  "20": null
+                },
+                "baseline_includes_current": false,
+                "qualification": "DESCRIPTIVE_1_5_20_RECORD_COMPARISONS_NOT_VOLUME_EXPANSION_OR_SETTLEMENT_RULE"
+              }
+            },
+            {
+              "type": "OBSERVATION_STOPPED_AT_DATA_OR_BASIS_GAP",
+              "date": "2026-07-01",
+              "first_observed_at": "2026-07-01"
+            }
+          ],
+          "last_close_location": "INSIDE",
+          "first_breakdown_at": null,
+          "first_departure_range_end": null,
+          "maximum_observed_downside_fraction": "0.10810810810810810810810810810810810810810810810811",
+          "maximum_downside_date": "2026-06-22",
+          "records_from_formation_to_maximum_low": 4,
+          "route_classification": "UNKNOWN_NO_APPROVED_FAST_SLOW_DECLINE_RULE",
+          "qualification": "CLOSE_LOCATION_AND_FAILURE_PATH_NOT_PERMANENT_INVALIDATION_OR_TRADING_SIGNAL"
+        },
+        "usable_at_anchor": false,
+        "anchor_relation": "NOT_COMPARABLE_AFTER_GAP",
+        "pressure_distance_fraction": "0.057692307692307692307692307692307692307692307692308",
+        "relative_width_to_anchor": "0.125",
+        "parent_ids": [
+          "sha256:18d90cb72f499a05d0d111aa027f18744ca3e7d2ae5203f6d44ccc477b1c435c",
+          "sha256:6b1d6e31878136acff4305c9904d6749b94225360b0bbe5c4f56939d075ad2f4"
+        ],
+        "successor_after_breakdown_ids": [],
+        "interpretation": {
+          "settlement": "UNKNOWN_NO_APPROVED_VOLUME_OR_OWNERSHIP_RULE",
+          "strengthening": "CLOSE_FACT_ONLY_NOT_TRADE_QUALIFIED",
+          "lifecycle": "UNKNOWN",
+          "counterevidence": [],
+          "missing_evidence": [
+            "FORMAL_PRICE_BOUNDS",
+            "IMPORTANCE_WEIGHTS",
+            "VOLUME_EXPANSION_THRESHOLD",
+            "OWNERSHIP",
+            "HISTORICAL_PUBLICATION_TIMES"
+          ]
+        }
+      },
+      {
+        "scale": "0.03",
+        "segment": 0,
+        "first_index": 2,
+        "last_index": 12,
+        "formed_index": 13,
+        "start": "2026-06-03",
+        "source_end": "2026-06-17",
+        "first_observed_at": "2026-06-18",
+        "confirmed_at": "2026-06-18",
+        "source_turn_ids": [
+          "sha256:e8571d38325bffa9bf66be4cea60fd5ec254f7083c89dc3cd2040aec68c0945a",
+          "sha256:0c5edf851cec105c30926d177115311c87a432d845821dab7b44f6234468465c",
+          "sha256:a7864a13d3b3374e9c3f48bd5b0bab0917baaed644453c71ab03237cfd7fce47",
+          "sha256:d0ae111eb123350fd6b1eb4cfca513f6deee1c3b3baf3f670db3059c82d55ae2",
+          "sha256:92ef4d0f6f173eacf614ddd0e606ac7ee97af20865b037bb2becb21c8f45741a"
+        ],
+        "turns": 5,
+        "duration_records": 11,
+        "research_bounds": {
+          "low": "98",
+          "high": "112",
+          "pressure_band": [
+            "110",
+            "112"
+          ],
+          "support_band": [
+            "98",
+            "99"
+          ],
+          "high_cluster_spread_to_span": "0.14285714285714285714285714285714285714285714285714",
+          "low_cluster_spread_to_span": "0.071428571428571428571428571428571428571428571428571"
+        },
+        "formal_price_bounds": null,
+        "formal_region_membership": null,
+        "display_extent": {
+          "low": "98",
+          "high": "112",
+          "source_rows_fingerprint": "sha256:3e401547691091db38534664828b64c168a3e0f07a85610347d55e63a9d7bf83"
+        },
+        "volume": {
+          "unit": "SHARES_REPORTED",
+          "records": 11,
+          "known_records": 11,
+          "missing_dates": [],
+          "supplied_interval_total": "22077",
+          "known_partial_sum": "22077",
+          "mean": "2007",
+          "maximum": "2012",
+          "maximum_dates": [
+            "2026-06-17"
+          ],
+          "prior_equal_record_window": {
+            "first_date": "2026-06-01",
+            "last_date": "2026-06-02",
+            "complete": false,
+            "includes_selected": false
+          },
+          "mean_to_prior_ratio": null,
+          "qualification": "DESCRIPTIVE_RESEARCH_INTERVAL_VOLUME_NOT_APPROVED_REGION_MEASURE_OR_REMAINING_SHARES"
+        },
+        "qualification": "AUTOMATIC_REPEATED_SWING_RANGE_CANDIDATE_NOT_APPROVED_BOX",
+        "id": "sha256:18d90cb72f499a05d0d111aa027f18744ca3e7d2ae5203f6d44ccc477b1c435c",
+        "path": {
+          "events": [
+            {
+              "type": "INITIAL_CLOSE_LOCATION",
+              "date": "2026-06-18",
+              "first_observed_at": "2026-06-18",
+              "previous": null,
+              "location": "INSIDE",
+              "close": "107",
+              "bounds_id": "sha256:18d90cb72f499a05d0d111aa027f18744ca3e7d2ae5203f6d44ccc477b1c435c",
+              "volume": {
+                "current_shares": "2013",
+                "ratio_to_previous_means": {
+                  "1": "1.0004970178926441351888667992047713717693836978131",
+                  "5": "1.0014925373134328358208955223880597014925373134328",
+                  "20": null
+                },
+                "baseline_includes_current": false,
+                "qualification": "DESCRIPTIVE_1_5_20_RECORD_COMPARISONS_NOT_VOLUME_EXPANSION_OR_SETTLEMENT_RULE"
+              }
+            },
+            {
+              "type": "OBSERVATION_STOPPED_AT_DATA_OR_BASIS_GAP",
+              "date": "2026-07-01",
+              "first_observed_at": "2026-07-01"
+            }
+          ],
+          "last_close_location": "INSIDE",
+          "first_breakdown_at": null,
+          "first_departure_range_end": null,
+          "maximum_observed_downside_fraction": "0.11607142857142857142857142857142857142857142857143",
+          "maximum_downside_date": "2026-06-22",
+          "records_from_formation_to_maximum_low": 2,
+          "route_classification": "UNKNOWN_NO_APPROVED_FAST_SLOW_DECLINE_RULE",
+          "qualification": "CLOSE_LOCATION_AND_FAILURE_PATH_NOT_PERMANENT_INVALIDATION_OR_TRADING_SIGNAL"
+        },
+        "usable_at_anchor": false,
+        "anchor_relation": "NOT_COMPARABLE_AFTER_GAP",
+        "pressure_distance_fraction": "0.057692307692307692307692307692307692307692307692308",
+        "relative_width_to_anchor": "0.13461538461538461538461538461538461538461538461538",
+        "parent_ids": [
+          "sha256:1a3ad29bcb00007fad66010ca86d9790b29b3ca5524438ab32b18417fdce9000",
+          "sha256:534fa554cb0ab11863189e5c29c8366954d735af9898dac28c1ee2c16cc6bf42"
+        ],
+        "successor_after_breakdown_ids": [],
+        "interpretation": {
+          "settlement": "UNKNOWN_NO_APPROVED_VOLUME_OR_OWNERSHIP_RULE",
+          "strengthening": "CLOSE_FACT_ONLY_NOT_TRADE_QUALIFIED",
+          "lifecycle": "UNKNOWN",
+          "counterevidence": [],
+          "missing_evidence": [
+            "FORMAL_PRICE_BOUNDS",
+            "IMPORTANCE_WEIGHTS",
+            "VOLUME_EXPANSION_THRESHOLD",
+            "OWNERSHIP",
+            "HISTORICAL_PUBLICATION_TIMES"
+          ]
+        }
+      },
+      {
+        "scale": "0.03",
+        "segment": 0,
+        "first_index": 5,
+        "last_index": 12,
+        "formed_index": 13,
+        "start": "2026-06-08",
+        "source_end": "2026-06-17",
+        "first_observed_at": "2026-06-18",
+        "confirmed_at": "2026-06-18",
+        "source_turn_ids": [
+          "sha256:0c5edf851cec105c30926d177115311c87a432d845821dab7b44f6234468465c",
+          "sha256:a7864a13d3b3374e9c3f48bd5b0bab0917baaed644453c71ab03237cfd7fce47",
+          "sha256:d0ae111eb123350fd6b1eb4cfca513f6deee1c3b3baf3f670db3059c82d55ae2",
+          "sha256:92ef4d0f6f173eacf614ddd0e606ac7ee97af20865b037bb2becb21c8f45741a"
+        ],
+        "turns": 4,
+        "duration_records": 8,
+        "research_bounds": {
+          "low": "98",
+          "high": "112",
+          "pressure_band": [
+            "110",
+            "112"
+          ],
+          "support_band": [
+            "98",
+            "99"
+          ],
+          "high_cluster_spread_to_span": "0.14285714285714285714285714285714285714285714285714",
+          "low_cluster_spread_to_span": "0.071428571428571428571428571428571428571428571428571"
+        },
+        "formal_price_bounds": null,
+        "formal_region_membership": null,
+        "display_extent": {
+          "low": "98",
+          "high": "112",
+          "source_rows_fingerprint": "sha256:c3a93531d26e7a1b46bd29327a4ab9a09156a2ce32caa86c95914bf17836b404"
+        },
+        "volume": {
+          "unit": "SHARES_REPORTED",
+          "records": 8,
+          "known_records": 8,
+          "missing_dates": [],
+          "supplied_interval_total": "16068",
+          "known_partial_sum": "16068",
+          "mean": "2008.5",
+          "maximum": "2012",
+          "maximum_dates": [
+            "2026-06-17"
+          ],
+          "prior_equal_record_window": {
+            "first_date": "2026-06-01",
+            "last_date": "2026-06-05",
+            "complete": false,
+            "includes_selected": false
+          },
+          "mean_to_prior_ratio": null,
+          "qualification": "DESCRIPTIVE_RESEARCH_INTERVAL_VOLUME_NOT_APPROVED_REGION_MEASURE_OR_REMAINING_SHARES"
+        },
+        "qualification": "AUTOMATIC_REPEATED_SWING_RANGE_CANDIDATE_NOT_APPROVED_BOX",
+        "id": "sha256:39f9b16af5d3dd4670ff292e53001a4456c4593c5301d75c7b3a03c683b2c195",
+        "path": {
+          "events": [
+            {
+              "type": "INITIAL_CLOSE_LOCATION",
+              "date": "2026-06-18",
+              "first_observed_at": "2026-06-18",
+              "previous": null,
+              "location": "INSIDE",
+              "close": "107",
+              "bounds_id": "sha256:39f9b16af5d3dd4670ff292e53001a4456c4593c5301d75c7b3a03c683b2c195",
+              "volume": {
+                "current_shares": "2013",
+                "ratio_to_previous_means": {
+                  "1": "1.0004970178926441351888667992047713717693836978131",
+                  "5": "1.0014925373134328358208955223880597014925373134328",
+                  "20": null
+                },
+                "baseline_includes_current": false,
+                "qualification": "DESCRIPTIVE_1_5_20_RECORD_COMPARISONS_NOT_VOLUME_EXPANSION_OR_SETTLEMENT_RULE"
+              }
+            },
+            {
+              "type": "OBSERVATION_STOPPED_AT_DATA_OR_BASIS_GAP",
+              "date": "2026-07-01",
+              "first_observed_at": "2026-07-01"
+            }
+          ],
+          "last_close_location": "INSIDE",
+          "first_breakdown_at": null,
+          "first_departure_range_end": null,
+          "maximum_observed_downside_fraction": "0.11607142857142857142857142857142857142857142857143",
+          "maximum_downside_date": "2026-06-22",
+          "records_from_formation_to_maximum_low": 2,
+          "route_classification": "UNKNOWN_NO_APPROVED_FAST_SLOW_DECLINE_RULE",
+          "qualification": "CLOSE_LOCATION_AND_FAILURE_PATH_NOT_PERMANENT_INVALIDATION_OR_TRADING_SIGNAL"
+        },
+        "usable_at_anchor": false,
+        "anchor_relation": "NOT_COMPARABLE_AFTER_GAP",
+        "pressure_distance_fraction": "0.057692307692307692307692307692307692307692307692308",
+        "relative_width_to_anchor": "0.13461538461538461538461538461538461538461538461538",
+        "parent_ids": [
+          "sha256:18d90cb72f499a05d0d111aa027f18744ca3e7d2ae5203f6d44ccc477b1c435c",
+          "sha256:6b1d6e31878136acff4305c9904d6749b94225360b0bbe5c4f56939d075ad2f4"
+        ],
+        "successor_after_breakdown_ids": [],
+        "interpretation": {
+          "settlement": "UNKNOWN_NO_APPROVED_VOLUME_OR_OWNERSHIP_RULE",
+          "strengthening": "CLOSE_FACT_ONLY_NOT_TRADE_QUALIFIED",
+          "lifecycle": "UNKNOWN",
+          "counterevidence": [],
+          "missing_evidence": [
+            "FORMAL_PRICE_BOUNDS",
+            "IMPORTANCE_WEIGHTS",
+            "VOLUME_EXPANSION_THRESHOLD",
+            "OWNERSHIP",
+            "HISTORICAL_PUBLICATION_TIMES"
+          ]
+        }
+      },
+      {
+        "scale": "0.03",
+        "segment": 0,
+        "first_index": 2,
+        "last_index": 15,
+        "formed_index": 16,
+        "start": "2026-06-03",
+        "source_end": "2026-06-22",
+        "first_observed_at": "2026-06-23",
+        "confirmed_at": "2026-06-23",
+        "source_turn_ids": [
+          "sha256:e8571d38325bffa9bf66be4cea60fd5ec254f7083c89dc3cd2040aec68c0945a",
+          "sha256:0c5edf851cec105c30926d177115311c87a432d845821dab7b44f6234468465c",
+          "sha256:a7864a13d3b3374e9c3f48bd5b0bab0917baaed644453c71ab03237cfd7fce47",
+          "sha256:d0ae111eb123350fd6b1eb4cfca513f6deee1c3b3baf3f670db3059c82d55ae2",
+          "sha256:92ef4d0f6f173eacf614ddd0e606ac7ee97af20865b037bb2becb21c8f45741a",
+          "sha256:0fcc9dd968eb4b747000ddbc9827ac1f4b55d9cd445e4fe1e1a3059fe8a9d80e"
+        ],
+        "turns": 6,
+        "duration_records": 14,
+        "research_bounds": {
+          "low": "98",
+          "high": "112",
+          "pressure_band": [
+            "110",
+            "112"
+          ],
+          "support_band": [
+            "98",
+            "99"
+          ],
+          "high_cluster_spread_to_span": "0.14285714285714285714285714285714285714285714285714",
+          "low_cluster_spread_to_span": "0.071428571428571428571428571428571428571428571428571"
+        },
+        "formal_price_bounds": null,
+        "formal_region_membership": null,
+        "display_extent": {
+          "low": "98",
+          "high": "112",
+          "source_rows_fingerprint": "sha256:dfcd8c7d3b89a707d4d739136ed8b25f4962a444381f8c2e7efd041dc959a871"
+        },
+        "volume": {
+          "unit": "SHARES_REPORTED",
+          "records": 14,
+          "known_records": 14,
+          "missing_dates": [],
+          "supplied_interval_total": "28119",
+          "known_partial_sum": "28119",
+          "mean": "2008.5",
+          "maximum": "2015",
+          "maximum_dates": [
+            "2026-06-22"
+          ],
+          "prior_equal_record_window": {
+            "first_date": "2026-06-01",
+            "last_date": "2026-06-02",
+            "complete": false,
+            "includes_selected": false
+          },
+          "mean_to_prior_ratio": null,
+          "qualification": "DESCRIPTIVE_RESEARCH_INTERVAL_VOLUME_NOT_APPROVED_REGION_MEASURE_OR_REMAINING_SHARES"
+        },
+        "qualification": "AUTOMATIC_REPEATED_SWING_RANGE_CANDIDATE_NOT_APPROVED_BOX",
+        "id": "sha256:1a3ad29bcb00007fad66010ca86d9790b29b3ca5524438ab32b18417fdce9000",
+        "path": {
+          "events": [
+            {
+              "type": "INITIAL_CLOSE_LOCATION",
+              "date": "2026-06-23",
+              "first_observed_at": "2026-06-23",
+              "previous": null,
+              "location": "INSIDE",
+              "close": "104",
+              "bounds_id": "sha256:1a3ad29bcb00007fad66010ca86d9790b29b3ca5524438ab32b18417fdce9000",
+              "volume": {
+                "current_shares": "2016",
+                "ratio_to_previous_means": {
+                  "1": "1.0004962779156327543424317617866004962779156327543",
+                  "5": "1.0014903129657228017883755588673621460506706408346",
+                  "20": null
+                },
+                "baseline_includes_current": false,
+                "qualification": "DESCRIPTIVE_1_5_20_RECORD_COMPARISONS_NOT_VOLUME_EXPANSION_OR_SETTLEMENT_RULE"
+              }
+            },
+            {
+              "type": "OBSERVATION_STOPPED_AT_DATA_OR_BASIS_GAP",
+              "date": "2026-07-01",
+              "first_observed_at": "2026-07-01"
+            }
+          ],
+          "last_close_location": "INSIDE",
+          "first_breakdown_at": null,
+          "first_departure_range_end": null,
+          "maximum_observed_downside_fraction": "0.11607142857142857142857142857142857142857142857143",
+          "maximum_downside_date": "2026-06-29",
+          "records_from_formation_to_maximum_low": 4,
+          "route_classification": "UNKNOWN_NO_APPROVED_FAST_SLOW_DECLINE_RULE",
+          "qualification": "CLOSE_LOCATION_AND_FAILURE_PATH_NOT_PERMANENT_INVALIDATION_OR_TRADING_SIGNAL"
+        },
+        "usable_at_anchor": false,
+        "anchor_relation": "NOT_COMPARABLE_AFTER_GAP",
+        "pressure_distance_fraction": "0.057692307692307692307692307692307692307692307692308",
+        "relative_width_to_anchor": "0.13461538461538461538461538461538461538461538461538",
+        "parent_ids": [
+          "sha256:7f355dafbe863b60c2bc7b11400280258c5a7604b0dfa5f7344953e8bb4e4cba",
+          "sha256:0afadb1422da6750698d68aa89a903a162a1ed6a953328e01462a19962437699"
+        ],
+        "successor_after_breakdown_ids": [],
+        "interpretation": {
+          "settlement": "UNKNOWN_NO_APPROVED_VOLUME_OR_OWNERSHIP_RULE",
+          "strengthening": "CLOSE_FACT_ONLY_NOT_TRADE_QUALIFIED",
+          "lifecycle": "UNKNOWN",
+          "counterevidence": [],
+          "missing_evidence": [
+            "FORMAL_PRICE_BOUNDS",
+            "IMPORTANCE_WEIGHTS",
+            "VOLUME_EXPANSION_THRESHOLD",
+            "OWNERSHIP",
+            "HISTORICAL_PUBLICATION_TIMES"
+          ]
+        }
+      },
+      {
+        "scale": "0.03",
+        "segment": 0,
+        "first_index": 7,
+        "last_index": 15,
+        "formed_index": 16,
+        "start": "2026-06-10",
+        "source_end": "2026-06-22",
+        "first_observed_at": "2026-06-23",
+        "confirmed_at": "2026-06-23",
+        "source_turn_ids": [
+          "sha256:a7864a13d3b3374e9c3f48bd5b0bab0917baaed644453c71ab03237cfd7fce47",
+          "sha256:d0ae111eb123350fd6b1eb4cfca513f6deee1c3b3baf3f670db3059c82d55ae2",
+          "sha256:92ef4d0f6f173eacf614ddd0e606ac7ee97af20865b037bb2becb21c8f45741a",
+          "sha256:0fcc9dd968eb4b747000ddbc9827ac1f4b55d9cd445e4fe1e1a3059fe8a9d80e"
+        ],
+        "turns": 4,
+        "duration_records": 9,
+        "research_bounds": {
+          "low": "98",
+          "high": "112",
+          "pressure_band": [
+            "110",
+            "112"
+          ],
+          "support_band": [
+            "98",
+            "99"
+          ],
+          "high_cluster_spread_to_span": "0.14285714285714285714285714285714285714285714285714",
+          "low_cluster_spread_to_span": "0.071428571428571428571428571428571428571428571428571"
+        },
+        "formal_price_bounds": null,
+        "formal_region_membership": null,
+        "display_extent": {
+          "low": "98",
+          "high": "112",
+          "source_rows_fingerprint": "sha256:8f7c30cd864369fd9cddf7380d18d0577a9a1fbec0f0095af7637d0bf4b8b3a1"
+        },
+        "volume": {
+          "unit": "SHARES_REPORTED",
+          "records": 9,
+          "known_records": 9,
+          "missing_dates": [],
+          "supplied_interval_total": "18099",
+          "known_partial_sum": "18099",
+          "mean": "2011",
+          "maximum": "2015",
+          "maximum_dates": [
+            "2026-06-22"
+          ],
+          "prior_equal_record_window": {
+            "first_date": "2026-06-01",
+            "last_date": "2026-06-09",
+            "complete": false,
+            "includes_selected": false
+          },
+          "mean_to_prior_ratio": null,
+          "qualification": "DESCRIPTIVE_RESEARCH_INTERVAL_VOLUME_NOT_APPROVED_REGION_MEASURE_OR_REMAINING_SHARES"
+        },
+        "qualification": "AUTOMATIC_REPEATED_SWING_RANGE_CANDIDATE_NOT_APPROVED_BOX",
+        "id": "sha256:adc2d68e33260ff0a2bbe6502befb5a16589e7826cd123a3fa07bf5bf69f68bb",
+        "path": {
+          "events": [
+            {
+              "type": "INITIAL_CLOSE_LOCATION",
+              "date": "2026-06-23",
+              "first_observed_at": "2026-06-23",
+              "previous": null,
+              "location": "INSIDE",
+              "close": "104",
+              "bounds_id": "sha256:adc2d68e33260ff0a2bbe6502befb5a16589e7826cd123a3fa07bf5bf69f68bb",
+              "volume": {
+                "current_shares": "2016",
+                "ratio_to_previous_means": {
+                  "1": "1.0004962779156327543424317617866004962779156327543",
+                  "5": "1.0014903129657228017883755588673621460506706408346",
+                  "20": null
+                },
+                "baseline_includes_current": false,
+                "qualification": "DESCRIPTIVE_1_5_20_RECORD_COMPARISONS_NOT_VOLUME_EXPANSION_OR_SETTLEMENT_RULE"
+              }
+            },
+            {
+              "type": "OBSERVATION_STOPPED_AT_DATA_OR_BASIS_GAP",
+              "date": "2026-07-01",
+              "first_observed_at": "2026-07-01"
+            }
+          ],
+          "last_close_location": "INSIDE",
+          "first_breakdown_at": null,
+          "first_departure_range_end": null,
+          "maximum_observed_downside_fraction": "0.11607142857142857142857142857142857142857142857143",
+          "maximum_downside_date": "2026-06-29",
+          "records_from_formation_to_maximum_low": 4,
+          "route_classification": "UNKNOWN_NO_APPROVED_FAST_SLOW_DECLINE_RULE",
+          "qualification": "CLOSE_LOCATION_AND_FAILURE_PATH_NOT_PERMANENT_INVALIDATION_OR_TRADING_SIGNAL"
+        },
+        "usable_at_anchor": false,
+        "anchor_relation": "NOT_COMPARABLE_AFTER_GAP",
+        "pressure_distance_fraction": "0.057692307692307692307692307692307692307692307692308",
+        "relative_width_to_anchor": "0.13461538461538461538461538461538461538461538461538",
+        "parent_ids": [
+          "sha256:1a3ad29bcb00007fad66010ca86d9790b29b3ca5524438ab32b18417fdce9000",
+          "sha256:534fa554cb0ab11863189e5c29c8366954d735af9898dac28c1ee2c16cc6bf42"
+        ],
+        "successor_after_breakdown_ids": [],
+        "interpretation": {
+          "settlement": "UNKNOWN_NO_APPROVED_VOLUME_OR_OWNERSHIP_RULE",
+          "strengthening": "CLOSE_FACT_ONLY_NOT_TRADE_QUALIFIED",
+          "lifecycle": "UNKNOWN",
+          "counterevidence": [],
+          "missing_evidence": [
+            "FORMAL_PRICE_BOUNDS",
+            "IMPORTANCE_WEIGHTS",
+            "VOLUME_EXPANSION_THRESHOLD",
+            "OWNERSHIP",
+            "HISTORICAL_PUBLICATION_TIMES"
+          ]
+        }
+      },
+      {
+        "scale": "0.03",
+        "segment": 0,
+        "first_index": 2,
+        "last_index": 17,
+        "formed_index": 19,
+        "start": "2026-06-03",
+        "source_end": "2026-06-24",
+        "first_observed_at": "2026-06-26",
+        "confirmed_at": "2026-06-26",
+        "source_turn_ids": [
+          "sha256:e8571d38325bffa9bf66be4cea60fd5ec254f7083c89dc3cd2040aec68c0945a",
+          "sha256:0c5edf851cec105c30926d177115311c87a432d845821dab7b44f6234468465c",
+          "sha256:a7864a13d3b3374e9c3f48bd5b0bab0917baaed644453c71ab03237cfd7fce47",
+          "sha256:d0ae111eb123350fd6b1eb4cfca513f6deee1c3b3baf3f670db3059c82d55ae2",
+          "sha256:92ef4d0f6f173eacf614ddd0e606ac7ee97af20865b037bb2becb21c8f45741a",
+          "sha256:0fcc9dd968eb4b747000ddbc9827ac1f4b55d9cd445e4fe1e1a3059fe8a9d80e",
+          "sha256:26723bb97601df91a519c5bc17f4572eaea56e81ac4dca6de337158eebe95bfd"
+        ],
+        "turns": 7,
+        "duration_records": 16,
+        "research_bounds": {
+          "low": "98",
+          "high": "112",
+          "pressure_band": [
+            "110",
+            "112"
+          ],
+          "support_band": [
+            "98",
+            "99"
+          ],
+          "high_cluster_spread_to_span": "0.14285714285714285714285714285714285714285714285714",
+          "low_cluster_spread_to_span": "0.071428571428571428571428571428571428571428571428571"
+        },
+        "formal_price_bounds": null,
+        "formal_region_membership": null,
+        "display_extent": {
+          "low": "98",
+          "high": "112",
+          "source_rows_fingerprint": "sha256:aae7fde02222d9e21ad4b238136078a4c8d0c63f3919809c875cf89837816df9"
+        },
+        "volume": {
+          "unit": "SHARES_REPORTED",
+          "records": 16,
+          "known_records": 16,
+          "missing_dates": [],
+          "supplied_interval_total": "32152",
+          "known_partial_sum": "32152",
+          "mean": "2009.5",
+          "maximum": "2017",
+          "maximum_dates": [
+            "2026-06-24"
+          ],
+          "prior_equal_record_window": {
+            "first_date": "2026-06-01",
+            "last_date": "2026-06-02",
+            "complete": false,
+            "includes_selected": false
+          },
+          "mean_to_prior_ratio": null,
+          "qualification": "DESCRIPTIVE_RESEARCH_INTERVAL_VOLUME_NOT_APPROVED_REGION_MEASURE_OR_REMAINING_SHARES"
+        },
+        "qualification": "AUTOMATIC_REPEATED_SWING_RANGE_CANDIDATE_NOT_APPROVED_BOX",
+        "id": "sha256:7f355dafbe863b60c2bc7b11400280258c5a7604b0dfa5f7344953e8bb4e4cba",
+        "path": {
+          "events": [
+            {
+              "type": "INITIAL_CLOSE_LOCATION",
+              "date": "2026-06-26",
+              "first_observed_at": "2026-06-26",
+              "previous": null,
+              "location": "INSIDE",
+              "close": "101",
+              "bounds_id": "sha256:7f355dafbe863b60c2bc7b11400280258c5a7604b0dfa5f7344953e8bb4e4cba",
+              "volume": {
+                "current_shares": "2019",
+                "ratio_to_previous_means": {
+                  "1": "1.0004955401387512388503468780971258671952428146680",
+                  "5": "1.0014880952380952380952380952380952380952380952381",
+                  "20": null
+                },
+                "baseline_includes_current": false,
+                "qualification": "DESCRIPTIVE_1_5_20_RECORD_COMPARISONS_NOT_VOLUME_EXPANSION_OR_SETTLEMENT_RULE"
+              }
+            },
+            {
+              "type": "OBSERVATION_STOPPED_AT_DATA_OR_BASIS_GAP",
+              "date": "2026-07-01",
+              "first_observed_at": "2026-07-01"
+            }
+          ],
+          "last_close_location": "INSIDE",
+          "first_breakdown_at": null,
+          "first_departure_range_end": null,
+          "maximum_observed_downside_fraction": "0.11607142857142857142857142857142857142857142857143",
+          "maximum_downside_date": "2026-06-29",
+          "records_from_formation_to_maximum_low": 1,
+          "route_classification": "UNKNOWN_NO_APPROVED_FAST_SLOW_DECLINE_RULE",
+          "qualification": "CLOSE_LOCATION_AND_FAILURE_PATH_NOT_PERMANENT_INVALIDATION_OR_TRADING_SIGNAL"
+        },
+        "usable_at_anchor": false,
+        "anchor_relation": "NOT_COMPARABLE_AFTER_GAP",
+        "pressure_distance_fraction": "0.057692307692307692307692307692307692307692307692308",
+        "relative_width_to_anchor": "0.13461538461538461538461538461538461538461538461538",
+        "parent_ids": [
+          "sha256:2573310e508b3840a8aff942189342fedea3b81627ae8c60c7bb373ae2827a7a"
+        ],
+        "successor_after_breakdown_ids": [],
+        "interpretation": {
+          "settlement": "UNKNOWN_NO_APPROVED_VOLUME_OR_OWNERSHIP_RULE",
+          "strengthening": "CLOSE_FACT_ONLY_NOT_TRADE_QUALIFIED",
+          "lifecycle": "UNKNOWN",
+          "counterevidence": [],
+          "missing_evidence": [
+            "FORMAL_PRICE_BOUNDS",
+            "IMPORTANCE_WEIGHTS",
+            "VOLUME_EXPANSION_THRESHOLD",
+            "OWNERSHIP",
+            "HISTORICAL_PUBLICATION_TIMES"
+          ]
+        }
+      },
+      {
+        "scale": "0.03",
+        "segment": 0,
+        "first_index": 10,
+        "last_index": 17,
+        "formed_index": 19,
+        "start": "2026-06-15",
+        "source_end": "2026-06-24",
+        "first_observed_at": "2026-06-26",
+        "confirmed_at": "2026-06-26",
+        "source_turn_ids": [
+          "sha256:d0ae111eb123350fd6b1eb4cfca513f6deee1c3b3baf3f670db3059c82d55ae2",
+          "sha256:92ef4d0f6f173eacf614ddd0e606ac7ee97af20865b037bb2becb21c8f45741a",
+          "sha256:0fcc9dd968eb4b747000ddbc9827ac1f4b55d9cd445e4fe1e1a3059fe8a9d80e",
+          "sha256:26723bb97601df91a519c5bc17f4572eaea56e81ac4dca6de337158eebe95bfd"
+        ],
+        "turns": 4,
+        "duration_records": 8,
+        "research_bounds": {
+          "low": "98",
+          "high": "112",
+          "pressure_band": [
+            "111",
+            "112"
+          ],
+          "support_band": [
+            "98",
+            "99"
+          ],
+          "high_cluster_spread_to_span": "0.071428571428571428571428571428571428571428571428571",
+          "low_cluster_spread_to_span": "0.071428571428571428571428571428571428571428571428571"
+        },
+        "formal_price_bounds": null,
+        "formal_region_membership": null,
+        "display_extent": {
+          "low": "98",
+          "high": "112",
+          "source_rows_fingerprint": "sha256:dd1bd2d076df0b18b0be072b9d6c918cd1205c927f62897427a021dd43f51cf1"
+        },
+        "volume": {
+          "unit": "SHARES_REPORTED",
+          "records": 8,
+          "known_records": 8,
+          "missing_dates": [],
+          "supplied_interval_total": "16108",
+          "known_partial_sum": "16108",
+          "mean": "2013.5",
+          "maximum": "2017",
+          "maximum_dates": [
+            "2026-06-24"
+          ],
+          "prior_equal_record_window": {
+            "first_date": "2026-06-03",
+            "last_date": "2026-06-12",
+            "complete": true,
+            "includes_selected": false
+          },
+          "mean_to_prior_ratio": "1.0039890301670406382448267265021191722762403390676",
+          "qualification": "DESCRIPTIVE_RESEARCH_INTERVAL_VOLUME_NOT_APPROVED_REGION_MEASURE_OR_REMAINING_SHARES"
+        },
+        "qualification": "AUTOMATIC_REPEATED_SWING_RANGE_CANDIDATE_NOT_APPROVED_BOX",
+        "id": "sha256:2255b89b9095b5446d8dc8ac210dfc4f388f673ea910bbd88d6b02e332c1a546",
+        "path": {
+          "events": [
+            {
+              "type": "INITIAL_CLOSE_LOCATION",
+              "date": "2026-06-26",
+              "first_observed_at": "2026-06-26",
+              "previous": null,
+              "location": "INSIDE",
+              "close": "101",
+              "bounds_id": "sha256:2255b89b9095b5446d8dc8ac210dfc4f388f673ea910bbd88d6b02e332c1a546",
+              "volume": {
+                "current_shares": "2019",
+                "ratio_to_previous_means": {
+                  "1": "1.0004955401387512388503468780971258671952428146680",
+                  "5": "1.0014880952380952380952380952380952380952380952381",
+                  "20": null
+                },
+                "baseline_includes_current": false,
+                "qualification": "DESCRIPTIVE_1_5_20_RECORD_COMPARISONS_NOT_VOLUME_EXPANSION_OR_SETTLEMENT_RULE"
+              }
+            },
+            {
+              "type": "OBSERVATION_STOPPED_AT_DATA_OR_BASIS_GAP",
+              "date": "2026-07-01",
+              "first_observed_at": "2026-07-01"
+            }
+          ],
+          "last_close_location": "INSIDE",
+          "first_breakdown_at": null,
+          "first_departure_range_end": null,
+          "maximum_observed_downside_fraction": "0.11607142857142857142857142857142857142857142857143",
+          "maximum_downside_date": "2026-06-29",
+          "records_from_formation_to_maximum_low": 1,
+          "route_classification": "UNKNOWN_NO_APPROVED_FAST_SLOW_DECLINE_RULE",
+          "qualification": "CLOSE_LOCATION_AND_FAILURE_PATH_NOT_PERMANENT_INVALIDATION_OR_TRADING_SIGNAL"
+        },
+        "usable_at_anchor": false,
+        "anchor_relation": "NOT_COMPARABLE_AFTER_GAP",
+        "pressure_distance_fraction": "0.067307692307692307692307692307692307692307692307692",
+        "relative_width_to_anchor": "0.13461538461538461538461538461538461538461538461538",
+        "parent_ids": [
+          "sha256:7f355dafbe863b60c2bc7b11400280258c5a7604b0dfa5f7344953e8bb4e4cba",
+          "sha256:0afadb1422da6750698d68aa89a903a162a1ed6a953328e01462a19962437699"
+        ],
+        "successor_after_breakdown_ids": [],
+        "interpretation": {
+          "settlement": "UNKNOWN_NO_APPROVED_VOLUME_OR_OWNERSHIP_RULE",
+          "strengthening": "CLOSE_FACT_ONLY_NOT_TRADE_QUALIFIED",
+          "lifecycle": "UNKNOWN",
+          "counterevidence": [],
+          "missing_evidence": [
+            "FORMAL_PRICE_BOUNDS",
+            "IMPORTANCE_WEIGHTS",
+            "VOLUME_EXPANSION_THRESHOLD",
+            "OWNERSHIP",
+            "HISTORICAL_PUBLICATION_TIMES"
+          ]
+        }
+      },
+      {
+        "scale": "0.03",
+        "segment": 0,
+        "first_index": 2,
+        "last_index": 20,
+        "formed_index": 21,
+        "start": "2026-06-03",
+        "source_end": "2026-06-29",
+        "first_observed_at": "2026-06-30",
+        "confirmed_at": "2026-06-30",
+        "source_turn_ids": [
+          "sha256:e8571d38325bffa9bf66be4cea60fd5ec254f7083c89dc3cd2040aec68c0945a",
+          "sha256:0c5edf851cec105c30926d177115311c87a432d845821dab7b44f6234468465c",
+          "sha256:a7864a13d3b3374e9c3f48bd5b0bab0917baaed644453c71ab03237cfd7fce47",
+          "sha256:d0ae111eb123350fd6b1eb4cfca513f6deee1c3b3baf3f670db3059c82d55ae2",
+          "sha256:92ef4d0f6f173eacf614ddd0e606ac7ee97af20865b037bb2becb21c8f45741a",
+          "sha256:0fcc9dd968eb4b747000ddbc9827ac1f4b55d9cd445e4fe1e1a3059fe8a9d80e",
+          "sha256:26723bb97601df91a519c5bc17f4572eaea56e81ac4dca6de337158eebe95bfd",
+          "sha256:cfa7d94ed290b96cba122114c60391fc70f1bfd9f0fc913917217f5dd5b6be22"
+        ],
+        "turns": 8,
+        "duration_records": 19,
+        "research_bounds": {
+          "low": "98",
+          "high": "112",
+          "pressure_band": [
+            "110",
+            "112"
+          ],
+          "support_band": [
+            "98",
+            "99"
+          ],
+          "high_cluster_spread_to_span": "0.14285714285714285714285714285714285714285714285714",
+          "low_cluster_spread_to_span": "0.071428571428571428571428571428571428571428571428571"
+        },
+        "formal_price_bounds": null,
+        "formal_region_membership": null,
+        "display_extent": {
+          "low": "98",
+          "high": "112",
+          "source_rows_fingerprint": "sha256:7a5aa5fbbf535b262f3681e9ae925585152c984c047a8f04cf099afa3aeca8a3"
+        },
+        "volume": {
+          "unit": "SHARES_REPORTED",
+          "records": 19,
+          "known_records": 19,
+          "missing_dates": [],
+          "supplied_interval_total": "38209",
+          "known_partial_sum": "38209",
+          "mean": "2011",
+          "maximum": "2020",
+          "maximum_dates": [
+            "2026-06-29"
+          ],
+          "prior_equal_record_window": {
+            "first_date": "2026-06-01",
+            "last_date": "2026-06-02",
+            "complete": false,
+            "includes_selected": false
+          },
+          "mean_to_prior_ratio": null,
+          "qualification": "DESCRIPTIVE_RESEARCH_INTERVAL_VOLUME_NOT_APPROVED_REGION_MEASURE_OR_REMAINING_SHARES"
+        },
+        "qualification": "AUTOMATIC_REPEATED_SWING_RANGE_CANDIDATE_NOT_APPROVED_BOX",
+        "id": "sha256:2573310e508b3840a8aff942189342fedea3b81627ae8c60c7bb373ae2827a7a",
+        "path": {
+          "events": [
+            {
+              "type": "INITIAL_CLOSE_LOCATION",
+              "date": "2026-06-30",
+              "first_observed_at": "2026-06-30",
+              "previous": null,
+              "location": "INSIDE",
+              "close": "104",
+              "bounds_id": "sha256:2573310e508b3840a8aff942189342fedea3b81627ae8c60c7bb373ae2827a7a",
+              "volume": {
+                "current_shares": "2021",
+                "ratio_to_previous_means": {
+                  "1": "1.0004950495049504950495049504950495049504950495050",
+                  "5": "1.0014866204162537165510406342913776015857284440040",
+                  "20": "1.0052225814474011439940313354886844068639641880129"
+                },
+                "baseline_includes_current": false,
+                "qualification": "DESCRIPTIVE_1_5_20_RECORD_COMPARISONS_NOT_VOLUME_EXPANSION_OR_SETTLEMENT_RULE"
+              }
+            },
+            {
+              "type": "OBSERVATION_STOPPED_AT_DATA_OR_BASIS_GAP",
+              "date": "2026-07-01",
+              "first_observed_at": "2026-07-01"
+            }
+          ],
+          "last_close_location": "INSIDE",
+          "first_breakdown_at": null,
+          "first_departure_range_end": null,
+          "maximum_observed_downside_fraction": "0.080357142857142857142857142857142857142857142857143",
+          "maximum_downside_date": "2026-06-30",
+          "records_from_formation_to_maximum_low": 0,
+          "route_classification": "UNKNOWN_NO_APPROVED_FAST_SLOW_DECLINE_RULE",
+          "qualification": "CLOSE_LOCATION_AND_FAILURE_PATH_NOT_PERMANENT_INVALIDATION_OR_TRADING_SIGNAL"
+        },
+        "usable_at_anchor": false,
+        "anchor_relation": "NOT_COMPARABLE_AFTER_GAP",
+        "pressure_distance_fraction": "0.057692307692307692307692307692307692307692307692308",
+        "relative_width_to_anchor": "0.13461538461538461538461538461538461538461538461538",
+        "parent_ids": [],
+        "successor_after_breakdown_ids": [],
+        "interpretation": {
+          "settlement": "UNKNOWN_NO_APPROVED_VOLUME_OR_OWNERSHIP_RULE",
+          "strengthening": "CLOSE_FACT_ONLY_NOT_TRADE_QUALIFIED",
+          "lifecycle": "UNKNOWN",
+          "counterevidence": [],
+          "missing_evidence": [
+            "FORMAL_PRICE_BOUNDS",
+            "IMPORTANCE_WEIGHTS",
+            "VOLUME_EXPANSION_THRESHOLD",
+            "OWNERSHIP",
+            "HISTORICAL_PUBLICATION_TIMES"
+          ]
+        }
+      },
+      {
+        "scale": "0.03",
+        "segment": 0,
+        "first_index": 12,
+        "last_index": 20,
+        "formed_index": 21,
+        "start": "2026-06-17",
+        "source_end": "2026-06-29",
+        "first_observed_at": "2026-06-30",
+        "confirmed_at": "2026-06-30",
+        "source_turn_ids": [
+          "sha256:92ef4d0f6f173eacf614ddd0e606ac7ee97af20865b037bb2becb21c8f45741a",
+          "sha256:0fcc9dd968eb4b747000ddbc9827ac1f4b55d9cd445e4fe1e1a3059fe8a9d80e",
+          "sha256:26723bb97601df91a519c5bc17f4572eaea56e81ac4dca6de337158eebe95bfd",
+          "sha256:cfa7d94ed290b96cba122114c60391fc70f1bfd9f0fc913917217f5dd5b6be22"
+        ],
+        "turns": 4,
+        "duration_records": 9,
+        "research_bounds": {
+          "low": "99",
+          "high": "112",
+          "pressure_band": [
+            "111",
+            "112"
+          ],
+          "support_band": [
+            "99",
+            "99"
+          ],
+          "high_cluster_spread_to_span": "0.076923076923076923076923076923076923076923076923077",
+          "low_cluster_spread_to_span": "0"
+        },
+        "formal_price_bounds": null,
+        "formal_region_membership": null,
+        "display_extent": {
+          "low": "99",
+          "high": "112",
+          "source_rows_fingerprint": "sha256:4ab15653f807401361f5c5ca825712fa138e1b36c0245119be0154a99a77e73c"
+        },
+        "volume": {
+          "unit": "SHARES_REPORTED",
+          "records": 9,
+          "known_records": 9,
+          "missing_dates": [],
+          "supplied_interval_total": "18144",
+          "known_partial_sum": "18144",
+          "mean": "2016",
+          "maximum": "2020",
+          "maximum_dates": [
+            "2026-06-29"
+          ],
+          "prior_equal_record_window": {
+            "first_date": "2026-06-04",
+            "last_date": "2026-06-16",
+            "complete": true,
+            "includes_selected": false
+          },
+          "mean_to_prior_ratio": "1.0044843049327354260089686098654708520179372197309",
+          "qualification": "DESCRIPTIVE_RESEARCH_INTERVAL_VOLUME_NOT_APPROVED_REGION_MEASURE_OR_REMAINING_SHARES"
+        },
+        "qualification": "AUTOMATIC_REPEATED_SWING_RANGE_CANDIDATE_NOT_APPROVED_BOX",
+        "id": "sha256:feafe31f8e79e5b6a44e6cd9f5b3b976c5ece51c492217014a1cacd131e63f2b",
+        "path": {
+          "events": [
+            {
+              "type": "INITIAL_CLOSE_LOCATION",
+              "date": "2026-06-30",
+              "first_observed_at": "2026-06-30",
+              "previous": null,
+              "location": "INSIDE",
+              "close": "104",
+              "bounds_id": "sha256:feafe31f8e79e5b6a44e6cd9f5b3b976c5ece51c492217014a1cacd131e63f2b",
+              "volume": {
+                "current_shares": "2021",
+                "ratio_to_previous_means": {
+                  "1": "1.0004950495049504950495049504950495049504950495050",
+                  "5": "1.0014866204162537165510406342913776015857284440040",
+                  "20": "1.0052225814474011439940313354886844068639641880129"
+                },
+                "baseline_includes_current": false,
+                "qualification": "DESCRIPTIVE_1_5_20_RECORD_COMPARISONS_NOT_VOLUME_EXPANSION_OR_SETTLEMENT_RULE"
+              }
+            },
+            {
+              "type": "OBSERVATION_STOPPED_AT_DATA_OR_BASIS_GAP",
+              "date": "2026-07-01",
+              "first_observed_at": "2026-07-01"
+            }
+          ],
+          "last_close_location": "INSIDE",
+          "first_breakdown_at": null,
+          "first_departure_range_end": null,
+          "maximum_observed_downside_fraction": "0.080357142857142857142857142857142857142857142857143",
+          "maximum_downside_date": "2026-06-30",
+          "records_from_formation_to_maximum_low": 0,
+          "route_classification": "UNKNOWN_NO_APPROVED_FAST_SLOW_DECLINE_RULE",
+          "qualification": "CLOSE_LOCATION_AND_FAILURE_PATH_NOT_PERMANENT_INVALIDATION_OR_TRADING_SIGNAL"
+        },
+        "usable_at_anchor": false,
+        "anchor_relation": "NOT_COMPARABLE_AFTER_GAP",
+        "pressure_distance_fraction": "0.067307692307692307692307692307692307692307692307692",
+        "relative_width_to_anchor": "0.125",
+        "parent_ids": [
+          "sha256:2573310e508b3840a8aff942189342fedea3b81627ae8c60c7bb373ae2827a7a"
+        ],
+        "successor_after_breakdown_ids": [],
+        "interpretation": {
+          "settlement": "UNKNOWN_NO_APPROVED_VOLUME_OR_OWNERSHIP_RULE",
+          "strengthening": "CLOSE_FACT_ONLY_NOT_TRADE_QUALIFIED",
+          "lifecycle": "UNKNOWN",
+          "counterevidence": [],
+          "missing_evidence": [
+            "FORMAL_PRICE_BOUNDS",
+            "IMPORTANCE_WEIGHTS",
+            "VOLUME_EXPANSION_THRESHOLD",
+            "OWNERSHIP",
+            "HISTORICAL_PUBLICATION_TIMES"
+          ]
+        }
+      },
+      {
+        "scale": "0.03",
+        "segment": 1,
+        "first_index": 25,
+        "last_index": 32,
+        "formed_index": 34,
+        "start": "2026-07-06",
+        "source_end": "2026-07-15",
+        "first_observed_at": "2026-07-17",
+        "confirmed_at": "2026-07-17",
+        "source_turn_ids": [
+          "sha256:a6d3923644604141d9b5943c544f85ec598ab1449a6b5741c93d6bdba7c31d3d",
+          "sha256:f3d4052849bcd56b3d88ca34981bcfb9f54130f948c31d6e74c7707d7c50b14d",
+          "sha256:36495a4bfb868bb6503cd7bd5ce398e1ab012be6e5c5060844e25ada8b2d4c3b",
+          "sha256:c35e080ab32996468bb9959674de08847eab64a3bd045e6267f73d3fd10bd83e"
+        ],
+        "turns": 4,
+        "duration_records": 8,
+        "research_bounds": {
+          "low": "98",
+          "high": "112",
+          "pressure_band": [
+            "111",
+            "112"
+          ],
+          "support_band": [
+            "98",
+            "99"
+          ],
+          "high_cluster_spread_to_span": "0.071428571428571428571428571428571428571428571428571",
+          "low_cluster_spread_to_span": "0.071428571428571428571428571428571428571428571428571"
+        },
+        "formal_price_bounds": null,
+        "formal_region_membership": null,
+        "display_extent": {
+          "low": "98",
+          "high": "112",
+          "source_rows_fingerprint": "sha256:bce5411da48d090c2e168bce9c2e9ba0f3d0698253e075b711dfcbc08ad999b0"
+        },
+        "volume": {
+          "unit": "SHARES_REPORTED",
+          "records": 8,
+          "known_records": 8,
+          "missing_dates": [],
+          "supplied_interval_total": "16228",
+          "known_partial_sum": "16228",
+          "mean": "2028.5",
+          "maximum": "2032",
+          "maximum_dates": [
+            "2026-07-15"
+          ],
+          "prior_equal_record_window": {
+            "first_date": "2026-07-01",
+            "last_date": "2026-07-03",
+            "complete": false,
+            "includes_selected": false
+          },
+          "mean_to_prior_ratio": null,
+          "qualification": "DESCRIPTIVE_RESEARCH_INTERVAL_VOLUME_NOT_APPROVED_REGION_MEASURE_OR_REMAINING_SHARES"
+        },
+        "qualification": "AUTOMATIC_REPEATED_SWING_RANGE_CANDIDATE_NOT_APPROVED_BOX",
+        "id": "sha256:b562120bec4bc3621fe738faffef7cb1a4fec7bd138fb3096b58e61f44416bdf",
+        "path": {
+          "events": [
+            {
+              "type": "INITIAL_CLOSE_LOCATION",
+              "date": "2026-07-17",
+              "first_observed_at": "2026-07-17",
+              "previous": null,
+              "location": "INSIDE",
+              "close": "101",
+              "bounds_id": "sha256:b562120bec4bc3621fe738faffef7cb1a4fec7bd138fb3096b58e61f44416bdf",
+              "volume": {
+                "current_shares": "2034",
+                "ratio_to_previous_means": {
+                  "1": "1.0004918839153959665518937530742744712247909493360",
+                  "5": "1.0014771048744460856720827178729689807976366322009",
+                  "20": null
+                },
+                "baseline_includes_current": false,
+                "qualification": "DESCRIPTIVE_1_5_20_RECORD_COMPARISONS_NOT_VOLUME_EXPANSION_OR_SETTLEMENT_RULE"
+              }
+            }
+          ],
+          "last_close_location": "INSIDE",
+          "first_breakdown_at": null,
+          "first_departure_range_end": null,
+          "maximum_observed_downside_fraction": "0.11607142857142857142857142857142857142857142857143",
+          "maximum_downside_date": "2026-07-20",
+          "records_from_formation_to_maximum_low": 1,
+          "route_classification": "UNKNOWN_NO_APPROVED_FAST_SLOW_DECLINE_RULE",
+          "qualification": "CLOSE_LOCATION_AND_FAILURE_PATH_NOT_PERMANENT_INVALIDATION_OR_TRADING_SIGNAL"
+        },
+        "usable_at_anchor": true,
+        "anchor_relation": "BELOW",
+        "pressure_distance_fraction": "0.067307692307692307692307692307692307692307692307692",
+        "relative_width_to_anchor": "0.13461538461538461538461538461538461538461538461538",
+        "parent_ids": [
+          "sha256:296d82d803b8f49f01a8fdae7ee1664e626175b6390dd82002012d9119f6a6f0"
+        ],
+        "research_dominated_by": [],
+        "successor_after_breakdown_ids": [],
+        "interpretation": {
+          "settlement": "UNKNOWN_NO_APPROVED_VOLUME_OR_OWNERSHIP_RULE",
+          "strengthening": "CLOSE_FACT_ONLY_NOT_TRADE_QUALIFIED",
+          "lifecycle": "UNKNOWN",
+          "counterevidence": [],
+          "missing_evidence": [
+            "FORMAL_PRICE_BOUNDS",
+            "IMPORTANCE_WEIGHTS",
+            "VOLUME_EXPANSION_THRESHOLD",
+            "OWNERSHIP",
+            "HISTORICAL_PUBLICATION_TIMES"
+          ]
+        }
+      },
+      {
+        "scale": "0.03",
+        "segment": 1,
+        "first_index": 25,
+        "last_index": 35,
+        "formed_index": 36,
+        "start": "2026-07-06",
+        "source_end": "2026-07-20",
+        "first_observed_at": "2026-07-21",
+        "confirmed_at": "2026-07-21",
+        "source_turn_ids": [
+          "sha256:a6d3923644604141d9b5943c544f85ec598ab1449a6b5741c93d6bdba7c31d3d",
+          "sha256:f3d4052849bcd56b3d88ca34981bcfb9f54130f948c31d6e74c7707d7c50b14d",
+          "sha256:36495a4bfb868bb6503cd7bd5ce398e1ab012be6e5c5060844e25ada8b2d4c3b",
+          "sha256:c35e080ab32996468bb9959674de08847eab64a3bd045e6267f73d3fd10bd83e",
+          "sha256:2dea0cd8174395444908776c4161f90e3fcc38e1a6bd252a4cee483dc1f61d80"
+        ],
+        "turns": 5,
+        "duration_records": 11,
+        "research_bounds": {
+          "low": "98",
+          "high": "112",
+          "pressure_band": [
+            "111",
+            "112"
+          ],
+          "support_band": [
+            "98",
+            "99"
+          ],
+          "high_cluster_spread_to_span": "0.071428571428571428571428571428571428571428571428571",
+          "low_cluster_spread_to_span": "0.071428571428571428571428571428571428571428571428571"
+        },
+        "formal_price_bounds": null,
+        "formal_region_membership": null,
+        "display_extent": {
+          "low": "98",
+          "high": "112",
+          "source_rows_fingerprint": "sha256:af9e578af03769a7858b6d58de9b17284f756a215ccd11598c0a435a133cb5d2"
+        },
+        "volume": {
+          "unit": "SHARES_REPORTED",
+          "records": 11,
+          "known_records": 11,
+          "missing_dates": [],
+          "supplied_interval_total": "22330",
+          "known_partial_sum": "22330",
+          "mean": "2030",
+          "maximum": "2035",
+          "maximum_dates": [
+            "2026-07-20"
+          ],
+          "prior_equal_record_window": {
+            "first_date": "2026-07-01",
+            "last_date": "2026-07-03",
+            "complete": false,
+            "includes_selected": false
+          },
+          "mean_to_prior_ratio": null,
+          "qualification": "DESCRIPTIVE_RESEARCH_INTERVAL_VOLUME_NOT_APPROVED_REGION_MEASURE_OR_REMAINING_SHARES"
+        },
+        "qualification": "AUTOMATIC_REPEATED_SWING_RANGE_CANDIDATE_NOT_APPROVED_BOX",
+        "id": "sha256:296d82d803b8f49f01a8fdae7ee1664e626175b6390dd82002012d9119f6a6f0",
+        "path": {
+          "events": [
+            {
+              "type": "INITIAL_CLOSE_LOCATION",
+              "date": "2026-07-21",
+              "first_observed_at": "2026-07-21",
+              "previous": null,
+              "location": "INSIDE",
+              "close": "104",
+              "bounds_id": "sha256:296d82d803b8f49f01a8fdae7ee1664e626175b6390dd82002012d9119f6a6f0",
+              "volume": {
+                "current_shares": "2036",
+                "ratio_to_previous_means": {
+                  "1": "1.0004914004914004914004914004914004914004914004914",
+                  "5": "1.0014756517461878996556812592228234136743728480079",
+                  "20": null
+                },
+                "baseline_includes_current": false,
+                "qualification": "DESCRIPTIVE_1_5_20_RECORD_COMPARISONS_NOT_VOLUME_EXPANSION_OR_SETTLEMENT_RULE"
+              }
+            }
+          ],
+          "last_close_location": "INSIDE",
+          "first_breakdown_at": null,
+          "first_departure_range_end": null,
+          "maximum_observed_downside_fraction": "0.080357142857142857142857142857142857142857142857143",
+          "maximum_downside_date": "2026-07-21",
+          "records_from_formation_to_maximum_low": 0,
+          "route_classification": "UNKNOWN_NO_APPROVED_FAST_SLOW_DECLINE_RULE",
+          "qualification": "CLOSE_LOCATION_AND_FAILURE_PATH_NOT_PERMANENT_INVALIDATION_OR_TRADING_SIGNAL"
+        },
+        "usable_at_anchor": true,
+        "anchor_relation": "BELOW",
+        "pressure_distance_fraction": "0.067307692307692307692307692307692307692307692307692",
+        "relative_width_to_anchor": "0.13461538461538461538461538461538461538461538461538",
+        "parent_ids": [],
+        "research_dominated_by": [],
+        "successor_after_breakdown_ids": [],
+        "interpretation": {
+          "settlement": "UNKNOWN_NO_APPROVED_VOLUME_OR_OWNERSHIP_RULE",
+          "strengthening": "CLOSE_FACT_ONLY_NOT_TRADE_QUALIFIED",
+          "lifecycle": "UNKNOWN",
+          "counterevidence": [],
+          "missing_evidence": [
+            "FORMAL_PRICE_BOUNDS",
+            "IMPORTANCE_WEIGHTS",
+            "VOLUME_EXPANSION_THRESHOLD",
+            "OWNERSHIP",
+            "HISTORICAL_PUBLICATION_TIMES"
+          ]
+        }
+      },
+      {
+        "scale": "0.03",
+        "segment": 1,
+        "first_index": 27,
+        "last_index": 35,
+        "formed_index": 36,
+        "start": "2026-07-08",
+        "source_end": "2026-07-20",
+        "first_observed_at": "2026-07-21",
+        "confirmed_at": "2026-07-21",
+        "source_turn_ids": [
+          "sha256:f3d4052849bcd56b3d88ca34981bcfb9f54130f948c31d6e74c7707d7c50b14d",
+          "sha256:36495a4bfb868bb6503cd7bd5ce398e1ab012be6e5c5060844e25ada8b2d4c3b",
+          "sha256:c35e080ab32996468bb9959674de08847eab64a3bd045e6267f73d3fd10bd83e",
+          "sha256:2dea0cd8174395444908776c4161f90e3fcc38e1a6bd252a4cee483dc1f61d80"
+        ],
+        "turns": 4,
+        "duration_records": 9,
+        "research_bounds": {
+          "low": "99",
+          "high": "112",
+          "pressure_band": [
+            "111",
+            "112"
+          ],
+          "support_band": [
+            "99",
+            "99"
+          ],
+          "high_cluster_spread_to_span": "0.076923076923076923076923076923076923076923076923077",
+          "low_cluster_spread_to_span": "0"
+        },
+        "formal_price_bounds": null,
+        "formal_region_membership": null,
+        "display_extent": {
+          "low": "99",
+          "high": "112",
+          "source_rows_fingerprint": "sha256:028bf5b628388789077ef5ed782ed79e9104560402b11a355b54035995daf611"
+        },
+        "volume": {
+          "unit": "SHARES_REPORTED",
+          "records": 9,
+          "known_records": 9,
+          "missing_dates": [],
+          "supplied_interval_total": "18279",
+          "known_partial_sum": "18279",
+          "mean": "2031",
+          "maximum": "2035",
+          "maximum_dates": [
+            "2026-07-20"
+          ],
+          "prior_equal_record_window": {
+            "first_date": "2026-07-01",
+            "last_date": "2026-07-07",
+            "complete": false,
+            "includes_selected": false
+          },
+          "mean_to_prior_ratio": null,
+          "qualification": "DESCRIPTIVE_RESEARCH_INTERVAL_VOLUME_NOT_APPROVED_REGION_MEASURE_OR_REMAINING_SHARES"
+        },
+        "qualification": "AUTOMATIC_REPEATED_SWING_RANGE_CANDIDATE_NOT_APPROVED_BOX",
+        "id": "sha256:4e9b8aa5a8a96d6045d083fae77e6592db1ebf7a4409116208b83dbc3c076f6b",
+        "path": {
+          "events": [
+            {
+              "type": "INITIAL_CLOSE_LOCATION",
+              "date": "2026-07-21",
+              "first_observed_at": "2026-07-21",
+              "previous": null,
+              "location": "INSIDE",
+              "close": "104",
+              "bounds_id": "sha256:4e9b8aa5a8a96d6045d083fae77e6592db1ebf7a4409116208b83dbc3c076f6b",
+              "volume": {
+                "current_shares": "2036",
+                "ratio_to_previous_means": {
+                  "1": "1.0004914004914004914004914004914004914004914004914",
+                  "5": "1.0014756517461878996556812592228234136743728480079",
+                  "20": null
+                },
+                "baseline_includes_current": false,
+                "qualification": "DESCRIPTIVE_1_5_20_RECORD_COMPARISONS_NOT_VOLUME_EXPANSION_OR_SETTLEMENT_RULE"
+              }
+            }
+          ],
+          "last_close_location": "INSIDE",
+          "first_breakdown_at": null,
+          "first_departure_range_end": null,
+          "maximum_observed_downside_fraction": "0.080357142857142857142857142857142857142857142857143",
+          "maximum_downside_date": "2026-07-21",
+          "records_from_formation_to_maximum_low": 0,
+          "route_classification": "UNKNOWN_NO_APPROVED_FAST_SLOW_DECLINE_RULE",
+          "qualification": "CLOSE_LOCATION_AND_FAILURE_PATH_NOT_PERMANENT_INVALIDATION_OR_TRADING_SIGNAL"
+        },
+        "usable_at_anchor": true,
+        "anchor_relation": "BELOW",
+        "pressure_distance_fraction": "0.067307692307692307692307692307692307692307692307692",
+        "relative_width_to_anchor": "0.125",
+        "parent_ids": [
+          "sha256:296d82d803b8f49f01a8fdae7ee1664e626175b6390dd82002012d9119f6a6f0"
+        ],
+        "research_dominated_by": [],
+        "successor_after_breakdown_ids": [],
+        "interpretation": {
+          "settlement": "UNKNOWN_NO_APPROVED_VOLUME_OR_OWNERSHIP_RULE",
+          "strengthening": "CLOSE_FACT_ONLY_NOT_TRADE_QUALIFIED",
+          "lifecycle": "UNKNOWN",
+          "counterevidence": [],
+          "missing_evidence": [
+            "FORMAL_PRICE_BOUNDS",
+            "IMPORTANCE_WEIGHTS",
+            "VOLUME_EXPANSION_THRESHOLD",
+            "OWNERSHIP",
+            "HISTORICAL_PUBLICATION_TIMES"
+          ]
+        }
+      },
+      {
+        "scale": "0.06",
+        "segment": 0,
+        "first_index": 2,
+        "last_index": 10,
+        "formed_index": 12,
+        "start": "2026-06-03",
+        "source_end": "2026-06-15",
+        "first_observed_at": "2026-06-17",
+        "confirmed_at": "2026-06-17",
+        "source_turn_ids": [
+          "sha256:e15071072ae9dafb73f8f99d4b00ef2da31bcbd1c8e45db9d4b17ae8c0ad20e3",
+          "sha256:0aa7b9b03fc6341e6243b52fabc616b6781fb5970e0095c27e626ad2e0a66d42",
+          "sha256:0bae5fab6e6fe5d851c409c7c19bba7d99e7f10f7c311970fa1e0ae5d8509eb6",
+          "sha256:a4bede2e9be4c721b63aa93a883d559f310c58b6424e75760836fd51a58801e6"
+        ],
+        "turns": 4,
+        "duration_records": 9,
+        "research_bounds": {
+          "low": "98",
+          "high": "111",
+          "pressure_band": [
+            "110",
+            "111"
+          ],
+          "support_band": [
+            "98",
+            "99"
+          ],
+          "high_cluster_spread_to_span": "0.076923076923076923076923076923076923076923076923077",
+          "low_cluster_spread_to_span": "0.076923076923076923076923076923076923076923076923077"
+        },
+        "formal_price_bounds": null,
+        "formal_region_membership": null,
+        "display_extent": {
+          "low": "98",
+          "high": "111",
+          "source_rows_fingerprint": "sha256:157c4f8cc2c1c7a4978d6d17817c71b29d92ad1e67e4a50534430796027dbe42"
+        },
+        "volume": {
+          "unit": "SHARES_REPORTED",
+          "records": 9,
+          "known_records": 9,
+          "missing_dates": [],
+          "supplied_interval_total": "18054",
+          "known_partial_sum": "18054",
+          "mean": "2006",
+          "maximum": "2010",
+          "maximum_dates": [
+            "2026-06-15"
+          ],
+          "prior_equal_record_window": {
+            "first_date": "2026-06-01",
+            "last_date": "2026-06-02",
+            "complete": false,
+            "includes_selected": false
+          },
+          "mean_to_prior_ratio": null,
+          "qualification": "DESCRIPTIVE_RESEARCH_INTERVAL_VOLUME_NOT_APPROVED_REGION_MEASURE_OR_REMAINING_SHARES"
+        },
+        "qualification": "AUTOMATIC_REPEATED_SWING_RANGE_CANDIDATE_NOT_APPROVED_BOX",
+        "id": "sha256:3eed23a8b37daf4f3d80709c2bc0c65d18bb5cbd0572bab323812761cbebce09",
+        "path": {
+          "events": [
+            {
+              "type": "INITIAL_CLOSE_LOCATION",
+              "date": "2026-06-17",
+              "first_observed_at": "2026-06-17",
+              "previous": null,
+              "location": "INSIDE",
+              "close": "111",
+              "bounds_id": "sha256:3eed23a8b37daf4f3d80709c2bc0c65d18bb5cbd0572bab323812761cbebce09",
+              "volume": {
+                "current_shares": "2012",
+                "ratio_to_previous_means": {
+                  "1": "1.0004972650422675285927399303828940825459970164097",
+                  "5": "1.0014932802389248382279741164758586361373817819811",
+                  "20": null
+                },
+                "baseline_includes_current": false,
+                "qualification": "DESCRIPTIVE_1_5_20_RECORD_COMPARISONS_NOT_VOLUME_EXPANSION_OR_SETTLEMENT_RULE"
+              }
+            },
+            {
+              "type": "OBSERVATION_STOPPED_AT_DATA_OR_BASIS_GAP",
+              "date": "2026-07-01",
+              "first_observed_at": "2026-07-01"
+            }
+          ],
+          "last_close_location": "INSIDE",
+          "first_breakdown_at": null,
+          "first_departure_range_end": null,
+          "maximum_observed_downside_fraction": "0.10810810810810810810810810810810810810810810810811",
+          "maximum_downside_date": "2026-06-22",
+          "records_from_formation_to_maximum_low": 3,
+          "route_classification": "UNKNOWN_NO_APPROVED_FAST_SLOW_DECLINE_RULE",
+          "qualification": "CLOSE_LOCATION_AND_FAILURE_PATH_NOT_PERMANENT_INVALIDATION_OR_TRADING_SIGNAL"
+        },
+        "usable_at_anchor": false,
+        "anchor_relation": "NOT_COMPARABLE_AFTER_GAP",
+        "pressure_distance_fraction": "0.057692307692307692307692307692307692307692307692308",
+        "relative_width_to_anchor": "0.125",
+        "parent_ids": [
+          "sha256:18d90cb72f499a05d0d111aa027f18744ca3e7d2ae5203f6d44ccc477b1c435c",
+          "sha256:6b1d6e31878136acff4305c9904d6749b94225360b0bbe5c4f56939d075ad2f4"
+        ],
+        "successor_after_breakdown_ids": [],
+        "interpretation": {
+          "settlement": "UNKNOWN_NO_APPROVED_VOLUME_OR_OWNERSHIP_RULE",
+          "strengthening": "CLOSE_FACT_ONLY_NOT_TRADE_QUALIFIED",
+          "lifecycle": "UNKNOWN",
+          "counterevidence": [],
+          "missing_evidence": [
+            "FORMAL_PRICE_BOUNDS",
+            "IMPORTANCE_WEIGHTS",
+            "VOLUME_EXPANSION_THRESHOLD",
+            "OWNERSHIP",
+            "HISTORICAL_PUBLICATION_TIMES"
+          ]
+        }
+      },
+      {
+        "scale": "0.06",
+        "segment": 0,
+        "first_index": 2,
+        "last_index": 12,
+        "formed_index": 14,
+        "start": "2026-06-03",
+        "source_end": "2026-06-17",
+        "first_observed_at": "2026-06-19",
+        "confirmed_at": "2026-06-19",
+        "source_turn_ids": [
+          "sha256:e15071072ae9dafb73f8f99d4b00ef2da31bcbd1c8e45db9d4b17ae8c0ad20e3",
+          "sha256:0aa7b9b03fc6341e6243b52fabc616b6781fb5970e0095c27e626ad2e0a66d42",
+          "sha256:0bae5fab6e6fe5d851c409c7c19bba7d99e7f10f7c311970fa1e0ae5d8509eb6",
+          "sha256:a4bede2e9be4c721b63aa93a883d559f310c58b6424e75760836fd51a58801e6",
+          "sha256:a9b75edc6bae69470342fa03e55d1e30ee679a1660b60220ceb154a689e13474"
+        ],
+        "turns": 5,
+        "duration_records": 11,
+        "research_bounds": {
+          "low": "98",
+          "high": "112",
+          "pressure_band": [
+            "110",
+            "112"
+          ],
+          "support_band": [
+            "98",
+            "99"
+          ],
+          "high_cluster_spread_to_span": "0.14285714285714285714285714285714285714285714285714",
+          "low_cluster_spread_to_span": "0.071428571428571428571428571428571428571428571428571"
+        },
+        "formal_price_bounds": null,
+        "formal_region_membership": null,
+        "display_extent": {
+          "low": "98",
+          "high": "112",
+          "source_rows_fingerprint": "sha256:3e401547691091db38534664828b64c168a3e0f07a85610347d55e63a9d7bf83"
+        },
+        "volume": {
+          "unit": "SHARES_REPORTED",
+          "records": 11,
+          "known_records": 11,
+          "missing_dates": [],
+          "supplied_interval_total": "22077",
+          "known_partial_sum": "22077",
+          "mean": "2007",
+          "maximum": "2012",
+          "maximum_dates": [
+            "2026-06-17"
+          ],
+          "prior_equal_record_window": {
+            "first_date": "2026-06-01",
+            "last_date": "2026-06-02",
+            "complete": false,
+            "includes_selected": false
+          },
+          "mean_to_prior_ratio": null,
+          "qualification": "DESCRIPTIVE_RESEARCH_INTERVAL_VOLUME_NOT_APPROVED_REGION_MEASURE_OR_REMAINING_SHARES"
+        },
+        "qualification": "AUTOMATIC_REPEATED_SWING_RANGE_CANDIDATE_NOT_APPROVED_BOX",
+        "id": "sha256:6b1d6e31878136acff4305c9904d6749b94225360b0bbe5c4f56939d075ad2f4",
+        "path": {
+          "events": [
+            {
+              "type": "INITIAL_CLOSE_LOCATION",
+              "date": "2026-06-19",
+              "first_observed_at": "2026-06-19",
+              "previous": null,
+              "location": "INSIDE",
+              "close": "101",
+              "bounds_id": "sha256:6b1d6e31878136acff4305c9904d6749b94225360b0bbe5c4f56939d075ad2f4",
+              "volume": {
+                "current_shares": "2014",
+                "ratio_to_previous_means": {
+                  "1": "1.0004967709885742672627918529557873820168902136115",
+                  "5": "1.0014917951268025857782197911486822476379910492292",
+                  "20": null
+                },
+                "baseline_includes_current": false,
+                "qualification": "DESCRIPTIVE_1_5_20_RECORD_COMPARISONS_NOT_VOLUME_EXPANSION_OR_SETTLEMENT_RULE"
+              }
+            },
+            {
+              "type": "OBSERVATION_STOPPED_AT_DATA_OR_BASIS_GAP",
+              "date": "2026-07-01",
+              "first_observed_at": "2026-07-01"
+            }
+          ],
+          "last_close_location": "INSIDE",
+          "first_breakdown_at": null,
+          "first_departure_range_end": null,
+          "maximum_observed_downside_fraction": "0.11607142857142857142857142857142857142857142857143",
+          "maximum_downside_date": "2026-06-22",
+          "records_from_formation_to_maximum_low": 1,
+          "route_classification": "UNKNOWN_NO_APPROVED_FAST_SLOW_DECLINE_RULE",
+          "qualification": "CLOSE_LOCATION_AND_FAILURE_PATH_NOT_PERMANENT_INVALIDATION_OR_TRADING_SIGNAL"
+        },
+        "usable_at_anchor": false,
+        "anchor_relation": "NOT_COMPARABLE_AFTER_GAP",
+        "pressure_distance_fraction": "0.057692307692307692307692307692307692307692307692308",
+        "relative_width_to_anchor": "0.13461538461538461538461538461538461538461538461538",
+        "parent_ids": [
+          "sha256:1a3ad29bcb00007fad66010ca86d9790b29b3ca5524438ab32b18417fdce9000",
+          "sha256:534fa554cb0ab11863189e5c29c8366954d735af9898dac28c1ee2c16cc6bf42"
+        ],
+        "successor_after_breakdown_ids": [],
+        "interpretation": {
+          "settlement": "UNKNOWN_NO_APPROVED_VOLUME_OR_OWNERSHIP_RULE",
+          "strengthening": "CLOSE_FACT_ONLY_NOT_TRADE_QUALIFIED",
+          "lifecycle": "UNKNOWN",
+          "counterevidence": [],
+          "missing_evidence": [
+            "FORMAL_PRICE_BOUNDS",
+            "IMPORTANCE_WEIGHTS",
+            "VOLUME_EXPANSION_THRESHOLD",
+            "OWNERSHIP",
+            "HISTORICAL_PUBLICATION_TIMES"
+          ]
+        }
+      },
+      {
+        "scale": "0.06",
+        "segment": 0,
+        "first_index": 5,
+        "last_index": 12,
+        "formed_index": 14,
+        "start": "2026-06-08",
+        "source_end": "2026-06-17",
+        "first_observed_at": "2026-06-19",
+        "confirmed_at": "2026-06-19",
+        "source_turn_ids": [
+          "sha256:0aa7b9b03fc6341e6243b52fabc616b6781fb5970e0095c27e626ad2e0a66d42",
+          "sha256:0bae5fab6e6fe5d851c409c7c19bba7d99e7f10f7c311970fa1e0ae5d8509eb6",
+          "sha256:a4bede2e9be4c721b63aa93a883d559f310c58b6424e75760836fd51a58801e6",
+          "sha256:a9b75edc6bae69470342fa03e55d1e30ee679a1660b60220ceb154a689e13474"
+        ],
+        "turns": 4,
+        "duration_records": 8,
+        "research_bounds": {
+          "low": "98",
+          "high": "112",
+          "pressure_band": [
+            "110",
+            "112"
+          ],
+          "support_band": [
+            "98",
+            "99"
+          ],
+          "high_cluster_spread_to_span": "0.14285714285714285714285714285714285714285714285714",
+          "low_cluster_spread_to_span": "0.071428571428571428571428571428571428571428571428571"
+        },
+        "formal_price_bounds": null,
+        "formal_region_membership": null,
+        "display_extent": {
+          "low": "98",
+          "high": "112",
+          "source_rows_fingerprint": "sha256:c3a93531d26e7a1b46bd29327a4ab9a09156a2ce32caa86c95914bf17836b404"
+        },
+        "volume": {
+          "unit": "SHARES_REPORTED",
+          "records": 8,
+          "known_records": 8,
+          "missing_dates": [],
+          "supplied_interval_total": "16068",
+          "known_partial_sum": "16068",
+          "mean": "2008.5",
+          "maximum": "2012",
+          "maximum_dates": [
+            "2026-06-17"
+          ],
+          "prior_equal_record_window": {
+            "first_date": "2026-06-01",
+            "last_date": "2026-06-05",
+            "complete": false,
+            "includes_selected": false
+          },
+          "mean_to_prior_ratio": null,
+          "qualification": "DESCRIPTIVE_RESEARCH_INTERVAL_VOLUME_NOT_APPROVED_REGION_MEASURE_OR_REMAINING_SHARES"
+        },
+        "qualification": "AUTOMATIC_REPEATED_SWING_RANGE_CANDIDATE_NOT_APPROVED_BOX",
+        "id": "sha256:fa7b3df687b2b187b56950cf77a2afc56466e0f5ab8a00c9abc0a009274beefd",
+        "path": {
+          "events": [
+            {
+              "type": "INITIAL_CLOSE_LOCATION",
+              "date": "2026-06-19",
+              "first_observed_at": "2026-06-19",
+              "previous": null,
+              "location": "INSIDE",
+              "close": "101",
+              "bounds_id": "sha256:fa7b3df687b2b187b56950cf77a2afc56466e0f5ab8a00c9abc0a009274beefd",
+              "volume": {
+                "current_shares": "2014",
+                "ratio_to_previous_means": {
+                  "1": "1.0004967709885742672627918529557873820168902136115",
+                  "5": "1.0014917951268025857782197911486822476379910492292",
+                  "20": null
+                },
+                "baseline_includes_current": false,
+                "qualification": "DESCRIPTIVE_1_5_20_RECORD_COMPARISONS_NOT_VOLUME_EXPANSION_OR_SETTLEMENT_RULE"
+              }
+            },
+            {
+              "type": "OBSERVATION_STOPPED_AT_DATA_OR_BASIS_GAP",
+              "date": "2026-07-01",
+              "first_observed_at": "2026-07-01"
+            }
+          ],
+          "last_close_location": "INSIDE",
+          "first_breakdown_at": null,
+          "first_departure_range_end": null,
+          "maximum_observed_downside_fraction": "0.11607142857142857142857142857142857142857142857143",
+          "maximum_downside_date": "2026-06-22",
+          "records_from_formation_to_maximum_low": 1,
+          "route_classification": "UNKNOWN_NO_APPROVED_FAST_SLOW_DECLINE_RULE",
+          "qualification": "CLOSE_LOCATION_AND_FAILURE_PATH_NOT_PERMANENT_INVALIDATION_OR_TRADING_SIGNAL"
+        },
+        "usable_at_anchor": false,
+        "anchor_relation": "NOT_COMPARABLE_AFTER_GAP",
+        "pressure_distance_fraction": "0.057692307692307692307692307692307692307692307692308",
+        "relative_width_to_anchor": "0.13461538461538461538461538461538461538461538461538",
+        "parent_ids": [
+          "sha256:18d90cb72f499a05d0d111aa027f18744ca3e7d2ae5203f6d44ccc477b1c435c",
+          "sha256:6b1d6e31878136acff4305c9904d6749b94225360b0bbe5c4f56939d075ad2f4"
+        ],
+        "successor_after_breakdown_ids": [],
+        "interpretation": {
+          "settlement": "UNKNOWN_NO_APPROVED_VOLUME_OR_OWNERSHIP_RULE",
+          "strengthening": "CLOSE_FACT_ONLY_NOT_TRADE_QUALIFIED",
+          "lifecycle": "UNKNOWN",
+          "counterevidence": [],
+          "missing_evidence": [
+            "FORMAL_PRICE_BOUNDS",
+            "IMPORTANCE_WEIGHTS",
+            "VOLUME_EXPANSION_THRESHOLD",
+            "OWNERSHIP",
+            "HISTORICAL_PUBLICATION_TIMES"
+          ]
+        }
+      },
+      {
+        "scale": "0.06",
+        "segment": 0,
+        "first_index": 2,
+        "last_index": 15,
+        "formed_index": 17,
+        "start": "2026-06-03",
+        "source_end": "2026-06-22",
+        "first_observed_at": "2026-06-24",
+        "confirmed_at": "2026-06-24",
+        "source_turn_ids": [
+          "sha256:e15071072ae9dafb73f8f99d4b00ef2da31bcbd1c8e45db9d4b17ae8c0ad20e3",
+          "sha256:0aa7b9b03fc6341e6243b52fabc616b6781fb5970e0095c27e626ad2e0a66d42",
+          "sha256:0bae5fab6e6fe5d851c409c7c19bba7d99e7f10f7c311970fa1e0ae5d8509eb6",
+          "sha256:a4bede2e9be4c721b63aa93a883d559f310c58b6424e75760836fd51a58801e6",
+          "sha256:a9b75edc6bae69470342fa03e55d1e30ee679a1660b60220ceb154a689e13474",
+          "sha256:58a68e371d93332609b7e4fd60ce0b840424b50ee652b7ecc77934c300bef54e"
+        ],
+        "turns": 6,
+        "duration_records": 14,
+        "research_bounds": {
+          "low": "98",
+          "high": "112",
+          "pressure_band": [
+            "110",
+            "112"
+          ],
+          "support_band": [
+            "98",
+            "99"
+          ],
+          "high_cluster_spread_to_span": "0.14285714285714285714285714285714285714285714285714",
+          "low_cluster_spread_to_span": "0.071428571428571428571428571428571428571428571428571"
+        },
+        "formal_price_bounds": null,
+        "formal_region_membership": null,
+        "display_extent": {
+          "low": "98",
+          "high": "112",
+          "source_rows_fingerprint": "sha256:dfcd8c7d3b89a707d4d739136ed8b25f4962a444381f8c2e7efd041dc959a871"
+        },
+        "volume": {
+          "unit": "SHARES_REPORTED",
+          "records": 14,
+          "known_records": 14,
+          "missing_dates": [],
+          "supplied_interval_total": "28119",
+          "known_partial_sum": "28119",
+          "mean": "2008.5",
+          "maximum": "2015",
+          "maximum_dates": [
+            "2026-06-22"
+          ],
+          "prior_equal_record_window": {
+            "first_date": "2026-06-01",
+            "last_date": "2026-06-02",
+            "complete": false,
+            "includes_selected": false
+          },
+          "mean_to_prior_ratio": null,
+          "qualification": "DESCRIPTIVE_RESEARCH_INTERVAL_VOLUME_NOT_APPROVED_REGION_MEASURE_OR_REMAINING_SHARES"
+        },
+        "qualification": "AUTOMATIC_REPEATED_SWING_RANGE_CANDIDATE_NOT_APPROVED_BOX",
+        "id": "sha256:534fa554cb0ab11863189e5c29c8366954d735af9898dac28c1ee2c16cc6bf42",
+        "path": {
+          "events": [
+            {
+              "type": "INITIAL_CLOSE_LOCATION",
+              "date": "2026-06-24",
+              "first_observed_at": "2026-06-24",
+              "previous": null,
+              "location": "INSIDE",
+              "close": "110",
+              "bounds_id": "sha256:534fa554cb0ab11863189e5c29c8366954d735af9898dac28c1ee2c16cc6bf42",
+              "volume": {
+                "current_shares": "2017",
+                "ratio_to_previous_means": {
+                  "1": "1.0004960317460317460317460317460317460317460317460",
+                  "5": "1.0014895729890764647467725918570009930486593843098",
+                  "20": null
+                },
+                "baseline_includes_current": false,
+                "qualification": "DESCRIPTIVE_1_5_20_RECORD_COMPARISONS_NOT_VOLUME_EXPANSION_OR_SETTLEMENT_RULE"
+              }
+            },
+            {
+              "type": "OBSERVATION_STOPPED_AT_DATA_OR_BASIS_GAP",
+              "date": "2026-07-01",
+              "first_observed_at": "2026-07-01"
+            }
+          ],
+          "last_close_location": "INSIDE",
+          "first_breakdown_at": null,
+          "first_departure_range_end": null,
+          "maximum_observed_downside_fraction": "0.11607142857142857142857142857142857142857142857143",
+          "maximum_downside_date": "2026-06-29",
+          "records_from_formation_to_maximum_low": 3,
+          "route_classification": "UNKNOWN_NO_APPROVED_FAST_SLOW_DECLINE_RULE",
+          "qualification": "CLOSE_LOCATION_AND_FAILURE_PATH_NOT_PERMANENT_INVALIDATION_OR_TRADING_SIGNAL"
+        },
+        "usable_at_anchor": false,
+        "anchor_relation": "NOT_COMPARABLE_AFTER_GAP",
+        "pressure_distance_fraction": "0.057692307692307692307692307692307692307692307692308",
+        "relative_width_to_anchor": "0.13461538461538461538461538461538461538461538461538",
+        "parent_ids": [
+          "sha256:7f355dafbe863b60c2bc7b11400280258c5a7604b0dfa5f7344953e8bb4e4cba",
+          "sha256:0afadb1422da6750698d68aa89a903a162a1ed6a953328e01462a19962437699"
+        ],
+        "successor_after_breakdown_ids": [],
+        "interpretation": {
+          "settlement": "UNKNOWN_NO_APPROVED_VOLUME_OR_OWNERSHIP_RULE",
+          "strengthening": "CLOSE_FACT_ONLY_NOT_TRADE_QUALIFIED",
+          "lifecycle": "UNKNOWN",
+          "counterevidence": [],
+          "missing_evidence": [
+            "FORMAL_PRICE_BOUNDS",
+            "IMPORTANCE_WEIGHTS",
+            "VOLUME_EXPANSION_THRESHOLD",
+            "OWNERSHIP",
+            "HISTORICAL_PUBLICATION_TIMES"
+          ]
+        }
+      },
+      {
+        "scale": "0.06",
+        "segment": 0,
+        "first_index": 7,
+        "last_index": 15,
+        "formed_index": 17,
+        "start": "2026-06-10",
+        "source_end": "2026-06-22",
+        "first_observed_at": "2026-06-24",
+        "confirmed_at": "2026-06-24",
+        "source_turn_ids": [
+          "sha256:0bae5fab6e6fe5d851c409c7c19bba7d99e7f10f7c311970fa1e0ae5d8509eb6",
+          "sha256:a4bede2e9be4c721b63aa93a883d559f310c58b6424e75760836fd51a58801e6",
+          "sha256:a9b75edc6bae69470342fa03e55d1e30ee679a1660b60220ceb154a689e13474",
+          "sha256:58a68e371d93332609b7e4fd60ce0b840424b50ee652b7ecc77934c300bef54e"
+        ],
+        "turns": 4,
+        "duration_records": 9,
+        "research_bounds": {
+          "low": "98",
+          "high": "112",
+          "pressure_band": [
+            "110",
+            "112"
+          ],
+          "support_band": [
+            "98",
+            "99"
+          ],
+          "high_cluster_spread_to_span": "0.14285714285714285714285714285714285714285714285714",
+          "low_cluster_spread_to_span": "0.071428571428571428571428571428571428571428571428571"
+        },
+        "formal_price_bounds": null,
+        "formal_region_membership": null,
+        "display_extent": {
+          "low": "98",
+          "high": "112",
+          "source_rows_fingerprint": "sha256:8f7c30cd864369fd9cddf7380d18d0577a9a1fbec0f0095af7637d0bf4b8b3a1"
+        },
+        "volume": {
+          "unit": "SHARES_REPORTED",
+          "records": 9,
+          "known_records": 9,
+          "missing_dates": [],
+          "supplied_interval_total": "18099",
+          "known_partial_sum": "18099",
+          "mean": "2011",
+          "maximum": "2015",
+          "maximum_dates": [
+            "2026-06-22"
+          ],
+          "prior_equal_record_window": {
+            "first_date": "2026-06-01",
+            "last_date": "2026-06-09",
+            "complete": false,
+            "includes_selected": false
+          },
+          "mean_to_prior_ratio": null,
+          "qualification": "DESCRIPTIVE_RESEARCH_INTERVAL_VOLUME_NOT_APPROVED_REGION_MEASURE_OR_REMAINING_SHARES"
+        },
+        "qualification": "AUTOMATIC_REPEATED_SWING_RANGE_CANDIDATE_NOT_APPROVED_BOX",
+        "id": "sha256:720ec2fca63c58ff409dacc5e2e29b80092895eb556d03059d44a65e3dbd7c19",
+        "path": {
+          "events": [
+            {
+              "type": "INITIAL_CLOSE_LOCATION",
+              "date": "2026-06-24",
+              "first_observed_at": "2026-06-24",
+              "previous": null,
+              "location": "INSIDE",
+              "close": "110",
+              "bounds_id": "sha256:720ec2fca63c58ff409dacc5e2e29b80092895eb556d03059d44a65e3dbd7c19",
+              "volume": {
+                "current_shares": "2017",
+                "ratio_to_previous_means": {
+                  "1": "1.0004960317460317460317460317460317460317460317460",
+                  "5": "1.0014895729890764647467725918570009930486593843098",
+                  "20": null
+                },
+                "baseline_includes_current": false,
+                "qualification": "DESCRIPTIVE_1_5_20_RECORD_COMPARISONS_NOT_VOLUME_EXPANSION_OR_SETTLEMENT_RULE"
+              }
+            },
+            {
+              "type": "OBSERVATION_STOPPED_AT_DATA_OR_BASIS_GAP",
+              "date": "2026-07-01",
+              "first_observed_at": "2026-07-01"
+            }
+          ],
+          "last_close_location": "INSIDE",
+          "first_breakdown_at": null,
+          "first_departure_range_end": null,
+          "maximum_observed_downside_fraction": "0.11607142857142857142857142857142857142857142857143",
+          "maximum_downside_date": "2026-06-29",
+          "records_from_formation_to_maximum_low": 3,
+          "route_classification": "UNKNOWN_NO_APPROVED_FAST_SLOW_DECLINE_RULE",
+          "qualification": "CLOSE_LOCATION_AND_FAILURE_PATH_NOT_PERMANENT_INVALIDATION_OR_TRADING_SIGNAL"
+        },
+        "usable_at_anchor": false,
+        "anchor_relation": "NOT_COMPARABLE_AFTER_GAP",
+        "pressure_distance_fraction": "0.057692307692307692307692307692307692307692307692308",
+        "relative_width_to_anchor": "0.13461538461538461538461538461538461538461538461538",
+        "parent_ids": [
+          "sha256:1a3ad29bcb00007fad66010ca86d9790b29b3ca5524438ab32b18417fdce9000",
+          "sha256:534fa554cb0ab11863189e5c29c8366954d735af9898dac28c1ee2c16cc6bf42"
+        ],
+        "successor_after_breakdown_ids": [],
+        "interpretation": {
+          "settlement": "UNKNOWN_NO_APPROVED_VOLUME_OR_OWNERSHIP_RULE",
+          "strengthening": "CLOSE_FACT_ONLY_NOT_TRADE_QUALIFIED",
+          "lifecycle": "UNKNOWN",
+          "counterevidence": [],
+          "missing_evidence": [
+            "FORMAL_PRICE_BOUNDS",
+            "IMPORTANCE_WEIGHTS",
+            "VOLUME_EXPANSION_THRESHOLD",
+            "OWNERSHIP",
+            "HISTORICAL_PUBLICATION_TIMES"
+          ]
+        }
+      },
+      {
+        "scale": "0.06",
+        "segment": 0,
+        "first_index": 2,
+        "last_index": 17,
+        "formed_index": 19,
+        "start": "2026-06-03",
+        "source_end": "2026-06-24",
+        "first_observed_at": "2026-06-26",
+        "confirmed_at": "2026-06-26",
+        "source_turn_ids": [
+          "sha256:e15071072ae9dafb73f8f99d4b00ef2da31bcbd1c8e45db9d4b17ae8c0ad20e3",
+          "sha256:0aa7b9b03fc6341e6243b52fabc616b6781fb5970e0095c27e626ad2e0a66d42",
+          "sha256:0bae5fab6e6fe5d851c409c7c19bba7d99e7f10f7c311970fa1e0ae5d8509eb6",
+          "sha256:a4bede2e9be4c721b63aa93a883d559f310c58b6424e75760836fd51a58801e6",
+          "sha256:a9b75edc6bae69470342fa03e55d1e30ee679a1660b60220ceb154a689e13474",
+          "sha256:58a68e371d93332609b7e4fd60ce0b840424b50ee652b7ecc77934c300bef54e",
+          "sha256:4b3b3b31dff6ac8ede2a90f3ad0ceff31feeecc1d1b370797d8fb60e76609ba1"
+        ],
+        "turns": 7,
+        "duration_records": 16,
+        "research_bounds": {
+          "low": "98",
+          "high": "112",
+          "pressure_band": [
+            "110",
+            "112"
+          ],
+          "support_band": [
+            "98",
+            "99"
+          ],
+          "high_cluster_spread_to_span": "0.14285714285714285714285714285714285714285714285714",
+          "low_cluster_spread_to_span": "0.071428571428571428571428571428571428571428571428571"
+        },
+        "formal_price_bounds": null,
+        "formal_region_membership": null,
+        "display_extent": {
+          "low": "98",
+          "high": "112",
+          "source_rows_fingerprint": "sha256:aae7fde02222d9e21ad4b238136078a4c8d0c63f3919809c875cf89837816df9"
+        },
+        "volume": {
+          "unit": "SHARES_REPORTED",
+          "records": 16,
+          "known_records": 16,
+          "missing_dates": [],
+          "supplied_interval_total": "32152",
+          "known_partial_sum": "32152",
+          "mean": "2009.5",
+          "maximum": "2017",
+          "maximum_dates": [
+            "2026-06-24"
+          ],
+          "prior_equal_record_window": {
+            "first_date": "2026-06-01",
+            "last_date": "2026-06-02",
+            "complete": false,
+            "includes_selected": false
+          },
+          "mean_to_prior_ratio": null,
+          "qualification": "DESCRIPTIVE_RESEARCH_INTERVAL_VOLUME_NOT_APPROVED_REGION_MEASURE_OR_REMAINING_SHARES"
+        },
+        "qualification": "AUTOMATIC_REPEATED_SWING_RANGE_CANDIDATE_NOT_APPROVED_BOX",
+        "id": "sha256:0afadb1422da6750698d68aa89a903a162a1ed6a953328e01462a19962437699",
+        "path": {
+          "events": [
+            {
+              "type": "INITIAL_CLOSE_LOCATION",
+              "date": "2026-06-26",
+              "first_observed_at": "2026-06-26",
+              "previous": null,
+              "location": "INSIDE",
+              "close": "101",
+              "bounds_id": "sha256:0afadb1422da6750698d68aa89a903a162a1ed6a953328e01462a19962437699",
+              "volume": {
+                "current_shares": "2019",
+                "ratio_to_previous_means": {
+                  "1": "1.0004955401387512388503468780971258671952428146680",
+                  "5": "1.0014880952380952380952380952380952380952380952381",
+                  "20": null
+                },
+                "baseline_includes_current": false,
+                "qualification": "DESCRIPTIVE_1_5_20_RECORD_COMPARISONS_NOT_VOLUME_EXPANSION_OR_SETTLEMENT_RULE"
+              }
+            },
+            {
+              "type": "OBSERVATION_STOPPED_AT_DATA_OR_BASIS_GAP",
+              "date": "2026-07-01",
+              "first_observed_at": "2026-07-01"
+            }
+          ],
+          "last_close_location": "INSIDE",
+          "first_breakdown_at": null,
+          "first_departure_range_end": null,
+          "maximum_observed_downside_fraction": "0.11607142857142857142857142857142857142857142857143",
+          "maximum_downside_date": "2026-06-29",
+          "records_from_formation_to_maximum_low": 1,
+          "route_classification": "UNKNOWN_NO_APPROVED_FAST_SLOW_DECLINE_RULE",
+          "qualification": "CLOSE_LOCATION_AND_FAILURE_PATH_NOT_PERMANENT_INVALIDATION_OR_TRADING_SIGNAL"
+        },
+        "usable_at_anchor": false,
+        "anchor_relation": "NOT_COMPARABLE_AFTER_GAP",
+        "pressure_distance_fraction": "0.057692307692307692307692307692307692307692307692308",
+        "relative_width_to_anchor": "0.13461538461538461538461538461538461538461538461538",
+        "parent_ids": [
+          "sha256:2573310e508b3840a8aff942189342fedea3b81627ae8c60c7bb373ae2827a7a"
+        ],
+        "successor_after_breakdown_ids": [],
+        "interpretation": {
+          "settlement": "UNKNOWN_NO_APPROVED_VOLUME_OR_OWNERSHIP_RULE",
+          "strengthening": "CLOSE_FACT_ONLY_NOT_TRADE_QUALIFIED",
+          "lifecycle": "UNKNOWN",
+          "counterevidence": [],
+          "missing_evidence": [
+            "FORMAL_PRICE_BOUNDS",
+            "IMPORTANCE_WEIGHTS",
+            "VOLUME_EXPANSION_THRESHOLD",
+            "OWNERSHIP",
+            "HISTORICAL_PUBLICATION_TIMES"
+          ]
+        }
+      },
+      {
+        "scale": "0.06",
+        "segment": 0,
+        "first_index": 10,
+        "last_index": 17,
+        "formed_index": 19,
+        "start": "2026-06-15",
+        "source_end": "2026-06-24",
+        "first_observed_at": "2026-06-26",
+        "confirmed_at": "2026-06-26",
+        "source_turn_ids": [
+          "sha256:a4bede2e9be4c721b63aa93a883d559f310c58b6424e75760836fd51a58801e6",
+          "sha256:a9b75edc6bae69470342fa03e55d1e30ee679a1660b60220ceb154a689e13474",
+          "sha256:58a68e371d93332609b7e4fd60ce0b840424b50ee652b7ecc77934c300bef54e",
+          "sha256:4b3b3b31dff6ac8ede2a90f3ad0ceff31feeecc1d1b370797d8fb60e76609ba1"
+        ],
+        "turns": 4,
+        "duration_records": 8,
+        "research_bounds": {
+          "low": "98",
+          "high": "112",
+          "pressure_band": [
+            "111",
+            "112"
+          ],
+          "support_band": [
+            "98",
+            "99"
+          ],
+          "high_cluster_spread_to_span": "0.071428571428571428571428571428571428571428571428571",
+          "low_cluster_spread_to_span": "0.071428571428571428571428571428571428571428571428571"
+        },
+        "formal_price_bounds": null,
+        "formal_region_membership": null,
+        "display_extent": {
+          "low": "98",
+          "high": "112",
+          "source_rows_fingerprint": "sha256:dd1bd2d076df0b18b0be072b9d6c918cd1205c927f62897427a021dd43f51cf1"
+        },
+        "volume": {
+          "unit": "SHARES_REPORTED",
+          "records": 8,
+          "known_records": 8,
+          "missing_dates": [],
+          "supplied_interval_total": "16108",
+          "known_partial_sum": "16108",
+          "mean": "2013.5",
+          "maximum": "2017",
+          "maximum_dates": [
+            "2026-06-24"
+          ],
+          "prior_equal_record_window": {
+            "first_date": "2026-06-03",
+            "last_date": "2026-06-12",
+            "complete": true,
+            "includes_selected": false
+          },
+          "mean_to_prior_ratio": "1.0039890301670406382448267265021191722762403390676",
+          "qualification": "DESCRIPTIVE_RESEARCH_INTERVAL_VOLUME_NOT_APPROVED_REGION_MEASURE_OR_REMAINING_SHARES"
+        },
+        "qualification": "AUTOMATIC_REPEATED_SWING_RANGE_CANDIDATE_NOT_APPROVED_BOX",
+        "id": "sha256:15702c04763f27079ee2db27788470b0ef3fb94d1f5c3fffb8bd01f7d55c6f1c",
+        "path": {
+          "events": [
+            {
+              "type": "INITIAL_CLOSE_LOCATION",
+              "date": "2026-06-26",
+              "first_observed_at": "2026-06-26",
+              "previous": null,
+              "location": "INSIDE",
+              "close": "101",
+              "bounds_id": "sha256:15702c04763f27079ee2db27788470b0ef3fb94d1f5c3fffb8bd01f7d55c6f1c",
+              "volume": {
+                "current_shares": "2019",
+                "ratio_to_previous_means": {
+                  "1": "1.0004955401387512388503468780971258671952428146680",
+                  "5": "1.0014880952380952380952380952380952380952380952381",
+                  "20": null
+                },
+                "baseline_includes_current": false,
+                "qualification": "DESCRIPTIVE_1_5_20_RECORD_COMPARISONS_NOT_VOLUME_EXPANSION_OR_SETTLEMENT_RULE"
+              }
+            },
+            {
+              "type": "OBSERVATION_STOPPED_AT_DATA_OR_BASIS_GAP",
+              "date": "2026-07-01",
+              "first_observed_at": "2026-07-01"
+            }
+          ],
+          "last_close_location": "INSIDE",
+          "first_breakdown_at": null,
+          "first_departure_range_end": null,
+          "maximum_observed_downside_fraction": "0.11607142857142857142857142857142857142857142857143",
+          "maximum_downside_date": "2026-06-29",
+          "records_from_formation_to_maximum_low": 1,
+          "route_classification": "UNKNOWN_NO_APPROVED_FAST_SLOW_DECLINE_RULE",
+          "qualification": "CLOSE_LOCATION_AND_FAILURE_PATH_NOT_PERMANENT_INVALIDATION_OR_TRADING_SIGNAL"
+        },
+        "usable_at_anchor": false,
+        "anchor_relation": "NOT_COMPARABLE_AFTER_GAP",
+        "pressure_distance_fraction": "0.067307692307692307692307692307692307692307692307692",
+        "relative_width_to_anchor": "0.13461538461538461538461538461538461538461538461538",
+        "parent_ids": [
+          "sha256:7f355dafbe863b60c2bc7b11400280258c5a7604b0dfa5f7344953e8bb4e4cba",
+          "sha256:0afadb1422da6750698d68aa89a903a162a1ed6a953328e01462a19962437699"
+        ],
+        "successor_after_breakdown_ids": [],
+        "interpretation": {
+          "settlement": "UNKNOWN_NO_APPROVED_VOLUME_OR_OWNERSHIP_RULE",
+          "strengthening": "CLOSE_FACT_ONLY_NOT_TRADE_QUALIFIED",
+          "lifecycle": "UNKNOWN",
+          "counterevidence": [],
+          "missing_evidence": [
+            "FORMAL_PRICE_BOUNDS",
+            "IMPORTANCE_WEIGHTS",
+            "VOLUME_EXPANSION_THRESHOLD",
+            "OWNERSHIP",
+            "HISTORICAL_PUBLICATION_TIMES"
+          ]
+        }
+      },
+      {
+        "scale": "0.06",
+        "segment": 1,
+        "first_index": 25,
+        "last_index": 32,
+        "formed_index": 34,
+        "start": "2026-07-06",
+        "source_end": "2026-07-15",
+        "first_observed_at": "2026-07-17",
+        "confirmed_at": "2026-07-17",
+        "source_turn_ids": [
+          "sha256:eae3260d3c94997fde2c41a49398e28b11c6e275592f9e3d49fcd14aceaf320e",
+          "sha256:3741d086a330408f9bc471c9a9ec6941f57e78ff7e2d7292f3fcf7d65b4edfc0",
+          "sha256:f40e30ca549aeef9365ee0f804bae90058623171ba35f8e70090d714271564e1",
+          "sha256:1e743a2967117131ae8693932e55bde21196419b1e19f76ac33249872d2366de"
+        ],
+        "turns": 4,
+        "duration_records": 8,
+        "research_bounds": {
+          "low": "98",
+          "high": "112",
+          "pressure_band": [
+            "111",
+            "112"
+          ],
+          "support_band": [
+            "98",
+            "99"
+          ],
+          "high_cluster_spread_to_span": "0.071428571428571428571428571428571428571428571428571",
+          "low_cluster_spread_to_span": "0.071428571428571428571428571428571428571428571428571"
+        },
+        "formal_price_bounds": null,
+        "formal_region_membership": null,
+        "display_extent": {
+          "low": "98",
+          "high": "112",
+          "source_rows_fingerprint": "sha256:bce5411da48d090c2e168bce9c2e9ba0f3d0698253e075b711dfcbc08ad999b0"
+        },
+        "volume": {
+          "unit": "SHARES_REPORTED",
+          "records": 8,
+          "known_records": 8,
+          "missing_dates": [],
+          "supplied_interval_total": "16228",
+          "known_partial_sum": "16228",
+          "mean": "2028.5",
+          "maximum": "2032",
+          "maximum_dates": [
+            "2026-07-15"
+          ],
+          "prior_equal_record_window": {
+            "first_date": "2026-07-01",
+            "last_date": "2026-07-03",
+            "complete": false,
+            "includes_selected": false
+          },
+          "mean_to_prior_ratio": null,
+          "qualification": "DESCRIPTIVE_RESEARCH_INTERVAL_VOLUME_NOT_APPROVED_REGION_MEASURE_OR_REMAINING_SHARES"
+        },
+        "qualification": "AUTOMATIC_REPEATED_SWING_RANGE_CANDIDATE_NOT_APPROVED_BOX",
+        "id": "sha256:ce0c151a321275b25b46644fe5f77e728c827786b2a4ae6d1e543626ceb46e4f",
+        "path": {
+          "events": [
+            {
+              "type": "INITIAL_CLOSE_LOCATION",
+              "date": "2026-07-17",
+              "first_observed_at": "2026-07-17",
+              "previous": null,
+              "location": "INSIDE",
+              "close": "101",
+              "bounds_id": "sha256:ce0c151a321275b25b46644fe5f77e728c827786b2a4ae6d1e543626ceb46e4f",
+              "volume": {
+                "current_shares": "2034",
+                "ratio_to_previous_means": {
+                  "1": "1.0004918839153959665518937530742744712247909493360",
+                  "5": "1.0014771048744460856720827178729689807976366322009",
+                  "20": null
+                },
+                "baseline_includes_current": false,
+                "qualification": "DESCRIPTIVE_1_5_20_RECORD_COMPARISONS_NOT_VOLUME_EXPANSION_OR_SETTLEMENT_RULE"
+              }
+            }
+          ],
+          "last_close_location": "INSIDE",
+          "first_breakdown_at": null,
+          "first_departure_range_end": null,
+          "maximum_observed_downside_fraction": "0.11607142857142857142857142857142857142857142857143",
+          "maximum_downside_date": "2026-07-20",
+          "records_from_formation_to_maximum_low": 1,
+          "route_classification": "UNKNOWN_NO_APPROVED_FAST_SLOW_DECLINE_RULE",
+          "qualification": "CLOSE_LOCATION_AND_FAILURE_PATH_NOT_PERMANENT_INVALIDATION_OR_TRADING_SIGNAL"
+        },
+        "usable_at_anchor": true,
+        "anchor_relation": "BELOW",
+        "pressure_distance_fraction": "0.067307692307692307692307692307692307692307692307692",
+        "relative_width_to_anchor": "0.13461538461538461538461538461538461538461538461538",
+        "parent_ids": [
+          "sha256:296d82d803b8f49f01a8fdae7ee1664e626175b6390dd82002012d9119f6a6f0"
+        ],
+        "research_dominated_by": [],
+        "successor_after_breakdown_ids": [],
+        "interpretation": {
+          "settlement": "UNKNOWN_NO_APPROVED_VOLUME_OR_OWNERSHIP_RULE",
+          "strengthening": "CLOSE_FACT_ONLY_NOT_TRADE_QUALIFIED",
+          "lifecycle": "UNKNOWN",
+          "counterevidence": [],
+          "missing_evidence": [
+            "FORMAL_PRICE_BOUNDS",
+            "IMPORTANCE_WEIGHTS",
+            "VOLUME_EXPANSION_THRESHOLD",
+            "OWNERSHIP",
+            "HISTORICAL_PUBLICATION_TIMES"
+          ]
+        }
+      }
+    ],
+    "reference_candidates": [
+      {
+        "pivot_id": "sha256:e8571d38325bffa9bf66be4cea60fd5ec254f7083c89dc3cd2040aec68c0945a",
+        "scale": "0.03",
+        "price": "111",
+        "source_dates": [
+          "2026-06-03"
+        ],
+        "occurred_at": "2026-06-03",
+        "first_observed_at": "2026-06-05",
+        "confirmed_at": "2026-06-05",
+        "distance_to_anchor": "0.067307692307692307692307692307692307692307692307692",
+        "path": {
+          "reference_price": "111",
+          "known_from": "2026-06-05",
+          "events": [
+            {
+              "type": "CLOSE_EQUALS_REFERENCE",
+              "date": "2026-06-17",
+              "first_observed_at": "2026-06-17",
+              "close": "111",
+              "reference_price": "111"
+            },
+            {
+              "type": "CLOSE_CROSS_DOWN",
+              "date": "2026-06-18",
+              "first_observed_at": "2026-06-18",
+              "close": "107",
+              "reference_price": "111"
+            },
+            {
+              "type": "OBSERVATION_STOPPED_AT_DATA_OR_BASIS_GAP",
+              "date": "2026-07-01",
+              "first_observed_at": "2026-07-01"
+            }
+          ],
+          "last_relation": "NOT_COMPARABLE_AFTER_GAP",
+          "qualification": "COMPLETED_CLOSE_FACTS_NOT_CONFIRMED_BREAKOUT_OR_INTRADAY_ORDER"
+        },
+        "qualification": "AUTOMATIC_SWING_REFERENCE_NOT_UNIQUE_IMPORTANT_REPRESENTATIVE"
+      },
+      {
+        "pivot_id": "sha256:a7864a13d3b3374e9c3f48bd5b0bab0917baaed644453c71ab03237cfd7fce47",
+        "scale": "0.03",
+        "price": "110",
+        "source_dates": [
+          "2026-06-10"
+        ],
+        "occurred_at": "2026-06-10",
+        "first_observed_at": "2026-06-11",
+        "confirmed_at": "2026-06-11",
+        "distance_to_anchor": "0.057692307692307692307692307692307692307692307692308",
+        "path": {
+          "reference_price": "110",
+          "known_from": "2026-06-11",
+          "events": [
+            {
+              "type": "CLOSE_CROSS_UP",
+              "date": "2026-06-17",
+              "first_observed_at": "2026-06-17",
+              "close": "111",
+              "reference_price": "110"
+            },
+            {
+              "type": "FAILED_UP_RETURN_BELOW",
+              "date": "2026-06-18",
+              "first_observed_at": "2026-06-18",
+              "close": "107",
+              "reference_price": "110",
+              "previous_up_at": "2026-06-17"
+            },
+            {
+              "type": "CLOSE_EQUALS_REFERENCE",
+              "date": "2026-06-24",
+              "first_observed_at": "2026-06-24",
+              "close": "110",
+              "reference_price": "110"
+            },
+            {
+              "type": "CLOSE_CROSS_DOWN",
+              "date": "2026-06-25",
+              "first_observed_at": "2026-06-25",
+              "close": "108",
+              "reference_price": "110"
+            },
+            {
+              "type": "OBSERVATION_STOPPED_AT_DATA_OR_BASIS_GAP",
+              "date": "2026-07-01",
+              "first_observed_at": "2026-07-01"
+            }
+          ],
+          "last_relation": "NOT_COMPARABLE_AFTER_GAP",
+          "qualification": "COMPLETED_CLOSE_FACTS_NOT_CONFIRMED_BREAKOUT_OR_INTRADAY_ORDER"
+        },
+        "qualification": "AUTOMATIC_SWING_REFERENCE_NOT_UNIQUE_IMPORTANT_REPRESENTATIVE"
+      },
+      {
+        "pivot_id": "sha256:92ef4d0f6f173eacf614ddd0e606ac7ee97af20865b037bb2becb21c8f45741a",
+        "scale": "0.03",
+        "price": "112",
+        "source_dates": [
+          "2026-06-17"
+        ],
+        "occurred_at": "2026-06-17",
+        "first_observed_at": "2026-06-18",
+        "confirmed_at": "2026-06-18",
+        "distance_to_anchor": "0.076923076923076923076923076923076923076923076923077",
+        "path": {
+          "reference_price": "112",
+          "known_from": "2026-06-18",
+          "events": [
+            {
+              "type": "OBSERVATION_STOPPED_AT_DATA_OR_BASIS_GAP",
+              "date": "2026-07-01",
+              "first_observed_at": "2026-07-01"
+            }
+          ],
+          "last_relation": "NOT_COMPARABLE_AFTER_GAP",
+          "qualification": "COMPLETED_CLOSE_FACTS_NOT_CONFIRMED_BREAKOUT_OR_INTRADAY_ORDER"
+        },
+        "qualification": "AUTOMATIC_SWING_REFERENCE_NOT_UNIQUE_IMPORTANT_REPRESENTATIVE"
+      },
+      {
+        "pivot_id": "sha256:26723bb97601df91a519c5bc17f4572eaea56e81ac4dca6de337158eebe95bfd",
+        "scale": "0.03",
+        "price": "111",
+        "source_dates": [
+          "2026-06-24"
+        ],
+        "occurred_at": "2026-06-24",
+        "first_observed_at": "2026-06-26",
+        "confirmed_at": "2026-06-26",
+        "distance_to_anchor": "0.067307692307692307692307692307692307692307692307692",
+        "path": {
+          "reference_price": "111",
+          "known_from": "2026-06-26",
+          "events": [
+            {
+              "type": "OBSERVATION_STOPPED_AT_DATA_OR_BASIS_GAP",
+              "date": "2026-07-01",
+              "first_observed_at": "2026-07-01"
+            }
+          ],
+          "last_relation": "NOT_COMPARABLE_AFTER_GAP",
+          "qualification": "COMPLETED_CLOSE_FACTS_NOT_CONFIRMED_BREAKOUT_OR_INTRADAY_ORDER"
+        },
+        "qualification": "AUTOMATIC_SWING_REFERENCE_NOT_UNIQUE_IMPORTANT_REPRESENTATIVE"
+      },
+      {
+        "pivot_id": "sha256:f3d4052849bcd56b3d88ca34981bcfb9f54130f948c31d6e74c7707d7c50b14d",
+        "scale": "0.03",
+        "price": "112",
+        "source_dates": [
+          "2026-07-08"
+        ],
+        "occurred_at": "2026-07-08",
+        "first_observed_at": "2026-07-09",
+        "confirmed_at": "2026-07-09",
+        "distance_to_anchor": "0.076923076923076923076923076923076923076923076923077",
+        "path": {
+          "reference_price": "112",
+          "known_from": "2026-07-09",
+          "events": [],
+          "last_relation": "BELOW",
+          "qualification": "COMPLETED_CLOSE_FACTS_NOT_CONFIRMED_BREAKOUT_OR_INTRADAY_ORDER"
+        },
+        "qualification": "AUTOMATIC_SWING_REFERENCE_NOT_UNIQUE_IMPORTANT_REPRESENTATIVE"
+      },
+      {
+        "pivot_id": "sha256:c35e080ab32996468bb9959674de08847eab64a3bd045e6267f73d3fd10bd83e",
+        "scale": "0.03",
+        "price": "111",
+        "source_dates": [
+          "2026-07-15"
+        ],
+        "occurred_at": "2026-07-15",
+        "first_observed_at": "2026-07-17",
+        "confirmed_at": "2026-07-17",
+        "distance_to_anchor": "0.067307692307692307692307692307692307692307692307692",
+        "path": {
+          "reference_price": "111",
+          "known_from": "2026-07-17",
+          "events": [],
+          "last_relation": "BELOW",
+          "qualification": "COMPLETED_CLOSE_FACTS_NOT_CONFIRMED_BREAKOUT_OR_INTRADAY_ORDER"
+        },
+        "qualification": "AUTOMATIC_SWING_REFERENCE_NOT_UNIQUE_IMPORTANT_REPRESENTATIVE"
+      },
+      {
+        "pivot_id": "sha256:e15071072ae9dafb73f8f99d4b00ef2da31bcbd1c8e45db9d4b17ae8c0ad20e3",
+        "scale": "0.06",
+        "price": "111",
+        "source_dates": [
+          "2026-06-03"
+        ],
+        "occurred_at": "2026-06-03",
+        "first_observed_at": "2026-06-05",
+        "confirmed_at": "2026-06-05",
+        "distance_to_anchor": "0.067307692307692307692307692307692307692307692307692",
+        "path": {
+          "reference_price": "111",
+          "known_from": "2026-06-05",
+          "events": [
+            {
+              "type": "CLOSE_EQUALS_REFERENCE",
+              "date": "2026-06-17",
+              "first_observed_at": "2026-06-17",
+              "close": "111",
+              "reference_price": "111"
+            },
+            {
+              "type": "CLOSE_CROSS_DOWN",
+              "date": "2026-06-18",
+              "first_observed_at": "2026-06-18",
+              "close": "107",
+              "reference_price": "111"
+            },
+            {
+              "type": "OBSERVATION_STOPPED_AT_DATA_OR_BASIS_GAP",
+              "date": "2026-07-01",
+              "first_observed_at": "2026-07-01"
+            }
+          ],
+          "last_relation": "NOT_COMPARABLE_AFTER_GAP",
+          "qualification": "COMPLETED_CLOSE_FACTS_NOT_CONFIRMED_BREAKOUT_OR_INTRADAY_ORDER"
+        },
+        "qualification": "AUTOMATIC_SWING_REFERENCE_NOT_UNIQUE_IMPORTANT_REPRESENTATIVE"
+      },
+      {
+        "pivot_id": "sha256:0bae5fab6e6fe5d851c409c7c19bba7d99e7f10f7c311970fa1e0ae5d8509eb6",
+        "scale": "0.06",
+        "price": "110",
+        "source_dates": [
+          "2026-06-10"
+        ],
+        "occurred_at": "2026-06-10",
+        "first_observed_at": "2026-06-12",
+        "confirmed_at": "2026-06-12",
+        "distance_to_anchor": "0.057692307692307692307692307692307692307692307692308",
+        "path": {
+          "reference_price": "110",
+          "known_from": "2026-06-12",
+          "events": [
+            {
+              "type": "CLOSE_CROSS_UP",
+              "date": "2026-06-17",
+              "first_observed_at": "2026-06-17",
+              "close": "111",
+              "reference_price": "110"
+            },
+            {
+              "type": "FAILED_UP_RETURN_BELOW",
+              "date": "2026-06-18",
+              "first_observed_at": "2026-06-18",
+              "close": "107",
+              "reference_price": "110",
+              "previous_up_at": "2026-06-17"
+            },
+            {
+              "type": "CLOSE_EQUALS_REFERENCE",
+              "date": "2026-06-24",
+              "first_observed_at": "2026-06-24",
+              "close": "110",
+              "reference_price": "110"
+            },
+            {
+              "type": "CLOSE_CROSS_DOWN",
+              "date": "2026-06-25",
+              "first_observed_at": "2026-06-25",
+              "close": "108",
+              "reference_price": "110"
+            },
+            {
+              "type": "OBSERVATION_STOPPED_AT_DATA_OR_BASIS_GAP",
+              "date": "2026-07-01",
+              "first_observed_at": "2026-07-01"
+            }
+          ],
+          "last_relation": "NOT_COMPARABLE_AFTER_GAP",
+          "qualification": "COMPLETED_CLOSE_FACTS_NOT_CONFIRMED_BREAKOUT_OR_INTRADAY_ORDER"
+        },
+        "qualification": "AUTOMATIC_SWING_REFERENCE_NOT_UNIQUE_IMPORTANT_REPRESENTATIVE"
+      },
+      {
+        "pivot_id": "sha256:a9b75edc6bae69470342fa03e55d1e30ee679a1660b60220ceb154a689e13474",
+        "scale": "0.06",
+        "price": "112",
+        "source_dates": [
+          "2026-06-17"
+        ],
+        "occurred_at": "2026-06-17",
+        "first_observed_at": "2026-06-19",
+        "confirmed_at": "2026-06-19",
+        "distance_to_anchor": "0.076923076923076923076923076923076923076923076923077",
+        "path": {
+          "reference_price": "112",
+          "known_from": "2026-06-19",
+          "events": [
+            {
+              "type": "OBSERVATION_STOPPED_AT_DATA_OR_BASIS_GAP",
+              "date": "2026-07-01",
+              "first_observed_at": "2026-07-01"
+            }
+          ],
+          "last_relation": "NOT_COMPARABLE_AFTER_GAP",
+          "qualification": "COMPLETED_CLOSE_FACTS_NOT_CONFIRMED_BREAKOUT_OR_INTRADAY_ORDER"
+        },
+        "qualification": "AUTOMATIC_SWING_REFERENCE_NOT_UNIQUE_IMPORTANT_REPRESENTATIVE"
+      },
+      {
+        "pivot_id": "sha256:4b3b3b31dff6ac8ede2a90f3ad0ceff31feeecc1d1b370797d8fb60e76609ba1",
+        "scale": "0.06",
+        "price": "111",
+        "source_dates": [
+          "2026-06-24"
+        ],
+        "occurred_at": "2026-06-24",
+        "first_observed_at": "2026-06-26",
+        "confirmed_at": "2026-06-26",
+        "distance_to_anchor": "0.067307692307692307692307692307692307692307692307692",
+        "path": {
+          "reference_price": "111",
+          "known_from": "2026-06-26",
+          "events": [
+            {
+              "type": "OBSERVATION_STOPPED_AT_DATA_OR_BASIS_GAP",
+              "date": "2026-07-01",
+              "first_observed_at": "2026-07-01"
+            }
+          ],
+          "last_relation": "NOT_COMPARABLE_AFTER_GAP",
+          "qualification": "COMPLETED_CLOSE_FACTS_NOT_CONFIRMED_BREAKOUT_OR_INTRADAY_ORDER"
+        },
+        "qualification": "AUTOMATIC_SWING_REFERENCE_NOT_UNIQUE_IMPORTANT_REPRESENTATIVE"
+      },
+      {
+        "pivot_id": "sha256:3741d086a330408f9bc471c9a9ec6941f57e78ff7e2d7292f3fcf7d65b4edfc0",
+        "scale": "0.06",
+        "price": "112",
+        "source_dates": [
+          "2026-07-08"
+        ],
+        "occurred_at": "2026-07-08",
+        "first_observed_at": "2026-07-10",
+        "confirmed_at": "2026-07-10",
+        "distance_to_anchor": "0.076923076923076923076923076923076923076923076923077",
+        "path": {
+          "reference_price": "112",
+          "known_from": "2026-07-10",
+          "events": [],
+          "last_relation": "BELOW",
+          "qualification": "COMPLETED_CLOSE_FACTS_NOT_CONFIRMED_BREAKOUT_OR_INTRADAY_ORDER"
+        },
+        "qualification": "AUTOMATIC_SWING_REFERENCE_NOT_UNIQUE_IMPORTANT_REPRESENTATIVE"
+      },
+      {
+        "pivot_id": "sha256:1e743a2967117131ae8693932e55bde21196419b1e19f76ac33249872d2366de",
+        "scale": "0.06",
+        "price": "111",
+        "source_dates": [
+          "2026-07-15"
+        ],
+        "occurred_at": "2026-07-15",
+        "first_observed_at": "2026-07-17",
+        "confirmed_at": "2026-07-17",
+        "distance_to_anchor": "0.067307692307692307692307692307692307692307692307692",
+        "path": {
+          "reference_price": "111",
+          "known_from": "2026-07-17",
+          "events": [],
+          "last_relation": "BELOW",
+          "qualification": "COMPLETED_CLOSE_FACTS_NOT_CONFIRMED_BREAKOUT_OR_INTRADAY_ORDER"
+        },
+        "qualification": "AUTOMATIC_SWING_REFERENCE_NOT_UNIQUE_IMPORTANT_REPRESENTATIVE"
+      }
+    ],
+    "comparison": {
+      "relevant_pressure_ids": [
+        "sha256:b562120bec4bc3621fe738faffef7cb1a4fec7bd138fb3096b58e61f44416bdf",
+        "sha256:296d82d803b8f49f01a8fdae7ee1664e626175b6390dd82002012d9119f6a6f0",
+        "sha256:4e9b8aa5a8a96d6045d083fae77e6592db1ebf7a4409116208b83dbc3c076f6b",
+        "sha256:ce0c151a321275b25b46644fe5f77e728c827786b2a4ae6d1e543626ceb46e4f"
+      ],
+      "pareto_frontier_ids": [
+        "sha256:b562120bec4bc3621fe738faffef7cb1a4fec7bd138fb3096b58e61f44416bdf",
+        "sha256:296d82d803b8f49f01a8fdae7ee1664e626175b6390dd82002012d9119f6a6f0",
+        "sha256:4e9b8aa5a8a96d6045d083fae77e6592db1ebf7a4409116208b83dbc3c076f6b",
+        "sha256:ce0c151a321275b25b46644fe5f77e728c827786b2a4ae6d1e543626ceb46e4f"
+      ],
+      "parent_child_comparisons": [
+        {
+          "parent_id": "sha256:18d90cb72f499a05d0d111aa027f18744ca3e7d2ae5203f6d44ccc477b1c435c",
+          "child_id": "sha256:dd20bdece075f1b391a881f377471b7d58405827eea28bce95bfd3d8fde499d4",
+          "dimensions": [
+            "turns",
+            "duration_records",
+            "following_downside",
+            "mean_volume_vs_prior"
+          ],
+          "parent_pareto_dominates": null,
+          "child_pareto_dominates": null,
+          "verdict": "RESEARCH_PARETO_ONLY_NO_APPROVED_IMPORTANCE_WEIGHT"
+        },
+        {
+          "parent_id": "sha256:6b1d6e31878136acff4305c9904d6749b94225360b0bbe5c4f56939d075ad2f4",
+          "child_id": "sha256:dd20bdece075f1b391a881f377471b7d58405827eea28bce95bfd3d8fde499d4",
+          "dimensions": [
+            "turns",
+            "duration_records",
+            "following_downside",
+            "mean_volume_vs_prior"
+          ],
+          "parent_pareto_dominates": null,
+          "child_pareto_dominates": null,
+          "verdict": "RESEARCH_PARETO_ONLY_NO_APPROVED_IMPORTANCE_WEIGHT"
+        },
+        {
+          "parent_id": "sha256:1a3ad29bcb00007fad66010ca86d9790b29b3ca5524438ab32b18417fdce9000",
+          "child_id": "sha256:18d90cb72f499a05d0d111aa027f18744ca3e7d2ae5203f6d44ccc477b1c435c",
+          "dimensions": [
+            "turns",
+            "duration_records",
+            "following_downside",
+            "mean_volume_vs_prior"
+          ],
+          "parent_pareto_dominates": null,
+          "child_pareto_dominates": null,
+          "verdict": "RESEARCH_PARETO_ONLY_NO_APPROVED_IMPORTANCE_WEIGHT"
+        },
+        {
+          "parent_id": "sha256:534fa554cb0ab11863189e5c29c8366954d735af9898dac28c1ee2c16cc6bf42",
+          "child_id": "sha256:18d90cb72f499a05d0d111aa027f18744ca3e7d2ae5203f6d44ccc477b1c435c",
+          "dimensions": [
+            "turns",
+            "duration_records",
+            "following_downside",
+            "mean_volume_vs_prior"
+          ],
+          "parent_pareto_dominates": null,
+          "child_pareto_dominates": null,
+          "verdict": "RESEARCH_PARETO_ONLY_NO_APPROVED_IMPORTANCE_WEIGHT"
+        },
+        {
+          "parent_id": "sha256:18d90cb72f499a05d0d111aa027f18744ca3e7d2ae5203f6d44ccc477b1c435c",
+          "child_id": "sha256:39f9b16af5d3dd4670ff292e53001a4456c4593c5301d75c7b3a03c683b2c195",
+          "dimensions": [
+            "turns",
+            "duration_records",
+            "following_downside",
+            "mean_volume_vs_prior"
+          ],
+          "parent_pareto_dominates": null,
+          "child_pareto_dominates": null,
+          "verdict": "RESEARCH_PARETO_ONLY_NO_APPROVED_IMPORTANCE_WEIGHT"
+        },
+        {
+          "parent_id": "sha256:6b1d6e31878136acff4305c9904d6749b94225360b0bbe5c4f56939d075ad2f4",
+          "child_id": "sha256:39f9b16af5d3dd4670ff292e53001a4456c4593c5301d75c7b3a03c683b2c195",
+          "dimensions": [
+            "turns",
+            "duration_records",
+            "following_downside",
+            "mean_volume_vs_prior"
+          ],
+          "parent_pareto_dominates": null,
+          "child_pareto_dominates": null,
+          "verdict": "RESEARCH_PARETO_ONLY_NO_APPROVED_IMPORTANCE_WEIGHT"
+        },
+        {
+          "parent_id": "sha256:7f355dafbe863b60c2bc7b11400280258c5a7604b0dfa5f7344953e8bb4e4cba",
+          "child_id": "sha256:1a3ad29bcb00007fad66010ca86d9790b29b3ca5524438ab32b18417fdce9000",
+          "dimensions": [
+            "turns",
+            "duration_records",
+            "following_downside",
+            "mean_volume_vs_prior"
+          ],
+          "parent_pareto_dominates": null,
+          "child_pareto_dominates": null,
+          "verdict": "RESEARCH_PARETO_ONLY_NO_APPROVED_IMPORTANCE_WEIGHT"
+        },
+        {
+          "parent_id": "sha256:0afadb1422da6750698d68aa89a903a162a1ed6a953328e01462a19962437699",
+          "child_id": "sha256:1a3ad29bcb00007fad66010ca86d9790b29b3ca5524438ab32b18417fdce9000",
+          "dimensions": [
+            "turns",
+            "duration_records",
+            "following_downside",
+            "mean_volume_vs_prior"
+          ],
+          "parent_pareto_dominates": null,
+          "child_pareto_dominates": null,
+          "verdict": "RESEARCH_PARETO_ONLY_NO_APPROVED_IMPORTANCE_WEIGHT"
+        },
+        {
+          "parent_id": "sha256:1a3ad29bcb00007fad66010ca86d9790b29b3ca5524438ab32b18417fdce9000",
+          "child_id": "sha256:adc2d68e33260ff0a2bbe6502befb5a16589e7826cd123a3fa07bf5bf69f68bb",
+          "dimensions": [
+            "turns",
+            "duration_records",
+            "following_downside",
+            "mean_volume_vs_prior"
+          ],
+          "parent_pareto_dominates": null,
+          "child_pareto_dominates": null,
+          "verdict": "RESEARCH_PARETO_ONLY_NO_APPROVED_IMPORTANCE_WEIGHT"
+        },
+        {
+          "parent_id": "sha256:534fa554cb0ab11863189e5c29c8366954d735af9898dac28c1ee2c16cc6bf42",
+          "child_id": "sha256:adc2d68e33260ff0a2bbe6502befb5a16589e7826cd123a3fa07bf5bf69f68bb",
+          "dimensions": [
+            "turns",
+            "duration_records",
+            "following_downside",
+            "mean_volume_vs_prior"
+          ],
+          "parent_pareto_dominates": null,
+          "child_pareto_dominates": null,
+          "verdict": "RESEARCH_PARETO_ONLY_NO_APPROVED_IMPORTANCE_WEIGHT"
+        },
+        {
+          "parent_id": "sha256:2573310e508b3840a8aff942189342fedea3b81627ae8c60c7bb373ae2827a7a",
+          "child_id": "sha256:7f355dafbe863b60c2bc7b11400280258c5a7604b0dfa5f7344953e8bb4e4cba",
+          "dimensions": [
+            "turns",
+            "duration_records",
+            "following_downside",
+            "mean_volume_vs_prior"
+          ],
+          "parent_pareto_dominates": null,
+          "child_pareto_dominates": null,
+          "verdict": "RESEARCH_PARETO_ONLY_NO_APPROVED_IMPORTANCE_WEIGHT"
+        },
+        {
+          "parent_id": "sha256:7f355dafbe863b60c2bc7b11400280258c5a7604b0dfa5f7344953e8bb4e4cba",
+          "child_id": "sha256:2255b89b9095b5446d8dc8ac210dfc4f388f673ea910bbd88d6b02e332c1a546",
+          "dimensions": [
+            "turns",
+            "duration_records",
+            "following_downside",
+            "mean_volume_vs_prior"
+          ],
+          "parent_pareto_dominates": null,
+          "child_pareto_dominates": null,
+          "verdict": "RESEARCH_PARETO_ONLY_NO_APPROVED_IMPORTANCE_WEIGHT"
+        },
+        {
+          "parent_id": "sha256:0afadb1422da6750698d68aa89a903a162a1ed6a953328e01462a19962437699",
+          "child_id": "sha256:2255b89b9095b5446d8dc8ac210dfc4f388f673ea910bbd88d6b02e332c1a546",
+          "dimensions": [
+            "turns",
+            "duration_records",
+            "following_downside",
+            "mean_volume_vs_prior"
+          ],
+          "parent_pareto_dominates": null,
+          "child_pareto_dominates": null,
+          "verdict": "RESEARCH_PARETO_ONLY_NO_APPROVED_IMPORTANCE_WEIGHT"
+        },
+        {
+          "parent_id": "sha256:2573310e508b3840a8aff942189342fedea3b81627ae8c60c7bb373ae2827a7a",
+          "child_id": "sha256:feafe31f8e79e5b6a44e6cd9f5b3b976c5ece51c492217014a1cacd131e63f2b",
+          "dimensions": [
+            "turns",
+            "duration_records",
+            "following_downside",
+            "mean_volume_vs_prior"
+          ],
+          "parent_pareto_dominates": null,
+          "child_pareto_dominates": null,
+          "verdict": "RESEARCH_PARETO_ONLY_NO_APPROVED_IMPORTANCE_WEIGHT"
+        },
+        {
+          "parent_id": "sha256:296d82d803b8f49f01a8fdae7ee1664e626175b6390dd82002012d9119f6a6f0",
+          "child_id": "sha256:b562120bec4bc3621fe738faffef7cb1a4fec7bd138fb3096b58e61f44416bdf",
+          "dimensions": [
+            "turns",
+            "duration_records",
+            "following_downside",
+            "mean_volume_vs_prior"
+          ],
+          "parent_pareto_dominates": null,
+          "child_pareto_dominates": null,
+          "verdict": "RESEARCH_PARETO_ONLY_NO_APPROVED_IMPORTANCE_WEIGHT"
+        },
+        {
+          "parent_id": "sha256:296d82d803b8f49f01a8fdae7ee1664e626175b6390dd82002012d9119f6a6f0",
+          "child_id": "sha256:4e9b8aa5a8a96d6045d083fae77e6592db1ebf7a4409116208b83dbc3c076f6b",
+          "dimensions": [
+            "turns",
+            "duration_records",
+            "following_downside",
+            "mean_volume_vs_prior"
+          ],
+          "parent_pareto_dominates": null,
+          "child_pareto_dominates": null,
+          "verdict": "RESEARCH_PARETO_ONLY_NO_APPROVED_IMPORTANCE_WEIGHT"
+        },
+        {
+          "parent_id": "sha256:18d90cb72f499a05d0d111aa027f18744ca3e7d2ae5203f6d44ccc477b1c435c",
+          "child_id": "sha256:3eed23a8b37daf4f3d80709c2bc0c65d18bb5cbd0572bab323812761cbebce09",
+          "dimensions": [
+            "turns",
+            "duration_records",
+            "following_downside",
+            "mean_volume_vs_prior"
+          ],
+          "parent_pareto_dominates": null,
+          "child_pareto_dominates": null,
+          "verdict": "RESEARCH_PARETO_ONLY_NO_APPROVED_IMPORTANCE_WEIGHT"
+        },
+        {
+          "parent_id": "sha256:6b1d6e31878136acff4305c9904d6749b94225360b0bbe5c4f56939d075ad2f4",
+          "child_id": "sha256:3eed23a8b37daf4f3d80709c2bc0c65d18bb5cbd0572bab323812761cbebce09",
+          "dimensions": [
+            "turns",
+            "duration_records",
+            "following_downside",
+            "mean_volume_vs_prior"
+          ],
+          "parent_pareto_dominates": null,
+          "child_pareto_dominates": null,
+          "verdict": "RESEARCH_PARETO_ONLY_NO_APPROVED_IMPORTANCE_WEIGHT"
+        },
+        {
+          "parent_id": "sha256:1a3ad29bcb00007fad66010ca86d9790b29b3ca5524438ab32b18417fdce9000",
+          "child_id": "sha256:6b1d6e31878136acff4305c9904d6749b94225360b0bbe5c4f56939d075ad2f4",
+          "dimensions": [
+            "turns",
+            "duration_records",
+            "following_downside",
+            "mean_volume_vs_prior"
+          ],
+          "parent_pareto_dominates": null,
+          "child_pareto_dominates": null,
+          "verdict": "RESEARCH_PARETO_ONLY_NO_APPROVED_IMPORTANCE_WEIGHT"
+        },
+        {
+          "parent_id": "sha256:534fa554cb0ab11863189e5c29c8366954d735af9898dac28c1ee2c16cc6bf42",
+          "child_id": "sha256:6b1d6e31878136acff4305c9904d6749b94225360b0bbe5c4f56939d075ad2f4",
+          "dimensions": [
+            "turns",
+            "duration_records",
+            "following_downside",
+            "mean_volume_vs_prior"
+          ],
+          "parent_pareto_dominates": null,
+          "child_pareto_dominates": null,
+          "verdict": "RESEARCH_PARETO_ONLY_NO_APPROVED_IMPORTANCE_WEIGHT"
+        },
+        {
+          "parent_id": "sha256:18d90cb72f499a05d0d111aa027f18744ca3e7d2ae5203f6d44ccc477b1c435c",
+          "child_id": "sha256:fa7b3df687b2b187b56950cf77a2afc56466e0f5ab8a00c9abc0a009274beefd",
+          "dimensions": [
+            "turns",
+            "duration_records",
+            "following_downside",
+            "mean_volume_vs_prior"
+          ],
+          "parent_pareto_dominates": null,
+          "child_pareto_dominates": null,
+          "verdict": "RESEARCH_PARETO_ONLY_NO_APPROVED_IMPORTANCE_WEIGHT"
+        },
+        {
+          "parent_id": "sha256:6b1d6e31878136acff4305c9904d6749b94225360b0bbe5c4f56939d075ad2f4",
+          "child_id": "sha256:fa7b3df687b2b187b56950cf77a2afc56466e0f5ab8a00c9abc0a009274beefd",
+          "dimensions": [
+            "turns",
+            "duration_records",
+            "following_downside",
+            "mean_volume_vs_prior"
+          ],
+          "parent_pareto_dominates": null,
+          "child_pareto_dominates": null,
+          "verdict": "RESEARCH_PARETO_ONLY_NO_APPROVED_IMPORTANCE_WEIGHT"
+        },
+        {
+          "parent_id": "sha256:7f355dafbe863b60c2bc7b11400280258c5a7604b0dfa5f7344953e8bb4e4cba",
+          "child_id": "sha256:534fa554cb0ab11863189e5c29c8366954d735af9898dac28c1ee2c16cc6bf42",
+          "dimensions": [
+            "turns",
+            "duration_records",
+            "following_downside",
+            "mean_volume_vs_prior"
+          ],
+          "parent_pareto_dominates": null,
+          "child_pareto_dominates": null,
+          "verdict": "RESEARCH_PARETO_ONLY_NO_APPROVED_IMPORTANCE_WEIGHT"
+        },
+        {
+          "parent_id": "sha256:0afadb1422da6750698d68aa89a903a162a1ed6a953328e01462a19962437699",
+          "child_id": "sha256:534fa554cb0ab11863189e5c29c8366954d735af9898dac28c1ee2c16cc6bf42",
+          "dimensions": [
+            "turns",
+            "duration_records",
+            "following_downside",
+            "mean_volume_vs_prior"
+          ],
+          "parent_pareto_dominates": null,
+          "child_pareto_dominates": null,
+          "verdict": "RESEARCH_PARETO_ONLY_NO_APPROVED_IMPORTANCE_WEIGHT"
+        },
+        {
+          "parent_id": "sha256:1a3ad29bcb00007fad66010ca86d9790b29b3ca5524438ab32b18417fdce9000",
+          "child_id": "sha256:720ec2fca63c58ff409dacc5e2e29b80092895eb556d03059d44a65e3dbd7c19",
+          "dimensions": [
+            "turns",
+            "duration_records",
+            "following_downside",
+            "mean_volume_vs_prior"
+          ],
+          "parent_pareto_dominates": null,
+          "child_pareto_dominates": null,
+          "verdict": "RESEARCH_PARETO_ONLY_NO_APPROVED_IMPORTANCE_WEIGHT"
+        },
+        {
+          "parent_id": "sha256:534fa554cb0ab11863189e5c29c8366954d735af9898dac28c1ee2c16cc6bf42",
+          "child_id": "sha256:720ec2fca63c58ff409dacc5e2e29b80092895eb556d03059d44a65e3dbd7c19",
+          "dimensions": [
+            "turns",
+            "duration_records",
+            "following_downside",
+            "mean_volume_vs_prior"
+          ],
+          "parent_pareto_dominates": null,
+          "child_pareto_dominates": null,
+          "verdict": "RESEARCH_PARETO_ONLY_NO_APPROVED_IMPORTANCE_WEIGHT"
+        },
+        {
+          "parent_id": "sha256:2573310e508b3840a8aff942189342fedea3b81627ae8c60c7bb373ae2827a7a",
+          "child_id": "sha256:0afadb1422da6750698d68aa89a903a162a1ed6a953328e01462a19962437699",
+          "dimensions": [
+            "turns",
+            "duration_records",
+            "following_downside",
+            "mean_volume_vs_prior"
+          ],
+          "parent_pareto_dominates": null,
+          "child_pareto_dominates": null,
+          "verdict": "RESEARCH_PARETO_ONLY_NO_APPROVED_IMPORTANCE_WEIGHT"
+        },
+        {
+          "parent_id": "sha256:7f355dafbe863b60c2bc7b11400280258c5a7604b0dfa5f7344953e8bb4e4cba",
+          "child_id": "sha256:15702c04763f27079ee2db27788470b0ef3fb94d1f5c3fffb8bd01f7d55c6f1c",
+          "dimensions": [
+            "turns",
+            "duration_records",
+            "following_downside",
+            "mean_volume_vs_prior"
+          ],
+          "parent_pareto_dominates": null,
+          "child_pareto_dominates": null,
+          "verdict": "RESEARCH_PARETO_ONLY_NO_APPROVED_IMPORTANCE_WEIGHT"
+        },
+        {
+          "parent_id": "sha256:0afadb1422da6750698d68aa89a903a162a1ed6a953328e01462a19962437699",
+          "child_id": "sha256:15702c04763f27079ee2db27788470b0ef3fb94d1f5c3fffb8bd01f7d55c6f1c",
+          "dimensions": [
+            "turns",
+            "duration_records",
+            "following_downside",
+            "mean_volume_vs_prior"
+          ],
+          "parent_pareto_dominates": null,
+          "child_pareto_dominates": null,
+          "verdict": "RESEARCH_PARETO_ONLY_NO_APPROVED_IMPORTANCE_WEIGHT"
+        },
+        {
+          "parent_id": "sha256:296d82d803b8f49f01a8fdae7ee1664e626175b6390dd82002012d9119f6a6f0",
+          "child_id": "sha256:ce0c151a321275b25b46644fe5f77e728c827786b2a4ae6d1e543626ceb46e4f",
+          "dimensions": [
+            "turns",
+            "duration_records",
+            "following_downside",
+            "mean_volume_vs_prior"
+          ],
+          "parent_pareto_dominates": null,
+          "child_pareto_dominates": null,
+          "verdict": "RESEARCH_PARETO_ONLY_NO_APPROVED_IMPORTANCE_WEIGHT"
+        }
+      ],
+      "primary_pressure_id": null,
+      "ranking_status": "UNRESOLVED_MULTI_OBJECTIVE_NOT_APPROVED_IMPORTANCE",
+      "missing_evidence": "Formal significance/decay/anomaly/ownership rules and historical publication availability are not defined"
+    },
+    "ambiguities": [],
+    "data_gaps": {
+      "missing_expected_dates": [],
+      "missing_price_rows": [],
+      "basis_resets": [
+        "2026-07-01"
+      ]
+    },
+    "rejected_geometry_runs": 0,
+    "qualified_interpretation": "ABSTAIN_APPROVED_CORE_USEFULNESS_UNESTABLISHED",
+    "corporate_action_comparability": "UNKNOWN_NO_CROSS_BASIS_CERTIFICATION",
+    "historical_information_availability": "UNVERIFIED_UNLESS_SEPARATELY_SUPPLIED",
+    "intraday_order": "UNKNOWN_FROM_DAILY_OHLCV",
+    "classification_quality": "NOT_VALIDATED",
+    "action_qualification": "NOT_EVALUATED",
+    "formal_strategy_parameters": {},
+    "manual_case_inputs_used": false,
+    "result_id": "sha256:251fcf7673af6287a32be6782f7aaa33d39fbf558583677ecf27dd8fc1988e39"
+  },
+  "refusal_results": [
+    {
+      "id": "duplicate",
+      "expected": "DUPLICATE_DATE",
+      "actual": "DUPLICATE_DATE",
+      "matched": true
+    },
+    {
+      "id": "unordered",
+      "expected": "UNORDERED_DATE",
+      "actual": "UNORDERED_DATE",
+      "matched": true
+    },
+    {
+      "id": "invalid-date",
+      "expected": "INVALID_DATE",
+      "actual": "INVALID_DATE",
+      "matched": true
+    },
+    {
+      "id": "outside",
+      "expected": "DATE_OUTSIDE_REQUEST",
+      "actual": "DATE_OUTSIDE_REQUEST",
+      "matched": true
+    },
+    {
+      "id": "missing-price",
+      "expected": "MISSING_PRICE",
+      "actual": "MISSING_PRICE",
+      "matched": true
+    },
+    {
+      "id": "null-price",
+      "expected": "MISSING_PRICE",
+      "actual": "MISSING_PRICE",
+      "matched": true
+    },
+    {
+      "id": "zero-price",
+      "expected": "ZERO_OR_INVALID_OHLC",
+      "actual": "ZERO_OR_INVALID_OHLC",
+      "matched": true
+    },
+    {
+      "id": "invalid-ohlc",
+      "expected": "ZERO_OR_INVALID_OHLC",
+      "actual": "ZERO_OR_INVALID_OHLC",
+      "matched": true
+    },
+    {
+      "id": "nan-price",
+      "expected": "ZERO_OR_INVALID_OHLC",
+      "actual": "ZERO_OR_INVALID_OHLC",
+      "matched": true
+    },
+    {
+      "id": "float-price",
+      "expected": "MISSING_PRICE",
+      "actual": "MISSING_PRICE",
+      "matched": true
+    },
+    {
+      "id": "volume-null",
+      "expected": "INVALID_VOLUME",
+      "actual": "INVALID_VOLUME",
+      "matched": true
+    },
+    {
+      "id": "volume-fraction",
+      "expected": "INVALID_VOLUME",
+      "actual": "INVALID_VOLUME",
+      "matched": true
+    },
+    {
+      "id": "volume-negative",
+      "expected": "INVALID_VOLUME",
+      "actual": "INVALID_VOLUME",
+      "matched": true
+    },
+    {
+      "id": "volume-nan",
+      "expected": "INVALID_VOLUME",
+      "actual": "INVALID_VOLUME",
+      "matched": true
+    },
+    {
+      "id": "missing-session",
+      "expected": "MISSING_EXPECTED_DATES",
+      "actual": "MISSING_EXPECTED_DATES",
+      "matched": true
+    },
+    {
+      "id": "missing-anchor",
+      "expected": "EXACT_AS_OF_REQUIRED",
+      "actual": "EXACT_AS_OF_REQUIRED",
+      "matched": true
+    },
+    {
+      "id": "incomplete",
+      "expected": "INCOMPLETE_DAY",
+      "actual": "INCOMPLETE_DAY",
+      "matched": true
+    },
+    {
+      "id": "basis",
+      "expected": "BASIS_MISMATCH",
+      "actual": "BASIS_MISMATCH",
+      "matched": true
+    },
+    {
+      "id": "source",
+      "expected": "SOURCE_MISMATCH",
+      "actual": "SOURCE_MISMATCH",
+      "matched": true
+    },
+    {
+      "id": "stock",
+      "expected": "STOCK_MISMATCH",
+      "actual": "STOCK_MISMATCH",
+      "matched": true
+    },
+    {
+      "id": "unit",
+      "expected": "VOLUME_UNIT",
+      "actual": "VOLUME_UNIT",
+      "matched": true
+    },
+    {
+      "id": "scope",
+      "expected": "UNSUPPORTED_SCOPE",
+      "actual": "UNSUPPORTED_SCOPE",
+      "matched": true
+    },
+    {
+      "id": "calendar",
+      "expected": "CALENDAR_REQUIRED",
+      "actual": "CALENDAR_REQUIRED",
+      "matched": true
+    },
+    {
+      "id": "warning",
+      "expected": "KNOWN_BASIS_WARNING_REQUIRED",
+      "actual": "KNOWN_BASIS_WARNING_REQUIRED",
+      "matched": true
+    },
+    {
+      "id": "source-time",
+      "expected": "UNKNOWN_SOURCE_TIME",
+      "actual": "UNKNOWN_SOURCE_TIME",
+      "matched": true
+    },
+    {
+      "id": "availability-upgrade",
+      "expected": "HISTORICAL_AVAILABILITY_NOT_PROVEN",
+      "actual": "HISTORICAL_AVAILABILITY_NOT_PROVEN",
+      "matched": true
+    },
+    {
+      "id": "calendar-upgrade",
+      "expected": "CALENDAR_COMPLETENESS_NOT_PROVEN",
+      "actual": "CALENDAR_COMPLETENESS_NOT_PROVEN",
+      "matched": true
+    }
+  ],
+  "all_matched": true,
+  "test_count_note": "Evidence materialization, not additional unique test methods"
+}

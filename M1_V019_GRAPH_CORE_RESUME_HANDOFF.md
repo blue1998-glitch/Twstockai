@@ -1,3 +1,15 @@
+# 2026-10-30 最新有效｜M2-3 FinMind有限日線接既有圖形核心
+
+入口[graph_core/finmind_20261030](股票系統M1_v0_18/graph_core/finmind_20261030/README.md)、CONTRACT、REPORT及real-validation-summary。新finmind_adapter純轉欄位、finmind_run有限HTTP／本地IO，重用原graph_core.analyze與TWSE來源parser；原算法／參數／主壓力及資金程式未改。2884固定2026-03-01～07-22，一次查得98筆，07-21／22分別97／98筆實跑；兩日OHLC及原股數與既存官方相符，前綴／後日改寫數值相同。07-01不比價只作basis break，事件類型未知，不推定除權息或認證跨基底結構。
+
+原始FinMind回應、轉接payload及可還原行情的完整結果僅在儲存庫外`/workspace/twstockai-local-data/`，禁止加入任何GitHub（含私人repo）；公開只程式、合成fixture／actual／log及非行情白名單摘要。CLI拒絕Git工作樹內真實輸入／輸出與覆寫。Free限個人非商業研究，不代表散布權。8069只讀原兩日官方整數張數，精確股數UNKNOWN／拒認；Work原FinMind價格核對未在本輪重驗。
+
+18唯一方法最終PASS＝15新增＋3必要core回歸；首次1個缺反例檔ERROR及其log留史，補正後只跑必要方法，不加中間批／案例／歷史PASS。原件11檔及凍結input／expected bytes保持；無舊suite／producer／市場績效／UI／Android。Library M2-2兩原件未取得／未讀，依使用者摘要與官方API有限執行，不要求搬檔。歷史available_at／完整日曆／公司行動UNKNOWN、正式false／主壓力null、1101及70/2/其中8/真實總淨合格0保持。
+
+唯一Codex依功能里程碑自審、原分支正常保存及固定SHA讀回；沒有代理／分支／worktree或人工操作。能力止於有限真實日線研究接入，不是正式辨識／買點／策略／績效／全市場。此里程碑達成即停止；下方舊交接完整保留。
+
+---
+
 # 2026-10-30 最新有效｜research_operation明示承接保存結果0.2
 
 入口股票系統M1_v0_18/capital_research/operation_import_20261030/README.md、CONTRACT.md、REPORT.md及actual。原research_operation新增import_operation／既有CLI IMPORT，完整0.4來源與既有choice0.2外部明示，沿原Journal四階段原樣保存讀回；generation階段只保存原來源，不生成、不重選、不改帳或成交。新header／result／receipt0.2，舊RUN／READ及歷史不遷移。

@@ -1,0 +1,39 @@
+{
+  "status": "PASS",
+  "review_type": "SINGLE_CODEX_SELF_REVIEW_NOT_STRATEGY_ACCEPTANCE",
+  "source_baseline": "07fbbb034468aaa83de1df04743029bd54c5c691",
+  "reviewed_paths": 23,
+  "protected_source_files": 11,
+  "old_root_bytes_retained": true,
+  "raw_quote_collisions": [],
+  "restricted_result_ids_published": false,
+  "secret_pattern_matches": 0,
+  "unique_test_methods": 18,
+  "new_methods": 15,
+  "necessary_regressions": 3,
+  "final_statuses": {
+    "test_basis_reset_keeps_unknown_and_stops_old_references (graph_core.finmind_20261030.test_finmind.FinMindTests.test_basis_reset_keeps_unknown_and_stops_old_references)": "ok",
+    "test_blocked_http_is_not_retried (graph_core.finmind_20261030.test_finmind.FinMindTests.test_blocked_http_is_not_retried)": "ok",
+    "test_decimal_context_isolation (graph_core.finmind_20261030.test_finmind.FinMindTests.test_decimal_context_isolation)": "ok",
+    "test_file_run_reuses_saved_response_and_safe_summary (graph_core.finmind_20261030.test_finmind.FinMindTests.test_file_run_reuses_saved_response_and_safe_summary)": "ok",
+    "test_frozen_inputs_and_old_sources_unchanged (graph_core.finmind_20261030.test_finmind.FinMindTests.test_frozen_inputs_and_old_sources_unchanged)": "ok",
+    "test_frozen_refusal_inputs (graph_core.finmind_20261030.test_finmind.FinMindTests.test_frozen_refusal_inputs)": "ok",
+    "test_future_prefix_and_full_integrity_are_separate (graph_core.finmind_20261030.test_finmind.FinMindTests.test_future_prefix_and_full_integrity_are_separate)": "ok",
+    "test_json_original_lexemes_duplicates_nonfinite (graph_core.finmind_20261030.test_finmind.FinMindTests.test_json_original_lexemes_duplicates_nonfinite)": "ok",
+    "test_mapping_matches_unchanged_core_and_input_unchanged (graph_core.finmind_20261030.test_finmind.FinMindTests.test_mapping_matches_unchanged_core_and_input_unchanged)": "ok",
+    "test_public_allowlist_excludes_reconstructable_quote_data (graph_core.finmind_20261030.test_finmind.FinMindTests.test_public_allowlist_excludes_reconstructable_quote_data)": "ok",
+    "test_pure_adapter_has_no_io (graph_core.finmind_20261030.test_finmind.FinMindTests.test_pure_adapter_has_no_io)": "ok",
+    "test_repository_output_and_symlink_paths_refused (graph_core.finmind_20261030.test_finmind.FinMindTests.test_repository_output_and_symlink_paths_refused)": "ok",
+    "test_retrieval_day_gate_uses_equivalent_timezones (graph_core.finmind_20261030.test_finmind.FinMindTests.test_retrieval_day_gate_uses_equivalent_timezones)": "ok",
+    "test_volume_zero_is_data_but_integer_lots_cannot_verify_shares (graph_core.finmind_20261030.test_finmind.FinMindTests.test_volume_zero_is_data_but_integer_lots_cannot_verify_shares)": "ok",
+    "test_complete_vs_truncated_prefix_identical_with_future_mutation (tests.test_graph_core.GraphCoreTests.test_complete_vs_truncated_prefix_identical_with_future_mutation)": "ok",
+    "test_basis_reset_stops_old_comparison_reference_and_volume_baseline (tests.test_graph_core.GraphCoreTests.test_basis_reset_stops_old_comparison_reference_and_volume_baseline)": "ok",
+    "test_caller_manual_answers_and_strategy_promotion_refused (tests.test_graph_core.GraphCoreTests.test_caller_manual_answers_and_strategy_promotion_refused)": "ok",
+    "test_request_cannot_expand_approved_window (graph_core.finmind_20261030.test_finmind.FinMindTests.test_request_cannot_expand_approved_window)": "ok"
+  },
+  "limitations": [
+    "No universal secret/DLP guarantee",
+    "Raw/reconstructable artifacts remain outside Git",
+    "Historical availability and calendar completeness UNKNOWN"
+  ]
+}
