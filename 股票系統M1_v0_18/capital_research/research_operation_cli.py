@@ -2,7 +2,7 @@
 import argparse
 import json
 from pathlib import Path
-from .research_operation import run_operation, read_operation
+from .research_operation import run_operation, read_operation, import_operation
 
 
 def render_text(receipt):
@@ -30,18 +30,18 @@ def render_text(receipt):
 
 
 def main():
-    p=argparse.ArgumentParser(description='明示合成研究RUN／READ，不建單或成交')
-    p.add_argument('operation',choices=('RUN','READ'));p.add_argument('--store',required=True)
+    p=argparse.ArgumentParser(description='明示合成研究RUN／IMPORT／READ，不建單或成交')
+    p.add_argument('operation',choices=('RUN','IMPORT','READ'));p.add_argument('--store',required=True)
     p.add_argument('--id',required=True);p.add_argument('--input');p.add_argument('--format',choices=('text','json'),default='text')
     a=p.parse_args()
     if a.operation=='READ':
         if a.input:p.error('READ does not accept --input')
         receipt=read_operation(a.store,a.id)
     else:
-        if not a.input:p.error('RUN requires explicit --input')
+        if not a.input:p.error(a.operation+' requires explicit --input')
         try:request=json.loads(Path(a.input).read_text())
         except (OSError,ValueError) as exc:p.exit(2,'OPERATION_INPUT_FAILED: '+str(exc)+'\n')
-        receipt=run_operation(a.store,a.id,request)
+        receipt=(import_operation if a.operation=='IMPORT' else run_operation)(a.store,a.id,request)
     print(json.dumps(receipt,ensure_ascii=False,indent=2) if a.format=='json' else render_text(receipt),end='\n' if a.format=='json' else '')
     outcome=receipt['operation']['outcome'] if receipt['operation'] else None
     return 0 if receipt['workflow_status'] in ('COMPLETED_RESEARCH_INTENT','COMPLETED_CONDITIONAL_INTENT','READ_ONLY') and outcome in ('COMPLETED_RESEARCH_INTENT','COMPLETED_CONDITIONAL_INTENT') else 2

@@ -1,3 +1,15 @@
+# 2026-10-30 最新有效｜research_operation明示承接保存結果0.2
+
+入口股票系統M1_v0_18/capital_research/operation_import_20261030/README.md、CONTRACT.md、REPORT.md及actual。原research_operation新增import_operation／既有CLI IMPORT，完整0.4來源與既有choice0.2外部明示，沿原Journal四階段原樣保存讀回；generation階段只保存原來源，不生成、不重選、不改帳或成交。新header／result／receipt0.2，舊RUN／READ及歷史不遷移。
+
+一般／條件／拒絕保持；B93仍條件意圖，UNKNOWN仍CHOICE_REFUSED、不進source-check。來源／choice精確回連及唯一成員、單位來源／搜尋收據、原帳權利／reserve／origin/latest／全部token均承接。缺choice不自動續抱，錯配拒絕；相同ID不寫、異內容衝突，UNKNOWN停且只明示READ。READ不重算verdict、不補檔或自動續跑；來源一致性不是認證。
+
+19案先凍結、正反例無重複，首次全部符合預期；8唯一方法首次PASS，不加案例／五舊READ控制／歷史PASS。原五READ逐值相同、既有ID RUN不生成；四階段UNKNOWN／缺中間／錯鏈／fresh CLI禁止引擎與選擇／網路／READ寫檔、完整Context及input不變均有證據。原數值／帳務／choice／Journal／資格及來源原件bytes保持，無舊suite／producer或市場回放。
+
+唯一Codex依里程碑自審、正常保存與GitHub固定SHA讀回，起始36b9e2779286537579f6680dd382fee1143b03e2且淨；無人工或例行Work驗收。只承接已保存choice，未接補選、多份比較或成交；本項結清，下一步按原優先序核已有明確缺口，沒有就停，不再為延續增加同類READ包裝。70/2/其中8/真實合格0、1101 UNKNOWN、正式false／主壓力null、來源parents／圖形人工及R2/F／原未支援／未讀限制保持。下方歷史完整保留。
+
+---
+
 # 2026-10-29 最新有效｜保存0.4候選的明示研究選擇0.2
 
 入口股票系統M1_v0_18/capital_research/choice_v04_20261029/README.md、CONTRACT.md、REPORT.md及final。沿原choose_saved／Journal／來源核對新增choice-input/0.2 → choice/0.2；明示完整0.4 request＋generation來源，不重新產生候選／重播，不把0.4降版或假包after-retry。原0.1及其0.2候選來源相容，原匹配、Journal、CLI／view與數值source不改。

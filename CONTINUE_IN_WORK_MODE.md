@@ -1,3 +1,27 @@
+# 2026-10-30 最新有效｜research_operation明示承接保存結果0.2
+
+入口股票系統M1_v0_18/capital_research/operation_import_20261030/README.md、CONTRACT.md、REPORT.md及actual。原research_operation新增import_operation／既有CLI IMPORT，完整0.4來源與既有choice0.2外部明示，沿原Journal四階段原樣保存讀回；generation階段只保存原來源，不生成、不重選、不改帳或成交。新header／result／receipt0.2，舊RUN／READ及歷史不遷移。
+
+一般／條件／拒絕保持；B93仍條件意圖，UNKNOWN仍CHOICE_REFUSED、不進source-check。來源／choice精確回連及唯一成員、單位來源／搜尋收據、原帳權利／reserve／origin/latest／全部token均承接。缺choice不自動續抱，錯配拒絕；相同ID不寫、異內容衝突，UNKNOWN停且只明示READ。READ不重算verdict、不補檔或自動續跑；來源一致性不是認證。
+
+19案先凍結、正反例無重複，首次全部符合預期；8唯一方法首次PASS，不加案例／五舊READ控制／歷史PASS。原五READ逐值相同、既有ID RUN不生成；四階段UNKNOWN／缺中間／錯鏈／fresh CLI禁止引擎與選擇／網路／READ寫檔、完整Context及input不變均有證據。原數值／帳務／choice／Journal／資格及來源原件bytes保持，無舊suite／producer或市場回放。
+
+唯一Codex依里程碑自審、正常保存與GitHub固定SHA讀回，起始36b9e2779286537579f6680dd382fee1143b03e2且淨；無人工或例行Work驗收。只承接已保存choice，未接補選、多份比較或成交；本項結清，下一步按原優先序核已有明確缺口，沒有就停，不再為延續增加同類READ包裝。70/2/其中8/真實合格0、1101 UNKNOWN、正式false／主壓力null、來源parents／圖形人工及R2/F／原未支援／未讀限制保持。下方歷史完整保留。
+
+---
+
+# 2026-10-30 最新進度同步｜原 Codex 成果保存已結清
+
+依使用者要求核對修復上傳並同步進度。實核基準 `36b9e2779286537579f6680dd382fee1143b03e2`，原分支 `dev/m1-v018-chart-annotations` 保留 `9d7931c4` 及其後7個提交（ahead 7／behind 0），含修復結清 `4094f130` 與候選選擇接線 `c9bbc5db`。
+
+[本輪進度、證據範圍與後續分工](docs/work-reviews/20261030_original_codex_progress_sync/README.md)；[機器可讀核對](docs/work-reviews/20261030_original_codex_progress_sync/verification.json)。兩份完整manifest共16,839路徑已作結構核對；29 ZIP在目前樹中，Git blob及大小與原交付固定樹一致。沿用已讀原始讀回／CRC／成員SHA證據，不冒稱本輪重新下載解壓或重跑產品測試。6份歷史衝突只封存，不覆蓋現行版本。舊工作區 `392b94a4` 不是新工程起點；保存結清不證實平台環境、舊對話或唯一寫入者協調已修復。
+
+目前工程已含數量候選0.4及明示研究選擇choice/0.2；下游research_operation／supplement／比較與成交尚未接好。Work市場環境研究最新0.9、資料截止10/29，報告與證據包仍另存；本輪只同步其狀態，未把完整研究包匯入GitHub或宣稱Codex已讀。正式參數、最佳比例、真實淨績效、全市場辨識及自動配置仍未完成；1101 UNKNOWN、真實合格0、正式false、主壓力null與所有來源限制保持。
+
+本輪Work只同步文件，不改產品源碼、策略或來源。後續工程仍由指定唯一Codex從最新遠端接續；救援原件「已保存／本輪已核清單」與「工程者已實讀內容」分開，未讀不能自動改成已讀。下方原文完整留史。
+
+---
+
 # 2026-10-28 最新需求｜純價量市場環境與資金閉環
 
 使用者要求把近期冠西電案例、全市場機會成本與7月底後假突破／換股連鎖損失的觀察，更新為全專案後續建置方向。先讀 [完整新增規格](docs/strategy-research/20261028_price_volume_market_regime_capital_loop.md) 與 PROJECT_VISION.md。決策只看圖形、價格、成交量；持有、換股、部分換、持現金要在相同連續帳與可成交條件下比較。市場普遍假突破時研究降曝險／停止新進場及恢復條件，不把換股當預設。此為方向與研究候選，尚未核准門檻、比例、策略勝者，未執行真實全市場回測或交易；原合成帳務、來源資格、UNKNOWN、正式false、歷史原件與既有接續工作保持。下方舊交接保留。
