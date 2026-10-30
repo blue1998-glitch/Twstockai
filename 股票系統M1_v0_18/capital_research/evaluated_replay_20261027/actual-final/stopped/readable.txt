@@ -1,0 +1,8 @@
+明示合成回放與另存評估（非市場績效）
+操作狀態：READ_ONLY
+分開保存：{"request": "READ_ONLY", "replay": "READ_ONLY", "evaluation": "READ_ONLY", "result": "READ_ONLY"}
+回放狀態：STOPPED_CANDIDATE_GATE；評估狀態：REFUSED
+保存結果：COMPLETED_EVALUATION_REFUSED
+拒算：統計保持null，不把停止前帳戶當完成結果。
+READ只讀已保存評估，不重播、不重算或補行情。
+不排名；全部正式資格false、主壓力null。

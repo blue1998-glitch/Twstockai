@@ -1,0 +1,17 @@
+{
+  "case": "partial-7-active-13",
+  "qualification": "PRETEST_MANUAL_FIELD_ROLE_CORRECTION_NOT_ENGINE_OR_POLICY_CHANGE",
+  "original_expected_preserved": "cases/partial-7-active-13/expected.json",
+  "source": "股票系統M1_v0_18/rotation_research/action_ledger.py:154-159,201-215",
+  "independent_rule": "BUY adds payable; settled cash changes only on declared settlement_date. available_cash_strict=settled_cash-purchase_payable.",
+  "manual_calculation": "7*20.02+ceil(max(1,140.14*0.001))=141.14; before 1/12, settled cash remains 1000 and available is 858.86. Original general reserve100 and remaining-order reserve261.65039 remain separate.",
+  "corrected_expected": {
+    "final_cash": "1000",
+    "purchase_payable": "141.140",
+    "available_cash_strict": "858.860"
+  },
+  "all_status_reason_oracles_unchanged": true,
+  "inputs_unchanged": true,
+  "production_changed_for_correction": false,
+  "test_methods_run_before_correction": 0
+}

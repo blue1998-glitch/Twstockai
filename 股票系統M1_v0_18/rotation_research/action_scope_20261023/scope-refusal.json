@@ -1,0 +1,59 @@
+{
+  "schema": "rotation-scope-ledger-result/0.1",
+  "input_id": "sha256:53a443464c06f790dc008bbefb2ddb83495e6b202f65ee9e939d0ced08553cb1",
+  "scope_catalog_id": "sha256:c9fb913ce7067c987da6faf03d352922393f548c961f45922ac596fe2ff8a343",
+  "status": "REFUSED_INCOMPLETE_EVENT_ACCOUNTING",
+  "start": "2026-08-03",
+  "end": "2026-09-10",
+  "refusal_reasons": [
+    "ACTION_COVERAGE_INCOMPLETE:1101",
+    "ACTION_COVERAGE_INCOMPLETE:2884",
+    "NET_DISTRIBUTIONS_TAX_FEES_UNKNOWN",
+    "OPENING_ENTITLEMENTS_UNKNOWN",
+    "SHARE_EXCHANGE_ACCOUNT_IMPACT_UNSUPPORTED",
+    "SOURCE_ACTION_COVERAGE_INCOMPLETE:1101",
+    "SOURCE_ACTION_COVERAGE_INCOMPLETE:2884"
+  ],
+  "scope_findings": [
+    {
+      "reason": "SOURCE_ACTION_COVERAGE_INCOMPLETE:1101",
+      "gaps": [
+        "NO_EXHAUSTIVE_CAPITAL_REDUCTION_OR_OTHER_ACTION_REGISTER",
+        "EXCHANGE_2026_CAPTURE_ENDS_2026-07-24_MISSING_2026-07-25_TO_2026-10-16",
+        "EXRIGHT_ENDPOINT_EXCLUSIONS_NOT_COMPLETE_CORPORATE_ACTION_UNIVERSE",
+        "SCOPED_INVENTORY_NOT_EXHAUSTIVE_REGISTER_OR_SUPPORTED_ACCOUNT_IMPACT"
+      ]
+    },
+    {
+      "reason": "SOURCE_ACTION_COVERAGE_INCOMPLETE:2884",
+      "gaps": [
+        "NO_EXHAUSTIVE_CAPITAL_REDUCTION_OR_OTHER_ACTION_REGISTER",
+        "EXCHANGE_2026_CAPTURE_ENDS_2026-07-24_MISSING_2026-07-25_TO_2026-10-16",
+        "EXRIGHT_ENDPOINT_EXCLUSIONS_NOT_COMPLETE_CORPORATE_ACTION_UNIVERSE",
+        "SCOPED_INVENTORY_NOT_EXHAUSTIVE_REGISTER_OR_SUPPORTED_ACCOUNT_IMPACT"
+      ]
+    },
+    {
+      "reason": "SHARE_EXCHANGE_ACCOUNT_IMPACT_UNSUPPORTED",
+      "inventory_id": "sha256:b9eac95a1a87bcc06b6d3b67547af3148106813cddf5fffd9edab21fc450207f",
+      "issuer_code": "2884",
+      "entitled_old_code": "2867",
+      "ledger_supported": false,
+      "existing_acquirer_share_grant": null,
+      "scope": "TARGET_HOLDER_EXCHANGE_NOT_ACQUIRER_STOCK_DIVIDEND",
+      "source_ids": [
+        "esun-mna-20260713",
+        "esun-mna-index"
+      ]
+    }
+  ],
+  "daily": [],
+  "journal": [],
+  "total_net_return": null,
+  "scenario_net_return": null,
+  "actual_realized_investor_return": null,
+  "original_numeric_replay_called": false,
+  "policy_authorized": false,
+  "historical_signal_eligible": false,
+  "primary_pressure_id": null
+}

@@ -1,0 +1,60 @@
+{
+  "baseline": "135f73b65e9622a664fcf05adb4cdb09a9c70e02",
+  "new_versions": {
+    "decision": "0.7",
+    "execution": "0.7",
+    "comparison": "0.7",
+    "checkpoint": "0.6",
+    "fact_history": "0.3"
+  },
+  "commands": [
+    {
+      "command": "python -B -m capital_research.rejected_reassessment_20261026.reproduce --output .../before",
+      "exit": 1,
+      "reason": "Final conditional control B99 infeasible with reserve100; earlier four cases captured",
+      "log": "reproduce-before.log"
+    },
+    {
+      "command": "python -B -m capital_research.rejected_reassessment_20261026.reproduce --output .../before-final",
+      "exit": 0,
+      "log": "reproduce-before-final.log"
+    },
+    {
+      "command": "python -B -m unittest -v ...test_rejected_restriction_survives_restore_with_current_review",
+      "exit": 1,
+      "log": "tests-before-one.log",
+      "unique_methods": 1
+    },
+    {
+      "command": "python -B -m unittest -v ...test_reassessment",
+      "exit": 0,
+      "log": "tests-first-fix.log",
+      "unique_methods": 6
+    },
+    {
+      "command": "python -B -m unittest -v ...test_reassessment",
+      "exit": 0,
+      "log": "tests-boundaries.log",
+      "unique_methods": 14
+    },
+    {
+      "command": "PYTHONDONTWRITEBYTECODE=1 python -B -m capital_research.rejected_reassessment_20261026.verify",
+      "exit": 0,
+      "log": "tests-final.log",
+      "unique_methods": 24,
+      "new_methods": 15,
+      "necessary_regressions": 9
+    },
+    {
+      "command": "python -B -m capital_research.rejected_reassessment_20261026.reproduce --output .../after-final",
+      "exit": 0,
+      "log": "reproduce-after-final.log"
+    }
+  ],
+  "unique_test_union": 24,
+  "counting": "Earlier 1/6/14 batches are subsets; not added. No historical PASS added.",
+  "real_producer_runs": 0,
+  "bootstrap": 0,
+  "commit": 0,
+  "push": 0
+}

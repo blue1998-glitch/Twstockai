@@ -1,0 +1,224 @@
+{
+  "schema": "quantity-replay-synthetic-summary/0.1",
+  "cases": [
+    {
+      "case": "partial-then-independent",
+      "checks": {
+        "status": true,
+        "execution_calls": true,
+        "fills": true,
+        "final_cash": true,
+        "final_nav": true,
+        "final_shares": true,
+        "first_cash": true,
+        "first_nav": true,
+        "first_shares": true,
+        "origin_capital": true,
+        "formal_false": true,
+        "no_strategy_winner": true
+      },
+      "matched": true
+    },
+    {
+      "case": "settled-not-reapproved",
+      "checks": {
+        "status": true,
+        "execution_calls": true,
+        "fills": true,
+        "final_cash": true,
+        "final_shares": true,
+        "waiting": true,
+        "formal_false": true,
+        "no_strategy_winner": true
+      },
+      "matched": true
+    },
+    {
+      "case": "wait-then-new-review",
+      "checks": {
+        "status": true,
+        "execution_calls": true,
+        "fills": true,
+        "final_cash": true,
+        "final_nav": true,
+        "final_shares": true,
+        "cancelled": true,
+        "origin_capital": true,
+        "formal_false": true,
+        "no_strategy_winner": true
+      },
+      "matched": true
+    },
+    {
+      "case": "old-trigger-blocked",
+      "checks": {
+        "status": true,
+        "execution_calls": true,
+        "fills": true,
+        "reason": true,
+        "formal_false": true,
+        "no_strategy_winner": true
+      },
+      "matched": true
+    },
+    {
+      "case": "false-first-blocked",
+      "checks": {
+        "status": true,
+        "execution_calls": true,
+        "fills": true,
+        "reason": true,
+        "formal_false": true,
+        "no_strategy_winner": true
+      },
+      "matched": true
+    },
+    {
+      "case": "shared-bar-blocked",
+      "checks": {
+        "status": true,
+        "execution_calls": true,
+        "fills": true,
+        "reason": true,
+        "formal_false": true,
+        "no_strategy_winner": true
+      },
+      "matched": true
+    },
+    {
+      "case": "limit-up-unfilled",
+      "checks": {
+        "status": true,
+        "execution_calls": true,
+        "fills": true,
+        "final_shares": true,
+        "formal_false": true,
+        "no_strategy_winner": true
+      },
+      "matched": true
+    },
+    {
+      "case": "unsold-A-joint-risk",
+      "checks": {
+        "status": true,
+        "execution_calls": true,
+        "fills": true,
+        "final_shares": true,
+        "reason": true,
+        "formal_false": true,
+        "no_strategy_winner": true
+      },
+      "matched": true
+    },
+    {
+      "case": "embedded-review-refused",
+      "checks": {
+        "status": false,
+        "execution_calls": true,
+        "reason": true,
+        "formal_false": true,
+        "no_strategy_winner": true
+      },
+      "matched": false
+    },
+    {
+      "case": "opening-payable-unsupported",
+      "checks": {
+        "status": true,
+        "execution_calls": true,
+        "fills": true,
+        "payable_preserved": true,
+        "reason": true,
+        "formal_false": true,
+        "no_strategy_winner": true
+      },
+      "matched": true
+    },
+    {
+      "case": "close-not-yet-known",
+      "checks": {
+        "status": true,
+        "execution_calls": true,
+        "fills": true,
+        "reason": true,
+        "formal_false": true,
+        "no_strategy_winner": true
+      },
+      "matched": true
+    },
+    {
+      "case": "account-reset-refused",
+      "checks": {
+        "status": true,
+        "execution_calls": true,
+        "fills": true,
+        "reason": true,
+        "formal_false": true,
+        "no_strategy_winner": true
+      },
+      "matched": true
+    },
+    {
+      "case": "prefix-only",
+      "checks": {
+        "status": true,
+        "execution_calls": true,
+        "fills": true,
+        "formal_false": true,
+        "no_strategy_winner": true
+      },
+      "matched": true
+    },
+    {
+      "case": "future-A-wins",
+      "checks": {
+        "status": true,
+        "execution_calls": true,
+        "fills": true,
+        "numeric_prefix": true,
+        "formal_false": true,
+        "no_strategy_winner": true
+      },
+      "matched": true
+    },
+    {
+      "case": "future-B-wins",
+      "checks": {
+        "status": true,
+        "execution_calls": true,
+        "fills": true,
+        "numeric_prefix": true,
+        "formal_false": true,
+        "no_strategy_winner": true
+      },
+      "matched": true
+    },
+    {
+      "case": "future-both-fall",
+      "checks": {
+        "status": true,
+        "execution_calls": true,
+        "fills": true,
+        "numeric_prefix": true,
+        "formal_false": true,
+        "no_strategy_winner": true
+      },
+      "matched": true
+    },
+    {
+      "case": "outer-gate-before-execution",
+      "checks": {
+        "status": true,
+        "execution_calls": true,
+        "reason": true,
+        "formal_false": true,
+        "no_strategy_winner": true
+      },
+      "matched": true
+    }
+  ],
+  "all_matched": false,
+  "independent_market_samples": 0,
+  "strategy_ranking": null,
+  "qualification_upgrades": 0
+}

@@ -1,0 +1,65 @@
+{
+  "status": "PASS_ALL_6_FILES_READ_BACK",
+  "repository": "blue1998-glitch/Twstockai",
+  "branch": "dev/m1-v018-chart-annotations",
+  "base_commit": "f6f15eb8a68f66fe41cc0f2157795790147cb6ad",
+  "research_commit": "35e54d2b1b327b1803afd5e12c663955304c134c",
+  "method": "All six uploaded Git blob SHA1 matched local bytes; immutable-commit UTF8 readback matched exactly; original root history retained with latest section added.",
+  "files": [
+    {
+      "path": "docs/visual-discussion/20261021_b_price_hold_decision/README.md",
+      "bytes": 3325,
+      "sha256": "0f59d9446a6e353e046ec41c6ea6193b6b17309c60c71b6406a66503f088e6a3",
+      "git_blob_sha": "d787a60ee7de5190d76b0e0b55043ef276b2f045"
+    },
+    {
+      "path": "docs/visual-discussion/20261021_b_price_hold_decision/WORK_HANDOFF.md",
+      "bytes": 2992,
+      "sha256": "03d8a7cc8581bf1e3168383d9c744d422c32a774197625244afd55697b62ab79",
+      "git_blob_sha": "faae1ebf9c567c761a49211f0340110032aba247"
+    },
+    {
+      "path": "docs/visual-discussion/20261021_b_price_hold_decision/decision.json",
+      "bytes": 1696,
+      "sha256": "f030c0a4b6667c0c24af949ec748f54e6fef60ac9428526eba4436e35317eaab",
+      "git_blob_sha": "c6d586a6e5f8eadb3609f2d5179ef27990b5e979"
+    },
+    {
+      "path": "AGENTS.md",
+      "bytes": 185416,
+      "sha256": "4de0d8d401a5cb90e95e727a30df8beee2acfa2b01b362f4176deee70e56739c",
+      "git_blob_sha": "d0e6761496ca827a0c48fb734cb945924c98bbab"
+    },
+    {
+      "path": "CONTINUE_IN_WORK_MODE.md",
+      "bytes": 280864,
+      "sha256": "1c3367132b66c4297fd71a48bba6ed328db8ac2001a88d0e1659c53de30d34db",
+      "git_blob_sha": "45c7a6c5a3f5358b2fc20d76506236c62e8eaf90"
+    },
+    {
+      "path": "M1_V019_GRAPH_CORE_RESUME_HANDOFF.md",
+      "bytes": 158278,
+      "sha256": "d1288e72f378ebee01768833e8775fce172db025791bf947df56baa68c319bb1",
+      "git_blob_sha": "df21d49ab1b89bd3ed8d3d17781e2b1c4d94f568"
+    }
+  ],
+  "adjudication": "ANSWERED_VOLUME_SUPPORT_NOT_MANDATORY_SUCCESS_GATE",
+  "volume_expansion_required_for_success": false,
+  "volume_expansion_sufficient_for_success": false,
+  "no_volume_expansion_means_failure": false,
+  "followup_focus": "Price holds above the broken high; record separately from crossing-day volume support and known-on date.",
+  "holding_duration_return_depth_and_reclaim_rules": null,
+  "backfill_holding_confirmation_to_break_date": false,
+  "manual_nested_band_answer_preserved": true,
+  "new_manual_question": false,
+  "actual_checks": {
+    "documentation_remote_content_checks": 6,
+    "new_figures_market_downloads_engine_indicator_verifier_classifier_product_browser_Android_tests": 0
+  },
+  "main_baseline": "9c5b168c09ba80010c74f03b9c537e8b7474256a",
+  "classifier": "NOT_VALIDATED",
+  "Android": "NOT_TESTED_NEW_BUILD",
+  "historical_signal_eligible": false,
+  "next_mode": "Work",
+  "next_task": "Prioritize followup holding, return and reclaim at each level; retain volume as context without mandatory expansion veto."
+}

@@ -1,0 +1,175 @@
+{
+  "schema": "conditional-quantity-review-self-review/0.1",
+  "base": "5783899309e6fd9bba5d05eb7c697c3f12e0b11b",
+  "synthetic": true,
+  "original_sources_unchanged": [
+    "股票系統M1_v0_18/capital_research/quantity_replay.py",
+    "股票系統M1_v0_18/capital_research/quantity_candidates.py",
+    "股票系統M1_v0_18/capital_research/core.py",
+    "股票系統M1_v0_18/capital_research/execution.py",
+    "股票系統M1_v0_18/capital_research/continuity.py",
+    "股票系統M1_v0_18/capital_research/fact_lineage.py",
+    "股票系統M1_v0_18/capital_research/eligibility.py",
+    "股票系統M1_v0_18/capital_research/reassessment_history.py",
+    "股票系統M1_v0_18/capital_research/close_clock.py",
+    "股票系統M1_v0_18/capital_research/transition_risk.py",
+    "股票系統M1_v0_18/capital_research/allocation.py",
+    "AGENTS.md",
+    "CONTINUE_IN_WORK_MODE.md",
+    "股票系統M1_v0_18/capital_research/README.md",
+    "股票系統M1_v0_18/rotation_research/action_ledger.py"
+  ],
+  "old_docs_body_byte_preserved": true,
+  "frozen_input_expected_fingerprints_unchanged": true,
+  "final_source_fingerprints_match": true,
+  "final_synthetic_cases": 17,
+  "actual_unique_test_methods": 16,
+  "actual_method_executions": 16,
+  "historical_tests_added": 0,
+  "old_suite_and_real_producer_runs": 0,
+  "money_and_reservation_boundaries": [
+    {
+      "case": "future-A-wins",
+      "at": "2026-01-08T16:00:00+08:00",
+      "reserved": "0",
+      "strict_cash_after_general_reserve": "496.500"
+    },
+    {
+      "case": "future-A-wins",
+      "at": "2026-01-09T16:00:00+08:00",
+      "reserved": "0",
+      "strict_cash_after_general_reserve": "95.100"
+    },
+    {
+      "case": "future-B-wins",
+      "at": "2026-01-08T16:00:00+08:00",
+      "reserved": "0",
+      "strict_cash_after_general_reserve": "496.500"
+    },
+    {
+      "case": "future-B-wins",
+      "at": "2026-01-09T16:00:00+08:00",
+      "reserved": "0",
+      "strict_cash_after_general_reserve": "95.100"
+    },
+    {
+      "case": "future-both-fall",
+      "at": "2026-01-08T16:00:00+08:00",
+      "reserved": "0",
+      "strict_cash_after_general_reserve": "496.500"
+    },
+    {
+      "case": "future-both-fall",
+      "at": "2026-01-09T16:00:00+08:00",
+      "reserved": "0",
+      "strict_cash_after_general_reserve": "95.100"
+    },
+    {
+      "case": "limit-up-after-review",
+      "at": "2026-01-08T16:00:00+08:00",
+      "reserved": "0",
+      "strict_cash_after_general_reserve": "496.500"
+    },
+    {
+      "case": "limit-up-after-review",
+      "at": "2026-01-09T16:00:00+08:00",
+      "reserved": "402.0006",
+      "strict_cash_after_general_reserve": "496.500"
+    },
+    {
+      "case": "partial-original-order",
+      "at": "2026-01-08T16:00:00+08:00",
+      "reserved": "0",
+      "strict_cash_after_general_reserve": "496.500"
+    },
+    {
+      "case": "partial-original-order",
+      "at": "2026-01-09T16:00:00+08:00",
+      "reserved": "261.65039",
+      "strict_cash_after_general_reserve": "355.360"
+    },
+    {
+      "case": "partial-then-known-cancel",
+      "at": "2026-01-08T16:00:00+08:00",
+      "reserved": "0",
+      "strict_cash_after_general_reserve": "496.500"
+    },
+    {
+      "case": "partial-then-known-cancel",
+      "at": "2026-01-12T16:00:00+08:00",
+      "reserved": "0",
+      "strict_cash_after_general_reserve": "435.360"
+    },
+    {
+      "case": "rejected-conflict-retained",
+      "at": "2026-01-08T16:00:00+08:00",
+      "reserved": "0",
+      "strict_cash_after_general_reserve": "496.500"
+    },
+    {
+      "case": "rejected-conflict-retained",
+      "at": "2026-01-09T16:00:00+08:00",
+      "reserved": "0",
+      "strict_cash_after_general_reserve": "496.500"
+    },
+    {
+      "case": "rejected-restriction-retained",
+      "at": "2026-01-08T16:00:00+08:00",
+      "reserved": "0",
+      "strict_cash_after_general_reserve": "496.500"
+    },
+    {
+      "case": "rejected-restriction-retained",
+      "at": "2026-01-09T16:00:00+08:00",
+      "reserved": "0",
+      "strict_cash_after_general_reserve": "496.500"
+    },
+    {
+      "case": "sale-unsettled",
+      "at": "2026-01-06T16:00:00+08:00",
+      "reserved": "0",
+      "strict_cash_after_general_reserve": "0"
+    },
+    {
+      "case": "sale-unsettled",
+      "at": "2026-01-09T16:00:00+08:00",
+      "reserved": "0",
+      "strict_cash_after_general_reserve": "496.500"
+    },
+    {
+      "case": "unknown-current-qualification",
+      "at": "2026-01-08T16:00:00+08:00",
+      "reserved": "0",
+      "strict_cash_after_general_reserve": "496.500"
+    },
+    {
+      "case": "unknown-current-qualification",
+      "at": "2026-01-09T16:00:00+08:00",
+      "reserved": "0",
+      "strict_cash_after_general_reserve": "496.500"
+    },
+    {
+      "case": "valid-old-fact",
+      "at": "2026-01-08T16:00:00+08:00",
+      "reserved": "0",
+      "strict_cash_after_general_reserve": "496.500"
+    },
+    {
+      "case": "valid-old-fact",
+      "at": "2026-01-09T16:00:00+08:00",
+      "reserved": "0",
+      "strict_cash_after_general_reserve": "95.100"
+    }
+  ],
+  "sensitive_pattern_findings": [],
+  "source_certification": false,
+  "strategy_validated": false,
+  "formal_qualification": false,
+  "limits": [
+    "Only one review for one waiting conditional B order from same last replay frame",
+    "B/E type filter; actual quantity0.2 positive fixtures use E; C continuation not implemented",
+    "No uninterrupted external orders, credit or opening payables",
+    "Boundary reconciliations plus native engine, not a complete branch or intraday proof",
+    "Astra and first-workspace rescue originals not acquired/read"
+  ]
+}

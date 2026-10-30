@@ -1,0 +1,5 @@
+retry normal True None {'review': 1, 'retry': 1, 'quantity_replay': 1, 'simulate': 3, 'ledger_replay': 66, 'generate': 1, 'save': 0}
+retry round-up True None {'review': 1, 'retry': 1, 'quantity_replay': 1, 'simulate': 3, 'ledger_replay': 66, 'generate': 1, 'save': 0}
+retry round-down True None {'review': 1, 'retry': 1, 'quantity_replay': 1, 'simulate': 3, 'ledger_replay': 66, 'generate': 1, 'save': 0}
+retry inexact-trap False {'type': 'Inexact', 'detail': "[<class 'decimal.Inexact'>]"} {'review': 1, 'retry': 1, 'quantity_replay': 1, 'simulate': 3, 'ledger_replay': 66, 'generate': 1, 'save': 0}
+retry narrow-exponents False {'type': 'Overflow', 'detail': "[<class 'decimal.Overflow'>]"} {'review': 1, 'retry': 1, 'quantity_replay': 1, 'simulate': 2, 'ledger_replay': 33, 'generate': 1, 'save': 0}

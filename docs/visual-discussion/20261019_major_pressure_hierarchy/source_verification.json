@@ -1,0 +1,103 @@
+{
+  "status": "PASS_SOURCE_BINDING_AND_CONTEXT_ONLY",
+  "parent_sha256": "05f9b63920d691d41006ed80bc45a11e9b6fad3f0e50acad7b046e8ba4352cad",
+  "fragment_sha256": "56f161903aa9349c414a02f44891f56502c710fd9b0dc188e7a8e3d291687c54",
+  "all1213_bars_equal_parent": true,
+  "source_frame_basis_analysis_equal": true,
+  "local_display_39_equal_parent": true,
+  "local_representative_confirmed": {
+    "date": "2025-05-13",
+    "high": "31.40",
+    "scope": "reviewed local39-row box only",
+    "importance": "secondary context;not main hurdle",
+    "evidence_type": "USER_REPORTED"
+  },
+  "major_pressure_band": {
+    "start_month": "2023-06",
+    "end_month": "2025-04",
+    "time_precision": "MONTH",
+    "exact_start": null,
+    "exact_end": null,
+    "formal_price_bounds": null,
+    "whole_region_volume_rule": null,
+    "representative": null,
+    "priority": "USER_IDENTIFIED_MORE_IMPORTANT_THAN_LOCAL_BOX",
+    "time_overlap_is_formal_nesting": false
+  },
+  "major_display": {
+    "status": "MONTH_CONTEXT_ENVELOPE_ONLY_NOT_FORMAL_BOUNDARY",
+    "display_start": "2023-06-01",
+    "display_end": "2025-04-30",
+    "full_month_context_records": 463,
+    "inner_start": "2023-07-03",
+    "inner_end": "2025-03-31",
+    "wick_low": "28.45",
+    "wick_high": "39.25",
+    "volume_max_shares": 118749437,
+    "opacity": 0.18,
+    "edges": "fade throughoutJune2023 andApril2025;user exact endpoints unknown",
+    "display_month_window_is_approved_box_membership": false
+  },
+  "full_month_context_is_user_exact_boundaries": false,
+  "source_records": [
+    {
+      "close": "38.85",
+      "date": "2023-06-05",
+      "high": "39.25",
+      "low": "38.65",
+      "open": "38.75",
+      "volume_shares_scaled": "23588849"
+    },
+    {
+      "close": "34.50",
+      "date": "2023-11-28",
+      "high": "35.50",
+      "low": "34.50",
+      "open": "35.00",
+      "volume_shares_scaled": "65709089"
+    },
+    {
+      "close": "34.50",
+      "date": "2025-03-12",
+      "high": "35.45",
+      "low": "34.50",
+      "open": "35.00",
+      "volume_shares_scaled": "22178529"
+    },
+    {
+      "close": "29.80",
+      "date": "2025-04-07",
+      "high": "30.80",
+      "low": "29.20",
+      "open": "29.20",
+      "volume_shares_scaled": "118749437"
+    },
+    {
+      "close": "31.10",
+      "date": "2025-05-13",
+      "high": "31.40",
+      "low": "30.90",
+      "open": "31.30",
+      "volume_shares_scaled": "10264322"
+    },
+    {
+      "close": "26.05",
+      "date": "2026-01-27",
+      "high": "26.95",
+      "low": "25.95",
+      "open": "26.50",
+      "volume_shares_scaled": "40314054"
+    },
+    {
+      "close": "27.30",
+      "date": "2026-10-16",
+      "high": "27.70",
+      "low": "26.95",
+      "open": "27.10",
+      "volume_shares_scaled": "57437884"
+    }
+  ],
+  "original_g1_reassigned_as_major_band_unique_rep": false,
+  "original_phone_json_reread": false,
+  "new_product_version": false
+}

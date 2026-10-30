@@ -1,0 +1,103 @@
+{
+  "schema": "m1-present-form-reaction-finite-requirements/1",
+  "status": "DERIVED_REQUIREMENTS_NOT_DETECTOR_IMPLEMENTATION",
+  "source_commit": "fa3216ff3420b4dc794477bfe8b6a2cea0d490c8",
+  "origin": "Assistant formalization of existing decisions; no new user strategy adjudication.",
+  "dimensions": [
+    "current_form",
+    "prior_price_context",
+    "reference_specific_reactions",
+    "evidence_and_confirmation",
+    "action_qualification"
+  ],
+  "temporal_fields": {
+    "data_cutoff": "Last saved observation used.",
+    "source_occurred_at": "Original source event time.",
+    "source_confirmed_at": "Original source confirmation time, nullable.",
+    "engine_first_emitted_at": "Actual engine output time, nullable; not human review time.",
+    "human_reviewed_at": "Actual later review time.",
+    "earliest_recognition_date": "Null unless separately demonstrated."
+  },
+  "cases": [
+    {
+      "id": "2884-cutoff-Oct7",
+      "cutoff": "2026-10-07",
+      "label": {
+        "current_form": "RECOGNIZABLE_CONSOLIDATION",
+        "source": "USER_CONFIRMED_RETROSPECTIVE",
+        "reviewed_at": "2026-10-20T21:46:37+08:00"
+      },
+      "expected": {
+        "future_Oct15_rise_required_for_case_label": false,
+        "earliest_recognition_date": null,
+        "saved_core_result_id": null,
+        "saved_numeric_frame_id": null,
+        "engine_first_emitted_at": null,
+        "historical_selection_time": null,
+        "historical_signal_eligible": false,
+        "formal_bounds": null,
+        "action_qualification": "NOT_EVALUATED"
+      },
+      "future_reaction": "UNKNOWN_AT_CUTOFF",
+      "not_a_general_rule": "Negative MACD / below Sep17 high can coexist in this case; neither is a sufficient detector."
+    },
+    {
+      "id": "2884-close-reference-Oct14",
+      "cutoff": "2026-10-14",
+      "expected": {
+        "independent_human_timing_label": null,
+        "R1_close_relation": "BELOW",
+        "R2_value": null,
+        "R2_relation": null
+      },
+      "reason": "R2 is Oct15 high, not available at this cutoff."
+    },
+    {
+      "id": "2884-close-reference-Oct15",
+      "cutoff": "2026-10-15",
+      "expected": {
+        "R1_close_relation": "ABOVE",
+        "R2_close_relation": "BELOW",
+        "R2_daily_high_relation": "EQUAL"
+      },
+      "qualification": "Relations to explicit research references, not automatically formal interval breakout/clearance."
+    },
+    {
+      "id": "2884-close-reference-Oct16",
+      "cutoff": "2026-10-16",
+      "expected": {
+        "R1_close_relation": "ABOVE",
+        "R2_close_relation": "BELOW",
+        "R2_daily_high_relation": "ABOVE",
+        "R2_completed_close_failed_breakout_evidenced_in_two_available_records": false
+      },
+      "qualification": "No completed close above R2 in those records; daily OHLC does not establish intraday order."
+    },
+    {
+      "id": "1101-ABC",
+      "label": {
+        "own_interval": true,
+        "relative_to_old_band": "GAP_DOWN_WEAKER",
+        "source": "USER_CONFIRMED"
+      },
+      "expected": {
+        "consolidation_subtype": null,
+        "absolute_downtrend_all_horizons": null,
+        "earliest_recognition_date": null,
+        "formal_bounds": null
+      },
+      "qualification": "Local Apr10 positive close move does not erase reviewed relative weakness."
+    }
+  ],
+  "invariants": [
+    "A later observed move is appended with its own as-of time; it must not be required to backfill an earlier reviewed form.",
+    "Human labels, original saved engine output, and future new detector output have distinct provenance.",
+    "An absent original detector label is not a negative human label and is not evidence of an implemented detector bug.",
+    "Keep independent scales and duplicate-source identities; no majority vote from aliases or repeated parameter versions.",
+    "No action eligibility, main-pressure selection, exact bounds, membership, lifecycle or probability is inferred from a recognizable form."
+  ],
+  "automatic_recognition_conditions": "NOT_ESTABLISHED",
+  "classifier_tests": "NOT_RUN_NO_CLASSIFIER_IMPLEMENTED",
+  "product_integration": "NOT_IMPLEMENTED",
+  "primary_pressure_id": null
+}

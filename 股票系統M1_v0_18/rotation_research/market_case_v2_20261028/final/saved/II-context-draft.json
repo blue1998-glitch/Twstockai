@@ -1,0 +1,1199 @@
+{
+  "id": "II-context-draft",
+  "schema": "rotation-record/0.1",
+  "value": {
+    "request": {
+      "as_of_dates": [
+        "2026-04-09",
+        "2026-04-10",
+        "2026-04-15",
+        "2026-04-17",
+        "2026-04-22"
+      ],
+      "case_id": "1101-II-pullback-with-2884-Apr15",
+      "data_kind": "SAVED_REAL_RAW_WITH_WORK_CASE_CONTEXT_NOT_SYNTHETIC",
+      "entry_materials": [
+        {
+          "capacity": null,
+          "case_context_on": "2026-04-10",
+          "channel": "REGULAR_OPEN",
+          "code": "1101",
+          "evidence_kind": "SAVED_RAW_BAR_MODEL_MATERIAL_NOT_FILL",
+          "fee_model": null,
+          "historical_available_at": null,
+          "id": "II-regular-open",
+          "opportunity_id": "II",
+          "price": "25.35",
+          "price_role": "SAVED_DAILY_OPEN_MODEL_MATERIAL",
+          "raw_bar": {
+            "date": "2026-04-10",
+            "field": "open"
+          },
+          "settlement_date": null,
+          "trade_at": null
+        },
+        {
+          "capacity": null,
+          "case_context_on": "2026-04-10",
+          "channel": "ODD_LOT_FIRST_PRINT",
+          "code": "1101",
+          "evidence_kind": "WORK_SUMMARY_ONLY_NO_RETAINED_FIRST_PRINT_OR_CAPACITY",
+          "fee_model": null,
+          "historical_available_at": null,
+          "id": "II-odd-first",
+          "opportunity_id": "II",
+          "price": "25.60",
+          "price_role": "WORK_REPORTED_FIRST_PRINT_MODEL_MATERIAL",
+          "raw_bar": null,
+          "settlement_date": null,
+          "trade_at": null
+        }
+      ],
+      "excluded_contexts": [
+        {
+          "adopted_for_main_track": false,
+          "ordinary_open": "25.50",
+          "ordinary_open_on": "2026-04-09",
+          "track_id": "I"
+        }
+      ],
+      "facts": [
+        {
+          "case_context_on": "2026-04-09",
+          "code": "1101",
+          "evidence_kind": "USER_CONFIRMED_CASE_FROM_WORK_SUMMARY",
+          "historical_available_at": null,
+          "id": "II",
+          "reference_ids": [
+            "A-important"
+          ],
+          "role": "PULLBACK_CATCH_OPPORTUNITY",
+          "statement": "②為2026/4/9的小突破後淺回檔承接機會，使用者已確認。"
+        },
+        {
+          "case_context_on": "2026-04-10",
+          "code": "1101",
+          "evidence_kind": "USER_CONFIRMED_CASE_FROM_WORK_SUMMARY",
+          "historical_available_at": null,
+          "id": "III",
+          "reference_ids": [
+            "A-important"
+          ],
+          "role": "GRAPH_OPPORTUNITY",
+          "statement": "③4/10圖形機會已確認，不代表既有持股自動加碼；24.80是本例重要回檔守位，不是自動全退線。"
+        },
+        {
+          "case_context_on": "2026-04-15",
+          "code": "1101",
+          "evidence_kind": "USER_CONFIRMED_CASE_FROM_WORK_SUMMARY",
+          "historical_available_at": null,
+          "id": "IV",
+          "reference_ids": [
+            "A-important"
+          ],
+          "role": "DEEPER_LOSS",
+          "statement": "④4/15是較深失守；4/17尚未完成後續新低；⑤4/22才新增回升未收復、再低於④低點的反證。"
+        },
+        {
+          "case_context_on": "2026-04-17",
+          "code": "1101",
+          "evidence_kind": "USER_CONFIRMED_CASE_FROM_WORK_SUMMARY",
+          "historical_available_at": null,
+          "id": "Apr17",
+          "reference_ids": [
+            "IV"
+          ],
+          "role": "FOLLOWUP_NEW_LOW_NOT_COMPLETED",
+          "statement": "截至4/17尚未完成後續新低。"
+        },
+        {
+          "case_context_on": "2026-04-22",
+          "code": "1101",
+          "evidence_kind": "USER_CONFIRMED_CASE_FROM_WORK_SUMMARY",
+          "historical_available_at": null,
+          "id": "V",
+          "reference_ids": [
+            "IV"
+          ],
+          "role": "RECOVERY_NOT_RECLAIMED_AND_LOWER_THAN_IV",
+          "statement": "4/22新增回升未收復、再低於④低點反證。"
+        },
+        {
+          "case_context_on": "2026-04-15",
+          "code": "2884",
+          "evidence_kind": "USER_CONFIRMED_CASE_FROM_WORK_SUMMARY",
+          "historical_available_at": null,
+          "id": "B-Apr15",
+          "reference_ids": [
+            "B-local",
+            "B-original"
+          ],
+          "role": "LOCAL_GRAPH_ENTRY_OPPORTUNITY",
+          "statement": "2884截至4/15可以進場，32.85可作本例局部進場參照，原35.50仍保留。圖形確認不等正式新委託許可、來源合格或成本後優勢。"
+        }
+      ],
+      "references": [
+        {
+          "case_context_on": "2026-04-09",
+          "code": "1101",
+          "evidence_kind": "USER_CONFIRMED_CASE_FROM_WORK_SUMMARY",
+          "historical_role_known_at": null,
+          "id": "A-important",
+          "raw_bar": {
+            "date": "2026-04-09",
+            "field": "low"
+          },
+          "role": "IMPORTANT_PULLBACK_LEVEL",
+          "value": "24.80"
+        },
+        {
+          "case_context_on": "2026-02-26",
+          "code": "2884",
+          "evidence_kind": "USER_CONFIRMED_CASE_FROM_WORK_SUMMARY",
+          "historical_role_known_at": null,
+          "id": "B-original",
+          "raw_bar": {
+            "date": "2026-02-26",
+            "field": "high"
+          },
+          "role": "ORIGINAL_UPPER_REFERENCE",
+          "value": "35.50"
+        },
+        {
+          "case_context_on": "2026-04-15",
+          "code": "2884",
+          "evidence_kind": "USER_CONFIRMED_CASE_FROM_WORK_SUMMARY",
+          "historical_role_known_at": null,
+          "id": "B-local",
+          "raw_bar": null,
+          "role": "LOCAL_ENTRY_REFERENCE",
+          "value": "32.85"
+        }
+      ],
+      "research_controls": {
+        "K": "UNAPPROVED",
+        "R4_X5": "UNAPPROVED",
+        "X4": "UNAPPROVED",
+        "X5": "UNAPPROVED"
+      },
+      "research_parameters": {
+        "N": null,
+        "common_period": null,
+        "execution_model": null,
+        "opening_cash": null,
+        "probability_model": null,
+        "ranking_model": null,
+        "reduction_ratio": null,
+        "reserved_cash": null,
+        "risk_thresholds": null,
+        "shares": null
+      },
+      "schema": "rotation-market-case-context-input/0.2",
+      "selected_entry_material_id": null,
+      "source_binding": {
+        "calendar": "sha256:8b431ca5ec65e460c70b0a5fc4cbc2a7f63381052fa7e5ed85f449728d8fb113",
+        "catalog": "sha256:a137969400c6149c17434e8991467afee71ebfc68597279f1ed6049c1b332fa3",
+        "quote_manifest": "sha256:503b5905a7c133f24d763e03c36e9a61eaea6c9e1e6ad5eb47f235b5bd14b3bf",
+        "quotes": "sha256:a75ab687106a64988b2f5e4c4433a86b569ec974fac6ae3806cb890f5bc4ca7c"
+      },
+      "track": {
+        "id": "II",
+        "opportunity_id": "II"
+      },
+      "work_summary_id": "sha256:4e49326843ea30955e4ede2348e0e2a5f273c95ab6b78cb07f7db6117a598c4b"
+    },
+    "result": {
+      "account_reconstruction": "NOT_PERFORMED",
+      "actual_realized_investor_return": null,
+      "case_id": "1101-II-pullback-with-2884-Apr15",
+      "data_qualified": false,
+      "execution_model_qualified": false,
+      "fills": null,
+      "historical_signal_eligible": false,
+      "input_id": "sha256:fe828c2a87bc1f483b587123d01ad2014cc3993a4562676e82a7db7a27873a25",
+      "live_execution_authorized": false,
+      "main_opportunity_on": "2026-04-09",
+      "missing_research_parameters": [
+        "N",
+        "common_period",
+        "execution_model",
+        "opening_cash",
+        "probability_model",
+        "ranking_model",
+        "reduction_ratio",
+        "reserved_cash",
+        "risk_thresholds",
+        "shares"
+      ],
+      "numeric_replay": "NOT_PERFORMED",
+      "order_generation": "NOT_PERFORMED",
+      "policy_authorized": false,
+      "prefixes": [
+        {
+          "as_of_case_date": "2026-04-09",
+          "automatic_add": false,
+          "automatic_exit": false,
+          "automatic_order": false,
+          "facts": [
+            {
+              "case_context_on": "2026-04-09",
+              "code": "1101",
+              "evidence_kind": "USER_CONFIRMED_CASE_FROM_WORK_SUMMARY",
+              "historical_available_at": null,
+              "id": "II",
+              "reference_ids": [
+                "A-important"
+              ],
+              "role": "PULLBACK_CATCH_OPPORTUNITY"
+            }
+          ],
+          "historical_availability": "UNKNOWN_CASE_CONTEXT_IS_NOT_PUBLICATION_TIME",
+          "prefix_id": "sha256:ff693bba66a695c0e466419a60d9ed1e492e3539bbbd569ed0287c63d2ed74d8",
+          "references": [
+            {
+              "automatic_exit": false,
+              "case_context_on": "2026-04-09",
+              "code": "1101",
+              "evidence_kind": "USER_CONFIRMED_CASE_FROM_WORK_SUMMARY",
+              "formal_primary_pressure": false,
+              "historical_role_known_at": null,
+              "id": "A-important",
+              "raw_bar": {
+                "date": "2026-04-09",
+                "field": "low"
+              },
+              "role": "IMPORTANT_PULLBACK_LEVEL",
+              "source_binding": {
+                "basis_id": "RAW:fd5674f6d424dadbfe0644453e4f54c9ed8943fe3149b6f681f24932176db801",
+                "raw_bar": {
+                  "date": "2026-04-09",
+                  "field": "low"
+                },
+                "source_id": "archived-months:fd5674f6d424dadbfe0644453e4f54c9ed8943fe3149b6f681f24932176db801"
+              },
+              "source_qualification": "RAW_VALUE_MATCH_ONLY_ROLE_FROM_WORK",
+              "value": "24.80"
+            },
+            {
+              "automatic_exit": false,
+              "case_context_on": "2026-02-26",
+              "code": "2884",
+              "evidence_kind": "USER_CONFIRMED_CASE_FROM_WORK_SUMMARY",
+              "formal_primary_pressure": false,
+              "historical_role_known_at": null,
+              "id": "B-original",
+              "raw_bar": {
+                "date": "2026-02-26",
+                "field": "high"
+              },
+              "role": "ORIGINAL_UPPER_REFERENCE",
+              "source_binding": {
+                "basis_id": "RAW:c27514e56b61b669362aaf8fdd7223acb7caaabcdaf0fa6ccf4a17909ba9ac60",
+                "raw_bar": {
+                  "date": "2026-02-26",
+                  "field": "high"
+                },
+                "source_id": "archived-months:c27514e56b61b669362aaf8fdd7223acb7caaabcdaf0fa6ccf4a17909ba9ac60"
+              },
+              "source_qualification": "RAW_VALUE_MATCH_ONLY_ROLE_FROM_WORK",
+              "value": "35.50"
+            }
+          ],
+          "selected_entry_material": null,
+          "track_id": "II",
+          "usable_historical_signal_ids": [],
+          "visible_entry_materials": []
+        },
+        {
+          "as_of_case_date": "2026-04-10",
+          "automatic_add": false,
+          "automatic_exit": false,
+          "automatic_order": false,
+          "facts": [
+            {
+              "case_context_on": "2026-04-09",
+              "code": "1101",
+              "evidence_kind": "USER_CONFIRMED_CASE_FROM_WORK_SUMMARY",
+              "historical_available_at": null,
+              "id": "II",
+              "reference_ids": [
+                "A-important"
+              ],
+              "role": "PULLBACK_CATCH_OPPORTUNITY"
+            },
+            {
+              "case_context_on": "2026-04-10",
+              "code": "1101",
+              "evidence_kind": "USER_CONFIRMED_CASE_FROM_WORK_SUMMARY",
+              "historical_available_at": null,
+              "id": "III",
+              "reference_ids": [
+                "A-important"
+              ],
+              "role": "GRAPH_OPPORTUNITY"
+            }
+          ],
+          "historical_availability": "UNKNOWN_CASE_CONTEXT_IS_NOT_PUBLICATION_TIME",
+          "prefix_id": "sha256:7e549eb934686eedc76dbd02ec4ead85562df40be70936d8361e88dafe97acf4",
+          "references": [
+            {
+              "automatic_exit": false,
+              "case_context_on": "2026-04-09",
+              "code": "1101",
+              "evidence_kind": "USER_CONFIRMED_CASE_FROM_WORK_SUMMARY",
+              "formal_primary_pressure": false,
+              "historical_role_known_at": null,
+              "id": "A-important",
+              "raw_bar": {
+                "date": "2026-04-09",
+                "field": "low"
+              },
+              "role": "IMPORTANT_PULLBACK_LEVEL",
+              "source_binding": {
+                "basis_id": "RAW:fd5674f6d424dadbfe0644453e4f54c9ed8943fe3149b6f681f24932176db801",
+                "raw_bar": {
+                  "date": "2026-04-09",
+                  "field": "low"
+                },
+                "source_id": "archived-months:fd5674f6d424dadbfe0644453e4f54c9ed8943fe3149b6f681f24932176db801"
+              },
+              "source_qualification": "RAW_VALUE_MATCH_ONLY_ROLE_FROM_WORK",
+              "value": "24.80"
+            },
+            {
+              "automatic_exit": false,
+              "case_context_on": "2026-02-26",
+              "code": "2884",
+              "evidence_kind": "USER_CONFIRMED_CASE_FROM_WORK_SUMMARY",
+              "formal_primary_pressure": false,
+              "historical_role_known_at": null,
+              "id": "B-original",
+              "raw_bar": {
+                "date": "2026-02-26",
+                "field": "high"
+              },
+              "role": "ORIGINAL_UPPER_REFERENCE",
+              "source_binding": {
+                "basis_id": "RAW:c27514e56b61b669362aaf8fdd7223acb7caaabcdaf0fa6ccf4a17909ba9ac60",
+                "raw_bar": {
+                  "date": "2026-02-26",
+                  "field": "high"
+                },
+                "source_id": "archived-months:c27514e56b61b669362aaf8fdd7223acb7caaabcdaf0fa6ccf4a17909ba9ac60"
+              },
+              "source_qualification": "RAW_VALUE_MATCH_ONLY_ROLE_FROM_WORK",
+              "value": "35.50"
+            }
+          ],
+          "selected_entry_material": null,
+          "track_id": "II",
+          "usable_historical_signal_ids": [],
+          "visible_entry_materials": [
+            {
+              "actual_fill": false,
+              "capacity": null,
+              "case_context_on": "2026-04-10",
+              "channel": "REGULAR_OPEN",
+              "code": "1101",
+              "evidence_kind": "SAVED_RAW_BAR_MODEL_MATERIAL_NOT_FILL",
+              "fee_model": null,
+              "historical_available_at": null,
+              "id": "II-regular-open",
+              "model_authorized": false,
+              "opportunity_id": "II",
+              "price": "25.35",
+              "price_role": "SAVED_DAILY_OPEN_MODEL_MATERIAL",
+              "raw_bar": {
+                "date": "2026-04-10",
+                "field": "open"
+              },
+              "settlement_date": null,
+              "source_binding": {
+                "basis_id": "RAW:fd5674f6d424dadbfe0644453e4f54c9ed8943fe3149b6f681f24932176db801",
+                "raw_bar": {
+                  "date": "2026-04-10",
+                  "field": "open"
+                },
+                "source_id": "archived-months:fd5674f6d424dadbfe0644453e4f54c9ed8943fe3149b6f681f24932176db801"
+              },
+              "source_qualification": "DAILY_OPEN_VALUE_ONLY_NOT_EXECUTABLE_TAPE",
+              "trade_at": null
+            },
+            {
+              "actual_fill": false,
+              "capacity": null,
+              "case_context_on": "2026-04-10",
+              "channel": "ODD_LOT_FIRST_PRINT",
+              "code": "1101",
+              "evidence_kind": "WORK_SUMMARY_ONLY_NO_RETAINED_FIRST_PRINT_OR_CAPACITY",
+              "fee_model": null,
+              "historical_available_at": null,
+              "id": "II-odd-first",
+              "model_authorized": false,
+              "opportunity_id": "II",
+              "price": "25.60",
+              "price_role": "WORK_REPORTED_FIRST_PRINT_MODEL_MATERIAL",
+              "raw_bar": null,
+              "settlement_date": null,
+              "source_binding": null,
+              "source_qualification": "WORK_SUMMARY_PRICE_ONLY_FIRST_PRINT_SOURCE_AND_CAPACITY_UNKNOWN",
+              "trade_at": null
+            }
+          ]
+        },
+        {
+          "as_of_case_date": "2026-04-15",
+          "automatic_add": false,
+          "automatic_exit": false,
+          "automatic_order": false,
+          "facts": [
+            {
+              "case_context_on": "2026-04-09",
+              "code": "1101",
+              "evidence_kind": "USER_CONFIRMED_CASE_FROM_WORK_SUMMARY",
+              "historical_available_at": null,
+              "id": "II",
+              "reference_ids": [
+                "A-important"
+              ],
+              "role": "PULLBACK_CATCH_OPPORTUNITY"
+            },
+            {
+              "case_context_on": "2026-04-10",
+              "code": "1101",
+              "evidence_kind": "USER_CONFIRMED_CASE_FROM_WORK_SUMMARY",
+              "historical_available_at": null,
+              "id": "III",
+              "reference_ids": [
+                "A-important"
+              ],
+              "role": "GRAPH_OPPORTUNITY"
+            },
+            {
+              "case_context_on": "2026-04-15",
+              "code": "1101",
+              "evidence_kind": "USER_CONFIRMED_CASE_FROM_WORK_SUMMARY",
+              "historical_available_at": null,
+              "id": "IV",
+              "reference_ids": [
+                "A-important"
+              ],
+              "role": "DEEPER_LOSS"
+            },
+            {
+              "case_context_on": "2026-04-15",
+              "code": "2884",
+              "evidence_kind": "USER_CONFIRMED_CASE_FROM_WORK_SUMMARY",
+              "historical_available_at": null,
+              "id": "B-Apr15",
+              "reference_ids": [
+                "B-local",
+                "B-original"
+              ],
+              "role": "LOCAL_GRAPH_ENTRY_OPPORTUNITY"
+            }
+          ],
+          "historical_availability": "UNKNOWN_CASE_CONTEXT_IS_NOT_PUBLICATION_TIME",
+          "prefix_id": "sha256:aa57cc01a0791b114755f6df194be86542a78b0b75a94ea9c1c3a6d49f94ff42",
+          "references": [
+            {
+              "automatic_exit": false,
+              "case_context_on": "2026-04-09",
+              "code": "1101",
+              "evidence_kind": "USER_CONFIRMED_CASE_FROM_WORK_SUMMARY",
+              "formal_primary_pressure": false,
+              "historical_role_known_at": null,
+              "id": "A-important",
+              "raw_bar": {
+                "date": "2026-04-09",
+                "field": "low"
+              },
+              "role": "IMPORTANT_PULLBACK_LEVEL",
+              "source_binding": {
+                "basis_id": "RAW:fd5674f6d424dadbfe0644453e4f54c9ed8943fe3149b6f681f24932176db801",
+                "raw_bar": {
+                  "date": "2026-04-09",
+                  "field": "low"
+                },
+                "source_id": "archived-months:fd5674f6d424dadbfe0644453e4f54c9ed8943fe3149b6f681f24932176db801"
+              },
+              "source_qualification": "RAW_VALUE_MATCH_ONLY_ROLE_FROM_WORK",
+              "value": "24.80"
+            },
+            {
+              "automatic_exit": false,
+              "case_context_on": "2026-02-26",
+              "code": "2884",
+              "evidence_kind": "USER_CONFIRMED_CASE_FROM_WORK_SUMMARY",
+              "formal_primary_pressure": false,
+              "historical_role_known_at": null,
+              "id": "B-original",
+              "raw_bar": {
+                "date": "2026-02-26",
+                "field": "high"
+              },
+              "role": "ORIGINAL_UPPER_REFERENCE",
+              "source_binding": {
+                "basis_id": "RAW:c27514e56b61b669362aaf8fdd7223acb7caaabcdaf0fa6ccf4a17909ba9ac60",
+                "raw_bar": {
+                  "date": "2026-02-26",
+                  "field": "high"
+                },
+                "source_id": "archived-months:c27514e56b61b669362aaf8fdd7223acb7caaabcdaf0fa6ccf4a17909ba9ac60"
+              },
+              "source_qualification": "RAW_VALUE_MATCH_ONLY_ROLE_FROM_WORK",
+              "value": "35.50"
+            },
+            {
+              "automatic_exit": false,
+              "case_context_on": "2026-04-15",
+              "code": "2884",
+              "evidence_kind": "USER_CONFIRMED_CASE_FROM_WORK_SUMMARY",
+              "formal_primary_pressure": false,
+              "historical_role_known_at": null,
+              "id": "B-local",
+              "raw_bar": null,
+              "role": "LOCAL_ENTRY_REFERENCE",
+              "source_binding": null,
+              "source_qualification": "WORK_REPORTED_ROLE_OR_VALUE_NO_ORIGIN_BAR_INFERRED",
+              "value": "32.85"
+            }
+          ],
+          "selected_entry_material": null,
+          "track_id": "II",
+          "usable_historical_signal_ids": [],
+          "visible_entry_materials": [
+            {
+              "actual_fill": false,
+              "capacity": null,
+              "case_context_on": "2026-04-10",
+              "channel": "REGULAR_OPEN",
+              "code": "1101",
+              "evidence_kind": "SAVED_RAW_BAR_MODEL_MATERIAL_NOT_FILL",
+              "fee_model": null,
+              "historical_available_at": null,
+              "id": "II-regular-open",
+              "model_authorized": false,
+              "opportunity_id": "II",
+              "price": "25.35",
+              "price_role": "SAVED_DAILY_OPEN_MODEL_MATERIAL",
+              "raw_bar": {
+                "date": "2026-04-10",
+                "field": "open"
+              },
+              "settlement_date": null,
+              "source_binding": {
+                "basis_id": "RAW:fd5674f6d424dadbfe0644453e4f54c9ed8943fe3149b6f681f24932176db801",
+                "raw_bar": {
+                  "date": "2026-04-10",
+                  "field": "open"
+                },
+                "source_id": "archived-months:fd5674f6d424dadbfe0644453e4f54c9ed8943fe3149b6f681f24932176db801"
+              },
+              "source_qualification": "DAILY_OPEN_VALUE_ONLY_NOT_EXECUTABLE_TAPE",
+              "trade_at": null
+            },
+            {
+              "actual_fill": false,
+              "capacity": null,
+              "case_context_on": "2026-04-10",
+              "channel": "ODD_LOT_FIRST_PRINT",
+              "code": "1101",
+              "evidence_kind": "WORK_SUMMARY_ONLY_NO_RETAINED_FIRST_PRINT_OR_CAPACITY",
+              "fee_model": null,
+              "historical_available_at": null,
+              "id": "II-odd-first",
+              "model_authorized": false,
+              "opportunity_id": "II",
+              "price": "25.60",
+              "price_role": "WORK_REPORTED_FIRST_PRINT_MODEL_MATERIAL",
+              "raw_bar": null,
+              "settlement_date": null,
+              "source_binding": null,
+              "source_qualification": "WORK_SUMMARY_PRICE_ONLY_FIRST_PRINT_SOURCE_AND_CAPACITY_UNKNOWN",
+              "trade_at": null
+            }
+          ]
+        },
+        {
+          "as_of_case_date": "2026-04-17",
+          "automatic_add": false,
+          "automatic_exit": false,
+          "automatic_order": false,
+          "facts": [
+            {
+              "case_context_on": "2026-04-09",
+              "code": "1101",
+              "evidence_kind": "USER_CONFIRMED_CASE_FROM_WORK_SUMMARY",
+              "historical_available_at": null,
+              "id": "II",
+              "reference_ids": [
+                "A-important"
+              ],
+              "role": "PULLBACK_CATCH_OPPORTUNITY"
+            },
+            {
+              "case_context_on": "2026-04-10",
+              "code": "1101",
+              "evidence_kind": "USER_CONFIRMED_CASE_FROM_WORK_SUMMARY",
+              "historical_available_at": null,
+              "id": "III",
+              "reference_ids": [
+                "A-important"
+              ],
+              "role": "GRAPH_OPPORTUNITY"
+            },
+            {
+              "case_context_on": "2026-04-15",
+              "code": "1101",
+              "evidence_kind": "USER_CONFIRMED_CASE_FROM_WORK_SUMMARY",
+              "historical_available_at": null,
+              "id": "IV",
+              "reference_ids": [
+                "A-important"
+              ],
+              "role": "DEEPER_LOSS"
+            },
+            {
+              "case_context_on": "2026-04-17",
+              "code": "1101",
+              "evidence_kind": "USER_CONFIRMED_CASE_FROM_WORK_SUMMARY",
+              "historical_available_at": null,
+              "id": "Apr17",
+              "reference_ids": [
+                "IV"
+              ],
+              "role": "FOLLOWUP_NEW_LOW_NOT_COMPLETED"
+            },
+            {
+              "case_context_on": "2026-04-15",
+              "code": "2884",
+              "evidence_kind": "USER_CONFIRMED_CASE_FROM_WORK_SUMMARY",
+              "historical_available_at": null,
+              "id": "B-Apr15",
+              "reference_ids": [
+                "B-local",
+                "B-original"
+              ],
+              "role": "LOCAL_GRAPH_ENTRY_OPPORTUNITY"
+            }
+          ],
+          "historical_availability": "UNKNOWN_CASE_CONTEXT_IS_NOT_PUBLICATION_TIME",
+          "prefix_id": "sha256:96f14df8ddd35745d5ca83b0f564b45761a9a005471ceb644cd2b8d9706ce192",
+          "references": [
+            {
+              "automatic_exit": false,
+              "case_context_on": "2026-04-09",
+              "code": "1101",
+              "evidence_kind": "USER_CONFIRMED_CASE_FROM_WORK_SUMMARY",
+              "formal_primary_pressure": false,
+              "historical_role_known_at": null,
+              "id": "A-important",
+              "raw_bar": {
+                "date": "2026-04-09",
+                "field": "low"
+              },
+              "role": "IMPORTANT_PULLBACK_LEVEL",
+              "source_binding": {
+                "basis_id": "RAW:fd5674f6d424dadbfe0644453e4f54c9ed8943fe3149b6f681f24932176db801",
+                "raw_bar": {
+                  "date": "2026-04-09",
+                  "field": "low"
+                },
+                "source_id": "archived-months:fd5674f6d424dadbfe0644453e4f54c9ed8943fe3149b6f681f24932176db801"
+              },
+              "source_qualification": "RAW_VALUE_MATCH_ONLY_ROLE_FROM_WORK",
+              "value": "24.80"
+            },
+            {
+              "automatic_exit": false,
+              "case_context_on": "2026-02-26",
+              "code": "2884",
+              "evidence_kind": "USER_CONFIRMED_CASE_FROM_WORK_SUMMARY",
+              "formal_primary_pressure": false,
+              "historical_role_known_at": null,
+              "id": "B-original",
+              "raw_bar": {
+                "date": "2026-02-26",
+                "field": "high"
+              },
+              "role": "ORIGINAL_UPPER_REFERENCE",
+              "source_binding": {
+                "basis_id": "RAW:c27514e56b61b669362aaf8fdd7223acb7caaabcdaf0fa6ccf4a17909ba9ac60",
+                "raw_bar": {
+                  "date": "2026-02-26",
+                  "field": "high"
+                },
+                "source_id": "archived-months:c27514e56b61b669362aaf8fdd7223acb7caaabcdaf0fa6ccf4a17909ba9ac60"
+              },
+              "source_qualification": "RAW_VALUE_MATCH_ONLY_ROLE_FROM_WORK",
+              "value": "35.50"
+            },
+            {
+              "automatic_exit": false,
+              "case_context_on": "2026-04-15",
+              "code": "2884",
+              "evidence_kind": "USER_CONFIRMED_CASE_FROM_WORK_SUMMARY",
+              "formal_primary_pressure": false,
+              "historical_role_known_at": null,
+              "id": "B-local",
+              "raw_bar": null,
+              "role": "LOCAL_ENTRY_REFERENCE",
+              "source_binding": null,
+              "source_qualification": "WORK_REPORTED_ROLE_OR_VALUE_NO_ORIGIN_BAR_INFERRED",
+              "value": "32.85"
+            }
+          ],
+          "selected_entry_material": null,
+          "track_id": "II",
+          "usable_historical_signal_ids": [],
+          "visible_entry_materials": [
+            {
+              "actual_fill": false,
+              "capacity": null,
+              "case_context_on": "2026-04-10",
+              "channel": "REGULAR_OPEN",
+              "code": "1101",
+              "evidence_kind": "SAVED_RAW_BAR_MODEL_MATERIAL_NOT_FILL",
+              "fee_model": null,
+              "historical_available_at": null,
+              "id": "II-regular-open",
+              "model_authorized": false,
+              "opportunity_id": "II",
+              "price": "25.35",
+              "price_role": "SAVED_DAILY_OPEN_MODEL_MATERIAL",
+              "raw_bar": {
+                "date": "2026-04-10",
+                "field": "open"
+              },
+              "settlement_date": null,
+              "source_binding": {
+                "basis_id": "RAW:fd5674f6d424dadbfe0644453e4f54c9ed8943fe3149b6f681f24932176db801",
+                "raw_bar": {
+                  "date": "2026-04-10",
+                  "field": "open"
+                },
+                "source_id": "archived-months:fd5674f6d424dadbfe0644453e4f54c9ed8943fe3149b6f681f24932176db801"
+              },
+              "source_qualification": "DAILY_OPEN_VALUE_ONLY_NOT_EXECUTABLE_TAPE",
+              "trade_at": null
+            },
+            {
+              "actual_fill": false,
+              "capacity": null,
+              "case_context_on": "2026-04-10",
+              "channel": "ODD_LOT_FIRST_PRINT",
+              "code": "1101",
+              "evidence_kind": "WORK_SUMMARY_ONLY_NO_RETAINED_FIRST_PRINT_OR_CAPACITY",
+              "fee_model": null,
+              "historical_available_at": null,
+              "id": "II-odd-first",
+              "model_authorized": false,
+              "opportunity_id": "II",
+              "price": "25.60",
+              "price_role": "WORK_REPORTED_FIRST_PRINT_MODEL_MATERIAL",
+              "raw_bar": null,
+              "settlement_date": null,
+              "source_binding": null,
+              "source_qualification": "WORK_SUMMARY_PRICE_ONLY_FIRST_PRINT_SOURCE_AND_CAPACITY_UNKNOWN",
+              "trade_at": null
+            }
+          ]
+        },
+        {
+          "as_of_case_date": "2026-04-22",
+          "automatic_add": false,
+          "automatic_exit": false,
+          "automatic_order": false,
+          "facts": [
+            {
+              "case_context_on": "2026-04-09",
+              "code": "1101",
+              "evidence_kind": "USER_CONFIRMED_CASE_FROM_WORK_SUMMARY",
+              "historical_available_at": null,
+              "id": "II",
+              "reference_ids": [
+                "A-important"
+              ],
+              "role": "PULLBACK_CATCH_OPPORTUNITY"
+            },
+            {
+              "case_context_on": "2026-04-10",
+              "code": "1101",
+              "evidence_kind": "USER_CONFIRMED_CASE_FROM_WORK_SUMMARY",
+              "historical_available_at": null,
+              "id": "III",
+              "reference_ids": [
+                "A-important"
+              ],
+              "role": "GRAPH_OPPORTUNITY"
+            },
+            {
+              "case_context_on": "2026-04-15",
+              "code": "1101",
+              "evidence_kind": "USER_CONFIRMED_CASE_FROM_WORK_SUMMARY",
+              "historical_available_at": null,
+              "id": "IV",
+              "reference_ids": [
+                "A-important"
+              ],
+              "role": "DEEPER_LOSS"
+            },
+            {
+              "case_context_on": "2026-04-17",
+              "code": "1101",
+              "evidence_kind": "USER_CONFIRMED_CASE_FROM_WORK_SUMMARY",
+              "historical_available_at": null,
+              "id": "Apr17",
+              "reference_ids": [
+                "IV"
+              ],
+              "role": "FOLLOWUP_NEW_LOW_NOT_COMPLETED"
+            },
+            {
+              "case_context_on": "2026-04-22",
+              "code": "1101",
+              "evidence_kind": "USER_CONFIRMED_CASE_FROM_WORK_SUMMARY",
+              "historical_available_at": null,
+              "id": "V",
+              "reference_ids": [
+                "IV"
+              ],
+              "role": "RECOVERY_NOT_RECLAIMED_AND_LOWER_THAN_IV"
+            },
+            {
+              "case_context_on": "2026-04-15",
+              "code": "2884",
+              "evidence_kind": "USER_CONFIRMED_CASE_FROM_WORK_SUMMARY",
+              "historical_available_at": null,
+              "id": "B-Apr15",
+              "reference_ids": [
+                "B-local",
+                "B-original"
+              ],
+              "role": "LOCAL_GRAPH_ENTRY_OPPORTUNITY"
+            }
+          ],
+          "historical_availability": "UNKNOWN_CASE_CONTEXT_IS_NOT_PUBLICATION_TIME",
+          "prefix_id": "sha256:6906c3f12c43e965bf818fd34c6b2b105b39cf00a7d1344842fa064572051db3",
+          "references": [
+            {
+              "automatic_exit": false,
+              "case_context_on": "2026-04-09",
+              "code": "1101",
+              "evidence_kind": "USER_CONFIRMED_CASE_FROM_WORK_SUMMARY",
+              "formal_primary_pressure": false,
+              "historical_role_known_at": null,
+              "id": "A-important",
+              "raw_bar": {
+                "date": "2026-04-09",
+                "field": "low"
+              },
+              "role": "IMPORTANT_PULLBACK_LEVEL",
+              "source_binding": {
+                "basis_id": "RAW:fd5674f6d424dadbfe0644453e4f54c9ed8943fe3149b6f681f24932176db801",
+                "raw_bar": {
+                  "date": "2026-04-09",
+                  "field": "low"
+                },
+                "source_id": "archived-months:fd5674f6d424dadbfe0644453e4f54c9ed8943fe3149b6f681f24932176db801"
+              },
+              "source_qualification": "RAW_VALUE_MATCH_ONLY_ROLE_FROM_WORK",
+              "value": "24.80"
+            },
+            {
+              "automatic_exit": false,
+              "case_context_on": "2026-02-26",
+              "code": "2884",
+              "evidence_kind": "USER_CONFIRMED_CASE_FROM_WORK_SUMMARY",
+              "formal_primary_pressure": false,
+              "historical_role_known_at": null,
+              "id": "B-original",
+              "raw_bar": {
+                "date": "2026-02-26",
+                "field": "high"
+              },
+              "role": "ORIGINAL_UPPER_REFERENCE",
+              "source_binding": {
+                "basis_id": "RAW:c27514e56b61b669362aaf8fdd7223acb7caaabcdaf0fa6ccf4a17909ba9ac60",
+                "raw_bar": {
+                  "date": "2026-02-26",
+                  "field": "high"
+                },
+                "source_id": "archived-months:c27514e56b61b669362aaf8fdd7223acb7caaabcdaf0fa6ccf4a17909ba9ac60"
+              },
+              "source_qualification": "RAW_VALUE_MATCH_ONLY_ROLE_FROM_WORK",
+              "value": "35.50"
+            },
+            {
+              "automatic_exit": false,
+              "case_context_on": "2026-04-15",
+              "code": "2884",
+              "evidence_kind": "USER_CONFIRMED_CASE_FROM_WORK_SUMMARY",
+              "formal_primary_pressure": false,
+              "historical_role_known_at": null,
+              "id": "B-local",
+              "raw_bar": null,
+              "role": "LOCAL_ENTRY_REFERENCE",
+              "source_binding": null,
+              "source_qualification": "WORK_REPORTED_ROLE_OR_VALUE_NO_ORIGIN_BAR_INFERRED",
+              "value": "32.85"
+            }
+          ],
+          "selected_entry_material": null,
+          "track_id": "II",
+          "usable_historical_signal_ids": [],
+          "visible_entry_materials": [
+            {
+              "actual_fill": false,
+              "capacity": null,
+              "case_context_on": "2026-04-10",
+              "channel": "REGULAR_OPEN",
+              "code": "1101",
+              "evidence_kind": "SAVED_RAW_BAR_MODEL_MATERIAL_NOT_FILL",
+              "fee_model": null,
+              "historical_available_at": null,
+              "id": "II-regular-open",
+              "model_authorized": false,
+              "opportunity_id": "II",
+              "price": "25.35",
+              "price_role": "SAVED_DAILY_OPEN_MODEL_MATERIAL",
+              "raw_bar": {
+                "date": "2026-04-10",
+                "field": "open"
+              },
+              "settlement_date": null,
+              "source_binding": {
+                "basis_id": "RAW:fd5674f6d424dadbfe0644453e4f54c9ed8943fe3149b6f681f24932176db801",
+                "raw_bar": {
+                  "date": "2026-04-10",
+                  "field": "open"
+                },
+                "source_id": "archived-months:fd5674f6d424dadbfe0644453e4f54c9ed8943fe3149b6f681f24932176db801"
+              },
+              "source_qualification": "DAILY_OPEN_VALUE_ONLY_NOT_EXECUTABLE_TAPE",
+              "trade_at": null
+            },
+            {
+              "actual_fill": false,
+              "capacity": null,
+              "case_context_on": "2026-04-10",
+              "channel": "ODD_LOT_FIRST_PRINT",
+              "code": "1101",
+              "evidence_kind": "WORK_SUMMARY_ONLY_NO_RETAINED_FIRST_PRINT_OR_CAPACITY",
+              "fee_model": null,
+              "historical_available_at": null,
+              "id": "II-odd-first",
+              "model_authorized": false,
+              "opportunity_id": "II",
+              "price": "25.60",
+              "price_role": "WORK_REPORTED_FIRST_PRINT_MODEL_MATERIAL",
+              "raw_bar": null,
+              "settlement_date": null,
+              "source_binding": null,
+              "source_qualification": "WORK_SUMMARY_PRICE_ONLY_FIRST_PRINT_SOURCE_AND_CAPACITY_UNKNOWN",
+              "trade_at": null
+            }
+          ]
+        }
+      ],
+      "primary_pressure_id": null,
+      "ranking": null,
+      "research_controls": {
+        "K": "UNAPPROVED",
+        "R4_X5": "UNAPPROVED",
+        "X4": "UNAPPROVED",
+        "X5": "UNAPPROVED"
+      },
+      "research_parameters": {
+        "N": null,
+        "common_period": null,
+        "execution_model": null,
+        "opening_cash": null,
+        "probability_model": null,
+        "ranking_model": null,
+        "reduction_ratio": null,
+        "reserved_cash": null,
+        "risk_thresholds": null,
+        "shares": null
+      },
+      "scenario_net_return": null,
+      "schema": "rotation-market-case-context/0.2",
+      "selected_entry_material_id": null,
+      "source_admission": "SAVED_INCOMPLETE_COVERAGE_NOT_PROMOTED",
+      "source_binding": {
+        "calendar": "sha256:8b431ca5ec65e460c70b0a5fc4cbc2a7f63381052fa7e5ed85f449728d8fb113",
+        "catalog": "sha256:a137969400c6149c17434e8991467afee71ebfc68597279f1ed6049c1b332fa3",
+        "quote_manifest": "sha256:503b5905a7c133f24d763e03c36e9a61eaea6c9e1e6ad5eb47f235b5bd14b3bf",
+        "quotes": "sha256:a75ab687106a64988b2f5e4c4433a86b569ec974fac6ae3806cb890f5bc4ca7c"
+      },
+      "source_coverage": {
+        "1101": {
+          "end": "2026-10-16",
+          "event_ids": [
+            "sha256:01df5dd4c25df56baa28b725845678043e4809abf08e15cb19bab046ad92902f",
+            "sha256:b7ba974b62bad201a1757c3b8dc2015ae9a43d35f55c352bf0929c65cd2b0bd5"
+          ],
+          "gaps": [
+            "NO_EXHAUSTIVE_CAPITAL_REDUCTION_OR_OTHER_ACTION_REGISTER",
+            "EXCHANGE_2026_CAPTURE_ENDS_2026-07-24_MISSING_2026-07-25_TO_2026-10-16",
+            "EXRIGHT_ENDPOINT_EXCLUSIONS_NOT_COMPLETE_CORPORATE_ACTION_UNIVERSE",
+            "SCOPED_INVENTORY_NOT_EXHAUSTIVE_REGISTER_OR_SUPPORTED_ACCOUNT_IMPACT",
+            "RESOLUTION_NOT_FINAL_RATIO_NET_PAYMENT_OR_EXHAUSTIVE_ACTION_REGISTER"
+          ],
+          "known_company_action_ids": [
+            "sha256:1e4ac85c0b29fc31441f5d36208189e5d6ad55eaf3fa6f9e994db8e054a63bed",
+            "sha256:3912f8383c15a479a8b1aeaa4835f4ca53ad6f101fc88e96f15fd531d0bbeee4",
+            "sha256:5f032becaccb3085398a8025359322047c4ef31f9ffbf3ab2adcde5d83ae4b56",
+            "sha256:d23b7d5f03dc9a6f02b0bd4659cce8519ef01a32eed92dc9dc9f68a652f2dfc5"
+          ],
+          "other_actions_checked": false,
+          "source_ids": [
+            "exright-2025",
+            "exright-2026-to-cutoff",
+            "issuer-1101",
+            "issuer-2884",
+            "tcc-capital-surplus-2026"
+          ],
+          "start": "2025-07-01",
+          "status": "INCOMPLETE",
+          "types": [
+            "CASH_DIVIDEND",
+            "STOCK_DIVIDEND"
+          ]
+        },
+        "2884": {
+          "end": "2026-10-16",
+          "event_ids": [
+            "sha256:a96a11bf35947c9fce84baaf52b88a4ffd19447e9c26610c5fc01a82505d1a3a",
+            "sha256:dddf104de8f030d4fedd1894a1a99386d81df1b0befa046f946cfdc5734bb387",
+            "sha256:cf65c6f1ab9ad9fb1a64a8405cd9d05505739e72d6383c5e37903389f52c7349"
+          ],
+          "gaps": [
+            "NO_EXHAUSTIVE_CAPITAL_REDUCTION_OR_OTHER_ACTION_REGISTER",
+            "EXCHANGE_2026_CAPTURE_ENDS_2026-07-24_MISSING_2026-07-25_TO_2026-10-16",
+            "EXRIGHT_ENDPOINT_EXCLUSIONS_NOT_COMPLETE_CORPORATE_ACTION_UNIVERSE",
+            "SCOPED_INVENTORY_NOT_EXHAUSTIVE_REGISTER_OR_SUPPORTED_ACCOUNT_IMPACT",
+            "RESOLUTION_NOT_FINAL_RATIO_NET_PAYMENT_OR_EXHAUSTIVE_ACTION_REGISTER"
+          ],
+          "known_company_action_ids": [
+            "sha256:3090d9519d9526c48742e1f1c6c3be15e81971306d0f41b1d6034e0f6b4dfffb",
+            "sha256:591576c458ebb0e1506f5e562c3b61655f199fe05069e559e29bd05783c39ccc",
+            "sha256:5c768c6a2c7b2b3145015e722670727de85cef74fa12f990f7b2f0565fe67119",
+            "sha256:b9eac95a1a87bcc06b6d3b67547af3148106813cddf5fffd9edab21fc450207f"
+          ],
+          "other_actions_checked": false,
+          "source_ids": [
+            "esun-2025-follow-up",
+            "esun-2025-minutes",
+            "esun-direct-2025-ratio",
+            "esun-mna-20251105",
+            "esun-mna-20260713",
+            "esun-mna-index",
+            "esun-mna-qa",
+            "exright-2025",
+            "exright-2026-to-cutoff",
+            "issuer-1101",
+            "issuer-2884"
+          ],
+          "start": "2025-07-01",
+          "status": "INCOMPLETE",
+          "types": [
+            "CASH_DIVIDEND",
+            "STOCK_DIVIDEND"
+          ]
+        }
+      },
+      "source_parent_chain": [
+        {
+          "id": "sha256:4fd79d2e1f42e6009876bd76fd646f1037620a749e0fe827b3234a9fc677ac00",
+          "schema": "rotation-subsidiary-proposal-research/0.10"
+        },
+        {
+          "id": "sha256:673e0815cc9f1372ab187c7aa93c9a5ad1f746a45bf87ea4687d4b2e7be048f3",
+          "schema": "rotation-capital-components-research/0.9"
+        },
+        {
+          "id": "sha256:77e3dfa0e10ff3b64f67e1613575c26158d814efe025753d5138c8b76641cd80",
+          "schema": "rotation-source-contract-research/0.8"
+        },
+        {
+          "id": "sha256:49528167bede030b29359a77abebd3f8947c88e58aeaaeede62c42a76465cc89",
+          "schema": "rotation-source-followup/0.7"
+        },
+        {
+          "id": "sha256:ffc954ac915889a4fbd8b2d2e71b219cb38fbfe192d7cc08823abe2f04d3b6eb",
+          "schema": "rotation-offline-source-bridge/0.6"
+        },
+        {
+          "id": "sha256:3b8214422041a4a18bb2ed90bad1a7881e31c784682188641fbf4e1a27f07e0b",
+          "schema": "rotation-source-diagnostics/0.5"
+        },
+        {
+          "id": "sha256:fff935c6816e415c03304f1436c845f4ac95e6e0d74795745cf61571de7e07fa",
+          "schema": "rotation-resolution-catalog/0.4"
+        },
+        {
+          "id": "sha256:c9fb913ce7067c987da6faf03d352922393f548c961f45922ac596fe2ff8a343",
+          "schema": "rotation-scoped-action-catalog/0.3"
+        }
+      ],
+      "status": "CONTEXT_PREPARED_RESEARCH_INPUTS_PENDING",
+      "strategy_validated": false,
+      "total_net_return": null,
+      "track_id": "II",
+      "work_originals_read_by_codex": false,
+      "work_summary_id": "sha256:4e49326843ea30955e4ede2348e0e2a5f273c95ab6b78cb07f7db6117a598c4b"
+    },
+    "source_spec": {
+      "files": {
+        "calendar": {
+          "bytes": 132627,
+          "path": "股票系統M1_v0_18/rotation_research/source_qualification_20261022/observed-calendar.json",
+          "sha256": "53c8d134ef12834cdb4875abe9367aad99eef21bdfb1790d2418523d3ee54817"
+        },
+        "catalog": {
+          "bytes": 360535,
+          "path": "股票系統M1_v0_18/rotation_research/subsidiary_proposal_20261023/catalog-v010.json",
+          "sha256": "f396b1976753ae83155c0ed640b83fb0457769c62c32c59f79f341f7e2e16899"
+        },
+        "quote_manifest": {
+          "bytes": 43923,
+          "path": "股票系統M1_v0_18/rotation_research/generated/sources.json",
+          "sha256": "8588dbdd9a0f9a20cfdec70835efc6fc2193a9daac5646a9048210b540d11abe"
+        },
+        "quotes": {
+          "bytes": 123436,
+          "path": "股票系統M1_v0_18/rotation_research/generated/input.json",
+          "sha256": "982cf36383b47e3a7d5b68b55dcbc17cefe9b5715e287573c6ac9c19c11659a9"
+        }
+      },
+      "schema": "rotation-market-source-spec/0.1"
+    },
+    "work_summary": {
+      "authority": "USER_PROVIDED_SUMMARY_NOT_ORIGINAL_DOCUMENT_OR_HISTORICAL_PUBLICATION",
+      "originals": [
+        {
+          "library_id": "libfile_386a0d7015f08191be9fd63e688d1425",
+          "read_by_codex": false
+        },
+        {
+          "library_id": "libfile_0935ff42c238819180b5d2fc30a874a6",
+          "read_by_codex": false
+        }
+      ],
+      "research_version": "0.24",
+      "schema": "work-summary-testimony/0.1",
+      "statements": [
+        "②為2026/4/9的小突破後淺回檔承接機會，使用者已確認。",
+        "4/10普通開25.35、零股第一筆25.60只是後續模型素材，均非已成交，不混用①4/9開25.50成本。",
+        "③4/10圖形機會已確認，不代表既有持股自動加碼；24.80是本例重要回檔守位，不是自動全退線。",
+        "④4/15是較深失守；4/17尚未完成後續新低；⑤4/22才新增回升未收復、再低於④低點的反證。",
+        "2884截至4/15可以進場，32.85可作本例局部進場參照，原35.50仍保留。圖形確認不等正式新委託許可、來源合格或成本後優勢。",
+        "6488截至4/15圖形可進場，但只在Work附錄，不擴原1101/2884產品案例；不指定494.50為唯一依據、不回填4/13成交。",
+        "K/X4/R4_X5/X5未批准；本金、N、股數、減少比例、預留、風險門檻、概率及排名待決。"
+      ],
+      "work_json_version": "0.16"
+    }
+  }
+}

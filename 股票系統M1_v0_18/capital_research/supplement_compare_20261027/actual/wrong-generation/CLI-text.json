@@ -1,0 +1,26 @@
+{
+  "exit_code": 2,
+  "stdout": "同父補選意圖並列（合成，只讀，不排名）\n共同條件狀態：REFUSED\n拒比原因：[{\"label\": \"錯generation\", \"reason\": \"COMPLETE_SAVED_SUPPLEMENT_REQUIRED\", \"read_status\": \"UNREADABLE\", \"read_reasons\": [\"PARENT_BINDING_MISMATCH\"]}]\n共同條件差異：[]\n未提供相符並列；不補資料、不重算或改選。\n",
+  "stderr": "",
+  "original_READ_trace": [
+    {
+      "status": "READ_ONLY",
+      "supplement_id": "supp-general",
+      "parent_id": "demo-no-selection",
+      "parent_result_id": "sha256:b426b70347924c87074c2a9be86e9580cd9b8e6c2ee51269e86ab49243a85b56",
+      "generation_id": "sha256:c5e6483eb0180f5b948ff0f730be8c844d196b59bbf2d35cd2245223dee04897",
+      "account_id": "sha256:8ba782b921772678f8be492480ccc08d8c8b5e85bdde3c4fea55cc4a2f5aca6d",
+      "data_cutoff": "2026-01-12T16:00:00+08:00"
+    },
+    {
+      "status": "UNREADABLE",
+      "supplement_id": "supp-general",
+      "parent_id": "demo-no-selection",
+      "parent_result_id": "sha256:b426b70347924c87074c2a9be86e9580cd9b8e6c2ee51269e86ab49243a85b56",
+      "generation_id": "sha256:c5e6483eb0180f5b948ff0f730be8c844d196b59bbf2d35cd2245223dee04897",
+      "account_id": "sha256:8ba782b921772678f8be492480ccc08d8c8b5e85bdde3c4fea55cc4a2f5aca6d",
+      "data_cutoff": "2026-01-12T16:00:00+08:00"
+    }
+  ],
+  "guard": "FRESH_NO_ENGINE_NO_GENERATION_NO_SELECTION_NO_SOURCE_VERDICT_NO_SAVE_NO_WRITE_NO_NETWORK"
+}

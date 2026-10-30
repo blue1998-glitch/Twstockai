@@ -1,0 +1,74 @@
+<!doctype html>
+<html lang="zh-Hant">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <meta http-equiv="Content-Security-Policy" content="default-src 'none'; script-src 'unsafe-inline'; style-src 'unsafe-inline'; connect-src 'none'; object-src 'none'; base-uri 'none'; form-action 'none'">
+  <title>M1 v0.19｜嘗試關卡與量先價候選</title>
+  <style>@@STYLE@@</style>
+</head>
+<body>
+<header>
+  <p class="eyebrow">M1 v0.19 · 獨立嘗試證據候選</p>
+  <h1>先看嘗試，再看量與後續價格</h1>
+  <p>近期關卡與左區上緣各自保留；量先價是支持，是否越過左區仍看當時價格。</p>
+</header>
+<aside class="notice">此頁只接入明確標示的假想工程例，不是真實個股、自動選股或績效證明。沒有盤中資料便不畫盤中路徑；未定義規則維持未知。</aside>
+<section class="panel" aria-label="明確啟用與選取來源">
+  <label class="enable"><input id="enableAttempt" type="checkbox">啟用獨立嘗試／量先價候選（假想工程例）</label>
+  <div class="controls">
+    <label>已明選來源與價格模式<select id="sourceCase" disabled><option value="">請明選來源</option></select></label>
+    <label>觀察時點<select id="observation" disabled><option value="">請明選時點</option></select></label>
+    <button id="loadAttempt" disabled>讀取當時證據</button>
+  </div>
+  <p id="referenceStatus" class="muted">尚未啟用；不自動選關卡、左區或最新日期。</p>
+  <p id="message" role="status">本頁只讀離線核心輸出，沒有行情連線或瀏覽器分析計算。</p>
+</section>
+<main id="result" hidden>
+  <section class="panel">
+    <div class="headline"><div><p id="scope" class="eyebrow"></p><h2 id="phase"></h2></div><button id="download">下載當時完整 JSON</button></div>
+    <p id="coverage"></p>
+    <div id="attemptLevels" class="cards"></div>
+    <article class="volume-card"><h3>量先價與價格進展</h3><p id="volumeNumbers"></p><p id="volumeText"></p><p id="leadHistory" class="muted"></p></article>
+    <div class="cards evidence">
+      <article><h3>支持證據</h3><ul id="supporting"></ul></article>
+      <article><h3>反面／跌回事實</h3><ul id="opposing"></ul></article>
+      <article><h3>缺證與未決</h3><ul id="missing"></ul></article>
+    </div>
+    <p id="position" class="muted">尚未接實際持倉與成交紀錄；本例沒有真實買賣。不從新進場條件直接推論已有持倉應賣出。</p>
+  </section>
+  <section class="panel" id="charts">
+    <div class="toolbar"><button id="previous">前一觀察</button><input id="replay" type="range" min="0" max="0" value="0" aria-label="逐觀察時點重播"><button id="next">下一觀察</button><button id="full">全螢幕／專注模式</button><button id="exitFocus" hidden>退出專注模式</button></div>
+    <p id="replayStatus" role="status"></p><p id="fullscreenStatus" class="muted"></p>
+    <div class="toolbar"><button id="zoomIn">時間放大 ＋</button><button id="zoomOut">時間縮小 −</button><button id="left">向左看更早資料</button><button id="right">向右平移</button><button id="reset">全部已提供歷史</button></div>
+    <p id="range" class="muted"></p>
+    <h3>日線背景與當時 K</h3>
+    <p class="muted">橘色點為來源檔明選的近期高點；左區來源 K 有藍色底。虛線與區帶只表示已選參照，不代表已證明套牢賣壓；本日 K 依明示盤中／完成狀態標示。</p>
+    <canvas id="daily" role="img" aria-label="當時可知日K與來源參照"></canvas>
+    <h3>股數量｜歷史全日與當時累計分開</h3>
+    <p class="muted">虛線為明選左區最高全日股數量；本日未完成柱是截至觀察時點的累計量。這是指定基準比較，不是歷史等時量或預估全日量模型。</p>
+    <canvas id="volume" role="img" aria-label="原股數量與左區最高量"></canvas>
+    <h3>本日實際提供的觀察點</h3><p id="intradayStatus" class="muted"></p>
+    <canvas id="intraday" role="img" aria-label="已提供盤中觀察點或缺資料說明"></canvas>
+    <p id="intradayCursor" class="muted" role="status"></p>
+    <p id="cursorValues" class="cursor" role="status"></p>
+  </section>
+  <section class="panel">
+    <h2>已觀察事件：先前嘗試與後來跌回分開保存</h2>
+    <p>發生時刻不明就保留未知；首次觀察與完成資料的確認時間分列。未把日後結果回填到較早時點。</p>
+    <div id="events"></div>
+  </section>
+  <section class="panel">
+    <h2>來源、版本與未知</h2>
+    <p id="qualification"></p>
+    <details><summary>明選參照與共同基底宣告</summary><pre id="references"></pre><pre id="context"></pre></details>
+    <details><summary>原 frame／前一 frame／來源指紋</summary><pre id="lineage"></pre></details>
+    <details><summary>當時完整輸入、核心輸出與原精度</summary><pre id="exactSource"></pre></details>
+  </section>
+</main>
+<script id="attemptData" type="application/json">@@DATA@@</script>
+<script>
+@@SCRIPT@@
+</script>
+</body>
+</html>

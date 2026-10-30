@@ -1,0 +1,514 @@
+{
+  "schema": "rotation-action-source-audit/0.1",
+  "start": "2025-07-01",
+  "end": "2026-10-16",
+  "original_catalog_id": "sha256:16896da3a69b117dde66c592ee7a462407c1cdd74f99448b82a40c0728826b56",
+  "event_components_unchanged": [
+    {
+      "code": "1101",
+      "mode": "RAW",
+      "basis_id": "RAW:fd5674f6d424dadbfe0644453e4f54c9ed8943fe3149b6f681f24932176db801",
+      "ex_date": "2025-07-02",
+      "announced_at": null,
+      "historical_signal_eligible": false,
+      "observed_at": "2026-10-21T23:38:10.828609+00:00",
+      "source_ids": [
+        "exright-2025",
+        "issuer-1101"
+      ],
+      "field_sources": {
+        "ex_date": [
+          {
+            "source_id": "exright-2025",
+            "locator": "data[511].資料日期",
+            "raw_value": "114年07月02日"
+          }
+        ],
+        "gross_per_share": [
+          {
+            "source_id": "issuer-1101",
+            "locator": "html_table_rows[2][2]",
+            "raw_value": "1"
+          }
+        ],
+        "pay_date": [
+          {
+            "source_id": "issuer-1101",
+            "locator": "html_table_rows[2][7]",
+            "raw_value": "2025/07/29"
+          }
+        ]
+      },
+      "exchange_row_index": 511,
+      "exchange_raw_fields": {
+        "資料日期": "114年07月02日",
+        "股票代號": "1101",
+        "股票名稱": "台泥",
+        "除權息前收盤價": "26.15",
+        "除權息參考價": "25.15",
+        "權值+息值": "1.000000",
+        "權/息": "息",
+        "漲停價格": "27.65",
+        "跌停價格": "22.65",
+        "開盤競價基準": "25.15",
+        "減除股利參考價": "25.15",
+        "詳細資料": "1101,20250702",
+        "最近一次申報資料 季別/日期": "115年第2季(https://mops.twse.com.tw/mops/web/t163sb01)",
+        "最近一次申報每股 (單位)淨值": "30.86",
+        "最近一次申報每股 (單位)盈餘": "0.38"
+      },
+      "issuer_row_index": 2,
+      "issuer_raw_cells": [
+        "2024",
+        "2025/05/27",
+        "1",
+        "0",
+        "1",
+        "2025/07/02",
+        "",
+        "2025/07/29"
+      ],
+      "date_semantics": "EXCHANGE_EX_TRADING_DATE_NOT_ISSUER_RECORD_DATE",
+      "completeness": "PARTIAL_COMPONENT_EVIDENCE_NOT_FULL_ACTION_COVERAGE",
+      "type": "CASH_DIVIDEND",
+      "gross_per_share": "1",
+      "net_per_share": null,
+      "pay_date": "2025-07-29",
+      "record_date": null,
+      "pay_date_role": "ISSUER_SCHEDULE_NOT_INVESTOR_RECEIPT",
+      "missing": [
+        "announced_at",
+        "investor_net_per_share",
+        "investor_actual_receipt"
+      ],
+      "id": "sha256:01df5dd4c25df56baa28b725845678043e4809abf08e15cb19bab046ad92902f"
+    },
+    {
+      "code": "2884",
+      "mode": "RAW",
+      "basis_id": "RAW:c27514e56b61b669362aaf8fdd7223acb7caaabcdaf0fa6ccf4a17909ba9ac60",
+      "ex_date": "2025-07-22",
+      "announced_at": null,
+      "historical_signal_eligible": false,
+      "observed_at": "2026-10-21T23:38:10.828609+00:00",
+      "source_ids": [
+        "exright-2025",
+        "issuer-2884"
+      ],
+      "field_sources": {
+        "ex_date": [
+          {
+            "source_id": "exright-2025",
+            "locator": "data[820].資料日期",
+            "raw_value": "114年07月22日"
+          }
+        ],
+        "gross_per_share": [
+          {
+            "source_id": "issuer-2884",
+            "locator": "html_table_rows[3][2]",
+            "raw_value": "1.2"
+          }
+        ],
+        "pay_date": [
+          {
+            "source_id": "issuer-2884",
+            "locator": "html_table_rows[3][3]",
+            "raw_value": "2025.08.27"
+          }
+        ],
+        "record_date": [
+          {
+            "source_id": "issuer-2884",
+            "locator": "html_table_rows[3][1]",
+            "raw_value": "2025.07.28"
+          }
+        ]
+      },
+      "exchange_row_index": 820,
+      "exchange_raw_fields": {
+        "資料日期": "114年07月22日",
+        "股票代號": "2884",
+        "股票名稱": "玉山金",
+        "除權息前收盤價": "34.20",
+        "除權息參考價": "32.67",
+        "權值+息值": "1.527222",
+        "權/息": "權息",
+        "漲停價格": "35.90",
+        "跌停價格": "29.45",
+        "開盤競價基準": "32.65",
+        "減除股利參考價": "32.67",
+        "詳細資料": "2884,20250722",
+        "最近一次申報資料 季別/日期": "115年第2季(https://mops.twse.com.tw/mops/web/t163sb01)",
+        "最近一次申報每股 (單位)淨值": "17.40",
+        "最近一次申報每股 (單位)盈餘": "1.32"
+      },
+      "issuer_row_index": 3,
+      "issuer_raw_cells": [
+        "2025",
+        "2025.07.28",
+        "1.2",
+        "2025.08.27",
+        "2025.07.28",
+        "0.10015129",
+        "2025.08.27"
+      ],
+      "date_semantics": "EXCHANGE_EX_TRADING_DATE_NOT_ISSUER_RECORD_DATE",
+      "completeness": "PARTIAL_COMPONENT_EVIDENCE_NOT_FULL_ACTION_COVERAGE",
+      "type": "CASH_DIVIDEND",
+      "gross_per_share": "1.2",
+      "net_per_share": null,
+      "pay_date": "2025-08-27",
+      "record_date": "2025-07-28",
+      "pay_date_role": "ISSUER_SCHEDULE_NOT_INVESTOR_RECEIPT",
+      "missing": [
+        "announced_at",
+        "investor_net_per_share",
+        "investor_actual_receipt"
+      ],
+      "id": "sha256:a96a11bf35947c9fce84baaf52b88a4ffd19447e9c26610c5fc01a82505d1a3a"
+    },
+    {
+      "code": "2884",
+      "mode": "RAW",
+      "basis_id": "RAW:c27514e56b61b669362aaf8fdd7223acb7caaabcdaf0fa6ccf4a17909ba9ac60",
+      "ex_date": "2025-07-22",
+      "announced_at": null,
+      "historical_signal_eligible": false,
+      "observed_at": "2026-10-21T23:38:10.828609+00:00",
+      "source_ids": [
+        "exright-2025",
+        "issuer-2884"
+      ],
+      "field_sources": {
+        "ex_date": [
+          {
+            "source_id": "exright-2025",
+            "locator": "data[820].資料日期",
+            "raw_value": "114年07月22日"
+          }
+        ],
+        "stock_dividend_money_per_share": [
+          {
+            "source_id": "issuer-2884",
+            "locator": "html_table_rows[3][5]",
+            "raw_value": "0.10015129"
+          }
+        ],
+        "record_date": [
+          {
+            "source_id": "issuer-2884",
+            "locator": "html_table_rows[3][4]",
+            "raw_value": "2025.07.28"
+          }
+        ],
+        "delivery_date": [
+          {
+            "source_id": "issuer-2884",
+            "locator": "html_table_rows[3][6]",
+            "raw_value": "2025.08.27"
+          }
+        ]
+      },
+      "exchange_row_index": 820,
+      "exchange_raw_fields": {
+        "資料日期": "114年07月22日",
+        "股票代號": "2884",
+        "股票名稱": "玉山金",
+        "除權息前收盤價": "34.20",
+        "除權息參考價": "32.67",
+        "權值+息值": "1.527222",
+        "權/息": "權息",
+        "漲停價格": "35.90",
+        "跌停價格": "29.45",
+        "開盤競價基準": "32.65",
+        "減除股利參考價": "32.67",
+        "詳細資料": "2884,20250722",
+        "最近一次申報資料 季別/日期": "115年第2季(https://mops.twse.com.tw/mops/web/t163sb01)",
+        "最近一次申報每股 (單位)淨值": "17.40",
+        "最近一次申報每股 (單位)盈餘": "1.32"
+      },
+      "issuer_row_index": 3,
+      "issuer_raw_cells": [
+        "2025",
+        "2025.07.28",
+        "1.2",
+        "2025.08.27",
+        "2025.07.28",
+        "0.10015129",
+        "2025.08.27"
+      ],
+      "date_semantics": "EXCHANGE_EX_TRADING_DATE_NOT_ISSUER_RECORD_DATE",
+      "completeness": "PARTIAL_COMPONENT_EVIDENCE_NOT_FULL_ACTION_COVERAGE",
+      "type": "STOCK_DIVIDEND",
+      "stock_dividend_money_per_share": "0.10015129",
+      "shares_per_share": null,
+      "par_value": null,
+      "record_date": "2025-07-28",
+      "delivery_date": "2025-08-27",
+      "tradable_date": null,
+      "delivery_role": "ISSUER_DISTRIBUTION_SCHEDULE_NOT_VERIFIED_LISTING_DATE",
+      "missing": [
+        "announced_at",
+        "sourced_share_ratio_or_par_value",
+        "tradable_date",
+        "fractional_disposition"
+      ],
+      "id": "sha256:5d9936c5f45c53f5724113b51d1bfa019e758e7f777c01ffe2aaa4aa6c01f57c"
+    },
+    {
+      "code": "1101",
+      "mode": "RAW",
+      "basis_id": "RAW:fd5674f6d424dadbfe0644453e4f54c9ed8943fe3149b6f681f24932176db801",
+      "ex_date": "2026-07-01",
+      "announced_at": null,
+      "historical_signal_eligible": false,
+      "observed_at": "2026-10-21T23:38:10.830254+00:00",
+      "source_ids": [
+        "exright-2026-to-cutoff",
+        "issuer-1101"
+      ],
+      "field_sources": {
+        "ex_date": [
+          {
+            "source_id": "exright-2026-to-cutoff",
+            "locator": "data[598].資料日期",
+            "raw_value": "115年07月01日"
+          }
+        ],
+        "gross_per_share": [
+          {
+            "source_id": "issuer-1101",
+            "locator": "html_table_rows[1][2]",
+            "raw_value": "0.8"
+          }
+        ],
+        "pay_date": [
+          {
+            "source_id": "issuer-1101",
+            "locator": "html_table_rows[1][7]",
+            "raw_value": "2026/07/28"
+          }
+        ]
+      },
+      "exchange_row_index": 598,
+      "exchange_raw_fields": {
+        "資料日期": "115年07月01日",
+        "股票代號": "1101",
+        "股票名稱": "台泥",
+        "除權息前收盤價": "24.05",
+        "除權息參考價": "23.25",
+        "權值+息值": "0.800000",
+        "權/息": "息",
+        "漲停價格": "25.55",
+        "跌停價格": "20.95",
+        "開盤競價基準": "23.25",
+        "減除股利參考價": "23.25",
+        "詳細資料": "1101,20260701",
+        "最近一次申報資料 季別/日期": "115年第2季(https://mops.twse.com.tw/mops/web/t163sb01)",
+        "最近一次申報每股 (單位)淨值": "30.86",
+        "最近一次申報每股 (單位)盈餘": "0.38"
+      },
+      "issuer_row_index": 1,
+      "issuer_raw_cells": [
+        "2025",
+        "2026/05/22",
+        "0.8",
+        "0",
+        "0.8",
+        "2026/07/01",
+        "",
+        "2026/07/28"
+      ],
+      "date_semantics": "EXCHANGE_EX_TRADING_DATE_NOT_ISSUER_RECORD_DATE",
+      "completeness": "PARTIAL_COMPONENT_EVIDENCE_NOT_FULL_ACTION_COVERAGE",
+      "type": "CASH_DIVIDEND",
+      "gross_per_share": "0.8",
+      "net_per_share": null,
+      "pay_date": "2026-07-28",
+      "record_date": null,
+      "pay_date_role": "ISSUER_SCHEDULE_NOT_INVESTOR_RECEIPT",
+      "missing": [
+        "announced_at",
+        "investor_net_per_share",
+        "investor_actual_receipt"
+      ],
+      "id": "sha256:b7ba974b62bad201a1757c3b8dc2015ae9a43d35f55c352bf0929c65cd2b0bd5"
+    },
+    {
+      "code": "2884",
+      "mode": "RAW",
+      "basis_id": "RAW:c27514e56b61b669362aaf8fdd7223acb7caaabcdaf0fa6ccf4a17909ba9ac60",
+      "ex_date": "2026-07-01",
+      "announced_at": null,
+      "historical_signal_eligible": false,
+      "observed_at": "2026-10-21T23:38:10.830254+00:00",
+      "source_ids": [
+        "exright-2026-to-cutoff",
+        "issuer-2884"
+      ],
+      "field_sources": {
+        "ex_date": [
+          {
+            "source_id": "exright-2026-to-cutoff",
+            "locator": "data[608].資料日期",
+            "raw_value": "115年07月01日"
+          }
+        ],
+        "gross_per_share": [
+          {
+            "source_id": "issuer-2884",
+            "locator": "html_table_rows[2][2]",
+            "raw_value": "1.4"
+          }
+        ],
+        "pay_date": [
+          {
+            "source_id": "issuer-2884",
+            "locator": "html_table_rows[2][3]",
+            "raw_value": "2026.07.27"
+          }
+        ],
+        "record_date": [
+          {
+            "source_id": "issuer-2884",
+            "locator": "html_table_rows[2][1]",
+            "raw_value": "2026.07.07"
+          }
+        ]
+      },
+      "exchange_row_index": 608,
+      "exchange_raw_fields": {
+        "資料日期": "115年07月01日",
+        "股票代號": "2884",
+        "股票名稱": "玉山金",
+        "除權息前收盤價": "34.45",
+        "除權息參考價": "33.05",
+        "權值+息值": "1.400000",
+        "權/息": "息",
+        "漲停價格": "36.35",
+        "跌停價格": "29.75",
+        "開盤競價基準": "33.05",
+        "減除股利參考價": "33.05",
+        "詳細資料": "2884,20260701",
+        "最近一次申報資料 季別/日期": "115年第2季(https://mops.twse.com.tw/mops/web/t163sb01)",
+        "最近一次申報每股 (單位)淨值": "17.40",
+        "最近一次申報每股 (單位)盈餘": "1.32"
+      },
+      "issuer_row_index": 2,
+      "issuer_raw_cells": [
+        "2026",
+        "2026.07.07",
+        "1.4",
+        "2026.07.27",
+        "-",
+        "-",
+        "-"
+      ],
+      "date_semantics": "EXCHANGE_EX_TRADING_DATE_NOT_ISSUER_RECORD_DATE",
+      "completeness": "PARTIAL_COMPONENT_EVIDENCE_NOT_FULL_ACTION_COVERAGE",
+      "type": "CASH_DIVIDEND",
+      "gross_per_share": "1.4",
+      "net_per_share": null,
+      "pay_date": "2026-07-27",
+      "record_date": "2026-07-07",
+      "pay_date_role": "ISSUER_SCHEDULE_NOT_INVESTOR_RECEIPT",
+      "missing": [
+        "announced_at",
+        "investor_net_per_share",
+        "investor_actual_receipt"
+      ],
+      "id": "sha256:cf65c6f1ab9ad9fb1a64a8405cd9d05505739e72d6383c5e37903389f52c7349"
+    }
+  ],
+  "complete_corporate_action_coverage": false,
+  "primary_pressure_id": null,
+  "observations": [
+    {
+      "name": "reduction-notices",
+      "scope": "CURRENT_FORWARD_NOTICES_NOT_HISTORICAL_REGISTER",
+      "source": {
+        "path": "股票系統M1_v0_18/rotation_research/source_qualification_20261022/raw/reduction-notices.response",
+        "url": "https://www.twse.com.tw/rwd/zh/reducation/TWTAVU?response=json",
+        "sha256": "e435264e4da4b302480505554dc4d121368c4fba031991c105a2a8289f613f52",
+        "captured_at": "2026-10-22T07:07:44.082946+00:00",
+        "kind": "OFFICIAL_ARCHIVE",
+        "historical_publication_time": "NOT_AUTHENTICATED_RETROSPECTIVE_CAPTURE"
+      },
+      "fields": [
+        "停止買賣日期",
+        "股票代號",
+        "名稱",
+        "恢復買賣日期",
+        "減資換股率",
+        "減資原因",
+        "每股退還股款(元)",
+        "減資後現金增資配股率",
+        "現金增資認購價(元)",
+        "詳細資料",
+        "恢復買賣參考價",
+        "參考價試算"
+      ],
+      "rows": 1,
+      "target_rows": [],
+      "no_target_rows_proves_no_events": false,
+      "notes": [
+        "公式：<br>減資換股率＝(減資後發行股數)/(減資前發行股數)<br>減資後現金增資配股率＝(現金增資股數)/(減資後發行股數)",
+        "分割減資股票其詳細資料請<a href='https://mops.twse.com.tw/server-java/t39sb01?quick=1' target='_blank' title='點擊前往MIS即時公告(另開新視窗)'>點擊前往MIS即時公告</a><br>(市場公告/MIS即時公告/即時公告查詢)"
+      ]
+    },
+    {
+      "name": "shares-change",
+      "scope": "FILING_PROCESS_REGISTER_NOT_ALL_COMPLETED_CORPORATE_ACTIONS",
+      "source": {
+        "path": "股票系統M1_v0_18/rotation_research/source_qualification_20261022/raw/shares-change.response",
+        "url": "https://www.twse.com.tw/rwd/zh/company/sharesChange?response=json",
+        "sha256": "44c7066cbcac8b8b9da8fa1585a4805a134cca27d4522a52f08ff7031b0bc7fd",
+        "captured_at": "2026-10-22T07:07:45.561596+00:00",
+        "kind": "OFFICIAL_ARCHIVE",
+        "historical_publication_time": "NOT_AUTHENTICATED_RETROSPECTIVE_CAPTURE"
+      },
+      "fields": [
+        "證券代號",
+        "公司型態",
+        "結案類型",
+        "公司名稱",
+        "承銷商",
+        "申報事項",
+        "金額\n(仟元)",
+        "暫定發行價格",
+        "收文日期",
+        "自動補正日期",
+        "停止生效日期",
+        "解除停止生效日期",
+        "申報生效日期",
+        "自行撤回日期",
+        "退件日期",
+        "撤銷(廢止)日期",
+        "備註1",
+        "備註2"
+      ],
+      "rows": 209,
+      "target_rows": [],
+      "no_target_rows_proves_no_events": false,
+      "notes": []
+    },
+    {
+      "name": "reduction-resumptions",
+      "capture": {
+        "name": "reduction-resumptions",
+        "url": "https://www.twse.com.tw/rwd/zh/reducation/TWTAUU?startDate=20250701&endDate=20261016&response=json",
+        "attempted_at": "2026-10-22T07:07:44.083506+00:00",
+        "status": "FAILED",
+        "error": "HTTPError: HTTP Error 307: Temporary Redirect"
+      },
+      "coverage": "UNKNOWN_FAILED_REQUEST_NOT_ZERO_EVENTS"
+    }
+  ],
+  "gaps": [
+    "FULL_CAPITAL_REDUCTION_AND_OTHER_ACTION_COVERAGE_NOT_VERIFIED",
+    "EXRIGHT_CAPTURE_2026-07-25_TO_2026-10-16_MISSING_NO_PROHIBITED_RETRY",
+    "2884_STOCK_RATIO_TRADABILITY_AND_FRACTIONS_UNKNOWN",
+    "NET_DISTRIBUTIONS_AND_OPENING_CLAIMS_NOT_PUBLICLY_AUTHENTICATED"
+  ]
+}

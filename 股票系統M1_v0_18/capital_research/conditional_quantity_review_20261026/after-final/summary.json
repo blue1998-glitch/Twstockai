@@ -1,0 +1,142 @@
+[
+  {
+    "case": "basis-change-refused",
+    "status": "PASS",
+    "error": null,
+    "actual_status": "STOPPED_INPUT_ERROR",
+    "reasons": [
+      "REVIEW_SOURCE_BASIS_OR_COST_CHANGED"
+    ]
+  },
+  {
+    "case": "close-not-yet-known",
+    "status": "PASS",
+    "error": null,
+    "actual_status": "STOPPED_INPUT_ERROR",
+    "reasons": [
+      "LEDGER_CLOSE_NOT_YET_AVAILABLE"
+    ]
+  },
+  {
+    "case": "future-A-wins",
+    "status": "PASS",
+    "error": null,
+    "actual_status": "REPLAYED_ACCEPTED_REVIEW",
+    "reasons": []
+  },
+  {
+    "case": "future-B-wins",
+    "status": "PASS",
+    "error": null,
+    "actual_status": "REPLAYED_ACCEPTED_REVIEW",
+    "reasons": []
+  },
+  {
+    "case": "future-both-fall",
+    "status": "PASS",
+    "error": null,
+    "actual_status": "REPLAYED_ACCEPTED_REVIEW",
+    "reasons": []
+  },
+  {
+    "case": "limit-up-after-review",
+    "status": "PASS",
+    "error": null,
+    "actual_status": "REPLAYED_ACCEPTED_REVIEW",
+    "reasons": []
+  },
+  {
+    "case": "multiple-live-orders-unsupported",
+    "status": "PASS",
+    "error": null,
+    "actual_status": "STOPPED_NOT_IMPLEMENTED",
+    "reasons": [
+      "SINGLE_OWN_CONDITIONAL_BUY_ONLY"
+    ]
+  },
+  {
+    "case": "outer-gate-refused",
+    "status": "PASS",
+    "error": null,
+    "actual_status": "STOPPED_ORIGINAL_GATE",
+    "reasons": [
+      "BATCH_PHASE_UNKNOWN",
+      "NO_NEW_INDEPENDENT_TRIGGER"
+    ]
+  },
+  {
+    "case": "partial-original-order",
+    "status": "PASS",
+    "error": null,
+    "actual_status": "REPLAYED_ACCEPTED_REVIEW",
+    "reasons": []
+  },
+  {
+    "case": "partial-then-known-cancel",
+    "status": "PASS",
+    "error": null,
+    "actual_status": "REPLAYED_ACCEPTED_REVIEW",
+    "reasons": []
+  },
+  {
+    "case": "rejected-conflict-retained",
+    "status": "PASS",
+    "error": null,
+    "actual_status": "REPLAYED_REJECTED_REVIEW",
+    "reasons": [
+      "NEW_CAPITAL_NOT_QUALIFIED:B"
+    ]
+  },
+  {
+    "case": "rejected-restriction-retained",
+    "status": "PASS",
+    "error": null,
+    "actual_status": "REPLAYED_REJECTED_REVIEW",
+    "reasons": [
+      "NEW_CAPITAL_NOT_QUALIFIED:B"
+    ]
+  },
+  {
+    "case": "sale-unsettled",
+    "status": "PASS",
+    "error": null,
+    "actual_status": "REPLAYED_REJECTED_REVIEW",
+    "reasons": [
+      "JOINT_BUDGET_EXCEEDED_INCLUDING_COSTS_AND_RESERVATIONS"
+    ]
+  },
+  {
+    "case": "target-injection-refused",
+    "status": "PASS",
+    "error": null,
+    "actual_status": "STOPPED_INPUT_ERROR",
+    "reasons": [
+      "TEMPLATE_ACCOUNT_OR_PLANS_FORBIDDEN"
+    ]
+  },
+  {
+    "case": "unknown-current-qualification",
+    "status": "PASS",
+    "error": null,
+    "actual_status": "REPLAYED_REJECTED_REVIEW",
+    "reasons": [
+      "NEW_CAPITAL_NOT_QUALIFIED:B"
+    ]
+  },
+  {
+    "case": "unknown-order-refused",
+    "status": "PASS",
+    "error": null,
+    "actual_status": "STOPPED_INPUT_ERROR",
+    "reasons": [
+      "OWN_LAST_ROUND_CONDITIONAL_ORDER_REQUIRED"
+    ]
+  },
+  {
+    "case": "valid-old-fact",
+    "status": "PASS",
+    "error": null,
+    "actual_status": "REPLAYED_ACCEPTED_REVIEW",
+    "reasons": []
+  }
+]

@@ -1,0 +1,61 @@
+{
+  "schema": "m1-formation-feature-hypotheses/1",
+  "qualification": "ASSISTANT_RESEARCH_NOT_NEW_USER_STRATEGY_ADJUDICATION",
+  "findings": [
+    {
+      "id": "F1",
+      "claim": "Geometric overlap does not encode endpoint directional state.",
+      "evidence": "2884 A/B have identical12/12 adjacent overlap and9/13 peak price-range coverage; endpoint and path measurements differ.",
+      "status": "SUPPORTED_DESCRIPTIVE_DIFFERENCE_NOT_INTERVAL_NEGATIVE_LABEL"
+    },
+    {
+      "id": "F2",
+      "claim": "One short unsigned close-path ratio cannot describe broader form or distinguish upward from downward movement.",
+      "evidence": "A and B last3 both ratio1, with opposite directions; A broader consolidation label is preserved.",
+      "status": "SUPPORTED_SCOPE_AND_DIRECTION_REQUIREMENT"
+    },
+    {
+      "id": "F3",
+      "claim": "No-new-low cannot be a universal prerequisite for any own-interval label.",
+      "evidence": "Confirmed1101 ABC includes June2, which is the39-row observed minimum; original relative-weakness label coexists.",
+      "status": "CONFLICT_WITH_EXISTING_POSITIVE_CASE_IF_USED_AS_UNIVERSAL_RULE"
+    },
+    {
+      "id": "H1",
+      "claim": "Price residence, ordered directional path, endpoint development and broader context may support early form description without waiting for later breakout.",
+      "status": "RESEARCH_SUPPORT_BUNDLE_NOT_SUFFICIENT_OR_NECESSARY_FORMULA",
+      "scope": "Keep rising consolidation and own weaker interval compatible with their reviewed states."
+    }
+  ],
+  "proposed_measurement_bundle": [
+    "positive_overlap_pairs",
+    "peak_range_coverage_with_ordered_source_bars",
+    "signed_net_and_gross_close_change",
+    "all_suffix_directional_profiles",
+    "latest_window_extreme_age",
+    "last_close_location_in_observed_range",
+    "separately_sourced_broader_context"
+  ],
+  "unestablished": [
+    "automatic_window_start_and_extent",
+    "complete_form_detector",
+    "formal_membership_and_bounds",
+    "merge_split_extension_lifecycle",
+    "automatic_primary_pressure_selection",
+    "thresholds_or_weights",
+    "classification_quality",
+    "action_eligibility"
+  ],
+  "prohibited_inferences": [
+    "B is an interval-negative example",
+    "ABC is not an interval because it sets a window low",
+    "13 or8 rows is an approved detection period",
+    "coverage equals volume-at-price or chips held",
+    "the original Oct7 engine snapshot exists",
+    "original core minimum-turn settings have been changed"
+  ],
+  "implementation_status": "READ_ONLY_RESEARCH_ONLY_NO_PRODUCT_CLASSIFIER_CHANGE",
+  "historical_selection_time": null,
+  "historical_signal_eligible": false,
+  "primary_pressure_id": null
+}

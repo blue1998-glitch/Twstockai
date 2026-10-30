@@ -1,0 +1,1451 @@
+{
+  "cutoff": "2026-06-30",
+  "selection": "RETROSPECTIVE_FIXED_CASE_PREFIX_VIEW_NOT_HISTORICAL_SIGNAL_SELECTION",
+  "references": {
+    "lower_activity_high": {
+      "date": "2026-04-16",
+      "field": "high",
+      "value": "33.20",
+      "role": "RAW_PRICE_PROXY_NOT_CONFIRMED_FORMAL_SMALL_BAND_EDGE"
+    },
+    "broader_high": {
+      "date": "2026-02-26",
+      "field": "high",
+      "value": "35.50",
+      "role": "RAW_PRICE_PROXY_NOT_CONFIRMED_FORMAL_LARGE_BAND_EDGE"
+    }
+  },
+  "frozen_volume_comparison": {
+    "period": [
+      "2026-03-16",
+      "2026-05-29"
+    ],
+    "available_in_saved_prefix": true,
+    "saved_rows": 52,
+    "median_shares": {
+      "numerator": 35679356,
+      "denominator": 1,
+      "display_2dp": "35679356.00"
+    },
+    "period_selection": "RETROSPECTIVE_READING_WINDOW_NOT_AUTOMATIC_FORMATION_OR_HISTORICAL_SELECTION"
+  },
+  "events": [
+    {
+      "date": "2026-06-01",
+      "bar": {
+        "close": "31.45",
+        "date": "2026-06-01",
+        "high": "31.50",
+        "low": "30.80",
+        "open": "30.95",
+        "volume_shares_scaled": "59743502"
+      },
+      "references": {
+        "lower_activity_high": {
+          "value": "33.20",
+          "close_relation": "BELOW",
+          "wick_contains_reference": false,
+          "high_strictly_above": false,
+          "whole_bar_above": false,
+          "whole_bar_below": true,
+          "previous_close_relation": "BELOW",
+          "saved_close_cross": null,
+          "departure_from_equal_close": null
+        },
+        "broader_high": {
+          "value": "35.50",
+          "close_relation": "BELOW",
+          "wick_contains_reference": false,
+          "high_strictly_above": false,
+          "whole_bar_above": false,
+          "whole_bar_below": true,
+          "previous_close_relation": "BELOW",
+          "saved_close_cross": null,
+          "departure_from_equal_close": null
+        }
+      },
+      "volume": {
+        "shares": "59743502",
+        "previous_saved_day": "2026-05-29",
+        "vs_previous_saved_day": {
+          "numerator": 59743502,
+          "denominator": 119510199,
+          "display_2dp": "0.50"
+        },
+        "frozen_source_median_shares": {
+          "numerator": 35679356,
+          "denominator": 1,
+          "display_2dp": "35679356.00"
+        },
+        "vs_frozen_source_median": {
+          "numerator": 29871751,
+          "denominator": 17839678,
+          "display_2dp": "1.67"
+        },
+        "prior20_mean_shares": {
+          "numerator": 223567768,
+          "denominator": 5,
+          "display_2dp": "44713553.60"
+        },
+        "prior20_start": "2026-05-04",
+        "prior20_end": "2026-05-29",
+        "vs_prior20_mean": {
+          "numerator": 149358755,
+          "denominator": 111783884,
+          "display_2dp": "1.34"
+        },
+        "volume_qualification": null
+      }
+    },
+    {
+      "date": "2026-06-02",
+      "bar": {
+        "close": "32.20",
+        "date": "2026-06-02",
+        "high": "32.20",
+        "low": "31.40",
+        "open": "31.40",
+        "volume_shares_scaled": "78075377"
+      },
+      "references": {
+        "lower_activity_high": {
+          "value": "33.20",
+          "close_relation": "BELOW",
+          "wick_contains_reference": false,
+          "high_strictly_above": false,
+          "whole_bar_above": false,
+          "whole_bar_below": true,
+          "previous_close_relation": "BELOW",
+          "saved_close_cross": null,
+          "departure_from_equal_close": null
+        },
+        "broader_high": {
+          "value": "35.50",
+          "close_relation": "BELOW",
+          "wick_contains_reference": false,
+          "high_strictly_above": false,
+          "whole_bar_above": false,
+          "whole_bar_below": true,
+          "previous_close_relation": "BELOW",
+          "saved_close_cross": null,
+          "departure_from_equal_close": null
+        }
+      },
+      "volume": {
+        "shares": "78075377",
+        "previous_saved_day": "2026-06-01",
+        "vs_previous_saved_day": {
+          "numerator": 78075377,
+          "denominator": 59743502,
+          "display_2dp": "1.31"
+        },
+        "frozen_source_median_shares": {
+          "numerator": 35679356,
+          "denominator": 1,
+          "display_2dp": "35679356.00"
+        },
+        "vs_frozen_source_median": {
+          "numerator": 78075377,
+          "denominator": 35679356,
+          "display_2dp": "2.19"
+        },
+        "prior20_mean_shares": {
+          "numerator": 179000183,
+          "denominator": 4,
+          "display_2dp": "44750045.75"
+        },
+        "prior20_start": "2026-05-05",
+        "prior20_end": "2026-06-01",
+        "vs_prior20_mean": {
+          "numerator": 312301508,
+          "denominator": 179000183,
+          "display_2dp": "1.74"
+        },
+        "volume_qualification": null
+      }
+    },
+    {
+      "date": "2026-06-03",
+      "bar": {
+        "close": "33.00",
+        "date": "2026-06-03",
+        "high": "33.30",
+        "low": "32.05",
+        "open": "32.30",
+        "volume_shares_scaled": "78949449"
+      },
+      "references": {
+        "lower_activity_high": {
+          "value": "33.20",
+          "close_relation": "BELOW",
+          "wick_contains_reference": true,
+          "high_strictly_above": true,
+          "whole_bar_above": false,
+          "whole_bar_below": false,
+          "previous_close_relation": "BELOW",
+          "saved_close_cross": null,
+          "departure_from_equal_close": null
+        },
+        "broader_high": {
+          "value": "35.50",
+          "close_relation": "BELOW",
+          "wick_contains_reference": false,
+          "high_strictly_above": false,
+          "whole_bar_above": false,
+          "whole_bar_below": true,
+          "previous_close_relation": "BELOW",
+          "saved_close_cross": null,
+          "departure_from_equal_close": null
+        }
+      },
+      "volume": {
+        "shares": "78949449",
+        "previous_saved_day": "2026-06-02",
+        "vs_previous_saved_day": {
+          "numerator": 78949449,
+          "denominator": 78075377,
+          "display_2dp": "1.01"
+        },
+        "frozen_source_median_shares": {
+          "numerator": 35679356,
+          "denominator": 1,
+          "display_2dp": "35679356.00"
+        },
+        "vs_frozen_source_median": {
+          "numerator": 78949449,
+          "denominator": 35679356,
+          "display_2dp": "2.21"
+        },
+        "prior20_mean_shares": {
+          "numerator": 234300511,
+          "denominator": 5,
+          "display_2dp": "46860102.20"
+        },
+        "prior20_start": "2026-05-06",
+        "prior20_end": "2026-06-02",
+        "vs_prior20_mean": {
+          "numerator": 394747245,
+          "denominator": 234300511,
+          "display_2dp": "1.68"
+        },
+        "volume_qualification": null
+      }
+    },
+    {
+      "date": "2026-06-04",
+      "bar": {
+        "close": "33.45",
+        "date": "2026-06-04",
+        "high": "33.70",
+        "low": "32.90",
+        "open": "33.00",
+        "volume_shares_scaled": "71753146"
+      },
+      "references": {
+        "lower_activity_high": {
+          "value": "33.20",
+          "close_relation": "ABOVE",
+          "wick_contains_reference": true,
+          "high_strictly_above": true,
+          "whole_bar_above": false,
+          "whole_bar_below": false,
+          "previous_close_relation": "BELOW",
+          "saved_close_cross": "UP",
+          "departure_from_equal_close": null
+        },
+        "broader_high": {
+          "value": "35.50",
+          "close_relation": "BELOW",
+          "wick_contains_reference": false,
+          "high_strictly_above": false,
+          "whole_bar_above": false,
+          "whole_bar_below": true,
+          "previous_close_relation": "BELOW",
+          "saved_close_cross": null,
+          "departure_from_equal_close": null
+        }
+      },
+      "volume": {
+        "shares": "71753146",
+        "previous_saved_day": "2026-06-03",
+        "vs_previous_saved_day": {
+          "numerator": 71753146,
+          "denominator": 78949449,
+          "display_2dp": "0.91"
+        },
+        "frozen_source_median_shares": {
+          "numerator": 35679356,
+          "denominator": 1,
+          "display_2dp": "35679356.00"
+        },
+        "vs_frozen_source_median": {
+          "numerator": 35876573,
+          "denominator": 17839678,
+          "display_2dp": "2.01"
+        },
+        "prior20_mean_shares": {
+          "numerator": 488069013,
+          "denominator": 10,
+          "display_2dp": "48806901.30"
+        },
+        "prior20_start": "2026-05-07",
+        "prior20_end": "2026-06-03",
+        "vs_prior20_mean": {
+          "numerator": 717531460,
+          "denominator": 488069013,
+          "display_2dp": "1.47"
+        },
+        "volume_qualification": null
+      }
+    },
+    {
+      "date": "2026-06-05",
+      "bar": {
+        "close": "33.35",
+        "date": "2026-06-05",
+        "high": "33.60",
+        "low": "32.90",
+        "open": "33.45",
+        "volume_shares_scaled": "49409021"
+      },
+      "references": {
+        "lower_activity_high": {
+          "value": "33.20",
+          "close_relation": "ABOVE",
+          "wick_contains_reference": true,
+          "high_strictly_above": true,
+          "whole_bar_above": false,
+          "whole_bar_below": false,
+          "previous_close_relation": "ABOVE",
+          "saved_close_cross": null,
+          "departure_from_equal_close": null
+        },
+        "broader_high": {
+          "value": "35.50",
+          "close_relation": "BELOW",
+          "wick_contains_reference": false,
+          "high_strictly_above": false,
+          "whole_bar_above": false,
+          "whole_bar_below": true,
+          "previous_close_relation": "BELOW",
+          "saved_close_cross": null,
+          "departure_from_equal_close": null
+        }
+      },
+      "volume": {
+        "shares": "49409021",
+        "previous_saved_day": "2026-06-04",
+        "vs_previous_saved_day": {
+          "numerator": 49409021,
+          "denominator": 71753146,
+          "display_2dp": "0.69"
+        },
+        "frozen_source_median_shares": {
+          "numerator": 35679356,
+          "denominator": 1,
+          "display_2dp": "35679356.00"
+        },
+        "vs_frozen_source_median": {
+          "numerator": 49409021,
+          "denominator": 35679356,
+          "display_2dp": "1.38"
+        },
+        "prior20_mean_shares": {
+          "numerator": 502677711,
+          "denominator": 10,
+          "display_2dp": "50267771.10"
+        },
+        "prior20_start": "2026-05-08",
+        "prior20_end": "2026-06-04",
+        "vs_prior20_mean": {
+          "numerator": 494090210,
+          "denominator": 502677711,
+          "display_2dp": "0.98"
+        },
+        "volume_qualification": null
+      }
+    },
+    {
+      "date": "2026-06-08",
+      "bar": {
+        "close": "32.90",
+        "date": "2026-06-08",
+        "high": "33.10",
+        "low": "32.30",
+        "open": "32.75",
+        "volume_shares_scaled": "60140936"
+      },
+      "references": {
+        "lower_activity_high": {
+          "value": "33.20",
+          "close_relation": "BELOW",
+          "wick_contains_reference": false,
+          "high_strictly_above": false,
+          "whole_bar_above": false,
+          "whole_bar_below": true,
+          "previous_close_relation": "ABOVE",
+          "saved_close_cross": "DOWN",
+          "departure_from_equal_close": null
+        },
+        "broader_high": {
+          "value": "35.50",
+          "close_relation": "BELOW",
+          "wick_contains_reference": false,
+          "high_strictly_above": false,
+          "whole_bar_above": false,
+          "whole_bar_below": true,
+          "previous_close_relation": "BELOW",
+          "saved_close_cross": null,
+          "departure_from_equal_close": null
+        }
+      },
+      "volume": {
+        "shares": "60140936",
+        "previous_saved_day": "2026-06-05",
+        "vs_previous_saved_day": {
+          "numerator": 60140936,
+          "denominator": 49409021,
+          "display_2dp": "1.22"
+        },
+        "frozen_source_median_shares": {
+          "numerator": 35679356,
+          "denominator": 1,
+          "display_2dp": "35679356.00"
+        },
+        "vs_frozen_source_median": {
+          "numerator": 15035234,
+          "denominator": 8919839,
+          "display_2dp": "1.69"
+        },
+        "prior20_mean_shares": {
+          "numerator": 1014489987,
+          "denominator": 20,
+          "display_2dp": "50724499.35"
+        },
+        "prior20_start": "2026-05-11",
+        "prior20_end": "2026-06-05",
+        "vs_prior20_mean": {
+          "numerator": 1202818720,
+          "denominator": 1014489987,
+          "display_2dp": "1.19"
+        },
+        "volume_qualification": null
+      }
+    },
+    {
+      "date": "2026-06-09",
+      "bar": {
+        "close": "34.20",
+        "date": "2026-06-09",
+        "high": "34.35",
+        "low": "32.90",
+        "open": "32.90",
+        "volume_shares_scaled": "88605638"
+      },
+      "references": {
+        "lower_activity_high": {
+          "value": "33.20",
+          "close_relation": "ABOVE",
+          "wick_contains_reference": true,
+          "high_strictly_above": true,
+          "whole_bar_above": false,
+          "whole_bar_below": false,
+          "previous_close_relation": "BELOW",
+          "saved_close_cross": "UP",
+          "departure_from_equal_close": null
+        },
+        "broader_high": {
+          "value": "35.50",
+          "close_relation": "BELOW",
+          "wick_contains_reference": false,
+          "high_strictly_above": false,
+          "whole_bar_above": false,
+          "whole_bar_below": true,
+          "previous_close_relation": "BELOW",
+          "saved_close_cross": null,
+          "departure_from_equal_close": null
+        }
+      },
+      "volume": {
+        "shares": "88605638",
+        "previous_saved_day": "2026-06-08",
+        "vs_previous_saved_day": {
+          "numerator": 44302819,
+          "denominator": 30070468,
+          "display_2dp": "1.47"
+        },
+        "frozen_source_median_shares": {
+          "numerator": 35679356,
+          "denominator": 1,
+          "display_2dp": "35679356.00"
+        },
+        "vs_frozen_source_median": {
+          "numerator": 44302819,
+          "denominator": 17839678,
+          "display_2dp": "2.48"
+        },
+        "prior20_mean_shares": {
+          "numerator": 52290450,
+          "denominator": 1,
+          "display_2dp": "52290450.00"
+        },
+        "prior20_start": "2026-05-12",
+        "prior20_end": "2026-06-08",
+        "vs_prior20_mean": {
+          "numerator": 44302819,
+          "denominator": 26145225,
+          "display_2dp": "1.69"
+        },
+        "volume_qualification": null
+      }
+    },
+    {
+      "date": "2026-06-10",
+      "bar": {
+        "close": "33.65",
+        "date": "2026-06-10",
+        "high": "34.15",
+        "low": "33.15",
+        "open": "34.00",
+        "volume_shares_scaled": "59541179"
+      },
+      "references": {
+        "lower_activity_high": {
+          "value": "33.20",
+          "close_relation": "ABOVE",
+          "wick_contains_reference": true,
+          "high_strictly_above": true,
+          "whole_bar_above": false,
+          "whole_bar_below": false,
+          "previous_close_relation": "ABOVE",
+          "saved_close_cross": null,
+          "departure_from_equal_close": null
+        },
+        "broader_high": {
+          "value": "35.50",
+          "close_relation": "BELOW",
+          "wick_contains_reference": false,
+          "high_strictly_above": false,
+          "whole_bar_above": false,
+          "whole_bar_below": true,
+          "previous_close_relation": "BELOW",
+          "saved_close_cross": null,
+          "departure_from_equal_close": null
+        }
+      },
+      "volume": {
+        "shares": "59541179",
+        "previous_saved_day": "2026-06-09",
+        "vs_previous_saved_day": {
+          "numerator": 59541179,
+          "denominator": 88605638,
+          "display_2dp": "0.67"
+        },
+        "frozen_source_median_shares": {
+          "numerator": 35679356,
+          "denominator": 1,
+          "display_2dp": "35679356.00"
+        },
+        "vs_frozen_source_median": {
+          "numerator": 59541179,
+          "denominator": 35679356,
+          "display_2dp": "1.67"
+        },
+        "prior20_mean_shares": {
+          "numerator": 1086045969,
+          "denominator": 20,
+          "display_2dp": "54302298.45"
+        },
+        "prior20_start": "2026-05-13",
+        "prior20_end": "2026-06-09",
+        "vs_prior20_mean": {
+          "numerator": 1190823580,
+          "denominator": 1086045969,
+          "display_2dp": "1.10"
+        },
+        "volume_qualification": null
+      }
+    },
+    {
+      "date": "2026-06-11",
+      "bar": {
+        "close": "33.85",
+        "date": "2026-06-11",
+        "high": "33.85",
+        "low": "33.05",
+        "open": "33.65",
+        "volume_shares_scaled": "45609225"
+      },
+      "references": {
+        "lower_activity_high": {
+          "value": "33.20",
+          "close_relation": "ABOVE",
+          "wick_contains_reference": true,
+          "high_strictly_above": true,
+          "whole_bar_above": false,
+          "whole_bar_below": false,
+          "previous_close_relation": "ABOVE",
+          "saved_close_cross": null,
+          "departure_from_equal_close": null
+        },
+        "broader_high": {
+          "value": "35.50",
+          "close_relation": "BELOW",
+          "wick_contains_reference": false,
+          "high_strictly_above": false,
+          "whole_bar_above": false,
+          "whole_bar_below": true,
+          "previous_close_relation": "BELOW",
+          "saved_close_cross": null,
+          "departure_from_equal_close": null
+        }
+      },
+      "volume": {
+        "shares": "45609225",
+        "previous_saved_day": "2026-06-10",
+        "vs_previous_saved_day": {
+          "numerator": 45609225,
+          "denominator": 59541179,
+          "display_2dp": "0.77"
+        },
+        "frozen_source_median_shares": {
+          "numerator": 35679356,
+          "denominator": 1,
+          "display_2dp": "35679356.00"
+        },
+        "vs_frozen_source_median": {
+          "numerator": 45609225,
+          "denominator": 35679356,
+          "display_2dp": "1.28"
+        },
+        "prior20_mean_shares": {
+          "numerator": 278248171,
+          "denominator": 5,
+          "display_2dp": "55649634.20"
+        },
+        "prior20_start": "2026-05-14",
+        "prior20_end": "2026-06-10",
+        "vs_prior20_mean": {
+          "numerator": 228046125,
+          "denominator": 278248171,
+          "display_2dp": "0.82"
+        },
+        "volume_qualification": null
+      }
+    },
+    {
+      "date": "2026-06-12",
+      "bar": {
+        "close": "34.35",
+        "date": "2026-06-12",
+        "high": "34.70",
+        "low": "33.95",
+        "open": "34.15",
+        "volume_shares_scaled": "50080952"
+      },
+      "references": {
+        "lower_activity_high": {
+          "value": "33.20",
+          "close_relation": "ABOVE",
+          "wick_contains_reference": false,
+          "high_strictly_above": true,
+          "whole_bar_above": true,
+          "whole_bar_below": false,
+          "previous_close_relation": "ABOVE",
+          "saved_close_cross": null,
+          "departure_from_equal_close": null
+        },
+        "broader_high": {
+          "value": "35.50",
+          "close_relation": "BELOW",
+          "wick_contains_reference": false,
+          "high_strictly_above": false,
+          "whole_bar_above": false,
+          "whole_bar_below": true,
+          "previous_close_relation": "BELOW",
+          "saved_close_cross": null,
+          "departure_from_equal_close": null
+        }
+      },
+      "volume": {
+        "shares": "50080952",
+        "previous_saved_day": "2026-06-11",
+        "vs_previous_saved_day": {
+          "numerator": 50080952,
+          "denominator": 45609225,
+          "display_2dp": "1.10"
+        },
+        "frozen_source_median_shares": {
+          "numerator": 35679356,
+          "denominator": 1,
+          "display_2dp": "35679356.00"
+        },
+        "vs_frozen_source_median": {
+          "numerator": 12520238,
+          "denominator": 8919839,
+          "display_2dp": "1.40"
+        },
+        "prior20_mean_shares": {
+          "numerator": 283237809,
+          "denominator": 5,
+          "display_2dp": "56647561.80"
+        },
+        "prior20_start": "2026-05-15",
+        "prior20_end": "2026-06-11",
+        "vs_prior20_mean": {
+          "numerator": 250404760,
+          "denominator": 283237809,
+          "display_2dp": "0.88"
+        },
+        "volume_qualification": null
+      }
+    },
+    {
+      "date": "2026-06-15",
+      "bar": {
+        "close": "34.65",
+        "date": "2026-06-15",
+        "high": "34.85",
+        "low": "34.40",
+        "open": "34.85",
+        "volume_shares_scaled": "41423794"
+      },
+      "references": {
+        "lower_activity_high": {
+          "value": "33.20",
+          "close_relation": "ABOVE",
+          "wick_contains_reference": false,
+          "high_strictly_above": true,
+          "whole_bar_above": true,
+          "whole_bar_below": false,
+          "previous_close_relation": "ABOVE",
+          "saved_close_cross": null,
+          "departure_from_equal_close": null
+        },
+        "broader_high": {
+          "value": "35.50",
+          "close_relation": "BELOW",
+          "wick_contains_reference": false,
+          "high_strictly_above": false,
+          "whole_bar_above": false,
+          "whole_bar_below": true,
+          "previous_close_relation": "BELOW",
+          "saved_close_cross": null,
+          "departure_from_equal_close": null
+        }
+      },
+      "volume": {
+        "shares": "41423794",
+        "previous_saved_day": "2026-06-12",
+        "vs_previous_saved_day": {
+          "numerator": 20711897,
+          "denominator": 25040476,
+          "display_2dp": "0.83"
+        },
+        "frozen_source_median_shares": {
+          "numerator": 35679356,
+          "denominator": 1,
+          "display_2dp": "35679356.00"
+        },
+        "vs_frozen_source_median": {
+          "numerator": 20711897,
+          "denominator": 17839678,
+          "display_2dp": "1.16"
+        },
+        "prior20_mean_shares": {
+          "numerator": 1147462459,
+          "denominator": 20,
+          "display_2dp": "57373122.95"
+        },
+        "prior20_start": "2026-05-18",
+        "prior20_end": "2026-06-12",
+        "vs_prior20_mean": {
+          "numerator": 828475880,
+          "denominator": 1147462459,
+          "display_2dp": "0.72"
+        },
+        "volume_qualification": null
+      }
+    },
+    {
+      "date": "2026-06-16",
+      "bar": {
+        "close": "35.20",
+        "date": "2026-06-16",
+        "high": "35.35",
+        "low": "34.45",
+        "open": "34.70",
+        "volume_shares_scaled": "59663562"
+      },
+      "references": {
+        "lower_activity_high": {
+          "value": "33.20",
+          "close_relation": "ABOVE",
+          "wick_contains_reference": false,
+          "high_strictly_above": true,
+          "whole_bar_above": true,
+          "whole_bar_below": false,
+          "previous_close_relation": "ABOVE",
+          "saved_close_cross": null,
+          "departure_from_equal_close": null
+        },
+        "broader_high": {
+          "value": "35.50",
+          "close_relation": "BELOW",
+          "wick_contains_reference": false,
+          "high_strictly_above": false,
+          "whole_bar_above": false,
+          "whole_bar_below": true,
+          "previous_close_relation": "BELOW",
+          "saved_close_cross": null,
+          "departure_from_equal_close": null
+        }
+      },
+      "volume": {
+        "shares": "59663562",
+        "previous_saved_day": "2026-06-15",
+        "vs_previous_saved_day": {
+          "numerator": 29831781,
+          "denominator": 20711897,
+          "display_2dp": "1.44"
+        },
+        "frozen_source_median_shares": {
+          "numerator": 35679356,
+          "denominator": 1,
+          "display_2dp": "35679356.00"
+        },
+        "vs_frozen_source_median": {
+          "numerator": 29831781,
+          "denominator": 17839678,
+          "display_2dp": "1.67"
+        },
+        "prior20_mean_shares": {
+          "numerator": 1155628873,
+          "denominator": 20,
+          "display_2dp": "57781443.65"
+        },
+        "prior20_start": "2026-05-19",
+        "prior20_end": "2026-06-15",
+        "vs_prior20_mean": {
+          "numerator": 170467320,
+          "denominator": 165089839,
+          "display_2dp": "1.03"
+        },
+        "volume_qualification": null
+      }
+    },
+    {
+      "date": "2026-06-17",
+      "bar": {
+        "close": "35.50",
+        "date": "2026-06-17",
+        "high": "35.90",
+        "low": "35.05",
+        "open": "35.30",
+        "volume_shares_scaled": "60281414"
+      },
+      "references": {
+        "lower_activity_high": {
+          "value": "33.20",
+          "close_relation": "ABOVE",
+          "wick_contains_reference": false,
+          "high_strictly_above": true,
+          "whole_bar_above": true,
+          "whole_bar_below": false,
+          "previous_close_relation": "ABOVE",
+          "saved_close_cross": null,
+          "departure_from_equal_close": null
+        },
+        "broader_high": {
+          "value": "35.50",
+          "close_relation": "EQUAL",
+          "wick_contains_reference": true,
+          "high_strictly_above": true,
+          "whole_bar_above": false,
+          "whole_bar_below": false,
+          "previous_close_relation": "BELOW",
+          "saved_close_cross": null,
+          "departure_from_equal_close": null
+        }
+      },
+      "volume": {
+        "shares": "60281414",
+        "previous_saved_day": "2026-06-16",
+        "vs_previous_saved_day": {
+          "numerator": 30140707,
+          "denominator": 29831781,
+          "display_2dp": "1.01"
+        },
+        "frozen_source_median_shares": {
+          "numerator": 35679356,
+          "denominator": 1,
+          "display_2dp": "35679356.00"
+        },
+        "vs_frozen_source_median": {
+          "numerator": 30140707,
+          "denominator": 17839678,
+          "display_2dp": "1.69"
+        },
+        "prior20_mean_shares": {
+          "numerator": 1181273629,
+          "denominator": 20,
+          "display_2dp": "59063681.45"
+        },
+        "prior20_start": "2026-05-20",
+        "prior20_end": "2026-06-16",
+        "vs_prior20_mean": {
+          "numerator": 1205628280,
+          "denominator": 1181273629,
+          "display_2dp": "1.02"
+        },
+        "volume_qualification": null
+      }
+    },
+    {
+      "date": "2026-06-18",
+      "bar": {
+        "close": "35.40",
+        "date": "2026-06-18",
+        "high": "36.25",
+        "low": "35.40",
+        "open": "35.50",
+        "volume_shares_scaled": "98205698"
+      },
+      "references": {
+        "lower_activity_high": {
+          "value": "33.20",
+          "close_relation": "ABOVE",
+          "wick_contains_reference": false,
+          "high_strictly_above": true,
+          "whole_bar_above": true,
+          "whole_bar_below": false,
+          "previous_close_relation": "ABOVE",
+          "saved_close_cross": null,
+          "departure_from_equal_close": null
+        },
+        "broader_high": {
+          "value": "35.50",
+          "close_relation": "BELOW",
+          "wick_contains_reference": true,
+          "high_strictly_above": true,
+          "whole_bar_above": false,
+          "whole_bar_below": false,
+          "previous_close_relation": "EQUAL",
+          "saved_close_cross": null,
+          "departure_from_equal_close": "DOWN"
+        }
+      },
+      "volume": {
+        "shares": "98205698",
+        "previous_saved_day": "2026-06-17",
+        "vs_previous_saved_day": {
+          "numerator": 49102849,
+          "denominator": 30140707,
+          "display_2dp": "1.63"
+        },
+        "frozen_source_median_shares": {
+          "numerator": 35679356,
+          "denominator": 1,
+          "display_2dp": "35679356.00"
+        },
+        "vs_frozen_source_median": {
+          "numerator": 49102849,
+          "denominator": 17839678,
+          "display_2dp": "2.75"
+        },
+        "prior20_mean_shares": {
+          "numerator": 604527681,
+          "denominator": 10,
+          "display_2dp": "60452768.10"
+        },
+        "prior20_start": "2026-05-21",
+        "prior20_end": "2026-06-17",
+        "vs_prior20_mean": {
+          "numerator": 982056980,
+          "denominator": 604527681,
+          "display_2dp": "1.62"
+        },
+        "volume_qualification": null
+      }
+    },
+    {
+      "date": "2026-06-22",
+      "bar": {
+        "close": "35.80",
+        "date": "2026-06-22",
+        "high": "36.60",
+        "low": "35.70",
+        "open": "36.00",
+        "volume_shares_scaled": "106058238"
+      },
+      "references": {
+        "lower_activity_high": {
+          "value": "33.20",
+          "close_relation": "ABOVE",
+          "wick_contains_reference": false,
+          "high_strictly_above": true,
+          "whole_bar_above": true,
+          "whole_bar_below": false,
+          "previous_close_relation": "ABOVE",
+          "saved_close_cross": null,
+          "departure_from_equal_close": null
+        },
+        "broader_high": {
+          "value": "35.50",
+          "close_relation": "ABOVE",
+          "wick_contains_reference": false,
+          "high_strictly_above": true,
+          "whole_bar_above": true,
+          "whole_bar_below": false,
+          "previous_close_relation": "BELOW",
+          "saved_close_cross": "UP",
+          "departure_from_equal_close": null
+        }
+      },
+      "volume": {
+        "shares": "106058238",
+        "previous_saved_day": "2026-06-18",
+        "vs_previous_saved_day": {
+          "numerator": 53029119,
+          "denominator": 49102849,
+          "display_2dp": "1.08"
+        },
+        "frozen_source_median_shares": {
+          "numerator": 35679356,
+          "denominator": 1,
+          "display_2dp": "35679356.00"
+        },
+        "vs_frozen_source_median": {
+          "numerator": 53029119,
+          "denominator": 17839678,
+          "display_2dp": "2.97"
+        },
+        "prior20_mean_shares": {
+          "numerator": 255726577,
+          "denominator": 4,
+          "display_2dp": "63931644.25"
+        },
+        "prior20_start": "2026-05-22",
+        "prior20_end": "2026-06-18",
+        "vs_prior20_mean": {
+          "numerator": 424232952,
+          "denominator": 255726577,
+          "display_2dp": "1.66"
+        },
+        "volume_qualification": null
+      }
+    },
+    {
+      "date": "2026-06-23",
+      "bar": {
+        "close": "35.80",
+        "date": "2026-06-23",
+        "high": "36.35",
+        "low": "35.55",
+        "open": "35.80",
+        "volume_shares_scaled": "56291939"
+      },
+      "references": {
+        "lower_activity_high": {
+          "value": "33.20",
+          "close_relation": "ABOVE",
+          "wick_contains_reference": false,
+          "high_strictly_above": true,
+          "whole_bar_above": true,
+          "whole_bar_below": false,
+          "previous_close_relation": "ABOVE",
+          "saved_close_cross": null,
+          "departure_from_equal_close": null
+        },
+        "broader_high": {
+          "value": "35.50",
+          "close_relation": "ABOVE",
+          "wick_contains_reference": false,
+          "high_strictly_above": true,
+          "whole_bar_above": true,
+          "whole_bar_below": false,
+          "previous_close_relation": "ABOVE",
+          "saved_close_cross": null,
+          "departure_from_equal_close": null
+        }
+      },
+      "volume": {
+        "shares": "56291939",
+        "previous_saved_day": "2026-06-22",
+        "vs_previous_saved_day": {
+          "numerator": 5117449,
+          "denominator": 9641658,
+          "display_2dp": "0.53"
+        },
+        "frozen_source_median_shares": {
+          "numerator": 35679356,
+          "denominator": 1,
+          "display_2dp": "35679356.00"
+        },
+        "vs_frozen_source_median": {
+          "numerator": 56291939,
+          "denominator": 35679356,
+          "display_2dp": "1.58"
+        },
+        "prior20_mean_shares": {
+          "numerator": 1343862601,
+          "denominator": 20,
+          "display_2dp": "67193130.05"
+        },
+        "prior20_start": "2026-05-25",
+        "prior20_end": "2026-06-22",
+        "vs_prior20_mean": {
+          "numerator": 1125838780,
+          "denominator": 1343862601,
+          "display_2dp": "0.84"
+        },
+        "volume_qualification": null
+      }
+    },
+    {
+      "date": "2026-06-24",
+      "bar": {
+        "close": "35.00",
+        "date": "2026-06-24",
+        "high": "35.50",
+        "low": "35.00",
+        "open": "35.30",
+        "volume_shares_scaled": "66780179"
+      },
+      "references": {
+        "lower_activity_high": {
+          "value": "33.20",
+          "close_relation": "ABOVE",
+          "wick_contains_reference": false,
+          "high_strictly_above": true,
+          "whole_bar_above": true,
+          "whole_bar_below": false,
+          "previous_close_relation": "ABOVE",
+          "saved_close_cross": null,
+          "departure_from_equal_close": null
+        },
+        "broader_high": {
+          "value": "35.50",
+          "close_relation": "BELOW",
+          "wick_contains_reference": true,
+          "high_strictly_above": false,
+          "whole_bar_above": false,
+          "whole_bar_below": false,
+          "previous_close_relation": "ABOVE",
+          "saved_close_cross": "DOWN",
+          "departure_from_equal_close": null
+        }
+      },
+      "volume": {
+        "shares": "66780179",
+        "previous_saved_day": "2026-06-23",
+        "vs_previous_saved_day": {
+          "numerator": 66780179,
+          "denominator": 56291939,
+          "display_2dp": "1.19"
+        },
+        "frozen_source_median_shares": {
+          "numerator": 35679356,
+          "denominator": 1,
+          "display_2dp": "35679356.00"
+        },
+        "vs_frozen_source_median": {
+          "numerator": 66780179,
+          "denominator": 35679356,
+          "display_2dp": "1.87"
+        },
+        "prior20_mean_shares": {
+          "numerator": 1352389361,
+          "denominator": 20,
+          "display_2dp": "67619468.05"
+        },
+        "prior20_start": "2026-05-26",
+        "prior20_end": "2026-06-23",
+        "vs_prior20_mean": {
+          "numerator": 1335603580,
+          "denominator": 1352389361,
+          "display_2dp": "0.99"
+        },
+        "volume_qualification": null
+      }
+    },
+    {
+      "date": "2026-06-25",
+      "bar": {
+        "close": "35.45",
+        "date": "2026-06-25",
+        "high": "35.80",
+        "low": "34.90",
+        "open": "35.10",
+        "volume_shares_scaled": "76630970"
+      },
+      "references": {
+        "lower_activity_high": {
+          "value": "33.20",
+          "close_relation": "ABOVE",
+          "wick_contains_reference": false,
+          "high_strictly_above": true,
+          "whole_bar_above": true,
+          "whole_bar_below": false,
+          "previous_close_relation": "ABOVE",
+          "saved_close_cross": null,
+          "departure_from_equal_close": null
+        },
+        "broader_high": {
+          "value": "35.50",
+          "close_relation": "BELOW",
+          "wick_contains_reference": true,
+          "high_strictly_above": true,
+          "whole_bar_above": false,
+          "whole_bar_below": false,
+          "previous_close_relation": "BELOW",
+          "saved_close_cross": null,
+          "departure_from_equal_close": null
+        }
+      },
+      "volume": {
+        "shares": "76630970",
+        "previous_saved_day": "2026-06-24",
+        "vs_previous_saved_day": {
+          "numerator": 76630970,
+          "denominator": 66780179,
+          "display_2dp": "1.15"
+        },
+        "frozen_source_median_shares": {
+          "numerator": 35679356,
+          "denominator": 1,
+          "display_2dp": "35679356.00"
+        },
+        "vs_frozen_source_median": {
+          "numerator": 38315485,
+          "denominator": 17839678,
+          "display_2dp": "2.15"
+        },
+        "prior20_mean_shares": {
+          "numerator": 1370602361,
+          "denominator": 20,
+          "display_2dp": "68530118.05"
+        },
+        "prior20_start": "2026-05-27",
+        "prior20_end": "2026-06-24",
+        "vs_prior20_mean": {
+          "numerator": 1532619400,
+          "denominator": 1370602361,
+          "display_2dp": "1.12"
+        },
+        "volume_qualification": null
+      }
+    },
+    {
+      "date": "2026-06-26",
+      "bar": {
+        "close": "34.55",
+        "date": "2026-06-26",
+        "high": "35.35",
+        "low": "34.55",
+        "open": "35.00",
+        "volume_shares_scaled": "41921203"
+      },
+      "references": {
+        "lower_activity_high": {
+          "value": "33.20",
+          "close_relation": "ABOVE",
+          "wick_contains_reference": false,
+          "high_strictly_above": true,
+          "whole_bar_above": true,
+          "whole_bar_below": false,
+          "previous_close_relation": "ABOVE",
+          "saved_close_cross": null,
+          "departure_from_equal_close": null
+        },
+        "broader_high": {
+          "value": "35.50",
+          "close_relation": "BELOW",
+          "wick_contains_reference": false,
+          "high_strictly_above": false,
+          "whole_bar_above": false,
+          "whole_bar_below": true,
+          "previous_close_relation": "BELOW",
+          "saved_close_cross": null,
+          "departure_from_equal_close": null
+        }
+      },
+      "volume": {
+        "shares": "41921203",
+        "previous_saved_day": "2026-06-25",
+        "vs_previous_saved_day": {
+          "numerator": 41921203,
+          "denominator": 76630970,
+          "display_2dp": "0.55"
+        },
+        "frozen_source_median_shares": {
+          "numerator": 35679356,
+          "denominator": 1,
+          "display_2dp": "35679356.00"
+        },
+        "vs_frozen_source_median": {
+          "numerator": 41921203,
+          "denominator": 35679356,
+          "display_2dp": "1.17"
+        },
+        "prior20_mean_shares": {
+          "numerator": 348721476,
+          "denominator": 5,
+          "display_2dp": "69744295.20"
+        },
+        "prior20_start": "2026-05-28",
+        "prior20_end": "2026-06-25",
+        "vs_prior20_mean": {
+          "numerator": 209606015,
+          "denominator": 348721476,
+          "display_2dp": "0.60"
+        },
+        "volume_qualification": null
+      }
+    },
+    {
+      "date": "2026-06-29",
+      "bar": {
+        "close": "34.50",
+        "date": "2026-06-29",
+        "high": "35.10",
+        "low": "34.35",
+        "open": "35.05",
+        "volume_shares_scaled": "49520416"
+      },
+      "references": {
+        "lower_activity_high": {
+          "value": "33.20",
+          "close_relation": "ABOVE",
+          "wick_contains_reference": false,
+          "high_strictly_above": true,
+          "whole_bar_above": true,
+          "whole_bar_below": false,
+          "previous_close_relation": "ABOVE",
+          "saved_close_cross": null,
+          "departure_from_equal_close": null
+        },
+        "broader_high": {
+          "value": "35.50",
+          "close_relation": "BELOW",
+          "wick_contains_reference": false,
+          "high_strictly_above": false,
+          "whole_bar_above": false,
+          "whole_bar_below": true,
+          "previous_close_relation": "BELOW",
+          "saved_close_cross": null,
+          "departure_from_equal_close": null
+        }
+      },
+      "volume": {
+        "shares": "49520416",
+        "previous_saved_day": "2026-06-26",
+        "vs_previous_saved_day": {
+          "numerator": 49520416,
+          "denominator": 41921203,
+          "display_2dp": "1.18"
+        },
+        "frozen_source_median_shares": {
+          "numerator": 35679356,
+          "denominator": 1,
+          "display_2dp": "35679356.00"
+        },
+        "vs_frozen_source_median": {
+          "numerator": 12380104,
+          "denominator": 8919839,
+          "display_2dp": "1.39"
+        },
+        "prior20_mean_shares": {
+          "numerator": 1368675621,
+          "denominator": 20,
+          "display_2dp": "68433781.05"
+        },
+        "prior20_start": "2026-05-29",
+        "prior20_end": "2026-06-26",
+        "vs_prior20_mean": {
+          "numerator": 990408320,
+          "denominator": 1368675621,
+          "display_2dp": "0.72"
+        },
+        "volume_qualification": null
+      }
+    },
+    {
+      "date": "2026-06-30",
+      "bar": {
+        "close": "34.45",
+        "date": "2026-06-30",
+        "high": "34.90",
+        "low": "34.15",
+        "open": "34.60",
+        "volume_shares_scaled": "68370568"
+      },
+      "references": {
+        "lower_activity_high": {
+          "value": "33.20",
+          "close_relation": "ABOVE",
+          "wick_contains_reference": false,
+          "high_strictly_above": true,
+          "whole_bar_above": true,
+          "whole_bar_below": false,
+          "previous_close_relation": "ABOVE",
+          "saved_close_cross": null,
+          "departure_from_equal_close": null
+        },
+        "broader_high": {
+          "value": "35.50",
+          "close_relation": "BELOW",
+          "wick_contains_reference": false,
+          "high_strictly_above": false,
+          "whole_bar_above": false,
+          "whole_bar_below": true,
+          "previous_close_relation": "BELOW",
+          "saved_close_cross": null,
+          "departure_from_equal_close": null
+        }
+      },
+      "volume": {
+        "shares": "68370568",
+        "previous_saved_day": "2026-06-29",
+        "vs_previous_saved_day": {
+          "numerator": 8546321,
+          "denominator": 6190052,
+          "display_2dp": "1.38"
+        },
+        "frozen_source_median_shares": {
+          "numerator": 35679356,
+          "denominator": 1,
+          "display_2dp": "35679356.00"
+        },
+        "vs_frozen_source_median": {
+          "numerator": 17092642,
+          "denominator": 8919839,
+          "display_2dp": "1.92"
+        },
+        "prior20_mean_shares": {
+          "numerator": 649342919,
+          "denominator": 10,
+          "display_2dp": "64934291.90"
+        },
+        "prior20_start": "2026-06-01",
+        "prior20_end": "2026-06-29",
+        "vs_prior20_mean": {
+          "numerator": 683705680,
+          "denominator": 649342919,
+          "display_2dp": "1.05"
+        },
+        "volume_qualification": null
+      }
+    }
+  ],
+  "current_reference_relations": {
+    "lower_activity_high": "ABOVE",
+    "broader_high": "BELOW"
+  },
+  "formal_small_band": null,
+  "formal_large_band_bounds": null,
+  "volume_qualification": null,
+  "support_pressure_response_confirmed": null,
+  "trade_eligible": false,
+  "historical_signal_eligible": false
+}

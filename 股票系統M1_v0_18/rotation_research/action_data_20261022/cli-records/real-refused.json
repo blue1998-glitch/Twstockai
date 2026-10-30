@@ -1,0 +1,38 @@
+{
+  "id": "real-refused",
+  "schema": "rotation-record/0.1",
+  "value": {
+    "actual_realized_investor_return": null,
+    "daily": [],
+    "end": "2026-07-29",
+    "flywheel_validation": "NOT_VALIDATED",
+    "historical_signal_eligible": false,
+    "input_id": "sha256:ea23d6582933af3e8c442643b412b100c271ea2c0c6e5f59b704d535bd6f0b0c",
+    "journal": [],
+    "policy_authorized": false,
+    "primary_pressure_id": null,
+    "refusal_reasons": [
+      "ACTION_COVERAGE_INCOMPLETE:1101",
+      "ACTION_COVERAGE_INCOMPLETE:2884",
+      "CALENDAR_NOT_VERIFIED_COMPLETE",
+      "MISSING_EVENT_FIELD:sha256:b7ba974b62bad201a1757c3b8dc2015ae9a43d35f55c352bf0929c65cd2b0bd5:net_per_share",
+      "MISSING_EVENT_FIELD:sha256:cf65c6f1ab9ad9fb1a64a8405cd9d05505739e72d6383c5e37903389f52c7349:net_per_share",
+      "NET_DISTRIBUTIONS_TAX_FEES_UNKNOWN",
+      "OPENING_ENTITLEMENTS_UNKNOWN"
+    ],
+    "research_only": true,
+    "scenario_net_return": null,
+    "schema": "rotation-action-ledger/0.1",
+    "source_qualification": {
+      "calendar": "MATCHED_SAVED_DATES_NOT_EXHAUSTIVE",
+      "execution_costs": "SCENARIO_DAILY_OHLC_NOT_ACTUAL_FILLS",
+      "historical_availability": "RETROSPECTIVE_NOT_AUTHENTICATED",
+      "investor_cashflows": "NOT_AUTHENTICATED",
+      "net_distributions": "UNKNOWN_INVESTOR_TAX_AND_PAYMENT",
+      "opening_claims": "UNKNOWN_NO_ACQUISITION_OR_ENTITLEMENT_HISTORY"
+    },
+    "start": "2026-06-30",
+    "status": "REFUSED_INCOMPLETE_EVENT_ACCOUNTING",
+    "total_net_return": null
+  }
+}

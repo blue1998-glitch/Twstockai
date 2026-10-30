@@ -1,0 +1,337 @@
+{
+  "schema": "rotation-market-case-input/0.1",
+  "case_id": "1101-return-then-2884-opportunity",
+  "data_kind": "SAVED_REAL_RAW_WITH_EXPLICIT_HYPOTHETICAL_ACCOUNT",
+  "source_binding": {
+    "quotes": "sha256:a75ab687106a64988b2f5e4c4433a86b569ec974fac6ae3806cb890f5bc4ca7c",
+    "quote_manifest": "sha256:503b5905a7c133f24d763e03c36e9a61eaea6c9e1e6ad5eb47f235b5bd14b3bf",
+    "catalog": "sha256:a137969400c6149c17434e8991467afee71ebfc68597279f1ed6049c1b332fa3",
+    "calendar": "sha256:8b431ca5ec65e460c70b0a5fc4cbc2a7f63381052fa7e5ed85f449728d8fb113"
+  },
+  "common": {
+    "period": {
+      "start": "2026-04-07",
+      "end": "2026-06-23"
+    },
+    "account": {
+      "kind": "NEW_HYPOTHETICAL_CASH_NOT_USER_ACCOUNT",
+      "account_id": "TEST-ONLY-new-cash",
+      "cash": "10000",
+      "shares": {
+        "1101": "0",
+        "2884": "0"
+      },
+      "cash_claims": [],
+      "share_claims": [],
+      "rights_basis": "EXPLICIT_NEW_ACCOUNT_ASSUMPTION_NOT_PRIVATE_EVIDENCE"
+    },
+    "execution_model": {
+      "id": "TEST-ONLY-model",
+      "description": "NON_EXECUTABLE_BINDING_CONTROL_NOT_SELECTED_MARKET_MODEL",
+      "parameter_source": "fixture:explicit-readiness-control",
+      "declared_at": "2026-10-27T00:00:00+00:00",
+      "fill_role": "HYPOTHETICAL_EXPLICIT_NOT_ACTUAL",
+      "settlement": "EXPLICIT_DATES_NOT_VERIFIED_REAL_CALENDAR",
+      "terminal_costs": {
+        "fee_rate": "0.001425",
+        "minimum_fee": "20",
+        "sell_tax": "0.003",
+        "slippage_bps": "10"
+      }
+    },
+    "market_observations": [
+      {
+        "code": "1101",
+        "at": "2026-04-09T09:00:00+08:00",
+        "available_at": "2026-04-09T09:00:00+08:00",
+        "price": "25.50",
+        "capacity": "10",
+        "market_state": "MODEL_OPEN_NOT_ACTUAL_FILL",
+        "source_id": "sha256:a75ab687106a64988b2f5e4c4433a86b569ec974fac6ae3806cb890f5bc4ca7c",
+        "basis_id": "RAW:fd5674f6d424dadbfe0644453e4f54c9ed8943fe3149b6f681f24932176db801",
+        "qualification": "TEST_ONLY_ASSUMPTION_NOT_HISTORICAL_AUTHENTICATION"
+      }
+    ]
+  },
+  "decisions": [
+    {
+      "id": "A-breakout",
+      "market_date": "2026-04-08",
+      "decision_at": "2026-04-08T17:00:00+08:00",
+      "data_cutoff": "2026-04-08T16:00:00+08:00",
+      "evidence_ids": [
+        "A-reference",
+        "A-breakout"
+      ]
+    },
+    {
+      "id": "A-return",
+      "market_date": "2026-04-09",
+      "decision_at": "2026-04-09T17:00:00+08:00",
+      "data_cutoff": "2026-04-09T16:00:00+08:00",
+      "evidence_ids": [
+        "A-reference",
+        "A-return"
+      ]
+    },
+    {
+      "id": "B-opportunity",
+      "market_date": "2026-06-22",
+      "decision_at": "2026-06-22T17:00:00+08:00",
+      "data_cutoff": "2026-06-22T16:00:00+08:00",
+      "evidence_ids": [
+        "B-reference",
+        "B-breakout"
+      ]
+    }
+  ],
+  "common_entry": {
+    "id": "TEST-entry-A",
+    "code": "1101",
+    "side": "BUY",
+    "date": "2026-04-09",
+    "decision_date": "2026-04-08",
+    "shares": "10",
+    "price": "25.50",
+    "fee": "1",
+    "tax": "0",
+    "settlement_date": "2026-04-10",
+    "source_ids": [
+      "quote-54"
+    ]
+  },
+  "paths": [
+    {
+      "id": "hold",
+      "intent": "HOLD_A",
+      "common": {
+        "period": {
+          "start": "2026-04-07",
+          "end": "2026-06-23"
+        },
+        "account": {
+          "kind": "NEW_HYPOTHETICAL_CASH_NOT_USER_ACCOUNT",
+          "account_id": "TEST-ONLY-new-cash",
+          "cash": "10000",
+          "shares": {
+            "1101": "0",
+            "2884": "0"
+          },
+          "cash_claims": [],
+          "share_claims": [],
+          "rights_basis": "EXPLICIT_NEW_ACCOUNT_ASSUMPTION_NOT_PRIVATE_EVIDENCE"
+        },
+        "execution_model": {
+          "id": "TEST-ONLY-model",
+          "description": "NON_EXECUTABLE_BINDING_CONTROL_NOT_SELECTED_MARKET_MODEL",
+          "parameter_source": "fixture:explicit-readiness-control",
+          "declared_at": "2026-10-27T00:00:00+00:00",
+          "fill_role": "HYPOTHETICAL_EXPLICIT_NOT_ACTUAL",
+          "settlement": "EXPLICIT_DATES_NOT_VERIFIED_REAL_CALENDAR",
+          "terminal_costs": {
+            "fee_rate": "0.001425",
+            "minimum_fee": "20",
+            "sell_tax": "0.003",
+            "slippage_bps": "10"
+          }
+        },
+        "market_observations": [
+          {
+            "code": "1101",
+            "at": "2026-04-09T09:00:00+08:00",
+            "available_at": "2026-04-09T09:00:00+08:00",
+            "price": "25.50",
+            "capacity": "10",
+            "market_state": "MODEL_OPEN_NOT_ACTUAL_FILL",
+            "source_id": "sha256:a75ab687106a64988b2f5e4c4433a86b569ec974fac6ae3806cb890f5bc4ca7c",
+            "basis_id": "RAW:fd5674f6d424dadbfe0644453e4f54c9ed8943fe3149b6f681f24932176db801",
+            "qualification": "TEST_ONLY_ASSUMPTION_NOT_HISTORICAL_AUTHENTICATION"
+          }
+        ]
+      },
+      "fills": [
+        {
+          "id": "TEST-entry-A",
+          "code": "1101",
+          "side": "BUY",
+          "date": "2026-04-09",
+          "decision_date": "2026-04-08",
+          "shares": "10",
+          "price": "25.50",
+          "fee": "1",
+          "tax": "0",
+          "settlement_date": "2026-04-10",
+          "source_ids": [
+            "quote-54"
+          ]
+        }
+      ],
+      "b_intent": "HOLD_CURRENT_FOR_PREPARATION_CONTROL"
+    },
+    {
+      "id": "reduce",
+      "intent": "REDUCE_A",
+      "common": {
+        "period": {
+          "start": "2026-04-07",
+          "end": "2026-06-23"
+        },
+        "account": {
+          "kind": "NEW_HYPOTHETICAL_CASH_NOT_USER_ACCOUNT",
+          "account_id": "TEST-ONLY-new-cash",
+          "cash": "10000",
+          "shares": {
+            "1101": "0",
+            "2884": "0"
+          },
+          "cash_claims": [],
+          "share_claims": [],
+          "rights_basis": "EXPLICIT_NEW_ACCOUNT_ASSUMPTION_NOT_PRIVATE_EVIDENCE"
+        },
+        "execution_model": {
+          "id": "TEST-ONLY-model",
+          "description": "NON_EXECUTABLE_BINDING_CONTROL_NOT_SELECTED_MARKET_MODEL",
+          "parameter_source": "fixture:explicit-readiness-control",
+          "declared_at": "2026-10-27T00:00:00+00:00",
+          "fill_role": "HYPOTHETICAL_EXPLICIT_NOT_ACTUAL",
+          "settlement": "EXPLICIT_DATES_NOT_VERIFIED_REAL_CALENDAR",
+          "terminal_costs": {
+            "fee_rate": "0.001425",
+            "minimum_fee": "20",
+            "sell_tax": "0.003",
+            "slippage_bps": "10"
+          }
+        },
+        "market_observations": [
+          {
+            "code": "1101",
+            "at": "2026-04-09T09:00:00+08:00",
+            "available_at": "2026-04-09T09:00:00+08:00",
+            "price": "25.50",
+            "capacity": "10",
+            "market_state": "MODEL_OPEN_NOT_ACTUAL_FILL",
+            "source_id": "sha256:a75ab687106a64988b2f5e4c4433a86b569ec974fac6ae3806cb890f5bc4ca7c",
+            "basis_id": "RAW:fd5674f6d424dadbfe0644453e4f54c9ed8943fe3149b6f681f24932176db801",
+            "qualification": "TEST_ONLY_ASSUMPTION_NOT_HISTORICAL_AUTHENTICATION"
+          }
+        ]
+      },
+      "fills": [
+        {
+          "id": "TEST-entry-A",
+          "code": "1101",
+          "side": "BUY",
+          "date": "2026-04-09",
+          "decision_date": "2026-04-08",
+          "shares": "10",
+          "price": "25.50",
+          "fee": "1",
+          "tax": "0",
+          "settlement_date": "2026-04-10",
+          "source_ids": [
+            "quote-54"
+          ]
+        },
+        {
+          "id": "TEST-sell-reduce",
+          "code": "1101",
+          "side": "SELL",
+          "date": "2026-04-10",
+          "decision_date": "2026-04-09",
+          "shares": "5",
+          "price": "25.10",
+          "fee": "1",
+          "tax": "0",
+          "settlement_date": "2026-04-13",
+          "source_ids": [
+            "quote-54"
+          ]
+        }
+      ],
+      "b_intent": "HOLD_CURRENT_FOR_PREPARATION_CONTROL"
+    },
+    {
+      "id": "cash",
+      "intent": "EXIT_A_TO_CASH",
+      "common": {
+        "period": {
+          "start": "2026-04-07",
+          "end": "2026-06-23"
+        },
+        "account": {
+          "kind": "NEW_HYPOTHETICAL_CASH_NOT_USER_ACCOUNT",
+          "account_id": "TEST-ONLY-new-cash",
+          "cash": "10000",
+          "shares": {
+            "1101": "0",
+            "2884": "0"
+          },
+          "cash_claims": [],
+          "share_claims": [],
+          "rights_basis": "EXPLICIT_NEW_ACCOUNT_ASSUMPTION_NOT_PRIVATE_EVIDENCE"
+        },
+        "execution_model": {
+          "id": "TEST-ONLY-model",
+          "description": "NON_EXECUTABLE_BINDING_CONTROL_NOT_SELECTED_MARKET_MODEL",
+          "parameter_source": "fixture:explicit-readiness-control",
+          "declared_at": "2026-10-27T00:00:00+00:00",
+          "fill_role": "HYPOTHETICAL_EXPLICIT_NOT_ACTUAL",
+          "settlement": "EXPLICIT_DATES_NOT_VERIFIED_REAL_CALENDAR",
+          "terminal_costs": {
+            "fee_rate": "0.001425",
+            "minimum_fee": "20",
+            "sell_tax": "0.003",
+            "slippage_bps": "10"
+          }
+        },
+        "market_observations": [
+          {
+            "code": "1101",
+            "at": "2026-04-09T09:00:00+08:00",
+            "available_at": "2026-04-09T09:00:00+08:00",
+            "price": "25.50",
+            "capacity": "10",
+            "market_state": "MODEL_OPEN_NOT_ACTUAL_FILL",
+            "source_id": "sha256:a75ab687106a64988b2f5e4c4433a86b569ec974fac6ae3806cb890f5bc4ca7c",
+            "basis_id": "RAW:fd5674f6d424dadbfe0644453e4f54c9ed8943fe3149b6f681f24932176db801",
+            "qualification": "TEST_ONLY_ASSUMPTION_NOT_HISTORICAL_AUTHENTICATION"
+          }
+        ]
+      },
+      "fills": [
+        {
+          "id": "TEST-entry-A",
+          "code": "1101",
+          "side": "BUY",
+          "date": "2026-04-09",
+          "decision_date": "2026-04-08",
+          "shares": "10",
+          "price": "25.50",
+          "fee": "1",
+          "tax": "0",
+          "settlement_date": "2026-04-10",
+          "source_ids": [
+            "quote-54"
+          ]
+        },
+        {
+          "id": "TEST-sell-cash",
+          "code": "1101",
+          "side": "SELL",
+          "date": "2026-04-10",
+          "decision_date": "2026-04-09",
+          "shares": "10",
+          "price": "25.10",
+          "fee": "1",
+          "tax": "0",
+          "settlement_date": "2026-04-13",
+          "source_ids": [
+            "quote-54"
+          ]
+        }
+      ],
+      "b_intent": "HOLD_CURRENT_FOR_PREPARATION_CONTROL"
+    }
+  ],
+  "synthetic": true
+}

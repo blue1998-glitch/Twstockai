@@ -1,0 +1,17 @@
+{
+  "expected": {
+    "status": "REFUSED",
+    "reason": "ORIGINAL_CAPITAL_CONFLICT"
+  },
+  "actual": [
+    {
+      "reason": "SAVED_RESULT_UNREADABLE",
+      "path": "/saved_result",
+      "classification": "SAVED_RESULT_OR_REQUIRED_VALUE_NOT_SUPPORTED",
+      "guard_reasons": [
+        "ORIGIN_CAPITAL_CHANGED"
+      ]
+    }
+  ],
+  "explanation": "Expected refusal confirmed by earlier unchanged lifecycle ORIGIN_CAPITAL_CHANGED gate; original oracle retained."
+}

@@ -1,0 +1,272 @@
+test_basis_reset_stops_old_comparison_reference_and_volume_baseline (test_graph_core.GraphCoreTests.test_basis_reset_stops_old_comparison_reference_and_volume_baseline) ... ERROR
+test_caller_manual_answers_and_strategy_promotion_refused (test_graph_core.GraphCoreTests.test_caller_manual_answers_and_strategy_promotion_refused) ... ok
+test_complete_vs_truncated_prefix_identical_with_future_mutation (test_graph_core.GraphCoreTests.test_complete_vs_truncated_prefix_identical_with_future_mutation) ... ERROR
+test_confirmed_geometry_and_prior_events_survive_append (test_graph_core.GraphCoreTests.test_confirmed_geometry_and_prior_events_survive_append) ... ERROR
+test_core_runs_without_ui_database_network_or_old_engine_imports (test_graph_core.GraphCoreTests.test_core_runs_without_ui_database_network_or_old_engine_imports) ... FAIL
+test_equal_high_sources_preserved_without_unique_date_invention (test_graph_core.GraphCoreTests.test_equal_high_sources_preserved_without_unique_date_invention) ... ok
+test_fake_breakout_return_and_breakdown_new_box_both_preserved (test_graph_core.GraphCoreTests.test_fake_breakout_return_and_breakdown_new_box_both_preserved) ... ERROR
+test_generic_reference_keeps_every_failed_cross_without_intraday_claim (test_graph_core.GraphCoreTests.test_generic_reference_keeps_every_failed_cross_without_intraday_claim) ... ERROR
+test_input_not_mutated_and_code_rename_not_change_geometry (test_graph_core.GraphCoreTests.test_input_not_mutated_and_code_rename_not_change_geometry) ... ERROR
+test_invalid_units_ohlc_dates_complete_publication_and_basis_refused (test_graph_core.GraphCoreTests.test_invalid_units_ohlc_dates_complete_publication_and_basis_refused) ... ok
+test_missing_explicit_volume_and_conflicting_row_basis_refused (test_graph_core.GraphCoreTests.test_missing_explicit_volume_and_conflicting_row_basis_refused) ... ok
+test_missing_price_and_expected_date_split_not_bridge (test_graph_core.GraphCoreTests.test_missing_price_and_expected_date_split_not_bridge) ... ERROR
+test_monotone_trend_and_too_short_source_are_not_boxes (test_graph_core.GraphCoreTests.test_monotone_trend_and_too_short_source_are_not_boxes) ... ok
+test_multiscale_parent_geometry_and_conflicts_no_unique_ranking (test_graph_core.GraphCoreTests.test_multiscale_parent_geometry_and_conflicts_no_unique_ranking) ... ERROR
+test_occurrence_before_confirmation_and_no_future_point_before_confirm (test_graph_core.GraphCoreTests.test_occurrence_before_confirmation_and_no_future_point_before_confirm) ... ERROR
+test_path_decline_duration_and_event_volume_are_raw_evidence (test_graph_core.GraphCoreTests.test_path_decline_duration_and_event_volume_are_raw_evidence) ... ERROR
+test_real_source_prefix_and_case_sequence_are_evidence_not_accuracy (test_graph_core.GraphCoreTests.test_real_source_prefix_and_case_sequence_are_evidence_not_accuracy) ... ERROR
+test_repeated_swing_geometry_is_automatic_and_qualified (test_graph_core.GraphCoreTests.test_repeated_swing_geometry_is_automatic_and_qualified) ... ERROR
+test_same_day_extreme_reversal_order_ambiguity_is_retained (test_graph_core.GraphCoreTests.test_same_day_extreme_reversal_order_ambiguity_is_retained) ... ok
+test_volume_event_comparisons_exclude_today_and_preserve_nulls (test_graph_core.GraphCoreTests.test_volume_event_comparisons_exclude_today_and_preserve_nulls) ... ok
+test_volume_missing_unknown_vs_real_zero (test_graph_core.GraphCoreTests.test_volume_missing_unknown_vs_real_zero) ... ERROR
+
+======================================================================
+ERROR: test_basis_reset_stops_old_comparison_reference_and_volume_baseline (test_graph_core.GraphCoreTests.test_basis_reset_stops_old_comparison_reference_and_volume_baseline)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/workspace/Twstockai/股票系統M1_v0_18/tests/test_graph_core.py", line 96, in test_basis_reset_stops_old_comparison_reference_and_volume_baseline
+    p=payload(OSC+OSC);p['basis_break_dates']=[p['bars'][29]['date']];r=self.run_core(p)
+                                                                        ^^^^^^^^^^^^^^^^
+  File "/workspace/Twstockai/股票系統M1_v0_18/tests/test_graph_core.py", line 22, in run_core
+    def run_core(self,p,as_of=None):return analyze(p,as_of=as_of or p['bars'][-1]['date'])
+                                           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/workspace/Twstockai/股票系統M1_v0_18/graph_core/core.py", line 320, in analyze
+    path=trace_reference(rows,p['price'],p['confirmed_index'],stop_dates=resets),
+         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/workspace/Twstockai/股票系統M1_v0_18/graph_core/core.py", line 50, in trace_reference
+    if i not in volume_cache:volume_cache[i]=volume_observation(rows,i,resets)
+                ^^^^^^^^^^^^
+NameError: name 'volume_cache' is not defined
+
+======================================================================
+ERROR: test_complete_vs_truncated_prefix_identical_with_future_mutation (test_graph_core.GraphCoreTests.test_complete_vs_truncated_prefix_identical_with_future_mutation)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/workspace/Twstockai/股票系統M1_v0_18/tests/test_graph_core.py", line 42, in test_complete_vs_truncated_prefix_identical_with_future_mutation
+    a=self.run_core(p,p['bars'][i]['date']);short=deepcopy(p);short['bars']=short['bars'][:i+1]
+      ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/workspace/Twstockai/股票系統M1_v0_18/tests/test_graph_core.py", line 22, in run_core
+    def run_core(self,p,as_of=None):return analyze(p,as_of=as_of or p['bars'][-1]['date'])
+                                           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/workspace/Twstockai/股票系統M1_v0_18/graph_core/core.py", line 320, in analyze
+    path=trace_reference(rows,p['price'],p['confirmed_index'],stop_dates=resets),
+         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/workspace/Twstockai/股票系統M1_v0_18/graph_core/core.py", line 50, in trace_reference
+    if i not in volume_cache:volume_cache[i]=volume_observation(rows,i,resets)
+                ^^^^^^^^^^^^
+NameError: name 'volume_cache' is not defined
+
+======================================================================
+ERROR: test_confirmed_geometry_and_prior_events_survive_append (test_graph_core.GraphCoreTests.test_confirmed_geometry_and_prior_events_survive_append)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/workspace/Twstockai/股票系統M1_v0_18/tests/test_graph_core.py", line 49, in test_confirmed_geometry_and_prior_events_survive_append
+    p=payload(OSC+OSC+[115,120,105,85]+OSC);before=self.run_core(p,p['bars'][45]['date']);after=self.run_core(p)
+                                                   ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/workspace/Twstockai/股票系統M1_v0_18/tests/test_graph_core.py", line 22, in run_core
+    def run_core(self,p,as_of=None):return analyze(p,as_of=as_of or p['bars'][-1]['date'])
+                                           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/workspace/Twstockai/股票系統M1_v0_18/graph_core/core.py", line 320, in analyze
+    path=trace_reference(rows,p['price'],p['confirmed_index'],stop_dates=resets),
+         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/workspace/Twstockai/股票系統M1_v0_18/graph_core/core.py", line 50, in trace_reference
+    if i not in volume_cache:volume_cache[i]=volume_observation(rows,i,resets)
+                ^^^^^^^^^^^^
+NameError: name 'volume_cache' is not defined
+
+======================================================================
+ERROR: test_fake_breakout_return_and_breakdown_new_box_both_preserved (test_graph_core.GraphCoreTests.test_fake_breakout_return_and_breakdown_new_box_both_preserved)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/workspace/Twstockai/股票系統M1_v0_18/tests/test_graph_core.py", line 58, in test_fake_breakout_return_and_breakdown_new_box_both_preserved
+    r=self.run_core(p);events=[e for b in r['boxes'] for e in b['path']['events']]
+      ^^^^^^^^^^^^^^^^
+  File "/workspace/Twstockai/股票系統M1_v0_18/tests/test_graph_core.py", line 22, in run_core
+    def run_core(self,p,as_of=None):return analyze(p,as_of=as_of or p['bars'][-1]['date'])
+                                           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/workspace/Twstockai/股票系統M1_v0_18/graph_core/core.py", line 320, in analyze
+    path=trace_reference(rows,p['price'],p['confirmed_index'],stop_dates=resets),
+         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/workspace/Twstockai/股票系統M1_v0_18/graph_core/core.py", line 50, in trace_reference
+    if i not in volume_cache:volume_cache[i]=volume_observation(rows,i,resets)
+                ^^^^^^^^^^^^
+NameError: name 'volume_cache' is not defined
+
+======================================================================
+ERROR: test_generic_reference_keeps_every_failed_cross_without_intraday_claim (test_graph_core.GraphCoreTests.test_generic_reference_keeps_every_failed_cross_without_intraday_claim)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/workspace/Twstockai/股票系統M1_v0_18/tests/test_graph_core.py", line 144, in test_generic_reference_keeps_every_failed_cross_without_intraday_claim
+    p=payload([99,101,99,102,98,103]);path=trace_reference(p['bars'],'100',0)
+                                           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/workspace/Twstockai/股票系統M1_v0_18/graph_core/core.py", line 50, in trace_reference
+    if i not in volume_cache:volume_cache[i]=volume_observation(rows,i,resets)
+                ^^^^^^^^^^^^
+NameError: name 'volume_cache' is not defined
+
+======================================================================
+ERROR: test_input_not_mutated_and_code_rename_not_change_geometry (test_graph_core.GraphCoreTests.test_input_not_mutated_and_code_rename_not_change_geometry)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/workspace/Twstockai/股票系統M1_v0_18/tests/test_graph_core.py", line 139, in test_input_not_mutated_and_code_rename_not_change_geometry
+    p=payload(OSC);before=deepcopy(p);a=self.run_core(p);self.assertEqual(p,before)
+                                        ^^^^^^^^^^^^^^^^
+  File "/workspace/Twstockai/股票系統M1_v0_18/tests/test_graph_core.py", line 22, in run_core
+    def run_core(self,p,as_of=None):return analyze(p,as_of=as_of or p['bars'][-1]['date'])
+                                           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/workspace/Twstockai/股票系統M1_v0_18/graph_core/core.py", line 320, in analyze
+    path=trace_reference(rows,p['price'],p['confirmed_index'],stop_dates=resets),
+         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/workspace/Twstockai/股票系統M1_v0_18/graph_core/core.py", line 50, in trace_reference
+    if i not in volume_cache:volume_cache[i]=volume_observation(rows,i,resets)
+                ^^^^^^^^^^^^
+NameError: name 'volume_cache' is not defined
+
+======================================================================
+ERROR: test_missing_price_and_expected_date_split_not_bridge (test_graph_core.GraphCoreTests.test_missing_price_and_expected_date_split_not_bridge)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/workspace/Twstockai/股票系統M1_v0_18/tests/test_graph_core.py", line 87, in test_missing_price_and_expected_date_split_not_bridge
+    r=self.run_core(p);self.assertIn(p['bars'][i]['date'],r['data_gaps']['missing_price_rows'])
+      ^^^^^^^^^^^^^^^^
+  File "/workspace/Twstockai/股票系統M1_v0_18/tests/test_graph_core.py", line 22, in run_core
+    def run_core(self,p,as_of=None):return analyze(p,as_of=as_of or p['bars'][-1]['date'])
+                                           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/workspace/Twstockai/股票系統M1_v0_18/graph_core/core.py", line 320, in analyze
+    path=trace_reference(rows,p['price'],p['confirmed_index'],stop_dates=resets),
+         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/workspace/Twstockai/股票系統M1_v0_18/graph_core/core.py", line 50, in trace_reference
+    if i not in volume_cache:volume_cache[i]=volume_observation(rows,i,resets)
+                ^^^^^^^^^^^^
+NameError: name 'volume_cache' is not defined
+
+======================================================================
+ERROR: test_multiscale_parent_geometry_and_conflicts_no_unique_ranking (test_graph_core.GraphCoreTests.test_multiscale_parent_geometry_and_conflicts_no_unique_ranking)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/workspace/Twstockai/股票系統M1_v0_18/tests/test_graph_core.py", line 150, in test_multiscale_parent_geometry_and_conflicts_no_unique_ranking
+    r=self.run_core(payload(OSC+OSC+[115,110,100,90,95]+OSC));by_id={b['id']:b for b in r['boxes']}
+      ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/workspace/Twstockai/股票系統M1_v0_18/tests/test_graph_core.py", line 22, in run_core
+    def run_core(self,p,as_of=None):return analyze(p,as_of=as_of or p['bars'][-1]['date'])
+                                           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/workspace/Twstockai/股票系統M1_v0_18/graph_core/core.py", line 320, in analyze
+    path=trace_reference(rows,p['price'],p['confirmed_index'],stop_dates=resets),
+         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/workspace/Twstockai/股票系統M1_v0_18/graph_core/core.py", line 50, in trace_reference
+    if i not in volume_cache:volume_cache[i]=volume_observation(rows,i,resets)
+                ^^^^^^^^^^^^
+NameError: name 'volume_cache' is not defined
+
+======================================================================
+ERROR: test_occurrence_before_confirmation_and_no_future_point_before_confirm (test_graph_core.GraphCoreTests.test_occurrence_before_confirmation_and_no_future_point_before_confirm)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/workspace/Twstockai/股票系統M1_v0_18/tests/test_graph_core.py", line 71, in test_occurrence_before_confirmation_and_no_future_point_before_confirm
+    p=payload(OSC);r=self.run_core(p)
+                     ^^^^^^^^^^^^^^^^
+  File "/workspace/Twstockai/股票系統M1_v0_18/tests/test_graph_core.py", line 22, in run_core
+    def run_core(self,p,as_of=None):return analyze(p,as_of=as_of or p['bars'][-1]['date'])
+                                           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/workspace/Twstockai/股票系統M1_v0_18/graph_core/core.py", line 320, in analyze
+    path=trace_reference(rows,p['price'],p['confirmed_index'],stop_dates=resets),
+         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/workspace/Twstockai/股票系統M1_v0_18/graph_core/core.py", line 50, in trace_reference
+    if i not in volume_cache:volume_cache[i]=volume_observation(rows,i,resets)
+                ^^^^^^^^^^^^
+NameError: name 'volume_cache' is not defined
+
+======================================================================
+ERROR: test_path_decline_duration_and_event_volume_are_raw_evidence (test_graph_core.GraphCoreTests.test_path_decline_duration_and_event_volume_are_raw_evidence)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/workspace/Twstockai/股票系統M1_v0_18/tests/test_graph_core.py", line 187, in test_path_decline_duration_and_event_volume_are_raw_evidence
+    p=payload(OSC+[115,118,105,85,90]);r=self.run_core(p)
+                                         ^^^^^^^^^^^^^^^^
+  File "/workspace/Twstockai/股票系統M1_v0_18/tests/test_graph_core.py", line 22, in run_core
+    def run_core(self,p,as_of=None):return analyze(p,as_of=as_of or p['bars'][-1]['date'])
+                                           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/workspace/Twstockai/股票系統M1_v0_18/graph_core/core.py", line 320, in analyze
+    path=trace_reference(rows,p['price'],p['confirmed_index'],stop_dates=resets),
+         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/workspace/Twstockai/股票系統M1_v0_18/graph_core/core.py", line 50, in trace_reference
+    if i not in volume_cache:volume_cache[i]=volume_observation(rows,i,resets)
+                ^^^^^^^^^^^^
+NameError: name 'volume_cache' is not defined
+
+======================================================================
+ERROR: test_real_source_prefix_and_case_sequence_are_evidence_not_accuracy (test_graph_core.GraphCoreTests.test_real_source_prefix_and_case_sequence_are_evidence_not_accuracy)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/workspace/Twstockai/股票系統M1_v0_18/tests/test_graph_core.py", line 197, in test_real_source_prefix_and_case_sequence_are_evidence_not_accuracy
+    r=self.run_core(p);self.assertEqual(r['anchor']['close'],'27.30');self.assertTrue(r['boxes'])
+      ^^^^^^^^^^^^^^^^
+  File "/workspace/Twstockai/股票系統M1_v0_18/tests/test_graph_core.py", line 22, in run_core
+    def run_core(self,p,as_of=None):return analyze(p,as_of=as_of or p['bars'][-1]['date'])
+                                           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/workspace/Twstockai/股票系統M1_v0_18/graph_core/core.py", line 320, in analyze
+    path=trace_reference(rows,p['price'],p['confirmed_index'],stop_dates=resets),
+         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/workspace/Twstockai/股票系統M1_v0_18/graph_core/core.py", line 50, in trace_reference
+    if i not in volume_cache:volume_cache[i]=volume_observation(rows,i,resets)
+                ^^^^^^^^^^^^
+NameError: name 'volume_cache' is not defined
+
+======================================================================
+ERROR: test_repeated_swing_geometry_is_automatic_and_qualified (test_graph_core.GraphCoreTests.test_repeated_swing_geometry_is_automatic_and_qualified)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/workspace/Twstockai/股票系統M1_v0_18/tests/test_graph_core.py", line 25, in test_repeated_swing_geometry_is_automatic_and_qualified
+    p=payload(OSC);r=self.run_core(p)
+                     ^^^^^^^^^^^^^^^^
+  File "/workspace/Twstockai/股票系統M1_v0_18/tests/test_graph_core.py", line 22, in run_core
+    def run_core(self,p,as_of=None):return analyze(p,as_of=as_of or p['bars'][-1]['date'])
+                                           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/workspace/Twstockai/股票系統M1_v0_18/graph_core/core.py", line 320, in analyze
+    path=trace_reference(rows,p['price'],p['confirmed_index'],stop_dates=resets),
+         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/workspace/Twstockai/股票系統M1_v0_18/graph_core/core.py", line 50, in trace_reference
+    if i not in volume_cache:volume_cache[i]=volume_observation(rows,i,resets)
+                ^^^^^^^^^^^^
+NameError: name 'volume_cache' is not defined
+
+======================================================================
+ERROR: test_volume_missing_unknown_vs_real_zero (test_graph_core.GraphCoreTests.test_volume_missing_unknown_vs_real_zero)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/workspace/Twstockai/股票系統M1_v0_18/tests/test_graph_core.py", line 109, in test_volume_missing_unknown_vs_real_zero
+    p=payload(OSC,missing_volume=range(len(OSC)));r=self.run_core(p)
+                                                    ^^^^^^^^^^^^^^^^
+  File "/workspace/Twstockai/股票系統M1_v0_18/tests/test_graph_core.py", line 22, in run_core
+    def run_core(self,p,as_of=None):return analyze(p,as_of=as_of or p['bars'][-1]['date'])
+                                           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/workspace/Twstockai/股票系統M1_v0_18/graph_core/core.py", line 320, in analyze
+    path=trace_reference(rows,p['price'],p['confirmed_index'],stop_dates=resets),
+         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/workspace/Twstockai/股票系統M1_v0_18/graph_core/core.py", line 50, in trace_reference
+    if i not in volume_cache:volume_cache[i]=volume_observation(rows,i,resets)
+                ^^^^^^^^^^^^
+NameError: name 'volume_cache' is not defined
+
+======================================================================
+FAIL: test_core_runs_without_ui_database_network_or_old_engine_imports (test_graph_core.GraphCoreTests.test_core_runs_without_ui_database_network_or_old_engine_imports)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/workspace/Twstockai/股票系統M1_v0_18/tests/test_graph_core.py", line 174, in test_core_runs_without_ui_database_network_or_old_engine_imports
+    self.assertEqual(result.returncode,0,result.stderr);self.assertIn('graph-recognition-research',result.stdout)
+    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+AssertionError: 1 != 0 : Traceback (most recent call last):
+  File "<string>", line 8, in <module>
+  File "/workspace/Twstockai/股票系統M1_v0_18/graph_core/core.py", line 320, in analyze
+    path=trace_reference(rows,p['price'],p['confirmed_index'],stop_dates=resets),
+         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/workspace/Twstockai/股票系統M1_v0_18/graph_core/core.py", line 50, in trace_reference
+    if i not in volume_cache:volume_cache[i]=volume_observation(rows,i,resets)
+                ^^^^^^^^^^^^
+NameError: name 'volume_cache' is not defined
+
+
+----------------------------------------------------------------------
+Ran 21 tests in 5.490s
+
+FAILED (failures=1, errors=13)

@@ -1,0 +1,30 @@
+test_basis_reset_stops_old_comparison_reference_and_volume_baseline (test_graph_core.GraphCoreTests.test_basis_reset_stops_old_comparison_reference_and_volume_baseline) ... FAIL
+test_caller_manual_answers_and_strategy_promotion_refused (test_graph_core.GraphCoreTests.test_caller_manual_answers_and_strategy_promotion_refused) ... ok
+test_complete_vs_truncated_prefix_identical_with_future_mutation (test_graph_core.GraphCoreTests.test_complete_vs_truncated_prefix_identical_with_future_mutation) ... ok
+test_confirmed_geometry_and_prior_events_survive_append (test_graph_core.GraphCoreTests.test_confirmed_geometry_and_prior_events_survive_append) ... ok
+test_equal_high_sources_preserved_without_unique_date_invention (test_graph_core.GraphCoreTests.test_equal_high_sources_preserved_without_unique_date_invention) ... ok
+test_fake_breakout_return_and_breakdown_new_box_both_preserved (test_graph_core.GraphCoreTests.test_fake_breakout_return_and_breakdown_new_box_both_preserved) ... ok
+test_generic_reference_keeps_every_failed_cross_without_intraday_claim (test_graph_core.GraphCoreTests.test_generic_reference_keeps_every_failed_cross_without_intraday_claim) ... ok
+test_input_not_mutated_and_code_rename_not_change_geometry (test_graph_core.GraphCoreTests.test_input_not_mutated_and_code_rename_not_change_geometry) ... ok
+test_invalid_units_ohlc_dates_complete_publication_and_basis_refused (test_graph_core.GraphCoreTests.test_invalid_units_ohlc_dates_complete_publication_and_basis_refused) ... ok
+test_missing_price_and_expected_date_split_not_bridge (test_graph_core.GraphCoreTests.test_missing_price_and_expected_date_split_not_bridge) ... ok
+test_monotone_trend_and_too_short_source_are_not_boxes (test_graph_core.GraphCoreTests.test_monotone_trend_and_too_short_source_are_not_boxes) ... ok
+test_multiscale_parent_geometry_and_conflicts_no_unique_ranking (test_graph_core.GraphCoreTests.test_multiscale_parent_geometry_and_conflicts_no_unique_ranking) ... ok
+test_occurrence_before_confirmation_and_no_future_point_before_confirm (test_graph_core.GraphCoreTests.test_occurrence_before_confirmation_and_no_future_point_before_confirm) ... ok
+test_real_source_prefix_and_case_sequence_are_evidence_not_accuracy (test_graph_core.GraphCoreTests.test_real_source_prefix_and_case_sequence_are_evidence_not_accuracy) ... ok
+test_repeated_swing_geometry_is_automatic_and_qualified (test_graph_core.GraphCoreTests.test_repeated_swing_geometry_is_automatic_and_qualified) ... ok
+test_same_day_extreme_reversal_order_ambiguity_is_retained (test_graph_core.GraphCoreTests.test_same_day_extreme_reversal_order_ambiguity_is_retained) ... ok
+test_volume_missing_unknown_vs_real_zero (test_graph_core.GraphCoreTests.test_volume_missing_unknown_vs_real_zero) ... ok
+
+======================================================================
+FAIL: test_basis_reset_stops_old_comparison_reference_and_volume_baseline (test_graph_core.GraphCoreTests.test_basis_reset_stops_old_comparison_reference_and_volume_baseline)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/workspace/Twstockai/股票系統M1_v0_18/tests/test_graph_core.py", line 101, in test_basis_reset_stops_old_comparison_reference_and_volume_baseline
+    self.assertTrue(all(b['volume']['prior_equal_record_window']['complete'] is False for b in r['boxes'] if b['segment']==1))
+AssertionError: False is not true
+
+----------------------------------------------------------------------
+Ran 17 tests in 3.539s
+
+FAILED (failures=1)

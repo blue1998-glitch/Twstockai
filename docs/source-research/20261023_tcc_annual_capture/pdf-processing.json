@@ -1,0 +1,154 @@
+{
+  "scope": "SOURCE_PROCESSING_NOT_PRODUCT_TEST",
+  "source_sha256": "7406e30d1f02f083611f594459b952494816d87237bf2203734ce6afb487155d",
+  "commands": [
+    {
+      "tool": "pdfinfo",
+      "command": [
+        "pdfinfo",
+        "/workspace/Twstockai/docs/source-research/20261023_tcc_annual_capture/raw/tcc-annual-114.response"
+      ],
+      "returncode": 0,
+      "started_at": "2026-10-23T17:19:04.250341+00:00",
+      "completed_at": "2026-10-23T17:19:04.320118+00:00",
+      "stdout_file": "raw/pdfinfo.stdout.txt",
+      "stderr_file": "raw/pdfinfo.stderr.txt",
+      "stderr_bytes": 0,
+      "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "stderr": ""
+    },
+    {
+      "tool": "pdftotext",
+      "command": [
+        "pdftotext",
+        "-layout",
+        "/workspace/Twstockai/docs/source-research/20261023_tcc_annual_capture/raw/tcc-annual-114.response",
+        "/workspace/Twstockai/docs/source-research/20261023_tcc_annual_capture/raw/tcc-annual-114.txt"
+      ],
+      "returncode": 0,
+      "started_at": "2026-10-23T17:19:04.320174+00:00",
+      "completed_at": "2026-10-23T17:19:04.899752+00:00",
+      "stdout_file": "raw/pdftotext.stdout.txt",
+      "stderr_file": "raw/pdftotext.stderr.txt",
+      "stderr_bytes": 7992,
+      "stderr_sha256": "8375352eee36fa690d4113f7bf928548eb9a29c531354d5c552e13a4b9b14471",
+      "stderr": "Syntax Warning: Invalid Font Weight\nSyntax Warning: Invalid Font Weight\nSyntax Warning: Invalid Font Weight\nSyntax Warning: Invalid Font Weight\nSyntax Warning: Invalid Font Weight\nSyntax Warning: Invalid Font Weight\nSyntax Warning: Invalid Font Weight\nSyntax Warning: Invalid Font Weight\nSyntax Warning: Invalid Font Weight\nSyntax Warning: Invalid Font Weight\nSyntax Warning: Invalid Font Weight\nSyntax Warning: Invalid Font Weight\nSyntax Warning: Invalid Font Weight\nSyntax Warning: Invalid Font Weight\nSyntax Warning: Invalid Font Weight\nSyntax Warning: Invalid Font Weight\nSyntax Warning: Invalid Font Weight\nSyntax Warning: Invalid Font Weight\nSyntax Warning: Invalid Font Weight\nSyntax Warning: Invalid Font Weight\nSyntax Warning: Invalid Font Weight\nSyntax Warning: Invalid Font Weight\nSyntax Warning: Invalid Font Weight\nSyntax Warning: Invalid Font Weight\nSyntax Warning: Invalid Font Weight\nSyntax Warning: Invalid Font Weight\nSyntax Warning: Invalid Font Weight\nSyntax Warning: Invalid Font Weight\nSyntax Warning: Invalid Font Weight\nSyntax Warning: Invalid Font Weight\nSyntax Warning: Invalid Font Weight\nSyntax Warning: Invalid Font Weight\nSyntax Warning: Invalid Font Weight\nSyntax Warning: Invalid Font Weight\nSyntax Warning: Invalid Font Weight\nSyntax Warning: Invalid Font Weight\nSyntax Warning: Invalid Font Weight\nSyntax Warning: Invalid Font Weight\nSyntax Warning: Invalid Font Weight\nSyntax Warning: Invalid Font Weight\nSyntax Warning: Invalid Font Weight\nSyntax Warning: Invalid Font Weight\nSyntax Warning: Invalid Font Weight\nSyntax Warning: Invalid Font Weight\nSyntax Warning: Invalid Font Weight\nSyntax Warning: Invalid Font Weight\nSyntax Warning: Invalid Font Weight\nSyntax Warning: Invalid Font Weight\nSyntax Warning: Invalid Font Weight\nSyntax Warning: Invalid Font Weight\nSyntax Warning: Invalid Font Weight\nSyntax Warning: Invalid Font Weight\nSyntax Warning: Invalid Font Weight\nSyntax Warning: Invalid Font Weight\nSyntax Warning: Invalid Font Weight\nSyntax Warning: Invalid Font Weight\nSyntax Warning: Invalid Font Weight\nSyntax Warning: Invalid Font Weight\nSyntax Warning: Invalid Font Weight\nSyntax Warning: Invalid Font Weight\nSyntax Warning: Invalid Font Weight\nSyntax Warning: Invalid Font Weight\nSyntax Warning: Invalid Font Weight\nSyntax Warning: Invalid Font Weight\nSyntax Warning: Invalid Font Weight\nSyntax Warning: Invalid Font Weight\nSyntax Warning: Invalid Font Weight\nSyntax Warning: Invalid Font Weight\nSyntax Warning: Invalid Font Weight\nSyntax Warning: Invalid Font Weight\nSyntax Warning: Invalid Font Weight\nSyntax Warning: Invalid Font Weight\nSyntax Warning: Invalid Font Weight\nSyntax Warning: Invalid Font Weight\nSyntax Warning: Invalid Font Weight\nSyntax Warning: Invalid Font Weight\nSyntax Warning: Invalid Font Weight\nSyntax Warning: Invalid Font Weight\nSyntax Warning: Invalid Font Weight\nSyntax Warning: Invalid Font Weight\nSyntax Warning: Invalid Font Weight\nSyntax Warning: Invalid Font Weight\nSyntax Warning: Invalid Font Weight\nSyntax Warning: Invalid Font Weight\nSyntax Warning: Invalid Font Weight\nSyntax Warning: Invalid Font Weight\nSyntax Warning: Invalid Font Weight\nSyntax Warning: Invalid Font Weight\nSyntax Warning: Invalid Font Weight\nSyntax Warning: Invalid Font Weight\nSyntax Warning: Invalid Font Weight\nSyntax Warning: Invalid Font Weight\nSyntax Warning: Invalid Font Weight\nSyntax Warning: Invalid Font Weight\nSyntax Warning: Invalid Font Weight\nSyntax Warning: Invalid Font Weight\nSyntax Warning: Invalid Font Weight\nSyntax Warning: Invalid Font Weight\nSyntax Warning: Invalid Font Weight\nSyntax Warning: Invalid Font Weight\nSyntax Warning: Invalid Font Weight\nSyntax Warning: Invalid Font Weight\nSyntax Warning: Invalid Font Weight\nSyntax Warning: Invalid Font Weight\nSyntax Warning: Invalid Font Weight\nSyntax Warning: Invalid Font Weight\nSyntax Warning: Invalid Font Weight\nSyntax Warning: Invalid Font Weight\nSyntax Warning: Invalid Font Weight\nSyntax Warning: Invalid Font Weight\nSyntax Warning: Invalid Font Weight\nSyntax Warning: Invalid Font Weight\nSyntax Warning: Invalid Font Weight\nSyntax Warning: Invalid Font Weight\nSyntax Warning: Invalid Font Weight\nSyntax Warning: Invalid Font Weight\nSyntax Warning: Invalid Font Weight\nSyntax Warning: Invalid Font Weight\nSyntax Warning: Invalid Font Weight\nSyntax Warning: Invalid Font Weight\nSyntax Warning: Invalid Font Weight\nSyntax Warning: Invalid Font Weight\nSyntax Warning: Invalid Font Weight\nSyntax Warning: Invalid Font Weight\nSyntax Warning: Invalid Font Weight\nSyntax Warning: Invalid Font Weight\nSyntax Warning: Invalid Font Weight\nSyntax Warning: Invalid Font Weight\nSyntax Warning: Invalid Font Weight\nSyntax Warning: Invalid Font Weight\nSyntax Warning: Invalid Font Weight\nSyntax Warning: Invalid Font Weight\nSyntax Warning: Invalid Font Weight\nSyntax Warning: Invalid Font Weight\nSyntax Warning: Invalid Font Weight\nSyntax Warning: Invalid Font Weight\nSyntax Warning: Invalid Font Weight\nSyntax Warning: Invalid Font Weight\nSyntax Warning: Invalid Font Weight\nSyntax Warning: Invalid Font Weight\nSyntax Warning: Invalid Font Weight\nSyntax Warning: Invalid Font Weight\nSyntax Warning: Invalid Font Weight\nSyntax Warning: Invalid Font Weight\nSyntax Warning: Invalid Font Weight\nSyntax Warning: Invalid Font Weight\nSyntax Warning: Invalid Font Weight\nSyntax Warning: Invalid Font Weight\nSyntax Warning: Invalid Font Weight\nSyntax Warning: Invalid Font Weight\nSyntax Warning: Invalid Font Weight\nSyntax Warning: Invalid Font Weight\nSyntax Warning: Invalid Font Weight\nSyntax Warning: Invalid Font Weight\nSyntax Warning: Invalid Font Weight\nSyntax Warning: Invalid Font Weight\nSyntax Warning: Invalid Font Weight\nSyntax Warning: Invalid Font Weight\nSyntax Warning: Invalid Font Weight\nSyntax Warning: Invalid Font Weight\nSyntax Warning: Invalid Font Weight\nSyntax Warning: Invalid Font Weight\nSyntax Warning: Invalid Font Weight\nSyntax Warning: Invalid Font Weight\nSyntax Warning: Invalid Font Weight\nSyntax Warning: Invalid Font Weight\nSyntax Warning: Invalid Font Weight\nSyntax Warning: Invalid Font Weight\nSyntax Warning: Invalid Font Weight\nSyntax Warning: Invalid Font Weight\nSyntax Warning: Invalid Font Weight\nSyntax Warning: Invalid Font Weight\nSyntax Warning: Invalid Font Weight\nSyntax Warning: Invalid Font Weight\nSyntax Warning: Invalid Font Weight\nSyntax Warning: Invalid Font Weight\nSyntax Warning: Invalid Font Weight\nSyntax Warning: Invalid Font Weight\nSyntax Warning: Invalid Font Weight\nSyntax Warning: Invalid Font Weight\nSyntax Warning: Invalid Font Weight\nSyntax Warning: Invalid Font Weight\nSyntax Warning: Invalid Font Weight\nSyntax Warning: Invalid Font Weight\nSyntax Warning: Invalid Font Weight\nSyntax Warning: Invalid Font Weight\nSyntax Warning: Invalid Font Weight\nSyntax Warning: Invalid Font Weight\nSyntax Warning: Invalid Font Weight\nSyntax Warning: Invalid Font Weight\nSyntax Warning: Invalid Font Weight\nSyntax Warning: Invalid Font Weight\nSyntax Warning: Invalid Font Weight\nSyntax Warning: Invalid Font Weight\nSyntax Warning: Invalid Font Weight\nSyntax Warning: Invalid Font Weight\nSyntax Warning: Invalid Font Weight\nSyntax Warning: Invalid Font Weight\nSyntax Warning: Invalid Font Weight\nSyntax Warning: Invalid Font Weight\nSyntax Warning: Invalid Font Weight\nSyntax Warning: Invalid Font Weight\nSyntax Warning: Invalid Font Weight\nSyntax Warning: Invalid Font Weight\nSyntax Warning: Invalid Font Weight\nSyntax Warning: Invalid Font Weight\nSyntax Warning: Invalid Font Weight\nSyntax Warning: Invalid Font Weight\nSyntax Warning: Invalid Font Weight\nSyntax Warning: Invalid Font Weight\nSyntax Warning: Invalid Font Weight\nSyntax Warning: Invalid Font Weight\nSyntax Warning: Invalid Font Weight\nSyntax Warning: Invalid Font Weight\nSyntax Warning: Invalid Font Weight\nSyntax Warning: Invalid Font Weight\nSyntax Warning: Invalid Font Weight\nSyntax Warning: Invalid Font Weight\nSyntax Warning: Invalid Font Weight\nSyntax Warning: Invalid Font Weight\nSyntax Warning: Invalid Font Weight\nSyntax Warning: Invalid Font Weight\n"
+    }
+  ],
+  "rendering_pending": false,
+  "page_count": 113,
+  "formfeed_count": 113,
+  "full_text_sha256": "dffdaf4cf3cbf82c6a8ee890fe71e9d938ae16e21827fd69cbf58e4694fa4a3c",
+  "renders": [
+    {
+      "physical_page": 52,
+      "command": [
+        "pdftoppm",
+        "-f",
+        "52",
+        "-l",
+        "52",
+        "-r",
+        "120",
+        "-png",
+        "-singlefile",
+        "/workspace/Twstockai/docs/source-research/20261023_tcc_annual_capture/raw/tcc-annual-114.response",
+        "/workspace/Twstockai/docs/source-research/20261023_tcc_annual_capture/visual/tcc-annual-114-p52"
+      ],
+      "returncode": 0,
+      "started_at": "2026-10-23T17:19:32.224712+00:00",
+      "completed_at": "2026-10-23T17:19:32.955040+00:00",
+      "stdout_file": "raw/render-p52.stdout.txt",
+      "stderr_file": "raw/render-p52.stderr.txt",
+      "stderr_bytes": 72,
+      "stderr_sha256": "ad81de84d197195f8e0f51fbf1f9cafb7141bff84ec8ec60bd523e553cc668d3",
+      "stderr": "Syntax Warning: Invalid Font Weight\nSyntax Warning: Invalid Font Weight\n",
+      "image": "visual/tcc-annual-114-p52.png",
+      "image_sha256": "341581ffab99f54c5322fef22426eef60862a40993a5831ba24a6a6815f46964",
+      "image_bytes": 798873
+    },
+    {
+      "physical_page": 57,
+      "command": [
+        "pdftoppm",
+        "-f",
+        "57",
+        "-l",
+        "57",
+        "-r",
+        "120",
+        "-png",
+        "-singlefile",
+        "/workspace/Twstockai/docs/source-research/20261023_tcc_annual_capture/raw/tcc-annual-114.response",
+        "/workspace/Twstockai/docs/source-research/20261023_tcc_annual_capture/visual/tcc-annual-114-p57"
+      ],
+      "returncode": 0,
+      "started_at": "2026-10-23T17:19:32.956265+00:00",
+      "completed_at": "2026-10-23T17:19:33.532487+00:00",
+      "stdout_file": "raw/render-p57.stdout.txt",
+      "stderr_file": "raw/render-p57.stderr.txt",
+      "stderr_bytes": 72,
+      "stderr_sha256": "ad81de84d197195f8e0f51fbf1f9cafb7141bff84ec8ec60bd523e553cc668d3",
+      "stderr": "Syntax Warning: Invalid Font Weight\nSyntax Warning: Invalid Font Weight\n",
+      "image": "visual/tcc-annual-114-p57.png",
+      "image_sha256": "2f567f96919960efa803212b17d29f5447d364f41865d3a427eefaf073682683",
+      "image_bytes": 351698
+    },
+    {
+      "physical_page": 58,
+      "command": [
+        "pdftoppm",
+        "-f",
+        "58",
+        "-l",
+        "58",
+        "-r",
+        "120",
+        "-png",
+        "-singlefile",
+        "/workspace/Twstockai/docs/source-research/20261023_tcc_annual_capture/raw/tcc-annual-114.response",
+        "/workspace/Twstockai/docs/source-research/20261023_tcc_annual_capture/visual/tcc-annual-114-p58"
+      ],
+      "returncode": 0,
+      "started_at": "2026-10-23T17:19:33.533148+00:00",
+      "completed_at": "2026-10-23T17:19:34.055084+00:00",
+      "stdout_file": "raw/render-p58.stdout.txt",
+      "stderr_file": "raw/render-p58.stderr.txt",
+      "stderr_bytes": 72,
+      "stderr_sha256": "ad81de84d197195f8e0f51fbf1f9cafb7141bff84ec8ec60bd523e553cc668d3",
+      "stderr": "Syntax Warning: Invalid Font Weight\nSyntax Warning: Invalid Font Weight\n",
+      "image": "visual/tcc-annual-114-p58.png",
+      "image_sha256": "975b3ffd480feba5ae69263b189c56e38ef4993687b2ff855041ed2afebf23e9",
+      "image_bytes": 462244
+    },
+    {
+      "physical_page": 60,
+      "command": [
+        "pdftoppm",
+        "-f",
+        "60",
+        "-l",
+        "60",
+        "-r",
+        "120",
+        "-png",
+        "-singlefile",
+        "/workspace/Twstockai/docs/source-research/20261023_tcc_annual_capture/raw/tcc-annual-114.response",
+        "/workspace/Twstockai/docs/source-research/20261023_tcc_annual_capture/visual/tcc-annual-114-p60"
+      ],
+      "returncode": 0,
+      "started_at": "2026-10-23T17:19:34.055947+00:00",
+      "completed_at": "2026-10-23T17:19:34.733180+00:00",
+      "stdout_file": "raw/render-p60.stdout.txt",
+      "stderr_file": "raw/render-p60.stderr.txt",
+      "stderr_bytes": 72,
+      "stderr_sha256": "ad81de84d197195f8e0f51fbf1f9cafb7141bff84ec8ec60bd523e553cc668d3",
+      "stderr": "Syntax Warning: Invalid Font Weight\nSyntax Warning: Invalid Font Weight\n",
+      "image": "visual/tcc-annual-114-p60.png",
+      "image_sha256": "e87698006bfc5d481701887d2c13c7207656996afcba66385b4558dab73b227a",
+      "image_bytes": 356188
+    }
+  ],
+  "not_entire_book_visually_read": true,
+  "product_tests_run": 0
+}

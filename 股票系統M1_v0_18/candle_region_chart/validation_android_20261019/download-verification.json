@@ -1,0 +1,87 @@
+{
+  "schema_version": "work-v04-package-verification/0.1",
+  "review_date": "2026-10-19",
+  "timezone": "Asia/Taipei",
+  "artifact_commit": "d83f92cb47fe581ee76ee05a6f944cd5abc56434",
+  "handoff_commit": "cf3b521b7a1280115228391d62839468671f51c0",
+  "url": "https://raw.githubusercontent.com/blue1998-glitch/Twstockai/d83f92cb47fe581ee76ee05a6f944cd5abc56434/deliveries/m1-v019-candle-regions-v04-20261019/M1_v019_candle_regions_v04.zip",
+  "download": "PASS",
+  "zip_bytes": 4372484,
+  "zip_sha256": "0a759763dbebf562fa009097de3dc580a5ea296dc307b048366eaf0c0ca60cfc",
+  "crc": "PASS",
+  "internal_sha256sums": "PASS",
+  "members": {
+    "M1_v0_19_candle_regions_v04.html": {
+      "bytes": 36783169,
+      "sha256": "8642986a70a1c315046327b4ec97452eae19ba78fbe619a713ce2965de42d44f"
+    },
+    "README.txt": {
+      "bytes": 2946,
+      "sha256": "1c370fa0a80bb32d517918709ef012c78e20d0648e863403423bdb3dbbe1e072"
+    },
+    "cases/g1.json": {
+      "bytes": 4408,
+      "sha256": "df6d0668bd0a2b7a20ad1f7a02db7829b00823504e0375aab6745dbf4c73e21c"
+    },
+    "cases/g1_facts.json": {
+      "bytes": 1711,
+      "sha256": "470be7d0a0d608ecc9d7b8177ae2b583b00cc16b071216dfd0560bb631fd39f6"
+    },
+    "cases/g2.json": {
+      "bytes": 3907,
+      "sha256": "9ff93bec1129500eec8cc03663925f63a63f11229d5995681a091048d09382b5"
+    },
+    "cases/g2_verification.json": {
+      "bytes": 2637,
+      "sha256": "2c9adb690f1b2cffc05074b220cb21e14a925a7dbdd1743e41f2728c62d4a759"
+    },
+    "SHA256SUMS.txt": {
+      "bytes": 515,
+      "sha256": "ffd846ee016260a4598f2a8de8dff026114001edc212b6a78e2cfe6cd8ec6b6b"
+    }
+  },
+  "header_source_literal": "M1 K線範圍區域主圖 0.4",
+  "execution": "NOT_EXECUTED",
+  "android": "NOT_TESTED_NEW_BUILD",
+  "failures_this_check": [],
+  "matches_all_published_package_members": true,
+  "engineering_images_read": [
+    {
+      "name": "before-G2-390.png",
+      "bytes": 58781,
+      "sha256": "09ed14dfb859116632ae854e10dcd6438d68f3223e05d614b56d50e17bea65b9"
+    },
+    {
+      "name": "after-G2-390.png",
+      "bytes": 56488,
+      "sha256": "2cac6e34f607652754cc288a584c8c7367c4959ce2c24404095fb8f33b2b154c"
+    },
+    {
+      "name": "after-G1-844.png",
+      "bytes": 83436,
+      "sha256": "34bdc012eb5b36d44b73b7afb969cd204b47974d4a8833795fba39e6888f0214"
+    },
+    {
+      "name": "clipped-G2-390.png",
+      "bytes": 42919,
+      "sha256": "73569c26d055e3e70cd91279d771ece7c32cf9a45a9d3c87f5f90545a9f30e12"
+    }
+  ],
+  "engineering_image_manifest_match": true,
+  "android_screenshot_received_this_turn": false,
+  "user_report_received_this_turn": false,
+  "prior_remote_receipt_scope": {
+    "artifact_commit": "d83f92cb47fe581ee76ee05a6f944cd5abc56434",
+    "files": 145,
+    "bytes": 56224224,
+    "read_and_inspected": true,
+    "all_redownloaded_this_turn": false
+  },
+  "limitations": [
+    "Only pinned ZIP and four saved engineering PNGs redownloaded",
+    "No product Python or browser tests rerun",
+    "Saved HTTP screenshots are not Android observations",
+    "No mobile JSON requested or verified",
+    "Known file policy blocker not retried or bypassed"
+  ]
+}

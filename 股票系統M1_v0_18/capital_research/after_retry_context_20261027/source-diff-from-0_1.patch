@@ -1,0 +1,16 @@
+diff --git "a/\350\202\241\347\245\250\347\263\273\347\265\261M1_v0_18/capital_research/quantity_after_retry.py" "b/\350\202\241\347\245\250\347\263\273\347\265\261M1_v0_18/capital_research/quantity_after_retry.py"
+index e35e6ac..bbf0b75 100644
+--- "a/\350\202\241\347\245\250\347\263\273\347\265\261M1_v0_18/capital_research/quantity_after_retry.py"
++++ "b/\350\202\241\347\245\250\347\263\273\347\265\261M1_v0_18/capital_research/quantity_after_retry.py"
+@@ -3 +3 @@ from copy import deepcopy
+-from decimal import localcontext
++from decimal import Context, InvalidOperation, DivisionByZero, Overflow, ROUND_HALF_EVEN, localcontext
+@@ -12,0 +13 @@ SCHEMA = 'capital-quantity-after-retry/0.1'
++IMPLEMENTATION_REVISION = '0.1.1-deterministic-decimal-context'
+@@ -23,2 +24,4 @@ def generate_after_retry(request):
+-    with localcontext() as ctx:
+-        ctx.prec = 50
++    # Protect checkpoint validation and account derivation as well as generation.
++    # Do not inherit the caller's traps, flags, rounding or exponent bounds.
++    with localcontext(Context(prec=50,rounding=ROUND_HALF_EVEN,Emin=-999999,Emax=999999,
++            capitals=1,clamp=0,flags=[],traps=[InvalidOperation,DivisionByZero,Overflow])):

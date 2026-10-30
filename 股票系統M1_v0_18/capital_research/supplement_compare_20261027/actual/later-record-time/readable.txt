@@ -1,0 +1,19 @@
+同父補選意圖並列（合成，只讀，不排名）
+共同條件狀態：COMPARABLE
+共同父操作：demo-no-selection
+共同父結果：sha256:b426b70347924c87074c2a9be86e9580cd9b8e6c2ee51269e86ab49243a85b56
+共同generation：sha256:c5e6483eb0180f5b948ff0f730be8c844d196b59bbf2d35cd2245223dee04897
+共同帳戶指紋：sha256:8ba782b921772678f8be492480ccc08d8c8b5e85bdde3c4fea55cc4a2f5aca6d
+原資料截止：2026-01-12T16:00:00+08:00；原決策時間：2026-01-12T17:00:00+08:00
+欄位 | 一般 | 稍晚記錄
+保存意圖狀態 | RECORDED_RESEARCH_INTENT | RECORDED_CONDITIONAL_RESEARCH_INTENT
+目標（未執行） | {"A": "60", "B": "26", "C": "2"} | {"A": "0", "B": "63", "C": "2"}
+保存候選資格 | CURRENTLY_FEASIBLE | WAIT_SETTLEMENT_REASSESSMENT
+原件估計成本 | 1.02 | 5.36
+來源核對 | MATCHED | MATCHED
+明示請求 | {"additional_B": "1", "mode": "GRID", "reason": "EXPLICIT_SYNTHETIC_SUPPLEMENT_NOT_NEW_TRADE", "sell_A": "0"} | {"additional_B": null, "mode": "FULL_TRANSFER", "reason": "EXPLICIT_SYNTHETIC_SUPPLEMENT_NOT_NEW_TRADE", "sell_A": null}
+補選紀錄時間 | 2026-10-27T12:00:00+08:00 | 2026-10-27T13:00:00+08:00
+拒絕理由 | [] | []
+每欄是互斥研究意圖，不加總股數、成本或資金。
+條件意圖仍待交割重評，拒絕對照不變合格；較晚補記不變新決策。
+沒有後續行情或回放，不比較績效；不重選、評分、建單或成交。正式資格false，主壓力null。

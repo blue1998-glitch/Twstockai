@@ -1,0 +1,7 @@
+{
+  "stage": "INITIAL_ACTUAL_SOURCE_PARSER_PROBE",
+  "product_tests_run_at_failure": 0,
+  "exception": "ValueError: Wrong profit-distribution year within selected statement span",
+  "cause": "Whitespace compaction concatenated previous balance total 253474357 and distribution year 113 across lines",
+  "fix": "Match the distribution heading on its preserved native row boundary; no dates/amounts/thresholds changed"
+}

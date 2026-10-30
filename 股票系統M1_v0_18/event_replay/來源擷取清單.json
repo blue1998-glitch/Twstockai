@@ -1,0 +1,84 @@
+[
+  {
+    "file": "taifex_1101_20260701.pdf",
+    "url": "https://www.taifex.com.tw/file/taifex/CHINESE/11/attach/1101_20260701.pdf",
+    "fetched_at_utc": "2026-10-16T09:35:39.336481+00:00",
+    "status": 200,
+    "content_type": "application/pdf",
+    "final_url": "https://www.taifex.com.tw/file/taifex/CHINESE/11/attach/1101_20260701.pdf",
+    "bytes": 132190,
+    "sha256": "63e4b3cfb265a38994f967b827e00c611e22bf52e371a12902c9ee1754f202b3"
+  },
+  {
+    "file": "taifex_1101_20260701.txt",
+    "derived_from": "taifex_1101_20260701.pdf",
+    "derivation": [
+      "pdftotext",
+      "-layout"
+    ],
+    "sha256": "fb9775cb648056e1fa98151aea142b4152e7cbbadb7634c0125aa3e0cb2308bb",
+    "bytes": 2990
+  },
+  {
+    "file": "taifex_2884_20260701.pdf",
+    "url": "https://www.taifex.com.tw/file/taifex/CHINESE/11/attach/2884_20260701.pdf",
+    "fetched_at_utc": "2026-10-16T09:35:39.337337+00:00",
+    "status": 200,
+    "content_type": "application/pdf",
+    "final_url": "https://www.taifex.com.tw/file/taifex/CHINESE/11/attach/2884_20260701.pdf",
+    "bytes": 126506,
+    "sha256": "80888664dfa83e31e5ca869a9c2ffd82e47537ad59ecbe662f14da9f63aca8c6"
+  },
+  {
+    "file": "taifex_2884_20260701.txt",
+    "derived_from": "taifex_2884_20260701.pdf",
+    "derivation": [
+      "pdftotext",
+      "-layout"
+    ],
+    "sha256": "97b56ed0608f460502272c0585f00732a4875c16ed4f2e1bb45f9b41383594f3",
+    "bytes": 2226
+  },
+  {
+    "file": "taifex_contract_1101.html",
+    "url": "https://www.taifex.com.tw/cht/4/contractAdj",
+    "method": "POST",
+    "form_fields": {
+      "stock_id": "1101",
+      "sId": "",
+      "sDt": "0"
+    },
+    "fetched_at_utc": "2026-10-16T09:35:03.350762+00:00",
+    "status": 200,
+    "final_url": "https://www.taifex.com.tw/cht/4/contractAdj",
+    "content_type": "text/html;charset=UTF-8",
+    "bytes": 176889,
+    "sha256": "392b6bfcf48dcbcc668d908b085febb1adfb54adec40dfd8189616617f7dadb4"
+  },
+  {
+    "file": "taifex_contract_2884.html",
+    "url": "https://www.taifex.com.tw/cht/4/contractAdj",
+    "method": "POST",
+    "form_fields": {
+      "stock_id": "2884",
+      "sId": "",
+      "sDt": "0"
+    },
+    "fetched_at_utc": "2026-10-16T09:35:03.351789+00:00",
+    "status": 200,
+    "final_url": "https://www.taifex.com.tw/cht/4/contractAdj",
+    "content_type": "text/html;charset=UTF-8",
+    "bytes": 176889,
+    "sha256": "c73899d8585e3cea4f834a8b17d65ae11700c81a3b4b029cabb8a3fa89f74887"
+  },
+  {
+    "file": "taifex_contract_adjustments.html",
+    "url": "https://www.taifex.com.tw/cht/4/contractAdj?show=m3",
+    "fetched_at_utc": "2026-10-16T09:34:15.230418+00:00",
+    "status": 200,
+    "content_type": "text/html;charset=UTF-8",
+    "final_url": "https://www.taifex.com.tw/cht/4/contractAdj?show=m3",
+    "bytes": 300723,
+    "sha256": "bd54b3d2e39f37c6708bd885f628d9deb3f505affc89867ffa75f10d0a96032f"
+  }
+]

@@ -1,0 +1,11 @@
+{
+  "exit_code": 2,
+  "stdout": "明示合成回放與另存評估（非市場績效）\n操作狀態：READ_ONLY\n分開保存：{\"request\": \"READ_ONLY\", \"replay\": \"READ_ONLY\", \"evaluation\": \"READ_ONLY\", \"result\": \"READ_ONLY\"}\n回放狀態：STOPPED_CANDIDATE_GATE；評估狀態：REFUSED\n保存結果：COMPLETED_EVALUATION_REFUSED\n拒算：統計保持null，不把停止前帳戶當完成結果。\nREAD只讀已保存評估，不重播、不重算或補行情。\n不排名；全部正式資格false、主壓力null。\n",
+  "stderr": "",
+  "calls": {
+    "replay": 0,
+    "evaluation": 0,
+    "execution": 0
+  },
+  "guard": "FRESH_READ_NO_NUMERIC_NO_WRITE_NO_NETWORK"
+}

@@ -1,0 +1,49 @@
+{
+  "hypotheses": {
+    "A": "REPRODUCED: foreign A fact permits B7 only in ABC order",
+    "B": "REPRODUCED: delayed cancellation skips potentially executable inherited-order interval; omission of tape also accepted"
+  },
+  "test_batches": 1,
+  "test_failures": 0,
+  "test_errors": 0,
+  "oracle_changes": 0,
+  "counterevidence_or_withdrawals": [],
+  "expected_after_refusals": [
+    "A-foreign-ABC",
+    "A-foreign-BAC",
+    "B-delayed-cancel",
+    "B-delayed-omitted-tape"
+  ],
+  "unresolved_test_failures": [],
+  "limitations": [
+    "Trading-date gap refusal is conservative; not full intraday old-order replay",
+    "No immutable cross-round fact/revocation registry",
+    "Old checkpoint READ only; new lineage explicitly re-minted from equal economic prefix"
+  ],
+  "publication_check": {
+    "initial_command": "git diff --cached --check",
+    "initial_exit": 2,
+    "log": "publication-check-initial.log",
+    "cause": "Standard unified-diff blank context lines contain the required single space; not source trailing whitespace",
+    "ordinary_files_check": "git diff --cached --check -- . :(exclude)**/*.patch",
+    "ordinary_files_exit": 0,
+    "source_patch_files_reconstructed_in_memory": 14,
+    "source_patch_exact_current_bytes": true,
+    "financial_tests_rerun": false,
+    "followup_exit": 2,
+    "followup_raw_output": "股票系統M1_v0_18/capital_research/repair_ab_20261025/publication-check-initial.log:2: trailing whitespace.\n++ \n股票系統M1_v0_18/capital_research/repair_ab_20261025/publication-check-initial.log:4: trailing whitespace.\n++ \n股票系統M1_v0_18/capital_research/repair_ab_20261025/publication-check-initial.log:6: trailing whitespace.\n++ \n股票系統M1_v0_18/capital_research/repair_ab_20261025/publication-check-initial.log:8: trailing whitespace.\n++ \n股票系統M1_v0_18/capital_research/repair_ab_20261025/publication-check-initial.log:10: trailing whitespace.\n++ \n股票系統M1_v0_18/capital_research/repair_ab_20261025/publication-check-initial.log:12: trailing whitespace.\n++ \n股票系統M1_v0_18/capital_research/repair_ab_20261025/publication-check-initial.log:14: trailing whitespace.\n++ \n股票系統M1_v0_18/capital_research/repair_ab_20261025/publication-check-initial.log:16: trailing whitespace.\n++ \n股票系統M1_v0_18/capital_research/repair_ab_20261025/publication-check-initial.log:18: trailing whitespace.\n++ \n股票系統M1_v0_18/capital_research/repair_ab_20261025/publication-check-initial.log:20: trailing whitespace.\n++ \n股票系統M1_v0_18/capital_research/repair_ab_20261025/publication-check-initial.log:22: trailing whitespace.\n++ \n股票系統M1_v0_18/capital_research/repair_ab_20261025/publication-check-initial.log:24: trailing whitespace.\n++ \n股票系統M1_v0_18/capital_research/repair_ab_20261025/publication-check-initial.log:26: trailing whitespace.\n++ \n股票系統M1_v0_18/capital_research/repair_ab_20261025/publication-check-initial.log:28: trailing whitespace.\n++ \n股票系統M1_v0_18/capital_research/repair_ab_20261025/publication-check-initial.log:30: trailing whitespace.\n++ \n",
+    "followup_cause": "The retained raw diagnostic itself quotes the exact context spaces; preserve its bytes too",
+    "ordinary_files_check_argv": [
+      "git",
+      "diff",
+      "--cached",
+      "--check",
+      "--",
+      ".",
+      ":(exclude)**/*.patch",
+      ":(exclude)股票系統M1_v0_18/capital_research/repair_ab_20261025/publication-check-initial.log"
+    ],
+    "raw_diagnostic_exact_patch_check_output": true,
+    "raw_diagnostic_sha256": "ecac14f44a56ba22fef6c07be201231ec75321bc29f357df03826357273b1911"
+  }
+}

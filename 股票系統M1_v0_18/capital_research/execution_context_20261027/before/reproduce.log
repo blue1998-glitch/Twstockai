@@ -1,0 +1,10 @@
+initial normal True None {'simulate': 1, 'decide': 1, 'resume': 0, 'ledger_replay': 11, 'risk': 4, 'replay_sequence': 0, 'generate': 0, 'save': 0}
+initial round-up True None {'simulate': 1, 'decide': 1, 'resume': 0, 'ledger_replay': 11, 'risk': 4, 'replay_sequence': 0, 'generate': 0, 'save': 0}
+initial round-down True None {'simulate': 1, 'decide': 1, 'resume': 0, 'ledger_replay': 11, 'risk': 4, 'replay_sequence': 0, 'generate': 0, 'save': 0}
+initial inexact-trap False {'type': 'Inexact', 'detail': "[<class 'decimal.Inexact'>]"} {'simulate': 1, 'decide': 1, 'resume': 0, 'ledger_replay': 1, 'risk': 0, 'replay_sequence': 0, 'generate': 0, 'save': 0}
+initial narrow-exponents False {'type': 'Overflow', 'detail': "[<class 'decimal.Overflow'>]"} {'simulate': 1, 'decide': 1, 'resume': 0, 'ledger_replay': 1, 'risk': 0, 'replay_sequence': 0, 'generate': 0, 'save': 0}
+continuation normal True None {'simulate': 1, 'decide': 0, 'resume': 1, 'ledger_replay': 12, 'risk': 4, 'replay_sequence': 0, 'generate': 0, 'save': 0}
+continuation round-up False None {'simulate': 1, 'decide': 0, 'resume': 1, 'ledger_replay': 12, 'risk': 4, 'replay_sequence': 0, 'generate': 0, 'save': 0}
+continuation round-down True None {'simulate': 1, 'decide': 0, 'resume': 1, 'ledger_replay': 12, 'risk': 4, 'replay_sequence': 0, 'generate': 0, 'save': 0}
+continuation inexact-trap False {'type': 'Inexact', 'detail': "[<class 'decimal.Inexact'>]"} {'simulate': 1, 'decide': 0, 'resume': 1, 'ledger_replay': 3, 'risk': 0, 'replay_sequence': 0, 'generate': 0, 'save': 0}
+continuation narrow-exponents False {'type': 'Overflow', 'detail': "[<class 'decimal.Overflow'>]"} {'simulate': 1, 'decide': 0, 'resume': 1, 'ledger_replay': 3, 'risk': 0, 'replay_sequence': 0, 'generate': 0, 'save': 0}

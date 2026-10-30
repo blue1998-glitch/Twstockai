@@ -1,0 +1,13 @@
+AssertionError [ERR_ASSERTION]: The expression evaluated to a falsy value:
+
+  assert((await page.locator('#evidenceTitle').textContent()).includes(id))
+
+    at module.exports (/workspace/Twstockai/股票系統M1_v0_18/hurdle_chart/browser_manual_checks.cjs:44:5)
+    at async /workspace/Twstockai/股票系統M1_v0_18/hurdle_chart/test_browser.cjs:27:3 {
+  generatedMessage: true,
+  code: 'ERR_ASSERTION',
+  actual: false,
+  expected: true,
+  operator: '==',
+  diff: 'simple'
+}

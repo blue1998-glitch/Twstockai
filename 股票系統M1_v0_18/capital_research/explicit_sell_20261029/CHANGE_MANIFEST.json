@@ -1,0 +1,982 @@
+{
+  "schema": "explicit-sell-change-manifest/0.1",
+  "baseline": "da8a9bf4e95898c6e9d95369c8cbc141b27bfe74",
+  "self_excluded": true,
+  "files": [
+    {
+      "path": "AGENTS.md",
+      "bytes": 362701,
+      "sha256": "38bcbb87f5aa31ca5f7098bd097940294a8c26c16128230623663501cb0c9f21"
+    },
+    {
+      "path": "CONTINUE_IN_WORK_MODE.md",
+      "bytes": 464363,
+      "sha256": "79b60a9ca68ef4ea1cb634e5cbf618c3724f668e71d5879f26426583af3008c5"
+    },
+    {
+      "path": "M1_V019_GRAPH_CORE_RESUME_HANDOFF.md",
+      "bytes": 289765,
+      "sha256": "39e06fc4536157eb45b022ea47e64f834612f3f7b1d1d03358af6dcdf2d9fd89"
+    },
+    {
+      "path": "PROJECT_VISION.md",
+      "bytes": 93933,
+      "sha256": "9642362a3799efc39261ff48e81815e10aab58132e0b5c37f26b1cdf212575c9"
+    },
+    {
+      "path": "股票系統M1_v0_18/capital_research/README.md",
+      "bytes": 47109,
+      "sha256": "dde745972e051cd81c4a3f1baf46992fc804cb29c9496cd60ad6a38ed1503ee4"
+    },
+    {
+      "path": "股票系統M1_v0_18/capital_research/cash_action.py",
+      "bytes": 14389,
+      "sha256": "3110f7df51586c1ffcec0662ef0b5a16fbfd29b6ecb650b9b37fd8532208e8d1"
+    },
+    {
+      "path": "股票系統M1_v0_18/capital_research/cash_action_execution.py",
+      "bytes": 9619,
+      "sha256": "122c9f1ca251eb6fefa5ad025cdfda5624ebc7b4058d198c111158337b329ac7"
+    },
+    {
+      "path": "股票系統M1_v0_18/capital_research/explicit_sell_20261029/CONTRACT.md",
+      "bytes": 5477,
+      "sha256": "65188cf59bd112fd3503a6a0c4ac3cf7f0a057e41ed8909b4d2410d1fc8b4b12"
+    },
+    {
+      "path": "股票系統M1_v0_18/capital_research/explicit_sell_20261029/README.md",
+      "bytes": 5014,
+      "sha256": "9bc55ac6c776bc10920d3c718bbb4b10e9e6ae13d5f245a735a8b9afd918c53e"
+    },
+    {
+      "path": "股票系統M1_v0_18/capital_research/explicit_sell_20261029/REPORT.md",
+      "bytes": 6067,
+      "sha256": "93d90a6c7e0cf36b9d692e4e3792dfbf917860d20034238dafa2642f0ce122a6"
+    },
+    {
+      "path": "股票系統M1_v0_18/capital_research/explicit_sell_20261029/baseline/cash_action.py",
+      "bytes": 11831,
+      "sha256": "582c59719d0b22ddcb9da642016fb9b78c48fe2c69f7d8e1a4e10e6df71afa09"
+    },
+    {
+      "path": "股票系統M1_v0_18/capital_research/explicit_sell_20261029/baseline/cash_action_execution.py",
+      "bytes": 9038,
+      "sha256": "2af999893c26bf5140e553bf3fcd89afd7531d504b0e225c77732ed2a6e2a704"
+    },
+    {
+      "path": "股票系統M1_v0_18/capital_research/explicit_sell_20261029/before/actual.json",
+      "bytes": 802,
+      "sha256": "ab52242e30c7d1028f7e7d8afd4e3f7d0a480cb040c36b2d429aae493badbd03"
+    },
+    {
+      "path": "股票系統M1_v0_18/capital_research/explicit_sell_20261029/before/expected.json",
+      "bytes": 50,
+      "sha256": "abd964c5e184a87f3768796b545ef2b2d181249c8325678184c3afdf30899796"
+    },
+    {
+      "path": "股票系統M1_v0_18/capital_research/explicit_sell_20261029/before/input.json",
+      "bytes": 81673,
+      "sha256": "71ff29b1a1861fe691b21745d4b83724d501c6f0e92c58c1ebb5b4ceeb7c9d63"
+    },
+    {
+      "path": "股票系統M1_v0_18/capital_research/explicit_sell_20261029/build.py",
+      "bytes": 3545,
+      "sha256": "9172be603cf3375d890a61eace0fe4bec3c819f5c7f3b6fc7ff8dda5cbaeab1f"
+    },
+    {
+      "path": "股票系統M1_v0_18/capital_research/explicit_sell_20261029/case-index.json",
+      "bytes": 489,
+      "sha256": "3f95747530d1935a691332a6cfb048d6062359cbfde7e9eb01f712fa847fd54c"
+    },
+    {
+      "path": "股票系統M1_v0_18/capital_research/explicit_sell_20261029/cases/active-checkpoint/action-input.json",
+      "bytes": 81995,
+      "sha256": "6572e6b80144750e30be336a574222b9b13acb9fa74197d723e260ce3ea69a0e"
+    },
+    {
+      "path": "股票系統M1_v0_18/capital_research/explicit_sell_20261029/cases/active-checkpoint/execution-spec.json",
+      "bytes": 4837,
+      "sha256": "41c9ed0717175a9d7485b271376e654d51efeb2ccfbfd521019a565ba9d433cd"
+    },
+    {
+      "path": "股票系統M1_v0_18/capital_research/explicit_sell_20261029/cases/active-checkpoint/expected.json",
+      "bytes": 144,
+      "sha256": "387dea84a765eb247960bb4fb3c908b34728081e2e34279e898505778f6d2761"
+    },
+    {
+      "path": "股票系統M1_v0_18/capital_research/explicit_sell_20261029/cases/basis-mismatch/action-input.json",
+      "bytes": 81669,
+      "sha256": "c2d5b32d4f54332add575244b49d052b75f4864a5b4477ac79fc4a6fbe232888"
+    },
+    {
+      "path": "股票系統M1_v0_18/capital_research/explicit_sell_20261029/cases/basis-mismatch/execution-spec.json",
+      "bytes": 4837,
+      "sha256": "41c9ed0717175a9d7485b271376e654d51efeb2ccfbfd521019a565ba9d433cd"
+    },
+    {
+      "path": "股票系統M1_v0_18/capital_research/explicit_sell_20261029/cases/basis-mismatch/expected.json",
+      "bytes": 136,
+      "sha256": "5d17e747c21cb44212e47b38239a9d5be8bbda2d7f878980eb1669cf79f1f454"
+    },
+    {
+      "path": "股票系統M1_v0_18/capital_research/explicit_sell_20261029/cases/buy-injection/action-input.json",
+      "bytes": 81673,
+      "sha256": "71ff29b1a1861fe691b21745d4b83724d501c6f0e92c58c1ebb5b4ceeb7c9d63"
+    },
+    {
+      "path": "股票系統M1_v0_18/capital_research/explicit_sell_20261029/cases/buy-injection/execution-spec.json",
+      "bytes": 4836,
+      "sha256": "27a8bbb7374679aa2a4a1732b4008c7d0a59ee1fb8dfd6273ec79d386258dd60"
+    },
+    {
+      "path": "股票系統M1_v0_18/capital_research/explicit_sell_20261029/cases/buy-injection/expected.json",
+      "bytes": 136,
+      "sha256": "170e72ace8b112bac8abc3c7cb2fb9b335dc7e5b1834b5f8c9102ea8b3550d9b"
+    },
+    {
+      "path": "股票系統M1_v0_18/capital_research/explicit_sell_20261029/cases/capacity-zero/action-input.json",
+      "bytes": 81673,
+      "sha256": "71ff29b1a1861fe691b21745d4b83724d501c6f0e92c58c1ebb5b4ceeb7c9d63"
+    },
+    {
+      "path": "股票系統M1_v0_18/capital_research/explicit_sell_20261029/cases/capacity-zero/execution-spec.json",
+      "bytes": 4835,
+      "sha256": "9f6c66b709cd152b2849b67c28e562593f0f060b6eb58b9bedf5ff218ade49c5"
+    },
+    {
+      "path": "股票系統M1_v0_18/capital_research/explicit_sell_20261029/cases/capacity-zero/expected.json",
+      "bytes": 274,
+      "sha256": "e30d11e585e7825de32870b754926ec408d1452b91ad17ac7db037d647d931d5"
+    },
+    {
+      "path": "股票系統M1_v0_18/capital_research/explicit_sell_20261029/cases/cross-version/action-input.json",
+      "bytes": 81673,
+      "sha256": "71ff29b1a1861fe691b21745d4b83724d501c6f0e92c58c1ebb5b4ceeb7c9d63"
+    },
+    {
+      "path": "股票系統M1_v0_18/capital_research/explicit_sell_20261029/cases/cross-version/execution-edit.json",
+      "bytes": 26,
+      "sha256": "8f809c04676745a04c675a73f84056ff3731376815a116f606ae8a5da21cc6ae"
+    },
+    {
+      "path": "股票系統M1_v0_18/capital_research/explicit_sell_20261029/cases/cross-version/execution-spec.json",
+      "bytes": 4837,
+      "sha256": "635726038edd9b522c5cabdaf92e688871ef5df48bb7dd7ec446578638b8ad3e"
+    },
+    {
+      "path": "股票系統M1_v0_18/capital_research/explicit_sell_20261029/cases/cross-version/expected.json",
+      "bytes": 153,
+      "sha256": "1085259ba31756fc2fec887e1dc26f92e62f7d7bf105fa2c46e3b1df0fc35500"
+    },
+    {
+      "path": "股票系統M1_v0_18/capital_research/explicit_sell_20261029/cases/empty-orders/action-input.json",
+      "bytes": 81673,
+      "sha256": "71ff29b1a1861fe691b21745d4b83724d501c6f0e92c58c1ebb5b4ceeb7c9d63"
+    },
+    {
+      "path": "股票系統M1_v0_18/capital_research/explicit_sell_20261029/cases/empty-orders/execution-spec.json",
+      "bytes": 4627,
+      "sha256": "2841cd5eb3fd8c8f1aba0df54f8c835ee746451ced34c58dc3384acc613599f1"
+    },
+    {
+      "path": "股票系統M1_v0_18/capital_research/explicit_sell_20261029/cases/empty-orders/expected.json",
+      "bytes": 224,
+      "sha256": "db117c4b11dbb9b60a581d7cd11d3a2b72b8e46abb900aca5973bd741105c46f"
+    },
+    {
+      "path": "股票系統M1_v0_18/capital_research/explicit_sell_20261029/cases/existing-no-trade-band/action-input.json",
+      "bytes": 81654,
+      "sha256": "9fdba018b8dcc61b5014e385ce379b626638022de031c9261d4166ae4cece215"
+    },
+    {
+      "path": "股票系統M1_v0_18/capital_research/explicit_sell_20261029/cases/existing-no-trade-band/execution-spec.json",
+      "bytes": 4837,
+      "sha256": "41c9ed0717175a9d7485b271376e654d51efeb2ccfbfd521019a565ba9d433cd"
+    },
+    {
+      "path": "股票系統M1_v0_18/capital_research/explicit_sell_20261029/cases/existing-no-trade-band/expected.json",
+      "bytes": 109,
+      "sha256": "3f99e7d482e3b38aa6998abca3e6b6c927635fe782c3d9ca9eb7435d38cb4abb"
+    },
+    {
+      "path": "股票系統M1_v0_18/capital_research/explicit_sell_20261029/cases/exit-B7/action-input.json",
+      "bytes": 81673,
+      "sha256": "71ff29b1a1861fe691b21745d4b83724d501c6f0e92c58c1ebb5b4ceeb7c9d63"
+    },
+    {
+      "path": "股票系統M1_v0_18/capital_research/explicit_sell_20261029/cases/exit-B7/execution-spec.json",
+      "bytes": 4837,
+      "sha256": "635726038edd9b522c5cabdaf92e688871ef5df48bb7dd7ec446578638b8ad3e"
+    },
+    {
+      "path": "股票系統M1_v0_18/capital_research/explicit_sell_20261029/cases/exit-B7/expected.json",
+      "bytes": 231,
+      "sha256": "eb0b7e9852685a7f09cdb88bea0390de1268179cd3db19fc269f90a1b5385acd"
+    },
+    {
+      "path": "股票系統M1_v0_18/capital_research/explicit_sell_20261029/cases/exit-quantity-mismatch/action-input.json",
+      "bytes": 81673,
+      "sha256": "88fdd2406afb6b6ba506e122b43f73798ee5692657ee759ad33013c76a7254f1"
+    },
+    {
+      "path": "股票系統M1_v0_18/capital_research/explicit_sell_20261029/cases/exit-quantity-mismatch/execution-spec.json",
+      "bytes": 4837,
+      "sha256": "41c9ed0717175a9d7485b271376e654d51efeb2ccfbfd521019a565ba9d433cd"
+    },
+    {
+      "path": "股票系統M1_v0_18/capital_research/explicit_sell_20261029/cases/exit-quantity-mismatch/expected.json",
+      "bytes": 138,
+      "sha256": "dcb6c0a8a4dd7509f391fecc16dfae7b1c96d86152da7c3d8af6a8b1d21d04f8"
+    },
+    {
+      "path": "股票系統M1_v0_18/capital_research/explicit_sell_20261029/cases/fractional/action-input.json",
+      "bytes": 81659,
+      "sha256": "28f25f5267bc537dad48fa3611a30d278bec66e6537c5096970c40db28dce93a"
+    },
+    {
+      "path": "股票系統M1_v0_18/capital_research/explicit_sell_20261029/cases/fractional/execution-spec.json",
+      "bytes": 4837,
+      "sha256": "41c9ed0717175a9d7485b271376e654d51efeb2ccfbfd521019a565ba9d433cd"
+    },
+    {
+      "path": "股票系統M1_v0_18/capital_research/explicit_sell_20261029/cases/fractional/expected.json",
+      "bytes": 137,
+      "sha256": "ec6b26d65f6b2fbe9b56ab2016ae900e6012347515f20372d915a4d0fcf3d3ef"
+    },
+    {
+      "path": "股票系統M1_v0_18/capital_research/explicit_sell_20261029/cases/limit-down/action-input.json",
+      "bytes": 81673,
+      "sha256": "71ff29b1a1861fe691b21745d4b83724d501c6f0e92c58c1ebb5b4ceeb7c9d63"
+    },
+    {
+      "path": "股票系統M1_v0_18/capital_research/explicit_sell_20261029/cases/limit-down/execution-spec.json",
+      "bytes": 4851,
+      "sha256": "b3cee621cb47088f8db1adc2b45322823fa79a6ed1378256f5e5594aad0714f0"
+    },
+    {
+      "path": "股票系統M1_v0_18/capital_research/explicit_sell_20261029/cases/limit-down/expected.json",
+      "bytes": 274,
+      "sha256": "e30d11e585e7825de32870b754926ec408d1452b91ad17ac7db037d647d931d5"
+    },
+    {
+      "path": "股票系統M1_v0_18/capital_research/explicit_sell_20261029/cases/new-opening/action-input.json",
+      "bytes": 9203,
+      "sha256": "86e8eeb24541e7fdd9147e06499f912f980607049b9ae06bb7c6e03ec18a1476"
+    },
+    {
+      "path": "股票系統M1_v0_18/capital_research/explicit_sell_20261029/cases/new-opening/execution-spec.json",
+      "bytes": 4837,
+      "sha256": "41c9ed0717175a9d7485b271376e654d51efeb2ccfbfd521019a565ba9d433cd"
+    },
+    {
+      "path": "股票系統M1_v0_18/capital_research/explicit_sell_20261029/cases/new-opening/expected.json",
+      "bytes": 127,
+      "sha256": "d712a2c5acfd039f848f52ed5831004208f033bf27d121163ecdfe0ae34c5274"
+    },
+    {
+      "path": "股票系統M1_v0_18/capital_research/explicit_sell_20261029/cases/oversell/action-input.json",
+      "bytes": 81657,
+      "sha256": "52b067b9f2dfdeace5c26bd16e8c1407420ade9c2dbf2d49f44b1ccaed58700c"
+    },
+    {
+      "path": "股票系統M1_v0_18/capital_research/explicit_sell_20261029/cases/oversell/execution-spec.json",
+      "bytes": 4837,
+      "sha256": "41c9ed0717175a9d7485b271376e654d51efeb2ccfbfd521019a565ba9d433cd"
+    },
+    {
+      "path": "股票系統M1_v0_18/capital_research/explicit_sell_20261029/cases/oversell/expected.json",
+      "bytes": 137,
+      "sha256": "04c82b77fc01327d71e14c76c64d493822b679f4f7d000f7b00b6ea21b55cb88"
+    },
+    {
+      "path": "股票系統M1_v0_18/capital_research/explicit_sell_20261029/cases/oversplit/action-input.json",
+      "bytes": 81673,
+      "sha256": "71ff29b1a1861fe691b21745d4b83724d501c6f0e92c58c1ebb5b4ceeb7c9d63"
+    },
+    {
+      "path": "股票系統M1_v0_18/capital_research/explicit_sell_20261029/cases/oversplit/execution-spec.json",
+      "bytes": 5034,
+      "sha256": "d51c8392d1d6a397fc39a88692835852ebb2b8c41e45bfaf69148579fc077ce6"
+    },
+    {
+      "path": "股票系統M1_v0_18/capital_research/explicit_sell_20261029/cases/oversplit/expected.json",
+      "bytes": 140,
+      "sha256": "341d042b716dddf8ceb583c8092b6a1a8c0b1d14a00b54c8caaa34baa01e0e1e"
+    },
+    {
+      "path": "股票系統M1_v0_18/capital_research/explicit_sell_20261029/cases/partial-exit-B20/action-input.json",
+      "bytes": 81511,
+      "sha256": "ff55b1e6aaaaf05fa987dbf717a299735820e9c2e20278fc4a9116533b30b3c6"
+    },
+    {
+      "path": "股票系統M1_v0_18/capital_research/explicit_sell_20261029/cases/partial-exit-B20/execution-spec.json",
+      "bytes": 4836,
+      "sha256": "f7201911a647fde559a82696ebec30e97de98eb84ae5c8c6a22cbfa20083fae6"
+    },
+    {
+      "path": "股票系統M1_v0_18/capital_research/explicit_sell_20261029/cases/partial-exit-B20/expected.json",
+      "bytes": 301,
+      "sha256": "831b1a0dbe015113151c78c86da47da875cfef9f89097385dcee73b6d32b2d4b"
+    },
+    {
+      "path": "股票系統M1_v0_18/capital_research/explicit_sell_20261029/cases/real-relabel/action-input.json",
+      "bytes": 81651,
+      "sha256": "eb497066b6954a029b30600735a2544543b9f48e533a928adaa8f34afec36737"
+    },
+    {
+      "path": "股票系統M1_v0_18/capital_research/explicit_sell_20261029/cases/real-relabel/execution-spec.json",
+      "bytes": 4837,
+      "sha256": "41c9ed0717175a9d7485b271376e654d51efeb2ccfbfd521019a565ba9d433cd"
+    },
+    {
+      "path": "股票系統M1_v0_18/capital_research/explicit_sell_20261029/cases/real-relabel/expected.json",
+      "bytes": 142,
+      "sha256": "56bee7308bc58b00325e9d894fef2664192d991a58f80f01419cf4154aba6912"
+    },
+    {
+      "path": "股票系統M1_v0_18/capital_research/explicit_sell_20261029/cases/reduce-B3/action-input.json",
+      "bytes": 81657,
+      "sha256": "0752091f2f603c92fab9fd181761f9d70e3abbf82a059f498e3c7f6af7c259e6"
+    },
+    {
+      "path": "股票系統M1_v0_18/capital_research/explicit_sell_20261029/cases/reduce-B3/execution-spec.json",
+      "bytes": 4837,
+      "sha256": "41c9ed0717175a9d7485b271376e654d51efeb2ccfbfd521019a565ba9d433cd"
+    },
+    {
+      "path": "股票系統M1_v0_18/capital_research/explicit_sell_20261029/cases/reduce-B3/expected.json",
+      "bytes": 229,
+      "sha256": "25f035968321500b2a109a325dc789af4fddbde9ac2649e4f1ae886155c3acae"
+    },
+    {
+      "path": "股票系統M1_v0_18/capital_research/explicit_sell_20261029/cases/reduction-would-exit/action-input.json",
+      "bytes": 81657,
+      "sha256": "2dae03ea904426c4b23501959dcc8bcf00bf99d697c15381610622d6550a328d"
+    },
+    {
+      "path": "股票系統M1_v0_18/capital_research/explicit_sell_20261029/cases/reduction-would-exit/execution-spec.json",
+      "bytes": 4837,
+      "sha256": "41c9ed0717175a9d7485b271376e654d51efeb2ccfbfd521019a565ba9d433cd"
+    },
+    {
+      "path": "股票系統M1_v0_18/capital_research/explicit_sell_20261029/cases/reduction-would-exit/expected.json",
+      "bytes": 137,
+      "sha256": "71919d6e80ebed245b777cdbb0680826d70ca016205579498150bf1b2e6093c1"
+    },
+    {
+      "path": "股票系統M1_v0_18/capital_research/explicit_sell_20261029/cases/split-exit/action-input.json",
+      "bytes": 81673,
+      "sha256": "71ff29b1a1861fe691b21745d4b83724d501c6f0e92c58c1ebb5b4ceeb7c9d63"
+    },
+    {
+      "path": "股票系統M1_v0_18/capital_research/explicit_sell_20261029/cases/split-exit/execution-spec.json",
+      "bytes": 5034,
+      "sha256": "921ee9cb71ecacd1104e2dc02c3a258b187cfd691fd4dab8906bf91942f22cd7"
+    },
+    {
+      "path": "股票系統M1_v0_18/capital_research/explicit_sell_20261029/cases/split-exit/expected.json",
+      "bytes": 231,
+      "sha256": "e78866d72d6a7cb1d6dc8afafd5b68175220faadc2cb1a7069d6b26567e710bd"
+    },
+    {
+      "path": "股票系統M1_v0_18/capital_research/explicit_sell_20261029/cases/tampered-checked/action-input.json",
+      "bytes": 81673,
+      "sha256": "71ff29b1a1861fe691b21745d4b83724d501c6f0e92c58c1ebb5b4ceeb7c9d63"
+    },
+    {
+      "path": "股票系統M1_v0_18/capital_research/explicit_sell_20261029/cases/tampered-checked/execution-edit.json",
+      "bytes": 33,
+      "sha256": "ec1ec51d403ff460f01ad6f64516ad74286558bb6712cc7539f11f1abddbdd58"
+    },
+    {
+      "path": "股票系統M1_v0_18/capital_research/explicit_sell_20261029/cases/tampered-checked/execution-spec.json",
+      "bytes": 4837,
+      "sha256": "635726038edd9b522c5cabdaf92e688871ef5df48bb7dd7ec446578638b8ad3e"
+    },
+    {
+      "path": "股票系統M1_v0_18/capital_research/explicit_sell_20261029/cases/tampered-checked/expected.json",
+      "bytes": 130,
+      "sha256": "43ae15b49e85b0dc42ee617721b4f009c3fd32e49de1126d9826aa7cb2e98ff8"
+    },
+    {
+      "path": "股票系統M1_v0_18/capital_research/explicit_sell_20261029/cases/unsettled-checkpoint/action-input.json",
+      "bytes": 79487,
+      "sha256": "aa6a68bae43470e35bea031fa54180b85175e94bdedce623659c47136e638935"
+    },
+    {
+      "path": "股票系統M1_v0_18/capital_research/explicit_sell_20261029/cases/unsettled-checkpoint/execution-spec.json",
+      "bytes": 4837,
+      "sha256": "41c9ed0717175a9d7485b271376e654d51efeb2ccfbfd521019a565ba9d433cd"
+    },
+    {
+      "path": "股票系統M1_v0_18/capital_research/explicit_sell_20261029/cases/unsettled-checkpoint/expected.json",
+      "bytes": 147,
+      "sha256": "3d041adfc6e1774927b67f08c1ecd87fc9eaced757acd4014c52e9245c80efc0"
+    },
+    {
+      "path": "股票系統M1_v0_18/capital_research/explicit_sell_20261029/cases/v01-sell-refused/action-input.json",
+      "bytes": 82281,
+      "sha256": "1fceb0816d651f1cf6e920c254cabff671516ca9101ac957ce4ac6e020189160"
+    },
+    {
+      "path": "股票系統M1_v0_18/capital_research/explicit_sell_20261029/cases/v01-sell-refused/execution-spec.json",
+      "bytes": 4837,
+      "sha256": "635726038edd9b522c5cabdaf92e688871ef5df48bb7dd7ec446578638b8ad3e"
+    },
+    {
+      "path": "股票系統M1_v0_18/capital_research/explicit_sell_20261029/cases/v01-sell-refused/expected.json",
+      "bytes": 147,
+      "sha256": "abc9b2726a18d3c4a3b63a74e1c2cd524d6e3be796a70c43e5b47bef2638e116"
+    },
+    {
+      "path": "股票系統M1_v0_18/capital_research/explicit_sell_20261029/cases/wrong-latest/action-input.json",
+      "bytes": 81607,
+      "sha256": "01480a1c6406f5a3d40d11ac16e87820d4240b46155ee4c84fa03217fab7067e"
+    },
+    {
+      "path": "股票系統M1_v0_18/capital_research/explicit_sell_20261029/cases/wrong-latest/execution-spec.json",
+      "bytes": 4837,
+      "sha256": "41c9ed0717175a9d7485b271376e654d51efeb2ccfbfd521019a565ba9d433cd"
+    },
+    {
+      "path": "股票系統M1_v0_18/capital_research/explicit_sell_20261029/cases/wrong-latest/expected.json",
+      "bytes": 132,
+      "sha256": "ac2cb50b50d22a2c2ec5cf6efe68439f625c931e3a4205bd1dddfba021bf6185"
+    },
+    {
+      "path": "股票系統M1_v0_18/capital_research/explicit_sell_20261029/controls.py",
+      "bytes": 6717,
+      "sha256": "47e9d1778b8193b87d9a495cca3d9acfd5fa78ff7517ff8fe214367780e5f5a2"
+    },
+    {
+      "path": "股票系統M1_v0_18/capital_research/explicit_sell_20261029/controls/context/actual.json",
+      "bytes": 262,
+      "sha256": "3bf88f690fb12be42e98069116cd3a593e229aacf53fadbaf651adf733fb71b3"
+    },
+    {
+      "path": "股票系統M1_v0_18/capital_research/explicit_sell_20261029/controls/context/specifications.json",
+      "bytes": 246,
+      "sha256": "2c7c4ea68f5bfdb229285e54e1459b59a7be128153625921f6defbc5d3573951"
+    },
+    {
+      "path": "股票系統M1_v0_18/capital_research/explicit_sell_20261029/controls/future/actual.json",
+      "bytes": 44892,
+      "sha256": "a2ac0532d10aa477b98818584b3ca825e1ca95816ce408b8a8d0fe9477beebc6"
+    },
+    {
+      "path": "股票系統M1_v0_18/capital_research/explicit_sell_20261029/controls/future/comparison.json",
+      "bytes": 51,
+      "sha256": "f2ed510526f4325ecbafbd29d6cbff3ac755f347aea95a312220cf6319f0f5b3"
+    },
+    {
+      "path": "股票系統M1_v0_18/capital_research/explicit_sell_20261029/controls/future/input.json",
+      "bytes": 82300,
+      "sha256": "a53077a4602b5a0191ab0d1dea728de3846fc7a0c19dacfb6e805b8ce544e5d4"
+    },
+    {
+      "path": "股票系統M1_v0_18/capital_research/explicit_sell_20261029/controls/legacy/hold/actual.json",
+      "bytes": 392577,
+      "sha256": "1d644593a71a345eecb4b5c8dbe48dd705093557a1e359a5e0d21c19c198a6e7"
+    },
+    {
+      "path": "股票系統M1_v0_18/capital_research/explicit_sell_20261029/controls/legacy/hold/binding.json",
+      "bytes": 420,
+      "sha256": "d33a8d788b6e7f5431b8deae008abaab51151820671f1f524693786e73d56152"
+    },
+    {
+      "path": "股票系統M1_v0_18/capital_research/explicit_sell_20261029/controls/legacy/independent-B20/actual.json",
+      "bytes": 404955,
+      "sha256": "9e2c415271cf7997ab8e50a824a67439117780d26c8e4b4c9320dfc980efc243"
+    },
+    {
+      "path": "股票系統M1_v0_18/capital_research/explicit_sell_20261029/controls/legacy/independent-B20/binding.json",
+      "bytes": 442,
+      "sha256": "bdfd1c468faeabfb3ff50989988aea8f1a466b03e1b14d313a0f49564878ddc0"
+    },
+    {
+      "path": "股票系統M1_v0_18/capital_research/explicit_sell_20261029/controls/legacy/old-trigger/actual.json",
+      "bytes": 724,
+      "sha256": "8a54c20c0c60ab85c773aade7b7b80eca5d420db4183b4cbcc7fdef7133c0f09"
+    },
+    {
+      "path": "股票系統M1_v0_18/capital_research/explicit_sell_20261029/controls/legacy/old-trigger/binding.json",
+      "bytes": 431,
+      "sha256": "f73423c89aa59a7b578a08f1c13c75f9ca5cff841a73ce3d19a3a405d951793c"
+    },
+    {
+      "path": "股票系統M1_v0_18/capital_research/explicit_sell_20261029/controls/legacy/summary.json",
+      "bytes": 173,
+      "sha256": "401e06f5f84327c6427b1878ffaa3ab413868268bb8af39567ef3d039c339066"
+    },
+    {
+      "path": "股票系統M1_v0_18/capital_research/explicit_sell_20261029/controls/not-new-capital-qualified/actual.json",
+      "bytes": 44259,
+      "sha256": "c800c35c87180850afef76e0ddcea94d7f12150b5dd3185fcb72d5a4ac28aed3"
+    },
+    {
+      "path": "股票系統M1_v0_18/capital_research/explicit_sell_20261029/controls/not-new-capital-qualified/input.json",
+      "bytes": 81658,
+      "sha256": "1ca4556f1a49835ccb975de921fa791dcf3c32a791b4191d45878aa722cd59cf"
+    },
+    {
+      "path": "股票系統M1_v0_18/capital_research/explicit_sell_20261029/controls/partial/actual.json",
+      "bytes": 263092,
+      "sha256": "8790713161a3e49a4f3ce884324060ac9d9a927e7da5ae7f7d9986598a5387e6"
+    },
+    {
+      "path": "股票系統M1_v0_18/capital_research/explicit_sell_20261029/controls/partial/comparison.json",
+      "bytes": 109,
+      "sha256": "83a12f287119f82383d0900433b2e0b6b66bed564e41178f1c22da928cc6dd7e"
+    },
+    {
+      "path": "股票系統M1_v0_18/capital_research/explicit_sell_20261029/controls/partial/input.json",
+      "bytes": 230344,
+      "sha256": "0ad45682cbc841fa9ad65aede1a6bfbb30a67fb5d5b8ca39577468567e9b255e"
+    },
+    {
+      "path": "股票系統M1_v0_18/capital_research/explicit_sell_20261029/controls/partial/one-shot-execution.json",
+      "bytes": 91026,
+      "sha256": "46d6d5285c0aba4d9f1b666bcf465a3057711f768e06eef9d2f28016a697c65e"
+    },
+    {
+      "path": "股票系統M1_v0_18/capital_research/explicit_sell_20261029/controls/partial/root-input.json",
+      "bytes": 116674,
+      "sha256": "0c9b7d0b94404d1048dee83a52949557ae3bf8b4c143ecf947a7c3b2158890f6"
+    },
+    {
+      "path": "股票系統M1_v0_18/capital_research/explicit_sell_20261029/controls/source-versions.json",
+      "bytes": 493,
+      "sha256": "c141938b8f687e5094bf5a23ac80a310cb8c20aa59dffe93ca3a569b3b9f598d"
+    },
+    {
+      "path": "股票系統M1_v0_18/capital_research/explicit_sell_20261029/controls/specification.json",
+      "bytes": 497,
+      "sha256": "31ed4676cee1b6551584550f1c2955392ba683840d3bc1f4b7813e2313362996"
+    },
+    {
+      "path": "股票系統M1_v0_18/capital_research/explicit_sell_20261029/controls/wrong-order-code/actual.json",
+      "bytes": 2286,
+      "sha256": "5020eaf87611b0be540070321918684716c5184c83b74b7b8ae65704e188903d"
+    },
+    {
+      "path": "股票系統M1_v0_18/capital_research/explicit_sell_20261029/controls/wrong-order-code/expected.json",
+      "bytes": 91,
+      "sha256": "ed694aaab4879fd1d5ffc57c17bd069f795d74e3e505581b6b9ead8e34bb44c2"
+    },
+    {
+      "path": "股票系統M1_v0_18/capital_research/explicit_sell_20261029/controls/wrong-order-code/input.json",
+      "bytes": 130997,
+      "sha256": "fa3263722e71d208434641fc46d1ad7b5ca0f00208430a736a91c13476a7e8e6"
+    },
+    {
+      "path": "股票系統M1_v0_18/capital_research/explicit_sell_20261029/diagnostics/environment-recovery.json",
+      "bytes": 539,
+      "sha256": "def7928eb6144d25763346bc706b816f271b583ebbba7edb02495665781f56eb"
+    },
+    {
+      "path": "股票系統M1_v0_18/capital_research/explicit_sell_20261029/documentation-update.json",
+      "bytes": 1258,
+      "sha256": "3123a187f5b94b0588bdb19f6003874965fdf31b76551b9ba7155a9a6ff0defb"
+    },
+    {
+      "path": "股票系統M1_v0_18/capital_research/explicit_sell_20261029/freeze.py",
+      "bytes": 10041,
+      "sha256": "1fbebe2c1cffc22774b91ba1f30230709c7ffef40664a899d3935803bd24eb40"
+    },
+    {
+      "path": "股票系統M1_v0_18/capital_research/explicit_sell_20261029/frozen.json",
+      "bytes": 15211,
+      "sha256": "408f8b30cf11e672411b218f1460b51cacd176d5d6e93ee16f4d520b5b61b185"
+    },
+    {
+      "path": "股票系統M1_v0_18/capital_research/explicit_sell_20261029/initial/active-checkpoint/checked-action.json",
+      "bytes": 808,
+      "sha256": "8d592da5e142589a53fafaf5d1fe4c4a3a4b8e4de7b181c5d18ec4a85029427f"
+    },
+    {
+      "path": "股票系統M1_v0_18/capital_research/explicit_sell_20261029/initial/active-checkpoint/execution-input.json",
+      "bytes": 87862,
+      "sha256": "71499aa942bb96c1e9be1ea5aaef09b7b46d588f395da119d79097f5955e4b23"
+    },
+    {
+      "path": "股票系統M1_v0_18/capital_research/explicit_sell_20261029/initial/active-checkpoint/result.json",
+      "bytes": 739,
+      "sha256": "95cdfab158ad6e5f0cce32584e8fa21b340edce7d19fcbcb865b1b847a992e4e"
+    },
+    {
+      "path": "股票系統M1_v0_18/capital_research/explicit_sell_20261029/initial/basis-mismatch/checked-action.json",
+      "bytes": 800,
+      "sha256": "41ab5e715051259afed0cc4ae05c5b0f2d30ce53448f2532eeaf1ce85ab75605"
+    },
+    {
+      "path": "股票系統M1_v0_18/capital_research/explicit_sell_20261029/initial/basis-mismatch/execution-input.json",
+      "bytes": 87528,
+      "sha256": "fc43a7683dea488232a5172862ff9bdb507b987a17830aab8ea3a2d0abc1156b"
+    },
+    {
+      "path": "股票系統M1_v0_18/capital_research/explicit_sell_20261029/initial/basis-mismatch/result.json",
+      "bytes": 735,
+      "sha256": "008eb9a16d5e384d6ce51618357ab505110f11b120c6cffef7ee034cb6194f0a"
+    },
+    {
+      "path": "股票系統M1_v0_18/capital_research/explicit_sell_20261029/initial/buy-injection/checked-action.json",
+      "bytes": 44265,
+      "sha256": "51b6ec175e6ba5dd5a143fc6218c72c0601086ee2207a3be9da6755fb88bfe8c"
+    },
+    {
+      "path": "股票系統M1_v0_18/capital_research/explicit_sell_20261029/initial/buy-injection/execution-input.json",
+      "bytes": 130996,
+      "sha256": "34d66e601104e2229bd55745117641634855a266e6f5e8b58905d4a08c411feb"
+    },
+    {
+      "path": "股票系統M1_v0_18/capital_research/explicit_sell_20261029/initial/buy-injection/result.json",
+      "bytes": 2286,
+      "sha256": "56f15dec666f04dc1b626ce32119104a01eaca6c9265857a6bd282cf3045d0e4"
+    },
+    {
+      "path": "股票系統M1_v0_18/capital_research/explicit_sell_20261029/initial/capacity-zero/checked-action.json",
+      "bytes": 44265,
+      "sha256": "51b6ec175e6ba5dd5a143fc6218c72c0601086ee2207a3be9da6755fb88bfe8c"
+    },
+    {
+      "path": "股票系統M1_v0_18/capital_research/explicit_sell_20261029/initial/capacity-zero/execution-input.json",
+      "bytes": 130995,
+      "sha256": "e02929ea5d16a22c439d3dc5971a43574de941496f523ef34eda9cfd8feed2e5"
+    },
+    {
+      "path": "股票系統M1_v0_18/capital_research/explicit_sell_20261029/initial/capacity-zero/result.json",
+      "bytes": 384708,
+      "sha256": "64c7b8bfc3753e6429e3503679962ee5b7e3774c52731dcae894bfea4cb81088"
+    },
+    {
+      "path": "股票系統M1_v0_18/capital_research/explicit_sell_20261029/initial/cross-version/checked-action.json",
+      "bytes": 44265,
+      "sha256": "51b6ec175e6ba5dd5a143fc6218c72c0601086ee2207a3be9da6755fb88bfe8c"
+    },
+    {
+      "path": "股票系統M1_v0_18/capital_research/explicit_sell_20261029/initial/cross-version/execution-input.json",
+      "bytes": 130997,
+      "sha256": "22ab29f1066f6800a1ad6deba3929cc03cc451c82b9eae44b0f09e61b621cb0d"
+    },
+    {
+      "path": "股票系統M1_v0_18/capital_research/explicit_sell_20261029/initial/cross-version/result.json",
+      "bytes": 737,
+      "sha256": "258070b35950b814086bb84b2dd735ab56a31b3448a36ec8124573f68d16d962"
+    },
+    {
+      "path": "股票系統M1_v0_18/capital_research/explicit_sell_20261029/initial/empty-orders/checked-action.json",
+      "bytes": 44265,
+      "sha256": "51b6ec175e6ba5dd5a143fc6218c72c0601086ee2207a3be9da6755fb88bfe8c"
+    },
+    {
+      "path": "股票系統M1_v0_18/capital_research/explicit_sell_20261029/initial/empty-orders/execution-input.json",
+      "bytes": 130787,
+      "sha256": "0cb7d12b6e9b036dfa264d5b431121b08ab3f6b0ae3098a8c22354c57ea34603"
+    },
+    {
+      "path": "股票系統M1_v0_18/capital_research/explicit_sell_20261029/initial/empty-orders/result.json",
+      "bytes": 381555,
+      "sha256": "51f7d500953058d7364d455c360577540b14d6e72b27845fbfee8acdc24f8540"
+    },
+    {
+      "path": "股票系統M1_v0_18/capital_research/explicit_sell_20261029/initial/existing-no-trade-band/checked-action.json",
+      "bytes": 44244,
+      "sha256": "571796fc95762a3beb80b82e4b3601f7df72329952f8d8427f4f6cb32021dd92"
+    },
+    {
+      "path": "股票系統M1_v0_18/capital_research/explicit_sell_20261029/initial/existing-no-trade-band/execution-input.json",
+      "bytes": 130957,
+      "sha256": "50decc8010476843c08e46986b511285d13b697ae752356f879ddeb629c7c8d0"
+    },
+    {
+      "path": "股票系統M1_v0_18/capital_research/explicit_sell_20261029/initial/existing-no-trade-band/result.json",
+      "bytes": 711,
+      "sha256": "4b3c876a011e4aefaa019eafcc38dc9c16bbe054e9c2c0e94bff588e528cba8d"
+    },
+    {
+      "path": "股票系統M1_v0_18/capital_research/explicit_sell_20261029/initial/exit-B7/checked-action.json",
+      "bytes": 44265,
+      "sha256": "51b6ec175e6ba5dd5a143fc6218c72c0601086ee2207a3be9da6755fb88bfe8c"
+    },
+    {
+      "path": "股票系統M1_v0_18/capital_research/explicit_sell_20261029/initial/exit-B7/execution-input.json",
+      "bytes": 130997,
+      "sha256": "eef9525d6a55d9b90f2f34db9680ce1cf03dd58a9c127458f6f5dfc8b361a812"
+    },
+    {
+      "path": "股票系統M1_v0_18/capital_research/explicit_sell_20261029/initial/exit-B7/result.json",
+      "bytes": 387766,
+      "sha256": "ac5ddda0044b1eed4acb4f77e8d89961f568220b4738e4d501f2498f9d0799d6"
+    },
+    {
+      "path": "股票系統M1_v0_18/capital_research/explicit_sell_20261029/initial/exit-quantity-mismatch/checked-action.json",
+      "bytes": 802,
+      "sha256": "4f3494660f6cd4c9fc9efe78744b23d1c1968b226f4ca42b319645855ee05d32"
+    },
+    {
+      "path": "股票系統M1_v0_18/capital_research/explicit_sell_20261029/initial/exit-quantity-mismatch/execution-input.json",
+      "bytes": 87534,
+      "sha256": "84535703902b9c32b97a3020606fe45e96e1ba870357707de8c819b7201bb426"
+    },
+    {
+      "path": "股票系統M1_v0_18/capital_research/explicit_sell_20261029/initial/exit-quantity-mismatch/result.json",
+      "bytes": 737,
+      "sha256": "369f01cdf099aa704ef13fc00b02ef3685ae2248c6ba8b7bbd315ac1d8fc0ad8"
+    },
+    {
+      "path": "股票系統M1_v0_18/capital_research/explicit_sell_20261029/initial/fractional/checked-action.json",
+      "bytes": 801,
+      "sha256": "5a171073f6120c9b0cdd3ae03900a656ed96c8fb701981b412e5a3a4d086f676"
+    },
+    {
+      "path": "股票系統M1_v0_18/capital_research/explicit_sell_20261029/initial/fractional/execution-input.json",
+      "bytes": 87519,
+      "sha256": "a82ba27de5796dc8debb363b1cf8f2d81b1df32636ae819b215a602d5379e19f"
+    },
+    {
+      "path": "股票系統M1_v0_18/capital_research/explicit_sell_20261029/initial/fractional/result.json",
+      "bytes": 736,
+      "sha256": "b2780ecfcc1c56f4a9bf551601ef516a344f9a909b76aebe7ef77b4ff369701f"
+    },
+    {
+      "path": "股票系統M1_v0_18/capital_research/explicit_sell_20261029/initial/limit-down/checked-action.json",
+      "bytes": 44265,
+      "sha256": "51b6ec175e6ba5dd5a143fc6218c72c0601086ee2207a3be9da6755fb88bfe8c"
+    },
+    {
+      "path": "股票系統M1_v0_18/capital_research/explicit_sell_20261029/initial/limit-down/execution-input.json",
+      "bytes": 131011,
+      "sha256": "d729a1e66e7265a0761ec2d59354b893a203d10d4727b64fa7aaeb6aebcae6b1"
+    },
+    {
+      "path": "股票系統M1_v0_18/capital_research/explicit_sell_20261029/initial/limit-down/result.json",
+      "bytes": 384709,
+      "sha256": "79f8c3aa8ce4ea6faa34a03c8634c58946e03cb861a3c00b66e2ab04f452007d"
+    },
+    {
+      "path": "股票系統M1_v0_18/capital_research/explicit_sell_20261029/initial/new-opening/checked-action.json",
+      "bytes": 791,
+      "sha256": "ade472a6b41641f0c70f96ab4dbfee9ee986f8fdaa4cd153549486649252dfef"
+    },
+    {
+      "path": "股票系統M1_v0_18/capital_research/explicit_sell_20261029/initial/new-opening/execution-input.json",
+      "bytes": 15053,
+      "sha256": "4d4186b391da02b19ccf52ad38ecd28c84adb4130d4026fceb311b7d66182699"
+    },
+    {
+      "path": "股票系統M1_v0_18/capital_research/explicit_sell_20261029/initial/new-opening/result.json",
+      "bytes": 726,
+      "sha256": "6cddf53fdb24a7a18d5a757ef9f5a1d94d806625beace3fc995a2cec7d2b5427"
+    },
+    {
+      "path": "股票系統M1_v0_18/capital_research/explicit_sell_20261029/initial/oversell/checked-action.json",
+      "bytes": 801,
+      "sha256": "5beb1071fae0e4254390cdcf001fd328dc5a0ade52675402e0e908a16dc2f684"
+    },
+    {
+      "path": "股票系統M1_v0_18/capital_research/explicit_sell_20261029/initial/oversell/execution-input.json",
+      "bytes": 87517,
+      "sha256": "809651b9491db2a3b4357f224095d32db1b9bea712daeb636f1ece1ae269d419"
+    },
+    {
+      "path": "股票系統M1_v0_18/capital_research/explicit_sell_20261029/initial/oversell/result.json",
+      "bytes": 736,
+      "sha256": "4641ac50214bc8f7186a7fd0beef8eb1815b3ebef129b1984d559f8fc193e190"
+    },
+    {
+      "path": "股票系統M1_v0_18/capital_research/explicit_sell_20261029/initial/oversplit/checked-action.json",
+      "bytes": 44265,
+      "sha256": "51b6ec175e6ba5dd5a143fc6218c72c0601086ee2207a3be9da6755fb88bfe8c"
+    },
+    {
+      "path": "股票系統M1_v0_18/capital_research/explicit_sell_20261029/initial/oversplit/execution-input.json",
+      "bytes": 131194,
+      "sha256": "1045d41ffb0434bc236973e2ea0d599e071c2b1426e10b324d1e29d1040937b5"
+    },
+    {
+      "path": "股票系統M1_v0_18/capital_research/explicit_sell_20261029/initial/oversplit/result.json",
+      "bytes": 2290,
+      "sha256": "0aba04640998996961f02e14b643d547fe0fcb9967a53a46bf2ec0d8f66e276f"
+    },
+    {
+      "path": "股票系統M1_v0_18/capital_research/explicit_sell_20261029/initial/partial-exit-B20/checked-action.json",
+      "bytes": 44256,
+      "sha256": "12eaec52c290f32cab69d258d0c96f865264f9c64a40c5ee54b4540e81bf08fc"
+    },
+    {
+      "path": "股票系統M1_v0_18/capital_research/explicit_sell_20261029/initial/partial-exit-B20/execution-input.json",
+      "bytes": 130825,
+      "sha256": "0a674b6ed3d9d52c156e7da468c9e4cbf098e4dab14608267592d9057c8a416d"
+    },
+    {
+      "path": "股票系統M1_v0_18/capital_research/explicit_sell_20261029/initial/partial-exit-B20/result.json",
+      "bytes": 379038,
+      "sha256": "67bed16cecab45abcba219786cf2ea69259f98f1fac771b1f153256006df69ff"
+    },
+    {
+      "path": "股票系統M1_v0_18/capital_research/explicit_sell_20261029/initial/real-relabel/checked-action.json",
+      "bytes": 806,
+      "sha256": "52c928fb172f17e8c3d6ad0811849d4ad4417971e2ff0bd059c9edea30570d1c"
+    },
+    {
+      "path": "股票系統M1_v0_18/capital_research/explicit_sell_20261029/initial/real-relabel/execution-input.json",
+      "bytes": 87516,
+      "sha256": "8039367f9c732f90f67a422d7998825ad95a389547011df3901f0612879aa7a8"
+    },
+    {
+      "path": "股票系統M1_v0_18/capital_research/explicit_sell_20261029/initial/real-relabel/result.json",
+      "bytes": 741,
+      "sha256": "4387315c57fa240b33019bce1deb94eaa0a4be7e41a3753f356281a5e324ea83"
+    },
+    {
+      "path": "股票系統M1_v0_18/capital_research/explicit_sell_20261029/initial/reduce-B3/checked-action.json",
+      "bytes": 44247,
+      "sha256": "c7e584927fffb04410e9bed3bd660986a36380e86712fe0050b28e287fe7e5f8"
+    },
+    {
+      "path": "股票系統M1_v0_18/capital_research/explicit_sell_20261029/initial/reduce-B3/execution-input.json",
+      "bytes": 130963,
+      "sha256": "4aa2646ffbd2ca6016012bd475b8a96b95dfc25b5b26d23512f2ebdde72da90f"
+    },
+    {
+      "path": "股票系統M1_v0_18/capital_research/explicit_sell_20261029/initial/reduce-B3/result.json",
+      "bytes": 387741,
+      "sha256": "04139e1feca3ecddb1565a384c8d1decb315e1962c4d41a3e5f61953075734c5"
+    },
+    {
+      "path": "股票系統M1_v0_18/capital_research/explicit_sell_20261029/initial/reduction-would-exit/checked-action.json",
+      "bytes": 801,
+      "sha256": "b5e218f76a224c3b7f5b1201ffcac9cb37a92d3497bf903ef84fa56358b0178f"
+    },
+    {
+      "path": "股票系統M1_v0_18/capital_research/explicit_sell_20261029/initial/reduction-would-exit/execution-input.json",
+      "bytes": 87517,
+      "sha256": "a887e1f4a63faccc632058318dbdf18176e9559f8ccd2ab3e20209844b1c7cb3"
+    },
+    {
+      "path": "股票系統M1_v0_18/capital_research/explicit_sell_20261029/initial/reduction-would-exit/result.json",
+      "bytes": 736,
+      "sha256": "647ab5a374fd92e9edc9b0400f2530cdb7fa53419584137fb018e0c842e5f0bb"
+    },
+    {
+      "path": "股票系統M1_v0_18/capital_research/explicit_sell_20261029/initial/source-versions.json",
+      "bytes": 945,
+      "sha256": "f48929a15769beae17fe13724201f7a27e3d4bedc6afe0c85c2651d95a7d770c"
+    },
+    {
+      "path": "股票系統M1_v0_18/capital_research/explicit_sell_20261029/initial/split-exit/checked-action.json",
+      "bytes": 44265,
+      "sha256": "51b6ec175e6ba5dd5a143fc6218c72c0601086ee2207a3be9da6755fb88bfe8c"
+    },
+    {
+      "path": "股票系統M1_v0_18/capital_research/explicit_sell_20261029/initial/split-exit/execution-input.json",
+      "bytes": 131194,
+      "sha256": "39b90e0f83b1ce05854bba5d85418fca5883234241afd34ba4a00e6ca4a7d82d"
+    },
+    {
+      "path": "股票系統M1_v0_18/capital_research/explicit_sell_20261029/initial/split-exit/result.json",
+      "bytes": 393305,
+      "sha256": "278a9072db66c039874cea82b73e63f9b072802ec6788994f2dcb287b24b3a4b"
+    },
+    {
+      "path": "股票系統M1_v0_18/capital_research/explicit_sell_20261029/initial/summary.json",
+      "bytes": 7749,
+      "sha256": "eea66670e9900e8a49453d75a0e6cdf46520cbbcfc884beae7590578cb297b1f"
+    },
+    {
+      "path": "股票系統M1_v0_18/capital_research/explicit_sell_20261029/initial/tampered-checked/checked-action.json",
+      "bytes": 44265,
+      "sha256": "51b6ec175e6ba5dd5a143fc6218c72c0601086ee2207a3be9da6755fb88bfe8c"
+    },
+    {
+      "path": "股票系統M1_v0_18/capital_research/explicit_sell_20261029/initial/tampered-checked/execution-input.json",
+      "bytes": 130997,
+      "sha256": "cccf130dfda25843b96ce159c0ee9f1483661ac4ced3601421b6bbe2d4d777f7"
+    },
+    {
+      "path": "股票系統M1_v0_18/capital_research/explicit_sell_20261029/initial/tampered-checked/result.json",
+      "bytes": 714,
+      "sha256": "462938e9a08a350cad6f1bd32a09bed05630dd5889ef5c4541cd0c0f2df5ed09"
+    },
+    {
+      "path": "股票系統M1_v0_18/capital_research/explicit_sell_20261029/initial/unsettled-checkpoint/checked-action.json",
+      "bytes": 811,
+      "sha256": "11516193b0eaafeb4626f52b6d78305b8e18bc3f75a5631296a2a258693a6059"
+    },
+    {
+      "path": "股票系統M1_v0_18/capital_research/explicit_sell_20261029/initial/unsettled-checkpoint/execution-input.json",
+      "bytes": 85357,
+      "sha256": "59308f20dca1902c3256aa565ef9529e5f5c831adf43886c29a11f5d24672c53"
+    },
+    {
+      "path": "股票系統M1_v0_18/capital_research/explicit_sell_20261029/initial/unsettled-checkpoint/result.json",
+      "bytes": 742,
+      "sha256": "17e0c71751ed9a7de54d1be63a09971fe7dc0eef40ef4ae5458c6246c0af04a9"
+    },
+    {
+      "path": "股票系統M1_v0_18/capital_research/explicit_sell_20261029/initial/v01-sell-refused/checked-action.json",
+      "bytes": 811,
+      "sha256": "81f645e63daf990242e1fd8c18c5c1da8b42d69ded53317dc719249315647783"
+    },
+    {
+      "path": "股票系統M1_v0_18/capital_research/explicit_sell_20261029/initial/v01-sell-refused/execution-input.json",
+      "bytes": 88151,
+      "sha256": "b3093112ac26c223c719a8ef7dba2345c5e927af84142631786713bbd5084f72"
+    },
+    {
+      "path": "股票系統M1_v0_18/capital_research/explicit_sell_20261029/initial/v01-sell-refused/result.json",
+      "bytes": 746,
+      "sha256": "8bfe564dde1f8280f3518800f306045ac8946100e9478bf3f1391f24affadbc5"
+    },
+    {
+      "path": "股票系統M1_v0_18/capital_research/explicit_sell_20261029/initial/wrong-latest/checked-action.json",
+      "bytes": 796,
+      "sha256": "3b505448e2cc51029d84af460ff32a8786b051089faee0e64a05c2d3b45115a0"
+    },
+    {
+      "path": "股票系統M1_v0_18/capital_research/explicit_sell_20261029/initial/wrong-latest/execution-input.json",
+      "bytes": 87462,
+      "sha256": "2468263ca60033400a6214ab0da96972fbb2efd23579aa62f4fb1a0ac85768bb"
+    },
+    {
+      "path": "股票系統M1_v0_18/capital_research/explicit_sell_20261029/initial/wrong-latest/result.json",
+      "bytes": 731,
+      "sha256": "cf9252c22fd1619184319c58ef743cd9037383a9c283055e612f9660c6d8d38e"
+    },
+    {
+      "path": "股票系統M1_v0_18/capital_research/explicit_sell_20261029/intake.json",
+      "bytes": 3847,
+      "sha256": "5688159424f5a7aa141898a372ea708e863870276c4612d87a441ac825e6d060"
+    },
+    {
+      "path": "股票系統M1_v0_18/capital_research/explicit_sell_20261029/preservation.json",
+      "bytes": 2087,
+      "sha256": "e6cc466bc09e05359e913333615ce012cc7ec1921b16f81a04fe6dd0e4bcfc78"
+    },
+    {
+      "path": "股票系統M1_v0_18/capital_research/explicit_sell_20261029/test-evidence/continuous-origin.json",
+      "bytes": 187,
+      "sha256": "e09f90e66f8aa9d05a6dd1d25c4abd7729d4e80d17ba59ad93fecf5ae8fc1f14"
+    },
+    {
+      "path": "股票系統M1_v0_18/capital_research/explicit_sell_20261029/test-evidence/daily-handcheck.json",
+      "bytes": 6316,
+      "sha256": "0d30f29fb272ba87413bcf65abf9470010b779c18bbda8f15a55cbf96494d0da"
+    },
+    {
+      "path": "股票系統M1_v0_18/capital_research/explicit_sell_20261029/test-evidence/preservation.json",
+      "bytes": 168,
+      "sha256": "17f6a1b71b004ddf40682cd63f62d969b6eb2c2e1311b0b32b8e80c8ba96f603"
+    },
+    {
+      "path": "股票系統M1_v0_18/capital_research/explicit_sell_20261029/test_sell.py",
+      "bytes": 11868,
+      "sha256": "73427dd9f392b0cf9d910927b4c798642b445d5d04b101191cd31b5fc54c8448"
+    },
+    {
+      "path": "股票系統M1_v0_18/capital_research/explicit_sell_20261029/tests-final.log",
+      "bytes": 1598,
+      "sha256": "4983b1530384c198499f9f943035cb30153eaeabd12ec1555457d433017bafd3"
+    }
+  ]
+}

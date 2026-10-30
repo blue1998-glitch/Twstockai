@@ -1,0 +1,576 @@
+{
+  "schema": "m1-saved-prefix-dual-reference-review/1",
+  "source_HTML_sha256": "fbca1e1d7e82d5dc9dcca8da0d3c8619f59431c1119d2cd8cb4c8ffc8293a724",
+  "source_bundle_artifact_id": "sha256:26e36b1a9c74da39baeb83770f2e1738a9993ee1675d224f45315298a0ed3c5d",
+  "code": "2884",
+  "study_selected_at": "2026-10-20T13:26:08.710643+00:00",
+  "historical_selection_time": null,
+  "historical_signal_eligible": false,
+  "qualification": "READ_SAVED_CORE_RESULTS_AND_RAW_VALUES_NOT_NEW_ENGINE_REPLAY_OR_REACTION_ADAPTER_OUTPUT",
+  "selectors_later_explicit_research_not_historical_selection": [
+    {
+      "id": "R1",
+      "date": "2026-09-17",
+      "field": "high"
+    },
+    {
+      "id": "R2",
+      "date": "2026-10-15",
+      "field": "high"
+    }
+  ],
+  "frames": [
+    {
+      "as_of": "2026-10-14",
+      "original_core_result_id": "sha256:4aedbb331f57f5a01afffed99e06e296c90bf4ca7ac6199195735c1845ea3187",
+      "original_numeric_frame_id": "sha256:03a6b1236af3982792fe85793c5536cb6abf30f545747fd2fbbdae8780401ceb",
+      "original_source_prefix_fingerprint": "sha256:85272042bdb9ba0f221a376ae97da797a93e53e4641ae3f6299084ee25e47832",
+      "original_source_records": 1211,
+      "original_bar": {
+        "close": "47.30",
+        "date": "2026-10-14",
+        "high": "47.30",
+        "low": "46.05",
+        "open": "46.90",
+        "volume_shares_scaled": "36308728"
+      },
+      "original_macd": {
+        "dea": "1.1980893685699559066348805451567018836524359839100",
+        "dif": "1.068094336458931489210551051721209738702725854705",
+        "histogram": "-0.2599900642220488348486589868709842898994202584100",
+        "reason": "AVAILABLE"
+      },
+      "original_moving_averages": {
+        "130": "36.85038461538461538461538462",
+        "20": "45.8425",
+        "260": "34.65961538461538461538461538",
+        "5": "46.11",
+        "60": "41.225"
+      },
+      "original_recent_3pct_confirmed_sources": [
+        {
+          "confirmation": "LATER_COMPLETED_CLOSE_REVERSAL_RESEARCH",
+          "confirmed_at": "2026-09-23",
+          "confirmed_index": 1198,
+          "first_observed_at": "2026-09-23",
+          "id": "sha256:1a1c1cd695fbda45df17d1cf4ec7b451eb0eeb681ca82a676d605351f1049572",
+          "kind": "HIGH",
+          "occurred_at": "2026-09-17",
+          "occurred_index": 1194,
+          "price": "47.35",
+          "scale": "0.03",
+          "segment": 0,
+          "source_dates": [
+            "2026-09-17"
+          ]
+        },
+        {
+          "confirmation": "LATER_COMPLETED_CLOSE_REVERSAL_RESEARCH",
+          "confirmed_at": "2026-10-07",
+          "confirmed_index": 1206,
+          "first_observed_at": "2026-10-07",
+          "id": "sha256:97f99946efffc956c39b03dc68b03c125ed5da80b7e98e8cab86f184a932aac3",
+          "kind": "LOW",
+          "occurred_at": "2026-10-01",
+          "occurred_index": 1202,
+          "price": "44.20",
+          "scale": "0.03",
+          "segment": 0,
+          "source_dates": [
+            "2026-10-01"
+          ]
+        }
+      ],
+      "original_pending_extrema": [
+        {
+          "direction": "UP",
+          "high": {
+            "index": 1210,
+            "price": "47.30",
+            "source_dates": [
+              "2026-10-14"
+            ]
+          },
+          "low": {
+            "index": 1206,
+            "price": "45.40",
+            "source_dates": [
+              "2026-10-07"
+            ]
+          },
+          "qualification": "UNCONFIRMED_NOT_A_PIVOT"
+        },
+        {
+          "direction": "UP",
+          "high": {
+            "index": 1194,
+            "price": "47.35",
+            "source_dates": [
+              "2026-09-17"
+            ]
+          },
+          "low": {
+            "index": 1177,
+            "price": "38.10",
+            "source_dates": [
+              "2026-08-25"
+            ]
+          },
+          "qualification": "UNCONFIRMED_NOT_A_PIVOT"
+        },
+        {
+          "direction": "UP",
+          "high": {
+            "index": 1194,
+            "price": "47.35",
+            "source_dates": [
+              "2026-09-17"
+            ]
+          },
+          "low": {
+            "index": 1127,
+            "price": "33.95",
+            "source_dates": [
+              "2026-06-12"
+            ]
+          },
+          "qualification": "UNCONFIRMED_NOT_A_PIVOT"
+        }
+      ],
+      "original_parameters_unchanged": {
+        "cluster_spread_fraction": "0.35",
+        "enumeration": "LONGEST_COMPATIBLE_RUN_AND_LATEST_FOUR_TURN_SEED",
+        "minimum_high_turns": 2,
+        "minimum_low_turns": 2,
+        "reversals": [
+          "0.03",
+          "0.06",
+          "0.12"
+        ],
+        "status": "RESEARCH_SETTINGS_NOT_USER_APPROVED_STRATEGY"
+      },
+      "original_manual_case_inputs_used": false,
+      "reference_observations": [
+        {
+          "reference_id": "R1",
+          "selector": {
+            "id": "R1",
+            "date": "2026-09-17",
+            "field": "high"
+          },
+          "known_on_saved_completed_record": "2026-09-17",
+          "source_price": "47.35",
+          "reason": "AVAILABLE_SAVED_SEQUENCE_ONLY",
+          "relations": {
+            "close": {
+              "relation": "BELOW",
+              "delta": "-0.05"
+            },
+            "high": {
+              "relation": "BELOW",
+              "delta": "-0.05"
+            },
+            "low": {
+              "relation": "BELOW",
+              "delta": "-1.30"
+            }
+          }
+        },
+        {
+          "reference_id": "R2",
+          "selector": {
+            "id": "R2",
+            "date": "2026-10-15",
+            "field": "high"
+          },
+          "known_on_saved_completed_record": "2026-10-15",
+          "source_price": null,
+          "reason": "REFERENCE_NOT_YET_KNOWN",
+          "relations": null
+        }
+      ],
+      "historical_manual_interval_label": null,
+      "historical_manual_label_reason": "CURRENT_LATER_REVIEW_NOT_INJECTED_INTO_SAVED_PREFIX",
+      "historical_signal_eligible": false,
+      "primary_pressure_id": null
+    },
+    {
+      "as_of": "2026-10-15",
+      "original_core_result_id": "sha256:49986912a777c58351bd3c5b768750a48e11defbdb81986bfcd8bce07d38082f",
+      "original_numeric_frame_id": "sha256:3a2509b41180170a88483668a9c4abd92e51adcb002eaffeb8b8af9ceb9a69c3",
+      "original_source_prefix_fingerprint": "sha256:c7c1f214b182d8fc8ae84c5e16ad2b6f520431c1f18784c0c7f398a1144a9515",
+      "original_source_records": 1212,
+      "original_bar": {
+        "close": "48.80",
+        "date": "2026-10-15",
+        "high": "49.50",
+        "low": "47.60",
+        "open": "48.35",
+        "volume_shares_scaled": "63086494"
+      },
+      "original_macd": {
+        "dea": "1.2038093245505472083527236876288834478280033244376",
+        "dif": "1.226689148472912415224096257517609704530272686548",
+        "histogram": "0.0457596478447304137427451397774525134045387242208",
+        "reason": "AVAILABLE"
+      },
+      "original_moving_averages": {
+        "130": "36.97615384615384615384615385",
+        "20": "45.965",
+        "260": "34.71826923076923076923076923",
+        "5": "46.72",
+        "60": "41.44083333333333333333333333"
+      },
+      "original_recent_3pct_confirmed_sources": [
+        {
+          "confirmation": "LATER_COMPLETED_CLOSE_REVERSAL_RESEARCH",
+          "confirmed_at": "2026-09-23",
+          "confirmed_index": 1198,
+          "first_observed_at": "2026-09-23",
+          "id": "sha256:1a1c1cd695fbda45df17d1cf4ec7b451eb0eeb681ca82a676d605351f1049572",
+          "kind": "HIGH",
+          "occurred_at": "2026-09-17",
+          "occurred_index": 1194,
+          "price": "47.35",
+          "scale": "0.03",
+          "segment": 0,
+          "source_dates": [
+            "2026-09-17"
+          ]
+        },
+        {
+          "confirmation": "LATER_COMPLETED_CLOSE_REVERSAL_RESEARCH",
+          "confirmed_at": "2026-10-07",
+          "confirmed_index": 1206,
+          "first_observed_at": "2026-10-07",
+          "id": "sha256:97f99946efffc956c39b03dc68b03c125ed5da80b7e98e8cab86f184a932aac3",
+          "kind": "LOW",
+          "occurred_at": "2026-10-01",
+          "occurred_index": 1202,
+          "price": "44.20",
+          "scale": "0.03",
+          "segment": 0,
+          "source_dates": [
+            "2026-10-01"
+          ]
+        }
+      ],
+      "original_pending_extrema": [
+        {
+          "direction": "UP",
+          "high": {
+            "index": 1211,
+            "price": "49.50",
+            "source_dates": [
+              "2026-10-15"
+            ]
+          },
+          "low": {
+            "index": 1206,
+            "price": "45.40",
+            "source_dates": [
+              "2026-10-07"
+            ]
+          },
+          "qualification": "UNCONFIRMED_NOT_A_PIVOT"
+        },
+        {
+          "direction": "UP",
+          "high": {
+            "index": 1211,
+            "price": "49.50",
+            "source_dates": [
+              "2026-10-15"
+            ]
+          },
+          "low": {
+            "index": 1177,
+            "price": "38.10",
+            "source_dates": [
+              "2026-08-25"
+            ]
+          },
+          "qualification": "UNCONFIRMED_NOT_A_PIVOT"
+        },
+        {
+          "direction": "UP",
+          "high": {
+            "index": 1211,
+            "price": "49.50",
+            "source_dates": [
+              "2026-10-15"
+            ]
+          },
+          "low": {
+            "index": 1127,
+            "price": "33.95",
+            "source_dates": [
+              "2026-06-12"
+            ]
+          },
+          "qualification": "UNCONFIRMED_NOT_A_PIVOT"
+        }
+      ],
+      "original_parameters_unchanged": {
+        "cluster_spread_fraction": "0.35",
+        "enumeration": "LONGEST_COMPATIBLE_RUN_AND_LATEST_FOUR_TURN_SEED",
+        "minimum_high_turns": 2,
+        "minimum_low_turns": 2,
+        "reversals": [
+          "0.03",
+          "0.06",
+          "0.12"
+        ],
+        "status": "RESEARCH_SETTINGS_NOT_USER_APPROVED_STRATEGY"
+      },
+      "original_manual_case_inputs_used": false,
+      "reference_observations": [
+        {
+          "reference_id": "R1",
+          "selector": {
+            "id": "R1",
+            "date": "2026-09-17",
+            "field": "high"
+          },
+          "known_on_saved_completed_record": "2026-09-17",
+          "source_price": "47.35",
+          "reason": "AVAILABLE_SAVED_SEQUENCE_ONLY",
+          "relations": {
+            "close": {
+              "relation": "ABOVE",
+              "delta": "1.45"
+            },
+            "high": {
+              "relation": "ABOVE",
+              "delta": "2.15"
+            },
+            "low": {
+              "relation": "ABOVE",
+              "delta": "0.25"
+            }
+          }
+        },
+        {
+          "reference_id": "R2",
+          "selector": {
+            "id": "R2",
+            "date": "2026-10-15",
+            "field": "high"
+          },
+          "known_on_saved_completed_record": "2026-10-15",
+          "source_price": "49.50",
+          "reason": "AVAILABLE_SAVED_SEQUENCE_ONLY",
+          "relations": {
+            "close": {
+              "relation": "BELOW",
+              "delta": "-0.70"
+            },
+            "high": {
+              "relation": "EQUAL",
+              "delta": "0.00"
+            },
+            "low": {
+              "relation": "BELOW",
+              "delta": "-1.90"
+            }
+          }
+        }
+      ],
+      "historical_manual_interval_label": null,
+      "historical_manual_label_reason": "CURRENT_LATER_REVIEW_NOT_INJECTED_INTO_SAVED_PREFIX",
+      "historical_signal_eligible": false,
+      "primary_pressure_id": null
+    },
+    {
+      "as_of": "2026-10-16",
+      "original_core_result_id": "sha256:5075494e247833bd0fc2e60a371a74978b59c302b2510188c2430a0518816269",
+      "original_numeric_frame_id": "sha256:3d4541d41a5ac31bd7e418a958756d7424200626c7489fe16c2ab87c52878ab6",
+      "original_source_prefix_fingerprint": "sha256:65b8d1b920f6946b4a4b262891ef241b70bf5928ac73c8fb3fe4069bc63f9d10",
+      "original_source_records": 1213,
+      "original_bar": {
+        "close": "49.15",
+        "date": "2026-10-16",
+        "high": "49.95",
+        "low": "48.00",
+        "open": "48.00",
+        "volume_shares_scaled": "49892439"
+      },
+      "original_macd": {
+        "dea": "1.2360245011355633294949916754322352813818214635325",
+        "dif": "1.364885207475627814064063626645642615597094019912",
+        "histogram": "0.2577214126801289691381439024268146684305451127590",
+        "reason": "AVAILABLE"
+      },
+      "original_moving_averages": {
+        "130": "37.10346153846153846153846154",
+        "20": "46.14",
+        "260": "34.77884615384615384615384615",
+        "5": "47.55",
+        "60": "41.64416666666666666666666667"
+      },
+      "original_recent_3pct_confirmed_sources": [
+        {
+          "confirmation": "LATER_COMPLETED_CLOSE_REVERSAL_RESEARCH",
+          "confirmed_at": "2026-09-23",
+          "confirmed_index": 1198,
+          "first_observed_at": "2026-09-23",
+          "id": "sha256:1a1c1cd695fbda45df17d1cf4ec7b451eb0eeb681ca82a676d605351f1049572",
+          "kind": "HIGH",
+          "occurred_at": "2026-09-17",
+          "occurred_index": 1194,
+          "price": "47.35",
+          "scale": "0.03",
+          "segment": 0,
+          "source_dates": [
+            "2026-09-17"
+          ]
+        },
+        {
+          "confirmation": "LATER_COMPLETED_CLOSE_REVERSAL_RESEARCH",
+          "confirmed_at": "2026-10-07",
+          "confirmed_index": 1206,
+          "first_observed_at": "2026-10-07",
+          "id": "sha256:97f99946efffc956c39b03dc68b03c125ed5da80b7e98e8cab86f184a932aac3",
+          "kind": "LOW",
+          "occurred_at": "2026-10-01",
+          "occurred_index": 1202,
+          "price": "44.20",
+          "scale": "0.03",
+          "segment": 0,
+          "source_dates": [
+            "2026-10-01"
+          ]
+        }
+      ],
+      "original_pending_extrema": [
+        {
+          "direction": "UP",
+          "high": {
+            "index": 1212,
+            "price": "49.95",
+            "source_dates": [
+              "2026-10-16"
+            ]
+          },
+          "low": {
+            "index": 1206,
+            "price": "45.40",
+            "source_dates": [
+              "2026-10-07"
+            ]
+          },
+          "qualification": "UNCONFIRMED_NOT_A_PIVOT"
+        },
+        {
+          "direction": "UP",
+          "high": {
+            "index": 1212,
+            "price": "49.95",
+            "source_dates": [
+              "2026-10-16"
+            ]
+          },
+          "low": {
+            "index": 1177,
+            "price": "38.10",
+            "source_dates": [
+              "2026-08-25"
+            ]
+          },
+          "qualification": "UNCONFIRMED_NOT_A_PIVOT"
+        },
+        {
+          "direction": "UP",
+          "high": {
+            "index": 1212,
+            "price": "49.95",
+            "source_dates": [
+              "2026-10-16"
+            ]
+          },
+          "low": {
+            "index": 1127,
+            "price": "33.95",
+            "source_dates": [
+              "2026-06-12"
+            ]
+          },
+          "qualification": "UNCONFIRMED_NOT_A_PIVOT"
+        }
+      ],
+      "original_parameters_unchanged": {
+        "cluster_spread_fraction": "0.35",
+        "enumeration": "LONGEST_COMPATIBLE_RUN_AND_LATEST_FOUR_TURN_SEED",
+        "minimum_high_turns": 2,
+        "minimum_low_turns": 2,
+        "reversals": [
+          "0.03",
+          "0.06",
+          "0.12"
+        ],
+        "status": "RESEARCH_SETTINGS_NOT_USER_APPROVED_STRATEGY"
+      },
+      "original_manual_case_inputs_used": false,
+      "reference_observations": [
+        {
+          "reference_id": "R1",
+          "selector": {
+            "id": "R1",
+            "date": "2026-09-17",
+            "field": "high"
+          },
+          "known_on_saved_completed_record": "2026-09-17",
+          "source_price": "47.35",
+          "reason": "AVAILABLE_SAVED_SEQUENCE_ONLY",
+          "relations": {
+            "close": {
+              "relation": "ABOVE",
+              "delta": "1.80"
+            },
+            "high": {
+              "relation": "ABOVE",
+              "delta": "2.60"
+            },
+            "low": {
+              "relation": "ABOVE",
+              "delta": "0.65"
+            }
+          }
+        },
+        {
+          "reference_id": "R2",
+          "selector": {
+            "id": "R2",
+            "date": "2026-10-15",
+            "field": "high"
+          },
+          "known_on_saved_completed_record": "2026-10-15",
+          "source_price": "49.50",
+          "reason": "AVAILABLE_SAVED_SEQUENCE_ONLY",
+          "relations": {
+            "close": {
+              "relation": "BELOW",
+              "delta": "-0.35"
+            },
+            "high": {
+              "relation": "ABOVE",
+              "delta": "0.45"
+            },
+            "low": {
+              "relation": "BELOW",
+              "delta": "-1.50"
+            }
+          }
+        }
+      ],
+      "historical_manual_interval_label": null,
+      "historical_manual_label_reason": "CURRENT_LATER_REVIEW_NOT_INJECTED_INTO_SAVED_PREFIX",
+      "historical_signal_eligible": false,
+      "primary_pressure_id": null
+    }
+  ],
+  "limited_completed_close_observations": {
+    "R1": "10/14 below47.35;10/15 above;10/16 remains above. No formal breakout or holding-period rule.",
+    "R2": "Known only10/15; two available closes both below49.50.10/16 is not an observed completed-close failed breakout of this reference. No intraday order claim."
+  }
+}

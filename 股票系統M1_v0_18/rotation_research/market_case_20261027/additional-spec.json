@@ -1,0 +1,57 @@
+{
+  "schema": "market-case-additional-directed-spec/0.1",
+  "frozen_before_execution": true,
+  "future_prefix_controls": [
+    {
+      "name": "B-rise-A-fall",
+      "A_future": "10.00",
+      "B_future": "50.00"
+    },
+    {
+      "name": "A-rise-B-fall",
+      "A_future": "40.00",
+      "B_future": "10.00"
+    },
+    {
+      "name": "both-fall",
+      "A_future": "10.00",
+      "B_future": "10.00"
+    }
+  ],
+  "future_edits": {
+    "date": "2026-06-22",
+    "field": "close",
+    "prefix_decision": "A-return",
+    "expected_same_prefix": true,
+    "source_integrity_metadata_must_differ": true,
+    "scope": "COUNTERFACTUAL_TAIL_FOR_PREFIX_UNIT_TEST_ONLY_NOT_NEW_MARKET_SOURCE_OR_LEDGER_INPUT"
+  },
+  "missing_b_intent": {
+    "path": "cash",
+    "value": null,
+    "expected": "AWAITING_EXPLICIT_INPUT"
+  },
+  "missing_quote": {
+    "code": "2884",
+    "date": "2026-05-06",
+    "field": "close",
+    "value": null,
+    "expected": "UNKNOWN_INCOMPLETE_PREFIX"
+  },
+  "original_unbound_quote_control": {
+    "input": "controls/explicit-input.json",
+    "expected_error": "FILL_QUOTE_SOURCE_OUT_OF_PERIOD"
+  },
+  "IO": {
+    "bad_sha": "SAVED_SOURCE_BYTES_MISMATCH",
+    "path_escape": "SOURCE_PATH_OUTSIDE_REPOSITORY",
+    "old_saved_draft_unchanged": true
+  },
+  "pure_guard": {
+    "qualification_calls": 3,
+    "numeric_calls": 0,
+    "forbidden_io": 0,
+    "caller_context_preserved": true,
+    "default_context_preserved": true
+  }
+}

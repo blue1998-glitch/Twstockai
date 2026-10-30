@@ -1,0 +1,23 @@
+test_01_all_frozen_originals_and_expected_statuses (capital_research.action_evaluation_store_20261029.test_store.ImportReadTests.test_01_all_frozen_originals_and_expected_statuses) ... FAIL
+
+======================================================================
+FAIL: test_01_all_frozen_originals_and_expected_statuses (capital_research.action_evaluation_store_20261029.test_store.ImportReadTests.test_01_all_frozen_originals_and_expected_statuses)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/workspace/Twstockai/股票系統M1_v0_18/capital_research/action_evaluation_store_20261029/test_store.py", line 21, in test_01_all_frozen_originals_and_expected_statuses
+    self.assertEqual(info(REPO/m['path']),m)
+AssertionError: {'path': '股票系統M1_v0_18/capital_research/sav[110 chars]b53'} != {'bytes': 16775, 'path': '股票系統M1_v0_18/capi[110 chars]d4b'}
+- {'bytes': 16773,
+?               ^
+
++ {'bytes': 16775,
+?               ^
+
+   'path': '股票系統M1_v0_18/capital_research/saved_action_source.py',
+-  'sha256': '0713a308b0c901adc2c08ea32bb2a93f1a47e47e2c9a5177c8c8fe800044cb53'}
++  'sha256': '88d65e5441b2f015aa4c9ce64f3f8f38219a3825f2df8b31407bb2bb4133bd4b'}
+
+----------------------------------------------------------------------
+Ran 1 test in 0.030s
+
+FAILED (failures=1)

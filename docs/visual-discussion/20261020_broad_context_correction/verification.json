@@ -1,0 +1,25 @@
+{
+  "record_count": 597,
+  "contiguous_indices": true,
+  "exact_original_string_copy": true,
+  "source_sha_unchanged": true,
+  "display_float_only": true,
+  "comparison_method": "Decimal high and single-day raw volume only",
+  "image_visual_inspection": {
+    "status": "COMPLETED_STATIC_FIGURE_ONLY",
+    "method": "view_image",
+    "checks": [
+      "broad earlier highs and subsequent path visible",
+      "all 597 candles, volume and MACD aligned",
+      "CJK labels visible",
+      "no candle clipping in final render",
+      "labels are source examples, not formal boundaries"
+    ]
+  },
+  "engine_query_reaction_macd_recompute": "NOT_RUN",
+  "browser": "NOT_RUN",
+  "Android": "NOT_TESTED_NEW_BUILD",
+  "render_revision": "First render had fixed lower price limit 25.50 which clipped late June candles; corrected to min saved low minus 0.50, rerendered and inspected final image. No source data change.",
+  "font": "Reused NotoSansCJKtc-Regular.otf from previous research, source and SHA documented there.",
+  "product_tests": "NOT_RUN"
+}

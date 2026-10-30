@@ -1,0 +1,16 @@
+diff --git "a/\350\202\241\347\245\250\347\263\273\347\265\261M1_v0_18/capital_research/quantity_replay.py" "b/\350\202\241\347\245\250\347\263\273\347\265\261M1_v0_18/capital_research/quantity_replay.py"
+index b57f1f0..79a7949 100644
+--- "a/\350\202\241\347\245\250\347\263\273\347\265\261M1_v0_18/capital_research/quantity_replay.py"
++++ "b/\350\202\241\347\245\250\347\263\273\347\265\261M1_v0_18/capital_research/quantity_replay.py"
+@@ -3 +3 @@ from copy import deepcopy
+-from decimal import localcontext
++from decimal import Context, InvalidOperation, DivisionByZero, Overflow, ROUND_HALF_EVEN, localcontext
+@@ -13,0 +14 @@ MAX_ROUNDS=8
++IMPLEMENTATION_REVISION='0.1.1-deterministic-decimal-context'
+@@ -52,2 +53,4 @@ def replay_sequence(request):
+-    with localcontext() as ctx:
+-        ctx.prec=50
++    # Keep the original standard-context behavior for the complete operation,
++    # without inheriting caller rounding, traps, flags or exponent limits.
++    with localcontext(Context(prec=50,rounding=ROUND_HALF_EVEN,Emin=-999999,Emax=999999,
++            capitals=1,clamp=0,flags=[],traps=[InvalidOperation,DivisionByZero,Overflow])):

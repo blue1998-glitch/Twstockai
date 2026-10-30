@@ -1,0 +1,268 @@
+{
+  "sha256:2477e99e34986c07eb5ad8730f984c2bff01397bc09a576cfbfaa779074044a9": {
+    "code": "8069",
+    "exchange": "TPEX",
+    "price_mode": "ADJUSTED_CANDIDATE",
+    "source_id": "sha256:a8d02938983fa3979fc5e18aa40215d45001e1cdf3533b6a2d8ce76554169c86",
+    "original_record_id": "sha256:3fbdb1c2be44cf3eb244c344acbc2671335634fa0ce603e41e984280afae89b8",
+    "first_date": "2025-08-01",
+    "last_date": "2026-09-30",
+    "bars": 283,
+    "missing_ohlc_dates": [],
+    "missing_volume_dates": [],
+    "duplicate_dates": [],
+    "missing_supplied_calendar_dates": [],
+    "unexpected_supplied_calendar_dates": [],
+    "calendar_scope": "SUPPLIED_PLANNED_AND_REVIEWED_EXCEPTIONS_NOT_EXHAUSTIVE",
+    "volume_unit": "SHARES_SCALED_FROM_LOTS",
+    "volume_normalization": null,
+    "actions_coverage": "CASH_ONLY_VERIFIED_SAMPLE",
+    "action_publication_timing": "UNVERIFIED",
+    "historical_availability": "NOT_AUTHENTICATED_POINT_IN_TIME",
+    "captured_official_response_checks": [],
+    "gaps": [
+      "NO_BARS_BEFORE_2025-08-01",
+      "NO_BARS_AFTER_2026-09-30",
+      "MULTI_YEAR_HISTORY_NOT_PRESENT",
+      "REAL_INTRADAY_NOT_PRESENT",
+      "COMPLETE_CORPORATE_ACTIONS_AND_PUBLICATION_TIMING_NOT_VERIFIED"
+    ]
+  },
+  "sha256:02aa3f9bf65b1f6274c7c598e0faa2c2355a84801f04f6da581b60a5d20f5095": {
+    "code": "8069",
+    "exchange": "TPEX",
+    "price_mode": "RAW_CANDIDATE",
+    "source_id": "sha256:a8d02938983fa3979fc5e18aa40215d45001e1cdf3533b6a2d8ce76554169c86",
+    "original_record_id": "sha256:ef80cdedbc07512ff07a66b68da40a361b191eba238e7e2775786f18397600f8",
+    "first_date": "2025-08-01",
+    "last_date": "2026-09-30",
+    "bars": 283,
+    "missing_ohlc_dates": [],
+    "missing_volume_dates": [],
+    "duplicate_dates": [],
+    "missing_supplied_calendar_dates": [],
+    "unexpected_supplied_calendar_dates": [],
+    "calendar_scope": "SUPPLIED_PLANNED_AND_REVIEWED_EXCEPTIONS_NOT_EXHAUSTIVE",
+    "volume_unit": "SHARES_SCALED_FROM_LOTS",
+    "volume_normalization": null,
+    "actions_coverage": "CASH_ONLY_VERIFIED_SAMPLE",
+    "action_publication_timing": "UNVERIFIED",
+    "historical_availability": "NOT_AUTHENTICATED_POINT_IN_TIME",
+    "captured_official_response_checks": [],
+    "gaps": [
+      "NO_BARS_BEFORE_2025-08-01",
+      "NO_BARS_AFTER_2026-09-30",
+      "MULTI_YEAR_HISTORY_NOT_PRESENT",
+      "REAL_INTRADAY_NOT_PRESENT",
+      "COMPLETE_CORPORATE_ACTIONS_AND_PUBLICATION_TIMING_NOT_VERIFIED"
+    ]
+  },
+  "sha256:42e02dd5b7bf561122e13c23ab1b4f27f36b81aa45da2a3e3062388c2d3922fd": {
+    "code": "1101",
+    "exchange": "TWSE",
+    "price_mode": "RAW_CANDIDATE",
+    "source_id": "sha256:ad5177c58cea30978f1bed3b9206a45c3615bc5bec42603a79b4191f7c7f8e53",
+    "original_record_id": "sha256:5fe1faee3b027b88e394aa77ecb16c653b6bd3e519c53e985031ee645c3ed82c",
+    "first_date": "2026-01-02",
+    "last_date": "2026-09-30",
+    "bars": 179,
+    "missing_ohlc_dates": [],
+    "missing_volume_dates": [],
+    "duplicate_dates": [],
+    "missing_supplied_calendar_dates": [],
+    "unexpected_supplied_calendar_dates": [],
+    "calendar_scope": "SUPPLIED_PLANNED_AND_REVIEWED_EXCEPTIONS_NOT_EXHAUSTIVE",
+    "volume_unit": "SHARES_REPORTED",
+    "volume_normalization": "NATIVE_SHARE_COUNT_NO_SCALING",
+    "actions_coverage": "UNVERIFIED",
+    "action_publication_timing": "UNVERIFIED",
+    "historical_availability": "NOT_AUTHENTICATED_POINT_IN_TIME",
+    "captured_official_response_checks": [
+      {
+        "file": "data_audit/raw/1101_202601.json",
+        "sha256": "2f5b83eb231ef8587667fea62e6aac4895a16bc38ea9cd50097f8700f3c95ce4",
+        "url": "https://www.twse.com.tw/exchangeReport/STOCK_DAY?response=json&date=20260101&stockNo=1101"
+      },
+      {
+        "file": "data_audit/raw/1101_202602.json",
+        "sha256": "db9e1d5eae8dd197f039944f0d7b0e199dab8927a4500dc8d7af67be68d60e12",
+        "url": "https://www.twse.com.tw/exchangeReport/STOCK_DAY?response=json&date=20260201&stockNo=1101"
+      },
+      {
+        "file": "data_audit/raw/1101_202603.json",
+        "sha256": "fd1dd70da418d4d613eeba17ffab0da69f24030171376d26a55bfc763288f008",
+        "url": "https://www.twse.com.tw/exchangeReport/STOCK_DAY?response=json&date=20260301&stockNo=1101"
+      },
+      {
+        "file": "data_audit/raw/1101_202604.json",
+        "sha256": "ab3d485662cd0473affa59f39ae03b4a54d6aab4f7f577539d060392c598dbc1",
+        "url": "https://www.twse.com.tw/exchangeReport/STOCK_DAY?response=json&date=20260401&stockNo=1101"
+      },
+      {
+        "file": "data_audit/raw/1101_202605.json",
+        "sha256": "2bde2bd28ab7578dfaa5b80216cc1bc5aff5349cfaba7c57eff504dc62b1658b",
+        "url": "https://www.twse.com.tw/exchangeReport/STOCK_DAY?response=json&date=20260501&stockNo=1101"
+      },
+      {
+        "file": "data_audit/raw/1101_202606.json",
+        "sha256": "e18e0edb77922df6ed30f28e44a4e0162e21c9698a51e6759883d69fe20776bc",
+        "url": "https://www.twse.com.tw/exchangeReport/STOCK_DAY?response=json&date=20260601&stockNo=1101"
+      },
+      {
+        "file": "data_audit/raw/1101_202607.json",
+        "sha256": "a7e3b6a9965e5171304d269d86111672d4cb7f2838ed0b95165a9b5e4ffdbc8f",
+        "url": "https://www.twse.com.tw/exchangeReport/STOCK_DAY?response=json&date=20260701&stockNo=1101"
+      },
+      {
+        "file": "data_audit/raw/1101_202608.json",
+        "sha256": "6a940ded44b56b9728157834b6ba98f487df8960040623c9bcf713fd1b0aad8b",
+        "url": "https://www.twse.com.tw/exchangeReport/STOCK_DAY?response=json&date=20260801&stockNo=1101"
+      },
+      {
+        "file": "data_audit/raw/1101_202609.json",
+        "sha256": "940808b14a658103aacd5a7b430c65406fcad646e25e420a688984bdb8eb2ab0",
+        "url": "https://www.twse.com.tw/exchangeReport/STOCK_DAY?response=json&date=20260901&stockNo=1101"
+      }
+    ],
+    "gaps": [
+      "NO_BARS_BEFORE_2026-01-02",
+      "NO_BARS_AFTER_2026-09-30",
+      "MULTI_YEAR_HISTORY_NOT_PRESENT",
+      "REAL_INTRADAY_NOT_PRESENT",
+      "COMPLETE_CORPORATE_ACTIONS_AND_PUBLICATION_TIMING_NOT_VERIFIED"
+    ]
+  },
+  "sha256:6cb24656ce4d12e249a17b4eb65c4c5749f2e4749d11facd812a7d4e818a4e81": {
+    "code": "6488",
+    "exchange": "TPEX",
+    "price_mode": "RAW_CANDIDATE",
+    "source_id": "sha256:30a8aca899eded89f7053241edeed294f2b6a7a5b52cfc571f3c1e3a29f5f533",
+    "original_record_id": "sha256:254a43be5ece80ccfb7211227306dc552eae6e3353e3b5647d7175bab385dcfb",
+    "first_date": "2025-08-01",
+    "last_date": "2026-09-30",
+    "bars": 283,
+    "missing_ohlc_dates": [],
+    "missing_volume_dates": [],
+    "duplicate_dates": [],
+    "missing_supplied_calendar_dates": [],
+    "unexpected_supplied_calendar_dates": [],
+    "calendar_scope": "SUPPLIED_PLANNED_AND_REVIEWED_EXCEPTIONS_NOT_EXHAUSTIVE",
+    "volume_unit": "SHARES_SCALED_FROM_LOTS",
+    "volume_normalization": null,
+    "actions_coverage": "CASH_ONLY_VERIFIED_SAMPLE",
+    "action_publication_timing": "UNVERIFIED",
+    "historical_availability": "NOT_AUTHENTICATED_POINT_IN_TIME",
+    "captured_official_response_checks": [],
+    "gaps": [
+      "NO_BARS_BEFORE_2025-08-01",
+      "NO_BARS_AFTER_2026-09-30",
+      "MULTI_YEAR_HISTORY_NOT_PRESENT",
+      "REAL_INTRADAY_NOT_PRESENT",
+      "COMPLETE_CORPORATE_ACTIONS_AND_PUBLICATION_TIMING_NOT_VERIFIED"
+    ]
+  },
+  "sha256:fb3e2d0e86e270d72f2ce0d25050f143b1e4d7cb6cb953f61df065c1ba9f0688": {
+    "code": "6488",
+    "exchange": "TPEX",
+    "price_mode": "ADJUSTED_CANDIDATE",
+    "source_id": "sha256:30a8aca899eded89f7053241edeed294f2b6a7a5b52cfc571f3c1e3a29f5f533",
+    "original_record_id": "sha256:6bfa1244cec4803f08d40baa9fae35e217543f695a34183cbb8c243b72f7bff5",
+    "first_date": "2025-08-01",
+    "last_date": "2026-09-30",
+    "bars": 283,
+    "missing_ohlc_dates": [],
+    "missing_volume_dates": [],
+    "duplicate_dates": [],
+    "missing_supplied_calendar_dates": [],
+    "unexpected_supplied_calendar_dates": [],
+    "calendar_scope": "SUPPLIED_PLANNED_AND_REVIEWED_EXCEPTIONS_NOT_EXHAUSTIVE",
+    "volume_unit": "SHARES_SCALED_FROM_LOTS",
+    "volume_normalization": null,
+    "actions_coverage": "CASH_ONLY_VERIFIED_SAMPLE",
+    "action_publication_timing": "UNVERIFIED",
+    "historical_availability": "NOT_AUTHENTICATED_POINT_IN_TIME",
+    "captured_official_response_checks": [],
+    "gaps": [
+      "NO_BARS_BEFORE_2025-08-01",
+      "NO_BARS_AFTER_2026-09-30",
+      "MULTI_YEAR_HISTORY_NOT_PRESENT",
+      "REAL_INTRADAY_NOT_PRESENT",
+      "COMPLETE_CORPORATE_ACTIONS_AND_PUBLICATION_TIMING_NOT_VERIFIED"
+    ]
+  },
+  "sha256:f1ab14d0152442c62d8d2e9974f828c3725ab00d2576331335f2e320e6914444": {
+    "code": "2884",
+    "exchange": "TWSE",
+    "price_mode": "RAW_CANDIDATE",
+    "source_id": "sha256:219f15bbf9b711a89794f7065e094780536b4c520de60e3e25b754ae60563d08",
+    "original_record_id": "sha256:e6aaf2c31fd1b03a5a48d152f2c7f06df20a60a919c2f1f496eaa4dffecdc38c",
+    "first_date": "2026-01-02",
+    "last_date": "2026-09-30",
+    "bars": 179,
+    "missing_ohlc_dates": [],
+    "missing_volume_dates": [],
+    "duplicate_dates": [],
+    "missing_supplied_calendar_dates": [],
+    "unexpected_supplied_calendar_dates": [],
+    "calendar_scope": "SUPPLIED_PLANNED_AND_REVIEWED_EXCEPTIONS_NOT_EXHAUSTIVE",
+    "volume_unit": "SHARES_REPORTED",
+    "volume_normalization": "NATIVE_SHARE_COUNT_NO_SCALING",
+    "actions_coverage": "UNVERIFIED",
+    "action_publication_timing": "UNVERIFIED",
+    "historical_availability": "NOT_AUTHENTICATED_POINT_IN_TIME",
+    "captured_official_response_checks": [
+      {
+        "file": "data_audit/raw/2884_202601.json",
+        "sha256": "0323bbbf870abebf72038b06357d2be091b3c63f00d612baf6b0979c24061c89",
+        "url": "https://www.twse.com.tw/exchangeReport/STOCK_DAY?response=json&date=20260101&stockNo=2884"
+      },
+      {
+        "file": "data_audit/raw/2884_202602.json",
+        "sha256": "fc1fdc9ccd9958e3e28c59ba425813d951941934bd4a41b246a7194b4c82fc67",
+        "url": "https://www.twse.com.tw/exchangeReport/STOCK_DAY?response=json&date=20260201&stockNo=2884"
+      },
+      {
+        "file": "data_audit/raw/2884_202603.json",
+        "sha256": "f06cc0b10b4e42e6f6a0bd32c00aba5178c47a292c62dde5f39364d76eb18a00",
+        "url": "https://www.twse.com.tw/exchangeReport/STOCK_DAY?response=json&date=20260301&stockNo=2884"
+      },
+      {
+        "file": "data_audit/raw/2884_202604.json",
+        "sha256": "ba89923bc63cf47de178edf6cb84ae3e5591395eb964cf17e20e6438ae936ad0",
+        "url": "https://www.twse.com.tw/exchangeReport/STOCK_DAY?response=json&date=20260401&stockNo=2884"
+      },
+      {
+        "file": "data_audit/raw/2884_202605.json",
+        "sha256": "846a6f92170a59f1f2a3d7007500241a0f5fa9fa286990d35b91df566982cd5b",
+        "url": "https://www.twse.com.tw/exchangeReport/STOCK_DAY?response=json&date=20260501&stockNo=2884"
+      },
+      {
+        "file": "data_audit/raw/2884_202606.json",
+        "sha256": "836bb4b697eb86f4fda775499ddfbce510fc446c78f788a3bbcd52957b2de28e",
+        "url": "https://www.twse.com.tw/exchangeReport/STOCK_DAY?response=json&date=20260601&stockNo=2884"
+      },
+      {
+        "file": "data_audit/raw/2884_202607.json",
+        "sha256": "4c99424f7a1230c5b0cd21cafb45cdfeb6802abe8a0fb92039935b4de76b18de",
+        "url": "https://www.twse.com.tw/exchangeReport/STOCK_DAY?response=json&date=20260701&stockNo=2884"
+      },
+      {
+        "file": "data_audit/raw/2884_202608.json",
+        "sha256": "8a15a06f9d4d248c73ed19bf9b6650c7db04ae8277516d380d581139cc0d1545",
+        "url": "https://www.twse.com.tw/exchangeReport/STOCK_DAY?response=json&date=20260801&stockNo=2884"
+      },
+      {
+        "file": "data_audit/raw/2884_202609.json",
+        "sha256": "bdfc3efd3ab257369529283f77ca5876ea1ebf4bd205facd8ae07403ec8eb905",
+        "url": "https://www.twse.com.tw/exchangeReport/STOCK_DAY?response=json&date=20260901&stockNo=2884"
+      }
+    ],
+    "gaps": [
+      "NO_BARS_BEFORE_2026-01-02",
+      "NO_BARS_AFTER_2026-09-30",
+      "MULTI_YEAR_HISTORY_NOT_PRESENT",
+      "REAL_INTRADAY_NOT_PRESENT",
+      "COMPLETE_CORPORATE_ACTIONS_AND_PUBLICATION_TIMING_NOT_VERIFIED"
+    ]
+  }
+}

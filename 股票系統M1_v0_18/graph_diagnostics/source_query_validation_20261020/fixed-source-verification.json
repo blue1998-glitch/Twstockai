@@ -1,0 +1,37 @@
+{
+  "status": "PASS",
+  "fixed_comparison_commit": "fff47915523fab8c8de8279de8bbb7a26b05647b",
+  "fixed_diagnostic_zip_crc_sha": "PASS",
+  "source_fields_exact": [
+    "bars",
+    "macd",
+    "moving_averages",
+    "source",
+    "price_basis_id",
+    "core",
+    "manual_case_audit"
+  ],
+  "original_core_result_id": "sha256:ec7bca9ed6aa176c328fd8c4e94a31ea66967832e7089ac20a44090461f49da4",
+  "source_records": 1213,
+  "pivots": 171,
+  "boxes": 89,
+  "files": {
+    "cross_scale_chart/generated/comparison-data.json": {
+      "bytes": 3117969,
+      "sha256": "184bdef0b687ec0ab7bfcaaac2157ff7916fbc1000ef312d81b5efc0c2e73e15"
+    },
+    "reaction_facts/generated/reaction-facts.json": {
+      "bytes": 11672241,
+      "sha256": "097971c913b52fbf69dbb286c6e2df380ded3c3d166ca6391de5c5bdb4047c48"
+    },
+    "graph_core/core.py": {
+      "bytes": 23122,
+      "sha256": "268f5a6eea1cd1e468ec2f79b0164e8d7ce8d91817538903c691e93d0e3d322c"
+    },
+    "graph_diagnostics/diagnose.py": {
+      "bytes": 17480,
+      "sha256": "cbdf86f72adf20d49ac85cada1ef314c34a94033f1d7854529952a617fd7425d"
+    }
+  },
+  "original_analysis_macd_reaction_diagnostics_recomputed": false
+}

@@ -1,0 +1,66 @@
+{
+  "baseline": "64d2bd5dc17012743b07f8ef15bb8771ca2c1a7b",
+  "workspace": "/workspace/Twstockai",
+  "branch": "dev/m1-v018-chart-annotations",
+  "verification": {
+    "frozen": 65,
+    "protected": 14,
+    "source_originals": 18,
+    "archived": 2,
+    "final_sources": 6
+  },
+  "current_actual_stage": "final-corrected",
+  "historical_stages": [
+    "initial",
+    "after-final",
+    "final"
+  ],
+  "historical_intermediate_results_unchanged": true,
+  "tests": {
+    "unique_methods": 8,
+    "final_passed": 8,
+    "final_failed": 0,
+    "initial_batch": 8,
+    "review_batch": "7 PASS / 1 FAIL error-code mismatch",
+    "corrected_batch": 8,
+    "counts_not_summed": true,
+    "old_full_suites": 0,
+    "real_producers": 0,
+    "log": {
+      "path": "股票系統M1_v0_18/capital_research/action_metrics_20261029/tests-corrected.log",
+      "bytes": 1788,
+      "sha256": "20ef2296125726ea46991310b8d17d9b8d94a6c554aee23d0b6d72d13876d938"
+    }
+  },
+  "cases": {
+    "frozen_cases": 29,
+    "self_review_counterexamples": 2,
+    "not_independent_market_samples": true
+  },
+  "self_review": {
+    "two_source_binding_gaps_reproduced_and_fixed": true,
+    "error_code_failure_preserved_and_corrected_without_oracle_change": true,
+    "original_formula_function_bytes_unchanged": {
+      "_curve_statistics": true,
+      "_validate_rows": true,
+      "evaluate_saved": true,
+      "render_text": true
+    },
+    "full_old_quantity_result_equal": true,
+    "default_cli_unchanged": true,
+    "no_producer_imports_in_fresh_process": true,
+    "no_api_io_or_network": true,
+    "original_account_rights_reserve_latest_all_tokens_preserved": true,
+    "source_authentication_not_claimed": true
+  },
+  "sensitive_review": {
+    "delivery_files_checked": true,
+    "credential_findings": 0,
+    "private_originals_added": 0,
+    "unrelated_files_added": 0
+  },
+  "formal_qualifications_remain_false": true,
+  "primary_pressure_id": null,
+  "real_total_net_qualified_cases": 0,
+  "manual_action_required": false
+}

@@ -1,0 +1,119 @@
+{
+  "schema_version": "m2-3-finmind-acceptance/0.1",
+  "status": "LIMITED_RESEARCH_COMPLETED",
+  "raw_and_reconstructable_data_published": false,
+  "source": "FinMind Free TaiwanStockPrice",
+  "start_date": "2026-03-01",
+  "end_date": "2026-07-22",
+  "library_originals": "NOT_OBTAINED_NOT_READ",
+  "analysis": [
+    {
+      "schema_version": "finmind-graph-public-summary/0.1",
+      "adapter_version": "finmind-graph-adapter/0.1",
+      "core_version": "graph-recognition-research/0.1",
+      "code": "2884",
+      "as_of": "2026-07-21",
+      "status": "RESEARCH_COMPUTED_NOT_QUALIFIED",
+      "source_records": 97,
+      "basis_break_dates": [
+        "2026-07-01"
+      ],
+      "historical_available_at": "UNKNOWN",
+      "calendar_completeness": "UNKNOWN",
+      "corporate_action_type": "UNKNOWN",
+      "continuous_structure_qualified": false,
+      "classification_quality": "NOT_VALIDATED",
+      "qualified_interpretation": "ABSTAIN_APPROVED_CORE_USEFULNESS_UNESTABLISHED",
+      "primary_pressure_id": null,
+      "data_qualified": false,
+      "execution_model_qualified": false,
+      "historical_signal_eligible": false,
+      "policy_authorized": false,
+      "live_execution_authorized": false,
+      "limitations": [
+        "HISTORICAL_AVAILABLE_AT_UNKNOWN",
+        "CALENDAR_COMPLETENESS_UNKNOWN",
+        "CORPORATE_ACTIONS_UNKNOWN",
+        "CROSS_BASIS_CONTINUITY_NOT_QUALIFIED",
+        "GRAPH_RECOGNITION_NOT_VALIDATED",
+        "REDISTRIBUTION_NOT_AUTHORIZED"
+      ]
+    },
+    {
+      "schema_version": "finmind-graph-public-summary/0.1",
+      "adapter_version": "finmind-graph-adapter/0.1",
+      "core_version": "graph-recognition-research/0.1",
+      "code": "2884",
+      "as_of": "2026-07-22",
+      "status": "RESEARCH_COMPUTED_NOT_QUALIFIED",
+      "source_records": 98,
+      "basis_break_dates": [
+        "2026-07-01"
+      ],
+      "historical_available_at": "UNKNOWN",
+      "calendar_completeness": "UNKNOWN",
+      "corporate_action_type": "UNKNOWN",
+      "continuous_structure_qualified": false,
+      "classification_quality": "NOT_VALIDATED",
+      "qualified_interpretation": "ABSTAIN_APPROVED_CORE_USEFULNESS_UNESTABLISHED",
+      "primary_pressure_id": null,
+      "data_qualified": false,
+      "execution_model_qualified": false,
+      "historical_signal_eligible": false,
+      "policy_authorized": false,
+      "live_execution_authorized": false,
+      "limitations": [
+        "HISTORICAL_AVAILABLE_AT_UNKNOWN",
+        "CALENDAR_COMPLETENESS_UNKNOWN",
+        "CORPORATE_ACTIONS_UNKNOWN",
+        "CROSS_BASIS_CONTINUITY_NOT_QUALIFIED",
+        "GRAPH_RECOGNITION_NOT_VALIDATED",
+        "REDISTRIBUTION_NOT_AUTHORIZED"
+      ]
+    }
+  ],
+  "official_two_day_field_matches": {
+    "2026-07-21": {
+      "open": true,
+      "high": true,
+      "low": true,
+      "close": true,
+      "volume_shares_scaled": true
+    },
+    "2026-07-22": {
+      "open": true,
+      "high": true,
+      "low": true,
+      "close": true,
+      "volume_shares_scaled": true
+    }
+  },
+  "prefix_control": {
+    "analysis_equal": true,
+    "full_source_integrity_compared_separately": true,
+    "later_date_absent_from_earlier_input": true
+  },
+  "precision_8069": {
+    "code": "8069",
+    "acquisition": "RETAINED_OFFICIAL_TWO_DAYS_ONLY",
+    "finmind_prices": "WORK_REPORTED_MATCH_NOT_RECHECKED_WITH_UNAVAILABLE_LIBRARY_ORIGINAL",
+    "observations": [
+      {
+        "as_of": "2026-07-21",
+        "official_volume_precision": "INTEGER_LOTS_DISPLAY",
+        "finmind_volume_unit": "SHARES_REPORTED",
+        "exact_shares_verified": false,
+        "exact_shares_status": "UNKNOWN",
+        "precise_share_comparison": "REFUSED_PRECISION_INSUFFICIENT"
+      },
+      {
+        "as_of": "2026-07-22",
+        "official_volume_precision": "INTEGER_LOTS_DISPLAY",
+        "finmind_volume_unit": "SHARES_REPORTED",
+        "exact_shares_verified": false,
+        "exact_shares_status": "UNKNOWN",
+        "precise_share_comparison": "REFUSED_PRECISION_INSUFFICIENT"
+      }
+    ]
+  }
+}

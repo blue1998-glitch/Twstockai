@@ -1,0 +1,16 @@
+# 下一輪Work唯讀續接指令
+
+最新已核SHA見 `deliveries/m1-offline-bridge-intake-20261023/GITHUB_READBACK.md` 及實際分支ref。來源成品仍是f1b9468及7ae4e80回讀，接收checkpoint不是新來源0.6。
+
+```text
+接續blue1998-glitch/Twstockai，分支dev/m1-v018-chart-annotations。
+先唯讀核最新分支包含7ae4e80ca0fe7e67bc23ff6caaaa6ec129dd45d0與其後offline_bridge_intake_20261023接收checkpoint及回讀；最新已核SHA見deliveries/m1-offline-bridge-intake-20261023/GITHUB_READBACK.md。保留全部後續，不用main／舊ZIP覆蓋。
+本輪Work只做GitHub唯讀及附件交接，不bootstrap、工程、產品測試、commit或push，不開第二個Codex工作或子代理。工程與GitHub寫入仍只交回目前既有唯一Codex。
+先讀根AGENTS、CONTINUE_IN_WORK_MODE、PROJECT_VISION、M1_V019_GRAPH_CORE_RESUME_HANDOFF最新節，以及股票系統M1_v0_18/rotation_research/offline_bridge_intake_20261023/README.md、WORK_HANDOFF.md、attachment-scan.json、intake-verification.json及bootstrap.log。source_diagnostics_20261023、正式action_resolution 0.4及parent0.3完整契約繼續有效。
+Codex本輪已核遠端仍7ae4e80並重新bootstrap成功（0補缺／7差異保留）。但TWstockai_Offline_Source_Bridge_20261023.zip本體不可見，附件目錄不存在；檔案庫只見舊v0.17包。沒有讀橋接CODEX_HANDOFF、REPORT、bridge-facts、prior_archive_readback、MANIFEST或新PDF／API原件，沒有新增來源版本、產品測試或資格重算。舊61測試及70拒算／2不足／8換股未支援／真正總淨報酬0均為歷史，不冒稱本輪重跑。
+請確認原橋接ZIP本體可供使用者下載並實際附到同一既有Codex對話；預期SHA256 ecc413ca28fce87085666b87b3c3a6d1bf784ef553b32d2198b8bb72bebeedce。只有檔名、摘要、SHA字串或Work的91項manifest核對自述不能取代原始bytes。不要把github_reference／舊facts整包覆蓋專案，也不公開私人券商／集保原件。附件不能讀或傳遞失敗須明說，不宣稱Codex已收到。
+Codex收到後需先核整包SHA，讀包內CODEX_HANDOFF全文及指定原件、SHA／長度／meta／URL／HTTP／原時點，依最新AGENTS重新bootstrap成功才實作精確嵌入parent0.5的獨立新來源版。停牌起日不推終日、不補價／沿用前價／自訂估值；Raw null、缺價拒算、execution_qualified=false、舊UNKNOWN保持。真API核TaxVer／Title／Content及適用範圍，原封存SHA保持，ViewCount可變則新回應另存；一般法律不等台泥資金細項、個人免稅／零保費／零匯費或淨入帳。原捕捉時間與新讀回時間分存，不倒填announced_at。
+完整行動減資、7/25後權息、2884實配／可交易日／畸零與既有股東換股影響、台泥最後調整與稅務細項、個人淨分配與九起日期初權利仍缺；空白不補零，不假定無事件，不跑六方案湊績效。員工增資／原2867換股／既有2884權利分開，預計不是完成、登記不是上市、公司發放不是個人淨收。
+所有已記錄拒絕入口及三網域403不重試或改路徑繞過；離線原件不代表網域已開放，草稿仍未套用。保留原0.5／0.4／0.3、策略、引擎、庫、資料、歷史、舊頁與成品及main。全換／分批仍研究變數，historical_signal_eligible=false、primary_pressure_id=null、policy_authorized=false。無新UI不重開Android，不部署付費交易訊息或子代理。
+Work最後只交實際可下載附件、已讀／未讀與錯誤及完整Codex指令；未執行不得標完成。工程回原既有唯一Codex，寫入前再核遠端並保留後續，定向實測、同分支提交及固定SHA逐檔GitHub回讀。
+```

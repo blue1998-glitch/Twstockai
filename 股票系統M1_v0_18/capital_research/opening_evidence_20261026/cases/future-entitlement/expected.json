@@ -1,0 +1,22 @@
+{
+  "status": "GAPS_PRESENT",
+  "field": "entitlements.1101.cash_claims",
+  "classification": "UNKNOWN",
+  "required_gap": "CLAIM_AFTER_OPENING_CUTOFF",
+  "required_unsupported": null,
+  "preserved_value": [
+    {
+      "id": "SYNTHETIC-PRIOR-CASH-1",
+      "event_id": "SYNTHETIC-PRIOR-EVENT-1",
+      "entitlement_at": "2026-01-05T08:00:00+08:00",
+      "amount_net": "9",
+      "currency": "TWD",
+      "pay_date": "2026-01-08",
+      "payment_status": "OUTSTANDING"
+    }
+  ],
+  "authenticity_verified": false,
+  "opening_entitlements_verified": false,
+  "ledger_called": false,
+  "legacy_qualification_updates": {}
+}

@@ -1,0 +1,11 @@
+{
+  "exit_code": 2,
+  "stdout": "{\n  \"schema\": \"capital-evaluated-replay-receipt/0.1\",\n  \"mode\": \"RUN\",\n  \"operation_id\": \"evaluated-complete\",\n  \"workflow_status\": \"INPUT_REFUSED\",\n  \"failed_stage\": \"request\",\n  \"reasons\": [\n    \"argument should be a str or an os.PathLike object where __fspath__ returns a str, not 'int'\"\n  ],\n  \"keys\": {\n    \"request\": \"evaluated-complete--request\",\n    \"replay\": \"evaluated-complete--replay\",\n    \"evaluation\": \"evaluated-complete--evaluation\",\n    \"result\": \"evaluated-complete--result\"\n  },\n  \"storage\": {\n    \"request\": \"NOT_PERFORMED\",\n    \"replay\": \"NOT_PERFORMED\",\n    \"evaluation\": \"NOT_PERFORMED\",\n    \"result\": \"NOT_PERFORMED\"\n  },\n  \"observed\": {\n    \"replay_status\": null,\n    \"evaluation_status\": null\n  },\n  \"operation\": null,\n  \"evaluation\": null,\n  \"ranking\": null,\n  \"selected_strategy\": null,\n  \"primary_pressure_id\": null,\n  \"data_qualified\": false,\n  \"execution_model_qualified\": false,\n  \"historical_signal_eligible\": false,\n  \"policy_authorized\": false,\n  \"live_execution_authorized\": false\n}\n",
+  "stderr": "",
+  "calls": {
+    "replay": 0,
+    "evaluation": 0,
+    "execution": 0
+  },
+  "guard": "FRESH_RUN_ONLY_EXPLICIT_STORE_WRITES_NO_NETWORK"
+}

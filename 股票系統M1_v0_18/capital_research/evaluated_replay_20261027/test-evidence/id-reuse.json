@@ -1,0 +1,130 @@
+{
+  "same": {
+    "schema": "capital-evaluated-replay-receipt/0.1",
+    "mode": "RUN",
+    "operation_id": "evaluated-complete",
+    "workflow_status": "OPERATION_EXISTS_READ_REQUIRED",
+    "failed_stage": null,
+    "reasons": [
+      "EXISTING_FILES_PRESERVED_USE_EXPLICIT_READ"
+    ],
+    "keys": {
+      "request": "evaluated-complete--request",
+      "replay": "evaluated-complete--replay",
+      "evaluation": "evaluated-complete--evaluation",
+      "result": "evaluated-complete--result"
+    },
+    "storage": {
+      "request": "NOT_PERFORMED",
+      "replay": "NOT_PERFORMED",
+      "evaluation": "NOT_PERFORMED",
+      "result": "NOT_PERFORMED"
+    },
+    "observed": {
+      "replay_status": null,
+      "evaluation_status": null
+    },
+    "operation": null,
+    "evaluation": null,
+    "ranking": null,
+    "selected_strategy": null,
+    "primary_pressure_id": null,
+    "data_qualified": false,
+    "execution_model_qualified": false,
+    "historical_signal_eligible": false,
+    "policy_authorized": false,
+    "live_execution_authorized": false,
+    "existing_stages": [
+      "request",
+      "replay",
+      "evaluation",
+      "result"
+    ]
+  },
+  "conflict": {
+    "schema": "capital-evaluated-replay-receipt/0.1",
+    "mode": "RUN",
+    "operation_id": "evaluated-complete",
+    "workflow_status": "OPERATION_ID_CONFLICT",
+    "failed_stage": null,
+    "reasons": [
+      "DIFFERENT_REQUEST_SAME_ID"
+    ],
+    "keys": {
+      "request": "evaluated-complete--request",
+      "replay": "evaluated-complete--replay",
+      "evaluation": "evaluated-complete--evaluation",
+      "result": "evaluated-complete--result"
+    },
+    "storage": {
+      "request": "NOT_PERFORMED",
+      "replay": "NOT_PERFORMED",
+      "evaluation": "NOT_PERFORMED",
+      "result": "NOT_PERFORMED"
+    },
+    "observed": {
+      "replay_status": null,
+      "evaluation_status": null
+    },
+    "operation": null,
+    "evaluation": null,
+    "ranking": null,
+    "selected_strategy": null,
+    "primary_pressure_id": null,
+    "data_qualified": false,
+    "execution_model_qualified": false,
+    "historical_signal_eligible": false,
+    "policy_authorized": false,
+    "live_execution_authorized": false,
+    "existing_stages": [
+      "request",
+      "replay",
+      "evaluation",
+      "result"
+    ]
+  },
+  "before": {
+    "evaluated-complete--request.json": {
+      "path": "capital_research/evaluated_replay_20261027/runs-final/complete/evaluated-complete--request.json",
+      "bytes": 16784,
+      "sha256": "9f5410ca2041444049998027b7e45587c0bf5a4c33a542c1b0f115c91b11827e"
+    },
+    "evaluated-complete--result.json": {
+      "path": "capital_research/evaluated_replay_20261027/runs-final/complete/evaluated-complete--result.json",
+      "bytes": 1909,
+      "sha256": "87892325e90ca0549f0fc62372602f446289c8d48310080ee972b232cf0cf30c"
+    },
+    "evaluated-complete--replay.json": {
+      "path": "capital_research/evaluated_replay_20261027/runs-final/complete/evaluated-complete--replay.json",
+      "bytes": 735492,
+      "sha256": "ecdad1ca2b5eb460b1317148f9c1db97811a559cc29f86e787f6fc1fbb58bb6b"
+    },
+    "evaluated-complete--evaluation.json": {
+      "path": "capital_research/evaluated_replay_20261027/runs-final/complete/evaluated-complete--evaluation.json",
+      "bytes": 7418,
+      "sha256": "6da532a241a5b770b9af7040803e6452a5316187e1a6b235bda85152800b391e"
+    }
+  },
+  "after": {
+    "evaluated-complete--request.json": {
+      "path": "capital_research/evaluated_replay_20261027/runs-final/complete/evaluated-complete--request.json",
+      "bytes": 16784,
+      "sha256": "9f5410ca2041444049998027b7e45587c0bf5a4c33a542c1b0f115c91b11827e"
+    },
+    "evaluated-complete--result.json": {
+      "path": "capital_research/evaluated_replay_20261027/runs-final/complete/evaluated-complete--result.json",
+      "bytes": 1909,
+      "sha256": "87892325e90ca0549f0fc62372602f446289c8d48310080ee972b232cf0cf30c"
+    },
+    "evaluated-complete--replay.json": {
+      "path": "capital_research/evaluated_replay_20261027/runs-final/complete/evaluated-complete--replay.json",
+      "bytes": 735492,
+      "sha256": "ecdad1ca2b5eb460b1317148f9c1db97811a559cc29f86e787f6fc1fbb58bb6b"
+    },
+    "evaluated-complete--evaluation.json": {
+      "path": "capital_research/evaluated_replay_20261027/runs-final/complete/evaluated-complete--evaluation.json",
+      "bytes": 7418,
+      "sha256": "6da532a241a5b770b9af7040803e6452a5316187e1a6b235bda85152800b391e"
+    }
+  }
+}

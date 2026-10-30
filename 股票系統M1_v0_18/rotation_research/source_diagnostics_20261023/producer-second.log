@@ -1,0 +1,17 @@
+Traceback (most recent call last):
+  File "<frozen runpy>", line 198, in _run_module_as_main
+  File "<frozen runpy>", line 88, in _run_code
+  File "/workspace/Twstockai/股票系統M1_v0_18/rotation_research/source_diagnostics_sources.py", line 241, in <module>
+    main()
+  File "/workspace/Twstockai/股票系統M1_v0_18/rotation_research/source_diagnostics_sources.py", line 230, in main
+    outputs = run()
+              ^^^^^
+  File "/workspace/Twstockai/股票系統M1_v0_18/rotation_research/source_diagnostics_sources.py", line 198, in run
+    catalog = build_catalog()
+              ^^^^^^^^^^^^^^^
+  File "/workspace/Twstockai/股票系統M1_v0_18/rotation_research/source_diagnostics_sources.py", line 184, in build_catalog
+    sid = 'esun-meeting-followup-2026'; p = parse_followup(texts[sid])
+                                            ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/workspace/Twstockai/股票系統M1_v0_18/rotation_research/source_diagnostics_sources.py", line 118, in parse_followup
+    raise ValueError('Issuer completion/record/employee scopes missing')
+ValueError: Issuer completion/record/employee scopes missing

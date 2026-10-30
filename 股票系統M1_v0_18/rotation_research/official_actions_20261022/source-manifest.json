@@ -1,0 +1,66 @@
+{
+  "sources": {
+    "esun-2025-minutes": {
+      "path": "股票系統M1_v0_18/rotation_research/official_actions_20261022/raw/esun-2025-minutes.response",
+      "url": "https://www.esunbank.com/zh-tw/-/media/ESUNFHC/Files/Investor-Relations/Shareholders/Shareholder-Meeting/114-minutes.pdf",
+      "sha256": "74d1da671247fa0dffbf1a1ed446d288f1701871f3175121b30a9bffea750567",
+      "captured_at": "2026-10-22T08:24:40.331765+00:00",
+      "kind": "OFFICIAL_ARCHIVE",
+      "historical_publication_time": "NOT_AUTHENTICATED",
+      "derived_text": {
+        "path": "股票系統M1_v0_18/rotation_research/official_actions_20261022/raw/esun-2025-minutes.txt",
+        "sha256": "33a324bf714e0a99f2c5ec724e15abc74bef6c0be6295b2232200a1a7ca76294",
+        "extraction": {
+          "command": [
+            "pdftotext",
+            "-layout",
+            "esun-2025-minutes.response",
+            "esun-2025-minutes.txt"
+          ],
+          "tool_version": "pdftotext version 25.03.0",
+          "pdf_sha256": "74d1da671247fa0dffbf1a1ed446d288f1701871f3175121b30a9bffea750567",
+          "text_sha256": "33a324bf714e0a99f2c5ec724e15abc74bef6c0be6295b2232200a1a7ca76294",
+          "qualification": "DERIVED_TEXT_NOT_INDEPENDENT_PRIMARY_SOURCE"
+        }
+      }
+    },
+    "esun-2025-follow-up": {
+      "path": "股票系統M1_v0_18/rotation_research/official_actions_20261022/raw/esun-2025-follow-up.response",
+      "url": "https://www.esunbank.com/zh-tw/-/media/ESUNFHC/Files/Investor-Relations/Shareholders/Shareholder-Meeting/2025Follow-up.pdf",
+      "sha256": "b0aed62982b86b350d935f6aacfbb0d118666ece22bdcdfb1e1d7213e812f2c4",
+      "captured_at": "2026-10-22T08:25:30.967022+00:00",
+      "kind": "OFFICIAL_ARCHIVE",
+      "historical_publication_time": "NOT_AUTHENTICATED",
+      "derived_text": {
+        "path": "股票系統M1_v0_18/rotation_research/official_actions_20261022/raw/esun-2025-follow-up.reading-order.txt",
+        "sha256": "a3ca5c2361da6b5293fab52752ef42fbea92821e7229f80c7a58018cd7f51f64",
+        "extraction": {
+          "command": [
+            "pdftotext",
+            "-raw",
+            "esun-2025-follow-up.response",
+            "esun-2025-follow-up.reading-order.txt"
+          ],
+          "tool_version": "pdftotext version 25.03.0",
+          "pdf_sha256": "b0aed62982b86b350d935f6aacfbb0d118666ece22bdcdfb1e1d7213e812f2c4",
+          "text_sha256": "a3ca5c2361da6b5293fab52752ef42fbea92821e7229f80c7a58018cd7f51f64",
+          "qualification": "DERIVED_TEXT_NOT_INDEPENDENT_PRIMARY_SOURCE"
+        }
+      }
+    }
+  },
+  "mops": {
+    "source": {
+      "path": "股票系統M1_v0_18/rotation_research/official_actions_20261022/raw/mops-announcements-entry.response",
+      "url": "https://mops.twse.com.tw/server-java/t39sb01?quick=1",
+      "sha256": "8cec22b786ac2bb33250bb106d88cead78301375ae5f2d5fbbc7d619bcd54454",
+      "captured_at": "2026-10-22T08:24:44.077629+00:00",
+      "kind": "OFFICIAL_ARCHIVE",
+      "historical_publication_time": "NOT_AUTHENTICATED"
+    },
+    "qualification": "SECURITY_DENIAL_NOT_EMPTY_DATA",
+    "usable": false,
+    "retry_or_bypass": false
+  },
+  "configuration_change": "RUNTIME_SPEC_3_ALLOWED_TWO_OFFICIAL_HOSTS"
+}

@@ -1,0 +1,522 @@
+{
+  "schema": "reference-path-review/0.1",
+  "source_sha256": "ab87a51b5b8afd076603f290b10f415bd60d31ae47c5ab2f6d9d609ad4014901",
+  "price_basis_id": "sha256:3ce70b8fe0dfc818490a4b6209413232aedc76fcab39ba359ed4a3170d75785d",
+  "source_gaps": {
+    "actions_coverage": "UNVERIFIED_NO_NEW_ACTION_AUTHENTICATION",
+    "calendar_status": "PLANNED_PLUS_REVIEWED_EXCEPTIONS_ONLY_NOT_EXHAUSTIVE",
+    "historical_publication_timing": "UNVERIFIED",
+    "known_calendar_missing_dates": [
+      "2022-01-27",
+      "2022-01-28",
+      "2023-08-03",
+      "2024-07-24",
+      "2024-07-25",
+      "2024-10-02",
+      "2024-10-03",
+      "2024-10-31",
+      "2025-11-05"
+    ]
+  },
+  "queries": {
+    "june_lower": {
+      "as_of": "2026-06-30",
+      "reference_date": "2026-04-16",
+      "reference_field": "high",
+      "value": "33.20",
+      "start": "2026-06-04",
+      "reference_role": "FIXED_RAW_PRICE_REFERENCE_NOT_FORMAL_BAND_EDGE",
+      "rows": [
+        {
+          "bar": {
+            "close": "33.45",
+            "date": "2026-06-04",
+            "high": "33.70",
+            "low": "32.90",
+            "open": "33.00",
+            "volume_shares_scaled": "71753146"
+          },
+          "close_relation": "ABOVE",
+          "low_relation": "BELOW",
+          "high_relation": "ABOVE"
+        },
+        {
+          "bar": {
+            "close": "33.35",
+            "date": "2026-06-05",
+            "high": "33.60",
+            "low": "32.90",
+            "open": "33.45",
+            "volume_shares_scaled": "49409021"
+          },
+          "close_relation": "ABOVE",
+          "low_relation": "BELOW",
+          "high_relation": "ABOVE"
+        },
+        {
+          "bar": {
+            "close": "32.90",
+            "date": "2026-06-08",
+            "high": "33.10",
+            "low": "32.30",
+            "open": "32.75",
+            "volume_shares_scaled": "60140936"
+          },
+          "close_relation": "BELOW",
+          "low_relation": "BELOW",
+          "high_relation": "BELOW"
+        },
+        {
+          "bar": {
+            "close": "34.20",
+            "date": "2026-06-09",
+            "high": "34.35",
+            "low": "32.90",
+            "open": "32.90",
+            "volume_shares_scaled": "88605638"
+          },
+          "close_relation": "ABOVE",
+          "low_relation": "BELOW",
+          "high_relation": "ABOVE"
+        },
+        {
+          "bar": {
+            "close": "33.65",
+            "date": "2026-06-10",
+            "high": "34.15",
+            "low": "33.15",
+            "open": "34.00",
+            "volume_shares_scaled": "59541179"
+          },
+          "close_relation": "ABOVE",
+          "low_relation": "BELOW",
+          "high_relation": "ABOVE"
+        },
+        {
+          "bar": {
+            "close": "33.85",
+            "date": "2026-06-11",
+            "high": "33.85",
+            "low": "33.05",
+            "open": "33.65",
+            "volume_shares_scaled": "45609225"
+          },
+          "close_relation": "ABOVE",
+          "low_relation": "BELOW",
+          "high_relation": "ABOVE"
+        },
+        {
+          "bar": {
+            "close": "34.35",
+            "date": "2026-06-12",
+            "high": "34.70",
+            "low": "33.95",
+            "open": "34.15",
+            "volume_shares_scaled": "50080952"
+          },
+          "close_relation": "ABOVE",
+          "low_relation": "ABOVE",
+          "high_relation": "ABOVE"
+        },
+        {
+          "bar": {
+            "close": "34.65",
+            "date": "2026-06-15",
+            "high": "34.85",
+            "low": "34.40",
+            "open": "34.85",
+            "volume_shares_scaled": "41423794"
+          },
+          "close_relation": "ABOVE",
+          "low_relation": "ABOVE",
+          "high_relation": "ABOVE"
+        },
+        {
+          "bar": {
+            "close": "35.20",
+            "date": "2026-06-16",
+            "high": "35.35",
+            "low": "34.45",
+            "open": "34.70",
+            "volume_shares_scaled": "59663562"
+          },
+          "close_relation": "ABOVE",
+          "low_relation": "ABOVE",
+          "high_relation": "ABOVE"
+        },
+        {
+          "bar": {
+            "close": "35.50",
+            "date": "2026-06-17",
+            "high": "35.90",
+            "low": "35.05",
+            "open": "35.30",
+            "volume_shares_scaled": "60281414"
+          },
+          "close_relation": "ABOVE",
+          "low_relation": "ABOVE",
+          "high_relation": "ABOVE"
+        },
+        {
+          "bar": {
+            "close": "35.40",
+            "date": "2026-06-18",
+            "high": "36.25",
+            "low": "35.40",
+            "open": "35.50",
+            "volume_shares_scaled": "98205698"
+          },
+          "close_relation": "ABOVE",
+          "low_relation": "ABOVE",
+          "high_relation": "ABOVE"
+        },
+        {
+          "bar": {
+            "close": "35.80",
+            "date": "2026-06-22",
+            "high": "36.60",
+            "low": "35.70",
+            "open": "36.00",
+            "volume_shares_scaled": "106058238"
+          },
+          "close_relation": "ABOVE",
+          "low_relation": "ABOVE",
+          "high_relation": "ABOVE"
+        },
+        {
+          "bar": {
+            "close": "35.80",
+            "date": "2026-06-23",
+            "high": "36.35",
+            "low": "35.55",
+            "open": "35.80",
+            "volume_shares_scaled": "56291939"
+          },
+          "close_relation": "ABOVE",
+          "low_relation": "ABOVE",
+          "high_relation": "ABOVE"
+        },
+        {
+          "bar": {
+            "close": "35.00",
+            "date": "2026-06-24",
+            "high": "35.50",
+            "low": "35.00",
+            "open": "35.30",
+            "volume_shares_scaled": "66780179"
+          },
+          "close_relation": "ABOVE",
+          "low_relation": "ABOVE",
+          "high_relation": "ABOVE"
+        },
+        {
+          "bar": {
+            "close": "35.45",
+            "date": "2026-06-25",
+            "high": "35.80",
+            "low": "34.90",
+            "open": "35.10",
+            "volume_shares_scaled": "76630970"
+          },
+          "close_relation": "ABOVE",
+          "low_relation": "ABOVE",
+          "high_relation": "ABOVE"
+        },
+        {
+          "bar": {
+            "close": "34.55",
+            "date": "2026-06-26",
+            "high": "35.35",
+            "low": "34.55",
+            "open": "35.00",
+            "volume_shares_scaled": "41921203"
+          },
+          "close_relation": "ABOVE",
+          "low_relation": "ABOVE",
+          "high_relation": "ABOVE"
+        },
+        {
+          "bar": {
+            "close": "34.50",
+            "date": "2026-06-29",
+            "high": "35.10",
+            "low": "34.35",
+            "open": "35.05",
+            "volume_shares_scaled": "49520416"
+          },
+          "close_relation": "ABOVE",
+          "low_relation": "ABOVE",
+          "high_relation": "ABOVE"
+        },
+        {
+          "bar": {
+            "close": "34.45",
+            "date": "2026-06-30",
+            "high": "34.90",
+            "low": "34.15",
+            "open": "34.60",
+            "volume_shares_scaled": "68370568"
+          },
+          "close_relation": "ABOVE",
+          "low_relation": "ABOVE",
+          "high_relation": "ABOVE"
+        }
+      ],
+      "formal_holding": null,
+      "formal_success": null
+    },
+    "june_broader": {
+      "as_of": "2026-06-30",
+      "reference_date": "2026-02-26",
+      "reference_field": "high",
+      "value": "35.50",
+      "start": "2026-06-22",
+      "reference_role": "FIXED_RAW_PRICE_REFERENCE_NOT_FORMAL_BAND_EDGE",
+      "rows": [
+        {
+          "bar": {
+            "close": "35.80",
+            "date": "2026-06-22",
+            "high": "36.60",
+            "low": "35.70",
+            "open": "36.00",
+            "volume_shares_scaled": "106058238"
+          },
+          "close_relation": "ABOVE",
+          "low_relation": "ABOVE",
+          "high_relation": "ABOVE"
+        },
+        {
+          "bar": {
+            "close": "35.80",
+            "date": "2026-06-23",
+            "high": "36.35",
+            "low": "35.55",
+            "open": "35.80",
+            "volume_shares_scaled": "56291939"
+          },
+          "close_relation": "ABOVE",
+          "low_relation": "ABOVE",
+          "high_relation": "ABOVE"
+        },
+        {
+          "bar": {
+            "close": "35.00",
+            "date": "2026-06-24",
+            "high": "35.50",
+            "low": "35.00",
+            "open": "35.30",
+            "volume_shares_scaled": "66780179"
+          },
+          "close_relation": "BELOW",
+          "low_relation": "BELOW",
+          "high_relation": "EQUAL"
+        },
+        {
+          "bar": {
+            "close": "35.45",
+            "date": "2026-06-25",
+            "high": "35.80",
+            "low": "34.90",
+            "open": "35.10",
+            "volume_shares_scaled": "76630970"
+          },
+          "close_relation": "BELOW",
+          "low_relation": "BELOW",
+          "high_relation": "ABOVE"
+        },
+        {
+          "bar": {
+            "close": "34.55",
+            "date": "2026-06-26",
+            "high": "35.35",
+            "low": "34.55",
+            "open": "35.00",
+            "volume_shares_scaled": "41921203"
+          },
+          "close_relation": "BELOW",
+          "low_relation": "BELOW",
+          "high_relation": "BELOW"
+        },
+        {
+          "bar": {
+            "close": "34.50",
+            "date": "2026-06-29",
+            "high": "35.10",
+            "low": "34.35",
+            "open": "35.05",
+            "volume_shares_scaled": "49520416"
+          },
+          "close_relation": "BELOW",
+          "low_relation": "BELOW",
+          "high_relation": "BELOW"
+        },
+        {
+          "bar": {
+            "close": "34.45",
+            "date": "2026-06-30",
+            "high": "34.90",
+            "low": "34.15",
+            "open": "34.60",
+            "volume_shares_scaled": "68370568"
+          },
+          "close_relation": "BELOW",
+          "low_relation": "BELOW",
+          "high_relation": "BELOW"
+        }
+      ],
+      "formal_holding": null,
+      "formal_success": null
+    },
+    "july_local": {
+      "as_of": "2026-07-24",
+      "reference_date": "2026-07-17",
+      "reference_field": "high",
+      "value": "35.50",
+      "start": "2026-07-20",
+      "reference_role": "FIXED_RAW_PRICE_REFERENCE_NOT_FORMAL_BAND_EDGE",
+      "rows": [
+        {
+          "bar": {
+            "close": "35.85",
+            "date": "2026-07-20",
+            "high": "36.00",
+            "low": "35.10",
+            "open": "35.30",
+            "volume_shares_scaled": "80234731"
+          },
+          "close_relation": "ABOVE",
+          "low_relation": "BELOW",
+          "high_relation": "ABOVE"
+        },
+        {
+          "bar": {
+            "close": "36.95",
+            "date": "2026-07-21",
+            "high": "37.20",
+            "low": "35.85",
+            "open": "35.85",
+            "volume_shares_scaled": "66290064"
+          },
+          "close_relation": "ABOVE",
+          "low_relation": "ABOVE",
+          "high_relation": "ABOVE"
+        },
+        {
+          "bar": {
+            "close": "36.05",
+            "date": "2026-07-22",
+            "high": "37.20",
+            "low": "36.05",
+            "open": "36.75",
+            "volume_shares_scaled": "35080404"
+          },
+          "close_relation": "ABOVE",
+          "low_relation": "ABOVE",
+          "high_relation": "ABOVE"
+        },
+        {
+          "bar": {
+            "close": "35.65",
+            "date": "2026-07-23",
+            "high": "36.30",
+            "low": "35.40",
+            "open": "36.30",
+            "volume_shares_scaled": "26137234"
+          },
+          "close_relation": "ABOVE",
+          "low_relation": "BELOW",
+          "high_relation": "ABOVE"
+        },
+        {
+          "bar": {
+            "close": "35.95",
+            "date": "2026-07-24",
+            "high": "36.00",
+            "low": "35.05",
+            "open": "35.05",
+            "volume_shares_scaled": "28893377"
+          },
+          "close_relation": "ABOVE",
+          "low_relation": "BELOW",
+          "high_relation": "ABOVE"
+        }
+      ],
+      "formal_holding": null,
+      "formal_success": null
+    },
+    "july_new_high": {
+      "as_of": "2026-07-24",
+      "reference_date": "2026-07-21",
+      "reference_field": "high",
+      "value": "37.20",
+      "start": "2026-07-22",
+      "reference_role": "FIXED_RAW_PRICE_REFERENCE_NOT_FORMAL_BAND_EDGE",
+      "rows": [
+        {
+          "bar": {
+            "close": "36.05",
+            "date": "2026-07-22",
+            "high": "37.20",
+            "low": "36.05",
+            "open": "36.75",
+            "volume_shares_scaled": "35080404"
+          },
+          "close_relation": "BELOW",
+          "low_relation": "BELOW",
+          "high_relation": "EQUAL"
+        },
+        {
+          "bar": {
+            "close": "35.65",
+            "date": "2026-07-23",
+            "high": "36.30",
+            "low": "35.40",
+            "open": "36.30",
+            "volume_shares_scaled": "26137234"
+          },
+          "close_relation": "BELOW",
+          "low_relation": "BELOW",
+          "high_relation": "BELOW"
+        },
+        {
+          "bar": {
+            "close": "35.95",
+            "date": "2026-07-24",
+            "high": "36.00",
+            "low": "35.05",
+            "open": "35.05",
+            "volume_shares_scaled": "28893377"
+          },
+          "close_relation": "BELOW",
+          "low_relation": "BELOW",
+          "high_relation": "BELOW"
+        }
+      ],
+      "formal_holding": null,
+      "formal_success": null
+    }
+  },
+  "frozen_july_volume": {
+    "reading_scope": [
+      "2026-07-01",
+      "2026-07-17"
+    ],
+    "saved_rows": 12,
+    "max_shares": "97753866",
+    "max_dates": [
+      "2026-07-17"
+    ],
+    "role": "LOCAL_SAVED_WINDOW_MAX_NOT_FORMAL_BAND_OR_BASELINE",
+    "frozen_before": "2026-07-20",
+    "post_origin_does_not_update_max": true
+  },
+  "cross_action_comparison_status": "NOT_USED_FOR_ECONOMIC_REACTION_OR_FORMAL_HOLDING",
+  "legacy_35_50_from_february_is_not_july_35_50_source": true,
+  "unadjusted_old_reference_after_july_1": "NOT_PROMOTED_TO_REACTION_EVIDENCE",
+  "formal_bounds": null,
+  "formal_merge": null,
+  "holding_threshold": null,
+  "volume_baseline_formula": null,
+  "historical_signal_eligible": false
+}

@@ -1,0 +1,181 @@
+[
+  {
+    "case": "review",
+    "context": "normal",
+    "equal_original": true,
+    "error": null,
+    "calls": {
+      "review": 1,
+      "retry": 0,
+      "quantity_replay": 1,
+      "simulate": 2,
+      "ledger_replay": 34,
+      "generate": 1,
+      "save": 0
+    },
+    "caller_context_unchanged": true,
+    "input_unchanged": true
+  },
+  {
+    "case": "review",
+    "context": "round-up",
+    "equal_original": true,
+    "error": null,
+    "calls": {
+      "review": 1,
+      "retry": 0,
+      "quantity_replay": 1,
+      "simulate": 2,
+      "ledger_replay": 34,
+      "generate": 1,
+      "save": 0
+    },
+    "caller_context_unchanged": true,
+    "input_unchanged": true
+  },
+  {
+    "case": "review",
+    "context": "round-down",
+    "equal_original": true,
+    "error": null,
+    "calls": {
+      "review": 1,
+      "retry": 0,
+      "quantity_replay": 1,
+      "simulate": 2,
+      "ledger_replay": 34,
+      "generate": 1,
+      "save": 0
+    },
+    "caller_context_unchanged": true,
+    "input_unchanged": true
+  },
+  {
+    "case": "review",
+    "context": "inexact-trap",
+    "equal_original": true,
+    "error": null,
+    "calls": {
+      "review": 1,
+      "retry": 0,
+      "quantity_replay": 1,
+      "simulate": 2,
+      "ledger_replay": 34,
+      "generate": 1,
+      "save": 0
+    },
+    "caller_context_unchanged": true,
+    "input_unchanged": true
+  },
+  {
+    "case": "review",
+    "context": "narrow-exponents",
+    "equal_original": false,
+    "error": {
+      "type": "Overflow",
+      "detail": "[<class 'decimal.Overflow'>]"
+    },
+    "calls": {
+      "review": 1,
+      "retry": 0,
+      "quantity_replay": 1,
+      "simulate": 1,
+      "ledger_replay": 11,
+      "generate": 1,
+      "save": 0
+    },
+    "caller_context_unchanged": true,
+    "input_unchanged": true
+  },
+  {
+    "case": "retry",
+    "context": "normal",
+    "equal_original": true,
+    "error": null,
+    "calls": {
+      "review": 1,
+      "retry": 1,
+      "quantity_replay": 1,
+      "simulate": 3,
+      "ledger_replay": 66,
+      "generate": 1,
+      "save": 0
+    },
+    "caller_context_unchanged": true,
+    "input_unchanged": true
+  },
+  {
+    "case": "retry",
+    "context": "round-up",
+    "equal_original": true,
+    "error": null,
+    "calls": {
+      "review": 1,
+      "retry": 1,
+      "quantity_replay": 1,
+      "simulate": 3,
+      "ledger_replay": 66,
+      "generate": 1,
+      "save": 0
+    },
+    "caller_context_unchanged": true,
+    "input_unchanged": true
+  },
+  {
+    "case": "retry",
+    "context": "round-down",
+    "equal_original": true,
+    "error": null,
+    "calls": {
+      "review": 1,
+      "retry": 1,
+      "quantity_replay": 1,
+      "simulate": 3,
+      "ledger_replay": 66,
+      "generate": 1,
+      "save": 0
+    },
+    "caller_context_unchanged": true,
+    "input_unchanged": true
+  },
+  {
+    "case": "retry",
+    "context": "inexact-trap",
+    "equal_original": false,
+    "error": {
+      "type": "Inexact",
+      "detail": "[<class 'decimal.Inexact'>]"
+    },
+    "calls": {
+      "review": 1,
+      "retry": 1,
+      "quantity_replay": 1,
+      "simulate": 3,
+      "ledger_replay": 66,
+      "generate": 1,
+      "save": 0
+    },
+    "caller_context_unchanged": true,
+    "input_unchanged": true
+  },
+  {
+    "case": "retry",
+    "context": "narrow-exponents",
+    "equal_original": false,
+    "error": {
+      "type": "Overflow",
+      "detail": "[<class 'decimal.Overflow'>]"
+    },
+    "calls": {
+      "review": 1,
+      "retry": 1,
+      "quantity_replay": 1,
+      "simulate": 1,
+      "ledger_replay": 11,
+      "generate": 1,
+      "save": 0
+    },
+    "caller_context_unchanged": true,
+    "input_unchanged": true
+  }
+]

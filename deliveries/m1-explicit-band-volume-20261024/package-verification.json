@@ -1,0 +1,64 @@
+{
+  "status": "PASS",
+  "scope": "EXPLICIT_SAVED_RESEARCH_BAND_VOLUME_WIRING_NOT_AUTOMATIC_BANDS_OR_STRATEGY",
+  "filename": "M1_explicit_band_volume_v03_20261024.zip",
+  "bytes": 19157290,
+  "sha256": "c6bd5acbe661322e813168adee4a5f15cf3b667fb8692238f1bf5bf7a008e1c3",
+  "members": 82,
+  "manifest_entries": 81,
+  "crc_unique_safe_paths": true,
+  "all_member_lengths_sha_verified": true,
+  "new_extraction_runs": [
+    {
+      "label": "band-volume-tests",
+      "command": [
+        "python3",
+        "-m",
+        "unittest",
+        "discover",
+        "-s",
+        "tests",
+        "-p",
+        "test_explicit_band_volume.py",
+        "-v"
+      ],
+      "returncode": 0
+    },
+    {
+      "label": "volume-chart-rebuild",
+      "command": [
+        "python3",
+        "-m",
+        "structure_state_chart.build_volume",
+        "--output-dir",
+        "structure_state_chart/output/REPRODUCED",
+        "--selection",
+        "structure_state_chart/examples/band-volume-selection.json"
+      ],
+      "returncode": 0
+    }
+  ],
+  "rebuilt_full_bytes_equal": [
+    "volume-build-verification.json",
+    "structure-state.json",
+    "scenario.json",
+    "role-selection.json",
+    "facts-input.json",
+    "chart-layer.json",
+    "band-volume.json",
+    "band-volume-selection.json",
+    "M1_P03_explicit_band_volume_v03.html"
+  ],
+  "archive_members_unchanged": true,
+  "unique_python_tests": {
+    "new": 26,
+    "related_regression": 6,
+    "total": 32
+  },
+  "extracted_same_26_not_added": true,
+  "real_chromium_checks": 88,
+  "previous_tests_not_rerun": true,
+  "new_source_011": false,
+  "graph_p03_indicators_recomputed": false,
+  "physical_android": "NOT_TESTED_NEW_BUILD"
+}

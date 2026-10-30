@@ -1,0 +1,670 @@
+# 2026-10-30 最新有效｜M2-3 FinMind有限日線接既有圖形核心
+
+入口[graph_core/finmind_20261030](股票系統M1_v0_18/graph_core/finmind_20261030/README.md)、CONTRACT、REPORT及real-validation-summary。新finmind_adapter純轉欄位、finmind_run有限HTTP／本地IO，重用原graph_core.analyze與TWSE來源parser；原算法／參數／主壓力及資金程式未改。2884固定2026-03-01～07-22，一次查得98筆，07-21／22分別97／98筆實跑；兩日OHLC及原股數與既存官方相符，前綴／後日改寫數值相同。07-01不比價只作basis break，事件類型未知，不推定除權息或認證跨基底結構。
+
+原始FinMind回應、轉接payload及可還原行情的完整結果僅在儲存庫外`/workspace/twstockai-local-data/`，禁止加入任何GitHub（含私人repo）；公開只程式、合成fixture／actual／log及非行情白名單摘要。CLI拒絕Git工作樹內真實輸入／輸出與覆寫。Free限個人非商業研究，不代表散布權。8069只讀原兩日官方整數張數，精確股數UNKNOWN／拒認；Work原FinMind價格核對未在本輪重驗。
+
+18唯一方法最終PASS＝15新增＋3必要core回歸；首次1個缺反例檔ERROR及其log留史，補正後只跑必要方法，不加中間批／案例／歷史PASS。原件11檔及凍結input／expected bytes保持；無舊suite／producer／市場績效／UI／Android。Library M2-2兩原件未取得／未讀，依使用者摘要與官方API有限執行，不要求搬檔。歷史available_at／完整日曆／公司行動UNKNOWN、正式false／主壓力null、1101及70/2/其中8/真實總淨合格0保持。
+
+唯一Codex依功能里程碑自審、原分支正常保存及固定SHA讀回；沒有代理／分支／worktree或人工操作。能力止於有限真實日線研究接入，不是正式辨識／買點／策略／績效／全市場。此里程碑達成即停止；下方舊交接完整保留。
+
+---
+
+# 2026-10-30 最新有效｜research_operation明示承接保存結果0.2
+
+入口股票系統M1_v0_18/capital_research/operation_import_20261030/README.md、CONTRACT.md、REPORT.md及actual。原research_operation新增import_operation／既有CLI IMPORT，完整0.4來源與既有choice0.2外部明示，沿原Journal四階段原樣保存讀回；generation階段只保存原來源，不生成、不重選、不改帳或成交。新header／result／receipt0.2，舊RUN／READ及歷史不遷移。
+
+一般／條件／拒絕保持；B93仍條件意圖，UNKNOWN仍CHOICE_REFUSED、不進source-check。來源／choice精確回連及唯一成員、單位來源／搜尋收據、原帳權利／reserve／origin/latest／全部token均承接。缺choice不自動續抱，錯配拒絕；相同ID不寫、異內容衝突，UNKNOWN停且只明示READ。READ不重算verdict、不補檔或自動續跑；來源一致性不是認證。
+
+19案先凍結、正反例無重複，首次全部符合預期；8唯一方法首次PASS，不加案例／五舊READ控制／歷史PASS。原五READ逐值相同、既有ID RUN不生成；四階段UNKNOWN／缺中間／錯鏈／fresh CLI禁止引擎與選擇／網路／READ寫檔、完整Context及input不變均有證據。原數值／帳務／choice／Journal／資格及來源原件bytes保持，無舊suite／producer或市場回放。
+
+唯一Codex依里程碑自審、正常保存與GitHub固定SHA讀回，起始36b9e2779286537579f6680dd382fee1143b03e2且淨；無人工或例行Work驗收。只承接已保存choice，未接補選、多份比較或成交；本項結清，下一步按原優先序核已有明確缺口，沒有就停，不再為延續增加同類READ包裝。70/2/其中8/真實合格0、1101 UNKNOWN、正式false／主壓力null、來源parents／圖形人工及R2/F／原未支援／未讀限制保持。下方歷史完整保留。
+
+---
+
+# 2026-10-30 最新進度同步｜原 Codex 成果保存已結清
+
+依使用者要求核對修復上傳並同步進度。實核基準 `36b9e2779286537579f6680dd382fee1143b03e2`，原分支 `dev/m1-v018-chart-annotations` 保留 `9d7931c4` 及其後7個提交（ahead 7／behind 0），含修復結清 `4094f130` 與候選選擇接線 `c9bbc5db`。
+
+[本輪進度、證據範圍與後續分工](docs/work-reviews/20261030_original_codex_progress_sync/README.md)；[機器可讀核對](docs/work-reviews/20261030_original_codex_progress_sync/verification.json)。兩份完整manifest共16,839路徑已作結構核對；29 ZIP在目前樹中，Git blob及大小與原交付固定樹一致。沿用已讀原始讀回／CRC／成員SHA證據，不冒稱本輪重新下載解壓或重跑產品測試。6份歷史衝突只封存，不覆蓋現行版本。舊工作區 `392b94a4` 不是新工程起點；保存結清不證實平台環境、舊對話或唯一寫入者協調已修復。
+
+目前工程已含數量候選0.4及明示研究選擇choice/0.2；下游research_operation／supplement／比較與成交尚未接好。Work市場環境研究最新0.9、資料截止10/29，報告與證據包仍另存；本輪只同步其狀態，未把完整研究包匯入GitHub或宣稱Codex已讀。正式參數、最佳比例、真實淨績效、全市場辨識及自動配置仍未完成；1101 UNKNOWN、真實合格0、正式false、主壓力null與所有來源限制保持。
+
+本輪Work只同步文件，不改產品源碼、策略或來源。後續工程仍由指定唯一Codex從最新遠端接續；救援原件「已保存／本輪已核清單」與「工程者已實讀內容」分開，未讀不能自動改成已讀。下方原文完整留史。
+
+---
+
+# 2026-10-29 專案未來目標增補｜八張圖形案例：突破階段、跨週期、相對優勢與市場環境
+
+本項由使用者在 2026-10-29 明示要求增補至未來目標。承接 2026-10-28「純價量、市場環境與資金閉環」既有目標，不取代舊規格、交易資格、來源契約或開發進度。使用者提供八張附註圖形（畫面日期為 2026-10-22／10-27）：百德日K／週K／還原權值圖、廣達、緯創、南亞科、櫃買指數及最後一張「頁面文字提台積電、但圖表實際標示市加權」的市場指數。截圖保存在對話附件，**本提交未把影像或可驗證原始行情納入GitHub**；因此僅作研究候選，不能冒稱已形成可回測原始樣本。
+
+## 要新增的辨識及決策研究能力
+
+1. **突破的生命週期及證據分層**：將「尚未突破→價格突破→量能支持／尚待確認→回測→再度推升／失效」列為待研究的狀態候選；每個階段保留事件日期、關鍵價帶、當時可知最高量／密集量峰、守價、反證、可買窗口及後續變化。價格先突破與成交量後確認要分開保存，不得因量能尚缺直接刪除價格突破的事實，也不得把缺量當作已確認成功。狀態名稱不構成自動進場規則。
+2. **日K／週K／還原權值的跨週期一致性**：按各自已完成期間比較量價；未收完週K的累計成交量不得與完整週量直接等量比較。原始價／還原價必須註明調整基準、除權息事件、日期角色，不能混用不同基準高低點；重建各尺度下真正可見的結構，不把尚未發生的週收盤提前視為成立。
+3. **同時比較個股結構強度與投資機會價值**：廣達與緯創類案例研究「當下誰結構更強」與「以當時可交易價格買入，誰的剩餘報酬／下跌風險／時間資本效率較佳」不一定相同。保存距離有效關鍵位置、近期動能、突破可靠度、可能失效參照及實際可買成本。單憑已走出的漲幅或相對強勢，不得宣稱現在的最佳換股標的。
+4. **市場環境與個股失效辨別**：櫃買／加權指數的高低點、成交量與趨勢結構，連同全市場當時可觀察的突破成功／失敗樣本，研究個股特有問題與市場系統性假突破的區別；比較正常持股、降曝險、暫停同類新倉、持現金及恢復進場的候選路徑，不強迫由A換B，也不憑單一指數截圖證明空頭已成立。
+5. **偏誤控制與後續驗證**：圖上的作者敘述（如「技術突破無疑問」「即將黃金交叉」「沒有頭部」）是待檢驗假說，不是標準答案；借券、法人、題材與動機推論不直接充當純價量策略訊號。針對每個關鍵事件，以當時已知的原始行情保存觀察前綴、未來隔離與市場同期對照，納入失敗突破與不利走勢；可研究事後5／10／20／40交易日結果，但觀察窗僅是待驗候選，**未核准為固定策略參數**。
+6. **接回資金成長閉環**：通過辨識驗證後，才將上述狀態作為同一期初帳戶的續抱、減碼、全換、部分換、退出持現金、等待再進的比較輸入。驗證必須包含成交量容量、未成交、費稅、交割時間、最大回撤、後續可得機會與完整帳戶淨值；不能因某圖型事後大漲就推定已能實際成交或有較高資金績效。
+
+## 案例研究與完成界線
+
+- 百德：同股日／週及還原圖對照；底部回升、55.6附近局部價位、61.1突破觀察與量能差異皆為研究候選，需回核完整K棒與調整基準。
+- 廣達、緯創：同市場同期比較弱勢轉強與強勢延續，避免事後用緯創後來的高價把所有先前突破標成成功。
+- 南亞科：長期上升結構和高檔回撤風險可並存；均線跌破與交易退出的關係須以對照實驗驗證。
+- 櫃買指數及市加權圖：市場量價弱化研究；最後一圖的股票／指數標示歧義必須先消除，且各截圖 10/22 與 10/27 日期不同，正式同期比較須統一可知時間。
+- **完成條件**不是增加圖片或評論數量，而是：可追溯的原始價量與調整資料、當時可見事件、人工圖形核可、成功失敗兩側結果、無未來洩漏、可交易模擬及樣本外資金比較逐一成立。當前以上皆不得視為新實作或新回測成果。
+
+分工／約束：維持 Work 唯讀研究、唯一既有 Codex 工程、原分支與歷史保留；不自行設定本金、股數比例、買賣門檻、評分權重、策略勝者或自動交易。原 UNKNOWN／拒算／正式資格／人工最終決策仍有效。此為新增的未來目標，不改既有工程成果。
+
+---
+
+# 2026-10-29 最新有效｜保存0.4候選的明示研究選擇0.2
+
+入口股票系統M1_v0_18/capital_research/choice_v04_20261029/README.md、CONTRACT.md、REPORT.md及final。沿原choose_saved／Journal／來源核對新增choice-input/0.2 → choice/0.2；明示完整0.4 request＋generation來源，不重新產生候選／重播，不把0.4降版或假包after-retry。原0.1及其0.2候選來源相容，原匹配、Journal、CLI／view與數值source不改。
+
+新純READ helper綁完整來源／單位及搜尋政策／逐點收據、原帳快照／權利／reserve、截止／時點、origin/latest與全部token；新opening不造checkpoint，原checkpoint限已結清無活單／應付／未解除限售。主例B93只記條件意圖，B2一般意圖；舊觸發0新增不冒新買，UNKNOWN／錯配／超限拒絕，FULL拒絕不誤擋合法HOLD。READ不重選或重算，來源一致性不是來源認證。
+
+32案事前凍結；31符合原預期，1份missing-token反例實際與正例bytes完全相同，原oracle與actual留史、不計有效拒絕。另凍結真正刪去保存baseline歷史token的反例並保存明確拒絕。初版新READ誤把after-retry input token慣例套到原resume，已改核保存union；舊input[]及全部歷史token原樣保留，未改數值producer。actual留初版，final綁最後source。8唯一方法首次全PASS，不累加build／案例／歷史PASS；fresh process禁數值imports與網路、Journal同內容／衝突／READ／UNKNOWN、完整Context及input不變、三份舊版控制精確相同皆有證據。
+
+唯一Codex沿里程碑自審、原分支正常保存及GitHub固定SHA讀回；起始9d7931c4dad658044385751533736f216423a91f且淨。無人工操作或例行Work驗收；新choice/0.2未接research_operation／supplement／比較或成交，下一步先核既有研究操作接線，不增同類READ工具。70/2/其中8/真實合格0、1101 UNKNOWN、正式false／主壓力null、來源parents／圖形人工與R2/F／原未支援及未讀原件保持。下方歷史完整保留。
+
+---
+
+# 2026-10-29 最新有效｜單位感知全換有界搜尋0.4
+
+入口股票系統M1_v0_18/capital_research/unit_full_search_20261029/README.md、CONTRACT.md、REPORT.md及actual。原quantity_candidates.generate新增明示0.4／full_search資源來源與時點；沿原allocation共用guard／寬鬆界及完整build/core/resume/batch/unit閘門逐點檢查合法新增量，不取整舊94端點、不假設單調。舊0.1／0.2／0.3當輪控制原樣相等；core／execution／continuity／ledger／成本風險公式保持。
+
+主例A100/B0/C2及權利、現金1000/reserve100保持；單位A2/B3，依序111/108/105/102/99/96拒絕後得B93，仍WAIT_SETTLEMENT_REASSESSMENT。非單調0拒/1及2可/3拒得2；UNKNOWN／舊觸發不能借其他family放行，0新增只標退出留現金，不冒B買進資格。原B3新增單位2可達97，限制交易增量不改原持股；完全不整除A／限售／資源超限明確拒絕，較高未支援點則最大未知。
+
+22份事前凍結input/expected符合保存actual，三版控制及完整Decimal／input不變／未來隔離／原帳latest與全部token核對。8唯一方法最終全過；初批6 PASS/1 ERROR/1 FAIL屬測試封套與UNKNOWN路由斷言錯誤，原件留史，修正測試後只重跑兩方法PASS，不加案例／中間批／舊PASS，不改oracle。新候選無simulate／成交；checkpoint仍重用原帳校驗，不冒ledger0。唯一Codex依里程碑自審、正常commit/push與GitHub固定SHA讀回，起始d8306380f55898b153d06a853ee9e69080272fce且淨；無人工操作或例行Work驗收。
+
+本項只完成合成數量機制；0.4下游選擇／回放未接，不可刪domain降版。尚未支援混合通道／容量撮合、R2/F、來源認證、自動解除衝突與原未支援帳務，不預定策略／比例／勝者。70/2/其中8/真實合格0、1101 UNKNOWN、正式false／主壓力null、來源parents／圖形人工及未讀原件保持。下方歷史完整保留。
+
+---
+
+# 2026-10-29 最新有效｜外部明示交易單位候選數量域0.3
+
+入口股票系統M1_v0_18/capital_research/quantity_domain_20261029/README.md、CONTRACT.md、REPORT.md及final。原quantity_candidates.generate新增顯式0.3／quantity_domain，舊0.1／0.2保持；A／B單位、通道、來源／基底／調整版本、account及available_at外部明示，不預設1000、不定N／比例／策略。先列合法交易變動量再套原1024上限；單位不套既有股數／權利，HOLD保持原股，EXIT不整除即拒絕。FULL只重用原端點；不合單位明標NOT_IMPLEMENTED，不取整或冒稱單位最大量已求得。
+
+人工9格、A1000單位1000僅兩格／無嚴格部分量、空域／端點及全部原財務／批次閘門有證據。33原凍結案中32符合預期；一份B3 fixture錯改完整checkpoint持股，被原帳防線正確拒絕，input／expected／actual留史，另存合法獨立合成opening B3加2達5正例，不重設原帳或放寬防線。原合法checkpoint之origin2180／latest／全部token保持。8唯一方法最終全過，不加中間批／案例／舊PASS；unit1與舊版、三種未來／完整Context／input不變及主例無成交／IO控制通過。原core／allocation／ledger／風險成本公式未改；continuation仍重用既有原帳校驗，不冒所有請求ledger呼叫0。
+
+自審另補未知時點的明確ValueError，修前AttributeError原件封存，未補日期；actual／validation留初版，final／validation-final／tests-final.log綁現行source。唯一Codex依里程碑自審、原分支正常保存及GitHub固定SHA讀回，起始3dfe5b222f47f0798876687808eac98daaabe6f7，本地／遠端一致且淨；無人工或Work例行驗收需求。本輪不接0.3下游成交／回放，單位感知全換求解、混合通道／容量撮合仍未支援。下一個具體工程邊界是單位約束下的機械全換端點，另有限授權後才做；不增READ包裝。70/2/其中8/真實合格0、1101 UNKNOWN、正式false／主壓力null、來源parents／圖形人工及原未支援／未讀保持；下方歷史完整留存。
+
+---
+
+# 2026-10-29 最新有效｜既有行動評估明示匯入保存0.1
+
+入口股票系統M1_v0_18/capital_research/action_evaluation_store_20261029/README.md、CONTRACT.md、REPORT.md及actual。新增action_evaluation_store.import_evaluation／read_evaluation與明示IMPORT／READ CLI，完整來源／既有評估及外部pinned IDs一份record綁定；直接重用原Journal／_persist，不另建store／四階段協調器。七個純來源校驗函式原樣抽到saved_action_source，原evaluate_saved本文／公式保持；IMPORT及READ不載入評估器，也不計成長／回撤／帳務或回放。
+
+16凍結案（5保存／11拒絕）及8功能唯一方法首批通過；提交前EOF格式／指紋檢查失敗另留史，更正後只重驗來源指紋方法通過，不加歷史PASS或案例數。同內容重送不改bytes／mtime，異內容／錯來源／截止／latest／token／reserve／資格／schema拒絕；原帳／權利與全部原件保留。寫入／讀回不確定為UNKNOWN，只明示READ核對；缺檔NOT_FOUND、破損UNREADABLE，不修復。新程序禁producer／評估器，READ再禁寫檔／save／mkdir／網路，完整Context與input不變控制通過；數值評估及交易帳務呼叫0，無舊suite／producer或新資料。
+
+保存狀態與evaluation_status分開，REFUSED可保存但null／正式false保持；拒算原件沒有producer input attestation，只保存EXPLICIT_REFUSAL_ASSOCIATION_NOT_REEVALUATED明示配對，不認證原因或所有重簽造假。唯一Codex依里程碑自審、原分支正常保存及GitHub固定SHA讀回，無人工操作或Work例行工程驗收需求；起始a33bfc416881e58e390c3086523ccf0d6a743a07，本地／遠端一致且淨。本項結清不再增加相同保存／READ工具；未定買賣規則／期間／比例及市場來源留回研究。70/2/其中8/真實合格0、1101 UNKNOWN、正式false／主壓力null、所有來源parents／圖形人工及原未支援／未讀原件限制保持；下方歷史原文完整留存。
+
+---
+
+# 2026-10-29 最新有效｜完整明示行動全帳戶評估轉接0.1
+
+入口股票系統M1_v0_18/capital_research/action_metrics_20261029/README.md、CONTRACT.md、REPORT.md及final-corrected。新action_account_metrics.evaluate_saved讀完整原action_request／action_result與可選一份同原單續播；沿lifecycle純READ及原account_metrics共用檢查／成長／回撤／恢復公式，不重播帳務、決策或重建checkpoint。原CLI只增明示--source-kind action，預設quantity不變；不改原帳、來源、策略／成本公式或歷史schema。
+
+29凍結案及兩個自審反例最終符合預期，8唯一方法通過，不累加中間批／歷史PASS／案例。自審兩漏檢（續播換原close proof、衍生基底與原事實來源不符）均先存input／expected／修前actual後補精確綁定；錯誤碼不一致的tests-reviewed.log FAIL保留，未改oracle，tests-corrected.log最終全過。initial／after-final／final原樣留史；只有final-corrected綁現行source。原本金1180／reserve100、權利、latest／全部token保持，父輪只核對，最後8日日帳一次評估；已記錄費稅不再扣，期末假想退出成本另列。部分前綴／缺資料／過早可知與來源帳戶錯配拒算、statistics=null。
+
+舊quantity完整結果精確相同，完整Decimal／input不變、fresh process禁producer／IO／網路與CLI明示路徑通過；帳務／執行／續播／決策呼叫0，無舊suite／真實producer或新行情。唯一Codex依里程碑自審、原分支正常保存及GitHub固定SHA讀回，不需人工或Work例行驗收；起始64d2bd5dc17012743b07f8ef15bb8771ca2c1a7b，本地／遠端一致且淨。只支援完整明示合成原窗及一份續播，不證來源真偽／每筆分錄或策略。70/2/其中8/真實合格0、1101 UNKNOWN、正式false／主壓力null、來源parents／圖形人工及未讀原件限制保持。後續若授權先核既有保存流程是否可另存本評估，不重建協調器或發明政策；下方歷史完整保留。
+
+---
+
+# 2026-10-29 最新有效｜已結清原帳明示減碼／退出0.2
+
+入口股票系統M1_v0_18/capital_research/explicit_sell_20261029/README.md、REPORT.md、CONTRACT.md及initial／controls。cash_action.evaluate與cash_action_execution.execute新增顯式0.2 SELL契約；原0.1 HOLD／BUY完整保持。從已結清、無活單／應付的完整原checkpoint，外部明示指定股、減碼／退出股數、理由、委託、tape及日曆；原core／execution／continuity／ledger與財務公式未改，不選時點／比例或建單。拆單總量限核准量，BUY／別股／改checked／交叉版本拒絕；退出意圖不等已成交，退出一股不等全帳現金。
+
+事前77項凍結／17保護原件／兩份舊source快照完整；原環境中斷未寫入patch，恢復先核原件另留診斷，未重建oracle。23凍結案與另存錯股單控制符合預期，8唯一方法首次全過，不累加舊PASS／案例。減B3終現金996.80/B4/C4；退出B7終1076.72/B0/C4；拆3+4費稅按原逐fill，終1074.72。B20退出意圖只成7，剩13沿原單續至1/12交割／到期，終816.46/B13/C4；逐明示觀察、逐日、完整execution／checkpoint與同root一次執行相同。原本金1180、reserve100、80現金權利／C2股份權利、latest、fact／重評與9舊token保留，賣出應收不提前當現金。
+
+完整Decimal／未來隔離／input不變／API無IO網路控制通過；三份舊0.1結果完整相同，不重跑舊suite、producer、九路徑或市場回放。initial綁最終source，舊結果只READ。本輪唯一Codex依里程碑自審、正常保存及GitHub固定SHA讀回，無人工操作或Work例行驗收需求；起始da8a9bf4e95898c6e9d95369c8cbc141b27bfe74，本地／遠端一致。未擴活單新決策、限售解除、信用、未知期初款、R2/F／來源認證／市場策略；70/2/其中8/真實合格0、1101 UNKNOWN、正式false／主壓力null、來源parents／圖形人工及Astra／Work／救援未讀保持。後續先核既有明確優先順序，不增相同READ包裝或發明政策。下方歷史原文完整留存。
+
+---
+
+# 2026-10-28 專案級目標增補｜純價量、市場環境與資金閉環
+
+使用者確認後續建置須以「當時可知的圖形／價量辨識全市場可買機會 → 同一期初資金比較續抱、換股、部分換、現金 → 市場轉弱時研究降曝險／停止同類新倉 → 以完整帳戶與樣本外結果驗證」為方向。詳細需求、冠西電與2026年7月市場案例、時序及未完成界線見 [2026-10-28 專案級目標](docs/strategy-research/20261028_price_volume_market_regime_capital_loop.md)。這是研究與驗收目標，未核准新策略閾值、比例或自動交易，現有未完成狀態保持。以下保留歷史原文。
+
+---
+
+# 2026-10-29 最新有效｜新批部分成交後重用原續播0.1
+
+入口股票系統M1_v0_18/capital_research/partial_batch_resume_20261029/README.md、REPORT.md、CONTRACT.md及actual。已結清原帳接新B-step2明示批20，改用既存1/9容量7 tape另存模型，保留完整root_job.continuation前身與原限價／期限／日曆，直接重用原execute／resume_orders；產品程式改動0。舊B7與舊到期剩13不變，新批只成7、B合計14，新單剩13／預留261.65039／應付141.14沿原帳續播；一般reserve100、80現金權利／C2股份權利及本金1180保持。1/12只交割一次並到期，現金797.72/B14/C4、應付0／新單預留0，無新成交或新決策／token。
+
+一次續播及1/9→1/10→1/12兩段續播均與同root完整一次執行的共同三個觀察／全部日帳／完整execution及checkpoint相同；root起點1/8前身與外層當前水位1/9／1/10分開，latest、兩決策／12token／fact／原單及fills完整保留。錯latest、刪root前身、容量500錯路徑、重複fill與缺空日宣告五反例皆尾段前拒絕。4唯一方法首次全過，不加歷史PASS或案例數；所有input／原件／oracle／source與JSON讀回保持，無失敗或修補。原已存續播只READ；數值環境／未來證據沿未改source重用，無舊suite／producer／quantity協調器或新增行情／日曆。
+
+尾段觀察0係完整明示合成path的1/12空日宣告，缺宣告仍拒絕。本例只驗交割及剩13到期，未證剩13再次成交；不補行情、不覆寫舊B20全成actual，不預定策略或比例。起始5c6d04b487375f85f611ef34cc2fdbdc0037e583本地／遠端一致且淨，唯一Codex沿里程碑自審／正常保存及GitHub固定SHA讀回，無人工操作／Work例行驗收需求。本項結清不再新增相同包裝；買賣觸發／期間／風險仍需Work與使用者研究。70/2/其中8/真實合格0、1101 UNKNOWN、正式false／主壓力null及全部來源／圖形人工保持，原未支援與Astra／Work／救援未讀不變。無代理／worktree／新分支、bootstrap／市場回放／部署交易付費訊息；下方歷史完整保留。
+
+---
+
+# 2026-10-29 最新有效｜續播結清後接既有明示行動0.1
+
+入口股票系統M1_v0_18/capital_research/settled_resume_action_20261029/README.md、REPORT.md、CONTRACT.md及actual。原1/8續播結清checkpoint只READ，直接接cash_action.evaluate/execute；產品程式改動0，無新轉接／READ／協調器。原本金1180／現金858.86／reserve100、B7/C2及80現金權利／C2股份權利完整承接；原單剩13到期不復活。兩互斥正例：HOLD無新成交、終現金938.86/B7/C4；既有新獨立B-step2明示B20，只新單成交20、終現金537.46/B27/C4。1/9新應付401.4直到原1/12才結，原tape／日曆／窗口不增。
+
+先凍結七份精確input/expected/source，後保存checked及execute actual；兩新行動simulate各1，舊觸發／假首次／reserve／錯latest／仍活單五反例simulate0。4唯一方法首次全過，不加歷史PASS／案例數；逐日帳／原prefix／完整前身、fills／closed order／權利／fact／重評收據／latest與9舊＋3新token均核。原到期事件在完整前身回查，不冒新execution_events已攤平所有歷史。原續播／兩輪producer與舊suite均0，數值環境／未來隔離沿未變source證據重用，不增驗證主張。唯一Codex按里程碑自審、正常保存及GitHub固定SHA讀回，無人工操作／Work例行驗收需求；起始89df50bc5f5a2a044585938a3976e723b2c5108e，本地／遠端一致且工作區淨。
+
+本項完成不再新增包裝；下一具體工程邊界可先核新批再次部分成交後，含前輪歷史root_job能否直接重用原續播。本輪未擴做，也不把1/12末端補行情。策略／數量及市場來源仍由Work與使用者研究；70/2/其中8/真實合格0、1101 UNKNOWN、正式false／主壓力null與全部來源parents／圖形人工保持。未知期初款、限售解除、R2/F、來源認證及完整分叉未支援不變，無市場回放／producer／資格重算／九路徑／UI/Android／樣本外／bootstrap或部署交易。Astra／Work原件／救援仍未取得未讀。下方歷史完整保留。
+
+---
+
+# 2026-10-28 最新有效｜原未完成委託與未交割款跨輪續播0.1
+
+入口股票系統M1_v0_18/capital_research/standing_orders_20261028/README.md、REPORT.md、CONTRACT.md及after-final。新增純execution_continuation.resume_orders，完整root_job／原checkpoint／latest／明示合成完整path綁定，先重建原歷史核對，再以原execution私有carry共用原迴圈只處理尾段。原單ID／限價／期限／剩餘、fills、應收應付、其他股份權利、一般reserve、fact／重評歷史與全部token保存，不重新送單／決策或重設本金。費稅／ledger／core／continuity／來源與風險公式未改；新決策入口的活單／應付拒絕仍保留。內層execution0.8／0.9及checkpoint0.7／0.8不遷移，實作revision0.10.1，外層新契約0.1。
+
+主例B7／剩13及141.14應付，交割後原單再成交13、261.26應付再按原日曆結清，原本金1180、reserve100、80現金權利／C2股份權利各到位一次，終現金677.60/B20/C4。八主正例逐明示觀察／每日列／完整終態均等於未改引擎一次執行；兩次續播及無tape水位取消、較晚公布保留B7、accepted／rejected收據與原資本2230的賣出應收控制另存。十六主拒絕及未收到review反例拒絕；缺段／空日完整性、錯前身／原帳／單／fills等不推定無成交。需要新決策的條件單仍等待，尚未收到的review不因自稱較早就可放行。
+
+最終9唯一方法通過，不累加初批8、歷史PASS或合成案例；兩必要舊明示行動完整結果相容。完整Decimal／未來尾段／input不變／無IO與無新批控制通過。舊歷史fixture固定review checkpoint綁定不符的intake失敗留史，另名正確綁定，不改oracle；after-final才綁最終產品source。唯一Codex沿里程碑自審／正常保存／GitHub固定SHA讀回，無人工操作、不預設Work例行驗收。基線bd76bb4d3b31d7d3d87acef324f18c59ce6e66f7，原工作區起始全淨，無代理／worktree／新分支。
+
+本版只續原已核單的完整明示合成原窗，任意外部活單／缺歷史／未知期初應付、限售解除、尾段新review／新決策／新批、R2/F、來源認證及完整分叉仍不支援；不擴自動協調器。逐時只指明示觀察點與日終，較早保存限制的observed_at可與一次執行不同，不能推定所有任意切點收據bytes相同。70/2/其中8/真實合格0、1101 UNKNOWN、正式false／主壓力null、全部parents與圖形人工保持；無市場回放／producer／資格重算／九路徑／UI/Android／樣本外、行情／bootstrap／部署交易。Astra／Work原件／救援仍未讀。下一項若授權，先核已結清續播checkpoint能否直接回既有明示行動入口，無缺口就重用，不先增建工具。下方歷史原文完整保留。
+
+---
+
+# 2026-10-28 最新有效｜同原帳兩輪明示合成案例0.1
+
+入口股票系統M1_v0_18/capital_research/cash_two_rounds_20261028/README.md、REPORT.md、CONTRACT.md及actual。既有cash_action.evaluate/execute直接支援，產品模組改動0，無新協調／READ／並列工具。第一輪opening-B20保存結果只READ不重跑；1/8已結清、無活單／應付的原checkpoint接第二輪1/8 17:00明示追加，原1/9 tape／日曆／origin／close proof全文重用，窗口仍止1/12，新增行情0。
+
+原始本金1180與當期淨值1178.6分開；第二輪B20成本401.4，1/9原現金598.6／應付401.4／嚴格可用197.2，reserve100另留，1/12原80權利到位及C2可交易後現金277.2、B40/C4，淨值1177.2僅為合成成本對帳。原opening、第一輪逐日前綴／fills／orders、latest／fact sources及全部9舊token保留，3新獨立token加入共12；不把原B-event或假FIRST_ENTRY變新批。六個第二輪分支互斥，正例simulate1，其餘舊觸發／假首次／reserve／應收／錯前身皆執行0。
+
+先存精確input/expected/來源，再RUN；4唯一方法首次全過，不加第一輪歷史PASS／案例數，舊suite、數值環境／未來隔離控制未重跑。無失敗、勘誤或產品修補。基線5d41b937144a239a64e016c7b8accde20c49b3ae，唯一Codex沿里程碑自審／原分支正常保存及GitHub固定SHA讀回，無人工操作或Work例行工程驗收需求。
+
+本輪範圍已完成、未見必修程式缺口，不再為繼續新增包裝。真實②仍需Work與使用者研究最少比較輸入及來源證明，不由Codex定N／比例／政策，假想帳不解除市場來源缺口。1101 UNKNOWN、70/2/其中8/真實合格0、正式false／主壓力null、來源0.10所有parents／圖形人工及原未支援保持；活單／期初應付不中斷續接、R2/F、來源認證與完整分叉不擴張。無市場回放／producer／資格重算／九路徑／UI/Android／樣本外、新行情／bootstrap或部署交易。Work原件／Astra／救援仍未讀。下方歷史原文保留。
+
+---
+
+# 2026-10-28 最新有效｜明示行動接原合成執行0.1
+
+入口股票系統M1_v0_18/capital_research/cash_execution_20261028/README.md、REPORT.md、CONTRACT.md及actual。新增cash_action_execution.execute，綁完整cash_action input／checked結果與明示full ID，沿原evaluate重驗外層資格再接原simulate／make_checkpoint；不是READ重算或只看core feasible。錯原結果／metadata／輸入、遭拒但core可行、超量拆單／SELL或HOLD夾單均在simulate前拒絕。原origin／close proof全文綁定，latest取原checkpoint；委託／tape／日曆全部外部明示，不生成股數、委託、策略或新帳。
+
+原A可保留用現金買B，或沿已退出A的原帳接買B；原資本2180／reserve100、995賣出應收與80現金權利／C2股份權利完整承接。部分B7／剩13活單及預留261.65039保留；較晚已知撤銷／到期才關13，B7不消失。27份新input/expected先凍結，7唯一方法首次全過，不累加案例／控制／舊PASS；部分未交割手算把available當cash，原稿留史另附欄位勘誤，不改帳務。逐日現金／應付／權利／NAV及舊fills、closed orders、latest、全部token／fact sources承接有證據。已結清checkpoint接原HOLD通過，部分活單仍NOT_IMPLEMENTED。
+
+未來原ledger尾段不同不改較早numeric_result，來源完整性ID分開；正常／惡劣完整Context及input不變，無IO／網路／quantity生成，合成simulate及ledger為必要呼叫，不冒0引擎READ。原cash_action/core/execution/continuity/ledger/quantity/②全部未改。基線5dd3aab979d5442486442344b8e8ff476e2b75d8，唯一Codex按里程碑自審／原分支正常保存/GitHub固定SHA讀回，無人工操作或Work例行驗收需求。
+
+本輪只完成一項明示行動的原合成執行接線；多輪使用只重用已支持的原窗／已結清checkpoint，未另建協調器。活單／期初應付不中斷回放、限售釋放、八行動dispatcher、整張域、R2/F／來源認證與完整分叉矩陣不擴張；0.9同單複合承接未新增全面驗證。市場回放／真實producer／資格重算／舊suite／九路徑／UI/Android／樣本外均0，不補1/13或市場RAW。1101 UNKNOWN、70/2/其中8/真實合格0、正式false／主壓力null、來源0.10所有parents／圖形／人工與原未支援保持。N／比例／風險及市場政策仍Work與使用者決定；Work原件／Astra／救援仍未讀。下方歷史原文保持。
+
+---
+
+# 2026-10-28 最新有效｜明示現金／退出後原帳行動接線0.1
+
+入口股票系統M1_v0_18/capital_research/cash_action_20261028/README.md、REPORT.md、CONTRACT.md及after-final。新增純cash_action.evaluate，只核外部明示HOLD／BUY_FROM_SETTLED_CASH；不經正持股quantity產生器，不生成／選擇數量、委託或成交。現金、A已退出及原A仍在皆可核；其他持股／權利不清零。完整checkpoint沿原validate/account_at_checkpoint/resume取得原帳、精確latest、fills／closed orders、fact/attempt歷史及全部token；無活單／期初應付才續接，原限售拒絕保持。不能手填帳／token、改source/basis或用應收／一般reserve買進。
+
+FIRST_ENTRY沿原episode核對，退出後不能假首次；有效舊事實可當期review。新批固定C、本股獨立觸發且全部舊token去重，共量柱／跨股／舊事件不通過；外層拒絕不能沿raw core診斷升合格建議。完整輸入與core metadata移完整性區，未來撤銷不改早期research。新行動无simulate／quantity generation／市場回放；checkpoint核對仍用原ledger，不冒帳務呼叫0。
+
+先存契約／input/expected/source，再準備4份原合成job checkpoint，31份action oracle凍結後才實作。after-final 31案符合預期，7唯一方法首次通過，不累加初版／準備／歷史PASS。原本金2180／reserve100與995賣出應收、80現金權利及C2股份權利沿原帳到位；無新本金。初版手算漏既有整元稅進位，原expected留史另作勘誤，費稅公式／31案oracle不改。初版source／actual保留，最終source以after-final綁定；缺token／改opening／較晚可知close另存邊界。
+
+本輪最低d77c244d122af879b84cd85d6a9f7ac3aea0149e，原唯一Codex沿功能里程碑自審、原分支正常保存/GitHub固定SHA讀回，無人工操作、不預設Work例行驗收。重大複核集中原帳權利／reserve交割／latest及token／首次與新批／未來隔離。八行動完整dispatcher、明示行動接原合成執行、整張域及市場數值回放尚未實作；原core/quantity/execution/ledger/②/舊成果全不改。N/比例/政策/風險仍Work與使用者確認。1101 UNKNOWN、70/2/其中8/真實合格0、正式false/主壓力null、0.10全部parents／圖形／人工及原未支援保持。Work原件／Astra／救援未讀，不擴6488、R2/F、來源認證，不新抓來源、舊suite／producer／UI／bootstrap或部署交易。下方歷史原文完整留史。
+
+---
+
+# 2026-10-28 最新有效｜②主線案例情境適配0.2
+
+入口股票系統M1_v0_18/rotation_research/market_case_v2_20261028/README.md、REPORT.md、CONTRACT.md及final。只完成能力核對第1項：新增market_case_v2純情境與前綴、外部IO沿原load_saved/Journal；不改舊0.1/原件/來源/帳務，不另建回測或READ。日期/價格/角色為明示輸入；②4/9主線分開①4/9開25.50。4/10普通開25.35核庫內RAW，零股首筆25.60只據Work摘要，原始首筆來源/時刻/容量未知，均非成交。選擇只明示單一素材ID，不自動選或批准模型。
+
+③圖形確認不自動加碼；24.80本例守位不自動全退。④4/15、4/17後續新低尚未完成、⑤4/22反證逐時保存；前綴只投影有日期類型化角色，不複製含未來內容的整段來源原文。B截至4/15圖形機會與局部32.85可保存，原35.50另保留，局部參照不猜原K日；6488不擴入。兩未來價格/反證變體及未來無效模型價不改較早prefix；完整來源身分另列，歷史available_at/role-known仍null、usable signals空，不冒當時正式可交易。
+
+先凍結精確input/expected/正反例/來源指紋，再實作。13個最終準備診斷符合預期；8唯一方法首次全過，不累加控制/初終批/舊PASS。初次6488已被較早主線綁定拒絕，補前置範圍校驗得到明確範圍拒絕，原source/actual/oracle留史；final才綁最終source。fresh context1、qualify/replay0，無IO且caller/DefaultContext保持。119舊原件/資料指紋保持，舊0.1不遷移。
+
+基線e60649162241b5287496ee7cc66472301a710c29，唯一Codex沿里程碑自審、原分支正常保存/GitHub固定SHA讀回；無人工操作、不預設Work例行驗收。本輪無市場回放/帳戶重建、八行動dispatcher、現金續接或整張數量域；第2項若要開工須另明示。本金N/股數/比例/預留/期間/風險/概率/排名及執行模型全null，K/X4/R4_X5/X5未批。Work原件v0.24/JSON0.16未取得未讀，只保存使用者摘要；Astra/救援未讀。source0.10全部parents/coverage INCOMPLETE、原1101 UNKNOWN、70/2/其中8/真實合格0、正式false/主壓力null及原未支援保持，無舊suite/producer/九路徑、新來源/私人檔案、UI/Android/部署交易。下方原文完整留史。
+
+---
+
+# 2026-10-27 最新有效｜首個明示市場案例準備/資格接線0.1
+
+入口股票系統M1_v0_18/rotation_research/market_case_20261027/README.md、REPORT.md、CONTRACT.md及after-final。新增market_case純準備/當期前綴與market_case_io明示來源保存入口，不新增READ工具、帳務或策略。使用者指定1101 3/12 high25.20、4/8 close25.40、4/9 close25.10及2884 2/26 high35.50、6/22 close35.80與保存RAW相符；B首個嚴格突破在完整保存前綴核對，缺報價仍UNKNOWN。四月不引用六月，三種未來尾段不改四月prefix；source完整身分另列，歷史available_at仍null、usable signal空，不倒填擷取時間或升正式主壓力。
+
+三路共同期間/全新假想現金帳/成本交割模型/全部提供外生觀察逐欄綁定，保留同opening與完整模型fills，不六月重開本金。原案例缺參數原樣null，AWAITING_EXPLICIT_INPUT；10000/10股僅接線控制，非採用值。完整控制沿原study_input/來源0.10及所有parents qualifier仍REFUSED，正式0.4父層五事件及7/1淨分配null全保留；沒有數值dispatch。接線完成僅指準備/綁定/拒算；市場帳務實例未執行、策略未驗證，不能冒全帳連續資金回放已證。
+
+after-final 18項準備診斷、8唯一方法首次全過，不累加歷史或中間階段。錯帳戶/市場/模型、四月借六月、重設opening及重標synthetic等拒絕；自審發現quote-0雖存在但月份錯，原輸入留史、正例另存，實際拒絕有證據。fresh source qualify3、ledger/舊producer0，Context/原件保持；IO沿原Journal保存讀回。根actual及summary屬初始source，after-final才綁最終source，舊證據不覆寫。
+
+基線74e7c8e07d9d2446376305ace68b56c76f6732f3，已含Work最低3b472ae及全部後續；唯一Codex依里程碑自審、原分支正常保存/GitHub固定SHA讀回，不預設Work工程驗收。下一步Work只確認本例外部研究參數/意圖及來源證明範圍，不替使用者選比例/門檻/勝者。無私人檔案或下載上傳需求；不抓新來源/跑窗口producer/舊suite/九路徑/市場績效/部署交易。1101舊UNKNOWN、70/2/其中8/真實合格0、正式false/主壓力null及原未支援保持，Astra/救援未讀。下方原文完整留史。
+
+---
+
+# 2026-10-27 最新有效｜獨立公司行動帳RUN數值環境隔離0.1.1
+
+入口股票系統M1_v0_18/rotation_research/ledger_context_20261027/README.md、REPORT.md、CONTRACT.md及before/after。只重用已保存合成input/result：修前原現金分配窄指數Overflow、嵌入式action_cli.main RUN於既有preset Clamped（無保存record）；先凍結input/expected/source，actual分版本留史。初始證據準備路徑錯誤及前置失敗log保留，尚無數值呼叫；不是修前帳務actual。
+
+只固定完整公開action_ledger.replay的標準50位Context；原本體原封移入_replay_checked，AST核一致，帳務公式/來源/資格/CLI/Journal/compare不改。revision0.1.1，schema rotation-action-ledger/0.1保持，舊READ不重算。修後13個API控制及兩個RUN控制符合原件/拒算預期；6唯一方法首次全過，不累加控制/子程序/舊PASS。三份新舊READ禁ledger import/寫入仍全文相同，fresh caller/DefaultContext/input保持；一次原continuation execution完整相同，simulate1/ledger12，無generate/replay_sequence/save，不冒READ。
+
+基線43bc493fa592ced26202116b22337d66183313f1；唯一Codex沿里程碑自審及原分支正常commit/push、GitHub固定SHA讀回。不預設Work例行驗收、無人工操作。不修其他helper或宣稱所有入口已隔離，沒有新缺口就停止同類盲測；下一項僅依既有明確優先順序確認，未定策略仍由Work/使用者討論。1101 UNKNOWN、70/2/其中8/真實合格0、正式false/主壓力null、全部來源parents/圖形/人工及原未支援保持。無真實producer、舊suite/九路徑、新來源行情、bootstrap/UI/Android/樣本外/部署交易；Astra與救援未取得未讀。下方原文完整留史。
+
+---
+
+# 2026-10-27 最新有效｜C原單重評／一次再評外層數值隔離0.2.1／0.3.1
+
+入口股票系統M1_v0_18/capital_research/c_review_context_20261027/README.md、REPORT.md、CONTRACT.md及before／after-review-only／after。先凍結兩份source、完整input／expected／actual指紋，再定向重現。修前重評Overflow、再評Overflow／Inexact；先只修重評，中間actual證明再評仍在自己的前置／最終checkpoint失敗，才修第二入口，不把相依缺陷當兩份獨立證明。
+
+只固定兩公開完整標準50位Context，revision重評0.2.1／再評0.3.1；內部本體、core／execution／ledger、原單數量／family／觸發、帳務／資格／策略全不改，原schema0.1／0.2／0.3及decision／execution0.9／checkpoint0.8保持。after才綁最終source：十主控制與十二邊界全文相符原件，六唯一方法首次通過，不累加歷史PASS、控制／子程序或53個頂層診斷請求。
+
+原本金1430／reserve100、r1-B剩餘20、B-event／C及new_tokens=[]保持；原帳／權利／fills／latest／全部token回連，第一次REJECTED不消失或變accepted record。UNKNOWN仍不買、部分7後13按原已知撤銷取消／期限到期，錯單／前身仍停；不是新批或保證成交。fresh主例各必需內部quantity1／generate1，重評simulate2／ledger34、再評simulate3／ledger66，save0；不冒無引擎READ。caller／DefaultContext／input保持，原lifecycle READ禁引擎仍全文相符，不新增READ工具。
+
+基線c8d95bca07057b05f038ca1c906635331ba2e0df；原唯一Codex沿里程碑自審、正常保存及GitHub固定SHA讀回，無人工操作、不預設Work驗收。只八個既有保存請求，無整套C矩陣／legacy0.1 B/E／完整未來路徑驗證，不宣稱全換／獨立checkpoint／ledger／舊trend入口全面隔離。下一項僅收斂剩餘獨立入口是否影響現行明示流程，沒有實際缺口就停止同類修補，不逐helper盲測。1101 UNKNOWN、70／2／其中8／真實總淨合格0、正式false／主壓力null、來源parents／圖形／人工及原未支援保持；無真實producer、舊suite／九路徑、新行情來源、bootstrap、UI／Android／樣本外或部署交易。Astra／救援未取得未讀，策略仍由Work／使用者決定。下方原文完整留史。
+
+---
+
+# 2026-10-27 最新有效｜直接execution.simulate數值環境隔離0.9.1
+
+入口股票系統M1_v0_18/capital_research/execution_context_20261027/README.md、REPORT.md、CONTRACT.md及before/after。重用原兩輪execution_job／execution／checkpoint，先凍結input／expected／source再直接simulate，不跑quantity producer。修前兩例各Inexact／Overflow，續接ROUND_UP另改報酬尾數／result_id，成交／現金／持股不變；其餘五控制相符。stack證明例外在決策返回後的外層ledger核對。
+
+只固定simulate公開完整標準50位Context，revision0.9.1／schema0.8及同單0.9保持，_simulate本體／core／ledger與帳務、成交、風險、資格公式全不改。十組修後全文及身分相符；三拒絕變體×normal／preset前後均原ValueError。六唯一新方法首次通過，不加歷史、前後控制或36次有限診斷。
+
+額外核原本金2230／reserve100、逐日prefix／journal／原單歷史／權利／latest及全部token。首輪A20／B7部分成交、A30／B13到期不復活；後輪只B1，現金80及A10各到位一次，原三筆費稅4，終點現金1115.640／A90/B8/C2／應計2225.640。首輪未完結的ledger缺欄及null保持，總淨仍不合格，不以終點相等推定中途無重用。兩個原checkpoint相容；fresh各simulate1、ledger11／12、risk各4，quantity producer／generate／save各0，input／caller／DefaultContext保持。
+
+基線cef4d09f08d9d0850adb4c03a9eac651146cded3；原唯一Codex沿里程碑自審、正常保存及GitHub固定SHA讀回，無人工操作、不預設Work驗收。舊READ不重算，未跑同單0.9完整矩陣或全部未來前綴矩陣；其他獨立C重評／再評、全換及帳務入口不宣稱全面隔離。1101 UNKNOWN、70／2／其中8／真實總淨合格0、正式false／主壓力null、全部來源parents／圖形／人工及原未支援保持。無舊suite／九路徑／真實producer、新行情來源、bootstrap、UI／Android／樣本外或部署交易；Astra／救援未取得未讀。策略仍由Work／使用者決定，下一項可有限確認C兩公開外層，不在本輪擴張。下方原文完整留史。
+
+---
+
+# 2026-10-27 最新有效｜直接決策及完整續接數值環境隔離0.9.1
+
+入口股票系統M1_v0_18/capital_research/decision_context_20261027/README.md、REPORT.md、CONTRACT.md及before/after。取既有完整回放兩輪的原決策參數直接decide／resume_decision，不重播市場；先凍結input／expected／source，再修前actual。預期decision是原execution保存欄位，metadata按原契約綁原input／checkpoint，明示投影、不冒另存過wrapper或用新RUN填oracle。
+
+修前只有兩個狹窄指數Overflow，其餘八組（含Inexact）相符；resume在bind_resume原帳核對中斷，inner_decide0。五拒絕變體normal正確，preset四個被Clamped遮蔽，缺checkpoint仍拒絕；從未因此合格或成交。只固定兩公開入口完整標準50位Context，resume本體原樣移私有helper，revision0.9.1／schema0.8與同單0.9保持，公式／資格／帳務不改。
+
+十組修後全文及身分相符；十組拒絕回到原ValueError，input／caller／DefaultContext保持。六唯一新方法首次通過，不加歷史或控制／子程序。原本金2230與當期估值2226.660、現金1056.660／reserve100／A80/B7/C2／現金80與A10權利、兩筆原部分成交及A30／B13到期餘量、latest與全部token保留，沒有第二帳或重設本金。候選入口相依整合全文相符；未重跑完整同單0.9矩陣，其他直接成交／原單重評／帳務入口不宣稱全面隔離。
+
+基線5f18238d6b2d2e1dec87da22d23a5bd3e1ff351a；原唯一Codex沿里程碑自審、正常保存及GitHub固定SHA讀回，無人工操作、不預設Work驗收。舊READ不重算或遷移；fresh的原帳核對initial0／resume2、simulate／replay_sequence／save各0，不冒全部ledger呼叫0。1101 UNKNOWN、70／2／其中8／真實總淨合格0、正式false／主壓力null、來源parents／圖形／人工及原未支援保持。無舊suite／九路徑／真實producer、新行情來源、bootstrap、UI／Android／樣本外或部署交易；Astra／救援原件未取得未讀。策略仍由Work／使用者決定；下一項可有限確認直接EXECUTE外層，不在本輪擴張。下方原文完整留史。
+
+---
+
+# 2026-10-27 最新有效｜完成原單重評後接回候選的外層數值隔離0.1.1
+
+入口股票系統M1_v0_18/capital_research/after_retry_context_20261027/README.md、REPORT.md、CONTRACT.md及before/after。只定向確認generate_after_retry外層，重用原新觸發／舊觸發／UNKNOWN完整請求、oracle及五組控制；先存原件／預期／source再修前實跑。三例各重現Inexact與Overflow，正常及兩種捨入相符。邊界stack證明都在首次checkpoint ledger核對中斷，內層generate尚未呼叫，不將靜態推導冒actual。
+
+只固定公開外層完整標準50位local Context，revision0.1.1、schema0.1不變，不改_generate本體或任何帳務／資格／策略與下游source。十五組修後全文／身分相符原件，呼叫端及input保持；五唯一新方法首次通過，不加歷史或40次有限診斷。原本金1430與當期估值1425.100分開，現金275.100／reserve100／A60/B25/C2、完整原帳／權利／fills／未成交歷史、latest及12歷史token保持。舊觸發與UNKNOWN、錯前身／token及搜尋超限仍拒絕，全換仍等待交割重評，不新增單或成交。
+
+基線3b472ae8575f4f4f6c5acaf504f29d0ded078bdd；原唯一Codex依里程碑自審、正常保存及GitHub固定SHA讀回，無人工操作、不預設Work工程驗收。fresh程序DefaultContext與caller保持，simulate／replay_sequence／retry／save各0，原ledger核對14次，不宣稱全部帳務呼叫0。舊READ不重算或遷移，其他直接決策／成交／重評與帳務入口的靜態缺口尚未因此解決，不無限拆helper或重跑舊矩陣。
+
+1101 UNKNOWN、70／2／其中8／真實總淨合格0、正式false／主壓力null、全部來源parents／圖形／人工契約及原未支援保持。無舊suite／完整20案／九路徑／真實producer、bootstrap、新行情來源、UI／Android／樣本外或部署交易；Astra／救援原件未取得未讀。Work／使用者仍決定未定策略。下一項可有限確認直接決策及checkpoint續接，不在本輪擴張工程。下方原文完整留史。
+
+---
+
+# 2026-10-27 最新有效｜獨立數量候選入口數值環境隔離0.2.1
+
+入口股票系統M1_v0_18/capital_research/candidate_context_20261027/README.md、REPORT.md、CONTRACT.md及before/after。重用原保存initial與old-trigger的精確請求／generation及五組控制；修前狹窄指數兩案Overflow，其餘八組相符，不冒稱捨入或Inexact缺陷。本次只固定quantity_candidates.generate內部完整標準50位Context，revision0.2.1、原0.1／0.2 schema保持，不改公式、資格、帳務或策略。
+
+十組修後全文／指紋均等於原件，呼叫端／input保持；WAIT仍待交割重評、舊觸發增加B仍拒絕。原帳／現金及股份權利／reserve100／latest／全部tokens沿原checkpoint保持，當期估值2226.660與原本金2230分開。五唯一方法最終通過，共六次執行：首次一個新測試混用估值／本金，原失敗及source留史，只修斷言並補一方法；oracle／production不因該斷言改動，不累加舊PASS或前後控制。
+
+基線9efc3f34ae46df21411ef738a57d61c2fca7a540；沿里程碑原唯一Codex自審、正常commit/push及GitHub固定SHA讀回，無人工操作、不預設Work工程驗收。沒有新委託／成交／回放或行情，舊READ不重算；continuation沿原ledger核前綴，不宣稱所有ledger呼叫0。只驗本兩份schema0.2，不宣稱所有入口全面隔離；下一項可一次唯讀盤點其餘公開數值入口與既有證據，只列實際缺口，不無限逐helper擴張。
+
+1101 UNKNOWN、70／2／其中8／真實總淨合格0、正式false／主壓力null、全部來源parents／圖形／人工及原未支援保持。無bootstrap、舊suite／九路徑／真實producer、UI／Android／樣本外、部署交易。Work與使用者仍決定未定策略，本輪未升觸發、期間、比例或風險門檻。Astra／救援原件未取得未讀。下方原文完整留史。
+
+---
+
+# 2026-10-27 最新有效｜quantity回放數值環境隔離0.1.1
+
+入口股票系統M1_v0_18/capital_research/quantity_context_20261027/README.md、REPORT.md、CONTRACT.md及before/after。只確認原公開replay_sequence的ambient Decimal疑點，先存精確input／expected／原source再實跑；正常及ROUND_DOWN相符，ROUND_UP改場景報酬尾數／保存身分，Inexact／Overflow例外已重現，不把持股現金未變的尾數差異當投資收益影響。
+
+只固定入口local Context為原標準50位／ROUND_HALF_EVEN／完整traps、flags及指數範圍，revision0.1.1、schema0.1不變，不改下游公式或策略。五組修後完整輸出等於修前正常，input／呼叫端保持；5唯一新方法首次通過。逐輪核三筆fill、原資本2230、A10／現金80權利各到位一次、reserve100、未成交狀態／latest／全部token，舊觸發仍拒絕；不是只核終點或只看金額。objects內容定址完整留存，前後版本分開，不覆寫原件或oracle。
+
+基線ea33452d9cc15c626b87748444a4b6377e3d84a3；原唯一Codex依里程碑自審、正常保存及GitHub固定SHA讀回，無人工操作、不預設Work工程驗收。本輪14次有限入口診斷呼叫不是14測試／市場樣本；無舊suite／九路徑或真實producer。原READ／時序／未來隔離接線及所有其他engine保持，獨立候選入口ambient疑點未測，不能宣稱全面修復。Work仍決定未定觸發、期間、風險／資金與分批，待驗假說不接自動選擇／成交。1101 UNKNOWN、70／2／其中8／真實總淨合格0、正式false／主壓力null、來源／圖形／人工契約與原未支援保持；不bootstrap、新行情／來源、UI／Android／樣本外或部署交易。下方原文完整留史。
+
+---
+
+# 2026-10-27 最新有效｜全帳戶評估數值環境隔離修復0.1.1
+
+入口股票系統M1_v0_18/capital_research/decimal_context_20261027/README.md、REPORT.md、CONTRACT.md及before/after。本輪先核GitHub與全專案進度，找到既有account_metrics受呼叫端Decimal影響的具體缺陷；ROUND_DOWN造成不同結果，Inexact trap／狹窄指數造成例外，原正常及ROUND_UP控制相符。先凍結input／expected／原件指紋與source，再重現，未改oracle。
+
+只在原公開評估內建立明示50位／ROUND_HALF_EVEN／標準traps與指數範圍的local Context，revision0.1.1、schema0.1不變。五組修後與原正常完整結果／evaluation_id相同，呼叫端與input保持；5唯一新方法首次通過，不加舊PASS或前後控制。既有評估hook沿用，缺資料仍拒算；原帳／權利／reserve／latest／tokens、公式、READ與所有其他engine不改。舊manifest/source版本屬歷史，不要求現在source等於舊版，也不重算歷史結果。
+
+基線829fd4af25e12f061e49e0c77446ed2ac4528119；原唯一Codex依里程碑自審、正常保存及GitHub固定SHA讀回，無人工操作、不預設Work工程驗收。未確認續抱／移轉觸發、比較期間、風險／資金與分批規則由Work及使用者討論；A整理／B突破回測再推僅待驗假說，不接自動選擇或成交。已知權利阻塞不擋獨立合成修復。1101 UNKNOWN、70／2／其中8／真實總淨合格0、正式false／主壓力null及全部來源／圖形契約保持；未擴其他數值引擎、帳務、R2/F、來源認證／完整分叉。不新增READ／並列工具，無舊suite／真實producer／回放、bootstrap、UI／Android／樣本外或部署交易。下方原文完整留史。
+
+---
+
+# 2026-10-27 最新有效｜明示合成回放完成後另存評估0.1
+
+入口股票系統M1_v0_18/capital_research/evaluated_replay_20261027/README.md、CONTRACT.md、REPORT.md及actual-final/。新evaluated_replay外部RUN沿原quantity回放，保存並讀回原件後沿原account_metrics評估，再另存evaluation與結果；request／replay／evaluation／result分開保存、資格分開。完整才有指標，停止／權利未完整仍保存REFUSED與null；原帳／權利／reserve／latest／全部token、數值公式、舊schema與READ不改。
+
+3個新明示合成RUN符合預期，回放與評估各3次、原simulate2次；不是重跑舊actual或新行情。8唯一方法首次通過，不加歷史／副本／子程序；四階段UNKNOWN、同id不重跑／衝突、缺檔與跨階段錯配有證據。fresh READ禁數值引擎／評估／寫檔／網路；讀出拒算仍拒算。初次監看fdopen誤判在回放前停止，原失敗／空request留史，只修監看、另用runs-final；oracle及production未因診斷修改。
+
+最低基線11c914ad5235682822b2c22e07e00d092ab3b6de；沿里程碑原唯一Codex自審、正常commit/push及GitHub固定SHA讀回，無人工操作、不預設Work。僅明示quantity-replay新入口，保存選擇意圖不因此接成交，不補1/13行情。完整分叉、多程序exactly-once／自動恢復、來源認證、R2/F及原未支援保持。1101 UNKNOWN與70／2／其中8／真實總淨合格0、正式false／主壓力null及來源／圖形／人工契約不變。無bootstrap、真實producer、舊suite／九路徑、UI／Android／樣本外或部署交易。下方原文完整留史。
+
+---
+
+# 2026-10-27 最新有效｜完整合成帳務全帳戶評估0.1
+
+入口股票系統M1_v0_18/capital_research/account_metrics_20261027/README.md、CONTRACT.md、REPORT.md及final/。新account_metrics.evaluate_saved純數值評估完整quantity-replay/0.1，沿原lifecycle READ校驗，再核完整checkpoint／原帳／連續日曲線前綴。只取最後原帳曲線一次，輸出期間應計成長、回撤與恢復／未恢復截尾；原帳期末退出成本及成長另列，不重扣費用，不冒每日能清倉。不重播、補行情、排名或接成交；原帳／權利／reserve／latest／全部token及舊source保持。
+
+7手算曲線、18保存／結構案例（2可評估、16拒算）與5算術反例；本輪8唯一方法通過，自審補來源原價／交易日不得沿舊價後只補6相依方法，共14次方法執行不加歷史。fresh CLI禁引擎／寫檔／網路。final/、cli-final/與time-final/才綁最終source，actual/／after-final/留史。原oracle未改；資本反例由既有較早ORIGIN_CAPITAL_CHANGED防線拒絕，有診斷而非改預期。
+
+最低基線4313799a78d3d319a12da83ad8a0f661126c54cd；沿里程碑原唯一Codex自審、正常保存及GitHub固定SHA原件讀回，無人工操作、不預設Work逐輪驗收。新CLI是明示讀原件計算新評估，不是舊READ重算。僅支持完整合成quantity回放；其他schema／外部現金流、年化／歸因／R2/F及原未支援不擴張。正式false／主壓力null、1101 UNKNOWN及70／2／其中8／真實總淨合格0、來源／圖形／人工契約保持。沒有bootstrap、真實producer／九路徑／舊suite、UI／Android／樣本外或部署交易。下一項可將評估接至既有明示合成回放完成步驟，尚未工程，不自行接策略或新行情。下方原文完整留史。
+
+---
+
+# 2026-10-24｜資金決策第一階段機制驗證
+
+本輪已依使用者明示授權新增與正式產品隔離的capital_research框架：三層判斷、共同資本／權利、成本與交割、多候選預留、部分／未成交、事件去重及保存重播。重用原action_ledger，未改正式策略／圖形規則／歷史schema。46個新定向方法通過只證明合成機制，不代表策略獲利、圖形品質、正式持股帳或資金飛輪完成。
+
+R1有限事件／風險預算提案與可行性已實作；R2／F保留NOT_IMPLEMENTED，後續須在共同條件下樣本外證明相對R1增益才支持增加複雜度。C/E數量僅外部合成研究，不訂全換／分批最佳比例。券商額度／期初應付／既有待成交完整重播明示不支援，不用假現金／成交補足。建議、資料資格、成交模型、歷史訊號、政策與實盤授權各自分開，全部false保持。
+
+來源0.10保存狀態70拒算／2不足／8換股影響／合格0只核檔未重跑；完整公司行動、淨分配與期初權利仍缺。Astra Library報告全文未取得未讀，不能把本輪指令當全文／策略批准。下一步Work唯讀檢查正反例與研究意圖，原唯一Codex後續工程；入口M1_CAPITAL_RESEARCH_PHASE1_HANDOFF.md。下方原願景、已確認P0-3／P0-4、人工模式及所有歷史限制完整保留。
+
+---
+
+# 2026-10-24 Codex｜獨立密集量峰候選研究已實作：群／範圍／同票，不定正式單線
+
+本次是使用者新授權的有限研究工程，入口`M1_VOLUME_PEAK_RESEARCH_HANDOFF.md`、`股票系統M1_v0_18/volume_peak_research/README.md`及`deliveries/m1-volume-peak-research-20261024/README.md`。原完整band-volume讀取已結清，不重取分片／大檔／blob／原10圖／舊ZIP／來源或重驗舊交付。按AGENTS重新bootstrap成功0補缺、7差異保留，遠端3b6fe93及祖先保留；以下較早「只文件歸檔」是當時範圍，不能否定本次明示新需求。
+
+新增與正式產品分離的純數值研究core＋小原料IO builder；重用原BINDING、fingerprint、compare及volume_facts最大量／全部同量日。完整跨度群max<=min*r，列全部不能擴張集合、全部同票與重疊原柱，不貪婪取唯一；平台潛在等量保存原日並拒判，不取首日。k=1/2/3、r=1.10/1.15/1.20僅明示研究探針；正式representative_volume_line維持NOT_IMPLEMENTED/null，明示合法原柱anchor最多PROPOSAL_NOT_APPROVED，真實九組全null。
+
+真實1101 Raw B88155保存成員，k3/r1.15重現21確認研究峰、13最大群、全部5同票群各7筆；異常最大量98217134原柱完整保留，最後展示群對10/16量差+3239107，對原最大差-40779250，未判好壞／突破成敗。7/9在k3少一筆來源內右窗保留待確認，不冒最終完整峰集合；全部來源／基底／版本、時點／截止、原K、群端點及精確比較可追溯。B88正式區界／成員資格仍null，不是自動完整帶或主壓力認證。
+
+最終37項新測試PASS（33合成工程方法＋4真實保存來源方法），獨立子集合窮舉、平台／同票／重疊、極大量、零缺值、精確邊界、來源／基底與指紋衝突、知時及整個結果未來隔離均覆蓋；31／36中間批及新解壓重現不累加。只讀庫內12月小原件，meta未記HTTP保持null，原捕捉／本地重用／新研究選取分存；不是新來源GET／完整史artifact重驗。原graph_core、P0-3、band_volume.py、UI、指標、策略／庫／行情及舊產物未改，舊32／88、producer／每日帳／六方案未跑。無新UI，Android NOT_TESTED_NEW_BUILD、file://不重試。
+
+來源0.10及全部parent、不建來源0.11／catalog、不回寫null；Raw／UNKNOWN、歷史、main、警告、全部來源／個人權利缺口及各項false/null資格保持，不補零／行情／前價／估值，不公開私人原件、不重試受拒入口。只交Work看本輪有限研究輸出，不宣稱辨識品質或獲利已驗，不強迫正式單線／最適參數；完整可貼指令在新handoff。原唯一Codex工程寫入，不部署付費交易訊息或子代理。以下原文留史。
+
+---
+
+# 2026-10-24 Codex｜明示研究段最大量已接入：不改P0-3、不估密集量峰
+
+最新接續M1_EXPLICIT_BAND_VOLUME_HANDOFF.md，成品及固定原bytes收據入口deliveries/m1-explicit-band-volume-20261024/README.md。原段量helper已存在，本輪只補來源／可知資格及主圖對照：沿graph_core保存candidate.volume（不重跑analyze／_volume）、pressure_chart.volume_facts、candle_region_chart.envelope、reaction_facts.compare／make_input，無平行最大量算法。新reaction_facts/band_volume.py純接線、build_volume外部IO、band_volume.js只呈現；原P0-3／指標／模式路由及五JSON、角色／狀態／事件／ID保持。
+
+1101 Raw／B88完整明示保存來源155根，2025-11-19～2026-07-14；最大量1/12的98,217,134股，10/16為57,437,884、BELOW差額-40,779,250。來源原K與最高價K不同；量日／候選確認及參照可知9/1／實際後來選取分存，確認前不露完整reference。同量全來源、缺日／缺量／基底或指紋衝突拒比，完整指保存成員不冒完整市場日曆。前筆量與最大量分開，未越不判壞、不取消過線。B88 formal_price_bounds=null仍研究候選；密集量峰代表線NOT_IMPLEMENTED及理由保留，不用平均／中位數／固定比例替代。
+
+本輪26新Python＋6相關回歸＝32，最終88項新Chromium三視窗／4下載檢查通過；初次mock函式名稱錯誤及截圖廣角調整留史，不累加中間88／新解壓同26或歷史65／94、上一輪6／94。桌面／手機直橫廣角局部與來源PNG、原精度JSON及可重現ZIP已交付；Android NOT_TESTED_NEW_BUILD、file://未重試。只交Work看新圖用途差異，完整指令見新handoff，不重問已答P0-3／P0-4。
+
+來源0.10及全部parent／庫／Raw null／UNKNOWN／策略引擎／歷史／舊成品／main及舊警告不改，不建來源0.11／catalog、不回寫null、不重抓來源或重試受拒入口。完整行動／個人權利／淨分配、Raw／Adjusted／歷史公布／主檔／SQLite等缺口保持，不跑每日淨帳／六方案／績效，全部false/null資格保持。最大量工程不等密集量峰、完整帶自動切段／主壓力、全市場、換股或飛輪完成。不部署付費交易訊息或子代理。以下原文留史。
+
+---
+
+# 2026-10-24 Codex｜P0-3用途檢視後顯示0.2：事件／手機繪圖區／日期分欄
+
+最新完整接續 `M1_P03_READABILITY_HANDOFF.md`；成品／直接PNG與固定回讀在 `deliveries/m1-p03-readability-20261024/README.md`。只增量呈現，不改structure_state／reaction_facts／graph_core、角色、狀態、事件、ID、K／MA／MACD及五份原JSON；原0.1工程702e9144與收據34d6f782／全部舊成品保留。新view_version0.2不是來源0.11。
+
+預設事件列直接看日期／收盤／相對三參照／狀態變化；10/12原突破與返回後狀態不足同時說明，未來高點及事件不洩漏。原突破26.95／返回高26.85／研究下緣20.25分開，B88正式price_bounds仍null、後來明示研究角色未升人工正式原箱。手機390有效plot225→309px，價格範圍不變；44px縮放移K／量間，三面板與游標同軸。來源日期逐欄分原價位K／末轉折／確認／原值及角色可知／後來選取；量較前筆以中性量觀察顯示，不稱好壞或新量資格，原核心支持／反面完整保留。既有事件抽屜及人工Raw／Adjusted模式已實作，沿用不重做。
+
+本輪只實跑6個新顯示Python及最終94項本次Chromium三視窗／9下載檢查；與歷史65／94不同批，不累加中間91／91／94或新解壓重驗。首次text helper缺parent的載入失敗與修正留史；舊原件／引擎／0.10全部parent／庫／Raw null／UNKNOWN／main及舊警告不改。不重抓來源、不建來源0.11、不跑producer／每日帳／六方案／獲利或Android，file://不重試。Android NOT_TESTED_NEW_BUILD，全部false/null資格及來源缺口保持。
+
+下一步只交Work看新圖用途差異，完整可貼指令見新handoff；不重問P0-3，不以顯示改善冒自動完整帶／全市場／換股／資金飛輪完成。原唯一Codex工程寫入，無平行工作／子代理，不部署付費交易訊息。以下歷史原文完整保留。
+
+---
+
+# 2026-10-24 Codex｜回到核心：P0-3結構狀態已接入既有人工模式主圖
+
+本輪依最新使用者指令將主線由來源研究轉回已確認核心工程。`manual_basis/`／`manual_basis_chart/`的人工Raw／Adjusted模式切換已有完成，不重做，也不再列未實作；較早「未證／尚未整合」段落保留為其當時狀態。新增 `股票系統M1_v0_18/structure_state/` 純數值P0-3附層及 `structure_state_chart/` 增量主圖，重用reaction_facts三態／路徑與原模式路由；原K／MA／MACD數值樹不改。最新完整接續 `M1_P03_STRUCTURE_STATE_HANDOFF.md`；直接廣角／局部PNG、HTML／JSON／ZIP與固定原bytes讀回見 `deliveries/m1-p03-structure-state-20261024/README.md`。
+
+有效明示參照下：收盤嚴格過回檔高點轉強；未過也未破原箱底整理；嚴格破箱底轉弱。相等獨立保留、不當越過或跌破；淺回檔線不作硬性判弱界，量／MACD另列不否定過線。缺來源／角色／時序／同基底版本或中斷／矛盾就證據不足；核心無UI／IO，來源／角色可知與後來選取分開，未來資料不回寫舊狀態事件，保留最初突破與先前轉弱，不推盤中先後。
+
+真實1101原Raw1213根及B88僅明示研究角色，正式price_bounds仍null，非人工核定原箱。研究上緣26.95與下緣20.25原K／來源末轉折／確認各分存；10/13高26.85作單次返回階段研究提案，不借原④5/13同價，不是通用選高公式。條件式10/13整理→14轉強→15整理→16轉強；10/12原突破保留，實例無轉弱／相等，工程反例另存非行情。核心規則工程完成不等自動完整帶／主要壓力、全市場、勝率、換股或資金飛輪完成。
+
+本輪39新＋22 reaction／4模式相關回歸＝65個Python唯一測試範圍，Chromium154最後94檢查PASS；早期32／37子集、71介面檢查及重驗不累加。實際三視窗、拖曳／移圖／觸控放大、同步、定位、下載與重播已驗，首截圖裁切及手機測試座標越出視野的失敗／修正保留。無網頁真實CLI輸出與成品結果完整bytes相同；新Android仍NOT_TESTED_NEW_BUILD，file://不重試。圖中文字型當前可讀不抹舊Fontconfig／xref。
+
+來源0.10及全部parent、策略參數／舊引擎、庫、Raw null／UNKNOWN、原件、歷史／舊成品及main保持；不建來源0.11或重複catalog，不回寫null。完整公司行動／權息／個人權利／淨分配及九起點等缺口不解除，也不作本輪工程無限前置。execution_qualified=false、imputed_close／valuation=null、historical_signal_eligible=false、primary_pressure_id=null、policy_authorized=false；不跑每日淨帳／六方案／績效，全部受拒入口及舊來源未重試重抓。
+
+下一步只Work看新真實廣角／局部與用途差異，完整可貼指令在M1_P03_STRUCTURE_STATE_HANDOFF；不重問P0-3或轉回無限來源歸檔。Work唯讀，不bootstrap／工程／測試／寫入；真正新核心歧義才配充分真圖詢問，明確缺陷交回原唯一Codex。無子代理、不改main、不部署付費交易訊息。以下歷史原文完整保留。
+
+---
+
+# 2026-10-21｜最高層級願景：資金增值閉環與資本成長飛輪（使用者確認，長期有效）
+
+> 本節是本專案最高層級的產品目標，統合並**不取代**下文既定的三項完成目標、圖形判讀規則、風控、架構與驗收要求。此處是需求／策略願景已確認，**不是**演算法完成、能保證賺錢、已進入自動交易或績效已驗證。
+
+**最終目標：建立一套可追蹤、可驗證、可改善的「資金增值閉環」，使資金在風險可控的前提下循環運用；藉由淨獲利再投入、資金時間效率與決策品質改善，追求長期資本複利成長的正向飛輪（Capital Growth Flywheel）。**
+
+## 三大引擎是達成總目標的手段，而非三個獨立終點
+
+1. **全市場圖形辨識引擎**：在上市、上櫃普通股中辨識價量與整體結構、強勢機會、風險報酬及資料／證據限制。
+2. **動能換股與機會成本引擎**：持續比較原持股、候選股及持有現金，在剩餘機會、持有時間、下跌風險、摩擦成本與不確定性間做風險調整後的決策輔助；不以換股頻繁或短期漲幅排名當作目標。
+3. **資金閉環與效率引擎**：追蹤可用本金→機會辨識→進場／持有／加減碼／退出或換股→成交、成本及風險→回收資金→再配置→績效歸因與規則驗證，形成可稽核的完整循環。建議、人工核准、實際委託、成交、持倉與已實現損益必須分開。
+
+## 飛輪形成的必要條件與驗收導向
+
+- **閉環存在不等於會賺錢**；只有在足夠樣本、不同市況及扣除交易稅費、滑價等成本後，具有可信的正向風險調整後期望報酬，才可稱具備支持複利的實證基礎。歷史績效不保證未來。
+- **風險約束優先**：控制最大回撤、集中度、流動性與單筆／整體風險；持有現金／不交易必須是合法且可能最優的選擇，不強迫資金輪動。
+- **績效指標**：整體資本淨值／長期成長率、最大回撤、風險調整後報酬、交易淨利與成本、資金佔用天數／單位時間報酬、換股相對於續抱或持有現金的機會成本；區分回測、模擬與實際績效，避免事後資訊回填與選擇偏差。尚未確認的指標定義及門檻不得直接寫死。
+- **策略改善要可驗證**：對成功／失敗案例做證據與結果歸因；規則版本分離、樣本外驗證與上線審核，不能因為事後挑到漂亮案例就自稱飛輪加速。
+- **產品完成標準**：不只「畫出 K 線」或「找到強勢股」，而是三引擎可在同一套獨立數值／資料架構中協作，完整記錄資金生命週期，能在歷史可得資訊與嚴格驗收下評估資金淨報酬及風險；對實際投資判斷仍保留人工最終核准，未授權自動下單。
+
+**往後每一項功能的價值檢查**：它能否以可追溯、可驗證的方式改善「合理風險下的資本長期淨成長、機會成本或資金使用效率」？若只是提升圖形美觀、掃描數量、交易次數、短期勝率，不能單憑此宣稱有助飛輪。
+
+既有進度界線不變：M1 圖形辨識與跨尺度分類仍在研究；全市場自動選股、正式動能換股、資金閉環、績效驗證尚未因本節寫入而完成；不得以本目標倒推未定公式／入出場門檻，保留歷史檔案、證據與既有策略內容。
+
+---
+
+## 2026-10-22 最新決定：原始日K／還原K由人工選分析模式
+
+使用者原話：「大盤空頭需要很多綜合指標來判斷，因此建議是可以切換日K或還原K模式由人工方式決定分析模式。」完整保存與接續見 `docs/visual-discussion/20261022_manual_price_basis_decision/README.md`、decision.json、verification.json、WORK_HANDOFF及GITHUB_READBACK。人工選的是分析價格基準，不只畫面；不等系統自動判空頭，也不再要求先回答前輪大盤空頭／拉回題才能切換。市場身份可未知，明確人工選Raw不以先證空頭為前提。原約2～3月及空頭Raw偏好保留為人工判斷背景，無自動時間或市場強制切換。
+
+同次K、指標與價量結構參照需配對同基底／版本；保存人工選擇及實際來源，切換載相符結果或另存新分析，不只改標籤、不覆舊結果；還原資料不足明示，不默默退Raw、不造因子。量口徑另管。B此次未實際指定模式，原官方事件已核與單次換算非完整還原、歷史可得及source_gaps等限制保持。
+
+已讀原碼：technical_chart／pressure_chart既有mode選單與pressure_chart來源解析／下載，但未證人工模式跨個股保留、持久儲存或完整同步分析已落實。本輪僅方向與工程要求保存及文件核對，0產品程式改動／新圖行情／core指標舊研究重算／瀏覽器Android；不冒功能完成。分類NOT_VALIDATED、用途NOT_ESTABLISHED、新Android NOT_TESTED_NEW_BUILD、行動及飛輪NOT_EVALUATED、historical_signal_eligible=false。
+
+下一步繼續Work，依本輪交接接資料資格及模式切換整合；不再把空頭自動分類當阻塞或重問已答圖形。保留最高資金閉環飛輪目標、main與全部後續原引擎策略資料舊圖；例行多步與原分支交付已授權，不部署付費交易訊息子代理。以下舊待答／自動口徑資格按本節更新解讀。
+
+---
+
+
+## 2026-10-21 最新口徑已答：除權息後約2～3月還原，大盤空頭原日K優先
+
+使用者原話：「通常除權息後要以還原權息去做分析持續時間大約2-3個月，大盤是空頭市場時則一切以原日k分析。」完整原話與資格見 `docs/visual-discussion/20261021_price_basis_policy_decision/decision.json`；README／source-check／verification／WORK_HANDOFF與回讀收據同目錄。承接7ffb2dca，仍Work，最高資金增值閉環／飛輪目標不改。
+
+定性偏好已確認：大盤已判空頭時Raw原日K優先於一般除權息後還原；通常除權息後Adjusted約2～3個月。約數不換固定60／90天，不自定期滿自動切回或新事件重起。空頭定義／大盤指標／生效時點、精確截止及期滿切換、具體調整因子版本仍未定，不套20％或均線門檻。未知市場狀態非已證非空頭，缺Adjusted不是擅用Raw替代的理由；不因例行工程細節停下重問已答方向。這是使用者策略口徑，不冒稱通用標準或已驗成效。
+
+同次比較的K、左側完整帶及高低參照需同基準／版本；Raw與Adjusted分存，不覆原K、不將還原價對舊Raw高點。切換另存新分析版本，不改舊結果或倒用未來事件／市場分類。成交量口徑另存、不自行還原量。空頭選Raw仍保留除權息事件：機械落差不因大盤空頭而消失，不單憑落差證賣壓跌破；TWSE公式常識補核另記，非把空頭改成強制還原。
+
+B七月舊Raw圖與原價量事實全留，但市場狀態NOT_ESTABLISHED／完整Adjusted未核，preferred_basis_under_new_policy=null、new_policy_validation_status=NOT_COMPLETED_RAW_RESEARCH_ONLY。前輪改用七月新來源只是有限Raw研究，不能替代本輪政策要求的還原分析。公司行動事件鏈／前輪官方交易日列未讀通、原actions等未知不因使用者答方法而升已驗；10/27急變仍未知。
+
+本輪只有文件一致性與四入口歷史完整保留核對；新圖／行情／調整因子／core／MACD／舊driver／分類器產品測試／瀏覽器Android皆0，無自動切換實作。原全部A ABC G2與B答案、量非硬門檻、後續守價及形成點不多票保持。正式規則未定、historical_signal_eligible=false，分類NOT_VALIDATED、用途NOT_ESTABLISHED、新Android NOT_TESTED_NEW_BUILD、行動與飛輪NOT_EVALUATED，原Raw／完整日曆／歷史公開可得及全部缺日限制保持。
+
+下一步Work先補B當時市場狀態、公司行動及同口徑還原來源，再由最新K向左完整帶重讀。圖至少六個月且看清大小範圍，同附圖片及放大版；約2～3月是口徑期間不是裁圖長度。真正重要新核心才備充分圖問，不重問口徑方向。例行可逆多步及原分支交付已授權，不改main／原引擎策略資料舊圖全後續，不部署付費交易訊息子代理。以下為歷史，非本輪重跑。
+
+---
+
+## 2026-10-21 最新人工方法：偏甲但切法非標準；以最新K向左辨完整價格帶及價量
+
+使用者已答B同層提案：「我比較認同甲一點，但這樣切法也不是標準答案。」原甲乙問題結束為CLOSED_WITH_QUALIFIED_PREFERENCE_AND_METHOD_REFINEMENT，不再待答／重問；偏向同一小帶多次活動不等原三框精確起末價界成員、恰三帶或通用合併算法已核。完整原話與五步見 `docs/visual-discussion/20261021_right_to_left_method_decision/decision.json`，README／WORK_HANDOFF／verification與同分支回讀收據同目錄。
+
+後續主流程：所選截止最新可用K作右端→向左找相關價格高低→由高低辨完整價格帶並看帶內最高量或視覺代表量位→由該帶繼續向左畫較早帶→比較各帶相對高點，辨認要越過哪一層。承接原10/19最新收盤回左找整體帶；既有小共同區及來源配對是輔助研究，不能取代主選帶流程。先大後小，非機械取最近微小轉折或固定窗全域最高低。保存來源最新日不冒即時今日，歷史截止不看未來。
+
+最高價K不必是最高量K，價峰量峰分別找；最高量同值日全保留，綁整帶成員與截止。使用者整體均量是從密集量柱相近高點畫代表線，先存視覺代表量位及所依量柱日期，不直接換成算術平均／20日均量／中位量／固定倍數。正式完整帶／代表量線演算法仍null，不拿任意小框計算冒稱整帶量。
+
+原句「右邊的量也超過該均價或是該價格帶的最高點」原文保存；助手僅按量綱分開：價格比相對高點、量比代表量位／帶內最高量，不把量比價格或擅轉VWAP。正式價量或／且結合與門檻未定，此解讀非額外數值規則核准，本輪不因此逐項問工程細節。「成功率提升／籌碼乾淨」記為使用者圖形價量假說，未驗成功率或測得實際持股分布／賣壓耗盡，不升機率、交易資格或績效保證。
+
+先前量支持但非成功必要充分、未放量不否決、後續是否站穩另觀察、當日價格跨參照即更新但非大結構、重用形成點非多反應均保持。B大小帶／微小段及A ABC G2全已答不重問。圖至少六個月且看清大小範圍，同附圖片及放大版，六個月非固定結構窗。
+
+本輪只保存新人工答覆及方法，沒有新圖行情／指標結構／研究driver／分類器產品測試／瀏覽器Android重跑；文件一致性及四入口原文保留核對另記，不冒舊測試為新完成。PROJECT_VISION最高資金閉環飛輪目的不改，只加本方法節。正式高低／整帶／合併父子主次／界成員／量線／站穩反應充分條件仍未定，historical_signal_eligible=false；分類NOT_VALIDATED、用途NOT_ESTABLISHED、新Android NOT_TESTED_NEW_BUILD、行動與飛輪成效NOT_EVALUATED。Raw公司行動／完整日曆／歷史公開可得及全部原缺日保持。
+
+下一步維持Work，用原已答案例及充分廣角真圖做最新K向左的整圖讀法，逐帶標價峰／量峰／代表量位來源，再看更左相對高點；不再先切小框迫使用者給標準答案。真正重要新核心才附充分圖問，不重問甲乙。保留main全後續與原引擎策略來源舊圖，例行可逆多步及原分支交付已授權，不部署付費交易訊息子代理。以下舊待答以本節已答及新方法為準，非本輪重跑。
+
+---
+
+# 最新：5/13局部代表已答，主要壓力帶層級更正（2026-10-19 16:55 Work）
+
+使用者原話「選5/13但是這一樣沒有什麼意義，因為2023年6月到2025年4月有更大的壓力帶」。實讀[docs/visual-discussion/20261019_major_pressure_hierarchy/user_review.json](docs/visual-discussion/20261019_major_pressure_hierarchy/user_review.json)、README.md及M1_V019_PREVIOUS_BOX_PRESSURE_HANDOFF.md最新節。5/13／31.40已確定為2025/4/7～6/2／39筆局部箱代表，**不等於主壓力或用途認可**；原代表問題已答不再問。重點轉為已存現價由右回看跨尺度主要壓力，不沿最近小箱逐一選點就當分析完成。此例長期帶比小箱重要，不能推較舊／較大或量總和永遠勝出的通則。
+
+主帶時間僅2023-06～2025-04月份精度；精確起終／正式價格界線／整區量／主帶代表／重要性算法仍null。不追月初月底日期作前置，不將完整月份讀圖463根、Raw外包28.45～39.25認成正式箱成員或界線；兩邊月份漸淡。原G1=2023/11/28／35.50與2025/3/12高35.45只作真實參照，不自動升格整個主帶唯一代表或認證Raw共同校正壓力。原1/27、6/3歸屬、①④／G2／G3和0.4.3樣式收束保持，不索舊原圖JSON。
+
+新獨立可放大圖以主帶為主、小箱為次級，可看長期493筆／同看已存現價820筆／局部／近期，K量同步，原1213筆/source/frame/basis與分析日10/16收27.30不改，非即時今日。本輪實際新Chromium133 HTTP20項PASS／四寬／4PNG，原像素offset oracle首敗與完整修正重跑保留；圖與來源未改、0.1px容差未放寬。父圖及舊全Python／產品回歸未重跑；非Android／宿主／用戶CDN或核心用途通過，file://阻擋未重試未繞過。下一步仍Work優先主帶反覆價量結構與階層，不重問已答小箱代表。保留main、原引擎策略／庫／歷史／舊頁／來源案例證據及所有策略／Raw／Adjusted／歷史可得／資料缺口／Darvas正文／SQLite未知和核心NOT_ESTABLISHED／NOT_VALIDATED／NOT_EVALUATED，不部署付費交易訊息子代理。
+
+---
+
+# 2026-10-19 16:17：6/3屬前箱破底K，1/27優先理由已說明
+
+[最新使用者原話與分項資格](docs/visual-discussion/20261019_latest_close_anchor/boundary_review_1617.json)。使用者已明確將2025-06-03／Raw高28.00歸在本箱之外，理由是它是另一箱跌破下緣的K線；保存為USER_REPORTED結構判讀，不虛稱前箱界線或自動破底檢查已完成。原始28.00資料保留，上一個「6/3如何納入本箱」問題已回答，不再追問。
+
+本例代表2026-01-27／26.95較重要有兩個理由：離已存最新價格較近，以及使用者將1/27至最新的結構判讀為可能的籌碼沉澱。按最新收盤由右回左時，先辨別舊箱破底／轉換K與本箱整理，再比較相關代表的重要性；這是助手對案例的規則整理，尚非通用偵測公式，不化成「越近永遠越重要」或任意窗口取最高。沉澱為圖形價量判讀，不代稱實際剩餘持股量已測得。原336根只是閱讀窗，並非每根都已批准屬於同箱；不擅定精確新箱起日／箱底、前箱上下界、其餘K歸屬或量門檻，也不將逐根問卷當後續前置。保留6/3前箱破底脈絡供向左找壓力，非刪歷史。
+
+原分析日2026-10-16／收27.30高於1/27高26.95的事實保持；似乎量增／可能突破不升為確定資格。原④1/29／26.85及G1G2G3案例不改。下一步仍同Work，從現價向左看前一箱壓力與相對位置，停止B一箱兩箱／平緩帶終點／6/3歸屬的重複問題；必要新真實圖可放大，不重開0.4.3樣式或索舊原圖JSON。
+
+本輪僅實讀GitHub與保存最新判讀／交接，沒有新圖、產品修改、Python／Chromium測試或Android證據。舊24項HTTP、8PNG及核對收據仍是前輪範圍；原file://阻擋未重試／未繞過。自動分區／區界／整區量／增量／強度衰減／生命階段與Raw公司行動／五年Adjusted／歷史可得／資料缺口／Darvas正文／SQLite未知保持，核心NOT_ESTABLISHED、分類NOT_VALIDATED、行動NOT_EVALUATED。不改main、原引擎策略／庫／歷史／舊頁／來源案例證據，不部署付費交易訊息子代理。
+
+---
+
+# 2026-10-19：以最新收盤為錨，由右往左找有意義箱型
+
+使用者撤回任意藍／黃區間切箱的方向：依最新K線收盤回看左側相關壓力／支撐帶，以有判斷用途的整體箱型與代表點為先；跨過本箱後再往更左找壓力，不為分段而切小。舊B一箱／B1B2待答已撤下，假說／圖／來源保留為歷史，不是使用者批准。實讀[M1_V019_LATEST_CLOSE_ANCHOR_HANDOFF.md](M1_V019_LATEST_CLOSE_ANCHOR_HANDOFF.md)及[本輪原話、同源原值與新圖](docs/visual-discussion/20261019_latest_close_anchor/README.md)。
+
+1101／新官方Raw／已存分析日2026-10-16收27.30；使用者候選2025-06-03～最新336筆，選2026-01-27高26.95代表，收盤確已越過；似乎量增／可能突破為暫定判讀。來源有一處待對齊：6/3高28.00、6/4高27.45，故1/27不是全窗Raw數值最高；保留相關代表，不自行刪起跌K／改日期或基底／補箱頂算法，也不以機械最高值否定箱型用途。原④1/29／26.85不同，G1G2G3及①④不改。量比前日+36.06%，比前5筆均量−15.50%，比前20筆均量+22.25%（排除本日），只是描述比較，未定量資格；10/12越過、10/13跌回、10/14越過、10/15跌回、10/16又越過的收盤歷程保留。
+
+新獨立可放大真實K量圖只對齊來源與參照，實際24項Chromium133 HTTP PASS／四寬8原尺寸圖，1213原值不改；不是新產品版本、Android／宿主／CDN或核心用途通過，未重跑舊全套。0.4.3樣式已收束，不索舊原圖JSON，原file://阻擋未重試／未繞過。下一步同Work只對齊6/3起跌較高影線與本箱代表上緣關係，再看更左壓力；不重問B拆箱、平緩帶終點、G2已定日期。自動高低點／分箱／延伸／區界／整區量／增量／強度衰減／生命階段與Raw公司行動／Adjusted／歷史可得／來源缺口／Darvas未完整讀／SQLite未知、核心未認可保持。不改main、引擎策略／庫／歷史／舊頁／案例證據，不部署付費交易訊息子代理。
+
+---
+
+# 2026-10-19 14:22：先高低點／區間／箱型，再依位置價量判讀；撤回固定「平緩帶」命名
+
+使用者明確更正：先找高低點、區間帶、畫箱型，再根據相對位置與價量判斷籌碼沉澱、轉強上攻或又破底。**箱型／區間是結構，平緩、底部、沉澱與轉強不是畫出箱型就成立的名稱或結論。** 破底後還能形成後續新箱，不能把C右側全部套成同一平緩帶／底部；舊破底事實與後續箱型並存，依當時證據記錄，不用未來回寫過去。
+
+[完整原話／新獨立契約／來源核對](docs/visual-discussion/20261019_box_method/README.md)，[接續指令](M1_V019_BOX_STRUCTURE_METHOD_HANDOFF.md)。本更正取代助手上一輪固定命名及「請替新平緩帶定單一終點」的待辦，不重問同一端點；原G1／G2人工日期／來源／歷史原話保留。4/2後破底保存為使用者箱型案例判讀，實際哪些箱底／區界未指定，不代填4/2為箱終點或新增自動破底事件。
+
+本輪只保存方法更正與同源日期記錄核對，沒有新主圖／產品代碼、測試、Android或手機JSON。0.4.3樣式驗收已收束；舊圖／報告保留為歷史，不能延用其「平緩帶」標題當最新結論。下一步仍同Work，由助手以可放大真實圖整理高低點、相鄰箱及突破／破底後新箱的關係，形狀與價量判讀分開，只有真正核心歧義再用對照圖確認，不替使用者預設門檻。
+
+自動高低點、分箱／延伸／箱界、量口徑／增量、強度衰減及生命階段未定；原Raw／公司行動／Adjusted／歷史可得／資料缺口／Darvas正文未完整讀／SQLite根因與核心未認可保持。保留原引擎策略／庫／歷史／案例／證據／舊頁，不改main，不部署付費交易訊息子代理。
+
+---
+
+## 2026-10-19：背景與K線必須分別清楚（0.4.3）
+
+使用者原話：「已經看的見了，顏色可在深一些標準是能一眼辨識背景卻也能清楚看見K線兩者必須能清楚分別辨識。」正式呈現標準是區域底色一眼可辨，K線實體、影線及紅綠同時清楚；不恢復周邊框、不擴張成全高時間帶。上一0.4.2可見性有使用者回報，未獨立確認裝置／實開版號。0.4.3預設18%／可選12、18、26%是助手可逆顯示選擇，非策略門檻，待新觀感；背景先繪／前景原色不變。只做此差異，不重開舊功能；見M1_V019_SOFT_REGION_VISIBILITY_HANDOFF.md最新。
+
+---
+
+## 2026-10-19：底色須能辨認，顯示濃淡可調
+
+使用者最新「看不到底色區域」，不等於撤回原K線範圍或要求回復框線。0.4.2以預設12%及8/12/20%選項改善可見性，屬助手可逆UI選擇，尚未經新實機認可；不形成壓力強度或策略門檻。下一步只收新底色觀感，保留無框／價量分開／MACD無染色要求及全部未知限制。見M1_V019_SOFT_REGION_VISIBILITY_HANDOFF.md。
+
+---
+
+# 股票系統：完成目標與圖形溝通原則
+
+## 2026-10-19：範圍正確，改用無邊框透明底色
+
+使用者原話：「沒有錯，但是我不要框起來我要一個較透明的背景色。」G2本例顯示範圍已獲使用者回報認可，新的樣式要求取代先前畫周邊框線：價量各自以淡透明底色標記，不框起來、不跨MACD；G1不確定起緣用漸淡保留未知。3%是助手可逆呈現選擇，尚未經新手機認可，不是策略門檻。原關卡點／線標籤與來源保留。見M1_V019_SOFT_REGION_FILL_HANDOFF.md及交付0.4.1。
+
+
+## 2026-10-19：價量區域必須貼合真實K線，不接受全高時間底色
+
+使用者原話：「我希望如果要標示價量帶是標記真實的k線範圍區域，而不是將整個圖垂直空間框起來。」
+此要求取代0.3以全高色帶呈現價量區域的設計。以真實選段K線日期與價格範圍呈現，量圖若標示須獨立且不貫穿MACD。按全選段影線高低做顯示外包框是助手可逆實作選擇，不是使用者已定義正式壓力區界／自動選區算法；formal price_bounds仍未知。G1約九月起日、C後終點仍不定。新圖與來源／驗收見[本輪紀錄](股票系統M1_v0_18/region_chart/validation_android_20261019/evidence-0851.md)，[具體修正交接](M1_V019_CANDLE_BOUNDED_REGION_HANDOFF.md)。本輪只記要求／證據／交接，修正版尚未實作。
+
+
+## 2026-10-18：G2精確起終日已補足
+
+使用者回報G2起點2023-01-16、終點2023-08-16及兩日完整OHLCV，直接核對同源原JSON全相符，取代下節約2～8月／精確日待補的舊狀態。代表點5/2 high40.25維持。本例精確時間帶已可工程接入，不代表價格上下緣、整區量策略口徑或自動分區算法已定。[最新案例與原檔核對](docs/visual-discussion/20261018_g2_endpoints/README.md)；[Codex主圖接入交接](M1_V019_MANUAL_REGIONS_INTEGRATION_HANDOFF.md)。本輪尚未實作新主圖，不新增產品用途或手機通過認可。
+
+## 2026-10-18 21:52：精確座標查詢與Darvas參照
+
+- 使用者願用可移動的圖上座標查詢提供精確日期與價量。討論圖應把「移動查詢游標」與「移動圖窗」分清楚，顯示真實日K的日期／開高低收／原始成交股數，可逐交易記錄微調；不必要求使用者抄錄系統自己能核對的原始值。
+- 使用者認為Nicolas Darvas《我如何在股市賺到200萬美元》的箱型理論與其概念相近，授權作理解／研究參照。相近不代表全盤採用原著或外部指標；本專案已確認的價量帶／關卡／防守與來源、時點原則保持有效。
+- 截至本輪只直接讀到官方出版資訊與原書目錄／初段試閱，箱型章節正文未完整讀取。不得假稱全書已讀、一般Darvas規則已被使用者批准，或將其當已驗證績效。
+- G2約2023年2～8月已由使用者明確指出，精確起終日仍待其利用查詢圖回報；月份不硬轉為月初／月底。
+
+
+## 2026-10-18 21:22：討論圖必須能放大閱讀
+
+使用者明確要求：「下次給我示意圖要能放大，否則很難看清。」
+
+- 適用於之後的策略示意圖、真實K線討論圖及圖形對照，尤其手機閱讀。
+- 預設交付可實際放大查看細節的圖：優先明確的放大／縮小控制及可查看局部的互動圖；必要時另附原尺寸圖片入口與分區放大圖。不能只貼一張被對話縮小的密集全景圖。
+- 放大後日期、K線、成交量、標記與文字仍須清楚，價量時間位置一致；橫向查看應有可操作方式。不要只放大外框、文字仍糊或用更寬的縮圖冒充可放大。
+- 放大／移圖只改閱讀視窗，不改分析日、來源、基底、證據或判讀。原圖及來源保持可追溯。
+- 這是新顯示要求，不是本輪已完成縮放功能或手機縮放驗收。下次G2討論圖依此製作並按實際能力檢查；不能臆測ChatGPT內嵌圖片必定支援雙指操作。
+- 本要求不新增策略門檻，不更改已核對0.2成品或重開已收束的手機按鈕驗收。
+
+
+更新：2026-10-17（台北時間）。
+狀態：使用者明確提出的長期目標與合作方式。這是完成目標，不表示目前程式已實作或驗收通過。
+此檔是本GitHub專案持續接續時的權威目標紀錄；後續Work Mode與Codex先讀本檔及最新接續入口。
+
+## 2026-10-18 13:20：五年Raw已交付，仍待新版實機與核心用途認可
+
+目前已交付pressure-chart-view/0.1：四檔官方Raw日線2021-10-18～2026-10-16，1101／2884各1213、6488／8069各1214根；18／24月日K與約五年瀏覽、同步K／量／MACD與畫外價量來源提示，原引擎／策略／庫／舊頁保留。Work本輪已讀交付契約、原始測試報告與指紋相符紀錄，未自行重跑全套或核對全部4854時點。
+
+以下「五年未取得」保留為前輪提出需求時點的歷史，不代表本次進度。**五年Raw資料取得不等於公司行動完整／五年Adjusted、正式壓力區辨識或成品用途認可**；來源月份仍只是容器，畫點線不算核心完成。新壓力頁Android尚無本輪證據，不能沿用舊頁部分驗收。
+
+另補六日TWSE原始休市PDF的日期／市場文字與SHA證據；尚未接入原稽核，TPEX主證待補。詳見CONTINUE最上方與新版Android紀錄。
+
+## 2026-10-18 10:59：左側高牆與五年日線目標
+
+使用者新增「成交量高牆」「價格高牆」兩個左側壓力重點，須把時間遠近、區間價格高度／各小關卡空間、區間量與其後急跌或整理緩跌的歷程放在一起判讀；不能只按時間或最近幾個pivot挑重點。
+
+日線介面明確目標：單畫面縮小可容納約1.5～2年日K，整體約五年可平移回看。用途是找出畫面外更早的主要壓力區，故分析範圍與視窗分開；資料不足明示，不能把畫面上沒有誤稱不存在。五年內最高與完整歷史新高分開，成交量判讀依據與精確剩餘持股分開。這些仍是開發目標，目前五年資料未取得。
+
+完整思想、可實作任務、未知門檻及驗收見 [本輪Codex交接](M1_V019_LEFT_PRESSURE_WALLS_HANDOFF.md)。原三大目標與引擎獨立／資料治理持續有效。
+
+## 2026-10-17 23:12：技術分析主圖的成品要求
+
+使用者實機回報「成功」，同時明確提醒：「這些例子應該不是成品的等級吧」，完成目標要「像元大app那樣子點開技術分析可以切換看到很久遠的k線，並且可以同時標示出辨認的機會到圖型系統裡」。
+
+此處「像元大app」是使用者指定的使用體驗方向；本輪沒有查核特定版本的元大功能，不宣稱已完成同等功能或逐項複製介面。
+
+- **主入口是個股技術分析圖**：選股後能直接看K線與機會；證據文字、規則說明和下載放在點選標記後可查看的位置，避免先捲過大量報告才看到圖。
+- **長歷史可操作**：能縮放、平移、向左載入／查看更久遠日K，再回到近期；顯示實際可用起訖、缺漏及價格基底。8根假想K或「全部已提供歷史」按鈕不能算達成。不得承諾不存在的年數或上市以來完整資料。
+- **機會直接疊在K線**：已認可規則所產生的關鍵高低點、參照區／壓力支撐、突破與後續回測等，用來源可追溯的點、線、區或事件定位；依目前已認可範圍實作。未定的生命階段、正式型態與重要性不得硬分類。
+- **量價動能一起看**：成交量及MACD等既有需求回到同一技術分析流程，時間軸與游標對齊。新嘗試頁目前沒有MACD，不能借用另一頁功能宣稱已整合。
+- **動態更新與歷史事件共存**：隨觀察時點更新當時判斷，保留過去突破與之後失敗；縮放不暗中改變參照或重寫分析，回看不得用未來資料。
+- **驗收以真實個股與手機連續操作為主**：假想例保留為規則回歸；工程通過、手機某項成功及成品用途認可分開記錄。
+
+具體下一段已定義工程見 [長歷史圖形主介面交接](M1_V019_LONG_HISTORY_CHART_HANDOFF.md)。不用等所有核心分類定義完才建主圖，也不能因建好主圖就宣布自動機會辨識完成。
+
+## 核心價值
+
+使用者認為AI工具的價值在於：因應不同使用者的需求，能自動化、客製化打造真正符合需求的成品。
+本股票系統必須實作使用者以圖形辨識交易的思考方式，再將圖形判讀轉成可計算、可驗證、可持續更新的系統；不能以通用指標堆疊、靜態標記、介面展示或工程測試成功取代核心用途。
+
+## 使用者明確指定的三項完成目標
+
+### 目標一：全台股上市櫃個股的圖形辨識與機會選股
+
+原意：完整打造全台股上市櫃個股的圖形辨識系統，挑選出有進場利潤的強勢股。
+
+- 沿用既定市場範圍：台灣上市、上櫃普通股；不因這次措辭自動加入ETF、ETN、權證或興櫃。
+- 圖是分析與使用的重點。系統需辨識波段、關鍵高低點、整理、支撐壓力、突破、回測、動能及量價的關係，放回個股發展與動態股價平衡脈絡持續更新。
+- 分開呈現已發生價格事件、當下證據、可能機會、進場位置與風險；盤中判讀與收盤確認各自保存。
+- 「有進場利潤」是機會辨識與驗證的目標，不能在沒有資料與驗證時標成保證獲利。
+- 完成標準不能只看幾個樣本、畫得出點／色帶、下載成功或測試數；需驗證適用範圍、資料品質、辨識品質與實際交易價值。
+
+### 目標二：機會成本與單位時間報酬的動能換股抉擇
+
+原意：最佳機會成本與單位時間報酬，也就是動能換股抉擇機會系統。
+
+- 系統需持續比較新股票、原持股及現金的機會，而非只列強勢股排名。
+- 比較剩餘可評估的機會、結構／動能變化、等待時間、下跌風險、換股成本，以及資金被占用所放棄的其他機會。
+- 動能、結構、機會、時間與風險分開保留；不能用單一神秘總分或漲幅排名替代。
+- 「最佳」是使用者追求的優化方向；精確比較方法、估計依據、適用情境與不確定性要可追溯，未定公式不能由助手隨意凍結。
+- 動能換股是分析與抉擇輔助；保留使用者最後決策，不新增自動下單授權。
+
+### 目標三：資金付出與進出的閉環效率
+
+原意：資金付出與進出的閉環效率系統，讓資產分配與增加有時間複利效果。
+
+- 把資金配置、進場、持有／加碼／減碼、退出或換股、現金回收及再配置連成可追蹤的完整循環。
+- 結構、交易資格、實際持倉及成交紀錄分開；不能因系統有建議就假設使用者已買賣。
+- 每輪能檢視資金如何被占用、何時釋出、去了哪個機會、成本與風險如何改變，以及實際效果。
+- 使用者追求的是資產配置與資產增加隨時間累積的效果，不能把交易次數多或換股快本身當成效率，也不預先承諾複利報酬。
+- 具體衡量方法與公式仍由已認可的圖形、交易與資金案例推導並驗證，不在本次補未定數字。
+
+三項目標互相連接：辨識機會 → 比較資金用途 → 配置與進出 → 回收再投入 → 用實際結果檢驗並更新。任何一項缺少，都不能宣稱整套系統完成。
+
+## 往後固定合作方式：先看圖，再轉規則
+
+使用者明確說明自己是辨識圖形在做交易。往後對其提問時：
+
+1. **策略與行情問題先用圖**：提供簡化走勢、K線或具體保存案例，直接在圖上指出關卡、轉折、時點與變化。讓使用者指位置、比較走法或更正圖；不先要求其回答公式、斜率、數學閾值或大量英文狀態名稱。
+2. **UI問題用介面模擬圖**：把要比較的操作與畫面做成可見模擬，讓使用者指出想看的內容及操作感受；不只用文字描述介面。
+3. **一次討論清楚一個關鍵差異**：盡可能固定其餘條件、保留共同走勢前綴，不能把不同背景、量價、現價與時間混在一起，讓選擇失去意義。
+4. **標示資料性質與當時可知範圍**：假想圖、真實保存圖及已實測介面分清楚；沒有盤中資料不可從日OHLC造盤中歷史；不畫尚未發生的後段來暗示答案。
+5. **助手負責形式化**：把認可的圖形判讀整理成必要條件、反證、失效／恢復、數學或演算法、資料需求與驗收案例。可由既有思想推導的可逆工程自行處理。
+6. **只對真正核心歧義再問使用者**：以新的對照圖或反例確認，不把全部技術細節退回使用者，也不以尚未確認的圖形假說冒充正式規則。
+7. **驗收仍分層**：使用者認可圖形含義、規則實作正確、數值測試、瀏覽器測試、Android實機、分類品質與交易價值分開記錄。
+
+## 已確認且持續有效的最近圖形判讀
+
+- 整理示例的防守為B，突破關卡取A與C的最高價。
+- 向上推進後，防守上移至該關卡；跌回後保留原防守失守的事實。
+- 對已選定關卡，收盤過了就承認當日突破；之後收盤跌破就另記本次失敗。量與OSC不會撤銷已發生的收盤價格事實。
+- 前次突破與後來失敗各自保存。盤中價格變動與收盤未知，才是目前接續討論的交易判斷難題。
+- 量／OSC在盤中進場抉擇的角色、精確門檻、三種正式整理及生命階段條件仍有未決處，不能由本完成目標直接推導。
+- 詳細最新裁決見 M1_V019_VISUAL_RULE_NOTES.md；本檔不取代具體規則版本或歷史證據。
+
+## 現況與界線
+
+目前M1 v0.19是獨立工程候選；已有少量保存樣本、證據組織、重播及圖表操作等，不等於以上三目標已完成。全市場完整圖形選股、機會成本／時間效率換股及資金閉環仍須按實作與驗證進度各自交付。
+保留引擎與UI分離、數值引擎為唯一來源、LLM僅解釋、價格模式與當時資訊邊界、版本治理、人工最後決策及不覆寫歷史。
+本次不修改策略程式／門檻／資料庫／main，不將未實測項目標完成。
+
+## 記憶保存範圍
+
+使用者要求將此目標與溝通方式加入記憶。本環境目前只有Personal Context檢索，未提供直接寫入帳號「已儲存記憶」的工具；不能宣稱已修改帳號記憶。
+本檔及AGENTS／CONTINUE入口的必讀引用是本輪實際完成的持久專案記錄。未來可由接續工作讀取，不依賴只有當次對話中的口頭承諾。
+
+

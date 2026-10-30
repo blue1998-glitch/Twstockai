@@ -1,0 +1,156 @@
+{
+  "observed_at": "2026-10-22T09:24:48.607700+00:00",
+  "scope": "SOURCE_FACT_FINGERPRINT_AND_PRESERVATION_CHECKS_NOT_ENGINE_TESTS",
+  "checks_count": 35,
+  "all_pass": true,
+  "checks": [
+    {
+      "check": "esun-direct-2025-ratio: original HTTP/length/SHA",
+      "pass": true
+    },
+    {
+      "check": "esun-direct-2025-ratio: derived text/source fingerprint",
+      "pass": true
+    },
+    {
+      "check": "esun-direct-2025-ratio: no retry/redirect",
+      "pass": true
+    },
+    {
+      "check": "esun-mna-20251105: original HTTP/length/SHA",
+      "pass": true
+    },
+    {
+      "check": "esun-mna-20251105: derived text/source fingerprint",
+      "pass": true
+    },
+    {
+      "check": "esun-mna-20251105: no retry/redirect",
+      "pass": true
+    },
+    {
+      "check": "esun-mna-20260713: original HTTP/length/SHA",
+      "pass": true
+    },
+    {
+      "check": "esun-mna-20260713: derived text/source fingerprint",
+      "pass": true
+    },
+    {
+      "check": "esun-mna-20260713: no retry/redirect",
+      "pass": true
+    },
+    {
+      "check": "esun-mna-index: original HTTP/length/SHA",
+      "pass": true
+    },
+    {
+      "check": "esun-mna-index: derived text/source fingerprint",
+      "pass": true
+    },
+    {
+      "check": "esun-mna-index: no retry/redirect",
+      "pass": true
+    },
+    {
+      "check": "esun-mna-qa: original HTTP/length/SHA",
+      "pass": true
+    },
+    {
+      "check": "esun-mna-qa: derived text/source fingerprint",
+      "pass": true
+    },
+    {
+      "check": "esun-mna-qa: no retry/redirect",
+      "pass": true
+    },
+    {
+      "check": "nhi-capital-surplus: 403 preserved without usable archive",
+      "pass": true
+    },
+    {
+      "check": "tcc-capital-surplus-2026: original HTTP/length/SHA",
+      "pass": true
+    },
+    {
+      "check": "tcc-capital-surplus-2026: derived text/source fingerprint",
+      "pass": true
+    },
+    {
+      "check": "tcc-capital-surplus-2026: no retry/redirect",
+      "pass": true
+    },
+    {
+      "check": "2884 issuer title/date/unit ratio",
+      "pass": true
+    },
+    {
+      "check": "published stock quantity agrees with original precision",
+      "pass": true
+    },
+    {
+      "check": "issuer index directly links mna01.pdf",
+      "pass": true
+    },
+    {
+      "check": "issuer index directly links mna09QA.pdf",
+      "pass": true
+    },
+    {
+      "check": "issuer index directly links mna_20260713.pdf",
+      "pass": true
+    },
+    {
+      "check": "MNA ratio versions separate",
+      "pass": true
+    },
+    {
+      "check": "MNA applies to target holders and certificates",
+      "pass": true
+    },
+    {
+      "check": "TCC evidence is proposal with capital surplus",
+      "pass": true
+    },
+    {
+      "check": "remaining personal/precision/listing facts still unknown",
+      "pass": true
+    },
+    {
+      "check": "no new engine/trading/catalog qualification",
+      "pass": true
+    },
+    {
+      "check": "saved windows 70 refused / 2 insufficient",
+      "pass": true
+    },
+    {
+      "check": "saved six-plan total returns all null",
+      "pass": true
+    },
+    {
+      "check": "all original tracked files preserved except additive root entrypoints",
+      "pass": true
+    },
+    {
+      "check": "CONTINUE_IN_WORK_MODE.md: original bytes remain exact suffix",
+      "pass": true
+    },
+    {
+      "check": "M1_V019_GRAPH_CORE_RESUME_HANDOFF.md: original bytes remain exact suffix",
+      "pass": true
+    },
+    {
+      "check": "AGENTS.md: original bytes remain exact suffix",
+      "pass": true
+    }
+  ],
+  "direct_official_archives": 6,
+  "failed_archive_attempts": 1,
+  "new_unit_tests_run": 0,
+  "ledger_calls": 0,
+  "strategy_replays": 0,
+  "browser_runs": 0,
+  "android": "NOT_TESTED_NEW_BUILD",
+  "product_or_classifier_validated": false
+}

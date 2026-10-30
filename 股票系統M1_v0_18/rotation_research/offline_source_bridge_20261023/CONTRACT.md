@@ -1,0 +1,16 @@
+# 離線來源橋接0.6契約
+
+1. schema `rotation-offline-source-bridge/0.6` 為獨立新附層，精確嵌入原 `rotation-source-diagnostics/0.5`（ID sha256:3b8214422041a4a18bb2ed90bad1a7881e31c784682188641fbf4e1a27f07e0b）。parent0.5含正式0.4與parent0.3，coverage保持相同INCOMPLETE，原事件／source inventory／failed captures／UNKNOWN診斷不改。不是金融引擎或策略升版。
+2. 外部reader只接受已提交的原橋接ZIP：941229bytes、SHA ecc413ca28fce87085666b87b3c3a6d1bf784ef553b32d2198b8bb72bebeedce、41唯一成員、40manifest列項、CRC及逐件SHA／長度一致，拒絕路徑穿越／重複／symlink。github_reference與原facts僅供對照，不展開覆蓋專案。完整前身16795237bytes／91項僅Work先前核對證詞，不說本輪獨立重驗前身大包。
+3. 本輪由固定8aecb50的GitHub raw實際讀回ZIP並與git checkout全bytes比較；bridge-acquisition保留URL、HTTP200、SHA及本次讀回時點。離線原件原URL、HTTP200、長度、SHA、meta原observed_at、PDF magic／單頁抽字、官方頁面／script／query chain另外核對。只讀封存原件，三網域限制沒有解除，也沒有新官方連線。
+4. 新sources共7原件：2停牌PDF、1法律API JSON、1官方頁、2官方script、1官方搜尋回應；只形成2停牌起日＋1一般法律觀察，非7獨立行動／法規。meta observed_at保持原文，不用HTTP Date／Last-Modified作announced_at。sources.captured_at是原meta觀察時間，ingested_at是本次固定GitHub讀回；新obs.observed_at採ingested_at，source_captured_at另存。捕捉≤讀回≤可查觀察時間；不得因原捕捉較早便假裝這個附層歷史已可用。離線重現複製已封存觀察，不冒稱未來環境新官方捕捉。
+5. PDF parser核對明示issuer、普通股instrument、文件日期、所有標題／內文「自…起暫停交易」日期一致，不能靠復牌日倒推。1101文件2025/8/12、起日8/13；2884文件2025/11/4、起日11/5。document_date是文件日期，不是公告可得時點。suspension_start_date是起日，suspension_end_date維持null。起日、文件日期、除息交易日、終日角色不可互借。
+6. 新quote_diagnostic保留精確parent_diagnostic，原原因UNKNOWN不覆寫。僅在來源明示股票與起日匹配時，新原因DIRECT_OFFICIAL_SUSPENSION_START_ON_DATE，security_tradable=false。其他日期／其他股票不延伸；不推整段停牌或終點。既有1101的8/14復牌證據另存相關提示，不自動換成停牌終點，2884直接復牌仍缺。
+7. 市場官方session仍開市，個股停牌不是全市場休市。Raw close仍原null，不補K線、不沿前價、不自定估值或成交政策；imputed_close／valuation為null，execution_qualified=false，missing_quote_blocks_accounting=true保持。來源解釋不解除原帳缺價拒算，也不憑單純市場開市認證個股可成交。
+8. 真財政部API固定原回應12953bytes、SHA0616b330…44b65b3保持。核Code='1'、Data.Table恰一筆、TaxAct所得稅法、TaxVer一一四年版、Title一51公司將資本公積以現金方式發給股東之課稅規定、Article第十四條、Terms=1、Subsection=51及完整Content字串SHA。函令日期實為101/08/17台財稅字第10100097670號令。新獨立parser接受此實際格式；原合成分支parser及測試不改、不把原文改成其期待字樣。
+9. 官網HTML hidden id143802、實際script src、FB12001→/Api/PostData、TaxSN id、thisFuncName／ajax POST、query meta FunctionID／ObjParams與封存搜尋TaxSN／TaxAct／TaxVer／Title／Content相符。不是對動態JS執行或官網現況的瀏覽器驗收。ViewCount不進語義投影，合成修改ViewCount可語義相同；原封存bytes／SHA仍固定。新回應須另存新版本，不能覆寫原回應或要求未來整份SHA相同。
+10. 函釋觀察只屬GENERAL／NOT_INVESTOR_SPECIFIC／NOT_AN_ENTITLEMENT。可引用一般條文及認定依決議／未載明依帳冊的規範；不能因此決定台泥具體資本公積細項、投資人稅籍、免稅、零保費／匯費或個人淨入帳。相關欄位全null，所有來源欄位只有SOURCE_DIAGNOSTIC用途，FINAL_LEDGER拒用。完整歷史法規可得與當時適用仍未核。
+11. resolve重用原明選version、issuer／原股／instrument／action_type／field／unit／date_role／帶時區observed_as_of門檻；未知不補零、不得自選最新或回填歷史。pure validate另外拒絕終點、角色、對象、個人淨額及coverage的重新指紋升格。historical_signal_eligible=false、primary_pressure_id=null、policy_authorized=false保持。
+12. qualify只綁明確新catalog後委派原parent0.5只拒算路徑，完整保留所有parent拒算與新界線；沒有成功數值回放路徑。輸入自填完整旗標不能蓋掉來源缺口、淨分配或期初權利。producer重核122份行情原件與16市場月報，70窗實際拒算、2不足、8換股影響未支援；全部daily／journal空、淨報酬null，numeric replay／六方案0。新實測不宣稱已支持合格真實淨帳。
+13. 新來源與PDF有限視讀、原件／meta竄改、issuer／instrument／日期／API欄位錯配、起日不延伸、ViewCount變動、淨額／coverage／期初權利拒算及原parent／舊成品保存定向驗收。合成負例只是工程測試，非市場樣本；原61項在本輪有實際重跑才列回歸。無新UI／Android，NOT_TESTED_NEW_BUILD不變。
+14. 原0.5／正式0.4／0.3、scope／resolution／source producers／action_ledger／core／策略參數／庫／Raw資料／歷史／舊頁ZIP及main保持。完整行動減資、7/25後權息、2884實配／可賣／畸零／既有股東換股影響、台泥最後調整與細項、淨入帳及九起日期初權利仍缺。員工、原2867與既有2884權利不互借，預計非完成、登記非上市、公司發放非個人淨收，私人原件不公開。所有受拒來源不重試／繞過，草稿未套用；全換／分批仍研究變數，不新增門檻或自動交易。

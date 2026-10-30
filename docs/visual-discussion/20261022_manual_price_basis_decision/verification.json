@@ -1,0 +1,79 @@
+{
+  "schema": "manual-price-basis-document-verification/0.1",
+  "status": "PASS_DOCUMENT_CONSISTENCY_ONLY",
+  "checks": [
+    {
+      "check": "user quote retained exact",
+      "passed": true
+    },
+    {
+      "check": "manual analysis scope confirmed",
+      "passed": true
+    },
+    {
+      "check": "market question no longer prerequisite",
+      "passed": true
+    },
+    {
+      "check": "no automatic switch authorized",
+      "passed": true
+    },
+    {
+      "check": "specific B selection not invented",
+      "passed": true
+    },
+    {
+      "check": "no silent Raw fallback",
+      "passed": true
+    },
+    {
+      "check": "no functional acceptance claimed",
+      "passed": true
+    },
+    {
+      "check": "four root histories and highest goal preserved",
+      "passed": true
+    }
+  ],
+  "root_preservation": [
+    {
+      "path": "AGENTS.md",
+      "base_blob": "c015e96502da9191c5d3423eb93cc5463977dc1a",
+      "body_exact_outside_insert_and_listed_formatting_fixes": true,
+      "formatting_fixes": [
+        "remove standalone heading marker introduced by prior insertion",
+        "restore original heading level in previous price-basis section"
+      ],
+      "highest_goal_unchanged": true
+    },
+    {
+      "path": "CONTINUE_IN_WORK_MODE.md",
+      "base_blob": "42a8205b43a297aafbaa90e95f80fe1dab3d8dd0",
+      "body_exact_outside_insert_and_listed_formatting_fixes": true,
+      "formatting_fixes": [
+        "remove standalone heading marker introduced by prior insertion",
+        "restore original heading level in previous price-basis section"
+      ],
+      "highest_goal_unchanged": true
+    },
+    {
+      "path": "M1_V019_GRAPH_CORE_RESUME_HANDOFF.md",
+      "base_blob": "dd0022a603f1938e76605075f7e108e13589b916",
+      "body_exact_outside_insert_and_listed_formatting_fixes": true,
+      "formatting_fixes": [],
+      "highest_goal_unchanged": true
+    },
+    {
+      "path": "PROJECT_VISION.md",
+      "base_blob": "e01a6dc90b3495ac8aeb49c731aa9b09c1041e8e",
+      "body_exact_outside_insert_and_listed_formatting_fixes": true,
+      "formatting_fixes": [],
+      "highest_goal_unchanged": true
+    }
+  ],
+  "product_code_changes": 0,
+  "product_tests_run": 0,
+  "browser_android_tests": 0,
+  "new_charts": 0,
+  "old_42_checks": "Prior B research; not rerun or attributed to this decision"
+}

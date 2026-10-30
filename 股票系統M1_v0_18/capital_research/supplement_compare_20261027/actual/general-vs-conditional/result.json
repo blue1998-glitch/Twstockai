@@ -1,0 +1,149 @@
+{
+  "schema": "capital-supplement-comparison/0.1",
+  "synthetic": true,
+  "status": "COMPARABLE",
+  "comparable": true,
+  "refusals": [],
+  "differences": [],
+  "total_mismatches": 0,
+  "details_truncated": false,
+  "common_binding": {
+    "generation_id": "sha256:c5e6483eb0180f5b948ff0f730be8c844d196b59bbf2d35cd2245223dee04897",
+    "parent_header_id": "sha256:9b7c3c8bbd7487e9eac97d18fe1a4208eeb4afbc745b6a527a9aac4a3cf584e8",
+    "parent_operation_id": "demo-no-selection",
+    "parent_request_id": "sha256:45da9caa2dae3ec1925da12fd4863b7e6c7a676cbc726dae4967d5e023b991be",
+    "parent_result_id": "sha256:b426b70347924c87074c2a9be86e9580cd9b8e6c2ee51269e86ab49243a85b56",
+    "source_binding": {
+      "account_id": "sha256:8ba782b921772678f8be492480ccc08d8c8b5e85bdde3c4fea55cc4a2f5aca6d",
+      "checkpoint_id": "sha256:7b29db36fd70625194c4780f722afd2c1b8f9e8da284bb06ae1e0a7e8ee90573",
+      "data_cutoff": "2026-01-12T16:00:00+08:00",
+      "decision_at": "2026-01-12T17:00:00+08:00",
+      "decision_reviewed_tokens": [
+        "fixture:event_id:A-event",
+        "fixture:event_id:B-event",
+        "fixture:event_id:B-new-independent",
+        "fixture:event_id:B-prior-approved",
+        "fixture:event_id:C-event",
+        "fixture:formation_id:A-formation",
+        "fixture:formation_id:B-formation",
+        "fixture:formation_id:B-new-formation",
+        "fixture:formation_id:B-prior-formation",
+        "fixture:formation_id:C-formation",
+        "fixture:volume_bar_id:A-bar",
+        "fixture:volume_bar_id:B-bar",
+        "fixture:volume_bar_id:B-new-bar",
+        "fixture:volume_bar_id:B-prior-bar",
+        "fixture:volume_bar_id:C-bar"
+      ],
+      "execution_result_id": "sha256:eceefb90ad3547042a2dc0a0d762dec463bbb27e868c48c657b5a52a71965aaf",
+      "generation_document_id": "sha256:b439353befd087d47939869547a99972ee8e7cd3cf55dae3e5277b675a37fe50",
+      "historical_reviewed_tokens": [
+        "fixture:event_id:A-event",
+        "fixture:event_id:B-event",
+        "fixture:event_id:B-prior-approved",
+        "fixture:event_id:C-event",
+        "fixture:formation_id:A-formation",
+        "fixture:formation_id:B-formation",
+        "fixture:formation_id:B-prior-formation",
+        "fixture:formation_id:C-formation",
+        "fixture:volume_bar_id:A-bar",
+        "fixture:volume_bar_id:B-bar",
+        "fixture:volume_bar_id:B-prior-bar",
+        "fixture:volume_bar_id:C-bar"
+      ],
+      "latest_common_account_id": "sha256:ca41094f720d2001d6162737a2841ef815e02c728023977faa61e426bfc71696",
+      "latest_decision_id": "sha256:f03924f56d36f1ef856520caf25f3d5103335e63e94dddfdcb5ce37e4fa527a5",
+      "origin_ledger_input_id": "sha256:39b145ccd42d3aa43b201f285abbe8efadc6b0df59071ac3d1c91ef0ad9ef018",
+      "quantity_request_id": "sha256:ab7b7539e4abcfaa05531ed5f5aeaa4cb397aa4b0eefd9bd70b99d09d0fba90a",
+      "received_attempt_ids": [
+        "sha256:0f9a09cf7e0248afab11a6e77c1c61fb9a59211549f86155c4b552b24af0fb62",
+        "sha256:7338fd88c811a7d80b1fcb8cb7169217c18fbabea91b3816c184b5e2d1e18162"
+      ],
+      "source_document_id": "sha256:c5e6483eb0180f5b948ff0f730be8c844d196b59bbf2d35cd2245223dee04897",
+      "source_input_id": "sha256:afa7b9084f0ec41168442e8cc913881da32a2a71ad8d4877b78c729fee9ceed2",
+      "state_id": "sha256:35c53e286afb907f69ebb4627dcbd947896196f18d419b6b8041275544e27cf8",
+      "versions": {
+        "adapter": "capital-quantity-after-retry/0.1",
+        "checkpoint": "capital-account-checkpoint/0.8",
+        "decision": "capital-decision/0.8",
+        "generation": "capital-quantity-candidates/0.2"
+      }
+    }
+  },
+  "columns": [
+    {
+      "label": "一般",
+      "supplement_id": "supp-general",
+      "result_id": "sha256:0872698e6ceff82b0d1d5e76fb69069386d40dd0446d1b6e797ed546b0f7ebc2",
+      "outcome": "COMPLETED_SUPPLEMENT_INTENT",
+      "choice_status": "RECORDED_RESEARCH_INTENT",
+      "source_check_status": "MATCHED",
+      "candidate_qualification": "CURRENTLY_FEASIBLE",
+      "selected_targets": {
+        "A": "60",
+        "B": "26",
+        "C": "2"
+      },
+      "requested_selection": {
+        "additional_B": "1",
+        "mode": "GRID",
+        "reason": "EXPLICIT_SYNTHETIC_SUPPLEMENT_NOT_NEW_TRADE",
+        "sell_A": "0"
+      },
+      "recorded_at": "2026-10-27T12:00:00+08:00",
+      "estimated_cost": "1.02",
+      "reasons": []
+    },
+    {
+      "label": "條件",
+      "supplement_id": "supp-conditional",
+      "result_id": "sha256:ca2739f3d86b45ad867c4eaed5cfc610ca8468bbe332b6d854f93e583be867d0",
+      "outcome": "COMPLETED_SUPPLEMENT_CONDITIONAL_INTENT",
+      "choice_status": "RECORDED_CONDITIONAL_RESEARCH_INTENT",
+      "source_check_status": "MATCHED",
+      "candidate_qualification": "WAIT_SETTLEMENT_REASSESSMENT",
+      "selected_targets": {
+        "A": "0",
+        "B": "63",
+        "C": "2"
+      },
+      "requested_selection": {
+        "additional_B": null,
+        "mode": "FULL_TRANSFER",
+        "reason": "EXPLICIT_SYNTHETIC_SUPPLEMENT_NOT_NEW_TRADE",
+        "sell_A": null
+      },
+      "recorded_at": "2026-10-27T12:00:00+08:00",
+      "estimated_cost": "5.36",
+      "reasons": []
+    }
+  ],
+  "provenance": [
+    {
+      "label": "一般",
+      "result_id": "sha256:0872698e6ceff82b0d1d5e76fb69069386d40dd0446d1b6e797ed546b0f7ebc2",
+      "parent_result_id": "sha256:b426b70347924c87074c2a9be86e9580cd9b8e6c2ee51269e86ab49243a85b56",
+      "generation_id": "sha256:c5e6483eb0180f5b948ff0f730be8c844d196b59bbf2d35cd2245223dee04897",
+      "binding_id": "sha256:5c7a04af14e4e5f863192be2f090da6306e5bbab1e529c8d0e25053045c90c33"
+    },
+    {
+      "label": "條件",
+      "result_id": "sha256:ca2739f3d86b45ad867c4eaed5cfc610ca8468bbe332b6d854f93e583be867d0",
+      "parent_result_id": "sha256:b426b70347924c87074c2a9be86e9580cd9b8e6c2ee51269e86ab49243a85b56",
+      "generation_id": "sha256:c5e6483eb0180f5b948ff0f730be8c844d196b59bbf2d35cd2245223dee04897",
+      "binding_id": "sha256:5c7a04af14e4e5f863192be2f090da6306e5bbab1e529c8d0e25053045c90c33"
+    }
+  ],
+  "scope": "SAVED_MUTUALLY_EXCLUSIVE_RESEARCH_INTENTS_NOT_EXECUTIONS_OR_PERFORMANCE",
+  "ranking": null,
+  "selected_label": null,
+  "order_generation": "NOT_PERFORMED",
+  "execution": "NOT_PERFORMED",
+  "execution_authorized": false,
+  "primary_pressure_id": null,
+  "data_qualified": false,
+  "execution_model_qualified": false,
+  "historical_signal_eligible": false,
+  "policy_authorized": false,
+  "live_execution_authorized": false
+}

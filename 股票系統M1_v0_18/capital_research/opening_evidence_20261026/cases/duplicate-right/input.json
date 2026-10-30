@@ -1,0 +1,361 @@
+{
+  "schema": "opening-entitlement-evidence-input/0.1",
+  "synthetic": true,
+  "clock_qualification": "EXPLICIT_SYNTHETIC_NOT_REAL_CLOSE",
+  "binding": {
+    "account_id": "SYNTHETIC-ACCOUNT-1",
+    "scenario_id": "SYNTHETIC-OPENING-1",
+    "currency": "TWD"
+  },
+  "assets": {
+    "1101": {
+      "price_source_id": "synthetic-price-1101",
+      "basis_id": "RAW",
+      "adjustment_version": "UNADJUSTED"
+    },
+    "2884": {
+      "price_source_id": "synthetic-price-2884",
+      "basis_id": "RAW",
+      "adjustment_version": "UNADJUSTED"
+    }
+  },
+  "as_of": "2026-01-02T16:00:00+08:00",
+  "data_cutoff": "2026-01-02T16:00:00+08:00",
+  "decision_at": "2026-01-02T17:00:00+08:00",
+  "sources": {
+    "fixture": {
+      "kind": "ENGINEERED_ACCOUNTING_FIXTURE_NOT_MARKET",
+      "sha256": "964f3e7543f05474b385a4d538ee0b3991cd1da1f4a43c37483ec5eb19366ce5",
+      "available_at": "2026-01-02T16:10:00+08:00",
+      "captured_at": "2026-10-26T00:00:00+00:00"
+    }
+  },
+  "evidence": {
+    "evidence:settled_cash": {
+      "field": "settled_cash",
+      "scope": {
+        "account_id": "SYNTHETIC-ACCOUNT-1",
+        "scenario_id": "SYNTHETIC-OPENING-1",
+        "currency": "TWD"
+      },
+      "as_of": "2026-01-02T16:00:00+08:00",
+      "available_at": "2026-01-02T16:10:00+08:00",
+      "source_id": "fixture",
+      "locator": "SYNTHETIC fixture/settled_cash",
+      "declared_value": "0",
+      "complete_outstanding_inventory": false
+    },
+    "evidence:reserved_cash": {
+      "field": "reserved_cash",
+      "scope": {
+        "account_id": "SYNTHETIC-ACCOUNT-1",
+        "scenario_id": "SYNTHETIC-OPENING-1",
+        "currency": "TWD"
+      },
+      "as_of": "2026-01-02T16:00:00+08:00",
+      "available_at": "2026-01-02T16:10:00+08:00",
+      "source_id": "fixture",
+      "locator": "SYNTHETIC fixture/reserved_cash",
+      "declared_value": "0",
+      "complete_outstanding_inventory": false
+    },
+    "evidence:payables": {
+      "field": "payables",
+      "scope": {
+        "account_id": "SYNTHETIC-ACCOUNT-1",
+        "scenario_id": "SYNTHETIC-OPENING-1",
+        "currency": "TWD"
+      },
+      "as_of": "2026-01-02T16:00:00+08:00",
+      "available_at": "2026-01-02T16:10:00+08:00",
+      "source_id": "fixture",
+      "locator": "SYNTHETIC fixture/payables",
+      "declared_value": [],
+      "complete_outstanding_inventory": true
+    },
+    "evidence:pending_orders": {
+      "field": "pending_orders",
+      "scope": {
+        "account_id": "SYNTHETIC-ACCOUNT-1",
+        "scenario_id": "SYNTHETIC-OPENING-1",
+        "currency": "TWD"
+      },
+      "as_of": "2026-01-02T16:00:00+08:00",
+      "available_at": "2026-01-02T16:10:00+08:00",
+      "source_id": "fixture",
+      "locator": "SYNTHETIC fixture/pending_orders",
+      "declared_value": [],
+      "complete_outstanding_inventory": true
+    },
+    "evidence:holdings.1101.shares": {
+      "field": "holdings.1101.shares",
+      "scope": {
+        "account_id": "SYNTHETIC-ACCOUNT-1",
+        "scenario_id": "SYNTHETIC-OPENING-1",
+        "currency": "TWD",
+        "code": "1101",
+        "price_source_id": "synthetic-price-1101",
+        "basis_id": "RAW",
+        "adjustment_version": "UNADJUSTED"
+      },
+      "as_of": "2026-01-02T16:00:00+08:00",
+      "available_at": "2026-01-02T16:10:00+08:00",
+      "source_id": "fixture",
+      "locator": "SYNTHETIC fixture/holdings.1101.shares",
+      "declared_value": "20000",
+      "complete_outstanding_inventory": false
+    },
+    "evidence:holdings.1101.sellable": {
+      "field": "holdings.1101.sellable",
+      "scope": {
+        "account_id": "SYNTHETIC-ACCOUNT-1",
+        "scenario_id": "SYNTHETIC-OPENING-1",
+        "currency": "TWD",
+        "code": "1101",
+        "price_source_id": "synthetic-price-1101",
+        "basis_id": "RAW",
+        "adjustment_version": "UNADJUSTED"
+      },
+      "as_of": "2026-01-02T16:00:00+08:00",
+      "available_at": "2026-01-02T16:10:00+08:00",
+      "source_id": "fixture",
+      "locator": "SYNTHETIC fixture/holdings.1101.sellable",
+      "declared_value": "20000",
+      "complete_outstanding_inventory": false
+    },
+    "evidence:entitlements.1101.cash_claims": {
+      "field": "entitlements.1101.cash_claims",
+      "scope": {
+        "account_id": "SYNTHETIC-ACCOUNT-1",
+        "scenario_id": "SYNTHETIC-OPENING-1",
+        "currency": "TWD",
+        "code": "1101",
+        "price_source_id": "synthetic-price-1101",
+        "basis_id": "RAW",
+        "adjustment_version": "UNADJUSTED"
+      },
+      "as_of": "2026-01-02T16:00:00+08:00",
+      "available_at": "2026-01-02T16:10:00+08:00",
+      "source_id": "fixture",
+      "locator": "SYNTHETIC fixture/entitlements.1101.cash_claims",
+      "declared_value": [
+        {
+          "id": "SYNTHETIC-PRIOR-CASH-1",
+          "event_id": "SYNTHETIC-PRIOR-EVENT-1",
+          "entitlement_at": "2025-12-15T16:00:00+08:00",
+          "amount_net": "9",
+          "currency": "TWD",
+          "pay_date": "2026-01-08",
+          "payment_status": "OUTSTANDING"
+        }
+      ],
+      "complete_outstanding_inventory": true
+    },
+    "evidence:entitlements.1101.share_claims": {
+      "field": "entitlements.1101.share_claims",
+      "scope": {
+        "account_id": "SYNTHETIC-ACCOUNT-1",
+        "scenario_id": "SYNTHETIC-OPENING-1",
+        "currency": "TWD",
+        "code": "1101",
+        "price_source_id": "synthetic-price-1101",
+        "basis_id": "RAW",
+        "adjustment_version": "UNADJUSTED"
+      },
+      "as_of": "2026-01-02T16:00:00+08:00",
+      "available_at": "2026-01-02T16:10:00+08:00",
+      "source_id": "fixture",
+      "locator": "SYNTHETIC fixture/entitlements.1101.share_claims",
+      "declared_value": [
+        {
+          "id": "SYNTHETIC-PRIOR-CASH-1",
+          "event_id": "SYNTHETIC-PRIOR-EVENT-2",
+          "entitlement_at": "2025-12-15T16:00:00+08:00",
+          "shares": "10",
+          "delivery_date": "2026-01-08",
+          "tradable_date": "2026-01-09",
+          "delivery_status": "PENDING"
+        }
+      ],
+      "complete_outstanding_inventory": true
+    },
+    "evidence:holdings.2884.shares": {
+      "field": "holdings.2884.shares",
+      "scope": {
+        "account_id": "SYNTHETIC-ACCOUNT-1",
+        "scenario_id": "SYNTHETIC-OPENING-1",
+        "currency": "TWD",
+        "code": "2884",
+        "price_source_id": "synthetic-price-2884",
+        "basis_id": "RAW",
+        "adjustment_version": "UNADJUSTED"
+      },
+      "as_of": "2026-01-02T16:00:00+08:00",
+      "available_at": "2026-01-02T16:10:00+08:00",
+      "source_id": "fixture",
+      "locator": "SYNTHETIC fixture/holdings.2884.shares",
+      "declared_value": "0",
+      "complete_outstanding_inventory": false
+    },
+    "evidence:holdings.2884.sellable": {
+      "field": "holdings.2884.sellable",
+      "scope": {
+        "account_id": "SYNTHETIC-ACCOUNT-1",
+        "scenario_id": "SYNTHETIC-OPENING-1",
+        "currency": "TWD",
+        "code": "2884",
+        "price_source_id": "synthetic-price-2884",
+        "basis_id": "RAW",
+        "adjustment_version": "UNADJUSTED"
+      },
+      "as_of": "2026-01-02T16:00:00+08:00",
+      "available_at": "2026-01-02T16:10:00+08:00",
+      "source_id": "fixture",
+      "locator": "SYNTHETIC fixture/holdings.2884.sellable",
+      "declared_value": "0",
+      "complete_outstanding_inventory": false
+    },
+    "evidence:entitlements.2884.cash_claims": {
+      "field": "entitlements.2884.cash_claims",
+      "scope": {
+        "account_id": "SYNTHETIC-ACCOUNT-1",
+        "scenario_id": "SYNTHETIC-OPENING-1",
+        "currency": "TWD",
+        "code": "2884",
+        "price_source_id": "synthetic-price-2884",
+        "basis_id": "RAW",
+        "adjustment_version": "UNADJUSTED"
+      },
+      "as_of": "2026-01-02T16:00:00+08:00",
+      "available_at": "2026-01-02T16:10:00+08:00",
+      "source_id": "fixture",
+      "locator": "SYNTHETIC fixture/entitlements.2884.cash_claims",
+      "declared_value": [],
+      "complete_outstanding_inventory": true
+    },
+    "evidence:entitlements.2884.share_claims": {
+      "field": "entitlements.2884.share_claims",
+      "scope": {
+        "account_id": "SYNTHETIC-ACCOUNT-1",
+        "scenario_id": "SYNTHETIC-OPENING-1",
+        "currency": "TWD",
+        "code": "2884",
+        "price_source_id": "synthetic-price-2884",
+        "basis_id": "RAW",
+        "adjustment_version": "UNADJUSTED"
+      },
+      "as_of": "2026-01-02T16:00:00+08:00",
+      "available_at": "2026-01-02T16:10:00+08:00",
+      "source_id": "fixture",
+      "locator": "SYNTHETIC fixture/entitlements.2884.share_claims",
+      "declared_value": [],
+      "complete_outstanding_inventory": true
+    }
+  },
+  "declarations": {
+    "settled_cash": {
+      "state": "SOURCE_DECLARED",
+      "value": "0",
+      "evidence_ids": [
+        "evidence:settled_cash"
+      ]
+    },
+    "reserved_cash": {
+      "state": "SOURCE_DECLARED",
+      "value": "0",
+      "evidence_ids": [
+        "evidence:reserved_cash"
+      ]
+    },
+    "payables": {
+      "state": "SOURCE_DECLARED",
+      "value": [],
+      "evidence_ids": [
+        "evidence:payables"
+      ]
+    },
+    "pending_orders": {
+      "state": "SOURCE_DECLARED",
+      "value": [],
+      "evidence_ids": [
+        "evidence:pending_orders"
+      ]
+    },
+    "holdings.1101.shares": {
+      "state": "SOURCE_DECLARED",
+      "value": "20000",
+      "evidence_ids": [
+        "evidence:holdings.1101.shares"
+      ]
+    },
+    "holdings.1101.sellable": {
+      "state": "SOURCE_DECLARED",
+      "value": "20000",
+      "evidence_ids": [
+        "evidence:holdings.1101.sellable"
+      ]
+    },
+    "entitlements.1101.cash_claims": {
+      "state": "SOURCE_DECLARED",
+      "value": [
+        {
+          "id": "SYNTHETIC-PRIOR-CASH-1",
+          "event_id": "SYNTHETIC-PRIOR-EVENT-1",
+          "entitlement_at": "2025-12-15T16:00:00+08:00",
+          "amount_net": "9",
+          "currency": "TWD",
+          "pay_date": "2026-01-08",
+          "payment_status": "OUTSTANDING"
+        }
+      ],
+      "evidence_ids": [
+        "evidence:entitlements.1101.cash_claims"
+      ]
+    },
+    "entitlements.1101.share_claims": {
+      "state": "SOURCE_DECLARED",
+      "value": [
+        {
+          "id": "SYNTHETIC-PRIOR-CASH-1",
+          "event_id": "SYNTHETIC-PRIOR-EVENT-2",
+          "entitlement_at": "2025-12-15T16:00:00+08:00",
+          "shares": "10",
+          "delivery_date": "2026-01-08",
+          "tradable_date": "2026-01-09",
+          "delivery_status": "PENDING"
+        }
+      ],
+      "evidence_ids": [
+        "evidence:entitlements.1101.share_claims"
+      ]
+    },
+    "holdings.2884.shares": {
+      "state": "SOURCE_DECLARED",
+      "value": "0",
+      "evidence_ids": [
+        "evidence:holdings.2884.shares"
+      ]
+    },
+    "holdings.2884.sellable": {
+      "state": "SOURCE_DECLARED",
+      "value": "0",
+      "evidence_ids": [
+        "evidence:holdings.2884.sellable"
+      ]
+    },
+    "entitlements.2884.cash_claims": {
+      "state": "SOURCE_DECLARED",
+      "value": [],
+      "evidence_ids": [
+        "evidence:entitlements.2884.cash_claims"
+      ]
+    },
+    "entitlements.2884.share_claims": {
+      "state": "SOURCE_DECLARED",
+      "value": [],
+      "evidence_ids": [
+        "evidence:entitlements.2884.share_claims"
+      ]
+    }
+  }
+}

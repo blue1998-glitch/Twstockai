@@ -1,0 +1,95 @@
+{
+  "input_id": "sha256:afa7b9084f0ec41168442e8cc913881da32a2a71ad8d4877b78c729fee9ceed2",
+  "context": {
+    "prec": 28,
+    "rounding": "ROUND_HALF_EVEN",
+    "Emin": -999999,
+    "Emax": 999999,
+    "capitals": 1,
+    "clamp": 0,
+    "traps": [
+      "InvalidOperation",
+      "DivisionByZero",
+      "Overflow",
+      "Inexact"
+    ],
+    "flags": []
+  },
+  "error": {
+    "type": "Inexact",
+    "detail": "[<class 'decimal.Inexact'>]"
+  },
+  "traceback": "Traceback (most recent call last):\n  File \"/workspace/Twstockai/股票系統M1_v0_18/capital_research/after_retry_context_20261027/diagnose_boundary.py\", line 26, in main\n    generate_after_retry(data);error=None;trace=None\n    ^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"/workspace/Twstockai/股票系統M1_v0_18/capital_research/quantity_after_retry.py\", line 25, in generate_after_retry\n    return _generate(request)\n           ^^^^^^^^^^^^^^^^^^\n  File \"/workspace/Twstockai/股票系統M1_v0_18/capital_research/quantity_after_retry.py\", line 82, in _generate\n    validate_checkpoint(cp)\n  File \"/workspace/Twstockai/股票系統M1_v0_18/capital_research/continuity.py\", line 164, in validate_checkpoint\n    rebuilt=make_checkpoint(checkpoint['origin_ledger_input'],checkpoint['execution_result'],\n            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"/workspace/Twstockai/股票系統M1_v0_18/capital_research/continuity.py\", line 137, in make_checkpoint\n    row,r=row_at(origin,execution['fills'],through_at[:10])\n          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"/workspace/Twstockai/股票系統M1_v0_18/capital_research/continuity.py\", line 32, in row_at\n    r=replay(ledger_prefix(origin,fills,day))\n      ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"/workspace/Twstockai/股票系統M1_v0_18/rotation_research/action_ledger.py\", line 103, in replay\n    return _replay(data, base)\n           ^^^^^^^^^^^^^^^^^^^\n  File \"/workspace/Twstockai/股票系統M1_v0_18/rotation_research/action_ledger.py\", line 221, in _replay\n    terminal_estimated_exit_cost=str(exit_cost),fees_and_tax_on_fills=str(costs),scenario_net_return=str(end/initial-1))\n                                                                                                         ~~~^~~~~~~~\ndecimal.Inexact: [<class 'decimal.Inexact'>]\n",
+  "calls": {
+    "bridge": 1,
+    "generate": 0,
+    "ledger_replay": 1,
+    "simulate": 0,
+    "retry": 0
+  },
+  "caller_before": {
+    "prec": 28,
+    "rounding": "ROUND_HALF_EVEN",
+    "Emin": -999999,
+    "Emax": 999999,
+    "capitals": 1,
+    "clamp": 0,
+    "traps": {
+      "InvalidOperation": true,
+      "FloatOperation": false,
+      "DivisionByZero": true,
+      "Overflow": true,
+      "Underflow": false,
+      "Subnormal": false,
+      "Inexact": true,
+      "Rounded": false,
+      "Clamped": false
+    },
+    "flags": {
+      "InvalidOperation": false,
+      "FloatOperation": false,
+      "DivisionByZero": false,
+      "Overflow": false,
+      "Underflow": false,
+      "Subnormal": false,
+      "Inexact": false,
+      "Rounded": false,
+      "Clamped": false
+    }
+  },
+  "caller_after": {
+    "prec": 28,
+    "rounding": "ROUND_HALF_EVEN",
+    "Emin": -999999,
+    "Emax": 999999,
+    "capitals": 1,
+    "clamp": 0,
+    "traps": {
+      "InvalidOperation": true,
+      "FloatOperation": false,
+      "DivisionByZero": true,
+      "Overflow": true,
+      "Underflow": false,
+      "Subnormal": false,
+      "Inexact": true,
+      "Rounded": false,
+      "Clamped": false
+    },
+    "flags": {
+      "InvalidOperation": false,
+      "FloatOperation": false,
+      "DivisionByZero": false,
+      "Overflow": false,
+      "Underflow": false,
+      "Subnormal": false,
+      "Inexact": false,
+      "Rounded": false,
+      "Clamped": false
+    }
+  },
+  "source_version": {
+    "path": "capital_research/quantity_after_retry.py",
+    "bytes": 9015,
+    "sha256": "33420629f1b8ac3d0a052bfe02d89b75b87954a01c34717aa0d5794d5e78d8e7"
+  }
+}

@@ -1,0 +1,81 @@
+{
+  "error": null,
+  "caller_before": {
+    "prec": 7,
+    "rounding": "ROUND_DOWN",
+    "Emin": -999999,
+    "Emax": 999999,
+    "capitals": 1,
+    "clamp": 0,
+    "traps": {
+      "InvalidOperation": true,
+      "FloatOperation": false,
+      "DivisionByZero": true,
+      "Overflow": true,
+      "Underflow": false,
+      "Subnormal": false,
+      "Inexact": false,
+      "Rounded": false,
+      "Clamped": false
+    },
+    "flags": {
+      "InvalidOperation": false,
+      "FloatOperation": false,
+      "DivisionByZero": false,
+      "Overflow": false,
+      "Underflow": false,
+      "Subnormal": false,
+      "Inexact": false,
+      "Rounded": false,
+      "Clamped": false
+    }
+  },
+  "caller_after": {
+    "prec": 7,
+    "rounding": "ROUND_DOWN",
+    "Emin": -999999,
+    "Emax": 999999,
+    "capitals": 1,
+    "clamp": 0,
+    "traps": {
+      "InvalidOperation": true,
+      "FloatOperation": false,
+      "DivisionByZero": true,
+      "Overflow": true,
+      "Underflow": false,
+      "Subnormal": false,
+      "Inexact": false,
+      "Rounded": false,
+      "Clamped": false
+    },
+    "flags": {
+      "InvalidOperation": false,
+      "FloatOperation": false,
+      "DivisionByZero": false,
+      "Overflow": false,
+      "Underflow": false,
+      "Subnormal": false,
+      "Inexact": false,
+      "Rounded": false,
+      "Clamped": false
+    }
+  },
+  "input_id": "sha256:7aa5664ead22751750477c9fbbb0e68b3c0d2ae233b00a7147c766b4479d48bb",
+  "input_unchanged": true,
+  "caller_context_unchanged": true,
+  "source_version": {
+    "path": "capital_research/quantity_after_retry.py",
+    "bytes": 9015,
+    "sha256": "33420629f1b8ac3d0a052bfe02d89b75b87954a01c34717aa0d5794d5e78d8e7"
+  },
+  "actual": {
+    "kind": "EXACT_EXISTING_ACTUAL",
+    "source": {
+      "path": "capital_research/quantity_after_retry_20261027/after-final/old-trigger/actual.json",
+      "bytes": 627841,
+      "sha256": "f42d7466f57b94350a172e6156b41148d432ea64095d5edae90d2e9d91999388"
+    },
+    "id": "sha256:1c55bcc95bbd96a04653a0b55569e806a39aba8f202901003bde1a86dd6a054c"
+  },
+  "equal_original": true
+}

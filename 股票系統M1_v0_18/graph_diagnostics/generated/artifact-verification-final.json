@@ -1,0 +1,93 @@
+{
+  "status": "PASS",
+  "html_sha256": "eb6d1e82da13db58a592d0868822fec9209bedfaf1ff4843440749677cad1baa",
+  "previous_numerically_recomputed_html_sha256": "f23913fa9c2318e34496810632821628cedf3bc23eb289d018be442ef9adf0e7",
+  "numeric_transport_byte_identical": true,
+  "current_display_source_reproduces_html": true,
+  "prior_core_prefixes_recomputed": 60,
+  "prior_diagnostic_prefixes_recomputed": 60,
+  "prior_numeric_report_sha256": "a37da80558fa9bbc17bd673add9a91606e15eacc626c9b2d1bc99e95a63f563b",
+  "numeric_prefixes_recomputed_this_command": 0,
+  "oracles_unchanged": 60,
+  "series": [
+    {
+      "code": "1101",
+      "bars": 1213,
+      "prefixes": 15,
+      "latest": {
+        "accuracy": null,
+        "candidate_versions": 89,
+        "enumeration_decisions": {
+          "EMITTED": 89,
+          "REJECTED_GEOMETRY": 7442,
+          "VALID_NOT_SELECTED_BY_LONGEST_OR_FOUR_TURN_POLICY": 32
+        },
+        "exact_source_geometry_groups": 84,
+        "independent_pattern_count": null,
+        "original_rejected_geometry_runs_meaning": "ENDPOINTS_WITH_NO_VALID_SUFFIX_NOT_REJECTED_TRIAL_COUNT"
+      },
+      "latest_core_result_id": "sha256:ec7bca9ed6aa176c328fd8c4e94a31ea66967832e7089ac20a44090461f49da4",
+      "latest_diagnostic_id": "sha256:9e12e201467b757c585325cd91b2d3126531394f8cdab28b47deef234086e640"
+    },
+    {
+      "code": "2884",
+      "bars": 1213,
+      "prefixes": 15,
+      "latest": {
+        "accuracy": null,
+        "candidate_versions": 34,
+        "enumeration_decisions": {
+          "EMITTED": 34,
+          "REJECTED_GEOMETRY": 3506,
+          "VALID_NOT_SELECTED_BY_LONGEST_OR_FOUR_TURN_POLICY": 4
+        },
+        "exact_source_geometry_groups": 34,
+        "independent_pattern_count": null,
+        "original_rejected_geometry_runs_meaning": "ENDPOINTS_WITH_NO_VALID_SUFFIX_NOT_REJECTED_TRIAL_COUNT"
+      },
+      "latest_core_result_id": "sha256:5075494e247833bd0fc2e60a371a74978b59c302b2510188c2430a0518816269",
+      "latest_diagnostic_id": "sha256:7e7ffb64781c9e05b9af3b898bdcce5872060600beac0e4c9391af51e5c7bb17"
+    },
+    {
+      "code": "6488",
+      "bars": 1214,
+      "prefixes": 15,
+      "latest": {
+        "accuracy": null,
+        "candidate_versions": 158,
+        "enumeration_decisions": {
+          "EMITTED": 158,
+          "REJECTED_GEOMETRY": 22628,
+          "VALID_NOT_SELECTED_BY_LONGEST_OR_FOUR_TURN_POLICY": 57
+        },
+        "exact_source_geometry_groups": 146,
+        "independent_pattern_count": null,
+        "original_rejected_geometry_runs_meaning": "ENDPOINTS_WITH_NO_VALID_SUFFIX_NOT_REJECTED_TRIAL_COUNT"
+      },
+      "latest_core_result_id": "sha256:bab88d56023a6f9302553a8fcb960b362f9951cf37a86af2e59680b3afd372d7",
+      "latest_diagnostic_id": "sha256:35cf6f21318c97d6adebe2b648ae247337b3ae6daa8dfec322a3dfed5d843c04"
+    },
+    {
+      "code": "8069",
+      "bars": 1214,
+      "prefixes": 15,
+      "latest": {
+        "accuracy": null,
+        "candidate_versions": 279,
+        "enumeration_decisions": {
+          "EMITTED": 279,
+          "REJECTED_GEOMETRY": 57877,
+          "VALID_NOT_SELECTED_BY_LONGEST_OR_FOUR_TURN_POLICY": 60
+        },
+        "exact_source_geometry_groups": 260,
+        "independent_pattern_count": null,
+        "original_rejected_geometry_runs_meaning": "ENDPOINTS_WITH_NO_VALID_SUFFIX_NOT_REJECTED_TRIAL_COUNT"
+      },
+      "latest_core_result_id": "sha256:48ba04e8374badc0daad4dd6d241f065b36bd1af7293fc89e327927ac0e31694",
+      "latest_diagnostic_id": "sha256:867ee58314046f81a76fc237a52cfd3b1c2d3364760e352bd2599495d34b5078"
+    }
+  ],
+  "scope": "Verified actual prior full re-execution and byte-identical numeric transport, not a second numerical rerun",
+  "android": "NOT_TESTED_NEW_BUILD",
+  "core_usefulness": "NOT_ESTABLISHED"
+}

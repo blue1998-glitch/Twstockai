@@ -1,0 +1,1 @@
+三個完整ZIP各含部分檔案，全部解壓至同一資料夾。已包含全部離線資產與最新source，不需舊ZIP或bootstrap覆蓋。先讀 CONTINUE_IN_WORK_MODE.md 最新節。新頁在 股票系統M1_v0_18/product_candidate/generated/M1_v0_19_attempt_candidate.html；勾選啟用，明選來源及時點。舊v0.19頁也保留在generated。全為假想嘗試工程例，真實行情／自動選區／Android實機未完成。只有Git checkout才需從repository root跑 python3 codex/bootstrap_m1.py --hydrate-missing。PROJECT_FILE_MANIFEST.json是本包精確指紋；舊output指紋仍為歷史基準。

@@ -1,0 +1,7 @@
+{
+  "problem": "Frozen missing-token input is exactly the same JSON and bytes as checkpoint-new-trigger; raw input tokens were already empty. Original resume unions checkpoint tokens into saved baseline.",
+  "frozen_oracle_retained": true,
+  "identical_input_sha256": "a688cfc1fd938b7edbf1d26ca8af08a5c49493d441cd7b9938adaf36f3fa6711",
+  "corrected_negative": "Remove one historical token from saved baseline; retain checkpoint and re-sign structural baseline, with no numeric recalculation.",
+  "source_snapshot": "Recovered immediately from the single known guard diff; length/SHA verified exactly against initial actual/source-versions.json. Initial diagnostic save had failed because diagnostics directory did not exist."
+}

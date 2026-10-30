@@ -1,0 +1,126 @@
+{
+  "contexts": [
+    {
+      "name": "normal",
+      "context": {
+        "prec": 28,
+        "rounding": "ROUND_HALF_EVEN",
+        "Emin": -999999,
+        "Emax": 999999,
+        "capitals": 1,
+        "clamp": 0,
+        "traps": [
+          "InvalidOperation",
+          "DivisionByZero",
+          "Overflow"
+        ],
+        "flags": []
+      }
+    },
+    {
+      "name": "round-up",
+      "context": {
+        "prec": 7,
+        "rounding": "ROUND_UP",
+        "Emin": -999999,
+        "Emax": 999999,
+        "capitals": 1,
+        "clamp": 0,
+        "traps": [
+          "InvalidOperation",
+          "DivisionByZero",
+          "Overflow"
+        ],
+        "flags": []
+      }
+    },
+    {
+      "name": "round-down",
+      "context": {
+        "prec": 7,
+        "rounding": "ROUND_DOWN",
+        "Emin": -999999,
+        "Emax": 999999,
+        "capitals": 1,
+        "clamp": 0,
+        "traps": [
+          "InvalidOperation",
+          "DivisionByZero",
+          "Overflow"
+        ],
+        "flags": []
+      }
+    },
+    {
+      "name": "inexact-trap",
+      "context": {
+        "prec": 28,
+        "rounding": "ROUND_HALF_EVEN",
+        "Emin": -999999,
+        "Emax": 999999,
+        "capitals": 1,
+        "clamp": 0,
+        "traps": [
+          "InvalidOperation",
+          "DivisionByZero",
+          "Overflow",
+          "Inexact"
+        ],
+        "flags": []
+      }
+    },
+    {
+      "name": "narrow-exponents",
+      "context": {
+        "prec": 28,
+        "rounding": "ROUND_HALF_EVEN",
+        "Emin": -2,
+        "Emax": 2,
+        "capitals": 1,
+        "clamp": 0,
+        "traps": [
+          "InvalidOperation",
+          "DivisionByZero",
+          "Overflow",
+          "Underflow"
+        ],
+        "flags": []
+      }
+    }
+  ],
+  "preset": {
+    "prec": 5,
+    "rounding": "ROUND_FLOOR",
+    "Emin": -2,
+    "Emax": 2,
+    "capitals": 0,
+    "clamp": 1,
+    "traps": [
+      "InvalidOperation",
+      "DivisionByZero",
+      "Overflow",
+      "Inexact",
+      "Rounded",
+      "Underflow",
+      "Subnormal",
+      "Clamped",
+      "FloatOperation"
+    ],
+    "flags": [
+      "Inexact",
+      "Rounded"
+    ]
+  },
+  "references": [
+    {
+      "path": "capital_research/quantity_context_20261027/contexts.json",
+      "bytes": 1591,
+      "sha256": "79610bc3c53ab21c449aba8ceda0d847ca62b0a3c53b93835390b51fb94d0655"
+    },
+    {
+      "path": "capital_research/quantity_context_20261027/test-controls.json",
+      "bytes": 570,
+      "sha256": "38b5324a33a1d0db20db85cb78d1ee9a0124dacc3be5884ac10fef38ae212e70"
+    }
+  ]
+}

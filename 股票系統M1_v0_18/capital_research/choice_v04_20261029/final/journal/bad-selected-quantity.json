@@ -1,0 +1,38 @@
+{
+  "id": "bad-selected-quantity",
+  "schema": "rotation-record/0.1",
+  "value": {
+    "choice": {
+      "data_qualified": false,
+      "execution": "NOT_PERFORMED",
+      "execution_authorized": false,
+      "execution_model_qualified": false,
+      "historical_signal_eligible": false,
+      "live_execution_authorized": false,
+      "order_generation": "NOT_PERFORMED",
+      "policy_authorized": false,
+      "primary_pressure_id": null,
+      "purpose": "EXPLICIT_RESEARCH_INTENT_ONLY",
+      "ranking": null,
+      "reasons": [
+        "SAVED_TARGET_DELTA_CONFLICT"
+      ],
+      "record_id": "sha256:4b411b70c7ad9d996b3a1f4c2a21d3a1d8743f5691605bd6d214387d8bf925a5",
+      "recorded_at": "2026-01-05T15:00:00+08:00",
+      "rejected_candidate": null,
+      "request_id": "sha256:b13745bd74332887685c00ec451ece58292589f3d73f5b4095476d7c7e5b36dd",
+      "requested_selection": {
+        "additional_B": null,
+        "mode": "FULL_TRANSFER",
+        "reason": "明示合成研究意圖；非最佳量或交易批准",
+        "sell_A": null
+      },
+      "schema": "capital-research-choice/0.2",
+      "selected": null,
+      "source_binding": null,
+      "source_roles": null,
+      "status": "REFUSED",
+      "synthetic": true
+    }
+  }
+}

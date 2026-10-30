@@ -1,0 +1,988 @@
+{
+  "ABC-first-bar": {
+    "schema": "m1-persistent-followup-research/0.1",
+    "monitor_id": "sha256:7c5950be200940e7b6a48bf4776cffd5e8f6b9dcdef18e1594362c6fefbd302c",
+    "event_id": "sha256:d36035846ad061bc223276bb1c03163e2441b64ae88f69d592edf09a069be1f1",
+    "code": "1101",
+    "event_known_on": "2025-06-03",
+    "requested_cutoff": "2025-06-03",
+    "observed_through": "2025-06-03",
+    "observation_start": "2025-04-07",
+    "frozen_frame": {
+      "direction": "DOWN",
+      "lower": "28.45",
+      "upper": "31.40",
+      "frame_start": "2025-04-07",
+      "frame_observed_end": "2025-05-29",
+      "frame_records": 38,
+      "departure_date": "2025-06-02",
+      "frame_bars_fingerprint": "sha256:42bf0d19f5d7935ebfeb5f311ce43f2d5a3950863a7b05d2b222f9672b664ce0",
+      "formal_price_bounds": null
+    },
+    "direction": "DOWN",
+    "crossed_boundary": "28.45",
+    "boundary_origin_dates": [
+      "2025-04-08"
+    ],
+    "facts": [
+      {
+        "known_on_saved_bar": "2025-06-03",
+        "whole_bar_on_departure_side": true,
+        "crossed_boundary_contact": false,
+        "close_relation": "DEPARTURE_SIDE",
+        "bar": {
+          "close": "26.85",
+          "date": "2025-06-03",
+          "high": "28.00",
+          "low": "26.55",
+          "open": "28.00",
+          "volume_shares_scaled": "107474363"
+        },
+        "fact_id": "sha256:c181442216dd35ab50b7b8d9cd1cd8f43b09fe1ce4b0dc44c18445d19fe08fdd"
+      }
+    ],
+    "first_later_boundary_contact": null,
+    "first_later_close_inside_frozen_frame": null,
+    "first_later_close_on_opposite_side": null,
+    "seed_evidence": {
+      "seed_date": "2025-06-03",
+      "saved_records": 1,
+      "new_completed_close_turns": [],
+      "both_high_and_low_turns_available_on": null,
+      "formed_interval": null,
+      "qualification": "PRICE_PATH_DESCRIPTION_ONLY_NOT_FORMATION_OR_FORMAL_PARENT_CHILD"
+    },
+    "source_qualification": {
+      "frame_crossed_listed_missing_dates": [],
+      "followup_blocked_at_listed_missing_date": null,
+      "followup_truncated_at_gap": false,
+      "calendar_and_actions": "ORIGINAL_UNVERIFIED_LIMITATIONS_RETAINED"
+    },
+    "selected_alternative": null,
+    "formal_end": null,
+    "formal_membership": null,
+    "primary_pressure_id": null,
+    "historical_selection_time": null,
+    "historical_signal_eligible": false,
+    "classification_quality": "NOT_VALIDATED",
+    "core_usefulness": "NOT_ESTABLISHED",
+    "actions": "NOT_EVALUATED",
+    "research_output_id": "sha256:6d945c4e83f833ff31e6d7d940fa8078b85ab1c4e65830717118488ce8a04a9a"
+  },
+  "ABC-through-Jun13": {
+    "schema": "m1-persistent-followup-research/0.1",
+    "monitor_id": "sha256:7c5950be200940e7b6a48bf4776cffd5e8f6b9dcdef18e1594362c6fefbd302c",
+    "event_id": "sha256:d36035846ad061bc223276bb1c03163e2441b64ae88f69d592edf09a069be1f1",
+    "code": "1101",
+    "event_known_on": "2025-06-03",
+    "requested_cutoff": "2025-06-13",
+    "observed_through": "2025-06-13",
+    "observation_start": "2025-04-07",
+    "frozen_frame": {
+      "direction": "DOWN",
+      "lower": "28.45",
+      "upper": "31.40",
+      "frame_start": "2025-04-07",
+      "frame_observed_end": "2025-05-29",
+      "frame_records": 38,
+      "departure_date": "2025-06-02",
+      "frame_bars_fingerprint": "sha256:42bf0d19f5d7935ebfeb5f311ce43f2d5a3950863a7b05d2b222f9672b664ce0",
+      "formal_price_bounds": null
+    },
+    "direction": "DOWN",
+    "crossed_boundary": "28.45",
+    "boundary_origin_dates": [
+      "2025-04-08"
+    ],
+    "facts": [
+      {
+        "known_on_saved_bar": "2025-06-03",
+        "whole_bar_on_departure_side": true,
+        "crossed_boundary_contact": false,
+        "close_relation": "DEPARTURE_SIDE",
+        "bar": {
+          "close": "26.85",
+          "date": "2025-06-03",
+          "high": "28.00",
+          "low": "26.55",
+          "open": "28.00",
+          "volume_shares_scaled": "107474363"
+        },
+        "fact_id": "sha256:c181442216dd35ab50b7b8d9cd1cd8f43b09fe1ce4b0dc44c18445d19fe08fdd"
+      },
+      {
+        "known_on_saved_bar": "2025-06-04",
+        "whole_bar_on_departure_side": true,
+        "crossed_boundary_contact": false,
+        "close_relation": "DEPARTURE_SIDE",
+        "bar": {
+          "close": "27.00",
+          "date": "2025-06-04",
+          "high": "27.45",
+          "low": "26.55",
+          "open": "27.00",
+          "volume_shares_scaled": "105846758"
+        },
+        "fact_id": "sha256:960afb787541b7e7e72e58bfff2dfcefb461602f3d8d73124e5b5a9d3c4d5540"
+      },
+      {
+        "known_on_saved_bar": "2025-06-05",
+        "whole_bar_on_departure_side": true,
+        "crossed_boundary_contact": false,
+        "close_relation": "DEPARTURE_SIDE",
+        "bar": {
+          "close": "27.50",
+          "date": "2025-06-05",
+          "high": "27.65",
+          "low": "27.00",
+          "open": "27.00",
+          "volume_shares_scaled": "108113911"
+        },
+        "fact_id": "sha256:fdd326b4560b5dd306b21ce91d9cdc56ae4301b94bfe85e4b703fafcfb30986b"
+      },
+      {
+        "known_on_saved_bar": "2025-06-06",
+        "whole_bar_on_departure_side": true,
+        "crossed_boundary_contact": false,
+        "close_relation": "DEPARTURE_SIDE",
+        "bar": {
+          "close": "27.55",
+          "date": "2025-06-06",
+          "high": "27.65",
+          "low": "27.35",
+          "open": "27.65",
+          "volume_shares_scaled": "15721473"
+        },
+        "fact_id": "sha256:1e7e31beb9e241b1a703773fb4555a5bd1af0d9d0df67009398245d263270787"
+      },
+      {
+        "known_on_saved_bar": "2025-06-09",
+        "whole_bar_on_departure_side": true,
+        "crossed_boundary_contact": false,
+        "close_relation": "DEPARTURE_SIDE",
+        "bar": {
+          "close": "27.20",
+          "date": "2025-06-09",
+          "high": "27.65",
+          "low": "27.10",
+          "open": "27.65",
+          "volume_shares_scaled": "14225266"
+        },
+        "fact_id": "sha256:81960c3ccb880c78db24d78c8c2193d42894bba06021c2c79a87963b8196f39e"
+      },
+      {
+        "known_on_saved_bar": "2025-06-10",
+        "whole_bar_on_departure_side": true,
+        "crossed_boundary_contact": false,
+        "close_relation": "DEPARTURE_SIDE",
+        "bar": {
+          "close": "27.15",
+          "date": "2025-06-10",
+          "high": "27.45",
+          "low": "27.15",
+          "open": "27.20",
+          "volume_shares_scaled": "13976433"
+        },
+        "fact_id": "sha256:dd9a35be3742e855398863ea0c7a9815dfc47be1c1ef7a00b1532c0ceb6e2e89"
+      },
+      {
+        "known_on_saved_bar": "2025-06-11",
+        "whole_bar_on_departure_side": true,
+        "crossed_boundary_contact": false,
+        "close_relation": "DEPARTURE_SIDE",
+        "bar": {
+          "close": "27.30",
+          "date": "2025-06-11",
+          "high": "27.35",
+          "low": "26.90",
+          "open": "27.20",
+          "volume_shares_scaled": "17955808"
+        },
+        "fact_id": "sha256:eb6286b48169db64b61f061c4873ea5e331d2e7619885705c6abce0f4a310b83"
+      },
+      {
+        "known_on_saved_bar": "2025-06-12",
+        "whole_bar_on_departure_side": true,
+        "crossed_boundary_contact": false,
+        "close_relation": "DEPARTURE_SIDE",
+        "bar": {
+          "close": "27.05",
+          "date": "2025-06-12",
+          "high": "27.30",
+          "low": "26.95",
+          "open": "27.30",
+          "volume_shares_scaled": "9954901"
+        },
+        "fact_id": "sha256:09e4d74932dc85d7f867ab94e85083e48088823402f0beffb25765ee66d18fec"
+      },
+      {
+        "known_on_saved_bar": "2025-06-13",
+        "whole_bar_on_departure_side": true,
+        "crossed_boundary_contact": false,
+        "close_relation": "DEPARTURE_SIDE",
+        "bar": {
+          "close": "26.90",
+          "date": "2025-06-13",
+          "high": "27.15",
+          "low": "26.85",
+          "open": "27.00",
+          "volume_shares_scaled": "17565703"
+        },
+        "fact_id": "sha256:eb40f3e86e9168b3dd33e43a8e100378bb9125a3315005c02c295cff6f75456e"
+      }
+    ],
+    "first_later_boundary_contact": null,
+    "first_later_close_inside_frozen_frame": null,
+    "first_later_close_on_opposite_side": null,
+    "seed_evidence": {
+      "seed_date": "2025-06-03",
+      "saved_records": 9,
+      "new_completed_close_turns": [
+        {
+          "kind": "HIGH",
+          "plateau_start": "2025-06-06",
+          "plateau_end": "2025-06-06",
+          "close": "27.55",
+          "known_on_saved_bar": "2025-06-09",
+          "turn_id": "sha256:e4157cdeed6392f2c0384373c4707b0b08440a1e93a2c22bdb8081a67a21fe53"
+        },
+        {
+          "kind": "LOW",
+          "plateau_start": "2025-06-10",
+          "plateau_end": "2025-06-10",
+          "close": "27.15",
+          "known_on_saved_bar": "2025-06-11",
+          "turn_id": "sha256:104e7b15859bf98fd780f213adbbf85cc4e567f11afd03c00e1177d41962d00e"
+        },
+        {
+          "kind": "HIGH",
+          "plateau_start": "2025-06-11",
+          "plateau_end": "2025-06-11",
+          "close": "27.30",
+          "known_on_saved_bar": "2025-06-12",
+          "turn_id": "sha256:0965834af9183b4721f90a2171339bfff16782db856843bf7b810dbf6dc146ea"
+        }
+      ],
+      "both_high_and_low_turns_available_on": "2025-06-11",
+      "formed_interval": null,
+      "qualification": "PRICE_PATH_DESCRIPTION_ONLY_NOT_FORMATION_OR_FORMAL_PARENT_CHILD"
+    },
+    "source_qualification": {
+      "frame_crossed_listed_missing_dates": [],
+      "followup_blocked_at_listed_missing_date": null,
+      "followup_truncated_at_gap": false,
+      "calendar_and_actions": "ORIGINAL_UNVERIFIED_LIMITATIONS_RETAINED"
+    },
+    "selected_alternative": null,
+    "formal_end": null,
+    "formal_membership": null,
+    "primary_pressure_id": null,
+    "historical_selection_time": null,
+    "historical_signal_eligible": false,
+    "classification_quality": "NOT_VALIDATED",
+    "core_usefulness": "NOT_ESTABLISHED",
+    "actions": "NOT_EVALUATED",
+    "research_output_id": "sha256:dde11bb7da24a687858e55db4792ae51d087bdaa22b632a1e88df85eadec857e"
+  },
+  "G2-first-bar": {
+    "schema": "m1-persistent-followup-research/0.1",
+    "monitor_id": "sha256:aacc4d8d17e39b9c26df5f6c8ede537519aa9609795e973b0f0bfb84b9accf00",
+    "event_id": "sha256:f09136505897935d550d041d26337b99abeab00db5b452aaa09110743e6935ec",
+    "code": "1101",
+    "event_known_on": "2023-02-21",
+    "requested_cutoff": "2023-02-21",
+    "observed_through": "2023-02-21",
+    "observation_start": "2023-01-16",
+    "frozen_frame": {
+      "direction": "UP",
+      "lower": "35.90",
+      "upper": "37.85",
+      "frame_start": "2023-01-16",
+      "frame_observed_end": "2023-02-16",
+      "frame_records": 16,
+      "departure_date": "2023-02-17",
+      "frame_bars_fingerprint": "sha256:3a3bf345606ee12184f2dc6c46f58e81636cfbe09db762ddda0fbf6ba170e737",
+      "formal_price_bounds": null
+    },
+    "direction": "UP",
+    "crossed_boundary": "37.85",
+    "boundary_origin_dates": [
+      "2023-02-15",
+      "2023-02-16"
+    ],
+    "facts": [
+      {
+        "known_on_saved_bar": "2023-02-21",
+        "whole_bar_on_departure_side": true,
+        "crossed_boundary_contact": false,
+        "close_relation": "DEPARTURE_SIDE",
+        "bar": {
+          "close": "38.35",
+          "date": "2023-02-21",
+          "high": "38.50",
+          "low": "38.15",
+          "open": "38.40",
+          "volume_shares_scaled": "9443068"
+        },
+        "fact_id": "sha256:130c38108b4904a9ea130eb7cafd468eba8af5d54ca98af54a590360b01895d2"
+      }
+    ],
+    "first_later_boundary_contact": null,
+    "first_later_close_inside_frozen_frame": null,
+    "first_later_close_on_opposite_side": null,
+    "seed_evidence": {
+      "seed_date": "2023-02-21",
+      "saved_records": 1,
+      "new_completed_close_turns": [],
+      "both_high_and_low_turns_available_on": null,
+      "formed_interval": null,
+      "qualification": "PRICE_PATH_DESCRIPTION_ONLY_NOT_FORMATION_OR_FORMAL_PARENT_CHILD"
+    },
+    "source_qualification": {
+      "frame_crossed_listed_missing_dates": [],
+      "followup_blocked_at_listed_missing_date": null,
+      "followup_truncated_at_gap": false,
+      "calendar_and_actions": "ORIGINAL_UNVERIFIED_LIMITATIONS_RETAINED"
+    },
+    "selected_alternative": null,
+    "formal_end": null,
+    "formal_membership": null,
+    "primary_pressure_id": null,
+    "historical_selection_time": null,
+    "historical_signal_eligible": false,
+    "classification_quality": "NOT_VALIDATED",
+    "core_usefulness": "NOT_ESTABLISHED",
+    "actions": "NOT_EVALUATED",
+    "research_output_id": "sha256:e0a7f0a743a5a6c1c9ac39284bc6f472f24ece5914f480537648e47965c2ba62"
+  },
+  "G2-boundary-touch": {
+    "schema": "m1-persistent-followup-research/0.1",
+    "monitor_id": "sha256:aacc4d8d17e39b9c26df5f6c8ede537519aa9609795e973b0f0bfb84b9accf00",
+    "event_id": "sha256:f09136505897935d550d041d26337b99abeab00db5b452aaa09110743e6935ec",
+    "code": "1101",
+    "event_known_on": "2023-02-21",
+    "requested_cutoff": "2023-02-22",
+    "observed_through": "2023-02-22",
+    "observation_start": "2023-01-16",
+    "frozen_frame": {
+      "direction": "UP",
+      "lower": "35.90",
+      "upper": "37.85",
+      "frame_start": "2023-01-16",
+      "frame_observed_end": "2023-02-16",
+      "frame_records": 16,
+      "departure_date": "2023-02-17",
+      "frame_bars_fingerprint": "sha256:3a3bf345606ee12184f2dc6c46f58e81636cfbe09db762ddda0fbf6ba170e737",
+      "formal_price_bounds": null
+    },
+    "direction": "UP",
+    "crossed_boundary": "37.85",
+    "boundary_origin_dates": [
+      "2023-02-15",
+      "2023-02-16"
+    ],
+    "facts": [
+      {
+        "known_on_saved_bar": "2023-02-21",
+        "whole_bar_on_departure_side": true,
+        "crossed_boundary_contact": false,
+        "close_relation": "DEPARTURE_SIDE",
+        "bar": {
+          "close": "38.35",
+          "date": "2023-02-21",
+          "high": "38.50",
+          "low": "38.15",
+          "open": "38.40",
+          "volume_shares_scaled": "9443068"
+        },
+        "fact_id": "sha256:130c38108b4904a9ea130eb7cafd468eba8af5d54ca98af54a590360b01895d2"
+      },
+      {
+        "known_on_saved_bar": "2023-02-22",
+        "whole_bar_on_departure_side": false,
+        "crossed_boundary_contact": true,
+        "close_relation": "DEPARTURE_SIDE",
+        "bar": {
+          "close": "38.05",
+          "date": "2023-02-22",
+          "high": "38.30",
+          "low": "37.85",
+          "open": "38.15",
+          "volume_shares_scaled": "19617132"
+        },
+        "fact_id": "sha256:4ad6252df4857ba0b523894c2e499b85898eb5930e06aceb2b5d6559d5951db8"
+      }
+    ],
+    "first_later_boundary_contact": "2023-02-22",
+    "first_later_close_inside_frozen_frame": null,
+    "first_later_close_on_opposite_side": null,
+    "seed_evidence": {
+      "seed_date": "2023-02-21",
+      "saved_records": 2,
+      "new_completed_close_turns": [],
+      "both_high_and_low_turns_available_on": null,
+      "formed_interval": null,
+      "qualification": "PRICE_PATH_DESCRIPTION_ONLY_NOT_FORMATION_OR_FORMAL_PARENT_CHILD"
+    },
+    "source_qualification": {
+      "frame_crossed_listed_missing_dates": [],
+      "followup_blocked_at_listed_missing_date": null,
+      "followup_truncated_at_gap": false,
+      "calendar_and_actions": "ORIGINAL_UNVERIFIED_LIMITATIONS_RETAINED"
+    },
+    "selected_alternative": null,
+    "formal_end": null,
+    "formal_membership": null,
+    "primary_pressure_id": null,
+    "historical_selection_time": null,
+    "historical_signal_eligible": false,
+    "classification_quality": "NOT_VALIDATED",
+    "core_usefulness": "NOT_ESTABLISHED",
+    "actions": "NOT_EVALUATED",
+    "research_output_id": "sha256:98ca670c31be378f84ae0f7224ace671af38b68d9dceeb7d87c95e2211ec77ca"
+  },
+  "G2-return": {
+    "schema": "m1-persistent-followup-research/0.1",
+    "monitor_id": "sha256:aacc4d8d17e39b9c26df5f6c8ede537519aa9609795e973b0f0bfb84b9accf00",
+    "event_id": "sha256:f09136505897935d550d041d26337b99abeab00db5b452aaa09110743e6935ec",
+    "code": "1101",
+    "event_known_on": "2023-02-21",
+    "requested_cutoff": "2023-03-01",
+    "observed_through": "2023-03-01",
+    "observation_start": "2023-01-16",
+    "frozen_frame": {
+      "direction": "UP",
+      "lower": "35.90",
+      "upper": "37.85",
+      "frame_start": "2023-01-16",
+      "frame_observed_end": "2023-02-16",
+      "frame_records": 16,
+      "departure_date": "2023-02-17",
+      "frame_bars_fingerprint": "sha256:3a3bf345606ee12184f2dc6c46f58e81636cfbe09db762ddda0fbf6ba170e737",
+      "formal_price_bounds": null
+    },
+    "direction": "UP",
+    "crossed_boundary": "37.85",
+    "boundary_origin_dates": [
+      "2023-02-15",
+      "2023-02-16"
+    ],
+    "facts": [
+      {
+        "known_on_saved_bar": "2023-02-21",
+        "whole_bar_on_departure_side": true,
+        "crossed_boundary_contact": false,
+        "close_relation": "DEPARTURE_SIDE",
+        "bar": {
+          "close": "38.35",
+          "date": "2023-02-21",
+          "high": "38.50",
+          "low": "38.15",
+          "open": "38.40",
+          "volume_shares_scaled": "9443068"
+        },
+        "fact_id": "sha256:130c38108b4904a9ea130eb7cafd468eba8af5d54ca98af54a590360b01895d2"
+      },
+      {
+        "known_on_saved_bar": "2023-02-22",
+        "whole_bar_on_departure_side": false,
+        "crossed_boundary_contact": true,
+        "close_relation": "DEPARTURE_SIDE",
+        "bar": {
+          "close": "38.05",
+          "date": "2023-02-22",
+          "high": "38.30",
+          "low": "37.85",
+          "open": "38.15",
+          "volume_shares_scaled": "19617132"
+        },
+        "fact_id": "sha256:4ad6252df4857ba0b523894c2e499b85898eb5930e06aceb2b5d6559d5951db8"
+      },
+      {
+        "known_on_saved_bar": "2023-02-23",
+        "whole_bar_on_departure_side": true,
+        "crossed_boundary_contact": false,
+        "close_relation": "DEPARTURE_SIDE",
+        "bar": {
+          "close": "39.50",
+          "date": "2023-02-23",
+          "high": "39.70",
+          "low": "38.40",
+          "open": "38.50",
+          "volume_shares_scaled": "47953951"
+        },
+        "fact_id": "sha256:bb93633c6e4def60944f14bcea30989ff53bea26df13080c8c2631cfec9068ce"
+      },
+      {
+        "known_on_saved_bar": "2023-02-24",
+        "whole_bar_on_departure_side": true,
+        "crossed_boundary_contact": false,
+        "close_relation": "DEPARTURE_SIDE",
+        "bar": {
+          "close": "39.15",
+          "date": "2023-02-24",
+          "high": "39.70",
+          "low": "39.05",
+          "open": "39.65",
+          "volume_shares_scaled": "68799746"
+        },
+        "fact_id": "sha256:9214d302ce68ea1e86ce82e8186125dca7f3792b8a8cd720299ccfdac3e8c026"
+      },
+      {
+        "known_on_saved_bar": "2023-03-01",
+        "whole_bar_on_departure_side": false,
+        "crossed_boundary_contact": true,
+        "close_relation": "INSIDE_FROZEN_FRAME",
+        "bar": {
+          "close": "37.80",
+          "date": "2023-03-01",
+          "high": "38.85",
+          "low": "37.60",
+          "open": "38.85",
+          "volume_shares_scaled": "50523994"
+        },
+        "fact_id": "sha256:f5594987c3b9d54fee08f56738a6af93f2fbd54ba04ec4848573d284ff5d374c"
+      }
+    ],
+    "first_later_boundary_contact": "2023-02-22",
+    "first_later_close_inside_frozen_frame": "2023-03-01",
+    "first_later_close_on_opposite_side": null,
+    "seed_evidence": {
+      "seed_date": "2023-02-21",
+      "saved_records": 5,
+      "new_completed_close_turns": [
+        {
+          "kind": "LOW",
+          "plateau_start": "2023-02-22",
+          "plateau_end": "2023-02-22",
+          "close": "38.05",
+          "known_on_saved_bar": "2023-02-23",
+          "turn_id": "sha256:ffe1b2d85425b73ff816e98f6883fffe133e6ddb0028e9799520462a7374e5a4"
+        },
+        {
+          "kind": "HIGH",
+          "plateau_start": "2023-02-23",
+          "plateau_end": "2023-02-23",
+          "close": "39.50",
+          "known_on_saved_bar": "2023-02-24",
+          "turn_id": "sha256:cb34b668e5585382db975acc66e04007e8352084ae8a60037a9e058b8208919d"
+        }
+      ],
+      "both_high_and_low_turns_available_on": "2023-02-24",
+      "formed_interval": null,
+      "qualification": "PRICE_PATH_DESCRIPTION_ONLY_NOT_FORMATION_OR_FORMAL_PARENT_CHILD"
+    },
+    "source_qualification": {
+      "frame_crossed_listed_missing_dates": [],
+      "followup_blocked_at_listed_missing_date": null,
+      "followup_truncated_at_gap": false,
+      "calendar_and_actions": "ORIGINAL_UNVERIFIED_LIMITATIONS_RETAINED"
+    },
+    "selected_alternative": null,
+    "formal_end": null,
+    "formal_membership": null,
+    "primary_pressure_id": null,
+    "historical_selection_time": null,
+    "historical_signal_eligible": false,
+    "classification_quality": "NOT_VALIDATED",
+    "core_usefulness": "NOT_ESTABLISHED",
+    "actions": "NOT_EVALUATED",
+    "research_output_id": "sha256:2dcd60d9585fa54284d44f2852b982472c2f460523494c741cea2d22735a002a"
+  },
+  "G2-through-Mar3": {
+    "schema": "m1-persistent-followup-research/0.1",
+    "monitor_id": "sha256:aacc4d8d17e39b9c26df5f6c8ede537519aa9609795e973b0f0bfb84b9accf00",
+    "event_id": "sha256:f09136505897935d550d041d26337b99abeab00db5b452aaa09110743e6935ec",
+    "code": "1101",
+    "event_known_on": "2023-02-21",
+    "requested_cutoff": "2023-03-03",
+    "observed_through": "2023-03-03",
+    "observation_start": "2023-01-16",
+    "frozen_frame": {
+      "direction": "UP",
+      "lower": "35.90",
+      "upper": "37.85",
+      "frame_start": "2023-01-16",
+      "frame_observed_end": "2023-02-16",
+      "frame_records": 16,
+      "departure_date": "2023-02-17",
+      "frame_bars_fingerprint": "sha256:3a3bf345606ee12184f2dc6c46f58e81636cfbe09db762ddda0fbf6ba170e737",
+      "formal_price_bounds": null
+    },
+    "direction": "UP",
+    "crossed_boundary": "37.85",
+    "boundary_origin_dates": [
+      "2023-02-15",
+      "2023-02-16"
+    ],
+    "facts": [
+      {
+        "known_on_saved_bar": "2023-02-21",
+        "whole_bar_on_departure_side": true,
+        "crossed_boundary_contact": false,
+        "close_relation": "DEPARTURE_SIDE",
+        "bar": {
+          "close": "38.35",
+          "date": "2023-02-21",
+          "high": "38.50",
+          "low": "38.15",
+          "open": "38.40",
+          "volume_shares_scaled": "9443068"
+        },
+        "fact_id": "sha256:130c38108b4904a9ea130eb7cafd468eba8af5d54ca98af54a590360b01895d2"
+      },
+      {
+        "known_on_saved_bar": "2023-02-22",
+        "whole_bar_on_departure_side": false,
+        "crossed_boundary_contact": true,
+        "close_relation": "DEPARTURE_SIDE",
+        "bar": {
+          "close": "38.05",
+          "date": "2023-02-22",
+          "high": "38.30",
+          "low": "37.85",
+          "open": "38.15",
+          "volume_shares_scaled": "19617132"
+        },
+        "fact_id": "sha256:4ad6252df4857ba0b523894c2e499b85898eb5930e06aceb2b5d6559d5951db8"
+      },
+      {
+        "known_on_saved_bar": "2023-02-23",
+        "whole_bar_on_departure_side": true,
+        "crossed_boundary_contact": false,
+        "close_relation": "DEPARTURE_SIDE",
+        "bar": {
+          "close": "39.50",
+          "date": "2023-02-23",
+          "high": "39.70",
+          "low": "38.40",
+          "open": "38.50",
+          "volume_shares_scaled": "47953951"
+        },
+        "fact_id": "sha256:bb93633c6e4def60944f14bcea30989ff53bea26df13080c8c2631cfec9068ce"
+      },
+      {
+        "known_on_saved_bar": "2023-02-24",
+        "whole_bar_on_departure_side": true,
+        "crossed_boundary_contact": false,
+        "close_relation": "DEPARTURE_SIDE",
+        "bar": {
+          "close": "39.15",
+          "date": "2023-02-24",
+          "high": "39.70",
+          "low": "39.05",
+          "open": "39.65",
+          "volume_shares_scaled": "68799746"
+        },
+        "fact_id": "sha256:9214d302ce68ea1e86ce82e8186125dca7f3792b8a8cd720299ccfdac3e8c026"
+      },
+      {
+        "known_on_saved_bar": "2023-03-01",
+        "whole_bar_on_departure_side": false,
+        "crossed_boundary_contact": true,
+        "close_relation": "INSIDE_FROZEN_FRAME",
+        "bar": {
+          "close": "37.80",
+          "date": "2023-03-01",
+          "high": "38.85",
+          "low": "37.60",
+          "open": "38.85",
+          "volume_shares_scaled": "50523994"
+        },
+        "fact_id": "sha256:f5594987c3b9d54fee08f56738a6af93f2fbd54ba04ec4848573d284ff5d374c"
+      },
+      {
+        "known_on_saved_bar": "2023-03-02",
+        "whole_bar_on_departure_side": false,
+        "crossed_boundary_contact": true,
+        "close_relation": "DEPARTURE_SIDE",
+        "bar": {
+          "close": "37.90",
+          "date": "2023-03-02",
+          "high": "38.15",
+          "low": "37.45",
+          "open": "37.80",
+          "volume_shares_scaled": "18212319"
+        },
+        "fact_id": "sha256:6784e636f977d1c5da4ae151758f531b850e4b0a30cdc45b86323d9979b657ce"
+      },
+      {
+        "known_on_saved_bar": "2023-03-03",
+        "whole_bar_on_departure_side": false,
+        "crossed_boundary_contact": true,
+        "close_relation": "INSIDE_FROZEN_FRAME",
+        "bar": {
+          "close": "37.75",
+          "date": "2023-03-03",
+          "high": "38.15",
+          "low": "37.65",
+          "open": "38.10",
+          "volume_shares_scaled": "14693838"
+        },
+        "fact_id": "sha256:38974955f5bf560d3657ee3a1d1a8d1316a0ab26b641100fe099c900a20b0640"
+      }
+    ],
+    "first_later_boundary_contact": "2023-02-22",
+    "first_later_close_inside_frozen_frame": "2023-03-01",
+    "first_later_close_on_opposite_side": null,
+    "seed_evidence": {
+      "seed_date": "2023-02-21",
+      "saved_records": 7,
+      "new_completed_close_turns": [
+        {
+          "kind": "LOW",
+          "plateau_start": "2023-02-22",
+          "plateau_end": "2023-02-22",
+          "close": "38.05",
+          "known_on_saved_bar": "2023-02-23",
+          "turn_id": "sha256:ffe1b2d85425b73ff816e98f6883fffe133e6ddb0028e9799520462a7374e5a4"
+        },
+        {
+          "kind": "HIGH",
+          "plateau_start": "2023-02-23",
+          "plateau_end": "2023-02-23",
+          "close": "39.50",
+          "known_on_saved_bar": "2023-02-24",
+          "turn_id": "sha256:cb34b668e5585382db975acc66e04007e8352084ae8a60037a9e058b8208919d"
+        },
+        {
+          "kind": "LOW",
+          "plateau_start": "2023-03-01",
+          "plateau_end": "2023-03-01",
+          "close": "37.80",
+          "known_on_saved_bar": "2023-03-02",
+          "turn_id": "sha256:d4454f904e5cf4e0e21b02898b8c1a5ef29633e82097034d80c800dc3e9d07c7"
+        },
+        {
+          "kind": "HIGH",
+          "plateau_start": "2023-03-02",
+          "plateau_end": "2023-03-02",
+          "close": "37.90",
+          "known_on_saved_bar": "2023-03-03",
+          "turn_id": "sha256:eef1e0368fd19c78d0df8b38b20c5c66779e4c1ff59cca529843e9f64070d634"
+        }
+      ],
+      "both_high_and_low_turns_available_on": "2023-02-24",
+      "formed_interval": null,
+      "qualification": "PRICE_PATH_DESCRIPTION_ONLY_NOT_FORMATION_OR_FORMAL_PARENT_CHILD"
+    },
+    "source_qualification": {
+      "frame_crossed_listed_missing_dates": [],
+      "followup_blocked_at_listed_missing_date": null,
+      "followup_truncated_at_gap": false,
+      "calendar_and_actions": "ORIGINAL_UNVERIFIED_LIMITATIONS_RETAINED"
+    },
+    "selected_alternative": null,
+    "formal_end": null,
+    "formal_membership": null,
+    "primary_pressure_id": null,
+    "historical_selection_time": null,
+    "historical_signal_eligible": false,
+    "classification_quality": "NOT_VALIDATED",
+    "core_usefulness": "NOT_ESTABLISHED",
+    "actions": "NOT_EVALUATED",
+    "research_output_id": "sha256:75dbf52196615ad3937983df8dd4d146b47971e2bc0a11547cd1ac101391622e"
+  },
+  "G2-second-frame-return": {
+    "schema": "m1-persistent-followup-research/0.1",
+    "monitor_id": "sha256:ae2243e55023a89efac59a42c371898efee6c3567b2cb75dd229460f65330ece",
+    "event_id": "sha256:15c5ddee563a88242ea934c5a9fc9d3af92cf67a6c164c3b770b7a973962aea7",
+    "code": "1101",
+    "event_known_on": "2023-02-24",
+    "requested_cutoff": "2023-03-03",
+    "observed_through": "2023-03-03",
+    "observation_start": "2023-01-16",
+    "frozen_frame": {
+      "direction": "UP",
+      "lower": "35.90",
+      "upper": "38.50",
+      "frame_start": "2023-01-16",
+      "frame_observed_end": "2023-02-22",
+      "frame_records": 20,
+      "departure_date": "2023-02-23",
+      "frame_bars_fingerprint": "sha256:08051c47a42dafd6755ef100975fb2dbc02ec2726eeb4f97018f438828bac49b",
+      "formal_price_bounds": null
+    },
+    "direction": "UP",
+    "crossed_boundary": "38.50",
+    "boundary_origin_dates": [
+      "2023-02-21"
+    ],
+    "facts": [
+      {
+        "known_on_saved_bar": "2023-02-24",
+        "whole_bar_on_departure_side": true,
+        "crossed_boundary_contact": false,
+        "close_relation": "DEPARTURE_SIDE",
+        "bar": {
+          "close": "39.15",
+          "date": "2023-02-24",
+          "high": "39.70",
+          "low": "39.05",
+          "open": "39.65",
+          "volume_shares_scaled": "68799746"
+        },
+        "fact_id": "sha256:4af2e46150307b522b8f39615465282ae93f682e2c4dd79453f714d161423261"
+      },
+      {
+        "known_on_saved_bar": "2023-03-01",
+        "whole_bar_on_departure_side": false,
+        "crossed_boundary_contact": true,
+        "close_relation": "INSIDE_FROZEN_FRAME",
+        "bar": {
+          "close": "37.80",
+          "date": "2023-03-01",
+          "high": "38.85",
+          "low": "37.60",
+          "open": "38.85",
+          "volume_shares_scaled": "50523994"
+        },
+        "fact_id": "sha256:90a06ff996ad52b2dfbefb446a9ccf5196cd61b5248b40abd1ade074d7f465e4"
+      },
+      {
+        "known_on_saved_bar": "2023-03-02",
+        "whole_bar_on_departure_side": false,
+        "crossed_boundary_contact": false,
+        "close_relation": "INSIDE_FROZEN_FRAME",
+        "bar": {
+          "close": "37.90",
+          "date": "2023-03-02",
+          "high": "38.15",
+          "low": "37.45",
+          "open": "37.80",
+          "volume_shares_scaled": "18212319"
+        },
+        "fact_id": "sha256:e9bd1c845ed0c119b1e8a2b828cc0b6f61b8d9b95f06f71634da6750601e6938"
+      },
+      {
+        "known_on_saved_bar": "2023-03-03",
+        "whole_bar_on_departure_side": false,
+        "crossed_boundary_contact": false,
+        "close_relation": "INSIDE_FROZEN_FRAME",
+        "bar": {
+          "close": "37.75",
+          "date": "2023-03-03",
+          "high": "38.15",
+          "low": "37.65",
+          "open": "38.10",
+          "volume_shares_scaled": "14693838"
+        },
+        "fact_id": "sha256:948fd1b85f6e9b63742ab81df2a2770504866a4dcf4286d9e535dc82ea20b28c"
+      }
+    ],
+    "first_later_boundary_contact": "2023-03-01",
+    "first_later_close_inside_frozen_frame": "2023-03-01",
+    "first_later_close_on_opposite_side": null,
+    "seed_evidence": {
+      "seed_date": "2023-02-24",
+      "saved_records": 4,
+      "new_completed_close_turns": [
+        {
+          "kind": "LOW",
+          "plateau_start": "2023-03-01",
+          "plateau_end": "2023-03-01",
+          "close": "37.80",
+          "known_on_saved_bar": "2023-03-02",
+          "turn_id": "sha256:89e8023500e2bef4683f4be48cfa34c0901dbfdf08812b6016fb85495fa86b4e"
+        },
+        {
+          "kind": "HIGH",
+          "plateau_start": "2023-03-02",
+          "plateau_end": "2023-03-02",
+          "close": "37.90",
+          "known_on_saved_bar": "2023-03-03",
+          "turn_id": "sha256:b707a1253d7b6fd52e92ea82c226b5123a8b2aef5a112723b1959a056d3b3721"
+        }
+      ],
+      "both_high_and_low_turns_available_on": "2023-03-03",
+      "formed_interval": null,
+      "qualification": "PRICE_PATH_DESCRIPTION_ONLY_NOT_FORMATION_OR_FORMAL_PARENT_CHILD"
+    },
+    "source_qualification": {
+      "frame_crossed_listed_missing_dates": [],
+      "followup_blocked_at_listed_missing_date": null,
+      "followup_truncated_at_gap": false,
+      "calendar_and_actions": "ORIGINAL_UNVERIFIED_LIMITATIONS_RETAINED"
+    },
+    "selected_alternative": null,
+    "formal_end": null,
+    "formal_membership": null,
+    "primary_pressure_id": null,
+    "historical_selection_time": null,
+    "historical_signal_eligible": false,
+    "classification_quality": "NOT_VALIDATED",
+    "core_usefulness": "NOT_ESTABLISHED",
+    "actions": "NOT_EVALUATED",
+    "research_output_id": "sha256:2a9288ccae0e179311dd77025a07698c8e49602a10ab9808744e75dcb22160f8"
+  },
+  "2884-last-source-bar": {
+    "schema": "m1-persistent-followup-research/0.1",
+    "monitor_id": "sha256:56344341b202a2c75a8ae46a0010cce2679cb93f871caf152778dd1f3d1645e3",
+    "event_id": "sha256:b388e0437143db94892a0fcd9d5364be434f36e1d3de55f69bba1e8477872dc6",
+    "code": "2884",
+    "event_known_on": "2026-10-16",
+    "requested_cutoff": "2026-10-16",
+    "observed_through": "2026-10-16",
+    "observation_start": "2026-09-17",
+    "frozen_frame": {
+      "direction": "UP",
+      "lower": "44.20",
+      "upper": "47.35",
+      "frame_start": "2026-09-17",
+      "frame_observed_end": "2026-10-14",
+      "frame_records": 17,
+      "departure_date": "2026-10-15",
+      "frame_bars_fingerprint": "sha256:865ca23d951cbe7d7f72b3608ccbec1bcdb2468b085aaee4b3c94a2e28836338",
+      "formal_price_bounds": null
+    },
+    "direction": "UP",
+    "crossed_boundary": "47.35",
+    "boundary_origin_dates": [
+      "2026-09-17"
+    ],
+    "facts": [
+      {
+        "known_on_saved_bar": "2026-10-16",
+        "whole_bar_on_departure_side": true,
+        "crossed_boundary_contact": false,
+        "close_relation": "DEPARTURE_SIDE",
+        "bar": {
+          "close": "49.15",
+          "date": "2026-10-16",
+          "high": "49.95",
+          "low": "48.00",
+          "open": "48.00",
+          "volume_shares_scaled": "49892439"
+        },
+        "fact_id": "sha256:da8460e4286912e9a4463e2ed1a11eed83ccbb0f20e81ce8dc683bb50de1f5df"
+      }
+    ],
+    "first_later_boundary_contact": null,
+    "first_later_close_inside_frozen_frame": null,
+    "first_later_close_on_opposite_side": null,
+    "seed_evidence": {
+      "seed_date": "2026-10-16",
+      "saved_records": 1,
+      "new_completed_close_turns": [],
+      "both_high_and_low_turns_available_on": null,
+      "formed_interval": null,
+      "qualification": "PRICE_PATH_DESCRIPTION_ONLY_NOT_FORMATION_OR_FORMAL_PARENT_CHILD"
+    },
+    "source_qualification": {
+      "frame_crossed_listed_missing_dates": [],
+      "followup_blocked_at_listed_missing_date": null,
+      "followup_truncated_at_gap": false,
+      "calendar_and_actions": "ORIGINAL_UNVERIFIED_LIMITATIONS_RETAINED"
+    },
+    "selected_alternative": null,
+    "formal_end": null,
+    "formal_membership": null,
+    "primary_pressure_id": null,
+    "historical_selection_time": null,
+    "historical_signal_eligible": false,
+    "classification_quality": "NOT_VALIDATED",
+    "core_usefulness": "NOT_ESTABLISHED",
+    "actions": "NOT_EVALUATED",
+    "research_output_id": "sha256:8bd53f08a872541e7761010eb784ef7f6af9ded1388b1dbc09cbfc1956a108e4"
+  }
+}

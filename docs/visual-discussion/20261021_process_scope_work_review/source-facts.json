@@ -1,0 +1,253 @@
+{
+  "purpose": "PRESENT_DAY_SCOPE_REVIEW_NOT_SIGNAL_GENERATION",
+  "facts": {
+    "A": {
+      "earlier": {
+        "zone_id": "sha256:2546a756ec89eace404b017a4d25f1644ae480e603f7ff1c3dadf954c32d573a",
+        "source_period": [
+          "2026-09-15",
+          "2026-09-30"
+        ],
+        "available_on_saved_date": "2026-10-01",
+        "common_interval": [
+          "45.65",
+          "47.30"
+        ],
+        "raw_interval": [
+          "44.75",
+          "47.35"
+        ],
+        "source_rows": 10,
+        "formal_parent": null,
+        "formal_merge": null,
+        "support_or_pressure_response": null
+      },
+      "lower": {
+        "zone_id": "sha256:da7a1b989dd21f4dc32a7b37a9755cf0c11b7038575346fb51a832c3022f5fa7",
+        "source_period": [
+          "2026-09-30",
+          "2026-10-05"
+        ],
+        "available_on_saved_date": "2026-10-06",
+        "common_interval": [
+          "44.85",
+          "45.35"
+        ],
+        "raw_interval": [
+          "44.20",
+          "45.75"
+        ],
+        "source_rows": 4,
+        "formal_parent": null,
+        "formal_merge": null,
+        "support_or_pressure_response": null
+      },
+      "later": {
+        "zone_id": "sha256:d73a9b92cb9f002a7f8ff2ffa723ad3e62e36864c6fca400f56e12f0f0fb7642",
+        "source_period": [
+          "2026-10-05",
+          "2026-10-08"
+        ],
+        "available_on_saved_date": "2026-10-12",
+        "common_interval": [
+          "45.00",
+          "45.75"
+        ],
+        "raw_interval": [
+          "44.80",
+          "45.95"
+        ],
+        "source_rows": 4,
+        "formal_parent": null,
+        "formal_merge": null,
+        "support_or_pressure_response": null
+      }
+    },
+    "ABC": {
+      "earlier": {
+        "zone_id": "sha256:daa51d2fdce4d3887a822fcb0c3ef8bedae66bbd863f0f6051f05f220ba0ef5c",
+        "source_period": [
+          "2025-04-09",
+          "2025-05-12"
+        ],
+        "available_on_saved_date": "2025-05-13",
+        "common_interval": [
+          "30.55",
+          "30.60"
+        ],
+        "raw_interval": [
+          "28.50",
+          "31.20"
+        ],
+        "source_rows": 23,
+        "formal_parent": null,
+        "formal_merge": null,
+        "support_or_pressure_response": null
+      },
+      "lower": {
+        "zone_id": "sha256:f817baf02a4f01693e2cab1536852771b88300a0b7cfbdecb74271d91a8f81fe",
+        "source_period": [
+          "2025-05-19",
+          "2025-05-23"
+        ],
+        "available_on_saved_date": "2025-05-26",
+        "common_interval": [
+          "29.80",
+          "30.30"
+        ],
+        "raw_interval": [
+          "29.50",
+          "30.40"
+        ],
+        "source_rows": 5,
+        "formal_parent": null,
+        "formal_merge": null,
+        "support_or_pressure_response": null
+      },
+      "outside": {
+        "zone_id": "sha256:1b56b0b697f7e7550a7053d29eecd8ead630e231789722345a7d650b308172db",
+        "source_period": [
+          "2025-06-06",
+          "2025-06-11"
+        ],
+        "available_on_saved_date": "2025-06-12",
+        "common_interval": [
+          "27.15",
+          "27.30"
+        ],
+        "raw_interval": [
+          "26.90",
+          "27.65"
+        ],
+        "source_rows": 4,
+        "formal_parent": null,
+        "formal_merge": null,
+        "support_or_pressure_response": null
+      }
+    },
+    "G2": {
+      "earlier": {
+        "zone_id": "sha256:c78a9503c45a65eac28d24033831fc34e665deca9199f09569329e1bb8a8153e",
+        "source_period": [
+          "2023-01-17",
+          "2023-02-09"
+        ],
+        "available_on_saved_date": "2023-02-10",
+        "common_interval": [
+          "36.60",
+          "36.75"
+        ],
+        "raw_interval": [
+          "35.90",
+          "37.25"
+        ],
+        "source_rows": 10,
+        "formal_parent": null,
+        "formal_merge": null,
+        "support_or_pressure_response": null
+      },
+      "later": {
+        "zone_id": "sha256:9f323f69a58151c8ef4726de4eff1422e48cca8f6634014e41a35b3d7e4d5746",
+        "source_period": [
+          "2023-03-15",
+          "2023-03-24"
+        ],
+        "available_on_saved_date": "2023-03-27",
+        "common_interval": [
+          "36.35",
+          "37.10"
+        ],
+        "raw_interval": [
+          "36.30",
+          "37.70"
+        ],
+        "source_rows": 8,
+        "formal_parent": null,
+        "formal_merge": null,
+        "support_or_pressure_response": null
+      }
+    }
+  },
+  "manual_display_audit": {
+    "review_knowledge_date": "2026-10-21",
+    "role": "RETROSPECTIVE_DISPLAY_ONLY_NOT_HISTORICAL_INPUT",
+    "ABC_existing_manual_period": [
+      "2025-04-07",
+      "2025-06-02"
+    ],
+    "ABC_existing_manual_saved_rows": 39,
+    "post_ABC_observation_window": [
+      "2025-06-03",
+      "2025-06-12"
+    ],
+    "post_ABC_saved_rows": 8,
+    "post_ABC_added_to_manual_membership": false,
+    "G2_existing_manual_period": [
+      "2023-01-16",
+      "2023-08-16"
+    ],
+    "G2_existing_manual_saved_rows": 136,
+    "A_existing_answer": {
+      "confirmed": [
+        "完整上漲、短暫整理、再漲",
+        "截至2026-10-07足夠辨認整理"
+      ],
+      "formal_start": null,
+      "earliest_recognition_date": null
+    },
+    "A_formal_start": null,
+    "new_manual_answers_created": false,
+    "formal_membership_from_date_coverage": null
+  },
+  "G2_counterexample": {
+    "earlier_G2_common": [
+      "36.60",
+      "36.75"
+    ],
+    "later_G2_source_period": [
+      "2023-03-15",
+      "2023-03-24"
+    ],
+    "later_common_contains_earlier_common": true,
+    "saved_closes_inside_old_common_during_later_source": [],
+    "later_source_rows": 8,
+    "confirmation_bar_first_separate_record": {
+      "close": "36.65",
+      "date": "2023-03-27",
+      "high": "37.10",
+      "low": "36.60",
+      "open": "37.00",
+      "volume_shares_scaled": "25738990"
+    },
+    "meaning": "SAME_MANUAL_G2_CONTEXT_AND_GEOMETRIC_OVERLAP_DO_NOT_PROVE_PAIRWISE_RETEST_OR_FORMAL_MERGE"
+  },
+  "ABC_price_bridge": {
+    "close_through": {
+      "close": "27.70",
+      "date": "2025-06-02",
+      "high": "29.05",
+      "low": "27.65",
+      "open": "29.05",
+      "volume_shares_scaled": "93266178"
+    },
+    "whole_range_below_next_saved_bar": {
+      "close": "26.85",
+      "date": "2025-06-03",
+      "high": "28.00",
+      "low": "26.55",
+      "open": "28.00",
+      "volume_shares_scaled": "107474363"
+    },
+    "outside_activity_available_on": "2025-06-12",
+    "formal_membership_extended": false
+  },
+  "formal_structure": null,
+  "formal_parent": null,
+  "formal_merge": null,
+  "importance_score": null,
+  "independent_confirmation_count": null,
+  "historical_signal_eligible": false,
+  "classifier": "NOT_VALIDATED",
+  "Android": "NOT_TESTED_NEW_BUILD",
+  "actions_and_flywheel": "NOT_EVALUATED"
+}

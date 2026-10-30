@@ -1,0 +1,10 @@
+Traceback (most recent call last):
+  File "<frozen runpy>", line 198, in _run_module_as_main
+  File "<frozen runpy>", line 88, in _run_code
+  File "/workspace/Twstockai/股票系統M1_v0_18/capital_research/quantity_candidates_20261026/build.py", line 69, in <module>
+    if __name__=='__main__':build()
+                            ^^^^^^^
+  File "/workspace/Twstockai/股票系統M1_v0_18/capital_research/quantity_candidates_20261026/build.py", line 65, in build
+    if failures:raise AssertionError('Preserve mismatch actuals; do not edit oracle: '+repr(failures))
+                ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+AssertionError: Preserve mismatch actuals; do not edit oracle: ['shared-volume-trigger']

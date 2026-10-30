@@ -1,0 +1,110 @@
+{
+  "error": null,
+  "traceback": null,
+  "calls": {
+    "replay": 1,
+    "qualify": 1,
+    "ledger_kernel": 0,
+    "save": 0,
+    "simulate": 0,
+    "generate": 0,
+    "replay_sequence": 0
+  },
+  "caller_before": {
+    "prec": 5,
+    "rounding": "ROUND_FLOOR",
+    "Emin": -2,
+    "Emax": 2,
+    "capitals": 0,
+    "clamp": 1,
+    "traps": {
+      "InvalidOperation": true,
+      "FloatOperation": true,
+      "DivisionByZero": true,
+      "Overflow": true,
+      "Underflow": true,
+      "Subnormal": true,
+      "Inexact": true,
+      "Rounded": true,
+      "Clamped": true
+    },
+    "flags": {
+      "InvalidOperation": false,
+      "FloatOperation": false,
+      "DivisionByZero": false,
+      "Overflow": false,
+      "Underflow": false,
+      "Subnormal": false,
+      "Inexact": true,
+      "Rounded": true,
+      "Clamped": false
+    }
+  },
+  "caller_after": {
+    "prec": 5,
+    "rounding": "ROUND_FLOOR",
+    "Emin": -2,
+    "Emax": 2,
+    "capitals": 0,
+    "clamp": 1,
+    "traps": {
+      "InvalidOperation": true,
+      "FloatOperation": true,
+      "DivisionByZero": true,
+      "Overflow": true,
+      "Underflow": true,
+      "Subnormal": true,
+      "Inexact": true,
+      "Rounded": true,
+      "Clamped": true
+    },
+    "flags": {
+      "InvalidOperation": false,
+      "FloatOperation": false,
+      "DivisionByZero": false,
+      "Overflow": false,
+      "Underflow": false,
+      "Subnormal": false,
+      "Inexact": true,
+      "Rounded": true,
+      "Clamped": false
+    }
+  },
+  "caller_context_unchanged": true,
+  "default_context_unchanged": true,
+  "input_id": "sha256:e98a632bb51b08b93f2523f77435c68ca12b9a7500763ce5af20de81bcbbaa32",
+  "input_unchanged": true,
+  "source_version": {
+    "path": "rotation_research/action_ledger.py",
+    "bytes": 19719,
+    "sha256": "f58de00fc41a0f217f4e7cfabfb1ac605900a3e9dc49ec44526f9edbf1bb7978"
+  },
+  "actual": {
+    "schema": "rotation-action-ledger/0.1",
+    "input_id": "sha256:e98a632bb51b08b93f2523f77435c68ca12b9a7500763ce5af20de81bcbbaa32",
+    "start": "2026-01-05",
+    "end": "2026-01-12",
+    "policy_authorized": false,
+    "historical_signal_eligible": false,
+    "research_only": true,
+    "source_qualification": {
+      "calendar": "VERIFIED_COMPLETE",
+      "opening_claims": "UNKNOWN",
+      "net_distributions": "VERIFIED",
+      "execution_costs": "SCENARIO",
+      "investor_cashflows": "SCENARIO"
+    },
+    "refusal_reasons": [
+      "OPENING_ENTITLEMENTS_UNKNOWN"
+    ],
+    "daily": [],
+    "journal": [],
+    "total_net_return": null,
+    "scenario_net_return": null,
+    "actual_realized_investor_return": null,
+    "primary_pressure_id": null,
+    "flywheel_validation": "NOT_VALIDATED",
+    "status": "REFUSED_INCOMPLETE_EVENT_ACCOUNTING"
+  },
+  "equal_expected": true
+}

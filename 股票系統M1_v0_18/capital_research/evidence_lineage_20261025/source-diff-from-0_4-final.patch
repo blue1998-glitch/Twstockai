@@ -1,0 +1,1006 @@
+--- a/AGENTS.md
++++ b/AGENTS.md
+@@ -1,3 +1,11 @@
++# 2026-10-25 最新本地｜跨輪事實保全0.5，未提交
++
++新入口 `M1_CAPITAL_RESEARCH_FACT_LINEAGE_20261025_HANDOFF.md`、`股票系統M1_v0_18/capital_research/evidence_lineage_20261025/REPORT.md`／CONTRACT_0_5。遠端／本地HEAD仍4339a146d22dd849a6131a8c13f08f2e56145a2f，本輪明示無commit/push授權，優先於下方上一輪兩階段保存授權。只在本既有Codex／工作區做跨輪失效事實重現與最小接線，舊0.4／0.3／0.2原件不改。第一工作區由客服恢復，不等待／重建或推定890檔存亡。
++
++同ID刪撤銷、期限改null／延後、明示別名洗掉失效及中間review省略未來撤銷均已先存before實跑；新fact_lineage承接當時可知歷史及完整宣告，未知身分／更正不自動批准。決策／成交0.5、checkpoint0.4，原action_ledger不改；有效舊原件可review、真正新事實不永久封鎖，共用量柱不推同一事實。最終35唯一方法PASS＝25新＋10必要回歸，首31／33及恢復、無tape到期兩個單例FAIL留史不累加；修去重及事件先後後原斷言通過。全部資格false、主壓力null與70／2／8／0保持；R2/F及其他原未實作不擴張。無bootstrap／hydrate、真實producer、六方案、UI／Android、樣本外或子代理；Astra／救援原件未取得未讀。下一步Work唯讀，沒有新保存指示不commit/push。以下原文完整保留。
++
++---
++
+ # 2026-10-25 最新｜0.3已固定保存，A/B修復0.4
+ 
+ 0.3原樣快照 `34b5dfa22b77cfe5c85a818e156389d5d0f9a444` 已正常push並GitHub讀回。本輪使用者明確授權兩階段分別保存，優先於下方歷史未提交／無push授權敘述。新入口 `M1_CAPITAL_RESEARCH_AB_20261025_HANDOFF.md`、`股票系統M1_v0_18/capital_research/repair_ab_20261025/REPORT.md`／CONTRACT_0_4。A跨股事實與順序依賴、B延後取消漏掉活單區間均先另存before實跑重現，再最小修復；決策／成交0.4、checkpoint0.3，原action_ledger不改。
+--- a/CONTINUE_IN_WORK_MODE.md
++++ b/CONTINUE_IN_WORK_MODE.md
+@@ -1,3 +1,11 @@
++# 2026-10-25 最新本地｜跨輪事實保全0.5，未提交
++
++新入口 `M1_CAPITAL_RESEARCH_FACT_LINEAGE_20261025_HANDOFF.md`、`股票系統M1_v0_18/capital_research/evidence_lineage_20261025/REPORT.md`／CONTRACT_0_5。遠端／本地HEAD仍4339a146d22dd849a6131a8c13f08f2e56145a2f，本輪明示無commit/push授權，優先於下方上一輪兩階段保存授權。只在本既有Codex／工作區做跨輪失效事實重現與最小接線，舊0.4／0.3／0.2原件不改。第一工作區由客服恢復，不等待／重建或推定890檔存亡。
++
++同ID刪撤銷、期限改null／延後、明示別名洗掉失效及中間review省略未來撤銷均已先存before實跑；新fact_lineage承接當時可知歷史及完整宣告，未知身分／更正不自動批准。決策／成交0.5、checkpoint0.4，原action_ledger不改；有效舊原件可review、真正新事實不永久封鎖，共用量柱不推同一事實。最終35唯一方法PASS＝25新＋10必要回歸，首31／33及恢復、無tape到期兩個單例FAIL留史不累加；修去重及事件先後後原斷言通過。全部資格false、主壓力null與70／2／8／0保持；R2/F及其他原未實作不擴張。無bootstrap／hydrate、真實producer、六方案、UI／Android、樣本外或子代理；Astra／救援原件未取得未讀。下一步Work唯讀，沒有新保存指示不commit/push。以下原文完整保留。
++
++---
++
+ # 2026-10-25 最新｜0.3已固定保存，A/B修復0.4
+ 
+ 0.3原樣快照 `34b5dfa22b77cfe5c85a818e156389d5d0f9a444` 已正常push並GitHub讀回。本輪使用者明確授權兩階段分別保存，優先於下方歷史未提交／無push授權敘述。新入口 `M1_CAPITAL_RESEARCH_AB_20261025_HANDOFF.md`、`股票系統M1_v0_18/capital_research/repair_ab_20261025/REPORT.md`／CONTRACT_0_4。A跨股事實與順序依賴、B延後取消漏掉活單區間均先另存before實跑重現，再最小修復；決策／成交0.4、checkpoint0.3，原action_ledger不改。
+--- a/股票系統M1_v0_18/capital_research/README.md
++++ b/股票系統M1_v0_18/capital_research/README.md
+@@ -1,3 +1,9 @@
++# 跨輪事實保全0.5（本地未提交）
++
++最新入口[evidence_lineage_20261025/REPORT.md](evidence_lineage_20261025/REPORT.md)／[CONTRACT_0_5.md](evidence_lineage_20261025/CONTRACT_0_5.md)，完整交接見根M1_CAPITAL_RESEARCH_FACT_LINEAGE_20261025_HANDOFF.md。基線4339a146，沒有新commit/push授權；已知失效跨輪不被ID／review洗掉，有效舊事實及真正新事實仍可競爭。最終35唯一方法＝25新＋10必要回歸，不累加舊結果；原帳、正式資格及來源限制保持。以下舊文完整保留。
++
++---
++
+ # A/B定向修復0.4
+ 
+ 0.3固定保存：`34b5dfa22b77cfe5c85a818e156389d5d0f9a444`。最新研究入口 [repair_ab_20261025/REPORT.md](repair_ab_20261025/REPORT.md)／[CONTRACT_0_4.md](repair_ab_20261025/CONTRACT_0_4.md)，完整交接見根 M1_CAPITAL_RESEARCH_AB_20261025_HANDOFF.md。只修本股證據所有權及未承接活單區間；舊結果原樣READ，0.3歷史指紋對固定快照。單批20唯一方法＝11新＋9必要回歸PASS，不累加舊證據；沒有市場績效或正式資格結論。以下舊文留史。
+--- a/股票系統M1_v0_18/capital_research/continuity.py
++++ b/股票系統M1_v0_18/capital_research/continuity.py
+@@ -7,8 +7,9 @@
+ from rotation_research.action_ledger import replay
+ from .core import timestamp, number, quantity
+ from .close_clock import close_record
++from .fact_lineage import history_at
+ 
+-CHECKPOINT = 'capital-account-checkpoint/0.3'
++CHECKPOINT = 'capital-account-checkpoint/0.4'
+ 
+ 
+ def ledger_prefix(origin, fills, day):
+@@ -33,16 +34,23 @@
+ 
+ 
+ def _check_result(execution):
+-    if execution['schema']!='capital-execution/0.4' or execution['status']!='SYNTHETIC_EXECUTION_REPLAY':
++    if execution['schema']!='capital-execution/0.5' or execution['status']!='SYNTHETIC_EXECUTION_REPLAY':
+         raise ValueError('LIFECYCLE_PROOF_REQUIRED: historical results remain readable, not implicitly upgraded')
+     if execution['result_id']!=fingerprint({k:v for k,v in execution.items() if k!='result_id'}):
+         raise ValueError('Execution fingerprint conflict')
+     ids=execution['decision_ids'];records=execution['decision_records']
+     if not ids or len(ids)!=len(set(ids)) or set(ids)!=set(records):
+         raise ValueError('Exact ordered decision history required')
+-    for key,d in records.items():
+-        if d['schema']!='capital-decision/0.4' or d['decision_id']!=key or fingerprint({k:v for k,v in d.items() if k!='decision_id'})!=key:
++    sources=execution['fact_sources']
++    if set(sources)!=set(ids):raise ValueError('Complete fact declaration history required')
++    for index,key in enumerate(ids):
++        d=records[key]
++        if d['schema']!='capital-decision/0.5' or d['decision_id']!=key or fingerprint({k:v for k,v in d.items() if k!='decision_id'})!=key:
+             raise ValueError('Decision history fingerprint conflict')
++        if any(sources[key][k]!=d[k] for k in ('decision_at','data_cutoff')):
++            raise ValueError('Fact declaration decision/cutoff conflict')
++        expected=history_at([sources[k] for k in ids[:index+1]],d['decision_at'])
++        if expected!=d['fact_history']:raise ValueError('Fact history differs from original declarations')
+     times=[timestamp(records[key]['decision_at']) for key in ids]
+     if times!=sorted(set(times)):raise ValueError('Decision history must be chronological')
+     if execution['decision_id'] not in records or records[execution['decision_id']]['common_account_id']!=execution['common_account_id']:
+@@ -95,7 +103,8 @@
+                ledger_close=close,opening_unavailable_shares=deepcopy(unavailable),
+                general_reserved_cash=execution['decision_records'][execution['latest_decision_id']]['reserved_cash'],
+                latest_decision_id=execution['latest_decision_id'],latest_common_account_id=execution['latest_common_account_id'],
+-               reviewed_evidence_tokens=deepcopy(execution['reviewed_evidence_tokens']))
++               reviewed_evidence_tokens=deepcopy(execution['reviewed_evidence_tokens']),
++               fact_history=history_at([execution['fact_sources'][k] for k in execution['decision_ids']],through_at))
+     # Full-source and execution fingerprints are integrity metadata, not prefix decisions.
+     result=dict(schema=CHECKPOINT,state=state,state_id=fingerprint(state),
+         origin_ledger_input=deepcopy(origin),execution_result=deepcopy(execution),
+--- a/股票系統M1_v0_18/capital_research/core.py
++++ b/股票系統M1_v0_18/capital_research/core.py
+@@ -9,8 +9,9 @@
+ from graph_core.core import fingerprint, number as source_number
+ from rotation_research.core import fees
+ from .eligibility import entry_review, known_fact, validity_status
+-
+-VERSION = 'capital-decision/0.4'
++from .fact_lineage import source_snapshot, history_at, visible, issues as fact_issues, asset_issues
++
++VERSION = 'capital-decision/0.5'
+ FEATURES = ('price_volume', 'box', 'key_position', 'momentum', 'cross_scale')
+ BINDING = ('source_id', 'basis_id', 'adjustment_version')
+ 
+@@ -156,7 +157,7 @@
+         return _decide(data)
+ 
+ 
+-def _decide(data):
++def _decide(data, *, prior_fact_sources=()):
+     if data['schema'] != 'capital-decision-input/0.1' or data['synthetic'] is not True:
+         raise ValueError('Phase 1 accepts explicitly synthetic research only; real-source route remains refused')
+     decision, cutoff = timestamp(data['decision_at']), timestamp(data['data_cutoff'])
+@@ -173,6 +174,7 @@
+     for s in data['scenario_set']['scenarios']:
+         if set(s['prices']) != set(data['assets']) or any(number(v) <= 0 for v in s['prices'].values()):
+             raise ValueError('Complete positive scenario assumptions required')
++    history = history_at([*prior_fact_sources, source_snapshot(data)], data['decision_at'])
+     marks, layer1, layer2, evidence, novel = {}, {}, {}, {}, {}
+     used = set(data['consumed_evidence_tokens'])
+     for code, asset in data['assets'].items():
+@@ -193,7 +195,7 @@
+             if not _known(e, cutoff, decision):
+                 continue
+             _binding(e, asset)
+-            e=known_fact(e,data['data_cutoff'],data['decision_at'])
++            e=visible(e,data['data_cutoff'],data['decision_at'])
+             if e['feature'] not in FEATURES or e['stance'] not in ('support', 'refutation', 'unknown'):
+                 raise ValueError('Invalid separated evidence category')
+             if e['id'] in evidence and evidence[e['id']] != e:
+@@ -202,7 +204,8 @@
+             asset_evidence[e['id']] = deepcopy(e)
+             facts[e['feature']][e['stance']].append(deepcopy(e))
+             tokens = evidence_tokens(e)
+-            if not tokens & used and validity_status(e,data['data_cutoff'],data['decision_at']) in ('WITHIN_DECLARED_INTERVAL','ONGOING_REQUIRES_CURRENT_REVIEW'):
++            if (not tokens & used and not fact_issues(history,code,asset,'EVIDENCE',e,data['decision_at'])
++                    and validity_status(e,data['data_cutoff'],data['decision_at']) in ('WITHIN_DECLARED_INTERVAL','ONGOING_REQUIRES_CURRENT_REVIEW')):
+                 novel[e['id']] = tokens
+             used.update(tokens)
+         for f in facts:
+@@ -230,7 +233,8 @@
+                             liquidity_shares=entry['liquidity_shares'],
+                             reasonable_space=None if ref is None else str(number(ref['price']) - marks[code]),
+                             reference=deepcopy(ref), guaranteed_target=None, data_qualified=False,
+-                            capital_eligibility=entry_review(asset,code,data,asset_evidence))
++                            capital_eligibility=entry_review(asset,code,data,asset_evidence,
++                                history_reasons=asset_issues(history,code,asset,data['decision_at'])))
+     q, nav, available, locked = _account(data, marks)
+     baseline_q = dict(q)
+     for o in data['account']['pending_orders']:
+@@ -354,7 +358,7 @@
+         data_qualified=False, execution_model_qualified=False, historical_signal_eligible=False,
+         policy_authorized=False, live_execution_authorized=False, primary_pressure_id=None,
+         new_evidence_tokens=sorted(set().union(*novel.values())) if novel else [],
+-        reviewed_evidence_tokens=sorted(used),
++        reviewed_evidence_tokens=sorted(used),fact_history=history,
+         reserved_cash=data['account']['reserved_cash'],
+         continuity_qualification='INDEPENDENT_SNAPSHOT_NOT_A_CONTINUOUS_CAPITAL_CHAIN',
+         R2_status='NOT_IMPLEMENTED_REQUIRES_OUT_OF_SAMPLE_COMPARISON_WITH_R1')
+@@ -375,7 +379,11 @@
+     linkage=bind_resume(previous,data,checkpoint,cancelled_order_ids)
+     next_input=deepcopy(data)
+     next_input['consumed_evidence_tokens']=sorted(set(next_input['consumed_evidence_tokens']) | set(old['reviewed_evidence_tokens']) | set(checkpoint['state']['reviewed_evidence_tokens']))
+-    result=decide(next_input)
++    execution=checkpoint['execution_result']
++    prior=[execution['fact_sources'][key] for key in execution['decision_ids']]
++    with localcontext() as ctx:
++        ctx.prec=50
++        result=_decide(next_input,prior_fact_sources=prior)
+     d=result['decision'];d.pop('decision_id')
+     d['continuity_qualification']=linkage['qualification'];d['continuity']=linkage
+     d['decision_id']=fingerprint(d)
+--- a/股票系統M1_v0_18/capital_research/eligibility.py
++++ b/股票系統M1_v0_18/capital_research/eligibility.py
+@@ -50,7 +50,7 @@
+     return r
+ 
+ 
+-def entry_review(asset, code, data, evidence):
++def entry_review(asset, code, data, evidence, *, history_reasons=()):
+     r=asset.get('capital_eligibility');reasons=[]
+     out=dict(qualified_for_synthetic_proposal=False,reasons=reasons,review=None,
+              authority='SYNTHETIC_RESEARCH_ONLY_NOT_DATA_OR_EXECUTION_AUTHORIZATION')
+@@ -66,6 +66,7 @@
+     if r['status'] not in ('QUALIFIED_SYNTHETIC_RESEARCH','NOT_QUALIFIED','UNKNOWN'):
+         raise ValueError('Unsupported capital-review status')
+     if r['status']!='QUALIFIED_SYNTHETIC_RESEARCH':reasons.append('CAPITAL_'+r['status'])
++    reasons.extend(history_reasons)
+     ids=r['evidence_ids']
+     if not ids or len(set(ids))!=len(ids):reasons.append('MISSING_OR_DUPLICATE_REVIEW_EVIDENCE')
+     owned_ids={e['id'] for e in asset['evidence']}
+--- a/股票系統M1_v0_18/capital_research/execution.py
++++ b/股票系統M1_v0_18/capital_research/execution.py
+@@ -12,8 +12,9 @@
+ from .transition_risk import inspect_risk
+ from .close_clock import close_record
+ from .eligibility import expired_entry_reasons
+-
+-VERSION = 'capital-execution/0.4'
++from .fact_lineage import source_snapshot, history_at, asset_issues, first_issue_at
++
++VERSION = 'capital-execution/0.5'
+ 
+ 
+ def _refusal(reason):
+@@ -136,6 +137,8 @@
+     decision_ids=deepcopy(inherited['decision_ids']) if inherited else []
+     decision_records=deepcopy(inherited['decision_records']) if inherited else {}
+     decision_ids.append(result['decision_id']);decision_records[result['decision_id']]=deepcopy(result)
++    fact_sources=deepcopy(inherited['fact_sources']) if inherited else {}
++    fact_sources[result['decision_id']]=source_snapshot(data)
+     fill_order_ids=deepcopy(inherited['fill_order_ids']) if inherited else {}
+     unavailable=deepcopy(inherited['opening_unavailable_shares']) if inherited else {
+         c:str(quantity(x['shares'])-quantity(x['sellable'])) for c,x in a['holdings'].items()}
+@@ -148,7 +151,8 @@
+             latest_decision_id=latest['decision_id'],latest_common_account_id=latest['common_account_id'],
+             origin_common_account_id=origin_common,opening_unavailable_shares=deepcopy(unavailable),
+             reviewed_evidence_tokens=sorted(set().union(*(set(d['reviewed_evidence_tokens']) for d in decision_records.values()))),
+-            fill_order_ids=deepcopy(fill_order_ids),ledger_close_proof=deepcopy(clock))
++            fill_order_ids=deepcopy(fill_order_ids),ledger_close_proof=deepcopy(clock),
++            fact_sources=deepcopy(fact_sources))
+     marks={c:dict(price=next(m['price'] for m in x['marks'] if m['occurred_at']==data['data_cutoff'] and timestamp(m['available_at'])<=timestamp(data['decision_at'])),
+                         at=data['data_cutoff'],source_id=x['source_id'],basis_id=x['basis_id']) for c,x in data['assets'].items()}
+     risk_data=data
+@@ -193,13 +197,18 @@
+                 if o['side']=='BUY' and o['code']==obs['code'] and number(st['remaining']):
+                     st.update(status='CANCELLED_EVIDENCE',reserved_cash='0')
+                     decisions.append(dict(at=obs['at'],order_id=o['id'],status='CANCELLED_EVIDENCE',reason=obs['evidence_status']))
++        known_history=history_at([fact_sources[k] for k in decision_ids],obs['at'])
+         for o in orders:
+             st=order_state[o['id']]
+             if o['side']=='BUY' and number(st['remaining']) and not st['status'].startswith(('CANCELLED','EXPIRED')):
+                 invalid=expired_entry_reasons(risk_data['assets'][o['code']],obs['at'])
++                invalid+=asset_issues(known_history,o['code'],risk_data['assets'][o['code']],obs['at'])
+                 if invalid:
++                    effective=first_issue_at([fact_sources[k] for k in decision_ids],o['code'],risk_data['assets'][o['code']],
++                                             after=st['active_decision_at'],through=obs['at']) or obs['at']
++                    if timestamp(effective)>=timestamp(o['expires_at']):continue
+                     st.update(status='CANCELLED_EVIDENCE',reserved_cash='0')
+-                    decisions.append(dict(at=obs['at'],order_id=o['id'],status='CANCELLED_EVIDENCE',reason='DECLARED_VALIDITY_ENDED',details=invalid))
++                    decisions.append(dict(at=effective,observed_at=obs['at'],order_id=o['id'],status='CANCELLED_EVIDENCE',reason='DECLARED_VALIDITY_ENDED',details=invalid))
+         # Funding is not a reauthorization. A new decision must bind the actual
+         # prior-close account, original fill path and explicit order cancellations.
+         for review in job.get('reassessments',[]):
+@@ -242,6 +251,7 @@
+             st.update(status='WAITING',requires_reassessment=False,active_decision_at=fresh['decision_at'],active_decision_id=fresh_result['decision_id'])
+             risk_data=fresh;latest_result=fresh_result;decision_ids.append(fresh_result['decision_id'])
+             decision_records[fresh_result['decision_id']]=deepcopy(fresh_result)
++            fact_sources[fresh_result['decision_id']]=source_snapshot(fresh)
+             reassessments.append(dict(id=review['id'],at=obs['at'],order_id=o['id'],checkpoint_id=cp['checkpoint_id'],
+                 decision_id=fresh_result['decision_id'],cancelled_order_ids=review['cancelled_order_ids']))
+         # Release expired orders and reserve all active buys jointly, in explicit order.
+@@ -315,8 +325,18 @@
+     final_time = timestamp(job['observed_until'])
+     if times and final_time < times[-1]:
+         raise ValueError('Execution watermark before tape')
++    final_history=history_at([fact_sources[k] for k in decision_ids],job['observed_until'])
+     for o in orders:
+         st=order_state[o['id']]
++        if o['side']=='BUY' and number(st['remaining']) and not st['status'].startswith(('CANCELLED','EXPIRED')):
++            invalid=asset_issues(final_history,o['code'],risk_data['assets'][o['code']],job['observed_until'])
++            if invalid:
++                effective=first_issue_at([fact_sources[k] for k in decision_ids],o['code'],risk_data['assets'][o['code']],
++                                         after=st['active_decision_at'],through=job['observed_until'])
++                if effective is not None and timestamp(effective)<timestamp(o['expires_at']):
++                    st.update(status='CANCELLED_EVIDENCE',reserved_cash='0')
++                    decisions.append(dict(at=effective,observed_at=job['observed_until'],order_id=o['id'],status='CANCELLED_EVIDENCE',
++                                          reason='KNOWN_FACT_HISTORY_AT_WATERMARK',details=invalid))
+         if number(st['remaining']) and final_time >= timestamp(o['expires_at']) and not st['status'].startswith('CANCELLED'):
+             st.update(status='EXPIRED_UNFILLED', reserved_cash='0')
+             decisions.append(dict(at=o['expires_at'],order_id=o['id'],status='EXPIRED_UNFILLED',reason='EXPLICIT_ORDER_DEADLINE',remaining=st['remaining']))
+@@ -348,6 +368,6 @@
+             predecessor_state=j.get('continuation',{}).get('checkpoint',{}).get('state_id'))))
+     if len(set(identities)) != 1:
+         raise ValueError('Alternatives must share exact capital/rights AND exogenous prices/capacity/states/availability/settlement path')
+-    return dict(schema='capital-comparison/0.4', synthetic=True, common_input_id=identities[0],
++    return dict(schema='capital-comparison/0.5', synthetic=True, common_input_id=identities[0],
+                 results={k:simulate(j) for k,j in jobs.items()}, ranking=None,
+                 total_net_return_comparison_qualified=False, policy_authorized=False)
+--- a/M1_CAPITAL_RESEARCH_FACT_LINEAGE_20261025_HANDOFF.md
++++ b/M1_CAPITAL_RESEARCH_FACT_LINEAGE_20261025_HANDOFF.md
+@@ -0,0 +1,31 @@
++# Work接續：跨輪失效事實0.5（本地未提交）
++
++遠端及本地基線`4339a146d22dd849a6131a8c13f08f2e56145a2f`。本輪使用者只授權定向重現／修復，不授權commit/push。全部新差異留在原/workspace/Twstockai，不代表GitHub已有0.5。以下可直接貼給Work；精確當次差異數以Codex本輪回覆及實核為準。
++
++```text
++接續blue1998-glitch/Twstockai，分支dev/m1-v018-chart-annotations。
++最新已核遠端／本地HEAD：4339a146d22dd849a6131a8c13f08f2e56145a2f。
++保留34b5dfa22b77cfe5c85a818e156389d5d0f9a444、6be4333d490bcccfe952c7606dffb802b76cdd5c、ea380cf7d9ae7fa8e204c2b02dfea72f51b3fa01、1085b17ccbbc09269908bb95442ec309910d1399、3b6fe93fe582ba943451374491f081f23af42f59及全部後續／未提交差異。
++只在本既有唯一Codex對話及/workspace/Twstockai工程，不開新Codex、子代理或競爭分支。第一工作區由客服恢復，僅供日後救援獨有檔；不等待／重建／推定890檔已取得或全遺失，不把它們列待提交。
++先唯讀核最新ref、HEAD、祖先與完整差異，不reset、clean、強推、checkout覆蓋或用main／舊ZIP／救援檔替換。
++
++本輪0.5未提交；GitHub4339a146仍0.4，不冒讀到0.5。Work若無正式共享檔案工具，保持本地原件未取得／未讀，只依Codex摘要評估，不能稱獨立原件驗收。不要求使用者搬檔。不修改、bootstrap、hydrate、測試、producer、commit/push、部署、下單、付費或訊息。
++
++讀最新有效AGENTS、CONTINUE_IN_WORK_MODE、PROJECT_VISION、GRAPH_CORE_RESUME、PHASE1、REVIEW、REPAIR、AB及本FACT_LINEAGE交接。
++新根：股票系統M1_v0_18/capital_research/evidence_lineage_20261025。
++讀REPORT、CONTRACT_0_5、intake、execution、diagnostics、preservation、CHANGE_MANIFEST、tests-final-35.log、tests-final.log（33中間批）、tests-initial.log、tests-recovery-boundary-before.log；before／after-initial／after／after-final各九案first-input、expected、input、actual、source-versions／summary。對照fixtures、reproduce、test_lineage、verify及新fact_lineage、core／eligibility／continuity／execution接線。
++
++主要反例已實跑：同ID刪已知撤銷、期限改null／延後、明示別名後刪撤銷，都在0.4買B20；修後拒絕。新增發現原未來撤銷若被中間review省略，到可知時點仍買B20；修後沿原宣告取消。改名保留撤銷本來就拒絕、完整未來宣告原本就會取消，不冒新修復。
++有效舊事實原ID／內容保持者仍買B20且new_evidence_tokens空；真正獨立新事實保留舊失效仍可買B20，不永久封鎖股票。先存輸入／expected再執行actual，舊原件及oracle不改。
++
++新決策／成交／比較0.5、checkpoint0.4。fact_lineage純數值／無IO，不另建會計。numeric fact_history只含當時可知；完整raw fact_sources含未來宣告，只屬execution完整性。checkpoint逐筆重建decision history，下一輪不能刪已知失效或省略一輪宣告；期初資本、權利、reserve、fills、未成交、latest前身及token仍沿原action_ledger。
++別名必有同股來源基底／kind的明示target及舊content指紋。共用量柱／形成點只表相依，不當身份；無法識別明確未知／拒絕，更正／晚來身份合併未實作。匿名ENTRY／REFERENCE只保護明示可知時間快照，不認證永久來源身份或任意造假。
++
++最終35唯一方法PASS＝25新增＋10必要回歸。首31 PASS及新增單一恢復邊界FAIL不累加；後者已保留診斷並修去重，原斷言未改。精確有效原件可解除一次被拒提案，但不能清掉真正到期／撤銷。另補無tape較晚撤銷覆蓋較早到期的實際FAIL及修正，tests-expiry-boundary-before.log保留；最終事件分開at／observed_at，依失效與到期先後處理。33中間批不累加。歷史20／38／51／46、probe及合成序列不相加。
++本輪舊全suite、九路徑／10條競爭、真實producer、資格重算、市場六方案、UI／Android、樣本外、bootstrap／hydrate及commit/push皆0。
++
++優先唯讀嘗試反駁跨輪歷史刪改、別名身份借用、未知更正、未來資訊回流及已知撤銷落地；核有效舊原件恢復、獨立新事實及共享量柱不誤合併。核逐日原帳／權利／reserve／fill／order／token回連。真正缺陷交回此唯一Codex，沒有新工程授權不自行修；沒有新保存指示不commit/push。
++正式action_resolution0.4、來源0.10與全部parents、P0-3/P0-4、reaction_facts／人工基底保持。70拒算／2不足／其中8換股影響未支援／合格真實總淨0、正式資格false、主壓力null不變。不補未知、放寬拒算、改正式策略圖形或預定策略勝者。
++R2/F及原未支援帳務、來源更正認證、任意造假辨識、複雜跨源合併及完整分叉矩陣未完成。Astra全文Codex仍未取得未讀，不HTTP試探／重試受拒入口或要求搬檔。Work未獨立驗收。
++最後提供最新遠端SHA、本地HEAD、實際差異／暫存狀態、已讀未讀、已測未測、支持邊界及完整可貼下一輪Work／Codex指令。
++```
+--- a/股票系統M1_v0_18/capital_research/evidence_lineage_20261025/CONTRACT_0_5.md
++++ b/股票系統M1_v0_18/capital_research/evidence_lineage_20261025/CONTRACT_0_5.md
+@@ -0,0 +1,35 @@
++# 跨輪事實內容保全研究契約0.5（本地未提交）
++
++基線 `4339a146d22dd849a6131a8c13f08f2e56145a2f`。本輪只授權定向重現／修復與可審查差異，沒有commit/push授權。舊0.2／0.3／0.4、來源、before／after、log及快照均原樣保留。新輸出capital-decision/0.5、capital-execution/0.5、capital-comparison/0.5；checkpoint為capital-account-checkpoint/0.4。輸入傳輸外殼不變；舊結果READ不重算、不隱式遷移。
++
++## 身分與內容
++
++新純模組fact_lineage不含檔案、網路或會計IO。事實身分範圍為code、source_id、basis_id、adjustment_version、kind及id。EVIDENCE必須有非空id；缺失明確FACT_IDENTITY_REQUIRED。ENTRY／REFERENCE沒有來源id時，只以原available_at及occurred_at建立同股同基底的明示研究快照身分，並非原始來源永久ID或真實認證。
++
++歷史保存當時可知的fact、內容指紋、observed_at、原身分／別名、接受或拒絕原因與目前仍有效的原件。事實本體（含事件／形成點／量柱、內容、類型、立場及原時點）不得由同ID靜默改寫；來源更正處理仍FACT_CONTENT_REWRITE_NOT_IMPLEMENTED／FACT_CORRECTION_NOT_IMPLEMENTED。可增加當時才可知的有效期資料或收緊限制，但已知有限valid_until不能刪成null或延後，valid_from不能改寫，已知撤銷不能刪除或覆蓋。
++
++資格拒絕只限制相關新增資金及新觸發，沒有永久封鎖該股票。原件仍有效時，恢復其精確已接受內容可解除一次被拒提案的標記；原件若後來過期／撤銷，不能藉恢復舊bytes復活。真正不同、當時可知且有當期review的新事實可以競爭，舊失效紀錄不刪。
++
++## 明示別名與未知
++
++`fact_link`為capital-fact-alias/0.1，包含code、source_id、basis_id、adjustment_version、target_id、target_content_id、available_at、source_ids。必須指向同股／同基底／同kind的已保存內容指紋，且當時已可知。別名只承接原事實，不改造成獨立事件，也不解除其失效。
++
++沒有連結而在同範圍出現完全相同本體的新ID，列FACT_RENAME_LINK_REQUIRED／未知，不能直接當新事實。錯股票、錯來源基底、未知target或內容指紋不符皆拒絕資格。無法辨識的連結、已建立另一身分後才要求合併的別名，保持UNKNOWN／LATE_ALIAS_MERGE_NOT_IMPLEMENTED，不猜測來源關係。
++
++不能僅依共用量柱、形成點或相依token合併真實事實。相依去重仍由原evidence_tokens處理；不同事實可以共用量柱，但不因此算兩個獨立觸發。有效舊事實與合法別名可由當期review使用，沒有被強制改成新事件或固定有效天數。
++
++## 時點與連續帳
++
++execution的`fact_sources`按每個decision_id保留完整明示來源宣告（含尚未知的未來撤銷），只屬完整性資料。numeric decision的`fact_history`只包含當時可知投影，schema=capital-fact-history/0.1；未來撤銷內容不進早期history／decision_id。knowledge事件必等occurred_at與available_at均到達；發生但尚未公布不能提前取消。
++
++resume只從已驗checkpoint的完整fact_sources／decision_records取歷史，不信任輸入自報的history取代前身。每次新decision的history可從此前全部宣告重建；checkpoint再逐筆比對所有decision的版本、指紋、截止與重建history。缺一輪宣告、刪改已知原件，即使重算外層execution指紋也不能與原decision history相符。中間一輪省略事實不清空早期紀錄。
++
++當先前宣告的撤銷後來可知，standing BUY即使本輪review省略其欄位，仍使用完整歷史取消。每個市場觀察都在成交前檢查；沒有後續市場tape時，明示observed_until亦處理當時已知失效並保存取消事件。取消事件at保存首個當時已知失效時間，observed_at另存實際處理觀察／watermark；較早到期或同時到期者維持EXPIRED，不被較晚撤銷改寫。這是合成引擎的觀察／watermark處理，不保證券商即時取消或能撤回已成交部位。先前已成交者不因較晚撤銷而回寫刪除。
++
++checkpoint.state的fact_history只投影到through_at；完整未來宣告仍留在execution完整性資料。原origin／latest、帳戶／fill／order／token檢查保持。現金、權利、應收應付、持股、預留及原始資本仍只由原action_ledger入帳；本模組不是第二套會計。
++
++## 能力界線
++
++這是明示合成來源的連續性查核，不是密碼學簽章、通用來源認證或任意造假的偵測器。若所有來源、永久身分、事件及時點都被一起偽造，不能宣稱已識別其實際同一性。匿名ENTRY／REFERENCE只保護同一宣告快照，不認證改時點後仍屬原事實。合法來源更正／撤銷撤銷及複雜身份合併沒有自動批准流程；不支援時明確拒絕／未實作，不從新decision_id推導授權。
++
++本輪無真實producer、來源資格重算、全市場／六方案、UI／Android、樣本外、R2/F或完整外部既有單重播。正式資格與授權全部false、主壓力null、70拒算／2不足／其中8換股影響未支援／真實總淨合格0保持；不補未知、不放寬來源拒算，不改正式策略、圖形、P0-3/P0-4或人工模式。
+--- a/股票系統M1_v0_18/capital_research/evidence_lineage_20261025/REPORT.md
++++ b/股票系統M1_v0_18/capital_research/evidence_lineage_20261025/REPORT.md
+@@ -0,0 +1,45 @@
++# 跨輪已知失效事實：0.5定向重現與修復
++
++本地與已核遠端基線仍為`4339a146d22dd849a6131a8c13f08f2e56145a2f`。本輪沒有commit/push；新程式與證據只在原/workspace/Twstockai。第一個工作區由客服處理，不等待、不重建、不推定890檔存亡，也不把它們列入本地差異。僅本對話工程，無子代理／分支。
++
++## 修前實際與修後結果
++
++以0.4已保存A-own-evidence輸入為基礎，第一輪A-zero／空orders，B-event明示已知撤銷或有限期限，1/8日終建立原帳checkpoint，1/8 17:00新review選E-partial。原資本2180、一般reserve100、現金權利80及股份權利10完整保留。新reproduce先create-only保存first-input／expected，再產生並保存含前身的完整input，最後執行並另存actual；修改數值source前完成before九案，來源指紋完整。
++
++|合成案例|修前0.4實際|修後0.5實際|
++|---|---|---|
++|同ID刪掉已知撤銷|重新合格，買B20|不合格／拒絕，無新成交|
++|已知期限改null|重新合格，買B20|不合格／拒絕|
++|已知期限延後|重新合格，買B20|不合格／拒絕|
++|明示同原件別名後刪撤銷|重新合格，買B20|承接原失效，不合格／拒絕|
++|改名但保留原撤銷|原本就拒絕|繼續拒絕，不冒稱新修復|
++|有效舊事實不變|買B20|仍可買B20，new_evidence_tokens空|
++|真正獨立新事實、保留舊失效|買B20|仍可買B20，不永久封鎖股票|
++|未來撤銷完整保留|早期決策相同，屆時取消B|保持相同prefix，屆時取消|
++|中間review省略尚未可知撤銷|早期決策相同，但屆時仍買B20|早期決策仍相同，屆時沿先前來源取消B|
++
++上述五種錯誤放行輸入已實際重現；改名保留撤銷及未來宣告完整保留的防線本來就成立，不冒稱發現新缺陷。before、after-initial、after（33中間批）、after-final分開保存，沒有改oracle或舊0.4結果。修後完整after-final使用最終source，before／after因版本不同明示重新建立前身，經濟輸入與原帳相同，不把舊checkpoint靜默遷移。
++
++## 最小接線
++
++新增純fact_lineage：同股／來源／基底／版本／kind／ID的原件、指紋與已知失效；明示別名必指向舊內容。core／eligibility接新資金與觸發資格；execution保留各輪raw宣告並在觀察／watermark時檢查當時已知歷史；continuity重建並比對全部decision歷史及checkpoint投影。新決策／成交／比較0.5、checkpoint0.4；原action_ledger、正式策略／圖形／來源／UI完全未改。
++
++ENTRY／REFERENCE沒有來源ID者僅建立明示時間的研究快照身份；不冒永久來源ID。共用量柱／形成點不推同一事實；相依token去重與資格分開。有效舊事實不必成為新事件；真正新事實不受舊失效永久封鎖。無法識別／不支援的更正明確未知或NOT_IMPLEMENTED。
++
++## 本輪實際測試
++
++最終35個唯一方法PASS＝25新增＋10直接相關必要回歸。精確方法與命令見execution.json／verify.py，最終log為tests-final-35.log。首批31 PASS及其後單一恢復邊界FAIL均保留，不與最終批累加，也不累加舊20／38／51／46或before／after probe。
++
++恢復邊界曾實際FAIL：歷史全域去重略過「後來恢復精確有效原件」的再次觀察，使一次被拒改寫永久污染原件資格。已修去重只允許精確已接受且目前仍有效的原件解除提案拒絕；不清除後來已知到期／撤銷。原斷言未改。補中間輪省略事實仍保留撤銷，以及原件恢復兩個方法後，該階段33全通過；未解測試失敗0。
++
++其後無tape事件先後覆核發現：watermark先處理撤銷會覆蓋較早的明示到期。tests-expiry-boundary-before.log實際FAIL已保存；修復比較首次已知失效與expires_at，分開effective at與observed_at，較早／同時到期保留EXPIRED，較早撤銷才取消。新增兩個方法後最終35全通過，原斷言未改；33中間log及after仍留史，不累加。
++
++新測例另含：有效原件別名、錯股票／來源／基底／版本／指紋別名、相同內容改名缺連結、真正新事實共用量柱不被合併、同ID內容改寫、更正未實作、ENTRY／REFERENCE期限重設、未來撤銷numeric隔離、公告晚於成交不能提前取消、無後續市場觀察在watermark取消、刪一輪宣告及重算外層指紋仍拒絕、逐日資產式／權利／reserve／fills／token。10必要回歸只選有效舊事實、過期、未來隔離、standing單撤銷、latest／完整fills與token、部分成交取消／到期、A本股資格、B活單區間及READ不重算。
++
++## 保全與未完成
++
++一般reserve100、原始2180及現金／股份權利沿原帳；新歷史不入帳。有效舊事實案例後來交付A10一次，賣A50後保有A60及B20。部分成交必要回歸另驗全部fills前綴與各日日終資產式，不以終點相等認證全部中途路徑。原0.4所有保存輸入、結果、log／manifest、0.2快照及舊validation不改；source／文件新差異與指紋另列。
++
++R2/F、信用、期初應付、外部既有單無縫完整重播、無來源限售解除、真實日終／交割認證、來源更正認證、複雜跨源身份合併／任意造假辨識及完整分叉矩陣未完成。匿名快照不能證明變更時點後仍是原事實。尚無後續真實樣本外或策略成效證據。
++
++bootstrap／hydrate／真實producer／資格重算／市場六方案／舊全suite／九路徑或10條競爭／UI／Android／樣本外／commit／push全部0。70／2／其中8／合格真實總淨0與全部正式資格false、主壓力null保持。Astra全文Codex未取得／未讀，第一工作區救援原件未取得、不猜存亡。Work未取得本輪本地原件，不能稱獨立驗收。下一步Work唯讀新契約與反例，或本既有Codex接受明確新任務；沒有新保存指示不commit/push。完整可貼指令見根新FACT_LINEAGE交接及本輪回覆。
+--- a/股票系統M1_v0_18/capital_research/evidence_lineage_20261025/fixtures.py
++++ b/股票系統M1_v0_18/capital_research/evidence_lineage_20261025/fixtures.py
+@@ -0,0 +1,71 @@
++"""Synthetic cross-round fact cases; original v0.4 artifacts stay read-only."""
++from copy import deepcopy
++import json
++from pathlib import Path
++from graph_core.core import fingerprint
++from capital_research.core import decide
++from capital_research.execution import simulate
++from capital_research.continuity import make_checkpoint
++from capital_research.repair_20261025.fixtures import advance, continuation_job
++
++BASELINE = '4339a146d22dd849a6131a8c13f08f2e56145a2f'
++ROOT = Path(__file__).resolve().parents[1]
++EXPECTED = {
++    'drop-known-revocation': 'REJECT_NEW_B_CAPITAL',
++    'extend-expiry-to-null': 'REJECT_NEW_B_CAPITAL',
++    'extend-expiry-later': 'REJECT_NEW_B_CAPITAL',
++    'alias-drop-revocation': 'REJECT_NEW_B_CAPITAL',
++    'rename-keep-revocation': 'REJECT_NEW_B_CAPITAL',
++    'valid-old-fact': 'ACCEPT_B20_WITHOUT_NEW_EVENT',
++    'independent-new-fact': 'ACCEPT_B20_KEEP_OLD_INVALID_FACT',
++    'future-revocation': 'SAME_PREFIX_THEN_CANCEL_B_AT_KNOWN_TIME',
++    'future-stripped-at-review': 'SAME_PREFIX_THEN_CANCEL_B_FROM_PRIOR_SOURCE',
++}
++
++
++def first_input(name):
++    path = ROOT / 'repair_ab_20261025/after/A-own-evidence/input.json'
++    job = deepcopy(json.loads(path.read_text()))
++    job.update(plan_id='A-zero', orders=[])
++    fact = job['decision_input']['assets']['B']['evidence'][0]
++    if name.startswith('extend-expiry'):
++        fact['validity'].update(valid_until='2026-01-07T16:00:00+08:00',
++                                qualification='EXPLICIT_SYNTHETIC_INTERVAL')
++    elif name not in ('valid-old-fact',):
++        future = name.startswith('future-')
++        fact['validity']['invalidation'] = dict(evidence_id='B-revocation-1',
++            occurred_at='2026-01-09T09:00:00+08:00' if future else '2026-01-05T14:00:00+08:00',
++            available_at='2026-01-09T09:01:00+08:00' if future else '2026-01-05T14:00:00+08:00',
++            source_ids=['fixture'])
++    return job
++
++
++def pair(name, first):
++    d = first['decision_input']; old = decide(d); execution = simulate(first)
++    cp = make_checkpoint(first['ledger_input'], execution, through_at=first['observed_until'])
++    fresh, ids = advance(d, cp, at='2026-01-08T17:00:00+08:00')
++    asset = fresh['assets']['B']; fact = asset['evidence'][0]
++    if name in ('drop-known-revocation', 'alias-drop-revocation', 'future-stripped-at-review'):
++        fact['validity']['invalidation'] = None
++    if name == 'extend-expiry-to-null':
++        fact['validity'].update(valid_until=None, qualification='EXPLICIT_SYNTHETIC_ONGOING_REQUIRES_REVIEW')
++    if name == 'extend-expiry-later':
++        fact['validity']['valid_until'] = '2026-01-12T16:00:00+08:00'
++    if name in ('alias-drop-revocation', 'rename-keep-revocation'):
++        fact['id'] = 'B-renamed'
++        if name == 'alias-drop-revocation':
++            fact['fact_link'] = dict(schema='capital-fact-alias/0.1', code='B',
++                source_id=asset['source_id'], basis_id=asset['basis_id'], adjustment_version=asset['adjustment_version'],
++                target_id='B-event', target_content_id=fingerprint(d['assets']['B']['evidence'][0]),
++                available_at=fresh['data_cutoff'], source_ids=['fixture'])
++    if name == 'independent-new-fact':
++        new = deepcopy(fact)
++        new.update(id='B-independent', event_id='B-independent', formation_id='B-independent',
++                   volume_bar_id='B-independent', occurred_at=fresh['data_cutoff'], available_at=fresh['data_cutoff'])
++        new['validity'].update(invalidation=None, valid_from=fresh['data_cutoff'], available_at=fresh['data_cutoff'])
++        asset['evidence'].append(new)
++        asset['capital_eligibility']['evidence_ids'] = [new['id']]
++    else:
++        asset['capital_eligibility']['evidence_ids'] = [fact['id']]
++    next_job = continuation_job(first, execution, old, plan='E-partial', fresh=fresh, ids=ids)
++    return dict(first=first, first_decision=old, first_execution=execution, checkpoint=cp, next=next_job)
+--- a/股票系統M1_v0_18/capital_research/evidence_lineage_20261025/reproduce.py
++++ b/股票系統M1_v0_18/capital_research/evidence_lineage_20261025/reproduce.py
+@@ -0,0 +1,65 @@
++"""Save exact inputs and fixed oracles before evaluating each continuation."""
++import argparse
++import hashlib
++import json
++from pathlib import Path
++from copy import deepcopy
++from capital_research.core import decide, VERSION as DECISION_VERSION
++from capital_research.execution import simulate, VERSION as EXECUTION_VERSION
++from capital_research.continuity import CHECKPOINT
++from .fixtures import BASELINE, ROOT, EXPECTED, first_input, pair
++
++
++def save(path, value):
++    path.parent.mkdir(parents=True, exist_ok=True)
++    with path.open('x') as f:
++        json.dump(value, f, ensure_ascii=False, indent=2, allow_nan=False); f.write('\n')
++
++
++def attempt(call):
++    try: return dict(value=call(), error=None)
++    except (ValueError, KeyError) as e: return dict(value=None, error=type(e).__name__ + ': ' + str(e))
++
++
++def capture(output):
++    out = Path(output)
++    sources = {str(p.relative_to(ROOT)): hashlib.sha256(p.read_bytes()).hexdigest()
++               for p in sorted(ROOT.glob('*.py'))}
++    sources.update({str(p.relative_to(ROOT)): hashlib.sha256(p.read_bytes()).hexdigest()
++                    for p in sorted(Path(__file__).parent.glob('*.py'))})
++    save(out/'source-versions.json', dict(baseline=BASELINE, decision=DECISION_VERSION,
++        execution=EXECUTION_VERSION, checkpoint=CHECKPOINT, sources=sources, synthetic=True))
++    for name, expected in EXPECTED.items():
++        first = first_input(name)
++        save(out/name/'first-input.json', first)
++        save(out/name/'expected.json', dict(expected=expected, synthetic=True))
++    summary = {}
++    for name in EXPECTED:
++        first = json.loads((out/name/'first-input.json').read_text())
++        built = pair(name, first)
++        save(out/name/'input.json', built)
++        nxt = built['next']; continuation = nxt['continuation']
++        resumed = attempt(lambda: __import__('capital_research.core', fromlist=['resume_decision']).resume_decision(
++            continuation['previous_decision'], nxt['decision_input'], checkpoint=continuation['checkpoint'],
++            cancelled_order_ids=continuation['cancelled_order_ids']))
++        execution = attempt(lambda: simulate(nxt))
++        prefix_equal = None
++        if name.startswith('future-'):
++            plain = deepcopy(first['decision_input']); plain['assets']['B']['evidence'][0]['validity']['invalidation'] = None
++            prefix_equal = decide(plain)['decision'] == built['first_decision']['decision']
++        actual = dict(resumed=resumed, execution=execution, prefix_equal=prefix_equal)
++        save(out/name/'actual.json', actual)
++        d = resumed['value']['decision'] if resumed['value'] else None
++        r = execution['value']
++        row = dict(error=resumed['error'] or execution['error'], prefix_equal=prefix_equal,
++                   B_qualified=d['layer2']['B']['capital_eligibility']['qualified_for_synthetic_proposal'] if d else None,
++                   new_B_fills=[f['shares'] for f in r['fills'] if f['code']=='B' and f['side']=='BUY' and f['id'] in r.get('new_fill_ids',[])] if r else [],
++                   status=r['status'] if r else None,
++                   B_order_status=r.get('order_states',{}).get('next-B-buy',{}).get('status') if r else None)
++        summary[name] = row; print(name, json.dumps(row))
++    save(out/'summary.json', summary)
++
++
++if __name__ == '__main__':
++    p = argparse.ArgumentParser(); p.add_argument('--output', required=True)
++    capture(p.parse_args().output)
+--- a/股票系統M1_v0_18/capital_research/evidence_lineage_20261025/test_lineage.py
++++ b/股票系統M1_v0_18/capital_research/evidence_lineage_20261025/test_lineage.py
+@@ -0,0 +1,231 @@
++"""Fact continuity counterexamples; no real producer or strategy assessment."""
++from copy import deepcopy
++from decimal import Decimal
++import json
++import unittest
++from graph_core.core import fingerprint
++from capital_research.core import decide, resume_decision
++from capital_research.execution import simulate
++from capital_research.continuity import make_checkpoint
++from capital_research.fact_lineage import history_at
++from capital_research.repair_20261025.fixtures import advance, continuation_job
++from .fixtures import EXPECTED, first_input, pair
++
++
++def resume(job):
++    c = job['continuation']
++    return resume_decision(c['previous_decision'], job['decision_input'],
++                           checkpoint=c['checkpoint'], cancelled_order_ids=c['cancelled_order_ids'])
++
++
++def alias(job, *, keep_invalid=False):
++    job = deepcopy(job); a = job['decision_input']['assets']['B']; f = a['evidence'][0]
++    original = deepcopy(f); f['id'] = 'B-alias'
++    f['fact_link'] = dict(schema='capital-fact-alias/0.1', code='B',
++        **{k: a[k] for k in ('source_id','basis_id','adjustment_version')},
++        target_id=original['id'], target_content_id=fingerprint(original),
++        available_at=job['decision_input']['data_cutoff'], source_ids=['fixture'])
++    a['capital_eligibility']['evidence_ids'] = [f['id']]
++    return job
++
++
++class FactLineageTests(unittest.TestCase):
++    @classmethod
++    def setUpClass(cls):
++        cls.pairs = {name: pair(name, first_input(name)) for name in EXPECTED}
++
++    def result(self, name):
++        return resume(self.pairs[name]['next'])['decision']
++
++    def test_known_revocation_cannot_disappear_into_a_new_review(self):
++        job = self.pairs['drop-known-revocation']['next']; d = self.result('drop-known-revocation')
++        self.assertFalse(d['layer2']['B']['capital_eligibility']['qualified_for_synthetic_proposal'])
++        self.assertNotIn('E-partial', d['research_recommendation']['candidate_ids'])
++        self.assertTrue(any('VALIDITY_REWRITE' in x for x in d['layer2']['B']['capital_eligibility']['reasons']))
++        self.assertEqual(simulate(job)['fills'], [])
++
++    def test_finite_expiry_cannot_be_removed_or_extended(self):
++        for name in ('extend-expiry-to-null', 'extend-expiry-later'):
++            d = self.result(name)
++            self.assertFalse(d['layer2']['B']['capital_eligibility']['qualified_for_synthetic_proposal'])
++            self.assertTrue(any('HISTORY_EXPIRED' in x for x in d['layer2']['B']['capital_eligibility']['reasons']))
++            self.assertEqual(simulate(self.pairs[name]['next'])['fills'], [])
++
++    def test_explicit_alias_preserves_the_original_revocation(self):
++        d = self.result('alias-drop-revocation'); h = d['fact_history']
++        self.assertFalse(d['layer2']['B']['capital_eligibility']['qualified_for_synthetic_proposal'])
++        roots = [r for r in h['roots'].values() if r['identity']['code']=='B' and r['identity']['kind']=='EVIDENCE']
++        self.assertEqual(len(roots), 1)
++        self.assertEqual(roots[0]['fact']['validity']['invalidation']['evidence_id'], 'B-revocation-1')
++
++    def test_renaming_without_removing_revocation_stays_rejected(self):
++        self.assertFalse(self.result('rename-keep-revocation')['layer2']['B']['capital_eligibility']['qualified_for_synthetic_proposal'])
++        self.assertEqual(simulate(self.pairs['rename-keep-revocation']['next'])['status'], 'REFUSED')
++
++    def test_valid_old_fact_keeps_identity_and_does_not_become_new_event(self):
++        p = self.pairs['valid-old-fact']; d = self.result('valid-old-fact')
++        self.assertTrue(d['layer2']['B']['capital_eligibility']['qualified_for_synthetic_proposal'])
++        self.assertEqual(d['new_evidence_tokens'], [])
++        self.assertEqual(d['fact_history'], p['first_decision']['decision']['fact_history'])
++        self.assertEqual([f['shares'] for f in simulate(p['next'])['fills'] if f['side']=='BUY'], ['20'])
++
++    def test_independent_new_fact_does_not_erase_or_inherit_old_invalidity(self):
++        d = self.result('independent-new-fact'); roots = d['fact_history']['roots'].values()
++        old = next(r for r in roots if r['identity']['code']=='B' and r['identity']['id']=='B-event')
++        self.assertIsNotNone(old['fact']['validity']['invalidation'])
++        self.assertTrue(d['layer2']['B']['capital_eligibility']['qualified_for_synthetic_proposal'])
++        self.assertTrue(d['new_evidence_tokens'])
++        self.assertEqual([f['shares'] for f in simulate(self.pairs['independent-new-fact']['next'])['fills'] if f['side']=='BUY'], ['20'])
++
++    def test_future_revocation_is_absent_from_numeric_prefix_but_kept_in_integrity(self):
++        p = self.pairs['future-revocation']; plain = deepcopy(p['first']['decision_input'])
++        plain['assets']['B']['evidence'][0]['validity']['invalidation'] = None
++        self.assertEqual(decide(plain)['decision'], p['first_decision']['decision'])
++        self.assertNotIn('B-revocation-1', json.dumps(p['first_decision']['decision']))
++        self.assertIn('B-revocation-1', json.dumps(p['first_execution']['fact_sources']))
++
++    def test_revocation_applies_at_the_known_observation(self):
++        out = simulate(self.pairs['future-revocation']['next'])
++        self.assertEqual([f for f in out['fills'] if f['side']=='BUY'], [])
++        self.assertEqual(out['order_states']['next-B-buy']['status'], 'CANCELLED_EVIDENCE')
++        self.assertTrue(any(e['at']=='2026-01-09T09:01:00+08:00' and e['status']=='CANCELLED_EVIDENCE' for e in out['execution_events']))
++
++    def test_prior_future_declaration_survives_a_review_that_omits_it(self):
++        self.assertTrue(self.result('future-stripped-at-review')['layer2']['B']['capital_eligibility']['qualified_for_synthetic_proposal'])
++        out = simulate(self.pairs['future-stripped-at-review']['next'])
++        self.assertEqual([f for f in out['fills'] if f['side']=='BUY'], [])
++        self.assertEqual(out['order_states']['next-B-buy']['status'], 'CANCELLED_EVIDENCE')
++
++    def test_known_revocation_also_cancels_at_watermark_without_later_market_tape(self):
++        job = deepcopy(self.pairs['future-stripped-at-review']['next'])
++        job['tape'] = job['tape'][:1]
++        out = simulate(job)
++        self.assertEqual(out['order_states']['next-B-buy']['status'], 'CANCELLED_EVIDENCE')
++        self.assertTrue(any(e.get('reason')=='KNOWN_FACT_HISTORY_AT_WATERMARK' for e in out['execution_events']))
++
++    def test_late_available_revocation_does_not_cancel_an_earlier_fill(self):
++        first = first_input('future-revocation')
++        first['decision_input']['assets']['B']['evidence'][0]['validity']['invalidation']['available_at'] = '2026-01-09T09:02:00+08:00'
++        p = pair('future-stripped-at-review', first); out = simulate(p['next'])
++        self.assertEqual([f['shares'] for f in out['fills'] if f['side']=='BUY'], ['20'])
++        self.assertEqual(out['order_states']['next-B-buy']['status'], 'FILLED')
++
++    def test_sourced_alias_of_valid_fact_is_not_an_independent_trigger(self):
++        job = alias(self.pairs['valid-old-fact']['next']); d = resume(job)['decision']
++        self.assertTrue(d['layer2']['B']['capital_eligibility']['qualified_for_synthetic_proposal'])
++        self.assertEqual(d['new_evidence_tokens'], [])
++
++    def test_alias_cannot_borrow_another_scope_or_unknown_content(self):
++        for field, value in [('code','A'),('source_id','wrong'),('basis_id','wrong'),('adjustment_version','wrong'),('target_id','missing'),('target_content_id','wrong')]:
++            job = alias(self.pairs['valid-old-fact']['next'])
++            job['decision_input']['assets']['B']['evidence'][0]['fact_link'][field] = value
++            self.assertFalse(resume(job)['decision']['layer2']['B']['capital_eligibility']['qualified_for_synthetic_proposal'])
++
++    def test_same_identity_content_rewrite_is_not_an_implicit_correction(self):
++        job = deepcopy(self.pairs['valid-old-fact']['next'])
++        job['decision_input']['assets']['B']['evidence'][0]['value'] = 'UNSOURCED_REWRITE'
++        d = resume(job)['decision']
++        self.assertTrue(any('CONTENT_REWRITE' in x for x in d['layer2']['B']['capital_eligibility']['reasons']))
++
++    def test_identical_renamed_valid_fact_requires_explicit_link(self):
++        job = deepcopy(self.pairs['valid-old-fact']['next']); a = job['decision_input']['assets']['B']
++        a['evidence'][0]['id'] = 'renamed-without-proof'; a['capital_eligibility']['evidence_ids'] = ['renamed-without-proof']
++        d = resume(job)['decision']
++        self.assertFalse(d['layer2']['B']['capital_eligibility']['qualified_for_synthetic_proposal'])
++        self.assertTrue(any('RENAME_LINK_REQUIRED' in x for x in d['layer2']['B']['capital_eligibility']['reasons']))
++
++    def test_shared_bar_or_formation_does_not_merge_distinct_facts(self):
++        job = deepcopy(self.pairs['independent-new-fact']['next']); a = job['decision_input']['assets']['B']
++        a['evidence'][1].update(formation_id='B-formation', volume_bar_id='B-bar')
++        d = resume(job)['decision']
++        self.assertTrue(d['layer2']['B']['capital_eligibility']['qualified_for_synthetic_proposal'])
++        self.assertEqual(d['new_evidence_tokens'], [])
++        self.assertEqual(len([r for r in d['fact_history']['roots'].values() if r['identity']['code']=='B' and r['identity']['kind']=='EVIDENCE']), 2)
++
++    def test_missing_fact_identity_and_unsupported_correction_fail_closed(self):
++        job = deepcopy(self.pairs['valid-old-fact']['next']); job['decision_input']['assets']['B']['evidence'][0].pop('id')
++        with self.assertRaisesRegex(ValueError, 'FACT_IDENTITY_REQUIRED'): resume(job)
++        job = deepcopy(self.pairs['valid-old-fact']['next'])
++        job['decision_input']['assets']['B']['evidence'][0]['fact_correction'] = dict(available_at=job['decision_input']['data_cutoff'], source_ids=['fixture'])
++        d = resume(job)['decision']
++        self.assertTrue(any('CORRECTION_NOT_IMPLEMENTED' in x for x in d['layer2']['B']['capital_eligibility']['reasons']))
++
++    def test_entry_and_reference_snapshot_validity_cannot_be_reset(self):
++        for reference in (False, True):
++            first = first_input('valid-old-fact'); entry = first['decision_input']['assets']['B']['entry_context']
++            target = entry['formal_reference'] if reference else entry
++            target['validity']['valid_until'] = '2026-01-07T16:00:00+08:00'
++            p = pair('valid-old-fact', first); fresh = p['next']['decision_input']['assets']['B']['entry_context']
++            target = fresh['formal_reference'] if reference else fresh; target['validity']['valid_until'] = None
++            self.assertFalse(resume(p['next'])['decision']['layer2']['B']['capital_eligibility']['qualified_for_synthetic_proposal'])
++
++    def test_rehashed_prior_declaration_edit_cannot_match_decision_history(self):
++        p = self.pairs['drop-known-revocation']; r = deepcopy(p['first_execution'])
++        source = r['fact_sources'][r['decision_id']]
++        fact = next(x['fact'] for x in source['records'] if x['identity']['code']=='B' and x['identity']['kind']=='EVIDENCE')
++        fact['validity']['invalidation'] = None
++        r['result_id'] = fingerprint({k:v for k,v in r.items() if k!='result_id'})
++        with self.assertRaisesRegex(ValueError, 'Fact history differs'):
++            make_checkpoint(p['first']['ledger_input'], r, through_at=r['observed_until'])
++
++    def test_dropping_one_round_of_raw_declarations_is_refused(self):
++        p = self.pairs['valid-old-fact']; r = simulate(p['next']); r['fact_sources'].pop(r['decision_ids'][0])
++        r['result_id'] = fingerprint({k:v for k,v in r.items() if k!='result_id'})
++        with self.assertRaisesRegex(ValueError, 'Complete fact declaration history'):
++            make_checkpoint(p['first']['ledger_input'], r, through_at=r['observed_until'])
++
++    def test_rounds_keep_capital_claims_fills_reserve_and_all_tokens(self):
++        p = self.pairs['valid-old-fact']; r = simulate(p['next'])
++        self.assertEqual(r['ledger']['initial_equity'], '2180')
++        self.assertEqual(r['fills'][:len(p['first_execution']['fills'])], p['first_execution']['fills'])
++        cp = make_checkpoint(p['first']['ledger_input'], r, through_at=r['observed_until'])
++        self.assertEqual(cp['state']['general_reserved_cash'], '100')
++        self.assertEqual(cp['state']['row']['shares']['A'], '60')
++        self.assertTrue(set(p['first_decision']['decision']['reviewed_evidence_tokens']) <= set(r['reviewed_evidence_tokens']))
++        for row in r['ledger']['daily']:
++            rights = {c:sum(Decimal(x['shares']) for x in row['share_receivables'] if x['code']==c) for c in row['shares']}
++            nav = Decimal(row['settled_cash']) + Decimal(row['cash_receivable']) - Decimal(row['purchase_payable'])
++            nav += sum((Decimal(n)+rights[c])*Decimal(row['marks'][c]['value']) for c,n in row['shares'].items())
++            self.assertEqual(nav, Decimal(row['net_accrual_equity']))
++
++    def test_omitting_a_fact_in_the_middle_round_does_not_drop_old_revocation(self):
++        p = self.pairs['drop-known-revocation']; job = deepcopy(p['next'])
++        job.update(plan_id='A-zero', orders=[])
++        a = job['decision_input']['assets']['B']; a['evidence'] = []
++        a['capital_eligibility'].update(status='UNKNOWN', evidence_ids=[])
++        r = simulate(job); cp = make_checkpoint(job['ledger_input'], r, through_at=r['observed_until'])
++        fresh, ids = advance(job['decision_input'], cp)
++        a = fresh['assets']['B']; fact = deepcopy(p['first']['decision_input']['assets']['B']['evidence'][0])
++        fact['validity']['invalidation'] = None; a['evidence'] = [fact]
++        a['capital_eligibility'].update(status='QUALIFIED_SYNTHETIC_RESEARCH', evidence_ids=[fact['id']])
++        old = dict(decision=r['decision_records'][r['latest_decision_id']])
++        d = resume_decision(old, fresh, checkpoint=cp, cancelled_order_ids=ids)['decision']
++        self.assertFalse(d['layer2']['B']['capital_eligibility']['qualified_for_synthetic_proposal'])
++
++    def test_rejected_rewrite_does_not_permanently_taint_unchanged_valid_fact(self):
++        p = self.pairs['valid-old-fact']; job = deepcopy(p['next'])
++        job.update(plan_id='A-zero', orders=[])
++        job['decision_input']['assets']['B']['evidence'][0]['value'] = 'REJECT_THIS_REWRITE'
++        r = simulate(job); cp = make_checkpoint(job['ledger_input'], r, through_at=r['observed_until'])
++        fresh, ids = advance(job['decision_input'], cp)
++        fresh['assets']['B']['evidence'][0]['value'] = p['first']['decision_input']['assets']['B']['evidence'][0]['value']
++        old = dict(decision=r['decision_records'][r['latest_decision_id']])
++        d = resume_decision(old, fresh, checkpoint=cp, cancelled_order_ids=ids)['decision']
++        self.assertTrue(d['layer2']['B']['capital_eligibility']['qualified_for_synthetic_proposal'])
++
++    def test_later_revocation_cannot_replace_earlier_expiry_without_tape(self):
++        job = deepcopy(self.pairs['future-stripped-at-review']['next']); job['tape'] = []
++        buy = next(o for o in job['orders'] if o['side']=='BUY')
++        buy['expires_at'] = '2026-01-09T08:59:00+08:00'
++        out = simulate(job)
++        self.assertEqual(out['order_states'][buy['id']]['status'], 'EXPIRED_UNFILLED')
++
++    def test_no_tape_revocation_records_effective_and_observed_times_separately(self):
++        job = deepcopy(self.pairs['future-stripped-at-review']['next']); job['tape'] = []
++        out = simulate(job)
++        event = next(e for e in out['execution_events'] if e['order_id']=='next-B-buy' and e['status']=='CANCELLED_EVIDENCE')
++        self.assertEqual(event['at'], '2026-01-09T09:01:00+08:00')
++        self.assertEqual(event['observed_at'], job['observed_until'])
++
++
++if __name__ == '__main__': unittest.main()
+--- a/股票系統M1_v0_18/capital_research/evidence_lineage_20261025/verify.py
++++ b/股票系統M1_v0_18/capital_research/evidence_lineage_20261025/verify.py
+@@ -0,0 +1,26 @@
++"""Only fact-lineage methods and directly affected historical regressions."""
++import sys
++import unittest
++
++TESTS = [
++    'capital_research.evidence_lineage_20261025.test_lineage',
++    'capital_research.repair_20261025.test_repairs.RepairTests.test_old_valid_facts_survive_a_current_review_without_becoming_new_events',
++    'capital_research.repair_20261025.test_repairs.RepairTests.test_expired_fact_cannot_be_revived_by_a_current_review',
++    'capital_research.repair_20261025.test_repairs.RepairTests.test_future_revocation_does_not_rewrite_current_decision',
++    'capital_research.repair_20261025.test_repairs.RepairTests.test_expiry_and_invalidation_cancel_standing_orders_inside_limit',
++    'capital_research.repair_20261025.test_repairs.RepairTests.test_reassessment_then_another_execution_keeps_all_fills_and_tokens',
++    'capital_research.repair_20261025.test_repairs.RepairTests.test_partial_fills_cancel_and_continue_without_losing_claims_or_reserves',
++    'capital_research.repair_20261025.test_repairs.RepairTests.test_partial_fills_expire_and_continue_without_inventing_cancellation',
++    'capital_research.repair_ab_20261025.test_ab.ABTests.test_foreign_evidence_rejects_buy_and_recommendation_in_both_asset_orders',
++    'capital_research.repair_ab_20261025.test_ab.ABTests.test_delayed_cancellation_refuses_before_new_execution_and_keeps_old_reserve',
++    'capital_research.test_mechanisms.MechanismTests.test_cli_READ_never_imports_or_recalculates_engines',
++]
++
++
++def main():
++    suite = unittest.defaultTestLoader.loadTestsFromNames(TESTS)
++    result = unittest.TextTestRunner(verbosity=2).run(suite)
++    return 0 if result.wasSuccessful() else 1
++
++
++if __name__ == '__main__': sys.exit(main())
+--- a/股票系統M1_v0_18/capital_research/fact_lineage.py
++++ b/股票系統M1_v0_18/capital_research/fact_lineage.py
+@@ -0,0 +1,199 @@
++"""Pure point-in-time fact history. No file IO, market inference or accounting.
++
++Raw declarations may contain future revocations. Only visible projections enter
++the numeric history; the raw declarations belong to execution integrity data.
++"""
++from copy import deepcopy
++from graph_core.core import fingerprint
++from .eligibility import _time, known_fact, validity_status
++
++SCHEMA = 'capital-fact-history/0.1'
++BINDING = ('source_id', 'basis_id', 'adjustment_version')
++
++
++def identity(code, asset, kind, fact):
++    key = fact.get('id')
++    if not key and kind != 'EVIDENCE':
++        # A scoped declared snapshot, NOT a certified permanent source fact ID.
++        key = kind + '@' + fact['available_at'] + '|' + fact.get('occurred_at', '')
++    if not isinstance(key, str) or not key:
++        raise ValueError('FACT_IDENTITY_REQUIRED')
++    return dict(code=code, kind=kind, id=key, **{k: asset[k] for k in BINDING})
++
++
++def key_of(value):
++    return fingerprint(value)
++
++
++def records(data):
++    result = []
++    for code, asset in sorted(data['assets'].items()):
++        entry = deepcopy(asset['entry_context']); ref = entry.pop('formal_reference')
++        rows = [('EVIDENCE', e) for e in asset['evidence']] + [('ENTRY', entry)]
++        if ref is not None: rows.append(('REFERENCE', ref))
++        for kind, fact in rows:
++            occurred = fact.get('occurred_at', fact['available_at'])
++            if _time(occurred) > _time(data['data_cutoff']) or _time(fact['available_at']) > _time(data['decision_at']):
++                continue
++            if any(fact[k] != asset[k] for k in BINDING):
++                raise ValueError('Fact history source/basis/adjustment mismatch')
++            result.append(dict(identity=identity(code, asset, kind, fact), fact=deepcopy(fact)))
++    return sorted(result, key=lambda r: key_of(r['identity']))
++
++
++def source_snapshot(data):
++    return dict(schema='capital-fact-declarations/0.1', decision_at=data['decision_at'],
++                data_cutoff=data['data_cutoff'], records=records(data))
++
++
++def visible(fact, cutoff, at):
++    result = known_fact(fact, cutoff, at)
++    for field in ('fact_link', 'fact_correction'):
++        if field in result and _time(result[field]['available_at']) > _time(at):
++            result.pop(field)
++    return result
++
++
++def body(fact):
++    return {k: v for k, v in fact.items()
++            if k not in ('id', 'validity', 'validity_visibility', 'fact_link', 'fact_correction')}
++
++
++def compatible_validity(old, new):
++    """Only additional knowledge or tighter restrictions; never silent revival."""
++    a, b = old.get('validity'), new.get('validity')
++    if a is None: return True
++    if b is None: return False
++    if a['valid_from'] != b['valid_from']: return False
++    if a['valid_until'] is not None:
++        if b['valid_until'] is None or _time(b['valid_until']) > _time(a['valid_until']): return False
++    if a['invalidation'] is not None and a['invalidation'] != b['invalidation']: return False
++    return True
++
++
++def history_at(sources, at):
++    """Reconstruct chronological knowledge from explicit prior declarations.
++
++    Earlier decisions are never recalculated. Future declaration bytes do not
++    enter observations until both their occurrence and availability are known.
++    """
++    events = []
++    for source in sources:
++        if source['schema'] != 'capital-fact-declarations/0.1':
++            raise ValueError('Versioned fact declarations required')
++        start = _time(source['decision_at'])
++        if start > _time(at): continue
++        for row in source['records']:
++            fact = row['fact']; times = {start}
++            v = fact.get('validity')
++            if v:
++                times.add(max(start, _time(v['available_at'])))
++                invalid = v['invalidation']
++                if invalid:
++                    times.add(max(start, _time(v['available_at']), _time(invalid['occurred_at']), _time(invalid['available_at'])))
++            for field in ('fact_link', 'fact_correction'):
++                if field in fact: times.add(max(start, _time(fact[field]['available_at'])))
++            for when in times:
++                if when <= _time(at):
++                    f = visible(fact, source['data_cutoff'], when.isoformat())
++                    events.append((when, key_of(row['identity']), fingerprint(f), row['identity'], f))
++    roots, aliases, unresolved, rejected, observations = {}, {}, {}, {}, []
++    seen = set()
++    for when, key, content_id, ident, fact in sorted(events, key=lambda e: e[:3]):
++        if (key, content_id) in seen:
++            prior = roots.get(aliases.get(key))
++            # A rejected proposal is not a permanent ban on a still-valid
++            # original. Re-observing its exact accepted bytes may clear only
++            # that proposal rejection, never a later expiry or revocation.
++            if (key not in rejected or prior is None or content_id not in prior['content_ids']
++                    or body(prior['fact']) != body(fact)
++                    or prior['fact'].get('validity') != fact.get('validity')):
++                continue
++        seen.add((key, content_id)); reasons = []
++        root = aliases.get(key)
++        link = fact.get('fact_link')
++        if link:
++            target_identity = dict(ident, id=link['target_id'])
++            target = aliases.get(key_of(target_identity))
++            if (link['schema'] != 'capital-fact-alias/0.1'
++                    or any(link[k] != ident[k] for k in ('code', *BINDING))
++                    or ident['source_id'] not in link['source_ids'] or target is None
++                    or link['target_content_id'] not in roots[target]['content_ids']):
++                reasons.append('FACT_ALIAS_IDENTITY_UNKNOWN')
++            elif root is not None and root != target:
++                reasons.append('LATE_ALIAS_MERGE_NOT_IMPLEMENTED')
++            else:
++                root = target; aliases[key] = target; unresolved.pop(key, None)
++        if 'fact_correction' in fact:
++            reasons.append('FACT_CORRECTION_NOT_IMPLEMENTED')
++        if key in unresolved and not link:
++            reasons.append('FACT_IDENTITY_UNRESOLVED')
++        if root is None and not reasons:
++            # Identical declaration under a different ID is ambiguous. Do not
++            # infer identity from a shared volume bar/formation, or call it new.
++            for prior in roots.values():
++                scope = prior['identity']
++                if (all(scope[k] == ident[k] for k in ('code', 'kind', *BINDING))
++                        and body(prior['fact']) == body(fact)):
++                    reasons.append('FACT_RENAME_LINK_REQUIRED'); break
++        if root is not None and not reasons:
++            prior = roots[root]['fact']
++            if body(prior) != body(fact): reasons.append('FACT_CONTENT_REWRITE_NOT_IMPLEMENTED')
++            elif not compatible_validity(prior, fact): reasons.append('FACT_VALIDITY_REWRITE_NOT_IMPLEMENTED')
++        if reasons:
++            rejected[key] = reasons
++            if root is None: unresolved[key] = reasons
++        else:
++            if root is None:
++                root = key; aliases[key] = key
++                roots[key] = dict(identity=deepcopy(ident), fact=deepcopy(fact), content_ids=[])
++            roots[root]['fact'] = deepcopy(fact)
++            if content_id not in roots[root]['content_ids']:
++                roots[root]['content_ids'].append(content_id)
++            rejected.pop(key, None)
++        observations.append(dict(observed_at=when.isoformat(), identity=deepcopy(ident),
++            fact=deepcopy(fact), content_id=content_id, reasons=reasons))
++    result = dict(schema=SCHEMA, observations=observations, roots=roots,
++                  aliases=aliases, unresolved=unresolved, rejected=rejected)
++    result['history_id'] = fingerprint(result)
++    return result
++
++
++def issues(history, code, asset, kind, fact, at):
++    if fact is None: return ['FACT_IDENTITY_UNKNOWN']
++    key = key_of(identity(code, asset, kind, fact))
++    reasons = list(history['rejected'].get(key, [])) + list(history['unresolved'].get(key, []))
++    root = history['aliases'].get(key)
++    if root is None: reasons.append('FACT_IDENTITY_UNKNOWN')
++    else:
++        status = validity_status(history['roots'][root]['fact'], at, at)
++        if status not in ('WITHIN_DECLARED_INTERVAL', 'ONGOING_REQUIRES_CURRENT_REVIEW'):
++            reasons.append('FACT_HISTORY_' + status)
++    return sorted(set(reasons))
++
++
++def asset_issues(history, code, asset, at):
++    ids = set(asset.get('capital_eligibility', {}).get('evidence_ids', []))
++    result = []
++    for fact in asset['evidence']:
++        if fact['id'] in ids: result += issues(history, code, asset, 'EVIDENCE', fact, at)
++    entry = deepcopy(asset['entry_context']); ref = entry.pop('formal_reference')
++    result += issues(history, code, asset, 'ENTRY', entry, at)
++    result += issues(history, code, asset, 'REFERENCE', ref, at)
++    return sorted(set(result))
++
++
++def first_issue_at(sources, code, asset, *, after, through):
++    """First declared known disqualification, separate from processing time."""
++    final = history_at(sources, through); candidates = {_time(after)}
++    for row in final['observations']:
++        if row['identity']['code'] != code: continue
++        observed = _time(row['observed_at']); candidates.add(observed)
++        v = row['fact'].get('validity')
++        if v and v['valid_until'] is not None:
++            candidates.add(max(observed, _time(v['valid_until'])))
++    for when in sorted(candidates):
++        if _time(after) <= when <= _time(through):
++            if asset_issues(history_at(sources, when.isoformat()), code, asset, when.isoformat()):
++                return when.isoformat()
++    return None

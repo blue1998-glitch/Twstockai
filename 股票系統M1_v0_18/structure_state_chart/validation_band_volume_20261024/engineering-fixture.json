@@ -1,0 +1,104 @@
+{
+  "qualification": "ENGINEERING_NOT_MARKET",
+  "input": {
+    "schema_version": "explicit-band-volume-input/0.1",
+    "engineering_fixture": true,
+    "context": {
+      "code": "ENGINEERING_NOT_MARKET",
+      "source_id": "synthetic",
+      "price_basis_id": "test-raw",
+      "source_frame_id": "later-frame",
+      "source_prefix_fingerprint": "sha256:cd9bb15b9c512712585e018d72e0f8cb9d8b48ba5a366df80cdec7a0874e4edb",
+      "price_mode": "RAW_CANDIDATE",
+      "adjustment_version": "NOT_APPLICABLE_RAW",
+      "volume_unit": "SHARES_REPORTED"
+    },
+    "bars": [
+      {
+        "date": "2000-01-01",
+        "open": "10",
+        "high": "11",
+        "low": "9",
+        "close": "10",
+        "volume_shares_scaled": "10"
+      },
+      {
+        "date": "2000-01-02",
+        "open": "10",
+        "high": "11",
+        "low": "9",
+        "close": "10",
+        "volume_shares_scaled": "20"
+      },
+      {
+        "date": "2000-01-03",
+        "open": "10",
+        "high": "11",
+        "low": "9",
+        "close": "10",
+        "volume_shares_scaled": "20"
+      },
+      {
+        "date": "2000-01-04",
+        "open": "10",
+        "high": "11",
+        "low": "9",
+        "close": "10",
+        "volume_shares_scaled": "5"
+      },
+      {
+        "date": "2000-01-05",
+        "open": "10",
+        "high": "11",
+        "low": "9",
+        "close": "10",
+        "volume_shares_scaled": "15"
+      }
+    ],
+    "selection": {
+      "binding": {
+        "code": "ENGINEERING_NOT_MARKET",
+        "source_id": "synthetic",
+        "price_basis_id": "test-raw",
+        "source_frame_id": "later-frame",
+        "source_prefix_fingerprint": "sha256:cd9bb15b9c512712585e018d72e0f8cb9d8b48ba5a366df80cdec7a0874e4edb"
+      },
+      "price_mode": "RAW_CANDIDATE",
+      "adjustment_version": "NOT_APPLICABLE_RAW",
+      "candidate_id": "fixture-box",
+      "member_dates": [
+        "2000-01-01",
+        "2000-01-02",
+        "2000-01-03"
+      ],
+      "reference_known_on": "2000-01-04",
+      "selected_at": "2000-02-01T00:00:00+00:00",
+      "qualification": "RESEARCH_CANDIDATE"
+    },
+    "candidate": {
+      "id": "fixture-box",
+      "start": "2000-01-01",
+      "source_end": "2000-01-03",
+      "confirmed_at": "2000-01-04",
+      "display_extent": {
+        "source_rows_fingerprint": "sha256:e97e73301029c1313a8ac5c5f4fcb8a8350cab69fbbb63a0cbd79403225bc07a"
+      },
+      "volume": {
+        "records": 3,
+        "known_records": 3,
+        "missing_dates": [],
+        "maximum": "20",
+        "maximum_dates": [
+          "2000-01-02",
+          "2000-01-03"
+        ]
+      }
+    },
+    "known_gap_dates": [],
+    "basis_break_dates": [],
+    "limits": {
+      "fixture": "ENGINEERING_NOT_MARKET"
+    }
+  },
+  "purpose": "Tied maximum, exact equality, missing-source and future-isolation tests; not real OHLCV or a market sample"
+}

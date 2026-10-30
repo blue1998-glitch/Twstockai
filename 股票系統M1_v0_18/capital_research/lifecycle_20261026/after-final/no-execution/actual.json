@@ -1,0 +1,29 @@
+{
+  "schema": "capital-batch-lifecycle/0.1",
+  "status": "NO_SAVED_EXECUTION",
+  "reasons": [
+    "NO_EXECUTION_AND_CHECKPOINT_PAIR"
+  ],
+  "source": {
+    "kind": "quantity",
+    "schema": "capital-quantity-replay/0.1",
+    "status": "STOPPED_CANDIDATE_GATE",
+    "saved_reasons": [
+      "BATCH_PHASE_UNKNOWN",
+      "NO_NEW_INDEPENDENT_TRIGGER"
+    ],
+    "view": "HISTORICAL_BEFORE_STOP",
+    "document_id": "sha256:4ff02bfbac593bdcb8c9ddc162940ed7bc062cf8d09d185f08114d231ba5d1d9"
+  },
+  "account": null,
+  "snapshots": [],
+  "approvals": [],
+  "orders": [],
+  "validation_scope": "SAVED_STRUCTURAL_LINKS_NOT_LEDGER_REPLAY_OR_SOURCE_AUTHENTICATION",
+  "data_qualified": false,
+  "execution_model_qualified": false,
+  "historical_signal_eligible": false,
+  "policy_authorized": false,
+  "live_execution_authorized": false,
+  "primary_pressure_id": null
+}

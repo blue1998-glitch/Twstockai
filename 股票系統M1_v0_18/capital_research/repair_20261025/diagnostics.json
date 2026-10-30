@@ -1,0 +1,45 @@
+{
+  "old_diagnostics_preserved": true,
+  "records": [
+    {
+      "cases": 7,
+      "partial_cancel_and_expiry": "Already supported in v0.2; new coverage, not a fabricated defect",
+      "reproduced_defects": 5,
+      "stage": "before"
+    },
+    {
+      "errors": 2,
+      "failures": 1,
+      "issues": [
+        "Market test assigned available_at its identical original value; no difference existed. Corrected to a different valid timestamp, not a comparison-code change.",
+        "Extended continuation fixture retained an expired Jan12 order deadline and a settlement before Jan13 trade. Extended the declared synthetic dates consistently.",
+        "New close guard masked existing company-action missing-net REFUSED route. Restored original source qualification before close check; no refusal relaxed."
+      ],
+      "log": "tests-initial.log",
+      "stage": "initial_37"
+    },
+    {
+      "log": "tests-corrected.log",
+      "stage": "corrected_37",
+      "status": "PASS"
+    },
+    {
+      "fix": "Use exact integer counts; added low-precision counterexample without changing financial accounting",
+      "issue": "New filled-plus-remaining validation used ambient Decimal arithmetic for integer share counts",
+      "stage": "source_review"
+    },
+    {
+      "counts_not_cumulative": true,
+      "log": "tests-final.log",
+      "stage": "final_38",
+      "status": "PASS"
+    },
+    {
+      "log": "build-final.log",
+      "old_READ_exact": true,
+      "stage": "artifact_build",
+      "status": "PASS"
+    }
+  ],
+  "unresolved_failures": []
+}

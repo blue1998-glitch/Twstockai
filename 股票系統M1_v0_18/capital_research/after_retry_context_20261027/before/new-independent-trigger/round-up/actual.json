@@ -1,0 +1,81 @@
+{
+  "error": null,
+  "caller_before": {
+    "prec": 7,
+    "rounding": "ROUND_UP",
+    "Emin": -999999,
+    "Emax": 999999,
+    "capitals": 1,
+    "clamp": 0,
+    "traps": {
+      "InvalidOperation": true,
+      "FloatOperation": false,
+      "DivisionByZero": true,
+      "Overflow": true,
+      "Underflow": false,
+      "Subnormal": false,
+      "Inexact": false,
+      "Rounded": false,
+      "Clamped": false
+    },
+    "flags": {
+      "InvalidOperation": false,
+      "FloatOperation": false,
+      "DivisionByZero": false,
+      "Overflow": false,
+      "Underflow": false,
+      "Subnormal": false,
+      "Inexact": false,
+      "Rounded": false,
+      "Clamped": false
+    }
+  },
+  "caller_after": {
+    "prec": 7,
+    "rounding": "ROUND_UP",
+    "Emin": -999999,
+    "Emax": 999999,
+    "capitals": 1,
+    "clamp": 0,
+    "traps": {
+      "InvalidOperation": true,
+      "FloatOperation": false,
+      "DivisionByZero": true,
+      "Overflow": true,
+      "Underflow": false,
+      "Subnormal": false,
+      "Inexact": false,
+      "Rounded": false,
+      "Clamped": false
+    },
+    "flags": {
+      "InvalidOperation": false,
+      "FloatOperation": false,
+      "DivisionByZero": false,
+      "Overflow": false,
+      "Underflow": false,
+      "Subnormal": false,
+      "Inexact": false,
+      "Rounded": false,
+      "Clamped": false
+    }
+  },
+  "input_id": "sha256:afa7b9084f0ec41168442e8cc913881da32a2a71ad8d4877b78c729fee9ceed2",
+  "input_unchanged": true,
+  "caller_context_unchanged": true,
+  "source_version": {
+    "path": "capital_research/quantity_after_retry.py",
+    "bytes": 9015,
+    "sha256": "33420629f1b8ac3d0a052bfe02d89b75b87954a01c34717aa0d5794d5e78d8e7"
+  },
+  "actual": {
+    "kind": "EXACT_EXISTING_ACTUAL",
+    "source": {
+      "path": "capital_research/quantity_after_retry_20261027/after-final/new-independent-trigger/actual.json",
+      "bytes": 627600,
+      "sha256": "159900c478cc4fd69b63c40eb57bc85457b69aecc6d2d795d7d213671fd1fe49"
+    },
+    "id": "sha256:c5e6483eb0180f5b948ff0f730be8c844d196b59bbf2d35cd2245223dee04897"
+  },
+  "equal_original": true
+}

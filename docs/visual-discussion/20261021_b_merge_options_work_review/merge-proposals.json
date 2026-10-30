@@ -1,0 +1,50 @@
+{
+  "case": "B-shared-path",
+  "code": "2884",
+  "review_knowledge_date": "2026-10-21",
+  "price_evidence_cutoff": "2026-04-28",
+  "selection": "EX_POST_SPECIFIED_REVIEW_NOT_BLIND_SCAN",
+  "scope": "Only the highlighted April16-April27 source episode; not all earlier/later price history.",
+  "proposals": [
+    {
+      "id": "one-local-structure-with-internal-shift",
+      "label": "方案一：一個整理區間，內部重心下移",
+      "candidate_display_source_period": ["2026-04-16", "2026-04-27"],
+      "unique_source_records": 8,
+      "display_raw_envelope_only_not_formal_bounds": ["32.00", "33.20"],
+      "local_source_ids_preserved": true,
+      "interpretation": "Treat the two observed local centres as phases inside one local consolidation; not merely the already permitted broader observation thread.",
+      "formal_start": null,
+      "formal_end": null,
+      "formal_price_bounds": null,
+      "user_approved": false
+    },
+    {
+      "id": "separate-upper-and-lower-local-structures",
+      "label": "方案二：上方整理轉弱，較低活動另列",
+      "upper_source_period": ["2026-04-16", "2026-04-23"],
+      "lower_source_period": ["2026-04-22", "2026-04-27"],
+      "overlap_is_retained": true,
+      "shared_down_leg_counted_once": true,
+      "interpretation": "Preserve two overlapping local structure candidates within one observable sequence; do not force a disjoint formal cut at April23.",
+      "formal_start": null,
+      "formal_end": null,
+      "formal_price_bounds": null,
+      "user_approved": false
+    }
+  ],
+  "assistant_preference": "separate-upper-and-lower-local-structures",
+  "preference_is_analysis_not_user_decision": true,
+  "reasons": [
+    "April23 close32.45 leaves the upper common32.75-33.00; April24/27/28 closes do not return to that upper common.",
+    "The lower completed common32.45-32.55 is a distinct lower centre, while source ranges still overlap.",
+    "April28 high32.95 reaches back into the upper common but close32.45 remains below; this is conflicting evidence to preserve, not proof of confirmed pressure."
+  ],
+  "not_used_as_sufficient_reasons": ["shared leg alone", "empty all-leg common intersection alone", "future decline after April28", "candidate count"],
+  "question": "只看高亮這一段，你認為較接近一個整理區間內部下移，還是上方整理轉弱後較低活動另列？",
+  "user_decision": "PENDING_NEW_CORE_REVIEW",
+  "manual_B_structure_label": null,
+  "formal_merge": null,
+  "historical_signal_eligible": false,
+  "classifier": "NOT_VALIDATED"
+}

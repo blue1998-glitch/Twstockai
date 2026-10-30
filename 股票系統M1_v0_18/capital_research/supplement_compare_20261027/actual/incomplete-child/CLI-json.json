@@ -1,0 +1,26 @@
+{
+  "exit_code": 2,
+  "stdout": "{\n  \"comparison\": {\n    \"schema\": \"capital-supplement-comparison/0.1\",\n    \"synthetic\": true,\n    \"status\": \"REFUSED\",\n    \"comparable\": false,\n    \"refusals\": [\n      {\n        \"label\": \"部分保存\",\n        \"reason\": \"COMPLETE_SAVED_SUPPLEMENT_REQUIRED\",\n        \"read_status\": \"INCOMPLETE_SUPPLEMENT_PREFIX\",\n        \"read_reasons\": [\n          \"NO_SAVED_CHILD_RESULT_NO_AUTOMATIC_RESUME\"\n        ]\n      }\n    ],\n    \"differences\": [],\n    \"total_mismatches\": 0,\n    \"details_truncated\": false,\n    \"common_binding\": null,\n    \"columns\": [],\n    \"provenance\": [\n      {\n        \"label\": \"一般\",\n        \"result_id\": \"sha256:0872698e6ceff82b0d1d5e76fb69069386d40dd0446d1b6e797ed546b0f7ebc2\",\n        \"parent_result_id\": \"sha256:b426b70347924c87074c2a9be86e9580cd9b8e6c2ee51269e86ab49243a85b56\",\n        \"generation_id\": \"sha256:c5e6483eb0180f5b948ff0f730be8c844d196b59bbf2d35cd2245223dee04897\",\n        \"binding_id\": \"sha256:5c7a04af14e4e5f863192be2f090da6306e5bbab1e529c8d0e25053045c90c33\"\n      }\n    ],\n    \"scope\": \"SAVED_MUTUALLY_EXCLUSIVE_RESEARCH_INTENTS_NOT_EXECUTIONS_OR_PERFORMANCE\",\n    \"ranking\": null,\n    \"selected_label\": null,\n    \"order_generation\": \"NOT_PERFORMED\",\n    \"execution\": \"NOT_PERFORMED\",\n    \"execution_authorized\": false,\n    \"primary_pressure_id\": null,\n    \"data_qualified\": false,\n    \"execution_model_qualified\": false,\n    \"historical_signal_eligible\": false,\n    \"policy_authorized\": false,\n    \"live_execution_authorized\": false\n  },\n  \"read_metadata\": {\n    \"items\": [\n      {\n        \"label\": \"一般\",\n        \"parent_store\": \"capital_research/research_operation_20261027/initial/runs/no-selection\",\n        \"parent_id\": \"demo-no-selection\",\n        \"store\": \"capital_research/selection_supplement_20261027/runs/general\",\n        \"id\": \"supp-general\"\n      },\n      {\n        \"label\": \"部分保存\",\n        \"parent_store\": \"capital_research/research_operation_20261027/initial/runs/no-selection\",\n        \"parent_id\": \"demo-no-selection\",\n        \"store\": \"capital_research/supplement_compare_20261027/fixtures/incomplete-general\",\n        \"id\": \"supp-general\"\n      }\n    ],\n    \"input_path\": \"/workspace/Twstockai/股票系統M1_v0_18/capital_research/supplement_compare_20261027/cases/incomplete-child/input.json\",\n    \"input_sha256\": \"86b40ac9274e8412b66f83f4046f653df33b32197946141be5daf01662061e72\"\n  }\n}\n",
+  "stderr": "",
+  "original_READ_trace": [
+    {
+      "status": "READ_ONLY",
+      "supplement_id": "supp-general",
+      "parent_id": "demo-no-selection",
+      "parent_result_id": "sha256:b426b70347924c87074c2a9be86e9580cd9b8e6c2ee51269e86ab49243a85b56",
+      "generation_id": "sha256:c5e6483eb0180f5b948ff0f730be8c844d196b59bbf2d35cd2245223dee04897",
+      "account_id": "sha256:8ba782b921772678f8be492480ccc08d8c8b5e85bdde3c4fea55cc4a2f5aca6d",
+      "data_cutoff": "2026-01-12T16:00:00+08:00"
+    },
+    {
+      "status": "INCOMPLETE_SUPPLEMENT_PREFIX",
+      "supplement_id": "supp-general",
+      "parent_id": "demo-no-selection",
+      "parent_result_id": "sha256:b426b70347924c87074c2a9be86e9580cd9b8e6c2ee51269e86ab49243a85b56",
+      "generation_id": "sha256:c5e6483eb0180f5b948ff0f730be8c844d196b59bbf2d35cd2245223dee04897",
+      "account_id": "sha256:8ba782b921772678f8be492480ccc08d8c8b5e85bdde3c4fea55cc4a2f5aca6d",
+      "data_cutoff": "2026-01-12T16:00:00+08:00"
+    }
+  ],
+  "guard": "FRESH_NO_ENGINE_NO_GENERATION_NO_SELECTION_NO_SOURCE_VERDICT_NO_SAVE_NO_WRITE_NO_NETWORK"
+}

@@ -1,0 +1,7 @@
+{
+  "status": "QA_ENVIRONMENT_FIXED",
+  "observed": "第一次14項功能PASS，但原尺寸截圖目視發現本地Chromium缺中文字形，顯示方塊",
+  "fix": "僅測試HTTP提供既有Noto字型並等待字型載入；交付HTML不嵌入字型、不新增網路依賴",
+  "product_defect_established": false,
+  "original_images_and_review_content_changed": false
+}

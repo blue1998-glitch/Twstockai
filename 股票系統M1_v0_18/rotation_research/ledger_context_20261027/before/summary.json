@@ -1,0 +1,264 @@
+{
+  "api": [
+    {
+      "case": "cash-net-withholding",
+      "context": "normal",
+      "path": "before/cash-net-withholding/normal/actual.json",
+      "equal_expected": true,
+      "error": null,
+      "calls": {
+        "replay": 1,
+        "qualify": 1,
+        "ledger_kernel": 1,
+        "save": 0,
+        "simulate": 0,
+        "generate": 0,
+        "replay_sequence": 0
+      },
+      "input_unchanged": true,
+      "caller_context_unchanged": true
+    },
+    {
+      "case": "cash-net-withholding",
+      "context": "round-up",
+      "path": "before/cash-net-withholding/round-up/actual.json",
+      "equal_expected": true,
+      "error": null,
+      "calls": {
+        "replay": 1,
+        "qualify": 1,
+        "ledger_kernel": 1,
+        "save": 0,
+        "simulate": 0,
+        "generate": 0,
+        "replay_sequence": 0
+      },
+      "input_unchanged": true,
+      "caller_context_unchanged": true
+    },
+    {
+      "case": "cash-net-withholding",
+      "context": "round-down",
+      "path": "before/cash-net-withholding/round-down/actual.json",
+      "equal_expected": true,
+      "error": null,
+      "calls": {
+        "replay": 1,
+        "qualify": 1,
+        "ledger_kernel": 1,
+        "save": 0,
+        "simulate": 0,
+        "generate": 0,
+        "replay_sequence": 0
+      },
+      "input_unchanged": true,
+      "caller_context_unchanged": true
+    },
+    {
+      "case": "cash-net-withholding",
+      "context": "inexact-trap",
+      "path": "before/cash-net-withholding/inexact-trap/actual.json",
+      "equal_expected": true,
+      "error": null,
+      "calls": {
+        "replay": 1,
+        "qualify": 1,
+        "ledger_kernel": 1,
+        "save": 0,
+        "simulate": 0,
+        "generate": 0,
+        "replay_sequence": 0
+      },
+      "input_unchanged": true,
+      "caller_context_unchanged": true
+    },
+    {
+      "case": "cash-net-withholding",
+      "context": "narrow-exponents",
+      "path": "before/cash-net-withholding/narrow-exponents/actual.json",
+      "equal_expected": false,
+      "error": {
+        "type": "Overflow",
+        "detail": "[<class 'decimal.Overflow'>]"
+      },
+      "calls": {
+        "replay": 1,
+        "qualify": 1,
+        "ledger_kernel": 1,
+        "save": 0,
+        "simulate": 0,
+        "generate": 0,
+        "replay_sequence": 0
+      },
+      "input_unchanged": true,
+      "caller_context_unchanged": true
+    },
+    {
+      "case": "stock-delivery",
+      "context": "normal",
+      "path": "before/stock-delivery/normal/actual.json",
+      "equal_expected": true,
+      "error": null,
+      "calls": {
+        "replay": 1,
+        "qualify": 1,
+        "ledger_kernel": 1,
+        "save": 0,
+        "simulate": 0,
+        "generate": 0,
+        "replay_sequence": 0
+      },
+      "input_unchanged": true,
+      "caller_context_unchanged": true
+    },
+    {
+      "case": "stock-delivery",
+      "context": "preset",
+      "path": "before/stock-delivery/preset/actual.json",
+      "equal_expected": false,
+      "error": {
+        "type": "Clamped",
+        "detail": "[<class 'decimal.Clamped'>]"
+      },
+      "calls": {
+        "replay": 1,
+        "qualify": 1,
+        "ledger_kernel": 1,
+        "save": 0,
+        "simulate": 0,
+        "generate": 0,
+        "replay_sequence": 0
+      },
+      "input_unchanged": true,
+      "caller_context_unchanged": true
+    },
+    {
+      "case": "capital-reduction",
+      "context": "normal",
+      "path": "before/capital-reduction/normal/actual.json",
+      "equal_expected": true,
+      "error": null,
+      "calls": {
+        "replay": 1,
+        "qualify": 1,
+        "ledger_kernel": 1,
+        "save": 0,
+        "simulate": 0,
+        "generate": 0,
+        "replay_sequence": 0
+      },
+      "input_unchanged": true,
+      "caller_context_unchanged": true
+    },
+    {
+      "case": "capital-reduction",
+      "context": "preset",
+      "path": "before/capital-reduction/preset/actual.json",
+      "equal_expected": false,
+      "error": {
+        "type": "Clamped",
+        "detail": "[<class 'decimal.Clamped'>]"
+      },
+      "calls": {
+        "replay": 1,
+        "qualify": 1,
+        "ledger_kernel": 1,
+        "save": 0,
+        "simulate": 0,
+        "generate": 0,
+        "replay_sequence": 0
+      },
+      "input_unchanged": true,
+      "caller_context_unchanged": true
+    },
+    {
+      "case": "opening-unknown",
+      "context": "normal",
+      "path": "before/opening-unknown/normal/actual.json",
+      "equal_expected": true,
+      "error": null,
+      "calls": {
+        "replay": 1,
+        "qualify": 1,
+        "ledger_kernel": 0,
+        "save": 0,
+        "simulate": 0,
+        "generate": 0,
+        "replay_sequence": 0
+      },
+      "input_unchanged": true,
+      "caller_context_unchanged": true
+    },
+    {
+      "case": "opening-unknown",
+      "context": "preset",
+      "path": "before/opening-unknown/preset/actual.json",
+      "equal_expected": true,
+      "error": null,
+      "calls": {
+        "replay": 1,
+        "qualify": 1,
+        "ledger_kernel": 0,
+        "save": 0,
+        "simulate": 0,
+        "generate": 0,
+        "replay_sequence": 0
+      },
+      "input_unchanged": true,
+      "caller_context_unchanged": true
+    },
+    {
+      "case": "net-unknown",
+      "context": "normal",
+      "path": "before/net-unknown/normal/actual.json",
+      "equal_expected": true,
+      "error": null,
+      "calls": {
+        "replay": 1,
+        "qualify": 1,
+        "ledger_kernel": 0,
+        "save": 0,
+        "simulate": 0,
+        "generate": 0,
+        "replay_sequence": 0
+      },
+      "input_unchanged": true,
+      "caller_context_unchanged": true
+    },
+    {
+      "case": "net-unknown",
+      "context": "preset",
+      "path": "before/net-unknown/preset/actual.json",
+      "equal_expected": true,
+      "error": null,
+      "calls": {
+        "replay": 1,
+        "qualify": 1,
+        "ledger_kernel": 0,
+        "save": 0,
+        "simulate": 0,
+        "generate": 0,
+        "replay_sequence": 0
+      },
+      "input_unchanged": true,
+      "caller_context_unchanged": true
+    }
+  ],
+  "cli": [
+    {
+      "path": "before/cli/normal/actual.json",
+      "equal_original": true,
+      "error": null,
+      "saved": true
+    },
+    {
+      "path": "before/cli/preset/actual.json",
+      "equal_original": false,
+      "error": {
+        "type": "Clamped",
+        "detail": "[<class 'decimal.Clamped'>]"
+      },
+      "saved": false
+    }
+  ]
+}

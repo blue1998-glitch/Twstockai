@@ -1,0 +1,33 @@
+{
+  "choice": {
+    "schema": "capital-research-choice/0.1",
+    "synthetic": true,
+    "status": "REFUSED",
+    "reasons": [
+      "SOURCE_BINDING_MISMATCH"
+    ],
+    "request_id": "sha256:4f9f28830b33e7d78258094fb0e9d5479d6c8ef09da139f1392867a6950efaa2",
+    "source_binding": null,
+    "requested_selection": {
+      "mode": "GRID",
+      "sell_A": "0",
+      "additional_B": "1",
+      "reason": "EXPLICIT_SYNTHETIC_INTENT_NOT_BEST_RATIO"
+    },
+    "recorded_at": "2026-10-27T12:00:00+08:00",
+    "selected": null,
+    "rejected_candidate": null,
+    "purpose": "EXPLICIT_RESEARCH_INTENT_ONLY",
+    "ranking": null,
+    "execution_authorized": false,
+    "order_generation": "NOT_PERFORMED",
+    "execution": "NOT_PERFORMED",
+    "primary_pressure_id": null,
+    "data_qualified": false,
+    "execution_model_qualified": false,
+    "historical_signal_eligible": false,
+    "policy_authorized": false,
+    "live_execution_authorized": false,
+    "record_id": "sha256:b8e0521bdca810cc2adcead185618aad6e0d7878fcf65212aaf81c82c5fe4e6c"
+  }
+}

@@ -1,0 +1,51 @@
+{
+  "base": "5be3d8bea1008361642b3ec3a6bfdafaa16373a9",
+  "checks": [
+    {
+      "check": "intake.json",
+      "frozen_entries": 36,
+      "status": "MATCH"
+    },
+    {
+      "check": "future-known-intake.json",
+      "frozen_entries": 2,
+      "status": "MATCH"
+    },
+    {
+      "check": "baseline_sources_and_history",
+      "entries": 15,
+      "status": "MATCH"
+    },
+    {
+      "check": "assertions_unchanged_only_new_artifact_paths",
+      "status": "MATCH"
+    },
+    {
+      "check": "method_accounting",
+      "unique": 13,
+      "actual_executions": 18,
+      "initial_failed": [
+        "test_ledger_checkpoint_and_READ_preserve_rights_latest_tokens",
+        "test_new_version_READ_does_not_import_engines_or_write"
+      ],
+      "affected_reruns": 5,
+      "status": "MATCH"
+    },
+    {
+      "check": "formal_flags_and_primary_pressure",
+      "status": "UNCHANGED_FALSE_NULL"
+    },
+    {
+      "check": "sensitive_and_scope_scan",
+      "files": 173,
+      "findings": [],
+      "status": "PASS",
+      "scope": "synthetic cases, source snapshots and related documents; no private records collected"
+    }
+  ],
+  "final_actual": "after-checkpoint-fix",
+  "new_batch": "new-batch-final",
+  "legacy_evidence_untouched": true,
+  "source_authentication": false,
+  "market_performance": false
+}

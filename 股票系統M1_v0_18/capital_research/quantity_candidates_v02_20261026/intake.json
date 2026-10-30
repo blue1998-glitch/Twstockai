@@ -1,0 +1,313 @@
+{
+  "schema": "quantity-candidates-v02-intake/0.1",
+  "saved_at": "2026-10-26T12:19:14.649188+00:00",
+  "baseline": "c1e59f1f1a39d8b2b56b217eb07f25c53d8b1726",
+  "minimum_known_ancestor": "1b200d681a6b68168c45591775e107174f064138",
+  "initial_tracked_changes": 0,
+  "index": 0,
+  "initial_untracked": 0,
+  "case_names": [
+    "first-manual-grid",
+    "all-A-sale-partial-B",
+    "first-old-fact-reviewed",
+    "additional-old-trigger",
+    "additional-independent",
+    "cannot-relabel-first-after-fill",
+    "cannot-reset-first-without-history",
+    "additional-after-partial-fill",
+    "unknown-batch-phase",
+    "first-capital-unknown",
+    "first-invalidated",
+    "known-history-not-erased",
+    "review-mismatch-source_id",
+    "review-mismatch-basis_id",
+    "liquidity-limit",
+    "common-risk-limit",
+    "cost-cannot-be-free",
+    "receivable-not-spendable",
+    "wait-sale-settlement",
+    "non-monotone",
+    "grid-over-limit",
+    "full-over-limit",
+    "existing-B-order",
+    "sell-locked-A",
+    "future-A-wins",
+    "future-B-wins",
+    "future-both-fall"
+  ],
+  "input_expected_fingerprints": [
+    {
+      "path": "股票系統M1_v0_18/capital_research/quantity_candidates_v02_20261026/cases/first-manual-grid/input.json",
+      "bytes": 15515,
+      "sha256": "4e02f8e83eb10f48a81344875c392ce06e90b516461d0353dbc0c511a44890e1"
+    },
+    {
+      "path": "股票系統M1_v0_18/capital_research/quantity_candidates_v02_20261026/cases/first-manual-grid/expected.json",
+      "bytes": 479,
+      "sha256": "bcbb3cc0cec25589be7a8766a232d616da70f7ee8bf81d98c264f5296da51bdb"
+    },
+    {
+      "path": "股票系統M1_v0_18/capital_research/quantity_candidates_v02_20261026/cases/all-A-sale-partial-B/input.json",
+      "bytes": 15518,
+      "sha256": "2135906ab6356ab25513ced6fc520c13113d306cc7f83c5ef01be8b6e42cea8d"
+    },
+    {
+      "path": "股票系統M1_v0_18/capital_research/quantity_candidates_v02_20261026/cases/all-A-sale-partial-B/expected.json",
+      "bytes": 157,
+      "sha256": "e4d3e5712a517f15536bac6a37cd5471f14799a7c6ebddcf7482b408ffb287f1"
+    },
+    {
+      "path": "股票系統M1_v0_18/capital_research/quantity_candidates_v02_20261026/cases/first-old-fact-reviewed/input.json",
+      "bytes": 207612,
+      "sha256": "0fb37bcffddb8051b049fa8bbe4b6a70c16c5705b862299d4dbe4a126fad72f8"
+    },
+    {
+      "path": "股票系統M1_v0_18/capital_research/quantity_candidates_v02_20261026/cases/first-old-fact-reviewed/expected.json",
+      "bytes": 168,
+      "sha256": "d46b6a5f992edf82f5364a7a27ee82b2aaca4bf57b1faffa9fea6a72943a5bbd"
+    },
+    {
+      "path": "股票系統M1_v0_18/capital_research/quantity_candidates_v02_20261026/cases/additional-old-trigger/input.json",
+      "bytes": 207634,
+      "sha256": "7f9a87c18517323234335ba0ce8186f2018e01e8c401baff58b8058dddbefd47"
+    },
+    {
+      "path": "股票系統M1_v0_18/capital_research/quantity_candidates_v02_20261026/cases/additional-old-trigger/expected.json",
+      "bytes": 95,
+      "sha256": "95319748f22608df0cfcc947f711dd59e9723cdf6c4b73b2bacde9ce9e0f78bc"
+    },
+    {
+      "path": "股票系統M1_v0_18/capital_research/quantity_candidates_v02_20261026/cases/additional-independent/input.json",
+      "bytes": 208677,
+      "sha256": "8932601f6c8101d6562b32950e2c51fcd073e99f0191114f7a9ddbaeec1c87ef"
+    },
+    {
+      "path": "股票系統M1_v0_18/capital_research/quantity_candidates_v02_20261026/cases/additional-independent/expected.json",
+      "bytes": 139,
+      "sha256": "7ca5a3261464e403ea69dd42f09155398309a2244561065cf9d5bc01ba1c4cdc"
+    },
+    {
+      "path": "股票系統M1_v0_18/capital_research/quantity_candidates_v02_20261026/cases/cannot-relabel-first-after-fill/input.json",
+      "bytes": 222083,
+      "sha256": "d039b986209630002b5fef2d156fe0f09ef9d861a7afb9fd4c1411f98a153dbc"
+    },
+    {
+      "path": "股票系統M1_v0_18/capital_research/quantity_candidates_v02_20261026/cases/cannot-relabel-first-after-fill/expected.json",
+      "bytes": 110,
+      "sha256": "5d227350b91dab35b2dee07fc18015c8993f69732542fa0bc75cca7f5cd3a2c9"
+    },
+    {
+      "path": "股票系統M1_v0_18/capital_research/quantity_candidates_v02_20261026/cases/cannot-reset-first-without-history/input.json",
+      "bytes": 15553,
+      "sha256": "1910eb0772cb48c2b30e68b7dce40c71a82a5bca7c6a55f6434d78bca30df720"
+    },
+    {
+      "path": "股票系統M1_v0_18/capital_research/quantity_candidates_v02_20261026/cases/cannot-reset-first-without-history/expected.json",
+      "bytes": 104,
+      "sha256": "9f4be7fabd6a736bc3cb1cb699db4c162df86eedebece9dd7bf3cfbdc7e881c8"
+    },
+    {
+      "path": "股票系統M1_v0_18/capital_research/quantity_candidates_v02_20261026/cases/additional-after-partial-fill/input.json",
+      "bytes": 222105,
+      "sha256": "de904ccc7b9b6967c5f10072ba1dcdec088f637f92d607fdf00201fae88a512c"
+    },
+    {
+      "path": "股票系統M1_v0_18/capital_research/quantity_candidates_v02_20261026/cases/additional-after-partial-fill/expected.json",
+      "bytes": 95,
+      "sha256": "95319748f22608df0cfcc947f711dd59e9723cdf6c4b73b2bacde9ce9e0f78bc"
+    },
+    {
+      "path": "股票系統M1_v0_18/capital_research/quantity_candidates_v02_20261026/cases/unknown-batch-phase/input.json",
+      "bytes": 15528,
+      "sha256": "06d4af2a15e88e79536dfe924b42662df53d0b22c1a44faccabd4c2061df63bc"
+    },
+    {
+      "path": "股票系統M1_v0_18/capital_research/quantity_candidates_v02_20261026/cases/unknown-batch-phase/expected.json",
+      "bytes": 88,
+      "sha256": "5a4fa27bc3b61a3964fc5a051a02b1c23eef925158d60bdde246a135a9956ec6"
+    },
+    {
+      "path": "股票系統M1_v0_18/capital_research/quantity_candidates_v02_20261026/cases/first-capital-unknown/input.json",
+      "bytes": 15494,
+      "sha256": "538fe0854355b50a7575c9eaebd39c9b908646b4f56ab04c084ed7d5efb62949"
+    },
+    {
+      "path": "股票系統M1_v0_18/capital_research/quantity_candidates_v02_20261026/cases/first-capital-unknown/expected.json",
+      "bytes": 96,
+      "sha256": "dc6fdd6380260c11f39f5df1aebe2857a07e5f5d0e13381e93652c3f9f910cc1"
+    },
+    {
+      "path": "股票系統M1_v0_18/capital_research/quantity_candidates_v02_20261026/cases/first-invalidated/input.json",
+      "bytes": 15774,
+      "sha256": "b6a99cecbb5cf8f36088538df8baab50c0be3836768ddc3e42d4f59e22870da9"
+    },
+    {
+      "path": "股票系統M1_v0_18/capital_research/quantity_candidates_v02_20261026/cases/first-invalidated/expected.json",
+      "bytes": 96,
+      "sha256": "dc6fdd6380260c11f39f5df1aebe2857a07e5f5d0e13381e93652c3f9f910cc1"
+    },
+    {
+      "path": "股票系統M1_v0_18/capital_research/quantity_candidates_v02_20261026/cases/known-history-not-erased/input.json",
+      "bytes": 210194,
+      "sha256": "4c46b56a8724498e2ab9ce1dc64fbb871b19763e19656c40dd8cd2383fd1a428"
+    },
+    {
+      "path": "股票系統M1_v0_18/capital_research/quantity_candidates_v02_20261026/cases/known-history-not-erased/expected.json",
+      "bytes": 96,
+      "sha256": "dc6fdd6380260c11f39f5df1aebe2857a07e5f5d0e13381e93652c3f9f910cc1"
+    },
+    {
+      "path": "股票系統M1_v0_18/capital_research/quantity_candidates_v02_20261026/cases/review-mismatch-source_id/input.json",
+      "bytes": 15520,
+      "sha256": "82f9e03f7abc75cb038b466f049f605eb152123a8eee9fbb383a572076a2c98a"
+    },
+    {
+      "path": "股票系統M1_v0_18/capital_research/quantity_candidates_v02_20261026/cases/review-mismatch-source_id/expected.json",
+      "bytes": 99,
+      "sha256": "346fe9fb60d9e527cd5ccb9ef2f9c4a6bfe2cb35e1f0e124596a9d62abeeea96"
+    },
+    {
+      "path": "股票系統M1_v0_18/capital_research/quantity_candidates_v02_20261026/cases/review-mismatch-basis_id/input.json",
+      "bytes": 15513,
+      "sha256": "e747fbd727bb8c638bd1e8a385df2f5b36a1037893d07077530d2068d9084e9c"
+    },
+    {
+      "path": "股票系統M1_v0_18/capital_research/quantity_candidates_v02_20261026/cases/review-mismatch-basis_id/expected.json",
+      "bytes": 99,
+      "sha256": "346fe9fb60d9e527cd5ccb9ef2f9c4a6bfe2cb35e1f0e124596a9d62abeeea96"
+    },
+    {
+      "path": "股票系統M1_v0_18/capital_research/quantity_candidates_v02_20261026/cases/liquidity-limit/input.json",
+      "bytes": 15513,
+      "sha256": "b242bdc9c10d85c50f6596e39721e64881bf490a16e6cb5ea1c6e94584174ba0"
+    },
+    {
+      "path": "股票系統M1_v0_18/capital_research/quantity_candidates_v02_20261026/cases/liquidity-limit/expected.json",
+      "bytes": 147,
+      "sha256": "fa507d5589efd778f1f500da01960e3d5ff390ddc41f64bc756943a61e28adb1"
+    },
+    {
+      "path": "股票系統M1_v0_18/capital_research/quantity_candidates_v02_20261026/cases/common-risk-limit/input.json",
+      "bytes": 15513,
+      "sha256": "b514baf24e93acd5e776ed345900ed95f1ff7f1f39d4d92780e8efb273ef1b3a"
+    },
+    {
+      "path": "股票系統M1_v0_18/capital_research/quantity_candidates_v02_20261026/cases/common-risk-limit/expected.json",
+      "bytes": 143,
+      "sha256": "d1716c842c0c56f35a2dcc025857d1c5cb860eabeb8a187089f54743e68dc976"
+    },
+    {
+      "path": "股票系統M1_v0_18/capital_research/quantity_candidates_v02_20261026/cases/cost-cannot-be-free/input.json",
+      "bytes": 15514,
+      "sha256": "0e416ec2d6030aee6280faaf626f2f38300a361f205dcd7bc3731ec4bc51a8fb"
+    },
+    {
+      "path": "股票系統M1_v0_18/capital_research/quantity_candidates_v02_20261026/cases/cost-cannot-be-free/expected.json",
+      "bytes": 199,
+      "sha256": "eed78fa0c9f49a0498cdf058b9a42bbbd3737decf625f204be1d944685cdd862"
+    },
+    {
+      "path": "股票系統M1_v0_18/capital_research/quantity_candidates_v02_20261026/cases/receivable-not-spendable/input.json",
+      "bytes": 15514,
+      "sha256": "45e282885c660016ebc4daf962b4513e3e4ecacb2fc35481683abc047e3a83f8"
+    },
+    {
+      "path": "股票系統M1_v0_18/capital_research/quantity_candidates_v02_20261026/cases/receivable-not-spendable/expected.json",
+      "bytes": 198,
+      "sha256": "efd71421b090b0cd0abdc2f52acbc3d5e1dae4a8465d3390fda842fe6cda6a94"
+    },
+    {
+      "path": "股票系統M1_v0_18/capital_research/quantity_candidates_v02_20261026/cases/wait-sale-settlement/input.json",
+      "bytes": 15514,
+      "sha256": "f9ecf396fc875fab59ad2268ed69ea5130a135e4a1712240c8506b9ab923c30b"
+    },
+    {
+      "path": "股票系統M1_v0_18/capital_research/quantity_candidates_v02_20261026/cases/wait-sale-settlement/expected.json",
+      "bytes": 127,
+      "sha256": "5dffdf2eabdab6cd213f16d04f0567d2f608520b66d28d06bb5e1c5f518cb6cc"
+    },
+    {
+      "path": "股票系統M1_v0_18/capital_research/quantity_candidates_v02_20261026/cases/non-monotone/input.json",
+      "bytes": 14964,
+      "sha256": "ea2092435d8705aa5b8952da533a08c7a141c3b6e668f5da052e28635e4b2f62"
+    },
+    {
+      "path": "股票系統M1_v0_18/capital_research/quantity_candidates_v02_20261026/cases/non-monotone/expected.json",
+      "bytes": 156,
+      "sha256": "b12528a9450a9ea61f451ac4ef488fd1bd9db3aec62d3b0ef03d3a49fe2ae815"
+    },
+    {
+      "path": "股票系統M1_v0_18/capital_research/quantity_candidates_v02_20261026/cases/grid-over-limit/input.json",
+      "bytes": 15514,
+      "sha256": "741724813bb607366e80fa10f27d6350c98904ddff5eb14a71224ac31fcff32a"
+    },
+    {
+      "path": "股票系統M1_v0_18/capital_research/quantity_candidates_v02_20261026/cases/grid-over-limit/expected.json",
+      "bytes": 63,
+      "sha256": "c8b2e5dc1072093bf9b17d836868dfb7dd0d82becb48d60ce02eb12812750127"
+    },
+    {
+      "path": "股票系統M1_v0_18/capital_research/quantity_candidates_v02_20261026/cases/full-over-limit/input.json",
+      "bytes": 15518,
+      "sha256": "19822b77d4ce1ea346953465f316998937eefb379b2b1dab19145b410210883a"
+    },
+    {
+      "path": "股票系統M1_v0_18/capital_research/quantity_candidates_v02_20261026/cases/full-over-limit/expected.json",
+      "bytes": 63,
+      "sha256": "c8b2e5dc1072093bf9b17d836868dfb7dd0d82becb48d60ce02eb12812750127"
+    },
+    {
+      "path": "股票系統M1_v0_18/capital_research/quantity_candidates_v02_20261026/cases/existing-B-order/input.json",
+      "bytes": 15750,
+      "sha256": "2a7f3fc71e04950208ba629ccba3c27f7bf1db8fe28a104e3937d6b53ed0265f"
+    },
+    {
+      "path": "股票系統M1_v0_18/capital_research/quantity_candidates_v02_20261026/cases/existing-B-order/expected.json",
+      "bytes": 150,
+      "sha256": "f7c19eb23afc2efb48280493abdca8fe19144f9cac4ca9f71bf6bb8cb45d48cd"
+    },
+    {
+      "path": "股票系統M1_v0_18/capital_research/quantity_candidates_v02_20261026/cases/sell-locked-A/input.json",
+      "bytes": 15664,
+      "sha256": "41caa9870374edec5852b6b610dd059322f42b8dca83f26958ea9347aaeac9f8"
+    },
+    {
+      "path": "股票系統M1_v0_18/capital_research/quantity_candidates_v02_20261026/cases/sell-locked-A/expected.json",
+      "bytes": 163,
+      "sha256": "e646de479e87de3bd85af95a980fc43c77252ccb863273d4351d18fcb6349e49"
+    },
+    {
+      "path": "股票系統M1_v0_18/capital_research/quantity_candidates_v02_20261026/cases/future-A-wins/input.json",
+      "bytes": 16529,
+      "sha256": "44c1cfbd5f594be80c327dc682a752ff1f247b2af42353c79bef6dd7b03fd78e"
+    },
+    {
+      "path": "股票系統M1_v0_18/capital_research/quantity_candidates_v02_20261026/cases/future-A-wins/expected.json",
+      "bytes": 70,
+      "sha256": "99ab739ea99467df04a5e763448b4f57d6d2f773de9af0450931653c39a2240d"
+    },
+    {
+      "path": "股票系統M1_v0_18/capital_research/quantity_candidates_v02_20261026/cases/future-B-wins/input.json",
+      "bytes": 16529,
+      "sha256": "c4833a97cbb109c0222c4df6956f346ee1b12a25cad505b01722b38adaefb204"
+    },
+    {
+      "path": "股票系統M1_v0_18/capital_research/quantity_candidates_v02_20261026/cases/future-B-wins/expected.json",
+      "bytes": 70,
+      "sha256": "99ab739ea99467df04a5e763448b4f57d6d2f773de9af0450931653c39a2240d"
+    },
+    {
+      "path": "股票系統M1_v0_18/capital_research/quantity_candidates_v02_20261026/cases/future-both-fall/input.json",
+      "bytes": 16530,
+      "sha256": "27bcc997b55a5f58073533ead7b21fa5acadcaa455d51f0a1206833b38330fec"
+    },
+    {
+      "path": "股票系統M1_v0_18/capital_research/quantity_candidates_v02_20261026/cases/future-both-fall/expected.json",
+      "bytes": 70,
+      "sha256": "99ab739ea99467df04a5e763448b4f57d6d2f773de9af0450931653c39a2240d"
+    }
+  ],
+  "inputs_expected_saved_before_v02_implementation": true,
+  "old_prefixes_reused_without_reexecution": true,
+  "commit_push_authorized": true
+}

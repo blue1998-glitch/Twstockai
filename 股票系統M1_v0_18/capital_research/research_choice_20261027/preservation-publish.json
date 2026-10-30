@@ -1,0 +1,15 @@
+{
+  "issue": "PRECOMMIT_NEW_FILE_WHITESPACE",
+  "check": "git diff --cached --check",
+  "first_result": "quantity_choice_rules.py:19: new blank line at EOF",
+  "fix": "Remove one trailing blank line; entire module AST identical",
+  "production_logic_changed": false,
+  "additional_tests": 0,
+  "old_module": "quantity_choice_rules-before-whitespace.py",
+  "old_versions": "source-versions-final.json",
+  "publish_versions": "source-versions-publish.json",
+  "draft_manifest": "CHANGE_MANIFEST.json",
+  "authoritative_publish_manifest": "CHANGE_MANIFEST_FINAL.json",
+  "draft_compatibility": "All draft entries still match current files except quantity_choice_rules.py; its exact old bytes retained in snapshot",
+  "test_counts_unchanged": true
+}

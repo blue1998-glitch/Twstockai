@@ -1,0 +1,9 @@
+{
+  "finding": "First eight tests passed, but initial mark validation checked identifiers and finite values without comparing retained original quote or rejecting stale trading-day marks.",
+  "change": "Read-only equality/dated-mark checks against original source; no price filling, ledger posting or source authentication.",
+  "extra_cases": [
+    "mismatched-mark",
+    "stale-trading-mark"
+  ],
+  "original_oracles_changed": false
+}

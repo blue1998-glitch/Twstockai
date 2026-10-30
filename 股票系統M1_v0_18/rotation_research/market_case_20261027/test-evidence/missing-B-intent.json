@@ -1,0 +1,726 @@
+{
+  "input": {
+    "schema": "rotation-market-case-input/0.1",
+    "case_id": "1101-return-then-2884-opportunity",
+    "data_kind": "SAVED_REAL_RAW_WITH_EXPLICIT_HYPOTHETICAL_ACCOUNT",
+    "source_binding": {
+      "quotes": "sha256:a75ab687106a64988b2f5e4c4433a86b569ec974fac6ae3806cb890f5bc4ca7c",
+      "quote_manifest": "sha256:503b5905a7c133f24d763e03c36e9a61eaea6c9e1e6ad5eb47f235b5bd14b3bf",
+      "catalog": "sha256:a137969400c6149c17434e8991467afee71ebfc68597279f1ed6049c1b332fa3",
+      "calendar": "sha256:8b431ca5ec65e460c70b0a5fc4cbc2a7f63381052fa7e5ed85f449728d8fb113"
+    },
+    "common": {
+      "period": {
+        "start": "2026-04-07",
+        "end": "2026-06-23"
+      },
+      "account": {
+        "kind": "NEW_HYPOTHETICAL_CASH_NOT_USER_ACCOUNT",
+        "account_id": "TEST-ONLY-new-cash",
+        "cash": "10000",
+        "shares": {
+          "1101": "0",
+          "2884": "0"
+        },
+        "cash_claims": [],
+        "share_claims": [],
+        "rights_basis": "EXPLICIT_NEW_ACCOUNT_ASSUMPTION_NOT_PRIVATE_EVIDENCE"
+      },
+      "execution_model": {
+        "id": "TEST-ONLY-model",
+        "description": "NON_EXECUTABLE_BINDING_CONTROL_NOT_SELECTED_MARKET_MODEL",
+        "parameter_source": "fixture:explicit-readiness-control",
+        "declared_at": "2026-10-27T00:00:00+00:00",
+        "fill_role": "HYPOTHETICAL_EXPLICIT_NOT_ACTUAL",
+        "settlement": "EXPLICIT_DATES_NOT_VERIFIED_REAL_CALENDAR",
+        "terminal_costs": {
+          "fee_rate": "0.001425",
+          "minimum_fee": "20",
+          "sell_tax": "0.003",
+          "slippage_bps": "10"
+        }
+      },
+      "market_observations": [
+        {
+          "code": "1101",
+          "at": "2026-04-09T09:00:00+08:00",
+          "available_at": "2026-04-09T09:00:00+08:00",
+          "price": "25.50",
+          "capacity": "10",
+          "market_state": "MODEL_OPEN_NOT_ACTUAL_FILL",
+          "source_id": "sha256:a75ab687106a64988b2f5e4c4433a86b569ec974fac6ae3806cb890f5bc4ca7c",
+          "basis_id": "RAW:fd5674f6d424dadbfe0644453e4f54c9ed8943fe3149b6f681f24932176db801",
+          "qualification": "TEST_ONLY_ASSUMPTION_NOT_HISTORICAL_AUTHENTICATION"
+        }
+      ]
+    },
+    "decisions": [
+      {
+        "id": "A-breakout",
+        "market_date": "2026-04-08",
+        "decision_at": "2026-04-08T17:00:00+08:00",
+        "data_cutoff": "2026-04-08T16:00:00+08:00",
+        "evidence_ids": [
+          "A-reference",
+          "A-breakout"
+        ]
+      },
+      {
+        "id": "A-return",
+        "market_date": "2026-04-09",
+        "decision_at": "2026-04-09T17:00:00+08:00",
+        "data_cutoff": "2026-04-09T16:00:00+08:00",
+        "evidence_ids": [
+          "A-reference",
+          "A-return"
+        ]
+      },
+      {
+        "id": "B-opportunity",
+        "market_date": "2026-06-22",
+        "decision_at": "2026-06-22T17:00:00+08:00",
+        "data_cutoff": "2026-06-22T16:00:00+08:00",
+        "evidence_ids": [
+          "B-reference",
+          "B-breakout"
+        ]
+      }
+    ],
+    "common_entry": {
+      "id": "TEST-entry-A",
+      "code": "1101",
+      "side": "BUY",
+      "date": "2026-04-09",
+      "decision_date": "2026-04-08",
+      "shares": "10",
+      "price": "25.50",
+      "fee": "1",
+      "tax": "0",
+      "settlement_date": "2026-04-10",
+      "source_ids": [
+        "quote-54"
+      ]
+    },
+    "paths": [
+      {
+        "id": "hold",
+        "intent": "HOLD_A",
+        "common": {
+          "period": {
+            "start": "2026-04-07",
+            "end": "2026-06-23"
+          },
+          "account": {
+            "kind": "NEW_HYPOTHETICAL_CASH_NOT_USER_ACCOUNT",
+            "account_id": "TEST-ONLY-new-cash",
+            "cash": "10000",
+            "shares": {
+              "1101": "0",
+              "2884": "0"
+            },
+            "cash_claims": [],
+            "share_claims": [],
+            "rights_basis": "EXPLICIT_NEW_ACCOUNT_ASSUMPTION_NOT_PRIVATE_EVIDENCE"
+          },
+          "execution_model": {
+            "id": "TEST-ONLY-model",
+            "description": "NON_EXECUTABLE_BINDING_CONTROL_NOT_SELECTED_MARKET_MODEL",
+            "parameter_source": "fixture:explicit-readiness-control",
+            "declared_at": "2026-10-27T00:00:00+00:00",
+            "fill_role": "HYPOTHETICAL_EXPLICIT_NOT_ACTUAL",
+            "settlement": "EXPLICIT_DATES_NOT_VERIFIED_REAL_CALENDAR",
+            "terminal_costs": {
+              "fee_rate": "0.001425",
+              "minimum_fee": "20",
+              "sell_tax": "0.003",
+              "slippage_bps": "10"
+            }
+          },
+          "market_observations": [
+            {
+              "code": "1101",
+              "at": "2026-04-09T09:00:00+08:00",
+              "available_at": "2026-04-09T09:00:00+08:00",
+              "price": "25.50",
+              "capacity": "10",
+              "market_state": "MODEL_OPEN_NOT_ACTUAL_FILL",
+              "source_id": "sha256:a75ab687106a64988b2f5e4c4433a86b569ec974fac6ae3806cb890f5bc4ca7c",
+              "basis_id": "RAW:fd5674f6d424dadbfe0644453e4f54c9ed8943fe3149b6f681f24932176db801",
+              "qualification": "TEST_ONLY_ASSUMPTION_NOT_HISTORICAL_AUTHENTICATION"
+            }
+          ]
+        },
+        "fills": [
+          {
+            "id": "TEST-entry-A",
+            "code": "1101",
+            "side": "BUY",
+            "date": "2026-04-09",
+            "decision_date": "2026-04-08",
+            "shares": "10",
+            "price": "25.50",
+            "fee": "1",
+            "tax": "0",
+            "settlement_date": "2026-04-10",
+            "source_ids": [
+              "quote-54"
+            ]
+          }
+        ],
+        "b_intent": "HOLD_CURRENT_FOR_PREPARATION_CONTROL"
+      },
+      {
+        "id": "reduce",
+        "intent": "REDUCE_A",
+        "common": {
+          "period": {
+            "start": "2026-04-07",
+            "end": "2026-06-23"
+          },
+          "account": {
+            "kind": "NEW_HYPOTHETICAL_CASH_NOT_USER_ACCOUNT",
+            "account_id": "TEST-ONLY-new-cash",
+            "cash": "10000",
+            "shares": {
+              "1101": "0",
+              "2884": "0"
+            },
+            "cash_claims": [],
+            "share_claims": [],
+            "rights_basis": "EXPLICIT_NEW_ACCOUNT_ASSUMPTION_NOT_PRIVATE_EVIDENCE"
+          },
+          "execution_model": {
+            "id": "TEST-ONLY-model",
+            "description": "NON_EXECUTABLE_BINDING_CONTROL_NOT_SELECTED_MARKET_MODEL",
+            "parameter_source": "fixture:explicit-readiness-control",
+            "declared_at": "2026-10-27T00:00:00+00:00",
+            "fill_role": "HYPOTHETICAL_EXPLICIT_NOT_ACTUAL",
+            "settlement": "EXPLICIT_DATES_NOT_VERIFIED_REAL_CALENDAR",
+            "terminal_costs": {
+              "fee_rate": "0.001425",
+              "minimum_fee": "20",
+              "sell_tax": "0.003",
+              "slippage_bps": "10"
+            }
+          },
+          "market_observations": [
+            {
+              "code": "1101",
+              "at": "2026-04-09T09:00:00+08:00",
+              "available_at": "2026-04-09T09:00:00+08:00",
+              "price": "25.50",
+              "capacity": "10",
+              "market_state": "MODEL_OPEN_NOT_ACTUAL_FILL",
+              "source_id": "sha256:a75ab687106a64988b2f5e4c4433a86b569ec974fac6ae3806cb890f5bc4ca7c",
+              "basis_id": "RAW:fd5674f6d424dadbfe0644453e4f54c9ed8943fe3149b6f681f24932176db801",
+              "qualification": "TEST_ONLY_ASSUMPTION_NOT_HISTORICAL_AUTHENTICATION"
+            }
+          ]
+        },
+        "fills": [
+          {
+            "id": "TEST-entry-A",
+            "code": "1101",
+            "side": "BUY",
+            "date": "2026-04-09",
+            "decision_date": "2026-04-08",
+            "shares": "10",
+            "price": "25.50",
+            "fee": "1",
+            "tax": "0",
+            "settlement_date": "2026-04-10",
+            "source_ids": [
+              "quote-54"
+            ]
+          },
+          {
+            "id": "TEST-sell-reduce",
+            "code": "1101",
+            "side": "SELL",
+            "date": "2026-04-10",
+            "decision_date": "2026-04-09",
+            "shares": "5",
+            "price": "25.10",
+            "fee": "1",
+            "tax": "0",
+            "settlement_date": "2026-04-13",
+            "source_ids": [
+              "quote-54"
+            ]
+          }
+        ],
+        "b_intent": "HOLD_CURRENT_FOR_PREPARATION_CONTROL"
+      },
+      {
+        "id": "cash",
+        "intent": "EXIT_A_TO_CASH",
+        "common": {
+          "period": {
+            "start": "2026-04-07",
+            "end": "2026-06-23"
+          },
+          "account": {
+            "kind": "NEW_HYPOTHETICAL_CASH_NOT_USER_ACCOUNT",
+            "account_id": "TEST-ONLY-new-cash",
+            "cash": "10000",
+            "shares": {
+              "1101": "0",
+              "2884": "0"
+            },
+            "cash_claims": [],
+            "share_claims": [],
+            "rights_basis": "EXPLICIT_NEW_ACCOUNT_ASSUMPTION_NOT_PRIVATE_EVIDENCE"
+          },
+          "execution_model": {
+            "id": "TEST-ONLY-model",
+            "description": "NON_EXECUTABLE_BINDING_CONTROL_NOT_SELECTED_MARKET_MODEL",
+            "parameter_source": "fixture:explicit-readiness-control",
+            "declared_at": "2026-10-27T00:00:00+00:00",
+            "fill_role": "HYPOTHETICAL_EXPLICIT_NOT_ACTUAL",
+            "settlement": "EXPLICIT_DATES_NOT_VERIFIED_REAL_CALENDAR",
+            "terminal_costs": {
+              "fee_rate": "0.001425",
+              "minimum_fee": "20",
+              "sell_tax": "0.003",
+              "slippage_bps": "10"
+            }
+          },
+          "market_observations": [
+            {
+              "code": "1101",
+              "at": "2026-04-09T09:00:00+08:00",
+              "available_at": "2026-04-09T09:00:00+08:00",
+              "price": "25.50",
+              "capacity": "10",
+              "market_state": "MODEL_OPEN_NOT_ACTUAL_FILL",
+              "source_id": "sha256:a75ab687106a64988b2f5e4c4433a86b569ec974fac6ae3806cb890f5bc4ca7c",
+              "basis_id": "RAW:fd5674f6d424dadbfe0644453e4f54c9ed8943fe3149b6f681f24932176db801",
+              "qualification": "TEST_ONLY_ASSUMPTION_NOT_HISTORICAL_AUTHENTICATION"
+            }
+          ]
+        },
+        "fills": [
+          {
+            "id": "TEST-entry-A",
+            "code": "1101",
+            "side": "BUY",
+            "date": "2026-04-09",
+            "decision_date": "2026-04-08",
+            "shares": "10",
+            "price": "25.50",
+            "fee": "1",
+            "tax": "0",
+            "settlement_date": "2026-04-10",
+            "source_ids": [
+              "quote-54"
+            ]
+          },
+          {
+            "id": "TEST-sell-cash",
+            "code": "1101",
+            "side": "SELL",
+            "date": "2026-04-10",
+            "decision_date": "2026-04-09",
+            "shares": "10",
+            "price": "25.10",
+            "fee": "1",
+            "tax": "0",
+            "settlement_date": "2026-04-13",
+            "source_ids": [
+              "quote-54"
+            ]
+          }
+        ],
+        "b_intent": null
+      }
+    ]
+  },
+  "actual": {
+    "actual": {
+      "schema": "rotation-market-case-preparation/0.1",
+      "case_id": "1101-return-then-2884-opportunity",
+      "input_id": "sha256:35a4e7772b90ccbdd7d9f00283d73784bae44a6bdf195f249db23bb6beff99ae",
+      "source_binding": {
+        "quotes": "sha256:a75ab687106a64988b2f5e4c4433a86b569ec974fac6ae3806cb890f5bc4ca7c",
+        "quote_manifest": "sha256:503b5905a7c133f24d763e03c36e9a61eaea6c9e1e6ad5eb47f235b5bd14b3bf",
+        "catalog": "sha256:a137969400c6149c17434e8991467afee71ebfc68597279f1ed6049c1b332fa3",
+        "calendar": "sha256:8b431ca5ec65e460c70b0a5fc4cbc2a7f63381052fa7e5ed85f449728d8fb113"
+      },
+      "status": "AWAITING_EXPLICIT_INPUT",
+      "missing_inputs": [
+        "paths.cash.b_intent"
+      ],
+      "observations": [
+        {
+          "id": "A-reference",
+          "code": "1101",
+          "date": "2026-03-12",
+          "field": "high",
+          "value": "25.20",
+          "source_id": "archived-months:fd5674f6d424dadbfe0644453e4f54c9ed8943fe3149b6f681f24932176db801",
+          "basis_id": "RAW:fd5674f6d424dadbfe0644453e4f54c9ed8943fe3149b6f681f24932176db801",
+          "available_at": null,
+          "availability": "HISTORICAL_PUBLICATION_NOT_AUTHENTICATED",
+          "role": "EXPLICIT_CASE_REFERENCE_NOT_FORMAL_PRIMARY_PRESSURE"
+        },
+        {
+          "id": "A-breakout",
+          "code": "1101",
+          "date": "2026-04-08",
+          "field": "close",
+          "value": "25.40",
+          "source_id": "archived-months:fd5674f6d424dadbfe0644453e4f54c9ed8943fe3149b6f681f24932176db801",
+          "basis_id": "RAW:fd5674f6d424dadbfe0644453e4f54c9ed8943fe3149b6f681f24932176db801",
+          "available_at": null,
+          "availability": "HISTORICAL_PUBLICATION_NOT_AUTHENTICATED",
+          "role": "SAVED_PRICE_OBSERVATION_NOT_ORDER"
+        },
+        {
+          "id": "A-return",
+          "code": "1101",
+          "date": "2026-04-09",
+          "field": "close",
+          "value": "25.10",
+          "source_id": "archived-months:fd5674f6d424dadbfe0644453e4f54c9ed8943fe3149b6f681f24932176db801",
+          "basis_id": "RAW:fd5674f6d424dadbfe0644453e4f54c9ed8943fe3149b6f681f24932176db801",
+          "available_at": null,
+          "availability": "HISTORICAL_PUBLICATION_NOT_AUTHENTICATED",
+          "role": "SAVED_PRICE_OBSERVATION_NOT_ORDER"
+        },
+        {
+          "id": "B-reference",
+          "code": "2884",
+          "date": "2026-02-26",
+          "field": "high",
+          "value": "35.50",
+          "source_id": "archived-months:c27514e56b61b669362aaf8fdd7223acb7caaabcdaf0fa6ccf4a17909ba9ac60",
+          "basis_id": "RAW:c27514e56b61b669362aaf8fdd7223acb7caaabcdaf0fa6ccf4a17909ba9ac60",
+          "available_at": null,
+          "availability": "HISTORICAL_PUBLICATION_NOT_AUTHENTICATED",
+          "role": "EXPLICIT_CASE_REFERENCE_NOT_FORMAL_PRIMARY_PRESSURE"
+        },
+        {
+          "id": "B-breakout",
+          "code": "2884",
+          "date": "2026-06-22",
+          "field": "close",
+          "value": "35.80",
+          "source_id": "archived-months:c27514e56b61b669362aaf8fdd7223acb7caaabcdaf0fa6ccf4a17909ba9ac60",
+          "basis_id": "RAW:c27514e56b61b669362aaf8fdd7223acb7caaabcdaf0fa6ccf4a17909ba9ac60",
+          "available_at": null,
+          "availability": "HISTORICAL_PUBLICATION_NOT_AUTHENTICATED",
+          "role": "SAVED_PRICE_OBSERVATION_NOT_ORDER"
+        }
+      ],
+      "decision_prefixes": [
+        {
+          "decision_id": "A-breakout",
+          "market_date": "2026-04-08",
+          "decision_at": "2026-04-08T17:00:00+08:00",
+          "data_cutoff": "2026-04-08T16:00:00+08:00",
+          "observations": [
+            {
+              "id": "A-reference",
+              "code": "1101",
+              "date": "2026-03-12",
+              "field": "high",
+              "value": "25.20",
+              "source_id": "archived-months:fd5674f6d424dadbfe0644453e4f54c9ed8943fe3149b6f681f24932176db801",
+              "basis_id": "RAW:fd5674f6d424dadbfe0644453e4f54c9ed8943fe3149b6f681f24932176db801",
+              "available_at": null,
+              "availability": "HISTORICAL_PUBLICATION_NOT_AUTHENTICATED",
+              "role": "EXPLICIT_CASE_REFERENCE_NOT_FORMAL_PRIMARY_PRESSURE"
+            },
+            {
+              "id": "A-breakout",
+              "code": "1101",
+              "date": "2026-04-08",
+              "field": "close",
+              "value": "25.40",
+              "source_id": "archived-months:fd5674f6d424dadbfe0644453e4f54c9ed8943fe3149b6f681f24932176db801",
+              "basis_id": "RAW:fd5674f6d424dadbfe0644453e4f54c9ed8943fe3149b6f681f24932176db801",
+              "available_at": null,
+              "availability": "HISTORICAL_PUBLICATION_NOT_AUTHENTICATED",
+              "role": "SAVED_PRICE_OBSERVATION_NOT_ORDER"
+            },
+            {
+              "id": "B-reference",
+              "code": "2884",
+              "date": "2026-02-26",
+              "field": "high",
+              "value": "35.50",
+              "source_id": "archived-months:c27514e56b61b669362aaf8fdd7223acb7caaabcdaf0fa6ccf4a17909ba9ac60",
+              "basis_id": "RAW:c27514e56b61b669362aaf8fdd7223acb7caaabcdaf0fa6ccf4a17909ba9ac60",
+              "available_at": null,
+              "availability": "HISTORICAL_PUBLICATION_NOT_AUTHENTICATED",
+              "role": "EXPLICIT_CASE_REFERENCE_NOT_FORMAL_PRIMARY_PRESSURE"
+            }
+          ],
+          "referenced_evidence_ids": [
+            "A-reference",
+            "A-breakout"
+          ],
+          "usable_historical_signal_ids": [],
+          "historical_availability": "UNKNOWN_NOT_BACKFILLED_FROM_CAPTURE",
+          "reassessment_required": false,
+          "automatic_exit_or_transfer": false,
+          "prefix_id": "sha256:5b2eb7b839eac0f1fec6d2ac9cdaa164471b426402cadaf1be48321fc3c658cc"
+        },
+        {
+          "decision_id": "A-return",
+          "market_date": "2026-04-09",
+          "decision_at": "2026-04-09T17:00:00+08:00",
+          "data_cutoff": "2026-04-09T16:00:00+08:00",
+          "observations": [
+            {
+              "id": "A-reference",
+              "code": "1101",
+              "date": "2026-03-12",
+              "field": "high",
+              "value": "25.20",
+              "source_id": "archived-months:fd5674f6d424dadbfe0644453e4f54c9ed8943fe3149b6f681f24932176db801",
+              "basis_id": "RAW:fd5674f6d424dadbfe0644453e4f54c9ed8943fe3149b6f681f24932176db801",
+              "available_at": null,
+              "availability": "HISTORICAL_PUBLICATION_NOT_AUTHENTICATED",
+              "role": "EXPLICIT_CASE_REFERENCE_NOT_FORMAL_PRIMARY_PRESSURE"
+            },
+            {
+              "id": "A-breakout",
+              "code": "1101",
+              "date": "2026-04-08",
+              "field": "close",
+              "value": "25.40",
+              "source_id": "archived-months:fd5674f6d424dadbfe0644453e4f54c9ed8943fe3149b6f681f24932176db801",
+              "basis_id": "RAW:fd5674f6d424dadbfe0644453e4f54c9ed8943fe3149b6f681f24932176db801",
+              "available_at": null,
+              "availability": "HISTORICAL_PUBLICATION_NOT_AUTHENTICATED",
+              "role": "SAVED_PRICE_OBSERVATION_NOT_ORDER"
+            },
+            {
+              "id": "A-return",
+              "code": "1101",
+              "date": "2026-04-09",
+              "field": "close",
+              "value": "25.10",
+              "source_id": "archived-months:fd5674f6d424dadbfe0644453e4f54c9ed8943fe3149b6f681f24932176db801",
+              "basis_id": "RAW:fd5674f6d424dadbfe0644453e4f54c9ed8943fe3149b6f681f24932176db801",
+              "available_at": null,
+              "availability": "HISTORICAL_PUBLICATION_NOT_AUTHENTICATED",
+              "role": "SAVED_PRICE_OBSERVATION_NOT_ORDER"
+            },
+            {
+              "id": "B-reference",
+              "code": "2884",
+              "date": "2026-02-26",
+              "field": "high",
+              "value": "35.50",
+              "source_id": "archived-months:c27514e56b61b669362aaf8fdd7223acb7caaabcdaf0fa6ccf4a17909ba9ac60",
+              "basis_id": "RAW:c27514e56b61b669362aaf8fdd7223acb7caaabcdaf0fa6ccf4a17909ba9ac60",
+              "available_at": null,
+              "availability": "HISTORICAL_PUBLICATION_NOT_AUTHENTICATED",
+              "role": "EXPLICIT_CASE_REFERENCE_NOT_FORMAL_PRIMARY_PRESSURE"
+            }
+          ],
+          "referenced_evidence_ids": [
+            "A-reference",
+            "A-return"
+          ],
+          "usable_historical_signal_ids": [],
+          "historical_availability": "UNKNOWN_NOT_BACKFILLED_FROM_CAPTURE",
+          "reassessment_required": true,
+          "automatic_exit_or_transfer": false,
+          "prefix_id": "sha256:b6893e42fe80b579ac30e673ee79cbdef317e5ebf35a2751268f089bfd962af4"
+        },
+        {
+          "decision_id": "B-opportunity",
+          "market_date": "2026-06-22",
+          "decision_at": "2026-06-22T17:00:00+08:00",
+          "data_cutoff": "2026-06-22T16:00:00+08:00",
+          "observations": [
+            {
+              "id": "A-reference",
+              "code": "1101",
+              "date": "2026-03-12",
+              "field": "high",
+              "value": "25.20",
+              "source_id": "archived-months:fd5674f6d424dadbfe0644453e4f54c9ed8943fe3149b6f681f24932176db801",
+              "basis_id": "RAW:fd5674f6d424dadbfe0644453e4f54c9ed8943fe3149b6f681f24932176db801",
+              "available_at": null,
+              "availability": "HISTORICAL_PUBLICATION_NOT_AUTHENTICATED",
+              "role": "EXPLICIT_CASE_REFERENCE_NOT_FORMAL_PRIMARY_PRESSURE"
+            },
+            {
+              "id": "A-breakout",
+              "code": "1101",
+              "date": "2026-04-08",
+              "field": "close",
+              "value": "25.40",
+              "source_id": "archived-months:fd5674f6d424dadbfe0644453e4f54c9ed8943fe3149b6f681f24932176db801",
+              "basis_id": "RAW:fd5674f6d424dadbfe0644453e4f54c9ed8943fe3149b6f681f24932176db801",
+              "available_at": null,
+              "availability": "HISTORICAL_PUBLICATION_NOT_AUTHENTICATED",
+              "role": "SAVED_PRICE_OBSERVATION_NOT_ORDER"
+            },
+            {
+              "id": "A-return",
+              "code": "1101",
+              "date": "2026-04-09",
+              "field": "close",
+              "value": "25.10",
+              "source_id": "archived-months:fd5674f6d424dadbfe0644453e4f54c9ed8943fe3149b6f681f24932176db801",
+              "basis_id": "RAW:fd5674f6d424dadbfe0644453e4f54c9ed8943fe3149b6f681f24932176db801",
+              "available_at": null,
+              "availability": "HISTORICAL_PUBLICATION_NOT_AUTHENTICATED",
+              "role": "SAVED_PRICE_OBSERVATION_NOT_ORDER"
+            },
+            {
+              "id": "B-reference",
+              "code": "2884",
+              "date": "2026-02-26",
+              "field": "high",
+              "value": "35.50",
+              "source_id": "archived-months:c27514e56b61b669362aaf8fdd7223acb7caaabcdaf0fa6ccf4a17909ba9ac60",
+              "basis_id": "RAW:c27514e56b61b669362aaf8fdd7223acb7caaabcdaf0fa6ccf4a17909ba9ac60",
+              "available_at": null,
+              "availability": "HISTORICAL_PUBLICATION_NOT_AUTHENTICATED",
+              "role": "EXPLICIT_CASE_REFERENCE_NOT_FORMAL_PRIMARY_PRESSURE"
+            },
+            {
+              "id": "B-breakout",
+              "code": "2884",
+              "date": "2026-06-22",
+              "field": "close",
+              "value": "35.80",
+              "source_id": "archived-months:c27514e56b61b669362aaf8fdd7223acb7caaabcdaf0fa6ccf4a17909ba9ac60",
+              "basis_id": "RAW:c27514e56b61b669362aaf8fdd7223acb7caaabcdaf0fa6ccf4a17909ba9ac60",
+              "available_at": null,
+              "availability": "HISTORICAL_PUBLICATION_NOT_AUTHENTICATED",
+              "role": "SAVED_PRICE_OBSERVATION_NOT_ORDER"
+            }
+          ],
+          "referenced_evidence_ids": [
+            "B-reference",
+            "B-breakout"
+          ],
+          "usable_historical_signal_ids": [],
+          "historical_availability": "UNKNOWN_NOT_BACKFILLED_FROM_CAPTURE",
+          "reassessment_required": false,
+          "automatic_exit_or_transfer": false,
+          "prefix_id": "sha256:1351e05db874b68575d3ab32fa0e6ff140cbd4feb3e3cb19a1df5477fff596b2"
+        }
+      ],
+      "b_first_strict_breakout": {
+        "status": "MATCHED_SAVED_COMPLETE_PREFIX",
+        "date": "2026-06-22"
+      },
+      "source_coverage": {
+        "1101": {
+          "status": "INCOMPLETE",
+          "start": "2025-07-01",
+          "end": "2026-10-16",
+          "event_ids": [
+            "sha256:01df5dd4c25df56baa28b725845678043e4809abf08e15cb19bab046ad92902f",
+            "sha256:b7ba974b62bad201a1757c3b8dc2015ae9a43d35f55c352bf0929c65cd2b0bd5"
+          ],
+          "source_ids": [
+            "exright-2025",
+            "exright-2026-to-cutoff",
+            "issuer-1101",
+            "issuer-2884",
+            "tcc-capital-surplus-2026"
+          ],
+          "types": [
+            "CASH_DIVIDEND",
+            "STOCK_DIVIDEND"
+          ],
+          "other_actions_checked": false,
+          "gaps": [
+            "NO_EXHAUSTIVE_CAPITAL_REDUCTION_OR_OTHER_ACTION_REGISTER",
+            "EXCHANGE_2026_CAPTURE_ENDS_2026-07-24_MISSING_2026-07-25_TO_2026-10-16",
+            "EXRIGHT_ENDPOINT_EXCLUSIONS_NOT_COMPLETE_CORPORATE_ACTION_UNIVERSE",
+            "SCOPED_INVENTORY_NOT_EXHAUSTIVE_REGISTER_OR_SUPPORTED_ACCOUNT_IMPACT",
+            "RESOLUTION_NOT_FINAL_RATIO_NET_PAYMENT_OR_EXHAUSTIVE_ACTION_REGISTER"
+          ],
+          "known_company_action_ids": [
+            "sha256:1e4ac85c0b29fc31441f5d36208189e5d6ad55eaf3fa6f9e994db8e054a63bed",
+            "sha256:3912f8383c15a479a8b1aeaa4835f4ca53ad6f101fc88e96f15fd531d0bbeee4",
+            "sha256:5f032becaccb3085398a8025359322047c4ef31f9ffbf3ab2adcde5d83ae4b56",
+            "sha256:d23b7d5f03dc9a6f02b0bd4659cce8519ef01a32eed92dc9dc9f68a652f2dfc5"
+          ]
+        },
+        "2884": {
+          "status": "INCOMPLETE",
+          "start": "2025-07-01",
+          "end": "2026-10-16",
+          "event_ids": [
+            "sha256:a96a11bf35947c9fce84baaf52b88a4ffd19447e9c26610c5fc01a82505d1a3a",
+            "sha256:dddf104de8f030d4fedd1894a1a99386d81df1b0befa046f946cfdc5734bb387",
+            "sha256:cf65c6f1ab9ad9fb1a64a8405cd9d05505739e72d6383c5e37903389f52c7349"
+          ],
+          "source_ids": [
+            "esun-2025-follow-up",
+            "esun-2025-minutes",
+            "esun-direct-2025-ratio",
+            "esun-mna-20251105",
+            "esun-mna-20260713",
+            "esun-mna-index",
+            "esun-mna-qa",
+            "exright-2025",
+            "exright-2026-to-cutoff",
+            "issuer-1101",
+            "issuer-2884"
+          ],
+          "types": [
+            "CASH_DIVIDEND",
+            "STOCK_DIVIDEND"
+          ],
+          "other_actions_checked": false,
+          "gaps": [
+            "NO_EXHAUSTIVE_CAPITAL_REDUCTION_OR_OTHER_ACTION_REGISTER",
+            "EXCHANGE_2026_CAPTURE_ENDS_2026-07-24_MISSING_2026-07-25_TO_2026-10-16",
+            "EXRIGHT_ENDPOINT_EXCLUSIONS_NOT_COMPLETE_CORPORATE_ACTION_UNIVERSE",
+            "SCOPED_INVENTORY_NOT_EXHAUSTIVE_REGISTER_OR_SUPPORTED_ACCOUNT_IMPACT",
+            "RESOLUTION_NOT_FINAL_RATIO_NET_PAYMENT_OR_EXHAUSTIVE_ACTION_REGISTER"
+          ],
+          "known_company_action_ids": [
+            "sha256:3090d9519d9526c48742e1f1c6c3be15e81971306d0f41b1d6034e0f6b4dfffb",
+            "sha256:591576c458ebb0e1506f5e562c3b61655f199fe05069e559e29bd05783c39ccc",
+            "sha256:5c768c6a2c7b2b3145015e722670727de85cef74fa12f990f7b2f0565fe67119",
+            "sha256:b9eac95a1a87bcc06b6d3b67547af3148106813cddf5fffd9edab21fc450207f"
+          ]
+        }
+      },
+      "common_binding_id": null,
+      "comparison_status": "NOT_READY",
+      "compiled_accounts": null,
+      "source_admissions": null,
+      "numeric_replay": "NOT_PERFORMED",
+      "order_generation": "NOT_PERFORMED",
+      "prepared_fills": "UNEXECUTED_EXTERNAL_MODEL_INPUT_NOT_VALIDATED_ACCOUNT_BALANCES",
+      "strategy_validation": "NOT_VALIDATED",
+      "historical_signal_eligible": false,
+      "data_qualified": false,
+      "execution_model_qualified": false,
+      "policy_authorized": false,
+      "live_execution_authorized": false,
+      "primary_pressure_id": null,
+      "total_net_return": null,
+      "scenario_net_return": null,
+      "actual_realized_investor_return": null,
+      "ranking": null
+    },
+    "error": null,
+    "traceback": null,
+    "calls": {
+      "prepare": 1,
+      "source_qualify": 0,
+      "ledger_replay": 0,
+      "capital_simulate": 0,
+      "quantity_replay": 0,
+      "legacy_compare": 0,
+      "old_source_producer": 0
+    },
+    "input_unchanged": true,
+    "sources_unchanged": true
+  }
+}

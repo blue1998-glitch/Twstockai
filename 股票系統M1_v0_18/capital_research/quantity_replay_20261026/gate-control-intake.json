@@ -1,0 +1,21 @@
+{
+  "saved_at": "2026-10-26T13:12:08.558492+00:00",
+  "case": "outer-only-gate-control",
+  "input_expected_fingerprints": [
+    {
+      "path": "股票系統M1_v0_18/capital_research/quantity_replay_20261026/cases/outer-only-gate-control/input.json",
+      "bytes": 44930,
+      "sha256": "c4846d79e39e88404b9b634458f57d9b660edd6f51429b0ae053a0ea3b8705d9"
+    },
+    {
+      "path": "股票系統M1_v0_18/capital_research/quantity_replay_20261026/cases/outer-only-gate-control/expected.json",
+      "bytes": 125,
+      "sha256": "05bd7121a10998fea77a6d85eeedc83bef48106f6ebc3237bf420d76f8220e77"
+    }
+  ],
+  "prior_case_kept": "outer-gate-before-execution",
+  "diagnosis": "Original fixture also had no independent trigger, so raw core was not feasible; assertion was stronger than that fixture. Add a known owned trigger while preserving UNKNOWN phase, keep every original assertion.",
+  "original_log": "tests-final.log",
+  "original_test_source": "diagnostics/tests-before-gate-control.py",
+  "oracle_changes": 0
+}

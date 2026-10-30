@@ -1,0 +1,150 @@
+[
+  {
+    "case": "initial",
+    "decision_id": "sha256:7520a8976aa10516292a1e5d50e21c6bba16187ea263ca11fc66cd127712263c",
+    "account": {
+      "as_of": "2026-01-05T14:00:00+08:00",
+      "available_at": "2026-01-05T14:00:00+08:00",
+      "cash_claims": [
+        {
+          "amount": "80",
+          "id": "opening-cash",
+          "pay_date": "2026-01-12",
+          "source_ids": [
+            "fixture"
+          ]
+        }
+      ],
+      "holdings": {
+        "A": {
+          "sellable": "100",
+          "shares": "100"
+        },
+        "B": {
+          "sellable": "0",
+          "shares": "0"
+        },
+        "C": {
+          "sellable": "2",
+          "shares": "2"
+        }
+      },
+      "payables": [],
+      "pending_orders": [],
+      "reserved_cash": "100",
+      "settled_cash": "1000",
+      "share_claims": [
+        {
+          "code": "A",
+          "delivery_date": "2026-01-09",
+          "id": "opening-shares",
+          "shares": "10",
+          "source_ids": [
+            "fixture"
+          ],
+          "tradable_date": "2026-01-12"
+        }
+      ]
+    },
+    "current_value": "2230",
+    "continuity": null,
+    "reviewed_tokens": [
+      "fixture:event_id:A-event",
+      "fixture:event_id:B-event",
+      "fixture:event_id:C-event",
+      "fixture:formation_id:A-formation",
+      "fixture:formation_id:B-formation",
+      "fixture:formation_id:C-formation",
+      "fixture:volume_bar_id:A-bar",
+      "fixture:volume_bar_id:B-bar",
+      "fixture:volume_bar_id:C-bar"
+    ],
+    "metadata": {
+      "full_source_fingerprint": "SYNTHETIC_SOURCE_BASELINE",
+      "historical_availability": "NOT_MARKET_DATA"
+    }
+  },
+  {
+    "case": "resume",
+    "decision_id": "sha256:00d8d3890b7f3c433d1c1a39b1f0dde5206d5d6e773e5f476273536c4918b962",
+    "account": {
+      "as_of": "2026-01-08T16:00:00+08:00",
+      "available_at": "2026-01-08T17:00:00+08:00",
+      "cash_claims": [
+        {
+          "amount": "80",
+          "id": "opening-cash",
+          "kind": "OPENING_RECEIVABLE",
+          "pay_date": "2026-01-12",
+          "source_ids": [
+            "fixture"
+          ]
+        }
+      ],
+      "holdings": {
+        "A": {
+          "sellable": "80",
+          "shares": "80"
+        },
+        "B": {
+          "sellable": "7",
+          "shares": "7"
+        },
+        "C": {
+          "sellable": "2",
+          "shares": "2"
+        }
+      },
+      "payables": [],
+      "pending_orders": [],
+      "reserved_cash": "100",
+      "settled_cash": "1056.660",
+      "share_claims": [
+        {
+          "code": "A",
+          "delivery_date": "2026-01-09",
+          "id": "opening-shares",
+          "shares": "10",
+          "source_ids": [
+            "fixture"
+          ],
+          "tradable_date": "2026-01-12"
+        }
+      ]
+    },
+    "current_value": "2226.660",
+    "continuity": {
+      "cancellation_effective_at": null,
+      "cancelled_order_ids": [],
+      "checkpoint_id": "sha256:3be7fbf1c81946ce22ca2f53a4da8fb6305236c0b4535c249be4d1c6e3fb3a76",
+      "external_flow": "0",
+      "latest_predecessor_id": "sha256:7520a8976aa10516292a1e5d50e21c6bba16187ea263ca11fc66cd127712263c",
+      "origin_initial_capital": "2230",
+      "qualification": "VERIFIED_SYNTHETIC_LEDGER_PREFIX_NOT_INVESTOR_AUTHORITY",
+      "state_id": "sha256:18f258eb3afeba06fc92217c3ccdbfcc82735313761ff10d22a4497df09aba28"
+    },
+    "reviewed_tokens": [
+      "fixture:event_id:A-event",
+      "fixture:event_id:B-event",
+      "fixture:event_id:B-next-round",
+      "fixture:event_id:C-event",
+      "fixture:formation_id:A-formation",
+      "fixture:formation_id:B-formation",
+      "fixture:formation_id:B-next-formation",
+      "fixture:formation_id:C-formation",
+      "fixture:volume_bar_id:A-bar",
+      "fixture:volume_bar_id:B-bar",
+      "fixture:volume_bar_id:B-next-bar",
+      "fixture:volume_bar_id:C-bar"
+    ],
+    "metadata": {
+      "full_source_fingerprint": "SYNTHETIC_SOURCE_BASELINE",
+      "historical_availability": "NOT_MARKET_DATA",
+      "continuity": {
+        "execution_result_id": "sha256:8d9df123a161b3fe69fcfab0993df813b64ee0e278823e0f8259286f9db2f8d9",
+        "ledger_close_proof_id": "sha256:91a505b10b66e5d5f281a2c9994f1a3b1a121424882fbc88735c245c2e59378c",
+        "origin_ledger_input_id": "sha256:157af3c20da88039510200ba651afa2e23010ddc632ed2281cc0fa5bcdad45de"
+      }
+    }
+  }
+]

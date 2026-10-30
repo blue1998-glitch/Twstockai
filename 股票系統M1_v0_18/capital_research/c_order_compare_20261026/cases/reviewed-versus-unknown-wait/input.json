@@ -1,0 +1,23 @@
+{
+  "schema": "capital-c-order-comparison-example/0.1",
+  "base_commit": "63a81306b0d181dd47339b3bca01fd6347b94881",
+  "synthetic": true,
+  "items": [
+    {
+      "label": "原C單重評合格",
+      "source": {
+        "path": "股票系統M1_v0_18/capital_research/c_order_review_20261026/after-checkpoint-fix/valid-C-same-order/actual.json",
+        "bytes": 644653,
+        "sha256": "2570de4d79b7cc70dcd4fcc1cb04d17244fe596130498dbf0c8a95e6a8d0b695"
+      }
+    },
+    {
+      "label": "資格未知仍待重評",
+      "source": {
+        "path": "股票系統M1_v0_18/capital_research/c_order_review_20261026/after-checkpoint-fix/unknown-current-eligibility/actual.json",
+        "bytes": 572860,
+        "sha256": "d42e1d76b5698d7b2cddeb0f0ebdce8a844685a91068cd24fa2b2ead8270aeb3"
+      }
+    }
+  ]
+}

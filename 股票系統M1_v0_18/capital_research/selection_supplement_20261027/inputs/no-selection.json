@@ -1,0 +1,69 @@
+{
+  "schema": "capital-selection-supplement-input/0.1",
+  "synthetic": true,
+  "parent_binding": {
+    "parent_operation_id": "demo-no-selection",
+    "parent_header_id": "sha256:9b7c3c8bbd7487e9eac97d18fe1a4208eeb4afbc745b6a527a9aac4a3cf584e8",
+    "parent_request_id": "sha256:45da9caa2dae3ec1925da12fd4863b7e6c7a676cbc726dae4967d5e023b991be",
+    "parent_result_id": "sha256:b426b70347924c87074c2a9be86e9580cd9b8e6c2ee51269e86ab49243a85b56",
+    "generation_id": "sha256:c5e6483eb0180f5b948ff0f730be8c844d196b59bbf2d35cd2245223dee04897",
+    "source_binding": {
+      "source_document_id": "sha256:c5e6483eb0180f5b948ff0f730be8c844d196b59bbf2d35cd2245223dee04897",
+      "generation_document_id": "sha256:b439353befd087d47939869547a99972ee8e7cd3cf55dae3e5277b675a37fe50",
+      "quantity_request_id": "sha256:ab7b7539e4abcfaa05531ed5f5aeaa4cb397aa4b0eefd9bd70b99d09d0fba90a",
+      "source_input_id": "sha256:afa7b9084f0ec41168442e8cc913881da32a2a71ad8d4877b78c729fee9ceed2",
+      "account_id": "sha256:8ba782b921772678f8be492480ccc08d8c8b5e85bdde3c4fea55cc4a2f5aca6d",
+      "checkpoint_id": "sha256:7b29db36fd70625194c4780f722afd2c1b8f9e8da284bb06ae1e0a7e8ee90573",
+      "state_id": "sha256:35c53e286afb907f69ebb4627dcbd947896196f18d419b6b8041275544e27cf8",
+      "execution_result_id": "sha256:eceefb90ad3547042a2dc0a0d762dec463bbb27e868c48c657b5a52a71965aaf",
+      "origin_ledger_input_id": "sha256:39b145ccd42d3aa43b201f285abbe8efadc6b0df59071ac3d1c91ef0ad9ef018",
+      "latest_decision_id": "sha256:f03924f56d36f1ef856520caf25f3d5103335e63e94dddfdcb5ce37e4fa527a5",
+      "latest_common_account_id": "sha256:ca41094f720d2001d6162737a2841ef815e02c728023977faa61e426bfc71696",
+      "data_cutoff": "2026-01-12T16:00:00+08:00",
+      "decision_at": "2026-01-12T17:00:00+08:00",
+      "historical_reviewed_tokens": [
+        "fixture:event_id:A-event",
+        "fixture:event_id:B-event",
+        "fixture:event_id:B-prior-approved",
+        "fixture:event_id:C-event",
+        "fixture:formation_id:A-formation",
+        "fixture:formation_id:B-formation",
+        "fixture:formation_id:B-prior-formation",
+        "fixture:formation_id:C-formation",
+        "fixture:volume_bar_id:A-bar",
+        "fixture:volume_bar_id:B-bar",
+        "fixture:volume_bar_id:B-prior-bar",
+        "fixture:volume_bar_id:C-bar"
+      ],
+      "decision_reviewed_tokens": [
+        "fixture:event_id:A-event",
+        "fixture:event_id:B-event",
+        "fixture:event_id:B-new-independent",
+        "fixture:event_id:B-prior-approved",
+        "fixture:event_id:C-event",
+        "fixture:formation_id:A-formation",
+        "fixture:formation_id:B-formation",
+        "fixture:formation_id:B-new-formation",
+        "fixture:formation_id:B-prior-formation",
+        "fixture:formation_id:C-formation",
+        "fixture:volume_bar_id:A-bar",
+        "fixture:volume_bar_id:B-bar",
+        "fixture:volume_bar_id:B-new-bar",
+        "fixture:volume_bar_id:B-prior-bar",
+        "fixture:volume_bar_id:C-bar"
+      ],
+      "received_attempt_ids": [
+        "sha256:0f9a09cf7e0248afab11a6e77c1c61fb9a59211549f86155c4b552b24af0fb62",
+        "sha256:7338fd88c811a7d80b1fcb8cb7169217c18fbabea91b3816c184b5e2d1e18162"
+      ],
+      "versions": {
+        "adapter": "capital-quantity-after-retry/0.1",
+        "generation": "capital-quantity-candidates/0.2",
+        "checkpoint": "capital-account-checkpoint/0.8",
+        "decision": "capital-decision/0.8"
+      }
+    }
+  },
+  "selection": null,
+  "recorded_at": "2026-10-27T12:00:00+08:00"
+}

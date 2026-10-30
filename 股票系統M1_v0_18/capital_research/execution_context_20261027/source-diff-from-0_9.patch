@@ -1,0 +1,15 @@
+diff --git "a/\350\202\241\347\245\250\347\263\273\347\265\261M1_v0_18/capital_research/execution.py" "b/\350\202\241\347\245\250\347\263\273\347\265\261M1_v0_18/capital_research/execution.py"
+index beed19c..5b1e8bb 100644
+--- "a/\350\202\241\347\245\250\347\263\273\347\265\261M1_v0_18/capital_research/execution.py"
++++ "b/\350\202\241\347\245\250\347\263\273\347\265\261M1_v0_18/capital_research/execution.py"
+@@ -7 +7 @@ from copy import deepcopy
+-from decimal import Decimal, localcontext
++from decimal import Decimal, Context, InvalidOperation, DivisionByZero, Overflow, ROUND_HALF_EVEN, localcontext
+@@ -18,0 +19 @@ VERSION = 'capital-execution/0.8'
++IMPLEMENTATION_REVISION = '0.9.1-deterministic-decimal-context'
+@@ -28,2 +29,3 @@ def simulate(job):
+-    with localcontext() as ctx:
+-        ctx.prec = 50
++    # Include reservations, fills, risk and ledger checks after the decision call.
++    with localcontext(Context(prec=50,rounding=ROUND_HALF_EVEN,Emin=-999999,Emax=999999,
++            capitals=1,clamp=0,flags=[],traps=[InvalidOperation,DivisionByZero,Overflow])):

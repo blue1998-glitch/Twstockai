@@ -1,0 +1,64 @@
+diff --git "a/\350\202\241\347\245\250\347\263\273\347\265\261M1_v0_18/capital_research/research_choice.py" "b/\350\202\241\347\245\250\347\263\273\347\265\261M1_v0_18/capital_research/research_choice.py"
+index 6903bfd..33e4b4e 100644
+--- "a/\350\202\241\347\245\250\347\263\273\347\265\261M1_v0_18/capital_research/research_choice.py"
++++ "b/\350\202\241\347\245\250\347\263\273\347\265\261M1_v0_18/capital_research/research_choice.py"
+@@ -7,0 +8,3 @@ SCHEMA = 'capital-research-choice/0.1'
++INPUT_V2 = 'capital-research-choice-input/0.2'
++SCHEMA_V2 = 'capital-research-choice/0.2'
++V04_SOURCE = 'capital-saved-quantity-source/0.1'
+@@ -17,0 +21,3 @@ def bind_saved_source(saved):
++    if saved.get('schema') == V04_SOURCE:
++        from .research_quantity_source import bind_source
++        return bind_source(saved)
+@@ -61,0 +68,5 @@ def bind_saved_source(saved):
++def source_research(saved):
++    """The caller must validate the explicit source before reading its members."""
++    return (saved['generation'] if saved.get('schema') == V04_SOURCE else saved['adapter']['generation'])['research']
++
++
+@@ -78 +89,2 @@ def choose_saved(request):
+-    r = dict(schema=SCHEMA, synthetic=True, status='REFUSED', reasons=[], request_id=_fp(request),
++    v2=request.get('schema')==INPUT_V2
++    r = dict(schema=SCHEMA_V2 if v2 else SCHEMA, synthetic=True, status='REFUSED', reasons=[], request_id=_fp(request),
+@@ -83,0 +96 @@ def choose_saved(request):
++    if v2:r['source_roles']=None
+@@ -86 +99,2 @@ def choose_saved(request):
+-            request['schema'] == INPUT and request['synthetic'] is True, 'EXPLICIT_RESEARCH_CHOICE_REQUIRED')
++            request['schema'] in (INPUT,INPUT_V2) and request['synthetic'] is True, 'EXPLICIT_RESEARCH_CHOICE_REQUIRED')
++        _require((request['saved_result'].get('schema')==V04_SOURCE)==v2,'EXPLICIT_CHOICE_SOURCE_VERSION_CONFLICT')
+@@ -91 +105,4 @@ def choose_saved(request):
+-        research = request['saved_result']['adapter']['generation']['research']
++        research = source_research(request['saved_result'])
++        if v2:
++            q=request['saved_result']['quantity_request']
++            r['source_roles']=dict(incumbent=q['incumbent'],destination=q['destination'])
+@@ -96,0 +114,3 @@ def choose_saved(request):
++        if v2:
++            from .research_quantity_source import validate_selected
++            validate_selected(candidate,binding,roles=r['source_roles'])
+@@ -110 +130 @@ def validate_record(saved):
+-    _require(r['schema'] == SCHEMA and r['synthetic'] is True and
++    _require(r['schema'] in (SCHEMA,SCHEMA_V2) and r['synthetic'] is True and
+@@ -119,0 +140,3 @@ def validate_record(saved):
++        if r['schema']==SCHEMA_V2:
++            from .research_quantity_source import validate_selected
++            validate_selected(r['selected'],r['source_binding'],roles=r['source_roles'])
+diff --git "a/\350\202\241\347\245\250\347\263\273\347\265\261M1_v0_18/capital_research/research_choice_source.py" "b/\350\202\241\347\245\250\347\263\273\347\265\261M1_v0_18/capital_research/research_choice_source.py"
+index e212382..7c5eea5 100644
+--- "a/\350\202\241\347\245\250\347\263\273\347\265\261M1_v0_18/capital_research/research_choice_source.py"
++++ "b/\350\202\241\347\245\250\347\263\273\347\265\261M1_v0_18/capital_research/research_choice_source.py"
+@@ -4 +4 @@ from .lifecycle import FLAGS
+-from .research_choice import validate_record, bind_saved_source
++from .research_choice import validate_record, bind_saved_source, source_research, V04_SOURCE, SCHEMA_V2
+@@ -26 +26 @@ def check_saved(choice_value, explicit_source):
+-        _require(isinstance(explicit_source, dict) and isinstance(explicit_source.get('adapter'), dict),
++        _require(isinstance(explicit_source, dict) and (isinstance(explicit_source.get('adapter'), dict) or explicit_source.get('schema')==V04_SOURCE),
+@@ -28,0 +29 @@ def check_saved(choice_value, explicit_source):
++        _require((explicit_source.get('schema')==V04_SOURCE)==(c['schema']==SCHEMA_V2),'EXPLICIT_CHOICE_SOURCE_VERSION_CONFLICT')
+@@ -38 +39 @@ def check_saved(choice_value, explicit_source):
+-            candidates = explicit_source['adapter']['generation']['research']['candidates']
++            candidates = source_research(explicit_source)['candidates']
+@@ -42,0 +44,3 @@ def check_saved(choice_value, explicit_source):
++        if c['schema']==SCHEMA_V2 and c['source_roles'] is not None:
++            q=explicit_source['quantity_request']
++            _require(c['source_roles']==dict(incumbent=q['incumbent'],destination=q['destination']),'SAVED_SOURCE_ROLES_CONFLICT')

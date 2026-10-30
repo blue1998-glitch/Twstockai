@@ -1,0 +1,102 @@
+{
+  "repeat": {
+    "schema": "capital-research-operation-receipt/0.1",
+    "mode": "RUN",
+    "operation_id": "demo-general",
+    "workflow_status": "OPERATION_EXISTS_READ_REQUIRED",
+    "reasons": [
+      "EXISTING_FILES_PRESERVED_USE_EXPLICIT_READ"
+    ],
+    "failed_stage": null,
+    "keys": {
+      "request": "demo-general--request",
+      "generation": "demo-general--generation",
+      "choice": "demo-general--choice",
+      "result": "demo-general--result"
+    },
+    "storage": {
+      "request": "NOT_PERFORMED",
+      "generation": "NOT_PERFORMED",
+      "choice": "NOT_PERFORMED",
+      "result": "NOT_PERFORMED"
+    },
+    "observed": {
+      "generation_status": null,
+      "choice_status": null,
+      "check_status": null
+    },
+    "operation": null,
+    "saved_files_preserved": true,
+    "order_generation": "NOT_PERFORMED",
+    "execution": "NOT_PERFORMED",
+    "execution_authorized": false,
+    "primary_pressure_id": null,
+    "data_qualified": false,
+    "execution_model_qualified": false,
+    "historical_signal_eligible": false,
+    "policy_authorized": false,
+    "live_execution_authorized": false,
+    "existing_stages": [
+      "request",
+      "generation",
+      "choice",
+      "result"
+    ]
+  },
+  "conflict": {
+    "schema": "capital-research-operation-receipt/0.1",
+    "mode": "RUN",
+    "operation_id": "demo-general",
+    "workflow_status": "OPERATION_ID_CONFLICT",
+    "reasons": [
+      "DIFFERENT_REQUEST_SAME_OPERATION_ID"
+    ],
+    "failed_stage": null,
+    "keys": {
+      "request": "demo-general--request",
+      "generation": "demo-general--generation",
+      "choice": "demo-general--choice",
+      "result": "demo-general--result"
+    },
+    "storage": {
+      "request": "NOT_PERFORMED",
+      "generation": "NOT_PERFORMED",
+      "choice": "NOT_PERFORMED",
+      "result": "NOT_PERFORMED"
+    },
+    "observed": {
+      "generation_status": null,
+      "choice_status": null,
+      "check_status": null
+    },
+    "operation": null,
+    "saved_files_preserved": true,
+    "order_generation": "NOT_PERFORMED",
+    "execution": "NOT_PERFORMED",
+    "execution_authorized": false,
+    "primary_pressure_id": null,
+    "data_qualified": false,
+    "execution_model_qualified": false,
+    "historical_signal_eligible": false,
+    "policy_authorized": false,
+    "live_execution_authorized": false,
+    "existing_stages": [
+      "request",
+      "generation",
+      "choice",
+      "result"
+    ]
+  },
+  "before": {
+    "demo-general--choice.json": "0da9198f09e0dc4458c9804602c74fbacb22f1161fe2ff368db0c2c36ac24454",
+    "demo-general--request.json": "4f3621cc10a506fdd9f205286b50f27d148a7967ed010aaf74f0dcaa67a94256",
+    "demo-general--result.json": "d9d87df4a4a311f023fd3b2ddc4fcd689a089369e79f363d556fb64bcda1eb18",
+    "demo-general--generation.json": "0caa803be392d04b23a407c4d4d46e1337b9619152f02966b421b3a03ff87bf2"
+  },
+  "after": {
+    "demo-general--choice.json": "0da9198f09e0dc4458c9804602c74fbacb22f1161fe2ff368db0c2c36ac24454",
+    "demo-general--request.json": "4f3621cc10a506fdd9f205286b50f27d148a7967ed010aaf74f0dcaa67a94256",
+    "demo-general--result.json": "d9d87df4a4a311f023fd3b2ddc4fcd689a089369e79f363d556fb64bcda1eb18",
+    "demo-general--generation.json": "0caa803be392d04b23a407c4d4d46e1337b9619152f02966b421b3a03ff87bf2"
+  }
+}

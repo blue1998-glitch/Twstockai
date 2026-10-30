@@ -1,0 +1,74 @@
+{
+  "record_type": "archived_work_read_result",
+  "repository": "blue1998-glitch/Twstockai",
+  "branch": "dev/m1-v018-chart-annotations",
+  "attribution": {
+    "reported_by": "Work",
+    "communicated_via": "user message in this existing Codex conversation",
+    "independently_reperformed_by_codex_this_round": false,
+    "work_execution_log_received": false,
+    "work_observed_at": null,
+    "codex_archived_at": "2026-10-24T09:53:13.507632+00:00"
+  },
+  "work_verified_commit": "1972ad999a3d04b2490193402047b3145378c85e",
+  "fixed_parts_commit": "6d35b7f0e8aefa8d28f1640d0619b28754c4024f",
+  "parts_directory": "deliveries/m1-band-volume-text-parts-20261024/",
+  "original": {
+    "commit": "ec51f617bf51b1ae77099efc4ecd8099d940996d",
+    "path": "deliveries/m1-explicit-band-volume-20261024/artifacts/band-volume.json",
+    "bytes": 4102710,
+    "sha256": "03961ba8e322a4a1d2cfde52eeb4840f39b4540b2ad61fec8e55c27328621384"
+  },
+  "work_reported_result": {
+    "parts_acquired": 16,
+    "all_part_byte_lengths_and_sha256_match": true,
+    "concatenation": "manifest order; original bytes; zero separators",
+    "concatenated_bytes": 4102710,
+    "concatenated_sha256": "03961ba8e322a4a1d2cfde52eeb4840f39b4540b2ad61fec8e55c27328621384",
+    "complete_json_parsed": true,
+    "complete_object_tree_traversed": true,
+    "root_key_count": 10,
+    "dated_snapshot_count": 1213,
+    "first_date": "2021-10-18",
+    "last_date": "2026-10-16"
+  },
+  "work_report_excerpt_verbatim": "Work 已實際取得固定提交全部16片，逐片 bytes／SHA256 全數相符；\n按 order 原bytes零分隔串接為4102710 bytes，\nSHA256：\n03961ba8e322a4a1d2cfde52eeb4840f39b4540b2ad61fec8e55c27328621384\n\n完整JSON成功解析並遍讀物件樹：10根鍵、1213日期快照，\n2021-10-18～2026-10-16。本次完整檔未取得／未讀項結清；\n這是Work讀取結果，不是新產品、來源或核心驗證。",
+  "acquisition_gap": {
+    "target": "complete band-volume.json acquisition and reading by Work",
+    "status": "CLOSED_BY_WORK_REPORTED_ACTUAL_READ",
+    "reacquisition_required": false,
+    "other_legacy_source_gaps_closed": false
+  },
+  "existing_work_evidence_reused": {
+    "png_count": 10,
+    "usefulness_differences_count": 5,
+    "original_five_json_evidence": true,
+    "new_image_or_json_validation_this_round": false
+  },
+  "codex_scope": {
+    "documentation_only": true,
+    "old_assets_downloaded": false,
+    "original_json_or_parts_reassembled_or_parsed": false,
+    "bootstrap_run": false,
+    "product_engineering": false,
+    "product_tests_run": false,
+    "old_packaging_validation_rerun": false,
+    "producer_or_indicator_run": false,
+    "product_or_source_version_added": false,
+    "catalog_changed": false,
+    "parent_null_changed": false,
+    "daily_ledger_or_six_plan_run": false,
+    "fixed_document_readback": "recorded separately in GITHUB_READBACK.md and GITHUB_READBACK.json"
+  },
+  "unchanged_eligibility": {
+    "execution_qualified": false,
+    "imputed_close": null,
+    "valuation": null,
+    "historical_signal_eligible": false,
+    "primary_pressure_id": null,
+    "policy_authorized": false,
+    "android": "NOT_TESTED_NEW_BUILD"
+  },
+  "next_executor": "Work",
+  "next_scope": "read-only continuation; no repeated acquisition or validation; no new stage without a concrete request"
+}

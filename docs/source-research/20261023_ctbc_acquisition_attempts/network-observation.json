@@ -1,0 +1,29 @@
+{
+  "spec_revision": "4",
+  "observed_spec_revision": "4",
+  "observations_current": true,
+  "connectivity": "connected",
+  "network_policy": {
+    "mode": "restricted",
+    "state": "unknown",
+    "allowed_hosts": [
+      "investoredu.twse.com.tw",
+      "media.taiwancement.com",
+      "mops.twse.com.tw",
+      "ttc.mof.gov.tw",
+      "www.esunbank.com",
+      "www.esunfhc.com",
+      "www.taifex.com.tw",
+      "www.tpex.org.tw",
+      "www.twse.com.tw",
+      "wwwc.twse.com.tw"
+    ]
+  },
+  "roles": "OBSERVED_CONFIGURATION_NOT_PROOF_OF_ALL_FAILURE_CAUSES",
+  "network_configuration_modified": false,
+  "requested_host_membership": {
+    "chatgpt.com": false,
+    "ecorp.ctbcbank.com": false
+  },
+  "actual_result": "TWO_PROXY_CONNECT_403_NOT_SOURCE_HTTP"
+}

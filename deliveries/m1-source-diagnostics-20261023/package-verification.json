@@ -1,0 +1,67 @@
+{
+  "status": "PASS",
+  "filename": "m1-source-diagnostics-v05-20261023.zip",
+  "sha256": "7144793cb2e359b7536fa72dd2c764144e4aee4a6aa3e986eabcaa785435a36d",
+  "members": 575,
+  "parent_members_byte_exact": 528,
+  "manifests": {
+    "ACTION_PACKAGE_MANIFEST.json": 292,
+    "ACTION_RESOLUTION_MANIFEST.json": 510,
+    "ACTION_SCOPE_MANIFEST.json": 469,
+    "OFFICIAL_ACTIONS_MANIFEST.json": 409,
+    "RESOLUTION_VALIDATION_MANIFEST.json": 527,
+    "SOURCE_DIAGNOSTICS_MANIFEST.json": 574,
+    "SOURCE_QUALIFICATION_MANIFEST.json": 374
+  },
+  "commands": [
+    {
+      "command": [
+        "python3",
+        "-m",
+        "unittest",
+        "rotation_research.test_source_diagnostics",
+        "rotation_research.test_action_resolution",
+        "rotation_research.test_resolution_validation",
+        "-v"
+      ],
+      "returncode": 0,
+      "log": "extracted-tests.log"
+    },
+    {
+      "command": [
+        "python3",
+        "-m",
+        "rotation_research.source_diagnostics_sources"
+      ],
+      "returncode": 0,
+      "log": "extracted-producer.log"
+    }
+  ],
+  "actual_tests": 61,
+  "new_distinct_source_tests": 30,
+  "rerun_formal_v04_tests": 31,
+  "all_bundle_members_unchanged_after_test_and_producer": true,
+  "offline_producer_verification": {
+    "schema": "rotation-source-diagnostics/0.5",
+    "usable_new_originals": 3,
+    "failed_captures": 3,
+    "new_source_observations": 5,
+    "not_independent_event_count": true,
+    "original_quote_archives_rechecked": 122,
+    "calendar_reports_rechecked": 16,
+    "qualification_calls": 70,
+    "refused_windows": 70,
+    "insufficient_windows": 2,
+    "exchange_unsupported_windows": 8,
+    "qualified_total_net_return_windows": 0,
+    "numeric_replay_calls": 0,
+    "six_strategy_replays": 0,
+    "unknown_missing_causes": 2,
+    "new_network_requests_by_offline_producer": 0,
+    "android": "NOT_TESTED_NEW_BUILD",
+    "tax_api_contract": "SYNTHETIC_TEST_ONLY_NO_LIVE_ORIGINAL",
+    "historical_signal_eligible": false,
+    "primary_pressure_id": null,
+    "policy_authorized": false
+  }
+}

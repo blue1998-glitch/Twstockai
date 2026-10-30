@@ -1,0 +1,78 @@
+[
+  {
+    "query_id": "G2-low-later-up",
+    "code": "1101",
+    "reference_id": "sha256:0c2e4afa43a1aca8bf60830ac31ff07a7227d982004be9a232430df21e847483",
+    "anchor_date": "2023-03-28",
+    "cutoffs": [
+      "2023-03-27",
+      "2023-03-28",
+      "2023-03-29",
+      "2023-04-07",
+      "2023-04-10",
+      "2023-04-11"
+    ],
+    "selection": "EX_POST_CONTRASTS_NOT_PRIMARY_REFERENCE_SELECTION_OR_BLIND_SCAN"
+  },
+  {
+    "query_id": "G2-low-later-down",
+    "code": "1101",
+    "reference_id": "sha256:3d270abf132d1abbfe2188f8fa31f0b2a7370f68ca3432792ee7ba0b7aedc172",
+    "anchor_date": "2023-07-07",
+    "cutoffs": [
+      "2023-07-06",
+      "2023-07-07",
+      "2023-07-10",
+      "2023-07-11"
+    ],
+    "selection": "EX_POST_CONTRASTS_NOT_PRIMARY_REFERENCE_SELECTION_OR_BLIND_SCAN"
+  },
+  {
+    "query_id": "ABC-high-equality-then-down",
+    "code": "1101",
+    "reference_id": "sha256:18bc66878dd0ec4062a073a0cbb8e7be977a615ae0f5452a6fd693bc4a91f467",
+    "anchor_date": "2025-05-12",
+    "cutoffs": [
+      "2025-05-09",
+      "2025-05-12",
+      "2025-05-13",
+      "2025-05-14"
+    ],
+    "selection": "EX_POST_CONTRASTS_NOT_PRIMARY_REFERENCE_SELECTION_OR_BLIND_SCAN"
+  },
+  {
+    "query_id": "ABC-low-close-through",
+    "code": "1101",
+    "reference_id": "sha256:45c65aa99ad5bd42bf7575d2388269c540c85883dd1ae9c332b2a408e7c72818",
+    "anchor_date": "2025-06-02",
+    "cutoffs": [
+      "2025-05-29",
+      "2025-06-02",
+      "2025-06-03"
+    ],
+    "selection": "EX_POST_CONTRASTS_NOT_PRIMARY_REFERENCE_SELECTION_OR_BLIND_SCAN"
+  },
+  {
+    "query_id": "A-gap-control",
+    "code": "2884",
+    "reference_id": "sha256:1a1c1cd695fbda45df17d1cf4ec7b451eb0eeb681ca82a676d605351f1049572",
+    "anchor_date": "2026-10-15",
+    "cutoffs": [
+      "2026-10-14",
+      "2026-10-15",
+      "2026-10-16"
+    ],
+    "selection": "EX_POST_CONTRASTS_NOT_PRIMARY_REFERENCE_SELECTION_OR_BLIND_SCAN"
+  },
+  {
+    "query_id": "G2-forming-source-control",
+    "code": "1101",
+    "reference_id": "sha256:98d84393f1ab674fd512365416f50228b5b7af2cf917e59d369de7116ece333e",
+    "anchor_date": "2023-05-02",
+    "cutoffs": [
+      "2023-05-02",
+      "2023-05-09"
+    ],
+    "selection": "EX_POST_CONTRASTS_NOT_PRIMARY_REFERENCE_SELECTION_OR_BLIND_SCAN"
+  }
+]

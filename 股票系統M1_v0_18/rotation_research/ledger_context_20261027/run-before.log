@@ -1,0 +1,22 @@
+Traceback (most recent call last):
+  File "<frozen runpy>", line 198, in _run_module_as_main
+  File "<frozen runpy>", line 88, in _run_code
+  File "/workspace/Twstockai/股票系統M1_v0_18/rotation_research/ledger_context_20261027/reproduce.py", line 96, in <module>
+    if __name__=='__main__':main()
+                            ^^^^^^
+  File "/workspace/Twstockai/股票系統M1_v0_18/rotation_research/ledger_context_20261027/reproduce.py", line 77, in main
+    p=argparse.ArgumentParser();p.add_argument('stage',choices=['before','after']);a=p.parse_args();check_frozen()
+                                                                                                    ^^^^^^^^^^^^^^
+  File "/workspace/Twstockai/股票系統M1_v0_18/rotation_research/ledger_context_20261027/reproduce.py", line 18, in check_frozen
+    for item in load(ROOT/'frozen.json')['files']+load(ROOT/'intake.json')['unchanged_originals']:
+                ^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/workspace/Twstockai/股票系統M1_v0_18/capital_research/decimal_context_20261027/prepare.py", line 10, in load
+    def load(p):return json.loads(p.read_text())
+                                  ^^^^^^^^^^^^^
+  File "/opt/codex/runtimes/codex-primary-runtime/dependencies/python/lib/python3.12/pathlib.py", line 1027, in read_text
+    with self.open(mode='r', encoding=encoding, errors=errors) as f:
+         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/opt/codex/runtimes/codex-primary-runtime/dependencies/python/lib/python3.12/pathlib.py", line 1013, in open
+    return io.open(self, mode, buffering, encoding, errors, newline)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+FileNotFoundError: [Errno 2] No such file or directory: '/workspace/Twstockai/股票系統M1_v0_18/rotation_research/ledger_context_20261027/frozen.json'

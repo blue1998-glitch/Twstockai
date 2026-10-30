@@ -1,0 +1,55 @@
+{
+  "draft_status": "AWAITING_EXPLICIT_INPUT",
+  "draft_compiled_accounts": null,
+  "explicit_status": "REFUSED_SOURCE_QUALIFICATION",
+  "explicit_numeric_replay_calls": 0,
+  "paths": [
+    "hold",
+    "reduce",
+    "cash"
+  ],
+  "old_qualification_reasons_include": [
+    "OPENING_ENTITLEMENTS_UNKNOWN",
+    "NET_DISTRIBUTIONS_TAX_FEES_UNKNOWN",
+    "ACTION_COVERAGE_INCOMPLETE:1101",
+    "ACTION_COVERAGE_INCOMPLETE:2884"
+  ],
+  "milestones": [
+    {
+      "code": "1101",
+      "date": "2026-03-12",
+      "field": "high",
+      "value": "25.20"
+    },
+    {
+      "code": "1101",
+      "date": "2026-04-08",
+      "field": "close",
+      "value": "25.40"
+    },
+    {
+      "code": "1101",
+      "date": "2026-04-09",
+      "field": "close",
+      "value": "25.10"
+    },
+    {
+      "code": "2884",
+      "date": "2026-02-26",
+      "field": "high",
+      "value": "35.50"
+    },
+    {
+      "code": "2884",
+      "date": "2026-06-22",
+      "field": "close",
+      "value": "35.80"
+    }
+  ],
+  "april_cannot_reference_june": true,
+  "all_formal_flags_false": true,
+  "primary_pressure_id": null,
+  "all_returns": null,
+  "future_changes_do_not_change_april_prefix": true,
+  "oracle_written_before_implementation": true
+}

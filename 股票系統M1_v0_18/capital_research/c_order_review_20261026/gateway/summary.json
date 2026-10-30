@@ -1,0 +1,37 @@
+[
+  {
+    "case": "change-family",
+    "status": "PASS",
+    "message": "SAME_ORDER_PLAN_OR_TRIGGER_CHANGED"
+  },
+  {
+    "case": "change-trigger",
+    "status": "PASS",
+    "message": "SAME_ORDER_PLAN_OR_TRIGGER_CHANGED"
+  },
+  {
+    "case": "oversize",
+    "status": "PASS",
+    "message": "SAME_ORDER_TARGET_OR_QUANTITY_CHANGED"
+  },
+  {
+    "case": "wrong-account",
+    "status": "PASS",
+    "message": "Next account/cutoff resets or drops authoritative cash, rights, holdings or orders"
+  },
+  {
+    "case": "wrong-checkpoint",
+    "status": "PASS",
+    "message": "Checkpoint differs from original ledger/fills/order states"
+  },
+  {
+    "case": "wrong-predecessor",
+    "status": "PASS",
+    "message": "Invalid saved predecessor decision"
+  },
+  {
+    "case": "wrong-scope-order",
+    "status": "PASS",
+    "message": "SAME_ORDER_CONDITIONAL_BUY_REQUIRED"
+  }
+]

@@ -1,0 +1,254 @@
+[
+  {
+    "kind": "ARITHMETIC_ONLY",
+    "name": "censored"
+  },
+  {
+    "kind": "ARITHMETIC_ONLY",
+    "name": "equal-high"
+  },
+  {
+    "kind": "ARITHMETIC_ONLY",
+    "name": "flat"
+  },
+  {
+    "kind": "ARITHMETIC_ONLY",
+    "name": "initial-fall"
+  },
+  {
+    "kind": "ARITHMETIC_ONLY",
+    "name": "recovered"
+  },
+  {
+    "kind": "ARITHMETIC_ONLY",
+    "name": "rising"
+  },
+  {
+    "kind": "ARITHMETIC_ONLY",
+    "name": "two-episodes"
+  },
+  {
+    "kind": "SAVED_STRUCTURAL_EVALUATION",
+    "name": "changed-capital",
+    "status": "REFUSED",
+    "reasons": [
+      {
+        "reason": "SAVED_RESULT_UNREADABLE",
+        "path": "/saved_result",
+        "classification": "SAVED_RESULT_OR_REQUIRED_VALUE_NOT_SUPPORTED",
+        "guard_reasons": [
+          "ORIGIN_CAPITAL_CHANGED"
+        ]
+      }
+    ]
+  },
+  {
+    "kind": "SAVED_STRUCTURAL_EVALUATION",
+    "name": "changed-prefix",
+    "status": "REFUSED",
+    "reasons": [
+      {
+        "reason": "LEDGER_PREFIX_CHANGED",
+        "path": "",
+        "classification": "SAVED_RESULT_OR_REQUIRED_VALUE_NOT_SUPPORTED",
+        "guard_reasons": []
+      }
+    ]
+  },
+  {
+    "kind": "SAVED_STRUCTURAL_EVALUATION",
+    "name": "complete-partial-chain",
+    "status": "EVALUATED",
+    "reasons": []
+  },
+  {
+    "kind": "SAVED_STRUCTURAL_EVALUATION",
+    "name": "complete-settled-chain",
+    "status": "EVALUATED",
+    "reasons": []
+  },
+  {
+    "kind": "SAVED_STRUCTURAL_EVALUATION",
+    "name": "external-flow",
+    "status": "REFUSED",
+    "reasons": [
+      {
+        "reason": "EXTERNAL_FLOW_NOT_IMPLEMENTED",
+        "path": "",
+        "classification": "SAVED_RESULT_OR_REQUIRED_VALUE_NOT_SUPPORTED",
+        "guard_reasons": []
+      }
+    ]
+  },
+  {
+    "kind": "SAVED_STRUCTURAL_EVALUATION",
+    "name": "future-close",
+    "status": "REFUSED",
+    "reasons": [
+      {
+        "reason": "CLOSE_NOT_YET_AVAILABLE",
+        "path": "",
+        "classification": "SAVED_RESULT_OR_REQUIRED_VALUE_NOT_SUPPORTED",
+        "guard_reasons": []
+      }
+    ]
+  },
+  {
+    "kind": "SAVED_STRUCTURAL_EVALUATION",
+    "name": "intent-only",
+    "status": "REFUSED",
+    "reasons": [
+      {
+        "reason": "UNSUPPORTED_SAVED_RESULT",
+        "path": "",
+        "classification": "SAVED_RESULT_OR_REQUIRED_VALUE_NOT_SUPPORTED",
+        "guard_reasons": []
+      }
+    ]
+  },
+  {
+    "kind": "SAVED_STRUCTURAL_EVALUATION",
+    "name": "mismatched-mark",
+    "status": "REFUSED",
+    "reasons": [
+      {
+        "reason": "MARK_VALUE_CONFLICT",
+        "path": "/ledger/daily/4/A",
+        "classification": "SAVED_RESULT_OR_REQUIRED_VALUE_NOT_SUPPORTED",
+        "guard_reasons": []
+      }
+    ]
+  },
+  {
+    "kind": "SAVED_STRUCTURAL_EVALUATION",
+    "name": "missing-day",
+    "status": "REFUSED",
+    "reasons": [
+      {
+        "reason": "INCOMPLETE_CALENDAR_CURVE",
+        "path": "",
+        "classification": "SAVED_RESULT_OR_REQUIRED_VALUE_NOT_SUPPORTED",
+        "guard_reasons": []
+      }
+    ]
+  },
+  {
+    "kind": "SAVED_STRUCTURAL_EVALUATION",
+    "name": "missing-held-mark",
+    "status": "REFUSED",
+    "reasons": [
+      {
+        "reason": "UNKNOWN_HELD_ASSET_MARK",
+        "path": "/ledger/daily/4/A",
+        "classification": "SAVED_RESULT_OR_REQUIRED_VALUE_NOT_SUPPORTED",
+        "guard_reasons": []
+      }
+    ]
+  },
+  {
+    "kind": "SAVED_STRUCTURAL_EVALUATION",
+    "name": "missing-nav",
+    "status": "REFUSED",
+    "reasons": [
+      {
+        "reason": "UNKNOWN_EQUITY",
+        "path": "/ledger/daily/4",
+        "classification": "SAVED_RESULT_OR_REQUIRED_VALUE_NOT_SUPPORTED",
+        "guard_reasons": []
+      }
+    ]
+  },
+  {
+    "kind": "SAVED_STRUCTURAL_EVALUATION",
+    "name": "missing-token",
+    "status": "REFUSED",
+    "reasons": [
+      {
+        "reason": "SAVED_RESULT_UNREADABLE",
+        "path": "/saved_result",
+        "classification": "SAVED_RESULT_OR_REQUIRED_VALUE_NOT_SUPPORTED",
+        "guard_reasons": [
+          "REVIEWED_TOKEN_HISTORY_CONFLICT"
+        ]
+      }
+    ]
+  },
+  {
+    "kind": "SAVED_STRUCTURAL_EVALUATION",
+    "name": "nonpositive",
+    "status": "REFUSED",
+    "reasons": [
+      {
+        "reason": "NONPOSITIVE_EQUITY",
+        "path": "/ledger/daily/4",
+        "classification": "SAVED_RESULT_OR_REQUIRED_VALUE_NOT_SUPPORTED",
+        "guard_reasons": []
+      }
+    ]
+  },
+  {
+    "kind": "SAVED_STRUCTURAL_EVALUATION",
+    "name": "partial-ledger",
+    "status": "REFUSED",
+    "reasons": [
+      {
+        "reason": "LEDGER_RETURN_REFUSED",
+        "path": "",
+        "classification": "SAVED_RESULT_OR_REQUIRED_VALUE_NOT_SUPPORTED",
+        "guard_reasons": []
+      }
+    ]
+  },
+  {
+    "kind": "SAVED_STRUCTURAL_EVALUATION",
+    "name": "real-source",
+    "status": "REFUSED",
+    "reasons": [
+      {
+        "reason": "NON_SYNTHETIC_SOURCE_NOT_SUPPORTED",
+        "path": "",
+        "classification": "SAVED_RESULT_OR_REQUIRED_VALUE_NOT_SUPPORTED",
+        "guard_reasons": []
+      }
+    ]
+  },
+  {
+    "kind": "SAVED_STRUCTURAL_EVALUATION",
+    "name": "stale-trading-mark",
+    "status": "REFUSED",
+    "reasons": [
+      {
+        "reason": "UNPROVEN_CARRIED_MARK",
+        "path": "/ledger/daily/4/A",
+        "classification": "SAVED_RESULT_OR_REQUIRED_VALUE_NOT_SUPPORTED",
+        "guard_reasons": []
+      }
+    ]
+  },
+  {
+    "kind": "SAVED_STRUCTURAL_EVALUATION",
+    "name": "stopped-result",
+    "status": "REFUSED",
+    "reasons": [
+      {
+        "reason": "INCOMPLETE_SAVED_RESULT",
+        "path": "",
+        "classification": "SAVED_RESULT_OR_REQUIRED_VALUE_NOT_SUPPORTED",
+        "guard_reasons": []
+      }
+    ]
+  },
+  {
+    "kind": "SAVED_STRUCTURAL_EVALUATION",
+    "name": "unknown-claims",
+    "status": "REFUSED",
+    "reasons": [
+      {
+        "reason": "UNKNOWN_CASH_CLAIMS",
+        "path": "/ledger/daily/4",
+        "classification": "SAVED_RESULT_OR_REQUIRED_VALUE_NOT_SUPPORTED",
+        "guard_reasons": []
+      }
+    ]
+  }
+]

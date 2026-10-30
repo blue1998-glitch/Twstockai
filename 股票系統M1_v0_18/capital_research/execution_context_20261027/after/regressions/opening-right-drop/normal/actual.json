@@ -1,0 +1,87 @@
+{
+  "error": {
+    "type": "ValueError",
+    "detail": "Unequal opening holdings/cash/rights"
+  },
+  "traceback": "Traceback (most recent call last):\n  File \"/workspace/Twstockai/股票系統M1_v0_18/capital_research/execution_context_20261027/reproduce.py\", line 72, in probe\n    try:value=simulate(job);error=None;trace=None\n              ^^^^^^^^^^^^^\n  File \"/workspace/Twstockai/股票系統M1_v0_18/capital_research/execution.py\", line 32, in simulate\n    return _simulate(job)\n           ^^^^^^^^^^^^^^\n  File \"/workspace/Twstockai/股票系統M1_v0_18/capital_research/execution.py\", line 66, in _simulate\n    raise ValueError('Unequal opening holdings/cash/rights')\nValueError: Unequal opening holdings/cash/rights\n",
+  "calls": {
+    "simulate": 1,
+    "decide": 1,
+    "resume": 0,
+    "ledger_replay": 0,
+    "risk": 0,
+    "replay_sequence": 0,
+    "generate": 0,
+    "save": 0
+  },
+  "caller_before": {
+    "prec": 28,
+    "rounding": "ROUND_HALF_EVEN",
+    "Emin": -999999,
+    "Emax": 999999,
+    "capitals": 1,
+    "clamp": 0,
+    "traps": {
+      "InvalidOperation": true,
+      "FloatOperation": false,
+      "DivisionByZero": true,
+      "Overflow": true,
+      "Underflow": false,
+      "Subnormal": false,
+      "Inexact": false,
+      "Rounded": false,
+      "Clamped": false
+    },
+    "flags": {
+      "InvalidOperation": false,
+      "FloatOperation": false,
+      "DivisionByZero": false,
+      "Overflow": false,
+      "Underflow": false,
+      "Subnormal": false,
+      "Inexact": false,
+      "Rounded": false,
+      "Clamped": false
+    }
+  },
+  "caller_after": {
+    "prec": 28,
+    "rounding": "ROUND_HALF_EVEN",
+    "Emin": -999999,
+    "Emax": 999999,
+    "capitals": 1,
+    "clamp": 0,
+    "traps": {
+      "InvalidOperation": true,
+      "FloatOperation": false,
+      "DivisionByZero": true,
+      "Overflow": true,
+      "Underflow": false,
+      "Subnormal": false,
+      "Inexact": false,
+      "Rounded": false,
+      "Clamped": false
+    },
+    "flags": {
+      "InvalidOperation": false,
+      "FloatOperation": false,
+      "DivisionByZero": false,
+      "Overflow": false,
+      "Underflow": false,
+      "Subnormal": false,
+      "Inexact": false,
+      "Rounded": false,
+      "Clamped": false
+    }
+  },
+  "input_id": "sha256:20ec10a32c668a08503fc310efcf0f54f97bb7946a7029c9ff21b1186c571a5b",
+  "input_unchanged": true,
+  "caller_context_unchanged": true,
+  "source_version": {
+    "path": "capital_research/execution.py",
+    "bytes": 29660,
+    "sha256": "b9c60026c91dab7a462650253dbc87727868b1877d89e84eb89a205ae29280ff"
+  },
+  "actual": null,
+  "expected_rejection": true
+}

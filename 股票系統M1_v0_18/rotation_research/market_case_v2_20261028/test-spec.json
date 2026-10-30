@@ -1,0 +1,34 @@
+{
+  "frozen_before_test_execution": true,
+  "future_bad_material": {
+    "as_of": "2026-04-09",
+    "material_id": "II-regular-open",
+    "price": "NOT_A_PRICE",
+    "expected_same_prefix": true
+  },
+  "future_reference": {
+    "fact_id": "Apr17",
+    "reference_ids": [
+      "V"
+    ],
+    "as_of": "2026-04-17",
+    "expected_error": "FUTURE_CASE_REFERENCE"
+  },
+  "current_reference_roles": {
+    "A_important": "24.80",
+    "B_local": "32.85",
+    "B_original": "35.50",
+    "B_local_origin_bar": null,
+    "automatic_add": false,
+    "automatic_exit": false
+  },
+  "pure_guard": {
+    "prepare_context": 1,
+    "qualify": 0,
+    "replay": 0,
+    "write": 0,
+    "network": 0,
+    "caller_unchanged": true,
+    "default_unchanged": true
+  }
+}

@@ -1,0 +1,53 @@
+{
+  "base_sha": "2ca618a15be296821b02ba139c2ee194fc51b01e",
+  "versions": {
+    "decision": "0.8",
+    "execution": "0.8",
+    "comparison": "0.8",
+    "checkpoint": "0.7",
+    "attempt": "0.2",
+    "fact_history": "0.3",
+    "receipt": "0.1"
+  },
+  "commands": [
+    {
+      "command": "python -B -m capital_research.review_identity_20261026.reproduce --output .../before",
+      "exit": 0,
+      "log": "reproduce-before.log",
+      "cases": 6
+    },
+    {
+      "command": "python -B -m unittest -v ...test_same_job_different_content_is_a_collision_not_a_retry",
+      "exit": 1,
+      "log": "tests-before-one.log",
+      "methods": 1
+    },
+    {
+      "command": "python -B -m unittest -v ...test_identity",
+      "exit": 1,
+      "log": "tests-first-fix.log",
+      "methods": 12,
+      "diagnostic": "Forged request hit existing stale event-reference guard; oracle unchanged, input refined"
+    },
+    {
+      "command": "python -B -m capital_research.review_identity_20261026.verify",
+      "exit": 0,
+      "log": "tests-final.log",
+      "methods": 22,
+      "new_methods": 13,
+      "regressions": 9
+    },
+    {
+      "command": "python -B -m capital_research.review_identity_20261026.reproduce --output .../after-final",
+      "exit": 0,
+      "log": "reproduce-after-final.log",
+      "cases": 6
+    }
+  ],
+  "unique_test_union": 22,
+  "counting": "1 and 12 intermediate methods are included in final22, not added; historical results and6case sequences not counted",
+  "bootstrap": 0,
+  "real_producer": 0,
+  "commits": 0,
+  "pushes": 0
+}

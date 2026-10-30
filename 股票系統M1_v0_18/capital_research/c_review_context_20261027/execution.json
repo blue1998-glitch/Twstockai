@@ -1,0 +1,145 @@
+{
+  "baseline": "c8d95bca07057b05f038ca1c906635331ba2e0df",
+  "scope": "Only complete public C review and one retry outer numerical environments",
+  "revisions": {
+    "review": "0.2.1-deterministic-decimal-context",
+    "retry": "0.3.1-deterministic-decimal-context"
+  },
+  "schemas_unchanged": [
+    "review0.1",
+    "review0.2",
+    "review0.3",
+    "decision0.9",
+    "execution0.9",
+    "checkpoint0.8"
+  ],
+  "before": {
+    "primary_controls": 10,
+    "matching_original": 7,
+    "Overflow": 2,
+    "Inexact": 1,
+    "regression_controls": 12,
+    "regressions_matching_original": 8,
+    "Clamped": 4
+  },
+  "after_review_only": {
+    "retry_controls": 5,
+    "matching_original": 3,
+    "own_checkpoint_Overflow": 1,
+    "own_final_checkpoint_Inexact": 1,
+    "retry_source_still_original": true
+  },
+  "after": {
+    "primary_controls": 10,
+    "matching_original": 10,
+    "regression_controls": 12,
+    "regressions_matching_original": 12
+  },
+  "tests": {
+    "unique_methods": 6,
+    "method_executions": 6,
+    "all_pass_first_run": true,
+    "historical_PASS_added": 0
+  },
+  "top_level_requests": 53,
+  "nested_calls_not_added_as_tests_or_samples": true,
+  "fresh_process_calls": [
+    {
+      "case": "review",
+      "actual_id": "sha256:ca90d3b90df0661764c1d03efa7bae891828412ab91a51d392903922f6fa0d96",
+      "equal_original": true,
+      "input_unchanged": true,
+      "caller_unchanged": true,
+      "DefaultContext_unchanged": true,
+      "calls": {
+        "review": 1,
+        "retry": 0,
+        "quantity_replay": 1,
+        "simulate": 2,
+        "ledger_replay": 34,
+        "generate": 1,
+        "save": 0
+      },
+      "guard": "EXPLICIT_C_CALL_WITH_REQUIRED_NESTED_VERIFICATION_NO_SAVE_NO_WRITE_NO_NETWORK"
+    },
+    {
+      "case": "retry",
+      "actual_id": "sha256:f5e3f515230d2dbb2e059df07e7313caf7d6f6cc8d6286d5113231885a367b2c",
+      "equal_original": true,
+      "input_unchanged": true,
+      "caller_unchanged": true,
+      "DefaultContext_unchanged": true,
+      "calls": {
+        "review": 1,
+        "retry": 1,
+        "quantity_replay": 1,
+        "simulate": 3,
+        "ledger_replay": 66,
+        "generate": 1,
+        "save": 0
+      },
+      "guard": "EXPLICIT_C_CALL_WITH_REQUIRED_NESTED_VERIFICATION_NO_SAVE_NO_WRITE_NO_NETWORK"
+    }
+  ],
+  "additional_financial_review": {
+    "origin_initial_capital": "1430",
+    "general_reserve": "100",
+    "order_id": "r1-B",
+    "original_quantity_and_remaining": "20",
+    "family": "C",
+    "trigger_ids": [
+      "B-event"
+    ],
+    "no_new_independent_event_claim": true,
+    "original_account_opening_rights_fills_latest_all_tokens_preserved": true,
+    "rejected_receipt_preserved_but_not_accepted_record": true,
+    "retry_final_cash": "275.100",
+    "retry_final_shares": {
+      "A": "60",
+      "B": "25",
+      "C": "2"
+    },
+    "partial_seven_remaining_thirteen_cancelled_or_expired_as_original": true,
+    "UNKNOWN_and_wrong_identity_still_refused": true,
+    "not_just_terminal_equality": true
+  },
+  "self_review": {
+    "both_failures_independently_located_after_child_fix": true,
+    "no_formula_strategy_accounting_qualification_changes": true,
+    "complete_internal_bodies_AST_unchanged": true,
+    "input_caller_DefaultContext_preserved": true,
+    "original_pure_READ_unchanged": true,
+    "no_implicit_schema_migration": true
+  },
+  "not_executed": [
+    "old suites/fullCmatrix",
+    "legacy0.1 B/E matrix",
+    "standalone old build/producer or nine paths",
+    "real producer/source qualification recomputation",
+    "new prices/sources",
+    "full future-path matrix",
+    "UI/Android",
+    "out of sample"
+  ],
+  "formal_qualification": false,
+  "primary_pressure": null,
+  "true_source_counts": {
+    "refused": 70,
+    "insufficient": 2,
+    "exchange_unsupported_in_refused": 8,
+    "qualified_real_total_net": 0
+  },
+  "unsupported_unchanged": [
+    "R2/F",
+    "source authentication",
+    "credit",
+    "opening payables/external ongoing orders",
+    "full branch/identity/correction matrix",
+    "later restriction before retry activation"
+  ],
+  "Astra": "NOT_OBTAINED_NOT_READ",
+  "rescue_originals": "NOT_OBTAINED_NOT_READ",
+  "manual_action_required": false,
+  "authorization": "Standing functional milestone normal commit/push and fixed-SHA GitHub readback; no deployment/trade/message",
+  "save_status": "Prepared; exact fixed commit and readback reported after normal save"
+}

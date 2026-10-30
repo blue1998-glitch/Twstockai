@@ -1,0 +1,200 @@
+{
+  "schema": "rotation-market-case-context-input/0.2",
+  "case_id": "1101-II-pullback-with-2884-Apr15",
+  "data_kind": "SAVED_REAL_RAW_WITH_WORK_CASE_CONTEXT_NOT_SYNTHETIC",
+  "source_binding": {
+    "quotes": "sha256:a75ab687106a64988b2f5e4c4433a86b569ec974fac6ae3806cb890f5bc4ca7c",
+    "quote_manifest": "sha256:503b5905a7c133f24d763e03c36e9a61eaea6c9e1e6ad5eb47f235b5bd14b3bf",
+    "catalog": "sha256:a137969400c6149c17434e8991467afee71ebfc68597279f1ed6049c1b332fa3",
+    "calendar": "sha256:8b431ca5ec65e460c70b0a5fc4cbc2a7f63381052fa7e5ed85f449728d8fb113"
+  },
+  "work_summary_id": "sha256:4e49326843ea30955e4ede2348e0e2a5f273c95ab6b78cb07f7db6117a598c4b",
+  "track": {
+    "id": "II",
+    "opportunity_id": "II"
+  },
+  "facts": [
+    {
+      "id": "II",
+      "code": "1101",
+      "case_context_on": "2026-04-09",
+      "role": "PULLBACK_CATCH_OPPORTUNITY",
+      "statement": "②為2026/4/9的小突破後淺回檔承接機會，使用者已確認。",
+      "reference_ids": [
+        "A-important"
+      ],
+      "evidence_kind": "USER_CONFIRMED_CASE_FROM_WORK_SUMMARY",
+      "historical_available_at": null
+    },
+    {
+      "id": "III",
+      "code": "1101",
+      "case_context_on": "2026-04-10",
+      "role": "GRAPH_OPPORTUNITY",
+      "statement": "③4/10圖形機會已確認，不代表既有持股自動加碼；24.80是本例重要回檔守位，不是自動全退線。",
+      "reference_ids": [
+        "A-important"
+      ],
+      "evidence_kind": "USER_CONFIRMED_CASE_FROM_WORK_SUMMARY",
+      "historical_available_at": null
+    },
+    {
+      "id": "IV",
+      "code": "1101",
+      "case_context_on": "2026-04-15",
+      "role": "DEEPER_LOSS",
+      "statement": "④4/15是較深失守；4/17尚未完成後續新低；⑤4/22才新增回升未收復、再低於④低點的反證。",
+      "reference_ids": [
+        "A-important"
+      ],
+      "evidence_kind": "USER_CONFIRMED_CASE_FROM_WORK_SUMMARY",
+      "historical_available_at": null
+    },
+    {
+      "id": "Apr17",
+      "code": "1101",
+      "case_context_on": "2026-04-17",
+      "role": "FOLLOWUP_NEW_LOW_NOT_COMPLETED",
+      "statement": "截至4/17尚未完成後續新低。",
+      "reference_ids": [
+        "IV"
+      ],
+      "evidence_kind": "USER_CONFIRMED_CASE_FROM_WORK_SUMMARY",
+      "historical_available_at": null
+    },
+    {
+      "id": "V",
+      "code": "1101",
+      "case_context_on": "2026-04-22",
+      "role": "RECOVERY_NOT_RECLAIMED_AND_LOWER_THAN_IV",
+      "statement": "4/22新增回升未收復、再低於④低點反證。",
+      "reference_ids": [
+        "IV"
+      ],
+      "evidence_kind": "USER_CONFIRMED_CASE_FROM_WORK_SUMMARY",
+      "historical_available_at": null
+    },
+    {
+      "id": "B-Apr15",
+      "code": "2884",
+      "case_context_on": "2026-04-15",
+      "role": "LOCAL_GRAPH_ENTRY_OPPORTUNITY",
+      "statement": "2884截至4/15可以進場，32.85可作本例局部進場參照，原35.50仍保留。圖形確認不等正式新委託許可、來源合格或成本後優勢。",
+      "reference_ids": [
+        "B-local",
+        "B-original"
+      ],
+      "evidence_kind": "USER_CONFIRMED_CASE_FROM_WORK_SUMMARY",
+      "historical_available_at": null
+    }
+  ],
+  "references": [
+    {
+      "id": "A-important",
+      "code": "1101",
+      "case_context_on": "2026-04-09",
+      "role": "IMPORTANT_PULLBACK_LEVEL",
+      "value": "24.80",
+      "raw_bar": {
+        "date": "2026-04-09",
+        "field": "low"
+      },
+      "evidence_kind": "USER_CONFIRMED_CASE_FROM_WORK_SUMMARY",
+      "historical_role_known_at": null
+    },
+    {
+      "id": "B-original",
+      "code": "2884",
+      "case_context_on": "2026-02-26",
+      "role": "ORIGINAL_UPPER_REFERENCE",
+      "value": "35.50",
+      "raw_bar": {
+        "date": "2026-02-26",
+        "field": "high"
+      },
+      "evidence_kind": "USER_CONFIRMED_CASE_FROM_WORK_SUMMARY",
+      "historical_role_known_at": null
+    },
+    {
+      "id": "B-local",
+      "code": "2884",
+      "case_context_on": "2026-04-15",
+      "role": "LOCAL_ENTRY_REFERENCE",
+      "value": "32.85",
+      "raw_bar": null,
+      "evidence_kind": "USER_CONFIRMED_CASE_FROM_WORK_SUMMARY",
+      "historical_role_known_at": null
+    }
+  ],
+  "entry_materials": [
+    {
+      "id": "II-regular-open",
+      "opportunity_id": "II",
+      "code": "1101",
+      "case_context_on": "2026-04-10",
+      "channel": "REGULAR_OPEN",
+      "price_role": "SAVED_DAILY_OPEN_MODEL_MATERIAL",
+      "price": "25.35",
+      "raw_bar": {
+        "date": "2026-04-10",
+        "field": "open"
+      },
+      "evidence_kind": "SAVED_RAW_BAR_MODEL_MATERIAL_NOT_FILL",
+      "capacity": null,
+      "trade_at": null,
+      "historical_available_at": null,
+      "fee_model": null,
+      "settlement_date": null
+    },
+    {
+      "id": "II-odd-first",
+      "opportunity_id": "II",
+      "code": "1101",
+      "case_context_on": "2026-04-10",
+      "channel": "ODD_LOT_FIRST_PRINT",
+      "price_role": "WORK_REPORTED_FIRST_PRINT_MODEL_MATERIAL",
+      "price": "25.60",
+      "raw_bar": null,
+      "evidence_kind": "WORK_SUMMARY_ONLY_NO_RETAINED_FIRST_PRINT_OR_CAPACITY",
+      "capacity": null,
+      "trade_at": null,
+      "historical_available_at": null,
+      "fee_model": null,
+      "settlement_date": null
+    }
+  ],
+  "excluded_contexts": [
+    {
+      "track_id": "I",
+      "ordinary_open_on": "2026-04-09",
+      "ordinary_open": "25.50",
+      "adopted_for_main_track": false
+    }
+  ],
+  "selected_entry_material_id": null,
+  "as_of_dates": [
+    "2026-04-09",
+    "2026-04-10",
+    "2026-04-15",
+    "2026-04-17",
+    "2026-04-22"
+  ],
+  "research_parameters": {
+    "opening_cash": null,
+    "N": null,
+    "shares": null,
+    "reduction_ratio": null,
+    "reserved_cash": null,
+    "common_period": null,
+    "risk_thresholds": null,
+    "probability_model": null,
+    "ranking_model": null,
+    "execution_model": null
+  },
+  "research_controls": {
+    "K": "UNAPPROVED",
+    "X4": "UNAPPROVED",
+    "R4_X5": "UNAPPROVED",
+    "X5": "UNAPPROVED"
+  }
+}

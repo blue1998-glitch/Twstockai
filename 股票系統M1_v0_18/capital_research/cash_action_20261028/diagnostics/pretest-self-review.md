@@ -1,0 +1,7 @@
+# 測試前自審留史
+
+四份precondition input及手定expected在原引擎實跑前保存；31份action input/expected在新adapter實作前保存。初版手算漏了rotation_research.core.fees的既有ROUND_CEILING稅，2.997應進位3。原expected.json與frozen指紋保持，另有expected-fee-rounding.json，明列規則及人工算式；不改任何31案的輸入、資格oracle或費稅程式。此為準備手算勘誤，不是帳務引擎錯誤或以改oracle讓策略通過。
+
+初版adapter的31個actual與summary/source-versions保留於根actual/summary.json。自審將完整derived input及core原始source metadata移至source_integrity_metadata，數值research只保留原core decision，防止未來原始宣告僅因保存而改當期研究前綴。input/oracle不變；after-final綁最終source。正式唯一方法測試尚未執行，因此不累加兩次診斷控制。
+
+程式編寫時在首批RUN前已核source_snapshot實際records格式，改用其identity取來源綁定；不是新增來源認證。其他完整帳、所有token及fact-history仍由原validate_checkpoint/resume核對，沒有第二套會計。
