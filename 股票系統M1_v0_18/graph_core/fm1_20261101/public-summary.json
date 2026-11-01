@@ -1,0 +1,131 @@
+{
+  "status": "PARTIAL",
+  "producer_version": "official-market-daily/0.4",
+  "run_id": "fm1-27f77ba110d4c90c08a8b03e69a9120b9c6a1eb193c081d2764e0ff18c8a3571",
+  "producer_sha256": "4cb74e69cfd093a4a20b784785cc512a6c80429784829fb2345d026f191e4f08",
+  "engine_sha256": "0d844f8528dbca874c32007edf221f3c54fd6a078415dba354a4b8d51e2fdcfc",
+  "summary": {
+    "actual_core_calls": 1958,
+    "all_known_members_have_terminal": true,
+    "as_of": "2026-10-30",
+    "both_market_quotes_read": true,
+    "both_market_universes_read": true,
+    "expected": 1986,
+    "expected_by_market": {
+      "TPEX": 897,
+      "TWSE": 1089
+    },
+    "fixed_android_url": "NOT_DEPLOYED",
+    "peak_rss_kib": 98744,
+    "processed": 1986,
+    "scheduling": "NOT_ENABLED_NO_VERIFIED_PERSISTENT_PRIVATE_RUNTIME",
+    "source_failures": {},
+    "status": "PARTIAL",
+    "terminal_counts": {
+      "DATA_QUALITY_FAILURE": 1,
+      "INSUFFICIENT_HISTORY": 1958,
+      "MISSING_QUOTE": 5,
+      "NO_TRADE_REPORTED_ZERO_VOLUME": 8,
+      "NO_VALID_CLOSE_SUSPENSION_NOT_AUTHENTICATED": 14
+    },
+    "universe_historical_qualification": "UNKNOWN_CURRENT_SNAPSHOT_NOT_HISTORICAL_MEMBERSHIP",
+    "wall_seconds": 8.782900297999731
+  },
+  "completed_graph_analysis": 0,
+  "single_session_partial_core_outputs": 1958,
+  "classification_counts": {
+    "TPEX": {
+      "EXCLUDED_NON_ORDINARY": 12826,
+      "ORDINARY": 897
+    },
+    "TWSE": {
+      "EXCLUDED_NON_ORDINARY": 40030,
+      "ORDINARY": 1089
+    }
+  },
+  "registry_observed_at": {
+    "TPEX": "2026-11-01",
+    "TWSE": "2026-11-01"
+  },
+  "same_source_rerun": {
+    "reused": true,
+    "new_core_calls": 0,
+    "original_run_unchanged": true,
+    "capture_network_calls_in_reuse_test": 0
+  },
+  "data_source_requests": "4 current issuer OpenAPI data,2 ISIN classifications; bounded current capture; no all-market historical backfill",
+  "prior_diagnostics": {
+    "initial_v01_expected": 1955,
+    "v01_issue": "31 listed Taiwan Innovation Board ordinary shares were explicitly marked market mismatch; corrected with receipt retained",
+    "v02_expected": 1986,
+    "final_v04_expected": 1986,
+    "preview_initial_error": [
+      {
+        "name": "SyntaxError",
+        "message": "Identifier 'query' has already been declared",
+        "stack": ""
+      }
+    ],
+    "preview_second_test_issue": "Test clicked correctly disabled one-bar zoom; assertion corrected; original log preserved outside Git"
+  },
+  "source_permissions": {
+    "government_metadata_pages": "403_NOT_RETRIED",
+    "TWSE_OpenAPI": "Spec links government open data license; current API obtained",
+    "TPEX_OpenAPI": "Spec welcomes API access; website terms government open-data exception; no public raw redistribution qualification",
+    "ISIN": "Official current public security CFI reference; no historical membership certification",
+    "scope": "PRIVATE_RESEARCH_ONLY_ALL_FORMAL_QUALIFICATIONS_FALSE"
+  },
+  "private_storage": {
+    "root": "/workspace/twstockai-local-data/fm1/runtime",
+    "filesystem": "CONTAINER_OVERLAY",
+    "persistence": "UNKNOWN_NO_PLATFORM_GUARANTEE",
+    "raw_and_reconstructable_data_published": false
+  },
+  "preview": {
+    "path": "/workspace/twstockai-local-data/fm1/runtime/preview/fm1-27f77ba110d4c90c08a8b03e69a9120b9c6a1eb193c081d2764e0ff18c8a3571/market-v03.html",
+    "bytes": 6165653,
+    "sha256": "3e7e67b188577fd5c34053711924f9eae8c8543b6dd85aac19769e75018ffe98",
+    "stocks": 1986,
+    "charts": 1958,
+    "transport": "PRIVATE_FILE_OR_LOOPBACK_ONLY_NOT_DEPLOYED",
+    "android": "NOT_TESTED"
+  },
+  "browser": {
+    "status": "PASS",
+    "checks": 9,
+    "widths": [
+      1280,
+      390,
+      320
+    ],
+    "javascript_errors": [],
+    "external_requests": [],
+    "new_android": "NOT_TESTED"
+  },
+  "tests": {
+    "unique_methods": 11,
+    "final_result": "PASS",
+    "counts_not_added_across_batches": true
+  },
+  "legacy_protection": {
+    "core_file_unchanged": true,
+    "F01_retained": true,
+    "MG3_MC2_sources_unchanged": true,
+    "MVP_M2_preserved_commit": "17e5c0c0eabf7973fba1e3731c9ea5bbcfbfff07"
+  },
+  "daily_schedule": "PREPARED_NOT_INSTALLED; conservative prior-source-day gate, not same-evening final publication proof",
+  "fixed_android_url": "NONE_NOT_DEPLOYED",
+  "preview_render_current_source_byte_identical": true,
+  "source_versions": {
+    "股票系統M1_v0_18/graph_core/market_daily.py": "4cb74e69cfd093a4a20b784785cc512a6c80429784829fb2345d026f191e4f08",
+    "股票系統M1_v0_18/graph_core/market_preview.py": "ed0bc47474d7750f494070a052dacdefb9ba341fd549b3f0b91506dc76c8cab7",
+    "股票系統M1_v0_18/graph_core/daily_update.py": "64fafc0b963772d3209b9645ce8c2180ce607e05f38052debe54cb3bd12e5619",
+    "股票系統M1_v0_18/graph_core/fm1_20261101/search.js": "eb0bb08fe35c1d126399a13257777916fda768c0bf98553e4c103330550928fc",
+    "股票系統M1_v0_18/graph_core/fm1_20261101/test_daily.py": "734914d92077930b4a6e6800fba102330e58817d4c79baa35974ac1aaf2987db",
+    "股票系統M1_v0_18/graph_core/fm1_20261101/test_preview.cjs": "ec24b594b0723516899716a46528d41f08d8b0ca1b1bbb114004228148fdadc9"
+  },
+  "coordinator_blocked_capture": "Reports BLOCKED with last saved summary; never silently applies new sources or advances head",
+  "preserved_diagnostic_format": {
+    "initial-to-release.patch": "Standard unified-diff space-only context lines retained unchanged; excluded from source whitespace check"
+  }
+}

@@ -1,0 +1,113 @@
+--- initial-v01.py
++++ release-v04.py
+@@ -5,7 +5,7 @@
+ import argparse
+ from collections import Counter
+ from datetime import date,datetime,timezone
+-from decimal import Decimal
++from decimal import Decimal,Context,localcontext,ROUND_HALF_EVEN
+ from html.parser import HTMLParser
+ import hashlib
+ import json
+@@ -22,8 +22,9 @@
+ from graph_core.core import analyze,fingerprint
+ from product_candidate.build import publish_immutable
+ from rotation_research.store import Journal
+-
+-VERSION='official-market-daily/0.1'
++from contracts import validate_candles
++
++VERSION='official-market-daily/0.4'
+ URLS={
+  'twse-universe.json':'https://openapi.twse.com.tw/v1/opendata/t187ap03_L',
+  'tpex-universe.json':'https://www.tpex.org.tw/openapi/v1/mopsfin_t187ap03_O',
+@@ -80,7 +81,7 @@
+         code=r[0].split()[0]
+         if code in seen:raise ValueError('Duplicate security classification')
+         seen.add(code);cfi=r[5];state='EXCLUDED_NON_ORDINARY'
+-        if r[3]!=('上市' if market=='TWSE' else '上櫃'):state='CLASSIFICATION_MARKET_MISMATCH'
++        if r[3] not in (('上市','上市臺灣創新板') if market=='TWSE' else ('上櫃',)):state='CLASSIFICATION_MARKET_MISMATCH'
+         elif cfi.startswith('ES'):
+             state='ORDINARY' if code in registry else 'ORDINARY_MISSING_COMPANY_METADATA'
+             if day(r[2])>as_of:state='NOT_YET_LISTED_AT_SOURCE_DATE'
+@@ -113,9 +114,9 @@
+     if not volume.is_finite() or volume<0 or volume!=volume.to_integral_value():raise ValueError('Invalid native reported share volume')
+     if volume==0:return None,'NO_TRADE_REPORTED_ZERO_VOLUME'
+     if any(v in ('','--','---','----','－') for v in vals[:4]):return None,'NO_VALID_CLOSE_SUSPENSION_NOT_AUTHENTICATED'
+-    o,h,l,c=map(Decimal,vals[:4])
+-    if not all(v.is_finite() for v in (o,h,l,c)) or min(o,h,l,c)<=0 or not l<=min(o,c)<=max(o,c)<=h:raise ValueError('Invalid source OHLC')
+-    return dict(date=day(r['Date']),open=vals[0],high=vals[1],low=vals[2],close=vals[3],volume_shares_scaled=vals[4]),None
++    bar=dict(date=day(r['Date']),open=vals[0],high=vals[1],low=vals[2],close=vals[3],volume_shares_scaled=vals[4])
++    validate_candles([bar])
++    return bar,None
+ 
+ 
+ def capture(destination):
+@@ -144,9 +145,24 @@
+ 
+ def process(root,capture_id,*,parent_run=None,correction_of=None,correction_reason=None,now=None):
+     root=outside(root);started=time.monotonic();journal=Journal(root/'runs')
++    if not re.fullmatch('[a-f0-9]{64}',capture_id):raise ValueError('Invalid capture identity')
+     receipt=json.loads((root/'captures'/(capture_id+'.json')).read_text())
++    if digest(encode(receipt))!=capture_id:raise ValueError('Capture receipt fingerprint changed')
++    if len(receipt)!=len(URLS) or {r['name'] for r in receipt}!=set(URLS):raise ValueError('Complete unique source receipt required')
++    # A local missing/corrupt original is not an identical-source re-run. Preserve
++    # the old journal, refuse this RUN, and never repair from a cached result.
++    for record in receipt:
++        if record['url']!=URLS[record['name']]:raise ValueError('Unexpected source URL')
++        if record['status']=='RECEIVED':
++            if not re.fullmatch('[a-f0-9]{64}',record['sha256']):raise ValueError('Invalid raw source fingerprint')
++            path=root/'raw'/record['sha256']
++            if not path.is_file() or digest(path.read_bytes())!=record['sha256']:
++                raise ValueError('Stored source fingerprint mismatch; old results preserved')
+     signature={r['name']:r.get('sha256',r['status']) for r in receipt}
++    producer_sha=digest(Path(__file__).read_bytes());engine_sha=digest((ROOT/'graph_core/core.py').read_bytes())
+     parent=journal.read(parent_run)['value'] if parent_run else None
++    if parent and (parent['version']!=VERSION or parent.get('producer_sha256')!=producer_sha or parent.get('engine_sha256')!=engine_sha):
++        raise ValueError('Cross-producer continuation NOT_IMPLEMENTED; old records remain READ-only')
+     if parent and parent['sources']==signature:return dict(id=parent_run,reused=True,summary=parent['summary'],new_core_calls=0)
+     def read(name):
+         record=next(r for r in receipt if r['name']==name)
+@@ -171,7 +187,7 @@
+     members=[m for v in markets.values() for m in v['members']]
+     identities=[m['market']+':'+m['code'] for m in members]
+     if len(identities)!=len(set(identities)):raise ValueError('Duplicate universe member')
+-    run_id='fm1-'+digest(encode(dict(version=VERSION,sources=signature,parent=parent_run,correction_of=correction_of,reason=correction_reason)))
++    run_id='fm1-'+digest(encode(dict(version=VERSION,producer_sha256=producer_sha,engine_sha256=engine_sha,sources=signature,parent=parent_run,correction_of=correction_of,reason=correction_reason)))
+     try:
+         saved=journal.read(run_id)['value'];return dict(id=run_id,reused=True,summary=saved['summary'],new_core_calls=0)
+     except FileNotFoundError:pass
+@@ -206,7 +222,10 @@
+                         source_id=fingerprint(dict(feed=VERSION,identity=identity,bars=bars)),price_basis_id=identity+'-RAW-UNVERIFIED',
+                         price_mode='RAW_CANDIDATE',volume_unit='SHARES_REPORTED',source_kind='OFFICIAL_BULK_DAILY_NATIVE_SHARES',
+                         corporate_action_comparability='UNVERIFIED',historical_publication_timing='UNKNOWN'),bars=bars,basis_break_dates=breaks,expected_dates=expected)
+-                    calls+=1;stage='CORE_FAILURE';result=analyze(payload,as_of=as_of);stage='STORAGE_FAILURE'
++                    calls+=1;stage='CORE_FAILURE'
++                    with localcontext(Context(prec=50,rounding=ROUND_HALF_EVEN,Emin=-999999,Emax=999999)):
++                        result=analyze(payload,as_of=as_of)
++                    stage='STORAGE_FAILURE'
+                     hk='history-'+fingerprint(dict(bars=bars,basis_break_dates=breaks)).split(':')[1]
+                     histories.save(hk,dict(bars=bars,basis_break_dates=breaks));rk='result-'+result['result_id'].split(':')[1];results.save(rk,dict(input=payload,result=result))
+                     row.update(history_key=hk,result_key=rk,history_records=len(bars),status='INSUFFICIENT_HISTORY' if len(bars)==1 else 'ANALYZED_RESEARCH',
+@@ -216,15 +235,19 @@
+         outcomes.append(row)
+     removed=[dict(identity=k,status='ABSENT_FROM_CURRENT_REGISTRY_NOT_PROOF_OF_DELISTING',prior=v) for k,v in previous.items() if k not in identities]
+     transitions=[dict(identity=r['identity'],old_name=previous[r['identity']]['name'],new_name=r['name'],status='NAME_CHANGE_OBSERVED_NOT_IDENTITY_REISSUE_AUTHENTICATION') for r in outcomes if r['identity'] in previous and r['name']!=previous[r['identity']]['name']]
++    prior_isins={r['isin']:r for r in previous.values() if r.get('isin')}
++    market_changes=[dict(isin=r['isin'],old_identity=prior_isins[r['isin']]['identity'],new_identity=r['identity'],
++        status='MARKET_CHANGE_OBSERVED_EFFECTIVE_DATE_AND_PRICE_CONTINUITY_UNKNOWN_HISTORY_NOT_MERGED') for r in outcomes
++        if r.get('isin') in prior_isins and prior_isins[r['isin']]['market']!=r['market']]
+     summary=dict(as_of=as_of,expected_by_market={m:len(markets[m]['members']) if m in markets else None for m in ('TWSE','TPEX')},
+         expected=len(members),terminal_counts=dict(Counter(s['status'] for s in outcomes)),actual_core_calls=calls,
+         processed=len(outcomes),all_known_members_have_terminal=len(outcomes)==len(members),both_market_universes_read=len(markets)==2,
+         both_market_quotes_read=len(maps)==2,universe_historical_qualification='UNKNOWN_CURRENT_SNAPSHOT_NOT_HISTORICAL_MEMBERSHIP',
+         source_failures=failures,wall_seconds=time.monotonic()-started,peak_rss_kib=resource.getrusage(resource.RUSAGE_SELF).ru_maxrss,
+         scheduling='NOT_ENABLED_NO_VERIFIED_PERSISTENT_PRIVATE_RUNTIME',fixed_android_url='NOT_DEPLOYED',status='PARTIAL')
+-    journal.save(run_id,dict(version=VERSION,as_of=as_of,sources=signature,capture_id=capture_id,parent_run=parent_run,
++    journal.save(run_id,dict(version=VERSION,producer_sha256=producer_sha,engine_sha256=engine_sha,as_of=as_of,sources=signature,capture_id=capture_id,parent_run=parent_run,
+         correction_of=correction_of,correction_reason=correction_reason,observed_sessions=expected,markets=markets,
+-        stocks=outcomes,removed_registry_entries=removed,name_changes=transitions,summary=summary))
++        stocks=outcomes,removed_registry_entries=removed,name_changes=transitions,market_changes=market_changes,summary=summary))
+     return dict(id=run_id,reused=False,summary=summary,new_core_calls=calls)
+ 
+ 

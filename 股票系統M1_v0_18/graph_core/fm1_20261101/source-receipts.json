@@ -1,0 +1,78 @@
+{
+  "receipts": [
+    {
+      "id": "twse-universe",
+      "url": "https://openapi.twse.com.tw/v1/opendata/t187ap03_L",
+      "sha256": "beb7de039626864e1db36cc2ba8f54d37a0b68ee96569e2c7fb4a83eff2316df",
+      "bytes": 1332397,
+      "fetched_at": "2026-11-01T13:44:39.748227+00:00",
+      "status": 200
+    },
+    {
+      "id": "tpex-universe",
+      "url": "https://www.tpex.org.tw/openapi/v1/mopsfin_t187ap03_O",
+      "sha256": "e76f768a488e7ed2ddcaa11417dee74381835f1162dbee3ec904e280aaf97a07",
+      "bytes": 1079395,
+      "fetched_at": "2026-11-01T13:44:44.472269+00:00",
+      "status": 200
+    },
+    {
+      "id": "twse-daily",
+      "url": "https://openapi.twse.com.tw/v1/exchangeReport/STOCK_DAY_ALL",
+      "sha256": "89994d5d91289512762f7a6965a23444a42e740e2c5ab755c4ef028844e07670",
+      "bytes": 322154,
+      "fetched_at": "2026-11-01T13:44:46.087361+00:00",
+      "status": 200
+    },
+    {
+      "id": "tpex-daily",
+      "url": "https://www.tpex.org.tw/openapi/v1/tpex_mainboard_daily_close_quotes",
+      "sha256": "90dac158683b0c13124c68f51bc2df670d0761cf8bb5cef67df88cc5c2be00aa",
+      "bytes": 5210880,
+      "fetched_at": "2026-11-01T13:44:54.631973+00:00",
+      "status": 200
+    },
+    {
+      "id": "gov-license-page",
+      "url": "https://data.gov.tw/dataset/18419",
+      "error": "HTTP Error 403: Forbidden"
+    },
+    {
+      "market": "TWSE",
+      "url": "https://isin.twse.com.tw/isin/C_public.jsp?strMode=2",
+      "sha256": "5dda463a417e0f7841385d204b4e989bb8f683a3fbfe415bda071e822d169612",
+      "fetched_at": "2026-11-01T13:46:24.000711+00:00"
+    },
+    {
+      "market": "TPEX",
+      "url": "https://isin.twse.com.tw/isin/C_public.jsp?strMode=4",
+      "sha256": "b7c83a9130114ce8a266ca07c0eafd4edc51a6e87128ca6ab12bc78d101d1eb7",
+      "fetched_at": "2026-11-01T13:46:29.515233+00:00"
+    }
+  ],
+  "raw_originals": "GIT_EXTERNAL_ONLY",
+  "government_dataset_pages": [
+    "https://data.gov.tw/dataset/18419",
+    "https://data.gov.tw/dataset/25036",
+    "https://data.gov.tw/dataset/11549",
+    "https://data.gov.tw/dataset/11371"
+  ],
+  "api_specs": {
+    "twse-spec.json": {
+      "sha256": "06e1cea82448361e733a0ad1ae16e52f5d5d6b71905acd078472f852c32c0eb0",
+      "info": {
+        "description": "本平臺提供臺灣證券交易所服務API，歡迎各位介接使用。<br><br>[使用條款](https://www.twse.com.tw/zh/page/terms/use.html)  [授權說明網址](https://data.gov.tw/license)",
+        "version": "1.0",
+        "title": "臺灣證券交易所 OpenAPI"
+      }
+    },
+    "tpex-spec.json": {
+      "sha256": "05af7755d0d528626c104f7a8ccd7b00c6a0cf228d30bcb4669020e514eb0c7e",
+      "info": {
+        "description": "本平臺提供櫃檯買賣市場資料服務API，包含上櫃、興櫃、創櫃及債券等發行及交易資訊，歡迎各位介接使用。<br><br>[使用條款](https://www.tpex.org.tw/web/inc/gtsm_disclaimer.php?l=zh-tw)<br>[聯絡窗口](mailTo:apiteam@swagger.io)",
+        "version": "1.0.0",
+        "title": "證券櫃檯買賣中心 OpenAPI"
+      }
+    }
+  }
+}

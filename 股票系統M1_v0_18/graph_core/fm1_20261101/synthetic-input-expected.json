@@ -1,0 +1,64 @@
+{
+  "synthetic": true,
+  "universe": [
+    {
+      "公司代號": "A",
+      "公司簡稱": "Synthetic ordinary"
+    },
+    {
+      "公司代號": "ETF",
+      "公司簡稱": "Synthetic fund"
+    }
+  ],
+  "tpex_universe": [
+    {
+      "SecuritiesCompanyCode": "B",
+      "CompanyAbbreviation": "Synthetic OTC"
+    }
+  ],
+  "html_rows": {
+    "TWSE": [
+      [
+        "A",
+        "上市臺灣創新板",
+        "ESVUFR"
+      ],
+      [
+        "ETF",
+        "上市",
+        "CEOIEU"
+      ]
+    ],
+    "TPEX": [
+      [
+        "B",
+        "上櫃",
+        "ESVUFR"
+      ]
+    ]
+  },
+  "day": "1151029",
+  "next_day": "1151030",
+  "prices": {
+    "open": "10",
+    "high": "12",
+    "low": "9",
+    "close": "11",
+    "volume": "100"
+  },
+  "expected": {
+    "ordinary_codes": [
+      "A",
+      "B"
+    ],
+    "excluded": [
+      "ETF"
+    ],
+    "first_day": "INSUFFICIENT_HISTORY",
+    "next_contiguous_day": "ANALYZED_RESEARCH",
+    "changed_same_day": "REFUSE_UNLESS_EXPLICIT_CORRECTION",
+    "missing": "MISSING_QUOTE",
+    "zero": "NO_TRADE_REPORTED_ZERO_VOLUME",
+    "core_exception": "CORE_FAILURE_OTHER_STOCK_CONTINUES"
+  }
+}
