@@ -1,0 +1,21 @@
+setUpClass (graph_core_chart.mvp_m2_20261101.test_mobile.MobileTests) ... ERROR
+
+======================================================================
+ERROR: setUpClass (graph_core_chart.mvp_m2_20261101.test_mobile.MobileTests)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/workspace/Twstockai/股票系統M1_v0_18/graph_core_chart/mvp_m2_20261101/test_mobile.py", line 14, in setUpClass
+    cls.html=(OUT/NAME).read_text()
+             ^^^^^^^^^^^^^^^^^^^^^^
+  File "/opt/codex/runtimes/codex-primary-runtime/dependencies/python/lib/python3.12/pathlib.py", line 1027, in read_text
+    with self.open(mode='r', encoding=encoding, errors=errors) as f:
+         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/opt/codex/runtimes/codex-primary-runtime/dependencies/python/lib/python3.12/pathlib.py", line 1013, in open
+    return io.open(self, mode, buffering, encoding, errors, newline)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+FileNotFoundError: [Errno 2] No such file or directory: '/workspace/Twstockai/股票系統M1_v0_18/graph_core_chart/output/mvp_m2_20261101/M1_graph_comparison_mvp_m2_v01.html'
+
+----------------------------------------------------------------------
+Ran 0 tests in 0.003s
+
+FAILED (errors=1)
