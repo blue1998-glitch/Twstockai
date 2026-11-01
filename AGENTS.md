@@ -1,3 +1,15 @@
+# 2026-11-01 最新有效｜M-R2來源前置診斷BLOCKED，未完成事件日簿
+
+入口[graph_core/mr2_20261101](股票系統M1_v0_18/graph_core/mr2_20261101/README.md)、source-boundary.json及actual-preflight.json。M-R2真實同日雙市場成功接入0，不能稱工程／驗收PASS。已重用M2-3本地2884資料與core0.2，07-21／22供應97／98筆；07-22確認HIGH發生於07-21，沒有倒填前日。只把BLOCKED前置診斷沿原Journal保存讀回；原事件／基底／F-01／全部產品程式未改，完整行情與分析仍在Git外。
+
+實讀兩交易所使用條款及政府開放資料11369／11555、TPExOpenAPI規格：政府資料有例外，但本輪尚未建立7/21、7/22歷史官方指數＋漲跌家數的可核原件與取得範圍。TWSE開放頁機關舊回覆限最新；TPEx market highlight無明示歷史日期參數；不把此推論成所有合法歷史來源不存在。既存加權月表無上漲／下跌家數，Work M-R1 Library兩原件未取得／未讀，不用摘要當原件。不呼叫行情端點、不試參數、不重抓81日或繞過。2408本輪來源盤點未有可核原件，不擴抓／不以合成替代。
+
+新功能／回歸測試皆0；本輪只有來源／原件／時點／既有Journal讀回前置斷言，不計M-R2 PASS或市場樣本，不加合成測試掩蓋阻塞。完整日簿producer、後續窗分類、雙市場與未來隔離驗收未實作／未執行，followup UNKNOWN；全市場比率及真實淨績效null。正式false／主壓力null、1101／來源parents／拒算、M-R1原候選參照與等待次數保持。
+
+起始3d09ed82bcac303845e4d1b4ffdf37749ddd7dbd且淨；原唯一Codex只保存非行情BLOCKED診斷與固定SHA讀回，非M-R2里程碑完成。下一實際阻礙是上述日期可正式讀取且使用範圍明確的市場原件；不要求使用者搬檔／處理技術，不啟動旁支或下一里程碑。人工操作目前不需要，下方舊交接完整留史。
+
+---
+
 # 2026-11-01 最新有效｜M2-5 F-01跨基底相對錨點數值修復
 
 入口[graph_core/f01_20261101](股票系統M1_v0_18/graph_core/f01_20261101/README.md)、CONTRACT／REPORT、修前後official摘要及tests-targeted.log。F-01已重現並修復：不可比舊箱的pressure_distance_fraction／relative_width_to_anchor、已停止舊高點distance_to_anchor改null；新增anchor_comparison_reason沿原停止事件，不補0。新結果graph-recognition-research/0.2，輸入0.1不變、舊0.1結果不覆寫／不遷移。可比物件原值、歷史箱／高低點／幾何／事件／統計及ID完整保留；原壓力篩選與primary_pressure_id=null不變，不誇大為錯誤交易。
