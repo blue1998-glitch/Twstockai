@@ -1,3 +1,15 @@
+# 2026-11-01 最新有效｜原M-R2補正：兩日有限研究日簿接線PARTIAL
+
+入口[graph_core/mr2_20261101/continuation](股票系統M1_v0_18/graph_core/mr2_20261101/continuation/README.md)、父目錄CONTRACT_0_1、REPORT與real-actual-final-summary。原M-R2續作，非新平行里程碑。新event_diary純組裝原graph0.2保存結果與同日市場摘要，外層event_diary_run沿原Journal；不辨識重算、抓來源或增READ框架。兩日研究連結完成，資格PARTIAL，不是市場原件重新驗證PASS。
+
+市場資料僅DIRECTOR_READBACK_RESEARCH_SUMMARY：總監已讀M-R1原件的摘要、URL與reported SHA，Codex未取得四報表／Library ZIP，不冒SHA獨立讀回；歷史available_at／普通股母體／散布權UNKNOWN。原股價回應SHA及原graph input本輪實讀核對，與市場摘要角色分開。所有數字／完整日簿只留Git外；公開只程式、合成與白名單摘要。原正式來源／資金gate不改，正式false／主壓力null、1101／70/2/其中8/真實合格0保持。
+
+07-21／22來源97／98筆；前日新確認0，後日HIGH occurred=7/21、first_observed=confirmed=7/22，前日entry不回寫。後續另存updates：未成熟不稱成功，原失守未滿窗即揭露；跨基底UNKNOWN仍留已知失守。真實窗未提供，不補天數；合成三筆窗只是機制測試，合成不稱真實接線。全市場比率／真實淨績效null，2408原件未取得仍不接入，不改M-R1規則或策略。
+
+14唯一方法最終PASS＝12新增＋2必要F-01；初批同一方法的缺價fixture ERROR及案例數FAIL留史，原oracle不改，只修helper不在缺收盤日造snapshot。原graph0.2／F-01／adapter／Journal及前輪BLOCKED紀錄完整保留，最後source與真實保存結果／九合成actual相同。不跑舊全套／81日／敏感度，無網路行情／部署／交易。原唯一Codex自審正常保存讀回；本次有限接線達標即停止，無人工操作。下一主要限制仍為市場原件與歷史資格。下方原BLOCKED／F-01等交接完整留史。
+
+---
+
 # 2026-11-01 最新有效｜M-R2來源前置診斷BLOCKED，未完成事件日簿
 
 入口[graph_core/mr2_20261101](股票系統M1_v0_18/graph_core/mr2_20261101/README.md)、source-boundary.json及actual-preflight.json。M-R2真實同日雙市場成功接入0，不能稱工程／驗收PASS。已重用M2-3本地2884資料與core0.2，07-21／22供應97／98筆；07-22確認HIGH發生於07-21，沒有倒填前日。只把BLOCKED前置診斷沿原Journal保存讀回；原事件／基底／F-01／全部產品程式未改，完整行情與分析仍在Git外。

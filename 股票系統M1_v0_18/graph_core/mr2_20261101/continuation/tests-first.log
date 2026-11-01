@@ -1,0 +1,43 @@
+test_frozen_followup_oracles (graph_core.mr2_20261101.continuation.test_diary.DiaryTests.test_frozen_followup_oracles) ... 
+  test_frozen_followup_oracles (graph_core.mr2_20261101.continuation.test_diary.DiaryTests.test_frozen_followup_oracles) (case='missing-price') ... ERROR
+test_frozen_followup_oracles (graph_core.mr2_20261101.continuation.test_diary.DiaryTests.test_frozen_followup_oracles) ... FAIL
+test_future_prefix_and_daily_rows_immutable (graph_core.mr2_20261101.continuation.test_diary.DiaryTests.test_future_prefix_and_daily_rows_immutable) ... ok
+test_journal_same_content_conflict_read_and_local_runner (graph_core.mr2_20261101.continuation.test_diary.DiaryTests.test_journal_same_content_conflict_read_and_local_runner) ... ok
+test_later_failure_not_backfilled_and_known_failure_survives_gap (graph_core.mr2_20261101.continuation.test_diary.DiaryTests.test_later_failure_not_backfilled_and_known_failure_survives_gap) ... ok
+test_missing_dates_fields_unknown_zero_and_source_roles (graph_core.mr2_20261101.continuation.test_diary.DiaryTests.test_missing_dates_fields_unknown_zero_and_source_roles) ... ok
+test_original_events_times_and_graphs_preserved (graph_core.mr2_20261101.continuation.test_diary.DiaryTests.test_original_events_times_and_graphs_preserved) ... ok
+test_public_allowlist_and_frozen_sources (graph_core.mr2_20261101.continuation.test_diary.DiaryTests.test_public_allowlist_and_frozen_sources) ... ok
+test_pure_no_io_input_and_numeric_context_unchanged (graph_core.mr2_20261101.continuation.test_diary.DiaryTests.test_pure_no_io_input_and_numeric_context_unchanged) ... ok
+test_source_basis_and_f01_corruption_refused (graph_core.mr2_20261101.continuation.test_diary.DiaryTests.test_source_basis_and_f01_corruption_refused) ... ok
+test_windows_require_source_no_hidden_policy_or_success (graph_core.mr2_20261101.continuation.test_diary.DiaryTests.test_windows_require_source_no_hidden_policy_or_success) ... ok
+
+======================================================================
+ERROR: test_frozen_followup_oracles (graph_core.mr2_20261101.continuation.test_diary.DiaryTests.test_frozen_followup_oracles) (case='missing-price')
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/workspace/Twstockai/股票系統M1_v0_18/graph_core/mr2_20261101/continuation/test_diary.py", line 23, in test_frozen_followup_oracles
+    req=request_for(case['variant'],no_window=case.get('no_window',False))
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/workspace/Twstockai/股票系統M1_v0_18/graph_core/mr2_20261101/continuation/fixtures.py", line 17, in request_for
+    snapshots.append(dict(input=deepcopy(p),result=analyze(p,as_of=day),stock_source_role='SYNTHETIC_TEST_ONLY'))
+                                                   ^^^^^^^^^^^^^^^^^^^^
+  File "/workspace/Twstockai/股票系統M1_v0_18/graph_core/core.py", line 296, in analyze
+    context,rows,resets,missing,gaps,cfg=_validate(payload,as_of,config)
+                                         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/workspace/Twstockai/股票系統M1_v0_18/graph_core/core.py", line 98, in _validate
+    if rows[-1]['close'] is None:raise ValueError('Missing analysis anchor close')
+                                 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+ValueError: Missing analysis anchor close
+
+======================================================================
+FAIL: test_frozen_followup_oracles (graph_core.mr2_20261101.continuation.test_diary.DiaryTests.test_frozen_followup_oracles)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/workspace/Twstockai/股票系統M1_v0_18/graph_core/mr2_20261101/continuation/test_diary.py", line 29, in test_frozen_followup_oracles
+    self.assertEqual(len(outcomes),9)
+AssertionError: 8 != 9
+
+----------------------------------------------------------------------
+Ran 10 tests in 1.658s
+
+FAILED (failures=1, errors=1)
