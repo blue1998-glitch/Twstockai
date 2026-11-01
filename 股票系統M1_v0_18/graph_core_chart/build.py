@@ -15,6 +15,8 @@ from product_candidate.build import publish_immutable
 
 NAME='M1_v019_graph_recognition_v01.html'
 VERSION='graph-recognition-view/0.1'
+NAME_V02='M1_v019_graph_recognition_v02.html'
+VERSION_V02='graph-recognition-view/0.2'
 HISTORY=ROOT/'pressure_chart/data/history-20261018/history-candidate.json'
 AUDIT_FILES=['docs/visual-discussion/20261019_latest_close_anchor/boundary_review_1617.json',
  'docs/visual-discussion/20261019_major_pressure_hierarchy/user_review.json',
@@ -70,32 +72,49 @@ def audit(result,rows):
 
 def selection(bundle,code,as_of):
     s=next(s for s in bundle['series'] if s['code']==code);f=next(f for f in s['results'] if f['as_of']==as_of);n=f['source_records']
-    return dict(schema_version='graph-recognition-selection/0.1',view_version=VERSION,code=code,as_of=as_of,
+    value=dict(schema_version='graph-recognition-selection/0.1',view_version=bundle['view_version'],code=code,as_of=as_of,
         source=deepcopy(s['source']),source_frame_id=s['numeric_frame_ids'][as_of],source_prefix_fingerprint=f['source_prefix_fingerprint'],
         bars=deepcopy(s['bars'][:n]),macd=deepcopy(s['macd'][:n]),moving_averages={k:deepcopy(v[:n]) for k,v in s['moving_averages'].items()},
         core=deepcopy(f),manual_case_audit=deepcopy(s['manual_audits'].get(as_of)),
         classification_quality='NOT_VALIDATED',action_qualification='NOT_EVALUATED',physical_android='NOT_TESTED_NEW_BUILD')
+    if bundle['view_version']==VERSION_V02:
+        value.update(schema_version='graph-recognition-selection/0.2',
+                     source_input_binding=deepcopy(s['input_bindings'][as_of]),
+                     box_evidence=deepcopy(s['box_evidence'][as_of]))
+    return value
 
 
-def make(*,extra_dates=()):
+def make(*,extra_dates=(),source_spec=None):
     parent=load_parent();history=json.loads(HISTORY.read_text());allseries=[];oracles=[]
+    if source_spec is not None:
+        from graph_core_chart.evidence import validate_source_spec,bind_input,input_binding,layers
+        validate_source_spec(source_spec,ROOT,PARENT_SHA256)
     for series in parent['history_series']:
         last=series['frames'][-1];base=series['bases'][last['chart_base']];bars=base['bars'];payload=input_for(series,last)
+        if source_spec is not None:payload=bind_input(payload,source_spec,series['code'])
         # Price records are never sampled. Only expensive analysis snapshots are
         # explicitly selected; replay shows these computed dates, not every day.
         indices=set(range(119,len(bars),120))|set(range(max(0,len(bars)-5),len(bars)))
-        indices|={i for i,r in enumerate(bars) if r['date'] in extra_dates};results=[];audits={};presentations={}
+        dates=set(extra_dates)|set(source_spec['analysis_dates'].get(series['code'],[]) if source_spec is not None else [])
+        if not dates.issubset({r['date'] for r in bars}):raise ValueError('Requested analysis date missing; never substitute nearest date')
+        indices|={i for i,r in enumerate(bars) if r['date'] in dates};results=[];audits={};presentations={};bindings={};evidence={}
         for i in sorted(indices):
             result=analyze(payload,as_of=bars[i]['date']);results.append(result);presentations[result['as_of']]=display_ids(result)
+            if source_spec is not None:
+                bindings[result['as_of']]=input_binding(payload,source_spec,series['code'],result['as_of'])
+                evidence[result['as_of']]=layers(result,bars)
             checked=audit(result,bars[:i+1])
             if checked:audits[result['as_of']]=checked
         source=next(s for s in history['series'] if s['code']==series['code'])
-        allseries.append(dict(code=series['code'],exchange=series['exchange'],source=deepcopy(series['source']),
+        saved=dict(code=series['code'],exchange=series['exchange'],source=deepcopy(series['source']),
             price_basis_id=last['chart_base'],bars=deepcopy(bars),macd=deepcopy(base['macd']),moving_averages=deepcopy(base['moving_averages']),
             results=results,presentations=presentations,manual_audits=audits,numeric_frame_ids={r['as_of']:next(f['frame_id'] for f in series['frames'] if f['as_of']==r['as_of']) for r in results},
             source_gaps={k:deepcopy(source[k]) for k in ['known_calendar_missing_dates','calendar_status','actions_coverage','historical_publication_timing']},
-            macd_parameters=deepcopy(series['macd_parameters'])))
-    bundle=dict(schema_version='graph-recognition-chart-bundle/0.1',view_version=VERSION,series=allseries,
+            macd_parameters=deepcopy(series['macd_parameters']))
+        if source_spec is not None:saved.update(input_bindings=bindings,box_evidence=evidence)
+        allseries.append(saved)
+    bundle=dict(schema_version='graph-recognition-chart-bundle/0.2' if source_spec is not None else 'graph-recognition-chart-bundle/0.1',
+        view_version=VERSION_V02 if source_spec is not None else VERSION,series=allseries,
         immutable_numeric_parent_sha256=PARENT_SHA256,source_history_sha256=hashlib.sha256(HISTORY.read_bytes()).hexdigest(),
         sampling=dict(prices='ALL_RETAINED_ROWS_NO_SYNTHETIC_CANDLES',analysis='EVERY_120TH_RECORD_PLUS_LAST_5_AND_EXPLICIT_EXTRA_DATES',
                       replay='ONLY_PRECOMPUTED_ANALYSIS_DATES_NOT_ALL_HISTORICAL_DAYS'),physical_android='NOT_TESTED_NEW_BUILD')
@@ -108,17 +127,25 @@ def make(*,extra_dates=()):
 def render(bundle):
     here=Path(__file__).parent;raw=json.dumps(pack(bundle),ensure_ascii=False,separators=(',',':'),allow_nan=False)
     for char,escape in [('&','\\u0026'),('<','\\u003c'),('>','\\u003e'),('\u2028','\\u2028'),('\u2029','\\u2029')]:raw=raw.replace(char,escape)
-    return (here/'template.html').read_text().replace('@@STYLE@@',(here/'viewer.css').read_text()).replace('@@DATA@@',raw).replace('@@SCRIPT@@',(here/'viewer.js').read_text())
+    template=(here/'template.html').read_text();style=(here/'viewer.css').read_text();script=(here/'viewer.js').read_text()
+    if bundle['view_version']==VERSION_V02:
+        marker="new ResizeObserver(()=>draw()).observe($('chart'));"
+        if script.count(marker)!=1:raise ValueError('Original viewer initialization changed; review extension point')
+        script=script.replace(marker,(here/'viewer_v02.js').read_text()+'\n'+marker)
+        style+='\n'+(here/'viewer_v02.css').read_text()
+        template=template.replace('圖形辨識研究主圖 0.1','圖形辨識研究主圖 0.2')
+    return template.replace('@@STYLE@@',style).replace('@@DATA@@',raw).replace('@@SCRIPT@@',script)
 
 
 def main():
-    p=argparse.ArgumentParser(description=__doc__);p.add_argument('--output-dir',required=True);p.add_argument('--as-of',action='append',default=[]);a=p.parse_args();out=Path(a.output_dir).resolve()
+    p=argparse.ArgumentParser(description=__doc__);p.add_argument('--output-dir',required=True);p.add_argument('--as-of',action='append',default=[]);p.add_argument('--source-spec',help='Explicit retained-source view 0.2 spec');a=p.parse_args();out=Path(a.output_dir).resolve()
     if 'output' not in out.parts:raise ValueError('Separate immutable output leaf required')
-    bundle,oracle=make(extra_dates=a.as_of)
+    spec=json.loads(Path(a.source_spec).read_text()) if a.source_spec else None
+    bundle,oracle=make(extra_dates=a.as_of,source_spec=spec)
     if unpack(pack(bundle))!=bundle:raise ValueError('Transport precision mismatch')
-    files={NAME:render(bundle).encode(),'selection-oracle.json':json.dumps(oracle,ensure_ascii=False,indent=2).encode(),
+    files={NAME_V02 if spec is not None else NAME:render(bundle).encode(),'selection-oracle.json':json.dumps(oracle,ensure_ascii=False,indent=2).encode(),
         'build-verification.json':json.dumps(dict(status='PASS',source_records={s['code']:len(s['bars']) for s in bundle['series']},analysis_frames=len(oracle['cases']),
-            numeric_parent_sha256=PARENT_SHA256,view_version=VERSION,physical_android='NOT_TESTED_NEW_BUILD'),ensure_ascii=False,indent=2).encode()}
+            numeric_parent_sha256=PARENT_SHA256,view_version=bundle['view_version'],physical_android='NOT_TESTED_NEW_BUILD'),ensure_ascii=False,indent=2).encode()}
     for s in bundle['series']:files[f"core-{s['code']}-latest.json"]=json.dumps(s['results'][-1],ensure_ascii=False,indent=2).encode()
     for name,raw in files.items():print(name,publish_immutable(out/name,raw),len(raw),hashlib.sha256(raw).hexdigest(),flush=True)
 

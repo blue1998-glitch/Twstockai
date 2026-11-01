@@ -1,0 +1,10 @@
+/* Additive evidence layout; original canvas and touch controls are reused. */
+#evidence>.toolbar{position:sticky;top:-12px;background:#192b3e;padding:5px 0;z-index:1;border-bottom:1px solid #7297b7}
+#evidenceBody section{border-top:1px solid #506c86;padding:4px 0 12px;margin-top:10px}
+#evidenceBody h3{font-size:16px;color:#9ddbc6;margin:10px 0}
+.positions{border-left:3px solid #82d4bc;padding-left:8px;margin:8px 0}.positions p{margin:5px 0}
+.positions [data-relation=pressure-band]{color:#f1d49b}
+.tableWrap{max-width:100%;overflow:auto;max-height:310px;border:1px solid #35536e;border-radius:5px}
+table{border-collapse:collapse;min-width:100%;font-size:12px}td,th{padding:7px 5px;text-align:left;white-space:nowrap;border-bottom:1px solid #35536e}th{position:sticky;top:0;background:#24394f}
+#evidenceBody details{max-width:100%}#evidenceBody section>p{line-height:1.65}#limitsBody{overflow-wrap:anywhere}
+@media(max-width:450px){#evidence{max-height:88vh;padding:9px}#evidenceBody h3{font-size:15px}table{font-size:11px}}

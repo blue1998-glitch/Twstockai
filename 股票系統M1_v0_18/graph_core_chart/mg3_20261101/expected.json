@@ -1,0 +1,79 @@
+{
+  "core_version": "graph-recognition-research/0.2",
+  "view_version": "graph-recognition-view/0.2",
+  "manual_box": {
+    "start": "2025-04-07",
+    "end": "2025-06-02",
+    "records": 39,
+    "role": "LATER_MANUAL_AUDIT_ONLY"
+  },
+  "automatic_local": {
+    "start": "2025-04-08",
+    "end": "2025-05-13",
+    "records": 25,
+    "L3_id": "sha256:84d06011ea42c8890e2c271c1612ccd92341c82696721b9519bace0af364aa32",
+    "L6_id": "sha256:8bc16b7b1f4d83cc1cdf9f4ffc5644941e58dcd2356a6c1fd02b66695d43bdd5",
+    "L6_absent_at": "2025-05-14",
+    "L6_present_at": "2025-05-27",
+    "breakdown_at": "2025-06-02",
+    "breakdown_still_present_at": "2025-06-03"
+  },
+  "return_counterexamples": {
+    "6488": {
+      "box_id": "sha256:13a026649fd71d83a35d9e82ae79d75ea804d2340c5a2d1f39b646e65ee2843f",
+      "source_start": "2022-07-22",
+      "source_end": "2022-08-02",
+      "scale": "0.03",
+      "event": {
+        "bounds_id": "sha256:13a026649fd71d83a35d9e82ae79d75ea804d2340c5a2d1f39b646e65ee2843f",
+        "close": "458.00",
+        "date": "2022-09-08",
+        "first_observed_at": "2022-09-08",
+        "location": "INSIDE",
+        "previous": "BELOW",
+        "type": "RETURN_IN_RANGE_AFTER_BREAKDOWN",
+        "volume": {
+          "baseline_includes_current": false,
+          "current_shares": "1958000",
+          "qualification": "DESCRIPTIVE_1_5_20_RECORD_COMPARISONS_NOT_VOLUME_EXPANSION_OR_SETTLEMENT_RULE",
+          "ratio_to_previous_means": {
+            "1": "0.81856187290969899665551839464882943143812709030100",
+            "20": "0.91529543754674644727000747943156320119670905011219",
+            "5": "0.93149381541389153187440532825880114176974310180780"
+          }
+        }
+      }
+    },
+    "8069": {
+      "box_id": "sha256:e5b3ff96d694209574ccf76edb787483b9fcef5a074ddd6ccad8e5e82fbeda1b",
+      "source_start": "2021-12-13",
+      "source_end": "2021-12-21",
+      "scale": "0.03",
+      "event": {
+        "bounds_id": "sha256:e5b3ff96d694209574ccf76edb787483b9fcef5a074ddd6ccad8e5e82fbeda1b",
+        "close": "130.00",
+        "date": "2022-03-16",
+        "first_observed_at": "2022-03-16",
+        "location": "INSIDE",
+        "previous": "BELOW",
+        "type": "RETURN_IN_RANGE_AFTER_BREAKDOWN",
+        "volume": {
+          "baseline_includes_current": false,
+          "current_shares": "15050000",
+          "qualification": "DESCRIPTIVE_1_5_20_RECORD_COMPARISONS_NOT_VOLUME_EXPANSION_OR_SETTLEMENT_RULE",
+          "ratio_to_previous_means": {
+            "1": "0.78467153284671532846715328467153284671532846715328",
+            "20": "0.62268948068524805176804506534102075562644423619171",
+            "5": "0.69483559404980655407713829305903101598352708704605"
+          }
+        }
+      }
+    }
+  },
+  "all_original_1101_ids_and_geometry_retained": true,
+  "whole_range_vs_pressure_relation_separate": true,
+  "primary_pressure_id": null,
+  "physical_android": "NOT_TESTED_NEW_BUILD",
+  "deployment": "NOT_DEPLOYED",
+  "work_library_originals": "NOT_OBTAINED_NOT_READ"
+}

@@ -1,3 +1,15 @@
+# 2026-11-01 最新有效｜M-G3核心0.2接互動研究主圖
+
+入口[新主圖與操作](股票系統M1_v0_18/graph_core_chart/mg3_20261101/README.md)、REPORT、verification及actual；獨立0.2 HTML在graph_core_chart/output/mg3_20261101，原0.1成品／原件與M-G1／M-G2／M-R2歷史保留。沿原builder、模板／JS／CSS與下載，不改graph_core0.2、F-01、參數、帳務或另建引擎。三層分列形成來源／形成後觀察／歷史脈絡；整箱位置與壓力帶位置分開，歷史跌出／回箱／停止比較不刪，null不補0，勾選不排名。
+
+四股4854原K／MACD／MA及69個明示分析前綴保留；全部新結果與未改核心直接輸出逐值一致。1101 L3/L6自動25筆仍4/8～5/13，5/14不提前L6、5/27已知、6/3仍留6/2失守；39筆只在獨立晚來人工對照。原1101所有IDs／幾何／父子／後繼及10/12～16事件原樣。新adapter只補2884原官方7/1 X不比價警告，核既存月檔SHA／日期，不改原父檔、不推公司行動、不混FinMind；舊箱／高點F-01距離null。6488／8069原跌破回箱不升正式恢復。
+
+8個唯一方法首次PASS；136 Chromium檢查含81份精確下載，桌面及三手機尺寸、JS錯誤／外部請求0。509份原件SHA／長度與舊0.1重繪bytes全保留；無本輪失敗批次、不加歷史PASS。沒有重跑市場／資金全套或抓來源。完整單檔成品已可供下載檢視；未公開部署，GitHub不直接執行HTML，Android實機及使用者端實際開啟未驗收，原file://阻擋未重試／未繞過。
+
+M-G1／M-G2 Library原件未取得／未讀，Work別名G6/G12/S3未有實讀映射，不猜別名；全部原1101 IDs均已逐值保護。分類NOT_VALIDATED、正式false／主壓力null、公司行動／歷史可得／日曆UNKNOWN、1101與70/2/其中8/真實合格0保持。既有來源／FinMind／M-R2受限原件未加入新成品；不代表策略或績效成立。唯一Codex自審、正常保存及固定SHA讀回；本里程碑達標即停止，不自啟下一工程。無技術人工操作；欲看圖依入口下載單一成品並開啟，不需搬來源ZIP。下方歷史完整保留。
+
+---
+
 # 2026-11-01 最新有效｜原M-R2補正：兩日有限研究日簿接線PARTIAL
 
 入口[graph_core/mr2_20261101/continuation](股票系統M1_v0_18/graph_core/mr2_20261101/continuation/README.md)、父目錄CONTRACT_0_1、REPORT與real-actual-final-summary。原M-R2續作，非新平行里程碑。新event_diary純組裝原graph0.2保存結果與同日市場摘要，外層event_diary_run沿原Journal；不辨識重算、抓來源或增READ框架。兩日研究連結完成，資格PARTIAL，不是市場原件重新驗證PASS。
