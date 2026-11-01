@@ -1,0 +1,116 @@
+{
+  "status": "BLOCKED_PROVIDER_APPROVED_HISTORICAL_AUTOMATION_SCOPE_NOT_PROVED",
+  "documentation": [
+    {
+      "name": "twse-history-page",
+      "url": "https://wwwc.twse.com.tw/zh/trading/historical/mi-index.html",
+      "sha256": "6e828fdfed372368843a6ecd99dabe2463691e99ed6afd43029d8cc91c48b4de",
+      "bytes": 18618,
+      "at": "2026-11-01T14:56:36.531840+00:00",
+      "status": "RECEIVED"
+    },
+    {
+      "name": "tpex-history-page",
+      "url": "https://www.tpex.org.tw/zh-tw/mainboard/trading/info/pricing.html",
+      "sha256": "065717a1a5192e3a1a863f103e1b3863a031bfd0786cd060295e24548494a235",
+      "bytes": 10997,
+      "at": "2026-11-01T14:56:37.845729+00:00",
+      "status": "RECEIVED"
+    },
+    {
+      "name": "twse-web-report.txt",
+      "url": "https://wwwc.twse.com.tw/res/js/web-report.js?-0I2",
+      "sha256": "fb42365f6eb8a1516408e7604f502c134c5e54de0c4f6449c6e10c2915685058",
+      "bytes": 19650,
+      "local_file_mtime_utc": "2026-11-01T14:57:17.629616+00:00",
+      "timestamp_role": "LOCAL_SAVED_TIME_NOT_PUBLISH_TIME",
+      "status": "RECEIVED_DOCUMENTATION_NOT_QUOTES"
+    },
+    {
+      "name": "tpex-main.txt",
+      "url": "https://www.tpex.org.tw/rsrc/js/main.js",
+      "sha256": "cfbd8c64c748149f039f1d4f1c5b3ba4511039b9c9e60d8ed53fd9624edc587a",
+      "bytes": 45227,
+      "local_file_mtime_utc": "2026-11-01T14:57:19.083051+00:00",
+      "timestamp_role": "LOCAL_SAVED_TIME_NOT_PUBLISH_TIME",
+      "status": "RECEIVED_DOCUMENTATION_NOT_QUOTES"
+    },
+    {
+      "name": "tpex-tables.txt",
+      "url": "https://www.tpex.org.tw/rsrc/js/tables.js",
+      "sha256": "085fd65b4e15e2af4f3adb3f256f0058d0176dd2d98ce53217ede16667a04a90",
+      "bytes": 168139,
+      "local_file_mtime_utc": "2026-11-01T14:57:18.214874+00:00",
+      "timestamp_role": "LOCAL_SAVED_TIME_NOT_PUBLISH_TIME",
+      "status": "RECEIVED_DOCUMENTATION_NOT_QUOTES"
+    },
+    {
+      "name": "twse-terms.txt",
+      "url": "https://www.twse.com.tw/zh/terms/use.html",
+      "sha256": "44954db7ca4991def532a3162539ba1aa8101ce76bbe5576b7641be10c2a8be5",
+      "bytes": 15531,
+      "local_file_mtime_utc": "2026-11-01T14:57:20.789874+00:00",
+      "timestamp_role": "LOCAL_SAVED_TIME_NOT_PUBLISH_TIME",
+      "status": "RECEIVED_DOCUMENTATION_NOT_QUOTES"
+    },
+    {
+      "name": "tpex-terms.txt",
+      "url": "https://www.tpex.org.tw/zh-tw/gtsm_disclaimer.html",
+      "sha256": "5c58588192ce8fea2cac78019d679c0aef09243621ebad11aa1be9eca9006999",
+      "bytes": 13896,
+      "local_file_mtime_utc": "2026-11-01T14:57:21.835689+00:00",
+      "timestamp_role": "LOCAL_SAVED_TIME_NOT_PUBLISH_TIME",
+      "status": "RECEIVED_DOCUMENTATION_NOT_QUOTES"
+    }
+  ],
+  "openapi_specs": [
+    {
+      "market": "TWSE",
+      "retained_spec_sha256": "06e1cea82448361e733a0ad1ae16e52f5d5d6b71905acd078472f852c32c0eb0",
+      "path": "/exchangeReport/STOCK_DAY_ALL",
+      "documented_parameters": [],
+      "role": "REUSED_FM1_OFFICIAL_OPENAPI_SPEC_NOT_FRESH_HISTORICAL_RESPONSE"
+    },
+    {
+      "market": "TPEX",
+      "retained_spec_sha256": "05af7755d0d528626c104f7a8ccd7b00c6a0cf228d30bcb4669020e514eb0c7e",
+      "path": "/tpex_mainboard_daily_close_quotes",
+      "documented_parameters": [],
+      "role": "REUSED_FM1_OFFICIAL_OPENAPI_SPEC_NOT_FRESH_HISTORICAL_RESPONSE"
+    }
+  ],
+  "findings": [
+    {
+      "market": "TWSE",
+      "documented_form_api": "/afterTrading/MI_INDEX",
+      "form_parameters": [
+        "date",
+        "type"
+      ],
+      "observed_type_options": [
+        "ALLBUT0999",
+        "TIB"
+      ],
+      "data_response_test": "NOT_REQUESTED"
+    },
+    {
+      "market": "TPEX",
+      "documented_action": "afterTrading/dailyQuotes",
+      "pattern": "/www/{LANG}/{ACTION}",
+      "form_parameter": "date",
+      "turnstile_observed": true,
+      "data_response_test": "NOT_REQUESTED"
+    }
+  ],
+  "terms_excerpt": "非依交易所同意之方式或經同意者，禁止透過包括但不限於自動化裝置、指令碼、自動程式、蜘蛛程式、爬蟲程式或擷取程式等方式下載本網站之軟體或資料。",
+  "government_open_data_exception": "PRESENT_BUT_APPLICABILITY_TO_ANNUAL_HISTORICAL_SITE_DOWNLOADS_NOT_ESTABLISHED",
+  "historical_response_refused_by_server": false,
+  "historical_bulk_or_new_month_requests": 0,
+  "multi_historical_date_price_or_unit_comparison": "NOT_EXECUTED",
+  "request_frequency_permission": "UNKNOWN_NO_BACKFILL_STARTED",
+  "not_a_claim": "Does not prove all legal historical sources are unavailable",
+  "blocked_403_not_retried": true,
+  "paid_or_bypass_used": false,
+  "decision_needed": "An explicit provider-approved historical resource, permitted automation scope and rate; not a user override of provider terms",
+  "terms_excerpt_role": "NORMALIZED_COMMON_SUMMARY_NOT_VERBATIM"
+}

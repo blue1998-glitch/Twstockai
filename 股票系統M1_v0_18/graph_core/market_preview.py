@@ -28,12 +28,21 @@ def build(root,run_id):
         if not stock.get('result_key'):continue
         saved=Journal(root/'results').read(stock['result_key'])['value'];r=saved['result'];payload=saved['input'];bars=payload['bars'];as_of=batch['as_of']
         resets=[i for i,b in enumerate(bars) if b['date'] in r['data_gaps']['basis_resets']]
+        indicators=saved.get('indicators')
         series.append(dict(code=stock['code'],exchange=stock['market'],source=dict(id=r['context']['source_id'],name=stock['name'],role='OFFICIAL_BULK_NATIVE_SHARES_NOT_OLD_MONTHLY_DATA',historical_available_at='UNKNOWN'),
-            price_basis_id=r['context']['price_basis_id'],bars=deepcopy(bars),macd=macd([b['close'] for b in bars],resets=resets),moving_averages=source_segment_ma(bars,resets),
+            price_basis_id=r['context']['price_basis_id'],bars=deepcopy(bars),macd=deepcopy(indicators['macd']) if indicators else macd([b['close'] for b in bars],resets=resets),moving_averages=deepcopy(indicators['moving_averages']) if indicators else source_segment_ma(bars,resets),
             results=[r],presentations={as_of:display_ids(r)},manual_audits={},numeric_frame_ids={as_of:fingerprint(dict(kind='FM1_RESEARCH_INPUT_FRAME',result_id=r['result_id'],prefix=r['source_prefix_fingerprint']))},
             source_gaps=dict(calendar_status='OBSERVED_BATCH_DATES_ONLY_NOT_COMPLETE_CALENDAR',actions_coverage='UNKNOWN',historical_publication_timing='UNKNOWN'),
             macd_parameters=PARAMETERS,input_bindings={as_of:dict(source_id=r['context']['source_id'],price_basis_id=r['context']['price_basis_id'],basis_break_dates=r['data_gaps']['basis_resets'],historical_available_at='UNKNOWN',source_role='NEW_OFFICIAL_BULK_DAILY_NOT_OLD_MONTHLY_NOT_FINMIND')},
             box_evidence={as_of:layers(r,bars)}))
+        if stock.get('history_source_provenance'):
+            series[-1]['source'].update(role=stock['history_source_provenance']['role'],volume_provenance=deepcopy(stock['history_source_provenance']))
+            series[-1]['source_gaps']=deepcopy(stock['history_source_provenance'].get('retained_source_gaps',
+                dict(calendar_status='UNKNOWN_OLD_RECORD_MISSING_GAP_BINDING',actions_coverage='UNKNOWN',historical_publication_timing='UNKNOWN')))
+            series[-1]['source']['indicator_provenance']={k:v for k,v in (indicators or {}).items() if k not in ('macd','moving_averages')}
+            series[-1]['input_bindings'][as_of].update(source_role=stock['history_source_provenance']['role'],
+                core_input_fingerprint=fingerprint(payload),retained_source_ledger_sha256=stock['history_source_provenance']['source_ledger_sha256'],
+                corporate_action_type='UNKNOWN',cross_basis_comparability='NOT_CERTIFIED')
     if not series:raise ValueError('No stored core output to preview; no fabricated chart')
     bundle=dict(schema_version='graph-recognition-chart-bundle/0.2',view_version='graph-recognition-view/0.2',series=series,
         sampling=dict(analysis='CURRENT_SAVED_BATCH_ONLY',prices='ONLY_CAPTURED_OFFICIAL_ROWS_NOT_BACKFILLED'),physical_android='NOT_TESTED_NEW_BUILD',market_run_id=run_id)
@@ -41,14 +50,15 @@ def build(root,run_id):
     shell=render(bundle)
     # Existing source-specific M-G3 note applies to its older four-stock parent,
     # not this new native-share bulk feed. All actual source records remain exact.
-    shell=shell.replace('8069原來源顯示精度／單位限制保留，未認證FinMind精確股數。','本頁官方整批API明示原生成交股數；舊TPEx月表仟股／張×1000屬不同來源，不能混用認證。')
+    volume_note='本頁含既存官方月源；TWSE原股數，TPEx逐月張／仟股×1000不增加精度，不是新整批原生股數認證。' if any(s.get('history_source_provenance') for s in batch['stocks']) else '本頁官方整批API明示原生成交股數；舊TPEx月表仟股／張×1000屬不同來源，不能混用認證。'
+    shell=shell.replace('8069原來源顯示精度／單位限制保留，未認證FinMind精確股數。',volume_note)
     shell=shell.replace('>約五年<','>全部累積日K<').replace('已算分析日為每120筆樣本與最近5交易日；K線與查詢保留全部真實來源，不補休市K。其他日期須離線CLI加算，不在UI補算。','本頁只有本次批次已保存分析日；價格僅實際累積官方日K，不宣稱五年或完整交易日曆。原四股歷史主圖獨立保留，不拼接缺失日期。')
     state=dict(summary=batch['summary'],stocks=batch['stocks'])
     data=json.dumps(state,ensure_ascii=False,separators=(',',':')).replace('<','\\u003c').replace('&','\\u0026')
     js=(Path(__file__).parent/'fm1_20261101/search.js').read_text()
     addon='<script id="market-state" type="application/json">'+data+'</script><script>'+js+'</script>'
     html=shell.replace('</body>',addon+'</body>')
-    out=root/'preview'/run_id/'market-v03.html';publish_immutable(out,html.encode())
+    out=root/'preview'/run_id/'market-v04.html';publish_immutable(out,html.encode())
     return dict(path=str(out),bytes=len(html.encode()),sha256=digest(html.encode()),stocks=len(batch['stocks']),charts=len(series),transport='PRIVATE_FILE_OR_LOOPBACK_ONLY_NOT_DEPLOYED',android='NOT_TESTED')
 
 
