@@ -1,3 +1,13 @@
+# 2026-11-01 最新有效｜M2-5 F-01跨基底相對錨點數值修復
+
+入口[graph_core/f01_20261101](股票系統M1_v0_18/graph_core/f01_20261101/README.md)、CONTRACT／REPORT、修前後official摘要及tests-targeted.log。F-01已重現並修復：不可比舊箱的pressure_distance_fraction／relative_width_to_anchor、已停止舊高點distance_to_anchor改null；新增anchor_comparison_reason沿原停止事件，不補0。新結果graph-recognition-research/0.2，輸入0.1不變、舊0.1結果不覆寫／不遷移。可比物件原值、歷史箱／高低點／幾何／事件／統計及ID完整保留；原壓力篩選與primary_pressure_id=null不變，不誇大為錯誤交易。
+
+重用庫內官方2884三至七月原件，不查FinMind；07-21／22各3個不可比舊箱與4個停止高點的非null違規計數全部歸零。六合成／兩真實截點的全結果除授權欄位及版本／result_id外逐值一致，真實完整輸入／輸出只留Git外。12唯一方法首次全PASS＝8新增＋4必要回歸，無失敗修正、不累加案例或舊18／81／13；不重跑市場／資金／UI。12個其他核心函式及DEFAULT_CONFIG原文保持，10個來源相依檔及舊M2-3證據不改。
+
+起始本地／遠端df4e4b5dc4a6c01e984fbe973701cb066615eae9且淨，唯一Codex自審、正常保存及固定SHA讀回；未見其他活躍寫入，不開代理／worktree／分支。Library M2-4報告／ZIP原件未取得／未讀；依使用者規格及原件實跑，不能稱Work已獨立核本輪成果。歷史可得時間／日曆／公司行動UNKNOWN、分類NOT_VALIDATED、正式false／主壓力null、1101與70/2/其中8/真實總淨合格0、來源parents保持。不接M-R1正式規則、不執行M-R2。F-01達標即停止，無人工操作；下方舊交接完整保留。
+
+---
+
 # 2026-10-30 最新有效｜M2-3 FinMind有限日線接既有圖形核心
 
 入口[graph_core/finmind_20261030](股票系統M1_v0_18/graph_core/finmind_20261030/README.md)、CONTRACT、REPORT及real-validation-summary。新finmind_adapter純轉欄位、finmind_run有限HTTP／本地IO，重用原graph_core.analyze與TWSE來源parser；原算法／參數／主壓力及資金程式未改。2884固定2026-03-01～07-22，一次查得98筆，07-21／22分別97／98筆實跑；兩日OHLC及原股數與既存官方相符，前綴／後日改寫數值相同。07-01不比價只作basis break，事件類型未知，不推定除權息或認證跨基底結構。

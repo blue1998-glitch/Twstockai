@@ -1,0 +1,25 @@
+{
+  "new_result_version": "graph-recognition-research/0.2",
+  "allowed_changes": [
+    "schema_version",
+    "result_id",
+    "boxes[*].pressure_distance_fraction",
+    "boxes[*].relative_width_to_anchor",
+    "reference_candidates[*].distance_to_anchor",
+    "boxes[*].anchor_comparison_reason (new)",
+    "reference_candidates[*].anchor_comparison_reason (new)"
+  ],
+  "incomparable_box_fields": {
+    "pressure_distance_fraction": null,
+    "relative_width_to_anchor": null
+  },
+  "incomparable_reference_fields": {
+    "distance_to_anchor": null
+  },
+  "reason": "OBSERVATION_STOPPED_AT_DATA_OR_BASIS_GAP",
+  "comparable_numeric_fields": "EXACTLY_EQUAL_TO_BEFORE",
+  "all_other_fields": "EXACTLY_EQUAL_TO_BEFORE",
+  "primary_pressure_id": null,
+  "classification_quality": "NOT_VALIDATED",
+  "action_qualification": "NOT_EVALUATED"
+}

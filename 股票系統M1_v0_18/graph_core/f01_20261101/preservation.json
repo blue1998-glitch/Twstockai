@@ -1,0 +1,69 @@
+{
+  "status": "PASS",
+  "unchanged_functions": [
+    "fingerprint",
+    "number",
+    "ratio",
+    "relation",
+    "trace_reference",
+    "_validate",
+    "_pivots",
+    "_volume",
+    "_range",
+    "_boxes",
+    "volume_observation",
+    "_path"
+  ],
+  "same_function_set": true,
+  "default_config_source_exactly_unchanged": true,
+  "protected_dependencies": [
+    {
+      "path": "graph_core/finmind_adapter.py",
+      "unchanged": true
+    },
+    {
+      "path": "graph_core/finmind_run.py",
+      "unchanged": true
+    },
+    {
+      "path": "graph_core_chart/build.py",
+      "unchanged": true
+    },
+    {
+      "path": "tests/test_graph_core.py",
+      "unchanged": true
+    },
+    {
+      "path": "src/source_audit.py",
+      "unchanged": true
+    },
+    {
+      "path": "pressure_chart/data/history-20261018/raw/2884_2026-03.json",
+      "unchanged": true
+    },
+    {
+      "path": "pressure_chart/data/history-20261018/raw/2884_2026-04.json",
+      "unchanged": true
+    },
+    {
+      "path": "pressure_chart/data/history-20261018/raw/2884_2026-05.json",
+      "unchanged": true
+    },
+    {
+      "path": "pressure_chart/data/history-20261018/raw/2884_2026-06.json",
+      "unchanged": true
+    },
+    {
+      "path": "pressure_chart/data/history-20261018/raw/2884_2026-07.json",
+      "unchanged": true
+    }
+  ],
+  "historical_finmind_evidence_paths_modified": false,
+  "source_before_sha256": "268f5a6eea1cd1e468ec2f79b0164e8d7ce8d91817538903c691e93d0e3d322c",
+  "source_after_sha256": "0d844f8528dbca874c32007edf221f3c54fd6a078415dba354a4b8d51e2fdcfc",
+  "work_library_originals": "NOT_OBTAINED_NOT_READ",
+  "test_methods": 12,
+  "new_methods": 8,
+  "necessary_regressions": 4,
+  "failed_methods": 0
+}

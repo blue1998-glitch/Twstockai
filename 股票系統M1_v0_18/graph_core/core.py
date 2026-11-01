@@ -5,7 +5,7 @@ from decimal import Decimal, localcontext
 import hashlib
 import json
 
-VERSION = 'graph-recognition-research/0.1'
+VERSION = 'graph-recognition-research/0.2'
 DEFAULT_CONFIG = dict(reversals=['0.03','0.06','0.12'], cluster_spread_fraction='0.35',
     enumeration='LONGEST_COMPATIBLE_RUN_AND_LATEST_FOUR_TURN_SEED',
     minimum_high_turns=2, minimum_low_turns=2,
@@ -254,8 +254,9 @@ def _compare(boxes,anchor):
     for box in boxes:
         lo,hi=map(number,box['research_bounds']['pressure_band']);cl=number(anchor['close'])
         box['anchor_relation']=relation(cl,lo,hi) if box['usable_at_anchor'] else 'NOT_COMPARABLE_AFTER_GAP'
-        box['pressure_distance_fraction']=ratio(max(lo-cl,Decimal(0)),cl)
-        box['relative_width_to_anchor']=ratio(number(box['research_bounds']['high'])-number(box['research_bounds']['low']),cl)
+        box['pressure_distance_fraction']=ratio(max(lo-cl,Decimal(0)),cl) if box['usable_at_anchor'] else None
+        box['relative_width_to_anchor']=ratio(number(box['research_bounds']['high'])-number(box['research_bounds']['low']),cl) if box['usable_at_anchor'] else None
+        box['anchor_comparison_reason']=None if box['usable_at_anchor'] else 'OBSERVATION_STOPPED_AT_DATA_OR_BASIS_GAP'
         box['parent_ids']=[]
     # Strict interval + geometric containment, never just older/bigger wins.
     for child in boxes:
@@ -313,10 +314,12 @@ def analyze(payload,*,as_of,config=None):
         references=[]
         for p in points:
             if p['kind']!='HIGH':continue
+            path=trace_reference(rows,p['price'],p['confirmed_index'],stop_dates=resets)
+            comparable=path['last_relation']!='NOT_COMPARABLE_AFTER_GAP'
             references.append(dict(pivot_id=p['id'],scale=p['scale'],price=p['price'],source_dates=p['source_dates'],
                 occurred_at=p['occurred_at'],first_observed_at=p['first_observed_at'],confirmed_at=p['confirmed_at'],
-                distance_to_anchor=ratio(abs(number(anchor['close'])-number(p['price'])),number(anchor['close'])),
-                path=trace_reference(rows,p['price'],p['confirmed_index'],stop_dates=resets),
+                distance_to_anchor=ratio(abs(number(anchor['close'])-number(p['price'])),number(anchor['close'])) if comparable else None,
+                anchor_comparison_reason=None if comparable else 'OBSERVATION_STOPPED_AT_DATA_OR_BASIS_GAP',path=path,
                 qualification='AUTOMATIC_SWING_REFERENCE_NOT_UNIQUE_IMPORTANT_REPRESENTATIVE'))
         result=dict(schema_version=VERSION,context=context,as_of=as_of,anchor=anchor,parameters=cfg,source_prefix_fingerprint=fingerprint(rows),
             source_records=len(rows),anchor_volume=volume_observation(rows,len(rows)-1,resets),pivots=points,pending_extrema=pending,boxes=boxes,reference_candidates=references,comparison=comparison,
