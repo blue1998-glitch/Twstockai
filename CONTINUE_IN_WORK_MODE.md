@@ -1,3 +1,13 @@
+# 2026-11-01 M-FM3｜免費歷史接線PARTIAL，原Cloud單一批次續跑中
+
+最新工程與非行情證據：[graph_core/fm3_20261101/README.md](股票系統M1_v0_18/graph_core/fm3_20261101/README.md)、public-summary及verification。既有普通股參照1986（來源分類日期11/2、行情截止10/30，不是歷史母體認證）；交付快照239檔歷史回應、193多日研究、2短史、43品質拒用、1缺錨點，1747暫緩。新增189多日／191可搜尋開圖（後者含2單日），不是四股重算或全市場完成。
+
+原FinMind helper／Journal／core0.2／M-G3與指標公式接線，原核心與策略不改；預算240/h低於無token300/h，未收到供應者拒絕。私人單一續跑程序已啟動且交付檢查為等待下一保守時窗，沿檢查點完成固定參照，不需逐批人工續派；程序不是新Codex／代理，不自行Git寫入。程式變更、來源拒絕或環境失活會停，持久性UNKNOWN。後續先讀 `/workspace/twstockai-local-data/fm3_20261101/runtime/fm3-continuation.json` 真實狀態，不把本公開快照當即時新數字，也不啟第二個worker。完整行情／結果／PNG／個股分片只在Git外。
+
+18唯一Python方法、最終32 Chromium檢查／24完整下載；同參照重送0API／0核心。兩個原零價缺口改明示null與重暖，原件及初次拒用留史；browser封套helper失敗留Git外，不公開原行情log。Android實機未測、固定手機網址未部署、日排程未啟用，下一真實日／新交易日表版本尚未驗證。正式false／NOT_VALIDATED／主壓力null、來源parents及原拒算保持。原唯一Codex於同分支保存讀回；本輪不以PASS稱全市場完成，不付費、公開資料、部署、下單或新架構。
+
+---
+
 # 2026-11-01 最新有效｜M-FM2歷史補建PARTIAL：新歷史0日、既存真實多日接線4檔
 
 入口 [M-FM2實際結果與來源阻塞](股票系統M1_v0_18/graph_core/fm2_20261101/README.md)、public-summary、source-boundary及verification。兩官方歷史頁日期表單／JS與條款已讀，但歷史自動下載同意方式／政府開放例外適用範圍未證；未發歷史行情請求、不猜參數或繞限制。新取得歷史交易日0，不代表所有合法來源不存在。完整年度全市場歷史瓶頸尚未解除，不以四股或合成PASS冒稱M-FM2完成。

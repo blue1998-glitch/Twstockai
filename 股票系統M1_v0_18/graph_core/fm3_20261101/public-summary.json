@@ -1,0 +1,75 @@
+{
+  "milestone": "M-FM3",
+  "status": "PARTIAL_CONTINUATION_RUNNING_NOT_FULL_MARKET_COMPLETE",
+  "source": "FinMind Free TaiwanStockPrice individual histories",
+  "reference_ordinary_stocks": 1986,
+  "reference_by_market": {
+    "TPEX": 897,
+    "TWSE": 1089
+  },
+  "official_quote_as_of": "2026-10-30",
+  "reference_classification_source_dates": {
+    "TPEX": "2026-11-02",
+    "TWSE": "2026-11-02"
+  },
+  "current_reference_is_historical_universe_certification": false,
+  "requested_start": "2021-10-18",
+  "stock_history_responses_received": 239,
+  "validated_searchable_charts": 195,
+  "sufficient_history_supplied_prefix_analysis": 193,
+  "newly_searchable_codes_excluding_old_four": 191,
+  "newly_analyzed_multiday_excluding_old_four": 189,
+  "terminal_counts": {
+    "ANALYZED_FINMIND_HISTORY": 193,
+    "DATA_QUALITY_REFUSED": 43,
+    "MISSING_ANCHOR_QUOTE": 1,
+    "RATE_OR_PROVIDER_DEFERRED": 1747,
+    "INSUFFICIENT_HISTORY": 2
+  },
+  "analysis_by_market": {
+    "TWSE": 191,
+    "TPEX": 2
+  },
+  "missing_history_response": 0,
+  "insufficient_short_history": 2,
+  "missing_anchor_quote": 1,
+  "data_quality_refused": 43,
+  "provider_permission_or_http_denials": 0,
+  "deferred_by_conservative_local_budget": 1747,
+  "local_api_request_slots": 240,
+  "conservative_anonymous_hourly_budget": 240,
+  "documented_anonymous_hourly_limit": 300,
+  "local_budget_is_not_provider_rate_denial": true,
+  "paid_or_token_route_used": false,
+  "enough_history_definition": "Original graph core completed supplied multi-day prefix and original MACD histogram warmed up; not complete five-year/action/calendar/strategy certification",
+  "history_records_distribution": {
+    "1222": 178,
+    "1215": 9,
+    "593": 1,
+    "184": 1,
+    "1156": 1,
+    "1216": 1,
+    "1217": 1,
+    "147": 1,
+    "1": 2
+  },
+  "source_and_result_readback": "PASS_FOR_CAPTURED_AND_SAVED_SUBSET_NOT_FULL_MARKET",
+  "real_same_reference_replay_new_api_requests": 0,
+  "real_same_reference_replay_new_core_calls": 0,
+  "android_fixed_entry": "NOT_DEPLOYED",
+  "physical_android": "NOT_TESTED_NEW_BUILD",
+  "storage_persistence": "UNKNOWN",
+  "data_qualified": false,
+  "execution_qualified": false,
+  "historical_signal_eligible": false,
+  "primary_pressure_id": null,
+  "policy_authorized": false,
+  "continuation_at_delivery": {
+    "status": "WAITING_CONSERVATIVE_FREE_BUDGET",
+    "observed_at": "2026-11-01T16:36:20.543426+00:00",
+    "next_conservative_window_at": "2026-11-01T17:24:47.947918+00:00",
+    "process_alive_verified": true,
+    "automatic_git_writes": false,
+    "persistence": "UNKNOWN"
+  }
+}

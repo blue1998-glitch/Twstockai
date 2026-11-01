@@ -200,3 +200,80 @@ def assess_integer_lot_display(*, official_unit, displayed_value):
     return dict(official_volume_precision='INTEGER_LOTS_DISPLAY',
                 finmind_volume_unit='SHARES_REPORTED', exact_shares_verified=False,
                 exact_shares_status='UNKNOWN', precise_share_comparison='REFUSED_PRECISION_INSUFFICIENT')
+
+
+def history_payload(response, request):
+    """FM3 explicit ordinary-stock scope; legacy bounded 0.1 stays unchanged.
+
+    Calendar gaps are passed to unchanged core, which resets at the next bar.
+    Current listing membership never certifies historical market membership.
+    """
+    with localcontext(Context(prec=50, rounding=ROUND_HALF_EVEN)):
+        member = request['member']
+        if (request.get('schema_version') != 'finmind-history-request/0.1' or
+                member.get('market') not in ('TWSE', 'TPEX') or
+                not member.get('cfi', '').startswith('ES') or
+                member.get('identity') != member['market'] + ':' + member['code']):
+            raise IntakeError('ORDINARY_REFERENCE_BINDING_REQUIRED')
+        start, end, anchor = map(_day, (request['start_date'], request['end_date'], request['as_of']))
+        if not start <= anchor <= end or start < _day(member['listed_at']):
+            raise IntakeError('DATE_OR_CURRENT_LISTING_SCOPE')
+        observed = _timestamp(request['retrieved_at'])
+        if anchor >= observed.astimezone(TAIPEI).date():
+            raise IntakeError('INCOMPLETE_DAY')
+        if response.get('status') != 200 or not isinstance(response.get('data'), list):
+            raise IntakeError('SOURCE_API_REFUSED')
+        expected = request['expected_dates']
+        if expected != sorted(set(expected)) or any(not start <= _day(d) <= anchor for d in expected):
+            raise IntakeError('INVALID_CALENDAR')
+        bars, dates = [], []
+        for row in response['data']:
+            d = _day(row.get('date'))
+            if dates and d <= dates[-1]:
+                raise IntakeError('DUPLICATE_OR_UNORDERED_DATE')
+            dates.append(d)
+            if not start <= d <= end or row.get('stock_id') != member['code']:
+                raise IntakeError('STOCK_OR_REQUEST_MISMATCH')
+            if d > anchor:  # future numerical values cannot affect prefix
+                continue
+            if row.get('complete', True) is not True:
+                raise IntakeError('INCOMPLETE_DAY')
+            if row.get('price_basis_id', 'FINMIND_RAW_UNVERIFIED') != 'FINMIND_RAW_UNVERIFIED':
+                raise IntakeError('BASIS_MISMATCH')
+            if row.get('source_id', 'FinMind:TaiwanStockPrice') != 'FinMind:TaiwanStockPrice':
+                raise IntakeError('SOURCE_MISMATCH')
+            if d.isoformat() not in expected:
+                raise IntakeError('UNEXPECTED_SESSION')
+            volume = _number(row.get('Trading_Volume'), volume=True)
+            fields = [('open', 'open'), ('high', 'max'), ('low', 'min'), ('close', 'close')]
+            zero_quote = volume == '0' and all(type(row.get(k)) in (str,int,Decimal) and Decimal(row[k]) == 0 for k in ['open','max','min','close'])
+            if zero_quote:
+                # Provider's four zero placeholders are not real price candles.
+                # Original zeros remain in the immutable raw; missing price stays null.
+                values = {k: None for k,_ in fields}
+            else:
+                values = {k: _number(row.get(v)) for k,v in fields}
+                o, h, l, c = (Decimal(values[k]) for k in ('open', 'high', 'low', 'close'))
+                if not l <= min(o, c) <= max(o, c) <= h:
+                    raise IntakeError('ZERO_OR_INVALID_OHLC')
+            bars.append(dict(date=d.isoformat(), **values, volume_shares_scaled=volume,
+                             complete=True, available_at=None))
+        if not bars:
+            raise IntakeError('HISTORY_UNAVAILABLE')
+        if bars[-1]['date'] != anchor.isoformat() or bars[-1]['close'] is None:
+            raise IntakeError('MISSING_ANCHOR_QUOTE')
+        resets = [bars[i]['date'] for i in range(1,len(bars)) if bars[i-1]['close'] is None and bars[i]['close'] is not None]
+        for item in request['basis_warnings']:
+            if not item.get('source_id') or item.get('kind') != 'NON_COMPARABLE_MARKER_EVENT_TYPE_UNKNOWN':
+                raise IntakeError('INVALID_BASIS_WARNING')
+            d = _day(item['date'])
+            if start <= d <= anchor: resets.append(d.isoformat())
+        return dict(schema_version='graph-recognition-input/0.1',
+                    context=dict(code=member['code'], exchange=member['market'],
+                                 source_id='FinMind:TaiwanStockPrice:' + member['identity'],
+                                 price_basis_id=member['identity'] + ':FINMIND_RAW_UNVERIFIED',
+                                 price_mode='RAW_CANDIDATE', volume_unit='SHARES_REPORTED',
+                                 source_kind='FINMIND_FREE_INDIVIDUAL_HISTORY',
+                                 corporate_action_comparability='UNKNOWN_NO_CROSS_BASIS_CERTIFICATION',
+                                 historical_publication_timing='UNKNOWN'),
+                    bars=bars, expected_dates=expected, basis_break_dates=sorted(set(resets)))

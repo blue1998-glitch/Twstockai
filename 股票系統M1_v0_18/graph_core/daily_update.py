@@ -9,13 +9,25 @@ from graph_core.market_daily import outside,capture,process,encode,Journal
 from graph_core.market_preview import build
 
 
-def update(root):
+def update(root, *, finmind_start=None, finmind_limit=240):
     root=outside(root);root.mkdir(parents=True,exist_ok=True)
     # One writer only; never overlap an existing daily run.
     with (root/'daily.lock').open('a') as lock:
         fcntl.flock(lock,fcntl.LOCK_EX|fcntl.LOCK_NB)
         state=root/'current-run.json';parent=json.loads(state.read_text())['id'] if state.exists() else None
         cap=capture(root)
+        if finmind_start is not None:
+            # Explicit alternative source run, not a cross-feed history merge.
+            from graph_core.market_finmind import reference,run
+            ref=reference(root,cap)
+            result=run(root,ref,finmind_start,limit=finmind_limit)
+            result['private_preview']=build(root,result['id'])
+            # Preserve the original official daily head and all older evidence.
+            state=root/'current-finmind-run.json';tmp=root/'current-finmind.pending'
+            tmp.write_bytes(encode(dict(id=result['id'],private_preview=result['private_preview'])))
+            with tmp.open('rb') as f:os.fsync(f.fileno())
+            os.replace(tmp,state)
+            return result
         try:result=process(root,cap,parent_run=parent)
         except ValueError as e:
             # No silent stale-data success: preserve the last head and report why
@@ -34,4 +46,4 @@ def update(root):
 
 
 if __name__=='__main__':
-    p=argparse.ArgumentParser();p.add_argument('--root',required=True);a=p.parse_args();print(json.dumps(update(a.root),ensure_ascii=False,indent=2))
+    p=argparse.ArgumentParser();p.add_argument('--root',required=True);p.add_argument('--finmind-start');p.add_argument('--finmind-limit',type=int,default=240);a=p.parse_args();print(json.dumps(update(a.root,finmind_start=a.finmind_start,finmind_limit=a.finmind_limit),ensure_ascii=False,indent=2))
