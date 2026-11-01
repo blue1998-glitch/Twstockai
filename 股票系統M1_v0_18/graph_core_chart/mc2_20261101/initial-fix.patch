@@ -1,0 +1,15 @@
+--- initial-export.py
++++ comparison_export.py
+@@ -63,8 +63,10 @@
+     if result['schema_version'] != 'graph-recognition-research/0.2': raise ValueError('Core version mismatch')
+     if result != next(r for r in series['results'] if r['as_of']==DAY): raise ValueError('Full M-G3 result mismatch')
+     if result['result_id'] != fingerprint({k:v for k,v in result.items() if k!='result_id'}): raise ValueError('Result fingerprint mismatch')
+-    source = ledger['source']
+-    if series['source'] != source or result['context']['source_id'] != source['id']:
++    source = series['source']
++    if (ledger['source_id'] != source['id'] or ledger['source_records'] != source['source_records']
++            or ledger['normalization'] != source['volume_normalization'] or ledger['volume_unit'] != source['volume_unit']
++            or result['context']['source_id'] != source['id'] or parent['source'] != source):
+         raise ValueError('Source ledger mismatch')
+     frame = parent['frames'][-1]; base = parent['bases'][frame['chart_base']]
+     for key in ('bars','macd','moving_averages'):
