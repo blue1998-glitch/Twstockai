@@ -1,3 +1,11 @@
+# 2026-11-02 最新｜M-UX1手機工作台可試，完整私人批次驗收PARTIAL
+
+入口[工作台／純合成單檔示範](股票系統M1_v0_18/graph_core/ux1_20261102/README.md)。共用原search／loader／主圖，新增手機頂部與底部分頁、市場／狀態搜尋、返回、載入回饋及非同步取消保護；新成品market-ux1-v02不覆寫舊頁。純合成120檔HTML可從GitHub下載，不能把程式碼頁當網站；file://管理員拒絕未繞過，Android實機與PWA未驗。16組合成流程、7既有安全方法及FM2四檔四尺寸16組原值下載通過；首次搜尋失焦吞點擊FAIL及修正留史，不累加中間批。
+
+原FM3／DU2 Git外資料在當前環境不可讀，沒有重抓或改稱已驗1469圖；全里程碑真實私人批次仍PARTIAL。原core0.2／MA／MACD／viewer／認證及所有資格不改，真實預覽／PNG／行情不進Git。Oracle／固定手機網址／排程維持暫停；本輪停在可用合成示範與有限真實相容驗收，不自啟部署或其他工程。下方歷史保留。
+
+---
+
 # 2026-11-02 最新｜M-DU2無損增量儲存已驗；真實新日仍未驗
 
 唯一入口：[M-DU2](股票系統M1_v0_18/graph_core/du2_20261102/README.md)、REPORT／summary／benchmark-summary及capacity-forecast。沿原Journal／主圖IO加可選無損sidecar、共用片段與固定序列化基底，原完整檔及numeric schema不遷移；HTTP與下載還原完全相同bytes／SHA。協調器0.2預設compact，固定DU1 0.1 producer可接續；原core／MA／MACD／策略不改，不建資料庫／來源0.11或catalog。

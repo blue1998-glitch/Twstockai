@@ -100,6 +100,7 @@ def build(root,run_id):
         volume_note='FinMind免費個股TaiwanStockPrice：API原報股數，同日官方原生股數另核；並非全歷史官方精確股數認證。公司行動及歷史上市身分UNKNOWN，跨基底比較未認證。'
     if incremental:
         volume_note='保留原歷史來源及新官方原生股數；跨來源／公司行動未認證，在新官方日明確重啟MA／MACD及可比觀察，不能視為連續完整帶。'
+    if batch['summary'].get('synthetic_demo'):volume_note='全部價量與代號均為合成；不是FinMind或交易所原件，不認證任何真實股數。'
     shell=shell.replace('8069原來源顯示精度／單位限制保留，未認證FinMind精確股數。',volume_note)
     shell=shell.replace('>約五年<','>全部累積日K<').replace('已算分析日為每120筆樣本與最近5交易日；K線與查詢保留全部真實來源，不補休市K。其他日期須離線CLI加算，不在UI補算。','本頁只有本次批次已保存分析日；價格僅實際累積官方日K，不宣稱五年或完整交易日曆。原四股歷史主圖獨立保留，不拼接缺失日期。')
     if finmind:
@@ -117,7 +118,7 @@ def build(root,run_id):
     loader=(Path(__file__).parent/'fm3_20261101/lazy_series.js').read_text() if lazy else ''
     addon='<script id="market-state" type="application/json">'+data+'</script><script>'+loader+'\n'+js+'</script>'
     html=shell.replace('</body>',addon+'</body>')
-    out=root/'preview'/run_id/('market-du1-v01.html' if incremental else 'market-fm3-v02.html' if finmind else 'market-v04.html')
+    out=root/'preview'/run_id/'market-ux1-v02.html'
     if compact:codec.publish(out,html.encode(),root=root,bases=[base_page] if base_page else [])
     else:publish_immutable(out,html.encode())
     return dict(path=str(out),bytes=len(html.encode()),sha256=digest(html.encode()),stocks=len(batch['stocks']),charts=len(series_files) if lazy else len(series),transport='PRIVATE_FILE_OR_LOOPBACK_ONLY_NOT_DEPLOYED',android='NOT_TESTED')
