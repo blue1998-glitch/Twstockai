@@ -1,0 +1,44 @@
+test_busy_source_locks_readonly_and_never_removed (graph_core.port1_20261102.test_portability.PortabilityTests.test_busy_source_locks_readonly_and_never_removed) ... ok
+test_capacity_refused_before_copy_hashing_or_creation (graph_core.port1_20261102.test_portability.PortabilityTests.test_capacity_refused_before_copy_hashing_or_creation) ... FAIL
+test_corrupt_blob_refused_without_repair (graph_core.port1_20261102.test_portability.PortabilityTests.test_corrupt_blob_refused_without_repair) ... ok
+test_corrupt_partial_copy_is_preserved_and_refuses_resume (graph_core.port1_20261102.test_portability.PortabilityTests.test_corrupt_partial_copy_is_preserved_and_refuses_resume) ... ok
+test_historical_checkpoint_missing_dependency_blocks_whole_collection (graph_core.port1_20261102.test_portability.PortabilityTests.test_historical_checkpoint_missing_dependency_blocks_whole_collection) ... ok
+test_interruption_resumes_verified_files_only_and_keeps_source (graph_core.port1_20261102.test_portability.PortabilityTests.test_interruption_resumes_verified_files_only_and_keeps_source) ... ok
+test_missing_raw_source_and_changed_source_refused_no_repair (graph_core.port1_20261102.test_portability.PortabilityTests.test_missing_raw_source_and_changed_source_refused_no_repair) ... ok
+test_missing_shared_blob_and_future_anchor_block_complete_flag (graph_core.port1_20261102.test_portability.PortabilityTests.test_missing_shared_blob_and_future_anchor_block_complete_flag) ... ok
+test_missing_source_no_fake_root_created (graph_core.port1_20261102.test_portability.PortabilityTests.test_missing_source_no_fake_root_created) ... ok
+test_no_engine_or_network_import_on_fresh_restore_tool (graph_core.port1_20261102.test_portability.PortabilityTests.test_no_engine_or_network_import_on_fresh_restore_tool) ... ok
+test_noncurrent_preview_dependency_missing_is_not_silently_ignored (graph_core.port1_20261102.test_portability.PortabilityTests.test_noncurrent_preview_dependency_missing_is_not_silently_ignored) ... ok
+test_symlinks_and_external_codec_dependencies_refused (graph_core.port1_20261102.test_portability.PortabilityTests.test_symlinks_and_external_codec_dependencies_refused) ... ok
+test_synthetic_complete_independent_restore_and_relocated_chart (graph_core.port1_20261102.test_portability.PortabilityTests.test_synthetic_complete_independent_restore_and_relocated_chart) ... ok
+test_unexpected_hardlink_merge_and_reader_version_change_rejected (graph_core.port1_20261102.test_portability.PortabilityTests.test_unexpected_hardlink_merge_and_reader_version_change_rejected) ... ok
+test_unsafe_destination_manifest_and_private_credentials_refuse (graph_core.port1_20261102.test_portability.PortabilityTests.test_unsafe_destination_manifest_and_private_credentials_refuse) ... ok
+test_wrong_saved_core_version_identity_and_fingerprint_refused (graph_core.port1_20261102.test_portability.PortabilityTests.test_wrong_saved_core_version_identity_and_fingerprint_refused) ... ok
+
+======================================================================
+FAIL: test_capacity_refused_before_copy_hashing_or_creation (graph_core.port1_20261102.test_portability.PortabilityTests.test_capacity_refused_before_copy_hashing_or_creation)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/workspace/Twstockai/股票系統M1_v0_18/graph_core/port1_20261102/test_portability.py", line 81, in test_capacity_refused_before_copy_hashing_or_creation
+    with self.assertRaises(OSError):p.restore(self.source,self.dest,report)
+                                    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/workspace/Twstockai/股票系統M1_v0_18/rotation_research/private_portability.py", line 405, in restore
+    if report.get('reader_requirements')!=reader_requirements():raise ValueError('READER_VERSION_OR_SOURCE_BINDING_DIFFERS')
+                                          ^^^^^^^^^^^^^^^^^^^^^
+  File "/workspace/Twstockai/股票系統M1_v0_18/rotation_research/private_portability.py", line 278, in reader_requirements
+    module_sha256={str(p.relative_to(project)):file_hash(p) for p in modules},
+                                               ^^^^^^^^^^^^
+  File "/opt/codex/runtimes/codex-primary-runtime/dependencies/python/lib/python3.12/unittest/mock.py", line 1139, in __call__
+    return self._mock_call(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/opt/codex/runtimes/codex-primary-runtime/dependencies/python/lib/python3.12/unittest/mock.py", line 1143, in _mock_call
+    return self._execute_mock_call(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/opt/codex/runtimes/codex-primary-runtime/dependencies/python/lib/python3.12/unittest/mock.py", line 1198, in _execute_mock_call
+    raise effect
+AssertionError: No unnecessary full rehash when capacity unavailable
+
+----------------------------------------------------------------------
+Ran 16 tests in 32.504s
+
+FAILED (failures=1)

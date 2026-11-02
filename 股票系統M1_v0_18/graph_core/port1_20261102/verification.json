@@ -1,0 +1,49 @@
+{
+  "android": "NOT_TESTED_NEW_BUILD",
+  "browser_tests": "NOT_RUN_NO_UI_CHANGE",
+  "historical_tests_recounted": 0,
+  "intermediate_failure": {
+    "final_pass": true,
+    "method": "test_capacity_refused_before_copy_hashing_or_creation",
+    "oracle_changed": false,
+    "product_capacity_guard_relaxed": false,
+    "reason": "Test spy unintentionally forbade small reader-code fingerprint reads; scope corrected to forbid only expensive source-data hashing before capacity refusal"
+  },
+  "manifest_details_private": true,
+  "methods": [
+    "test_busy_source_locks_readonly_and_never_removed",
+    "test_capacity_refused_before_copy_hashing_or_creation",
+    "test_corrupt_blob_refused_without_repair",
+    "test_corrupt_partial_copy_is_preserved_and_refuses_resume",
+    "test_historical_checkpoint_missing_dependency_blocks_whole_collection",
+    "test_interruption_resumes_verified_files_only_and_keeps_source",
+    "test_missing_raw_source_and_changed_source_refused_no_repair",
+    "test_missing_shared_blob_and_future_anchor_block_complete_flag",
+    "test_missing_source_no_fake_root_created",
+    "test_no_engine_or_network_import_on_fresh_restore_tool",
+    "test_noncurrent_preview_dependency_missing_is_not_silently_ignored",
+    "test_symlinks_and_external_codec_dependencies_refused",
+    "test_synthetic_complete_independent_restore_and_relocated_chart",
+    "test_unexpected_hardlink_merge_and_reader_version_change_rejected",
+    "test_unsafe_destination_manifest_and_private_credentials_refuse",
+    "test_wrong_saved_core_version_identity_and_fingerprint_refused"
+  ],
+  "new_unique_test_methods": 16,
+  "real_engine_runs": 0,
+  "real_full_copy": false,
+  "real_provider_requests": 0,
+  "real_restart_test": false,
+  "real_saved_result_history_chart_sets": 1469,
+  "real_stock_source_hashes": 1986,
+  "status": "PASS_ENGINEERING_AND_REAL_READ_PREFLIGHT_ONLY",
+  "synthetic_cli_actions": [
+    "inspect",
+    "restore",
+    "verify"
+  ],
+  "synthetic_cli_exit_codes": [
+    0,
+    0,
+    0
+  ]
+}

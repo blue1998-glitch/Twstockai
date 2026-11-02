@@ -1,3 +1,15 @@
+# 2026-11-02 最新｜M-PORT1恢復工具已驗；原FM3可讀，真實獨立備份未驗
+
+唯一入口：[私人資料檢查／隔離恢復](股票系統M1_v0_18/graph_core/port1_20261102/README.md)、REPORT／CONTRACT／real-source-verification／synthetic-restore／GITHUB_READBACK。本原Cloud實讀19,596檔、8,924 Journal；1,986原件及終態、1,469組保存結果／歷史／圖／MA／MACD重新核對相符，無來源重抓／核心重算。其他環境前輪缺根紀錄留史，不當本次狀態。
+
+新增Git外本機inspect／restore／verify，沿原Journal／DU2 codec，檢查SHA／版本／共享片段與未來anchor／全部歷史引用／hardlink／容量，隔離獨立副本與原bytes讀回，舊絕對指標另給access overlay、不改原件。16唯一新方法及一次合成CLI三步通過；23合成檔／9DU2，來源不可存取仍能驗恢復，零引擎／供應者呼叫。原FM3根無DU2 sidecar，不能將合成DU2當真實增量驗收。中間mock失敗與修正留史，舊PASS不加總。
+
+原實際約19.10GiB；完整副本含reserve至少19.16GiB，當下剩約2.43GiB，沒有嘗試真實拷貝／搬移／刪原件。真實獨立備份／新環境復原／重啟／overlay持久仍未驗，不能因合成成功稱已備份。詳細私人清單／原件留Git外，公開僅程式／合成測試／不可還原摘要。正式資格false、主壓力null、Raw／UNKNOWN及所有parents保持。
+
+本里程碑工程結案後停止。Oracle帳戶未完成，不啟外部移轉／主機／VPN／部署／排程；Android本輪未測。下一步只待帳戶完成，由Work總監核定具容量、ACL、持久磁碟及獨立備份的真實恢復授權；不重做FM3、不自啟下一研究。完整操作入口與限制見上述README。下方歷史完整保留。
+
+---
+
 # 2026-11-02 最新｜M-COMP1同期多股工作台交付，完整私人批次／新Android實機未驗
 
 入口[比較工作台／合成手機示範](股票系統M1_v0_18/graph_core/comp1_20261102/README.md)。搜尋與雷達明示加入2～4股、移除／替換、卡片及原圖返回，共用原UI／loader／M-C2最新轉折與全部最近上方並列規則。比較只留4份精簡證據，不改主圖選股、不存私人持久快取。日期／截止／RAW還原／來源拒用／短史拒比；期間／來源／跨基底與UNKNOWN僅限描述並列，不評分、排名或定策略。新market-comp1-v02不覆寫舊頁，原core／指標／viewer／私人登入不改。
