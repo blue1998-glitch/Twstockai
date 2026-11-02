@@ -32,8 +32,8 @@ def source_segment_ma(bars,resets):
     return out
 
 
-def build(root,run_id):
-    root=outside(root);batch=Journal(root/'runs').read(run_id)['value'];series=[]
+def build(root,run_id,*,radar_dates=None):
+    root=outside(root);batch=Journal(root/'runs').read(run_id)['value'];series=[];radar_rows={}
     incremental=batch['version'].startswith('official-market-increment/')
     finmind=batch['version'].startswith('finmind-market-history/')
     lazy=finmind or incremental
@@ -53,6 +53,10 @@ def build(root,run_id):
     for stock in batch['stocks']:
         if not stock.get('result_key'):continue
         saved=Journal(root/'results').read(stock['result_key'])['value'];r=saved['result'];payload=saved['input'];bars=payload['bars'];as_of=batch['as_of']
+        from graph_core.event_radar import project
+        try:stock_radar=project(r,stock,dates=radar_dates)
+        except (ValueError,KeyError,TypeError) as error:stock_radar=dict(status='INDEX_REFUSED',reason=str(error),events=[])
+        radar_rows[stock['identity']]=stock_radar
         resets=[i for i,b in enumerate(bars) if b['date'] in r['data_gaps']['basis_resets']]
         indicators=saved.get('indicators')
         series.append(dict(code=stock['code'],exchange=stock['market'],source=dict(id=r['context']['source_id'],name=stock['name'],role='OFFICIAL_BULK_NATIVE_SHARES_NOT_OLD_MONTHLY_DATA',historical_available_at='UNKNOWN'),
@@ -107,7 +111,7 @@ def build(root,run_id):
         shell=shell.replace('價格僅實際累積官方日K','價格為FinMind原報歷史日K，來源資格另列')
     if incremental:
         shell=shell.replace('價格僅實際累積官方日K','價格保留原來源歷史及分段官方日K')
-    state=dict(summary=batch['summary'],stocks=deepcopy(batch['stocks']))
+    state=dict(summary=batch['summary'],stocks=deepcopy(batch['stocks']),radar=radar_rows)
     if lazy:
         for row in state['stocks']:
             if row['identity'] in series_files:row['preview_series']=series_files[row['identity']]
@@ -116,9 +120,10 @@ def build(root,run_id):
     data=json.dumps(state,ensure_ascii=False,separators=(',',':')).replace('<','\\u003c').replace('&','\\u0026')
     js=(Path(__file__).parent/'fm1_20261101/search.js').read_text()
     loader=(Path(__file__).parent/'fm3_20261101/lazy_series.js').read_text() if lazy else ''
+    js+='\n'+(Path(__file__).parent/'obs1_20261102/radar.js').read_text()
     addon='<script id="market-state" type="application/json">'+data+'</script><script>'+loader+'\n'+js+'</script>'
     html=shell.replace('</body>',addon+'</body>')
-    out=root/'preview'/run_id/'market-ux1-v02.html'
+    out=root/'preview'/run_id/'market-obs1-v01.html'
     if compact:codec.publish(out,html.encode(),root=root,bases=[base_page] if base_page else [])
     else:publish_immutable(out,html.encode())
     return dict(path=str(out),bytes=len(html.encode()),sha256=digest(html.encode()),stocks=len(batch['stocks']),charts=len(series_files) if lazy else len(series),transport='PRIVATE_FILE_OR_LOOPBACK_ONLY_NOT_DEPLOYED',android='NOT_TESTED')
