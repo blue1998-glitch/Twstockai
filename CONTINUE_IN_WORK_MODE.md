@@ -2027,7 +2027,7 @@ WAITING_FOR_USER_C_RIGHT_END_JUDGMENT。0.4.3底色已收束，本輪只準備�
 
 使用者原話：「已經看的見了，顏色可在深一些標準是能一眼辨識背景卻也能清楚看見K線兩者必須能清楚分別辨識。」上一0.4.2語境已能看見，屬USER_REPORTED_REGION_VISIBLE_WITH_DARKER_REQUEST；重送只記一次。沒有新圖或裝置／實開版號獨立確認，不升級完整Android驗收。標準是背景一眼可辨、K實體與影線同時清楚。
 
-新增獨立soft_region_chart_v043，預設18%不透明度、較淡12%／明顯26%，背景先畫、K／量原色與100%前景保持。仍無區域框、原範圍與數值不變、MACD不染色。實際40項Chromium133 HTTP PASS，24組前景繪製／101067純色像素核對，16張工程圖保存並目視G2-390／G1-844；payload無損與ZIP CRC／SHA通過。首次啟動太早及像素假設失敗保存並修正，沒有改產品迎合測試。整套Python／舊完整回歸未重跑。
+新增獨立soft_region_chart_v043，預設18%不透明度、較淡12%／明顯26%，背景先畫、K／量原色與100%前景保持。仍無區域框、原範圍與數值不變、MACD不染色。實際32項Chromium133 HTTP PASS，24組前景繪製／101067純色像素核對，16張工程圖保存並目視G2-390／G1-844；payload無損與ZIP CRC／SHA通過。首次啟動太早及像素假設失敗保存並修正，沒有改產品迎合測試。整套Python／舊完整回歸未重跑。
 
 [成品入口](deliveries/m1-v019-soft-regions-v043-20261019/README.md)、[完整可貼Work指令](deliveries/m1-v019-soft-regions-v043-20261019/WORK_HANDOFF.md)、[32項／失敗修正／限制](股票系統M1_v0_18/soft_region_chart_v043/validation_20261019/驗收報告.md)。遠端保存以實際提交後收據為準。
 
