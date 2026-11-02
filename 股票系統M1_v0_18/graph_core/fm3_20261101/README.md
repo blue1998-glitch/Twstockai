@@ -1,3 +1,9 @@
+# 最新：原M-FM3已完整收尾
+
+見[最終結果](completion/README.md)：1986檔終態齊備、1439多日、1469可開圖、待處理0，原程序已結束。下方為初次193檔交付歷史，不是即時進度。
+
+---
+
 # M-FM3｜免費個股歷史已接全市場預覽；補建仍 PARTIAL
 
 唯一接續入口仍是根目錄 `CONTINUE_IN_WORK_MODE.md`。本頁與 [public-summary.json](public-summary.json)、[verification.json](verification.json) 是交付時快照，不是全市場完成宣告；後續單一續跑程序的最新數量只在私人根目錄。

@@ -1,0 +1,50 @@
+{
+  "status": "COHORT_ALL_TERMINALS_AUDITED",
+  "as_of": "2026-10-30",
+  "reference_count": 1986,
+  "reference_by_market": {
+    "TPEX": 897,
+    "TWSE": 1089
+  },
+  "reference_source_dates": {
+    "TPEX": "2026-11-02",
+    "TWSE": "2026-11-02"
+  },
+  "terminal_counts": {
+    "ANALYZED_FINMIND_HISTORY": 1439,
+    "DATA_QUALITY_REFUSED": 514,
+    "MISSING_ANCHOR_QUOTE": 3,
+    "INSUFFICIENT_HISTORY": 30
+  },
+  "analysis_by_market": {
+    "TWSE": 938,
+    "TPEX": 501
+  },
+  "searchable_charts": 1469,
+  "new_searchable_excluding_original_four": 1465,
+  "new_multiday_excluding_original_four": 1435,
+  "remaining": 0,
+  "checks": {
+    "stock_source_raw_verified": 1986,
+    "complete_result_history_and_chart_verified": 1469
+  },
+  "errors": [],
+  "api_request_slots": 1987,
+  "maximum_observed_rolling_3600_requests": 240,
+  "private_data_outside_git": true,
+  "persistence": "UNKNOWN_OVERLAY_ONLY",
+  "android_fixed_entry": "NOT_DEPLOYED",
+  "daily_scheduler": "NOT_ENABLED",
+  "new_core_or_source_requests": 0,
+  "provider_http_or_api_denials": 0,
+  "source_retrievals_complete": true,
+  "cohort_processing_complete": true,
+  "all_stocks_analysis_qualified": false,
+  "execution_or_storage_failures": 0,
+  "worker_finished": true,
+  "worker_restarted": false,
+  "product_unit_tests_this_round": 0,
+  "recognition_core_reruns_for_acceptance": 0,
+  "formal_qualification": false,
+  "primary_pressure_id": null
+}
