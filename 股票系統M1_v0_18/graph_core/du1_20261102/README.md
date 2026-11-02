@@ -1,3 +1,25 @@
+# M-DU1｜增量工程完成定向驗證；真實新交易日仍受阻
+
+本原工作區的FM3私人根實際可讀；f2f96c16的「另一可見檔案系統缺根」紀錄保留在下方與原preflight.json，不作本環境現況。最新收尾見 [REPORT-current.md](REPORT-current.md)、[本輪數字](summary-current.json)、[來源擷取](source-attempt.json)、[保全／容量](preservation-current.json)。
+
+已沿原Journal／core0.2／指標／M-G3／M-MOB1接好：單次日更新、同源重送零重算／零成品寫入、逐股檢查點續跑、明示修訂留版、驗證／預覽失敗不發布新head、私人批次選擇與既有服務讀取新head。全體參照不靜默消失；沒有新行情者或轉板未知各有終態。新官方日與原歷史保留為**分段**；公司行動與跨來源可比性未知時重新暖機，不認證連續完整帶。
+
+**本輪真實新增股票／新交易日套用／真實新日分析均0。** 六項官方請求僅各一次，TWSE仍10/30，TPEx日線IncompleteRead；五份完整原件與失敗收據留Git外，未重試。11/2名冊上市1089／上櫃897共1986全部留BATCH_NOT_APPLIED診斷，沒有把它們稱為1986次新核心分析。新source不足時保留最後10/30的1469圖。
+
+27唯一Python＝18新增＋9必要回歸，28合成Chromium／16精確下載、6原真實圖抽查／4精確下載。合成新日與原10/30真實抽查分開，不冒新交易日或Android通過；[初次失敗](tests-initial.log)和[最終方法清單](tests-current.log)均保存。
+
+原私人根約20GiB、目前可用約2.8GiB；本協調器保留全批新結果／預覽的metadata保守預估約17.8GiB。這不是實際新日寫入量，現環境未有足夠預估容量；已加容量拒絕與檢查點保護，不刪唯一資料。overlay持久／獨立備份／重啟復原仍UNKNOWN。
+
+[單次設定](execution-config.example.json)供未來已核Oracle私有持久主機接手，**未安裝或啟動排程、未建主機**。Python入口 `graph_core.du1_20261102.run_once` 自原fm3-continuation取種子，使用既有daily.lock，完成結果與預覽／批次目錄讀回才更新current-increment-run。M-MOB1 `--head` 可讀最新已完成目錄，不需重啟該服務。
+
+現有真實圖仍由原fm3-continuation的preview.path定位；沒有新增可由Android直接開啟的安全網址。新實際批次不存在，不能展示假11/2圖。所有真行情／完整結果／HTML／PNG／憑證在Git外；本目錄只程式、合成控制及不可還原證據。來源0.10／parents、正式false／主壓力null及所有缺口保持，不重跑帳務／市場策略或M-FM3歷史補建。
+
+本輪以PARTIAL_REAL_NEW_SESSION_BLOCKED結案。Oracle帳戶、持久容量、獨立備份與私人手機HTTPS入口暫停，使用者明確表示帳戶辦好後才交總監接續；不因這次工程驗證而自行部署或開下一里程碑。
+
+---
+
+## 下方為f2f96c16舊環境前置紀錄（原文留史，不代表當前原工作區缺檔）
+
 # M-DU1｜原私人歷史不可存取，工程未完成
 
 本輪不是全市場更新完成。原程式已安全快轉至 `933212b829e91516dc13db918d05eac59c3d9688`，原分支且起始工作樹乾淨；但目前可見檔案系統沒有 `/workspace/twstockai-local-data/fm3_20261101/`。原續跑狀態、runs、原件、請求額度收據、檢查點、histories、results與preview均不可讀。

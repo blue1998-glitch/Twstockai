@@ -1,0 +1,52 @@
+test_corrupt_seed_binding_is_refused_without_fallback (graph_core.du1_20261102.test_increment.IncrementTests.test_corrupt_seed_binding_is_refused_without_fallback) ... ok
+test_crash_resume_checkpoints_only_unfinished_stock (graph_core.du1_20261102.test_increment.IncrementTests.test_crash_resume_checkpoints_only_unfinished_stock) ... ok
+test_failure_keeps_last_head_and_finalized_preview_reuses (graph_core.du1_20261102.test_increment.IncrementTests.test_failure_keeps_last_head_and_finalized_preview_reuses) ... FAIL
+test_gap_zero_missing_invalid_stock_isolation (graph_core.du1_20261102.test_increment.IncrementTests.test_gap_zero_missing_invalid_stock_isolation) ... ok
+test_lazy_preview_exact_results_and_batch_catalogue_auth (graph_core.du1_20261102.test_increment.IncrementTests.test_lazy_preview_exact_results_and_batch_catalogue_auth) ... ERROR
+test_market_change_new_member_and_absence_terminal_no_history_merge (graph_core.du1_20261102.test_increment.IncrementTests.test_market_change_new_member_and_absence_terminal_no_history_merge) ... ok
+test_retains_prefix_resets_indicators_and_old_evidence (graph_core.du1_20261102.test_increment.IncrementTests.test_retains_prefix_resets_indicators_and_old_evidence) ... ok
+test_same_sources_repeat_zero_core_and_zero_file_changes (graph_core.du1_20261102.test_increment.IncrementTests.test_same_sources_repeat_zero_core_and_zero_file_changes) ... ok
+test_single_writer_no_second_capture (graph_core.du1_20261102.test_increment.IncrementTests.test_single_writer_no_second_capture) ... ok
+test_source_cutoff_no_future_append_or_future_rewrite (graph_core.du1_20261102.test_increment.IncrementTests.test_source_cutoff_no_future_append_or_future_rewrite) ... ok
+test_source_incomplete_mixed_date_same_day_and_tampering_refuse (graph_core.du1_20261102.test_increment.IncrementTests.test_source_incomplete_mixed_date_same_day_and_tampering_refuse) ... ERROR
+test_source_revision_explicit_version_preserves_old (graph_core.du1_20261102.test_increment.IncrementTests.test_source_revision_explicit_version_preserves_old) ... ok
+
+======================================================================
+ERROR: test_lazy_preview_exact_results_and_batch_catalogue_auth (graph_core.du1_20261102.test_increment.IncrementTests.test_lazy_preview_exact_results_and_batch_catalogue_auth)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/workspace/Twstockai/股票系統M1_v0_18/graph_core/du1_20261102/test_increment.py", line 155, in test_lazy_preview_exact_results_and_batch_catalogue_auth
+    page,files,summary,hashes=batch_index(second['batch_index']);self.assertEqual(len(summary['batches']),2)
+                                          ~~~~~~^^^^^^^^^^^^^^^
+KeyError: 'batch_index'
+
+======================================================================
+ERROR: test_source_incomplete_mixed_date_same_day_and_tampering_refuse (graph_core.du1_20261102.test_increment.IncrementTests.test_source_incomplete_mixed_date_same_day_and_tampering_refuse)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/workspace/Twstockai/股票系統M1_v0_18/graph_core/du1_20261102/test_increment.py", line 76, in test_source_incomplete_mixed_date_same_day_and_tampering_refuse
+    cap=self.cap(dt='1151104')
+        ^^^^^^^^^^^^^^^^^^^^^^
+  File "/workspace/Twstockai/股票系統M1_v0_18/graph_core/du1_20261102/test_increment.py", line 43, in cap
+    sources(self.input,dt=dt,**kw);return import_saved(self.input,self.root)
+                                          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/workspace/Twstockai/股票系統M1_v0_18/graph_core/market_daily.py", line 141, in import_saved
+    raw=p.read_bytes();sha=digest(raw);publish_immutable(out/'raw'/sha,raw)
+                                       ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/workspace/Twstockai/股票系統M1_v0_18/product_candidate/build.py", line 160, in publish_immutable
+    raise ValueError('Existing candidate differs; use a new version/output directory: ' + str(path))
+ValueError: Existing candidate differs; use a new version/output directory: /tmp/tmpd9aeuk1c/private/raw/8000c29e641f9195ec3fde7fb875147cf465554efe4d7a45a4a4e97b39da816c
+
+======================================================================
+FAIL: test_failure_keeps_last_head_and_finalized_preview_reuses (graph_core.du1_20261102.test_increment.IncrementTests.test_failure_keeps_last_head_and_finalized_preview_reuses)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/workspace/Twstockai/股票系統M1_v0_18/graph_core/du1_20261102/test_increment.py", line 134, in test_failure_keeps_last_head_and_finalized_preview_reuses
+    self.assertFalse(fixed['head_unchanged']);self.assertTrue(Path(fixed['batch_index']).is_file())
+    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+AssertionError: True is not false
+
+----------------------------------------------------------------------
+Ran 12 tests in 4.694s
+
+FAILED (failures=1, errors=2)

@@ -46,4 +46,11 @@ def update(root, *, finmind_start=None, finmind_limit=240):
 
 
 if __name__=='__main__':
-    p=argparse.ArgumentParser();p.add_argument('--root',required=True);p.add_argument('--finmind-start');p.add_argument('--finmind-limit',type=int,default=240);a=p.parse_args();print(json.dumps(update(a.root,finmind_start=a.finmind_start,finmind_limit=a.finmind_limit),ensure_ascii=False,indent=2))
+    p=argparse.ArgumentParser();p.add_argument('--root',required=True);p.add_argument('--finmind-start');p.add_argument('--finmind-limit',type=int,default=240);p.add_argument('--increment',action='store_true');p.add_argument('--seed-run');p.add_argument('--capture');p.add_argument('--correction-of');p.add_argument('--correction-reason');a=p.parse_args();
+    if a.increment:
+        if a.finmind_start:p.error('Historical refetch and incremental continuation are separate actions')
+        from graph_core.market_increment import update as incremental_update
+        result=incremental_update(a.root,seed_run=a.seed_run,capture_id=a.capture,fetch=not bool(a.capture),correction_of=a.correction_of,correction_reason=a.correction_reason)
+        print(json.dumps(result,ensure_ascii=False,indent=2))
+        raise SystemExit(2 if result.get('status') in ('BLOCKED','COMMITTED_DURABILITY_UNKNOWN') else 0)
+    print(json.dumps(update(a.root,finmind_start=a.finmind_start,finmind_limit=a.finmind_limit),ensure_ascii=False,indent=2))
