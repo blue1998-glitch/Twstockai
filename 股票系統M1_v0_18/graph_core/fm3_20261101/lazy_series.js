@@ -1,9 +1,8 @@
 // Private same-origin stored data only. No analysis or source API in browser.
 let marketLoadEpoch=0;
 window.cancelMarketLoad=()=>{marketLoadEpoch++;};
-window.loadMarketStock=async stock=>{
- const epoch=++marketLoadEpoch;
- if(data.series.some(s=>s.code===stock.code&&s.exchange===stock.market))return;
+window.readMarketStock=async stock=>{
+ const cached=data.series.find(s=>s.code===stock.code&&s.exchange===stock.market&&s.results.some(r=>r.as_of===stock.as_of));if(cached)return cached;
  const descriptor=stock.preview_series;
  if(!descriptor||!/^series-[a-f0-9]{64}\.json$/.test(descriptor.path))throw Error('Missing private series binding');
  const embedded=document.getElementById('synthetic-demo-series');
@@ -15,6 +14,10 @@ window.loadMarketStock=async stock=>{
  if(sha!==descriptor.sha256)throw Error('Private series fingerprint changed');
  const series=decode(JSON.parse(new TextDecoder('utf-8',{fatal:true}).decode(raw)));
  if(series.code!==stock.code||series.exchange!==stock.market||series.results.length!==1||series.results[0].as_of!==stock.as_of)throw Error('Private series identity mismatch');
+ return series;
+};
+window.loadMarketStock=async stock=>{
+ const epoch=++marketLoadEpoch;const series=await window.readMarketStock(stock);
  if(epoch!==marketLoadEpoch)throw Error('Superseded selection');
  data.series.splice(0,data.series.length,series);
  options($('stock'),[[stock.code,stock.code+' '+stock.name]],stock.code);

@@ -52,7 +52,7 @@ def build(root,run_id,*,radar_dates=None):
                 break
     for stock in batch['stocks']:
         if not stock.get('result_key'):continue
-        saved=Journal(root/'results').read(stock['result_key'])['value'];r=saved['result'];payload=saved['input'];bars=payload['bars'];as_of=batch['as_of']
+        saved=Journal(root/'results').read(stock['result_key'])['value'];r=saved['result'];payload=saved['input'];bars=payload['bars'];as_of=r['as_of']
         from graph_core.event_radar import project
         try:stock_radar=project(r,stock,dates=radar_dates)
         except (ValueError,KeyError,TypeError) as error:stock_radar=dict(status='INDEX_REFUSED',reason=str(error),events=[])
@@ -79,6 +79,9 @@ def build(root,run_id,*,radar_dates=None):
             series[-1]['source_gaps'].update(actions_coverage='UNKNOWN_NEW_DATE_RESET',cross_feed_comparability='NOT_CERTIFIED')
             series[-1]['input_bindings'][as_of].update(source_role='SEGMENTED_NOT_CERTIFIED_CONTINUOUS',
                 increment_source_binding=deepcopy(saved['increment_source_binding']))
+        from graph_core.stock_comparison import project as comparison_project
+        try:series[-1]['comparison_evidence']=comparison_project(saved,stock,series[-1]['source'])
+        except (ValueError,KeyError,TypeError) as error:series[-1]['comparison_evidence']=dict(status='COMPARISON_REFUSED',reason=str(error))
         if lazy:
             raw=encode(pack(series[-1]));name='series-'+digest(raw)+'.json'
             if compact:codec.publish_interned(preview_dir/name,raw,root=root,format='chart',bases=[base_series[stock['identity']]] if stock['identity'] in base_series else [])
@@ -121,9 +124,10 @@ def build(root,run_id,*,radar_dates=None):
     js=(Path(__file__).parent/'fm1_20261101/search.js').read_text()
     loader=(Path(__file__).parent/'fm3_20261101/lazy_series.js').read_text() if lazy else ''
     js+='\n'+(Path(__file__).parent/'obs1_20261102/radar.js').read_text()
+    js+='\n'+(Path(__file__).parent/'comp1_20261102/compare.js').read_text()
     addon='<script id="market-state" type="application/json">'+data+'</script><script>'+loader+'\n'+js+'</script>'
     html=shell.replace('</body>',addon+'</body>')
-    out=root/'preview'/run_id/'market-obs1-v01.html'
+    out=root/'preview'/run_id/'market-comp1-v02.html'
     if compact:codec.publish(out,html.encode(),root=root,bases=[base_page] if base_page else [])
     else:publish_immutable(out,html.encode())
     return dict(path=str(out),bytes=len(html.encode()),sha256=digest(html.encode()),stocks=len(batch['stocks']),charts=len(series_files) if lazy else len(series),transport='PRIVATE_FILE_OR_LOOPBACK_ONLY_NOT_DEPLOYED',android='NOT_TESTED')

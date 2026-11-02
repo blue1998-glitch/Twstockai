@@ -1,0 +1,7 @@
+Traceback (most recent call last):
+  File "<frozen runpy>", line 198, in _run_module_as_main
+  File "<frozen runpy>", line 88, in _run_code
+  File "/workspace/Twstockai/股票系統M1_v0_18/graph_core/comp1_20261102/verify_real.py", line 13, in <module>
+    for k in ['result_id','source_prefix_fingerprint','anchor','anchor_volume','latest_confirmed_by_scale','pending_extrema','nearest_above']:assert x[k]==expected[k],(s['code'],k)
+                                                                                                                                                     ^^^^^^^^^^^^^^^^^
+AssertionError: ('1101', 'nearest_above')

@@ -55,6 +55,21 @@ def null_reasons(value, pointer=''):
     return out
 
 
+def reference_summary(result):
+    """Original M-C2 descriptive latest/ties selection, no recognition or ranking."""
+    latest = {}
+    for scale in result['parameters']['reversals']:
+        latest[scale] = {}
+        for kind in ('HIGH','LOW'):
+            pool=[p for p in result['pivots'] if p['scale']==scale and p['kind']==kind]
+            day=max((p['confirmed_at'] for p in pool),default=None)
+            latest[scale][kind]=[deepcopy(p) for p in pool if p['confirmed_at']==day]
+    pool=[b for b in result['boxes'] if b['usable_at_anchor'] and b['anchor_relation']=='BELOW']
+    nearest=min((Decimal(b['pressure_distance_fraction']) for b in pool),default=None)
+    tied=[b['id'] for b in pool if Decimal(b['pressure_distance_fraction'])==nearest]
+    return latest,nearest,tied
+
+
 def project(result, series, parent, spec, ledger, original):
     """No recognition call. Validate identities before projecting all candidates."""
     code = series['code']
@@ -86,16 +101,7 @@ def project(result, series, parent, spec, ledger, original):
     if not set(units)<=expected_units: raise ValueError('Unknown reported volume unit')
     normalized = source['exchange']=='TPEX'
     if normalized and 'TIMES1000' not in source['volume_normalization']: raise ValueError('Missing explicit volume normalization')
-    latest = {}
-    for scale in result['parameters']['reversals']:
-        latest[scale] = {}
-        for kind in ('HIGH','LOW'):
-            pool=[p for p in result['pivots'] if p['scale']==scale and p['kind']==kind]
-            day=max((p['confirmed_at'] for p in pool),default=None)
-            latest[scale][kind]=[deepcopy(p) for p in pool if p['confirmed_at']==day]
-    pool=[b for b in result['boxes'] if b['usable_at_anchor'] and b['anchor_relation']=='BELOW']
-    nearest=min((Decimal(b['pressure_distance_fraction']) for b in pool),default=None)
-    tied=[b['id'] for b in pool if Decimal(b['pressure_distance_fraction'])==nearest]
+    latest,nearest,tied=reference_summary(result)
     boxes=[]
     for b in result['boxes']:
         item={k:deepcopy(b[k]) for k in BOX_FIELDS}
