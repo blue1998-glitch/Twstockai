@@ -1,3 +1,17 @@
+# 2026-11-02 最新有效｜M-UNIFY1唯一工程入口正式指定
+
+**唯一工程寫入入口：目前這個已完成M-PORT1、可實讀FM3的既有Codex對話。** Work只讀研究、總監派工與驗收；不另開Codex／代理／競爭分支。唯一專案主檔為根`CONTINUE_IN_WORK_MODE.md`最上方，AGENTS最新節為治理規則；[完整整併證據與接續流程](docs/engineering-governance/unify1_20261102/README.md)。
+
+基準Cloud精確ID：`ccarenv_b64_Y2NhcmVudl9kMDg5NTNmYjExNjQ4MTkxYmQ3M2E1OGE0MDBiYzc1Yw`；Git根`/workspace/Twstockai`；唯一分支`blue1998-glitch/Twstockai`的`dev/m1-v018-chart-annotations`；私人FM3根`/workspace/twstockai-local-data/fm3_20261101/runtime`。開工頭8eb817b，原0.3／修復／890歷史保存及COMP1等全部祖先保留。29舊ZIP與2manifest的Git blob仍相同，不重驗890檔、不覆蓋6歷史衝突。880既有untracked檔名保留，非本輪逐內容重驗；另一Cloud未附加，其後未提交成果UNKNOWN，不宣稱全環境無遺漏。
+
+每輪**先即時核runtime工具ID／running，再執行`python3 codex/unified_workspace.py --environment-id <本次工具ID>`**，核origin、ref／祖先、FM3、工程及來源／Git鎖；不可以相同目錄名稱判同環境。工程程式以`--run`持有Git外同一工程鎖到結束；鎖忙、環境不符、缺根、來源變動或遠端前進先停寫，讀最新交接安全接續，不刪鎖、不重抓、不reset或強推。這是合作式單一入口；本Codex無平台權限停掉另一對話或保證跨Cloud互斥，禁止假稱已強制關閉其他寫入者。
+
+本原Cloud仍可讀FM3，19,596路徑集合／size／mtime／inode／device與M-PORT1私人完整清單相符，沿用其1986終態／原件及1469圖驗收，**沒有再跑約19GiB全量SHA**。7唯一新治理方法PASS，不累加舊產品測試。真實備份／持久性／跨環境復原未知；不複製原件，不改核心／策略／Raw／UNKNOWN／false／null。舊環境缺根描述留史，不套為本輪資料消失。Oracle／VPN／外部移轉／部署／排程維持暫停。
+
+本輪正常保存原分支並固定SHA讀回後停止。下一步僅Work總監唯讀確認治理結果；未來工程只派此既有M-PORT1對話，不要求使用者搬檔。下方全部歷史完整保留。
+
+---
+
 # 2026-11-02 最新｜M-PORT1恢復工具已驗；原FM3可讀，真實獨立備份未驗
 
 唯一入口：[私人資料檢查／隔離恢復](股票系統M1_v0_18/graph_core/port1_20261102/README.md)、REPORT／CONTRACT／real-source-verification／synthetic-restore／GITHUB_READBACK。本原Cloud實讀19,596檔、8,924 Journal；1,986原件及終態、1,469組保存結果／歷史／圖／MA／MACD重新核對相符，無來源重抓／核心重算。其他環境前輪缺根紀錄留史，不當本次狀態。
