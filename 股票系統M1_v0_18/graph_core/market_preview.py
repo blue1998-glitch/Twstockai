@@ -7,6 +7,7 @@ from pathlib import Path
 from graph_core.market_daily import outside,encode,digest
 from graph_core.core import fingerprint
 from rotation_research.store import Journal
+from rotation_research import artifact_codec as codec
 from graph_core_chart.build import render,display_ids
 from technical_chart.build import pack
 from graph_core_chart.evidence import layers
@@ -36,7 +37,19 @@ def build(root,run_id):
     incremental=batch['version'].startswith('official-market-increment/')
     finmind=batch['version'].startswith('finmind-market-history/')
     lazy=finmind or incremental
+    compact=batch.get('storage_mode')=='compact'
     series_files={};preview_dir=root/'preview'/run_id
+    base_series={};base_page=None
+    if compact and batch.get('parent_run'):
+        import re
+        for name in ('market-du1-v01.html','market-fm3-v02.html','market-v04.html'):
+            candidate=root/'preview'/batch['parent_run']/name
+            if codec.exists(candidate):
+                raw=codec.read_bytes(candidate);m=re.search(rb'<script id="market-state" type="application/json">(.*?)</script>',raw,re.S)
+                if not m:raise ValueError('Parent preview index missing')
+                old_state=json.loads(m[1]);base_page=candidate
+                base_series={s['identity']:candidate.parent/s['preview_series']['path'] for s in old_state['stocks'] if s.get('preview_series')}
+                break
     for stock in batch['stocks']:
         if not stock.get('result_key'):continue
         saved=Journal(root/'results').read(stock['result_key'])['value'];r=saved['result'];payload=saved['input'];bars=payload['bars'];as_of=batch['as_of']
@@ -64,7 +77,8 @@ def build(root,run_id):
                 increment_source_binding=deepcopy(saved['increment_source_binding']))
         if lazy:
             raw=encode(pack(series[-1]));name='series-'+digest(raw)+'.json'
-            publish_immutable(preview_dir/name,raw)
+            if compact:codec.publish_interned(preview_dir/name,raw,root=root,format='chart',bases=[base_series[stock['identity']]] if stock['identity'] in base_series else [])
+            else:publish_immutable(preview_dir/name,raw)
             series_files[stock['identity']]=dict(path=name,sha256=digest(raw),bytes=len(raw))
             if len(series)>1:series.pop()  # bounded browser memory; no numerical sampling
     if not series:raise ValueError('No stored core output to preview; no fabricated chart')
@@ -103,7 +117,9 @@ def build(root,run_id):
     loader=(Path(__file__).parent/'fm3_20261101/lazy_series.js').read_text() if lazy else ''
     addon='<script id="market-state" type="application/json">'+data+'</script><script>'+loader+'\n'+js+'</script>'
     html=shell.replace('</body>',addon+'</body>')
-    out=root/'preview'/run_id/('market-du1-v01.html' if incremental else 'market-fm3-v02.html' if finmind else 'market-v04.html');publish_immutable(out,html.encode())
+    out=root/'preview'/run_id/('market-du1-v01.html' if incremental else 'market-fm3-v02.html' if finmind else 'market-v04.html')
+    if compact:codec.publish(out,html.encode(),root=root,bases=[base_page] if base_page else [])
+    else:publish_immutable(out,html.encode())
     return dict(path=str(out),bytes=len(html.encode()),sha256=digest(html.encode()),stocks=len(batch['stocks']),charts=len(series_files) if lazy else len(series),transport='PRIVATE_FILE_OR_LOOPBACK_ONLY_NOT_DEPLOYED',android='NOT_TESTED')
 
 

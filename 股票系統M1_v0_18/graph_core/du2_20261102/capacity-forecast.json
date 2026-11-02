@@ -1,0 +1,45 @@
+{
+  "status": "EXTRAPOLATION_NOT_FULL_MARKET_ACTUAL_WRITES",
+  "reference_count_for_scenario": 1986,
+  "reference_date": "2026-11-02",
+  "old_result_logical_bytes": 9338386192,
+  "sample_old_result_bytes": 41510005,
+  "size_weighting_factor": 224.96711797553385,
+  "full_market_plain_first_day_estimate_bytes": 12767644039,
+  "full_market_compact_first_day_estimate_bytes": 1293557934,
+  "full_market_compact_later_day_estimate_bytes": 545328098,
+  "assumptions": {
+    "nonrandom_small_sample": true,
+    "synthetic_new_days": 2,
+    "new_quotes_for_no_prior_result_budget": 33882112,
+    "new_bulk_source_budget_per_day_bytes": 67108864,
+    "run_and_checkpoint_metadata_budget_per_day_bytes": 16777216,
+    "no_actual_fresh_six_source_capture_this_round": true,
+    "independent_backup_not_included": true,
+    "scope": "No verified Oracle quota, no promise of fit/performance; real revisions and failures require additional margin"
+  },
+  "current_free_bytes": 2670899200,
+  "scenarios": [
+    {
+      "hypothetical_disk_gib": 50,
+      "reserve_fraction": 0.2,
+      "approx_retained_days": 38,
+      "at_2x_daily_growth": 19
+    },
+    {
+      "hypothetical_disk_gib": 100,
+      "reserve_fraction": 0.2,
+      "approx_retained_days": 117,
+      "at_2x_daily_growth": 58
+    },
+    {
+      "hypothetical_disk_gib": 200,
+      "reserve_fraction": 0.2,
+      "approx_retained_days": 275,
+      "at_2x_daily_growth": 137
+    }
+  ],
+  "old_original_bytes_reclaimed": 0,
+  "existing_overlay_persistence": "UNKNOWN",
+  "real_new_day_validation": false
+}

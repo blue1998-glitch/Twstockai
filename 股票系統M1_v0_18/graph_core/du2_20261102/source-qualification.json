@@ -1,0 +1,33 @@
+{
+  "actual_provider_requests_this_round": 0,
+  "mode": "REQUALIFY_SAVED_DU1_CAPTURE_ONLY",
+  "status": "BLOCKED",
+  "reason": "ValueError: Official source incomplete; last good batch preserved",
+  "new_capture_applied": false,
+  "head_unchanged": true,
+  "real_new_session": false,
+  "observation": "Taipei 2026-11-02: no later prior-weekday session than 10/30; current date still excluded by original gate",
+  "terminal_diagnostic": {
+    "observed_quote_dates": {
+      "TWSE": "2026-10-30",
+      "TPEX": null
+    },
+    "reference_roles": {
+      "TWSE": {
+        "role": "OBSERVED_CLASSIFICATION_NOT_ACCEPTED_QUOTE_SESSION",
+        "date": "2026-11-02"
+      },
+      "TPEX": {
+        "role": "OBSERVED_CLASSIFICATION_NOT_ACCEPTED_QUOTE_SESSION",
+        "date": "2026-11-02"
+      }
+    },
+    "expected_by_market": {
+      "TWSE": 1089,
+      "TPEX": 897
+    },
+    "terminals": 1986,
+    "diagnostic_core_calls": 0,
+    "not_accepted_new_session": true
+  }
+}

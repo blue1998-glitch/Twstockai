@@ -8,6 +8,7 @@ import argparse,base64,getpass,hashlib,hmac,json,os,re,secrets,stat,time,threadi
 from http.server import BaseHTTPRequestHandler,ThreadingHTTPServer
 from pathlib import Path
 from urllib.parse import urlsplit,unquote
+from rotation_research import artifact_codec as codec
 
 VERSION='private-mobile-preview/0.1'
 
@@ -42,7 +43,7 @@ def load_auth(path):
 def preview_index(path):
     p=external(path)
     if Path(path).is_symlink():raise ValueError('Preview symlink refused')
-    raw=p.read_bytes();m=re.search(rb'<script id="market-state" type="application/json">(.*?)</script>',raw,re.S)
+    raw=codec.read_bytes(p);m=re.search(rb'<script id="market-state" type="application/json">(.*?)</script>',raw,re.S)
     if not m:raise ValueError('Saved market preview required')
     v=json.loads(m[1]);allowed={p.name:dict(path=p,bytes=len(raw),sha256=hashlib.sha256(raw).hexdigest())}
     charts=0
@@ -53,7 +54,7 @@ def preview_index(path):
         if not re.fullmatch(r'series-[a-f0-9]{64}\.json',name) or name[7:-5]!=desc['sha256']:
             raise ValueError('Invalid series descriptor')
         q=p.parent/name
-        if q.is_symlink() or not q.is_file() or q.stat().st_size!=desc['bytes']:raise ValueError('Missing private series')
+        if q.is_symlink() or codec.info(q)['bytes']!=desc['bytes']:raise ValueError('Missing private series')
         allowed[name]=dict(path=q,bytes=desc['bytes'],sha256=desc['sha256']);charts+=1
     hashes=[]
     for script in re.findall(rb'<script(?:\s[^>]*)?>(.*?)</script>',raw,re.S):
@@ -73,7 +74,7 @@ def batch_index(path):
         p,allowed,summary,scripts=preview_index(entry['path'])
         if p in seen:raise ValueError('Duplicate saved preview')
         seen.add(p)
-        raw=p.read_bytes()
+        raw=codec.read_bytes(p)
         if len(raw)!=entry['bytes'] or hashlib.sha256(raw).hexdigest()!=entry['sha256'] or summary['as_of']!=entry['as_of']:
             raise ValueError('Batch preview fingerprint/date mismatch')
         prefix='batch-'+entry['sha256']
@@ -94,7 +95,7 @@ def make_server(preview,credentials,*,port=0,allowed_hosts=(),clock=time.monoton
         batches=json.loads(head_signature)['batch_index']
     page,files,summary,hashes=batch_index(batches) if batches else preview_index(preview)
     catalogue_state=dict(signature=head_signature,page=page,files=files,summary=summary,hashes=hashes)
-    catalogue_lock=threading.Lock()
+    catalogue_lock=threading.Lock();artifact_read_lock=threading.Lock()
     auth=load_auth(credentials);failures=[]
     class Handler(BaseHTTPRequestHandler):
         server_version='TwstockaiPrivate';sys_version=''
@@ -151,10 +152,14 @@ def make_server(preview,credentials,*,port=0,allowed_hosts=(),clock=time.monoton
             if 'raw' in item:return self.reply(200,item['raw'],'text/html; charset=utf-8')
             p=item['path']
             if p.is_symlink() or p.resolve().parent!=item.get('parent',active_page.parent):return self.reply(404,b'Not found')
-            if not p.is_file() or p.stat().st_size!=item['bytes']:return self.reply(409,b'Saved artifact changed')
+            try:
+                if not codec.exists(p) or codec.info(p)['bytes']!=item['bytes']:return self.reply(409,b'Saved artifact changed')
+            except (OSError,ValueError,KeyError,IndexError,TypeError,RecursionError):return self.reply(409,b'Saved artifact changed')
             if self.command=='HEAD':
                 self.send_response(200);self.send_header('Content-Length',str(item['bytes']));self.send_header('Cache-Control','no-store, private');self.send_header('X-Content-Type-Options','nosniff');self.end_headers();return
-            raw=p.read_bytes()
+            try:
+                with artifact_read_lock:raw=codec.read_bytes(p,expected_bytes=item['bytes'],expected_sha=item['sha256'])
+            except (OSError,ValueError,KeyError,IndexError,TypeError,RecursionError):return self.reply(409,b'Saved artifact changed')
             if hashlib.sha256(raw).hexdigest()!=item['sha256']:return self.reply(409,b'Saved artifact changed')
             self.reply(200,raw,'text/html; charset=utf-8' if name.endswith('.html') else 'application/json; charset=utf-8')
         do_GET=do_HEAD=do_POST=do_PUT=do_DELETE=do_OPTIONS=dispatch

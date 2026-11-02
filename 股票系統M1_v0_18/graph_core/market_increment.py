@@ -19,9 +19,11 @@ from zoneinfo import ZoneInfo
 from graph_core.market_daily import (ROOT, URLS, encode, digest, classify, quote_map,
     candle, capture, Journal, analyze, fingerprint)
 from graph_core_chart.mobile_private import external
+from rotation_research import artifact_codec as codec
 from product_candidate.build import publish_immutable
 
-VERSION = 'official-market-increment/0.1'
+VERSION = 'official-market-increment/0.2'
+LEGACY_DU1_SHA = '5684be8d03ee1cb4523fbb41844d7dfb9eb456867f9d7cc76dbb7a8437498ae8'
 
 
 def sources(root, capture_id, now=None):
@@ -62,12 +64,12 @@ def sources(root, capture_id, now=None):
 
 def seed(root, run_id):
     batch = Journal(root/'runs').read(run_id)['value']
-    if not (batch['version'].startswith('finmind-market-history/') or batch['version'] == VERSION):
+    if not (batch['version'].startswith('finmind-market-history/') or batch['version'] in (VERSION,'official-market-increment/0.1')):
         raise ValueError('Unsupported seed producer; no inferred bridge')
     rows = batch['stocks']; identities = [s['identity'] for s in rows]
     if len(identities) != len(set(identities)): raise ValueError('Duplicate seed identity')
     if batch['summary']['processed'] != len(rows): raise ValueError('Incomplete seed batch')
-    if batch['version'] == VERSION and batch['engine_sha256'] != digest((ROOT/'graph_core/core.py').read_bytes()):
+    if batch['version'].startswith('official-market-increment/') and batch['engine_sha256'] != digest((ROOT/'graph_core/core.py').read_bytes()):
         raise ValueError('Engine changed; explicit migration required')
     return batch
 
@@ -114,15 +116,27 @@ def pending_storage_estimate(root, previous, members, run_id):
     return total
 
 
-def process(root, capture_id, *, seed_run, correction_of=None, correction_reason=None, now=None):
+def compact_scratch_budget(root,previous,members,run_id):
+    largest=65536
+    for member in members:
+        old=previous.get(member['market']+':'+member['code'],{})
+        if old.get('result_key'):
+            try:largest=max(largest,codec.info(Journal(root/'results').path(old['result_key']))['bytes'])
+            except (FileNotFoundError,ValueError):pass
+    return 64*1024*1024+2*largest
+
+
+def process(root, capture_id, *, seed_run, correction_of=None, correction_reason=None, now=None, storage_mode='compact'):
     root = external(root)
+    if storage_mode not in ('compact','plain'):raise ValueError('Unknown storage encoding')
     as_of, maps, markets, signatures = sources(root, capture_id, now)
     parent = seed(root, seed_run)
     producer = digest(Path(__file__).read_bytes()); engine = digest((ROOT/'graph_core/core.py').read_bytes())
+    if parent['version']=='official-market-increment/0.1' and parent.get('producer_sha256')!=LEGACY_DU1_SHA:raise ValueError('Unrecognized DU1 producer; migration refused')
     if parent['version'] == VERSION and parent.get('producer_sha256') != producer:
         raise ValueError('Coordinator changed; explicit migration required')
     # Repeat of a completed batch does not append the same date again.
-    if parent['version'] == VERSION and signatures == parent['sources']:
+    if parent['version'] in (VERSION,'official-market-increment/0.1') and signatures == parent['sources']:
         return dict(id=seed_run, reused=True, new_core_calls=0, summary=parent['summary'])
     if as_of < parent['as_of']: raise ValueError('Cannot append older source')
     if as_of == parent['as_of'] and (correction_of != seed_run or not correction_reason):
@@ -138,7 +152,7 @@ def process(root, capture_id, *, seed_run, correction_of=None, correction_reason
     members = [s for market in markets.values() for s in market['members']]
     identities = [s['market']+':'+s['code'] for s in members]
     if len(identities) != len(set(identities)): raise ValueError('Duplicate ordinary-stock member')
-    estimated_bytes=pending_storage_estimate(root,previous,members,run_id)
+    estimated_bytes=compact_scratch_budget(root,previous,members,run_id) if storage_mode=='compact' else pending_storage_estimate(root,previous,members,run_id)
     if shutil.disk_usage(root).free<estimated_bytes:raise OSError('Insufficient private capacity for retained versions; no deletion, migration or analysis attempted')
     results = Journal(root/'results'); histories = Journal(root/'histories'); checkpoints = Journal(root/'du1-checkpoints')
     rows = []; calls = 0
@@ -195,7 +209,10 @@ def process(root, capture_id, *, seed_run, correction_of=None, correction_reason
                         source_boundary_reset=as_of,company_action_coverage='UNKNOWN',cross_feed_comparability='NOT_CERTIFIED'))
                     hk = 'history-'+fingerprint(dict(bars=bars,basis_break_dates=breaks)).split(':')[1]
                     rk = 'du1-result-'+digest(encode(value))
-                    histories.save(hk,dict(bars=bars,basis_break_dates=breaks)); results.save(rk,value)
+                    histories.save(hk,dict(bars=bars,basis_break_dates=breaks),compact=storage_mode=='compact',storage_root=root,
+                        bases=[histories.path(old['history_key'])] if old and old.get('history_key') else [])
+                    results.save(rk,value,compact=storage_mode=='compact',storage_root=root,
+                        bases=[results.path(old['result_key'])] if old and old.get('result_key') else [])
                     row.update(status='SEGMENTED_RESEARCH' if len(bars)>1 else 'INSUFFICIENT_HISTORY',
                         history_key=hk,result_key=rk,history_records=len(bars),current_comparable_records=1,
                         reason='Unknown cross-feed/action interval: reset new segment; old bars retained, no continuous-band certification',
@@ -220,7 +237,7 @@ def process(root, capture_id, *, seed_run, correction_of=None, correction_reason
         estimated_pending_storage_bytes=estimated_bytes,all_known_members_have_terminal=len(rows)==len(members),both_market_universes_read=True,both_market_quotes_read=True,
         source_policy='UNKNOWN_INTERVAL_ALWAYS_SEGMENTED_NOT_UNCONDITIONAL_FINMIND_MERGE',
         status='PARTIAL_SEGMENTED',scheduling='NOT_ENABLED',fixed_android_url='NOT_DEPLOYED')
-    runs.save(run_id,dict(version=VERSION,as_of=as_of,producer_sha256=producer,engine_sha256=engine,sources=signatures,
+    runs.save(run_id,dict(version=VERSION,storage_mode=storage_mode,as_of=as_of,producer_sha256=producer,engine_sha256=engine,sources=signatures,
         capture_id=capture_id,parent_run=seed_run,correction_of=correction_of,correction_reason=correction_reason,
         markets=markets,observed_sessions=sorted(set(parent.get('observed_sessions',[])+[as_of])),stocks=rows,
         removed_registry_entries=removed,market_changes=changes,summary=summary))
@@ -257,7 +274,7 @@ def blocked_terminals(root, capture_id, parent_id, reason):
         terminals=len(rows),stocks=rows,diagnostic_core_calls=0,not_accepted_new_session=True)
 
 
-def update(root, *, seed_run=None, capture_id=None, fetch=False, correction_of=None, correction_reason=None, now=None):
+def update(root, *, seed_run=None, capture_id=None, fetch=False, correction_of=None, correction_reason=None, now=None,storage_mode='compact'):
     """One explicit RUN, single writer; publish head only after readable preview."""
     from graph_core.market_preview import build
     root = external(root)
@@ -272,17 +289,17 @@ def update(root, *, seed_run=None, capture_id=None, fetch=False, correction_of=N
         cap = capture(root) if fetch else capture_id
         committed=False
         try:
-            result = process(root,cap,seed_run=parent,correction_of=correction_of,correction_reason=correction_reason,now=now)
+            result = process(root,cap,seed_run=parent,correction_of=correction_of,correction_reason=correction_reason,now=now,storage_mode=storage_mode)
             if previous and result['reused'] and result['id']==previous['id']:
                 p=Path(previous['private_preview']['path'])
-                if digest(p.read_bytes())!=previous['private_preview']['sha256']: raise ValueError('Last preview changed')
+                if digest(codec.read_bytes(p))!=previous['private_preview']['sha256']: raise ValueError('Last preview changed')
                 from graph_core_chart.mobile_private import batch_index
                 batch_index(previous['batch_index'])
                 return dict(result,private_preview=previous['private_preview'],batch_index=previous['batch_index'],head_unchanged=True)
             preview = build(root,result['id'])
             from graph_core_chart.mobile_private import preview_index
             preview_index(preview['path'])
-            if digest(Path(preview['path']).read_bytes())!=preview['sha256']: raise ValueError('Preview readback mismatch')
+            if digest(codec.read_bytes(preview['path']))!=preview['sha256']: raise ValueError('Preview readback mismatch')
             entries=[dict(run_id=result['id'],as_of=result['summary']['as_of'],path=preview['path'],
                 bytes=preview['bytes'],sha256=preview['sha256'])]
             if previous and previous.get('batch_index'):

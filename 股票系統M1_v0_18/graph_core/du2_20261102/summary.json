@@ -1,0 +1,60 @@
+{
+  "milestone": "M-DU2",
+  "engineering": "COMPLETE_TARGETED_VALIDATION",
+  "storage": "OPTIONAL_EXACT_BYTE_SIDECAR_ON_EXISTING_JOURNAL_AND_PREVIEW",
+  "original_dataset_rewritten": false,
+  "original_files_deleted": 0,
+  "benchmark": {
+    "retained_real_prefixes": 7,
+    "synthetic_new_days": 2,
+    "measurements": "benchmark-summary.json",
+    "first_allocated_bytes_plain": 56229888,
+    "first_allocated_bytes_compact": 5226496,
+    "second_allocated_bytes_plain": 56233984,
+    "second_allocated_bytes_compact": 1900544,
+    "first_reduction_percent": 90.71,
+    "second_reduction_percent": 96.62,
+    "peak_rss_kib_plain": 125404,
+    "peak_rss_kib_compact": 289936,
+    "rough_wall_ratio": 3.0,
+    "full_market_actual": false,
+    "core_calls_in_final_control_study": 28,
+    "intermediate_prototype_calls_not_added_to_final_counts": 28
+  },
+  "verification": {
+    "unique_python_methods": 27,
+    "new_methods": 25,
+    "related_http_safety_regression_methods": 2,
+    "chromium_checks": 30,
+    "exact_downloads": 18,
+    "result_history_series_exact_byte_pairs": 42,
+    "all_exact": true,
+    "real_new_session": false
+  },
+  "market_source": {
+    "new_provider_requests": 0,
+    "requalified_existing_du1_capture": "BLOCKED",
+    "new_real_day_analysis": 0,
+    "new_real_charts": 0,
+    "original_head_unchanged": true
+  },
+  "boundaries": {
+    "oracle": "PAUSED",
+    "scheduler": "NOT_ENABLED",
+    "remote_android_url": "NOT_DEPLOYED",
+    "physical_android": "NOT_TESTED_NEW_BUILD",
+    "overlay_durability": "UNKNOWN",
+    "independent_backup": "NOT_VERIFIED",
+    "no_major_architecture_or_paid_change_required_for_completed_scope": true,
+    "actual_quota_and_long_term_retention": "UNKNOWN"
+  },
+  "qualifications": {
+    "execution_qualified": false,
+    "historical_signal_eligible": false,
+    "primary_pressure_id": null,
+    "policy_authorized": false,
+    "imputed_close": null,
+    "valuation": null
+  },
+  "source_contracts": "0.10_AND_ALL_PARENTS_UNCHANGED"
+}

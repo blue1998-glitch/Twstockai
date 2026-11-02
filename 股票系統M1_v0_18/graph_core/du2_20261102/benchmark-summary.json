@@ -1,0 +1,127 @@
+{
+  "scope": "SYNTHETIC_NEW_DAY_NOT_REAL_MARKET_VALIDATION",
+  "selected_prefixes": 7,
+  "sample_rule": "Three saved result-size quantiles per market (0.2/0.5/0.9), plus minimum-record insufficient-history case; nonrandom, not market-performance samples",
+  "core_calls_per_mode": 14,
+  "real_new_session": false,
+  "source_requests": 0,
+  "comparison": {
+    "comparisons": [
+      {
+        "all_null_and_false_qualifications_preserved": true,
+        "day": 1,
+        "results_histories_preview_exact": true,
+        "stocks": 7
+      },
+      {
+        "all_null_and_false_qualifications_preserved": true,
+        "day": 2,
+        "results_histories_preview_exact": true,
+        "stocks": 7
+      }
+    ],
+    "status": "PASS",
+    "study": "SYNTHETIC_NEW_DAYS_WITH_RETAINED_REAL_PREFIXES"
+  },
+  "measurements": {
+    "plain": [
+      {
+        "by_group": {
+          "current-increment-run.json": 4096,
+          "daily.lock": 0,
+          "du1-batches": 4096,
+          "du1-checkpoints": 28672,
+          "histories": 1798144,
+          "preview": 16932864,
+          "results": 37408768,
+          "runs": 53248
+        },
+        "day": 1,
+        "new_allocated_bytes": 56229888,
+        "new_core_calls": 7,
+        "new_file_bytes": 56152005,
+        "new_inode_files": 33,
+        "original_sample_qualifications_unchanged": true,
+        "peak_rss_kib": 122724,
+        "wall_seconds": 17.522536616947036
+      },
+      {
+        "by_group": {
+          "current-increment-run.json": 4096,
+          "du1-batches": 4096,
+          "du1-checkpoints": 28672,
+          "histories": 1798144,
+          "preview": 16936960,
+          "results": 37408768,
+          "runs": 53248
+        },
+        "day": 2,
+        "new_allocated_bytes": 56233984,
+        "new_core_calls": 7,
+        "new_file_bytes": 56163752,
+        "new_inode_files": 32,
+        "original_sample_qualifications_unchanged": true,
+        "peak_rss_kib": 125404,
+        "wall_seconds": 17.188122496998403
+      }
+    ],
+    "compact": [
+      {
+        "by_group": {
+          ".du2-root.json": 4096,
+          "current-increment-run.json": 4096,
+          "daily.lock": 0,
+          "du1-batches": 4096,
+          "du1-checkpoints": 28672,
+          "du2-blobs": 4833280,
+          "du2-intern-anchors": 73728,
+          "histories": 57344,
+          "preview": 94208,
+          "results": 73728,
+          "runs": 53248
+        },
+        "day": 1,
+        "new_allocated_bytes": 5226496,
+        "new_core_calls": 7,
+        "new_file_bytes": 4602030,
+        "new_inode_files": 281,
+        "original_sample_qualifications_unchanged": true,
+        "peak_rss_kib": 289936,
+        "wall_seconds": 53.75530834496021
+      },
+      {
+        "by_group": {
+          "current-increment-run.json": 4096,
+          "du1-batches": 4096,
+          "du1-checkpoints": 28672,
+          "du2-blobs": 1585152,
+          "histories": 57344,
+          "preview": 94208,
+          "results": 73728,
+          "runs": 53248
+        },
+        "day": 2,
+        "new_allocated_bytes": 1900544,
+        "new_core_calls": 7,
+        "new_file_bytes": 1625450,
+        "new_inode_files": 114,
+        "original_sample_qualifications_unchanged": true,
+        "peak_rss_kib": 289936,
+        "wall_seconds": 51.59252829296747
+      }
+    ]
+  },
+  "savings": [
+    {
+      "day": 1,
+      "allocated_reduction_ratio": 0.907051282051282,
+      "wall_ratio": 3.067781196300678
+    },
+    {
+      "day": 2,
+      "allocated_reduction_ratio": 0.9662029281083837,
+      "wall_ratio": 3.001638387321081
+    }
+  ],
+  "counting": "stat.st_blocks*512 for new unique-inode files; excludes directory/inode filesystem overhead; pre-existing read-only aliases excluded"
+}

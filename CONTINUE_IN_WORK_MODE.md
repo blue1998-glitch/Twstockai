@@ -1,3 +1,15 @@
+# 2026-11-02 最新｜M-DU2無損增量儲存已驗；真實新日仍未驗
+
+唯一入口：[M-DU2](股票系統M1_v0_18/graph_core/du2_20261102/README.md)、REPORT／summary／benchmark-summary及capacity-forecast。沿原Journal／主圖IO加可選無損sidecar、共用片段與固定序列化基底，原完整檔及numeric schema不遷移；HTTP與下載還原完全相同bytes／SHA。協調器0.2預設compact，固定DU1 0.1 producer可接續；原core／MA／MACD／策略不改，不建資料庫／來源0.11或catalog。
+
+原private根19.10 GiB；另核預覽6.22 GiB相同副本皆保留，回收0。七真實保存前綴×兩合成新日：原53.63 MiB／批，改進首批4.98／次批1.81 MiB（90.71%／96.62%減少），42組result／history／series完整bytes一致；代價wall約3倍、最高RSS約122→283 MiB。27唯一Python＝25新＋2必要HTTP安全回歸，30 Chromium／18下載含舊真實圖及合成新批；不加歷史PASS、不冒Android或新市場樣本。
+
+全1986參照外推首批約1.21／後續0.51 GiB／交易日，非全市場實測／非已核免費quota；保留20%空間之50／100／200 GiB情境約38／117／275後續日、不含獨立備份，真實新日與quota須再校正。逐片容量保護、checkpoint／修訂／失敗保舊head、同源零重算／零成品寫入均驗；不刪舊資料騰空，需保留所有共用依存／marker完整備份。
+
+本輪來源請求0，既存不完整DU1 capture仍BLOCKED，真實新日／新圖0；原19,596路徑尺寸／mtime／inode不變，只有21唯讀測試alias影響nlink。真實資料／完整結果／PNG／憑證全Git外。來源0.10／parents、正式false／主壓力null與全部UNKNOWN保持。Oracle／VPN／部署／日排程未啟、Android實機未驗、overlay持久／獨立備份仍未知。本里程碑驗收保存後停止，等使用者明示Oracle帳戶完成，再交總監處理真實新日與持久容量／還原，不擴策略或下一工程。下方歷史完整保留。
+
+---
+
 # 2026-11-02 最新｜M-DU1增量工程已驗；真實新日／容量仍受阻
 
 唯一收尾入口：[M-DU1](股票系統M1_v0_18/graph_core/du1_20261102/README.md)、REPORT-current及summary-current。本原工作區FM3私人根實際可讀，保留f2f96c16舊環境缺根紀錄，不當當前結論。沿原Journal／core0.2／MA／MACD／M-G3／M-MOB1完成單次增量、逐股checkpoint、同源零重算、修訂留版、驗證／預覽失敗保舊head及具owner驗證的保存批次選擇／head刷新。跨來源／公司行動未知一律新段重暖，不宣稱連續完整帶；不重做1986歷史補建。
