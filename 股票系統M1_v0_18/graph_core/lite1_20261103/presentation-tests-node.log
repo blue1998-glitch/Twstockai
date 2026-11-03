@@ -1,0 +1,6 @@
+PASS plain limitations preserve refusals and hide unrecognized technical codes
+PASS price strings stay exact and missing values are not invented
+PASS volume and stop labels do not imply confirmation or recommendation
+PASS coverage counts stock identities not event candidates and never mutates saved facts
+PASS old-batch label uses saved batch dates, never infers a trading calendar or freshness guarantee
+{"status":"PASS","unique_methods":5}

@@ -1,0 +1,21 @@
+{
+  "schema": "lite-first-load-benchmark/0.1",
+  "method": "single cold Chromium context per version, same 390x844 viewport; no throttling; JS heap sampled 250ms, not process RSS",
+  "rows": [
+    {
+      "version": "presentation",
+      "status": "LOADED",
+      "wait_ms": 723,
+      "transfer_bytes": 1596175,
+      "js_heap_used_bytes": 4834088,
+      "js_heap_sampled_peak_bytes": 4834088,
+      "navigation": {
+        "encoded": 1594574,
+        "decoded": 1594574,
+        "dom_content_loaded_ms": 248.09999999962747,
+        "load_ms": 250.40000000037253
+      },
+      "errors": []
+    }
+  ]
+}

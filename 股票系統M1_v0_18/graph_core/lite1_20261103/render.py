@@ -19,12 +19,13 @@ def render(output):
     # Same list on explicit expansion, rather than thousands of hidden DOM rows.
     viewer+="\nconst originalBuildList=buildList;buildList=()=>{if($('candidates').open)originalBuildList();else $('candidateList').replaceChildren();};$('candidates').ontoggle=()=>{if($('candidates').open&&result)originalBuildList();};\n"
     scope=(PROJECT/'graph_core/comp1_20261102/compare.js').read_text().split("if(typeof window!=='undefined')",1)[0]
-    script=viewer+'\n'+(PROJECT/'graph_core/fm3_20261101/lazy_series.js').read_text()+'\n'+scope+'\n'+(HERE/'view.js').read_text()
+    script=viewer+'\n'+(PROJECT/'graph_core/fm3_20261101/lazy_series.js').read_text()+'\n'+scope+'\n'+(HERE/'copy.js').read_text()+'\n'+(HERE/'view.js').read_text()
     style=(PROJECT/'graph_core_chart/viewer.css').read_text()+'\n'+(PROJECT/'graph_core_chart/viewer_v02.css').read_text()+'\n'+(HERE/'style.css').read_text()
     template=(PROJECT/'graph_core_chart/template.html').read_text()
     bundle=dict(schema_version='graph-recognition-chart-bundle/0.2',view_version='graph-recognition-view/0.2',series=[],sampling=dict(prices='ORIGINAL_BOUND_SERIES_ON_DEMAND'))
     payload=json.dumps(pack(bundle),ensure_ascii=False,separators=(',',':')).replace('<','\\u003c')
     ui_sha=digest((script+style+template).encode())
+    latest=max(x['as_of'] for x in json.loads((output/'preparation-private.json').read_bytes())['batches'])
     completed=output/('render-'+ui_sha[:12]+'-private.json')
     if completed.exists():
         old=json.loads(completed.read_bytes());catalogue=json.loads(Path(old['catalogue']).read_bytes())
@@ -38,8 +39,10 @@ def render(output):
         html=template.replace('@@STYLE@@',style).replace('@@DATA@@',payload).replace('@@SCRIPT@@',script)
         html=html.replace('</body>','<script id="market-state" type="application/json">'+data+'</script></body>')
         # State must exist before script execution, without embedding any chart.
+        html=html.replace('<title>M1 圖形辨識研究主圖 0.1</title>','<title>Twstockai 股票研究</title>')
+        context='<script id="lite-view-context" type="application/json">'+json.dumps(dict(latest_saved_as_of=latest))+'</script>'
         marker='<script id="payload"';index=html.index(marker);tail='<script id="market-state" type="application/json">'+data+'</script>'
-        html=html.replace(tail,'');html=html[:index]+tail+html[index:]
+        html=html.replace(tail,'');html=html[:index]+tail+context+html[index:]
         raw=html.encode();name='market-lite1-'+ui_sha[:12]+'.html'
         if len(raw)>=10*1024*1024:raise ValueError('LITE_INITIAL_HTML_10MIB_BOUND')
         with budget(output):c.immutable(folder/name,raw)
