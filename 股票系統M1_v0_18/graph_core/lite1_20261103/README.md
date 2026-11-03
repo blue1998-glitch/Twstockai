@@ -1,3 +1,5 @@
+> 2026-11-03 直接判定補充：圖內五行判定、原參照點與量價未判定已接上，最新成品與實測見 [DIRECT_VERDICT.md](DIRECT_VERDICT.md)。下方原版數字／驗收留史，不當本輪重跑。
+
 > 2026-11-03 使用者導向補充已接入：最新首頁、白話卡片、手機比較字卡與頁首換日期見 [USER_INTERFACE.md](USER_INTERFACE.md)。下方數字與收據為原M-LITE1固定版本留史；本補充的實測、指紋與GitHub讀回另存PRESENTATION系列。
 
 # M-LITE1 私人輕量判定工作台

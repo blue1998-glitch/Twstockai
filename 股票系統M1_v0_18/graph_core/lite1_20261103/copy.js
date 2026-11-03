@@ -12,6 +12,12 @@ const LiteCopy=(()=>{
    message:judge?'可看當期參照變化；不同參照可能有不同結果。':'可看保存走勢；當期結構暫不能判定。'};
  }
  function dateNote(selected,latest){return selected<latest?'較早批次｜最新保存至 '+latest:'已保存收盤資料｜非即時';}
- return {risk,key,volume,event,overview,dateNote};
+ function volumeShort(value){return {'量增（較前筆）':'較前筆量增','量減（較前筆）':'較前筆量減','量平（較前筆）':'較前筆量平','量不可比':'量不可比','量未知':'量對照不足'}[value]||volume(value);}
+ // No approved volume-price rule exists in this saved-fact view.
+ function volumePrice(d){return '未判定 · '+volumeShort(d.volume_label);}
+ function referencePoints(d){const groups=new Map();for(const r of d.refs||[]){if(r.collection!=='reference_candidates'||!r.occurred_at||!r.confirmed_at||!d.as_of||r.occurred_at>d.as_of||r.confirmed_at>d.as_of||r.price===null||r.price===undefined)continue;const key=r.occurred_at+'|'+r.price;if(!groups.has(key))groups.set(key,{date:r.occurred_at,price:r.price,candidate_ids:[]});const g=groups.get(key);if(!g.candidate_ids.includes(r.candidate_id))g.candidate_ids.push(r.candidate_id);}return [...groups.values()];}
+ function reference(d){const points=referencePoints(d),refs=d.refs||[];if(!refs.length)return {caption:d.can_judge?'未指定當期參照點':'暫無可用參照',point:null};if(points.length===1&&refs.every(r=>r.collection==='reference_candidates'&&r.occurred_at))return {caption:'研究點 '+points[0].date+'（非主壓力）',point:points[0]};return {caption:points.length>1?'多個研究點；未指定主要點':'研究參照；未指定主要點',point:null};}
+ function verdictLines(d){return ['目前：'+d.headline,'關鍵價：'+key(d.key_caption),'量價：'+volumePrice(d),'風險：'+risk(d.risk),'參照：'+reference(d).caption];}
+ return {risk,key,volume,event,overview,dateNote,volumeShort,volumePrice,referencePoints,reference,verdictLines};
 })();
 if(typeof module!=='undefined')module.exports=LiteCopy;

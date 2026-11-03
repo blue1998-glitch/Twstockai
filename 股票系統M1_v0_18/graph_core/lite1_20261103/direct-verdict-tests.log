@@ -1,0 +1,10 @@
+PASS five chart rows include fact, exact price, volume qualification, risk and source qualification
+PASS volume increase never becomes confirmation and shortage never cancels crossing
+PASS no reference stays missing, never a guessed source point
+PASS all same-source candidate ids survive co-located annotation, input stays unchanged
+PASS different dates or values do not elect a primary point
+PASS research box start is not manufactured as an original pivot date
+PASS future or unconfirmed original source is not labelled as a current point
+PASS source point uses full year so remote source does not look like current-year evidence
+PASS absence of a new-event reference does not erase still-comparable research references
+{"status":"PASS","unique_methods":9}

@@ -13,6 +13,10 @@ def render(output):
     viewer=(PROJECT/'graph_core_chart/viewer.js').read_text()
     boot="new ResizeObserver(()=>draw()).observe($('chart'));options($('stock'),data.series.map(s=>[s.code,s.code]),data.series[0].code);setup(data.series[0].code);"
     if viewer.count(boot)!=1:raise ValueError('EXACT_EXISTING_VIEWER_BOOT_REQUIRED')
+    # Display-only 60px heading space; keep original pane heights with a 60px taller canvas.
+    pane='const price={top:30,bottom:h*.57},volume={top:h*.63,bottom:h*.76},macd={top:h*.83,bottom:h-23}'
+    if viewer.count(pane)!=1:raise ValueError('EXACT_EXISTING_PANE_LAYOUT_REQUIRED')
+    viewer=viewer.replace(pane,'const plotH=h-60;const price={top:90,bottom:plotH*.57+60},volume={top:plotH*.63+60,bottom:plotH*.76+60},macd={top:plotH*.83+60,bottom:h-23}')
     extension=(PROJECT/'graph_core_chart/viewer_v02.js').read_text()
     extension=extension.replace('；FinMind未混入。','；依保存來源與分段界線。').replace('8069原來源顯示精度／單位限制保留，未認證FinMind精確股數。','來源與公司行動依保存資格；跨來源不自動認證。')
     viewer=viewer.replace(boot,extension+"\nnew ResizeObserver(()=>{if(result)draw();}).observe($('chart'));")
