@@ -43,7 +43,7 @@ def render(output):
         html=template.replace('@@STYLE@@',style).replace('@@DATA@@',payload).replace('@@SCRIPT@@',script)
         html=html.replace('</body>','<script id="market-state" type="application/json">'+data+'</script></body>')
         # State must exist before script execution, without embedding any chart.
-        html=html.replace('<title>M1 圖形辨識研究主圖 0.1</title>','<title>Twstockai 股票研究</title>')
+        html=html.replace('<title>M1 圖形辨識研究主圖 0.1</title>','<title>Twstockai 股票系統</title>')
         context='<script id="lite-view-context" type="application/json">'+json.dumps(dict(latest_saved_as_of=latest))+'</script>'
         marker='<script id="payload"';index=html.index(marker);tail='<script id="market-state" type="application/json">'+data+'</script>'
         html=html.replace(tail,'');html=html[:index]+tail+context+html[index:]

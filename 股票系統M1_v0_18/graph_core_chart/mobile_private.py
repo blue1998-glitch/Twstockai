@@ -127,10 +127,10 @@ def batch_index(path,*,linked_roots=()):
         if not summaries and summary.get('presentation')=='LITE':default_page=prefix+'/'+p.name
         files.update({prefix+'/'+name:dict(item,parent=item.get('parent',item['path'].parent)) for name,item in allowed.items()})
         hashes.extend(scripts);summaries.append(summary)
-        label=entry['as_of']+'｜股票研究' if summary.get('presentation')=='LITE' else entry['as_of']+' '+entry['run_id']
+        label=entry['as_of']+'｜股票系統' if summary.get('presentation')=='LITE' else entry['as_of']+' '+entry['run_id']
         links.append('<li><a href="/'+prefix+'/'+p.name+'">'+escape(label)+'</a></li>')
     raw=('<!doctype html><html lang="zh-Hant"><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>私人已保存批次</title><style>body{font:18px sans-serif;padding:18px;overflow-wrap:anywhere}li{padding:16px 0}a{line-height:1.8}</style><h1>私人已保存批次</h1><p>最新批次列於最前；未通過來源日期資格的擷取不列入。切換只讀保存圖，不補算。</p><ul>'+''.join(links)+'</ul></html>').encode()
-    if default_page:raw=raw.decode().replace('私人已保存批次','選擇資料日期').replace('最新批次列於最前；未通過來源日期資格的擷取不列入。切換只讀保存圖，不補算。','選擇已保存日期，查看當天股票研究。').encode()
+    if default_page:raw=raw.decode().replace('私人已保存批次','選擇資料日期').replace('最新批次列於最前；未通過來源日期資格的擷取不列入。切換只讀保存圖，不補算。','選擇已保存日期，查看當天股票判定。').encode()
     files['batches']=dict(raw=raw,bytes=len(raw),sha256=hashlib.sha256(raw).hexdigest())
     return manifest,files,dict(batches=summaries,stocks=summaries[0]['stocks'],charts=summaries[0]['charts'],as_of=summaries[0]['as_of'],default_page=default_page),list(set(hashes))
 
