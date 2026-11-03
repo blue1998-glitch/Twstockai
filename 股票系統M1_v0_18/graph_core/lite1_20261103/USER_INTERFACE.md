@@ -14,13 +14,13 @@
 
 ## 本輪實測與原件
 
-新版11/02 HTML **1594574B（約1.52MiB）**，初始仍0事件／0個股圖。owner目錄已驗證後，390寬冷Chromium首次傳輸1596175B、等待0.723秒、JS heap約4.61MiB；本機單次樣本，不是Android效能保證。切換新目錄驗證及服務首次啟動仍約數十秒，未把暖機成本隱藏成0.723秒。
+新版11/02 HTML **1594562B（約1.52MiB）**，初始仍0事件／0個股圖。owner目錄已驗證後，390寬冷Chromium首次傳輸1596163B、等待0.763秒、JS heap約4.61MiB；本機單次樣本，不是Android效能保證。切換新目錄驗證及服務首次啟動仍約數十秒，未把暖機成本隱藏成0.763秒。
 
-補充含所有試作、圖及驗證的FS淨增 **11.73MiB**，驗核剩720.16MiB，高於512MiB，預先上限24MiB。沒有重建分片或複製1946份圖。原M-LITE1兩日期完整market-state腳本的 **原bytes完全相同**，含全部1986身分、判定、精度、來源、分片路由；asset manifest SHA相同。原M-DAY1／FM3兩head小檔SHA相同，沿用原90377路徑metadata與前次全量指紋，不重驗19GiB。見[PRESENTATION_PRESERVATION](PRESENTATION_PRESERVATION.json)。
+補充含所有試作、圖及驗證的FS淨增 **15.59MiB**，驗核剩716.30MiB，高於512MiB，預先上限24MiB。沒有重建分片或複製1946份圖。原M-LITE1兩日期完整market-state腳本的 **原bytes完全相同**，含全部1986身分、判定、精度、來源、分片路由；asset manifest SHA相同。原M-DAY1／FM3兩head小檔SHA相同，沿用原90377路徑metadata與前次全量指紋，不重驗19GiB。見[PRESENTATION_PRESERVATION](PRESENTATION_PRESERVATION.json)。
 
 實跑17唯一Python＝2日期呈現＋8原白名單＋7owner安全回歸；5個Node純呈現方法；34組真實瀏覽器＝24三尺寸完整流程＋7定向邊界＋3最終版分類區高度／捷徑控制；5數值下載原物件相同、6個實際owner HTTP控制。前輪31Python／28瀏覽器沒有冒本輪重跑；中間重試批不加總。詳見[PRESENTATION_VERIFICATION](PRESENTATION_VERIFICATION.json)、[瀏覽器](PRESENTATION_BROWSER.json)、[邊界](PRESENTATION_EDGES.json)、[捷徑](PRESENTATION_SHORTCUTS.json)、[效能](PRESENTATION_PERFORMANCE.json)及兩份presentation-tests日誌。
 
-最後僅加分類區高度與提示字，沿同UI／資料／路由，重新驗三尺寸全部分類可達與日期／搜尋；沒有新增圖形或事件規則。手機直橫與桌面圖片在Git外 `lite1_20261103/presentation/final/browser`（字卡／圖／舊參照）及 `presentation/ready/browser`（最終首頁）。原圖與中間版圖片皆留存。
+最後僅加分類區高度、提示字與「暫無圖可看」中性摘要，沿同UI／資料／路由，重新驗三尺寸全部分類可達與日期／搜尋；沒有新增圖形或事件規則。手機直橫與桌面圖片在Git外 `lite1_20261103/presentation/final/browser`（字卡／圖／舊參照）及 `presentation/delivered/browser`（最終首頁）。原圖與中間版圖片皆留存。
 
 本輪沒有失敗的產品測試；視讀發現日期入口位置／內部批次名及舊日期多分類區過長，於同輪低風險修正。只重啟自己既有只讀owner服務以載入日期文案，維持單一listener；不是重啟Cloud、資料worker或新增對外服務。原SIGKILL／SQLite／xref／Fontconfig／file://及受拒入口不變。
 
