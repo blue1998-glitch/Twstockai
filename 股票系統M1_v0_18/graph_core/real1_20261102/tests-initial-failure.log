@@ -1,0 +1,100 @@
+test_alias_rejects_changed_or_unregistered_source (graph_core.real1_20261102.test_integration.IntegrationTests.test_alias_rejects_changed_or_unregistered_source) ... ok
+test_builder_reuses_exact_originals_and_saved_values_without_engine (graph_core.real1_20261102.test_integration.IntegrationTests.test_builder_reuses_exact_originals_and_saved_values_without_engine) ... ERROR
+test_capacity_refusal_no_source_repair_or_output (graph_core.real1_20261102.test_integration.IntegrationTests.test_capacity_refusal_no_source_repair_or_output) ... ok
+test_evidence_requires_owner_and_allowlisted_sha (graph_core.real1_20261102.test_integration.IntegrationTests.test_evidence_requires_owner_and_allowlisted_sha) ... ERROR
+test_identity_cutoff_basis_and_indicators_do_not_fallback (graph_core.real1_20261102.test_integration.IntegrationTests.test_identity_cutoff_basis_and_indicators_do_not_fallback) ... ERROR
+test_missing_original_or_audit_mismatch_refuses (graph_core.real1_20261102.test_integration.IntegrationTests.test_missing_original_or_audit_mismatch_refuses) ... ok
+test_projection_exact_existing_helpers_and_current_event_coverage (graph_core.real1_20261102.test_integration.IntegrationTests.test_projection_exact_existing_helpers_and_current_event_coverage) ... ERROR
+test_same_binding_repeat_reuses_artifacts_not_duplicate_full_graph (graph_core.real1_20261102.test_integration.IntegrationTests.test_same_binding_repeat_reuses_artifacts_not_duplicate_full_graph) ... ERROR
+test_shell_preserves_original_payload_and_escapes_new_state (graph_core.real1_20261102.test_integration.IntegrationTests.test_shell_preserves_original_payload_and_escapes_new_state) ... ok
+test_auth_no_overwrite_and_git_path_refusal (graph_core.mob1_20261102.test_private.PrivateTests.test_auth_no_overwrite_and_git_path_refusal) ... ok
+test_failed_auth_throttle (graph_core.mob1_20261102.test_private.PrivateTests.test_failed_auth_throttle) ... ok
+test_host_origin_spoof_and_read_only_methods (graph_core.mob1_20261102.test_private.PrivateTests.test_host_origin_spoof_and_read_only_methods) ... ok
+test_html_and_series_require_identity_not_unguessable_url (graph_core.mob1_20261102.test_private.PrivateTests.test_html_and_series_require_identity_not_unguessable_url) ... ok
+test_paths_listing_credentials_and_query_not_served (graph_core.mob1_20261102.test_private.PrivateTests.test_paths_listing_credentials_and_query_not_served) ... ok
+test_tamper_symlink_and_security_headers (graph_core.mob1_20261102.test_private.PrivateTests.test_tamper_symlink_and_security_headers) ... ok
+test_wrong_and_malformed_credentials_refused (graph_core.mob1_20261102.test_private.PrivateTests.test_wrong_and_malformed_credentials_refused) ... ok
+
+======================================================================
+ERROR: test_builder_reuses_exact_originals_and_saved_values_without_engine (graph_core.real1_20261102.test_integration.IntegrationTests.test_builder_reuses_exact_originals_and_saved_values_without_engine)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/workspace/Twstockai/股票系統M1_v0_18/graph_core/real1_20261102/test_integration.py", line 21, in test_builder_reuses_exact_originals_and_saved_values_without_engine
+    x=w.build(self.root,self.base/'output',self.manifest,reserve_bytes=0)
+      ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/workspace/Twstockai/股票系統M1_v0_18/graph_core/real_workbench.py", line 95, in build
+    radar,overlay=projection(saved,stock,chart,descriptor)
+                  ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/workspace/Twstockai/股票系統M1_v0_18/graph_core/real_workbench.py", line 47, in projection
+    bind_chart(chart,saved,stock)
+  File "/workspace/Twstockai/股票系統M1_v0_18/graph_core/real_workbench.py", line 34, in bind_chart
+    if chart['code']!=stock['code'] or chart['exchange']!=stock['market'] or stock['as_of']!=a or chart['results']!=[r]:raise ValueError('ORIGINAL_CHART_STOCK_DATE_OR_CORE_MISMATCH')
+                                                                             ~~~~~^^^^^^^^^
+KeyError: 'as_of'
+
+======================================================================
+ERROR: test_evidence_requires_owner_and_allowlisted_sha (graph_core.real1_20261102.test_integration.IntegrationTests.test_evidence_requires_owner_and_allowlisted_sha)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/workspace/Twstockai/股票系統M1_v0_18/graph_core/real1_20261102/test_integration.py", line 58, in test_evidence_requires_owner_and_allowlisted_sha
+    x=w.build(self.root,self.base/'output',self.manifest,reserve_bytes=0);page=Path(x['preview']['path']);raw=c.read_bytes(page);state=json.loads(raw.split(b'<script id="market-state" type="application/json">')[1].split(b'</script>')[0]);desc=state['stocks'][0]['preview_evidence']
+      ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/workspace/Twstockai/股票系統M1_v0_18/graph_core/real_workbench.py", line 95, in build
+    radar,overlay=projection(saved,stock,chart,descriptor)
+                  ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/workspace/Twstockai/股票系統M1_v0_18/graph_core/real_workbench.py", line 47, in projection
+    bind_chart(chart,saved,stock)
+  File "/workspace/Twstockai/股票系統M1_v0_18/graph_core/real_workbench.py", line 34, in bind_chart
+    if chart['code']!=stock['code'] or chart['exchange']!=stock['market'] or stock['as_of']!=a or chart['results']!=[r]:raise ValueError('ORIGINAL_CHART_STOCK_DATE_OR_CORE_MISMATCH')
+                                                                             ~~~~~^^^^^^^^^
+KeyError: 'as_of'
+
+======================================================================
+ERROR: test_identity_cutoff_basis_and_indicators_do_not_fallback (graph_core.real1_20261102.test_integration.IntegrationTests.test_identity_cutoff_basis_and_indicators_do_not_fallback)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/workspace/Twstockai/股票系統M1_v0_18/graph_core/real1_20261102/test_integration.py", line 41, in test_identity_cutoff_basis_and_indicators_do_not_fallback
+    with self.assertRaises(ValueError):w.projection(self.saved,self.stock,chart,self.desc)
+                                       ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/workspace/Twstockai/股票系統M1_v0_18/graph_core/real_workbench.py", line 47, in projection
+    bind_chart(chart,saved,stock)
+  File "/workspace/Twstockai/股票系統M1_v0_18/graph_core/real_workbench.py", line 34, in bind_chart
+    if chart['code']!=stock['code'] or chart['exchange']!=stock['market'] or stock['as_of']!=a or chart['results']!=[r]:raise ValueError('ORIGINAL_CHART_STOCK_DATE_OR_CORE_MISMATCH')
+                                                                             ~~~~~^^^^^^^^^
+KeyError: 'as_of'
+
+======================================================================
+ERROR: test_projection_exact_existing_helpers_and_current_event_coverage (graph_core.real1_20261102.test_integration.IntegrationTests.test_projection_exact_existing_helpers_and_current_event_coverage)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/workspace/Twstockai/股票系統M1_v0_18/graph_core/real1_20261102/test_integration.py", line 45, in test_projection_exact_existing_helpers_and_current_event_coverage
+    radar,overlay=w.projection(self.saved,self.stock,self.chart,self.desc)
+                  ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/workspace/Twstockai/股票系統M1_v0_18/graph_core/real_workbench.py", line 47, in projection
+    bind_chart(chart,saved,stock)
+  File "/workspace/Twstockai/股票系統M1_v0_18/graph_core/real_workbench.py", line 34, in bind_chart
+    if chart['code']!=stock['code'] or chart['exchange']!=stock['market'] or stock['as_of']!=a or chart['results']!=[r]:raise ValueError('ORIGINAL_CHART_STOCK_DATE_OR_CORE_MISMATCH')
+                                                                             ~~~~~^^^^^^^^^
+KeyError: 'as_of'
+
+======================================================================
+ERROR: test_same_binding_repeat_reuses_artifacts_not_duplicate_full_graph (graph_core.real1_20261102.test_integration.IntegrationTests.test_same_binding_repeat_reuses_artifacts_not_duplicate_full_graph)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/workspace/Twstockai/股票系統M1_v0_18/graph_core/real1_20261102/test_integration.py", line 27, in test_same_binding_repeat_reuses_artifacts_not_duplicate_full_graph
+    x=w.build(self.root,self.base/'output',self.manifest,reserve_bytes=0)
+      ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/workspace/Twstockai/股票系統M1_v0_18/graph_core/real_workbench.py", line 95, in build
+    radar,overlay=projection(saved,stock,chart,descriptor)
+                  ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/workspace/Twstockai/股票系統M1_v0_18/graph_core/real_workbench.py", line 47, in projection
+    bind_chart(chart,saved,stock)
+  File "/workspace/Twstockai/股票系統M1_v0_18/graph_core/real_workbench.py", line 34, in bind_chart
+    if chart['code']!=stock['code'] or chart['exchange']!=stock['market'] or stock['as_of']!=a or chart['results']!=[r]:raise ValueError('ORIGINAL_CHART_STOCK_DATE_OR_CORE_MISMATCH')
+                                                                             ~~~~~^^^^^^^^^
+KeyError: 'as_of'
+
+----------------------------------------------------------------------
+Ran 16 tests in 21.836s
+
+FAILED (errors=5)

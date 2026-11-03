@@ -1,3 +1,19 @@
+# 2026-11-03 最新有效｜M-REAL1真實FM3工作台已接通，本機owner驗收完成
+
+唯一工程仍為此完成M-PORT1／M-UNIFY1的既有Codex、原Cloud與dev/m1-v018-chart-annotations；每輪先依下節即時核ID／FM3／工程鎖。唯一主檔為本CONTINUE最新節，AGENTS為治理規則；[本輪真實交付／證據／入口](股票系統M1_v0_18/graph_core/real1_20261102/README.md)。成品ID沿開工日real1_20261102留存，不把驗收日當行情或公布日期。
+
+FM3原1986終態全部接進UX1／OBS1／COMP1：1439多日＋30不足＋514品質拒用＋3缺行情；1469原圖含短史，不是正式可交易訊號。行情截止2026-10-30、參照來源11/2分開。原保存K／core／MA／MACD／SHA全1469對回Journal，零來源抓取／核心／指標重算。當期雷達16954候選事件／1049股票，不當獨立型態或訊號；同期2～4股只原證據描述並列，保留UNKNOWN與全部拒比。
+
+新Git外實體工作台沿原HTML／Canvas及1469分片，只另存索引與證據；同磁碟hardlink只讀別名共用約3.30GiB原圖，不複製內容、不覆寫原件，nlink增1469另記。成果新增186.57MiB，含私人驗收工作目錄量測188.36MiB，512MiB安全保留；完整比較邏輯JSON只以既有DU2壓縮片段保存。核心／MA／MACD／原市場builder與規則不改，新loader僅精確綁證據，原owner服務僅增加白名單描述欄。
+
+本輪16唯一Python＝9新＋7必要安全回歸，loader／原scope定向控制；真實4尺寸29組／8下載，JS／外部請求0；原圖1469＋證據1469＋HTML全部2939份owner HTTP GET長度／SHA相同。兩輪合成封套錯誤與修正留史，不加中間批／歷史PASS。真實PNG／行情／分片／憑證／完整分析均Git外，公開僅程式／合成測試及不可還原摘要。
+
+**已驗入口僅原Cloud本機http://127.0.0.1:8765/，owner驗證且只綁loopback，不是Android可外連網址。** 私人連線資訊在/workspace/twstockai-local-data/real1_20261102/connection-private.json，不能公開；當下服務可讀不保證環境重啟後常駐。Android實機、Oracle／VPN／公開或私人外部部署、每日排程、獨立備份／持久復原仍未完成。Raw／UNKNOWN／來源parents及正式false／主壓力null不變，不造每日淨帳或績效。
+
+本輪固定SHA保存讀回後停止，不自啟下一里程碑。Oracle帳戶仍暫停，交回Work總監只核摘要；未來工程只派此對話，私人資料不送公開GitHub或未授權第三方。下方歷史完整保留，舊UX1／OBS1／COMP1缺FM3是在其原環境的歷史狀態，本輪已補真實接線，不能再列為目前未接通。
+
+---
+
 # 2026-11-02 最新有效｜M-UNIFY1唯一工程入口正式指定
 
 **唯一工程寫入入口：目前這個已完成M-PORT1、可實讀FM3的既有Codex對話。** Work只讀研究、總監派工與驗收；不另開Codex／代理／競爭分支。唯一專案主檔為根`CONTINUE_IN_WORK_MODE.md`最上方，AGENTS最新節為治理規則；[完整整併證據與接續流程](docs/engineering-governance/unify1_20261102/README.md)。

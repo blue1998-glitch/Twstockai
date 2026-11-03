@@ -48,14 +48,16 @@ def preview_index(path):
     v=json.loads(m[1]);allowed={p.name:dict(path=p,bytes=len(raw),sha256=hashlib.sha256(raw).hexdigest())}
     charts=0
     for s in v['stocks']:
-        desc=s.get('preview_series')
-        if not desc:continue
-        name=desc['path']
-        if not re.fullmatch(r'series-[a-f0-9]{64}\.json',name) or name[7:-5]!=desc['sha256']:
-            raise ValueError('Invalid series descriptor')
-        q=p.parent/name
-        if q.is_symlink() or codec.info(q)['bytes']!=desc['bytes']:raise ValueError('Missing private series')
-        allowed[name]=dict(path=q,bytes=desc['bytes'],sha256=desc['sha256']);charts+=1
+        for field in ('preview_series','preview_evidence'):
+            desc=s.get(field)
+            if not desc:continue
+            name=desc['path']
+            if not re.fullmatch(r'series-[a-f0-9]{64}\.json',name) or name[7:-5]!=desc['sha256']:
+                raise ValueError('Invalid series descriptor')
+            q=p.parent/name
+            if q.is_symlink() or codec.info(q)['bytes']!=desc['bytes']:raise ValueError('Missing private series')
+            allowed[name]=dict(path=q,bytes=desc['bytes'],sha256=desc['sha256'])
+            if field=='preview_series':charts+=1
     hashes=[]
     for script in re.findall(rb'<script(?:\s[^>]*)?>(.*?)</script>',raw,re.S):
         hashes.append("'sha256-"+base64.b64encode(hashlib.sha256(script).digest()).decode()+"'")
