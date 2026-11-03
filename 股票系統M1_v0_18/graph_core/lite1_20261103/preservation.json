@@ -1,0 +1,82 @@
+{
+  "android": "NOT_TESTED_NEW_BUILD",
+  "backup": "UNKNOWN_NO_INDEPENDENT_COPY",
+  "batches": [
+    {
+      "as_of": "2026-11-02",
+      "chart_validation": "All original descriptors/closure + preserved source audit; selected actual HTTP/Chromium SHA reads, NOT a new full-market graph GET pass",
+      "html_bytes": 1586747,
+      "html_sha256": "3fee8ea3256a47880c587a55a17525856d8c15974160bfb8913d2f01139beb07",
+      "identities": 1986,
+      "original_graph_routes": 1946
+    },
+    {
+      "as_of": "2026-10-30",
+      "chart_validation": "All original descriptors/closure + preserved source audit; selected actual HTTP/Chromium SHA reads, NOT a new full-market graph GET pass",
+      "html_bytes": 1603712,
+      "html_sha256": "02ec51641a0a4875b3e532cd18c668d3efbbea889f24d91d96ae0a0b447c5243",
+      "identities": 1986,
+      "original_graph_routes": 1469
+    }
+  ],
+  "elapsed_seconds": 29.803846964000513,
+  "external_android_url": null,
+  "free_bytes": 768151552,
+  "http_controls": [
+    {
+      "actual": 401,
+      "check": "/",
+      "expected": 401
+    },
+    {
+      "actual": 303,
+      "check": "/",
+      "expected": 303
+    },
+    {
+      "actual": 200,
+      "check": "/batches",
+      "expected": 200
+    },
+    {
+      "actual": 404,
+      "check": "allowlist/access control",
+      "expected": 404
+    },
+    {
+      "actual": 404,
+      "check": "allowlist/access control",
+      "expected": 404
+    },
+    {
+      "actual": 403,
+      "check": "/",
+      "expected": 403
+    },
+    {
+      "actual": 405,
+      "check": "/",
+      "expected": 405
+    },
+    {
+      "actual": 200,
+      "check": "allowlist/access control",
+      "expected": 200
+    }
+  ],
+  "minimum_free_bytes": 536870912,
+  "old_full_sha_repeated": false,
+  "old_page_allocation_scope": "Includes entire referenced base-file/spans; shared bytes are NOT marginal page cost. Old files retained; no disk reclaimed.",
+  "old_page_dependency_allocated_bytes": 47886336,
+  "old_page_dependency_files": 1780,
+  "original_audit_manifest_id": "377fe0dd42cd7e10be3b6959ba02bf2b1114a8ba8744dd9670b2575103b6f64a",
+  "original_unchanged_metadata_paths": 90377,
+  "owner_whitelisted_routes": 19813,
+  "private_unique_regular_allocated_bytes": 245972992,
+  "restart_persistence": "UNKNOWN",
+  "source_heads_exact_sha": {
+    "current-increment-run.json": true,
+    "fm3-continuation.json": true
+  },
+  "status": "PASS_PRIVATE_LITE_CLOSURE_AND_OWNER"
+}

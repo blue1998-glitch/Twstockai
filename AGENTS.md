@@ -1,3 +1,21 @@
+# 2026-11-03 最新有效｜M-LITE1輕量私人判定工作台交付，Android外連仍未完成
+
+唯一工程仍為本M-PORT1／M-UNIFY1既有Codex、原Cloud與dev/m1-v018-chart-annotations；原工程鎖、來源根及治理規則不變。[本輪成品／實測／限制](股票系統M1_v0_18/graph_core/lite1_20261103/README.md)，唯一主檔是CONTINUE最上方。
+
+11/02 HTML 347275022→1586747B（1.51MiB）；1986身分、1946新日原圖及429071事件完整分片，10/30的1469圖／16954事件可回看。首頁、雷達與2～4股比較結論先行，圖上直接畫原研究判定／價位，技術欄位收折。空series／零事件起始，按需載入、owner白名單與SHA；原圖副本0、來源／核心／指標重算0。停止比較不冒突破；11/02仍1508不可判定／478不足，多參照不暗選主壓力，量只較前筆、配合未定。
+
+31唯一Python＝24新＋7owner回歸；28真實Chromium組＝21三尺寸＋7定向，5精確JSON下載、8實際HTTP控制，JS／外部請求0。全圖descriptor／閉包核對＋原90377路徑metadata沿既有SHA證據，兩head小檔SHA相同；未重做19GiB或全3415圖GET。所有中間失敗／修正留史，不累加舊PASS。
+
+同Cloud冷瀏覽器／已驗目錄：首次傳輸約347.28→1.59MB，等待7.102→0.795秒，JS heap340.24→4.56MiB；首次目錄驗證另24.284秒。一次分片204.200秒／RSS1970.81MiB，其後兩殼0.070秒／RSS329.76MiB；舊完整state重序列化10.653秒／RSS3049.68MiB，不冒核心加速。當期必要新依存157.79MiB；含試作／驗證實體234.58MiB，驗核剩732.57MiB，高於512MiB。舊版保留，總磁碟增加，沒有回收；非備份。
+
+本機owner服務http://127.0.0.1:8765/於交付時可操作，只綁原Cloud loopback；新私人view-head在/workspace/twstockai-local-data/lite1_20261103，未回寫M-DAY1有效head。不是Android可外連網址，實機未測；Oracle／VPN／外部部署／日排程未啟，獨立備份及重啟持久性未知。私人行情／原圖／分片／PNG／憑證全部Git外；公開只程式、合成控制及不可還原摘要。
+
+原來源0.10／parents、P0-3／P0-4、core0.2／MA／MACD、策略／庫／歷史／main、Raw／UNKNOWN與全部舊警告不改；execution／historical／policy false、primary_pressure_id／imputed_close／valuation null。原SIGKILL根因未知，不造每日淨帳或六方案績效。
+
+固定SHA讀回收據另存本輪目錄，避免自指；保存後本里程碑停止，只交Work總監唯讀用途檢視，完整可貼指令見WORK_HANDOFF。Oracle仍待使用者帳戶完成及後續明示授權。下方歷史完整保留。
+
+---
+
 # 2026-11-03 最新有效｜M-DAY1 真實11/02全市場增量已驗，仍明確分段
 
 唯一入口仍為本M-PORT1／M-UNIFY1既有Codex、原Cloud及dev/m1-v018-chart-annotations；每輪即時核runtime ID、FM3、原工程鎖與遠端頭，不另開代理／工作。唯一主檔為CONTINUE最上方；[本輪成品與實測](股票系統M1_v0_18/graph_core/day1_20261103/README.md)、summary／resources／preservation／verification及GITHUB_READBACK。

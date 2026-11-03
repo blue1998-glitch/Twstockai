@@ -40,13 +40,55 @@ def load_auth(path):
     return v
 
 
-def preview_index(path):
+def linked_assets(page,state,roots):
+    """Explicit optional same-host original-chart routes; no copies/migration.
+    No roots supplied => fail closed. HTML cannot grant an arbitrary file root.
+    """
+    spec=state.get('asset_index')
+    if not spec:return {}
+    if state.get('schema')!='private-lite-workbench/0.1' or not roots:raise ValueError('Explicit linked chart roots required')
+    name=spec['path']
+    if not re.fullmatch(r'assets-[a-f0-9]{64}\.json',name) or name[7:-5]!=spec['sha256']:raise ValueError('Invalid linked manifest name')
+    manifest=page.parent/name
+    if manifest.is_symlink():raise ValueError('Linked manifest symlink refused')
+    raw=manifest.read_bytes()
+    if len(raw)!=spec['bytes'] or hashlib.sha256(raw).hexdigest()!=spec['sha256']:raise ValueError('Linked manifest changed')
+    value=json.loads(raw)
+    if value.get('schema')!='private-lite-linked-assets/0.1':raise ValueError('Linked manifest schema')
+    allowed_roots=[external(x) for x in roots];items={}
+    for item in value['charts']:
+        route=item['route'];q=Path(item['source_path']).absolute()
+        if not re.fullmatch(r'series-[a-f0-9]{64}\.json',route) or q.name!=route or route[7:-5]!=item['sha256']:raise ValueError('Invalid linked chart identity')
+        if any(x.is_symlink() for x in (q,*q.parents)):raise ValueError('Linked chart symlink refused')
+        if not any(q.is_relative_to(r) and len(q.relative_to(r).parts)==3 and q.relative_to(r).parts[0]=='preview' for r in allowed_roots):raise ValueError('Linked chart outside explicit preview roots')
+        if route in items:raise ValueError('Duplicate linked route')
+        info=codec.info(q)
+        if info['bytes']!=item['bytes'] or info.get('sha256',item['sha256'])!=item['sha256']:raise ValueError('Linked original descriptor differs')
+        items[route]=dict(item,path=q,parent=q.parent)
+    expected={s['preview_series']['path']:s for s in state['stocks'] if s.get('preview_series')}
+    if set(expected)!=set(items):raise ValueError('Linked catalogue incomplete')
+    for route,s in expected.items():
+        desc=s['preview_series'];item=items[route]
+        if (s['identity'],s['as_of'],desc['sha256'],desc['bytes'])!=(item['identity'],item['as_of'],item['sha256'],item['bytes']):raise ValueError('Linked stock/cutoff binding differs')
+    for data in value.get('data',[]):
+        name=data['path']
+        if not re.fullmatch(r'series-[a-f0-9]{64}\.json',name) or name[7:-5]!=data['sha256'] or name in items:raise ValueError('Invalid local data route')
+        q=page.parent/name
+        if q.is_symlink():raise ValueError('Local data symlink refused')
+        info=codec.info(q)
+        if info['bytes']!=data['bytes'] or info.get('sha256',data['sha256'])!=data['sha256']:raise ValueError('Local data descriptor changed')
+        items[name]=dict(path=q,parent=q.parent,bytes=data['bytes'],sha256=data['sha256'])
+    return items
+
+
+def preview_index(path,*,linked_roots=()):
     p=external(path)
     if Path(path).is_symlink():raise ValueError('Preview symlink refused')
     raw=codec.read_bytes(p);m=re.search(rb'<script id="market-state" type="application/json">(.*?)</script>',raw,re.S)
     if not m:raise ValueError('Saved market preview required')
     v=json.loads(m[1]);allowed={p.name:dict(path=p,bytes=len(raw),sha256=hashlib.sha256(raw).hexdigest())}
-    charts=0
+    linked=linked_assets(p,v,linked_roots);charts=0
+    allowed.update({name:{k:item[k] for k in ('path','parent','bytes','sha256')} for name,item in linked.items()})
     for s in v['stocks']:
         for field in ('preview_series','preview_evidence'):
             desc=s.get(field)
@@ -54,48 +96,51 @@ def preview_index(path):
             name=desc['path']
             if not re.fullmatch(r'series-[a-f0-9]{64}\.json',name) or name[7:-5]!=desc['sha256']:
                 raise ValueError('Invalid series descriptor')
-            q=p.parent/name
+            q=linked[name]['path'] if field=='preview_series' and name in linked else p.parent/name
             if q.is_symlink() or codec.info(q)['bytes']!=desc['bytes']:raise ValueError('Missing private series')
-            allowed[name]=dict(path=q,bytes=desc['bytes'],sha256=desc['sha256'])
+            allowed[name]=dict(path=q,bytes=desc['bytes'],sha256=desc['sha256'],parent=q.parent)
             if field=='preview_series':charts+=1
     hashes=[]
     for script in re.findall(rb'<script(?:\s[^>]*)?>(.*?)</script>',raw,re.S):
         hashes.append("'sha256-"+base64.b64encode(hashlib.sha256(script).digest()).decode()+"'")
-    return p,allowed,dict(stocks=len(v['stocks']),charts=charts,as_of=v['summary']['as_of']),hashes
+    summary=dict(stocks=len(v['stocks']),charts=charts,as_of=v['summary']['as_of'])
+    if v.get('schema')=='private-lite-workbench/0.1':summary['presentation']='LITE'
+    return p,allowed,summary,hashes
 
 
-def batch_index(path):
+def batch_index(path,*,linked_roots=()):
     """Explicit immutable preview catalogue, not a filesystem/document-root grant."""
     from html import escape
     manifest=external(path)
     if Path(path).is_symlink():raise ValueError('Batch index symlink refused')
     spec=json.loads(manifest.read_bytes())
     if spec.get('schema')!='private-saved-batches/0.1' or not spec['batches']:raise ValueError('Invalid saved batch catalogue')
-    files={};hashes=[];links=[];summaries=[];seen=set()
+    files={};hashes=[];links=[];summaries=[];seen=set();default_page=None
     for entry in spec['batches']:
-        p,allowed,summary,scripts=preview_index(entry['path'])
+        p,allowed,summary,scripts=preview_index(entry['path'],linked_roots=linked_roots)
         if p in seen:raise ValueError('Duplicate saved preview')
         seen.add(p)
         raw=codec.read_bytes(p)
         if len(raw)!=entry['bytes'] or hashlib.sha256(raw).hexdigest()!=entry['sha256'] or summary['as_of']!=entry['as_of']:
             raise ValueError('Batch preview fingerprint/date mismatch')
         prefix='batch-'+entry['sha256']
-        files.update({prefix+'/'+name:dict(item,parent=item['path'].parent) for name,item in allowed.items()})
+        if not summaries and summary.get('presentation')=='LITE':default_page=prefix+'/'+p.name
+        files.update({prefix+'/'+name:dict(item,parent=item.get('parent',item['path'].parent)) for name,item in allowed.items()})
         hashes.extend(scripts);summaries.append(summary)
         links.append('<li><a href="/'+prefix+'/'+p.name+'">'+escape(entry['as_of']+' '+entry['run_id'])+'</a></li>')
     raw=('<!doctype html><html lang="zh-Hant"><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>私人已保存批次</title><style>body{font:18px sans-serif;padding:18px;overflow-wrap:anywhere}li{padding:16px 0}a{line-height:1.8}</style><h1>私人已保存批次</h1><p>最新批次列於最前；未通過來源日期資格的擷取不列入。切換只讀保存圖，不補算。</p><ul>'+''.join(links)+'</ul></html>').encode()
     files['batches']=dict(raw=raw,bytes=len(raw),sha256=hashlib.sha256(raw).hexdigest())
-    return manifest,files,dict(batches=summaries,stocks=summaries[0]['stocks'],charts=summaries[0]['charts'],as_of=summaries[0]['as_of']),list(set(hashes))
+    return manifest,files,dict(batches=summaries,stocks=summaries[0]['stocks'],charts=summaries[0]['charts'],as_of=summaries[0]['as_of'],default_page=default_page),list(set(hashes))
 
 
-def make_server(preview,credentials,*,port=0,allowed_hosts=(),clock=time.monotonic,batches=None,head=None):
+def make_server(preview,credentials,*,port=0,allowed_hosts=(),clock=time.monotonic,batches=None,head=None,linked_roots=()):
     head_path=external(head) if head else None
     head_signature=None
     if head_path:
         if Path(head).is_symlink():raise ValueError('Head symlink refused')
         head_signature=head_path.read_bytes()
         batches=json.loads(head_signature)['batch_index']
-    page,files,summary,hashes=batch_index(batches) if batches else preview_index(preview)
+    page,files,summary,hashes=batch_index(batches,linked_roots=linked_roots) if batches else preview_index(preview,linked_roots=linked_roots)
     catalogue_state=dict(signature=head_signature,page=page,files=files,summary=summary,hashes=hashes)
     catalogue_lock=threading.Lock();artifact_read_lock=threading.Lock()
     auth=load_auth(credentials);failures=[]
@@ -132,22 +177,23 @@ def make_server(preview,credentials,*,port=0,allowed_hosts=(),clock=time.monoton
         def dispatch(self):
             if self.permitted() is not True:return
             if self.command not in ('GET','HEAD'):return self.reply(405,b'Read only',extra={'Allow':'GET, HEAD'})
-            active_files=files;active_page=page
+            active_files=files;active_page=page;active_summary=summary
             if head_path:
                 try:
                     with catalogue_lock:
                         if head_path.is_symlink():raise ValueError('Head symlink refused')
                         signature=head_path.read_bytes()
                         if signature!=catalogue_state['signature']:
-                            new_page,new_files,new_summary,new_hashes=batch_index(json.loads(signature)['batch_index'])
+                            new_page,new_files,new_summary,new_hashes=batch_index(json.loads(signature)['batch_index'],linked_roots=linked_roots)
                             catalogue_state.update(signature=signature,page=new_page,files=new_files,summary=new_summary,hashes=new_hashes)
                             self.server.allowed_files=new_files;self.server.preview_summary=new_summary
-                        active_files=catalogue_state['files'];active_page=catalogue_state['page'];self.active_hashes=catalogue_state['hashes']
+                        active_files=catalogue_state['files'];active_page=catalogue_state['page'];active_summary=catalogue_state['summary'];self.active_hashes=catalogue_state['hashes']
                 except (OSError,ValueError,KeyError):return self.reply(409,b'Saved batch head unavailable')
             try:
                 parsed=urlsplit(self.path);name=unquote(parsed.path,errors='strict').removeprefix('/')
             except (ValueError,UnicodeError):return self.reply(404,b'Not found')
             if parsed.scheme or parsed.netloc or parsed.query or parsed.fragment or '%' in name or '\\' in name:return self.reply(404,b'Not found')
+            if not name and active_summary.get('default_page'):return self.reply(303,b'',extra={'Location':'/'+active_summary['default_page']})
             if not name:name='batches' if batches else page.name
             item=active_files.get(name)
             if not item:return self.reply(404,b'Not found')
@@ -172,13 +218,13 @@ def make_server(preview,credentials,*,port=0,allowed_hosts=(),clock=time.monoton
 
 
 def main():
-    p=argparse.ArgumentParser();p.add_argument('--preview');p.add_argument('--batches');p.add_argument('--head');p.add_argument('--credentials',required=True);p.add_argument('--port',type=int,default=8765);p.add_argument('--allowed-host',action='append',default=[]);p.add_argument('--init-user');a=p.parse_args()
+    p=argparse.ArgumentParser();p.add_argument('--preview');p.add_argument('--batches');p.add_argument('--head');p.add_argument('--credentials',required=True);p.add_argument('--port',type=int,default=8765);p.add_argument('--allowed-host',action='append',default=[]);p.add_argument('--linked-root',action='append',default=[]);p.add_argument('--init-user');a=p.parse_args()
     if a.init_user:
         first=getpass.getpass('New private password: ')
         if first!=getpass.getpass('Repeat password: '):raise ValueError('Passwords differ')
         create_auth(a.credentials,a.init_user,first);print('Owner credential created; no listener started');return
     if sum(map(bool,(a.preview,a.batches,a.head)))!=1:p.error('Choose --preview, --batches or --head')
-    server=make_server(a.preview,a.credentials,port=a.port,allowed_hosts=a.allowed_host,batches=a.batches,head=a.head)
+    server=make_server(a.preview,a.credentials,port=a.port,allowed_hosts=a.allowed_host,batches=a.batches,head=a.head,linked_roots=a.linked_root)
     print(json.dumps(dict(status='LOOPBACK_ONLY_NOT_A_PHONE_URL',port=server.server_port,**server.preview_summary)),flush=True)
     try:server.serve_forever()
     finally:server.server_close()
