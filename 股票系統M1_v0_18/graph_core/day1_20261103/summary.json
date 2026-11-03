@@ -1,0 +1,72 @@
+{
+  "actual_core_calls": 1946,
+  "all_known_members_have_terminal": true,
+  "as_of": "2026-11-02",
+  "both_market_quotes_read": true,
+  "both_market_universes_read": true,
+  "charts": 1946,
+  "continuous_new_interval_certified": 0,
+  "estimated_pending_storage_bytes": 109099840,
+  "expected": 1986,
+  "expected_by_market": {
+    "TPEX": 897,
+    "TWSE": 1089
+  },
+  "fixed_android_url": "NOT_DEPLOYED",
+  "multiday_retained_by_market": {
+    "TPEX": 518,
+    "TWSE": 950
+  },
+  "processed": 1986,
+  "processed_by_market": {
+    "TPEX": 897,
+    "TWSE": 1089
+  },
+  "scheduling": "NOT_ENABLED",
+  "source_policy": "UNKNOWN_INTERVAL_ALWAYS_SEGMENTED_NOT_UNCONDITIONAL_FINMIND_MERGE",
+  "status": "PARTIAL_SEGMENTED",
+  "terminal_counts": {
+    "DATA_QUALITY_FAILURE": 1,
+    "INSUFFICIENT_HISTORY": 478,
+    "MISSING_QUOTE": 5,
+    "NO_TRADE_REPORTED_ZERO_VOLUME": 13,
+    "NO_VALID_CLOSE_SUSPENSION_NOT_AUTHENTICATED": 21,
+    "SEGMENTED_RESEARCH": 1468
+  },
+  "milestone": "M-DAY1",
+  "milestone_status": "REAL_NEW_SESSION_PUBLISHED_WITH_SEGMENTATION_LIMITS",
+  "run_id": "du1-516c208155a584cccbe3532efe3e9366afed6a00790cab048081accf2ea44af2",
+  "source_qualified": true,
+  "new_head_published": true,
+  "unprocessed": 0,
+  "refusals": 40,
+  "registered_members_added": 0,
+  "registered_members_removed": 0,
+  "market_changes": 0,
+  "terminal_by_market": {
+    "TWSE": {
+      "SEGMENTED_RESEARCH": 950,
+      "INSUFFICIENT_HISTORY": 135,
+      "MISSING_QUOTE": 1,
+      "DATA_QUALITY_FAILURE": 1,
+      "NO_VALID_CLOSE_SUSPENSION_NOT_AUTHENTICATED": 2
+    },
+    "TPEX": {
+      "INSUFFICIENT_HISTORY": 343,
+      "SEGMENTED_RESEARCH": 518,
+      "NO_VALID_CLOSE_SUSPENSION_NOT_AUTHENTICATED": 19,
+      "NO_TRADE_REPORTED_ZERO_VOLUME": 13,
+      "MISSING_QUOTE": 4
+    }
+  },
+  "historical_signal_eligible": false,
+  "primary_pressure_id": null,
+  "policy_authorized": false,
+  "execution_qualified": false,
+  "imputed_close": null,
+  "valuation": null,
+  "new_chart_identities": 478,
+  "retained_current_chart_identities": 1468,
+  "old_chart_identities_only_in_prior_catalogue": 1,
+  "original_charts_retained_in_old_catalogue": 1469
+}

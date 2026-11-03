@@ -1,3 +1,21 @@
+# 2026-11-03 最新有效｜M-DAY1 真實11/02全市場增量已驗，仍明確分段
+
+唯一入口仍為本M-PORT1／M-UNIFY1既有Codex、原Cloud及dev/m1-v018-chart-annotations；每輪即時核runtime ID、FM3、原工程鎖與遠端頭，不另開代理／工作。唯一主檔為CONTINUE最上方；[本輪成品與實測](股票系統M1_v0_18/graph_core/day1_20261103/README.md)、summary／resources／preservation／verification及GITHUB_READBACK。
+
+原管道6官方GET各一次，兩市場完整11/02且已過日；參照上市1089＋上櫃897全部1986終態。1946份新日保存圖＝1468保留多日K＋478不足；其餘40明列缺行情5／無有效收盤21（停牌未證）／原零量13／品質1。原10/30全部1986終態與1469圖保留，新head與兩批目錄已核。原producer狀態PARTIAL_SEGMENTED、跨來源連續認證0，新段只有1筆，不冒完整技術資格或交易訊號；MA／MACD邊界暖機null。
+
+首次1946核心實跑後SIGKILL，原因未證；同Cloud核新檔／依存及舊19596路徑metadata，合法append綁新私人清單再單一恢復。264已完成圖核對繼續，恢復0抓取／0核心；真實同源重送0重算／0新成品／head不變。policy.private_manifest已指新合法append清單，不把預期新增誤判消失；不重做19GiB舊全量SHA，不回退原件。
+
+本輪8唯一Python＝4容量＋4恢復／量測，29真實Chromium組／8精確下載、7 owner HTTP控制通過；上市上櫃各2保存案例對官方新K及舊指標前綴一致，當日近期圖／查詢可見，JS及外部請求0。只手機尺寸，不是Android實機。當期429071候選事件／1460股票含停止比較，不當獨立型態或突破。
+
+新增資料根唯一新檔區塊約1.16GiB；含私人清單／驗收等同FS淨增約1.30GiB，量測剩約0.95GiB，高於512MiB。恢復封裝發布約183分／RSS峰3.68GiB；首次精確wall／峰RSS未知，端到端約6小時57分含中斷。索引HTML約331MiB，不能因工程通過就認證Android或免費Oracle容量／記憶體可用。失敗、目錄量測口徑修正及文案勘誤留史，不累加中間測試批。
+
+完整真實原件／圖／PNG／憑證只Git外。最新私人成品由/workspace/twstockai-local-data/fm3_20261101/runtime/current-increment-run.json定位；owner驗收臨時loopback服務已停，原8765服務核時已停，**沒有目前常駐或Android外連網址**。未啟Oracle／VPN／部署／日排程，未驗獨立備份／環境重啟復原或實機；不宣稱正式可營運。來源0.10／parents、Raw／UNKNOWN、formal false、primary_pressure_id=null／imputed_close／valuation=null保持，不造淨帳或六方案。
+
+固定版本逐檔GitHub讀回後本里程碑停止，只交回Work總監唯讀驗收；Oracle仍待帳戶及後續明示授權。下方歷史完整保留。
+
+---
+
 # 2026-11-03 最新有效｜M-REAL1真實FM3工作台已接通，本機owner驗收完成
 
 唯一工程仍為此完成M-PORT1／M-UNIFY1的既有Codex、原Cloud與dev/m1-v018-chart-annotations；每輪先依下節即時核ID／FM3／工程鎖。唯一主檔為本CONTINUE最新節，AGENTS為治理規則；[本輪真實交付／證據／入口](股票系統M1_v0_18/graph_core/real1_20261102/README.md)。成品ID沿開工日real1_20261102留存，不把驗收日當行情或公布日期。
