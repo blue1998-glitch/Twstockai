@@ -130,4 +130,16 @@ class Tests(unittest.TestCase):
    for param in params:self.assertIn('--'+param,docs[key])
   launch=self.cloud.resources['instance'];self.assertIn('subnet-id',launch);self.assertTrue(launch['assign-public-ip'])
   self.assertNotIn('create-vnic-details',launch)
+ def test_invalid_response_operation_and_private_original(self):
+  import subprocess,contextlib,io
+  for raw,reason in [(b'', 'EMPTY_STDOUT'),(b'PRIVATE_NOT_JSON','NON_JSON'),(b'{"PRIVATE_ACCOUNT":1}','MISSING_DATA'),(b'{"data":null}','UNEXPECTED_DATA_TYPE')]:
+   out=io.StringIO()
+   with patch.object(d.subprocess,'run',return_value=subprocess.CompletedProcess([],0,raw,b'PRIVATE_STDERR')),contextlib.redirect_stdout(out):
+    with self.assertRaisesRegex(l.Refused,reason):d.Cloud(CTX,self.state).read(('iam','tenancy','get'),{'tenancy-id':'PRIVATE_ID'})
+   self.assertIn('iam tenancy get',out.getvalue());self.assertNotIn('PRIVATE',out.getvalue());self.assertEqual(self.state.latest('oci-response-invalid')['stdout'],raw.decode())
+ def test_native_empty_list_requires_explicit_data_envelope(self):
+  import subprocess
+  for raw,expected in [(b'{"data":[]}',[]),(b'{"data":{}}',{})]:
+   with patch.object(d.subprocess,'run',return_value=subprocess.CompletedProcess([],0,raw,b'')):
+    self.assertEqual(d.Cloud(CTX,self.state).read(('iam','compartment','list'),{'all':True}),expected)
 if __name__=='__main__':unittest.main(verbosity=2)

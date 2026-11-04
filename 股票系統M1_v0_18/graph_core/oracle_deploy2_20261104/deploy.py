@@ -24,8 +24,15 @@ class Cloud:
   if r.returncode:
    if self.state is not None:self.state.record('oci-failure',{'operation':list(parts),'observed_at':now().isoformat(),'returncode':r.returncode,'stdout':r.stdout[:32768].decode('utf-8','replace'),'stderr':r.stderr[:32768].decode('utf-8','replace'),'private_only':True})
    raise l.Refused('OCI_REQUEST_FAILED_'+('_'.join(parts)).upper())
-  try:return json.loads(r.stdout)['data']
-  except Exception:raise l.Refused('OCI_RESPONSE_INVALID')
+  reason='EMPTY_STDOUT' if not r.stdout.strip() else 'NON_JSON'
+  try:
+   value=json.loads(r.stdout)
+   reason='MISSING_DATA' if not isinstance(value,dict) or 'data' not in value else 'UNEXPECTED_DATA_TYPE'
+   if isinstance(value,dict) and isinstance(value.get('data'),(dict,list)):return value['data']
+  except (ValueError,UnicodeError):pass
+  if self.state is not None:self.state.record('oci-response-invalid',{'operation':list(parts),'observed_at':now().isoformat(),'reason':reason,'returncode':r.returncode,'stdout':r.stdout[:32768].decode('utf-8','replace'),'stderr':r.stderr[:32768].decode('utf-8','replace'),'private_only':True})
+  print('查詢未解析：'+' '.join(parts)+'；回應類型：'+reason+'；原件只留本人私有目錄。')
+  raise l.Refused('OCI_RESPONSE_INVALID_'+('_'.join(parts)).upper()+'_'+reason)
  def read(self,parts,params):
   if parts[-1] not in ('list','get'):raise l.Refused('NOT_READONLY')
   return self.call(parts,params)

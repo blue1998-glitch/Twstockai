@@ -1,3 +1,9 @@
+# 2026-11-04 最新補正｜OCI回應解析定位
+
+本人CloudShell已驗工具但OCI_RESPONSE_INVALID，原生回應未取得，根因UNKNOWN。最新補正讀oracle_deploy2_20261104/RESPONSE_FIX.md；4唯一方法＝2新＋2相關回歸通過。只先唯讀plan，輸出精確操作／類型，原件留本人私有；不把空輸出補零，不review/apply或宣稱已建機。原包／FM3／owner／工程鎖及歷史保留。
+
+---
+
 # 2026-11-04 最新有效｜M-ORACLE-DEPLOY2條件建機授權
 
 最新入口讀CONTINUE與oracle_deploy2_20261104。本人CloudShell執行已核固定包；原唯一Codex／Cloud／工程鎖／dev分支仍唯一Git寫入。inspect/plan只read，apply只有原件核讀＋MAC／期限／完整快照／quota／容量通過才建AlwaysFree獨立資源；非持久容量POST只在apply費用證據後，不冒主機建立。不使用試用抵扣／--force解除資格，不猜未核費用。本人控制台證據保留原bytes／SHA／時間與計畫，不是API或OCR真偽認證。
