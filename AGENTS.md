@@ -1,3 +1,11 @@
+# 2026-11-04 最新有效｜M-ORACLE-DEPLOY2條件建機授權
+
+最新入口讀CONTINUE與oracle_deploy2_20261104。本人CloudShell執行已核固定包；原唯一Codex／Cloud／工程鎖／dev分支仍唯一Git寫入。inspect/plan只read，apply只有原件核讀＋MAC／期限／完整快照／quota／容量通過才建AlwaysFree獨立資源；非持久容量POST只在apply費用證據後，不冒主機建立。不使用試用抵扣／--force解除資格，不猜未核費用。本人控制台證據保留原bytes／SHA／時間與計畫，不是API或OCR真偽認證。
+
+真實Oracle／guest／HTTPS／Android未驗，不能以13mock或VM RUNNING替代。Tailscale第三方同意與本人登入前停，不代條款或Funnel；原FM3／owner／原Cloud不動、不搬真實資料／付費／策略／交易。只停自有tag／帳戶相符VM，未知操作結果不重送、不清資料；保留512MiB。以下歷史保留。
+
+---
+
 # 2026-11-04 最新有效｜M-ORACLE-SHELL1官方Cloud Shell備援與部分能力邊界
 
 使用者已指定本人已登入控制台的官方Cloud Shell備援。最新入口讀CONTINUE與graph_core/oracle_shell1_20261104；唯一Codex／原Cloud／工程鎖／dev分支仍不變，不開代理。使用者Cloud Shell只執行固定已核工具，不是另一個Git工程寫入者。
