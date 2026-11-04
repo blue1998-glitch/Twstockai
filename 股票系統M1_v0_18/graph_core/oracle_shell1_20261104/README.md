@@ -1,3 +1,5 @@
+> 2026-11-04：compartments命令缺少布林值已補正，[用0.2新入口](../../../deliveries/m1-oracle-shell1-fix1-20261104/README.md)。本人帳戶重跑待驗；下方0.1範圍及20方法留史。
+
 # M-ORACLE-SHELL1｜Cloud Shell安全查核工具（部分交付）
 
 **可執行的inspect／plan／status／stop及apply拒絕閘門已完成；成功建機與私人HTTPS後段未實作。不是完整自動部署工具。**

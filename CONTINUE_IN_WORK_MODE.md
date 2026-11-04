@@ -1,3 +1,11 @@
+# 2026-11-04 最新補正｜Cloud Shell compartments缺少布林參數值已修
+
+[新版0.2固定入口](deliveries/m1-oracle-shell1-fix1-20261104/README.md)，固定工具fad734a5ce1f255e366dfdf3ad99ebabb08159ea。使用者回報登入／Home Region已核、compartments為唯一失敗操作；未取得原生stderr。已依官方CLI文件重現原argv缺`true`的工具bug，分開處理有值boolean與無值--all旗標，新增CLI參數錯誤安全分類／操作名診斷。22唯一方法＝2新＋20必要回歸；原Mock漏查真實CLI語法，不能把原PASS當本人帳戶已驗。
+
+實際固定GitHub下載／校驗／啟動通過，Codex無Oracle登入、本人帳戶恢復待重跑新版。無需改權限、重新登入或刪舊快取。原0.1／合成包／FM3／owner及main保留，不重跑UI／行情；仍唯讀、建立0，費用資格UNKNOWN及建機／HTTPS未完成的PARTIAL界線不變。下方全部歷史保留。
+
+---
+
 # 2026-11-04 最新有效｜M-ORACLE-SHELL1部分交付：可執行查核，建機後段未完成
 
 [可貼Cloud Shell固定指令](deliveries/m1-oracle-shell1-20261104/CLOUD_SHELL_COMMAND.md) · [工具／實測／界線](股票系統M1_v0_18/graph_core/oracle_shell1_20261104/README.md)。本人Oracle已可登入，改走官方Cloud Shell；不再派Work重試兩控制台入口，也不要求本Codex重新取得同一登入授權才能交工具。
