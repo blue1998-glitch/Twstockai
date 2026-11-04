@@ -227,7 +227,7 @@ def make_server(preview,credentials,*,port=0,allowed_hosts=(),clock=time.monoton
 
 
 def main():
-    p=argparse.ArgumentParser();p.add_argument('--preview');p.add_argument('--batches');p.add_argument('--head');p.add_argument('--credentials',required=True);p.add_argument('--port',type=int,default=8765);p.add_argument('--allowed-host',action='append',default=[]);p.add_argument('--linked-root',action='append',default=[]);p.add_argument('--init-user');p.add_argument('--lazy-manifest');p.add_argument('--lazy-sha');a=p.parse_args()
+    p=argparse.ArgumentParser();p.add_argument('--preview');p.add_argument('--batches');p.add_argument('--head');p.add_argument('--credentials',required=True);p.add_argument('--port',type=int,default=8765);p.add_argument('--allowed-host',action='append',default=[]);p.add_argument('--linked-root',action='append',default=[]);p.add_argument('--init-user');p.add_argument('--lazy-manifest');p.add_argument('--lazy-sha');p.add_argument('--scan-manifest');p.add_argument('--scan-sha');a=p.parse_args()
     if a.init_user:
         first=getpass.getpass('New private password: ')
         if first!=getpass.getpass('Repeat password: '):raise ValueError('Passwords differ')
@@ -238,6 +238,11 @@ def main():
     if a.lazy_manifest:
         from graph_core.graph_lazy1_20261104.provider import Provider
         lazy=Provider(a.lazy_manifest,a.lazy_sha)
+    if bool(a.scan_manifest)!=bool(a.scan_sha):p.error('Both fixed scan manifest and SHA required')
+    if a.scan_manifest:
+        if a.lazy_manifest:p.error('Choose one numeric source provider')
+        from graph_core.scan1_20261104.provider import Provider
+        lazy=Provider(a.scan_manifest,a.scan_sha)
     server=make_server(a.preview,a.credentials,port=a.port,allowed_hosts=a.allowed_host,batches=a.batches,head=a.head,linked_roots=a.linked_root,lazy_provider=lazy)
     server.lazy_provider=lazy
     print(json.dumps(dict(status='LOOPBACK_ONLY_NOT_A_PHONE_URL',port=server.server_port,**server.preview_summary)),flush=True)

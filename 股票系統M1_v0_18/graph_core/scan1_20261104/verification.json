@@ -1,0 +1,299 @@
+{
+  "actual_source_and_batch": {
+    "active_scan_seconds": 85.93924508699274,
+    "actual_core_start_events": 1955,
+    "actual_owner_controls": [
+      {
+        "method": "GET",
+        "status": 401
+      },
+      {
+        "method": "GET",
+        "status": 403
+      },
+      {
+        "method": "POST",
+        "status": 405
+      },
+      {
+        "method": "HEAD",
+        "status": 204
+      },
+      {
+        "method": "GET",
+        "status": 404
+      },
+      {
+        "method": "GET",
+        "status": 404
+      },
+      {
+        "method": "GET",
+        "status": 404
+      }
+    ],
+    "android": "NOT_TESTED_NEW_BUILD",
+    "counts": {
+      "EXECUTED_INSUFFICIENT_HISTORY": 1955,
+      "SOURCE_REFUSED": 31
+    },
+    "exact_original_input_fingerprint_checks": 1955,
+    "filesystem_net_added_bytes": 25378816,
+    "free_bytes": 618303488,
+    "independent_backup": "UNKNOWN",
+    "markets": {
+      "TPEX": {
+        "EXECUTED_INSUFFICIENT_HISTORY": 873,
+        "SOURCE_REFUSED": 24
+      },
+      "TWSE": {
+        "EXECUTED_INSUFFICIENT_HISTORY": 1082,
+        "SOURCE_REFUSED": 7
+      }
+    },
+    "max_worker_RSS_KiB": 121288,
+    "new_source_GETs": 0,
+    "old_pages_same_bytes": true,
+    "old_source_metadata_paths_unchanged": 90377,
+    "original_heads_same": true,
+    "parent_ru_maxrss_KiB": 337788,
+    "post_browser_new_core_calls": 0,
+    "real_cases_per_market": {
+      "TPEX": 2,
+      "TWSE": 2
+    },
+    "real_core_calls": 1955,
+    "reference": 1986,
+    "restart_persistence": "UNKNOWN",
+    "same_source_repeat_file_changes": 0,
+    "same_source_repeat_new_core": 0,
+    "same_source_repeat_new_records": 0,
+    "same_source_repeat_seconds": 0.6426097750081681,
+    "scan_wall_window_including_controlled_checkpoint_pause": 170.16061758995056,
+    "status": "PASS",
+    "sum_worker_process_wall_seconds": 79.42486555821961,
+    "unique_terminals": 1986
+  },
+  "browser": {
+    "checks": [
+      {
+        "status": "PASS",
+        "test": "initial1986 search /zero compute /no overflow",
+        "width": 390
+      },
+      {
+        "status": "PASS",
+        "test": "actual complete scan denominators visible",
+        "width": 390
+      },
+      {
+        "status": "PASS",
+        "test": "all1986 identities reachable with actual saved statuses",
+        "width": 390
+      },
+      {
+        "status": "PASS",
+        "test": "real TWSE case1 source /single bar /insufficient /shared cursor no date change",
+        "width": 390
+      },
+      {
+        "status": "PASS",
+        "test": "selected core result exact JSON download",
+        "width": 390
+      },
+      {
+        "status": "PASS",
+        "test": "repeat HIT zero new core /bounded RAM cache /same result",
+        "width": 390
+      },
+      {
+        "status": "PASS",
+        "test": "real TWSE case2 source /single bar /insufficient /shared cursor no date change",
+        "width": 390
+      },
+      {
+        "status": "PASS",
+        "test": "real TPEX case1 source /single bar /insufficient /shared cursor no date change",
+        "width": 390
+      },
+      {
+        "status": "PASS",
+        "test": "real TPEX case2 source /single bar /insufficient /shared cursor no date change",
+        "width": 390
+      },
+      {
+        "status": "PASS",
+        "test": "short-history honest refusal /no fabricated chart",
+        "width": 390
+      },
+      {
+        "status": "PASS",
+        "test": "source-refused honest refusal /no fabricated chart",
+        "width": 390
+      },
+      {
+        "status": "PASS",
+        "test": "2026-11-02 original chart +2-stock compare +exact date retained",
+        "width": 390
+      },
+      {
+        "status": "PASS",
+        "test": "2026-10-30 original chart +2-stock compare +exact date retained",
+        "width": 390
+      },
+      {
+        "status": "PASS",
+        "test": "initial1986 search /zero compute /no overflow",
+        "width": 844
+      },
+      {
+        "status": "PASS",
+        "test": "actual complete scan denominators visible",
+        "width": 844
+      },
+      {
+        "status": "PASS",
+        "test": "real TWSE case1 source /single bar /insufficient /shared cursor no date change",
+        "width": 844
+      },
+      {
+        "status": "PASS",
+        "test": "selected core result exact JSON download",
+        "width": 844
+      },
+      {
+        "status": "PASS",
+        "test": "repeat HIT zero new core /bounded RAM cache /same result",
+        "width": 844
+      },
+      {
+        "status": "PASS",
+        "test": "real TWSE case2 source /single bar /insufficient /shared cursor no date change",
+        "width": 844
+      },
+      {
+        "status": "PASS",
+        "test": "real TPEX case1 source /single bar /insufficient /shared cursor no date change",
+        "width": 844
+      },
+      {
+        "status": "PASS",
+        "test": "real TPEX case2 source /single bar /insufficient /shared cursor no date change",
+        "width": 844
+      },
+      {
+        "status": "PASS",
+        "test": "short-history honest refusal /no fabricated chart",
+        "width": 844
+      },
+      {
+        "status": "PASS",
+        "test": "source-refused honest refusal /no fabricated chart",
+        "width": 844
+      },
+      {
+        "status": "PASS",
+        "test": "initial1986 search /zero compute /no overflow",
+        "width": 1280
+      },
+      {
+        "status": "PASS",
+        "test": "actual complete scan denominators visible",
+        "width": 1280
+      },
+      {
+        "status": "PASS",
+        "test": "real TWSE case1 source /single bar /insufficient /shared cursor no date change",
+        "width": 1280
+      },
+      {
+        "status": "PASS",
+        "test": "selected core result exact JSON download",
+        "width": 1280
+      },
+      {
+        "status": "PASS",
+        "test": "repeat HIT zero new core /bounded RAM cache /same result",
+        "width": 1280
+      },
+      {
+        "status": "PASS",
+        "test": "real TWSE case2 source /single bar /insufficient /shared cursor no date change",
+        "width": 1280
+      },
+      {
+        "status": "PASS",
+        "test": "real TPEX case1 source /single bar /insufficient /shared cursor no date change",
+        "width": 1280
+      },
+      {
+        "status": "PASS",
+        "test": "real TPEX case2 source /single bar /insufficient /shared cursor no date change",
+        "width": 1280
+      },
+      {
+        "status": "PASS",
+        "test": "short-history honest refusal /no fabricated chart",
+        "width": 1280
+      },
+      {
+        "status": "PASS",
+        "test": "source-refused honest refusal /no fabricated chart",
+        "width": 1280
+      }
+    ],
+    "exact_downloads": 3,
+    "external_requests": [],
+    "groups": 33,
+    "loads": [
+      {
+        "heap_bytes": 4568464,
+        "html_bytes": 1967983,
+        "initial_lazy_calls": 0,
+        "load_ms": 713,
+        "width": 390
+      },
+      {
+        "heap_bytes": 4554012,
+        "html_bytes": 1967983,
+        "initial_lazy_calls": 0,
+        "load_ms": 678,
+        "width": 844
+      },
+      {
+        "heap_bytes": 4561432,
+        "html_bytes": 1967983,
+        "initial_lazy_calls": 0,
+        "load_ms": 671,
+        "width": 1280
+      }
+    ],
+    "new_core_calls": 0,
+    "page_errors": []
+  },
+  "engine_tests": {
+    "errors": 0,
+    "failures": 0,
+    "real_core_calls": 0,
+    "status": "PASS",
+    "synthetic_core_calls": 10,
+    "unique_methods": 10
+  },
+  "necessary_original_owner_regression_methods": 7,
+  "new_engine_methods": 10,
+  "new_reader_methods": 3,
+  "old_historical_suite_repeated": false,
+  "python_unique_methods": 20,
+  "reader_owner_tests": {
+    "errors": 0,
+    "failures": 0,
+    "necessary_owner_regression_methods": 7,
+    "new_core_calls": 0,
+    "new_saved_reader_methods": 3,
+    "status": "PASS",
+    "unique_methods": 10
+  },
+  "real_batch_core_calls": 1955,
+  "status": "PASS",
+  "synthetic_core_calls": 10
+}
