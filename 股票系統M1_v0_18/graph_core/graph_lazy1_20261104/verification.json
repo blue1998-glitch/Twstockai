@@ -1,0 +1,219 @@
+{
+  "actual_owner_controls": [
+    {
+      "kind": "actual owner GET",
+      "result": "PASS",
+      "status": 401
+    },
+    {
+      "kind": "actual owner GET",
+      "result": "PASS",
+      "status": 403
+    },
+    {
+      "kind": "actual owner POST",
+      "result": "PASS",
+      "status": 405
+    },
+    {
+      "kind": "actual owner HEAD",
+      "result": "PASS",
+      "status": 204
+    },
+    {
+      "kind": "actual owner GET",
+      "result": "PASS",
+      "status": 404
+    },
+    {
+      "kind": "actual owner GET",
+      "result": "PASS",
+      "status": 404
+    },
+    {
+      "kind": "actual owner GET",
+      "result": "PASS",
+      "status": 404
+    },
+    {
+      "kind": "two same-source cache hits /zero new core /zero persisted files /SHA",
+      "status": "PASS"
+    },
+    {
+      "kind": "original daily sources /protected core /old pages /source heads",
+      "status": "PASS"
+    }
+  ],
+  "browser": {
+    "android": "NOT_TESTED_NEW_BUILD",
+    "checks": [
+      {
+        "status": "PASS",
+        "test": "initial1986 search /zero compute /no overflow",
+        "width": 390
+      },
+      {
+        "status": "PASS",
+        "test": "real TWSE case1 source /single bar /insufficient /shared cursor no date change",
+        "width": 390
+      },
+      {
+        "status": "PASS",
+        "test": "selected core result exact JSON download",
+        "width": 390
+      },
+      {
+        "status": "PASS",
+        "test": "repeat HIT zero new core /bounded RAM cache /same result",
+        "width": 390
+      },
+      {
+        "status": "PASS",
+        "test": "real TWSE case2 source /single bar /insufficient /shared cursor no date change",
+        "width": 390
+      },
+      {
+        "status": "PASS",
+        "test": "real TPEX case1 source /single bar /insufficient /shared cursor no date change",
+        "width": 390
+      },
+      {
+        "status": "PASS",
+        "test": "real TPEX case2 source /single bar /insufficient /shared cursor no date change",
+        "width": 390
+      },
+      {
+        "status": "PASS",
+        "test": "short-history honest refusal /no fabricated chart",
+        "width": 390
+      },
+      {
+        "status": "PASS",
+        "test": "source-refused honest refusal /no fabricated chart",
+        "width": 390
+      },
+      {
+        "status": "PASS",
+        "test": "2026-11-02 original chart +2-stock compare +exact date retained",
+        "width": 390
+      },
+      {
+        "status": "PASS",
+        "test": "2026-10-30 original chart +2-stock compare +exact date retained",
+        "width": 390
+      },
+      {
+        "status": "PASS",
+        "test": "initial1986 search /zero compute /no overflow",
+        "width": 844
+      },
+      {
+        "status": "PASS",
+        "test": "real TWSE case1 source /single bar /insufficient /shared cursor no date change",
+        "width": 844
+      },
+      {
+        "status": "PASS",
+        "test": "selected core result exact JSON download",
+        "width": 844
+      },
+      {
+        "status": "PASS",
+        "test": "repeat HIT zero new core /bounded RAM cache /same result",
+        "width": 844
+      },
+      {
+        "status": "PASS",
+        "test": "real TWSE case2 source /single bar /insufficient /shared cursor no date change",
+        "width": 844
+      },
+      {
+        "status": "PASS",
+        "test": "real TPEX case1 source /single bar /insufficient /shared cursor no date change",
+        "width": 844
+      },
+      {
+        "status": "PASS",
+        "test": "real TPEX case2 source /single bar /insufficient /shared cursor no date change",
+        "width": 844
+      },
+      {
+        "status": "PASS",
+        "test": "short-history honest refusal /no fabricated chart",
+        "width": 844
+      },
+      {
+        "status": "PASS",
+        "test": "source-refused honest refusal /no fabricated chart",
+        "width": 844
+      },
+      {
+        "status": "PASS",
+        "test": "initial1986 search /zero compute /no overflow",
+        "width": 1280
+      },
+      {
+        "status": "PASS",
+        "test": "real TWSE case1 source /single bar /insufficient /shared cursor no date change",
+        "width": 1280
+      },
+      {
+        "status": "PASS",
+        "test": "selected core result exact JSON download",
+        "width": 1280
+      },
+      {
+        "status": "PASS",
+        "test": "repeat HIT zero new core /bounded RAM cache /same result",
+        "width": 1280
+      },
+      {
+        "status": "PASS",
+        "test": "real TWSE case2 source /single bar /insufficient /shared cursor no date change",
+        "width": 1280
+      },
+      {
+        "status": "PASS",
+        "test": "real TPEX case1 source /single bar /insufficient /shared cursor no date change",
+        "width": 1280
+      },
+      {
+        "status": "PASS",
+        "test": "real TPEX case2 source /single bar /insufficient /shared cursor no date change",
+        "width": 1280
+      },
+      {
+        "status": "PASS",
+        "test": "short-history honest refusal /no fabricated chart",
+        "width": 1280
+      },
+      {
+        "status": "PASS",
+        "test": "source-refused honest refusal /no fabricated chart",
+        "width": 1280
+      }
+    ],
+    "exact_downloads": 3,
+    "external_requests": [],
+    "groups": 29,
+    "page_errors": []
+  },
+  "full_19GiB_hash_repeated": false,
+  "old_pages_same_bytes": true,
+  "original_FM3_metadata_paths_unchanged": 90377,
+  "original_daily_source_sha_pass": true,
+  "original_source_heads_same": true,
+  "protected_numeric_code_same_bytes": true,
+  "python": {
+    "errors": 0,
+    "failures": 0,
+    "necessary_owner_regression_methods": 7,
+    "new_methods": 13,
+    "real_market_core_calls_in_unit_suite": 0,
+    "status": "PASS",
+    "synthetic_core_calls": 27,
+    "unique_methods": 20
+  },
+  "real_market_accuracy_or_strategy_validation": false,
+  "status": "PASS_WITH_SOURCE_LIMITATION"
+}

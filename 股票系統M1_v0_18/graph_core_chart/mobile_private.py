@@ -135,7 +135,7 @@ def batch_index(path,*,linked_roots=()):
     return manifest,files,dict(batches=summaries,stocks=summaries[0]['stocks'],charts=summaries[0]['charts'],as_of=summaries[0]['as_of'],default_page=default_page),list(set(hashes))
 
 
-def make_server(preview,credentials,*,port=0,allowed_hosts=(),clock=time.monotonic,batches=None,head=None,linked_roots=()):
+def make_server(preview,credentials,*,port=0,allowed_hosts=(),clock=time.monotonic,batches=None,head=None,linked_roots=(),lazy_provider=None):
     head_path=external(head) if head else None
     head_signature=None
     if head_path:
@@ -197,6 +197,13 @@ def make_server(preview,credentials,*,port=0,allowed_hosts=(),clock=time.monoton
             if parsed.scheme or parsed.netloc or parsed.query or parsed.fragment or '%' in name or '\\' in name:return self.reply(404,b'Not found')
             if not name and active_summary.get('default_page'):return self.reply(303,b'',extra={'Location':'/'+active_summary['default_page']})
             if not name:name='batches' if batches else page.name
+            if lazy_provider is not None and name in lazy_provider.routes():
+                if self.command=='HEAD':return self.reply(204,b'',extra={'X-Lazy-Status':'NOT_COMPUTED'})
+                try:
+                    raw,cache=lazy_provider.get(name,active_files)
+                except RuntimeError:return self.reply(429,b'Bounded analysis busy',extra={'Retry-After':'5'})
+                except ValueError:return self.reply(409,b'Source or resource qualification refused')
+                return self.reply(200,raw,'application/json; charset=utf-8',extra={'X-Artifact-SHA256':hashlib.sha256(raw).hexdigest(),'X-Lazy-Cache':cache})
             item=active_files.get(name)
             if not item:return self.reply(404,b'Not found')
             if 'raw' in item:return self.reply(200,item['raw'],'text/html; charset=utf-8')
@@ -220,13 +227,19 @@ def make_server(preview,credentials,*,port=0,allowed_hosts=(),clock=time.monoton
 
 
 def main():
-    p=argparse.ArgumentParser();p.add_argument('--preview');p.add_argument('--batches');p.add_argument('--head');p.add_argument('--credentials',required=True);p.add_argument('--port',type=int,default=8765);p.add_argument('--allowed-host',action='append',default=[]);p.add_argument('--linked-root',action='append',default=[]);p.add_argument('--init-user');a=p.parse_args()
+    p=argparse.ArgumentParser();p.add_argument('--preview');p.add_argument('--batches');p.add_argument('--head');p.add_argument('--credentials',required=True);p.add_argument('--port',type=int,default=8765);p.add_argument('--allowed-host',action='append',default=[]);p.add_argument('--linked-root',action='append',default=[]);p.add_argument('--init-user');p.add_argument('--lazy-manifest');p.add_argument('--lazy-sha');a=p.parse_args()
     if a.init_user:
         first=getpass.getpass('New private password: ')
         if first!=getpass.getpass('Repeat password: '):raise ValueError('Passwords differ')
         create_auth(a.credentials,a.init_user,first);print('Owner credential created; no listener started');return
     if sum(map(bool,(a.preview,a.batches,a.head)))!=1:p.error('Choose --preview, --batches or --head')
-    server=make_server(a.preview,a.credentials,port=a.port,allowed_hosts=a.allowed_host,batches=a.batches,head=a.head,linked_roots=a.linked_root)
+    lazy=None
+    if bool(a.lazy_manifest)!=bool(a.lazy_sha):p.error('Both fixed lazy manifest and SHA required')
+    if a.lazy_manifest:
+        from graph_core.graph_lazy1_20261104.provider import Provider
+        lazy=Provider(a.lazy_manifest,a.lazy_sha)
+    server=make_server(a.preview,a.credentials,port=a.port,allowed_hosts=a.allowed_host,batches=a.batches,head=a.head,linked_roots=a.linked_root,lazy_provider=lazy)
+    server.lazy_provider=lazy
     print(json.dumps(dict(status='LOOPBACK_ONLY_NOT_A_PHONE_URL',port=server.server_port,**server.preview_summary)),flush=True)
     try:server.serve_forever()
     finally:server.server_close()
