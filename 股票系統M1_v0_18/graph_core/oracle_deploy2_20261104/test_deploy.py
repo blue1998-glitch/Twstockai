@@ -97,4 +97,37 @@ class Tests(unittest.TestCase):
    ctx=CTX
    def read(self,*args):return {'available':0}
   with self.assertRaisesRegex(l.Refused,'QUOTA_INSUFFICIENT'):d.quota_check(Q(),self.p,self.choice)
+ def test_free_allocation_exact_boundary_stopped_and_unknown(self):
+  snap={'instances':[{'shape':'VM.Standard.A1.Flex','lifecycle-state':'STOPPED','shape-config':{'ocpus':3,'memory-in-gbs':18}}]}
+  self.assertEqual(d.free_allocation(snap,self.choice)['existing_ocpus'],'3')
+  snap['instances'][0]['shape-config']['memory-in-gbs']=19
+  with self.assertRaisesRegex(l.Refused,'EXHAUSTED'):d.free_allocation(snap,self.choice)
+  snap['instances'][0]['shape-config']={}
+  with self.assertRaisesRegex(l.Refused,'UNKNOWN'):d.free_allocation(snap,self.choice)
+ def test_service_quota_does_not_replace_free_resource_limit(self):
+  e2={**self.choice,'shape':'VM.Standard.E2.1.Micro'}
+  snap={'instances':[{'shape':e2['shape'],'lifecycle-state':'RUNNING'} for _ in range(2)]}
+  with self.assertRaisesRegex(l.Refused,'EXHAUSTED'):d.free_allocation(snap,e2)
+  snap['instances'][0]['lifecycle-state']='TERMINATED'
+  self.assertEqual(d.free_allocation(snap,e2)['existing_instances'],1)
+ def test_cli_failure_details_stay_in_private_state(self):
+  import subprocess
+  response=subprocess.CompletedProcess([],1,stdout=b'',stderr=b'PRIVATE_ACCOUNT_DETAIL')
+  cloud=d.Cloud(CTX,self.state)
+  with patch.object(d.subprocess,'run',return_value=response) as run:
+   with self.assertRaisesRegex(l.Refused,'OCI_REQUEST_FAILED_IAM_COMPARTMENT_LIST') as err:cloud.read(('iam','compartment','list'),{'compartment-id-in-subtree':True,'all':True})
+  args=run.call_args.args[0];self.assertEqual(args[args.index('--compartment-id-in-subtree')+1],'true')
+  self.assertNotIn('PRIVATE_ACCOUNT_DETAIL',str(err.exception));self.assertIn('PRIVATE_ACCOUNT_DETAIL',self.state.latest('oci-failure')['stderr'])
+  self.assertEqual(self.state.path.stat().st_mode&0o077,0)
+ def test_provisioning_parameters_match_official_cli_options(self):
+  table=json.loads((Path(__file__).parent/'cli-options-verification.json').read_text())['documents']
+  docs={x['document']:set(x['options']) for x in table}
+  d.Provisioner(self.state,self.cloud,self.p).deploy(self.choice,'SYNTHETIC')
+  for kind,op,params in self.cloud.calls:
+   if kind!='write':continue
+   key='-'.join(op)
+   self.assertIn(key,docs)
+   for param in params:self.assertIn('--'+param,docs[key])
+  launch=self.cloud.resources['instance'];self.assertIn('subnet-id',launch);self.assertTrue(launch['assign-public-ip'])
+  self.assertNotIn('create-vnic-details',launch)
 if __name__=='__main__':unittest.main(verbosity=2)

@@ -1,16 +1,17 @@
 """Conditional real OCI provisioning; private evidence, never forced eligibility."""
+import decimal
 import argparse,base64,datetime,getpass,hashlib,hmac,inspect,json,os,secrets,shutil,stat,subprocess,sys,time,uuid
 from pathlib import Path
 try:from . import legacy as l
 except ImportError:import legacy as l
-VERSION='oracle-deploy2/0.1'
+VERSION='oracle-deploy2/0.2'
 WRITE={'compartment':('iam','compartment','create'),'vcn':('network','vcn','create'),'gateway':('network','internet-gateway','create'),'routes':('network','route-table','create'),'security':('network','security-list','create'),'subnet':('network','subnet','create'),'instance':('compute','instance','launch')}
 LIST={'compartment':('iam','compartment','list'),'vcn':('network','vcn','list'),'gateway':('network','internet-gateway','list'),'routes':('network','route-table','list'),'security':('network','security-list','list'),'subnet':('network','subnet','list'),'instance':('compute','instance','list')}
-CATEGORIES={'account':'帳戶：Billing & Cost Management → Upgrade and Manage Payment，Plan Type=Free Tier；不Upgrade', 'compute':'Compute → Create instance：所選shape／CPU／RAM明示Always Free eligible，非試用抵扣','storage':'Storage → Block Storage → Boot/Block Volumes：整租戶Home Region總量及保留額度；新50GB、10 VPU無額外費','image':'Compute建立頁Image：所選Ubuntu22.04官方映像，無Marketplace／授權費','network':'Networking → VCN、Public IP及官方Pricing：本計畫VCN/IGW/路由/安全清單/短期公網IPv4與流量均零費用；不NAT/LB/VPN服務'}
+CATEGORIES={'account':'帳戶：Billing & Cost Management → Upgrade and Manage Payment，Plan Type=Free Tier；不Upgrade', 'compute':'Compute → Create instance：全部候選配置明示Always Free eligible；整租戶A1最多4CPU／24GB、E2最多2台，本月A1時數仍足夠，非試用抵扣','storage':'Storage → Block Storage → Boot/Block Volumes：整租戶Home Region總量及保留額度；新50GB、10 VPU無額外費','image':'Compute建立頁Image：所選Ubuntu22.04官方映像，無Marketplace／授權費','network':'Networking → VCN、Public IP及官方Pricing：本計畫VCN/IGW/路由/安全清單/短期公網IPv4與流量均零費用；不NAT/LB/VPN服務'}
 def digest(v):return l.sha(l.encode(v))
 def now():return datetime.datetime.now(datetime.timezone.utc)
 class Cloud:
- def __init__(self,ctx):self.ctx=ctx
+ def __init__(self,ctx,state=None):self.ctx=ctx;self.state=state
  def call(self,parts,params):
   args=['oci',*parts]
   for k,v in params.items():
@@ -20,7 +21,9 @@ class Cloud:
   args+=['--region',self.ctx['region'],'--output','json','--max-retries','0']
   try:r=subprocess.run(args,capture_output=True,timeout=90)
   except (OSError,subprocess.TimeoutExpired):raise l.Refused('OCI_OUTCOME_UNKNOWN')
-  if r.returncode:raise l.Refused('OCI_REQUEST_FAILED')
+  if r.returncode:
+   if self.state is not None:self.state.record('oci-failure',{'operation':list(parts),'observed_at':now().isoformat(),'returncode':r.returncode,'stdout':r.stdout[:32768].decode('utf-8','replace'),'stderr':r.stderr[:32768].decode('utf-8','replace'),'private_only':True})
+   raise l.Refused('OCI_REQUEST_FAILED_'+('_'.join(parts)).upper())
   try:return json.loads(r.stdout)['data']
   except Exception:raise l.Refused('OCI_RESPONSE_INVALID')
  def read(self,parts,params):
@@ -89,6 +92,12 @@ def plan(state,cloud):
  used=sum(x['size-in-gbs'] for x in volumes)
  if used+50>200:raise l.Refused('FREE_STORAGE_INSUFFICIENT')
  opts=options(s,cloud)
+ qualified=[]
+ for candidate in opts:
+  try:candidate['free_allocation']=free_allocation(s,candidate);qualified.append(candidate)
+  except l.Refused as e:
+   if e.code!='ALWAYS_FREE_COMPUTE_EXHAUSTED':raise
+ opts=qualified
  if not opts:raise l.Refused('NO_COMPATIBLE_FREE_CANDIDATE')
  p={'version':VERSION,'context':cloud.ctx,'created':now().isoformat(),'expires':(now()+datetime.timedelta(minutes=30)).isoformat(),'snapshot':binding(s),'snapshot_data':s,'options':opts,'boot_gb':50,'vpus_per_gb':10,'storage_used_gb':used,'pilot_sha':l.PILOT_SHA,'resource_types':list(WRITE),'public_ingress':[],'service_bind':'127.0.0.1:8786','id':uuid.uuid4().hex,'evidence':{},'reviewed':False}
  state.write('deployment-plan.json',sign(state,p));return p
@@ -101,7 +110,7 @@ def review(state,input_fn=input):
  state.write('console-review-private.json',{'plan':p,'requirements':CATEGORIES})
  for key,requirement in CATEGORIES.items():
   print(requirement)
-  name=input_fn('上傳證據檔後，輸入檔名（HOME內PNG/PDF/TXT原件；空白即停止）：').strip();path=Path.home()/name
+  name=input_fn('上傳證據檔後，輸入檔名（HOME內PNG/JPEG/PDF原件；空白即停止）：').strip();path=Path.home()/name
   if not name or Path(name).name!=name or path.is_symlink() or not path.is_file():raise l.Refused('CONSOLE_EVIDENCE_REQUIRED')
   raw=path.read_bytes()
   if not 128<=len(raw)<=8*1024*1024 or not (raw.startswith(b'\x89PNG\r\n\x1a\n') or raw.startswith(b'%PDF-') or raw.startswith(b'\xff\xd8\xff')):raise l.Refused('ORIGINAL_CONSOLE_PNG_JPEG_PDF_REQUIRED')
@@ -121,6 +130,26 @@ def evidence(state,p):
   q=state.path/e['path']
   if q.is_symlink() or not q.is_file() or q.stat().st_size!=e['bytes'] or l.sha(q.read_bytes())!=e['sha256'] or e['plan_binding']!=bound:raise l.Refused('FREE_PROOF_CHANGED')
 
+def free_allocation(s,choice):
+ # Service quota may exceed Always Free. Count allocated stopped instances too.
+ live=[x for x in s['instances'] if x.get('lifecycle-state') not in ('TERMINATED','DELETED')]
+ shape=choice['shape'];same=[x for x in live if x.get('shape')==shape]
+ if any(not x.get('shape') for x in live):raise l.Refused('FREE_COMPUTE_USAGE_UNKNOWN')
+ if shape=='VM.Standard.E2.1.Micro':
+  if len(same)+1>2:raise l.Refused('ALWAYS_FREE_COMPUTE_EXHAUSTED')
+  return {'existing_instances':len(same),'maximum_instances':2}
+ if shape!='VM.Standard.A1.Flex':raise l.Refused('NOT_ALLOWED_FREE_SHAPE')
+ cpu=decimal.Decimal(0);ram=decimal.Decimal(0)
+ for x in same:
+  cfg=x.get('shape-config') or {}
+  try:
+   c=decimal.Decimal(str(cfg['ocpus']));m=decimal.Decimal(str(cfg['memory-in-gbs']))
+   if not c.is_finite() or not m.is_finite() or c<=0 or m<=0:raise ValueError()
+  except (KeyError,ValueError,decimal.InvalidOperation):raise l.Refused('FREE_COMPUTE_USAGE_UNKNOWN')
+  cpu+=c;ram+=m
+ if cpu+decimal.Decimal(str(choice['ocpus']))>4 or ram+decimal.Decimal(str(choice['ram_gb']))>24:raise l.Refused('ALWAYS_FREE_COMPUTE_EXHAUSTED')
+ return {'existing_ocpus':str(cpu),'existing_ram_gb':str(ram),'maximum_ocpus':4,'maximum_ram_gb':24,'monthly_allowance':'REQUIRES_OWNER_CONSOLE_EVIDENCE'}
+
 def quota_check(cloud,p,choice):
  names=choice['quota_names']
  if not names:raise l.Refused('COMPUTE_QUOTA_NAMES_UNKNOWN')
@@ -133,6 +162,7 @@ def quota_check(cloud,p,choice):
 def capacity(cloud,p):
  for candidate in p['options']:
   try:
+   free_allocation(p['snapshot_data'],candidate)
    quota_check(cloud,p,candidate)
    for service,name,needed,scope in [('vcn','vcn-count',1,None),('block-storage','total-storage-gb',50,candidate['ad'])]:
     params={'compartment-id':cloud.ctx['tenancy'],'service-name':service,'limit-name':name}
@@ -140,7 +170,7 @@ def capacity(cloud,p):
     avail=cloud.read(('limits','resource-availability','get'),params)
     if type(avail.get('available')) not in (int,float) or avail['available']<needed:raise l.Refused('SERVICE_QUOTA_INSUFFICIENT')
   except l.Refused as e:
-   if str(e)=='SERVICE_QUOTA_INSUFFICIENT':continue
+   if str(e) in ('SERVICE_QUOTA_INSUFFICIENT','ALWAYS_FREE_COMPUTE_EXHAUSTED'):continue
    raise
   shape={'instanceShape':candidate['shape']}
   if candidate['shape']=='VM.Standard.A1.Flex':shape['instanceShapeConfig']={'ocpus':1,'memoryInGBs':6}
@@ -171,7 +201,7 @@ class Provisioner:
   if matches:resource=matches[0]
   elif entry:raise l.Refused('PRIOR_CREATE_OUTCOME_UNKNOWN_DO_NOT_RETRY')
   else:
-   params={**params,'display-name':'twstockai-pilot-'+name+'-'+self.p['id'][:8],'freeform-tags':{'TwstockaiPilotPlan':self.p['id']},'opc-retry-token':str(uuid.uuid5(uuid.NAMESPACE_URL,self.p['id']+name))}
+   params={**params,'display-name':'twstockai-pilot-'+name+'-'+self.p['id'][:8],'freeform-tags':{'TwstockaiPilotPlan':self.p['id']}}
    if name=='compartment':params.pop('display-name',None)
    self.log['steps'][name]={'status':'STARTED','at':now().isoformat()};self.state.write(self.file,self.log)
    resource=self.cloud.call(WRITE[name],params)
@@ -190,7 +220,7 @@ class Provisioner:
   rt=self.step('routes',{'compartment-id':comp,'vcn-id':vcn,'route-rules':[{'destination':'0.0.0.0/0','destinationType':'CIDR_BLOCK','networkEntityId':gw}]},comp)
   sl=self.step('security',{'compartment-id':comp,'vcn-id':vcn,'ingress-security-rules':[],'egress-security-rules':[{'destination':'0.0.0.0/0','protocol':'6','tcpOptions':{'destinationPortRange':{'min':443,'max':443}}},{'destination':'0.0.0.0/0','protocol':'17','udpOptions':{'destinationPortRange':{'min':53,'max':53}}}]},comp)
   subnet=self.step('subnet',{'compartment-id':comp,'vcn-id':vcn,'cidr-block':'10.78.0.0/28','route-table-id':rt,'security-list-ids':[sl],'prohibit-public-ip-on-vnic':False},comp)
-  args={'compartment-id':comp,'availability-domain':choice['ad'],'shape':choice['shape'],'source-details':{'sourceType':'image','imageId':choice['image'],'bootVolumeSizeInGBs':50,'bootVolumeVpusPerGB':10},'create-vnic-details':{'subnetId':subnet,'assignPublicIp':True},'metadata':{'user_data':base64.b64encode(user_data.encode()).decode()}}
+  args={'compartment-id':comp,'availability-domain':choice['ad'],'shape':choice['shape'],'source-details':{'sourceType':'image','imageId':choice['image'],'bootVolumeSizeInGBs':50,'bootVolumeVpusPerGB':10},'subnet-id':subnet,'assign-public-ip':True,'metadata':{'user_data':base64.b64encode(user_data.encode()).decode()}}
   if choice['shape']=='VM.Standard.A1.Flex':args['shape-config']={'ocpus':1,'memoryInGBs':6}
   if len(user_data.encode())>32000:raise l.Refused('GUEST_METADATA_SIZE_BOUND')
   self.step('instance',args,comp);self.log['complete']=True;self.log['guest_health']='NOT_VERIFIED';self.state.write(self.file,self.log)
@@ -240,7 +270,7 @@ def credentials():
 def main():
  a=argparse.ArgumentParser();a.add_argument('command',choices=['inspect','plan','review','apply','status','stop','connect']);cmd=a.parse_args().command
  try:
-  state=l.State(Path.home()/'.local/share/twstockai-oracle-deploy2');cloud=Cloud(l.identity())
+  state=l.State(Path.home()/'.local/share/twstockai-oracle-deploy2');cloud=Cloud(l.identity(),state)
   with state.lock():
    if cmd in ('inspect','plan'):
     raw=state.path/l.PILOT_NAME

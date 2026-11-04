@@ -2,7 +2,7 @@
 
 最新入口讀CONTINUE與oracle_deploy2_20261104。本人CloudShell執行已核固定包；原唯一Codex／Cloud／工程鎖／dev分支仍唯一Git寫入。inspect/plan只read，apply只有原件核讀＋MAC／期限／完整快照／quota／容量通過才建AlwaysFree獨立資源；非持久容量POST只在apply費用證據後，不冒主機建立。不使用試用抵扣／--force解除資格，不猜未核費用。本人控制台證據保留原bytes／SHA／時間與計畫，不是API或OCR真偽認證。
 
-真實Oracle／guest／HTTPS／Android未驗，不能以13mock或VM RUNNING替代。Tailscale第三方同意與本人登入前停，不代條款或Funnel；原FM3／owner／原Cloud不動、不搬真實資料／付費／策略／交易。只停自有tag／帳戶相符VM，未知操作結果不重送、不清資料；保留512MiB。以下歷史保留。
+真實Oracle／guest／HTTPS／Android未驗，不能以17mock或VM RUNNING替代。Tailscale第三方同意與本人登入前停，不代條款或Funnel；原FM3／owner／原Cloud不動、不搬真實資料／付費／策略／交易。只停自有tag／帳戶相符VM，未知操作結果不重送、不清資料；保留512MiB。以下歷史保留。
 
 ---
 
