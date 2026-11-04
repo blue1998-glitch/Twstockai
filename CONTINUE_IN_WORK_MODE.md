@@ -1,3 +1,19 @@
+# 2026-11-04 最新有效｜M-ORACLE-SHELL1部分交付：可執行查核，建機後段未完成
+
+[可貼Cloud Shell固定指令](deliveries/m1-oracle-shell1-20261104/CLOUD_SHELL_COMMAND.md) · [工具／實測／界線](股票系統M1_v0_18/graph_core/oracle_shell1_20261104/README.md)。本人Oracle已可登入，改走官方Cloud Shell；不再派Work重試兩控制台入口，也不要求本Codex重新取得同一登入授權才能交工具。
+
+單一stdlib zipapp已交inspect／plan／status／stop與apply安全拒絕，20唯一新mock／ZIP／隱私／MAC測試通過；固定公開工具實際下載、執行前SHA／CRC／manifest驗核、重送禁網spy重用、壞快取不執行已核。不是只交文件，也沒有重建合成股票UI或重跑原16／15。工具工程固定485d8745dc52545675746502a3516e9ea8b9cbaf；指令內路徑／SHA／提交皆已填妥，無需OCID或憑證。
+
+**成功條件部署後段、全配置零計費證據讀取器與私人HTTPS尚未實作，整個里程碑仍PARTIAL。** 原生Shape ALWAYS_FREE只證Compute分項；服務配額、可列機型、Oracle Linux／BASE及試用贈額不升全配置資格。映像／儲存／IP／網路成本、帳戶完整適用、現場供應與Personal方案／本人同意／ACL未知即拒絕；沒有--force或模擬放行，也不能稱成功部署重送已驗。本版apply不會建機，不是只差使用者按apply。
+
+Codex沒有真實Oracle登入；原Cloud實測缺登入安全停止，不等本人Cloud Shell帳戶核實。Oracle新建0、私人HTTPS未建、Android NOT_TESTED_NEW_BUILD。唯一使用者操作：登入自己控制台→Cloud Shell→貼固定指令；完整帳戶觀察與計畫只留本人私有0700/0600目錄，不貼聊天／GitHub，只看安全中文摘要。Cloud Shell不當長期股票主機。
+
+原唯一Codex／Cloud／工程鎖／dev分支、FM3／owner8765／view-head、原pilot固定345616B／SHA、全部原件與880舊untracked保持；512MiB保留有效。只新增本輪工具／測試，不裝原Cloud OCI登入／VPN、不搬資料、部署、付費、排程或交易；來源0.10／parents／策略／Raw UNKNOWN及false/null與main不改。主動全帳持現、重新進場與機會成本需求不升正式策略。
+
+下一步先由本人Cloud Shell取得安全摘要，再針對具體缺口補官方證據讀取器與真正部署後段；不重研同一登入問題、不用PASS數冒充全功能。固定GitHub原bytes讀回收據另存，歷史完整保留。
+
+---
+
 # 2026-11-04 最新有效｜M-ORACLE-PILOT1合成工程已交付，Oracle存取受阻
 
 本輪依使用者新授權只做零付費、獨立Oracle合成Android pilot；**工程完成，Oracle／私人HTTPS未建立**。唯一原Cloud／工程鎖／dev分支不變，原FM3與owner8765保持，沒有真實資料搬遷、來源抓取、核心規則／策略變更或新來源版本。

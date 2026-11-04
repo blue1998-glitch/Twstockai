@@ -1,3 +1,13 @@
+# 2026-11-04 最新有效｜M-ORACLE-SHELL1官方Cloud Shell備援與部分能力邊界
+
+使用者已指定本人已登入控制台的官方Cloud Shell備援。最新入口讀CONTINUE與graph_core/oracle_shell1_20261104；唯一Codex／原Cloud／工程鎖／dev分支仍不變，不開代理。使用者Cloud Shell只執行固定已核工具，不是另一個Git工程寫入者。
+
+本版完成唯讀查核／HMAC阻塞計畫／安全拒絕，成功建機及全配置零計費證據讀取器未完成；不得稱完整部署工具或只差按apply。inspect／plan只允許精確OCI list/get與參數白名單，任何必要UNKNOWN維持拒絕；CreateComputeCapacityReport不在唯讀白名單。沒有人工--force、試用贈額或模擬放行。
+
+所有帳戶識別／IP／原回應／計畫／key留本人Cloud Shell私有目錄，不上Git／聊天；不要求密碼、OTP、私鑰或手填OCID。固定工具與原合成包必須先驗bytes／SHA／CRC／manifest才執行，不curl|bash或停TLS。原Cloud不裝Oracle登入／VPN、不重啟或搬FM3；保留512MiB、原owner／來源0.10／parents／策略／所有原件與UNKNOWN／false／null。私人HTTPS、Oracle主機、Android實機未驗；禁止Funnel、公網匿名、付費、排程及交易。以下歷史完整保留。
+
+---
+
 # 2026-11-04 最新有效｜M-ORACLE-PILOT1隔離授權與存取停止點
 
 使用者只新增授權零付費Always Free獨立Oracle合成pilot，不授權FM3搬遷／公開網站／策略／交易。原唯一Cloud／工程鎖／dev分支與512MiB保留不變；最新狀態讀CONTINUE及graph_core/oracle_pilot1_20261104。合成工程包已完成，帳戶正式管理通道缺失，Oracle及私人HTTPS未建立；公開免費文件不當帳戶配額證明。
