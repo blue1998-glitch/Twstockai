@@ -1,0 +1,135 @@
+"""Bounded source intake + fail-closed gate for the existing daily pipeline.
+No new price parser/engine, no implicit same-source/company-action certification.
+If blocked, this entry deliberately does NOT run a market scan or publish a UI.
+"""
+import argparse,json,time,shutil,hashlib,resource
+from pathlib import Path
+from datetime import datetime,date,timezone
+from zoneinfo import ZoneInfo
+from urllib.request import build_opener
+from urllib.error import HTTPError
+from graph_core import market_daily as d,market_increment as inc
+from graph_core.day1_20261103.probe_once import NoRedirect,SAFE_HEADERS,heads
+from graph_core.storage1_20261104.facts import project
+from rotation_research import artifact_codec as codec
+BASE=Path('/workspace/twstockai-local-data')
+ROOT=BASE/'fm3_20261101/runtime'
+WORK=BASE/'daily_chain1_20261104'
+RESERVE=536870912
+BUDGET=33554432
+MAX_BODY=16777216
+MAX_TOTAL=33554432
+stamp=lambda:datetime.now(timezone.utc).isoformat()
+read=lambda p:json.loads(Path(p).read_bytes())
+sha=lambda b:hashlib.sha256(b).hexdigest()
+
+def write(work,p,b):
+    p=Path(p);work=Path(work)
+    if not p.resolve().is_relative_to(work.resolve()) or any(x.is_symlink() for x in [p,*p.parents]):raise ValueError('PRIVATE_NEW_STAGE_ONLY')
+    baseline=read(work/'baseline-private.json')['free_bytes'];free=shutil.disk_usage(work).free
+    n=0 if p.exists() else ((len(b)+4095)//4096)*4096
+    if free-n<RESERVE+65536 or baseline-free+n>BUDGET:raise OSError('DAILY_CHAIN_CAPACITY_STOP')
+    codec.immutable(p,b)
+
+def safe_target(target):
+    if date.fromisoformat(target).isoformat()!=target:raise ValueError('EXACT_ISO_TARGET_REQUIRED')
+    if date.fromisoformat(target).weekday()>=5:raise ValueError('WEEKEND_TARGET_NOT_AUTHENTICATED')
+
+def binding(target):
+    return dict(target_date=target,producer_sha256=sha(Path(__file__).read_bytes()),pipeline_sha256=sha(Path(inc.__file__).read_bytes()),urls=d.URLS)
+
+def verify_saved(work,report):
+    stored=read(work/'binding-private.json');current=binding(report['target_date'])
+    if any(stored[k]!=current[k] for k in ['target_date','pipeline_sha256','urls']):raise ValueError('SOURCE_OR_PIPELINE_VERSION_CHANGED_USE_NEW_STAGE')
+    # Reader-only compatibility: preserve and verify the ORIGINAL capture program;
+    # never recalculate/re-date its saved qualification using the current clock.
+    if stored['producer_sha256']!=current['producer_sha256']:
+        archived=work/'producer-snapshots'/(stored['producer_sha256']+'.py')
+        if not archived.is_file() or sha(archived.read_bytes())!=stored['producer_sha256']:raise ValueError('ORIGINAL_CAPTURE_PRODUCER_NOT_PRESERVED')
+    if sha(d.encode(report['receipts']))!=report['capture_id']:raise ValueError('CAPTURE_RECEIPT_CHANGED')
+    for row in report['receipts']:
+        if row['status']!='RECEIVED':continue
+        b=(work/'capture/raw'/row['sha256']).read_bytes()
+        if len(b)!=row['bytes'] or sha(b)!=row['sha256']:raise ValueError('ORIGINAL_BYTES_CHANGED_NO_REPAIR_OR_RETRY')
+
+def run(target,*,work=WORK,opener=None,now=None):
+    safe_target(target);work=Path(work);started=time.monotonic();done=work/'result-private.json'
+    if done.exists():
+        report=read(done);verify_saved(work,report)
+        if report['target_date']!=target:raise ValueError('TARGET_CHANGED_USE_NEW_STAGE')
+        return dict(report,reused=True,this_execution_GETs=0,this_execution_core_calls=0,this_execution_new_outputs=0,captured_by_producer_sha256=read(work/'binding-private.json')['producer_sha256'],current_reader_sha256=binding(target)['producer_sha256'])
+    if not (work/'baseline-private.json').exists():raise ValueError('EXPLICIT_CAPACITY_BASELINE_REQUIRED')
+    initial_heads=heads(ROOT);view=BASE/'lite1_20261103/view-head-private.json';view_sha=sha(view.read_bytes())
+    write(work,work/'binding-private.json',d.encode(binding(target)))
+    write(work,work/'producer-snapshots'/(binding(target)['producer_sha256']+'.py'),Path(__file__).read_bytes())
+    opener=opener or build_opener(NoRedirect());receipts=[];trace=[];total=0;new_requests=0
+    for i,(name,url) in enumerate(d.URLS.items()):
+        marker=work/'attempts'/(str(i)+'.json');saved=work/'receipts'/(str(i)+'.json')
+        if saved.exists():
+            r=read(saved);receipts.append(r['receipt']);trace.append(r['trace'])
+            if r['receipt']['status']!='RECEIVED':break
+            total+=r['receipt']['bytes'];continue
+        if marker.exists():
+            trace.append(dict(name=name,url=url,complete=False,error='ATTEMPT_INTERRUPTED_OUTCOME_UNKNOWN_NO_RETRY'))
+            break
+        if shutil.disk_usage(work).free<RESERVE+MAX_BODY+1048576:raise OSError('CAPTURE_PREFLIGHT_RESERVE')
+        begin=stamp();write(work,marker,d.encode(dict(name=name,url=url,started_at=begin,retry=False)))
+        item=dict(name=name,url=url,started_at=begin,http_status=None,headers={},redirects_followed=False);parts=[]
+        try:
+            new_requests+=1
+            with opener.open(url,timeout=35) as response:
+                item.update(http_status=response.status,headers={k:v for k,v in response.headers.items() if k.lower() in SAFE_HEADERS},effective_url=response.geturl())
+                if response.status!=200 or response.geturl()!=url:raise ValueError('STATUS_OR_REDIRECT_REFUSED')
+                length=response.headers.get('Content-Length')
+                if length and int(length)>MAX_BODY:raise ValueError('DECLARED_BODY_EXCEEDS_BOUND')
+                n=0;t=time.monotonic()
+                while True:
+                    b=response.read(min(1048576,MAX_BODY+1-n))
+                    if not b:break
+                    parts.append(b);n+=len(b)
+                    if n>MAX_BODY or total+n>MAX_TOTAL or time.monotonic()-t>180:raise ValueError('BODY_OR_CAPTURE_RESOURCE_BOUND')
+                raw=b''.join(parts)
+                if length and len(raw)!=int(length):raise ValueError('INCOMPLETE_RESPONSE')
+            digest=sha(raw);write(work,work/'capture/raw'/digest,raw);total+=len(raw)
+            r=dict(name=name,url=url,status='RECEIVED',sha256=digest,bytes=len(raw),fetched_at=stamp())
+            item.update(complete=True,bytes=len(raw),sha256=digest)
+        except Exception as e:
+            if isinstance(e,HTTPError):item.update(http_status=e.code,headers={k:v for k,v in e.headers.items() if k.lower() in SAFE_HEADERS})
+            item.update(complete=False,error=type(e).__name__+': '+str(e));r=dict(name=name,url=url,status='SOURCE_FAILURE',error=item['error'])
+            if parts:
+                partial=b''.join(parts);h=sha(partial);write(work,work/'partial-not-qualified'/h,partial);item['partial_sha256']=h;item['partial_bytes']=len(partial)
+        item['completed_at']=stamp();write(work,saved,d.encode(dict(receipt=r,trace=item)));receipts.append(r);trace.append(item)
+        print(json.dumps(dict(phase='SOURCE_CAPTURE',source=name,http_status=item['http_status'],complete=item['complete'],bytes=item.get('bytes'),error=item.get('error'))),flush=True)
+        if r['status']!='RECEIVED':break # A rejection or failure never triggers another request/path.
+        time.sleep(1)
+    capture_id=sha(d.encode(receipts));write(work,work/'capture/captures'/(capture_id+'.json'),d.encode(receipts))
+    dates={};rows={};candidate_universe={};candidate_maps={};source_parse_errors={};source_facts={};candidate_counts={};samples=[]
+    byname={r['name']:r for r in receipts if r['status']=='RECEIVED'}
+    for market,lower in [('TWSE','twse'),('TPEX','tpex')]:
+        try:
+            dr=byname[lower+'-daily.json'];dt,maps=d.quote_map(read(work/'capture/raw'/dr['sha256']),market);dates[market]=dt;rows[market]=len(maps);candidate_maps[market]=maps
+            ur=byname[lower+'-universe.json'];cr=byname[market+'-classification.html'];u=d.classify(read(work/'capture/raw'/ur['sha256']),(work/'capture/raw'/cr['sha256']).read_bytes(),market,dt);candidate_universe[market]=u;candidate_counts[market]=len(u['members'])
+            for member in u['members'][:2]:
+                fact=project(member,maps.get(member['code']),as_of=dt,capture_id=capture_id,daily_sha256=dr['sha256'])
+                samples.append(dict(market=market,identity=fact['identity'],fact=fact,original_record=maps.get(member['code']),candidate_only_not_accepted_session=True))
+        except (KeyError,ValueError,TypeError) as e:source_parse_errors[market]=type(e).__name__+': '+str(e)
+    clock=now or datetime.now(ZoneInfo('Asia/Taipei'))
+    try:
+        asof,_,_,_=inc.sources(work/'capture',capture_id,now=clock)
+        if asof!=target:raise ValueError('SOURCE_DATE_NOT_TARGET: '+asof+' != '+target)
+        gate=dict(status='SOURCE_QUALIFIED',as_of=asof)
+    except Exception as e:gate=dict(status='BLOCKED_SOURCE_QUALIFICATION',reason=type(e).__name__+': '+str(e))
+    # No certified action/market-calendar bridge is present in the original pipeline.
+    # Same URL/provider and nearby prices cannot replace that missing evidence.
+    state=read(BASE/'graph_lazy1_20261104/source-state-private.json');expected={s['identity']:s for s in state['stocks']}
+    current={m['market']+':'+m['code']:m for u in candidate_universe.values() for m in u['members']}
+    delta=dict(added=len(set(current)-set(expected)),removed=len(set(expected)-set(current)),identity_changes=sum(current[k]['isin']!=expected[k]['isin'] for k in set(current)&set(expected))) if len(candidate_universe)==2 else None
+    status='BLOCKED_SOURCE_QUALIFICATION' if gate['status']!='SOURCE_QUALIFIED' else 'BLOCKED_CONTINUITY_EVIDENCE'
+    terminal=[dict(identity=s['identity'],market=s['market'],target_date=target,status='NOT_ANALYZED_SOURCE_GATE_BLOCKED' if gate['status']!='SOURCE_QUALIFIED' else 'NOT_ANALYZED_CONTINUITY_UNKNOWN',source_day=dates.get(s['market']),corporate_action_coverage='UNKNOWN',certified_multiday=False,core_calls=0) for s in state['stocks']]
+    write(work,work/'terminal-private.json',d.encode(terminal));write(work,work/'real-source-cases-private.json',d.encode(samples))
+    after=heads(ROOT)
+    if initial_heads!=after or sha(view.read_bytes())!=view_sha:raise ValueError('EXISTING_SOURCE_OR_VIEW_HEAD_CHANGED')
+    report=dict(schema='daily-chain1-source-gate/0.1',target_date=target,status=status,qualification=gate,qualification_clock_taipei=clock.astimezone(ZoneInfo('Asia/Taipei')).isoformat(),actual_market_dates=dates,daily_rows=rows,candidate_universe_counts=candidate_counts,candidate_reference_delta=delta,source_parse_errors=source_parse_errors,capture_id=capture_id,receipts=receipts,http_trace=trace,source_GETs=None if any(x.get('error')=='ATTEMPT_INTERRUPTED_OUTCOME_UNKNOWN_NO_RETRY' for x in trace) else len(trace),consumed_attempt_markers=len(trace),retries=0,alternate_urls=0,reference_count=len(expected),per_stock_gate_terminal_count=len(terminal),processed_by_core=0,new_charts=0,certified_multiday_count=0,corporate_action_coverage='UNKNOWN',expected_market_counts={m:sum(s['market']==m for s in state['stocks']) for m in ['TWSE','TPEX']},new_batch_published=False,current_view_changed=False,original_heads_before=initial_heads,original_heads_after=after,original_view_sha256=view_sha,elapsed_seconds=time.monotonic()-started,peak_RSS_KiB=resource.getrusage(resource.RUSAGE_SELF).ru_maxrss,free_bytes=shutil.disk_usage(work).free,filesystem_net_added_bytes=read(work/'baseline-private.json')['free_bytes']-shutil.disk_usage(work).free,independent_backup='UNKNOWN',restart_persistence='UNKNOWN',historical_signal_eligible=False,execution_qualified=False,primary_pressure_id=None,policy_authorized=False,imputed_close=None,valuation=None,reused=False,this_execution_GETs=new_requests,this_execution_core_calls=0,this_execution_new_outputs=None)
+    write(work,done,d.encode(report));return report
+if __name__=='__main__':
+    p=argparse.ArgumentParser();p.add_argument('--target-date',required=True);a=p.parse_args();r=run(a.target_date);print(json.dumps({k:v for k,v in r.items() if k not in ['receipts','http_trace','original_heads_before','original_heads_after']},ensure_ascii=False))

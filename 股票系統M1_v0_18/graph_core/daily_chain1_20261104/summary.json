@@ -1,0 +1,64 @@
+{
+  "accepted_11_04_universe": null,
+  "alternate_sources": 0,
+  "certified_multiday_sequences": 0,
+  "complete_daily_update_entry": "NOT_COMPLETED_UPSTREAM_GATE_BLOCKED",
+  "complete_originals": 4,
+  "core_scan_processed": 0,
+  "core_scan_unprocessed": 1986,
+  "current_UI_date": "2026-11-03",
+  "execution_qualified": false,
+  "historical_signal_eligible": false,
+  "imputed_close": null,
+  "incomplete_originals": 1,
+  "milestone": "M-DAILY-CHAIN1",
+  "multiday_qualification": "NOT_EVALUATED_NEW_SESSION_UNAVAILABLE; prior official basis/action interval remains UNKNOWN",
+  "new_UI_date": false,
+  "new_charts": 0,
+  "observed_market_dates": {
+    "TPEX": "2026-11-03",
+    "TWSE": "2026-11-03"
+  },
+  "original_source_gate": {
+    "reason": "ValueError: Complete unique fingerprinted source receipt required",
+    "status": "BLOCKED_SOURCE_QUALIFICATION"
+  },
+  "policy_authorized": false,
+  "primary_blocker": "Both authorized official daily responses are still 2026-11-03, not target 2026-11-04.",
+  "primary_pressure_id": null,
+  "private_data_published": false,
+  "reference_count": 1986,
+  "reference_counts": {
+    "TPEX": 897,
+    "TWSE": 1089
+  },
+  "reference_date": "2026-11-03",
+  "repeat": {
+    "GETs": 0,
+    "core_calls": 0,
+    "new_files": 0
+  },
+  "retries": 0,
+  "schema": "m-daily-chain1-summary/0.1",
+  "secondary_capture_limitation": "TWSE classification HTTP200 body hit local 180-second body/resource bound; unqualified fragment retained, no retry. Sixth source not requested.",
+  "single_intake_entry": "IMPLEMENTED_AND_TESTED",
+  "source0_10_and_parents_unchanged": true,
+  "source_GETs": 5,
+  "status": "BLOCKED_SOURCE_DAY_NOT_TARGET",
+  "statuses": {
+    "android": "NOT_TESTED_NEW_BUILD",
+    "daily_scheduler": "NOT_ENABLED",
+    "full_market_core_scan": "NOT_EXECUTED",
+    "meaningful_structure": "NOT_PRODUCED",
+    "qualified_multiday": "NOT_CERTIFIED",
+    "target_day_quotes": "NOT_ACCEPTED"
+  },
+  "stock_core_failures": null,
+  "target_date": "2026-11-04",
+  "unrequested_sources": 1,
+  "upstream_gate_terminal_counts": {
+    "TPEX": 897,
+    "TWSE": 1089
+  },
+  "valuation": null
+}

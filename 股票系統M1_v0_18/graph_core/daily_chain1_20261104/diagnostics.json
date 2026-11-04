@@ -1,0 +1,28 @@
+{
+  "closing_check_correction": {
+    "correction": "Compare HTML response body length/SHA with original immutable entry; owner unchanged.",
+    "first_error": "KeyError: X-Artifact-SHA256",
+    "full_original_stderr_archived": false,
+    "scope": "verification script assumed HTML has the JSON action SHA header",
+    "unit_or_product_failure": false
+  },
+  "original_Sigkill_Fontconfig_xref_and_other_unknowns_preserved": true,
+  "real_capture_failure": {
+    "complete": false,
+    "error": "BODY_OR_CAPTURE_RESOURCE_BOUND",
+    "fragment_retained": true,
+    "http": 200,
+    "local_body_wall_limit_seconds": 180,
+    "provider_denial": false,
+    "retried": false,
+    "source": "TWSE-classification.html"
+  },
+  "static_code_correction": {
+    "correction": "Track actual new open calls separately; unknown historical attempt count remains null. Archived producer verified when reading original capture verdict.",
+    "date_gate_changed": false,
+    "initial_source_preserved": "intake-capture-before.py.txt",
+    "issue": "Resume request counter included already completed receipts; interrupted unknown attempt must not be claimed as an actual new GET.",
+    "old_capture_and_verdict_unchanged": true
+  },
+  "synthetic_test_failures": 0
+}

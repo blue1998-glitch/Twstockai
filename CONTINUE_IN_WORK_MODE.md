@@ -1,3 +1,17 @@
+# 2026-11-04 最新有效｜M-DAILY-CHAIN1受阻：原端點仍回11/3，未發布11/4
+
+[單次接件／實測／限制與Work完整指令](股票系統M1_v0_18/graph_core/daily_chain1_20261104/README.md)。同一原Cloud／鎖／dev分支，原FM3可讀。一次有界5GET：4完整，兩市場日行情均11/3；上市分類HTTP200觸本地180秒body上限，片段留存，第6未請求，0重試／改源。**未取得合格11/4，核心0、新圖0、新日期未發布。**
+
+原1986（上市1089／上櫃897）都留上游來源閘門未分析記錄，不等1986分析完成、不把日行情總列數當普通股數。11/3→11/4未建立；11/2→11/3原RAW-UNBRIDGED／公司行動UNKNOWN不自動認證。同日已收盤不取代原prior-closed-date及完整公告資格。
+
+僅有界接件／同批拒用讀回入口已驗，完整每日多日鏈／掃描／發布入口未完成。本輪12新合成方法；真實重送0GET／0核心／0新檔，原head／view bytes／owner三日期與原HTML SHA保全。舊20／29未重跑，新瀏覽器／Android未測；原owner仍127.0.0.1:8765，11/3價量＋單根歷史不足、11/2與10/30回看。
+
+接件閘門302.95秒／ru_maxrss337668KiB，不是全市場掃描效能；容量及收尾見resources／私有final-status，保留512MiB、32MiB預算。原碼／partial及計數小修、核驗腳本SHAheader假設修正均留史，不改owner／核心／指標／來源資格或原件。無新source0.11／catalog／重抓歷史／全市場重算／部署／排程；原880 untracked、Raw UNKNOWN／false null、來源parents與全部警告保持。
+
+全面持現與重新進場機會成本仍候選需求，未批准觸發／比例／交易；Oracle已開通但未部署、備份／重啟未知。固定GitHub讀回後停止，只交Work總監核下一個合格來源觀察時窗，不在本輪續試同端點或擴張算法。下方歷史保留。
+
+---
+
 # 2026-11-04 最新有效｜M-GRAPH-LAZY1：按需開圖已接線，完整結構仍缺可比歷史
 
 [成品、實測、限制與完整Work唯讀指令](股票系統M1_v0_18/graph_core/graph_lazy1_20261104/README.md)。同一原Cloud／Codex／工程鎖／dev分支；原owner http://127.0.0.1:8765/ 搜股→查看價量→查看圖形與判定，無新網站。只受控重載同一owner一次，原憑證及loopback不變；目前PID由新私有service-current定位，舊connection PID留史。

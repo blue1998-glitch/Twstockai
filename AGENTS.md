@@ -1,3 +1,11 @@
+# 2026-11-04 最新有效｜M-DAILY-CHAIN1來源閘門停止點
+
+原唯一Cloud／工程鎖／dev分支與512MiB保留不變。本輪32MiB預算，來源有界5GET後停止：原端點仍11/3，分類片段未合格；不得因12控制PASS或1986未分析記錄稱全市場完成。最新狀態讀CONTINUE及graph_core/daily_chain1_20261104；原owner／核心／策略及所有原件保持。
+
+同批重送只讀原判斷及驗bytes，0新GET／核心／檔案；原capture producer必須可核，不用新時鐘改寫拒用。未知中斷不重試，來源不足不續發；新日／新來源觀察須明確新stage授權，不能清attempt／覆寫／改資格。固定讀回後停止只交Work總監，無代理／部署／排程／交易。下方歷史保留。
+
+---
+
 # 2026-11-04 最新有效｜M-GRAPH-LAZY1完成邊界
 
 最新狀態依CONTINUE最上方及graph_core/graph_lazy1_20261104。沿同一Cloud／工程鎖／dev分支、512MiB保留；本輪16MiB預算。點選原價量頁才分析，快取RAM8股／2MiB／600秒；原owner同埠受控重載一次，現PID讀新私有service-current，不用舊connection PID判服務消失。不可盲重載或改新路由SHA掩蓋來源／程式變更。

@@ -1,0 +1,79 @@
+{
+  "accepted_new_session": false,
+  "announced_at": null,
+  "body_rows_are_not_ordinary_stock_counts": {
+    "TPEX": 13569,
+    "TWSE": 1390
+  },
+  "capture_id": "7add449d46c0fd44e855d1c06299b89a1735719a7f385e7637e5d7cca7db276a",
+  "observed_at": "2026-11-04T16:04:09.510611+08:00",
+  "private_raw_originals": true,
+  "schema": "bounded-source-observation/0.1",
+  "sources": [
+    {
+      "bytes": 1332402,
+      "complete": true,
+      "completed_at": "2026-11-04T07:59:07.670506+00:00",
+      "error": null,
+      "http_status": 200,
+      "name": "twse-universe.json",
+      "partial_bytes": null,
+      "partial_sha256": null,
+      "sha256": "60c47c6c760b8ab256233af9ceaacc144f82faf428723952de2c852b0a1f1f39",
+      "started_at": "2026-11-04T07:59:06.604286+00:00",
+      "url": "https://openapi.twse.com.tw/v1/opendata/t187ap03_L"
+    },
+    {
+      "bytes": 1079373,
+      "complete": true,
+      "completed_at": "2026-11-04T07:59:47.911966+00:00",
+      "error": null,
+      "http_status": 200,
+      "name": "tpex-universe.json",
+      "partial_bytes": null,
+      "partial_sha256": null,
+      "sha256": "537d241971ac5038fb710ac5422e3939354be6c34e86c1a685dc1e0093cf9587",
+      "started_at": "2026-11-04T07:59:08.673651+00:00",
+      "url": "https://www.tpex.org.tw/openapi/v1/mopsfin_t187ap03_O"
+    },
+    {
+      "bytes": 322497,
+      "complete": true,
+      "completed_at": "2026-11-04T07:59:51.039302+00:00",
+      "error": null,
+      "http_status": 200,
+      "name": "twse-daily.json",
+      "partial_bytes": null,
+      "partial_sha256": null,
+      "sha256": "73a0c6adeaa9ddd2e284a7251508d8fd9d6d7d98dd6feaf811d18e325c60a82c",
+      "started_at": "2026-11-04T07:59:48.913852+00:00",
+      "url": "https://openapi.twse.com.tw/v1/exchangeReport/STOCK_DAY_ALL"
+    },
+    {
+      "bytes": 5295907,
+      "complete": true,
+      "completed_at": "2026-11-04T08:00:02.503305+00:00",
+      "error": null,
+      "http_status": 200,
+      "name": "tpex-daily.json",
+      "partial_bytes": null,
+      "partial_sha256": null,
+      "sha256": "120f702cec81655cf5820e55c76eac84db7a4424d0a334e9b91c97987859fc79",
+      "started_at": "2026-11-04T07:59:52.040619+00:00",
+      "url": "https://www.tpex.org.tw/openapi/v1/tpex_mainboard_daily_close_quotes"
+    },
+    {
+      "bytes": null,
+      "complete": false,
+      "completed_at": "2026-11-04T08:04:09.436751+00:00",
+      "error": "ValueError: BODY_OR_CAPTURE_RESOURCE_BOUND",
+      "http_status": 200,
+      "name": "TWSE-classification.html",
+      "partial_bytes": 3145728,
+      "partial_sha256": "69954a78d5c88e501598380db6b6467df45d9672641fece93154be0cd8cd9d39",
+      "sha256": null,
+      "started_at": "2026-11-04T08:00:03.504873+00:00",
+      "url": "https://isin.twse.com.tw/isin/C_public.jsp?strMode=2"
+    }
+  ]
+}
