@@ -1,0 +1,7 @@
+# 本輪失敗與未完成
+
+測試準備首次將shell_tool.py檔案當成目錄寫test_shell.py，NotADirectoryError；後續loader匯入失敗，領域方法執行0。已改正目錄，20方法實跑通過；原錯誤、loader log與修正後log保留。沒有改測試oracle迎合計算，也沒有動原合成產品。
+
+尚未完成的部署後段不是測試錯誤或真實Oracle拒絕；本Codex無OCI登入，本版未具足夠完整的零計費證據讀取器及成功provisioner。apply只有安全拒絕路徑。模擬之ALWAYS_FREE是原生分項欄位，不當真實帳戶資格；未測成功部署冪等／SSH或agent bootstrap／私人HTTPS／Android。不得把20PASS稱作完整部署工具完成。
+
+原先Oracle／Tailscale一般公開說明、原source0.10／parents及所有原市場未知不改。本輪不再重試Work控制台兩受阻入口，也不跑舊產品驗收。
