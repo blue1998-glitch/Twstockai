@@ -1,3 +1,9 @@
+# 2026-11-04 最新補正｜官方CLI空清單輸出
+
+本人回報iam compartment list EMPTY_STDOUT；已核官方cli_util.render有if data及if display_dictionary，空資料可能無輸出。最新RENDER_FIX.json：只替換已安裝官方CLI輸出層以明示data，身分、分頁、操作／零重試不改，不把任意空白補零。4唯一方法＝2新＋2相關回歸。原生帳戶內容仍未取得，只先唯讀plan；不review/apply。原包／來源／FM3／owner保留，不能宣稱已建機。
+
+---
+
 # 2026-11-04 最新補正｜OCI回應解析定位
 
 本人CloudShell已驗工具但OCI_RESPONSE_INVALID，原生回應未取得，根因UNKNOWN。最新補正讀oracle_deploy2_20261104/RESPONSE_FIX.md；4唯一方法＝2新＋2相關回歸通過。只先唯讀plan，輸出精確操作／類型，原件留本人私有；不把空輸出補零，不review/apply或宣稱已建機。原包／FM3／owner／工程鎖及歷史保留。

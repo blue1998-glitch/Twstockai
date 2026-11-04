@@ -142,4 +142,20 @@ class Tests(unittest.TestCase):
   for raw,expected in [(b'{"data":[]}',[]),(b'{"data":{}}',{})]:
    with patch.object(d.subprocess,'run',return_value=subprocess.CompletedProcess([],0,raw,b'')):
     self.assertEqual(d.Cloud(CTX,self.state).read(('iam','compartment','list'),{'all':True}),expected)
+ def test_official_render_empty_list_preserved_before_truthiness(self):
+  import types,sys,io,contextlib
+  util=types.ModuleType('oci_cli.cli_util');client=types.ModuleType('oci_cli.cli');package=types.ModuleType('oci_cli');package.cli_util=util
+  sdk=types.ModuleType('oci.util');sdk.to_dict=lambda v:v
+  values=[[],{},None,[{'id':'SYNTHETIC'}]];out=io.StringIO()
+  def run():
+   for value in values:util.render(value,{},object())
+  client.cli=run
+  with patch.dict(sys.modules,{'oci_cli':package,'oci_cli.cli_util':util,'oci_cli.cli':client,'oci.util':sdk}),contextlib.redirect_stdout(out):exec(d.RENDER_BRIDGE,{})
+  rows=[json.loads(line) for line in out.getvalue().splitlines()];self.assertEqual([r['data'] for r in rows],values)
+  self.assertTrue(all(r['capture']=='OCI_CLI_RENDER_BOUNDARY' for r in rows))
+ def test_cli_bridge_preserves_native_operation_and_disables_retries(self):
+  import subprocess
+  with patch.object(d,'cli_interpreter',return_value='/SYNTHETIC/python'),patch.object(d.subprocess,'run',return_value=subprocess.CompletedProcess([],0,b'{"data":[]}',b'')) as run:
+   self.assertEqual(d.Cloud(CTX,self.state).read(('iam','compartment','list'),{'all':True}),[])
+  args=run.call_args.args[0];self.assertEqual(args[:3],['/SYNTHETIC/python','-c',d.RENDER_BRIDGE]);self.assertIn('compartment',args);self.assertEqual(args[args.index('--max-retries')+1],'0')
 if __name__=='__main__':unittest.main(verbosity=2)

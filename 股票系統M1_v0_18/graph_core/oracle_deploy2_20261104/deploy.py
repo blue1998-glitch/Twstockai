@@ -10,6 +10,26 @@ LIST={'compartment':('iam','compartment','list'),'vcn':('network','vcn','list'),
 CATEGORIES={'account':'帳戶：Billing & Cost Management → Upgrade and Manage Payment，Plan Type=Free Tier；不Upgrade', 'compute':'Compute → Create instance：全部候選配置明示Always Free eligible；整租戶A1最多4CPU／24GB、E2最多2台，本月A1時數仍足夠，非試用抵扣','storage':'Storage → Block Storage → Boot/Block Volumes：整租戶Home Region總量及保留額度；新50GB、10 VPU無額外費','image':'Compute建立頁Image：所選Ubuntu22.04官方映像，無Marketplace／授權費','network':'Networking → VCN、Public IP及官方Pricing：本計畫VCN/IGW/路由/安全清單/短期公網IPv4與流量均零費用；不NAT/LB/VPN服務'}
 def digest(v):return l.sha(l.encode(v))
 def now():return datetime.datetime.now(datetime.timezone.utc)
+# Capture the official CLI's unfiltered response BEFORE its truthiness-based renderer.
+# Authentication, pagination and HTTP remain in the installed official CLI.
+RENDER_BRIDGE="""import sys,json
+from oci_cli import cli_util
+from oci.util import to_dict
+def capture(data,headers,ctx,display_all_headers=False,nest_data_in_data_attribute=True):
+ print(json.dumps({'data':to_dict(data),'capture':'OCI_CLI_RENDER_BOUNDARY'}))
+cli_util.render=capture
+from oci_cli.cli import cli
+cli()
+"""
+def cli_interpreter():
+ path=shutil.which('oci')
+ if path:
+  first=Path(path).read_bytes().split(b'\n',1)[0].decode('utf-8')
+  if first.startswith('#!'):
+   words=first[2:].strip().split()
+   if len(words)==1 and Path(words[0]).is_file() and 'python' in Path(words[0]).name:return words[0]
+   if len(words)==2 and words[0]=='/usr/bin/env' and words[1].startswith('python'):return shutil.which(words[1]) or sys.executable
+ return sys.executable
 class Cloud:
  def __init__(self,ctx,state=None):self.ctx=ctx;self.state=state
  def call(self,parts,params):
@@ -19,7 +39,7 @@ class Cloud:
    if k=='all' and v is True:continue
    args.append(json.dumps(v,separators=(',',':')) if isinstance(v,(dict,list)) else str(v).lower() if type(v)is bool else str(v))
   args+=['--region',self.ctx['region'],'--output','json','--max-retries','0']
-  try:r=subprocess.run(args,capture_output=True,timeout=90)
+  try:r=subprocess.run([cli_interpreter(),'-c',RENDER_BRIDGE,*args[1:]],capture_output=True,timeout=90)
   except (OSError,subprocess.TimeoutExpired):raise l.Refused('OCI_OUTCOME_UNKNOWN')
   if r.returncode:
    if self.state is not None:self.state.record('oci-failure',{'operation':list(parts),'observed_at':now().isoformat(),'returncode':r.returncode,'stdout':r.stdout[:32768].decode('utf-8','replace'),'stderr':r.stderr[:32768].decode('utf-8','replace'),'private_only':True})

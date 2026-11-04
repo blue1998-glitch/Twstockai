@@ -1,0 +1,14 @@
+{
+  "source": "https://raw.githubusercontent.com/oracle/oci-cli/master/src/oci_cli/cli_util.py",
+  "bytes": 139200,
+  "sha256": "60997a8aa681bcd17fe78dab11074b8c32b1c5545dd1bf21c746377b06aede19",
+  "location": "render lines 893-950",
+  "finding": "if data adds data; if display_dictionary then print. Empty data/no display headers can produce no stdout.",
+  "user_observation": "iam compartment list EMPTY_STDOUT",
+  "scope": "Compatible explanation, user native API payload not yet obtained.",
+  "fix": "Use installed official CLI interpreter and replace rendering only; preserve authentication, pagination, operation and retries. Explicit data [] accepted; blank, null and failures still refused.",
+  "tests_this_round": 4,
+  "new": 2,
+  "related_regression": 2,
+  "oracle_actual_account_verified": false
+}
