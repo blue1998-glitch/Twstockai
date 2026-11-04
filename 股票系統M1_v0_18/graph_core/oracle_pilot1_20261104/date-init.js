@@ -1,0 +1,2 @@
+// Select an existing synthetic snapshot before the original LITE1 UI executes.
+(()=>{const states=JSON.parse(document.getElementById('pilot-states').textContent),days=Object.keys(states).sort();let chosen=location.hash.slice(1);if(!days.includes(chosen))chosen=days.at(-1);document.getElementById('market-state').textContent=JSON.stringify(states[chosen]);window.pilotDates=days;window.pilotDate=chosen;})();

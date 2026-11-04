@@ -1,3 +1,11 @@
+# 2026-11-04 最新有效｜M-ORACLE-PILOT1隔離授權與存取停止點
+
+使用者只新增授權零付費Always Free獨立Oracle合成pilot，不授權FM3搬遷／公開網站／策略／交易。原唯一Cloud／工程鎖／dev分支與512MiB保留不變；最新狀態讀CONTINUE及graph_core/oracle_pilot1_20261104。合成工程包已完成，帳戶正式管理通道缺失，Oracle及私人HTTPS未建立；公開免費文件不當帳戶配額證明。
+
+唯有可實際操作的正式Oracle連線、全套Always Free與私人網路資格通過才可建機／Serve；缺此條件維持BLOCKED，不重啟原Cloud注入憑證、不猜登入按鈕、不要求聊天貼密碼／OTP／私鑰、不安裝原Cloud VPN。Tailscale新帳仍須使用者同意並親自登入，禁止Funnel／公網匿名工作台。只部署固定SHA合成包，不讀取或搬移原FM3；Android本人回報前保持未測。原0.10／parents／core／策略／原件／歷史／警告與UNKNOWN／false／null不變，不重抓舊來源或重跑結清驗收。以下歷史保留。
+
+---
+
 # 2026-11-04 最新有效｜M-HISTORY-BRIDGE1有限核實停止點
 
 最新狀態讀CONTINUE及graph_core/history_bridge1_20261104。四份長史與三日期原件已作最小核讀，缺明示區間可比基底／公司行動證據，不能以同點相符／無警告解除未知。新增合格0，保留1950未查，不把來源盤點當新圖形功能；不改原source0.10／parents／core／MA／MACD或歷史。

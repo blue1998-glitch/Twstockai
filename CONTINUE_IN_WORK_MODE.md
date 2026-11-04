@@ -1,3 +1,15 @@
+# 2026-11-04 最新有效｜M-ORACLE-PILOT1合成工程已交付，Oracle存取受阻
+
+本輪依使用者新授權只做零付費、獨立Oracle合成Android pilot；**工程完成，Oracle／私人HTTPS未建立**。唯一原Cloud／工程鎖／dev分支不變，原FM3與owner8765保持，沒有真實資料搬遷、來源抓取、核心規則／策略變更或新來源版本。
+
+[成品／驗收／唯一接續](股票系統M1_v0_18/graph_core/oracle_pilot1_20261104/README.md) · [下載合成HTML／ZIP](deliveries/m1-oracle-pilot1-20261104/README.md)。原LITE1／viewer／COMP1＋既有合成fixture，5代號／2日期／7快照；首頁與圖內合成標記、搜尋／K量MACD／日期／比較可操作。HTML1,190,644B，ZIP345,616B；16唯一Python、15最終三尺寸Chromium／觸控模擬通過，原引擎數值／SHA／獨立封包啟動與重建相同。初次批不累加；Android實機NOT_TESTED_NEW_BUILD。
+
+目前無控制台操作工具、OCI CLI／SDK／profile或正式帳戶連線，Home Region／帳戶既有資源／剩餘免費配額UNKNOWN。Oracle本輪建立0，Tailscale帳戶／Serve／Funnel皆未建立；沒有私人網址可報。一般官方免費文件已讀但不能代帳戶資格；只在手機登入Oracle不會交付此Codex權限。唯一下一步由總監協調本Codex可實際操作的正式Oracle管理連線，不要求貼密碼／OTP／私鑰、不重啟或替換原Cloud，沒有支援通道就維持BLOCKED，不反覆重測。
+
+取得連線後依本輪QUALIFICATION核完整Always Free才建隔離資源，只傳公開合成ZIP；Tailscale Personal新帳須使用者同意並親自登入，僅私人Serve HTTPS，禁止Funnel／匿名網站／付費。512MiB保留有效，精確容量／記憶體／等待見resources；舊880 untracked與全部來源／版本／策略／Raw UNKNOWN及false／null保持。真實備份／持久性、正式日排程、Android外連／實機及真實市場／資金策略均未完成。收據另存固定SHA讀回，不把合成工程當部署；下方歷史完整保留。
+
+---
+
 # 2026-11-04 最新有效｜M-HISTORY-BRIDGE1受阻：長史確在，但無區間可比基底證據
 
 [最小核對、精確缺口、證據與Work完整指令](股票系統M1_v0_18/graph_core/history_bridge1_20261104/README.md)。原唯一Cloud／鎖／dev分支不變；0GET／0新核心／0新圖／0新UI。原M-SCAN1的1986執行終態及全部舊圖保持，不重跑1955單根。
