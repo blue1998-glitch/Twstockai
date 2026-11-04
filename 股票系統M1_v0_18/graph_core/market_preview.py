@@ -42,7 +42,7 @@ def build(root,run_id,*,radar_dates=None):
     base_series={};base_page=None
     if compact and batch.get('parent_run'):
         import re
-        for name in ('market-du1-v01.html','market-fm3-v02.html','market-v04.html'):
+        for name in ('market-comp1-v02.html','market-du1-v01.html','market-fm3-v02.html','market-v04.html'):
             candidate=root/'preview'/batch['parent_run']/name
             if codec.exists(candidate):
                 raw=codec.read_bytes(candidate);m=re.search(rb'<script id="market-state" type="application/json">(.*?)</script>',raw,re.S)
