@@ -1,0 +1,207 @@
+{
+  "action_groups": [
+    {
+      "action": "hold",
+      "status": "PASS",
+      "viewport": "portrait"
+    },
+    {
+      "action": "reduce",
+      "status": "PASS",
+      "viewport": "portrait"
+    },
+    {
+      "action": "exit_b",
+      "status": "PASS",
+      "viewport": "portrait"
+    },
+    {
+      "action": "cash",
+      "status": "PASS",
+      "viewport": "portrait"
+    },
+    {
+      "action": "hold",
+      "status": "PASS",
+      "viewport": "landscape"
+    },
+    {
+      "action": "reduce",
+      "status": "PASS",
+      "viewport": "landscape"
+    },
+    {
+      "action": "exit_b",
+      "status": "PASS",
+      "viewport": "landscape"
+    },
+    {
+      "action": "cash",
+      "status": "PASS",
+      "viewport": "landscape"
+    },
+    {
+      "action": "hold",
+      "status": "PASS",
+      "viewport": "desktop"
+    },
+    {
+      "action": "reduce",
+      "status": "PASS",
+      "viewport": "desktop"
+    },
+    {
+      "action": "exit_b",
+      "status": "PASS",
+      "viewport": "desktop"
+    },
+    {
+      "action": "cash",
+      "status": "PASS",
+      "viewport": "desktop"
+    }
+  ],
+  "android_actual_device": "NOT_TESTED_NEW_BUILD",
+  "downloads": [
+    {
+      "bytes": 94190,
+      "exact_payload": true,
+      "sha256": "d46129a95d66bed5ee563efa8457594e94b3350a1a295bd7911976530faa03ce",
+      "viewport": "portrait"
+    },
+    {
+      "bytes": 94190,
+      "exact_payload": true,
+      "sha256": "d46129a95d66bed5ee563efa8457594e94b3350a1a295bd7911976530faa03ce",
+      "viewport": "landscape"
+    },
+    {
+      "bytes": 94190,
+      "exact_payload": true,
+      "sha256": "d46129a95d66bed5ee563efa8457594e94b3350a1a295bd7911976530faa03ce",
+      "viewport": "desktop"
+    }
+  ],
+  "engine_calls": 0,
+  "errors": [],
+  "file_scheme_tested": false,
+  "page_loads": [
+    {
+      "external_requests": 0,
+      "html_bytes": 64713,
+      "js_errors": 0,
+      "js_heap_after_interaction_bytes": 3617880,
+      "load_seconds": 0.063,
+      "viewport": "portrait"
+    },
+    {
+      "external_requests": 0,
+      "html_bytes": 64713,
+      "js_errors": 0,
+      "js_heap_after_interaction_bytes": 3594888,
+      "load_seconds": 0.043,
+      "viewport": "landscape"
+    },
+    {
+      "external_requests": 0,
+      "html_bytes": 64713,
+      "js_errors": 0,
+      "js_heap_after_interaction_bytes": 4880344,
+      "load_seconds": 0.037,
+      "viewport": "desktop"
+    }
+  ],
+  "schema": "cap1-browser-verification/0.1",
+  "screenshots": [
+    {
+      "path": "validation-initial/portrait-hold.png",
+      "sha256": "8d652b6d331807073f5fa17e1998a269222d25d9995bc4efd01a62e7d6c5fd86"
+    },
+    {
+      "path": "validation-initial/portrait-reduce.png",
+      "sha256": "618b3d850390c548022f8c4f9e5711d88bf99fdd66b8d57197d8604c12a874b3"
+    },
+    {
+      "path": "validation-initial/portrait-exit_b.png",
+      "sha256": "cc3b105cdd23c36819e24b2af3f06a5a6381f8559cc97535fc4b1ed61373999a"
+    },
+    {
+      "path": "validation-initial/portrait-cash.png",
+      "sha256": "8ac65ea24b10b5117789bc90abeb1bde38fc052de5bf63818ad97e6aeded84c0"
+    },
+    {
+      "path": "validation-initial/landscape-hold.png",
+      "sha256": "052119ea223cc2a59e31fc8982e951685d3cf417587336356c33ba5f6b8406bd"
+    },
+    {
+      "path": "validation-initial/landscape-reduce.png",
+      "sha256": "8997faf27aac9c16a493304b4fb3a4f6f178838d71f5c94fe8b4b753d2c80e9c"
+    },
+    {
+      "path": "validation-initial/desktop-hold.png",
+      "sha256": "ff0681d6b551bc67ece33ae14662dd8d105d1250855be654733e84c504bd0008"
+    },
+    {
+      "path": "validation-initial/desktop-reduce.png",
+      "sha256": "1e88a0525669361507ddff711ca74b1e5a9823060bb9e746b07ff2120e66e507"
+    }
+  ],
+  "status": "PASS",
+  "synthetic": true,
+  "touch_date_queries": [
+    {
+      "action": "hold",
+      "method": "touch then exact range event",
+      "settled_cash": "858.860",
+      "viewport": "portrait"
+    },
+    {
+      "action": "reduce",
+      "method": "touch then exact range event",
+      "settled_cash": "858.860",
+      "viewport": "portrait"
+    },
+    {
+      "action": "exit_b",
+      "method": "touch then exact range event",
+      "settled_cash": "858.860",
+      "viewport": "portrait"
+    },
+    {
+      "action": "hold",
+      "method": "touch then exact range event",
+      "settled_cash": "858.860",
+      "viewport": "landscape"
+    },
+    {
+      "action": "reduce",
+      "method": "touch then exact range event",
+      "settled_cash": "858.860",
+      "viewport": "landscape"
+    },
+    {
+      "action": "exit_b",
+      "method": "touch then exact range event",
+      "settled_cash": "858.860",
+      "viewport": "landscape"
+    },
+    {
+      "action": "hold",
+      "method": "range event",
+      "settled_cash": "858.860",
+      "viewport": "desktop"
+    },
+    {
+      "action": "reduce",
+      "method": "range event",
+      "settled_cash": "858.860",
+      "viewport": "desktop"
+    },
+    {
+      "action": "exit_b",
+      "method": "range event",
+      "settled_cash": "858.860",
+      "viewport": "desktop"
+    }
+  ]
+}
