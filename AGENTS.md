@@ -4,6 +4,8 @@
 
 真實Oracle／guest／HTTPS／Android未驗，不能以17mock或VM RUNNING替代。Tailscale第三方同意與本人登入前停，不代條款或Funnel；原FM3／owner／原Cloud不動、不搬真實資料／付費／策略／交易。只停自有tag／帳戶相符VM，未知操作結果不重送、不清資料；保留512MiB。以下歷史保留。
 
+0.2封版已核官方CLI選項，移除不支援retry-token並改合法VM網路參數；STARTED＋精確tag防盲目重送。另核A1配置4CPU／24GB與E2兩台上限，含STOPPED；月度額度仍本人核明。OCI失敗詳情只存本人私有紀錄，安全操作名可回報；不貼原JSON。0.1歷史保留，最新固定入口只用v02。
+
 ---
 
 # 2026-11-04 最新有效｜M-ORACLE-SHELL1官方Cloud Shell備援與部分能力邊界

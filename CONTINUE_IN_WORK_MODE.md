@@ -1,12 +1,14 @@
 # 2026-11-04 最新有效｜M-ORACLE-DEPLOY2條件式建機後段已實作，真實Oracle尚待本人執行
 
-[固定可貼Cloud Shell入口](deliveries/m1-oracle-deploy2-20261104/CLOUD_SHELL_COMMAND.md) · [來源／17項實測／完整限制](股票系統M1_v0_18/graph_core/oracle_deploy2_20261104/README.md)。工程d0f7a4804cb88829666ed74fc9c210d7da592973，真實create/launch成功後段、精確tag核對、未知結果不重送、恢復與只停自有VM已實作，不再是永久拒絕。17唯一mock／合成測試及固定公開包實際下載啟動／packed guest程式編譯通過，非真實Oracle部署驗收。
+[固定可貼Cloud Shell入口](deliveries/m1-oracle-deploy2-20261104/CLOUD_SHELL_COMMAND.md) · [來源／17項實測／完整限制](股票系統M1_v0_18/graph_core/oracle_deploy2_20261104/README.md)。工程505fa2d2971407e48170faa2d2422a9c35e9d955，真實create/launch成功後段、精確tag核對、未知結果不重送、恢復與只停自有VM已實作，不再是永久拒絕。17唯一mock／合成測試及固定公開包實際下載啟動／packed guest程式編譯通過，非真實Oracle部署驗收。
 
 修正缺is-accessible欄位就跳過全批問題：逐區隔實讀，真正錯誤維持未知不補零。費用證據分原生API與本人控制台PNG/JPEG/PDF觀察；後者需原件／SHA／時點／計畫綁定，不具自動OCR／來源簽章認證，任何不確定停止。FreeTier使用者已回報，Codex尚未直接核其帳戶；不以試用額度／零帳單／服務quota代AlwaysFree，apply重核完整快照／quota，再查非持久容量報告，通過才建獨立七類資源，A1不可用只試已核E2。
 
 原固定合成包、FM3／原owner8765／原Cloud、main、來源0.10／parents／策略／UNKNOWN與false/null保留。原Cloud新增工程與小型測試，不搬真實資料、不裝VPN、不重跑舊UI／全市場；512MiB保留。真實主機／guest健康／私人HTTPS／Android皆未驗。Tailscale本人同意／登入邊界明確停止，不代接受條款，不Funnel；先看CONSOLE_GUIDE，不猜網址。
 
 唯一使用者下一步是本人CloudShell貼固定開始指令；它只plan，證據原件只留本人私有目錄，不貼聊天。後續review/apply/status/stop命令自動顯示完整路徑；過期計畫須重新核讀，未知建立保留不重試，不能保證任意故障自動恢復。全帳持現與重新進場需求仍待策略驗證。以下歷史完整保留。
+
+0.2封版已核官方CLI選項，移除不支援retry-token並改合法VM網路參數；STARTED＋精確tag防盲目重送。另核A1配置4CPU／24GB與E2兩台上限，含STOPPED；月度額度仍本人核明。OCI失敗詳情只存本人私有紀錄，安全操作名可回報；不貼原JSON。0.1歷史保留，最新固定入口只用v02。
 
 ---
 

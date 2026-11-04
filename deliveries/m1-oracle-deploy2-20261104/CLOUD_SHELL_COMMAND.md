@@ -1,20 +1,20 @@
-# 固定唯讀開始指令
+# M-ORACLE-DEPLOY2 0.2 固定Cloud Shell入口
 
-本人登入Oracle控制台→開Cloud Shell→貼整段。不需要OCID／密碼貼聊天。第一步plan不建機；依提示review控制台證據後才apply。任何必要證據缺少就停止。
+Oracle本人已登入→Cloud Shell→貼下列完整一段。先校驗固定包，再只plan，不建資源。後續review/apply/status/stop完整命令由工具顯示，請勿自行縮短路徑。
 
-```bash
+```sh
 python3 - <<'PY'
 import hashlib,io,json,os,stat,subprocess,sys,urllib.request,zipfile
 from pathlib import Path
-SIZE=20800
-SHA='df23c9e09b072237b047fbe8e432c85b83ddd15b193aa88c56fca73174c9cd61'
-URL='https://raw.githubusercontent.com/blue1998-glitch/Twstockai/d0f7a4804cb88829666ed74fc9c210d7da592973/deliveries/m1-oracle-deploy2-20261104/Twstockai_ORACLE_DEPLOY2.pyz'
+SIZE=21390
+SHA='df37247e32d247a7ba7c5ee7dd000437f14bbfa5513f86e159165cd040002c7f'
+URL='https://raw.githubusercontent.com/blue1998-glitch/Twstockai/505fa2d2971407e48170faa2d2422a9c35e9d955/deliveries/m1-oracle-deploy2-20261104/Twstockai_ORACLE_DEPLOY2_v02.pyz'
 os.umask(0o077)
 root=Path.home()/'.local/share/twstockai-oracle-deploy2'
 if any(p.is_symlink() for p in (root,*root.parents)):sys.exit('停止：路徑不安全')
 root.mkdir(mode=0o700,parents=True,exist_ok=True)
 if stat.S_IMODE(root.stat().st_mode)&0o077:sys.exit('停止：目錄須只限本人')
-app=root/('tool-'+SHA+'.pyz');upload=Path.home()/'Twstockai_ORACLE_DEPLOY2.pyz'
+app=root/('tool-'+SHA+'.pyz');upload=Path.home()/'Twstockai_ORACLE_DEPLOY2_v02.pyz'
 if app.is_symlink() or upload.is_symlink():sys.exit('停止：連結不安全')
 class NoRedirect(urllib.request.HTTPRedirectHandler):
  def redirect_request(self,*a,**kw):return None
@@ -48,4 +48,4 @@ raise SystemExit(subprocess.run([sys.executable,str(app),'plan']).returncode)
 PY
 ```
 
-原件與所有原始回應只留本人CloudShell。review需原始PNG/JPEG/PDF與本人確實核讀，不能以合成／文字勾選替代；若沒有完整免費證據，不要apply。工具不自動認證圖片語義。詳見工程CONSOLE_GUIDE。
+只有本人的帳戶API＋控制台五類原件都核明才能apply；任何UNKNOWN停。Tailscale同意／登入、guest健康與Android尚未驗。不要貼帳戶JSON、OCID、IP、密碼或登入連結。
