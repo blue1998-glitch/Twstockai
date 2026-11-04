@@ -1,0 +1,202 @@
+{
+  "android_device": "NOT_TESTED_NEW_BUILD",
+  "daily_checks": [
+    {
+      "date": "2026-01-07",
+      "settled_cash": "1000",
+      "status": "待交割",
+      "unsettled": "235.76",
+      "viewport": "portrait"
+    },
+    {
+      "date": "2026-01-09",
+      "settled_cash": "1235.76",
+      "status": "已全現金",
+      "unsettled": "0",
+      "viewport": "portrait"
+    },
+    {
+      "date": "2026-01-07",
+      "settled_cash": "1000",
+      "status": "待交割",
+      "unsettled": "235.76",
+      "viewport": "landscape"
+    },
+    {
+      "date": "2026-01-09",
+      "settled_cash": "1235.76",
+      "status": "已全現金",
+      "unsettled": "0",
+      "viewport": "landscape"
+    },
+    {
+      "date": "2026-01-07",
+      "settled_cash": "1000",
+      "status": "待交割",
+      "unsettled": "235.76",
+      "viewport": "desktop"
+    },
+    {
+      "date": "2026-01-09",
+      "settled_cash": "1235.76",
+      "status": "已全現金",
+      "unsettled": "0",
+      "viewport": "desktop"
+    }
+  ],
+  "downloads": [
+    {
+      "bytes": 99804,
+      "complete_values_equal": true,
+      "sha256": "d33c93cba98288d16e421c8b53a917cc6924b831ec29b560c9567e1f77a6c09d",
+      "viewport": "portrait"
+    },
+    {
+      "bytes": 99804,
+      "complete_values_equal": true,
+      "sha256": "d33c93cba98288d16e421c8b53a917cc6924b831ec29b560c9567e1f77a6c09d",
+      "viewport": "landscape"
+    },
+    {
+      "bytes": 99804,
+      "complete_values_equal": true,
+      "sha256": "d33c93cba98288d16e421c8b53a917cc6924b831ec29b560c9567e1f77a6c09d",
+      "viewport": "desktop"
+    }
+  ],
+  "errors": [],
+  "file_scheme_tested": false,
+  "groups": [
+    {
+      "action": "hold",
+      "status": "PASS",
+      "viewport": "portrait"
+    },
+    {
+      "action": "reduce",
+      "status": "PASS",
+      "viewport": "portrait"
+    },
+    {
+      "action": "partial",
+      "status": "PASS",
+      "viewport": "portrait"
+    },
+    {
+      "action": "cash",
+      "status": "PASS",
+      "viewport": "portrait"
+    },
+    {
+      "action": "hold",
+      "status": "PASS",
+      "viewport": "landscape"
+    },
+    {
+      "action": "reduce",
+      "status": "PASS",
+      "viewport": "landscape"
+    },
+    {
+      "action": "partial",
+      "status": "PASS",
+      "viewport": "landscape"
+    },
+    {
+      "action": "cash",
+      "status": "PASS",
+      "viewport": "landscape"
+    },
+    {
+      "action": "hold",
+      "status": "PASS",
+      "viewport": "desktop"
+    },
+    {
+      "action": "reduce",
+      "status": "PASS",
+      "viewport": "desktop"
+    },
+    {
+      "action": "partial",
+      "status": "PASS",
+      "viewport": "desktop"
+    },
+    {
+      "action": "cash",
+      "status": "PASS",
+      "viewport": "desktop"
+    }
+  ],
+  "page_loads": [
+    {
+      "external_requests": 0,
+      "html_bytes": 69546,
+      "js_errors": 0,
+      "js_heap_bytes": 4040052,
+      "seconds": 0.143,
+      "viewport": "portrait"
+    },
+    {
+      "external_requests": 0,
+      "html_bytes": 69546,
+      "js_errors": 0,
+      "js_heap_bytes": 3989228,
+      "seconds": 0.089,
+      "viewport": "landscape"
+    },
+    {
+      "external_requests": 0,
+      "html_bytes": 69546,
+      "js_errors": 0,
+      "js_heap_bytes": 3907580,
+      "seconds": 0.094,
+      "viewport": "desktop"
+    }
+  ],
+  "schema": "cap1-cash-browser/0.2",
+  "screenshots": [
+    {
+      "path": "validation-initial/portrait-hold.png",
+      "sha256": "44a8560bac1019f049177e26bf172a35c7923650c5b5b5303e9947628174ff53"
+    },
+    {
+      "path": "validation-initial/portrait-reduce.png",
+      "sha256": "0bd1e5f37f5917b0fc4c8336af3f90e91593439b134378593de5b339acd52747"
+    },
+    {
+      "path": "validation-initial/portrait-partial.png",
+      "sha256": "fa0dedc53d61911a891251b49f4d3be7330bf98ae80a045834f2766f11fc36c2"
+    },
+    {
+      "path": "validation-initial/portrait-cash.png",
+      "sha256": "df897bbf48ce3f35091f0fd615d64fc000e61e68264a3ee991bf191236f8f4c0"
+    },
+    {
+      "path": "validation-initial/portrait-cash-2026-01-07.png",
+      "sha256": "2c358c59ed9271ec07e04dd09546e21bd224376fc3b33a6b4157ecac7a0ffe53"
+    },
+    {
+      "path": "validation-initial/portrait-cash-2026-01-09.png",
+      "sha256": "bdcfbb4dd7a8a2a5d59aa42c01c8b7efc80f5694305f77ae60a8157dd9f24fe4"
+    },
+    {
+      "path": "validation-initial/landscape-hold.png",
+      "sha256": "f04aff7daa0c556fe5c608391f2419d5ff4235cb6ace4416728576affbd7ecf9"
+    },
+    {
+      "path": "validation-initial/landscape-cash.png",
+      "sha256": "183bcc59c2095fb1b9f01a22aab251e17ab9aa534ca6a1e60e7363b373a25ca6"
+    },
+    {
+      "path": "validation-initial/desktop-hold.png",
+      "sha256": "5caff6654ea7665485e27d5f948a9d2bfd40ae1a004f340e88648d3d7cc32b44"
+    },
+    {
+      "path": "validation-initial/desktop-cash.png",
+      "sha256": "545ea6812edb1d3cc9f9f22edf7ce30f93c50a5d15fb86a0b7d7983e429195a5"
+    }
+  ],
+  "status": "PASS",
+  "synthetic": true
+}
