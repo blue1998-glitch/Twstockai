@@ -1,0 +1,24 @@
+{
+  "synthetic_cli_parser_not_real_account": true,
+  "actual_argv": [
+    "oci",
+    "iam",
+    "compartment",
+    "list",
+    "--compartment-id",
+    "ocid1.tenancy.oc1..SYNTHETIC",
+    "--compartment-id-in-subtree",
+    "--access-level",
+    "ANY",
+    "--all",
+    "--region",
+    "ap-tokyo-1",
+    "--output",
+    "json",
+    "--max-retries",
+    "0"
+  ],
+  "actual_result": "OCI_READ_FAILED",
+  "expected": "Explicit boolean value after --compartment-id-in-subtree",
+  "oracle_mutations": 0
+}

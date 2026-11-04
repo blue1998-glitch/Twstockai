@@ -6,7 +6,7 @@ Never present mock proof as a real Always Free deployment authorization.
 import argparse,configparser,contextlib,datetime,fcntl,hashlib,hmac,json,os,re,secrets,shutil,stat,subprocess,sys,time,unicodedata,urllib.request,urllib.error,zipfile,io
 from pathlib import Path
 
-VERSION='oracle-shell-safety/0.1'
+VERSION='oracle-shell-safety/0.2'
 PILOT_COMMIT='5789d9dafad8fe06ceb0341eb73f7b1004e09b51'
 PILOT_BYTES=345616
 PILOT_SHA='0c48c1d92a94cfcfc1a88f52c22c97cda0d9f0797a05d0367a32ca1fc4a6e750'
@@ -190,8 +190,12 @@ class OCI:
         args=[self.executable,*READ_OPS[op]]
         for k,v in params.items():
             if not re.fullmatch(r'[a-z][a-z-]+',k):raise Refused('OCI_ARGUMENT')
+            if k=='all' and v is False:continue
+            if k=='all' and v is not True:raise Refused('OCI_ARGUMENT')
             args.append('--'+k)
-            if v is not True:
+            if type(v) is bool and k!='all':
+                args.append('true' if v else 'false')
+            elif v is not True:
                 text=str(v)
                 if text.startswith('-') or any(ord(c)<32 for c in text):raise Refused('OCI_ARGUMENT')
                 args.append(text)
@@ -203,6 +207,7 @@ class OCI:
             # Never echo arbitrary CLI stderr/argv/account identifiers or auth tokens.
             error=r.stderr.decode(errors='replace') if isinstance(r.stderr,bytes) else str(r.stderr)
             code='OCI_PERMISSION_DENIED' if re.search(r'NotAuthorized|Forbidden|\b403\b|\b401\b',error,re.I) else 'OCI_READ_FAILED'
+            if re.search(r'requires an argument|no such option|no such command|missing option|invalid value for',error,re.I):code='OCI_CLI_ARGUMENT_ERROR'
             raise Refused(code)
         if len(r.stdout)>2*1024*1024:raise Refused('OCI_RESPONSE_BOUND')
         try:value=strict_object(r.stdout)
@@ -359,6 +364,8 @@ def report(value):
     print('Twstockai｜'+('停止' if blocked else '檢查完成，尚未部署')+'｜本工具資源建立 0')
     if counts:print('唯讀盤點：Compute '+str(counts.get('instances') if counts.get('instances') is not None else '未知')+'；Boot '+str(counts.get('boot_volumes') if counts.get('boot_volumes') is not None else '未知')+'；Block '+str(counts.get('block_volumes') if counts.get('block_volumes') is not None else '未知'))
     for key in blocked[:7]:print('• '+LABELS[key]+'：'+{'PASS':'已核','FAIL':'不符','UNKNOWN':'尚未核實'}.get(gates.get(key,{}).get('status'),'尚未核實'))
+    safe_errors=sorted({(e.get('operation'),e.get('code')) for e in value.get('errors',[]) if e.get('operation') in READ_OPS and e.get('code') in {'OCI_CLI_ARGUMENT_ERROR','OCI_PERMISSION_DENIED','OCI_READ_FAILED','OCI_SCHEMA','OCI_INCOMPLETE_PAGE','OCI_READ_TRANSPORT_OR_TIMEOUT'}})
+    for op,code in safe_errors[:5]:print('查詢診斷：'+op+'／'+code)
     if len(blocked)>7:print('• 其他必要條件仍未知；完整明細僅保存在本人Cloud Shell私有目錄')
     print('私人HTTPS未建立；Android實機未驗。不要貼出私有JSON／帳戶識別或憑證。')
     return 2 if blocked else 0

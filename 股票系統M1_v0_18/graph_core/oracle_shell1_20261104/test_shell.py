@@ -133,4 +133,20 @@ class ShellTests(unittest.TestCase):
             r=subprocess.run([sys.executable,str(Path(m.__file__).resolve()),cmd],env=env,capture_output=True)
             self.assertIn('資源建立 0'.encode() if cmd=='status' else '沒有刪除'.encode(),r.stdout);self.assertNotIn(b'ocid1.',r.stdout+r.stderr)
 
+    def test_cli_boolean_value_and_flag_have_distinct_argv(self):
+        seen=[]
+        def parser(args,**kw):
+            seen.append(args);i=args.index('--compartment-id-in-subtree')
+            bad=i+1==len(args) or args[i+1] not in ('true','false')
+            return subprocess.CompletedProcess(args,2 if bad else 0,b'' if bad else b'{"data":[]}',b"Option requires an argument" if bad else b'')
+        client=m.OCI(CTX,runner=parser,executable='oci')
+        for value in (True,False):
+            self.assertEqual(client.read('compartments',{'compartment-id':CTX['tenancy'],'compartment-id-in-subtree':value,'access-level':'ANY','all':True}),[])
+            argv=seen[-1];self.assertEqual(argv[argv.index('--compartment-id-in-subtree')+1],str(value).lower());self.assertEqual(argv[argv.index('--all')+1],'--region')
+        client.read('compartments',{'compartment-id-in-subtree':False,'all':False});self.assertNotIn('--all',seen[-1])
+    def test_cli_argument_error_is_distinct_and_does_not_leak_stderr(self):
+        def runner(args,**kw):return subprocess.CompletedProcess(args,2,b'',b"Error: Option requires an argument. token=SECRET ocid1.tenancy.PRIVATE")
+        client=m.OCI(CTX,runner=runner,executable='oci')
+        with self.assertRaisesRegex(m.Refused,'^OCI_CLI_ARGUMENT_ERROR$'):client.read('compartments',{'compartment-id':CTX['tenancy']})
+
 if __name__=='__main__':unittest.main(verbosity=2)

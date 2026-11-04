@@ -1,9 +1,10 @@
 """Render the ONE concrete pinned command after the source package commit exists."""
 import json,re
 
-def render(commit,release):
+def render(commit,release,delivery="m1-oracle-shell1-20261104"):
+    if not re.fullmatch(r"m1-oracle-shell1(?:-fix1)?-20261104",delivery):raise ValueError("Approved delivery path required")
     if not re.fullmatch('[a-f0-9]{40}',commit):raise ValueError('Full fixed release commit required')
-    url='https://raw.githubusercontent.com/blue1998-glitch/Twstockai/'+commit+'/deliveries/m1-oracle-shell1-20261104/Twstockai_ORACLE_SHELL1.pyz'
+    url='https://raw.githubusercontent.com/blue1998-glitch/Twstockai/'+commit+'/deliveries/'+delivery+'/Twstockai_ORACLE_SHELL1.pyz'
     code="""import hashlib,io,json,os,stat,subprocess,sys,urllib.request,zipfile
 from pathlib import Path
 URL=@@URL@@
