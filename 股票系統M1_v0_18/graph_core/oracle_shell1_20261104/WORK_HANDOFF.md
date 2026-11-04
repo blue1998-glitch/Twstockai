@@ -2,7 +2,7 @@
 
 接續blue1998-glitch/Twstockai，dev/m1-v018-chart-annotations，由原唯一Codex／Cloud／/workspace/Twstockai及原工程鎖執行；先核即時runtime／遠端及全部祖先、FM3可讀、512MiB餘量，讀根最新AGENTS／CONTINUE／PROJECT_VISION與本README／summary／FAILURES、delivery README／release及固定讀回。不開代理／第二工作／競爭分支，不改main、reset或強推。
 
-本版已實作單一stdlib可執行zipapp，inspect/plan/status/stop、apply安全拒絕；20新mock／ZIP／HMAC／隱私方法PASS。成功建機後段及全配置零計費證據讀取器未完成，不能當全功能部署工程完成，不能只叫使用者按apply。所有模擬與原Cloud隔離HOME執行都非真正Cloud Shell帳戶資格／Oracle／HTTPS／Android驗收。固定指令與封包SHA以delivery最新固定入口為準，不要求手填OCID、密碼、OTP或私鑰。
+本版已實作單一stdlib可執行zipapp，inspect/plan/status/stop、apply安全拒絕；20新mock／ZIP／HMAC／隱私方法PASS。成功建機後段及全配置零計費證據讀取器未完成，不能當全功能部署工程完成，不能只叫使用者按apply。所有模擬與原Cloud獨立私有工具目錄執行都非真正Cloud Shell帳戶資格／Oracle／HTTPS／Android驗收。固定指令與封包SHA以delivery最新固定入口為準，不要求手填OCID、密碼、OTP或私鑰。
 
 唯一使用者操作是本人登入Oracle控制台，開Cloud Shell貼已校驗指令；其完整帳戶原始回應與計畫只保留私有0700/0600目錄，聊天／GitHub只看安全中文摘要。Work已研究登入阻礙，不再派回重試兩控制台入口。Cloud Shell不是長期股票主機，不在原Cloud安裝OCI登入、VPN或重啟原Cloud。
 

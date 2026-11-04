@@ -30,4 +30,4 @@ BootVolume／Image／Vcn模型沒有同等完整billing-type欄位；本版**尚
 
 固定原pilot ZIP仍345616B／SHA256 `0c48c1d92a94cfcfc1a88f52c22c97cda0d9f0797a05d0367a32ca1fc4a6e750`，原26成員完整核對，不改bytes、不重建UI。原Cloud／FM3／owner8765／view-head、來源0.10／parents、策略與main不動。未搬行情、部署、付費、啟排程、交易、VPN或代理。
 
-最終固定下載指令與實際GitHub下載／校驗／啟動檢查將在交付README及bootstrap驗證中固定；在原Cloud隔離HOME驗到缺登入安全停止，不當真正Cloud Shell帳戶驗收。成功建機功能仍屬**未完成**，不是只差使用者按apply。下一步先用本人Cloud Shell跑唯讀入口取得安全摘要，不提供憑證或完整私有清單。
+最終固定下載指令與實際GitHub下載／校驗／啟動檢查將在交付README及bootstrap驗證中固定；在原Cloud獨立私有工具目錄驗到缺登入安全停止，不當真正Cloud Shell帳戶驗收。成功建機功能仍屬**未完成**，不是只差使用者按apply。下一步先用本人Cloud Shell跑唯讀入口取得安全摘要，不提供憑證或完整私有清單。

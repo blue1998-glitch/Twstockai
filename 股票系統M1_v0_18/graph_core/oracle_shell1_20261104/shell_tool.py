@@ -358,7 +358,7 @@ def report(value):
     print('本版可唯讀檢查與產生阻塞計畫；建機／私人HTTPS後段尚未實作。')
     print('Twstockai｜'+('停止' if blocked else '檢查完成，尚未部署')+'｜本工具資源建立 0')
     if counts:print('唯讀盤點：Compute '+str(counts.get('instances') if counts.get('instances') is not None else '未知')+'；Boot '+str(counts.get('boot_volumes') if counts.get('boot_volumes') is not None else '未知')+'；Block '+str(counts.get('block_volumes') if counts.get('block_volumes') is not None else '未知'))
-    for key in blocked[:7]:print('• '+LABELS[key]+'：'+gates.get(key,{}).get('status','UNKNOWN'))
+    for key in blocked[:7]:print('• '+LABELS[key]+'：'+{'PASS':'已核','FAIL':'不符','UNKNOWN':'尚未核實'}.get(gates.get(key,{}).get('status'),'尚未核實'))
     if len(blocked)>7:print('• 其他必要條件仍未知；完整明細僅保存在本人Cloud Shell私有目錄')
     print('私人HTTPS未建立；Android實機未驗。不要貼出私有JSON／帳戶識別或憑證。')
     return 2 if blocked else 0

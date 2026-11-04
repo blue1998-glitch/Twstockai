@@ -14,7 +14,7 @@ root=Path.home()/'.local/share/twstockai-oracle-shell1'
 if any(p.is_symlink() for p in (root,*root.parents)):sys.exit('停止：私有路徑含連結；建立0')
 root.mkdir(mode=0o700,parents=True,exist_ok=True)
 if root.stat().st_uid!=os.getuid() or stat.S_IMODE(root.stat().st_mode)&0o077:sys.exit('停止：目錄權限不安全；建立0')
-app=root/'Twstockai_ORACLE_SHELL1.pyz'
+app=root/('tool-'+SHA+'.pyz')
 upload=Path.home()/'Twstockai_ORACLE_SHELL1.pyz'
 if app.is_symlink() or upload.is_symlink():sys.exit('停止：檔案連結不安全；建立0')
 class NoRedirect(urllib.request.HTTPRedirectHandler):
@@ -43,7 +43,7 @@ except Exception:sys.exit('停止：工具封包不安全；未執行，建立0'
 if not app.exists():
  fd=os.open(app,os.O_WRONLY|os.O_CREAT|os.O_EXCL,0o600)
  with os.fdopen(fd,'wb') as f:f.write(raw)
-print('固定工具已校驗；現在只作唯讀檢查，不會建立資源。')
+print('固定工具已校驗；現在只作唯讀檢查，不會建立資源。',flush=True)
 raise SystemExit(subprocess.run([sys.executable,str(app),'inspect']).returncode)
 """
     return code.replace('@@URL@@',repr(url)).replace('@@SIZE@@',str(release['bytes'])).replace('@@SHA@@',repr(release['sha256']))
