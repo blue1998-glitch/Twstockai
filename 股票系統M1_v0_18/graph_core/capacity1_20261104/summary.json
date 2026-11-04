@@ -1,0 +1,195 @@
+{
+  "base_commit": "5797bf9b6d2012b2b5e73dbdfae8f10073279ffa",
+  "boundary_checks": {
+    "core_calls": 0,
+    "local_source_fingerprint_files_checked": 6,
+    "new_provider_requests": 0,
+    "old_tests_counted_as_current": false,
+    "product_tests_run": 0
+  },
+  "capacity": {
+    "above_reserve_bytes": 150822912,
+    "available_bytes": 687693824,
+    "available_if_added_512MiB": 1224564736,
+    "existing_plan_required_free_bytes": 1116226209,
+    "extra_512MiB_bytes": 536870912,
+    "free_capacity_added_bytes": 0,
+    "headroom_above_existing_plan_if_added_512MiB": 108338527,
+    "minimum_free_bytes": 536870912,
+    "plan_is_extrapolation_and_budget_not_actual": true,
+    "plan_shortfall_bytes": 428532385,
+    "resize_attempts": 0,
+    "temporary_memory_space_used_as_persistent": false
+  },
+  "cloud_id_matches_governance": true,
+  "current_uid": 1000,
+  "effective_capabilities_hex": "0000000000000000",
+  "engineering_lock": "HELD_BY_ORIGINAL_UNIFIED_RUN_ONLY",
+  "environment_id": "ccarenv_b64_Y2NhcmVudl9kMDg5NTNmYjExNjQ4MTkxYmQ3M2E1OGE0MDBiYzc1Yw",
+  "execution": {
+    "actual_resize": false,
+    "core_calls": 0,
+    "deletions": false,
+    "formal_root_writes": 0,
+    "last_valid_workbench_date": "2026-11-02",
+    "new_charts": 0,
+    "new_day_applied_stocks": 0,
+    "new_day_workspace_date": null,
+    "phase_A": "BLOCKED_PLATFORM_RESOURCE",
+    "phase_B": "NOT_RUN_PHASE_A_NOT_PASSED",
+    "previous_test_counts_not_reused": true,
+    "private_migration": false,
+    "producer_runs": 0,
+    "reboot": false,
+    "tests_run": 0
+  },
+  "exposed_platform_disk_resize_tool": false,
+  "minimum_remedy": {
+    "additional_agent_permission_alone_sufficient": false,
+    "conditional_major_changes": "Any fee, restart, migration or new deployment requires separate explicit approval; none performed.",
+    "existing_user_free_low_risk_resize_authorization_already_present": true,
+    "free_availability": "UNKNOWN",
+    "persistence_guarantee": "UNKNOWN_PLATFORM_EVIDENCE_REQUIRED",
+    "pricing": "UNKNOWN_NO_STORAGE_SERVICE_OR_QUOTE_EXPOSED",
+    "request": "Platform operator must expose/provide at least 512MiB additional allocatable private capacity on this same Cloud without restart or source migration; then rerun capacity gate before DAY2.",
+    "requires_new_Codex": false,
+    "restartless_support": "UNKNOWN",
+    "risk": "Original FM3 independent backup and restart persistence remain UNKNOWN. Do not approve a destructive/restarting alternative implicitly."
+  },
+  "mounts_summary": {
+    "dev_shm": {
+      "eligible_for_persistent_batch": false,
+      "type": "tmpfs"
+    },
+    "tmp": {
+      "eligible_for_persistent_batch": false,
+      "type": "tmpfs"
+    },
+    "workspace": {
+      "separate_persistent_volume_exposed": false,
+      "type": "overlay"
+    }
+  },
+  "observed_at": "2026-11-04T04:17:22.751286+00:00",
+  "platform_claim_limit": "No resize interface exposed to this conversation and no accessible underlying block device/admin capability. This is not proof that platform administrators cannot expand storage.",
+  "preservation": {
+    "existing_untracked": 880,
+    "lite_view_head_sha256": "f6947a3d044484b1910c848325377ed5b081a04dcb6307763a0484fb14233f21",
+    "metadata_paths": 90377,
+    "new_full_SHA_audit": false,
+    "original_heads": {
+      "current-finmind-run.json": {
+        "exists": false,
+        "sha256": null
+      },
+      "current-increment-run.json": {
+        "exists": true,
+        "sha256": "fb20c0605533c7945e661cae5563ced53c36a7c7839e35388a60bbd2048244fe"
+      },
+      "current-run.json": {
+        "exists": false,
+        "sha256": null
+      },
+      "fm3-continuation.json": {
+        "exists": true,
+        "sha256": "3ef69678c6c3a65723ba4429e16c5bbc086eb1d8ff1903d97c7ab3579a10b245"
+      }
+    },
+    "previous_full_SHA_reused": true
+  },
+  "resize_admin_commands": {
+    "growpart": null,
+    "lvs": null,
+    "resize2fs": null,
+    "sudo": null,
+    "tune2fs": null,
+    "vgs": null,
+    "xfs_growfs": null
+  },
+  "runtime_capabilities": [],
+  "runtime_phase": "running",
+  "runtime_spec_revision": "9",
+  "same_task_processes": [],
+  "schema": "m-capacity1-observation/0.1",
+  "scope_of_process_check": "Known updater module arguments only plus held cooperative engineering lease; not a guarantee about other unobserved environments.",
+  "sources": {
+    "new_GETs": 0,
+    "prior_accepted_source_bars": 1955,
+    "prior_qualified_date": "2026-11-03",
+    "prior_reference_total": 1986,
+    "prior_source_refusals": 31,
+    "qualification_rerun": false,
+    "source_checks": [
+      {
+        "bytes": 1332402,
+        "matches_saved_bytes_and_SHA": true,
+        "name": "twse-universe.json",
+        "sha256": "60c47c6c760b8ab256233af9ceaacc144f82faf428723952de2c852b0a1f1f39"
+      },
+      {
+        "bytes": 1079373,
+        "matches_saved_bytes_and_SHA": true,
+        "name": "tpex-universe.json",
+        "sha256": "537d241971ac5038fb710ac5422e3939354be6c34e86c1a685dc1e0093cf9587"
+      },
+      {
+        "bytes": 322497,
+        "matches_saved_bytes_and_SHA": true,
+        "name": "twse-daily.json",
+        "sha256": "73a0c6adeaa9ddd2e284a7251508d8fd9d6d7d98dd6feaf811d18e325c60a82c"
+      },
+      {
+        "bytes": 5295907,
+        "matches_saved_bytes_and_SHA": true,
+        "name": "tpex-daily.json",
+        "sha256": "120f702cec81655cf5820e55c76eac84db7a4424d0a334e9b91c97987859fc79"
+      },
+      {
+        "bytes": 9929140,
+        "matches_saved_bytes_and_SHA": true,
+        "name": "TWSE-classification.html",
+        "sha256": "6fe20259ad0d86b87babd73c35f325eaeb8ce0d51b20a96936e35edc08e20f97"
+      },
+      {
+        "bytes": 3294450,
+        "matches_saved_bytes_and_SHA": true,
+        "name": "TPEX-classification.html",
+        "sha256": "d155fb6ee5a839ed811ba9b8f9b53195727d873cfefa18b401f97ddefb60183e"
+      }
+    ]
+  },
+  "status": "BLOCKED_NO_EXPOSED_SAFE_PERSISTENT_EXPANSION",
+  "storage": [
+    {
+      "available_bytes": 687693824,
+      "device": 27,
+      "free_blocks_bytes": 2422456320,
+      "path": "/workspace/twstockai-local-data/fm3_20261101/runtime",
+      "total_bytes": 33770192896,
+      "unavailable_to_current_process_bytes": 1734762496,
+      "used_bytes": 31347736576
+    },
+    {
+      "available_bytes": 17871626240,
+      "device": 34,
+      "free_blocks_bytes": 17871626240,
+      "path": "/tmp",
+      "total_bytes": 17871872000,
+      "unavailable_to_current_process_bytes": 0,
+      "used_bytes": 245760
+    },
+    {
+      "available_bytes": 17871872000,
+      "device": 26,
+      "free_blocks_bytes": 17871872000,
+      "path": "/dev/shm",
+      "total_bytes": 17871872000,
+      "unavailable_to_current_process_bytes": 0,
+      "used_bytes": 0
+    }
+  ],
+  "visible_block_nodes": {
+    "/dev/pmem0": false,
+    "/dev/vda": false
+  }
+}
