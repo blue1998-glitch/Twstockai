@@ -14,9 +14,8 @@ def now():return datetime.datetime.now(datetime.timezone.utc)
 # Authentication, pagination and HTTP remain in the installed official CLI.
 RENDER_BRIDGE="""import sys,json
 from oci_cli import cli_util
-from oci.util import to_dict
 def capture(data,headers,ctx,display_all_headers=False,nest_data_in_data_attribute=True):
- print(json.dumps({'data':to_dict(data),'capture':'OCI_CLI_RENDER_BOUNDARY'}))
+ print(json.dumps({'data':cli_util.to_dict(data),'capture':'OCI_CLI_RENDER_BOUNDARY'}))
 cli_util.render=capture
 from oci_cli.cli import cli
 cli()

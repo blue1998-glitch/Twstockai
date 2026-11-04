@@ -145,7 +145,7 @@ class Tests(unittest.TestCase):
  def test_official_render_empty_list_preserved_before_truthiness(self):
   import types,sys,io,contextlib
   util=types.ModuleType('oci_cli.cli_util');client=types.ModuleType('oci_cli.cli');package=types.ModuleType('oci_cli');package.cli_util=util
-  sdk=types.ModuleType('oci.util');sdk.to_dict=lambda v:v
+  sdk=types.ModuleType('oci.util');sdk.to_dict=lambda v:(_ for _ in ()).throw(AssertionError('SDK conversion must not replace native CLI keys'));util.to_dict=lambda v:v
   values=[[],{},None,[{'id':'SYNTHETIC'}]];out=io.StringIO()
   def run():
    for value in values:util.render(value,{},object())
