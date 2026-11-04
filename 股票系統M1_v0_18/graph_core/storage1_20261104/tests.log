@@ -1,0 +1,28 @@
+# First 13 methods; no historical suites.
+test_01_exact_precision_and_native_shares (graph_core.storage1_20261104.test_facts.Controls.test_01_exact_precision_and_native_shares) ... ok
+test_02_missing_quote_not_zero (graph_core.storage1_20261104.test_facts.Controls.test_02_missing_quote_not_zero) ... ok
+test_03_zero_volume_keeps_raw_and_refuses (graph_core.storage1_20261104.test_facts.Controls.test_03_zero_volume_keeps_raw_and_refuses) ... ok
+test_04_bad_ohlc_not_a_usable_bar (graph_core.storage1_20261104.test_facts.Controls.test_04_bad_ohlc_not_a_usable_bar) ... ok
+test_05_stock_and_date_mismatch_refused (graph_core.storage1_20261104.test_facts.Controls.test_05_stock_and_date_mismatch_refused) ... ok
+test_06_nonordinary_identity_refused (graph_core.storage1_20261104.test_facts.Controls.test_06_nonordinary_identity_refused) ... ok
+test_07_isin_change_refused_and_formal_flags_stay_unknown (graph_core.storage1_20261104.test_facts.Controls.test_07_isin_change_refused_and_formal_flags_stay_unknown) ... ok
+test_08_reserve_and_total_budget_refuse_before_write (graph_core.storage1_20261104.test_facts.Controls.test_08_reserve_and_total_budget_refuse_before_write) ... ok
+test_09_whole_reference_has_exactly_one_terminal (graph_core.storage1_20261104.test_facts.RealReads.test_09_whole_reference_has_exactly_one_terminal) ... ok
+test_10_same_source_has_zero_writes_and_zero_core (graph_core.storage1_20261104.test_facts.RealReads.test_10_same_source_has_zero_writes_and_zero_core) ... ok
+test_11_tampered_cached_body_rejected_without_touching_file (graph_core.storage1_20261104.test_facts.RealReads.test_11_tampered_cached_body_rejected_without_touching_file) ... ok
+test_12_two_real_stocks_per_market_match_official_fields (graph_core.storage1_20261104.test_facts.RealReads.test_12_two_real_stocks_per_market_match_official_fields) ... ok
+test_13_original_html_and_source_heads_unchanged (graph_core.storage1_20261104.test_facts.RealReads.test_13_original_html_and_source_heads_unchanged) ... ok
+
+----------------------------------------------------------------------
+Ran 13 tests in 0.195s
+
+OK
+
+# Added 2 final IO methods; first 13 not rerun.
+test_14_full_same_source_entry_does_not_add_or_modify_artifacts (graph_core.storage1_20261104.test_final_io.FinalIO.test_14_full_same_source_entry_does_not_add_or_modify_artifacts) ... ok
+test_15_cached_route_status_matches_actual_final_view_pointer (graph_core.storage1_20261104.test_final_io.FinalIO.test_15_cached_route_status_matches_actual_final_view_pointer) ... ok
+
+----------------------------------------------------------------------
+Ran 2 tests in 0.083s
+
+OK

@@ -25,3 +25,9 @@ table{width:100%;table-layout:fixed;border-collapse:collapse;font-size:14px}td,t
 #chartWrap{height:calc(62vh + 60px);min-height:420px}#chart{height:100%;min-height:420px}#decisionSummary button{margin-top:7px}
 @media(max-width:450px){#chartWrap{height:calc(55vh + 60px);min-height:420px}}
 @media(orientation:landscape) and (max-height:500px){#chartWrap{height:420px;min-height:420px}}
+
+/* Daily quote mode over the same LITE search and owner shell. */
+#dailyQuotePanel{max-width:1100px;margin:auto;padding:12px}#dailyQuotePanel p{line-height:1.6}.quoteGrid{display:grid;grid-template-columns:repeat(auto-fit,minmax(min(100%,145px),1fr));gap:10px}.quoteGrid>div{padding:14px;border:1px solid #45627e;background:#142639;border-radius:12px}.quoteGrid small,.quoteGrid strong{display:block}.quoteGrid strong{font-size:21px;margin-top:7px}.quoteGrid small{color:#c0ccd9}#dailyQuotePanel a{min-height:44px;display:inline-flex;align-items:center;padding:8px;color:#f5d88b}#dailyQuotePanel details{margin-top:15px}
+
+/* A short landscape viewport needs a flowing top nav, not a price-covering bar. */
+@media(orientation:landscape) and (max-height:500px){body.daily-quotes #researchNav{position:static;margin:10px 0;padding:7px 0;background:transparent}body.daily-quotes{padding-bottom:16px}}
