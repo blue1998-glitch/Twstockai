@@ -1,0 +1,7 @@
+# M-ORACLE-DEPLOY2固定逐檔讀回
+
+固定工程505fa2d2971407e48170faa2d2422a9c35e9d955；入口5ca816cdf61508a006606a4c6a6ceef8279e167e。自基準de15c1fd9f84cae0c0510c123fb7fc44344f827c全部23個變更檔，以固定GitHub原bytes逐檔GET，相同長度／SHA／內容。詳JSON；收據不自指，下一收據提交只加入本MD/JSON。
+
+17唯一方法通過；原13、中間16及最終17不加總。初版mock未核官方CLI參數，已依原文修正並新增對照；未曾呼叫Oracle create。固定短入口亦已實際下載／校驗／執行，無Oracle身分安全停止exit2；不是使用者CloudShell／建機／guest健康／HTTPS／Android已驗。本人帳戶及原件語義仍需核明，Tailscale本人同意邊界不跨越。
+
+原合成ZIP345616B／SHA保持；原owner未登入401、FM3原90377路徑metadata沿有效全SHA驗收未變；880原untracked保持。原Cloud未重啟／部署／裝VPN或搬真實資料，最低512MiB保留。
