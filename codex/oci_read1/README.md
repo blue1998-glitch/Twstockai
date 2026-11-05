@@ -1,3 +1,9 @@
+# 最新正式OAuth授權版（2026-11-05）
+
+Repo Secret安全取捨已由Issue #2 comment6651585478正式批准，不重批。唯一有效入口[oauth_approved/README.md](oauth_approved/README.md)、[本人集中指南](oauth_approved/OWNER_ONCE.md)。條件式runner已實作並保存，當前阻礙是本人Free domain／WIF／pilot／最小IAM等帳戶資格UNKNOWN，仍未啟用／實讀。下方無密鑰工件與自管主機方案是歷史，不是目前下一步。
+
+---
+
 # M-OCI-READ1｜無密鑰工件已備妥，OCI身分隔離受阻
 
 **PARTIAL／BLOCKED_CREDENTIAL_ISOLATION。不是Oracle已連線，也不是官方API已拒絕。**

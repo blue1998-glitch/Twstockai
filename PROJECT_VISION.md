@@ -1,3 +1,21 @@
+# 2026-11-05 最新有效｜M-OCI-READ1 OAuth已正式批准，條件式runner已交；本人帳戶資格未知
+
+Issue #2 comment6651585478已全文核讀：使用者批准**專用最低權限OAuth confidential client credential存現有私人Repository Secrets**並接受workflow寫入者可能取Secret的風險，不重問同一授權。僅此受限OAuth路線，不能擴張長期OCI API key／付費／自管主機。最新入口[OAuth版工件／能力](codex/oci_read1/oauth_approved/README.md)、[本人一次UI指南](codex/oci_read1/oauth_approved/OWNER_ONCE.md)。下方舊「尚未批准Repo Secrets／自管主機方案」保留歷史，已由本節取代，勿再要求重批或執行舊步驟。
+
+已實作獨立READ1原生事件／canonical owner-App-REST／完整code與workflow pin／5分鐘固定兩欄命令／持久run-bound nonce與兩job、GitHub OIDC RS256與精確claims、官方JWT→OCI Control Plane RPST（不誤用OAuth access_token）、短效RAM RSA／5分鐘RPST、原SDK三個pilot List與有界拒絕／脫敏收據。Repo Secret只有最後credential step；授權／帳戶資格／nonce之前不提供Secret步驟，未知全部拒絕。這不是Secret僅限一個workflow的強制保護，私庫寫入者仍是信任根，不能冒Free私庫沒有的Environment approval／branch protection。
+
+私庫固定 **a192ed66b7b0c42624403daa089f30b9f50c3acd**：8新增檔exact bytes讀回，21既有blob全部不變；READ1 workflow已註冊active但variable／帳戶雙閘預設拒絕，**不是查詢已啟用**。原CTRL1四檔、probe、歷史read1/不動；native runs3／Issue留言4保持，Codex未發任何指令、未重跑PING／研究／舊套件。原PING真實run41976315386成功只沿用已核證據。
+
+17唯一新定向方法通過；初批15有2個問題（例外型別、YAML）已修復並保留紀錄，相關重跑不累加。真實原生READ1／GitHub JWT／OAuth-RPST／OCI API／ChatGPT Oracle讀回皆**未執行**；原Cloud未裝OCI SDK、GitHub尚未實測25項雜湊鎖定依賴安裝，不能把條件式程式或合成RSA／REST測試冒成連線。只有觀察到HTTP證據才稱實際回應，SDK／傳輸未知不補零，attempts與Oracle calls分列。
+
+官方文件已實核Free域第三方OAuth管理可用、Identity Propagation Trust總上限30、Free域不用meters；這不證本人剩餘額度／實際區域開放。本人domain type／region rollout／quota／獨立pilot／精確最小IAM／runtime client無管理角色仍UNKNOWN。**當前停止於BLOCKED_ACCOUNT_QUALIFICATION，Oracle NOT_CONNECTED／實讀0、交換0、Secret設定與讀值0、IAM與Oracle建資源0。** 不再以儲存風險未批准作阻礙，也不能把未知默認已合格。
+
+本人唯一集中操作見新OWNER_ONCE：先只查看既有Oracle資格；任何未知停，不輸入Secret或建client。全部成立才本人設定專用無管理角色client／受限trust、private account.json、Secret直接Oracle→GitHub及最後activation variable。account觀察明標OWNER_CONSOLE_OBSERVATION_NOT_ORACLE_API，與config同不可變workflow commit綁定且自動指紋；無需本人算hash／用終端／傳敏感截圖。真實claims／IAM映射缺失不能猜政策／改root／新建compartment，Repo Secret不得經AI／Issue／原Cloud中轉。
+
+保存後交總監；前提通過才由總監發新READ1命令、讀回真native run與官方結果／固定版本bot收據，最後才標OCI_READ_CONNECTED。本輪不代發驗收。原唯一Cloud／工程鎖／dev／512MiB、FM3 metadata90377／owner／880舊未追蹤／公開main／來源0.10與parents／金融引擎策略及全部UNKNOWN／false/null不動。不建VM／volume／compartment、不付費／搬FM3／部署／排程／交易。以下全部歷史保留。
+
+---
+
 # 2026-11-05 最新有效｜M-OCI-READ1安全工件已存，真實OCI身分隔離受阻
 
 最新正式續派Issue #2 comment6650853336已全文核讀。入口[READ1狀態／工件](codex/oci_read1/README.md)、[本人一次集中授權方案](codex/oci_read1/OWNER_SECURITY_BATCH.md)。M-OCI-CTRL1/0.2已由總監實際驗收：request6650802405→native run41976315386 completed/success→bot6650805038 PING_OK，accepted private6015e6b834fcd24cf13f0b43648d76fa4c443cac；原件已讀，GPT_TO_GITHUB_RUNNER_CONNECTED僅PING，不再重跑。下方舊「待總監PING」是歷史，不當目前狀態。

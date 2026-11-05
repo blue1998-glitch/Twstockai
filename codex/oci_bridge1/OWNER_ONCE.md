@@ -1,3 +1,9 @@
+# 停止舊API key／Environment Secrets步驟
+
+M-OCI-READ1最新正式批准只涵蓋受限OAuth client credential進私人Repository Secrets。請只用[新的本人一次指南](../oci_read1/oauth_approved/OWNER_ONCE.md)，不照本文件下方建立長期API私鑰、Environment或其他憑證；也不重批已批准的儲存取捨。先核本人帳戶條件，未知即停。以下完整保留歷史，不作目前操作。
+
+---
+
 # 2026-11-05 暫停舊環境／密鑰設定流程
 
 單次原生Actions探針已成功，證據見zero_budget_probe/README.md。GitHub Free私庫的原Environment Secrets方案已由使用者停止；不要執行下方舊環境／密鑰步驟，不要改存Repository Secrets。本輪結束，Oracle仍NOT_CONNECTED。以下只作歷史保存。

@@ -1,3 +1,9 @@
+# 最新正式OAuth路線（2026-11-05）
+
+正式授權已核，不重問Repo Secret安全取捨；唯一入口[READ1 OAuth版](../oci_read1/oauth_approved/README.md)及[本人一次UI設定](../oci_read1/oauth_approved/OWNER_ONCE.md)。只允許專用最低權限OAuth client secret，禁止舊API key／Environment Secrets／自管主機路線。帳戶前提UNKNOWN，條件式runner預設拒絕，Oracle仍NOT_CONNECTED；原adapter保持。下方全部是歷史。
+
+---
+
 # 2026-11-05 最新入口｜READ1身分隔離受阻
 
 PING控制通道已由總監原生驗收成功，不能稱舊橋接全未連線。真正OCI仍NOT_CONNECTED；最新[READ1無密鑰工件](../oci_read1/README.md)、[本人唯一安全方案](../oci_read1/OWNER_SECURITY_BATCH.md)。舊adapter保持原bytes，舊receiver／Environment Secrets／API key配置不啟用、不改存Repository Secrets，不重跑舊套件或PING。下方歷史不是目前執行指令。

@@ -1,3 +1,9 @@
+# 歷史方案已被正式OAuth續派取代
+
+Issue #2 comment6651585478已批准受限OAuth Repository Secret路線。不要申請或註冊下方self-hosted／Instance Principal方案，不重批儲存風險。只讀[最新本人一次指南](oauth_approved/OWNER_ONCE.md)。目前僅先核帳戶資格，未知即停、不輸入Secret。以下保留原歷史。
+
+---
+
 # M-OCI-READ1｜唯一安全方案與本人一次集中授權
 
 **此為待核方案，不是已啟用設定。不執行舊OWNER_ONCE／Environment Secrets步驟，也不改存Repository Secrets。**

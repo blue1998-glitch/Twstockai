@@ -1,0 +1,107 @@
+name: M-OCI-READ1 approved OAuth pilot read
+"on":
+  issue_comment:
+    types: [created]
+permissions:
+  contents: read
+concurrency:
+  group: twstockai-ctrl1-repository-1446437252
+  cancel-in-progress: false
+jobs:
+  authorize:
+    if: >-
+      vars.OCI_READ1_ENABLED == 'OWNER_REVIEWED_ONCE' &&
+      github.event_name == 'issue_comment' &&
+      github.event.action == 'created' &&
+      github.repository_id == '1446437252' &&
+      github.event.issue.number == 1 &&
+      github.event.sender.id == 319797247 &&
+      !github.event.issue.pull_request &&
+      contains(github.event.comment.body, 'oci-read/0.1')
+    runs-on: ubuntu-24.04
+    timeout-minutes: 2
+    permissions:
+      contents: read
+      actions: read
+      issues: write
+    outputs:
+      approved: ${{ steps.auth.outputs.approved }}
+    steps:
+      - id: auth
+        name: Verify native event, qualification and durable nonce without Secrets
+        env:
+          READ1_GITHUB_TOKEN: ${{ github.token }}
+          READ1_MODE: authorize
+        shell: bash
+        run: |
+          python3.12 - <<'READ1_BOOTSTRAP'
+          import base64,hashlib,json,os,subprocess,sys,tempfile,urllib.request
+          from pathlib import Path
+          BLOB='__BLOB__';SHA='__SHA__'
+          class NoRedirect(urllib.request.HTTPRedirectHandler):
+           def redirect_request(self,*a,**kw):return None
+          try:
+           req=urllib.request.Request('https://api.github.com/repos/blue1998-glitch/Twstockai-oci-bridge-private/git/blobs/'+BLOB,headers={'Authorization':'Bearer '+os.environ['READ1_GITHUB_TOKEN'],'Accept':'application/vnd.github+json','X-GitHub-Api-Version':'2022-11-28'})
+           with urllib.request.build_opener(NoRedirect()).open(req,timeout=15) as r:
+            if r.status!=200:raise ValueError()
+            obj=json.loads(r.read(524289))
+           if obj.get('encoding')!='base64':raise ValueError()
+           raw=base64.b64decode(obj['content'])
+           if len(raw)>262144 or hashlib.sha256(raw).hexdigest()!=SHA or hashlib.sha1(b'blob '+str(len(raw)).encode()+b'\0'+raw).hexdigest()!=BLOB:raise ValueError()
+           folder=Path(tempfile.mkdtemp(prefix='read1-',dir=os.environ['RUNNER_TEMP']));folder.chmod(0o700)
+           package=folder/'runner.pyz';package.write_bytes(raw);package.chmod(0o600)
+          except Exception:sys.exit('READ1_BOOTSTRAP_PIN_FAILED_NO_RETRY')
+          raise SystemExit(subprocess.run([sys.executable,str(package),os.environ['READ1_MODE']]).returncode)
+          READ1_BOOTSTRAP
+  read:
+    needs: authorize
+    if: needs.authorize.outputs.approved == 'true'
+    runs-on: ubuntu-24.04
+    timeout-minutes: 4
+    permissions:
+      contents: read
+      actions: read
+      issues: write
+      id-token: write
+    steps:
+      - id: prep
+        name: Reverify fixed source and claim this run nonce before secret step
+        env:
+          READ1_GITHUB_TOKEN: ${{ github.token }}
+          READ1_MODE: prepare
+        shell: bash
+        run: |
+          python3.12 - <<'READ1_BOOTSTRAP'
+          import base64,hashlib,json,os,subprocess,sys,tempfile,urllib.request
+          from pathlib import Path
+          BLOB='__BLOB__';SHA='__SHA__'
+          class NoRedirect(urllib.request.HTTPRedirectHandler):
+           def redirect_request(self,*a,**kw):return None
+          try:
+           req=urllib.request.Request('https://api.github.com/repos/blue1998-glitch/Twstockai-oci-bridge-private/git/blobs/'+BLOB,headers={'Authorization':'Bearer '+os.environ['READ1_GITHUB_TOKEN'],'Accept':'application/vnd.github+json','X-GitHub-Api-Version':'2022-11-28'})
+           with urllib.request.build_opener(NoRedirect()).open(req,timeout=15) as r:
+            if r.status!=200:raise ValueError()
+            obj=json.loads(r.read(524289))
+           if obj.get('encoding')!='base64':raise ValueError()
+           raw=base64.b64decode(obj['content'])
+           if len(raw)>262144 or hashlib.sha256(raw).hexdigest()!=SHA or hashlib.sha1(b'blob '+str(len(raw)).encode()+b'\0'+raw).hexdigest()!=BLOB:raise ValueError()
+           folder=Path(tempfile.mkdtemp(prefix='read1-',dir=os.environ['RUNNER_TEMP']));folder.chmod(0o700)
+           package=folder/'runner.pyz';package.write_bytes(raw);package.chmod(0o600)
+          except Exception:sys.exit('READ1_BOOTSTRAP_PIN_FAILED_NO_RETRY')
+          raise SystemExit(subprocess.run([sys.executable,str(package),os.environ['READ1_MODE']]).returncode)
+          READ1_BOOTSTRAP
+      - name: Install exact hashed dependencies without credentials
+        if: steps.prep.outputs.ready == 'true'
+        env:
+          READ1_REQUIREMENTS: ${{ steps.prep.outputs.requirements_path }}
+        shell: bash
+        run: |
+          python3.12 -m pip install --disable-pip-version-check --no-cache-dir --only-binary=:all: --require-hashes -r "$READ1_REQUIREMENTS" --target "$RUNNER_TEMP/read1-site"
+      - name: Exchange short-lived OIDC for RPST and list only existing pilot
+        if: steps.prep.outputs.ready == 'true'
+        env:
+          READ1_GITHUB_TOKEN: ${{ github.token }}
+          OCI_READ1_CLIENT_SECRET: ${{ secrets.OCI_READ1_CLIENT_SECRET }}
+          READ1_PACKAGE: ${{ steps.prep.outputs.package_path }}
+        shell: bash
+        run: PYTHONPATH="$RUNNER_TEMP/read1-site" python3.12 "$READ1_PACKAGE" read
