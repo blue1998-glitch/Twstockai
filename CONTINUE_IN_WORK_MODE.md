@@ -1,3 +1,11 @@
+# 2026-11-05 最新有效｜M-OCI-BRIDGE1 Issue #2優先
+
+最新入口codex/oci_bridge1/README.md。已實作無憑證最小協定／嚴格授權／原生OCI SDK唯讀adapter／遮蔽回覆，16唯一合成工程方法通過；實際入口NOT_CONNECTED。沒有本對話GitHub／Oracle連接工具或OCI憑證，真實Oracle查詢0、端到端未驗。禁止用mock／gitpush冒直連。停止CloudShell／FIDO／截圖診斷循環。
+
+新增private執行倉庫／專用最小權限身分／加密secret及connector範圍須先總監明示批准，具體單次授權案見codex/oci_bridge1/AUTHORIZATION.md；本輪未建／未配，不在公開repo放workflow或Secret。不改main、原FM3／owner／策略／資料或原Cloud，原唯一工程鎖／512MiB保留不變。真實驗收需總監以已連接工具送出唯讀命令、取得Oracle遮蔽真回應，之前保持NOT_CONNECTED。以下歷史完整保留。
+
+---
+
 # 2026-11-04 最新補正｜官方CLI空清單輸出
 
 本人回報iam compartment list EMPTY_STDOUT；已核官方cli_util.render有if data及if display_dictionary，空資料可能無輸出。最新RENDER_FIX.json：只替換已安裝官方CLI輸出層以明示data，身分、分頁、操作／零重試不改，不把任意空白補零。4唯一方法＝2新＋2相關回歸。原生帳戶內容仍未取得，只先唯讀plan；不review/apply。原包／來源／FM3／owner保留，不能宣稱已建機。
