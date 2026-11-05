@@ -1,3 +1,11 @@
+# 2026-11-05 最新有效｜M-OCI-CTRL1 PING已啟用，等待總監親自驗收
+
+最新派工Issue #2 comment6649248101。入口codex/oci_ctrl1/README.md及ACCEPTANCE.md；私庫固定commit 13e58a19787e9fb4ec55762a08ad10c930b34358，.github/workflows/ctrl1.yml active。只限私庫#1／owner／原生App與installation／版本／5分鐘內未編輯的固定schema operation=ping；短效GitHub token僅必要contents/actions read＋issues write。全repo concurrency＋bot持久nonce，先STARTED後同則PATCH PING_OK，缺原生欄位或權限fail-closed，不猜不以HMAC mock替代。
+
+18唯一新本地方法通過，四檔私庫原bytes讀回；未代總監發留言、controller native runs0。必須由總監本對話GitHub工具貼純JSON {"schema":"oci-ctrl/0.1","operation":"ping"}，讀回對應native success run與PING_OK收據後，才標GPT_TO_GITHUB_RUNNER_CONNECTED。Codex不得自行gh留言冒充驗收，不重跑原生零費探針；原probe仍disabled。Oracle始終NOT_CONNECTED／0 calls；不使用Secrets、私鑰、套件、checkout或OCI資源，不改US$0預算、不搬FM3。保存讀回後停，只交總監首測，不展開OCI憑證或其他里程碑。原Cloud／工程鎖／dev／512MiB、FM3／owner／公開main與歷史保留。以下歷史保持。
+
+---
+
 # 2026-11-05 最新有效｜US$0原生Actions單次驗收成功；舊Environment Secrets方案停止
 
 最新證據codex/oci_bridge1/zero_budget_probe/README.md與result.json。使用者確認US$0付費預算／阻擋，本輪只允許一次無Oracle key／Secrets的原生測試，未更改任何費用設定。Run41962648744實際success／attempt1／marker日誌已核；run9秒、job4秒，非帳單計費時間。探針已disabled_manually；不重跑，不啟舊橋接。
