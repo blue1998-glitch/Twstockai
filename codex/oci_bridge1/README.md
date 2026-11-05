@@ -1,3 +1,9 @@
+# 2026-11-05 正式批准後最新狀態
+
+[APPROVED_STAGE.md](APPROVED_STAGE.md)：授權已取得；private建庫與Billing均403，實際NOT_CONNECTED。13本輪receiver方法不冒實際橋接；舊16為前輪紀錄。[本人集中操作](OWNER_SETUP.md)，不再逐張上傳或CloudShell診斷。下方原樣機歷史保留。
+
+---
+
 # M-OCI-BRIDGE1 — Issue #2
 
 **NOT_CONNECTED。只完成無憑證、未啟用的最小樣機；沒有Oracle實讀或GPT端到端驗收。**

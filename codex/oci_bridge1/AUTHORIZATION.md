@@ -1,3 +1,9 @@
+# 已於2026-11-05正式批准
+
+授權來源APPROVAL.json／Issue #2 comment6647255490。下方是已批准原案，不再要求重批；執行狀態見APPROVED_STAGE.md。
+
+---
+
 # 給總監的一次性重大授權案（尚未執行）
 
 Issue #2允許無憑證樣機，但明確要求在新private repo／Oracle專用身分／加密Secrets前批准。以下不是已建立資源。

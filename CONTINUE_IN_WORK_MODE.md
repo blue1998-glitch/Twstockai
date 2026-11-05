@@ -1,3 +1,11 @@
+# 2026-11-05 最新有效｜M-OCI-BRIDGE1已正式批准，建庫／Billing權限受阻
+
+正式批准Issue #2 comment6647255490已全文讀回；不再要求相同範圍重批。最新入口codex/oci_bridge1/APPROVED_STAGE.md，集中本人操作OWNER_SETUP.md。原GitHub身分建private repo POST403，Billing API403；未建庫／未配置workflow或Secret，未啟Actions／Oracle讀取，NOT_CONNECTED。GET404不是原件不存在證據。
+
+已補native OIDC／canonical REST收件驗證及持久check nonce介面，13唯一新方法通過；舊16沿用不重跑，不當實際JWT／Oracle端到端驗收。費用閘門保持False，未核零付費不啟job，不把人工旗標改True放行。需要本人只先建立空private repo，之後同一原Codex沿原授權自動接續；IAM／key直送Secret等全部操作集中一份，不能把key交AI或放原Cloud。禁止public workflow／Secrets、Oracle寫入／新compartment／主機／付費／FM3搬遷；原Cloud／工程鎖／512MiB與main保持。以下歷史完整保留。
+
+---
+
 # 2026-11-05 最新有效｜M-OCI-BRIDGE1 Issue #2優先
 
 最新入口codex/oci_bridge1/README.md。已實作無憑證最小協定／嚴格授權／原生OCI SDK唯讀adapter／遮蔽回覆，16唯一合成工程方法通過；實際入口NOT_CONNECTED。沒有本對話GitHub／Oracle連接工具或OCI憑證，真實Oracle查詢0、端到端未驗。禁止用mock／gitpush冒直連。停止CloudShell／FIDO／截圖診斷循環。
