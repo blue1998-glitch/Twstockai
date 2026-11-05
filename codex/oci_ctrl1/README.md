@@ -1,3 +1,9 @@
+# 2026-11-05 已由總監實際驗收完成（PING-only）
+
+request6650802405 → native run41976315386 success → bot6650805038 PING_OK，版本6015e6b834fcd24cf13f0b43648d76fa4c443cac。已實際讀回，見[驗收原件安全投影](../oci_read1/CTRL1_ACCEPTANCE.json)。不要重跑PING或舊測試；Oracle仍NOT_CONNECTED。READ1新工作以[安全停止點](../oci_read1/README.md)為準，未擴大本控制器operation／權限。下方「待驗」均保留為當時歷史。
+
+---
+
 # 最新0.2入口｜原生installation契約修復
 
 以[installation_fix/README.md](installation_fix/README.md)及[deployment.json](installation_fix/deployment.json)為準。新版已部署active、4檔exact bytes讀回；8新定向方法通過。沒有代總監發PING。請總監新增一則純JSON驗收；installation=NOT_ATTESTED，Oracle NOT_CONNECTED。下方完整保留v0.1當時紀錄，其中「native runs0」「installation必有」已被本次真實拒絕證據與新PING-only契約取代，不能當目前狀態。

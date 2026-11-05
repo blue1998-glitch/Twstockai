@@ -1,3 +1,17 @@
+# 2026-11-05 最新有效｜M-OCI-READ1安全工件已存，真實OCI身分隔離受阻
+
+最新正式續派Issue #2 comment6650853336已全文核讀。入口[READ1狀態／工件](codex/oci_read1/README.md)、[本人一次集中授權方案](codex/oci_read1/OWNER_SECURITY_BATCH.md)。M-OCI-CTRL1/0.2已由總監實際驗收：request6650802405→native run41976315386 completed/success→bot6650805038 PING_OK，accepted private6015e6b834fcd24cf13f0b43648d76fa4c443cac；原件已讀，GPT_TO_GITHUB_RUNNER_CONNECTED僅PING，不再重跑。下方舊「待總監PING」是歷史，不當目前狀態。
+
+READ1為PARTIAL／BLOCKED_CREDENTIAL_ISOLATION；Oracle NOT_CONNECTED，實讀／身分交換／新JWT／Secrets／IAM變更／Oracle建資源均0。官方JWT→RPST實核仍需OAuth confidential client或OCI service/instance principal，GitHub OIDC不是Oracle身分；沒有在此原Cloud新增可用OCI身分或取得本人trust／pilot／費用原件，不能猜。Free私庫舊Environment Secrets停止，不改存Repo Secrets，不把PING-only／NOT_ATTESTED的installation信任擴張OCI。
+
+備妥無密鑰stdlib離線工件6796 bytes，重用原OCI adapter原bytes；4唯一新純協定／封包方法通過，沒有SDK／OIDC／Oracle mock或重跑舊工程。工件只有inspect／check-command，沒有execute/apply/force；READ1原生授權／nonce、身分銜接及精確官方拒絕留證未實作／未啟用，不能當已可發OCI命令。私庫正常staging提交 **cc94d1b52b50e846a30fd98864ca650ba848aa55**，5檔exact bytes讀回；已驗CTRL1四部署檔不變，runs3／Issue留言4保持，沒有代發任何指令。
+
+唯一待核方案：只在本人確認**既有免費隔離OCI主機**與既存pilot後，核准一次性self-hosted runner＋Instance Principal，避免長期OCI key／client secret進GitHub。該方案尚未批准／部署；Oracle Instance Principal固有compartment_inspect不能撤銷、主機使用者繼承權限及self-hosted持久入侵風險都須本人明示接受，不能稱絕對pilot-only。沒有既有合格主機／pilot或不接受風險就保持BLOCKED，不新建資源／付費／改存密鑰。本人項目只集中一份，不逐步轉交、不再回CloudShell診斷循環。
+
+原唯一Cloud／工程鎖／dev分支、FM3 metadata90377／owner／main／880歷史未追蹤、至少512MiB保留及全部來源／策略／Raw UNKNOWN、false/null保持。沒有搬FM3、公開原件、部署、排程或交易。公開固定SHA原bytes讀回收據另存；完成本輪可授權工件後停，交總監核新的身分／執行位置授權，不宣稱OCI_READ_CONNECTED。以下全部歷史完整保留。
+
+---
+
 # 2026-11-05 最新有效｜M-OCI-CTRL1/0.2 原生事件定向修復已部署，待總監新PING
 
 最新派工Issue #2 comment6649889675；[修復／固定部署／驗收](codex/oci_ctrl1/installation_fix/README.md)。總監真實run41969390096因NATIVE_INSTALLATION_MISSING失敗；官方Actions事件不保證App webhook的installation，不是本人操作或OCI問題。新版私庫固定 **6015e6b834fcd24cf13f0b43648d76fa4c443cac**，workflow407700418 active、4檔原bytes讀回。

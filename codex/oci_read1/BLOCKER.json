@@ -1,0 +1,23 @@
+{
+  "schema": "oci-read1-blocker/0.1",
+  "status": "BLOCKED_CREDENTIAL_ISOLATION",
+  "github_native": "ACCEPTED_PING_ONLY",
+  "official_exchange_authentication": [
+    "IAM_DOMAIN_OAUTH_CONFIDENTIAL_CLIENT",
+    "OCI_SERVICE_PRINCIPAL",
+    "OCI_INSTANCE_PRINCIPAL"
+  ],
+  "current_runtime_oci_identity": "NONE_CONFIGURED",
+  "oracle_trust_actual": "NOT_OBTAINED",
+  "oracle_jwt_actual": "NOT_OBTAINED",
+  "existing_pilot_actual": "NOT_OBTAINED",
+  "identity_or_store_approved_for_read1": false,
+  "new_storage_approval_required": true,
+  "repository_secret_fallback": false,
+  "proposed_single_path": "EXISTING_FREE_ISOLATED_OCI_HOST_EPHEMERAL_RUNNER_INSTANCE_PRINCIPAL",
+  "proposal_actual_host": "UNKNOWN",
+  "proposal_implicit_compartment_inspect": "CANNOT_REVOKE_REQUIRES_EXPLICIT_ACCEPTANCE",
+  "no_eligible_existing_host": "STOP_NO_NEW_RESOURCE",
+  "oracle_actual_queries": 0,
+  "oracle_connection": "NOT_CONNECTED"
+}

@@ -1,3 +1,9 @@
+# 2026-11-05 最新入口｜READ1身分隔離受阻
+
+PING控制通道已由總監原生驗收成功，不能稱舊橋接全未連線。真正OCI仍NOT_CONNECTED；最新[READ1無密鑰工件](../oci_read1/README.md)、[本人唯一安全方案](../oci_read1/OWNER_SECURITY_BATCH.md)。舊adapter保持原bytes，舊receiver／Environment Secrets／API key配置不啟用、不改存Repository Secrets，不重跑舊套件或PING。下方歷史不是目前執行指令。
+
+---
+
 # 2026-11-05 暫停舊環境／密鑰設定流程
 
 單次原生Actions探針已成功，證據見zero_budget_probe/README.md。GitHub Free私庫的原Environment Secrets方案已由使用者停止；不要執行下方舊環境／密鑰步驟，不要改存Repository Secrets。本輪結束，Oracle仍NOT_CONNECTED。以下只作歷史保存。
