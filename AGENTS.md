@@ -1,3 +1,17 @@
+# 2026-11-05 最新有效｜M-PROD-DAY2 傳輸修正接線完成；唯一新重取仍EOF，停在來源閘
+
+Issue #5已全文讀取；[實作／實際原件診斷／驗收](股票系統M1_v0_18/graph_core/prod_day2_20261105/README.md)。原正式flow→daily_chain1 intake現接transport.receive（64KiB、硬牆鐘、精確HTTP framing／partial診斷）；原來源／日期／CFI／基底／公司行動閘不變。原producer封存，新reader讀舊attempt仍0GET；沒有預覽或第二引擎。
+
+唯一新上櫃GET仍HTTP200提前EOF：宣告5,329,099、實得1,015,401 bytes；新partial是舊partial前綴、ETag相同，來源不完整屬實，但造成截斷的origin／CDN／proxy節點UNKNOWN。完整舊3件重用，新GET1／重試0／分類GET0／新日核心0／新日發布0；**不可再重取、改名繞過或採partial**。正式owner仍11/3、1986／1955歷史不足／31拒用，同一頁已讀本次拒用原因；原有效head、FM3與所有行情／歷史／圖／帳務不動。
+
+10唯一新Python及390／1280兩個定向owner流程通過；中間8／9／10不累加。初批誤discover舊12類別在setUp即失敗、方法未跑／舊檔未寫，log保留；後續僅新方法。沒重跑舊全套／全市場核心，未重啟Cloud或owner、未驗本人Android。新來源與診斷用既有DU2 exact-byte新檔，小型IO view仍調原source gate，不壓縮覆寫原件。
+
+只在原Cloud／repo／dev／engineering.lock寫入，FM3 metadata90377／880歷史untracked／main／私庫bridge保持；至少512MiB、私人資料Git外、Oracle／外部網路／排程／付費／交易皆不動。正式產品與主動全面持現金／重新進場機會成本願景保持待驗，不批准觸發、比例或績效。
+
+本輪達來源停止條件，完成GitHub固定SHA讀回後停。唯一下一步交總監評估是否另授權同官方URL、同強ETag的一次有界Range續傳；本輪未執行Range或新請求，不擴張來源研究。下方全歷史保留，Issue #4內部產品仍有效，不能把本次工程檢查當11/4上線或Android可達。
+
+---
+
 # 2026-11-05 最新有效｜M-PROD-CORE1 正式每日分析流程已在原Cloud運行
 
 Issue #4正式取代下方Issue #3「附件不可交付即停止內部開發」的前置。最新可運行入口：[正式產品工程／維運與驗收](股票系統M1_v0_18/graph_core/prod_core1_20261105/README.md)。原同一owner `http://127.0.0.1:8765/` 現為正式產品首頁：資料日期／每日完成與新接件狀態、1986檔搜尋、市場／狀態篩選、精確OHLCV、保存核心按需圖及舊日比較。這是Cloud本機入口，**ANDROID_EXTERNAL_NOT_CONNECTED**，不冒手機可達或公開發布。

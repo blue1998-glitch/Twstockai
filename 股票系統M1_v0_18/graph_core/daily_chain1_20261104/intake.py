@@ -77,23 +77,17 @@ def run(target,*,work=WORK,opener=None,now=None):
         item=dict(name=name,url=url,started_at=begin,http_status=None,headers={},redirects_followed=False);parts=[]
         try:
             new_requests+=1
-            with opener.open(url,timeout=35) as response:
-                item.update(http_status=response.status,headers={k:v for k,v in response.headers.items() if k.lower() in SAFE_HEADERS},effective_url=response.geturl())
-                if response.status!=200 or response.geturl()!=url:raise ValueError('STATUS_OR_REDIRECT_REFUSED')
-                length=response.headers.get('Content-Length')
-                if length and int(length)>MAX_BODY:raise ValueError('DECLARED_BODY_EXCEEDS_BOUND')
-                n=0;t=time.monotonic()
-                while True:
-                    b=response.read(min(1048576,MAX_BODY+1-n))
-                    if not b:break
-                    parts.append(b);n+=len(b)
-                    if n>MAX_BODY or total+n>MAX_TOTAL or time.monotonic()-t>180:raise ValueError('BODY_OR_CAPTURE_RESOURCE_BOUND')
-                raw=b''.join(parts)
-                if length and len(raw)!=int(length):raise ValueError('INCOMPLETE_RESPONSE')
+            from graph_core.prod_day2_20261105.transport import receive
+            raw,transport_trace=receive(opener,url,stamp=stamp,max_seconds=180,max_body=min(MAX_BODY,MAX_TOTAL-total))
+            item.update(transport_trace)
+            parts=[raw]
             digest=sha(raw);write(work,work/'capture/raw'/digest,raw);total+=len(raw)
             r=dict(name=name,url=url,status='RECEIVED',sha256=digest,bytes=len(raw),fetched_at=stamp())
             item.update(complete=True,bytes=len(raw),sha256=digest)
         except Exception as e:
+            from graph_core.prod_day2_20261105.transport import TransferFailure
+            if isinstance(e,TransferFailure):
+                item.update(e.trace);parts=[e.partial] if e.partial else []
             if isinstance(e,HTTPError):item.update(http_status=e.code,headers={k:v for k,v in e.headers.items() if k.lower() in SAFE_HEADERS})
             item.update(complete=False,error=type(e).__name__+': '+str(e));r=dict(name=name,url=url,status='SOURCE_FAILURE',error=item['error'])
             if parts:
