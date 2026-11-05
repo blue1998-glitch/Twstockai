@@ -1,3 +1,13 @@
+# 2026-11-05 最新有效｜M-OCI-CTRL1/0.2 原生事件定向修復已部署，待總監新PING
+
+最新派工Issue #2 comment6649889675；[修復／固定部署／驗收](codex/oci_ctrl1/installation_fix/README.md)。總監真實run41969390096因NATIVE_INSTALLATION_MISSING失敗；官方Actions事件不保證App webhook的installation，不是本人操作或OCI問題。新版私庫固定 **6015e6b834fcd24cf13f0b43648d76fa4c443cac**，workflow407700418 active、4檔原bytes讀回。
+
+只限無憑證PING，信任判準PING_ONLY_NATIVE_ACTIONS_CANONICAL_REST；installation_attestation=NOT_ATTESTED。不注入／旁借installation ID，不把source App當installation證明。固定owner／App／私庫／canonical comment與REST權限／native run與triggering_actor、head repository、active workflow／完整code與workflow bytes／5分鐘未編輯／嚴格schema／bot nonce／全repo concurrency保留。缺必要證據拒絕；不可將此PING信任擴張到OCI／IAM／Secrets。
+
+本輪8唯一新定向方法通過，沒有重跑舊套件／零費探針，沒有代總監發PING或重跑native。現有native總數2（舊probe＋已知拒絕），Issue留言2維持。只有總監以ChatGPT GitHub工具在私庫#1**新增**純JSON {"schema":"oci-ctrl/0.1","operation":"ping"}，讀回新request/run、native completed/success及固定版本PING_OK後，才標GPT_TO_GITHUB_RUNNER_CONNECTED；舊拒絕留言已消耗不可重用。Oracle NOT_CONNECTED／0 calls；US$0阻擋不改，不用Secrets／私鑰、不建機／搬FM3。原Cloud／工程鎖／dev／512MiB、FM3／owner／main／880舊未追蹤檔保持。完成保存後停，只交總監親自重驗。以下v0.1及全部歷史是當時紀錄，已由本節取代。
+
+---
+
 # 2026-11-05 最新有效｜M-OCI-CTRL1 PING已啟用，等待總監親自驗收
 
 最新派工Issue #2 comment6649248101。入口codex/oci_ctrl1/README.md及ACCEPTANCE.md；私庫固定commit 13e58a19787e9fb4ec55762a08ad10c930b34358，.github/workflows/ctrl1.yml active。只限私庫#1／owner／原生App與installation／版本／5分鐘內未編輯的固定schema operation=ping；短效GitHub token僅必要contents/actions read＋issues write。全repo concurrency＋bot持久nonce，先STARTED後同則PATCH PING_OK，缺原生欄位或權限fail-closed，不猜不以HMAC mock替代。

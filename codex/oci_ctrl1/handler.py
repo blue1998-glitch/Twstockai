@@ -1,6 +1,8 @@
 """M-OCI-CTRL1. Stdlib-only PING receiver; no OCI, Secrets or shell execution."""
 import base64,datetime,hashlib,json,os,re,sys,urllib.request,urllib.error
-VERSION="M-OCI-CTRL1/0.1"
+VERSION="M-OCI-CTRL1/0.2"
+TRUST_PROFILE="PING_ONLY_NATIVE_ACTIONS_CANONICAL_REST"
+INSTALLATION_ATTESTATION="NOT_ATTESTED"
 REPO="blue1998-glitch/Twstockai-oci-bridge-private"
 REPO_ID=1446437252
 OWNER_ID=319797247
@@ -136,10 +138,16 @@ class Controller:
   if repo.get('id')!=REPO_ID or repo.get('private') is not True or repo.get('full_name')!=REPO or repo.get('default_branch')!='main':raise Refused('CANONICAL_REPOSITORY')
   run=self.api.request('GET','/actions/runs/'+runid)
   if run.get('id')!=int(runid) or run.get('run_attempt')!=1 or run.get('event')!='issue_comment' or run.get('head_sha')!=sha or run.get('head_branch')!='main' or run.get('actor',{}).get('id')!=OWNER_ID or run.get('repository',{}).get('id')!=REPO_ID or run.get('path')!=PATH or run.get('status')!='in_progress':raise Refused('CANONICAL_RUN')
+  if run.get('triggering_actor',{}).get('id')!=OWNER_ID or run.get('head_repository',{}).get('id')!=REPO_ID or run.get('repository',{}).get('private') is not True:raise Refused('NATIVE_RUN_ACTOR_REPOSITORY')
+  workflow_id=run.get('workflow_id')
+  if type(workflow_id) is not int or workflow_id<=0:raise Refused('NATIVE_WORKFLOW_ID')
+  wf=self.api.request('GET','/actions/workflows/'+str(workflow_id))
+  if wf.get('id')!=workflow_id or wf.get('path')!=PATH or wf.get('state')!='active':raise Refused('CANONICAL_WORKFLOW')
   release_raw,_=self.api.content('ctrl1/release.json',sha);policy=strict(release_raw)
-  expected={'schema','version','repository_id','actor_id','source_app_id','installation_id','bot_id','bot_app_id','workflow_blob','controller_blob','controller_sha256'}
-  if not isinstance(policy,dict) or set(policy)!=expected or policy['schema']!='oci-ctrl-release/0.1' or policy['version']!=VERSION or policy['repository_id']!=REPO_ID or policy['actor_id']!=OWNER_ID:raise Refused('RELEASE_POLICY')
-  if any(type(policy[k]) is not int or policy[k]<=0 for k in ['source_app_id','installation_id','bot_id','bot_app_id']):raise Refused('NATIVE_ID_BINDINGS')
+  expected={'schema','version','repository_id','actor_id','source_app_id','bot_id','bot_app_id','workflow_blob','controller_blob','controller_sha256','trust_profile','installation_attestation'}
+  if not isinstance(policy,dict) or set(policy)!=expected or policy['schema']!='oci-ctrl-release/0.2' or policy['version']!=VERSION or policy['repository_id']!=REPO_ID or policy['actor_id']!=OWNER_ID:raise Refused('RELEASE_POLICY')
+  if policy['trust_profile']!=TRUST_PROFILE or policy['installation_attestation']!=INSTALLATION_ATTESTATION:raise Refused('PING_ONLY_TRUST_PROFILE')
+  if any(type(policy[k]) is not int or policy[k]<=0 for k in ['source_app_id','bot_id','bot_app_id']):raise Refused('NATIVE_ID_BINDINGS')
   if policy['controller_blob']!=git_blob(self.source) or policy['controller_sha256']!=hashlib.sha256(self.source).hexdigest():raise Refused('CONTROLLER_PIN')
   workflow_raw,workflow_blob=self.api.content(PATH,sha)
   if workflow_blob!=policy['workflow_blob'] or workflow_raw!=render_workflow(self.source):raise Refused('WORKFLOW_BLOB_PIN')
@@ -147,20 +155,21 @@ class Controller:
   if canonical.get('id')!=cid or canonical.get('issue_url')!='https://api.github.com/repos/'+REPO+'/issues/1' or canonical.get('user',{}).get('id')!=OWNER_ID or canonical.get('user',{}).get('login')!='blue1998-glitch' or (canonical.get('performed_via_github_app') or {}).get('id')!=policy['source_app_id']:raise Refused('CANONICAL_COMMENT_ACTOR_APP')
   permission=self.api.request('GET','/collaborators/blue1998-glitch/permission')
   if permission.get('user',{}).get('id')!=OWNER_ID or permission.get('permission') not in ('write','maintain','admin'):raise Refused('ACTOR_PERMISSION')
+  if comment.get('user',{}).get('id')!=OWNER_ID:raise Refused('NATIVE_COMMENT_ACTOR')
   if canonical.get('body')!=comment.get('body') or canonical.get('updated_at')!=canonical.get('created_at'):raise Refused('EDITED_COMMENT')
   created=timestamp(canonical.get('created_at'))
   if not 0<=self.now-created<=300 or timestamp(run.get('created_at'))<created:raise Refused('COMMENT_TIME_WINDOW')
   self.policy=policy;self.comment_id=cid;self.reply_authorized=True
-  # Never invent a missing native installation field or silently downgrade it.
-  native_installation=(e.get('installation') or {}).get('id')
-  if type(native_installation) is not int:raise Refused('NATIVE_INSTALLATION_MISSING')
-  if native_installation!=policy['installation_id']:raise Refused('NATIVE_INSTALLATION_MISMATCH')
+  # This profile intentionally attests ONLY a credential-free PING using all
+  # native context + canonical REST gates above. Actions does not guarantee
+  # webhook installation metadata. No installation identity is asserted, filled
+  # or derived from performed_via_github_app (which proves an App, not an install).
   body=canonical.get('body')
   if not isinstance(body,str) or len(body.encode())>256:raise Refused('COMMAND_BOUND')
   value=strict(body)
   if not isinstance(value,dict) or set(value)!={'schema','operation'} or value['schema']!=SCHEMA or value['operation']!='ping':raise Refused('ONLY_FIXED_PING')
  def receipt(self,status,reason=None):
-  value={'schema':'oci-ctrl-receipt/0.1','controller_version':VERSION,'status':status,'operation':'ping','request_comment_id':self.comment_id,'run_id':int(self.ctx['GITHUB_RUN_ID']),'run_attempt':1,'run_url':'https://github.com/'+REPO+'/actions/runs/'+self.ctx['GITHUB_RUN_ID'],'workflow_commit_sha':self.ctx['GITHUB_WORKFLOW_SHA'],'workflow_blob_sha':self.policy['workflow_blob'],'controller_sha256':hashlib.sha256(self.source).hexdigest(),'oracle_status':'NOT_CONNECTED','oracle_calls':0}
+  value={'schema':'oci-ctrl-receipt/0.1','controller_version':VERSION,'status':status,'operation':'ping','request_comment_id':self.comment_id,'run_id':int(self.ctx['GITHUB_RUN_ID']),'run_attempt':1,'run_url':'https://github.com/'+REPO+'/actions/runs/'+self.ctx['GITHUB_RUN_ID'],'workflow_commit_sha':self.ctx['GITHUB_WORKFLOW_SHA'],'workflow_blob_sha':self.policy['workflow_blob'],'controller_sha256':hashlib.sha256(self.source).hexdigest(),'oracle_status':'NOT_CONNECTED','oracle_calls':0,'trust_profile':TRUST_PROFILE,'installation_attestation':INSTALLATION_ATTESTATION}
   if reason:value['reason']=reason
   return value
  def body(self,value):return MARKER+str(self.comment_id)+' -->\n```json\n'+json.dumps(value,sort_keys=True,indent=2)+'\n```'

@@ -29,8 +29,8 @@ jobs:
           python3 - <<'CTRL1_BOOTSTRAP'
           import base64,hashlib,json,os,subprocess,sys,tempfile,urllib.request
           from pathlib import Path
-          BLOB='57588b282ab694da05e45184fb3dec00f78d97ed'
-          SHA='92fd8bb867c253e000440ff4f051dce0c5ef4c6116aa03b151447e92c62200d2'
+          BLOB='c7f46ea346d957aa8755e955aff23f66f5675fe7'
+          SHA='825a8fc1e0e6e86be801f962d0c039f6c9e5b4c7ce9cb83772ff48c88525bb44'
           class NoRedirect(urllib.request.HTTPRedirectHandler):
            def redirect_request(self,*a,**kw):return None
           try:

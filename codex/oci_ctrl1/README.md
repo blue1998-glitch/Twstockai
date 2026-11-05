@@ -1,3 +1,9 @@
+# 最新0.2入口｜原生installation契約修復
+
+以[installation_fix/README.md](installation_fix/README.md)及[deployment.json](installation_fix/deployment.json)為準。新版已部署active、4檔exact bytes讀回；8新定向方法通過。沒有代總監發PING。請總監新增一則純JSON驗收；installation=NOT_ATTESTED，Oracle NOT_CONNECTED。下方完整保留v0.1當時紀錄，其中「native runs0」「installation必有」已被本次真實拒絕證據與新PING-only契約取代，不能當目前狀態。
+
+---
+
 # M-OCI-CTRL1｜已啟用，等待總監第一次真實PING
 
 **部署狀態ENABLED_AWAITING_DIRECTOR_PING，不是GPT_TO_GITHUB_RUNNER_CONNECTED。Oracle始終NOT_CONNECTED／0呼叫。** 本輪指令來源INSTRUCTION.json（公開Issue #2 comment6649248101）。原Cloud／工程鎖／dev、FM3、owner8765與公開main保持。

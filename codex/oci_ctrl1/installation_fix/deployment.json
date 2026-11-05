@@ -1,0 +1,54 @@
+{
+  "schema": "ctrl1-installation-fix-deployment/0.2",
+  "observed_at": "2026-11-05T05:13:28.416822+00:00",
+  "prior_private_commit": "13e58a19787e9fb4ec55762a08ad10c930b34358",
+  "private_commit": "6015e6b834fcd24cf13f0b43648d76fa4c443cac",
+  "version": "M-OCI-CTRL1/0.2",
+  "status": "ACTIVE_AWAITING_NEW_DIRECTOR_PING",
+  "trust_profile": "PING_ONLY_NATIVE_ACTIONS_CANONICAL_REST",
+  "installation_attestation": "NOT_ATTESTED",
+  "workflow_id": 407700418,
+  "workflow_state": "active",
+  "readback": [
+    {
+      "path": "ctrl1/handler.py",
+      "bytes": 13911,
+      "sha256": "825a8fc1e0e6e86be801f962d0c039f6c9e5b4c7ce9cb83772ff48c88525bb44",
+      "git_blob": "c7f46ea346d957aa8755e955aff23f66f5675fe7",
+      "readback": "EXACT_BYTES"
+    },
+    {
+      "path": "ctrl1/release.json",
+      "bytes": 527,
+      "sha256": "c9f11c9fd2521ab2799fbeab5648f9c0707e159818972e25fd9c945de58655d8",
+      "git_blob": "06037f366c16d17fc844fc7cb7d7c50058b0bcb4",
+      "readback": "EXACT_BYTES"
+    },
+    {
+      "path": ".github/workflows/ctrl1.yml",
+      "bytes": 2299,
+      "sha256": "f4bb6195a054783e08b568e79c6f2933d405a3d4fa390b3a8485b5b9f528c690",
+      "git_blob": "c89e7b73adcd9f5a23cff16f78069cdf713013ef",
+      "readback": "EXACT_BYTES"
+    },
+    {
+      "path": "ctrl1/README.md",
+      "bytes": 702,
+      "sha256": "c1fad40845e0c42f88e3a7b7c0053c0a88cf09b48f085e88d6312e364e4dde17",
+      "git_blob": "1baa4b1242bb3a71b4d4c7f76f9f3bd6773d8ea8",
+      "readback": "EXACT_BYTES"
+    }
+  ],
+  "targeted_unique_tests": 8,
+  "targeted_tests_passed": 8,
+  "native_runs_before": 2,
+  "native_runs_after": 2,
+  "native_controller_acceptance": "PENDING_DIRECTOR_NEW_COMMENT",
+  "existing_issue_comments": 2,
+  "codex_ping_comments_sent": 0,
+  "old_probe_state": "disabled_manually",
+  "oracle_status": "NOT_CONNECTED",
+  "oracle_calls": 0,
+  "secrets_used": false,
+  "billing_changed": false
+}

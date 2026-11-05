@@ -4,14 +4,15 @@ from . import handler as h
 class Fake:
  def __init__(self):
   self.calls=[];self.rows=[];self.failpost=False;self.badbot=False;self.source=b'SYNTHETIC_CONTROLLER';self.workflow=h.render_workflow(self.source)
-  self.policy=dict(schema='oci-ctrl-release/0.1',version=h.VERSION,repository_id=h.REPO_ID,actor_id=h.OWNER_ID,source_app_id=400,installation_id=500,bot_id=600,bot_app_id=700,workflow_blob=h.git_blob(self.workflow),controller_blob=h.git_blob(self.source),controller_sha256=hashlib.sha256(self.source).hexdigest())
+  self.policy=dict(schema='oci-ctrl-release/0.2',version=h.VERSION,repository_id=h.REPO_ID,actor_id=h.OWNER_ID,source_app_id=400,bot_id=600,bot_app_id=700,workflow_blob=h.git_blob(self.workflow),controller_blob=h.git_blob(self.source),controller_sha256=hashlib.sha256(self.source).hexdigest(),trust_profile=h.TRUST_PROFILE,installation_attestation=h.INSTALLATION_ATTESTATION)
   self.comment=dict(id=800,issue_url='https://api.github.com/repos/'+h.REPO+'/issues/1',user={'id':h.OWNER_ID,'login':'blue1998-glitch'},performed_via_github_app={'id':400},body='{"schema":"oci-ctrl/0.1","operation":"ping"}',created_at='2026-11-05T00:00:00Z',updated_at='2026-11-05T00:00:00Z')
-  self.run=dict(id=42,run_attempt=1,event='issue_comment',head_sha='a'*40,head_branch='main',actor={'id':h.OWNER_ID},repository={'id':h.REPO_ID},path=h.PATH,status='in_progress',created_at='2026-11-05T00:00:01Z')
+  self.run=dict(id=42,run_attempt=1,event='issue_comment',head_sha='a'*40,head_branch='main',actor={'id':h.OWNER_ID},repository={'id':h.REPO_ID,'private':True},head_repository={'id':h.REPO_ID},triggering_actor={'id':h.OWNER_ID},workflow_id=43,path=h.PATH,status='in_progress',created_at='2026-11-05T00:00:01Z')
  def request(self,method,path,data=None):
   self.calls.append((method,path,data))
   if method=='GET':
    if path=='':return dict(id=h.REPO_ID,private=True,full_name=h.REPO,default_branch='main')
    if path=='/actions/runs/42':return self.run
+   if path=='/actions/workflows/43':return dict(id=43,path=h.PATH,state='active')
    if path=='/issues/comments/800':return self.comment
    if path=='/collaborators/blue1998-glitch/permission':return dict(user={'id':h.OWNER_ID},permission='admin')
   if method=='POST':
@@ -49,10 +50,8 @@ class Tests(unittest.TestCase):
    self.api.comment['body']=body;self.event['comment']['body']=body
    with self.assertRaises(h.Refused):self.controller().verify_scope()
   self.assertFalse(any(x[0]!='GET' for x in self.api.calls))
- def test_missing_or_wrong_installation_is_refused(self):
-  for installation in [{},{'id':501}]:
-   self.event['installation']=installation
-   with self.assertRaisesRegex(h.Refused,'INSTALLATION'):self.controller().verify_scope()
+ def test_ping_profile_does_not_claim_installation_attestation(self):
+  self.event.pop('installation');out=self.controller().execute();self.assertEqual(out['installation_attestation'],'NOT_ATTESTED')
  def test_edited_future_expired_comment_refused(self):
   for time in ['2026-11-05T00:00:03Z','2026-11-04T23:00:00Z']:
    self.api.comment['created_at']=time;self.api.comment['updated_at']=time
