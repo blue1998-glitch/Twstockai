@@ -1,3 +1,9 @@
+# 2026-11-05 能力狀態｜唯讀橋接已批准，GitHub權限受阻
+
+Issue #2 comment6647255490已正式批准一次性private執行倉庫／最小OCI唯讀身分／本人私鑰直送Secret。現有GitHub App建庫與Billing API均403，私庫／工作流尚未配置，真實狀態NOT_CONNECTED；不再要求重批、不回CloudShell／截圖循環。最新工程與集中本人操作見codex/oci_bridge1/APPROVED_STAGE.md及OWNER_SETUP.md；13本輪本地receiver方法不冒Oracle實讀。股票系統／FM3／財務與策略狀態不變，以下歷史保留。
+
+---
+
 # 2026-11-05 能力狀態｜OCI唯讀橋接尚未連線
 
 M-OCI-BRIDGE1先完成無憑證最小樣機，真實狀態NOT_CONNECTED，並非Oracle已部署或手機可用。啟用private執行通道／最小唯讀身分及Secret須總監另行批准；不改股票核心、資金策略或FM3。產品最高目標與未批准策略界線不變；以下歷史保留。
