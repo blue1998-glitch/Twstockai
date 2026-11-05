@@ -1,3 +1,9 @@
+# 2026-11-05 暫停舊環境／密鑰設定流程
+
+單次原生Actions探針已成功，證據見zero_budget_probe/README.md。GitHub Free私庫的原Environment Secrets方案已由使用者停止；不要執行下方舊環境／密鑰步驟，不要改存Repository Secrets。本輪結束，Oracle仍NOT_CONNECTED。以下只作歷史保存。
+
+---
+
 # 2026-11-05 最新入口：私庫已交付
 
 請先讀PRIVATE_STAGE_HANDOFF.md與OWNER_ONCE.md。私庫已建並可讀寫，不重建／不重批；以下保留前輪歷史，不當本輪待辦。

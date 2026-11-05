@@ -1,3 +1,11 @@
+# 2026-11-05 最新有效｜US$0原生Actions單次驗收成功；舊Environment Secrets方案停止
+
+最新證據codex/oci_bridge1/zero_budget_probe/README.md與result.json。使用者確認US$0付費預算／阻擋，本輪只允許一次無Oracle key／Secrets的原生測試，未更改任何費用設定。Run41962648744實際success／attempt1／marker日誌已核；run9秒、job4秒，非帳單計費時間。探針已disabled_manually；不重跑，不啟舊橋接。
+
+GitHub Free私庫不支持原設計所需Environment Secrets，使用者已正式停止該方案；舊OWNER_ONCE／OWNER_SETUP相關步驟暫停，不能改存Repository Secrets或人工改費用旗標。Oracle查詢0、key／Secret讀取0、NOT_CONNECTED；下一僅交總監審查新的憑證隔離，不自行延伸或要求提高US$0預算。原Cloud／工程鎖／dev／512MiB、FM3／owner／公開main與所有歷史保留。以下歷史完整保留。
+
+---
+
 # 2026-11-05 最新有效｜M-OCI-BRIDGE1私庫已可讀寫，固定審查版已交付
 
 最新指令Issue #2 comment6648037730，接續入口codex/oci_bridge1/PRIVATE_STAGE_HANDOFF.md及OWNER_ONCE.md。私庫已確認Private／repo1446437252／main／#1，正常寫入固定版本d499b85c284526dda213fee9edcb3f4b237d35dd及7檔bytes讀回完成；不再要求建庫或重批。App installation membership已實核，敏感綁定只私庫／Git外保存。

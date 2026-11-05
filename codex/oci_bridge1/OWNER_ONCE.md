@@ -1,3 +1,9 @@
+# 2026-11-05 暫停舊環境／密鑰設定流程
+
+單次原生Actions探針已成功，證據見zero_budget_probe/README.md。GitHub Free私庫的原Environment Secrets方案已由使用者停止；不要執行下方舊環境／密鑰步驟，不要改存Repository Secrets。本輪結束，Oracle仍NOT_CONNECTED。以下只作歷史保存。
+
+---
+
 # M-OCI-BRIDGE1：本人剩餘操作一次說明
 
 **私庫已建立並可讀寫，不要重建，也不用再批准。** 入口是 [private Issue #1](https://github.com/blue1998-glitch/Twstockai-oci-bridge-private/issues/1)。原Codex已把固定無憑證版本傳到私庫review/，不是要求本人逐檔搬運。現在尚未啟用Actions或Oracle查詢。
