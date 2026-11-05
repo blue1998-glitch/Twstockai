@@ -1,3 +1,9 @@
+# 目前停止於BLOCKED_OWNER_AUTH｜不要執行下方歷史10步
+
+唯一現行指南：[OWNER_AUTH_ONLY.md](../qual_gate2/OWNER_AUTH_ONLY.md)。Free／東京／Active及Twstockai-Pilot Active已核，不再截圖。現無可用正式管理連接／已驗手機委派按鈕，不要求本人找WIF UI、手改JSON／寫IAM／CLI，也不預排client／trust／Secret／activation。OAuth儲存風險早已批准，不重批。只有總監先確認正式受信唯讀管理入口後，才能安排真正必要的一次本人授權；下方只保留歷史，不作本輪操作。
+
+---
+
 # M-OCI-READ1｜本人一次集中操作指南
 
 **OAuth Repository Secret安全取捨已正式批准，不需要再次批准。** 不使用長期OCI API key，也不回舊自管主機／Environment Secrets／CloudShell診斷流程。本指南的步驟有先後閘門；未知就停，不為了完成而照填確認。

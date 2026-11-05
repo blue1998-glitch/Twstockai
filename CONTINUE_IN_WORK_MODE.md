@@ -1,3 +1,21 @@
+# 2026-11-05 最新有效｜QUAL-GATE2已保存畫面實證，唯一阻礙BLOCKED_OWNER_AUTH
+
+最新正式派工Issue #2 comment6655378747已全文核讀；[分層證據／程式／結果](codex/oci_read1/qual_gate2/README.md)、[目前唯一安全核實事項](codex/oci_read1/qual_gate2/OWNER_AUTH_ONLY.md)。已讀總監存檔6654432698／6654557357／6654633563：**Default Identity Domain＝Free／Japan East (Tokyo)／Active；Twstockai-Pilot Compartment＝Active**，均為總監驗收的本人控制台視覺證據，原圖此Codex未重開。不再索取同類截圖、不把舊UNKNOWN覆蓋已核事實。原圖時間／留言時間／本輪記錄時間分存，不當API。
+
+本輪evidence.py完成分層觀察同步與衝突拒寫，private account.json只改3個observations，並存獨立sidecar；4唯一新證據／拒升格檢查通過（含原qualification gate仍拒絕的必要回歸），沒有重跑舊17、PING、研究或全局盤點。私庫固定 **de9331ef18826d6f20d4b2ed80eb3dd5db6ecc5d**，5檔原bytes讀回；26既有其他blob完全不變，runner／workflow／release／封包不動，native總run3／Issue留言4保持，READ1原生run與Oracle管理／資源API仍0，Codex沒發指令。
+
+畫面未證pilot parent／獨立性／空資源、WIF rollout、trust現有數／剩餘quota、精確IAM或OAuth；這些仍UNKNOWN／null。`existing_independent_pilot`含資格／獨立性仍UNKNOWN，不否認畫面已有pilot Active。未填任何新的OWNER_CONFIRMED，captured_at／expires_at仍null，config.region／domain_url／OCID／AD保持原null／空，不能拿Domain Home Region填Compute資格，未開OCI_READ1_ENABLED、未動Secret。
+
+官方SDK已核GET `/admin/v1/IdentityPropagationTrusts`，須合法受信管理授權；管理access token不同於runtime JWT→RPST，不能偷存管理client Secret或加權原runtime client。原Cloud當前沒有Oracle工具／受管connection／可用OCI設定或委派管理session，因此**BLOCKED_OWNER_AUTH**。這只說本對話沒有受信入口，不否定本人已登入，也不是實測401／403或WIF不支援。沒有猜Domain URL或送匿名帳戶探測；官方文件200／產品總上限30不能當本租戶實證。
+
+目前僅交總監核實平台是否已有可由本人授權給原Codex的**正式Oracle Identity Domains受限唯讀管理連接**。現無已驗證的一次手機委派頁面／按鈕，不能編造UI；本人現在不用重登入、截圖、手改JSON、寫IAM、跑CLI或回CloudShell。不預排新client／trust／Secret／啟用，OAuth儲存取捨已批准不重批；沒有證WIF根本不可用，不重啟自管主機／VM或替代研究。
+
+證據分(a)已有畫面、(b)官方規格、(c)本租戶API、(d)程式、(e)READ1原生run、(f)Oracle回應、(g)總監讀回、(h)手機MVP；只有a／b及本輪d有上述證據，c/e/f/g未完成、h未交付未測。不稱部署／本人實機／OCI_READ_CONNECTED，不發READ1首讀；待真正授權及資格成立後仍由總監發。
+
+保存及固定GitHub原bytes讀回後停。原唯一Cloud／工程鎖／dev、至少512MiB、FM3 metadata90377／owner／880舊未追蹤／公開main／全部來源與parents／策略及UNKNOWN／false/null保持，不付費／擴權／建Oracle資源／搬資料／交易。以下歷史完整保留，舊本人10步設定指南已封存，不作目前操作。
+
+---
+
 # 2026-11-05 最新有效｜M-OCI-READ1 OAuth已正式批准，條件式runner已交；本人帳戶資格未知
 
 Issue #2 comment6651585478已全文核讀：使用者批准**專用最低權限OAuth confidential client credential存現有私人Repository Secrets**並接受workflow寫入者可能取Secret的風險，不重問同一授權。僅此受限OAuth路線，不能擴張長期OCI API key／付費／自管主機。最新入口[OAuth版工件／能力](codex/oci_read1/oauth_approved/README.md)、[本人一次UI指南](codex/oci_read1/oauth_approved/OWNER_ONCE.md)。下方舊「尚未批准Repo Secrets／自管主機方案」保留歷史，已由本節取代，勿再要求重批或執行舊步驟。

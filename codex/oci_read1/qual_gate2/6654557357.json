@@ -1,0 +1,7 @@
+{
+  "id": 6654557357,
+  "body": "Twstockai M-OCI-READ1｜2026-11-05 17:29（台灣）Oracle 身分域現場畫面驗收。\n\n使用者在本人 Oracle 控制台的 Default domain 詳細資訊頁，畫面顯示 Domain type=Free、Home Region=Japan East (Tokyo)、Status=Active，現場證據可視為 OWNER_CONSOLE_VERIFIED；不把這張截圖上的任何 OCID、URL、租戶細節轉寫到 GitHub。\n\n上一張本人控制台畫面顯示新 Twstockai-Pilot Compartment 為 Active；parent/完全空資源仍未由該截圖獨立驗證。\n\nOracle 官方 2026-09-18 JWT→RPST WIF 文件確認可經IdentityPropagationTrust及/oauth2/v1/token交換，Free domain官方類型表具第三方OAuth且Identity Propagation Trust上限30，Free類型無meters；但本帳戶東京區域實際WIF rollout、目前trust/app剩餘名額、pilot最小IAM授權和實際可交換身分依然UNKNOWN。不能把官方一般功能清單或Free域截圖當作此帳戶已成功設置信任。\n\n下一步只核真正必要條件；不要求使用者在手機搜尋不一定存在的IdentityPropagationTrust UI、不手填account.json或OAuth信任JSON；需安全受信管理入口與使用者不可替代的Oracle授權後，由唯一Codex完成可代辦的設定整合。未核條件不啟READ1、不建立client、不放Repo Secret、不猜IAM、不做root讀取。已通過的GitHub PING不重跑，原US$0費用阻擋與FM3/公開main保持。Oracle實際API仍0。",
+  "html_url": "https://github.com/blue1998-glitch/Twstockai/issues/2#issuecomment-6654557357",
+  "created_at": "2026-11-05T09:32:58Z",
+  "updated_at": "2026-11-05T09:32:58Z"
+}

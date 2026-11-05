@@ -1,3 +1,9 @@
+# 最新QUAL-GATE2入口
+
+[分層實證與實際結果](qual_gate2/README.md)、[目前唯一核實事項](qual_gate2/OWNER_AUTH_ONLY.md)。Free／東京／Active與pilot Active已核保留，不重問。當前BLOCKED_OWNER_AUTH，沒有受信Oracle管理入口，不是未批准儲存風險；READ1仍拒絕。下方舊版／自管主機及多步本人設定均只保留歷史，不執行。
+
+---
+
 # 最新正式OAuth授權版（2026-11-05）
 
 Repo Secret安全取捨已由Issue #2 comment6651585478正式批准，不重批。唯一有效入口[oauth_approved/README.md](oauth_approved/README.md)、[本人集中指南](oauth_approved/OWNER_ONCE.md)。條件式runner已實作並保存，當前阻礙是本人Free domain／WIF／pilot／最小IAM等帳戶資格UNKNOWN，仍未啟用／實讀。下方無密鑰工件與自管主機方案是歷史，不是目前下一步。

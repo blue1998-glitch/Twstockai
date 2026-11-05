@@ -1,0 +1,52 @@
+{
+  "schema": "qual-gate2-private-readback/0.1",
+  "observed_at": "2026-11-05T10:34:09.694285+00:00",
+  "prior_private_commit": "a192ed66b7b0c42624403daa089f30b9f50c3acd",
+  "private_commit": "de9331ef18826d6f20d4b2ed80eb3dd5db6ecc5d",
+  "readback": [
+    {
+      "path": "read1/oauth/account.json",
+      "bytes": 1137,
+      "sha256": "ea565a15db1115bfa1d7b9179bcc105fc9c20cecc54bcc9d0b641925c167c47a",
+      "readback": "EXACT_BYTES"
+    },
+    {
+      "path": "read1/oauth/README.md",
+      "bytes": 2331,
+      "sha256": "8fb7daaf654d5c2233bad540fbccadfb56c5670aa875930fc2ee2a7034555b35",
+      "readback": "EXACT_BYTES"
+    },
+    {
+      "path": "read1/oauth/OWNER_ONCE.md",
+      "bytes": 9599,
+      "sha256": "ce2f23853f42516898cbae1fb21939246eda944a847ce9b8ed4e652ce1aff183",
+      "readback": "EXACT_BYTES"
+    },
+    {
+      "path": "read1/oauth/qual-gate2-evidence.json",
+      "bytes": 5114,
+      "sha256": "92882f78f57fef749f499559c53fbc6a16bbc8cde7f795373e62ff7d4dfa537d",
+      "readback": "EXACT_BYTES"
+    },
+    {
+      "path": "read1/oauth/OWNER_AUTH_ONLY.md",
+      "bytes": 2487,
+      "sha256": "c5c4517dcb98644aa1836d97f7a0f0019063f05f2780ba167d9e660d45d553c4",
+      "readback": "EXACT_BYTES"
+    }
+  ],
+  "protected_existing_blobs_unchanged": 26,
+  "account_changed_fields": "THREE_OBSERVATIONS_ONLY",
+  "runtime_findings_time_config_unchanged": true,
+  "runner_workflow_release_bundle_unchanged": true,
+  "native_runs_before": 3,
+  "native_runs_after": 3,
+  "issue_comments_before": 4,
+  "issue_comments_after": 4,
+  "oracle_api_calls": 0,
+  "management_api_calls": 0,
+  "codex_commands_sent": 0,
+  "secrets_touched": 0,
+  "activation_set": false,
+  "status": "BLOCKED_OWNER_AUTH"
+}

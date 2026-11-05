@@ -1,3 +1,9 @@
+# 2026-11-05 QUAL-GATE2最新實況
+
+已核Default／Free／東京／Active與pilot Active，來源為總監驗收本人畫面；不再用下方舊「domain與pilot皆未知」要求截圖。當前缺受信管理API身分，BLOCKED_OWNER_AUTH；WIF／quota／IAM仍未知，資格時鐘／flags不升格。只讀[QUAL-GATE2](../qual_gate2/README.md)與[目前唯一核實事項](../qual_gate2/OWNER_AUTH_ONLY.md)。runner、package、workflow與release未修改、舊17未重跑。下方條件式工程及本人多步指南保留歷史，現階段不執行。
+
+---
+
 # M-OCI-READ1 OAuth正式批准版｜條件式執行器已實作，帳戶資格待本人核實
 
 **目前NOT_CONNECTED／DEFAULT_DENY_ACCOUNT_UNKNOWN。儲存風險已批准，不再問相同授權；真正Oracle讀取尚未執行。** 最新原件[AUTHORIZATION.json](AUTHORIZATION.json)，Issue #2 comment6651585478。舊self-hosted／Instance Principal方案已被本次OAuth路線取代，不建立主機，不執行舊OWNER_SECURITY_BATCH。
