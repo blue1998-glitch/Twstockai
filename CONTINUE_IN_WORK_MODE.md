@@ -1,3 +1,17 @@
+# 2026-11-05 最新有效｜M-PROD-CORE1 正式每日分析流程已在原Cloud運行
+
+Issue #4正式取代下方Issue #3「附件不可交付即停止內部開發」的前置。最新可運行入口：[正式產品工程／維運與驗收](股票系統M1_v0_18/graph_core/prod_core1_20261105/README.md)。原同一owner `http://127.0.0.1:8765/` 現為正式產品首頁：資料日期／每日完成與新接件狀態、1986檔搜尋、市場／狀態篩選、精確OHLCV、保存核心按需圖及舊日比較。這是Cloud本機入口，**ANDROID_EXTERNAL_NOT_CONNECTED**，不冒手機可達或公開發布。
+
+11/3真實六原件與1986逐股fact／原Journal已經新協調器完整跑通；1955原核心結果重用且仍歷史不足、31來源拒用，本輪真實核心重算0、多日結構新增0。11/4僅作11/5新bounded attempt：4 GET、前3完整，第4上櫃HTTP200 body不完整即停、後2不發，BLOCKED_SOURCE；舊11/4拒絕不重試，11/3有效head保留。完整新日可沿既有parser/core/Journal接成獨立單日段；公司行動／價基底未認證則不接多日。合成雙市場成功與斷點恢復已測，不冒真實新日成功。
+
+單次入口`graph_core.prod_core1_20261105.flow run --date / fetch --date / status`，run/fetch完整批才切正式頁，prepared與已發布head分開；保留同owner認證、白名單、SHA及回滾，不另開網站。未啟日排程。12唯一Python及26實際390／844／1280瀏覽器流程群通過，真實兩市場各2股精確核對、舊11/2／10/30圖與比較及owner拒絕控制保持；新程序重送0核心／0成品／0 GET。本機瀏覽器不是Android本人實機，Cloud未重啟、獨立備份及持久性UNKNOWN。
+
+後續只在本對話原唯一Cloud、`/workspace/Twstockai`、dev分支及既有engineering.lock下寫入：先當前environment_status核ID與原入口，再`codex/unified_workspace.py`持有lease；原FM3 metadata90377／880歷史untracked、main、私庫bridge、原件／核心／MA／MACD／全部parents、來源及UNKNOWN／false/null不變。每次寫入前核至少512MiB；私人行情／完整結果／圖／憑證不進Git。新正式工程不等批准策略、資金比例、全面撤退觸發或自動交易。最高目標仍為成本後全帳戶長期成長、可控風險、資金用途與適應性方法；研究及合成只作驗證，不作產品主名稱。
+
+唯一下一優先：核原Cloud平台支援後，提出本人免費Tailscale私人HTTPS接原owner的單次授權，不開Funnel／公網、不搬FM3／啟Oracle。**尚未批准或執行此連接，沒有可編造的手機URL**；本輪完成程式、真實內部閉環與固定GitHub讀回後停止。最新固定SHA／逐檔原bytes收據見工程目錄GITHUB_READBACK；下方全部歷史完整保留，當時阻塞不覆蓋本節。
+
+---
+
 # 2026-11-05 最新有效｜M-MVP-MOBILE-SLICE1：ARTIFACT_NOT_USER_ACCESSIBLE，交付前置早停
 
 Issue #3已全文讀取，主線改為真實全市場Android離線單檔，Oracle研究／派工暫停，既有OAuth批准及成果不撤銷。結果：[交付前置觀察](docs/delivery-blockers/mobile_slice1_20261105/README.md)。原Cloud／工程鎖／dev及FM3可讀，但本輪沒有可呼叫的HTML附件輸出、已驗私有下載通道或可交付artifact URL；incoming download_file不具對外發布能力，owner只限Cloud loopback。不可把本機路徑或推測sandbox連結當手機下載，也不可上傳真實行情到GitHub／公開站來繞過。
