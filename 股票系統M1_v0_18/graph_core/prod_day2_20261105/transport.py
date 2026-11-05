@@ -8,7 +8,7 @@ from urllib.request import Request
 from urllib.error import HTTPError
 from http.client import IncompleteRead
 from graph_core.day1_20261103.probe_once import SAFE_HEADERS
-SAFE=SAFE_HEADERS|{'accept-ranges','connection'}
+SAFE=SAFE_HEADERS|{'accept-ranges','connection','content-range'}
 CHUNK=65536
 MAX_BODY=16*1024**2
 class Refused(ValueError):pass
@@ -24,7 +24,7 @@ def wall_deadline(seconds):
     try:yield
     finally:signal.setitimer(signal.ITIMER_REAL,0);signal.signal(signal.SIGALRM,prior)
 
-def receive(opener,url,*,stamp,max_seconds=180,max_body=MAX_BODY,clock=time.monotonic):
+def receive(opener,url,*,stamp,max_seconds=180,max_body=MAX_BODY,clock=time.monotonic,allowed_statuses=(200,),validate_headers=None):
     start=clock();parts=[];n=0;h=hashlib.sha256();trace=dict(url=url,started_at=stamp(),http_status=None,headers={},complete=False,redirects_followed=False,read_chunk_bound=CHUNK,read_calls=0)
     # Identity encoding preserves the declared-byte relation. Do not ask for a
     # Range of the old failed body; the NEW attempt is an independent whole GET.
@@ -33,8 +33,9 @@ def receive(opener,url,*,stamp,max_seconds=180,max_body=MAX_BODY,clock=time.mono
             with opener.open(url,timeout=min(35,max_seconds)) as response:
                 headers={k.lower():v for k,v in response.headers.items()}
                 trace.update(http_status=response.status,effective_url=response.geturl(),headers={k:v for k,v in headers.items() if k in SAFE})
-                if response.status!=200 or response.geturl()!=url:raise Refused('STATUS_OR_REDIRECT_REFUSED')
+                if response.status not in allowed_statuses or response.geturl()!=url:raise Refused('STATUS_OR_REDIRECT_REFUSED')
                 if headers.get('content-encoding','identity').lower() not in ('','identity'):raise Refused('UNREQUESTED_CONTENT_ENCODING')
+                if validate_headers is not None:validate_headers(response.status,headers)
                 length=headers.get('content-length');transfer=headers.get('transfer-encoding','').lower()
                 if length is not None and (not length.isdigit() or int(length)>max_body):raise Refused('DECLARED_LENGTH_INVALID_OR_OVER_BOUND')
                 if transfer and length is not None:raise Refused('AMBIGUOUS_HTTP_FRAMING')

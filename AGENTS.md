@@ -1,3 +1,15 @@
+# 2026-11-05 最新有效｜M-PROD-SOURCE3：完整200為11/5；本輪日別資格受阻，正式頁仍11/3
+
+Issue #6全文派工已執行；[安全Range／真實回應／停止證據](股票系統M1_v0_18/graph_core/prod_source3_20261105/README.md)。原件實核最長prefix4,570,729、缺758,370；唯一Range＋If-Range實回**200完整新正文**5,329,099 bytes、ETag已更替，獨立保存、不拼舊partial。原quote_map證唯一Date11/5，不能與已保存上市11/4混接；舊partial資料日期未升格。不要再把「此次仍EOF」當目前結果，也不能把工程206測試冒真實206成功。
+
+唯一替代官方接口也完整HTTP200、Date11/5；日期不符即不採，欄位同名不推股數／CFI或授權資格。主GET1＋替代GET1／重試0／分類GET0，**來源額度已用完，不再請求或改名重抓**。11/5原當日閘實測PRIOR_CLOSED_DATE_ONLY，0GET／0新檔；缺同日六原件，未改時間或資格。完整11/5上櫃body留私人獨立候選，非整日合格批。
+
+原owner仍127.0.0.1:8765、11/3／1986／1955歷史不足／31拒用；同頁已讀最新原因，原有效head相同。本輪新股更新0、核心0、Journal0；10唯一新Python通過、真實重送0GET／0新檔，沒有重跑舊26／1955或新增預覽／網站。Android外部未連、實機未測、日排程未啟用，不冒日更完成。
+
+只原唯一Cloud／repo／dev／既有lock寫入。至少512MiB、FM3 metadata90377、880舊untracked、main／bridge、私人原件／帳務／來源0.10及parents／策略與UNKNOWN、false/null全部保持。不啟Oracle、新網路、部署、付費或交易。完成GitHub固定SHA逐檔讀回即停；下一步僅由總監在原日期閘允許後續派11/5同日雙市場六件與原流程發布，不在本輪輪詢或放寬當日規則。以下歷史完整保留。
+
+---
+
 # 2026-11-05 最新有效｜M-PROD-DAY2 傳輸修正接線完成；唯一新重取仍EOF，停在來源閘
 
 Issue #5已全文讀取；[實作／實際原件診斷／驗收](股票系統M1_v0_18/graph_core/prod_day2_20261105/README.md)。原正式flow→daily_chain1 intake現接transport.receive（64KiB、硬牆鐘、精確HTTP framing／partial診斷）；原來源／日期／CFI／基底／公司行動閘不變。原producer封存，新reader讀舊attempt仍0GET；沒有預覽或第二引擎。
