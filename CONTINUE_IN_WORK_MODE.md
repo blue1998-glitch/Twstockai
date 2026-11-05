@@ -1,3 +1,11 @@
+# 2026-11-05 最新有效｜M-OCI-BRIDGE1私庫已可讀寫，固定審查版已交付
+
+最新指令Issue #2 comment6648037730，接續入口codex/oci_bridge1/PRIVATE_STAGE_HANDOFF.md及OWNER_ONCE.md。私庫已確認Private／repo1446437252／main／#1，正常寫入固定版本d499b85c284526dda213fee9edcb3f4b237d35dd及7檔bytes讀回完成；不再要求建庫或重批。App installation membership已實核，敏感綁定只私庫／Git外保存。
+
+只新增stage交付audit及6方法，舊16／13沿用不重跑。NOT_CONNECTED，Actions run與Oracle API0；未配置active workflow／環境／Secrets。管理Actions、建立環境、Billing均403，不能以私庫可寫推免費／管理權。所有本人Billing與Oracle專用身分／私鑰直送受保護Secret操作集中OWNER_ONCE；未驗費用不啟job、不手動改True。未取得原生事件／OIDC／Oracle證據不稱完成。原Cloud／工程鎖／dev／512MiB、FM3／owner／公開main／策略與全部歷史保持；不建機、不搬資料、不付費、不新Codex。以下歷史保留。
+
+---
+
 # 2026-11-05 最新有效｜M-OCI-BRIDGE1已正式批准，建庫／Billing權限受阻
 
 正式批准Issue #2 comment6647255490已全文讀回；不再要求相同範圍重批。最新入口codex/oci_bridge1/APPROVED_STAGE.md，集中本人操作OWNER_SETUP.md。原GitHub身分建private repo POST403，Billing API403；未建庫／未配置workflow或Secret，未啟Actions／Oracle讀取，NOT_CONNECTED。GET404不是原件不存在證據。

@@ -1,3 +1,9 @@
+# 2026-11-05 最新入口：私庫已交付
+
+請先讀PRIVATE_STAGE_HANDOFF.md與OWNER_ONCE.md。私庫已建並可讀寫，不重建／不重批；以下保留前輪歷史，不當本輪待辦。
+
+---
+
 # 已於2026-11-05正式批准
 
 授權來源APPROVAL.json／Issue #2 comment6647255490。下方是已批准原案，不再要求重批；執行狀態見APPROVED_STAGE.md。

@@ -1,3 +1,9 @@
+# 2026-11-05 最新入口：私庫已交付
+
+請先讀PRIVATE_STAGE_HANDOFF.md與OWNER_ONCE.md。私庫已建並可讀寫，不重建／不重批；以下保留前輪歷史，不當本輪待辦。
+
+---
+
 # 2026-11-05 正式批准後最新狀態
 
 [APPROVED_STAGE.md](APPROVED_STAGE.md)：授權已取得；private建庫與Billing均403，實際NOT_CONNECTED。13本輪receiver方法不冒實際橋接；舊16為前輪紀錄。[本人集中操作](OWNER_SETUP.md)，不再逐張上傳或CloudShell診斷。下方原樣機歷史保留。
