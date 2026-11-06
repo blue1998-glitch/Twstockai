@@ -1,3 +1,15 @@
+# 2026-11-06 最新有效｜M-PROD-ACCESS1：Tailscale已批准；原Cloud私人入口受平台／容量阻塞
+
+[Issue #9](https://github.com/blue1998-glitch/Twstockai/issues/9)及本人批准留言6674095130已全文核讀，不再要求同一授權。[精準核查／停止證據](股票系統M1_v0_18/graph_core/prod_access1_20261106/README.md)。當前仍原Cloud／repo／dev／engineering.lock，原owner127.0.0.1:8765正常、認證200／匿名401，正式11/5／1986／1967歷史不足／19來源拒用未變。沒有新股票分析、預覽、網站或策略。
+
+現場free537358336、512MiB保留後僅487424 bytes；無Tailscale CLI／daemon。官方amd64套件HEAD申報41369843 bytes（未下載、未驗SHA／解壓容量），安全安裝不成立。runtime的Tailscale整合是sidecar出站HTTP/TCP CONNECT，無可操作的私人入站Serve控制，規格禁止在executor自行安裝／重設；vpn_configured=false。缺TUN不單獨當不能userspace的證明，出站VPN也不冒手機入站。未改proxy、路由或policy／未安裝啟動登入／Serve／Funnel，不能把既有批准當平台已支援。
+
+Personal官方非商用$0文件已讀，實際本人tailnet方案未登入未核。私人HTTPS=null、Android未連／本人實機未測，24/7及重啟持久性／獨立備份UNKNOWN。本人目前不必登入、准VPN、交密鑰或搬檔。總監唯一先核原Cloud是否可提供受支援私人入站Serve及足夠安全安裝空間；不改平台／清理FM3／擴容／付費。前提成立才一次本人登入Cloud節點＋Android官方App/VPN＋原owner，屆時只提供實際驗證網址。
+
+只存精簡觀察及固定GitHub讀回，依Issue9條件停止，不冒手機里程碑成功。原FM3 metadata90377／原heads／880舊untracked、main／私庫bridge、來源0.10與全部parents、核心與策略及UNKNOWN／false/null保持；日排程、Oracle、移轉、公開網站及交易均0。下方全部歷史保留；舊「尚未批准Tailscale」僅為當時紀錄，已由Issue9批准取代。
+
+---
+
 # 2026-11-06 最新有效｜M-PROD-DAY4：11/5真實全市場批次已在原正式產品發布
 
 Issue #8已全文執行；[工程／來源／資源／驗收](股票系統M1_v0_18/graph_core/prod_day4_20261106/README.md)。原owner `http://127.0.0.1:8765/` 預設11/5，1986檔（TWSE1089／TPEX897）唯一終態：1967原核心／Journal完成且歷史不足，19來源拒用，工程失敗0。保留11/3、11/2、10/30及原比較；不是新預覽。原完整上櫃200 body5,329,099 bytes逐bytes重用，新上櫃行情GET0；其餘五件各一次完整200，原六源閘同日通過，重試0。未拼接FinMind／11/2等未認證歷史，不把單日完成冒多日圖形或交易訊號。
