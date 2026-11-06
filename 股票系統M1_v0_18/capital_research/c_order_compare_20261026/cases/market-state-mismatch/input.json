@@ -1,0 +1,23 @@
+{
+  "schema": "capital-c-order-comparison-example/0.1",
+  "base_commit": "63a81306b0d181dd47339b3bca01fd6347b94881",
+  "synthetic": true,
+  "items": [
+    {
+      "label": "原市場OPEN",
+      "source": {
+        "path": "股票系統M1_v0_18/capital_research/c_order_review_20261026/after-checkpoint-fix/valid-C-same-order/actual.json",
+        "bytes": 644653,
+        "sha256": "2570de4d79b7cc70dcd4fcc1cb04d17244fe596130498dbf0c8a95e6a8d0b695"
+      }
+    },
+    {
+      "label": "另一市場漲停",
+      "source": {
+        "path": "股票系統M1_v0_18/capital_research/c_order_review_20261026/after-checkpoint-fix/valid-review-but-limit-up/actual.json",
+        "bytes": 641401,
+        "sha256": "cb573f234766c38a7657030f2e14c4b252393e06a2a4afbdd832e3ad83a96bbb"
+      }
+    }
+  ]
+}

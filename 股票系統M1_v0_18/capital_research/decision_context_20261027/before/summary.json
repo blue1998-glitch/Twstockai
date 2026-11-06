@@ -1,0 +1,188 @@
+[
+  {
+    "case": "initial",
+    "context": "normal",
+    "equal_original": true,
+    "error": null,
+    "calls": {
+      "decide": 1,
+      "resume": 0,
+      "inner_decide": 1,
+      "bind_resume": 0,
+      "ledger_replay": 0,
+      "simulate": 0,
+      "replay_sequence": 0,
+      "save": 0
+    },
+    "caller_context_unchanged": true,
+    "input_unchanged": true
+  },
+  {
+    "case": "initial",
+    "context": "round-up",
+    "equal_original": true,
+    "error": null,
+    "calls": {
+      "decide": 1,
+      "resume": 0,
+      "inner_decide": 1,
+      "bind_resume": 0,
+      "ledger_replay": 0,
+      "simulate": 0,
+      "replay_sequence": 0,
+      "save": 0
+    },
+    "caller_context_unchanged": true,
+    "input_unchanged": true
+  },
+  {
+    "case": "initial",
+    "context": "round-down",
+    "equal_original": true,
+    "error": null,
+    "calls": {
+      "decide": 1,
+      "resume": 0,
+      "inner_decide": 1,
+      "bind_resume": 0,
+      "ledger_replay": 0,
+      "simulate": 0,
+      "replay_sequence": 0,
+      "save": 0
+    },
+    "caller_context_unchanged": true,
+    "input_unchanged": true
+  },
+  {
+    "case": "initial",
+    "context": "inexact-trap",
+    "equal_original": true,
+    "error": null,
+    "calls": {
+      "decide": 1,
+      "resume": 0,
+      "inner_decide": 1,
+      "bind_resume": 0,
+      "ledger_replay": 0,
+      "simulate": 0,
+      "replay_sequence": 0,
+      "save": 0
+    },
+    "caller_context_unchanged": true,
+    "input_unchanged": true
+  },
+  {
+    "case": "initial",
+    "context": "narrow-exponents",
+    "equal_original": false,
+    "error": {
+      "type": "Overflow",
+      "detail": "[<class 'decimal.Overflow'>]"
+    },
+    "calls": {
+      "decide": 1,
+      "resume": 0,
+      "inner_decide": 1,
+      "bind_resume": 0,
+      "ledger_replay": 0,
+      "simulate": 0,
+      "replay_sequence": 0,
+      "save": 0
+    },
+    "caller_context_unchanged": true,
+    "input_unchanged": true
+  },
+  {
+    "case": "resume",
+    "context": "normal",
+    "equal_original": true,
+    "error": null,
+    "calls": {
+      "decide": 0,
+      "resume": 1,
+      "inner_decide": 1,
+      "bind_resume": 1,
+      "ledger_replay": 2,
+      "simulate": 0,
+      "replay_sequence": 0,
+      "save": 0
+    },
+    "caller_context_unchanged": true,
+    "input_unchanged": true
+  },
+  {
+    "case": "resume",
+    "context": "round-up",
+    "equal_original": true,
+    "error": null,
+    "calls": {
+      "decide": 0,
+      "resume": 1,
+      "inner_decide": 1,
+      "bind_resume": 1,
+      "ledger_replay": 2,
+      "simulate": 0,
+      "replay_sequence": 0,
+      "save": 0
+    },
+    "caller_context_unchanged": true,
+    "input_unchanged": true
+  },
+  {
+    "case": "resume",
+    "context": "round-down",
+    "equal_original": true,
+    "error": null,
+    "calls": {
+      "decide": 0,
+      "resume": 1,
+      "inner_decide": 1,
+      "bind_resume": 1,
+      "ledger_replay": 2,
+      "simulate": 0,
+      "replay_sequence": 0,
+      "save": 0
+    },
+    "caller_context_unchanged": true,
+    "input_unchanged": true
+  },
+  {
+    "case": "resume",
+    "context": "inexact-trap",
+    "equal_original": true,
+    "error": null,
+    "calls": {
+      "decide": 0,
+      "resume": 1,
+      "inner_decide": 1,
+      "bind_resume": 1,
+      "ledger_replay": 2,
+      "simulate": 0,
+      "replay_sequence": 0,
+      "save": 0
+    },
+    "caller_context_unchanged": true,
+    "input_unchanged": true
+  },
+  {
+    "case": "resume",
+    "context": "narrow-exponents",
+    "equal_original": false,
+    "error": {
+      "type": "Overflow",
+      "detail": "[<class 'decimal.Overflow'>]"
+    },
+    "calls": {
+      "decide": 0,
+      "resume": 1,
+      "inner_decide": 0,
+      "bind_resume": 1,
+      "ledger_replay": 1,
+      "simulate": 0,
+      "replay_sequence": 0,
+      "save": 0
+    },
+    "caller_context_unchanged": true,
+    "input_unchanged": true
+  }
+]

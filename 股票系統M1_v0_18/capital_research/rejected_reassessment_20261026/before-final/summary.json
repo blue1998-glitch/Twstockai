@@ -1,0 +1,188 @@
+{
+  "restrictive-unfilled": {
+    "review_feasible": false,
+    "review_B_qualified": false,
+    "review_restriction_conflicts": {
+      "sha256:fd1ef73a5b4c63f542cfe9902be987297c477580314d363bdf5c9453f31b3ee7": [
+        {
+          "observed_at": "2026-01-08T17:00:00+08:00",
+          "identity": {
+            "code": "B",
+            "kind": "EVIDENCE",
+            "id": "B-event",
+            "source_id": "fixture",
+            "basis_id": "RAW:fixture:B",
+            "adjustment_version": "RAW:synthetic/1"
+          },
+          "content_id": "sha256:ad57578e120b54282da88632bb19dddd0a249ebffffa4129da35a9e54b961303",
+          "restriction_fields": [
+            "valid_until"
+          ],
+          "validity": {
+            "available_at": "2026-01-05T14:00:00+08:00",
+            "invalidation": null,
+            "qualification": "EXPLICIT_SYNTHETIC_INTERVAL",
+            "schema": "capital-fact-validity/0.1",
+            "source_ids": [
+              "fixture"
+            ],
+            "valid_from": "2026-01-05T14:00:00+08:00",
+            "valid_until": "2026-01-10T16:00:00+08:00"
+          },
+          "reasons": [
+            "FACT_CONTENT_REWRITE_NOT_IMPLEMENTED"
+          ]
+        }
+      ]
+    },
+    "B_fill_shares": "0",
+    "order_state": {
+      "remaining": "20",
+      "status": "OPEN",
+      "reserved_cash": "402.0006",
+      "requires_reassessment": false,
+      "active_decision_at": "2026-01-05T15:00:00+08:00",
+      "active_decision_id": "sha256:92ce2bd27599f49a6be04b5376a3f4bba60022091c980a57fb809d1541035d84"
+    },
+    "retained_attempts": [],
+    "restored_B_qualified": true,
+    "restored_candidate_ids": [
+      "A-zero",
+      "D-cash",
+      "E-joint",
+      "E-partial"
+    ]
+  },
+  "restrictive-funded-fill": {
+    "review_feasible": false,
+    "review_B_qualified": false,
+    "review_restriction_conflicts": {
+      "sha256:fd1ef73a5b4c63f542cfe9902be987297c477580314d363bdf5c9453f31b3ee7": [
+        {
+          "observed_at": "2026-01-08T17:00:00+08:00",
+          "identity": {
+            "code": "B",
+            "kind": "EVIDENCE",
+            "id": "B-event",
+            "source_id": "fixture",
+            "basis_id": "RAW:fixture:B",
+            "adjustment_version": "RAW:synthetic/1"
+          },
+          "content_id": "sha256:ad57578e120b54282da88632bb19dddd0a249ebffffa4129da35a9e54b961303",
+          "restriction_fields": [
+            "valid_until"
+          ],
+          "validity": {
+            "available_at": "2026-01-05T14:00:00+08:00",
+            "invalidation": null,
+            "qualification": "EXPLICIT_SYNTHETIC_INTERVAL",
+            "schema": "capital-fact-validity/0.1",
+            "source_ids": [
+              "fixture"
+            ],
+            "valid_from": "2026-01-05T14:00:00+08:00",
+            "valid_until": "2026-01-10T16:00:00+08:00"
+          },
+          "reasons": [
+            "FACT_CONTENT_REWRITE_NOT_IMPLEMENTED"
+          ]
+        }
+      ]
+    },
+    "B_fill_shares": "20",
+    "order_state": {
+      "remaining": "0",
+      "status": "FILLED",
+      "reserved_cash": "0",
+      "requires_reassessment": false,
+      "active_decision_at": "2026-01-05T15:00:00+08:00",
+      "active_decision_id": "sha256:92ce2bd27599f49a6be04b5376a3f4bba60022091c980a57fb809d1541035d84"
+    },
+    "retained_attempts": [],
+    "restored_B_qualified": null,
+    "restored_candidate_ids": null
+  },
+  "value-only-rejection": {
+    "review_feasible": false,
+    "review_B_qualified": false,
+    "review_restriction_conflicts": {},
+    "B_fill_shares": "20",
+    "order_state": {
+      "remaining": "0",
+      "status": "FILLED",
+      "reserved_cash": "0",
+      "requires_reassessment": false,
+      "active_decision_at": "2026-01-05T15:00:00+08:00",
+      "active_decision_id": "sha256:92ce2bd27599f49a6be04b5376a3f4bba60022091c980a57fb809d1541035d84"
+    },
+    "retained_attempts": [],
+    "restored_B_qualified": null,
+    "restored_candidate_ids": null
+  },
+  "valid-review": {
+    "review_feasible": true,
+    "review_B_qualified": true,
+    "review_restriction_conflicts": {},
+    "B_fill_shares": "20",
+    "order_state": {
+      "remaining": "0",
+      "status": "FILLED",
+      "reserved_cash": "0",
+      "requires_reassessment": false,
+      "active_decision_at": "2026-01-08T17:00:00+08:00",
+      "active_decision_id": "sha256:6959d2af98e01ff6646964a3e8c4f1a628715cd6cb68441775157165c858793e"
+    },
+    "retained_attempts": [],
+    "restored_B_qualified": null,
+    "restored_candidate_ids": null
+  },
+  "conditional-rejection": {
+    "review_feasible": false,
+    "review_B_qualified": false,
+    "review_restriction_conflicts": {
+      "sha256:fd1ef73a5b4c63f542cfe9902be987297c477580314d363bdf5c9453f31b3ee7": [
+        {
+          "observed_at": "2026-01-08T17:00:00+08:00",
+          "identity": {
+            "code": "B",
+            "kind": "EVIDENCE",
+            "id": "B-event",
+            "source_id": "fixture",
+            "basis_id": "RAW:fixture:B",
+            "adjustment_version": "RAW:synthetic/1"
+          },
+          "content_id": "sha256:ad57578e120b54282da88632bb19dddd0a249ebffffa4129da35a9e54b961303",
+          "restriction_fields": [
+            "valid_until"
+          ],
+          "validity": {
+            "available_at": "2026-01-05T14:00:00+08:00",
+            "invalidation": null,
+            "qualification": "EXPLICIT_SYNTHETIC_INTERVAL",
+            "schema": "capital-fact-validity/0.1",
+            "source_ids": [
+              "fixture"
+            ],
+            "valid_from": "2026-01-05T14:00:00+08:00",
+            "valid_until": "2026-01-10T16:00:00+08:00"
+          },
+          "reasons": [
+            "FACT_CONTENT_REWRITE_NOT_IMPLEMENTED"
+          ]
+        }
+      ]
+    },
+    "B_fill_shares": "0",
+    "order_state": {
+      "remaining": "20",
+      "status": "WAITING_REASSESSMENT",
+      "reserved_cash": "0",
+      "requires_reassessment": true,
+      "active_decision_at": "2026-01-05T15:00:00+08:00",
+      "active_decision_id": "sha256:5d1a9939e9bf56ca28f043d8aaa3ef6b0ab39ae378bfa551850fb879c319a953"
+    },
+    "retained_attempts": [],
+    "restored_B_qualified": null,
+    "restored_candidate_ids": null
+  }
+}

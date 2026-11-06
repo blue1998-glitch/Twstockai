@@ -1,0 +1,134 @@
+{
+  "baseline": "5f18238d6b2d2e1dec87da22d23a5bd3e1ff351a",
+  "scope": "Only complete core.decide and resume_decision numerical context including predecessor/checkpoint proof",
+  "version": "0.9.1-deterministic-decimal-context",
+  "schemas_unchanged": [
+    "capital-decision/0.8",
+    "capital-decision/0.9"
+  ],
+  "before": {
+    "positive_controls": 10,
+    "matching_original_projection": 8,
+    "Overflow": 2
+  },
+  "before_rejections": {
+    "controls": 10,
+    "expected_ValueError": 6,
+    "masked_by_Clamped": 4,
+    "no_acceptance_or_execution": true
+  },
+  "after": {
+    "positive_controls": 10,
+    "matching_original_projection": 10,
+    "rejections": 10,
+    "expected_ValueError": 10
+  },
+  "tests": {
+    "unique_methods": 6,
+    "method_executions": 6,
+    "all_pass_first_run": true,
+    "historical_PASS_added": 0
+  },
+  "evidence_expectation": "Exact saved decision plus predeclared input/checkpoint metadata projection; not a newly run oracle and not a claim that the complete wrapper existed as an original file",
+  "additional_capital_audit": {
+    "origin_initial_capital": "2230",
+    "current_resume_value": "2226.660",
+    "settled_cash": "1056.660",
+    "reserve": "100",
+    "holdings": {
+      "A": "80",
+      "B": "7",
+      "C": "2"
+    },
+    "cash_claim": "80",
+    "share_claim": "10",
+    "original_fill_ids": [
+      "r1-A-fill-0",
+      "r1-B-fill-1"
+    ],
+    "remaining_expired": {
+      "A": "30",
+      "B": "13"
+    },
+    "original_opening_rights_latest_all_tokens_unchanged": true,
+    "not_just_terminal_equality": true
+  },
+  "fresh_process_calls": [
+    {
+      "case": "initial",
+      "actual_id": "sha256:c7fd70bdb4bb564c3f7709d1a1eafa8631a89076b394ab02e5cdffcee9bd23c7",
+      "equal_original_projection": true,
+      "input_unchanged": true,
+      "caller_unchanged": true,
+      "DefaultContext_unchanged": true,
+      "calls": {
+        "decide": 1,
+        "resume": 0,
+        "inner_decide": 1,
+        "bind_resume": 0,
+        "ledger_replay": 0,
+        "simulate": 0,
+        "replay_sequence": 0,
+        "save": 0
+      },
+      "guard": "NO_WRITE_NO_NETWORK_NO_NEW_EXECUTION_OR_REPLAY_SEQUENCE"
+    },
+    {
+      "case": "resume",
+      "actual_id": "sha256:76a0566d6154461d8736ef4aaef6c91c1cfc6a08e4990a46c4c1801196f2ca00",
+      "equal_original_projection": true,
+      "input_unchanged": true,
+      "caller_unchanged": true,
+      "DefaultContext_unchanged": true,
+      "calls": {
+        "decide": 0,
+        "resume": 1,
+        "inner_decide": 1,
+        "bind_resume": 1,
+        "ledger_replay": 2,
+        "simulate": 0,
+        "replay_sequence": 0,
+        "save": 0
+      },
+      "guard": "NO_WRITE_NO_NETWORK_NO_NEW_EXECUTION_OR_REPLAY_SEQUENCE"
+    }
+  ],
+  "self_review": {
+    "original_resume_body_mechanically_preserved": true,
+    "no_formula_strategy_accounting_qualification_changes": true,
+    "pure_call_and_caller_input_DefaultContext_preserved": true,
+    "rejections_never_promoted_to_qualification": true,
+    "existing_quantity_gate_full_output_equal": true,
+    "no_implicit_schema_migration": true
+  },
+  "not_executed": [
+    "old suites",
+    "full C/same-order0.9 matrix",
+    "nine paths",
+    "market replay or real producer",
+    "source qualification recomputation",
+    "new prices/sources",
+    "UI/Android",
+    "out of sample"
+  ],
+  "formal_qualification": false,
+  "primary_pressure": null,
+  "true_source_counts": {
+    "refused": 70,
+    "insufficient": 2,
+    "exchange_unsupported_in_refused": 8,
+    "qualified_real_total_net": 0
+  },
+  "unsupported_unchanged": [
+    "R2/F",
+    "source authentication",
+    "credit",
+    "opening payables and external ongoing orders",
+    "full branch matrix"
+  ],
+  "Astra": "NOT_OBTAINED_NOT_READ",
+  "rescue_originals": "NOT_OBTAINED_NOT_READ",
+  "manual_action_required": false,
+  "authorization": "Standing functional milestone normal commit/push and fixed-SHA GitHub readback; no deployment/trade/message",
+  "save_status": "Prepared; exact fixed commit and readback reported after normal save"
+}

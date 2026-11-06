@@ -1,0 +1,197 @@
+[
+  {
+    "name": "draft-II",
+    "status": "CONTEXT_PREPARED_RESEARCH_INPUTS_PENDING",
+    "error": null,
+    "matched": true,
+    "calls": {
+      "context": 1,
+      "source_validate": 1,
+      "qualify": 0,
+      "ledger_replay": 0,
+      "capital_simulate": 0,
+      "quantity_replay": 0,
+      "legacy_prepare": 0
+    }
+  },
+  {
+    "name": "selected-regular",
+    "status": "CONTEXT_PREPARED_RESEARCH_INPUTS_PENDING",
+    "error": null,
+    "matched": true,
+    "calls": {
+      "context": 1,
+      "source_validate": 1,
+      "qualify": 0,
+      "ledger_replay": 0,
+      "capital_simulate": 0,
+      "quantity_replay": 0,
+      "legacy_prepare": 0
+    }
+  },
+  {
+    "name": "selected-odd",
+    "status": "CONTEXT_PREPARED_RESEARCH_INPUTS_PENDING",
+    "error": null,
+    "matched": true,
+    "calls": {
+      "context": 1,
+      "source_validate": 1,
+      "qualify": 0,
+      "ledger_replay": 0,
+      "capital_simulate": 0,
+      "quantity_replay": 0,
+      "legacy_prepare": 0
+    }
+  },
+  {
+    "name": "wrong-I-opportunity",
+    "status": null,
+    "error": "MAIN_TRACK_OPPORTUNITY_BINDING_REQUIRED",
+    "matched": true,
+    "calls": {
+      "context": 1,
+      "source_validate": 1,
+      "qualify": 0,
+      "ledger_replay": 0,
+      "capital_simulate": 0,
+      "quantity_replay": 0,
+      "legacy_prepare": 0
+    }
+  },
+  {
+    "name": "I-price-in-II",
+    "status": null,
+    "error": "RAW_MODEL_MATERIAL_VALUE_MISMATCH",
+    "matched": true,
+    "calls": {
+      "context": 1,
+      "source_validate": 1,
+      "qualify": 0,
+      "ledger_replay": 0,
+      "capital_simulate": 0,
+      "quantity_replay": 0,
+      "legacy_prepare": 0
+    }
+  },
+  {
+    "name": "ordinary-as-odd",
+    "status": null,
+    "error": "CHANNEL_ROLE_OR_SOURCE_MISMATCH",
+    "matched": true,
+    "calls": {
+      "context": 1,
+      "source_validate": 1,
+      "qualify": 0,
+      "ledger_replay": 0,
+      "capital_simulate": 0,
+      "quantity_replay": 0,
+      "legacy_prepare": 0
+    }
+  },
+  {
+    "name": "odd-price-from-open",
+    "status": null,
+    "error": "CHANNEL_ROLE_OR_SOURCE_MISMATCH",
+    "matched": true,
+    "calls": {
+      "context": 1,
+      "source_validate": 1,
+      "qualify": 0,
+      "ledger_replay": 0,
+      "capital_simulate": 0,
+      "quantity_replay": 0,
+      "legacy_prepare": 0
+    }
+  },
+  {
+    "name": "daily-volume-as-first-capacity",
+    "status": null,
+    "error": "CAPACITY_OR_EXECUTION_EVIDENCE_NOT_IMPLEMENTED",
+    "matched": true,
+    "calls": {
+      "context": 1,
+      "source_validate": 1,
+      "qualify": 0,
+      "ledger_replay": 0,
+      "capital_simulate": 0,
+      "quantity_replay": 0,
+      "legacy_prepare": 0
+    }
+  },
+  {
+    "name": "unknown-material",
+    "status": null,
+    "error": "EXPLICIT_SINGLE_KNOWN_MATERIAL_REQUIRED",
+    "matched": true,
+    "calls": {
+      "context": 1,
+      "source_validate": 0,
+      "qualify": 0,
+      "ledger_replay": 0,
+      "capital_simulate": 0,
+      "quantity_replay": 0,
+      "legacy_prepare": 0
+    }
+  },
+  {
+    "name": "multiple-materials",
+    "status": null,
+    "error": "EXPLICIT_SINGLE_KNOWN_MATERIAL_REQUIRED",
+    "matched": true,
+    "calls": {
+      "context": 1,
+      "source_validate": 0,
+      "qualify": 0,
+      "ledger_replay": 0,
+      "capital_simulate": 0,
+      "quantity_replay": 0,
+      "legacy_prepare": 0
+    }
+  },
+  {
+    "name": "policy-promotion",
+    "status": null,
+    "error": "RESEARCH_CONTROL_NOT_AUTHORIZED",
+    "matched": true,
+    "calls": {
+      "context": 1,
+      "source_validate": 0,
+      "qualify": 0,
+      "ledger_replay": 0,
+      "capital_simulate": 0,
+      "quantity_replay": 0,
+      "legacy_prepare": 0
+    }
+  },
+  {
+    "name": "unsupported-6488",
+    "status": null,
+    "error": "ONLY_ORIGINAL_1101_2884_CASE_SUPPORTED",
+    "matched": true,
+    "calls": {
+      "context": 1,
+      "source_validate": 0,
+      "qualify": 0,
+      "ledger_replay": 0,
+      "capital_simulate": 0,
+      "quantity_replay": 0,
+      "legacy_prepare": 0
+    }
+  },
+  {
+    "name": "synthetic-relabel",
+    "status": null,
+    "error": "EXPLICIT_REAL_CASE_CONTEXT_REQUIRED",
+    "matched": true,
+    "calls": {
+      "context": 1,
+      "source_validate": 0,
+      "qualify": 0,
+      "ledger_replay": 0,
+      "capital_simulate": 0,
+      "quantity_replay": 0,
+      "legacy_prepare": 0
+    }
+  }
+]

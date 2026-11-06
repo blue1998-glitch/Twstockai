@@ -1,0 +1,73 @@
+{
+  "python_unique_methods": 18,
+  "new_synthetic_methods": 14,
+  "necessary_existing_methods": 4,
+  "all_final_methods_passed": true,
+  "browser_final_checks": 32,
+  "browser_exact_downloads": 24,
+  "viewports": [
+    [
+      1280,
+      900
+    ],
+    [
+      390,
+      844
+    ],
+    [
+      844,
+      390
+    ],
+    [
+      320,
+      800
+    ]
+  ],
+  "browser_javascript_errors": [],
+  "browser_external_requests": [],
+  "initial_test_helper_failure": "Initial browser helper read Journal envelope without value, producing expected=undefined; actual/raw assertion log retained only outside Git. Also corrected not-yet-executed invalid interaction option to existing query. No market oracle changed.",
+  "real_initial_intake_refusals": "Two all-zero/no-volume historical placeholder days first refused; raw kept, new explicit nullable-price adaptation and reset covered by synthetic/real checks. Legacy bounded adapter unchanged.",
+  "real_readback": {
+    "stored_result_full_hash_validated": true,
+    "raw_sha_validated": true,
+    "history_bars_equal_saved_input": true,
+    "repeat_core_calls": 0,
+    "repeat_api_requests": 0
+  },
+  "protected": [
+    {
+      "path": "graph_core/core.py",
+      "unchanged": true,
+      "sha256": "0d844f8528dbca874c32007edf221f3c54fd6a078415dba354a4b8d51e2fdcfc"
+    },
+    {
+      "path": "graph_core/market_daily.py",
+      "unchanged": true,
+      "sha256": "4cb74e69cfd093a4a20b784785cc512a6c80429784829fb2345d026f191e4f08"
+    },
+    {
+      "path": "product_candidate/macd.py",
+      "unchanged": true,
+      "sha256": "49bccfca359b87c0b4aeb91c18212038aa8a93f3dd9e6701c27aac71724ce54d"
+    },
+    {
+      "path": "src/moving_averages.py",
+      "unchanged": true,
+      "sha256": "48cc41895afecf073d86e53e290350e8477acbde2f79f56ac28057c03b0af08f"
+    },
+    {
+      "path": "rotation_research/action_ledger.py",
+      "unchanged": true,
+      "sha256": "f58de00fc41a0f217f4e7cfabfb1ac605900a3e9dc49ec44526f9edbf1bb7978"
+    },
+    {
+      "path": "graph_core_chart/mg3_20261101/source-input-spec.json",
+      "unchanged": true,
+      "sha256": "11d64b0aeda9d885077b3d89c862dea8898b94292c5e4827879bf6c59953c302"
+    }
+  ],
+  "legacy_bounded_adapter_original_prefix_unchanged": true,
+  "product_strategy_performance_tested": false,
+  "physical_android": "NOT_TESTED_NEW_BUILD",
+  "raw_results_screenshots_and_preview_published": false
+}

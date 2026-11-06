@@ -1,0 +1,36 @@
+{
+  "status": "DRAFT_SAVED_NOT_RUNTIME_APPLIED",
+  "requires_publish": true,
+  "fields_saved": [
+    "network.allowed_domains",
+    "start_skill"
+  ],
+  "install_script_replaced": false,
+  "previous_custom_domains": [
+    "www.tpex.org.tw",
+    "www.twse.com.tw"
+  ],
+  "requested_custom_domains": [
+    "www.tpex.org.tw",
+    "www.twse.com.tw",
+    "www.esunbank.com",
+    "mops.twse.com.tw"
+  ],
+  "runtime_access_to_new_domains": "NOT_TESTED_AFTER_USER_REVIEW_REQUIRED",
+  "official_targets": [
+    {
+      "url": "https://www.esunbank.com/zh-tw/-/media/ESUNFHC/Files/Investor-Relations/Shareholders/Shareholder-Meeting/114-minutes.pdf",
+      "purpose": "2884 historical dividend ratio/par value/listing or source links",
+      "existing_error_path": "股票系統M1_v0_18/rotation_research/action_data_20261022/fetch-attempt.json",
+      "last_observation": "PRIOR_TURN_TUNNEL_403_NOT_RETRIED_THIS_ROUND"
+    },
+    {
+      "url": "https://mops.twse.com.tw/server-java/t39sb01?quick=1",
+      "purpose": "Primary announcements including split/reduction/new-share notices; exact URL cited by TWSE reduction notes",
+      "last_observation": "HOST_NOT_IN_CURRENT_ALLOWLIST_REQUEST_NOT_ATTEMPTED"
+    }
+  ],
+  "workflow": "Review/apply the saved environment draft using the product settings flow; a saved draft is not live access or a deployed site",
+  "skill": "skill://plugin_connector_1p_ed5feb9070a08191b08c81c47947bc16/setup/SKILL.md",
+  "review_location": "ATTACHED_ENVIRONMENT_SETTINGS"
+}

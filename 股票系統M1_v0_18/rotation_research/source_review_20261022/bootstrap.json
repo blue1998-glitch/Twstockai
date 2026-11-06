@@ -1,0 +1,21 @@
+{
+  "executed": true,
+  "command": "python3 codex/bootstrap_m1.py --hydrate-missing",
+  "exit_code": 0,
+  "result": {
+    "status": "HYDRATED_PRESERVING_CHANGES",
+    "restored_files": 545,
+    "baseline_verified": true,
+    "current_tree_matches_baseline": false,
+    "differing_files_preserved": [
+      "AGENTS.md",
+      "README.md",
+      "docs/CODEX交接.md",
+      "src/cross_view_cli.py",
+      "src/cross_view_export.py",
+      "tests/test_cross_view.cjs",
+      "tests/test_mobile_viewer_browser.cjs"
+    ]
+  },
+  "note": "本輪新checkout實際結果；非沿用前輪0補缺。補缺產生的既有暫存檔保留、不納入本輪交付。"
+}

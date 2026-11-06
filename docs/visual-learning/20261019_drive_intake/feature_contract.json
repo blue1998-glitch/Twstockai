@@ -1,0 +1,52 @@
+{
+  "schema": "m1-visual-learning-foundation/1.0",
+  "purpose": "從有來源的教材圖片建立可討論、可核對的圖形案例與候選特徵；不輸出交易訊號",
+  "status": "CORPUS_FOUNDATION_FIRST_PASS_NOT_TRAINED",
+  "image_labels_are_ground_truth": false,
+  "approved_strategy_parameters": {},
+  "source_layers": ["ORIGINAL_BYTES_VERIFIED", "IMAGE_LABEL_OBSERVED", "AUTHOR_CLAIM_UNVERIFIED", "ANALYST_CANDIDATE", "USER_CONFIRMED_CASE_SEPARATE", "MARKET_SOURCE_VERIFIED_SEPARATE"],
+  "objects": [
+    {"type":"analysis_anchor","meaning":"分析當時最新已完成K線收盤及其可得前綴","required":["instrument","as_of","timeframe","basis","latest_completed_close"],"missing":"UNKNOWN，不以截圖檔名或圖中箭頭目標充當收盤"},
+    {"type":"swing_reference","meaning":"與區間相關的高低點或代表點","required":["date_or_uncertainty","price_or_uncertainty","kind_high_low_close","selection_reason","evidence_source"],"missing":"候選，不自動取窗口極值當代表"},
+    {"type":"region","meaning":"反覆高低起伏的時間價格結構","required":["start_precision","end_precision","membership_status","boundary_basis","context_scale"],"missing":"精確日期/正式上下界可為null，不用月初月底代填"},
+    {"type":"volume_evidence","meaning":"與相同K段對齊的量柱、量比較與變化","required":["unit","window","baseline","include_current","availability"],"missing":"未知，不從像素生成全精度股數，不推整區剩餘持股"},
+    {"type":"indicator_evidence","meaning":"均線、DIF、MACD、OSC各自的值與相對結構","required":["formula_version","parameters","timeframe","axis_zero","aligned_dates"],"missing":"只存可見關係，不假定教材OSC與M1柱倍數相同"},
+    {"type":"external_evidence","meaning":"股東、融資券、借券、財報、事件","required":["primary_source","data_date","publication_time","available_as_of","unit"],"missing":"作者敘事，不由價量推公司派、內線或實際成本"}
+  ],
+  "relations": [
+    "最新收盤位於箱內/上/下及相對相關代表的位置",
+    "近關與左側較大主要壓力/支撐並存，子箱不自動取代主區",
+    "箱內反覆接觸、離箱、回測、跌回、再突破、破底後形成新箱的時序",
+    "價格峰谷與相應時間的量/指標峰谷配對，不跨不相干峰拼背離",
+    "日/週/月尺度關係，不同尺度可有不同狀態",
+    "舊箱失效與歷史區間保存並存，不刪舊K或用後見改當時判斷"
+  ],
+  "candidate_descriptors_not_decision_rules": [
+    {"name":"relative_close_to_reference","formula":"close / reference_price - 1","requires":"同標的同基底同時點原始數值已核且reference_price>0；Raw跨公司行動適用性另證","threshold":null},
+    {"name":"range_width_relative_to_anchor","formula":"(selected_high-selected_low) / anchor_close","requires":"選段資格、上下界口徑與anchor已明示；只是顯示/研究描述","threshold":null},
+    {"name":"volume_ratio","formula":"current_volume / mean(previous_N_volumes_excluding_current)","requires":"N為研究配置、真實交易記錄與量單位明確；未定義突破資格","threshold":null},
+    {"name":"duration_records","formula":"含兩端的實際交易記錄數，不填休市K","requires":"正式選段未定時只能稱閱讀窗記錄數","threshold":null},
+    {"name":"touch_density_and_scale","formula":null,"requires":"高低點/接觸容差/正式箱界/重要性算法尚未確立，不補固定門檻","threshold":null}
+  ],
+  "non_adopted_teacher_conditions": ["15%/16%/30%振幅", "三個月/半年/特定週數", "月均量兩倍", "三根漲停", "2.3%突破概率", "固定停損/加碼/倉位", "低量即沉澱/主力操控/內線交易"],
+  "gates": {
+    "originals": "SHA-256和位元組大小只證原件一致，不證圖中金融數值真實或作者正確",
+    "training": "先完成可用面板/遮擋與標註去除、日期/標的/尺度/基底核對、原始前綴及標籤覆核；本批尚無可直接用於正式訓練的樣本",
+    "future_information": "原圖可含事後註記/預測線/未完成週月K；表頭日、圖資料日、截圖日、註記日、公布可得時間分開，不明者拒作as-of預測評估",
+    "split": "完全重複、近重複、同一標的重疊事件、同日不同尺度及其後續結果置同組；尚未指派train/validation/test，不算準確率",
+    "uncertainty": "看不清、遮擋、來源衝突、資料缺失保留UNKNOWN，允許辨識器棄權",
+    "production": "教材候選特徵不直接更新引擎/策略/人工已批准案例；核心NOT_ESTABLISHED，分類NOT_VALIDATED，行動NOT_EVALUATED"
+  },
+  "m1_confirmed_context_kept": [
+    "先找高低點、區間帶、箱型，再按相對位置與價量判讀；不用平緩帶或底部預設命名",
+    "已存1101新官方Raw分析日2026-10-16日收27.30，非即時今日",
+    "使用者指定2026-01-27高26.95較重要，2025-06-03為前箱破底K且高28.00原值保留",
+    "2025-04-07～06-02前箱39筆、5/13局部代表31.40已答，不重問；2023-06～2025-04主帶更重要但僅月份精度",
+    "G1/G2/G3與原①④、舊案例/手機證據/0.4.3樣式收束保持，不搬作教材規則認可"
+  ],
+  "unknowns_retained": ["正式區界", "整區量與量口徑", "增量", "自動分區/選關", "強度/衰減", "生命階段", "G1精確起日", "C後終點", "主要壓力帶精確起終/代表/算法", "Raw公司行動共同校正", "五年Adjusted", "歷史公布可得", "原資料缺口", "Darvas箱型章節正文未完整讀", "SQLite未知根因"],
+  "next_work": "以來源可追溯的少量跨尺度正反例對應真實OHLCV前綴，先做物件/關係標註與失敗對照；真正已定義規則或可重現工程問題才交Codex。",
+  "background_monitoring_configured": false,
+  "model_training_executed": false,
+  "accuracy_established": false
+}

@@ -1,0 +1,14 @@
+{
+  "source_case": "complete-partial-chain",
+  "controls": [
+    {
+      "evaluation_at": "2026-01-12T08:00:00Z",
+      "expected": "EVALUATED"
+    },
+    {
+      "evaluation_at": "2026-01-12T07:59:59Z",
+      "expected": "REFUSED",
+      "reason": "CLOSE_NOT_YET_AVAILABLE"
+    }
+  ]
+}

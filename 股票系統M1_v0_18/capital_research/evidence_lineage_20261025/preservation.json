@@ -1,0 +1,45 @@
+{
+  "baseline": "4339a146d22dd849a6131a8c13f08f2e56145a2f",
+  "allowed_old_tracked_changes": [
+    "AGENTS.md",
+    "CONTINUE_IN_WORK_MODE.md",
+    "股票系統M1_v0_18/capital_research/README.md",
+    "股票系統M1_v0_18/capital_research/continuity.py",
+    "股票系統M1_v0_18/capital_research/core.py",
+    "股票系統M1_v0_18/capital_research/eligibility.py",
+    "股票系統M1_v0_18/capital_research/execution.py"
+  ],
+  "all_other_old_tracked_paths_unchanged": true,
+  "original_root_and_README_bodies_preserved": true,
+  "old_0_2_0_3_0_4_evidence_and_validation_unchanged": true,
+  "before_sources_match_baseline": true,
+  "after_sources_match_final_tested_source": true,
+  "before_after_comparison": {
+    "drop-known-revocation": "EXACT_FIRST_AND_ECONOMIC_NEXT_INPUT; ONLY_VERSIONED_LINEAGE_REMINTED",
+    "extend-expiry-to-null": "EXACT_FIRST_AND_ECONOMIC_NEXT_INPUT; ONLY_VERSIONED_LINEAGE_REMINTED",
+    "extend-expiry-later": "EXACT_FIRST_AND_ECONOMIC_NEXT_INPUT; ONLY_VERSIONED_LINEAGE_REMINTED",
+    "alias-drop-revocation": "EXACT_FIRST_AND_ECONOMIC_NEXT_INPUT; ONLY_VERSIONED_LINEAGE_REMINTED",
+    "rename-keep-revocation": "EXACT_FIRST_AND_ECONOMIC_NEXT_INPUT; ONLY_VERSIONED_LINEAGE_REMINTED",
+    "valid-old-fact": "EXACT_FIRST_AND_ECONOMIC_NEXT_INPUT; ONLY_VERSIONED_LINEAGE_REMINTED",
+    "independent-new-fact": "EXACT_FIRST_AND_ECONOMIC_NEXT_INPUT; ONLY_VERSIONED_LINEAGE_REMINTED",
+    "future-revocation": "EXACT_FIRST_AND_ECONOMIC_NEXT_INPUT; ONLY_VERSIONED_LINEAGE_REMINTED",
+    "future-stripped-at-review": "EXACT_FIRST_AND_ECONOMIC_NEXT_INPUT; ONLY_VERSIONED_LINEAGE_REMINTED"
+  },
+  "original_action_ledger_exact_baseline": true,
+  "source_state": {
+    "refused": 70,
+    "insufficient": 2,
+    "exchange_unsupported": 8,
+    "qualified_real_total_net": 0,
+    "producer_run": false
+  },
+  "formal_qualifications": false,
+  "primary_pressure": null,
+  "index_unchanged_empty": true,
+  "commits": 0,
+  "pushes": 0,
+  "astra_obtained": false,
+  "astra_read": false,
+  "first_workspace_recovery_files_obtained": false,
+  "final_artifacts": "after-final"
+}

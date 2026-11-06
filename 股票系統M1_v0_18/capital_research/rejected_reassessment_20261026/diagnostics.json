@@ -1,0 +1,20 @@
+{
+  "main_reproduced": true,
+  "source_loss_actual": "before-final/restrictive-unfilled/restore-actual.json",
+  "standing_fill_actual": "before-final/restrictive-funded-fill/execution-actual.json",
+  "before_failed_method": "tests-before-one.log",
+  "initial_control_error": "before/conditional-rejection/diagnostic.json",
+  "control_correction": "B99 could not fund costs with general reserve100; B90 retains conditional funding and original account. Main oracles unchanged.",
+  "after_restore_qualified": false,
+  "after_funded_B_fill_shares": "0",
+  "positive_value_only_B_fill_shares": "20",
+  "positive_valid_review_B_fill_shares": "20",
+  "partial_fill_shares": "7",
+  "partial_cancelled_remaining": "13",
+  "future_cancel_at": "2026-01-12T09:01:00+08:00",
+  "restoration_proves_qualification_only": true,
+  "third_round_execution": null,
+  "source_authentication": "NOT_IMPLEMENTED",
+  "old_assertions_modified": false,
+  "new_test_oracle_changed_to_fit_failure": false
+}

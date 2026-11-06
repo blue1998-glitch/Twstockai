@@ -1,0 +1,101 @@
+{
+  "pool_monitor_observations": 633,
+  "pool_boundary_families": {
+    "2884-Oct7": 33,
+    "2884-Oct16": 38,
+    "2884-control-May4": 16,
+    "ABC-May14": 12,
+    "ABC-Jun2": 9,
+    "ABC-Jun3": 11
+  },
+  "same_day_family_examples": {
+    "ABC-Jun3": {
+      "proposal_events": 24,
+      "boundary_families": 2,
+      "boundaries": [
+        "28.45",
+        "28.7"
+      ]
+    },
+    "2884-Oct16": {
+      "proposal_events": 59,
+      "boundary_families": 2,
+      "boundaries": [
+        "47.3",
+        "47.35"
+      ]
+    }
+  },
+  "selected_scope_tests": {
+    "ABC-first-bar": {
+      "event_date": "2025-06-03",
+      "cutoff": "2025-06-03",
+      "seed_records": 1,
+      "first_later_boundary_contact": null,
+      "first_later_close_inside": null,
+      "both_turns_on": null
+    },
+    "ABC-through-Jun13": {
+      "event_date": "2025-06-03",
+      "cutoff": "2025-06-13",
+      "seed_records": 9,
+      "first_later_boundary_contact": null,
+      "first_later_close_inside": null,
+      "both_turns_on": "2025-06-11"
+    },
+    "G2-first-bar": {
+      "event_date": "2023-02-21",
+      "cutoff": "2023-02-21",
+      "seed_records": 1,
+      "first_later_boundary_contact": null,
+      "first_later_close_inside": null,
+      "both_turns_on": null
+    },
+    "G2-boundary-touch": {
+      "event_date": "2023-02-21",
+      "cutoff": "2023-02-22",
+      "seed_records": 2,
+      "first_later_boundary_contact": "2023-02-22",
+      "first_later_close_inside": null,
+      "both_turns_on": null
+    },
+    "G2-return": {
+      "event_date": "2023-02-21",
+      "cutoff": "2023-03-01",
+      "seed_records": 5,
+      "first_later_boundary_contact": "2023-02-22",
+      "first_later_close_inside": "2023-03-01",
+      "both_turns_on": "2023-02-24"
+    },
+    "G2-through-Mar3": {
+      "event_date": "2023-02-21",
+      "cutoff": "2023-03-03",
+      "seed_records": 7,
+      "first_later_boundary_contact": "2023-02-22",
+      "first_later_close_inside": "2023-03-01",
+      "both_turns_on": "2023-02-24"
+    },
+    "G2-second-frame-return": {
+      "event_date": "2023-02-24",
+      "cutoff": "2023-03-03",
+      "seed_records": 4,
+      "first_later_boundary_contact": "2023-03-01",
+      "first_later_close_inside": "2023-03-01",
+      "both_turns_on": "2023-03-03"
+    },
+    "2884-last-source-bar": {
+      "event_date": "2026-10-16",
+      "cutoff": "2026-10-16",
+      "seed_records": 1,
+      "first_later_boundary_contact": null,
+      "first_later_close_inside": null,
+      "both_turns_on": null
+    }
+  },
+  "formal_branch_selection": "NOT_ESTABLISHED",
+  "prior_events_modified": false,
+  "source_sha256": [
+    "ab87a51b5b8afd076603f290b10f415bd60d31ae47c5ab2f6d9d609ad4014901",
+    "184bdef0b687ec0ab7bfcaaac2157ff7916fbc1000ef312d81b5efc0c2e73e15"
+  ]
+}

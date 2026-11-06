@@ -1,0 +1,32 @@
+{
+  "results": [
+    {
+      "name": "missing-source",
+      "actual": {
+        "exit_code": 2,
+        "stdout": "",
+        "stderr": "CHOICE_SOURCE_READ_FAILED: [Errno 2] No such file or directory: '/tmp/tmpfbc74evs/missing-source.json'\n",
+        "guard": "FRESH_NO_ENGINE_NO_RESELECT_NO_SAVE_NO_WRITE_NO_NETWORK"
+      }
+    },
+    {
+      "name": "wrong-journal-id",
+      "actual": {
+        "exit_code": 2,
+        "stdout": "",
+        "stderr": "CHOICE_SOURCE_READ_FAILED: Corrupt identity/schema\n",
+        "guard": "FRESH_NO_ENGINE_NO_RESELECT_NO_SAVE_NO_WRITE_NO_NETWORK"
+      }
+    }
+  ],
+  "before": {
+    "source.json": "159900c478cc4fd69b63c40eb57bc85457b69aecc6d2d795d7d213671fd1fe49",
+    "store/valid.json": "db4a9108a70b80327392a8539c19daf57e0cd7c285ceabea3a38d506095a00f9",
+    "store/case.json": "bc472e3dc6529ff8d1355e1f68ccfb4a668653a022010a924ac40f5e50dadba0"
+  },
+  "after": {
+    "source.json": "159900c478cc4fd69b63c40eb57bc85457b69aecc6d2d795d7d213671fd1fe49",
+    "store/valid.json": "db4a9108a70b80327392a8539c19daf57e0cd7c285ceabea3a38d506095a00f9",
+    "store/case.json": "bc472e3dc6529ff8d1355e1f68ccfb4a668653a022010a924ac40f5e50dadba0"
+  }
+}

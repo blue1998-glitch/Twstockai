@@ -1,0 +1,16 @@
+{
+  "actual": null,
+  "error": "EXACT_CASE_FIELDS_REQUIRED",
+  "traceback": "Traceback (most recent call last):\n  File \"/workspace/Twstockai/股票系統M1_v0_18/rotation_research/market_case_20261027/build.py\", line 33, in inspect\n    try:actual=prepare_case(request,saved);error=None;trace=None\n               ^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"/workspace/Twstockai/股票系統M1_v0_18/rotation_research/market_case.py\", line 155, in prepare_case\n    return _prepare(request,saved)\n           ^^^^^^^^^^^^^^^^^^^^^^^\n  File \"/workspace/Twstockai/股票系統M1_v0_18/rotation_research/market_case.py\", line 159, in _prepare\n    _case_header(request,saved)\n  File \"/workspace/Twstockai/股票系統M1_v0_18/rotation_research/market_case.py\", line 169, in _case_header\n    require(set(request)=={'schema','case_id','data_kind','source_binding','common','decisions','common_entry','paths'},'EXACT_CASE_FIELDS_REQUIRED')\n  File \"/workspace/Twstockai/股票系統M1_v0_18/rotation_research/market_case.py\", line 27, in require\n    if not ok:raise CaseError(reason)\n              ^^^^^^^^^^^^^^^^^^^^^^^\nrotation_research.market_case.CaseError: EXACT_CASE_FIELDS_REQUIRED\n",
+  "calls": {
+    "prepare": 1,
+    "source_qualify": 0,
+    "ledger_replay": 0,
+    "capital_simulate": 0,
+    "quantity_replay": 0,
+    "legacy_compare": 0,
+    "old_source_producer": 0
+  },
+  "input_unchanged": true,
+  "sources_unchanged": true
+}

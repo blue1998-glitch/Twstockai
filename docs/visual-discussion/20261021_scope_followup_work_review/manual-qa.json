@@ -1,0 +1,29 @@
+{
+  "schema": "m1-followup-manual-qa/1",
+  "pdf_path": "output/pdf/m1-persistent-followup-evidence.pdf",
+  "pdf_bytes": 147825,
+  "pdf_sha256": "9f7143623a74ff47e6727c71d44dc38bfa1e756ca0bb4a144f28a79975fda7d3",
+  "pages": 2,
+  "figure_builder_runs": 2,
+  "old_figures_rebuilt": 0,
+  "final_previews": [
+    {
+      "path": "page-1.png",
+      "bytes": 149093,
+      "sha256": "46667ee8625f10b5b58433954e76b36df162fafc372df2e1760afd44eda4ea9f",
+      "visual_review": "PASS_FINAL_RENDER_MANUALLY_VIEWED"
+    },
+    {
+      "path": "page-2.png",
+      "bytes": 141465,
+      "sha256": "ed0c1e32d95df9e5e56f1c38d32395d0024be9593cebf3b45efd03b57096ab2e",
+      "visual_review": "PASS_FINAL_RENDER_MANUALLY_VIEWED"
+    }
+  ],
+  "findings": [
+    "Page1 broad ABC background, prior confirmed coverage, later cutoff and new close-turn confirmation dates readable.",
+    "First page2 annotations overlapped panel title; moved all annotations inside panel, rendered again, both final pages manually viewed without clipping or text overlap.",
+    "Larger G2 upper panel through March16 is explicitly later context; bottom and stored follow-ups end at each stated cutoff.",
+    "Research PDF static review only; browser and Android not tested."
+  ]
+}

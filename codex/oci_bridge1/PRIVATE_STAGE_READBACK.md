@@ -1,0 +1,7 @@
+# 私庫審查交付固定版本讀回
+
+公開工程f197229d26da16925d00e4dd56413494451991d1，13檔固定GET原bytes／長度／SHA全部相同。私庫固定code d499b85c284526dda213fee9edcb3f4b237d35dd，最新含本人集中說明 aa739c9b67c7da810e014e9349280f6b2db9616e；6份core/manifest檔在最新私庫提交再讀回一致，另2份owner doc原bytes已核。完整私有政策與私庫逐檔明細只保留原Cloud Git外；本收據避免自指另存commit。
+
+6本輪新交付驗證，原16／13未重跑；實際private bundle audit為NOT_CONNECTED／0Actions／0Oracle，不是native job/OIDC／Oracle驗收。已實查private repo／Issue#1及App installation membership並成功正常寫入；建庫阻塞已解除，不重建／不重批。
+
+Billing、Actions管理、環境建立仍403。沒有active workflow／OCI Secret／Oracle身分設定，不能人工改True。剩餘本人操作一份OWNER_ONCE.md，先Billing與環境，通過才設定專用唯讀IAM／私鑰直送受保護Secret。總監最終仍須ChatGPT工具於private #1發固定命令，收Oracle真實遮蔽回覆，之前NOT_CONNECTED。原FM390377 metadata／owner原碼／公開main／880未追蹤檔保留，未新Oracle資源／付費／搬資料／CloudShell重跑。

@@ -1,0 +1,362 @@
+{
+  "id": "cash-probe",
+  "schema": "rotation-record/0.1",
+  "value": {
+    "actual_realized_investor_return": null,
+    "daily": [
+      {
+        "available_cash_strict": "0",
+        "cash_claims": [],
+        "cash_receivable": "0",
+        "date": "2026-01-05",
+        "marks": {
+          "A": {
+            "basis_id": "RAW:fixture:A",
+            "carried_nontrading_mark": false,
+            "quote_source_ids": [
+              "fixture"
+            ],
+            "source_date": "2026-01-05",
+            "source_id": "fixture",
+            "value": "10"
+          },
+          "B": {
+            "basis_id": "RAW:fixture:B",
+            "carried_nontrading_mark": false,
+            "quote_source_ids": [
+              "fixture"
+            ],
+            "source_date": "2026-01-05",
+            "source_id": "fixture",
+            "value": "20"
+          }
+        },
+        "net_accrual_equity": "1000",
+        "purchase_payable": "0",
+        "settled_cash": "0",
+        "share_receivables": [],
+        "shares": {
+          "A": "100",
+          "B": "0"
+        }
+      },
+      {
+        "available_cash_strict": "0",
+        "cash_claims": [
+          {
+            "amount": "80.0",
+            "id": "sha256:c3698c6dd1e254cd523134ce5a82fe6be79c9a3c6cc030a6fba36be5596d781c",
+            "kind": "DIVIDEND",
+            "pay_date": "2026-01-09"
+          }
+        ],
+        "cash_receivable": "80.0",
+        "date": "2026-01-06",
+        "marks": {
+          "A": {
+            "basis_id": "RAW:fixture:A",
+            "carried_nontrading_mark": false,
+            "quote_source_ids": [
+              "fixture"
+            ],
+            "source_date": "2026-01-06",
+            "source_id": "fixture",
+            "value": "9"
+          },
+          "B": {
+            "basis_id": "RAW:fixture:B",
+            "carried_nontrading_mark": false,
+            "quote_source_ids": [
+              "fixture"
+            ],
+            "source_date": "2026-01-06",
+            "source_id": "fixture",
+            "value": "20"
+          }
+        },
+        "net_accrual_equity": "980.0",
+        "purchase_payable": "0",
+        "settled_cash": "0",
+        "share_receivables": [],
+        "shares": {
+          "A": "100",
+          "B": "0"
+        }
+      },
+      {
+        "available_cash_strict": "0",
+        "cash_claims": [
+          {
+            "amount": "80.0",
+            "id": "sha256:c3698c6dd1e254cd523134ce5a82fe6be79c9a3c6cc030a6fba36be5596d781c",
+            "kind": "DIVIDEND",
+            "pay_date": "2026-01-09"
+          }
+        ],
+        "cash_receivable": "80.0",
+        "date": "2026-01-07",
+        "marks": {
+          "A": {
+            "basis_id": "RAW:fixture:A",
+            "carried_nontrading_mark": false,
+            "quote_source_ids": [
+              "fixture"
+            ],
+            "source_date": "2026-01-07",
+            "source_id": "fixture",
+            "value": "9"
+          },
+          "B": {
+            "basis_id": "RAW:fixture:B",
+            "carried_nontrading_mark": false,
+            "quote_source_ids": [
+              "fixture"
+            ],
+            "source_date": "2026-01-07",
+            "source_id": "fixture",
+            "value": "20"
+          }
+        },
+        "net_accrual_equity": "980.0",
+        "purchase_payable": "0",
+        "settled_cash": "0",
+        "share_receivables": [],
+        "shares": {
+          "A": "100",
+          "B": "0"
+        }
+      },
+      {
+        "available_cash_strict": "0",
+        "cash_claims": [
+          {
+            "amount": "80.0",
+            "id": "sha256:c3698c6dd1e254cd523134ce5a82fe6be79c9a3c6cc030a6fba36be5596d781c",
+            "kind": "DIVIDEND",
+            "pay_date": "2026-01-09"
+          }
+        ],
+        "cash_receivable": "80.0",
+        "date": "2026-01-08",
+        "marks": {
+          "A": {
+            "basis_id": "RAW:fixture:A",
+            "carried_nontrading_mark": false,
+            "quote_source_ids": [
+              "fixture"
+            ],
+            "source_date": "2026-01-08",
+            "source_id": "fixture",
+            "value": "9"
+          },
+          "B": {
+            "basis_id": "RAW:fixture:B",
+            "carried_nontrading_mark": false,
+            "quote_source_ids": [
+              "fixture"
+            ],
+            "source_date": "2026-01-08",
+            "source_id": "fixture",
+            "value": "20"
+          }
+        },
+        "net_accrual_equity": "980.0",
+        "purchase_payable": "0",
+        "settled_cash": "0",
+        "share_receivables": [],
+        "shares": {
+          "A": "100",
+          "B": "0"
+        }
+      },
+      {
+        "available_cash_strict": "80.0",
+        "cash_claims": [],
+        "cash_receivable": "0",
+        "date": "2026-01-09",
+        "marks": {
+          "A": {
+            "basis_id": "RAW:fixture:A",
+            "carried_nontrading_mark": false,
+            "quote_source_ids": [
+              "fixture"
+            ],
+            "source_date": "2026-01-09",
+            "source_id": "fixture",
+            "value": "9"
+          },
+          "B": {
+            "basis_id": "RAW:fixture:B",
+            "carried_nontrading_mark": false,
+            "quote_source_ids": [
+              "fixture"
+            ],
+            "source_date": "2026-01-09",
+            "source_id": "fixture",
+            "value": "20"
+          }
+        },
+        "net_accrual_equity": "980.0",
+        "purchase_payable": "0",
+        "settled_cash": "80.0",
+        "share_receivables": [],
+        "shares": {
+          "A": "100",
+          "B": "0"
+        }
+      },
+      {
+        "available_cash_strict": "80.0",
+        "cash_claims": [],
+        "cash_receivable": "0",
+        "date": "2026-01-10",
+        "marks": {
+          "A": {
+            "basis_id": "RAW:fixture:A",
+            "carried_nontrading_mark": true,
+            "quote_source_ids": [
+              "fixture"
+            ],
+            "source_date": "2026-01-09",
+            "source_id": "fixture",
+            "value": "9"
+          },
+          "B": {
+            "basis_id": "RAW:fixture:B",
+            "carried_nontrading_mark": true,
+            "quote_source_ids": [
+              "fixture"
+            ],
+            "source_date": "2026-01-09",
+            "source_id": "fixture",
+            "value": "20"
+          }
+        },
+        "net_accrual_equity": "980.0",
+        "purchase_payable": "0",
+        "settled_cash": "80.0",
+        "share_receivables": [],
+        "shares": {
+          "A": "100",
+          "B": "0"
+        }
+      },
+      {
+        "available_cash_strict": "80.0",
+        "cash_claims": [],
+        "cash_receivable": "0",
+        "date": "2026-01-11",
+        "marks": {
+          "A": {
+            "basis_id": "RAW:fixture:A",
+            "carried_nontrading_mark": true,
+            "quote_source_ids": [
+              "fixture"
+            ],
+            "source_date": "2026-01-09",
+            "source_id": "fixture",
+            "value": "9"
+          },
+          "B": {
+            "basis_id": "RAW:fixture:B",
+            "carried_nontrading_mark": true,
+            "quote_source_ids": [
+              "fixture"
+            ],
+            "source_date": "2026-01-09",
+            "source_id": "fixture",
+            "value": "20"
+          }
+        },
+        "net_accrual_equity": "980.0",
+        "purchase_payable": "0",
+        "settled_cash": "80.0",
+        "share_receivables": [],
+        "shares": {
+          "A": "100",
+          "B": "0"
+        }
+      },
+      {
+        "available_cash_strict": "80.0",
+        "cash_claims": [],
+        "cash_receivable": "0",
+        "date": "2026-01-12",
+        "marks": {
+          "A": {
+            "basis_id": "RAW:fixture:A",
+            "carried_nontrading_mark": false,
+            "quote_source_ids": [
+              "fixture"
+            ],
+            "source_date": "2026-01-12",
+            "source_id": "fixture",
+            "value": "9"
+          },
+          "B": {
+            "basis_id": "RAW:fixture:B",
+            "carried_nontrading_mark": false,
+            "quote_source_ids": [
+              "fixture"
+            ],
+            "source_date": "2026-01-12",
+            "source_id": "fixture",
+            "value": "20"
+          }
+        },
+        "net_accrual_equity": "980.0",
+        "purchase_payable": "0",
+        "settled_cash": "80.0",
+        "share_receivables": [],
+        "shares": {
+          "A": "100",
+          "B": "0"
+        }
+      }
+    ],
+    "end": "2026-01-12",
+    "end_net_equity": "980.0",
+    "fees_and_tax_on_fills": "0",
+    "flywheel_validation": "NOT_VALIDATED",
+    "historical_signal_eligible": false,
+    "initial_equity": "1000",
+    "input_id": "sha256:dc2dc49cc240f3ceaed63018e61293eceff69188956b888d21bdc1c332563e56",
+    "journal": [
+      {
+        "code": "A",
+        "date": "2026-01-06",
+        "entitled_shares": "100",
+        "event_id": "sha256:c3698c6dd1e254cd523134ce5a82fe6be79c9a3c6cc030a6fba36be5596d781c",
+        "gross": "100",
+        "net": "80.0",
+        "type": "DIVIDEND_RECEIVABLE"
+      },
+      {
+        "amount": "80.0",
+        "claim_id": "sha256:c3698c6dd1e254cd523134ce5a82fe6be79c9a3c6cc030a6fba36be5596d781c",
+        "date": "2026-01-09",
+        "kind": "DIVIDEND",
+        "type": "CASH_RECEIVED"
+      }
+    ],
+    "policy_authorized": false,
+    "primary_pressure_id": null,
+    "quote_gaps": [],
+    "refusal_reasons": [],
+    "research_only": true,
+    "return_qualification": "ENGINEERED_OR_UNVERIFIED_SCENARIO_NOT_SOURCE_QUALIFIED_TOTAL_RETURN",
+    "scenario_net_return": "-0.02",
+    "schema": "rotation-action-ledger/0.1",
+    "source_qualification": {
+      "calendar": "VERIFIED_COMPLETE",
+      "execution_costs": "SCENARIO",
+      "investor_cashflows": "SCENARIO",
+      "net_distributions": "VERIFIED",
+      "opening_claims": "VERIFIED"
+    },
+    "start": "2026-01-05",
+    "status": "QUALIFIED_ACCOUNTING_SCENARIO_NOT_STRATEGY_VALIDATION",
+    "terminal_estimated_exit_cost": "0",
+    "total_net_return": null
+  }
+}

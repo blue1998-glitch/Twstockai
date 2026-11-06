@@ -1,0 +1,64 @@
+{
+  "baseline": "da8a9bf4e95898c6e9d95369c8cbc141b27bfe74",
+  "workspace": "/workspace/Twstockai",
+  "branch": "dev/m1-v018-chart-annotations",
+  "verification": {
+    "frozen": 77,
+    "protected": 17,
+    "archived": 2,
+    "current_initial": 6,
+    "current_controls": 3
+  },
+  "changing_product_sources": [
+    "cash_action.py",
+    "cash_action_execution.py"
+  ],
+  "old_ledger_execution_risk_and_source_formulas_unchanged": true,
+  "all_existing_oracles_and_historical_outputs_unchanged": true,
+  "documentation_history_preserved": true,
+  "sensitive_review": {
+    "all_delivery_files_inspected": true,
+    "high_confidence_credential_patterns_found": 0,
+    "private_originals_added": 0,
+    "temporary_paths_added": 0,
+    "only_synthetic_research_materials": true
+  },
+  "self_review": {
+    "exact_v2_scope_and_quantity": true,
+    "full_checked_revalidation": true,
+    "no_buy_or_foreign_stock_orders": true,
+    "old_v01_results_equal": 3,
+    "partial_sell_reuses_original_continuation": true,
+    "source_after_actuals_unchanged": true,
+    "origin_rights_reserve_latest_facts_and_tokens_preserved": true,
+    "no_new_policy_or_accounting_formula": true
+  },
+  "tests": {
+    "unique_methods_executed": 8,
+    "passed": 8,
+    "failed": 0,
+    "old_full_suites": 0,
+    "real_producers": 0,
+    "market_performance_runs": 0,
+    "log": {
+      "path": "股票系統M1_v0_18/capital_research/explicit_sell_20261029/tests-final.log",
+      "bytes": 1598,
+      "sha256": "4983b1530384c198499f9f943035cb30153eaeabd12ec1555457d433017bafd3"
+    }
+  },
+  "evidence": {
+    "frozen_cases": 23,
+    "extra_wrong_stock_order_control": 1,
+    "synthetic_cases_not_market_samples": true,
+    "readback_results_saved": true
+  },
+  "limits": [
+    "SETTLED_CHECKPOINT_ONLY_FOR_NEW_SELL_DECISION",
+    "NO_NEW_STRATEGY_OR_AUTOMATIC_ORDER_GENERATION",
+    "NO_UNKNOWN_RIGHTS_OR_LIMITED_SHARES_RELEASE_INFERENCE",
+    "NO_MARKET_REPLAY_OR_QUALIFICATION_UPGRADE"
+  ],
+  "external_qualification_flags_remain_false": true,
+  "primary_pressure_id": null,
+  "manual_action_required": false
+}

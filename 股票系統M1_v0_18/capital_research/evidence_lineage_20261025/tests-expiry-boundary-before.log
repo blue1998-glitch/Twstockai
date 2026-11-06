@@ -1,0 +1,17 @@
+test_later_revocation_cannot_replace_earlier_expiry_without_tape (capital_research.evidence_lineage_20261025.test_lineage.FactLineageTests.test_later_revocation_cannot_replace_earlier_expiry_without_tape) ... FAIL
+
+======================================================================
+FAIL: test_later_revocation_cannot_replace_earlier_expiry_without_tape (capital_research.evidence_lineage_20261025.test_lineage.FactLineageTests.test_later_revocation_cannot_replace_earlier_expiry_without_tape)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/workspace/Twstockai/股票系統M1_v0_18/capital_research/evidence_lineage_20261025/test_lineage.py", line 221, in test_later_revocation_cannot_replace_earlier_expiry_without_tape
+    self.assertEqual(out['order_states'][buy['id']]['status'], 'EXPIRED_UNFILLED')
+AssertionError: 'CANCELLED_EVIDENCE' != 'EXPIRED_UNFILLED'
+- CANCELLED_EVIDENCE
++ EXPIRED_UNFILLED
+
+
+----------------------------------------------------------------------
+Ran 1 test in 0.304s
+
+FAILED (failures=1)

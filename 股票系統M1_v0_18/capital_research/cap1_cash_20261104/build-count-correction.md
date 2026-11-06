@@ -1,0 +1,5 @@
+# 建置計數勘誤
+
+build-completed.json的seed_execution_calls=1／action_execution_calls=4原本表示目前保存的成功收據數，並非該次恢復實際呼叫；該次沿用seed及三方案，只新執行全退出一次。原檔保留，不能引用為該次5次新呼叫。
+
+已改為saved_*_receipts與execution_calls_this_run分欄；後續build-verified.json僅沿用已核收據，實際0新執行。有效保存仍是共同起點1＋四方案4，不是五個市場樣本。初期兩次時點拒絕、一次包裝器失敗及一次定向診斷均另留紀錄，不當作新方案或測試PASS。

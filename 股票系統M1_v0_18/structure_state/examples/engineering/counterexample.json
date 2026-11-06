@@ -1,0 +1,3143 @@
+{
+  "qualification": "ENGINEERING_SYNTHETIC_NOT_MARKET_DATA_OR_SAMPLE",
+  "facts_input": {
+    "schema_version": "reaction-facts-input/0.1",
+    "context": {
+      "code": "ENGINEERING_NOT_MARKET",
+      "source_id": "engineering-source",
+      "price_basis_id": "engineering-raw",
+      "source_frame_id": "engineering-frame",
+      "source_prefix_fingerprint": "sha256:66d1e3035ecda73b10e251ff3750cff09cd6d2a968e7cb0cc67074bf881f7487",
+      "volume_unit": "SHARES_REPORTED",
+      "price_mode": "RAW_CANDIDATE",
+      "adjustment_version": "NOT_APPLICABLE_RAW"
+    },
+    "bars": [
+      {
+        "date": "2000-01-01",
+        "open": "9",
+        "high": "10",
+        "low": "6",
+        "close": "9",
+        "volume_shares_scaled": "100"
+      },
+      {
+        "date": "2000-01-02",
+        "open": "9",
+        "high": "12",
+        "low": "8",
+        "close": "11",
+        "volume_shares_scaled": "90"
+      },
+      {
+        "date": "2000-01-03",
+        "open": "10",
+        "high": "10.5",
+        "low": "7",
+        "close": "9.5",
+        "volume_shares_scaled": "80"
+      },
+      {
+        "date": "2000-01-04",
+        "open": "10",
+        "high": "10.5",
+        "low": "9",
+        "close": "10.5",
+        "volume_shares_scaled": "70"
+      },
+      {
+        "date": "2000-01-05",
+        "open": "10.5",
+        "high": "10.6",
+        "low": "10",
+        "close": "10.6",
+        "volume_shares_scaled": "60"
+      },
+      {
+        "date": "2000-01-06",
+        "open": "9",
+        "high": "9",
+        "low": "8",
+        "close": "8",
+        "volume_shares_scaled": "50"
+      },
+      {
+        "date": "2000-01-07",
+        "open": "8",
+        "high": "8",
+        "low": "6",
+        "close": "6",
+        "volume_shares_scaled": "40"
+      },
+      {
+        "date": "2000-01-08",
+        "open": "6",
+        "high": "6",
+        "low": "5.9",
+        "close": "5.9",
+        "volume_shares_scaled": "30"
+      },
+      {
+        "date": "2000-01-09",
+        "open": "6",
+        "high": "11",
+        "low": "6",
+        "close": "11",
+        "volume_shares_scaled": "20"
+      }
+    ],
+    "macd": [
+      {
+        "dif": "-0.1",
+        "dea": "0.1",
+        "histogram": "-0.4",
+        "reason": "ENGINEERING_SAVED_INPUT"
+      },
+      {
+        "dif": "-0.1",
+        "dea": "0.1",
+        "histogram": "-0.4",
+        "reason": "ENGINEERING_SAVED_INPUT"
+      },
+      {
+        "dif": "-0.1",
+        "dea": "0.1",
+        "histogram": "-0.4",
+        "reason": "ENGINEERING_SAVED_INPUT"
+      },
+      {
+        "dif": "-0.1",
+        "dea": "0.1",
+        "histogram": "-0.4",
+        "reason": "ENGINEERING_SAVED_INPUT"
+      },
+      {
+        "dif": "-0.1",
+        "dea": "0.1",
+        "histogram": "-0.4",
+        "reason": "ENGINEERING_SAVED_INPUT"
+      },
+      {
+        "dif": "-0.1",
+        "dea": "0.1",
+        "histogram": "-0.4",
+        "reason": "ENGINEERING_SAVED_INPUT"
+      },
+      {
+        "dif": "-0.1",
+        "dea": "0.1",
+        "histogram": "-0.4",
+        "reason": "ENGINEERING_SAVED_INPUT"
+      },
+      {
+        "dif": "-0.1",
+        "dea": "0.1",
+        "histogram": "-0.4",
+        "reason": "ENGINEERING_SAVED_INPUT"
+      },
+      {
+        "dif": "-0.1",
+        "dea": "0.1",
+        "histogram": "-0.4",
+        "reason": "ENGINEERING_SAVED_INPUT"
+      }
+    ],
+    "references": [
+      {
+        "id": "ref-PULLBACK_HIGH",
+        "binding": {
+          "code": "ENGINEERING_NOT_MARKET",
+          "source_id": "engineering-source",
+          "price_basis_id": "engineering-raw",
+          "source_frame_id": "engineering-frame",
+          "source_prefix_fingerprint": "sha256:66d1e3035ecda73b10e251ff3750cff09cd6d2a968e7cb0cc67074bf881f7487"
+        },
+        "price": "10.5",
+        "origin_id": "sha256:ff8142bd7b9da4c3a345fa339aee5b7bd50b2aaeb6dc5843b2d30bbee9786949",
+        "source_kind": "BAR_FIELD",
+        "source_field": "high",
+        "occurred_at": "2000-01-03",
+        "known_on": "2000-01-03",
+        "selected_at": "2030-01-01T00:00:00+00:00",
+        "historical_signal_eligible": false,
+        "qualification": "EXPLICIT_RESEARCH_QUERY"
+      },
+      {
+        "id": "ref-ORIGINAL_BOX_FLOOR",
+        "binding": {
+          "code": "ENGINEERING_NOT_MARKET",
+          "source_id": "engineering-source",
+          "price_basis_id": "engineering-raw",
+          "source_frame_id": "engineering-frame",
+          "source_prefix_fingerprint": "sha256:66d1e3035ecda73b10e251ff3750cff09cd6d2a968e7cb0cc67074bf881f7487"
+        },
+        "price": "6",
+        "origin_id": "sha256:24e2c355dd006e091d08137d800e232935ec63e31b8cec2370e3ece51dbaab6e",
+        "source_kind": "BAR_FIELD",
+        "source_field": "low",
+        "occurred_at": "2000-01-01",
+        "known_on": "2000-01-01",
+        "selected_at": "2030-01-01T00:00:00+00:00",
+        "historical_signal_eligible": false,
+        "qualification": "EXPLICIT_RESEARCH_QUERY"
+      },
+      {
+        "id": "ref-ORIGINAL_BOX_UPPER",
+        "binding": {
+          "code": "ENGINEERING_NOT_MARKET",
+          "source_id": "engineering-source",
+          "price_basis_id": "engineering-raw",
+          "source_frame_id": "engineering-frame",
+          "source_prefix_fingerprint": "sha256:66d1e3035ecda73b10e251ff3750cff09cd6d2a968e7cb0cc67074bf881f7487"
+        },
+        "price": "10",
+        "origin_id": "sha256:24e2c355dd006e091d08137d800e232935ec63e31b8cec2370e3ece51dbaab6e",
+        "source_kind": "BAR_FIELD",
+        "source_field": "high",
+        "occurred_at": "2000-01-01",
+        "known_on": "2000-01-01",
+        "selected_at": "2030-01-01T00:00:00+00:00",
+        "historical_signal_eligible": false,
+        "qualification": "EXPLICIT_RESEARCH_QUERY"
+      },
+      {
+        "id": "ref-SHALLOW_OBSERVATION",
+        "binding": {
+          "code": "ENGINEERING_NOT_MARKET",
+          "source_id": "engineering-source",
+          "price_basis_id": "engineering-raw",
+          "source_frame_id": "engineering-frame",
+          "source_prefix_fingerprint": "sha256:66d1e3035ecda73b10e251ff3750cff09cd6d2a968e7cb0cc67074bf881f7487"
+        },
+        "price": "9.5",
+        "origin_id": "sha256:ff8142bd7b9da4c3a345fa339aee5b7bd50b2aaeb6dc5843b2d30bbee9786949",
+        "source_kind": "BAR_FIELD",
+        "source_field": "close",
+        "occurred_at": "2000-01-03",
+        "known_on": "2000-01-03",
+        "selected_at": "2030-01-01T00:00:00+00:00",
+        "historical_signal_eligible": false,
+        "qualification": "EXPLICIT_RESEARCH_QUERY"
+      }
+    ],
+    "known_gap_dates": [],
+    "basis_break_dates": []
+  },
+  "scenario": {
+    "schema_version": "p03-explicit-roles/0.1",
+    "scenario_id": "engineering-only",
+    "binding": {
+      "code": "ENGINEERING_NOT_MARKET",
+      "source_id": "engineering-source",
+      "price_basis_id": "engineering-raw",
+      "source_frame_id": "engineering-frame",
+      "source_prefix_fingerprint": "sha256:66d1e3035ecda73b10e251ff3750cff09cd6d2a968e7cb0cc67074bf881f7487",
+      "volume_unit": "SHARES_REPORTED",
+      "price_mode": "RAW_CANDIDATE",
+      "adjustment_version": "NOT_APPLICABLE_RAW"
+    },
+    "roles": {
+      "PULLBACK_HIGH": {
+        "role": "PULLBACK_HIGH",
+        "reference_id": "ref-PULLBACK_HIGH",
+        "qualification": "ENGINEERING_FIXTURE",
+        "known_on": "2000-01-03",
+        "valid_from": "2000-01-03",
+        "valid_until": null,
+        "invalidated_on": null,
+        "selected_at": "2030-01-01T00:00:00+00:00",
+        "evidence": {
+          "engineering_only": true,
+          "source_field": "high"
+        }
+      },
+      "ORIGINAL_BOX_FLOOR": {
+        "role": "ORIGINAL_BOX_FLOOR",
+        "reference_id": "ref-ORIGINAL_BOX_FLOOR",
+        "qualification": "ENGINEERING_FIXTURE",
+        "known_on": "2000-01-01",
+        "valid_from": "2000-01-01",
+        "valid_until": null,
+        "invalidated_on": null,
+        "selected_at": "2030-01-01T00:00:00+00:00",
+        "evidence": {
+          "engineering_only": true,
+          "source_field": "low"
+        }
+      },
+      "ORIGINAL_BOX_UPPER": {
+        "role": "ORIGINAL_BOX_UPPER",
+        "reference_id": "ref-ORIGINAL_BOX_UPPER",
+        "qualification": "ENGINEERING_FIXTURE",
+        "known_on": "2000-01-01",
+        "valid_from": "2000-01-01",
+        "valid_until": null,
+        "invalidated_on": null,
+        "selected_at": "2030-01-01T00:00:00+00:00",
+        "evidence": {
+          "engineering_only": true,
+          "source_field": "high"
+        }
+      },
+      "SHALLOW_OBSERVATION": {
+        "role": "SHALLOW_OBSERVATION",
+        "reference_id": "ref-SHALLOW_OBSERVATION",
+        "qualification": "ENGINEERING_FIXTURE",
+        "known_on": "2000-01-03",
+        "valid_from": "2000-01-03",
+        "valid_until": null,
+        "invalidated_on": null,
+        "selected_at": "2030-01-01T00:00:00+00:00",
+        "evidence": {
+          "engineering_only": true,
+          "source_field": "close"
+        }
+      }
+    },
+    "post_breakout_return": {
+      "qualification": "ENGINEERING_FIXTURE",
+      "context_start_on": "2000-01-01",
+      "breakout_on": "2000-01-02",
+      "return_on": "2000-01-03",
+      "known_on": "2000-01-03",
+      "evidence": {
+        "engineering_only": true
+      }
+    }
+  },
+  "result": {
+    "schema_version": "p03-structure-state/0.1",
+    "as_of": "2000-01-09",
+    "context": {
+      "code": "ENGINEERING_NOT_MARKET",
+      "source_id": "engineering-source",
+      "price_basis_id": "engineering-raw",
+      "source_frame_id": "engineering-frame",
+      "source_prefix_fingerprint": "sha256:66d1e3035ecda73b10e251ff3750cff09cd6d2a968e7cb0cc67074bf881f7487",
+      "volume_unit": "SHARES_REPORTED",
+      "price_mode": "RAW_CANDIDATE",
+      "adjustment_version": "NOT_APPLICABLE_RAW"
+    },
+    "evaluated_prefix_fingerprint": "sha256:66d1e3035ecda73b10e251ff3750cff09cd6d2a968e7cb0cc67074bf881f7487",
+    "original_reaction_result_id": "sha256:cfda09a3dfbf19935582bcb959542b79e1b4709f53508adae1cfec6aedcb773d",
+    "scenario_id": "engineering-only",
+    "source_qualification": "EXPLICIT_SOURCE_ROLES",
+    "post_breakout_return": {
+      "qualification": "ENGINEERING_FIXTURE",
+      "context_start_on": "2000-01-01",
+      "breakout_on": "2000-01-02",
+      "return_on": "2000-01-03",
+      "known_on": "2000-01-03",
+      "evidence": {
+        "engineering_only": true
+      }
+    },
+    "reference_catalog": [
+      {
+        "role": "PULLBACK_HIGH",
+        "role_id": "sha256:652cfe5f477d25d33394a248e84ecf5dbd3dd40f0689f4e062d08f3395f86716",
+        "semantic": {
+          "role": "PULLBACK_HIGH",
+          "reference_id": "ref-PULLBACK_HIGH",
+          "qualification": "ENGINEERING_FIXTURE",
+          "known_on": "2000-01-03",
+          "valid_from": "2000-01-03",
+          "valid_until": null,
+          "invalidated_on": null,
+          "selected_at": "2030-01-01T00:00:00+00:00",
+          "evidence": {
+            "engineering_only": true,
+            "source_field": "high"
+          }
+        },
+        "source_reference": {
+          "id": "ref-PULLBACK_HIGH",
+          "binding": {
+            "code": "ENGINEERING_NOT_MARKET",
+            "source_id": "engineering-source",
+            "price_basis_id": "engineering-raw",
+            "source_frame_id": "engineering-frame",
+            "source_prefix_fingerprint": "sha256:66d1e3035ecda73b10e251ff3750cff09cd6d2a968e7cb0cc67074bf881f7487"
+          },
+          "price": "10.5",
+          "origin_id": "sha256:ff8142bd7b9da4c3a345fa339aee5b7bd50b2aaeb6dc5843b2d30bbee9786949",
+          "source_kind": "BAR_FIELD",
+          "source_field": "high",
+          "occurred_at": "2000-01-03",
+          "known_on": "2000-01-03",
+          "selected_at": "2030-01-01T00:00:00+00:00",
+          "historical_signal_eligible": false,
+          "qualification": "EXPLICIT_RESEARCH_QUERY"
+        },
+        "available_at_as_of": true
+      },
+      {
+        "role": "ORIGINAL_BOX_FLOOR",
+        "role_id": "sha256:2e36450703046750d294b316d1e0a6139df490edd98ad2c738193707b7d9f17f",
+        "semantic": {
+          "role": "ORIGINAL_BOX_FLOOR",
+          "reference_id": "ref-ORIGINAL_BOX_FLOOR",
+          "qualification": "ENGINEERING_FIXTURE",
+          "known_on": "2000-01-01",
+          "valid_from": "2000-01-01",
+          "valid_until": null,
+          "invalidated_on": null,
+          "selected_at": "2030-01-01T00:00:00+00:00",
+          "evidence": {
+            "engineering_only": true,
+            "source_field": "low"
+          }
+        },
+        "source_reference": {
+          "id": "ref-ORIGINAL_BOX_FLOOR",
+          "binding": {
+            "code": "ENGINEERING_NOT_MARKET",
+            "source_id": "engineering-source",
+            "price_basis_id": "engineering-raw",
+            "source_frame_id": "engineering-frame",
+            "source_prefix_fingerprint": "sha256:66d1e3035ecda73b10e251ff3750cff09cd6d2a968e7cb0cc67074bf881f7487"
+          },
+          "price": "6",
+          "origin_id": "sha256:24e2c355dd006e091d08137d800e232935ec63e31b8cec2370e3ece51dbaab6e",
+          "source_kind": "BAR_FIELD",
+          "source_field": "low",
+          "occurred_at": "2000-01-01",
+          "known_on": "2000-01-01",
+          "selected_at": "2030-01-01T00:00:00+00:00",
+          "historical_signal_eligible": false,
+          "qualification": "EXPLICIT_RESEARCH_QUERY"
+        },
+        "available_at_as_of": true
+      },
+      {
+        "role": "ORIGINAL_BOX_UPPER",
+        "role_id": "sha256:e01bc5eec43990b01d9a40ad74065d4476ce5ca6bb1fdff0aa5e400250994db3",
+        "semantic": {
+          "role": "ORIGINAL_BOX_UPPER",
+          "reference_id": "ref-ORIGINAL_BOX_UPPER",
+          "qualification": "ENGINEERING_FIXTURE",
+          "known_on": "2000-01-01",
+          "valid_from": "2000-01-01",
+          "valid_until": null,
+          "invalidated_on": null,
+          "selected_at": "2030-01-01T00:00:00+00:00",
+          "evidence": {
+            "engineering_only": true,
+            "source_field": "high"
+          }
+        },
+        "source_reference": {
+          "id": "ref-ORIGINAL_BOX_UPPER",
+          "binding": {
+            "code": "ENGINEERING_NOT_MARKET",
+            "source_id": "engineering-source",
+            "price_basis_id": "engineering-raw",
+            "source_frame_id": "engineering-frame",
+            "source_prefix_fingerprint": "sha256:66d1e3035ecda73b10e251ff3750cff09cd6d2a968e7cb0cc67074bf881f7487"
+          },
+          "price": "10",
+          "origin_id": "sha256:24e2c355dd006e091d08137d800e232935ec63e31b8cec2370e3ece51dbaab6e",
+          "source_kind": "BAR_FIELD",
+          "source_field": "high",
+          "occurred_at": "2000-01-01",
+          "known_on": "2000-01-01",
+          "selected_at": "2030-01-01T00:00:00+00:00",
+          "historical_signal_eligible": false,
+          "qualification": "EXPLICIT_RESEARCH_QUERY"
+        },
+        "available_at_as_of": true
+      },
+      {
+        "role": "SHALLOW_OBSERVATION",
+        "role_id": "sha256:222fe4942048c2b299f5948b8ba5b6636c2be30c21f26176042962419e6887ea",
+        "semantic": {
+          "role": "SHALLOW_OBSERVATION",
+          "reference_id": "ref-SHALLOW_OBSERVATION",
+          "qualification": "ENGINEERING_FIXTURE",
+          "known_on": "2000-01-03",
+          "valid_from": "2000-01-03",
+          "valid_until": null,
+          "invalidated_on": null,
+          "selected_at": "2030-01-01T00:00:00+00:00",
+          "evidence": {
+            "engineering_only": true,
+            "source_field": "close"
+          }
+        },
+        "source_reference": {
+          "id": "ref-SHALLOW_OBSERVATION",
+          "binding": {
+            "code": "ENGINEERING_NOT_MARKET",
+            "source_id": "engineering-source",
+            "price_basis_id": "engineering-raw",
+            "source_frame_id": "engineering-frame",
+            "source_prefix_fingerprint": "sha256:66d1e3035ecda73b10e251ff3750cff09cd6d2a968e7cb0cc67074bf881f7487"
+          },
+          "price": "9.5",
+          "origin_id": "sha256:ff8142bd7b9da4c3a345fa339aee5b7bd50b2aaeb6dc5843b2d30bbee9786949",
+          "source_kind": "BAR_FIELD",
+          "source_field": "close",
+          "occurred_at": "2000-01-03",
+          "known_on": "2000-01-03",
+          "selected_at": "2030-01-01T00:00:00+00:00",
+          "historical_signal_eligible": false,
+          "qualification": "EXPLICIT_RESEARCH_QUERY"
+        },
+        "available_at_as_of": true
+      }
+    ],
+    "records": [
+      {
+        "date": "2000-01-01",
+        "close": "9",
+        "state": "INSUFFICIENT",
+        "label": "證據不足／不可判定",
+        "reasons": [
+          "POST_BREAKOUT_RETURN_NOT_YET_KNOWN",
+          "ROLE_UNAVAILABLE_OR_EXPIRED:PULLBACK_HIGH"
+        ],
+        "state_changed_on": "2000-01-01",
+        "price_facts": {
+          "ORIGINAL_BOX_FLOOR": {
+            "close": {
+              "relation": "ABOVE",
+              "delta": "3",
+              "reason": "AVAILABLE",
+              "transition": {
+                "kind": "SEGMENT_START",
+                "previous_date": null,
+                "from_relation": null,
+                "to_relation": "ABOVE",
+                "reason": "NO_CONTIGUOUS_PRIOR_POSITION"
+              }
+            },
+            "high": {
+              "relation": "ABOVE",
+              "delta": "4",
+              "reason": "AVAILABLE",
+              "transition": {
+                "kind": "SEGMENT_START",
+                "previous_date": null,
+                "from_relation": null,
+                "to_relation": "ABOVE",
+                "reason": "NO_CONTIGUOUS_PRIOR_POSITION"
+              }
+            },
+            "low": {
+              "relation": "EQUAL",
+              "delta": "0",
+              "reason": "AVAILABLE",
+              "transition": {
+                "kind": "SEGMENT_START",
+                "previous_date": null,
+                "from_relation": null,
+                "to_relation": "EQUAL",
+                "reason": "NO_CONTIGUOUS_PRIOR_POSITION"
+              }
+            }
+          },
+          "ORIGINAL_BOX_UPPER": {
+            "close": {
+              "relation": "BELOW",
+              "delta": "-1",
+              "reason": "AVAILABLE",
+              "transition": {
+                "kind": "SEGMENT_START",
+                "previous_date": null,
+                "from_relation": null,
+                "to_relation": "BELOW",
+                "reason": "NO_CONTIGUOUS_PRIOR_POSITION"
+              }
+            },
+            "high": {
+              "relation": "EQUAL",
+              "delta": "0",
+              "reason": "AVAILABLE",
+              "transition": {
+                "kind": "SEGMENT_START",
+                "previous_date": null,
+                "from_relation": null,
+                "to_relation": "EQUAL",
+                "reason": "NO_CONTIGUOUS_PRIOR_POSITION"
+              }
+            },
+            "low": {
+              "relation": "BELOW",
+              "delta": "-4",
+              "reason": "AVAILABLE",
+              "transition": {
+                "kind": "SEGMENT_START",
+                "previous_date": null,
+                "from_relation": null,
+                "to_relation": "BELOW",
+                "reason": "NO_CONTIGUOUS_PRIOR_POSITION"
+              }
+            }
+          }
+        },
+        "role_prices": {
+          "ORIGINAL_BOX_FLOOR": "6",
+          "ORIGINAL_BOX_UPPER": "10"
+        },
+        "equal_boundaries": [],
+        "reference_role_ids": {
+          "ORIGINAL_BOX_FLOOR": "sha256:2e36450703046750d294b316d1e0a6139df490edd98ad2c738193707b7d9f17f",
+          "ORIGINAL_BOX_UPPER": "sha256:e01bc5eec43990b01d9a40ad74065d4476ce5ca6bb1fdff0aa5e400250994db3"
+        },
+        "evidence": {
+          "supporting": [],
+          "opposing": [
+            "MACD_HISTOGRAM_NEGATIVE_DESCRIPTION_ONLY"
+          ],
+          "missing": [
+            "VOLUME:NO_PREVIOUS_SAVED_RECORD",
+            "HISTORICAL_PUBLICATION_UNVERIFIED",
+            "PERSONAL_ACTION_AND_RETURN_QUALIFICATION_NOT_EVALUATED"
+          ],
+          "original_volume": {
+            "current_shares": "100",
+            "previous_shares": null,
+            "numerator_date": "2000-01-01",
+            "denominator_dates": [],
+            "baseline_includes_current": false,
+            "reason": "NO_PREVIOUS_SAVED_RECORD",
+            "ratio": null,
+            "ratio_precision": "50_SIGNIFICANT_DECIMAL_DIGITS_HALF_EVEN_ORIGINAL_NUMERATOR_DENOMINATOR_RETAINED",
+            "qualification": "PREVIOUS_SAVED_RECORD_DESCRIPTION_NOT_VOLUME_SIGNAL"
+          },
+          "original_macd": {
+            "original": {
+              "dif": "-0.1",
+              "dea": "0.1",
+              "histogram": "-0.4",
+              "reason": "ENGINEERING_SAVED_INPUT"
+            },
+            "reason": "ENGINEERING_SAVED_INPUT",
+            "field_observations": {
+              "dif": {
+                "value": "-0.1",
+                "reason": "AVAILABLE",
+                "sign": {
+                  "relation": "BELOW",
+                  "delta": "-0.1",
+                  "reason": "AVAILABLE"
+                },
+                "versus_previous": {
+                  "relation": null,
+                  "delta": null,
+                  "reason": "NO_PREVIOUS_SAVED_RECORD"
+                }
+              },
+              "dea": {
+                "value": "0.1",
+                "reason": "AVAILABLE",
+                "sign": {
+                  "relation": "ABOVE",
+                  "delta": "0.1",
+                  "reason": "AVAILABLE"
+                },
+                "versus_previous": {
+                  "relation": null,
+                  "delta": null,
+                  "reason": "NO_PREVIOUS_SAVED_RECORD"
+                }
+              },
+              "histogram": {
+                "value": "-0.4",
+                "reason": "AVAILABLE",
+                "sign": {
+                  "relation": "BELOW",
+                  "delta": "-0.4",
+                  "reason": "AVAILABLE"
+                },
+                "versus_previous": {
+                  "relation": null,
+                  "delta": null,
+                  "reason": "NO_PREVIOUS_SAVED_RECORD"
+                }
+              }
+            }
+          },
+          "body": {
+            "relation": "EQUAL",
+            "delta": "0",
+            "reason": "AVAILABLE"
+          },
+          "adjacent_close": {
+            "relation": null,
+            "delta": null,
+            "reason": "NO_PREVIOUS_SAVED_RECORD"
+          }
+        },
+        "intraday_sequence": "UNKNOWN_FROM_DAILY_OHLC",
+        "reference_qualification": "CONDITIONAL_EXPLICIT_ROLES_NOT_AUTOMATIC_PATTERN",
+        "historical_signal_eligible": false
+      },
+      {
+        "date": "2000-01-02",
+        "close": "11",
+        "state": "INSUFFICIENT",
+        "label": "證據不足／不可判定",
+        "reasons": [
+          "POST_BREAKOUT_RETURN_NOT_YET_KNOWN",
+          "ROLE_UNAVAILABLE_OR_EXPIRED:PULLBACK_HIGH"
+        ],
+        "state_changed_on": "2000-01-01",
+        "price_facts": {
+          "ORIGINAL_BOX_FLOOR": {
+            "close": {
+              "relation": "ABOVE",
+              "delta": "5",
+              "reason": "AVAILABLE",
+              "transition": {
+                "kind": "UNCHANGED",
+                "previous_date": "2000-01-01",
+                "from_relation": "ABOVE",
+                "to_relation": "ABOVE",
+                "reason": "AVAILABLE"
+              }
+            },
+            "high": {
+              "relation": "ABOVE",
+              "delta": "6",
+              "reason": "AVAILABLE",
+              "transition": {
+                "kind": "UNCHANGED",
+                "previous_date": "2000-01-01",
+                "from_relation": "ABOVE",
+                "to_relation": "ABOVE",
+                "reason": "AVAILABLE"
+              }
+            },
+            "low": {
+              "relation": "ABOVE",
+              "delta": "2",
+              "reason": "AVAILABLE",
+              "transition": {
+                "kind": "EQUAL_TO_ABOVE",
+                "previous_date": "2000-01-01",
+                "from_relation": "EQUAL",
+                "to_relation": "ABOVE",
+                "reason": "AVAILABLE"
+              }
+            }
+          },
+          "ORIGINAL_BOX_UPPER": {
+            "close": {
+              "relation": "ABOVE",
+              "delta": "1",
+              "reason": "AVAILABLE",
+              "transition": {
+                "kind": "BELOW_TO_ABOVE",
+                "previous_date": "2000-01-01",
+                "from_relation": "BELOW",
+                "to_relation": "ABOVE",
+                "reason": "AVAILABLE"
+              }
+            },
+            "high": {
+              "relation": "ABOVE",
+              "delta": "2",
+              "reason": "AVAILABLE",
+              "transition": {
+                "kind": "EQUAL_TO_ABOVE",
+                "previous_date": "2000-01-01",
+                "from_relation": "EQUAL",
+                "to_relation": "ABOVE",
+                "reason": "AVAILABLE"
+              }
+            },
+            "low": {
+              "relation": "BELOW",
+              "delta": "-2",
+              "reason": "AVAILABLE",
+              "transition": {
+                "kind": "UNCHANGED",
+                "previous_date": "2000-01-01",
+                "from_relation": "BELOW",
+                "to_relation": "BELOW",
+                "reason": "AVAILABLE"
+              }
+            }
+          }
+        },
+        "role_prices": {
+          "ORIGINAL_BOX_FLOOR": "6",
+          "ORIGINAL_BOX_UPPER": "10"
+        },
+        "equal_boundaries": [],
+        "reference_role_ids": {
+          "ORIGINAL_BOX_FLOOR": "sha256:2e36450703046750d294b316d1e0a6139df490edd98ad2c738193707b7d9f17f",
+          "ORIGINAL_BOX_UPPER": "sha256:e01bc5eec43990b01d9a40ad74065d4476ce5ca6bb1fdff0aa5e400250994db3"
+        },
+        "evidence": {
+          "supporting": [],
+          "opposing": [
+            "VOLUME_BELOW_PREVIOUS_RECORD_DESCRIPTION_ONLY_NOT_BREAKOUT_FILTER",
+            "MACD_HISTOGRAM_NEGATIVE_DESCRIPTION_ONLY"
+          ],
+          "missing": [
+            "HISTORICAL_PUBLICATION_UNVERIFIED",
+            "PERSONAL_ACTION_AND_RETURN_QUALIFICATION_NOT_EVALUATED"
+          ],
+          "original_volume": {
+            "current_shares": "90",
+            "previous_shares": "100",
+            "numerator_date": "2000-01-02",
+            "denominator_dates": [
+              "2000-01-01"
+            ],
+            "baseline_includes_current": false,
+            "reason": "AVAILABLE",
+            "ratio": "0.9",
+            "ratio_precision": "50_SIGNIFICANT_DECIMAL_DIGITS_HALF_EVEN_ORIGINAL_NUMERATOR_DENOMINATOR_RETAINED",
+            "qualification": "PREVIOUS_SAVED_RECORD_DESCRIPTION_NOT_VOLUME_SIGNAL"
+          },
+          "original_macd": {
+            "original": {
+              "dif": "-0.1",
+              "dea": "0.1",
+              "histogram": "-0.4",
+              "reason": "ENGINEERING_SAVED_INPUT"
+            },
+            "reason": "ENGINEERING_SAVED_INPUT",
+            "field_observations": {
+              "dif": {
+                "value": "-0.1",
+                "reason": "AVAILABLE",
+                "sign": {
+                  "relation": "BELOW",
+                  "delta": "-0.1",
+                  "reason": "AVAILABLE"
+                },
+                "versus_previous": {
+                  "relation": "EQUAL",
+                  "delta": "0.0",
+                  "reason": "AVAILABLE"
+                }
+              },
+              "dea": {
+                "value": "0.1",
+                "reason": "AVAILABLE",
+                "sign": {
+                  "relation": "ABOVE",
+                  "delta": "0.1",
+                  "reason": "AVAILABLE"
+                },
+                "versus_previous": {
+                  "relation": "EQUAL",
+                  "delta": "0.0",
+                  "reason": "AVAILABLE"
+                }
+              },
+              "histogram": {
+                "value": "-0.4",
+                "reason": "AVAILABLE",
+                "sign": {
+                  "relation": "BELOW",
+                  "delta": "-0.4",
+                  "reason": "AVAILABLE"
+                },
+                "versus_previous": {
+                  "relation": "EQUAL",
+                  "delta": "0.0",
+                  "reason": "AVAILABLE"
+                }
+              }
+            }
+          },
+          "body": {
+            "relation": "ABOVE",
+            "delta": "2",
+            "reason": "AVAILABLE"
+          },
+          "adjacent_close": {
+            "relation": "ABOVE",
+            "delta": "2",
+            "reason": "AVAILABLE"
+          }
+        },
+        "intraday_sequence": "UNKNOWN_FROM_DAILY_OHLC",
+        "reference_qualification": "CONDITIONAL_EXPLICIT_ROLES_NOT_AUTOMATIC_PATTERN",
+        "historical_signal_eligible": false
+      },
+      {
+        "date": "2000-01-03",
+        "close": "9.5",
+        "state": "CONSOLIDATING",
+        "label": "整理",
+        "reasons": [
+          "NOT_ABOVE_PULLBACK_HIGH_AND_NOT_BELOW_ORIGINAL_BOX_FLOOR",
+          "EQUAL_SHALLOW_OBSERVATION_IS_NOT_A_STRICT_CROSS"
+        ],
+        "state_changed_on": "2000-01-03",
+        "price_facts": {
+          "PULLBACK_HIGH": {
+            "close": {
+              "relation": "BELOW",
+              "delta": "-1.0",
+              "reason": "AVAILABLE",
+              "transition": {
+                "kind": "SEGMENT_START",
+                "previous_date": null,
+                "from_relation": null,
+                "to_relation": "BELOW",
+                "reason": "NO_CONTIGUOUS_PRIOR_POSITION"
+              }
+            },
+            "high": {
+              "relation": "EQUAL",
+              "delta": "0.0",
+              "reason": "AVAILABLE",
+              "transition": {
+                "kind": "SEGMENT_START",
+                "previous_date": null,
+                "from_relation": null,
+                "to_relation": "EQUAL",
+                "reason": "NO_CONTIGUOUS_PRIOR_POSITION"
+              }
+            },
+            "low": {
+              "relation": "BELOW",
+              "delta": "-3.5",
+              "reason": "AVAILABLE",
+              "transition": {
+                "kind": "SEGMENT_START",
+                "previous_date": null,
+                "from_relation": null,
+                "to_relation": "BELOW",
+                "reason": "NO_CONTIGUOUS_PRIOR_POSITION"
+              }
+            }
+          },
+          "ORIGINAL_BOX_FLOOR": {
+            "close": {
+              "relation": "ABOVE",
+              "delta": "3.5",
+              "reason": "AVAILABLE",
+              "transition": {
+                "kind": "UNCHANGED",
+                "previous_date": "2000-01-02",
+                "from_relation": "ABOVE",
+                "to_relation": "ABOVE",
+                "reason": "AVAILABLE"
+              }
+            },
+            "high": {
+              "relation": "ABOVE",
+              "delta": "4.5",
+              "reason": "AVAILABLE",
+              "transition": {
+                "kind": "UNCHANGED",
+                "previous_date": "2000-01-02",
+                "from_relation": "ABOVE",
+                "to_relation": "ABOVE",
+                "reason": "AVAILABLE"
+              }
+            },
+            "low": {
+              "relation": "ABOVE",
+              "delta": "1",
+              "reason": "AVAILABLE",
+              "transition": {
+                "kind": "UNCHANGED",
+                "previous_date": "2000-01-02",
+                "from_relation": "ABOVE",
+                "to_relation": "ABOVE",
+                "reason": "AVAILABLE"
+              }
+            }
+          },
+          "ORIGINAL_BOX_UPPER": {
+            "close": {
+              "relation": "BELOW",
+              "delta": "-0.5",
+              "reason": "AVAILABLE",
+              "transition": {
+                "kind": "ABOVE_TO_BELOW",
+                "previous_date": "2000-01-02",
+                "from_relation": "ABOVE",
+                "to_relation": "BELOW",
+                "reason": "AVAILABLE"
+              }
+            },
+            "high": {
+              "relation": "ABOVE",
+              "delta": "0.5",
+              "reason": "AVAILABLE",
+              "transition": {
+                "kind": "UNCHANGED",
+                "previous_date": "2000-01-02",
+                "from_relation": "ABOVE",
+                "to_relation": "ABOVE",
+                "reason": "AVAILABLE"
+              }
+            },
+            "low": {
+              "relation": "BELOW",
+              "delta": "-3",
+              "reason": "AVAILABLE",
+              "transition": {
+                "kind": "UNCHANGED",
+                "previous_date": "2000-01-02",
+                "from_relation": "BELOW",
+                "to_relation": "BELOW",
+                "reason": "AVAILABLE"
+              }
+            }
+          },
+          "SHALLOW_OBSERVATION": {
+            "close": {
+              "relation": "EQUAL",
+              "delta": "0.0",
+              "reason": "AVAILABLE",
+              "transition": {
+                "kind": "SEGMENT_START",
+                "previous_date": null,
+                "from_relation": null,
+                "to_relation": "EQUAL",
+                "reason": "NO_CONTIGUOUS_PRIOR_POSITION"
+              }
+            },
+            "high": {
+              "relation": "ABOVE",
+              "delta": "1.0",
+              "reason": "AVAILABLE",
+              "transition": {
+                "kind": "SEGMENT_START",
+                "previous_date": null,
+                "from_relation": null,
+                "to_relation": "ABOVE",
+                "reason": "NO_CONTIGUOUS_PRIOR_POSITION"
+              }
+            },
+            "low": {
+              "relation": "BELOW",
+              "delta": "-2.5",
+              "reason": "AVAILABLE",
+              "transition": {
+                "kind": "SEGMENT_START",
+                "previous_date": null,
+                "from_relation": null,
+                "to_relation": "BELOW",
+                "reason": "NO_CONTIGUOUS_PRIOR_POSITION"
+              }
+            }
+          }
+        },
+        "role_prices": {
+          "PULLBACK_HIGH": "10.5",
+          "ORIGINAL_BOX_FLOOR": "6",
+          "ORIGINAL_BOX_UPPER": "10",
+          "SHALLOW_OBSERVATION": "9.5"
+        },
+        "equal_boundaries": [
+          "SHALLOW_OBSERVATION"
+        ],
+        "reference_role_ids": {
+          "PULLBACK_HIGH": "sha256:652cfe5f477d25d33394a248e84ecf5dbd3dd40f0689f4e062d08f3395f86716",
+          "ORIGINAL_BOX_FLOOR": "sha256:2e36450703046750d294b316d1e0a6139df490edd98ad2c738193707b7d9f17f",
+          "ORIGINAL_BOX_UPPER": "sha256:e01bc5eec43990b01d9a40ad74065d4476ce5ca6bb1fdff0aa5e400250994db3",
+          "SHALLOW_OBSERVATION": "sha256:222fe4942048c2b299f5948b8ba5b6636c2be30c21f26176042962419e6887ea"
+        },
+        "evidence": {
+          "supporting": [],
+          "opposing": [
+            "VOLUME_BELOW_PREVIOUS_RECORD_DESCRIPTION_ONLY_NOT_BREAKOUT_FILTER",
+            "MACD_HISTOGRAM_NEGATIVE_DESCRIPTION_ONLY"
+          ],
+          "missing": [
+            "HISTORICAL_PUBLICATION_UNVERIFIED",
+            "PERSONAL_ACTION_AND_RETURN_QUALIFICATION_NOT_EVALUATED"
+          ],
+          "original_volume": {
+            "current_shares": "80",
+            "previous_shares": "90",
+            "numerator_date": "2000-01-03",
+            "denominator_dates": [
+              "2000-01-02"
+            ],
+            "baseline_includes_current": false,
+            "reason": "AVAILABLE",
+            "ratio": "0.88888888888888888888888888888888888888888888888889",
+            "ratio_precision": "50_SIGNIFICANT_DECIMAL_DIGITS_HALF_EVEN_ORIGINAL_NUMERATOR_DENOMINATOR_RETAINED",
+            "qualification": "PREVIOUS_SAVED_RECORD_DESCRIPTION_NOT_VOLUME_SIGNAL"
+          },
+          "original_macd": {
+            "original": {
+              "dif": "-0.1",
+              "dea": "0.1",
+              "histogram": "-0.4",
+              "reason": "ENGINEERING_SAVED_INPUT"
+            },
+            "reason": "ENGINEERING_SAVED_INPUT",
+            "field_observations": {
+              "dif": {
+                "value": "-0.1",
+                "reason": "AVAILABLE",
+                "sign": {
+                  "relation": "BELOW",
+                  "delta": "-0.1",
+                  "reason": "AVAILABLE"
+                },
+                "versus_previous": {
+                  "relation": "EQUAL",
+                  "delta": "0.0",
+                  "reason": "AVAILABLE"
+                }
+              },
+              "dea": {
+                "value": "0.1",
+                "reason": "AVAILABLE",
+                "sign": {
+                  "relation": "ABOVE",
+                  "delta": "0.1",
+                  "reason": "AVAILABLE"
+                },
+                "versus_previous": {
+                  "relation": "EQUAL",
+                  "delta": "0.0",
+                  "reason": "AVAILABLE"
+                }
+              },
+              "histogram": {
+                "value": "-0.4",
+                "reason": "AVAILABLE",
+                "sign": {
+                  "relation": "BELOW",
+                  "delta": "-0.4",
+                  "reason": "AVAILABLE"
+                },
+                "versus_previous": {
+                  "relation": "EQUAL",
+                  "delta": "0.0",
+                  "reason": "AVAILABLE"
+                }
+              }
+            }
+          },
+          "body": {
+            "relation": "BELOW",
+            "delta": "-0.5",
+            "reason": "AVAILABLE"
+          },
+          "adjacent_close": {
+            "relation": "BELOW",
+            "delta": "-1.5",
+            "reason": "AVAILABLE"
+          }
+        },
+        "intraday_sequence": "UNKNOWN_FROM_DAILY_OHLC",
+        "reference_qualification": "CONDITIONAL_EXPLICIT_ROLES_NOT_AUTOMATIC_PATTERN",
+        "historical_signal_eligible": false
+      },
+      {
+        "date": "2000-01-04",
+        "close": "10.5",
+        "state": "CONSOLIDATING",
+        "label": "整理",
+        "reasons": [
+          "NOT_ABOVE_PULLBACK_HIGH_AND_NOT_BELOW_ORIGINAL_BOX_FLOOR",
+          "EQUAL_PULLBACK_HIGH_IS_NOT_A_STRICT_CROSS"
+        ],
+        "state_changed_on": "2000-01-03",
+        "price_facts": {
+          "PULLBACK_HIGH": {
+            "close": {
+              "relation": "EQUAL",
+              "delta": "0.0",
+              "reason": "AVAILABLE",
+              "transition": {
+                "kind": "BELOW_TO_EQUAL",
+                "previous_date": "2000-01-03",
+                "from_relation": "BELOW",
+                "to_relation": "EQUAL",
+                "reason": "AVAILABLE"
+              }
+            },
+            "high": {
+              "relation": "EQUAL",
+              "delta": "0.0",
+              "reason": "AVAILABLE",
+              "transition": {
+                "kind": "UNCHANGED",
+                "previous_date": "2000-01-03",
+                "from_relation": "EQUAL",
+                "to_relation": "EQUAL",
+                "reason": "AVAILABLE"
+              }
+            },
+            "low": {
+              "relation": "BELOW",
+              "delta": "-1.5",
+              "reason": "AVAILABLE",
+              "transition": {
+                "kind": "UNCHANGED",
+                "previous_date": "2000-01-03",
+                "from_relation": "BELOW",
+                "to_relation": "BELOW",
+                "reason": "AVAILABLE"
+              }
+            }
+          },
+          "ORIGINAL_BOX_FLOOR": {
+            "close": {
+              "relation": "ABOVE",
+              "delta": "4.5",
+              "reason": "AVAILABLE",
+              "transition": {
+                "kind": "UNCHANGED",
+                "previous_date": "2000-01-03",
+                "from_relation": "ABOVE",
+                "to_relation": "ABOVE",
+                "reason": "AVAILABLE"
+              }
+            },
+            "high": {
+              "relation": "ABOVE",
+              "delta": "4.5",
+              "reason": "AVAILABLE",
+              "transition": {
+                "kind": "UNCHANGED",
+                "previous_date": "2000-01-03",
+                "from_relation": "ABOVE",
+                "to_relation": "ABOVE",
+                "reason": "AVAILABLE"
+              }
+            },
+            "low": {
+              "relation": "ABOVE",
+              "delta": "3",
+              "reason": "AVAILABLE",
+              "transition": {
+                "kind": "UNCHANGED",
+                "previous_date": "2000-01-03",
+                "from_relation": "ABOVE",
+                "to_relation": "ABOVE",
+                "reason": "AVAILABLE"
+              }
+            }
+          },
+          "ORIGINAL_BOX_UPPER": {
+            "close": {
+              "relation": "ABOVE",
+              "delta": "0.5",
+              "reason": "AVAILABLE",
+              "transition": {
+                "kind": "BELOW_TO_ABOVE",
+                "previous_date": "2000-01-03",
+                "from_relation": "BELOW",
+                "to_relation": "ABOVE",
+                "reason": "AVAILABLE"
+              }
+            },
+            "high": {
+              "relation": "ABOVE",
+              "delta": "0.5",
+              "reason": "AVAILABLE",
+              "transition": {
+                "kind": "UNCHANGED",
+                "previous_date": "2000-01-03",
+                "from_relation": "ABOVE",
+                "to_relation": "ABOVE",
+                "reason": "AVAILABLE"
+              }
+            },
+            "low": {
+              "relation": "BELOW",
+              "delta": "-1",
+              "reason": "AVAILABLE",
+              "transition": {
+                "kind": "UNCHANGED",
+                "previous_date": "2000-01-03",
+                "from_relation": "BELOW",
+                "to_relation": "BELOW",
+                "reason": "AVAILABLE"
+              }
+            }
+          },
+          "SHALLOW_OBSERVATION": {
+            "close": {
+              "relation": "ABOVE",
+              "delta": "1.0",
+              "reason": "AVAILABLE",
+              "transition": {
+                "kind": "EQUAL_TO_ABOVE",
+                "previous_date": "2000-01-03",
+                "from_relation": "EQUAL",
+                "to_relation": "ABOVE",
+                "reason": "AVAILABLE"
+              }
+            },
+            "high": {
+              "relation": "ABOVE",
+              "delta": "1.0",
+              "reason": "AVAILABLE",
+              "transition": {
+                "kind": "UNCHANGED",
+                "previous_date": "2000-01-03",
+                "from_relation": "ABOVE",
+                "to_relation": "ABOVE",
+                "reason": "AVAILABLE"
+              }
+            },
+            "low": {
+              "relation": "BELOW",
+              "delta": "-0.5",
+              "reason": "AVAILABLE",
+              "transition": {
+                "kind": "UNCHANGED",
+                "previous_date": "2000-01-03",
+                "from_relation": "BELOW",
+                "to_relation": "BELOW",
+                "reason": "AVAILABLE"
+              }
+            }
+          }
+        },
+        "role_prices": {
+          "PULLBACK_HIGH": "10.5",
+          "ORIGINAL_BOX_FLOOR": "6",
+          "ORIGINAL_BOX_UPPER": "10",
+          "SHALLOW_OBSERVATION": "9.5"
+        },
+        "equal_boundaries": [
+          "PULLBACK_HIGH"
+        ],
+        "reference_role_ids": {
+          "PULLBACK_HIGH": "sha256:652cfe5f477d25d33394a248e84ecf5dbd3dd40f0689f4e062d08f3395f86716",
+          "ORIGINAL_BOX_FLOOR": "sha256:2e36450703046750d294b316d1e0a6139df490edd98ad2c738193707b7d9f17f",
+          "ORIGINAL_BOX_UPPER": "sha256:e01bc5eec43990b01d9a40ad74065d4476ce5ca6bb1fdff0aa5e400250994db3",
+          "SHALLOW_OBSERVATION": "sha256:222fe4942048c2b299f5948b8ba5b6636c2be30c21f26176042962419e6887ea"
+        },
+        "evidence": {
+          "supporting": [],
+          "opposing": [
+            "VOLUME_BELOW_PREVIOUS_RECORD_DESCRIPTION_ONLY_NOT_BREAKOUT_FILTER",
+            "MACD_HISTOGRAM_NEGATIVE_DESCRIPTION_ONLY"
+          ],
+          "missing": [
+            "HISTORICAL_PUBLICATION_UNVERIFIED",
+            "PERSONAL_ACTION_AND_RETURN_QUALIFICATION_NOT_EVALUATED"
+          ],
+          "original_volume": {
+            "current_shares": "70",
+            "previous_shares": "80",
+            "numerator_date": "2000-01-04",
+            "denominator_dates": [
+              "2000-01-03"
+            ],
+            "baseline_includes_current": false,
+            "reason": "AVAILABLE",
+            "ratio": "0.875",
+            "ratio_precision": "50_SIGNIFICANT_DECIMAL_DIGITS_HALF_EVEN_ORIGINAL_NUMERATOR_DENOMINATOR_RETAINED",
+            "qualification": "PREVIOUS_SAVED_RECORD_DESCRIPTION_NOT_VOLUME_SIGNAL"
+          },
+          "original_macd": {
+            "original": {
+              "dif": "-0.1",
+              "dea": "0.1",
+              "histogram": "-0.4",
+              "reason": "ENGINEERING_SAVED_INPUT"
+            },
+            "reason": "ENGINEERING_SAVED_INPUT",
+            "field_observations": {
+              "dif": {
+                "value": "-0.1",
+                "reason": "AVAILABLE",
+                "sign": {
+                  "relation": "BELOW",
+                  "delta": "-0.1",
+                  "reason": "AVAILABLE"
+                },
+                "versus_previous": {
+                  "relation": "EQUAL",
+                  "delta": "0.0",
+                  "reason": "AVAILABLE"
+                }
+              },
+              "dea": {
+                "value": "0.1",
+                "reason": "AVAILABLE",
+                "sign": {
+                  "relation": "ABOVE",
+                  "delta": "0.1",
+                  "reason": "AVAILABLE"
+                },
+                "versus_previous": {
+                  "relation": "EQUAL",
+                  "delta": "0.0",
+                  "reason": "AVAILABLE"
+                }
+              },
+              "histogram": {
+                "value": "-0.4",
+                "reason": "AVAILABLE",
+                "sign": {
+                  "relation": "BELOW",
+                  "delta": "-0.4",
+                  "reason": "AVAILABLE"
+                },
+                "versus_previous": {
+                  "relation": "EQUAL",
+                  "delta": "0.0",
+                  "reason": "AVAILABLE"
+                }
+              }
+            }
+          },
+          "body": {
+            "relation": "ABOVE",
+            "delta": "0.5",
+            "reason": "AVAILABLE"
+          },
+          "adjacent_close": {
+            "relation": "ABOVE",
+            "delta": "1.0",
+            "reason": "AVAILABLE"
+          }
+        },
+        "intraday_sequence": "UNKNOWN_FROM_DAILY_OHLC",
+        "reference_qualification": "CONDITIONAL_EXPLICIT_ROLES_NOT_AUTOMATIC_PATTERN",
+        "historical_signal_eligible": false
+      },
+      {
+        "date": "2000-01-05",
+        "close": "10.6",
+        "state": "STRENGTHENING",
+        "label": "轉強",
+        "reasons": [
+          "CLOSE_STRICTLY_ABOVE_PULLBACK_HIGH"
+        ],
+        "state_changed_on": "2000-01-05",
+        "price_facts": {
+          "PULLBACK_HIGH": {
+            "close": {
+              "relation": "ABOVE",
+              "delta": "0.1",
+              "reason": "AVAILABLE",
+              "transition": {
+                "kind": "EQUAL_TO_ABOVE",
+                "previous_date": "2000-01-04",
+                "from_relation": "EQUAL",
+                "to_relation": "ABOVE",
+                "reason": "AVAILABLE"
+              }
+            },
+            "high": {
+              "relation": "ABOVE",
+              "delta": "0.1",
+              "reason": "AVAILABLE",
+              "transition": {
+                "kind": "EQUAL_TO_ABOVE",
+                "previous_date": "2000-01-04",
+                "from_relation": "EQUAL",
+                "to_relation": "ABOVE",
+                "reason": "AVAILABLE"
+              }
+            },
+            "low": {
+              "relation": "BELOW",
+              "delta": "-0.5",
+              "reason": "AVAILABLE",
+              "transition": {
+                "kind": "UNCHANGED",
+                "previous_date": "2000-01-04",
+                "from_relation": "BELOW",
+                "to_relation": "BELOW",
+                "reason": "AVAILABLE"
+              }
+            }
+          },
+          "ORIGINAL_BOX_FLOOR": {
+            "close": {
+              "relation": "ABOVE",
+              "delta": "4.6",
+              "reason": "AVAILABLE",
+              "transition": {
+                "kind": "UNCHANGED",
+                "previous_date": "2000-01-04",
+                "from_relation": "ABOVE",
+                "to_relation": "ABOVE",
+                "reason": "AVAILABLE"
+              }
+            },
+            "high": {
+              "relation": "ABOVE",
+              "delta": "4.6",
+              "reason": "AVAILABLE",
+              "transition": {
+                "kind": "UNCHANGED",
+                "previous_date": "2000-01-04",
+                "from_relation": "ABOVE",
+                "to_relation": "ABOVE",
+                "reason": "AVAILABLE"
+              }
+            },
+            "low": {
+              "relation": "ABOVE",
+              "delta": "4",
+              "reason": "AVAILABLE",
+              "transition": {
+                "kind": "UNCHANGED",
+                "previous_date": "2000-01-04",
+                "from_relation": "ABOVE",
+                "to_relation": "ABOVE",
+                "reason": "AVAILABLE"
+              }
+            }
+          },
+          "ORIGINAL_BOX_UPPER": {
+            "close": {
+              "relation": "ABOVE",
+              "delta": "0.6",
+              "reason": "AVAILABLE",
+              "transition": {
+                "kind": "UNCHANGED",
+                "previous_date": "2000-01-04",
+                "from_relation": "ABOVE",
+                "to_relation": "ABOVE",
+                "reason": "AVAILABLE"
+              }
+            },
+            "high": {
+              "relation": "ABOVE",
+              "delta": "0.6",
+              "reason": "AVAILABLE",
+              "transition": {
+                "kind": "UNCHANGED",
+                "previous_date": "2000-01-04",
+                "from_relation": "ABOVE",
+                "to_relation": "ABOVE",
+                "reason": "AVAILABLE"
+              }
+            },
+            "low": {
+              "relation": "EQUAL",
+              "delta": "0",
+              "reason": "AVAILABLE",
+              "transition": {
+                "kind": "BELOW_TO_EQUAL",
+                "previous_date": "2000-01-04",
+                "from_relation": "BELOW",
+                "to_relation": "EQUAL",
+                "reason": "AVAILABLE"
+              }
+            }
+          },
+          "SHALLOW_OBSERVATION": {
+            "close": {
+              "relation": "ABOVE",
+              "delta": "1.1",
+              "reason": "AVAILABLE",
+              "transition": {
+                "kind": "UNCHANGED",
+                "previous_date": "2000-01-04",
+                "from_relation": "ABOVE",
+                "to_relation": "ABOVE",
+                "reason": "AVAILABLE"
+              }
+            },
+            "high": {
+              "relation": "ABOVE",
+              "delta": "1.1",
+              "reason": "AVAILABLE",
+              "transition": {
+                "kind": "UNCHANGED",
+                "previous_date": "2000-01-04",
+                "from_relation": "ABOVE",
+                "to_relation": "ABOVE",
+                "reason": "AVAILABLE"
+              }
+            },
+            "low": {
+              "relation": "ABOVE",
+              "delta": "0.5",
+              "reason": "AVAILABLE",
+              "transition": {
+                "kind": "BELOW_TO_ABOVE",
+                "previous_date": "2000-01-04",
+                "from_relation": "BELOW",
+                "to_relation": "ABOVE",
+                "reason": "AVAILABLE"
+              }
+            }
+          }
+        },
+        "role_prices": {
+          "PULLBACK_HIGH": "10.5",
+          "ORIGINAL_BOX_FLOOR": "6",
+          "ORIGINAL_BOX_UPPER": "10",
+          "SHALLOW_OBSERVATION": "9.5"
+        },
+        "equal_boundaries": [],
+        "reference_role_ids": {
+          "PULLBACK_HIGH": "sha256:652cfe5f477d25d33394a248e84ecf5dbd3dd40f0689f4e062d08f3395f86716",
+          "ORIGINAL_BOX_FLOOR": "sha256:2e36450703046750d294b316d1e0a6139df490edd98ad2c738193707b7d9f17f",
+          "ORIGINAL_BOX_UPPER": "sha256:e01bc5eec43990b01d9a40ad74065d4476ce5ca6bb1fdff0aa5e400250994db3",
+          "SHALLOW_OBSERVATION": "sha256:222fe4942048c2b299f5948b8ba5b6636c2be30c21f26176042962419e6887ea"
+        },
+        "evidence": {
+          "supporting": [],
+          "opposing": [
+            "VOLUME_BELOW_PREVIOUS_RECORD_DESCRIPTION_ONLY_NOT_BREAKOUT_FILTER",
+            "MACD_HISTOGRAM_NEGATIVE_DESCRIPTION_ONLY"
+          ],
+          "missing": [
+            "HISTORICAL_PUBLICATION_UNVERIFIED",
+            "PERSONAL_ACTION_AND_RETURN_QUALIFICATION_NOT_EVALUATED"
+          ],
+          "original_volume": {
+            "current_shares": "60",
+            "previous_shares": "70",
+            "numerator_date": "2000-01-05",
+            "denominator_dates": [
+              "2000-01-04"
+            ],
+            "baseline_includes_current": false,
+            "reason": "AVAILABLE",
+            "ratio": "0.85714285714285714285714285714285714285714285714286",
+            "ratio_precision": "50_SIGNIFICANT_DECIMAL_DIGITS_HALF_EVEN_ORIGINAL_NUMERATOR_DENOMINATOR_RETAINED",
+            "qualification": "PREVIOUS_SAVED_RECORD_DESCRIPTION_NOT_VOLUME_SIGNAL"
+          },
+          "original_macd": {
+            "original": {
+              "dif": "-0.1",
+              "dea": "0.1",
+              "histogram": "-0.4",
+              "reason": "ENGINEERING_SAVED_INPUT"
+            },
+            "reason": "ENGINEERING_SAVED_INPUT",
+            "field_observations": {
+              "dif": {
+                "value": "-0.1",
+                "reason": "AVAILABLE",
+                "sign": {
+                  "relation": "BELOW",
+                  "delta": "-0.1",
+                  "reason": "AVAILABLE"
+                },
+                "versus_previous": {
+                  "relation": "EQUAL",
+                  "delta": "0.0",
+                  "reason": "AVAILABLE"
+                }
+              },
+              "dea": {
+                "value": "0.1",
+                "reason": "AVAILABLE",
+                "sign": {
+                  "relation": "ABOVE",
+                  "delta": "0.1",
+                  "reason": "AVAILABLE"
+                },
+                "versus_previous": {
+                  "relation": "EQUAL",
+                  "delta": "0.0",
+                  "reason": "AVAILABLE"
+                }
+              },
+              "histogram": {
+                "value": "-0.4",
+                "reason": "AVAILABLE",
+                "sign": {
+                  "relation": "BELOW",
+                  "delta": "-0.4",
+                  "reason": "AVAILABLE"
+                },
+                "versus_previous": {
+                  "relation": "EQUAL",
+                  "delta": "0.0",
+                  "reason": "AVAILABLE"
+                }
+              }
+            }
+          },
+          "body": {
+            "relation": "ABOVE",
+            "delta": "0.1",
+            "reason": "AVAILABLE"
+          },
+          "adjacent_close": {
+            "relation": "ABOVE",
+            "delta": "0.1",
+            "reason": "AVAILABLE"
+          }
+        },
+        "intraday_sequence": "UNKNOWN_FROM_DAILY_OHLC",
+        "reference_qualification": "CONDITIONAL_EXPLICIT_ROLES_NOT_AUTOMATIC_PATTERN",
+        "historical_signal_eligible": false
+      },
+      {
+        "date": "2000-01-06",
+        "close": "8",
+        "state": "CONSOLIDATING",
+        "label": "整理",
+        "reasons": [
+          "NOT_ABOVE_PULLBACK_HIGH_AND_NOT_BELOW_ORIGINAL_BOX_FLOOR"
+        ],
+        "state_changed_on": "2000-01-06",
+        "price_facts": {
+          "PULLBACK_HIGH": {
+            "close": {
+              "relation": "BELOW",
+              "delta": "-2.5",
+              "reason": "AVAILABLE",
+              "transition": {
+                "kind": "ABOVE_TO_BELOW",
+                "previous_date": "2000-01-05",
+                "from_relation": "ABOVE",
+                "to_relation": "BELOW",
+                "reason": "AVAILABLE"
+              }
+            },
+            "high": {
+              "relation": "BELOW",
+              "delta": "-1.5",
+              "reason": "AVAILABLE",
+              "transition": {
+                "kind": "ABOVE_TO_BELOW",
+                "previous_date": "2000-01-05",
+                "from_relation": "ABOVE",
+                "to_relation": "BELOW",
+                "reason": "AVAILABLE"
+              }
+            },
+            "low": {
+              "relation": "BELOW",
+              "delta": "-2.5",
+              "reason": "AVAILABLE",
+              "transition": {
+                "kind": "UNCHANGED",
+                "previous_date": "2000-01-05",
+                "from_relation": "BELOW",
+                "to_relation": "BELOW",
+                "reason": "AVAILABLE"
+              }
+            }
+          },
+          "ORIGINAL_BOX_FLOOR": {
+            "close": {
+              "relation": "ABOVE",
+              "delta": "2",
+              "reason": "AVAILABLE",
+              "transition": {
+                "kind": "UNCHANGED",
+                "previous_date": "2000-01-05",
+                "from_relation": "ABOVE",
+                "to_relation": "ABOVE",
+                "reason": "AVAILABLE"
+              }
+            },
+            "high": {
+              "relation": "ABOVE",
+              "delta": "3",
+              "reason": "AVAILABLE",
+              "transition": {
+                "kind": "UNCHANGED",
+                "previous_date": "2000-01-05",
+                "from_relation": "ABOVE",
+                "to_relation": "ABOVE",
+                "reason": "AVAILABLE"
+              }
+            },
+            "low": {
+              "relation": "ABOVE",
+              "delta": "2",
+              "reason": "AVAILABLE",
+              "transition": {
+                "kind": "UNCHANGED",
+                "previous_date": "2000-01-05",
+                "from_relation": "ABOVE",
+                "to_relation": "ABOVE",
+                "reason": "AVAILABLE"
+              }
+            }
+          },
+          "ORIGINAL_BOX_UPPER": {
+            "close": {
+              "relation": "BELOW",
+              "delta": "-2",
+              "reason": "AVAILABLE",
+              "transition": {
+                "kind": "ABOVE_TO_BELOW",
+                "previous_date": "2000-01-05",
+                "from_relation": "ABOVE",
+                "to_relation": "BELOW",
+                "reason": "AVAILABLE"
+              }
+            },
+            "high": {
+              "relation": "BELOW",
+              "delta": "-1",
+              "reason": "AVAILABLE",
+              "transition": {
+                "kind": "ABOVE_TO_BELOW",
+                "previous_date": "2000-01-05",
+                "from_relation": "ABOVE",
+                "to_relation": "BELOW",
+                "reason": "AVAILABLE"
+              }
+            },
+            "low": {
+              "relation": "BELOW",
+              "delta": "-2",
+              "reason": "AVAILABLE",
+              "transition": {
+                "kind": "EQUAL_TO_BELOW",
+                "previous_date": "2000-01-05",
+                "from_relation": "EQUAL",
+                "to_relation": "BELOW",
+                "reason": "AVAILABLE"
+              }
+            }
+          },
+          "SHALLOW_OBSERVATION": {
+            "close": {
+              "relation": "BELOW",
+              "delta": "-1.5",
+              "reason": "AVAILABLE",
+              "transition": {
+                "kind": "ABOVE_TO_BELOW",
+                "previous_date": "2000-01-05",
+                "from_relation": "ABOVE",
+                "to_relation": "BELOW",
+                "reason": "AVAILABLE"
+              }
+            },
+            "high": {
+              "relation": "BELOW",
+              "delta": "-0.5",
+              "reason": "AVAILABLE",
+              "transition": {
+                "kind": "ABOVE_TO_BELOW",
+                "previous_date": "2000-01-05",
+                "from_relation": "ABOVE",
+                "to_relation": "BELOW",
+                "reason": "AVAILABLE"
+              }
+            },
+            "low": {
+              "relation": "BELOW",
+              "delta": "-1.5",
+              "reason": "AVAILABLE",
+              "transition": {
+                "kind": "ABOVE_TO_BELOW",
+                "previous_date": "2000-01-05",
+                "from_relation": "ABOVE",
+                "to_relation": "BELOW",
+                "reason": "AVAILABLE"
+              }
+            }
+          }
+        },
+        "role_prices": {
+          "PULLBACK_HIGH": "10.5",
+          "ORIGINAL_BOX_FLOOR": "6",
+          "ORIGINAL_BOX_UPPER": "10",
+          "SHALLOW_OBSERVATION": "9.5"
+        },
+        "equal_boundaries": [],
+        "reference_role_ids": {
+          "PULLBACK_HIGH": "sha256:652cfe5f477d25d33394a248e84ecf5dbd3dd40f0689f4e062d08f3395f86716",
+          "ORIGINAL_BOX_FLOOR": "sha256:2e36450703046750d294b316d1e0a6139df490edd98ad2c738193707b7d9f17f",
+          "ORIGINAL_BOX_UPPER": "sha256:e01bc5eec43990b01d9a40ad74065d4476ce5ca6bb1fdff0aa5e400250994db3",
+          "SHALLOW_OBSERVATION": "sha256:222fe4942048c2b299f5948b8ba5b6636c2be30c21f26176042962419e6887ea"
+        },
+        "evidence": {
+          "supporting": [],
+          "opposing": [
+            "VOLUME_BELOW_PREVIOUS_RECORD_DESCRIPTION_ONLY_NOT_BREAKOUT_FILTER",
+            "MACD_HISTOGRAM_NEGATIVE_DESCRIPTION_ONLY"
+          ],
+          "missing": [
+            "HISTORICAL_PUBLICATION_UNVERIFIED",
+            "PERSONAL_ACTION_AND_RETURN_QUALIFICATION_NOT_EVALUATED"
+          ],
+          "original_volume": {
+            "current_shares": "50",
+            "previous_shares": "60",
+            "numerator_date": "2000-01-06",
+            "denominator_dates": [
+              "2000-01-05"
+            ],
+            "baseline_includes_current": false,
+            "reason": "AVAILABLE",
+            "ratio": "0.83333333333333333333333333333333333333333333333333",
+            "ratio_precision": "50_SIGNIFICANT_DECIMAL_DIGITS_HALF_EVEN_ORIGINAL_NUMERATOR_DENOMINATOR_RETAINED",
+            "qualification": "PREVIOUS_SAVED_RECORD_DESCRIPTION_NOT_VOLUME_SIGNAL"
+          },
+          "original_macd": {
+            "original": {
+              "dif": "-0.1",
+              "dea": "0.1",
+              "histogram": "-0.4",
+              "reason": "ENGINEERING_SAVED_INPUT"
+            },
+            "reason": "ENGINEERING_SAVED_INPUT",
+            "field_observations": {
+              "dif": {
+                "value": "-0.1",
+                "reason": "AVAILABLE",
+                "sign": {
+                  "relation": "BELOW",
+                  "delta": "-0.1",
+                  "reason": "AVAILABLE"
+                },
+                "versus_previous": {
+                  "relation": "EQUAL",
+                  "delta": "0.0",
+                  "reason": "AVAILABLE"
+                }
+              },
+              "dea": {
+                "value": "0.1",
+                "reason": "AVAILABLE",
+                "sign": {
+                  "relation": "ABOVE",
+                  "delta": "0.1",
+                  "reason": "AVAILABLE"
+                },
+                "versus_previous": {
+                  "relation": "EQUAL",
+                  "delta": "0.0",
+                  "reason": "AVAILABLE"
+                }
+              },
+              "histogram": {
+                "value": "-0.4",
+                "reason": "AVAILABLE",
+                "sign": {
+                  "relation": "BELOW",
+                  "delta": "-0.4",
+                  "reason": "AVAILABLE"
+                },
+                "versus_previous": {
+                  "relation": "EQUAL",
+                  "delta": "0.0",
+                  "reason": "AVAILABLE"
+                }
+              }
+            }
+          },
+          "body": {
+            "relation": "BELOW",
+            "delta": "-1",
+            "reason": "AVAILABLE"
+          },
+          "adjacent_close": {
+            "relation": "BELOW",
+            "delta": "-2.6",
+            "reason": "AVAILABLE"
+          }
+        },
+        "intraday_sequence": "UNKNOWN_FROM_DAILY_OHLC",
+        "reference_qualification": "CONDITIONAL_EXPLICIT_ROLES_NOT_AUTOMATIC_PATTERN",
+        "historical_signal_eligible": false
+      },
+      {
+        "date": "2000-01-07",
+        "close": "6",
+        "state": "CONSOLIDATING",
+        "label": "整理",
+        "reasons": [
+          "NOT_ABOVE_PULLBACK_HIGH_AND_NOT_BELOW_ORIGINAL_BOX_FLOOR",
+          "EQUAL_ORIGINAL_BOX_FLOOR_IS_NOT_A_STRICT_CROSS"
+        ],
+        "state_changed_on": "2000-01-06",
+        "price_facts": {
+          "PULLBACK_HIGH": {
+            "close": {
+              "relation": "BELOW",
+              "delta": "-4.5",
+              "reason": "AVAILABLE",
+              "transition": {
+                "kind": "UNCHANGED",
+                "previous_date": "2000-01-06",
+                "from_relation": "BELOW",
+                "to_relation": "BELOW",
+                "reason": "AVAILABLE"
+              }
+            },
+            "high": {
+              "relation": "BELOW",
+              "delta": "-2.5",
+              "reason": "AVAILABLE",
+              "transition": {
+                "kind": "UNCHANGED",
+                "previous_date": "2000-01-06",
+                "from_relation": "BELOW",
+                "to_relation": "BELOW",
+                "reason": "AVAILABLE"
+              }
+            },
+            "low": {
+              "relation": "BELOW",
+              "delta": "-4.5",
+              "reason": "AVAILABLE",
+              "transition": {
+                "kind": "UNCHANGED",
+                "previous_date": "2000-01-06",
+                "from_relation": "BELOW",
+                "to_relation": "BELOW",
+                "reason": "AVAILABLE"
+              }
+            }
+          },
+          "ORIGINAL_BOX_FLOOR": {
+            "close": {
+              "relation": "EQUAL",
+              "delta": "0",
+              "reason": "AVAILABLE",
+              "transition": {
+                "kind": "ABOVE_TO_EQUAL",
+                "previous_date": "2000-01-06",
+                "from_relation": "ABOVE",
+                "to_relation": "EQUAL",
+                "reason": "AVAILABLE"
+              }
+            },
+            "high": {
+              "relation": "ABOVE",
+              "delta": "2",
+              "reason": "AVAILABLE",
+              "transition": {
+                "kind": "UNCHANGED",
+                "previous_date": "2000-01-06",
+                "from_relation": "ABOVE",
+                "to_relation": "ABOVE",
+                "reason": "AVAILABLE"
+              }
+            },
+            "low": {
+              "relation": "EQUAL",
+              "delta": "0",
+              "reason": "AVAILABLE",
+              "transition": {
+                "kind": "ABOVE_TO_EQUAL",
+                "previous_date": "2000-01-06",
+                "from_relation": "ABOVE",
+                "to_relation": "EQUAL",
+                "reason": "AVAILABLE"
+              }
+            }
+          },
+          "ORIGINAL_BOX_UPPER": {
+            "close": {
+              "relation": "BELOW",
+              "delta": "-4",
+              "reason": "AVAILABLE",
+              "transition": {
+                "kind": "UNCHANGED",
+                "previous_date": "2000-01-06",
+                "from_relation": "BELOW",
+                "to_relation": "BELOW",
+                "reason": "AVAILABLE"
+              }
+            },
+            "high": {
+              "relation": "BELOW",
+              "delta": "-2",
+              "reason": "AVAILABLE",
+              "transition": {
+                "kind": "UNCHANGED",
+                "previous_date": "2000-01-06",
+                "from_relation": "BELOW",
+                "to_relation": "BELOW",
+                "reason": "AVAILABLE"
+              }
+            },
+            "low": {
+              "relation": "BELOW",
+              "delta": "-4",
+              "reason": "AVAILABLE",
+              "transition": {
+                "kind": "UNCHANGED",
+                "previous_date": "2000-01-06",
+                "from_relation": "BELOW",
+                "to_relation": "BELOW",
+                "reason": "AVAILABLE"
+              }
+            }
+          },
+          "SHALLOW_OBSERVATION": {
+            "close": {
+              "relation": "BELOW",
+              "delta": "-3.5",
+              "reason": "AVAILABLE",
+              "transition": {
+                "kind": "UNCHANGED",
+                "previous_date": "2000-01-06",
+                "from_relation": "BELOW",
+                "to_relation": "BELOW",
+                "reason": "AVAILABLE"
+              }
+            },
+            "high": {
+              "relation": "BELOW",
+              "delta": "-1.5",
+              "reason": "AVAILABLE",
+              "transition": {
+                "kind": "UNCHANGED",
+                "previous_date": "2000-01-06",
+                "from_relation": "BELOW",
+                "to_relation": "BELOW",
+                "reason": "AVAILABLE"
+              }
+            },
+            "low": {
+              "relation": "BELOW",
+              "delta": "-3.5",
+              "reason": "AVAILABLE",
+              "transition": {
+                "kind": "UNCHANGED",
+                "previous_date": "2000-01-06",
+                "from_relation": "BELOW",
+                "to_relation": "BELOW",
+                "reason": "AVAILABLE"
+              }
+            }
+          }
+        },
+        "role_prices": {
+          "PULLBACK_HIGH": "10.5",
+          "ORIGINAL_BOX_FLOOR": "6",
+          "ORIGINAL_BOX_UPPER": "10",
+          "SHALLOW_OBSERVATION": "9.5"
+        },
+        "equal_boundaries": [
+          "ORIGINAL_BOX_FLOOR"
+        ],
+        "reference_role_ids": {
+          "PULLBACK_HIGH": "sha256:652cfe5f477d25d33394a248e84ecf5dbd3dd40f0689f4e062d08f3395f86716",
+          "ORIGINAL_BOX_FLOOR": "sha256:2e36450703046750d294b316d1e0a6139df490edd98ad2c738193707b7d9f17f",
+          "ORIGINAL_BOX_UPPER": "sha256:e01bc5eec43990b01d9a40ad74065d4476ce5ca6bb1fdff0aa5e400250994db3",
+          "SHALLOW_OBSERVATION": "sha256:222fe4942048c2b299f5948b8ba5b6636c2be30c21f26176042962419e6887ea"
+        },
+        "evidence": {
+          "supporting": [],
+          "opposing": [
+            "VOLUME_BELOW_PREVIOUS_RECORD_DESCRIPTION_ONLY_NOT_BREAKOUT_FILTER",
+            "MACD_HISTOGRAM_NEGATIVE_DESCRIPTION_ONLY"
+          ],
+          "missing": [
+            "HISTORICAL_PUBLICATION_UNVERIFIED",
+            "PERSONAL_ACTION_AND_RETURN_QUALIFICATION_NOT_EVALUATED"
+          ],
+          "original_volume": {
+            "current_shares": "40",
+            "previous_shares": "50",
+            "numerator_date": "2000-01-07",
+            "denominator_dates": [
+              "2000-01-06"
+            ],
+            "baseline_includes_current": false,
+            "reason": "AVAILABLE",
+            "ratio": "0.8",
+            "ratio_precision": "50_SIGNIFICANT_DECIMAL_DIGITS_HALF_EVEN_ORIGINAL_NUMERATOR_DENOMINATOR_RETAINED",
+            "qualification": "PREVIOUS_SAVED_RECORD_DESCRIPTION_NOT_VOLUME_SIGNAL"
+          },
+          "original_macd": {
+            "original": {
+              "dif": "-0.1",
+              "dea": "0.1",
+              "histogram": "-0.4",
+              "reason": "ENGINEERING_SAVED_INPUT"
+            },
+            "reason": "ENGINEERING_SAVED_INPUT",
+            "field_observations": {
+              "dif": {
+                "value": "-0.1",
+                "reason": "AVAILABLE",
+                "sign": {
+                  "relation": "BELOW",
+                  "delta": "-0.1",
+                  "reason": "AVAILABLE"
+                },
+                "versus_previous": {
+                  "relation": "EQUAL",
+                  "delta": "0.0",
+                  "reason": "AVAILABLE"
+                }
+              },
+              "dea": {
+                "value": "0.1",
+                "reason": "AVAILABLE",
+                "sign": {
+                  "relation": "ABOVE",
+                  "delta": "0.1",
+                  "reason": "AVAILABLE"
+                },
+                "versus_previous": {
+                  "relation": "EQUAL",
+                  "delta": "0.0",
+                  "reason": "AVAILABLE"
+                }
+              },
+              "histogram": {
+                "value": "-0.4",
+                "reason": "AVAILABLE",
+                "sign": {
+                  "relation": "BELOW",
+                  "delta": "-0.4",
+                  "reason": "AVAILABLE"
+                },
+                "versus_previous": {
+                  "relation": "EQUAL",
+                  "delta": "0.0",
+                  "reason": "AVAILABLE"
+                }
+              }
+            }
+          },
+          "body": {
+            "relation": "BELOW",
+            "delta": "-2",
+            "reason": "AVAILABLE"
+          },
+          "adjacent_close": {
+            "relation": "BELOW",
+            "delta": "-2",
+            "reason": "AVAILABLE"
+          }
+        },
+        "intraday_sequence": "UNKNOWN_FROM_DAILY_OHLC",
+        "reference_qualification": "CONDITIONAL_EXPLICIT_ROLES_NOT_AUTOMATIC_PATTERN",
+        "historical_signal_eligible": false
+      },
+      {
+        "date": "2000-01-08",
+        "close": "5.9",
+        "state": "WEAKENING",
+        "label": "轉弱",
+        "reasons": [
+          "CLOSE_STRICTLY_BELOW_ORIGINAL_BOX_FLOOR"
+        ],
+        "state_changed_on": "2000-01-08",
+        "price_facts": {
+          "PULLBACK_HIGH": {
+            "close": {
+              "relation": "BELOW",
+              "delta": "-4.6",
+              "reason": "AVAILABLE",
+              "transition": {
+                "kind": "UNCHANGED",
+                "previous_date": "2000-01-07",
+                "from_relation": "BELOW",
+                "to_relation": "BELOW",
+                "reason": "AVAILABLE"
+              }
+            },
+            "high": {
+              "relation": "BELOW",
+              "delta": "-4.5",
+              "reason": "AVAILABLE",
+              "transition": {
+                "kind": "UNCHANGED",
+                "previous_date": "2000-01-07",
+                "from_relation": "BELOW",
+                "to_relation": "BELOW",
+                "reason": "AVAILABLE"
+              }
+            },
+            "low": {
+              "relation": "BELOW",
+              "delta": "-4.6",
+              "reason": "AVAILABLE",
+              "transition": {
+                "kind": "UNCHANGED",
+                "previous_date": "2000-01-07",
+                "from_relation": "BELOW",
+                "to_relation": "BELOW",
+                "reason": "AVAILABLE"
+              }
+            }
+          },
+          "ORIGINAL_BOX_FLOOR": {
+            "close": {
+              "relation": "BELOW",
+              "delta": "-0.1",
+              "reason": "AVAILABLE",
+              "transition": {
+                "kind": "EQUAL_TO_BELOW",
+                "previous_date": "2000-01-07",
+                "from_relation": "EQUAL",
+                "to_relation": "BELOW",
+                "reason": "AVAILABLE"
+              }
+            },
+            "high": {
+              "relation": "EQUAL",
+              "delta": "0",
+              "reason": "AVAILABLE",
+              "transition": {
+                "kind": "ABOVE_TO_EQUAL",
+                "previous_date": "2000-01-07",
+                "from_relation": "ABOVE",
+                "to_relation": "EQUAL",
+                "reason": "AVAILABLE"
+              }
+            },
+            "low": {
+              "relation": "BELOW",
+              "delta": "-0.1",
+              "reason": "AVAILABLE",
+              "transition": {
+                "kind": "EQUAL_TO_BELOW",
+                "previous_date": "2000-01-07",
+                "from_relation": "EQUAL",
+                "to_relation": "BELOW",
+                "reason": "AVAILABLE"
+              }
+            }
+          },
+          "ORIGINAL_BOX_UPPER": {
+            "close": {
+              "relation": "BELOW",
+              "delta": "-4.1",
+              "reason": "AVAILABLE",
+              "transition": {
+                "kind": "UNCHANGED",
+                "previous_date": "2000-01-07",
+                "from_relation": "BELOW",
+                "to_relation": "BELOW",
+                "reason": "AVAILABLE"
+              }
+            },
+            "high": {
+              "relation": "BELOW",
+              "delta": "-4",
+              "reason": "AVAILABLE",
+              "transition": {
+                "kind": "UNCHANGED",
+                "previous_date": "2000-01-07",
+                "from_relation": "BELOW",
+                "to_relation": "BELOW",
+                "reason": "AVAILABLE"
+              }
+            },
+            "low": {
+              "relation": "BELOW",
+              "delta": "-4.1",
+              "reason": "AVAILABLE",
+              "transition": {
+                "kind": "UNCHANGED",
+                "previous_date": "2000-01-07",
+                "from_relation": "BELOW",
+                "to_relation": "BELOW",
+                "reason": "AVAILABLE"
+              }
+            }
+          },
+          "SHALLOW_OBSERVATION": {
+            "close": {
+              "relation": "BELOW",
+              "delta": "-3.6",
+              "reason": "AVAILABLE",
+              "transition": {
+                "kind": "UNCHANGED",
+                "previous_date": "2000-01-07",
+                "from_relation": "BELOW",
+                "to_relation": "BELOW",
+                "reason": "AVAILABLE"
+              }
+            },
+            "high": {
+              "relation": "BELOW",
+              "delta": "-3.5",
+              "reason": "AVAILABLE",
+              "transition": {
+                "kind": "UNCHANGED",
+                "previous_date": "2000-01-07",
+                "from_relation": "BELOW",
+                "to_relation": "BELOW",
+                "reason": "AVAILABLE"
+              }
+            },
+            "low": {
+              "relation": "BELOW",
+              "delta": "-3.6",
+              "reason": "AVAILABLE",
+              "transition": {
+                "kind": "UNCHANGED",
+                "previous_date": "2000-01-07",
+                "from_relation": "BELOW",
+                "to_relation": "BELOW",
+                "reason": "AVAILABLE"
+              }
+            }
+          }
+        },
+        "role_prices": {
+          "PULLBACK_HIGH": "10.5",
+          "ORIGINAL_BOX_FLOOR": "6",
+          "ORIGINAL_BOX_UPPER": "10",
+          "SHALLOW_OBSERVATION": "9.5"
+        },
+        "equal_boundaries": [],
+        "reference_role_ids": {
+          "PULLBACK_HIGH": "sha256:652cfe5f477d25d33394a248e84ecf5dbd3dd40f0689f4e062d08f3395f86716",
+          "ORIGINAL_BOX_FLOOR": "sha256:2e36450703046750d294b316d1e0a6139df490edd98ad2c738193707b7d9f17f",
+          "ORIGINAL_BOX_UPPER": "sha256:e01bc5eec43990b01d9a40ad74065d4476ce5ca6bb1fdff0aa5e400250994db3",
+          "SHALLOW_OBSERVATION": "sha256:222fe4942048c2b299f5948b8ba5b6636c2be30c21f26176042962419e6887ea"
+        },
+        "evidence": {
+          "supporting": [],
+          "opposing": [
+            "VOLUME_BELOW_PREVIOUS_RECORD_DESCRIPTION_ONLY_NOT_BREAKOUT_FILTER",
+            "MACD_HISTOGRAM_NEGATIVE_DESCRIPTION_ONLY"
+          ],
+          "missing": [
+            "HISTORICAL_PUBLICATION_UNVERIFIED",
+            "PERSONAL_ACTION_AND_RETURN_QUALIFICATION_NOT_EVALUATED"
+          ],
+          "original_volume": {
+            "current_shares": "30",
+            "previous_shares": "40",
+            "numerator_date": "2000-01-08",
+            "denominator_dates": [
+              "2000-01-07"
+            ],
+            "baseline_includes_current": false,
+            "reason": "AVAILABLE",
+            "ratio": "0.75",
+            "ratio_precision": "50_SIGNIFICANT_DECIMAL_DIGITS_HALF_EVEN_ORIGINAL_NUMERATOR_DENOMINATOR_RETAINED",
+            "qualification": "PREVIOUS_SAVED_RECORD_DESCRIPTION_NOT_VOLUME_SIGNAL"
+          },
+          "original_macd": {
+            "original": {
+              "dif": "-0.1",
+              "dea": "0.1",
+              "histogram": "-0.4",
+              "reason": "ENGINEERING_SAVED_INPUT"
+            },
+            "reason": "ENGINEERING_SAVED_INPUT",
+            "field_observations": {
+              "dif": {
+                "value": "-0.1",
+                "reason": "AVAILABLE",
+                "sign": {
+                  "relation": "BELOW",
+                  "delta": "-0.1",
+                  "reason": "AVAILABLE"
+                },
+                "versus_previous": {
+                  "relation": "EQUAL",
+                  "delta": "0.0",
+                  "reason": "AVAILABLE"
+                }
+              },
+              "dea": {
+                "value": "0.1",
+                "reason": "AVAILABLE",
+                "sign": {
+                  "relation": "ABOVE",
+                  "delta": "0.1",
+                  "reason": "AVAILABLE"
+                },
+                "versus_previous": {
+                  "relation": "EQUAL",
+                  "delta": "0.0",
+                  "reason": "AVAILABLE"
+                }
+              },
+              "histogram": {
+                "value": "-0.4",
+                "reason": "AVAILABLE",
+                "sign": {
+                  "relation": "BELOW",
+                  "delta": "-0.4",
+                  "reason": "AVAILABLE"
+                },
+                "versus_previous": {
+                  "relation": "EQUAL",
+                  "delta": "0.0",
+                  "reason": "AVAILABLE"
+                }
+              }
+            }
+          },
+          "body": {
+            "relation": "BELOW",
+            "delta": "-0.1",
+            "reason": "AVAILABLE"
+          },
+          "adjacent_close": {
+            "relation": "BELOW",
+            "delta": "-0.1",
+            "reason": "AVAILABLE"
+          }
+        },
+        "intraday_sequence": "UNKNOWN_FROM_DAILY_OHLC",
+        "reference_qualification": "CONDITIONAL_EXPLICIT_ROLES_NOT_AUTOMATIC_PATTERN",
+        "historical_signal_eligible": false
+      },
+      {
+        "date": "2000-01-09",
+        "close": "11",
+        "state": "STRENGTHENING",
+        "label": "轉強",
+        "reasons": [
+          "CLOSE_STRICTLY_ABOVE_PULLBACK_HIGH"
+        ],
+        "state_changed_on": "2000-01-09",
+        "price_facts": {
+          "PULLBACK_HIGH": {
+            "close": {
+              "relation": "ABOVE",
+              "delta": "0.5",
+              "reason": "AVAILABLE",
+              "transition": {
+                "kind": "BELOW_TO_ABOVE",
+                "previous_date": "2000-01-08",
+                "from_relation": "BELOW",
+                "to_relation": "ABOVE",
+                "reason": "AVAILABLE"
+              }
+            },
+            "high": {
+              "relation": "ABOVE",
+              "delta": "0.5",
+              "reason": "AVAILABLE",
+              "transition": {
+                "kind": "BELOW_TO_ABOVE",
+                "previous_date": "2000-01-08",
+                "from_relation": "BELOW",
+                "to_relation": "ABOVE",
+                "reason": "AVAILABLE"
+              }
+            },
+            "low": {
+              "relation": "BELOW",
+              "delta": "-4.5",
+              "reason": "AVAILABLE",
+              "transition": {
+                "kind": "UNCHANGED",
+                "previous_date": "2000-01-08",
+                "from_relation": "BELOW",
+                "to_relation": "BELOW",
+                "reason": "AVAILABLE"
+              }
+            }
+          },
+          "ORIGINAL_BOX_FLOOR": {
+            "close": {
+              "relation": "ABOVE",
+              "delta": "5",
+              "reason": "AVAILABLE",
+              "transition": {
+                "kind": "BELOW_TO_ABOVE",
+                "previous_date": "2000-01-08",
+                "from_relation": "BELOW",
+                "to_relation": "ABOVE",
+                "reason": "AVAILABLE"
+              }
+            },
+            "high": {
+              "relation": "ABOVE",
+              "delta": "5",
+              "reason": "AVAILABLE",
+              "transition": {
+                "kind": "EQUAL_TO_ABOVE",
+                "previous_date": "2000-01-08",
+                "from_relation": "EQUAL",
+                "to_relation": "ABOVE",
+                "reason": "AVAILABLE"
+              }
+            },
+            "low": {
+              "relation": "EQUAL",
+              "delta": "0",
+              "reason": "AVAILABLE",
+              "transition": {
+                "kind": "BELOW_TO_EQUAL",
+                "previous_date": "2000-01-08",
+                "from_relation": "BELOW",
+                "to_relation": "EQUAL",
+                "reason": "AVAILABLE"
+              }
+            }
+          },
+          "ORIGINAL_BOX_UPPER": {
+            "close": {
+              "relation": "ABOVE",
+              "delta": "1",
+              "reason": "AVAILABLE",
+              "transition": {
+                "kind": "BELOW_TO_ABOVE",
+                "previous_date": "2000-01-08",
+                "from_relation": "BELOW",
+                "to_relation": "ABOVE",
+                "reason": "AVAILABLE"
+              }
+            },
+            "high": {
+              "relation": "ABOVE",
+              "delta": "1",
+              "reason": "AVAILABLE",
+              "transition": {
+                "kind": "BELOW_TO_ABOVE",
+                "previous_date": "2000-01-08",
+                "from_relation": "BELOW",
+                "to_relation": "ABOVE",
+                "reason": "AVAILABLE"
+              }
+            },
+            "low": {
+              "relation": "BELOW",
+              "delta": "-4",
+              "reason": "AVAILABLE",
+              "transition": {
+                "kind": "UNCHANGED",
+                "previous_date": "2000-01-08",
+                "from_relation": "BELOW",
+                "to_relation": "BELOW",
+                "reason": "AVAILABLE"
+              }
+            }
+          },
+          "SHALLOW_OBSERVATION": {
+            "close": {
+              "relation": "ABOVE",
+              "delta": "1.5",
+              "reason": "AVAILABLE",
+              "transition": {
+                "kind": "BELOW_TO_ABOVE",
+                "previous_date": "2000-01-08",
+                "from_relation": "BELOW",
+                "to_relation": "ABOVE",
+                "reason": "AVAILABLE"
+              }
+            },
+            "high": {
+              "relation": "ABOVE",
+              "delta": "1.5",
+              "reason": "AVAILABLE",
+              "transition": {
+                "kind": "BELOW_TO_ABOVE",
+                "previous_date": "2000-01-08",
+                "from_relation": "BELOW",
+                "to_relation": "ABOVE",
+                "reason": "AVAILABLE"
+              }
+            },
+            "low": {
+              "relation": "BELOW",
+              "delta": "-3.5",
+              "reason": "AVAILABLE",
+              "transition": {
+                "kind": "UNCHANGED",
+                "previous_date": "2000-01-08",
+                "from_relation": "BELOW",
+                "to_relation": "BELOW",
+                "reason": "AVAILABLE"
+              }
+            }
+          }
+        },
+        "role_prices": {
+          "PULLBACK_HIGH": "10.5",
+          "ORIGINAL_BOX_FLOOR": "6",
+          "ORIGINAL_BOX_UPPER": "10",
+          "SHALLOW_OBSERVATION": "9.5"
+        },
+        "equal_boundaries": [],
+        "reference_role_ids": {
+          "PULLBACK_HIGH": "sha256:652cfe5f477d25d33394a248e84ecf5dbd3dd40f0689f4e062d08f3395f86716",
+          "ORIGINAL_BOX_FLOOR": "sha256:2e36450703046750d294b316d1e0a6139df490edd98ad2c738193707b7d9f17f",
+          "ORIGINAL_BOX_UPPER": "sha256:e01bc5eec43990b01d9a40ad74065d4476ce5ca6bb1fdff0aa5e400250994db3",
+          "SHALLOW_OBSERVATION": "sha256:222fe4942048c2b299f5948b8ba5b6636c2be30c21f26176042962419e6887ea"
+        },
+        "evidence": {
+          "supporting": [],
+          "opposing": [
+            "VOLUME_BELOW_PREVIOUS_RECORD_DESCRIPTION_ONLY_NOT_BREAKOUT_FILTER",
+            "MACD_HISTOGRAM_NEGATIVE_DESCRIPTION_ONLY"
+          ],
+          "missing": [
+            "HISTORICAL_PUBLICATION_UNVERIFIED",
+            "PERSONAL_ACTION_AND_RETURN_QUALIFICATION_NOT_EVALUATED"
+          ],
+          "original_volume": {
+            "current_shares": "20",
+            "previous_shares": "30",
+            "numerator_date": "2000-01-09",
+            "denominator_dates": [
+              "2000-01-08"
+            ],
+            "baseline_includes_current": false,
+            "reason": "AVAILABLE",
+            "ratio": "0.66666666666666666666666666666666666666666666666667",
+            "ratio_precision": "50_SIGNIFICANT_DECIMAL_DIGITS_HALF_EVEN_ORIGINAL_NUMERATOR_DENOMINATOR_RETAINED",
+            "qualification": "PREVIOUS_SAVED_RECORD_DESCRIPTION_NOT_VOLUME_SIGNAL"
+          },
+          "original_macd": {
+            "original": {
+              "dif": "-0.1",
+              "dea": "0.1",
+              "histogram": "-0.4",
+              "reason": "ENGINEERING_SAVED_INPUT"
+            },
+            "reason": "ENGINEERING_SAVED_INPUT",
+            "field_observations": {
+              "dif": {
+                "value": "-0.1",
+                "reason": "AVAILABLE",
+                "sign": {
+                  "relation": "BELOW",
+                  "delta": "-0.1",
+                  "reason": "AVAILABLE"
+                },
+                "versus_previous": {
+                  "relation": "EQUAL",
+                  "delta": "0.0",
+                  "reason": "AVAILABLE"
+                }
+              },
+              "dea": {
+                "value": "0.1",
+                "reason": "AVAILABLE",
+                "sign": {
+                  "relation": "ABOVE",
+                  "delta": "0.1",
+                  "reason": "AVAILABLE"
+                },
+                "versus_previous": {
+                  "relation": "EQUAL",
+                  "delta": "0.0",
+                  "reason": "AVAILABLE"
+                }
+              },
+              "histogram": {
+                "value": "-0.4",
+                "reason": "AVAILABLE",
+                "sign": {
+                  "relation": "BELOW",
+                  "delta": "-0.4",
+                  "reason": "AVAILABLE"
+                },
+                "versus_previous": {
+                  "relation": "EQUAL",
+                  "delta": "0.0",
+                  "reason": "AVAILABLE"
+                }
+              }
+            }
+          },
+          "body": {
+            "relation": "ABOVE",
+            "delta": "5",
+            "reason": "AVAILABLE"
+          },
+          "adjacent_close": {
+            "relation": "ABOVE",
+            "delta": "5.1",
+            "reason": "AVAILABLE"
+          }
+        },
+        "intraday_sequence": "UNKNOWN_FROM_DAILY_OHLC",
+        "reference_qualification": "CONDITIONAL_EXPLICIT_ROLES_NOT_AUTOMATIC_PATTERN",
+        "historical_signal_eligible": false
+      }
+    ],
+    "events": [
+      {
+        "date": "2000-01-01",
+        "kind": "STATE_CHANGED",
+        "from_state": null,
+        "to_state": "INSUFFICIENT",
+        "reasons": [
+          "POST_BREAKOUT_RETURN_NOT_YET_KNOWN",
+          "ROLE_UNAVAILABLE_OR_EXPIRED:PULLBACK_HIGH"
+        ],
+        "reference_role_ids": {
+          "ORIGINAL_BOX_FLOOR": "sha256:2e36450703046750d294b316d1e0a6139df490edd98ad2c738193707b7d9f17f",
+          "ORIGINAL_BOX_UPPER": "sha256:e01bc5eec43990b01d9a40ad74065d4476ce5ca6bb1fdff0aa5e400250994db3"
+        },
+        "close": "9",
+        "intraday_sequence": "UNKNOWN_FROM_DAILY_OHLC",
+        "historical_signal_eligible": false,
+        "id": "sha256:597649e1057c1355075e6b07938a096165532ad3eec8c88e7714622cac2f6498"
+      },
+      {
+        "date": "2000-01-02",
+        "kind": "ORIGINAL_BREAKOUT_CLOSE",
+        "from_state": null,
+        "to_state": null,
+        "reasons": [
+          "CONTIGUOUS_CLOSE_ABOVE_EXPLICIT_ORIGINAL_UPPER"
+        ],
+        "reference_role_ids": {
+          "ORIGINAL_BOX_UPPER": "sha256:e01bc5eec43990b01d9a40ad74065d4476ce5ca6bb1fdff0aa5e400250994db3"
+        },
+        "close": "11",
+        "intraday_sequence": "UNKNOWN_FROM_DAILY_OHLC",
+        "historical_signal_eligible": false,
+        "id": "sha256:a1ee16030409f3c3b648f3dd6d43f8dac47020f98f17a729912f2009d35ef1bf"
+      },
+      {
+        "date": "2000-01-02",
+        "kind": "CLOSE_REFERENCE_TRANSITION",
+        "from_state": null,
+        "to_state": null,
+        "reasons": [
+          "ORIGINAL_BOX_UPPER",
+          "BELOW_TO_ABOVE"
+        ],
+        "reference_role_ids": {
+          "ORIGINAL_BOX_UPPER": "sha256:e01bc5eec43990b01d9a40ad74065d4476ce5ca6bb1fdff0aa5e400250994db3"
+        },
+        "close": "11",
+        "intraday_sequence": "UNKNOWN_FROM_DAILY_OHLC",
+        "historical_signal_eligible": false,
+        "id": "sha256:9077f22d77b67c06d01a890294c590f228ec92ee71fa4b73739de449f2a279ae"
+      },
+      {
+        "date": "2000-01-03",
+        "kind": "STATE_CHANGED",
+        "from_state": "INSUFFICIENT",
+        "to_state": "CONSOLIDATING",
+        "reasons": [
+          "NOT_ABOVE_PULLBACK_HIGH_AND_NOT_BELOW_ORIGINAL_BOX_FLOOR",
+          "EQUAL_SHALLOW_OBSERVATION_IS_NOT_A_STRICT_CROSS"
+        ],
+        "reference_role_ids": {
+          "PULLBACK_HIGH": "sha256:652cfe5f477d25d33394a248e84ecf5dbd3dd40f0689f4e062d08f3395f86716",
+          "ORIGINAL_BOX_FLOOR": "sha256:2e36450703046750d294b316d1e0a6139df490edd98ad2c738193707b7d9f17f",
+          "ORIGINAL_BOX_UPPER": "sha256:e01bc5eec43990b01d9a40ad74065d4476ce5ca6bb1fdff0aa5e400250994db3",
+          "SHALLOW_OBSERVATION": "sha256:222fe4942048c2b299f5948b8ba5b6636c2be30c21f26176042962419e6887ea"
+        },
+        "close": "9.5",
+        "intraday_sequence": "UNKNOWN_FROM_DAILY_OHLC",
+        "historical_signal_eligible": false,
+        "id": "sha256:c592c9ded3a3cb24648af933d4e01ca70be69296d5fb21aa536d4ad55e09a7bf"
+      },
+      {
+        "date": "2000-01-03",
+        "kind": "CLOSE_REFERENCE_TRANSITION",
+        "from_state": null,
+        "to_state": null,
+        "reasons": [
+          "ORIGINAL_BOX_UPPER",
+          "ABOVE_TO_BELOW"
+        ],
+        "reference_role_ids": {
+          "ORIGINAL_BOX_UPPER": "sha256:e01bc5eec43990b01d9a40ad74065d4476ce5ca6bb1fdff0aa5e400250994db3"
+        },
+        "close": "9.5",
+        "intraday_sequence": "UNKNOWN_FROM_DAILY_OHLC",
+        "historical_signal_eligible": false,
+        "id": "sha256:f429f1b896a1201bba27c9849aea5c04c735b332de47d4a94fff0990dfeff4d3"
+      },
+      {
+        "date": "2000-01-04",
+        "kind": "CLOSE_REFERENCE_TRANSITION",
+        "from_state": null,
+        "to_state": null,
+        "reasons": [
+          "PULLBACK_HIGH",
+          "BELOW_TO_EQUAL"
+        ],
+        "reference_role_ids": {
+          "PULLBACK_HIGH": "sha256:652cfe5f477d25d33394a248e84ecf5dbd3dd40f0689f4e062d08f3395f86716"
+        },
+        "close": "10.5",
+        "intraday_sequence": "UNKNOWN_FROM_DAILY_OHLC",
+        "historical_signal_eligible": false,
+        "id": "sha256:e7f8b2a290f0c553af8becf9848e112df1906313531314285a8d0fdec15bd1d4"
+      },
+      {
+        "date": "2000-01-04",
+        "kind": "CLOSE_REFERENCE_TRANSITION",
+        "from_state": null,
+        "to_state": null,
+        "reasons": [
+          "ORIGINAL_BOX_UPPER",
+          "BELOW_TO_ABOVE"
+        ],
+        "reference_role_ids": {
+          "ORIGINAL_BOX_UPPER": "sha256:e01bc5eec43990b01d9a40ad74065d4476ce5ca6bb1fdff0aa5e400250994db3"
+        },
+        "close": "10.5",
+        "intraday_sequence": "UNKNOWN_FROM_DAILY_OHLC",
+        "historical_signal_eligible": false,
+        "id": "sha256:4cda510f8cd44641359e5ddd3963dc1098776e644b75df264de741d82493004b"
+      },
+      {
+        "date": "2000-01-04",
+        "kind": "CLOSE_REFERENCE_TRANSITION",
+        "from_state": null,
+        "to_state": null,
+        "reasons": [
+          "SHALLOW_OBSERVATION",
+          "EQUAL_TO_ABOVE"
+        ],
+        "reference_role_ids": {
+          "SHALLOW_OBSERVATION": "sha256:222fe4942048c2b299f5948b8ba5b6636c2be30c21f26176042962419e6887ea"
+        },
+        "close": "10.5",
+        "intraday_sequence": "UNKNOWN_FROM_DAILY_OHLC",
+        "historical_signal_eligible": false,
+        "id": "sha256:a8bdcf82e461166cdc818c6a286ebb1801fac9e4f0f01c253cca91930cc83f1e"
+      },
+      {
+        "date": "2000-01-05",
+        "kind": "STATE_CHANGED",
+        "from_state": "CONSOLIDATING",
+        "to_state": "STRENGTHENING",
+        "reasons": [
+          "CLOSE_STRICTLY_ABOVE_PULLBACK_HIGH"
+        ],
+        "reference_role_ids": {
+          "PULLBACK_HIGH": "sha256:652cfe5f477d25d33394a248e84ecf5dbd3dd40f0689f4e062d08f3395f86716",
+          "ORIGINAL_BOX_FLOOR": "sha256:2e36450703046750d294b316d1e0a6139df490edd98ad2c738193707b7d9f17f",
+          "ORIGINAL_BOX_UPPER": "sha256:e01bc5eec43990b01d9a40ad74065d4476ce5ca6bb1fdff0aa5e400250994db3",
+          "SHALLOW_OBSERVATION": "sha256:222fe4942048c2b299f5948b8ba5b6636c2be30c21f26176042962419e6887ea"
+        },
+        "close": "10.6",
+        "intraday_sequence": "UNKNOWN_FROM_DAILY_OHLC",
+        "historical_signal_eligible": false,
+        "id": "sha256:7fea7bbd04dd5cce0120867a960a1b7ad6d35ab5233517a41d7253df705595c7"
+      },
+      {
+        "date": "2000-01-05",
+        "kind": "CLOSE_REFERENCE_TRANSITION",
+        "from_state": null,
+        "to_state": null,
+        "reasons": [
+          "PULLBACK_HIGH",
+          "EQUAL_TO_ABOVE"
+        ],
+        "reference_role_ids": {
+          "PULLBACK_HIGH": "sha256:652cfe5f477d25d33394a248e84ecf5dbd3dd40f0689f4e062d08f3395f86716"
+        },
+        "close": "10.6",
+        "intraday_sequence": "UNKNOWN_FROM_DAILY_OHLC",
+        "historical_signal_eligible": false,
+        "id": "sha256:debb80436f0d516f62565ab1da7ea642150aeb8af5170673084dfd058bfc28fb"
+      },
+      {
+        "date": "2000-01-06",
+        "kind": "STATE_CHANGED",
+        "from_state": "STRENGTHENING",
+        "to_state": "CONSOLIDATING",
+        "reasons": [
+          "NOT_ABOVE_PULLBACK_HIGH_AND_NOT_BELOW_ORIGINAL_BOX_FLOOR"
+        ],
+        "reference_role_ids": {
+          "PULLBACK_HIGH": "sha256:652cfe5f477d25d33394a248e84ecf5dbd3dd40f0689f4e062d08f3395f86716",
+          "ORIGINAL_BOX_FLOOR": "sha256:2e36450703046750d294b316d1e0a6139df490edd98ad2c738193707b7d9f17f",
+          "ORIGINAL_BOX_UPPER": "sha256:e01bc5eec43990b01d9a40ad74065d4476ce5ca6bb1fdff0aa5e400250994db3",
+          "SHALLOW_OBSERVATION": "sha256:222fe4942048c2b299f5948b8ba5b6636c2be30c21f26176042962419e6887ea"
+        },
+        "close": "8",
+        "intraday_sequence": "UNKNOWN_FROM_DAILY_OHLC",
+        "historical_signal_eligible": false,
+        "id": "sha256:3820f3761bf7ea42e26c73d1116c32bffec6a864d082555e30fd33f5ffc5dc25"
+      },
+      {
+        "date": "2000-01-06",
+        "kind": "CLOSE_REFERENCE_TRANSITION",
+        "from_state": null,
+        "to_state": null,
+        "reasons": [
+          "PULLBACK_HIGH",
+          "ABOVE_TO_BELOW"
+        ],
+        "reference_role_ids": {
+          "PULLBACK_HIGH": "sha256:652cfe5f477d25d33394a248e84ecf5dbd3dd40f0689f4e062d08f3395f86716"
+        },
+        "close": "8",
+        "intraday_sequence": "UNKNOWN_FROM_DAILY_OHLC",
+        "historical_signal_eligible": false,
+        "id": "sha256:e09da23a663142101c3f36e047a7122ea1e39f9ef7c35eb4e2fa1d611a2852c3"
+      },
+      {
+        "date": "2000-01-06",
+        "kind": "CLOSE_REFERENCE_TRANSITION",
+        "from_state": null,
+        "to_state": null,
+        "reasons": [
+          "ORIGINAL_BOX_UPPER",
+          "ABOVE_TO_BELOW"
+        ],
+        "reference_role_ids": {
+          "ORIGINAL_BOX_UPPER": "sha256:e01bc5eec43990b01d9a40ad74065d4476ce5ca6bb1fdff0aa5e400250994db3"
+        },
+        "close": "8",
+        "intraday_sequence": "UNKNOWN_FROM_DAILY_OHLC",
+        "historical_signal_eligible": false,
+        "id": "sha256:33e26de813c5064af6be27c9986790b9388eefd669ee0761e724c5882c599a67"
+      },
+      {
+        "date": "2000-01-06",
+        "kind": "CLOSE_REFERENCE_TRANSITION",
+        "from_state": null,
+        "to_state": null,
+        "reasons": [
+          "SHALLOW_OBSERVATION",
+          "ABOVE_TO_BELOW"
+        ],
+        "reference_role_ids": {
+          "SHALLOW_OBSERVATION": "sha256:222fe4942048c2b299f5948b8ba5b6636c2be30c21f26176042962419e6887ea"
+        },
+        "close": "8",
+        "intraday_sequence": "UNKNOWN_FROM_DAILY_OHLC",
+        "historical_signal_eligible": false,
+        "id": "sha256:9ffbfdaece6da56d3c2d403f344ec9c7ddd8ef741a97fffc6bc6011a0eee34e7"
+      },
+      {
+        "date": "2000-01-07",
+        "kind": "CLOSE_REFERENCE_TRANSITION",
+        "from_state": null,
+        "to_state": null,
+        "reasons": [
+          "ORIGINAL_BOX_FLOOR",
+          "ABOVE_TO_EQUAL"
+        ],
+        "reference_role_ids": {
+          "ORIGINAL_BOX_FLOOR": "sha256:2e36450703046750d294b316d1e0a6139df490edd98ad2c738193707b7d9f17f"
+        },
+        "close": "6",
+        "intraday_sequence": "UNKNOWN_FROM_DAILY_OHLC",
+        "historical_signal_eligible": false,
+        "id": "sha256:8a2c1432be1448f6841364570dafce533df455e3dcb9f41a4afb3f9d26b191d1"
+      },
+      {
+        "date": "2000-01-08",
+        "kind": "STATE_CHANGED",
+        "from_state": "CONSOLIDATING",
+        "to_state": "WEAKENING",
+        "reasons": [
+          "CLOSE_STRICTLY_BELOW_ORIGINAL_BOX_FLOOR"
+        ],
+        "reference_role_ids": {
+          "PULLBACK_HIGH": "sha256:652cfe5f477d25d33394a248e84ecf5dbd3dd40f0689f4e062d08f3395f86716",
+          "ORIGINAL_BOX_FLOOR": "sha256:2e36450703046750d294b316d1e0a6139df490edd98ad2c738193707b7d9f17f",
+          "ORIGINAL_BOX_UPPER": "sha256:e01bc5eec43990b01d9a40ad74065d4476ce5ca6bb1fdff0aa5e400250994db3",
+          "SHALLOW_OBSERVATION": "sha256:222fe4942048c2b299f5948b8ba5b6636c2be30c21f26176042962419e6887ea"
+        },
+        "close": "5.9",
+        "intraday_sequence": "UNKNOWN_FROM_DAILY_OHLC",
+        "historical_signal_eligible": false,
+        "id": "sha256:20113a4a3a7d26015d1885c73735c0551788bff93a8602fd8264292a7e807024"
+      },
+      {
+        "date": "2000-01-08",
+        "kind": "CLOSE_REFERENCE_TRANSITION",
+        "from_state": null,
+        "to_state": null,
+        "reasons": [
+          "ORIGINAL_BOX_FLOOR",
+          "EQUAL_TO_BELOW"
+        ],
+        "reference_role_ids": {
+          "ORIGINAL_BOX_FLOOR": "sha256:2e36450703046750d294b316d1e0a6139df490edd98ad2c738193707b7d9f17f"
+        },
+        "close": "5.9",
+        "intraday_sequence": "UNKNOWN_FROM_DAILY_OHLC",
+        "historical_signal_eligible": false,
+        "id": "sha256:73cdc944f203b787d20fac9a5369edf90cc5cee2111b0dda00ac3f336bbf634f"
+      },
+      {
+        "date": "2000-01-09",
+        "kind": "STATE_CHANGED",
+        "from_state": "WEAKENING",
+        "to_state": "STRENGTHENING",
+        "reasons": [
+          "CLOSE_STRICTLY_ABOVE_PULLBACK_HIGH"
+        ],
+        "reference_role_ids": {
+          "PULLBACK_HIGH": "sha256:652cfe5f477d25d33394a248e84ecf5dbd3dd40f0689f4e062d08f3395f86716",
+          "ORIGINAL_BOX_FLOOR": "sha256:2e36450703046750d294b316d1e0a6139df490edd98ad2c738193707b7d9f17f",
+          "ORIGINAL_BOX_UPPER": "sha256:e01bc5eec43990b01d9a40ad74065d4476ce5ca6bb1fdff0aa5e400250994db3",
+          "SHALLOW_OBSERVATION": "sha256:222fe4942048c2b299f5948b8ba5b6636c2be30c21f26176042962419e6887ea"
+        },
+        "close": "11",
+        "intraday_sequence": "UNKNOWN_FROM_DAILY_OHLC",
+        "historical_signal_eligible": false,
+        "id": "sha256:957ea859ef1f0cee9fb6ed63285ddfd238eb32f33f77df0aa937489853f0d672"
+      },
+      {
+        "date": "2000-01-09",
+        "kind": "CLOSE_REFERENCE_TRANSITION",
+        "from_state": null,
+        "to_state": null,
+        "reasons": [
+          "PULLBACK_HIGH",
+          "BELOW_TO_ABOVE"
+        ],
+        "reference_role_ids": {
+          "PULLBACK_HIGH": "sha256:652cfe5f477d25d33394a248e84ecf5dbd3dd40f0689f4e062d08f3395f86716"
+        },
+        "close": "11",
+        "intraday_sequence": "UNKNOWN_FROM_DAILY_OHLC",
+        "historical_signal_eligible": false,
+        "id": "sha256:c557991cc67ec17a743035b9f4e9cfecda2499a790e8b71cb90de7baf3ad6410"
+      },
+      {
+        "date": "2000-01-09",
+        "kind": "CLOSE_REFERENCE_TRANSITION",
+        "from_state": null,
+        "to_state": null,
+        "reasons": [
+          "ORIGINAL_BOX_FLOOR",
+          "BELOW_TO_ABOVE"
+        ],
+        "reference_role_ids": {
+          "ORIGINAL_BOX_FLOOR": "sha256:2e36450703046750d294b316d1e0a6139df490edd98ad2c738193707b7d9f17f"
+        },
+        "close": "11",
+        "intraday_sequence": "UNKNOWN_FROM_DAILY_OHLC",
+        "historical_signal_eligible": false,
+        "id": "sha256:76e22741ecd76b6c3d65652e4f800c6a23b20d0718d59d3de817f24680c30a14"
+      },
+      {
+        "date": "2000-01-09",
+        "kind": "CLOSE_REFERENCE_TRANSITION",
+        "from_state": null,
+        "to_state": null,
+        "reasons": [
+          "ORIGINAL_BOX_UPPER",
+          "BELOW_TO_ABOVE"
+        ],
+        "reference_role_ids": {
+          "ORIGINAL_BOX_UPPER": "sha256:e01bc5eec43990b01d9a40ad74065d4476ce5ca6bb1fdff0aa5e400250994db3"
+        },
+        "close": "11",
+        "intraday_sequence": "UNKNOWN_FROM_DAILY_OHLC",
+        "historical_signal_eligible": false,
+        "id": "sha256:7353e32403775df5c4da0d8b706b2a2b28937d588f57583c58be1fb802e02b75"
+      },
+      {
+        "date": "2000-01-09",
+        "kind": "CLOSE_REFERENCE_TRANSITION",
+        "from_state": null,
+        "to_state": null,
+        "reasons": [
+          "SHALLOW_OBSERVATION",
+          "BELOW_TO_ABOVE"
+        ],
+        "reference_role_ids": {
+          "SHALLOW_OBSERVATION": "sha256:222fe4942048c2b299f5948b8ba5b6636c2be30c21f26176042962419e6887ea"
+        },
+        "close": "11",
+        "intraday_sequence": "UNKNOWN_FROM_DAILY_OHLC",
+        "historical_signal_eligible": false,
+        "id": "sha256:d00ce9aa15c27fb21418985eb6e207c14bfea6fd9e04535ce0fdbd2ba9cdf91b"
+      }
+    ],
+    "limits": {},
+    "execution_qualified": false,
+    "imputed_close": null,
+    "valuation": null,
+    "historical_signal_eligible": false,
+    "primary_pressure_id": null,
+    "policy_authorized": false,
+    "classification_quality": "NOT_VALIDATED",
+    "core_usefulness": "NOT_ESTABLISHED",
+    "action_qualification": "NOT_EVALUATED",
+    "physical_android": "NOT_TESTED_NEW_BUILD",
+    "result_id": "sha256:893859f490967a786b5f69c57e1da2f708150323c7eea61e0c5d5a4cf4753ac6"
+  }
+}

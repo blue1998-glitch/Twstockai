@@ -1,0 +1,56 @@
+"""Read-only research audit of existing reaction facts, not a new fact engine/classifier."""
+from pathlib import Path
+from decimal import Decimal as D
+from collections import Counter
+import json,hashlib,datetime
+cp=Path('real-review/input/comparison-data.json');rp=Path('reaction-pressure-review/input/reaction-facts.json');qp=Path('whole-membership-review/input/source-query.json')
+expected={cp:'184bdef0b687ec0ab7bfcaaac2157ff7916fbc1000ef312d81b5efc0c2e73e15',rp:'097971c913b52fbf69dbb286c6e2df380ded3c3d166ca6391de5c5bdb4047c48',qp:'4a43a8c0f03bbffacb86306f064b7c807a7a83bdaf7e737bc76cd654a2c1dbb0'}
+for path,digest in expected.items():assert hashlib.sha256(path.read_bytes()).hexdigest()==digest
+p=json.loads(cp.read_bytes());rf=json.loads(rp.read_bytes());records=rf['records'];bars=p['bars'];assert len(records)==len(bars)==1213
+for i,r in enumerate(records):
+ assert r['original_bar']==bars[i];assert r['macd']['original']==p['macd'][i]
+ if not i:continue
+ if r['adjacent']['reason'] is not None:
+  assert r['adjacent']['range_geometry'] is None;continue
+ a,b=bars[i-1],bars[i];intersection_low=max(D(a['low']),D(b['low']));intersection_high=min(D(a['high']),D(b['high']))
+ oracle='ENTIRELY_BELOW' if D(b['high'])<D(a['low']) else 'ENTIRELY_ABOVE' if D(b['low'])>D(a['high']) else 'TOUCHING' if intersection_low==intersection_high else 'OVERLAPPING'
+ assert r['adjacent']['range_geometry']==oracle
+
+def timeline(i,cutoff=None):
+ r=records[i];assert r['adjacent']['range_geometry']=='ENTIRELY_BELOW';a,b=bars[i-1],bars[i];lower,upper=D(b['high']),D(a['low']);assert lower<upper
+ end=len(records)-1 if cutoff is None else max(j for j,x in enumerate(records) if x['date']<=cutoff)
+ stop=next((j for j in range(i+1,end+1) if records[j]['continuity']['reason'] is not None),None);last=end if stop is None else stop-1
+ future=list(range(i+1,last+1))
+ def first(field,relation,ref):
+  matches=[j for j in future if {'GT':D(bars[j][field])>ref,'GE':D(bars[j][field])>=ref,'EQ':D(bars[j][field])==ref}[relation]]
+  if not matches:return None
+  j=matches[0];return {'date':bars[j]['date'],'field':field,'value':bars[j][field],'original_value_known_on':records[j]['original_value_known_on'],'saved_records_after_gap':j-i}
+ return {'date':b['date'],'source_index':i,'original_adjacent_fact':r['adjacent'],'previous_bar':a,'bar':b,'gap_lower':str(lower),'gap_upper':str(upper),'gap_width':str(upper-lower),'events':{'first_high_GT_lower':first('high','GT',lower),'first_high_GE_upper':first('high','GE',upper),'first_high_EQ_upper':first('high','EQ',upper),'first_close_EQ_upper':first('close','EQ',upper),'first_close_GT_upper':first('close','GT',upper)},'observation_end':bars[last]['date'],'stopped_before_continuity_break':None if stop is None else {'date':records[stop]['date'],'reason':records[stop]['continuity']['reason'],'known_gap_dates':records[stop]['continuity']['known_gap_dates']},'no_event_means':'NOT_OBSERVED_WITHIN_THIS_CONTIGUOUS_SAVED_WINDOW_NOT_NEVER','historical_signal_eligible':False}
+idx=[i for i,r in enumerate(records) if r['adjacent']['range_geometry']=='ENTIRELY_BELOW'];inventory=[timeline(i) for i in idx];assert len(inventory)==53
+blocked=[]
+for i,r in enumerate(records[1:],1):
+ if r['adjacent']['reason'] and D(bars[i]['high'])<D(bars[i-1]['low']):blocked.append({'date':r['date'],'previous_bar':bars[i-1],'bar':bars[i],'original_adjacent_fact':r['adjacent'],'continuity':r['continuity'],'excluded_from_inventory':True})
+assert [x['date'] for x in blocked]==['2025-08-14']
+bydate={r['date']:i for i,r in enumerate(records)};dates=['2025-01-10','2025-04-07','2025-05-14'];focus={d:timeline(bydate[d], '2025-06-02' if d!='2025-01-10' else '2025-02-12') for d in dates}
+jan=focus[dates[0]];apr=focus[dates[1]];may=focus[dates[2]]
+assert jan['events']['first_high_GE_upper']['date']=='2025-01-14';assert jan['events']['first_close_EQ_upper']['date']=='2025-01-15';assert jan['events']['first_close_GT_upper']['date']=='2025-01-16'
+assert apr['events']['first_high_GT_lower']['date']=='2025-04-10' and apr['events']['first_high_GE_upper'] is None and may['events']['first_high_GT_lower'] is None
+manual=p['manual_case_audit']['previous_manual_box'];case=[b for b in bars if manual['start']<=b['date']<=manual['end']];assert len(case)==39;assert may['bar'] in case
+case_max=max(D(b['high']) for b in case);assert case_max==D('31.40') and case_max<D(apr['gap_upper']);remaining=D(apr['gap_upper'])-case_max;assert remaining==D('0.85')
+# Same raw gap birth records remain identical in a truncated prefix; later events stay unavailable.
+cutoff='2025-05-13';prefix_idx=[i for i in idx if records[i]['date']<=cutoff];prefix=[timeline(i,cutoff) for i in prefix_idx]
+for v in prefix:
+ full=inventory[idx.index(v['source_index'])]
+ for key in ['date','previous_bar','bar','gap_lower','gap_upper','gap_width','original_adjacent_fact']:assert v[key]==full[key]
+ for event in v['events'].values():assert event is None or event['date']<=cutoff
+# An equal contact does not appear in the strict-lower inventory.
+touch=records[bydate['2025-04-18']];assert touch['adjacent']['range_geometry']=='TOUCHING' and '2025-04-18' not in [v['date'] for v in inventory]
+qualifications={'inventory':'EXISTING_REACTION_FACT_RECORD_SELECTION_NOT_NEW_ADAPTER_OR_CORE','event_paths':'READ_ONLY_RETROSPECTIVE_COMPARISONS_TO_EXPLICIT_RAW_GAP_EDGES','source_continuity':'Stop before first original continuity break, no cross-gap recovery events','case_judgments':'ABC user-confirmed own weaker range; January has no new human structure label; May14 membership only at existing 39-record parent level','no_probability_accuracy':'No trained classifier, calibration, accuracy or independent-market evaluation','no_volume_weights':'No new magnitude, duration, importance, volume or trading thresholds'}
+e={'schema':'m1-gap-contrast-research/1','created_at_utc':datetime.datetime.now(datetime.timezone.utc).isoformat(),'source_hashes':{str(k):v for k,v in expected.items()},'original_core_result_id':p['core']['result_id'],'original_reaction_result_id':rf['result_id'],'records':len(records),'original_geometry_counts':dict(Counter(str(r['adjacent']['range_geometry']) for r in records)),'inventory':inventory,'excluded_raw_pair_due_original_unknown':blocked,'focus':focus,'existing_manual_parent':{'start':manual['start'],'end':manual['end'],'records':39,'highest_high':str(case_max),'highest_high_dates':[b['date'] for b in case if D(b['high'])==case_max],'pre_gap_upper':apr['gap_upper'],'highest_high_still_below_upper_by':str(remaining),'all_original_bars':case,'manual_grouping':'USER_CONFIRMED_ABC_OWN_WEAKER_RANGE_WITH_EXISTING_39_RECORD_PARENT','internal_gap_date':'2025-05-14','possible_finer_substructures':'UNKNOWN_NOT_DENIED'},'original_equal_touch_example':touch['adjacent'],'prefix_check':{'cutoff':cutoff,'existing_lower_gap_births_in_prefix':len(prefix),'all_birth_facts_equal_full_read':True,'all_prefix_events_not_after_cutoff':True},'qualifications':qualifications,'primary_pressure_id':None,'historical_selection_time':None,'historical_signal_eligible':False}
+out=Path('gap-contrast-review');(out/'evidence.json').write_text(json.dumps(e,ensure_ascii=False,indent=2)+'\n')
+reject=[{'hypothesis':'Every strictly lower raw daily range must split the current parent interval into disjoint same-level ranges','status':'REJECT_AS_SUFFICIENT_MANDATORY_RULE_FOR_THIS_CASE','counterevidence':'5/14 is ENTIRELY_BELOW yet remains within already confirmed 4/7-6/2 39-record parent; finer internal structure remains unknown','not_claimed':'Not denying possible nested finer intervals or all gap relevance.'},{'hypothesis':'No high return to gap upper by the chosen review endpoint is by itself a same-level new-range classifier','status':'INSUFFICIENT','counterevidence':'4/7 and internal 5/14 both have no observed high reaching their respective upper edges by6/2; parent roles differ, unequal observation lengths are not ranked','not_claimed':'No duration threshold or negative label at every scale.'},{'hypothesis':'One close above original B77 research lower30.05 reassigns ABC to old major band','status':'REJECT_AS_SUFFICIENT_RULE_FOR_THIS_CASE','counterevidence':'4/10 C30.75 is above30.05 while user confirmed ABC own weaker interval; original research level is not formal whole boundary'},{'hypothesis':'Gap width threshold can be chosen from this packet','status':'NOT_ESTABLISHED_DO_NOT_TUNE','counterevidence':'1.45,0.40 and0.05 are retrospective examples without cross-stock labels or approved scale assignment.'}]
+(out/'hypothesis-review.json').write_text(json.dumps({'status':'ASSISTANT_LOGICAL_SCREENING_NOT_ORIGINAL_ENGINE_TEST_FAILURES','items':reject,'manual_decision_reopened':False,'automatic_classifier_implemented':False,'needs_new_user_answer_this_batch':False},ensure_ascii=False,indent=2)+'\n')
+manifest={'status':'READ_ONLY_ACCEPTANCE_EVIDENCE_NOT_EXECUTED_PRODUCT_TESTS','production_algorithm':'NOT_IMPLEMENTED_OR_SPECIFIED','case_sources':['../20261020_april_interval_user_decision/user-decision.json','original manual_case_audit.previous_manual_box'],'cases':[{'case':'ABC','expected_manual_case_grouping':'SAME_OWN_INTERVAL_DISTINCT_OLD_BAND_AND_RELATIVELY_WEAKER','gap_date':'2025-04-07','not_a_production_date_constant':True},{'case':'internal_May14','expected_existing_parent_membership':'INSIDE_ALREADY_CONFIRMED_39_RECORD_PARENT','existing_fact':'ENTIRELY_BELOW','finer_scale_grouping':None,'do_not_reask_old_case':True},{'case':'Jan10','expected_manual_structure_label':None,'existing_fact':'ENTIRELY_BELOW','wick_touch_equal_close_strict_close_dates':['2025-01-14','2025-01-15','2025-01-16'],'withdrawn_old_question_not_reopened':True},{'case':'equal_contact_Apr18','existing_fact':'TOUCHING_NOT_ENTIRELY_BELOW'},{'case':'missing_Aug14','existing_fact':'UNKNOWN_KNOWN_UNVERIFIED_CALENDAR_GAP','exclude_from_certified_adjacent_relations':True}],'primary_pressure_id':None,'historical_signal_eligible':False}
+(out/'acceptance-evidence.json').write_text(json.dumps(manifest,ensure_ascii=False,indent=2)+'\n')
+for path,digest in expected.items():assert hashlib.sha256(path.read_bytes()).hexdigest()==digest
+(out/'verification.json').write_text(json.dumps({'read_only_research_audit':'PASS','source_files_SHA_unchanged':True,'1213_original_bar_MACD_values_exact':True,'all_available_original_geometry_relations_match_independent_decimal_oracle':True,'original_entirely_below_records':len(inventory),'raw_disjoint_pair_excluded_for_known_missing':len(blocked),'no_cross_continuity_break_events':True,'prefix_birth_facts_and_event_cutoff_check':e['prefix_check'],'equal_contact_not_in_strict_gap_list':True,'original_39_records_max_and_internal_gap_checked':True,'acceptance_evidence':'SAVED_NOT_PRODUCT_TESTS','original_fact_adapter_CLI_core_MACD_reaction':'NOT_RUN','product_tests':'NOT_RUN','browser':'NOT_RUN','Android':'NOT_TESTED_NEW_BUILD','PDF_visual_QA':'PENDING'},ensure_ascii=False,indent=2)+'\n');print(json.dumps({'records':len(records),'original_geometry_counts':e['original_geometry_counts'],'inventory':len(inventory),'blocked_raw_pair_dates':[x['date'] for x in blocked],'case_max':str(case_max),'remaining_to_april_upper':str(remaining),'prefix':e['prefix_check']},ensure_ascii=False))

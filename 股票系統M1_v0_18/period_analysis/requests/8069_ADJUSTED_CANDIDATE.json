@@ -1,0 +1,2606 @@
+{
+  "schema_version": "stock-period-analysis/1.0",
+  "code": "8069",
+  "exchange": "TPEX",
+  "timeframe": "daily",
+  "price_mode": "ADJUSTED_CANDIDATE",
+  "source": {
+    "id": "sha256:a8d02938983fa3979fc5e18aa40215d45001e1cdf3533b6a2d8ce76554169c86",
+    "code": "8069",
+    "exchange": "TPEX",
+    "volume_unit": "SHARES_SCALED_FROM_LOTS",
+    "precision": "SOURCE_DISPLAY_PRECISION",
+    "upstream": "M0.7",
+    "upstream_source_id": "sha256:18f0acddb42c339bed37694039491550d9e2384ac9170036016e5ef463fa6b7a",
+    "period_calendar_provenance": {
+      "files": [
+        "TPEX_2025_計畫開休市.json",
+        "TPEX_2026_計畫開休市.json",
+        "臨時休市證據.json"
+      ],
+      "coverage": "PLANNED_PLUS_EXPLICIT_CASES_ONLY; NOT_EXHAUSTIVE",
+      "fingerprints": {
+        "TPEX_2025_計畫開休市.json": "288fb67729eee4052bf6fde66f7453a4dec63198da36c3d3beeacf5a778a3821",
+        "TPEX_2026_計畫開休市.json": "c7c9bc511d69e0cd24e7b24733fb27f5801d4f95e97cfebc4fde09d28b175a3c",
+        "臨時休市證據.json": "eeb0352caa24f94033e89ed8fd69356ab4d51d08d9b28be37aebc81befffe0ff"
+      }
+    }
+  },
+  "candles": [
+    {
+      "date": "2025-08-01",
+      "open": "205.00",
+      "high": "212.00",
+      "low": "202.00",
+      "close": "211.00",
+      "volume_shares_scaled": "5169000"
+    },
+    {
+      "date": "2025-08-04",
+      "open": "208.50",
+      "high": "214.00",
+      "low": "208.50",
+      "close": "214.00",
+      "volume_shares_scaled": "3306000"
+    },
+    {
+      "date": "2025-08-05",
+      "open": "216.00",
+      "high": "222.00",
+      "low": "215.50",
+      "close": "220.50",
+      "volume_shares_scaled": "7862000"
+    },
+    {
+      "date": "2025-08-06",
+      "open": "219.00",
+      "high": "223.00",
+      "low": "219.00",
+      "close": "219.50",
+      "volume_shares_scaled": "3898000"
+    },
+    {
+      "date": "2025-08-07",
+      "open": "221.50",
+      "high": "241.00",
+      "low": "221.00",
+      "close": "237.50",
+      "volume_shares_scaled": "16914000"
+    },
+    {
+      "date": "2025-08-08",
+      "open": "245.50",
+      "high": "246.00",
+      "low": "238.00",
+      "close": "241.50",
+      "volume_shares_scaled": "13084000"
+    },
+    {
+      "date": "2025-08-11",
+      "open": "245.50",
+      "high": "263.50",
+      "low": "245.00",
+      "close": "256.00",
+      "volume_shares_scaled": "19475000"
+    },
+    {
+      "date": "2025-08-12",
+      "open": "261.00",
+      "high": "267.00",
+      "low": "256.50",
+      "close": "266.50",
+      "volume_shares_scaled": "14810000"
+    },
+    {
+      "date": "2025-08-13",
+      "open": "267.00",
+      "high": "286.00",
+      "low": "261.50",
+      "close": "265.00",
+      "volume_shares_scaled": "16487000"
+    },
+    {
+      "date": "2025-08-14",
+      "open": "268.50",
+      "high": "268.50",
+      "low": "259.00",
+      "close": "262.50",
+      "volume_shares_scaled": "10369000"
+    },
+    {
+      "date": "2025-08-15",
+      "open": "259.50",
+      "high": "261.00",
+      "low": "251.00",
+      "close": "253.50",
+      "volume_shares_scaled": "12325000"
+    },
+    {
+      "date": "2025-08-18",
+      "open": "253.00",
+      "high": "259.00",
+      "low": "252.50",
+      "close": "257.50",
+      "volume_shares_scaled": "3451000"
+    },
+    {
+      "date": "2025-08-19",
+      "open": "253.00",
+      "high": "256.00",
+      "low": "249.00",
+      "close": "255.00",
+      "volume_shares_scaled": "4931000"
+    },
+    {
+      "date": "2025-08-20",
+      "open": "253.00",
+      "high": "258.00",
+      "low": "248.00",
+      "close": "249.00",
+      "volume_shares_scaled": "3592000"
+    },
+    {
+      "date": "2025-08-21",
+      "open": "252.50",
+      "high": "253.50",
+      "low": "249.00",
+      "close": "250.00",
+      "volume_shares_scaled": "3148000"
+    },
+    {
+      "date": "2025-08-22",
+      "open": "250.00",
+      "high": "252.00",
+      "low": "246.00",
+      "close": "247.50",
+      "volume_shares_scaled": "3584000"
+    },
+    {
+      "date": "2025-08-25",
+      "open": "250.00",
+      "high": "254.00",
+      "low": "249.50",
+      "close": "252.00",
+      "volume_shares_scaled": "4249000"
+    },
+    {
+      "date": "2025-08-26",
+      "open": "257.50",
+      "high": "267.00",
+      "low": "255.00",
+      "close": "267.00",
+      "volume_shares_scaled": "9106000"
+    },
+    {
+      "date": "2025-08-27",
+      "open": "264.00",
+      "high": "272.50",
+      "low": "263.00",
+      "close": "271.50",
+      "volume_shares_scaled": "7916000"
+    },
+    {
+      "date": "2025-08-28",
+      "open": "272.00",
+      "high": "272.00",
+      "low": "266.00",
+      "close": "268.00",
+      "volume_shares_scaled": "2963000"
+    },
+    {
+      "date": "2025-08-29",
+      "open": "271.00",
+      "high": "271.00",
+      "low": "263.00",
+      "close": "263.00",
+      "volume_shares_scaled": "3600000"
+    },
+    {
+      "date": "2025-09-01",
+      "open": "261.00",
+      "high": "264.00",
+      "low": "255.00",
+      "close": "258.00",
+      "volume_shares_scaled": "2433000"
+    },
+    {
+      "date": "2025-09-02",
+      "open": "250.00",
+      "high": "253.00",
+      "low": "244.00",
+      "close": "248.00",
+      "volume_shares_scaled": "5761000"
+    },
+    {
+      "date": "2025-09-03",
+      "open": "250.00",
+      "high": "251.00",
+      "low": "243.50",
+      "close": "247.50",
+      "volume_shares_scaled": "5139000"
+    },
+    {
+      "date": "2025-09-04",
+      "open": "250.00",
+      "high": "250.50",
+      "low": "246.00",
+      "close": "246.50",
+      "volume_shares_scaled": "2409000"
+    },
+    {
+      "date": "2025-09-05",
+      "open": "250.00",
+      "high": "251.50",
+      "low": "247.00",
+      "close": "250.00",
+      "volume_shares_scaled": "2675000"
+    },
+    {
+      "date": "2025-09-08",
+      "open": "250.00",
+      "high": "252.00",
+      "low": "248.00",
+      "close": "252.00",
+      "volume_shares_scaled": "1737000"
+    },
+    {
+      "date": "2025-09-09",
+      "open": "250.00",
+      "high": "250.00",
+      "low": "244.00",
+      "close": "245.50",
+      "volume_shares_scaled": "3863000"
+    },
+    {
+      "date": "2025-09-10",
+      "open": "247.50",
+      "high": "250.00",
+      "low": "245.50",
+      "close": "245.50",
+      "volume_shares_scaled": "3009000"
+    },
+    {
+      "date": "2025-09-11",
+      "open": "248.50",
+      "high": "248.50",
+      "low": "239.50",
+      "close": "241.00",
+      "volume_shares_scaled": "3115000"
+    },
+    {
+      "date": "2025-09-12",
+      "open": "242.50",
+      "high": "244.50",
+      "low": "241.50",
+      "close": "243.50",
+      "volume_shares_scaled": "2117000"
+    },
+    {
+      "date": "2025-09-15",
+      "open": "246.50",
+      "high": "246.50",
+      "low": "236.50",
+      "close": "237.50",
+      "volume_shares_scaled": "2657000"
+    },
+    {
+      "date": "2025-09-16",
+      "open": "240.00",
+      "high": "245.00",
+      "low": "239.00",
+      "close": "243.50",
+      "volume_shares_scaled": "3634000"
+    },
+    {
+      "date": "2025-09-17",
+      "open": "245.50",
+      "high": "248.00",
+      "low": "239.00",
+      "close": "240.00",
+      "volume_shares_scaled": "3222000"
+    },
+    {
+      "date": "2025-09-18",
+      "open": "241.00",
+      "high": "242.50",
+      "low": "238.50",
+      "close": "240.50",
+      "volume_shares_scaled": "1794000"
+    },
+    {
+      "date": "2025-09-19",
+      "open": "242.50",
+      "high": "243.50",
+      "low": "239.00",
+      "close": "239.50",
+      "volume_shares_scaled": "3302000"
+    },
+    {
+      "date": "2025-09-22",
+      "open": "240.50",
+      "high": "241.50",
+      "low": "235.50",
+      "close": "237.00",
+      "volume_shares_scaled": "3372000"
+    },
+    {
+      "date": "2025-09-23",
+      "open": "237.50",
+      "high": "245.00",
+      "low": "237.50",
+      "close": "243.50",
+      "volume_shares_scaled": "5227000"
+    },
+    {
+      "date": "2025-09-24",
+      "open": "243.00",
+      "high": "245.00",
+      "low": "239.50",
+      "close": "243.50",
+      "volume_shares_scaled": "3447000"
+    },
+    {
+      "date": "2025-09-25",
+      "open": "243.50",
+      "high": "243.50",
+      "low": "235.50",
+      "close": "235.50",
+      "volume_shares_scaled": "4717000"
+    },
+    {
+      "date": "2025-09-26",
+      "open": "233.00",
+      "high": "236.50",
+      "low": "229.50",
+      "close": "229.50",
+      "volume_shares_scaled": "3358000"
+    },
+    {
+      "date": "2025-09-30",
+      "open": "235.50",
+      "high": "241.50",
+      "low": "235.50",
+      "close": "240.50",
+      "volume_shares_scaled": "3564000"
+    },
+    {
+      "date": "2025-10-01",
+      "open": "240.00",
+      "high": "241.00",
+      "low": "235.00",
+      "close": "235.50",
+      "volume_shares_scaled": "3749000"
+    },
+    {
+      "date": "2025-10-02",
+      "open": "238.00",
+      "high": "239.00",
+      "low": "232.00",
+      "close": "232.00",
+      "volume_shares_scaled": "3179000"
+    },
+    {
+      "date": "2025-10-03",
+      "open": "231.00",
+      "high": "234.50",
+      "low": "230.50",
+      "close": "233.00",
+      "volume_shares_scaled": "2014000"
+    },
+    {
+      "date": "2025-10-07",
+      "open": "235.50",
+      "high": "241.00",
+      "low": "235.50",
+      "close": "237.50",
+      "volume_shares_scaled": "2915000"
+    },
+    {
+      "date": "2025-10-08",
+      "open": "237.50",
+      "high": "240.50",
+      "low": "236.50",
+      "close": "240.00",
+      "volume_shares_scaled": "1991000"
+    },
+    {
+      "date": "2025-10-09",
+      "open": "240.00",
+      "high": "240.50",
+      "low": "235.00",
+      "close": "235.00",
+      "volume_shares_scaled": "4508000"
+    },
+    {
+      "date": "2025-10-13",
+      "open": "226.00",
+      "high": "234.50",
+      "low": "225.50",
+      "close": "230.50",
+      "volume_shares_scaled": "3463000"
+    },
+    {
+      "date": "2025-10-14",
+      "open": "231.00",
+      "high": "232.00",
+      "low": "218.00",
+      "close": "218.00",
+      "volume_shares_scaled": "4557000"
+    },
+    {
+      "date": "2025-10-15",
+      "open": "219.00",
+      "high": "220.50",
+      "low": "217.00",
+      "close": "218.50",
+      "volume_shares_scaled": "4009000"
+    },
+    {
+      "date": "2025-10-16",
+      "open": "217.00",
+      "high": "220.00",
+      "low": "214.50",
+      "close": "217.50",
+      "volume_shares_scaled": "4565000"
+    },
+    {
+      "date": "2025-10-17",
+      "open": "219.00",
+      "high": "220.50",
+      "low": "216.00",
+      "close": "217.00",
+      "volume_shares_scaled": "2283000"
+    },
+    {
+      "date": "2025-10-20",
+      "open": "220.50",
+      "high": "224.50",
+      "low": "220.00",
+      "close": "222.00",
+      "volume_shares_scaled": "3038000"
+    },
+    {
+      "date": "2025-10-21",
+      "open": "231.00",
+      "high": "231.00",
+      "low": "221.50",
+      "close": "222.50",
+      "volume_shares_scaled": "4760000"
+    },
+    {
+      "date": "2025-10-22",
+      "open": "219.50",
+      "high": "221.50",
+      "low": "217.50",
+      "close": "218.50",
+      "volume_shares_scaled": "3538000"
+    },
+    {
+      "date": "2025-10-23",
+      "open": "217.00",
+      "high": "220.00",
+      "low": "217.00",
+      "close": "219.50",
+      "volume_shares_scaled": "1939000"
+    },
+    {
+      "date": "2025-10-27",
+      "open": "223.00",
+      "high": "224.00",
+      "low": "213.00",
+      "close": "213.00",
+      "volume_shares_scaled": "5246000"
+    },
+    {
+      "date": "2025-10-28",
+      "open": "214.00",
+      "high": "214.50",
+      "low": "206.50",
+      "close": "209.00",
+      "volume_shares_scaled": "6908000"
+    },
+    {
+      "date": "2025-10-29",
+      "open": "211.00",
+      "high": "211.50",
+      "low": "206.50",
+      "close": "206.50",
+      "volume_shares_scaled": "4212000"
+    },
+    {
+      "date": "2025-10-30",
+      "open": "208.00",
+      "high": "210.50",
+      "low": "203.00",
+      "close": "205.50",
+      "volume_shares_scaled": "3623000"
+    },
+    {
+      "date": "2025-10-31",
+      "open": "206.00",
+      "high": "215.50",
+      "low": "204.50",
+      "close": "212.00",
+      "volume_shares_scaled": "5242000"
+    },
+    {
+      "date": "2025-11-03",
+      "open": "212.00",
+      "high": "216.00",
+      "low": "208.50",
+      "close": "209.50",
+      "volume_shares_scaled": "4907000"
+    },
+    {
+      "date": "2025-11-04",
+      "open": "211.50",
+      "high": "216.50",
+      "low": "206.50",
+      "close": "207.00",
+      "volume_shares_scaled": "5139000"
+    },
+    {
+      "date": "2025-11-05",
+      "open": "204.00",
+      "high": "205.50",
+      "low": "202.00",
+      "close": "204.50",
+      "volume_shares_scaled": "3612000"
+    },
+    {
+      "date": "2025-11-06",
+      "open": "206.50",
+      "high": "207.50",
+      "low": "203.50",
+      "close": "205.00",
+      "volume_shares_scaled": "2935000"
+    },
+    {
+      "date": "2025-11-07",
+      "open": "203.00",
+      "high": "205.00",
+      "low": "199.00",
+      "close": "201.50",
+      "volume_shares_scaled": "5013000"
+    },
+    {
+      "date": "2025-11-10",
+      "open": "199.50",
+      "high": "199.50",
+      "low": "185.00",
+      "close": "185.00",
+      "volume_shares_scaled": "13419000"
+    },
+    {
+      "date": "2025-11-11",
+      "open": "185.00",
+      "high": "188.00",
+      "low": "181.50",
+      "close": "181.50",
+      "volume_shares_scaled": "7327000"
+    },
+    {
+      "date": "2025-11-12",
+      "open": "182.50",
+      "high": "185.00",
+      "low": "180.00",
+      "close": "181.50",
+      "volume_shares_scaled": "6739000"
+    },
+    {
+      "date": "2025-11-13",
+      "open": "183.00",
+      "high": "185.00",
+      "low": "182.50",
+      "close": "183.50",
+      "volume_shares_scaled": "4085000"
+    },
+    {
+      "date": "2025-11-14",
+      "open": "180.00",
+      "high": "181.50",
+      "low": "178.50",
+      "close": "180.00",
+      "volume_shares_scaled": "3781000"
+    },
+    {
+      "date": "2025-11-17",
+      "open": "182.00",
+      "high": "184.00",
+      "low": "175.00",
+      "close": "175.00",
+      "volume_shares_scaled": "6101000"
+    },
+    {
+      "date": "2025-11-18",
+      "open": "172.50",
+      "high": "174.50",
+      "low": "171.00",
+      "close": "171.00",
+      "volume_shares_scaled": "6515000"
+    },
+    {
+      "date": "2025-11-19",
+      "open": "171.50",
+      "high": "173.00",
+      "low": "167.50",
+      "close": "169.00",
+      "volume_shares_scaled": "6026000"
+    },
+    {
+      "date": "2025-11-20",
+      "open": "185.50",
+      "high": "185.50",
+      "low": "185.50",
+      "close": "185.50",
+      "volume_shares_scaled": "4737000"
+    },
+    {
+      "date": "2025-11-21",
+      "open": "187.00",
+      "high": "201.50",
+      "low": "186.00",
+      "close": "196.50",
+      "volume_shares_scaled": "30052000"
+    },
+    {
+      "date": "2025-11-24",
+      "open": "200.00",
+      "high": "201.50",
+      "low": "188.50",
+      "close": "191.00",
+      "volume_shares_scaled": "19044000"
+    },
+    {
+      "date": "2025-11-25",
+      "open": "190.50",
+      "high": "193.50",
+      "low": "188.50",
+      "close": "193.50",
+      "volume_shares_scaled": "6845000"
+    },
+    {
+      "date": "2025-11-26",
+      "open": "193.50",
+      "high": "197.50",
+      "low": "191.00",
+      "close": "194.50",
+      "volume_shares_scaled": "4936000"
+    },
+    {
+      "date": "2025-11-27",
+      "open": "195.00",
+      "high": "196.00",
+      "low": "190.50",
+      "close": "193.50",
+      "volume_shares_scaled": "3911000"
+    },
+    {
+      "date": "2025-11-28",
+      "open": "195.00",
+      "high": "195.00",
+      "low": "192.00",
+      "close": "192.00",
+      "volume_shares_scaled": "3058000"
+    },
+    {
+      "date": "2025-12-01",
+      "open": "194.00",
+      "high": "197.00",
+      "low": "193.00",
+      "close": "195.00",
+      "volume_shares_scaled": "3439000"
+    },
+    {
+      "date": "2025-12-02",
+      "open": "194.00",
+      "high": "195.00",
+      "low": "190.50",
+      "close": "192.00",
+      "volume_shares_scaled": "3226000"
+    },
+    {
+      "date": "2025-12-03",
+      "open": "192.00",
+      "high": "193.00",
+      "low": "187.50",
+      "close": "188.00",
+      "volume_shares_scaled": "5495000"
+    },
+    {
+      "date": "2025-12-04",
+      "open": "189.50",
+      "high": "191.50",
+      "low": "188.50",
+      "close": "190.00",
+      "volume_shares_scaled": "2538000"
+    },
+    {
+      "date": "2025-12-05",
+      "open": "188.50",
+      "high": "192.00",
+      "low": "188.00",
+      "close": "188.00",
+      "volume_shares_scaled": "2513000"
+    },
+    {
+      "date": "2025-12-08",
+      "open": "190.00",
+      "high": "191.50",
+      "low": "185.50",
+      "close": "189.50",
+      "volume_shares_scaled": "3726000"
+    },
+    {
+      "date": "2025-12-09",
+      "open": "188.00",
+      "high": "189.50",
+      "low": "183.00",
+      "close": "185.50",
+      "volume_shares_scaled": "6657000"
+    },
+    {
+      "date": "2025-12-10",
+      "open": "187.00",
+      "high": "194.00",
+      "low": "185.50",
+      "close": "191.00",
+      "volume_shares_scaled": "5465000"
+    },
+    {
+      "date": "2025-12-11",
+      "open": "191.00",
+      "high": "191.50",
+      "low": "187.00",
+      "close": "187.50",
+      "volume_shares_scaled": "3055000"
+    },
+    {
+      "date": "2025-12-12",
+      "open": "188.00",
+      "high": "190.00",
+      "low": "187.00",
+      "close": "187.00",
+      "volume_shares_scaled": "1863000"
+    },
+    {
+      "date": "2025-12-15",
+      "open": "183.50",
+      "high": "189.00",
+      "low": "182.00",
+      "close": "187.00",
+      "volume_shares_scaled": "2862000"
+    },
+    {
+      "date": "2025-12-16",
+      "open": "188.00",
+      "high": "189.00",
+      "low": "180.00",
+      "close": "181.50",
+      "volume_shares_scaled": "3941000"
+    },
+    {
+      "date": "2025-12-17",
+      "open": "183.50",
+      "high": "188.00",
+      "low": "182.50",
+      "close": "184.00",
+      "volume_shares_scaled": "3197000"
+    },
+    {
+      "date": "2025-12-18",
+      "open": "183.00",
+      "high": "184.00",
+      "low": "180.00",
+      "close": "180.50",
+      "volume_shares_scaled": "1793000"
+    },
+    {
+      "date": "2025-12-19",
+      "open": "181.50",
+      "high": "185.50",
+      "low": "180.50",
+      "close": "185.50",
+      "volume_shares_scaled": "2768000"
+    },
+    {
+      "date": "2025-12-22",
+      "open": "186.00",
+      "high": "188.00",
+      "low": "183.50",
+      "close": "187.50",
+      "volume_shares_scaled": "2263000"
+    },
+    {
+      "date": "2025-12-23",
+      "open": "189.50",
+      "high": "189.50",
+      "low": "186.00",
+      "close": "187.00",
+      "volume_shares_scaled": "1651000"
+    },
+    {
+      "date": "2025-12-24",
+      "open": "189.00",
+      "high": "192.00",
+      "low": "187.00",
+      "close": "187.50",
+      "volume_shares_scaled": "2769000"
+    },
+    {
+      "date": "2025-12-26",
+      "open": "189.50",
+      "high": "189.50",
+      "low": "185.50",
+      "close": "188.50",
+      "volume_shares_scaled": "1416000"
+    },
+    {
+      "date": "2025-12-29",
+      "open": "189.00",
+      "high": "191.50",
+      "low": "188.50",
+      "close": "189.00",
+      "volume_shares_scaled": "1798000"
+    },
+    {
+      "date": "2025-12-30",
+      "open": "187.50",
+      "high": "196.00",
+      "low": "185.50",
+      "close": "195.00",
+      "volume_shares_scaled": "7032000"
+    },
+    {
+      "date": "2025-12-31",
+      "open": "195.50",
+      "high": "198.00",
+      "low": "191.00",
+      "close": "198.00",
+      "volume_shares_scaled": "8900000"
+    },
+    {
+      "date": "2026-01-02",
+      "open": "197.50",
+      "high": "201.50",
+      "low": "192.00",
+      "close": "201.00",
+      "volume_shares_scaled": "9677000"
+    },
+    {
+      "date": "2026-01-05",
+      "open": "201.00",
+      "high": "201.00",
+      "low": "192.00",
+      "close": "193.00",
+      "volume_shares_scaled": "9647000"
+    },
+    {
+      "date": "2026-01-06",
+      "open": "193.00",
+      "high": "193.50",
+      "low": "187.00",
+      "close": "187.00",
+      "volume_shares_scaled": "6301000"
+    },
+    {
+      "date": "2026-01-07",
+      "open": "183.50",
+      "high": "184.50",
+      "low": "180.50",
+      "close": "180.50",
+      "volume_shares_scaled": "7748000"
+    },
+    {
+      "date": "2026-01-08",
+      "open": "180.00",
+      "high": "181.00",
+      "low": "173.50",
+      "close": "173.50",
+      "volume_shares_scaled": "9036000"
+    },
+    {
+      "date": "2026-01-09",
+      "open": "173.00",
+      "high": "174.50",
+      "low": "169.50",
+      "close": "170.50",
+      "volume_shares_scaled": "8985000"
+    },
+    {
+      "date": "2026-01-12",
+      "open": "172.00",
+      "high": "177.50",
+      "low": "171.00",
+      "close": "177.50",
+      "volume_shares_scaled": "5757000"
+    },
+    {
+      "date": "2026-01-13",
+      "open": "178.00",
+      "high": "180.50",
+      "low": "174.00",
+      "close": "174.50",
+      "volume_shares_scaled": "4381000"
+    },
+    {
+      "date": "2026-01-14",
+      "open": "175.00",
+      "high": "177.50",
+      "low": "174.50",
+      "close": "175.50",
+      "volume_shares_scaled": "3529000"
+    },
+    {
+      "date": "2026-01-15",
+      "open": "176.00",
+      "high": "176.50",
+      "low": "172.50",
+      "close": "173.00",
+      "volume_shares_scaled": "3265000"
+    },
+    {
+      "date": "2026-01-16",
+      "open": "173.00",
+      "high": "175.00",
+      "low": "171.00",
+      "close": "174.50",
+      "volume_shares_scaled": "5481000"
+    },
+    {
+      "date": "2026-01-19",
+      "open": "174.50",
+      "high": "176.50",
+      "low": "174.00",
+      "close": "176.00",
+      "volume_shares_scaled": "3141000"
+    },
+    {
+      "date": "2026-01-20",
+      "open": "176.50",
+      "high": "182.00",
+      "low": "175.50",
+      "close": "176.50",
+      "volume_shares_scaled": "5870000"
+    },
+    {
+      "date": "2026-01-21",
+      "open": "173.50",
+      "high": "175.50",
+      "low": "170.50",
+      "close": "172.00",
+      "volume_shares_scaled": "6153000"
+    },
+    {
+      "date": "2026-01-22",
+      "open": "176.00",
+      "high": "181.50",
+      "low": "174.00",
+      "close": "180.50",
+      "volume_shares_scaled": "8881000"
+    },
+    {
+      "date": "2026-01-23",
+      "open": "186.00",
+      "high": "186.50",
+      "low": "178.50",
+      "close": "180.50",
+      "volume_shares_scaled": "8123000"
+    },
+    {
+      "date": "2026-01-26",
+      "open": "183.00",
+      "high": "183.50",
+      "low": "179.50",
+      "close": "181.00",
+      "volume_shares_scaled": "4654000"
+    },
+    {
+      "date": "2026-01-27",
+      "open": "181.50",
+      "high": "183.00",
+      "low": "178.50",
+      "close": "179.50",
+      "volume_shares_scaled": "4566000"
+    },
+    {
+      "date": "2026-01-28",
+      "open": "179.50",
+      "high": "183.50",
+      "low": "178.50",
+      "close": "180.50",
+      "volume_shares_scaled": "3869000"
+    },
+    {
+      "date": "2026-01-29",
+      "open": "180.50",
+      "high": "182.00",
+      "low": "175.00",
+      "close": "176.50",
+      "volume_shares_scaled": "5794000"
+    },
+    {
+      "date": "2026-01-30",
+      "open": "176.00",
+      "high": "176.50",
+      "low": "171.50",
+      "close": "175.00",
+      "volume_shares_scaled": "6462000"
+    },
+    {
+      "date": "2026-02-02",
+      "open": "173.50",
+      "high": "173.50",
+      "low": "171.00",
+      "close": "171.50",
+      "volume_shares_scaled": "2610000"
+    },
+    {
+      "date": "2026-02-03",
+      "open": "173.50",
+      "high": "174.00",
+      "low": "168.50",
+      "close": "170.50",
+      "volume_shares_scaled": "5641000"
+    },
+    {
+      "date": "2026-02-04",
+      "open": "169.50",
+      "high": "174.50",
+      "low": "169.50",
+      "close": "173.50",
+      "volume_shares_scaled": "2206000"
+    },
+    {
+      "date": "2026-02-05",
+      "open": "173.00",
+      "high": "178.00",
+      "low": "172.00",
+      "close": "173.50",
+      "volume_shares_scaled": "3644000"
+    },
+    {
+      "date": "2026-02-06",
+      "open": "173.50",
+      "high": "174.50",
+      "low": "170.50",
+      "close": "172.50",
+      "volume_shares_scaled": "3367000"
+    },
+    {
+      "date": "2026-02-09",
+      "open": "175.00",
+      "high": "178.00",
+      "low": "175.00",
+      "close": "175.50",
+      "volume_shares_scaled": "5032000"
+    },
+    {
+      "date": "2026-02-10",
+      "open": "179.00",
+      "high": "191.00",
+      "low": "179.00",
+      "close": "185.00",
+      "volume_shares_scaled": "12016000"
+    },
+    {
+      "date": "2026-02-11",
+      "open": "186.00",
+      "high": "193.50",
+      "low": "184.00",
+      "close": "189.50",
+      "volume_shares_scaled": "8992000"
+    },
+    {
+      "date": "2026-02-23",
+      "open": "193.00",
+      "high": "193.00",
+      "low": "187.00",
+      "close": "191.00",
+      "volume_shares_scaled": "7518000"
+    },
+    {
+      "date": "2026-02-24",
+      "open": "190.50",
+      "high": "192.00",
+      "low": "185.00",
+      "close": "185.50",
+      "volume_shares_scaled": "7521000"
+    },
+    {
+      "date": "2026-02-25",
+      "open": "185.50",
+      "high": "191.00",
+      "low": "185.50",
+      "close": "190.00",
+      "volume_shares_scaled": "9787000"
+    },
+    {
+      "date": "2026-02-26",
+      "open": "192.00",
+      "high": "193.00",
+      "low": "187.00",
+      "close": "187.00",
+      "volume_shares_scaled": "9659000"
+    },
+    {
+      "date": "2026-03-02",
+      "open": "182.50",
+      "high": "187.50",
+      "low": "181.50",
+      "close": "184.00",
+      "volume_shares_scaled": "6823000"
+    },
+    {
+      "date": "2026-03-03",
+      "open": "180.50",
+      "high": "184.00",
+      "low": "170.50",
+      "close": "170.50",
+      "volume_shares_scaled": "11492000"
+    },
+    {
+      "date": "2026-03-04",
+      "open": "168.00",
+      "high": "170.00",
+      "low": "153.50",
+      "close": "153.50",
+      "volume_shares_scaled": "24136000"
+    },
+    {
+      "date": "2026-03-05",
+      "open": "160.00",
+      "high": "168.00",
+      "low": "158.50",
+      "close": "166.00",
+      "volume_shares_scaled": "13965000"
+    },
+    {
+      "date": "2026-03-06",
+      "open": "167.50",
+      "high": "170.00",
+      "low": "164.50",
+      "close": "165.00",
+      "volume_shares_scaled": "5686000"
+    },
+    {
+      "date": "2026-03-09",
+      "open": "150.50",
+      "high": "158.50",
+      "low": "150.50",
+      "close": "155.00",
+      "volume_shares_scaled": "8581000"
+    },
+    {
+      "date": "2026-03-10",
+      "open": "158.00",
+      "high": "160.00",
+      "low": "155.50",
+      "close": "159.00",
+      "volume_shares_scaled": "5440000"
+    },
+    {
+      "date": "2026-03-11",
+      "open": "161.00",
+      "high": "164.50",
+      "low": "160.50",
+      "close": "162.00",
+      "volume_shares_scaled": "4790000"
+    },
+    {
+      "date": "2026-03-12",
+      "open": "162.00",
+      "high": "162.50",
+      "low": "157.00",
+      "close": "159.00",
+      "volume_shares_scaled": "8947000"
+    },
+    {
+      "date": "2026-03-13",
+      "open": "152.50",
+      "high": "155.50",
+      "low": "151.00",
+      "close": "152.50",
+      "volume_shares_scaled": "14885000"
+    },
+    {
+      "date": "2026-03-16",
+      "open": "152.50",
+      "high": "155.50",
+      "low": "149.00",
+      "close": "149.00",
+      "volume_shares_scaled": "10894000"
+    },
+    {
+      "date": "2026-03-17",
+      "open": "151.00",
+      "high": "152.50",
+      "low": "147.00",
+      "close": "150.00",
+      "volume_shares_scaled": "10315000"
+    },
+    {
+      "date": "2026-03-18",
+      "open": "150.50",
+      "high": "152.50",
+      "low": "148.00",
+      "close": "148.50",
+      "volume_shares_scaled": "7636000"
+    },
+    {
+      "date": "2026-03-19",
+      "open": "147.50",
+      "high": "148.00",
+      "low": "143.00",
+      "close": "143.50",
+      "volume_shares_scaled": "10470000"
+    },
+    {
+      "date": "2026-03-20",
+      "open": "145.00",
+      "high": "151.00",
+      "low": "144.00",
+      "close": "150.50",
+      "volume_shares_scaled": "9806000"
+    },
+    {
+      "date": "2026-03-23",
+      "open": "147.50",
+      "high": "147.50",
+      "low": "143.50",
+      "close": "143.50",
+      "volume_shares_scaled": "6308000"
+    },
+    {
+      "date": "2026-03-24",
+      "open": "146.00",
+      "high": "147.50",
+      "low": "140.50",
+      "close": "142.00",
+      "volume_shares_scaled": "5243000"
+    },
+    {
+      "date": "2026-03-25",
+      "open": "146.00",
+      "high": "148.50",
+      "low": "145.00",
+      "close": "147.00",
+      "volume_shares_scaled": "3630000"
+    },
+    {
+      "date": "2026-03-26",
+      "open": "149.00",
+      "high": "149.50",
+      "low": "144.00",
+      "close": "144.00",
+      "volume_shares_scaled": "3688000"
+    },
+    {
+      "date": "2026-03-27",
+      "open": "144.50",
+      "high": "146.00",
+      "low": "142.00",
+      "close": "146.00",
+      "volume_shares_scaled": "3850000"
+    },
+    {
+      "date": "2026-03-30",
+      "open": "142.00",
+      "high": "143.00",
+      "low": "140.00",
+      "close": "140.50",
+      "volume_shares_scaled": "8256000"
+    },
+    {
+      "date": "2026-03-31",
+      "open": "140.00",
+      "high": "142.00",
+      "low": "136.00",
+      "close": "136.50",
+      "volume_shares_scaled": "7118000"
+    },
+    {
+      "date": "2026-04-01",
+      "open": "141.00",
+      "high": "145.00",
+      "low": "140.00",
+      "close": "144.00",
+      "volume_shares_scaled": "4103000"
+    },
+    {
+      "date": "2026-04-02",
+      "open": "145.00",
+      "high": "145.00",
+      "low": "140.00",
+      "close": "142.00",
+      "volume_shares_scaled": "4630000"
+    },
+    {
+      "date": "2026-04-07",
+      "open": "144.00",
+      "high": "145.50",
+      "low": "141.00",
+      "close": "142.50",
+      "volume_shares_scaled": "2952000"
+    },
+    {
+      "date": "2026-04-08",
+      "open": "146.00",
+      "high": "149.00",
+      "low": "145.00",
+      "close": "148.50",
+      "volume_shares_scaled": "4902000"
+    },
+    {
+      "date": "2026-04-09",
+      "open": "150.50",
+      "high": "150.50",
+      "low": "143.00",
+      "close": "144.00",
+      "volume_shares_scaled": "6702000"
+    },
+    {
+      "date": "2026-04-10",
+      "open": "145.50",
+      "high": "146.50",
+      "low": "143.00",
+      "close": "143.00",
+      "volume_shares_scaled": "4538000"
+    },
+    {
+      "date": "2026-04-13",
+      "open": "143.00",
+      "high": "149.50",
+      "low": "143.00",
+      "close": "148.00",
+      "volume_shares_scaled": "6493000"
+    },
+    {
+      "date": "2026-04-14",
+      "open": "149.50",
+      "high": "151.00",
+      "low": "148.50",
+      "close": "150.00",
+      "volume_shares_scaled": "4271000"
+    },
+    {
+      "date": "2026-04-15",
+      "open": "151.50",
+      "high": "154.00",
+      "low": "150.00",
+      "close": "150.50",
+      "volume_shares_scaled": "5520000"
+    },
+    {
+      "date": "2026-04-16",
+      "open": "151.00",
+      "high": "155.00",
+      "low": "149.50",
+      "close": "155.00",
+      "volume_shares_scaled": "5939000"
+    },
+    {
+      "date": "2026-04-17",
+      "open": "155.50",
+      "high": "157.50",
+      "low": "153.50",
+      "close": "155.00",
+      "volume_shares_scaled": "3984000"
+    },
+    {
+      "date": "2026-04-20",
+      "open": "157.50",
+      "high": "158.50",
+      "low": "156.00",
+      "close": "158.00",
+      "volume_shares_scaled": "5426000"
+    },
+    {
+      "date": "2026-04-21",
+      "open": "157.00",
+      "high": "158.00",
+      "low": "151.50",
+      "close": "154.00",
+      "volume_shares_scaled": "7781000"
+    },
+    {
+      "date": "2026-04-22",
+      "open": "153.00",
+      "high": "163.50",
+      "low": "152.00",
+      "close": "159.00",
+      "volume_shares_scaled": "9343000"
+    },
+    {
+      "date": "2026-04-23",
+      "open": "162.50",
+      "high": "162.50",
+      "low": "146.00",
+      "close": "147.00",
+      "volume_shares_scaled": "15863000"
+    },
+    {
+      "date": "2026-04-24",
+      "open": "148.50",
+      "high": "149.00",
+      "low": "143.50",
+      "close": "144.00",
+      "volume_shares_scaled": "5379000"
+    },
+    {
+      "date": "2026-04-27",
+      "open": "144.00",
+      "high": "144.00",
+      "low": "140.00",
+      "close": "141.00",
+      "volume_shares_scaled": "6151000"
+    },
+    {
+      "date": "2026-04-28",
+      "open": "142.00",
+      "high": "143.00",
+      "low": "140.00",
+      "close": "140.00",
+      "volume_shares_scaled": "5389000"
+    },
+    {
+      "date": "2026-04-29",
+      "open": "140.50",
+      "high": "142.00",
+      "low": "138.00",
+      "close": "139.50",
+      "volume_shares_scaled": "5400000"
+    },
+    {
+      "date": "2026-04-30",
+      "open": "139.50",
+      "high": "142.00",
+      "low": "137.50",
+      "close": "137.50",
+      "volume_shares_scaled": "7578000"
+    },
+    {
+      "date": "2026-05-04",
+      "open": "138.50",
+      "high": "141.50",
+      "low": "135.00",
+      "close": "140.00",
+      "volume_shares_scaled": "10184000"
+    },
+    {
+      "date": "2026-05-05",
+      "open": "140.00",
+      "high": "140.50",
+      "low": "137.50",
+      "close": "139.50",
+      "volume_shares_scaled": "6482000"
+    },
+    {
+      "date": "2026-05-06",
+      "open": "141.50",
+      "high": "151.50",
+      "low": "141.00",
+      "close": "145.50",
+      "volume_shares_scaled": "15899000"
+    },
+    {
+      "date": "2026-05-07",
+      "open": "146.50",
+      "high": "157.00",
+      "low": "145.00",
+      "close": "153.00",
+      "volume_shares_scaled": "14988000"
+    },
+    {
+      "date": "2026-05-08",
+      "open": "153.00",
+      "high": "165.00",
+      "low": "149.50",
+      "close": "162.00",
+      "volume_shares_scaled": "22979000"
+    },
+    {
+      "date": "2026-05-11",
+      "open": "178.00",
+      "high": "178.00",
+      "low": "178.00",
+      "close": "178.00",
+      "volume_shares_scaled": "5346000"
+    },
+    {
+      "date": "2026-05-12",
+      "open": "195.50",
+      "high": "195.50",
+      "low": "188.50",
+      "close": "195.50",
+      "volume_shares_scaled": "61919000"
+    },
+    {
+      "date": "2026-05-13",
+      "open": "208.00",
+      "high": "215.00",
+      "low": "204.50",
+      "close": "215.00",
+      "volume_shares_scaled": "38403000"
+    },
+    {
+      "date": "2026-05-14",
+      "open": "217.00",
+      "high": "231.00",
+      "low": "208.50",
+      "close": "226.00",
+      "volume_shares_scaled": "51749000"
+    },
+    {
+      "date": "2026-05-15",
+      "open": "226.00",
+      "high": "226.00",
+      "low": "208.00",
+      "close": "210.00",
+      "volume_shares_scaled": "9357000"
+    },
+    {
+      "date": "2026-05-18",
+      "open": "213.00",
+      "high": "220.00",
+      "low": "207.50",
+      "close": "219.00",
+      "volume_shares_scaled": "5323000"
+    },
+    {
+      "date": "2026-05-19",
+      "open": "225.00",
+      "high": "225.00",
+      "low": "213.00",
+      "close": "222.00",
+      "volume_shares_scaled": "7289000"
+    },
+    {
+      "date": "2026-05-20",
+      "open": "222.50",
+      "high": "230.00",
+      "low": "218.50",
+      "close": "230.00",
+      "volume_shares_scaled": "7263000"
+    },
+    {
+      "date": "2026-05-21",
+      "open": "232.00",
+      "high": "236.00",
+      "low": "228.00",
+      "close": "230.50",
+      "volume_shares_scaled": "5385000"
+    },
+    {
+      "date": "2026-05-22",
+      "open": "228.50",
+      "high": "229.50",
+      "low": "224.00",
+      "close": "224.00",
+      "volume_shares_scaled": "4596000"
+    },
+    {
+      "date": "2026-05-25",
+      "open": "229.00",
+      "high": "235.50",
+      "low": "222.00",
+      "close": "235.00",
+      "volume_shares_scaled": "5393000"
+    },
+    {
+      "date": "2026-05-26",
+      "open": "237.00",
+      "high": "237.00",
+      "low": "229.50",
+      "close": "235.00",
+      "volume_shares_scaled": "4433000"
+    },
+    {
+      "date": "2026-05-27",
+      "open": "242.00",
+      "high": "251.00",
+      "low": "240.00",
+      "close": "249.00",
+      "volume_shares_scaled": "6948000"
+    },
+    {
+      "date": "2026-05-28",
+      "open": "245.00",
+      "high": "251.00",
+      "low": "228.50",
+      "close": "233.00",
+      "volume_shares_scaled": "6103000"
+    },
+    {
+      "date": "2026-05-29",
+      "open": "240.00",
+      "high": "243.00",
+      "low": "220.00",
+      "close": "220.00",
+      "volume_shares_scaled": "26653000"
+    },
+    {
+      "date": "2026-06-01",
+      "open": "220.50",
+      "high": "228.50",
+      "low": "212.50",
+      "close": "225.00",
+      "volume_shares_scaled": "8735000"
+    },
+    {
+      "date": "2026-06-02",
+      "open": "223.50",
+      "high": "227.00",
+      "low": "216.00",
+      "close": "224.00",
+      "volume_shares_scaled": "6955000"
+    },
+    {
+      "date": "2026-06-03",
+      "open": "229.50",
+      "high": "236.00",
+      "low": "223.00",
+      "close": "227.50",
+      "volume_shares_scaled": "8509000"
+    },
+    {
+      "date": "2026-06-04",
+      "open": "224.00",
+      "high": "228.00",
+      "low": "214.50",
+      "close": "214.50",
+      "volume_shares_scaled": "8658000"
+    },
+    {
+      "date": "2026-06-05",
+      "open": "212.00",
+      "high": "222.00",
+      "low": "210.50",
+      "close": "214.00",
+      "volume_shares_scaled": "9486000"
+    },
+    {
+      "date": "2026-06-08",
+      "open": "193.00",
+      "high": "199.50",
+      "low": "193.00",
+      "close": "198.50",
+      "volume_shares_scaled": "10851000"
+    },
+    {
+      "date": "2026-06-09",
+      "open": "204.00",
+      "high": "207.00",
+      "low": "194.00",
+      "close": "201.50",
+      "volume_shares_scaled": "10698000"
+    },
+    {
+      "date": "2026-06-10",
+      "open": "197.00",
+      "high": "203.50",
+      "low": "191.00",
+      "close": "191.00",
+      "volume_shares_scaled": "6997000"
+    },
+    {
+      "date": "2026-06-11",
+      "open": "190.50",
+      "high": "193.50",
+      "low": "183.00",
+      "close": "190.50",
+      "volume_shares_scaled": "9765000"
+    },
+    {
+      "date": "2026-06-12",
+      "open": "198.00",
+      "high": "200.50",
+      "low": "194.50",
+      "close": "196.00",
+      "volume_shares_scaled": "5470000"
+    },
+    {
+      "date": "2026-06-15",
+      "open": "200.00",
+      "high": "202.00",
+      "low": "196.50",
+      "close": "200.50",
+      "volume_shares_scaled": "6456000"
+    },
+    {
+      "date": "2026-06-16",
+      "open": "203.00",
+      "high": "204.50",
+      "low": "194.00",
+      "close": "194.50",
+      "volume_shares_scaled": "7651000"
+    },
+    {
+      "date": "2026-06-17",
+      "open": "193.50",
+      "high": "199.00",
+      "low": "190.50",
+      "close": "198.50",
+      "volume_shares_scaled": "5113000"
+    },
+    {
+      "date": "2026-06-18",
+      "open": "200.00",
+      "high": "211.50",
+      "low": "200.00",
+      "close": "204.00",
+      "volume_shares_scaled": "11030000"
+    },
+    {
+      "date": "2026-06-22",
+      "open": "212.50",
+      "high": "213.00",
+      "low": "202.00",
+      "close": "203.00",
+      "volume_shares_scaled": "6374000"
+    },
+    {
+      "date": "2026-06-23",
+      "open": "203.00",
+      "high": "204.50",
+      "low": "195.00",
+      "close": "196.00",
+      "volume_shares_scaled": "4886000"
+    },
+    {
+      "date": "2026-06-24",
+      "open": "194.50",
+      "high": "199.50",
+      "low": "191.50",
+      "close": "196.50",
+      "volume_shares_scaled": "3857000"
+    },
+    {
+      "date": "2026-06-25",
+      "open": "197.00",
+      "high": "198.00",
+      "low": "192.50",
+      "close": "196.50",
+      "volume_shares_scaled": "4506000"
+    },
+    {
+      "date": "2026-06-26",
+      "open": "193.50",
+      "high": "205.50",
+      "low": "192.50",
+      "close": "195.00",
+      "volume_shares_scaled": "11437000"
+    },
+    {
+      "date": "2026-06-29",
+      "open": "204.00",
+      "high": "214.50",
+      "low": "203.50",
+      "close": "214.50",
+      "volume_shares_scaled": "6619000"
+    },
+    {
+      "date": "2026-06-30",
+      "open": "228.00",
+      "high": "232.00",
+      "low": "209.50",
+      "close": "214.50",
+      "volume_shares_scaled": "27388000"
+    },
+    {
+      "date": "2026-07-01",
+      "open": "214.50",
+      "high": "221.00",
+      "low": "204.00",
+      "close": "204.00",
+      "volume_shares_scaled": "13203000"
+    },
+    {
+      "date": "2026-07-02",
+      "open": "205.00",
+      "high": "222.00",
+      "low": "201.50",
+      "close": "205.50",
+      "volume_shares_scaled": "15691000"
+    },
+    {
+      "date": "2026-07-03",
+      "open": "207.00",
+      "high": "215.50",
+      "low": "206.50",
+      "close": "212.50",
+      "volume_shares_scaled": "10318000"
+    },
+    {
+      "date": "2026-07-06",
+      "open": "215.00",
+      "high": "215.00",
+      "low": "205.50",
+      "close": "205.50",
+      "volume_shares_scaled": "8274000"
+    },
+    {
+      "date": "2026-07-07",
+      "open": "205.50",
+      "high": "209.50",
+      "low": "198.50",
+      "close": "198.50",
+      "volume_shares_scaled": "7707000"
+    },
+    {
+      "date": "2026-07-08",
+      "open": "199.50",
+      "high": "202.50",
+      "low": "195.50",
+      "close": "199.00",
+      "volume_shares_scaled": "4498000"
+    },
+    {
+      "date": "2026-07-09",
+      "open": "201.50",
+      "high": "208.00",
+      "low": "198.00",
+      "close": "200.50",
+      "volume_shares_scaled": "5368000"
+    },
+    {
+      "date": "2026-07-13",
+      "open": "206.00",
+      "high": "207.00",
+      "low": "196.00",
+      "close": "196.00",
+      "volume_shares_scaled": "4054000"
+    },
+    {
+      "date": "2026-07-14",
+      "open": "196.00",
+      "high": "196.50",
+      "low": "184.50",
+      "close": "193.50",
+      "volume_shares_scaled": "7306000"
+    },
+    {
+      "date": "2026-07-15",
+      "open": "194.00",
+      "high": "195.00",
+      "low": "188.50",
+      "close": "188.50",
+      "volume_shares_scaled": "7051000"
+    },
+    {
+      "date": "2026-07-16",
+      "open": "186.00",
+      "high": "188.50",
+      "low": "182.00",
+      "close": "184.00",
+      "volume_shares_scaled": "5897000"
+    },
+    {
+      "date": "2026-07-17",
+      "open": "181.00",
+      "high": "191.50",
+      "low": "180.00",
+      "close": "181.50",
+      "volume_shares_scaled": "8284000"
+    },
+    {
+      "date": "2026-07-20",
+      "open": "177.50",
+      "high": "178.00",
+      "low": "172.50",
+      "close": "175.50",
+      "volume_shares_scaled": "6326000"
+    },
+    {
+      "date": "2026-07-21",
+      "open": "176.00",
+      "high": "193.00",
+      "low": "175.50",
+      "close": "193.00",
+      "volume_shares_scaled": "5851000"
+    },
+    {
+      "date": "2026-07-22",
+      "open": "192.00",
+      "high": "198.00",
+      "low": "187.50",
+      "close": "194.50",
+      "volume_shares_scaled": "13365000"
+    },
+    {
+      "date": "2026-07-23",
+      "open": "194.00",
+      "high": "195.50",
+      "low": "188.50",
+      "close": "192.00",
+      "volume_shares_scaled": "7458000"
+    },
+    {
+      "date": "2026-07-24",
+      "open": "190.50",
+      "high": "195.50",
+      "low": "188.50",
+      "close": "191.00",
+      "volume_shares_scaled": "6533000"
+    },
+    {
+      "date": "2026-07-27",
+      "open": "194.50",
+      "high": "194.50",
+      "low": "182.00",
+      "close": "184.50",
+      "volume_shares_scaled": "5195000"
+    },
+    {
+      "date": "2026-07-28",
+      "open": "180.00",
+      "high": "180.00",
+      "low": "173.00",
+      "close": "173.00",
+      "volume_shares_scaled": "4146000"
+    },
+    {
+      "date": "2026-07-29",
+      "open": "177.50",
+      "high": "189.00",
+      "low": "174.00",
+      "close": "179.00",
+      "volume_shares_scaled": "12890000"
+    },
+    {
+      "date": "2026-07-30",
+      "open": "178.00",
+      "high": "190.00",
+      "low": "173.50",
+      "close": "182.00",
+      "volume_shares_scaled": "9161000"
+    },
+    {
+      "date": "2026-07-31",
+      "open": "191.00",
+      "high": "194.50",
+      "low": "184.50",
+      "close": "189.00",
+      "volume_shares_scaled": "9841000"
+    },
+    {
+      "date": "2026-08-03",
+      "open": "186.00",
+      "high": "191.50",
+      "low": "179.00",
+      "close": "189.00",
+      "volume_shares_scaled": "7399000"
+    },
+    {
+      "date": "2026-08-04",
+      "open": "188.00",
+      "high": "201.00",
+      "low": "185.00",
+      "close": "197.50",
+      "volume_shares_scaled": "9381000"
+    },
+    {
+      "date": "2026-08-05",
+      "open": "200.00",
+      "high": "204.50",
+      "low": "195.50",
+      "close": "195.50",
+      "volume_shares_scaled": "11627000"
+    },
+    {
+      "date": "2026-08-06",
+      "open": "193.50",
+      "high": "204.00",
+      "low": "192.00",
+      "close": "196.00",
+      "volume_shares_scaled": "12610000"
+    },
+    {
+      "date": "2026-08-07",
+      "open": "195.00",
+      "high": "208.50",
+      "low": "195.00",
+      "close": "196.00",
+      "volume_shares_scaled": "17208000"
+    },
+    {
+      "date": "2026-08-10",
+      "open": "176.50",
+      "high": "178.50",
+      "low": "176.50",
+      "close": "176.50",
+      "volume_shares_scaled": "14773000"
+    },
+    {
+      "date": "2026-08-11",
+      "open": "169.50",
+      "high": "170.00",
+      "low": "164.50",
+      "close": "165.00",
+      "volume_shares_scaled": "17639000"
+    },
+    {
+      "date": "2026-08-12",
+      "open": "165.00",
+      "high": "167.00",
+      "low": "160.00",
+      "close": "166.00",
+      "volume_shares_scaled": "8901000"
+    },
+    {
+      "date": "2026-08-13",
+      "open": "167.50",
+      "high": "173.00",
+      "low": "164.00",
+      "close": "171.00",
+      "volume_shares_scaled": "12853000"
+    },
+    {
+      "date": "2026-08-14",
+      "open": "160.50",
+      "high": "168.50",
+      "low": "158.50",
+      "close": "165.50",
+      "volume_shares_scaled": "19726000"
+    },
+    {
+      "date": "2026-08-17",
+      "open": "164.00",
+      "high": "165.00",
+      "low": "161.00",
+      "close": "162.50",
+      "volume_shares_scaled": "10654000"
+    },
+    {
+      "date": "2026-08-18",
+      "open": "162.50",
+      "high": "162.50",
+      "low": "156.50",
+      "close": "157.50",
+      "volume_shares_scaled": "9255000"
+    },
+    {
+      "date": "2026-08-19",
+      "open": "153.50",
+      "high": "161.50",
+      "low": "153.00",
+      "close": "161.00",
+      "volume_shares_scaled": "8642000"
+    },
+    {
+      "date": "2026-08-20",
+      "open": "161.00",
+      "high": "166.00",
+      "low": "159.00",
+      "close": "163.00",
+      "volume_shares_scaled": "7974000"
+    },
+    {
+      "date": "2026-08-21",
+      "open": "162.00",
+      "high": "163.00",
+      "low": "160.00",
+      "close": "160.50",
+      "volume_shares_scaled": "4996000"
+    },
+    {
+      "date": "2026-08-24",
+      "open": "161.50",
+      "high": "162.50",
+      "low": "158.50",
+      "close": "158.50",
+      "volume_shares_scaled": "4213000"
+    },
+    {
+      "date": "2026-08-25",
+      "open": "157.50",
+      "high": "159.00",
+      "low": "155.00",
+      "close": "158.50",
+      "volume_shares_scaled": "3458000"
+    },
+    {
+      "date": "2026-08-26",
+      "open": "159.50",
+      "high": "162.00",
+      "low": "159.50",
+      "close": "160.00",
+      "volume_shares_scaled": "4156000"
+    },
+    {
+      "date": "2026-08-27",
+      "open": "161.50",
+      "high": "162.00",
+      "low": "159.00",
+      "close": "159.00",
+      "volume_shares_scaled": "6169000"
+    },
+    {
+      "date": "2026-08-28",
+      "open": "160.00",
+      "high": "162.50",
+      "low": "159.00",
+      "close": "160.50",
+      "volume_shares_scaled": "5203000"
+    },
+    {
+      "date": "2026-08-31",
+      "open": "159.50",
+      "high": "159.50",
+      "low": "153.00",
+      "close": "156.50",
+      "volume_shares_scaled": "12438000"
+    },
+    {
+      "date": "2026-09-01",
+      "open": "154.00",
+      "high": "160.00",
+      "low": "154.00",
+      "close": "158.00",
+      "volume_shares_scaled": "8329000"
+    },
+    {
+      "date": "2026-09-02",
+      "open": "158.50",
+      "high": "159.00",
+      "low": "154.50",
+      "close": "154.50",
+      "volume_shares_scaled": "4967000"
+    },
+    {
+      "date": "2026-09-03",
+      "open": "155.00",
+      "high": "155.50",
+      "low": "147.00",
+      "close": "147.00",
+      "volume_shares_scaled": "9632000"
+    },
+    {
+      "date": "2026-09-04",
+      "open": "151.00",
+      "high": "151.50",
+      "low": "148.50",
+      "close": "148.50",
+      "volume_shares_scaled": "5361000"
+    },
+    {
+      "date": "2026-09-07",
+      "open": "149.50",
+      "high": "152.50",
+      "low": "147.00",
+      "close": "150.50",
+      "volume_shares_scaled": "4603000"
+    },
+    {
+      "date": "2026-09-08",
+      "open": "153.00",
+      "high": "153.00",
+      "low": "147.00",
+      "close": "147.00",
+      "volume_shares_scaled": "5283000"
+    },
+    {
+      "date": "2026-09-09",
+      "open": "149.50",
+      "high": "153.50",
+      "low": "149.50",
+      "close": "149.50",
+      "volume_shares_scaled": "5643000"
+    },
+    {
+      "date": "2026-09-10",
+      "open": "149.00",
+      "high": "149.50",
+      "low": "146.50",
+      "close": "147.00",
+      "volume_shares_scaled": "4280000"
+    },
+    {
+      "date": "2026-09-11",
+      "open": "145.00",
+      "high": "148.00",
+      "low": "144.00",
+      "close": "146.00",
+      "volume_shares_scaled": "3528000"
+    },
+    {
+      "date": "2026-09-14",
+      "open": "145.00",
+      "high": "148.00",
+      "low": "143.00",
+      "close": "145.50",
+      "volume_shares_scaled": "4039000"
+    },
+    {
+      "date": "2026-09-15",
+      "open": "145.50",
+      "high": "149.00",
+      "low": "144.50",
+      "close": "146.00",
+      "volume_shares_scaled": "3779000"
+    },
+    {
+      "date": "2026-09-16",
+      "open": "147.00",
+      "high": "149.00",
+      "low": "146.50",
+      "close": "148.00",
+      "volume_shares_scaled": "3921000"
+    },
+    {
+      "date": "2026-09-17",
+      "open": "149.00",
+      "high": "151.00",
+      "low": "145.50",
+      "close": "145.50",
+      "volume_shares_scaled": "5128000"
+    },
+    {
+      "date": "2026-09-18",
+      "open": "147.00",
+      "high": "147.00",
+      "low": "143.50",
+      "close": "146.50",
+      "volume_shares_scaled": "10229000"
+    },
+    {
+      "date": "2026-09-21",
+      "open": "147.00",
+      "high": "148.00",
+      "low": "144.00",
+      "close": "144.50",
+      "volume_shares_scaled": "5339000"
+    },
+    {
+      "date": "2026-09-22",
+      "open": "146.00",
+      "high": "147.00",
+      "low": "144.00",
+      "close": "145.00",
+      "volume_shares_scaled": "5676000"
+    },
+    {
+      "date": "2026-09-23",
+      "open": "146.50",
+      "high": "148.00",
+      "low": "144.00",
+      "close": "144.00",
+      "volume_shares_scaled": "5797000"
+    },
+    {
+      "date": "2026-09-24",
+      "open": "143.50",
+      "high": "146.00",
+      "low": "142.50",
+      "close": "146.00",
+      "volume_shares_scaled": "5440000"
+    },
+    {
+      "date": "2026-09-29",
+      "open": "141.00",
+      "high": "144.50",
+      "low": "138.50",
+      "close": "142.50",
+      "volume_shares_scaled": "8505000"
+    },
+    {
+      "date": "2026-09-30",
+      "open": "145.00",
+      "high": "146.50",
+      "low": "143.50",
+      "close": "144.00",
+      "volume_shares_scaled": "5454000"
+    }
+  ],
+  "corporate_actions": {
+    "records": [
+      {
+        "code": "8069",
+        "effective_date": "2026-07-20",
+        "cash_dividend": "5.88820682",
+        "previous_close": "181.50",
+        "official_reference": "175.61",
+        "theoretical_reference": "175.61179318",
+        "factor": "0.9675580891460055096418732782",
+        "formula": "(previous_close-cash_dividend)/previous_close",
+        "source_file": "ex_2026.json",
+        "source_sha256": "2fa46e2c5ad959714ff5b29d09c0d33857fcf0fcfa84c551a4fce504dda80efc",
+        "observed_at": "2026-10-16T04:31:49.951166+00:00",
+        "published_at": null,
+        "historical_publication_time": "NOT_VERIFIED",
+        "rule_version": "adjustment-0.1-cash-only-candidate"
+      }
+    ],
+    "coverage_status": "CASH_ONLY_VERIFIED_SAMPLE"
+  },
+  "as_of": "2026-09-30",
+  "calendar": {
+    "coverage_start": "2025-08-01",
+    "coverage_end": "2026-09-30",
+    "expected_dates": [
+      "2025-08-01",
+      "2025-08-04",
+      "2025-08-05",
+      "2025-08-06",
+      "2025-08-07",
+      "2025-08-08",
+      "2025-08-11",
+      "2025-08-12",
+      "2025-08-13",
+      "2025-08-14",
+      "2025-08-15",
+      "2025-08-18",
+      "2025-08-19",
+      "2025-08-20",
+      "2025-08-21",
+      "2025-08-22",
+      "2025-08-25",
+      "2025-08-26",
+      "2025-08-27",
+      "2025-08-28",
+      "2025-08-29",
+      "2025-09-01",
+      "2025-09-02",
+      "2025-09-03",
+      "2025-09-04",
+      "2025-09-05",
+      "2025-09-08",
+      "2025-09-09",
+      "2025-09-10",
+      "2025-09-11",
+      "2025-09-12",
+      "2025-09-15",
+      "2025-09-16",
+      "2025-09-17",
+      "2025-09-18",
+      "2025-09-19",
+      "2025-09-22",
+      "2025-09-23",
+      "2025-09-24",
+      "2025-09-25",
+      "2025-09-26",
+      "2025-09-30",
+      "2025-10-01",
+      "2025-10-02",
+      "2025-10-03",
+      "2025-10-07",
+      "2025-10-08",
+      "2025-10-09",
+      "2025-10-13",
+      "2025-10-14",
+      "2025-10-15",
+      "2025-10-16",
+      "2025-10-17",
+      "2025-10-20",
+      "2025-10-21",
+      "2025-10-22",
+      "2025-10-23",
+      "2025-10-27",
+      "2025-10-28",
+      "2025-10-29",
+      "2025-10-30",
+      "2025-10-31",
+      "2025-11-03",
+      "2025-11-04",
+      "2025-11-05",
+      "2025-11-06",
+      "2025-11-07",
+      "2025-11-10",
+      "2025-11-11",
+      "2025-11-12",
+      "2025-11-13",
+      "2025-11-14",
+      "2025-11-17",
+      "2025-11-18",
+      "2025-11-19",
+      "2025-11-20",
+      "2025-11-21",
+      "2025-11-24",
+      "2025-11-25",
+      "2025-11-26",
+      "2025-11-27",
+      "2025-11-28",
+      "2025-12-01",
+      "2025-12-02",
+      "2025-12-03",
+      "2025-12-04",
+      "2025-12-05",
+      "2025-12-08",
+      "2025-12-09",
+      "2025-12-10",
+      "2025-12-11",
+      "2025-12-12",
+      "2025-12-15",
+      "2025-12-16",
+      "2025-12-17",
+      "2025-12-18",
+      "2025-12-19",
+      "2025-12-22",
+      "2025-12-23",
+      "2025-12-24",
+      "2025-12-26",
+      "2025-12-29",
+      "2025-12-30",
+      "2025-12-31",
+      "2026-01-02",
+      "2026-01-05",
+      "2026-01-06",
+      "2026-01-07",
+      "2026-01-08",
+      "2026-01-09",
+      "2026-01-12",
+      "2026-01-13",
+      "2026-01-14",
+      "2026-01-15",
+      "2026-01-16",
+      "2026-01-19",
+      "2026-01-20",
+      "2026-01-21",
+      "2026-01-22",
+      "2026-01-23",
+      "2026-01-26",
+      "2026-01-27",
+      "2026-01-28",
+      "2026-01-29",
+      "2026-01-30",
+      "2026-02-02",
+      "2026-02-03",
+      "2026-02-04",
+      "2026-02-05",
+      "2026-02-06",
+      "2026-02-09",
+      "2026-02-10",
+      "2026-02-11",
+      "2026-02-23",
+      "2026-02-24",
+      "2026-02-25",
+      "2026-02-26",
+      "2026-03-02",
+      "2026-03-03",
+      "2026-03-04",
+      "2026-03-05",
+      "2026-03-06",
+      "2026-03-09",
+      "2026-03-10",
+      "2026-03-11",
+      "2026-03-12",
+      "2026-03-13",
+      "2026-03-16",
+      "2026-03-17",
+      "2026-03-18",
+      "2026-03-19",
+      "2026-03-20",
+      "2026-03-23",
+      "2026-03-24",
+      "2026-03-25",
+      "2026-03-26",
+      "2026-03-27",
+      "2026-03-30",
+      "2026-03-31",
+      "2026-04-01",
+      "2026-04-02",
+      "2026-04-07",
+      "2026-04-08",
+      "2026-04-09",
+      "2026-04-10",
+      "2026-04-13",
+      "2026-04-14",
+      "2026-04-15",
+      "2026-04-16",
+      "2026-04-17",
+      "2026-04-20",
+      "2026-04-21",
+      "2026-04-22",
+      "2026-04-23",
+      "2026-04-24",
+      "2026-04-27",
+      "2026-04-28",
+      "2026-04-29",
+      "2026-04-30",
+      "2026-05-04",
+      "2026-05-05",
+      "2026-05-06",
+      "2026-05-07",
+      "2026-05-08",
+      "2026-05-11",
+      "2026-05-12",
+      "2026-05-13",
+      "2026-05-14",
+      "2026-05-15",
+      "2026-05-18",
+      "2026-05-19",
+      "2026-05-20",
+      "2026-05-21",
+      "2026-05-22",
+      "2026-05-25",
+      "2026-05-26",
+      "2026-05-27",
+      "2026-05-28",
+      "2026-05-29",
+      "2026-06-01",
+      "2026-06-02",
+      "2026-06-03",
+      "2026-06-04",
+      "2026-06-05",
+      "2026-06-08",
+      "2026-06-09",
+      "2026-06-10",
+      "2026-06-11",
+      "2026-06-12",
+      "2026-06-15",
+      "2026-06-16",
+      "2026-06-17",
+      "2026-06-18",
+      "2026-06-22",
+      "2026-06-23",
+      "2026-06-24",
+      "2026-06-25",
+      "2026-06-26",
+      "2026-06-29",
+      "2026-06-30",
+      "2026-07-01",
+      "2026-07-02",
+      "2026-07-03",
+      "2026-07-06",
+      "2026-07-07",
+      "2026-07-08",
+      "2026-07-09",
+      "2026-07-13",
+      "2026-07-14",
+      "2026-07-15",
+      "2026-07-16",
+      "2026-07-17",
+      "2026-07-20",
+      "2026-07-21",
+      "2026-07-22",
+      "2026-07-23",
+      "2026-07-24",
+      "2026-07-27",
+      "2026-07-28",
+      "2026-07-29",
+      "2026-07-30",
+      "2026-07-31",
+      "2026-08-03",
+      "2026-08-04",
+      "2026-08-05",
+      "2026-08-06",
+      "2026-08-07",
+      "2026-08-10",
+      "2026-08-11",
+      "2026-08-12",
+      "2026-08-13",
+      "2026-08-14",
+      "2026-08-17",
+      "2026-08-18",
+      "2026-08-19",
+      "2026-08-20",
+      "2026-08-21",
+      "2026-08-24",
+      "2026-08-25",
+      "2026-08-26",
+      "2026-08-27",
+      "2026-08-28",
+      "2026-08-31",
+      "2026-09-01",
+      "2026-09-02",
+      "2026-09-03",
+      "2026-09-04",
+      "2026-09-07",
+      "2026-09-08",
+      "2026-09-09",
+      "2026-09-10",
+      "2026-09-11",
+      "2026-09-14",
+      "2026-09-15",
+      "2026-09-16",
+      "2026-09-17",
+      "2026-09-18",
+      "2026-09-21",
+      "2026-09-22",
+      "2026-09-23",
+      "2026-09-24",
+      "2026-09-29",
+      "2026-09-30"
+    ]
+  }
+}

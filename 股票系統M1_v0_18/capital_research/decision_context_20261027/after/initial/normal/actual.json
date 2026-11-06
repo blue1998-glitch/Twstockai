@@ -1,0 +1,88 @@
+{
+  "error": null,
+  "traceback": null,
+  "calls": {
+    "decide": 1,
+    "resume": 0,
+    "inner_decide": 1,
+    "bind_resume": 0,
+    "ledger_replay": 0,
+    "simulate": 0,
+    "replay_sequence": 0,
+    "save": 0
+  },
+  "caller_before": {
+    "prec": 28,
+    "rounding": "ROUND_HALF_EVEN",
+    "Emin": -999999,
+    "Emax": 999999,
+    "capitals": 1,
+    "clamp": 0,
+    "traps": {
+      "InvalidOperation": true,
+      "FloatOperation": false,
+      "DivisionByZero": true,
+      "Overflow": true,
+      "Underflow": false,
+      "Subnormal": false,
+      "Inexact": false,
+      "Rounded": false,
+      "Clamped": false
+    },
+    "flags": {
+      "InvalidOperation": false,
+      "FloatOperation": false,
+      "DivisionByZero": false,
+      "Overflow": false,
+      "Underflow": false,
+      "Subnormal": false,
+      "Inexact": false,
+      "Rounded": false,
+      "Clamped": false
+    }
+  },
+  "caller_after": {
+    "prec": 28,
+    "rounding": "ROUND_HALF_EVEN",
+    "Emin": -999999,
+    "Emax": 999999,
+    "capitals": 1,
+    "clamp": 0,
+    "traps": {
+      "InvalidOperation": true,
+      "FloatOperation": false,
+      "DivisionByZero": true,
+      "Overflow": true,
+      "Underflow": false,
+      "Subnormal": false,
+      "Inexact": false,
+      "Rounded": false,
+      "Clamped": false
+    },
+    "flags": {
+      "InvalidOperation": false,
+      "FloatOperation": false,
+      "DivisionByZero": false,
+      "Overflow": false,
+      "Underflow": false,
+      "Subnormal": false,
+      "Inexact": false,
+      "Rounded": false,
+      "Clamped": false
+    }
+  },
+  "input_id": "sha256:4a83c46010f4dc5f04caa230672105bb2c8e7000d54dce9ff221d8ca852f77cc",
+  "input_unchanged": true,
+  "caller_context_unchanged": true,
+  "source_version": {
+    "path": "capital_research/core.py",
+    "bytes": 23619,
+    "sha256": "53d5dd9fde3ca598da8732fdc6c2450bd1b9449f7b1de1b1179b2a7375a60d36"
+  },
+  "actual": {
+    "kind": "EXACT_SAVED_DECISION_AND_METADATA_PROJECTION",
+    "case": "initial",
+    "id": "sha256:c7fd70bdb4bb564c3f7709d1a1eafa8631a89076b394ab02e5cdffcee9bd23c7"
+  },
+  "equal_original": true
+}

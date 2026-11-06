@@ -1,0 +1,71 @@
+{
+  "schema": "capital-lifecycle-comparison/0.1",
+  "status": "REFUSED",
+  "comparable": false,
+  "refusals": [
+    {
+      "reason": "COMMON_CONDITIONS_MISMATCH",
+      "path": "/identities"
+    }
+  ],
+  "differences": [
+    {
+      "reference_label": "可買",
+      "label": "漲停不可買",
+      "path": "/market/tape/5/market_state",
+      "left": "OPEN",
+      "right": "LIMIT_UP_NO_BUY"
+    }
+  ],
+  "total_mismatches": 1,
+  "diagnostic_limit": 64,
+  "details_truncated": false,
+  "provenance": [
+    {
+      "document_id": "sha256:d23bea763a8779b1f0b0a040507c21a18f6c30677de9835a443fca56e8df7f3e",
+      "source_schema": "capital-conditional-quantity-review/0.1",
+      "source_status": "REPLAYED_ACCEPTED_REVIEW",
+      "origin_ledger_input_id": "sha256:97d1381c1afaa87d1632acd5da0df6b4fe6c8dabd46930c0a0075d1d2adf72e8",
+      "execution_result_id": "sha256:0ebccfd16cded4301b2addc9e2e01f4a0bbd140bb6eb562087b974630511cff4",
+      "saved_job_ids": [
+        "sha256:2d80fa0ba630de9e78ddb459babe875e4d7ab45ba51ef7b1835c923d214f2820"
+      ],
+      "identity_ids": {
+        "opening": "sha256:9a2a77d18839f96e7fa1b6eb451152ef9d0ccac5e1b591385a5d26ff8e090696",
+        "window": "sha256:ea08489d8cb4e5addbd9c1d0a5a747a82180915c26dd3facdab6469dec4240fc",
+        "environment": "sha256:2bc87ac45716f332ff7ead3ce46c12abba2d126da7f0c0816d9edec63386299d",
+        "market": "sha256:c81690615da5b86d50ff9e20f09299e99b814b8c8a2f81bc63ef9f20d21e2385"
+      },
+      "label": "可買"
+    },
+    {
+      "document_id": "sha256:f26fd8c5a745e0ef0cd776fc3d7406034ecadb61c58a9b320c2e1b9470478393",
+      "source_schema": "capital-conditional-quantity-review/0.1",
+      "source_status": "REPLAYED_ACCEPTED_REVIEW",
+      "origin_ledger_input_id": "sha256:97d1381c1afaa87d1632acd5da0df6b4fe6c8dabd46930c0a0075d1d2adf72e8",
+      "execution_result_id": "sha256:d0e2bc3b7c01e61423cc329506d214286c7630dd6160d2fbdc1b8ca8a0bf4e4e",
+      "saved_job_ids": [
+        "sha256:19b1a7f6ec0e76e594fed5dfa3c2dfda9e1f8070acaa9b51e34fbde2e6f2b76a"
+      ],
+      "identity_ids": {
+        "opening": "sha256:9a2a77d18839f96e7fa1b6eb451152ef9d0ccac5e1b591385a5d26ff8e090696",
+        "window": "sha256:ea08489d8cb4e5addbd9c1d0a5a747a82180915c26dd3facdab6469dec4240fc",
+        "environment": "sha256:2bc87ac45716f332ff7ead3ce46c12abba2d126da7f0c0816d9edec63386299d",
+        "market": "sha256:c202e92b53b2a4ccc064986627577b12afe0ea511125541dc046b21ac136a1dc"
+      },
+      "label": "漲停不可買"
+    }
+  ],
+  "common_identity_ids": null,
+  "columns": [],
+  "comparison_scope": "SAVED_SYNTHETIC_EPISODE_AND_DECLARED_MARKET_PATH_NOT_POLICY_PERFORMANCE",
+  "job_to_execution_causality": "NOT_REPLAYED_OR_AUTHENTICATED",
+  "ranking": null,
+  "selected_label": null,
+  "data_qualified": false,
+  "execution_model_qualified": false,
+  "historical_signal_eligible": false,
+  "policy_authorized": false,
+  "live_execution_authorized": false,
+  "primary_pressure_id": null
+}

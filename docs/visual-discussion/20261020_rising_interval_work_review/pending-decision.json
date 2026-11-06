@@ -1,0 +1,32 @@
+{
+  "status": "USER_CONFIRMED_CASE_AND_CONCEPT_DO_NOT_REASK",
+  "answer_received": true,
+  "code": "2884",
+  "as_of": "2026-10-16",
+  "question": "圖中9月至10月這段反覆，是否已足以辨認成一個整理區間，並把10/15開始視為向上離開；還是只能稱為上漲中回檔、尚不足以成區間？",
+  "research_window": "2026-09-17..2026-10-14 selected for discussion only; not approved exact interval endpoints",
+  "assistant_candidate": "整理區間後向上離開，僅工作假說；不宣告正式突破或行動資格",
+  "why_material": "Adds a new independent upward case for positive interval recognition, rather than repeating rejected grouping shortcuts on1101. Whether an interval exists changes the structure label.",
+  "not_asked": [
+    "exact dates or price bounds",
+    "weights or thresholds",
+    "buy or sell",
+    "old ABC or shared-source-role question"
+  ],
+  "if_confirmed_scope": "Only qualitative recognition of this real rising-case interval and upward departure; no universal algorithm, exact formal bounds, lifecycle, current high confirmation or trading eligibility.",
+  "resolved_at": "2026-10-20T21:07:05+08:00",
+  "user_quote": "既然你辨認的出來就可以當成一個整理區間，而且他的確是上漲中短暫回來整理後來又再度上漲",
+  "confirmed_case": {
+    "recognizable_consolidation_interval": true,
+    "within_rising_price_process": true,
+    "temporary_pullback_and_consolidation": true,
+    "subsequent_rise_observed": true,
+    "description_zh": "上漲中的短暫整理區間，整理後再度上漲"
+  },
+  "question_design_correction": {
+    "previous_binary": "整理區間後向上離開 versus 上漲中回檔尚不足成區間",
+    "status": "FALSE_EXCLUSION_CORRECTED_BY_USER",
+    "replacement": "Record interval form and surrounding price process separately; an upward-context pullback does not negate a recognizable consolidation interval."
+  },
+  "resolved_by": "../20261020_rising_interval_user_decision/user-decision.json"
+}

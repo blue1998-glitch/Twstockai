@@ -1,0 +1,4379 @@
+[
+  {
+    "id": "no-gap",
+    "input": {
+      "schema_version": "graph-recognition-input/0.1",
+      "context": {
+        "code": "SYNTHETIC_F01_ONLY",
+        "source_id": "synthetic-f01",
+        "price_basis_id": "synthetic-raw",
+        "price_mode": "RAW_CANDIDATE",
+        "volume_unit": "SHARES_REPORTED",
+        "corporate_action_comparability": "UNVERIFIED"
+      },
+      "bars": [
+        {
+          "date": "2020-01-01",
+          "open": "100",
+          "high": "101",
+          "low": "99",
+          "close": "100",
+          "volume_shares_scaled": "1000"
+        },
+        {
+          "date": "2020-01-02",
+          "open": "104",
+          "high": "105",
+          "low": "103",
+          "close": "104",
+          "volume_shares_scaled": "1007"
+        },
+        {
+          "date": "2020-01-03",
+          "open": "110",
+          "high": "111",
+          "low": "109",
+          "close": "110",
+          "volume_shares_scaled": "1014"
+        },
+        {
+          "date": "2020-01-04",
+          "open": "108",
+          "high": "109",
+          "low": "107",
+          "close": "108",
+          "volume_shares_scaled": "1021"
+        },
+        {
+          "date": "2020-01-05",
+          "open": "101",
+          "high": "102",
+          "low": "100",
+          "close": "101",
+          "volume_shares_scaled": "1028"
+        },
+        {
+          "date": "2020-01-06",
+          "open": "100",
+          "high": "101",
+          "low": "99",
+          "close": "100",
+          "volume_shares_scaled": "1035"
+        },
+        {
+          "date": "2020-01-07",
+          "open": "104",
+          "high": "105",
+          "low": "103",
+          "close": "104",
+          "volume_shares_scaled": "1042"
+        },
+        {
+          "date": "2020-01-08",
+          "open": "109",
+          "high": "110",
+          "low": "108",
+          "close": "109",
+          "volume_shares_scaled": "1049"
+        },
+        {
+          "date": "2020-01-09",
+          "open": "106",
+          "high": "107",
+          "low": "105",
+          "close": "106",
+          "volume_shares_scaled": "1056"
+        },
+        {
+          "date": "2020-01-10",
+          "open": "101",
+          "high": "102",
+          "low": "100",
+          "close": "101",
+          "volume_shares_scaled": "1063"
+        },
+        {
+          "date": "2020-01-11",
+          "open": "99",
+          "high": "100",
+          "low": "98",
+          "close": "99",
+          "volume_shares_scaled": "1070"
+        },
+        {
+          "date": "2020-01-12",
+          "open": "103",
+          "high": "104",
+          "low": "102",
+          "close": "103",
+          "volume_shares_scaled": "1077"
+        },
+        {
+          "date": "2020-01-13",
+          "open": "111",
+          "high": "112",
+          "low": "110",
+          "close": "111",
+          "volume_shares_scaled": "1084"
+        },
+        {
+          "date": "2020-01-14",
+          "open": "107",
+          "high": "108",
+          "low": "106",
+          "close": "107",
+          "volume_shares_scaled": "1091"
+        },
+        {
+          "date": "2020-01-15",
+          "open": "101",
+          "high": "102",
+          "low": "100",
+          "close": "101",
+          "volume_shares_scaled": "1098"
+        },
+        {
+          "date": "2020-01-16",
+          "open": "100",
+          "high": "101",
+          "low": "99",
+          "close": "100",
+          "volume_shares_scaled": "1105"
+        },
+        {
+          "date": "2020-01-17",
+          "open": "105",
+          "high": "106",
+          "low": "104",
+          "close": "105",
+          "volume_shares_scaled": "1112"
+        },
+        {
+          "date": "2020-01-18",
+          "open": "110",
+          "high": "111",
+          "low": "109",
+          "close": "110",
+          "volume_shares_scaled": "1119"
+        },
+        {
+          "date": "2020-01-19",
+          "open": "104",
+          "high": "105",
+          "low": "103",
+          "close": "104",
+          "volume_shares_scaled": "1126"
+        },
+        {
+          "date": "2020-01-20",
+          "open": "101",
+          "high": "102",
+          "low": "100",
+          "close": "101",
+          "volume_shares_scaled": "1133"
+        },
+        {
+          "date": "2020-01-21",
+          "open": "99",
+          "high": "100",
+          "low": "98",
+          "close": "99",
+          "volume_shares_scaled": "1140"
+        },
+        {
+          "date": "2020-01-22",
+          "open": "104",
+          "high": "105",
+          "low": "103",
+          "close": "104",
+          "volume_shares_scaled": "1147"
+        },
+        {
+          "date": "2020-01-23",
+          "open": "110",
+          "high": "111",
+          "low": "109",
+          "close": "110",
+          "volume_shares_scaled": "1154"
+        },
+        {
+          "date": "2020-01-24",
+          "open": "106",
+          "high": "107",
+          "low": "105",
+          "close": "106",
+          "volume_shares_scaled": "1161"
+        },
+        {
+          "date": "2020-01-25",
+          "open": "100",
+          "high": "101",
+          "low": "99",
+          "close": "100",
+          "volume_shares_scaled": "1168"
+        },
+        {
+          "date": "2020-01-26",
+          "open": "104",
+          "high": "105",
+          "low": "103",
+          "close": "104",
+          "volume_shares_scaled": "1175"
+        },
+        {
+          "date": "2020-01-27",
+          "open": "110",
+          "high": "111",
+          "low": "109",
+          "close": "110",
+          "volume_shares_scaled": "1182"
+        },
+        {
+          "date": "2020-01-28",
+          "open": "105",
+          "high": "106",
+          "low": "104",
+          "close": "105",
+          "volume_shares_scaled": "1189"
+        },
+        {
+          "date": "2020-01-29",
+          "open": "100",
+          "high": "101",
+          "low": "99",
+          "close": "100",
+          "volume_shares_scaled": "1196"
+        },
+        {
+          "date": "2020-01-30",
+          "open": "100",
+          "high": "101",
+          "low": "99",
+          "close": "100",
+          "volume_shares_scaled": "1203"
+        },
+        {
+          "date": "2020-01-31",
+          "open": "104",
+          "high": "105",
+          "low": "103",
+          "close": "104",
+          "volume_shares_scaled": "1210"
+        },
+        {
+          "date": "2020-02-01",
+          "open": "110",
+          "high": "111",
+          "low": "109",
+          "close": "110",
+          "volume_shares_scaled": "1217"
+        },
+        {
+          "date": "2020-02-02",
+          "open": "108",
+          "high": "109",
+          "low": "107",
+          "close": "108",
+          "volume_shares_scaled": "1224"
+        },
+        {
+          "date": "2020-02-03",
+          "open": "101",
+          "high": "102",
+          "low": "100",
+          "close": "101",
+          "volume_shares_scaled": "1231"
+        },
+        {
+          "date": "2020-02-04",
+          "open": "100",
+          "high": "101",
+          "low": "99",
+          "close": "100",
+          "volume_shares_scaled": "1238"
+        },
+        {
+          "date": "2020-02-05",
+          "open": "104",
+          "high": "105",
+          "low": "103",
+          "close": "104",
+          "volume_shares_scaled": "1245"
+        },
+        {
+          "date": "2020-02-06",
+          "open": "109",
+          "high": "110",
+          "low": "108",
+          "close": "109",
+          "volume_shares_scaled": "1252"
+        },
+        {
+          "date": "2020-02-07",
+          "open": "106",
+          "high": "107",
+          "low": "105",
+          "close": "106",
+          "volume_shares_scaled": "1259"
+        },
+        {
+          "date": "2020-02-08",
+          "open": "101",
+          "high": "102",
+          "low": "100",
+          "close": "101",
+          "volume_shares_scaled": "1266"
+        },
+        {
+          "date": "2020-02-09",
+          "open": "99",
+          "high": "100",
+          "low": "98",
+          "close": "99",
+          "volume_shares_scaled": "1273"
+        },
+        {
+          "date": "2020-02-10",
+          "open": "103",
+          "high": "104",
+          "low": "102",
+          "close": "103",
+          "volume_shares_scaled": "1280"
+        },
+        {
+          "date": "2020-02-11",
+          "open": "111",
+          "high": "112",
+          "low": "110",
+          "close": "111",
+          "volume_shares_scaled": "1287"
+        },
+        {
+          "date": "2020-02-12",
+          "open": "107",
+          "high": "108",
+          "low": "106",
+          "close": "107",
+          "volume_shares_scaled": "1294"
+        },
+        {
+          "date": "2020-02-13",
+          "open": "101",
+          "high": "102",
+          "low": "100",
+          "close": "101",
+          "volume_shares_scaled": "1301"
+        },
+        {
+          "date": "2020-02-14",
+          "open": "100",
+          "high": "101",
+          "low": "99",
+          "close": "100",
+          "volume_shares_scaled": "1308"
+        },
+        {
+          "date": "2020-02-15",
+          "open": "105",
+          "high": "106",
+          "low": "104",
+          "close": "105",
+          "volume_shares_scaled": "1315"
+        },
+        {
+          "date": "2020-02-16",
+          "open": "110",
+          "high": "111",
+          "low": "109",
+          "close": "110",
+          "volume_shares_scaled": "1322"
+        },
+        {
+          "date": "2020-02-17",
+          "open": "104",
+          "high": "105",
+          "low": "103",
+          "close": "104",
+          "volume_shares_scaled": "1329"
+        },
+        {
+          "date": "2020-02-18",
+          "open": "101",
+          "high": "102",
+          "low": "100",
+          "close": "101",
+          "volume_shares_scaled": "1336"
+        },
+        {
+          "date": "2020-02-19",
+          "open": "99",
+          "high": "100",
+          "low": "98",
+          "close": "99",
+          "volume_shares_scaled": "1343"
+        },
+        {
+          "date": "2020-02-20",
+          "open": "104",
+          "high": "105",
+          "low": "103",
+          "close": "104",
+          "volume_shares_scaled": "1350"
+        },
+        {
+          "date": "2020-02-21",
+          "open": "110",
+          "high": "111",
+          "low": "109",
+          "close": "110",
+          "volume_shares_scaled": "1357"
+        },
+        {
+          "date": "2020-02-22",
+          "open": "106",
+          "high": "107",
+          "low": "105",
+          "close": "106",
+          "volume_shares_scaled": "1364"
+        },
+        {
+          "date": "2020-02-23",
+          "open": "100",
+          "high": "101",
+          "low": "99",
+          "close": "100",
+          "volume_shares_scaled": "1371"
+        },
+        {
+          "date": "2020-02-24",
+          "open": "104",
+          "high": "105",
+          "low": "103",
+          "close": "104",
+          "volume_shares_scaled": "1378"
+        },
+        {
+          "date": "2020-02-25",
+          "open": "110",
+          "high": "111",
+          "low": "109",
+          "close": "110",
+          "volume_shares_scaled": "1385"
+        },
+        {
+          "date": "2020-02-26",
+          "open": "105",
+          "high": "106",
+          "low": "104",
+          "close": "105",
+          "volume_shares_scaled": "1392"
+        },
+        {
+          "date": "2020-02-27",
+          "open": "100",
+          "high": "101",
+          "low": "99",
+          "close": "100",
+          "volume_shares_scaled": "1399"
+        },
+        {
+          "date": "2020-02-28",
+          "open": "100",
+          "high": "101",
+          "low": "99",
+          "close": "100",
+          "volume_shares_scaled": "1406"
+        },
+        {
+          "date": "2020-02-29",
+          "open": "104",
+          "high": "105",
+          "low": "103",
+          "close": "104",
+          "volume_shares_scaled": "1413"
+        },
+        {
+          "date": "2020-03-01",
+          "open": "110",
+          "high": "111",
+          "low": "109",
+          "close": "110",
+          "volume_shares_scaled": "1420"
+        },
+        {
+          "date": "2020-03-02",
+          "open": "108",
+          "high": "109",
+          "low": "107",
+          "close": "108",
+          "volume_shares_scaled": "1427"
+        },
+        {
+          "date": "2020-03-03",
+          "open": "101",
+          "high": "102",
+          "low": "100",
+          "close": "101",
+          "volume_shares_scaled": "1434"
+        },
+        {
+          "date": "2020-03-04",
+          "open": "100",
+          "high": "101",
+          "low": "99",
+          "close": "100",
+          "volume_shares_scaled": "1441"
+        },
+        {
+          "date": "2020-03-05",
+          "open": "104",
+          "high": "105",
+          "low": "103",
+          "close": "104",
+          "volume_shares_scaled": "1448"
+        },
+        {
+          "date": "2020-03-06",
+          "open": "109",
+          "high": "110",
+          "low": "108",
+          "close": "109",
+          "volume_shares_scaled": "1455"
+        },
+        {
+          "date": "2020-03-07",
+          "open": "106",
+          "high": "107",
+          "low": "105",
+          "close": "106",
+          "volume_shares_scaled": "1462"
+        },
+        {
+          "date": "2020-03-08",
+          "open": "101",
+          "high": "102",
+          "low": "100",
+          "close": "101",
+          "volume_shares_scaled": "1469"
+        },
+        {
+          "date": "2020-03-09",
+          "open": "99",
+          "high": "100",
+          "low": "98",
+          "close": "99",
+          "volume_shares_scaled": "1476"
+        },
+        {
+          "date": "2020-03-10",
+          "open": "103",
+          "high": "104",
+          "low": "102",
+          "close": "103",
+          "volume_shares_scaled": "1483"
+        },
+        {
+          "date": "2020-03-11",
+          "open": "111",
+          "high": "112",
+          "low": "110",
+          "close": "111",
+          "volume_shares_scaled": "1490"
+        },
+        {
+          "date": "2020-03-12",
+          "open": "107",
+          "high": "108",
+          "low": "106",
+          "close": "107",
+          "volume_shares_scaled": "1497"
+        },
+        {
+          "date": "2020-03-13",
+          "open": "101",
+          "high": "102",
+          "low": "100",
+          "close": "101",
+          "volume_shares_scaled": "1504"
+        },
+        {
+          "date": "2020-03-14",
+          "open": "100",
+          "high": "101",
+          "low": "99",
+          "close": "100",
+          "volume_shares_scaled": "1511"
+        },
+        {
+          "date": "2020-03-15",
+          "open": "105",
+          "high": "106",
+          "low": "104",
+          "close": "105",
+          "volume_shares_scaled": "1518"
+        },
+        {
+          "date": "2020-03-16",
+          "open": "110",
+          "high": "111",
+          "low": "109",
+          "close": "110",
+          "volume_shares_scaled": "1525"
+        },
+        {
+          "date": "2020-03-17",
+          "open": "104",
+          "high": "105",
+          "low": "103",
+          "close": "104",
+          "volume_shares_scaled": "1532"
+        },
+        {
+          "date": "2020-03-18",
+          "open": "101",
+          "high": "102",
+          "low": "100",
+          "close": "101",
+          "volume_shares_scaled": "1539"
+        },
+        {
+          "date": "2020-03-19",
+          "open": "99",
+          "high": "100",
+          "low": "98",
+          "close": "99",
+          "volume_shares_scaled": "1546"
+        },
+        {
+          "date": "2020-03-20",
+          "open": "104",
+          "high": "105",
+          "low": "103",
+          "close": "104",
+          "volume_shares_scaled": "1553"
+        },
+        {
+          "date": "2020-03-21",
+          "open": "110",
+          "high": "111",
+          "low": "109",
+          "close": "110",
+          "volume_shares_scaled": "1560"
+        },
+        {
+          "date": "2020-03-22",
+          "open": "106",
+          "high": "107",
+          "low": "105",
+          "close": "106",
+          "volume_shares_scaled": "1567"
+        },
+        {
+          "date": "2020-03-23",
+          "open": "100",
+          "high": "101",
+          "low": "99",
+          "close": "100",
+          "volume_shares_scaled": "1574"
+        },
+        {
+          "date": "2020-03-24",
+          "open": "104",
+          "high": "105",
+          "low": "103",
+          "close": "104",
+          "volume_shares_scaled": "1581"
+        },
+        {
+          "date": "2020-03-25",
+          "open": "110",
+          "high": "111",
+          "low": "109",
+          "close": "110",
+          "volume_shares_scaled": "1588"
+        },
+        {
+          "date": "2020-03-26",
+          "open": "105",
+          "high": "106",
+          "low": "104",
+          "close": "105",
+          "volume_shares_scaled": "1595"
+        },
+        {
+          "date": "2020-03-27",
+          "open": "100",
+          "high": "101",
+          "low": "99",
+          "close": "100",
+          "volume_shares_scaled": "1602"
+        }
+      ],
+      "basis_break_dates": []
+    },
+    "as_of": "2020-03-27",
+    "expected_stopped": false
+  },
+  {
+    "id": "basis-break",
+    "input": {
+      "schema_version": "graph-recognition-input/0.1",
+      "context": {
+        "code": "SYNTHETIC_F01_ONLY",
+        "source_id": "synthetic-f01",
+        "price_basis_id": "synthetic-raw",
+        "price_mode": "RAW_CANDIDATE",
+        "volume_unit": "SHARES_REPORTED",
+        "corporate_action_comparability": "UNVERIFIED"
+      },
+      "bars": [
+        {
+          "date": "2020-01-01",
+          "open": "100",
+          "high": "101",
+          "low": "99",
+          "close": "100",
+          "volume_shares_scaled": "1000"
+        },
+        {
+          "date": "2020-01-02",
+          "open": "104",
+          "high": "105",
+          "low": "103",
+          "close": "104",
+          "volume_shares_scaled": "1007"
+        },
+        {
+          "date": "2020-01-03",
+          "open": "110",
+          "high": "111",
+          "low": "109",
+          "close": "110",
+          "volume_shares_scaled": "1014"
+        },
+        {
+          "date": "2020-01-04",
+          "open": "108",
+          "high": "109",
+          "low": "107",
+          "close": "108",
+          "volume_shares_scaled": "1021"
+        },
+        {
+          "date": "2020-01-05",
+          "open": "101",
+          "high": "102",
+          "low": "100",
+          "close": "101",
+          "volume_shares_scaled": "1028"
+        },
+        {
+          "date": "2020-01-06",
+          "open": "100",
+          "high": "101",
+          "low": "99",
+          "close": "100",
+          "volume_shares_scaled": "1035"
+        },
+        {
+          "date": "2020-01-07",
+          "open": "104",
+          "high": "105",
+          "low": "103",
+          "close": "104",
+          "volume_shares_scaled": "1042"
+        },
+        {
+          "date": "2020-01-08",
+          "open": "109",
+          "high": "110",
+          "low": "108",
+          "close": "109",
+          "volume_shares_scaled": "1049"
+        },
+        {
+          "date": "2020-01-09",
+          "open": "106",
+          "high": "107",
+          "low": "105",
+          "close": "106",
+          "volume_shares_scaled": "1056"
+        },
+        {
+          "date": "2020-01-10",
+          "open": "101",
+          "high": "102",
+          "low": "100",
+          "close": "101",
+          "volume_shares_scaled": "1063"
+        },
+        {
+          "date": "2020-01-11",
+          "open": "99",
+          "high": "100",
+          "low": "98",
+          "close": "99",
+          "volume_shares_scaled": "1070"
+        },
+        {
+          "date": "2020-01-12",
+          "open": "103",
+          "high": "104",
+          "low": "102",
+          "close": "103",
+          "volume_shares_scaled": "1077"
+        },
+        {
+          "date": "2020-01-13",
+          "open": "111",
+          "high": "112",
+          "low": "110",
+          "close": "111",
+          "volume_shares_scaled": "1084"
+        },
+        {
+          "date": "2020-01-14",
+          "open": "107",
+          "high": "108",
+          "low": "106",
+          "close": "107",
+          "volume_shares_scaled": "1091"
+        },
+        {
+          "date": "2020-01-15",
+          "open": "101",
+          "high": "102",
+          "low": "100",
+          "close": "101",
+          "volume_shares_scaled": "1098"
+        },
+        {
+          "date": "2020-01-16",
+          "open": "100",
+          "high": "101",
+          "low": "99",
+          "close": "100",
+          "volume_shares_scaled": "1105"
+        },
+        {
+          "date": "2020-01-17",
+          "open": "105",
+          "high": "106",
+          "low": "104",
+          "close": "105",
+          "volume_shares_scaled": "1112"
+        },
+        {
+          "date": "2020-01-18",
+          "open": "110",
+          "high": "111",
+          "low": "109",
+          "close": "110",
+          "volume_shares_scaled": "1119"
+        },
+        {
+          "date": "2020-01-19",
+          "open": "104",
+          "high": "105",
+          "low": "103",
+          "close": "104",
+          "volume_shares_scaled": "1126"
+        },
+        {
+          "date": "2020-01-20",
+          "open": "101",
+          "high": "102",
+          "low": "100",
+          "close": "101",
+          "volume_shares_scaled": "1133"
+        },
+        {
+          "date": "2020-01-21",
+          "open": "99",
+          "high": "100",
+          "low": "98",
+          "close": "99",
+          "volume_shares_scaled": "1140"
+        },
+        {
+          "date": "2020-01-22",
+          "open": "104",
+          "high": "105",
+          "low": "103",
+          "close": "104",
+          "volume_shares_scaled": "1147"
+        },
+        {
+          "date": "2020-01-23",
+          "open": "110",
+          "high": "111",
+          "low": "109",
+          "close": "110",
+          "volume_shares_scaled": "1154"
+        },
+        {
+          "date": "2020-01-24",
+          "open": "106",
+          "high": "107",
+          "low": "105",
+          "close": "106",
+          "volume_shares_scaled": "1161"
+        },
+        {
+          "date": "2020-01-25",
+          "open": "100",
+          "high": "101",
+          "low": "99",
+          "close": "100",
+          "volume_shares_scaled": "1168"
+        },
+        {
+          "date": "2020-01-26",
+          "open": "104",
+          "high": "105",
+          "low": "103",
+          "close": "104",
+          "volume_shares_scaled": "1175"
+        },
+        {
+          "date": "2020-01-27",
+          "open": "110",
+          "high": "111",
+          "low": "109",
+          "close": "110",
+          "volume_shares_scaled": "1182"
+        },
+        {
+          "date": "2020-01-28",
+          "open": "105",
+          "high": "106",
+          "low": "104",
+          "close": "105",
+          "volume_shares_scaled": "1189"
+        },
+        {
+          "date": "2020-01-29",
+          "open": "100",
+          "high": "101",
+          "low": "99",
+          "close": "100",
+          "volume_shares_scaled": "1196"
+        },
+        {
+          "date": "2020-01-30",
+          "open": "100",
+          "high": "101",
+          "low": "99",
+          "close": "100",
+          "volume_shares_scaled": "1203"
+        },
+        {
+          "date": "2020-01-31",
+          "open": "104",
+          "high": "105",
+          "low": "103",
+          "close": "104",
+          "volume_shares_scaled": "1210"
+        },
+        {
+          "date": "2020-02-01",
+          "open": "110",
+          "high": "111",
+          "low": "109",
+          "close": "110",
+          "volume_shares_scaled": "1217"
+        },
+        {
+          "date": "2020-02-02",
+          "open": "108",
+          "high": "109",
+          "low": "107",
+          "close": "108",
+          "volume_shares_scaled": "1224"
+        },
+        {
+          "date": "2020-02-03",
+          "open": "101",
+          "high": "102",
+          "low": "100",
+          "close": "101",
+          "volume_shares_scaled": "1231"
+        },
+        {
+          "date": "2020-02-04",
+          "open": "100",
+          "high": "101",
+          "low": "99",
+          "close": "100",
+          "volume_shares_scaled": "1238"
+        },
+        {
+          "date": "2020-02-05",
+          "open": "104",
+          "high": "105",
+          "low": "103",
+          "close": "104",
+          "volume_shares_scaled": "1245"
+        },
+        {
+          "date": "2020-02-06",
+          "open": "109",
+          "high": "110",
+          "low": "108",
+          "close": "109",
+          "volume_shares_scaled": "1252"
+        },
+        {
+          "date": "2020-02-07",
+          "open": "106",
+          "high": "107",
+          "low": "105",
+          "close": "106",
+          "volume_shares_scaled": "1259"
+        },
+        {
+          "date": "2020-02-08",
+          "open": "101",
+          "high": "102",
+          "low": "100",
+          "close": "101",
+          "volume_shares_scaled": "1266"
+        },
+        {
+          "date": "2020-02-09",
+          "open": "99",
+          "high": "100",
+          "low": "98",
+          "close": "99",
+          "volume_shares_scaled": "1273"
+        },
+        {
+          "date": "2020-02-10",
+          "open": "103",
+          "high": "104",
+          "low": "102",
+          "close": "103",
+          "volume_shares_scaled": "1280"
+        },
+        {
+          "date": "2020-02-11",
+          "open": "111",
+          "high": "112",
+          "low": "110",
+          "close": "111",
+          "volume_shares_scaled": "1287"
+        },
+        {
+          "date": "2020-02-12",
+          "open": "107",
+          "high": "108",
+          "low": "106",
+          "close": "107",
+          "volume_shares_scaled": "1294"
+        },
+        {
+          "date": "2020-02-13",
+          "open": "101",
+          "high": "102",
+          "low": "100",
+          "close": "101",
+          "volume_shares_scaled": "1301"
+        },
+        {
+          "date": "2020-02-14",
+          "open": "100",
+          "high": "101",
+          "low": "99",
+          "close": "100",
+          "volume_shares_scaled": "1308"
+        },
+        {
+          "date": "2020-02-15",
+          "open": "105",
+          "high": "106",
+          "low": "104",
+          "close": "105",
+          "volume_shares_scaled": "1315"
+        },
+        {
+          "date": "2020-02-16",
+          "open": "110",
+          "high": "111",
+          "low": "109",
+          "close": "110",
+          "volume_shares_scaled": "1322"
+        },
+        {
+          "date": "2020-02-17",
+          "open": "104",
+          "high": "105",
+          "low": "103",
+          "close": "104",
+          "volume_shares_scaled": "1329"
+        },
+        {
+          "date": "2020-02-18",
+          "open": "101",
+          "high": "102",
+          "low": "100",
+          "close": "101",
+          "volume_shares_scaled": "1336"
+        },
+        {
+          "date": "2020-02-19",
+          "open": "99",
+          "high": "100",
+          "low": "98",
+          "close": "99",
+          "volume_shares_scaled": "1343"
+        },
+        {
+          "date": "2020-02-20",
+          "open": "104",
+          "high": "105",
+          "low": "103",
+          "close": "104",
+          "volume_shares_scaled": "1350"
+        },
+        {
+          "date": "2020-02-21",
+          "open": "110",
+          "high": "111",
+          "low": "109",
+          "close": "110",
+          "volume_shares_scaled": "1357"
+        },
+        {
+          "date": "2020-02-22",
+          "open": "106",
+          "high": "107",
+          "low": "105",
+          "close": "106",
+          "volume_shares_scaled": "1364"
+        },
+        {
+          "date": "2020-02-23",
+          "open": "100",
+          "high": "101",
+          "low": "99",
+          "close": "100",
+          "volume_shares_scaled": "1371"
+        },
+        {
+          "date": "2020-02-24",
+          "open": "104",
+          "high": "105",
+          "low": "103",
+          "close": "104",
+          "volume_shares_scaled": "1378"
+        },
+        {
+          "date": "2020-02-25",
+          "open": "110",
+          "high": "111",
+          "low": "109",
+          "close": "110",
+          "volume_shares_scaled": "1385"
+        },
+        {
+          "date": "2020-02-26",
+          "open": "105",
+          "high": "106",
+          "low": "104",
+          "close": "105",
+          "volume_shares_scaled": "1392"
+        },
+        {
+          "date": "2020-02-27",
+          "open": "100",
+          "high": "101",
+          "low": "99",
+          "close": "100",
+          "volume_shares_scaled": "1399"
+        },
+        {
+          "date": "2020-02-28",
+          "open": "100",
+          "high": "101",
+          "low": "99",
+          "close": "100",
+          "volume_shares_scaled": "1406"
+        },
+        {
+          "date": "2020-02-29",
+          "open": "104",
+          "high": "105",
+          "low": "103",
+          "close": "104",
+          "volume_shares_scaled": "1413"
+        },
+        {
+          "date": "2020-03-01",
+          "open": "110",
+          "high": "111",
+          "low": "109",
+          "close": "110",
+          "volume_shares_scaled": "1420"
+        },
+        {
+          "date": "2020-03-02",
+          "open": "108",
+          "high": "109",
+          "low": "107",
+          "close": "108",
+          "volume_shares_scaled": "1427"
+        },
+        {
+          "date": "2020-03-03",
+          "open": "101",
+          "high": "102",
+          "low": "100",
+          "close": "101",
+          "volume_shares_scaled": "1434"
+        },
+        {
+          "date": "2020-03-04",
+          "open": "100",
+          "high": "101",
+          "low": "99",
+          "close": "100",
+          "volume_shares_scaled": "1441"
+        },
+        {
+          "date": "2020-03-05",
+          "open": "104",
+          "high": "105",
+          "low": "103",
+          "close": "104",
+          "volume_shares_scaled": "1448"
+        },
+        {
+          "date": "2020-03-06",
+          "open": "109",
+          "high": "110",
+          "low": "108",
+          "close": "109",
+          "volume_shares_scaled": "1455"
+        },
+        {
+          "date": "2020-03-07",
+          "open": "106",
+          "high": "107",
+          "low": "105",
+          "close": "106",
+          "volume_shares_scaled": "1462"
+        },
+        {
+          "date": "2020-03-08",
+          "open": "101",
+          "high": "102",
+          "low": "100",
+          "close": "101",
+          "volume_shares_scaled": "1469"
+        },
+        {
+          "date": "2020-03-09",
+          "open": "99",
+          "high": "100",
+          "low": "98",
+          "close": "99",
+          "volume_shares_scaled": "1476"
+        },
+        {
+          "date": "2020-03-10",
+          "open": "103",
+          "high": "104",
+          "low": "102",
+          "close": "103",
+          "volume_shares_scaled": "1483"
+        },
+        {
+          "date": "2020-03-11",
+          "open": "111",
+          "high": "112",
+          "low": "110",
+          "close": "111",
+          "volume_shares_scaled": "1490"
+        },
+        {
+          "date": "2020-03-12",
+          "open": "107",
+          "high": "108",
+          "low": "106",
+          "close": "107",
+          "volume_shares_scaled": "1497"
+        },
+        {
+          "date": "2020-03-13",
+          "open": "101",
+          "high": "102",
+          "low": "100",
+          "close": "101",
+          "volume_shares_scaled": "1504"
+        },
+        {
+          "date": "2020-03-14",
+          "open": "100",
+          "high": "101",
+          "low": "99",
+          "close": "100",
+          "volume_shares_scaled": "1511"
+        },
+        {
+          "date": "2020-03-15",
+          "open": "105",
+          "high": "106",
+          "low": "104",
+          "close": "105",
+          "volume_shares_scaled": "1518"
+        },
+        {
+          "date": "2020-03-16",
+          "open": "110",
+          "high": "111",
+          "low": "109",
+          "close": "110",
+          "volume_shares_scaled": "1525"
+        },
+        {
+          "date": "2020-03-17",
+          "open": "104",
+          "high": "105",
+          "low": "103",
+          "close": "104",
+          "volume_shares_scaled": "1532"
+        },
+        {
+          "date": "2020-03-18",
+          "open": "101",
+          "high": "102",
+          "low": "100",
+          "close": "101",
+          "volume_shares_scaled": "1539"
+        },
+        {
+          "date": "2020-03-19",
+          "open": "99",
+          "high": "100",
+          "low": "98",
+          "close": "99",
+          "volume_shares_scaled": "1546"
+        },
+        {
+          "date": "2020-03-20",
+          "open": "104",
+          "high": "105",
+          "low": "103",
+          "close": "104",
+          "volume_shares_scaled": "1553"
+        },
+        {
+          "date": "2020-03-21",
+          "open": "110",
+          "high": "111",
+          "low": "109",
+          "close": "110",
+          "volume_shares_scaled": "1560"
+        },
+        {
+          "date": "2020-03-22",
+          "open": "106",
+          "high": "107",
+          "low": "105",
+          "close": "106",
+          "volume_shares_scaled": "1567"
+        },
+        {
+          "date": "2020-03-23",
+          "open": "100",
+          "high": "101",
+          "low": "99",
+          "close": "100",
+          "volume_shares_scaled": "1574"
+        },
+        {
+          "date": "2020-03-24",
+          "open": "104",
+          "high": "105",
+          "low": "103",
+          "close": "104",
+          "volume_shares_scaled": "1581"
+        },
+        {
+          "date": "2020-03-25",
+          "open": "110",
+          "high": "111",
+          "low": "109",
+          "close": "110",
+          "volume_shares_scaled": "1588"
+        },
+        {
+          "date": "2020-03-26",
+          "open": "105",
+          "high": "106",
+          "low": "104",
+          "close": "105",
+          "volume_shares_scaled": "1595"
+        },
+        {
+          "date": "2020-03-27",
+          "open": "100",
+          "high": "101",
+          "low": "99",
+          "close": "100",
+          "volume_shares_scaled": "1602"
+        }
+      ],
+      "basis_break_dates": [
+        "2020-01-30"
+      ]
+    },
+    "as_of": "2020-03-27",
+    "expected_stopped": true
+  },
+  {
+    "id": "before-basis-break",
+    "input": {
+      "schema_version": "graph-recognition-input/0.1",
+      "context": {
+        "code": "SYNTHETIC_F01_ONLY",
+        "source_id": "synthetic-f01",
+        "price_basis_id": "synthetic-raw",
+        "price_mode": "RAW_CANDIDATE",
+        "volume_unit": "SHARES_REPORTED",
+        "corporate_action_comparability": "UNVERIFIED"
+      },
+      "bars": [
+        {
+          "date": "2020-01-01",
+          "open": "100",
+          "high": "101",
+          "low": "99",
+          "close": "100",
+          "volume_shares_scaled": "1000"
+        },
+        {
+          "date": "2020-01-02",
+          "open": "104",
+          "high": "105",
+          "low": "103",
+          "close": "104",
+          "volume_shares_scaled": "1007"
+        },
+        {
+          "date": "2020-01-03",
+          "open": "110",
+          "high": "111",
+          "low": "109",
+          "close": "110",
+          "volume_shares_scaled": "1014"
+        },
+        {
+          "date": "2020-01-04",
+          "open": "108",
+          "high": "109",
+          "low": "107",
+          "close": "108",
+          "volume_shares_scaled": "1021"
+        },
+        {
+          "date": "2020-01-05",
+          "open": "101",
+          "high": "102",
+          "low": "100",
+          "close": "101",
+          "volume_shares_scaled": "1028"
+        },
+        {
+          "date": "2020-01-06",
+          "open": "100",
+          "high": "101",
+          "low": "99",
+          "close": "100",
+          "volume_shares_scaled": "1035"
+        },
+        {
+          "date": "2020-01-07",
+          "open": "104",
+          "high": "105",
+          "low": "103",
+          "close": "104",
+          "volume_shares_scaled": "1042"
+        },
+        {
+          "date": "2020-01-08",
+          "open": "109",
+          "high": "110",
+          "low": "108",
+          "close": "109",
+          "volume_shares_scaled": "1049"
+        },
+        {
+          "date": "2020-01-09",
+          "open": "106",
+          "high": "107",
+          "low": "105",
+          "close": "106",
+          "volume_shares_scaled": "1056"
+        },
+        {
+          "date": "2020-01-10",
+          "open": "101",
+          "high": "102",
+          "low": "100",
+          "close": "101",
+          "volume_shares_scaled": "1063"
+        },
+        {
+          "date": "2020-01-11",
+          "open": "99",
+          "high": "100",
+          "low": "98",
+          "close": "99",
+          "volume_shares_scaled": "1070"
+        },
+        {
+          "date": "2020-01-12",
+          "open": "103",
+          "high": "104",
+          "low": "102",
+          "close": "103",
+          "volume_shares_scaled": "1077"
+        },
+        {
+          "date": "2020-01-13",
+          "open": "111",
+          "high": "112",
+          "low": "110",
+          "close": "111",
+          "volume_shares_scaled": "1084"
+        },
+        {
+          "date": "2020-01-14",
+          "open": "107",
+          "high": "108",
+          "low": "106",
+          "close": "107",
+          "volume_shares_scaled": "1091"
+        },
+        {
+          "date": "2020-01-15",
+          "open": "101",
+          "high": "102",
+          "low": "100",
+          "close": "101",
+          "volume_shares_scaled": "1098"
+        },
+        {
+          "date": "2020-01-16",
+          "open": "100",
+          "high": "101",
+          "low": "99",
+          "close": "100",
+          "volume_shares_scaled": "1105"
+        },
+        {
+          "date": "2020-01-17",
+          "open": "105",
+          "high": "106",
+          "low": "104",
+          "close": "105",
+          "volume_shares_scaled": "1112"
+        },
+        {
+          "date": "2020-01-18",
+          "open": "110",
+          "high": "111",
+          "low": "109",
+          "close": "110",
+          "volume_shares_scaled": "1119"
+        },
+        {
+          "date": "2020-01-19",
+          "open": "104",
+          "high": "105",
+          "low": "103",
+          "close": "104",
+          "volume_shares_scaled": "1126"
+        },
+        {
+          "date": "2020-01-20",
+          "open": "101",
+          "high": "102",
+          "low": "100",
+          "close": "101",
+          "volume_shares_scaled": "1133"
+        },
+        {
+          "date": "2020-01-21",
+          "open": "99",
+          "high": "100",
+          "low": "98",
+          "close": "99",
+          "volume_shares_scaled": "1140"
+        },
+        {
+          "date": "2020-01-22",
+          "open": "104",
+          "high": "105",
+          "low": "103",
+          "close": "104",
+          "volume_shares_scaled": "1147"
+        },
+        {
+          "date": "2020-01-23",
+          "open": "110",
+          "high": "111",
+          "low": "109",
+          "close": "110",
+          "volume_shares_scaled": "1154"
+        },
+        {
+          "date": "2020-01-24",
+          "open": "106",
+          "high": "107",
+          "low": "105",
+          "close": "106",
+          "volume_shares_scaled": "1161"
+        },
+        {
+          "date": "2020-01-25",
+          "open": "100",
+          "high": "101",
+          "low": "99",
+          "close": "100",
+          "volume_shares_scaled": "1168"
+        },
+        {
+          "date": "2020-01-26",
+          "open": "104",
+          "high": "105",
+          "low": "103",
+          "close": "104",
+          "volume_shares_scaled": "1175"
+        },
+        {
+          "date": "2020-01-27",
+          "open": "110",
+          "high": "111",
+          "low": "109",
+          "close": "110",
+          "volume_shares_scaled": "1182"
+        },
+        {
+          "date": "2020-01-28",
+          "open": "105",
+          "high": "106",
+          "low": "104",
+          "close": "105",
+          "volume_shares_scaled": "1189"
+        },
+        {
+          "date": "2020-01-29",
+          "open": "100",
+          "high": "101",
+          "low": "99",
+          "close": "100",
+          "volume_shares_scaled": "1196"
+        },
+        {
+          "date": "2020-01-30",
+          "open": "100",
+          "high": "101",
+          "low": "99",
+          "close": "100",
+          "volume_shares_scaled": "1203"
+        },
+        {
+          "date": "2020-01-31",
+          "open": "104",
+          "high": "105",
+          "low": "103",
+          "close": "104",
+          "volume_shares_scaled": "1210"
+        },
+        {
+          "date": "2020-02-01",
+          "open": "110",
+          "high": "111",
+          "low": "109",
+          "close": "110",
+          "volume_shares_scaled": "1217"
+        },
+        {
+          "date": "2020-02-02",
+          "open": "108",
+          "high": "109",
+          "low": "107",
+          "close": "108",
+          "volume_shares_scaled": "1224"
+        },
+        {
+          "date": "2020-02-03",
+          "open": "101",
+          "high": "102",
+          "low": "100",
+          "close": "101",
+          "volume_shares_scaled": "1231"
+        },
+        {
+          "date": "2020-02-04",
+          "open": "100",
+          "high": "101",
+          "low": "99",
+          "close": "100",
+          "volume_shares_scaled": "1238"
+        },
+        {
+          "date": "2020-02-05",
+          "open": "104",
+          "high": "105",
+          "low": "103",
+          "close": "104",
+          "volume_shares_scaled": "1245"
+        },
+        {
+          "date": "2020-02-06",
+          "open": "109",
+          "high": "110",
+          "low": "108",
+          "close": "109",
+          "volume_shares_scaled": "1252"
+        },
+        {
+          "date": "2020-02-07",
+          "open": "106",
+          "high": "107",
+          "low": "105",
+          "close": "106",
+          "volume_shares_scaled": "1259"
+        },
+        {
+          "date": "2020-02-08",
+          "open": "101",
+          "high": "102",
+          "low": "100",
+          "close": "101",
+          "volume_shares_scaled": "1266"
+        },
+        {
+          "date": "2020-02-09",
+          "open": "99",
+          "high": "100",
+          "low": "98",
+          "close": "99",
+          "volume_shares_scaled": "1273"
+        },
+        {
+          "date": "2020-02-10",
+          "open": "103",
+          "high": "104",
+          "low": "102",
+          "close": "103",
+          "volume_shares_scaled": "1280"
+        },
+        {
+          "date": "2020-02-11",
+          "open": "111",
+          "high": "112",
+          "low": "110",
+          "close": "111",
+          "volume_shares_scaled": "1287"
+        },
+        {
+          "date": "2020-02-12",
+          "open": "107",
+          "high": "108",
+          "low": "106",
+          "close": "107",
+          "volume_shares_scaled": "1294"
+        },
+        {
+          "date": "2020-02-13",
+          "open": "101",
+          "high": "102",
+          "low": "100",
+          "close": "101",
+          "volume_shares_scaled": "1301"
+        },
+        {
+          "date": "2020-02-14",
+          "open": "100",
+          "high": "101",
+          "low": "99",
+          "close": "100",
+          "volume_shares_scaled": "1308"
+        },
+        {
+          "date": "2020-02-15",
+          "open": "105",
+          "high": "106",
+          "low": "104",
+          "close": "105",
+          "volume_shares_scaled": "1315"
+        },
+        {
+          "date": "2020-02-16",
+          "open": "110",
+          "high": "111",
+          "low": "109",
+          "close": "110",
+          "volume_shares_scaled": "1322"
+        },
+        {
+          "date": "2020-02-17",
+          "open": "104",
+          "high": "105",
+          "low": "103",
+          "close": "104",
+          "volume_shares_scaled": "1329"
+        },
+        {
+          "date": "2020-02-18",
+          "open": "101",
+          "high": "102",
+          "low": "100",
+          "close": "101",
+          "volume_shares_scaled": "1336"
+        },
+        {
+          "date": "2020-02-19",
+          "open": "99",
+          "high": "100",
+          "low": "98",
+          "close": "99",
+          "volume_shares_scaled": "1343"
+        },
+        {
+          "date": "2020-02-20",
+          "open": "104",
+          "high": "105",
+          "low": "103",
+          "close": "104",
+          "volume_shares_scaled": "1350"
+        },
+        {
+          "date": "2020-02-21",
+          "open": "110",
+          "high": "111",
+          "low": "109",
+          "close": "110",
+          "volume_shares_scaled": "1357"
+        },
+        {
+          "date": "2020-02-22",
+          "open": "106",
+          "high": "107",
+          "low": "105",
+          "close": "106",
+          "volume_shares_scaled": "1364"
+        },
+        {
+          "date": "2020-02-23",
+          "open": "100",
+          "high": "101",
+          "low": "99",
+          "close": "100",
+          "volume_shares_scaled": "1371"
+        },
+        {
+          "date": "2020-02-24",
+          "open": "104",
+          "high": "105",
+          "low": "103",
+          "close": "104",
+          "volume_shares_scaled": "1378"
+        },
+        {
+          "date": "2020-02-25",
+          "open": "110",
+          "high": "111",
+          "low": "109",
+          "close": "110",
+          "volume_shares_scaled": "1385"
+        },
+        {
+          "date": "2020-02-26",
+          "open": "105",
+          "high": "106",
+          "low": "104",
+          "close": "105",
+          "volume_shares_scaled": "1392"
+        },
+        {
+          "date": "2020-02-27",
+          "open": "100",
+          "high": "101",
+          "low": "99",
+          "close": "100",
+          "volume_shares_scaled": "1399"
+        },
+        {
+          "date": "2020-02-28",
+          "open": "100",
+          "high": "101",
+          "low": "99",
+          "close": "100",
+          "volume_shares_scaled": "1406"
+        },
+        {
+          "date": "2020-02-29",
+          "open": "104",
+          "high": "105",
+          "low": "103",
+          "close": "104",
+          "volume_shares_scaled": "1413"
+        },
+        {
+          "date": "2020-03-01",
+          "open": "110",
+          "high": "111",
+          "low": "109",
+          "close": "110",
+          "volume_shares_scaled": "1420"
+        },
+        {
+          "date": "2020-03-02",
+          "open": "108",
+          "high": "109",
+          "low": "107",
+          "close": "108",
+          "volume_shares_scaled": "1427"
+        },
+        {
+          "date": "2020-03-03",
+          "open": "101",
+          "high": "102",
+          "low": "100",
+          "close": "101",
+          "volume_shares_scaled": "1434"
+        },
+        {
+          "date": "2020-03-04",
+          "open": "100",
+          "high": "101",
+          "low": "99",
+          "close": "100",
+          "volume_shares_scaled": "1441"
+        },
+        {
+          "date": "2020-03-05",
+          "open": "104",
+          "high": "105",
+          "low": "103",
+          "close": "104",
+          "volume_shares_scaled": "1448"
+        },
+        {
+          "date": "2020-03-06",
+          "open": "109",
+          "high": "110",
+          "low": "108",
+          "close": "109",
+          "volume_shares_scaled": "1455"
+        },
+        {
+          "date": "2020-03-07",
+          "open": "106",
+          "high": "107",
+          "low": "105",
+          "close": "106",
+          "volume_shares_scaled": "1462"
+        },
+        {
+          "date": "2020-03-08",
+          "open": "101",
+          "high": "102",
+          "low": "100",
+          "close": "101",
+          "volume_shares_scaled": "1469"
+        },
+        {
+          "date": "2020-03-09",
+          "open": "99",
+          "high": "100",
+          "low": "98",
+          "close": "99",
+          "volume_shares_scaled": "1476"
+        },
+        {
+          "date": "2020-03-10",
+          "open": "103",
+          "high": "104",
+          "low": "102",
+          "close": "103",
+          "volume_shares_scaled": "1483"
+        },
+        {
+          "date": "2020-03-11",
+          "open": "111",
+          "high": "112",
+          "low": "110",
+          "close": "111",
+          "volume_shares_scaled": "1490"
+        },
+        {
+          "date": "2020-03-12",
+          "open": "107",
+          "high": "108",
+          "low": "106",
+          "close": "107",
+          "volume_shares_scaled": "1497"
+        },
+        {
+          "date": "2020-03-13",
+          "open": "101",
+          "high": "102",
+          "low": "100",
+          "close": "101",
+          "volume_shares_scaled": "1504"
+        },
+        {
+          "date": "2020-03-14",
+          "open": "100",
+          "high": "101",
+          "low": "99",
+          "close": "100",
+          "volume_shares_scaled": "1511"
+        },
+        {
+          "date": "2020-03-15",
+          "open": "105",
+          "high": "106",
+          "low": "104",
+          "close": "105",
+          "volume_shares_scaled": "1518"
+        },
+        {
+          "date": "2020-03-16",
+          "open": "110",
+          "high": "111",
+          "low": "109",
+          "close": "110",
+          "volume_shares_scaled": "1525"
+        },
+        {
+          "date": "2020-03-17",
+          "open": "104",
+          "high": "105",
+          "low": "103",
+          "close": "104",
+          "volume_shares_scaled": "1532"
+        },
+        {
+          "date": "2020-03-18",
+          "open": "101",
+          "high": "102",
+          "low": "100",
+          "close": "101",
+          "volume_shares_scaled": "1539"
+        },
+        {
+          "date": "2020-03-19",
+          "open": "99",
+          "high": "100",
+          "low": "98",
+          "close": "99",
+          "volume_shares_scaled": "1546"
+        },
+        {
+          "date": "2020-03-20",
+          "open": "104",
+          "high": "105",
+          "low": "103",
+          "close": "104",
+          "volume_shares_scaled": "1553"
+        },
+        {
+          "date": "2020-03-21",
+          "open": "110",
+          "high": "111",
+          "low": "109",
+          "close": "110",
+          "volume_shares_scaled": "1560"
+        },
+        {
+          "date": "2020-03-22",
+          "open": "106",
+          "high": "107",
+          "low": "105",
+          "close": "106",
+          "volume_shares_scaled": "1567"
+        },
+        {
+          "date": "2020-03-23",
+          "open": "100",
+          "high": "101",
+          "low": "99",
+          "close": "100",
+          "volume_shares_scaled": "1574"
+        },
+        {
+          "date": "2020-03-24",
+          "open": "104",
+          "high": "105",
+          "low": "103",
+          "close": "104",
+          "volume_shares_scaled": "1581"
+        },
+        {
+          "date": "2020-03-25",
+          "open": "110",
+          "high": "111",
+          "low": "109",
+          "close": "110",
+          "volume_shares_scaled": "1588"
+        },
+        {
+          "date": "2020-03-26",
+          "open": "105",
+          "high": "106",
+          "low": "104",
+          "close": "105",
+          "volume_shares_scaled": "1595"
+        },
+        {
+          "date": "2020-03-27",
+          "open": "100",
+          "high": "101",
+          "low": "99",
+          "close": "100",
+          "volume_shares_scaled": "1602"
+        }
+      ],
+      "basis_break_dates": [
+        "2020-01-30"
+      ]
+    },
+    "as_of": "2020-01-29",
+    "expected_stopped": false
+  },
+  {
+    "id": "missing-price",
+    "input": {
+      "schema_version": "graph-recognition-input/0.1",
+      "context": {
+        "code": "SYNTHETIC_F01_ONLY",
+        "source_id": "synthetic-f01",
+        "price_basis_id": "synthetic-raw",
+        "price_mode": "RAW_CANDIDATE",
+        "volume_unit": "SHARES_REPORTED",
+        "corporate_action_comparability": "UNVERIFIED"
+      },
+      "bars": [
+        {
+          "date": "2020-01-01",
+          "open": "100",
+          "high": "101",
+          "low": "99",
+          "close": "100",
+          "volume_shares_scaled": "1000"
+        },
+        {
+          "date": "2020-01-02",
+          "open": "104",
+          "high": "105",
+          "low": "103",
+          "close": "104",
+          "volume_shares_scaled": "1007"
+        },
+        {
+          "date": "2020-01-03",
+          "open": "110",
+          "high": "111",
+          "low": "109",
+          "close": "110",
+          "volume_shares_scaled": "1014"
+        },
+        {
+          "date": "2020-01-04",
+          "open": "108",
+          "high": "109",
+          "low": "107",
+          "close": "108",
+          "volume_shares_scaled": "1021"
+        },
+        {
+          "date": "2020-01-05",
+          "open": "101",
+          "high": "102",
+          "low": "100",
+          "close": "101",
+          "volume_shares_scaled": "1028"
+        },
+        {
+          "date": "2020-01-06",
+          "open": "100",
+          "high": "101",
+          "low": "99",
+          "close": "100",
+          "volume_shares_scaled": "1035"
+        },
+        {
+          "date": "2020-01-07",
+          "open": "104",
+          "high": "105",
+          "low": "103",
+          "close": "104",
+          "volume_shares_scaled": "1042"
+        },
+        {
+          "date": "2020-01-08",
+          "open": "109",
+          "high": "110",
+          "low": "108",
+          "close": "109",
+          "volume_shares_scaled": "1049"
+        },
+        {
+          "date": "2020-01-09",
+          "open": "106",
+          "high": "107",
+          "low": "105",
+          "close": "106",
+          "volume_shares_scaled": "1056"
+        },
+        {
+          "date": "2020-01-10",
+          "open": "101",
+          "high": "102",
+          "low": "100",
+          "close": "101",
+          "volume_shares_scaled": "1063"
+        },
+        {
+          "date": "2020-01-11",
+          "open": "99",
+          "high": "100",
+          "low": "98",
+          "close": "99",
+          "volume_shares_scaled": "1070"
+        },
+        {
+          "date": "2020-01-12",
+          "open": "103",
+          "high": "104",
+          "low": "102",
+          "close": "103",
+          "volume_shares_scaled": "1077"
+        },
+        {
+          "date": "2020-01-13",
+          "open": "111",
+          "high": "112",
+          "low": "110",
+          "close": "111",
+          "volume_shares_scaled": "1084"
+        },
+        {
+          "date": "2020-01-14",
+          "open": "107",
+          "high": "108",
+          "low": "106",
+          "close": "107",
+          "volume_shares_scaled": "1091"
+        },
+        {
+          "date": "2020-01-15",
+          "open": "101",
+          "high": "102",
+          "low": "100",
+          "close": "101",
+          "volume_shares_scaled": "1098"
+        },
+        {
+          "date": "2020-01-16",
+          "open": "100",
+          "high": "101",
+          "low": "99",
+          "close": "100",
+          "volume_shares_scaled": "1105"
+        },
+        {
+          "date": "2020-01-17",
+          "open": "105",
+          "high": "106",
+          "low": "104",
+          "close": "105",
+          "volume_shares_scaled": "1112"
+        },
+        {
+          "date": "2020-01-18",
+          "open": "110",
+          "high": "111",
+          "low": "109",
+          "close": "110",
+          "volume_shares_scaled": "1119"
+        },
+        {
+          "date": "2020-01-19",
+          "open": "104",
+          "high": "105",
+          "low": "103",
+          "close": "104",
+          "volume_shares_scaled": "1126"
+        },
+        {
+          "date": "2020-01-20",
+          "open": "101",
+          "high": "102",
+          "low": "100",
+          "close": "101",
+          "volume_shares_scaled": "1133"
+        },
+        {
+          "date": "2020-01-21",
+          "open": "99",
+          "high": "100",
+          "low": "98",
+          "close": "99",
+          "volume_shares_scaled": "1140"
+        },
+        {
+          "date": "2020-01-22",
+          "open": "104",
+          "high": "105",
+          "low": "103",
+          "close": "104",
+          "volume_shares_scaled": "1147"
+        },
+        {
+          "date": "2020-01-23",
+          "open": "110",
+          "high": "111",
+          "low": "109",
+          "close": "110",
+          "volume_shares_scaled": "1154"
+        },
+        {
+          "date": "2020-01-24",
+          "open": "106",
+          "high": "107",
+          "low": "105",
+          "close": "106",
+          "volume_shares_scaled": "1161"
+        },
+        {
+          "date": "2020-01-25",
+          "open": "100",
+          "high": "101",
+          "low": "99",
+          "close": "100",
+          "volume_shares_scaled": "1168"
+        },
+        {
+          "date": "2020-01-26",
+          "open": "104",
+          "high": "105",
+          "low": "103",
+          "close": "104",
+          "volume_shares_scaled": "1175"
+        },
+        {
+          "date": "2020-01-27",
+          "open": "110",
+          "high": "111",
+          "low": "109",
+          "close": "110",
+          "volume_shares_scaled": "1182"
+        },
+        {
+          "date": "2020-01-28",
+          "open": "105",
+          "high": "106",
+          "low": "104",
+          "close": "105",
+          "volume_shares_scaled": "1189"
+        },
+        {
+          "date": "2020-01-29",
+          "open": "100",
+          "high": "101",
+          "low": "99",
+          "close": "100",
+          "volume_shares_scaled": "1196"
+        },
+        {
+          "date": "2020-01-30",
+          "open": null,
+          "high": null,
+          "low": null,
+          "close": null,
+          "volume_shares_scaled": "1203"
+        },
+        {
+          "date": "2020-01-31",
+          "open": "104",
+          "high": "105",
+          "low": "103",
+          "close": "104",
+          "volume_shares_scaled": "1210"
+        },
+        {
+          "date": "2020-02-01",
+          "open": "110",
+          "high": "111",
+          "low": "109",
+          "close": "110",
+          "volume_shares_scaled": "1217"
+        },
+        {
+          "date": "2020-02-02",
+          "open": "108",
+          "high": "109",
+          "low": "107",
+          "close": "108",
+          "volume_shares_scaled": "1224"
+        },
+        {
+          "date": "2020-02-03",
+          "open": "101",
+          "high": "102",
+          "low": "100",
+          "close": "101",
+          "volume_shares_scaled": "1231"
+        },
+        {
+          "date": "2020-02-04",
+          "open": "100",
+          "high": "101",
+          "low": "99",
+          "close": "100",
+          "volume_shares_scaled": "1238"
+        },
+        {
+          "date": "2020-02-05",
+          "open": "104",
+          "high": "105",
+          "low": "103",
+          "close": "104",
+          "volume_shares_scaled": "1245"
+        },
+        {
+          "date": "2020-02-06",
+          "open": "109",
+          "high": "110",
+          "low": "108",
+          "close": "109",
+          "volume_shares_scaled": "1252"
+        },
+        {
+          "date": "2020-02-07",
+          "open": "106",
+          "high": "107",
+          "low": "105",
+          "close": "106",
+          "volume_shares_scaled": "1259"
+        },
+        {
+          "date": "2020-02-08",
+          "open": "101",
+          "high": "102",
+          "low": "100",
+          "close": "101",
+          "volume_shares_scaled": "1266"
+        },
+        {
+          "date": "2020-02-09",
+          "open": "99",
+          "high": "100",
+          "low": "98",
+          "close": "99",
+          "volume_shares_scaled": "1273"
+        },
+        {
+          "date": "2020-02-10",
+          "open": "103",
+          "high": "104",
+          "low": "102",
+          "close": "103",
+          "volume_shares_scaled": "1280"
+        },
+        {
+          "date": "2020-02-11",
+          "open": "111",
+          "high": "112",
+          "low": "110",
+          "close": "111",
+          "volume_shares_scaled": "1287"
+        },
+        {
+          "date": "2020-02-12",
+          "open": "107",
+          "high": "108",
+          "low": "106",
+          "close": "107",
+          "volume_shares_scaled": "1294"
+        },
+        {
+          "date": "2020-02-13",
+          "open": "101",
+          "high": "102",
+          "low": "100",
+          "close": "101",
+          "volume_shares_scaled": "1301"
+        },
+        {
+          "date": "2020-02-14",
+          "open": "100",
+          "high": "101",
+          "low": "99",
+          "close": "100",
+          "volume_shares_scaled": "1308"
+        },
+        {
+          "date": "2020-02-15",
+          "open": "105",
+          "high": "106",
+          "low": "104",
+          "close": "105",
+          "volume_shares_scaled": "1315"
+        },
+        {
+          "date": "2020-02-16",
+          "open": "110",
+          "high": "111",
+          "low": "109",
+          "close": "110",
+          "volume_shares_scaled": "1322"
+        },
+        {
+          "date": "2020-02-17",
+          "open": "104",
+          "high": "105",
+          "low": "103",
+          "close": "104",
+          "volume_shares_scaled": "1329"
+        },
+        {
+          "date": "2020-02-18",
+          "open": "101",
+          "high": "102",
+          "low": "100",
+          "close": "101",
+          "volume_shares_scaled": "1336"
+        },
+        {
+          "date": "2020-02-19",
+          "open": "99",
+          "high": "100",
+          "low": "98",
+          "close": "99",
+          "volume_shares_scaled": "1343"
+        },
+        {
+          "date": "2020-02-20",
+          "open": "104",
+          "high": "105",
+          "low": "103",
+          "close": "104",
+          "volume_shares_scaled": "1350"
+        },
+        {
+          "date": "2020-02-21",
+          "open": "110",
+          "high": "111",
+          "low": "109",
+          "close": "110",
+          "volume_shares_scaled": "1357"
+        },
+        {
+          "date": "2020-02-22",
+          "open": "106",
+          "high": "107",
+          "low": "105",
+          "close": "106",
+          "volume_shares_scaled": "1364"
+        },
+        {
+          "date": "2020-02-23",
+          "open": "100",
+          "high": "101",
+          "low": "99",
+          "close": "100",
+          "volume_shares_scaled": "1371"
+        },
+        {
+          "date": "2020-02-24",
+          "open": "104",
+          "high": "105",
+          "low": "103",
+          "close": "104",
+          "volume_shares_scaled": "1378"
+        },
+        {
+          "date": "2020-02-25",
+          "open": "110",
+          "high": "111",
+          "low": "109",
+          "close": "110",
+          "volume_shares_scaled": "1385"
+        },
+        {
+          "date": "2020-02-26",
+          "open": "105",
+          "high": "106",
+          "low": "104",
+          "close": "105",
+          "volume_shares_scaled": "1392"
+        },
+        {
+          "date": "2020-02-27",
+          "open": "100",
+          "high": "101",
+          "low": "99",
+          "close": "100",
+          "volume_shares_scaled": "1399"
+        },
+        {
+          "date": "2020-02-28",
+          "open": "100",
+          "high": "101",
+          "low": "99",
+          "close": "100",
+          "volume_shares_scaled": "1406"
+        },
+        {
+          "date": "2020-02-29",
+          "open": "104",
+          "high": "105",
+          "low": "103",
+          "close": "104",
+          "volume_shares_scaled": "1413"
+        },
+        {
+          "date": "2020-03-01",
+          "open": "110",
+          "high": "111",
+          "low": "109",
+          "close": "110",
+          "volume_shares_scaled": "1420"
+        },
+        {
+          "date": "2020-03-02",
+          "open": "108",
+          "high": "109",
+          "low": "107",
+          "close": "108",
+          "volume_shares_scaled": "1427"
+        },
+        {
+          "date": "2020-03-03",
+          "open": "101",
+          "high": "102",
+          "low": "100",
+          "close": "101",
+          "volume_shares_scaled": "1434"
+        },
+        {
+          "date": "2020-03-04",
+          "open": "100",
+          "high": "101",
+          "low": "99",
+          "close": "100",
+          "volume_shares_scaled": "1441"
+        },
+        {
+          "date": "2020-03-05",
+          "open": "104",
+          "high": "105",
+          "low": "103",
+          "close": "104",
+          "volume_shares_scaled": "1448"
+        },
+        {
+          "date": "2020-03-06",
+          "open": "109",
+          "high": "110",
+          "low": "108",
+          "close": "109",
+          "volume_shares_scaled": "1455"
+        },
+        {
+          "date": "2020-03-07",
+          "open": "106",
+          "high": "107",
+          "low": "105",
+          "close": "106",
+          "volume_shares_scaled": "1462"
+        },
+        {
+          "date": "2020-03-08",
+          "open": "101",
+          "high": "102",
+          "low": "100",
+          "close": "101",
+          "volume_shares_scaled": "1469"
+        },
+        {
+          "date": "2020-03-09",
+          "open": "99",
+          "high": "100",
+          "low": "98",
+          "close": "99",
+          "volume_shares_scaled": "1476"
+        },
+        {
+          "date": "2020-03-10",
+          "open": "103",
+          "high": "104",
+          "low": "102",
+          "close": "103",
+          "volume_shares_scaled": "1483"
+        },
+        {
+          "date": "2020-03-11",
+          "open": "111",
+          "high": "112",
+          "low": "110",
+          "close": "111",
+          "volume_shares_scaled": "1490"
+        },
+        {
+          "date": "2020-03-12",
+          "open": "107",
+          "high": "108",
+          "low": "106",
+          "close": "107",
+          "volume_shares_scaled": "1497"
+        },
+        {
+          "date": "2020-03-13",
+          "open": "101",
+          "high": "102",
+          "low": "100",
+          "close": "101",
+          "volume_shares_scaled": "1504"
+        },
+        {
+          "date": "2020-03-14",
+          "open": "100",
+          "high": "101",
+          "low": "99",
+          "close": "100",
+          "volume_shares_scaled": "1511"
+        },
+        {
+          "date": "2020-03-15",
+          "open": "105",
+          "high": "106",
+          "low": "104",
+          "close": "105",
+          "volume_shares_scaled": "1518"
+        },
+        {
+          "date": "2020-03-16",
+          "open": "110",
+          "high": "111",
+          "low": "109",
+          "close": "110",
+          "volume_shares_scaled": "1525"
+        },
+        {
+          "date": "2020-03-17",
+          "open": "104",
+          "high": "105",
+          "low": "103",
+          "close": "104",
+          "volume_shares_scaled": "1532"
+        },
+        {
+          "date": "2020-03-18",
+          "open": "101",
+          "high": "102",
+          "low": "100",
+          "close": "101",
+          "volume_shares_scaled": "1539"
+        },
+        {
+          "date": "2020-03-19",
+          "open": "99",
+          "high": "100",
+          "low": "98",
+          "close": "99",
+          "volume_shares_scaled": "1546"
+        },
+        {
+          "date": "2020-03-20",
+          "open": "104",
+          "high": "105",
+          "low": "103",
+          "close": "104",
+          "volume_shares_scaled": "1553"
+        },
+        {
+          "date": "2020-03-21",
+          "open": "110",
+          "high": "111",
+          "low": "109",
+          "close": "110",
+          "volume_shares_scaled": "1560"
+        },
+        {
+          "date": "2020-03-22",
+          "open": "106",
+          "high": "107",
+          "low": "105",
+          "close": "106",
+          "volume_shares_scaled": "1567"
+        },
+        {
+          "date": "2020-03-23",
+          "open": "100",
+          "high": "101",
+          "low": "99",
+          "close": "100",
+          "volume_shares_scaled": "1574"
+        },
+        {
+          "date": "2020-03-24",
+          "open": "104",
+          "high": "105",
+          "low": "103",
+          "close": "104",
+          "volume_shares_scaled": "1581"
+        },
+        {
+          "date": "2020-03-25",
+          "open": "110",
+          "high": "111",
+          "low": "109",
+          "close": "110",
+          "volume_shares_scaled": "1588"
+        },
+        {
+          "date": "2020-03-26",
+          "open": "105",
+          "high": "106",
+          "low": "104",
+          "close": "105",
+          "volume_shares_scaled": "1595"
+        },
+        {
+          "date": "2020-03-27",
+          "open": "100",
+          "high": "101",
+          "low": "99",
+          "close": "100",
+          "volume_shares_scaled": "1602"
+        }
+      ],
+      "basis_break_dates": []
+    },
+    "as_of": "2020-03-27",
+    "expected_stopped": true
+  },
+  {
+    "id": "missing-session",
+    "input": {
+      "schema_version": "graph-recognition-input/0.1",
+      "context": {
+        "code": "SYNTHETIC_F01_ONLY",
+        "source_id": "synthetic-f01",
+        "price_basis_id": "synthetic-raw",
+        "price_mode": "RAW_CANDIDATE",
+        "volume_unit": "SHARES_REPORTED",
+        "corporate_action_comparability": "UNVERIFIED"
+      },
+      "bars": [
+        {
+          "date": "2020-01-01",
+          "open": "100",
+          "high": "101",
+          "low": "99",
+          "close": "100",
+          "volume_shares_scaled": "1000"
+        },
+        {
+          "date": "2020-01-02",
+          "open": "104",
+          "high": "105",
+          "low": "103",
+          "close": "104",
+          "volume_shares_scaled": "1007"
+        },
+        {
+          "date": "2020-01-03",
+          "open": "110",
+          "high": "111",
+          "low": "109",
+          "close": "110",
+          "volume_shares_scaled": "1014"
+        },
+        {
+          "date": "2020-01-04",
+          "open": "108",
+          "high": "109",
+          "low": "107",
+          "close": "108",
+          "volume_shares_scaled": "1021"
+        },
+        {
+          "date": "2020-01-05",
+          "open": "101",
+          "high": "102",
+          "low": "100",
+          "close": "101",
+          "volume_shares_scaled": "1028"
+        },
+        {
+          "date": "2020-01-06",
+          "open": "100",
+          "high": "101",
+          "low": "99",
+          "close": "100",
+          "volume_shares_scaled": "1035"
+        },
+        {
+          "date": "2020-01-07",
+          "open": "104",
+          "high": "105",
+          "low": "103",
+          "close": "104",
+          "volume_shares_scaled": "1042"
+        },
+        {
+          "date": "2020-01-08",
+          "open": "109",
+          "high": "110",
+          "low": "108",
+          "close": "109",
+          "volume_shares_scaled": "1049"
+        },
+        {
+          "date": "2020-01-09",
+          "open": "106",
+          "high": "107",
+          "low": "105",
+          "close": "106",
+          "volume_shares_scaled": "1056"
+        },
+        {
+          "date": "2020-01-10",
+          "open": "101",
+          "high": "102",
+          "low": "100",
+          "close": "101",
+          "volume_shares_scaled": "1063"
+        },
+        {
+          "date": "2020-01-11",
+          "open": "99",
+          "high": "100",
+          "low": "98",
+          "close": "99",
+          "volume_shares_scaled": "1070"
+        },
+        {
+          "date": "2020-01-12",
+          "open": "103",
+          "high": "104",
+          "low": "102",
+          "close": "103",
+          "volume_shares_scaled": "1077"
+        },
+        {
+          "date": "2020-01-13",
+          "open": "111",
+          "high": "112",
+          "low": "110",
+          "close": "111",
+          "volume_shares_scaled": "1084"
+        },
+        {
+          "date": "2020-01-14",
+          "open": "107",
+          "high": "108",
+          "low": "106",
+          "close": "107",
+          "volume_shares_scaled": "1091"
+        },
+        {
+          "date": "2020-01-15",
+          "open": "101",
+          "high": "102",
+          "low": "100",
+          "close": "101",
+          "volume_shares_scaled": "1098"
+        },
+        {
+          "date": "2020-01-16",
+          "open": "100",
+          "high": "101",
+          "low": "99",
+          "close": "100",
+          "volume_shares_scaled": "1105"
+        },
+        {
+          "date": "2020-01-17",
+          "open": "105",
+          "high": "106",
+          "low": "104",
+          "close": "105",
+          "volume_shares_scaled": "1112"
+        },
+        {
+          "date": "2020-01-18",
+          "open": "110",
+          "high": "111",
+          "low": "109",
+          "close": "110",
+          "volume_shares_scaled": "1119"
+        },
+        {
+          "date": "2020-01-19",
+          "open": "104",
+          "high": "105",
+          "low": "103",
+          "close": "104",
+          "volume_shares_scaled": "1126"
+        },
+        {
+          "date": "2020-01-20",
+          "open": "101",
+          "high": "102",
+          "low": "100",
+          "close": "101",
+          "volume_shares_scaled": "1133"
+        },
+        {
+          "date": "2020-01-21",
+          "open": "99",
+          "high": "100",
+          "low": "98",
+          "close": "99",
+          "volume_shares_scaled": "1140"
+        },
+        {
+          "date": "2020-01-22",
+          "open": "104",
+          "high": "105",
+          "low": "103",
+          "close": "104",
+          "volume_shares_scaled": "1147"
+        },
+        {
+          "date": "2020-01-23",
+          "open": "110",
+          "high": "111",
+          "low": "109",
+          "close": "110",
+          "volume_shares_scaled": "1154"
+        },
+        {
+          "date": "2020-01-24",
+          "open": "106",
+          "high": "107",
+          "low": "105",
+          "close": "106",
+          "volume_shares_scaled": "1161"
+        },
+        {
+          "date": "2020-01-25",
+          "open": "100",
+          "high": "101",
+          "low": "99",
+          "close": "100",
+          "volume_shares_scaled": "1168"
+        },
+        {
+          "date": "2020-01-26",
+          "open": "104",
+          "high": "105",
+          "low": "103",
+          "close": "104",
+          "volume_shares_scaled": "1175"
+        },
+        {
+          "date": "2020-01-27",
+          "open": "110",
+          "high": "111",
+          "low": "109",
+          "close": "110",
+          "volume_shares_scaled": "1182"
+        },
+        {
+          "date": "2020-01-28",
+          "open": "105",
+          "high": "106",
+          "low": "104",
+          "close": "105",
+          "volume_shares_scaled": "1189"
+        },
+        {
+          "date": "2020-01-29",
+          "open": "100",
+          "high": "101",
+          "low": "99",
+          "close": "100",
+          "volume_shares_scaled": "1196"
+        },
+        {
+          "date": "2020-01-31",
+          "open": "104",
+          "high": "105",
+          "low": "103",
+          "close": "104",
+          "volume_shares_scaled": "1210"
+        },
+        {
+          "date": "2020-02-01",
+          "open": "110",
+          "high": "111",
+          "low": "109",
+          "close": "110",
+          "volume_shares_scaled": "1217"
+        },
+        {
+          "date": "2020-02-02",
+          "open": "108",
+          "high": "109",
+          "low": "107",
+          "close": "108",
+          "volume_shares_scaled": "1224"
+        },
+        {
+          "date": "2020-02-03",
+          "open": "101",
+          "high": "102",
+          "low": "100",
+          "close": "101",
+          "volume_shares_scaled": "1231"
+        },
+        {
+          "date": "2020-02-04",
+          "open": "100",
+          "high": "101",
+          "low": "99",
+          "close": "100",
+          "volume_shares_scaled": "1238"
+        },
+        {
+          "date": "2020-02-05",
+          "open": "104",
+          "high": "105",
+          "low": "103",
+          "close": "104",
+          "volume_shares_scaled": "1245"
+        },
+        {
+          "date": "2020-02-06",
+          "open": "109",
+          "high": "110",
+          "low": "108",
+          "close": "109",
+          "volume_shares_scaled": "1252"
+        },
+        {
+          "date": "2020-02-07",
+          "open": "106",
+          "high": "107",
+          "low": "105",
+          "close": "106",
+          "volume_shares_scaled": "1259"
+        },
+        {
+          "date": "2020-02-08",
+          "open": "101",
+          "high": "102",
+          "low": "100",
+          "close": "101",
+          "volume_shares_scaled": "1266"
+        },
+        {
+          "date": "2020-02-09",
+          "open": "99",
+          "high": "100",
+          "low": "98",
+          "close": "99",
+          "volume_shares_scaled": "1273"
+        },
+        {
+          "date": "2020-02-10",
+          "open": "103",
+          "high": "104",
+          "low": "102",
+          "close": "103",
+          "volume_shares_scaled": "1280"
+        },
+        {
+          "date": "2020-02-11",
+          "open": "111",
+          "high": "112",
+          "low": "110",
+          "close": "111",
+          "volume_shares_scaled": "1287"
+        },
+        {
+          "date": "2020-02-12",
+          "open": "107",
+          "high": "108",
+          "low": "106",
+          "close": "107",
+          "volume_shares_scaled": "1294"
+        },
+        {
+          "date": "2020-02-13",
+          "open": "101",
+          "high": "102",
+          "low": "100",
+          "close": "101",
+          "volume_shares_scaled": "1301"
+        },
+        {
+          "date": "2020-02-14",
+          "open": "100",
+          "high": "101",
+          "low": "99",
+          "close": "100",
+          "volume_shares_scaled": "1308"
+        },
+        {
+          "date": "2020-02-15",
+          "open": "105",
+          "high": "106",
+          "low": "104",
+          "close": "105",
+          "volume_shares_scaled": "1315"
+        },
+        {
+          "date": "2020-02-16",
+          "open": "110",
+          "high": "111",
+          "low": "109",
+          "close": "110",
+          "volume_shares_scaled": "1322"
+        },
+        {
+          "date": "2020-02-17",
+          "open": "104",
+          "high": "105",
+          "low": "103",
+          "close": "104",
+          "volume_shares_scaled": "1329"
+        },
+        {
+          "date": "2020-02-18",
+          "open": "101",
+          "high": "102",
+          "low": "100",
+          "close": "101",
+          "volume_shares_scaled": "1336"
+        },
+        {
+          "date": "2020-02-19",
+          "open": "99",
+          "high": "100",
+          "low": "98",
+          "close": "99",
+          "volume_shares_scaled": "1343"
+        },
+        {
+          "date": "2020-02-20",
+          "open": "104",
+          "high": "105",
+          "low": "103",
+          "close": "104",
+          "volume_shares_scaled": "1350"
+        },
+        {
+          "date": "2020-02-21",
+          "open": "110",
+          "high": "111",
+          "low": "109",
+          "close": "110",
+          "volume_shares_scaled": "1357"
+        },
+        {
+          "date": "2020-02-22",
+          "open": "106",
+          "high": "107",
+          "low": "105",
+          "close": "106",
+          "volume_shares_scaled": "1364"
+        },
+        {
+          "date": "2020-02-23",
+          "open": "100",
+          "high": "101",
+          "low": "99",
+          "close": "100",
+          "volume_shares_scaled": "1371"
+        },
+        {
+          "date": "2020-02-24",
+          "open": "104",
+          "high": "105",
+          "low": "103",
+          "close": "104",
+          "volume_shares_scaled": "1378"
+        },
+        {
+          "date": "2020-02-25",
+          "open": "110",
+          "high": "111",
+          "low": "109",
+          "close": "110",
+          "volume_shares_scaled": "1385"
+        },
+        {
+          "date": "2020-02-26",
+          "open": "105",
+          "high": "106",
+          "low": "104",
+          "close": "105",
+          "volume_shares_scaled": "1392"
+        },
+        {
+          "date": "2020-02-27",
+          "open": "100",
+          "high": "101",
+          "low": "99",
+          "close": "100",
+          "volume_shares_scaled": "1399"
+        },
+        {
+          "date": "2020-02-28",
+          "open": "100",
+          "high": "101",
+          "low": "99",
+          "close": "100",
+          "volume_shares_scaled": "1406"
+        },
+        {
+          "date": "2020-02-29",
+          "open": "104",
+          "high": "105",
+          "low": "103",
+          "close": "104",
+          "volume_shares_scaled": "1413"
+        },
+        {
+          "date": "2020-03-01",
+          "open": "110",
+          "high": "111",
+          "low": "109",
+          "close": "110",
+          "volume_shares_scaled": "1420"
+        },
+        {
+          "date": "2020-03-02",
+          "open": "108",
+          "high": "109",
+          "low": "107",
+          "close": "108",
+          "volume_shares_scaled": "1427"
+        },
+        {
+          "date": "2020-03-03",
+          "open": "101",
+          "high": "102",
+          "low": "100",
+          "close": "101",
+          "volume_shares_scaled": "1434"
+        },
+        {
+          "date": "2020-03-04",
+          "open": "100",
+          "high": "101",
+          "low": "99",
+          "close": "100",
+          "volume_shares_scaled": "1441"
+        },
+        {
+          "date": "2020-03-05",
+          "open": "104",
+          "high": "105",
+          "low": "103",
+          "close": "104",
+          "volume_shares_scaled": "1448"
+        },
+        {
+          "date": "2020-03-06",
+          "open": "109",
+          "high": "110",
+          "low": "108",
+          "close": "109",
+          "volume_shares_scaled": "1455"
+        },
+        {
+          "date": "2020-03-07",
+          "open": "106",
+          "high": "107",
+          "low": "105",
+          "close": "106",
+          "volume_shares_scaled": "1462"
+        },
+        {
+          "date": "2020-03-08",
+          "open": "101",
+          "high": "102",
+          "low": "100",
+          "close": "101",
+          "volume_shares_scaled": "1469"
+        },
+        {
+          "date": "2020-03-09",
+          "open": "99",
+          "high": "100",
+          "low": "98",
+          "close": "99",
+          "volume_shares_scaled": "1476"
+        },
+        {
+          "date": "2020-03-10",
+          "open": "103",
+          "high": "104",
+          "low": "102",
+          "close": "103",
+          "volume_shares_scaled": "1483"
+        },
+        {
+          "date": "2020-03-11",
+          "open": "111",
+          "high": "112",
+          "low": "110",
+          "close": "111",
+          "volume_shares_scaled": "1490"
+        },
+        {
+          "date": "2020-03-12",
+          "open": "107",
+          "high": "108",
+          "low": "106",
+          "close": "107",
+          "volume_shares_scaled": "1497"
+        },
+        {
+          "date": "2020-03-13",
+          "open": "101",
+          "high": "102",
+          "low": "100",
+          "close": "101",
+          "volume_shares_scaled": "1504"
+        },
+        {
+          "date": "2020-03-14",
+          "open": "100",
+          "high": "101",
+          "low": "99",
+          "close": "100",
+          "volume_shares_scaled": "1511"
+        },
+        {
+          "date": "2020-03-15",
+          "open": "105",
+          "high": "106",
+          "low": "104",
+          "close": "105",
+          "volume_shares_scaled": "1518"
+        },
+        {
+          "date": "2020-03-16",
+          "open": "110",
+          "high": "111",
+          "low": "109",
+          "close": "110",
+          "volume_shares_scaled": "1525"
+        },
+        {
+          "date": "2020-03-17",
+          "open": "104",
+          "high": "105",
+          "low": "103",
+          "close": "104",
+          "volume_shares_scaled": "1532"
+        },
+        {
+          "date": "2020-03-18",
+          "open": "101",
+          "high": "102",
+          "low": "100",
+          "close": "101",
+          "volume_shares_scaled": "1539"
+        },
+        {
+          "date": "2020-03-19",
+          "open": "99",
+          "high": "100",
+          "low": "98",
+          "close": "99",
+          "volume_shares_scaled": "1546"
+        },
+        {
+          "date": "2020-03-20",
+          "open": "104",
+          "high": "105",
+          "low": "103",
+          "close": "104",
+          "volume_shares_scaled": "1553"
+        },
+        {
+          "date": "2020-03-21",
+          "open": "110",
+          "high": "111",
+          "low": "109",
+          "close": "110",
+          "volume_shares_scaled": "1560"
+        },
+        {
+          "date": "2020-03-22",
+          "open": "106",
+          "high": "107",
+          "low": "105",
+          "close": "106",
+          "volume_shares_scaled": "1567"
+        },
+        {
+          "date": "2020-03-23",
+          "open": "100",
+          "high": "101",
+          "low": "99",
+          "close": "100",
+          "volume_shares_scaled": "1574"
+        },
+        {
+          "date": "2020-03-24",
+          "open": "104",
+          "high": "105",
+          "low": "103",
+          "close": "104",
+          "volume_shares_scaled": "1581"
+        },
+        {
+          "date": "2020-03-25",
+          "open": "110",
+          "high": "111",
+          "low": "109",
+          "close": "110",
+          "volume_shares_scaled": "1588"
+        },
+        {
+          "date": "2020-03-26",
+          "open": "105",
+          "high": "106",
+          "low": "104",
+          "close": "105",
+          "volume_shares_scaled": "1595"
+        },
+        {
+          "date": "2020-03-27",
+          "open": "100",
+          "high": "101",
+          "low": "99",
+          "close": "100",
+          "volume_shares_scaled": "1602"
+        }
+      ],
+      "basis_break_dates": [],
+      "expected_dates": [
+        "2020-01-01",
+        "2020-01-02",
+        "2020-01-03",
+        "2020-01-04",
+        "2020-01-05",
+        "2020-01-06",
+        "2020-01-07",
+        "2020-01-08",
+        "2020-01-09",
+        "2020-01-10",
+        "2020-01-11",
+        "2020-01-12",
+        "2020-01-13",
+        "2020-01-14",
+        "2020-01-15",
+        "2020-01-16",
+        "2020-01-17",
+        "2020-01-18",
+        "2020-01-19",
+        "2020-01-20",
+        "2020-01-21",
+        "2020-01-22",
+        "2020-01-23",
+        "2020-01-24",
+        "2020-01-25",
+        "2020-01-26",
+        "2020-01-27",
+        "2020-01-28",
+        "2020-01-29",
+        "2020-01-30",
+        "2020-01-31",
+        "2020-02-01",
+        "2020-02-02",
+        "2020-02-03",
+        "2020-02-04",
+        "2020-02-05",
+        "2020-02-06",
+        "2020-02-07",
+        "2020-02-08",
+        "2020-02-09",
+        "2020-02-10",
+        "2020-02-11",
+        "2020-02-12",
+        "2020-02-13",
+        "2020-02-14",
+        "2020-02-15",
+        "2020-02-16",
+        "2020-02-17",
+        "2020-02-18",
+        "2020-02-19",
+        "2020-02-20",
+        "2020-02-21",
+        "2020-02-22",
+        "2020-02-23",
+        "2020-02-24",
+        "2020-02-25",
+        "2020-02-26",
+        "2020-02-27",
+        "2020-02-28",
+        "2020-02-29",
+        "2020-03-01",
+        "2020-03-02",
+        "2020-03-03",
+        "2020-03-04",
+        "2020-03-05",
+        "2020-03-06",
+        "2020-03-07",
+        "2020-03-08",
+        "2020-03-09",
+        "2020-03-10",
+        "2020-03-11",
+        "2020-03-12",
+        "2020-03-13",
+        "2020-03-14",
+        "2020-03-15",
+        "2020-03-16",
+        "2020-03-17",
+        "2020-03-18",
+        "2020-03-19",
+        "2020-03-20",
+        "2020-03-21",
+        "2020-03-22",
+        "2020-03-23",
+        "2020-03-24",
+        "2020-03-25",
+        "2020-03-26",
+        "2020-03-27"
+      ]
+    },
+    "as_of": "2020-03-27",
+    "expected_stopped": true
+  },
+  {
+    "id": "basis-break-at-anchor",
+    "input": {
+      "schema_version": "graph-recognition-input/0.1",
+      "context": {
+        "code": "SYNTHETIC_F01_ONLY",
+        "source_id": "synthetic-f01",
+        "price_basis_id": "synthetic-raw",
+        "price_mode": "RAW_CANDIDATE",
+        "volume_unit": "SHARES_REPORTED",
+        "corporate_action_comparability": "UNVERIFIED"
+      },
+      "bars": [
+        {
+          "date": "2020-01-01",
+          "open": "100",
+          "high": "101",
+          "low": "99",
+          "close": "100",
+          "volume_shares_scaled": "1000"
+        },
+        {
+          "date": "2020-01-02",
+          "open": "104",
+          "high": "105",
+          "low": "103",
+          "close": "104",
+          "volume_shares_scaled": "1007"
+        },
+        {
+          "date": "2020-01-03",
+          "open": "110",
+          "high": "111",
+          "low": "109",
+          "close": "110",
+          "volume_shares_scaled": "1014"
+        },
+        {
+          "date": "2020-01-04",
+          "open": "108",
+          "high": "109",
+          "low": "107",
+          "close": "108",
+          "volume_shares_scaled": "1021"
+        },
+        {
+          "date": "2020-01-05",
+          "open": "101",
+          "high": "102",
+          "low": "100",
+          "close": "101",
+          "volume_shares_scaled": "1028"
+        },
+        {
+          "date": "2020-01-06",
+          "open": "100",
+          "high": "101",
+          "low": "99",
+          "close": "100",
+          "volume_shares_scaled": "1035"
+        },
+        {
+          "date": "2020-01-07",
+          "open": "104",
+          "high": "105",
+          "low": "103",
+          "close": "104",
+          "volume_shares_scaled": "1042"
+        },
+        {
+          "date": "2020-01-08",
+          "open": "109",
+          "high": "110",
+          "low": "108",
+          "close": "109",
+          "volume_shares_scaled": "1049"
+        },
+        {
+          "date": "2020-01-09",
+          "open": "106",
+          "high": "107",
+          "low": "105",
+          "close": "106",
+          "volume_shares_scaled": "1056"
+        },
+        {
+          "date": "2020-01-10",
+          "open": "101",
+          "high": "102",
+          "low": "100",
+          "close": "101",
+          "volume_shares_scaled": "1063"
+        },
+        {
+          "date": "2020-01-11",
+          "open": "99",
+          "high": "100",
+          "low": "98",
+          "close": "99",
+          "volume_shares_scaled": "1070"
+        },
+        {
+          "date": "2020-01-12",
+          "open": "103",
+          "high": "104",
+          "low": "102",
+          "close": "103",
+          "volume_shares_scaled": "1077"
+        },
+        {
+          "date": "2020-01-13",
+          "open": "111",
+          "high": "112",
+          "low": "110",
+          "close": "111",
+          "volume_shares_scaled": "1084"
+        },
+        {
+          "date": "2020-01-14",
+          "open": "107",
+          "high": "108",
+          "low": "106",
+          "close": "107",
+          "volume_shares_scaled": "1091"
+        },
+        {
+          "date": "2020-01-15",
+          "open": "101",
+          "high": "102",
+          "low": "100",
+          "close": "101",
+          "volume_shares_scaled": "1098"
+        },
+        {
+          "date": "2020-01-16",
+          "open": "100",
+          "high": "101",
+          "low": "99",
+          "close": "100",
+          "volume_shares_scaled": "1105"
+        },
+        {
+          "date": "2020-01-17",
+          "open": "105",
+          "high": "106",
+          "low": "104",
+          "close": "105",
+          "volume_shares_scaled": "1112"
+        },
+        {
+          "date": "2020-01-18",
+          "open": "110",
+          "high": "111",
+          "low": "109",
+          "close": "110",
+          "volume_shares_scaled": "1119"
+        },
+        {
+          "date": "2020-01-19",
+          "open": "104",
+          "high": "105",
+          "low": "103",
+          "close": "104",
+          "volume_shares_scaled": "1126"
+        },
+        {
+          "date": "2020-01-20",
+          "open": "101",
+          "high": "102",
+          "low": "100",
+          "close": "101",
+          "volume_shares_scaled": "1133"
+        },
+        {
+          "date": "2020-01-21",
+          "open": "99",
+          "high": "100",
+          "low": "98",
+          "close": "99",
+          "volume_shares_scaled": "1140"
+        },
+        {
+          "date": "2020-01-22",
+          "open": "104",
+          "high": "105",
+          "low": "103",
+          "close": "104",
+          "volume_shares_scaled": "1147"
+        },
+        {
+          "date": "2020-01-23",
+          "open": "110",
+          "high": "111",
+          "low": "109",
+          "close": "110",
+          "volume_shares_scaled": "1154"
+        },
+        {
+          "date": "2020-01-24",
+          "open": "106",
+          "high": "107",
+          "low": "105",
+          "close": "106",
+          "volume_shares_scaled": "1161"
+        },
+        {
+          "date": "2020-01-25",
+          "open": "100",
+          "high": "101",
+          "low": "99",
+          "close": "100",
+          "volume_shares_scaled": "1168"
+        },
+        {
+          "date": "2020-01-26",
+          "open": "104",
+          "high": "105",
+          "low": "103",
+          "close": "104",
+          "volume_shares_scaled": "1175"
+        },
+        {
+          "date": "2020-01-27",
+          "open": "110",
+          "high": "111",
+          "low": "109",
+          "close": "110",
+          "volume_shares_scaled": "1182"
+        },
+        {
+          "date": "2020-01-28",
+          "open": "105",
+          "high": "106",
+          "low": "104",
+          "close": "105",
+          "volume_shares_scaled": "1189"
+        },
+        {
+          "date": "2020-01-29",
+          "open": "100",
+          "high": "101",
+          "low": "99",
+          "close": "100",
+          "volume_shares_scaled": "1196"
+        },
+        {
+          "date": "2020-01-30",
+          "open": "100",
+          "high": "101",
+          "low": "99",
+          "close": "100",
+          "volume_shares_scaled": "1203"
+        },
+        {
+          "date": "2020-01-31",
+          "open": "104",
+          "high": "105",
+          "low": "103",
+          "close": "104",
+          "volume_shares_scaled": "1210"
+        },
+        {
+          "date": "2020-02-01",
+          "open": "110",
+          "high": "111",
+          "low": "109",
+          "close": "110",
+          "volume_shares_scaled": "1217"
+        },
+        {
+          "date": "2020-02-02",
+          "open": "108",
+          "high": "109",
+          "low": "107",
+          "close": "108",
+          "volume_shares_scaled": "1224"
+        },
+        {
+          "date": "2020-02-03",
+          "open": "101",
+          "high": "102",
+          "low": "100",
+          "close": "101",
+          "volume_shares_scaled": "1231"
+        },
+        {
+          "date": "2020-02-04",
+          "open": "100",
+          "high": "101",
+          "low": "99",
+          "close": "100",
+          "volume_shares_scaled": "1238"
+        },
+        {
+          "date": "2020-02-05",
+          "open": "104",
+          "high": "105",
+          "low": "103",
+          "close": "104",
+          "volume_shares_scaled": "1245"
+        },
+        {
+          "date": "2020-02-06",
+          "open": "109",
+          "high": "110",
+          "low": "108",
+          "close": "109",
+          "volume_shares_scaled": "1252"
+        },
+        {
+          "date": "2020-02-07",
+          "open": "106",
+          "high": "107",
+          "low": "105",
+          "close": "106",
+          "volume_shares_scaled": "1259"
+        },
+        {
+          "date": "2020-02-08",
+          "open": "101",
+          "high": "102",
+          "low": "100",
+          "close": "101",
+          "volume_shares_scaled": "1266"
+        },
+        {
+          "date": "2020-02-09",
+          "open": "99",
+          "high": "100",
+          "low": "98",
+          "close": "99",
+          "volume_shares_scaled": "1273"
+        },
+        {
+          "date": "2020-02-10",
+          "open": "103",
+          "high": "104",
+          "low": "102",
+          "close": "103",
+          "volume_shares_scaled": "1280"
+        },
+        {
+          "date": "2020-02-11",
+          "open": "111",
+          "high": "112",
+          "low": "110",
+          "close": "111",
+          "volume_shares_scaled": "1287"
+        },
+        {
+          "date": "2020-02-12",
+          "open": "107",
+          "high": "108",
+          "low": "106",
+          "close": "107",
+          "volume_shares_scaled": "1294"
+        },
+        {
+          "date": "2020-02-13",
+          "open": "101",
+          "high": "102",
+          "low": "100",
+          "close": "101",
+          "volume_shares_scaled": "1301"
+        },
+        {
+          "date": "2020-02-14",
+          "open": "100",
+          "high": "101",
+          "low": "99",
+          "close": "100",
+          "volume_shares_scaled": "1308"
+        },
+        {
+          "date": "2020-02-15",
+          "open": "105",
+          "high": "106",
+          "low": "104",
+          "close": "105",
+          "volume_shares_scaled": "1315"
+        },
+        {
+          "date": "2020-02-16",
+          "open": "110",
+          "high": "111",
+          "low": "109",
+          "close": "110",
+          "volume_shares_scaled": "1322"
+        },
+        {
+          "date": "2020-02-17",
+          "open": "104",
+          "high": "105",
+          "low": "103",
+          "close": "104",
+          "volume_shares_scaled": "1329"
+        },
+        {
+          "date": "2020-02-18",
+          "open": "101",
+          "high": "102",
+          "low": "100",
+          "close": "101",
+          "volume_shares_scaled": "1336"
+        },
+        {
+          "date": "2020-02-19",
+          "open": "99",
+          "high": "100",
+          "low": "98",
+          "close": "99",
+          "volume_shares_scaled": "1343"
+        },
+        {
+          "date": "2020-02-20",
+          "open": "104",
+          "high": "105",
+          "low": "103",
+          "close": "104",
+          "volume_shares_scaled": "1350"
+        },
+        {
+          "date": "2020-02-21",
+          "open": "110",
+          "high": "111",
+          "low": "109",
+          "close": "110",
+          "volume_shares_scaled": "1357"
+        },
+        {
+          "date": "2020-02-22",
+          "open": "106",
+          "high": "107",
+          "low": "105",
+          "close": "106",
+          "volume_shares_scaled": "1364"
+        },
+        {
+          "date": "2020-02-23",
+          "open": "100",
+          "high": "101",
+          "low": "99",
+          "close": "100",
+          "volume_shares_scaled": "1371"
+        },
+        {
+          "date": "2020-02-24",
+          "open": "104",
+          "high": "105",
+          "low": "103",
+          "close": "104",
+          "volume_shares_scaled": "1378"
+        },
+        {
+          "date": "2020-02-25",
+          "open": "110",
+          "high": "111",
+          "low": "109",
+          "close": "110",
+          "volume_shares_scaled": "1385"
+        },
+        {
+          "date": "2020-02-26",
+          "open": "105",
+          "high": "106",
+          "low": "104",
+          "close": "105",
+          "volume_shares_scaled": "1392"
+        },
+        {
+          "date": "2020-02-27",
+          "open": "100",
+          "high": "101",
+          "low": "99",
+          "close": "100",
+          "volume_shares_scaled": "1399"
+        },
+        {
+          "date": "2020-02-28",
+          "open": "100",
+          "high": "101",
+          "low": "99",
+          "close": "100",
+          "volume_shares_scaled": "1406"
+        },
+        {
+          "date": "2020-02-29",
+          "open": "104",
+          "high": "105",
+          "low": "103",
+          "close": "104",
+          "volume_shares_scaled": "1413"
+        },
+        {
+          "date": "2020-03-01",
+          "open": "110",
+          "high": "111",
+          "low": "109",
+          "close": "110",
+          "volume_shares_scaled": "1420"
+        },
+        {
+          "date": "2020-03-02",
+          "open": "108",
+          "high": "109",
+          "low": "107",
+          "close": "108",
+          "volume_shares_scaled": "1427"
+        },
+        {
+          "date": "2020-03-03",
+          "open": "101",
+          "high": "102",
+          "low": "100",
+          "close": "101",
+          "volume_shares_scaled": "1434"
+        },
+        {
+          "date": "2020-03-04",
+          "open": "100",
+          "high": "101",
+          "low": "99",
+          "close": "100",
+          "volume_shares_scaled": "1441"
+        },
+        {
+          "date": "2020-03-05",
+          "open": "104",
+          "high": "105",
+          "low": "103",
+          "close": "104",
+          "volume_shares_scaled": "1448"
+        },
+        {
+          "date": "2020-03-06",
+          "open": "109",
+          "high": "110",
+          "low": "108",
+          "close": "109",
+          "volume_shares_scaled": "1455"
+        },
+        {
+          "date": "2020-03-07",
+          "open": "106",
+          "high": "107",
+          "low": "105",
+          "close": "106",
+          "volume_shares_scaled": "1462"
+        },
+        {
+          "date": "2020-03-08",
+          "open": "101",
+          "high": "102",
+          "low": "100",
+          "close": "101",
+          "volume_shares_scaled": "1469"
+        },
+        {
+          "date": "2020-03-09",
+          "open": "99",
+          "high": "100",
+          "low": "98",
+          "close": "99",
+          "volume_shares_scaled": "1476"
+        },
+        {
+          "date": "2020-03-10",
+          "open": "103",
+          "high": "104",
+          "low": "102",
+          "close": "103",
+          "volume_shares_scaled": "1483"
+        },
+        {
+          "date": "2020-03-11",
+          "open": "111",
+          "high": "112",
+          "low": "110",
+          "close": "111",
+          "volume_shares_scaled": "1490"
+        },
+        {
+          "date": "2020-03-12",
+          "open": "107",
+          "high": "108",
+          "low": "106",
+          "close": "107",
+          "volume_shares_scaled": "1497"
+        },
+        {
+          "date": "2020-03-13",
+          "open": "101",
+          "high": "102",
+          "low": "100",
+          "close": "101",
+          "volume_shares_scaled": "1504"
+        },
+        {
+          "date": "2020-03-14",
+          "open": "100",
+          "high": "101",
+          "low": "99",
+          "close": "100",
+          "volume_shares_scaled": "1511"
+        },
+        {
+          "date": "2020-03-15",
+          "open": "105",
+          "high": "106",
+          "low": "104",
+          "close": "105",
+          "volume_shares_scaled": "1518"
+        },
+        {
+          "date": "2020-03-16",
+          "open": "110",
+          "high": "111",
+          "low": "109",
+          "close": "110",
+          "volume_shares_scaled": "1525"
+        },
+        {
+          "date": "2020-03-17",
+          "open": "104",
+          "high": "105",
+          "low": "103",
+          "close": "104",
+          "volume_shares_scaled": "1532"
+        },
+        {
+          "date": "2020-03-18",
+          "open": "101",
+          "high": "102",
+          "low": "100",
+          "close": "101",
+          "volume_shares_scaled": "1539"
+        },
+        {
+          "date": "2020-03-19",
+          "open": "99",
+          "high": "100",
+          "low": "98",
+          "close": "99",
+          "volume_shares_scaled": "1546"
+        },
+        {
+          "date": "2020-03-20",
+          "open": "104",
+          "high": "105",
+          "low": "103",
+          "close": "104",
+          "volume_shares_scaled": "1553"
+        },
+        {
+          "date": "2020-03-21",
+          "open": "110",
+          "high": "111",
+          "low": "109",
+          "close": "110",
+          "volume_shares_scaled": "1560"
+        },
+        {
+          "date": "2020-03-22",
+          "open": "106",
+          "high": "107",
+          "low": "105",
+          "close": "106",
+          "volume_shares_scaled": "1567"
+        },
+        {
+          "date": "2020-03-23",
+          "open": "100",
+          "high": "101",
+          "low": "99",
+          "close": "100",
+          "volume_shares_scaled": "1574"
+        },
+        {
+          "date": "2020-03-24",
+          "open": "104",
+          "high": "105",
+          "low": "103",
+          "close": "104",
+          "volume_shares_scaled": "1581"
+        },
+        {
+          "date": "2020-03-25",
+          "open": "110",
+          "high": "111",
+          "low": "109",
+          "close": "110",
+          "volume_shares_scaled": "1588"
+        },
+        {
+          "date": "2020-03-26",
+          "open": "105",
+          "high": "106",
+          "low": "104",
+          "close": "105",
+          "volume_shares_scaled": "1595"
+        },
+        {
+          "date": "2020-03-27",
+          "open": "100",
+          "high": "101",
+          "low": "99",
+          "close": "100",
+          "volume_shares_scaled": "1602"
+        }
+      ],
+      "basis_break_dates": [
+        "2020-03-27"
+      ]
+    },
+    "as_of": "2020-03-27",
+    "expected_stopped": true
+  }
+]

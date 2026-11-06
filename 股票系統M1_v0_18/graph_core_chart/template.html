@@ -1,0 +1,12 @@
+<!doctype html><html lang="zh-Hant"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>M1 圖形辨識研究主圖 0.1</title><style>@@STYLE@@</style></head><body>
+<header><b>M1 圖形辨識研究主圖 0.1</b><label>個股 <select id="stock" aria-label="個股"></select></label><span id="anchor"></span></header>
+<main><div class="toolbar"><label>已算分析日 <select id="asOf" aria-label="已算分析日"></select></label><button id="prev">◀回放</button><button id="next">回放▶</button><button id="play">播放</button><button id="download">下載精確JSON</button></div>
+<p id="status" class="compact"></p><div class="toolbar"><button id="all">約五年</button><button id="months24">24月</button><button id="recent">近期60根</button><button id="left">←移圖</button><button id="right">移圖→</button><select id="interaction" aria-label="操作模式"><option value="query">拖曳查詢</option><option value="pan">移圖／雙指縮放</option><option value="scroll">捲頁</option></select></div>
+<div id="chartWrap"><canvas id="chart" tabindex="0" aria-label="自動候選與真實K線、量、MACD同步主圖"></canvas><div id="panelZoom"><button id="zoomIn" aria-label="放大">＋</button><button id="zoomOut" aria-label="縮小">−</button></div></div>
+<p id="window" class="compact"></p><p id="readout"></p><div class="toolbar"><button id="queryPrev">查詢◀</button><select id="queryDate" aria-label="查詢交易日"></select><button id="queryNext">▶查詢</button><label>研究箱 <select id="boxSelect" aria-label="研究箱候選"></select></label><button id="locate">聚焦箱來源</button><button id="evidenceButton">數值與反證</button></div>
+<details id="candidates"><summary>全部自動候選與尺度關係</summary><p>表列為研究候選，最長／最近／總量不代表重要性唯一排序。勾選只改顯示，不批准策略。</p><div id="candidateList"></div></details>
+<details id="manualAudit"><summary>人工案例對照（不輸入自動核心）</summary><div id="auditBody"></div></details>
+<details id="limits"><summary>研究設定、回放範圍及來源限制</summary><div id="limitsBody"></div><p>已算分析日為每120筆樣本與最近5交易日；K線與查詢保留全部真實來源，不補休市K。其他日期須離線CLI加算，不在UI補算。盤中順序、歷史公布可得、Raw完整公司行動／五年Adjusted未核；五年高不是完整歷史高。原資料缺口及SQLite未知根因保留。未訓練圖片模型，私人101圖不重讀／不公開。非即時、非交易建議，Android NOT_TESTED_NEW_BUILD，核心用途NOT_ESTABLISHED。</p></details>
+<p class="foot">正式區界、量口徑、增量、重要性／衰減、生命階段未定；研究箱不是已批准壓力或持股沉澱。原0.4.3及所有舊頁／證據保留；原file://政策阻擋未重試／未繞過。</p></main>
+<aside id="evidence" hidden><div class="toolbar"><b id="evidenceTitle"></b><button id="dismiss">關閉證據</button></div><div id="evidenceBody"></div></aside>
+<script id="payload" type="application/json">@@DATA@@</script><script>@@SCRIPT@@</script></body></html>

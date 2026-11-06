@@ -1,0 +1,87 @@
+{
+  "schema": "account-metrics-decimal-probe/0.1",
+  "synthetic": true,
+  "saved_source": {
+    "path": "capital_research/quantity_replay_20261026/cases/partial-then-independent/actual.json",
+    "bytes": 2107928,
+    "sha256": "a57872ae883ded5c880e2d28f8ec9a68d26addd915e5af2e9dd251bf9467c1dc"
+  },
+  "baseline_expected": {
+    "path": "capital_research/account_metrics_20261027/final/saved/complete-partial-chain/result.json",
+    "bytes": 7368,
+    "sha256": "8ed29a1f4b7169948f0f98a10d0285d735a68f00f24ea4da74ed4ddea954315a"
+  },
+  "evaluation_at": "2026-01-12T16:00:00+08:00",
+  "contexts": [
+    {
+      "name": "normal",
+      "context": {
+        "prec": 28,
+        "rounding": "ROUND_HALF_EVEN",
+        "Emin": -999999,
+        "Emax": 999999,
+        "capitals": 1,
+        "clamp": 0,
+        "traps": [
+          "InvalidOperation",
+          "DivisionByZero",
+          "Overflow"
+        ],
+        "flags": []
+      }
+    },
+    {
+      "name": "different-rounding",
+      "context": {
+        "prec": 7,
+        "rounding": "ROUND_UP",
+        "Emin": -999999,
+        "Emax": 999999,
+        "capitals": 1,
+        "clamp": 0,
+        "traps": [
+          "InvalidOperation",
+          "DivisionByZero",
+          "Overflow"
+        ],
+        "flags": []
+      }
+    },
+    {
+      "name": "inexact-trap",
+      "context": {
+        "prec": 28,
+        "rounding": "ROUND_HALF_EVEN",
+        "Emin": -999999,
+        "Emax": 999999,
+        "capitals": 1,
+        "clamp": 0,
+        "traps": [
+          "InvalidOperation",
+          "DivisionByZero",
+          "Overflow",
+          "Inexact"
+        ],
+        "flags": []
+      }
+    },
+    {
+      "name": "narrow-exponents",
+      "context": {
+        "prec": 28,
+        "rounding": "ROUND_HALF_EVEN",
+        "Emin": -2,
+        "Emax": 2,
+        "capitals": 1,
+        "clamp": 0,
+        "traps": [
+          "InvalidOperation",
+          "DivisionByZero",
+          "Overflow",
+          "Underflow"
+        ],
+        "flags": []
+      }
+    }
+  ]
+}

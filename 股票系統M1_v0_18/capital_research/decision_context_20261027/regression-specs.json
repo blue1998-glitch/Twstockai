@@ -1,0 +1,27 @@
+[
+  {
+    "name": "wrong-latest",
+    "change": "Replace previous with the valid saved first generation baseline decision",
+    "error": "LATEST_PREDECESSOR_REQUIRED"
+  },
+  {
+    "name": "checkpoint-token-change",
+    "change": "Remove the first checkpoint.state.reviewed_evidence_tokens entry only",
+    "error": "Checkpoint differs from original ledger/fills/order states"
+  },
+  {
+    "name": "reserve-drop",
+    "change": "Set data.account.reserved_cash to 0 only",
+    "error": "Next account/cutoff resets or drops authoritative cash, rights, holdings or orders"
+  },
+  {
+    "name": "cash-right-drop",
+    "change": "Set data.account.cash_claims to [] only",
+    "error": "Next account/cutoff resets or drops authoritative cash, rights, holdings or orders"
+  },
+  {
+    "name": "missing-checkpoint",
+    "change": "Set checkpoint to null only",
+    "error": "LEDGER_CHECKPOINT_REQUIRED"
+  }
+]

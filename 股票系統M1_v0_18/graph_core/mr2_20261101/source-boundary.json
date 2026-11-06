@@ -1,0 +1,116 @@
+{
+  "schema": "mr2-source-boundary/0.1",
+  "status": "BLOCKED",
+  "conclusion": "Date-specific historical market originals and approved access scope not established in this intake; not a claim that all lawful historical sources are unavailable",
+  "library_originals": {
+    "Twstockai_M_R1_Research_20261101.md": "NOT_OBTAINED_NOT_READ",
+    "Twstockai_M_R1_Evidence_20261101.zip": "NOT_OBTAINED_NOT_READ"
+  },
+  "documents": [
+    {
+      "document": "tpex-terms",
+      "url": "https://www.tpex.org.tw/zh-tw/gtsm_disclaimer.html",
+      "bytes": 11008,
+      "sha256": "252e911c4b83d0d7a663e0db66ce56ac1bcdf2e2a12503a47a3ad75258c840d1"
+    },
+    {
+      "document": "twse-terms",
+      "url": "https://www.twse.com.tw/zh/terms/use.html",
+      "bytes": 4706,
+      "sha256": "8fa2085eabf43e5f4b9a16eb1e33581e924b5458413800e0c68f4b2c8b672cce"
+    },
+    {
+      "document": "government-tpex",
+      "url": "https://data.gov.tw/dataset/11369",
+      "bytes": 5841,
+      "sha256": "a08fab4a4cd896e328edac2864bb6eda8d8a9b0987ff7657386a2d57d19e8274"
+    },
+    {
+      "document": "government-twse",
+      "url": "https://data.gov.tw/dataset/11555",
+      "bytes": 7833,
+      "sha256": "83c8c4cb2ab982babfa283b37d90ca9c3747a8c45644cf1c6655b2da79b80076"
+    }
+  ],
+  "findings": [
+    {
+      "source": "TPEx website terms",
+      "url": "https://www.tpex.org.tw/zh-tw/gtsm_disclaimer.html",
+      "section": "五、下載軟體或資料／七、智慧財產權的保護",
+      "quote": "非依櫃檯買賣中心同意之方式或經櫃檯買賣中心所同意者，禁止透過包括但不限於自動化裝置、指令碼、自動程式、蜘蛛程式、爬蟲程式或擷取程式等方式下載本網站之軟體或資料。",
+      "exception": "Government Open Data Platform datasets are excepted; no blanket historical endpoint permission inferred"
+    },
+    {
+      "source": "TWSE website terms",
+      "url": "https://www.twse.com.tw/zh/terms/use.html",
+      "section": "06／08",
+      "quote": "非依臺灣證券交易所同意之方式或經臺灣證券交易所同意者，禁止透過包括但不限於自動化裝置、指令碼、自動程式、蜘蛛程式、爬蟲程式或擷取程式等方式下載本網站之軟體或資料。",
+      "exception": "Government Open Data Platform datasets are excepted; no blanket historical endpoint permission inferred"
+    },
+    {
+      "source": "Government TWSE daily market statistics catalogue",
+      "url": "https://data.gov.tw/dataset/11555",
+      "license": "政府資料開放授權條款-第1版",
+      "published_resource": "https://www.twse.com.tw/exchangeReport/MI_INDEX?response=open_data",
+      "catalogue_updated": "2025-05-01 11:25",
+      "official_reply_date": "2020-04-27",
+      "official_reply": "集中市場每日收盤行情目前於政府資料開放平台提供大盤統計資訊, 可使用response=open_data抓取，每次抓取均提供最新的資料，不需使用日期參數",
+      "limit": "Reply is historical, not proof of every current API behavior; catalogue did not establish date-specific historical breadth access",
+      "catalogued_fields": [
+        "日期",
+        "指數/報酬指數",
+        "收盤指數",
+        "漲跌(+/-)",
+        "漲跌點數",
+        "漲跌百分比(%)",
+        "特殊處理註記"
+      ],
+      "required_breadth_fields_not_established": [
+        "上漲家數",
+        "下跌家數"
+      ]
+    },
+    {
+      "source": "Government TPEx market highlight catalogue",
+      "url": "https://data.gov.tw/dataset/11369",
+      "license": "政府資料開放授權條款-第1版",
+      "published_resource": "https://www.tpex.org.tw/web/stock/aftertrading/market_highlight/highlight_result.php?l=zh-tw&o=data",
+      "catalogue_updated": "2024-12-31 19:09",
+      "scope": "Index and breadth fields are described, but a historical date-specific approved resource was not established"
+    },
+    {
+      "source": "TPEx official OpenAPI specification",
+      "url": "https://www.tpex.org.tw/openapi/swagger.json",
+      "endpoint": "/tpex_mainborad_highlight",
+      "title": "上櫃股票市場現況",
+      "servers": [
+        {
+          "url": "https://www.tpex.org.tw/openapi/v1"
+        }
+      ],
+      "documented_operation_parameters": [],
+      "documented_global_parameters": {},
+      "documented_historical_date_parameter": false,
+      "limit": "Absent documented date parameter is not proof of unsupported implementation; no unapproved parameter probes executed"
+    }
+  ],
+  "retained_market_file": "docs/visual-discussion/20261022_b_basis_source_work_review/raw/market-07.json",
+  "retained_market_fields": [
+    "日期",
+    "成交股數",
+    "成交金額",
+    "成交筆數",
+    "發行量加權股價指數",
+    "漲跌點數"
+  ],
+  "retained_market_has_official_advancing_declining_counts": false,
+  "requested_dates": [
+    "2026-07-21",
+    "2026-07-22"
+  ],
+  "historical_quote_endpoint_requests": 0,
+  "openapi_quote_requests": 0,
+  "api_parameter_probes": 0,
+  "full_81_day_download": false,
+  "blocked_endpoint_retry_or_bypass": false
+}

@@ -1,0 +1,7 @@
+接續股票系統 M1 v0.14。先完整閱讀 AGENTS.md、README.md、docs/候選規則_v0.1.md、docs/週月均線獨立契約.md、docs/週月保存與唯讀契約.md、docs/CODEX交接.md 及 period_persistence/output/週月保存與檢視驗收.md。
+
+請按交接「下一階段」新增獨立背景 period RUN→保存→指定讀回 workflow。沿用 period_jobs 與 PeriodStore 公開介面；只有明確 RUN 可計算，READ/LOOKUP/展示不得 import 或呼叫引擎，禁止自動最新日／版本。保存衝突不可覆寫，回覆失敗保留 COMMITTED／UNKNOWN 與 ID，能明確讀回。新驗收庫與 v0.14 已保存 12 份結果分離。
+
+不得改核心策略或門檻、舊統一契約、既有核心、三個歷史 SQLite、舊 HTML 或本版保存庫。重大共用 schema migration 先準備具體相容提案，不直接執行。維持所有 NOT_VALIDATED／NOT_EVALUATED 及未認證來源限制。
+
+可自行診斷與執行一般修正；不逐步問非工程師使用者。不可部署、發布、付費、交易、發訊息、開子代理或重試已被拒絕來源。實跑測試、交付機器證據與清楚報告；真實瀏覽器／手機若未跑就明示未驗收。每次結尾指定下一步工作模式或轉 Codex。

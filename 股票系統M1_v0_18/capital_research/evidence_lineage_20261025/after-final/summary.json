@@ -1,0 +1,78 @@
+{
+  "drop-known-revocation": {
+    "error": null,
+    "prefix_equal": null,
+    "B_qualified": false,
+    "new_B_fills": [],
+    "status": "REFUSED",
+    "B_order_status": null
+  },
+  "extend-expiry-to-null": {
+    "error": null,
+    "prefix_equal": null,
+    "B_qualified": false,
+    "new_B_fills": [],
+    "status": "REFUSED",
+    "B_order_status": null
+  },
+  "extend-expiry-later": {
+    "error": null,
+    "prefix_equal": null,
+    "B_qualified": false,
+    "new_B_fills": [],
+    "status": "REFUSED",
+    "B_order_status": null
+  },
+  "alias-drop-revocation": {
+    "error": null,
+    "prefix_equal": null,
+    "B_qualified": false,
+    "new_B_fills": [],
+    "status": "REFUSED",
+    "B_order_status": null
+  },
+  "rename-keep-revocation": {
+    "error": null,
+    "prefix_equal": null,
+    "B_qualified": false,
+    "new_B_fills": [],
+    "status": "REFUSED",
+    "B_order_status": null
+  },
+  "valid-old-fact": {
+    "error": null,
+    "prefix_equal": null,
+    "B_qualified": true,
+    "new_B_fills": [
+      "20"
+    ],
+    "status": "SYNTHETIC_EXECUTION_REPLAY",
+    "B_order_status": "FILLED"
+  },
+  "independent-new-fact": {
+    "error": null,
+    "prefix_equal": null,
+    "B_qualified": true,
+    "new_B_fills": [
+      "20"
+    ],
+    "status": "SYNTHETIC_EXECUTION_REPLAY",
+    "B_order_status": "FILLED"
+  },
+  "future-revocation": {
+    "error": null,
+    "prefix_equal": true,
+    "B_qualified": true,
+    "new_B_fills": [],
+    "status": "SYNTHETIC_EXECUTION_REPLAY",
+    "B_order_status": "CANCELLED_EVIDENCE"
+  },
+  "future-stripped-at-review": {
+    "error": null,
+    "prefix_equal": true,
+    "B_qualified": true,
+    "new_B_fills": [],
+    "status": "SYNTHETIC_EXECUTION_REPLAY",
+    "B_order_status": "CANCELLED_EVIDENCE"
+  }
+}

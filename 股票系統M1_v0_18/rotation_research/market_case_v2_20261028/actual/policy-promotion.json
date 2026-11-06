@@ -1,0 +1,17 @@
+{
+  "actual": null,
+  "error": "RESEARCH_CONTROL_NOT_AUTHORIZED",
+  "traceback": "Traceback (most recent call last):\n  File \"/workspace/Twstockai/股票系統M1_v0_18/rotation_research/market_case_v2_20261028/build.py\", line 28, in probe\n    try:actual=prepare_context(request,saved,summary);error=None;trace=None\n               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"/workspace/Twstockai/股票系統M1_v0_18/rotation_research/market_case_v2.py\", line 138, in prepare_context\n    opportunity=_header(request,saved,work_summary)\n                ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"/workspace/Twstockai/股票系統M1_v0_18/rotation_research/market_case_v2.py\", line 42, in _header\n    require(set(request['research_controls'])=={'K','X4','R4_X5','X5'} and all(x=='UNAPPROVED' for x in request['research_controls'].values()),'RESEARCH_CONTROL_NOT_AUTHORIZED')\n  File \"/workspace/Twstockai/股票系統M1_v0_18/rotation_research/market_case.py\", line 27, in require\n    if not ok:raise CaseError(reason)\n              ^^^^^^^^^^^^^^^^^^^^^^^\nrotation_research.market_case.CaseError: RESEARCH_CONTROL_NOT_AUTHORIZED\n",
+  "calls": {
+    "context": 1,
+    "source_validate": 0,
+    "qualify": 0,
+    "ledger_replay": 0,
+    "capital_simulate": 0,
+    "quantity_replay": 0,
+    "legacy_prepare": 0
+  },
+  "input_unchanged": true,
+  "sources_unchanged": true,
+  "summary_unchanged": true
+}

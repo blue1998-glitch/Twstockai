@@ -1,0 +1,7 @@
+# 單次原生測試：固定原bytes讀回
+
+公開工程f997cd79c7066d4bbe40c93f20af5fb359b20210，9檔固定GitHub原bytes／長度／SHA全相符。私庫探針固定cdb7f96c1636adadd0a80f88263f6f8bd606d87c，結果封存0eaed28c474bfbb4b0e05a3705f55dd98e25be70；workflow及result.json亦逐原bytes核對。收據另存避免自指。
+
+原生run41962648744 attempt1 success，真實runner與marker日誌確認；全私庫run總數1、沒有重送／dispatch／rerun，workflow已disabled_manually。本次不是mock測試，亦沒有重跑任何舊測試。9秒run／4秒job不是計費分鐘；Billing設定未改、帳單未另API核實，僅能證明在使用者確認的US$0設定下本次工作成功。Oracle查詢0，NOT_CONNECTED。
+
+完整原生run/job/check/log存Git外，不公開敏感原件。舊Environment Secrets設計停止；本輪未新增任何替代Secrets或OCI key，不要求放寬預算。下一安全缺口交總監審查新憑證隔離方案，本輪到此停止。原FM3／owner／原Cloud／公開main／880未追蹤檔保持。

@@ -1,0 +1,46 @@
+{
+  "id": "evaluated-complete--result",
+  "schema": "rotation-record/0.1",
+  "value": {
+    "data_qualified": false,
+    "evaluation_id": "sha256:9624a43a13150af6dc145a634cd7f1245243a667bd07e431f865f52bd8dce6c2",
+    "evaluation_record_id": "sha256:c99184eb04574e579c35f5fdeb3471e7a7fc33e43175e6f77e4ee770d3c112b5",
+    "evaluation_status": "EVALUATED",
+    "execution_model_qualified": false,
+    "header_id": "sha256:384cc162f52be0d7ec3c4b86bf64e54aa837bbbe50095f6ad00a6533ca0c3f9e",
+    "historical_signal_eligible": false,
+    "live_execution_authorized": false,
+    "operation_id": "evaluated-complete",
+    "outcome": "COMPLETED_EVALUATED",
+    "policy_authorized": false,
+    "primary_pressure_id": null,
+    "ranking": null,
+    "reasons": [],
+    "replay_document_id": "sha256:7b235b6e3f8ce5788d236acb72a22bd04b2e07619566fa84544a969403206d58",
+    "replay_status": "COMPLETED_PROVIDED_ROUNDS",
+    "request_id": "sha256:fc3293ffb87aa4e6c1a2f964174a7b892c3d1a0f233c13baa3b0101c61ff587c",
+    "result_id": "sha256:78232b5a1bfa64338c7c8dc495c2697065ca4c058786c579ee9b5d3f5420b3f1",
+    "schema": "capital-evaluated-replay-result/0.1",
+    "selected_strategy": null,
+    "summary": {
+      "costs": {
+        "cost_treatment": "ALREADY_RECORDED_FEES_NOT_DEDUCTED_AGAIN_TERMINAL_EXIT_SEPARATE",
+        "recorded_fill_fee_tax": "0",
+        "terminal_estimated_exit_cost": "9.150"
+      },
+      "initial_capital": "2230",
+      "statistics": {
+        "maximum_drawdown": "0",
+        "maximum_drawdown_duration_calendar_days": 0,
+        "maximum_drawdown_episode": null,
+        "ongoing_underwater_calendar_days": 0,
+        "period_accrual_growth": "0",
+        "recovery_censored": false
+      },
+      "terminal_accrual_equity": "2230",
+      "terminal_net_equity": "2220.850",
+      "terminal_net_growth": "-0.00410313901345291479820627802690582959641255605381"
+    },
+    "synthetic": true
+  }
+}

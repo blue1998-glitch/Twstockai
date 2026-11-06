@@ -1,0 +1,915 @@
+{
+  "schema_version": "explicit-volume-peak-probe-summary/0.1",
+  "probes": [
+    {
+      "file": "probe-01.json",
+      "config": {
+        "k": 1,
+        "r": "1.10",
+        "qualification": "RESEARCH_PROBE_NOT_APPROVED_NO_DEFAULT_OR_OPTIMUM"
+      },
+      "status": "RESEARCH_CANDIDATES_ONLY",
+      "confirmed_peaks": 45,
+      "pending_peaks": 1,
+      "maximal_groups": 25,
+      "highest_vote_group_count": 1,
+      "highest_vote_groups": [
+        {
+          "id": "sha256:2f2cf90f8bf1703e4129f912855b7f2e45513084ef18a60f2e371c1c9d70e817",
+          "votes": 8,
+          "min": "31962933",
+          "max": "35146804",
+          "member_dates": [
+            "2025-12-15",
+            "2026-01-07",
+            "2026-02-26",
+            "2026-04-15",
+            "2026-04-23",
+            "2026-05-25",
+            "2026-06-11",
+            "2026-07-07"
+          ],
+          "comparisons": {
+            "to_min": {
+              "relation": "ABOVE",
+              "delta": "25474951",
+              "reason": "AVAILABLE"
+            },
+            "to_max": {
+              "relation": "ABOVE",
+              "delta": "22291080",
+              "reason": "AVAILABLE"
+            },
+            "to_original_maximum": {
+              "relation": "BELOW",
+              "delta": "-40779250",
+              "reason": "AVAILABLE"
+            }
+          }
+        }
+      ]
+    },
+    {
+      "file": "probe-02.json",
+      "config": {
+        "k": 1,
+        "r": "1.15",
+        "qualification": "RESEARCH_PROBE_NOT_APPROVED_NO_DEFAULT_OR_OPTIMUM"
+      },
+      "status": "RESEARCH_CANDIDATES_ONLY",
+      "confirmed_peaks": 45,
+      "pending_peaks": 1,
+      "maximal_groups": 20,
+      "highest_vote_group_count": 2,
+      "highest_vote_groups": [
+        {
+          "id": "sha256:838c745d004b20f56c3e10393108793ce10c12f3e0e989b06e9bd3762a38c7ed",
+          "votes": 11,
+          "min": "30552513",
+          "max": "35021019",
+          "member_dates": [
+            "2025-11-26",
+            "2025-12-15",
+            "2026-02-23",
+            "2026-02-26",
+            "2026-04-15",
+            "2026-04-23",
+            "2026-05-04",
+            "2026-05-18",
+            "2026-05-25",
+            "2026-06-11",
+            "2026-07-07"
+          ],
+          "comparisons": {
+            "to_min": {
+              "relation": "ABOVE",
+              "delta": "26885371",
+              "reason": "AVAILABLE"
+            },
+            "to_max": {
+              "relation": "ABOVE",
+              "delta": "22416865",
+              "reason": "AVAILABLE"
+            },
+            "to_original_maximum": {
+              "relation": "BELOW",
+              "delta": "-40779250",
+              "reason": "AVAILABLE"
+            }
+          }
+        },
+        {
+          "id": "sha256:920d24042c29d4ccfa64db8a7474945e5cadf08691681d0557b5e367f71b81b6",
+          "votes": 11,
+          "min": "30791526",
+          "max": "35146804",
+          "member_dates": [
+            "2025-11-26",
+            "2025-12-15",
+            "2026-01-07",
+            "2026-02-26",
+            "2026-04-15",
+            "2026-04-23",
+            "2026-05-04",
+            "2026-05-18",
+            "2026-05-25",
+            "2026-06-11",
+            "2026-07-07"
+          ],
+          "comparisons": {
+            "to_min": {
+              "relation": "ABOVE",
+              "delta": "26646358",
+              "reason": "AVAILABLE"
+            },
+            "to_max": {
+              "relation": "ABOVE",
+              "delta": "22291080",
+              "reason": "AVAILABLE"
+            },
+            "to_original_maximum": {
+              "relation": "BELOW",
+              "delta": "-40779250",
+              "reason": "AVAILABLE"
+            }
+          }
+        }
+      ]
+    },
+    {
+      "file": "probe-03.json",
+      "config": {
+        "k": 1,
+        "r": "1.20",
+        "qualification": "RESEARCH_PROBE_NOT_APPROVED_NO_DEFAULT_OR_OPTIMUM"
+      },
+      "status": "RESEARCH_CANDIDATES_ONLY",
+      "confirmed_peaks": 45,
+      "pending_peaks": 1,
+      "maximal_groups": 23,
+      "highest_vote_group_count": 3,
+      "highest_vote_groups": [
+        {
+          "id": "sha256:9c4a61b69830cec3a7332bb8bba98ac6ed18e670ff09df06f54755bcc04afd31",
+          "votes": 12,
+          "min": "30552513",
+          "max": "35146804",
+          "member_dates": [
+            "2025-11-26",
+            "2025-12-15",
+            "2026-01-07",
+            "2026-02-23",
+            "2026-02-26",
+            "2026-04-15",
+            "2026-04-23",
+            "2026-05-04",
+            "2026-05-18",
+            "2026-05-25",
+            "2026-06-11",
+            "2026-07-07"
+          ],
+          "comparisons": {
+            "to_min": {
+              "relation": "ABOVE",
+              "delta": "26885371",
+              "reason": "AVAILABLE"
+            },
+            "to_max": {
+              "relation": "ABOVE",
+              "delta": "22291080",
+              "reason": "AVAILABLE"
+            },
+            "to_original_maximum": {
+              "relation": "BELOW",
+              "delta": "-40779250",
+              "reason": "AVAILABLE"
+            }
+          }
+        },
+        {
+          "id": "sha256:b3ab342367d0e8ff7b190c064b424f97cd7bb8c4e41dfe8bf0c397c18bf39949",
+          "votes": 12,
+          "min": "39193167",
+          "max": "46730970",
+          "member_dates": [
+            "2025-11-24",
+            "2025-12-19",
+            "2025-12-29",
+            "2026-01-26",
+            "2026-01-29",
+            "2026-03-09",
+            "2026-03-31",
+            "2026-05-06",
+            "2026-06-03",
+            "2026-06-15",
+            "2026-06-22",
+            "2026-07-09"
+          ],
+          "comparisons": {
+            "to_min": {
+              "relation": "ABOVE",
+              "delta": "18244717",
+              "reason": "AVAILABLE"
+            },
+            "to_max": {
+              "relation": "ABOVE",
+              "delta": "10706914",
+              "reason": "AVAILABLE"
+            },
+            "to_original_maximum": {
+              "relation": "BELOW",
+              "delta": "-40779250",
+              "reason": "AVAILABLE"
+            }
+          }
+        },
+        {
+          "id": "sha256:a4b7325bbb835c01ed55794e4244c2e5a7e24288d9bdd252dfae674f93245cda",
+          "votes": 12,
+          "min": "43390757",
+          "max": "51860722",
+          "member_dates": [
+            "2025-11-24",
+            "2025-12-29",
+            "2026-01-26",
+            "2026-02-02",
+            "2026-03-05",
+            "2026-03-09",
+            "2026-03-31",
+            "2026-05-06",
+            "2026-05-29",
+            "2026-06-03",
+            "2026-06-08",
+            "2026-07-01"
+          ],
+          "comparisons": {
+            "to_min": {
+              "relation": "ABOVE",
+              "delta": "14047127",
+              "reason": "AVAILABLE"
+            },
+            "to_max": {
+              "relation": "ABOVE",
+              "delta": "5577162",
+              "reason": "AVAILABLE"
+            },
+            "to_original_maximum": {
+              "relation": "BELOW",
+              "delta": "-40779250",
+              "reason": "AVAILABLE"
+            }
+          }
+        }
+      ]
+    },
+    {
+      "file": "probe-04.json",
+      "config": {
+        "k": 2,
+        "r": "1.10",
+        "qualification": "RESEARCH_PROBE_NOT_APPROVED_NO_DEFAULT_OR_OPTIMUM"
+      },
+      "status": "RESEARCH_CANDIDATES_ONLY",
+      "confirmed_peaks": 32,
+      "pending_peaks": 0,
+      "maximal_groups": 18,
+      "highest_vote_group_count": 4,
+      "highest_vote_groups": [
+        {
+          "id": "sha256:6b714a2042c3a7ec10b7a5a80cb5885244d107110bdd661b337bc2d5173a4842",
+          "votes": 6,
+          "min": "33620859",
+          "max": "35146804",
+          "member_dates": [
+            "2025-12-15",
+            "2026-01-07",
+            "2026-02-26",
+            "2026-04-15",
+            "2026-04-23",
+            "2026-05-25"
+          ],
+          "comparisons": {
+            "to_min": {
+              "relation": "ABOVE",
+              "delta": "23817025",
+              "reason": "AVAILABLE"
+            },
+            "to_max": {
+              "relation": "ABOVE",
+              "delta": "22291080",
+              "reason": "AVAILABLE"
+            },
+            "to_original_maximum": {
+              "relation": "BELOW",
+              "delta": "-40779250",
+              "reason": "AVAILABLE"
+            }
+          }
+        },
+        {
+          "id": "sha256:24a3b5417c8bbc45dd9a83d5f47b3bdfad614e713ea137fa6900d50f913cfc93",
+          "votes": 6,
+          "min": "43882131",
+          "max": "48157632",
+          "member_dates": [
+            "2025-11-24",
+            "2025-12-29",
+            "2026-02-02",
+            "2026-03-31",
+            "2026-05-06",
+            "2026-06-03"
+          ],
+          "comparisons": {
+            "to_min": {
+              "relation": "ABOVE",
+              "delta": "13555753",
+              "reason": "AVAILABLE"
+            },
+            "to_max": {
+              "relation": "ABOVE",
+              "delta": "9280252",
+              "reason": "AVAILABLE"
+            },
+            "to_original_maximum": {
+              "relation": "BELOW",
+              "delta": "-40779250",
+              "reason": "AVAILABLE"
+            }
+          }
+        },
+        {
+          "id": "sha256:737bb7115956234cee5ab38952c305847079507ae9466208228bfe0cbc0a809b",
+          "votes": 6,
+          "min": "44638336",
+          "max": "48865305",
+          "member_dates": [
+            "2025-11-24",
+            "2025-12-29",
+            "2026-02-02",
+            "2026-05-06",
+            "2026-06-03",
+            "2026-07-01"
+          ],
+          "comparisons": {
+            "to_min": {
+              "relation": "ABOVE",
+              "delta": "12799548",
+              "reason": "AVAILABLE"
+            },
+            "to_max": {
+              "relation": "ABOVE",
+              "delta": "8572579",
+              "reason": "AVAILABLE"
+            },
+            "to_original_maximum": {
+              "relation": "BELOW",
+              "delta": "-40779250",
+              "reason": "AVAILABLE"
+            }
+          }
+        },
+        {
+          "id": "sha256:0cbcfd481e0939aadea55be1c4d0a456f8e3c1035443425e043e5441fcf91a83",
+          "votes": 6,
+          "min": "48157632",
+          "max": "52859340",
+          "member_dates": [
+            "2025-11-28",
+            "2026-02-02",
+            "2026-03-05",
+            "2026-05-29",
+            "2026-06-08",
+            "2026-07-01"
+          ],
+          "comparisons": {
+            "to_min": {
+              "relation": "ABOVE",
+              "delta": "9280252",
+              "reason": "AVAILABLE"
+            },
+            "to_max": {
+              "relation": "ABOVE",
+              "delta": "4578544",
+              "reason": "AVAILABLE"
+            },
+            "to_original_maximum": {
+              "relation": "BELOW",
+              "delta": "-40779250",
+              "reason": "AVAILABLE"
+            }
+          }
+        }
+      ]
+    },
+    {
+      "file": "probe-05.json",
+      "config": {
+        "k": 2,
+        "r": "1.15",
+        "qualification": "RESEARCH_PROBE_NOT_APPROVED_NO_DEFAULT_OR_OPTIMUM"
+      },
+      "status": "RESEARCH_CANDIDATES_ONLY",
+      "confirmed_peaks": 32,
+      "pending_peaks": 0,
+      "maximal_groups": 17,
+      "highest_vote_group_count": 3,
+      "highest_vote_groups": [
+        {
+          "id": "sha256:b5ac21ac54426b059b0600d7b0d5b52f9770d3a80045f48e5dfea42f320ca525",
+          "votes": 8,
+          "min": "43882131",
+          "max": "49699249",
+          "member_dates": [
+            "2025-11-24",
+            "2025-12-29",
+            "2026-02-02",
+            "2026-03-31",
+            "2026-05-06",
+            "2026-05-29",
+            "2026-06-03",
+            "2026-07-01"
+          ],
+          "comparisons": {
+            "to_min": {
+              "relation": "ABOVE",
+              "delta": "13555753",
+              "reason": "AVAILABLE"
+            },
+            "to_max": {
+              "relation": "ABOVE",
+              "delta": "7738635",
+              "reason": "AVAILABLE"
+            },
+            "to_original_maximum": {
+              "relation": "BELOW",
+              "delta": "-40779250",
+              "reason": "AVAILABLE"
+            }
+          }
+        },
+        {
+          "id": "sha256:70245781eee0c8ab40d0fc2842dc689d1e5cd4e16cf84053fc33b2eafe1f7332",
+          "votes": 8,
+          "min": "44638336",
+          "max": "50595969",
+          "member_dates": [
+            "2025-11-24",
+            "2025-12-29",
+            "2026-02-02",
+            "2026-03-05",
+            "2026-05-06",
+            "2026-05-29",
+            "2026-06-03",
+            "2026-07-01"
+          ],
+          "comparisons": {
+            "to_min": {
+              "relation": "ABOVE",
+              "delta": "12799548",
+              "reason": "AVAILABLE"
+            },
+            "to_max": {
+              "relation": "ABOVE",
+              "delta": "6841915",
+              "reason": "AVAILABLE"
+            },
+            "to_original_maximum": {
+              "relation": "BELOW",
+              "delta": "-40779250",
+              "reason": "AVAILABLE"
+            }
+          }
+        },
+        {
+          "id": "sha256:16f31865029e4f28f4361454e0f39e0bc3937d447b5446fb1d91797d9664f978",
+          "votes": 8,
+          "min": "45105494",
+          "max": "51860722",
+          "member_dates": [
+            "2025-11-24",
+            "2025-12-29",
+            "2026-02-02",
+            "2026-03-05",
+            "2026-05-29",
+            "2026-06-03",
+            "2026-06-08",
+            "2026-07-01"
+          ],
+          "comparisons": {
+            "to_min": {
+              "relation": "ABOVE",
+              "delta": "12332390",
+              "reason": "AVAILABLE"
+            },
+            "to_max": {
+              "relation": "ABOVE",
+              "delta": "5577162",
+              "reason": "AVAILABLE"
+            },
+            "to_original_maximum": {
+              "relation": "BELOW",
+              "delta": "-40779250",
+              "reason": "AVAILABLE"
+            }
+          }
+        }
+      ]
+    },
+    {
+      "file": "probe-06.json",
+      "config": {
+        "k": 2,
+        "r": "1.20",
+        "qualification": "RESEARCH_PROBE_NOT_APPROVED_NO_DEFAULT_OR_OPTIMUM"
+      },
+      "status": "RESEARCH_CANDIDATES_ONLY",
+      "confirmed_peaks": 32,
+      "pending_peaks": 0,
+      "maximal_groups": 17,
+      "highest_vote_group_count": 2,
+      "highest_vote_groups": [
+        {
+          "id": "sha256:5abca51b7d43eba37b138ec6a75cbb80d243d9d6653063b4b7157a1c27683378",
+          "votes": 10,
+          "min": "43882131",
+          "max": "51860722",
+          "member_dates": [
+            "2025-11-24",
+            "2025-12-29",
+            "2026-02-02",
+            "2026-03-05",
+            "2026-03-31",
+            "2026-05-06",
+            "2026-05-29",
+            "2026-06-03",
+            "2026-06-08",
+            "2026-07-01"
+          ],
+          "comparisons": {
+            "to_min": {
+              "relation": "ABOVE",
+              "delta": "13555753",
+              "reason": "AVAILABLE"
+            },
+            "to_max": {
+              "relation": "ABOVE",
+              "delta": "5577162",
+              "reason": "AVAILABLE"
+            },
+            "to_original_maximum": {
+              "relation": "BELOW",
+              "delta": "-40779250",
+              "reason": "AVAILABLE"
+            }
+          }
+        },
+        {
+          "id": "sha256:40ece92032def7c204289c34b46752d8cf16f66548788e2c4b2eb161f79f0938",
+          "votes": 10,
+          "min": "44638336",
+          "max": "52859340",
+          "member_dates": [
+            "2025-11-24",
+            "2025-11-28",
+            "2025-12-29",
+            "2026-02-02",
+            "2026-03-05",
+            "2026-05-06",
+            "2026-05-29",
+            "2026-06-03",
+            "2026-06-08",
+            "2026-07-01"
+          ],
+          "comparisons": {
+            "to_min": {
+              "relation": "ABOVE",
+              "delta": "12799548",
+              "reason": "AVAILABLE"
+            },
+            "to_max": {
+              "relation": "ABOVE",
+              "delta": "4578544",
+              "reason": "AVAILABLE"
+            },
+            "to_original_maximum": {
+              "relation": "BELOW",
+              "delta": "-40779250",
+              "reason": "AVAILABLE"
+            }
+          }
+        }
+      ]
+    },
+    {
+      "file": "probe-07.json",
+      "config": {
+        "k": 3,
+        "r": "1.10",
+        "qualification": "RESEARCH_PROBE_NOT_APPROVED_NO_DEFAULT_OR_OPTIMUM"
+      },
+      "status": "RESEARCH_CANDIDATES_ONLY",
+      "confirmed_peaks": 21,
+      "pending_peaks": 1,
+      "maximal_groups": 12,
+      "highest_vote_group_count": 1,
+      "highest_vote_groups": [
+        {
+          "id": "sha256:458741f6e4d0dcf17d613fc0af9c4b7823d465458d450f1de9484f0326a8e356",
+          "votes": 6,
+          "min": "48157632",
+          "max": "52859340",
+          "member_dates": [
+            "2025-11-28",
+            "2026-02-02",
+            "2026-03-05",
+            "2026-05-29",
+            "2026-06-08",
+            "2026-07-01"
+          ],
+          "comparisons": {
+            "to_min": {
+              "relation": "ABOVE",
+              "delta": "9280252",
+              "reason": "AVAILABLE"
+            },
+            "to_max": {
+              "relation": "ABOVE",
+              "delta": "4578544",
+              "reason": "AVAILABLE"
+            },
+            "to_original_maximum": {
+              "relation": "BELOW",
+              "delta": "-40779250",
+              "reason": "AVAILABLE"
+            }
+          }
+        }
+      ]
+    },
+    {
+      "file": "probe-08.json",
+      "config": {
+        "k": 3,
+        "r": "1.15",
+        "qualification": "RESEARCH_PROBE_NOT_APPROVED_NO_DEFAULT_OR_OPTIMUM"
+      },
+      "status": "RESEARCH_CANDIDATES_ONLY",
+      "confirmed_peaks": 21,
+      "pending_peaks": 1,
+      "maximal_groups": 13,
+      "highest_vote_group_count": 5,
+      "highest_vote_groups": [
+        {
+          "id": "sha256:a94d5ea6981cba6307e20bee17aca26b59d1240940fb35d706adbe93caddc869",
+          "votes": 7,
+          "min": "43882131",
+          "max": "49699249",
+          "member_dates": [
+            "2025-11-24",
+            "2025-12-29",
+            "2026-02-02",
+            "2026-03-31",
+            "2026-05-06",
+            "2026-05-29",
+            "2026-07-01"
+          ],
+          "comparisons": {
+            "to_min": {
+              "relation": "ABOVE",
+              "delta": "13555753",
+              "reason": "AVAILABLE"
+            },
+            "to_max": {
+              "relation": "ABOVE",
+              "delta": "7738635",
+              "reason": "AVAILABLE"
+            },
+            "to_original_maximum": {
+              "relation": "BELOW",
+              "delta": "-40779250",
+              "reason": "AVAILABLE"
+            }
+          }
+        },
+        {
+          "id": "sha256:d29f7a244ffdf3a1be42300ad1276ac13bacb432e698a44bb5a89767ca9eb4e6",
+          "votes": 7,
+          "min": "44638336",
+          "max": "50595969",
+          "member_dates": [
+            "2025-11-24",
+            "2025-12-29",
+            "2026-02-02",
+            "2026-03-05",
+            "2026-05-06",
+            "2026-05-29",
+            "2026-07-01"
+          ],
+          "comparisons": {
+            "to_min": {
+              "relation": "ABOVE",
+              "delta": "12799548",
+              "reason": "AVAILABLE"
+            },
+            "to_max": {
+              "relation": "ABOVE",
+              "delta": "6841915",
+              "reason": "AVAILABLE"
+            },
+            "to_original_maximum": {
+              "relation": "BELOW",
+              "delta": "-40779250",
+              "reason": "AVAILABLE"
+            }
+          }
+        },
+        {
+          "id": "sha256:5f834d0c2862c05e789b183f47665acc545bab154e02b5e776f63eaf08f81476",
+          "votes": 7,
+          "min": "45105494",
+          "max": "51860722",
+          "member_dates": [
+            "2025-11-24",
+            "2025-12-29",
+            "2026-02-02",
+            "2026-03-05",
+            "2026-05-29",
+            "2026-06-08",
+            "2026-07-01"
+          ],
+          "comparisons": {
+            "to_min": {
+              "relation": "ABOVE",
+              "delta": "12332390",
+              "reason": "AVAILABLE"
+            },
+            "to_max": {
+              "relation": "ABOVE",
+              "delta": "5577162",
+              "reason": "AVAILABLE"
+            },
+            "to_original_maximum": {
+              "relation": "BELOW",
+              "delta": "-40779250",
+              "reason": "AVAILABLE"
+            }
+          }
+        },
+        {
+          "id": "sha256:6ccd78f5ea59f09c24e3e11fd55a2066f22f73d2578b2b9de270cf31e9ef90e7",
+          "votes": 7,
+          "min": "46730970",
+          "max": "52859340",
+          "member_dates": [
+            "2025-11-28",
+            "2025-12-29",
+            "2026-02-02",
+            "2026-03-05",
+            "2026-05-29",
+            "2026-06-08",
+            "2026-07-01"
+          ],
+          "comparisons": {
+            "to_min": {
+              "relation": "ABOVE",
+              "delta": "10706914",
+              "reason": "AVAILABLE"
+            },
+            "to_max": {
+              "relation": "ABOVE",
+              "delta": "4578544",
+              "reason": "AVAILABLE"
+            },
+            "to_original_maximum": {
+              "relation": "BELOW",
+              "delta": "-40779250",
+              "reason": "AVAILABLE"
+            }
+          }
+        },
+        {
+          "id": "sha256:8d3ac0dd9880f23c979f9acc28ac64ef20083b2135618d2dc819009508172bc2",
+          "votes": 7,
+          "min": "48157632",
+          "max": "54198777",
+          "member_dates": [
+            "2025-11-28",
+            "2026-02-02",
+            "2026-03-05",
+            "2026-03-20",
+            "2026-05-29",
+            "2026-06-08",
+            "2026-07-01"
+          ],
+          "comparisons": {
+            "to_min": {
+              "relation": "ABOVE",
+              "delta": "9280252",
+              "reason": "AVAILABLE"
+            },
+            "to_max": {
+              "relation": "ABOVE",
+              "delta": "3239107",
+              "reason": "AVAILABLE"
+            },
+            "to_original_maximum": {
+              "relation": "BELOW",
+              "delta": "-40779250",
+              "reason": "AVAILABLE"
+            }
+          }
+        }
+      ]
+    },
+    {
+      "file": "probe-09.json",
+      "config": {
+        "k": 3,
+        "r": "1.20",
+        "qualification": "RESEARCH_PROBE_NOT_APPROVED_NO_DEFAULT_OR_OPTIMUM"
+      },
+      "status": "RESEARCH_CANDIDATES_ONLY",
+      "confirmed_peaks": 21,
+      "pending_peaks": 1,
+      "maximal_groups": 12,
+      "highest_vote_group_count": 2,
+      "highest_vote_groups": [
+        {
+          "id": "sha256:89b24fca198af85bbfd0e4a5bef47ad1d40995203c02757bacbf9ce080f5ab0d",
+          "votes": 9,
+          "min": "43882131",
+          "max": "51860722",
+          "member_dates": [
+            "2025-11-24",
+            "2025-12-29",
+            "2026-02-02",
+            "2026-03-05",
+            "2026-03-31",
+            "2026-05-06",
+            "2026-05-29",
+            "2026-06-08",
+            "2026-07-01"
+          ],
+          "comparisons": {
+            "to_min": {
+              "relation": "ABOVE",
+              "delta": "13555753",
+              "reason": "AVAILABLE"
+            },
+            "to_max": {
+              "relation": "ABOVE",
+              "delta": "5577162",
+              "reason": "AVAILABLE"
+            },
+            "to_original_maximum": {
+              "relation": "BELOW",
+              "delta": "-40779250",
+              "reason": "AVAILABLE"
+            }
+          }
+        },
+        {
+          "id": "sha256:de5cc31e700152fda0764a73e2b6b762e55cc4180b57363691526eb57bf42dd6",
+          "votes": 9,
+          "min": "44638336",
+          "max": "52859340",
+          "member_dates": [
+            "2025-11-24",
+            "2025-11-28",
+            "2025-12-29",
+            "2026-02-02",
+            "2026-03-05",
+            "2026-05-06",
+            "2026-05-29",
+            "2026-06-08",
+            "2026-07-01"
+          ],
+          "comparisons": {
+            "to_min": {
+              "relation": "ABOVE",
+              "delta": "12799548",
+              "reason": "AVAILABLE"
+            },
+            "to_max": {
+              "relation": "ABOVE",
+              "delta": "4578544",
+              "reason": "AVAILABLE"
+            },
+            "to_original_maximum": {
+              "relation": "BELOW",
+              "delta": "-40779250",
+              "reason": "AVAILABLE"
+            }
+          }
+        }
+      ]
+    }
+  ],
+  "probe_order": "SERIALIZATION_ONLY_NOT_RANKING",
+  "unique_winner_selected": false,
+  "independent_market_samples": null,
+  "representative_volume_line": {
+    "status": "NOT_IMPLEMENTED",
+    "value": null
+  }
+}

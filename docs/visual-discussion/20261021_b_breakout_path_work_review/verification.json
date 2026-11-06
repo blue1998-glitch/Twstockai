@@ -1,0 +1,66 @@
+{
+  "status": "PASS",
+  "verifier_runs": 2,
+  "cutoff_checks": [
+    {
+      "cutoff": "2026-06-03",
+      "prefix_equality": true,
+      "future_price_volume_poison_unchanged": true
+    },
+    {
+      "cutoff": "2026-06-04",
+      "prefix_equality": true,
+      "future_price_volume_poison_unchanged": true
+    },
+    {
+      "cutoff": "2026-06-08",
+      "prefix_equality": true,
+      "future_price_volume_poison_unchanged": true
+    },
+    {
+      "cutoff": "2026-06-09",
+      "prefix_equality": true,
+      "future_price_volume_poison_unchanged": true
+    },
+    {
+      "cutoff": "2026-06-11",
+      "prefix_equality": true,
+      "future_price_volume_poison_unchanged": true
+    },
+    {
+      "cutoff": "2026-06-17",
+      "prefix_equality": true,
+      "future_price_volume_poison_unchanged": true
+    },
+    {
+      "cutoff": "2026-06-18",
+      "prefix_equality": true,
+      "future_price_volume_poison_unchanged": true
+    },
+    {
+      "cutoff": "2026-06-22",
+      "prefix_equality": true,
+      "future_price_volume_poison_unchanged": true
+    },
+    {
+      "cutoff": "2026-06-24",
+      "prefix_equality": true,
+      "future_price_volume_poison_unchanged": true
+    },
+    {
+      "cutoff": "2026-06-30",
+      "prefix_equality": true,
+      "future_price_volume_poison_unchanged": true
+    }
+  ],
+  "exact_price_path_cases": 9,
+  "current_volume_exclusion_and_ratio_scale_cases": 3,
+  "source_median": "35679356 shares / 52 saved rows",
+  "incomplete_source_median_unavailable": true,
+  "volume_baseline_disagreement_preserved": true,
+  "Jun9_onward_all_closes_above_lower_reference": true,
+  "departure_from_equal_not_counted_as_opposite_side_cross": true,
+  "formal_volume_qualification_still_null": true,
+  "source_sha_unchanged": true,
+  "old_driver_verifier_product_tests_rerun": 0
+}

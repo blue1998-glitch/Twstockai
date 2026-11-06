@@ -1,0 +1,35 @@
+{
+  "status": "ENABLED_AWAITING_DIRECTOR_PING",
+  "oracle_status": "NOT_CONNECTED",
+  "private_commit": "13e58a19787e9fb4ec55762a08ad10c930b34358",
+  "workflow_path": ".github/workflows/ctrl1.yml",
+  "workflow_id": 407700418,
+  "workflow_state": "active",
+  "workflow_blob_sha": "c229a46d562058530afd23109957110018dee9ff",
+  "workflow_sha256": "288c6cea7ea3b5c2e28756de8ff7b8e7265b238f46ae48c4ab5bad5e1c89ed6f",
+  "controller_sha256": "92fd8bb867c253e000440ff4f051dce0c5ef4c6116aa03b151447e92c62200d2",
+  "controller_blob_sha": "57588b282ab694da05e45184fb3dec00f78d97ed",
+  "readback_files": 4,
+  "endpoint": "https://github.com/blue1998-glitch/Twstockai-oci-bridge-private/issues/1",
+  "command": {
+    "schema": "oci-ctrl/0.1",
+    "operation": "ping"
+  },
+  "runner": "ubuntu-24.04",
+  "timeout_minutes": 2,
+  "permissions": {
+    "contents": "read",
+    "actions": "read",
+    "issues": "write"
+  },
+  "concurrency_group": "twstockai-ctrl1-repository-1446437252",
+  "cancel_in_progress": false,
+  "oracle_keys_used": false,
+  "repository_secrets_used": false,
+  "oracle_calls": 0,
+  "codex_ping_messages_sent": 0,
+  "native_ctrl_runs": 0,
+  "prior_zero_budget_probe_rerun": false,
+  "prior_probe_still_disabled": true,
+  "fee_settings_changed": false
+}

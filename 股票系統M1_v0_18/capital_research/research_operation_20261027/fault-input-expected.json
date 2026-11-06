@@ -1,0 +1,29 @@
+{
+  "base_case": "general",
+  "backend": "INJECTED_SAVED_GENERATION_NOT_NEW_NUMERIC_RUN",
+  "fault": "Journal.save writes and reads exact value, then raises OSError; original files must remain",
+  "rows": [
+    {
+      "name": "request-save-unknown",
+      "key": "--request",
+      "expected_calls": 0
+    },
+    {
+      "name": "generation-save-unknown",
+      "key": "--generation",
+      "expected_calls": 1
+    },
+    {
+      "name": "choice-save-unknown",
+      "key": "--choice",
+      "expected_calls": 1
+    },
+    {
+      "name": "result-save-unknown",
+      "key": "--result",
+      "expected_calls": 1
+    }
+  ],
+  "expected_workflow_status": "STOPPED_STORAGE",
+  "expected_storage": "UNKNOWN"
+}

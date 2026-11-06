@@ -1,0 +1,94 @@
+{
+  "schema": "github-manual-price-basis-readback/0.1",
+  "date_taipei": "2026-10-22",
+  "branch": "dev/m1-v018-chart-annotations",
+  "base_commit": "610e94b88ed68a4fcc596e563ab5b259e71513c0",
+  "decision_commit": "6674b03f9a269a5de141da5357653b12c163dcd6",
+  "decision_tree": "9f48e6d66ba5829d52d2dc47f8643edecf8a58f2",
+  "full_text_exact_readbacks": [
+    {
+      "path": "docs/visual-discussion/20261022_manual_price_basis_decision/decision.json",
+      "git_blob": "4dafbda1e21df489b42ff9092fb52a97595f12f8",
+      "exact": true
+    },
+    {
+      "path": "docs/visual-discussion/20261022_manual_price_basis_decision/README.md",
+      "git_blob": "63ba057e36adb87303a42d4707ac3ac015b4acc1",
+      "exact": true
+    },
+    {
+      "path": "docs/visual-discussion/20261022_manual_price_basis_decision/WORK_HANDOFF.md",
+      "git_blob": "39f53b6814da18dd718fc53a8940840848931d15",
+      "exact": true
+    },
+    {
+      "path": "AGENTS.md",
+      "git_blob": "64ba4bfd4db6cea91f8c4767f036efcb53dd759f",
+      "exact": true
+    },
+    {
+      "path": "CONTINUE_IN_WORK_MODE.md",
+      "git_blob": "21c85aa64d5223db1f7e3faf99a3313cf1bbacae",
+      "exact": true
+    },
+    {
+      "path": "M1_V019_GRAPH_CORE_RESUME_HANDOFF.md",
+      "git_blob": "5fc2ee3d397894d3ce29a8ca0962df831f874499",
+      "exact": true
+    },
+    {
+      "path": "PROJECT_VISION.md",
+      "git_blob": "f20b8f64298bbd7b2f44d78f29c3073069baab08",
+      "exact": true
+    },
+    {
+      "path": "docs/visual-discussion/20261022_manual_price_basis_decision/verification.json",
+      "git_blob": "469ad5c34b59ef37926a1201c02bb7951bd6f8f5",
+      "exact": true
+    },
+    {
+      "path": "docs/visual-discussion/20261022_manual_price_basis_decision/source-check.json",
+      "git_blob": "cee12891ee596d79a249e03638168cad736554b3",
+      "exact": true
+    }
+  ],
+  "root_preservation": [
+    {
+      "path": "AGENTS.md",
+      "base_blob": "c015e96502da9191c5d3423eb93cc5463977dc1a",
+      "body_exact_outside_insert_and_listed_formatting_fixes": true,
+      "formatting_fixes": [
+        "remove standalone heading marker introduced by prior insertion",
+        "restore original heading level in previous price-basis section"
+      ],
+      "highest_goal_unchanged": true
+    },
+    {
+      "path": "CONTINUE_IN_WORK_MODE.md",
+      "base_blob": "42a8205b43a297aafbaa90e95f80fe1dab3d8dd0",
+      "body_exact_outside_insert_and_listed_formatting_fixes": true,
+      "formatting_fixes": [
+        "remove standalone heading marker introduced by prior insertion",
+        "restore original heading level in previous price-basis section"
+      ],
+      "highest_goal_unchanged": true
+    },
+    {
+      "path": "M1_V019_GRAPH_CORE_RESUME_HANDOFF.md",
+      "base_blob": "dd0022a603f1938e76605075f7e108e13589b916",
+      "body_exact_outside_insert_and_listed_formatting_fixes": true,
+      "formatting_fixes": [],
+      "highest_goal_unchanged": true
+    },
+    {
+      "path": "PROJECT_VISION.md",
+      "base_blob": "e01a6dc90b3495ac8aeb49c731aa9b09c1041e8e",
+      "body_exact_outside_insert_and_listed_formatting_fixes": true,
+      "formatting_fixes": [],
+      "highest_goal_unchanged": true
+    }
+  ],
+  "unchanged_other_existing_files": 2886,
+  "scope": "Manual analysis-price-basis policy and engineering requirements saved. No product code or runtime tests performed. Prior market-classification question closed as prerequisite; actual B choice remains unset.",
+  "receipt_publication": "Child receipt commit follows; resolve actual branch HEAD and read this receipt back after publication."
+}

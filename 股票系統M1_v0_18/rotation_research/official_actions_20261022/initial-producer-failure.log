@@ -1,0 +1,14 @@
+Traceback (most recent call last):
+  File "<frozen runpy>", line 198, in _run_module_as_main
+  File "<frozen runpy>", line 88, in _run_code
+  File "/workspace/Twstockai/股票系統M1_v0_18/rotation_research/official_actions.py", line 218, in <module>
+    main()
+  File "/workspace/Twstockai/股票系統M1_v0_18/rotation_research/official_actions.py", line 209, in main
+    result = build()
+             ^^^^^^^
+  File "/workspace/Twstockai/股票系統M1_v0_18/rotation_research/official_actions.py", line 183, in build
+    minutes, follow = parse_minutes(minutes_text), parse_follow_up(follow_text)
+                                                   ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/workspace/Twstockai/股票系統M1_v0_18/rotation_research/official_actions.py", line 111, in parse_follow_up
+    raise ValueError('Issuer completion statement not found')
+ValueError: Issuer completion statement not found

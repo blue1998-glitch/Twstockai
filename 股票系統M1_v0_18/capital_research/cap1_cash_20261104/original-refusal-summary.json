@@ -1,0 +1,38 @@
+{
+  "C4_reasons": [
+    "SELL_QUANTITY_EXCEEDS_AVAILABLE_SHARES"
+  ],
+  "C4_status": "INPUT_ERROR",
+  "C_rights": [
+    {
+      "code": "C",
+      "delivery_date": "2026-01-09",
+      "id": "opening-shares",
+      "shares": "2",
+      "source_ids": [
+        "fixture"
+      ],
+      "tradable_date": "2026-01-12"
+    }
+  ],
+  "cash_claims": [
+    {
+      "amount": "80",
+      "id": "opening-cash",
+      "kind": "OPENING_RECEIVABLE",
+      "pay_date": "2026-01-12",
+      "source_ids": [
+        "fixture"
+      ]
+    }
+  ],
+  "complete_evidence_sha256": "5ab511bd497ee9dc849ef4940416bd89026599912bcedb62f5221697a5004e72",
+  "full_cash_metrics": null,
+  "full_exit_reasons": [
+    "PENDING_OR_UNKNOWN_SHARE_RIGHTS_PREVENT_FULL_EXIT"
+  ],
+  "full_exit_status": "REFUSED",
+  "original_checkpoint_id": "sha256:59708fd7e9cd62e9601e4249ad0b69f6e44bff0e7972c714610cbe38881f12ff",
+  "original_execution_calls": 0,
+  "original_input_id": "sha256:bd5a52bc38477987f681bbe376cf36f6d60b0fdbb33cb701df52d6a1db5ad8bd"
+}

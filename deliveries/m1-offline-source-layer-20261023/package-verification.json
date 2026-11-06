@@ -1,0 +1,72 @@
+{
+  "status": "PASS",
+  "filename": "m1-offline-source-layer-v06-20261023.zip",
+  "sha256": "e6398a1ee7863e72e0f236b51213ff21a9a2892cbc6841b79789f49a72d1e496",
+  "members": 606,
+  "parent_v05_members_byte_exact": 575,
+  "manifests": {
+    "ACTION_PACKAGE_MANIFEST.json": 292,
+    "ACTION_RESOLUTION_MANIFEST.json": 510,
+    "ACTION_SCOPE_MANIFEST.json": 469,
+    "OFFICIAL_ACTIONS_MANIFEST.json": 409,
+    "OFFLINE_SOURCE_BRIDGE_MANIFEST.json": 605,
+    "RESOLUTION_VALIDATION_MANIFEST.json": 527,
+    "SOURCE_DIAGNOSTICS_MANIFEST.json": 574,
+    "SOURCE_QUALIFICATION_MANIFEST.json": 374
+  },
+  "commands": [
+    {
+      "command": [
+        "python3",
+        "-m",
+        "unittest",
+        "rotation_research.test_offline_source_bridge",
+        "rotation_research.test_source_diagnostics",
+        "rotation_research.test_action_resolution",
+        "rotation_research.test_resolution_validation",
+        "-v"
+      ],
+      "returncode": 0,
+      "log": "extracted-tests.log"
+    },
+    {
+      "command": [
+        "python3",
+        "-m",
+        "rotation_research.offline_source_bridge_sources"
+      ],
+      "returncode": 0,
+      "log": "extracted-producer.log"
+    }
+  ],
+  "actual_distinct_tests": 91,
+  "new_tests": 30,
+  "old_tests_actually_rerun": 61,
+  "all_bundle_members_unchanged_after_test_and_producer": true,
+  "exact_original_bridge_zip_included": true,
+  "missing_quotes_new_evidence_and_old_unknown_preserved": true,
+  "offline_producer_verification": {
+    "schema": "rotation-offline-source-bridge/0.6",
+    "bridge_bytes_verified": 941229,
+    "bridge_manifest_members_verified": 40,
+    "new_originals_verified": 7,
+    "new_observations": 3,
+    "direct_suspension_starts": 2,
+    "actual_archived_tax_api": "VALIDATED_GENERAL_LAW_CONTEXT_ONLY",
+    "old_synthetic_tax_parser": "PRESERVED_UNCHANGED",
+    "original_quote_archives_rechecked": 122,
+    "calendar_reports_rechecked": 16,
+    "qualification_calls": 70,
+    "refused_windows": 70,
+    "insufficient_windows": 2,
+    "exchange_unsupported_windows": 8,
+    "qualified_total_net_return_windows": 0,
+    "numeric_replay_calls": 0,
+    "six_strategy_replays": 0,
+    "official_network_requests": 0,
+    "android": "NOT_TESTED_NEW_BUILD",
+    "historical_signal_eligible": false,
+    "primary_pressure_id": null,
+    "policy_authorized": false
+  }
+}

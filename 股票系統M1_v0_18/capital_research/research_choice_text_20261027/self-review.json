@@ -1,0 +1,26 @@
+{
+  "base": "521e0a168c0793859387dc1a0a378788d109d512",
+  "protected_sources_and_old_evidence_unchanged": true,
+  "CLI_only_adds_READ_text_default_JSON_preserved": true,
+  "source_versions_match_actual": true,
+  "input_expected_and_source_originals_unchanged": true,
+  "existing_docs_old_bytes_preserved": true,
+  "unique_test_methods": 4,
+  "method_executions": 4,
+  "actual_saved_records": 3,
+  "negative_entry_checks": 6,
+  "old_suite_runs": 0,
+  "numerical_producer_runs": 0,
+  "unrelated_changes": 0,
+  "sensitive_scan": {
+    "files": 27,
+    "findings": 0,
+    "scope": "proposed UTF8 content and file types; pattern-based self-review"
+  },
+  "limitations": [
+    "Saved content projection, not full source authentication",
+    "No full ledger values reconstructed",
+    "No engine, new selection, orders, fills or new quotes",
+    "No external Work source acceptance claimed"
+  ]
+}

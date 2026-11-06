@@ -1,0 +1,438 @@
+{
+  "selection": "EX_POST_THREE_LOCAL_ACTIVITIES_AND_TWO_ORIGINAL_BOXES_NOT_MAIN_STRUCTURE_SELECTION",
+  "zones": {
+    "earlier-local": {
+      "code": "1101",
+      "leg_ids": [
+        "sha256:8414006ecd2f8b51fa65572cf5cf7a79fb7aae102f210160f61604e1f6cc367a",
+        "sha256:b10a7586e5ad88af6abc41d9affa4515f39f9cf0a9bfaf0ce9ba3e7ae183d1c5"
+      ],
+      "leg_count": 2,
+      "path_start": "2023-06-28",
+      "path_end": "2023-07-06",
+      "known_on_saved_bar": "2023-07-07",
+      "common_close_low": "38.05",
+      "common_close_high": "38.25",
+      "raw_path_frame": {
+        "observed_low": "37.20",
+        "observed_high": "38.50",
+        "records": 7,
+        "bars_fingerprint": "sha256:6de198beea3842117e889a6d3d630eff012b059d1fdfefdec5cc6b3b079312ba",
+        "low_origin_dates": [
+          "2023-07-06"
+        ],
+        "high_origin_dates": [
+          "2023-06-28"
+        ]
+      },
+      "right_evidence_bar": {
+        "close": "37.30",
+        "date": "2023-07-07",
+        "high": "37.50",
+        "low": "36.90",
+        "open": "37.20",
+        "volume_shares_scaled": "19465674"
+      },
+      "formal_price_bounds": null,
+      "formal_interval": null,
+      "formal_membership": null,
+      "qualification": "SHARED_COMPLETED_CLOSE_SPAN_RESEARCH_ONLY_NOT_TRADE_DENSITY_OR_FORMAL_BOX",
+      "zone_id": "sha256:0ea70cf65accdd8ecd1f7b6a9bf22792fb6be50fd7263a10fe61e8d376c586f7"
+    },
+    "lower-local": {
+      "code": "1101",
+      "leg_ids": [
+        "sha256:b7fb648a9ad150fa70310df43353b4a7ce371a9b895e23c14002cc89c60b8fba",
+        "sha256:4db56c7031c0c085caf3fcc63e517aa60c8415b2ede8b8136f240d6dc23c0fa3"
+      ],
+      "leg_count": 2,
+      "path_start": "2023-07-14",
+      "path_end": "2023-07-18",
+      "known_on_saved_bar": "2023-07-19",
+      "common_close_low": "36.75",
+      "common_close_high": "37.00",
+      "raw_path_frame": {
+        "observed_low": "36.50",
+        "observed_high": "37.15",
+        "records": 3,
+        "bars_fingerprint": "sha256:e0fda355cfa8fb833cc80381cd0fc7be36cccc5556c2d88b4bbef1167d3ab487",
+        "low_origin_dates": [
+          "2023-07-18"
+        ],
+        "high_origin_dates": [
+          "2023-07-14"
+        ]
+      },
+      "right_evidence_bar": {
+        "close": "36.60",
+        "date": "2023-07-19",
+        "high": "37.10",
+        "low": "36.55",
+        "open": "37.10",
+        "volume_shares_scaled": "20934774"
+      },
+      "formal_price_bounds": null,
+      "formal_interval": null,
+      "formal_membership": null,
+      "qualification": "SHARED_COMPLETED_CLOSE_SPAN_RESEARCH_ONLY_NOT_TRADE_DENSITY_OR_FORMAL_BOX",
+      "zone_id": "sha256:2f1ceb2f70b060b3079147602f74378279cbf722a3207590f54fa5f607d6f3dc"
+    },
+    "rebound-local": {
+      "code": "1101",
+      "leg_ids": [
+        "sha256:96f5331dabd9ecd8ce961f2632862a693eeb948adb0765920cecbbe96538fa9a",
+        "sha256:2cfc9a8c3d18ed14c8ed83bdc104dd0629e653e061fa7cede6f7a74d49cbcd74"
+      ],
+      "leg_count": 2,
+      "path_start": "2023-07-25",
+      "path_end": "2023-07-28",
+      "known_on_saved_bar": "2023-07-31",
+      "common_close_low": "37.25",
+      "common_close_high": "37.35",
+      "raw_path_frame": {
+        "observed_low": "36.80",
+        "observed_high": "37.65",
+        "records": 4,
+        "bars_fingerprint": "sha256:d6920d35771aa84ac3ea020c86a47bed4344231fefc61fdb1ab7346a7af7d744",
+        "low_origin_dates": [
+          "2023-07-25"
+        ],
+        "high_origin_dates": [
+          "2023-07-25"
+        ]
+      },
+      "right_evidence_bar": {
+        "close": "37.30",
+        "date": "2023-07-31",
+        "high": "37.60",
+        "low": "37.15",
+        "open": "37.35",
+        "volume_shares_scaled": "17485589"
+      },
+      "formal_price_bounds": null,
+      "formal_interval": null,
+      "formal_membership": null,
+      "qualification": "SHARED_COMPLETED_CLOSE_SPAN_RESEARCH_ONLY_NOT_TRADE_DENSITY_OR_FORMAL_BOX",
+      "zone_id": "sha256:72ff0194706d4394690febaf6abc263cb5ca016c6249c5b31e60d214573ad046"
+    }
+  },
+  "contexts": {
+    "earlier-original-box": {
+      "kind": "SAVED_ORIGINAL_RESEARCH_BOX_NOT_FORMAL_PARENT",
+      "context_id": "sha256:17e7b92d70d726e5ae4ddc82023c33c95c6cc86ebed323117b168ab3087dba3a",
+      "scale": "0.03",
+      "segment": 0,
+      "start": "2023-04-24",
+      "source_end": "2023-05-15",
+      "known_on": "2023-05-30",
+      "low": "37.15",
+      "high": "40.25",
+      "source_turn_ids": [
+        "sha256:95e9f5683087819cc6c7e15e3d66d0fbd0abbc675fd7aaeea3cce6a8f37e107a",
+        "sha256:e8c63bf593c04690d0dfe26bd69bb70432e2f46d389312c82a48b508b1471947",
+        "sha256:98d84393f1ab674fd512365416f50228b5b7af2cf917e59d369de7116ece333e",
+        "sha256:3d270abf132d1abbfe2188f8fa31f0b2a7370f68ca3432792ee7ba0b7aedc172"
+      ],
+      "code": "1101",
+      "listed_gap_dates": [],
+      "calendar_qualification": "LISTED_GAPS_ONLY_NOT_EXHAUSTIVE",
+      "formal_parent": null,
+      "formal_membership": null
+    },
+    "later-original-box": {
+      "kind": "SAVED_ORIGINAL_RESEARCH_BOX_NOT_FORMAL_PARENT",
+      "context_id": "sha256:972e2a2b4bf4f997da6618369bd28b8496e040276e3bf5293fa924cbeec8255c",
+      "scale": "0.03",
+      "segment": 0,
+      "start": "2023-05-02",
+      "source_end": "2023-07-24",
+      "known_on": "2023-07-25",
+      "low": "36.00",
+      "high": "40.25",
+      "source_turn_ids": [
+        "sha256:98d84393f1ab674fd512365416f50228b5b7af2cf917e59d369de7116ece333e",
+        "sha256:3d270abf132d1abbfe2188f8fa31f0b2a7370f68ca3432792ee7ba0b7aedc172",
+        "sha256:011882379d9561e6159599b0ec46daafcab6525bee76307ad758658734f7d611",
+        "sha256:7210776f81a69f7bd268e41812a45fa66b336e8b93acc1f03399057882eba0fa"
+      ],
+      "code": "1101",
+      "listed_gap_dates": [],
+      "calendar_qualification": "LISTED_GAPS_ONLY_NOT_EXHAUSTIVE",
+      "formal_parent": null,
+      "formal_membership": null
+    }
+  },
+  "pivots": {
+    "older-low": {
+      "id": "sha256:0c2e4afa43a1aca8bf60830ac31ff07a7227d982004be9a232430df21e847483",
+      "kind": "LOW",
+      "price": "36.15",
+      "occurred_at": "2023-03-13",
+      "source_dates": [
+        "2023-03-13"
+      ],
+      "confirmed_at": "2023-03-23",
+      "first_observed_at": "2023-03-23",
+      "scale": "0.03",
+      "segment": 0,
+      "code": "1101",
+      "known_on": "2023-03-23"
+    },
+    "later-low": {
+      "id": "sha256:3d270abf132d1abbfe2188f8fa31f0b2a7370f68ca3432792ee7ba0b7aedc172",
+      "kind": "LOW",
+      "price": "37.15",
+      "occurred_at": "2023-05-15",
+      "source_dates": [
+        "2023-05-15"
+      ],
+      "confirmed_at": "2023-05-30",
+      "first_observed_at": "2023-05-30",
+      "scale": "0.03",
+      "segment": 0,
+      "code": "1101",
+      "known_on": "2023-05-30"
+    },
+    "earlier-high": {
+      "id": "sha256:011882379d9561e6159599b0ec46daafcab6525bee76307ad758658734f7d611",
+      "kind": "HIGH",
+      "price": "39.25",
+      "occurred_at": "2023-06-05",
+      "source_dates": [
+        "2023-06-05"
+      ],
+      "confirmed_at": "2023-06-28",
+      "first_observed_at": "2023-06-28",
+      "scale": "0.03",
+      "segment": 0,
+      "code": "1101",
+      "known_on": "2023-06-28"
+    },
+    "retained-high": {
+      "id": "sha256:98d84393f1ab674fd512365416f50228b5b7af2cf917e59d369de7116ece333e",
+      "kind": "HIGH",
+      "price": "40.25",
+      "occurred_at": "2023-05-02",
+      "source_dates": [
+        "2023-05-02"
+      ],
+      "confirmed_at": "2023-05-09",
+      "first_observed_at": "2023-05-09",
+      "scale": "0.03",
+      "segment": 0,
+      "code": "1101",
+      "known_on": "2023-05-09"
+    },
+    "new-low": {
+      "id": "sha256:7210776f81a69f7bd268e41812a45fa66b336e8b93acc1f03399057882eba0fa",
+      "kind": "LOW",
+      "price": "36.00",
+      "occurred_at": "2023-07-24",
+      "source_dates": [
+        "2023-07-24"
+      ],
+      "confirmed_at": "2023-07-25",
+      "first_observed_at": "2023-07-25",
+      "scale": "0.03",
+      "segment": 0,
+      "code": "1101",
+      "known_on": "2023-07-25"
+    }
+  },
+  "legs": {
+    "sha256:8414006ecd2f8b51fa65572cf5cf7a79fb7aae102f210160f61604e1f6cc367a": {
+      "code": "1101",
+      "from_turn_id": "sha256:3d179d3087daca5e6df37f8b7a57a231881af23d707b03be854b15ebd3559227",
+      "to_turn_id": "sha256:ea83ccf8222586026a39d5c5fdb0425a7ad9cc52c1df29800a6a65ea82af8a38",
+      "path_start": "2023-06-28",
+      "path_end": "2023-07-03",
+      "known_on_saved_bar": "2023-07-04",
+      "close_low": "38.05",
+      "close_high": "38.25",
+      "direction": "UP",
+      "qualification": "COMPLETED_CLOSE_ENDPOINT_SPAN_NOT_INTRADAY_TRADE_PATH",
+      "leg_id": "sha256:8414006ecd2f8b51fa65572cf5cf7a79fb7aae102f210160f61604e1f6cc367a"
+    },
+    "sha256:b7fb648a9ad150fa70310df43353b4a7ce371a9b895e23c14002cc89c60b8fba": {
+      "code": "1101",
+      "from_turn_id": "sha256:6f1c172385364a44feb44ffea47345e3da018b487f989aab89981a4c09879678",
+      "to_turn_id": "sha256:2ecbc3c63be8d5e8276de7ca27e51f11f89e46c143cc5b9a85659229ebff5604",
+      "path_start": "2023-07-14",
+      "path_end": "2023-07-17",
+      "known_on_saved_bar": "2023-07-18",
+      "close_low": "36.75",
+      "close_high": "37.00",
+      "direction": "DOWN",
+      "qualification": "COMPLETED_CLOSE_ENDPOINT_SPAN_NOT_INTRADAY_TRADE_PATH",
+      "leg_id": "sha256:b7fb648a9ad150fa70310df43353b4a7ce371a9b895e23c14002cc89c60b8fba"
+    },
+    "sha256:96f5331dabd9ecd8ce961f2632862a693eeb948adb0765920cecbbe96538fa9a": {
+      "code": "1101",
+      "from_turn_id": "sha256:afa3fc678d4fce3b86a7e3b5e51087de568002e71fff0fffc042976d567b002c",
+      "to_turn_id": "sha256:b8884d57875359cb3a9e770eeaef4a8e6f5c08a5ebc4b1b48a585702fc067508",
+      "path_start": "2023-07-25",
+      "path_end": "2023-07-26",
+      "known_on_saved_bar": "2023-07-27",
+      "close_low": "37.25",
+      "close_high": "37.40",
+      "direction": "DOWN",
+      "qualification": "COMPLETED_CLOSE_ENDPOINT_SPAN_NOT_INTRADAY_TRADE_PATH",
+      "leg_id": "sha256:96f5331dabd9ecd8ce961f2632862a693eeb948adb0765920cecbbe96538fa9a"
+    },
+    "sha256:2cfc9a8c3d18ed14c8ed83bdc104dd0629e653e061fa7cede6f7a74d49cbcd74": {
+      "code": "1101",
+      "from_turn_id": "sha256:b8884d57875359cb3a9e770eeaef4a8e6f5c08a5ebc4b1b48a585702fc067508",
+      "to_turn_id": "sha256:3b29755ad0a045fe2af4e35d5fcc6847a64dad4e1c5f6e7393665e7d63e5ad27",
+      "path_start": "2023-07-26",
+      "path_end": "2023-07-28",
+      "known_on_saved_bar": "2023-07-31",
+      "close_low": "37.25",
+      "close_high": "37.35",
+      "direction": "UP",
+      "qualification": "COMPLETED_CLOSE_ENDPOINT_SPAN_NOT_INTRADAY_TRADE_PATH",
+      "leg_id": "sha256:2cfc9a8c3d18ed14c8ed83bdc104dd0629e653e061fa7cede6f7a74d49cbcd74"
+    },
+    "sha256:b10a7586e5ad88af6abc41d9affa4515f39f9cf0a9bfaf0ce9ba3e7ae183d1c5": {
+      "code": "1101",
+      "from_turn_id": "sha256:ea83ccf8222586026a39d5c5fdb0425a7ad9cc52c1df29800a6a65ea82af8a38",
+      "to_turn_id": "sha256:33ca63aa214171f36d834af368da323247cb0743defebceb174600f4f082e0c6",
+      "path_start": "2023-07-03",
+      "path_end": "2023-07-06",
+      "known_on_saved_bar": "2023-07-07",
+      "close_low": "37.25",
+      "close_high": "38.25",
+      "direction": "DOWN",
+      "qualification": "COMPLETED_CLOSE_ENDPOINT_SPAN_NOT_INTRADAY_TRADE_PATH",
+      "leg_id": "sha256:b10a7586e5ad88af6abc41d9affa4515f39f9cf0a9bfaf0ce9ba3e7ae183d1c5"
+    },
+    "sha256:4db56c7031c0c085caf3fcc63e517aa60c8415b2ede8b8136f240d6dc23c0fa3": {
+      "code": "1101",
+      "from_turn_id": "sha256:2ecbc3c63be8d5e8276de7ca27e51f11f89e46c143cc5b9a85659229ebff5604",
+      "to_turn_id": "sha256:0f44a7a74d9710a8190dd9ce932ef6167a76b324e66cd4a74e92f2bcfb0e03cc",
+      "path_start": "2023-07-17",
+      "path_end": "2023-07-18",
+      "known_on_saved_bar": "2023-07-19",
+      "close_low": "36.75",
+      "close_high": "37.10",
+      "direction": "UP",
+      "qualification": "COMPLETED_CLOSE_ENDPOINT_SPAN_NOT_INTRADAY_TRADE_PATH",
+      "leg_id": "sha256:4db56c7031c0c085caf3fcc63e517aa60c8415b2ede8b8136f240d6dc23c0fa3"
+    }
+  },
+  "turns": {
+    "sha256:ea83ccf8222586026a39d5c5fdb0425a7ad9cc52c1df29800a6a65ea82af8a38": {
+      "code": "1101",
+      "kind": "HIGH",
+      "plateau_start": "2023-07-03",
+      "plateau_end": "2023-07-03",
+      "close": "38.25",
+      "left_evidence_date": "2023-06-30",
+      "known_on_saved_bar": "2023-07-04",
+      "qualification": "NEW_COMPLETED_CLOSE_TURN_NOT_ORIGINAL_PIVOT",
+      "turn_id": "sha256:ea83ccf8222586026a39d5c5fdb0425a7ad9cc52c1df29800a6a65ea82af8a38"
+    },
+    "sha256:3d179d3087daca5e6df37f8b7a57a231881af23d707b03be854b15ebd3559227": {
+      "code": "1101",
+      "kind": "LOW",
+      "plateau_start": "2023-06-28",
+      "plateau_end": "2023-06-30",
+      "close": "38.05",
+      "left_evidence_date": "2023-06-27",
+      "known_on_saved_bar": "2023-07-03",
+      "qualification": "NEW_COMPLETED_CLOSE_TURN_NOT_ORIGINAL_PIVOT",
+      "turn_id": "sha256:3d179d3087daca5e6df37f8b7a57a231881af23d707b03be854b15ebd3559227"
+    },
+    "sha256:afa3fc678d4fce3b86a7e3b5e51087de568002e71fff0fffc042976d567b002c": {
+      "code": "1101",
+      "kind": "HIGH",
+      "plateau_start": "2023-07-25",
+      "plateau_end": "2023-07-25",
+      "close": "37.40",
+      "left_evidence_date": "2023-07-24",
+      "known_on_saved_bar": "2023-07-26",
+      "qualification": "NEW_COMPLETED_CLOSE_TURN_NOT_ORIGINAL_PIVOT",
+      "turn_id": "sha256:afa3fc678d4fce3b86a7e3b5e51087de568002e71fff0fffc042976d567b002c"
+    },
+    "sha256:33ca63aa214171f36d834af368da323247cb0743defebceb174600f4f082e0c6": {
+      "code": "1101",
+      "kind": "LOW",
+      "plateau_start": "2023-07-06",
+      "plateau_end": "2023-07-06",
+      "close": "37.25",
+      "left_evidence_date": "2023-07-05",
+      "known_on_saved_bar": "2023-07-07",
+      "qualification": "NEW_COMPLETED_CLOSE_TURN_NOT_ORIGINAL_PIVOT",
+      "turn_id": "sha256:33ca63aa214171f36d834af368da323247cb0743defebceb174600f4f082e0c6"
+    },
+    "sha256:b8884d57875359cb3a9e770eeaef4a8e6f5c08a5ebc4b1b48a585702fc067508": {
+      "code": "1101",
+      "kind": "LOW",
+      "plateau_start": "2023-07-26",
+      "plateau_end": "2023-07-26",
+      "close": "37.25",
+      "left_evidence_date": "2023-07-25",
+      "known_on_saved_bar": "2023-07-27",
+      "qualification": "NEW_COMPLETED_CLOSE_TURN_NOT_ORIGINAL_PIVOT",
+      "turn_id": "sha256:b8884d57875359cb3a9e770eeaef4a8e6f5c08a5ebc4b1b48a585702fc067508"
+    },
+    "sha256:0f44a7a74d9710a8190dd9ce932ef6167a76b324e66cd4a74e92f2bcfb0e03cc": {
+      "code": "1101",
+      "kind": "HIGH",
+      "plateau_start": "2023-07-18",
+      "plateau_end": "2023-07-18",
+      "close": "37.10",
+      "left_evidence_date": "2023-07-17",
+      "known_on_saved_bar": "2023-07-19",
+      "qualification": "NEW_COMPLETED_CLOSE_TURN_NOT_ORIGINAL_PIVOT",
+      "turn_id": "sha256:0f44a7a74d9710a8190dd9ce932ef6167a76b324e66cd4a74e92f2bcfb0e03cc"
+    },
+    "sha256:2ecbc3c63be8d5e8276de7ca27e51f11f89e46c143cc5b9a85659229ebff5604": {
+      "code": "1101",
+      "kind": "LOW",
+      "plateau_start": "2023-07-17",
+      "plateau_end": "2023-07-17",
+      "close": "36.75",
+      "left_evidence_date": "2023-07-14",
+      "known_on_saved_bar": "2023-07-18",
+      "qualification": "NEW_COMPLETED_CLOSE_TURN_NOT_ORIGINAL_PIVOT",
+      "turn_id": "sha256:2ecbc3c63be8d5e8276de7ca27e51f11f89e46c143cc5b9a85659229ebff5604"
+    },
+    "sha256:6f1c172385364a44feb44ffea47345e3da018b487f989aab89981a4c09879678": {
+      "code": "1101",
+      "kind": "HIGH",
+      "plateau_start": "2023-07-14",
+      "plateau_end": "2023-07-14",
+      "close": "37.00",
+      "left_evidence_date": "2023-07-13",
+      "known_on_saved_bar": "2023-07-17",
+      "qualification": "NEW_COMPLETED_CLOSE_TURN_NOT_ORIGINAL_PIVOT",
+      "turn_id": "sha256:6f1c172385364a44feb44ffea47345e3da018b487f989aab89981a4c09879678"
+    },
+    "sha256:3b29755ad0a045fe2af4e35d5fcc6847a64dad4e1c5f6e7393665e7d63e5ad27": {
+      "code": "1101",
+      "kind": "HIGH",
+      "plateau_start": "2023-07-27",
+      "plateau_end": "2023-07-28",
+      "close": "37.35",
+      "left_evidence_date": "2023-07-26",
+      "known_on_saved_bar": "2023-07-31",
+      "qualification": "NEW_COMPLETED_CLOSE_TURN_NOT_ORIGINAL_PIVOT",
+      "turn_id": "sha256:3b29755ad0a045fe2af4e35d5fcc6847a64dad4e1c5f6e7393665e7d63e5ad27"
+    }
+  },
+  "cutoffs": [
+    "2023-07-06",
+    "2023-07-07",
+    "2023-07-18",
+    "2023-07-19",
+    "2023-07-20",
+    "2023-07-21",
+    "2023-07-24",
+    "2023-07-25",
+    "2023-07-26",
+    "2023-07-28",
+    "2023-07-31",
+    "2023-08-01",
+    "2023-08-02"
+  ]
+}

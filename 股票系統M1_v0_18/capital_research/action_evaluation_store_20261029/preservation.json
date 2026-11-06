@@ -1,0 +1,79 @@
+{
+  "baseline": "a33bfc416881e58e390c3086523ccf0d6a743a07",
+  "workspace": "/workspace/Twstockai",
+  "branch": "dev/m1-v018-chart-annotations",
+  "verification": {
+    "frozen": 37,
+    "protected": 17,
+    "source_originals": 10,
+    "archived": 1,
+    "current_sources": 5
+  },
+  "tests": {
+    "unique_methods": 8,
+    "passed": 8,
+    "failed": 0,
+    "intermediate_batches": 0,
+    "old_full_suites": 0,
+    "real_producers": 0,
+    "new_evaluations": 0,
+    "accounting_replay_calls": 0,
+    "log": {
+      "path": "股票系統M1_v0_18/capital_research/action_evaluation_store_20261029/tests.log",
+      "bytes": 1772,
+      "sha256": "4e0964e246e2aa4e324de69343f6e89ca0cb28a72b643438b3683a20dec02380"
+    },
+    "format_source_method_reexecuted": true,
+    "format_verification_log": {
+      "path": "股票系統M1_v0_18/capital_research/action_evaluation_store_20261029/tests-format-corrected.log",
+      "bytes": 285,
+      "sha256": "a3ce58aff0f25e690230ac091006b36e95574578cc2e56e7d5d2f82c423f816c"
+    },
+    "historical_source_verification_failure_log": {
+      "path": "股票系統M1_v0_18/capital_research/action_evaluation_store_20261029/tests-format.log",
+      "bytes": 1361,
+      "sha256": "525b493c0d3f1a488a36d4bde9665b861eef390761c75400f364393b2743db9f"
+    }
+  },
+  "cases": {
+    "frozen_import_cases": 16,
+    "expected_saved": 5,
+    "expected_not_saved": 11,
+    "not_independent_market_samples": true
+  },
+  "self_review": {
+    "journal_and_persist_reused_unchanged": true,
+    "source_functions_moved_byte_exact": {
+      "pure_functions_text_unchanged": {
+        "_research": true,
+        "_close": true,
+        "_pair": true,
+        "_account_binding": true,
+        "_action": true,
+        "_continuation": true,
+        "_snapshots": true
+      },
+      "evaluator_body_text_unchanged": true,
+      "new_evaluations": 0
+    },
+    "evaluated_source_account_time_latest_rights_tokens_and_costs_bound": true,
+    "refused_association_not_misrepresented_as_producer_attestation": true,
+    "read_never_imports_evaluators_or_producers": true,
+    "read_never_writes_or_repairs": true,
+    "idempotence_conflicts_and_unknown_preserved": true,
+    "general_reserve_capital_and_old_sources_unchanged": true,
+    "final_source_diff_only_eof_blank_lines": true
+  },
+  "sensitive_review": {
+    "delivery_files_checked": true,
+    "credential_findings": 0,
+    "private_originals_added": 0,
+    "unrelated_files_added": 0
+  },
+  "formal_qualifications_remain_false": true,
+  "primary_pressure_id": null,
+  "real_total_net_qualified_cases": 0,
+  "manual_action_required": false,
+  "source_version_basis": "final-source-versions.json; original tested versions preserved in actual/source-versions.json",
+  "format_diagnostic": "diagnostics/format-verification.json"
+}

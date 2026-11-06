@@ -1,0 +1,33 @@
+{
+  "baseline": "41c82485e5b7056657cc1ac1e069a91ea1957b9e",
+  "commands": [
+    {
+      "command": "python -B -m rotation_research.treasury_date_roles_20261026.build",
+      "exit": 0,
+      "log": "build.log",
+      "single_source_observations": 1
+    },
+    {
+      "command": "python -B -m unittest -v rotation_research.treasury_date_roles_20261026.test_date_roles",
+      "exit": 0,
+      "log": "tests-final.log",
+      "unique_methods": 13
+    },
+    {
+      "command": "pdftoppm -f58 -l58 -singlefile -scale-to1600 -png [saved PDF] [new evidence path]",
+      "exit": 0,
+      "receipt": "visual-render.json",
+      "pages": 1
+    }
+  ],
+  "unique_test_methods": 13,
+  "old_test_methods": 0,
+  "official_source_requests": 0,
+  "old_source_producers": 0,
+  "window_producers": 0,
+  "new_single_observation_builder_runs": 1,
+  "bootstrap": 0,
+  "commits": 0,
+  "pushes": 0,
+  "qualification_recalculated": false
+}

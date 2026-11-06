@@ -1,0 +1,385 @@
+{
+  "id": "import-checkpoint-new-trigger--choice",
+  "schema": "rotation-record/0.1",
+  "value": {
+    "choice": {
+      "data_qualified": false,
+      "execution": "NOT_PERFORMED",
+      "execution_authorized": false,
+      "execution_model_qualified": false,
+      "historical_signal_eligible": false,
+      "live_execution_authorized": false,
+      "order_generation": "NOT_PERFORMED",
+      "policy_authorized": false,
+      "primary_pressure_id": null,
+      "purpose": "EXPLICIT_RESEARCH_INTENT_ONLY",
+      "ranking": null,
+      "reasons": [],
+      "record_id": "sha256:9f071dc2aac95cecbdf538f60f1e21b5a4e598c1bcd1c043a5b291986d3618c4",
+      "recorded_at": "2026-01-08T17:00:00+08:00",
+      "rejected_candidate": null,
+      "request_id": "sha256:ff2fea658ed0473fc1f2134b11bd4fc888241f9028db778e9839aaf58288cb48",
+      "requested_selection": {
+        "additional_B": null,
+        "mode": "FULL_TRANSFER",
+        "reason": "明示合成研究意圖；非最佳量或交易批准",
+        "sell_A": null
+      },
+      "schema": "capital-research-choice/0.2",
+      "selected": {
+        "additional_B": "93",
+        "batch_gate_reasons": [],
+        "classification": "WAIT_SETTLEMENT_REASSESSMENT",
+        "core_decision_id": "sha256:8f6353656ebafab8cd979d4c27c33e859250de4aa324c9f231d3c4cd0f7ac78a",
+        "core_evaluation": {
+          "available_settled_cash": "900",
+          "broker_credit_separate": "0",
+          "cancel_conditions": [
+            "EVIDENCE_INVALIDATED",
+            "BASIS_OR_SOURCE_CHANGED",
+            "RISK_OR_LIQUIDITY_CHANGED"
+          ],
+          "common_account_id": "sha256:45f6af8bb68e529bc1cff2ee0fd13386da74dc348f3ce20727719c5d680359a7",
+          "conditions": [
+            "CURRENT_RESEARCH_INTENT_ONLY",
+            "REASSESS_AFTER_SETTLEMENT",
+            "NEW_INDEPENDENT_TRIGGER_FOR_NEXT_BUY_BATCH"
+          ],
+          "dominance_scope": "STATIC_TARGETS_ONLY",
+          "dominated_by": [],
+          "estimated_cost": "8.86",
+          "family": "C",
+          "feasible": true,
+          "final_cash_after_all_settlements_estimate": "131.14",
+          "funding": "WAIT_SALE_SETTLEMENT_AND_REEVALUATE",
+          "id": "quantity:sha256:dcb4fcc5b35b548945ea7c7c208386a050865271ea15a095d091388ea5d68fcc",
+          "indistinguishable_from": [],
+          "initial_capital": "2180",
+          "next_review_conditions": [
+            "NEW_INDEPENDENT_EVENT",
+            "FILL_OR_SETTLEMENT_UPDATE"
+          ],
+          "policy_dominance": "NOT_EVALUATED",
+          "purchase_payable_estimate": "1863.86",
+          "reasons": [],
+          "remaining_risk_violations": {
+            "account_stress": "0",
+            "group:new": "0",
+            "group:original": "0",
+            "single:A": "0",
+            "single:B": "0",
+            "single:C": "0"
+          },
+          "risk_reducing": false,
+          "route": "R1",
+          "sale_receivable_estimate": "995",
+          "scenario_value_qualification": "STATIC_TARGET_ATTAINED_STRESS_EXCLUDES_WAITING_AND_NONFILLS",
+          "scenario_values": {
+            "A_wins": "2035.14",
+            "B_accelerates": "3297.14",
+            "both_fall": "1397.14"
+          },
+          "status": "CONDITIONAL",
+          "targets": {
+            "A": "0",
+            "B": "93",
+            "C": "0"
+          },
+          "trigger_ids": [
+            "B-independent-next"
+          ]
+        },
+        "core_schema": "capital-decision/0.8",
+        "feasible_for_research": true,
+        "generation_policy_version": "synthetic-quantity-domain/0.1",
+        "generation_reasons": [
+          "FULL_TRANSFER"
+        ],
+        "id": "quantity:sha256:dcb4fcc5b35b548945ea7c7c208386a050865271ea15a095d091388ea5d68fcc",
+        "in_explicit_grid": false,
+        "kinds": [
+          "FULL_TRANSFER"
+        ],
+        "plan": {
+          "conditions": [
+            "CURRENT_RESEARCH_INTENT_ONLY",
+            "REASSESS_AFTER_SETTLEMENT",
+            "NEW_INDEPENDENT_TRIGGER_FOR_NEXT_BUY_BATCH"
+          ],
+          "edge_budget": "1000",
+          "family": "C",
+          "id": "quantity:sha256:dcb4fcc5b35b548945ea7c7c208386a050865271ea15a095d091388ea5d68fcc",
+          "route": "R1",
+          "targets": {
+            "A": "0",
+            "B": "93",
+            "C": "0"
+          },
+          "trigger_ids": [
+            "B-independent-next"
+          ]
+        },
+        "reasons": [],
+        "sold_A": "100",
+        "unit_gate_reasons": []
+      },
+      "source_binding": {
+        "account_id": "sha256:45f6af8bb68e529bc1cff2ee0fd13386da74dc348f3ce20727719c5d680359a7",
+        "account_snapshot": {
+          "as_of": "2026-01-08T16:00:00+08:00",
+          "available_at": "2026-01-08T17:00:00+08:00",
+          "cash_claims": [
+            {
+              "amount": "80",
+              "id": "opening-cash",
+              "kind": "OPENING_RECEIVABLE",
+              "pay_date": "2026-01-12",
+              "source_ids": [
+                "fixture"
+              ]
+            }
+          ],
+          "holdings": {
+            "A": {
+              "sellable": "100",
+              "shares": "100"
+            },
+            "B": {
+              "sellable": "0",
+              "shares": "0"
+            },
+            "C": {
+              "sellable": "0",
+              "shares": "0"
+            }
+          },
+          "payables": [],
+          "pending_orders": [],
+          "reserved_cash": "100",
+          "settled_cash": "1000",
+          "share_claims": [
+            {
+              "code": "A",
+              "delivery_date": "2026-01-09",
+              "id": "opening-shares",
+              "shares": "10",
+              "source_ids": [
+                "fixture"
+              ],
+              "tradable_date": "2026-01-12"
+            }
+          ]
+        },
+        "asset_identities": {
+          "A": {
+            "adjustment_version": "RAW:synthetic/1",
+            "basis_id": "RAW:fixture:A",
+            "source_id": "fixture"
+          },
+          "B": {
+            "adjustment_version": "RAW:synthetic/1",
+            "basis_id": "RAW:fixture:B",
+            "source_id": "fixture"
+          },
+          "C": {
+            "adjustment_version": "RAW:synthetic/1",
+            "basis_id": "RAW:fixture:C",
+            "source_id": "fixture"
+          }
+        },
+        "baseline_document_id": "sha256:5aed317652d123750fe0daa8ed0d7cb4be5feb2f26d1078656f6ed9ccd9bcf4c",
+        "checkpoint_id": "sha256:6fafac39f0d2e9e2afae72b7b714575ccd941157f00d3b9bc0452eef6839a7aa",
+        "data_cutoff": "2026-01-08T16:00:00+08:00",
+        "decision_at": "2026-01-08T17:00:00+08:00",
+        "decision_reviewed_tokens": [
+          "fixture:event_id:A-event",
+          "fixture:event_id:B-event",
+          "fixture:event_id:B-independent-next",
+          "fixture:event_id:C-event",
+          "fixture:formation_id:A-formation",
+          "fixture:formation_id:B-formation",
+          "fixture:formation_id:B-formation-next",
+          "fixture:formation_id:C-formation",
+          "fixture:volume_bar_id:A-bar",
+          "fixture:volume_bar_id:B-bar",
+          "fixture:volume_bar_id:B-bar-next",
+          "fixture:volume_bar_id:C-bar"
+        ],
+        "execution_result_id": "sha256:2d6c6f853a76904496cf48352868309a8108a5a83c71d73a39c85708ab05acc2",
+        "fact_history_id": "sha256:f35da8b39572e86c412a12ac24b25995665e6d6a01f458fdc7d0b9146da71675",
+        "full_proposal_status": "FOUND",
+        "full_search_policy": {
+          "available_at": "2026-01-08T16:00:00+08:00",
+          "max_probes": "128",
+          "parameter_source": "EXPLICIT_RESEARCH_COMPUTATION_LIMIT_NOT_TRADING_POLICY",
+          "schema": "capital-full-unit-search/0.1",
+          "version": "FROZEN_SYNTHETIC_RESOURCE_BOUND/0.1"
+        },
+        "full_search_receipt": {
+          "configured_max_probes": 128,
+          "implementation_max_probes": 20000,
+          "legal_candidate_count": 37,
+          "original_B": "0",
+          "probe_count": 6,
+          "probe_trace": [
+            {
+              "additional_B": "108",
+              "classification": "REJECTED",
+              "core_decision_id": "sha256:00554c616af9122997be32055810ef4b3468499ce3374f47a1b419ba24f7a75c",
+              "feasible_for_research": false,
+              "reasons": [
+                "JOINT_BUDGET_EXCEEDED_INCLUDING_COSTS_AND_RESERVATIONS"
+              ],
+              "targets": {
+                "A": "0",
+                "B": "108",
+                "C": "0"
+              }
+            },
+            {
+              "additional_B": "105",
+              "classification": "REJECTED",
+              "core_decision_id": "sha256:8fe62a71538c859be6cea440a95ad04bf01912d1454ee28b92035a981a25ff64",
+              "feasible_for_research": false,
+              "reasons": [
+                "JOINT_BUDGET_EXCEEDED_INCLUDING_COSTS_AND_RESERVATIONS"
+              ],
+              "targets": {
+                "A": "0",
+                "B": "105",
+                "C": "0"
+              }
+            },
+            {
+              "additional_B": "102",
+              "classification": "REJECTED",
+              "core_decision_id": "sha256:9b5c8f7344bfa3a74b66359b074ace145b926732cbffac17ec96ec9d04263b4b",
+              "feasible_for_research": false,
+              "reasons": [
+                "JOINT_BUDGET_EXCEEDED_INCLUDING_COSTS_AND_RESERVATIONS"
+              ],
+              "targets": {
+                "A": "0",
+                "B": "102",
+                "C": "0"
+              }
+            },
+            {
+              "additional_B": "99",
+              "classification": "REJECTED",
+              "core_decision_id": "sha256:a5fa0f8d3fd421c1f9bd9429b85005c6cce735830a6bb4aef122f0c587348fa6",
+              "feasible_for_research": false,
+              "reasons": [
+                "JOINT_BUDGET_EXCEEDED_INCLUDING_COSTS_AND_RESERVATIONS"
+              ],
+              "targets": {
+                "A": "0",
+                "B": "99",
+                "C": "0"
+              }
+            },
+            {
+              "additional_B": "96",
+              "classification": "REJECTED",
+              "core_decision_id": "sha256:d206547b8a9b756629cb3e95a0ed1f07b567741b2d2aa46408372d477667017b",
+              "feasible_for_research": false,
+              "reasons": [
+                "JOINT_BUDGET_EXCEEDED_INCLUDING_COSTS_AND_RESERVATIONS"
+              ],
+              "targets": {
+                "A": "0",
+                "B": "96",
+                "C": "0"
+              }
+            },
+            {
+              "additional_B": "93",
+              "classification": "WAIT_SETTLEMENT_REASSESSMENT",
+              "core_decision_id": "sha256:8f6353656ebafab8cd979d4c27c33e859250de4aa324c9f231d3c4cd0f7ac78a",
+              "feasible_for_research": true,
+              "reasons": [],
+              "targets": {
+                "A": "0",
+                "B": "93",
+                "C": "0"
+              }
+            }
+          ],
+          "reasons": [],
+          "scope": "MECHANICAL_FULL_TRANSFER_ENDPOINT_NOT_STRATEGY_OR_RECOMMENDATION",
+          "selected_target": {
+            "A": "0",
+            "B": "93",
+            "C": "0"
+          },
+          "sell_A": "100",
+          "status": "FOUND",
+          "unit_B": "3",
+          "upper_total_B": "109"
+        },
+        "generation_document_id": "sha256:ebd44a78b4c06921a47822f31007a139d215fc3c1043f7bd4a087d29ca9db772",
+        "historical_reviewed_tokens": [
+          "fixture:event_id:A-event",
+          "fixture:event_id:B-event",
+          "fixture:event_id:C-event",
+          "fixture:formation_id:A-formation",
+          "fixture:formation_id:B-formation",
+          "fixture:formation_id:C-formation",
+          "fixture:volume_bar_id:A-bar",
+          "fixture:volume_bar_id:B-bar",
+          "fixture:volume_bar_id:C-bar"
+        ],
+        "latest_common_account_id": "sha256:d4b0c227b1eb9e49737a601481ae4cac07d54eddcf1d846fb396b379220af299",
+        "latest_decision_id": "sha256:c79537b2f33cfe4c8ae34fba8284ebaaefbe72feb0192d15469b5ff748eb18a4",
+        "origin_initial_capital": "2180",
+        "origin_ledger_input_id": "sha256:3984aacc98c320c281b3a05108199429f4c5bc87d7290c6d3c2bba794bc7cc9b",
+        "quantity_domain": {
+          "account_id": "sha256:45f6af8bb68e529bc1cff2ee0fd13386da74dc348f3ce20727719c5d680359a7",
+          "assets": {
+            "A": {
+              "adjustment_version": "RAW:synthetic/1",
+              "available_at": "2026-01-08T16:00:00+08:00",
+              "basis_id": "RAW:fixture:A",
+              "channel_id": "DECLARED_SYNTHETIC_A",
+              "code": "A",
+              "source_id": "fixture",
+              "unit_shares": "1"
+            },
+            "B": {
+              "adjustment_version": "RAW:synthetic/1",
+              "available_at": "2026-01-08T16:00:00+08:00",
+              "basis_id": "RAW:fixture:B",
+              "channel_id": "DECLARED_SYNTHETIC_B",
+              "code": "B",
+              "source_id": "fixture",
+              "unit_shares": "3"
+            }
+          },
+          "available_at": "2026-01-08T16:00:00+08:00",
+          "parameter_source": "FROZEN_SYNTHETIC_QUANTITY_UNITS_NOT_MARKET_RULE",
+          "schema": "capital-quantity-domain/0.1",
+          "version": "EXPLICIT_SYNTHETIC_UNITS/0.1"
+        },
+        "quantity_domain_id": "sha256:69e35a2e626d87f0abf52c74c3fb7a6a9b070185368e639aec7da35112c2becb",
+        "quantity_request_id": "sha256:9e36e1261d7ae806705514e3d64cf6b2ce21227120954a86dabe24a14b20325c",
+        "received_attempt_ids": [],
+        "source_document_id": "sha256:beb30f6dfd5dbc3e35693a17677527cd08c2d6c69d868c64aeb0691b77a2914a",
+        "source_input_id": "sha256:9e36e1261d7ae806705514e3d64cf6b2ce21227120954a86dabe24a14b20325c",
+        "source_kind": "CHECKPOINT_EPISODE",
+        "state_id": "sha256:f0a880517efd75ef609bd26db9bc09071bedcdea2fd9167516ae7063c7a16062",
+        "versions": {
+          "checkpoint": "capital-account-checkpoint/0.7",
+          "decision": "capital-decision/0.8",
+          "generation": "capital-quantity-candidates/0.4",
+          "source_wrapper": "capital-saved-quantity-source/0.1"
+        }
+      },
+      "source_roles": {
+        "destination": "B",
+        "incumbent": "A"
+      },
+      "status": "RECORDED_CONDITIONAL_RESEARCH_INTENT",
+      "synthetic": true
+    }
+  }
+}

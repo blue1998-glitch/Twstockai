@@ -1,0 +1,26 @@
+{
+  "exit_code": 2,
+  "stdout": "{\n  \"comparison\": {\n    \"schema\": \"capital-supplement-comparison/0.1\",\n    \"synthetic\": true,\n    \"status\": \"REFUSED\",\n    \"comparable\": false,\n    \"refusals\": [\n      {\n        \"reason\": \"COMMON_CONDITIONS_MISMATCH\"\n      }\n    ],\n    \"differences\": [\n      {\n        \"reference_label\": \"一般\",\n        \"label\": \"另一原件\",\n        \"path\": \"/parent_binding/parent_header_id\",\n        \"left\": \"sha256:9b7c3c8bbd7487e9eac97d18fe1a4208eeb4afbc745b6a527a9aac4a3cf584e8\",\n        \"right\": \"sha256:654e7ea53a2e36ff2175a3c62f967305be42ec28615683fd54bda261ad07e863\"\n      },\n      {\n        \"reference_label\": \"一般\",\n        \"label\": \"另一原件\",\n        \"path\": \"/parent_binding/parent_request_id\",\n        \"left\": \"sha256:45da9caa2dae3ec1925da12fd4863b7e6c7a676cbc726dae4967d5e023b991be\",\n        \"right\": \"sha256:09a87e104c1a21bfe55b7f457883f5100bb8f866a24b0abe3d2f56b7822928d8\"\n      },\n      {\n        \"reference_label\": \"一般\",\n        \"label\": \"另一原件\",\n        \"path\": \"/parent_binding/parent_result_id\",\n        \"left\": \"sha256:b426b70347924c87074c2a9be86e9580cd9b8e6c2ee51269e86ab49243a85b56\",\n        \"right\": \"sha256:17b4f3a314359a51bb96bbc8acbf2029966cc99fff82629256a311bdfd7dca7a\"\n      }\n    ],\n    \"total_mismatches\": 3,\n    \"details_truncated\": false,\n    \"common_binding\": null,\n    \"columns\": [],\n    \"provenance\": [\n      {\n        \"label\": \"一般\",\n        \"result_id\": \"sha256:0872698e6ceff82b0d1d5e76fb69069386d40dd0446d1b6e797ed546b0f7ebc2\",\n        \"parent_result_id\": \"sha256:b426b70347924c87074c2a9be86e9580cd9b8e6c2ee51269e86ab49243a85b56\",\n        \"generation_id\": \"sha256:c5e6483eb0180f5b948ff0f730be8c844d196b59bbf2d35cd2245223dee04897\",\n        \"binding_id\": \"sha256:5c7a04af14e4e5f863192be2f090da6306e5bbab1e529c8d0e25053045c90c33\"\n      },\n      {\n        \"label\": \"另一原件\",\n        \"result_id\": \"sha256:20cbe516eddb5c8d4dfe45320104de5be7ce81a7b1fb5c5ce98a2a3176f8d7df\",\n        \"parent_result_id\": \"sha256:17b4f3a314359a51bb96bbc8acbf2029966cc99fff82629256a311bdfd7dca7a\",\n        \"generation_id\": \"sha256:c5e6483eb0180f5b948ff0f730be8c844d196b59bbf2d35cd2245223dee04897\",\n        \"binding_id\": \"sha256:1713651157a881314011d7b6078ded599be142138548dca0edb15dc528653eae\"\n      }\n    ],\n    \"scope\": \"SAVED_MUTUALLY_EXCLUSIVE_RESEARCH_INTENTS_NOT_EXECUTIONS_OR_PERFORMANCE\",\n    \"ranking\": null,\n    \"selected_label\": null,\n    \"order_generation\": \"NOT_PERFORMED\",\n    \"execution\": \"NOT_PERFORMED\",\n    \"execution_authorized\": false,\n    \"primary_pressure_id\": null,\n    \"data_qualified\": false,\n    \"execution_model_qualified\": false,\n    \"historical_signal_eligible\": false,\n    \"policy_authorized\": false,\n    \"live_execution_authorized\": false\n  },\n  \"read_metadata\": {\n    \"items\": [\n      {\n        \"label\": \"一般\",\n        \"parent_store\": \"capital_research/research_operation_20261027/initial/runs/no-selection\",\n        \"parent_id\": \"demo-no-selection\",\n        \"store\": \"capital_research/selection_supplement_20261027/runs/general\",\n        \"id\": \"supp-general\"\n      },\n      {\n        \"label\": \"另一原件\",\n        \"parent_store\": \"capital_research/supplement_compare_20261027/fixtures/alternate-parent\",\n        \"parent_id\": \"demo-no-selection\",\n        \"store\": \"capital_research/supplement_compare_20261027/fixtures/rebound-conditional\",\n        \"id\": \"supp-conditional\"\n      }\n    ],\n    \"input_path\": \"/workspace/Twstockai/股票系統M1_v0_18/capital_research/supplement_compare_20261027/cases/same-parent-id-different-content/input.json\",\n    \"input_sha256\": \"99c0c24117c6579b6cd0b4cd44641443e9eab84a544ec6bf77dd51906e85efd3\"\n  }\n}\n",
+  "stderr": "",
+  "original_READ_trace": [
+    {
+      "status": "READ_ONLY",
+      "supplement_id": "supp-general",
+      "parent_id": "demo-no-selection",
+      "parent_result_id": "sha256:b426b70347924c87074c2a9be86e9580cd9b8e6c2ee51269e86ab49243a85b56",
+      "generation_id": "sha256:c5e6483eb0180f5b948ff0f730be8c844d196b59bbf2d35cd2245223dee04897",
+      "account_id": "sha256:8ba782b921772678f8be492480ccc08d8c8b5e85bdde3c4fea55cc4a2f5aca6d",
+      "data_cutoff": "2026-01-12T16:00:00+08:00"
+    },
+    {
+      "status": "READ_ONLY",
+      "supplement_id": "supp-conditional",
+      "parent_id": "demo-no-selection",
+      "parent_result_id": "sha256:17b4f3a314359a51bb96bbc8acbf2029966cc99fff82629256a311bdfd7dca7a",
+      "generation_id": "sha256:c5e6483eb0180f5b948ff0f730be8c844d196b59bbf2d35cd2245223dee04897",
+      "account_id": "sha256:8ba782b921772678f8be492480ccc08d8c8b5e85bdde3c4fea55cc4a2f5aca6d",
+      "data_cutoff": "2026-01-12T16:00:00+08:00"
+    }
+  ],
+  "guard": "FRESH_NO_ENGINE_NO_GENERATION_NO_SELECTION_NO_SOURCE_VERDICT_NO_SAVE_NO_WRITE_NO_NETWORK"
+}

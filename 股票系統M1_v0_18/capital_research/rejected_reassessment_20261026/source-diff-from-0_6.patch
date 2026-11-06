@@ -1,0 +1,389 @@
+diff --git "a/\350\202\241\347\245\250\347\263\273\347\265\261M1_v0_18/capital_research/continuity.py" "b/\350\202\241\347\245\250\347\263\273\347\265\261M1_v0_18/capital_research/continuity.py"
+index b391798..0495cd4 100644
+--- "a/\350\202\241\347\245\250\347\263\273\347\265\261M1_v0_18/capital_research/continuity.py"
++++ "b/\350\202\241\347\245\250\347\263\273\347\265\261M1_v0_18/capital_research/continuity.py"
+@@ -8,8 +8,9 @@ from rotation_research.action_ledger import replay
+ from .core import timestamp, number, quantity
+ from .close_clock import close_record
+ from .fact_lineage import history_at
++from .reassessment_history import ATTEMPT, declaration_sources, reviewed_tokens
+ 
+-CHECKPOINT = 'capital-account-checkpoint/0.5'
++CHECKPOINT = 'capital-account-checkpoint/0.6'
+ 
+ 
+ def ledger_prefix(origin, fills, day):
+@@ -34,7 +35,7 @@ def row_at(origin, fills, day):
+ 
+ 
+ def _check_result(execution):
+-    if execution['schema']!='capital-execution/0.6' or execution['status']!='SYNTHETIC_EXECUTION_REPLAY':
++    if execution['schema']!='capital-execution/0.7' or execution['status']!='SYNTHETIC_EXECUTION_REPLAY':
+         raise ValueError('LIFECYCLE_PROOF_REQUIRED: historical results remain readable, not implicitly upgraded')
+     if execution['result_id']!=fingerprint({k:v for k,v in execution.items() if k!='result_id'}):
+         raise ValueError('Execution fingerprint conflict')
+@@ -43,13 +44,46 @@ def _check_result(execution):
+         raise ValueError('Exact ordered decision history required')
+     sources=execution['fact_sources']
+     if set(sources)!=set(ids):raise ValueError('Complete fact declaration history required')
++    attempts=execution['reassessment_attempts']
++    if len({a['id'] for a in attempts})!=len(attempts):
++        raise ValueError('Duplicate reassessment attempt identity')
++    referenced={e['reassessment_attempt_id'] for e in execution.get('execution_events',[]) if 'reassessment_attempt_id' in e}
++    if not referenced<={a['attempt_id'] for a in attempts}:
++        raise ValueError('Execution event lost its reassessment receipt')
++    receipt_times=[timestamp(a['observed_at']) for a in attempts]
++    if receipt_times!=sorted(receipt_times):raise ValueError('Reassessment receipts must be chronological')
++    for i,a in enumerate(attempts):
++        if a['schema']!=ATTEMPT or a['attempt_id']!=fingerprint({k:v for k,v in a.items() if k!='attempt_id'}):
++            raise ValueError('Reassessment attempt fingerprint conflict')
++        d=a['decision'];source=a['fact_source']
++        if d['schema']!='capital-decision/0.7' or d['decision_id']!=fingerprint({k:v for k,v in d.items() if k!='decision_id'}):
++            raise ValueError('Reassessment decision fingerprint conflict')
++        if any(source[k]!=d[k] for k in ('decision_at','data_cutoff')):
++            raise ValueError('Reassessment source decision/cutoff conflict')
++        if not timestamp(d['decision_at'])<=timestamp(a['observed_at'])<=timestamp(execution['observed_until']):
++            raise ValueError('Reassessment receipt outside the execution watermark')
++        prior_ids=[key for key in ids if timestamp(records[key]['decision_at'])<timestamp(d['decision_at'])]
++        expected=history_at(declaration_sources(execution,decision_ids=prior_ids,attempt_limit=i)+[source],d['decision_at'])
++        if expected!=d['fact_history']:raise ValueError('Reassessment fact history differs from received declarations')
++        if not prior_ids or d['continuity']['latest_predecessor_id']!=prior_ids[-1] or a['checkpoint_id']!=d['continuity']['checkpoint_id']:
++            raise ValueError('Reassessment predecessor/checkpoint conflict')
++        p=next((p for p in d['layer3']['alternatives'] if p['id']==a['plan_id']),None)
++        accepted=bool(p and p['feasible'] and p.get('funding')=='SETTLED')
++        if a['outcome']!=('ACCEPTED' if accepted else 'REJECTED'):
++            raise ValueError('Reassessment outcome differs from its proposed plan')
++        if accepted:
++            if records.get(d['decision_id'])!=d or sources.get(d['decision_id'])!=source:
++                raise ValueError('Accepted reassessment must bind the active decision/source')
++        elif d['decision_id'] in records:
++            raise ValueError('Rejected reassessment cannot become an accepted decision')
+     for index,key in enumerate(ids):
+         d=records[key]
+-        if d['schema']!='capital-decision/0.6' or d['decision_id']!=key or fingerprint({k:v for k,v in d.items() if k!='decision_id'})!=key:
++        if d['schema']!='capital-decision/0.7' or d['decision_id']!=key or fingerprint({k:v for k,v in d.items() if k!='decision_id'})!=key:
+             raise ValueError('Decision history fingerprint conflict')
+         if any(sources[key][k]!=d[k] for k in ('decision_at','data_cutoff')):
+             raise ValueError('Fact declaration decision/cutoff conflict')
+-        expected=history_at([sources[k] for k in ids[:index+1]],d['decision_at'])
++        own=next((i for i,a in enumerate(attempts) if a['outcome']=='ACCEPTED' and a['decision']['decision_id']==key),None)
++        expected=history_at(declaration_sources(execution,decision_ids=ids[:index+1],attempt_limit=own),d['decision_at'])
+         if expected!=d['fact_history']:raise ValueError('Fact history differs from original declarations')
+     times=[timestamp(records[key]['decision_at']) for key in ids]
+     if times!=sorted(set(times)):raise ValueError('Decision history must be chronological')
+@@ -58,12 +92,14 @@ def _check_result(execution):
+     latest=records[ids[-1]]
+     if execution['latest_decision_id']!=ids[-1] or execution['latest_common_account_id']!=latest['common_account_id']:
+         raise ValueError('Latest predecessor identity conflict')
+-    tokens=set().union(*(set(d['reviewed_evidence_tokens']) for d in records.values()))
+-    if set(execution['reviewed_evidence_tokens'])!=tokens or not tokens<=set(latest['reviewed_evidence_tokens']):
++    tokens=set(reviewed_tokens(execution))
++    if set(execution['reviewed_evidence_tokens'])!=tokens:
+         raise ValueError('Reviewed evidence history was dropped')
+     orders={o['id']:o for o in execution['order_history']}
+     if len(orders)!=len(execution['order_history']) or set(orders)!=set(execution['order_states']):
+         raise ValueError('Order history/state identity conflict')
++    if any(a['order_id'] not in orders for a in attempts):
++        raise ValueError('Reassessment receipt belongs to an unknown order')
+     fills={f['id']:f for f in execution['fills']};mapping=execution['fill_order_ids']
+     if len(fills)!=len(execution['fills']) or set(fills)!=set(mapping):raise ValueError('Exact fill/order linkage required')
+     for key,f in fills.items():
+@@ -104,7 +140,7 @@ def make_checkpoint(origin, execution, *, through_at):
+                general_reserved_cash=execution['decision_records'][execution['latest_decision_id']]['reserved_cash'],
+                latest_decision_id=execution['latest_decision_id'],latest_common_account_id=execution['latest_common_account_id'],
+                reviewed_evidence_tokens=deepcopy(execution['reviewed_evidence_tokens']),
+-               fact_history=history_at([execution['fact_sources'][k] for k in execution['decision_ids']],through_at))
++               fact_history=history_at(declaration_sources(execution),through_at))
+     # Full-source and execution fingerprints are integrity metadata, not prefix decisions.
+     result=dict(schema=CHECKPOINT,state=state,state_id=fingerprint(state),
+         origin_ledger_input=deepcopy(origin),execution_result=deepcopy(execution),
+diff --git "a/\350\202\241\347\245\250\347\263\273\347\265\261M1_v0_18/capital_research/core.py" "b/\350\202\241\347\245\250\347\263\273\347\265\261M1_v0_18/capital_research/core.py"
+index 5aec427..e0ca60f 100644
+--- "a/\350\202\241\347\245\250\347\263\273\347\265\261M1_v0_18/capital_research/core.py"
++++ "b/\350\202\241\347\245\250\347\263\273\347\265\261M1_v0_18/capital_research/core.py"
+@@ -11,7 +11,7 @@ from rotation_research.core import fees
+ from .eligibility import entry_review, known_fact, validity_status
+ from .fact_lineage import source_snapshot, history_at, visible, issues as fact_issues, asset_issues
+ 
+-VERSION = 'capital-decision/0.6'
++VERSION = 'capital-decision/0.7'
+ FEATURES = ('price_volume', 'box', 'key_position', 'momentum', 'cross_scale')
+ BINDING = ('source_id', 'basis_id', 'adjustment_version')
+ 
+@@ -380,7 +380,8 @@ def resume_decision(previous, data, *, checkpoint=None, cancelled_order_ids=()):
+     next_input=deepcopy(data)
+     next_input['consumed_evidence_tokens']=sorted(set(next_input['consumed_evidence_tokens']) | set(old['reviewed_evidence_tokens']) | set(checkpoint['state']['reviewed_evidence_tokens']))
+     execution=checkpoint['execution_result']
+-    prior=[execution['fact_sources'][key] for key in execution['decision_ids']]
++    from .reassessment_history import declaration_sources
++    prior=declaration_sources(execution)
+     with localcontext() as ctx:
+         ctx.prec=50
+         result=_decide(next_input,prior_fact_sources=prior)
+diff --git "a/\350\202\241\347\245\250\347\263\273\347\265\261M1_v0_18/capital_research/execution.py" "b/\350\202\241\347\245\250\347\263\273\347\265\261M1_v0_18/capital_research/execution.py"
+index 3950c8e..051940e 100644
+--- "a/\350\202\241\347\245\250\347\263\273\347\265\261M1_v0_18/capital_research/execution.py"
++++ "b/\350\202\241\347\245\250\347\263\273\347\265\261M1_v0_18/capital_research/execution.py"
+@@ -13,8 +13,9 @@ from .transition_risk import inspect_risk
+ from .close_clock import close_record
+ from .eligibility import expired_entry_reasons
+ from .fact_lineage import source_snapshot, history_at, asset_issues, first_issue_at
++from .reassessment_history import declaration_sources, reviewed_tokens, make_attempt
+ 
+-VERSION = 'capital-execution/0.6'
++VERSION = 'capital-execution/0.7'
+ 
+ 
+ def _refusal(reason):
+@@ -139,23 +140,47 @@ def _simulate(job):
+     decision_ids.append(result['decision_id']);decision_records[result['decision_id']]=deepcopy(result)
+     fact_sources=deepcopy(inherited['fact_sources']) if inherited else {}
+     fact_sources[result['decision_id']]=source_snapshot(data)
++    reassessment_attempts=deepcopy(inherited['reassessment_attempts']) if inherited else []
+     fill_order_ids=deepcopy(inherited['fill_order_ids']) if inherited else {}
+     unavailable=deepcopy(inherited['opening_unavailable_shares']) if inherited else {
+         c:str(quantity(x['shares'])-quantity(x['sellable'])) for c,x in a['holdings'].items()}
+     origin_common=inherited['origin_common_account_id'] if inherited else result['common_account_id']
+     latest_result=result
+ 
++    def knowledge():
++        return dict(decision_ids=decision_ids,decision_records=decision_records,
++                    fact_sources=fact_sources,reassessment_attempts=reassessment_attempts)
++
+     def lineage():
+         latest=decision_records[decision_ids[-1]]
+         return dict(decision_ids=deepcopy(decision_ids),decision_records=deepcopy(decision_records),
+             latest_decision_id=latest['decision_id'],latest_common_account_id=latest['common_account_id'],
+             origin_common_account_id=origin_common,opening_unavailable_shares=deepcopy(unavailable),
+-            reviewed_evidence_tokens=sorted(set().union(*(set(d['reviewed_evidence_tokens']) for d in decision_records.values()))),
++            reviewed_evidence_tokens=reviewed_tokens(knowledge()),
+             fill_order_ids=deepcopy(fill_order_ids),ledger_close_proof=deepcopy(clock),
+-            fact_sources=deepcopy(fact_sources))
++            fact_sources=deepcopy(fact_sources),reassessment_attempts=deepcopy(reassessment_attempts))
+     marks={c:dict(price=next(m['price'] for m in x['marks'] if m['occurred_at']==data['data_cutoff'] and timestamp(m['available_at'])<=timestamp(data['decision_at'])),
+                         at=data['data_cutoff'],source_id=x['source_id'],basis_id=x['basis_id']) for c,x in data['assets'].items()}
+     risk_data=data
++
++    def cancel_known_restrictions(at, reason):
++        sources=declaration_sources(knowledge())
++        known_history=history_at(sources,at)
++        for o in orders:
++            st=order_state[o['id']]
++            if o['side']!='BUY' or not number(st['remaining']) or st['status'].startswith(('CANCELLED','EXPIRED')):
++                continue
++            invalid=expired_entry_reasons(risk_data['assets'][o['code']],at)
++            invalid+=asset_issues(known_history,o['code'],risk_data['assets'][o['code']],at,accepted_order=True)
++            if invalid:
++                effective=first_issue_at(sources,o['code'],risk_data['assets'][o['code']],
++                    after=st['active_decision_at'],through=at,accepted_order=True) or at
++                if timestamp(effective)>=timestamp(o['expires_at']):
++                    continue
++                st.update(status='CANCELLED_EVIDENCE',reserved_cash='0')
++                decisions.append(dict(at=effective,observed_at=at,order_id=o['id'],
++                    status='CANCELLED_EVIDENCE',reason=reason,details=invalid))
++
+     calendar = {d['date']:d['trading'] for d in ledger_input['calendar']}
+     tape = job['tape']
+     times = [timestamp(x['at']) for x in tape]
+@@ -197,18 +222,7 @@ def _simulate(job):
+                 if o['side']=='BUY' and o['code']==obs['code'] and number(st['remaining']):
+                     st.update(status='CANCELLED_EVIDENCE',reserved_cash='0')
+                     decisions.append(dict(at=obs['at'],order_id=o['id'],status='CANCELLED_EVIDENCE',reason=obs['evidence_status']))
+-        known_history=history_at([fact_sources[k] for k in decision_ids],obs['at'])
+-        for o in orders:
+-            st=order_state[o['id']]
+-            if o['side']=='BUY' and number(st['remaining']) and not st['status'].startswith(('CANCELLED','EXPIRED')):
+-                invalid=expired_entry_reasons(risk_data['assets'][o['code']],obs['at'])
+-                invalid+=asset_issues(known_history,o['code'],risk_data['assets'][o['code']],obs['at'])
+-                if invalid:
+-                    effective=first_issue_at([fact_sources[k] for k in decision_ids],o['code'],risk_data['assets'][o['code']],
+-                                             after=st['active_decision_at'],through=obs['at']) or obs['at']
+-                    if timestamp(effective)>=timestamp(o['expires_at']):continue
+-                    st.update(status='CANCELLED_EVIDENCE',reserved_cash='0')
+-                    decisions.append(dict(at=effective,observed_at=obs['at'],order_id=o['id'],status='CANCELLED_EVIDENCE',reason='DECLARED_VALIDITY_ENDED',details=invalid))
++        cancel_known_restrictions(obs['at'],'DECLARED_VALIDITY_ENDED')
+         # Funding is not a reauthorization. A new decision must bind the actual
+         # prior-close account, original fill path and explicit order cancellations.
+         for review in job.get('reassessments',[]):
+@@ -216,7 +230,7 @@ def _simulate(job):
+             if o is None:raise ValueError('Reassessment references an unknown order')
+             st=order_state[o['id']]
+             fresh=review['decision_input']
+-            if (o['code']!=obs['code'] or review['id'] in {x['id'] for x in reassessments}
++            if (o['code']!=obs['code'] or review['id'] in {x['id'] for x in reassessment_attempts}
+                     or timestamp(fresh['decision_at'])>when):continue
+             if st['status'] in ('CANCELLED_EVIDENCE','EXPIRED_UNFILLED') or not number(st['remaining']):continue
+             if fresh['data_cutoff'][:10]>=day or any(f['date']>fresh['data_cutoff'][:10] for f in fills):
+@@ -235,10 +249,13 @@ def _simulate(job):
+                 raise ValueError('Reassessment decision_id mismatch')
+             fresh_plan=next((p for p in fresh_result['layer3']['alternatives'] if p['id']==review['plan_id']),None)
+             if fresh_plan is None or not fresh_plan['feasible'] or fresh_plan.get('funding')!='SETTLED':
++                reassessment_attempts.append(make_attempt(review,fresh_result,source_snapshot(fresh),obs['at'],'REJECTED'))
+                 invalid=expired_entry_reasons(fresh['assets'][o['code']],fresh['decision_at'])
+                 if invalid:st.update(status='CANCELLED_EVIDENCE',reserved_cash='0')
+                 decisions.append(dict(at=obs['at'],order_id=o['id'],status='CANCELLED_EVIDENCE' if invalid else 'WAITING_REASSESSMENT',
+-                                      reason='NEW_DECISION_EVIDENCE_EXPIRED_OR_INVALIDATED' if invalid else 'NEW_DECISION_NOT_FEASIBLE_AND_SETTLED'))
++                                      reason='NEW_DECISION_EVIDENCE_EXPIRED_OR_INVALIDATED' if invalid else 'NEW_DECISION_NOT_FEASIBLE_AND_SETTLED',
++                                      reassessment_attempt_id=reassessment_attempts[-1]['attempt_id']))
++                cancel_known_restrictions(obs['at'],'REJECTED_REASSESSMENT_KNOWN_RESTRICTION')
+                 continue
+             if any(fresh['assets'][c][k]!=data['assets'][c][k] for c in data['assets'] for k in ('source_id','basis_id','adjustment_version')):
+                 raise ValueError('Reassessment cannot silently change price basis')
+@@ -252,6 +269,7 @@ def _simulate(job):
+             risk_data=fresh;latest_result=fresh_result;decision_ids.append(fresh_result['decision_id'])
+             decision_records[fresh_result['decision_id']]=deepcopy(fresh_result)
+             fact_sources[fresh_result['decision_id']]=source_snapshot(fresh)
++            reassessment_attempts.append(make_attempt(review,fresh_result,source_snapshot(fresh),obs['at'],'ACCEPTED'))
+             reassessments.append(dict(id=review['id'],at=obs['at'],order_id=o['id'],checkpoint_id=cp['checkpoint_id'],
+                 decision_id=fresh_result['decision_id'],cancelled_order_ids=review['cancelled_order_ids']))
+         # Release expired orders and reserve all active buys jointly, in explicit order.
+@@ -325,14 +343,15 @@ def _simulate(job):
+     final_time = timestamp(job['observed_until'])
+     if times and final_time < times[-1]:
+         raise ValueError('Execution watermark before tape')
+-    final_history=history_at([fact_sources[k] for k in decision_ids],job['observed_until'])
++    final_sources=declaration_sources(knowledge())
++    final_history=history_at(final_sources,job['observed_until'])
+     for o in orders:
+         st=order_state[o['id']]
+         if o['side']=='BUY' and number(st['remaining']) and not st['status'].startswith(('CANCELLED','EXPIRED')):
+-            invalid=asset_issues(final_history,o['code'],risk_data['assets'][o['code']],job['observed_until'])
++            invalid=asset_issues(final_history,o['code'],risk_data['assets'][o['code']],job['observed_until'],accepted_order=True)
+             if invalid:
+-                effective=first_issue_at([fact_sources[k] for k in decision_ids],o['code'],risk_data['assets'][o['code']],
+-                                         after=st['active_decision_at'],through=job['observed_until'])
++                effective=first_issue_at(final_sources,o['code'],risk_data['assets'][o['code']],
++                                         after=st['active_decision_at'],through=job['observed_until'],accepted_order=True)
+                 if effective is not None and timestamp(effective)<timestamp(o['expires_at']):
+                     st.update(status='CANCELLED_EVIDENCE',reserved_cash='0')
+                     decisions.append(dict(at=effective,observed_at=job['observed_until'],order_id=o['id'],status='CANCELLED_EVIDENCE',
+@@ -368,6 +387,6 @@ def compare_jobs(jobs):
+             predecessor_state=j.get('continuation',{}).get('checkpoint',{}).get('state_id'))))
+     if len(set(identities)) != 1:
+         raise ValueError('Alternatives must share exact capital/rights AND exogenous prices/capacity/states/availability/settlement path')
+-    return dict(schema='capital-comparison/0.6', synthetic=True, common_input_id=identities[0],
++    return dict(schema='capital-comparison/0.7', synthetic=True, common_input_id=identities[0],
+                 results={k:simulate(j) for k,j in jobs.items()}, ranking=None,
+                 total_net_return_comparison_qualified=False, policy_authorized=False)
+diff --git "a/\350\202\241\347\245\250\347\263\273\347\265\261M1_v0_18/capital_research/fact_lineage.py" "b/\350\202\241\347\245\250\347\263\273\347\265\261M1_v0_18/capital_research/fact_lineage.py"
+index 7a1aec9..ef20a59 100644
+--- "a/\350\202\241\347\245\250\347\263\273\347\265\261M1_v0_18/capital_research/fact_lineage.py"
++++ "b/\350\202\241\347\245\250\347\263\273\347\265\261M1_v0_18/capital_research/fact_lineage.py"
+@@ -7,7 +7,7 @@ from copy import deepcopy
+ from graph_core.core import fingerprint
+ from .eligibility import _time, known_fact, validity_status
+ 
+-SCHEMA = 'capital-fact-history/0.2'
++SCHEMA = 'capital-fact-history/0.3'
+ BINDING = ('source_id', 'basis_id', 'adjustment_version')
+ 
+ 
+@@ -98,9 +98,15 @@ def history_at(sources, at):
+     """
+     events = []
+     for source in sources:
++        received_at = None
++        if source['schema'] == 'capital-fact-receipt/0.1':
++            received_at = _time(source['received_at'])
++            source = source['source']
+         if source['schema'] != 'capital-fact-declarations/0.1':
+             raise ValueError('Versioned fact declarations required')
+         start = _time(source['decision_at'])
++        if received_at is not None:
++            start = max(start, received_at)
+         if start > _time(at): continue
+         for row in source['records']:
+             fact = row['fact']; times = {start}
+@@ -190,13 +196,18 @@ def history_at(sources, at):
+     return result
+ 
+ 
+-def issues(history, code, asset, kind, fact, at):
++def issues(history, code, asset, kind, fact, at, *, accepted_order=False):
+     if fact is None: return ['FACT_IDENTITY_UNKNOWN']
+     key = key_of(identity(code, asset, kind, fact))
+     reasons = list(history['rejected'].get(key, [])) + list(history['unresolved'].get(key, []))
+     root = history['aliases'].get(key)
+     if root is None: reasons.append('FACT_IDENTITY_UNKNOWN')
+     else:
++        if accepted_order and body(fact) == body(history['roots'][root]['fact']):
++            # A refused body/validity proposal is not the old order's authority.
++            # Its known additional restrictions still block that root below.
++            reasons = [r for r in reasons if r not in (
++                'FACT_CONTENT_REWRITE_NOT_IMPLEMENTED', 'FACT_VALIDITY_REWRITE_NOT_IMPLEMENTED')]
+         if history['restriction_conflicts'].get(root):
+             reasons.append('FACT_RESTRICTION_CONFLICT_UNKNOWN')
+         status = validity_status(history['roots'][root]['fact'], at, at)
+@@ -205,18 +216,18 @@ def issues(history, code, asset, kind, fact, at):
+     return sorted(set(reasons))
+ 
+ 
+-def asset_issues(history, code, asset, at):
++def asset_issues(history, code, asset, at, *, accepted_order=False):
+     ids = set(asset.get('capital_eligibility', {}).get('evidence_ids', []))
+     result = []
+     for fact in asset['evidence']:
+-        if fact['id'] in ids: result += issues(history, code, asset, 'EVIDENCE', fact, at)
++        if fact['id'] in ids: result += issues(history, code, asset, 'EVIDENCE', fact, at, accepted_order=accepted_order)
+     entry = deepcopy(asset['entry_context']); ref = entry.pop('formal_reference')
+-    result += issues(history, code, asset, 'ENTRY', entry, at)
+-    result += issues(history, code, asset, 'REFERENCE', ref, at)
++    result += issues(history, code, asset, 'ENTRY', entry, at, accepted_order=accepted_order)
++    result += issues(history, code, asset, 'REFERENCE', ref, at, accepted_order=accepted_order)
+     return sorted(set(result))
+ 
+ 
+-def first_issue_at(sources, code, asset, *, after, through):
++def first_issue_at(sources, code, asset, *, after, through, accepted_order=False):
+     """First declared known disqualification, separate from processing time."""
+     final = history_at(sources, through); candidates = {_time(after)}
+     for row in final['observations']:
+@@ -227,6 +238,6 @@ def first_issue_at(sources, code, asset, *, after, through):
+             candidates.add(max(observed, _time(v['valid_until'])))
+     for when in sorted(candidates):
+         if _time(after) <= when <= _time(through):
+-            if asset_issues(history_at(sources, when.isoformat()), code, asset, when.isoformat()):
++            if asset_issues(history_at(sources, when.isoformat()), code, asset, when.isoformat(), accepted_order=accepted_order):
+                 return when.isoformat()
+     return None
+diff --git "a/\350\202\241\347\245\250\347\263\273\347\265\261M1_v0_18/capital_research/reassessment_history.py" "b/\350\202\241\347\245\250\347\263\273\347\265\261M1_v0_18/capital_research/reassessment_history.py"
+new file mode 100644
+index 0000000..c87d826
+--- /dev/null
++++ "b/\350\202\241\347\245\250\347\263\273\347\265\261M1_v0_18/capital_research/reassessment_history.py"
+@@ -0,0 +1,35 @@
++"""Pure knowledge receipts, separate from accepted trading decisions/accounts."""
++from copy import deepcopy
++from graph_core.core import fingerprint
++
++RECEIPT = 'capital-fact-receipt/0.1'
++ATTEMPT = 'capital-reassessment-attempt/0.1'
++
++
++def declaration_sources(execution, *, decision_ids=None, attempt_limit=None):
++    ids = execution['decision_ids'] if decision_ids is None else decision_ids
++    result = [execution['fact_sources'][key] for key in ids]
++    attempts = execution['reassessment_attempts']
++    if attempt_limit is not None:
++        attempts = attempts[:attempt_limit]
++    for attempt in attempts:
++        if attempt['outcome'] == 'REJECTED':
++            result.append(dict(schema=RECEIPT, received_at=attempt['observed_at'],
++                               source=deepcopy(attempt['fact_source'])))
++    return result
++
++
++def reviewed_tokens(execution):
++    records = list(execution['decision_records'].values())
++    records += [a['decision'] for a in execution['reassessment_attempts']]
++    return sorted(set().union(*(set(d['reviewed_evidence_tokens']) for d in records)))
++
++
++def make_attempt(review, decision, source, observed_at, outcome):
++    value = dict(schema=ATTEMPT, id=review['id'], order_id=review['order_id'],
++        observed_at=observed_at, outcome=outcome, decision=deepcopy(decision),
++        fact_source=deepcopy(source), plan_id=review['plan_id'],
++        checkpoint_id=review['checkpoint_id'],
++        cancelled_order_ids=deepcopy(review['cancelled_order_ids']))
++    value['attempt_id'] = fingerprint(value)
++    return value

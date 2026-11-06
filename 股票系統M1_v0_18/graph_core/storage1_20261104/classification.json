@@ -1,0 +1,87 @@
+{
+  "all_categories_retained": true,
+  "categories": {
+    "A": {
+      "assigned_unique_allocated_bytes": 951455744,
+      "cross_category_shared_inodes": 0,
+      "exclusive_allocated_bytes": 951455744,
+      "hardlinked_inodes": 26,
+      "logical_inode_bytes": 905115117,
+      "path_count": 14849,
+      "physical_inodes": 14823
+    },
+    "B": {
+      "assigned_unique_allocated_bytes": 9506111488,
+      "cross_category_shared_inodes": 0,
+      "exclusive_allocated_bytes": 9506111488,
+      "hardlinked_inodes": 0,
+      "logical_inode_bytes": 9469744014,
+      "path_count": 16418,
+      "physical_inodes": 16418
+    },
+    "C": {
+      "assigned_unique_allocated_bytes": 7251427328,
+      "cross_category_shared_inodes": 0,
+      "exclusive_allocated_bytes": 7251427328,
+      "hardlinked_inodes": 1155,
+      "logical_inode_bytes": 7109886247,
+      "path_count": 59013,
+      "physical_inodes": 54564
+    },
+    "D": {
+      "assigned_unique_allocated_bytes": 313401344,
+      "cross_category_shared_inodes": 0,
+      "exclusive_allocated_bytes": 313401344,
+      "hardlinked_inodes": 0,
+      "logical_inode_bytes": 312189824,
+      "path_count": 490,
+      "physical_inodes": 490
+    },
+    "U": {
+      "assigned_unique_allocated_bytes": 4776345600,
+      "cross_category_shared_inodes": 30093,
+      "exclusive_allocated_bytes": 601255936,
+      "hardlinked_inodes": 1487,
+      "logical_inode_bytes": 4682951335,
+      "path_count": 46001,
+      "physical_inodes": 44444
+    }
+  },
+  "category_meanings": {
+    "A": "Raw OHLCV/source/corporate-action/time evidence and histories",
+    "B": "Immutable core/event/account/decision/replay records",
+    "C": "Existing preview/presentation derivations; reconstruction requires fixed code and preserved complete inputs",
+    "D": "Known browser/resource/engineering work products; not certified deletable",
+    "U": "Unknown purpose, credentials, unclassified shared objects; protected"
+  },
+  "cross_category_shared_allocated_bytes": 4175089664,
+  "delete_candidates": 0,
+  "directory_count": 1702,
+  "elapsed_seconds": 18.286466198005655,
+  "excluded_new_output": "/workspace/twstockai-local-data/storage1_20261104",
+  "future_growth": "New source bodies and per-stock daily fact shards dominate quote-only writes; no daily full-history/result/chart duplication is required. Full graph/indicator cache retention requires a later explicit policy.",
+  "hardlinked_inodes": 2668,
+  "peak_RSS_KiB": 337676,
+  "physical_accounting": "Unique(device,inode) st_blocks*512; shared inode assigned once with protective U>A>B>C>D priority. No extent/reflink or byte-identical different-inode dedup inferred. Directory metadata not included in file allocation totals.",
+  "physical_file_inodes": 130739,
+  "physical_unique_allocated_file_bytes": 22798741504,
+  "reconstruction": {
+    "A": "Not reconstructible from summaries; original evidence retained",
+    "B": "Exact historical evidence retained; no deletion authorization",
+    "C": "Conditional only, no full regeneration performed",
+    "D": "Engineering purpose does not prove redundancy; all retained",
+    "U": "Not proven; all retained"
+  },
+  "reference_coverage": {
+    "cross_purpose_references": 28606,
+    "du2_manifests": 34092,
+    "missing_references": 0,
+    "references": 153051,
+    "unverified_descriptors_retained": 0
+  },
+  "regular_paths": 136771,
+  "schema": "storage1-capacity-classification/0.1",
+  "scope": "/workspace/twstockai-local-data",
+  "symlinks_not_followed": 0,
+  "unsafe_paths_count": 0
+}

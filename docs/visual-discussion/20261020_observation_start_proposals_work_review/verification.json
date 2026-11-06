@@ -1,0 +1,63 @@
+{
+  "schema": "m1-observation-start-verification/1",
+  "proposal_driver_runs": 1,
+  "verification_script_runs": 1,
+  "fixed_output_cases": 5,
+  "independent_case_checks": [
+    {
+      "case": "2884-Oct7",
+      "independent_forward_later_min_max": "PASS",
+      "truncation_and_future_poison": "PASS",
+      "positive_affine_price_transform": "PASS"
+    },
+    {
+      "case": "2884-direction-control",
+      "independent_forward_later_min_max": "PASS",
+      "truncation_and_future_poison": "PASS",
+      "positive_affine_price_transform": "PASS"
+    },
+    {
+      "case": "1101-ABC-May14",
+      "independent_forward_later_min_max": "PASS",
+      "truncation_and_future_poison": "PASS",
+      "positive_affine_price_transform": "PASS"
+    },
+    {
+      "case": "1101-ABC-Jun2",
+      "independent_forward_later_min_max": "PASS",
+      "truncation_and_future_poison": "PASS",
+      "positive_affine_price_transform": "PASS"
+    },
+    {
+      "case": "1101-ABC-Jun3",
+      "independent_forward_later_min_max": "PASS",
+      "truncation_and_future_poison": "PASS",
+      "positive_affine_price_transform": "PASS"
+    }
+  ],
+  "all_active_segment_prefix_equalities": 362,
+  "synthetic_checks": [
+    "constant prices produce no envelope event or close-turn event",
+    "unfinished equal-close plateau not confirmed",
+    "plateau confirmed only after later unequal close"
+  ],
+  "reviewed_reference_recovery": {
+    "2884_Sep17": "PRESENT_AS_ONE_RESEARCH_ANCHOR_NOT_FORMAL_START",
+    "ABC_Apr7_at_May14_Jun2_Jun3": "PRESENT_AS_ONE_START_PROPOSAL",
+    "ABC_May13_wick": "ENVELOPE_PRESENT_CLOSE_ONLY_BASELINE_ABSENT"
+  },
+  "known_endpoint_limitation": "April7-to-June3 observation proposal still exists and includes user-excluded June3. It must NOT become the approved39-row ABC interval; June2 candidate is separately retained.",
+  "original_core_indicator_recomputations": 0,
+  "product_classifier": "NOT_IMPLEMENTED_OR_TESTED",
+  "browser": "NOT_RUN",
+  "Android": "NOT_TESTED_NEW_BUILD",
+  "PDF_visual_QA": "PASS_MANUAL_RECORD_BOUND_TO_PDF_AND_PREVIEW_HASHES",
+  "historical_signal_eligible": false,
+  "primary_pressure_id": null,
+  "PDF_pages": 2,
+  "build_figures_attempts": 3,
+  "build_figures_successful_outputs": 2,
+  "build_failure": "First invocation SyntaxError else3; fixed before any PDF creation. Annotation moved clear of candles and local band contrast increased before final render.",
+  "source_SHAs_unchanged": "PASS",
+  "old_graph_rebuilds": 0
+}

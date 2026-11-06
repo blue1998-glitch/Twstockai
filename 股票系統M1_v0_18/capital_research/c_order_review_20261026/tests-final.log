@@ -1,0 +1,38 @@
+test_all_gateway_edits_fail_before_permission (capital_research.c_order_review_20261026.test_C_review.COrderTests.test_all_gateway_edits_fail_before_permission) ... ok
+test_future_revocation_prefix_and_later_cancellation (capital_research.c_order_review_20261026.test_C_review.COrderTests.test_future_revocation_prefix_and_later_cancellation) ... ok
+test_invalid_unknown_conflict_risk_cost_and_funding_still_reject (capital_research.c_order_review_20261026.test_C_review.COrderTests.test_invalid_unknown_conflict_risk_cost_and_funding_still_reject) ... ok
+test_ledger_checkpoint_and_READ_preserve_rights_latest_tokens (capital_research.c_order_review_20261026.test_C_review.COrderTests.test_ledger_checkpoint_and_READ_preserve_rights_latest_tokens) ... FAIL
+test_legacy_E_path_exactly_matches_saved_0_8_result (capital_research.c_order_review_20261026.test_C_review.COrderTests.test_legacy_E_path_exactly_matches_saved_0_8_result) ... ok
+test_new_batch_old_trigger_rejects_new_independent_trigger_qualifies (capital_research.c_order_review_20261026.test_C_review.COrderTests.test_new_batch_old_trigger_rejects_new_independent_trigger_qualifies) ... ok
+test_new_version_READ_does_not_import_engines_or_write (capital_research.c_order_review_20261026.test_C_review.COrderTests.test_new_version_READ_does_not_import_engines_or_write) ... FAIL
+test_old_C_wrapper_stays_unsupported_and_unscoped_resume_unchanged (capital_research.c_order_review_20261026.test_C_review.COrderTests.test_old_C_wrapper_stays_unsupported_and_unscoped_resume_unchanged) ... ok
+test_partial_and_limit_up_keep_original_order (capital_research.c_order_review_20261026.test_C_review.COrderTests.test_partial_and_limit_up_keep_original_order) ... ok
+test_public_adapter_is_pure_for_C_request (capital_research.c_order_review_20261026.test_C_review.COrderTests.test_public_adapter_is_pure_for_C_request) ... ok
+test_raw_input_flag_cannot_create_scope_permission (capital_research.c_order_review_20261026.test_C_review.COrderTests.test_raw_input_flag_cannot_create_scope_permission) ... ok
+test_scope_tamper_or_version_downgrade_is_rejected (capital_research.c_order_review_20261026.test_C_review.COrderTests.test_scope_tamper_or_version_downgrade_is_rejected) ... ok
+test_valid_original_C_order_has_no_new_trigger_or_quantity (capital_research.c_order_review_20261026.test_C_review.COrderTests.test_valid_original_C_order_has_no_new_trigger_or_quantity) ... ok
+
+======================================================================
+FAIL: test_ledger_checkpoint_and_READ_preserve_rights_latest_tokens (capital_research.c_order_review_20261026.test_C_review.COrderTests.test_ledger_checkpoint_and_READ_preserve_rights_latest_tokens)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/workspace/Twstockai/股票系統M1_v0_18/capital_research/c_order_review_20261026/test_C_review.py", line 90, in test_ledger_checkpoint_and_READ_preserve_rights_latest_tokens
+    self.assertEqual(summary['status'],'READABLE',summary['reasons'])
+AssertionError: 'UNREADABLE' != 'READABLE'
+- UNREADABLE
+? --
++ READABLE
+ : ['CHECKPOINT_ID_CONFLICT']
+
+======================================================================
+FAIL: test_new_version_READ_does_not_import_engines_or_write (capital_research.c_order_review_20261026.test_C_review.COrderTests.test_new_version_READ_does_not_import_engines_or_write)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/workspace/Twstockai/股票系統M1_v0_18/capital_research/c_order_review_20261026/test_C_review.py", line 135, in test_new_version_READ_does_not_import_engines_or_write
+    self.assertEqual(result.returncode,0,result.stderr)
+AssertionError: 2 != 0 : 
+
+----------------------------------------------------------------------
+Ran 13 tests in 0.918s
+
+FAILED (failures=2)

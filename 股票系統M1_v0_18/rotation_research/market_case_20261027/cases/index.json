@@ -1,0 +1,24 @@
+{
+  "rejected_cases": [
+    "wrong-opening",
+    "wrong-period",
+    "wrong-market-price",
+    "wrong-market-capacity",
+    "wrong-market-market_state",
+    "wrong-market-available_at",
+    "wrong-market-basis_id",
+    "wrong-market-source_id",
+    "wrong-cost-model",
+    "april-borrows-june",
+    "reset-opening",
+    "entry-rewritten",
+    "wrong-fill-source",
+    "synthetic-relabelling",
+    "wrong-source-binding",
+    "b-buy-before-opportunity"
+  ],
+  "positive": "controls/source-bound-input.json",
+  "positive_expected": "REFUSED_SOURCE_QUALIFICATION",
+  "draft": "input.json",
+  "draft_expected": "AWAITING_EXPLICIT_INPUT"
+}

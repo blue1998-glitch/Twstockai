@@ -1,0 +1,20 @@
+Traceback (most recent call last):
+  File "<frozen runpy>", line 198, in _run_module_as_main
+  File "<frozen runpy>", line 88, in _run_code
+  File "/workspace/Twstockai/股票系統M1_v0_18/capital_research/rejected_reassessment_20261026/reproduce.py", line 45, in <module>
+    capture(parser.parse_args().output)
+  File "/workspace/Twstockai/股票系統M1_v0_18/capital_research/rejected_reassessment_20261026/reproduce.py", line 33, in capture
+    actual = materialize(spec, record=lambda tag, x:save(out/name/(tag+'.json'), x))
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/workspace/Twstockai/股票系統M1_v0_18/capital_research/rejected_reassessment_20261026/fixtures.py", line 53, in materialize
+    cp = make_checkpoint(j['ledger_input'], prior, through_at=first['observed_until'])
+         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/workspace/Twstockai/股票系統M1_v0_18/capital_research/continuity.py", line 81, in make_checkpoint
+    _check_result(execution)
+  File "/workspace/Twstockai/股票系統M1_v0_18/capital_research/continuity.py", line 38, in _check_result
+    raise ValueError('LIFECYCLE_PROOF_REQUIRED: historical results remain readable, not implicitly upgraded')
+ValueError: LIFECYCLE_PROOF_REQUIRED: historical results remain readable, not implicitly upgraded
+restrictive-unfilled {"review_feasible": false, "review_B_qualified": false, "B_fill_shares": "0", "restored_B_qualified": true, "restored_candidate_ids": ["A-zero", "D-cash", "E-joint", "E-partial"]}
+restrictive-funded-fill {"review_feasible": false, "review_B_qualified": false, "B_fill_shares": "20", "restored_B_qualified": null, "restored_candidate_ids": null}
+value-only-rejection {"review_feasible": false, "review_B_qualified": false, "B_fill_shares": "20", "restored_B_qualified": null, "restored_candidate_ids": null}
+valid-review {"review_feasible": true, "review_B_qualified": true, "B_fill_shares": "20", "restored_B_qualified": null, "restored_candidate_ids": null}

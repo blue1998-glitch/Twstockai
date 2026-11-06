@@ -1,0 +1,109 @@
+{
+  "schema_version": "p03-source-role-selection/0.1",
+  "scenario_id": "retained-1101-B88-first-return-research",
+  "comparison_artifact_id": "sha256:6ba81060243c45f38a99b33ae8ff34dd4824c9bbbaf7bbd4ac719d1e1c7511c9",
+  "binding": {
+    "code": "1101",
+    "source_id": "sha256:adea7f78a97d18b6b51fbba103e08c0db33dc6fb1eb613b960b0aabe213b534b",
+    "price_basis_id": "sha256:50e560b77640da3b7d000c0db67fc73a3f5b69d0bd744871ccb03483f8ec115e",
+    "source_frame_id": "sha256:b7215491c924570f3b40594fbd859f4b5c2532b247b62b6e625a8fcb66964f70",
+    "source_prefix_fingerprint": "sha256:e1651ca453df5b818e091575ded756953f69271f69f69d6008bb544f2fe76832"
+  },
+  "adjustment_version": "NOT_APPLICABLE_RAW",
+  "selected_at": "2026-10-24T02:47:18.830589+00:00",
+  "references": [
+    {
+      "kind": "BAR_FIELD",
+      "date": "2026-10-13",
+      "field": "high"
+    },
+    {
+      "kind": "RESEARCH_BOUND",
+      "box_id": "sha256:9fbf971f46c19caa9b00657d0b805bc2bd4d782ab617b3818b50ddfe211b7d39",
+      "field": "low"
+    },
+    {
+      "kind": "RESEARCH_BOUND",
+      "box_id": "sha256:9fbf971f46c19caa9b00657d0b805bc2bd4d782ab617b3818b50ddfe211b7d39",
+      "field": "high"
+    }
+  ],
+  "roles": {
+    "PULLBACK_HIGH": {
+      "qualification": "RESEARCH_CANDIDATE",
+      "valid_until": null,
+      "invalidated_on": null,
+      "reference_index": 0,
+      "known_on": "2026-10-13",
+      "valid_from": "2026-10-13",
+      "evidence": {
+        "kind": "EXPLICIT_RESEARCH_RETURN_PHASE_NOT_USER_APPROVAL",
+        "phase_start": "2026-10-13",
+        "phase_end": "2026-10-13",
+        "source_member_dates": [
+          "2026-10-13"
+        ],
+        "all_equal_high_source_dates": [
+          "2026-10-13"
+        ],
+        "reason": "原B88研究上緣10/12收盤越過、10/13跌回；明示以首次返回完成日高點作回檔高點研究角色，非自動選取或完整波段已確認"
+      }
+    },
+    "ORIGINAL_BOX_FLOOR": {
+      "qualification": "RESEARCH_CANDIDATE",
+      "valid_until": null,
+      "invalidated_on": null,
+      "reference_index": 1,
+      "known_on": "2026-09-01",
+      "valid_from": "2026-09-01",
+      "evidence": {
+        "kind": "EXPLICIT_B88_RESEARCH_BOX_HYPOTHESIS_NOT_FORMAL_ORIGINAL_BOX",
+        "candidate_id": "sha256:9fbf971f46c19caa9b00657d0b805bc2bd4d782ab617b3818b50ddfe211b7d39",
+        "source_start": "2025-11-19",
+        "source_end": "2026-07-14",
+        "formal_price_bounds": null,
+        "reason": "沿既有B88整段候選的凍結研究下界作條件式參照；不是正式原箱已獲人工核定",
+        "source_k_dates": [
+          "2025-11-19"
+        ]
+      }
+    },
+    "ORIGINAL_BOX_UPPER": {
+      "qualification": "RESEARCH_CANDIDATE",
+      "valid_until": null,
+      "invalidated_on": null,
+      "reference_index": 2,
+      "known_on": "2026-09-01",
+      "valid_from": "2026-09-01",
+      "evidence": {
+        "kind": "EXPLICIT_B88_RESEARCH_BOX_HYPOTHESIS_NOT_FORMAL_ORIGINAL_BOX",
+        "candidate_id": "sha256:9fbf971f46c19caa9b00657d0b805bc2bd4d782ab617b3818b50ddfe211b7d39",
+        "source_start": "2025-11-19",
+        "source_end": "2026-07-14",
+        "formal_price_bounds": null,
+        "source_k_dates": [
+          "2026-01-27"
+        ]
+      }
+    }
+  },
+  "post_breakout_return": {
+    "qualification": "RESEARCH_CANDIDATE",
+    "context_start_on": "2025-11-19",
+    "breakout_on": "2026-10-12",
+    "return_on": "2026-10-13",
+    "known_on": "2026-10-13",
+    "evidence": {
+      "kind": "SAVED_B88_CLOSE_PATH_EXPLICIT_RESEARCH_PHASE",
+      "candidate_id": "sha256:9fbf971f46c19caa9b00657d0b805bc2bd4d782ab617b3818b50ddfe211b7d39",
+      "not_formal_box_approval": true
+    }
+  },
+  "display": {
+    "title": "1101｜B88研究參照下的返回重收",
+    "analysis_date": "2026-10-16",
+    "local_start": "2026-09-01",
+    "overview_months": 24
+  },
+  "qualification": "REAL_OHLCV_WITH_LATER_RESEARCH_ROLE_SELECTION_NOT_HUMAN_CONFIRMED_OR_HISTORICAL_SIGNAL"
+}

@@ -1,0 +1,30 @@
+diff --git "a/\350\202\241\347\245\250\347\263\273\347\265\261M1_v0_18/capital_research/conditional_quantity_review.py" "b/\350\202\241\347\245\250\347\263\273\347\265\261M1_v0_18/capital_research/conditional_quantity_review.py"
+index 5c98dd0..ace8ffd 100644
+--- "a/\350\202\241\347\245\250\347\263\273\347\265\261M1_v0_18/capital_research/conditional_quantity_review.py"
++++ "b/\350\202\241\347\245\250\347\263\273\347\265\261M1_v0_18/capital_research/conditional_quantity_review.py"
+@@ -3 +3 @@ from copy import deepcopy
+-from decimal import localcontext
++from decimal import Context, InvalidOperation, DivisionByZero, Overflow, ROUND_HALF_EVEN, localcontext
+@@ -13,0 +14 @@ SCHEMA_C='capital-conditional-quantity-review/0.2'
++IMPLEMENTATION_REVISION='0.2.1-deterministic-decimal-context'
+@@ -18,2 +19,3 @@ def reassess_conditional(request):
+-    with localcontext() as context:
+-        context.prec=50
++    # Include account/checkpoint work after the protected original replay returns.
++    with localcontext(Context(prec=50,rounding=ROUND_HALF_EVEN,Emin=-999999,Emax=999999,
++            capitals=1,clamp=0,flags=[],traps=[InvalidOperation,DivisionByZero,Overflow])):
+diff --git "a/\350\202\241\347\245\250\347\263\273\347\265\261M1_v0_18/capital_research/conditional_retry.py" "b/\350\202\241\347\245\250\347\263\273\347\265\261M1_v0_18/capital_research/conditional_retry.py"
+index c9f1cbf..f453008 100644
+--- "a/\350\202\241\347\245\250\347\263\273\347\265\261M1_v0_18/capital_research/conditional_retry.py"
++++ "b/\350\202\241\347\245\250\347\263\273\347\265\261M1_v0_18/capital_research/conditional_retry.py"
+@@ -3 +3 @@ from copy import deepcopy
+-from decimal import localcontext
++from decimal import Context, InvalidOperation, DivisionByZero, Overflow, ROUND_HALF_EVEN, localcontext
+@@ -14,0 +15 @@ SCHEMA = 'capital-conditional-quantity-review/0.3'
++IMPLEMENTATION_REVISION = '0.3.1-deterministic-decimal-context'
+@@ -37,2 +38,3 @@ def retry_rejected(request):
+-    with localcontext() as ctx:
+-        ctx.prec = 50
++    # The retry's own checkpoint work remains outside its protected child calls.
++    with localcontext(Context(prec=50,rounding=ROUND_HALF_EVEN,Emin=-999999,Emax=999999,
++            capitals=1,clamp=0,flags=[],traps=[InvalidOperation,DivisionByZero,Overflow])):

@@ -1,0 +1,41 @@
+{
+  "read_only_research_audit": "PASS",
+  "source_files_SHA_unchanged": true,
+  "1213_original_bar_MACD_values_exact": true,
+  "all_available_original_geometry_relations_match_independent_decimal_oracle": true,
+  "original_entirely_below_records": 53,
+  "raw_disjoint_pair_excluded_for_known_missing": 1,
+  "no_cross_continuity_break_events": true,
+  "prefix_birth_facts_and_event_cutoff_check": {
+    "cutoff": "2025-05-13",
+    "existing_lower_gap_births_in_prefix": 43,
+    "all_birth_facts_equal_full_read": true,
+    "all_prefix_events_not_after_cutoff": true
+  },
+  "equal_contact_not_in_strict_gap_list": true,
+  "original_39_records_max_and_internal_gap_checked": true,
+  "acceptance_evidence": "SAVED_NOT_PRODUCT_TESTS",
+  "original_fact_adapter_CLI_core_MACD_reaction": "NOT_RUN",
+  "product_tests": "NOT_RUN",
+  "browser": "NOT_RUN",
+  "Android": "NOT_TESTED_NEW_BUILD",
+  "PDF_visual_QA": {
+    "status": "PASS_ALL_THREE_FINAL_PAGES",
+    "method": "All final page content inspected with pdftoppm/view_image; pages1/2 byte-identical after exact wording update on page3",
+    "checks": [
+      "full overview preserved",
+      "241 original daily records price-volume-MACD aligned",
+      "annotations clear of candles and page edges",
+      "same-level split claim permits unknown finer substructures",
+      "exact first-high30.90 versus reference30.80 kept distinct from equal close",
+      "embedded vector glyphs confirmed"
+    ],
+    "400_percent_static_render": "RENDERED_AND_INSPECTED_NOT_ANDROID_GESTURE_TEST"
+  },
+  "pdf_pages": 3,
+  "first_page_original_overview_image_bytes_unchanged": true,
+  "page2_original_records": 241,
+  "PDF_text_extract_checked": true,
+  "pdf_sha256": "b3d25d98845622ff14e8391043982c942a04ec423bc1cd1cf9857ecb93163afb",
+  "png_sha256": "1d8228910ed56d7441afd9a4870a506506a8b8f2c0d3a7a045ca06f69a6193ed"
+}

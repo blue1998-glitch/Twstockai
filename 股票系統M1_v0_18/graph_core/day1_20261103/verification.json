@@ -1,0 +1,98 @@
+{
+  "status": "PASS_SCOPED_ENGINEERING_AND_REAL_SAVED_DATA",
+  "python_unique_methods": 8,
+  "capacity_unique_methods": 4,
+  "completion_unique_methods": 4,
+  "intermediate_batches_not_added": true,
+  "nonzero_directory_counterexample": {
+    "initial_tmp_fixture": "4 PASS; temporary directories reported zero blocks",
+    "explicit_nonzero_fixture_before_fix": "1 failure of 4 methods; 8192 vs expected 0",
+    "after_fix": "4 of 4 PASS",
+    "qualification": "Synthetic filesystem metadata, not market sample"
+  },
+  "actual_new_core_calls_first_attempt": 1946,
+  "actual_resume_core_calls": 0,
+  "actual_same_source_repeat": {
+    "head_unchanged": true,
+    "new_core_calls": 0,
+    "root_file_state_unchanged": true,
+    "source_api_calls": 0,
+    "status": "PASS_REAL_SAME_SOURCE_ZERO_RECALC_ZERO_NEW_FILES"
+  },
+  "source_crosscheck_saved_cases": 4,
+  "source_crosscheck_markets": [
+    "TWSE",
+    "TPEX"
+  ],
+  "source_checks": "New candles equal original official capture; old K/MA/MACD prefixes unchanged; new indicator warmup null",
+  "browser_groups": 29,
+  "browser_main_groups": 28,
+  "browser_extra_current_day_groups": 1,
+  "exact_json_downloads": 8,
+  "browser_viewports": [
+    [
+      320,
+      844
+    ],
+    [
+      390,
+      844
+    ],
+    [
+      844,
+      390
+    ],
+    [
+      1280,
+      900
+    ]
+  ],
+  "javascript_errors": [],
+  "external_origins": [],
+  "owner_http_controls": [
+    {
+      "fingerprint_checked": false,
+      "kind": "owner_http",
+      "status": 401
+    },
+    {
+      "fingerprint_checked": false,
+      "kind": "owner_http",
+      "status": 200
+    },
+    {
+      "fingerprint_checked": true,
+      "kind": "owner_http",
+      "status": 200
+    },
+    {
+      "fingerprint_checked": false,
+      "kind": "owner_http",
+      "status": 404
+    },
+    {
+      "fingerprint_checked": false,
+      "kind": "owner_http",
+      "status": 403
+    },
+    {
+      "fingerprint_checked": false,
+      "kind": "owner_http",
+      "status": 405
+    },
+    {
+      "fingerprint_checked": true,
+      "kind": "owner_http",
+      "status": 200
+    }
+  ],
+  "actual_current_candidate_records": 429071,
+  "actual_current_event_stock_count": 1460,
+  "candidate_events_are_not_independent_signals": true,
+  "permanent_service_started": false,
+  "temporary_test_listener_stopped": true,
+  "android": "NOT_TESTED_NEW_BUILD",
+  "daily_schedule": "NOT_ENABLED",
+  "external_deployment": false,
+  "conditional_missing_price_query": "NOT_EXECUTED; cfg.query_date was null. Gap/reset equality checked; actual new-day query separately passed."
+}

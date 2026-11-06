@@ -1,0 +1,9 @@
+// Synthetic presentation-only controls. No actual market fixtures.
+const assert=require('assert/strict'),copy=require('./copy.js');let methods=0;
+function test(name,fn){fn();methods++;console.log('PASS '+name)}
+test('plain limitations preserve refusals and hide unrecognized technical codes',()=>{assert.equal(copy.risk('來源中斷'),'新舊資料無法連續比較');assert.equal(copy.risk('UNRECOGNIZED_SOURCE_CODE'),'資料狀態待確認');assert.equal(copy.risk('研究參照'),'參照仍待確認')});
+test('price strings stay exact and missing values are not invented',()=>{assert.equal(copy.key('032.850000'),'032.850000');assert.equal(copy.key('未定'),'尚無可用價位');assert.equal(copy.key('多個價位'),'多個參照價位')});
+test('volume and stop labels do not imply confirmation or recommendation',()=>{assert.equal(copy.volume('量增（較前筆）'),'較前筆量增');assert.equal(copy.volume('量不可比'),'成交量暫不能比較');assert.equal(copy.event('OBSERVATION_STOPPED_AT_DATA_OR_BASIS_GAP'),'資料中斷，停止比較');assert.equal(copy.event('UNKNOWN_EVENT'),'其他保存事件')});
+test('coverage counts stock identities not event candidates and never mutates saved facts',()=>{const s={stocks:[{identity:'SYN:A',status:'SYNTHETIC',preview_series:{},decision:{can_judge:true}},{identity:'SYN:B',status:'INSUFFICIENT_HISTORY',preview_series:{},decision:{can_judge:false}},{identity:'SYN:C',status:'MISSING',decision:{can_judge:false}}]};const before=JSON.stringify(s),v=copy.overview(s);assert.equal(v.total,3);assert.equal(v.charts,2);assert.equal(v.short,1);assert.equal(v.withoutChart,1);assert.equal(v.judgable,1);assert.equal(JSON.stringify(s),before);assert(copy.overview({stocks:[]}).message.includes('暫不能判定'))});
+test('old-batch label uses saved batch dates, never infers a trading calendar or freshness guarantee',()=>{assert(copy.dateNote('2020-01-02','2020-01-03').includes('較早批次'));assert(copy.dateNote('2020-01-03','2020-01-03').includes('非即時'))});
+console.log(JSON.stringify({status:'PASS',unique_methods:methods}));

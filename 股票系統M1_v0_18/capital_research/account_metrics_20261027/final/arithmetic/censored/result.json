@@ -1,0 +1,63 @@
+{
+  "period_accrual_growth": "-0.1",
+  "maximum_drawdown": "-0.2",
+  "maximum_drawdown_episode": {
+    "peak_date": "2026-01-06",
+    "peak_equity": "1100",
+    "first_underwater_date": "2026-01-07",
+    "trough_date": "2026-01-07",
+    "trough_equity": "880",
+    "maximum_drawdown": "-0.2",
+    "recovery_date": null,
+    "observed_through": "2026-01-08",
+    "duration_calendar_days": 2,
+    "recovery_censored": true
+  },
+  "maximum_drawdown_duration_calendar_days": 2,
+  "recovery_censored": true,
+  "ongoing_underwater_calendar_days": 2,
+  "episodes": [
+    {
+      "peak_date": "2026-01-06",
+      "peak_equity": "1100",
+      "first_underwater_date": "2026-01-07",
+      "trough_date": "2026-01-07",
+      "trough_equity": "880",
+      "maximum_drawdown": "-0.2",
+      "recovery_date": null,
+      "observed_through": "2026-01-08",
+      "duration_calendar_days": 2,
+      "recovery_censored": true
+    }
+  ],
+  "curve": [
+    {
+      "date": "2026-01-05",
+      "equity": "1000",
+      "running_peak": "1000",
+      "drawdown": "0",
+      "source_index": 0
+    },
+    {
+      "date": "2026-01-06",
+      "equity": "1100",
+      "running_peak": "1100",
+      "drawdown": "0",
+      "source_index": 1
+    },
+    {
+      "date": "2026-01-07",
+      "equity": "880",
+      "running_peak": "1100",
+      "drawdown": "-0.2",
+      "source_index": 2
+    },
+    {
+      "date": "2026-01-08",
+      "equity": "900",
+      "running_peak": "1100",
+      "drawdown": "-0.18181818181818181818181818181818181818181818181818",
+      "source_index": 3
+    }
+  ]
+}

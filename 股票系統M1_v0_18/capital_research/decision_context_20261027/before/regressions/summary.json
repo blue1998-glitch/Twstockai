@@ -1,0 +1,112 @@
+[
+  {
+    "case": "wrong-latest",
+    "context": "normal",
+    "error": {
+      "type": "ValueError",
+      "detail": "LATEST_PREDECESSOR_REQUIRED: checkpoint must descend from the exact latest decision/account"
+    },
+    "expected_rejection": true,
+    "input_unchanged": true,
+    "caller_context_unchanged": true
+  },
+  {
+    "case": "wrong-latest",
+    "context": "preset",
+    "error": {
+      "type": "Clamped",
+      "detail": "[<class 'decimal.Clamped'>]"
+    },
+    "expected_rejection": false,
+    "input_unchanged": true,
+    "caller_context_unchanged": true
+  },
+  {
+    "case": "checkpoint-token-change",
+    "context": "normal",
+    "error": {
+      "type": "ValueError",
+      "detail": "Checkpoint differs from original ledger/fills/order states"
+    },
+    "expected_rejection": true,
+    "input_unchanged": true,
+    "caller_context_unchanged": true
+  },
+  {
+    "case": "checkpoint-token-change",
+    "context": "preset",
+    "error": {
+      "type": "Clamped",
+      "detail": "[<class 'decimal.Clamped'>]"
+    },
+    "expected_rejection": false,
+    "input_unchanged": true,
+    "caller_context_unchanged": true
+  },
+  {
+    "case": "reserve-drop",
+    "context": "normal",
+    "error": {
+      "type": "ValueError",
+      "detail": "Next account/cutoff resets or drops authoritative cash, rights, holdings or orders"
+    },
+    "expected_rejection": true,
+    "input_unchanged": true,
+    "caller_context_unchanged": true
+  },
+  {
+    "case": "reserve-drop",
+    "context": "preset",
+    "error": {
+      "type": "Clamped",
+      "detail": "[<class 'decimal.Clamped'>]"
+    },
+    "expected_rejection": false,
+    "input_unchanged": true,
+    "caller_context_unchanged": true
+  },
+  {
+    "case": "cash-right-drop",
+    "context": "normal",
+    "error": {
+      "type": "ValueError",
+      "detail": "Next account/cutoff resets or drops authoritative cash, rights, holdings or orders"
+    },
+    "expected_rejection": true,
+    "input_unchanged": true,
+    "caller_context_unchanged": true
+  },
+  {
+    "case": "cash-right-drop",
+    "context": "preset",
+    "error": {
+      "type": "Clamped",
+      "detail": "[<class 'decimal.Clamped'>]"
+    },
+    "expected_rejection": false,
+    "input_unchanged": true,
+    "caller_context_unchanged": true
+  },
+  {
+    "case": "missing-checkpoint",
+    "context": "normal",
+    "error": {
+      "type": "ValueError",
+      "detail": "LEDGER_CHECKPOINT_REQUIRED: token carry does not prove capital continuity"
+    },
+    "expected_rejection": true,
+    "input_unchanged": true,
+    "caller_context_unchanged": true
+  },
+  {
+    "case": "missing-checkpoint",
+    "context": "preset",
+    "error": {
+      "type": "ValueError",
+      "detail": "LEDGER_CHECKPOINT_REQUIRED: token carry does not prove capital continuity"
+    },
+    "expected_rejection": true,
+    "input_unchanged": true,
+    "caller_context_unchanged": true
+  }
+]

@@ -1,0 +1,43 @@
+{
+  "action_source010_and_all_parents_kept": true,
+  "as_of": "2026-11-03",
+  "checked_history_source_counterexamples": 1,
+  "checked_retained_history_cases": 4,
+  "execution_qualified": false,
+  "formal_source_qualification_changed": false,
+  "historical_signal_eligible": false,
+  "imputed_close": null,
+  "markets_checked": {
+    "TPEX": 2,
+    "TWSE": 2
+  },
+  "new_UI": false,
+  "new_core_calls": 0,
+  "new_multiday_graphs": 0,
+  "new_product_capability": false,
+  "new_qualified_multiday": 0,
+  "new_source_GETs": 0,
+  "original_UI_same": true,
+  "original_heads_same": true,
+  "policy_authorized": false,
+  "previous_scan_execution_kept": {
+    "core_executed": 1955,
+    "insufficient": 1955,
+    "source_refused": 31
+  },
+  "primary_missing_evidence": "An issuer/ISIN- and interval-bound comparable-price/share-basis record covering corporate-action treatment and effective/known dates for one sufficient multi-day segment, including any official/FinMind boundary.",
+  "primary_pressure_id": null,
+  "qualification_counts": {
+    "NEEDS_INTERVAL_BASIS_ACTION_EVIDENCE": 4,
+    "NOT_REVIEWED_THIS_SCOPE": 1950,
+    "REFUSED_EXISTING_HISTORY_QUALITY": 1,
+    "SOURCE_REFUSED_11_03": 31
+  },
+  "reference_denominator": 1986,
+  "reference_is_not_all_reviewed": true,
+  "reviewed_at_taipei": "2026-11-04T17:44:10.530121+08:00",
+  "schema": "m-history-bridge1-summary/0.1",
+  "status": "BLOCKED_INTERVAL_BASIS_ACTION_EVIDENCE",
+  "stopped_after_minimal_review": true,
+  "valuation": null
+}

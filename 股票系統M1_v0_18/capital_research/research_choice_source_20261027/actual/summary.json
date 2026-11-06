@@ -1,0 +1,86 @@
+[
+  {
+    "name": "general",
+    "status": "PASS",
+    "check_status": "MATCHED",
+    "choice_status": "RECORDED_RESEARCH_INTENT",
+    "columns": 2
+  },
+  {
+    "name": "conditional",
+    "status": "PASS",
+    "check_status": "MATCHED",
+    "choice_status": "RECORDED_CONDITIONAL_RESEARCH_INTENT",
+    "columns": 2
+  },
+  {
+    "name": "rejected",
+    "status": "PASS",
+    "check_status": "MATCHED",
+    "choice_status": "REFUSED",
+    "columns": 2
+  },
+  {
+    "name": "wrong-source-same-candidate-id",
+    "status": "PASS",
+    "check_status": "REFUSED",
+    "choice_status": "RECORDED_RESEARCH_INTENT",
+    "columns": 0
+  },
+  {
+    "name": "no-snapshot",
+    "status": "PASS",
+    "check_status": "MATCHED",
+    "choice_status": "REFUSED",
+    "columns": 2
+  },
+  {
+    "name": "unknown-binding",
+    "status": "PASS",
+    "check_status": "REFUSED",
+    "choice_status": "REFUSED",
+    "columns": 0
+  },
+  {
+    "name": "bare-generation",
+    "status": "PASS",
+    "check_status": "REFUSED",
+    "choice_status": "RECORDED_RESEARCH_INTENT",
+    "columns": 0
+  },
+  {
+    "name": "edited-record",
+    "status": "PASS",
+    "check_status": "REFUSED",
+    "choice_status": null,
+    "columns": 0
+  },
+  {
+    "name": "snapshot-content-mismatch",
+    "status": "PASS",
+    "check_status": "REFUSED",
+    "choice_status": "RECORDED_RESEARCH_INTENT",
+    "columns": 0
+  },
+  {
+    "name": "duplicate-candidate-id",
+    "status": "PASS",
+    "check_status": "REFUSED",
+    "choice_status": "RECORDED_RESEARCH_INTENT",
+    "columns": 0
+  },
+  {
+    "name": "wrong-latest",
+    "status": "PASS",
+    "check_status": "REFUSED",
+    "choice_status": "RECORDED_RESEARCH_INTENT",
+    "columns": 0
+  },
+  {
+    "name": "missing-historical-token",
+    "status": "PASS",
+    "check_status": "REFUSED",
+    "choice_status": "RECORDED_RESEARCH_INTENT",
+    "columns": 0
+  }
+]

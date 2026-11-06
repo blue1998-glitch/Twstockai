@@ -1,0 +1,31 @@
+{
+  "contexts": [
+    {
+      "name": "different-rounding-down",
+      "context": {
+        "prec": 7,
+        "rounding": "ROUND_DOWN",
+        "Emin": -999999,
+        "Emax": 999999,
+        "capitals": 1,
+        "clamp": 0,
+        "traps": [
+          "InvalidOperation",
+          "DivisionByZero",
+          "Overflow"
+        ],
+        "flags": []
+      }
+    }
+  ],
+  "rationale": "ROUND_UP matched canonical bytes for this particular fraction; no result difference claimed. Independently freeze ROUND_DOWN to check the opposite rounding direction before execution.",
+  "expected": {
+    "status": "EVALUATED",
+    "all_contexts_equal_original_normal_evaluation": true,
+    "caller_context_unchanged": true,
+    "input_unchanged": true,
+    "required_error": null,
+    "baseline_evaluation_id": "sha256:3431eb706676c870efc693afb41a5ec574a404e66b811a02bbe40951519b38be",
+    "meaning": "DETERMINISM_NOT_STRATEGY_VALIDATION"
+  }
+}

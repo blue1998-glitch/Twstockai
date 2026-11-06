@@ -1,0 +1,79 @@
+{
+  "schema": "lite1-direct-verdict-proof/0.1",
+  "baseline": "77591f9b451870a930f7c5dccd8a15dfe66cfd79",
+  "status": "PASS",
+  "saved_states": [
+    {
+      "as_of": "2026-11-02",
+      "saved_state_exact_bytes": true,
+      "saved_state_sha256": "3ca683b31a2e0bd0343d27b39f61b59f73bc4735b45631bf0b68208d41e1ec6e",
+      "stocks": 1986,
+      "graphs": 1946,
+      "asset_index_sha256": "3e83e04ae07649a7fc060e9208c343ab45bae1af503bb672a1946cf7c58f0409",
+      "html_bytes": 1597512,
+      "html_sha256": "8afb5999dd1af6e8217765a02c28a9f1af7badbd6a8f911aea370b8437442995"
+    },
+    {
+      "as_of": "2026-10-30",
+      "saved_state_exact_bytes": true,
+      "saved_state_sha256": "29c7db8a4949498df4ca78eb40e1a471053b2c6eb9e56bf477a1b04923aee4f0",
+      "stocks": 1986,
+      "graphs": 1469,
+      "asset_index_sha256": "1aa87e6c6ed0dcd118af15baed32c62e6f72321ffcf19d0fe63dd653115d8a03",
+      "html_bytes": 1614477,
+      "html_sha256": "82a4e6ba13d46a930dd4c5648669b6d1da6ab7d05238bb3f40fcb0cd3971768d"
+    }
+  ],
+  "unchanged_core_and_original_ui_and_owner_sources": [
+    "graph_core/core.py",
+    "graph_core/market_preview.py",
+    "graph_core/real_workbench.py",
+    "graph_core/obs1_20261102/radar.js",
+    "graph_core/comp1_20261102/compare.js",
+    "graph_core_chart/viewer.js",
+    "graph_core_chart/viewer_v02.js",
+    "graph_core_chart/mobile_private.py",
+    "graph_core/lite1_20261103/decision.py",
+    "graph_core/lite1_20261103/build.py",
+    "reaction_facts/band_volume.py"
+  ],
+  "original_metadata_audit_reused_paths": 90377,
+  "source_heads_exact_sha": true,
+  "new_source_calls": 0,
+  "new_core_calls": 0,
+  "new_indicator_calls": 0,
+  "new_data_packets": 0,
+  "new_original_chart_copies": 0,
+  "unique_node_methods": 9,
+  "real_chromium_groups": 16,
+  "exact_numeric_download_checks": 6,
+  "download_scope": "Two saved stock/date selections across3 viewports, not6 independent stocks",
+  "actual_owner_http_controls": [
+    {
+      "expected": 401,
+      "actual": 401
+    },
+    {
+      "expected": 401,
+      "actual": 401
+    },
+    {
+      "expected": 303,
+      "actual": 303
+    },
+    {
+      "expected": 200,
+      "actual": 200
+    }
+  ],
+  "private_added_bytes": 8495104,
+  "free_bytes": 742105088,
+  "reserve_bytes": 536870912,
+  "budget_bytes": 16777216,
+  "primary_pressure_id": null,
+  "volume_price_confirmation": null,
+  "android": "NOT_TESTED_NEW_BUILD",
+  "external_deployment": false,
+  "scheduler": false,
+  "backup_and_restart_persistence": "UNKNOWN"
+}

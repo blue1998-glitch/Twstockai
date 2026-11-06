@@ -1,0 +1,38 @@
+{
+  "engine_calls": 3,
+  "full_cash_exit": "NOT_IMPLEMENTED_MISSING_ALL_ASSET_EXECUTION_AND_RIGHTS_EVIDENCE",
+  "html_bytes": 64713,
+  "market_samples": 0,
+  "metrics_reads": 3,
+  "minimum_free_bytes": 536870912,
+  "raw_source_manifest_unchanged": true,
+  "schema": "cap1-build-verification/0.1",
+  "source_checks": [
+    {
+      "branch": "hold",
+      "execution_id": "sha256:c443d2932fc9b48122e843ecea8de8658e82b9b290033390a9e20eef8ea3fbe6",
+      "input_id": "sha256:0bd4969d5a7953254e6bd9130939c39ca71bb2ba1294137c58f80a87bba81ed7",
+      "metrics_match_old_financial_fields": true,
+      "new_same_information_hold": true,
+      "old_replay_exact": false
+    },
+    {
+      "branch": "reduce",
+      "execution_id": "sha256:0ce9183f396d5c70dbc979645561f6d353e65f66df161bc72acef1053a41cb7b",
+      "input_id": "sha256:bd5a52bc38477987f681bbe376cf36f6d60b0fdbb33cb701df52d6a1db5ad8bd",
+      "metrics_match_old_financial_fields": true,
+      "new_same_information_hold": false,
+      "old_replay_exact": true
+    },
+    {
+      "branch": "exit_b",
+      "execution_id": "sha256:3128f51bc9b70a5ee308ad0242824e17eda6c8ae4bb8e8e3085902ad0124d508",
+      "input_id": "sha256:b4393c39a657b76e818f892c7a86591fc3af5c4003eda9b8b3bc50e31cc9f579",
+      "metrics_match_old_financial_fields": true,
+      "new_same_information_hold": false,
+      "old_replay_exact": true
+    }
+  ],
+  "synthetic": true,
+  "zip_bytes": 11950
+}

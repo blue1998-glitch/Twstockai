@@ -1,0 +1,34 @@
+{
+  "research": {
+    "schema": "capital-cash-action/0.1",
+    "synthetic": true,
+    "status": "INPUT_ERROR",
+    "reasons": [
+      "DERIVED_ACCOUNT_PLANS_TOKENS_CANNOT_BE_OVERRIDDEN"
+    ],
+    "intent": null,
+    "core_decision": null,
+    "account_binding": null,
+    "research_recommendation": {
+      "candidate_ids": [],
+      "selected_id": null,
+      "ranking": null
+    },
+    "order_generation": "NOT_PERFORMED",
+    "execution": "NOT_PERFORMED",
+    "account_posting": "NOT_PERFORMED",
+    "strategy_validated": false,
+    "data_qualified": false,
+    "execution_model_qualified": false,
+    "historical_signal_eligible": false,
+    "policy_authorized": false,
+    "live_execution_authorized": false,
+    "primary_pressure_id": null,
+    "error_type": "ValueError"
+  },
+  "source_integrity_metadata": {
+    "full_request_id": "sha256:72d9d1441bf9af94d4112d0a325f58951ffe535e43bd8bb87cba9de4e8014d93",
+    "derived_decision_input": null,
+    "core_source_integrity_metadata": null
+  }
+}

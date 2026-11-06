@@ -1,0 +1,30 @@
+{
+  "family": "2884-2025-capitalization-source-reconciliation",
+  "qualification": "SOURCE_CROSS_REFERENCE_NOT_AUTOMATIC_EVENT_MERGE_OR_PERSONAL_ALLOCATION",
+  "parent_p461_observation_ids": [
+    "sha256:60c4d3c9dc15406eb46e9c24a541b8b38817303b3e9b064fc002f0e9ec7d4150",
+    "sha256:8765f6e169ae1d362e07e0b68b2cd91576fb1f0126d57db6c0942f649738e4d9",
+    "sha256:dbf6717edb56e50e47a926d516c18b8353f87de453f35b7728539c004cbd6a98"
+  ],
+  "new_observation_ids": [
+    "sha256:efc55cc4e0eedb52ee8571bed85b0ebcb6a5b6826601a54da6cbda6d5d5fafaf",
+    "sha256:8d5155b8ec899590b3fe48a2433d6b25f614ce9dab773cef6f95015aa64c6544",
+    "sha256:6c2762dc660bc4204b169f6333cbf33c0c748f357bef93856ac4b91fbcc9c60a"
+  ],
+  "share_sum": "178200",
+  "share_unit": "THOUSAND_SHARES",
+  "parent_combined_shares": "178200",
+  "employee_account_sum": "522900",
+  "money_unit": "THOUSAND_TWD",
+  "checks": {
+    "group_shares_equal_parent_combined": true,
+    "employee_accounts_equal_reported_equity": true,
+    "employee_equity_equal_parent_remuneration": true,
+    "shareholder_capital_equal_parent_bonus": true,
+    "employee_shares_equal_board_statement": true
+  },
+  "numeric_ledger_events_added": 0,
+  "independent_market_samples_added": 0,
+  "personal_final_ratio": null,
+  "personal_allotment": null
+}

@@ -1,0 +1,84 @@
+{
+  "baseline": "3b472ae8575f4f4f6c5acaf504f29d0ded078bdd",
+  "scope": "Only generate_after_retry outer numerical context",
+  "version": "0.1.1-deterministic-decimal-context",
+  "schema_unchanged": "capital-quantity-after-retry/0.1",
+  "before": {
+    "controls": 15,
+    "matching_original": 9,
+    "Inexact": 3,
+    "Overflow": 3
+  },
+  "before_boundary_diagnostics": 2,
+  "after": {
+    "controls": 15,
+    "matching_original": 15
+  },
+  "tests": {
+    "unique_methods": 5,
+    "method_executions": 5,
+    "all_pass_first_run": true,
+    "historical_PASS_added": 0
+  },
+  "total_public_bridge_calls": 40,
+  "total_calls_are_not_tests_or_market_samples": true,
+  "additional_capital_audit": {
+    "original_account_and_complete_checkpoint_unchanged": true,
+    "origin_initial_capital": "1430",
+    "current_account_value": "1425.100",
+    "settled_cash": "275.100",
+    "general_reserve": "100",
+    "holdings": {
+      "A": "60",
+      "B": "25",
+      "C": "2"
+    },
+    "historical_tokens": 12,
+    "latest_all_attempts_and_original_rights_preserved": true,
+    "not_just_terminal_equality": true
+  },
+  "fresh_process_calls": {
+    "bridge": 1,
+    "generate": 1,
+    "ledger_replay": 14,
+    "simulate": 0,
+    "replay_sequence": 0,
+    "retry": 0,
+    "save": 0
+  },
+  "self_review": {
+    "no_formula_strategy_accounting_qualification_changes": true,
+    "pure_call_and_caller_input_DefaultContext_preserved": true,
+    "WAIT_and_negative_gate_outcomes_preserved": true,
+    "no_implicit_schema_migration": true
+  },
+  "not_executed": [
+    "old suites/full20cases",
+    "nine paths",
+    "old retry or market replay producer",
+    "real producer or source qualification recomputation",
+    "new prices/sources",
+    "UI/Android",
+    "out of sample"
+  ],
+  "formal_qualification": false,
+  "primary_pressure": null,
+  "true_source_counts": {
+    "refused": 70,
+    "insufficient": 2,
+    "exchange_unsupported_in_refused": 8,
+    "qualified_real_total_net": 0
+  },
+  "unsupported_unchanged": [
+    "R2/F",
+    "source authentication",
+    "credit",
+    "opening payables and external ongoing orders",
+    "full branch matrix"
+  ],
+  "Astra": "NOT_OBTAINED_NOT_READ",
+  "rescue_originals": "NOT_OBTAINED_NOT_READ",
+  "manual_action_required": false,
+  "authorization": "Existing functional milestone normal commit/push and fixed-SHA GitHub readback; no deployment/trade/message",
+  "save_status": "Prepared; actual commit and readback reported after normal save"
+}

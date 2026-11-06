@@ -1,0 +1,69 @@
+# 跨輪事實保全0.5（本地未提交）
+
+最新入口[evidence_lineage_20261025/REPORT.md](evidence_lineage_20261025/REPORT.md)／[CONTRACT_0_5.md](evidence_lineage_20261025/CONTRACT_0_5.md)，完整交接見根M1_CAPITAL_RESEARCH_FACT_LINEAGE_20261025_HANDOFF.md。基線4339a146，沒有新commit/push授權；已知失效跨輪不被ID／review洗掉，有效舊事實及真正新事實仍可競爭。最終35唯一方法＝25新＋10必要回歸，不累加舊結果；原帳、正式資格及來源限制保持。以下舊文完整保留。
+
+---
+
+# A/B定向修復0.4
+
+0.3固定保存：`34b5dfa22b77cfe5c85a818e156389d5d0f9a444`。最新研究入口 [repair_ab_20261025/REPORT.md](repair_ab_20261025/REPORT.md)／[CONTRACT_0_4.md](repair_ab_20261025/CONTRACT_0_4.md)，完整交接見根 M1_CAPITAL_RESEARCH_AB_20261025_HANDOFF.md。只修本股證據所有權及未承接活單區間；舊結果原樣READ，0.3歷史指紋對固定快照。單批20唯一方法＝11新＋9必要回歸PASS，不累加舊證據；沒有市場績效或正式資格結論。以下舊文留史。
+
+---
+
+# 當前本地研究修復0.3｜尚未提交
+
+最新入口：[repair_20261025/REPORT.md](repair_20261025/REPORT.md)、[CONTRACT_0_3.md](repair_20261025/CONTRACT_0_3.md)及root `M1_CAPITAL_RESEARCH_REPAIR_20261025_HANDOFF.md`。原0.2全文、source差異與證據保存在新baseline_0_2與原review_20261025，沒有覆寫舊before／after／log。最新遠端／本地基線仍6be4333d，不commit/push。
+
+純數值core／execution 0.3增加每股新資金review及有效期、明示日終可知證據；checkpoint0.2分開origin／latest身份與完整token，保留fill/order／預留；無來源限售解除明確拒絕。趨勢加碼資格不再只顯示標籤。所有入帳仍由原action_ledger。38唯一方法＝33新＋5必要回歸PASS，舊51／46不累加；不證策略績效。
+
+本專案目錄的當前重現入口（只寫新的輸出目錄）：
+
+```bash
+PYTHONDONTWRITEBYTECODE=1 python3 -m capital_research.repair_20261025.verify
+PYTHONDONTWRITEBYTECODE=1 python3 -m capital_research.repair_20261025.build --output /tmp/NEW-capital-repair-evidence
+```
+
+下方0.2與0.1命令／結果為歷史契約，不能拿新0.3 source重跑後冒舊版重現；歷史原碼見baseline_0_2或固定工程，不能覆蓋現況。READ維持原樣。R2/F、信用、期初應付、外部既有單完整重播、無來源限售解除及市場資格仍不足；Astra Codex仍未取得未讀。
+
+---
+
+# 當前本地研究修復0.2｜尚未提交
+
+2026-10-25最新工程入口：[review_20261025/REPORT.md](review_20261025/REPORT.md)、[0.2契約](review_20261025/CONTRACT_0_2.md)、[樣本外條件](review_20261025/OUT_OF_SAMPLE_PROTOCOL.md)及root `M1_CAPITAL_RESEARCH_REVIEW_20261025_HANDOFF.md`。遠端與本地基線仍為6be4333d；本輪依使用者指令不commit／push，下面0.1段落與46 PASS只作舊工程歷史，不代表當前0.2重跑結果。
+
+目前有逐觀察真實持股／權利／可能買單風險閘門、交割後新決策綁定、共同外生tape身份、原帳檢查點與有限連續追加回放；靜態目標Pareto不再宣稱政策支配。新增趨勢延續研究狀態與九條共同前綴合成路徑、五種數量意圖的逐輪競爭，不是新正式圖形／交易策略。51項本輪實測＝46新增＋5必要回歸，中間批不累加。
+
+本輪精確重現命令（在本專案目錄）：
+
+```bash
+PYTHONDONTWRITEBYTECODE=1 python3 -m capital_research.review_20261025.verify
+PYTHONDONTWRITEBYTECODE=1 python3 -m capital_research.review_20261025.build --output /tmp/NEW-capital-review-evidence
+```
+
+數值core無IO，外部builder只寫新檔。舊`build_evidence`已明示凍結，防止0.2產生冒稱0.1結果或覆寫舊證據；原0.1完全重現只看固定ea380cf source，不從舊ZIP覆蓋此工作目錄。舊READ仍可用，版本與原bytes不改。R2/F、信用借還款、期初應付、不中斷承接既有委託完整重播及真實樣本外驗證仍未實作。Astra全文仍僅Work已讀證詞，Codex未取得未讀。
+
+---
+
+# 資金決策獨立研究 0.1｜第一階段（歷史保留）
+
+本目錄驗證資訊與資金機制，**不是策略批准、真實績效或正式持倉系統**。全部數值案例都是合成研究。Astra Library 報告全文未取得／未讀；本輪依使用者第一階段完整指令實作，沒有將指令或摘要冒稱全文。
+
+先讀 [CONTRACT.md](CONTRACT.md)、[INVENTORY.md](INVENTORY.md)、[REPORT.md](REPORT.md)。下一輪完整指令在 root `M1_CAPITAL_RESEARCH_PHASE1_HANDOFF.md`。工程固定提交／GitHub讀回在 root `deliveries/m1-capital-research-phase1-20261024/`。
+
+在 `股票系統M1_v0_18` 可無網頁執行：
+
+```bash
+PYTHONDONTWRITEBYTECODE=1 python3 -m unittest capital_research.test_mechanisms -v
+PYTHONDONTWRITEBYTECODE=1 python3 -m capital_research.build_evidence --output /tmp/NEW-capital-synthetic-artifacts
+python3 -m capital_research.cli RUN --input capital_research/validation_20261024/artifacts/input.json --store /tmp/NEW-capital-records --id decision-v1
+python3 -m capital_research.cli EXECUTE --input capital_research/validation_20261024/artifacts/execution-input.json --store /tmp/NEW-capital-records --id execution-v1
+python3 -m capital_research.cli READ --store /tmp/NEW-capital-records --id execution-v1
+```
+
+新 checkout 依最新 AGENTS 準備；上述命令供重現，不代表下輪必須重跑。`build_evidence` 不覆寫不同檔案，CLI 沿用 `rotation_research.store.Journal`。READ不匯入決策或帳務引擎；同ID不同結果拒絕，中斷檔保留。單檔exclusive/fsync限制與舊Journal相同，沒有新增跨檔交易／斷電保證。
+
+`core.decide` 分開三層證據／新資金／移轉，`allocation.full_transfer` 只枚舉成本與風控允許的最大整股數，`execution.simulate` 處理明示委託／撮合觀察並重用既有 `action_ledger.replay`。沒有第二套帳務公式。`resume_decision`／CLI `RUN --prior-id` 帶入先前已看證據身分，避免同一事件再次當新證據。
+
+R1為明示事件／研究預算與風險限制的可行性框架；C／E的數量是外部合成提案，不是演算法找出的最佳比例。R2／F只保留契約，`NOT_IMPLEMENTED`。券商額度只作另列且明示資格的合成可行性情境，既有帳務不支援，所以拒絕數值重播。期初應付及既有待成交的決策預留已支援，其完整帳務重播明確拒絕。
+
+沒有UI、人工模式重製、正式規則／歷史schema變更、真實公司行動producer、六方案市場績效或Android執行。來源0.10及全部parent、原件、null／UNKNOWN與false資格保持。

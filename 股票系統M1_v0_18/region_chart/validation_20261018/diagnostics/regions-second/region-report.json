@@ -1,0 +1,105 @@
+{
+  "status": "FAIL",
+  "error": "AssertionError [ERR_ASSERTION]: Expected values to be strictly equal:\n\n1213 !== 1212\n\n    at /workspace/Twstockai/股票系統M1_v0_18/region_chart/test_regions.cjs:72:392",
+  "checks": [
+    {
+      "name": "initial24 month real bars/default query/representative details collapsed/no horizontal overflow",
+      "status": "PASS",
+      "size": {
+        "width": 1280,
+        "height": 900
+      }
+    },
+    {
+      "name": "original case limits retained: exact G2 dates, unknown G1 edge/prices/region volume/C extent, true separate volume references",
+      "status": "PASS",
+      "size": {
+        "width": 1280,
+        "height": 900
+      }
+    },
+    {
+      "name": "time-region focus and source evidence do not change analysis/download: G1",
+      "status": "PASS",
+      "size": {
+        "width": 1280,
+        "height": 900
+      }
+    },
+    {
+      "name": "time-region focus and source evidence do not change analysis/download: G2",
+      "status": "PASS",
+      "size": {
+        "width": 1280,
+        "height": 900
+      }
+    },
+    {
+      "name": "time-region focus and source evidence do not change analysis/download: C_RIGHT",
+      "status": "PASS",
+      "size": {
+        "width": 1280,
+        "height": 900
+      }
+    },
+    {
+      "name": "G2 time band rendered, representative stays true source date, K/volume/MACD share x function",
+      "status": "PASS",
+      "size": {
+        "width": 1280,
+        "height": 900
+      }
+    },
+    {
+      "name": "G1 volume markers and C marker use actual dates, not representative day or future bars",
+      "status": "PASS",
+      "size": {
+        "width": 1280,
+        "height": 900
+      }
+    },
+    {
+      "name": "exact OHLCV/volume preserved; query next/prev traverses actual Jan17→Jan30 holiday gap without analysis jump",
+      "status": "PASS",
+      "size": {
+        "width": 1280,
+        "height": 900
+      }
+    },
+    {
+      "name": "native one-pointer query drag changes cursor only, leaves date/window/source unchanged",
+      "status": "PASS",
+      "size": {
+        "width": 1280,
+        "height": 900
+      },
+      "input": "mouse"
+    },
+    {
+      "name": "explicit pan drag moves window, not analysis",
+      "status": "PASS",
+      "size": {
+        "width": 1280,
+        "height": 900
+      }
+    },
+    {
+      "name": "separate draft download exact endpoint rows/identity/status; approved case and main JSON unchanged",
+      "status": "PASS",
+      "size": {
+        "width": 1280,
+        "height": 900
+      }
+    },
+    {
+      "name": "reversed drafts not auto-reordered; clear and reload erase memory-only draft",
+      "status": "PASS",
+      "size": {
+        "width": 1280,
+        "height": 900
+      }
+    }
+  ],
+  "javascript_errors": [],
+  "external_requests": []
+}

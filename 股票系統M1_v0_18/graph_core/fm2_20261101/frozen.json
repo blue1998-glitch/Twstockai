@@ -1,0 +1,58 @@
+{
+  "baseline": "35d0b37346e55487d33642098b44637d31defb67",
+  "files": [
+    {
+      "path": "graph_core/core.py",
+      "sha256": "0d844f8528dbca874c32007edf221f3c54fd6a078415dba354a4b8d51e2fdcfc",
+      "bytes": 23527
+    },
+    {
+      "path": "graph_core/market_daily.py",
+      "sha256": "4cb74e69cfd093a4a20b784785cc512a6c80429784829fb2345d026f191e4f08",
+      "bytes": 17945
+    },
+    {
+      "path": "graph_core/market_preview.py",
+      "sha256": "ed0bc47474d7750f494070a052dacdefb9ba341fd549b3f0b91506dc76c8cab7",
+      "bytes": 4630
+    },
+    {
+      "path": "graph_core_chart/output/mg3_20261101/M1_v019_graph_recognition_v02.html",
+      "sha256": "18a10031e1d928ec4f8035c78ca9fe9890651c74fdb4a17343ffa7d9f88a58b9",
+      "bytes": 28022842
+    },
+    {
+      "path": "graph_core_chart/mg3_20261101/source-input-spec.json",
+      "sha256": "11d64b0aeda9d885077b3d89c862dea8898b94292c5e4827879bf6c59953c302",
+      "bytes": 856
+    },
+    {
+      "path": "pressure_chart/data/history-20261018/history-candidate.json",
+      "sha256": "eaeff474314348f66bb3f53704f006410f571f4b8192f3bcb72ee7541d6dd39e",
+      "bytes": 1166201
+    },
+    {
+      "path": "region_chart/generated/M1_v0_19_manual_regions_v03.html",
+      "sha256": "0a1513b361c1473c4e38bb3c5db2f3477054fe2bb4779592f31b5b73fc84bb8e",
+      "bytes": 36744203
+    }
+  ],
+  "expected": {
+    "new_automated_history_downloads": "BLOCKED_UNTIL_PROVIDER_APPROVED_SCOPE_PROVEN",
+    "retained_history_end": "2026-10-16",
+    "retained_sources": [
+      "1101",
+      "2884",
+      "6488",
+      "8069"
+    ],
+    "core_results": "EXACT_EXISTING_MG3_0_2_RESULTS",
+    "other_current_members": "EXPLICIT_UNAVAILABLE_OR_OUTSIDE_KNOWN_LISTING_WINDOW",
+    "formal_market_MVP": "PARTIAL",
+    "future_1030_rows": "NOT_IMPORTED_TO_1016"
+  },
+  "terms": {
+    "TWSE": "Non-approved automated downloading prohibited; government open data exception requires applicable historical scope",
+    "TPEX": "Non-approved automated downloading prohibited; export button is not evidence of annual automation consent"
+  }
+}

@@ -1,0 +1,126 @@
+{
+  "mixed-null-revocation": {
+    "B_qualified": false,
+    "E_partial_candidate": false,
+    "reasons": [
+      "FACT_RESTRICTION_CONFLICT_UNKNOWN"
+    ],
+    "new_tokens": [],
+    "B_order_status": null,
+    "new_B_fill_shares": [],
+    "third_execution_evaluated": false
+  },
+  "mixed-later-revocation": {
+    "B_qualified": false,
+    "E_partial_candidate": false,
+    "reasons": [
+      "FACT_RESTRICTION_CONFLICT_UNKNOWN"
+    ],
+    "new_tokens": [],
+    "B_order_status": null,
+    "new_B_fill_shares": [],
+    "third_execution_evaluated": false
+  },
+  "rejected-value-revocation": {
+    "B_qualified": false,
+    "E_partial_candidate": false,
+    "reasons": [
+      "FACT_RESTRICTION_CONFLICT_UNKNOWN"
+    ],
+    "new_tokens": [],
+    "B_order_status": null,
+    "new_B_fill_shares": [],
+    "third_execution_evaluated": false
+  },
+  "rejected-value-earlier-expiry": {
+    "B_qualified": false,
+    "E_partial_candidate": false,
+    "reasons": [
+      "FACT_RESTRICTION_CONFLICT_UNKNOWN"
+    ],
+    "new_tokens": [],
+    "B_order_status": null,
+    "new_B_fill_shares": [],
+    "third_execution_evaluated": false
+  },
+  "alias-after-conflict": {
+    "B_qualified": false,
+    "E_partial_candidate": false,
+    "reasons": [
+      "FACT_RESTRICTION_CONFLICT_UNKNOWN"
+    ],
+    "new_tokens": [],
+    "B_order_status": null,
+    "new_B_fill_shares": [],
+    "third_execution_evaluated": false
+  },
+  "independent-new-fact": {
+    "B_qualified": true,
+    "E_partial_candidate": true,
+    "reasons": [],
+    "new_tokens": [
+      "fixture:event_id:B-independent-conflict",
+      "fixture:formation_id:B-independent-conflict",
+      "fixture:volume_bar_id:B-independent-conflict"
+    ],
+    "B_order_status": null,
+    "new_B_fill_shares": [],
+    "third_execution_evaluated": false
+  },
+  "restore-valid-original": {
+    "B_qualified": true,
+    "E_partial_candidate": true,
+    "reasons": [],
+    "new_tokens": [],
+    "B_order_status": null,
+    "new_B_fill_shares": [],
+    "third_execution_evaluated": false
+  },
+  "restore-after-extension-only": {
+    "B_qualified": true,
+    "E_partial_candidate": true,
+    "reasons": [],
+    "new_tokens": [],
+    "B_order_status": null,
+    "new_B_fill_shares": [],
+    "third_execution_evaluated": false
+  },
+  "future-revocation": {
+    "B_qualified": true,
+    "E_partial_candidate": true,
+    "reasons": [],
+    "new_tokens": [],
+    "B_order_status": "CANCELLED_EVIDENCE",
+    "new_B_fill_shares": [],
+    "third_execution_evaluated": true
+  },
+  "late-revocation": {
+    "B_qualified": true,
+    "E_partial_candidate": true,
+    "reasons": [],
+    "new_tokens": [],
+    "B_order_status": "FILLED",
+    "new_B_fill_shares": [
+      "20"
+    ],
+    "third_execution_evaluated": true
+  },
+  "equal-expiry-revocation": {
+    "B_qualified": true,
+    "E_partial_candidate": true,
+    "reasons": [],
+    "new_tokens": [],
+    "B_order_status": "EXPIRED_UNFILLED",
+    "new_B_fill_shares": [],
+    "third_execution_evaluated": true
+  },
+  "future-no-tape": {
+    "B_qualified": true,
+    "E_partial_candidate": true,
+    "reasons": [],
+    "new_tokens": [],
+    "B_order_status": "CANCELLED_EVIDENCE",
+    "new_B_fill_shares": [],
+    "third_execution_evaluated": true
+  }
+}

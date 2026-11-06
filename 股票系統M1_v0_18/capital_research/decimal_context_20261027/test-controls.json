@@ -1,0 +1,38 @@
+{
+  "preset_context": {
+    "prec": 5,
+    "rounding": "ROUND_FLOOR",
+    "Emin": -2,
+    "Emax": 2,
+    "capitals": 0,
+    "clamp": 1,
+    "traps": [
+      "InvalidOperation",
+      "DivisionByZero",
+      "Overflow",
+      "Inexact",
+      "Rounded",
+      "Underflow",
+      "Subnormal",
+      "Clamped",
+      "FloatOperation"
+    ],
+    "flags": [
+      "Inexact",
+      "Rounded"
+    ]
+  },
+  "negative_recipe": {
+    "path": "capital_research/account_metrics_20261027/cases/missing-nav/input.json",
+    "bytes": 350,
+    "sha256": "abb5a073e44c8c9671f8ad27540c8a23fbd1698f02526973efc11b9d62d02956"
+  },
+  "negative_expected": {
+    "path": "capital_research/account_metrics_20261027/final/saved/missing-nav/result.json",
+    "bytes": 1053,
+    "sha256": "e81bafd7871a761b967d6045c22adf8110d4c6ce8e78cf6bec55c37cd4371aef"
+  },
+  "expected_same_normal_record": true,
+  "expected_negative_status": "REFUSED",
+  "new_replay_runs": 0
+}

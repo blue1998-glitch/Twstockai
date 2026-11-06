@@ -1,0 +1,14 @@
+{
+  "stages": [
+    "request",
+    "replay",
+    "evaluation",
+    "result"
+  ],
+  "fault": "PERSIST_THEN_LOSE_ACKNOWLEDGEMENT_IN_TEMP_COPY",
+  "expected_run": "STOPPED_STORAGE",
+  "expected_storage": "UNKNOWN",
+  "read_final": "READ_ONLY",
+  "read_prefix": "INCOMPLETE_SAVED_PREFIX",
+  "no_automatic_retry": true
+}

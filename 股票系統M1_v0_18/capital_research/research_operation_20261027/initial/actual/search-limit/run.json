@@ -1,0 +1,69 @@
+{
+  "schema": "capital-research-operation-receipt/0.1",
+  "mode": "RUN",
+  "operation_id": "demo-search-limit",
+  "workflow_status": "GENERATION_REFUSED",
+  "reasons": [
+    "EXPLICIT_GRID_ENUMERATION_LIMIT_EXCEEDED"
+  ],
+  "failed_stage": null,
+  "keys": {
+    "request": "demo-search-limit--request",
+    "generation": "demo-search-limit--generation",
+    "choice": "demo-search-limit--choice",
+    "result": "demo-search-limit--result"
+  },
+  "storage": {
+    "request": "SAVED_AND_READ_BACK",
+    "generation": "SAVED_AND_READ_BACK",
+    "choice": "NOT_PERFORMED",
+    "result": "SAVED_AND_READ_BACK"
+  },
+  "observed": {
+    "generation_status": "STOPPED_QUANTITY_GATE",
+    "choice_status": null,
+    "check_status": null
+  },
+  "operation": {
+    "candidate_catalog": [],
+    "choice_record_id": null,
+    "choice_status": null,
+    "data_qualified": false,
+    "execution": "NOT_PERFORMED",
+    "execution_authorized": false,
+    "execution_model_qualified": false,
+    "generation_id": "sha256:927ec106fb1b645c623ce0842be65349b601a5e7c0adbc61885e28da1ca18202",
+    "generation_status": "STOPPED_QUANTITY_GATE",
+    "header_id": "sha256:4486c3962f1cdf837c3181f86607ab5c1817250f1345622c7b56156734b2c49e",
+    "historical_signal_eligible": false,
+    "live_execution_authorized": false,
+    "operation_id": "demo-search-limit",
+    "order_generation": "NOT_PERFORMED",
+    "outcome": "GENERATION_REFUSED",
+    "policy_authorized": false,
+    "primary_pressure_id": null,
+    "reasons": [
+      "EXPLICIT_GRID_ENUMERATION_LIMIT_EXCEEDED"
+    ],
+    "request_id": "sha256:c4b382778f1a5366b49bb2544249f5ec6d892b2e483dceecf3ce15d43211a341",
+    "result_id": "sha256:4964a5a9ba998d7ed5704a412afdcbdf70664f581b5e0fbfd89abd432c9856cd",
+    "schema": "capital-research-operation-result/0.1",
+    "source_check": null,
+    "stage_storage": {
+      "choice": "NOT_PERFORMED",
+      "generation": "SAVED_AND_READ_BACK",
+      "request": "SAVED_AND_READ_BACK"
+    },
+    "synthetic": true
+  },
+  "saved_files_preserved": true,
+  "order_generation": "NOT_PERFORMED",
+  "execution": "NOT_PERFORMED",
+  "execution_authorized": false,
+  "primary_pressure_id": null,
+  "data_qualified": false,
+  "execution_model_qualified": false,
+  "historical_signal_eligible": false,
+  "policy_authorized": false,
+  "live_execution_authorized": false
+}

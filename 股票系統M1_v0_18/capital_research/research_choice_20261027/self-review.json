@@ -1,0 +1,42 @@
+{
+  "base": "c5b966f52eb38715b6871362ef610469f282297e",
+  "case_counts": {
+    "RECORDED_RESEARCH_INTENT": 3,
+    "RECORDED_CONDITIONAL_RESEARCH_INTENT": 1,
+    "REFUSED": 14
+  },
+  "unique_test_methods": 7,
+  "method_executions": 8,
+  "first_batch_pass": 6,
+  "first_batch_fail": 1,
+  "affected_method_rerun_pass": 1,
+  "oracles_and_inputs_unchanged": true,
+  "protected_sources_unchanged_except_exact_matching_extraction": true,
+  "original_replay_source_matches_base": true,
+  "matching_body_AST_equal": true,
+  "existing_docs_historical_suffix_preserved": true,
+  "sensitive_scan": {
+    "scope": "all proposed related UTF-8 files",
+    "files": 95,
+    "findings": 0,
+    "scope_limit": "pattern-based local self-review, not external certification"
+  },
+  "unrelated_changes": 0,
+  "ancestors": [
+    "c5b966f52eb38715b6871362ef610469f282297e",
+    "51e6db4798ab4c3099200f14632a718b49f818a6",
+    "3fb991255cdba69df97cdd677e5ea53c01122a8a",
+    "63a81306b0d181dd47339b3bca01fd6347b94881",
+    "34b5dfa22b77cfe5c85a818e156389d5d0f9a444",
+    "6be4333d490bcccfe952c7606dffb802b76cdd5c",
+    "ea380cf7d9ae7fa8e204c2b02dfea72f51b3fa01",
+    "1085b17ccbbc09269908bb95442ec309910d1399",
+    "3b6fe93fe582ba943451374491f081f23af42f59"
+  ],
+  "limitations": [
+    "No numerical generation, accounting, replay, orders, fills, new quotes or qualification increase",
+    "Fingerprints prove consistency, not arbitrary source authenticity",
+    "Journal original IO/durability boundaries retained",
+    "No independent Work source acceptance"
+  ]
+}

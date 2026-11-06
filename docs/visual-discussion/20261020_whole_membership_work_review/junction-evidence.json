@@ -1,0 +1,140 @@
+{
+  "scope": "READ_ONLY_SOURCE_ROLE_JUNCTION_RESEARCH_NOT_FORMAL_MEMBERSHIP_OR_MERGE",
+  "query_sha256": "4a43a8c0f03bbffacb86306f064b7c807a7a83bdaf7e737bc76cd654a2c1dbb0",
+  "query_bytes": 30584,
+  "query_report_id": "sha256:0bff1a86809f6494e6f1d3d5974b22af5d5f8ef4935373f991a49e1db4412668",
+  "query_selected_at": "2026-10-20T07:30:12.393327+00:00",
+  "original_comparison_sha256": "184bdef0b687ec0ab7bfcaaac2157ff7916fbc1000ef312d81b5efc0c2e73e15",
+  "original_result_id": "sha256:ec7bca9ed6aa176c328fd8c4e94a31ea66967832e7089ac20a44090461f49da4",
+  "all_17_query_pivots_exactly_equal_original": true,
+  "all_8_query_boxes_selected_fields_equal_original": true,
+  "junction_3pct": {
+    "confirmation": "LATER_COMPLETED_CLOSE_REVERSAL_RESEARCH",
+    "confirmed_at": "2023-11-02",
+    "confirmed_index": 497,
+    "first_observed_at": "2023-11-02",
+    "id": "sha256:0dd27c9869d1bfc891a79e904c621712928b60b46b4f93579d043ed39b42068f",
+    "kind": "LOW",
+    "occurred_at": "2023-10-24",
+    "occurred_index": 490,
+    "price": "31.35",
+    "scale": "0.03",
+    "segment": 0,
+    "source_dates": [
+      "2023-10-24"
+    ]
+  },
+  "junction_6pct": {
+    "confirmation": "LATER_COMPLETED_CLOSE_REVERSAL_RESEARCH",
+    "confirmed_at": "2023-11-20",
+    "confirmed_index": 509,
+    "first_observed_at": "2023-11-20",
+    "id": "sha256:bc5b2bbe9655693026e719c545e6b0f1836f8c4f170c14be75b48be5cc883809",
+    "kind": "LOW",
+    "occurred_at": "2023-10-24",
+    "occurred_index": 490,
+    "price": "31.35",
+    "scale": "0.06",
+    "segment": 0,
+    "source_dates": [
+      "2023-10-24"
+    ]
+  },
+  "left_original_box": {
+    "id": "sha256:1ae463d505d5e7d98324a857c27024f868cb9807b9f85af9651d91cf61ce1035",
+    "start": "2023-09-14",
+    "source_end": "2023-10-24",
+    "confirmed_at": "2023-11-02",
+    "scale": "0.03",
+    "first_index": 465,
+    "last_index": 490,
+    "source_turn_ids": [
+      "sha256:4f0bca405c3544f2d998a48dbc8015d2067f9ac1c105e940bb21567ffae98ee3",
+      "sha256:a2638cc479155b09ebe68e0ae8d9360e874b5bec174de2db406ed33120ec2d69",
+      "sha256:92cea8b3abd26e69b711c713e4991251e2a1a3a73db48ceeaad74936a4209553",
+      "sha256:0dd27c9869d1bfc891a79e904c621712928b60b46b4f93579d043ed39b42068f"
+    ],
+    "research_bounds": {
+      "high": "35.50",
+      "high_cluster_spread_to_span": "0.32530120481927710843373493975903614457831325301205",
+      "low": "31.35",
+      "low_cluster_spread_to_span": "0.30120481927710843373493975903614457831325301204819",
+      "pressure_band": [
+        "34.15",
+        "35.50"
+      ],
+      "support_band": [
+        "31.35",
+        "32.60"
+      ]
+    }
+  },
+  "right_original_box": {
+    "id": "sha256:3753f89be8aef29f8f6c7910cbb979ddde8a68a37e496b5148f72dc74311db20",
+    "start": "2023-10-24",
+    "source_end": "2025-03-12",
+    "confirmed_at": "2025-03-24",
+    "scale": "0.06",
+    "first_index": 490,
+    "last_index": 822,
+    "source_turn_ids": [
+      "sha256:bc5b2bbe9655693026e719c545e6b0f1836f8c4f170c14be75b48be5cc883809",
+      "sha256:c60419732c272d53705a6a247502b716cca36266dfc26041db91e6d77fd41310",
+      "sha256:591bf193245ff2f7f687daf5fded2d993d3263fda5eb879410b91b7ed538d478",
+      "sha256:27689f78527ec76a0ee68f5b3524a3c35083e34aa477f3c1eab825e94618cace",
+      "sha256:d8ec3464135b0e6dcb48a7e74821e69a337d4ac8d3e38c712a5ae40677cfd1de",
+      "sha256:bbbcdc363d541befe0e986b67609800d37a753280f1f14c586be84d4b588b74f",
+      "sha256:6220d4d5638483f037a05df336dee86debdf6be29d289013df10a5d6dcfde6da",
+      "sha256:c1faddf3ce557ac3b650ce652de5bc3b23196799de204a5dba28183ed52b4ba8",
+      "sha256:54d90595a011f44f5e56b84eeb09174ba6aaeb3aa2924eab5e244d56cef0bde8",
+      "sha256:6a8f1a87cf2d060b46ee391b3b5f09069f45590ac835a5085803cff65d7b088e"
+    ],
+    "research_bounds": {
+      "high": "35.50",
+      "high_cluster_spread_to_span": "0.23853211009174311926605504587155963302752293577982",
+      "low": "30.05",
+      "low_cluster_spread_to_span": "0.30275229357798165137614678899082568807339449541284",
+      "pressure_band": [
+        "34.20",
+        "35.50"
+      ],
+      "support_band": [
+        "30.05",
+        "31.70"
+      ]
+    }
+  },
+  "left_last_and_right_first_source_coordinate_same": true,
+  "same_actual_bar_roles_not_merged_original_ids": true,
+  "right_box_lookup_source": "Original saved core B77; NOT a recursively expanded result of this source-query",
+  "formal_membership": null,
+  "formal_merge": null,
+  "primary_pressure_id": null,
+  "historical_selection_time": null,
+  "historical_signal_eligible": false,
+  "new_query_or_recognition_or_macd_runs": 0,
+  "same_scale_path_high_comparisons": [
+    {
+      "earlier_pivot_id": "sha256:4f0bca405c3544f2d998a48dbc8015d2067f9ac1c105e940bb21567ffae98ee3",
+      "later_pivot_id": "sha256:9dfc96bd6434daa930e32fb2f09cd7d463a8fbb680a0f029cba636eef460130c",
+      "earlier_date": "2023-09-14",
+      "later_date": "2023-11-28",
+      "earlier_high": "35.50",
+      "later_high": "35.50",
+      "delta": "0.00",
+      "relation": "EQUAL",
+      "qualification": "ORIGINAL_HIGH_COMPARISON_NOT_BREAKOUT_OR_WHOLE_MEMBERSHIP"
+    },
+    {
+      "earlier_pivot_id": "sha256:92cea8b3abd26e69b711c713e4991251e2a1a3a73db48ceeaad74936a4209553",
+      "later_pivot_id": "sha256:9dfc96bd6434daa930e32fb2f09cd7d463a8fbb680a0f029cba636eef460130c",
+      "earlier_date": "2023-10-13",
+      "later_date": "2023-11-28",
+      "earlier_high": "34.15",
+      "later_high": "35.50",
+      "delta": "1.35",
+      "relation": "ABOVE",
+      "qualification": "ORIGINAL_HIGH_COMPARISON_NOT_BREAKOUT_OR_WHOLE_MEMBERSHIP"
+    }
+  ]
+}

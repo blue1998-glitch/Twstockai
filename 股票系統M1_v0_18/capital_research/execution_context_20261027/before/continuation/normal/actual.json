@@ -1,0 +1,88 @@
+{
+  "error": null,
+  "traceback": null,
+  "calls": {
+    "simulate": 1,
+    "decide": 0,
+    "resume": 1,
+    "ledger_replay": 12,
+    "risk": 4,
+    "replay_sequence": 0,
+    "generate": 0,
+    "save": 0
+  },
+  "caller_before": {
+    "prec": 28,
+    "rounding": "ROUND_HALF_EVEN",
+    "Emin": -999999,
+    "Emax": 999999,
+    "capitals": 1,
+    "clamp": 0,
+    "traps": {
+      "InvalidOperation": true,
+      "FloatOperation": false,
+      "DivisionByZero": true,
+      "Overflow": true,
+      "Underflow": false,
+      "Subnormal": false,
+      "Inexact": false,
+      "Rounded": false,
+      "Clamped": false
+    },
+    "flags": {
+      "InvalidOperation": false,
+      "FloatOperation": false,
+      "DivisionByZero": false,
+      "Overflow": false,
+      "Underflow": false,
+      "Subnormal": false,
+      "Inexact": false,
+      "Rounded": false,
+      "Clamped": false
+    }
+  },
+  "caller_after": {
+    "prec": 28,
+    "rounding": "ROUND_HALF_EVEN",
+    "Emin": -999999,
+    "Emax": 999999,
+    "capitals": 1,
+    "clamp": 0,
+    "traps": {
+      "InvalidOperation": true,
+      "FloatOperation": false,
+      "DivisionByZero": true,
+      "Overflow": true,
+      "Underflow": false,
+      "Subnormal": false,
+      "Inexact": false,
+      "Rounded": false,
+      "Clamped": false
+    },
+    "flags": {
+      "InvalidOperation": false,
+      "FloatOperation": false,
+      "DivisionByZero": false,
+      "Overflow": false,
+      "Underflow": false,
+      "Subnormal": false,
+      "Inexact": false,
+      "Rounded": false,
+      "Clamped": false
+    }
+  },
+  "input_id": "sha256:375af9995591b548e309076b92366a2ffb0fe30a1196f202ebec9c118e604acc",
+  "input_unchanged": true,
+  "caller_context_unchanged": true,
+  "source_version": {
+    "path": "capital_research/execution.py",
+    "bytes": 29316,
+    "sha256": "9b8fed2161aee5003b777ec028286021b82e3a688d4791e4ac883c27e5b25774"
+  },
+  "actual": {
+    "kind": "EXACT_EXISTING_EXECUTION",
+    "case": "continuation",
+    "id": "sha256:2ff6a94eea86fe7221e6bdf7b6bc42e1d4f636c79a05ec912d47d753f541b5fb"
+  },
+  "equal_original": true
+}

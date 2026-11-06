@@ -1,0 +1,48 @@
+{
+  "R2_F": "NOT_IMPLEMENTED",
+  "after_cases": 7,
+  "before_cases": 7,
+  "entry_gate": {
+    "negative_feasible": false,
+    "negative_new_fill_ids": [],
+    "positive_feasible": true,
+    "positive_new_fill_ids": [
+      "structure_hold-r3-A-fill-1"
+    ]
+  },
+  "generated_at": "2026-10-25T10:29:01.519678+00:00",
+  "independent_market_samples": 0,
+  "latest_predecessor": {
+    "latest_accepted": true,
+    "old_predecessor_error": "ValueError: LATEST_PREDECESSOR_REQUIRED: checkpoint must descend from the exact latest decision/account"
+  },
+  "market_paths_in_trend_probe": 1,
+  "partial_account": {
+    "expected_effective_price_slippage": "1.28",
+    "expected_fill_fee_tax": "9",
+    "external_flows": "0",
+    "general_reserved_cash": "100",
+    "root_capital": "2180",
+    "terminal_equity": "2169.720",
+    "terminal_settled_cash": "2069.720",
+    "terminal_shares": {
+      "A": "10",
+      "B": "0",
+      "C": "0"
+    }
+  },
+  "partial_cancel_and_expiry": "SUPPORTED_ALREADY_IN_V02; ADDITIONAL_DIRECTED_EVIDENCE_NOT_A_NEW_ACCOUNTING_IMPLEMENTATION",
+  "qualifications": {
+    "data_qualified": false,
+    "execution_model_qualified": false,
+    "historical_signal_eligible": false,
+    "live_execution_authorized": false,
+    "policy_authorized": false
+  },
+  "ranking": null,
+  "reproduced_defects": 5,
+  "rounds_per_sequence": 5,
+  "synthetic": true,
+  "synthetic_policy_sequences": 10,
+  "trend_variants": 2
+}

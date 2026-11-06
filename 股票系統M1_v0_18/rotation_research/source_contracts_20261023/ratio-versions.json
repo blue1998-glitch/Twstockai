@@ -1,0 +1,140 @@
+{
+  "new_contract_observation_id": "sha256:0594e3808f7a9540e5c1325e17990175ee89cf189fa76f932b066d2104cfb7fc",
+  "contract_ratio": {
+    "value": "0.2486",
+    "unit": "NEW_2884_SHARES_PER_OLD_2867_SHARE",
+    "date_role": "ORIGINAL_CONTRACT_CONDITIONAL_NOT_FINAL_GRANT",
+    "proofs": [
+      {
+        "source_id": "esun-prospectus-20260722",
+        "physical_pdf_pages": [
+          163
+        ],
+        "native_evidence_sha256": "69ce063c9d1ec7fd1ba8c38075e5d08f3fb2830e19ffdbe6ae5f6b1b56663f47",
+        "normalized_value": "0.2486"
+      }
+    ],
+    "qualification": "SOURCE_FACT_NOT_FINAL_LEDGER"
+  },
+  "exact_parent_versions": [
+    {
+      "family": "2884-acquires-2867",
+      "issuer_code": "2884",
+      "entitled_old_code": "2867",
+      "action_type": "SHARE_EXCHANGE",
+      "old_instrument": "2867_ORDINARY_OLD_SHARES",
+      "company_codes": [
+        "2884",
+        "2867"
+      ],
+      "source_ids": [
+        "esun-mna-20251105",
+        "esun-mna-index"
+      ],
+      "observed_at": "2026-10-22T09:18:12.843605+00:00",
+      "historical_signal_eligible": false,
+      "announced_at": null,
+      "stage": "BOARD_PROPOSAL",
+      "fields": {
+        "shares_per_share": {
+          "value": "0.2486",
+          "unit": "NEW_2884_SHARES_PER_OLD_2867_SHARE",
+          "date_role": "NOT_A_DATE",
+          "proofs": [
+            {
+              "source_id": "esun-mna-20251105",
+              "locator": "derived text without whitespace, chars 453:481",
+              "raw_value": "每1股三商美邦人壽普通股可換發本公司0.2486股普通股"
+            }
+          ],
+          "qualification": "DIRECT_PUBLISHED"
+        },
+        "scheduled_effective_date": {
+          "value": null,
+          "unit": "ISO_DATE",
+          "date_role": "SCHEDULED_SHARE_EXCHANGE_EFFECTIVE",
+          "proofs": [],
+          "qualification": "SOURCE_FACT_NOT_FINAL_LEDGER"
+        },
+        "document_claimed_statement_at": {
+          "value": "2025-11-05T17:37:58+08:00",
+          "unit": "DATETIME_OFFSET",
+          "date_role": "DOCUMENT_SELF_REPORTED_STATEMENT_NOT_AUTHENTICATED_AVAILABILITY",
+          "proofs": [
+            {
+              "source_id": "esun-mna-20251105",
+              "locator": "derived text without whitespace, chars 24:37",
+              "raw_value": "發言日期114/11/05"
+            }
+          ],
+          "qualification": "SOURCE_FACT_NOT_FINAL_LEDGER"
+        }
+      },
+      "id": "sha256:5c768c6a2c7b2b3145015e722670727de85cef74fa12f990f7b2f0565fe67119"
+    },
+    {
+      "family": "2884-acquires-2867",
+      "issuer_code": "2884",
+      "entitled_old_code": "2867",
+      "action_type": "SHARE_EXCHANGE",
+      "old_instrument": "2867_ORDINARY_OLD_SHARES",
+      "company_codes": [
+        "2884",
+        "2867"
+      ],
+      "source_ids": [
+        "esun-mna-20260713",
+        "esun-mna-index"
+      ],
+      "observed_at": "2026-10-22T09:16:15.446856+00:00",
+      "historical_signal_eligible": false,
+      "announced_at": null,
+      "stage": "ANNOUNCED_SCHEDULE",
+      "fields": {
+        "shares_per_share": {
+          "value": "0.2596",
+          "unit": "NEW_2884_SHARES_PER_OLD_2867_SHARE",
+          "date_role": "NOT_A_DATE",
+          "proofs": [
+            {
+              "source_id": "esun-mna-20260713",
+              "locator": "derived text without whitespace, chars 409:436",
+              "raw_value": "三商美邦人壽每1股普通股換發本公司0.2596股普通股"
+            }
+          ],
+          "qualification": "DIRECT_PUBLISHED"
+        },
+        "scheduled_effective_date": {
+          "value": "2026-09-01",
+          "unit": "ISO_DATE",
+          "date_role": "SCHEDULED_SHARE_EXCHANGE_EFFECTIVE",
+          "proofs": [
+            {
+              "source_id": "esun-mna-20260713",
+              "locator": "derived text without whitespace, chars 465:477",
+              "raw_value": "基準日為115年9月1日"
+            }
+          ],
+          "qualification": "SOURCE_FACT_NOT_FINAL_LEDGER"
+        },
+        "document_claimed_statement_at": {
+          "value": "2026-07-13T15:03:17+08:00",
+          "unit": "DATETIME_OFFSET",
+          "date_role": "DOCUMENT_SELF_REPORTED_STATEMENT_NOT_AUTHENTICATED_AVAILABILITY",
+          "proofs": [
+            {
+              "source_id": "esun-mna-20260713",
+              "locator": "derived text without whitespace, chars 34:47",
+              "raw_value": "發言日期115/07/13"
+            }
+          ],
+          "qualification": "SOURCE_FACT_NOT_FINAL_LEDGER"
+        }
+      },
+      "id": "sha256:b9eac95a1a87bcc06b6d3b67547af3148106813cddf5fffd9edab21fc450207f"
+    }
+  ],
+  "selection": "NO_AUTOMATIC_ACTIVE_VERSION_OR_PERSONAL_GRANT",
+  "existing_2884_allotment": null,
+  "later_amendment_applicability": null
+}

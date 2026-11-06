@@ -1,0 +1,7 @@
+Traceback (most recent call last):
+  File "/workspace/Twstockai/股票系統M1_v0_18/product_candidate/verify_saved.py", line 125, in <module>
+    verify(args.candidate_dir, args.config)
+  File "/workspace/Twstockai/股票系統M1_v0_18/product_candidate/verify_saved.py", line 111, in verify
+    assert not set(protected).intersection(mismatches), 'Original engine/database/page changed'
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+AssertionError: Original engine/database/page changed

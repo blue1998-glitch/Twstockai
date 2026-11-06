@@ -1,0 +1,320 @@
+{
+  "cases": [
+    {
+      "name": "opening-cash-first-B",
+      "status": "CURRENTLY_FEASIBLE",
+      "reasons": [],
+      "expected_matched": true,
+      "input_unchanged": true,
+      "candidate_ids": [
+        "explicit-cash-intent"
+      ]
+    },
+    {
+      "name": "opening-hold-zero-A",
+      "status": "CURRENTLY_FEASIBLE",
+      "reasons": [],
+      "expected_matched": true,
+      "input_unchanged": true,
+      "candidate_ids": [
+        "A-zero"
+      ]
+    },
+    {
+      "name": "original-cash-no-sale-A",
+      "status": "CURRENTLY_FEASIBLE",
+      "reasons": [],
+      "expected_matched": true,
+      "input_unchanged": true,
+      "candidate_ids": [
+        "explicit-cash-intent"
+      ]
+    },
+    {
+      "name": "exit-unsettled-first-B-small",
+      "status": "CURRENTLY_FEASIBLE",
+      "reasons": [],
+      "expected_matched": true,
+      "input_unchanged": true,
+      "candidate_ids": [
+        "explicit-cash-intent"
+      ]
+    },
+    {
+      "name": "exit-settled-first-B",
+      "status": "CURRENTLY_FEASIBLE",
+      "reasons": [],
+      "expected_matched": true,
+      "input_unchanged": true,
+      "candidate_ids": [
+        "explicit-cash-intent"
+      ]
+    },
+    {
+      "name": "receivable-not-buying-power",
+      "status": "REJECTED",
+      "reasons": [
+        "JOINT_BUDGET_EXCEEDED_INCLUDING_COSTS_AND_RESERVATIONS"
+      ],
+      "expected_matched": true,
+      "input_unchanged": true,
+      "candidate_ids": []
+    },
+    {
+      "name": "settled-larger-B",
+      "status": "CURRENTLY_FEASIBLE",
+      "reasons": [],
+      "expected_matched": true,
+      "input_unchanged": true,
+      "candidate_ids": [
+        "explicit-cash-intent"
+      ]
+    },
+    {
+      "name": "reserve-not-spendable",
+      "status": "REJECTED",
+      "reasons": [
+        "JOINT_BUDGET_EXCEEDED_INCLUDING_COSTS_AND_RESERVATIONS"
+      ],
+      "expected_matched": true,
+      "input_unchanged": true,
+      "candidate_ids": []
+    },
+    {
+      "name": "fees-paid-from-original-cash",
+      "status": "REJECTED",
+      "reasons": [
+        "JOINT_BUDGET_EXCEEDED_INCLUDING_COSTS_AND_RESERVATIONS"
+      ],
+      "expected_matched": true,
+      "input_unchanged": true,
+      "candidate_ids": []
+    },
+    {
+      "name": "reentry-old-trigger",
+      "status": "REJECTED",
+      "reasons": [
+        "NO_NEW_INDEPENDENT_TRIGGER"
+      ],
+      "expected_matched": true,
+      "input_unchanged": true,
+      "candidate_ids": []
+    },
+    {
+      "name": "reentry-independent-A",
+      "status": "CURRENTLY_FEASIBLE",
+      "reasons": [],
+      "expected_matched": true,
+      "input_unchanged": true,
+      "candidate_ids": [
+        "explicit-cash-intent"
+      ]
+    },
+    {
+      "name": "reentry-shared-bar",
+      "status": "REJECTED",
+      "reasons": [
+        "NO_NEW_INDEPENDENT_TRIGGER"
+      ],
+      "expected_matched": true,
+      "input_unchanged": true,
+      "candidate_ids": []
+    },
+    {
+      "name": "cross-stock-trigger",
+      "status": "REJECTED",
+      "reasons": [
+        "BATCH_TRIGGER_NOT_OWNED_BY_DESTINATION",
+        "NO_NEW_INDEPENDENT_TRIGGER"
+      ],
+      "expected_matched": true,
+      "input_unchanged": true,
+      "candidate_ids": []
+    },
+    {
+      "name": "false-first-after-exit",
+      "status": "REJECTED",
+      "reasons": [
+        "FIRST_ENTRY_CONTRADICTS_B_EPISODE_HISTORY"
+      ],
+      "expected_matched": true,
+      "input_unchanged": true,
+      "candidate_ids": []
+    },
+    {
+      "name": "unknown-phase",
+      "status": "REJECTED",
+      "reasons": [
+        "BATCH_PHASE_UNKNOWN",
+        "NO_NEW_INDEPENDENT_TRIGGER"
+      ],
+      "expected_matched": true,
+      "input_unchanged": true,
+      "candidate_ids": []
+    },
+    {
+      "name": "unknown-capital-review",
+      "status": "REJECTED",
+      "reasons": [
+        "NEW_CAPITAL_NOT_QUALIFIED:B"
+      ],
+      "expected_matched": true,
+      "input_unchanged": true,
+      "candidate_ids": []
+    },
+    {
+      "name": "revoked-evidence",
+      "status": "REJECTED",
+      "reasons": [
+        "NEW_CAPITAL_NOT_QUALIFIED:B"
+      ],
+      "expected_matched": true,
+      "input_unchanged": true,
+      "candidate_ids": []
+    },
+    {
+      "name": "joint-risk",
+      "status": "REJECTED",
+      "reasons": [
+        "RISK_LIMIT_EXCEEDED"
+      ],
+      "expected_matched": true,
+      "input_unchanged": true,
+      "candidate_ids": []
+    },
+    {
+      "name": "liquidity",
+      "status": "REJECTED",
+      "reasons": [
+        "LIQUIDITY_REQUIRES_SMALLER_OR_PARTIAL_ORDER:B"
+      ],
+      "expected_matched": true,
+      "input_unchanged": true,
+      "candidate_ids": []
+    },
+    {
+      "name": "wrong-latest",
+      "status": "INPUT_ERROR",
+      "reasons": [
+        "EXACT_LATEST_PREDECESSOR_REQUIRED"
+      ],
+      "expected_matched": true,
+      "input_unchanged": true,
+      "candidate_ids": []
+    },
+    {
+      "name": "wrong-checkpoint",
+      "status": "INPUT_ERROR",
+      "reasons": [
+        "EXACT_CHECKPOINT_REQUIRED"
+      ],
+      "expected_matched": true,
+      "input_unchanged": true,
+      "candidate_ids": []
+    },
+    {
+      "name": "account-override",
+      "status": "INPUT_ERROR",
+      "reasons": [
+        "DERIVED_ACCOUNT_PLANS_TOKENS_CANNOT_BE_OVERRIDDEN"
+      ],
+      "expected_matched": true,
+      "input_unchanged": true,
+      "candidate_ids": []
+    },
+    {
+      "name": "token-override",
+      "status": "INPUT_ERROR",
+      "reasons": [
+        "DERIVED_ACCOUNT_PLANS_TOKENS_CANNOT_BE_OVERRIDDEN"
+      ],
+      "expected_matched": true,
+      "input_unchanged": true,
+      "candidate_ids": []
+    },
+    {
+      "name": "active-partial-order",
+      "status": "NOT_IMPLEMENTED",
+      "reasons": [
+        "ACTIVE_ORDER_CONTINUATION_NOT_IMPLEMENTED"
+      ],
+      "expected_matched": true,
+      "input_unchanged": true,
+      "candidate_ids": []
+    },
+    {
+      "name": "opening-payable",
+      "status": "NOT_IMPLEMENTED",
+      "reasons": [
+        "OPENING_PAYABLE_CONTINUATION_NOT_IMPLEMENTED"
+      ],
+      "expected_matched": true,
+      "input_unchanged": true,
+      "candidate_ids": []
+    },
+    {
+      "name": "batch-basis-mismatch",
+      "status": "INPUT_ERROR",
+      "reasons": [
+        "Batch context source/basis/asset mismatch"
+      ],
+      "expected_matched": true,
+      "input_unchanged": true,
+      "candidate_ids": []
+    },
+    {
+      "name": "checkpoint-source-mismatch",
+      "status": "INPUT_ERROR",
+      "reasons": [
+        "CHECKPOINT_ASSET_SOURCE_BASIS_CHANGED"
+      ],
+      "expected_matched": true,
+      "input_unchanged": true,
+      "candidate_ids": []
+    },
+    {
+      "name": "real-source-refused",
+      "status": "INPUT_ERROR",
+      "reasons": [
+        "EXPLICIT_SYNTHETIC_CASH_ACTION_REQUIRED"
+      ],
+      "expected_matched": true,
+      "input_unchanged": true,
+      "candidate_ids": []
+    },
+    {
+      "name": "family-override",
+      "status": "INPUT_ERROR",
+      "reasons": [
+        "EXACT_EXPLICIT_ACTION_REQUIRED"
+      ],
+      "expected_matched": true,
+      "input_unchanged": true,
+      "candidate_ids": []
+    },
+    {
+      "name": "future-policy",
+      "status": "INPUT_ERROR",
+      "reasons": [
+        "ACTION_POLICY_NOT_YET_AVAILABLE"
+      ],
+      "expected_matched": true,
+      "input_unchanged": true,
+      "candidate_ids": []
+    },
+    {
+      "name": "future-revocation-prefix",
+      "status": "CURRENTLY_FEASIBLE",
+      "reasons": [],
+      "expected_matched": true,
+      "input_unchanged": true,
+      "candidate_ids": [
+        "explicit-cash-intent"
+      ]
+    }
+  ],
+  "all_expected": true,
+  "market_replay_calls": 0,
+  "action_execution_calls": 0,
+  "quantity_generation_calls": 0
+}

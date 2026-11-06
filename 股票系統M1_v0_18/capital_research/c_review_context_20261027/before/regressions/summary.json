@@ -1,0 +1,218 @@
+[
+  {
+    "case": "review-unknown",
+    "context": "normal",
+    "equal_original": true,
+    "error": null,
+    "calls": {
+      "review": 1,
+      "retry": 0,
+      "quantity_replay": 1,
+      "simulate": 2,
+      "ledger_replay": 32,
+      "generate": 1,
+      "save": 0
+    },
+    "caller_context_unchanged": true,
+    "input_unchanged": true
+  },
+  {
+    "case": "review-unknown",
+    "context": "preset",
+    "equal_original": false,
+    "error": {
+      "type": "Clamped",
+      "detail": "[<class 'decimal.Clamped'>]"
+    },
+    "calls": {
+      "review": 1,
+      "retry": 0,
+      "quantity_replay": 1,
+      "simulate": 1,
+      "ledger_replay": 11,
+      "generate": 1,
+      "save": 0
+    },
+    "caller_context_unchanged": true,
+    "input_unchanged": true
+  },
+  {
+    "case": "review-partial-cancel",
+    "context": "normal",
+    "equal_original": true,
+    "error": null,
+    "calls": {
+      "review": 1,
+      "retry": 0,
+      "quantity_replay": 1,
+      "simulate": 2,
+      "ledger_replay": 40,
+      "generate": 1,
+      "save": 0
+    },
+    "caller_context_unchanged": true,
+    "input_unchanged": true
+  },
+  {
+    "case": "review-partial-cancel",
+    "context": "preset",
+    "equal_original": false,
+    "error": {
+      "type": "Clamped",
+      "detail": "[<class 'decimal.Clamped'>]"
+    },
+    "calls": {
+      "review": 1,
+      "retry": 0,
+      "quantity_replay": 1,
+      "simulate": 1,
+      "ledger_replay": 11,
+      "generate": 1,
+      "save": 0
+    },
+    "caller_context_unchanged": true,
+    "input_unchanged": true
+  },
+  {
+    "case": "review-wrong-order",
+    "context": "normal",
+    "equal_original": true,
+    "error": null,
+    "calls": {
+      "review": 1,
+      "retry": 0,
+      "quantity_replay": 1,
+      "simulate": 1,
+      "ledger_replay": 10,
+      "generate": 1,
+      "save": 0
+    },
+    "caller_context_unchanged": true,
+    "input_unchanged": true
+  },
+  {
+    "case": "review-wrong-order",
+    "context": "preset",
+    "equal_original": true,
+    "error": null,
+    "calls": {
+      "review": 1,
+      "retry": 0,
+      "quantity_replay": 1,
+      "simulate": 1,
+      "ledger_replay": 10,
+      "generate": 1,
+      "save": 0
+    },
+    "caller_context_unchanged": true,
+    "input_unchanged": true
+  },
+  {
+    "case": "retry-unknown",
+    "context": "normal",
+    "equal_original": true,
+    "error": null,
+    "calls": {
+      "review": 1,
+      "retry": 1,
+      "quantity_replay": 1,
+      "simulate": 3,
+      "ledger_replay": 64,
+      "generate": 1,
+      "save": 0
+    },
+    "caller_context_unchanged": true,
+    "input_unchanged": true
+  },
+  {
+    "case": "retry-unknown",
+    "context": "preset",
+    "equal_original": false,
+    "error": {
+      "type": "Clamped",
+      "detail": "[<class 'decimal.Clamped'>]"
+    },
+    "calls": {
+      "review": 1,
+      "retry": 1,
+      "quantity_replay": 1,
+      "simulate": 1,
+      "ledger_replay": 11,
+      "generate": 1,
+      "save": 0
+    },
+    "caller_context_unchanged": true,
+    "input_unchanged": true
+  },
+  {
+    "case": "retry-partial",
+    "context": "normal",
+    "equal_original": true,
+    "error": null,
+    "calls": {
+      "review": 1,
+      "retry": 1,
+      "quantity_replay": 1,
+      "simulate": 3,
+      "ledger_replay": 66,
+      "generate": 1,
+      "save": 0
+    },
+    "caller_context_unchanged": true,
+    "input_unchanged": true
+  },
+  {
+    "case": "retry-partial",
+    "context": "preset",
+    "equal_original": false,
+    "error": {
+      "type": "Clamped",
+      "detail": "[<class 'decimal.Clamped'>]"
+    },
+    "calls": {
+      "review": 1,
+      "retry": 1,
+      "quantity_replay": 1,
+      "simulate": 1,
+      "ledger_replay": 11,
+      "generate": 1,
+      "save": 0
+    },
+    "caller_context_unchanged": true,
+    "input_unchanged": true
+  },
+  {
+    "case": "retry-wrong-predecessor",
+    "context": "normal",
+    "equal_original": true,
+    "error": null,
+    "calls": {
+      "review": 0,
+      "retry": 1,
+      "quantity_replay": 0,
+      "simulate": 0,
+      "ledger_replay": 0,
+      "generate": 0,
+      "save": 0
+    },
+    "caller_context_unchanged": true,
+    "input_unchanged": true
+  },
+  {
+    "case": "retry-wrong-predecessor",
+    "context": "preset",
+    "equal_original": true,
+    "error": null,
+    "calls": {
+      "review": 0,
+      "retry": 1,
+      "quantity_replay": 0,
+      "simulate": 0,
+      "ledger_replay": 0,
+      "generate": 0,
+      "save": 0
+    },
+    "caller_context_unchanged": true,
+    "input_unchanged": true
+  }
+]

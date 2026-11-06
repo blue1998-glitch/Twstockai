@@ -1,0 +1,56 @@
+[
+  {
+    "case": "cost-mismatch",
+    "context": "normal",
+    "error": {
+      "type": "ValueError",
+      "detail": "Decision/execution/terminal cost model mismatch"
+    },
+    "expected_rejection": true
+  },
+  {
+    "case": "cost-mismatch",
+    "context": "preset",
+    "error": {
+      "type": "ValueError",
+      "detail": "Decision/execution/terminal cost model mismatch"
+    },
+    "expected_rejection": true
+  },
+  {
+    "case": "opening-right-drop",
+    "context": "normal",
+    "error": {
+      "type": "ValueError",
+      "detail": "Unequal opening holdings/cash/rights"
+    },
+    "expected_rejection": true
+  },
+  {
+    "case": "opening-right-drop",
+    "context": "preset",
+    "error": {
+      "type": "ValueError",
+      "detail": "Unequal opening holdings/cash/rights"
+    },
+    "expected_rejection": true
+  },
+  {
+    "case": "wrong-latest",
+    "context": "normal",
+    "error": {
+      "type": "ValueError",
+      "detail": "LATEST_PREDECESSOR_REQUIRED: checkpoint must descend from the exact latest decision/account"
+    },
+    "expected_rejection": true
+  },
+  {
+    "case": "wrong-latest",
+    "context": "preset",
+    "error": {
+      "type": "ValueError",
+      "detail": "LATEST_PREDECESSOR_REQUIRED: checkpoint must descend from the exact latest decision/account"
+    },
+    "expected_rejection": true
+  }
+]

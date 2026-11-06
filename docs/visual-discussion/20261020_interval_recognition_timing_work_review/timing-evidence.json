@@ -1,0 +1,141 @@
+{
+  "schema": "m1-interval-recognition-timing-review/1",
+  "study_selected_at": "2026-10-20T13:39:55.519732+00:00",
+  "source_html_sha256": "fbca1e1d7e82d5dc9dcca8da0d3c8619f59431c1119d2cd8cb4c8ffc8293a724",
+  "source_artifact_id": "sha256:26e36b1a9c74da39baeb83770f2e1738a9993ee1675d224f45315298a0ed3c5d",
+  "code": "2884",
+  "frames": [
+    {
+      "cutoff": "2026-10-07",
+      "source_records": 1207,
+      "last_bar": {
+        "close": "45.75",
+        "date": "2026-10-07",
+        "high": "45.85",
+        "low": "45.40",
+        "open": "45.60",
+        "volume_shares_scaled": "11827886"
+      },
+      "last_saved_macd": {
+        "dea": "1.4529531263317395928363004962618726724141537911009",
+        "dif": "1.109302153851743977627000727259656573761468140536",
+        "histogram": "-0.6873019449599912304185995380044321973053713011298",
+        "reason": "AVAILABLE"
+      },
+      "source_values_fingerprint": "sha256:a985e6a5fab8c8df4e13501f3f8fbeb71495f80729b17c2fcc99757c94e752ea",
+      "saved_core_result_id": null,
+      "saved_numeric_frame_id": null,
+      "core_snapshot_qualification": "NO_SAVED_RESULT_AT_THIS_CUTOFF_RAW_AND_SAVED_INDICATORS_TRUNCATED_ONLY",
+      "prefix_interval_sufficient": null,
+      "historical_selection_time": null,
+      "historical_signal_eligible": false,
+      "primary_pressure_id": null
+    },
+    {
+      "cutoff": "2026-10-14",
+      "source_records": 1211,
+      "last_bar": {
+        "close": "47.30",
+        "date": "2026-10-14",
+        "high": "47.30",
+        "low": "46.05",
+        "open": "46.90",
+        "volume_shares_scaled": "36308728"
+      },
+      "last_saved_macd": {
+        "dea": "1.1980893685699559066348805451567018836524359839100",
+        "dif": "1.068094336458931489210551051721209738702725854705",
+        "histogram": "-0.2599900642220488348486589868709842898994202584100",
+        "reason": "AVAILABLE"
+      },
+      "source_values_fingerprint": "sha256:4bfedda9180966ae414187e1b7173154eab7f42011e670f96b68acfc4549cd8d",
+      "saved_core_result_id": "sha256:4aedbb331f57f5a01afffed99e06e296c90bf4ca7ac6199195735c1845ea3187",
+      "saved_numeric_frame_id": "sha256:03a6b1236af3982792fe85793c5536cb6abf30f545747fd2fbbdae8780401ceb",
+      "core_snapshot_qualification": "ORIGINAL_SAVED_RESULT_READ_NOT_RECOMPUTED",
+      "prefix_interval_sufficient": null,
+      "historical_selection_time": null,
+      "historical_signal_eligible": false,
+      "primary_pressure_id": null
+    }
+  ],
+  "pages": [
+    {
+      "page": 1,
+      "start": "2021-10-18",
+      "cutoff": "2026-10-07",
+      "plotted_records": 1207,
+      "last_bar": {
+        "close": "45.75",
+        "date": "2026-10-07",
+        "high": "45.85",
+        "low": "45.40",
+        "open": "45.60",
+        "volume_shares_scaled": "11827886"
+      },
+      "source_indices": [
+        0,
+        1206
+      ],
+      "price_y_limits": "AUTO_FROM_PREFIX_ONLY",
+      "future_rows": 0,
+      "MA_and_MACD": "SAVED_VALUES_SLICED_NOT_RECOMPUTED"
+    },
+    {
+      "page": 2,
+      "start": "2026-05-04",
+      "cutoff": "2026-10-07",
+      "plotted_records": 109,
+      "last_bar": {
+        "close": "45.75",
+        "date": "2026-10-07",
+        "high": "45.85",
+        "low": "45.40",
+        "open": "45.60",
+        "volume_shares_scaled": "11827886"
+      },
+      "source_indices": [
+        1098,
+        1206
+      ],
+      "price_y_limits": [
+        28,
+        51
+      ],
+      "future_rows": 0,
+      "MA_and_MACD": "SAVED_VALUES_SLICED_NOT_RECOMPUTED"
+    },
+    {
+      "page": 3,
+      "start": "2026-05-04",
+      "cutoff": "2026-10-14",
+      "plotted_records": 113,
+      "last_bar": {
+        "close": "47.30",
+        "date": "2026-10-14",
+        "high": "47.30",
+        "low": "46.05",
+        "open": "46.90",
+        "volume_shares_scaled": "36308728"
+      },
+      "source_indices": [
+        1098,
+        1210
+      ],
+      "price_y_limits": [
+        28,
+        51
+      ],
+      "future_rows": 0,
+      "MA_and_MACD": "SAVED_VALUES_SLICED_NOT_RECOMPUTED"
+    }
+  ],
+  "full_chart_interval_label": "USER_CONFIRMED_PRESERVED",
+  "new_question": "只看截至10/7的資料，是否已足以辨認這個整理區間？還需要10/7以後更多K線才足夠？",
+  "new_question_status": "PENDING_USER_REVIEW",
+  "qualification": "RETROSPECTIVE_TRUNCATED_REVIEW_NOT_BLIND_NOT_HISTORICAL_SIGNAL",
+  "no_exact_first_day_requested": true,
+  "formal_membership_bounds_importance_lifecycle": "UNKNOWN",
+  "primary_pressure_id": null,
+  "historical_signal_eligible": false,
+  "engine_and_indicator_recomputations": 0
+}

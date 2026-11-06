@@ -1,0 +1,37 @@
+{
+  "recorded_at": "2026-10-24T13:16:00.754063+00:00",
+  "bootstrap": "HYDRATED_PRESERVING_CHANGES",
+  "restored": 0,
+  "preserved_baseline_differences": 7,
+  "final_new_tests": 37,
+  "synthetic_test_methods": 33,
+  "real_saved_source_test_methods": 4,
+  "final_result": "PASS",
+  "failed_test_methods": 0,
+  "intermediate_counts_not_added": [
+    31,
+    36
+  ],
+  "old_tests_rerun": 0,
+  "test_scope": "New module including reused exact compare/maximum helpers, offline raw/meta integrity, causal prefix and research output checks; no unrelated old suite",
+  "probe_configs": 9,
+  "new_market_source_requests": 0,
+  "new_ui": false,
+  "browser_or_android_tests": 0,
+  "original_large_json_or_parts_or_png_or_old_zip_read": false,
+  "diagnostics": [
+    {
+      "stage": "initial read-only file search",
+      "error": "rg: pressure_chart/load_history.py: No such file or directory",
+      "resolution": "Used existing pressure_chart/history.py; no source or product mutation"
+    },
+    {
+      "stage": "source metadata inspection",
+      "observation": "Several retained monthly meta objects omit http_status",
+      "handling": "Preserve null; verify stored raw SHA and explicit URL/parser scope; never backfill HTTP200"
+    }
+  ],
+  "warnings": "All historical Fontconfig/xref/SQLite/source limitations preserved; no source rendering or old validation rerun",
+  "parent_product_or_source_versions_changed": false,
+  "no_strategy_or_performance_validation": true
+}

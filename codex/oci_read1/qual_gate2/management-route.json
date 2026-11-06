@@ -1,0 +1,19 @@
+{
+  "schema": "qual-gate2-management-route/0.1",
+  "official_method": "GET",
+  "official_resource_path": "/admin/v1/IdentityPropagationTrusts",
+  "sdk_method": "IdentityDomainsClient.list_identity_propagation_trusts",
+  "authentication": "Existing authorized management access token/signer required; none bound here",
+  "management_token_is_not_runtime_rpst": true,
+  "admin_client_secret_bootstrap_allowed": false,
+  "account_domain_endpoint": "NOT_OBTAINED_NOT_GUESSED",
+  "account_request_attempts": 0,
+  "docs_http_200_is_tenant_verification": false,
+  "role_or_scope_actual": "UNKNOWN",
+  "object_count_actual": null,
+  "remaining_quota_actual": null,
+  "quota_limit_general_spec": 30,
+  "quota_arithmetic_is_not_actual_headroom": true,
+  "verified_mobile_delegation_ui": "NOT_AVAILABLE_IN_CURRENT_TOOLS",
+  "blocker": "BLOCKED_OWNER_AUTH"
+}

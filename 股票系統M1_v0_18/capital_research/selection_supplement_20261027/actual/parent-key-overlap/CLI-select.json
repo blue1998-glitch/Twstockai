@@ -1,0 +1,11 @@
+{
+  "exit_code": 2,
+  "stdout": "{\n  \"schema\": \"capital-selection-supplement-receipt/0.1\",\n  \"mode\": \"SELECT\",\n  \"supplement_id\": \"demo-no-selection\",\n  \"workflow_status\": \"INPUT_REFUSED\",\n  \"reasons\": [\n    \"PARENT_CHILD_KEY_OVERLAP\"\n  ],\n  \"failed_stage\": \"input\",\n  \"keys\": {\n    \"request\": \"demo-no-selection--request\",\n    \"choice\": \"demo-no-selection--choice\",\n    \"result\": \"demo-no-selection--result\"\n  },\n  \"parent_binding\": null,\n  \"storage\": {\n    \"request\": \"NOT_PERFORMED\",\n    \"choice\": \"NOT_PERFORMED\",\n    \"result\": \"NOT_PERFORMED\"\n  },\n  \"observed\": {\n    \"choice_status\": null,\n    \"check_status\": null\n  },\n  \"supplement\": null,\n  \"saved_files_preserved\": true,\n  \"generation\": \"NOT_PERFORMED_REUSED_SAVED_PARENT\",\n  \"order_generation\": \"NOT_PERFORMED\",\n  \"execution\": \"NOT_PERFORMED\",\n  \"execution_authorized\": false,\n  \"primary_pressure_id\": null,\n  \"data_qualified\": false,\n  \"execution_model_qualified\": false,\n  \"historical_signal_eligible\": false,\n  \"policy_authorized\": false,\n  \"live_execution_authorized\": false\n}\n",
+  "stderr": "",
+  "calls": {
+    "generation": 0,
+    "choice": 0,
+    "source_check": 0
+  },
+  "guard": "NO_NUMERIC_IMPORT_OR_GENERATION_NO_NETWORK;SELECT_ONLY_CHILD_WRITE;READ_NO_SELECT_CHECK_SAVE_WRITE"
+}

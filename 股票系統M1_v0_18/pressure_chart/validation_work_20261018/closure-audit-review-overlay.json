@@ -1,0 +1,84 @@
+{
+  "schema_version": "closure-audit-review-overlay/0.1",
+  "baseline_commit": "b9c38d6fbd56257f41e28657cf5fd6bd88e1ad3b",
+  "original_audit_git_blob_sha": "1b63466b48867cbba82d11ab9fa3ba00f3ca4fc2",
+  "original_audit_modified": false,
+  "primary_supplement": "closure-primary-supplement.json",
+  "status": "PRIMARY_SOURCE_REVIEW_ONLY_NOT_APPLIED_TO_PRODUCT",
+  "series": [
+    {
+      "code": "1101",
+      "market": "TWSE",
+      "source_reported_rows": 1213,
+      "primary_closure_documents_now_verified": [
+        "2023-08-03",
+        "2024-07-24",
+        "2024-07-25",
+        "2024-10-02",
+        "2024-10-03",
+        "2024-10-31"
+      ],
+      "primary_scope_pending": [],
+      "original_zero_turnover_no_price_dates": [
+        "2025-08-13"
+      ],
+      "not_a_full_calendar_or_action_certification": true
+    },
+    {
+      "code": "2884",
+      "market": "TWSE",
+      "source_reported_rows": 1213,
+      "primary_closure_documents_now_verified": [
+        "2023-08-03",
+        "2024-07-24",
+        "2024-07-25",
+        "2024-10-02",
+        "2024-10-03",
+        "2024-10-31"
+      ],
+      "primary_scope_pending": [],
+      "original_zero_turnover_no_price_dates": [
+        "2025-11-05"
+      ],
+      "not_a_full_calendar_or_action_certification": true
+    },
+    {
+      "code": "6488",
+      "market": "TPEX",
+      "source_reported_rows": 1214,
+      "primary_closure_documents_now_verified": [],
+      "primary_scope_pending": [
+        "2023-08-03",
+        "2024-07-24",
+        "2024-07-25",
+        "2024-10-02",
+        "2024-10-03",
+        "2024-10-31"
+      ],
+      "original_zero_turnover_no_price_dates": [],
+      "not_a_full_calendar_or_action_certification": true
+    },
+    {
+      "code": "8069",
+      "market": "TPEX",
+      "source_reported_rows": 1214,
+      "primary_closure_documents_now_verified": [],
+      "primary_scope_pending": [
+        "2023-08-03",
+        "2024-07-24",
+        "2024-07-25",
+        "2024-10-02",
+        "2024-10-03",
+        "2024-10-31"
+      ],
+      "original_zero_turnover_no_price_dates": [],
+      "not_a_full_calendar_or_action_certification": true
+    }
+  ],
+  "limitations": [
+    "TPEX primary notices not obtained; do not infer from TWSE or other markets",
+    "No company action verification",
+    "Original calendar/source completeness and product data untouched; auditor not rerun",
+    "Zero-turnover no-price rows remain original facts; no synthetic candles"
+  ]
+}

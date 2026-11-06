@@ -1,0 +1,47 @@
+<!doctype html><html lang="zh-Hant"><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>P1-7 動態換股研究</title>
+<style>
+*{box-sizing:border-box}body{margin:0;background:#f5f6f8;color:#182532;font:16px/1.65 system-ui,sans-serif}main{max-width:1100px;margin:auto;padding:18px}h1{font-size:26px;line-height:1.4}h2{font-size:21px;margin-top:32px}p{overflow-wrap:anywhere}.notice{background:#fff1d8;border-left:4px solid #bf7d1c;padding:14px}.card{background:white;padding:16px;border:1px solid #dbe0e6;border-radius:9px;margin:16px 0}select,button{min-height:46px;font:inherit;max-width:100%;padding:6px 12px}label{display:block;margin:10px 0}button{background:white;border:1px solid #8d9ba9;border-radius:5px;cursor:pointer}button[aria-pressed=true]{background:#203e5a;color:white}.plot-scroll{overflow:auto;max-width:100%;background:white}.plot-scroll img{display:block;width:100%;max-width:none;height:auto}.controls{display:flex;flex-wrap:wrap;gap:8px;margin-bottom:10px}table{border-collapse:collapse;min-width:680px;width:100%;font-size:14px}td,th{border-bottom:1px solid #dde3e8;text-align:right;padding:10px 8px}td:first-child,th:first-child{text-align:left;white-space:nowrap}.table-scroll{overflow:auto}.meta{font-size:14px;color:#4e5b67}a{color:#175f98}details{margin-top:14px}summary{cursor:pointer;min-height:44px}code{overflow-wrap:anywhere}input[type=range]{width:160px;vertical-align:middle}#evidence{white-space:pre-wrap;overflow-wrap:anywhere;font-size:14px}footer{padding:25px 0;color:#52616c}@media(max-width:450px){main{padding:12px}.card{padding:12px}h1{font-size:23px}}
+</style><main>
+<h1>P1-7｜換股與資金成長研究</h1>
+<p>同樣的資金，續抱、全換、分批或持現金，代價與結果有何不同？本頁是可重播的研究候選，沒有交易指令。</p>
+<div class="notice"><b>尚不能決定全換或分批何者普遍較好。</b>完整公司行動、股利與當時公布時間尚未核清；下列是扣除模擬成本的價格報酬，不能當作實際總淨報酬、未來預測或已驗投資策略。</div>
+<div class="card"><label>觀察起點<select id="date"><option>2026-01-02</option><option>2026-08-03</option></select></label>
+<label>配置比較<select id="pair"><option value="1101">A 台泥1101 → B 玉山金2884</option><option value="2884">A 玉山金2884 → B 台泥1101</option></select></label><p id="caseInfo"></p>
+<p class="meta">初始20,000股A、現金0元；本金取決策日A市值。各方案起點相同；原始買入成本與過去虧損不重設門檻。兩個日期按月初取樣，正反方向均保留。</p></div>
+<h2>先看當時可見的 K 線與成交量</h2>
+<div class="controls"><button id="before" aria-pressed="true">決策當時</button><button id="after" aria-pressed="false">事後40筆</button></div>
+<p id="priceInfo" class="meta"></p><div class="card"><div class="controls"><label>放大 <input id="zoom" type="range" min="100" max="250" step="25" value="100"></label><button id="downloadPrice">下載向量放大圖</button></div><div class="plot-scroll"><img id="prices" alt="兩股真實K線及成交量對照"></div></div>
+<p class="meta">紫線＝截止前20筆原高的實驗代理，灰線＝同窗原低，均不是已核正式關鍵價／箱底。▲收盤越試驗原高；▼返回線下，是事後已發生的價格事實。橘線是全換的次筆開盤候選時點；分批實際日期在下方成交紀錄。量柱不代表已知成功換手。圖窗至少六個月，無報價不補價。</p>
+<details><summary>當時證據與未知</summary><div id="evidence"></div></details>
+<h2>六個方案的資金曲線</h2>
+<p>下圖是事後評估：各日淨清算估值扣除模擬退出成本，再以起始資本100比較。它不是當時能看見的未來。</p>
+<div class="card"><button id="downloadEquity">下載資金曲線向量圖</button><img id="equity" alt="六方案資金曲線" style="width:100%;height:auto"></div>
+<div class="card"><div class="table-scroll"><table><thead><tr><th>方案</th><th>淨價格報酬</th><th>收盤最大回撤</th><th>總模擬摩擦元</th><th>淨利／筆日元</th><th>委託數</th><th>未超參照占用日</th></tr></thead><tbody id="metrics"></tbody></table></div><p class="meta">表格可左右滑動。總摩擦＝已模擬稅費＋滑價＋估計終點退出費；占用日僅指A未超凍結試驗原高且仍持有，不是已核弱勢分類。每日淨利是事後平均，不年化。</p></div>
+<p id="finding"></p><details><summary>分批與全換的實際模擬委託</summary><div id="trades" class="table-scroll"></div></details>
+<details><summary>20筆尺度：提高滑價／延後現金可用的影響</summary><p class="meta">另用相同20筆終點比較，不能把下表20筆與上表40筆直接視為相同觀察期間。</p><div class="table-scroll"><table><thead><tr><th>方案</th><th>滑價bps</th><th>現金延遲筆日</th><th>20筆淨價格報酬</th><th>總模擬摩擦元</th></tr></thead><tbody id="sensitivity"></tbody></table></div></details>
+<h2>多次換股：同一資金帳延續</h2><p>2026-05-04～10-16，未外加本金，保留逐次股數、現金與成本。每10筆檢討之前5筆漲幅，是用來驗帳務的另一組實驗，並非您已確認的圖形策略；不能把此段正報酬稱為資本飛輪已成功。</p><img id="loop" alt="連續帳戶資金曲線" style="width:100%;height:auto"><p id="loopInfo" class="meta"></p>
+<h2>整體研究與限制</h2><p>兩股各317個保存日期。每月第一保存日、兩個方向、5／10／20／40筆，共70組可計算對照、420方案；另216成本／可用現金情境。9月1日兩個方向的40筆後續不足，已拒算，沒有縮短觀察期。2026年1～4月為工程開發、5～9月為時間切分；舊行情曾被專案閱讀，這不是真正未見的獨立市場驗證。窗口重疊且反向成對，不能當獨立勝率樣本。</p><p id="summary"></p>
+<p>25%與50%依原A股數移轉。後續分批事件是B前一收盤高於凍結試驗原高、較前日上漲且量較前日增加，這些是本次競爭假設，未定為正式策略。全換與現金從次筆開盤嘗試執行，延後方案等5筆；容量取前日量0.1%、每筆整張、無借款。容量不足時全換也會分日成交，剩餘次筆繼續嘗試，非主動分批策略。基準假設同日賣出所得可作買進額度，另跑保守2筆日延遲現金及較高滑價。日K不能證明開盤成交量、漲跌停可成交或真實券商額度。</p>
+<p>交易成本：手續費0.1425%、最低20元、賣出稅0.3%、滑價10bps，費稅向上取整；除稅率依官方普通股票說明，其餘是明示實驗假設。手續費實際由券商訂定，並非全市場固定最低20元。<a href="https://www.twse.com.tw/zh/about/company/guide.html">證交所官方依據</a>。</p>
+<p>尚未完成：股利／配股／減資的完整會計、完整歷史可得與交易日驗證、正式風險與部位規則、上櫃及全市場、真正未見樣本與實體Android。此頁沒有正式結構分類、上漲空間預測、買賣資格或自動下單。</p>
+<button id="downloadJSON">下載本頁精確研究結果 JSON</button><footer>研究版本 rotation-research/0.1｜來源快照9dd0554f｜2026-10-22。新頁Android實機未測。</footer>
+<script>window.REPORT=__REPORT_DATA__;const IMAGES=__REPORT_IMAGES__;
+const names={hold:'續抱 A',full:'全部換 B',staged25:'25%事件分批',staged50:'50%事件分批',cash:'賣 A 持現金',delay5:'延後5筆全換'};const el=id=>document.getElementById(id);let view='before';
+function current(){return REPORT.cases[el('date').value+'-'+el('pair').value]};function number(s){return Number(s).toFixed(2)};function pct(s){return number(Number(s)*100)+'%'}
+function download(name,text,type){const a=document.createElement('a');a.href=URL.createObjectURL(new Blob([text],{type}));a.download=name;a.click();setTimeout(()=>URL.revokeObjectURL(a.href),1000)}
+function svgDownload(stem){const text=atob(IMAGES[stem].split(',')[1]);const bytes=Uint8Array.from(text,c=>c.charCodeAt(0));const a=document.createElement('a');a.href=URL.createObjectURL(new Blob([bytes],{type:'image/svg+xml'}));a.download=stem+'.svg';a.click();setTimeout(()=>URL.revokeObjectURL(a.href),1000)}
+function render(){const c=current();el('caseInfo').textContent=`${c.cutoff}收盤決策｜A ${c.A} → B ${c.B}｜40筆至${c.end}｜共同初始市值 ${number(c.initial_equity)}元`;
+ const fig=REPORT.figures.find(f=>f.stem===`prices-${c.cutoff}-${view}`);el('prices').src=IMAGES[fig.stem];el('prices').dataset.lastDate=fig.last_date;el('priceInfo').textContent=`顯示 ${fig.first_date}～${fig.last_date}；`+(view==='before'?'不顯示決策後K線與量。':'藍底是後續結果，不可倒填當時資訊。');el('before').setAttribute('aria-pressed',view==='before');el('after').setAttribute('aria-pressed',view==='after');el('equity').src=IMAGES[c.equity_stem];
+ el('metrics').innerHTML=c.results.map(r=>{const m=r.metrics;return `<tr><td>${names[r.plan]}</td><td>${pct(m.net_price_return)}</td><td>${pct(m.max_drawdown_close_net)}</td><td>${number(m.total_modeled_friction)}</td><td>${number(m.profit_per_session)}</td><td>${m.orders}</td><td>${m.unadvanced_A_sessions}</td></tr>`}).join('');
+ const full=c.results.find(r=>r.plan==='full'),half=c.results.find(r=>r.plan==='staged50'),quarter=c.results.find(r=>r.plan==='staged25');
+ el('finding').textContent=`此例相對全換，50%分批期末淨值差 ${number(half.metrics.net_value_vs_immediate_full)}元，25%分批差 ${number(quarter.metrics.net_value_vs_immediate_full)}元。差異是此段事後結果，不能據此選出普遍最佳比例。`;
+ el('sensitivity').innerHTML=REPORT.sensitivity20.filter(r=>r.cutoff===c.cutoff&&r.A===c.A&&['full','staged25','staged50'].includes(r.plan)).map(r=>`<tr><td>${names[r.plan]}</td><td>${r.slippage_bps}</td><td>${r.settlement_lag}</td><td>${pct(r.metrics.net_price_return)}</td><td>${number(r.metrics.total_modeled_friction)}</td></tr>`).join('');
+ const e=full.input_evidence;el('evidence').textContent=[c.A,c.B].map(code=>`${code}｜收盤${e[code].price_fact.close}；試驗原高${e[code].price_fact.experimental_prior_high}；已收在其上：${e[code].price_fact.close_above_proxy?'是':'否'}；當日量${e[code].volume_fact.current}股。\n正式結構：未知；量經濟角色：未知；剩餘空間：未知；交易資格：未建立。`).join('\n\n');
+ let rows='';for(const r of c.results.filter(r=>['full','staged25','staged50','delay5'].includes(r.plan)))for(const t of r.trades)rows+=`<tr><td>${names[r.plan]}</td><td>${t.decision_cutoff}</td><td>${t.date}</td><td>${t.code} ${t.side==='BUY'?'買':'賣'}</td><td>${t.shares}</td><td>${t.raw_open}</td><td>${number(t.cash_flow)}</td></tr>`;
+ el('trades').innerHTML='<table><thead><tr><th>方案</th><th>決策截止</th><th>模擬成交日</th><th>股票／方向</th><th>股數</th><th>原開盤</th><th>現金流元</th></tr></thead><tbody>'+rows+'</tbody></table>';
+}
+el('before').onclick=()=>{view='before';render()};el('after').onclick=()=>{view='after';render()};el('date').onchange=el('pair').onchange=()=>{view='before';render()};el('zoom').oninput=()=>{el('prices').style.width=el('zoom').value+'%'};
+el('downloadPrice').onclick=()=>svgDownload(`prices-${current().cutoff}-${view}`);el('downloadEquity').onclick=()=>svgDownload(current().equity_stem);el('downloadJSON').onclick=()=>download('rotation-report-exact.json',JSON.stringify(REPORT,null,2),'application/json');
+el('loop').src=IMAGES['capital-loop'];el('loopInfo').textContent=REPORT.loops.map(l=>`${l.policy}：${pct(l.net_price_return)}，${l.ledger.length}筆委託`).join('；');
+el('summary').textContent=Object.entries(REPORT.summary).map(([period,s])=>`${period==='development'?'工程開發段':'時間切分段'} ${s.comparisons}組：25%分批期末高於全換 ${s.staged25.end_value_above_full}組，50%分批 ${s.staged50.end_value_above_full}組。`).join(' ')+ ' 這是相關樣本的描述性計數，不是可外推勝率。';render();
+</script></main></html>

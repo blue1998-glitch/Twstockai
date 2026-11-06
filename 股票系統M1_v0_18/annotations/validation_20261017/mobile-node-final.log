@@ -1,0 +1,108 @@
+{
+  "status": "PASS",
+  "results": [
+    {
+      "test": "initial selection is blank; no latest date/version silently chosen",
+      "status": "PASS"
+    },
+    {
+      "test": "all 18 actual comparisons preserve exact Python daily and period snapshots",
+      "status": "PASS"
+    },
+    {
+      "test": "all 18 downloads equal explicit Python selection outputs",
+      "status": "PASS"
+    },
+    {
+      "test": "basis switch uses saved weekly/monthly arrays without modifying any snapshot",
+      "status": "PASS"
+    },
+    {
+      "test": "raw daily and period candles use red up / green down",
+      "status": "PASS"
+    },
+    {
+      "test": "adjusted daily never synthesizes daily adjusted OHLC",
+      "status": "PASS"
+    },
+    {
+      "test": "real insufficient 260-day and 24-month windows remain null with reasons",
+      "status": "PASS"
+    },
+    {
+      "test": "elapsed and candidate modes expose open period status without replacing dates",
+      "status": "PASS"
+    },
+    {
+      "test": "original pivot times and zone state remain explicit",
+      "status": "PASS"
+    },
+    {
+      "test": "historical native-share warning clears when explicitly selecting corrected version",
+      "status": "PASS"
+    },
+    {
+      "test": "switching stock/date clears charts, data and downloads",
+      "status": "PASS"
+    },
+    {
+      "test": "unknown date or identity never falls back to another version",
+      "status": "PASS"
+    },
+    {
+      "test": "missing daily fixture displays only period data and never creates daily values",
+      "status": "PASS"
+    },
+    {
+      "test": "missing period fixture preserves only independent daily data",
+      "status": "PASS"
+    },
+    {
+      "test": "conflicting fixture blocks combined charts and retains downloadable checks",
+      "status": "PASS"
+    },
+    {
+      "test": "offline policy and DOM text prevent network or HTML injection; no core code in UI",
+      "status": "PASS"
+    }
+  ],
+  "real_comparisons": 18,
+  "method": "Actual inline JS and actual saved view catalog under Node VM; DOM/canvas doubles",
+  "browser_rendering": "NOT_TESTED",
+  "mobile_layout_touch": "NOT_TESTED"
+}
+{
+  "status": "PASS",
+  "results": [
+    {
+      "test": "decimal halves, negative zero, carries and large values match independent Python Decimal",
+      "status": "PASS"
+    },
+    {
+      "test": "all 18 daily views and both period bases show two decimals without rounding nulls to zero",
+      "status": "PASS"
+    },
+    {
+      "test": "display and basis changes preserve exact records, snapshots and every JSON download",
+      "status": "PASS"
+    },
+    {
+      "test": "canvas backing uses real width and pixel ratio while price/data ranges remain original",
+      "status": "PASS"
+    },
+    {
+      "test": "resize redraws on current saved values and resets backing-pixel clears on selection changes",
+      "status": "PASS"
+    },
+    {
+      "test": "mobile price tables have wrapping values, preserved context and no technical reason-code requirement",
+      "status": "PASS"
+    }
+  ],
+  "baseline_view_checks": 16,
+  "comparison_cases": 18,
+  "exact_download_comparisons": 36,
+  "method": "Actual inline JS and saved data under Node VM; DOM/canvas doubles; Decimal oracle independent",
+  "browser_layout": "NOT_TESTED",
+  "physical_android_new_version": "NOT_TESTED"
+}

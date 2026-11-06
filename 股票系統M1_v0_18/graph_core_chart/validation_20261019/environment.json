@@ -1,0 +1,53 @@
+{
+  "status": "PREPARATION_SUCCESS_THIS_CHECKOUT",
+  "baseline_commit": "83506ff70c707db46c90d642396ed1c0cc6e268a",
+  "historical_archives": [
+    {
+      "file": "M1_v0_17_01.zip",
+      "bytes": 15885597,
+      "sha256": "764d7344e5e969f048ef91dc68196f60a70a99e68c86bd52219c70d5750a69ff",
+      "status": "PRESENT_HASH_MATCH"
+    },
+    {
+      "file": "M1_v0_17_02.zip",
+      "bytes": 15885527,
+      "sha256": "0b678f68719fdbfcb9acb94ab91e15a74fc53f600a7e59c83e1c07b6fd9d952a",
+      "status": "PRESENT_HASH_MATCH"
+    },
+    {
+      "file": "M1_v0_17_03.zip",
+      "bytes": 15885363,
+      "sha256": "e8e99a58e9659834530add0971198c764280b0537eaa2733578d4b1c39b69632",
+      "status": "PRESENT_HASH_MATCH"
+    }
+  ],
+  "restore_action": "NOT_NEEDED_PRESENT_AND_VERIFIED",
+  "bootstrap": {
+    "status": "HYDRATED_PRESERVING_CHANGES",
+    "project": "/workspace/Twstockai/股票系統M1_v0_18",
+    "restored_files": 0,
+    "differing_files_preserved": [
+      "AGENTS.md",
+      "README.md",
+      "docs/CODEX交接.md",
+      "src/cross_view_cli.py",
+      "src/cross_view_export.py",
+      "tests/test_cross_view.cjs",
+      "tests/test_mobile_viewer_browser.cjs"
+    ],
+    "baseline_verified": true,
+    "current_tree_matches_baseline": false,
+    "action_qualification": "NOT_EVALUATED"
+  },
+  "prior_Work_failure_preserved_as_history": true,
+  "python": "Python 3.12.14",
+  "node": "v24.19.0",
+  "chromium": "Chromium 154.0.8037.57 built on Debian GNU/Linux 13 (trixie)",
+  "dependency_changes": "NONE",
+  "configuration_draft_changes": "NONE_NEEDED",
+  "persistent_services": "NONE",
+  "network_observed_connectivity": "connected",
+  "network_policy_observation": "unknown_NOT_A_READINESS_CLAIM",
+  "physical_android": "NOT_TESTED_NEW_BUILD",
+  "file_policy": "PRIOR_BLOCKER_NOT_RETRIED"
+}

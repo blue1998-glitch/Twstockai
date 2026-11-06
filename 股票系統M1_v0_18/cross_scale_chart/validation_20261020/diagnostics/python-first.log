@@ -1,0 +1,21 @@
+setUpClass (test_cross_scale_chart.CrossScaleTests) ... ERROR
+
+======================================================================
+ERROR: setUpClass (test_cross_scale_chart.CrossScaleTests)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/workspace/Twstockai/股票系統M1_v0_18/tests/test_cross_scale_chart.py", line 12, in setUpClass
+    cls.source,cls.diagnostic=load_fixed();cls.data=make(cls.source,cls.diagnostic)
+                                                    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/workspace/Twstockai/股票系統M1_v0_18/cross_scale_chart/build.py", line 70, in make
+    if len(s['macd'])!=len(rows) or any(v['date']!=row['date'] for v,row in zip(s['macd'],rows)):
+                                    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/workspace/Twstockai/股票系統M1_v0_18/cross_scale_chart/build.py", line 70, in <genexpr>
+    if len(s['macd'])!=len(rows) or any(v['date']!=row['date'] for v,row in zip(s['macd'],rows)):
+                                        ~^^^^^^^^
+KeyError: 'date'
+
+----------------------------------------------------------------------
+Ran 0 tests in 4.740s
+
+FAILED (errors=1)

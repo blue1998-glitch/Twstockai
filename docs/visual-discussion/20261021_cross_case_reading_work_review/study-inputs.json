@@ -1,0 +1,811 @@
+{
+  "selection": "FINITE_EX_POST_CROSS_CASE_READING_NOT_BLIND_SCAN_OR_FORMAL_PATTERN_VALIDATION",
+  "cases": {
+    "ABC": {
+      "code": "1101",
+      "zones": {
+        "earlier": {
+          "code": "1101",
+          "leg_ids": [
+            "sha256:3bcde32bb96f793fa095f918ba62a9d33fdc7d185a1f0159ec71368ec23ec458",
+            "sha256:a13b49ca1f6ffc862f8a98e297f9089bd7e1f8467644db2b0320badaf3dbedcc",
+            "sha256:bbba98414e45be97631dd446c0e9b492b44fc853d43659e008ae3bea410f97f8",
+            "sha256:08974af8591e5d288e023e711915c04f6f89854113ed3bc33bf96e6fd4239176",
+            "sha256:1a2345afefb72e754f630e56ec9788d5ff5e7ed9b1cd2be4c797538efb1e2459",
+            "sha256:c3fff09c28efb69e09deac71b086bdc135804a289b53f6bd47e7d0d559decb99",
+            "sha256:7f2fbe535d9e5cc69db1325f1e17c37a845b0141ef2e8a859c21d88b4d1955af"
+          ],
+          "leg_count": 7,
+          "path_start": "2025-04-09",
+          "path_end": "2025-05-12",
+          "known_on_saved_bar": "2025-05-13",
+          "common_close_low": "30.55",
+          "common_close_high": "30.60",
+          "raw_path_frame": {
+            "observed_low": "28.50",
+            "observed_high": "31.20",
+            "records": 23,
+            "bars_fingerprint": "sha256:2d105e384a011d31809ce0232765c32443d5887806236d52359c843b93e78238",
+            "low_origin_dates": [
+              "2025-04-09",
+              "2025-04-22"
+            ],
+            "high_origin_dates": [
+              "2025-04-10",
+              "2025-05-12"
+            ]
+          },
+          "right_evidence_bar": {
+            "close": "31.10",
+            "date": "2025-05-13",
+            "high": "31.40",
+            "low": "30.90",
+            "open": "31.30",
+            "volume_shares_scaled": "10264322"
+          },
+          "formal_price_bounds": null,
+          "formal_interval": null,
+          "formal_membership": null,
+          "qualification": "SHARED_COMPLETED_CLOSE_SPAN_RESEARCH_ONLY_NOT_TRADE_DENSITY_OR_FORMAL_BOX",
+          "zone_id": "sha256:daa51d2fdce4d3887a822fcb0c3ef8bedae66bbd863f0f6051f05f220ba0ef5c"
+        },
+        "lower": {
+          "code": "1101",
+          "leg_ids": [
+            "sha256:ee91c8038cfc582989bcb84d1f5438af61a72b8bb2dc9a873c4dfd9b350b25bd",
+            "sha256:76d8de30609afc2569c6d7802fac49cf837ac3472161389600f1d0bd5ce85808"
+          ],
+          "leg_count": 2,
+          "path_start": "2025-05-19",
+          "path_end": "2025-05-23",
+          "known_on_saved_bar": "2025-05-26",
+          "common_close_low": "29.80",
+          "common_close_high": "30.30",
+          "raw_path_frame": {
+            "observed_low": "29.50",
+            "observed_high": "30.40",
+            "records": 5,
+            "bars_fingerprint": "sha256:d5a043be725c6566815329c2be191e426b44a53b4ef1f6020ccde34e79d9ee0d",
+            "low_origin_dates": [
+              "2025-05-23"
+            ],
+            "high_origin_dates": [
+              "2025-05-21"
+            ]
+          },
+          "right_evidence_bar": {
+            "close": "29.85",
+            "date": "2025-05-26",
+            "high": "29.85",
+            "low": "29.20",
+            "open": "29.85",
+            "volume_shares_scaled": "44305503"
+          },
+          "formal_price_bounds": null,
+          "formal_interval": null,
+          "formal_membership": null,
+          "qualification": "SHARED_COMPLETED_CLOSE_SPAN_RESEARCH_ONLY_NOT_TRADE_DENSITY_OR_FORMAL_BOX",
+          "zone_id": "sha256:f817baf02a4f01693e2cab1536852771b88300a0b7cfbdecb74271d91a8f81fe"
+        },
+        "outside": {
+          "code": "1101",
+          "leg_ids": [
+            "sha256:3584b8c7a49aa5ea879ce519833a87dd45a0280d58a815da6d13209826af321b",
+            "sha256:c8bcff5b720151557df5a8e828410eb686d23fa828420322521fb21acdb01f3b"
+          ],
+          "leg_count": 2,
+          "path_start": "2025-06-06",
+          "path_end": "2025-06-11",
+          "known_on_saved_bar": "2025-06-12",
+          "common_close_low": "27.15",
+          "common_close_high": "27.30",
+          "raw_path_frame": {
+            "observed_low": "26.90",
+            "observed_high": "27.65",
+            "records": 4,
+            "bars_fingerprint": "sha256:359ab12901cb6f6b75a5077f46422d14e911aaac77a5c8fcb38dc3f1a9d8c3b8",
+            "low_origin_dates": [
+              "2025-06-11"
+            ],
+            "high_origin_dates": [
+              "2025-06-06",
+              "2025-06-09"
+            ]
+          },
+          "right_evidence_bar": {
+            "close": "27.05",
+            "date": "2025-06-12",
+            "high": "27.30",
+            "low": "26.95",
+            "open": "27.30",
+            "volume_shares_scaled": "9954901"
+          },
+          "formal_price_bounds": null,
+          "formal_interval": null,
+          "formal_membership": null,
+          "qualification": "SHARED_COMPLETED_CLOSE_SPAN_RESEARCH_ONLY_NOT_TRADE_DENSITY_OR_FORMAL_BOX",
+          "zone_id": "sha256:1b56b0b697f7e7550a7053d29eecd8ead630e231789722345a7d650b308172db"
+        }
+      },
+      "points": {
+        "older-high": {
+          "id": "sha256:e9041e36b00e24173c6697db2352894ae17a88ee983164049a5e1a2ad1b055b2",
+          "kind": "HIGH",
+          "price": "35.45",
+          "occurred_at": "2025-03-12",
+          "source_dates": [
+            "2025-03-12"
+          ],
+          "confirmed_at": "2025-03-13",
+          "first_observed_at": "2025-03-13",
+          "scale": "0.03",
+          "segment": 0,
+          "code": "1101",
+          "known_on": "2025-03-13"
+        },
+        "high": {
+          "id": "sha256:203d0b11418597215257e8eb0551095b5cb563d72fe1cc7e1c8ae3d2e4644f5e",
+          "kind": "HIGH",
+          "price": "31.40",
+          "occurred_at": "2025-05-13",
+          "source_dates": [
+            "2025-05-13"
+          ],
+          "confirmed_at": "2025-05-14",
+          "first_observed_at": "2025-05-14",
+          "scale": "0.03",
+          "segment": 0,
+          "code": "1101",
+          "known_on": "2025-05-14"
+        },
+        "low": {
+          "id": "sha256:45c65aa99ad5bd42bf7575d2388269c540c85883dd1ae9c332b2a408e7c72818",
+          "kind": "LOW",
+          "price": "28.45",
+          "occurred_at": "2025-04-08",
+          "source_dates": [
+            "2025-04-08"
+          ],
+          "confirmed_at": "2025-04-10",
+          "first_observed_at": "2025-04-10",
+          "scale": "0.03",
+          "segment": 0,
+          "code": "1101",
+          "known_on": "2025-04-10"
+        }
+      },
+      "cutoffs": [
+        "2025-05-12",
+        "2025-05-13",
+        "2025-05-14",
+        "2025-05-23",
+        "2025-05-26",
+        "2025-05-29",
+        "2025-06-02",
+        "2025-06-03",
+        "2025-06-11",
+        "2025-06-12"
+      ]
+    },
+    "A": {
+      "code": "2884",
+      "zones": {
+        "earlier": {
+          "code": "2884",
+          "leg_ids": [
+            "sha256:37515df9faf53b4177ecc35d5a7941bbb624736a0b28982dc1d55cbf4b8d0c9e",
+            "sha256:4ddf0d8265d29b9ec7ae3477078508c3fe26c670216e95b2cc6994e21c9450c6"
+          ],
+          "leg_count": 2,
+          "path_start": "2026-09-15",
+          "path_end": "2026-09-30",
+          "known_on_saved_bar": "2026-10-01",
+          "common_close_low": "45.65",
+          "common_close_high": "47.30",
+          "raw_path_frame": {
+            "observed_low": "44.75",
+            "observed_high": "47.35",
+            "records": 10,
+            "bars_fingerprint": "sha256:d16a370d9d230af081b9cf21db23e355c7220b4257453608e2229fd639886a5c",
+            "low_origin_dates": [
+              "2026-09-30"
+            ],
+            "high_origin_dates": [
+              "2026-09-17"
+            ]
+          },
+          "right_evidence_bar": {
+            "close": "45.35",
+            "date": "2026-10-01",
+            "high": "45.45",
+            "low": "44.20",
+            "open": "44.80",
+            "volume_shares_scaled": "29162352"
+          },
+          "formal_price_bounds": null,
+          "formal_interval": null,
+          "formal_membership": null,
+          "qualification": "SHARED_COMPLETED_CLOSE_SPAN_RESEARCH_ONLY_NOT_TRADE_DENSITY_OR_FORMAL_BOX",
+          "zone_id": "sha256:2546a756ec89eace404b017a4d25f1644ae480e603f7ff1c3dadf954c32d573a"
+        },
+        "lower": {
+          "code": "2884",
+          "leg_ids": [
+            "sha256:e4aac373f9eefac25bb8a08be2aa781dfac04e16e4e2c3012758de6f54e9167e",
+            "sha256:9f9a45c348e82b6db9106b8d57571837fa37e54f7e40e469d45092ab10723a47"
+          ],
+          "leg_count": 2,
+          "path_start": "2026-09-30",
+          "path_end": "2026-10-05",
+          "known_on_saved_bar": "2026-10-06",
+          "common_close_low": "44.85",
+          "common_close_high": "45.35",
+          "raw_path_frame": {
+            "observed_low": "44.20",
+            "observed_high": "45.75",
+            "records": 4,
+            "bars_fingerprint": "sha256:47649af7c3f54d3bc6407c19f6085dec664181cdc66fefb2726943edf68f8f7b",
+            "low_origin_dates": [
+              "2026-10-01"
+            ],
+            "high_origin_dates": [
+              "2026-10-05"
+            ]
+          },
+          "right_evidence_bar": {
+            "close": "45.45",
+            "date": "2026-10-06",
+            "high": "45.45",
+            "low": "44.95",
+            "open": "45.00",
+            "volume_shares_scaled": "12125855"
+          },
+          "formal_price_bounds": null,
+          "formal_interval": null,
+          "formal_membership": null,
+          "qualification": "SHARED_COMPLETED_CLOSE_SPAN_RESEARCH_ONLY_NOT_TRADE_DENSITY_OR_FORMAL_BOX",
+          "zone_id": "sha256:da7a1b989dd21f4dc32a7b37a9755cf0c11b7038575346fb51a832c3022f5fa7"
+        },
+        "later": {
+          "code": "2884",
+          "leg_ids": [
+            "sha256:5b2576f8e7f6b9451d4980be810ddd517ea21caf9b6d72365a786aa7ee759d8e",
+            "sha256:5d3d97b402f2cea71105ef88138e395ae8e183d77203defd92efabf8c526a5dc"
+          ],
+          "leg_count": 2,
+          "path_start": "2026-10-05",
+          "path_end": "2026-10-08",
+          "known_on_saved_bar": "2026-10-12",
+          "common_close_low": "45.00",
+          "common_close_high": "45.75",
+          "raw_path_frame": {
+            "observed_low": "44.80",
+            "observed_high": "45.95",
+            "records": 4,
+            "bars_fingerprint": "sha256:cc5ff16137dfe9ca03f99f259d4f817510e5163d687e0789b64be71970ca35ef",
+            "low_origin_dates": [
+              "2026-10-05"
+            ],
+            "high_origin_dates": [
+              "2026-10-08"
+            ]
+          },
+          "right_evidence_bar": {
+            "close": "46.00",
+            "date": "2026-10-12",
+            "high": "46.10",
+            "low": "45.00",
+            "open": "45.00",
+            "volume_shares_scaled": "21618379"
+          },
+          "formal_price_bounds": null,
+          "formal_interval": null,
+          "formal_membership": null,
+          "qualification": "SHARED_COMPLETED_CLOSE_SPAN_RESEARCH_ONLY_NOT_TRADE_DENSITY_OR_FORMAL_BOX",
+          "zone_id": "sha256:d73a9b92cb9f002a7f8ff2ffa723ad3e62e36864c6fca400f56e12f0f0fb7642"
+        }
+      },
+      "points": {
+        "high": {
+          "id": "sha256:1a1c1cd695fbda45df17d1cf4ec7b451eb0eeb681ca82a676d605351f1049572",
+          "kind": "HIGH",
+          "price": "47.35",
+          "occurred_at": "2026-09-17",
+          "source_dates": [
+            "2026-09-17"
+          ],
+          "confirmed_at": "2026-09-23",
+          "first_observed_at": "2026-09-23",
+          "scale": "0.03",
+          "segment": 0,
+          "code": "2884",
+          "known_on": "2026-09-23"
+        },
+        "low": {
+          "id": "sha256:97f99946efffc956c39b03dc68b03c125ed5da80b7e98e8cab86f184a932aac3",
+          "kind": "LOW",
+          "price": "44.20",
+          "occurred_at": "2026-10-01",
+          "source_dates": [
+            "2026-10-01"
+          ],
+          "confirmed_at": "2026-10-07",
+          "first_observed_at": "2026-10-07",
+          "scale": "0.03",
+          "segment": 0,
+          "code": "2884",
+          "known_on": "2026-10-07"
+        }
+      },
+      "cutoffs": [
+        "2026-09-30",
+        "2026-10-01",
+        "2026-10-05",
+        "2026-10-06",
+        "2026-10-07",
+        "2026-10-08",
+        "2026-10-12",
+        "2026-10-13",
+        "2026-10-14",
+        "2026-10-15",
+        "2026-10-16"
+      ]
+    }
+  },
+  "legs": {
+    "sha256:a13b49ca1f6ffc862f8a98e297f9089bd7e1f8467644db2b0320badaf3dbedcc": {
+      "code": "1101",
+      "from_turn_id": "sha256:03aaff4fdc302386036561e168697b61e263672d585db67056fe1d18b9e8e696",
+      "to_turn_id": "sha256:bbaaf6c028a17773054fcbe79d614d3f88b7c17fa633944ff168ff2430b8488e",
+      "path_start": "2025-04-10",
+      "path_end": "2025-04-22",
+      "known_on_saved_bar": "2025-04-23",
+      "close_low": "28.60",
+      "close_high": "30.75",
+      "direction": "DOWN",
+      "qualification": "COMPLETED_CLOSE_ENDPOINT_SPAN_NOT_INTRADAY_TRADE_PATH",
+      "leg_id": "sha256:a13b49ca1f6ffc862f8a98e297f9089bd7e1f8467644db2b0320badaf3dbedcc"
+    },
+    "sha256:c8bcff5b720151557df5a8e828410eb686d23fa828420322521fb21acdb01f3b": {
+      "code": "1101",
+      "from_turn_id": "sha256:d1484b097320be423b0f4472a2cdc54b7c48f1afc6be568716d008ed3debc143",
+      "to_turn_id": "sha256:e0c7e6bf2f356adab385f25869278ed2e134e7f4b1878a4fe282690c979e9557",
+      "path_start": "2025-06-10",
+      "path_end": "2025-06-11",
+      "known_on_saved_bar": "2025-06-12",
+      "close_low": "27.15",
+      "close_high": "27.30",
+      "direction": "UP",
+      "qualification": "COMPLETED_CLOSE_ENDPOINT_SPAN_NOT_INTRADAY_TRADE_PATH",
+      "leg_id": "sha256:c8bcff5b720151557df5a8e828410eb686d23fa828420322521fb21acdb01f3b"
+    },
+    "sha256:5d3d97b402f2cea71105ef88138e395ae8e183d77203defd92efabf8c526a5dc": {
+      "code": "2884",
+      "from_turn_id": "sha256:b4969bcb4990b9d191e9443f54706256e2eb9dca08171387d969c67d9af52b21",
+      "to_turn_id": "sha256:0377b75d18d670d7c5da2253213056a76e69d27b4f0200f30373c4c875e727ee",
+      "path_start": "2026-10-07",
+      "path_end": "2026-10-08",
+      "known_on_saved_bar": "2026-10-12",
+      "close_low": "45.00",
+      "close_high": "45.75",
+      "direction": "DOWN",
+      "qualification": "COMPLETED_CLOSE_ENDPOINT_SPAN_NOT_INTRADAY_TRADE_PATH",
+      "leg_id": "sha256:5d3d97b402f2cea71105ef88138e395ae8e183d77203defd92efabf8c526a5dc"
+    },
+    "sha256:c3fff09c28efb69e09deac71b086bdc135804a289b53f6bd47e7d0d559decb99": {
+      "code": "1101",
+      "from_turn_id": "sha256:d51e7b51d5be1020fb3064c1c8f655d1e19c38e79b1d56f02c8252159cdf6335",
+      "to_turn_id": "sha256:5e79fc3dce634dd91a36de32621b64893250695d2b68597f9555a636dff866b7",
+      "path_start": "2025-05-07",
+      "path_end": "2025-05-08",
+      "known_on_saved_bar": "2025-05-09",
+      "close_low": "30.55",
+      "close_high": "30.85",
+      "direction": "DOWN",
+      "qualification": "COMPLETED_CLOSE_ENDPOINT_SPAN_NOT_INTRADAY_TRADE_PATH",
+      "leg_id": "sha256:c3fff09c28efb69e09deac71b086bdc135804a289b53f6bd47e7d0d559decb99"
+    },
+    "sha256:7f2fbe535d9e5cc69db1325f1e17c37a845b0141ef2e8a859c21d88b4d1955af": {
+      "code": "1101",
+      "from_turn_id": "sha256:5e79fc3dce634dd91a36de32621b64893250695d2b68597f9555a636dff866b7",
+      "to_turn_id": "sha256:bb362e0be6fadb6d8ef418da252e1e873ce86c3bc1520df4579d1b805f06e6d7",
+      "path_start": "2025-05-08",
+      "path_end": "2025-05-12",
+      "known_on_saved_bar": "2025-05-13",
+      "close_low": "30.55",
+      "close_high": "31.20",
+      "direction": "UP",
+      "qualification": "COMPLETED_CLOSE_ENDPOINT_SPAN_NOT_INTRADAY_TRADE_PATH",
+      "leg_id": "sha256:7f2fbe535d9e5cc69db1325f1e17c37a845b0141ef2e8a859c21d88b4d1955af"
+    },
+    "sha256:76d8de30609afc2569c6d7802fac49cf837ac3472161389600f1d0bd5ce85808": {
+      "code": "1101",
+      "from_turn_id": "sha256:4037a764d240ffd0b8ec4f30bc2866d9120cd983d1dadbb62e76ec297d516ce8",
+      "to_turn_id": "sha256:651a49a98418219d66bc74f7892ac7248618510d0a8adbf3ec466118ef9cbba7",
+      "path_start": "2025-05-21",
+      "path_end": "2025-05-23",
+      "known_on_saved_bar": "2025-05-26",
+      "close_low": "29.75",
+      "close_high": "30.30",
+      "direction": "DOWN",
+      "qualification": "COMPLETED_CLOSE_ENDPOINT_SPAN_NOT_INTRADAY_TRADE_PATH",
+      "leg_id": "sha256:76d8de30609afc2569c6d7802fac49cf837ac3472161389600f1d0bd5ce85808"
+    },
+    "sha256:e4aac373f9eefac25bb8a08be2aa781dfac04e16e4e2c3012758de6f54e9167e": {
+      "code": "2884",
+      "from_turn_id": "sha256:440da42d6e4e8abdbe1d35e43c4f8b43b0f97829fd25f03cd8f6cf5343b57b73",
+      "to_turn_id": "sha256:cad9abe90ebf2e6647926404c1f9ebf52b6e6e8e3e5d6dccaad8edf6630d806b",
+      "path_start": "2026-09-30",
+      "path_end": "2026-10-02",
+      "known_on_saved_bar": "2026-10-05",
+      "close_low": "44.85",
+      "close_high": "45.35",
+      "direction": "UP",
+      "qualification": "COMPLETED_CLOSE_ENDPOINT_SPAN_NOT_INTRADAY_TRADE_PATH",
+      "leg_id": "sha256:e4aac373f9eefac25bb8a08be2aa781dfac04e16e4e2c3012758de6f54e9167e"
+    },
+    "sha256:37515df9faf53b4177ecc35d5a7941bbb624736a0b28982dc1d55cbf4b8d0c9e": {
+      "code": "2884",
+      "from_turn_id": "sha256:4d6b744812e1f8f95d07d0fe384b8f6da4a206bbf8353235ab4341945826bcf8",
+      "to_turn_id": "sha256:023be0a46d8304b6fe87142f4f53630b1f9e0b48f5db2c2e13f4010f92131c79",
+      "path_start": "2026-09-15",
+      "path_end": "2026-09-17",
+      "known_on_saved_bar": "2026-09-18",
+      "close_low": "45.65",
+      "close_high": "47.30",
+      "direction": "UP",
+      "qualification": "COMPLETED_CLOSE_ENDPOINT_SPAN_NOT_INTRADAY_TRADE_PATH",
+      "leg_id": "sha256:37515df9faf53b4177ecc35d5a7941bbb624736a0b28982dc1d55cbf4b8d0c9e"
+    },
+    "sha256:4ddf0d8265d29b9ec7ae3477078508c3fe26c670216e95b2cc6994e21c9450c6": {
+      "code": "2884",
+      "from_turn_id": "sha256:023be0a46d8304b6fe87142f4f53630b1f9e0b48f5db2c2e13f4010f92131c79",
+      "to_turn_id": "sha256:440da42d6e4e8abdbe1d35e43c4f8b43b0f97829fd25f03cd8f6cf5343b57b73",
+      "path_start": "2026-09-17",
+      "path_end": "2026-09-30",
+      "known_on_saved_bar": "2026-10-01",
+      "close_low": "44.85",
+      "close_high": "47.30",
+      "direction": "DOWN",
+      "qualification": "COMPLETED_CLOSE_ENDPOINT_SPAN_NOT_INTRADAY_TRADE_PATH",
+      "leg_id": "sha256:4ddf0d8265d29b9ec7ae3477078508c3fe26c670216e95b2cc6994e21c9450c6"
+    },
+    "sha256:3bcde32bb96f793fa095f918ba62a9d33fdc7d185a1f0159ec71368ec23ec458": {
+      "code": "1101",
+      "from_turn_id": "sha256:2f7cf5b5cc739df084fb6a14b2096c64f5aa889823806849a05f95099b5e9b56",
+      "to_turn_id": "sha256:03aaff4fdc302386036561e168697b61e263672d585db67056fe1d18b9e8e696",
+      "path_start": "2025-04-09",
+      "path_end": "2025-04-10",
+      "known_on_saved_bar": "2025-04-11",
+      "close_low": "28.50",
+      "close_high": "30.75",
+      "direction": "UP",
+      "qualification": "COMPLETED_CLOSE_ENDPOINT_SPAN_NOT_INTRADAY_TRADE_PATH",
+      "leg_id": "sha256:3bcde32bb96f793fa095f918ba62a9d33fdc7d185a1f0159ec71368ec23ec458"
+    },
+    "sha256:9f9a45c348e82b6db9106b8d57571837fa37e54f7e40e469d45092ab10723a47": {
+      "code": "2884",
+      "from_turn_id": "sha256:cad9abe90ebf2e6647926404c1f9ebf52b6e6e8e3e5d6dccaad8edf6630d806b",
+      "to_turn_id": "sha256:a23d196106e3412c75e86a5303237b14096a4a4d11f1e2905c10606eae0540be",
+      "path_start": "2026-10-01",
+      "path_end": "2026-10-05",
+      "known_on_saved_bar": "2026-10-06",
+      "close_low": "44.80",
+      "close_high": "45.35",
+      "direction": "DOWN",
+      "qualification": "COMPLETED_CLOSE_ENDPOINT_SPAN_NOT_INTRADAY_TRADE_PATH",
+      "leg_id": "sha256:9f9a45c348e82b6db9106b8d57571837fa37e54f7e40e469d45092ab10723a47"
+    },
+    "sha256:3584b8c7a49aa5ea879ce519833a87dd45a0280d58a815da6d13209826af321b": {
+      "code": "1101",
+      "from_turn_id": "sha256:db95147932bafb0fa4008d37cc3abeaab3945581709c6f3b3eb8e7e14ad2df94",
+      "to_turn_id": "sha256:d1484b097320be423b0f4472a2cdc54b7c48f1afc6be568716d008ed3debc143",
+      "path_start": "2025-06-06",
+      "path_end": "2025-06-10",
+      "known_on_saved_bar": "2025-06-11",
+      "close_low": "27.15",
+      "close_high": "27.55",
+      "direction": "DOWN",
+      "qualification": "COMPLETED_CLOSE_ENDPOINT_SPAN_NOT_INTRADAY_TRADE_PATH",
+      "leg_id": "sha256:3584b8c7a49aa5ea879ce519833a87dd45a0280d58a815da6d13209826af321b"
+    },
+    "sha256:5b2576f8e7f6b9451d4980be810ddd517ea21caf9b6d72365a786aa7ee759d8e": {
+      "code": "2884",
+      "from_turn_id": "sha256:a23d196106e3412c75e86a5303237b14096a4a4d11f1e2905c10606eae0540be",
+      "to_turn_id": "sha256:b4969bcb4990b9d191e9443f54706256e2eb9dca08171387d969c67d9af52b21",
+      "path_start": "2026-10-05",
+      "path_end": "2026-10-07",
+      "known_on_saved_bar": "2026-10-08",
+      "close_low": "44.80",
+      "close_high": "45.75",
+      "direction": "UP",
+      "qualification": "COMPLETED_CLOSE_ENDPOINT_SPAN_NOT_INTRADAY_TRADE_PATH",
+      "leg_id": "sha256:5b2576f8e7f6b9451d4980be810ddd517ea21caf9b6d72365a786aa7ee759d8e"
+    },
+    "sha256:ee91c8038cfc582989bcb84d1f5438af61a72b8bb2dc9a873c4dfd9b350b25bd": {
+      "code": "1101",
+      "from_turn_id": "sha256:19bfbd106d9217c683198e2485c808d2527f35e5578cfdab1cfb473a12514ced",
+      "to_turn_id": "sha256:4037a764d240ffd0b8ec4f30bc2866d9120cd983d1dadbb62e76ec297d516ce8",
+      "path_start": "2025-05-19",
+      "path_end": "2025-05-21",
+      "known_on_saved_bar": "2025-05-22",
+      "close_low": "29.80",
+      "close_high": "30.30",
+      "direction": "UP",
+      "qualification": "COMPLETED_CLOSE_ENDPOINT_SPAN_NOT_INTRADAY_TRADE_PATH",
+      "leg_id": "sha256:ee91c8038cfc582989bcb84d1f5438af61a72b8bb2dc9a873c4dfd9b350b25bd"
+    },
+    "sha256:08974af8591e5d288e023e711915c04f6f89854113ed3bc33bf96e6fd4239176": {
+      "code": "1101",
+      "from_turn_id": "sha256:56ac2c17f71b1981b579ada5754f5ea051e69e1d624e1a0ead98b425e8d75b2a",
+      "to_turn_id": "sha256:b8ae5e22699995ef46966ef7abcfc900e8153dabe222ac4eb086fcc46a6ceee1",
+      "path_start": "2025-05-05",
+      "path_end": "2025-05-06",
+      "known_on_saved_bar": "2025-05-07",
+      "close_low": "30.55",
+      "close_high": "30.60",
+      "direction": "DOWN",
+      "qualification": "COMPLETED_CLOSE_ENDPOINT_SPAN_NOT_INTRADAY_TRADE_PATH",
+      "leg_id": "sha256:08974af8591e5d288e023e711915c04f6f89854113ed3bc33bf96e6fd4239176"
+    },
+    "sha256:bbba98414e45be97631dd446c0e9b492b44fc853d43659e008ae3bea410f97f8": {
+      "code": "1101",
+      "from_turn_id": "sha256:bbaaf6c028a17773054fcbe79d614d3f88b7c17fa633944ff168ff2430b8488e",
+      "to_turn_id": "sha256:56ac2c17f71b1981b579ada5754f5ea051e69e1d624e1a0ead98b425e8d75b2a",
+      "path_start": "2025-04-22",
+      "path_end": "2025-05-05",
+      "known_on_saved_bar": "2025-05-06",
+      "close_low": "28.60",
+      "close_high": "30.60",
+      "direction": "UP",
+      "qualification": "COMPLETED_CLOSE_ENDPOINT_SPAN_NOT_INTRADAY_TRADE_PATH",
+      "leg_id": "sha256:bbba98414e45be97631dd446c0e9b492b44fc853d43659e008ae3bea410f97f8"
+    },
+    "sha256:1a2345afefb72e754f630e56ec9788d5ff5e7ed9b1cd2be4c797538efb1e2459": {
+      "code": "1101",
+      "from_turn_id": "sha256:b8ae5e22699995ef46966ef7abcfc900e8153dabe222ac4eb086fcc46a6ceee1",
+      "to_turn_id": "sha256:d51e7b51d5be1020fb3064c1c8f655d1e19c38e79b1d56f02c8252159cdf6335",
+      "path_start": "2025-05-06",
+      "path_end": "2025-05-07",
+      "known_on_saved_bar": "2025-05-08",
+      "close_low": "30.55",
+      "close_high": "30.85",
+      "direction": "UP",
+      "qualification": "COMPLETED_CLOSE_ENDPOINT_SPAN_NOT_INTRADAY_TRADE_PATH",
+      "leg_id": "sha256:1a2345afefb72e754f630e56ec9788d5ff5e7ed9b1cd2be4c797538efb1e2459"
+    }
+  },
+  "turns": {
+    "sha256:03aaff4fdc302386036561e168697b61e263672d585db67056fe1d18b9e8e696": {
+      "code": "1101",
+      "kind": "HIGH",
+      "plateau_start": "2025-04-10",
+      "plateau_end": "2025-04-10",
+      "close": "30.75",
+      "left_evidence_date": "2025-04-09",
+      "known_on_saved_bar": "2025-04-11",
+      "qualification": "NEW_COMPLETED_CLOSE_TURN_NOT_ORIGINAL_PIVOT",
+      "turn_id": "sha256:03aaff4fdc302386036561e168697b61e263672d585db67056fe1d18b9e8e696"
+    },
+    "sha256:e0c7e6bf2f356adab385f25869278ed2e134e7f4b1878a4fe282690c979e9557": {
+      "code": "1101",
+      "kind": "HIGH",
+      "plateau_start": "2025-06-11",
+      "plateau_end": "2025-06-11",
+      "close": "27.30",
+      "left_evidence_date": "2025-06-10",
+      "known_on_saved_bar": "2025-06-12",
+      "qualification": "NEW_COMPLETED_CLOSE_TURN_NOT_ORIGINAL_PIVOT",
+      "turn_id": "sha256:e0c7e6bf2f356adab385f25869278ed2e134e7f4b1878a4fe282690c979e9557"
+    },
+    "sha256:d1484b097320be423b0f4472a2cdc54b7c48f1afc6be568716d008ed3debc143": {
+      "code": "1101",
+      "kind": "LOW",
+      "plateau_start": "2025-06-10",
+      "plateau_end": "2025-06-10",
+      "close": "27.15",
+      "left_evidence_date": "2025-06-09",
+      "known_on_saved_bar": "2025-06-11",
+      "qualification": "NEW_COMPLETED_CLOSE_TURN_NOT_ORIGINAL_PIVOT",
+      "turn_id": "sha256:d1484b097320be423b0f4472a2cdc54b7c48f1afc6be568716d008ed3debc143"
+    },
+    "sha256:4037a764d240ffd0b8ec4f30bc2866d9120cd983d1dadbb62e76ec297d516ce8": {
+      "code": "1101",
+      "kind": "HIGH",
+      "plateau_start": "2025-05-21",
+      "plateau_end": "2025-05-21",
+      "close": "30.30",
+      "left_evidence_date": "2025-05-20",
+      "known_on_saved_bar": "2025-05-22",
+      "qualification": "NEW_COMPLETED_CLOSE_TURN_NOT_ORIGINAL_PIVOT",
+      "turn_id": "sha256:4037a764d240ffd0b8ec4f30bc2866d9120cd983d1dadbb62e76ec297d516ce8"
+    },
+    "sha256:bbaaf6c028a17773054fcbe79d614d3f88b7c17fa633944ff168ff2430b8488e": {
+      "code": "1101",
+      "kind": "LOW",
+      "plateau_start": "2025-04-22",
+      "plateau_end": "2025-04-22",
+      "close": "28.60",
+      "left_evidence_date": "2025-04-21",
+      "known_on_saved_bar": "2025-04-23",
+      "qualification": "NEW_COMPLETED_CLOSE_TURN_NOT_ORIGINAL_PIVOT",
+      "turn_id": "sha256:bbaaf6c028a17773054fcbe79d614d3f88b7c17fa633944ff168ff2430b8488e"
+    },
+    "sha256:5e79fc3dce634dd91a36de32621b64893250695d2b68597f9555a636dff866b7": {
+      "code": "1101",
+      "kind": "LOW",
+      "plateau_start": "2025-05-08",
+      "plateau_end": "2025-05-08",
+      "close": "30.55",
+      "left_evidence_date": "2025-05-07",
+      "known_on_saved_bar": "2025-05-09",
+      "qualification": "NEW_COMPLETED_CLOSE_TURN_NOT_ORIGINAL_PIVOT",
+      "turn_id": "sha256:5e79fc3dce634dd91a36de32621b64893250695d2b68597f9555a636dff866b7"
+    },
+    "sha256:d51e7b51d5be1020fb3064c1c8f655d1e19c38e79b1d56f02c8252159cdf6335": {
+      "code": "1101",
+      "kind": "HIGH",
+      "plateau_start": "2025-05-07",
+      "plateau_end": "2025-05-07",
+      "close": "30.85",
+      "left_evidence_date": "2025-05-06",
+      "known_on_saved_bar": "2025-05-08",
+      "qualification": "NEW_COMPLETED_CLOSE_TURN_NOT_ORIGINAL_PIVOT",
+      "turn_id": "sha256:d51e7b51d5be1020fb3064c1c8f655d1e19c38e79b1d56f02c8252159cdf6335"
+    },
+    "sha256:023be0a46d8304b6fe87142f4f53630b1f9e0b48f5db2c2e13f4010f92131c79": {
+      "code": "2884",
+      "kind": "HIGH",
+      "plateau_start": "2026-09-17",
+      "plateau_end": "2026-09-17",
+      "close": "47.30",
+      "left_evidence_date": "2026-09-16",
+      "known_on_saved_bar": "2026-09-18",
+      "qualification": "NEW_COMPLETED_CLOSE_TURN_NOT_ORIGINAL_PIVOT",
+      "turn_id": "sha256:023be0a46d8304b6fe87142f4f53630b1f9e0b48f5db2c2e13f4010f92131c79"
+    },
+    "sha256:19bfbd106d9217c683198e2485c808d2527f35e5578cfdab1cfb473a12514ced": {
+      "code": "1101",
+      "kind": "LOW",
+      "plateau_start": "2025-05-19",
+      "plateau_end": "2025-05-19",
+      "close": "29.80",
+      "left_evidence_date": "2025-05-16",
+      "known_on_saved_bar": "2025-05-20",
+      "qualification": "NEW_COMPLETED_CLOSE_TURN_NOT_ORIGINAL_PIVOT",
+      "turn_id": "sha256:19bfbd106d9217c683198e2485c808d2527f35e5578cfdab1cfb473a12514ced"
+    },
+    "sha256:bb362e0be6fadb6d8ef418da252e1e873ce86c3bc1520df4579d1b805f06e6d7": {
+      "code": "1101",
+      "kind": "HIGH",
+      "plateau_start": "2025-05-12",
+      "plateau_end": "2025-05-12",
+      "close": "31.20",
+      "left_evidence_date": "2025-05-09",
+      "known_on_saved_bar": "2025-05-13",
+      "qualification": "NEW_COMPLETED_CLOSE_TURN_NOT_ORIGINAL_PIVOT",
+      "turn_id": "sha256:bb362e0be6fadb6d8ef418da252e1e873ce86c3bc1520df4579d1b805f06e6d7"
+    },
+    "sha256:cad9abe90ebf2e6647926404c1f9ebf52b6e6e8e3e5d6dccaad8edf6630d806b": {
+      "code": "2884",
+      "kind": "HIGH",
+      "plateau_start": "2026-10-01",
+      "plateau_end": "2026-10-02",
+      "close": "45.35",
+      "left_evidence_date": "2026-09-30",
+      "known_on_saved_bar": "2026-10-05",
+      "qualification": "NEW_COMPLETED_CLOSE_TURN_NOT_ORIGINAL_PIVOT",
+      "turn_id": "sha256:cad9abe90ebf2e6647926404c1f9ebf52b6e6e8e3e5d6dccaad8edf6630d806b"
+    },
+    "sha256:4d6b744812e1f8f95d07d0fe384b8f6da4a206bbf8353235ab4341945826bcf8": {
+      "code": "2884",
+      "kind": "LOW",
+      "plateau_start": "2026-09-15",
+      "plateau_end": "2026-09-15",
+      "close": "45.65",
+      "left_evidence_date": "2026-09-14",
+      "known_on_saved_bar": "2026-09-16",
+      "qualification": "NEW_COMPLETED_CLOSE_TURN_NOT_ORIGINAL_PIVOT",
+      "turn_id": "sha256:4d6b744812e1f8f95d07d0fe384b8f6da4a206bbf8353235ab4341945826bcf8"
+    },
+    "sha256:440da42d6e4e8abdbe1d35e43c4f8b43b0f97829fd25f03cd8f6cf5343b57b73": {
+      "code": "2884",
+      "kind": "LOW",
+      "plateau_start": "2026-09-30",
+      "plateau_end": "2026-09-30",
+      "close": "44.85",
+      "left_evidence_date": "2026-09-29",
+      "known_on_saved_bar": "2026-10-01",
+      "qualification": "NEW_COMPLETED_CLOSE_TURN_NOT_ORIGINAL_PIVOT",
+      "turn_id": "sha256:440da42d6e4e8abdbe1d35e43c4f8b43b0f97829fd25f03cd8f6cf5343b57b73"
+    },
+    "sha256:0377b75d18d670d7c5da2253213056a76e69d27b4f0200f30373c4c875e727ee": {
+      "code": "2884",
+      "kind": "LOW",
+      "plateau_start": "2026-10-08",
+      "plateau_end": "2026-10-08",
+      "close": "45.00",
+      "left_evidence_date": "2026-10-07",
+      "known_on_saved_bar": "2026-10-12",
+      "qualification": "NEW_COMPLETED_CLOSE_TURN_NOT_ORIGINAL_PIVOT",
+      "turn_id": "sha256:0377b75d18d670d7c5da2253213056a76e69d27b4f0200f30373c4c875e727ee"
+    },
+    "sha256:a23d196106e3412c75e86a5303237b14096a4a4d11f1e2905c10606eae0540be": {
+      "code": "2884",
+      "kind": "LOW",
+      "plateau_start": "2026-10-05",
+      "plateau_end": "2026-10-05",
+      "close": "44.80",
+      "left_evidence_date": "2026-10-02",
+      "known_on_saved_bar": "2026-10-06",
+      "qualification": "NEW_COMPLETED_CLOSE_TURN_NOT_ORIGINAL_PIVOT",
+      "turn_id": "sha256:a23d196106e3412c75e86a5303237b14096a4a4d11f1e2905c10606eae0540be"
+    },
+    "sha256:db95147932bafb0fa4008d37cc3abeaab3945581709c6f3b3eb8e7e14ad2df94": {
+      "code": "1101",
+      "kind": "HIGH",
+      "plateau_start": "2025-06-06",
+      "plateau_end": "2025-06-06",
+      "close": "27.55",
+      "left_evidence_date": "2025-06-05",
+      "known_on_saved_bar": "2025-06-09",
+      "qualification": "NEW_COMPLETED_CLOSE_TURN_NOT_ORIGINAL_PIVOT",
+      "turn_id": "sha256:db95147932bafb0fa4008d37cc3abeaab3945581709c6f3b3eb8e7e14ad2df94"
+    },
+    "sha256:56ac2c17f71b1981b579ada5754f5ea051e69e1d624e1a0ead98b425e8d75b2a": {
+      "code": "1101",
+      "kind": "HIGH",
+      "plateau_start": "2025-05-05",
+      "plateau_end": "2025-05-05",
+      "close": "30.60",
+      "left_evidence_date": "2025-05-02",
+      "known_on_saved_bar": "2025-05-06",
+      "qualification": "NEW_COMPLETED_CLOSE_TURN_NOT_ORIGINAL_PIVOT",
+      "turn_id": "sha256:56ac2c17f71b1981b579ada5754f5ea051e69e1d624e1a0ead98b425e8d75b2a"
+    },
+    "sha256:651a49a98418219d66bc74f7892ac7248618510d0a8adbf3ec466118ef9cbba7": {
+      "code": "1101",
+      "kind": "LOW",
+      "plateau_start": "2025-05-23",
+      "plateau_end": "2025-05-23",
+      "close": "29.75",
+      "left_evidence_date": "2025-05-22",
+      "known_on_saved_bar": "2025-05-26",
+      "qualification": "NEW_COMPLETED_CLOSE_TURN_NOT_ORIGINAL_PIVOT",
+      "turn_id": "sha256:651a49a98418219d66bc74f7892ac7248618510d0a8adbf3ec466118ef9cbba7"
+    },
+    "sha256:b8ae5e22699995ef46966ef7abcfc900e8153dabe222ac4eb086fcc46a6ceee1": {
+      "code": "1101",
+      "kind": "LOW",
+      "plateau_start": "2025-05-06",
+      "plateau_end": "2025-05-06",
+      "close": "30.55",
+      "left_evidence_date": "2025-05-05",
+      "known_on_saved_bar": "2025-05-07",
+      "qualification": "NEW_COMPLETED_CLOSE_TURN_NOT_ORIGINAL_PIVOT",
+      "turn_id": "sha256:b8ae5e22699995ef46966ef7abcfc900e8153dabe222ac4eb086fcc46a6ceee1"
+    },
+    "sha256:b4969bcb4990b9d191e9443f54706256e2eb9dca08171387d969c67d9af52b21": {
+      "code": "2884",
+      "kind": "HIGH",
+      "plateau_start": "2026-10-07",
+      "plateau_end": "2026-10-07",
+      "close": "45.75",
+      "left_evidence_date": "2026-10-06",
+      "known_on_saved_bar": "2026-10-08",
+      "qualification": "NEW_COMPLETED_CLOSE_TURN_NOT_ORIGINAL_PIVOT",
+      "turn_id": "sha256:b4969bcb4990b9d191e9443f54706256e2eb9dca08171387d969c67d9af52b21"
+    },
+    "sha256:2f7cf5b5cc739df084fb6a14b2096c64f5aa889823806849a05f95099b5e9b56": {
+      "code": "1101",
+      "kind": "LOW",
+      "plateau_start": "2025-04-09",
+      "plateau_end": "2025-04-09",
+      "close": "28.50",
+      "left_evidence_date": "2025-04-08",
+      "known_on_saved_bar": "2025-04-10",
+      "qualification": "NEW_COMPLETED_CLOSE_TURN_NOT_ORIGINAL_PIVOT",
+      "turn_id": "sha256:2f7cf5b5cc739df084fb6a14b2096c64f5aa889823806849a05f95099b5e9b56"
+    }
+  }
+}

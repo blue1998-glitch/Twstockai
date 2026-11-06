@@ -1,0 +1,13 @@
+<!doctype html><html lang="zh-Hant"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>M1 真實跨尺度比較 0.1</title><style>@@STYLE@@</style></head><body>
+<header><b>M1 真實跨尺度比較 0.1</b><span id="anchor"></span></header><main>
+<div class="toolbar" id="presets"><button data-mode="overview">跨尺度全景</button><button data-mode="major">主帶／拒絕串</button><button data-mode="previous">39筆／同幾何</button><button data-mode="recent">近期／反證</button></div>
+<div class="toolbar"><button id="all">約五年</button><button id="months24">24月</button><button id="return">返回近期</button><button id="left">←移圖</button><button id="right">移圖→</button><select id="interaction" aria-label="圖表操作"><option value="query">拖曳查詢</option><option value="pan">移圖／雙指縮放</option><option value="scroll">捲頁</option></select></div>
+<p class="compact">後來人工覆核對照，非當時已知訊號；固定分析日不隨移圖／查詢改變。色塊及外框是來源影線顯示範圍，非正式壓力界。</p>
+<div id="chartWrap"><div id="onChartLegend" aria-label="主圖比較圖例"></div><canvas id="chart" tabindex="0" aria-label="真實日K、成交量及MACD同步比較圖"></canvas><div id="panelZoom"><button id="zoomIn" aria-label="放大">＋</button><button id="zoomOut" aria-label="縮小">−</button></div></div>
+<p id="window" class="compact"></p><div id="readout"></div><div class="toolbar"><button id="queryPrev">查詢◀</button><select id="queryDate" aria-label="查詢真實交易日"></select><button id="queryNext">▶查詢</button><button id="download">下載精確JSON</button></div>
+<div id="layerList" aria-label="比較圖層"></div>
+<details id="timeline" open><summary>同一時間軸：來源、確認與研究離箱</summary><p class="compact">○末轉折　◆確認／判定　▼研究首次界外　■人工整箱終點。月份閱讀帶的精確端點未知。點色帶或時點可查詢，密集處可放大。</p><canvas id="lanes" aria-label="與K量MACD同步的來源及觀察日期"></canvas></details>
+<div class="toolbar"><label>證據 <select id="layerSelect" aria-label="證據圖層"></select></label><button id="focus">定位來源及時點</button><button id="sourceOnly">定位來源</button></div>
+<section id="evidence"><p id="evidenceTitle"></p><div id="evidenceBody"></div></section>
+<details><summary>來源、精度與未完成資格</summary><div id="sourceBody"></div><p>89個候選版本與84組精確來源幾何均非獨立型態數或準確率。人工月份主帶、39筆整體與自動箱仍有差異，primary_pressure_id=null。不同觀察長度不作公平重要性排序；同尺度前綴、跨尺度同幾何及局部串不等正式合併；廣義後來候選不等直接承接。正式區界、量口徑、增量、強度衰減、重要性、合併、直接承接、生命階段未知。</p><p>原Raw公司行動、五年Adjusted、歷史公布可得、資料缺口、Darvas正文與SQLite根因限制保留。五年高不是全史高，日OHLCV不代表精確分價或剩餘持股。Android NOT_TESTED_NEW_BUILD；file://政策未重試／未繞過。此圖不重新執行核心、計算MACD或回放歷史訊號。</p></details>
+</main><script id="payload" type="application/json">@@DATA@@</script><script>@@SCRIPT@@</script></body></html>

@@ -1,0 +1,114 @@
+{
+  "schema": "m1-exploratory-formation-execution/1",
+  "research_script_runs": 7,
+  "source_sha_unchanged": true,
+  "source_prefix_cutoff": "2026-10-07",
+  "source_prefix_records": 1207,
+  "window_scan": {
+    "total": 1195,
+    "excluded": 72,
+    "measured": 1123,
+    "diagnostic_candidates": 128
+  },
+  "positive_and_control_n13_overlap_equal_12_of_12": true,
+  "positive_and_control_n13_peak_coverage_equal_9_of_13": true,
+  "all_suffix_lengths_3_to_13_reported": true,
+  "control_selected_by_stated_sort": true,
+  "all_plot_rows_within_each_shown_cutoff": true,
+  "new_calculation": "READ_ONLY_RESEARCH_GEOMETRY_AND_CLOSE_PATH_FEATURES",
+  "engine_MA_MACD_pivot_box_recalculations": 0,
+  "classifier_tests": "NOT_RUN_NOT_IMPLEMENTED",
+  "new_PDF_pages": 3,
+  "PNG_previews": 3,
+  "PDF_render_visual_QA": "PASS_SAVED_MANUAL_QA_RECORD_HASHES_MATCH_CURRENT_PDF_AND_PREVIEWS_NOT_AN_AUTOMATIC_VISUAL_TEST",
+  "ABC39_new_low_and_user_interval_coexistence": "PASS_SOURCE_VALUES_AND_EXISTING_LABEL_ONLY",
+  "browser": "NOT_RUN",
+  "Android": "NOT_TESTED_NEW_BUILD",
+  "pages": [
+    {
+      "page": 1,
+      "panel": "A",
+      "display_start": "2026-05-04",
+      "display_end": "2026-10-07",
+      "display_records": 109,
+      "future_rows": 0
+    },
+    {
+      "page": 1,
+      "panel": "B",
+      "display_start": "2026-01-02",
+      "display_end": "2026-05-04",
+      "display_records": 76,
+      "future_rows": 0
+    },
+    {
+      "page": 2,
+      "detail_records_each": 13,
+      "suffix_lengths": [
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11,
+        12,
+        13
+      ],
+      "future_rows": 0
+    },
+    {
+      "page": 3,
+      "panel": "context",
+      "display_start": "2023-01-03",
+      "display_end": "2025-06-02",
+      "display_records": 577,
+      "future_rows": 0
+    },
+    {
+      "page": 3,
+      "panel": "ABC39",
+      "display_start": "2025-04-07",
+      "display_end": "2025-06-02",
+      "display_records": 39,
+      "future_rows": 0
+    }
+  ],
+  "source_limitations": {
+    "actions_coverage": "UNVERIFIED_NO_NEW_ACTION_AUTHENTICATION",
+    "calendar_status": "PLANNED_PLUS_REVIEWED_EXCEPTIONS_ONLY_NOT_EXHAUSTIVE",
+    "historical_publication_timing": "UNVERIFIED",
+    "known_calendar_missing_dates": [
+      "2022-01-27",
+      "2022-01-28",
+      "2023-08-03",
+      "2024-07-24",
+      "2024-07-25",
+      "2024-10-02",
+      "2024-10-03",
+      "2024-10-31",
+      "2025-11-05"
+    ]
+  },
+  "primary_pressure_id": null,
+  "historical_signal_eligible": false,
+  "independent_arithmetic_crosscheck": {
+    "method": "Sweep-line range coverage; separate up/down-close sums; extreme-date and location checks against original bars.",
+    "profile_records_checked": 24,
+    "result": "PASS"
+  },
+  "ranked_control_and_original_source_membership": "PASS",
+  "PDF_structure": {
+    "pages": 3,
+    "page_points": [
+      1224,
+      864
+    ],
+    "result": "PASS"
+  },
+  "preview_first_page_label_collision": "FIXED_WITH_EXPLICIT_GROUP_SPACER",
+  "PDF_write_failure": "POPPLER_INVALID_XREF_OBSERVED; reproduced after sequential execution, so concurrency root cause NOT_ESTABLISHED. Final PDF completed in BytesIO then written once; byte equality, pypdf and Poppler verified.",
+  "run_count_note": "7 research.py invocations: first layout, label/layout revision, added extreme/location features, sequential rebuild, added ABC39 boundary case, in-memory PDF completion and single write, final multi-year date labels. Original core/indicator computations never invoked."
+}

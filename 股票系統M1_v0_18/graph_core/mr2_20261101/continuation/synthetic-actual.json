@@ -1,0 +1,298 @@
+{
+  "kind": "SYNTHETIC_ONLY_NOT_MARKET_PERFORMANCE",
+  "cases": [
+    {
+      "id": "immature",
+      "expected_status": "IMMATURE",
+      "actual": {
+        "event_key": "sha256:f9f705eb1042fe966eceb37dc993bfd81f151d814dab4b832a802ccbe95ee70b",
+        "evaluated_at": "2020-01-30",
+        "status": "IMMATURE",
+        "maturity": "IMMATURE",
+        "known_failure": false,
+        "original_failure_events": [],
+        "window_dates": [
+          "2020-01-31",
+          "2020-02-01",
+          "2020-02-02"
+        ],
+        "window_source": "SYNTHETIC-EXPLICIT-THREE-RECORD-TEST-WINDOW-NOT-STRATEGY",
+        "definition": "EXISTING_CORE_BOX_FAILURE_FACTS_ONLY_NOT_TRADING_SUCCESS",
+        "in_window_failure_events": [],
+        "reason": "OBSERVATION_WINDOW_NOT_COMPLETE"
+      },
+      "matched": true
+    },
+    {
+      "id": "early-failure",
+      "expected_status": "KNOWN_EARLY_FAILURE",
+      "actual": {
+        "event_key": "sha256:f9f705eb1042fe966eceb37dc993bfd81f151d814dab4b832a802ccbe95ee70b",
+        "evaluated_at": "2020-02-01",
+        "status": "KNOWN_EARLY_FAILURE",
+        "maturity": "IMMATURE",
+        "known_failure": true,
+        "original_failure_events": [
+          {
+            "type": "FAILED_UP_RETURN_IN_RANGE",
+            "date": "2020-02-01",
+            "first_observed_at": "2020-02-01",
+            "previous": "ABOVE",
+            "location": "INSIDE",
+            "close": "108",
+            "bounds_id": "sha256:56eead5cbcec1c19e635745d7a0dc6b36f1b19351ac1f3005a0aa92e6b49923f",
+            "volume": {
+              "current_shares": "131",
+              "ratio_to_previous_means": {
+                "1": "1.0076923076923076923076923076923076923076923076923",
+                "5": "1.0234375",
+                "20": "1.0871369294605809128630705394190871369294605809129"
+              },
+              "baseline_includes_current": false,
+              "qualification": "DESCRIPTIVE_1_5_20_RECORD_COMPARISONS_NOT_VOLUME_EXPANSION_OR_SETTLEMENT_RULE"
+            }
+          }
+        ],
+        "window_dates": [
+          "2020-01-31",
+          "2020-02-01",
+          "2020-02-02"
+        ],
+        "window_source": "SYNTHETIC-EXPLICIT-THREE-RECORD-TEST-WINDOW-NOT-STRATEGY",
+        "definition": "EXISTING_CORE_BOX_FAILURE_FACTS_ONLY_NOT_TRADING_SUCCESS",
+        "in_window_failure_events": [
+          {
+            "type": "FAILED_UP_RETURN_IN_RANGE",
+            "date": "2020-02-01",
+            "first_observed_at": "2020-02-01",
+            "previous": "ABOVE",
+            "location": "INSIDE",
+            "close": "108",
+            "bounds_id": "sha256:56eead5cbcec1c19e635745d7a0dc6b36f1b19351ac1f3005a0aa92e6b49923f",
+            "volume": {
+              "current_shares": "131",
+              "ratio_to_previous_means": {
+                "1": "1.0076923076923076923076923076923076923076923076923",
+                "5": "1.0234375",
+                "20": "1.0871369294605809128630705394190871369294605809129"
+              },
+              "baseline_includes_current": false,
+              "qualification": "DESCRIPTIVE_1_5_20_RECORD_COMPARISONS_NOT_VOLUME_EXPANSION_OR_SETTLEMENT_RULE"
+            }
+          }
+        ],
+        "reason": "ORIGINAL_CORE_FAILURE_OBSERVED_NO_INFERRED_FILL"
+      },
+      "matched": true
+    },
+    {
+      "id": "complete-failure",
+      "expected_status": "FAILURE_IN_COMPLETE_WINDOW",
+      "actual": {
+        "event_key": "sha256:f9f705eb1042fe966eceb37dc993bfd81f151d814dab4b832a802ccbe95ee70b",
+        "evaluated_at": "2020-02-02",
+        "status": "FAILURE_IN_COMPLETE_WINDOW",
+        "maturity": "COMPLETE_SUPPLIED_RESEARCH_WINDOW",
+        "known_failure": true,
+        "original_failure_events": [
+          {
+            "type": "FAILED_UP_RETURN_IN_RANGE",
+            "date": "2020-02-01",
+            "first_observed_at": "2020-02-01",
+            "previous": "ABOVE",
+            "location": "INSIDE",
+            "close": "108",
+            "bounds_id": "sha256:56eead5cbcec1c19e635745d7a0dc6b36f1b19351ac1f3005a0aa92e6b49923f",
+            "volume": {
+              "current_shares": "131",
+              "ratio_to_previous_means": {
+                "1": "1.0076923076923076923076923076923076923076923076923",
+                "5": "1.0234375",
+                "20": "1.0871369294605809128630705394190871369294605809129"
+              },
+              "baseline_includes_current": false,
+              "qualification": "DESCRIPTIVE_1_5_20_RECORD_COMPARISONS_NOT_VOLUME_EXPANSION_OR_SETTLEMENT_RULE"
+            }
+          }
+        ],
+        "window_dates": [
+          "2020-01-31",
+          "2020-02-01",
+          "2020-02-02"
+        ],
+        "window_source": "SYNTHETIC-EXPLICIT-THREE-RECORD-TEST-WINDOW-NOT-STRATEGY",
+        "definition": "EXISTING_CORE_BOX_FAILURE_FACTS_ONLY_NOT_TRADING_SUCCESS",
+        "in_window_failure_events": [
+          {
+            "type": "FAILED_UP_RETURN_IN_RANGE",
+            "date": "2020-02-01",
+            "first_observed_at": "2020-02-01",
+            "previous": "ABOVE",
+            "location": "INSIDE",
+            "close": "108",
+            "bounds_id": "sha256:56eead5cbcec1c19e635745d7a0dc6b36f1b19351ac1f3005a0aa92e6b49923f",
+            "volume": {
+              "current_shares": "131",
+              "ratio_to_previous_means": {
+                "1": "1.0076923076923076923076923076923076923076923076923",
+                "5": "1.0234375",
+                "20": "1.0871369294605809128630705394190871369294605809129"
+              },
+              "baseline_includes_current": false,
+              "qualification": "DESCRIPTIVE_1_5_20_RECORD_COMPARISONS_NOT_VOLUME_EXPANSION_OR_SETTLEMENT_RULE"
+            }
+          }
+        ],
+        "reason": "ORIGINAL_CORE_FAILURE_OBSERVED_NO_INFERRED_FILL"
+      },
+      "matched": true
+    },
+    {
+      "id": "complete-no-failure",
+      "expected_status": "NO_FAILURE_IN_COMPLETE_WINDOW",
+      "actual": {
+        "event_key": "sha256:f9f705eb1042fe966eceb37dc993bfd81f151d814dab4b832a802ccbe95ee70b",
+        "evaluated_at": "2020-02-02",
+        "status": "NO_FAILURE_IN_COMPLETE_WINDOW",
+        "maturity": "COMPLETE_SUPPLIED_RESEARCH_WINDOW",
+        "known_failure": false,
+        "original_failure_events": [],
+        "window_dates": [
+          "2020-01-31",
+          "2020-02-01",
+          "2020-02-02"
+        ],
+        "window_source": "SYNTHETIC-EXPLICIT-THREE-RECORD-TEST-WINDOW-NOT-STRATEGY",
+        "definition": "EXISTING_CORE_BOX_FAILURE_FACTS_ONLY_NOT_TRADING_SUCCESS",
+        "in_window_failure_events": [],
+        "reason": "NO_FAILURE_OBSERVED_NOT_SUCCESS_OR_RETURN"
+      },
+      "matched": true
+    },
+    {
+      "id": "missing-price",
+      "expected_status": "UNKNOWN",
+      "actual": {
+        "event_key": "sha256:f9f705eb1042fe966eceb37dc993bfd81f151d814dab4b832a802ccbe95ee70b",
+        "evaluated_at": "2020-02-02",
+        "status": "UNKNOWN",
+        "maturity": "UNKNOWN",
+        "known_failure": false,
+        "original_failure_events": [],
+        "window_dates": null,
+        "window_source": null,
+        "definition": "EXISTING_CORE_BOX_FAILURE_FACTS_ONLY_NOT_TRADING_SUCCESS",
+        "reason": "NOT_COMPARABLE_AFTER_DATA_OR_BASIS_GAP"
+      },
+      "matched": true
+    },
+    {
+      "id": "missing-session",
+      "expected_status": "UNKNOWN",
+      "actual": {
+        "event_key": "sha256:f9f705eb1042fe966eceb37dc993bfd81f151d814dab4b832a802ccbe95ee70b",
+        "evaluated_at": "2020-02-02",
+        "status": "UNKNOWN",
+        "maturity": "UNKNOWN",
+        "known_failure": false,
+        "original_failure_events": [],
+        "window_dates": null,
+        "window_source": null,
+        "definition": "EXISTING_CORE_BOX_FAILURE_FACTS_ONLY_NOT_TRADING_SUCCESS",
+        "reason": "NOT_COMPARABLE_AFTER_DATA_OR_BASIS_GAP"
+      },
+      "matched": true
+    },
+    {
+      "id": "basis-break",
+      "expected_status": "UNKNOWN",
+      "actual": {
+        "event_key": "sha256:f9f705eb1042fe966eceb37dc993bfd81f151d814dab4b832a802ccbe95ee70b",
+        "evaluated_at": "2020-02-02",
+        "status": "UNKNOWN",
+        "maturity": "UNKNOWN",
+        "known_failure": false,
+        "original_failure_events": [],
+        "window_dates": null,
+        "window_source": null,
+        "definition": "EXISTING_CORE_BOX_FAILURE_FACTS_ONLY_NOT_TRADING_SUCCESS",
+        "reason": "NOT_COMPARABLE_AFTER_DATA_OR_BASIS_GAP"
+      },
+      "matched": true
+    },
+    {
+      "id": "failure-then-break",
+      "expected_status": "UNKNOWN",
+      "actual": {
+        "event_key": "sha256:f9f705eb1042fe966eceb37dc993bfd81f151d814dab4b832a802ccbe95ee70b",
+        "evaluated_at": "2020-02-02",
+        "status": "UNKNOWN",
+        "maturity": "UNKNOWN",
+        "known_failure": true,
+        "original_failure_events": [
+          {
+            "type": "FAILED_UP_RETURN_IN_RANGE",
+            "date": "2020-02-01",
+            "first_observed_at": "2020-02-01",
+            "previous": "ABOVE",
+            "location": "INSIDE",
+            "close": "108",
+            "bounds_id": "sha256:56eead5cbcec1c19e635745d7a0dc6b36f1b19351ac1f3005a0aa92e6b49923f",
+            "volume": {
+              "current_shares": "131",
+              "ratio_to_previous_means": {
+                "1": "1.0076923076923076923076923076923076923076923076923",
+                "5": "1.0234375",
+                "20": "1.0871369294605809128630705394190871369294605809129"
+              },
+              "baseline_includes_current": false,
+              "qualification": "DESCRIPTIVE_1_5_20_RECORD_COMPARISONS_NOT_VOLUME_EXPANSION_OR_SETTLEMENT_RULE"
+            }
+          }
+        ],
+        "window_dates": null,
+        "window_source": null,
+        "definition": "EXISTING_CORE_BOX_FAILURE_FACTS_ONLY_NOT_TRADING_SUCCESS",
+        "reason": "NOT_COMPARABLE_AFTER_DATA_OR_BASIS_GAP"
+      },
+      "matched": true
+    },
+    {
+      "id": "failure-without-window",
+      "expected_status": "UNKNOWN",
+      "actual": {
+        "event_key": "sha256:f9f705eb1042fe966eceb37dc993bfd81f151d814dab4b832a802ccbe95ee70b",
+        "evaluated_at": "2020-02-01",
+        "status": "UNKNOWN",
+        "maturity": "UNKNOWN",
+        "known_failure": true,
+        "original_failure_events": [
+          {
+            "type": "FAILED_UP_RETURN_IN_RANGE",
+            "date": "2020-02-01",
+            "first_observed_at": "2020-02-01",
+            "previous": "ABOVE",
+            "location": "INSIDE",
+            "close": "108",
+            "bounds_id": "sha256:56eead5cbcec1c19e635745d7a0dc6b36f1b19351ac1f3005a0aa92e6b49923f",
+            "volume": {
+              "current_shares": "131",
+              "ratio_to_previous_means": {
+                "1": "1.0076923076923076923076923076923076923076923076923",
+                "5": "1.0234375",
+                "20": "1.0871369294605809128630705394190871369294605809129"
+              },
+              "baseline_includes_current": false,
+              "qualification": "DESCRIPTIVE_1_5_20_RECORD_COMPARISONS_NOT_VOLUME_EXPANSION_OR_SETTLEMENT_RULE"
+            }
+          }
+        ],
+        "window_dates": null,
+        "window_source": null,
+        "definition": "EXISTING_CORE_BOX_FAILURE_FACTS_ONLY_NOT_TRADING_SUCCESS",
+        "reason": "KNOWN_FAILURE_WITH_UNSPECIFIED_WINDOW"
+      },
+      "matched": true
+    }
+  ]
+}

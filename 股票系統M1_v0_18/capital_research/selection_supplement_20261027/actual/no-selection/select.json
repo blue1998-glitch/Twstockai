@@ -1,0 +1,37 @@
+{
+  "schema": "capital-selection-supplement-receipt/0.1",
+  "mode": "SELECT",
+  "supplement_id": "supp-no-selection",
+  "workflow_status": "INPUT_REFUSED",
+  "reasons": [
+    "EXPLICIT_SELECTION_AND_RECORD_TIME_REQUIRED"
+  ],
+  "failed_stage": "input",
+  "keys": {
+    "request": "supp-no-selection--request",
+    "choice": "supp-no-selection--choice",
+    "result": "supp-no-selection--result"
+  },
+  "parent_binding": null,
+  "storage": {
+    "request": "NOT_PERFORMED",
+    "choice": "NOT_PERFORMED",
+    "result": "NOT_PERFORMED"
+  },
+  "observed": {
+    "choice_status": null,
+    "check_status": null
+  },
+  "supplement": null,
+  "saved_files_preserved": true,
+  "generation": "NOT_PERFORMED_REUSED_SAVED_PARENT",
+  "order_generation": "NOT_PERFORMED",
+  "execution": "NOT_PERFORMED",
+  "execution_authorized": false,
+  "primary_pressure_id": null,
+  "data_qualified": false,
+  "execution_model_qualified": false,
+  "historical_signal_eligible": false,
+  "policy_authorized": false,
+  "live_execution_authorized": false
+}

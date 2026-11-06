@@ -1,0 +1,79 @@
+{
+  "status": "PASS_ONE_UPLOADED_EXPORT_PARSED_VALUE_EQUALITY",
+  "comparison_scope": "Full parsed JSON equals exact pinned release producer selection; not byte serialization equality; not independent OHLCV or indicator recomputation",
+  "source_commit": "3942950f95f4fe9c8dc81e6dbc3a928be08fb59d",
+  "product_baseline": "b9c38d6fbd56257f41e28657cf5fd6bd88e1ad3b",
+  "html_sha256": "0b66a00c7b72c559973fd37011fee5a39b5ab933d04fc2bcc9347748ec65e430",
+  "upload": {
+    "filename": "M1_1101_RAW_CANDIDATE_2026-10-16.json",
+    "bytes": 1173373,
+    "sha256": "1718fd0fd66f3abb6bbacfb73e802235bbd647976aeb903ea8b0ea757daedde3",
+    "canonical_sha256": "5968c14ed1593af9177b3aae0e3eff59e32be008dd1862393591603978558351"
+  },
+  "screenshot": {
+    "filename": "01-Screenshot_20261018-140856.png",
+    "bytes": 164855,
+    "sha256": "f2ab553cd258e79f872583f6ef3a10a5fd6438a0b858672fe08bb349ef4fd917"
+  },
+  "schema": "pressure-chart-selection/0.1",
+  "as_of": "2026-10-16",
+  "series_key": "sha256:8ac1c3e871ff175c7012ec72d3cc70791eb15f336cdeeb08825c894f95c80967",
+  "source_id": "sha256:adea7f78a97d18b6b51fbba103e08c0db33dc6fb1eb613b960b0aabe213b534b",
+  "bars": 1213,
+  "first": {
+    "close": "49.80",
+    "date": "2021-10-18",
+    "high": "50.20",
+    "low": "49.80",
+    "open": "50.10",
+    "volume_shares_scaled": "8919494"
+  },
+  "last": {
+    "close": "27.30",
+    "date": "2026-10-16",
+    "high": "27.70",
+    "low": "26.95",
+    "open": "27.10",
+    "volume_shares_scaled": "57437884"
+  },
+  "macd_rows": 1213,
+  "moving_average_rows": {
+    "5": 1213,
+    "20": 1213,
+    "60": 1213,
+    "130": 1213,
+    "260": 1213
+  },
+  "highest_raw_bar": {
+    "close": "49.80",
+    "date": "2021-10-18",
+    "high": "50.20",
+    "low": "49.80",
+    "open": "50.10",
+    "volume_shares_scaled": "8919494"
+  },
+  "highest_daily_volume_bar": {
+    "close": "24.40",
+    "date": "2026-08-31",
+    "high": "24.45",
+    "low": "24.05",
+    "open": "24.30",
+    "volume_shares_scaled": "557094159"
+  },
+  "all_exported_bars_not_after_analysis_date": true,
+  "saved_analysis_null": true,
+  "retrospective_review_null": true,
+  "retrospective_followup_present": true,
+  "android_overall": "PARTIAL_EVIDENCE_OBSERVED",
+  "not_tested": [
+    "rotation",
+    "gesture interactions",
+    "zoom button interactions",
+    "return recent",
+    "source locate/evidence interactions",
+    "stock/basis switch",
+    "historical replay leakage across other dates",
+    "performance",
+    "core analysis acceptance"
+  ]
+}

@@ -1,0 +1,28 @@
+{
+  "all_complete_outputs_equal_original_actual": true,
+  "caller_and_input_unchanged": true,
+  "original_capital": "1430",
+  "general_reserve": "100",
+  "order_id": "r1-B",
+  "original_and_remaining_quantity": "20",
+  "family": "C",
+  "trigger_ids": [
+    "B-event"
+  ],
+  "new_evidence_tokens": [],
+  "retry_attempts": [
+    "REJECTED",
+    "ACCEPTED"
+  ],
+  "retry_final_cash": "275.100",
+  "retry_final_shares": {
+    "A": "60",
+    "B": "25",
+    "C": "2"
+  },
+  "partial_fill": "7",
+  "partial_remaining": "13",
+  "review_partial_status": "CANCELLED_EVIDENCE",
+  "retry_partial_status": "EXPIRED_UNFILLED",
+  "policy": "Two independent outer scopes; retry fix requires after-review-only countercheck"
+}

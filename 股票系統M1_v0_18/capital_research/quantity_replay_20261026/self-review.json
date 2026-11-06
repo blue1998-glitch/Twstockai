@@ -1,0 +1,161 @@
+{
+  "schema": "quantity-replay-self-review/0.1",
+  "reviewer": "original_unique_Codex",
+  "reviewed_at": "2026-10-26T13:22:17.732839+00:00",
+  "all_checks_passed": true,
+  "final_cases": 18,
+  "unique_test_methods": 15,
+  "case_results": [
+    {
+      "case": "partial-then-independent",
+      "status": "COMPLETED_PROVIDED_ROUNDS",
+      "execution_calls": 2,
+      "successful_rounds": 2
+    },
+    {
+      "case": "settled-not-reapproved",
+      "status": "COMPLETED_PROVIDED_ROUNDS",
+      "execution_calls": 1,
+      "successful_rounds": 1
+    },
+    {
+      "case": "wait-then-new-review",
+      "status": "COMPLETED_PROVIDED_ROUNDS",
+      "execution_calls": 2,
+      "successful_rounds": 2
+    },
+    {
+      "case": "old-trigger-blocked",
+      "status": "STOPPED_CANDIDATE_GATE",
+      "execution_calls": 1,
+      "successful_rounds": 1
+    },
+    {
+      "case": "false-first-blocked",
+      "status": "STOPPED_CANDIDATE_GATE",
+      "execution_calls": 1,
+      "successful_rounds": 1
+    },
+    {
+      "case": "shared-bar-blocked",
+      "status": "STOPPED_CANDIDATE_GATE",
+      "execution_calls": 1,
+      "successful_rounds": 1
+    },
+    {
+      "case": "limit-up-unfilled",
+      "status": "COMPLETED_PROVIDED_ROUNDS",
+      "execution_calls": 1,
+      "successful_rounds": 1
+    },
+    {
+      "case": "unsold-A-joint-risk",
+      "status": "COMPLETED_PROVIDED_ROUNDS",
+      "execution_calls": 1,
+      "successful_rounds": 1
+    },
+    {
+      "case": "embedded-review-refused",
+      "status": "STOPPED_INPUT_ERROR",
+      "execution_calls": 0,
+      "successful_rounds": 0
+    },
+    {
+      "case": "opening-payable-unsupported",
+      "status": "STOPPED_NOT_IMPLEMENTED",
+      "execution_calls": 1,
+      "successful_rounds": 1
+    },
+    {
+      "case": "close-not-yet-known",
+      "status": "STOPPED_INPUT_ERROR",
+      "execution_calls": 1,
+      "successful_rounds": 1
+    },
+    {
+      "case": "account-reset-refused",
+      "status": "STOPPED_INPUT_ERROR",
+      "execution_calls": 1,
+      "successful_rounds": 1
+    },
+    {
+      "case": "prefix-only",
+      "status": "COMPLETED_PROVIDED_ROUNDS",
+      "execution_calls": 1,
+      "successful_rounds": 1
+    },
+    {
+      "case": "future-A-wins",
+      "status": "COMPLETED_PROVIDED_ROUNDS",
+      "execution_calls": 1,
+      "successful_rounds": 1
+    },
+    {
+      "case": "future-B-wins",
+      "status": "COMPLETED_PROVIDED_ROUNDS",
+      "execution_calls": 1,
+      "successful_rounds": 1
+    },
+    {
+      "case": "future-both-fall",
+      "status": "COMPLETED_PROVIDED_ROUNDS",
+      "execution_calls": 1,
+      "successful_rounds": 1
+    },
+    {
+      "case": "outer-gate-before-execution",
+      "status": "STOPPED_CANDIDATE_GATE",
+      "execution_calls": 0,
+      "successful_rounds": 0
+    },
+    {
+      "case": "outer-only-gate-control",
+      "status": "STOPPED_CANDIDATE_GATE",
+      "execution_calls": 0,
+      "successful_rounds": 0
+    }
+  ],
+  "manual_conservation_evidence": [
+    {
+      "case": "partial-then-independent",
+      "origin_initial_capital": "2230",
+      "terminal_accrual_nav": "2225.64",
+      "fee_tax": "4",
+      "slippage": "0.360",
+      "manual_conservation": true,
+      "note": "Independent artifact reconciliation only; no production accounting or return formula added"
+    },
+    {
+      "case": "wait-then-new-review",
+      "origin_initial_capital": "1330",
+      "terminal_accrual_nav": "1325.48",
+      "fee_tax": "4",
+      "slippage": "0.520",
+      "manual_conservation": true,
+      "note": "Independent artifact reconciliation only; no production accounting or return formula added"
+    }
+  ],
+  "exact_gated_decision_execution_identity": true,
+  "original_account_latest_rights_reserve_and_tokens": true,
+  "explicit_orders_preserved_not_generated": true,
+  "input_oracles_unchanged": true,
+  "final_production_bridge_unchanged_between_17_cases_and_control": true,
+  "source_snapshots_verified": true,
+  "extra_review_items": [
+    "outer gate before executor",
+    "conditional cash is not reauthorization",
+    "partial fills and rights through original account",
+    "actual and possible-fill joint risk when A cannot sell",
+    "pending payables remain unsupported",
+    "daily-close availability guard",
+    "stopped reviews retained but no resume-past-rejection API",
+    "numeric prefix separated from full-origin integrity"
+  ],
+  "limits": [
+    "explicit selections/orders only, no automatic strategy",
+    "same-interval conditional-order reassessment not connected",
+    "external order/credit/opening-payable capabilities not expanded",
+    "no source certification or market result"
+  ],
+  "next_step": "可留在Codex繼續：僅接本回放已有合法條件單的中途重評與完整閘門，原引擎已有契約；不擴外部既有單或制定比例門檻"
+}

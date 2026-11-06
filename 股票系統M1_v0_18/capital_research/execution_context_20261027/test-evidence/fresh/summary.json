@@ -1,0 +1,42 @@
+[
+  {
+    "case": "initial",
+    "actual_id": "sha256:5faa7603c3d4bbf1020ab744fe48aeb1657ec4a255a54393ebb663df9ca7a2ba",
+    "result_id": "sha256:8d9df123a161b3fe69fcfab0993df813b64ee0e278823e0f8259286f9db2f8d9",
+    "equal_original_execution": true,
+    "input_unchanged": true,
+    "caller_unchanged": true,
+    "DefaultContext_unchanged": true,
+    "calls": {
+      "simulate": 1,
+      "decide": 1,
+      "resume": 0,
+      "ledger_replay": 11,
+      "risk": 4,
+      "replay_sequence": 0,
+      "generate": 0,
+      "save": 0
+    },
+    "guard": "ONE_DIRECT_SYNTHETIC_SIMULATE_NO_QUANTITY_PRODUCER_NO_WRITE_NO_NETWORK"
+  },
+  {
+    "case": "continuation",
+    "actual_id": "sha256:2ff6a94eea86fe7221e6bdf7b6bc42e1d4f636c79a05ec912d47d753f541b5fb",
+    "result_id": "sha256:a6b77d09ca32baadab8354524077d4a908d528aa5082befab730f9ba9b3096c8",
+    "equal_original_execution": true,
+    "input_unchanged": true,
+    "caller_unchanged": true,
+    "DefaultContext_unchanged": true,
+    "calls": {
+      "simulate": 1,
+      "decide": 0,
+      "resume": 1,
+      "ledger_replay": 12,
+      "risk": 4,
+      "replay_sequence": 0,
+      "generate": 0,
+      "save": 0
+    },
+    "guard": "ONE_DIRECT_SYNTHETIC_SIMULATE_NO_QUANTITY_PRODUCER_NO_WRITE_NO_NETWORK"
+  }
+]

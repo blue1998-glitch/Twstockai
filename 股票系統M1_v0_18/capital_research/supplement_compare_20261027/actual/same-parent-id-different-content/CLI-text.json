@@ -1,0 +1,26 @@
+{
+  "exit_code": 2,
+  "stdout": "同父補選意圖並列（合成，只讀，不排名）\n共同條件狀態：REFUSED\n拒比原因：[{\"reason\": \"COMMON_CONDITIONS_MISMATCH\"}]\n共同條件差異：[{\"reference_label\": \"一般\", \"label\": \"另一原件\", \"path\": \"/parent_binding/parent_header_id\", \"left\": \"sha256:9b7c3c8bbd7487e9eac97d18fe1a4208eeb4afbc745b6a527a9aac4a3cf584e8\", \"right\": \"sha256:654e7ea53a2e36ff2175a3c62f967305be42ec28615683fd54bda261ad07e863\"}, {\"reference_label\": \"一般\", \"label\": \"另一原件\", \"path\": \"/parent_binding/parent_request_id\", \"left\": \"sha256:45da9caa2dae3ec1925da12fd4863b7e6c7a676cbc726dae4967d5e023b991be\", \"right\": \"sha256:09a87e104c1a21bfe55b7f457883f5100bb8f866a24b0abe3d2f56b7822928d8\"}, {\"reference_label\": \"一般\", \"label\": \"另一原件\", \"path\": \"/parent_binding/parent_result_id\", \"left\": \"sha256:b426b70347924c87074c2a9be86e9580cd9b8e6c2ee51269e86ab49243a85b56\", \"right\": \"sha256:17b4f3a314359a51bb96bbc8acbf2029966cc99fff82629256a311bdfd7dca7a\"}]\n未提供相符並列；不補資料、不重算或改選。\n",
+  "stderr": "",
+  "original_READ_trace": [
+    {
+      "status": "READ_ONLY",
+      "supplement_id": "supp-general",
+      "parent_id": "demo-no-selection",
+      "parent_result_id": "sha256:b426b70347924c87074c2a9be86e9580cd9b8e6c2ee51269e86ab49243a85b56",
+      "generation_id": "sha256:c5e6483eb0180f5b948ff0f730be8c844d196b59bbf2d35cd2245223dee04897",
+      "account_id": "sha256:8ba782b921772678f8be492480ccc08d8c8b5e85bdde3c4fea55cc4a2f5aca6d",
+      "data_cutoff": "2026-01-12T16:00:00+08:00"
+    },
+    {
+      "status": "READ_ONLY",
+      "supplement_id": "supp-conditional",
+      "parent_id": "demo-no-selection",
+      "parent_result_id": "sha256:17b4f3a314359a51bb96bbc8acbf2029966cc99fff82629256a311bdfd7dca7a",
+      "generation_id": "sha256:c5e6483eb0180f5b948ff0f730be8c844d196b59bbf2d35cd2245223dee04897",
+      "account_id": "sha256:8ba782b921772678f8be492480ccc08d8c8b5e85bdde3c4fea55cc4a2f5aca6d",
+      "data_cutoff": "2026-01-12T16:00:00+08:00"
+    }
+  ],
+  "guard": "FRESH_NO_ENGINE_NO_GENERATION_NO_SELECTION_NO_SOURCE_VERDICT_NO_SAVE_NO_WRITE_NO_NETWORK"
+}

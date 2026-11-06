@@ -1,0 +1,61 @@
+{
+  "schema": "lite1-performance/0.1",
+  "method": "Same Cloud Chromium390x844, fresh browser contexts/cache, loopback only and already validated owner catalogue; one original load, one current load. Not Android/network SLA. Peak heap sampled250ms; not OS RSS.",
+  "original": {
+    "version": "original",
+    "status": "LOADED",
+    "wait_ms": 7102,
+    "transfer_bytes": 347276580,
+    "js_heap_used_bytes": 356771808,
+    "js_heap_sampled_peak_bytes": 370107712,
+    "navigation": {
+      "encoded": 347275022,
+      "decoded": 347275022,
+      "dom_content_loaded_ms": 6948.200000000186,
+      "load_ms": 6984.9000000003725
+    },
+    "errors": []
+  },
+  "lite": {
+    "version": "lite",
+    "status": "LOADED",
+    "wait_ms": 795,
+    "transfer_bytes": 1588240,
+    "js_heap_used_bytes": 4783068,
+    "js_heap_sampled_peak_bytes": 4783068,
+    "navigation": {
+      "encoded": 1586747,
+      "decoded": 1586747,
+      "dom_content_loaded_ms": 290.09999999962747,
+      "load_ms": 292.29999999981374
+    },
+    "errors": []
+  },
+  "page_reduction_percent": 99.54308634382579,
+  "owner_catalogue_first_activation_seconds": 24.28437299899997,
+  "prior_first_user_request_included_catalogue_reload_ms": 27824,
+  "old_full_state_repack": {
+    "method": "Original existing render_saved_shell over complete saved state, output held in memory only; no graph/core/indicator/Journal changes",
+    "source_bytes": 347275022,
+    "shell_bytes": 347275021,
+    "stocks": 1986,
+    "original_events": 429071,
+    "parse_seconds": 6.861930205000135,
+    "serialize_seconds": 3.791518365000229,
+    "total_seconds": 10.653448810000555,
+    "max_rss_kib": 3122876,
+    "published_bytes": 0
+  },
+  "new_two_batch_shell_render": {
+    "status": "SMALL_NEW_SHELL_RENDERED",
+    "elapsed_seconds": 0.07031606700002158,
+    "max_rss_kib": 337676,
+    "free_bytes": 770269184
+  },
+  "one_time_sharding": {
+    "seconds": 204.2003673879999,
+    "rss_kib": 2018108,
+    "source_and_chart_duplication": false
+  },
+  "caveat": "One-time sharding204s is a new extra cost; 0.07s is only two small shells. Old repack memory includes full saved state. No core speedup claimed."
+}

@@ -1,0 +1,351 @@
+{
+  "schema_version": "manual-hurdle-display/0.1",
+  "review": {
+    "schema_version": "manual-left-hurdles-review/0.1",
+    "code": "1101",
+    "price_mode": "RAW_CANDIDATE",
+    "reviewed_at": "2026-10-18T15:19:32+08:00",
+    "analysis_as_of": "2026-10-16",
+    "user_quote": "20231128高點35.5左側第一關，20230502高點40.25第二關。第三關高點50.2",
+    "source_id": "sha256:adea7f78a97d18b6b51fbba103e08c0db33dc6fb1eb613b960b0aabe213b534b",
+    "frame_id": "sha256:b7215491c924570f3b40594fbd859f4b5c2532b247b62b6e625a8fcb66964f70",
+    "chart_base": "sha256:50e560b77640da3b7d000c0db67fc73a3f5b69d0bd744871ccb03483f8ec115e",
+    "export_sha256": "1718fd0fd66f3abb6bbacfb73e802235bbd647976aeb903ea8b0ea757daedde3",
+    "annotations_are": "LATER_USER_MANUAL_REVIEW_NOT_ASOF_AUTOMATIC_SIGNALS",
+    "source_values_verification": "THREE_POINT_HIGH_VALUES_MATCH_RETAINED_VERIFIED_EXPORT",
+    "references": [
+      {
+        "id": "G1",
+        "order": 1,
+        "source_date": "2023-11-28",
+        "display_anchor_source_date": "2023-11-28",
+        "matching_source_dates": [
+          "2023-11-28"
+        ],
+        "raw_high": "35.50",
+        "date_assignment": "USER_EXPLICIT_DATE",
+        "reference_type": "USER_SELECTED_POINT_NOT_REGION_BOUNDARY",
+        "current_raw_close_relation": "BELOW",
+        "outside_current_24_calendar_month_window": true,
+        "source_bar": {
+          "close": "34.50",
+          "date": "2023-11-28",
+          "high": "35.50",
+          "low": "34.50",
+          "open": "35.00",
+          "volume_shares_scaled": "65709089"
+        },
+        "source_bars": [
+          {
+            "close": "34.50",
+            "date": "2023-11-28",
+            "high": "35.50",
+            "low": "34.50",
+            "open": "35.00",
+            "volume_shares_scaled": "65709089"
+          }
+        ],
+        "region_start": null,
+        "region_end": null,
+        "region_price_bounds": null,
+        "region_total_volume": null,
+        "volume_expansion_rule": null,
+        "automatic_selection_rule": null
+      },
+      {
+        "id": "G2",
+        "order": 2,
+        "source_date": "2023-05-02",
+        "display_anchor_source_date": "2023-05-02",
+        "matching_source_dates": [
+          "2023-05-02"
+        ],
+        "raw_high": "40.25",
+        "date_assignment": "USER_EXPLICIT_DATE",
+        "reference_type": "USER_SELECTED_POINT_NOT_REGION_BOUNDARY",
+        "current_raw_close_relation": "BELOW",
+        "outside_current_24_calendar_month_window": true,
+        "source_bar": {
+          "close": "39.90",
+          "date": "2023-05-02",
+          "high": "40.25",
+          "low": "38.90",
+          "open": "39.00",
+          "volume_shares_scaled": "69164237"
+        },
+        "source_bars": [
+          {
+            "close": "39.90",
+            "date": "2023-05-02",
+            "high": "40.25",
+            "low": "38.90",
+            "open": "39.00",
+            "volume_shares_scaled": "69164237"
+          }
+        ],
+        "region_start": null,
+        "region_end": null,
+        "region_price_bounds": null,
+        "region_total_volume": null,
+        "volume_expansion_rule": null,
+        "automatic_selection_rule": null
+      },
+      {
+        "id": "G3",
+        "order": 3,
+        "source_date": null,
+        "display_anchor_source_date": "2021-10-18",
+        "matching_source_dates": [
+          "2021-10-18",
+          "2022-03-29",
+          "2022-03-31",
+          "2022-04-06",
+          "2022-04-07"
+        ],
+        "raw_high": "50.20",
+        "date_assignment": "USER_PRICE_ONLY_MULTIPLE_SOURCE_DATES_NOT_UNIQUELY_ASSIGNED",
+        "reference_type": "USER_SELECTED_POINT_NOT_REGION_BOUNDARY",
+        "current_raw_close_relation": "BELOW",
+        "outside_current_24_calendar_month_window": true,
+        "source_bar": null,
+        "source_bars": [
+          {
+            "close": "49.80",
+            "date": "2021-10-18",
+            "high": "50.20",
+            "low": "49.80",
+            "open": "50.10",
+            "volume_shares_scaled": "8919494"
+          },
+          {
+            "close": "49.80",
+            "date": "2022-03-29",
+            "high": "50.20",
+            "low": "49.50",
+            "open": "49.80",
+            "volume_shares_scaled": "8073707"
+          },
+          {
+            "close": "49.90",
+            "date": "2022-03-31",
+            "high": "50.20",
+            "low": "49.85",
+            "open": "49.95",
+            "volume_shares_scaled": "15226850"
+          },
+          {
+            "close": "50.20",
+            "date": "2022-04-06",
+            "high": "50.20",
+            "low": "49.60",
+            "open": "49.75",
+            "volume_shares_scaled": "10985331"
+          },
+          {
+            "close": "49.55",
+            "date": "2022-04-07",
+            "high": "50.20",
+            "low": "49.50",
+            "open": "49.80",
+            "volume_shares_scaled": "11245643"
+          }
+        ],
+        "region_start": null,
+        "region_end": null,
+        "region_price_bounds": null,
+        "region_total_volume": null,
+        "volume_expansion_rule": null,
+        "automatic_selection_rule": null
+      }
+    ],
+    "original_review_references_preserved": true,
+    "action_qualification": "NOT_EVALUATED",
+    "classification_quality": "NOT_VALIDATED",
+    "comparison_basis": "RAW_COMPANY_ACTIONS_NOT_FULLY_VERIFIED_NO_ADJUSTED_COMPARABILITY_CERTIFICATION",
+    "full_history_high": "NOT_ESTABLISHED",
+    "remaining_ownership": "UNKNOWN",
+    "generalization_to_other_stocks": "NOT_AUTHORIZED_BY_THIS_CASE",
+    "product_integration": "NOT_IMPLEMENTED",
+    "new_android_acceptance": "NO_NEW_DEVICE_TEST_THIS_TURN"
+  },
+  "references": [
+    {
+      "reference": {
+        "id": "G1",
+        "order": 1,
+        "source_date": "2023-11-28",
+        "display_anchor_source_date": "2023-11-28",
+        "matching_source_dates": [
+          "2023-11-28"
+        ],
+        "raw_high": "35.50",
+        "date_assignment": "USER_EXPLICIT_DATE",
+        "reference_type": "USER_SELECTED_POINT_NOT_REGION_BOUNDARY",
+        "current_raw_close_relation": "BELOW",
+        "outside_current_24_calendar_month_window": true,
+        "source_bar": {
+          "close": "34.50",
+          "date": "2023-11-28",
+          "high": "35.50",
+          "low": "34.50",
+          "open": "35.00",
+          "volume_shares_scaled": "65709089"
+        },
+        "source_bars": [
+          {
+            "close": "34.50",
+            "date": "2023-11-28",
+            "high": "35.50",
+            "low": "34.50",
+            "open": "35.00",
+            "volume_shares_scaled": "65709089"
+          }
+        ],
+        "region_start": null,
+        "region_end": null,
+        "region_price_bounds": null,
+        "region_total_volume": null,
+        "volume_expansion_rule": null,
+        "automatic_selection_rule": null
+      },
+      "current_close_relation": "BELOW",
+      "source_indices": [
+        515
+      ]
+    },
+    {
+      "reference": {
+        "id": "G2",
+        "order": 2,
+        "source_date": "2023-05-02",
+        "display_anchor_source_date": "2023-05-02",
+        "matching_source_dates": [
+          "2023-05-02"
+        ],
+        "raw_high": "40.25",
+        "date_assignment": "USER_EXPLICIT_DATE",
+        "reference_type": "USER_SELECTED_POINT_NOT_REGION_BOUNDARY",
+        "current_raw_close_relation": "BELOW",
+        "outside_current_24_calendar_month_window": true,
+        "source_bar": {
+          "close": "39.90",
+          "date": "2023-05-02",
+          "high": "40.25",
+          "low": "38.90",
+          "open": "39.00",
+          "volume_shares_scaled": "69164237"
+        },
+        "source_bars": [
+          {
+            "close": "39.90",
+            "date": "2023-05-02",
+            "high": "40.25",
+            "low": "38.90",
+            "open": "39.00",
+            "volume_shares_scaled": "69164237"
+          }
+        ],
+        "region_start": null,
+        "region_end": null,
+        "region_price_bounds": null,
+        "region_total_volume": null,
+        "volume_expansion_rule": null,
+        "automatic_selection_rule": null
+      },
+      "current_close_relation": "BELOW",
+      "source_indices": [
+        371
+      ]
+    },
+    {
+      "reference": {
+        "id": "G3",
+        "order": 3,
+        "source_date": null,
+        "display_anchor_source_date": "2021-10-18",
+        "matching_source_dates": [
+          "2021-10-18",
+          "2022-03-29",
+          "2022-03-31",
+          "2022-04-06",
+          "2022-04-07"
+        ],
+        "raw_high": "50.20",
+        "date_assignment": "USER_PRICE_ONLY_MULTIPLE_SOURCE_DATES_NOT_UNIQUELY_ASSIGNED",
+        "reference_type": "USER_SELECTED_POINT_NOT_REGION_BOUNDARY",
+        "current_raw_close_relation": "BELOW",
+        "outside_current_24_calendar_month_window": true,
+        "source_bar": null,
+        "source_bars": [
+          {
+            "close": "49.80",
+            "date": "2021-10-18",
+            "high": "50.20",
+            "low": "49.80",
+            "open": "50.10",
+            "volume_shares_scaled": "8919494"
+          },
+          {
+            "close": "49.80",
+            "date": "2022-03-29",
+            "high": "50.20",
+            "low": "49.50",
+            "open": "49.80",
+            "volume_shares_scaled": "8073707"
+          },
+          {
+            "close": "49.90",
+            "date": "2022-03-31",
+            "high": "50.20",
+            "low": "49.85",
+            "open": "49.95",
+            "volume_shares_scaled": "15226850"
+          },
+          {
+            "close": "50.20",
+            "date": "2022-04-06",
+            "high": "50.20",
+            "low": "49.60",
+            "open": "49.75",
+            "volume_shares_scaled": "10985331"
+          },
+          {
+            "close": "49.55",
+            "date": "2022-04-07",
+            "high": "50.20",
+            "low": "49.50",
+            "open": "49.80",
+            "volume_shares_scaled": "11245643"
+          }
+        ],
+        "region_start": null,
+        "region_end": null,
+        "region_price_bounds": null,
+        "region_total_volume": null,
+        "volume_expansion_rule": null,
+        "automatic_selection_rule": null
+      },
+      "current_close_relation": "BELOW",
+      "source_indices": [
+        0,
+        107,
+        109,
+        111,
+        112
+      ]
+    }
+  ],
+  "integration_status": "EXACT_MANUAL_CASE_DISPLAY_ONLY",
+  "source_fingerprints": {
+    "source_id": "sha256:adea7f78a97d18b6b51fbba103e08c0db33dc6fb1eb613b960b0aabe213b534b",
+    "frame_id": "sha256:b7215491c924570f3b40594fbd859f4b5c2532b247b62b6e625a8fcb66964f70",
+    "chart_base": "sha256:50e560b77640da3b7d000c0db67fc73a3f5b69d0bd744871ccb03483f8ec115e",
+    "data_prefix": "sha256:e1651ca453df5b818e091575ded756953f69271f69f69d6008bb544f2fe76832",
+    "review_file_sha256": "cf29aa80952840bc7e4997a03bcee789b24c9d9fc3ae6a2fd98dc5ee226dc6ac",
+    "original_phone_export_sha256": "1718fd0fd66f3abb6bbacfb73e802235bbd647976aeb903ea8b0ea757daedde3"
+  },
+  "review_qualification": "LATER_USER_MANUAL_REVIEW_NOT_ASOF_AUTOMATIC_SIGNALS",
+  "comparison_basis": "RAW_COMPANY_ACTIONS_NOT_FULLY_VERIFIED_NO_ADJUSTED_COMPARABILITY_CERTIFICATION",
+  "classification_quality": "NOT_VALIDATED",
+  "action_qualification": "NOT_EVALUATED"
+}

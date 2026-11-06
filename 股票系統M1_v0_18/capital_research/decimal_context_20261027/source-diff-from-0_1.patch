@@ -1,0 +1,18 @@
+diff --git "a/\350\202\241\347\245\250\347\263\273\347\265\261M1_v0_18/capital_research/account_metrics.py" "b/\350\202\241\347\245\250\347\263\273\347\265\261M1_v0_18/capital_research/account_metrics.py"
+index 6e6a60b..78c706f 100644
+--- "a/\350\202\241\347\245\250\347\263\273\347\265\261M1_v0_18/capital_research/account_metrics.py"
++++ "b/\350\202\241\347\245\250\347\263\273\347\265\261M1_v0_18/capital_research/account_metrics.py"
+@@ -8 +8 @@ from datetime import date, timedelta
+-from decimal import Decimal, InvalidOperation, localcontext
++from decimal import Decimal, Context, InvalidOperation, DivisionByZero, Overflow, ROUND_HALF_EVEN, localcontext
+@@ -13,0 +14 @@ BASIS='SAVED_NET_ACCRUAL_AFTER_RECORDED_COSTS_BEFORE_HYPOTHETICAL_EXIT'
++IMPLEMENTATION_REVISION='0.1.1-deterministic-decimal-context'
+@@ -192,2 +193,6 @@ def evaluate_saved(request):
+-        with localcontext() as ctx:
+-            ctx.prec=50;out.update(_evaluate(request));out['status']='EVALUATED'
++        # Reproduce the original standard-context results, independently of the
++        # caller's rounding, exponent limits, traps, flags or DefaultContext.
++        # Creating an explicit local context also leaves the caller untouched.
++        with localcontext(Context(prec=50,rounding=ROUND_HALF_EVEN,Emin=-999999,Emax=999999,
++                capitals=1,clamp=0,flags=[],traps=[InvalidOperation,DivisionByZero,Overflow])):
++            out.update(_evaluate(request));out['status']='EVALUATED'

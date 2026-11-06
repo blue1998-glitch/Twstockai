@@ -1,0 +1,9 @@
+{
+  "schema_version": "cross-timeframe-sources/1.0",
+  "daily_stores": {
+    "歷史日線庫（兩版並存）": "../volume_revision/output/單位修正並存_v0_12.sqlite3",
+    "補齊日線庫（本版獨立計算）": "output/補齊日線.sqlite3"
+  },
+  "period_stores": {"週月背景庫": "../period_workflow/output/背景流程結果庫"},
+  "as_of_dates": ["2026-08-31", "2026-09-30"]
+}

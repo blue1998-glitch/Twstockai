@@ -1,0 +1,80 @@
+{
+  "status": "PASS_ONE_UPLOADED_EXPORT_FULL_PARSED_VALUE_EQUALITY",
+  "scope": "Full parsed export equals pinned HTML producer selection; verifies stored precision and source bindings, not byte-format equality or independent OHLCV/indicator recomputation",
+  "product_commit": "87ec609ef51d7346554e2546e520a9dbc4ac2235",
+  "producer_source_read_commit": "8b99c715c481bf7ec20f054651affc63134a159d",
+  "source_function_files_sha256": {
+    "technical_chart/build.py": "3b2fb3c3b33d3df7f22ae44f06de10c4984ae501d2ca7c7994646515eb510736",
+    "pressure_chart/history_adapter.py": "318a8c0047fbe3800add88c438dc28cb5a730e6cc7217c39e4920d7a1a25ac24",
+    "pressure_chart/build.py": "d232e3cd7f50c3692e55a47b75b0b2b03f922939c26390b84b59cfcb9bc5af0b",
+    "hurdle_chart/build.py": "0d90e6867c21b75d1ce106fd28362d0975337ba40024269180136c30041874ad"
+  },
+  "html_sha256": "4cbe923936f9841652e7a303ec60029f9159dffe3b266e468d04b573f060706c",
+  "upload": {
+    "filename": "M1_1101_RAW_CANDIDATE_2026-10-16 (1).json",
+    "bytes": 1185454,
+    "sha256": "369947bad71ab3fdff894c21511ebf242e1ddb12b59822d02ed93f0580bd2796",
+    "canonical_sha256": "9f50858b70f35b60dd57f26a5bd1f9b4abaa70b57c177eb288c2698b37cc2825"
+  },
+  "screenshot": {
+    "filename": "01-Screenshot_20261018-171319.png",
+    "bytes": 147997,
+    "sha256": "e3f8ce94f68fee3dcd9487d998ab8f3aa17ae4bd646c59588d3a21ecfc45ba34"
+  },
+  "schema_version": "hurdle-chart-selection/0.1",
+  "view_version": "hurdle-chart-view/0.1",
+  "as_of": "2026-10-16",
+  "source_id": "sha256:adea7f78a97d18b6b51fbba103e08c0db33dc6fb1eb613b960b0aabe213b534b",
+  "frame_id": "sha256:b7215491c924570f3b40594fbd859f4b5c2532b247b62b6e625a8fcb66964f70",
+  "chart_base": "sha256:50e560b77640da3b7d000c0db67fc73a3f5b69d0bd744871ccb03483f8ec115e",
+  "bars": 1213,
+  "last_bar": {
+    "close": "27.30",
+    "date": "2026-10-16",
+    "high": "27.70",
+    "low": "26.95",
+    "open": "27.10",
+    "volume_shares_scaled": "57437884"
+  },
+  "macd_rows": 1213,
+  "ma_rows": {
+    "5": 1213,
+    "20": 1213,
+    "60": 1213,
+    "130": 1213,
+    "260": 1213
+  },
+  "manual_layer_present": true,
+  "integration_status": "EXACT_MANUAL_CASE_DISPLAY_ONLY",
+  "original_review_historical_integration": "NOT_IMPLEMENTED",
+  "g3_source_date": null,
+  "g3_matching_source_dates": [
+    "2021-10-18",
+    "2022-03-29",
+    "2022-03-31",
+    "2022-04-06",
+    "2022-04-07"
+  ],
+  "source_fingerprints": {
+    "chart_base": "sha256:50e560b77640da3b7d000c0db67fc73a3f5b69d0bd744871ccb03483f8ec115e",
+    "data_prefix": "sha256:e1651ca453df5b818e091575ded756953f69271f69f69d6008bb544f2fe76832",
+    "frame_id": "sha256:b7215491c924570f3b40594fbd859f4b5c2532b247b62b6e625a8fcb66964f70",
+    "original_phone_export_sha256": "1718fd0fd66f3abb6bbacfb73e802235bbd647976aeb903ea8b0ea757daedde3",
+    "review_file_sha256": "cf29aa80952840bc7e4997a03bcee789b24c9d9fc3ae6a2fd98dc5ee226dc6ac",
+    "source_id": "sha256:adea7f78a97d18b6b51fbba103e08c0db33dc6fb1eb613b960b0aabe213b534b"
+  },
+  "all_supplied_bars_not_after_analysis_date": true,
+  "manual_layer_count_in_pinned_bundle": 1,
+  "android_overall": "PARTIAL_EVIDENCE_OBSERVED",
+  "not_observed_this_turn": [
+    "landscape main chart",
+    "return to 24-month window",
+    "all five G3 locate interactions",
+    "long-ID/JSON expansion interactions",
+    "pan/zoom",
+    "moving K/volume/MACD cursor synchronization",
+    "rotation preservation",
+    "10/15 or other source exclusion",
+    "product usefulness acceptance"
+  ]
+}

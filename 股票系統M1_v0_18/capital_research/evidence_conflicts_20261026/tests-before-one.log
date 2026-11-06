@@ -1,0 +1,16 @@
+F
+======================================================================
+FAIL: test_mixed_null_expiry_and_known_revocation_cannot_revive_capital (capital_research.evidence_conflicts_20261026.test_conflicts.RestrictionConflictTests.test_mixed_null_expiry_and_known_revocation_cannot_revive_capital)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/workspace/Twstockai/股票系統M1_v0_18/capital_research/evidence_conflicts_20261026/test_conflicts.py", line 24, in test_mixed_null_expiry_and_known_revocation_cannot_revive_capital
+    r = self.check('mixed-null-revocation')
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/workspace/Twstockai/股票系統M1_v0_18/capital_research/evidence_conflicts_20261026/test_conflicts.py", line 16, in check
+    self.assertEqual(actual['B_qualified'], expected['B_qualified'])
+AssertionError: True != False
+
+----------------------------------------------------------------------
+Ran 1 test in 1.178s
+
+FAILED (failures=1)

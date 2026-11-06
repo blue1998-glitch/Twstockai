@@ -1,0 +1,65 @@
+[
+  {
+    "key": "grid-intent",
+    "source": {
+      "path": "股票系統M1_v0_18/capital_research/research_choice_20261027/journal/grid-intent.json",
+      "bytes": 7492,
+      "sha256": "e1539b257ef9644464c00c413434ebb72eea2a478f3f79c2f84214bf5c2ff781"
+    },
+    "expected": {
+      "exit_code": 0,
+      "status": "RECORDED_RESEARCH_INTENT",
+      "contains": [
+        "一般研究意圖",
+        "目標股數（未執行）：A=60；B=26；C=2",
+        "2026-01-12T16:00:00+08:00",
+        "2026-01-12T17:00:00+08:00",
+        "2026-10-27T12:00:00+08:00",
+        "歷史reviewed token：12；當期決策reviewed token：15"
+      ],
+      "reason": null
+    }
+  },
+  {
+    "key": "conditional-intent",
+    "source": {
+      "path": "股票系統M1_v0_18/capital_research/research_choice_20261027/journal/conditional-intent.json",
+      "bytes": 7548,
+      "sha256": "154b5d5af0659382dbd7b3315780e550c3acf993c75c984c5430223305d6bdab"
+    },
+    "expected": {
+      "exit_code": 0,
+      "status": "RECORDED_CONDITIONAL_RESEARCH_INTENT",
+      "contains": [
+        "條件研究意圖（等待交割後重評）",
+        "目標股數（未執行）：A=0；B=63；C=2",
+        "2026-01-12T16:00:00+08:00",
+        "2026-01-12T17:00:00+08:00",
+        "2026-10-27T12:00:00+08:00",
+        "歷史reviewed token：12；當期決策reviewed token：15"
+      ],
+      "reason": null
+    }
+  },
+  {
+    "key": "rejected-old-trigger",
+    "source": {
+      "path": "股票系統M1_v0_18/capital_research/research_choice_20261027/journal/rejected-old-trigger.json",
+      "bytes": 7597,
+      "sha256": "f5e2f91e0ee0f756d5ba396db982f5153a1858140a121377af2ec7350cae99bb"
+    },
+    "expected": {
+      "exit_code": 2,
+      "status": "REFUSED",
+      "contains": [
+        "遭拒（未選中）",
+        "目標股數（未執行）：無（未選中）",
+        "2026-01-12T16:00:00+08:00",
+        "2026-01-12T17:00:00+08:00",
+        "2026-10-27T12:00:00+08:00",
+        "歷史reviewed token：12；當期決策reviewed token：15"
+      ],
+      "reason": "CANDIDATE_NOT_QUALIFIED"
+    }
+  }
+]

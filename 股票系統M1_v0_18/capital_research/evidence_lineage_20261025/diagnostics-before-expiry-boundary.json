@@ -1,0 +1,44 @@
+{
+  "before_wrong_admissions": [
+    "drop-known-revocation",
+    "extend-expiry-to-null",
+    "extend-expiry-later",
+    "alias-drop-revocation",
+    "future-stripped-at-review"
+  ],
+  "existing_controls_not_claimed_as_defects": [
+    "rename-keep-revocation",
+    "future-revocation"
+  ],
+  "oracle_changes": 0,
+  "records": [
+    {
+      "stage": "initial",
+      "log": "tests-initial.log",
+      "methods": 31,
+      "status": "PASS"
+    },
+    {
+      "stage": "additional_recovery_boundary",
+      "log": "tests-recovery-boundary-before.log",
+      "status": "FAIL",
+      "issue": "Global duplicate suppression retained an earlier proposal rejection even after exact still-valid original bytes returned",
+      "fix": "Only an exact accepted original with unchanged authoritative validity may clear the proposal rejection; expiry and revocation remain binding",
+      "assertion_unchanged": true
+    },
+    {
+      "stage": "final",
+      "log": "tests-final.log",
+      "methods": 33,
+      "status": "PASS"
+    }
+  ],
+  "unresolved_test_failures": [],
+  "not_implemented": [
+    "General source authenticity/correction certification",
+    "Late merging of already established separate identities",
+    "Arbitrary all-field identity/time forgery detection",
+    "Permanent identity of anonymous entry/reference snapshots",
+    "Full external live-order lifecycle replay"
+  ]
+}

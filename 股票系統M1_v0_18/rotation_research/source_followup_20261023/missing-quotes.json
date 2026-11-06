@@ -1,0 +1,130 @@
+{
+  "diagnostics": [
+    {
+      "parent_diagnostic": {
+        "schema": "rotation-security-quote-diagnostic/0.2",
+        "code": "1101",
+        "date": "2025-08-13",
+        "market_session": true,
+        "raw_close": null,
+        "old_missing_cause": "UNKNOWN",
+        "new_missing_explanation": "DIRECT_OFFICIAL_SUSPENSION_START_ON_DATE",
+        "suspension_observation_ids": [],
+        "related_resumption_notices": [
+          {
+            "observation_id": "sha256:49aaea9c3ce04c0da74c313a279bdba687a4da1ef50e24e6c357d53fde0ad86a",
+            "resume_date": "2025-08-14",
+            "role": "RELATED_NOTICE_NOT_PROOF_OF_MISSING_DAY_SUSPENSION_START"
+          }
+        ],
+        "security_session_status": "OFFICIAL_SECURITY_SUSPENSION_START_DATE_ONLY",
+        "security_tradable": false,
+        "execution_qualified": false,
+        "execution_note": "NO_EXECUTION_OR_VALUATION_POLICY_IN_SOURCE_DIAGNOSTICS",
+        "imputed_close": null,
+        "valuation": null,
+        "missing_quote_blocks_accounting": true,
+        "historical_signal_eligible": false,
+        "primary_pressure_id": null,
+        "policy_authorized": false,
+        "parent_diagnostic": {
+          "schema": "rotation-security-quote-diagnostic/0.1",
+          "code": "1101",
+          "date": "2025-08-13",
+          "market_session": true,
+          "raw_close": null,
+          "old_missing_cause": "UNKNOWN",
+          "new_missing_explanation": "UNKNOWN",
+          "suspension_observation_ids": [],
+          "related_resumption_notices": [
+            {
+              "observation_id": "sha256:49aaea9c3ce04c0da74c313a279bdba687a4da1ef50e24e6c357d53fde0ad86a",
+              "resume_date": "2025-08-14",
+              "role": "RELATED_NOTICE_NOT_PROOF_OF_MISSING_DAY_SUSPENSION_START"
+            }
+          ],
+          "security_session_status": "UNKNOWN_NOT_INFERRED_FROM_MARKET_CALENDAR",
+          "security_tradable": null,
+          "execution_qualified": false,
+          "execution_note": "NO_EXECUTION_OR_VALUATION_POLICY_IN_SOURCE_DIAGNOSTICS",
+          "imputed_close": null,
+          "valuation": null,
+          "missing_quote_blocks_accounting": true,
+          "historical_signal_eligible": false,
+          "primary_pressure_id": null,
+          "policy_authorized": false
+        },
+        "bridge_catalog_id": "sha256:ffc954ac915889a4fbd8b2d2e71b219cb38fbfe192d7cc08823abe2f04d3b6eb",
+        "direct_suspension_start_observation_ids": [
+          "sha256:6ef133ee3f1ba4573317a16e1460684494f568c6ac4dee750b3fbe92dc835d21"
+        ],
+        "suspension_end_date": null
+      },
+      "related_resumption_corroboration_ids": [],
+      "direct_twse_resumption_acquired": false,
+      "suspension_end_date": null,
+      "raw_close": null,
+      "imputed_close": null,
+      "valuation": null,
+      "execution_qualified": false,
+      "missing_quote_blocks_accounting": true
+    },
+    {
+      "parent_diagnostic": {
+        "schema": "rotation-security-quote-diagnostic/0.2",
+        "code": "2884",
+        "date": "2025-11-05",
+        "market_session": true,
+        "raw_close": null,
+        "old_missing_cause": "UNKNOWN",
+        "new_missing_explanation": "DIRECT_OFFICIAL_SUSPENSION_START_ON_DATE",
+        "suspension_observation_ids": [],
+        "related_resumption_notices": [],
+        "security_session_status": "OFFICIAL_SECURITY_SUSPENSION_START_DATE_ONLY",
+        "security_tradable": false,
+        "execution_qualified": false,
+        "execution_note": "NO_EXECUTION_OR_VALUATION_POLICY_IN_SOURCE_DIAGNOSTICS",
+        "imputed_close": null,
+        "valuation": null,
+        "missing_quote_blocks_accounting": true,
+        "historical_signal_eligible": false,
+        "primary_pressure_id": null,
+        "policy_authorized": false,
+        "parent_diagnostic": {
+          "schema": "rotation-security-quote-diagnostic/0.1",
+          "code": "2884",
+          "date": "2025-11-05",
+          "market_session": true,
+          "raw_close": null,
+          "old_missing_cause": "UNKNOWN",
+          "new_missing_explanation": "UNKNOWN",
+          "suspension_observation_ids": [],
+          "related_resumption_notices": [],
+          "security_session_status": "UNKNOWN_NOT_INFERRED_FROM_MARKET_CALENDAR",
+          "security_tradable": null,
+          "execution_qualified": false,
+          "execution_note": "NO_EXECUTION_OR_VALUATION_POLICY_IN_SOURCE_DIAGNOSTICS",
+          "imputed_close": null,
+          "valuation": null,
+          "missing_quote_blocks_accounting": true,
+          "historical_signal_eligible": false,
+          "primary_pressure_id": null,
+          "policy_authorized": false
+        },
+        "bridge_catalog_id": "sha256:ffc954ac915889a4fbd8b2d2e71b219cb38fbfe192d7cc08823abe2f04d3b6eb",
+        "direct_suspension_start_observation_ids": [
+          "sha256:4c0e2ce3718b50f75a60747d2f9fad7b9fa131e02e6d2a3a21965fa379903803"
+        ],
+        "suspension_end_date": null
+      },
+      "related_resumption_corroboration_ids": [],
+      "direct_twse_resumption_acquired": false,
+      "suspension_end_date": null,
+      "raw_close": null,
+      "imputed_close": null,
+      "valuation": null,
+      "execution_qualified": false,
+      "missing_quote_blocks_accounting": true
+    }
+  ]
+}

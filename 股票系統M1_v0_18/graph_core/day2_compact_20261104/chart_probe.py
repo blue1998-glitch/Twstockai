@@ -1,0 +1,125 @@
+"""Two REAL-source original preview serializations, in memory, no originals written.
+Only the directory IO is narrowed to one real descriptor; no price/result fixture.
+Result hashes must equal the preceding real-source profile before chart sizing.
+"""
+from copy import deepcopy
+from decimal import Context,localcontext,ROUND_HALF_EVEN
+from pathlib import Path
+from unittest.mock import patch
+import json,gc,shutil,time
+from graph_core import market_daily as d,market_increment as inc,market_preview as preview
+from graph_core.day1_20261103.probe_once import heads
+from rotation_research.store import Journal
+from rotation_research import artifact_codec as c
+from technical_chart.interned_json import pack,unpack
+from .capture_once import ROOT,WORK,MIN_FREE
+from .capacity_probe import measure_wire
+
+class Captured(Exception):pass
+
+def run():
+    finished=WORK/'chart-profile-private.json'
+    if finished.exists():return json.loads(finished.read_bytes())
+    marker=WORK/'chart-profile-started-private.json'
+    if marker.exists():
+        repair=WORK/'chart-profile-filename-repair-once.json'
+        old_log=(WORK/'chart-probe.log').read_bytes()
+        if repair.exists() or b'UNEXPECTED_PROFILE_WRITE_OR_ANCHOR' not in old_log or list((WORK/'chart-profiles').glob('*.json')):raise FileExistsError('CHART_PROFILE_ALREADY_STARTED_NO_DUPLICATE')
+        c.immutable(repair,c.encoded(dict(reason='Parent lookup omitted current formatter filename; bounded resume after original IO-only fix',failed_log_sha256=c.sha(old_log),previous_completed_chart_profiles=0)))
+    prior_profile=json.loads((WORK/'capacity-probe-private.json').read_bytes());source=json.loads((WORK/'repaired-source-private.json').read_bytes())
+    as_of,maps,markets,sigs=inc.sources(WORK/'capture',source['capture_id']);head=json.loads((ROOT/'current-increment-run.json').read_bytes());parent=inc.seed(ROOT,head['id'])
+    before=heads(ROOT);oldrows={r['identity']:r for r in parent['stocks']};members={r['market']+':'+r['code']:r for v in markets.values() for r in v['members']}
+    lite=json.loads(Path('/workspace/twstockai-local-data/lite1_20261103/2026-11-02/prepared-state-private.json').read_bytes())
+    old_descriptors={r['identity']:r['preview_series'] for r in lite['stocks'] if r.get('preview_series')}
+    selected=[r for r in prior_profile['sample_receipts'] if r['resource_class']=='long-largest']
+    if not marker.exists():c.immutable(marker,c.encoded(dict(real_new_day=as_of,max_core_calls=len(selected),purpose='Exact original per-stock chart bytes, original core; directory-only IO seam',market_result_writes=False)))
+    records=[];start=time.monotonic()
+    for sample in selected:
+        ident=sample['identity'];s=members[ident];old=oldrows[ident];market=s['market'];bar,reason=d.candle(maps[market][s['code']],market)
+        if reason:raise ValueError('SAMPLE_SOURCE_NO_LONGER_QUALIFIED')
+        oldvalue=inc.stock_history(ROOT,old,parent);bars=[b for b in deepcopy(oldvalue['input']['bars']) if b['date']<as_of]+[bar]
+        breaks=sorted(set([x for x in oldvalue['input'].get('basis_break_dates',[])+oldvalue['result']['data_gaps']['basis_resets'] if x<as_of]+([as_of] if len(bars)>1 else [])))
+        payload=dict(schema_version='graph-recognition-input/0.1',context=dict(code=s['code'],exchange=market,source_id=inc.fingerprint(dict(seed=head['id'],identity=ident,sources=sigs)),
+            price_basis_id=ident+'-RAW-SEGMENTED-UNVERIFIED',price_mode='RAW_CANDIDATE',volume_unit='SHARES_REPORTED',source_kind='EXPLICITLY_SEGMENTED_RETAINED_HISTORY_AND_OFFICIAL_DAILY',
+            corporate_action_comparability='UNKNOWN_RESET_AT_NEW_OFFICIAL_DATE',historical_publication_timing='UNKNOWN'),bars=bars,basis_break_dates=breaks,
+            expected_dates=sorted(set([b['date'] for b in bars]+[x for x in oldvalue['input'].get('expected_dates',[]) if x<=as_of])))
+        with localcontext(Context(prec=50,rounding=ROUND_HALF_EVEN,Emin=-999999,Emax=999999)):r=inc.analyze(payload,as_of=as_of)
+        value=dict(input=payload,result=r,increment_source_binding=dict(seed_run=head['id'],seed_result_key=old['result_key'],seed_context=oldvalue['input']['context'],retained_prefix_fingerprint=inc.fingerprint(oldvalue['input']['bars']),
+            new_date=as_of,capture_id=source['capture_id'],official_sources=sigs,source_boundary_reset=as_of,company_action_coverage='UNKNOWN',cross_feed_comparability='NOT_CERTIFIED'))
+        rk='du1-result-'+d.digest(d.encode(value));record=dict(schema='rotation-record/0.1',id=rk,value=value)
+        if c.sha(c.journal_bytes(record))!=sample['original_bytes_sha256']:raise ValueError('NUMERIC_RECOMPUTATION_DIFFERS_FROM_FIRST_PROFILE')
+        _,rd=c.manifest(Journal(ROOT/'results').path(old['result_key']));result_anchor=c.resolve(ROOT,rd['anchor_path']);base=json.loads(c.read_bytes(result_anchor));result_wire=c.encoded(pack(record,base=base));base_index=c.base_index(result_anchor,ROOT)
+        virtual={c.sha(part) for _,part in c.chunks(result_wire) if c.sha(part) not in base_index and not c.blob_path(ROOT,c.sha(part)).exists()}
+        row=dict(s,identity=ident,as_of=as_of,result_key=rk,status='SEGMENTED_RESEARCH' if len(bars)>1 else 'INSUFFICIENT_HISTORY',history_records=len(bars),current_comparable_records=1,source_binding=value['increment_source_binding'])
+        trial='day2-capacity-only-'+market
+        batch=dict(version=inc.VERSION,storage_mode='compact',parent_run=head['id'],stocks=[row],as_of=as_of)
+        old_page=Path(head['private_preview']['path']);desc=old_descriptors[ident];old_chart=old_page.parent/desc['path']
+        if c.info(old_chart)['sha256']!=desc['sha256']:raise ValueError('OLD_CHART_DESCRIPTOR_CHANGED')
+        # This is only the directory lookup seam; it carries the original descriptor,
+        # no invented market record and is never saved/served as a real HTML artifact.
+        directory=b'<script id="market-state" type="application/json">'+d.encode(dict(stocks=[dict(identity=ident,preview_series=desc)]))+b'</script>'
+        old_read=Journal.read;old_bytes=c.read_bytes;captured=[]
+        def read(self,key):
+            if self.root==ROOT/'runs' and key==trial:return dict(schema='rotation-record/0.1',id=key,value=batch)
+            if self.root==ROOT/'results' and key==rk:return record
+            return old_read(self,key)
+        def read_bytes(path,**kw):return directory if Path(path)==old_page else old_bytes(path,**kw)
+        def capture(path,raw,*,root,bases=(),format='journal'):
+            if format!='chart' or list(bases)!=[old_chart]:raise ValueError('UNEXPECTED_PROFILE_WRITE_OR_ANCHOR')
+            obj=unpack(json.loads(raw));_,cd=c.manifest(old_chart)
+            anchor=c.resolve(ROOT,cd['anchor_path']) if cd['schema']==c.INTERNED else old_chart
+            transport=json.loads(old_bytes(anchor));wire=c.encoded(pack(obj,base=transport))
+            if c.encoded(pack(unpack(json.loads(wire))))!=raw:raise ValueError('CHART_BYTES_NOT_LOSSLESS')
+            captured.append(dict(original_chart_bytes=len(raw),original_chart_sha256=c.sha(raw),wire_bytes=len(wire),profile=measure_wire(wire,anchor,virtual)))
+            raise Captured()
+        def no_write(*a,**kw):raise AssertionError('No market file may be written in capacity profile')
+        with patch.object(Journal,'read',read),patch.object(c,'read_bytes',read_bytes),patch.object(c,'publish_interned',capture),patch.object(c,'immutable',no_write),patch.object(preview,'publish_immutable',no_write):
+            try:preview.build(ROOT,trial)
+            except Captured:pass
+        if len(captured)!=1:raise ValueError('ORIGINAL_CHART_SERIALIZER_NOT_CAPTURED')
+        hv=dict(bars=bars,basis_break_dates=breaks);hk='history-'+inc.fingerprint(hv).split(':')[1];hr=dict(schema='rotation-record/0.1',id=hk,value=hv)
+        hist_path=Journal(ROOT/'histories').path(old['history_key']);_,hd=c.manifest(hist_path);ha=c.resolve(ROOT,hd['anchor_path'])
+        ht=json.loads(c.read_bytes(ha));hw=c.encoded(pack(hr,base=ht))
+        if c.journal_bytes(unpack(json.loads(hw)))!=c.journal_bytes(hr):raise ValueError('HISTORY_BYTES_NOT_LOSSLESS')
+        history_profile=measure_wire(hw,ha)
+        entry=dict(history_profile=history_profile,old_history_logical_bytes=c.info(hist_path)['bytes'],market=market,identity=ident,old_result_logical_bytes=sample['old_logical_bytes'],actual_new_result_id=r['result_id'],exact_same_core_result_as_first_profile=True,
+            chart=captured[0],real_source_only=True,chart_file_written=False,original_preview_builder_sha256=d.digest(Path(preview.__file__).read_bytes()))
+        records.append(entry);c.immutable(WORK/'chart-profiles'/(market+'.json'),c.encoded(entry));print(json.dumps(dict(phase='MEMORY_CHART_COMPLETE',market=market,planned_new_chart_bytes=captured[0]['profile']['planned_result_bytes'])),flush=True)
+        del oldvalue,payload,r,value,record,result_wire,base,virtual;gc.collect()
+    sums={m:dict(short=0,long_bytes=0,long_history_bytes=0,fresh=0) for m in markets}
+    for s in members.values():
+        ident=s['market']+':'+s['code'];raw=maps[s['market']].get(s['code'])
+        if raw is None:continue
+        try:bar,why=d.candle(raw,s['market'])
+        except Exception:continue
+        if why:continue
+        old=oldrows.get(ident)
+        if old and old.get('isin')!=s.get('isin'):continue
+        if not old or not old.get('result_key'):sums[s['market']]['fresh']+=1;continue
+        n=c.info(Journal(ROOT/'results').path(old['result_key']))['bytes']
+        if n<65536:sums[s['market']]['short']+=1
+        else:
+            sums[s['market']]['long_bytes']+=n
+            sums[s['market']]['long_history_bytes']+=c.info(Journal(ROOT/'histories').path(old['history_key']))['bytes']
+    projected={6:0,9:0};histories={6:0,9:0};groups=[]
+    for entry in records:
+        data=sums[entry['market']]
+        for level in (6,9):
+            amount=int(data['long_bytes']*entry['chart']['profile']['planned_result_bytes'][str(level)]/entry['old_result_logical_bytes'])+data['short']*16384+data['fresh']*65536
+            history_amount=int(data['long_history_bytes']*entry['history_profile']['planned_result_bytes'][str(level)]/entry['old_history_logical_bytes'])+data['short']*32768+data['fresh']*65536
+            histories[level]+=history_amount
+            projected[level]+=amount;groups.append(dict(market=entry['market'],level=level,projected_chart_bytes=amount,projected_history_bytes=history_amount,short_member_budget=16384,fresh_member_budget=65536,extrapolation=True))
+    free=shutil.disk_usage(ROOT).free;available=free-MIN_FREE
+    total=prior_profile['result_only_projected_bytes']['9']+projected[9]+histories[9]
+    result=dict(status='BLOCKED_CAPACITY' if total>available else 'UNPROVEN_REMAINING_HISTORY_AND_UI_BUDGET',as_of=as_of,original_root_writes=0,
+        real_core_calls_this_profile=len(records),unique_real_stocks_already_counted_in_first_profile=True,records=records,groups=groups,
+        result_projected_gzip9_bytes=prior_profile['result_only_projected_bytes']['9'],chart_projected_gzip9_bytes=projected[9],history_projected_gzip9_bytes=histories[9],
+        history_result_chart_projected_bytes=total,free_bytes=free,minimum_free_bytes=MIN_FREE,available_above_reserve_bytes=available,
+        forecast_shortfall_bytes=max(0,total-available),forecast_excludes_light_index_radars_and_directories=True,
+        forecast_not_full_market_actual_write=True,source_gets_this_profile=0,elapsed_seconds=time.monotonic()-start,
+        original_heads_before=before,original_heads_after=heads(ROOT),new_published_charts=0)
+    if before!=result['original_heads_after']:raise ValueError('OLD_HEAD_CHANGED')
+    c.immutable(finished,c.encoded(result));print(json.dumps({k:v for k,v in result.items() if k not in ('records','groups','original_heads_before','original_heads_after')},ensure_ascii=False),flush=True)
+    return result
+
+if __name__=='__main__':run()

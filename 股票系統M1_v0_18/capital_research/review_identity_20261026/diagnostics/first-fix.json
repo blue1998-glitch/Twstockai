@@ -1,0 +1,8 @@
+{
+  "test_sha256": "4aa764c6df8d98a73e7b6e92734ef44f286d53502e181a5035bf40601faa291e",
+  "log": "tests-first-fix.log",
+  "method": "test_rehashed_execution_cannot_change_stored_request",
+  "actual_guard": "Execution event lost its reassessment receipt",
+  "expected_guard": "Reassessment request/source binding conflict",
+  "diagnosis": "Tampered input rehashed attempt but left event reference stale; existing earlier guard correctly refused. Preserve assertion; refine forged input by updating event reference to exercise subsequent request/source guard."
+}

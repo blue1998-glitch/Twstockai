@@ -1,0 +1,91 @@
+[
+  {
+    "key": "wrong-id",
+    "edits": [
+      {
+        "path": [
+          "id"
+        ],
+        "value": "other"
+      }
+    ],
+    "reason": "Corrupt identity/schema",
+    "exit_code": 2
+  },
+  {
+    "key": "edited",
+    "edits": [
+      {
+        "path": [
+          "id"
+        ],
+        "value": "edited"
+      },
+      {
+        "path": [
+          "value",
+          "choice",
+          "selected",
+          "plan",
+          "targets",
+          "B"
+        ],
+        "value": "27"
+      }
+    ],
+    "reason": "RECORD_ID_FINGERPRINT_CONFLICT",
+    "exit_code": 2
+  },
+  {
+    "key": "unknown-schema",
+    "edits": [
+      {
+        "path": [
+          "id"
+        ],
+        "value": "unknown-schema"
+      },
+      {
+        "path": [
+          "value",
+          "choice",
+          "schema"
+        ],
+        "value": "future/99"
+      }
+    ],
+    "reason": "UNSUPPORTED_CHOICE_RECORD",
+    "exit_code": 2
+  },
+  {
+    "key": "wrong-envelope",
+    "edits": [
+      {
+        "path": [
+          "id"
+        ],
+        "value": "wrong-envelope"
+      },
+      {
+        "path": [
+          "schema"
+        ],
+        "value": "future/99"
+      }
+    ],
+    "reason": "Corrupt identity/schema",
+    "exit_code": 2
+  },
+  {
+    "key": "missing",
+    "edits": null,
+    "reason": "CHOICE_IO_FAILED",
+    "exit_code": 2
+  },
+  {
+    "key": "SELECT-text",
+    "edits": null,
+    "reason": "SELECT only supports --format json",
+    "exit_code": 2
+  }
+]

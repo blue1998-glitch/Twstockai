@@ -1,0 +1,117 @@
+[
+  {
+    "input": {
+      "name": "general",
+      "generation_spec": {
+        "path": "股票系統M1_v0_18/capital_research/quantity_after_retry_20261027/cases/new-independent-trigger/input.json",
+        "bytes": 17377,
+        "sha256": "403673fc1cf452c6949f4af0e7b9f371ab21bd25ba89b1a4ee39e67ff4b3b517"
+      },
+      "selection": {
+        "mode": "GRID",
+        "sell_A": "0",
+        "additional_B": "1",
+        "reason": "EXPLICIT_SYNTHETIC_OPERATION_NOT_BEST_RATIO"
+      },
+      "recorded_at": "2026-10-27T12:00:00+08:00",
+      "materialized_input_id": "sha256:4e9d8c14795ec6edc36e0868c53a4e6cf25ff49b024b1b727ddbbe5d7e7a82dc"
+    },
+    "expected": {
+      "workflow_status": "COMPLETED_RESEARCH_INTENT",
+      "choice_status": "RECORDED_RESEARCH_INTENT",
+      "check_status": "MATCHED",
+      "generator_calls": 1
+    }
+  },
+  {
+    "input": {
+      "name": "conditional",
+      "generation_spec": {
+        "path": "股票系統M1_v0_18/capital_research/quantity_after_retry_20261027/cases/new-independent-trigger/input.json",
+        "bytes": 17377,
+        "sha256": "403673fc1cf452c6949f4af0e7b9f371ab21bd25ba89b1a4ee39e67ff4b3b517"
+      },
+      "selection": {
+        "mode": "FULL_TRANSFER",
+        "sell_A": null,
+        "additional_B": null,
+        "reason": "EXPLICIT_SYNTHETIC_OPERATION_NOT_BEST_RATIO"
+      },
+      "recorded_at": "2026-10-27T12:00:00+08:00",
+      "materialized_input_id": "sha256:6020bc69d209adc5916610d33da543c5689ac5e28b7fbce76d0a3b3ebdfdebeb"
+    },
+    "expected": {
+      "workflow_status": "COMPLETED_CONDITIONAL_INTENT",
+      "choice_status": "RECORDED_CONDITIONAL_RESEARCH_INTENT",
+      "check_status": "MATCHED",
+      "generator_calls": 1
+    }
+  },
+  {
+    "input": {
+      "name": "old-trigger",
+      "generation_spec": {
+        "path": "股票系統M1_v0_18/capital_research/quantity_after_retry_20261027/cases/old-trigger/input.json",
+        "bytes": 17367,
+        "sha256": "d255f9b41a545fe06d4ea8a7696e4e58d4b6d5b8938ac0795f0369a945cb65e6"
+      },
+      "selection": {
+        "mode": "GRID",
+        "sell_A": "0",
+        "additional_B": "1",
+        "reason": "EXPLICIT_SYNTHETIC_OPERATION_NOT_BEST_RATIO"
+      },
+      "recorded_at": "2026-10-27T12:00:00+08:00",
+      "materialized_input_id": "sha256:5c612043fa299a8e2f0ccca479b894dfd1f35dd942150834828fff94424fdede"
+    },
+    "expected": {
+      "workflow_status": "CHOICE_REFUSED",
+      "choice_status": "REFUSED",
+      "check_status": null,
+      "generator_calls": 1
+    }
+  },
+  {
+    "input": {
+      "name": "search-limit",
+      "generation_spec": {
+        "path": "股票系統M1_v0_18/capital_research/quantity_after_retry_20261027/cases/search-limit/input.json",
+        "bytes": 17376,
+        "sha256": "50beacacc02072139e06810ea793225818cba9c897cf3f9a72507017e4208042"
+      },
+      "selection": {
+        "mode": "GRID",
+        "sell_A": "0",
+        "additional_B": "1",
+        "reason": "EXPLICIT_SYNTHETIC_OPERATION_NOT_BEST_RATIO"
+      },
+      "recorded_at": "2026-10-27T12:00:00+08:00",
+      "materialized_input_id": "sha256:c4b382778f1a5366b49bb2544249f5ec6d892b2e483dceecf3ce15d43211a341"
+    },
+    "expected": {
+      "workflow_status": "GENERATION_REFUSED",
+      "choice_status": null,
+      "check_status": null,
+      "generator_calls": 1
+    }
+  },
+  {
+    "input": {
+      "name": "no-selection",
+      "generation_spec": {
+        "path": "股票系統M1_v0_18/capital_research/quantity_after_retry_20261027/cases/new-independent-trigger/input.json",
+        "bytes": 17377,
+        "sha256": "403673fc1cf452c6949f4af0e7b9f371ab21bd25ba89b1a4ee39e67ff4b3b517"
+      },
+      "selection": null,
+      "recorded_at": null,
+      "materialized_input_id": "sha256:45da9caa2dae3ec1925da12fd4863b7e6c7a676cbc726dae4967d5e023b991be"
+    },
+    "expected": {
+      "workflow_status": "AWAITING_EXPLICIT_SELECTION",
+      "choice_status": null,
+      "check_status": null,
+      "generator_calls": 1
+    }
+  }
+]

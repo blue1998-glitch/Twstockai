@@ -1,0 +1,10 @@
+Traceback (most recent call last):
+  File "<frozen runpy>", line 198, in _run_module_as_main
+  File "<frozen runpy>", line 88, in _run_code
+  File "/workspace/Twstockai/股票系統M1_v0_18/capital_research/evaluated_replay_20261027/build.py", line 79, in <module>
+    if __name__=='__main__':main()
+                            ^^^^^^
+  File "/workspace/Twstockai/股票系統M1_v0_18/capital_research/evaluated_replay_20261027/build.py", line 60, in main
+    assert r['workflow_status']==expected['workflow_status'],r
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+AssertionError: {'schema': 'capital-evaluated-replay-receipt/0.1', 'mode': 'RUN', 'operation_id': 'evaluated-complete', 'workflow_status': 'INPUT_REFUSED', 'failed_stage': 'request', 'reasons': ["argument should be a str or an os.PathLike object where __fspath__ returns a str, not 'int'"], 'keys': {'request': 'evaluated-complete--request', 'replay': 'evaluated-complete--replay', 'evaluation': 'evaluated-complete--evaluation', 'result': 'evaluated-complete--result'}, 'storage': {'request': 'NOT_PERFORMED', 'replay': 'NOT_PERFORMED', 'evaluation': 'NOT_PERFORMED', 'result': 'NOT_PERFORMED'}, 'observed': {'replay_status': None, 'evaluation_status': None}, 'operation': None, 'evaluation': None, 'ranking': None, 'selected_strategy': None, 'primary_pressure_id': None, 'data_qualified': False, 'execution_model_qualified': False, 'historical_signal_eligible': False, 'policy_authorized': False, 'live_execution_authorized': False}

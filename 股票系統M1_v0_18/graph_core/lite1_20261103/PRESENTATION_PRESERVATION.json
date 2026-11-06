@@ -1,0 +1,85 @@
+{
+  "schema": "lite1-user-presentation-proof/0.1",
+  "baseline": "f890e797167f4a244403d5bd2072397b77069a4c",
+  "status": "PASS_PRESENTATION_ONLY",
+  "batches": [
+    {
+      "as_of": "2026-11-02",
+      "all_embedded_saved_state_bytes_unchanged": true,
+      "saved_state_sha256": "3ca683b31a2e0bd0343d27b39f61b59f73bc4735b45631bf0b68208d41e1ec6e",
+      "stock_identities": 1986,
+      "original_graphs": 1946,
+      "asset_manifest_sha256": "3e83e04ae07649a7fc060e9208c343ab45bae1af503bb672a1946cf7c58f0409",
+      "original_data_routes": 11530,
+      "new_html_bytes": 1594562,
+      "new_html_sha256": "373419b8ffdcff245e9a924f4a1d0a0c635b3ce8398c149c051a91465fde9e18"
+    },
+    {
+      "as_of": "2026-10-30",
+      "all_embedded_saved_state_bytes_unchanged": true,
+      "saved_state_sha256": "29c7db8a4949498df4ca78eb40e1a471053b2c6eb9e56bf477a1b04923aee4f0",
+      "stock_identities": 1986,
+      "original_graphs": 1469,
+      "asset_manifest_sha256": "1aa87e6c6ed0dcd118af15baed32c62e6f72321ffcf19d0fe63dd653115d8a03",
+      "original_data_routes": 4865,
+      "new_html_bytes": 1611527,
+      "new_html_sha256": "c6ae6a55550eaa6ffeb9cd18e2dcd932b10422408bfc9c40e4837386f5da59be"
+    }
+  ],
+  "unchanged_tracked_numeric_and_original_ui_sources": [
+    "graph_core/core.py",
+    "graph_core/market_preview.py",
+    "graph_core/real_workbench.py",
+    "graph_core/obs1_20261102/radar.js",
+    "graph_core/comp1_20261102/compare.js",
+    "graph_core_chart/viewer.js",
+    "graph_core_chart/viewer_v02.js",
+    "graph_core/lite1_20261103/decision.py",
+    "graph_core/lite1_20261103/build.py",
+    "reaction_facts/band_volume.py"
+  ],
+  "original_source_metadata_reused": 90377,
+  "source_heads_exact_sha": true,
+  "new_provider_calls": 0,
+  "new_core_calls": 0,
+  "new_indicator_calls": 0,
+  "new_data_packet_writes": 0,
+  "new_graph_copy_bytes": 0,
+  "owner_http_controls": [
+    {
+      "expected": 401,
+      "actual": 401
+    },
+    {
+      "expected": 303,
+      "actual": 303
+    },
+    {
+      "expected": 200,
+      "actual": 200
+    },
+    {
+      "expected": 200,
+      "actual": 200
+    },
+    {
+      "expected": 404,
+      "actual": 404
+    },
+    {
+      "expected": 403,
+      "actual": 403
+    }
+  ],
+  "owner_listener_count": 1,
+  "private_fs_net_added_bytes": 16351232,
+  "current_free_bytes": 751091712,
+  "safety_floor_bytes": 536870912,
+  "supplement_budget_bytes": 25165824,
+  "all_lite_private_regular_allocated_bytes": 258228224,
+  "android": "NOT_TESTED_NEW_BUILD",
+  "external_deployment": false,
+  "scheduler": false,
+  "independent_backup": "UNKNOWN",
+  "final_copy_correction": "Overview says unavailable chart, not invalid data; same original state bytes; final three viewport controls rerun without adding repeated methods."
+}

@@ -1,0 +1,488 @@
+{
+  "checks": [
+    {
+      "name": "507 bars exactly equal retained original source",
+      "pass": true
+    },
+    {
+      "name": "original export hash",
+      "pass": true
+    },
+    {
+      "name": "G2 exact source high and date",
+      "pass": true
+    },
+    {
+      "name": "320 initial actual SVG counts",
+      "pass": true
+    },
+    {
+      "name": "320 exact embedded source",
+      "pass": true
+    },
+    {
+      "name": "320 zoom in reduces window",
+      "pass": true
+    },
+    {
+      "name": "320 zoom out expands window",
+      "pass": true
+    },
+    {
+      "name": "320 left pans earlier",
+      "pass": true
+    },
+    {
+      "name": "320 right pans later",
+      "pass": true
+    },
+    {
+      "name": "320 G2 nearby is 96 real bars",
+      "pass": true
+    },
+    {
+      "name": "320 tap selects dated exact readout",
+      "pass": true
+    },
+    {
+      "name": "320 drag pans window",
+      "pass": true
+    },
+    {
+      "name": "320 query drag moves selected record without panning",
+      "pass": true
+    },
+    {
+      "name": "320 coordinate readout uses exact date and all OHLCV",
+      "pass": true
+    },
+    {
+      "name": "320 crosshair and exact-record price marker align",
+      "pass": true
+    },
+    {
+      "name": "320 volume marker uses same selected record",
+      "pass": true
+    },
+    {
+      "name": "320 previous moves exactly one trading record",
+      "pass": true
+    },
+    {
+      "name": "320 next returns same trading record",
+      "pass": true
+    },
+    {
+      "name": "320 endpoint draft stores exact selected dates",
+      "pass": true
+    },
+    {
+      "name": "320 draft includes raw endpoint prices and volume",
+      "pass": true
+    },
+    {
+      "name": "320 reverse interval warns without silently reordering",
+      "pass": true
+    },
+    {
+      "name": "320 step skips nontrading May 1 without synthetic record",
+      "pass": true
+    },
+    {
+      "name": "320 next after Apr 28 is real G2 May 2",
+      "pass": true
+    },
+    {
+      "name": "320 drafts never alter source or analysis",
+      "pass": true
+    },
+    {
+      "name": "320 real touch pinch zoom",
+      "pass": true
+    },
+    {
+      "name": "320 no fake source circle when offscreen",
+      "pass": true
+    },
+    {
+      "name": "320 source and analysis unchanged",
+      "pass": true
+    },
+    {
+      "name": "320 price and volume stay aligned",
+      "pass": true
+    },
+    {
+      "name": "320 no horizontal page overflow",
+      "pass": true
+    },
+    {
+      "name": "320 SVG uses actual width",
+      "pass": true
+    },
+    {
+      "name": "320 labels remain at least 12px",
+      "pass": true
+    },
+    {
+      "name": "320 no JS page errors",
+      "pass": true,
+      "errors": []
+    },
+    {
+      "name": "390 initial actual SVG counts",
+      "pass": true
+    },
+    {
+      "name": "390 exact embedded source",
+      "pass": true
+    },
+    {
+      "name": "390 zoom in reduces window",
+      "pass": true
+    },
+    {
+      "name": "390 zoom out expands window",
+      "pass": true
+    },
+    {
+      "name": "390 left pans earlier",
+      "pass": true
+    },
+    {
+      "name": "390 right pans later",
+      "pass": true
+    },
+    {
+      "name": "390 G2 nearby is 96 real bars",
+      "pass": true
+    },
+    {
+      "name": "390 tap selects dated exact readout",
+      "pass": true
+    },
+    {
+      "name": "390 drag pans window",
+      "pass": true
+    },
+    {
+      "name": "390 query drag moves selected record without panning",
+      "pass": true
+    },
+    {
+      "name": "390 coordinate readout uses exact date and all OHLCV",
+      "pass": true
+    },
+    {
+      "name": "390 crosshair and exact-record price marker align",
+      "pass": true
+    },
+    {
+      "name": "390 volume marker uses same selected record",
+      "pass": true
+    },
+    {
+      "name": "390 previous moves exactly one trading record",
+      "pass": true
+    },
+    {
+      "name": "390 next returns same trading record",
+      "pass": true
+    },
+    {
+      "name": "390 endpoint draft stores exact selected dates",
+      "pass": true
+    },
+    {
+      "name": "390 draft includes raw endpoint prices and volume",
+      "pass": true
+    },
+    {
+      "name": "390 reverse interval warns without silently reordering",
+      "pass": true
+    },
+    {
+      "name": "390 step skips nontrading May 1 without synthetic record",
+      "pass": true
+    },
+    {
+      "name": "390 next after Apr 28 is real G2 May 2",
+      "pass": true
+    },
+    {
+      "name": "390 drafts never alter source or analysis",
+      "pass": true
+    },
+    {
+      "name": "390 real touch pinch zoom",
+      "pass": true
+    },
+    {
+      "name": "390 no fake source circle when offscreen",
+      "pass": true
+    },
+    {
+      "name": "390 source and analysis unchanged",
+      "pass": true
+    },
+    {
+      "name": "390 price and volume stay aligned",
+      "pass": true
+    },
+    {
+      "name": "390 no horizontal page overflow",
+      "pass": true
+    },
+    {
+      "name": "390 SVG uses actual width",
+      "pass": true
+    },
+    {
+      "name": "390 labels remain at least 12px",
+      "pass": true
+    },
+    {
+      "name": "390 no JS page errors",
+      "pass": true,
+      "errors": []
+    },
+    {
+      "name": "844 initial actual SVG counts",
+      "pass": true
+    },
+    {
+      "name": "844 exact embedded source",
+      "pass": true
+    },
+    {
+      "name": "844 zoom in reduces window",
+      "pass": true
+    },
+    {
+      "name": "844 zoom out expands window",
+      "pass": true
+    },
+    {
+      "name": "844 left pans earlier",
+      "pass": true
+    },
+    {
+      "name": "844 right pans later",
+      "pass": true
+    },
+    {
+      "name": "844 G2 nearby is 96 real bars",
+      "pass": true
+    },
+    {
+      "name": "844 tap selects dated exact readout",
+      "pass": true
+    },
+    {
+      "name": "844 drag pans window",
+      "pass": true
+    },
+    {
+      "name": "844 query drag moves selected record without panning",
+      "pass": true
+    },
+    {
+      "name": "844 coordinate readout uses exact date and all OHLCV",
+      "pass": true
+    },
+    {
+      "name": "844 crosshair and exact-record price marker align",
+      "pass": true
+    },
+    {
+      "name": "844 volume marker uses same selected record",
+      "pass": true
+    },
+    {
+      "name": "844 previous moves exactly one trading record",
+      "pass": true
+    },
+    {
+      "name": "844 next returns same trading record",
+      "pass": true
+    },
+    {
+      "name": "844 endpoint draft stores exact selected dates",
+      "pass": true
+    },
+    {
+      "name": "844 draft includes raw endpoint prices and volume",
+      "pass": true
+    },
+    {
+      "name": "844 reverse interval warns without silently reordering",
+      "pass": true
+    },
+    {
+      "name": "844 step skips nontrading May 1 without synthetic record",
+      "pass": true
+    },
+    {
+      "name": "844 next after Apr 28 is real G2 May 2",
+      "pass": true
+    },
+    {
+      "name": "844 drafts never alter source or analysis",
+      "pass": true
+    },
+    {
+      "name": "844 real touch pinch zoom",
+      "pass": true
+    },
+    {
+      "name": "844 no fake source circle when offscreen",
+      "pass": true
+    },
+    {
+      "name": "844 source and analysis unchanged",
+      "pass": true
+    },
+    {
+      "name": "844 price and volume stay aligned",
+      "pass": true
+    },
+    {
+      "name": "844 no horizontal page overflow",
+      "pass": true
+    },
+    {
+      "name": "844 SVG uses actual width",
+      "pass": true
+    },
+    {
+      "name": "844 labels remain at least 12px",
+      "pass": true
+    },
+    {
+      "name": "844 no JS page errors",
+      "pass": true,
+      "errors": []
+    },
+    {
+      "name": "1280 initial actual SVG counts",
+      "pass": true
+    },
+    {
+      "name": "1280 exact embedded source",
+      "pass": true
+    },
+    {
+      "name": "1280 zoom in reduces window",
+      "pass": true
+    },
+    {
+      "name": "1280 zoom out expands window",
+      "pass": true
+    },
+    {
+      "name": "1280 left pans earlier",
+      "pass": true
+    },
+    {
+      "name": "1280 right pans later",
+      "pass": true
+    },
+    {
+      "name": "1280 G2 nearby is 96 real bars",
+      "pass": true
+    },
+    {
+      "name": "1280 tap selects dated exact readout",
+      "pass": true
+    },
+    {
+      "name": "1280 drag pans window",
+      "pass": true
+    },
+    {
+      "name": "1280 query drag moves selected record without panning",
+      "pass": true
+    },
+    {
+      "name": "1280 coordinate readout uses exact date and all OHLCV",
+      "pass": true
+    },
+    {
+      "name": "1280 crosshair and exact-record price marker align",
+      "pass": true
+    },
+    {
+      "name": "1280 volume marker uses same selected record",
+      "pass": true
+    },
+    {
+      "name": "1280 previous moves exactly one trading record",
+      "pass": true
+    },
+    {
+      "name": "1280 next returns same trading record",
+      "pass": true
+    },
+    {
+      "name": "1280 endpoint draft stores exact selected dates",
+      "pass": true
+    },
+    {
+      "name": "1280 draft includes raw endpoint prices and volume",
+      "pass": true
+    },
+    {
+      "name": "1280 reverse interval warns without silently reordering",
+      "pass": true
+    },
+    {
+      "name": "1280 step skips nontrading May 1 without synthetic record",
+      "pass": true
+    },
+    {
+      "name": "1280 next after Apr 28 is real G2 May 2",
+      "pass": true
+    },
+    {
+      "name": "1280 drafts never alter source or analysis",
+      "pass": true
+    },
+    {
+      "name": "1280 no fake source circle when offscreen",
+      "pass": true
+    },
+    {
+      "name": "1280 source and analysis unchanged",
+      "pass": true
+    },
+    {
+      "name": "1280 price and volume stay aligned",
+      "pass": true
+    },
+    {
+      "name": "1280 no horizontal page overflow",
+      "pass": true
+    },
+    {
+      "name": "1280 SVG uses actual width",
+      "pass": true
+    },
+    {
+      "name": "1280 labels remain at least 12px",
+      "pass": true
+    },
+    {
+      "name": "1280 no JS page errors",
+      "pass": true,
+      "errors": []
+    }
+  ],
+  "errors": [],
+  "browser": "133.0.6943.0",
+  "physical_android": "NOT_TESTED",
+  "transport": "LOOPBACK_HTTP_ONLY",
+  "d3_transport": "REAL_PINNED_D3_BYTES_FULFILLED_AT_APPROVED_CDN_URL",
+  "d3_sha256": "f2094bbf6141b359722c4fe454eb6c4b0f0e42cc10cc7af921fc158fceb86539",
+  "fragment_sha256": "9e7e244aebbbc0bf22ce39dac6eeee40e754beab077da82960981b56a916d379",
+  "status": "PASS_REAL_CHROMIUM_HTTP"
+}

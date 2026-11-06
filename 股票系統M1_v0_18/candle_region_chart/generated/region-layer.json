@@ -1,0 +1,552 @@
+{
+  "action_qualification": "NOT_EVALUATED",
+  "analysis_as_of": "2026-10-16",
+  "c_source": {
+    "close": "32.40",
+    "date": "2024-01-19",
+    "high": "32.40",
+    "low": "31.80",
+    "open": "32.00",
+    "volume_shares_scaled": "14495609"
+  },
+  "chart_base": "sha256:50e560b77640da3b7d000c0db67fc73a3f5b69d0bd744871ccb03483f8ec115e",
+  "classification_quality": "NOT_VALIDATED",
+  "code": "1101",
+  "data_prefix_fingerprint": "sha256:e1651ca453df5b818e091575ded756953f69271f69f69d6008bb544f2fe76832",
+  "frame_id": "sha256:b7215491c924570f3b40594fbd859f4b5c2532b247b62b6e625a8fcb66964f70",
+  "g1_source_facts": {
+    "G1_is_largest_volume_day": false,
+    "G1_is_unique_high": false,
+    "chart_base": "sha256:50e560b77640da3b7d000c0db67fc73a3f5b69d0bd744871ccb03483f8ec115e",
+    "exact_source_bars": {
+      "2023-09-14": {
+        "close": "35.50",
+        "date": "2023-09-14",
+        "high": "35.50",
+        "low": "35.30",
+        "open": "35.40",
+        "volume_shares_scaled": "18247932"
+      },
+      "2023-10-18": {
+        "close": "32.45",
+        "date": "2023-10-18",
+        "high": "32.75",
+        "low": "32.30",
+        "open": "32.65",
+        "volume_shares_scaled": "110992007"
+      },
+      "2023-11-28": {
+        "close": "34.50",
+        "date": "2023-11-28",
+        "high": "35.50",
+        "low": "34.50",
+        "open": "35.00",
+        "volume_shares_scaled": "65709089"
+      },
+      "2023-11-30": {
+        "close": "34.95",
+        "date": "2023-11-30",
+        "high": "35.30",
+        "low": "34.30",
+        "open": "34.30",
+        "volume_shares_scaled": "106415572"
+      },
+      "2024-01-19": {
+        "close": "32.40",
+        "date": "2024-01-19",
+        "high": "32.40",
+        "low": "31.80",
+        "open": "32.00",
+        "volume_shares_scaled": "14495609"
+      }
+    },
+    "formal_region_total_volume": null,
+    "frame_id": "sha256:b7215491c924570f3b40594fbd859f4b5c2532b247b62b6e625a8fcb66964f70",
+    "new_quote_review_not_product_test": true,
+    "reason_no_region_total": "APPROXIMATE_START_NOT_ASSIGNED_TO_EXACT_DATE",
+    "september_2023_high_relation": "AT_OR_BELOW_35_50_NOT_STRICTLY_BELOW",
+    "source_export_sha256": "369947bad71ab3fdff894c21511ebf242e1ddb12b59822d02ed93f0580bd2796",
+    "source_id": "sha256:adea7f78a97d18b6b51fbba103e08c0db33dc6fb1eb613b960b0aabe213b534b",
+    "source_subset_reused": "../20261018_g1_region/g1_region_source.json"
+  },
+  "g2_endpoint_verification": {
+    "browser_or_android_tests_executed_this_turn": false,
+    "endpoint_dates_are_real_records": true,
+    "endpoint_field_checks": [
+      {
+        "date": "2023-01-16",
+        "equal": true,
+        "field": "open",
+        "source_value": "36.55",
+        "user_reported": "36.55"
+      },
+      {
+        "date": "2023-01-16",
+        "equal": true,
+        "field": "high",
+        "source_value": "36.90",
+        "user_reported": "36.90"
+      },
+      {
+        "date": "2023-01-16",
+        "equal": true,
+        "field": "low",
+        "source_value": "36.15",
+        "user_reported": "36.15"
+      },
+      {
+        "date": "2023-01-16",
+        "equal": true,
+        "field": "close",
+        "source_value": "36.50",
+        "user_reported": "36.50"
+      },
+      {
+        "date": "2023-01-16",
+        "equal": true,
+        "field": "volume_shares_scaled",
+        "source_value": "34494589",
+        "user_reported": "34494589"
+      },
+      {
+        "date": "2023-08-16",
+        "equal": true,
+        "field": "open",
+        "source_value": "36.55",
+        "user_reported": "36.55"
+      },
+      {
+        "date": "2023-08-16",
+        "equal": true,
+        "field": "high",
+        "source_value": "36.60",
+        "user_reported": "36.60"
+      },
+      {
+        "date": "2023-08-16",
+        "equal": true,
+        "field": "low",
+        "source_value": "36.00",
+        "user_reported": "36.00"
+      },
+      {
+        "date": "2023-08-16",
+        "equal": true,
+        "field": "close",
+        "source_value": "36.05",
+        "user_reported": "36.05"
+      },
+      {
+        "date": "2023-08-16",
+        "equal": true,
+        "field": "volume_shares_scaled",
+        "source_value": "30022247",
+        "user_reported": "30022247"
+      }
+    ],
+    "endpoints": {
+      "2023-01-16": {
+        "close": "36.50",
+        "date": "2023-01-16",
+        "high": "36.90",
+        "low": "36.15",
+        "open": "36.55",
+        "volume_shares_scaled": "34494589"
+      },
+      "2023-08-16": {
+        "close": "36.05",
+        "date": "2023-08-16",
+        "high": "36.60",
+        "low": "36.00",
+        "open": "36.55",
+        "volume_shares_scaled": "30022247"
+      }
+    },
+    "evidence_kind": "DIRECT_LOCAL_ORIGINAL_FILE_RECHECK",
+    "new_android_json": false,
+    "original_bytes_changed": false,
+    "product_integration": "NOT_IMPLEMENTED_THIS_TURN",
+    "region_statistics_computed": false,
+    "representative": {
+      "close": "39.90",
+      "date": "2023-05-02",
+      "high": "40.25",
+      "low": "38.90",
+      "open": "39.00",
+      "volume_shares_scaled": "69164237"
+    },
+    "result": "PASS",
+    "schema_version": "g2-endpoint-source-verification/0.1",
+    "source_bar_count": 1213,
+    "source_export_sha256": "369947bad71ab3fdff894c21511ebf242e1ddb12b59822d02ed93f0580bd2796"
+  },
+  "integration_status": "EXACT_MANUAL_TIME_REGIONS_ONLY_NOT_AUTOMATIC_STRATEGY",
+  "original_reviews": {
+    "g1": {
+      "action_qualification": "NOT_EVALUATED",
+      "analysis_as_of": "2026-10-16",
+      "assistant_design_inferences": [
+        {
+          "idea": "REGION_FIRST_WITH_PRICE_REPRESENTATIVE_AND_SEPARATE_VOLUME_PEAKS",
+          "status": "IMPLEMENTATION_REPRESENTATION_DERIVED_FROM_USER_DESCRIPTION_NOT_APPROVED_AUTOMATIC_ALGORITHM"
+        },
+        {
+          "idea": "C_IS_A_STRUCTURE_TRANSITION_REFERENCE_NOT_A_FIXED_DAY_COUNT_CUTOFF",
+          "status": "DESIGN_INTERPRETATION"
+        }
+      ],
+      "classification_quality": "NOT_VALIDATED",
+      "code": "1101",
+      "corporate_action_comparability": "NOT_FULLY_VERIFIED",
+      "full_history_high": "NOT_ESTABLISHED",
+      "newer_region": {
+        "actual_remaining_trapped_shares": null,
+        "bar_membership": null,
+        "end_date": null,
+        "exact_start_date": null,
+        "interpretation_status": "USER_QUALITATIVE_STRUCTURE_JUDGMENT",
+        "ownership_stability_verified": false,
+        "relation": "RIGHT_OF_C",
+        "start_reference": "2024-01-19",
+        "user_characterization": "新的平緩價格帶，籌碼更為沉澱"
+      },
+      "older_region": {
+        "bar_membership": null,
+        "end_description": "到C點",
+        "end_reference": {
+          "chart_label": "C",
+          "date": "2024-01-19",
+          "source_low": "31.80"
+        },
+        "exact_mathematical_boundary": null,
+        "exact_start_date": null,
+        "largest_day_in_formally_selected_region": null,
+        "price_bounds": null,
+        "reason": "START_DATE_AND_FULL_MEMBERSHIP_NOT_FIXED",
+        "start_description": "大約2023年9月",
+        "start_month": "2023-09",
+        "start_precision": "APPROXIMATE_MONTH",
+        "total_volume": null,
+        "user_characterization": "共同的起伏價格帶，G1為其價量壓力代表"
+      },
+      "price_mode": "RAW_CANDIDATE",
+      "product_integration": "NOT_IMPLEMENTED_THIS_TURN",
+      "quote_interpretation": {
+        "volume_left_phrase": "PRESERVE_QUOTE_NO_ADDITIONAL_EXACT_WINDOW_ASSIGNED",
+        "year_typo": {
+          "basis": "same_message_explicit_2023_09_and_chart_context",
+          "interpreted": "2023年9月",
+          "original": "1023年9月"
+        }
+      },
+      "representative": {
+        "general_selection_formula": null,
+        "id": "G1",
+        "is_highest_volume_day": false,
+        "is_unique_high": null,
+        "known_same_price_peer": {
+          "date": "2023-09-14",
+          "formal_region_membership": "UNSET_APPROXIMATE_START",
+          "raw_high": "35.50"
+        },
+        "original_manual_case_unchanged": true,
+        "raw_high": "35.50",
+        "role": "REPRESENTATIVE_OF_WHOLE_PRICE_AND_VOLUME_REGION",
+        "source_date": "2023-11-28",
+        "user_rationale": [
+          "HIGH_PRICE",
+          "HIGH_VOLUME",
+          "LEFT_PRICE_RELATION",
+          "MULTIPLE_VOLUME_PEAKS_IN_REGION"
+        ]
+      },
+      "review_kind": "LATER_USER_MANUAL_REVIEW_NOT_ASOF_AUTOMATIC_SIGNAL",
+      "reviewed_at": "2026-10-18T21:04:23+08:00",
+      "schema_version": "user-reviewed-price-volume-region/0.1",
+      "source_binding": {
+        "chart_base": "sha256:50e560b77640da3b7d000c0db67fc73a3f5b69d0bd744871ccb03483f8ec115e",
+        "frame_id": "sha256:b7215491c924570f3b40594fbd859f4b5c2532b247b62b6e625a8fcb66964f70",
+        "original_export_sha256": "369947bad71ab3fdff894c21511ebf242e1ddb12b59822d02ed93f0580bd2796",
+        "source_id": "sha256:adea7f78a97d18b6b51fbba103e08c0db33dc6fb1eb613b960b0aabe213b534b"
+      },
+      "status": "MANUAL_REGION_MEANING_CAPTURED_AUTOMATIC_RULE_NOT_DEFINED",
+      "supported_semantics": [
+        "REPRESENTATIVE_POINT_AND_REGION_ARE_DISTINCT",
+        "OLD_OSCILLATING_REGION_AND_NEW_FLATTER_REGION_ARE_DISTINCT",
+        "PRICE_PEAK_AND_VOLUME_PEAK_MAY_HAVE_DIFFERENT_DATES",
+        "LATER_FLATTER_REGION_DOES_NOT_DELETE_OLDER_REFERENCE"
+      ],
+      "unknown_rules": [
+        "EXACT_REGION_START_AND_END_INCLUSION",
+        "AUTOMATIC_REGION_SPLIT",
+        "PRICE_BOUNDS",
+        "REPRESENTATIVE_PRICE_VOLUME_SELECTION_FORMULA",
+        "FLATNESS_AND_SETTLEMENT_THRESHOLD",
+        "REGION_VOLUME_MEASURE_AND_VOLUME_EXPANSION_COMPARATOR",
+        "PRESSURE_STRENGTH_AND_TIME_DECAY",
+        "GENERALIZATION_AND_LIFECYCLE"
+      ],
+      "user_quote": "G1是因為高點與高量選出來的代表壓力點，實則一整個價格帶和成交量帶的壓力代表，真要去選壓力區就是大約2023年9月一直到C點，原因是因為G1是高點往左劃一條線1023年9月都在此線之下，成交量也是在G1左邊到2023年之間有過幾個較高的量。之所以劃到C點是因為2023年9月一直到C點有一個共同的起伏價格帶，而C點右側則是一個新的平緩價格帶因此是籌碼更為沉澱的區域。"
+    },
+    "g2": {
+      "action_qualification": "NOT_EVALUATED",
+      "analysis_as_of": "2026-10-16",
+      "classification_quality": "NOT_VALIDATED",
+      "code": "1101",
+      "coordinate_tool_observation": {
+        "direct_android_observation_this_turn": false,
+        "full_tool_acceptance": "NOT_ESTABLISHED_BY_ENDPOINT_REPORT_ALONE",
+        "user_supplied_exact_endpoint_text": true
+      },
+      "corporate_action_comparability": "NOT_FULLY_VERIFIED",
+      "external_reference": {
+        "author": "Nicolas Darvas",
+        "automatic_strategy_changes_authorized": false,
+        "english_title": "How I Made $2,000,000 in the Stock Market",
+        "read_status": "PUBLISHER_METADATA_AND_BOOK_PREVIEW_CONTENTS_AND_INITIAL_PREVIEW_READ_BOX_CHAPTER_BODY_NOT_FULLY_READ",
+        "relationship": "USER_SAYS_CONCEPT_SIMILAR_NOT_ALL_RULES_ADOPTED",
+        "sources": [
+          {
+            "scope": "PUBLISHER_AUTHOR_TITLE_METADATA",
+            "url": "https://www.simonandschuster.com/books/How-I-Made-%242-000-000-in-the-Stock-Market/Nicolas-Darvas/9798880905577"
+          },
+          {
+            "scope": "BOOK_PREVIEW_CONTENTS_CHAPTER_FOUR_AND_INITIAL_PREVIEW",
+            "url": "https://www.everand.com/book/1015089169/How-I-Made-2-000-000-in-the-Stock-Market"
+          }
+        ],
+        "topic": "Box Theory",
+        "user_book_title": "我如何在股市賺到200萬美元"
+      },
+      "full_history_high": "NOT_ESTABLISHED",
+      "price_mode": "RAW_CANDIDATE",
+      "product_integration": "NOT_IMPLEMENTED_THIS_TURN",
+      "region": {
+        "automatic_region_split": null,
+        "end": {
+          "close": "36.05",
+          "date": "2023-08-16",
+          "high": "36.60",
+          "low": "36.00",
+          "open": "36.55",
+          "volume_shares_scaled": "30022247"
+        },
+        "exact_end_date": "2023-08-16",
+        "exact_start_date": "2023-01-16",
+        "precision": "EXACT_DATES_USER_REPORTED_SOURCE_VERIFIED",
+        "price_bounds": null,
+        "start": {
+          "close": "36.50",
+          "date": "2023-01-16",
+          "high": "36.90",
+          "low": "36.15",
+          "open": "36.55",
+          "volume_shares_scaled": "34494589"
+        },
+        "total_volume": null,
+        "volume_measure_rule": null
+      },
+      "representative": {
+        "id": "G2",
+        "raw_high": "40.25",
+        "role": "USER_SELECTED_REGION_REPRESENTATIVE_NOT_AUTOMATIC_SIGNAL",
+        "source_date": "2023-05-02"
+      },
+      "review_date": "2026-10-18",
+      "review_kind": "LATER_USER_MANUAL_REVIEW_NOT_ASOF_AUTOMATIC_SIGNAL",
+      "review_timestamp_note": "Exact timestamp of endpoint message unavailable; no invented time.",
+      "review_timezone": "Asia/Taipei",
+      "reviewed_at": null,
+      "schema_version": "user-reviewed-g2-region/0.2",
+      "source_binding": {
+        "chart_base": "sha256:50e560b77640da3b7d000c0db67fc73a3f5b69d0bd744871ccb03483f8ec115e",
+        "frame_id": "sha256:b7215491c924570f3b40594fbd859f4b5c2532b247b62b6e625a8fcb66964f70",
+        "source_export_sha256": "369947bad71ab3fdff894c21511ebf242e1ddb12b59822d02ed93f0580bd2796",
+        "source_id": "sha256:adea7f78a97d18b6b51fbba103e08c0db33dc6fb1eb613b960b0aabe213b534b"
+      },
+      "status": "EXACT_G2_ENDPOINTS_REPORTED_AND_SOURCE_VERIFIED",
+      "supersedes": {
+        "path": "docs/visual-discussion/20261018_g2_coordinate/user_review.json",
+        "scope": "Approximate region dates only; previous quotation, Darvas reference, evidence and tool remain historical."
+      },
+      "unknown_rules": [
+        "PRICE_BOUNDS",
+        "AUTOMATIC_REGION_SPLIT",
+        "REPRESENTATIVE_SELECTION_FORMULA",
+        "BOX_CONFIRMATION_PROCEDURE",
+        "VOLUME_EXPANSION_CRITERIA",
+        "FLATNESS_AND_SETTLEMENT_THRESHOLDS",
+        "STRENGTH_DECAY_LIFECYCLE",
+        "REGION_VOLUME_MEASURE_AND_INTERPRETATION"
+      ],
+      "user_quote": "起點：2023-01-16；開36.55 高36.90 低36.15 收36.50；量34,494,589股\n終點：2023-08-16；開36.55 高36.60 低36.00 收36.05；量30,022,247股",
+      "verification": {
+        "all_equal": true,
+        "endpoint_field_checks": 10,
+        "kind": "DIRECT_LOCAL_ORIGINAL_FILE_RECHECK",
+        "new_mobile_json": false,
+        "report": "endpoint_source_verification.json"
+      }
+    }
+  },
+  "price_mode": "RAW_CANDIDATE",
+  "product_usefulness": "NOT_ESTABLISHED",
+  "qualification": "LATER_MANUAL_REVIEW_NOT_ASOF_AUTOMATIC_SIGNALS",
+  "regions": [
+    {
+      "approximate_start_month": "2023-09",
+      "bar_membership": null,
+      "display": {
+        "c_index": 552,
+        "month_first_index": 456,
+        "month_last_index": 475,
+        "qualification": "MONTH_EDGE_IS_ONLY_AN_UNCERTAIN_DISPLAY_ANCHOR"
+      },
+      "end_reference": {
+        "chart_label": "C",
+        "date": "2024-01-19",
+        "source_low": "31.80"
+      },
+      "exact_start_date": null,
+      "id": "G1",
+      "navigation": {
+        "cursor": 515,
+        "end": 572,
+        "qualification": "DISPLAY_PADDING_ONLY_NOT_REGION_BOUNDARIES",
+        "start": 436
+      },
+      "price_bounds": null,
+      "representative": {
+        "general_selection_formula": null,
+        "id": "G1",
+        "is_highest_volume_day": false,
+        "is_unique_high": null,
+        "known_same_price_peer": {
+          "date": "2023-09-14",
+          "formal_region_membership": "UNSET_APPROXIMATE_START",
+          "raw_high": "35.50"
+        },
+        "original_manual_case_unchanged": true,
+        "raw_high": "35.50",
+        "role": "REPRESENTATIVE_OF_WHOLE_PRICE_AND_VOLUME_REGION",
+        "source_date": "2023-11-28",
+        "user_rationale": [
+          "HIGH_PRICE",
+          "HIGH_VOLUME",
+          "LEFT_PRICE_RELATION",
+          "MULTIPLE_VOLUME_PEAKS_IN_REGION"
+        ]
+      },
+      "title": "G1 約2023年9月→C",
+      "total_volume": null
+    },
+    {
+      "display": {
+        "end_index": 444,
+        "endpoint_inclusion": "INCLUSIVE_DISPLAY_ONLY_NOT_A_VOLUME_MEASURE",
+        "start_index": 309
+      },
+      "endpoints": {
+        "end": {
+          "close": "36.05",
+          "date": "2023-08-16",
+          "high": "36.60",
+          "low": "36.00",
+          "open": "36.55",
+          "volume_shares_scaled": "30022247"
+        },
+        "start": {
+          "close": "36.50",
+          "date": "2023-01-16",
+          "high": "36.90",
+          "low": "36.15",
+          "open": "36.55",
+          "volume_shares_scaled": "34494589"
+        }
+      },
+      "exact_end_date": "2023-08-16",
+      "exact_start_date": "2023-01-16",
+      "id": "G2",
+      "navigation": {
+        "cursor": 371,
+        "end": 464,
+        "qualification": "DISPLAY_PADDING_ONLY_NOT_REGION_BOUNDARIES",
+        "start": 289
+      },
+      "price_bounds": null,
+      "representative": {
+        "id": "G2",
+        "raw_high": "40.25",
+        "role": "USER_SELECTED_REGION_REPRESENTATIVE_NOT_AUTOMATIC_SIGNAL",
+        "source_date": "2023-05-02"
+      },
+      "title": "G2 2023-01-16～2023-08-16",
+      "total_volume": null,
+      "volume_measure_rule": null
+    },
+    {
+      "bar_membership": null,
+      "display": {
+        "c_index": 552,
+        "draw": "OPEN_DIRECTION_RAIL_ONLY_NO_ASSERTED_END_OR_PRICE_BOUNDS"
+      },
+      "end_date": null,
+      "exact_start_date": null,
+      "id": "C_RIGHT",
+      "navigation": {
+        "cursor": 552,
+        "end": 612,
+        "qualification": "DISPLAY_PADDING_ONLY_NOT_REGION_BOUNDARIES",
+        "start": 532
+      },
+      "qualification": "USER_QUALITATIVE_JUDGMENT_NOT_VERIFIED_OWNERSHIP_OR_ALL_LATER_BARS_CLASSIFICATION",
+      "title": "C後新平緩帶｜終點未定",
+      "user_characterization": "新的平緩價格帶，籌碼更為沉澱"
+    }
+  ],
+  "remaining_ownership": null,
+  "review_sources": {
+    "g1": {
+      "path": "docs/visual-discussion/20261018_g1_region_review/user_review.json",
+      "sha256": "df6d0668bd0a2b7a20ad1f7a02db7829b00823504e0375aab6745dbf4c73e21c"
+    },
+    "g1_facts": {
+      "path": "docs/visual-discussion/20261018_g1_region_review/g1_region_review_facts.json",
+      "sha256": "470be7d0a0d608ecc9d7b8177ae2b583b00cc16b071216dfd0560bb631fd39f6"
+    },
+    "g2": {
+      "path": "docs/visual-discussion/20261018_g2_endpoints/user_review.json",
+      "sha256": "9ff93bec1129500eec8cc03663925f63a63f11229d5995681a091048d09382b5"
+    },
+    "g2_verification": {
+      "path": "docs/visual-discussion/20261018_g2_endpoints/endpoint_source_verification.json",
+      "sha256": "2c9adb690f1b2cffc05074b220cb21e14a925a7dbdd1743e41f2728c62d4a759"
+    }
+  },
+  "schema_version": "manual-region-layer/0.1",
+  "source_id": "sha256:adea7f78a97d18b6b51fbba103e08c0db33dc6fb1eb613b960b0aabe213b534b",
+  "volume_evidence": [
+    {
+      "bar": {
+        "close": "32.45",
+        "date": "2023-10-18",
+        "high": "32.75",
+        "low": "32.30",
+        "open": "32.65",
+        "volume_shares_scaled": "110992007"
+      },
+      "qualification": "RETAINED_SOURCE_REFERENCE_NOT_FORMAL_MAX_OR_REGION_VOLUME_RULE"
+    },
+    {
+      "bar": {
+        "close": "34.95",
+        "date": "2023-11-30",
+        "high": "35.30",
+        "low": "34.30",
+        "open": "34.30",
+        "volume_shares_scaled": "106415572"
+      },
+      "qualification": "RETAINED_SOURCE_REFERENCE_NOT_FORMAL_MAX_OR_REGION_VOLUME_RULE"
+    }
+  ]
+}

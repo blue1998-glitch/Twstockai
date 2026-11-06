@@ -1,0 +1,30 @@
+{
+  "schema_version": "graph-source-query-request/0.1",
+  "binding": {
+    "result_id": "sha256:ec7bca9ed6aa176c328fd8c4e94a31ea66967832e7089ac20a44090461f49da4",
+    "source_prefix_fingerprint": "sha256:e1651ca453df5b818e091575ded756953f69271f69f69d6008bb544f2fe76832",
+    "context": {
+      "code": "1101",
+      "corporate_action_comparability": "RAW_CROSS_YEAR_UNVERIFIED",
+      "exchange": "TWSE",
+      "historical_publication_timing": "UNVERIFIED",
+      "price_basis_id": "sha256:50e560b77640da3b7d000c0db67fc73a3f5b69d0bd744871ccb03483f8ec115e",
+      "price_mode": "RAW_CANDIDATE",
+      "source_id": "sha256:adea7f78a97d18b6b51fbba103e08c0db33dc6fb1eb613b960b0aabe213b534b",
+      "source_kind": "RETAINED_OFFICIAL_DAILY_OHLCV",
+      "volume_unit": "SHARES_REPORTED"
+    }
+  },
+  "pivot_ids": [
+    "sha256:011882379d9561e6159599b0ec46daafcab6525bee76307ad758658734f7d611",
+    "sha256:0dd27c9869d1bfc891a79e904c621712928b60b46b4f93579d043ed39b42068f",
+    "sha256:9dfc96bd6434daa930e32fb2f09cd7d463a8fbb680a0f029cba636eef460130c"
+  ],
+  "path_requests": [
+    {
+      "from_id": "sha256:011882379d9561e6159599b0ec46daafcab6525bee76307ad758658734f7d611",
+      "to_id": "sha256:9dfc96bd6434daa930e32fb2f09cd7d463a8fbb680a0f029cba636eef460130c"
+    }
+  ],
+  "selected_at": null
+}

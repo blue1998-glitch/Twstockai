@@ -1,0 +1,79 @@
+{
+  "research": {
+    "schema": "capital-quantity-candidates/0.2",
+    "synthetic": true,
+    "status": "REFUSED_SEARCH_LIMIT",
+    "incumbent": "A",
+    "destination": "B",
+    "generator_policy": {
+      "version": "synthetic-quantity-domain/0.1",
+      "parameter_source": "EXPLICIT_SYNTHETIC_ENUMERATION_NOT_USER_RULE",
+      "available_at": "2026-01-05T14:00:00+08:00",
+      "edge_budget": "1000"
+    },
+    "bounds": {
+      "sell_A": {
+        "minimum": "0",
+        "maximum": "2"
+      },
+      "additional_B": {
+        "minimum": "0",
+        "maximum": "2"
+      }
+    },
+    "grid_points": 9,
+    "configured_grid_limit": 8,
+    "implementation_grid_limit": 1024,
+    "legacy_full_builder_limit": 20000,
+    "enumeration_complete": false,
+    "baseline": null,
+    "candidates": [],
+    "groups": {
+      "CURRENTLY_FEASIBLE": [],
+      "WAIT_SETTLEMENT_REASSESSMENT": [],
+      "REJECTED": [],
+      "NOT_IMPLEMENTED": []
+    },
+    "selected_id": null,
+    "ranking": null,
+    "order_generation": "NOT_PERFORMED",
+    "execution": "NOT_PERFORMED",
+    "candidate_scope": "MUTUALLY_EXCLUSIVE_ALTERNATIVES_FROM_ONE_ACCOUNT_NOT_SIMULTANEOUS_ORDERS",
+    "reasons": [
+      "EXPLICIT_GRID_ENUMERATION_LIMIT_EXCEEDED"
+    ],
+    "data_qualified": false,
+    "execution_model_qualified": false,
+    "historical_signal_eligible": false,
+    "policy_authorized": false,
+    "live_execution_authorized": false,
+    "primary_pressure_id": null,
+    "batch_context": {
+      "version": "synthetic-batch-phase/0.1",
+      "parameter_source": "EXPLICIT_SYNTHETIC_RESEARCH_EPISODE_NOT_AUTHENTICATED_HISTORY",
+      "available_at": "2026-01-05T15:00:00+08:00",
+      "phase": "FIRST_ENTRY",
+      "origin": "DECLARED_SYNTHETIC_OPENING",
+      "code": "B",
+      "source_id": "fixture",
+      "basis_id": "RAW:fixture:B",
+      "adjustment_version": "RAW:synthetic/1",
+      "account_id": "sha256:2369150777f3a0396a56e16a8b1d0531e9de4568da044f6a7a2d996e9835e8c2"
+    },
+    "batch_phase_reasons": [],
+    "policy_governs": [
+      "bounds",
+      "max_grid_combinations",
+      "edge_budget"
+    ],
+    "account_liquidation_claimed": false,
+    "original_pending_B_orders": []
+  },
+  "source_integrity_metadata": {
+    "full_request_id": "sha256:9b527a6a6997a7d9e993f396f86cef561d051b8b4da9bc6ba1820f970a07f0b3",
+    "original": {
+      "full_source_fingerprint": "SYNTHETIC_SOURCE_BASELINE",
+      "historical_availability": "NOT_MARKET_DATA"
+    }
+  }
+}

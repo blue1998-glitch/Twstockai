@@ -1,0 +1,72 @@
+{
+  "status": "PASS",
+  "filename": "m1-source-contracts-v08-20261023.zip",
+  "sha256": "3b14522f29a03017a462c2d84eeb86f4b85151c01c9ae9a30f3fe051ba21cb72",
+  "members": 693,
+  "parent_v07_members_byte_exact": 651,
+  "manifests": {
+    "ACTION_PACKAGE_MANIFEST.json": 292,
+    "ACTION_RESOLUTION_MANIFEST.json": 510,
+    "ACTION_SCOPE_MANIFEST.json": 469,
+    "OFFICIAL_ACTIONS_MANIFEST.json": 409,
+    "OFFLINE_SOURCE_BRIDGE_MANIFEST.json": 605,
+    "RESOLUTION_VALIDATION_MANIFEST.json": 527,
+    "SOURCE_CONTRACTS_MANIFEST.json": 692,
+    "SOURCE_DIAGNOSTICS_MANIFEST.json": 574,
+    "SOURCE_FOLLOWUP_MANIFEST.json": 650,
+    "SOURCE_QUALIFICATION_MANIFEST.json": 374
+  },
+  "commands": [
+    {
+      "command": [
+        "python3",
+        "-m",
+        "unittest",
+        "rotation_research.test_source_contracts",
+        "rotation_research.test_source_followup",
+        "-v"
+      ],
+      "returncode": 0,
+      "log": "extracted-tests.log"
+    },
+    {
+      "command": [
+        "python3",
+        "-m",
+        "rotation_research.source_contracts_sources"
+      ],
+      "returncode": 0,
+      "log": "extracted-producer.log"
+    }
+  ],
+  "actual_distinct_tests": 60,
+  "new_tests": 31,
+  "old_tests_actually_rerun": 29,
+  "all_bundle_members_unchanged_after_test_and_producer": true,
+  "exact_original_bridge_zip_included": true,
+  "missing_quotes_new_evidence_and_old_unknown_preserved": true,
+  "offline_producer_verification": {
+    "schema": "rotation-source-contract-research/0.8",
+    "actual_official_originals_new": 1,
+    "archived_originals_reused_and_fixed_github_readback": 1,
+    "observations": 7,
+    "distinct_new_company_actions_claimed": null,
+    "exact_parent_v07_id": "sha256:49528167bede030b29359a77abebd3f8947c88e58aeaaeede62c42a76465cc89",
+    "original_quote_archives_rechecked": 122,
+    "calendar_reports_rechecked": 16,
+    "qualification_calls": 70,
+    "refused_windows": 70,
+    "insufficient_windows": 2,
+    "exchange_unsupported_windows": 8,
+    "qualified_total_net_return_windows": 0,
+    "numeric_replay_calls": 0,
+    "six_strategy_replays": 0,
+    "offline_producer_network_requests": 0,
+    "missing_quotes_exact_parent_preserved": true,
+    "work_report": "NOT_AVAILABLE_NOT_CLAIMED_READ",
+    "android": "NOT_TESTED_NEW_BUILD",
+    "historical_signal_eligible": false,
+    "primary_pressure_id": null,
+    "policy_authorized": false
+  }
+}

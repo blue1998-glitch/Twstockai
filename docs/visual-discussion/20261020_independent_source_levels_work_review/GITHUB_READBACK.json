@@ -1,0 +1,239 @@
+{
+  "schema": "m1-github-readback/1",
+  "repository": "blue1998-glitch/Twstockai",
+  "branch": "dev/m1-v018-chart-annotations",
+  "starting_commit": "4c8d483afc7bb052b01cb6a9b99db92dfbd95612",
+  "research_commit": "ef2f80df7e442c9782aeb2075a9eb0899f24c35b",
+  "scope": "2884 frozen independent source-level study; documentation only, no formal attribution or product change",
+  "required_ancestor_checks": [
+    {
+      "commit": "e0bd48c9245c877fda8ebca5598f69ff346a99cb",
+      "status": "ahead",
+      "behind_by": 0,
+      "merge_base": "e0bd48c9245c877fda8ebca5598f69ff346a99cb"
+    },
+    {
+      "commit": "e45d972406cc6a4ef1a9babf1ba9865d97073096",
+      "status": "ahead",
+      "behind_by": 0,
+      "merge_base": "e45d972406cc6a4ef1a9babf1ba9865d97073096"
+    },
+    {
+      "commit": "fff47915523fab8c8de8279de8bbb7a26b05647b",
+      "status": "ahead",
+      "behind_by": 0,
+      "merge_base": "fff47915523fab8c8de8279de8bbb7a26b05647b"
+    },
+    {
+      "commit": "db000b9a7a09c2bbc693e9d2094482a5edd6b867",
+      "status": "ahead",
+      "behind_by": 0,
+      "merge_base": "db000b9a7a09c2bbc693e9d2094482a5edd6b867"
+    },
+    {
+      "commit": "2d9c9aad4b88b53d9552e479a3f625377f2b7161",
+      "status": "ahead",
+      "behind_by": 0,
+      "merge_base": "2d9c9aad4b88b53d9552e479a3f625377f2b7161"
+    }
+  ],
+  "main_observed_unchanged": "9c5b168c09ba80010c74f03b9c537e8b7474256a",
+  "files": [
+    {
+      "path": "docs/visual-discussion/20261020_independent_source_levels_work_review/README.md",
+      "git_blob_sha": "3d21cb928d3c5aaae60ca0fd8c9f3daa4df2ac61",
+      "bytes": 5534,
+      "sha256": "20ae2a0849f5ecd55fc06392999d5d2b54617e682dc82749a360a6aaa3bbe7b0",
+      "result": "PASS_EXACT_BASE64_BYTES_AND_GIT_BLOB"
+    },
+    {
+      "path": "docs/visual-discussion/20261020_independent_source_levels_work_review/WORK_HANDOFF.md",
+      "git_blob_sha": "72e1a45af73e01232d99fdabaa9016c8398ecfbb",
+      "bytes": 32181,
+      "sha256": "73495837c7c20c3190f856512a2604bf26de4ea923f06cb34e259ddaa0d4ef7f",
+      "result": "PASS_EXACT_BASE64_BYTES_AND_GIT_BLOB"
+    },
+    {
+      "path": "docs/visual-discussion/20261020_independent_source_levels_work_review/WORK_LOG.md",
+      "git_blob_sha": "009c5e9a726b04e077ef9b74cc4ce3b96628499d",
+      "bytes": 1413,
+      "sha256": "e380a6ee68363d4024950636efd1ad664b2589679ce8777eea7c4030cb886690",
+      "result": "PASS_EXACT_BASE64_BYTES_AND_GIT_BLOB"
+    },
+    {
+      "path": "docs/visual-discussion/20261020_independent_source_levels_work_review/audit.py",
+      "git_blob_sha": "027aac97ccf6e26d4e3f21c8040fbcd405c9c791",
+      "bytes": 9218,
+      "sha256": "822336331f063cf0b076c81cc1e3c55904593092d9793f3fdad342dd7fe57907",
+      "result": "PASS_EXACT_BASE64_BYTES_AND_GIT_BLOB"
+    },
+    {
+      "path": "docs/visual-discussion/20261020_independent_source_levels_work_review/build_pdf.py",
+      "git_blob_sha": "8d41f23a991c720c6cc74a8970bb22d1c2a4cfe0",
+      "bytes": 7123,
+      "sha256": "62edc996b39e9c105fe72f662ce3a237d27c1311d0e69ca31947a26f7ed6e0b4",
+      "result": "PASS_EXACT_BASE64_BYTES_AND_GIT_BLOB"
+    },
+    {
+      "path": "docs/visual-discussion/20261020_independent_source_levels_work_review/source-data-2884.json",
+      "git_blob_sha": "074a7e4668f3f1bb0f91045e6dba3d1988c34661",
+      "bytes": 537118,
+      "sha256": "ab87a51b5b8afd076603f290b10f415bd60d31ae47c5ab2f6d9d609ad4014901",
+      "result": "PASS_EXACT_BASE64_BYTES_AND_GIT_BLOB"
+    },
+    {
+      "path": "docs/visual-discussion/20261020_independent_source_levels_work_review/evidence.json",
+      "git_blob_sha": "834121e9c39938efb4388363c4cc203c3d670df1",
+      "bytes": 42712,
+      "sha256": "8df3197975fdc102cdf27a77144a79cc34f51a73ca78a75aa63d12a00069aa94",
+      "result": "PASS_EXACT_BASE64_BYTES_AND_GIT_BLOB"
+    },
+    {
+      "path": "docs/visual-discussion/20261020_independent_source_levels_work_review/source-provenance.json",
+      "git_blob_sha": "3886f518a89c08bd9b5c1aa02582627cc19e7f6e",
+      "bytes": 932,
+      "sha256": "3176a032ec92ea584cf1592057fbdbcfd1b69405bbc98470c073405c2dd01308",
+      "result": "PASS_EXACT_BASE64_BYTES_AND_GIT_BLOB"
+    },
+    {
+      "path": "docs/visual-discussion/20261020_independent_source_levels_work_review/verification.json",
+      "git_blob_sha": "66e15da25437ce8c65af577ab3aac8f0c5119b8e",
+      "bytes": 2175,
+      "sha256": "84520b4ab33fa190c152859aa9b3b2ceb1e913d1bf9de486720d47945ac7ca8a",
+      "result": "PASS_EXACT_BASE64_BYTES_AND_GIT_BLOB"
+    },
+    {
+      "path": "docs/visual-discussion/20261020_independent_source_levels_work_review/2884-full-context.png",
+      "git_blob_sha": "de43afd35cf37b2f86271aa0dba601d319f4b65c",
+      "bytes": 403452,
+      "sha256": "5d35ee2b82aa922b0299115e8696341df0963e70a6dc9b5e599fddc48c40b70c",
+      "result": "PASS_EXACT_BASE64_BYTES_AND_GIT_BLOB"
+    },
+    {
+      "path": "docs/visual-discussion/20261020_independent_source_levels_work_review/2884-recent-context.png",
+      "git_blob_sha": "5763faa514a9c47c78d52bd13700b6d70743e9dc",
+      "bytes": 368077,
+      "sha256": "c11b69c32115edd9981ef41f71415a94205c10cda1f103109dc1d962eec0bb2d",
+      "result": "PASS_EXACT_BASE64_BYTES_AND_GIT_BLOB"
+    },
+    {
+      "path": "docs/visual-discussion/20261020_independent_source_levels_work_review/output/pdf/m1-independent-source-levels.pdf",
+      "git_blob_sha": "fed0cfa99bcfba1ca57ec573b5b0686ac6bdd532",
+      "bytes": 391586,
+      "sha256": "a60128d12217e8f45f8e2088b407a5a2adb1b0618d45223a3b1f6ebaf2437978",
+      "result": "PASS_EXACT_BASE64_BYTES_AND_GIT_BLOB"
+    },
+    {
+      "path": "AGENTS.md",
+      "git_blob_sha": "ef2c98ab27777e8e7737b12400b798cb0ac3da1d",
+      "result": "PASS_EXACT_UTF8_CONTENT"
+    },
+    {
+      "path": "CONTINUE_IN_WORK_MODE.md",
+      "git_blob_sha": "fd10fd76fc318435f331dc4c4be4c1c1ddb2eb1c",
+      "result": "PASS_EXACT_UTF8_CONTENT"
+    },
+    {
+      "path": "M1_V019_GRAPH_CORE_RESUME_HANDOFF.md",
+      "git_blob_sha": "15b049149e8e70d5828e90f86fd6a38a88ece576",
+      "result": "PASS_EXACT_UTF8_CONTENT"
+    }
+  ],
+  "file_count": 15,
+  "change_scope_check": {
+    "status": "PASS",
+    "files": [
+      {
+        "path": "AGENTS.md",
+        "status": "modified",
+        "deletions": 0
+      },
+      {
+        "path": "CONTINUE_IN_WORK_MODE.md",
+        "status": "modified",
+        "deletions": 0
+      },
+      {
+        "path": "M1_V019_GRAPH_CORE_RESUME_HANDOFF.md",
+        "status": "modified",
+        "deletions": 0
+      },
+      {
+        "path": "docs/visual-discussion/20261020_independent_source_levels_work_review/2884-full-context.png",
+        "status": "added",
+        "deletions": 0
+      },
+      {
+        "path": "docs/visual-discussion/20261020_independent_source_levels_work_review/2884-recent-context.png",
+        "status": "added",
+        "deletions": 0
+      },
+      {
+        "path": "docs/visual-discussion/20261020_independent_source_levels_work_review/README.md",
+        "status": "added",
+        "deletions": 0
+      },
+      {
+        "path": "docs/visual-discussion/20261020_independent_source_levels_work_review/WORK_HANDOFF.md",
+        "status": "added",
+        "deletions": 0
+      },
+      {
+        "path": "docs/visual-discussion/20261020_independent_source_levels_work_review/WORK_LOG.md",
+        "status": "added",
+        "deletions": 0
+      },
+      {
+        "path": "docs/visual-discussion/20261020_independent_source_levels_work_review/audit.py",
+        "status": "added",
+        "deletions": 0
+      },
+      {
+        "path": "docs/visual-discussion/20261020_independent_source_levels_work_review/build_pdf.py",
+        "status": "added",
+        "deletions": 0
+      },
+      {
+        "path": "docs/visual-discussion/20261020_independent_source_levels_work_review/evidence.json",
+        "status": "added",
+        "deletions": 0
+      },
+      {
+        "path": "docs/visual-discussion/20261020_independent_source_levels_work_review/output/pdf/m1-independent-source-levels.pdf",
+        "status": "added",
+        "deletions": 0
+      },
+      {
+        "path": "docs/visual-discussion/20261020_independent_source_levels_work_review/source-data-2884.json",
+        "status": "added",
+        "deletions": 0
+      },
+      {
+        "path": "docs/visual-discussion/20261020_independent_source_levels_work_review/source-provenance.json",
+        "status": "added",
+        "deletions": 0
+      },
+      {
+        "path": "docs/visual-discussion/20261020_independent_source_levels_work_review/verification.json",
+        "status": "added",
+        "deletions": 0
+      }
+    ],
+    "no_original_product_core_data_or_case_edits": true
+  },
+  "receipt_self_reference_note": "This receipt is committed separately after the15 files read back. Its own final commit cannot self-reference; final response reports the receipt commit after separate exact readback and HEAD check.",
+  "not_run": [
+    "original_core",
+    "MACD",
+    "source-query adapter CLI",
+    "reaction_facts adapter CLI",
+    "bootstrap",
+    "old14 tests",
+    "old22 tests",
+    "old60 recognition recomputations",
+    "ZIP",
+    "browser",
+    "Android"
+  ],
+  "Android": "NOT_TESTED_NEW_BUILD"
+}

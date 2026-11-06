@@ -1,0 +1,138 @@
+{
+  "observed_at": "2026-10-23T01:20:40.607678+00:00",
+  "scope": "SOURCE_ARITHMETIC_SEMANTIC_AND_PRESERVATION_CHECKS_NOT_ENGINE_TESTS",
+  "checks_count": 31,
+  "all_pass": true,
+  "checks": [
+    {
+      "check": "tcc-meeting-index: exact original fingerprint/size/HTTP",
+      "pass": true
+    },
+    {
+      "check": "tcc-meeting-index: text tied to raw bytes",
+      "pass": true
+    },
+    {
+      "check": "tcc-meeting-index: no redirect/retry",
+      "pass": true
+    },
+    {
+      "check": "tcc-2026-agm-minutes: exact original fingerprint/size/HTTP",
+      "pass": true
+    },
+    {
+      "check": "tcc-2026-agm-minutes: text tied to raw bytes",
+      "pass": true
+    },
+    {
+      "check": "tcc-2026-agm-minutes: no redirect/retry",
+      "pass": true
+    },
+    {
+      "check": "actual index link binds PDF basename",
+      "pass": true
+    },
+    {
+      "check": "issuer meeting index anchors date",
+      "pass": true
+    },
+    {
+      "check": "PDF format/page count",
+      "pass": true
+    },
+    {
+      "check": "scope is first discussion not different dividend vote",
+      "pass": true
+    },
+    {
+      "check": "exact approved funding label",
+      "pass": true
+    },
+    {
+      "check": "exact approved amount and rate",
+      "pass": true
+    },
+    {
+      "check": "exact scoped vote_attending_rights",
+      "pass": true
+    },
+    {
+      "check": "exact scoped vote_yes_rights",
+      "pass": true
+    },
+    {
+      "check": "exact scoped vote_no_rights",
+      "pass": true
+    },
+    {
+      "check": "exact scoped vote_invalid_rights",
+      "pass": true
+    },
+    {
+      "check": "exact scoped vote_abstain_or_not_voted_rights",
+      "pass": true
+    },
+    {
+      "check": "vote rights arithmetic",
+      "pass": true
+    },
+    {
+      "check": "vote displayed percent",
+      "pass": true
+    },
+    {
+      "check": "shareholder-level rounding and remainder are explicit",
+      "pass": true
+    },
+    {
+      "check": "ratio/date authority retained",
+      "pass": true
+    },
+    {
+      "check": "treasury tranche cancellation not holder ratio",
+      "pass": true
+    },
+    {
+      "check": "unknown net/tax/history not promoted",
+      "pass": true
+    },
+    {
+      "check": "no engine/catalog/completeness claim",
+      "pass": true
+    },
+    {
+      "check": "two prior receipts rechecked at fixed/new heads",
+      "pass": true
+    },
+    {
+      "check": "visual review bound to original PDF",
+      "pass": true
+    },
+    {
+      "check": "all prior tracked work preserved except root prefixes",
+      "pass": true
+    },
+    {
+      "check": "AGENTS.md: exact original suffix",
+      "pass": true
+    },
+    {
+      "check": "CONTINUE_IN_WORK_MODE.md: exact original suffix",
+      "pass": true
+    },
+    {
+      "check": "M1_V019_GRAPH_CORE_RESUME_HANDOFF.md: exact original suffix",
+      "pass": true
+    },
+    {
+      "check": "read saved v0.3 windows not rerun",
+      "pass": true
+    }
+  ],
+  "new_official_archives": 2,
+  "rendered_inspected_pdf_pages": 4,
+  "new_product_unit_tests": 0,
+  "new_qualification_runs": 0,
+  "new_numeric_or_strategy_replays": 0,
+  "android": "NOT_TESTED_NEW_BUILD"
+}

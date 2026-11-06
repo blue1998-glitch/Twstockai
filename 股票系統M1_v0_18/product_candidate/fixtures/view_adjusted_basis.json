@@ -1,0 +1,148 @@
+{
+  "schema_version": "attempt-evidence-input/0.1",
+  "context": {
+    "series_id": "SYNTHETIC_NOT_MARKET:adjusted_basis",
+    "source_id": "HAND_AUTHORED_ENGINEERING_FIXTURE",
+    "price_basis_id": "SYNTHETIC:COMMON_ADJUSTED:1",
+    "price_mode": "ADJUSTED_CANDIDATE",
+    "volume_unit": "SHARES_REPORTED",
+    "adjustment_anchor": "2026-09-14"
+  },
+  "references": {
+    "id": "USER_VISUAL_101_106_EXAMPLE_V1",
+    "known_at": "2026-09-11T14:00:00+08:00",
+    "near_high": {
+      "price": "101",
+      "bar_date": "2026-09-10"
+    },
+    "left_zone": {
+      "low": "104",
+      "high": "106",
+      "bar_dates": [
+        "2026-09-01",
+        "2026-09-02"
+      ]
+    }
+  },
+  "history": [
+    {
+      "date": "2026-09-01",
+      "known_at": "2026-09-01T14:00:00+08:00",
+      "open": "104",
+      "high": "106",
+      "low": "104",
+      "close": "105",
+      "volume_shares": "6000",
+      "price_basis_id": "SYNTHETIC:COMMON_ADJUSTED:1"
+    },
+    {
+      "date": "2026-09-02",
+      "known_at": "2026-09-02T14:00:00+08:00",
+      "open": "105",
+      "high": "106",
+      "low": "104",
+      "close": "104.5",
+      "volume_shares": "8000",
+      "price_basis_id": "SYNTHETIC:COMMON_ADJUSTED:1"
+    },
+    {
+      "date": "2026-09-10",
+      "known_at": "2026-09-10T14:00:00+08:00",
+      "open": "100",
+      "high": "101",
+      "low": "99",
+      "close": "100",
+      "volume_shares": "4000",
+      "price_basis_id": "SYNTHETIC:COMMON_ADJUSTED:1"
+    },
+    {
+      "date": "2026-09-11",
+      "known_at": "2026-09-11T14:00:00+08:00",
+      "open": "100",
+      "high": "100.5",
+      "low": "99",
+      "close": "100",
+      "volume_shares": "3500",
+      "price_basis_id": "SYNTHETIC:COMMON_ADJUSTED:1"
+    }
+  ],
+  "observations": [
+    {
+      "date": "2026-09-14",
+      "observed_at": "2026-09-14T09:10:00+08:00",
+      "is_close": false,
+      "open": "100.5",
+      "high": "101.5",
+      "low": "100",
+      "last": "101.5",
+      "volume_shares": "4500",
+      "price_basis_id": "SYNTHETIC:COMMON_ADJUSTED:1"
+    },
+    {
+      "date": "2026-09-14",
+      "observed_at": "2026-09-14T09:30:00+08:00",
+      "is_close": false,
+      "open": "100.5",
+      "high": "103",
+      "low": "100",
+      "last": "102.5",
+      "volume_shares": "8500",
+      "price_basis_id": "SYNTHETIC:COMMON_ADJUSTED:1"
+    },
+    {
+      "date": "2026-09-14",
+      "observed_at": "2026-09-14T13:30:00+08:00",
+      "is_close": true,
+      "open": "100.5",
+      "high": "103",
+      "low": "100",
+      "last": "102",
+      "volume_shares": "9000",
+      "price_basis_id": "SYNTHETIC:COMMON_ADJUSTED:1"
+    },
+    {
+      "date": "2026-09-15",
+      "observed_at": "2026-09-15T09:30:00+08:00",
+      "is_close": false,
+      "open": "102",
+      "high": "107",
+      "low": "102",
+      "last": "107",
+      "volume_shares": "9500",
+      "price_basis_id": "SYNTHETIC:COMMON_ADJUSTED:1"
+    },
+    {
+      "date": "2026-09-15",
+      "observed_at": "2026-09-15T13:30:00+08:00",
+      "is_close": true,
+      "open": "102",
+      "high": "108",
+      "low": "102",
+      "last": "107",
+      "volume_shares": "11000",
+      "price_basis_id": "SYNTHETIC:COMMON_ADJUSTED:1"
+    },
+    {
+      "date": "2026-09-16",
+      "observed_at": "2026-09-16T13:30:00+08:00",
+      "is_close": true,
+      "open": "107",
+      "high": "107",
+      "low": "104",
+      "last": "105",
+      "volume_shares": "7000",
+      "price_basis_id": "SYNTHETIC:COMMON_ADJUSTED:1"
+    },
+    {
+      "date": "2026-09-17",
+      "observed_at": "2026-09-17T13:30:00+08:00",
+      "is_close": true,
+      "open": "105",
+      "high": "105",
+      "low": "99",
+      "last": "100",
+      "volume_shares": "6500",
+      "price_basis_id": "SYNTHETIC:COMMON_ADJUSTED:1"
+    }
+  ]
+}

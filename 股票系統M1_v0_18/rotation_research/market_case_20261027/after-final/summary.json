@@ -1,0 +1,270 @@
+[
+  {
+    "case": "draft",
+    "status": "AWAITING_EXPLICIT_INPUT",
+    "error": null,
+    "calls": {
+      "prepare": 1,
+      "source_qualify": 0,
+      "ledger_replay": 0,
+      "capital_simulate": 0,
+      "quantity_replay": 0,
+      "legacy_compare": 0,
+      "old_source_producer": 0
+    }
+  },
+  {
+    "case": "explicit-control",
+    "status": "REFUSED_SOURCE_QUALIFICATION",
+    "error": null,
+    "calls": {
+      "prepare": 1,
+      "source_qualify": 3,
+      "ledger_replay": 0,
+      "capital_simulate": 0,
+      "quantity_replay": 0,
+      "legacy_compare": 0,
+      "old_source_producer": 0
+    }
+  },
+  {
+    "case": "wrong-opening",
+    "error": "COMMON_CONDITIONS_MISMATCH",
+    "expected": "COMMON_CONDITIONS_MISMATCH",
+    "matched": true,
+    "calls": {
+      "prepare": 1,
+      "source_qualify": 0,
+      "ledger_replay": 0,
+      "capital_simulate": 0,
+      "quantity_replay": 0,
+      "legacy_compare": 0,
+      "old_source_producer": 0
+    }
+  },
+  {
+    "case": "wrong-period",
+    "error": "COMMON_CONDITIONS_MISMATCH",
+    "expected": "COMMON_CONDITIONS_MISMATCH",
+    "matched": true,
+    "calls": {
+      "prepare": 1,
+      "source_qualify": 0,
+      "ledger_replay": 0,
+      "capital_simulate": 0,
+      "quantity_replay": 0,
+      "legacy_compare": 0,
+      "old_source_producer": 0
+    }
+  },
+  {
+    "case": "wrong-market-price",
+    "error": "COMMON_CONDITIONS_MISMATCH",
+    "expected": "COMMON_CONDITIONS_MISMATCH",
+    "matched": true,
+    "calls": {
+      "prepare": 1,
+      "source_qualify": 0,
+      "ledger_replay": 0,
+      "capital_simulate": 0,
+      "quantity_replay": 0,
+      "legacy_compare": 0,
+      "old_source_producer": 0
+    }
+  },
+  {
+    "case": "wrong-market-capacity",
+    "error": "COMMON_CONDITIONS_MISMATCH",
+    "expected": "COMMON_CONDITIONS_MISMATCH",
+    "matched": true,
+    "calls": {
+      "prepare": 1,
+      "source_qualify": 0,
+      "ledger_replay": 0,
+      "capital_simulate": 0,
+      "quantity_replay": 0,
+      "legacy_compare": 0,
+      "old_source_producer": 0
+    }
+  },
+  {
+    "case": "wrong-market-market_state",
+    "error": "COMMON_CONDITIONS_MISMATCH",
+    "expected": "COMMON_CONDITIONS_MISMATCH",
+    "matched": true,
+    "calls": {
+      "prepare": 1,
+      "source_qualify": 0,
+      "ledger_replay": 0,
+      "capital_simulate": 0,
+      "quantity_replay": 0,
+      "legacy_compare": 0,
+      "old_source_producer": 0
+    }
+  },
+  {
+    "case": "wrong-market-available_at",
+    "error": "COMMON_CONDITIONS_MISMATCH",
+    "expected": "COMMON_CONDITIONS_MISMATCH",
+    "matched": true,
+    "calls": {
+      "prepare": 1,
+      "source_qualify": 0,
+      "ledger_replay": 0,
+      "capital_simulate": 0,
+      "quantity_replay": 0,
+      "legacy_compare": 0,
+      "old_source_producer": 0
+    }
+  },
+  {
+    "case": "wrong-market-basis_id",
+    "error": "COMMON_CONDITIONS_MISMATCH",
+    "expected": "COMMON_CONDITIONS_MISMATCH",
+    "matched": true,
+    "calls": {
+      "prepare": 1,
+      "source_qualify": 0,
+      "ledger_replay": 0,
+      "capital_simulate": 0,
+      "quantity_replay": 0,
+      "legacy_compare": 0,
+      "old_source_producer": 0
+    }
+  },
+  {
+    "case": "wrong-market-source_id",
+    "error": "COMMON_CONDITIONS_MISMATCH",
+    "expected": "COMMON_CONDITIONS_MISMATCH",
+    "matched": true,
+    "calls": {
+      "prepare": 1,
+      "source_qualify": 0,
+      "ledger_replay": 0,
+      "capital_simulate": 0,
+      "quantity_replay": 0,
+      "legacy_compare": 0,
+      "old_source_producer": 0
+    }
+  },
+  {
+    "case": "wrong-cost-model",
+    "error": "COMMON_CONDITIONS_MISMATCH",
+    "expected": "COMMON_CONDITIONS_MISMATCH",
+    "matched": true,
+    "calls": {
+      "prepare": 1,
+      "source_qualify": 0,
+      "ledger_replay": 0,
+      "capital_simulate": 0,
+      "quantity_replay": 0,
+      "legacy_compare": 0,
+      "old_source_producer": 0
+    }
+  },
+  {
+    "case": "april-borrows-june",
+    "error": "FUTURE_EVIDENCE_REFERENCE",
+    "expected": "FUTURE_EVIDENCE_REFERENCE",
+    "matched": true,
+    "calls": {
+      "prepare": 1,
+      "source_qualify": 0,
+      "ledger_replay": 0,
+      "capital_simulate": 0,
+      "quantity_replay": 0,
+      "legacy_compare": 0,
+      "old_source_producer": 0
+    }
+  },
+  {
+    "case": "reset-opening",
+    "error": "EXACT_PATH_FIELDS_REQUIRED",
+    "expected": "EXACT_PATH_FIELDS_REQUIRED",
+    "matched": true,
+    "calls": {
+      "prepare": 1,
+      "source_qualify": 0,
+      "ledger_replay": 0,
+      "capital_simulate": 0,
+      "quantity_replay": 0,
+      "legacy_compare": 0,
+      "old_source_producer": 0
+    }
+  },
+  {
+    "case": "entry-rewritten",
+    "error": "COMMON_A_ENTRY_MISMATCH",
+    "expected": "COMMON_A_ENTRY_MISMATCH",
+    "matched": true,
+    "calls": {
+      "prepare": 1,
+      "source_qualify": 0,
+      "ledger_replay": 0,
+      "capital_simulate": 0,
+      "quantity_replay": 0,
+      "legacy_compare": 0,
+      "old_source_producer": 0
+    }
+  },
+  {
+    "case": "wrong-fill-source",
+    "error": "COMMON_A_ENTRY_MISMATCH",
+    "expected": "COMMON_A_ENTRY_MISMATCH",
+    "matched": true,
+    "calls": {
+      "prepare": 1,
+      "source_qualify": 0,
+      "ledger_replay": 0,
+      "capital_simulate": 0,
+      "quantity_replay": 0,
+      "legacy_compare": 0,
+      "old_source_producer": 0
+    }
+  },
+  {
+    "case": "synthetic-relabelling",
+    "error": "EXACT_CASE_FIELDS_REQUIRED",
+    "expected": "EXACT_CASE_FIELDS_REQUIRED",
+    "matched": true,
+    "calls": {
+      "prepare": 1,
+      "source_qualify": 0,
+      "ledger_replay": 0,
+      "capital_simulate": 0,
+      "quantity_replay": 0,
+      "legacy_compare": 0,
+      "old_source_producer": 0
+    }
+  },
+  {
+    "case": "wrong-source-binding",
+    "error": "SOURCE_BINDING_MISMATCH",
+    "expected": "SOURCE_BINDING_MISMATCH",
+    "matched": true,
+    "calls": {
+      "prepare": 1,
+      "source_qualify": 0,
+      "ledger_replay": 0,
+      "capital_simulate": 0,
+      "quantity_replay": 0,
+      "legacy_compare": 0,
+      "old_source_producer": 0
+    }
+  },
+  {
+    "case": "b-buy-before-opportunity",
+    "error": "B_FILL_BEFORE_EXPLICIT_OPPORTUNITY",
+    "expected": "B_FILL_BEFORE_EXPLICIT_OPPORTUNITY",
+    "matched": true,
+    "calls": {
+      "prepare": 1,
+      "source_qualify": 0,
+      "ledger_replay": 0,
+      "capital_simulate": 0,
+      "quantity_replay": 0,
+      "legacy_compare": 0,
+      "old_source_producer": 0
+    }
+  }
+]

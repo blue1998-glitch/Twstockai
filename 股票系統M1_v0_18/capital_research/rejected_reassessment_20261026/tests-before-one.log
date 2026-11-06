@@ -1,0 +1,14 @@
+test_rejected_restriction_survives_restore_with_current_review (capital_research.rejected_reassessment_20261026.test_reassessment.RejectedReassessmentTests.test_rejected_restriction_survives_restore_with_current_review) ... FAIL
+
+======================================================================
+FAIL: test_rejected_restriction_survives_restore_with_current_review (capital_research.rejected_reassessment_20261026.test_reassessment.RejectedReassessmentTests.test_rejected_restriction_survives_restore_with_current_review)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/workspace/Twstockai/股票系統M1_v0_18/capital_research/rejected_reassessment_20261026/test_reassessment.py", line 24, in test_rejected_restriction_survives_restore_with_current_review
+    self.assertFalse(a['restored_B_qualified'])
+AssertionError: True is not false
+
+----------------------------------------------------------------------
+Ran 1 test in 0.104s
+
+FAILED (failures=1)

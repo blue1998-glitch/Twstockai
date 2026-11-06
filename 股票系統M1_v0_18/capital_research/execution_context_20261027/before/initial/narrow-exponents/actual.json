@@ -1,0 +1,87 @@
+{
+  "error": {
+    "type": "Overflow",
+    "detail": "[<class 'decimal.Overflow'>]"
+  },
+  "traceback": "Traceback (most recent call last):\n  File \"/workspace/Twstockai/股票系統M1_v0_18/capital_research/execution_context_20261027/reproduce.py\", line 72, in probe\n    try:value=simulate(job);error=None;trace=None\n              ^^^^^^^^^^^^^\n  File \"/workspace/Twstockai/股票系統M1_v0_18/capital_research/execution.py\", line 30, in simulate\n    return _simulate(job)\n           ^^^^^^^^^^^^^^\n  File \"/workspace/Twstockai/股票系統M1_v0_18/capital_research/execution.py\", line 87, in _simulate\n    state = replay(dict(ledger_input,fills=initial_fills))\n            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"/workspace/Twstockai/股票系統M1_v0_18/rotation_research/action_ledger.py\", line 103, in replay\n    return _replay(data, base)\n           ^^^^^^^^^^^^^^^^^^^\n  File \"/workspace/Twstockai/股票系統M1_v0_18/rotation_research/action_ledger.py\", line 150, in _replay\n    initial,prices,missing=valuation(ds[0])\n                           ^^^^^^^^^^^^^^^^\n  File \"/workspace/Twstockai/股票系統M1_v0_18/rotation_research/action_ledger.py\", line 127, in valuation\n    equity=cash+sum((c['amount'] for c in claims),Decimal(0))-sum((x['amount'] for x in payable),Decimal(0));prices={};unpriced=[]\n           ~~~~^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~\ndecimal.Overflow: [<class 'decimal.Overflow'>]\n",
+  "calls": {
+    "simulate": 1,
+    "decide": 1,
+    "resume": 0,
+    "ledger_replay": 1,
+    "risk": 0,
+    "replay_sequence": 0,
+    "generate": 0,
+    "save": 0
+  },
+  "caller_before": {
+    "prec": 28,
+    "rounding": "ROUND_HALF_EVEN",
+    "Emin": -2,
+    "Emax": 2,
+    "capitals": 1,
+    "clamp": 0,
+    "traps": {
+      "InvalidOperation": true,
+      "FloatOperation": false,
+      "DivisionByZero": true,
+      "Overflow": true,
+      "Underflow": true,
+      "Subnormal": false,
+      "Inexact": false,
+      "Rounded": false,
+      "Clamped": false
+    },
+    "flags": {
+      "InvalidOperation": false,
+      "FloatOperation": false,
+      "DivisionByZero": false,
+      "Overflow": false,
+      "Underflow": false,
+      "Subnormal": false,
+      "Inexact": false,
+      "Rounded": false,
+      "Clamped": false
+    }
+  },
+  "caller_after": {
+    "prec": 28,
+    "rounding": "ROUND_HALF_EVEN",
+    "Emin": -2,
+    "Emax": 2,
+    "capitals": 1,
+    "clamp": 0,
+    "traps": {
+      "InvalidOperation": true,
+      "FloatOperation": false,
+      "DivisionByZero": true,
+      "Overflow": true,
+      "Underflow": true,
+      "Subnormal": false,
+      "Inexact": false,
+      "Rounded": false,
+      "Clamped": false
+    },
+    "flags": {
+      "InvalidOperation": false,
+      "FloatOperation": false,
+      "DivisionByZero": false,
+      "Overflow": false,
+      "Underflow": false,
+      "Subnormal": false,
+      "Inexact": false,
+      "Rounded": false,
+      "Clamped": false
+    }
+  },
+  "input_id": "sha256:69c9fb54523dc62c27c29430593e7c0ac8d7b51e7f3b1e7f6d2ddf41e5e2b757",
+  "input_unchanged": true,
+  "caller_context_unchanged": true,
+  "source_version": {
+    "path": "capital_research/execution.py",
+    "bytes": 29316,
+    "sha256": "9b8fed2161aee5003b777ec028286021b82e3a688d4791e4ac883c27e5b25774"
+  },
+  "actual": null,
+  "equal_original": false
+}

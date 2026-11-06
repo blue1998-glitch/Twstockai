@@ -1,0 +1,11 @@
+{
+  "case": "embedded-review-refused",
+  "expected": "STOPPED_INPUT_ERROR",
+  "actual": "STOPPED_NOT_IMPLEMENTED",
+  "reasons": [
+    "ROUND_FIELDS_NOT_SUPPORTED"
+  ],
+  "execution_calls": 0,
+  "cause": "Generic NOT_SUPPORTED substring conflated forbidden input fields with unsupported accounting",
+  "repair": "Only known continuity capability codes map ValueError to STOPPED_NOT_IMPLEMENTED; preserve all input/expected/actual/log bytes"
+}

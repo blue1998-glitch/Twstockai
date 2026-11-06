@@ -1,0 +1,43 @@
+{
+  "schema": "capital-decision-context-probe/0.1",
+  "synthetic": true,
+  "source": {
+    "path": "capital_research/quantity_context_20261027/objects/9e03e020366eeeb9e946979a8ddd4a7e9edc14b0a1439ede20781da285f2f44f.json",
+    "bytes": 1064541,
+    "sha256": "6f3b8ca940601b2a146c7576a6fca0092ef47646f21c99d55f920636293143b1"
+  },
+  "source_id": "sha256:9e03e020366eeeb9e946979a8ddd4a7e9edc14b0a1439ede20781da285f2f44f",
+  "source_reference": {
+    "path": "capital_research/candidate_context_20261027/input.json",
+    "bytes": 2482,
+    "sha256": "d766cba952458e9e31769783656ea15a7ff939524eadfd25c1662d0d960c940c"
+  },
+  "cases": [
+    {
+      "name": "initial",
+      "entry": "decide",
+      "round_index": 0,
+      "arguments_id": "sha256:4a83c46010f4dc5f04caa230672105bb2c8e7000d54dce9ff221d8ca852f77cc",
+      "expected_wrapper_id": "sha256:c7fd70bdb4bb564c3f7709d1a1eafa8631a89076b394ab02e5cdffcee9bd23c7",
+      "expected_decision_id": "sha256:7520a8976aa10516292a1e5d50e21c6bba16187ea263ca11fc66cd127712263c"
+    },
+    {
+      "name": "resume",
+      "entry": "resume_decision",
+      "round_index": 1,
+      "arguments_id": "sha256:3c3f137aeafd30d9081ad199fd6b8f60398916f96a01f962eaf093c69cf08d56",
+      "expected_wrapper_id": "sha256:76a0566d6154461d8736ef4aaef6c91c1cfc6a08e4990a46c4c1801196f2ca00",
+      "expected_decision_id": "sha256:00d8d3890b7f3c433d1c1a39b1f0dde5206d5d6e773e5f476273536c4918b962"
+    }
+  ],
+  "controls_reference": {
+    "path": "capital_research/quantity_context_20261027/contexts.json",
+    "bytes": 1591,
+    "sha256": "79610bc3c53ab21c449aba8ceda0d847ca62b0a3c53b93835390b51fb94d0655"
+  },
+  "preset_reference": {
+    "path": "capital_research/quantity_context_20261027/test-controls.json",
+    "bytes": 570,
+    "sha256": "38b5324a33a1d0db20db85cb78d1ee9a0124dacc3be5884ac10fef38ae212e70"
+  }
+}

@@ -1,0 +1,84 @@
+{
+  "schema": "rotation-market-case-input/0.1",
+  "case_id": "1101-return-then-2884-opportunity",
+  "data_kind": "SAVED_REAL_RAW_WITH_EXPLICIT_HYPOTHETICAL_ACCOUNT",
+  "source_binding": {
+    "quotes": "sha256:a75ab687106a64988b2f5e4c4433a86b569ec974fac6ae3806cb890f5bc4ca7c",
+    "quote_manifest": "sha256:503b5905a7c133f24d763e03c36e9a61eaea6c9e1e6ad5eb47f235b5bd14b3bf",
+    "catalog": "sha256:a137969400c6149c17434e8991467afee71ebfc68597279f1ed6049c1b332fa3",
+    "calendar": "sha256:8b431ca5ec65e460c70b0a5fc4cbc2a7f63381052fa7e5ed85f449728d8fb113"
+  },
+  "common": {
+    "period": null,
+    "account": {
+      "kind": "NEW_HYPOTHETICAL_CASH_NOT_USER_ACCOUNT",
+      "account_id": null,
+      "cash": null,
+      "shares": {
+        "1101": "0",
+        "2884": "0"
+      },
+      "cash_claims": [],
+      "share_claims": [],
+      "rights_basis": "EXPLICIT_NEW_ACCOUNT_ASSUMPTION_NOT_PRIVATE_EVIDENCE"
+    },
+    "execution_model": null,
+    "market_observations": null
+  },
+  "decisions": [
+    {
+      "id": "A-breakout",
+      "market_date": "2026-04-08",
+      "decision_at": null,
+      "data_cutoff": null,
+      "evidence_ids": [
+        "A-reference",
+        "A-breakout"
+      ]
+    },
+    {
+      "id": "A-return",
+      "market_date": "2026-04-09",
+      "decision_at": null,
+      "data_cutoff": null,
+      "evidence_ids": [
+        "A-reference",
+        "A-return"
+      ]
+    },
+    {
+      "id": "B-opportunity",
+      "market_date": "2026-06-22",
+      "decision_at": null,
+      "data_cutoff": null,
+      "evidence_ids": [
+        "B-reference",
+        "B-breakout"
+      ]
+    }
+  ],
+  "common_entry": null,
+  "paths": [
+    {
+      "id": "hold",
+      "intent": "HOLD_A",
+      "common": null,
+      "fills": null,
+      "b_intent": null
+    },
+    {
+      "id": "reduce",
+      "intent": "REDUCE_A",
+      "common": null,
+      "fills": null,
+      "b_intent": null
+    },
+    {
+      "id": "cash",
+      "intent": "EXIT_A_TO_CASH",
+      "common": null,
+      "fills": null,
+      "b_intent": null
+    }
+  ]
+}

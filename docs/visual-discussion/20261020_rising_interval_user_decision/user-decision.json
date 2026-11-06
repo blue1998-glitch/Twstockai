@@ -1,0 +1,40 @@
+{
+  "status": "USER_CONFIRMED_CASE_AND_CONCEPT_DO_NOT_REASK",
+  "user_time": "2026-10-20T21:07:05+08:00",
+  "user_quote": "既然你辨認的出來就可以當成一個整理區間，而且他的確是上漲中短暫回來整理後來又再度上漲",
+  "case": {"code": "2884", "saved_as_of": "2026-10-16", "figure": "20261020_rising_interval_work_review/output/pdf/m1-2884-rising-interval.pdf, recent115-bar page with long context"},
+  "confirmed_case": {
+    "recognizable_consolidation_interval": true,
+    "within_rising_price_process": true,
+    "temporary_pullback_and_consolidation": true,
+    "subsequent_rise_observed": true,
+    "description_zh": "上漲中的短暫整理區間，整理後再度上漲"
+  },
+  "confirmed_concept": "A recognizable consolidation interval can also be a temporary pullback within a rising price process; these descriptions are compatible.",
+  "assistant_question_correction": {
+    "previous_binary": "整理區間後向上離開 versus 上漲中回檔尚不足成區間",
+    "status": "FALSE_EXCLUSION_CORRECTED_BY_USER",
+    "replacement": "Record interval form and surrounding price process separately; an upward-context pullback does not negate a recognizable consolidation interval."
+  },
+  "routine_research_judgment": "The user accepts calling the recognizable interval shown a consolidation interval; do not repeatedly ask the same qualitative distinction. This reply is not approval of every future automatic label.",
+  "resolved_question": "20261020_rising_interval_work_review/pending-decision.json",
+  "answer_received": true,
+  "not_inferred": [
+    "exact interval start or end, or approval of the assistant17-row observation window as formal bounds",
+    "formal price top47.35 or bottom44.20",
+    "exhaustive pivot or box membership, formal parenthood or direct succession",
+    "current high49.95 is a confirmed pivot",
+    "effective breakout, permanent clearance, formal lifecycle or importance change",
+    "volume or MACD thresholds, confidence scores or calibrated probabilities",
+    "general automatic interval recognition algorithm or classification accuracy",
+    "entry or exit eligibility, automatic primary pressure selection",
+    "old shared-source role question answered"
+  ],
+  "primary_pressure_id": null,
+  "historical_selection_time": null,
+  "historical_signal_eligible": false,
+  "formal_price_bounds": null,
+  "formal_membership": null,
+  "lifecycle": null,
+  "action_qualification": "NOT_EVALUATED"
+}

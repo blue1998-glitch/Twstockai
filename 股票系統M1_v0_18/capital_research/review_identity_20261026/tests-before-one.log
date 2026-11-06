@@ -1,0 +1,19 @@
+test_same_job_different_content_is_a_collision_not_a_retry (capital_research.review_identity_20261026.test_identity.ReviewIdentityTests.test_same_job_different_content_is_a_collision_not_a_retry) ... FAIL
+
+======================================================================
+FAIL: test_same_job_different_content_is_a_collision_not_a_retry (capital_research.review_identity_20261026.test_identity.ReviewIdentityTests.test_same_job_different_content_is_a_collision_not_a_retry)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/workspace/Twstockai/股票系統M1_v0_18/capital_research/review_identity_20261026/test_identity.py", line 30, in test_same_job_different_content_is_a_collision_not_a_retry
+    self.check_collision('same-job-collision')
+  File "/workspace/Twstockai/股票系統M1_v0_18/capital_research/review_identity_20261026/test_identity.py", line 21, in check_collision
+    self.assertEqual(a['status'],'ERROR')
+AssertionError: 'OK' != 'ERROR'
+- OK
++ ERROR
+
+
+----------------------------------------------------------------------
+Ran 1 test in 0.174s
+
+FAILED (failures=1)

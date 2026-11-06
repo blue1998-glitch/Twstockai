@@ -1,0 +1,115 @@
+{
+  "status": "FAIL",
+  "error": "page.evaluate: TypeError: Cannot read properties of undefined (reading 'key')\n    at eval (eval at evaluate (:311:30), <anonymous>:1:68)\n    at UtilityScript.evaluate (<anonymous>:313:16)\n    at UtilityScript.<anonymous> (<anonymous>:1:44)\n    at /workspace/Twstockai/股票系統M1_v0_18/hurdle_chart/test_labels.cjs:67:70",
+  "checks": [
+    {
+      "name": "labels avoid candles/axis/zoom/each other and retain exact line ordinate: recent24 source offscreen",
+      "status": "PASS",
+      "size": {
+        "width": 1280,
+        "height": 900
+      },
+      "labels": [
+        "G1"
+      ]
+    },
+    {
+      "name": "offscreen source label is visible with cards scrolled away; touch/click/Enter opens exact evidence without moving date/cursor",
+      "status": "PASS",
+      "size": {
+        "width": 1280,
+        "height": 900
+      }
+    },
+    {
+      "name": "labels avoid candles/axis/zoom/each other and retain exact line ordinate: G1 real source visible",
+      "status": "PASS",
+      "size": {
+        "width": 1280,
+        "height": 900
+      },
+      "labels": [
+        "G1",
+        "G2"
+      ]
+    },
+    {
+      "name": "labels avoid candles/axis/zoom/each other and retain exact line ordinate: return24",
+      "status": "PASS",
+      "size": {
+        "width": 1280,
+        "height": 900
+      },
+      "labels": [
+        "G1"
+      ]
+    },
+    {
+      "name": "labels avoid candles/axis/zoom/each other and retain exact line ordinate: G3 source visible, G1/G2 below axis",
+      "status": "PASS",
+      "size": {
+        "width": 1280,
+        "height": 900
+      },
+      "labels": [
+        "G3"
+      ]
+    },
+    {
+      "name": "labels avoid candles/axis/zoom/each other and retain exact line ordinate: all five years, three labels",
+      "status": "PASS",
+      "size": {
+        "width": 1280,
+        "height": 900
+      },
+      "labels": [
+        "G1",
+        "G2",
+        "G3"
+      ]
+    },
+    {
+      "name": "labels avoid candles/axis/zoom/each other and retain exact line ordinate: focus three labels",
+      "status": "PASS",
+      "size": {
+        "width": 1280,
+        "height": 900
+      },
+      "labels": [
+        "G1",
+        "G2",
+        "G3"
+      ]
+    },
+    {
+      "name": "labels avoid candles/axis/zoom/each other and retain exact line ordinate: 60 recent bars, all above axis",
+      "status": "PASS",
+      "size": {
+        "width": 1280,
+        "height": 900
+      },
+      "labels": []
+    },
+    {
+      "name": "labels avoid candles/axis/zoom/each other and retain exact line ordinate: 24-month label restored",
+      "status": "PASS",
+      "size": {
+        "width": 1280,
+        "height": 900
+      },
+      "labels": [
+        "G1"
+      ]
+    },
+    {
+      "name": "label layout does not alter downloaded source/frame/precision or manual case",
+      "status": "PASS",
+      "size": {
+        "width": 1280,
+        "height": 900
+      }
+    }
+  ],
+  "javascript_errors": [],
+  "external_requests": []
+}

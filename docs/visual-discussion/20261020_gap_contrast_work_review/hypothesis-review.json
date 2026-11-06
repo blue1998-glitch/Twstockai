@@ -1,0 +1,30 @@
+{
+  "status": "ASSISTANT_LOGICAL_SCREENING_NOT_ORIGINAL_ENGINE_TEST_FAILURES",
+  "items": [
+    {
+      "hypothesis": "Every strictly lower raw daily range must split the current parent interval into disjoint same-level ranges",
+      "status": "REJECT_AS_SUFFICIENT_MANDATORY_RULE_FOR_THIS_CASE",
+      "counterevidence": "5/14 is ENTIRELY_BELOW yet remains within already confirmed 4/7-6/2 39-record parent; finer internal structure remains unknown",
+      "not_claimed": "Not denying possible nested finer intervals or all gap relevance."
+    },
+    {
+      "hypothesis": "No high return to gap upper by the chosen review endpoint is by itself a same-level new-range classifier",
+      "status": "INSUFFICIENT",
+      "counterevidence": "4/7 and internal 5/14 both have no observed high reaching their respective upper edges by6/2; parent roles differ, unequal observation lengths are not ranked",
+      "not_claimed": "No duration threshold or negative label at every scale."
+    },
+    {
+      "hypothesis": "One close above original B77 research lower30.05 reassigns ABC to old major band",
+      "status": "REJECT_AS_SUFFICIENT_RULE_FOR_THIS_CASE",
+      "counterevidence": "4/10 C30.75 is above30.05 while user confirmed ABC own weaker interval; original research level is not formal whole boundary"
+    },
+    {
+      "hypothesis": "Gap width threshold can be chosen from this packet",
+      "status": "NOT_ESTABLISHED_DO_NOT_TUNE",
+      "counterevidence": "1.45,0.40 and0.05 are retrospective examples without cross-stock labels or approved scale assignment."
+    }
+  ],
+  "manual_decision_reopened": false,
+  "automatic_classifier_implemented": false,
+  "needs_new_user_answer_this_batch": false
+}

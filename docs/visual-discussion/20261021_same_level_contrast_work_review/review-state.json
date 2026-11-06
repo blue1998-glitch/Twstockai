@@ -1,0 +1,56 @@
+{
+  "schema": "same-level-B-identity-review/1",
+  "base_commit": "71dbc062a88efbe21e3b2d360b9156c1d4a14dab",
+  "question_status": "PREPARED_FOR_PRESENTATION_AWAITING_USER",
+  "user_decision": null,
+  "previous_B_overall_adjudication": "ANSWERED_NESTED_LARGE_AND_SMALL_BANDS",
+  "previous_B_overall_question_reopened": false,
+  "previous_A_ABC_G2_or_April_micro_question_reopened": false,
+  "scope": "Identity of the three specified source activities within B's already-reviewed larger background; no exact source dates/bounds/counts are approved merely by selecting a visual reading.",
+  "source_labels": {
+    "one": "2025-12-22..2025-12-31",
+    "two": "2026-02-02..2026-02-23",
+    "three": "2026-02-26..2026-03-05"
+  },
+  "question": "圖中十二月底、二月前段、二月底至三月初這三組活動，你較視為同一個小價格帶的反覆，還是大帶內不同的小帶？如果只是大帶內不值得另分小帶的波動，也可以直接指出或調整範圍。",
+  "proposals": [
+    {
+      "id": "same_small_band",
+      "label": "甲：同一小帶的多次活動",
+      "source_identity_preserved": true,
+      "illustrative_container_only": true,
+      "user_approved": false,
+      "formal_merge": null,
+      "formal_bounds": null
+    },
+    {
+      "id": "parallel_small_candidates",
+      "label": "乙：大帶內各自保留小帶候選",
+      "source_identity_preserved": true,
+      "not_forced_exact_three": true,
+      "user_approved": false,
+      "formal_split": null,
+      "formal_bounds": null
+    },
+    {
+      "id": "not_material_or_adjust_scope",
+      "label": "目前不值得分小帶，或改用其他範圍",
+      "user_approved": false
+    }
+  ],
+  "why_user_judgment_needed": "Existing user answer establishes nested large/small bands, but does not label these source activities as the same small band or separate small bands. Close visits, crossings, shared price and source freshness do not determine that identity alone.",
+  "factual_contrast": "One source includes Feb10 close33.80 in old common33.75..33.85. The other has zero source closes inside, but March4 close33.65 below and March5 close34.05 above, with both daily ranges contacting the reference.",
+  "dataset_limits": "434 eligible saved pairs and93 coarse-matched disjoint combinations overlap heavily and are not independent examples or approved merge positive/negative labels. Exact-later-common-bound matches yield0 disjoint contrast combinations.",
+  "assistant_preference": null,
+  "new_manual_question_count": 1,
+  "formal_small_band_count": null,
+  "formal_bounds": null,
+  "formal_membership": null,
+  "formal_parent_source_ids": null,
+  "historical_signal_eligible": false,
+  "classifier": "NOT_VALIDATED",
+  "Android": "NOT_TESTED_NEW_BUILD",
+  "actions_and_flywheel": "NOT_EVALUATED",
+  "next_mode": "Work",
+  "after_answer": "Save the user's exact scope and judgment first, then compare formal source mapping; do not convert a qualitative answer into automatic exact dates/bounds or a universal threshold."
+}

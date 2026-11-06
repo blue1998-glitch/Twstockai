@@ -1,0 +1,63 @@
+{
+  "review_knowledge_date": "2026-10-21",
+  "purpose": "PRESENT_DAY_REVIEW_RELATIONS_NOT_HISTORICAL_AUTOMATIC_CLASSIFICATION",
+  "relations_are_not_mutually_exclusive": true,
+  "proposals": [
+    {
+      "id": "A-reviewed-whole-local-views",
+      "relation": "EXISTING_HUMAN_CONTEXT_DISPLAY",
+      "basis": "Existing user-reviewed upward move, consolidation and renewed rise; October7 sufficient remains unchanged.",
+      "local_activity_names": ["earlier", "lower", "later"],
+      "local_ids_preserved": true,
+      "formal_start": null,
+      "formal_parent_assigned": null,
+      "new_user_decision_inferred": false
+    },
+    {
+      "id": "ABC-inside-existing-manual-period",
+      "relation": "EXISTING_HUMAN_CONTEXT_DISPLAY",
+      "basis": "Earlier and lower activity source periods lie inside the unchanged reviewed April7-June2 ABC coverage; temporal display is not new formal membership.",
+      "local_activity_names": ["earlier", "lower"],
+      "existing_manual_saved_rows": 39,
+      "local_ids_preserved": true,
+      "formal_parent_assigned": null
+    },
+    {
+      "id": "ABC-post-departure-observation-thread",
+      "relation": "OBSERVATION_THREAD_RESEARCH_PROPOSAL",
+      "question": "How did weakness inside ABC develop into price departure and later lower activity?",
+      "evidence_dates": ["2025-06-02", "2025-06-03", "2025-06-12"],
+      "basis": "Preserved chronological price path through original28.45 and subsequently completed activity below it; no causal claim.",
+      "post_activity_name": "outside",
+      "observation_window": ["2025-04-07", "2025-06-12"],
+      "observation_window_is_formal_structure_period": false,
+      "extend_ABC_manual_membership": false,
+      "formal_parent_assigned": null,
+      "formal_merge": null,
+      "automatic_link_sufficiency_rule": null
+    },
+    {
+      "id": "G2-reviewed-context",
+      "relation": "EXISTING_HUMAN_CONTEXT_DISPLAY",
+      "basis": "Both source periods are temporally within unchanged reviewed January16-August16 G2 coverage of136 saved rows.",
+      "local_activity_names": ["earlier", "later"],
+      "local_ids_preserved": true,
+      "formal_parent_assigned": null
+    },
+    {
+      "id": "G2-pair-no-close-revisit-in-source",
+      "relation": "LOCAL_GEOMETRY_COMPARISON_ONLY",
+      "basis": "Later common36.35-37.10 contains earlier36.60-36.75, but none of eight saved source closes is inside the earlier common; March27 confirmation close36.65 is separate.",
+      "can_coexist_with": "G2-reviewed-context",
+      "pairwise_retest_confirmed": null,
+      "formal_merge": null,
+      "not_a_reason_to_split_existing_G2": true
+    }
+  ],
+  "formal_structure_identity_merge_rule": null,
+  "unique_parent_selection": null,
+  "major_structure_importance_rule": null,
+  "historical_signal_eligible": false,
+  "classifier": "NOT_VALIDATED",
+  "actions_and_flywheel": "NOT_EVALUATED"
+}

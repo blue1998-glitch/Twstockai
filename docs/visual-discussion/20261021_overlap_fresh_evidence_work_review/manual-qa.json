@@ -1,0 +1,31 @@
+{
+  "status": "PASS_FINAL_THREE_PAGES_VISUALLY_INSPECTED",
+  "new_figure_builder_runs": 3,
+  "pdf_render_runs": 3,
+  "prior_figure_rebuilds": 0,
+  "figure_comparisons_checked_against_complete_registry": 5,
+  "confirmation_bar_checked_against_raw_source": true,
+  "notes": [
+    "First figure source audit corrected older ABC raw-path upper31.40 to31.20; May13 right evidence H31.40 remains separate.",
+    "Third figure explicitly records March27 confirmation close36.65 inside older core, without backfilling March15..24 path.",
+    "All3 final pages visually inspected; bounded price and independent volume shading; no clipped labels."
+  ],
+  "artifacts": {
+    "page-1.png": {
+      "sha256": "93b7172a033125a1603c9229d35bdde299bc67d2d83e8ef81ab9d7eef75aa676",
+      "bytes": 111850
+    },
+    "page-2.png": {
+      "sha256": "d69872684c00973f3f3e9a5e4695be40ad16e6fd86dd4ed9e8c81857833e2ab5",
+      "bytes": 121343
+    },
+    "page-3.png": {
+      "sha256": "3034de107d9b893ff5b45e50dc628c3f839df89e7504c94914cdc20ebded35a9",
+      "bytes": 108021
+    },
+    "output/pdf/m1-overlapping-ranges-fresh-evidence.pdf": {
+      "sha256": "d717de1e2af368101de2c9e848161c24d2efae35a72eec285b1159a25119a3a6",
+      "bytes": 189811
+    }
+  }
+}

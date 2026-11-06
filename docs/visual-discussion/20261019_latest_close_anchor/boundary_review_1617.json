@@ -1,0 +1,68 @@
+{
+  "recorded_at": "2026-10-19T16:17:17+08:00",
+  "evidence_type": "USER_REPORTED_STRUCTURAL_INTERPRETATION",
+  "exact_user_quote": "6/3原始高價28.00可以把他歸類在這個箱型之外，原因是他是另一個箱子跌破箱型下緣的K線。1/27高26.95時間較最新價格近，而且也可以看成1/27到最新價格間有在做籌碼沉澱，因此1/27較為重要。",
+  "source_binding": "48a8ea5f0a49719917ceb48b15149dbc6c5fa854f9bf36897b527bf9a0f990bb",
+  "analysis_as_of": "2026-10-16",
+  "code": "1101",
+  "price_mode": "RAW_NEW_OFFICIAL_DAILY",
+  "case_resolution": {
+    "status": "JUN03_EXCLUSION_AND_JAN27_PRIORITY_EXPLAINED_BY_USER",
+    "excluded_bar": {
+      "date": "2025-06-03",
+      "raw_high": "28.00",
+      "belongs_to_current_box": false,
+      "user_role": "PREVIOUS_BOX_LOWER_EDGE_BREAKDOWN_BAR",
+      "automatically_verified_breakdown": false,
+      "previous_box_bounds": null
+    },
+    "preferred_representative": {
+      "date": "2026-01-27",
+      "high": "26.95",
+      "user_priority_reasons": [
+        "closer in time to latest saved price",
+        "user interpretsJan27-to-latest price structure as potential chip settlement"
+      ],
+      "settlement_evidence_type": "USER_INTERPRETED_PRICE_VOLUME_STRUCTURE",
+      "actual_remaining_holder_inventory_measured": false
+    },
+    "question_about_jun03": "CLOSED_BY_USER_EXPLANATION_DO_NOT_REASK",
+    "source_raw_max_statistic": "unchanged;max28.00 in old336-row reading window does not define current box membership",
+    "old_336_row_viewport_is_formal_box_membership": false,
+    "other_rows_auto_assigned": false,
+    "exact_new_box_start": null,
+    "exact_new_box_bottom": null,
+    "exact_previous_box_bounds": null,
+    "jan27_is_universal_most_recent_or_maximum_rule": false,
+    "recency_alone_always_overrides_older_pressure": false,
+    "selection_formula_and_weights": null
+  },
+  "source_facts_retained": {
+    "latest_close": "27.30",
+    "latest_close_above_jan27_representative": true,
+    "old_jan29_pivot4": "26.85",
+    "old_cases_unchanged": true
+  },
+  "breakout_qualification": "PRIOR_USER_TENTATIVE_POSSIBLE_NOT_UPGRADED",
+  "volume_qualification": "COMPARISON_BASELINE_AND_THRESHOLD_NOT_DEFINED",
+  "core_usefulness": "NOT_ESTABLISHED",
+  "classification": "NOT_VALIDATED",
+  "action": "NOT_EVALUATED",
+  "this_turn": {
+    "documentation_only": true,
+    "new_chart_or_product": false,
+    "python_or_browser_tests_run": false,
+    "android_evidence_added": false,
+    "original_phone_json_reread": false,
+    "original_bars_changed": false
+  },
+  "next_mode": "Work",
+  "next_focus": "look farther left for prior box/resistance relative to saved latest close; retainJun03 as previous-box breakdown context; no repeatedJun03 question or arbitrary splitting",
+  "failure_log": [
+    {
+      "operation": "direct unauthenticated GitHub git-commit metadata HTTP request",
+      "error": "HTTP Error403: Forbidden",
+      "effect": "not a save/read blocker; actual GitHub connector reads and identical-head compare succeeded; use exact previously created and verified treee670236b351fb4094dd3a7b5d546ba9212f4f98b of same3915545 parent; no credential changes or protection bypass"
+    }
+  ]
+}

@@ -1,0 +1,3089 @@
+{
+  "B": {
+    "2026-06-17": {
+      "case": "B",
+      "cutoff": "2026-06-17",
+      "current_price_bar": {
+        "date": "2026-06-17",
+        "open": "35.30",
+        "high": "35.90",
+        "low": "35.05",
+        "close": "35.50"
+      },
+      "available_activities": {},
+      "available_pairs": {},
+      "current_reference_locations": {
+        "small_raw_high_proxy": {
+          "close_relation": "STRICTLY_ABOVE",
+          "reference": [
+            "33.20",
+            "33.20"
+          ]
+        },
+        "broader_raw_high_proxy": {
+          "close_relation": "EQUAL",
+          "reference": [
+            "35.50",
+            "35.50"
+          ]
+        }
+      },
+      "current_activity_locations": {},
+      "previous_price_anchors": [
+        {
+          "date": "2026-06-04",
+          "bar": {
+            "close": "33.45",
+            "date": "2026-06-04",
+            "high": "33.70",
+            "low": "32.90",
+            "open": "33.00",
+            "volume_shares_scaled": "71753146"
+          },
+          "references": {
+            "lower_activity_high": {
+              "value": "33.20",
+              "close_relation": "ABOVE",
+              "wick_contains_reference": true,
+              "high_strictly_above": true,
+              "whole_bar_above": false,
+              "whole_bar_below": false,
+              "previous_close_relation": "BELOW",
+              "saved_close_cross": "UP",
+              "departure_from_equal_close": null
+            },
+            "broader_high": {
+              "value": "35.50",
+              "close_relation": "BELOW",
+              "wick_contains_reference": false,
+              "high_strictly_above": false,
+              "whole_bar_above": false,
+              "whole_bar_below": true,
+              "previous_close_relation": "BELOW",
+              "saved_close_cross": null,
+              "departure_from_equal_close": null
+            }
+          }
+        },
+        {
+          "date": "2026-06-09",
+          "bar": {
+            "close": "34.20",
+            "date": "2026-06-09",
+            "high": "34.35",
+            "low": "32.90",
+            "open": "32.90",
+            "volume_shares_scaled": "88605638"
+          },
+          "references": {
+            "lower_activity_high": {
+              "value": "33.20",
+              "close_relation": "ABOVE",
+              "wick_contains_reference": true,
+              "high_strictly_above": true,
+              "whole_bar_above": false,
+              "whole_bar_below": false,
+              "previous_close_relation": "BELOW",
+              "saved_close_cross": "UP",
+              "departure_from_equal_close": null
+            },
+            "broader_high": {
+              "value": "35.50",
+              "close_relation": "BELOW",
+              "wick_contains_reference": false,
+              "high_strictly_above": false,
+              "whole_bar_above": false,
+              "whole_bar_below": true,
+              "previous_close_relation": "BELOW",
+              "saved_close_cross": null,
+              "departure_from_equal_close": null
+            }
+          }
+        }
+      ],
+      "formal_larger_structure_change": null,
+      "formal_merge": null,
+      "primary_pressure_id": null,
+      "historical_signal_eligible": false,
+      "selection_is_retrospective": true
+    },
+    "2026-06-18": {
+      "case": "B",
+      "cutoff": "2026-06-18",
+      "current_price_bar": {
+        "date": "2026-06-18",
+        "open": "35.50",
+        "high": "36.25",
+        "low": "35.40",
+        "close": "35.40"
+      },
+      "available_activities": {
+        "B_advance": {
+          "zone_id": "sha256:e5d2bd1838715b74c216bf90f776d680db9048ceac9009a9c49dfd876d4303d7",
+          "source_period": [
+            "2026-06-09",
+            "2026-06-17"
+          ],
+          "available_on": "2026-06-18",
+          "common": [
+            "33.65",
+            "34.20"
+          ],
+          "raw": [
+            "32.90",
+            "35.90"
+          ],
+          "source_rows": 7,
+          "right_price_bar": {
+            "date": "2026-06-18",
+            "open": "35.50",
+            "high": "36.25",
+            "low": "35.40",
+            "close": "35.40"
+          },
+          "against_references": {
+            "small_raw_high_proxy": {
+              "common_relation": "STRICTLY_ABOVE",
+              "raw_relation": "STRADDLES_REFERENCE",
+              "source_close_counts": {
+                "ABOVE": 7,
+                "EQUAL": 0,
+                "BELOW": 0
+              },
+              "source_range_contains_reference_dates": [
+                "2026-06-09",
+                "2026-06-10",
+                "2026-06-11"
+              ]
+            },
+            "broader_raw_high_proxy": {
+              "common_relation": "STRICTLY_BELOW",
+              "raw_relation": "STRADDLES_REFERENCE",
+              "source_close_counts": {
+                "ABOVE": 0,
+                "EQUAL": 1,
+                "BELOW": 6
+              },
+              "source_range_contains_reference_dates": [
+                "2026-06-17"
+              ]
+            }
+          },
+          "formal_bounds": null,
+          "formal_membership": null,
+          "response_confirmed": null
+        }
+      },
+      "available_pairs": {},
+      "current_reference_locations": {
+        "small_raw_high_proxy": {
+          "close_relation": "STRICTLY_ABOVE",
+          "reference": [
+            "33.20",
+            "33.20"
+          ]
+        },
+        "broader_raw_high_proxy": {
+          "close_relation": "STRICTLY_BELOW",
+          "reference": [
+            "35.50",
+            "35.50"
+          ]
+        }
+      },
+      "current_activity_locations": {
+        "B_advance": {
+          "common_location": "STRICTLY_ABOVE",
+          "raw_location": "INSIDE_REFERENCE_RANGE"
+        }
+      },
+      "previous_price_anchors": [
+        {
+          "date": "2026-06-04",
+          "bar": {
+            "close": "33.45",
+            "date": "2026-06-04",
+            "high": "33.70",
+            "low": "32.90",
+            "open": "33.00",
+            "volume_shares_scaled": "71753146"
+          },
+          "references": {
+            "lower_activity_high": {
+              "value": "33.20",
+              "close_relation": "ABOVE",
+              "wick_contains_reference": true,
+              "high_strictly_above": true,
+              "whole_bar_above": false,
+              "whole_bar_below": false,
+              "previous_close_relation": "BELOW",
+              "saved_close_cross": "UP",
+              "departure_from_equal_close": null
+            },
+            "broader_high": {
+              "value": "35.50",
+              "close_relation": "BELOW",
+              "wick_contains_reference": false,
+              "high_strictly_above": false,
+              "whole_bar_above": false,
+              "whole_bar_below": true,
+              "previous_close_relation": "BELOW",
+              "saved_close_cross": null,
+              "departure_from_equal_close": null
+            }
+          }
+        },
+        {
+          "date": "2026-06-09",
+          "bar": {
+            "close": "34.20",
+            "date": "2026-06-09",
+            "high": "34.35",
+            "low": "32.90",
+            "open": "32.90",
+            "volume_shares_scaled": "88605638"
+          },
+          "references": {
+            "lower_activity_high": {
+              "value": "33.20",
+              "close_relation": "ABOVE",
+              "wick_contains_reference": true,
+              "high_strictly_above": true,
+              "whole_bar_above": false,
+              "whole_bar_below": false,
+              "previous_close_relation": "BELOW",
+              "saved_close_cross": "UP",
+              "departure_from_equal_close": null
+            },
+            "broader_high": {
+              "value": "35.50",
+              "close_relation": "BELOW",
+              "wick_contains_reference": false,
+              "high_strictly_above": false,
+              "whole_bar_above": false,
+              "whole_bar_below": true,
+              "previous_close_relation": "BELOW",
+              "saved_close_cross": null,
+              "departure_from_equal_close": null
+            }
+          }
+        }
+      ],
+      "formal_larger_structure_change": null,
+      "formal_merge": null,
+      "primary_pressure_id": null,
+      "historical_signal_eligible": false,
+      "selection_is_retrospective": true
+    },
+    "2026-06-22": {
+      "case": "B",
+      "cutoff": "2026-06-22",
+      "current_price_bar": {
+        "date": "2026-06-22",
+        "open": "36.00",
+        "high": "36.60",
+        "low": "35.70",
+        "close": "35.80"
+      },
+      "available_activities": {
+        "B_advance": {
+          "zone_id": "sha256:e5d2bd1838715b74c216bf90f776d680db9048ceac9009a9c49dfd876d4303d7",
+          "source_period": [
+            "2026-06-09",
+            "2026-06-17"
+          ],
+          "available_on": "2026-06-18",
+          "common": [
+            "33.65",
+            "34.20"
+          ],
+          "raw": [
+            "32.90",
+            "35.90"
+          ],
+          "source_rows": 7,
+          "right_price_bar": {
+            "date": "2026-06-18",
+            "open": "35.50",
+            "high": "36.25",
+            "low": "35.40",
+            "close": "35.40"
+          },
+          "against_references": {
+            "small_raw_high_proxy": {
+              "common_relation": "STRICTLY_ABOVE",
+              "raw_relation": "STRADDLES_REFERENCE",
+              "source_close_counts": {
+                "ABOVE": 7,
+                "EQUAL": 0,
+                "BELOW": 0
+              },
+              "source_range_contains_reference_dates": [
+                "2026-06-09",
+                "2026-06-10",
+                "2026-06-11"
+              ]
+            },
+            "broader_raw_high_proxy": {
+              "common_relation": "STRICTLY_BELOW",
+              "raw_relation": "STRADDLES_REFERENCE",
+              "source_close_counts": {
+                "ABOVE": 0,
+                "EQUAL": 1,
+                "BELOW": 6
+              },
+              "source_range_contains_reference_dates": [
+                "2026-06-17"
+              ]
+            }
+          },
+          "formal_bounds": null,
+          "formal_membership": null,
+          "response_confirmed": null
+        }
+      },
+      "available_pairs": {},
+      "current_reference_locations": {
+        "small_raw_high_proxy": {
+          "close_relation": "STRICTLY_ABOVE",
+          "reference": [
+            "33.20",
+            "33.20"
+          ]
+        },
+        "broader_raw_high_proxy": {
+          "close_relation": "STRICTLY_ABOVE",
+          "reference": [
+            "35.50",
+            "35.50"
+          ]
+        }
+      },
+      "current_activity_locations": {
+        "B_advance": {
+          "common_location": "STRICTLY_ABOVE",
+          "raw_location": "INSIDE_REFERENCE_RANGE"
+        }
+      },
+      "previous_price_anchors": [
+        {
+          "date": "2026-06-04",
+          "bar": {
+            "close": "33.45",
+            "date": "2026-06-04",
+            "high": "33.70",
+            "low": "32.90",
+            "open": "33.00",
+            "volume_shares_scaled": "71753146"
+          },
+          "references": {
+            "lower_activity_high": {
+              "value": "33.20",
+              "close_relation": "ABOVE",
+              "wick_contains_reference": true,
+              "high_strictly_above": true,
+              "whole_bar_above": false,
+              "whole_bar_below": false,
+              "previous_close_relation": "BELOW",
+              "saved_close_cross": "UP",
+              "departure_from_equal_close": null
+            },
+            "broader_high": {
+              "value": "35.50",
+              "close_relation": "BELOW",
+              "wick_contains_reference": false,
+              "high_strictly_above": false,
+              "whole_bar_above": false,
+              "whole_bar_below": true,
+              "previous_close_relation": "BELOW",
+              "saved_close_cross": null,
+              "departure_from_equal_close": null
+            }
+          }
+        },
+        {
+          "date": "2026-06-09",
+          "bar": {
+            "close": "34.20",
+            "date": "2026-06-09",
+            "high": "34.35",
+            "low": "32.90",
+            "open": "32.90",
+            "volume_shares_scaled": "88605638"
+          },
+          "references": {
+            "lower_activity_high": {
+              "value": "33.20",
+              "close_relation": "ABOVE",
+              "wick_contains_reference": true,
+              "high_strictly_above": true,
+              "whole_bar_above": false,
+              "whole_bar_below": false,
+              "previous_close_relation": "BELOW",
+              "saved_close_cross": "UP",
+              "departure_from_equal_close": null
+            },
+            "broader_high": {
+              "value": "35.50",
+              "close_relation": "BELOW",
+              "wick_contains_reference": false,
+              "high_strictly_above": false,
+              "whole_bar_above": false,
+              "whole_bar_below": true,
+              "previous_close_relation": "BELOW",
+              "saved_close_cross": null,
+              "departure_from_equal_close": null
+            }
+          }
+        },
+        {
+          "date": "2026-06-22",
+          "bar": {
+            "close": "35.80",
+            "date": "2026-06-22",
+            "high": "36.60",
+            "low": "35.70",
+            "open": "36.00",
+            "volume_shares_scaled": "106058238"
+          },
+          "references": {
+            "lower_activity_high": {
+              "value": "33.20",
+              "close_relation": "ABOVE",
+              "wick_contains_reference": false,
+              "high_strictly_above": true,
+              "whole_bar_above": true,
+              "whole_bar_below": false,
+              "previous_close_relation": "ABOVE",
+              "saved_close_cross": null,
+              "departure_from_equal_close": null
+            },
+            "broader_high": {
+              "value": "35.50",
+              "close_relation": "ABOVE",
+              "wick_contains_reference": false,
+              "high_strictly_above": true,
+              "whole_bar_above": true,
+              "whole_bar_below": false,
+              "previous_close_relation": "BELOW",
+              "saved_close_cross": "UP",
+              "departure_from_equal_close": null
+            }
+          }
+        }
+      ],
+      "formal_larger_structure_change": null,
+      "formal_merge": null,
+      "primary_pressure_id": null,
+      "historical_signal_eligible": false,
+      "selection_is_retrospective": true
+    },
+    "2026-06-24": {
+      "case": "B",
+      "cutoff": "2026-06-24",
+      "current_price_bar": {
+        "date": "2026-06-24",
+        "open": "35.30",
+        "high": "35.50",
+        "low": "35.00",
+        "close": "35.00"
+      },
+      "available_activities": {
+        "B_advance": {
+          "zone_id": "sha256:e5d2bd1838715b74c216bf90f776d680db9048ceac9009a9c49dfd876d4303d7",
+          "source_period": [
+            "2026-06-09",
+            "2026-06-17"
+          ],
+          "available_on": "2026-06-18",
+          "common": [
+            "33.65",
+            "34.20"
+          ],
+          "raw": [
+            "32.90",
+            "35.90"
+          ],
+          "source_rows": 7,
+          "right_price_bar": {
+            "date": "2026-06-18",
+            "open": "35.50",
+            "high": "36.25",
+            "low": "35.40",
+            "close": "35.40"
+          },
+          "against_references": {
+            "small_raw_high_proxy": {
+              "common_relation": "STRICTLY_ABOVE",
+              "raw_relation": "STRADDLES_REFERENCE",
+              "source_close_counts": {
+                "ABOVE": 7,
+                "EQUAL": 0,
+                "BELOW": 0
+              },
+              "source_range_contains_reference_dates": [
+                "2026-06-09",
+                "2026-06-10",
+                "2026-06-11"
+              ]
+            },
+            "broader_raw_high_proxy": {
+              "common_relation": "STRICTLY_BELOW",
+              "raw_relation": "STRADDLES_REFERENCE",
+              "source_close_counts": {
+                "ABOVE": 0,
+                "EQUAL": 1,
+                "BELOW": 6
+              },
+              "source_range_contains_reference_dates": [
+                "2026-06-17"
+              ]
+            }
+          },
+          "formal_bounds": null,
+          "formal_membership": null,
+          "response_confirmed": null
+        },
+        "B_high": {
+          "zone_id": "sha256:7ccce11a89d965ee8510901313c84feca41c580cf0675d21c74ce42426650ccb",
+          "source_period": [
+            "2026-06-17",
+            "2026-06-23"
+          ],
+          "available_on": "2026-06-24",
+          "common": [
+            "35.40",
+            "35.50"
+          ],
+          "raw": [
+            "35.05",
+            "36.60"
+          ],
+          "source_rows": 4,
+          "right_price_bar": {
+            "date": "2026-06-24",
+            "open": "35.30",
+            "high": "35.50",
+            "low": "35.00",
+            "close": "35.00"
+          },
+          "against_references": {
+            "small_raw_high_proxy": {
+              "common_relation": "STRICTLY_ABOVE",
+              "raw_relation": "STRICTLY_ABOVE",
+              "source_close_counts": {
+                "ABOVE": 4,
+                "EQUAL": 0,
+                "BELOW": 0
+              },
+              "source_range_contains_reference_dates": []
+            },
+            "broader_raw_high_proxy": {
+              "common_relation": "BOUNDARY_TOUCH",
+              "raw_relation": "STRADDLES_REFERENCE",
+              "source_close_counts": {
+                "ABOVE": 2,
+                "EQUAL": 1,
+                "BELOW": 1
+              },
+              "source_range_contains_reference_dates": [
+                "2026-06-17",
+                "2026-06-18"
+              ]
+            }
+          },
+          "formal_bounds": null,
+          "formal_membership": null,
+          "response_confirmed": null
+        }
+      },
+      "available_pairs": {
+        "B_advance_B_high": {
+          "available_on": "2026-06-24",
+          "zone_ids": [
+            "sha256:e5d2bd1838715b74c216bf90f776d680db9048ceac9009a9c49dfd876d4303d7",
+            "sha256:7ccce11a89d965ee8510901313c84feca41c580cf0675d21c74ce42426650ccb"
+          ],
+          "common_relation_later_vs_earlier": "STRICTLY_ABOVE",
+          "raw_relation_later_vs_earlier": "POSITIVE_OVERLAP",
+          "shared_leg_ids": [],
+          "shared_turn_ids": [
+            "sha256:b98bd7644dad7353bc91d0f1be15561f5f28ef656a0cbc014855e49490e93066"
+          ],
+          "shared_source_bar_dates": [
+            "2026-06-17"
+          ],
+          "later_earliest_left_evidence": "2026-06-16",
+          "all_later_left_evidence_after_older_known": false,
+          "actual_later_source_visits": {
+            "later_source_close_in_earlier_common_dates": [],
+            "later_source_close_in_earlier_raw_dates": [
+              "2026-06-17",
+              "2026-06-18",
+              "2026-06-22",
+              "2026-06-23"
+            ],
+            "later_source_range_intersects_earlier_common_dates": [],
+            "later_source_range_intersects_earlier_raw_dates": [
+              "2026-06-17",
+              "2026-06-18",
+              "2026-06-22",
+              "2026-06-23"
+            ]
+          },
+          "statistical_independence_inferred": false,
+          "formal_merge": null,
+          "formal_parent": null
+        }
+      },
+      "current_reference_locations": {
+        "small_raw_high_proxy": {
+          "close_relation": "STRICTLY_ABOVE",
+          "reference": [
+            "33.20",
+            "33.20"
+          ]
+        },
+        "broader_raw_high_proxy": {
+          "close_relation": "STRICTLY_BELOW",
+          "reference": [
+            "35.50",
+            "35.50"
+          ]
+        }
+      },
+      "current_activity_locations": {
+        "B_advance": {
+          "common_location": "STRICTLY_ABOVE",
+          "raw_location": "INSIDE_REFERENCE_RANGE"
+        },
+        "B_high": {
+          "common_location": "STRICTLY_BELOW",
+          "raw_location": "STRICTLY_BELOW"
+        }
+      },
+      "previous_price_anchors": [
+        {
+          "date": "2026-06-04",
+          "bar": {
+            "close": "33.45",
+            "date": "2026-06-04",
+            "high": "33.70",
+            "low": "32.90",
+            "open": "33.00",
+            "volume_shares_scaled": "71753146"
+          },
+          "references": {
+            "lower_activity_high": {
+              "value": "33.20",
+              "close_relation": "ABOVE",
+              "wick_contains_reference": true,
+              "high_strictly_above": true,
+              "whole_bar_above": false,
+              "whole_bar_below": false,
+              "previous_close_relation": "BELOW",
+              "saved_close_cross": "UP",
+              "departure_from_equal_close": null
+            },
+            "broader_high": {
+              "value": "35.50",
+              "close_relation": "BELOW",
+              "wick_contains_reference": false,
+              "high_strictly_above": false,
+              "whole_bar_above": false,
+              "whole_bar_below": true,
+              "previous_close_relation": "BELOW",
+              "saved_close_cross": null,
+              "departure_from_equal_close": null
+            }
+          }
+        },
+        {
+          "date": "2026-06-09",
+          "bar": {
+            "close": "34.20",
+            "date": "2026-06-09",
+            "high": "34.35",
+            "low": "32.90",
+            "open": "32.90",
+            "volume_shares_scaled": "88605638"
+          },
+          "references": {
+            "lower_activity_high": {
+              "value": "33.20",
+              "close_relation": "ABOVE",
+              "wick_contains_reference": true,
+              "high_strictly_above": true,
+              "whole_bar_above": false,
+              "whole_bar_below": false,
+              "previous_close_relation": "BELOW",
+              "saved_close_cross": "UP",
+              "departure_from_equal_close": null
+            },
+            "broader_high": {
+              "value": "35.50",
+              "close_relation": "BELOW",
+              "wick_contains_reference": false,
+              "high_strictly_above": false,
+              "whole_bar_above": false,
+              "whole_bar_below": true,
+              "previous_close_relation": "BELOW",
+              "saved_close_cross": null,
+              "departure_from_equal_close": null
+            }
+          }
+        },
+        {
+          "date": "2026-06-22",
+          "bar": {
+            "close": "35.80",
+            "date": "2026-06-22",
+            "high": "36.60",
+            "low": "35.70",
+            "open": "36.00",
+            "volume_shares_scaled": "106058238"
+          },
+          "references": {
+            "lower_activity_high": {
+              "value": "33.20",
+              "close_relation": "ABOVE",
+              "wick_contains_reference": false,
+              "high_strictly_above": true,
+              "whole_bar_above": true,
+              "whole_bar_below": false,
+              "previous_close_relation": "ABOVE",
+              "saved_close_cross": null,
+              "departure_from_equal_close": null
+            },
+            "broader_high": {
+              "value": "35.50",
+              "close_relation": "ABOVE",
+              "wick_contains_reference": false,
+              "high_strictly_above": true,
+              "whole_bar_above": true,
+              "whole_bar_below": false,
+              "previous_close_relation": "BELOW",
+              "saved_close_cross": "UP",
+              "departure_from_equal_close": null
+            }
+          }
+        },
+        {
+          "date": "2026-06-24",
+          "bar": {
+            "close": "35.00",
+            "date": "2026-06-24",
+            "high": "35.50",
+            "low": "35.00",
+            "open": "35.30",
+            "volume_shares_scaled": "66780179"
+          },
+          "references": {
+            "lower_activity_high": {
+              "value": "33.20",
+              "close_relation": "ABOVE",
+              "wick_contains_reference": false,
+              "high_strictly_above": true,
+              "whole_bar_above": true,
+              "whole_bar_below": false,
+              "previous_close_relation": "ABOVE",
+              "saved_close_cross": null,
+              "departure_from_equal_close": null
+            },
+            "broader_high": {
+              "value": "35.50",
+              "close_relation": "BELOW",
+              "wick_contains_reference": true,
+              "high_strictly_above": false,
+              "whole_bar_above": false,
+              "whole_bar_below": false,
+              "previous_close_relation": "ABOVE",
+              "saved_close_cross": "DOWN",
+              "departure_from_equal_close": null
+            }
+          }
+        }
+      ],
+      "formal_larger_structure_change": null,
+      "formal_merge": null,
+      "primary_pressure_id": null,
+      "historical_signal_eligible": false,
+      "selection_is_retrospective": true
+    },
+    "2026-06-26": {
+      "case": "B",
+      "cutoff": "2026-06-26",
+      "current_price_bar": {
+        "date": "2026-06-26",
+        "open": "35.00",
+        "high": "35.35",
+        "low": "34.55",
+        "close": "34.55"
+      },
+      "available_activities": {
+        "B_advance": {
+          "zone_id": "sha256:e5d2bd1838715b74c216bf90f776d680db9048ceac9009a9c49dfd876d4303d7",
+          "source_period": [
+            "2026-06-09",
+            "2026-06-17"
+          ],
+          "available_on": "2026-06-18",
+          "common": [
+            "33.65",
+            "34.20"
+          ],
+          "raw": [
+            "32.90",
+            "35.90"
+          ],
+          "source_rows": 7,
+          "right_price_bar": {
+            "date": "2026-06-18",
+            "open": "35.50",
+            "high": "36.25",
+            "low": "35.40",
+            "close": "35.40"
+          },
+          "against_references": {
+            "small_raw_high_proxy": {
+              "common_relation": "STRICTLY_ABOVE",
+              "raw_relation": "STRADDLES_REFERENCE",
+              "source_close_counts": {
+                "ABOVE": 7,
+                "EQUAL": 0,
+                "BELOW": 0
+              },
+              "source_range_contains_reference_dates": [
+                "2026-06-09",
+                "2026-06-10",
+                "2026-06-11"
+              ]
+            },
+            "broader_raw_high_proxy": {
+              "common_relation": "STRICTLY_BELOW",
+              "raw_relation": "STRADDLES_REFERENCE",
+              "source_close_counts": {
+                "ABOVE": 0,
+                "EQUAL": 1,
+                "BELOW": 6
+              },
+              "source_range_contains_reference_dates": [
+                "2026-06-17"
+              ]
+            }
+          },
+          "formal_bounds": null,
+          "formal_membership": null,
+          "response_confirmed": null
+        },
+        "B_high": {
+          "zone_id": "sha256:7ccce11a89d965ee8510901313c84feca41c580cf0675d21c74ce42426650ccb",
+          "source_period": [
+            "2026-06-17",
+            "2026-06-23"
+          ],
+          "available_on": "2026-06-24",
+          "common": [
+            "35.40",
+            "35.50"
+          ],
+          "raw": [
+            "35.05",
+            "36.60"
+          ],
+          "source_rows": 4,
+          "right_price_bar": {
+            "date": "2026-06-24",
+            "open": "35.30",
+            "high": "35.50",
+            "low": "35.00",
+            "close": "35.00"
+          },
+          "against_references": {
+            "small_raw_high_proxy": {
+              "common_relation": "STRICTLY_ABOVE",
+              "raw_relation": "STRICTLY_ABOVE",
+              "source_close_counts": {
+                "ABOVE": 4,
+                "EQUAL": 0,
+                "BELOW": 0
+              },
+              "source_range_contains_reference_dates": []
+            },
+            "broader_raw_high_proxy": {
+              "common_relation": "BOUNDARY_TOUCH",
+              "raw_relation": "STRADDLES_REFERENCE",
+              "source_close_counts": {
+                "ABOVE": 2,
+                "EQUAL": 1,
+                "BELOW": 1
+              },
+              "source_range_contains_reference_dates": [
+                "2026-06-17",
+                "2026-06-18"
+              ]
+            }
+          },
+          "formal_bounds": null,
+          "formal_membership": null,
+          "response_confirmed": null
+        },
+        "B_return": {
+          "zone_id": "sha256:4ac7f2a726697687e0ae096efa269f7b0cd28633a8924bb488323d7a0444cb16",
+          "source_period": [
+            "2026-06-22",
+            "2026-06-25"
+          ],
+          "available_on": "2026-06-26",
+          "common": [
+            "35.00",
+            "35.45"
+          ],
+          "raw": [
+            "34.90",
+            "36.60"
+          ],
+          "source_rows": 4,
+          "right_price_bar": {
+            "date": "2026-06-26",
+            "open": "35.00",
+            "high": "35.35",
+            "low": "34.55",
+            "close": "34.55"
+          },
+          "against_references": {
+            "small_raw_high_proxy": {
+              "common_relation": "STRICTLY_ABOVE",
+              "raw_relation": "STRICTLY_ABOVE",
+              "source_close_counts": {
+                "ABOVE": 4,
+                "EQUAL": 0,
+                "BELOW": 0
+              },
+              "source_range_contains_reference_dates": []
+            },
+            "broader_raw_high_proxy": {
+              "common_relation": "STRICTLY_BELOW",
+              "raw_relation": "STRADDLES_REFERENCE",
+              "source_close_counts": {
+                "ABOVE": 2,
+                "EQUAL": 0,
+                "BELOW": 2
+              },
+              "source_range_contains_reference_dates": [
+                "2026-06-24",
+                "2026-06-25"
+              ]
+            }
+          },
+          "formal_bounds": null,
+          "formal_membership": null,
+          "response_confirmed": null
+        }
+      },
+      "available_pairs": {
+        "B_advance_B_high": {
+          "available_on": "2026-06-24",
+          "zone_ids": [
+            "sha256:e5d2bd1838715b74c216bf90f776d680db9048ceac9009a9c49dfd876d4303d7",
+            "sha256:7ccce11a89d965ee8510901313c84feca41c580cf0675d21c74ce42426650ccb"
+          ],
+          "common_relation_later_vs_earlier": "STRICTLY_ABOVE",
+          "raw_relation_later_vs_earlier": "POSITIVE_OVERLAP",
+          "shared_leg_ids": [],
+          "shared_turn_ids": [
+            "sha256:b98bd7644dad7353bc91d0f1be15561f5f28ef656a0cbc014855e49490e93066"
+          ],
+          "shared_source_bar_dates": [
+            "2026-06-17"
+          ],
+          "later_earliest_left_evidence": "2026-06-16",
+          "all_later_left_evidence_after_older_known": false,
+          "actual_later_source_visits": {
+            "later_source_close_in_earlier_common_dates": [],
+            "later_source_close_in_earlier_raw_dates": [
+              "2026-06-17",
+              "2026-06-18",
+              "2026-06-22",
+              "2026-06-23"
+            ],
+            "later_source_range_intersects_earlier_common_dates": [],
+            "later_source_range_intersects_earlier_raw_dates": [
+              "2026-06-17",
+              "2026-06-18",
+              "2026-06-22",
+              "2026-06-23"
+            ]
+          },
+          "statistical_independence_inferred": false,
+          "formal_merge": null,
+          "formal_parent": null
+        },
+        "B_advance_B_return": {
+          "available_on": "2026-06-26",
+          "zone_ids": [
+            "sha256:e5d2bd1838715b74c216bf90f776d680db9048ceac9009a9c49dfd876d4303d7",
+            "sha256:4ac7f2a726697687e0ae096efa269f7b0cd28633a8924bb488323d7a0444cb16"
+          ],
+          "common_relation_later_vs_earlier": "STRICTLY_ABOVE",
+          "raw_relation_later_vs_earlier": "POSITIVE_OVERLAP",
+          "shared_leg_ids": [],
+          "shared_turn_ids": [],
+          "shared_source_bar_dates": [],
+          "later_earliest_left_evidence": "2026-06-18",
+          "all_later_left_evidence_after_older_known": false,
+          "actual_later_source_visits": {
+            "later_source_close_in_earlier_common_dates": [],
+            "later_source_close_in_earlier_raw_dates": [
+              "2026-06-22",
+              "2026-06-23",
+              "2026-06-24",
+              "2026-06-25"
+            ],
+            "later_source_range_intersects_earlier_common_dates": [],
+            "later_source_range_intersects_earlier_raw_dates": [
+              "2026-06-22",
+              "2026-06-23",
+              "2026-06-24",
+              "2026-06-25"
+            ]
+          },
+          "statistical_independence_inferred": false,
+          "formal_merge": null,
+          "formal_parent": null
+        },
+        "B_high_B_return": {
+          "available_on": "2026-06-26",
+          "zone_ids": [
+            "sha256:7ccce11a89d965ee8510901313c84feca41c580cf0675d21c74ce42426650ccb",
+            "sha256:4ac7f2a726697687e0ae096efa269f7b0cd28633a8924bb488323d7a0444cb16"
+          ],
+          "common_relation_later_vs_earlier": "POSITIVE_OVERLAP",
+          "raw_relation_later_vs_earlier": "POSITIVE_OVERLAP",
+          "shared_leg_ids": [],
+          "shared_turn_ids": [
+            "sha256:35000c8df08786a24aaddc7bb3879cc23dd1df9cc49e5011b2f780fd2fcfb121"
+          ],
+          "shared_source_bar_dates": [
+            "2026-06-22",
+            "2026-06-23"
+          ],
+          "later_earliest_left_evidence": "2026-06-18",
+          "all_later_left_evidence_after_older_known": false,
+          "actual_later_source_visits": {
+            "later_source_close_in_earlier_common_dates": [
+              "2026-06-25"
+            ],
+            "later_source_close_in_earlier_raw_dates": [
+              "2026-06-22",
+              "2026-06-23",
+              "2026-06-25"
+            ],
+            "later_source_range_intersects_earlier_common_dates": [
+              "2026-06-24",
+              "2026-06-25"
+            ],
+            "later_source_range_intersects_earlier_raw_dates": [
+              "2026-06-22",
+              "2026-06-23",
+              "2026-06-24",
+              "2026-06-25"
+            ]
+          },
+          "statistical_independence_inferred": false,
+          "formal_merge": null,
+          "formal_parent": null
+        }
+      },
+      "current_reference_locations": {
+        "small_raw_high_proxy": {
+          "close_relation": "STRICTLY_ABOVE",
+          "reference": [
+            "33.20",
+            "33.20"
+          ]
+        },
+        "broader_raw_high_proxy": {
+          "close_relation": "STRICTLY_BELOW",
+          "reference": [
+            "35.50",
+            "35.50"
+          ]
+        }
+      },
+      "current_activity_locations": {
+        "B_advance": {
+          "common_location": "STRICTLY_ABOVE",
+          "raw_location": "INSIDE_REFERENCE_RANGE"
+        },
+        "B_high": {
+          "common_location": "STRICTLY_BELOW",
+          "raw_location": "STRICTLY_BELOW"
+        },
+        "B_return": {
+          "common_location": "STRICTLY_BELOW",
+          "raw_location": "STRICTLY_BELOW"
+        }
+      },
+      "previous_price_anchors": [
+        {
+          "date": "2026-06-04",
+          "bar": {
+            "close": "33.45",
+            "date": "2026-06-04",
+            "high": "33.70",
+            "low": "32.90",
+            "open": "33.00",
+            "volume_shares_scaled": "71753146"
+          },
+          "references": {
+            "lower_activity_high": {
+              "value": "33.20",
+              "close_relation": "ABOVE",
+              "wick_contains_reference": true,
+              "high_strictly_above": true,
+              "whole_bar_above": false,
+              "whole_bar_below": false,
+              "previous_close_relation": "BELOW",
+              "saved_close_cross": "UP",
+              "departure_from_equal_close": null
+            },
+            "broader_high": {
+              "value": "35.50",
+              "close_relation": "BELOW",
+              "wick_contains_reference": false,
+              "high_strictly_above": false,
+              "whole_bar_above": false,
+              "whole_bar_below": true,
+              "previous_close_relation": "BELOW",
+              "saved_close_cross": null,
+              "departure_from_equal_close": null
+            }
+          }
+        },
+        {
+          "date": "2026-06-09",
+          "bar": {
+            "close": "34.20",
+            "date": "2026-06-09",
+            "high": "34.35",
+            "low": "32.90",
+            "open": "32.90",
+            "volume_shares_scaled": "88605638"
+          },
+          "references": {
+            "lower_activity_high": {
+              "value": "33.20",
+              "close_relation": "ABOVE",
+              "wick_contains_reference": true,
+              "high_strictly_above": true,
+              "whole_bar_above": false,
+              "whole_bar_below": false,
+              "previous_close_relation": "BELOW",
+              "saved_close_cross": "UP",
+              "departure_from_equal_close": null
+            },
+            "broader_high": {
+              "value": "35.50",
+              "close_relation": "BELOW",
+              "wick_contains_reference": false,
+              "high_strictly_above": false,
+              "whole_bar_above": false,
+              "whole_bar_below": true,
+              "previous_close_relation": "BELOW",
+              "saved_close_cross": null,
+              "departure_from_equal_close": null
+            }
+          }
+        },
+        {
+          "date": "2026-06-22",
+          "bar": {
+            "close": "35.80",
+            "date": "2026-06-22",
+            "high": "36.60",
+            "low": "35.70",
+            "open": "36.00",
+            "volume_shares_scaled": "106058238"
+          },
+          "references": {
+            "lower_activity_high": {
+              "value": "33.20",
+              "close_relation": "ABOVE",
+              "wick_contains_reference": false,
+              "high_strictly_above": true,
+              "whole_bar_above": true,
+              "whole_bar_below": false,
+              "previous_close_relation": "ABOVE",
+              "saved_close_cross": null,
+              "departure_from_equal_close": null
+            },
+            "broader_high": {
+              "value": "35.50",
+              "close_relation": "ABOVE",
+              "wick_contains_reference": false,
+              "high_strictly_above": true,
+              "whole_bar_above": true,
+              "whole_bar_below": false,
+              "previous_close_relation": "BELOW",
+              "saved_close_cross": "UP",
+              "departure_from_equal_close": null
+            }
+          }
+        },
+        {
+          "date": "2026-06-24",
+          "bar": {
+            "close": "35.00",
+            "date": "2026-06-24",
+            "high": "35.50",
+            "low": "35.00",
+            "open": "35.30",
+            "volume_shares_scaled": "66780179"
+          },
+          "references": {
+            "lower_activity_high": {
+              "value": "33.20",
+              "close_relation": "ABOVE",
+              "wick_contains_reference": false,
+              "high_strictly_above": true,
+              "whole_bar_above": true,
+              "whole_bar_below": false,
+              "previous_close_relation": "ABOVE",
+              "saved_close_cross": null,
+              "departure_from_equal_close": null
+            },
+            "broader_high": {
+              "value": "35.50",
+              "close_relation": "BELOW",
+              "wick_contains_reference": true,
+              "high_strictly_above": false,
+              "whole_bar_above": false,
+              "whole_bar_below": false,
+              "previous_close_relation": "ABOVE",
+              "saved_close_cross": "DOWN",
+              "departure_from_equal_close": null
+            }
+          }
+        }
+      ],
+      "formal_larger_structure_change": null,
+      "formal_merge": null,
+      "primary_pressure_id": null,
+      "historical_signal_eligible": false,
+      "selection_is_retrospective": true
+    },
+    "2026-06-30": {
+      "case": "B",
+      "cutoff": "2026-06-30",
+      "current_price_bar": {
+        "date": "2026-06-30",
+        "open": "34.60",
+        "high": "34.90",
+        "low": "34.15",
+        "close": "34.45"
+      },
+      "available_activities": {
+        "B_advance": {
+          "zone_id": "sha256:e5d2bd1838715b74c216bf90f776d680db9048ceac9009a9c49dfd876d4303d7",
+          "source_period": [
+            "2026-06-09",
+            "2026-06-17"
+          ],
+          "available_on": "2026-06-18",
+          "common": [
+            "33.65",
+            "34.20"
+          ],
+          "raw": [
+            "32.90",
+            "35.90"
+          ],
+          "source_rows": 7,
+          "right_price_bar": {
+            "date": "2026-06-18",
+            "open": "35.50",
+            "high": "36.25",
+            "low": "35.40",
+            "close": "35.40"
+          },
+          "against_references": {
+            "small_raw_high_proxy": {
+              "common_relation": "STRICTLY_ABOVE",
+              "raw_relation": "STRADDLES_REFERENCE",
+              "source_close_counts": {
+                "ABOVE": 7,
+                "EQUAL": 0,
+                "BELOW": 0
+              },
+              "source_range_contains_reference_dates": [
+                "2026-06-09",
+                "2026-06-10",
+                "2026-06-11"
+              ]
+            },
+            "broader_raw_high_proxy": {
+              "common_relation": "STRICTLY_BELOW",
+              "raw_relation": "STRADDLES_REFERENCE",
+              "source_close_counts": {
+                "ABOVE": 0,
+                "EQUAL": 1,
+                "BELOW": 6
+              },
+              "source_range_contains_reference_dates": [
+                "2026-06-17"
+              ]
+            }
+          },
+          "formal_bounds": null,
+          "formal_membership": null,
+          "response_confirmed": null
+        },
+        "B_high": {
+          "zone_id": "sha256:7ccce11a89d965ee8510901313c84feca41c580cf0675d21c74ce42426650ccb",
+          "source_period": [
+            "2026-06-17",
+            "2026-06-23"
+          ],
+          "available_on": "2026-06-24",
+          "common": [
+            "35.40",
+            "35.50"
+          ],
+          "raw": [
+            "35.05",
+            "36.60"
+          ],
+          "source_rows": 4,
+          "right_price_bar": {
+            "date": "2026-06-24",
+            "open": "35.30",
+            "high": "35.50",
+            "low": "35.00",
+            "close": "35.00"
+          },
+          "against_references": {
+            "small_raw_high_proxy": {
+              "common_relation": "STRICTLY_ABOVE",
+              "raw_relation": "STRICTLY_ABOVE",
+              "source_close_counts": {
+                "ABOVE": 4,
+                "EQUAL": 0,
+                "BELOW": 0
+              },
+              "source_range_contains_reference_dates": []
+            },
+            "broader_raw_high_proxy": {
+              "common_relation": "BOUNDARY_TOUCH",
+              "raw_relation": "STRADDLES_REFERENCE",
+              "source_close_counts": {
+                "ABOVE": 2,
+                "EQUAL": 1,
+                "BELOW": 1
+              },
+              "source_range_contains_reference_dates": [
+                "2026-06-17",
+                "2026-06-18"
+              ]
+            }
+          },
+          "formal_bounds": null,
+          "formal_membership": null,
+          "response_confirmed": null
+        },
+        "B_return": {
+          "zone_id": "sha256:4ac7f2a726697687e0ae096efa269f7b0cd28633a8924bb488323d7a0444cb16",
+          "source_period": [
+            "2026-06-22",
+            "2026-06-25"
+          ],
+          "available_on": "2026-06-26",
+          "common": [
+            "35.00",
+            "35.45"
+          ],
+          "raw": [
+            "34.90",
+            "36.60"
+          ],
+          "source_rows": 4,
+          "right_price_bar": {
+            "date": "2026-06-26",
+            "open": "35.00",
+            "high": "35.35",
+            "low": "34.55",
+            "close": "34.55"
+          },
+          "against_references": {
+            "small_raw_high_proxy": {
+              "common_relation": "STRICTLY_ABOVE",
+              "raw_relation": "STRICTLY_ABOVE",
+              "source_close_counts": {
+                "ABOVE": 4,
+                "EQUAL": 0,
+                "BELOW": 0
+              },
+              "source_range_contains_reference_dates": []
+            },
+            "broader_raw_high_proxy": {
+              "common_relation": "STRICTLY_BELOW",
+              "raw_relation": "STRADDLES_REFERENCE",
+              "source_close_counts": {
+                "ABOVE": 2,
+                "EQUAL": 0,
+                "BELOW": 2
+              },
+              "source_range_contains_reference_dates": [
+                "2026-06-24",
+                "2026-06-25"
+              ]
+            }
+          },
+          "formal_bounds": null,
+          "formal_membership": null,
+          "response_confirmed": null
+        }
+      },
+      "available_pairs": {
+        "B_advance_B_high": {
+          "available_on": "2026-06-24",
+          "zone_ids": [
+            "sha256:e5d2bd1838715b74c216bf90f776d680db9048ceac9009a9c49dfd876d4303d7",
+            "sha256:7ccce11a89d965ee8510901313c84feca41c580cf0675d21c74ce42426650ccb"
+          ],
+          "common_relation_later_vs_earlier": "STRICTLY_ABOVE",
+          "raw_relation_later_vs_earlier": "POSITIVE_OVERLAP",
+          "shared_leg_ids": [],
+          "shared_turn_ids": [
+            "sha256:b98bd7644dad7353bc91d0f1be15561f5f28ef656a0cbc014855e49490e93066"
+          ],
+          "shared_source_bar_dates": [
+            "2026-06-17"
+          ],
+          "later_earliest_left_evidence": "2026-06-16",
+          "all_later_left_evidence_after_older_known": false,
+          "actual_later_source_visits": {
+            "later_source_close_in_earlier_common_dates": [],
+            "later_source_close_in_earlier_raw_dates": [
+              "2026-06-17",
+              "2026-06-18",
+              "2026-06-22",
+              "2026-06-23"
+            ],
+            "later_source_range_intersects_earlier_common_dates": [],
+            "later_source_range_intersects_earlier_raw_dates": [
+              "2026-06-17",
+              "2026-06-18",
+              "2026-06-22",
+              "2026-06-23"
+            ]
+          },
+          "statistical_independence_inferred": false,
+          "formal_merge": null,
+          "formal_parent": null
+        },
+        "B_advance_B_return": {
+          "available_on": "2026-06-26",
+          "zone_ids": [
+            "sha256:e5d2bd1838715b74c216bf90f776d680db9048ceac9009a9c49dfd876d4303d7",
+            "sha256:4ac7f2a726697687e0ae096efa269f7b0cd28633a8924bb488323d7a0444cb16"
+          ],
+          "common_relation_later_vs_earlier": "STRICTLY_ABOVE",
+          "raw_relation_later_vs_earlier": "POSITIVE_OVERLAP",
+          "shared_leg_ids": [],
+          "shared_turn_ids": [],
+          "shared_source_bar_dates": [],
+          "later_earliest_left_evidence": "2026-06-18",
+          "all_later_left_evidence_after_older_known": false,
+          "actual_later_source_visits": {
+            "later_source_close_in_earlier_common_dates": [],
+            "later_source_close_in_earlier_raw_dates": [
+              "2026-06-22",
+              "2026-06-23",
+              "2026-06-24",
+              "2026-06-25"
+            ],
+            "later_source_range_intersects_earlier_common_dates": [],
+            "later_source_range_intersects_earlier_raw_dates": [
+              "2026-06-22",
+              "2026-06-23",
+              "2026-06-24",
+              "2026-06-25"
+            ]
+          },
+          "statistical_independence_inferred": false,
+          "formal_merge": null,
+          "formal_parent": null
+        },
+        "B_high_B_return": {
+          "available_on": "2026-06-26",
+          "zone_ids": [
+            "sha256:7ccce11a89d965ee8510901313c84feca41c580cf0675d21c74ce42426650ccb",
+            "sha256:4ac7f2a726697687e0ae096efa269f7b0cd28633a8924bb488323d7a0444cb16"
+          ],
+          "common_relation_later_vs_earlier": "POSITIVE_OVERLAP",
+          "raw_relation_later_vs_earlier": "POSITIVE_OVERLAP",
+          "shared_leg_ids": [],
+          "shared_turn_ids": [
+            "sha256:35000c8df08786a24aaddc7bb3879cc23dd1df9cc49e5011b2f780fd2fcfb121"
+          ],
+          "shared_source_bar_dates": [
+            "2026-06-22",
+            "2026-06-23"
+          ],
+          "later_earliest_left_evidence": "2026-06-18",
+          "all_later_left_evidence_after_older_known": false,
+          "actual_later_source_visits": {
+            "later_source_close_in_earlier_common_dates": [
+              "2026-06-25"
+            ],
+            "later_source_close_in_earlier_raw_dates": [
+              "2026-06-22",
+              "2026-06-23",
+              "2026-06-25"
+            ],
+            "later_source_range_intersects_earlier_common_dates": [
+              "2026-06-24",
+              "2026-06-25"
+            ],
+            "later_source_range_intersects_earlier_raw_dates": [
+              "2026-06-22",
+              "2026-06-23",
+              "2026-06-24",
+              "2026-06-25"
+            ]
+          },
+          "statistical_independence_inferred": false,
+          "formal_merge": null,
+          "formal_parent": null
+        }
+      },
+      "current_reference_locations": {
+        "small_raw_high_proxy": {
+          "close_relation": "STRICTLY_ABOVE",
+          "reference": [
+            "33.20",
+            "33.20"
+          ]
+        },
+        "broader_raw_high_proxy": {
+          "close_relation": "STRICTLY_BELOW",
+          "reference": [
+            "35.50",
+            "35.50"
+          ]
+        }
+      },
+      "current_activity_locations": {
+        "B_advance": {
+          "common_location": "STRICTLY_ABOVE",
+          "raw_location": "INSIDE_REFERENCE_RANGE"
+        },
+        "B_high": {
+          "common_location": "STRICTLY_BELOW",
+          "raw_location": "STRICTLY_BELOW"
+        },
+        "B_return": {
+          "common_location": "STRICTLY_BELOW",
+          "raw_location": "STRICTLY_BELOW"
+        }
+      },
+      "previous_price_anchors": [
+        {
+          "date": "2026-06-04",
+          "bar": {
+            "close": "33.45",
+            "date": "2026-06-04",
+            "high": "33.70",
+            "low": "32.90",
+            "open": "33.00",
+            "volume_shares_scaled": "71753146"
+          },
+          "references": {
+            "lower_activity_high": {
+              "value": "33.20",
+              "close_relation": "ABOVE",
+              "wick_contains_reference": true,
+              "high_strictly_above": true,
+              "whole_bar_above": false,
+              "whole_bar_below": false,
+              "previous_close_relation": "BELOW",
+              "saved_close_cross": "UP",
+              "departure_from_equal_close": null
+            },
+            "broader_high": {
+              "value": "35.50",
+              "close_relation": "BELOW",
+              "wick_contains_reference": false,
+              "high_strictly_above": false,
+              "whole_bar_above": false,
+              "whole_bar_below": true,
+              "previous_close_relation": "BELOW",
+              "saved_close_cross": null,
+              "departure_from_equal_close": null
+            }
+          }
+        },
+        {
+          "date": "2026-06-09",
+          "bar": {
+            "close": "34.20",
+            "date": "2026-06-09",
+            "high": "34.35",
+            "low": "32.90",
+            "open": "32.90",
+            "volume_shares_scaled": "88605638"
+          },
+          "references": {
+            "lower_activity_high": {
+              "value": "33.20",
+              "close_relation": "ABOVE",
+              "wick_contains_reference": true,
+              "high_strictly_above": true,
+              "whole_bar_above": false,
+              "whole_bar_below": false,
+              "previous_close_relation": "BELOW",
+              "saved_close_cross": "UP",
+              "departure_from_equal_close": null
+            },
+            "broader_high": {
+              "value": "35.50",
+              "close_relation": "BELOW",
+              "wick_contains_reference": false,
+              "high_strictly_above": false,
+              "whole_bar_above": false,
+              "whole_bar_below": true,
+              "previous_close_relation": "BELOW",
+              "saved_close_cross": null,
+              "departure_from_equal_close": null
+            }
+          }
+        },
+        {
+          "date": "2026-06-22",
+          "bar": {
+            "close": "35.80",
+            "date": "2026-06-22",
+            "high": "36.60",
+            "low": "35.70",
+            "open": "36.00",
+            "volume_shares_scaled": "106058238"
+          },
+          "references": {
+            "lower_activity_high": {
+              "value": "33.20",
+              "close_relation": "ABOVE",
+              "wick_contains_reference": false,
+              "high_strictly_above": true,
+              "whole_bar_above": true,
+              "whole_bar_below": false,
+              "previous_close_relation": "ABOVE",
+              "saved_close_cross": null,
+              "departure_from_equal_close": null
+            },
+            "broader_high": {
+              "value": "35.50",
+              "close_relation": "ABOVE",
+              "wick_contains_reference": false,
+              "high_strictly_above": true,
+              "whole_bar_above": true,
+              "whole_bar_below": false,
+              "previous_close_relation": "BELOW",
+              "saved_close_cross": "UP",
+              "departure_from_equal_close": null
+            }
+          }
+        },
+        {
+          "date": "2026-06-24",
+          "bar": {
+            "close": "35.00",
+            "date": "2026-06-24",
+            "high": "35.50",
+            "low": "35.00",
+            "open": "35.30",
+            "volume_shares_scaled": "66780179"
+          },
+          "references": {
+            "lower_activity_high": {
+              "value": "33.20",
+              "close_relation": "ABOVE",
+              "wick_contains_reference": false,
+              "high_strictly_above": true,
+              "whole_bar_above": true,
+              "whole_bar_below": false,
+              "previous_close_relation": "ABOVE",
+              "saved_close_cross": null,
+              "departure_from_equal_close": null
+            },
+            "broader_high": {
+              "value": "35.50",
+              "close_relation": "BELOW",
+              "wick_contains_reference": true,
+              "high_strictly_above": false,
+              "whole_bar_above": false,
+              "whole_bar_below": false,
+              "previous_close_relation": "ABOVE",
+              "saved_close_cross": "DOWN",
+              "departure_from_equal_close": null
+            }
+          }
+        }
+      ],
+      "formal_larger_structure_change": null,
+      "formal_merge": null,
+      "primary_pressure_id": null,
+      "historical_signal_eligible": false,
+      "selection_is_retrospective": true
+    }
+  },
+  "G2": {
+    "2023-07-06": {
+      "case": "G2",
+      "cutoff": "2023-07-06",
+      "current_price_bar": {
+        "date": "2023-07-06",
+        "open": "37.75",
+        "high": "37.75",
+        "low": "37.20",
+        "close": "37.25"
+      },
+      "available_activities": {},
+      "available_pairs": {},
+      "current_reference_locations": {
+        "local_original_low": {
+          "close_relation": "STRICTLY_ABOVE",
+          "reference": [
+            "37.15",
+            "37.15"
+          ]
+        }
+      },
+      "current_activity_locations": {},
+      "previous_price_anchors": [],
+      "formal_larger_structure_change": null,
+      "formal_merge": null,
+      "primary_pressure_id": null,
+      "historical_signal_eligible": false,
+      "selection_is_retrospective": true
+    },
+    "2023-07-07": {
+      "case": "G2",
+      "cutoff": "2023-07-07",
+      "current_price_bar": {
+        "date": "2023-07-07",
+        "open": "37.20",
+        "high": "37.50",
+        "low": "36.90",
+        "close": "37.30"
+      },
+      "available_activities": {
+        "G_earlier": {
+          "zone_id": "sha256:0ea70cf65accdd8ecd1f7b6a9bf22792fb6be50fd7263a10fe61e8d376c586f7",
+          "source_period": [
+            "2023-06-28",
+            "2023-07-06"
+          ],
+          "available_on": "2023-07-07",
+          "common": [
+            "38.05",
+            "38.25"
+          ],
+          "raw": [
+            "37.20",
+            "38.50"
+          ],
+          "source_rows": 7,
+          "right_price_bar": {
+            "date": "2023-07-07",
+            "open": "37.20",
+            "high": "37.50",
+            "low": "36.90",
+            "close": "37.30"
+          },
+          "against_references": {
+            "local_original_low": {
+              "common_relation": "STRICTLY_ABOVE",
+              "raw_relation": "STRICTLY_ABOVE",
+              "source_close_counts": {
+                "ABOVE": 7,
+                "EQUAL": 0,
+                "BELOW": 0
+              },
+              "source_range_contains_reference_dates": []
+            },
+            "earlier_common": {
+              "common_relation": "POSITIVE_OVERLAP",
+              "raw_relation": "POSITIVE_OVERLAP"
+            }
+          },
+          "formal_bounds": null,
+          "formal_membership": null,
+          "response_confirmed": null
+        }
+      },
+      "available_pairs": {},
+      "current_reference_locations": {
+        "local_original_low": {
+          "close_relation": "STRICTLY_ABOVE",
+          "reference": [
+            "37.15",
+            "37.15"
+          ]
+        },
+        "earlier_common": {
+          "close_relation": "STRICTLY_BELOW",
+          "reference": [
+            "38.05",
+            "38.25"
+          ]
+        }
+      },
+      "current_activity_locations": {
+        "G_earlier": {
+          "common_location": "STRICTLY_BELOW",
+          "raw_location": "INSIDE_REFERENCE_RANGE"
+        }
+      },
+      "previous_price_anchors": [],
+      "formal_larger_structure_change": null,
+      "formal_merge": null,
+      "primary_pressure_id": null,
+      "historical_signal_eligible": false,
+      "selection_is_retrospective": true
+    },
+    "2023-07-18": {
+      "case": "G2",
+      "cutoff": "2023-07-18",
+      "current_price_bar": {
+        "date": "2023-07-18",
+        "open": "36.70",
+        "high": "37.10",
+        "low": "36.50",
+        "close": "37.10"
+      },
+      "available_activities": {
+        "G_earlier": {
+          "zone_id": "sha256:0ea70cf65accdd8ecd1f7b6a9bf22792fb6be50fd7263a10fe61e8d376c586f7",
+          "source_period": [
+            "2023-06-28",
+            "2023-07-06"
+          ],
+          "available_on": "2023-07-07",
+          "common": [
+            "38.05",
+            "38.25"
+          ],
+          "raw": [
+            "37.20",
+            "38.50"
+          ],
+          "source_rows": 7,
+          "right_price_bar": {
+            "date": "2023-07-07",
+            "open": "37.20",
+            "high": "37.50",
+            "low": "36.90",
+            "close": "37.30"
+          },
+          "against_references": {
+            "local_original_low": {
+              "common_relation": "STRICTLY_ABOVE",
+              "raw_relation": "STRICTLY_ABOVE",
+              "source_close_counts": {
+                "ABOVE": 7,
+                "EQUAL": 0,
+                "BELOW": 0
+              },
+              "source_range_contains_reference_dates": []
+            },
+            "earlier_common": {
+              "common_relation": "POSITIVE_OVERLAP",
+              "raw_relation": "POSITIVE_OVERLAP"
+            }
+          },
+          "formal_bounds": null,
+          "formal_membership": null,
+          "response_confirmed": null
+        }
+      },
+      "available_pairs": {},
+      "current_reference_locations": {
+        "local_original_low": {
+          "close_relation": "STRICTLY_BELOW",
+          "reference": [
+            "37.15",
+            "37.15"
+          ]
+        },
+        "earlier_common": {
+          "close_relation": "STRICTLY_BELOW",
+          "reference": [
+            "38.05",
+            "38.25"
+          ]
+        }
+      },
+      "current_activity_locations": {
+        "G_earlier": {
+          "common_location": "STRICTLY_BELOW",
+          "raw_location": "STRICTLY_BELOW"
+        }
+      },
+      "previous_price_anchors": [
+        {
+          "date": "2023-07-10",
+          "bar": {
+            "date": "2023-07-10",
+            "open": "37.30",
+            "high": "37.40",
+            "low": "36.80",
+            "close": "36.85"
+          },
+          "direction": "DOWN",
+          "reference_id": "sha256:3d270abf132d1abbfe2188f8fa31f0b2a7370f68ca3432792ee7ba0b7aedc172",
+          "reference_price": "37.15"
+        }
+      ],
+      "formal_larger_structure_change": null,
+      "formal_merge": null,
+      "primary_pressure_id": null,
+      "historical_signal_eligible": false,
+      "selection_is_retrospective": true
+    },
+    "2023-07-19": {
+      "case": "G2",
+      "cutoff": "2023-07-19",
+      "current_price_bar": {
+        "date": "2023-07-19",
+        "open": "37.10",
+        "high": "37.10",
+        "low": "36.55",
+        "close": "36.60"
+      },
+      "available_activities": {
+        "G_earlier": {
+          "zone_id": "sha256:0ea70cf65accdd8ecd1f7b6a9bf22792fb6be50fd7263a10fe61e8d376c586f7",
+          "source_period": [
+            "2023-06-28",
+            "2023-07-06"
+          ],
+          "available_on": "2023-07-07",
+          "common": [
+            "38.05",
+            "38.25"
+          ],
+          "raw": [
+            "37.20",
+            "38.50"
+          ],
+          "source_rows": 7,
+          "right_price_bar": {
+            "date": "2023-07-07",
+            "open": "37.20",
+            "high": "37.50",
+            "low": "36.90",
+            "close": "37.30"
+          },
+          "against_references": {
+            "local_original_low": {
+              "common_relation": "STRICTLY_ABOVE",
+              "raw_relation": "STRICTLY_ABOVE",
+              "source_close_counts": {
+                "ABOVE": 7,
+                "EQUAL": 0,
+                "BELOW": 0
+              },
+              "source_range_contains_reference_dates": []
+            },
+            "earlier_common": {
+              "common_relation": "POSITIVE_OVERLAP",
+              "raw_relation": "POSITIVE_OVERLAP"
+            }
+          },
+          "formal_bounds": null,
+          "formal_membership": null,
+          "response_confirmed": null
+        },
+        "G_lower": {
+          "zone_id": "sha256:2f1ceb2f70b060b3079147602f74378279cbf722a3207590f54fa5f607d6f3dc",
+          "source_period": [
+            "2023-07-14",
+            "2023-07-18"
+          ],
+          "available_on": "2023-07-19",
+          "common": [
+            "36.75",
+            "37.00"
+          ],
+          "raw": [
+            "36.50",
+            "37.15"
+          ],
+          "source_rows": 3,
+          "right_price_bar": {
+            "date": "2023-07-19",
+            "open": "37.10",
+            "high": "37.10",
+            "low": "36.55",
+            "close": "36.60"
+          },
+          "against_references": {
+            "local_original_low": {
+              "common_relation": "STRICTLY_BELOW",
+              "raw_relation": "BOUNDARY_TOUCH",
+              "source_close_counts": {
+                "ABOVE": 0,
+                "EQUAL": 0,
+                "BELOW": 3
+              },
+              "source_range_contains_reference_dates": [
+                "2023-07-14"
+              ]
+            },
+            "earlier_common": {
+              "common_relation": "STRICTLY_BELOW",
+              "raw_relation": "STRICTLY_BELOW"
+            }
+          },
+          "formal_bounds": null,
+          "formal_membership": null,
+          "response_confirmed": null
+        }
+      },
+      "available_pairs": {
+        "G_earlier_G_lower": {
+          "available_on": "2023-07-19",
+          "zone_ids": [
+            "sha256:0ea70cf65accdd8ecd1f7b6a9bf22792fb6be50fd7263a10fe61e8d376c586f7",
+            "sha256:2f1ceb2f70b060b3079147602f74378279cbf722a3207590f54fa5f607d6f3dc"
+          ],
+          "common_relation_later_vs_earlier": "STRICTLY_BELOW",
+          "raw_relation_later_vs_earlier": "STRICTLY_BELOW",
+          "shared_leg_ids": [],
+          "shared_turn_ids": [],
+          "shared_source_bar_dates": [],
+          "later_earliest_left_evidence": "2023-07-13",
+          "all_later_left_evidence_after_older_known": true,
+          "actual_later_source_visits": {
+            "later_source_close_in_earlier_common_dates": [],
+            "later_source_close_in_earlier_raw_dates": [],
+            "later_source_range_intersects_earlier_common_dates": [],
+            "later_source_range_intersects_earlier_raw_dates": []
+          },
+          "statistical_independence_inferred": false,
+          "formal_merge": null,
+          "formal_parent": null
+        }
+      },
+      "current_reference_locations": {
+        "local_original_low": {
+          "close_relation": "STRICTLY_BELOW",
+          "reference": [
+            "37.15",
+            "37.15"
+          ]
+        },
+        "earlier_common": {
+          "close_relation": "STRICTLY_BELOW",
+          "reference": [
+            "38.05",
+            "38.25"
+          ]
+        }
+      },
+      "current_activity_locations": {
+        "G_earlier": {
+          "common_location": "STRICTLY_BELOW",
+          "raw_location": "STRICTLY_BELOW"
+        },
+        "G_lower": {
+          "common_location": "STRICTLY_BELOW",
+          "raw_location": "INSIDE_REFERENCE_RANGE"
+        }
+      },
+      "previous_price_anchors": [
+        {
+          "date": "2023-07-10",
+          "bar": {
+            "date": "2023-07-10",
+            "open": "37.30",
+            "high": "37.40",
+            "low": "36.80",
+            "close": "36.85"
+          },
+          "direction": "DOWN",
+          "reference_id": "sha256:3d270abf132d1abbfe2188f8fa31f0b2a7370f68ca3432792ee7ba0b7aedc172",
+          "reference_price": "37.15"
+        }
+      ],
+      "formal_larger_structure_change": null,
+      "formal_merge": null,
+      "primary_pressure_id": null,
+      "historical_signal_eligible": false,
+      "selection_is_retrospective": true
+    },
+    "2023-07-25": {
+      "case": "G2",
+      "cutoff": "2023-07-25",
+      "current_price_bar": {
+        "date": "2023-07-25",
+        "open": "36.90",
+        "high": "37.65",
+        "low": "36.80",
+        "close": "37.40"
+      },
+      "available_activities": {
+        "G_earlier": {
+          "zone_id": "sha256:0ea70cf65accdd8ecd1f7b6a9bf22792fb6be50fd7263a10fe61e8d376c586f7",
+          "source_period": [
+            "2023-06-28",
+            "2023-07-06"
+          ],
+          "available_on": "2023-07-07",
+          "common": [
+            "38.05",
+            "38.25"
+          ],
+          "raw": [
+            "37.20",
+            "38.50"
+          ],
+          "source_rows": 7,
+          "right_price_bar": {
+            "date": "2023-07-07",
+            "open": "37.20",
+            "high": "37.50",
+            "low": "36.90",
+            "close": "37.30"
+          },
+          "against_references": {
+            "local_original_low": {
+              "common_relation": "STRICTLY_ABOVE",
+              "raw_relation": "STRICTLY_ABOVE",
+              "source_close_counts": {
+                "ABOVE": 7,
+                "EQUAL": 0,
+                "BELOW": 0
+              },
+              "source_range_contains_reference_dates": []
+            },
+            "earlier_common": {
+              "common_relation": "POSITIVE_OVERLAP",
+              "raw_relation": "POSITIVE_OVERLAP"
+            }
+          },
+          "formal_bounds": null,
+          "formal_membership": null,
+          "response_confirmed": null
+        },
+        "G_lower": {
+          "zone_id": "sha256:2f1ceb2f70b060b3079147602f74378279cbf722a3207590f54fa5f607d6f3dc",
+          "source_period": [
+            "2023-07-14",
+            "2023-07-18"
+          ],
+          "available_on": "2023-07-19",
+          "common": [
+            "36.75",
+            "37.00"
+          ],
+          "raw": [
+            "36.50",
+            "37.15"
+          ],
+          "source_rows": 3,
+          "right_price_bar": {
+            "date": "2023-07-19",
+            "open": "37.10",
+            "high": "37.10",
+            "low": "36.55",
+            "close": "36.60"
+          },
+          "against_references": {
+            "local_original_low": {
+              "common_relation": "STRICTLY_BELOW",
+              "raw_relation": "BOUNDARY_TOUCH",
+              "source_close_counts": {
+                "ABOVE": 0,
+                "EQUAL": 0,
+                "BELOW": 3
+              },
+              "source_range_contains_reference_dates": [
+                "2023-07-14"
+              ]
+            },
+            "earlier_common": {
+              "common_relation": "STRICTLY_BELOW",
+              "raw_relation": "STRICTLY_BELOW"
+            }
+          },
+          "formal_bounds": null,
+          "formal_membership": null,
+          "response_confirmed": null
+        }
+      },
+      "available_pairs": {
+        "G_earlier_G_lower": {
+          "available_on": "2023-07-19",
+          "zone_ids": [
+            "sha256:0ea70cf65accdd8ecd1f7b6a9bf22792fb6be50fd7263a10fe61e8d376c586f7",
+            "sha256:2f1ceb2f70b060b3079147602f74378279cbf722a3207590f54fa5f607d6f3dc"
+          ],
+          "common_relation_later_vs_earlier": "STRICTLY_BELOW",
+          "raw_relation_later_vs_earlier": "STRICTLY_BELOW",
+          "shared_leg_ids": [],
+          "shared_turn_ids": [],
+          "shared_source_bar_dates": [],
+          "later_earliest_left_evidence": "2023-07-13",
+          "all_later_left_evidence_after_older_known": true,
+          "actual_later_source_visits": {
+            "later_source_close_in_earlier_common_dates": [],
+            "later_source_close_in_earlier_raw_dates": [],
+            "later_source_range_intersects_earlier_common_dates": [],
+            "later_source_range_intersects_earlier_raw_dates": []
+          },
+          "statistical_independence_inferred": false,
+          "formal_merge": null,
+          "formal_parent": null
+        }
+      },
+      "current_reference_locations": {
+        "local_original_low": {
+          "close_relation": "STRICTLY_ABOVE",
+          "reference": [
+            "37.15",
+            "37.15"
+          ]
+        },
+        "earlier_common": {
+          "close_relation": "STRICTLY_BELOW",
+          "reference": [
+            "38.05",
+            "38.25"
+          ]
+        }
+      },
+      "current_activity_locations": {
+        "G_earlier": {
+          "common_location": "STRICTLY_BELOW",
+          "raw_location": "INSIDE_REFERENCE_RANGE"
+        },
+        "G_lower": {
+          "common_location": "STRICTLY_ABOVE",
+          "raw_location": "STRICTLY_ABOVE"
+        }
+      },
+      "previous_price_anchors": [
+        {
+          "date": "2023-07-10",
+          "bar": {
+            "date": "2023-07-10",
+            "open": "37.30",
+            "high": "37.40",
+            "low": "36.80",
+            "close": "36.85"
+          },
+          "direction": "DOWN",
+          "reference_id": "sha256:3d270abf132d1abbfe2188f8fa31f0b2a7370f68ca3432792ee7ba0b7aedc172",
+          "reference_price": "37.15"
+        },
+        {
+          "date": "2023-07-25",
+          "bar": {
+            "date": "2023-07-25",
+            "open": "36.90",
+            "high": "37.65",
+            "low": "36.80",
+            "close": "37.40"
+          },
+          "direction": "UP",
+          "reference_id": "sha256:3d270abf132d1abbfe2188f8fa31f0b2a7370f68ca3432792ee7ba0b7aedc172",
+          "reference_price": "37.15"
+        }
+      ],
+      "formal_larger_structure_change": null,
+      "formal_merge": null,
+      "primary_pressure_id": null,
+      "historical_signal_eligible": false,
+      "selection_is_retrospective": true
+    },
+    "2023-07-28": {
+      "case": "G2",
+      "cutoff": "2023-07-28",
+      "current_price_bar": {
+        "date": "2023-07-28",
+        "open": "37.35",
+        "high": "37.40",
+        "low": "37.10",
+        "close": "37.35"
+      },
+      "available_activities": {
+        "G_earlier": {
+          "zone_id": "sha256:0ea70cf65accdd8ecd1f7b6a9bf22792fb6be50fd7263a10fe61e8d376c586f7",
+          "source_period": [
+            "2023-06-28",
+            "2023-07-06"
+          ],
+          "available_on": "2023-07-07",
+          "common": [
+            "38.05",
+            "38.25"
+          ],
+          "raw": [
+            "37.20",
+            "38.50"
+          ],
+          "source_rows": 7,
+          "right_price_bar": {
+            "date": "2023-07-07",
+            "open": "37.20",
+            "high": "37.50",
+            "low": "36.90",
+            "close": "37.30"
+          },
+          "against_references": {
+            "local_original_low": {
+              "common_relation": "STRICTLY_ABOVE",
+              "raw_relation": "STRICTLY_ABOVE",
+              "source_close_counts": {
+                "ABOVE": 7,
+                "EQUAL": 0,
+                "BELOW": 0
+              },
+              "source_range_contains_reference_dates": []
+            },
+            "earlier_common": {
+              "common_relation": "POSITIVE_OVERLAP",
+              "raw_relation": "POSITIVE_OVERLAP"
+            }
+          },
+          "formal_bounds": null,
+          "formal_membership": null,
+          "response_confirmed": null
+        },
+        "G_lower": {
+          "zone_id": "sha256:2f1ceb2f70b060b3079147602f74378279cbf722a3207590f54fa5f607d6f3dc",
+          "source_period": [
+            "2023-07-14",
+            "2023-07-18"
+          ],
+          "available_on": "2023-07-19",
+          "common": [
+            "36.75",
+            "37.00"
+          ],
+          "raw": [
+            "36.50",
+            "37.15"
+          ],
+          "source_rows": 3,
+          "right_price_bar": {
+            "date": "2023-07-19",
+            "open": "37.10",
+            "high": "37.10",
+            "low": "36.55",
+            "close": "36.60"
+          },
+          "against_references": {
+            "local_original_low": {
+              "common_relation": "STRICTLY_BELOW",
+              "raw_relation": "BOUNDARY_TOUCH",
+              "source_close_counts": {
+                "ABOVE": 0,
+                "EQUAL": 0,
+                "BELOW": 3
+              },
+              "source_range_contains_reference_dates": [
+                "2023-07-14"
+              ]
+            },
+            "earlier_common": {
+              "common_relation": "STRICTLY_BELOW",
+              "raw_relation": "STRICTLY_BELOW"
+            }
+          },
+          "formal_bounds": null,
+          "formal_membership": null,
+          "response_confirmed": null
+        }
+      },
+      "available_pairs": {
+        "G_earlier_G_lower": {
+          "available_on": "2023-07-19",
+          "zone_ids": [
+            "sha256:0ea70cf65accdd8ecd1f7b6a9bf22792fb6be50fd7263a10fe61e8d376c586f7",
+            "sha256:2f1ceb2f70b060b3079147602f74378279cbf722a3207590f54fa5f607d6f3dc"
+          ],
+          "common_relation_later_vs_earlier": "STRICTLY_BELOW",
+          "raw_relation_later_vs_earlier": "STRICTLY_BELOW",
+          "shared_leg_ids": [],
+          "shared_turn_ids": [],
+          "shared_source_bar_dates": [],
+          "later_earliest_left_evidence": "2023-07-13",
+          "all_later_left_evidence_after_older_known": true,
+          "actual_later_source_visits": {
+            "later_source_close_in_earlier_common_dates": [],
+            "later_source_close_in_earlier_raw_dates": [],
+            "later_source_range_intersects_earlier_common_dates": [],
+            "later_source_range_intersects_earlier_raw_dates": []
+          },
+          "statistical_independence_inferred": false,
+          "formal_merge": null,
+          "formal_parent": null
+        }
+      },
+      "current_reference_locations": {
+        "local_original_low": {
+          "close_relation": "STRICTLY_ABOVE",
+          "reference": [
+            "37.15",
+            "37.15"
+          ]
+        },
+        "earlier_common": {
+          "close_relation": "STRICTLY_BELOW",
+          "reference": [
+            "38.05",
+            "38.25"
+          ]
+        }
+      },
+      "current_activity_locations": {
+        "G_earlier": {
+          "common_location": "STRICTLY_BELOW",
+          "raw_location": "INSIDE_REFERENCE_RANGE"
+        },
+        "G_lower": {
+          "common_location": "STRICTLY_ABOVE",
+          "raw_location": "STRICTLY_ABOVE"
+        }
+      },
+      "previous_price_anchors": [
+        {
+          "date": "2023-07-10",
+          "bar": {
+            "date": "2023-07-10",
+            "open": "37.30",
+            "high": "37.40",
+            "low": "36.80",
+            "close": "36.85"
+          },
+          "direction": "DOWN",
+          "reference_id": "sha256:3d270abf132d1abbfe2188f8fa31f0b2a7370f68ca3432792ee7ba0b7aedc172",
+          "reference_price": "37.15"
+        },
+        {
+          "date": "2023-07-25",
+          "bar": {
+            "date": "2023-07-25",
+            "open": "36.90",
+            "high": "37.65",
+            "low": "36.80",
+            "close": "37.40"
+          },
+          "direction": "UP",
+          "reference_id": "sha256:3d270abf132d1abbfe2188f8fa31f0b2a7370f68ca3432792ee7ba0b7aedc172",
+          "reference_price": "37.15"
+        }
+      ],
+      "formal_larger_structure_change": null,
+      "formal_merge": null,
+      "primary_pressure_id": null,
+      "historical_signal_eligible": false,
+      "selection_is_retrospective": true
+    },
+    "2023-07-31": {
+      "case": "G2",
+      "cutoff": "2023-07-31",
+      "current_price_bar": {
+        "date": "2023-07-31",
+        "open": "37.35",
+        "high": "37.60",
+        "low": "37.15",
+        "close": "37.30"
+      },
+      "available_activities": {
+        "G_earlier": {
+          "zone_id": "sha256:0ea70cf65accdd8ecd1f7b6a9bf22792fb6be50fd7263a10fe61e8d376c586f7",
+          "source_period": [
+            "2023-06-28",
+            "2023-07-06"
+          ],
+          "available_on": "2023-07-07",
+          "common": [
+            "38.05",
+            "38.25"
+          ],
+          "raw": [
+            "37.20",
+            "38.50"
+          ],
+          "source_rows": 7,
+          "right_price_bar": {
+            "date": "2023-07-07",
+            "open": "37.20",
+            "high": "37.50",
+            "low": "36.90",
+            "close": "37.30"
+          },
+          "against_references": {
+            "local_original_low": {
+              "common_relation": "STRICTLY_ABOVE",
+              "raw_relation": "STRICTLY_ABOVE",
+              "source_close_counts": {
+                "ABOVE": 7,
+                "EQUAL": 0,
+                "BELOW": 0
+              },
+              "source_range_contains_reference_dates": []
+            },
+            "earlier_common": {
+              "common_relation": "POSITIVE_OVERLAP",
+              "raw_relation": "POSITIVE_OVERLAP"
+            }
+          },
+          "formal_bounds": null,
+          "formal_membership": null,
+          "response_confirmed": null
+        },
+        "G_lower": {
+          "zone_id": "sha256:2f1ceb2f70b060b3079147602f74378279cbf722a3207590f54fa5f607d6f3dc",
+          "source_period": [
+            "2023-07-14",
+            "2023-07-18"
+          ],
+          "available_on": "2023-07-19",
+          "common": [
+            "36.75",
+            "37.00"
+          ],
+          "raw": [
+            "36.50",
+            "37.15"
+          ],
+          "source_rows": 3,
+          "right_price_bar": {
+            "date": "2023-07-19",
+            "open": "37.10",
+            "high": "37.10",
+            "low": "36.55",
+            "close": "36.60"
+          },
+          "against_references": {
+            "local_original_low": {
+              "common_relation": "STRICTLY_BELOW",
+              "raw_relation": "BOUNDARY_TOUCH",
+              "source_close_counts": {
+                "ABOVE": 0,
+                "EQUAL": 0,
+                "BELOW": 3
+              },
+              "source_range_contains_reference_dates": [
+                "2023-07-14"
+              ]
+            },
+            "earlier_common": {
+              "common_relation": "STRICTLY_BELOW",
+              "raw_relation": "STRICTLY_BELOW"
+            }
+          },
+          "formal_bounds": null,
+          "formal_membership": null,
+          "response_confirmed": null
+        },
+        "G_rebound": {
+          "zone_id": "sha256:72ff0194706d4394690febaf6abc263cb5ca016c6249c5b31e60d214573ad046",
+          "source_period": [
+            "2023-07-25",
+            "2023-07-28"
+          ],
+          "available_on": "2023-07-31",
+          "common": [
+            "37.25",
+            "37.35"
+          ],
+          "raw": [
+            "36.80",
+            "37.65"
+          ],
+          "source_rows": 4,
+          "right_price_bar": {
+            "date": "2023-07-31",
+            "open": "37.35",
+            "high": "37.60",
+            "low": "37.15",
+            "close": "37.30"
+          },
+          "against_references": {
+            "local_original_low": {
+              "common_relation": "STRICTLY_ABOVE",
+              "raw_relation": "STRADDLES_REFERENCE",
+              "source_close_counts": {
+                "ABOVE": 4,
+                "EQUAL": 0,
+                "BELOW": 0
+              },
+              "source_range_contains_reference_dates": [
+                "2023-07-25",
+                "2023-07-28"
+              ]
+            },
+            "earlier_common": {
+              "common_relation": "STRICTLY_BELOW",
+              "raw_relation": "STRICTLY_BELOW"
+            }
+          },
+          "formal_bounds": null,
+          "formal_membership": null,
+          "response_confirmed": null
+        }
+      },
+      "available_pairs": {
+        "G_earlier_G_lower": {
+          "available_on": "2023-07-19",
+          "zone_ids": [
+            "sha256:0ea70cf65accdd8ecd1f7b6a9bf22792fb6be50fd7263a10fe61e8d376c586f7",
+            "sha256:2f1ceb2f70b060b3079147602f74378279cbf722a3207590f54fa5f607d6f3dc"
+          ],
+          "common_relation_later_vs_earlier": "STRICTLY_BELOW",
+          "raw_relation_later_vs_earlier": "STRICTLY_BELOW",
+          "shared_leg_ids": [],
+          "shared_turn_ids": [],
+          "shared_source_bar_dates": [],
+          "later_earliest_left_evidence": "2023-07-13",
+          "all_later_left_evidence_after_older_known": true,
+          "actual_later_source_visits": {
+            "later_source_close_in_earlier_common_dates": [],
+            "later_source_close_in_earlier_raw_dates": [],
+            "later_source_range_intersects_earlier_common_dates": [],
+            "later_source_range_intersects_earlier_raw_dates": []
+          },
+          "statistical_independence_inferred": false,
+          "formal_merge": null,
+          "formal_parent": null
+        },
+        "G_earlier_G_rebound": {
+          "available_on": "2023-07-31",
+          "zone_ids": [
+            "sha256:0ea70cf65accdd8ecd1f7b6a9bf22792fb6be50fd7263a10fe61e8d376c586f7",
+            "sha256:72ff0194706d4394690febaf6abc263cb5ca016c6249c5b31e60d214573ad046"
+          ],
+          "common_relation_later_vs_earlier": "STRICTLY_BELOW",
+          "raw_relation_later_vs_earlier": "POSITIVE_OVERLAP",
+          "shared_leg_ids": [],
+          "shared_turn_ids": [],
+          "shared_source_bar_dates": [],
+          "later_earliest_left_evidence": "2023-07-24",
+          "all_later_left_evidence_after_older_known": true,
+          "actual_later_source_visits": {
+            "later_source_close_in_earlier_common_dates": [],
+            "later_source_close_in_earlier_raw_dates": [
+              "2023-07-25",
+              "2023-07-26",
+              "2023-07-27",
+              "2023-07-28"
+            ],
+            "later_source_range_intersects_earlier_common_dates": [],
+            "later_source_range_intersects_earlier_raw_dates": [
+              "2023-07-25",
+              "2023-07-26",
+              "2023-07-27",
+              "2023-07-28"
+            ]
+          },
+          "statistical_independence_inferred": false,
+          "formal_merge": null,
+          "formal_parent": null
+        },
+        "G_lower_G_rebound": {
+          "available_on": "2023-07-31",
+          "zone_ids": [
+            "sha256:2f1ceb2f70b060b3079147602f74378279cbf722a3207590f54fa5f607d6f3dc",
+            "sha256:72ff0194706d4394690febaf6abc263cb5ca016c6249c5b31e60d214573ad046"
+          ],
+          "common_relation_later_vs_earlier": "STRICTLY_ABOVE",
+          "raw_relation_later_vs_earlier": "POSITIVE_OVERLAP",
+          "shared_leg_ids": [],
+          "shared_turn_ids": [],
+          "shared_source_bar_dates": [],
+          "later_earliest_left_evidence": "2023-07-24",
+          "all_later_left_evidence_after_older_known": true,
+          "actual_later_source_visits": {
+            "later_source_close_in_earlier_common_dates": [],
+            "later_source_close_in_earlier_raw_dates": [],
+            "later_source_range_intersects_earlier_common_dates": [
+              "2023-07-25"
+            ],
+            "later_source_range_intersects_earlier_raw_dates": [
+              "2023-07-25",
+              "2023-07-28"
+            ]
+          },
+          "statistical_independence_inferred": false,
+          "formal_merge": null,
+          "formal_parent": null
+        }
+      },
+      "current_reference_locations": {
+        "local_original_low": {
+          "close_relation": "STRICTLY_ABOVE",
+          "reference": [
+            "37.15",
+            "37.15"
+          ]
+        },
+        "earlier_common": {
+          "close_relation": "STRICTLY_BELOW",
+          "reference": [
+            "38.05",
+            "38.25"
+          ]
+        }
+      },
+      "current_activity_locations": {
+        "G_earlier": {
+          "common_location": "STRICTLY_BELOW",
+          "raw_location": "INSIDE_REFERENCE_RANGE"
+        },
+        "G_lower": {
+          "common_location": "STRICTLY_ABOVE",
+          "raw_location": "STRICTLY_ABOVE"
+        },
+        "G_rebound": {
+          "common_location": "INSIDE_REFERENCE_RANGE",
+          "raw_location": "INSIDE_REFERENCE_RANGE"
+        }
+      },
+      "previous_price_anchors": [
+        {
+          "date": "2023-07-10",
+          "bar": {
+            "date": "2023-07-10",
+            "open": "37.30",
+            "high": "37.40",
+            "low": "36.80",
+            "close": "36.85"
+          },
+          "direction": "DOWN",
+          "reference_id": "sha256:3d270abf132d1abbfe2188f8fa31f0b2a7370f68ca3432792ee7ba0b7aedc172",
+          "reference_price": "37.15"
+        },
+        {
+          "date": "2023-07-25",
+          "bar": {
+            "date": "2023-07-25",
+            "open": "36.90",
+            "high": "37.65",
+            "low": "36.80",
+            "close": "37.40"
+          },
+          "direction": "UP",
+          "reference_id": "sha256:3d270abf132d1abbfe2188f8fa31f0b2a7370f68ca3432792ee7ba0b7aedc172",
+          "reference_price": "37.15"
+        }
+      ],
+      "formal_larger_structure_change": null,
+      "formal_merge": null,
+      "primary_pressure_id": null,
+      "historical_signal_eligible": false,
+      "selection_is_retrospective": true
+    },
+    "2023-08-02": {
+      "case": "G2",
+      "cutoff": "2023-08-02",
+      "current_price_bar": {
+        "date": "2023-08-02",
+        "open": "37.50",
+        "high": "37.80",
+        "low": "37.15",
+        "close": "37.20"
+      },
+      "available_activities": {
+        "G_earlier": {
+          "zone_id": "sha256:0ea70cf65accdd8ecd1f7b6a9bf22792fb6be50fd7263a10fe61e8d376c586f7",
+          "source_period": [
+            "2023-06-28",
+            "2023-07-06"
+          ],
+          "available_on": "2023-07-07",
+          "common": [
+            "38.05",
+            "38.25"
+          ],
+          "raw": [
+            "37.20",
+            "38.50"
+          ],
+          "source_rows": 7,
+          "right_price_bar": {
+            "date": "2023-07-07",
+            "open": "37.20",
+            "high": "37.50",
+            "low": "36.90",
+            "close": "37.30"
+          },
+          "against_references": {
+            "local_original_low": {
+              "common_relation": "STRICTLY_ABOVE",
+              "raw_relation": "STRICTLY_ABOVE",
+              "source_close_counts": {
+                "ABOVE": 7,
+                "EQUAL": 0,
+                "BELOW": 0
+              },
+              "source_range_contains_reference_dates": []
+            },
+            "earlier_common": {
+              "common_relation": "POSITIVE_OVERLAP",
+              "raw_relation": "POSITIVE_OVERLAP"
+            }
+          },
+          "formal_bounds": null,
+          "formal_membership": null,
+          "response_confirmed": null
+        },
+        "G_lower": {
+          "zone_id": "sha256:2f1ceb2f70b060b3079147602f74378279cbf722a3207590f54fa5f607d6f3dc",
+          "source_period": [
+            "2023-07-14",
+            "2023-07-18"
+          ],
+          "available_on": "2023-07-19",
+          "common": [
+            "36.75",
+            "37.00"
+          ],
+          "raw": [
+            "36.50",
+            "37.15"
+          ],
+          "source_rows": 3,
+          "right_price_bar": {
+            "date": "2023-07-19",
+            "open": "37.10",
+            "high": "37.10",
+            "low": "36.55",
+            "close": "36.60"
+          },
+          "against_references": {
+            "local_original_low": {
+              "common_relation": "STRICTLY_BELOW",
+              "raw_relation": "BOUNDARY_TOUCH",
+              "source_close_counts": {
+                "ABOVE": 0,
+                "EQUAL": 0,
+                "BELOW": 3
+              },
+              "source_range_contains_reference_dates": [
+                "2023-07-14"
+              ]
+            },
+            "earlier_common": {
+              "common_relation": "STRICTLY_BELOW",
+              "raw_relation": "STRICTLY_BELOW"
+            }
+          },
+          "formal_bounds": null,
+          "formal_membership": null,
+          "response_confirmed": null
+        },
+        "G_rebound": {
+          "zone_id": "sha256:72ff0194706d4394690febaf6abc263cb5ca016c6249c5b31e60d214573ad046",
+          "source_period": [
+            "2023-07-25",
+            "2023-07-28"
+          ],
+          "available_on": "2023-07-31",
+          "common": [
+            "37.25",
+            "37.35"
+          ],
+          "raw": [
+            "36.80",
+            "37.65"
+          ],
+          "source_rows": 4,
+          "right_price_bar": {
+            "date": "2023-07-31",
+            "open": "37.35",
+            "high": "37.60",
+            "low": "37.15",
+            "close": "37.30"
+          },
+          "against_references": {
+            "local_original_low": {
+              "common_relation": "STRICTLY_ABOVE",
+              "raw_relation": "STRADDLES_REFERENCE",
+              "source_close_counts": {
+                "ABOVE": 4,
+                "EQUAL": 0,
+                "BELOW": 0
+              },
+              "source_range_contains_reference_dates": [
+                "2023-07-25",
+                "2023-07-28"
+              ]
+            },
+            "earlier_common": {
+              "common_relation": "STRICTLY_BELOW",
+              "raw_relation": "STRICTLY_BELOW"
+            }
+          },
+          "formal_bounds": null,
+          "formal_membership": null,
+          "response_confirmed": null
+        }
+      },
+      "available_pairs": {
+        "G_earlier_G_lower": {
+          "available_on": "2023-07-19",
+          "zone_ids": [
+            "sha256:0ea70cf65accdd8ecd1f7b6a9bf22792fb6be50fd7263a10fe61e8d376c586f7",
+            "sha256:2f1ceb2f70b060b3079147602f74378279cbf722a3207590f54fa5f607d6f3dc"
+          ],
+          "common_relation_later_vs_earlier": "STRICTLY_BELOW",
+          "raw_relation_later_vs_earlier": "STRICTLY_BELOW",
+          "shared_leg_ids": [],
+          "shared_turn_ids": [],
+          "shared_source_bar_dates": [],
+          "later_earliest_left_evidence": "2023-07-13",
+          "all_later_left_evidence_after_older_known": true,
+          "actual_later_source_visits": {
+            "later_source_close_in_earlier_common_dates": [],
+            "later_source_close_in_earlier_raw_dates": [],
+            "later_source_range_intersects_earlier_common_dates": [],
+            "later_source_range_intersects_earlier_raw_dates": []
+          },
+          "statistical_independence_inferred": false,
+          "formal_merge": null,
+          "formal_parent": null
+        },
+        "G_earlier_G_rebound": {
+          "available_on": "2023-07-31",
+          "zone_ids": [
+            "sha256:0ea70cf65accdd8ecd1f7b6a9bf22792fb6be50fd7263a10fe61e8d376c586f7",
+            "sha256:72ff0194706d4394690febaf6abc263cb5ca016c6249c5b31e60d214573ad046"
+          ],
+          "common_relation_later_vs_earlier": "STRICTLY_BELOW",
+          "raw_relation_later_vs_earlier": "POSITIVE_OVERLAP",
+          "shared_leg_ids": [],
+          "shared_turn_ids": [],
+          "shared_source_bar_dates": [],
+          "later_earliest_left_evidence": "2023-07-24",
+          "all_later_left_evidence_after_older_known": true,
+          "actual_later_source_visits": {
+            "later_source_close_in_earlier_common_dates": [],
+            "later_source_close_in_earlier_raw_dates": [
+              "2023-07-25",
+              "2023-07-26",
+              "2023-07-27",
+              "2023-07-28"
+            ],
+            "later_source_range_intersects_earlier_common_dates": [],
+            "later_source_range_intersects_earlier_raw_dates": [
+              "2023-07-25",
+              "2023-07-26",
+              "2023-07-27",
+              "2023-07-28"
+            ]
+          },
+          "statistical_independence_inferred": false,
+          "formal_merge": null,
+          "formal_parent": null
+        },
+        "G_lower_G_rebound": {
+          "available_on": "2023-07-31",
+          "zone_ids": [
+            "sha256:2f1ceb2f70b060b3079147602f74378279cbf722a3207590f54fa5f607d6f3dc",
+            "sha256:72ff0194706d4394690febaf6abc263cb5ca016c6249c5b31e60d214573ad046"
+          ],
+          "common_relation_later_vs_earlier": "STRICTLY_ABOVE",
+          "raw_relation_later_vs_earlier": "POSITIVE_OVERLAP",
+          "shared_leg_ids": [],
+          "shared_turn_ids": [],
+          "shared_source_bar_dates": [],
+          "later_earliest_left_evidence": "2023-07-24",
+          "all_later_left_evidence_after_older_known": true,
+          "actual_later_source_visits": {
+            "later_source_close_in_earlier_common_dates": [],
+            "later_source_close_in_earlier_raw_dates": [],
+            "later_source_range_intersects_earlier_common_dates": [
+              "2023-07-25"
+            ],
+            "later_source_range_intersects_earlier_raw_dates": [
+              "2023-07-25",
+              "2023-07-28"
+            ]
+          },
+          "statistical_independence_inferred": false,
+          "formal_merge": null,
+          "formal_parent": null
+        }
+      },
+      "current_reference_locations": {
+        "local_original_low": {
+          "close_relation": "STRICTLY_ABOVE",
+          "reference": [
+            "37.15",
+            "37.15"
+          ]
+        },
+        "earlier_common": {
+          "close_relation": "STRICTLY_BELOW",
+          "reference": [
+            "38.05",
+            "38.25"
+          ]
+        }
+      },
+      "current_activity_locations": {
+        "G_earlier": {
+          "common_location": "STRICTLY_BELOW",
+          "raw_location": "BOUNDARY_TOUCH"
+        },
+        "G_lower": {
+          "common_location": "STRICTLY_ABOVE",
+          "raw_location": "STRICTLY_ABOVE"
+        },
+        "G_rebound": {
+          "common_location": "STRICTLY_BELOW",
+          "raw_location": "INSIDE_REFERENCE_RANGE"
+        }
+      },
+      "previous_price_anchors": [
+        {
+          "date": "2023-07-10",
+          "bar": {
+            "date": "2023-07-10",
+            "open": "37.30",
+            "high": "37.40",
+            "low": "36.80",
+            "close": "36.85"
+          },
+          "direction": "DOWN",
+          "reference_id": "sha256:3d270abf132d1abbfe2188f8fa31f0b2a7370f68ca3432792ee7ba0b7aedc172",
+          "reference_price": "37.15"
+        },
+        {
+          "date": "2023-07-25",
+          "bar": {
+            "date": "2023-07-25",
+            "open": "36.90",
+            "high": "37.65",
+            "low": "36.80",
+            "close": "37.40"
+          },
+          "direction": "UP",
+          "reference_id": "sha256:3d270abf132d1abbfe2188f8fa31f0b2a7370f68ca3432792ee7ba0b7aedc172",
+          "reference_price": "37.15"
+        }
+      ],
+      "formal_larger_structure_change": null,
+      "formal_merge": null,
+      "primary_pressure_id": null,
+      "historical_signal_eligible": false,
+      "selection_is_retrospective": true
+    }
+  }
+}

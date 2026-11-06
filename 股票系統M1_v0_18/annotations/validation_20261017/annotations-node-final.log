@@ -1,0 +1,110 @@
+{
+  "status": "PASS",
+  "results": [
+    {
+      "test": "initial selection is blank; no latest date/version silently chosen",
+      "status": "PASS"
+    },
+    {
+      "test": "all 18 actual comparisons preserve exact Python daily and period snapshots",
+      "status": "PASS"
+    },
+    {
+      "test": "all 18 downloads equal explicit Python selection outputs",
+      "status": "PASS"
+    },
+    {
+      "test": "basis switch uses saved weekly/monthly arrays without modifying any snapshot",
+      "status": "PASS"
+    },
+    {
+      "test": "raw daily and period candles use red up / green down",
+      "status": "PASS"
+    },
+    {
+      "test": "adjusted daily never synthesizes daily adjusted OHLC",
+      "status": "PASS"
+    },
+    {
+      "test": "real insufficient 260-day and 24-month windows remain null with reasons",
+      "status": "PASS"
+    },
+    {
+      "test": "elapsed and candidate modes expose open period status without replacing dates",
+      "status": "PASS"
+    },
+    {
+      "test": "original pivot times and zone state remain explicit",
+      "status": "PASS"
+    },
+    {
+      "test": "historical native-share warning clears when explicitly selecting corrected version",
+      "status": "PASS"
+    },
+    {
+      "test": "switching stock/date clears charts, data and downloads",
+      "status": "PASS"
+    },
+    {
+      "test": "unknown date or identity never falls back to another version",
+      "status": "PASS"
+    },
+    {
+      "test": "missing daily fixture displays only period data and never creates daily values",
+      "status": "PASS"
+    },
+    {
+      "test": "missing period fixture preserves only independent daily data",
+      "status": "PASS"
+    },
+    {
+      "test": "conflicting fixture blocks combined charts and retains downloadable checks",
+      "status": "PASS"
+    },
+    {
+      "test": "offline policy and DOM text prevent network or HTML injection; no core code in UI",
+      "status": "PASS"
+    }
+  ],
+  "real_comparisons": 18,
+  "method": "Actual inline JS and actual saved view catalog under Node VM; DOM/canvas doubles",
+  "browser_rendering": "NOT_TESTED",
+  "mobile_layout_touch": "NOT_TESTED"
+}
+{
+  "status": "PASS",
+  "checks": [
+    {
+      "name": "all 18 selections use only exact saved pivot and zone objects, without mutation or reanalysis",
+      "status": "PASS"
+    },
+    {
+      "name": "markers are date-exact; zones begin at creation and stop at invalidation, with no nearest-date substitution",
+      "status": "PASS"
+    },
+    {
+      "name": "active-only and historical filters preserve saved statuses and never turn stopped zones into live support",
+      "status": "PASS"
+    },
+    {
+      "name": "missing, future, null-price, unknown-status and mismatched-anchor evidence fails closed",
+      "status": "PASS"
+    },
+    {
+      "name": "Adjusted markers use the selected saved anchor; charts still have no fabricated adjusted daily candles",
+      "status": "PASS"
+    },
+    {
+      "name": "pointer selection and exact dropdown selection expose original times, status and IDs; switching clears stale evidence",
+      "status": "PASS"
+    },
+    {
+      "name": "visual windows and all annotation controls preserve 72 exact full-precision downloads",
+      "status": "PASS"
+    },
+    {
+      "name": "conflict hides and clears all graph evidence without enabling calculations or external assets",
+      "status": "PASS"
+    }
+  ]
+}

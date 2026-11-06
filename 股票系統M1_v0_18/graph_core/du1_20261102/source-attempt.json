@@ -1,0 +1,61 @@
+{
+  "capture_id": "b2f3f1901b85ed96e9b5fff45fa2cd807b1fadc332af6174d52c9fefa733de70",
+  "source_requests": 6,
+  "finmind_requests": 0,
+  "retries": 0,
+  "complete_originals": 5,
+  "failures": 1,
+  "receipts": [
+    {
+      "bytes": 1332397,
+      "fetched_at": "2026-11-02T10:16:25.524135+00:00",
+      "name": "twse-universe.json",
+      "sha256": "cf9007da58ee20976498d4c7f482ce8a61da73b11e89be0d32e72bc5f5c9da45",
+      "status": "RECEIVED",
+      "url": "https://openapi.twse.com.tw/v1/opendata/t187ap03_L"
+    },
+    {
+      "bytes": 1079379,
+      "fetched_at": "2026-11-02T10:16:32.055642+00:00",
+      "name": "tpex-universe.json",
+      "sha256": "fe2d1239c1114080253bc76e04cc4594fa789cc695801b80f1ac6752bba7ef7b",
+      "status": "RECEIVED",
+      "url": "https://www.tpex.org.tw/openapi/v1/mopsfin_t187ap03_O"
+    },
+    {
+      "bytes": 322154,
+      "fetched_at": "2026-11-02T10:16:33.971934+00:00",
+      "name": "twse-daily.json",
+      "sha256": "89994d5d91289512762f7a6965a23444a42e740e2c5ab755c4ef028844e07670",
+      "status": "RECEIVED",
+      "url": "https://openapi.twse.com.tw/v1/exchangeReport/STOCK_DAY_ALL"
+    },
+    {
+      "error": "IncompleteRead: IncompleteRead(245353 bytes read, 5000964 more expected)",
+      "name": "tpex-daily.json",
+      "status": "SOURCE_FAILURE",
+      "url": "https://www.tpex.org.tw/openapi/v1/tpex_mainboard_daily_close_quotes"
+    },
+    {
+      "bytes": 9926366,
+      "fetched_at": "2026-11-02T10:18:45.950946+00:00",
+      "name": "TWSE-classification.html",
+      "sha256": "8a02c74ab7e00aaf1972cd0c24bfaf9a79fdd78c5ead24fbac2300201600892d",
+      "status": "RECEIVED",
+      "url": "https://isin.twse.com.tw/isin/C_public.jsp?strMode=2"
+    },
+    {
+      "bytes": 3298029,
+      "fetched_at": "2026-11-02T10:19:07.187140+00:00",
+      "name": "TPEX-classification.html",
+      "sha256": "590067b1bc28f86389206f9709c6b2ed6179102d2b3093827d4fb3c1a07e9bb3",
+      "status": "RECEIVED",
+      "url": "https://isin.twse.com.tw/isin/C_public.jsp?strMode=4"
+    }
+  ],
+  "observed_quote_dates": {
+    "TWSE": "2026-10-30",
+    "TPEX": null
+  },
+  "applied": false
+}

@@ -1,0 +1,516 @@
+{
+  "schema": "rotation-action-catalog/0.1",
+  "mode": "RAW",
+  "sources": {
+    "exright-2025": {
+      "path": "docs/visual-discussion/20261022_b_basis_source_work_review/raw/exright-2025.json",
+      "sha256": "fdd86fad5b4287ef4d0e804fd2193925546df475432622f5d09fcc24d0d81689",
+      "url": "https://www.twse.com.tw/rwd/zh/exRight/TWT49U?startDate=20250101&endDate=20251231&response=json",
+      "captured_at": "2026-10-21T23:38:10.828609+00:00",
+      "kind": "OFFICIAL_ARCHIVE",
+      "historical_publication_time": "NOT_AUTHENTICATED"
+    },
+    "exright-2026-to-cutoff": {
+      "path": "docs/visual-discussion/20261022_b_basis_source_work_review/raw/exright-2026-to-cutoff.json",
+      "sha256": "820d70022694212c1377e1115e948405a9f2a05e4582c4669f961b683292c779",
+      "url": "https://www.twse.com.tw/rwd/zh/exRight/TWT49U?startDate=20260101&endDate=20260724&response=json",
+      "captured_at": "2026-10-21T23:38:10.830254+00:00",
+      "kind": "OFFICIAL_ARCHIVE",
+      "historical_publication_time": "NOT_AUTHENTICATED"
+    },
+    "issuer-1101": {
+      "path": "股票系統M1_v0_18/event_audit/raw/tcc_dividends.html",
+      "sha256": "86705c4f326e5210b8a5a7f7dd0a410206f0078260c5dc701a3e994fa4c66b6d",
+      "url": "https://www.tccgroupholdings.com/dividend",
+      "captured_at": "2026-10-16T06:29:13.126231+00:00",
+      "kind": "OFFICIAL_ARCHIVE",
+      "historical_publication_time": "NOT_AUTHENTICATED"
+    },
+    "issuer-2884": {
+      "path": "股票系統M1_v0_18/event_audit/raw/esun_shareholders.html",
+      "sha256": "d21472641e10badad3f29c2399438e57542a9448d3659f51bd98aed3b10b0683",
+      "url": "https://www.esunfhc.com/zh-tw/investor-relations/shareholders/shareholder-Information",
+      "captured_at": "2026-10-16T06:29:13.127547+00:00",
+      "kind": "OFFICIAL_ARCHIVE",
+      "historical_publication_time": "NOT_AUTHENTICATED"
+    }
+  },
+  "events": [
+    {
+      "code": "1101",
+      "mode": "RAW",
+      "basis_id": "RAW:fd5674f6d424dadbfe0644453e4f54c9ed8943fe3149b6f681f24932176db801",
+      "ex_date": "2025-07-02",
+      "announced_at": null,
+      "historical_signal_eligible": false,
+      "observed_at": "2026-10-21T23:38:10.828609+00:00",
+      "source_ids": [
+        "exright-2025",
+        "issuer-1101"
+      ],
+      "field_sources": {
+        "ex_date": [
+          {
+            "source_id": "exright-2025",
+            "locator": "data[511].資料日期",
+            "raw_value": "114年07月02日"
+          }
+        ],
+        "gross_per_share": [
+          {
+            "source_id": "issuer-1101",
+            "locator": "html_table_rows[2][2]",
+            "raw_value": "1"
+          }
+        ],
+        "pay_date": [
+          {
+            "source_id": "issuer-1101",
+            "locator": "html_table_rows[2][7]",
+            "raw_value": "2025/07/29"
+          }
+        ]
+      },
+      "exchange_row_index": 511,
+      "exchange_raw_fields": {
+        "資料日期": "114年07月02日",
+        "股票代號": "1101",
+        "股票名稱": "台泥",
+        "除權息前收盤價": "26.15",
+        "除權息參考價": "25.15",
+        "權值+息值": "1.000000",
+        "權/息": "息",
+        "漲停價格": "27.65",
+        "跌停價格": "22.65",
+        "開盤競價基準": "25.15",
+        "減除股利參考價": "25.15",
+        "詳細資料": "1101,20250702",
+        "最近一次申報資料 季別/日期": "115年第2季(https://mops.twse.com.tw/mops/web/t163sb01)",
+        "最近一次申報每股 (單位)淨值": "30.86",
+        "最近一次申報每股 (單位)盈餘": "0.38"
+      },
+      "issuer_row_index": 2,
+      "issuer_raw_cells": [
+        "2024",
+        "2025/05/27",
+        "1",
+        "0",
+        "1",
+        "2025/07/02",
+        "",
+        "2025/07/29"
+      ],
+      "date_semantics": "EXCHANGE_EX_TRADING_DATE_NOT_ISSUER_RECORD_DATE",
+      "completeness": "PARTIAL_COMPONENT_EVIDENCE_NOT_FULL_ACTION_COVERAGE",
+      "type": "CASH_DIVIDEND",
+      "gross_per_share": "1",
+      "net_per_share": null,
+      "pay_date": "2025-07-29",
+      "record_date": null,
+      "pay_date_role": "ISSUER_SCHEDULE_NOT_INVESTOR_RECEIPT",
+      "missing": [
+        "announced_at",
+        "investor_net_per_share",
+        "investor_actual_receipt"
+      ],
+      "id": "sha256:01df5dd4c25df56baa28b725845678043e4809abf08e15cb19bab046ad92902f"
+    },
+    {
+      "code": "2884",
+      "mode": "RAW",
+      "basis_id": "RAW:c27514e56b61b669362aaf8fdd7223acb7caaabcdaf0fa6ccf4a17909ba9ac60",
+      "ex_date": "2025-07-22",
+      "announced_at": null,
+      "historical_signal_eligible": false,
+      "observed_at": "2026-10-21T23:38:10.828609+00:00",
+      "source_ids": [
+        "exright-2025",
+        "issuer-2884"
+      ],
+      "field_sources": {
+        "ex_date": [
+          {
+            "source_id": "exright-2025",
+            "locator": "data[820].資料日期",
+            "raw_value": "114年07月22日"
+          }
+        ],
+        "gross_per_share": [
+          {
+            "source_id": "issuer-2884",
+            "locator": "html_table_rows[3][2]",
+            "raw_value": "1.2"
+          }
+        ],
+        "pay_date": [
+          {
+            "source_id": "issuer-2884",
+            "locator": "html_table_rows[3][3]",
+            "raw_value": "2025.08.27"
+          }
+        ],
+        "record_date": [
+          {
+            "source_id": "issuer-2884",
+            "locator": "html_table_rows[3][1]",
+            "raw_value": "2025.07.28"
+          }
+        ]
+      },
+      "exchange_row_index": 820,
+      "exchange_raw_fields": {
+        "資料日期": "114年07月22日",
+        "股票代號": "2884",
+        "股票名稱": "玉山金",
+        "除權息前收盤價": "34.20",
+        "除權息參考價": "32.67",
+        "權值+息值": "1.527222",
+        "權/息": "權息",
+        "漲停價格": "35.90",
+        "跌停價格": "29.45",
+        "開盤競價基準": "32.65",
+        "減除股利參考價": "32.67",
+        "詳細資料": "2884,20250722",
+        "最近一次申報資料 季別/日期": "115年第2季(https://mops.twse.com.tw/mops/web/t163sb01)",
+        "最近一次申報每股 (單位)淨值": "17.40",
+        "最近一次申報每股 (單位)盈餘": "1.32"
+      },
+      "issuer_row_index": 3,
+      "issuer_raw_cells": [
+        "2025",
+        "2025.07.28",
+        "1.2",
+        "2025.08.27",
+        "2025.07.28",
+        "0.10015129",
+        "2025.08.27"
+      ],
+      "date_semantics": "EXCHANGE_EX_TRADING_DATE_NOT_ISSUER_RECORD_DATE",
+      "completeness": "PARTIAL_COMPONENT_EVIDENCE_NOT_FULL_ACTION_COVERAGE",
+      "type": "CASH_DIVIDEND",
+      "gross_per_share": "1.2",
+      "net_per_share": null,
+      "pay_date": "2025-08-27",
+      "record_date": "2025-07-28",
+      "pay_date_role": "ISSUER_SCHEDULE_NOT_INVESTOR_RECEIPT",
+      "missing": [
+        "announced_at",
+        "investor_net_per_share",
+        "investor_actual_receipt"
+      ],
+      "id": "sha256:a96a11bf35947c9fce84baaf52b88a4ffd19447e9c26610c5fc01a82505d1a3a"
+    },
+    {
+      "code": "2884",
+      "mode": "RAW",
+      "basis_id": "RAW:c27514e56b61b669362aaf8fdd7223acb7caaabcdaf0fa6ccf4a17909ba9ac60",
+      "ex_date": "2025-07-22",
+      "announced_at": null,
+      "historical_signal_eligible": false,
+      "observed_at": "2026-10-21T23:38:10.828609+00:00",
+      "source_ids": [
+        "exright-2025",
+        "issuer-2884"
+      ],
+      "field_sources": {
+        "ex_date": [
+          {
+            "source_id": "exright-2025",
+            "locator": "data[820].資料日期",
+            "raw_value": "114年07月22日"
+          }
+        ],
+        "stock_dividend_money_per_share": [
+          {
+            "source_id": "issuer-2884",
+            "locator": "html_table_rows[3][5]",
+            "raw_value": "0.10015129"
+          }
+        ],
+        "record_date": [
+          {
+            "source_id": "issuer-2884",
+            "locator": "html_table_rows[3][4]",
+            "raw_value": "2025.07.28"
+          }
+        ],
+        "delivery_date": [
+          {
+            "source_id": "issuer-2884",
+            "locator": "html_table_rows[3][6]",
+            "raw_value": "2025.08.27"
+          }
+        ]
+      },
+      "exchange_row_index": 820,
+      "exchange_raw_fields": {
+        "資料日期": "114年07月22日",
+        "股票代號": "2884",
+        "股票名稱": "玉山金",
+        "除權息前收盤價": "34.20",
+        "除權息參考價": "32.67",
+        "權值+息值": "1.527222",
+        "權/息": "權息",
+        "漲停價格": "35.90",
+        "跌停價格": "29.45",
+        "開盤競價基準": "32.65",
+        "減除股利參考價": "32.67",
+        "詳細資料": "2884,20250722",
+        "最近一次申報資料 季別/日期": "115年第2季(https://mops.twse.com.tw/mops/web/t163sb01)",
+        "最近一次申報每股 (單位)淨值": "17.40",
+        "最近一次申報每股 (單位)盈餘": "1.32"
+      },
+      "issuer_row_index": 3,
+      "issuer_raw_cells": [
+        "2025",
+        "2025.07.28",
+        "1.2",
+        "2025.08.27",
+        "2025.07.28",
+        "0.10015129",
+        "2025.08.27"
+      ],
+      "date_semantics": "EXCHANGE_EX_TRADING_DATE_NOT_ISSUER_RECORD_DATE",
+      "completeness": "PARTIAL_COMPONENT_EVIDENCE_NOT_FULL_ACTION_COVERAGE",
+      "type": "STOCK_DIVIDEND",
+      "stock_dividend_money_per_share": "0.10015129",
+      "shares_per_share": null,
+      "par_value": null,
+      "record_date": "2025-07-28",
+      "delivery_date": "2025-08-27",
+      "tradable_date": null,
+      "delivery_role": "ISSUER_DISTRIBUTION_SCHEDULE_NOT_VERIFIED_LISTING_DATE",
+      "missing": [
+        "announced_at",
+        "sourced_share_ratio_or_par_value",
+        "tradable_date",
+        "fractional_disposition"
+      ],
+      "id": "sha256:5d9936c5f45c53f5724113b51d1bfa019e758e7f777c01ffe2aaa4aa6c01f57c"
+    },
+    {
+      "code": "1101",
+      "mode": "RAW",
+      "basis_id": "RAW:fd5674f6d424dadbfe0644453e4f54c9ed8943fe3149b6f681f24932176db801",
+      "ex_date": "2026-07-01",
+      "announced_at": null,
+      "historical_signal_eligible": false,
+      "observed_at": "2026-10-21T23:38:10.830254+00:00",
+      "source_ids": [
+        "exright-2026-to-cutoff",
+        "issuer-1101"
+      ],
+      "field_sources": {
+        "ex_date": [
+          {
+            "source_id": "exright-2026-to-cutoff",
+            "locator": "data[598].資料日期",
+            "raw_value": "115年07月01日"
+          }
+        ],
+        "gross_per_share": [
+          {
+            "source_id": "issuer-1101",
+            "locator": "html_table_rows[1][2]",
+            "raw_value": "0.8"
+          }
+        ],
+        "pay_date": [
+          {
+            "source_id": "issuer-1101",
+            "locator": "html_table_rows[1][7]",
+            "raw_value": "2026/07/28"
+          }
+        ]
+      },
+      "exchange_row_index": 598,
+      "exchange_raw_fields": {
+        "資料日期": "115年07月01日",
+        "股票代號": "1101",
+        "股票名稱": "台泥",
+        "除權息前收盤價": "24.05",
+        "除權息參考價": "23.25",
+        "權值+息值": "0.800000",
+        "權/息": "息",
+        "漲停價格": "25.55",
+        "跌停價格": "20.95",
+        "開盤競價基準": "23.25",
+        "減除股利參考價": "23.25",
+        "詳細資料": "1101,20260701",
+        "最近一次申報資料 季別/日期": "115年第2季(https://mops.twse.com.tw/mops/web/t163sb01)",
+        "最近一次申報每股 (單位)淨值": "30.86",
+        "最近一次申報每股 (單位)盈餘": "0.38"
+      },
+      "issuer_row_index": 1,
+      "issuer_raw_cells": [
+        "2025",
+        "2026/05/22",
+        "0.8",
+        "0",
+        "0.8",
+        "2026/07/01",
+        "",
+        "2026/07/28"
+      ],
+      "date_semantics": "EXCHANGE_EX_TRADING_DATE_NOT_ISSUER_RECORD_DATE",
+      "completeness": "PARTIAL_COMPONENT_EVIDENCE_NOT_FULL_ACTION_COVERAGE",
+      "type": "CASH_DIVIDEND",
+      "gross_per_share": "0.8",
+      "net_per_share": null,
+      "pay_date": "2026-07-28",
+      "record_date": null,
+      "pay_date_role": "ISSUER_SCHEDULE_NOT_INVESTOR_RECEIPT",
+      "missing": [
+        "announced_at",
+        "investor_net_per_share",
+        "investor_actual_receipt"
+      ],
+      "id": "sha256:b7ba974b62bad201a1757c3b8dc2015ae9a43d35f55c352bf0929c65cd2b0bd5"
+    },
+    {
+      "code": "2884",
+      "mode": "RAW",
+      "basis_id": "RAW:c27514e56b61b669362aaf8fdd7223acb7caaabcdaf0fa6ccf4a17909ba9ac60",
+      "ex_date": "2026-07-01",
+      "announced_at": null,
+      "historical_signal_eligible": false,
+      "observed_at": "2026-10-21T23:38:10.830254+00:00",
+      "source_ids": [
+        "exright-2026-to-cutoff",
+        "issuer-2884"
+      ],
+      "field_sources": {
+        "ex_date": [
+          {
+            "source_id": "exright-2026-to-cutoff",
+            "locator": "data[608].資料日期",
+            "raw_value": "115年07月01日"
+          }
+        ],
+        "gross_per_share": [
+          {
+            "source_id": "issuer-2884",
+            "locator": "html_table_rows[2][2]",
+            "raw_value": "1.4"
+          }
+        ],
+        "pay_date": [
+          {
+            "source_id": "issuer-2884",
+            "locator": "html_table_rows[2][3]",
+            "raw_value": "2026.07.27"
+          }
+        ],
+        "record_date": [
+          {
+            "source_id": "issuer-2884",
+            "locator": "html_table_rows[2][1]",
+            "raw_value": "2026.07.07"
+          }
+        ]
+      },
+      "exchange_row_index": 608,
+      "exchange_raw_fields": {
+        "資料日期": "115年07月01日",
+        "股票代號": "2884",
+        "股票名稱": "玉山金",
+        "除權息前收盤價": "34.45",
+        "除權息參考價": "33.05",
+        "權值+息值": "1.400000",
+        "權/息": "息",
+        "漲停價格": "36.35",
+        "跌停價格": "29.75",
+        "開盤競價基準": "33.05",
+        "減除股利參考價": "33.05",
+        "詳細資料": "2884,20260701",
+        "最近一次申報資料 季別/日期": "115年第2季(https://mops.twse.com.tw/mops/web/t163sb01)",
+        "最近一次申報每股 (單位)淨值": "17.40",
+        "最近一次申報每股 (單位)盈餘": "1.32"
+      },
+      "issuer_row_index": 2,
+      "issuer_raw_cells": [
+        "2026",
+        "2026.07.07",
+        "1.4",
+        "2026.07.27",
+        "-",
+        "-",
+        "-"
+      ],
+      "date_semantics": "EXCHANGE_EX_TRADING_DATE_NOT_ISSUER_RECORD_DATE",
+      "completeness": "PARTIAL_COMPONENT_EVIDENCE_NOT_FULL_ACTION_COVERAGE",
+      "type": "CASH_DIVIDEND",
+      "gross_per_share": "1.4",
+      "net_per_share": null,
+      "pay_date": "2026-07-27",
+      "record_date": "2026-07-07",
+      "pay_date_role": "ISSUER_SCHEDULE_NOT_INVESTOR_RECEIPT",
+      "missing": [
+        "announced_at",
+        "investor_net_per_share",
+        "investor_actual_receipt"
+      ],
+      "id": "sha256:cf65c6f1ab9ad9fb1a64a8405cd9d05505739e72d6383c5e37903389f52c7349"
+    }
+  ],
+  "coverage": {
+    "1101": {
+      "status": "INCOMPLETE_DO_NOT_ASSUME_NO_EVENTS",
+      "start": "2025-07-01",
+      "end": "2026-10-16",
+      "event_ids": [
+        "sha256:01df5dd4c25df56baa28b725845678043e4809abf08e15cb19bab046ad92902f",
+        "sha256:b7ba974b62bad201a1757c3b8dc2015ae9a43d35f55c352bf0929c65cd2b0bd5"
+      ],
+      "source_ids": [
+        "exright-2025",
+        "exright-2026-to-cutoff",
+        "issuer-1101",
+        "issuer-2884"
+      ],
+      "types": [
+        "CASH_DIVIDEND",
+        "STOCK_DIVIDEND"
+      ],
+      "other_actions_checked": false,
+      "gaps": [
+        "NO_EXHAUSTIVE_CAPITAL_REDUCTION_OR_OTHER_ACTION_REGISTER",
+        "EXCHANGE_2026_CAPTURE_ENDS_2026-07-24_MISSING_2026-07-25_TO_2026-10-16",
+        "EXRIGHT_ENDPOINT_EXCLUSIONS_NOT_COMPLETE_CORPORATE_ACTION_UNIVERSE"
+      ]
+    },
+    "2884": {
+      "status": "INCOMPLETE_DO_NOT_ASSUME_NO_EVENTS",
+      "start": "2025-07-01",
+      "end": "2026-10-16",
+      "event_ids": [
+        "sha256:a96a11bf35947c9fce84baaf52b88a4ffd19447e9c26610c5fc01a82505d1a3a",
+        "sha256:5d9936c5f45c53f5724113b51d1bfa019e758e7f777c01ffe2aaa4aa6c01f57c",
+        "sha256:cf65c6f1ab9ad9fb1a64a8405cd9d05505739e72d6383c5e37903389f52c7349"
+      ],
+      "source_ids": [
+        "exright-2025",
+        "exright-2026-to-cutoff",
+        "issuer-1101",
+        "issuer-2884"
+      ],
+      "types": [
+        "CASH_DIVIDEND",
+        "STOCK_DIVIDEND"
+      ],
+      "other_actions_checked": false,
+      "gaps": [
+        "NO_EXHAUSTIVE_CAPITAL_REDUCTION_OR_OTHER_ACTION_REGISTER",
+        "EXCHANGE_2026_CAPTURE_ENDS_2026-07-24_MISSING_2026-07-25_TO_2026-10-16",
+        "EXRIGHT_ENDPOINT_EXCLUSIONS_NOT_COMPLETE_CORPORATE_ACTION_UNIVERSE"
+      ]
+    }
+  },
+  "quote_input_path": "股票系統M1_v0_18/rotation_research/generated/input.json",
+  "quote_input_sha256": "982cf36383b47e3a7d5b68b55dcbc17cefe9b5715e287573c6ac9c19c11659a9",
+  "primary_pressure_id": null,
+  "policy_authorized": false,
+  "historical_signal_eligible": false,
+  "known_time_rule": "captured_at proves this archive observation only; announced_at remains null",
+  "total_net_return_qualified": false
+}

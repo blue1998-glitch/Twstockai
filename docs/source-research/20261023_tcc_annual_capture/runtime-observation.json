@@ -1,0 +1,32 @@
+{
+  "observed_at": "2026-10-23T17:23:00.483013+00:00",
+  "connectivity": "connected",
+  "observed_phase": "running",
+  "spec_revision": "8",
+  "observed_spec_revision": "8",
+  "observations_current": true,
+  "network_policy": {
+    "mode": "unrestricted",
+    "state": "unknown"
+  },
+  "startup_policy": {
+    "version": 1,
+    "vpn_configured": false,
+    "http_proxy": "http://proxy:8080",
+    "http_network_policy": {
+      "type": "unrestricted"
+    },
+    "tcp_connect_proxy": "http://proxy:8088",
+    "tcp_network_access": {
+      "domains": [],
+      "ip_ranges": []
+    }
+  },
+  "actual_executor_command_succeeded": true,
+  "actual_new_annual_GET_http": 200,
+  "status_unknown_not_claimed_enforced": true,
+  "configuration_changed_by_codex": false,
+  "other_refused_endpoints_retried": false,
+  "official_source_requests_this_turn": 1,
+  "subagents_or_second_task_started": false
+}

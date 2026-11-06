@@ -1,0 +1,93 @@
+{
+  "error": {
+    "type": "Clamped",
+    "detail": "[<class 'decimal.Clamped'>]"
+  },
+  "traceback": "Traceback (most recent call last):\n  File \"/workspace/Twstockai/股票系統M1_v0_18/capital_research/c_review_context_20261027/reproduce.py\", line 63, in probe\n    try:value=(reassess_conditional if entry=='review' else retry_rejected)(request);error=None;trace=None\n              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"/workspace/Twstockai/股票系統M1_v0_18/capital_research/conditional_retry.py\", line 39, in retry_rejected\n    return _retry(request)\n           ^^^^^^^^^^^^^^^\n  File \"/workspace/Twstockai/股票系統M1_v0_18/capital_research/conditional_retry.py\", line 74, in _retry\n    rebuilt = reassess_conditional(request['original_input'])\n              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"/workspace/Twstockai/股票系統M1_v0_18/capital_research/conditional_quantity_review.py\", line 20, in reassess_conditional\n    return _reassess_conditional(request)\n           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"/workspace/Twstockai/股票系統M1_v0_18/capital_research/conditional_quantity_review.py\", line 92, in _reassess_conditional\n    account=account_at_checkpoint(cp,decision_at=when,cancelled_order_ids=active)\n            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"/workspace/Twstockai/股票系統M1_v0_18/capital_research/continuity.py\", line 172, in account_at_checkpoint\n    validate_checkpoint(checkpoint)\n  File \"/workspace/Twstockai/股票系統M1_v0_18/capital_research/continuity.py\", line 164, in validate_checkpoint\n    rebuilt=make_checkpoint(checkpoint['origin_ledger_input'],checkpoint['execution_result'],\n            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"/workspace/Twstockai/股票系統M1_v0_18/capital_research/continuity.py\", line 137, in make_checkpoint\n    row,r=row_at(origin,execution['fills'],through_at[:10])\n          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"/workspace/Twstockai/股票系統M1_v0_18/capital_research/continuity.py\", line 32, in row_at\n    r=replay(ledger_prefix(origin,fills,day))\n      ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"/workspace/Twstockai/股票系統M1_v0_18/rotation_research/action_ledger.py\", line 103, in replay\n    return _replay(data, base)\n           ^^^^^^^^^^^^^^^^^^^\n  File \"/workspace/Twstockai/股票系統M1_v0_18/rotation_research/action_ledger.py\", line 150, in _replay\n    initial,prices,missing=valuation(ds[0])\n                           ^^^^^^^^^^^^^^^^\n  File \"/workspace/Twstockai/股票系統M1_v0_18/rotation_research/action_ledger.py\", line 127, in valuation\n    equity=cash+sum((c['amount'] for c in claims),Decimal(0))-sum((x['amount'] for x in payable),Decimal(0));prices={};unpriced=[]\n                ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\ndecimal.Clamped: [<class 'decimal.Clamped'>]\n",
+  "calls": {
+    "review": 1,
+    "retry": 1,
+    "quantity_replay": 1,
+    "simulate": 1,
+    "ledger_replay": 11,
+    "generate": 1,
+    "save": 0
+  },
+  "caller_before": {
+    "prec": 5,
+    "rounding": "ROUND_FLOOR",
+    "Emin": -2,
+    "Emax": 2,
+    "capitals": 0,
+    "clamp": 1,
+    "traps": {
+      "InvalidOperation": true,
+      "FloatOperation": true,
+      "DivisionByZero": true,
+      "Overflow": true,
+      "Underflow": true,
+      "Subnormal": true,
+      "Inexact": true,
+      "Rounded": true,
+      "Clamped": true
+    },
+    "flags": {
+      "InvalidOperation": false,
+      "FloatOperation": false,
+      "DivisionByZero": false,
+      "Overflow": false,
+      "Underflow": false,
+      "Subnormal": false,
+      "Inexact": true,
+      "Rounded": true,
+      "Clamped": false
+    }
+  },
+  "caller_after": {
+    "prec": 5,
+    "rounding": "ROUND_FLOOR",
+    "Emin": -2,
+    "Emax": 2,
+    "capitals": 0,
+    "clamp": 1,
+    "traps": {
+      "InvalidOperation": true,
+      "FloatOperation": true,
+      "DivisionByZero": true,
+      "Overflow": true,
+      "Underflow": true,
+      "Subnormal": true,
+      "Inexact": true,
+      "Rounded": true,
+      "Clamped": true
+    },
+    "flags": {
+      "InvalidOperation": false,
+      "FloatOperation": false,
+      "DivisionByZero": false,
+      "Overflow": false,
+      "Underflow": false,
+      "Subnormal": false,
+      "Inexact": true,
+      "Rounded": true,
+      "Clamped": false
+    }
+  },
+  "input_id": "sha256:4f006b2e584be5d5a1b4314473b54a286dabaf2383eef7a48812f32afc238c07",
+  "input_unchanged": true,
+  "caller_context_unchanged": true,
+  "source_versions": {
+    "conditional_quantity_review.py": {
+      "path": "capital_research/conditional_quantity_review.py",
+      "bytes": 9770,
+      "sha256": "3374c1c94c38dfae1b9f7732516ebe6b889d30740409e11d142ca338dc8aa178"
+    },
+    "conditional_retry.py": {
+      "path": "capital_research/conditional_retry.py",
+      "bytes": 11182,
+      "sha256": "5731657818dc1a01dd435687a976d3cc988a160faf32808ad0b6043c02761cfa"
+    }
+  },
+  "actual": null,
+  "equal_original": false
+}

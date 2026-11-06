@@ -1,0 +1,89 @@
+[
+  {
+    "name": "normal",
+    "context": {
+      "prec": 28,
+      "rounding": "ROUND_HALF_EVEN",
+      "Emin": -999999,
+      "Emax": 999999,
+      "capitals": 1,
+      "clamp": 0,
+      "traps": [
+        "InvalidOperation",
+        "DivisionByZero",
+        "Overflow"
+      ],
+      "flags": []
+    }
+  },
+  {
+    "name": "round-up",
+    "context": {
+      "prec": 7,
+      "rounding": "ROUND_UP",
+      "Emin": -999999,
+      "Emax": 999999,
+      "capitals": 1,
+      "clamp": 0,
+      "traps": [
+        "InvalidOperation",
+        "DivisionByZero",
+        "Overflow"
+      ],
+      "flags": []
+    }
+  },
+  {
+    "name": "round-down",
+    "context": {
+      "prec": 7,
+      "rounding": "ROUND_DOWN",
+      "Emin": -999999,
+      "Emax": 999999,
+      "capitals": 1,
+      "clamp": 0,
+      "traps": [
+        "InvalidOperation",
+        "DivisionByZero",
+        "Overflow"
+      ],
+      "flags": []
+    }
+  },
+  {
+    "name": "inexact-trap",
+    "context": {
+      "prec": 28,
+      "rounding": "ROUND_HALF_EVEN",
+      "Emin": -999999,
+      "Emax": 999999,
+      "capitals": 1,
+      "clamp": 0,
+      "traps": [
+        "InvalidOperation",
+        "DivisionByZero",
+        "Overflow",
+        "Inexact"
+      ],
+      "flags": []
+    }
+  },
+  {
+    "name": "narrow-exponents",
+    "context": {
+      "prec": 28,
+      "rounding": "ROUND_HALF_EVEN",
+      "Emin": -2,
+      "Emax": 2,
+      "capitals": 1,
+      "clamp": 0,
+      "traps": [
+        "InvalidOperation",
+        "DivisionByZero",
+        "Overflow",
+        "Underflow"
+      ],
+      "flags": []
+    }
+  }
+]

@@ -1,0 +1,47 @@
+[
+  {
+    "name": "general-vs-conditional",
+    "input_id": "sha256:5dd3379fa6e85835e493eb5122aabd0c8c1cc340867a92bfe1e81a3439a6979d",
+    "expected_status": "COMPARABLE"
+  },
+  {
+    "name": "with-refusal",
+    "input_id": "sha256:6107b1d6ec7786022ad95f2ff4bb2dc2f211b3ab529cc205cf51b31755b5e0bc",
+    "expected_status": "COMPARABLE"
+  },
+  {
+    "name": "same-parent-id-different-content",
+    "input_id": "sha256:cd66f1a413a92be0871b95590aaf348138419b8b43fd3473fc954f1976ce7848",
+    "expected_status": "REFUSED"
+  },
+  {
+    "name": "incomplete-child",
+    "input_id": "sha256:23e6dee0039af17cc37aaed79202a91b5b30a8e2dfd2b28a81ab183865a44db2",
+    "expected_status": "REFUSED"
+  },
+  {
+    "name": "missing-token",
+    "input_id": "sha256:1cdb02b6e58cef3e006383287899863718d5e121e6b0397d7f609cd50644ee3c",
+    "expected_status": "REFUSED"
+  },
+  {
+    "name": "wrong-generation",
+    "input_id": "sha256:7e8d85f1bb202e957d4969d1c2f61b1b4ccbdd6516aa1c42fd6ba05d97428b99",
+    "expected_status": "REFUSED"
+  },
+  {
+    "name": "duplicate-label",
+    "input_id": "sha256:35d42f45014c079497ccb322b0ce46edcf40ac7a89b7754b814c45fc706e48dd",
+    "expected_status": "REFUSED"
+  },
+  {
+    "name": "resource-limit",
+    "input_id": "sha256:49814fd96b251e8e69d70fa42b2396b4373776fa6be2d27ed8d1dd5f5258c928",
+    "expected_status": "REFUSED"
+  },
+  {
+    "name": "later-record-time",
+    "input_id": "sha256:a43af9085d361e4cccdb170bffcbcb0541f0aa04c6d0b5dd31b0c87e620241ec",
+    "expected_status": "COMPARABLE"
+  }
+]

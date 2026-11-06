@@ -1,0 +1,36 @@
+[
+  {
+    "name": "normal",
+    "equal_original_normal": true,
+    "error": null,
+    "caller_context_unchanged": true,
+    "input_unchanged": true
+  },
+  {
+    "name": "different-rounding",
+    "equal_original_normal": true,
+    "error": null,
+    "caller_context_unchanged": true,
+    "input_unchanged": true
+  },
+  {
+    "name": "inexact-trap",
+    "equal_original_normal": false,
+    "error": {
+      "type": "Inexact",
+      "detail": "[<class 'decimal.Inexact'>]"
+    },
+    "caller_context_unchanged": true,
+    "input_unchanged": true
+  },
+  {
+    "name": "narrow-exponents",
+    "equal_original_normal": false,
+    "error": {
+      "type": "Overflow",
+      "detail": "[<class 'decimal.Overflow'>]"
+    },
+    "caller_context_unchanged": true,
+    "input_unchanged": true
+  }
+]

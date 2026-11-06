@@ -1,0 +1,25 @@
+{
+  "new_annotation_capture": "NOT_COMPLETED",
+  "attempts": [
+    {
+      "stage": "Pre-launch original HTML SHA guard",
+      "result": "REJECTED_BEFORE_BROWSER_START",
+      "reason": "Expected SHA string in observation script was mistyped, omitting cb",
+      "resolution": "Corrected to the already verified original SHA f5b3b4e5e03da1c8291ff5854e0a6dfbb974286fe5cfbcb9a466ec6e138203ee; original HTML unchanged"
+    },
+    {
+      "stage": "Launch existing Chromium runtime",
+      "result": "NOT_STARTED_EXECUTABLE_MISSING",
+      "reason": "The prior /workspace/scratch/ca1bc9758970/core-next/browser/runtime/chromium no longer exists",
+      "resolution": "No available Chromium/Chrome/Firefox found in checked local runtime locations; use existing original capture instead"
+    }
+  ],
+  "successful_new_browser_observations": 0,
+  "new_screenshots": 0,
+  "reused_capture": "docs/visual-discussion/20261020_high_source_roles_work_review/early-high-source-zoom.png",
+  "reused_capture_is_not_new_test": true,
+  "product_source_changed": false,
+  "browser_installed": false,
+  "file_protocol_used_or_retried": false,
+  "physical_android": "NOT_TESTED_NEW_BUILD"
+}

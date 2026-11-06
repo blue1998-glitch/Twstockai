@@ -1,0 +1,26 @@
+{
+  "initial_unique_methods": 15,
+  "initial_errors": 2,
+  "causes": [
+    "Shared protocol used bridge.Refused while native entry catches ctrl1.Refused; normalize refusal type",
+    "YAML plain scalar contained :all: followed by a space; use a literal run block"
+  ],
+  "oracle_expected_results_changed": false,
+  "source_fingerprints": [
+    {
+      "path": "native.py",
+      "before_sha256": "e92c0dc672dbd77780754cd52928b3c318f771d7c403f582b46a3c81417ca7e9",
+      "after_sha256": "78700d0a07ba540bb6e3e342a9b32f8cbbe4737926963ac4efb9b7ec5561921f"
+    },
+    {
+      "path": "workflow.template",
+      "before_sha256": "22f5061abde70cc18475dc7b9d13e7e497a019b5bd04222e9af6a4efbfb7546f",
+      "after_sha256": "a9ce943f96219f4ade473321e1c868e259074f0544620af06dcc312191ba7971"
+    },
+    {
+      "path": "Twstockai_READ1_OAUTH_RUNNER.pyz",
+      "before_sha256": "73fc31c728f6c601f7f5c472be2991ea4322718277319ac57b6ed1c1ba30b2a6",
+      "after_sha256": "633466f3e6a0ebbda922634bd5a4b8aa6a5dc7b2f992351a5445bb0cd875cdda"
+    }
+  ]
+}

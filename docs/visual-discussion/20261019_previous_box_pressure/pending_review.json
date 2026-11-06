@@ -1,0 +1,44 @@
+{
+  "status": "WAITING_FOR_USER_PREVIOUS_BOX_IDENTIFICATION",
+  "evidence_type": "ASSISTANT_SOURCE_BOUND_HYPOTHESIS",
+  "user_requested_next_at": "2026-10-19T16:21:31+08:00",
+  "anchor": {
+    "analysis_as_of": "2026-10-16",
+    "code": "1101",
+    "price_mode": "RAW_NEW_OFFICIAL_DAILY",
+    "saved_close": "27.30",
+    "jan27_representative_high": "26.95"
+  },
+  "retained_user_decision": {
+    "jun03": "outside current box;previous box lower-edge breakdown K",
+    "jan27_priority": "closer to latest and subsequent possible settlement"
+  },
+  "candidate_reason": "nearest visible consolidation before lateMay-to-June decline when looking left from27.30;Apr08Low28.45 andMay13High31.40 are concrete evidence, not approved boundaries",
+  "assistant_display_window": {
+    "start": "2025-04-08",
+    "end": "2025-05-29",
+    "records": 37,
+    "wick_low": "28.45",
+    "wick_high": "31.40"
+  },
+  "display_window_is_approved_box": false,
+  "formal_box_start": null,
+  "formal_box_end": null,
+  "formal_price_bounds": null,
+  "new_question": "淡色這段4月急跌後、到5月底的整理，是不是6/3離開的前一箱？",
+  "scope_of_possible_yes": "identify broad previous-box structure only;not approve exact display dates/wick bounds/box volume/selection formula or trade qualification",
+  "do_not_reask": [
+    "Jun03 membership",
+    "Jan27 importance reasons",
+    "B versusB1/B2",
+    "flat-band endpoint",
+    "G2 confirmed endpoints",
+    "old0.4.3 shade acceptance"
+  ],
+  "candidate_approved": false,
+  "auto_box_or_pressure_rule": null,
+  "volume_threshold": null,
+  "core_usefulness": "NOT_ESTABLISHED",
+  "classification": "NOT_VALIDATED",
+  "action": "NOT_EVALUATED"
+}

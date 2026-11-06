@@ -1,0 +1,38 @@
+{
+  "status": "FAIL",
+  "checks": [
+    {
+      "name": "all selected numerical/source/manual/display fields exactly equal0.4.2 except view version",
+      "size": {
+        "width": 390,
+        "height": 844
+      },
+      "status": "PASS"
+    },
+    {
+      "name": "G2 actual renderer paints18% backgrounds and zero region perimeter strokes, formal bounds null",
+      "size": {
+        "width": 390,
+        "height": 844
+      },
+      "status": "PASS"
+    },
+    {
+      "name": "G1 actual renderer paints18% backgrounds and zero region perimeter strokes, formal bounds null",
+      "size": {
+        "width": 390,
+        "height": 844
+      },
+      "status": "PASS"
+    },
+    {
+      "name": "three actual opacity choices visibly increase RGB contrast; default max contrast>=25; selections unchanged",
+      "size": {
+        "width": 390,
+        "height": 844
+      },
+      "status": "PASS"
+    }
+  ],
+  "error": "AssertionError [ERR_ASSERTION]: The expression evaluated to a falsy value:\n\n  assert(result.opaque_candle_pixels>50)\n\n    at /workspace/scratch/ca1bc9758970/review/twstockai-soft-fill/股票系統M1_v0_18/soft_region_chart_v043/verify_browser.cjs:67:35"
+}

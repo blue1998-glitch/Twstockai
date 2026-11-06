@@ -1,0 +1,103 @@
+test_canonical_app_permission_and_comment_schema_are_not_bypassed (codex.oci_read1.oauth_approved.test_oauth_runner.Tests.test_canonical_app_permission_and_comment_schema_are_not_bypassed) ... ERROR
+test_code_and_workflow_manifest_tamper_refused (codex.oci_read1.oauth_approved.test_oauth_runner.Tests.test_code_and_workflow_manifest_tamper_refused) ... ok
+test_error_projection_never_returns_raw_ids_or_messages (codex.oci_read1.oauth_approved.test_oauth_runner.Tests.test_error_projection_never_returns_raw_ids_or_messages) ... ok
+test_expired_future_and_unknown_signing_key_refused (codex.oci_read1.oauth_approved.test_oauth_runner.Tests.test_expired_future_and_unknown_signing_key_refused) ... ok
+test_locked_dependency_graph_satisfies_all_active_requirements (codex.oci_read1.oauth_approved.test_oauth_runner.Tests.test_locked_dependency_graph_satisfies_all_active_requirements) ... ok
+test_native_read_profile_without_installation_is_separate (codex.oci_read1.oauth_approved.test_oauth_runner.Tests.test_native_read_profile_without_installation_is_separate) ... ok
+test_nonce_claim_is_once_and_bound_to_native_run (codex.oci_read1.oauth_approved.test_oauth_runner.Tests.test_nonce_claim_is_once_and_bound_to_native_run) ... ok
+test_package_rebuild_and_offline_inspect_not_oci_success (codex.oci_read1.oauth_approved.test_oauth_runner.Tests.test_package_rebuild_and_offline_inspect_not_oci_success) ... ok
+test_qualification_expiry_wrong_config_and_minimum_iam_fail_closed (codex.oci_read1.oauth_approved.test_oauth_runner.Tests.test_qualification_expiry_wrong_config_and_minimum_iam_fail_closed) ... ok
+test_real_rsa_signature_and_exact_native_oidc_claims (codex.oci_read1.oauth_approved.test_oauth_runner.Tests.test_real_rsa_signature_and_exact_native_oidc_claims) ... ok
+test_rpst_request_exactly_control_plane_not_access_token (codex.oci_read1.oauth_approved.test_oauth_runner.Tests.test_rpst_request_exactly_control_plane_not_access_token) ... ok
+test_server_scope_rejects_arbitrary_url_root_duplicate_ad (codex.oci_read1.oauth_approved.test_oauth_runner.Tests.test_server_scope_rejects_arbitrary_url_root_duplicate_ad) ... ok
+test_unknown_account_blocks_no_secret_factory_and_consumes_nonce (codex.oci_read1.oauth_approved.test_oauth_runner.Tests.test_unknown_account_blocks_no_secret_factory_and_consumes_nonce) ... ok
+test_workflow_separates_secrets_and_has_default_deny (codex.oci_read1.oauth_approved.test_oauth_runner.Tests.test_workflow_separates_secrets_and_has_default_deny) ... ERROR
+test_wrong_native_actor_scope_and_rerun_fail_before_any_secret (codex.oci_read1.oauth_approved.test_oauth_runner.Tests.test_wrong_native_actor_scope_and_rerun_fail_before_any_secret) ... ok
+
+======================================================================
+ERROR: test_canonical_app_permission_and_comment_schema_are_not_bypassed (codex.oci_read1.oauth_approved.test_oauth_runner.Tests.test_canonical_app_permission_and_comment_schema_are_not_bypassed)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/workspace/Twstockai/codex/oci_read1/oauth_approved/test_oauth_runner.py", line 61, in test_canonical_app_permission_and_comment_schema_are_not_bypassed
+    with self.assertRaises(Refused):self.gate().verify()
+                                    ^^^^^^^^^^^^^^^^^^^^
+  File "/workspace/Twstockai/codex/oci_read1/oauth_approved/native.py", line 52, in verify
+    parse_command(comment["body"].encode())
+  File "/workspace/Twstockai/codex/oci_read1/protocol.py", line 16, in parse_command
+    raise Refused("READ1_COMMAND_FIELDS")
+codex.oci_bridge1.bridge.Refused: READ1_COMMAND_FIELDS
+
+======================================================================
+ERROR: test_workflow_separates_secrets_and_has_default_deny (codex.oci_read1.oauth_approved.test_oauth_runner.Tests.test_workflow_separates_secrets_and_has_default_deny)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/workspace/Twstockai/codex/oci_read1/oauth_approved/test_oauth_runner.py", line 107, in test_workflow_separates_secrets_and_has_default_deny
+    text=n.render_workflow(self.package).decode();doc=yaml.safe_load(text)
+                                                      ^^^^^^^^^^^^^^^^^^^^
+  File "/opt/codex/runtimes/codex-primary-runtime/dependencies/python/lib/python3.12/site-packages/yaml/__init__.py", line 125, in safe_load
+    return load(stream, SafeLoader)
+           ^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/opt/codex/runtimes/codex-primary-runtime/dependencies/python/lib/python3.12/site-packages/yaml/__init__.py", line 81, in load
+    return loader.get_single_data()
+           ^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/opt/codex/runtimes/codex-primary-runtime/dependencies/python/lib/python3.12/site-packages/yaml/constructor.py", line 49, in get_single_data
+    node = self.get_single_node()
+           ^^^^^^^^^^^^^^^^^^^^^^
+  File "/opt/codex/runtimes/codex-primary-runtime/dependencies/python/lib/python3.12/site-packages/yaml/composer.py", line 36, in get_single_node
+    document = self.compose_document()
+               ^^^^^^^^^^^^^^^^^^^^^^^
+  File "/opt/codex/runtimes/codex-primary-runtime/dependencies/python/lib/python3.12/site-packages/yaml/composer.py", line 55, in compose_document
+    node = self.compose_node(None, None)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/opt/codex/runtimes/codex-primary-runtime/dependencies/python/lib/python3.12/site-packages/yaml/composer.py", line 84, in compose_node
+    node = self.compose_mapping_node(anchor)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/opt/codex/runtimes/codex-primary-runtime/dependencies/python/lib/python3.12/site-packages/yaml/composer.py", line 133, in compose_mapping_node
+    item_value = self.compose_node(node, item_key)
+                 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/opt/codex/runtimes/codex-primary-runtime/dependencies/python/lib/python3.12/site-packages/yaml/composer.py", line 84, in compose_node
+    node = self.compose_mapping_node(anchor)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/opt/codex/runtimes/codex-primary-runtime/dependencies/python/lib/python3.12/site-packages/yaml/composer.py", line 133, in compose_mapping_node
+    item_value = self.compose_node(node, item_key)
+                 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/opt/codex/runtimes/codex-primary-runtime/dependencies/python/lib/python3.12/site-packages/yaml/composer.py", line 84, in compose_node
+    node = self.compose_mapping_node(anchor)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/opt/codex/runtimes/codex-primary-runtime/dependencies/python/lib/python3.12/site-packages/yaml/composer.py", line 133, in compose_mapping_node
+    item_value = self.compose_node(node, item_key)
+                 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/opt/codex/runtimes/codex-primary-runtime/dependencies/python/lib/python3.12/site-packages/yaml/composer.py", line 82, in compose_node
+    node = self.compose_sequence_node(anchor)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/opt/codex/runtimes/codex-primary-runtime/dependencies/python/lib/python3.12/site-packages/yaml/composer.py", line 111, in compose_sequence_node
+    node.value.append(self.compose_node(node, index))
+                      ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/opt/codex/runtimes/codex-primary-runtime/dependencies/python/lib/python3.12/site-packages/yaml/composer.py", line 84, in compose_node
+    node = self.compose_mapping_node(anchor)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/opt/codex/runtimes/codex-primary-runtime/dependencies/python/lib/python3.12/site-packages/yaml/composer.py", line 127, in compose_mapping_node
+    while not self.check_event(MappingEndEvent):
+              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/opt/codex/runtimes/codex-primary-runtime/dependencies/python/lib/python3.12/site-packages/yaml/parser.py", line 98, in check_event
+    self.current_event = self.state()
+                         ^^^^^^^^^^^^
+  File "/opt/codex/runtimes/codex-primary-runtime/dependencies/python/lib/python3.12/site-packages/yaml/parser.py", line 428, in parse_block_mapping_key
+    if self.check_token(KeyToken):
+       ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/opt/codex/runtimes/codex-primary-runtime/dependencies/python/lib/python3.12/site-packages/yaml/scanner.py", line 116, in check_token
+    self.fetch_more_tokens()
+  File "/opt/codex/runtimes/codex-primary-runtime/dependencies/python/lib/python3.12/site-packages/yaml/scanner.py", line 223, in fetch_more_tokens
+    return self.fetch_value()
+           ^^^^^^^^^^^^^^^^^^
+  File "/opt/codex/runtimes/codex-primary-runtime/dependencies/python/lib/python3.12/site-packages/yaml/scanner.py", line 577, in fetch_value
+    raise ScannerError(None, None,
+yaml.scanner.ScannerError: mapping values are not allowed here
+  in "<unicode string>", line 98, column 101:
+     ... -no-cache-dir --only-binary=:all: --require-hashes -r "$READ1_RE ... 
+                                         ^
+
+----------------------------------------------------------------------
+Ran 15 tests in 0.190s
+
+FAILED (errors=2)

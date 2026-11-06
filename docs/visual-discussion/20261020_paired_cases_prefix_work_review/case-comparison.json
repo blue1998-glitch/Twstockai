@@ -1,0 +1,115 @@
+{
+  "schema": "m1-reviewed-interval-case-comparison/1",
+  "qualification": "PARTIAL_USER_LABELS_NOT_NEW_AUTOMATIC_CLASSIFICATION",
+  "cases": [
+    {
+      "case_id": "2884-rising-consolidation",
+      "code": "2884",
+      "label_source": "USER_CONFIRMED",
+      "label_time": "2026-10-20T21:07:05+08:00",
+      "user_quote": "既然你辨認的出來就可以當成一個整理區間，而且他的確是上漲中短暫回來整理後來又再度上漲",
+      "form": {
+        "own_interval": true,
+        "consolidation_interval": true
+      },
+      "price_process_description": "上漲中的短暫整理區間，整理後再度上漲",
+      "relative_context": {
+        "within_rising_process": true,
+        "temporary_pullback": true,
+        "subsequent_rise": true
+      },
+      "time_window": {
+        "start": "2026-09-17",
+        "end": "2026-10-14",
+        "records": 17,
+        "qualification": "ASSISTANT_OBSERVATION_ONLY_NOT_FORMAL_ENDPOINTS"
+      },
+      "original_source": {
+        "bundle_artifact_id": "sha256:26e36b1a9c74da39baeb83770f2e1738a9993ee1675d224f45315298a0ed3c5d",
+        "source_data_sha256": "ab87a51b5b8afd076603f290b10f415bd60d31ae47c5ab2f6d9d609ad4014901",
+        "review_sha256": "08abd954b0978228594451889246375d5101f25a373a70136b8e7da5a185ffb9"
+      },
+      "guardrails": {
+        "primary_pressure_id": null,
+        "formal_price_bounds": null,
+        "formal_original_source_membership": null,
+        "formal_lifecycle": null,
+        "historical_selection_time": null,
+        "historical_signal_eligible": false,
+        "action_qualification": "NOT_EVALUATED"
+      }
+    },
+    {
+      "case_id": "1101-ABC-own-weaker-interval",
+      "code": "1101",
+      "label_source": "USER_CONFIRMED",
+      "label_time": "2026-10-20T17:26:41+08:00",
+      "user_quote": "ABC是自己一個區間沒錯和舊大帶相比他就是跳空下跌，更為弱勢的區間",
+      "form": {
+        "own_interval": true,
+        "consolidation_interval": null
+      },
+      "price_process_description": "自己的區間，相對舊大帶跳空下跌、更弱勢",
+      "relative_context": {
+        "distinct_from_old_major_band": true,
+        "gap_down_and_weaker_than_old_major_band": true,
+        "absolute_downtrend_all_horizons": null,
+        "subsequent_rise_after_interval": null
+      },
+      "time_window": {
+        "automatic_exact_interval_ids": [],
+        "end": "2025-06-02",
+        "records": 39,
+        "start": "2025-04-07",
+        "verdict": "NO_EXACT_AUTOMATIC_INTERVAL_MATCH",
+        "qualification": "PREVIOUS_USER_SELECTED_39_BAR_TIME_COVERAGE_NOT_EXHAUSTIVE_FORMAL_SOURCE_MEMBERSHIP"
+      },
+      "local_price_observation": {
+        "date": "2025-04-10",
+        "bar": {
+          "close": "30.75",
+          "date": "2025-04-10",
+          "high": "31.20",
+          "low": "30.00",
+          "open": "30.95",
+          "volume_shares_scaled": "48104987"
+        },
+        "previous_record": {
+          "close": "28.50",
+          "date": "2025-04-09",
+          "high": "29.60",
+          "low": "28.50",
+          "open": "29.00",
+          "volume_shares_scaled": "45183260"
+        },
+        "close_change": "2.25",
+        "qualification": "LOCAL_BOUNCE_CAN_COEXIST_WITH_USER_RELATIVE_WEAKNESS_NOT_OVERALL_UPGRADE"
+      },
+      "original_source": {
+        "comparison_sha256": "184bdef0b687ec0ab7bfcaaac2157ff7916fbc1000ef312d81b5efc0c2e73e15",
+        "original_core_result_id": "sha256:ec7bca9ed6aa176c328fd8c4e94a31ea66967832e7089ac20a44090461f49da4",
+        "review_sha256": "1fbcfe68750a0481b6a586f22efd2b7af122218f0ea618dad85e74aa688f53cd"
+      },
+      "guardrails": {
+        "primary_pressure_id": null,
+        "formal_price_bounds": null,
+        "formal_original_source_membership": null,
+        "formal_lifecycle": null,
+        "historical_selection_time": null,
+        "historical_signal_eligible": false,
+        "action_qualification": "NOT_EVALUATED"
+      }
+    }
+  ],
+  "comparison_policy": {
+    "form_process_and_reference_relation_separate": true,
+    "absence_of_label_means": "NOT_ADJUDICATED_UNKNOWN_NOT_NEGATIVE",
+    "not_labelled_is_not_false": true,
+    "do_not_compare_window_width_duration_volume_or_rank": true,
+    "reason": "2884 window is assistant-selected17 rows;1101 coverage is user-selected39 rows; bounds and comparable population are not established.",
+    "do_not_turn_relative_weakness_into_all_horizon_downtrend": true
+  },
+  "classification_quality": "NOT_VALIDATED",
+  "core_usefulness": "NOT_ESTABLISHED",
+  "primary_pressure_id": null
+}

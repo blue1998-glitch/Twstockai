@@ -1,0 +1,58 @@
+{
+  "outputs": [
+    {
+      "image": "b-overall-context.png",
+      "sha256": "e6444bde05cbf9e2da611a4e95aed71546e0a2f51b584e2c858b374bf4383957",
+      "windows": [
+        {
+          "start": "2025-01-02",
+          "end": "2026-06-30",
+          "saved_bars": 358
+        }
+      ]
+    },
+    {
+      "image": "b-whole-versus-parallel.png",
+      "sha256": "4eb7801041f6c70d05d77a8040df5d0f3fd32d54973461f9d6354557636806d7",
+      "windows": [
+        {
+          "start": "2025-06-02",
+          "end": "2026-06-30",
+          "saved_bars": 263,
+          "panels": 2,
+          "same_observations_and_axes": true
+        }
+      ]
+    },
+    {
+      "image": "b-asof-broad-context.png",
+      "sha256": "d135bef8f62b6c7b377240bc81354f938f6813addb9feef5f631f647e2085087",
+      "windows": [
+        {
+          "start": "2024-10-17",
+          "end": "2026-04-28",
+          "saved_bars": 368,
+          "cutoff": "2026-04-28",
+          "later_bars": 0
+        }
+      ]
+    },
+    {
+      "image": "b-broad-reference-paths.png",
+      "sha256": "15dcea42a91ebf52faf5a624ed747315b50eb3501f6216888a1c43f81e6cfda6",
+      "windows": [
+        {
+          "start": "2025-06-02",
+          "end": "2026-06-30",
+          "saved_bars": 263,
+          "price_references_only_not_formal_bounds": true
+        }
+      ]
+    }
+  ],
+  "minimum_calendar_months": 6,
+  "all_windows_satisfy_minimum": true,
+  "PDF_pages": 4,
+  "comparison_price_volume_axes_equal": true,
+  "source_sha256_after": "ab87a51b5b8afd076603f290b10f415bd60d31ae47c5ab2f6d9d609ad4014901"
+}

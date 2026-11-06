@@ -1,0 +1,87 @@
+{
+  "error": {
+    "type": "ValueError",
+    "detail": "LEDGER_CHECKPOINT_REQUIRED: token carry does not prove capital continuity"
+  },
+  "traceback": "Traceback (most recent call last):\n  File \"/workspace/Twstockai/股票系統M1_v0_18/capital_research/decision_context_20261027/reproduce.py\", line 75, in probe\n    try:value=(resume_decision if 'previous' in args else decide)(**args);error=None;trace=None\n              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"/workspace/Twstockai/股票系統M1_v0_18/capital_research/core.py\", line 383, in resume_decision\n    raise ValueError('LEDGER_CHECKPOINT_REQUIRED: token carry does not prove capital continuity')\nValueError: LEDGER_CHECKPOINT_REQUIRED: token carry does not prove capital continuity\n",
+  "calls": {
+    "decide": 0,
+    "resume": 1,
+    "inner_decide": 0,
+    "bind_resume": 0,
+    "ledger_replay": 0,
+    "simulate": 0,
+    "replay_sequence": 0,
+    "save": 0
+  },
+  "caller_before": {
+    "prec": 5,
+    "rounding": "ROUND_FLOOR",
+    "Emin": -2,
+    "Emax": 2,
+    "capitals": 0,
+    "clamp": 1,
+    "traps": {
+      "InvalidOperation": true,
+      "FloatOperation": true,
+      "DivisionByZero": true,
+      "Overflow": true,
+      "Underflow": true,
+      "Subnormal": true,
+      "Inexact": true,
+      "Rounded": true,
+      "Clamped": true
+    },
+    "flags": {
+      "InvalidOperation": false,
+      "FloatOperation": false,
+      "DivisionByZero": false,
+      "Overflow": false,
+      "Underflow": false,
+      "Subnormal": false,
+      "Inexact": true,
+      "Rounded": true,
+      "Clamped": false
+    }
+  },
+  "caller_after": {
+    "prec": 5,
+    "rounding": "ROUND_FLOOR",
+    "Emin": -2,
+    "Emax": 2,
+    "capitals": 0,
+    "clamp": 1,
+    "traps": {
+      "InvalidOperation": true,
+      "FloatOperation": true,
+      "DivisionByZero": true,
+      "Overflow": true,
+      "Underflow": true,
+      "Subnormal": true,
+      "Inexact": true,
+      "Rounded": true,
+      "Clamped": true
+    },
+    "flags": {
+      "InvalidOperation": false,
+      "FloatOperation": false,
+      "DivisionByZero": false,
+      "Overflow": false,
+      "Underflow": false,
+      "Subnormal": false,
+      "Inexact": true,
+      "Rounded": true,
+      "Clamped": false
+    }
+  },
+  "input_id": "sha256:4c0be41e9adcc6b2cd3d8aa0fe169c30244fb59e507c7cdcd83e6775640b3fb5",
+  "input_unchanged": true,
+  "caller_context_unchanged": true,
+  "source_version": {
+    "path": "capital_research/core.py",
+    "bytes": 22839,
+    "sha256": "7ee2dd01f15579fd945c128ab7959a90ea0767d287581e4e84ca3f629936c978"
+  },
+  "actual": null,
+  "expected_rejection": true
+}

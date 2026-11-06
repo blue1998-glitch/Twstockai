@@ -1,0 +1,134 @@
+{
+  "schema": "rotation-treasury-date-roles-input/0.1",
+  "source": {
+    "source_id": "tcc-2026-q2-consolidated-report",
+    "issuer_code": "1101",
+    "url": "https://media.taiwancement.com/web_tcc/comm/pdf/report/2026/TCC%20115%E5%B9%B4%E7%AC%AC%E4%BA%8C%E5%AD%A3%E5%90%88%E4%BD%B5%E8%B2%A1%E5%A0%B1.pdf",
+    "pdf_path": "股票系統M1_v0_18/rotation_research/source_followup_20261023/raw/tcc-2026-q2-consolidated-report.response",
+    "pdf_bytes": 3320224,
+    "pdf_sha256": "e8a8ca682a242180a908a68030dc80ee0321ddf92217586f59230b1d3e584d2d",
+    "native_path": "股票系統M1_v0_18/rotation_research/source_followup_20261023/raw/tcc-2026-q2-consolidated-report.txt",
+    "native_sha256": "b3bf4f18757b595a8019cf304fd3e72c61deb2c31c8d50a29ea1ea9954bb6ce8",
+    "page_number": 58,
+    "printed_page": "58",
+    "page_sha256": "2e6bcab6a95d1d284011167e40a3c9e40227fd1c30b813c7bf4c61013e72493c",
+    "page_text": "           本 公 司 於 115 年 1 月 經 董 事 會 通 過 註 銷 庫 藏 股 28,000 仟 股 ， 並\n        於 115 年 2 月 辦 理 變 更 登 記 完 成 。\n           本公司持有之庫藏股票，依證券交易法規定不得質押，亦不得\n        享有股利之分派及表決權等權利。\n二六、 收      入\n  (一 ) 客 戶 合 約 收 入\n                        115年4月1日          114年4月1日       115年1月1日       114年1月1日\n                         至6月30日            至6月30日         至6月30日         至6月30日\n        營業收入            $ 38,121,809      $ 35,354,423   $ 71,289,957   $ 70,310,678\n\n\n  (二 ) 合 約 餘 額\n                       115年6月30日       114年12月31日        114年6月30日      114年1月1日\n        應收票據及帳款（含關\n         係人）（附註十）       $ 30,771,072      $ 28,544,534   $ 26,715,214   $ 30,092,555\n\n        合約資產（帳列其他流\n         動資產）           $   997,901       $   668,799    $   538,513    $ 1,014,387\n\n        合約負債            $ 2,963,002       $ 1,782,492    $ 1,674,197    $ 1,841,088\n\n\n           合約負債之變動主要係來自滿足履約義務之時點與客戶付款時\n        點之差異。\n           合併公司於建造儲能案廠過程中逐步認列合約資產，於開立帳\n        單時將其轉列為應收帳款。\n二七、 本期淨利\n         本期淨利包含以下項目：\n  (一 ) 折 舊 及 攤 銷\n                        115年4月1日          114年4月1日       115年1月1日       114年1月1日\n                         至6月30日            至6月30日         至6月30日         至6月30日\n        折舊費用依科目別彙總\n          不動產、廠房及\n           設備           $ 4,177,783       $ 3,911,462    $ 8,192,661    $ 7,508,812\n          使用權資產             391,808           394,372        779,039        781,637\n          投資性不動產             23,215             3,862         46,315          7,711\n                        $ 4,592,806       $ 4,309,696    $ 9,018,015    $ 8,298,160\n\n\n\n（接次頁）\n\n\n\n\n                                 - 58 -\n",
+    "official_captured_at": "2026-10-23T08:33:10.538370+00:00",
+    "original_readback_at": "2026-10-23T08:33:10.538392+00:00",
+    "announced_at": null,
+    "historical_publication_time": "NOT_AUTHENTICATED",
+    "evidence_kind": "SAVED_NATIVE_TEXT_FROM_HASH_BOUND_PDF_EXTRACTION"
+  },
+  "source_followup_catalog_id": "sha256:49528167bede030b29359a77abebd3f8947c88e58aeaaeede62c42a76465cc89",
+  "prior_observation": {
+    "family": "source-followup:TREASURY_CANCELLATION_MONTH_REPORTED:1101",
+    "issuer_code": "1101",
+    "entitled_old_code": "ISSUER_TREASURY_NOT_PRO_RATA_HOLDERS",
+    "old_instrument": "1101_ISSUER_TREASURY_SHARES",
+    "action_type": "TREASURY_CANCELLATION_MONTH_REPORTED",
+    "source_ids": [
+      "tcc-2026-q2-consolidated-report"
+    ],
+    "observed_at": "2026-10-23T08:33:10.538392+00:00",
+    "source_captured_at": "2026-10-23T08:33:10.538370+00:00",
+    "announced_at": null,
+    "accounting_eligible": false,
+    "historical_signal_eligible": false,
+    "fields": {
+      "cancellation_month": {
+        "value": "2026-01",
+        "unit": "ISO_MONTH",
+        "date_role": "CANCELLATION_MONTH_NOT_EXACT_DAY",
+        "proofs": [
+          {
+            "source_id": "tcc-2026-q2-consolidated-report",
+            "locator": "PDF pages 52 and 57; one cancellation observation",
+            "native_evidence_sha256": "54327224bcffb6765a0a2077cf9e0a9ad6df11aa48cb6f0ef473d38558521927",
+            "normalized_value": "2026-01"
+          }
+        ],
+        "qualification": "SOURCE_FACT_NOT_FINAL_LEDGER"
+      },
+      "cancellation_quantity": {
+        "value": "28000",
+        "unit": "THOUSAND_SHARES",
+        "date_role": "SOURCE_ONLY_NOT_ENTITLEMENT",
+        "proofs": [
+          {
+            "source_id": "tcc-2026-q2-consolidated-report",
+            "locator": "PDF pages 52 and 57; one cancellation observation",
+            "native_evidence_sha256": "54327224bcffb6765a0a2077cf9e0a9ad6df11aa48cb6f0ef473d38558521927",
+            "normalized_value": "28000"
+          }
+        ],
+        "qualification": "SOURCE_FACT_NOT_FINAL_LEDGER"
+      },
+      "exact_effective_date": {
+        "value": null,
+        "unit": "ISO_DATE",
+        "date_role": "SOURCE_ONLY_NOT_ENTITLEMENT",
+        "proofs": [],
+        "qualification": "SOURCE_FACT_NOT_FINAL_LEDGER"
+      },
+      "holder_conversion_ratio": {
+        "value": null,
+        "unit": "SHARES_PER_OLD_SHARE",
+        "date_role": "SOURCE_ONLY_NOT_ENTITLEMENT",
+        "proofs": [],
+        "qualification": "SOURCE_FACT_NOT_FINAL_LEDGER"
+      },
+      "holder_cashflow": {
+        "value": null,
+        "unit": "TWD",
+        "date_role": "SOURCE_ONLY_NOT_ENTITLEMENT",
+        "proofs": [],
+        "qualification": "SOURCE_FACT_NOT_FINAL_LEDGER"
+      },
+      "treasury_opening": {
+        "value": "58000",
+        "unit": "THOUSAND_SHARES",
+        "date_role": "HALF_YEAR_OPENING_BALANCE_NOT_EVENT",
+        "proofs": [
+          {
+            "source_id": "tcc-2026-q2-consolidated-report",
+            "locator": "PDF pages 52 and 57; one cancellation observation",
+            "native_evidence_sha256": "54327224bcffb6765a0a2077cf9e0a9ad6df11aa48cb6f0ef473d38558521927",
+            "normalized_value": "58000"
+          }
+        ],
+        "qualification": "SOURCE_FACT_NOT_FINAL_LEDGER"
+      },
+      "treasury_cancelled": {
+        "value": "28000",
+        "unit": "THOUSAND_SHARES",
+        "date_role": "HALF_YEAR_MOVEMENT_SAME_CANCELLATION_NOT_NEW_EVENT",
+        "proofs": [
+          {
+            "source_id": "tcc-2026-q2-consolidated-report",
+            "locator": "PDF pages 52 and 57; one cancellation observation",
+            "native_evidence_sha256": "54327224bcffb6765a0a2077cf9e0a9ad6df11aa48cb6f0ef473d38558521927",
+            "normalized_value": "28000"
+          }
+        ],
+        "qualification": "SOURCE_FACT_NOT_FINAL_LEDGER"
+      },
+      "treasury_closing": {
+        "value": "30000",
+        "unit": "THOUSAND_SHARES",
+        "date_role": "HALF_YEAR_CLOSING_BALANCE_NOT_EVENT",
+        "proofs": [
+          {
+            "source_id": "tcc-2026-q2-consolidated-report",
+            "locator": "PDF pages 52 and 57; one cancellation observation",
+            "native_evidence_sha256": "54327224bcffb6765a0a2077cf9e0a9ad6df11aa48cb6f0ef473d38558521927",
+            "normalized_value": "30000"
+          }
+        ],
+        "qualification": "SOURCE_FACT_NOT_FINAL_LEDGER"
+      }
+    },
+    "id": "sha256:2416ebd2dd3f52971a48df9af53ab491393797fc0aa3220e29b81871972a9b89"
+  },
+  "local_source_read_at": "2026-10-26T08:26:27.733005+00:00",
+  "observed_at": "2026-10-26T08:26:27.736171+00:00"
+}

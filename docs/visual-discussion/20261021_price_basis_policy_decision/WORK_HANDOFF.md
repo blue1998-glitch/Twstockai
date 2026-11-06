@@ -1,0 +1,15 @@
+# Work交接：價格口徑原則已答，切換細則未定
+
+儲存庫blue1998-glitch/Twstockai；dev/m1-v018-chart-annotations；起點7ffb2dcacf88461ffeac87158e28c5f71aba8528；最新提交依GITHUB_READBACK_RECEIPT及實際HEAD核，不預填。main基線9c5b168c09ba80010c74f03b9c537e8b7474256a不改。仍Work，最高資金閉環／飛輪目標保持。
+
+先讀AGENTS、CONTINUE、M1_V019_GRAPH_CORE_RESUME_HANDOFF最新節及PROJECT_VISION最高目標後的新口徑節，再讀docs/visual-discussion/20261021_price_basis_policy_decision/decision.json完整原話、README、source-check、verification及本檔。使用者已答一般除權息後以還原權息分析約2～3個月，大盤空頭時一切用原日K；這是定性策略口徑，非自動切換完成、非通用市場定律或績效證明。
+
+空頭Raw例外優先；約2～3個月不是固定60／90天，也未核滿月自動切回／重複事件重起算法。大盤指標、空頭定義與生效、期滿切換、選用調整方法／因子版本仍未定。未知市場狀態不能當已證非空頭，也不能因只有Raw而擅用Raw替代政策要求的還原。這輪不逐項問工程條件，不自定均線／20％等空頭門檻。
+
+保留Raw與Adjusted兩資料，不覆原K；同次圖形的K、左側整帶及高低參照必須同基準／版本。切換保存新分析版本，不改舊判讀或搬新因子／未來市場分類回歷史；成交量口徑另存，不自行還原量。空頭原日K不會消除除權息機械落差：仍標事件、分原因，不單憑落差證賣壓或結構破壞，也不反過來把空頭改為強制Adjusted。
+
+重要續接更正：前輪B七月Raw圖／事實保持，但大盤狀態NOT_ESTABLISHED、還原未核，不能當已符合這次新政策。七月自身新高點的有限Raw研究不替代政策要求的還原；preferred_basis_under_new_policy=null，new_policy_validation_status=NOT_COMPLETED_RAW_RESEARCH_ONLY。公司官網股利1.4與基準7/7／發放7/27、二手報導7/1、TWSE事件明細未讀通與原actions未知仍按前輪source-check，不由本輪方法答覆升資料認證。10/27急變仍未知。
+
+本輪只文件保存與一致性核對，四根入口除新增節外原文完整保持；PROJECT_VISION最高目的不改。網路補核TWSE除權息公式常識，非新個股行情或完整事件資料。新圖／因子／行情／core／MACD／舊driver／分類器產品測試／瀏覽器Android皆0，不冒舊結果為新跑。尚無自動切換或新還原圖。
+
+下一步仍Work先補B歷史市場狀態、公司行動與可核還原口徑，再依選定口徑由右往左完整帶重讀，不重問已答口徑方向。圖至少六個月且足以看清大小範圍、同附圖片及可放大版，2～3個月不是圖窗。A ABC G2／B大小帶與微小段及甲乙答案保持；量非硬門檻、後續守價另觀察、跨原參照即更新非大結構成立、重用形成點不多票保持。正式分帶合併父子／界成員／量線／站穩與市場自動判定仍未定，historical_signal_eligible=false，分類NOT_VALIDATED、用途NOT_ESTABLISHED、新Android NOT_TESTED_NEW_BUILD、行動與飛輪NOT_EVALUATED。原Raw／完整日曆／歷史公開可得與缺日全保留。不改main原引擎策略資料舊圖全後續、不部署付費交易訊息子代理，例行可逆多步與原分支交付已授權。

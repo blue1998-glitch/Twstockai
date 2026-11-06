@@ -1,0 +1,25 @@
+test_01_frozen_inputs_sources_and_all_saved_statuses (capital_research.action_metrics_20261029.test_metrics.SavedActionMetricsTests.test_01_frozen_inputs_sources_and_all_saved_statuses) ... ok
+test_02_independent_fraction_growth_drawdown_and_recovery_handcheck (capital_research.action_metrics_20261029.test_metrics.SavedActionMetricsTests.test_02_independent_fraction_growth_drawdown_and_recovery_handcheck) ... ok
+test_03_original_capital_full_rights_latest_tokens_and_curve_used_once (capital_research.action_metrics_20261029.test_metrics.SavedActionMetricsTests.test_03_original_capital_full_rights_latest_tokens_and_curve_used_once) ... ok
+test_04_refusal_boundaries_are_saved_and_no_partial_metrics (capital_research.action_metrics_20261029.test_metrics.SavedActionMetricsTests.test_04_refusal_boundaries_are_saved_and_no_partial_metrics) ... ok
+test_05_self_review_resume_cannot_replace_original_close_proof (capital_research.action_metrics_20261029.test_metrics.SavedActionMetricsTests.test_05_self_review_resume_cannot_replace_original_close_proof) ... FAIL
+test_06_hostile_contexts_caller_default_input_and_no_io (capital_research.action_metrics_20261029.test_metrics.SavedActionMetricsTests.test_06_hostile_contexts_caller_default_input_and_no_io) ... ok
+test_07_old_quantity_evaluation_exact_and_default_cli_routing (capital_research.action_metrics_20261029.test_metrics.SavedActionMetricsTests.test_07_old_quantity_evaluation_exact_and_default_cli_routing) ... ok
+test_08_fresh_process_forbids_producers_and_explicit_cli_source (capital_research.action_metrics_20261029.test_metrics.SavedActionMetricsTests.test_08_fresh_process_forbids_producers_and_explicit_cli_source) ... ok
+
+======================================================================
+FAIL: test_05_self_review_resume_cannot_replace_original_close_proof (capital_research.action_metrics_20261029.test_metrics.SavedActionMetricsTests.test_05_self_review_resume_cannot_replace_original_close_proof)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/workspace/Twstockai/股票系統M1_v0_18/capital_research/action_metrics_20261029/test_metrics.py", line 89, in test_05_self_review_resume_cannot_replace_original_close_proof
+    self.assertEqual(a['status'],e['status']);self.assertEqual(a['reasons'][0]['reason'],e['reason'])
+                                              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+AssertionError: 'Fact history source/basis/adjustment mismatch' != 'SAVED_DECLARED_SOURCE_CONFLICT'
+- Fact history source/basis/adjustment mismatch
++ SAVED_DECLARED_SOURCE_CONFLICT
+
+
+----------------------------------------------------------------------
+Ran 8 tests in 0.774s
+
+FAILED (failures=1)

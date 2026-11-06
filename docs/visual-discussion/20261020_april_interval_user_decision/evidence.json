@@ -1,0 +1,68 @@
+{
+  "schema": "m1-confirmed-case-gap-evidence/1",
+  "source_comparison_sha256": "184bdef0b687ec0ab7bfcaaac2157ff7916fbc1000ef312d81b5efc0c2e73e15",
+  "source_query_sha256": "4a43a8c0f03bbffacb86306f064b7c807a7a83bdaf7e737bc76cd654a2c1dbb0",
+  "core_result_id": "sha256:ec7bca9ed6aa176c328fd8c4e94a31ea66967832e7089ac20a44090461f49da4",
+  "previous_saved_bar": {
+    "close": "32.40",
+    "date": "2025-04-02",
+    "high": "32.65",
+    "low": "32.25",
+    "open": "32.40",
+    "volume_shares_scaled": "7749227"
+  },
+  "A": {
+    "close": "29.80",
+    "date": "2025-04-07",
+    "high": "30.80",
+    "low": "29.20",
+    "open": "29.20",
+    "volume_shares_scaled": "118749437"
+  },
+  "B": {
+    "close": "30.75",
+    "date": "2025-04-10",
+    "high": "31.20",
+    "low": "30.00",
+    "open": "30.95",
+    "volume_shares_scaled": "48104987"
+  },
+  "previous_saved_B": {
+    "close": "28.50",
+    "date": "2025-04-09",
+    "high": "29.60",
+    "low": "28.50",
+    "open": "29.00",
+    "volume_shares_scaled": "45183260"
+  },
+  "C": {
+    "close": "28.60",
+    "date": "2025-04-22",
+    "high": "28.90",
+    "low": "28.50",
+    "open": "28.55",
+    "volume_shares_scaled": "14504369"
+  },
+  "exact_gap_evidence": {
+    "A_high_below_previous_saved_low": true,
+    "previous_low_minus_A_high": "1.45",
+    "A_open_minus_previous_close": "-3.20",
+    "A_close_minus_previous_close": "-2.60",
+    "qualification": "RAW_SAVED_ADJACENT_RECORDS_ONLY_NOT_FULL_CALENDAR_OR_CORPORATE_ACTION_CERTIFICATION"
+  },
+  "colour_counterexamples": {
+    "A": "RED_BODY_BUT_BELOW_PREVIOUS_SAVED_CLOSE",
+    "B": "GREEN_BODY_BUT_ABOVE_PREVIOUS_SAVED_CLOSE"
+  },
+  "existing_39_record_case": {
+    "start": "2025-04-07",
+    "end": "2025-06-02",
+    "records": 39,
+    "all_ABC_markers_inside": true,
+    "scope": "Existing already-confirmed interval remains unchanged; this reply does not newly redefine its endpoints or equate original B44/B80 with it."
+  },
+  "original_core_and_query_unchanged": true,
+  "primary_pressure_id": null,
+  "historical_selection_time": null,
+  "historical_signal_eligible": false
+}

@@ -1,0 +1,1406 @@
+{
+  "review_type": "SAVED_FACT_EXTRACTION_NOT_CLASSIFICATION_ACCEPTANCE",
+  "source_commit": "54a3ea31aae6c009937c64be7a296212b5bbd7cf",
+  "source_path": "deliveries/m1-v019-context-20261017/candidate.json",
+  "file_sha256": "26bf8764d6ad21df5a0fb6d2b56c4c400415c53c4fe5835fa41185654ab98313",
+  "bundle_id": "sha256:fbc7d238092f74938a80b344cc1c2ba1740c501590cac56b5da256b60884dc41",
+  "case_studies": [
+    {
+      "code": "1101",
+      "price_mode": "RAW_CANDIDATE",
+      "original_record_id": "sha256:5fe1faee3b027b88e394aa77ecb16c653b6bd3e519c53e985031ee645c3ed82c",
+      "observations": [
+        {
+          "as_of": "2026-09-22",
+          "frame_id": "sha256:9d902855605dbfd83242cd87234e5ee36cbac56549790efd39fbe199c31a6e38",
+          "structure_snapshot_id": "sha256:f80faaa73ac1504ea0d94e9e57e27e4332b2254dc4ecd2da6deefe05481110fa",
+          "close": "24.55",
+          "daily_records": 175,
+          "structure": {
+            "candidate_state": "MIXED_SWING_EVIDENCE",
+            "high_relation": "LOWER",
+            "low_relation": "EQUAL",
+            "primary_low_condition": "NOT_BREACHED",
+            "primary_low_zone_id": "zone:major:LOW:2026-07-14:2026-07-14:84",
+            "scope": "LATEST_CONFIRMED_LOW_IS_A_REFERENCE_NOT_A_VALIDATED_IMPORTANCE_RANKING"
+          },
+          "momentum": {
+            "comparison_basis": "SELECTED_AS_OF_PRICE_ANCHOR_NOT_PREVIOUS_FRAME_ANCHOR",
+            "dea": "0.012486183942080986909874955182731395626601597115341",
+            "dif": "-0.008380905372094486247583796623796017285647489269",
+            "histogram": "-0.041734178628350946314917503613054825824498172768682",
+            "histogram_change": "HIGHER",
+            "interpretation": "OBJECTIVE_INDICATOR_CHANGE_NOT_STRUCTURE_OR_TRADE_APPROVAL",
+            "previous_histogram_same_anchor": "-0.095980395287193188229021445132359400763455771276852",
+            "reason": "AVAILABLE"
+          },
+          "moving_averages": [
+            {
+              "close_relation": "HIGHER",
+              "direction": "HIGHER",
+              "period": 130,
+              "value": "24.20846153846153846153846154"
+            },
+            {
+              "close_relation": "HIGHER",
+              "direction": "LOWER",
+              "period": 20,
+              "value": "24.4075"
+            },
+            {
+              "close_relation": "UNKNOWN",
+              "direction": "UNKNOWN",
+              "period": 260,
+              "value": null
+            },
+            {
+              "close_relation": "HIGHER",
+              "direction": "HIGHER",
+              "period": 5,
+              "value": "24.31"
+            },
+            {
+              "close_relation": "HIGHER",
+              "direction": "HIGHER",
+              "period": 60,
+              "value": "24.1025"
+            }
+          ],
+          "supporting": [
+            {
+              "code": "PRIMARY_LOW_REFERENCE_NOT_BREACHED",
+              "reason": "2 consecutive closes beyond the outer boundary",
+              "references": [
+                "zone:major:LOW:2026-07-14:2026-07-14:84"
+              ]
+            }
+          ],
+          "opposing": [
+            {
+              "code": "FALLING_DAILY_MA",
+              "reason": "Moving-average risk is not cancelled by positive structure evidence",
+              "references": [
+                "daily_ma:20"
+              ]
+            }
+          ],
+          "pending": [
+            {
+              "basis_observed_at": "2026-09-16",
+              "first_observed_at": "2026-09-16",
+              "id": "minor:LOW:2026-09-16:2026-09-16:118",
+              "invalidation": "More extreme price before rule confirmation replaces this candidate",
+              "kind": "LOW",
+              "occurred_at": "2026-09-16",
+              "occurred_index": 170,
+              "price": "23.75",
+              "profile": "minor",
+              "status": "PENDING",
+              "volatility_basis": "0.5425"
+            },
+            {
+              "basis_observed_at": "2026-09-16",
+              "first_observed_at": "2026-09-16",
+              "id": "major:LOW:2026-09-16:2026-09-16:119",
+              "invalidation": "More extreme price before rule confirmation replaces this candidate",
+              "kind": "LOW",
+              "occurred_at": "2026-09-16",
+              "occurred_index": 170,
+              "price": "23.75",
+              "profile": "major",
+              "status": "PENDING",
+              "volatility_basis": "0.5425"
+            }
+          ]
+        },
+        {
+          "as_of": "2026-09-23",
+          "frame_id": "sha256:211e073409314259788c08f176fed7859f57c93a69c0bcc7614fedb3df6cbf56",
+          "structure_snapshot_id": "sha256:a5e0a8f55ba7da7e11f3da09e0d6a21a86be5817fd2060f9deb40df0462f5200",
+          "close": "25.65",
+          "daily_records": 176,
+          "structure": {
+            "candidate_state": "MIXED_SWING_EVIDENCE",
+            "high_relation": "LOWER",
+            "low_relation": "HIGHER",
+            "primary_low_condition": "NOT_BREACHED",
+            "primary_low_zone_id": "zone:major:LOW:2026-09-16:2026-09-16:119",
+            "scope": "LATEST_CONFIRMED_LOW_IS_A_REFERENCE_NOT_A_VALIDATED_IMPORTANCE_RANKING"
+          },
+          "momentum": {
+            "comparison_basis": "SELECTED_AS_OF_PRICE_ANCHOR_NOT_PREVIOUS_FRAME_ANCHOR",
+            "dea": "0.029314342160003511895821574028662838107133053378673",
+            "dif": "0.096626975031693611839608049412388608029258878432",
+            "histogram": "0.13462526574338019988757295076745153984425165010665",
+            "histogram_change": "HIGHER",
+            "interpretation": "OBJECTIVE_INDICATOR_CHANGE_NOT_STRUCTURE_OR_TRADE_APPROVAL",
+            "previous_histogram_same_anchor": "-0.041734178628350946314917503613054825824498172768682",
+            "reason": "AVAILABLE"
+          },
+          "moving_averages": [
+            {
+              "close_relation": "HIGHER",
+              "direction": "HIGHER",
+              "period": 130,
+              "value": "24.21692307692307692307692308"
+            },
+            {
+              "close_relation": "HIGHER",
+              "direction": "HIGHER",
+              "period": 20,
+              "value": "24.475"
+            },
+            {
+              "close_relation": "UNKNOWN",
+              "direction": "UNKNOWN",
+              "period": 260,
+              "value": null
+            },
+            {
+              "close_relation": "HIGHER",
+              "direction": "HIGHER",
+              "period": 5,
+              "value": "24.63"
+            },
+            {
+              "close_relation": "HIGHER",
+              "direction": "HIGHER",
+              "period": 60,
+              "value": "24.12916666666666666666666667"
+            }
+          ],
+          "supporting": [
+            {
+              "code": "PRIMARY_LOW_REFERENCE_NOT_BREACHED",
+              "reason": "2 consecutive closes beyond the outer boundary",
+              "references": [
+                "zone:major:LOW:2026-09-16:2026-09-16:119"
+              ]
+            }
+          ],
+          "opposing": [],
+          "pending": [
+            {
+              "basis_observed_at": "2026-09-23",
+              "first_observed_at": "2026-09-23",
+              "id": "minor:HIGH:2026-09-23:2026-09-23:120",
+              "invalidation": "More extreme price before rule confirmation replaces this candidate",
+              "kind": "HIGH",
+              "occurred_at": "2026-09-23",
+              "occurred_index": 175,
+              "price": "26.10",
+              "profile": "minor",
+              "status": "PENDING",
+              "volatility_basis": "0.55"
+            },
+            {
+              "basis_observed_at": "2026-09-23",
+              "first_observed_at": "2026-09-23",
+              "id": "major:HIGH:2026-09-23:2026-09-23:121",
+              "invalidation": "More extreme price before rule confirmation replaces this candidate",
+              "kind": "HIGH",
+              "occurred_at": "2026-09-23",
+              "occurred_index": 175,
+              "price": "26.10",
+              "profile": "major",
+              "status": "PENDING",
+              "volatility_basis": "0.55"
+            }
+          ]
+        },
+        {
+          "as_of": "2026-09-29",
+          "frame_id": "sha256:2ae8b3d12e947056c1082cd502985935af84cee03e4366b2b95a1c8eb3b99419",
+          "structure_snapshot_id": "sha256:b06591587613dafddda5646317954aa68e6d55f64582584833cdeef50f788b44",
+          "close": "25.30",
+          "daily_records": 178,
+          "structure": {
+            "candidate_state": "MIXED_SWING_EVIDENCE",
+            "high_relation": "LOWER",
+            "low_relation": "HIGHER",
+            "primary_low_condition": "NOT_BREACHED",
+            "primary_low_zone_id": "zone:major:LOW:2026-09-16:2026-09-16:119",
+            "scope": "LATEST_CONFIRMED_LOW_IS_A_REFERENCE_NOT_A_VALIDATED_IMPORTANCE_RANKING"
+          },
+          "momentum": {
+            "comparison_basis": "SELECTED_AS_OF_PRICE_ANCHOR_NOT_PREVIOUS_FRAME_ANCHOR",
+            "dea": "0.079465093356884522465091474309896371965234769391351",
+            "dif": "0.186809081964629242561228902621180449797303444957",
+            "histogram": "0.21468797721548944019227485662256815566413735113130",
+            "histogram_change": "HIGHER",
+            "interpretation": "OBJECTIVE_INDICATOR_CHANGE_NOT_STRUCTURE_OR_TRADE_APPROVAL",
+            "previous_histogram_same_anchor": "0.18651803235955864436188434562730011520067637697012",
+            "reason": "AVAILABLE"
+          },
+          "moving_averages": [
+            {
+              "close_relation": "HIGHER",
+              "direction": "HIGHER",
+              "period": 130,
+              "value": "24.24076923076923076923076923"
+            },
+            {
+              "close_relation": "HIGHER",
+              "direction": "HIGHER",
+              "period": 20,
+              "value": "24.5825"
+            },
+            {
+              "close_relation": "UNKNOWN",
+              "direction": "UNKNOWN",
+              "period": 260,
+              "value": null
+            },
+            {
+              "close_relation": "HIGHER",
+              "direction": "HIGHER",
+              "period": 5,
+              "value": "24.98"
+            },
+            {
+              "close_relation": "HIGHER",
+              "direction": "HIGHER",
+              "period": 60,
+              "value": "24.20333333333333333333333333"
+            }
+          ],
+          "supporting": [
+            {
+              "code": "PRIMARY_LOW_REFERENCE_NOT_BREACHED",
+              "reason": "2 consecutive closes beyond the outer boundary",
+              "references": [
+                "zone:major:LOW:2026-09-16:2026-09-16:119"
+              ]
+            }
+          ],
+          "opposing": [],
+          "pending": [
+            {
+              "basis_observed_at": "2026-09-23",
+              "first_observed_at": "2026-09-23",
+              "id": "minor:HIGH:2026-09-23:2026-09-23:120",
+              "invalidation": "More extreme price before rule confirmation replaces this candidate",
+              "kind": "HIGH",
+              "occurred_at": "2026-09-23",
+              "occurred_index": 175,
+              "price": "26.10",
+              "profile": "minor",
+              "status": "PENDING",
+              "volatility_basis": "0.55"
+            },
+            {
+              "basis_observed_at": "2026-09-23",
+              "first_observed_at": "2026-09-23",
+              "id": "major:HIGH:2026-09-23:2026-09-23:121",
+              "invalidation": "More extreme price before rule confirmation replaces this candidate",
+              "kind": "HIGH",
+              "occurred_at": "2026-09-23",
+              "occurred_index": 175,
+              "price": "26.10",
+              "profile": "major",
+              "status": "PENDING",
+              "volatility_basis": "0.55"
+            }
+          ]
+        },
+        {
+          "as_of": "2026-09-30",
+          "frame_id": "sha256:dbf310e97a64edb11cc7c3b43cc40413e0d5103312eeda54c092b7fb6cb45551",
+          "structure_snapshot_id": "sha256:a53eeb01f0cf88df16e9bf8008b7f53557c63c632e92d52f78c90c1468e3f5c2",
+          "close": "26.30",
+          "daily_records": 179,
+          "structure": {
+            "candidate_state": "MIXED_SWING_EVIDENCE",
+            "high_relation": "LOWER",
+            "low_relation": "HIGHER",
+            "primary_low_condition": "NOT_BREACHED",
+            "primary_low_zone_id": "zone:major:LOW:2026-09-16:2026-09-16:119",
+            "scope": "LATEST_CONFIRMED_LOW_IS_A_REFERENCE_NOT_A_VALIDATED_IMPORTANCE_RANKING"
+          },
+          "momentum": {
+            "comparison_basis": "SELECTED_AS_OF_PRICE_ANCHOR_NOT_PREVIOUS_FRAME_ANCHOR",
+            "dea": "0.12287464908790037073676524364609359443506240285908",
+            "dif": "0.296512872011963763823460320990882484314372936730",
+            "histogram": "0.34727644584812678617339015468957777975862106774184",
+            "histogram_change": "HIGHER",
+            "interpretation": "OBJECTIVE_INDICATOR_CHANGE_NOT_STRUCTURE_OR_TRADE_APPROVAL",
+            "previous_histogram_same_anchor": "0.21468797721548944019227485662256815566413735113130",
+            "reason": "AVAILABLE"
+          },
+          "moving_averages": [
+            {
+              "close_relation": "HIGHER",
+              "direction": "HIGHER",
+              "period": 130,
+              "value": "24.26769230769230769230769231"
+            },
+            {
+              "close_relation": "HIGHER",
+              "direction": "HIGHER",
+              "period": 20,
+              "value": "24.6775"
+            },
+            {
+              "close_relation": "UNKNOWN",
+              "direction": "UNKNOWN",
+              "period": 260,
+              "value": null
+            },
+            {
+              "close_relation": "HIGHER",
+              "direction": "HIGHER",
+              "period": 5,
+              "value": "25.41"
+            },
+            {
+              "close_relation": "HIGHER",
+              "direction": "HIGHER",
+              "period": 60,
+              "value": "24.2475"
+            }
+          ],
+          "supporting": [
+            {
+              "code": "PRIMARY_LOW_REFERENCE_NOT_BREACHED",
+              "reason": "2 consecutive closes beyond the outer boundary",
+              "references": [
+                "zone:major:LOW:2026-09-16:2026-09-16:119"
+              ]
+            }
+          ],
+          "opposing": [],
+          "pending": [
+            {
+              "basis_observed_at": "2026-09-30",
+              "first_observed_at": "2026-09-30",
+              "id": "minor:HIGH:2026-09-30:2026-09-30:122",
+              "invalidation": "More extreme price before rule confirmation replaces this candidate",
+              "kind": "HIGH",
+              "occurred_at": "2026-09-30",
+              "occurred_index": 178,
+              "price": "26.70",
+              "profile": "minor",
+              "status": "PENDING",
+              "volatility_basis": "0.6325"
+            },
+            {
+              "basis_observed_at": "2026-09-30",
+              "first_observed_at": "2026-09-30",
+              "id": "major:HIGH:2026-09-30:2026-09-30:123",
+              "invalidation": "More extreme price before rule confirmation replaces this candidate",
+              "kind": "HIGH",
+              "occurred_at": "2026-09-30",
+              "occurred_index": 178,
+              "price": "26.70",
+              "profile": "major",
+              "status": "PENDING",
+              "volatility_basis": "0.6325"
+            }
+          ]
+        }
+      ],
+      "major_legs": [
+        {
+          "confirmed_at": "2026-04-08",
+          "end_date": "2026-03-30",
+          "end_id": "major:LOW:2026-03-30:2026-03-30:39",
+          "end_price": "22.40",
+          "first_observed_at": "2026-03-30",
+          "price_change": "-4.45",
+          "profile": "major",
+          "relation": "LOWER",
+          "start_date": "2026-01-29",
+          "start_id": "major:HIGH:2026-01-29:2026-01-29:3",
+          "start_price": "26.85",
+          "swing_id": "sha256:3e56166468ea832e260abe62827d02c66f68e57e929b8622d07ec2c6518b108a"
+        },
+        {
+          "confirmed_at": "2026-05-05",
+          "end_date": "2026-04-10",
+          "end_id": "major:HIGH:2026-04-10:2026-04-10:48",
+          "end_price": "26.40",
+          "first_observed_at": "2026-04-10",
+          "price_change": "4.00",
+          "profile": "major",
+          "relation": "HIGHER",
+          "start_date": "2026-03-30",
+          "start_id": "major:LOW:2026-03-30:2026-03-30:39",
+          "start_price": "22.40",
+          "swing_id": "sha256:8390a893358a84e74377176a86005abb855ef178a5b5ff05fc0faf4522ada5a5"
+        },
+        {
+          "confirmed_at": "2026-07-21",
+          "end_date": "2026-07-14",
+          "end_id": "major:LOW:2026-07-14:2026-07-14:84",
+          "end_price": "22.40",
+          "first_observed_at": "2026-07-14",
+          "price_change": "-4.00",
+          "profile": "major",
+          "relation": "LOWER",
+          "start_date": "2026-04-10",
+          "start_id": "major:HIGH:2026-04-10:2026-04-10:48",
+          "start_price": "26.40",
+          "swing_id": "sha256:d9613d178124ddbd397866ae891653be7a91cf6a4f36bee144508581b5ad661b"
+        },
+        {
+          "confirmed_at": "2026-09-07",
+          "end_date": "2026-09-01",
+          "end_id": "major:HIGH:2026-09-01:2026-09-01:106",
+          "end_price": "26.10",
+          "first_observed_at": "2026-09-01",
+          "price_change": "3.70",
+          "profile": "major",
+          "relation": "HIGHER",
+          "start_date": "2026-07-14",
+          "start_id": "major:LOW:2026-07-14:2026-07-14:84",
+          "start_price": "22.40",
+          "swing_id": "sha256:f11b0b3454207d5c847f3f30f62ae41bdb8cc66b9646a8a96962d449ffd1f5ae"
+        },
+        {
+          "confirmed_at": "2026-09-23",
+          "end_date": "2026-09-16",
+          "end_id": "major:LOW:2026-09-16:2026-09-16:119",
+          "end_price": "23.75",
+          "first_observed_at": "2026-09-16",
+          "price_change": "-2.35",
+          "profile": "major",
+          "relation": "LOWER",
+          "start_date": "2026-09-01",
+          "start_id": "major:HIGH:2026-09-01:2026-09-01:106",
+          "start_price": "26.10",
+          "swing_id": "sha256:b94ae7bfb9602cabbb1a56e27555adf507b8f96f44399703edd270b7d91e17aa"
+        }
+      ],
+      "major_zones": [
+        {
+          "id": "zone:major:HIGH:2026-01-29:2026-01-29:3",
+          "pivot_id": "major:HIGH:2026-01-29:2026-01-29:3",
+          "role": "RESISTANCE_CANDIDATE",
+          "occurred_at": "2026-01-29",
+          "confirmed_at": "2026-03-09",
+          "low": "26.58575",
+          "high": "27.11425",
+          "state": "ACTIVE_CANDIDATE",
+          "condition": "NOT_BREACHED",
+          "current_location": "BELOW",
+          "invalidation_rule": "2 consecutive closes beyond the outer boundary"
+        },
+        {
+          "id": "zone:major:LOW:2026-03-30:2026-03-30:39",
+          "pivot_id": "major:LOW:2026-03-30:2026-03-30:39",
+          "role": "SUPPORT_CANDIDATE",
+          "occurred_at": "2026-03-30",
+          "confirmed_at": "2026-04-08",
+          "low": "22.157625",
+          "high": "22.642375",
+          "state": "ACTIVE_CANDIDATE",
+          "condition": "NOT_BREACHED",
+          "current_location": "ABOVE",
+          "invalidation_rule": "2 consecutive closes beyond the outer boundary"
+        },
+        {
+          "id": "zone:major:HIGH:2026-04-10:2026-04-10:48",
+          "pivot_id": "major:HIGH:2026-04-10:2026-04-10:48",
+          "role": "RESISTANCE_CANDIDATE",
+          "occurred_at": "2026-04-10",
+          "confirmed_at": "2026-05-05",
+          "low": "26.155875",
+          "high": "26.644125",
+          "state": "ACTIVE_CANDIDATE",
+          "condition": "NOT_BREACHED",
+          "current_location": "INSIDE",
+          "invalidation_rule": "2 consecutive closes beyond the outer boundary"
+        },
+        {
+          "id": "zone:major:LOW:2026-07-14:2026-07-14:84",
+          "pivot_id": "major:LOW:2026-07-14:2026-07-14:84",
+          "role": "SUPPORT_CANDIDATE",
+          "occurred_at": "2026-07-14",
+          "confirmed_at": "2026-07-21",
+          "low": "22.215375",
+          "high": "22.584625",
+          "state": "ACTIVE_CANDIDATE",
+          "condition": "NOT_BREACHED",
+          "current_location": "ABOVE",
+          "invalidation_rule": "2 consecutive closes beyond the outer boundary"
+        },
+        {
+          "id": "zone:major:HIGH:2026-09-01:2026-09-01:106",
+          "pivot_id": "major:HIGH:2026-09-01:2026-09-01:106",
+          "role": "RESISTANCE_CANDIDATE",
+          "occurred_at": "2026-09-01",
+          "confirmed_at": "2026-09-07",
+          "low": "25.9040",
+          "high": "26.2960",
+          "state": "ACTIVE_CANDIDATE",
+          "condition": "CHALLENGED",
+          "current_location": "ABOVE",
+          "invalidation_rule": "2 consecutive closes beyond the outer boundary"
+        },
+        {
+          "id": "zone:major:LOW:2026-09-16:2026-09-16:119",
+          "pivot_id": "major:LOW:2026-09-16:2026-09-16:119",
+          "role": "SUPPORT_CANDIDATE",
+          "occurred_at": "2026-09-16",
+          "confirmed_at": "2026-09-23",
+          "low": "23.560125",
+          "high": "23.939875",
+          "state": "ACTIVE_CANDIDATE",
+          "condition": "NOT_BREACHED",
+          "current_location": "ABOVE",
+          "invalidation_rule": "2 consecutive closes beyond the outer boundary"
+        }
+      ]
+    },
+    {
+      "code": "2884",
+      "price_mode": "RAW_CANDIDATE",
+      "original_record_id": "sha256:e6aaf2c31fd1b03a5a48d152f2c7f06df20a60a919c2f1f496eaa4dffecdc38c",
+      "observations": [
+        {
+          "as_of": "2026-07-17",
+          "frame_id": "sha256:d34162df46a02bf48af275c002e3a7a1103e6848c05ca7c10f3a752b6f169965",
+          "structure_snapshot_id": "sha256:b3c89440767060f9806f18b12cda82abce5bbcd46929c08a4485b539d4044997",
+          "close": "35.10",
+          "daily_records": 128,
+          "structure": {
+            "candidate_state": "MIXED_SWING_EVIDENCE",
+            "high_relation": "HIGHER",
+            "low_relation": "LOWER",
+            "primary_low_condition": "NOT_BREACHED",
+            "primary_low_zone_id": "zone:major:LOW:2026-05-28:2026-05-28:58",
+            "scope": "LATEST_CONFIRMED_LOW_IS_A_REFERENCE_NOT_A_VALIDATED_IMPORTANCE_RANKING"
+          },
+          "momentum": {
+            "comparison_basis": "SELECTED_AS_OF_PRICE_ANCHOR_NOT_PREVIOUS_FRAME_ANCHOR",
+            "dea": "0.34209159507257126137288702271749282929572910287505",
+            "dif": "0.317521037646179874617441746618594302331436463919",
+            "histogram": "-0.04914111485278277351089055219779705392858527791210",
+            "histogram_change": "HIGHER",
+            "interpretation": "OBJECTIVE_INDICATOR_CHANGE_NOT_STRUCTURE_OR_TRADE_APPROVAL",
+            "previous_histogram_same_anchor": "-0.11035223827947894554581847904058400273279509841212",
+            "reason": "AVAILABLE"
+          },
+          "moving_averages": [
+            {
+              "close_relation": "UNKNOWN",
+              "direction": "UNKNOWN",
+              "period": 130,
+              "value": null
+            },
+            {
+              "close_relation": "HIGHER",
+              "direction": "LOWER",
+              "period": 20,
+              "value": "34.6625"
+            },
+            {
+              "close_relation": "UNKNOWN",
+              "direction": "UNKNOWN",
+              "period": 260,
+              "value": null
+            },
+            {
+              "close_relation": "HIGHER",
+              "direction": "HIGHER",
+              "period": 5,
+              "value": "34.71"
+            },
+            {
+              "close_relation": "HIGHER",
+              "direction": "HIGHER",
+              "period": 60,
+              "value": "33.175"
+            }
+          ],
+          "supporting": [
+            {
+              "code": "PRIMARY_LOW_REFERENCE_NOT_BREACHED",
+              "reason": "2 consecutive closes beyond the outer boundary",
+              "references": [
+                "zone:major:LOW:2026-05-28:2026-05-28:58"
+              ]
+            }
+          ],
+          "opposing": [
+            {
+              "code": "FALLING_DAILY_MA",
+              "reason": "Moving-average risk is not cancelled by positive structure evidence",
+              "references": [
+                "daily_ma:20"
+              ]
+            },
+            {
+              "code": "RETURNED_INTO_OR_BELOW_PREVIOUSLY_BREACHED_RESISTANCE",
+              "reason": "Observable re-entry; formal false-breakout classification remains undefined; no automatic role swap",
+              "references": [
+                "zone:major:HIGH:2026-02-26:2026-02-26:22"
+              ]
+            }
+          ],
+          "pending": [
+            {
+              "basis_observed_at": "2026-07-17",
+              "first_observed_at": "2026-07-17",
+              "id": "minor:HIGH:2026-07-17:2026-07-17:91",
+              "invalidation": "More extreme price before rule confirmation replaces this candidate",
+              "kind": "HIGH",
+              "occurred_at": "2026-07-17",
+              "occurred_index": 127,
+              "price": "35.50",
+              "profile": "minor",
+              "status": "PENDING",
+              "volatility_basis": "0.8475"
+            },
+            {
+              "basis_observed_at": "2026-07-01",
+              "first_observed_at": "2026-07-01",
+              "id": "major:LOW:2026-07-01:2026-07-01:86",
+              "invalidation": "More extreme price before rule confirmation replaces this candidate",
+              "kind": "LOW",
+              "occurred_at": "2026-07-01",
+              "occurred_index": 116,
+              "price": "32.80",
+              "profile": "major",
+              "status": "PENDING",
+              "volatility_basis": "0.94"
+            }
+          ]
+        },
+        {
+          "as_of": "2026-07-20",
+          "frame_id": "sha256:4b2783d12243421f12e4b83d96644d74a4192debf812fa2e50a52312464fde4e",
+          "structure_snapshot_id": "sha256:540c4ef147f760b14ad9c73b2ca189524bfb42f2cf29110c0c57007fba7da4a0",
+          "close": "35.85",
+          "daily_records": 129,
+          "structure": {
+            "candidate_state": "RISING_SWINGS_REFERENCE_INTACT",
+            "high_relation": "HIGHER",
+            "low_relation": "HIGHER",
+            "primary_low_condition": "NOT_BREACHED",
+            "primary_low_zone_id": "zone:major:LOW:2026-07-01:2026-07-01:86",
+            "scope": "LATEST_CONFIRMED_LOW_IS_A_REFERENCE_NOT_A_VALIDATED_IMPORTANCE_RANKING"
+          },
+          "momentum": {
+            "comparison_basis": "SELECTED_AS_OF_PRICE_ANCHOR_NOT_PREVIOUS_FRAME_ANCHOR",
+            "dea": "0.35225282233231953462971589355048210083874407111504",
+            "dif": "0.392897731371312627657031376882439187010803944075",
+            "histogram": "0.08128981807798618605463096666391417234411974591992",
+            "histogram_change": "HIGHER",
+            "interpretation": "OBJECTIVE_INDICATOR_CHANGE_NOT_STRUCTURE_OR_TRADE_APPROVAL",
+            "previous_histogram_same_anchor": "-0.04914111485278277351089055219779705392858527791210",
+            "reason": "AVAILABLE"
+          },
+          "moving_averages": [
+            {
+              "close_relation": "UNKNOWN",
+              "direction": "UNKNOWN",
+              "period": 130,
+              "value": null
+            },
+            {
+              "close_relation": "HIGHER",
+              "direction": "HIGHER",
+              "period": 20,
+              "value": "34.685"
+            },
+            {
+              "close_relation": "UNKNOWN",
+              "direction": "UNKNOWN",
+              "period": 260,
+              "value": null
+            },
+            {
+              "close_relation": "HIGHER",
+              "direction": "HIGHER",
+              "period": 5,
+              "value": "34.96"
+            },
+            {
+              "close_relation": "HIGHER",
+              "direction": "HIGHER",
+              "period": 60,
+              "value": "33.22166666666666666666666667"
+            }
+          ],
+          "supporting": [
+            {
+              "code": "HIGHER_CONFIRMED_HIGHS_AND_LOWS",
+              "references": [
+                "major:HIGH:2026-04-16:2026-04-22:43",
+                "major:HIGH:2026-06-22:2026-06-22:79",
+                "major:LOW:2026-05-28:2026-05-28:58",
+                "major:LOW:2026-07-01:2026-07-01:86"
+              ]
+            },
+            {
+              "code": "PRIMARY_LOW_REFERENCE_NOT_BREACHED",
+              "reason": "2 consecutive closes beyond the outer boundary",
+              "references": [
+                "zone:major:LOW:2026-07-01:2026-07-01:86"
+              ]
+            }
+          ],
+          "opposing": [],
+          "pending": [
+            {
+              "basis_observed_at": "2026-07-20",
+              "first_observed_at": "2026-07-20",
+              "id": "minor:HIGH:2026-07-20:2026-07-20:92",
+              "invalidation": "More extreme price before rule confirmation replaces this candidate",
+              "kind": "HIGH",
+              "occurred_at": "2026-07-20",
+              "occurred_index": 128,
+              "price": "36.00",
+              "profile": "minor",
+              "status": "PENDING",
+              "volatility_basis": "0.85"
+            },
+            {
+              "basis_observed_at": "2026-07-20",
+              "first_observed_at": "2026-07-20",
+              "id": "major:HIGH:2026-07-20:2026-07-20:93",
+              "invalidation": "More extreme price before rule confirmation replaces this candidate",
+              "kind": "HIGH",
+              "occurred_at": "2026-07-20",
+              "occurred_index": 128,
+              "price": "36.00",
+              "profile": "major",
+              "status": "PENDING",
+              "volatility_basis": "0.85"
+            }
+          ]
+        },
+        {
+          "as_of": "2026-09-22",
+          "frame_id": "sha256:aeced51fb289d1e1500be8b14fd4c47af5b36155a43f33932f1c1e953cb8aece",
+          "structure_snapshot_id": "sha256:640980e97250576b009f43945173c04393ac8322db996c04e396d7491add00e9",
+          "close": "46.05",
+          "daily_records": 175,
+          "structure": {
+            "candidate_state": "RISING_SWINGS_REFERENCE_INTACT",
+            "high_relation": "HIGHER",
+            "low_relation": "HIGHER",
+            "primary_low_condition": "NOT_BREACHED",
+            "primary_low_zone_id": "zone:major:LOW:2026-07-01:2026-07-01:86",
+            "scope": "LATEST_CONFIRMED_LOW_IS_A_REFERENCE_NOT_A_VALIDATED_IMPORTANCE_RANKING"
+          },
+          "momentum": {
+            "comparison_basis": "SELECTED_AS_OF_PRICE_ANCHOR_NOT_PREVIOUS_FRAME_ANCHOR",
+            "dea": "2.1445327660336227383524859056951420958639946109712",
+            "dif": "2.181595224682218211861317490546739655250746647992",
+            "histogram": "0.0741249172971909470176631697031951187735040740416",
+            "histogram_change": "LOWER",
+            "interpretation": "OBJECTIVE_INDICATOR_CHANGE_NOT_STRUCTURE_OR_TRADE_APPROVAL",
+            "previous_histogram_same_anchor": "0.2868043717911165206667234358081675096338838556820",
+            "reason": "AVAILABLE"
+          },
+          "moving_averages": [
+            {
+              "close_relation": "HIGHER",
+              "direction": "HIGHER",
+              "period": 130,
+              "value": "35.49076923076923076923076923"
+            },
+            {
+              "close_relation": "HIGHER",
+              "direction": "HIGHER",
+              "period": 20,
+              "value": "43.595"
+            },
+            {
+              "close_relation": "UNKNOWN",
+              "direction": "UNKNOWN",
+              "period": 260,
+              "value": null
+            },
+            {
+              "close_relation": "LOWER",
+              "direction": "HIGHER",
+              "period": 5,
+              "value": "46.48"
+            },
+            {
+              "close_relation": "HIGHER",
+              "direction": "HIGHER",
+              "period": 60,
+              "value": "38.79666666666666666666666667"
+            }
+          ],
+          "supporting": [
+            {
+              "code": "HIGHER_CONFIRMED_HIGHS_AND_LOWS",
+              "references": [
+                "major:HIGH:2026-04-16:2026-04-22:43",
+                "major:HIGH:2026-06-22:2026-06-22:79",
+                "major:LOW:2026-05-28:2026-05-28:58",
+                "major:LOW:2026-07-01:2026-07-01:86"
+              ]
+            },
+            {
+              "code": "PRIMARY_LOW_REFERENCE_NOT_BREACHED",
+              "reason": "2 consecutive closes beyond the outer boundary",
+              "references": [
+                "zone:major:LOW:2026-07-01:2026-07-01:86"
+              ]
+            }
+          ],
+          "opposing": [
+            {
+              "code": "POSITIVE_MACD_HISTOGRAM_DECREASING",
+              "reason": "Momentum observation does not itself invalidate the primary support",
+              "references": [
+                "macd:2026-09-22"
+              ]
+            }
+          ],
+          "pending": [
+            {
+              "basis_observed_at": "2026-09-17",
+              "first_observed_at": "2026-09-17",
+              "id": "minor:HIGH:2026-09-17:2026-09-17:133",
+              "invalidation": "More extreme price before rule confirmation replaces this candidate",
+              "kind": "HIGH",
+              "occurred_at": "2026-09-17",
+              "occurred_index": 171,
+              "price": "47.35",
+              "profile": "minor",
+              "status": "PENDING",
+              "volatility_basis": "1.31"
+            },
+            {
+              "basis_observed_at": "2026-09-17",
+              "first_observed_at": "2026-09-17",
+              "id": "major:HIGH:2026-09-17:2026-09-17:134",
+              "invalidation": "More extreme price before rule confirmation replaces this candidate",
+              "kind": "HIGH",
+              "occurred_at": "2026-09-17",
+              "occurred_index": 171,
+              "price": "47.35",
+              "profile": "major",
+              "status": "PENDING",
+              "volatility_basis": "1.31"
+            }
+          ]
+        },
+        {
+          "as_of": "2026-09-23",
+          "frame_id": "sha256:b58894bce2fe7423ccf8ca8171fa409c07b772de647bbe692928da09fc9ed573",
+          "structure_snapshot_id": "sha256:b56fdbd11951f776fdcb0b9f459b619edeb4d1aeba69eb6ff9e2a07c250b7d42",
+          "close": "45.60",
+          "daily_records": 176,
+          "structure": {
+            "candidate_state": "RISING_SWINGS_REFERENCE_INTACT",
+            "high_relation": "HIGHER",
+            "low_relation": "HIGHER",
+            "primary_low_condition": "NOT_BREACHED",
+            "primary_low_zone_id": "zone:major:LOW:2026-07-01:2026-07-01:86",
+            "scope": "LATEST_CONFIRMED_LOW_IS_A_REFERENCE_NOT_A_VALIDATED_IMPORTANCE_RANKING"
+          },
+          "momentum": {
+            "comparison_basis": "SELECTED_AS_OF_PRICE_ANCHOR_NOT_PREVIOUS_FRAME_ANCHOR",
+            "dea": "2.1245824304929414339542756499628557216123045602430",
+            "dif": "2.044781088330216216361434627033710224605544357330",
+            "histogram": "-0.1596026843254504351856820458582909940135204058260",
+            "histogram_change": "LOWER",
+            "interpretation": "OBJECTIVE_INDICATOR_CHANGE_NOT_STRUCTURE_OR_TRADE_APPROVAL",
+            "previous_histogram_same_anchor": "0.0741249172971909470176631697031951187735040740416",
+            "reason": "AVAILABLE"
+          },
+          "moving_averages": [
+            {
+              "close_relation": "HIGHER",
+              "direction": "HIGHER",
+              "period": 130,
+              "value": "35.59346153846153846153846154"
+            },
+            {
+              "close_relation": "HIGHER",
+              "direction": "HIGHER",
+              "period": 20,
+              "value": "43.94"
+            },
+            {
+              "close_relation": "UNKNOWN",
+              "direction": "UNKNOWN",
+              "period": 260,
+              "value": null
+            },
+            {
+              "close_relation": "LOWER",
+              "direction": "LOWER",
+              "period": 5,
+              "value": "46.31"
+            },
+            {
+              "close_relation": "HIGHER",
+              "direction": "HIGHER",
+              "period": 60,
+              "value": "38.9825"
+            }
+          ],
+          "supporting": [
+            {
+              "code": "HIGHER_CONFIRMED_HIGHS_AND_LOWS",
+              "references": [
+                "major:HIGH:2026-04-16:2026-04-22:43",
+                "major:HIGH:2026-06-22:2026-06-22:79",
+                "major:LOW:2026-05-28:2026-05-28:58",
+                "major:LOW:2026-07-01:2026-07-01:86"
+              ]
+            },
+            {
+              "code": "PRIMARY_LOW_REFERENCE_NOT_BREACHED",
+              "reason": "2 consecutive closes beyond the outer boundary",
+              "references": [
+                "zone:major:LOW:2026-07-01:2026-07-01:86"
+              ]
+            }
+          ],
+          "opposing": [
+            {
+              "code": "FALLING_DAILY_MA",
+              "reason": "Moving-average risk is not cancelled by positive structure evidence",
+              "references": [
+                "daily_ma:5"
+              ]
+            }
+          ],
+          "pending": [
+            {
+              "basis_observed_at": "2026-09-17",
+              "first_observed_at": "2026-09-17",
+              "id": "minor:HIGH:2026-09-17:2026-09-17:133",
+              "invalidation": "More extreme price before rule confirmation replaces this candidate",
+              "kind": "HIGH",
+              "occurred_at": "2026-09-17",
+              "occurred_index": 171,
+              "price": "47.35",
+              "profile": "minor",
+              "status": "PENDING",
+              "volatility_basis": "1.31"
+            },
+            {
+              "basis_observed_at": "2026-09-17",
+              "first_observed_at": "2026-09-17",
+              "id": "major:HIGH:2026-09-17:2026-09-17:134",
+              "invalidation": "More extreme price before rule confirmation replaces this candidate",
+              "kind": "HIGH",
+              "occurred_at": "2026-09-17",
+              "occurred_index": 171,
+              "price": "47.35",
+              "profile": "major",
+              "status": "PENDING",
+              "volatility_basis": "1.31"
+            }
+          ]
+        },
+        {
+          "as_of": "2026-09-29",
+          "frame_id": "sha256:10da33e2fdc9ae100c4107d8950e9c9c92daa9501261114afdaa0160d065bf66",
+          "structure_snapshot_id": "sha256:1873a29696f5111af7feccb0a35916d71e43a6ffa845f7b7ea2ec9949bcba992",
+          "close": "44.90",
+          "daily_records": 178,
+          "structure": {
+            "candidate_state": "RISING_SWINGS_REFERENCE_INTACT",
+            "high_relation": "HIGHER",
+            "low_relation": "HIGHER",
+            "primary_low_condition": "NOT_BREACHED",
+            "primary_low_zone_id": "zone:major:LOW:2026-07-01:2026-07-01:86",
+            "scope": "LATEST_CONFIRMED_LOW_IS_A_REFERENCE_NOT_A_VALIDATED_IMPORTANCE_RANKING"
+          },
+          "momentum": {
+            "comparison_basis": "SELECTED_AS_OF_PRICE_ANCHOR_NOT_PREVIOUS_FRAME_ANCHOR",
+            "dea": "2.0128977509420821504260057855551190017109403610407",
+            "dif": "1.734394435471950919453668721137500905638761372969",
+            "histogram": "-0.5570066309402624619446741288352361921443579761434",
+            "histogram_change": "LOWER",
+            "interpretation": "OBJECTIVE_INDICATOR_CHANGE_NOT_STRUCTURE_OR_TRADE_APPROVAL",
+            "previous_histogram_same_anchor": "-0.3364708054666118062814847864266575670665556174752",
+            "reason": "AVAILABLE"
+          },
+          "moving_averages": [
+            {
+              "close_relation": "HIGHER",
+              "direction": "HIGHER",
+              "period": 130,
+              "value": "35.80115384615384615384615385"
+            },
+            {
+              "close_relation": "HIGHER",
+              "direction": "HIGHER",
+              "period": 20,
+              "value": "44.60"
+            },
+            {
+              "close_relation": "UNKNOWN",
+              "direction": "UNKNOWN",
+              "period": 260,
+              "value": null
+            },
+            {
+              "close_relation": "LOWER",
+              "direction": "LOWER",
+              "period": 5,
+              "value": "45.67"
+            },
+            {
+              "close_relation": "HIGHER",
+              "direction": "HIGHER",
+              "period": 60,
+              "value": "39.38083333333333333333333333"
+            }
+          ],
+          "supporting": [
+            {
+              "code": "HIGHER_CONFIRMED_HIGHS_AND_LOWS",
+              "references": [
+                "major:HIGH:2026-04-16:2026-04-22:43",
+                "major:HIGH:2026-06-22:2026-06-22:79",
+                "major:LOW:2026-05-28:2026-05-28:58",
+                "major:LOW:2026-07-01:2026-07-01:86"
+              ]
+            },
+            {
+              "code": "PRIMARY_LOW_REFERENCE_NOT_BREACHED",
+              "reason": "2 consecutive closes beyond the outer boundary",
+              "references": [
+                "zone:major:LOW:2026-07-01:2026-07-01:86"
+              ]
+            }
+          ],
+          "opposing": [
+            {
+              "code": "FALLING_DAILY_MA",
+              "reason": "Moving-average risk is not cancelled by positive structure evidence",
+              "references": [
+                "daily_ma:5"
+              ]
+            }
+          ],
+          "pending": [
+            {
+              "basis_observed_at": "2026-09-29",
+              "first_observed_at": "2026-09-29",
+              "id": "minor:LOW:2026-09-21:2026-09-29:135",
+              "invalidation": "More extreme price before rule confirmation replaces this candidate",
+              "kind": "LOW",
+              "occurred_at": "2026-09-21",
+              "occurred_index": 173,
+              "price": "44.90",
+              "profile": "minor",
+              "status": "PENDING",
+              "volatility_basis": "1.435"
+            },
+            {
+              "basis_observed_at": "2026-09-17",
+              "first_observed_at": "2026-09-17",
+              "id": "major:HIGH:2026-09-17:2026-09-17:134",
+              "invalidation": "More extreme price before rule confirmation replaces this candidate",
+              "kind": "HIGH",
+              "occurred_at": "2026-09-17",
+              "occurred_index": 171,
+              "price": "47.35",
+              "profile": "major",
+              "status": "PENDING",
+              "volatility_basis": "1.31"
+            }
+          ]
+        },
+        {
+          "as_of": "2026-09-30",
+          "frame_id": "sha256:8adc1209272933bde2787a80288038092c378cee010afaa03adf7a5f9d968428",
+          "structure_snapshot_id": "sha256:9ae078e54aae44ec16611eb67dd535f480b527e6945fbad26485d54e99f52be1",
+          "close": "44.85",
+          "daily_records": 179,
+          "structure": {
+            "candidate_state": "RISING_SWINGS_REFERENCE_INTACT",
+            "high_relation": "HIGHER",
+            "low_relation": "HIGHER",
+            "primary_low_condition": "NOT_BREACHED",
+            "primary_low_zone_id": "zone:major:LOW:2026-07-01:2026-07-01:86",
+            "scope": "LATEST_CONFIRMED_LOW_IS_A_REFERENCE_NOT_A_VALIDATED_IMPORTANCE_RANKING"
+          },
+          "momentum": {
+            "comparison_basis": "SELECTED_AS_OF_PRICE_ANCHOR_NOT_PREVIOUS_FRAME_ANCHOR",
+            "dea": "1.9242578532707987583848994082018285399462395063102",
+            "dif": "1.569698262585665190220473898788666692887436087388",
+            "histogram": "-0.7091191813702671363288510188263236941176068378444",
+            "histogram_change": "LOWER",
+            "interpretation": "OBJECTIVE_INDICATOR_CHANGE_NOT_STRUCTURE_OR_TRADE_APPROVAL",
+            "previous_histogram_same_anchor": "-0.5570066309402624619446741288352361921443579761434",
+            "reason": "AVAILABLE"
+          },
+          "moving_averages": [
+            {
+              "close_relation": "HIGHER",
+              "direction": "HIGHER",
+              "period": 130,
+              "value": "35.90653846153846153846153846"
+            },
+            {
+              "close_relation": "LOWER",
+              "direction": "HIGHER",
+              "period": 20,
+              "value": "44.855"
+            },
+            {
+              "close_relation": "UNKNOWN",
+              "direction": "UNKNOWN",
+              "period": 260,
+              "value": null
+            },
+            {
+              "close_relation": "LOWER",
+              "direction": "LOWER",
+              "period": 5,
+              "value": "45.40"
+            },
+            {
+              "close_relation": "HIGHER",
+              "direction": "HIGHER",
+              "period": 60,
+              "value": "39.56666666666666666666666667"
+            }
+          ],
+          "supporting": [
+            {
+              "code": "HIGHER_CONFIRMED_HIGHS_AND_LOWS",
+              "references": [
+                "major:HIGH:2026-04-16:2026-04-22:43",
+                "major:HIGH:2026-06-22:2026-06-22:79",
+                "major:LOW:2026-05-28:2026-05-28:58",
+                "major:LOW:2026-07-01:2026-07-01:86"
+              ]
+            },
+            {
+              "code": "PRIMARY_LOW_REFERENCE_NOT_BREACHED",
+              "reason": "2 consecutive closes beyond the outer boundary",
+              "references": [
+                "zone:major:LOW:2026-07-01:2026-07-01:86"
+              ]
+            }
+          ],
+          "opposing": [
+            {
+              "code": "FALLING_DAILY_MA",
+              "reason": "Moving-average risk is not cancelled by positive structure evidence",
+              "references": [
+                "daily_ma:5"
+              ]
+            }
+          ],
+          "pending": [
+            {
+              "basis_observed_at": "2026-09-30",
+              "first_observed_at": "2026-09-30",
+              "id": "minor:LOW:2026-09-30:2026-09-30:136",
+              "invalidation": "More extreme price before rule confirmation replaces this candidate",
+              "kind": "LOW",
+              "occurred_at": "2026-09-30",
+              "occurred_index": 178,
+              "price": "44.75",
+              "profile": "minor",
+              "status": "PENDING",
+              "volatility_basis": "1.4025"
+            },
+            {
+              "basis_observed_at": "2026-09-17",
+              "first_observed_at": "2026-09-17",
+              "id": "major:HIGH:2026-09-17:2026-09-17:134",
+              "invalidation": "More extreme price before rule confirmation replaces this candidate",
+              "kind": "HIGH",
+              "occurred_at": "2026-09-17",
+              "occurred_index": 171,
+              "price": "47.35",
+              "profile": "major",
+              "status": "PENDING",
+              "volatility_basis": "1.31"
+            }
+          ]
+        }
+      ],
+      "major_legs": [
+        {
+          "confirmed_at": "2026-03-04",
+          "end_date": "2026-02-26",
+          "end_id": "major:HIGH:2026-02-26:2026-02-26:22",
+          "end_price": "35.50",
+          "first_observed_at": "2026-02-26",
+          "price_change": "2.80",
+          "profile": "major",
+          "relation": "HIGHER",
+          "start_date": "2026-02-02",
+          "start_id": "major:LOW:2026-02-02:2026-02-02:8",
+          "start_price": "32.70",
+          "swing_id": "sha256:8a57b27890a9ea9d112ab8758e8715597c635d8d0d42e4c7efe0dfda5a586b82"
+        },
+        {
+          "confirmed_at": "2026-04-22",
+          "end_date": "2026-03-23",
+          "end_id": "major:LOW:2026-03-23:2026-03-23:36",
+          "end_price": "30.85",
+          "first_observed_at": "2026-03-23",
+          "price_change": "-4.65",
+          "profile": "major",
+          "relation": "LOWER",
+          "start_date": "2026-02-26",
+          "start_id": "major:HIGH:2026-02-26:2026-02-26:22",
+          "start_price": "35.50",
+          "swing_id": "sha256:a44a54144c1d41c17f0dcce704dfe04e3e6be012827ae413730ab4945eb3e065"
+        },
+        {
+          "confirmed_at": "2026-05-04",
+          "end_date": "2026-04-16",
+          "end_id": "major:HIGH:2026-04-16:2026-04-22:43",
+          "end_price": "33.20",
+          "first_observed_at": "2026-04-22",
+          "price_change": "2.35",
+          "profile": "major",
+          "relation": "HIGHER",
+          "start_date": "2026-03-23",
+          "start_id": "major:LOW:2026-03-23:2026-03-23:36",
+          "start_price": "30.85",
+          "swing_id": "sha256:d58889f43e2f0cb66530ad32bf0c4ced40a24fb336ce39de7d853d3cee9ce1b3"
+        },
+        {
+          "confirmed_at": "2026-06-02",
+          "end_date": "2026-05-28",
+          "end_id": "major:LOW:2026-05-28:2026-05-28:58",
+          "end_price": "30.65",
+          "first_observed_at": "2026-05-28",
+          "price_change": "-2.55",
+          "profile": "major",
+          "relation": "LOWER",
+          "start_date": "2026-04-16",
+          "start_id": "major:HIGH:2026-04-16:2026-04-22:43",
+          "start_price": "33.20",
+          "swing_id": "sha256:6166fd360d48cecda9f7de1945af6860c95ba0fb6eefe244446e344a8026816e"
+        },
+        {
+          "confirmed_at": "2026-07-01",
+          "end_date": "2026-06-22",
+          "end_id": "major:HIGH:2026-06-22:2026-06-22:79",
+          "end_price": "36.60",
+          "first_observed_at": "2026-06-22",
+          "price_change": "5.95",
+          "profile": "major",
+          "relation": "HIGHER",
+          "start_date": "2026-05-28",
+          "start_id": "major:LOW:2026-05-28:2026-05-28:58",
+          "start_price": "30.65",
+          "swing_id": "sha256:3a43ae64a5fda3bdcf71c5b93086717ba27dc3da4f5e17cb8ade5300f65e112f"
+        },
+        {
+          "confirmed_at": "2026-07-20",
+          "end_date": "2026-07-01",
+          "end_id": "major:LOW:2026-07-01:2026-07-01:86",
+          "end_price": "32.80",
+          "first_observed_at": "2026-07-01",
+          "price_change": "-3.80",
+          "profile": "major",
+          "relation": "LOWER",
+          "start_date": "2026-06-22",
+          "start_id": "major:HIGH:2026-06-22:2026-06-22:79",
+          "start_price": "36.60",
+          "swing_id": "sha256:76a26361ceda6467b38890b45dfefbf98d0109e5e3f4904eb77fdcbcc887f680"
+        }
+      ],
+      "major_zones": [
+        {
+          "id": "zone:major:LOW:2026-02-02:2026-02-02:8",
+          "pivot_id": "major:LOW:2026-02-02:2026-02-02:8",
+          "role": "SUPPORT_CANDIDATE",
+          "occurred_at": "2026-02-02",
+          "confirmed_at": "2026-02-11",
+          "low": "32.5320",
+          "high": "32.8680",
+          "state": "BREACHED_CANDIDATE",
+          "condition": "INVALIDATED",
+          "current_location": "ABOVE",
+          "invalidation_rule": "2 consecutive closes beyond the outer boundary"
+        },
+        {
+          "id": "zone:major:HIGH:2026-02-26:2026-02-26:22",
+          "pivot_id": "major:HIGH:2026-02-26:2026-02-26:22",
+          "role": "RESISTANCE_CANDIDATE",
+          "occurred_at": "2026-02-26",
+          "confirmed_at": "2026-03-04",
+          "low": "35.31975",
+          "high": "35.68025",
+          "state": "BREACHED_CANDIDATE",
+          "condition": "INVALIDATED",
+          "current_location": "ABOVE",
+          "invalidation_rule": "2 consecutive closes beyond the outer boundary"
+        },
+        {
+          "id": "zone:major:LOW:2026-03-23:2026-03-23:36",
+          "pivot_id": "major:LOW:2026-03-23:2026-03-23:36",
+          "role": "SUPPORT_CANDIDATE",
+          "occurred_at": "2026-03-23",
+          "confirmed_at": "2026-04-22",
+          "low": "30.593625",
+          "high": "31.106375",
+          "state": "ACTIVE_CANDIDATE",
+          "condition": "NOT_BREACHED",
+          "current_location": "ABOVE",
+          "invalidation_rule": "2 consecutive closes beyond the outer boundary"
+        },
+        {
+          "id": "zone:major:HIGH:2026-04-16:2026-04-22:43",
+          "pivot_id": "major:HIGH:2026-04-16:2026-04-22:43",
+          "role": "RESISTANCE_CANDIDATE",
+          "occurred_at": "2026-04-16",
+          "confirmed_at": "2026-05-04",
+          "low": "33.036375",
+          "high": "33.363625",
+          "state": "BREACHED_CANDIDATE",
+          "condition": "INVALIDATED",
+          "current_location": "ABOVE",
+          "invalidation_rule": "2 consecutive closes beyond the outer boundary"
+        },
+        {
+          "id": "zone:major:LOW:2026-05-28:2026-05-28:58",
+          "pivot_id": "major:LOW:2026-05-28:2026-05-28:58",
+          "role": "SUPPORT_CANDIDATE",
+          "occurred_at": "2026-05-28",
+          "confirmed_at": "2026-06-02",
+          "low": "30.474125",
+          "high": "30.825875",
+          "state": "ACTIVE_CANDIDATE",
+          "condition": "NOT_BREACHED",
+          "current_location": "ABOVE",
+          "invalidation_rule": "2 consecutive closes beyond the outer boundary"
+        },
+        {
+          "id": "zone:major:HIGH:2026-06-22:2026-06-22:79",
+          "pivot_id": "major:HIGH:2026-06-22:2026-06-22:79",
+          "role": "RESISTANCE_CANDIDATE",
+          "occurred_at": "2026-06-22",
+          "confirmed_at": "2026-07-01",
+          "low": "36.32175",
+          "high": "36.87825",
+          "state": "BREACHED_CANDIDATE",
+          "condition": "INVALIDATED",
+          "current_location": "ABOVE",
+          "invalidation_rule": "2 consecutive closes beyond the outer boundary"
+        },
+        {
+          "id": "zone:major:LOW:2026-07-01:2026-07-01:86",
+          "pivot_id": "major:LOW:2026-07-01:2026-07-01:86",
+          "role": "SUPPORT_CANDIDATE",
+          "occurred_at": "2026-07-01",
+          "confirmed_at": "2026-07-20",
+          "low": "32.4710",
+          "high": "33.1290",
+          "state": "ACTIVE_CANDIDATE",
+          "condition": "NOT_BREACHED",
+          "current_location": "ABOVE",
+          "invalidation_rule": "2 consecutive closes beyond the outer boundary"
+        }
+      ]
+    }
+  ],
+  "device_status": "NOT_TESTED",
+  "app_tests_this_review": "NOT_RUN"
+}

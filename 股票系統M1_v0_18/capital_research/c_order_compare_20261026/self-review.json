@@ -1,0 +1,39 @@
+{
+  "base": "63a81306b0d181dd47339b3bca01fd6347b94881",
+  "originals_and_frozen_files_checked": 34,
+  "READ_helper_versions_match": true,
+  "numerical_accounting_comparison_sources_unchanged": true,
+  "historical_documents_preserved": true,
+  "sensitive_scan": {
+    "files": 39,
+    "findings": []
+  },
+  "scope": {
+    "tracked": [
+      "AGENTS.md",
+      "CONTINUE_IN_WORK_MODE.md",
+      "股票系統M1_v0_18/capital_research/README.md"
+    ],
+    "all_untracked_under": "股票系統M1_v0_18/capital_research/c_order_compare_20261026"
+  },
+  "READ_cases": {
+    "total": 6,
+    "comparable": 2,
+    "refused": 4
+  },
+  "tests": {
+    "unique_methods": 4,
+    "method_executions": 4,
+    "methods": [
+      "test_API_does_not_mutate_new_C_comparable_or_refused_input",
+      "test_fresh_C_CLI_forbids_engines_writes_processes_and_network",
+      "test_original_account_order_scope_and_tokens_are_projected_once",
+      "test_saved_READ_matches_frozen_expectations_and_text"
+    ]
+  },
+  "numerical_replays": 0,
+  "old_suite": 0,
+  "market_performance": false,
+  "source_authentication": false,
+  "formal_flags_unchanged": true
+}

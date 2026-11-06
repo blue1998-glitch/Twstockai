@@ -1,0 +1,334 @@
+{
+  "milestone": "M-FM2",
+  "status": "PARTIAL",
+  "scope": "Retained permitted history integration; new full-market historical acquisition BLOCKED",
+  "actual": {
+    "id": "fm2-0d6ccbe63fbec6678f19f22eefe48976643759ce9e9fad6936f7558f08659257",
+    "reused": false,
+    "new_core_calls": 4,
+    "summary": {
+      "status": "PARTIAL",
+      "as_of": "2026-10-16",
+      "expected": 1986,
+      "processed": 1986,
+      "expected_by_market": {
+        "TWSE": 1089,
+        "TPEX": 897
+      },
+      "terminal_counts": {
+        "ANALYZED_RETAINED_HISTORY": 4,
+        "HISTORY_SOURCE_UNAVAILABLE": 1975,
+        "OUTSIDE_CURRENT_REFERENCE_LISTING_WINDOW": 7
+      },
+      "actual_core_calls": 4,
+      "new_historical_dates_downloaded": 0,
+      "retained_unique_dates": 1214,
+      "history_bar_distribution": {
+        "1213": 2,
+        "0": 1982,
+        "1214": 2
+      },
+      "all_known_members_have_terminal": true,
+      "universe_historical_qualification": "UNKNOWN_CURRENT_FM1_REFERENCE_NOT_1016_HISTORICAL_UNIVERSE",
+      "historical_automation": "BLOCKED_PROVIDER_APPROVED_SCOPE_NOT_PROVED",
+      "wall_seconds": 16.679673910002748,
+      "peak_rss_kib": 504012,
+      "fixed_android_url": "NOT_DEPLOYED",
+      "scheduling": "NOT_ENABLED",
+      "storage_persistence": "UNKNOWN"
+    }
+  },
+  "analyzed_by_market": {
+    "TWSE": 2,
+    "TPEX": 2
+  },
+  "stocks": [
+    {
+      "code": "1101",
+      "market": "TWSE",
+      "as_of": "2026-10-16",
+      "source_start": "2021-10-18",
+      "source_end": "2026-10-16",
+      "history_records": 1213,
+      "history_key": "history-34373a4158e7b0c1ddaaf11e117987ce29c9d1010976bd12e5aaf0e212ba62a0",
+      "result_key": "fm2-result-8f58d4af55d3c27fc9304c852232d5232ec5ddc7784bc30e4cbce4f5df11966a",
+      "result_id": "sha256:7f7e0a3f1c5ea02ee0caf22876cdc019050cbdbf935674654bb81dbc456ef1cf",
+      "source_prefix_fingerprint": "sha256:e1651ca453df5b818e091575ded756953f69271f69f69d6008bb544f2fe76832",
+      "confirmed_pivots": 171,
+      "box_candidates": 89,
+      "stopped_boxes": 0,
+      "source_volume_field": [
+        "成交股數"
+      ],
+      "volume_unit": "SHARES_REPORTED",
+      "history_source_provenance": {
+        "corporate_action_comparability": "UNVERIFIED",
+        "exact_native_share_precision": true,
+        "historical_available_at": "UNKNOWN",
+        "monthly_originals": 61,
+        "retained_source_gaps": {
+          "actions_coverage": "UNVERIFIED_NO_NEW_ACTION_AUTHENTICATION",
+          "calendar_status": "PLANNED_PLUS_REVIEWED_EXCEPTIONS_ONLY_NOT_EXHAUSTIVE",
+          "historical_publication_timing": "UNVERIFIED",
+          "known_calendar_missing_dates": [
+            "2022-01-27",
+            "2022-01-28",
+            "2023-08-03",
+            "2024-07-24",
+            "2024-07-25",
+            "2024-10-02",
+            "2024-10-03",
+            "2024-10-31",
+            "2025-08-13"
+          ]
+        },
+        "role": "RETAINED_OFFICIAL_MONTHLY_NOT_NEW_BULK_NATIVE_FEED",
+        "source_id": "sha256:adea7f78a97d18b6b51fbba103e08c0db33dc6fb1eb613b960b0aabe213b534b",
+        "source_ledger_sha256": "eaeff474314348f66bb3f53704f006410f571f4b8192f3bcb72ee7541d6dd39e",
+        "source_volume_fields": [
+          "成交股數"
+        ],
+        "volume_normalization": "NATIVE_SHARE_COUNT"
+      },
+      "classification_quality": "NOT_VALIDATED",
+      "primary_pressure_id": null,
+      "data_qualified": false,
+      "execution_model_qualified": false,
+      "historical_signal_eligible": false,
+      "policy_authorized": false,
+      "live_execution_authorized": false,
+      "history_journal_sha256": "d7907ac2f0b5e216140ab9044f1b6c8b73595afb1cb083252bdcaa2fe0a0bd75",
+      "result_journal_sha256": "9014f730ca907622cb76f12d77235d0d960bf9dab8e3e0e5bc41736621fe1a9e",
+      "source_id": "sha256:adea7f78a97d18b6b51fbba103e08c0db33dc6fb1eb613b960b0aabe213b534b",
+      "price_basis_id": "sha256:50e560b77640da3b7d000c0db67fc73a3f5b69d0bd744871ccb03483f8ec115e",
+      "indicator_projection": {
+        "reference_numeric_parent_sha256": "0a1513b361c1473c4e38bb3c5db2f3477054fe2bb4779592f31b5b73fc84bb8e",
+        "reset_dates": [],
+        "role": "FM2_SEGMENTED_INDICATORS_EXISTING_FORMULAS_NOT_RELABELED_PARENT",
+        "version": "fm2-segment-indicators/0.1"
+      },
+      "full_core_matches_original_MG3": true
+    },
+    {
+      "code": "2884",
+      "market": "TWSE",
+      "as_of": "2026-10-16",
+      "source_start": "2021-10-18",
+      "source_end": "2026-10-16",
+      "history_records": 1213,
+      "history_key": "history-219d4521477b3fd27862672782ea8f33b793e464c7f2bc9de702105b70037693",
+      "result_key": "fm2-result-0a00e246ff2e9e6c68078eb1d2be9bf530b61192686b2237bc7a7f7fe7829de4",
+      "result_id": "sha256:3e4e1bfb56f3edb96ab407f8caed3cefe1a5d795115072abf92144d0dfc95f22",
+      "source_prefix_fingerprint": "sha256:65b8d1b920f6946b4a4b262891ef241b70bf5928ac73c8fb3fe4069bc63f9d10",
+      "confirmed_pivots": 123,
+      "box_candidates": 32,
+      "stopped_boxes": 32,
+      "source_volume_field": [
+        "成交股數"
+      ],
+      "volume_unit": "SHARES_REPORTED",
+      "history_source_provenance": {
+        "corporate_action_comparability": "UNVERIFIED",
+        "exact_native_share_precision": true,
+        "historical_available_at": "UNKNOWN",
+        "monthly_originals": 61,
+        "retained_source_gaps": {
+          "actions_coverage": "UNVERIFIED_NO_NEW_ACTION_AUTHENTICATION",
+          "calendar_status": "PLANNED_PLUS_REVIEWED_EXCEPTIONS_ONLY_NOT_EXHAUSTIVE",
+          "historical_publication_timing": "UNVERIFIED",
+          "known_calendar_missing_dates": [
+            "2022-01-27",
+            "2022-01-28",
+            "2023-08-03",
+            "2024-07-24",
+            "2024-07-25",
+            "2024-10-02",
+            "2024-10-03",
+            "2024-10-31",
+            "2025-11-05"
+          ]
+        },
+        "role": "RETAINED_OFFICIAL_MONTHLY_NOT_NEW_BULK_NATIVE_FEED",
+        "source_id": "sha256:2f8626a72246f7109bac8b173ef78054c167a873b7527bf46ced82476c16c417",
+        "source_ledger_sha256": "eaeff474314348f66bb3f53704f006410f571f4b8192f3bcb72ee7541d6dd39e",
+        "source_volume_fields": [
+          "成交股數"
+        ],
+        "volume_normalization": "NATIVE_SHARE_COUNT"
+      },
+      "classification_quality": "NOT_VALIDATED",
+      "primary_pressure_id": null,
+      "data_qualified": false,
+      "execution_model_qualified": false,
+      "historical_signal_eligible": false,
+      "policy_authorized": false,
+      "live_execution_authorized": false,
+      "history_journal_sha256": "1eddd03ed446c233c83660a0be09e07b28ef1d05aa0002c4ba68fb1c56deeb6c",
+      "result_journal_sha256": "cf722bbffe448f1258572660163de8b396273702b7ce37d92b895dfd506ee2b0",
+      "source_id": "sha256:2f8626a72246f7109bac8b173ef78054c167a873b7527bf46ced82476c16c417",
+      "price_basis_id": "sha256:3ce70b8fe0dfc818490a4b6209413232aedc76fcab39ba359ed4a3170d75785d",
+      "indicator_projection": {
+        "reference_numeric_parent_sha256": "0a1513b361c1473c4e38bb3c5db2f3477054fe2bb4779592f31b5b73fc84bb8e",
+        "reset_dates": [
+          "2026-07-01"
+        ],
+        "role": "FM2_SEGMENTED_INDICATORS_EXISTING_FORMULAS_NOT_RELABELED_PARENT",
+        "version": "fm2-segment-indicators/0.1"
+      },
+      "full_core_matches_original_MG3": true
+    },
+    {
+      "code": "6488",
+      "market": "TPEX",
+      "as_of": "2026-10-16",
+      "source_start": "2021-10-18",
+      "source_end": "2026-10-16",
+      "history_records": 1214,
+      "history_key": "history-8afe1aad124e46c6cb3300347bb3138300da375cfe9145f2fb15c1e45ce123ce",
+      "result_key": "fm2-result-0ed00cb9e3f028be455db96f20c84c485d94bcb77a033ed51333d92c34aee098",
+      "result_id": "sha256:249d1a02cfbbd48cb46ecb540e8d8daffcdf99b4584056dc6bc9ce70a9ac7887",
+      "source_prefix_fingerprint": "sha256:5772b5d564c7c902ed07c4a237a57f87ba7e145b6a2bdbbfad1c0c7bbb836c0e",
+      "confirmed_pivots": 446,
+      "box_candidates": 158,
+      "stopped_boxes": 129,
+      "source_volume_field": [
+        "成交仟股",
+        "成交張數"
+      ],
+      "volume_unit": "NORMALIZED_SHARES_EXPLICIT_LOTS_OR_THOUSAND_SHARES",
+      "history_source_provenance": {
+        "corporate_action_comparability": "UNVERIFIED",
+        "exact_native_share_precision": false,
+        "historical_available_at": "UNKNOWN",
+        "monthly_originals": 61,
+        "retained_source_gaps": {
+          "actions_coverage": "UNVERIFIED_NO_NEW_ACTION_AUTHENTICATION",
+          "calendar_status": "PLANNED_PLUS_REVIEWED_EXCEPTIONS_ONLY_NOT_EXHAUSTIVE",
+          "historical_publication_timing": "UNVERIFIED",
+          "known_calendar_missing_dates": [
+            "2023-08-03",
+            "2024-07-24",
+            "2024-07-25",
+            "2024-10-02",
+            "2024-10-03",
+            "2024-10-31"
+          ]
+        },
+        "role": "RETAINED_OFFICIAL_MONTHLY_NOT_NEW_BULK_NATIVE_FEED",
+        "source_id": "sha256:a266e6e1d70d0e2aaf4c5427a5ba3ca100d010724ddd969411af483aa4090e7f",
+        "source_ledger_sha256": "eaeff474314348f66bb3f53704f006410f571f4b8192f3bcb72ee7541d6dd39e",
+        "source_volume_fields": [
+          "成交仟股",
+          "成交張數"
+        ],
+        "volume_normalization": "EXPLICIT_REPORTED_LOTS_OR_THOUSAND_SHARES_TIMES1000_PRESERVE_SOURCE_UNIT_PER_RESPONSE"
+      },
+      "classification_quality": "NOT_VALIDATED",
+      "primary_pressure_id": null,
+      "data_qualified": false,
+      "execution_model_qualified": false,
+      "historical_signal_eligible": false,
+      "policy_authorized": false,
+      "live_execution_authorized": false,
+      "history_journal_sha256": "c67d155b1e05623f2b69a0f4fe31fa3ea8cbd7e6ce1100240259f21c406f8c65",
+      "result_journal_sha256": "dfdc15f213a866471bc0b6f8d2254e5ee0996511bc5292ed172ce5e6abfaf847",
+      "source_id": "sha256:a266e6e1d70d0e2aaf4c5427a5ba3ca100d010724ddd969411af483aa4090e7f",
+      "price_basis_id": "sha256:696eccae42ce86371b70e2f78a4001bc02f65028d7a6d9329afc02bd85a7fb62",
+      "indicator_projection": {
+        "reference_numeric_parent_sha256": "0a1513b361c1473c4e38bb3c5db2f3477054fe2bb4779592f31b5b73fc84bb8e",
+        "reset_dates": [
+          "2025-12-31",
+          "2026-07-16"
+        ],
+        "role": "FM2_SEGMENTED_INDICATORS_EXISTING_FORMULAS_NOT_RELABELED_PARENT",
+        "version": "fm2-segment-indicators/0.1"
+      },
+      "full_core_matches_original_MG3": true
+    },
+    {
+      "code": "8069",
+      "market": "TPEX",
+      "as_of": "2026-10-16",
+      "source_start": "2021-10-18",
+      "source_end": "2026-10-16",
+      "history_records": 1214,
+      "history_key": "history-b00bc08b4938db9bad1b72c1d9b83a83de3d327613418628a2a3539707ebdc56",
+      "result_key": "fm2-result-932120a0f914a8e40d2720c3f3367d188be83939c6e89bf0cb78a48454d3bb26",
+      "result_id": "sha256:f161bbb8a6f75dd4bc645660faf0c0ca28325817275f2b69b9f303ba4967094d",
+      "source_prefix_fingerprint": "sha256:94693fc24749d9bcd749367beb33620ac9fab480138f120843d02a84138fc7f6",
+      "confirmed_pivots": 532,
+      "box_candidates": 279,
+      "stopped_boxes": 267,
+      "source_volume_field": [
+        "成交仟股",
+        "成交張數"
+      ],
+      "volume_unit": "NORMALIZED_SHARES_EXPLICIT_LOTS_OR_THOUSAND_SHARES",
+      "history_source_provenance": {
+        "corporate_action_comparability": "UNVERIFIED",
+        "exact_native_share_precision": false,
+        "historical_available_at": "UNKNOWN",
+        "monthly_originals": 61,
+        "retained_source_gaps": {
+          "actions_coverage": "UNVERIFIED_NO_NEW_ACTION_AUTHENTICATION",
+          "calendar_status": "PLANNED_PLUS_REVIEWED_EXCEPTIONS_ONLY_NOT_EXHAUSTIVE",
+          "historical_publication_timing": "UNVERIFIED",
+          "known_calendar_missing_dates": [
+            "2023-08-03",
+            "2024-07-24",
+            "2024-07-25",
+            "2024-10-02",
+            "2024-10-03",
+            "2024-10-31"
+          ]
+        },
+        "role": "RETAINED_OFFICIAL_MONTHLY_NOT_NEW_BULK_NATIVE_FEED",
+        "source_id": "sha256:a81940490d85a1ce2b39c29dd595706289eb34202f03fa94416f3bde8c28fbaa",
+        "source_ledger_sha256": "eaeff474314348f66bb3f53704f006410f571f4b8192f3bcb72ee7541d6dd39e",
+        "source_volume_fields": [
+          "成交仟股",
+          "成交張數"
+        ],
+        "volume_normalization": "EXPLICIT_REPORTED_LOTS_OR_THOUSAND_SHARES_TIMES1000_PRESERVE_SOURCE_UNIT_PER_RESPONSE"
+      },
+      "classification_quality": "NOT_VALIDATED",
+      "primary_pressure_id": null,
+      "data_qualified": false,
+      "execution_model_qualified": false,
+      "historical_signal_eligible": false,
+      "policy_authorized": false,
+      "live_execution_authorized": false,
+      "history_journal_sha256": "525b909f3d0edf0d39065396e5d8ea276f6d8f518c066daa64288779d9aa2ca9",
+      "result_journal_sha256": "bd69ccc15f327d13199a5a300e3f57dad0d508c0d4b257221dc4aedad13ffcfb",
+      "source_id": "sha256:a81940490d85a1ce2b39c29dd595706289eb34202f03fa94416f3bde8c28fbaa",
+      "price_basis_id": "sha256:8adc6124772f8890dbd805ac77b4fb84726792f0e0e0c92d7bbce432cd28ffb4",
+      "indicator_projection": {
+        "reference_numeric_parent_sha256": "0a1513b361c1473c4e38bb3c5db2f3477054fe2bb4779592f31b5b73fc84bb8e",
+        "reset_dates": [
+          "2026-07-20"
+        ],
+        "role": "FM2_SEGMENTED_INDICATORS_EXISTING_FORMULAS_NOT_RELABELED_PARENT",
+        "version": "fm2-segment-indicators/0.1"
+      },
+      "full_core_matches_original_MG3": true
+    }
+  ],
+  "private_preview": {
+    "path": "/workspace/twstockai-local-data/fm1/runtime/preview/fm2-0d6ccbe63fbec6678f19f22eefe48976643759ce9e9fad6936f7558f08659257/market-v04.html",
+    "bytes": 10630382,
+    "sha256": "7f37862bf511715f7abc634301e58dc31c414b60cbbb3ff6f2b1ecbf1338db2f",
+    "stocks": 1986,
+    "charts": 4,
+    "transport": "PRIVATE_FILE_OR_LOOPBACK_ONLY_NOT_DEPLOYED",
+    "android": "NOT_TESTED"
+  },
+  "new_history_http_requests": 0,
+  "new_history_response_shape_or_units_validated": false,
+  "retained_original_month_files_verified": 244,
+  "retained_union_start": "2021-10-18",
+  "retained_union_end": "2026-10-16",
+  "retained_bars": 4854,
+  "full_market_multi_day_benchmark": "NOT_EXECUTED",
+  "future_live_day": "NOT_OBSERVED",
+  "raw_data_or_reconstructable_analysis_committed": false
+}

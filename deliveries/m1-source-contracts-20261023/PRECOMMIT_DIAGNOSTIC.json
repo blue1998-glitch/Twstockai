@@ -1,0 +1,24 @@
+{
+  "code_docs_check": {
+    "command": [
+      "git",
+      "diff",
+      "--cached",
+      "--check",
+      "--",
+      ".",
+      ":(exclude)股票系統M1_v0_18/rotation_research/source_contracts_20261023/raw/**"
+    ],
+    "returncode": 0,
+    "stdout": "",
+    "stderr": ""
+  },
+  "raw_source_excluded_from_format_normalization": true,
+  "reason": "Preserve exact original source/native bytes; source SHA/meta and package manifest independently verified",
+  "tests": {
+    "new": 31,
+    "actually_rerun_parent": 29,
+    "total_distinct": 60
+  },
+  "package_sha256": "3b14522f29a03017a462c2d84eeb86f4b85151c01c9ae9a30f3fe051ba21cb72"
+}

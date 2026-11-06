@@ -1,0 +1,198 @@
+{
+  "scope": "TWO_READ_ONLY_VIEW_CAPTURES_WITH_EXPLICIT_OBSERVATION_ONLY_REFERENCE_LINES_AND_POINT_LABELS",
+  "html_sha256": "f5b3b4e5e03da1c8291ff5854e0a6dfbb974286fe5cfbcb9a466ec6e138203ee",
+  "browser": "133.0.6943.0",
+  "viewport": {
+    "width": 1200,
+    "height": 1000
+  },
+  "font": "Observation-only ReviewCJK substitution; original first-font image retained in prior real-review",
+  "original_data_core_analysis_unchanged": true,
+  "errors": [],
+  "observations": [
+    {
+      "name": "may-price-before-macd",
+      "reference": {
+        "source_layer": "b77",
+        "source_field": "display_extent.low",
+        "value": "30.05",
+        "qualification": "OBSERVATION_ONLY_EXISTING_RESEARCH_REFERENCE_NOT_NEW_FORMAL_BOUND"
+      },
+      "window": "2025-04-22～2025-05-29｜27／1213根；分析固定 2026-10-16；游標 2025-05-19。",
+      "readout": "2025-05-19　開30.15 高30.25 低29.70 收29.80｜量19015004股｜DIF -0.14 DEA -0.22 柱 0.15",
+      "points": [
+        {
+          "date": "2025-05-13",
+          "index": 863,
+          "price": "31.40",
+          "label": "①",
+          "canvas_x": 588.8148148148149,
+          "canvas_y": 61.99672131147531,
+          "bar": {
+            "close": "31.10",
+            "date": "2025-05-13",
+            "high": "31.40",
+            "low": "30.90",
+            "open": "31.30",
+            "volume_shares_scaled": "10264322"
+          },
+          "macd": {
+            "dea": "-0.37500489398383040131670538351540431941436986476399",
+            "dif": "-0.061780524460516741988277413533710582882495072643",
+            "histogram": "0.62644873904662731865685593996338747306374958424198",
+            "reason": "AVAILABLE"
+          }
+        },
+        {
+          "date": "2025-05-19",
+          "index": 867,
+          "price": "29.80",
+          "label": "②",
+          "canvas_x": 744.0740740740741,
+          "canvas_y": 222.9011871113622,
+          "bar": {
+            "close": "29.80",
+            "date": "2025-05-19",
+            "high": "30.25",
+            "low": "29.70",
+            "open": "30.15",
+            "volume_shares_scaled": "19015004"
+          },
+          "macd": {
+            "dea": "-0.21824974945991030370160081663155547649379062103810",
+            "dif": "-0.144330383657547668189565102214097218579307176628",
+            "histogram": "0.14783873160472527102407142883491651582896688882020",
+            "reason": "AVAILABLE"
+          }
+        },
+        {
+          "date": "2025-05-26",
+          "index": 872,
+          "price": "29.85",
+          "label": "③",
+          "canvas_x": 938.1481481481482,
+          "canvas_y": 217.87292255511565,
+          "bar": {
+            "close": "29.85",
+            "date": "2025-05-26",
+            "high": "29.85",
+            "low": "29.20",
+            "open": "29.85",
+            "volume_shares_scaled": "44305503"
+          },
+          "macd": {
+            "dea": "-0.17666690917996220768756232071829638171003114878672",
+            "dif": "-0.178204787027122807821797252505155601013887653641",
+            "histogram": "-0.00307575569432120026846986357371843860771300970856",
+            "reason": "AVAILABLE"
+          }
+        }
+      ]
+    },
+    {
+      "name": "oct-recrossing",
+      "reference": {
+        "source_layer": "recent",
+        "source_field": "display_extent.high",
+        "value": "26.95",
+        "qualification": "OBSERVATION_ONLY_EXISTING_RESEARCH_REFERENCE_NOT_NEW_FORMAL_BOUND"
+      },
+      "window": "2026-09-29～2026-10-16｜13／1213根；分析固定 2026-10-16；游標 2026-10-16。",
+      "readout": "2026-10-16　開27.10 高27.70 低26.95 收27.30｜量57437884股｜DIF 0.63 DEA 0.45 柱 0.36",
+      "points": [
+        {
+          "date": "2026-10-12",
+          "index": 1208,
+          "price": "27.00",
+          "label": "①",
+          "canvas_x": 711.2307692307692,
+          "canvas_y": 132.39242509892588,
+          "bar": {
+            "close": "27.00",
+            "date": "2026-10-12",
+            "high": "27.20",
+            "low": "25.95",
+            "open": "25.95",
+            "volume_shares_scaled": "128673485"
+          },
+          "macd": {
+            "dea": "0.28297900542268286990866556364730079122232221722161",
+            "dif": "0.419810335620579568468928535854730837985996023545",
+            "histogram": "0.27366266039579339712052594441486009352734761264678",
+            "reason": "AVAILABLE"
+          }
+        },
+        {
+          "date": "2026-10-13",
+          "index": 1209,
+          "price": "26.35",
+          "label": "②",
+          "canvas_x": 791.8461538461538,
+          "canvas_y": 197.75986433012983,
+          "bar": {
+            "close": "26.35",
+            "date": "2026-10-13",
+            "high": "26.85",
+            "low": "26.25",
+            "open": "26.85",
+            "volume_shares_scaled": "55126796"
+          },
+          "macd": {
+            "dea": "0.31730886764194857417775216460823443214721824720489",
+            "dif": "0.454628316519011391254098568451968995846802367138",
+            "histogram": "0.27463889775412563415269280768746912739916823986622",
+            "reason": "AVAILABLE"
+          }
+        },
+        {
+          "date": "2026-10-15",
+          "index": 1211,
+          "price": "26.80",
+          "label": "②",
+          "canvas_x": 953.0769230769231,
+          "canvas_y": 152.50548332391168,
+          "bar": {
+            "close": "26.80",
+            "date": "2026-10-15",
+            "high": "27.05",
+            "low": "26.60",
+            "open": "26.95",
+            "volume_shares_scaled": "42215985"
+          },
+          "macd": {
+            "dea": "0.40181190956958382347179673371453957270998306466537",
+            "dif": "0.567617677196155009833837226801678199264430229400",
+            "histogram": "0.33161153525314237272408098617427725310889432946926",
+            "reason": "AVAILABLE"
+          }
+        },
+        {
+          "date": "2026-10-16",
+          "index": 1212,
+          "price": "27.30",
+          "label": "③",
+          "canvas_x": 1033.6923076923076,
+          "canvas_y": 102.22283776144695,
+          "bar": {
+            "close": "27.30",
+            "date": "2026-10-16",
+            "high": "27.70",
+            "low": "26.95",
+            "open": "27.10",
+            "volume_shares_scaled": "57437884"
+          },
+          "macd": {
+            "dea": "0.44714884764746645236741177260178191782968455633330",
+            "dif": "0.628496599958996967949871928150751298308490523005",
+            "histogram": "0.36269550462306103116492031109793876095761193334340",
+            "reason": "AVAILABLE"
+          }
+        }
+      ]
+    }
+  ],
+  "core_executed": false,
+  "bootstrap_executed": false,
+  "physical_android": "NOT_TESTED_NEW_BUILD",
+  "file_protocol_used": false
+}

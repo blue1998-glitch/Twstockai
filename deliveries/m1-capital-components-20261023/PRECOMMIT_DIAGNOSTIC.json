@@ -1,0 +1,24 @@
+{
+  "code_docs_check": {
+    "command": [
+      "git",
+      "diff",
+      "--cached",
+      "--check",
+      "--",
+      ".",
+      ":(exclude)股票系統M1_v0_18/rotation_research/capital_components_20261023/raw/**"
+    ],
+    "returncode": 0,
+    "stdout": "",
+    "stderr": ""
+  },
+  "raw_source_excluded_from_format_normalization": true,
+  "reason": "Preserve byte-exact re-extracted native pages; source original/meta/SHA and manifests validated independently",
+  "tests": {
+    "new": 29,
+    "actually_rerun_parent": 31,
+    "total_distinct": 60
+  },
+  "package_sha256": "9a97f1aff7ad1b37da2249948ccaf62662b5af4ad9d9e3260907cecb426d8571"
+}

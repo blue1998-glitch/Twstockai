@@ -1,0 +1,8 @@
+{
+  "status": "FAIL",
+  "scope": "封包乾淨環境復建",
+  "returncode": 1,
+  "stderr": "Traceback (most recent call last):\n  File \"/tmp/tmp2v_fl943/M1_圖形學習第一批/build_corpus.py\", line 70, in <module>\n    for name in ['README.md','分析報告.md']: shutil.copyfile(PRIVATE/name,OUT/name)\n                                             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"/opt/codex/runtimes/codex-primary-runtime/dependencies/python/lib/python3.12/shutil.py\", line 260, in copyfile\n    with open(src, 'rb') as fsrc:\n         ^^^^^^^^^^^^^^^\nFileNotFoundError: [Errno 2] No such file or directory: '/tmp/tmp2v_fl943/M1_圖形學習第一批/private/README.md'\n",
+  "source_images_redownloaded": 0,
+  "source_images_rereviewed": 0
+}

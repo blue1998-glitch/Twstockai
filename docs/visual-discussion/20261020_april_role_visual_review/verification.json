@@ -1,0 +1,35 @@
+{
+  "source_sha_unchanged": true,
+  "right_context_records_contiguous": 241,
+  "original_OHLCV_MA_MACD_string_copy": true,
+  "pdf_pages": 2,
+  "page1_original_broad_context_reused": true,
+  "page2_vector_graphics_and_embedded_fonts": true,
+  "pdf_text_extraction_checked": true,
+  "pdf_visual_QA": {
+    "status": "PASS_RENDERED_BOTH_FINAL_PAGES_INSPECTED",
+    "method": "pdftoppm and view_image; final CLI-only refactor render byte-equal to inspected images",
+    "observations": [
+      "full 597-record overview preserved on page 1",
+      "page 2 all 241 saved records with volume MACD and four original MAs",
+      "Traditional Chinese text and A/B/C labels legible",
+      "April shaded only as reading focus",
+      "no price clipping or missing bars",
+      "opening-vs-close candle colours separated from previous-close change"
+    ],
+    "font_revision": "Initial Type42 CFF emitted Poppler mismatch warning; switched embedded glyphs to Type3, rerendered without warning and inspected. No source values changed."
+  },
+  "PDF_interactive_zoom_on_Android": "NOT_TESTED_NEW_BUILD",
+  "browser": "NOT_RUN_NO_LOCAL_BINARY",
+  "file_protocol": "NOT_ATTEMPTED",
+  "product_tests": "NOT_RUN",
+  "original_engines_query_CLI": "NOT_RUN",
+  "pdf_sha256": "1c174258fc2e639f8d30c911371286e29b3911633f5a370aac1746d94bb3d0ec",
+  "png_sha256": "5ca7cafea8188ae3e087bac09a187f4577783e68847201135c74de2b2c9c9720",
+  "Android": "NOT_TESTED_NEW_BUILD",
+  "pdf_400_percent_static_render_QA": {
+    "status": "PASS_INSPECTED",
+    "method": "pdftoppm 288 DPI crop and view_image",
+    "scope": "Vector plot K-lines/curves/Chinese labels remain readable when rendered enlarged; not Android interactive gesture test"
+  }
+}

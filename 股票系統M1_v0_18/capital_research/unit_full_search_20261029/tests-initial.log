@@ -1,0 +1,31 @@
+test_cost_capacity_risk_reserve_and_rejected_buy (capital_research.unit_full_search_20261029.test_search.UnitFullSearch.test_cost_capacity_risk_reserve_and_rejected_buy) ... ok
+test_frozen_sources_and_saved_expectations (capital_research.unit_full_search_20261029.test_search.UnitFullSearch.test_frozen_sources_and_saved_expectations) ... ok
+test_future_decimal_purity_and_no_execution (capital_research.unit_full_search_20261029.test_search.UnitFullSearch.test_future_decimal_purity_and_no_execution) ... ok
+test_increment_units_trigger_history_and_account (capital_research.unit_full_search_20261029.test_search.UnitFullSearch.test_increment_units_trigger_history_and_account) ... ERROR
+test_legacy_exact_compatibility (capital_research.unit_full_search_20261029.test_search.UnitFullSearch.test_legacy_exact_compatibility) ... ok
+test_limits_preconditions_and_unknown_higher_point (capital_research.unit_full_search_20261029.test_search.UnitFullSearch.test_limits_preconditions_and_unknown_higher_point) ... ok
+test_manual_funding_and_legal_trace (capital_research.unit_full_search_20261029.test_search.UnitFullSearch.test_manual_funding_and_legal_trace) ... ok
+test_nonmonotone_and_complete_outer_gate (capital_research.unit_full_search_20261029.test_search.UnitFullSearch.test_nonmonotone_and_complete_outer_gate) ... FAIL
+
+======================================================================
+ERROR: test_increment_units_trigger_history_and_account (capital_research.unit_full_search_20261029.test_search.UnitFullSearch.test_increment_units_trigger_history_and_account)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/workspace/Twstockai/股票系統M1_v0_18/capital_research/unit_full_search_20261029/test_search.py", line 78, in test_increment_units_trigger_history_and_account
+    self.assertTrue(set(previous['consumed_evidence_tokens'])<=set(req['decision_input']['consumed_evidence_tokens']))
+                        ~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+KeyError: 'consumed_evidence_tokens'
+
+======================================================================
+FAIL: test_nonmonotone_and_complete_outer_gate (capital_research.unit_full_search_20261029.test_search.UnitFullSearch.test_nonmonotone_and_complete_outer_gate)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/workspace/Twstockai/股票系統M1_v0_18/capital_research/unit_full_search_20261029/test_search.py", line 63, in test_nonmonotone_and_complete_outer_gate
+    self.assertEqual(len(core),2);self.assertTrue(all(c['core_evaluation']['feasible'] for c in core))
+                                  ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+AssertionError: False is not true
+
+----------------------------------------------------------------------
+Ran 8 tests in 0.656s
+
+FAILED (failures=1, errors=1)

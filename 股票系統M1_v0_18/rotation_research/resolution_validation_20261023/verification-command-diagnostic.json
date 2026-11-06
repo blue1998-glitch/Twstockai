@@ -1,0 +1,8 @@
+{
+  "initial_check": "FAILED_BEFORE_HASH_AUDIT",
+  "error": "FileNotFoundError .gitignore",
+  "cause": "Preservation helper used project cwd as repository root",
+  "correction": "Use absolute /workspace/Twstockai root; all original tracked hashes match",
+  "product_or_source_modified": false,
+  "preliminary_unpublished_package": "Moved outside repository before final package build"
+}

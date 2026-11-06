@@ -1,0 +1,14 @@
+{
+  "status": "FAIL",
+  "checks": [
+    {
+      "size": {
+        "width": 390,
+        "height": 844
+      },
+      "name": "all original1213 bars/source binding preserved; draft box geometry never promoted to approved bounds or flat/bottom name",
+      "status": "PASS"
+    }
+  ],
+  "error": "locator.click: Error: strict mode violation: locator('[data-box-mode=\"whole\"]') resolved to 2 elements:\n    1) <div data-count=\"89\" data-render=\"3\" data-first=\"548\" data-selected=\"586\" data-box-mode=\"whole\" id=\"box-range-comparison\" data-selected-date=\"2024-03-19\" data-analysis-as-of=\"2026-10-16\">…</div> aka getByText('｜箱型分段對照（助手草案） ＋ 放大 − 縮小 ← 左移 右移 → 看全段 拖曳查詢 拖曳移圖 B畫一箱 B拆成B1／B2 A 01-19～03-15｜31.')\n    2) <button class=\"btn\" type=\"button\" aria-pressed=\"true\" data-box-mode=\"whole\">B畫一箱</button> aka getByRole('button', { name: 'B畫一箱' })\n\nCall log:\n\u001b[2m  - waiting for locator('[data-box-mode=\"whole\"]')\u001b[22m\n\n    at /workspace/scratch/ca1bc9758970/box-compare/test_browser.cjs:16:52"
+}

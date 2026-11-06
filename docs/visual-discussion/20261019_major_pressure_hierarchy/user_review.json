@@ -1,0 +1,51 @@
+{
+  "recorded_at": "2026-10-19T16:55:51+08:00",
+  "exact_user_quote": "選5/13但是這一樣沒有什麼意義，因為2023年6月到2025年4月有更大的壓力帶",
+  "evidence_type": "USER_REPORTED_LOCAL_REP_AND_DOMINANT_PRESSURE_CONTEXT",
+  "local_selection": {
+    "date": "2025-05-13",
+    "high": "31.40",
+    "local_box": [
+      "2025-04-07",
+      "2025-06-02"
+    ],
+    "local_rows": 39,
+    "scope": "this local box only",
+    "user_qualifier": "this still has little meaning in the presence of the larger pressure band",
+    "promoted_to_primary_hurdle": false
+  },
+  "major_pressure_band": {
+    "start_month": "2023-06",
+    "end_month": "2025-04",
+    "time_precision": "MONTH",
+    "exact_start": null,
+    "exact_end": null,
+    "formal_price_bounds": null,
+    "representative": null,
+    "volume_rule": null,
+    "user_priority": "more significant than the local box in this case"
+  },
+  "correction_to_assistant": "do not finish meaningful-pressure analysis by picking representative of each nearby small box;look at overall historical pressure hierarchy from latest saved close first",
+  "generic_longer_older_or_larger_always_wins_rule": null,
+  "major_and_local_formal_nesting_approved": false,
+  "old_representative_question": "ANSWERED_DO_NOT_REASK",
+  "old_small_box_dates_question": "ANSWERED_DO_NOT_REASK",
+  "new_month_endpoints_question_required": false,
+  "do_not_request_user_to_reconfirm": [
+    "May13 local representative",
+    "Apr07..Jun02 exact39 rows",
+    "Jun03 exclusion",
+    "Jan27 relevance rationale",
+    "old0.4.3 style"
+  ],
+  "old_g1_unique_rep_of_new_major_band": false,
+  "source_values_unchanged": true,
+  "analysis_as_of": "2026-10-16",
+  "saved_latest_close": "27.30",
+  "new_product_or_engine_integration": false,
+  "core_usefulness": "NOT_ESTABLISHED",
+  "classification": "NOT_VALIDATED",
+  "action": "NOT_EVALUATED",
+  "next_mode": "Work",
+  "next_focus": "major pressure context relative to saved latest close;meaningful recurring price/volume structures and hierarchy rather than another small-box selection questionnaire"
+}

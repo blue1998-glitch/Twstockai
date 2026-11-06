@@ -1,0 +1,33 @@
+{
+  "schema": "capital-lifecycle-comparison-fixture/0.1",
+  "items": [
+    {
+      "label": "原件",
+      "source": {
+        "path": "股票系統M1_v0_18/capital_research/conditional_quantity_review_20261026/after-final/valid-old-fact/actual.json",
+        "bytes": 632756,
+        "sha256": "4406481b6dc8f9317ee6a3cdeaf5465f7cee1d8344133e8aea99f35f4f3c3c00"
+      },
+      "edit": null
+    },
+    {
+      "label": "變體",
+      "source": {
+        "path": "股票系統M1_v0_18/capital_research/conditional_quantity_review_20261026/after-final/valid-old-fact/actual.json",
+        "bytes": 632756,
+        "sha256": "4406481b6dc8f9317ee6a3cdeaf5465f7cee1d8344133e8aea99f35f4f3c3c00"
+      },
+      "edit": {
+        "op": "replace",
+        "path": [
+          "review",
+          "execution_job",
+          "tape",
+          5,
+          "settlement_date"
+        ],
+        "value": "2026-01-09"
+      }
+    }
+  ]
+}

@@ -1,0 +1,33 @@
+{
+  "status": "PASS",
+  "artifact_commit": "ba78194d5b385324be76c026ba499eedd32c4647",
+  "review_date": "2026-10-19",
+  "scope": "Actual pinned GitHub downloads of ZIP, package verification and final browser report; SHA256 and ZIP CRC/internal SHA verified. No Android acceptance.",
+  "files": [
+    {
+      "path": "deliveries/m1-v019-soft-regions-v043-20261019/M1_v019_soft_regions_v043.zip",
+      "bytes": 4371881,
+      "sha256": "ee5362de516d52f43b2d09f76b46c04345fd147a2beced4a32e208fbfaf41212"
+    },
+    {
+      "path": "deliveries/m1-v019-soft-regions-v043-20261019/PACKAGE_VERIFICATION.json",
+      "bytes": 1352,
+      "sha256": "8905f06afb14405aaf0fc503a841497ae5521e40e90fbd4b7f0a38b2bb42af7f"
+    },
+    {
+      "path": "股票系統M1_v0_18/soft_region_chart_v043/validation_20261019/browser-report.json",
+      "bytes": 19505,
+      "sha256": "f75ff9d677168c21389892e1ffd386295a20350f47df38bbb3c0319e3f661383"
+    }
+  ],
+  "verified_files": 3,
+  "verified_bytes": 4392738,
+  "zip_crc": "PASS",
+  "internal_sha": "PASS",
+  "html_sha256": "8f09aff450d03afe88f6893264ecb2ccd0b85928f899c9b60567d1480404b434",
+  "final_http_checks": 32,
+  "foreground_samples": 24,
+  "android": "NOT_TESTED_NEW_BUILD",
+  "errors": [],
+  "recovery_note": "Scratch workspace maintenance removed the earlier checkout and interrupted the initial 38-file readback before a saved receipt could be confirmed. Product/source/evidence commit was already safely on GitHub. This fresh receipt claims only the three downloads actually rechecked here; final handoff texts are read back separately."
+}

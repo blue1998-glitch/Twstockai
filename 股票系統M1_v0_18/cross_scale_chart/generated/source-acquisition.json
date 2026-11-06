@@ -1,0 +1,84 @@
+{
+  "status": "PASS",
+  "fixed_zip_sha256": "c8a534f517bdd0e5f648d6b94c0bde992b9b869d72ead727ce84a4a75c3c69ff",
+  "fixed_html_sha256": "eb6d1e82da13db58a592d0868822fec9209bedfaf1ff4843440749677cad1baa",
+  "records": 1213,
+  "first_date": "2021-10-18",
+  "last_date": "2026-10-16",
+  "missing_ohlcv_dates": [],
+  "source_id": "sha256:adea7f78a97d18b6b51fbba103e08c0db33dc6fb1eb613b960b0aabe213b534b",
+  "price_basis_id": "sha256:50e560b77640da3b7d000c0db67fc73a3f5b69d0bd744871ccb03483f8ec115e",
+  "source_frame_id": "sha256:b7215491c924570f3b40594fbd859f4b5c2532b247b62b6e625a8fcb66964f70",
+  "source_prefix_fingerprint": "sha256:e1651ca453df5b818e091575ded756953f69271f69f69d6008bb544f2fe76832",
+  "core_result_id": "sha256:ec7bca9ed6aa176c328fd8c4e94a31ea66967832e7089ac20a44090461f49da4",
+  "source_gaps": {
+    "actions_coverage": "UNVERIFIED_NO_NEW_ACTION_AUTHENTICATION",
+    "calendar_status": "PLANNED_PLUS_REVIEWED_EXCEPTIONS_ONLY_NOT_EXHAUSTIVE",
+    "historical_publication_timing": "UNVERIFIED",
+    "known_calendar_missing_dates": [
+      "2022-01-27",
+      "2022-01-28",
+      "2023-08-03",
+      "2024-07-24",
+      "2024-07-25",
+      "2024-10-02",
+      "2024-10-03",
+      "2024-10-31",
+      "2025-08-13"
+    ]
+  },
+  "raw_price_basis_qualification": "UNVERIFIED_CORPORATE_ACTION_COMPARABILITY",
+  "layers": [
+    {
+      "id": "major",
+      "records": 463,
+      "start": "2023-06-01",
+      "end": "2025-04-30",
+      "kind": "MANUAL_MONTH_CONTEXT"
+    },
+    {
+      "id": "b77",
+      "records": 333,
+      "start": "2023-10-24",
+      "end": "2025-03-12",
+      "kind": "ORIGINAL_RESEARCH_BOX"
+    },
+    {
+      "id": "left",
+      "records": 452,
+      "start": "2023-05-02",
+      "end": "2025-03-12",
+      "kind": "REJECTED_SOURCE_RUN"
+    },
+    {
+      "id": "right",
+      "records": 350,
+      "start": "2023-10-24",
+      "end": "2025-04-08",
+      "kind": "REJECTED_SOURCE_RUN"
+    },
+    {
+      "id": "manual39",
+      "records": 39,
+      "start": "2025-04-07",
+      "end": "2025-06-02",
+      "kind": "MANUAL_EXACT_TIME"
+    },
+    {
+      "id": "same",
+      "records": 25,
+      "start": "2025-04-08",
+      "end": "2025-05-13",
+      "kind": "CROSS_SCALE_SAME_GEOMETRY"
+    },
+    {
+      "id": "recent",
+      "records": 155,
+      "start": "2025-11-19",
+      "end": "2026-07-14",
+      "kind": "ORIGINAL_RESEARCH_BOX"
+    }
+  ],
+  "core_engine_executed": false,
+  "physical_android": "NOT_TESTED_NEW_BUILD"
+}

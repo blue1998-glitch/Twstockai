@@ -1,0 +1,79 @@
+{
+  "status": "PASS_REMOTE_READBACK",
+  "branch": "dev/m1-v018-chart-annotations",
+  "review_commit": "5abea35aa9d212a329c81cb346d3a2805da0c61b",
+  "parent_artifact_commit": "2d480bffcaebfa09768e04a283227effc3fc0a00",
+  "reviewed_handoff": "fb94be48122737271541ab21488cd04efa7a484a",
+  "text_files": [
+    {
+      "path": "docs/visual-discussion/20261019_graph_core_review/README.md",
+      "equal": true
+    },
+    {
+      "path": "docs/visual-discussion/20261019_graph_core_review/WORK_HANDOFF.md",
+      "equal": true
+    },
+    {
+      "path": "CONTINUE_IN_WORK_MODE.md",
+      "equal": true
+    },
+    {
+      "path": "M1_V019_GRAPH_CORE_RESUME_HANDOFF.md",
+      "equal": true
+    },
+    {
+      "path": "docs/visual-discussion/20261019_graph_core_review/structural-comparison.json",
+      "equal": true
+    },
+    {
+      "path": "docs/visual-discussion/20261019_graph_core_review/browser-observation.json",
+      "equal": true
+    },
+    {
+      "path": "docs/visual-discussion/20261019_graph_core_review/read_comparison.py",
+      "equal": true
+    },
+    {
+      "path": "docs/visual-discussion/20261019_graph_core_review/observe.cjs",
+      "equal": true
+    }
+  ],
+  "image_files": [
+    {
+      "file": "major-B77-1400.png",
+      "exact_equal": true,
+      "bytes": 217584,
+      "sha256": "f50628401a4c7a38b937395521381c6a85766572f1ff4c9d061a9a71859c8000"
+    },
+    {
+      "file": "previous-B44-B80-1400.png",
+      "exact_equal": true,
+      "bytes": 147007,
+      "sha256": "c82b7329bb0c81536bdb2cfdac2399e5210279206f673201f68c820a0001de24"
+    },
+    {
+      "file": "recent-B88-1400.png",
+      "exact_equal": true,
+      "bytes": 209718,
+      "sha256": "2bbd7f36910ea2c1ec978d6cb4bab88610b83fdf235ee3b00ae0fd579a1799b8"
+    },
+    {
+      "file": "recent-B88-390.png",
+      "exact_equal": true,
+      "bytes": 106446,
+      "sha256": "f429b51f994f3117079659f45fc6efd217962488c870cfbccb6a8cff9c924710"
+    },
+    {
+      "file": "default-1400.png",
+      "exact_equal": true,
+      "bytes": 217668,
+      "sha256": "77deb3b072bafbfc2fd65df12fde3cc23c9d3b3a35c82544d752786c2c84318b"
+    }
+  ],
+  "verified_files": 13,
+  "diff_scope": "Only additive review documents/readers/observations/screenshots and prepended handoffs; no engine/strategy/store/old page changes; zero deletions.",
+  "scope": "Actual immutable-ref GitHub text reads and raw image downloads compared to local originals. Receipt is a later separate commit; not included in the review commit it verifies.",
+  "new_core_tests_run": false,
+  "new_android_evidence": false,
+  "core_quality": "NOT_VALIDATED"
+}

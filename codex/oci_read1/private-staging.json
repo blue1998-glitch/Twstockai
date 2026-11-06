@@ -1,0 +1,71 @@
+{
+  "schema": "read1-private-inactive-staging/0.1",
+  "observed_at": "2026-11-05T06:04:02.061039+00:00",
+  "prior_private_commit": "6015e6b834fcd24cf13f0b43648d76fa4c443cac",
+  "private_commit": "cc94d1b52b50e846a30fd98864ca650ba848aa55",
+  "status": "STAGED_NOT_ENABLED_BLOCKED_CREDENTIAL_ISOLATION",
+  "readback": [
+    {
+      "path": "read1/README.md",
+      "bytes": 4590,
+      "sha256": "0918451be38a5cf8c7f3467df682b0e82751799475f9d650ddd48c8e34f81d3b",
+      "status": "EXACT_BYTES"
+    },
+    {
+      "path": "read1/OWNER_SECURITY_BATCH.md",
+      "bytes": 5158,
+      "sha256": "26c03f6c9400e5cb01e1a1d87a7977e15b5ce023434679b11a81285c9b9078d5",
+      "status": "EXACT_BYTES"
+    },
+    {
+      "path": "read1/Twstockai_OCI_READ1_KEYLESS_STAGE.pyz",
+      "bytes": 6796,
+      "sha256": "bea042bf81b7d9563976ee30af1469f7de28caafcdc6734d99045254705cdd60",
+      "status": "EXACT_BYTES"
+    },
+    {
+      "path": "read1/MANIFEST.json",
+      "bytes": 1146,
+      "sha256": "cd3da2b57c96b6ce9fe7d60e7d9f06bb6330fae478f9f1954ba5c5e82cc04d05",
+      "status": "EXACT_BYTES"
+    },
+    {
+      "path": "read1/stage.json",
+      "bytes": 715,
+      "sha256": "4d3240d8bcb44703acf405ca9929de93352bc8a1d0e14993344208af49831c75",
+      "status": "EXACT_BYTES"
+    }
+  ],
+  "protected_ctrl1": [
+    {
+      "path": "ctrl1/handler.py",
+      "sha256": "825a8fc1e0e6e86be801f962d0c039f6c9e5b4c7ce9cb83772ff48c88525bb44",
+      "status": "UNCHANGED_FROM_ACCEPTED_6015"
+    },
+    {
+      "path": "ctrl1/release.json",
+      "sha256": "c9f11c9fd2521ab2799fbeab5648f9c0707e159818972e25fd9c945de58655d8",
+      "status": "UNCHANGED_FROM_ACCEPTED_6015"
+    },
+    {
+      "path": ".github/workflows/ctrl1.yml",
+      "sha256": "f4bb6195a054783e08b568e79c6f2933d405a3d4fa390b3a8485b5b9f528c690",
+      "status": "UNCHANGED_FROM_ACCEPTED_6015"
+    },
+    {
+      "path": "ctrl1/README.md",
+      "sha256": "c1fad40845e0c42f88e3a7b7c0053c0a88cf09b48f085e88d6312e364e4dde17",
+      "status": "UNCHANGED_FROM_ACCEPTED_6015"
+    }
+  ],
+  "ctrl1_workflow": "active",
+  "native_runs_before": 3,
+  "native_runs_after": 3,
+  "issue_comments_before": 4,
+  "issue_comments_after": 4,
+  "new_workflows": 0,
+  "codex_commands_sent": 0,
+  "oracle_actual_calls": 0,
+  "secrets_created": 0,
+  "iam_changes": 0
+}

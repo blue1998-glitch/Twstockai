@@ -1,0 +1,10 @@
+{
+  "initial_status": "FAIL",
+  "initial_scope": "first viewport,source group passed;major envelope oracle failed before screenshots",
+  "issue": "D3 axis tick transforms include axis.offset half-pixel atdeviceScaleFactor1;raw candle/fill scale coordinates do not",
+  "fix": "read actual D3 axis.offset() and subtract it from tick-derived oracle mapping;keep0.1px tolerance and same expected39.25/28.45 source prices",
+  "product_fragment_changed": false,
+  "source_values_changed": false,
+  "rerun_required": true,
+  "initial_missing_image_reads": "2 screenshots could not be read because first run stopped before creating them;no image inspection claimed from those failed reads"
+}

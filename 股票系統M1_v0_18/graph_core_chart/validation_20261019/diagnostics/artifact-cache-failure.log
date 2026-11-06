@@ -1,0 +1,16 @@
+Traceback (most recent call last):
+  File "<frozen runpy>", line 198, in _run_module_as_main
+  File "<frozen runpy>", line 88, in _run_code
+  File "/workspace/Twstockai/股票系統M1_v0_18/graph_core_chart/verify_artifact.py", line 40, in <module>
+    report=verify(a.html,a.oracle);print(publish_immutable(a.report,json.dumps(report,ensure_ascii=False,indent=2).encode()));print(json.dumps(report,ensure_ascii=False,indent=2))
+           ^^^^^^^^^^^^^^^^^^^^^^^
+  File "/workspace/Twstockai/股票系統M1_v0_18/graph_core_chart/verify_artifact.py", line 24, in verify
+    if analyze(inp,as_of=result['as_of'])!=result:raise ValueError('Saved recognition prefix mismatch')
+       ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/workspace/Twstockai/股票系統M1_v0_18/graph_core/core.py", line 320, in analyze
+    path=trace_reference(rows,p['price'],p['confirmed_index'],stop_dates=resets),
+         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/workspace/Twstockai/股票系統M1_v0_18/graph_core/core.py", line 50, in trace_reference
+    if i not in volume_cache:volume_cache[i]=volume_observation(rows,i,resets)
+                ^^^^^^^^^^^^
+NameError: name 'volume_cache' is not defined

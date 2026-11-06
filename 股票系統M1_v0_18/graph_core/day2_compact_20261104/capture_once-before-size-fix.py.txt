@@ -1,0 +1,56 @@
+"""Reuse the original six-source bounded probe in separate PRIVATE staging.
+No source import into FM3, no analysis/head change. Single attempt, no redirects.
+"""
+import json,shutil,math
+from pathlib import Path
+from unittest.mock import patch
+from graph_core.day1_20261103 import probe_once as original
+from graph_core import market_daily
+from rotation_research import artifact_codec as codec
+
+ROOT=Path('/workspace/twstockai-local-data/fm3_20261101/runtime')
+WORK=Path('/workspace/twstockai-local-data/day2_compact_20261104')
+CAPTURE=WORK/'capture'
+MIN_FREE=512*1024**2
+PER_RESPONSE=4*1024**2
+TOTAL_RESPONSE=16*1024**2
+
+
+def run():
+    if (CAPTURE/'single-attempt.json').exists():raise FileExistsError('DAY2_ATTEMPT_EXISTS_NO_DUPLICATE_OR_RETRY')
+    if shutil.disk_usage(ROOT).free < MIN_FREE+TOTAL_RESPONSE+8*1024**2:raise OSError('DAY2_SOURCE_PREFLIGHT_CAPACITY')
+    WORK.mkdir(mode=0o700,parents=True,exist_ok=True)
+    old_writer=codec.immutable;old_opener=original.build_opener;observed=0
+    def write(path,body):
+        p=Path(path)
+        if not p.resolve().is_relative_to(WORK.resolve()):raise ValueError('DAY2_WRITE_OUTSIDE_NEW_PRIVATE_STAGE')
+        if not p.exists() and shutil.disk_usage(WORK).free<MIN_FREE+8*1024**2+math.ceil(len(body)/4096)*4096:raise OSError('DAY2_MINIMUM_RESERVE_NO_WRITE')
+        return old_writer(p,body)
+    def opener(*args):
+        real=old_opener(*args)
+        class Bounded:
+            def open(self,url,timeout):
+                response=real.open(url,timeout=timeout)
+                class Response:
+                    def __getattr__(self,name):return getattr(response,name)
+                    def read(self):
+                        nonlocal observed
+                        b=response.read(PER_RESPONSE+1)
+                        if len(b)>PER_RESPONSE or observed+len(b)>TOTAL_RESPONSE:raise ValueError('BOUNDED_OFFICIAL_SOURCE_SIZE_EXCEEDED')
+                        observed+=len(b);return b
+                return Response()
+        return Bounded()
+    with patch.object(original,'build_opener',opener),patch.object(codec,'immutable',write),patch.object(market_daily,'publish_immutable',write):
+        result=original.probe(ROOT,CAPTURE)
+    summary=dict(milestone='M-DAY2-COMPACT',candidate_date='2026-11-03',status=result['status'],
+        qualification=result['qualification'],actual_market_dates=result['actual_market_dates'],
+        daily_source_rows=result['daily_source_rows'],source_parse_errors=result['source_parse_errors'],
+        capture_id=result['capture_id'],get_attempts=result['source_get_attempts'],complete_sources=result['complete_sources'],
+        head_unchanged=result['head_unchanged'],free_before_bytes=result['free_before_bytes'],free_after_bytes=result['free_after_bytes'],
+        captured_allocated_bytes=result['capture_new_file_allocated_bytes'],provider_retries=0,redirects_followed=False,
+        capture_is_separate_stage_not_replacement_fm3=True,new_market_core_calls=0,
+        original_helper_report_retained=True)
+    write(WORK/'capture-summary-private.json',codec.encoded(summary));print(json.dumps(summary,ensure_ascii=False),flush=True)
+    return summary
+
+if __name__=='__main__':run()

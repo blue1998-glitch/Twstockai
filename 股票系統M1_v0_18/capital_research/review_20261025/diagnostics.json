@@ -1,0 +1,54 @@
+{
+  "unresolved_failures": [],
+  "work_hypotheses_reproduced_before_repair": 4,
+  "records": [
+    {
+      "stage": "four_baseline_probes",
+      "result": "All four reproduced; before inputs, expected/actual, baseline and source SHA retained."
+    },
+    {
+      "stage": "trend_source_basis_smoke",
+      "error": "Old reference crossing validation raised before changed-basis UNKNOWN handling",
+      "fix": "Quarantine mismatched basis first; preserve asserted IDs separately; never compare across bases."
+    },
+    {
+      "stage": "first_41_method_run",
+      "failures": 3,
+      "issues": [
+        "10 versus 10.0 in shared prefix from future interpolation decimal scale",
+        "2000 versus 2000.0 string expectation",
+        "Limit interval did not cover an actual exit order"
+      ],
+      "fix": "Use exact declared review-point strings and place blocked sessions at the intended exit interval; no return calibration."
+    },
+    {
+      "stage": "corrected_41_run",
+      "failures": 1,
+      "issue": "Test demanded cancellation for an explicitly expired unfilled order",
+      "fix": "Verify preserved EXPIRED_UNFILLED remaining shares and timestamped deadline; do not invent cancellation or fills."
+    },
+    {
+      "stage": "handoff_authoring_tool",
+      "issue": "One JavaScript literal syntax failure before patch tool executed",
+      "fix": "Split documentation patch; no project write occurred from failed invocation."
+    },
+    {
+      "stage": "final",
+      "methods": 51,
+      "result": "PASS"
+    },
+    {
+      "stage": "preservation_helper",
+      "issue": "Initial path-set assertion used Git quoted Unicode names",
+      "fix": "Read paths with -z; exact allowed seven paths and all old evidence then verified",
+      "numerical_tests_affected": false
+    },
+    {
+      "stage": "final_source_review",
+      "issue": "Capital decision initially retained seed evidence while policy intent was based on current trend record",
+      "fix": "Bind each current trend evidence ID and trend record ID into layer1/parameter_source; source-basis changes carry unknown diagnostics; tests and artifacts rerun without adding counts",
+      "current_final_log": "tests-final-evidence-bound.log"
+    }
+  ],
+  "old_diagnostics_not_removed": true
+}

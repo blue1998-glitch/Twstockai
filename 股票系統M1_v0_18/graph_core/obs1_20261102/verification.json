@@ -1,0 +1,71 @@
+{
+  "status": "ENGINEERING_DELIVERED_FULL_FM3_NOT_VERIFIED",
+  "baseline": "664dc8f74b9a0b54c366d8502b0c6ef4b490b9b4",
+  "unique_python_methods": 5,
+  "synthetic_browser_groups": 12,
+  "real_browser_groups": 2,
+  "real_scope": "FM2 four saved results 2026-10-16, not full FM3",
+  "new_real_source_requests": 0,
+  "new_real_core_calls": 0,
+  "synthetic_stocks": 5,
+  "synthetic_events": 1020,
+  "synthetic_event_types": [
+    "CLOSE_ABOVE_RESEARCH_RANGE",
+    "CLOSE_CROSS_DOWN",
+    "CLOSE_CROSS_UP",
+    "CLOSE_EQUALS_REFERENCE",
+    "FAILED_UP_RETURN_BELOW",
+    "FAILED_UP_RETURN_IN_RANGE",
+    "INITIAL_CLOSE_LOCATION",
+    "RETURN_ABOVE_AFTER_DOWN"
+  ],
+  "synthetic_demo_sha256": "1672afbe4cfe07024076d13fc6dd1c6d875c670ff15fcc0c03c21b54007b6a8f",
+  "synthetic_demo_bytes": 2674065,
+  "demo_index_bytes": 1160180,
+  "projected_dates": [
+    "2026-10-30",
+    "2026-10-31",
+    "2026-11-01",
+    "2026-11-02"
+  ],
+  "dates_are_synthetic_not_real_calendar": true,
+  "protected_files": [
+    {
+      "path": "graph_core/core.py",
+      "sha256": "0d844f8528dbca874c32007edf221f3c54fd6a078415dba354a4b8d51e2fdcfc",
+      "unchanged": true
+    },
+    {
+      "path": "graph_core_chart/viewer.js",
+      "sha256": "be72012976a65f72c6dffb325d1e0a4085967fe6be1090eb27835bcfc23fb142",
+      "unchanged": true
+    },
+    {
+      "path": "graph_core_chart/mobile_private.py",
+      "sha256": "20b7a1c67d0ffd00faf1f0d015eb39b88ef1958fd25b52779d3b89dcf45eba82",
+      "unchanged": true
+    },
+    {
+      "path": "product_candidate/macd.py",
+      "sha256": "49bccfca359b87c0b4aeb91c18212038aa8a93f3dd9e6701c27aac71724ce54d",
+      "unchanged": true
+    },
+    {
+      "path": "src/moving_averages.py",
+      "sha256": "48cc41895afecf073d86e53e290350e8477acbde2f79f56ac28057c03b0af08f",
+      "unchanged": true
+    },
+    {
+      "path": "graph_core/ux1_20261102/Twstockai_UX1_SYNTHETIC_DEMO.html",
+      "sha256": "e66fca359436d1fd09d7c785b8138f06b4996efc289c694be4a7e3fc80b18ef7",
+      "unchanged": true
+    }
+  ],
+  "full_fm3_private_root_accessible": false,
+  "user_ux1_android_feedback": "操作ok; user report only; OBS1 physical Android not tested",
+  "formal_authorization": false,
+  "primary_pressure_id": null,
+  "oracle": "ON_HOLD",
+  "deployment": false,
+  "scheduling": false
+}

@@ -1,0 +1,113 @@
+{
+  "status": "PASS",
+  "checks": [
+    {
+      "width": 390,
+      "check": "synthetic home, five identities, empty chart at boot, no horizontal overflow",
+      "status": "PASS"
+    },
+    {
+      "width": 390,
+      "check": "search, K/volume/MACD, on-chart original verdict, pan/zoom preserve date",
+      "status": "PASS"
+    },
+    {
+      "width": 390,
+      "check": "original precision synthetic JSON download matches viewer",
+      "status": "PASS"
+    },
+    {
+      "width": 390,
+      "check": "two same-date synthetic stocks compare with original limitations and no ranking",
+      "status": "PASS"
+    },
+    {
+      "width": 390,
+      "check": "synthetic date switch/reload prefix, shortage/refusal remain explicit",
+      "status": "PASS"
+    },
+    {
+      "width": 844,
+      "check": "synthetic home, five identities, empty chart at boot, no horizontal overflow",
+      "status": "PASS"
+    },
+    {
+      "width": 844,
+      "check": "search, K/volume/MACD, on-chart original verdict, pan/zoom preserve date",
+      "status": "PASS"
+    },
+    {
+      "width": 844,
+      "check": "original precision synthetic JSON download matches viewer",
+      "status": "PASS"
+    },
+    {
+      "width": 844,
+      "check": "two same-date synthetic stocks compare with original limitations and no ranking",
+      "status": "PASS"
+    },
+    {
+      "width": 844,
+      "check": "synthetic date switch/reload prefix, shortage/refusal remain explicit",
+      "status": "PASS"
+    },
+    {
+      "width": 1280,
+      "check": "synthetic home, five identities, empty chart at boot, no horizontal overflow",
+      "status": "PASS"
+    },
+    {
+      "width": 1280,
+      "check": "search, K/volume/MACD, on-chart original verdict, pan/zoom preserve date",
+      "status": "PASS"
+    },
+    {
+      "width": 1280,
+      "check": "original precision synthetic JSON download matches viewer",
+      "status": "PASS"
+    },
+    {
+      "width": 1280,
+      "check": "two same-date synthetic stocks compare with original limitations and no ranking",
+      "status": "PASS"
+    },
+    {
+      "width": 1280,
+      "check": "synthetic date switch/reload prefix, shortage/refusal remain explicit",
+      "status": "PASS"
+    }
+  ],
+  "loads": [
+    {
+      "width": 390,
+      "ready_ms": 649,
+      "heap_bytes": 2809914,
+      "transfer_bytes": 1190944,
+      "open_chart_ms": 102,
+      "compare_ms": 62,
+      "date_switch_ms": 193
+    },
+    {
+      "width": 844,
+      "ready_ms": 650,
+      "heap_bytes": 2809914,
+      "transfer_bytes": 1190944,
+      "open_chart_ms": 98,
+      "compare_ms": 62,
+      "date_switch_ms": 190
+    },
+    {
+      "width": 1280,
+      "ready_ms": 650,
+      "heap_bytes": 2759522,
+      "transfer_bytes": 1190944,
+      "open_chart_ms": 87,
+      "compare_ms": 63,
+      "date_switch_ms": 194
+    }
+  ],
+  "page_errors": [],
+  "external_requests": [],
+  "android": "NOT_TESTED_NEW_BUILD",
+  "oracle": "NOT_DEPLOYED"
+}

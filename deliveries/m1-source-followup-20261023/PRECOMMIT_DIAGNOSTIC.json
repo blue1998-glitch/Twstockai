@@ -1,0 +1,31 @@
+{
+  "initial_check": {
+    "command": [
+      "git",
+      "diff",
+      "--cached",
+      "--check"
+    ],
+    "returncode": 2,
+    "classification": "OFFICIAL_ARCHIVED_BYTES_FORMAT_NOT_PRODUCT_TEST_FAILURE",
+    "reason": "Original HTML CRLF and source whitespace; preserving exact bytes and SHA takes priority over formatting an archive"
+  },
+  "code_docs_and_json_check": {
+    "command": [
+      "git",
+      "diff",
+      "--cached",
+      "--check",
+      "--",
+      ".",
+      ":(exclude)股票系統M1_v0_18/rotation_research/source_followup_20261023/raw/**"
+    ],
+    "returncode": 0,
+    "stdout": "",
+    "stderr": ""
+  },
+  "raw_exclusion_only": "Exact archived raw source and native extraction; hashes validated separately",
+  "html_staged_sha256": "74c34ecf911d5bc6b994f4e8735e77f8da3770b043f4d5baefba3ef2cb4028ee",
+  "original_html_bytes_unchanged_in_git_index": true,
+  "product_tests_unchanged": 59
+}

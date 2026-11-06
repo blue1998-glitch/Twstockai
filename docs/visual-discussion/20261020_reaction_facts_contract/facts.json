@@ -1,0 +1,561 @@
+{
+  "scope": "READ_ONLY_FULL_PRECISION_ARITHMETIC_EXAMPLES_NOT_NEW_ENGINE_OR_BACKTEST",
+  "as_of": "2026-10-16",
+  "source_frame_id": "sha256:b7215491c924570f3b40594fbd859f4b5c2532b247b62b6e625a8fcb66964f70",
+  "source_prefix_fingerprint": "sha256:e1651ca453df5b818e091575ded756953f69271f69f69d6008bb544f2fe76832",
+  "core_result_id": "sha256:ec7bca9ed6aa176c328fd8c4e94a31ea66967832e7089ac20a44090461f49da4",
+  "sources": [
+    {
+      "file": "M1_v019_cross_scale_real_v01.html",
+      "sha256": "f5b3b4e5e03da1c8291ff5854e0a6dfbb974286fe5cfbcb9a466ec6e138203ee"
+    },
+    {
+      "file": "comparison-data.json",
+      "sha256": "184bdef0b687ec0ab7bfcaaac2157ff7916fbc1000ef312d81b5efc0c2e73e15"
+    }
+  ],
+  "reference_provenance": [
+    {
+      "value": "30.05",
+      "origin": "B77 original research lower bound",
+      "eligible_after_saved_confirmation": "2025-03-24",
+      "selection_for_this_review": "RETROSPECTIVE_QUERY_ON_2026-10-20_NOT_HISTORICAL_SIGNAL",
+      "actual_historical_selection_time": "UNVERIFIED_NOT_RECORDED"
+    },
+    {
+      "value": "30.50",
+      "origin": "2025-05-14 raw high queried for observation",
+      "source_bar": "2025-05-14",
+      "automatic_reference_selection": false,
+      "selection_for_this_review": "RETROSPECTIVE_QUERY_ON_2026-10-20_NOT_HISTORICAL_SIGNAL",
+      "actual_historical_selection_time": "UNVERIFIED_NOT_RECORDED"
+    },
+    {
+      "value": "26.95",
+      "origin": "B88 original research upper bound and separately existing Jan27 manual reference",
+      "eligible_after_saved_box_confirmation": "2026-09-01",
+      "selection_for_this_review": "RETROSPECTIVE_QUERY_ON_2026-10-20_NOT_HISTORICAL_SIGNAL",
+      "actual_historical_selection_time": "UNVERIFIED_NOT_RECORDED"
+    },
+    {
+      "value": "27.40",
+      "origin": "2026-10-14 raw high queried for observation",
+      "source_bar": "2026-10-14",
+      "automatic_reference_selection": false,
+      "selection_for_this_review": "RETROSPECTIVE_QUERY_ON_2026-10-20_NOT_HISTORICAL_SIGNAL",
+      "actual_historical_selection_time": "UNVERIFIED_NOT_RECORDED"
+    }
+  ],
+  "examples": [
+    {
+      "bar": {
+        "close": "31.10",
+        "date": "2025-05-13",
+        "high": "31.40",
+        "low": "30.90",
+        "open": "31.30",
+        "volume_shares_scaled": "10264322"
+      },
+      "previous_record": {
+        "close": "31.20",
+        "date": "2025-05-12",
+        "high": "31.20",
+        "low": "30.80",
+        "open": "30.90",
+        "volume_shares_scaled": "8175754"
+      },
+      "body_direction": "BELOW",
+      "close_vs_previous_close": "BELOW",
+      "close_change": "-0.10",
+      "high_vs_previous_high": "ABOVE",
+      "low_vs_previous_low": "ABOVE",
+      "raw_range_below_previous_range": false,
+      "volume_vs_previous_record_ratio": "1.255458762580185264869760025",
+      "macd_original": {
+        "dea": "-0.37500489398383040131670538351540431941436986476399",
+        "dif": "-0.061780524460516741988277413533710582882495072643",
+        "histogram": "0.62644873904662731865685593996338747306374958424198",
+        "reason": "AVAILABLE"
+      },
+      "reference_comparisons": [
+        {
+          "value": "30.05",
+          "close": "ABOVE",
+          "high": "ABOVE",
+          "low": "ABOVE",
+          "qualification": "EXPLICIT_RESEARCH_REFERENCE_NOT_FORMAL_PRESSURE_BOUND",
+          "source_available_from_saved_date": "2025-03-24",
+          "source_exists_by_example_date": true,
+          "historical_signal_eligible": false,
+          "selection_qualification": "RETROSPECTIVE_RESEARCH_QUERY_NOT_AUTO_SELECTED_THEN"
+        },
+        {
+          "value": "30.50",
+          "qualification": "EXPLICIT_RESEARCH_REFERENCE_NOT_FORMAL_PRESSURE_BOUND",
+          "source_available_from_saved_date": "2025-05-14",
+          "source_exists_by_example_date": false,
+          "historical_signal_eligible": false,
+          "selection_qualification": "RETROSPECTIVE_RESEARCH_QUERY_NOT_AUTO_SELECTED_THEN",
+          "retrospective_arithmetic_only": {
+            "close": "ABOVE",
+            "high": "ABOVE",
+            "low": "ABOVE"
+          },
+          "prefix_eligible_comparison": null,
+          "reason": "REFERENCE_SOURCE_NOT_YET_OBSERVED_IN_THIS_PREFIX"
+        }
+      ]
+    },
+    {
+      "bar": {
+        "close": "30.35",
+        "date": "2025-05-14",
+        "high": "30.50",
+        "low": "30.05",
+        "open": "30.30",
+        "volume_shares_scaled": "33711861"
+      },
+      "previous_record": {
+        "close": "31.10",
+        "date": "2025-05-13",
+        "high": "31.40",
+        "low": "30.90",
+        "open": "31.30",
+        "volume_shares_scaled": "10264322"
+      },
+      "body_direction": "ABOVE",
+      "close_vs_previous_close": "BELOW",
+      "close_change": "-0.75",
+      "high_vs_previous_high": "BELOW",
+      "low_vs_previous_low": "BELOW",
+      "raw_range_below_previous_range": true,
+      "volume_vs_previous_record_ratio": "3.284372898667832127635902303",
+      "macd_original": {
+        "dea": "-0.31345237860449427132905260764530004094727011763479",
+        "dif": "-0.067242317087149751378441504164882927078871129118",
+        "histogram": "0.49242012303468903990122220696083422773679797703358",
+        "reason": "AVAILABLE"
+      },
+      "reference_comparisons": [
+        {
+          "value": "30.05",
+          "close": "ABOVE",
+          "high": "ABOVE",
+          "low": "EQUAL",
+          "qualification": "EXPLICIT_RESEARCH_REFERENCE_NOT_FORMAL_PRESSURE_BOUND",
+          "source_available_from_saved_date": "2025-03-24",
+          "source_exists_by_example_date": true,
+          "historical_signal_eligible": false,
+          "selection_qualification": "RETROSPECTIVE_RESEARCH_QUERY_NOT_AUTO_SELECTED_THEN"
+        },
+        {
+          "value": "30.50",
+          "close": "BELOW",
+          "high": "EQUAL",
+          "low": "BELOW",
+          "qualification": "EXPLICIT_RESEARCH_REFERENCE_NOT_FORMAL_PRESSURE_BOUND",
+          "source_available_from_saved_date": "2025-05-14",
+          "source_exists_by_example_date": true,
+          "historical_signal_eligible": false,
+          "selection_qualification": "RETROSPECTIVE_RESEARCH_QUERY_NOT_AUTO_SELECTED_THEN"
+        }
+      ]
+    },
+    {
+      "bar": {
+        "close": "29.80",
+        "date": "2025-05-19",
+        "high": "30.25",
+        "low": "29.70",
+        "open": "30.15",
+        "volume_shares_scaled": "19015004"
+      },
+      "previous_record": {
+        "close": "30.10",
+        "date": "2025-05-16",
+        "high": "30.40",
+        "low": "30.05",
+        "open": "30.15",
+        "volume_shares_scaled": "13229790"
+      },
+      "body_direction": "BELOW",
+      "close_vs_previous_close": "BELOW",
+      "close_change": "-0.30",
+      "high_vs_previous_high": "BELOW",
+      "low_vs_previous_low": "BELOW",
+      "raw_range_below_previous_range": false,
+      "volume_vs_previous_record_ratio": "1.437286910827760682520281879",
+      "macd_original": {
+        "dea": "-0.21824974945991030370160081663155547649379062103810",
+        "dif": "-0.144330383657547668189565102214097218579307176628",
+        "histogram": "0.14783873160472527102407142883491651582896688882020",
+        "reason": "AVAILABLE"
+      },
+      "reference_comparisons": [
+        {
+          "value": "30.05",
+          "close": "BELOW",
+          "high": "ABOVE",
+          "low": "BELOW",
+          "qualification": "EXPLICIT_RESEARCH_REFERENCE_NOT_FORMAL_PRESSURE_BOUND",
+          "source_available_from_saved_date": "2025-03-24",
+          "source_exists_by_example_date": true,
+          "historical_signal_eligible": false,
+          "selection_qualification": "RETROSPECTIVE_RESEARCH_QUERY_NOT_AUTO_SELECTED_THEN"
+        },
+        {
+          "value": "30.50",
+          "close": "BELOW",
+          "high": "BELOW",
+          "low": "BELOW",
+          "qualification": "EXPLICIT_RESEARCH_REFERENCE_NOT_FORMAL_PRESSURE_BOUND",
+          "source_available_from_saved_date": "2025-05-14",
+          "source_exists_by_example_date": true,
+          "historical_signal_eligible": false,
+          "selection_qualification": "RETROSPECTIVE_RESEARCH_QUERY_NOT_AUTO_SELECTED_THEN"
+        }
+      ]
+    },
+    {
+      "bar": {
+        "close": "30.15",
+        "date": "2025-05-20",
+        "high": "30.30",
+        "low": "29.70",
+        "open": "29.80",
+        "volume_shares_scaled": "13705767"
+      },
+      "previous_record": {
+        "close": "29.80",
+        "date": "2025-05-19",
+        "high": "30.25",
+        "low": "29.70",
+        "open": "30.15",
+        "volume_shares_scaled": "19015004"
+      },
+      "body_direction": "ABOVE",
+      "close_vs_previous_close": "ABOVE",
+      "close_change": "0.35",
+      "high_vs_previous_high": "ABOVE",
+      "low_vs_previous_low": "EQUAL",
+      "raw_range_below_previous_range": false,
+      "volume_vs_previous_record_ratio": "0.7207869638102626746752196318",
+      "macd_original": {
+        "dea": "-0.20323912368283493132574360459900594044412297044068",
+        "dif": "-0.143196620574533441822314756468807796245452368051",
+        "histogram": "0.12008500621660297900685769626039628839734120477936",
+        "reason": "AVAILABLE"
+      },
+      "reference_comparisons": [
+        {
+          "value": "30.05",
+          "close": "ABOVE",
+          "high": "ABOVE",
+          "low": "BELOW",
+          "qualification": "EXPLICIT_RESEARCH_REFERENCE_NOT_FORMAL_PRESSURE_BOUND",
+          "source_available_from_saved_date": "2025-03-24",
+          "source_exists_by_example_date": true,
+          "historical_signal_eligible": false,
+          "selection_qualification": "RETROSPECTIVE_RESEARCH_QUERY_NOT_AUTO_SELECTED_THEN"
+        },
+        {
+          "value": "30.50",
+          "close": "BELOW",
+          "high": "BELOW",
+          "low": "BELOW",
+          "qualification": "EXPLICIT_RESEARCH_REFERENCE_NOT_FORMAL_PRESSURE_BOUND",
+          "source_available_from_saved_date": "2025-05-14",
+          "source_exists_by_example_date": true,
+          "historical_signal_eligible": false,
+          "selection_qualification": "RETROSPECTIVE_RESEARCH_QUERY_NOT_AUTO_SELECTED_THEN"
+        }
+      ]
+    },
+    {
+      "bar": {
+        "close": "30.30",
+        "date": "2025-05-21",
+        "high": "30.40",
+        "low": "29.70",
+        "open": "30.05",
+        "volume_shares_scaled": "22391564"
+      },
+      "previous_record": {
+        "close": "30.15",
+        "date": "2025-05-20",
+        "high": "30.30",
+        "low": "29.70",
+        "open": "29.80",
+        "volume_shares_scaled": "13705767"
+      },
+      "body_direction": "ABOVE",
+      "close_vs_previous_close": "ABOVE",
+      "close_change": "0.15",
+      "high_vs_previous_high": "ABOVE",
+      "low_vs_previous_low": "EQUAL",
+      "raw_range_below_previous_range": false,
+      "volume_vs_previous_record_ratio": "1.633733011804446989358567091",
+      "macd_original": {
+        "dea": "-0.18833343142007660150580820300383250970878094008774",
+        "dif": "-0.128710662369043282226066596623138786767412818676",
+        "histogram": "0.11924553810206663855948321276138744588273624282348",
+        "reason": "AVAILABLE"
+      },
+      "reference_comparisons": [
+        {
+          "value": "30.05",
+          "close": "ABOVE",
+          "high": "ABOVE",
+          "low": "BELOW",
+          "qualification": "EXPLICIT_RESEARCH_REFERENCE_NOT_FORMAL_PRESSURE_BOUND",
+          "source_available_from_saved_date": "2025-03-24",
+          "source_exists_by_example_date": true,
+          "historical_signal_eligible": false,
+          "selection_qualification": "RETROSPECTIVE_RESEARCH_QUERY_NOT_AUTO_SELECTED_THEN"
+        },
+        {
+          "value": "30.50",
+          "close": "BELOW",
+          "high": "BELOW",
+          "low": "BELOW",
+          "qualification": "EXPLICIT_RESEARCH_REFERENCE_NOT_FORMAL_PRESSURE_BOUND",
+          "source_available_from_saved_date": "2025-05-14",
+          "source_exists_by_example_date": true,
+          "historical_signal_eligible": false,
+          "selection_qualification": "RETROSPECTIVE_RESEARCH_QUERY_NOT_AUTO_SELECTED_THEN"
+        }
+      ]
+    },
+    {
+      "bar": {
+        "close": "30.00",
+        "date": "2025-05-22",
+        "high": "30.30",
+        "low": "29.70",
+        "open": "30.20",
+        "volume_shares_scaled": "27968889"
+      },
+      "previous_record": {
+        "close": "30.30",
+        "date": "2025-05-21",
+        "high": "30.40",
+        "low": "29.70",
+        "open": "30.05",
+        "volume_shares_scaled": "22391564"
+      },
+      "body_direction": "BELOW",
+      "close_vs_previous_close": "BELOW",
+      "close_change": "-0.30",
+      "high_vs_previous_high": "BELOW",
+      "low_vs_previous_low": "EQUAL",
+      "raw_range_below_previous_range": false,
+      "volume_vs_previous_record_ratio": "1.249081529097297535804109083",
+      "macd_original": {
+        "dea": "-0.17863196527027679404993252540629688036066086147319",
+        "dif": "-0.139826100671077564226429815016154362968180547015",
+        "histogram": "0.07761172919839845964700542078028503478496062891638",
+        "reason": "AVAILABLE"
+      },
+      "reference_comparisons": [
+        {
+          "value": "30.05",
+          "close": "BELOW",
+          "high": "ABOVE",
+          "low": "BELOW",
+          "qualification": "EXPLICIT_RESEARCH_REFERENCE_NOT_FORMAL_PRESSURE_BOUND",
+          "source_available_from_saved_date": "2025-03-24",
+          "source_exists_by_example_date": true,
+          "historical_signal_eligible": false,
+          "selection_qualification": "RETROSPECTIVE_RESEARCH_QUERY_NOT_AUTO_SELECTED_THEN"
+        },
+        {
+          "value": "30.50",
+          "close": "BELOW",
+          "high": "BELOW",
+          "low": "BELOW",
+          "qualification": "EXPLICIT_RESEARCH_REFERENCE_NOT_FORMAL_PRESSURE_BOUND",
+          "source_available_from_saved_date": "2025-05-14",
+          "source_exists_by_example_date": true,
+          "historical_signal_eligible": false,
+          "selection_qualification": "RETROSPECTIVE_RESEARCH_QUERY_NOT_AUTO_SELECTED_THEN"
+        }
+      ]
+    },
+    {
+      "bar": {
+        "close": "27.05",
+        "date": "2026-10-14",
+        "high": "27.40",
+        "low": "26.60",
+        "open": "26.70",
+        "volume_shares_scaled": "80795741"
+      },
+      "previous_record": {
+        "close": "26.35",
+        "date": "2026-10-13",
+        "high": "26.85",
+        "low": "26.25",
+        "open": "26.85",
+        "volume_shares_scaled": "55126796"
+      },
+      "body_direction": "ABOVE",
+      "close_vs_previous_close": "ABOVE",
+      "close_change": "0.70",
+      "high_vs_previous_high": "ABOVE",
+      "low_vs_previous_low": "ABOVE",
+      "raw_range_below_previous_range": false,
+      "volume_vs_previous_record_ratio": "1.465634625309985365374762575",
+      "macd_original": {
+        "dea": "0.36036046766294102688128661044275491607137127348171",
+        "dif": "0.532566867746910837695424393780836851767983378589",
+        "histogram": "0.34441280016793962162827556667616387139322421021458",
+        "reason": "AVAILABLE"
+      },
+      "reference_comparisons": [
+        {
+          "value": "26.95",
+          "close": "ABOVE",
+          "high": "ABOVE",
+          "low": "BELOW",
+          "qualification": "EXPLICIT_RESEARCH_REFERENCE_NOT_FORMAL_PRESSURE_BOUND",
+          "source_available_from_saved_date": "2026-09-01",
+          "source_exists_by_example_date": true,
+          "historical_signal_eligible": false,
+          "selection_qualification": "RETROSPECTIVE_RESEARCH_QUERY_NOT_AUTO_SELECTED_THEN"
+        },
+        {
+          "value": "27.40",
+          "close": "BELOW",
+          "high": "EQUAL",
+          "low": "BELOW",
+          "qualification": "EXPLICIT_RESEARCH_REFERENCE_NOT_FORMAL_PRESSURE_BOUND",
+          "source_available_from_saved_date": "2026-10-14",
+          "source_exists_by_example_date": true,
+          "historical_signal_eligible": false,
+          "selection_qualification": "RETROSPECTIVE_RESEARCH_QUERY_NOT_AUTO_SELECTED_THEN"
+        }
+      ]
+    },
+    {
+      "bar": {
+        "close": "26.80",
+        "date": "2026-10-15",
+        "high": "27.05",
+        "low": "26.60",
+        "open": "26.95",
+        "volume_shares_scaled": "42215985"
+      },
+      "previous_record": {
+        "close": "27.05",
+        "date": "2026-10-14",
+        "high": "27.40",
+        "low": "26.60",
+        "open": "26.70",
+        "volume_shares_scaled": "80795741"
+      },
+      "body_direction": "BELOW",
+      "close_vs_previous_close": "BELOW",
+      "close_change": "-0.25",
+      "high_vs_previous_high": "BELOW",
+      "low_vs_previous_low": "EQUAL",
+      "raw_range_below_previous_range": false,
+      "volume_vs_previous_record_ratio": "0.5225026032003345324848249117",
+      "macd_original": {
+        "dea": "0.40181190956958382347179673371453957270998306466537",
+        "dif": "0.567617677196155009833837226801678199264430229400",
+        "histogram": "0.33161153525314237272408098617427725310889432946926",
+        "reason": "AVAILABLE"
+      },
+      "reference_comparisons": [
+        {
+          "value": "26.95",
+          "close": "BELOW",
+          "high": "ABOVE",
+          "low": "BELOW",
+          "qualification": "EXPLICIT_RESEARCH_REFERENCE_NOT_FORMAL_PRESSURE_BOUND",
+          "source_available_from_saved_date": "2026-09-01",
+          "source_exists_by_example_date": true,
+          "historical_signal_eligible": false,
+          "selection_qualification": "RETROSPECTIVE_RESEARCH_QUERY_NOT_AUTO_SELECTED_THEN"
+        },
+        {
+          "value": "27.40",
+          "close": "BELOW",
+          "high": "BELOW",
+          "low": "BELOW",
+          "qualification": "EXPLICIT_RESEARCH_REFERENCE_NOT_FORMAL_PRESSURE_BOUND",
+          "source_available_from_saved_date": "2026-10-14",
+          "source_exists_by_example_date": true,
+          "historical_signal_eligible": false,
+          "selection_qualification": "RETROSPECTIVE_RESEARCH_QUERY_NOT_AUTO_SELECTED_THEN"
+        }
+      ]
+    },
+    {
+      "bar": {
+        "close": "27.30",
+        "date": "2026-10-16",
+        "high": "27.70",
+        "low": "26.95",
+        "open": "27.10",
+        "volume_shares_scaled": "57437884"
+      },
+      "previous_record": {
+        "close": "26.80",
+        "date": "2026-10-15",
+        "high": "27.05",
+        "low": "26.60",
+        "open": "26.95",
+        "volume_shares_scaled": "42215985"
+      },
+      "body_direction": "ABOVE",
+      "close_vs_previous_close": "ABOVE",
+      "close_change": "0.50",
+      "high_vs_previous_high": "ABOVE",
+      "low_vs_previous_low": "ABOVE",
+      "raw_range_below_previous_range": false,
+      "volume_vs_previous_record_ratio": "1.360571925539579379706525857",
+      "macd_original": {
+        "dea": "0.44714884764746645236741177260178191782968455633330",
+        "dif": "0.628496599958996967949871928150751298308490523005",
+        "histogram": "0.36269550462306103116492031109793876095761193334340",
+        "reason": "AVAILABLE"
+      },
+      "reference_comparisons": [
+        {
+          "value": "26.95",
+          "close": "ABOVE",
+          "high": "ABOVE",
+          "low": "EQUAL",
+          "qualification": "EXPLICIT_RESEARCH_REFERENCE_NOT_FORMAL_PRESSURE_BOUND",
+          "source_available_from_saved_date": "2026-09-01",
+          "source_exists_by_example_date": true,
+          "historical_signal_eligible": false,
+          "selection_qualification": "RETROSPECTIVE_RESEARCH_QUERY_NOT_AUTO_SELECTED_THEN"
+        },
+        {
+          "value": "27.40",
+          "close": "BELOW",
+          "high": "ABOVE",
+          "low": "BELOW",
+          "qualification": "EXPLICIT_RESEARCH_REFERENCE_NOT_FORMAL_PRESSURE_BOUND",
+          "source_available_from_saved_date": "2026-10-14",
+          "source_exists_by_example_date": true,
+          "historical_signal_eligible": false,
+          "selection_qualification": "RETROSPECTIVE_RESEARCH_QUERY_NOT_AUTO_SELECTED_THEN"
+        }
+      ]
+    }
+  ],
+  "facts_verified_with_decimal": true,
+  "new_counterexample_fixture_dates_are_not_production_constants": true,
+  "product_implementation": "NOT_IMPLEMENTED_THIS_TURN",
+  "planned_acceptance_tests": "NOT_RUN_THIS_TURN",
+  "primary_pressure_id": null,
+  "formal_pressure_bounds": null,
+  "corporate_action_comparability": "UNVERIFIED",
+  "intraday_sequence": "UNKNOWN_FROM_DAILY_OHLC",
+  "historical_publication_timing": "UNVERIFIED",
+  "physical_android": "NOT_TESTED_NEW_BUILD",
+  "reference_source_availability_is_not_proof_of_historical_selection": true
+}

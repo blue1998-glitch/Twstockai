@@ -1,0 +1,621 @@
+--- a/AGENTS.md
++++ b/AGENTS.md
+@@ -1,3 +1,11 @@
++# 2026-10-25 最新｜0.3已固定保存，A/B修復0.4
++
++0.3原樣快照 `34b5dfa22b77cfe5c85a818e156389d5d0f9a444` 已正常push並GitHub讀回。本輪使用者明確授權兩階段分別保存，優先於下方歷史未提交／無push授權敘述。新入口 `M1_CAPITAL_RESEARCH_AB_20261025_HANDOFF.md`、`股票系統M1_v0_18/capital_research/repair_ab_20261025/REPORT.md`／CONTRACT_0_4。A跨股事實與順序依賴、B延後取消漏掉活單區間均先另存before實跑重現，再最小修復；決策／成交0.4、checkpoint0.3，原action_ledger不改。
++
++本輪僅一批20唯一方法PASS＝11新＋9必要回歸；第一階段測試0，不累加歷史38／51／46或合成序列。舊0.2／0.3原件、manifest、快照及log不改，舊source指紋對各固定版本。新資金事實只取本股；活單跨明示交易日但無完整帳／委託前綴拒絕，不推開盤／固定檢討天數；已到期、同日review及明示非交易日正例保留。全部資格false、主壓力null與70／2／8／0保持。R2/F及未支援帳務不擴張，無producer／UI／Android／樣本外；Astra及第一Cloud診斷未取得未讀。下一步Work唯讀新固定提交，工程只此唯一Codex／原工作區，無子代理、部署或下單。以下原文完整留史。
++
++---
++
+ # 2026-10-25 本地未提交｜資金研究0.3定向修復
+ 
+ 最新入口 `M1_CAPITAL_RESEARCH_REPAIR_20261025_HANDOFF.md`、`股票系統M1_v0_18/capital_research/repair_20261025/REPORT.md`／CONTRACT_0_3。使用者新授權只做指定隔離研究重現與最小修復，沒有commit/push授權；遠端／本地基線仍6be4333d。修改前0.2完整差異與78檔快照保留，新before／after與38唯一方法（33新＋5必要回歸）另存，不累加舊51／46或中間批。原帳與來源、圖形、庫、歷史及舊證據不改。
+--- a/CONTINUE_IN_WORK_MODE.md
++++ b/CONTINUE_IN_WORK_MODE.md
+@@ -1,3 +1,11 @@
++# 2026-10-25 最新｜0.3已固定保存，A/B修復0.4
++
++0.3原樣快照 `34b5dfa22b77cfe5c85a818e156389d5d0f9a444` 已正常push並GitHub讀回。本輪使用者明確授權兩階段分別保存，優先於下方歷史未提交／無push授權敘述。新入口 `M1_CAPITAL_RESEARCH_AB_20261025_HANDOFF.md`、`股票系統M1_v0_18/capital_research/repair_ab_20261025/REPORT.md`／CONTRACT_0_4。A跨股事實與順序依賴、B延後取消漏掉活單區間均先另存before實跑重現，再最小修復；決策／成交0.4、checkpoint0.3，原action_ledger不改。
++
++本輪僅一批20唯一方法PASS＝11新＋9必要回歸；第一階段測試0，不累加歷史38／51／46或合成序列。舊0.2／0.3原件、manifest、快照及log不改，舊source指紋對各固定版本。新資金事實只取本股；活單跨明示交易日但無完整帳／委託前綴拒絕，不推開盤／固定檢討天數；已到期、同日review及明示非交易日正例保留。全部資格false、主壓力null與70／2／8／0保持。R2/F及未支援帳務不擴張，無producer／UI／Android／樣本外；Astra及第一Cloud診斷未取得未讀。下一步Work唯讀新固定提交，工程只此唯一Codex／原工作區，無子代理、部署或下單。以下原文完整留史。
++
++---
++
+ # 2026-10-25 最新本地接續｜0.3定向修復待Work唯讀
+ 
+ 讀`M1_CAPITAL_RESEARCH_REPAIR_20261025_HANDOFF.md`及`股票系統M1_v0_18/capital_research/repair_20261025/`的REPORT／CONTRACT_0_3／新before與artifacts／tests-final／preservation。最新已核遠端與本地基線仍6be4333d490bcccfe952c7606dffb802b76cdd5c；0.2與0.3均未提交，原差異及78檔快照保持。沒有commit/push授權，不能把GitHub舊0.1當新0.3或冒Work已讀原件。
+--- a/股票系統M1_v0_18/capital_research/README.md
++++ b/股票系統M1_v0_18/capital_research/README.md
+@@ -1,3 +1,9 @@
++# A/B定向修復0.4
++
++0.3固定保存：`34b5dfa22b77cfe5c85a818e156389d5d0f9a444`。最新研究入口 [repair_ab_20261025/REPORT.md](repair_ab_20261025/REPORT.md)／[CONTRACT_0_4.md](repair_ab_20261025/CONTRACT_0_4.md)，完整交接見根 M1_CAPITAL_RESEARCH_AB_20261025_HANDOFF.md。只修本股證據所有權及未承接活單區間；舊結果原樣READ，0.3歷史指紋對固定快照。單批20唯一方法＝11新＋9必要回歸PASS，不累加舊證據；沒有市場績效或正式資格結論。以下舊文留史。
++
++---
++
+ # 當前本地研究修復0.3｜尚未提交
+ 
+ 最新入口：[repair_20261025/REPORT.md](repair_20261025/REPORT.md)、[CONTRACT_0_3.md](repair_20261025/CONTRACT_0_3.md)及root `M1_CAPITAL_RESEARCH_REPAIR_20261025_HANDOFF.md`。原0.2全文、source差異與證據保存在新baseline_0_2與原review_20261025，沒有覆寫舊before／after／log。最新遠端／本地基線仍6be4333d，不commit/push。
+--- a/股票系統M1_v0_18/capital_research/continuity.py
++++ b/股票系統M1_v0_18/capital_research/continuity.py
+@@ -8,7 +8,7 @@
+ from .core import timestamp, number, quantity
+ from .close_clock import close_record
+ 
+-CHECKPOINT = 'capital-account-checkpoint/0.2'
++CHECKPOINT = 'capital-account-checkpoint/0.3'
+ 
+ 
+ def ledger_prefix(origin, fills, day):
+@@ -33,7 +33,7 @@
+ 
+ 
+ def _check_result(execution):
+-    if execution['schema']!='capital-execution/0.3' or execution['status']!='SYNTHETIC_EXECUTION_REPLAY':
++    if execution['schema']!='capital-execution/0.4' or execution['status']!='SYNTHETIC_EXECUTION_REPLAY':
+         raise ValueError('LIFECYCLE_PROOF_REQUIRED: historical results remain readable, not implicitly upgraded')
+     if execution['result_id']!=fingerprint({k:v for k,v in execution.items() if k!='result_id'}):
+         raise ValueError('Execution fingerprint conflict')
+@@ -41,7 +41,7 @@
+     if not ids or len(ids)!=len(set(ids)) or set(ids)!=set(records):
+         raise ValueError('Exact ordered decision history required')
+     for key,d in records.items():
+-        if d['schema']!='capital-decision/0.3' or d['decision_id']!=key or fingerprint({k:v for k,v in d.items() if k!='decision_id'})!=key:
++        if d['schema']!='capital-decision/0.4' or d['decision_id']!=key or fingerprint({k:v for k,v in d.items() if k!='decision_id'})!=key:
+             raise ValueError('Decision history fingerprint conflict')
+     times=[timestamp(records[key]['decision_at']) for key in ids]
+     if times!=sorted(set(times)):raise ValueError('Decision history must be chronological')
+@@ -133,6 +133,15 @@
+         raise ValueError('EXISTING_ORDER_CONTINUATION_NOT_IMPLEMENTED: explicitly cancel all unfilled orders at review')
+     if len(set(cancelled_order_ids))!=len(cancelled_order_ids):
+         raise ValueError('Duplicate cancellation identity')
++    # This adapter has daily closes, not an uninterrupted intraday old-order
++    # replay. A live order crossing another declared trading date may have filled
++    # before review. Missing tape is not proof of no fills; fail closed using the
++    # origin's explicit calendar, never an invented market-opening time or T+2.
++    close_at=timestamp(checkpoint['state']['through_at'])
++    review_day=timestamp(decision_at).astimezone(close_at.tzinfo).date().isoformat()
++    if active and any(r['trading'] and close_at.date().isoformat()<r['date']<=review_day
++                      for r in checkpoint['origin_ledger_input']['calendar']):
++        raise ValueError('ACTIVE_ORDER_GAP_CONTINUATION_NOT_IMPLEMENTED: obtain a complete later ledger/order checkpoint before cancelling or reusing reservations')
+     return dict(as_of=checkpoint['state']['through_at'],available_at=decision_at,
+         holdings={c:dict(shares=n,sellable=n) for c,n in row['shares'].items()},
+         settled_cash=row['settled_cash'],reserved_cash=authoritative_reserve,
+@@ -154,6 +163,7 @@
+                 origin_initial_capital=checkpoint['state']['origin_initial_capital'],external_flow='0',
+                 latest_predecessor_id=old['decision_id'],
+                 cancelled_order_ids=sorted(cancelled_order_ids),
++                cancellation_effective_at=data['decision_at'] if cancelled_order_ids else None,
+                 qualification='VERIFIED_SYNTHETIC_LEDGER_PREFIX_NOT_INVESTOR_AUTHORITY')
+ 
+ 
+--- a/股票系統M1_v0_18/capital_research/core.py
++++ b/股票系統M1_v0_18/capital_research/core.py
+@@ -10,7 +10,7 @@
+ from rotation_research.core import fees
+ from .eligibility import entry_review, known_fact, validity_status
+ 
+-VERSION = 'capital-decision/0.3'
++VERSION = 'capital-decision/0.4'
+ FEATURES = ('price_volume', 'box', 'key_position', 'momentum', 'cross_scale')
+ BINDING = ('source_id', 'basis_id', 'adjustment_version')
+ 
+@@ -176,6 +176,7 @@
+     marks, layer1, layer2, evidence, novel = {}, {}, {}, {}, {}
+     used = set(data['consumed_evidence_tokens'])
+     for code, asset in data['assets'].items():
++        asset_evidence = {}
+         rows = [r for r in asset['marks'] if _known(r, cutoff, decision)]
+         if not rows:
+             raise ValueError('Missing as-of mark; no zero/forward fill: ' + code)
+@@ -198,6 +199,7 @@
+             if e['id'] in evidence and evidence[e['id']] != e:
+                 raise ValueError('Conflicting evidence identity')
+             evidence[e['id']] = deepcopy(e)
++            asset_evidence[e['id']] = deepcopy(e)
+             facts[e['feature']][e['stance']].append(deepcopy(e))
+             tokens = evidence_tokens(e)
+             if not tokens & used and validity_status(e,data['data_cutoff'],data['decision_at']) in ('WITHIN_DECLARED_INTERVAL','ONGOING_REQUIRES_CURRENT_REVIEW'):
+@@ -228,7 +230,7 @@
+                             liquidity_shares=entry['liquidity_shares'],
+                             reasonable_space=None if ref is None else str(number(ref['price']) - marks[code]),
+                             reference=deepcopy(ref), guaranteed_target=None, data_qualified=False,
+-                            capital_eligibility=entry_review(asset,code,data,evidence))
++                            capital_eligibility=entry_review(asset,code,data,asset_evidence))
+     q, nav, available, locked = _account(data, marks)
+     baseline_q = dict(q)
+     for o in data['account']['pending_orders']:
+--- a/股票系統M1_v0_18/capital_research/eligibility.py
++++ b/股票系統M1_v0_18/capital_research/eligibility.py
+@@ -68,10 +68,13 @@
+     if r['status']!='QUALIFIED_SYNTHETIC_RESEARCH':reasons.append('CAPITAL_'+r['status'])
+     ids=r['evidence_ids']
+     if not ids or len(set(ids))!=len(ids):reasons.append('MISSING_OR_DUPLICATE_REVIEW_EVIDENCE')
++    owned_ids={e['id'] for e in asset['evidence']}
+     for key in ids:
+         fact=evidence.get(key)
+-        if fact is None or fact['source_id']!=asset['source_id']:
++        if fact is None:
+             reasons.append('REVIEW_EVIDENCE_UNKNOWN:'+key);continue
++        if key not in owned_ids or any(fact[k]!=asset[k] for k in ('source_id','basis_id','adjustment_version')):
++            reasons.append('REVIEW_EVIDENCE_NOT_OWNED_OR_BINDING_MISMATCH:'+key);continue
+         status=validity_status(fact,cutoff,data['decision_at'])
+         if status not in ('WITHIN_DECLARED_INTERVAL','ONGOING_REQUIRES_CURRENT_REVIEW'):
+             reasons.append('EVIDENCE_'+status+':'+key)
+--- a/股票系統M1_v0_18/capital_research/execution.py
++++ b/股票系統M1_v0_18/capital_research/execution.py
+@@ -13,7 +13,7 @@
+ from .close_clock import close_record
+ from .eligibility import expired_entry_reasons
+ 
+-VERSION = 'capital-execution/0.3'
++VERSION = 'capital-execution/0.4'
+ 
+ 
+ def _refusal(reason):
+@@ -118,15 +118,18 @@
+     order_history=deepcopy(inherited.get('order_history',inherited['orders'])) if inherited else []
+     if set(order_state)&{o['id'] for o in orders}:
+         raise ValueError('New order identity collides with earlier account history')
++    decisions = []
+     if continuation:
+         for key in continuation['cancelled_order_ids']:
+-            order_state[key].update(status='CANCELLED_AT_REVIEW',reserved_cash='0')
++            at=result['continuity']['cancellation_effective_at']
++            order_state[key].update(status='CANCELLED_AT_REVIEW',reserved_cash='0',cancelled_at=at)
++            decisions.append(dict(at=at,order_id=key,status='CANCELLED_AT_REVIEW',
++                                  reason='EXPLICIT_REVIEW_BEFORE_NEXT_DECLARED_TRADING_DATE'))
+     for o in orders:
+         order_state[o['id']]=dict(remaining=o['shares'],status='WAITING',reserved_cash='0',
+             requires_reassessment=bool(o['side']=='BUY' and selected['funding']!='SETTLED'),
+             active_decision_at=o['decision_at'],active_decision_id=result['decision_id'])
+     order_history+=deepcopy(orders)
+-    decisions = []
+     initial_fill_count=len(initial_fills)
+     fills = deepcopy(initial_fills)
+     risk_observations=[];reassessments=[]
+@@ -345,6 +348,6 @@
+             predecessor_state=j.get('continuation',{}).get('checkpoint',{}).get('state_id'))))
+     if len(set(identities)) != 1:
+         raise ValueError('Alternatives must share exact capital/rights AND exogenous prices/capacity/states/availability/settlement path')
+-    return dict(schema='capital-comparison/0.3', synthetic=True, common_input_id=identities[0],
++    return dict(schema='capital-comparison/0.4', synthetic=True, common_input_id=identities[0],
+                 results={k:simulate(j) for k,j in jobs.items()}, ranking=None,
+                 total_net_return_comparison_qualified=False, policy_authorized=False)
+--- a/M1_CAPITAL_RESEARCH_AB_20261025_HANDOFF.md
++++ b/M1_CAPITAL_RESEARCH_AB_20261025_HANDOFF.md
+@@ -0,0 +1,29 @@
++# Work接續：0.3已保存，A/B研究修復0.4待唯讀驗收
++
++0.3原樣快照固定提交：`34b5dfa22b77cfe5c85a818e156389d5d0f9a444`，父提交6be4333d490bcccfe952c7606dffb802b76cdd5c，已正常push並GitHub讀回。0.4工程固定提交是包含本文件的新提交；精確SHA及最終遠端／本地狀態以Codex本輪回覆及唯讀查ref為準。本輪使用者明確授權兩階段分別提交／保存，優先於舊文件「無commit/push授權」的歷史敘述。這不是正式交易批准。
++
++以下可直接貼用；先填入／核對工具讀到的最新SHA，不要求使用者搬運原件：
++
++```text
++接續 blue1998-glitch/Twstockai，分支dev/m1-v018-chart-annotations。
++只有目前這個唯一Codex對話及/workspace/Twstockai工程，第一Cloud閒置；不開第二Codex、子代理或競爭分支。
++0.3固定快照34b5dfa22b77cfe5c85a818e156389d5d0f9a444已正常push；0.4為包含本交接的新工程提交。
++先唯讀核最新遠端、本地HEAD、祖先及差異；保留6be4333d、ea380cf7、1085b17、3b6fe93及全部後續／原件。不reset、clean、checkout覆蓋、強推或以main／舊ZIP替換。
++
++下一輪Work僅唯讀驗收，不修改、bootstrap、hydrate、測試、producer、commit/push、部署、下單、付費或發訊息。若進Codex也須先遵循當輪明示範圍，不把本次保存授權延伸成未來無限工程。
++讀根最新AGENTS、CONTINUE_IN_WORK_MODE、PROJECT_VISION、M1_V019_GRAPH_CORE_RESUME_HANDOFF、M1_CAPITAL_RESEARCH_PHASE1_HANDOFF、兩份review／repair的10/25 handoff及本新handoff。新入口股票系統M1_v0_18/capital_research/repair_ab_20261025：REPORT、CONTRACT_0_4、intake、execution、diagnostics、preservation、CHANGE_MANIFEST、tests-initial.log、before／after的input／expected／actual／source-versions／summary；對照fixtures、reproduce、test_ab、verify及core／eligibility／continuity／execution修改。
++
++A已實際重現：B無自有事實卻引用A-event，ABC順序會買B7，BAC反而拒絕。修後兩者都拒絕，自己的B事實正例仍買B7、完整決策排列不變。每股已知事實map及所有權／來源／基底／調整版本必查，不用同source借用別股事實。
++B已實際重現：1/9 10:00取消，原09:00／09:01仍可能成交舊單的區間被跳過；省略早段tape仍接受。修後有活單跨入另一明示trading日期而無完整帳／委託前綴即拒絕ACTIVE_ORDER_GAP，不提前釋放預留。原同日close後review、checkpoint已記錄到期及明示非交易日正例保留。這是能力界線，不是真實開盤推定或固定檢討天數，不提供無縫外部既有單重播。
++
++before／after各七個新合成job，expected在actual前保存。after的前身用相同opening／fills／經濟前綴明示重建新版本，只重綁版本身分，不靜默遷移舊結果。決策／成交／比較0.4、checkpoint0.3；原帳action_ledger不改。取消時間另有欄位及事件，一般reserve100保持，原資本2180與80現金權利／10股份權利、完整fills及剩餘量接續。
++
++本輪僅一批20唯一方法PASS＝11新＋9必要回歸。log雖名tests-initial.log，亦是唯一最終批；沒有累加中間批、before／after probe、歷史38／51／46或合成序列。第一階段測試0。原九路徑／10條趨勢競爭、真實producer／資格重算／市場六方案／UI／Android／樣本外未執行。
++0.3舊manifest對固定34b5dfa原件，0.2對原封存快照；不能要求現在0.4 source仍等於舊source。所有舊before／after／log／validation／來源與歷史保留。
++
++優先嘗試反駁A所有權／順序接線及B時間窗拒絕；檢查正例未誤擋、取消事件時間與一般reserve、權利／fills／latest token回連。沒取得新工程授權不自行修補，發現問題列最小輸入、預期／實際及證據範圍。
++跨輪改寫失效metadata的不可變事實登錄、完整分叉矩陣及其餘已列邊界未完成，不冒稱全面防復活／全部生命周期驗收。R2/F、信用、期初應付、外部既有單無縫重播、無來源限售解除、真實日終／交割認證及實現曝險配對仍未實作。
++正式action_resolution0.4、來源0.10及全部parents、P0-3/P0-4、reaction_facts與人工基底契約保持；70拒算／2不足／其中8換股影響未支援／合格真實總淨0、正式資格false及主壓力null不改。不補未知、不放寬拒算、不改策略圖形、不預設比例或勝者。
++Astra全文Codex未取得／未讀，第一Cloud890檔／10診斷未取得，不假定相同；不HTTP試探、重試拒絕入口或要求使用者搬檔。GitHub可讀不等Work已獨立驗收，須實際讀取再標已讀。
++最後提供最新遠端SHA、本地HEAD、剩餘差異、已讀／未讀、已測／未測及完整下一輪Work／Codex可貼指令。
++```
+--- a/股票系統M1_v0_18/capital_research/repair_ab_20261025/CONTRACT_0_4.md
++++ b/股票系統M1_v0_18/capital_research/repair_ab_20261025/CONTRACT_0_4.md
+@@ -0,0 +1,37 @@
++# 隔離研究 A/B 修復契約 0.4
++
++0.3 原樣快照固定在 `34b5dfa22b77cfe5c85a818e156389d5d0f9a444`，已正常推送並經 GitHub 讀回。其歷史「未提交」敘述、原 manifest、快照、before/after 和 log 原樣保留。本文件及新證據另存，不把舊保存結果升級或重算。
++
++新輸出為 capital-decision/0.4、capital-execution/0.4、capital-comparison/0.4、capital-account-checkpoint/0.3。傳輸 input 外殼不變；舊輸出仍可 READ，不能自動升級成新 checkpoint。本輪沒有改正式策略、圖形規則、歷史資料 schema、trend 或 action_ledger。
++
++## A：新資金事實必屬本股
++
++core 為每股建立當時已知、且通過來源／基底／調整版本檢查的 evidence map，僅把該 map 傳給 entry_review。跨股全域表仍用於原有事實 ID 衝突檢查，不能作另一股票的加碼資格來源。
++
++entry_review 再檢查引用 ID 必須出現在該 asset 自有 evidence，且來源、價格基底、調整版本逐欄相符。即使兩股使用同一 generic source 或同一基底字串，也不能從外部 map 借用另一股未歸屬本股的事實。缺事實、未可知、未合格、過期或撤銷維持拒絕。
++
++資產 JSON 物件排列不能改變本次 A 反例或正例的決策。有效舊事實仍可由當期 review 引用原 ID，不強迫成為新事件；原 formation/event/volume token 去重保持。目標未增加卻送 BUY、拆單總量超過目標差額，仍由既有 execution 合計數量及方向防線拒絕。
++
++本修復不提供跨輪不可變事實／撤銷登錄。若輸入另行改寫來源有效期或丟棄已知撤銷，不能冒稱已全面辨識「換名復活」；此為未覆蓋邊界，非本輪擴充。
++
++## B：取消前活單區間不能消失
++
++本 adapter 只有明示日終 checkpoint，沒有不中斷的舊單盤中完整重播。若 checkpoint 尚有活單，且從其日終到取消 review 已跨入另一個原 ledger 明示為 trading 的日期，account_at_checkpoint 必須拒絕：
++
++`ACTIVE_ORDER_GAP_CONTINUATION_NOT_IMPLEMENTED`
++
++省略較早 tape 不證明舊單沒有成交，也不解除此拒絕。不得先把舊單預留歸零、忽略可能成交，再用舊帳建立新委託。要支援該區間，後續需有完整且可回查的較晚帳務／委託 checkpoint；本版沒有自動補造。
++
++日期比較採 checkpoint 的明示時區，並使用原 ledger 完整 calendar；不推真實開盤時間、券商取消確認、T+2 或新的固定檢討天數。若中間日期全部明示非交易日，本限制不因經過日數而觸發。保守拒絕包含已跨入 trading 日期但未證明實際開盤／成交的情形，這是表示能力界線，不是交易策略門檻。
++
++原 checkpoint 已記錄到期／取消的單不屬活單，可依原規則接續；僅有「未來會到期」但尚無完整後續 checkpoint，不等於中途無成交。原同日收盤後 review、下一交易日才觀察的正例保持。被允許的續接會在 continuity 保存 cancellation_effective_at，舊單 state 及 execution_events 保存相同 cancelled_at／取消事件。
++
++取消只釋放該委託預留，一般 reserved_cash=100 仍由原帳承接。原始 opening、本金、完整 fills、現金／股份權利、應收應付與剩餘量仍只有 action_ledger 入帳。本輪沒有第二套會計或無縫外部既有單引擎。
++
++## 新證據與版本比較
++
++before、after 各保存七個定向合成 job 的 input、預先保存的 expected、actual、summary 及來源指紋。輸入 JSON 保留資產順序，不先排序而抹掉 A 的反例。after 的 B 前身以新引擎從同一 opening／市場／成交 prefix 明示重新產生；fixtures.rebind 逐項要求 row、accepted_fills、origin_initial_capital、general_reserved_cash 與舊保存前綴完全相同。只有版本及衍生身分重新綁定，不把 0.3 checkpoint 靜默升級，也不改 oracle。
++
++capture／verify 只能輸出至新目錄或 create-only 新檔。舊0.2／0.3 builder、verify 與大批序列為其封存版本，不是在新 source 上重寫舊結果的入口。
++
++全部正式資格及授權 false、主壓力未知 null，70拒算／2不足／其中8換股影響未支援／合格真實總淨0保持。R2/F、信用、期初應付、外部既有單不中斷完整重播、無來源限售解除、真實日終／交割認證及實現曝險配對仍未實作。無真實 producer、資格重算、市場六方案、UI／Android 或樣本外執行；合成案例不構成市場績效或策略勝負。
+--- a/股票系統M1_v0_18/capital_research/repair_ab_20261025/REPORT.md
++++ b/股票系統M1_v0_18/capital_research/repair_ab_20261025/REPORT.md
+@@ -0,0 +1,47 @@
++# 0.3 保存與 A/B 定向修復結果
++
++本輪依使用者明確授權，只有本對話／原工作區執行，沒有新 Codex、子代理或分支。先完成並核實 0.3 保存，才開始 A/B 重現及修復。
++
++## 第一階段：0.3 原樣保存
++
++起點遠端及本地 HEAD 為 `6be4333d490bcccfe952c7606dffb802b76cdd5c`，7 tracked 修改、index 空、200 untracked，三個指定祖先均保留。逐檔檢視207檔（63497054 bytes）的類型、可讀性、JSON及憑證／私人原件／無關暫存範圍，未發現發布排除項。內容／狀態總指紋與先前盤點完全相同。
++
++保存前本輪實核：0.3 manifest 206項、0.2 manifest 對快照71項、快照78檔、舊validation26檔、0.2 source17項及0.3 source24項均相符。原0.2只對封存 source，沒有要求0.3 source等於0.2。全部207檔原樣提交：
++
++`34b5dfa22b77cfe5c85a818e156389d5d0f9a444`
++
++正常 push 至指定分支，Git ls-remote及GitHub connector均確認該SHA。GitHub manifest全文73712 bytes／SHA256 80b77241b7b1e5ded50905350d6871e1f91266633bbf98a505cd7b2b2633f2d2 與本地完全相同；另讀回根repair交接、core及partial-cancel原件，其Git blob與固定提交相同。收據見 intake.json。第一階段測試0項，保存38／51 PASS不冒重跑。沒有重建0.3或改寫歷史未提交敘述。
++
++## 第二階段：先保存再重現
++
++fixtures只克隆已固定的合成partial-cancel／expiry輸入。reproduce先create-only保存全部精確input、expected及來源版本，再執行actual；數值source修改之前，before七案完整落盤。沒有改oracle或原保存fixture。
++
++|案例|0.3修前實際|0.4修後實際|
++|---|---|---|
++|A：B無自有事實、引用A-event，A/B/C順序|B合格，E-partial進建議，買B7|B不合格，方案拒絕，零成交|
++|A：相同輸入換B/A/C順序|B不合格，方案拒絕|與A/B/C相同，方案拒絕|
++|A：自己的B-event正例|買B7|仍買B7，順序變換亦一致|
++|B：1/9 10:00才取消，保留09:00／09:01觀察|接受，舊剩單未補入成交；1/12以舊帳賣A80/B7|明確ACTIVE_ORDER_GAP拒絕|
++|B：省略09:00早段tape|仍接受|仍拒絕，缺觀察不能證明無成交|
++|B：原1/8 17:00 review|可續接，1/9處置|仍成立，另保存取消可知／生效時間|
++|B：checkpoint已記錄到期，延後review|可續接|仍成立，無需假造取消|
++
++兩個機制疑點均實際重現，沒有撤回項。A的第一個順序會誤放B新資金；B證實的是漏掉舊單仍可能成交的時間窗，沒有把反事實可能成交稱成真實成交，也沒有宣稱已實證真實投資人重用現金或超賣。
++
++## 最小修改與實際測試
++
++core/eligibility改本股已知事實map及所有權／完整基底再查；continuity拒絕未承接的活單交易日期區間；execution只補明確取消時間／事件。決策、成交、比較0.4，checkpoint0.3；原action_ledger、trend、正式來源／圖形／UI未改。
++
++只執行一批20個唯一方法，全部PASS：11個A/B新方法＋9個直接相關必要回歸。完整log為tests-initial.log（它同時是唯一且最終批），沒有再跑第二批。verify.py列出精確範圍。涵蓋本股正反例／排列不變、同來源基底仍須所有權、三欄綁定、零目標買單／拆單合計防線、延後取消／省略tape拒絕、預留不變、同日取消時間、已到期正例、明示非交易日不是固定日數門檻、舊checkpoint不自動升級；必要回歸包含有效舊事實、日終可知、最新前身／完整fills及token、部分成交取消與到期、失效舊單、全部false資格及READ不重算。
++
++初批即PASS，沒有未解測試失敗；沒有修改oracle換取通過。before／after七job、產物生成及前身重綁不另計測試方法；不累加歷史38、51、46或合成序列。未執行舊全suite、原九路徑／10條趨勢競爭、真實producer、資格重算、市場六方案、UI／Android或樣本外。
++
++## 資本保護與限制
++
++同日review正例保持原始2180、期初fills前綴、一般reserve100與權利。取消前B剩13預留261.65039仍保存在原checkpoint；拒絕分支不修改它。接受分支保存1/8 17:00取消事件。現金權利80與股份權利10各只交付一次；終點仍現金2069.720＋A10×10，費稅9、滑價1.28。原部分成交兩項回歸還逐日檢查資產式，沒有只靠終點相等認證全部路徑。
++
++B修復是有限adapter的保守拒絕，不提供取消前盤中完整重播或券商確認。進入另一明示交易日但尚無證據證明已開盤的情形仍拒絕；沒有自行發明真實開盤／交割時間。0.4不自動消費舊0.3 checkpoint，舊結果仍READ。
++
++跨輪竄改有效期／撤銷metadata的不可變事實登錄、來源真實性認證、混合限售股解除、精確日終可知邊界／等價as_of字串及完整分叉矩陣並非本輪完成項。R2/F及其餘未支援帳務保持未實作。70／2／其中8／0、全部正式資格false、主壓力null保持；沒有策略勝負或市場績效結論。Astra全文Codex仍未取得／未讀，第一Cloud的890檔與10份診斷未取得，不假定相同。Work尚未獨立原件驗收。
++
++下一步建議Work對新固定提交作唯讀驗收，優先檢查本股所有權接線、活單區間拒絕是否過寬及正例保留；完整指令見根M1_CAPITAL_RESEARCH_AB_20261025_HANDOFF.md。若工具無法取得原件，保持未讀，不要求使用者搬檔。沒有新明確任務前不擴張到策略、R2/F或真實窗口研究。
+--- a/股票系統M1_v0_18/capital_research/repair_ab_20261025/fixtures.py
++++ b/股票系統M1_v0_18/capital_research/repair_ab_20261025/fixtures.py
+@@ -0,0 +1,86 @@
++"""Minimal A/B counterexamples cloned from the fixed v0.3 synthetic record."""
++from copy import deepcopy
++import json
++from pathlib import Path
++
++ROOT = Path(__file__).resolve().parents[1]
++BASELINE = '34b5dfa22b77cfe5c85a818e156389d5d0f9a444'
++EXPECTED = {
++    'A-foreign-ABC': 'REJECT_B_NEW_CAPITAL: A evidence cannot qualify B',
++    'A-foreign-BAC': 'REJECT_B_NEW_CAPITAL: asset object order cannot change qualification',
++    'A-own-evidence': 'ACCEPT: B own evidence permits this synthetic partial buy',
++    'B-delayed-cancel': 'REFUSE_ACTIVE_ORDER_GAP: old orders could execute before cancellation',
++    'B-delayed-omitted-tape': 'REFUSE_ACTIVE_ORDER_GAP: omitted observations do not prove no fills',
++    'B-same-close-review': 'ACCEPT: explicit review before the next declared trading day',
++    'B-already-expired': 'ACCEPT: expired orders do not create an active-order gap',
++}
++
++
++def saved_pair(expired=False):
++    name = 'partial-expiry-chain' if expired else 'partial-cancel-chain'
++    path = ROOT / 'repair_20261025/artifacts/after' / (name + '.json')
++    return deepcopy(json.loads(path.read_text())['value']['input'])
++
++
++def rebind(pair):
++    """Mint this engine's lineage from the SAME opening, fills and market prefix.
++
++    This is a new directed synthetic execution, never migration of a saved result.
++    Account values, original ledger and economic intent are left untouched.
++    """
++    from capital_research.core import decide
++    from capital_research.execution import simulate
++    from capital_research.continuity import make_checkpoint
++    first = pair['first']
++    result = simulate(first)
++    cp = make_checkpoint(first['ledger_input'], result, through_at=first['observed_until'])
++    old = pair['next']['continuation']['checkpoint']['state']
++    for key in ('row', 'accepted_fills', 'origin_initial_capital', 'general_reserved_cash'):
++        if cp['state'][key] != old[key]:
++            raise ValueError('Version rebind changed economic prefix: ' + key)
++    pair['next']['continuation'].update(
++        checkpoint=cp, previous_decision=decide(first['decision_input']))
++    return pair
++
++
++def delayed(job):
++    job = deepcopy(job)
++    at = '2026-01-09T10:00:00+08:00'
++    job['decision_input']['decision_at'] = at
++    job['decision_input']['account']['available_at'] = at
++    for order in job['orders']:
++        order.update(decision_at=at, submitted_at='2026-01-09T10:01:00+08:00')
++    # Retain the 09:00/09:01 observations BEFORE cancellation. New orders can
++    # execute only on Jan12, consistent with the existing prior-day ledger rule.
++    later = deepcopy(job['tape'])
++    for obs in later:
++        obs['at'] = obs['at'].replace('2026-01-09', '2026-01-12')
++        obs['available_at'] = obs['at']
++    job['tape'] += later
++    return job
++
++
++def cases(*, current_lineage=False):
++    pair = saved_pair()
++    expired = saved_pair(True)
++    if current_lineage:
++        pair = rebind(pair)
++        expired = rebind(expired)
++    foreign = deepcopy(pair['first'])
++    foreign['decision_input']['assets']['B']['evidence'] = []
++    foreign['decision_input']['assets']['B']['capital_eligibility']['evidence_ids'] = ['A-event']
++    reordered = deepcopy(foreign)
++    assets = reordered['decision_input']['assets']
++    reordered['decision_input']['assets'] = {c: assets[c] for c in ('B', 'A', 'C')}
++    late = delayed(pair['next'])
++    omitted = deepcopy(late)
++    omitted['tape'] = [o for o in omitted['tape'] if o['at'][:10] == '2026-01-12']
++    expired_late = delayed(expired['next'])
++    expired_late['tape'] = [o for o in expired_late['tape'] if o['at'][:10] == '2026-01-12']
++    return {
++        'A-foreign-ABC': foreign, 'A-foreign-BAC': reordered,
++        'A-own-evidence': deepcopy(pair['first']),
++        'B-delayed-cancel': late, 'B-delayed-omitted-tape': omitted,
++        'B-same-close-review': deepcopy(pair['next']),
++        'B-already-expired': expired_late,
++    }
+--- a/股票系統M1_v0_18/capital_research/repair_ab_20261025/reproduce.py
++++ b/股票系統M1_v0_18/capital_research/repair_ab_20261025/reproduce.py
+@@ -0,0 +1,62 @@
++"""Create-only input/expectation first, then actual A/B results; no old outputs."""
++import argparse
++import hashlib
++import json
++from pathlib import Path
++from capital_research.core import decide, VERSION as DECISION_VERSION
++from capital_research.execution import simulate, VERSION as EXECUTION_VERSION
++from capital_research.continuity import CHECKPOINT
++from .fixtures import BASELINE, EXPECTED, ROOT, cases
++
++
++def save(path, value):
++    path.parent.mkdir(parents=True, exist_ok=True)
++    with path.open('x') as f:
++        json.dump(value, f, ensure_ascii=False, indent=2, allow_nan=False)
++        f.write('\n')
++
++
++def capture(output, *, current_lineage=False):
++    directory = Path(output)
++    inputs = cases(current_lineage=current_lineage)
++    sources = {str(p.relative_to(ROOT)): hashlib.sha256(p.read_bytes()).hexdigest()
++               for p in sorted(ROOT.glob('*.py'))}
++    sources.update({str(p.relative_to(ROOT)): hashlib.sha256(p.read_bytes()).hexdigest()
++                    for p in sorted(Path(__file__).parent.glob('*.py'))})
++    save(directory / 'source-versions.json', dict(
++        baseline=BASELINE, decision=DECISION_VERSION, execution=EXECUTION_VERSION,
++        checkpoint=CHECKPOINT, sources=sources, synthetic=True,
++        current_lineage_reminted=current_lineage))
++    # Preserve every exact input and oracle before evaluating any case.
++    for name, job in inputs.items():
++        save(directory / name / 'input.json', job)
++        save(directory / name / 'expected.json', dict(expected=EXPECTED[name], synthetic=True))
++    summary = {}
++    for name, job in inputs.items():
++        actual = dict(decision=None, execution=None, error=None)
++        try:
++            if not job.get('continuation'):
++                actual['decision'] = decide(job['decision_input'])
++            actual['execution'] = simulate(job)
++        except (ValueError, KeyError) as e:
++            actual['error'] = type(e).__name__ + ': ' + str(e)
++        save(directory / name / 'actual.json', actual)
++        e = actual['execution']
++        row = dict(error=actual['error'], status=e['status'] if e else None,
++                   new_fills=[dict(code=f['code'], side=f['side'], shares=f['shares'], date=f['date'])
++                              for f in e['fills'] if f['id'] in e['new_fill_ids']] if e else [])
++        if actual['decision']:
++            d = actual['decision']['decision']
++            row.update(B_qualified=d['layer2']['B']['capital_eligibility']['qualified_for_synthetic_proposal'],
++                       recommendations=d['research_recommendation']['candidate_ids'])
++        summary[name] = row
++        print(name, json.dumps(row, ensure_ascii=False))
++    save(directory / 'summary.json', summary)
++
++
++if __name__ == '__main__':
++    parser = argparse.ArgumentParser()
++    parser.add_argument('--output', required=True)
++    parser.add_argument('--current-lineage', action='store_true')
++    args = parser.parse_args()
++    capture(args.output, current_lineage=args.current_lineage)
+--- a/股票系統M1_v0_18/capital_research/repair_ab_20261025/test_ab.py
++++ b/股票系統M1_v0_18/capital_research/repair_ab_20261025/test_ab.py
+@@ -0,0 +1,127 @@
++"""Directed A/B counterexamples and positive controls, not market validation."""
++from copy import deepcopy
++from decimal import Decimal
++import unittest
++from unittest.mock import patch
++from capital_research.core import decide
++from capital_research.execution import simulate
++from capital_research.continuity import validate_checkpoint
++from capital_research.eligibility import entry_review
++from .fixtures import cases, saved_pair, rebind, delayed
++
++
++class ABTests(unittest.TestCase):
++    @classmethod
++    def setUpClass(cls):
++        cls.jobs = cases(current_lineage=True)
++
++    def test_foreign_evidence_rejects_buy_and_recommendation_in_both_asset_orders(self):
++        for name in ('A-foreign-ABC', 'A-foreign-BAC'):
++            job = self.jobs[name]
++            d = decide(job['decision_input'])['decision']
++            self.assertFalse(d['layer2']['B']['capital_eligibility']['qualified_for_synthetic_proposal'])
++            self.assertNotIn('E-partial', d['research_recommendation']['candidate_ids'])
++            out = simulate(job)
++            self.assertEqual(out['status'], 'REFUSED')
++            self.assertEqual(out['fills'], [])
++        self.assertEqual(decide(self.jobs['A-foreign-ABC']['decision_input'])['decision'],
++                         decide(self.jobs['A-foreign-BAC']['decision_input'])['decision'])
++
++    def test_own_evidence_positive_is_order_invariant_and_partially_fills(self):
++        job = deepcopy(self.jobs['A-own-evidence'])
++        other = deepcopy(job)
++        assets = other['decision_input']['assets']
++        other['decision_input']['assets'] = {c: assets[c] for c in ('B', 'A', 'C')}
++        self.assertEqual(decide(job['decision_input']), decide(other['decision_input']))
++        one, two = simulate(job), simulate(other)
++        self.assertEqual(one['fills'], two['fills'])
++        self.assertEqual([(f['code'], f['shares']) for f in one['fills']], [('A', '20'), ('B', '7')])
++
++    def test_foreign_owner_is_rejected_even_with_identical_source_and_basis(self):
++        data = deepcopy(self.jobs['A-foreign-ABC']['decision_input'])
++        asset = data['assets']['B']
++        fact = deepcopy(data['assets']['A']['evidence'][0])
++        for key in ('source_id', 'basis_id', 'adjustment_version'):
++            fact[key] = asset[key]
++        out = entry_review(asset, 'B', data, {'A-event': fact})
++        self.assertFalse(out['qualified_for_synthetic_proposal'])
++        self.assertIn('REVIEW_EVIDENCE_NOT_OWNED_OR_BINDING_MISMATCH:A-event', out['reasons'])
++
++    def test_owned_fact_requires_all_source_basis_adjustment_fields(self):
++        data = self.jobs['A-own-evidence']['decision_input']
++        asset = data['assets']['B']
++        for key in ('source_id', 'basis_id', 'adjustment_version'):
++            fact = deepcopy(asset['evidence'][0]); fact[key] = 'wrong'
++            out = entry_review(asset, 'B', data, {fact['id']: fact})
++            self.assertFalse(out['qualified_for_synthetic_proposal'])
++            self.assertTrue(any('BINDING_MISMATCH' in x for x in out['reasons']))
++
++    def test_buy_without_target_increase_and_oversized_split_still_refuse(self):
++        job = deepcopy(self.jobs['A-own-evidence'])
++        buy = deepcopy(job['orders'][1]); buy['shares'] = '1'
++        zero = deepcopy(job); zero.update(plan_id='A-zero', orders=[buy])
++        with self.assertRaisesRegex(ValueError, 'target change'):
++            simulate(zero)
++        split = deepcopy(job)
++        one, two = deepcopy(job['orders'][1]), deepcopy(job['orders'][1])
++        one.update(id='split-1', shares='11'); two.update(id='split-2', shares='10')
++        split['orders'] = [job['orders'][0], one, two]
++        with self.assertRaisesRegex(ValueError, 'target change'):
++            simulate(split)
++
++    def test_delayed_cancellation_refuses_before_new_execution_and_keeps_old_reserve(self):
++        job = self.jobs['B-delayed-cancel']
++        saved = deepcopy(job['continuation']['checkpoint'])
++        self.assertEqual(saved['state']['order_states']['B-buy']['reserved_cash'], '261.65039')
++        with patch('capital_research.execution.replay', side_effect=AssertionError('must refuse before new execution')):
++            with self.assertRaisesRegex(ValueError, 'ACTIVE_ORDER_GAP_CONTINUATION_NOT_IMPLEMENTED'):
++                simulate(job)
++        self.assertEqual(job['continuation']['checkpoint'], saved)
++
++    def test_omitting_earlier_tape_does_not_prove_no_old_fills(self):
++        with self.assertRaisesRegex(ValueError, 'ACTIVE_ORDER_GAP_CONTINUATION_NOT_IMPLEMENTED'):
++            simulate(self.jobs['B-delayed-omitted-tape'])
++
++    def test_same_close_review_records_actual_cancel_time_and_keeps_capital_rights(self):
++        job = self.jobs['B-same-close-review']; out = simulate(job)
++        self.assertEqual(out['ledger']['initial_equity'], '2180')
++        self.assertEqual(job['decision_input']['account']['reserved_cash'], '100')
++        self.assertEqual(out['fills'][:2], job['continuation']['checkpoint']['state']['accepted_fills'])
++        for key in ('A-sell', 'B-buy'):
++            state = out['order_states'][key]
++            self.assertEqual(state['cancelled_at'], '2026-01-08T17:00:00+08:00')
++            self.assertEqual(state['reserved_cash'], '0')
++            self.assertIn(dict(at=state['cancelled_at'], order_id=key, status='CANCELLED_AT_REVIEW',
++                               reason='EXPLICIT_REVIEW_BEFORE_NEXT_DECLARED_TRADING_DATE'), out['execution_events'])
++        last = out['ledger']['daily'][-1]
++        self.assertEqual(last['shares'], dict(A='10', B='0', C='0'))
++        self.assertEqual(last['cash_claims'], [])
++        self.assertEqual(last['share_receivables'], [])
++        self.assertEqual(Decimal(last['net_accrual_equity']) + Decimal('9') + Decimal('1.28'), Decimal('2180'))
++
++    def test_already_expired_orders_allow_later_review_without_fake_cancellation(self):
++        job = self.jobs['B-already-expired']; out = simulate(job)
++        self.assertEqual(job['continuation']['cancelled_order_ids'], [])
++        for key in ('A-sell', 'B-buy'):
++            self.assertEqual(out['order_states'][key]['status'], 'EXPIRED_UNFILLED')
++        self.assertEqual(out['ledger']['initial_equity'], '2180')
++        self.assertEqual(job['decision_input']['account']['reserved_cash'], '100')
++
++    def test_declared_nontrading_gap_is_not_a_fixed_review_day_deadline(self):
++        pair = saved_pair()
++        for row in pair['first']['ledger_input']['calendar']:
++            if row['date'] == '2026-01-09': row['trading'] = False
++        pair['next']['ledger_input'] = deepcopy(pair['first']['ledger_input'])
++        pair = rebind(pair)
++        job = delayed(pair['next'])
++        job['tape'] = [o for o in job['tape'] if o['at'][:10] == '2026-01-12']
++        self.assertEqual(simulate(job)['status'], 'SYNTHETIC_EXECUTION_REPLAY')
++
++    def test_historical_v03_checkpoint_is_not_implicitly_upgraded(self):
++        old = saved_pair()['next']['continuation']['checkpoint']
++        with self.assertRaisesRegex(ValueError, 'Versioned lifecycle checkpoint required'):
++            validate_checkpoint(old)
++
++
++if __name__ == '__main__':
++    unittest.main()
+--- a/股票系統M1_v0_18/capital_research/repair_ab_20261025/verify.py
++++ b/股票系統M1_v0_18/capital_research/repair_ab_20261025/verify.py
+@@ -0,0 +1,26 @@
++"""Only A/B methods and directly affected qualification/continuity regressions."""
++import sys
++import unittest
++
++TESTS = [
++    'capital_research.repair_ab_20261025.test_ab',
++    'capital_research.repair_20261025.test_repairs.RepairTests.test_not_qualified_excludes_candidate_and_prevents_fill',
++    'capital_research.repair_20261025.test_repairs.RepairTests.test_old_valid_facts_survive_a_current_review_without_becoming_new_events',
++    'capital_research.repair_20261025.test_repairs.RepairTests.test_delayed_daily_close_must_be_available_before_next_decision',
++    'capital_research.repair_20261025.test_repairs.RepairTests.test_reassessment_then_another_execution_keeps_all_fills_and_tokens',
++    'capital_research.repair_20261025.test_repairs.RepairTests.test_partial_fills_cancel_and_continue_without_losing_claims_or_reserves',
++    'capital_research.repair_20261025.test_repairs.RepairTests.test_partial_fills_expire_and_continue_without_inventing_cancellation',
++    'capital_research.repair_20261025.test_repairs.RepairTests.test_expiry_and_invalidation_cancel_standing_orders_inside_limit',
++    'capital_research.repair_20261025.test_repairs.RepairTests.test_research_permission_never_grants_external_qualification_or_R2',
++    'capital_research.test_mechanisms.MechanismTests.test_cli_READ_never_imports_or_recalculates_engines',
++]
++
++
++def main():
++    suite = unittest.defaultTestLoader.loadTestsFromNames(TESTS)
++    result = unittest.TextTestRunner(verbosity=2).run(suite)
++    return 0 if result.wasSuccessful() else 1
++
++
++if __name__ == '__main__':
++    sys.exit(main())

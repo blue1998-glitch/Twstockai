@@ -1,0 +1,59 @@
+{
+  "research": {
+    "schema": "capital-quantity-candidates/0.1",
+    "synthetic": true,
+    "status": "REFUSED_SEARCH_LIMIT",
+    "incumbent": "A",
+    "destination": "B",
+    "generator_policy": {
+      "version": "synthetic-quantity-domain/0.1",
+      "parameter_source": "EXPLICIT_SYNTHETIC_ENUMERATION_NOT_USER_RULE",
+      "available_at": "2026-01-05T14:00:00+08:00",
+      "edge_budget": "1000"
+    },
+    "bounds": {
+      "retained_A": {
+        "minimum": "98",
+        "maximum": "100"
+      },
+      "additional_B": {
+        "minimum": "0",
+        "maximum": "2"
+      }
+    },
+    "grid_points": 9,
+    "configured_grid_limit": 8,
+    "implementation_grid_limit": 1024,
+    "legacy_full_builder_limit": 20000,
+    "enumeration_complete": false,
+    "baseline": null,
+    "candidates": [],
+    "groups": {
+      "CURRENTLY_FEASIBLE": [],
+      "WAIT_SETTLEMENT_REASSESSMENT": [],
+      "REJECTED": [],
+      "NOT_IMPLEMENTED": []
+    },
+    "selected_id": null,
+    "ranking": null,
+    "order_generation": "NOT_PERFORMED",
+    "execution": "NOT_PERFORMED",
+    "candidate_scope": "MUTUALLY_EXCLUSIVE_ALTERNATIVES_FROM_ONE_ACCOUNT_NOT_SIMULTANEOUS_ORDERS",
+    "reasons": [
+      "EXPLICIT_GRID_ENUMERATION_LIMIT_EXCEEDED"
+    ],
+    "data_qualified": false,
+    "execution_model_qualified": false,
+    "historical_signal_eligible": false,
+    "policy_authorized": false,
+    "live_execution_authorized": false,
+    "primary_pressure_id": null
+  },
+  "source_integrity_metadata": {
+    "full_request_id": "sha256:ce313c6ac85ce6d88bb661c41176f48592da8440362357850a29acd12a673b64",
+    "original": {
+      "full_source_fingerprint": "SYNTHETIC_SOURCE_BASELINE",
+      "historical_availability": "NOT_MARKET_DATA"
+    }
+  }
+}

@@ -1,0 +1,14 @@
+# 公司行動適用對象與來源契約 0.3
+
+1. 新純數值action_scope.py及外部action_scope_sources.py；新schema rotation-scoped-action-catalog/0.3。原official_actions.py、action_sources／action_ledger、core／loop／策略參數、0.1／0.2 catalog、庫、輸入與歷史不改。新事件表只在獨立目錄；四個原現金組件逐位元語義不變，原配股另有父ID／新ID及前後觀察時點。
+2. 重新驗六份官方原件／meta的URL、origin、HTTP、長度、SHA、衍生文字雙指紋；HTML再以HTMLParser重核可見內容，PDF核其magic及官方索引真實連結。三PDF／三HTML只算六原件，抽字不算獨立證據。健保署403只存failed來源提示，不進可用sources；本輪沒有新官方網路請求、重試或繞過。
+3. 直接公告每千股10.015129／1000＝0.010015129股／原股，Decimal保留原公開精度，標DIRECT_PUBLISHED；舊金額／面額導出公式另存prior_ratio_calculation，不偽裝為直接公式。新公式明示按千股轉單股；未圓整最終比、個人實配／零股／2025可賣日仍unknown。頁面自載2025/7/7另存，不倒填announced_at。
+4. 每來源版本分開issuer_code、entitled_old_code、old_instrument、action_type、family、version_id、field、unit、date_role。既有2884普通股的股票股利與原2867普通股的股份轉換不是同一權利；單位NEW_2884_PER_OLD_2867不得轉成NEW_2884_PER_OLD_2884。2867與公司名的映射沿用Work明示對照，列出資格限制，不冒充新完整官方主檔已核。
+5. 股份轉換原0.2486提案與後0.2596公告分存，文件自載發言時點與實際擷取觀察時點分開。只記文件所稱先後，不默選較晚版本或當歷史可知。resolve_field須指定完整身份及觀察截止，早於capture、無時區或要求歷史訊號均拒絕。announced_at=null、historical_signal_eligible=false。
+6. Q&A的2026/9/1是本換股案新股權利證書上市，非2025配股普通股可賣日或所有新股的一般規則；ROUND_TO_WHOLE_TWD與特定條件匯費10元只綁本案原2867股東，不能借給其他股利。actual_investor_receipt不由公司時程推出。新resolve_field在錯日期角色、錯對象／事件／版本／單位或未知欄時拒用，不將null補零。
+7. 台泥每股0.8元資本公積保留為BOARD_PROPOSAL來源分類。final_funding_source、capital_surplus_subtype、net_cash_per_share為null；提案、公司稅務說明或失敗健保署來源不構成最終法規與個人淨額模型。原CASH_DIVIDEND粗類型只表示舊帳機制，不作所得／補充保費分類。年底所得稅不改作發放日已實扣款。
+8. coverage必含known_company_action_ids（包含同家族各來源版本），不能僅保原股利而漏掉已知股份轉換；這些ID是來源追蹤，不是獨立事件數。當前公司完整期間覆蓋仍INCOMPLETE，任何input自行改VERIFIED_COMPLETE亦不能蓋過catalog的來源資格。
+9. 原action_ledger僅支援現金股利、股票股利與減資，不支援2867→2884股份轉換；不在本輪新增換股會計或擅給既有2884增股。窗口跨公告的預定9/1或起日恰9/1，追加SHARE_EXCHANGE_ACCOUNT_IMPACT_UNSUPPORTED，保留舊股東影響待核。不由文件定調既有2884完全無其他權利影響。9/1後的預定事件不記為更早已發生；完整名冊仍另外不足。
+10. admit_and_replay先驗證catalog與組件指紋／版本，作適用對象核對並重用舊qualify；任何不足則回傳新REFUSED結果，daily／journal空，scenario_net_return、total_net_return、actual_realized_investor_return全null，不呼叫原每日數值回放。只有全部外部來源及原數值契約皆合格才允許交原replay。本輪沒有合格市場資料，故此成功計算路徑未以真實市場資料驗收，不宣稱已算淨績效。
+11. 實際對原72研究窗重新做新資格核對：70拒算、2不足；其中8窗另辨識跨／起於股份轉換預定日的未支援範圍。不是新六方案重跑，未產生成交、排名或勝出比例；primary_pressure_id=null、policy_authorized=false。原價格／缺價／Raw與Adjusted、歷史公布、五年Adjusted、主檔及SQLite未知保持。無新UI／Android。
+12. 個人淨分配／期初權利仍需有來源紀錄或明示情境模型；空白證據表不是零資產／零權利。不得公開提交私人持倉或券商原件。全換／分批／觸發仍研究變數，不自動下單。

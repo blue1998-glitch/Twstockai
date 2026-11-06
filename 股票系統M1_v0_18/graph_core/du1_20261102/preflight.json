@@ -1,0 +1,110 @@
+{
+  "milestone": "M-DU1",
+  "status": "BLOCKED_ORIGINAL_PRIVATE_FM3_RUNTIME_NOT_ACCESSIBLE",
+  "observed_at": "2026-11-02T10:09:48.628087+00:00",
+  "workspace": "/workspace/Twstockai",
+  "branch": "dev/m1-v018-chart-annotations",
+  "initial_local_head": "13d5fd695c375f264e5119325dfb7a8707304497",
+  "verified_remote_and_fast_forward_head": "933212b829e91516dc13db918d05eac59c3d9688",
+  "initial_tracked_index_untracked_counts": [
+    0,
+    0,
+    0
+  ],
+  "original_baseline_preserved": true,
+  "paths": [
+    {
+      "path": "/workspace/twstockai-local-data/fm3_20261101",
+      "exists": false
+    },
+    {
+      "path": "/workspace/twstockai-local-data/fm3_20261101/runtime",
+      "exists": false
+    },
+    {
+      "path": "/workspace/twstockai-local-data/fm3_20261101/runtime/fm3-continuation.json",
+      "exists": false
+    },
+    {
+      "path": "/workspace/twstockai-local-data/fm3_20261101/runtime/runs",
+      "exists": false
+    },
+    {
+      "path": "/workspace/twstockai-local-data/fm3_20261101/runtime/checkpoints",
+      "exists": false
+    },
+    {
+      "path": "/workspace/twstockai-local-data/fm3_20261101/runtime/source-raw",
+      "exists": false
+    },
+    {
+      "path": "/workspace/twstockai-local-data/fm3_20261101/runtime/source-receipts",
+      "exists": false
+    },
+    {
+      "path": "/workspace/twstockai-local-data/fm3_20261101/runtime/source-slots",
+      "exists": false
+    },
+    {
+      "path": "/workspace/twstockai-local-data/fm3_20261101/runtime/histories",
+      "exists": false
+    },
+    {
+      "path": "/workspace/twstockai-local-data/fm3_20261101/runtime/results",
+      "exists": false
+    },
+    {
+      "path": "/workspace/twstockai-local-data/fm3_20261101/runtime/preview",
+      "exists": false
+    }
+  ],
+  "visible_private_directories": [
+    "fm1",
+    "fm2",
+    "m2-3-finmind-20261030",
+    "m2-3-finmind-final-20261030",
+    "m2-3-finmind-run-20261030",
+    "m2-5-f01-20261101",
+    "mr2-20261101"
+  ],
+  "bounded_search": {
+    "roots": [
+      "/workspace",
+      "/tmp",
+      "/mnt"
+    ],
+    "matching_directories_outside_git": [],
+    "scope": "Readable filesystem only; not a platform backup or other Cloud instance inventory"
+  },
+  "historical_receipt": {
+    "path": "股票系統M1_v0_18/graph_core/fm3_20261101/completion/summary.json",
+    "sha256": "b724d2090b09d26101b9cb071d43ffbe907a4fda756663ce1c8e2f0bc79b0963",
+    "reported_reference": 1986,
+    "reported_multiday": 1439,
+    "reported_searchable": 1469,
+    "reported_remaining": 0,
+    "role": "READ_EXISTING_GITHUB_COMPLETION_RECEIPT_NOT_CURRENT_PRIVATE_DATA_REAUDIT"
+  },
+  "current_reference_count": null,
+  "current_multiday_count": null,
+  "current_market_counts": null,
+  "new_trading_day_accepted": null,
+  "current_source_integrity": "UNVERIFIABLE_MISSING_ORIGINALS",
+  "current_quota_usage": "UNKNOWN_MISSING_REQUEST_JOURNAL",
+  "global_data_loss": "UNKNOWN_NOT_INFERRED_FROM_ABSENCE_HERE",
+  "new_api_calls": 0,
+  "new_core_calls": 0,
+  "new_charts": 0,
+  "tests_executed": 0,
+  "source_code_modifications": 0,
+  "private_runtime_created": false,
+  "worker_started": false,
+  "cron_or_service_enabled": false,
+  "real_increment_verified": false,
+  "alternative_synthetic_increment_tests": "NOT_EXECUTED_NO_IMPLEMENTATION",
+  "mobile_new_batch": "NOT_AVAILABLE_IN_THIS_ENVIRONMENT",
+  "oracle_deployment": "ON_HOLD_USER_ACCOUNT_PENDING",
+  "persistent_storage": "UNVERIFIED",
+  "source_and_formal_qualifications_changed": false,
+  "recovery_requirement": "Reattach original private filesystem or an already authorized complete private backup, then verify Journal/source/preview fingerprints and original batch identity before implementing continuation; do not redownload or recreate the cohort"
+}

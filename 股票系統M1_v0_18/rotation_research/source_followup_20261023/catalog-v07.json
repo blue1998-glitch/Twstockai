@@ -1,0 +1,4018 @@
+{
+  "schema": "rotation-source-followup/0.7",
+  "parent_catalog_id": "sha256:ffc954ac915889a4fbd8b2d2e71b219cb38fbfe192d7cc08823abe2f04d3b6eb",
+  "parent_catalog": {
+    "schema": "rotation-offline-source-bridge/0.6",
+    "parent_catalog_id": "sha256:3b8214422041a4a18bb2ed90bad1a7881e31c784682188641fbf4e1a27f07e0b",
+    "parent_catalog": {
+      "schema": "rotation-source-diagnostics/0.5",
+      "parent_catalog_id": "sha256:fff935c6816e415c03304f1436c845f4ac95e6e0d74795745cf61571de7e07fa",
+      "parent_catalog": {
+        "schema": "rotation-resolution-catalog/0.4",
+        "parent_catalog_id": "sha256:c9fb913ce7067c987da6faf03d352922393f548c961f45922ac596fe2ff8a343",
+        "parent_catalog": {
+          "schema": "rotation-scoped-action-catalog/0.3",
+          "mode": "RAW",
+          "sources": {
+            "exright-2025": {
+              "path": "docs/visual-discussion/20261022_b_basis_source_work_review/raw/exright-2025.json",
+              "sha256": "fdd86fad5b4287ef4d0e804fd2193925546df475432622f5d09fcc24d0d81689",
+              "url": "https://www.twse.com.tw/rwd/zh/exRight/TWT49U?startDate=20250101&endDate=20251231&response=json",
+              "captured_at": "2026-10-21T23:38:10.828609+00:00",
+              "kind": "OFFICIAL_ARCHIVE",
+              "historical_publication_time": "NOT_AUTHENTICATED"
+            },
+            "exright-2026-to-cutoff": {
+              "path": "docs/visual-discussion/20261022_b_basis_source_work_review/raw/exright-2026-to-cutoff.json",
+              "sha256": "820d70022694212c1377e1115e948405a9f2a05e4582c4669f961b683292c779",
+              "url": "https://www.twse.com.tw/rwd/zh/exRight/TWT49U?startDate=20260101&endDate=20260724&response=json",
+              "captured_at": "2026-10-21T23:38:10.830254+00:00",
+              "kind": "OFFICIAL_ARCHIVE",
+              "historical_publication_time": "NOT_AUTHENTICATED"
+            },
+            "issuer-1101": {
+              "path": "股票系統M1_v0_18/event_audit/raw/tcc_dividends.html",
+              "sha256": "86705c4f326e5210b8a5a7f7dd0a410206f0078260c5dc701a3e994fa4c66b6d",
+              "url": "https://www.tccgroupholdings.com/dividend",
+              "captured_at": "2026-10-16T06:29:13.126231+00:00",
+              "kind": "OFFICIAL_ARCHIVE",
+              "historical_publication_time": "NOT_AUTHENTICATED"
+            },
+            "issuer-2884": {
+              "path": "股票系統M1_v0_18/event_audit/raw/esun_shareholders.html",
+              "sha256": "d21472641e10badad3f29c2399438e57542a9448d3659f51bd98aed3b10b0683",
+              "url": "https://www.esunfhc.com/zh-tw/investor-relations/shareholders/shareholder-Information",
+              "captured_at": "2026-10-16T06:29:13.127547+00:00",
+              "kind": "OFFICIAL_ARCHIVE",
+              "historical_publication_time": "NOT_AUTHENTICATED"
+            },
+            "esun-2025-minutes": {
+              "path": "股票系統M1_v0_18/rotation_research/official_actions_20261022/raw/esun-2025-minutes.response",
+              "url": "https://www.esunbank.com/zh-tw/-/media/ESUNFHC/Files/Investor-Relations/Shareholders/Shareholder-Meeting/114-minutes.pdf",
+              "sha256": "74d1da671247fa0dffbf1a1ed446d288f1701871f3175121b30a9bffea750567",
+              "captured_at": "2026-10-22T08:24:40.331765+00:00",
+              "kind": "OFFICIAL_ARCHIVE",
+              "historical_publication_time": "NOT_AUTHENTICATED",
+              "derived_text": {
+                "path": "股票系統M1_v0_18/rotation_research/official_actions_20261022/raw/esun-2025-minutes.txt",
+                "sha256": "33a324bf714e0a99f2c5ec724e15abc74bef6c0be6295b2232200a1a7ca76294",
+                "extraction": {
+                  "command": [
+                    "pdftotext",
+                    "-layout",
+                    "esun-2025-minutes.response",
+                    "esun-2025-minutes.txt"
+                  ],
+                  "tool_version": "pdftotext version 25.03.0",
+                  "pdf_sha256": "74d1da671247fa0dffbf1a1ed446d288f1701871f3175121b30a9bffea750567",
+                  "text_sha256": "33a324bf714e0a99f2c5ec724e15abc74bef6c0be6295b2232200a1a7ca76294",
+                  "qualification": "DERIVED_TEXT_NOT_INDEPENDENT_PRIMARY_SOURCE"
+                }
+              }
+            },
+            "esun-2025-follow-up": {
+              "path": "股票系統M1_v0_18/rotation_research/official_actions_20261022/raw/esun-2025-follow-up.response",
+              "url": "https://www.esunbank.com/zh-tw/-/media/ESUNFHC/Files/Investor-Relations/Shareholders/Shareholder-Meeting/2025Follow-up.pdf",
+              "sha256": "b0aed62982b86b350d935f6aacfbb0d118666ece22bdcdfb1e1d7213e812f2c4",
+              "captured_at": "2026-10-22T08:25:30.967022+00:00",
+              "kind": "OFFICIAL_ARCHIVE",
+              "historical_publication_time": "NOT_AUTHENTICATED",
+              "derived_text": {
+                "path": "股票系統M1_v0_18/rotation_research/official_actions_20261022/raw/esun-2025-follow-up.reading-order.txt",
+                "sha256": "a3ca5c2361da6b5293fab52752ef42fbea92821e7229f80c7a58018cd7f51f64",
+                "extraction": {
+                  "command": [
+                    "pdftotext",
+                    "-raw",
+                    "esun-2025-follow-up.response",
+                    "esun-2025-follow-up.reading-order.txt"
+                  ],
+                  "tool_version": "pdftotext version 25.03.0",
+                  "pdf_sha256": "b0aed62982b86b350d935f6aacfbb0d118666ece22bdcdfb1e1d7213e812f2c4",
+                  "text_sha256": "a3ca5c2361da6b5293fab52752ef42fbea92821e7229f80c7a58018cd7f51f64",
+                  "qualification": "DERIVED_TEXT_NOT_INDEPENDENT_PRIMARY_SOURCE"
+                }
+              }
+            },
+            "esun-direct-2025-ratio": {
+              "path": "股票系統M1_v0_18/rotation_research/source_review_20261022/raw/esun-direct-2025-ratio.response",
+              "url": "https://www.esunbank.com/zh-tw/about/announcement/announcement?i=7BnSHViUN0a3m4jnJsobhg&p=fY8tSwscLkqI3d1smTbuuw",
+              "captured_at": "2026-10-22T09:16:02.244667+00:00",
+              "sha256": "b1c9cb4c8ab434ccdf8785caac84d7e5c87efcb354544e877179f0a759243aee",
+              "kind": "OFFICIAL_ARCHIVE",
+              "derived_text_path": "股票系統M1_v0_18/rotation_research/source_review_20261022/raw/esun-direct-2025-ratio.txt",
+              "derived_text_sha256": "4c2add2f8305205e5d76e66412832397df0aeb63f323ebedfc14a7740df110c1",
+              "historical_publication_time": "NOT_AUTHENTICATED"
+            },
+            "esun-mna-20251105": {
+              "path": "股票系統M1_v0_18/rotation_research/source_review_20261022/raw/esun-mna-20251105.response",
+              "url": "https://www.esunbank.com/zh-tw/-/media/ESUNFHC/Files/Investor-Relations/mna/mna01.pdf",
+              "captured_at": "2026-10-22T09:18:12.843605+00:00",
+              "sha256": "143f2abea0aeb9b3bc18912ecbe4d440736b0cd664edb32cc65f8466783c23b2",
+              "kind": "OFFICIAL_ARCHIVE",
+              "derived_text_path": "股票系統M1_v0_18/rotation_research/source_review_20261022/raw/esun-mna-20251105.txt",
+              "derived_text_sha256": "c57b8435c278476679ed27df6e2d25facab7c8f304c5d0e0e231c09039ce24f2",
+              "historical_publication_time": "NOT_AUTHENTICATED"
+            },
+            "esun-mna-20260713": {
+              "path": "股票系統M1_v0_18/rotation_research/source_review_20261022/raw/esun-mna-20260713.response",
+              "url": "https://www.esunbank.com/zh-tw/-/media/ESUNFHC/Files/Investor-Relations/mna/mna_20260713.pdf",
+              "captured_at": "2026-10-22T09:16:15.446856+00:00",
+              "sha256": "08278cf99f24008a7a214a402a5533f2bd35a0ccee3e8a169decf5907275d97a",
+              "kind": "OFFICIAL_ARCHIVE",
+              "derived_text_path": "股票系統M1_v0_18/rotation_research/source_review_20261022/raw/esun-mna-20260713.txt",
+              "derived_text_sha256": "b909784873b0f6942e912bd4eca94a921b86a2eba248b0bc1aed196d341e715c",
+              "historical_publication_time": "NOT_AUTHENTICATED"
+            },
+            "esun-mna-index": {
+              "path": "股票系統M1_v0_18/rotation_research/source_review_20261022/raw/esun-mna-index.response",
+              "url": "https://www.esunfhc.com/zh-tw/investor-relations/mergers-and-acquisitions",
+              "captured_at": "2026-10-22T09:16:09.117872+00:00",
+              "sha256": "b072bb5b385fe1e419b87f079d6c57a6e3148bd250c20ac9a95fe8a17e634d50",
+              "kind": "OFFICIAL_ARCHIVE",
+              "derived_text_path": "股票系統M1_v0_18/rotation_research/source_review_20261022/raw/esun-mna-index.txt",
+              "derived_text_sha256": "8277fd9283348c08ba1b179d497041f6130a5e2205ed689dc8f7543f0ac21c62",
+              "historical_publication_time": "NOT_AUTHENTICATED"
+            },
+            "esun-mna-qa": {
+              "path": "股票系統M1_v0_18/rotation_research/source_review_20261022/raw/esun-mna-qa.response",
+              "url": "https://www.esunbank.com/zh-tw/-/media/ESUNFHC/Files/Investor-Relations/mna/mna09QA.pdf",
+              "captured_at": "2026-10-22T09:16:21.022228+00:00",
+              "sha256": "81a2de0141d3ffcb771500e9cef9a02d809fedf9c04e08e02f6f8c50632efa60",
+              "kind": "OFFICIAL_ARCHIVE",
+              "derived_text_path": "股票系統M1_v0_18/rotation_research/source_review_20261022/raw/esun-mna-qa.txt",
+              "derived_text_sha256": "c9c824d74d35900a2fa1246cc44eabfb925eefccd72d4cb24d0c80100bc442d1",
+              "historical_publication_time": "NOT_AUTHENTICATED"
+            },
+            "tcc-capital-surplus-2026": {
+              "path": "股票系統M1_v0_18/rotation_research/source_review_20261022/raw/tcc-capital-surplus-2026.response",
+              "url": "https://www.tccgroupholdings.com/en/news/69b15c430dd9b",
+              "captured_at": "2026-10-22T09:16:26.492221+00:00",
+              "sha256": "bb32fb67b5d0c2a45d09eeffaf35deea3b2c2afed91cb3bff7d08e10629b762b",
+              "kind": "OFFICIAL_ARCHIVE",
+              "derived_text_path": "股票系統M1_v0_18/rotation_research/source_review_20261022/raw/tcc-capital-surplus-2026.txt",
+              "derived_text_sha256": "7481d4b6885198f90d329bca73f18a6f26519c62cb874b3125945ce505fd6c35",
+              "historical_publication_time": "NOT_AUTHENTICATED"
+            }
+          },
+          "events": [
+            {
+              "code": "1101",
+              "mode": "RAW",
+              "basis_id": "RAW:fd5674f6d424dadbfe0644453e4f54c9ed8943fe3149b6f681f24932176db801",
+              "ex_date": "2025-07-02",
+              "announced_at": null,
+              "historical_signal_eligible": false,
+              "observed_at": "2026-10-21T23:38:10.828609+00:00",
+              "source_ids": [
+                "exright-2025",
+                "issuer-1101"
+              ],
+              "field_sources": {
+                "ex_date": [
+                  {
+                    "source_id": "exright-2025",
+                    "locator": "data[511].資料日期",
+                    "raw_value": "114年07月02日"
+                  }
+                ],
+                "gross_per_share": [
+                  {
+                    "source_id": "issuer-1101",
+                    "locator": "html_table_rows[2][2]",
+                    "raw_value": "1"
+                  }
+                ],
+                "pay_date": [
+                  {
+                    "source_id": "issuer-1101",
+                    "locator": "html_table_rows[2][7]",
+                    "raw_value": "2025/07/29"
+                  }
+                ]
+              },
+              "exchange_row_index": 511,
+              "exchange_raw_fields": {
+                "資料日期": "114年07月02日",
+                "股票代號": "1101",
+                "股票名稱": "台泥",
+                "除權息前收盤價": "26.15",
+                "除權息參考價": "25.15",
+                "權值+息值": "1.000000",
+                "權/息": "息",
+                "漲停價格": "27.65",
+                "跌停價格": "22.65",
+                "開盤競價基準": "25.15",
+                "減除股利參考價": "25.15",
+                "詳細資料": "1101,20250702",
+                "最近一次申報資料 季別/日期": "115年第2季(https://mops.twse.com.tw/mops/web/t163sb01)",
+                "最近一次申報每股 (單位)淨值": "30.86",
+                "最近一次申報每股 (單位)盈餘": "0.38"
+              },
+              "issuer_row_index": 2,
+              "issuer_raw_cells": [
+                "2024",
+                "2025/05/27",
+                "1",
+                "0",
+                "1",
+                "2025/07/02",
+                "",
+                "2025/07/29"
+              ],
+              "date_semantics": "EXCHANGE_EX_TRADING_DATE_NOT_ISSUER_RECORD_DATE",
+              "completeness": "PARTIAL_COMPONENT_EVIDENCE_NOT_FULL_ACTION_COVERAGE",
+              "type": "CASH_DIVIDEND",
+              "gross_per_share": "1",
+              "net_per_share": null,
+              "pay_date": "2025-07-29",
+              "record_date": null,
+              "pay_date_role": "ISSUER_SCHEDULE_NOT_INVESTOR_RECEIPT",
+              "missing": [
+                "announced_at",
+                "investor_net_per_share",
+                "investor_actual_receipt"
+              ],
+              "id": "sha256:01df5dd4c25df56baa28b725845678043e4809abf08e15cb19bab046ad92902f"
+            },
+            {
+              "code": "2884",
+              "mode": "RAW",
+              "basis_id": "RAW:c27514e56b61b669362aaf8fdd7223acb7caaabcdaf0fa6ccf4a17909ba9ac60",
+              "ex_date": "2025-07-22",
+              "announced_at": null,
+              "historical_signal_eligible": false,
+              "observed_at": "2026-10-21T23:38:10.828609+00:00",
+              "source_ids": [
+                "exright-2025",
+                "issuer-2884"
+              ],
+              "field_sources": {
+                "ex_date": [
+                  {
+                    "source_id": "exright-2025",
+                    "locator": "data[820].資料日期",
+                    "raw_value": "114年07月22日"
+                  }
+                ],
+                "gross_per_share": [
+                  {
+                    "source_id": "issuer-2884",
+                    "locator": "html_table_rows[3][2]",
+                    "raw_value": "1.2"
+                  }
+                ],
+                "pay_date": [
+                  {
+                    "source_id": "issuer-2884",
+                    "locator": "html_table_rows[3][3]",
+                    "raw_value": "2025.08.27"
+                  }
+                ],
+                "record_date": [
+                  {
+                    "source_id": "issuer-2884",
+                    "locator": "html_table_rows[3][1]",
+                    "raw_value": "2025.07.28"
+                  }
+                ]
+              },
+              "exchange_row_index": 820,
+              "exchange_raw_fields": {
+                "資料日期": "114年07月22日",
+                "股票代號": "2884",
+                "股票名稱": "玉山金",
+                "除權息前收盤價": "34.20",
+                "除權息參考價": "32.67",
+                "權值+息值": "1.527222",
+                "權/息": "權息",
+                "漲停價格": "35.90",
+                "跌停價格": "29.45",
+                "開盤競價基準": "32.65",
+                "減除股利參考價": "32.67",
+                "詳細資料": "2884,20250722",
+                "最近一次申報資料 季別/日期": "115年第2季(https://mops.twse.com.tw/mops/web/t163sb01)",
+                "最近一次申報每股 (單位)淨值": "17.40",
+                "最近一次申報每股 (單位)盈餘": "1.32"
+              },
+              "issuer_row_index": 3,
+              "issuer_raw_cells": [
+                "2025",
+                "2025.07.28",
+                "1.2",
+                "2025.08.27",
+                "2025.07.28",
+                "0.10015129",
+                "2025.08.27"
+              ],
+              "date_semantics": "EXCHANGE_EX_TRADING_DATE_NOT_ISSUER_RECORD_DATE",
+              "completeness": "PARTIAL_COMPONENT_EVIDENCE_NOT_FULL_ACTION_COVERAGE",
+              "type": "CASH_DIVIDEND",
+              "gross_per_share": "1.2",
+              "net_per_share": null,
+              "pay_date": "2025-08-27",
+              "record_date": "2025-07-28",
+              "pay_date_role": "ISSUER_SCHEDULE_NOT_INVESTOR_RECEIPT",
+              "missing": [
+                "announced_at",
+                "investor_net_per_share",
+                "investor_actual_receipt"
+              ],
+              "id": "sha256:a96a11bf35947c9fce84baaf52b88a4ffd19447e9c26610c5fc01a82505d1a3a"
+            },
+            {
+              "code": "2884",
+              "mode": "RAW",
+              "basis_id": "RAW:c27514e56b61b669362aaf8fdd7223acb7caaabcdaf0fa6ccf4a17909ba9ac60",
+              "ex_date": "2025-07-22",
+              "announced_at": null,
+              "historical_signal_eligible": false,
+              "observed_at": "2026-10-22T09:16:02.244667+00:00",
+              "source_ids": [
+                "exright-2025",
+                "issuer-2884",
+                "esun-2025-minutes",
+                "esun-2025-follow-up",
+                "esun-direct-2025-ratio"
+              ],
+              "field_sources": {
+                "ex_date": [
+                  {
+                    "source_id": "exright-2025",
+                    "locator": "data[820].資料日期",
+                    "raw_value": "114年07月22日"
+                  }
+                ],
+                "stock_dividend_money_per_share": [
+                  {
+                    "source_id": "issuer-2884",
+                    "locator": "html_table_rows[3][5]",
+                    "raw_value": "0.10015129"
+                  }
+                ],
+                "record_date": [
+                  {
+                    "source_id": "issuer-2884",
+                    "locator": "html_table_rows[3][4]",
+                    "raw_value": "2025.07.28"
+                  }
+                ],
+                "delivery_date": [
+                  {
+                    "source_id": "issuer-2884",
+                    "locator": "html_table_rows[3][6]",
+                    "raw_value": "2025.08.27"
+                  }
+                ],
+                "par_value": [
+                  {
+                    "source_id": "esun-2025-minutes",
+                    "locator": "PDF page 19: 發行新股／每股面額",
+                    "raw_value": "10"
+                  }
+                ],
+                "shares_per_share": [
+                  {
+                    "source_id": "esun-direct-2025-ratio",
+                    "locator": "derived text without whitespace, chars 340:359",
+                    "raw_value": "每仟股配發股票股利10.015129股"
+                  }
+                ],
+                "issuer_completion": [
+                  {
+                    "source_id": "esun-2025-follow-up",
+                    "locator": "PDF page 1: 執行情形",
+                    "raw_value": "2025-08-27"
+                  }
+                ],
+                "fractional_policy": [
+                  {
+                    "source_id": "esun-2025-minutes",
+                    "locator": "PDF page 19: 第五項／畸零股（移除抽字空白）",
+                    "raw_value": "配股不足一股之畸零股，得由二人以上股東在規定期間內互為併湊為整數歸併其中一人，逾期未併湊或併湊後仍不足一股之畸零股數，按面額折發現金（至元為止），畸零股累積後授權董事長洽特定人按面額認購。"
+                  }
+                ]
+              },
+              "exchange_row_index": 820,
+              "exchange_raw_fields": {
+                "資料日期": "114年07月22日",
+                "股票代號": "2884",
+                "股票名稱": "玉山金",
+                "除權息前收盤價": "34.20",
+                "除權息參考價": "32.67",
+                "權值+息值": "1.527222",
+                "權/息": "權息",
+                "漲停價格": "35.90",
+                "跌停價格": "29.45",
+                "開盤競價基準": "32.65",
+                "減除股利參考價": "32.67",
+                "詳細資料": "2884,20250722",
+                "最近一次申報資料 季別/日期": "115年第2季(https://mops.twse.com.tw/mops/web/t163sb01)",
+                "最近一次申報每股 (單位)淨值": "17.40",
+                "最近一次申報每股 (單位)盈餘": "1.32"
+              },
+              "issuer_row_index": 3,
+              "issuer_raw_cells": [
+                "2025",
+                "2025.07.28",
+                "1.2",
+                "2025.08.27",
+                "2025.07.28",
+                "0.10015129",
+                "2025.08.27"
+              ],
+              "date_semantics": "EXCHANGE_EX_TRADING_DATE_NOT_ISSUER_RECORD_DATE",
+              "completeness": "PARTIAL_COMPONENT_EVIDENCE_NOT_FULL_ACTION_COVERAGE",
+              "type": "STOCK_DIVIDEND",
+              "stock_dividend_money_per_share": "0.10015129",
+              "shares_per_share": "0.010015129",
+              "par_value": "10",
+              "record_date": "2025-07-28",
+              "delivery_date": "2025-08-27",
+              "tradable_date": null,
+              "delivery_role": "ISSUER_DISTRIBUTION_SCHEDULE_NOT_VERIFIED_LISTING_DATE",
+              "missing": [
+                "announced_at",
+                "tradable_date",
+                "final_allotment_precision",
+                "fractional_deadline_and_investor_disposition"
+              ],
+              "supersedes_event_id": "sha256:01218131fc98014d7c5b324070c7b5f0380bc5ec75e5b3878289e6af3ec0e36a",
+              "original_component_observed_at": "2026-10-21T23:38:10.828609+00:00",
+              "ratio_role": "DIRECT_PUBLISHED_NOT_VERIFIED_UNROUNDED_OR_INVESTOR_ALLOTMENT",
+              "issuer_completion": {
+                "meeting_date": "2025-06-13",
+                "issuer_record_date": "2025-07-28",
+                "issuer_reported_distribution_completed_on": "2025-08-27",
+                "tradable_date": null,
+                "investor_receipt_at": null,
+                "investor_net_amount": null,
+                "status": "ISSUER_REPORTED_COMPLETION_NOT_INVESTOR_RECEIPT_OR_LISTING"
+              },
+              "fractional_policy": "POOL_BEFORE_UNSPECIFIED_DEADLINE_THEN_PAR_CASH_TO_WHOLE_TWD",
+              "fractional_deadline": null,
+              "fractional_disposition": null,
+              "prior_observed_at": "2026-10-22T08:25:30.967022+00:00",
+              "prior_ratio_role": "DERIVED_FROM_PUBLISHED_MONEY_AND_SAME_ISSUE_PAR_NOT_EXACT_UNROUNDED_ALLOTMENT",
+              "prior_ratio_calculation": {
+                "expression": "stock_dividend_money_per_share / par_value",
+                "input_unit": "TWD_PER_OLD_SHARE / TWD_PER_NEW_SHARE",
+                "result_unit": "NEW_SHARES_PER_OLD_SHARE"
+              },
+              "ratio_calculation": {
+                "expression": "published_new_shares_per_thousand_old_shares / 1000",
+                "result_unit": "NEW_2884_SHARES_PER_OLD_2884_SHARE"
+              },
+              "published_new_shares_per_thousand_old_shares": "10.015129",
+              "issuer_page_display_date": "2025-07-07",
+              "id": "sha256:dddf104de8f030d4fedd1894a1a99386d81df1b0befa046f946cfdc5734bb387"
+            },
+            {
+              "code": "1101",
+              "mode": "RAW",
+              "basis_id": "RAW:fd5674f6d424dadbfe0644453e4f54c9ed8943fe3149b6f681f24932176db801",
+              "ex_date": "2026-07-01",
+              "announced_at": null,
+              "historical_signal_eligible": false,
+              "observed_at": "2026-10-21T23:38:10.830254+00:00",
+              "source_ids": [
+                "exright-2026-to-cutoff",
+                "issuer-1101"
+              ],
+              "field_sources": {
+                "ex_date": [
+                  {
+                    "source_id": "exright-2026-to-cutoff",
+                    "locator": "data[598].資料日期",
+                    "raw_value": "115年07月01日"
+                  }
+                ],
+                "gross_per_share": [
+                  {
+                    "source_id": "issuer-1101",
+                    "locator": "html_table_rows[1][2]",
+                    "raw_value": "0.8"
+                  }
+                ],
+                "pay_date": [
+                  {
+                    "source_id": "issuer-1101",
+                    "locator": "html_table_rows[1][7]",
+                    "raw_value": "2026/07/28"
+                  }
+                ]
+              },
+              "exchange_row_index": 598,
+              "exchange_raw_fields": {
+                "資料日期": "115年07月01日",
+                "股票代號": "1101",
+                "股票名稱": "台泥",
+                "除權息前收盤價": "24.05",
+                "除權息參考價": "23.25",
+                "權值+息值": "0.800000",
+                "權/息": "息",
+                "漲停價格": "25.55",
+                "跌停價格": "20.95",
+                "開盤競價基準": "23.25",
+                "減除股利參考價": "23.25",
+                "詳細資料": "1101,20260701",
+                "最近一次申報資料 季別/日期": "115年第2季(https://mops.twse.com.tw/mops/web/t163sb01)",
+                "最近一次申報每股 (單位)淨值": "30.86",
+                "最近一次申報每股 (單位)盈餘": "0.38"
+              },
+              "issuer_row_index": 1,
+              "issuer_raw_cells": [
+                "2025",
+                "2026/05/22",
+                "0.8",
+                "0",
+                "0.8",
+                "2026/07/01",
+                "",
+                "2026/07/28"
+              ],
+              "date_semantics": "EXCHANGE_EX_TRADING_DATE_NOT_ISSUER_RECORD_DATE",
+              "completeness": "PARTIAL_COMPONENT_EVIDENCE_NOT_FULL_ACTION_COVERAGE",
+              "type": "CASH_DIVIDEND",
+              "gross_per_share": "0.8",
+              "net_per_share": null,
+              "pay_date": "2026-07-28",
+              "record_date": null,
+              "pay_date_role": "ISSUER_SCHEDULE_NOT_INVESTOR_RECEIPT",
+              "missing": [
+                "announced_at",
+                "investor_net_per_share",
+                "investor_actual_receipt"
+              ],
+              "id": "sha256:b7ba974b62bad201a1757c3b8dc2015ae9a43d35f55c352bf0929c65cd2b0bd5"
+            },
+            {
+              "code": "2884",
+              "mode": "RAW",
+              "basis_id": "RAW:c27514e56b61b669362aaf8fdd7223acb7caaabcdaf0fa6ccf4a17909ba9ac60",
+              "ex_date": "2026-07-01",
+              "announced_at": null,
+              "historical_signal_eligible": false,
+              "observed_at": "2026-10-21T23:38:10.830254+00:00",
+              "source_ids": [
+                "exright-2026-to-cutoff",
+                "issuer-2884"
+              ],
+              "field_sources": {
+                "ex_date": [
+                  {
+                    "source_id": "exright-2026-to-cutoff",
+                    "locator": "data[608].資料日期",
+                    "raw_value": "115年07月01日"
+                  }
+                ],
+                "gross_per_share": [
+                  {
+                    "source_id": "issuer-2884",
+                    "locator": "html_table_rows[2][2]",
+                    "raw_value": "1.4"
+                  }
+                ],
+                "pay_date": [
+                  {
+                    "source_id": "issuer-2884",
+                    "locator": "html_table_rows[2][3]",
+                    "raw_value": "2026.07.27"
+                  }
+                ],
+                "record_date": [
+                  {
+                    "source_id": "issuer-2884",
+                    "locator": "html_table_rows[2][1]",
+                    "raw_value": "2026.07.07"
+                  }
+                ]
+              },
+              "exchange_row_index": 608,
+              "exchange_raw_fields": {
+                "資料日期": "115年07月01日",
+                "股票代號": "2884",
+                "股票名稱": "玉山金",
+                "除權息前收盤價": "34.45",
+                "除權息參考價": "33.05",
+                "權值+息值": "1.400000",
+                "權/息": "息",
+                "漲停價格": "36.35",
+                "跌停價格": "29.75",
+                "開盤競價基準": "33.05",
+                "減除股利參考價": "33.05",
+                "詳細資料": "2884,20260701",
+                "最近一次申報資料 季別/日期": "115年第2季(https://mops.twse.com.tw/mops/web/t163sb01)",
+                "最近一次申報每股 (單位)淨值": "17.40",
+                "最近一次申報每股 (單位)盈餘": "1.32"
+              },
+              "issuer_row_index": 2,
+              "issuer_raw_cells": [
+                "2026",
+                "2026.07.07",
+                "1.4",
+                "2026.07.27",
+                "-",
+                "-",
+                "-"
+              ],
+              "date_semantics": "EXCHANGE_EX_TRADING_DATE_NOT_ISSUER_RECORD_DATE",
+              "completeness": "PARTIAL_COMPONENT_EVIDENCE_NOT_FULL_ACTION_COVERAGE",
+              "type": "CASH_DIVIDEND",
+              "gross_per_share": "1.4",
+              "net_per_share": null,
+              "pay_date": "2026-07-27",
+              "record_date": "2026-07-07",
+              "pay_date_role": "ISSUER_SCHEDULE_NOT_INVESTOR_RECEIPT",
+              "missing": [
+                "announced_at",
+                "investor_net_per_share",
+                "investor_actual_receipt"
+              ],
+              "id": "sha256:cf65c6f1ab9ad9fb1a64a8405cd9d05505739e72d6383c5e37903389f52c7349"
+            }
+          ],
+          "coverage": {
+            "1101": {
+              "status": "INCOMPLETE_DO_NOT_ASSUME_NO_EVENTS",
+              "start": "2025-07-01",
+              "end": "2026-10-16",
+              "event_ids": [
+                "sha256:01df5dd4c25df56baa28b725845678043e4809abf08e15cb19bab046ad92902f",
+                "sha256:b7ba974b62bad201a1757c3b8dc2015ae9a43d35f55c352bf0929c65cd2b0bd5"
+              ],
+              "source_ids": [
+                "exright-2025",
+                "exright-2026-to-cutoff",
+                "issuer-1101",
+                "issuer-2884",
+                "tcc-capital-surplus-2026"
+              ],
+              "types": [
+                "CASH_DIVIDEND",
+                "STOCK_DIVIDEND"
+              ],
+              "other_actions_checked": false,
+              "gaps": [
+                "NO_EXHAUSTIVE_CAPITAL_REDUCTION_OR_OTHER_ACTION_REGISTER",
+                "EXCHANGE_2026_CAPTURE_ENDS_2026-07-24_MISSING_2026-07-25_TO_2026-10-16",
+                "EXRIGHT_ENDPOINT_EXCLUSIONS_NOT_COMPLETE_CORPORATE_ACTION_UNIVERSE",
+                "SCOPED_INVENTORY_NOT_EXHAUSTIVE_REGISTER_OR_SUPPORTED_ACCOUNT_IMPACT"
+              ],
+              "known_company_action_ids": [
+                "sha256:1e4ac85c0b29fc31441f5d36208189e5d6ad55eaf3fa6f9e994db8e054a63bed"
+              ]
+            },
+            "2884": {
+              "status": "INCOMPLETE_DO_NOT_ASSUME_NO_EVENTS",
+              "start": "2025-07-01",
+              "end": "2026-10-16",
+              "event_ids": [
+                "sha256:a96a11bf35947c9fce84baaf52b88a4ffd19447e9c26610c5fc01a82505d1a3a",
+                "sha256:dddf104de8f030d4fedd1894a1a99386d81df1b0befa046f946cfdc5734bb387",
+                "sha256:cf65c6f1ab9ad9fb1a64a8405cd9d05505739e72d6383c5e37903389f52c7349"
+              ],
+              "source_ids": [
+                "esun-2025-follow-up",
+                "esun-2025-minutes",
+                "esun-direct-2025-ratio",
+                "esun-mna-20251105",
+                "esun-mna-20260713",
+                "esun-mna-index",
+                "esun-mna-qa",
+                "exright-2025",
+                "exright-2026-to-cutoff",
+                "issuer-1101",
+                "issuer-2884"
+              ],
+              "types": [
+                "CASH_DIVIDEND",
+                "STOCK_DIVIDEND"
+              ],
+              "other_actions_checked": false,
+              "gaps": [
+                "NO_EXHAUSTIVE_CAPITAL_REDUCTION_OR_OTHER_ACTION_REGISTER",
+                "EXCHANGE_2026_CAPTURE_ENDS_2026-07-24_MISSING_2026-07-25_TO_2026-10-16",
+                "EXRIGHT_ENDPOINT_EXCLUSIONS_NOT_COMPLETE_CORPORATE_ACTION_UNIVERSE",
+                "SCOPED_INVENTORY_NOT_EXHAUSTIVE_REGISTER_OR_SUPPORTED_ACCOUNT_IMPACT"
+              ],
+              "known_company_action_ids": [
+                "sha256:3090d9519d9526c48742e1f1c6c3be15e81971306d0f41b1d6034e0f6b4dfffb",
+                "sha256:591576c458ebb0e1506f5e562c3b61655f199fe05069e559e29bd05783c39ccc",
+                "sha256:5c768c6a2c7b2b3145015e722670727de85cef74fa12f990f7b2f0565fe67119",
+                "sha256:b9eac95a1a87bcc06b6d3b67547af3148106813cddf5fffd9edab21fc450207f"
+              ]
+            }
+          },
+          "quote_input_path": "股票系統M1_v0_18/rotation_research/generated/input.json",
+          "quote_input_sha256": "982cf36383b47e3a7d5b68b55dcbc17cefe9b5715e287573c6ac9c19c11659a9",
+          "primary_pressure_id": null,
+          "policy_authorized": false,
+          "historical_signal_eligible": false,
+          "known_time_rule": "captured_at proves this archive observation only; announced_at remains null",
+          "total_net_return_qualified": false,
+          "supersedes_catalog_id": "sha256:a350606fbffd43f27e68166e8e71ee395bcde496d68497e3e55e3f388d465ab3",
+          "source_supplement_scope": "DIRECT_PUBLISHED_PRECISION_AND_CASE_SCOPES_NOT_COMPLETE_COVERAGE",
+          "inventory": [
+            {
+              "family": "2884-stock-dividend-component:sha256:01218131fc98014d7c5b324070c7b5f0380bc5ec75e5b3878289e6af3ec0e36a",
+              "issuer_code": "2884",
+              "entitled_old_code": "2884",
+              "action_type": "STOCK_DIVIDEND",
+              "old_instrument": "2884_ORDINARY_OLD_SHARES",
+              "company_codes": [
+                "2884"
+              ],
+              "source_ids": [
+                "esun-direct-2025-ratio"
+              ],
+              "observed_at": "2026-10-22T09:16:02.244667+00:00",
+              "historical_signal_eligible": false,
+              "announced_at": null,
+              "stage": "PUBLISHED_STOCK_DIVIDEND",
+              "fields": {
+                "shares_per_share": {
+                  "value": "0.010015129",
+                  "unit": "NEW_2884_SHARES_PER_OLD_2884_SHARE",
+                  "date_role": "NOT_A_DATE",
+                  "proofs": [
+                    {
+                      "source_id": "esun-direct-2025-ratio",
+                      "locator": "derived text without whitespace, chars 340:359",
+                      "raw_value": "每仟股配發股票股利10.015129股"
+                    }
+                  ],
+                  "qualification": "DIRECT_PUBLISHED"
+                },
+                "tentative_pay_date": {
+                  "value": "2025-08-27",
+                  "unit": "ISO_DATE",
+                  "date_role": "TENTATIVE_STOCK_DIVIDEND_DISTRIBUTION",
+                  "proofs": [
+                    {
+                      "source_id": "esun-direct-2025-ratio",
+                      "locator": "derived text without whitespace, chars 372:382",
+                      "raw_value": "暫訂發放日為8/27"
+                    }
+                  ],
+                  "qualification": "SOURCE_FACT_NOT_FINAL_LEDGER"
+                },
+                "tradable_date": {
+                  "value": null,
+                  "unit": "ISO_DATE",
+                  "date_role": "STOCK_DIVIDEND_ORDINARY_SHARE_TRADABILITY",
+                  "proofs": [],
+                  "qualification": "SOURCE_FACT_NOT_FINAL_LEDGER"
+                }
+              },
+              "id": "sha256:3090d9519d9526c48742e1f1c6c3be15e81971306d0f41b1d6034e0f6b4dfffb"
+            },
+            {
+              "family": "2884-acquires-2867",
+              "issuer_code": "2884",
+              "entitled_old_code": "2867",
+              "action_type": "SHARE_EXCHANGE",
+              "old_instrument": "2867_ORDINARY_OLD_SHARES",
+              "company_codes": [
+                "2884",
+                "2867"
+              ],
+              "source_ids": [
+                "esun-mna-20251105",
+                "esun-mna-index"
+              ],
+              "observed_at": "2026-10-22T09:18:12.843605+00:00",
+              "historical_signal_eligible": false,
+              "announced_at": null,
+              "stage": "BOARD_PROPOSAL",
+              "fields": {
+                "shares_per_share": {
+                  "value": "0.2486",
+                  "unit": "NEW_2884_SHARES_PER_OLD_2867_SHARE",
+                  "date_role": "NOT_A_DATE",
+                  "proofs": [
+                    {
+                      "source_id": "esun-mna-20251105",
+                      "locator": "derived text without whitespace, chars 453:481",
+                      "raw_value": "每1股三商美邦人壽普通股可換發本公司0.2486股普通股"
+                    }
+                  ],
+                  "qualification": "DIRECT_PUBLISHED"
+                },
+                "scheduled_effective_date": {
+                  "value": null,
+                  "unit": "ISO_DATE",
+                  "date_role": "SCHEDULED_SHARE_EXCHANGE_EFFECTIVE",
+                  "proofs": [],
+                  "qualification": "SOURCE_FACT_NOT_FINAL_LEDGER"
+                },
+                "document_claimed_statement_at": {
+                  "value": "2025-11-05T17:37:58+08:00",
+                  "unit": "DATETIME_OFFSET",
+                  "date_role": "DOCUMENT_SELF_REPORTED_STATEMENT_NOT_AUTHENTICATED_AVAILABILITY",
+                  "proofs": [
+                    {
+                      "source_id": "esun-mna-20251105",
+                      "locator": "derived text without whitespace, chars 24:37",
+                      "raw_value": "發言日期114/11/05"
+                    }
+                  ],
+                  "qualification": "SOURCE_FACT_NOT_FINAL_LEDGER"
+                }
+              },
+              "id": "sha256:5c768c6a2c7b2b3145015e722670727de85cef74fa12f990f7b2f0565fe67119"
+            },
+            {
+              "family": "2884-acquires-2867",
+              "issuer_code": "2884",
+              "entitled_old_code": "2867",
+              "action_type": "SHARE_EXCHANGE",
+              "old_instrument": "2867_ORDINARY_OLD_SHARES",
+              "company_codes": [
+                "2884",
+                "2867"
+              ],
+              "source_ids": [
+                "esun-mna-20260713",
+                "esun-mna-index"
+              ],
+              "observed_at": "2026-10-22T09:16:15.446856+00:00",
+              "historical_signal_eligible": false,
+              "announced_at": null,
+              "stage": "ANNOUNCED_SCHEDULE",
+              "fields": {
+                "shares_per_share": {
+                  "value": "0.2596",
+                  "unit": "NEW_2884_SHARES_PER_OLD_2867_SHARE",
+                  "date_role": "NOT_A_DATE",
+                  "proofs": [
+                    {
+                      "source_id": "esun-mna-20260713",
+                      "locator": "derived text without whitespace, chars 409:436",
+                      "raw_value": "三商美邦人壽每1股普通股換發本公司0.2596股普通股"
+                    }
+                  ],
+                  "qualification": "DIRECT_PUBLISHED"
+                },
+                "scheduled_effective_date": {
+                  "value": "2026-09-01",
+                  "unit": "ISO_DATE",
+                  "date_role": "SCHEDULED_SHARE_EXCHANGE_EFFECTIVE",
+                  "proofs": [
+                    {
+                      "source_id": "esun-mna-20260713",
+                      "locator": "derived text without whitespace, chars 465:477",
+                      "raw_value": "基準日為115年9月1日"
+                    }
+                  ],
+                  "qualification": "SOURCE_FACT_NOT_FINAL_LEDGER"
+                },
+                "document_claimed_statement_at": {
+                  "value": "2026-07-13T15:03:17+08:00",
+                  "unit": "DATETIME_OFFSET",
+                  "date_role": "DOCUMENT_SELF_REPORTED_STATEMENT_NOT_AUTHENTICATED_AVAILABILITY",
+                  "proofs": [
+                    {
+                      "source_id": "esun-mna-20260713",
+                      "locator": "derived text without whitespace, chars 34:47",
+                      "raw_value": "發言日期115/07/13"
+                    }
+                  ],
+                  "qualification": "SOURCE_FACT_NOT_FINAL_LEDGER"
+                }
+              },
+              "id": "sha256:b9eac95a1a87bcc06b6d3b67547af3148106813cddf5fffd9edab21fc450207f"
+            },
+            {
+              "family": "2884-acquires-2867",
+              "issuer_code": "2884",
+              "entitled_old_code": "2867",
+              "action_type": "SHARE_EXCHANGE",
+              "old_instrument": "2867_ORDINARY_OLD_SHARES",
+              "company_codes": [
+                "2884",
+                "2867"
+              ],
+              "source_ids": [
+                "esun-mna-qa",
+                "esun-mna-index"
+              ],
+              "observed_at": "2026-10-22T09:16:21.022228+00:00",
+              "historical_signal_eligible": false,
+              "announced_at": null,
+              "stage": "CASE_SPECIFIC_QA_NOT_INVESTOR_RECEIPT",
+              "fields": {
+                "certificate_listing_date": {
+                  "value": "2026-09-01",
+                  "unit": "ISO_DATE",
+                  "date_role": "EXCHANGE_NEW_RIGHT_CERTIFICATE_LISTING",
+                  "proofs": [
+                    {
+                      "source_id": "esun-mna-qa",
+                      "locator": "derived text without whitespace, chars 169:195",
+                      "raw_value": "玉山金股份轉換以新股權利證書上市日：115年9月1日"
+                    }
+                  ],
+                  "qualification": "SOURCE_FACT_NOT_FINAL_LEDGER"
+                },
+                "fractional_rounding": {
+                  "value": "ROUND_TO_WHOLE_TWD",
+                  "unit": "POLICY",
+                  "date_role": "THIS_SHARE_EXCHANGE_ONLY",
+                  "proofs": [
+                    {
+                      "source_id": "esun-mna-qa",
+                      "locator": "derived text without whitespace, chars 312:331",
+                      "raw_value": "不足1元部分四捨五入至新臺幣「元」為止"
+                    }
+                  ],
+                  "qualification": "SOURCE_FACT_NOT_FINAL_LEDGER"
+                },
+                "conditional_remittance_fee": {
+                  "value": "10",
+                  "unit": "TWD",
+                  "date_role": "THIS_SHARE_EXCHANGE_CONDITIONAL_FEE_NOT_OTHER_PAYMENTS",
+                  "proofs": [
+                    {
+                      "source_id": "esun-mna-qa",
+                      "locator": "derived text without whitespace, chars 446:453",
+                      "raw_value": "免扣匯費10元"
+                    }
+                  ],
+                  "qualification": "SOURCE_FACT_NOT_FINAL_LEDGER"
+                }
+              },
+              "id": "sha256:591576c458ebb0e1506f5e562c3b61655f199fe05069e559e29bd05783c39ccc"
+            },
+            {
+              "family": "1101-cash-distribution-board-proposal",
+              "issuer_code": "1101",
+              "entitled_old_code": "1101",
+              "action_type": "CASH_DISTRIBUTION_PROPOSAL",
+              "old_instrument": "1101_ORDINARY_OLD_SHARES",
+              "company_codes": [
+                "1101"
+              ],
+              "source_ids": [
+                "tcc-capital-surplus-2026"
+              ],
+              "observed_at": "2026-10-22T09:16:26.492221+00:00",
+              "historical_signal_eligible": false,
+              "announced_at": null,
+              "stage": "BOARD_PROPOSAL_NOT_TAX_MODEL",
+              "fields": {
+                "proposed_cash_per_share": {
+                  "value": "0.8",
+                  "unit": "TWD_PER_OLD_1101_SHARE",
+                  "date_role": "NOT_A_DATE",
+                  "proofs": [
+                    {
+                      "source_id": "tcc-capital-surplus-2026",
+                      "locator": "derived text without whitespace, chars 5044:5082",
+                      "raw_value": "NT$0.8pershareincashfromcapitalsurplus"
+                    }
+                  ],
+                  "qualification": "SOURCE_FACT_NOT_FINAL_LEDGER"
+                },
+                "proposed_funding_source": {
+                  "value": "CAPITAL_SURPLUS",
+                  "unit": "SOURCE_CATEGORY",
+                  "date_role": "BOARD_PROPOSAL_NOT_FINAL_RESOLUTION",
+                  "proofs": [
+                    {
+                      "source_id": "tcc-capital-surplus-2026",
+                      "locator": "derived text without whitespace, chars 71:132",
+                      "raw_value": "BoardProposesNT$0.8CashDistributionperSharefromCapitalSurplus"
+                    }
+                  ],
+                  "qualification": "SOURCE_FACT_NOT_FINAL_LEDGER"
+                },
+                "final_funding_source": {
+                  "value": null,
+                  "unit": "SOURCE_CATEGORY",
+                  "date_role": "FINAL_DISTRIBUTION",
+                  "proofs": [],
+                  "qualification": "SOURCE_FACT_NOT_FINAL_LEDGER"
+                },
+                "capital_surplus_subtype": {
+                  "value": null,
+                  "unit": "SOURCE_CATEGORY",
+                  "date_role": "FINAL_CAPITAL_SURPLUS_SUBTYPE",
+                  "proofs": [],
+                  "qualification": "SOURCE_FACT_NOT_FINAL_LEDGER"
+                },
+                "net_cash_per_share": {
+                  "value": null,
+                  "unit": "TWD_PER_OLD_1101_SHARE",
+                  "date_role": "INVESTOR_OR_CONTEXTUAL_MODEL_NET_CASH",
+                  "proofs": [],
+                  "qualification": "SOURCE_FACT_NOT_FINAL_LEDGER"
+                }
+              },
+              "id": "sha256:1e4ac85c0b29fc31441f5d36208189e5d6ad55eaf3fa6f9e994db8e054a63bed"
+            }
+          ],
+          "source_failure": {
+            "status": "FAILED_HTTP_403_NOT_USABLE_NOT_RETRIED",
+            "url": "https://www.nhi.gov.tw/ch/cp-2898-b0a9b-3150-1.html"
+          },
+          "review_fact_path": "股票系統M1_v0_18/rotation_research/source_review_20261022/facts.json",
+          "review_fact_sha256": "672437d6f5213ba465ba6055bc0ea469d0da010244ba7c62a1ff7e644df6e72e",
+          "identity_qualification": "TWO_SAVED_TWSE_ASSETS_ONLY_TARGET_2867_IDENTITY_FROM_WORK_REVIEW_NOT_FULL_MASTER",
+          "version_relations": [
+            {
+              "family": "2884-acquires-2867",
+              "earlier_document_version": "sha256:5c768c6a2c7b2b3145015e722670727de85cef74fa12f990f7b2f0565fe67119",
+              "later_document_version": "sha256:b9eac95a1a87bcc06b6d3b67547af3148106813cddf5fffd9edab21fc450207f",
+              "role": "DOCUMENT_CLAIM_SEQUENCE_NOT_AUTHENTICATED_HISTORICAL_AVAILABILITY_OR_AUTOMATIC_SELECTION"
+            }
+          ],
+          "id": "sha256:c9fb913ce7067c987da6faf03d352922393f548c961f45922ac596fe2ff8a343"
+        },
+        "events": [
+          {
+            "code": "1101",
+            "mode": "RAW",
+            "basis_id": "RAW:fd5674f6d424dadbfe0644453e4f54c9ed8943fe3149b6f681f24932176db801",
+            "ex_date": "2025-07-02",
+            "announced_at": null,
+            "historical_signal_eligible": false,
+            "observed_at": "2026-10-21T23:38:10.828609+00:00",
+            "source_ids": [
+              "exright-2025",
+              "issuer-1101"
+            ],
+            "field_sources": {
+              "ex_date": [
+                {
+                  "source_id": "exright-2025",
+                  "locator": "data[511].資料日期",
+                  "raw_value": "114年07月02日"
+                }
+              ],
+              "gross_per_share": [
+                {
+                  "source_id": "issuer-1101",
+                  "locator": "html_table_rows[2][2]",
+                  "raw_value": "1"
+                }
+              ],
+              "pay_date": [
+                {
+                  "source_id": "issuer-1101",
+                  "locator": "html_table_rows[2][7]",
+                  "raw_value": "2025/07/29"
+                }
+              ]
+            },
+            "exchange_row_index": 511,
+            "exchange_raw_fields": {
+              "資料日期": "114年07月02日",
+              "股票代號": "1101",
+              "股票名稱": "台泥",
+              "除權息前收盤價": "26.15",
+              "除權息參考價": "25.15",
+              "權值+息值": "1.000000",
+              "權/息": "息",
+              "漲停價格": "27.65",
+              "跌停價格": "22.65",
+              "開盤競價基準": "25.15",
+              "減除股利參考價": "25.15",
+              "詳細資料": "1101,20250702",
+              "最近一次申報資料 季別/日期": "115年第2季(https://mops.twse.com.tw/mops/web/t163sb01)",
+              "最近一次申報每股 (單位)淨值": "30.86",
+              "最近一次申報每股 (單位)盈餘": "0.38"
+            },
+            "issuer_row_index": 2,
+            "issuer_raw_cells": [
+              "2024",
+              "2025/05/27",
+              "1",
+              "0",
+              "1",
+              "2025/07/02",
+              "",
+              "2025/07/29"
+            ],
+            "date_semantics": "EXCHANGE_EX_TRADING_DATE_NOT_ISSUER_RECORD_DATE",
+            "completeness": "PARTIAL_COMPONENT_EVIDENCE_NOT_FULL_ACTION_COVERAGE",
+            "type": "CASH_DIVIDEND",
+            "gross_per_share": "1",
+            "net_per_share": null,
+            "pay_date": "2025-07-29",
+            "record_date": null,
+            "pay_date_role": "ISSUER_SCHEDULE_NOT_INVESTOR_RECEIPT",
+            "missing": [
+              "announced_at",
+              "investor_net_per_share",
+              "investor_actual_receipt"
+            ],
+            "id": "sha256:01df5dd4c25df56baa28b725845678043e4809abf08e15cb19bab046ad92902f"
+          },
+          {
+            "code": "2884",
+            "mode": "RAW",
+            "basis_id": "RAW:c27514e56b61b669362aaf8fdd7223acb7caaabcdaf0fa6ccf4a17909ba9ac60",
+            "ex_date": "2025-07-22",
+            "announced_at": null,
+            "historical_signal_eligible": false,
+            "observed_at": "2026-10-21T23:38:10.828609+00:00",
+            "source_ids": [
+              "exright-2025",
+              "issuer-2884"
+            ],
+            "field_sources": {
+              "ex_date": [
+                {
+                  "source_id": "exright-2025",
+                  "locator": "data[820].資料日期",
+                  "raw_value": "114年07月22日"
+                }
+              ],
+              "gross_per_share": [
+                {
+                  "source_id": "issuer-2884",
+                  "locator": "html_table_rows[3][2]",
+                  "raw_value": "1.2"
+                }
+              ],
+              "pay_date": [
+                {
+                  "source_id": "issuer-2884",
+                  "locator": "html_table_rows[3][3]",
+                  "raw_value": "2025.08.27"
+                }
+              ],
+              "record_date": [
+                {
+                  "source_id": "issuer-2884",
+                  "locator": "html_table_rows[3][1]",
+                  "raw_value": "2025.07.28"
+                }
+              ]
+            },
+            "exchange_row_index": 820,
+            "exchange_raw_fields": {
+              "資料日期": "114年07月22日",
+              "股票代號": "2884",
+              "股票名稱": "玉山金",
+              "除權息前收盤價": "34.20",
+              "除權息參考價": "32.67",
+              "權值+息值": "1.527222",
+              "權/息": "權息",
+              "漲停價格": "35.90",
+              "跌停價格": "29.45",
+              "開盤競價基準": "32.65",
+              "減除股利參考價": "32.67",
+              "詳細資料": "2884,20250722",
+              "最近一次申報資料 季別/日期": "115年第2季(https://mops.twse.com.tw/mops/web/t163sb01)",
+              "最近一次申報每股 (單位)淨值": "17.40",
+              "最近一次申報每股 (單位)盈餘": "1.32"
+            },
+            "issuer_row_index": 3,
+            "issuer_raw_cells": [
+              "2025",
+              "2025.07.28",
+              "1.2",
+              "2025.08.27",
+              "2025.07.28",
+              "0.10015129",
+              "2025.08.27"
+            ],
+            "date_semantics": "EXCHANGE_EX_TRADING_DATE_NOT_ISSUER_RECORD_DATE",
+            "completeness": "PARTIAL_COMPONENT_EVIDENCE_NOT_FULL_ACTION_COVERAGE",
+            "type": "CASH_DIVIDEND",
+            "gross_per_share": "1.2",
+            "net_per_share": null,
+            "pay_date": "2025-08-27",
+            "record_date": "2025-07-28",
+            "pay_date_role": "ISSUER_SCHEDULE_NOT_INVESTOR_RECEIPT",
+            "missing": [
+              "announced_at",
+              "investor_net_per_share",
+              "investor_actual_receipt"
+            ],
+            "id": "sha256:a96a11bf35947c9fce84baaf52b88a4ffd19447e9c26610c5fc01a82505d1a3a"
+          },
+          {
+            "code": "2884",
+            "mode": "RAW",
+            "basis_id": "RAW:c27514e56b61b669362aaf8fdd7223acb7caaabcdaf0fa6ccf4a17909ba9ac60",
+            "ex_date": "2025-07-22",
+            "announced_at": null,
+            "historical_signal_eligible": false,
+            "observed_at": "2026-10-22T09:16:02.244667+00:00",
+            "source_ids": [
+              "exright-2025",
+              "issuer-2884",
+              "esun-2025-minutes",
+              "esun-2025-follow-up",
+              "esun-direct-2025-ratio"
+            ],
+            "field_sources": {
+              "ex_date": [
+                {
+                  "source_id": "exright-2025",
+                  "locator": "data[820].資料日期",
+                  "raw_value": "114年07月22日"
+                }
+              ],
+              "stock_dividend_money_per_share": [
+                {
+                  "source_id": "issuer-2884",
+                  "locator": "html_table_rows[3][5]",
+                  "raw_value": "0.10015129"
+                }
+              ],
+              "record_date": [
+                {
+                  "source_id": "issuer-2884",
+                  "locator": "html_table_rows[3][4]",
+                  "raw_value": "2025.07.28"
+                }
+              ],
+              "delivery_date": [
+                {
+                  "source_id": "issuer-2884",
+                  "locator": "html_table_rows[3][6]",
+                  "raw_value": "2025.08.27"
+                }
+              ],
+              "par_value": [
+                {
+                  "source_id": "esun-2025-minutes",
+                  "locator": "PDF page 19: 發行新股／每股面額",
+                  "raw_value": "10"
+                }
+              ],
+              "shares_per_share": [
+                {
+                  "source_id": "esun-direct-2025-ratio",
+                  "locator": "derived text without whitespace, chars 340:359",
+                  "raw_value": "每仟股配發股票股利10.015129股"
+                }
+              ],
+              "issuer_completion": [
+                {
+                  "source_id": "esun-2025-follow-up",
+                  "locator": "PDF page 1: 執行情形",
+                  "raw_value": "2025-08-27"
+                }
+              ],
+              "fractional_policy": [
+                {
+                  "source_id": "esun-2025-minutes",
+                  "locator": "PDF page 19: 第五項／畸零股（移除抽字空白）",
+                  "raw_value": "配股不足一股之畸零股，得由二人以上股東在規定期間內互為併湊為整數歸併其中一人，逾期未併湊或併湊後仍不足一股之畸零股數，按面額折發現金（至元為止），畸零股累積後授權董事長洽特定人按面額認購。"
+                }
+              ]
+            },
+            "exchange_row_index": 820,
+            "exchange_raw_fields": {
+              "資料日期": "114年07月22日",
+              "股票代號": "2884",
+              "股票名稱": "玉山金",
+              "除權息前收盤價": "34.20",
+              "除權息參考價": "32.67",
+              "權值+息值": "1.527222",
+              "權/息": "權息",
+              "漲停價格": "35.90",
+              "跌停價格": "29.45",
+              "開盤競價基準": "32.65",
+              "減除股利參考價": "32.67",
+              "詳細資料": "2884,20250722",
+              "最近一次申報資料 季別/日期": "115年第2季(https://mops.twse.com.tw/mops/web/t163sb01)",
+              "最近一次申報每股 (單位)淨值": "17.40",
+              "最近一次申報每股 (單位)盈餘": "1.32"
+            },
+            "issuer_row_index": 3,
+            "issuer_raw_cells": [
+              "2025",
+              "2025.07.28",
+              "1.2",
+              "2025.08.27",
+              "2025.07.28",
+              "0.10015129",
+              "2025.08.27"
+            ],
+            "date_semantics": "EXCHANGE_EX_TRADING_DATE_NOT_ISSUER_RECORD_DATE",
+            "completeness": "PARTIAL_COMPONENT_EVIDENCE_NOT_FULL_ACTION_COVERAGE",
+            "type": "STOCK_DIVIDEND",
+            "stock_dividend_money_per_share": "0.10015129",
+            "shares_per_share": "0.010015129",
+            "par_value": "10",
+            "record_date": "2025-07-28",
+            "delivery_date": "2025-08-27",
+            "tradable_date": null,
+            "delivery_role": "ISSUER_DISTRIBUTION_SCHEDULE_NOT_VERIFIED_LISTING_DATE",
+            "missing": [
+              "announced_at",
+              "tradable_date",
+              "final_allotment_precision",
+              "fractional_deadline_and_investor_disposition"
+            ],
+            "supersedes_event_id": "sha256:01218131fc98014d7c5b324070c7b5f0380bc5ec75e5b3878289e6af3ec0e36a",
+            "original_component_observed_at": "2026-10-21T23:38:10.828609+00:00",
+            "ratio_role": "DIRECT_PUBLISHED_NOT_VERIFIED_UNROUNDED_OR_INVESTOR_ALLOTMENT",
+            "issuer_completion": {
+              "meeting_date": "2025-06-13",
+              "issuer_record_date": "2025-07-28",
+              "issuer_reported_distribution_completed_on": "2025-08-27",
+              "tradable_date": null,
+              "investor_receipt_at": null,
+              "investor_net_amount": null,
+              "status": "ISSUER_REPORTED_COMPLETION_NOT_INVESTOR_RECEIPT_OR_LISTING"
+            },
+            "fractional_policy": "POOL_BEFORE_UNSPECIFIED_DEADLINE_THEN_PAR_CASH_TO_WHOLE_TWD",
+            "fractional_deadline": null,
+            "fractional_disposition": null,
+            "prior_observed_at": "2026-10-22T08:25:30.967022+00:00",
+            "prior_ratio_role": "DERIVED_FROM_PUBLISHED_MONEY_AND_SAME_ISSUE_PAR_NOT_EXACT_UNROUNDED_ALLOTMENT",
+            "prior_ratio_calculation": {
+              "expression": "stock_dividend_money_per_share / par_value",
+              "input_unit": "TWD_PER_OLD_SHARE / TWD_PER_NEW_SHARE",
+              "result_unit": "NEW_SHARES_PER_OLD_SHARE"
+            },
+            "ratio_calculation": {
+              "expression": "published_new_shares_per_thousand_old_shares / 1000",
+              "result_unit": "NEW_2884_SHARES_PER_OLD_2884_SHARE"
+            },
+            "published_new_shares_per_thousand_old_shares": "10.015129",
+            "issuer_page_display_date": "2025-07-07",
+            "id": "sha256:dddf104de8f030d4fedd1894a1a99386d81df1b0befa046f946cfdc5734bb387"
+          },
+          {
+            "code": "1101",
+            "mode": "RAW",
+            "basis_id": "RAW:fd5674f6d424dadbfe0644453e4f54c9ed8943fe3149b6f681f24932176db801",
+            "ex_date": "2026-07-01",
+            "announced_at": null,
+            "historical_signal_eligible": false,
+            "observed_at": "2026-10-21T23:38:10.830254+00:00",
+            "source_ids": [
+              "exright-2026-to-cutoff",
+              "issuer-1101"
+            ],
+            "field_sources": {
+              "ex_date": [
+                {
+                  "source_id": "exright-2026-to-cutoff",
+                  "locator": "data[598].資料日期",
+                  "raw_value": "115年07月01日"
+                }
+              ],
+              "gross_per_share": [
+                {
+                  "source_id": "issuer-1101",
+                  "locator": "html_table_rows[1][2]",
+                  "raw_value": "0.8"
+                }
+              ],
+              "pay_date": [
+                {
+                  "source_id": "issuer-1101",
+                  "locator": "html_table_rows[1][7]",
+                  "raw_value": "2026/07/28"
+                }
+              ]
+            },
+            "exchange_row_index": 598,
+            "exchange_raw_fields": {
+              "資料日期": "115年07月01日",
+              "股票代號": "1101",
+              "股票名稱": "台泥",
+              "除權息前收盤價": "24.05",
+              "除權息參考價": "23.25",
+              "權值+息值": "0.800000",
+              "權/息": "息",
+              "漲停價格": "25.55",
+              "跌停價格": "20.95",
+              "開盤競價基準": "23.25",
+              "減除股利參考價": "23.25",
+              "詳細資料": "1101,20260701",
+              "最近一次申報資料 季別/日期": "115年第2季(https://mops.twse.com.tw/mops/web/t163sb01)",
+              "最近一次申報每股 (單位)淨值": "30.86",
+              "最近一次申報每股 (單位)盈餘": "0.38"
+            },
+            "issuer_row_index": 1,
+            "issuer_raw_cells": [
+              "2025",
+              "2026/05/22",
+              "0.8",
+              "0",
+              "0.8",
+              "2026/07/01",
+              "",
+              "2026/07/28"
+            ],
+            "date_semantics": "EXCHANGE_EX_TRADING_DATE_NOT_ISSUER_RECORD_DATE",
+            "completeness": "PARTIAL_COMPONENT_EVIDENCE_NOT_FULL_ACTION_COVERAGE",
+            "type": "CASH_DIVIDEND",
+            "gross_per_share": "0.8",
+            "net_per_share": null,
+            "pay_date": "2026-07-28",
+            "record_date": null,
+            "pay_date_role": "ISSUER_SCHEDULE_NOT_INVESTOR_RECEIPT",
+            "missing": [
+              "announced_at",
+              "investor_net_per_share",
+              "investor_actual_receipt"
+            ],
+            "id": "sha256:b7ba974b62bad201a1757c3b8dc2015ae9a43d35f55c352bf0929c65cd2b0bd5"
+          },
+          {
+            "code": "2884",
+            "mode": "RAW",
+            "basis_id": "RAW:c27514e56b61b669362aaf8fdd7223acb7caaabcdaf0fa6ccf4a17909ba9ac60",
+            "ex_date": "2026-07-01",
+            "announced_at": null,
+            "historical_signal_eligible": false,
+            "observed_at": "2026-10-21T23:38:10.830254+00:00",
+            "source_ids": [
+              "exright-2026-to-cutoff",
+              "issuer-2884"
+            ],
+            "field_sources": {
+              "ex_date": [
+                {
+                  "source_id": "exright-2026-to-cutoff",
+                  "locator": "data[608].資料日期",
+                  "raw_value": "115年07月01日"
+                }
+              ],
+              "gross_per_share": [
+                {
+                  "source_id": "issuer-2884",
+                  "locator": "html_table_rows[2][2]",
+                  "raw_value": "1.4"
+                }
+              ],
+              "pay_date": [
+                {
+                  "source_id": "issuer-2884",
+                  "locator": "html_table_rows[2][3]",
+                  "raw_value": "2026.07.27"
+                }
+              ],
+              "record_date": [
+                {
+                  "source_id": "issuer-2884",
+                  "locator": "html_table_rows[2][1]",
+                  "raw_value": "2026.07.07"
+                }
+              ]
+            },
+            "exchange_row_index": 608,
+            "exchange_raw_fields": {
+              "資料日期": "115年07月01日",
+              "股票代號": "2884",
+              "股票名稱": "玉山金",
+              "除權息前收盤價": "34.45",
+              "除權息參考價": "33.05",
+              "權值+息值": "1.400000",
+              "權/息": "息",
+              "漲停價格": "36.35",
+              "跌停價格": "29.75",
+              "開盤競價基準": "33.05",
+              "減除股利參考價": "33.05",
+              "詳細資料": "2884,20260701",
+              "最近一次申報資料 季別/日期": "115年第2季(https://mops.twse.com.tw/mops/web/t163sb01)",
+              "最近一次申報每股 (單位)淨值": "17.40",
+              "最近一次申報每股 (單位)盈餘": "1.32"
+            },
+            "issuer_row_index": 2,
+            "issuer_raw_cells": [
+              "2026",
+              "2026.07.07",
+              "1.4",
+              "2026.07.27",
+              "-",
+              "-",
+              "-"
+            ],
+            "date_semantics": "EXCHANGE_EX_TRADING_DATE_NOT_ISSUER_RECORD_DATE",
+            "completeness": "PARTIAL_COMPONENT_EVIDENCE_NOT_FULL_ACTION_COVERAGE",
+            "type": "CASH_DIVIDEND",
+            "gross_per_share": "1.4",
+            "net_per_share": null,
+            "pay_date": "2026-07-27",
+            "record_date": "2026-07-07",
+            "pay_date_role": "ISSUER_SCHEDULE_NOT_INVESTOR_RECEIPT",
+            "missing": [
+              "announced_at",
+              "investor_net_per_share",
+              "investor_actual_receipt"
+            ],
+            "id": "sha256:cf65c6f1ab9ad9fb1a64a8405cd9d05505739e72d6383c5e37903389f52c7349"
+          }
+        ],
+        "inventory": [
+          {
+            "family": "2884-stock-dividend-component:sha256:01218131fc98014d7c5b324070c7b5f0380bc5ec75e5b3878289e6af3ec0e36a",
+            "issuer_code": "2884",
+            "entitled_old_code": "2884",
+            "action_type": "STOCK_DIVIDEND",
+            "old_instrument": "2884_ORDINARY_OLD_SHARES",
+            "company_codes": [
+              "2884"
+            ],
+            "source_ids": [
+              "esun-direct-2025-ratio"
+            ],
+            "observed_at": "2026-10-22T09:16:02.244667+00:00",
+            "historical_signal_eligible": false,
+            "announced_at": null,
+            "stage": "PUBLISHED_STOCK_DIVIDEND",
+            "fields": {
+              "shares_per_share": {
+                "value": "0.010015129",
+                "unit": "NEW_2884_SHARES_PER_OLD_2884_SHARE",
+                "date_role": "NOT_A_DATE",
+                "proofs": [
+                  {
+                    "source_id": "esun-direct-2025-ratio",
+                    "locator": "derived text without whitespace, chars 340:359",
+                    "raw_value": "每仟股配發股票股利10.015129股"
+                  }
+                ],
+                "qualification": "DIRECT_PUBLISHED"
+              },
+              "tentative_pay_date": {
+                "value": "2025-08-27",
+                "unit": "ISO_DATE",
+                "date_role": "TENTATIVE_STOCK_DIVIDEND_DISTRIBUTION",
+                "proofs": [
+                  {
+                    "source_id": "esun-direct-2025-ratio",
+                    "locator": "derived text without whitespace, chars 372:382",
+                    "raw_value": "暫訂發放日為8/27"
+                  }
+                ],
+                "qualification": "SOURCE_FACT_NOT_FINAL_LEDGER"
+              },
+              "tradable_date": {
+                "value": null,
+                "unit": "ISO_DATE",
+                "date_role": "STOCK_DIVIDEND_ORDINARY_SHARE_TRADABILITY",
+                "proofs": [],
+                "qualification": "SOURCE_FACT_NOT_FINAL_LEDGER"
+              }
+            },
+            "id": "sha256:3090d9519d9526c48742e1f1c6c3be15e81971306d0f41b1d6034e0f6b4dfffb"
+          },
+          {
+            "family": "2884-acquires-2867",
+            "issuer_code": "2884",
+            "entitled_old_code": "2867",
+            "action_type": "SHARE_EXCHANGE",
+            "old_instrument": "2867_ORDINARY_OLD_SHARES",
+            "company_codes": [
+              "2884",
+              "2867"
+            ],
+            "source_ids": [
+              "esun-mna-20251105",
+              "esun-mna-index"
+            ],
+            "observed_at": "2026-10-22T09:18:12.843605+00:00",
+            "historical_signal_eligible": false,
+            "announced_at": null,
+            "stage": "BOARD_PROPOSAL",
+            "fields": {
+              "shares_per_share": {
+                "value": "0.2486",
+                "unit": "NEW_2884_SHARES_PER_OLD_2867_SHARE",
+                "date_role": "NOT_A_DATE",
+                "proofs": [
+                  {
+                    "source_id": "esun-mna-20251105",
+                    "locator": "derived text without whitespace, chars 453:481",
+                    "raw_value": "每1股三商美邦人壽普通股可換發本公司0.2486股普通股"
+                  }
+                ],
+                "qualification": "DIRECT_PUBLISHED"
+              },
+              "scheduled_effective_date": {
+                "value": null,
+                "unit": "ISO_DATE",
+                "date_role": "SCHEDULED_SHARE_EXCHANGE_EFFECTIVE",
+                "proofs": [],
+                "qualification": "SOURCE_FACT_NOT_FINAL_LEDGER"
+              },
+              "document_claimed_statement_at": {
+                "value": "2025-11-05T17:37:58+08:00",
+                "unit": "DATETIME_OFFSET",
+                "date_role": "DOCUMENT_SELF_REPORTED_STATEMENT_NOT_AUTHENTICATED_AVAILABILITY",
+                "proofs": [
+                  {
+                    "source_id": "esun-mna-20251105",
+                    "locator": "derived text without whitespace, chars 24:37",
+                    "raw_value": "發言日期114/11/05"
+                  }
+                ],
+                "qualification": "SOURCE_FACT_NOT_FINAL_LEDGER"
+              }
+            },
+            "id": "sha256:5c768c6a2c7b2b3145015e722670727de85cef74fa12f990f7b2f0565fe67119"
+          },
+          {
+            "family": "2884-acquires-2867",
+            "issuer_code": "2884",
+            "entitled_old_code": "2867",
+            "action_type": "SHARE_EXCHANGE",
+            "old_instrument": "2867_ORDINARY_OLD_SHARES",
+            "company_codes": [
+              "2884",
+              "2867"
+            ],
+            "source_ids": [
+              "esun-mna-20260713",
+              "esun-mna-index"
+            ],
+            "observed_at": "2026-10-22T09:16:15.446856+00:00",
+            "historical_signal_eligible": false,
+            "announced_at": null,
+            "stage": "ANNOUNCED_SCHEDULE",
+            "fields": {
+              "shares_per_share": {
+                "value": "0.2596",
+                "unit": "NEW_2884_SHARES_PER_OLD_2867_SHARE",
+                "date_role": "NOT_A_DATE",
+                "proofs": [
+                  {
+                    "source_id": "esun-mna-20260713",
+                    "locator": "derived text without whitespace, chars 409:436",
+                    "raw_value": "三商美邦人壽每1股普通股換發本公司0.2596股普通股"
+                  }
+                ],
+                "qualification": "DIRECT_PUBLISHED"
+              },
+              "scheduled_effective_date": {
+                "value": "2026-09-01",
+                "unit": "ISO_DATE",
+                "date_role": "SCHEDULED_SHARE_EXCHANGE_EFFECTIVE",
+                "proofs": [
+                  {
+                    "source_id": "esun-mna-20260713",
+                    "locator": "derived text without whitespace, chars 465:477",
+                    "raw_value": "基準日為115年9月1日"
+                  }
+                ],
+                "qualification": "SOURCE_FACT_NOT_FINAL_LEDGER"
+              },
+              "document_claimed_statement_at": {
+                "value": "2026-07-13T15:03:17+08:00",
+                "unit": "DATETIME_OFFSET",
+                "date_role": "DOCUMENT_SELF_REPORTED_STATEMENT_NOT_AUTHENTICATED_AVAILABILITY",
+                "proofs": [
+                  {
+                    "source_id": "esun-mna-20260713",
+                    "locator": "derived text without whitespace, chars 34:47",
+                    "raw_value": "發言日期115/07/13"
+                  }
+                ],
+                "qualification": "SOURCE_FACT_NOT_FINAL_LEDGER"
+              }
+            },
+            "id": "sha256:b9eac95a1a87bcc06b6d3b67547af3148106813cddf5fffd9edab21fc450207f"
+          },
+          {
+            "family": "2884-acquires-2867",
+            "issuer_code": "2884",
+            "entitled_old_code": "2867",
+            "action_type": "SHARE_EXCHANGE",
+            "old_instrument": "2867_ORDINARY_OLD_SHARES",
+            "company_codes": [
+              "2884",
+              "2867"
+            ],
+            "source_ids": [
+              "esun-mna-qa",
+              "esun-mna-index"
+            ],
+            "observed_at": "2026-10-22T09:16:21.022228+00:00",
+            "historical_signal_eligible": false,
+            "announced_at": null,
+            "stage": "CASE_SPECIFIC_QA_NOT_INVESTOR_RECEIPT",
+            "fields": {
+              "certificate_listing_date": {
+                "value": "2026-09-01",
+                "unit": "ISO_DATE",
+                "date_role": "EXCHANGE_NEW_RIGHT_CERTIFICATE_LISTING",
+                "proofs": [
+                  {
+                    "source_id": "esun-mna-qa",
+                    "locator": "derived text without whitespace, chars 169:195",
+                    "raw_value": "玉山金股份轉換以新股權利證書上市日：115年9月1日"
+                  }
+                ],
+                "qualification": "SOURCE_FACT_NOT_FINAL_LEDGER"
+              },
+              "fractional_rounding": {
+                "value": "ROUND_TO_WHOLE_TWD",
+                "unit": "POLICY",
+                "date_role": "THIS_SHARE_EXCHANGE_ONLY",
+                "proofs": [
+                  {
+                    "source_id": "esun-mna-qa",
+                    "locator": "derived text without whitespace, chars 312:331",
+                    "raw_value": "不足1元部分四捨五入至新臺幣「元」為止"
+                  }
+                ],
+                "qualification": "SOURCE_FACT_NOT_FINAL_LEDGER"
+              },
+              "conditional_remittance_fee": {
+                "value": "10",
+                "unit": "TWD",
+                "date_role": "THIS_SHARE_EXCHANGE_CONDITIONAL_FEE_NOT_OTHER_PAYMENTS",
+                "proofs": [
+                  {
+                    "source_id": "esun-mna-qa",
+                    "locator": "derived text without whitespace, chars 446:453",
+                    "raw_value": "免扣匯費10元"
+                  }
+                ],
+                "qualification": "SOURCE_FACT_NOT_FINAL_LEDGER"
+              }
+            },
+            "id": "sha256:591576c458ebb0e1506f5e562c3b61655f199fe05069e559e29bd05783c39ccc"
+          },
+          {
+            "family": "1101-cash-distribution-board-proposal",
+            "issuer_code": "1101",
+            "entitled_old_code": "1101",
+            "action_type": "CASH_DISTRIBUTION_PROPOSAL",
+            "old_instrument": "1101_ORDINARY_OLD_SHARES",
+            "company_codes": [
+              "1101"
+            ],
+            "source_ids": [
+              "tcc-capital-surplus-2026"
+            ],
+            "observed_at": "2026-10-22T09:16:26.492221+00:00",
+            "historical_signal_eligible": false,
+            "announced_at": null,
+            "stage": "BOARD_PROPOSAL_NOT_TAX_MODEL",
+            "fields": {
+              "proposed_cash_per_share": {
+                "value": "0.8",
+                "unit": "TWD_PER_OLD_1101_SHARE",
+                "date_role": "NOT_A_DATE",
+                "proofs": [
+                  {
+                    "source_id": "tcc-capital-surplus-2026",
+                    "locator": "derived text without whitespace, chars 5044:5082",
+                    "raw_value": "NT$0.8pershareincashfromcapitalsurplus"
+                  }
+                ],
+                "qualification": "SOURCE_FACT_NOT_FINAL_LEDGER"
+              },
+              "proposed_funding_source": {
+                "value": "CAPITAL_SURPLUS",
+                "unit": "SOURCE_CATEGORY",
+                "date_role": "BOARD_PROPOSAL_NOT_FINAL_RESOLUTION",
+                "proofs": [
+                  {
+                    "source_id": "tcc-capital-surplus-2026",
+                    "locator": "derived text without whitespace, chars 71:132",
+                    "raw_value": "BoardProposesNT$0.8CashDistributionperSharefromCapitalSurplus"
+                  }
+                ],
+                "qualification": "SOURCE_FACT_NOT_FINAL_LEDGER"
+              },
+              "final_funding_source": {
+                "value": null,
+                "unit": "SOURCE_CATEGORY",
+                "date_role": "FINAL_DISTRIBUTION",
+                "proofs": [],
+                "qualification": "SOURCE_FACT_NOT_FINAL_LEDGER"
+              },
+              "capital_surplus_subtype": {
+                "value": null,
+                "unit": "SOURCE_CATEGORY",
+                "date_role": "FINAL_CAPITAL_SURPLUS_SUBTYPE",
+                "proofs": [],
+                "qualification": "SOURCE_FACT_NOT_FINAL_LEDGER"
+              },
+              "net_cash_per_share": {
+                "value": null,
+                "unit": "TWD_PER_OLD_1101_SHARE",
+                "date_role": "INVESTOR_OR_CONTEXTUAL_MODEL_NET_CASH",
+                "proofs": [],
+                "qualification": "SOURCE_FACT_NOT_FINAL_LEDGER"
+              }
+            },
+            "id": "sha256:1e4ac85c0b29fc31441f5d36208189e5d6ad55eaf3fa6f9e994db8e054a63bed"
+          },
+          {
+            "family": "1101-capital-surplus-2026-approved",
+            "issuer_code": "1101",
+            "entitled_old_code": "1101",
+            "old_instrument": "1101_ORDINARY_OLD_SHARES",
+            "action_type": "CASH_DISTRIBUTION_RESOLUTION",
+            "company_codes": [
+              "1101"
+            ],
+            "source_ids": [
+              "tcc-meeting-index",
+              "tcc-2026-agm-minutes"
+            ],
+            "stage": "SHAREHOLDER_APPROVED_ADJUSTABLE",
+            "observed_at": "2026-10-23T01:14:00.445418+00:00",
+            "announced_at": null,
+            "historical_signal_eligible": false,
+            "fields": {
+              "meeting_date": {
+                "value": "2026-05-22",
+                "unit": "ISO_DATE",
+                "date_role": "SHAREHOLDER_MEETING_NOT_EX_RECORD_PAY_DATE",
+                "proofs": [
+                  {
+                    "source_id": "tcc-meeting-index",
+                    "locator": "visible text 2026 annual meeting date",
+                    "raw_value": "2026股東常會日期2026.05.22"
+                  }
+                ],
+                "qualification": "RESOLUTION_DIAGNOSTIC_NOT_FINAL_LEDGER"
+              },
+              "approved_cash_per_share": {
+                "value": "0.8",
+                "unit": "TWD_PER_OLD_1101_SHARE",
+                "date_role": "NOT_A_DATE",
+                "proofs": [
+                  {
+                    "source_id": "tcc-2026-agm-minutes",
+                    "pdf_pages": [
+                      6
+                    ],
+                    "locator": "PDF pages 6",
+                    "raw_value": "每股發放0.8元"
+                  }
+                ],
+                "qualification": "RESOLUTION_DIAGNOSTIC_NOT_FINAL_LEDGER"
+              },
+              "approved_total_twd": {
+                "value": "5994545394",
+                "unit": "TWD",
+                "date_role": "APPROVED_ISSUER_TOTAL_NOT_INVESTOR_CASH",
+                "proofs": [
+                  {
+                    "source_id": "tcc-2026-agm-minutes",
+                    "pdf_pages": [
+                      6
+                    ],
+                    "locator": "PDF pages 6",
+                    "raw_value": "5,994,545,394元"
+                  }
+                ],
+                "qualification": "RESOLUTION_DIAGNOSTIC_NOT_FINAL_LEDGER"
+              },
+              "approved_funding_label": {
+                "value": "超過票面金額發行股票所得溢額",
+                "unit": "SOURCE_LABEL_AS_STATED",
+                "date_role": "APPROVED_RESOLUTION_NOT_TAX_SUBTYPE",
+                "proofs": [
+                  {
+                    "source_id": "tcc-2026-agm-minutes",
+                    "pdf_pages": [
+                      6
+                    ],
+                    "locator": "PDF pages 6",
+                    "raw_value": "超過票面金額發行股票所得溢額"
+                  }
+                ],
+                "qualification": "RESOLUTION_DIAGNOSTIC_NOT_FINAL_LEDGER"
+              },
+              "rounding_scope": {
+                "value": "PER_ORDINARY_SHAREHOLDER_TOTAL_CASH_DROP_SUB_TWD",
+                "unit": "POLICY",
+                "date_role": "PER_HOLDER_TOTAL_CASH",
+                "proofs": [
+                  {
+                    "source_id": "tcc-2026-agm-minutes",
+                    "pdf_pages": [
+                      6,
+                      7
+                    ],
+                    "locator": "PDF pages 6,7",
+                    "raw_value": "每位普通股股東發放現金總額至元為止(元以下捨去)"
+                  }
+                ],
+                "qualification": "RESOLUTION_DIAGNOSTIC_NOT_FINAL_LEDGER"
+              },
+              "ratio_adjustment_authority": {
+                "value": "CHAIR_AUTHORIZED_IF_OUTSTANDING_SHARES_CHANGE",
+                "unit": "AUTHORITY",
+                "date_role": "NOT_FINAL_ADJUSTED_RATIO",
+                "proofs": [
+                  {
+                    "source_id": "tcc-2026-agm-minutes",
+                    "pdf_pages": [
+                      6
+                    ],
+                    "locator": "PDF pages 6",
+                    "raw_value": "授權董事長全權處理"
+                  }
+                ],
+                "qualification": "RESOLUTION_DIAGNOSTIC_NOT_FINAL_LEDGER"
+              },
+              "date_setting_authority": {
+                "value": "CHAIR_TO_SET_RECORD_AND_PAY_DATES",
+                "unit": "AUTHORITY",
+                "date_role": "NOT_ACTUAL_DATES",
+                "proofs": [
+                  {
+                    "source_id": "tcc-2026-agm-minutes",
+                    "pdf_pages": [
+                      6
+                    ],
+                    "locator": "PDF pages 6",
+                    "raw_value": "另行訂定發放現金基準日及發放日"
+                  }
+                ],
+                "qualification": "RESOLUTION_DIAGNOSTIC_NOT_FINAL_LEDGER"
+              },
+              "final_cash_per_share": {
+                "value": null,
+                "unit": "TWD_PER_OLD_1101_SHARE",
+                "date_role": "FINAL_AFTER_ADJUSTMENTS",
+                "proofs": [],
+                "qualification": "RESOLUTION_DIAGNOSTIC_NOT_FINAL_LEDGER"
+              },
+              "tax_origin_subtype": {
+                "value": null,
+                "unit": "TAX_CATEGORY",
+                "date_role": "AUTHENTICATED_TAX_ORIGIN",
+                "proofs": [],
+                "qualification": "RESOLUTION_DIAGNOSTIC_NOT_FINAL_LEDGER"
+              },
+              "net_cash_per_share": {
+                "value": null,
+                "unit": "TWD_PER_OLD_1101_SHARE",
+                "date_role": "INVESTOR_NET",
+                "proofs": [],
+                "qualification": "RESOLUTION_DIAGNOSTIC_NOT_FINAL_LEDGER"
+              },
+              "record_date": {
+                "value": null,
+                "unit": "ISO_DATE",
+                "date_role": "ACTUAL_RECORD_DATE",
+                "proofs": [],
+                "qualification": "RESOLUTION_DIAGNOSTIC_NOT_FINAL_LEDGER"
+              },
+              "pay_date": {
+                "value": null,
+                "unit": "ISO_DATE",
+                "date_role": "ACTUAL_PAY_DATE",
+                "proofs": [],
+                "qualification": "RESOLUTION_DIAGNOSTIC_NOT_FINAL_LEDGER"
+              },
+              "actual_investor_receipt": {
+                "value": null,
+                "unit": "TWD",
+                "date_role": "ACTUAL_INVESTOR_RECEIPT",
+                "proofs": [],
+                "qualification": "RESOLUTION_DIAGNOSTIC_NOT_FINAL_LEDGER"
+              }
+            },
+            "id": "sha256:3912f8383c15a479a8b1aeaa4835f4ca53ad6f101fc88e96f15fd531d0bbeee4"
+          },
+          {
+            "family": "1101-sixth-treasury-repurchase",
+            "issuer_code": "1101",
+            "entitled_old_code": "1101",
+            "old_instrument": "1101_ORDINARY_OLD_SHARES",
+            "action_type": "TREASURY_REPURCHASE_REPORT",
+            "company_codes": [
+              "1101"
+            ],
+            "source_ids": [
+              "tcc-meeting-index",
+              "tcc-2026-agm-minutes"
+            ],
+            "stage": "TRANCHE_REPORT_NOT_HOLDER_CAPITAL_REDUCTION",
+            "observed_at": "2026-10-23T01:14:00.445418+00:00",
+            "announced_at": null,
+            "historical_signal_eligible": false,
+            "fields": {
+              "actual_repurchase_quantity": {
+                "value": "10000",
+                "unit": "張_AS_PUBLISHED",
+                "date_role": "ISSUER_TREASURY_TRANCHE",
+                "proofs": [
+                  {
+                    "source_id": "tcc-2026-agm-minutes",
+                    "pdf_pages": [
+                      3
+                    ],
+                    "locator": "PDF pages 3",
+                    "raw_value": "實際買回股份之數量10,000張"
+                  }
+                ],
+                "qualification": "RESOLUTION_DIAGNOSTIC_NOT_FINAL_LEDGER"
+              },
+              "reported_cancellation": {
+                "value": "NONE_REPORTED_THIS_TRANCHE",
+                "unit": "TRANCHE_REPORT_AS_STATED",
+                "date_role": "NOT_HOLDER_CONVERSION_OR_CASHFLOW",
+                "proofs": [
+                  {
+                    "source_id": "tcc-2026-agm-minutes",
+                    "pdf_pages": [
+                      3
+                    ],
+                    "locator": "PDF pages 3",
+                    "raw_value": "已辦理銷除之股份數量無"
+                  }
+                ],
+                "qualification": "RESOLUTION_DIAGNOSTIC_NOT_FINAL_LEDGER"
+              },
+              "cancellation_effective_date": {
+                "value": null,
+                "unit": "ISO_DATE",
+                "date_role": "CANCELLATION_EFFECTIVE_NOT_BUYBACK_END",
+                "proofs": [],
+                "qualification": "RESOLUTION_DIAGNOSTIC_NOT_FINAL_LEDGER"
+              },
+              "holder_conversion_ratio": {
+                "value": null,
+                "unit": "NEW_PER_OLD_SHARE",
+                "date_role": "HOLDER_CAPITAL_REDUCTION_NOT_AUTHENTICATED",
+                "proofs": [],
+                "qualification": "RESOLUTION_DIAGNOSTIC_NOT_FINAL_LEDGER"
+              },
+              "holder_cashflow": {
+                "value": null,
+                "unit": "TWD",
+                "date_role": "HOLDER_CAPITAL_RETURN_NOT_AUTHENTICATED",
+                "proofs": [],
+                "qualification": "RESOLUTION_DIAGNOSTIC_NOT_FINAL_LEDGER"
+              }
+            },
+            "id": "sha256:5f032becaccb3085398a8025359322047c4ef31f9ffbf3ab2adcde5d83ae4b56"
+          },
+          {
+            "family": "1101-seventh-treasury-repurchase",
+            "issuer_code": "1101",
+            "entitled_old_code": "1101",
+            "old_instrument": "1101_ORDINARY_OLD_SHARES",
+            "action_type": "TREASURY_REPURCHASE_REPORT",
+            "company_codes": [
+              "1101"
+            ],
+            "source_ids": [
+              "tcc-meeting-index",
+              "tcc-2026-agm-minutes"
+            ],
+            "stage": "TRANCHE_REPORT_NOT_HOLDER_CAPITAL_REDUCTION",
+            "observed_at": "2026-10-23T01:14:00.445418+00:00",
+            "announced_at": null,
+            "historical_signal_eligible": false,
+            "fields": {
+              "actual_repurchase_quantity": {
+                "value": "28000",
+                "unit": "張_AS_PUBLISHED",
+                "date_role": "ISSUER_TREASURY_TRANCHE",
+                "proofs": [
+                  {
+                    "source_id": "tcc-2026-agm-minutes",
+                    "pdf_pages": [
+                      4
+                    ],
+                    "locator": "PDF pages 4",
+                    "raw_value": "實際買回股份之數量28,000張"
+                  }
+                ],
+                "qualification": "RESOLUTION_DIAGNOSTIC_NOT_FINAL_LEDGER"
+              },
+              "reported_cancellation": {
+                "value": "28000",
+                "unit": "TRANCHE_REPORT_AS_STATED",
+                "date_role": "NOT_HOLDER_CONVERSION_OR_CASHFLOW",
+                "proofs": [
+                  {
+                    "source_id": "tcc-2026-agm-minutes",
+                    "pdf_pages": [
+                      4
+                    ],
+                    "locator": "PDF pages 4",
+                    "raw_value": "已辦理銷除之股份數量28,000張"
+                  }
+                ],
+                "qualification": "RESOLUTION_DIAGNOSTIC_NOT_FINAL_LEDGER"
+              },
+              "cancellation_effective_date": {
+                "value": null,
+                "unit": "ISO_DATE",
+                "date_role": "CANCELLATION_EFFECTIVE_NOT_BUYBACK_END",
+                "proofs": [],
+                "qualification": "RESOLUTION_DIAGNOSTIC_NOT_FINAL_LEDGER"
+              },
+              "holder_conversion_ratio": {
+                "value": null,
+                "unit": "NEW_PER_OLD_SHARE",
+                "date_role": "HOLDER_CAPITAL_REDUCTION_NOT_AUTHENTICATED",
+                "proofs": [],
+                "qualification": "RESOLUTION_DIAGNOSTIC_NOT_FINAL_LEDGER"
+              },
+              "holder_cashflow": {
+                "value": null,
+                "unit": "TWD",
+                "date_role": "HOLDER_CAPITAL_RETURN_NOT_AUTHENTICATED",
+                "proofs": [],
+                "qualification": "RESOLUTION_DIAGNOSTIC_NOT_FINAL_LEDGER"
+              }
+            },
+            "id": "sha256:d23b7d5f03dc9a6f02b0bd4659cce8519ef01a32eed92dc9dc9f68a652f2dfc5"
+          }
+        ],
+        "coverage": {
+          "1101": {
+            "status": "INCOMPLETE",
+            "start": "2025-07-01",
+            "end": "2026-10-16",
+            "event_ids": [
+              "sha256:01df5dd4c25df56baa28b725845678043e4809abf08e15cb19bab046ad92902f",
+              "sha256:b7ba974b62bad201a1757c3b8dc2015ae9a43d35f55c352bf0929c65cd2b0bd5"
+            ],
+            "source_ids": [
+              "exright-2025",
+              "exright-2026-to-cutoff",
+              "issuer-1101",
+              "issuer-2884",
+              "tcc-capital-surplus-2026"
+            ],
+            "types": [
+              "CASH_DIVIDEND",
+              "STOCK_DIVIDEND"
+            ],
+            "other_actions_checked": false,
+            "gaps": [
+              "NO_EXHAUSTIVE_CAPITAL_REDUCTION_OR_OTHER_ACTION_REGISTER",
+              "EXCHANGE_2026_CAPTURE_ENDS_2026-07-24_MISSING_2026-07-25_TO_2026-10-16",
+              "EXRIGHT_ENDPOINT_EXCLUSIONS_NOT_COMPLETE_CORPORATE_ACTION_UNIVERSE",
+              "SCOPED_INVENTORY_NOT_EXHAUSTIVE_REGISTER_OR_SUPPORTED_ACCOUNT_IMPACT",
+              "RESOLUTION_NOT_FINAL_RATIO_NET_PAYMENT_OR_EXHAUSTIVE_ACTION_REGISTER"
+            ],
+            "known_company_action_ids": [
+              "sha256:1e4ac85c0b29fc31441f5d36208189e5d6ad55eaf3fa6f9e994db8e054a63bed",
+              "sha256:3912f8383c15a479a8b1aeaa4835f4ca53ad6f101fc88e96f15fd531d0bbeee4",
+              "sha256:5f032becaccb3085398a8025359322047c4ef31f9ffbf3ab2adcde5d83ae4b56",
+              "sha256:d23b7d5f03dc9a6f02b0bd4659cce8519ef01a32eed92dc9dc9f68a652f2dfc5"
+            ]
+          },
+          "2884": {
+            "status": "INCOMPLETE",
+            "start": "2025-07-01",
+            "end": "2026-10-16",
+            "event_ids": [
+              "sha256:a96a11bf35947c9fce84baaf52b88a4ffd19447e9c26610c5fc01a82505d1a3a",
+              "sha256:dddf104de8f030d4fedd1894a1a99386d81df1b0befa046f946cfdc5734bb387",
+              "sha256:cf65c6f1ab9ad9fb1a64a8405cd9d05505739e72d6383c5e37903389f52c7349"
+            ],
+            "source_ids": [
+              "esun-2025-follow-up",
+              "esun-2025-minutes",
+              "esun-direct-2025-ratio",
+              "esun-mna-20251105",
+              "esun-mna-20260713",
+              "esun-mna-index",
+              "esun-mna-qa",
+              "exright-2025",
+              "exright-2026-to-cutoff",
+              "issuer-1101",
+              "issuer-2884"
+            ],
+            "types": [
+              "CASH_DIVIDEND",
+              "STOCK_DIVIDEND"
+            ],
+            "other_actions_checked": false,
+            "gaps": [
+              "NO_EXHAUSTIVE_CAPITAL_REDUCTION_OR_OTHER_ACTION_REGISTER",
+              "EXCHANGE_2026_CAPTURE_ENDS_2026-07-24_MISSING_2026-07-25_TO_2026-10-16",
+              "EXRIGHT_ENDPOINT_EXCLUSIONS_NOT_COMPLETE_CORPORATE_ACTION_UNIVERSE",
+              "SCOPED_INVENTORY_NOT_EXHAUSTIVE_REGISTER_OR_SUPPORTED_ACCOUNT_IMPACT",
+              "RESOLUTION_NOT_FINAL_RATIO_NET_PAYMENT_OR_EXHAUSTIVE_ACTION_REGISTER"
+            ],
+            "known_company_action_ids": [
+              "sha256:3090d9519d9526c48742e1f1c6c3be15e81971306d0f41b1d6034e0f6b4dfffb",
+              "sha256:591576c458ebb0e1506f5e562c3b61655f199fe05069e559e29bd05783c39ccc",
+              "sha256:5c768c6a2c7b2b3145015e722670727de85cef74fa12f990f7b2f0565fe67119",
+              "sha256:b9eac95a1a87bcc06b6d3b67547af3148106813cddf5fffd9edab21fc450207f"
+            ]
+          }
+        },
+        "sources": {
+          "exright-2025": {
+            "path": "docs/visual-discussion/20261022_b_basis_source_work_review/raw/exright-2025.json",
+            "sha256": "fdd86fad5b4287ef4d0e804fd2193925546df475432622f5d09fcc24d0d81689",
+            "url": "https://www.twse.com.tw/rwd/zh/exRight/TWT49U?startDate=20250101&endDate=20251231&response=json",
+            "captured_at": "2026-10-21T23:38:10.828609+00:00",
+            "kind": "OFFICIAL_ARCHIVE",
+            "historical_publication_time": "NOT_AUTHENTICATED"
+          },
+          "exright-2026-to-cutoff": {
+            "path": "docs/visual-discussion/20261022_b_basis_source_work_review/raw/exright-2026-to-cutoff.json",
+            "sha256": "820d70022694212c1377e1115e948405a9f2a05e4582c4669f961b683292c779",
+            "url": "https://www.twse.com.tw/rwd/zh/exRight/TWT49U?startDate=20260101&endDate=20260724&response=json",
+            "captured_at": "2026-10-21T23:38:10.830254+00:00",
+            "kind": "OFFICIAL_ARCHIVE",
+            "historical_publication_time": "NOT_AUTHENTICATED"
+          },
+          "issuer-1101": {
+            "path": "股票系統M1_v0_18/event_audit/raw/tcc_dividends.html",
+            "sha256": "86705c4f326e5210b8a5a7f7dd0a410206f0078260c5dc701a3e994fa4c66b6d",
+            "url": "https://www.tccgroupholdings.com/dividend",
+            "captured_at": "2026-10-16T06:29:13.126231+00:00",
+            "kind": "OFFICIAL_ARCHIVE",
+            "historical_publication_time": "NOT_AUTHENTICATED"
+          },
+          "issuer-2884": {
+            "path": "股票系統M1_v0_18/event_audit/raw/esun_shareholders.html",
+            "sha256": "d21472641e10badad3f29c2399438e57542a9448d3659f51bd98aed3b10b0683",
+            "url": "https://www.esunfhc.com/zh-tw/investor-relations/shareholders/shareholder-Information",
+            "captured_at": "2026-10-16T06:29:13.127547+00:00",
+            "kind": "OFFICIAL_ARCHIVE",
+            "historical_publication_time": "NOT_AUTHENTICATED"
+          },
+          "esun-2025-minutes": {
+            "path": "股票系統M1_v0_18/rotation_research/official_actions_20261022/raw/esun-2025-minutes.response",
+            "url": "https://www.esunbank.com/zh-tw/-/media/ESUNFHC/Files/Investor-Relations/Shareholders/Shareholder-Meeting/114-minutes.pdf",
+            "sha256": "74d1da671247fa0dffbf1a1ed446d288f1701871f3175121b30a9bffea750567",
+            "captured_at": "2026-10-22T08:24:40.331765+00:00",
+            "kind": "OFFICIAL_ARCHIVE",
+            "historical_publication_time": "NOT_AUTHENTICATED",
+            "derived_text": {
+              "path": "股票系統M1_v0_18/rotation_research/official_actions_20261022/raw/esun-2025-minutes.txt",
+              "sha256": "33a324bf714e0a99f2c5ec724e15abc74bef6c0be6295b2232200a1a7ca76294",
+              "extraction": {
+                "command": [
+                  "pdftotext",
+                  "-layout",
+                  "esun-2025-minutes.response",
+                  "esun-2025-minutes.txt"
+                ],
+                "tool_version": "pdftotext version 25.03.0",
+                "pdf_sha256": "74d1da671247fa0dffbf1a1ed446d288f1701871f3175121b30a9bffea750567",
+                "text_sha256": "33a324bf714e0a99f2c5ec724e15abc74bef6c0be6295b2232200a1a7ca76294",
+                "qualification": "DERIVED_TEXT_NOT_INDEPENDENT_PRIMARY_SOURCE"
+              }
+            }
+          },
+          "esun-2025-follow-up": {
+            "path": "股票系統M1_v0_18/rotation_research/official_actions_20261022/raw/esun-2025-follow-up.response",
+            "url": "https://www.esunbank.com/zh-tw/-/media/ESUNFHC/Files/Investor-Relations/Shareholders/Shareholder-Meeting/2025Follow-up.pdf",
+            "sha256": "b0aed62982b86b350d935f6aacfbb0d118666ece22bdcdfb1e1d7213e812f2c4",
+            "captured_at": "2026-10-22T08:25:30.967022+00:00",
+            "kind": "OFFICIAL_ARCHIVE",
+            "historical_publication_time": "NOT_AUTHENTICATED",
+            "derived_text": {
+              "path": "股票系統M1_v0_18/rotation_research/official_actions_20261022/raw/esun-2025-follow-up.reading-order.txt",
+              "sha256": "a3ca5c2361da6b5293fab52752ef42fbea92821e7229f80c7a58018cd7f51f64",
+              "extraction": {
+                "command": [
+                  "pdftotext",
+                  "-raw",
+                  "esun-2025-follow-up.response",
+                  "esun-2025-follow-up.reading-order.txt"
+                ],
+                "tool_version": "pdftotext version 25.03.0",
+                "pdf_sha256": "b0aed62982b86b350d935f6aacfbb0d118666ece22bdcdfb1e1d7213e812f2c4",
+                "text_sha256": "a3ca5c2361da6b5293fab52752ef42fbea92821e7229f80c7a58018cd7f51f64",
+                "qualification": "DERIVED_TEXT_NOT_INDEPENDENT_PRIMARY_SOURCE"
+              }
+            }
+          },
+          "esun-direct-2025-ratio": {
+            "path": "股票系統M1_v0_18/rotation_research/source_review_20261022/raw/esun-direct-2025-ratio.response",
+            "url": "https://www.esunbank.com/zh-tw/about/announcement/announcement?i=7BnSHViUN0a3m4jnJsobhg&p=fY8tSwscLkqI3d1smTbuuw",
+            "captured_at": "2026-10-22T09:16:02.244667+00:00",
+            "sha256": "b1c9cb4c8ab434ccdf8785caac84d7e5c87efcb354544e877179f0a759243aee",
+            "kind": "OFFICIAL_ARCHIVE",
+            "derived_text_path": "股票系統M1_v0_18/rotation_research/source_review_20261022/raw/esun-direct-2025-ratio.txt",
+            "derived_text_sha256": "4c2add2f8305205e5d76e66412832397df0aeb63f323ebedfc14a7740df110c1",
+            "historical_publication_time": "NOT_AUTHENTICATED"
+          },
+          "esun-mna-20251105": {
+            "path": "股票系統M1_v0_18/rotation_research/source_review_20261022/raw/esun-mna-20251105.response",
+            "url": "https://www.esunbank.com/zh-tw/-/media/ESUNFHC/Files/Investor-Relations/mna/mna01.pdf",
+            "captured_at": "2026-10-22T09:18:12.843605+00:00",
+            "sha256": "143f2abea0aeb9b3bc18912ecbe4d440736b0cd664edb32cc65f8466783c23b2",
+            "kind": "OFFICIAL_ARCHIVE",
+            "derived_text_path": "股票系統M1_v0_18/rotation_research/source_review_20261022/raw/esun-mna-20251105.txt",
+            "derived_text_sha256": "c57b8435c278476679ed27df6e2d25facab7c8f304c5d0e0e231c09039ce24f2",
+            "historical_publication_time": "NOT_AUTHENTICATED"
+          },
+          "esun-mna-20260713": {
+            "path": "股票系統M1_v0_18/rotation_research/source_review_20261022/raw/esun-mna-20260713.response",
+            "url": "https://www.esunbank.com/zh-tw/-/media/ESUNFHC/Files/Investor-Relations/mna/mna_20260713.pdf",
+            "captured_at": "2026-10-22T09:16:15.446856+00:00",
+            "sha256": "08278cf99f24008a7a214a402a5533f2bd35a0ccee3e8a169decf5907275d97a",
+            "kind": "OFFICIAL_ARCHIVE",
+            "derived_text_path": "股票系統M1_v0_18/rotation_research/source_review_20261022/raw/esun-mna-20260713.txt",
+            "derived_text_sha256": "b909784873b0f6942e912bd4eca94a921b86a2eba248b0bc1aed196d341e715c",
+            "historical_publication_time": "NOT_AUTHENTICATED"
+          },
+          "esun-mna-index": {
+            "path": "股票系統M1_v0_18/rotation_research/source_review_20261022/raw/esun-mna-index.response",
+            "url": "https://www.esunfhc.com/zh-tw/investor-relations/mergers-and-acquisitions",
+            "captured_at": "2026-10-22T09:16:09.117872+00:00",
+            "sha256": "b072bb5b385fe1e419b87f079d6c57a6e3148bd250c20ac9a95fe8a17e634d50",
+            "kind": "OFFICIAL_ARCHIVE",
+            "derived_text_path": "股票系統M1_v0_18/rotation_research/source_review_20261022/raw/esun-mna-index.txt",
+            "derived_text_sha256": "8277fd9283348c08ba1b179d497041f6130a5e2205ed689dc8f7543f0ac21c62",
+            "historical_publication_time": "NOT_AUTHENTICATED"
+          },
+          "esun-mna-qa": {
+            "path": "股票系統M1_v0_18/rotation_research/source_review_20261022/raw/esun-mna-qa.response",
+            "url": "https://www.esunbank.com/zh-tw/-/media/ESUNFHC/Files/Investor-Relations/mna/mna09QA.pdf",
+            "captured_at": "2026-10-22T09:16:21.022228+00:00",
+            "sha256": "81a2de0141d3ffcb771500e9cef9a02d809fedf9c04e08e02f6f8c50632efa60",
+            "kind": "OFFICIAL_ARCHIVE",
+            "derived_text_path": "股票系統M1_v0_18/rotation_research/source_review_20261022/raw/esun-mna-qa.txt",
+            "derived_text_sha256": "c9c824d74d35900a2fa1246cc44eabfb925eefccd72d4cb24d0c80100bc442d1",
+            "historical_publication_time": "NOT_AUTHENTICATED"
+          },
+          "tcc-capital-surplus-2026": {
+            "path": "股票系統M1_v0_18/rotation_research/source_review_20261022/raw/tcc-capital-surplus-2026.response",
+            "url": "https://www.tccgroupholdings.com/en/news/69b15c430dd9b",
+            "captured_at": "2026-10-22T09:16:26.492221+00:00",
+            "sha256": "bb32fb67b5d0c2a45d09eeffaf35deea3b2c2afed91cb3bff7d08e10629b762b",
+            "kind": "OFFICIAL_ARCHIVE",
+            "derived_text_path": "股票系統M1_v0_18/rotation_research/source_review_20261022/raw/tcc-capital-surplus-2026.txt",
+            "derived_text_sha256": "7481d4b6885198f90d329bca73f18a6f26519c62cb874b3125945ce505fd6c35",
+            "historical_publication_time": "NOT_AUTHENTICATED"
+          },
+          "tcc-meeting-index": {
+            "url": "https://www.tccgroupholdings.com/shareholder-meetings",
+            "sha256": "d995a10409cebd07942fad51aceb26de1db726936715af36376f4aa68d2f5098",
+            "captured_at": "2026-10-23T01:13:53.561175+00:00",
+            "path": "股票系統M1_v0_18/rotation_research/final_distribution_review_20261023/raw/tcc-meeting-index.response",
+            "derived_text_sha256": "0e3d9a1bd7bc63115366d93da9e8b2976c85e32f7c36759aab82923d63eb60a4",
+            "kind": "OFFICIAL_ARCHIVE",
+            "historical_publication_time": "NOT_AUTHENTICATED"
+          },
+          "tcc-2026-agm-minutes": {
+            "url": "https://media.taiwancement.com/web_tcc/comm/pdf/AGM/2026/TCC%20115%E5%B9%B4%E8%82%A1%E6%9D%B1%E6%9C%83%E8%AD%B0%E4%BA%8B%E9%8C%84.pdf",
+            "sha256": "ec3bf135a859a611a2851b744294af8312e829be192d86995fd9203d63472d14",
+            "captured_at": "2026-10-23T01:14:00.445418+00:00",
+            "path": "股票系統M1_v0_18/rotation_research/final_distribution_review_20261023/raw/tcc-2026-agm-minutes.response",
+            "derived_text_sha256": "bba966826f91d050ac4ff3c3227caab487b73d57220d902517fa08ccd2f5c08f",
+            "kind": "OFFICIAL_ARCHIVE",
+            "historical_publication_time": "NOT_AUTHENTICATED"
+          }
+        },
+        "version_relations": [
+          {
+            "family": "2884-acquires-2867",
+            "earlier_document_version": "sha256:5c768c6a2c7b2b3145015e722670727de85cef74fa12f990f7b2f0565fe67119",
+            "later_document_version": "sha256:b9eac95a1a87bcc06b6d3b67547af3148106813cddf5fffd9edab21fc450207f",
+            "role": "DOCUMENT_CLAIM_SEQUENCE_NOT_AUTHENTICATED_HISTORICAL_AVAILABILITY_OR_AUTOMATIC_SELECTION"
+          },
+          {
+            "earlier_document_version": "sha256:1e4ac85c0b29fc31441f5d36208189e5d6ad55eaf3fa6f9e994db8e054a63bed",
+            "later_document_version": "sha256:3912f8383c15a479a8b1aeaa4835f4ca53ad6f101fc88e96f15fd531d0bbeee4",
+            "role": "PROPOSAL_TO_APPROVED_DOCUMENT_STAGE_NOT_AUTOMATIC_FINAL_SELECTION",
+            "same_action_identity_authenticated": false
+          }
+        ],
+        "supplement_scope": "APPROVED_RESOLUTION_AND_TRANCHE_REPORT_NOT_COMPLETE_COVERAGE",
+        "historical_signal_eligible": false,
+        "primary_pressure_id": null,
+        "policy_authorized": false,
+        "id": "sha256:fff935c6816e415c03304f1436c845f4ac95e6e0d74795745cf61571de7e07fa"
+      },
+      "coverage": {
+        "1101": {
+          "status": "INCOMPLETE",
+          "start": "2025-07-01",
+          "end": "2026-10-16",
+          "event_ids": [
+            "sha256:01df5dd4c25df56baa28b725845678043e4809abf08e15cb19bab046ad92902f",
+            "sha256:b7ba974b62bad201a1757c3b8dc2015ae9a43d35f55c352bf0929c65cd2b0bd5"
+          ],
+          "source_ids": [
+            "exright-2025",
+            "exright-2026-to-cutoff",
+            "issuer-1101",
+            "issuer-2884",
+            "tcc-capital-surplus-2026"
+          ],
+          "types": [
+            "CASH_DIVIDEND",
+            "STOCK_DIVIDEND"
+          ],
+          "other_actions_checked": false,
+          "gaps": [
+            "NO_EXHAUSTIVE_CAPITAL_REDUCTION_OR_OTHER_ACTION_REGISTER",
+            "EXCHANGE_2026_CAPTURE_ENDS_2026-07-24_MISSING_2026-07-25_TO_2026-10-16",
+            "EXRIGHT_ENDPOINT_EXCLUSIONS_NOT_COMPLETE_CORPORATE_ACTION_UNIVERSE",
+            "SCOPED_INVENTORY_NOT_EXHAUSTIVE_REGISTER_OR_SUPPORTED_ACCOUNT_IMPACT",
+            "RESOLUTION_NOT_FINAL_RATIO_NET_PAYMENT_OR_EXHAUSTIVE_ACTION_REGISTER"
+          ],
+          "known_company_action_ids": [
+            "sha256:1e4ac85c0b29fc31441f5d36208189e5d6ad55eaf3fa6f9e994db8e054a63bed",
+            "sha256:3912f8383c15a479a8b1aeaa4835f4ca53ad6f101fc88e96f15fd531d0bbeee4",
+            "sha256:5f032becaccb3085398a8025359322047c4ef31f9ffbf3ab2adcde5d83ae4b56",
+            "sha256:d23b7d5f03dc9a6f02b0bd4659cce8519ef01a32eed92dc9dc9f68a652f2dfc5"
+          ]
+        },
+        "2884": {
+          "status": "INCOMPLETE",
+          "start": "2025-07-01",
+          "end": "2026-10-16",
+          "event_ids": [
+            "sha256:a96a11bf35947c9fce84baaf52b88a4ffd19447e9c26610c5fc01a82505d1a3a",
+            "sha256:dddf104de8f030d4fedd1894a1a99386d81df1b0befa046f946cfdc5734bb387",
+            "sha256:cf65c6f1ab9ad9fb1a64a8405cd9d05505739e72d6383c5e37903389f52c7349"
+          ],
+          "source_ids": [
+            "esun-2025-follow-up",
+            "esun-2025-minutes",
+            "esun-direct-2025-ratio",
+            "esun-mna-20251105",
+            "esun-mna-20260713",
+            "esun-mna-index",
+            "esun-mna-qa",
+            "exright-2025",
+            "exright-2026-to-cutoff",
+            "issuer-1101",
+            "issuer-2884"
+          ],
+          "types": [
+            "CASH_DIVIDEND",
+            "STOCK_DIVIDEND"
+          ],
+          "other_actions_checked": false,
+          "gaps": [
+            "NO_EXHAUSTIVE_CAPITAL_REDUCTION_OR_OTHER_ACTION_REGISTER",
+            "EXCHANGE_2026_CAPTURE_ENDS_2026-07-24_MISSING_2026-07-25_TO_2026-10-16",
+            "EXRIGHT_ENDPOINT_EXCLUSIONS_NOT_COMPLETE_CORPORATE_ACTION_UNIVERSE",
+            "SCOPED_INVENTORY_NOT_EXHAUSTIVE_REGISTER_OR_SUPPORTED_ACCOUNT_IMPACT",
+            "RESOLUTION_NOT_FINAL_RATIO_NET_PAYMENT_OR_EXHAUSTIVE_ACTION_REGISTER"
+          ],
+          "known_company_action_ids": [
+            "sha256:3090d9519d9526c48742e1f1c6c3be15e81971306d0f41b1d6034e0f6b4dfffb",
+            "sha256:591576c458ebb0e1506f5e562c3b61655f199fe05069e559e29bd05783c39ccc",
+            "sha256:5c768c6a2c7b2b3145015e722670727de85cef74fa12f990f7b2f0565fe67119",
+            "sha256:b9eac95a1a87bcc06b6d3b67547af3148106813cddf5fffd9edab21fc450207f"
+          ]
+        }
+      },
+      "sources": {
+        "tcc-resume-20250814": {
+          "url": "https://www.twse.com.tw/staticFiles/news/news/tsecnews/8a8216d697fc438f0198a36441f702b8.pdf",
+          "sha256": "5064b1af3ddee6437f049d378409b4405f96c0956a854000f5c13d40eb26bc68",
+          "captured_at": "2026-10-23T03:28:17.237127+00:00",
+          "derived_text_sha256": "83016586a4abb9486385866f641ab3f3f50530ed7b45cba2edb73d16e6148a74",
+          "historical_publication_time": "NOT_AUTHENTICATED",
+          "path": "股票系統M1_v0_18/rotation_research/source_diagnostics_20261023/raw/tcc-resume-20250814.response",
+          "kind": "OFFICIAL_ARCHIVE"
+        },
+        "esun-prospectus-20260722": {
+          "url": "https://www.esunbank.com/zh-tw/-/media/ESUNFHC/Files/Investor-Relations/mna/mna08_2026Prospectus.pdf",
+          "sha256": "926f1f871a294702d3e4f5e4d89cf5aeb5e64808593efa2d99b95ed7375388fa",
+          "captured_at": "2026-10-23T03:28:35.939691+00:00",
+          "derived_text_sha256": "6bb2eab5c6f23cff537051807ae98bee47c3f0d121af33b91f07715c8e2f38cf",
+          "historical_publication_time": "NOT_AUTHENTICATED",
+          "path": "股票系統M1_v0_18/rotation_research/source_diagnostics_20261023/raw/esun-prospectus-20260722.response",
+          "kind": "OFFICIAL_ARCHIVE"
+        },
+        "esun-meeting-followup-2026": {
+          "url": "https://www.esunbank.com/zh-tw/-/media/ESUNFHC/Files/Investor-Relations/Shareholders/Shareholder-Meeting/2026_notes.pdf",
+          "sha256": "285d03487b512460a67875abba5dee38343ed6b1d0c92f5b01aa50dad2cd666c",
+          "captured_at": "2026-10-23T03:28:17.791968+00:00",
+          "derived_text_sha256": "a58b6b2eb4905621f9088a778bca6d50530ff0a54fd7271141ae9709da1ea7e2",
+          "historical_publication_time": "NOT_AUTHENTICATED",
+          "path": "股票系統M1_v0_18/rotation_research/source_diagnostics_20261023/raw/esun-meeting-followup-2026.response",
+          "kind": "OFFICIAL_ARCHIVE"
+        }
+      },
+      "failed_sources": {
+        "tcc-suspend-20250813": {
+          "url": "https://wwwc.twse.com.tw/staticFiles/news/news/tsecnews/8a8216d697fc438f01989dd5fa3502a6.pdf",
+          "requested_at": "2026-10-23T03:28:15.859930+00:00",
+          "method": "GET",
+          "retries": 0,
+          "redirects_followed": false,
+          "status": "REQUEST_FAILED",
+          "error": "URLError: <urlopen error Tunnel connection failed: 403 Forbidden>",
+          "completed_at": "2026-10-23T03:28:15.895903+00:00"
+        },
+        "esun-suspend-20251105": {
+          "url": "https://investoredu.twse.com.tw/Mobile_pages/..%2FFileSystem%2FFileUpload%2Fdae59521-69e0-4856-90fc-d349fb6013eb.pdf",
+          "requested_at": "2026-10-23T03:28:15.860862+00:00",
+          "method": "GET",
+          "retries": 0,
+          "redirects_followed": false,
+          "status": "REQUEST_FAILED",
+          "error": "URLError: <urlopen error Tunnel connection failed: 403 Forbidden>",
+          "completed_at": "2026-10-23T03:28:15.885627+00:00"
+        },
+        "mof-interpretation-143802": {
+          "url": "https://ttc.mof.gov.tw/FB/FB120/143802",
+          "requested_at": "2026-10-23T03:28:15.896558+00:00",
+          "method": "GET",
+          "retries": 0,
+          "redirects_followed": false,
+          "status": "REQUEST_FAILED",
+          "error": "URLError: <urlopen error Tunnel connection failed: 403 Forbidden>",
+          "completed_at": "2026-10-23T03:28:15.909573+00:00"
+        }
+      },
+      "observations": [
+        {
+          "family": "tcc-resume-20250814:SECURITY_RESUMPTION_NOTICE",
+          "issuer_code": "1101",
+          "entitled_old_code": "1101",
+          "old_instrument": "1101_ORDINARY_OLD_SHARES",
+          "action_type": "SECURITY_RESUMPTION_NOTICE",
+          "source_ids": [
+            "tcc-resume-20250814"
+          ],
+          "observed_at": "2026-10-23T03:28:17.237127+00:00",
+          "announced_at": null,
+          "accounting_eligible": false,
+          "historical_signal_eligible": false,
+          "fields": {
+            "resume_date": {
+              "value": "2025-08-14",
+              "unit": "ISO_DATE",
+              "date_role": "SECURITY_RESUMPTION_NOT_SUSPENSION_START",
+              "proofs": [
+                {
+                  "source_id": "tcc-resume-20250814",
+                  "pdf_pages": [
+                    1
+                  ],
+                  "locator": "PDF pages 1",
+                  "raw_value": "上市普通股自114年8月14日起恢復交易"
+                }
+              ],
+              "qualification": "SOURCE_DIAGNOSTIC_ONLY_NOT_LEDGER"
+            },
+            "suspension_date": {
+              "value": null,
+              "unit": "ISO_DATE",
+              "date_role": "SECURITY_SUSPENSION_START_UNVERIFIED",
+              "proofs": [],
+              "qualification": "SOURCE_DIAGNOSTIC_ONLY_NOT_LEDGER"
+            }
+          },
+          "id": "sha256:49aaea9c3ce04c0da74c313a279bdba687a4da1ef50e24e6c357d53fde0ad86a"
+        },
+        {
+          "family": "esun-prospectus-20260722:SHARE_EXCHANGE_EXPECTED_ISSUANCE",
+          "issuer_code": "2884",
+          "entitled_old_code": "2867",
+          "old_instrument": "2867_ORDINARY_OLD_SHARES",
+          "action_type": "SHARE_EXCHANGE_EXPECTED_ISSUANCE",
+          "source_ids": [
+            "esun-prospectus-20260722"
+          ],
+          "observed_at": "2026-10-23T03:28:35.939691+00:00",
+          "announced_at": null,
+          "accounting_eligible": false,
+          "historical_signal_eligible": false,
+          "fields": {
+            "expected_issue_shares": {
+              "value": "1531510471",
+              "unit": "NEW_2884_SHARES_FOR_OLD_2867_HOLDERS",
+              "date_role": "EXPECTED_NOT_ACTUAL_ISSUE",
+              "proofs": [
+                {
+                  "source_id": "esun-prospectus-20260722",
+                  "pdf_pages": [
+                    1
+                  ],
+                  "locator": "PDF pages 1",
+                  "raw_value": "預計發行普通股1,531,510,471股"
+                }
+              ],
+              "qualification": "SOURCE_DIAGNOSTIC_ONLY_NOT_LEDGER"
+            },
+            "target_holder_ratio": {
+              "value": "0.2596",
+              "unit": "NEW_2884_PER_OLD_2867",
+              "date_role": "TARGET_HOLDER_EXCHANGE_NOT_2884_STOCK_DIVIDEND",
+              "proofs": [
+                {
+                  "source_id": "esun-prospectus-20260722",
+                  "pdf_pages": [
+                    1
+                  ],
+                  "locator": "PDF pages 1",
+                  "raw_value": "本公司0.2596股普通股"
+                }
+              ],
+              "qualification": "SOURCE_DIAGNOSTIC_ONLY_NOT_LEDGER"
+            },
+            "actual_issued_shares": {
+              "value": null,
+              "unit": "SHARES",
+              "date_role": "ACTUAL_ISSUE_NOT_AUTHENTICATED",
+              "proofs": [],
+              "qualification": "SOURCE_DIAGNOSTIC_ONLY_NOT_LEDGER"
+            },
+            "existing_2884_share_grant": {
+              "value": null,
+              "unit": "NEW_2884_PER_OLD_2884",
+              "date_role": "EXISTING_ACQUIRER_IMPACT_UNRESOLVED",
+              "proofs": [],
+              "qualification": "SOURCE_DIAGNOSTIC_ONLY_NOT_LEDGER"
+            }
+          },
+          "id": "sha256:37b8815b0ddf223465fa1568e4742f61a9987fddf7e392095f10efedf00094fb"
+        },
+        {
+          "family": "esun-prospectus-20260722:EMPLOYEE_CAPITAL_REGISTRATION",
+          "issuer_code": "2884",
+          "entitled_old_code": "EMPLOYEE_RECIPIENTS",
+          "old_instrument": "EMPLOYEE_REMUNERATION_RIGHTS",
+          "action_type": "EMPLOYEE_CAPITAL_REGISTRATION",
+          "source_ids": [
+            "esun-prospectus-20260722"
+          ],
+          "observed_at": "2026-10-23T03:28:35.939691+00:00",
+          "announced_at": null,
+          "accounting_eligible": false,
+          "historical_signal_eligible": false,
+          "fields": {
+            "registration_date": {
+              "value": "2026-06-30",
+              "unit": "ISO_DATE",
+              "date_role": "CORPORATE_REGISTRATION_NOT_LISTING_OR_RECORD",
+              "proofs": [
+                {
+                  "source_id": "esun-prospectus-20260722",
+                  "pdf_pages": [
+                    55
+                  ],
+                  "locator": "PDF pages 55",
+                  "raw_value": "115年06月30日經授商字第11530087080號函核准變更登記在案"
+                }
+              ],
+              "qualification": "SOURCE_DIAGNOSTIC_ONLY_NOT_LEDGER"
+            },
+            "ordinary_outstanding_shares": {
+              "value": "16192000000",
+              "unit": "ISSUER_ORDINARY_SHARES",
+              "date_role": "AS_OF_SHARE_SNAPSHOT_NOT_ALLOTMENT",
+              "proofs": [
+                {
+                  "source_id": "esun-prospectus-20260722",
+                  "pdf_pages": [
+                    55
+                  ],
+                  "locator": "PDF pages 55",
+                  "raw_value": "16,192,000,000"
+                }
+              ],
+              "qualification": "SOURCE_DIAGNOSTIC_ONLY_NOT_LEDGER"
+            },
+            "share_snapshot_date": {
+              "value": "2026-07-03",
+              "unit": "ISO_DATE",
+              "date_role": "SHARE_CAPITAL_AS_OF_NOT_REGISTRATION_OR_LISTING",
+              "proofs": [
+                {
+                  "source_id": "esun-prospectus-20260722",
+                  "pdf_pages": [
+                    55
+                  ],
+                  "locator": "PDF pages 55",
+                  "raw_value": "115年7月3日"
+                }
+              ],
+              "qualification": "SOURCE_DIAGNOSTIC_ONLY_NOT_LEDGER"
+            },
+            "listing_date": {
+              "value": null,
+              "unit": "ISO_DATE",
+              "date_role": "ACTUAL_SECURITY_LISTING_NOT_AUTHENTICATED",
+              "proofs": [],
+              "qualification": "SOURCE_DIAGNOSTIC_ONLY_NOT_LEDGER"
+            }
+          },
+          "id": "sha256:c1ce3957e180ad1ed2d334c8dbbc46e32de2c89d8982b4d239d359f44cc4dab9"
+        },
+        {
+          "family": "esun-meeting-followup-2026:ISSUER_DISTRIBUTION_COMPLETION_REPORT",
+          "issuer_code": "2884",
+          "entitled_old_code": "2884",
+          "old_instrument": "2884_ORDINARY_OLD_SHARES",
+          "action_type": "ISSUER_DISTRIBUTION_COMPLETION_REPORT",
+          "source_ids": [
+            "esun-meeting-followup-2026"
+          ],
+          "observed_at": "2026-10-23T03:28:17.791968+00:00",
+          "announced_at": null,
+          "accounting_eligible": false,
+          "historical_signal_eligible": false,
+          "fields": {
+            "dividend_record_date": {
+              "value": "2026-07-07",
+              "unit": "ISO_DATE",
+              "date_role": "DIVIDEND_RECORD_NOT_EX_TRADING",
+              "proofs": [
+                {
+                  "source_id": "esun-meeting-followup-2026",
+                  "pdf_pages": [
+                    1
+                  ],
+                  "locator": "PDF pages 1",
+                  "raw_value": "2026.07.07為盈餘分派除息基準日"
+                }
+              ],
+              "qualification": "SOURCE_DIAGNOSTIC_ONLY_NOT_LEDGER"
+            },
+            "issuer_completed_pay_date": {
+              "value": "2026-07-27",
+              "unit": "ISO_DATE",
+              "date_role": "ISSUER_REPORTED_COMPLETION_NOT_PERSONAL_RECEIPT",
+              "proofs": [
+                {
+                  "source_id": "esun-meeting-followup-2026",
+                  "pdf_pages": [
+                    1
+                  ],
+                  "locator": "PDF pages 1",
+                  "raw_value": "2026.07.27發放完畢"
+                }
+              ],
+              "qualification": "SOURCE_DIAGNOSTIC_ONLY_NOT_LEDGER"
+            },
+            "issuer_reported_gross_per_share": {
+              "value": "1.40",
+              "unit": "TWD_PER_OLD_2884_SHARE",
+              "date_role": "ISSUER_GROSS_NOT_PERSONAL_NET",
+              "proofs": [
+                {
+                  "source_id": "esun-meeting-followup-2026",
+                  "pdf_pages": [
+                    1
+                  ],
+                  "locator": "PDF pages 1",
+                  "raw_value": "每股分配現金股利1.40元"
+                }
+              ],
+              "qualification": "SOURCE_DIAGNOSTIC_ONLY_NOT_LEDGER"
+            },
+            "investor_net_cash": {
+              "value": null,
+              "unit": "TWD",
+              "date_role": "PERSONAL_NET_UNKNOWN",
+              "proofs": [],
+              "qualification": "SOURCE_DIAGNOSTIC_ONLY_NOT_LEDGER"
+            },
+            "actual_investor_receipt": {
+              "value": null,
+              "unit": "TWD",
+              "date_role": "PERSONAL_RECEIPT_UNKNOWN",
+              "proofs": [],
+              "qualification": "SOURCE_DIAGNOSTIC_ONLY_NOT_LEDGER"
+            }
+          },
+          "id": "sha256:086cc645b25993037c6a7979b16767441078f68ff811613be2245853d1bf02af"
+        },
+        {
+          "family": "esun-meeting-followup-2026:EMPLOYEE_CAPITAL_REGISTRATION",
+          "issuer_code": "2884",
+          "entitled_old_code": "EMPLOYEE_RECIPIENTS",
+          "old_instrument": "EMPLOYEE_REMUNERATION_RIGHTS",
+          "action_type": "EMPLOYEE_CAPITAL_REGISTRATION",
+          "source_ids": [
+            "esun-meeting-followup-2026"
+          ],
+          "observed_at": "2026-10-23T03:28:17.791968+00:00",
+          "announced_at": null,
+          "accounting_eligible": false,
+          "historical_signal_eligible": false,
+          "fields": {
+            "employee_capital_record_date": {
+              "value": "2026-07-07",
+              "unit": "ISO_DATE",
+              "date_role": "EMPLOYEE_CAPITAL_RECORD_NOT_REGISTRATION_OR_LISTING",
+              "proofs": [
+                {
+                  "source_id": "esun-meeting-followup-2026",
+                  "pdf_pages": [
+                    1
+                  ],
+                  "locator": "PDF pages 1",
+                  "raw_value": "已訂2026.07.07為盈餘分派除息基準日暨員工酬勞轉增資發行新股之"
+                }
+              ],
+              "qualification": "SOURCE_DIAGNOSTIC_ONLY_NOT_LEDGER"
+            },
+            "listing_date": {
+              "value": null,
+              "unit": "ISO_DATE",
+              "date_role": "ACTUAL_SECURITY_LISTING_NOT_AUTHENTICATED",
+              "proofs": [],
+              "qualification": "SOURCE_DIAGNOSTIC_ONLY_NOT_LEDGER"
+            }
+          },
+          "id": "sha256:9995452f622a25dab8b3267aeaf1bd181b102a487be8d3a2cc43ec156bdef450"
+        }
+      ],
+      "gaps": [
+        "COMPLETE_1101_2884_ACTION_AND_REDUCTION_COVERAGE",
+        "POST_20260725_ACTION_COVERAGE",
+        "DIRECT_SUSPENSION_STARTS_AND_ESUN_RESUMPTION",
+        "2884_2025_TRADABILITY_UNROUNDED_ALLOTMENT_FRACTIONS",
+        "2884_EXISTING_HOLDER_EXCHANGE_IMPACT",
+        "1101_FINAL_ADJUSTMENT_AND_TAX_SUBTYPE",
+        "DIRECT_TAX_ORIGINAL_UNAVAILABLE_IN_THIS_ENVIRONMENT",
+        "INVESTOR_NET_RECEIPTS_AND_NINE_OPENING_ENTITLEMENTS"
+      ],
+      "historical_signal_eligible": false,
+      "primary_pressure_id": null,
+      "policy_authorized": false,
+      "id": "sha256:3b8214422041a4a18bb2ed90bad1a7881e31c784682188641fbf4e1a27f07e0b"
+    },
+    "coverage": {
+      "1101": {
+        "status": "INCOMPLETE",
+        "start": "2025-07-01",
+        "end": "2026-10-16",
+        "event_ids": [
+          "sha256:01df5dd4c25df56baa28b725845678043e4809abf08e15cb19bab046ad92902f",
+          "sha256:b7ba974b62bad201a1757c3b8dc2015ae9a43d35f55c352bf0929c65cd2b0bd5"
+        ],
+        "source_ids": [
+          "exright-2025",
+          "exright-2026-to-cutoff",
+          "issuer-1101",
+          "issuer-2884",
+          "tcc-capital-surplus-2026"
+        ],
+        "types": [
+          "CASH_DIVIDEND",
+          "STOCK_DIVIDEND"
+        ],
+        "other_actions_checked": false,
+        "gaps": [
+          "NO_EXHAUSTIVE_CAPITAL_REDUCTION_OR_OTHER_ACTION_REGISTER",
+          "EXCHANGE_2026_CAPTURE_ENDS_2026-07-24_MISSING_2026-07-25_TO_2026-10-16",
+          "EXRIGHT_ENDPOINT_EXCLUSIONS_NOT_COMPLETE_CORPORATE_ACTION_UNIVERSE",
+          "SCOPED_INVENTORY_NOT_EXHAUSTIVE_REGISTER_OR_SUPPORTED_ACCOUNT_IMPACT",
+          "RESOLUTION_NOT_FINAL_RATIO_NET_PAYMENT_OR_EXHAUSTIVE_ACTION_REGISTER"
+        ],
+        "known_company_action_ids": [
+          "sha256:1e4ac85c0b29fc31441f5d36208189e5d6ad55eaf3fa6f9e994db8e054a63bed",
+          "sha256:3912f8383c15a479a8b1aeaa4835f4ca53ad6f101fc88e96f15fd531d0bbeee4",
+          "sha256:5f032becaccb3085398a8025359322047c4ef31f9ffbf3ab2adcde5d83ae4b56",
+          "sha256:d23b7d5f03dc9a6f02b0bd4659cce8519ef01a32eed92dc9dc9f68a652f2dfc5"
+        ]
+      },
+      "2884": {
+        "status": "INCOMPLETE",
+        "start": "2025-07-01",
+        "end": "2026-10-16",
+        "event_ids": [
+          "sha256:a96a11bf35947c9fce84baaf52b88a4ffd19447e9c26610c5fc01a82505d1a3a",
+          "sha256:dddf104de8f030d4fedd1894a1a99386d81df1b0befa046f946cfdc5734bb387",
+          "sha256:cf65c6f1ab9ad9fb1a64a8405cd9d05505739e72d6383c5e37903389f52c7349"
+        ],
+        "source_ids": [
+          "esun-2025-follow-up",
+          "esun-2025-minutes",
+          "esun-direct-2025-ratio",
+          "esun-mna-20251105",
+          "esun-mna-20260713",
+          "esun-mna-index",
+          "esun-mna-qa",
+          "exright-2025",
+          "exright-2026-to-cutoff",
+          "issuer-1101",
+          "issuer-2884"
+        ],
+        "types": [
+          "CASH_DIVIDEND",
+          "STOCK_DIVIDEND"
+        ],
+        "other_actions_checked": false,
+        "gaps": [
+          "NO_EXHAUSTIVE_CAPITAL_REDUCTION_OR_OTHER_ACTION_REGISTER",
+          "EXCHANGE_2026_CAPTURE_ENDS_2026-07-24_MISSING_2026-07-25_TO_2026-10-16",
+          "EXRIGHT_ENDPOINT_EXCLUSIONS_NOT_COMPLETE_CORPORATE_ACTION_UNIVERSE",
+          "SCOPED_INVENTORY_NOT_EXHAUSTIVE_REGISTER_OR_SUPPORTED_ACCOUNT_IMPACT",
+          "RESOLUTION_NOT_FINAL_RATIO_NET_PAYMENT_OR_EXHAUSTIVE_ACTION_REGISTER"
+        ],
+        "known_company_action_ids": [
+          "sha256:3090d9519d9526c48742e1f1c6c3be15e81971306d0f41b1d6034e0f6b4dfffb",
+          "sha256:591576c458ebb0e1506f5e562c3b61655f199fe05069e559e29bd05783c39ccc",
+          "sha256:5c768c6a2c7b2b3145015e722670727de85cef74fa12f990f7b2f0565fe67119",
+          "sha256:b9eac95a1a87bcc06b6d3b67547af3148106813cddf5fffd9edab21fc450207f"
+        ]
+      }
+    },
+    "sources": {
+      "twse-tcc-suspension-20250812": {
+        "url": "https://wwwc.twse.com.tw/staticFiles/news/news/tsecnews/8a8216d697fc438f01989dd5fa3502a6.pdf",
+        "sha256": "de4cd75086aad05089d4c3b9ca2f21218cb7088550359ef77bfd1db93ff83198",
+        "bytes": 386308,
+        "http": 200,
+        "captured_at": "2026-10-23T03:06:59.401522+00:00",
+        "ingested_at": "2026-10-23T06:46:13.305435+00:00",
+        "announced_at": null,
+        "archive_path": "deliveries/m1-offline-source-bridge-20261023/TWstockai_Offline_Source_Bridge_20261023.zip",
+        "archive_sha256": "ecc413ca28fce87085666b87b3c3a6d1bf784ef553b32d2198b8bb72bebeedce",
+        "archive_member": "archived_work/twse-tcc-suspension-20250812.response",
+        "metadata_member": "archived_work/twse-tcc-suspension-20250812.meta.json",
+        "kind": "OFFICIAL_ARCHIVE_VIA_OFFLINE_BRIDGE",
+        "method": "NOT_RECORDED_IN_ORIGINAL_META",
+        "historical_publication_time": "NOT_AUTHENTICATED"
+      },
+      "twse-esun-suspension-20251104": {
+        "url": "https://investoredu.twse.com.tw/Mobile_pages/..%2FFileSystem%2FFileUpload%2Fdae59521-69e0-4856-90fc-d349fb6013eb.pdf",
+        "sha256": "ce5e00490f5d5dc9fed0873e754348d3cb29b28c7e26014fb6d9293e68c32512",
+        "bytes": 380108,
+        "http": 200,
+        "captured_at": "2026-10-23T03:05:02.193264+00:00",
+        "ingested_at": "2026-10-23T06:46:13.305435+00:00",
+        "announced_at": null,
+        "archive_path": "deliveries/m1-offline-source-bridge-20261023/TWstockai_Offline_Source_Bridge_20261023.zip",
+        "archive_sha256": "ecc413ca28fce87085666b87b3c3a6d1bf784ef553b32d2198b8bb72bebeedce",
+        "archive_member": "archived_work/twse-esun-suspension-20251104.response",
+        "metadata_member": "archived_work/twse-esun-suspension-20251104.meta.json",
+        "kind": "OFFICIAL_ARCHIVE_VIA_OFFLINE_BRIDGE",
+        "method": "NOT_RECORDED_IN_ORIGINAL_META",
+        "historical_publication_time": "NOT_AUTHENTICATED"
+      },
+      "mof-tax-api-143802": {
+        "url": "https://ttc.mof.gov.tw/Api/PostData",
+        "sha256": "0616b330ca5fbd08d692546e5ce0c0f9f4d6bdeeb99ca5b6691d70b4b44b65b3",
+        "bytes": 12953,
+        "http": 200,
+        "captured_at": "2026-10-23T03:10:08.388759+00:00",
+        "ingested_at": "2026-10-23T06:46:13.305435+00:00",
+        "announced_at": null,
+        "archive_path": "deliveries/m1-offline-source-bridge-20261023/TWstockai_Offline_Source_Bridge_20261023.zip",
+        "archive_sha256": "ecc413ca28fce87085666b87b3c3a6d1bf784ef553b32d2198b8bb72bebeedce",
+        "archive_member": "archived_work/mof-tax-api-143802.response",
+        "metadata_member": "archived_work/mof-tax-api-143802.meta.json",
+        "kind": "OFFICIAL_ARCHIVE_VIA_OFFLINE_BRIDGE",
+        "method": "POST_READ_ONLY_PUBLIC_QUERY",
+        "historical_publication_time": "NOT_AUTHENTICATED"
+      },
+      "mof-tax-rule-143802": {
+        "url": "https://ttc.mof.gov.tw/FB/FB120/143802",
+        "sha256": "bede3cf9e45394b43f292ea919475ccb335ebe9a14e51f5e376a5d580f1ee2af",
+        "bytes": 12536,
+        "http": 200,
+        "captured_at": "2026-10-23T03:10:00.829166+00:00",
+        "ingested_at": "2026-10-23T06:46:13.305435+00:00",
+        "announced_at": null,
+        "archive_path": "deliveries/m1-offline-source-bridge-20261023/TWstockai_Offline_Source_Bridge_20261023.zip",
+        "archive_sha256": "ecc413ca28fce87085666b87b3c3a6d1bf784ef553b32d2198b8bb72bebeedce",
+        "archive_member": "archived_work/mof-tax-rule-143802.response",
+        "metadata_member": "archived_work/mof-tax-rule-143802.meta.json",
+        "kind": "OFFICIAL_ARCHIVE_VIA_OFFLINE_BRIDGE",
+        "method": "NOT_RECORDED_IN_ORIGINAL_META",
+        "historical_publication_time": "NOT_AUTHENTICATED"
+      },
+      "mof-tax-page-script": {
+        "url": "https://ttc.mof.gov.tw/Views/FB/FB120.cshtml.js?v=IsBcIc5oNYoVOKOQFowGyPug7tdjcdrclPyBhI_mG5I",
+        "sha256": "22c05c21ce68358a1538a390168c06c8fba0eed76371dadc94fc81848fe61b92",
+        "bytes": 4217,
+        "http": 200,
+        "captured_at": "2026-10-23T03:05:50.775435+00:00",
+        "ingested_at": "2026-10-23T06:46:13.305435+00:00",
+        "announced_at": null,
+        "archive_path": "deliveries/m1-offline-source-bridge-20261023/TWstockai_Offline_Source_Bridge_20261023.zip",
+        "archive_sha256": "ecc413ca28fce87085666b87b3c3a6d1bf784ef553b32d2198b8bb72bebeedce",
+        "archive_member": "archived_work/mof-tax-page-script.response",
+        "metadata_member": "archived_work/mof-tax-page-script.meta.json",
+        "kind": "OFFICIAL_ARCHIVE_VIA_OFFLINE_BRIDGE",
+        "method": "NOT_RECORDED_IN_ORIGINAL_META",
+        "historical_publication_time": "NOT_AUTHENTICATED"
+      },
+      "mof-tax-site-script": {
+        "url": "https://ttc.mof.gov.tw/js/site.js?v=oxjiyo8aCBqX8ph2JO14cCSEEFEQSOtAkTWmhqRv164",
+        "sha256": "a318e2ca8f1a081a97f2987624ed7870248410511048eb409135a686a46fd7ae",
+        "bytes": 11497,
+        "http": 200,
+        "captured_at": "2026-10-23T03:06:50.268580+00:00",
+        "ingested_at": "2026-10-23T06:46:13.305435+00:00",
+        "announced_at": null,
+        "archive_path": "deliveries/m1-offline-source-bridge-20261023/TWstockai_Offline_Source_Bridge_20261023.zip",
+        "archive_sha256": "ecc413ca28fce87085666b87b3c3a6d1bf784ef553b32d2198b8bb72bebeedce",
+        "archive_member": "archived_work/mof-tax-site-script.response",
+        "metadata_member": "archived_work/mof-tax-site-script.meta.json",
+        "kind": "OFFICIAL_ARCHIVE_VIA_OFFLINE_BRIDGE",
+        "method": "NOT_RECORDED_IN_ORIGINAL_META",
+        "historical_publication_time": "NOT_AUTHENTICATED"
+      },
+      "mof-tax-search-10100097670": {
+        "url": "https://ttc.mof.gov.tw/Api/GetData",
+        "sha256": "fa55f2fda31a423c5267d992196b42bb2b77121d6e0983d8e3bc02afcad7b7d1",
+        "bytes": 5200,
+        "http": 200,
+        "captured_at": "2026-10-23T03:09:25.719367+00:00",
+        "ingested_at": "2026-10-23T06:46:13.305435+00:00",
+        "announced_at": null,
+        "archive_path": "deliveries/m1-offline-source-bridge-20261023/TWstockai_Offline_Source_Bridge_20261023.zip",
+        "archive_sha256": "ecc413ca28fce87085666b87b3c3a6d1bf784ef553b32d2198b8bb72bebeedce",
+        "archive_member": "archived_work/mof-tax-search-10100097670.response",
+        "metadata_member": "archived_work/mof-tax-search-10100097670.meta.json",
+        "kind": "OFFICIAL_ARCHIVE_VIA_OFFLINE_BRIDGE",
+        "method": "POST_READ_ONLY_PUBLIC_QUERY",
+        "historical_publication_time": "NOT_AUTHENTICATED"
+      }
+    },
+    "observations": [
+      {
+        "family": "offline-bridge:SECURITY_SUSPENSION_START_NOTICE:1101",
+        "issuer_code": "1101",
+        "entitled_old_code": "1101",
+        "old_instrument": "1101_ORDINARY_OLD_SHARES",
+        "action_type": "SECURITY_SUSPENSION_START_NOTICE",
+        "source_ids": [
+          "twse-tcc-suspension-20250812"
+        ],
+        "source_captured_at": "2026-10-23T03:06:59.401522+00:00",
+        "observed_at": "2026-10-23T06:46:13.305435+00:00",
+        "announced_at": null,
+        "accounting_eligible": false,
+        "historical_signal_eligible": false,
+        "fields": {
+          "document_date": {
+            "value": "2025-08-12",
+            "unit": "ISO_DATE",
+            "date_role": "SOURCE_DOCUMENT_DATE_NOT_PUBLICATION",
+            "proofs": [
+              {
+                "source_id": "twse-tcc-suspension-20250812",
+                "locator": "PDF page 1 heading",
+                "raw_value": "2025-08-12"
+              }
+            ],
+            "qualification": "SOURCE_DIAGNOSTIC_ONLY_NOT_LEDGER"
+          },
+          "suspension_start_date": {
+            "value": "2025-08-13",
+            "unit": "ISO_DATE",
+            "date_role": "SECURITY_SUSPENSION_START_NOT_END",
+            "proofs": [
+              {
+                "source_id": "twse-tcc-suspension-20250812",
+                "locator": "PDF page 1 ordinary-share suspension sentence",
+                "raw_value": "2025-08-13"
+              }
+            ],
+            "qualification": "SOURCE_DIAGNOSTIC_ONLY_NOT_LEDGER"
+          },
+          "suspension_end_date": {
+            "value": null,
+            "unit": "ISO_DATE",
+            "date_role": "SUSPENSION_END_NOT_AUTHENTICATED",
+            "proofs": [],
+            "qualification": "SOURCE_DIAGNOSTIC_ONLY_NOT_LEDGER"
+          }
+        },
+        "id": "sha256:6ef133ee3f1ba4573317a16e1460684494f568c6ac4dee750b3fbe92dc835d21"
+      },
+      {
+        "family": "offline-bridge:SECURITY_SUSPENSION_START_NOTICE:2884",
+        "issuer_code": "2884",
+        "entitled_old_code": "2884",
+        "old_instrument": "2884_ORDINARY_OLD_SHARES",
+        "action_type": "SECURITY_SUSPENSION_START_NOTICE",
+        "source_ids": [
+          "twse-esun-suspension-20251104"
+        ],
+        "source_captured_at": "2026-10-23T03:05:02.193264+00:00",
+        "observed_at": "2026-10-23T06:46:13.305435+00:00",
+        "announced_at": null,
+        "accounting_eligible": false,
+        "historical_signal_eligible": false,
+        "fields": {
+          "document_date": {
+            "value": "2025-11-04",
+            "unit": "ISO_DATE",
+            "date_role": "SOURCE_DOCUMENT_DATE_NOT_PUBLICATION",
+            "proofs": [
+              {
+                "source_id": "twse-esun-suspension-20251104",
+                "locator": "PDF page 1 heading",
+                "raw_value": "2025-11-04"
+              }
+            ],
+            "qualification": "SOURCE_DIAGNOSTIC_ONLY_NOT_LEDGER"
+          },
+          "suspension_start_date": {
+            "value": "2025-11-05",
+            "unit": "ISO_DATE",
+            "date_role": "SECURITY_SUSPENSION_START_NOT_END",
+            "proofs": [
+              {
+                "source_id": "twse-esun-suspension-20251104",
+                "locator": "PDF page 1 ordinary-share suspension sentence",
+                "raw_value": "2025-11-05"
+              }
+            ],
+            "qualification": "SOURCE_DIAGNOSTIC_ONLY_NOT_LEDGER"
+          },
+          "suspension_end_date": {
+            "value": null,
+            "unit": "ISO_DATE",
+            "date_role": "SUSPENSION_END_NOT_AUTHENTICATED",
+            "proofs": [],
+            "qualification": "SOURCE_DIAGNOSTIC_ONLY_NOT_LEDGER"
+          }
+        },
+        "id": "sha256:4c0e2ce3718b50f75a60747d2f9fad7b9fa131e02e6d2a3a21965fa379903803"
+      },
+      {
+        "family": "offline-bridge:GENERAL_TAX_INTERPRETATION:GENERAL",
+        "issuer_code": "GENERAL",
+        "entitled_old_code": "NOT_INVESTOR_SPECIFIC",
+        "old_instrument": "NOT_AN_ENTITLEMENT",
+        "action_type": "GENERAL_TAX_INTERPRETATION",
+        "source_ids": [
+          "mof-tax-api-143802",
+          "mof-tax-rule-143802",
+          "mof-tax-page-script",
+          "mof-tax-site-script",
+          "mof-tax-search-10100097670"
+        ],
+        "source_captured_at": "2026-10-23T03:10:08.388759+00:00",
+        "observed_at": "2026-10-23T06:46:13.305435+00:00",
+        "announced_at": null,
+        "accounting_eligible": false,
+        "historical_signal_eligible": false,
+        "fields": {
+          "TaxAct": {
+            "value": "所得稅法",
+            "unit": "OFFICIAL_LEGAL_TEXT",
+            "date_role": "GENERAL_INTERPRETATION_NOT_ISSUER_OR_PERSONAL",
+            "proofs": [
+              {
+                "source_id": "mof-tax-api-143802",
+                "locator": "Data.Table[0].TaxAct",
+                "raw_value": "所得稅法"
+              }
+            ],
+            "qualification": "SOURCE_DIAGNOSTIC_ONLY_NOT_LEDGER"
+          },
+          "TaxVer": {
+            "value": "一一四年版",
+            "unit": "OFFICIAL_LEGAL_TEXT",
+            "date_role": "GENERAL_INTERPRETATION_NOT_ISSUER_OR_PERSONAL",
+            "proofs": [
+              {
+                "source_id": "mof-tax-api-143802",
+                "locator": "Data.Table[0].TaxVer",
+                "raw_value": "一一四年版"
+              }
+            ],
+            "qualification": "SOURCE_DIAGNOSTIC_ONLY_NOT_LEDGER"
+          },
+          "Title": {
+            "value": "一51公司將資本公積以現金方式發給股東之課稅規定",
+            "unit": "OFFICIAL_LEGAL_TEXT",
+            "date_role": "GENERAL_INTERPRETATION_NOT_ISSUER_OR_PERSONAL",
+            "proofs": [
+              {
+                "source_id": "mof-tax-api-143802",
+                "locator": "Data.Table[0].Title",
+                "raw_value": "一51公司將資本公積以現金方式發給股東之課稅規定"
+              }
+            ],
+            "qualification": "SOURCE_DIAGNOSTIC_ONLY_NOT_LEDGER"
+          },
+          "Article": {
+            "value": "第十四條（各類所得之計算）",
+            "unit": "OFFICIAL_LEGAL_TEXT",
+            "date_role": "GENERAL_INTERPRETATION_NOT_ISSUER_OR_PERSONAL",
+            "proofs": [
+              {
+                "source_id": "mof-tax-api-143802",
+                "locator": "Data.Table[0].Article",
+                "raw_value": "第十四條（各類所得之計算）"
+              }
+            ],
+            "qualification": "SOURCE_DIAGNOSTIC_ONLY_NOT_LEDGER"
+          },
+          "Terms": {
+            "value": 1,
+            "unit": "OFFICIAL_LEGAL_TEXT",
+            "date_role": "GENERAL_INTERPRETATION_NOT_ISSUER_OR_PERSONAL",
+            "proofs": [
+              {
+                "source_id": "mof-tax-api-143802",
+                "locator": "Data.Table[0].Terms",
+                "raw_value": 1
+              }
+            ],
+            "qualification": "SOURCE_DIAGNOSTIC_ONLY_NOT_LEDGER"
+          },
+          "Subsection": {
+            "value": 51,
+            "unit": "OFFICIAL_LEGAL_TEXT",
+            "date_role": "GENERAL_INTERPRETATION_NOT_ISSUER_OR_PERSONAL",
+            "proofs": [
+              {
+                "source_id": "mof-tax-api-143802",
+                "locator": "Data.Table[0].Subsection",
+                "raw_value": 51
+              }
+            ],
+            "qualification": "SOURCE_DIAGNOSTIC_ONLY_NOT_LEDGER"
+          },
+          "Content": {
+            "value": "一、公司依公司法第241條第1項規定將資本公積之一部或全部，按股東原有股份之比例發給現金，該資本公積如屬下列不具股東出資額性質之項目，股東因而取得之現金，應作為其取得年度之股利所得（投資收益），依所得稅法規定課徵所得稅：（一）受領贈與之所得（二）經濟部91年3月14日經商字第09102050200號令第3點所定「超過票面金額發行股票所得之溢額」範圍中之下列項目：1、庫藏股票交易溢價。2、特別股收回價格低於發行價格之差額。3、認股權證逾期未行使而將其帳面餘額轉列者。4、股東逾期未繳足股款而沒收之已繳股款。二、前點資本公積之認定，以股東會決議為準；股東會決議未載明發給現金之資本公積項目時，以公司會計帳冊簿據紀錄為準。公司發給股東前點規定之股利所得（投資收益）時，無所得稅法第66條之6按稅額扣抵比率計算可扣抵稅額併同股利分配規定之適用。（編者註：107年2月7日修正公布所得稅法已廢止兩稅合一設算扣抵規定）三、合併基準日在97年12月31日以前之案件，合併存續公司應依行為時本部72年3月23日台財稅第31904號函規定，將消滅公司帳列未分配盈餘以原科目轉併存續公司。嗣後存續公司將合併帳列之資本公積中屬於來自前開消滅公司之未分配盈餘及法定盈餘公積部分，依公司法第241條第1項規定發給現金時，股東因而取得之現金，應比照行為時本部92年6月10日台財稅字第0920453015號函第2點規定列為當年度所得課稅。四、公司發給股東前3點規定之股利所得（投資收益）時，應依所得稅法第102條之1第1項規定填具股利憑單申報該管稽徵機關，並將股利憑單填發納稅義務人；股東為非中華民國境內居住之個人及總機構在中華民國境外之營利事業者，應由扣繳義務人於給付時，依所得稅法第88條第1項第1款及第89條第1項第1款規定扣繳稅款，並依同法第92條第2項及第3項規定填報扣繳憑單。（財政部101/08/17台財稅字第10100097670號令）\n",
+            "unit": "OFFICIAL_LEGAL_TEXT",
+            "date_role": "GENERAL_INTERPRETATION_NOT_ISSUER_OR_PERSONAL",
+            "proofs": [
+              {
+                "source_id": "mof-tax-api-143802",
+                "locator": "Data.Table[0].Content",
+                "raw_value": "一、公司依公司法第241條第1項規定將資本公積之一部或全部，按股東原有股份之比例發給現金，該資本公積如屬下列不具股東出資額性質之項目，股東因而取得之現金，應作為其取得年度之股利所得（投資收益），依所得稅法規定課徵所得稅：（一）受領贈與之所得（二）經濟部91年3月14日經商字第09102050200號令第3點所定「超過票面金額發行股票所得之溢額」範圍中之下列項目：1、庫藏股票交易溢價。2、特別股收回價格低於發行價格之差額。3、認股權證逾期未行使而將其帳面餘額轉列者。4、股東逾期未繳足股款而沒收之已繳股款。二、前點資本公積之認定，以股東會決議為準；股東會決議未載明發給現金之資本公積項目時，以公司會計帳冊簿據紀錄為準。公司發給股東前點規定之股利所得（投資收益）時，無所得稅法第66條之6按稅額扣抵比率計算可扣抵稅額併同股利分配規定之適用。（編者註：107年2月7日修正公布所得稅法已廢止兩稅合一設算扣抵規定）三、合併基準日在97年12月31日以前之案件，合併存續公司應依行為時本部72年3月23日台財稅第31904號函規定，將消滅公司帳列未分配盈餘以原科目轉併存續公司。嗣後存續公司將合併帳列之資本公積中屬於來自前開消滅公司之未分配盈餘及法定盈餘公積部分，依公司法第241條第1項規定發給現金時，股東因而取得之現金，應比照行為時本部92年6月10日台財稅字第0920453015號函第2點規定列為當年度所得課稅。四、公司發給股東前3點規定之股利所得（投資收益）時，應依所得稅法第102條之1第1項規定填具股利憑單申報該管稽徵機關，並將股利憑單填發納稅義務人；股東為非中華民國境內居住之個人及總機構在中華民國境外之營利事業者，應由扣繳義務人於給付時，依所得稅法第88條第1項第1款及第89條第1項第1款規定扣繳稅款，並依同法第92條第2項及第3項規定填報扣繳憑單。（財政部101/08/17台財稅字第10100097670號令）\n"
+              }
+            ],
+            "qualification": "SOURCE_DIAGNOSTIC_ONLY_NOT_LEDGER"
+          },
+          "issuer_funding_subtype": {
+            "value": null,
+            "unit": "UNKNOWN",
+            "date_role": "NO_INVESTOR_OR_ISSUER_SPECIFIC_EVIDENCE",
+            "proofs": [],
+            "qualification": "SOURCE_DIAGNOSTIC_ONLY_NOT_LEDGER"
+          },
+          "personal_tax_residency": {
+            "value": null,
+            "unit": "UNKNOWN",
+            "date_role": "NO_INVESTOR_OR_ISSUER_SPECIFIC_EVIDENCE",
+            "proofs": [],
+            "qualification": "SOURCE_DIAGNOSTIC_ONLY_NOT_LEDGER"
+          },
+          "personal_tax": {
+            "value": null,
+            "unit": "UNKNOWN",
+            "date_role": "NO_INVESTOR_OR_ISSUER_SPECIFIC_EVIDENCE",
+            "proofs": [],
+            "qualification": "SOURCE_DIAGNOSTIC_ONLY_NOT_LEDGER"
+          },
+          "nhi": {
+            "value": null,
+            "unit": "UNKNOWN",
+            "date_role": "NO_INVESTOR_OR_ISSUER_SPECIFIC_EVIDENCE",
+            "proofs": [],
+            "qualification": "SOURCE_DIAGNOSTIC_ONLY_NOT_LEDGER"
+          },
+          "fees": {
+            "value": null,
+            "unit": "UNKNOWN",
+            "date_role": "NO_INVESTOR_OR_ISSUER_SPECIFIC_EVIDENCE",
+            "proofs": [],
+            "qualification": "SOURCE_DIAGNOSTIC_ONLY_NOT_LEDGER"
+          },
+          "personal_net_cash": {
+            "value": null,
+            "unit": "UNKNOWN",
+            "date_role": "NO_INVESTOR_OR_ISSUER_SPECIFIC_EVIDENCE",
+            "proofs": [],
+            "qualification": "SOURCE_DIAGNOSTIC_ONLY_NOT_LEDGER"
+          },
+          "actual_investor_receipt": {
+            "value": null,
+            "unit": "UNKNOWN",
+            "date_role": "NO_INVESTOR_OR_ISSUER_SPECIFIC_EVIDENCE",
+            "proofs": [],
+            "qualification": "SOURCE_DIAGNOSTIC_ONLY_NOT_LEDGER"
+          }
+        },
+        "id": "sha256:d64510ad3eb274c4a7610011b5b18d0defe1b4c8c202a793c9c825dc4035e89a"
+      }
+    ],
+    "archive_verification": {
+      "sha256": "ecc413ca28fce87085666b87b3c3a6d1bf784ef553b32d2198b8bb72bebeedce",
+      "bytes": 941229,
+      "members": 41,
+      "manifest_entries_verified": 40,
+      "original_91_member_archive": "WORK_ATTESTATION_ONLY_FULL_PREDECESSOR_NOT_INCLUDED_OR_REVERIFIED_HERE"
+    },
+    "historical_signal_eligible": false,
+    "primary_pressure_id": null,
+    "policy_authorized": false,
+    "id": "sha256:ffc954ac915889a4fbd8b2d2e71b219cb38fbfe192d7cc08823abe2f04d3b6eb"
+  },
+  "coverage": {
+    "1101": {
+      "status": "INCOMPLETE",
+      "start": "2025-07-01",
+      "end": "2026-10-16",
+      "event_ids": [
+        "sha256:01df5dd4c25df56baa28b725845678043e4809abf08e15cb19bab046ad92902f",
+        "sha256:b7ba974b62bad201a1757c3b8dc2015ae9a43d35f55c352bf0929c65cd2b0bd5"
+      ],
+      "source_ids": [
+        "exright-2025",
+        "exright-2026-to-cutoff",
+        "issuer-1101",
+        "issuer-2884",
+        "tcc-capital-surplus-2026"
+      ],
+      "types": [
+        "CASH_DIVIDEND",
+        "STOCK_DIVIDEND"
+      ],
+      "other_actions_checked": false,
+      "gaps": [
+        "NO_EXHAUSTIVE_CAPITAL_REDUCTION_OR_OTHER_ACTION_REGISTER",
+        "EXCHANGE_2026_CAPTURE_ENDS_2026-07-24_MISSING_2026-07-25_TO_2026-10-16",
+        "EXRIGHT_ENDPOINT_EXCLUSIONS_NOT_COMPLETE_CORPORATE_ACTION_UNIVERSE",
+        "SCOPED_INVENTORY_NOT_EXHAUSTIVE_REGISTER_OR_SUPPORTED_ACCOUNT_IMPACT",
+        "RESOLUTION_NOT_FINAL_RATIO_NET_PAYMENT_OR_EXHAUSTIVE_ACTION_REGISTER"
+      ],
+      "known_company_action_ids": [
+        "sha256:1e4ac85c0b29fc31441f5d36208189e5d6ad55eaf3fa6f9e994db8e054a63bed",
+        "sha256:3912f8383c15a479a8b1aeaa4835f4ca53ad6f101fc88e96f15fd531d0bbeee4",
+        "sha256:5f032becaccb3085398a8025359322047c4ef31f9ffbf3ab2adcde5d83ae4b56",
+        "sha256:d23b7d5f03dc9a6f02b0bd4659cce8519ef01a32eed92dc9dc9f68a652f2dfc5"
+      ]
+    },
+    "2884": {
+      "status": "INCOMPLETE",
+      "start": "2025-07-01",
+      "end": "2026-10-16",
+      "event_ids": [
+        "sha256:a96a11bf35947c9fce84baaf52b88a4ffd19447e9c26610c5fc01a82505d1a3a",
+        "sha256:dddf104de8f030d4fedd1894a1a99386d81df1b0befa046f946cfdc5734bb387",
+        "sha256:cf65c6f1ab9ad9fb1a64a8405cd9d05505739e72d6383c5e37903389f52c7349"
+      ],
+      "source_ids": [
+        "esun-2025-follow-up",
+        "esun-2025-minutes",
+        "esun-direct-2025-ratio",
+        "esun-mna-20251105",
+        "esun-mna-20260713",
+        "esun-mna-index",
+        "esun-mna-qa",
+        "exright-2025",
+        "exright-2026-to-cutoff",
+        "issuer-1101",
+        "issuer-2884"
+      ],
+      "types": [
+        "CASH_DIVIDEND",
+        "STOCK_DIVIDEND"
+      ],
+      "other_actions_checked": false,
+      "gaps": [
+        "NO_EXHAUSTIVE_CAPITAL_REDUCTION_OR_OTHER_ACTION_REGISTER",
+        "EXCHANGE_2026_CAPTURE_ENDS_2026-07-24_MISSING_2026-07-25_TO_2026-10-16",
+        "EXRIGHT_ENDPOINT_EXCLUSIONS_NOT_COMPLETE_CORPORATE_ACTION_UNIVERSE",
+        "SCOPED_INVENTORY_NOT_EXHAUSTIVE_REGISTER_OR_SUPPORTED_ACCOUNT_IMPACT",
+        "RESOLUTION_NOT_FINAL_RATIO_NET_PAYMENT_OR_EXHAUSTIVE_ACTION_REGISTER"
+      ],
+      "known_company_action_ids": [
+        "sha256:3090d9519d9526c48742e1f1c6c3be15e81971306d0f41b1d6034e0f6b4dfffb",
+        "sha256:591576c458ebb0e1506f5e562c3b61655f199fe05069e559e29bd05783c39ccc",
+        "sha256:5c768c6a2c7b2b3145015e722670727de85cef74fa12f990f7b2f0565fe67119",
+        "sha256:b9eac95a1a87bcc06b6d3b67547af3148106813cddf5fffd9edab21fc450207f"
+      ]
+    }
+  },
+  "sources": {
+    "taifex-esun-resumption-20251106": {
+      "source_id": "taifex-esun-resumption-20251106",
+      "url": "https://www.taifex.com.tw/file/taifex/CHINESE/11/attach/%E7%8E%89%E5%B1%B1%E9%87%911106%E6%81%A2%E5%BE%A9%E4%BA%A4%E6%98%93%E5%85%AC%E5%91%8A.pdf",
+      "method": "GET",
+      "requested_at": "2026-10-23T08:33:07.100801+00:00",
+      "work_comparison_only": {
+        "url": "https://www.taifex.com.tw/file/taifex/CHINESE/11/attach/%E7%8E%89%E5%B1%B1%E9%87%911106%E6%81%A2%E5%BE%A9%E4%BA%A4%E6%98%93%E5%85%AC%E5%91%8A.pdf",
+        "expected_bytes": 81441,
+        "expected_sha256": "9699a6d1349a1f4e14d78601af4874f724df5c24224dbe49906b1ce4ee712320",
+        "work_request_at": "2026-10-23T07:44:09.947859+00:00",
+        "work_completed_at": "2026-10-23T07:44:15.344058+00:00",
+        "kind": "PDF"
+      },
+      "retries": 0,
+      "redirects_followed": false,
+      "http": 200,
+      "final_url": "https://www.taifex.com.tw/file/taifex/CHINESE/11/attach/%E7%8E%89%E5%B1%B1%E9%87%911106%E6%81%A2%E5%BE%A9%E4%BA%A4%E6%98%93%E5%85%AC%E5%91%8A.pdf",
+      "headers": {
+        "Content-Type": "application/pdf",
+        "Content-Length": "81441",
+        "Date": "Fri, 23 Oct 2026 08:33:07 GMT",
+        "Last-Modified": "Wed, 05 Nov 2025 10:39:18 GMT",
+        "Location": null
+      },
+      "bytes": 81441,
+      "sha256": "9699a6d1349a1f4e14d78601af4874f724df5c24224dbe49906b1ce4ee712320",
+      "completed_at": "2026-10-23T08:33:08.335587+00:00",
+      "status": "CAPTURED",
+      "captured_at": "2026-10-23T08:33:08.335587+00:00",
+      "readback_at": "2026-10-23T08:33:08.335606+00:00",
+      "work_sha_match": true,
+      "announced_at": null,
+      "historical_publication_time": "NOT_AUTHENTICATED",
+      "kind": "DIRECT_OFFICIAL_CAPTURE_NEW_VERSION",
+      "path": "股票系統M1_v0_18/rotation_research/source_followup_20261023/raw/taifex-esun-resumption-20251106.response",
+      "native_evidence": {
+        "text": "         臺灣期貨交易所股份有限公司                      函\n                          地址：100 台北市羅斯福路二段100號14樓\n                          聯絡人：黃小姐\n                          聯絡電話：(02)2369-5678 分機：3171\n受文者：如行文單位\n發文日期：中華民國114年11月5日\n發文字號：台期交字第1140202330號\n速別：普通件\n密等及解密條件或保密期限：\n附件：\n\n主旨：公告玉山金期貨及選擇權（契約代號：DN）自114年11月6日\n   起恢復交易。\n說明：\n 一、依本公司「因應證券市場暫停交易之處理措施」第5條規定\n   辦理。\n 二、因玉山金融控股股份有限公司（證券代號：2884）自114年\n   11月6日起恢復交易，玉山金期貨及選擇權自114年11月6日\n   起恢復交易。\n正本：各期貨商、各期貨交易輔助人、行情資訊廠商、本公司網站、結算部\n副本：金融監督管理委員會證券期貨局、臺灣證券交易所股份有限公司、財團法人中華民國\n   證券櫃檯買賣中心、臺灣集中保管結算所股份有限公司、中華民國期貨業商業同業公\n   會、中華民國證券商業同業公會、台北國際金融資訊協會、財團法人中華民國證券暨\n   期貨市場發展基金會、財團法人證券投資人及期貨交易人保護中心、企劃部、資訊規\n   劃部、資訊作業部\n\n總經理 周建隆\n\n\n\n\n                        第1頁   共1頁\n\f"
+      }
+    },
+    "esun-issuer-closing-completed-20260902": {
+      "source_id": "esun-issuer-closing-completed-20260902",
+      "url": "https://www.esunfhc.com/zh-tw/news-center/news-center/news/detail?id=D0565FF2DAE34916B079E1F26A048B1C&p=148DB1EBDC2B47629ED09DC9820A2155",
+      "method": "GET",
+      "requested_at": "2026-10-23T08:33:07.101857+00:00",
+      "work_comparison_only": {
+        "url": "https://www.esunfhc.com/zh-tw/news-center/news-center/news/detail?id=D0565FF2DAE34916B079E1F26A048B1C&p=148DB1EBDC2B47629ED09DC9820A2155",
+        "expected_bytes": 103632,
+        "expected_sha256": "4696b71825fac29c1baaf21a475387240d6a53d463c2108704c7bbfc54fbf38c",
+        "work_request_at": "2026-10-23T07:43:19.915765+00:00",
+        "work_completed_at": "2026-10-23T07:43:30.109551+00:00",
+        "kind": "HTML"
+      },
+      "retries": 0,
+      "redirects_followed": false,
+      "http": 200,
+      "final_url": "https://www.esunfhc.com/zh-tw/news-center/news-center/news/detail?id=D0565FF2DAE34916B079E1F26A048B1C&p=148DB1EBDC2B47629ED09DC9820A2155",
+      "headers": {
+        "Content-Type": "text/html; charset=utf-8",
+        "Content-Length": "103632",
+        "Date": "Fri, 23 Oct 2026 08:33:08 GMT",
+        "Last-Modified": null,
+        "Location": null
+      },
+      "bytes": 103632,
+      "sha256": "74c34ecf911d5bc6b994f4e8735e77f8da3770b043f4d5baefba3ef2cb4028ee",
+      "completed_at": "2026-10-23T08:33:10.050928+00:00",
+      "status": "CAPTURED",
+      "captured_at": "2026-10-23T08:33:10.050928+00:00",
+      "readback_at": "2026-10-23T08:33:10.050946+00:00",
+      "work_sha_match": false,
+      "announced_at": null,
+      "historical_publication_time": "NOT_AUTHENTICATED",
+      "kind": "DIRECT_OFFICIAL_CAPTURE_NEW_VERSION",
+      "path": "股票系統M1_v0_18/rotation_research/source_followup_20261023/raw/esun-issuer-closing-completed-20260902.response",
+      "native_evidence": {
+        "title": "玉山金控完成合意併購三商美邦人壽  啟動金控2.0新篇章",
+        "date": "2026/09/02",
+        "body": "玉山金控今(1)日完成與三商壽之股權交割程序，三商壽自即日起正式成為玉山金控子公司。隨著銀行、人壽、證券及投信等金融版圖逐步到位，玉山金控正式邁入「金控2.0」新階段，並躍升為國內資產規模第5大上市金控公司，資產規模逾新臺幣6.6兆元。\n\n玉山金控表示，本次合意併購案歷經雙方董事會決議及股東臨時會通過，採股份轉換方式完成合意併購，並於2026年7月7日取得金管會核准；今日金控董事會也通過參與三商壽160億元現金增資，用以充實人壽資本，強化後續業務發展基礎。玉山將持續整合金控資源，強化跨業服務能量，建構更完整之金融服務平台，提供以顧客為中心的產品與服務，完善保戶服務及開發創新產品。\n\n在保戶權益保障方面，玉山金控強調，三商壽既有保戶之權益將獲得百分之百保障，不受任何影響。原有保險契約、保障內容、保單權益及效力皆維持不變，既有服務窗口也將持續運作，包括原服務業務員、客服專線及各區服務據點均照常提供服務，確保顧客權益與服務不中斷。未來結合業務員團隊與銀保通路優勢，組成更綿密的顧客服務網絡，持續提升保戶服務品質與顧客體驗。\n\n在人員安置方面，原有內外勤員工於3年內全數留用，並持續推動組織整合與人才培育，提供更寬廣之發展機會。人壽經營團隊部分，依董事會決議，由玉山金控總經理陳茂欽擔任人壽董事長，三商壽原副董事長許瀞心擔任總經理；後續將依法定程序申請，並於主管機關核准後並公告，公司也預計於12月1日更名為「玉山人壽」。\n\n玉山金控表示，壽險事業作為重要成長引擎，透過產品、通路與投資能力升級，提供更豐富的保險產品與優質服務。玉山邁入金控2.0，將秉持穩健經營、誠信治理及永續發展理念，發揮銀行、人壽、證券及投信等跨子公司整合綜效，展現更為穩健之財務結構與經營實力，為顧客與股東創造價值，發揮正面金融影響力。"
+      }
+    },
+    "tcc-2026-q2-consolidated-report": {
+      "source_id": "tcc-2026-q2-consolidated-report",
+      "url": "https://media.taiwancement.com/web_tcc/comm/pdf/report/2026/TCC%20115%E5%B9%B4%E7%AC%AC%E4%BA%8C%E5%AD%A3%E5%90%88%E4%BD%B5%E8%B2%A1%E5%A0%B1.pdf",
+      "method": "GET",
+      "requested_at": "2026-10-23T08:33:07.102192+00:00",
+      "work_comparison_only": {
+        "url": "https://media.taiwancement.com/web_tcc/comm/pdf/report/2026/TCC%20115%E5%B9%B4%E7%AC%AC%E4%BA%8C%E5%AD%A3%E5%90%88%E4%BD%B5%E8%B2%A1%E5%A0%B1.pdf",
+        "expected_bytes": 3320224,
+        "expected_sha256": "e8a8ca682a242180a908a68030dc80ee0321ddf92217586f59230b1d3e584d2d",
+        "work_request_at": "2026-10-23T07:45:17.500234+00:00",
+        "work_completed_at": "2026-10-23T07:45:26.457982+00:00",
+        "kind": "PDF"
+      },
+      "retries": 0,
+      "redirects_followed": false,
+      "http": 200,
+      "final_url": "https://media.taiwancement.com/web_tcc/comm/pdf/report/2026/TCC%20115%E5%B9%B4%E7%AC%AC%E4%BA%8C%E5%AD%A3%E5%90%88%E4%BD%B5%E8%B2%A1%E5%A0%B1.pdf",
+      "headers": {
+        "Content-Type": "application/pdf",
+        "Content-Length": "3320224",
+        "Date": "Fri, 23 Oct 2026 08:33:08 GMT",
+        "Last-Modified": "Thu, 13 Aug 2026 02:52:59 GMT",
+        "Location": null
+      },
+      "bytes": 3320224,
+      "sha256": "e8a8ca682a242180a908a68030dc80ee0321ddf92217586f59230b1d3e584d2d",
+      "completed_at": "2026-10-23T08:33:10.538370+00:00",
+      "status": "CAPTURED",
+      "captured_at": "2026-10-23T08:33:10.538370+00:00",
+      "readback_at": "2026-10-23T08:33:10.538392+00:00",
+      "work_sha_match": true,
+      "announced_at": null,
+      "historical_publication_time": "NOT_AUTHENTICATED",
+      "kind": "DIRECT_OFFICIAL_CAPTURE_NEW_VERSION",
+      "path": "股票系統M1_v0_18/rotation_research/source_followup_20261023/raw/tcc-2026-q2-consolidated-report.response",
+      "native_evidence": {
+        "7": "",
+        "52": "           復原義務準備係依相關法規提列土地或礦山等之復原成本。\n           台 泥 公 司 自 114 年 依 我 國 碳 費 收 費 辦 法 等 相 關 法 規 認 列 碳 費 負 債\n    準 備 。 台 泥 公 司 和 平 廠 及 蘇 澳 廠 已 於 115 年 3 月 取 得 主 管 機 關 對 自 主\n    減 量 計 畫 之 核 定 並 於 115 年 4 月 取 得 認 定 屬 高 碳 洩 漏 風 險 行 業 。 和 平\n    廠 及 蘇 澳 廠 已 達 成 114 年 度 之 指 定 目 標 並 於 115 年 4 月 提 交 114 年 度\n    自主減量計畫執行進度報告，碳費負債準備係按優惠費率及高碳洩漏\n    風險行業所適用之排放量調整係數值為計算基礎。\n二五、 權       益\n  (一 ) 股        本\n        1. 已 發 行 普 通 股\n                                 115年6月30日       114年12月31日       114年6月30日\n             額定仟股數                  10,000,000       10,000,000      10,000,000\n             額定股本                $ 100,000,000    $ 100,000,000   $ 100,000,000\n             已發行且已收足\n              股款之仟股數                7,523,182       7,551,182        7,551,182\n             已發行股本               $ 75,231,817    $ 75,511,817     $ 75,511,817\n\n\n                    已 發 行 之 普 通 股 每 股 面 額 為 10 元，每 股 享 有 一 表 決 權 及 收\n             取股利之權利。額定股本包含普通股及特別股，其中供發行員\n             工 認 股 權 憑 證 所 保 留 股 本 為 60,000 仟 股 。\n                    本 公 司 於 115 年 1 月 辦 理 註 銷 庫 藏 股 28,000 仟 股 ， 參 閱 附\n             註 二 五 (七 )。\n        2. 特 別 股\n                    本 公 司 於 107 年 6 月 經 董 事 會 通 過 擬 辦 理 現 金 增 資 發 行 第\n             二 次 特 別 股。本 案 經 金 融 監 督 管 理 委 員 會 107 年 7 月 25 日 金 管\n             證 發 字 第 1070325853 號 申 報 生 效，並 以 107 年 12 月 13 日 為 增\n             資 基 準 日 ， 以 現 金 發 行 特 別 股 200,000 仟 股 ， 每 股 面 額 10 元 ，\n             每 股 發 行 價 格 50 元 ， 特 別 股 年 率 4.0525%（ 自 112 年 12 月 14\n             日 起 屆 期 依 發 行 條 件 辦 理 股 息 率 重 設 五 年 期 IRS 利 率 1.4900%+\n             固 定 加 碼 利 率 2.5625%）。 五 年 期 IRS 利 率 將 於 發 行 日 起 滿 五 年\n             之次一營業日及其後每五年重設。本公司第二次特別股股東於\n\n                                   - 52 -\n",
+        "54": "(二 ) 資 本 公 積\n                         115年6月30日      114年12月31日      114年6月30日\n    得用以彌補虧損、發放\n     現金或撥充股本（註）\n    股票發行溢價               $ 55,563,685    $ 61,757,229   $ 61,757,229\n    公司債轉換溢價                10,500,774      10,539,771     10,539,771\n    庫藏股票交易                     31,652         169,861        169,861\n    實際取得或處分子公司\n     股權價格與帳面價值\n     差額                            -               -         22,521\n    受贈資產                      31,537          31,537         31,537\n    失效認股權                  1,388,162       1,388,162      1,388,162\n    認股權執行                     22,347          22,347         22,347\n    僅得用以彌補虧損\n    子公司股東未領取之\n     股利                        2,510           2,510          2,510\n    不得作為任何用途\n    可轉換公司債認列權益\n     組成                      782,056         782,056        782,056\n    採權益法認列關聯企業\n     股權淨值之變動數                 599,864         599,864        144,050\n                         $ 68,922,587    $ 75,293,337   $ 74,860,044\n\n\n    註：此類資本公積得用以彌補虧損，亦得於公司無虧損時，用以發\n        放現金或撥充股本，惟撥充股本時每年以實收股本之一定比率\n        為限。\n(三 ) 保 留 盈 餘 及 股 利 政 策\n        依本公司章程之盈餘分派政策規定，每年決算所得淨利，除依\n    法 提 繳 所 得 稅 ， 彌 補 累 積 虧 損 ， 次 提 撥 10%為 法 定 盈 餘 公 積 ， 加 計\n    累積未分配盈餘，必要時得依相關法令規定提撥或迴轉特別盈餘公\n    積或酌予保留盈餘後，就其餘額於分派特別股股息後，再予分派普\n    通股股利，分派比率由董事會擬訂盈餘分派案提請股東會決議。本\n    公司章程規定員工及董事酬勞分派政策，請參閱附註二七（本期淨\n    利 ） 之 (三 )員 工 酬 勞 及 董 事 酬 勞 。\n        本公司除從事資本密集、較為成熟穩定之水泥及水泥製品產銷\n    外，並積極朝向多角化經營。為配合多元化發展投資需要或重大之\n\n\n\n                          - 54 -\n",
+        "55": "    資 本 預 算 規 劃 ， 訂 定 現 金 股 利 支 付 比 率 為 普 通 股 股 利 之 20%以 上 ，\n    餘額配發股票股利。\n        法定盈餘公積應提撥至其餘額達公司實收股本總額時為止。法\n    定盈餘公積得用以彌補虧損。公司無虧損時，法定盈餘公積超過實\n    收 股 本 總 額 25%之 部 分 除 得 撥 充 股 本 外 ， 尚 得 以 現 金 分 配 。\n        本 公 司 於 115 年 5 月 及 114 年 5 月 舉 行 股 東 常 會 ， 分 別 決 議 通\n    過 114 及 113 年 度 盈 餘 分 配 案 如 下 ：\n                   盈      餘       分       配      案 每 股 股     利   （ 元 ）\n                       114年度            113年度       114年度        113年度\n    法定盈餘公積         $          -       $ 1,041,622\n    特別股現金股利             405,250            405,250  $ 2.03       $   2.03\n    普通股現金股利                   -          7,531,182  $    -       $   1.00\n\n\n        本 公 司 於 115 年 5 月 股 東 常 會 決 議 以 資 本 公 積 發 放 現 金 ， 每 股\n    配 發 新 台 幣 0.8 元 ， 共 計 配 發 5,994,545 仟 元 。\n(四 ) 特 別 盈 餘 公 積\n        本 公 司 於 首 次 採 用 IFRS 會 計 準 則 時 帳 列 未 實 現 重 估 增 值 及 累 積\n    換 算 調 整 數 轉 入 保 留 盈 餘 之 金 額 分 別 為 10,454,422 仟 元 及 2,709,369\n    仟元，已予以提列相同數額之特別盈餘公積。\n        首 次 採 用 IFRS 會 計 準 則 因 土 地 以 外 之 投 資 性 不 動 產 所 提 列 之 特\n    別盈餘公積，得於使用期間逐期迴轉。因土地所提列之特別盈餘公\n    積 ， 得 於 處 分 或 重 分 類 時 迴 轉 ， 115 年 及 114 年 1 月 1 日 至 6 月 30\n    日 分 別 迴 轉 101,190 仟 元 及 56,785 仟 元 。 因 國 外 營 運 機 構 （ 包 括 子\n    公司）財務報表換算之兌換差額所提列之特別盈餘公積，係依本公\n    司 處 分 比 例 迴 轉，待 本 公 司 喪 失 重 大 影 響 時，則 全 數 迴 轉。 115 年 及\n    114 年 6 月 30 日 特 別 盈 餘 公 積 餘 額 分 別 為 12,491,538 仟 元 及\n    12,605,098 仟 元 。\n\n\n\n\n                               - 55 -\n",
+        "57": "(六 ) 非 控 制 權 益\n                                     115年1月1日             114年1月1日\n                                      至6月30日               至6月30日\n    期初餘額                             $ 60,795,226         $ 59,810,770\n    本期淨利                                1,290,019              537,742\n    本期其他綜合損益\n      國外營運機構財務報表\n       換算之兌換差額                             2,378,012      (     1,241,586 )\n      透過其他綜合損益按\n       公允價值衡量之金融\n       資產未實現評價損益                               23,978     (         23,449 )\n      確定福利計畫之再衡量\n       數                             (        37,536 )                  -\n      避險工具公允價值變動                     (         1,515 )                  -\n    子公司發放現金股利                        (     2,363,754 )    (     2,902,030 )\n    子公司員工持有之流通在外\n     既得認股權                                          -             138,499\n    對子公司所有權權益變動                      (         17,422 )                 -\n    收購子公司非控制權益\n     （附註三三）                          (        174,110 )   (         11,546 )\n    處分子公司（附註三二）                                     -              204,427\n    期末餘額                                 $ 61,892,898         $ 56,512,827\n\n\n(七 ) 庫 藏 股\n                                                          單位：仟股數\n                                     115年1月1日             114年1月1日\n    項                   目              至6月30日              至6月30日\n    期初股數                                 58,000               20,000\n    本期註銷                              ( 28,000 )                   -\n    期末股數                                 30,000               20,000\n\n\n        本 公 司 於 112 年 1 月 經 董 事 會 決 議 買 回 庫 藏 股 20,000 仟 股 ， 主\n    要 係 用 以 轉 讓 予 員 工 ， 買 回 成 本 共 計 732,459 仟 元 。\n        本 公 司 於 114 年 6 月 經 董 事 會 決 議 買 回 庫 藏 股 10,000 仟 股 及\n    28,000 仟 股 ， 分 別 用 以 轉 讓 予 員 工 及 維 護 公 司 信 用 暨 股 東 權 益 ， 上\n    述 交 易 已 於 114 年 第 3 季 執 行 完 畢 ， 買 回 成 本 共 計 903,185 仟 元 。\n\n\n\n\n                            - 57 -\n"
+      }
+    }
+  },
+  "facts": {
+    "taifex-esun-resumption-20251106": {
+      "document_date": "2025-11-05",
+      "document_number": "台期交字第1140202330號",
+      "stock_resumption_date": "2025-11-06",
+      "derivatives_resumption_date": "2025-11-06",
+      "contract_code": "DN"
+    },
+    "esun-issuer-closing-completed-20260902": {
+      "page_display_date": "2026-09-02",
+      "body_day_text": "玉山金控今(1)日完成與三商壽之股權交割程序",
+      "body_day": "1",
+      "date_conflict": true,
+      "closing_stage": "ISSUER_REPORTED_CLOSING_COMPLETED",
+      "board_participation_amount": "160",
+      "board_participation_unit": "HUNDRED_MILLION_TWD",
+      "capital_increase_stage": "BOARD_APPROVED_PARTICIPATION_ONLY"
+    },
+    "tcc-2026-q2-consolidated-report": {
+      "cancellation_month": "2026-01",
+      "cancellation_quantity": "28000",
+      "treasury_opening": "58000",
+      "treasury_cancelled": "28000",
+      "treasury_closing": "30000",
+      "quantity_unit": "THOUSAND_SHARES",
+      "approved_cash_per_share": "0.8",
+      "approved_total": "5994545",
+      "total_unit": "THOUSAND_TWD",
+      "native_page7_text_empty": true
+    }
+  },
+  "observations": [
+    {
+      "family": "source-followup:TAIFEX_CORROBORATES_UNDERLYING_RESUMPTION:2884",
+      "issuer_code": "2884",
+      "entitled_old_code": "NOT_AN_ENTITLEMENT",
+      "old_instrument": "2884_ORDINARY_OLD_SHARES",
+      "action_type": "TAIFEX_CORROBORATES_UNDERLYING_RESUMPTION",
+      "source_ids": [
+        "taifex-esun-resumption-20251106"
+      ],
+      "observed_at": "2026-10-23T08:33:08.335606+00:00",
+      "source_captured_at": "2026-10-23T08:33:08.335587+00:00",
+      "announced_at": null,
+      "accounting_eligible": false,
+      "historical_signal_eligible": false,
+      "fields": {
+        "document_date": {
+          "value": "2025-11-05",
+          "unit": "ISO_DATE",
+          "date_role": "SOURCE_DOCUMENT_DATE_NOT_PUBLICATION",
+          "proofs": [
+            {
+              "source_id": "taifex-esun-resumption-20251106",
+              "locator": "PDF page 1 explanation 2; heading separate",
+              "native_evidence_sha256": "d8e6d98c04d876b2b22bb00c2909c41fa48c8eba2cba09a5c6f43a771844e62d",
+              "normalized_value": "2025-11-05"
+            }
+          ],
+          "qualification": "SOURCE_FACT_NOT_FINAL_LEDGER"
+        },
+        "document_number": {
+          "value": "台期交字第1140202330號",
+          "unit": "TEXT",
+          "date_role": "SOURCE_ONLY_NOT_ENTITLEMENT",
+          "proofs": [
+            {
+              "source_id": "taifex-esun-resumption-20251106",
+              "locator": "PDF page 1 explanation 2; heading separate",
+              "native_evidence_sha256": "d8e6d98c04d876b2b22bb00c2909c41fa48c8eba2cba09a5c6f43a771844e62d",
+              "normalized_value": "台期交字第1140202330號"
+            }
+          ],
+          "qualification": "SOURCE_FACT_NOT_FINAL_LEDGER"
+        },
+        "stock_resumption_date": {
+          "value": "2025-11-06",
+          "unit": "ISO_DATE",
+          "date_role": "TAIFEX_STATES_STOCK_RESUMPTION_NOT_TWSE_DIRECT",
+          "proofs": [
+            {
+              "source_id": "taifex-esun-resumption-20251106",
+              "locator": "PDF page 1 explanation 2; heading separate",
+              "native_evidence_sha256": "d8e6d98c04d876b2b22bb00c2909c41fa48c8eba2cba09a5c6f43a771844e62d",
+              "normalized_value": "2025-11-06"
+            }
+          ],
+          "qualification": "SOURCE_FACT_NOT_FINAL_LEDGER"
+        },
+        "authority": {
+          "value": "TAIFEX_OFFICIAL_CORROBORATION_NOT_TWSE_DIRECT",
+          "unit": "TEXT",
+          "date_role": "SOURCE_ONLY_NOT_ENTITLEMENT",
+          "proofs": [
+            {
+              "source_id": "taifex-esun-resumption-20251106",
+              "locator": "PDF page 1 explanation 2; heading separate",
+              "native_evidence_sha256": "d8e6d98c04d876b2b22bb00c2909c41fa48c8eba2cba09a5c6f43a771844e62d",
+              "normalized_value": "TAIFEX_OFFICIAL_CORROBORATION_NOT_TWSE_DIRECT"
+            }
+          ],
+          "qualification": "SOURCE_FACT_NOT_FINAL_LEDGER"
+        },
+        "suspension_end_date": {
+          "value": null,
+          "unit": "ISO_DATE",
+          "date_role": "SUSPENSION_END_NOT_AUTHENTICATED",
+          "proofs": [],
+          "qualification": "SOURCE_FACT_NOT_FINAL_LEDGER"
+        }
+      },
+      "id": "sha256:650be208defd80ad98689f0c0397a491fc750aa32fb2a50df3732d8797f4b994"
+    },
+    {
+      "family": "source-followup:DERIVATIVES_RESUMPTION:2884",
+      "issuer_code": "2884",
+      "entitled_old_code": "NOT_AN_ENTITLEMENT",
+      "old_instrument": "DN_FUTURES_AND_OPTIONS",
+      "action_type": "DERIVATIVES_RESUMPTION",
+      "source_ids": [
+        "taifex-esun-resumption-20251106"
+      ],
+      "observed_at": "2026-10-23T08:33:08.335606+00:00",
+      "source_captured_at": "2026-10-23T08:33:08.335587+00:00",
+      "announced_at": null,
+      "accounting_eligible": false,
+      "historical_signal_eligible": false,
+      "fields": {
+        "contract_code": {
+          "value": "DN",
+          "unit": "TEXT",
+          "date_role": "SOURCE_ONLY_NOT_ENTITLEMENT",
+          "proofs": [
+            {
+              "source_id": "taifex-esun-resumption-20251106",
+              "locator": "PDF page 1 subject",
+              "native_evidence_sha256": "d8e6d98c04d876b2b22bb00c2909c41fa48c8eba2cba09a5c6f43a771844e62d",
+              "normalized_value": "DN"
+            }
+          ],
+          "qualification": "SOURCE_FACT_NOT_FINAL_LEDGER"
+        },
+        "derivatives_resumption_date": {
+          "value": "2025-11-06",
+          "unit": "ISO_DATE",
+          "date_role": "DERIVATIVES_RESUMPTION_NOT_STOCK_DIRECT_NOTICE",
+          "proofs": [
+            {
+              "source_id": "taifex-esun-resumption-20251106",
+              "locator": "PDF page 1 subject",
+              "native_evidence_sha256": "d8e6d98c04d876b2b22bb00c2909c41fa48c8eba2cba09a5c6f43a771844e62d",
+              "normalized_value": "2025-11-06"
+            }
+          ],
+          "qualification": "SOURCE_FACT_NOT_FINAL_LEDGER"
+        }
+      },
+      "id": "sha256:c903696236dcd2e5a45bb7a84133b3353389f37d199ac8334e1398fd1f855d74"
+    },
+    {
+      "family": "source-followup:ISSUER_CLOSING_REPORT:2884",
+      "issuer_code": "2884",
+      "entitled_old_code": "NOT_AN_ENTITLEMENT",
+      "old_instrument": "ISSUER_MNA_REPORT_NOT_ALLOTMENT",
+      "action_type": "ISSUER_CLOSING_REPORT",
+      "source_ids": [
+        "esun-issuer-closing-completed-20260902"
+      ],
+      "observed_at": "2026-10-23T08:33:10.050946+00:00",
+      "source_captured_at": "2026-10-23T08:33:10.050928+00:00",
+      "announced_at": null,
+      "accounting_eligible": false,
+      "historical_signal_eligible": false,
+      "fields": {
+        "stage": {
+          "value": "ISSUER_REPORTED_CLOSING_COMPLETED",
+          "unit": "TEXT",
+          "date_role": "SOURCE_ONLY_NOT_ENTITLEMENT",
+          "proofs": [
+            {
+              "source_id": "esun-issuer-closing-completed-20260902",
+              "locator": "HTML l-news only; date and body paragraphs 1-3",
+              "native_evidence_sha256": "afef2d9aadf88b98cbddce7807a2b9c5301c375f272850078dba3215f7fcf92a",
+              "normalized_value": "ISSUER_REPORTED_CLOSING_COMPLETED"
+            }
+          ],
+          "qualification": "SOURCE_FACT_NOT_FINAL_LEDGER"
+        },
+        "page_display_date": {
+          "value": "2026-09-02",
+          "unit": "ISO_DATE",
+          "date_role": "PAGE_DISPLAY_DATE_NOT_EFFECTIVE",
+          "proofs": [
+            {
+              "source_id": "esun-issuer-closing-completed-20260902",
+              "locator": "HTML l-news only; date and body paragraphs 1-3",
+              "native_evidence_sha256": "afef2d9aadf88b98cbddce7807a2b9c5301c375f272850078dba3215f7fcf92a",
+              "normalized_value": "2026-09-02"
+            }
+          ],
+          "qualification": "SOURCE_FACT_NOT_FINAL_LEDGER"
+        },
+        "body_day_text": {
+          "value": "玉山金控今(1)日完成與三商壽之股權交割程序",
+          "unit": "TEXT",
+          "date_role": "SOURCE_ONLY_NOT_ENTITLEMENT",
+          "proofs": [
+            {
+              "source_id": "esun-issuer-closing-completed-20260902",
+              "locator": "HTML l-news only; date and body paragraphs 1-3",
+              "native_evidence_sha256": "afef2d9aadf88b98cbddce7807a2b9c5301c375f272850078dba3215f7fcf92a",
+              "normalized_value": "玉山金控今(1)日完成與三商壽之股權交割程序"
+            }
+          ],
+          "qualification": "SOURCE_FACT_NOT_FINAL_LEDGER"
+        },
+        "date_conflict": {
+          "value": true,
+          "unit": "BOOLEAN",
+          "date_role": "SOURCE_ONLY_NOT_ENTITLEMENT",
+          "proofs": [
+            {
+              "source_id": "esun-issuer-closing-completed-20260902",
+              "locator": "HTML l-news only; date and body paragraphs 1-3",
+              "native_evidence_sha256": "afef2d9aadf88b98cbddce7807a2b9c5301c375f272850078dba3215f7fcf92a",
+              "normalized_value": true
+            }
+          ],
+          "qualification": "SOURCE_FACT_NOT_FINAL_LEDGER"
+        },
+        "canonical_effective_at": {
+          "value": null,
+          "unit": "ISO_DATE",
+          "date_role": "DATE_CONFLICT_UNRESOLVED",
+          "proofs": [],
+          "qualification": "SOURCE_FACT_NOT_FINAL_LEDGER"
+        },
+        "actual_issued_shares": {
+          "value": null,
+          "unit": "SHARES",
+          "date_role": "SOURCE_ONLY_NOT_ENTITLEMENT",
+          "proofs": [],
+          "qualification": "SOURCE_FACT_NOT_FINAL_LEDGER"
+        },
+        "existing_2884_entitlement": {
+          "value": null,
+          "unit": "SHARES_PER_OLD_SHARE",
+          "date_role": "SOURCE_ONLY_NOT_ENTITLEMENT",
+          "proofs": [],
+          "qualification": "SOURCE_FACT_NOT_FINAL_LEDGER"
+        },
+        "existing_2884_impact": {
+          "value": null,
+          "unit": "TEXT",
+          "date_role": "SOURCE_ONLY_NOT_ENTITLEMENT",
+          "proofs": [],
+          "qualification": "SOURCE_FACT_NOT_FINAL_LEDGER"
+        },
+        "board_participation_amount": {
+          "value": "160",
+          "unit": "HUNDRED_MILLION_TWD",
+          "date_role": "BOARD_APPROVAL_NOT_PAYMENT",
+          "proofs": [
+            {
+              "source_id": "esun-issuer-closing-completed-20260902",
+              "locator": "HTML l-news only; date and body paragraphs 1-3",
+              "native_evidence_sha256": "afef2d9aadf88b98cbddce7807a2b9c5301c375f272850078dba3215f7fcf92a",
+              "normalized_value": "160"
+            }
+          ],
+          "qualification": "SOURCE_FACT_NOT_FINAL_LEDGER"
+        },
+        "capital_increase_stage": {
+          "value": "BOARD_APPROVED_PARTICIPATION_ONLY",
+          "unit": "TEXT",
+          "date_role": "SOURCE_ONLY_NOT_ENTITLEMENT",
+          "proofs": [
+            {
+              "source_id": "esun-issuer-closing-completed-20260902",
+              "locator": "HTML l-news only; date and body paragraphs 1-3",
+              "native_evidence_sha256": "afef2d9aadf88b98cbddce7807a2b9c5301c375f272850078dba3215f7fcf92a",
+              "normalized_value": "BOARD_APPROVED_PARTICIPATION_ONLY"
+            }
+          ],
+          "qualification": "SOURCE_FACT_NOT_FINAL_LEDGER"
+        },
+        "capital_increase_paid": {
+          "value": null,
+          "unit": "TWD",
+          "date_role": "SOURCE_ONLY_NOT_ENTITLEMENT",
+          "proofs": [],
+          "qualification": "SOURCE_FACT_NOT_FINAL_LEDGER"
+        },
+        "protected_recipient": {
+          "value": "SANSHANG_EXISTING_POLICYHOLDERS_NOT_2884_SHAREHOLDERS",
+          "unit": "TEXT",
+          "date_role": "SOURCE_ONLY_NOT_ENTITLEMENT",
+          "proofs": [
+            {
+              "source_id": "esun-issuer-closing-completed-20260902",
+              "locator": "HTML l-news only; date and body paragraphs 1-3",
+              "native_evidence_sha256": "afef2d9aadf88b98cbddce7807a2b9c5301c375f272850078dba3215f7fcf92a",
+              "normalized_value": "SANSHANG_EXISTING_POLICYHOLDERS_NOT_2884_SHAREHOLDERS"
+            }
+          ],
+          "qualification": "SOURCE_FACT_NOT_FINAL_LEDGER"
+        }
+      },
+      "id": "sha256:13eeff307fe91b5dfa229c907568c2a8155fb43a4c7014b420a7a0aa8093e77c"
+    },
+    {
+      "family": "source-followup:TREASURY_CANCELLATION_MONTH_REPORTED:1101",
+      "issuer_code": "1101",
+      "entitled_old_code": "ISSUER_TREASURY_NOT_PRO_RATA_HOLDERS",
+      "old_instrument": "1101_ISSUER_TREASURY_SHARES",
+      "action_type": "TREASURY_CANCELLATION_MONTH_REPORTED",
+      "source_ids": [
+        "tcc-2026-q2-consolidated-report"
+      ],
+      "observed_at": "2026-10-23T08:33:10.538392+00:00",
+      "source_captured_at": "2026-10-23T08:33:10.538370+00:00",
+      "announced_at": null,
+      "accounting_eligible": false,
+      "historical_signal_eligible": false,
+      "fields": {
+        "cancellation_month": {
+          "value": "2026-01",
+          "unit": "ISO_MONTH",
+          "date_role": "CANCELLATION_MONTH_NOT_EXACT_DAY",
+          "proofs": [
+            {
+              "source_id": "tcc-2026-q2-consolidated-report",
+              "locator": "PDF pages 52 and 57; one cancellation observation",
+              "native_evidence_sha256": "54327224bcffb6765a0a2077cf9e0a9ad6df11aa48cb6f0ef473d38558521927",
+              "normalized_value": "2026-01"
+            }
+          ],
+          "qualification": "SOURCE_FACT_NOT_FINAL_LEDGER"
+        },
+        "cancellation_quantity": {
+          "value": "28000",
+          "unit": "THOUSAND_SHARES",
+          "date_role": "SOURCE_ONLY_NOT_ENTITLEMENT",
+          "proofs": [
+            {
+              "source_id": "tcc-2026-q2-consolidated-report",
+              "locator": "PDF pages 52 and 57; one cancellation observation",
+              "native_evidence_sha256": "54327224bcffb6765a0a2077cf9e0a9ad6df11aa48cb6f0ef473d38558521927",
+              "normalized_value": "28000"
+            }
+          ],
+          "qualification": "SOURCE_FACT_NOT_FINAL_LEDGER"
+        },
+        "exact_effective_date": {
+          "value": null,
+          "unit": "ISO_DATE",
+          "date_role": "SOURCE_ONLY_NOT_ENTITLEMENT",
+          "proofs": [],
+          "qualification": "SOURCE_FACT_NOT_FINAL_LEDGER"
+        },
+        "holder_conversion_ratio": {
+          "value": null,
+          "unit": "SHARES_PER_OLD_SHARE",
+          "date_role": "SOURCE_ONLY_NOT_ENTITLEMENT",
+          "proofs": [],
+          "qualification": "SOURCE_FACT_NOT_FINAL_LEDGER"
+        },
+        "holder_cashflow": {
+          "value": null,
+          "unit": "TWD",
+          "date_role": "SOURCE_ONLY_NOT_ENTITLEMENT",
+          "proofs": [],
+          "qualification": "SOURCE_FACT_NOT_FINAL_LEDGER"
+        },
+        "treasury_opening": {
+          "value": "58000",
+          "unit": "THOUSAND_SHARES",
+          "date_role": "HALF_YEAR_OPENING_BALANCE_NOT_EVENT",
+          "proofs": [
+            {
+              "source_id": "tcc-2026-q2-consolidated-report",
+              "locator": "PDF pages 52 and 57; one cancellation observation",
+              "native_evidence_sha256": "54327224bcffb6765a0a2077cf9e0a9ad6df11aa48cb6f0ef473d38558521927",
+              "normalized_value": "58000"
+            }
+          ],
+          "qualification": "SOURCE_FACT_NOT_FINAL_LEDGER"
+        },
+        "treasury_cancelled": {
+          "value": "28000",
+          "unit": "THOUSAND_SHARES",
+          "date_role": "HALF_YEAR_MOVEMENT_SAME_CANCELLATION_NOT_NEW_EVENT",
+          "proofs": [
+            {
+              "source_id": "tcc-2026-q2-consolidated-report",
+              "locator": "PDF pages 52 and 57; one cancellation observation",
+              "native_evidence_sha256": "54327224bcffb6765a0a2077cf9e0a9ad6df11aa48cb6f0ef473d38558521927",
+              "normalized_value": "28000"
+            }
+          ],
+          "qualification": "SOURCE_FACT_NOT_FINAL_LEDGER"
+        },
+        "treasury_closing": {
+          "value": "30000",
+          "unit": "THOUSAND_SHARES",
+          "date_role": "HALF_YEAR_CLOSING_BALANCE_NOT_EVENT",
+          "proofs": [
+            {
+              "source_id": "tcc-2026-q2-consolidated-report",
+              "locator": "PDF pages 52 and 57; one cancellation observation",
+              "native_evidence_sha256": "54327224bcffb6765a0a2077cf9e0a9ad6df11aa48cb6f0ef473d38558521927",
+              "normalized_value": "30000"
+            }
+          ],
+          "qualification": "SOURCE_FACT_NOT_FINAL_LEDGER"
+        }
+      },
+      "id": "sha256:2416ebd2dd3f52971a48df9af53ab491393797fc0aa3220e29b81871972a9b89"
+    },
+    {
+      "family": "source-followup:FINANCIAL_REPORT_RESOLUTION_CORROBORATION:1101",
+      "issuer_code": "1101",
+      "entitled_old_code": "1101",
+      "old_instrument": "1101_ORDINARY_OLD_SHARES",
+      "action_type": "FINANCIAL_REPORT_RESOLUTION_CORROBORATION",
+      "source_ids": [
+        "tcc-2026-q2-consolidated-report"
+      ],
+      "observed_at": "2026-10-23T08:33:10.538392+00:00",
+      "source_captured_at": "2026-10-23T08:33:10.538370+00:00",
+      "announced_at": null,
+      "accounting_eligible": false,
+      "historical_signal_eligible": false,
+      "fields": {
+        "approved_cash_per_share": {
+          "value": "0.8",
+          "unit": "TWD_PER_SHARE",
+          "date_role": "APPROVED_NOT_FINAL_ADJUSTED",
+          "proofs": [
+            {
+              "source_id": "tcc-2026-q2-consolidated-report",
+              "locator": "PDF page 55; p54 balances not granular payout tax source; p7 scanned table viewed",
+              "native_evidence_sha256": "54327224bcffb6765a0a2077cf9e0a9ad6df11aa48cb6f0ef473d38558521927",
+              "normalized_value": "0.8"
+            }
+          ],
+          "qualification": "SOURCE_FACT_NOT_FINAL_LEDGER"
+        },
+        "report_total": {
+          "value": "5994545",
+          "unit": "THOUSAND_TWD",
+          "date_role": "PUBLISHED_THOUSAND_TWD_PRECISION_NOT_REPLACEMENT",
+          "proofs": [
+            {
+              "source_id": "tcc-2026-q2-consolidated-report",
+              "locator": "PDF page 55; p54 balances not granular payout tax source; p7 scanned table viewed",
+              "native_evidence_sha256": "54327224bcffb6765a0a2077cf9e0a9ad6df11aa48cb6f0ef473d38558521927",
+              "normalized_value": "5994545"
+            }
+          ],
+          "qualification": "SOURCE_FACT_NOT_FINAL_LEDGER"
+        },
+        "final_adjusted_per_share": {
+          "value": null,
+          "unit": "TWD_PER_SHARE",
+          "date_role": "SOURCE_ONLY_NOT_ENTITLEMENT",
+          "proofs": [],
+          "qualification": "SOURCE_FACT_NOT_FINAL_LEDGER"
+        },
+        "tax_origin_subtype": {
+          "value": null,
+          "unit": "TEXT",
+          "date_role": "SOURCE_ONLY_NOT_ENTITLEMENT",
+          "proofs": [],
+          "qualification": "SOURCE_FACT_NOT_FINAL_LEDGER"
+        },
+        "personal_net_cash": {
+          "value": null,
+          "unit": "TWD",
+          "date_role": "SOURCE_ONLY_NOT_ENTITLEMENT",
+          "proofs": [],
+          "qualification": "SOURCE_FACT_NOT_FINAL_LEDGER"
+        },
+        "actual_investor_receipt": {
+          "value": null,
+          "unit": "TWD",
+          "date_role": "SOURCE_ONLY_NOT_ENTITLEMENT",
+          "proofs": [],
+          "qualification": "SOURCE_FACT_NOT_FINAL_LEDGER"
+        },
+        "native_page7_text_empty": {
+          "value": true,
+          "unit": "BOOLEAN",
+          "date_role": "EXTRACTION_STATUS_NOT_PAGE_ABSENCE",
+          "proofs": [
+            {
+              "source_id": "tcc-2026-q2-consolidated-report",
+              "locator": "PDF page 55; p54 balances not granular payout tax source; p7 scanned table viewed",
+              "native_evidence_sha256": "54327224bcffb6765a0a2077cf9e0a9ad6df11aa48cb6f0ef473d38558521927",
+              "normalized_value": true
+            }
+          ],
+          "qualification": "SOURCE_FACT_NOT_FINAL_LEDGER"
+        }
+      },
+      "id": "sha256:956db872b19ea395e3bdfe8baaba8899fe66bcd3bac66b3377c6abed141a91d7"
+    }
+  ],
+  "historical_signal_eligible": false,
+  "primary_pressure_id": null,
+  "policy_authorized": false,
+  "id": "sha256:49528167bede030b29359a77abebd3f8947c88e58aeaaeede62c42a76465cc89"
+}

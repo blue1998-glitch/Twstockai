@@ -1,0 +1,40 @@
+{
+  "generated_at": "2026-10-17T13:52:42.335874+00:00",
+  "producer": "attempt-evidence-candidate/0.1",
+  "scope": "ENGINEERING_SYNTHETIC_CASES_ONLY",
+  "new_unit_tests": {
+    "command": "python3 -m unittest discover -s tests -p test_attempt_evidence.py -v",
+    "executed": true,
+    "passed": 24,
+    "failed": 0
+  },
+  "existing_candidate_regression": {
+    "command": "python3 -m unittest discover -s tests -p test_product_candidate.py -v",
+    "executed": true,
+    "passed": 16,
+    "failed": 0
+  },
+  "cli": {
+    "command": "python3 -m product_candidate.attempt_evidence product_candidate/fixtures/attempt_evidence_v01.json",
+    "exit_code": 0,
+    "frames": 7,
+    "events": 12,
+    "readback_matches_api": true,
+    "output_sha256": "8134c7cfeba97b7fd07cda953034321039e9824ad387b6c0747c089aef89a654"
+  },
+  "checksums": {
+    "product_candidate/attempt_evidence.py": "e69ceb0472f33098b01ce25827cd9d5108260b8bb9eabce9018ab8c551fa91af",
+    "product_candidate/fixtures/attempt_evidence_v01.json": "431fb02d2e80726268b979c684384c1367c55e3a5dcac34e6bac696ff4c41ee2",
+    "tests/test_attempt_evidence.py": "4ff6c20ea9fb80c8bd0d4374e7527f9d5f56b9ca73e3db41f3fe3a46c93041e3"
+  },
+  "browser": "NOT_TESTED_THIS_CHANGE",
+  "android": "NOT_TESTED",
+  "real_intraday_data": "NOT_AVAILABLE",
+  "classification_quality": "NOT_VALIDATED",
+  "action_qualification": "NOT_EVALUATED",
+  "calibrated_success_probability": "NOT_ESTABLISHED",
+  "trend_classifier": "NOT_IMPLEMENTED",
+  "candidate_ui_integration": "NOT_IMPLEMENTED",
+  "historical_full_suite_rerun": false,
+  "original_engines_or_stores_changed": false
+}

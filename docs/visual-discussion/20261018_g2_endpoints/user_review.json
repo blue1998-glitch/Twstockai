@@ -1,0 +1,100 @@
+{
+  "schema_version": "user-reviewed-g2-region/0.2",
+  "review_date": "2026-10-18",
+  "review_timezone": "Asia/Taipei",
+  "reviewed_at": null,
+  "review_timestamp_note": "Exact timestamp of endpoint message unavailable; no invented time.",
+  "review_kind": "LATER_USER_MANUAL_REVIEW_NOT_ASOF_AUTOMATIC_SIGNAL",
+  "user_quote": "起點：2023-01-16；開36.55 高36.90 低36.15 收36.50；量34,494,589股\n終點：2023-08-16；開36.55 高36.60 低36.00 收36.05；量30,022,247股",
+  "code": "1101",
+  "price_mode": "RAW_CANDIDATE",
+  "analysis_as_of": "2026-10-16",
+  "source_binding": {
+    "source_id": "sha256:adea7f78a97d18b6b51fbba103e08c0db33dc6fb1eb613b960b0aabe213b534b",
+    "frame_id": "sha256:b7215491c924570f3b40594fbd859f4b5c2532b247b62b6e625a8fcb66964f70",
+    "chart_base": "sha256:50e560b77640da3b7d000c0db67fc73a3f5b69d0bd744871ccb03483f8ec115e",
+    "source_export_sha256": "369947bad71ab3fdff894c21511ebf242e1ddb12b59822d02ed93f0580bd2796"
+  },
+  "supersedes": {
+    "path": "docs/visual-discussion/20261018_g2_coordinate/user_review.json",
+    "scope": "Approximate region dates only; previous quotation, Darvas reference, evidence and tool remain historical."
+  },
+  "representative": {
+    "id": "G2",
+    "source_date": "2023-05-02",
+    "raw_high": "40.25",
+    "role": "USER_SELECTED_REGION_REPRESENTATIVE_NOT_AUTOMATIC_SIGNAL"
+  },
+  "region": {
+    "exact_start_date": "2023-01-16",
+    "exact_end_date": "2023-08-16",
+    "precision": "EXACT_DATES_USER_REPORTED_SOURCE_VERIFIED",
+    "start": {
+      "date": "2023-01-16",
+      "open": "36.55",
+      "high": "36.90",
+      "low": "36.15",
+      "close": "36.50",
+      "volume_shares_scaled": "34494589"
+    },
+    "end": {
+      "date": "2023-08-16",
+      "open": "36.55",
+      "high": "36.60",
+      "low": "36.00",
+      "close": "36.05",
+      "volume_shares_scaled": "30022247"
+    },
+    "price_bounds": null,
+    "total_volume": null,
+    "volume_measure_rule": null,
+    "automatic_region_split": null
+  },
+  "verification": {
+    "kind": "DIRECT_LOCAL_ORIGINAL_FILE_RECHECK",
+    "report": "endpoint_source_verification.json",
+    "endpoint_field_checks": 10,
+    "all_equal": true,
+    "new_mobile_json": false
+  },
+  "coordinate_tool_observation": {
+    "user_supplied_exact_endpoint_text": true,
+    "direct_android_observation_this_turn": false,
+    "full_tool_acceptance": "NOT_ESTABLISHED_BY_ENDPOINT_REPORT_ALONE"
+  },
+  "unknown_rules": [
+    "PRICE_BOUNDS",
+    "AUTOMATIC_REGION_SPLIT",
+    "REPRESENTATIVE_SELECTION_FORMULA",
+    "BOX_CONFIRMATION_PROCEDURE",
+    "VOLUME_EXPANSION_CRITERIA",
+    "FLATNESS_AND_SETTLEMENT_THRESHOLDS",
+    "STRENGTH_DECAY_LIFECYCLE",
+    "REGION_VOLUME_MEASURE_AND_INTERPRETATION"
+  ],
+  "external_reference": {
+    "author": "Nicolas Darvas",
+    "user_book_title": "我如何在股市賺到200萬美元",
+    "english_title": "How I Made $2,000,000 in the Stock Market",
+    "topic": "Box Theory",
+    "relationship": "USER_SAYS_CONCEPT_SIMILAR_NOT_ALL_RULES_ADOPTED",
+    "read_status": "PUBLISHER_METADATA_AND_BOOK_PREVIEW_CONTENTS_AND_INITIAL_PREVIEW_READ_BOX_CHAPTER_BODY_NOT_FULLY_READ",
+    "sources": [
+      {
+        "url": "https://www.simonandschuster.com/books/How-I-Made-%242-000-000-in-the-Stock-Market/Nicolas-Darvas/9798880905577",
+        "scope": "PUBLISHER_AUTHOR_TITLE_METADATA"
+      },
+      {
+        "url": "https://www.everand.com/book/1015089169/How-I-Made-2-000-000-in-the-Stock-Market",
+        "scope": "BOOK_PREVIEW_CONTENTS_CHAPTER_FOUR_AND_INITIAL_PREVIEW"
+      }
+    ],
+    "automatic_strategy_changes_authorized": false
+  },
+  "status": "EXACT_G2_ENDPOINTS_REPORTED_AND_SOURCE_VERIFIED",
+  "action_qualification": "NOT_EVALUATED",
+  "classification_quality": "NOT_VALIDATED",
+  "corporate_action_comparability": "NOT_FULLY_VERIFIED",
+  "full_history_high": "NOT_ESTABLISHED",
+  "product_integration": "NOT_IMPLEMENTED_THIS_TURN"
+}

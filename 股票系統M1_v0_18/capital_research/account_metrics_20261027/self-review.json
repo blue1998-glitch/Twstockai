@@ -1,0 +1,19 @@
+{
+  "original_inputs_or_oracles_changed": false,
+  "old_production_or_schemas_changed": false,
+  "account_reconstruction": false,
+  "fees_deducted_twice": false,
+  "overlapping_rounds_concatenated": false,
+  "principle": "ACCRUAL_CURVE_VS_TERMINAL_HYPOTHETICAL_EXIT_EXPLICITLY_SEPARATE",
+  "review_notes": [
+    "Original lifecycle gives stronger earlier capital gate; original expected retained.",
+    "Added original-mark equality and no trading-day stale carry after first passing batch; only six affected methods repeated.",
+    "Checkpoint/token proofs are structural checks, not ledger rerun, source authentication or strategy validation."
+  ],
+  "extra_review_topics": [
+    "VALUATION_BASIS_AND_TERMINAL_COST_SEPARATION",
+    "ORIGINAL_CAPITAL_AND_RIGHTS",
+    "EVALUATION_AVAILABILITY"
+  ],
+  "requires_user_action": false
+}

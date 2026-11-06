@@ -1,0 +1,76 @@
+{
+  "error": null,
+  "caller_before": {
+    "prec": 5,
+    "rounding": "ROUND_FLOOR",
+    "Emin": -2,
+    "Emax": 2,
+    "capitals": 0,
+    "clamp": 1,
+    "traps": {
+      "InvalidOperation": true,
+      "FloatOperation": true,
+      "DivisionByZero": true,
+      "Overflow": true,
+      "Underflow": true,
+      "Subnormal": true,
+      "Inexact": true,
+      "Rounded": true,
+      "Clamped": true
+    },
+    "flags": {
+      "InvalidOperation": false,
+      "FloatOperation": false,
+      "DivisionByZero": false,
+      "Overflow": false,
+      "Underflow": false,
+      "Subnormal": false,
+      "Inexact": true,
+      "Rounded": true,
+      "Clamped": false
+    }
+  },
+  "caller_after": {
+    "prec": 5,
+    "rounding": "ROUND_FLOOR",
+    "Emin": -2,
+    "Emax": 2,
+    "capitals": 0,
+    "clamp": 1,
+    "traps": {
+      "InvalidOperation": true,
+      "FloatOperation": true,
+      "DivisionByZero": true,
+      "Overflow": true,
+      "Underflow": true,
+      "Subnormal": true,
+      "Inexact": true,
+      "Rounded": true,
+      "Clamped": true
+    },
+    "flags": {
+      "InvalidOperation": false,
+      "FloatOperation": false,
+      "DivisionByZero": false,
+      "Overflow": false,
+      "Underflow": false,
+      "Subnormal": false,
+      "Inexact": true,
+      "Rounded": true,
+      "Clamped": false
+    }
+  },
+  "caller_context_unchanged": true,
+  "input_id": "sha256:294141f9928cf3738992c41fe790f5f309f54f738e88caf92bed7cbd054338b0",
+  "input_unchanged": true,
+  "source_version": {
+    "path": "capital_research/quantity_replay.py",
+    "bytes": 11520,
+    "sha256": "1a28743f21202dba93e43c6b762ed9435e9677f14ccca89640c297351779dcdf"
+  },
+  "actual": {
+    "path": "objects/314a9f2416fccd6f4cc8a62aa72bb5c78f3319c5710434131fa1c597c6bb25dc.json",
+    "id": "sha256:314a9f2416fccd6f4cc8a62aa72bb5c78f3319c5710434131fa1c597c6bb25dc",
+    "bytes": 548327
+  }
+}

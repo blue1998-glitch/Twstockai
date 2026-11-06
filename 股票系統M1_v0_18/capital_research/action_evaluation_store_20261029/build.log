@@ -1,0 +1,16 @@
+{'name': 'exit-B7', 'storage_status': 'SAVED_AND_READ_BACK', 'evaluation_status': 'EVALUATED', 'read_status': 'READ_ONLY', 'reasons': [], 'matched': True, 'input_unchanged': True}
+{'name': 'reduce-B3', 'storage_status': 'SAVED_AND_READ_BACK', 'evaluation_status': 'EVALUATED', 'read_status': 'READ_ONLY', 'reasons': [], 'matched': True, 'input_unchanged': True}
+{'name': 'continued-partial', 'storage_status': 'SAVED_AND_READ_BACK', 'evaluation_status': 'EVALUATED', 'read_status': 'READ_ONLY', 'reasons': [], 'matched': True, 'input_unchanged': True}
+{'name': 'partial-prefix', 'storage_status': 'SAVED_AND_READ_BACK', 'evaluation_status': 'REFUSED', 'read_status': 'READ_ONLY', 'reasons': [], 'matched': True, 'input_unchanged': True}
+{'name': 'stopped-action', 'storage_status': 'SAVED_AND_READ_BACK', 'evaluation_status': 'REFUSED', 'read_status': 'READ_ONLY', 'reasons': [], 'matched': True, 'input_unchanged': True}
+{'name': 'missing-source', 'storage_status': 'NOT_SAVED', 'evaluation_status': None, 'read_status': 'NOT_FOUND', 'reasons': ['FULL_SAVED_ACTION_SOURCE_REQUIRED'], 'matched': True, 'input_unchanged': True}
+{'name': 'wrong-input-id', 'storage_status': 'NOT_SAVED', 'evaluation_status': None, 'read_status': 'NOT_FOUND', 'reasons': ['EXPECTED_EVALUATION_INPUT_ID_CONFLICT'], 'matched': True, 'input_unchanged': True}
+{'name': 'wrong-evaluation-id', 'storage_status': 'NOT_SAVED', 'evaluation_status': None, 'read_status': 'NOT_FOUND', 'reasons': ['EXPECTED_EVALUATION_ID_CONFLICT'], 'matched': True, 'input_unchanged': True}
+{'name': 'cross-source', 'storage_status': 'NOT_SAVED', 'evaluation_status': None, 'read_status': 'NOT_FOUND', 'reasons': ['IMPORTED_METRICS_SOURCE_CONFLICT'], 'matched': True, 'input_unchanged': True}
+{'name': 'wrong-time', 'storage_status': 'NOT_SAVED', 'evaluation_status': None, 'read_status': 'NOT_FOUND', 'reasons': ['IMPORTED_METRICS_SOURCE_CONFLICT'], 'matched': True, 'input_unchanged': True}
+{'name': 'wrong-latest', 'storage_status': 'NOT_SAVED', 'evaluation_status': None, 'read_status': 'NOT_FOUND', 'reasons': ['IMPORTED_METRICS_ACCOUNT_CONFLICT'], 'matched': True, 'input_unchanged': True}
+{'name': 'missing-token', 'storage_status': 'NOT_SAVED', 'evaluation_status': None, 'read_status': 'NOT_FOUND', 'reasons': ['IMPORTED_METRICS_ACCOUNT_CONFLICT'], 'matched': True, 'input_unchanged': True}
+{'name': 'wrong-reserve', 'storage_status': 'NOT_SAVED', 'evaluation_status': None, 'read_status': 'NOT_FOUND', 'reasons': ['IMPORTED_METRICS_ACCOUNT_CONFLICT'], 'matched': True, 'input_unchanged': True}
+{'name': 'qualified', 'storage_status': 'NOT_SAVED', 'evaluation_status': None, 'read_status': 'NOT_FOUND', 'reasons': ['EVALUATION_NOT_RESEARCH_ONLY'], 'matched': True, 'input_unchanged': True}
+{'name': 'unknown-schema', 'storage_status': 'NOT_SAVED', 'evaluation_status': None, 'read_status': 'NOT_FOUND', 'reasons': ['SUPPORTED_SAVED_ACTION_EVALUATION_REQUIRED'], 'matched': True, 'input_unchanged': True}
+{'name': 'refusal-with-metrics', 'storage_status': 'NOT_SAVED', 'evaluation_status': None, 'read_status': 'NOT_FOUND', 'reasons': ['REFUSED_EVALUATION_MUST_NOT_HAVE_METRICS'], 'matched': True, 'input_unchanged': True}

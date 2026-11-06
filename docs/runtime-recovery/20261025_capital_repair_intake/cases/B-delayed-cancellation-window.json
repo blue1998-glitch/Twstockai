@@ -1,0 +1,54 @@
+{
+  "base_artifact_path": "股票系統M1_v0_18/capital_research/repair_20261025/artifacts/after/partial-cancel-chain.json",
+  "base_artifact_available": false,
+  "original_input": null,
+  "constructed_test_input": null,
+  "versions": {
+    "required_repair_version": "0.3",
+    "observed_repair_version": null,
+    "original_input_sha256": null,
+    "original_module_sha256": null,
+    "local_head": "392b94a4f29b2e53fbfc0b7bda8a3fc1d0592b25",
+    "remote_head": "6be4333d490bcccfe952c7606dffb802b76cdd5c"
+  },
+  "actual": {
+    "status": "NOT_RUN_MISSING_ORIGINAL_0_3_INPUT_AND_SOURCE",
+    "file_error": {
+      "type": "FileNotFoundError",
+      "errno": 2,
+      "missing_path": "股票系統M1_v0_18/capital_research/repair_20261025/artifacts/after/partial-cancel-chain.json",
+      "message": "[Errno 2] No such file or directory: '/workspace/Twstockai/股票系統M1_v0_18/capital_research/repair_20261025/artifacts/after/partial-cancel-chain.json'"
+    }
+  },
+  "test_methods_executed": 0,
+  "defect_reproduced": null,
+  "defect_disproved": null,
+  "oracle_modified": false,
+  "case": "B-delayed-cancellation-window",
+  "selector": "value.input.next",
+  "requested_transform": {
+    "decision_at": "2026-01-09T10:00:00+08:00",
+    "account_available_at": "2026-01-09T10:00:00+08:00",
+    "new_order_decision_at": "2026-01-09T10:00:00+08:00",
+    "submitted_at": "2026-01-09T10:01:00+08:00",
+    "deadline": "2026-01-12T16:00:00+08:00",
+    "preserve_open_observations": [
+      "2026-01-09T09:00:00+08:00",
+      "2026-01-09T09:01:00+08:00"
+    ],
+    "required_new_legal_observations_and_settlement": "2026-01-12 A/B original-compatible evidence; values unavailable and not fabricated",
+    "old_remaining_quantities": {
+      "A": 30,
+      "B": 13
+    },
+    "old_deadline": "2026-01-12",
+    "general_reserve": 100
+  },
+  "expected": {
+    "cancel_effect_not_applied_before_decision": true,
+    "uncovered_old_order_window": "REFUSE_IF_CONTINUOUS_OLD_ORDER_REPLAY_UNSUPPORTED",
+    "positive_control": "Preserve original 2026-01-08T17:00:00+08:00 cancel before 1/9 observations; NOT_RUN",
+    "reservation_release_only": true
+  },
+  "hypothesis": "STATIC_REVIEW_ONLY_REQUIRES_EXECUTION_NOT_CONFIRMED"
+}

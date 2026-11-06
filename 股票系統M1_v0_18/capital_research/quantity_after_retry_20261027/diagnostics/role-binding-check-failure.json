@@ -1,0 +1,8 @@
+{
+  "case": "wrong-incumbent-role",
+  "expected": "INCUMBENT_DIFFERS_FROM_ORIGINAL_ROLE",
+  "actual": "'edge_budget'",
+  "cause": "Evaluated alternatives omit raw edge_budget; bind raw proposal against saved job and compare only retained evaluated fields",
+  "oracle_changed": false,
+  "source_sha256": "0f1b4b725c34ba33a3dd20c2e0d6c769398c496f81f4c7c0905b2452927dd0d2"
+}

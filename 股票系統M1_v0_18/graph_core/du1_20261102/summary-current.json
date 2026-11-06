@@ -1,0 +1,62 @@
+{
+  "milestone": "M-DU1",
+  "status": "PARTIAL_REAL_NEW_SESSION_BLOCKED",
+  "engineering": "IMPLEMENTED_TARGETED_TESTS_PASS",
+  "actual": {
+    "reference_date_by_market": {
+      "TWSE": "2026-11-02",
+      "TPEX": "2026-11-02"
+    },
+    "expected_by_market": {
+      "TWSE": 1089,
+      "TPEX": 897
+    },
+    "diagnostic_terminals": 1986,
+    "new_day_applied_by_market": {
+      "TWSE": 0,
+      "TPEX": 0
+    },
+    "new_multiday_analysis_by_market": {
+      "TWSE": 0,
+      "TPEX": 0
+    },
+    "batch_not_applied_by_market": {
+      "TWSE": 1089,
+      "TPEX": 897
+    },
+    "per_stock_new_quote_quality_evaluated": false,
+    "per_stock_quality_rejection_count": null,
+    "new_searchable_charts": 0,
+    "real_new_session_verified": false,
+    "last_valid_as_of": "2026-10-30",
+    "original_1469_chart_descriptors_retained": true
+  },
+  "tests": {
+    "unique_python_methods": 27,
+    "new_methods": 18,
+    "necessary_regression_methods": 9,
+    "synthetic_browser_checks": 28,
+    "retained_real_preview_checks": 6,
+    "synthetic_exact_downloads": 16,
+    "retained_exact_downloads": 4,
+    "synthetic_not_market_samples": true
+  },
+  "private_preview": {
+    "new_batch_selection": "IMPLEMENTED_SYNTHETIC_VERIFIED",
+    "real_new_batch": "NOT_AVAILABLE_SOURCE_NOT_ACCEPTED",
+    "android_direct_url": "NOT_DEPLOYED",
+    "android_physical": "NOT_TESTED_NEW_BUILD",
+    "daily_scheduler": "NOT_ENABLED",
+    "oracle": "PAUSED"
+  },
+  "formal": {
+    "execution_qualified": false,
+    "historical_signal_eligible": false,
+    "policy_authorized": false,
+    "primary_pressure_id": null,
+    "imputed_close": null,
+    "valuation": null
+  },
+  "source_scope": "0.10_AND_ALL_PARENTS_UNCHANGED_NO_NEW_CATALOG",
+  "persistence": "UNKNOWN_OVERLAY_ONLY"
+}

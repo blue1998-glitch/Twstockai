@@ -1,0 +1,79 @@
+{
+  "status": "BLOCKED_PREPARATION_FAILED",
+  "date": "2026-10-19",
+  "repository": "blue1998-glitch/Twstockai",
+  "branch": "dev/m1-v018-chart-annotations",
+  "inspected_head": "4f1769b654b57111f72d992739f76d85a9c877db",
+  "scope": "READ_ONLY_CODE_AUDIT_AND_RESUME_RECOVERY; NO_CORE_IMPLEMENTATION",
+  "completed": [
+    "Confirmed current branch head through authenticated GitHub connector; retained all later work.",
+    "Read current root/project instructions and real source of structure.py, attempt_evidence.py and macd.py.",
+    "Retained prior Drive image corpus; did not redownload or re-review 101 originals.",
+    "Recovered unchanged bootstrap script and handoff.json into an isolated recovery staging directory."
+  ],
+  "preparation": {
+    "checkout_available": false,
+    "attempt_directory": "core-resume-20261019",
+    "command": "python3 codex/bootstrap_m1.py --hydrate-missing",
+    "exit_code": 2,
+    "stdout": "",
+    "stderr": {
+      "status": "PREPARATION_FAILED",
+      "detail": "Baseline ZIP missing or changed: M1_v0_17_01.zip",
+      "existing_work": "PRESERVED"
+    },
+    "not_a_verified_checkout_run": true,
+    "baseline_verified": false
+  },
+  "retrieval_failures": [
+    {
+      "method": "GitHub fetch_file base64",
+      "path": "M1_v0_17_01.zip",
+      "result": "No usable content returned; binary not recovered"
+    },
+    {
+      "method": "GitHub fetch git/blobs",
+      "result": "HTTPError: 400: GitHub Fetch only accepts UTF-8 text. (Response: None)"
+    },
+    {
+      "method": "GitHub fetch_blob",
+      "result": "UnicodeDecodeError: 'utf-8' codec can't decode byte 0x98 in position 14: invalid start byte"
+    }
+  ],
+  "source_findings": [
+    {
+      "path": "股票系統M1_v0_18/src/structure.py",
+      "version": "structure-0.3-research",
+      "observation": "Existing ATR/reversal research candidates and pivot-derived zones with research configuration; not latest-close multiscale box recognition or approved meaningful pressure hierarchy."
+    },
+    {
+      "path": "股票系統M1_v0_18/product_candidate/attempt_evidence.py",
+      "version": "attempt-evidence-candidate/0.1",
+      "observation": "evaluate requires explicit near_high and left_zone caller references; outputs EXPLICIT_CALLER_SELECTION_NOT_AUTO_RECOGNIZED. It does not select important boxes."
+    },
+    {
+      "path": "股票系統M1_v0_18/product_candidate/macd.py",
+      "version": "macd-12-26-9-sma-seed/0.1",
+      "observation": "Reusable independent numeric candidate, not an accepted strategy."
+    }
+  ],
+  "not_completed": [
+    "Working source checkout and verified852-file baseline",
+    "New automatic multiscale recognition core",
+    "New numeric/prefix/counterexample tests",
+    "New integrated zoomable result chart",
+    "Recognition accuracy, Android or core-usefulness acceptance"
+  ],
+  "no_new_python_or_chromium_suite_run": true,
+  "core_status": "NOT_ESTABLISHED",
+  "classification_quality": "NOT_VALIDATED",
+  "action_qualification": "NOT_EVALUATED",
+  "next_mode": "Codex",
+  "immutable_previous_image_checkpoint": "M1_V019_IMAGE_LEARNING_HANDOFF.md",
+  "restrictions": [
+    "No subagents/main/deployment/payments/trades/messages",
+    "Do not retry or bypass file:// policy",
+    "Do not adopt teacher thresholds, manual case answers or display envelopes as approved automatic strategy",
+    "Do not expose private image corpus on public Git"
+  ]
+}

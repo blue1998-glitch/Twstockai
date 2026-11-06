@@ -1,0 +1,18 @@
+明示合成研究操作（不交易）
+操作狀態：READ_ONLY
+操作ID：demo-old-trigger
+分階段保存：{"request": "READ_ONLY", "generation": "READ_ONLY", "choice": "READ_ONLY", "result": "READ_ONLY"}
+已知階段結果：{"generation_status": "GENERATED", "choice_status": "REFUSED", "check_status": null}
+理由：[]
+保存結果：CHOICE_REFUSED
+來源核對：None
+候選互斥；只有明示選擇，沒有最佳比例或自動勝者。
+已拒絕本次明示選擇；沒有選中或改選其他候選。
+A-zero | CURRENTLY_FEASIBLE | {"A": "60", "B": "25", "C": "2"}
+quantity:sha256:fee3496efe33cc6e54d3f830d34194d05f181dd804b44f04599ccc1247728f0f | REJECTED | {"A": "60", "B": "26", "C": "2"}
+quantity:sha256:17192457e6a7a0fd92ace7446da48bd586e977e682130a5114612b3359a26399 | CURRENTLY_FEASIBLE | {"A": "59", "B": "25", "C": "2"}
+quantity:sha256:00df23c08314496f7cd7671f964c2cd94ca85b83b941917176e08aba957255bb | REJECTED | {"A": "59", "B": "26", "C": "2"}
+quantity:sha256:9ff3fe930645fb009ecee92492c365909067f035fc8fe0d69831ae90faf86f7b | CURRENTLY_FEASIBLE | {"A": "0", "B": "25", "C": "2"}
+quantity:sha256:46303bd0fbd04ff5d7f7118d98d3c96364da833e8524e655c8404320871c99b1 | REJECTED | {"A": "0", "B": "63", "C": "2"}
+UNKNOWN不是保存成功；已存在ID只能明示READ，不自動重跑或修復。
+等待交割只記條件意圖；目標不是持股或成交。正式資格全部false，主壓力null。

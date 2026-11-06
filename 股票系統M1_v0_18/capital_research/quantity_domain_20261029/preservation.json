@@ -1,0 +1,71 @@
+{
+  "baseline": "3dfe5b222f47f0798876687808eac98daaabe6f7",
+  "workspace": "/workspace/Twstockai",
+  "branch": "dev/m1-v018-chart-annotations",
+  "verification": {
+    "frozen": 71,
+    "protected": 12,
+    "source_originals": 12,
+    "archived": 1,
+    "final_sources": 4
+  },
+  "final_actual_stage": "final",
+  "initial_actual_stage": "actual",
+  "initial_helper_archived": true,
+  "tests": {
+    "unique_methods": 8,
+    "final_passed": 8,
+    "failed": 0,
+    "batches_not_summed": true,
+    "old_full_suites": 0,
+    "real_producers": 0,
+    "market_replays": 0,
+    "log": {
+      "path": "股票系統M1_v0_18/capital_research/quantity_domain_20261029/tests-final.log",
+      "bytes": 1718,
+      "sha256": "ecf46310e94678cb48e7a0a003baa8724c62ff1fb731b6c1dc50f83cc151be76"
+    }
+  },
+  "cases": {
+    "original_frozen": 33,
+    "original_expected_status_matches": 32,
+    "diagnosed_invalid_fixture": [
+      "existing-B3-add2"
+    ],
+    "original_oracle_and_refusal_preserved": true,
+    "separate_corrected_B3_positive": true,
+    "original_settled_checkpoint_control": true,
+    "unknown_time_controls": 2
+  },
+  "self_review": {
+    "single_existing_generator_extended": true,
+    "delta_units_not_holding_units": true,
+    "all_endpoints_gated": true,
+    "legal_grid_count_before_limit": true,
+    "empty_grid_not_strategy_failure": true,
+    "invalid_full_endpoint_not_rounded_or_claimed_optimal": true,
+    "v1_v2_envelopes_exact": true,
+    "unit_one_reuses_financial_and_batch_rules": true,
+    "origin_rights_reserve_latest_tokens_preserved": true,
+    "context_and_future_isolation_preserved": true,
+    "no_simulate_orders_or_fills": true,
+    "continuation_uses_existing_ledger_validation": true
+  },
+  "limits": [
+    "SYNTHETIC_ONLY",
+    "UNIT_AWARE_FULL_SOLVER_NOT_IMPLEMENTED",
+    "NO_EXECUTION_OR_MARKET_ROUTE",
+    "NO_MIXED_CHANNEL_MODEL",
+    "NO_SOURCE_AUTHENTICATION"
+  ],
+  "sensitive_review": {
+    "delivery_files_checked": true,
+    "credential_findings": 0,
+    "private_originals_added": 0,
+    "unrelated_files_added": 0
+  },
+  "formal_qualifications_remain_false": true,
+  "primary_pressure_id": null,
+  "real_total_net_qualified_cases": 0,
+  "manual_action_required": false
+}

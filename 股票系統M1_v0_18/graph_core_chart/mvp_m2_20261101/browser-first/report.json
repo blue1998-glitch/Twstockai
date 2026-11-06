@@ -1,0 +1,64 @@
+{
+  "status": "FAIL",
+  "error": "locator.click: Error: strict mode violation: locator('[data-box-id=\"sha256:61ab2d45e906ccd894e5a1494d2ba19af99d16b558f263f25aa2fd6a64664735\"]') resolved to 2 elements:\n    1) <button title=\"sha256:61ab2d45e906ccd894e5a1494d2ba19af99d16b558f263f25aa2fd6a64664735\" data-box-id=\"sha256:61ab2d45e906ccd894e5a1494d2ba19af99d16b558f263f25aa2fd6a64664735\">977.00～1015.00｜0.03｜64664735</button> aka getByRole('button', { name: '～1015.00｜0.03｜64664735' })\n    2) <div class=\"candidate\" data-box-id=\"sha256:61ab2d45e906ccd894e5a1494d2ba19af99d16b558f263f25aa2fd6a64664735\">…</div> aka getByText('B91｜尺度0.032026-09-03～2026-09-')\n\nCall log:\n\u001b[2m  - waiting for locator('[data-box-id=\"sha256:61ab2d45e906ccd894e5a1494d2ba19af99d16b558f263f25aa2fd6a64664735\"]')\u001b[22m\n\n    at /workspace/Twstockai/股票系統M1_v0_18/graph_core_chart/mvp_m2_20261101/test_mobile.cjs:39:66",
+  "checks": [
+    {
+      "name": "fixed-date comparison toggle without changing original selection or overflow",
+      "size": {
+        "width": 1280,
+        "height": 900
+      },
+      "status": "PASS"
+    },
+    {
+      "name": "2884 null,6488 all8 ties,original volume precision and formal limits visible",
+      "size": {
+        "width": 1280,
+        "height": 900
+      },
+      "status": "PASS"
+    },
+    {
+      "name": "confirmed dates/prices and all pending extrema visibly match saved per-stock evidence",
+      "size": {
+        "width": 1280,
+        "height": 900
+      },
+      "status": "PASS"
+    },
+    {
+      "name": "stock jump/shared cursor/zoom/exact unchanged JSON 1101",
+      "size": {
+        "width": 1280,
+        "height": 900
+      },
+      "status": "PASS"
+    },
+    {
+      "name": "stock jump/shared cursor/zoom/exact unchanged JSON 2884",
+      "size": {
+        "width": 1280,
+        "height": 900
+      },
+      "status": "PASS"
+    },
+    {
+      "name": "stock jump/shared cursor/zoom/exact unchanged JSON 6488",
+      "size": {
+        "width": 1280,
+        "height": 900
+      },
+      "status": "PASS"
+    },
+    {
+      "name": "stock jump/shared cursor/zoom/exact unchanged JSON 8069",
+      "size": {
+        "width": 1280,
+        "height": 900
+      },
+      "status": "PASS"
+    }
+  ],
+  "errors": [],
+  "external": []
+}

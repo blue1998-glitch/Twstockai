@@ -1,0 +1,889 @@
+{
+  "2884-reviewed-cutoff": {
+    "schema": "m1-observation-branch-research/0.1",
+    "code": "2884",
+    "start": "2026-09-17",
+    "data_cutoff": "2026-10-07",
+    "source_records": 13,
+    "bars_fingerprint": "sha256:7c42b601a1cff05a7e18cf7f0a0e0f6967293167b220aa5a63991341721128e1",
+    "events": [
+      {
+        "kind": "FIRST_CLOSE_OUTSIDE_OBSERVED_FRAME",
+        "code": "2884",
+        "observation_start": "2026-09-17",
+        "known_on_saved_bar": "2026-09-30",
+        "pending": {
+          "direction": "DOWN",
+          "lower": "44.90",
+          "upper": "47.35",
+          "frame_start": "2026-09-17",
+          "frame_observed_end": "2026-09-29",
+          "frame_records": 7,
+          "departure_date": "2026-09-30",
+          "frame_bars_fingerprint": "sha256:aba09f87820cb404463b2d01cd19e0daee0389dcedac329f7b8d3ccd2c30e036",
+          "formal_price_bounds": null
+        },
+        "current_bar": {
+          "close": "44.85",
+          "date": "2026-09-30",
+          "high": "45.35",
+          "low": "44.75",
+          "open": "45.20",
+          "volume_shares_scaled": "30746754"
+        },
+        "event_id": "sha256:f807c501441be1b8de80f51b3cace54a6b2ebab54085876df71aabe8707e4faa"
+      },
+      {
+        "kind": "RETURNED_INSIDE_FROZEN_FRAME",
+        "code": "2884",
+        "observation_start": "2026-09-17",
+        "known_on_saved_bar": "2026-10-01",
+        "previous_departure": {
+          "direction": "DOWN",
+          "lower": "44.90",
+          "upper": "47.35",
+          "frame_start": "2026-09-17",
+          "frame_observed_end": "2026-09-29",
+          "frame_records": 7,
+          "departure_date": "2026-09-30",
+          "frame_bars_fingerprint": "sha256:aba09f87820cb404463b2d01cd19e0daee0389dcedac329f7b8d3ccd2c30e036",
+          "formal_price_bounds": null
+        },
+        "current_bar": {
+          "close": "45.35",
+          "date": "2026-10-01",
+          "high": "45.45",
+          "low": "44.20",
+          "open": "44.80",
+          "volume_shares_scaled": "29162352"
+        },
+        "qualification": "CLOSE_RETURN_EVENT_NOT_INTRADAY_ORDER_OR_FORMAL_REPAIR",
+        "event_id": "sha256:253fcaa5ba8bc1a21b9600cf3b9cc07907850fe210f7a688f95dc128b98ff9c1"
+      }
+    ],
+    "branch_proposals": [],
+    "continue_observation": {
+      "start": "2026-09-17",
+      "through": "2026-10-07",
+      "records": 13,
+      "observed_low": "44.20",
+      "observed_high": "47.35"
+    },
+    "pending_departure": null,
+    "crossed_listed_missing_dates": [],
+    "formal_start": null,
+    "formal_end": null,
+    "formal_membership": null,
+    "selected_branch": null,
+    "primary_pressure_id": null,
+    "historical_selection_time": null,
+    "historical_signal_eligible": false,
+    "classification_quality": "NOT_VALIDATED",
+    "action_qualification": "NOT_EVALUATED",
+    "research_output_id": "sha256:ef04d2d92fce06682b12cc2b7cf7d58c4a72ac4a0b2401dd74b6fd69149acf38"
+  },
+  "2884-later-rise": {
+    "schema": "m1-observation-branch-research/0.1",
+    "code": "2884",
+    "start": "2026-09-17",
+    "data_cutoff": "2026-10-16",
+    "source_records": 19,
+    "bars_fingerprint": "sha256:6ef9e4c5fbdd3e0250a82de807a9d71076a5b4f035fb936ea530a03b2eecfcd0",
+    "events": [
+      {
+        "kind": "FIRST_CLOSE_OUTSIDE_OBSERVED_FRAME",
+        "code": "2884",
+        "observation_start": "2026-09-17",
+        "known_on_saved_bar": "2026-09-30",
+        "pending": {
+          "direction": "DOWN",
+          "lower": "44.90",
+          "upper": "47.35",
+          "frame_start": "2026-09-17",
+          "frame_observed_end": "2026-09-29",
+          "frame_records": 7,
+          "departure_date": "2026-09-30",
+          "frame_bars_fingerprint": "sha256:aba09f87820cb404463b2d01cd19e0daee0389dcedac329f7b8d3ccd2c30e036",
+          "formal_price_bounds": null
+        },
+        "current_bar": {
+          "close": "44.85",
+          "date": "2026-09-30",
+          "high": "45.35",
+          "low": "44.75",
+          "open": "45.20",
+          "volume_shares_scaled": "30746754"
+        },
+        "event_id": "sha256:f807c501441be1b8de80f51b3cace54a6b2ebab54085876df71aabe8707e4faa"
+      },
+      {
+        "kind": "RETURNED_INSIDE_FROZEN_FRAME",
+        "code": "2884",
+        "observation_start": "2026-09-17",
+        "known_on_saved_bar": "2026-10-01",
+        "previous_departure": {
+          "direction": "DOWN",
+          "lower": "44.90",
+          "upper": "47.35",
+          "frame_start": "2026-09-17",
+          "frame_observed_end": "2026-09-29",
+          "frame_records": 7,
+          "departure_date": "2026-09-30",
+          "frame_bars_fingerprint": "sha256:aba09f87820cb404463b2d01cd19e0daee0389dcedac329f7b8d3ccd2c30e036",
+          "formal_price_bounds": null
+        },
+        "current_bar": {
+          "close": "45.35",
+          "date": "2026-10-01",
+          "high": "45.45",
+          "low": "44.20",
+          "open": "44.80",
+          "volume_shares_scaled": "29162352"
+        },
+        "qualification": "CLOSE_RETURN_EVENT_NOT_INTRADAY_ORDER_OR_FORMAL_REPAIR",
+        "event_id": "sha256:253fcaa5ba8bc1a21b9600cf3b9cc07907850fe210f7a688f95dc128b98ff9c1"
+      },
+      {
+        "kind": "FIRST_CLOSE_OUTSIDE_OBSERVED_FRAME",
+        "code": "2884",
+        "observation_start": "2026-09-17",
+        "known_on_saved_bar": "2026-10-15",
+        "pending": {
+          "direction": "UP",
+          "lower": "44.20",
+          "upper": "47.35",
+          "frame_start": "2026-09-17",
+          "frame_observed_end": "2026-10-14",
+          "frame_records": 17,
+          "departure_date": "2026-10-15",
+          "frame_bars_fingerprint": "sha256:865ca23d951cbe7d7f72b3608ccbec1bcdb2468b085aaee4b3c94a2e28836338",
+          "formal_price_bounds": null
+        },
+        "current_bar": {
+          "close": "48.80",
+          "date": "2026-10-15",
+          "high": "49.50",
+          "low": "47.60",
+          "open": "48.35",
+          "volume_shares_scaled": "63086494"
+        },
+        "event_id": "sha256:1cba116c2a76619dc556ddaf0b0f057104f8423e344228b06ab6e167228460c2"
+      },
+      {
+        "kind": "WHOLE_BAR_OUTSIDE_FROZEN_FRAME",
+        "code": "2884",
+        "observation_start": "2026-09-17",
+        "known_on_saved_bar": "2026-10-16",
+        "direction": "UP",
+        "departure_date": "2026-10-15",
+        "frozen_frame": {
+          "direction": "UP",
+          "lower": "44.20",
+          "upper": "47.35",
+          "frame_start": "2026-09-17",
+          "frame_observed_end": "2026-10-14",
+          "frame_records": 17,
+          "departure_date": "2026-10-15",
+          "frame_bars_fingerprint": "sha256:865ca23d951cbe7d7f72b3608ccbec1bcdb2468b085aaee4b3c94a2e28836338",
+          "formal_price_bounds": null
+        },
+        "current_bar": {
+          "close": "49.15",
+          "date": "2026-10-16",
+          "high": "49.95",
+          "low": "48.00",
+          "open": "48.00",
+          "volume_shares_scaled": "49892439"
+        },
+        "qualification": "GEOMETRIC_EVIDENCE_ONLY_NOT_FORMAL_CLEARANCE",
+        "event_id": "sha256:b388e0437143db94892a0fcd9d5364be434f36e1d3de55f69bba1e8477872dc6"
+      }
+    ],
+    "branch_proposals": [
+      {
+        "evidence_event_id": "sha256:b388e0437143db94892a0fcd9d5364be434f36e1d3de55f69bba1e8477872dc6",
+        "known_on_saved_bar": "2026-10-16",
+        "stop_alternative": {
+          "observed_start": "2026-09-17",
+          "proposed_observation_end": "2026-10-15",
+          "records": 18,
+          "formal_end": null,
+          "recognized_form": null
+        },
+        "following_seed_alternative": {
+          "proposed_start": "2026-10-16",
+          "status": "ONE_BAR_OBSERVATION_SEED_NOT_FORMED_INTERVAL",
+          "formal_lineage": null
+        },
+        "continue_alternative": {
+          "observed_start": "2026-09-17",
+          "observed_through": "2026-10-16",
+          "records": 19,
+          "membership_decision": null
+        },
+        "selected_alternative": null,
+        "crossed_listed_missing_dates": [],
+        "source_qualified_for_stop_decision": null,
+        "qualification": "COMPETING_RESEARCH_PROPOSALS_NOT_A_FORMAL_SPLIT",
+        "proposal_id": "sha256:d5360c23e06f5a48c66fcddd5c0e91ac89f266abcaedbe537bc77f9652003f6c"
+      }
+    ],
+    "continue_observation": {
+      "start": "2026-09-17",
+      "through": "2026-10-16",
+      "records": 19,
+      "observed_low": "44.20",
+      "observed_high": "49.95"
+    },
+    "pending_departure": null,
+    "crossed_listed_missing_dates": [],
+    "formal_start": null,
+    "formal_end": null,
+    "formal_membership": null,
+    "selected_branch": null,
+    "primary_pressure_id": null,
+    "historical_selection_time": null,
+    "historical_signal_eligible": false,
+    "classification_quality": "NOT_VALIDATED",
+    "action_qualification": "NOT_EVALUATED",
+    "research_output_id": "sha256:cf4494ced3f7e55b2e0f4f911abd31f7d36fe6a45ffd758de0c15912459b61ca"
+  },
+  "2884-direction-control": {
+    "schema": "m1-observation-branch-research/0.1",
+    "code": "2884",
+    "start": "2026-04-15",
+    "data_cutoff": "2026-05-04",
+    "source_records": 13,
+    "bars_fingerprint": "sha256:02e8b129e516aa431892f360f952d7a24a122b0de0b62525debcc38d828791e5",
+    "events": [
+      {
+        "kind": "FIRST_CLOSE_OUTSIDE_OBSERVED_FRAME",
+        "code": "2884",
+        "observation_start": "2026-04-15",
+        "known_on_saved_bar": "2026-04-23",
+        "pending": {
+          "direction": "DOWN",
+          "lower": "32.50",
+          "upper": "33.20",
+          "frame_start": "2026-04-15",
+          "frame_observed_end": "2026-04-22",
+          "frame_records": 6,
+          "departure_date": "2026-04-23",
+          "frame_bars_fingerprint": "sha256:49dcdd1f1da9a9eb7f1116983dae0b28ea2a98736dac2c8930603e36bedf61d1",
+          "formal_price_bounds": null
+        },
+        "current_bar": {
+          "close": "32.45",
+          "date": "2026-04-23",
+          "high": "33.05",
+          "low": "32.35",
+          "open": "32.75",
+          "volume_shares_scaled": "42807191"
+        },
+        "event_id": "sha256:2466ead37529b36ca0a6decd5a84df49cc2ae5574e1f19a8f2417354e09baf6a"
+      },
+      {
+        "kind": "RETURNED_INSIDE_FROZEN_FRAME",
+        "code": "2884",
+        "observation_start": "2026-04-15",
+        "known_on_saved_bar": "2026-04-24",
+        "previous_departure": {
+          "direction": "DOWN",
+          "lower": "32.50",
+          "upper": "33.20",
+          "frame_start": "2026-04-15",
+          "frame_observed_end": "2026-04-22",
+          "frame_records": 6,
+          "departure_date": "2026-04-23",
+          "frame_bars_fingerprint": "sha256:49dcdd1f1da9a9eb7f1116983dae0b28ea2a98736dac2c8930603e36bedf61d1",
+          "formal_price_bounds": null
+        },
+        "current_bar": {
+          "close": "32.55",
+          "date": "2026-04-24",
+          "high": "32.70",
+          "low": "32.30",
+          "open": "32.40",
+          "volume_shares_scaled": "38407291"
+        },
+        "qualification": "CLOSE_RETURN_EVENT_NOT_INTRADAY_ORDER_OR_FORMAL_REPAIR",
+        "event_id": "sha256:ba74c92a2a2c44317c630ec13877cfc81663a3882cccd5e99e5e9c867d0c54ae"
+      },
+      {
+        "kind": "FIRST_CLOSE_OUTSIDE_OBSERVED_FRAME",
+        "code": "2884",
+        "observation_start": "2026-04-15",
+        "known_on_saved_bar": "2026-04-30",
+        "pending": {
+          "direction": "DOWN",
+          "lower": "32.00",
+          "upper": "33.20",
+          "frame_start": "2026-04-15",
+          "frame_observed_end": "2026-04-29",
+          "frame_records": 11,
+          "departure_date": "2026-04-30",
+          "frame_bars_fingerprint": "sha256:cb06d46926838cc8214f297321f355c3baffac3e8c5c3c8e3ba9bcc510fd77d3",
+          "formal_price_bounds": null
+        },
+        "current_bar": {
+          "close": "31.85",
+          "date": "2026-04-30",
+          "high": "32.40",
+          "low": "31.80",
+          "open": "32.10",
+          "volume_shares_scaled": "48508781"
+        },
+        "event_id": "sha256:aeb6eeb58742ee80c7354e121f22cdd73e137c604280486ca9da24795037171c"
+      }
+    ],
+    "branch_proposals": [],
+    "continue_observation": {
+      "start": "2026-04-15",
+      "through": "2026-05-04",
+      "records": 13,
+      "observed_low": "31.30",
+      "observed_high": "33.20"
+    },
+    "pending_departure": {
+      "direction": "DOWN",
+      "lower": "32.00",
+      "upper": "33.20",
+      "frame_start": "2026-04-15",
+      "frame_observed_end": "2026-04-29",
+      "frame_records": 11,
+      "departure_date": "2026-04-30",
+      "frame_bars_fingerprint": "sha256:cb06d46926838cc8214f297321f355c3baffac3e8c5c3c8e3ba9bcc510fd77d3",
+      "formal_price_bounds": null
+    },
+    "crossed_listed_missing_dates": [],
+    "formal_start": null,
+    "formal_end": null,
+    "formal_membership": null,
+    "selected_branch": null,
+    "primary_pressure_id": null,
+    "historical_selection_time": null,
+    "historical_signal_eligible": false,
+    "classification_quality": "NOT_VALIDATED",
+    "action_qualification": "NOT_EVALUATED",
+    "research_output_id": "sha256:ee0ee6f579921e72c0e8d330e212fde2e44c44dba4dced138e39ab716d626dce"
+  },
+  "ABC-reviewed-39": {
+    "schema": "m1-observation-branch-research/0.1",
+    "code": "1101",
+    "start": "2025-04-07",
+    "data_cutoff": "2025-06-02",
+    "source_records": 39,
+    "bars_fingerprint": "sha256:5ac9615f8a200fb187c68976c082d7021c3c912b7ae0c569cab6b715a317247b",
+    "events": [
+      {
+        "kind": "FIRST_CLOSE_OUTSIDE_OBSERVED_FRAME",
+        "code": "1101",
+        "observation_start": "2025-04-07",
+        "known_on_saved_bar": "2025-06-02",
+        "pending": {
+          "direction": "DOWN",
+          "lower": "28.45",
+          "upper": "31.40",
+          "frame_start": "2025-04-07",
+          "frame_observed_end": "2025-05-29",
+          "frame_records": 38,
+          "departure_date": "2025-06-02",
+          "frame_bars_fingerprint": "sha256:42bf0d19f5d7935ebfeb5f311ce43f2d5a3950863a7b05d2b222f9672b664ce0",
+          "formal_price_bounds": null
+        },
+        "current_bar": {
+          "close": "27.70",
+          "date": "2025-06-02",
+          "high": "29.05",
+          "low": "27.65",
+          "open": "29.05",
+          "volume_shares_scaled": "93266178"
+        },
+        "event_id": "sha256:cccac76547117eb4d1cc8b29942271f7cb2ce474ef6a596be0df3e2eef7cebf0"
+      }
+    ],
+    "branch_proposals": [],
+    "continue_observation": {
+      "start": "2025-04-07",
+      "through": "2025-06-02",
+      "records": 39,
+      "observed_low": "27.65",
+      "observed_high": "31.40"
+    },
+    "pending_departure": {
+      "direction": "DOWN",
+      "lower": "28.45",
+      "upper": "31.40",
+      "frame_start": "2025-04-07",
+      "frame_observed_end": "2025-05-29",
+      "frame_records": 38,
+      "departure_date": "2025-06-02",
+      "frame_bars_fingerprint": "sha256:42bf0d19f5d7935ebfeb5f311ce43f2d5a3950863a7b05d2b222f9672b664ce0",
+      "formal_price_bounds": null
+    },
+    "crossed_listed_missing_dates": [],
+    "formal_start": null,
+    "formal_end": null,
+    "formal_membership": null,
+    "selected_branch": null,
+    "primary_pressure_id": null,
+    "historical_selection_time": null,
+    "historical_signal_eligible": false,
+    "classification_quality": "NOT_VALIDATED",
+    "action_qualification": "NOT_EVALUATED",
+    "research_output_id": "sha256:7402c1c51c4354c060fb65bfdeeabf1c0a7f74159610159ac85916b7bf878ec8"
+  },
+  "ABC-next-record": {
+    "schema": "m1-observation-branch-research/0.1",
+    "code": "1101",
+    "start": "2025-04-07",
+    "data_cutoff": "2025-06-03",
+    "source_records": 40,
+    "bars_fingerprint": "sha256:f0f570abe3f70b1ca36ec89884feaa8d1861efe180c19a005c833c846fe36895",
+    "events": [
+      {
+        "kind": "FIRST_CLOSE_OUTSIDE_OBSERVED_FRAME",
+        "code": "1101",
+        "observation_start": "2025-04-07",
+        "known_on_saved_bar": "2025-06-02",
+        "pending": {
+          "direction": "DOWN",
+          "lower": "28.45",
+          "upper": "31.40",
+          "frame_start": "2025-04-07",
+          "frame_observed_end": "2025-05-29",
+          "frame_records": 38,
+          "departure_date": "2025-06-02",
+          "frame_bars_fingerprint": "sha256:42bf0d19f5d7935ebfeb5f311ce43f2d5a3950863a7b05d2b222f9672b664ce0",
+          "formal_price_bounds": null
+        },
+        "current_bar": {
+          "close": "27.70",
+          "date": "2025-06-02",
+          "high": "29.05",
+          "low": "27.65",
+          "open": "29.05",
+          "volume_shares_scaled": "93266178"
+        },
+        "event_id": "sha256:cccac76547117eb4d1cc8b29942271f7cb2ce474ef6a596be0df3e2eef7cebf0"
+      },
+      {
+        "kind": "WHOLE_BAR_OUTSIDE_FROZEN_FRAME",
+        "code": "1101",
+        "observation_start": "2025-04-07",
+        "known_on_saved_bar": "2025-06-03",
+        "direction": "DOWN",
+        "departure_date": "2025-06-02",
+        "frozen_frame": {
+          "direction": "DOWN",
+          "lower": "28.45",
+          "upper": "31.40",
+          "frame_start": "2025-04-07",
+          "frame_observed_end": "2025-05-29",
+          "frame_records": 38,
+          "departure_date": "2025-06-02",
+          "frame_bars_fingerprint": "sha256:42bf0d19f5d7935ebfeb5f311ce43f2d5a3950863a7b05d2b222f9672b664ce0",
+          "formal_price_bounds": null
+        },
+        "current_bar": {
+          "close": "26.85",
+          "date": "2025-06-03",
+          "high": "28.00",
+          "low": "26.55",
+          "open": "28.00",
+          "volume_shares_scaled": "107474363"
+        },
+        "qualification": "GEOMETRIC_EVIDENCE_ONLY_NOT_FORMAL_CLEARANCE",
+        "event_id": "sha256:d36035846ad061bc223276bb1c03163e2441b64ae88f69d592edf09a069be1f1"
+      }
+    ],
+    "branch_proposals": [
+      {
+        "evidence_event_id": "sha256:d36035846ad061bc223276bb1c03163e2441b64ae88f69d592edf09a069be1f1",
+        "known_on_saved_bar": "2025-06-03",
+        "stop_alternative": {
+          "observed_start": "2025-04-07",
+          "proposed_observation_end": "2025-06-02",
+          "records": 39,
+          "formal_end": null,
+          "recognized_form": null
+        },
+        "following_seed_alternative": {
+          "proposed_start": "2025-06-03",
+          "status": "ONE_BAR_OBSERVATION_SEED_NOT_FORMED_INTERVAL",
+          "formal_lineage": null
+        },
+        "continue_alternative": {
+          "observed_start": "2025-04-07",
+          "observed_through": "2025-06-03",
+          "records": 40,
+          "membership_decision": null
+        },
+        "selected_alternative": null,
+        "crossed_listed_missing_dates": [],
+        "source_qualified_for_stop_decision": null,
+        "qualification": "COMPETING_RESEARCH_PROPOSALS_NOT_A_FORMAL_SPLIT",
+        "proposal_id": "sha256:9b06e0b45dcd43594dd32a1520c1199a8a1cc5289735b7dc508e517e0f81dd8e"
+      }
+    ],
+    "continue_observation": {
+      "start": "2025-04-07",
+      "through": "2025-06-03",
+      "records": 40,
+      "observed_low": "26.55",
+      "observed_high": "31.40"
+    },
+    "pending_departure": null,
+    "crossed_listed_missing_dates": [],
+    "formal_start": null,
+    "formal_end": null,
+    "formal_membership": null,
+    "selected_branch": null,
+    "primary_pressure_id": null,
+    "historical_selection_time": null,
+    "historical_signal_eligible": false,
+    "classification_quality": "NOT_VALIDATED",
+    "action_qualification": "NOT_EVALUATED",
+    "research_output_id": "sha256:f6633805726c227f6d020232f562d810cbfe8e8674c2a5be6c97c458ee032619"
+  },
+  "G2-manual-scope-test": {
+    "schema": "m1-observation-branch-research/0.1",
+    "code": "1101",
+    "start": "2023-01-16",
+    "data_cutoff": "2023-08-16",
+    "source_records": 136,
+    "bars_fingerprint": "sha256:0141b2507550525246f3dab80f0833a76deb8db4ccd5aaa308323faa969d3132",
+    "events": [
+      {
+        "kind": "FIRST_CLOSE_OUTSIDE_OBSERVED_FRAME",
+        "code": "1101",
+        "observation_start": "2023-01-16",
+        "known_on_saved_bar": "2023-01-17",
+        "pending": {
+          "direction": "DOWN",
+          "lower": "36.15",
+          "upper": "36.90",
+          "frame_start": "2023-01-16",
+          "frame_observed_end": "2023-01-16",
+          "frame_records": 1,
+          "departure_date": "2023-01-17",
+          "frame_bars_fingerprint": "sha256:6c02298d73f52efaad1acc6854044aaa7b47ad53ad41ce849cf2ae8700fcc38f",
+          "formal_price_bounds": null
+        },
+        "current_bar": {
+          "close": "36.00",
+          "date": "2023-01-17",
+          "high": "36.45",
+          "low": "35.90",
+          "open": "36.45",
+          "volume_shares_scaled": "21499697"
+        },
+        "event_id": "sha256:bab78db6654a478f127b17d00c8f0651971c4d806f1c8720c933ee421b8be760"
+      },
+      {
+        "kind": "OPPOSITE_CLOSE_BEFORE_WHOLE_BAR_EVENT",
+        "code": "1101",
+        "observation_start": "2023-01-16",
+        "known_on_saved_bar": "2023-01-30",
+        "previous_departure": {
+          "direction": "DOWN",
+          "lower": "36.15",
+          "upper": "36.90",
+          "frame_start": "2023-01-16",
+          "frame_observed_end": "2023-01-16",
+          "frame_records": 1,
+          "departure_date": "2023-01-17",
+          "frame_bars_fingerprint": "sha256:6c02298d73f52efaad1acc6854044aaa7b47ad53ad41ce849cf2ae8700fcc38f",
+          "formal_price_bounds": null
+        },
+        "new_pending": {
+          "direction": "UP",
+          "lower": "36.15",
+          "upper": "36.90",
+          "frame_start": "2023-01-16",
+          "frame_observed_end": "2023-01-16",
+          "frame_records": 1,
+          "departure_date": "2023-01-30",
+          "frame_bars_fingerprint": "sha256:6c02298d73f52efaad1acc6854044aaa7b47ad53ad41ce849cf2ae8700fcc38f",
+          "formal_price_bounds": null
+        },
+        "current_bar": {
+          "close": "36.95",
+          "date": "2023-01-30",
+          "high": "37.25",
+          "low": "36.50",
+          "open": "37.20",
+          "volume_shares_scaled": "39966741"
+        },
+        "event_id": "sha256:3b48a6eddd89a8f0fb7ef454ca25136102f37579ab395349938a906e6e8b2906"
+      },
+      {
+        "kind": "RETURNED_INSIDE_FROZEN_FRAME",
+        "code": "1101",
+        "observation_start": "2023-01-16",
+        "known_on_saved_bar": "2023-01-31",
+        "previous_departure": {
+          "direction": "UP",
+          "lower": "36.15",
+          "upper": "36.90",
+          "frame_start": "2023-01-16",
+          "frame_observed_end": "2023-01-16",
+          "frame_records": 1,
+          "departure_date": "2023-01-30",
+          "frame_bars_fingerprint": "sha256:6c02298d73f52efaad1acc6854044aaa7b47ad53ad41ce849cf2ae8700fcc38f",
+          "formal_price_bounds": null
+        },
+        "current_bar": {
+          "close": "36.25",
+          "date": "2023-01-31",
+          "high": "36.90",
+          "low": "36.25",
+          "open": "36.90",
+          "volume_shares_scaled": "23934138"
+        },
+        "qualification": "CLOSE_RETURN_EVENT_NOT_INTRADAY_ORDER_OR_FORMAL_REPAIR",
+        "event_id": "sha256:4d0735ca29f8f19906595c26bcb34d6919393fe49e7b0fc77893811b3b917be2"
+      },
+      {
+        "kind": "FIRST_CLOSE_OUTSIDE_OBSERVED_FRAME",
+        "code": "1101",
+        "observation_start": "2023-01-16",
+        "known_on_saved_bar": "2023-02-17",
+        "pending": {
+          "direction": "UP",
+          "lower": "35.90",
+          "upper": "37.85",
+          "frame_start": "2023-01-16",
+          "frame_observed_end": "2023-02-16",
+          "frame_records": 16,
+          "departure_date": "2023-02-17",
+          "frame_bars_fingerprint": "sha256:3a3bf345606ee12184f2dc6c46f58e81636cfbe09db762ddda0fbf6ba170e737",
+          "formal_price_bounds": null
+        },
+        "current_bar": {
+          "close": "38.00",
+          "date": "2023-02-17",
+          "high": "38.00",
+          "low": "37.25",
+          "open": "37.40",
+          "volume_shares_scaled": "18234212"
+        },
+        "event_id": "sha256:a2d91659b3b48717e4d0750e78df52d827de36f8d3da662bf0bd1aefbb98c33b"
+      },
+      {
+        "kind": "WHOLE_BAR_OUTSIDE_FROZEN_FRAME",
+        "code": "1101",
+        "observation_start": "2023-01-16",
+        "known_on_saved_bar": "2023-02-21",
+        "direction": "UP",
+        "departure_date": "2023-02-17",
+        "frozen_frame": {
+          "direction": "UP",
+          "lower": "35.90",
+          "upper": "37.85",
+          "frame_start": "2023-01-16",
+          "frame_observed_end": "2023-02-16",
+          "frame_records": 16,
+          "departure_date": "2023-02-17",
+          "frame_bars_fingerprint": "sha256:3a3bf345606ee12184f2dc6c46f58e81636cfbe09db762ddda0fbf6ba170e737",
+          "formal_price_bounds": null
+        },
+        "current_bar": {
+          "close": "38.35",
+          "date": "2023-02-21",
+          "high": "38.50",
+          "low": "38.15",
+          "open": "38.40",
+          "volume_shares_scaled": "9443068"
+        },
+        "qualification": "GEOMETRIC_EVIDENCE_ONLY_NOT_FORMAL_CLEARANCE",
+        "event_id": "sha256:f09136505897935d550d041d26337b99abeab00db5b452aaa09110743e6935ec"
+      },
+      {
+        "kind": "FIRST_CLOSE_OUTSIDE_OBSERVED_FRAME",
+        "code": "1101",
+        "observation_start": "2023-01-16",
+        "known_on_saved_bar": "2023-02-23",
+        "pending": {
+          "direction": "UP",
+          "lower": "35.90",
+          "upper": "38.50",
+          "frame_start": "2023-01-16",
+          "frame_observed_end": "2023-02-22",
+          "frame_records": 20,
+          "departure_date": "2023-02-23",
+          "frame_bars_fingerprint": "sha256:08051c47a42dafd6755ef100975fb2dbc02ec2726eeb4f97018f438828bac49b",
+          "formal_price_bounds": null
+        },
+        "current_bar": {
+          "close": "39.50",
+          "date": "2023-02-23",
+          "high": "39.70",
+          "low": "38.40",
+          "open": "38.50",
+          "volume_shares_scaled": "47953951"
+        },
+        "event_id": "sha256:a20bf85e158f365643f8aa4d29fd2ad8cd23d6948e5bbd1e2ce75b94a09cb951"
+      },
+      {
+        "kind": "WHOLE_BAR_OUTSIDE_FROZEN_FRAME",
+        "code": "1101",
+        "observation_start": "2023-01-16",
+        "known_on_saved_bar": "2023-02-24",
+        "direction": "UP",
+        "departure_date": "2023-02-23",
+        "frozen_frame": {
+          "direction": "UP",
+          "lower": "35.90",
+          "upper": "38.50",
+          "frame_start": "2023-01-16",
+          "frame_observed_end": "2023-02-22",
+          "frame_records": 20,
+          "departure_date": "2023-02-23",
+          "frame_bars_fingerprint": "sha256:08051c47a42dafd6755ef100975fb2dbc02ec2726eeb4f97018f438828bac49b",
+          "formal_price_bounds": null
+        },
+        "current_bar": {
+          "close": "39.15",
+          "date": "2023-02-24",
+          "high": "39.70",
+          "low": "39.05",
+          "open": "39.65",
+          "volume_shares_scaled": "68799746"
+        },
+        "qualification": "GEOMETRIC_EVIDENCE_ONLY_NOT_FORMAL_CLEARANCE",
+        "event_id": "sha256:15c5ddee563a88242ea934c5a9fc9d3af92cf67a6c164c3b770b7a973962aea7"
+      },
+      {
+        "kind": "FIRST_CLOSE_OUTSIDE_OBSERVED_FRAME",
+        "code": "1101",
+        "observation_start": "2023-01-16",
+        "known_on_saved_bar": "2023-05-02",
+        "pending": {
+          "direction": "UP",
+          "lower": "35.90",
+          "upper": "39.80",
+          "frame_start": "2023-01-16",
+          "frame_observed_end": "2023-04-28",
+          "frame_records": 62,
+          "departure_date": "2023-05-02",
+          "frame_bars_fingerprint": "sha256:6cb526c638c400d4d5101e1566055199fc51015f72978e036f3ecf2a193804bb",
+          "formal_price_bounds": null
+        },
+        "current_bar": {
+          "close": "39.90",
+          "date": "2023-05-02",
+          "high": "40.25",
+          "low": "38.90",
+          "open": "39.00",
+          "volume_shares_scaled": "69164237"
+        },
+        "event_id": "sha256:c073e556b13c53f3a835d0ef3a0a37eb2ccb0df4312361874667d92f538bb4e2"
+      },
+      {
+        "kind": "RETURNED_INSIDE_FROZEN_FRAME",
+        "code": "1101",
+        "observation_start": "2023-01-16",
+        "known_on_saved_bar": "2023-05-03",
+        "previous_departure": {
+          "direction": "UP",
+          "lower": "35.90",
+          "upper": "39.80",
+          "frame_start": "2023-01-16",
+          "frame_observed_end": "2023-04-28",
+          "frame_records": 62,
+          "departure_date": "2023-05-02",
+          "frame_bars_fingerprint": "sha256:6cb526c638c400d4d5101e1566055199fc51015f72978e036f3ecf2a193804bb",
+          "formal_price_bounds": null
+        },
+        "current_bar": {
+          "close": "39.50",
+          "date": "2023-05-03",
+          "high": "40.15",
+          "low": "39.30",
+          "open": "40.15",
+          "volume_shares_scaled": "35068167"
+        },
+        "qualification": "CLOSE_RETURN_EVENT_NOT_INTRADAY_ORDER_OR_FORMAL_REPAIR",
+        "event_id": "sha256:ac18c96906d2466ee5c80153d127446c83cf5667a12cbc3009f4318a3f492cb0"
+      }
+    ],
+    "branch_proposals": [
+      {
+        "evidence_event_id": "sha256:f09136505897935d550d041d26337b99abeab00db5b452aaa09110743e6935ec",
+        "known_on_saved_bar": "2023-02-21",
+        "stop_alternative": {
+          "observed_start": "2023-01-16",
+          "proposed_observation_end": "2023-02-20",
+          "records": 18,
+          "formal_end": null,
+          "recognized_form": null
+        },
+        "following_seed_alternative": {
+          "proposed_start": "2023-02-21",
+          "status": "ONE_BAR_OBSERVATION_SEED_NOT_FORMED_INTERVAL",
+          "formal_lineage": null
+        },
+        "continue_alternative": {
+          "observed_start": "2023-01-16",
+          "observed_through": "2023-02-21",
+          "records": 19,
+          "membership_decision": null
+        },
+        "selected_alternative": null,
+        "crossed_listed_missing_dates": [],
+        "source_qualified_for_stop_decision": null,
+        "qualification": "COMPETING_RESEARCH_PROPOSALS_NOT_A_FORMAL_SPLIT",
+        "proposal_id": "sha256:9601c79a7cc88d2fe33bf156ed2d9f6845f43ebc18c863d55051188b7cc3f1c0"
+      },
+      {
+        "evidence_event_id": "sha256:15c5ddee563a88242ea934c5a9fc9d3af92cf67a6c164c3b770b7a973962aea7",
+        "known_on_saved_bar": "2023-02-24",
+        "stop_alternative": {
+          "observed_start": "2023-01-16",
+          "proposed_observation_end": "2023-02-23",
+          "records": 21,
+          "formal_end": null,
+          "recognized_form": null
+        },
+        "following_seed_alternative": {
+          "proposed_start": "2023-02-24",
+          "status": "ONE_BAR_OBSERVATION_SEED_NOT_FORMED_INTERVAL",
+          "formal_lineage": null
+        },
+        "continue_alternative": {
+          "observed_start": "2023-01-16",
+          "observed_through": "2023-02-24",
+          "records": 22,
+          "membership_decision": null
+        },
+        "selected_alternative": null,
+        "crossed_listed_missing_dates": [],
+        "source_qualified_for_stop_decision": null,
+        "qualification": "COMPETING_RESEARCH_PROPOSALS_NOT_A_FORMAL_SPLIT",
+        "proposal_id": "sha256:eeb58ea0126837c7c1cb1361bd11056dbe2d36c6211881c3327a30c5089a827d"
+      }
+    ],
+    "continue_observation": {
+      "start": "2023-01-16",
+      "through": "2023-08-16",
+      "records": 136,
+      "observed_low": "35.90",
+      "observed_high": "40.25"
+    },
+    "pending_departure": null,
+    "crossed_listed_missing_dates": [
+      "2023-08-03"
+    ],
+    "formal_start": null,
+    "formal_end": null,
+    "formal_membership": null,
+    "selected_branch": null,
+    "primary_pressure_id": null,
+    "historical_selection_time": null,
+    "historical_signal_eligible": false,
+    "classification_quality": "NOT_VALIDATED",
+    "action_qualification": "NOT_EVALUATED",
+    "research_output_id": "sha256:31ef80fd9433aa052d1f76850661027156400d6b45c861417c27db0d93bd5ab5"
+  }
+}

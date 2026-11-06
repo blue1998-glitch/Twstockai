@@ -1,0 +1,70 @@
+{
+  "results": [
+    {
+      "key": "wrong-id",
+      "actual": {
+        "exit_code": 2,
+        "stdout": "",
+        "stderr": "CHOICE_IO_FAILED: Corrupt identity/schema\n",
+        "guard": "FRESH_NO_ENGINE_NO_RESELECT_NO_SAVE_NO_WRITE_NO_NETWORK"
+      }
+    },
+    {
+      "key": "edited",
+      "actual": {
+        "exit_code": 2,
+        "stdout": "",
+        "stderr": "CHOICE_IO_FAILED: RECORD_ID_FINGERPRINT_CONFLICT\n",
+        "guard": "FRESH_NO_ENGINE_NO_RESELECT_NO_SAVE_NO_WRITE_NO_NETWORK"
+      }
+    },
+    {
+      "key": "unknown-schema",
+      "actual": {
+        "exit_code": 2,
+        "stdout": "",
+        "stderr": "CHOICE_IO_FAILED: UNSUPPORTED_CHOICE_RECORD\n",
+        "guard": "FRESH_NO_ENGINE_NO_RESELECT_NO_SAVE_NO_WRITE_NO_NETWORK"
+      }
+    },
+    {
+      "key": "wrong-envelope",
+      "actual": {
+        "exit_code": 2,
+        "stdout": "",
+        "stderr": "CHOICE_IO_FAILED: Corrupt identity/schema\n",
+        "guard": "FRESH_NO_ENGINE_NO_RESELECT_NO_SAVE_NO_WRITE_NO_NETWORK"
+      }
+    },
+    {
+      "key": "missing",
+      "actual": {
+        "exit_code": 2,
+        "stdout": "",
+        "stderr": "CHOICE_IO_FAILED: [Errno 2] No such file or directory: '/tmp/tmpz55dq_ow/missing.json'\n",
+        "guard": "FRESH_NO_ENGINE_NO_RESELECT_NO_SAVE_NO_WRITE_NO_NETWORK"
+      }
+    },
+    {
+      "key": "SELECT-text",
+      "actual": {
+        "exit_code": 2,
+        "stdout": "",
+        "stderr": "usage: capital_research.research_choice_cli [-h] --store STORE --id ID\n                                            [--input INPUT]\n                                            [--format {json,text}]\n                                            {SELECT,READ}\ncapital_research.research_choice_cli: error: SELECT only supports --format json\n",
+        "guard": "FRESH_NO_ENGINE_NO_RESELECT_NO_SAVE_NO_WRITE_NO_NETWORK"
+      }
+    }
+  ],
+  "files_before": {
+    "wrong-envelope.json": "701805266928dd96da5bb95cc57de95435304e4d0efd1a9b2d46f02d3e9d6e36",
+    "unknown-schema.json": "120ba34bf370d4b858a7bc5566509bf9553580d99d7fc8b802aa7eb1353744c3",
+    "edited.json": "5dd0a312a64cb8df6498b18ec2f1017d1ecf774177e1675241c1af6a1964c16f",
+    "wrong-id.json": "620f7e8f369358c377272d079b44acaaf65f4fa2620c9361deaeba75300dfac7"
+  },
+  "files_after": {
+    "wrong-envelope.json": "701805266928dd96da5bb95cc57de95435304e4d0efd1a9b2d46f02d3e9d6e36",
+    "unknown-schema.json": "120ba34bf370d4b858a7bc5566509bf9553580d99d7fc8b802aa7eb1353744c3",
+    "edited.json": "5dd0a312a64cb8df6498b18ec2f1017d1ecf774177e1675241c1af6a1964c16f",
+    "wrong-id.json": "620f7e8f369358c377272d079b44acaaf65f4fa2620c9361deaeba75300dfac7"
+  }
+}

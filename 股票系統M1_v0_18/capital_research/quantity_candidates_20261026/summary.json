@@ -1,0 +1,225 @@
+{
+  "schema": "quantity-candidates-synthetic-summary/0.1",
+  "cases": [
+    {
+      "case": "legal-grid",
+      "checks": {
+        "status": true,
+        "grid_points": true,
+        "probe": true,
+        "not_selected": true,
+        "formal_false": true
+      },
+      "matched": true
+    },
+    {
+      "case": "consumed-trigger",
+      "checks": {
+        "status": true,
+        "all_buys_rejected": true,
+        "reason": true,
+        "not_selected": true,
+        "formal_false": true
+      },
+      "matched": true
+    },
+    {
+      "case": "foreign-trigger",
+      "checks": {
+        "status": true,
+        "all_buys_rejected": true,
+        "reason": true,
+        "not_selected": true,
+        "formal_false": true
+      },
+      "matched": true
+    },
+    {
+      "case": "unknown-capital",
+      "checks": {
+        "status": true,
+        "all_buys_rejected": true,
+        "reason": true,
+        "not_selected": true,
+        "formal_false": true
+      },
+      "matched": true
+    },
+    {
+      "case": "invalidated-fact",
+      "checks": {
+        "status": true,
+        "all_buys_rejected": true,
+        "reason": true,
+        "not_selected": true,
+        "formal_false": true
+      },
+      "matched": true
+    },
+    {
+      "case": "reserve-insufficient",
+      "checks": {
+        "status": true,
+        "probe": true,
+        "reason": true,
+        "not_selected": true,
+        "formal_false": true
+      },
+      "matched": true
+    },
+    {
+      "case": "wait-settlement",
+      "checks": {
+        "status": true,
+        "probe": true,
+        "not_selected": true,
+        "formal_false": true
+      },
+      "matched": true
+    },
+    {
+      "case": "non-monotone",
+      "checks": {
+        "status": true,
+        "non_monotone": true,
+        "not_selected": true,
+        "formal_false": true
+      },
+      "matched": true
+    },
+    {
+      "case": "grid-over-limit",
+      "checks": {
+        "status": true,
+        "candidate_count": true,
+        "not_selected": true,
+        "formal_false": true
+      },
+      "matched": true
+    },
+    {
+      "case": "full-over-limit",
+      "checks": {
+        "status": true,
+        "candidate_count": true,
+        "not_selected": true,
+        "formal_false": true
+      },
+      "matched": true
+    },
+    {
+      "case": "existing-order-full-unsupported",
+      "checks": {
+        "status": true,
+        "full_classification": true,
+        "not_selected": true,
+        "formal_false": true
+      },
+      "matched": true
+    },
+    {
+      "case": "review-old-valid",
+      "checks": {
+        "status": true,
+        "all_buys_rejected": true,
+        "reason": true,
+        "capital_qualified": true,
+        "not_selected": true,
+        "formal_false": true
+      },
+      "matched": true
+    },
+    {
+      "case": "review-independent-new",
+      "checks": {
+        "status": true,
+        "probe": true,
+        "capital_qualified": true,
+        "not_selected": true,
+        "formal_false": true
+      },
+      "matched": true
+    },
+    {
+      "case": "after-fill-no-new-event",
+      "checks": {
+        "status": true,
+        "all_buys_rejected": true,
+        "reason": true,
+        "prefix_nonempty_fills": true,
+        "not_selected": true,
+        "formal_false": true
+      },
+      "matched": true
+    },
+    {
+      "case": "after-settlement-no-new-event",
+      "checks": {
+        "status": true,
+        "all_buys_rejected": true,
+        "reason": true,
+        "settled_cash": true,
+        "not_selected": true,
+        "formal_false": true
+      },
+      "matched": true
+    },
+    {
+      "case": "history-revocation-not-erased",
+      "checks": {
+        "status": true,
+        "all_buys_rejected": true,
+        "reason": true,
+        "capital_qualified": true,
+        "not_selected": true,
+        "formal_false": true
+      },
+      "matched": true
+    },
+    {
+      "case": "shared-volume-trigger",
+      "checks": {
+        "status": true,
+        "all_buys_rejected": false,
+        "reason": false,
+        "not_selected": true,
+        "formal_false": true
+      },
+      "matched": false
+    },
+    {
+      "case": "future-A-wins",
+      "checks": {
+        "status": true,
+        "same_research": true,
+        "not_selected": true,
+        "formal_false": true
+      },
+      "matched": true
+    },
+    {
+      "case": "future-B-wins",
+      "checks": {
+        "status": true,
+        "same_research": true,
+        "not_selected": true,
+        "formal_false": true
+      },
+      "matched": true
+    },
+    {
+      "case": "future-both-fall",
+      "checks": {
+        "status": true,
+        "same_research": true,
+        "not_selected": true,
+        "formal_false": true
+      },
+      "matched": true
+    }
+  ],
+  "all_matched": false,
+  "independent_market_samples": 0,
+  "winner": null,
+  "note": "Saved synthetic proposal diagnostics; not trades, market samples, strategy returns or test-method count"
+}

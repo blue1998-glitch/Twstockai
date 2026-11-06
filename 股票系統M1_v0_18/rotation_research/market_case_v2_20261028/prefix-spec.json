@@ -1,0 +1,67 @@
+{
+  "cases": [
+    {
+      "as_of": "2026-04-09",
+      "expected_fact_ids": [
+        "II"
+      ]
+    },
+    {
+      "as_of": "2026-04-10",
+      "expected_fact_ids": [
+        "II",
+        "III"
+      ]
+    },
+    {
+      "as_of": "2026-04-15",
+      "expected_fact_ids": [
+        "II",
+        "III",
+        "IV",
+        "B-Apr15"
+      ]
+    },
+    {
+      "as_of": "2026-04-17",
+      "expected_fact_ids": [
+        "II",
+        "III",
+        "IV",
+        "Apr17",
+        "B-Apr15"
+      ]
+    },
+    {
+      "as_of": "2026-04-22",
+      "expected_fact_ids": [
+        "II",
+        "III",
+        "IV",
+        "Apr17",
+        "V",
+        "B-Apr15"
+      ]
+    }
+  ],
+  "future_controls": [
+    {
+      "name": "future-price-up",
+      "B_future": "99.00",
+      "V_statement": "later alternative A rise"
+    },
+    {
+      "name": "future-price-down",
+      "B_future": "1.00",
+      "V_statement": "later alternative A decline"
+    }
+  ],
+  "future_price_date": "2026-06-22",
+  "prefixes_to_compare": [
+    "2026-04-15",
+    "2026-04-17"
+  ],
+  "same_prefix_expected": true,
+  "no_lookahead_into_Apr22": true,
+  "source_integrity_metadata_separate": true
+}

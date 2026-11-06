@@ -1,0 +1,160 @@
+{"source": "tpex-daily.json", "status": "RECEIVED", "HTTP": 200, "bytes": 136, "received": null, "reason": null}
+{"source": "TWSE-classification.html", "status": "RECEIVED", "HTTP": 200, "bytes": 170, "received": null, "reason": null}
+{"source": "TPEX-classification.html", "status": "RECEIVED", "HTTP": 200, "bytes": 170, "received": null, "reason": null}
+test_01_same_day_keeps_original_prior_closed_guard (graph_core.daily_chain1_20261104.test_intake.GateTests.test_01_same_day_keeps_original_prior_closed_guard) ... ERROR
+test_02_old_day_is_not_new_target (graph_core.daily_chain1_20261104.test_intake.GateTests.test_02_old_day_is_not_new_target) ... ERROR
+test_03_two_market_date_conflict_is_rejected (graph_core.daily_chain1_20261104.test_intake.GateTests.test_03_two_market_date_conflict_is_rejected) ... ERROR
+test_04_same_source_repeat_has_zero_network_core_and_writes (graph_core.daily_chain1_20261104.test_intake.GateTests.test_04_same_source_repeat_has_zero_network_core_and_writes) ... ERROR
+test_05_corrupt_raw_refuses_repeat_without_new_request (graph_core.daily_chain1_20261104.test_intake.GateTests.test_05_corrupt_raw_refuses_repeat_without_new_request) ... ERROR
+test_06_403_stops_remaining_requests_and_never_retries (graph_core.daily_chain1_20261104.test_intake.GateTests.test_06_403_stops_remaining_requests_and_never_retries) ... ERROR
+test_07_unknown_interrupted_attempt_is_not_retried (graph_core.daily_chain1_20261104.test_intake.GateTests.test_07_unknown_interrupted_attempt_is_not_retried) ... ERROR
+test_08_completed_receipts_resume_only_missing_requests (graph_core.daily_chain1_20261104.test_intake.GateTests.test_08_completed_receipts_resume_only_missing_requests) ... ERROR
+test_09_new_clock_does_not_rewrite_saved_rejection (graph_core.daily_chain1_20261104.test_intake.GateTests.test_09_new_clock_does_not_rewrite_saved_rejection) ... ERROR
+test_10_low_capacity_fails_before_get (graph_core.daily_chain1_20261104.test_intake.GateTests.test_10_low_capacity_fails_before_get) ... ERROR
+test_11_unknown_producer_without_archived_source_refuses (graph_core.daily_chain1_20261104.test_intake.GateTests.test_11_unknown_producer_without_archived_source_refuses) ... ERROR
+test_12_incomplete_body_stops_and_keeps_unqualified_fragment (graph_core.daily_chain1_20261104.test_intake.GateTests.test_12_incomplete_body_stops_and_keeps_unqualified_fragment) ... ERROR
+test_ambiguous_or_unproven_framing_and_encoding_refused (__main__.TransportTests.test_ambiguous_or_unproven_framing_and_encoding_refused) ... ok
+test_body_size_bound_before_acceptance (__main__.TransportTests.test_body_size_bound_before_acceptance) ... ok
+test_denied_has_no_retry (__main__.TransportTests.test_denied_has_no_retry) ... ok
+test_exact_codec_io_and_repeat_preserve_source_gate (__main__.TransportTests.test_exact_codec_io_and_repeat_preserve_source_gate) ... ok
+test_exact_length_and_single_request (__main__.TransportTests.test_exact_length_and_single_request) ... ok
+test_hard_wall_alarm_restored_after_blocked_read (__main__.TransportTests.test_hard_wall_alarm_restored_after_blocked_read) ... ok
+test_real_http_chunk_parser_requires_terminal (__main__.TransportTests.test_real_http_chunk_parser_requires_terminal) ... ok
+test_short_content_length_remains_partial (__main__.TransportTests.test_short_content_length_remains_partial) ... ok
+
+======================================================================
+ERROR: test_01_same_day_keeps_original_prior_closed_guard (graph_core.daily_chain1_20261104.test_intake.GateTests.test_01_same_day_keeps_original_prior_closed_guard)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/workspace/Twstockai/股票系統M1_v0_18/graph_core/daily_chain1_20261104/test_intake.py", line 30, in setUp
+    self.root=WORK/'synthetic-tests'/self._testMethodName;self.root.mkdir(parents=True,exist_ok=False)
+                                                          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/opt/codex/runtimes/codex-primary-runtime/dependencies/python/lib/python3.12/pathlib.py", line 1311, in mkdir
+    os.mkdir(self, mode)
+FileExistsError: [Errno 17] File exists: '/workspace/twstockai-local-data/daily_chain1_20261104/synthetic-tests/test_01_same_day_keeps_original_prior_closed_guard'
+
+======================================================================
+ERROR: test_02_old_day_is_not_new_target (graph_core.daily_chain1_20261104.test_intake.GateTests.test_02_old_day_is_not_new_target)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/workspace/Twstockai/股票系統M1_v0_18/graph_core/daily_chain1_20261104/test_intake.py", line 30, in setUp
+    self.root=WORK/'synthetic-tests'/self._testMethodName;self.root.mkdir(parents=True,exist_ok=False)
+                                                          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/opt/codex/runtimes/codex-primary-runtime/dependencies/python/lib/python3.12/pathlib.py", line 1311, in mkdir
+    os.mkdir(self, mode)
+FileExistsError: [Errno 17] File exists: '/workspace/twstockai-local-data/daily_chain1_20261104/synthetic-tests/test_02_old_day_is_not_new_target'
+
+======================================================================
+ERROR: test_03_two_market_date_conflict_is_rejected (graph_core.daily_chain1_20261104.test_intake.GateTests.test_03_two_market_date_conflict_is_rejected)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/workspace/Twstockai/股票系統M1_v0_18/graph_core/daily_chain1_20261104/test_intake.py", line 30, in setUp
+    self.root=WORK/'synthetic-tests'/self._testMethodName;self.root.mkdir(parents=True,exist_ok=False)
+                                                          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/opt/codex/runtimes/codex-primary-runtime/dependencies/python/lib/python3.12/pathlib.py", line 1311, in mkdir
+    os.mkdir(self, mode)
+FileExistsError: [Errno 17] File exists: '/workspace/twstockai-local-data/daily_chain1_20261104/synthetic-tests/test_03_two_market_date_conflict_is_rejected'
+
+======================================================================
+ERROR: test_04_same_source_repeat_has_zero_network_core_and_writes (graph_core.daily_chain1_20261104.test_intake.GateTests.test_04_same_source_repeat_has_zero_network_core_and_writes)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/workspace/Twstockai/股票系統M1_v0_18/graph_core/daily_chain1_20261104/test_intake.py", line 30, in setUp
+    self.root=WORK/'synthetic-tests'/self._testMethodName;self.root.mkdir(parents=True,exist_ok=False)
+                                                          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/opt/codex/runtimes/codex-primary-runtime/dependencies/python/lib/python3.12/pathlib.py", line 1311, in mkdir
+    os.mkdir(self, mode)
+FileExistsError: [Errno 17] File exists: '/workspace/twstockai-local-data/daily_chain1_20261104/synthetic-tests/test_04_same_source_repeat_has_zero_network_core_and_writes'
+
+======================================================================
+ERROR: test_05_corrupt_raw_refuses_repeat_without_new_request (graph_core.daily_chain1_20261104.test_intake.GateTests.test_05_corrupt_raw_refuses_repeat_without_new_request)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/workspace/Twstockai/股票系統M1_v0_18/graph_core/daily_chain1_20261104/test_intake.py", line 30, in setUp
+    self.root=WORK/'synthetic-tests'/self._testMethodName;self.root.mkdir(parents=True,exist_ok=False)
+                                                          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/opt/codex/runtimes/codex-primary-runtime/dependencies/python/lib/python3.12/pathlib.py", line 1311, in mkdir
+    os.mkdir(self, mode)
+FileExistsError: [Errno 17] File exists: '/workspace/twstockai-local-data/daily_chain1_20261104/synthetic-tests/test_05_corrupt_raw_refuses_repeat_without_new_request'
+
+======================================================================
+ERROR: test_06_403_stops_remaining_requests_and_never_retries (graph_core.daily_chain1_20261104.test_intake.GateTests.test_06_403_stops_remaining_requests_and_never_retries)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/workspace/Twstockai/股票系統M1_v0_18/graph_core/daily_chain1_20261104/test_intake.py", line 30, in setUp
+    self.root=WORK/'synthetic-tests'/self._testMethodName;self.root.mkdir(parents=True,exist_ok=False)
+                                                          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/opt/codex/runtimes/codex-primary-runtime/dependencies/python/lib/python3.12/pathlib.py", line 1311, in mkdir
+    os.mkdir(self, mode)
+FileExistsError: [Errno 17] File exists: '/workspace/twstockai-local-data/daily_chain1_20261104/synthetic-tests/test_06_403_stops_remaining_requests_and_never_retries'
+
+======================================================================
+ERROR: test_07_unknown_interrupted_attempt_is_not_retried (graph_core.daily_chain1_20261104.test_intake.GateTests.test_07_unknown_interrupted_attempt_is_not_retried)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/workspace/Twstockai/股票系統M1_v0_18/graph_core/daily_chain1_20261104/test_intake.py", line 30, in setUp
+    self.root=WORK/'synthetic-tests'/self._testMethodName;self.root.mkdir(parents=True,exist_ok=False)
+                                                          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/opt/codex/runtimes/codex-primary-runtime/dependencies/python/lib/python3.12/pathlib.py", line 1311, in mkdir
+    os.mkdir(self, mode)
+FileExistsError: [Errno 17] File exists: '/workspace/twstockai-local-data/daily_chain1_20261104/synthetic-tests/test_07_unknown_interrupted_attempt_is_not_retried'
+
+======================================================================
+ERROR: test_08_completed_receipts_resume_only_missing_requests (graph_core.daily_chain1_20261104.test_intake.GateTests.test_08_completed_receipts_resume_only_missing_requests)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/workspace/Twstockai/股票系統M1_v0_18/graph_core/daily_chain1_20261104/test_intake.py", line 30, in setUp
+    self.root=WORK/'synthetic-tests'/self._testMethodName;self.root.mkdir(parents=True,exist_ok=False)
+                                                          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/opt/codex/runtimes/codex-primary-runtime/dependencies/python/lib/python3.12/pathlib.py", line 1311, in mkdir
+    os.mkdir(self, mode)
+FileExistsError: [Errno 17] File exists: '/workspace/twstockai-local-data/daily_chain1_20261104/synthetic-tests/test_08_completed_receipts_resume_only_missing_requests'
+
+======================================================================
+ERROR: test_09_new_clock_does_not_rewrite_saved_rejection (graph_core.daily_chain1_20261104.test_intake.GateTests.test_09_new_clock_does_not_rewrite_saved_rejection)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/workspace/Twstockai/股票系統M1_v0_18/graph_core/daily_chain1_20261104/test_intake.py", line 30, in setUp
+    self.root=WORK/'synthetic-tests'/self._testMethodName;self.root.mkdir(parents=True,exist_ok=False)
+                                                          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/opt/codex/runtimes/codex-primary-runtime/dependencies/python/lib/python3.12/pathlib.py", line 1311, in mkdir
+    os.mkdir(self, mode)
+FileExistsError: [Errno 17] File exists: '/workspace/twstockai-local-data/daily_chain1_20261104/synthetic-tests/test_09_new_clock_does_not_rewrite_saved_rejection'
+
+======================================================================
+ERROR: test_10_low_capacity_fails_before_get (graph_core.daily_chain1_20261104.test_intake.GateTests.test_10_low_capacity_fails_before_get)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/workspace/Twstockai/股票系統M1_v0_18/graph_core/daily_chain1_20261104/test_intake.py", line 30, in setUp
+    self.root=WORK/'synthetic-tests'/self._testMethodName;self.root.mkdir(parents=True,exist_ok=False)
+                                                          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/opt/codex/runtimes/codex-primary-runtime/dependencies/python/lib/python3.12/pathlib.py", line 1311, in mkdir
+    os.mkdir(self, mode)
+FileExistsError: [Errno 17] File exists: '/workspace/twstockai-local-data/daily_chain1_20261104/synthetic-tests/test_10_low_capacity_fails_before_get'
+
+======================================================================
+ERROR: test_11_unknown_producer_without_archived_source_refuses (graph_core.daily_chain1_20261104.test_intake.GateTests.test_11_unknown_producer_without_archived_source_refuses)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/workspace/Twstockai/股票系統M1_v0_18/graph_core/daily_chain1_20261104/test_intake.py", line 30, in setUp
+    self.root=WORK/'synthetic-tests'/self._testMethodName;self.root.mkdir(parents=True,exist_ok=False)
+                                                          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/opt/codex/runtimes/codex-primary-runtime/dependencies/python/lib/python3.12/pathlib.py", line 1311, in mkdir
+    os.mkdir(self, mode)
+FileExistsError: [Errno 17] File exists: '/workspace/twstockai-local-data/daily_chain1_20261104/synthetic-tests/test_11_unknown_producer_without_archived_source_refuses'
+
+======================================================================
+ERROR: test_12_incomplete_body_stops_and_keeps_unqualified_fragment (graph_core.daily_chain1_20261104.test_intake.GateTests.test_12_incomplete_body_stops_and_keeps_unqualified_fragment)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/workspace/Twstockai/股票系統M1_v0_18/graph_core/daily_chain1_20261104/test_intake.py", line 30, in setUp
+    self.root=WORK/'synthetic-tests'/self._testMethodName;self.root.mkdir(parents=True,exist_ok=False)
+                                                          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/opt/codex/runtimes/codex-primary-runtime/dependencies/python/lib/python3.12/pathlib.py", line 1311, in mkdir
+    os.mkdir(self, mode)
+FileExistsError: [Errno 17] File exists: '/workspace/twstockai-local-data/daily_chain1_20261104/synthetic-tests/test_12_incomplete_body_stops_and_keeps_unqualified_fragment'
+
+----------------------------------------------------------------------
+Ran 20 tests in 0.058s
+
+FAILED (errors=12)

@@ -1,0 +1,140 @@
+[
+  {
+    "case": "new-independent-trigger",
+    "context": "normal",
+    "equal_original": true,
+    "error": null,
+    "caller_context_unchanged": true,
+    "input_unchanged": true
+  },
+  {
+    "case": "new-independent-trigger",
+    "context": "round-up",
+    "equal_original": true,
+    "error": null,
+    "caller_context_unchanged": true,
+    "input_unchanged": true
+  },
+  {
+    "case": "new-independent-trigger",
+    "context": "round-down",
+    "equal_original": true,
+    "error": null,
+    "caller_context_unchanged": true,
+    "input_unchanged": true
+  },
+  {
+    "case": "new-independent-trigger",
+    "context": "inexact-trap",
+    "equal_original": false,
+    "error": {
+      "type": "Inexact",
+      "detail": "[<class 'decimal.Inexact'>]"
+    },
+    "caller_context_unchanged": true,
+    "input_unchanged": true
+  },
+  {
+    "case": "new-independent-trigger",
+    "context": "narrow-exponents",
+    "equal_original": false,
+    "error": {
+      "type": "Overflow",
+      "detail": "[<class 'decimal.Overflow'>]"
+    },
+    "caller_context_unchanged": true,
+    "input_unchanged": true
+  },
+  {
+    "case": "old-trigger",
+    "context": "normal",
+    "equal_original": true,
+    "error": null,
+    "caller_context_unchanged": true,
+    "input_unchanged": true
+  },
+  {
+    "case": "old-trigger",
+    "context": "round-up",
+    "equal_original": true,
+    "error": null,
+    "caller_context_unchanged": true,
+    "input_unchanged": true
+  },
+  {
+    "case": "old-trigger",
+    "context": "round-down",
+    "equal_original": true,
+    "error": null,
+    "caller_context_unchanged": true,
+    "input_unchanged": true
+  },
+  {
+    "case": "old-trigger",
+    "context": "inexact-trap",
+    "equal_original": false,
+    "error": {
+      "type": "Inexact",
+      "detail": "[<class 'decimal.Inexact'>]"
+    },
+    "caller_context_unchanged": true,
+    "input_unchanged": true
+  },
+  {
+    "case": "old-trigger",
+    "context": "narrow-exponents",
+    "equal_original": false,
+    "error": {
+      "type": "Overflow",
+      "detail": "[<class 'decimal.Overflow'>]"
+    },
+    "caller_context_unchanged": true,
+    "input_unchanged": true
+  },
+  {
+    "case": "unknown-qualification",
+    "context": "normal",
+    "equal_original": true,
+    "error": null,
+    "caller_context_unchanged": true,
+    "input_unchanged": true
+  },
+  {
+    "case": "unknown-qualification",
+    "context": "round-up",
+    "equal_original": true,
+    "error": null,
+    "caller_context_unchanged": true,
+    "input_unchanged": true
+  },
+  {
+    "case": "unknown-qualification",
+    "context": "round-down",
+    "equal_original": true,
+    "error": null,
+    "caller_context_unchanged": true,
+    "input_unchanged": true
+  },
+  {
+    "case": "unknown-qualification",
+    "context": "inexact-trap",
+    "equal_original": false,
+    "error": {
+      "type": "Inexact",
+      "detail": "[<class 'decimal.Inexact'>]"
+    },
+    "caller_context_unchanged": true,
+    "input_unchanged": true
+  },
+  {
+    "case": "unknown-qualification",
+    "context": "narrow-exponents",
+    "equal_original": false,
+    "error": {
+      "type": "Overflow",
+      "detail": "[<class 'decimal.Overflow'>]"
+    },
+    "caller_context_unchanged": true,
+    "input_unchanged": true
+  }
+]

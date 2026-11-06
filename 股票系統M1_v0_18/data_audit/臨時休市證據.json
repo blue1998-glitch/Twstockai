@@ -1,0 +1,33 @@
+[
+  {
+    "date": "2026-07-10",
+    "exchange": "TWSE",
+    "verification": "OFFICIAL_PRIMARY_TEXT_RETRIEVED",
+    "announced_at_date": "2026-07-09",
+    "source_url": "https://www.twse.com.tw/staticFiles/news/news/tsecnews/8a8216d69ef76943019f46cb86ae0110.pdf",
+    "retrieval_route": "Web PDF text extraction succeeded; direct filesystem PDF fetch returned HTTP 307 and was retained as failed metadata",
+    "finding": "TWSE announced full-day market closure on 2026-07-10 due to Typhoon Bavi",
+    "scope": "One closure case, not exhaustive ad-hoc calendar certification"
+  },
+  {
+    "date": "2026-07-10",
+    "exchange": "TPEX",
+    "announced_at_date": "2026-07-09",
+    "verification": "OFFICIAL_PRIMARY_TEXT_RETRIEVED",
+    "announcement_id": "22926",
+    "evidence_kind": "OFFICIAL_NEWS_LIST_FULL_TITLE",
+    "coverage": "ONE_CASE_ONLY_NOT_EXHAUSTIVE",
+    "source_url": "https://www.tpex.org.tw/www/zh-tw/news/list?startDate=2026/07/09&endDate=2026/07/10&response=json",
+    "source_record": {
+      "file": "event_audit/raw/tpex_press_20260709.json",
+      "url": "https://www.tpex.org.tw/www/zh-tw/news/list?startDate=2026/07/09&endDate=2026/07/10&response=json",
+      "fetched_at_utc": "2026-10-16T06:29:13.116531+00:00",
+      "status": 200,
+      "content_type": "application/json;charset=UTF-8",
+      "final_url": "https://www.tpex.org.tw/www/zh-tw/news/list?startDate=2026/07/09&endDate=2026/07/10&response=json",
+      "bytes": 420,
+      "sha256": "5096ebfefb8d11884037e10738e8cfd0ab360960aeef6bcf357e2f06ecb47f5a"
+    },
+    "detail_retrieval": "Web detail fetch returned 403; no detail-body claim. Official list supplies full reviewed title."
+  }
+]

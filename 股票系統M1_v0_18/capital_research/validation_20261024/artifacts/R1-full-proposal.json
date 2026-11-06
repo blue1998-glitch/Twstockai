@@ -1,0 +1,52 @@
+{
+  "available_settled_cash": "1000",
+  "broker_credit_separate": "0",
+  "cancel_conditions": [
+    "EVIDENCE_INVALIDATED",
+    "BASIS_OR_SOURCE_CHANGED",
+    "RISK_OR_LIQUIDITY_CHANGED"
+  ],
+  "common_account_id": "sha256:3035528ce9084c8272f99d510994c00d37a67723ecb2b088d72050c24e5910a6",
+  "conditions": [
+    "RECHECK_AFTER_SALE_SETTLES"
+  ],
+  "dominated_by": [],
+  "estimated_cost": "8.98",
+  "family": "B",
+  "feasible": true,
+  "final_cash_after_all_settlements_estimate": "11.02",
+  "funding": "WAIT_SALE_SETTLEMENT_AND_REEVALUATE",
+  "id": "R1-full-proposal",
+  "indistinguishable_from": [],
+  "initial_capital": "2000",
+  "next_review_conditions": [
+    "NEW_INDEPENDENT_EVENT",
+    "FILL_OR_SETTLEMENT_UPDATE"
+  ],
+  "purchase_payable_estimate": "1983.98",
+  "reasons": [],
+  "remaining_risk_violations": {
+    "account_stress": "0",
+    "group:new": "0",
+    "group:original": "0",
+    "single:A": "0",
+    "single:B": "0",
+    "single:C": "0"
+  },
+  "risk_reducing": false,
+  "route": "R1",
+  "sale_receivable_estimate": "995",
+  "scenario_value_qualification": "SYNTHETIC_MARK_TO_MARK_STRESS_NOT_RETURN_OR_FILL_FORECAST",
+  "scenario_values": {
+    "A_wins": "1793.02",
+    "B_accelerates": "3179.02",
+    "both_fall": "1199.02"
+  },
+  "status": "CONDITIONAL",
+  "targets": {
+    "A": "0",
+    "B": "99",
+    "C": "0"
+  },
+  "trigger_ids": []
+}

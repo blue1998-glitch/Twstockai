@@ -1,0 +1,102 @@
+{
+  "error": null,
+  "traceback": null,
+  "calls": {
+    "replay": 12,
+    "qualify": 13,
+    "ledger_kernel": 12,
+    "save": 0,
+    "simulate": 1,
+    "generate": 0,
+    "replay_sequence": 0
+  },
+  "caller_before": {
+    "prec": 5,
+    "rounding": "ROUND_FLOOR",
+    "Emin": -2,
+    "Emax": 2,
+    "capitals": 0,
+    "clamp": 1,
+    "traps": {
+      "InvalidOperation": true,
+      "FloatOperation": true,
+      "DivisionByZero": true,
+      "Overflow": true,
+      "Underflow": true,
+      "Subnormal": true,
+      "Inexact": true,
+      "Rounded": true,
+      "Clamped": true
+    },
+    "flags": {
+      "InvalidOperation": false,
+      "FloatOperation": false,
+      "DivisionByZero": false,
+      "Overflow": false,
+      "Underflow": false,
+      "Subnormal": false,
+      "Inexact": true,
+      "Rounded": true,
+      "Clamped": false
+    }
+  },
+  "caller_after": {
+    "prec": 5,
+    "rounding": "ROUND_FLOOR",
+    "Emin": -2,
+    "Emax": 2,
+    "capitals": 0,
+    "clamp": 1,
+    "traps": {
+      "InvalidOperation": true,
+      "FloatOperation": true,
+      "DivisionByZero": true,
+      "Overflow": true,
+      "Underflow": true,
+      "Subnormal": true,
+      "Inexact": true,
+      "Rounded": true,
+      "Clamped": true
+    },
+    "flags": {
+      "InvalidOperation": false,
+      "FloatOperation": false,
+      "DivisionByZero": false,
+      "Overflow": false,
+      "Underflow": false,
+      "Subnormal": false,
+      "Inexact": true,
+      "Rounded": true,
+      "Clamped": false
+    }
+  },
+  "caller_context_unchanged": true,
+  "default_context_unchanged": true,
+  "input_id": "sha256:375af9995591b548e309076b92366a2ffb0fe30a1196f202ebec9c118e604acc",
+  "input_unchanged": true,
+  "source_version": {
+    "path": "rotation_research/action_ledger.py",
+    "bytes": 19719,
+    "sha256": "f58de00fc41a0f217f4e7cfabfb1ac605900a3e9dc49ec44526f9edbf1bb7978"
+  },
+  "equal_original": true,
+  "expected_id": "sha256:2ff6a94eea86fe7221e6bdf7b6bc42e1d4f636c79a05ec912d47d753f541b5fb",
+  "actual_id": "sha256:2ff6a94eea86fe7221e6bdf7b6bc42e1d4f636c79a05ec912d47d753f541b5fb",
+  "original_reference": {
+    "path": "capital_research/quantity_context_20261027/objects/9e03e020366eeeb9e946979a8ddd4a7e9edc14b0a1439ede20781da285f2f44f.json",
+    "bytes": 1064541,
+    "sha256": "6f3b8ca940601b2a146c7576a6fca0092ef47646f21c99d55f920636293143b1"
+  },
+  "case": {
+    "name": "continuation",
+    "round_index": 1,
+    "job_id": "sha256:375af9995591b548e309076b92366a2ffb0fe30a1196f202ebec9c118e604acc",
+    "expected_execution_id": "sha256:2ff6a94eea86fe7221e6bdf7b6bc42e1d4f636c79a05ec912d47d753f541b5fb",
+    "result_id": "sha256:a6b77d09ca32baadab8354524077d4a908d528aa5082befab730f9ba9b3096c8",
+    "expected_checkpoint_id": "sha256:3efca100b850867a7f5e0ef9fac0ccea7378f475b33fb8347b8dafcc3ec7c254"
+  },
+  "actual": {
+    "kind": "EXACT_EXISTING_EXECUTION",
+    "id": "sha256:2ff6a94eea86fe7221e6bdf7b6bc42e1d4f636c79a05ec912d47d753f541b5fb"
+  }
+}

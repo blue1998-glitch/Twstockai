@@ -1,0 +1,36 @@
+{
+  "schema": "m1-stop-branch-manual-qa/1",
+  "pdf_path": "output/pdf/m1-stop-retain-followup-branches.pdf",
+  "pdf_sha256": "e6d6a98134ba6803b9e0ec835bc94cf2f7cb68cdc3bc16e12e5baa3721174a5b",
+  "pdf_bytes": 212063,
+  "pages": 3,
+  "final_previews": [
+    {
+      "path": "page-1.png",
+      "bytes": 142374,
+      "sha256": "f85a27e67b6f37d39354102071934b42a039a178f1fa9af1795f17d7335697be",
+      "manual_review": "PASS_FINAL_RENDER_READ_NO_CLIPPING_OR_LABEL_OVERLAP"
+    },
+    {
+      "path": "page-2.png",
+      "bytes": 132685,
+      "sha256": "5e8506ca76e1ba54956a6e76d24ff57813d070c66658391cfabd4c869c5b0d1b",
+      "manual_review": "PASS_FINAL_RENDER_READ_NO_CLIPPING_OR_LABEL_OVERLAP"
+    },
+    {
+      "path": "page-3.png",
+      "bytes": 137536,
+      "sha256": "e7496634e95288f4e5f1942d66c62a96902061782df24c0852cf2042bf45c765",
+      "manual_review": "PASS_FINAL_RENDER_READ_NO_CLIPPING_OR_LABEL_OVERLAP"
+    }
+  ],
+  "figure_builder_runs": 2,
+  "old_figures_rebuilt": 0,
+  "render_issue": "Second bulk-render page 3 PNG was truncated (90112 bytes). Re-rendered only page 3 to a temporary location, PIL verified, copied with fsync and verified again (137536 bytes), then visually inspected. Root cause NOT_ESTABLISHED.",
+  "manual_findings": [
+    "Page 1 ABC broad and detail context intact; June2/3 evidence readable.",
+    "Page 2 2884 return and later departure annotations lowered away from panel border and inspected.",
+    "Page 3 G2 broad and early local events readable after corrected render; scope conflict visible."
+  ],
+  "scope": "STATIC_RESEARCH_PDF_ONLY_NOT_BROWSER_OR_ANDROID"
+}

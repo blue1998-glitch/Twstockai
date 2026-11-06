@@ -1,0 +1,58 @@
+{
+  "artifact_commit": "709cde693612a842f7e77dd00d64d97551125539",
+  "user_file": "SYNTHETIC_explicit_101_106_7_attempt_candidate.json",
+  "bytes": 27246,
+  "sha256": "6ddebaabdea156b8d4c2e7a1837d07c325f129b791bcc1e56ba7d94e5b57af22",
+  "exact_download_matches": true,
+  "matched_observation_number": 7,
+  "matched_observed_at": "2026-09-17T13:30:00+08:00",
+  "observation_prefix_count": 7,
+  "daily_bars": 8,
+  "result_equals_unchanged_core": true,
+  "versions": {
+    "core": "attempt-evidence-candidate/0.1",
+    "adapter": "attempt-view-adapter/0.1",
+    "selection": "attempt-view-selection/0.1"
+  },
+  "latest": {
+    "price": "100",
+    "volume_shares": "6500",
+    "benchmark_shares": "8000",
+    "is_close": true,
+    "conditions": [
+      "NOT_MET",
+      "NOT_MET"
+    ]
+  },
+  "quality": {
+    "classification": "NOT_VALIDATED",
+    "action": "NOT_EVALUATED",
+    "probability_estimate": null,
+    "trend_strength": "NOT_CLASSIFIED"
+  },
+  "screenshot": {
+    "file": "Screenshot_20261017-225452.png",
+    "bytes": 148277,
+    "sha256": "93bfb0d43dd852c0a15b46887639151aecf83eddabf121a04f7939de7c33333e"
+  },
+  "not_proven": [
+    "09:10 and 09:30 handset screen states",
+    "portrait-landscape-portrait rotation",
+    "source menu clearing",
+    "fullscreen exit",
+    "performance",
+    "all-device behavior"
+  ],
+  "evidence_categories": {
+    "screenshot_direct_observation": [
+      "Local content://downloads document rendered in a mobile browser",
+      "Portrait layout and daily candlestick canvas visible",
+      "Range text shows 2026-09-01 through 2026-09-17 and 8 bars",
+      "Near-high orange source marker, left-source blue area and selected-zone band visible",
+      "Volume section title visible but volume plot outside screenshot"
+    ],
+    "uploaded_download_file": "Received candidate JSON; exact match to delivered seventh selection. Button-click process not directly observed.",
+    "user_textual_test_report": "None supplied with these attachments",
+    "overall_android_status": "PARTIAL_EVIDENCE_OBSERVED; remaining operations unconfirmed"
+  }
+}

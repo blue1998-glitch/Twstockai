@@ -1,0 +1,31 @@
+{
+  "schema": "read1-owner-account/0.2",
+  "source": "OWNER_CONSOLE_OBSERVATION_NOT_ORACLE_API",
+  "captured_at": null,
+  "expires_at": null,
+  "config_binding": "SAME_IMMUTABLE_WORKFLOW_COMMIT",
+  "observations": {
+    "domain_kind": "UNKNOWN",
+    "wif_feature_and_region": "UNKNOWN",
+    "pilot_scope_and_iam": "UNKNOWN",
+    "quota_and_billing": "UNKNOWN",
+    "private_writers_review": "UNKNOWN"
+  },
+  "findings": {
+    "free_domain_wif": "UNKNOWN",
+    "existing_independent_pilot": "UNKNOWN",
+    "minimum_list_iam": "UNKNOWN",
+    "oauth_client_no_admin": "UNKNOWN",
+    "repository_secret_risk_accepted": "OWNER_CONFIRMED",
+    "zero_paid_block_unchanged": "UNKNOWN",
+    "writers_and_workflows_reviewed": "UNKNOWN"
+  },
+  "config": {
+    "schema": "read1-server-config/0.2",
+    "domain_url": null,
+    "client_id": null,
+    "region": null,
+    "pilot_compartment": null,
+    "availability_domains": []
+  }
+}

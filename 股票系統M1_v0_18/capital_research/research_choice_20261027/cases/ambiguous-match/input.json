@@ -1,0 +1,691 @@
+{
+  "schema": "capital-research-choice-case/0.1",
+  "base": "c5b966f52eb38715b6871362ef610469f282297e",
+  "source": {
+    "path": "股票系統M1_v0_18/capital_research/quantity_after_retry_20261027/after-final/new-independent-trigger/actual.json",
+    "bytes": 627600,
+    "sha256": "159900c478cc4fd69b63c40eb57bc85457b69aecc6d2d795d7d213671fd1fe49"
+  },
+  "selection": {
+    "mode": "GRID",
+    "sell_A": "0",
+    "additional_B": "1",
+    "reason": "EXPLICIT_SYNTHETIC_INTENT_NOT_BEST_RATIO"
+  },
+  "recorded_at": "2026-10-27T12:00:00+08:00",
+  "edits": [
+    {
+      "path": [
+        "adapter",
+        "generation",
+        "research",
+        "candidates"
+      ],
+      "value": [
+        {
+          "id": "A-zero",
+          "kinds": [
+            "HOLD",
+            "GRID_HOLD"
+          ],
+          "plan": {
+            "id": "A-zero",
+            "family": "A",
+            "route": "R1",
+            "targets": {
+              "A": "60",
+              "B": "25",
+              "C": "2"
+            },
+            "trigger_ids": [],
+            "edge_budget": "0",
+            "conditions": [
+              "CURRENT_RESEARCH_INTENT_ONLY",
+              "REASSESS_AFTER_SETTLEMENT",
+              "NEW_INDEPENDENT_TRIGGER_FOR_NEXT_BUY_BATCH"
+            ]
+          },
+          "core_decision_id": "sha256:1adcbd48edf5bcae399c337ac62ab00416dabb884d1da8a767c50448a363b8fe",
+          "core_schema": "capital-decision/0.8",
+          "core_evaluation": {
+            "id": "A-zero",
+            "family": "A",
+            "route": "R1",
+            "common_account_id": "sha256:8ba782b921772678f8be492480ccc08d8c8b5e85bdde3c4fea55cc4a2f5aca6d",
+            "initial_capital": "1425.100",
+            "trigger_ids": [],
+            "conditions": [
+              "REVIEW_ON_NEW_INDEPENDENT_EVENT"
+            ],
+            "cancel_conditions": [
+              "EVIDENCE_INVALIDATED",
+              "BASIS_OR_SOURCE_CHANGED",
+              "RISK_OR_LIQUIDITY_CHANGED"
+            ],
+            "next_review_conditions": [
+              "NEW_INDEPENDENT_EVENT",
+              "FILL_OR_SETTLEMENT_UPDATE"
+            ],
+            "reasons": [],
+            "dominated_by": [],
+            "indistinguishable_from": [],
+            "feasible": true,
+            "status": "FEASIBLE",
+            "targets": {
+              "A": "60",
+              "B": "25",
+              "C": "2"
+            },
+            "risk_reducing": false,
+            "remaining_risk_violations": {
+              "single:A": "0",
+              "single:B": "0",
+              "single:C": "0",
+              "group:original": "0",
+              "group:new": "0",
+              "group:other": "0",
+              "account_stress": "0"
+            },
+            "estimated_cost": "0",
+            "sale_receivable_estimate": "0",
+            "purchase_payable_estimate": "0",
+            "available_settled_cash": "175.100",
+            "broker_credit_separate": "0",
+            "funding": "SETTLED",
+            "final_cash_after_all_settlements_estimate": "275.100",
+            "scenario_values": {
+              "A_wins": "1669.100",
+              "B_accelerates": "1787.100",
+              "both_fall": "1027.100"
+            },
+            "scenario_value_qualification": "STATIC_TARGET_ATTAINED_STRESS_EXCLUDES_WAITING_AND_NONFILLS",
+            "dominance_scope": "STATIC_TARGETS_ONLY",
+            "policy_dominance": "NOT_EVALUATED"
+          },
+          "batch_gate_reasons": [],
+          "reasons": [],
+          "classification": "CURRENTLY_FEASIBLE",
+          "feasible_for_research": true,
+          "additional_B": "0",
+          "sold_A": "0",
+          "generation_reasons": [
+            "HOLD",
+            "GRID_HOLD"
+          ],
+          "generation_policy_version": "synthetic-after-retry-domain/0.1"
+        },
+        {
+          "id": "quantity:sha256:fee3496efe33cc6e54d3f830d34194d05f181dd804b44f04599ccc1247728f0f",
+          "kinds": [
+            "PARTIAL_TRANSFER"
+          ],
+          "plan": {
+            "id": "quantity:sha256:fee3496efe33cc6e54d3f830d34194d05f181dd804b44f04599ccc1247728f0f",
+            "family": "C",
+            "route": "R1",
+            "targets": {
+              "A": "60",
+              "B": "26",
+              "C": "2"
+            },
+            "trigger_ids": [
+              "B-new-independent"
+            ],
+            "edge_budget": "1000",
+            "conditions": [
+              "CURRENT_RESEARCH_INTENT_ONLY",
+              "REASSESS_AFTER_SETTLEMENT",
+              "NEW_INDEPENDENT_TRIGGER_FOR_NEXT_BUY_BATCH"
+            ]
+          },
+          "core_decision_id": "sha256:af98952a4a0949f745b93424695d227023a2fb4b3d2cb0386a6e0aeca1cf91e2",
+          "core_schema": "capital-decision/0.8",
+          "core_evaluation": {
+            "id": "quantity:sha256:fee3496efe33cc6e54d3f830d34194d05f181dd804b44f04599ccc1247728f0f",
+            "family": "C",
+            "route": "R1",
+            "common_account_id": "sha256:8ba782b921772678f8be492480ccc08d8c8b5e85bdde3c4fea55cc4a2f5aca6d",
+            "initial_capital": "1425.100",
+            "trigger_ids": [
+              "B-new-independent"
+            ],
+            "conditions": [
+              "CURRENT_RESEARCH_INTENT_ONLY",
+              "REASSESS_AFTER_SETTLEMENT",
+              "NEW_INDEPENDENT_TRIGGER_FOR_NEXT_BUY_BATCH"
+            ],
+            "cancel_conditions": [
+              "EVIDENCE_INVALIDATED",
+              "BASIS_OR_SOURCE_CHANGED",
+              "RISK_OR_LIQUIDITY_CHANGED"
+            ],
+            "next_review_conditions": [
+              "NEW_INDEPENDENT_EVENT",
+              "FILL_OR_SETTLEMENT_UPDATE"
+            ],
+            "reasons": [],
+            "dominated_by": [],
+            "indistinguishable_from": [],
+            "feasible": true,
+            "status": "FEASIBLE",
+            "targets": {
+              "A": "60",
+              "B": "26",
+              "C": "2"
+            },
+            "risk_reducing": false,
+            "remaining_risk_violations": {
+              "single:A": "0",
+              "single:B": "0",
+              "single:C": "0",
+              "group:original": "0",
+              "group:new": "0",
+              "group:other": "0",
+              "account_stress": "0"
+            },
+            "estimated_cost": "1.02",
+            "sale_receivable_estimate": "0",
+            "purchase_payable_estimate": "21.02",
+            "available_settled_cash": "175.100",
+            "broker_credit_separate": "0",
+            "funding": "SETTLED",
+            "final_cash_after_all_settlements_estimate": "254.080",
+            "scenario_values": {
+              "A_wins": "1666.080",
+              "B_accelerates": "1798.080",
+              "both_fall": "1018.080"
+            },
+            "scenario_value_qualification": "STATIC_TARGET_ATTAINED_STRESS_EXCLUDES_WAITING_AND_NONFILLS",
+            "dominance_scope": "STATIC_TARGETS_ONLY",
+            "policy_dominance": "NOT_EVALUATED"
+          },
+          "batch_gate_reasons": [],
+          "reasons": [],
+          "classification": "CURRENTLY_FEASIBLE",
+          "feasible_for_research": true,
+          "additional_B": "1",
+          "sold_A": "0",
+          "generation_reasons": [
+            "PARTIAL_TRANSFER"
+          ],
+          "generation_policy_version": "synthetic-after-retry-domain/0.1"
+        },
+        {
+          "id": "quantity:sha256:17192457e6a7a0fd92ace7446da48bd586e977e682130a5114612b3359a26399",
+          "kinds": [
+            "REDUCE_A_KEEP_CASH"
+          ],
+          "plan": {
+            "id": "quantity:sha256:17192457e6a7a0fd92ace7446da48bd586e977e682130a5114612b3359a26399",
+            "family": "E",
+            "route": "R1",
+            "targets": {
+              "A": "59",
+              "B": "25",
+              "C": "2"
+            },
+            "trigger_ids": [],
+            "edge_budget": "1000",
+            "conditions": [
+              "CURRENT_RESEARCH_INTENT_ONLY",
+              "REASSESS_AFTER_SETTLEMENT",
+              "NEW_INDEPENDENT_TRIGGER_FOR_NEXT_BUY_BATCH"
+            ]
+          },
+          "core_decision_id": "sha256:3304845dc74a5c250ca3b738b2ca33342a2a46e7e475499d45a4f711cb7d6df6",
+          "core_schema": "capital-decision/0.8",
+          "core_evaluation": {
+            "id": "quantity:sha256:17192457e6a7a0fd92ace7446da48bd586e977e682130a5114612b3359a26399",
+            "family": "E",
+            "route": "R1",
+            "common_account_id": "sha256:8ba782b921772678f8be492480ccc08d8c8b5e85bdde3c4fea55cc4a2f5aca6d",
+            "initial_capital": "1425.100",
+            "trigger_ids": [],
+            "conditions": [
+              "CURRENT_RESEARCH_INTENT_ONLY",
+              "REASSESS_AFTER_SETTLEMENT",
+              "NEW_INDEPENDENT_TRIGGER_FOR_NEXT_BUY_BATCH"
+            ],
+            "cancel_conditions": [
+              "EVIDENCE_INVALIDATED",
+              "BASIS_OR_SOURCE_CHANGED",
+              "RISK_OR_LIQUIDITY_CHANGED"
+            ],
+            "next_review_conditions": [
+              "NEW_INDEPENDENT_EVENT",
+              "FILL_OR_SETTLEMENT_UPDATE"
+            ],
+            "reasons": [],
+            "dominated_by": [],
+            "indistinguishable_from": [],
+            "feasible": true,
+            "status": "FEASIBLE",
+            "targets": {
+              "A": "59",
+              "B": "25",
+              "C": "2"
+            },
+            "risk_reducing": false,
+            "remaining_risk_violations": {
+              "single:A": "0",
+              "single:B": "0",
+              "single:C": "0",
+              "group:original": "0",
+              "group:new": "0",
+              "group:other": "0",
+              "account_stress": "0"
+            },
+            "estimated_cost": "2.01",
+            "sale_receivable_estimate": "7.99",
+            "purchase_payable_estimate": "0",
+            "available_settled_cash": "175.100",
+            "broker_credit_separate": "0",
+            "funding": "SETTLED",
+            "final_cash_after_all_settlements_estimate": "283.090",
+            "scenario_values": {
+              "A_wins": "1662.090",
+              "B_accelerates": "1784.090",
+              "both_fall": "1028.090"
+            },
+            "scenario_value_qualification": "STATIC_TARGET_ATTAINED_STRESS_EXCLUDES_WAITING_AND_NONFILLS",
+            "dominance_scope": "STATIC_TARGETS_ONLY",
+            "policy_dominance": "NOT_EVALUATED"
+          },
+          "batch_gate_reasons": [],
+          "reasons": [],
+          "classification": "CURRENTLY_FEASIBLE",
+          "feasible_for_research": true,
+          "additional_B": "0",
+          "sold_A": "1",
+          "generation_reasons": [
+            "REDUCE_A_KEEP_CASH"
+          ],
+          "generation_policy_version": "synthetic-after-retry-domain/0.1"
+        },
+        {
+          "id": "quantity:sha256:00df23c08314496f7cd7671f964c2cd94ca85b83b941917176e08aba957255bb",
+          "kinds": [
+            "PARTIAL_TRANSFER"
+          ],
+          "plan": {
+            "id": "quantity:sha256:00df23c08314496f7cd7671f964c2cd94ca85b83b941917176e08aba957255bb",
+            "family": "C",
+            "route": "R1",
+            "targets": {
+              "A": "59",
+              "B": "26",
+              "C": "2"
+            },
+            "trigger_ids": [
+              "B-new-independent"
+            ],
+            "edge_budget": "1000",
+            "conditions": [
+              "CURRENT_RESEARCH_INTENT_ONLY",
+              "REASSESS_AFTER_SETTLEMENT",
+              "NEW_INDEPENDENT_TRIGGER_FOR_NEXT_BUY_BATCH"
+            ]
+          },
+          "core_decision_id": "sha256:756bcb54285c5445b79b64cfc6514da5012b50302b84dc18aae996f2aba15cff",
+          "core_schema": "capital-decision/0.8",
+          "core_evaluation": {
+            "id": "quantity:sha256:00df23c08314496f7cd7671f964c2cd94ca85b83b941917176e08aba957255bb",
+            "family": "C",
+            "route": "R1",
+            "common_account_id": "sha256:8ba782b921772678f8be492480ccc08d8c8b5e85bdde3c4fea55cc4a2f5aca6d",
+            "initial_capital": "1425.100",
+            "trigger_ids": [
+              "B-new-independent"
+            ],
+            "conditions": [
+              "CURRENT_RESEARCH_INTENT_ONLY",
+              "REASSESS_AFTER_SETTLEMENT",
+              "NEW_INDEPENDENT_TRIGGER_FOR_NEXT_BUY_BATCH"
+            ],
+            "cancel_conditions": [
+              "EVIDENCE_INVALIDATED",
+              "BASIS_OR_SOURCE_CHANGED",
+              "RISK_OR_LIQUIDITY_CHANGED"
+            ],
+            "next_review_conditions": [
+              "NEW_INDEPENDENT_EVENT",
+              "FILL_OR_SETTLEMENT_UPDATE"
+            ],
+            "reasons": [],
+            "dominated_by": [],
+            "indistinguishable_from": [],
+            "feasible": true,
+            "status": "FEASIBLE",
+            "targets": {
+              "A": "59",
+              "B": "26",
+              "C": "2"
+            },
+            "risk_reducing": false,
+            "remaining_risk_violations": {
+              "single:A": "0",
+              "single:B": "0",
+              "single:C": "0",
+              "group:original": "0",
+              "group:new": "0",
+              "group:other": "0",
+              "account_stress": "0"
+            },
+            "estimated_cost": "3.03",
+            "sale_receivable_estimate": "7.99",
+            "purchase_payable_estimate": "21.02",
+            "available_settled_cash": "175.100",
+            "broker_credit_separate": "0",
+            "funding": "SETTLED",
+            "final_cash_after_all_settlements_estimate": "262.070",
+            "scenario_values": {
+              "A_wins": "1659.070",
+              "B_accelerates": "1795.070",
+              "both_fall": "1019.070"
+            },
+            "scenario_value_qualification": "STATIC_TARGET_ATTAINED_STRESS_EXCLUDES_WAITING_AND_NONFILLS",
+            "dominance_scope": "STATIC_TARGETS_ONLY",
+            "policy_dominance": "NOT_EVALUATED"
+          },
+          "batch_gate_reasons": [],
+          "reasons": [],
+          "classification": "CURRENTLY_FEASIBLE",
+          "feasible_for_research": true,
+          "additional_B": "1",
+          "sold_A": "1",
+          "generation_reasons": [
+            "PARTIAL_TRANSFER"
+          ],
+          "generation_policy_version": "synthetic-after-retry-domain/0.1"
+        },
+        {
+          "id": "quantity:sha256:9ff3fe930645fb009ecee92492c365909067f035fc8fe0d69831ae90faf86f7b",
+          "kinds": [
+            "EXIT_A_KEEP_CASH"
+          ],
+          "plan": {
+            "id": "quantity:sha256:9ff3fe930645fb009ecee92492c365909067f035fc8fe0d69831ae90faf86f7b",
+            "family": "E",
+            "route": "R1",
+            "targets": {
+              "A": "0",
+              "B": "25",
+              "C": "2"
+            },
+            "trigger_ids": [],
+            "edge_budget": "1000",
+            "conditions": [
+              "CURRENT_RESEARCH_INTENT_ONLY",
+              "REASSESS_AFTER_SETTLEMENT",
+              "NEW_INDEPENDENT_TRIGGER_FOR_NEXT_BUY_BATCH"
+            ]
+          },
+          "core_decision_id": "sha256:b5b35f87e766ab750d7b46db9ecdd634a4154eeee09dc4b81168c49d7014d20f",
+          "core_schema": "capital-decision/0.8",
+          "core_evaluation": {
+            "id": "quantity:sha256:9ff3fe930645fb009ecee92492c365909067f035fc8fe0d69831ae90faf86f7b",
+            "family": "E",
+            "route": "R1",
+            "common_account_id": "sha256:8ba782b921772678f8be492480ccc08d8c8b5e85bdde3c4fea55cc4a2f5aca6d",
+            "initial_capital": "1425.100",
+            "trigger_ids": [],
+            "conditions": [
+              "CURRENT_RESEARCH_INTENT_ONLY",
+              "REASSESS_AFTER_SETTLEMENT",
+              "NEW_INDEPENDENT_TRIGGER_FOR_NEXT_BUY_BATCH"
+            ],
+            "cancel_conditions": [
+              "EVIDENCE_INVALIDATED",
+              "BASIS_OR_SOURCE_CHANGED",
+              "RISK_OR_LIQUIDITY_CHANGED"
+            ],
+            "next_review_conditions": [
+              "NEW_INDEPENDENT_EVENT",
+              "FILL_OR_SETTLEMENT_UPDATE"
+            ],
+            "reasons": [],
+            "dominated_by": [],
+            "indistinguishable_from": [],
+            "feasible": true,
+            "status": "FEASIBLE",
+            "targets": {
+              "A": "0",
+              "B": "25",
+              "C": "2"
+            },
+            "risk_reducing": false,
+            "remaining_risk_violations": {
+              "single:A": "0",
+              "single:B": "0",
+              "single:C": "0",
+              "group:original": "0",
+              "group:new": "0",
+              "group:other": "0",
+              "account_stress": "0"
+            },
+            "estimated_cost": "3.6",
+            "sale_receivable_estimate": "596.4",
+            "purchase_payable_estimate": "0",
+            "available_settled_cash": "175.100",
+            "broker_credit_separate": "0",
+            "funding": "SETTLED",
+            "final_cash_after_all_settlements_estimate": "871.500",
+            "scenario_values": {
+              "A_wins": "1365.500",
+              "B_accelerates": "1723.500",
+              "both_fall": "1203.500"
+            },
+            "scenario_value_qualification": "STATIC_TARGET_ATTAINED_STRESS_EXCLUDES_WAITING_AND_NONFILLS",
+            "dominance_scope": "STATIC_TARGETS_ONLY",
+            "policy_dominance": "NOT_EVALUATED"
+          },
+          "batch_gate_reasons": [],
+          "reasons": [],
+          "classification": "CURRENTLY_FEASIBLE",
+          "feasible_for_research": true,
+          "additional_B": "0",
+          "sold_A": "60",
+          "generation_reasons": [
+            "EXIT_A_KEEP_CASH"
+          ],
+          "generation_policy_version": "synthetic-after-retry-domain/0.1"
+        },
+        {
+          "id": "quantity:sha256:46303bd0fbd04ff5d7f7118d98d3c96364da833e8524e655c8404320871c99b1",
+          "kinds": [
+            "FULL_TRANSFER"
+          ],
+          "plan": {
+            "id": "quantity:sha256:46303bd0fbd04ff5d7f7118d98d3c96364da833e8524e655c8404320871c99b1",
+            "family": "C",
+            "route": "R1",
+            "targets": {
+              "A": "0",
+              "B": "63",
+              "C": "2"
+            },
+            "trigger_ids": [
+              "B-new-independent"
+            ],
+            "edge_budget": "1000",
+            "conditions": [
+              "CURRENT_RESEARCH_INTENT_ONLY",
+              "REASSESS_AFTER_SETTLEMENT",
+              "NEW_INDEPENDENT_TRIGGER_FOR_NEXT_BUY_BATCH"
+            ]
+          },
+          "core_decision_id": "sha256:c71e6246d24918b1875daec07226523eddf65a9b3607854973369d10deeaa21f",
+          "core_schema": "capital-decision/0.8",
+          "core_evaluation": {
+            "id": "quantity:sha256:46303bd0fbd04ff5d7f7118d98d3c96364da833e8524e655c8404320871c99b1",
+            "family": "C",
+            "route": "R1",
+            "common_account_id": "sha256:8ba782b921772678f8be492480ccc08d8c8b5e85bdde3c4fea55cc4a2f5aca6d",
+            "initial_capital": "1425.100",
+            "trigger_ids": [
+              "B-new-independent"
+            ],
+            "conditions": [
+              "CURRENT_RESEARCH_INTENT_ONLY",
+              "REASSESS_AFTER_SETTLEMENT",
+              "NEW_INDEPENDENT_TRIGGER_FOR_NEXT_BUY_BATCH"
+            ],
+            "cancel_conditions": [
+              "EVIDENCE_INVALIDATED",
+              "BASIS_OR_SOURCE_CHANGED",
+              "RISK_OR_LIQUIDITY_CHANGED"
+            ],
+            "next_review_conditions": [
+              "NEW_INDEPENDENT_EVENT",
+              "FILL_OR_SETTLEMENT_UPDATE"
+            ],
+            "reasons": [],
+            "dominated_by": [],
+            "indistinguishable_from": [],
+            "feasible": true,
+            "status": "CONDITIONAL",
+            "targets": {
+              "A": "0",
+              "B": "63",
+              "C": "2"
+            },
+            "risk_reducing": false,
+            "remaining_risk_violations": {
+              "single:A": "0",
+              "single:B": "0",
+              "single:C": "0",
+              "group:original": "0",
+              "group:new": "0",
+              "group:other": "0",
+              "account_stress": "0"
+            },
+            "estimated_cost": "5.36",
+            "sale_receivable_estimate": "596.4",
+            "purchase_payable_estimate": "761.76",
+            "available_settled_cash": "175.100",
+            "broker_credit_separate": "0",
+            "funding": "WAIT_SALE_SETTLEMENT_AND_REEVALUATE",
+            "final_cash_after_all_settlements_estimate": "109.740",
+            "scenario_values": {
+              "A_wins": "1287.740",
+              "B_accelerates": "2177.740",
+              "both_fall": "897.740"
+            },
+            "scenario_value_qualification": "STATIC_TARGET_ATTAINED_STRESS_EXCLUDES_WAITING_AND_NONFILLS",
+            "dominance_scope": "STATIC_TARGETS_ONLY",
+            "policy_dominance": "NOT_EVALUATED"
+          },
+          "batch_gate_reasons": [],
+          "reasons": [],
+          "classification": "WAIT_SETTLEMENT_REASSESSMENT",
+          "feasible_for_research": true,
+          "additional_B": "38",
+          "sold_A": "60",
+          "generation_reasons": [
+            "FULL_TRANSFER"
+          ],
+          "generation_policy_version": "synthetic-after-retry-domain/0.1"
+        },
+        {
+          "id": "diagnostic-second-ID",
+          "kinds": [
+            "PARTIAL_TRANSFER"
+          ],
+          "plan": {
+            "id": "quantity:sha256:fee3496efe33cc6e54d3f830d34194d05f181dd804b44f04599ccc1247728f0f",
+            "family": "C",
+            "route": "R1",
+            "targets": {
+              "A": "60",
+              "B": "26",
+              "C": "2"
+            },
+            "trigger_ids": [
+              "B-new-independent"
+            ],
+            "edge_budget": "1000",
+            "conditions": [
+              "CURRENT_RESEARCH_INTENT_ONLY",
+              "REASSESS_AFTER_SETTLEMENT",
+              "NEW_INDEPENDENT_TRIGGER_FOR_NEXT_BUY_BATCH"
+            ]
+          },
+          "core_decision_id": "sha256:af98952a4a0949f745b93424695d227023a2fb4b3d2cb0386a6e0aeca1cf91e2",
+          "core_schema": "capital-decision/0.8",
+          "core_evaluation": {
+            "id": "quantity:sha256:fee3496efe33cc6e54d3f830d34194d05f181dd804b44f04599ccc1247728f0f",
+            "family": "C",
+            "route": "R1",
+            "common_account_id": "sha256:8ba782b921772678f8be492480ccc08d8c8b5e85bdde3c4fea55cc4a2f5aca6d",
+            "initial_capital": "1425.100",
+            "trigger_ids": [
+              "B-new-independent"
+            ],
+            "conditions": [
+              "CURRENT_RESEARCH_INTENT_ONLY",
+              "REASSESS_AFTER_SETTLEMENT",
+              "NEW_INDEPENDENT_TRIGGER_FOR_NEXT_BUY_BATCH"
+            ],
+            "cancel_conditions": [
+              "EVIDENCE_INVALIDATED",
+              "BASIS_OR_SOURCE_CHANGED",
+              "RISK_OR_LIQUIDITY_CHANGED"
+            ],
+            "next_review_conditions": [
+              "NEW_INDEPENDENT_EVENT",
+              "FILL_OR_SETTLEMENT_UPDATE"
+            ],
+            "reasons": [],
+            "dominated_by": [],
+            "indistinguishable_from": [],
+            "feasible": true,
+            "status": "FEASIBLE",
+            "targets": {
+              "A": "60",
+              "B": "26",
+              "C": "2"
+            },
+            "risk_reducing": false,
+            "remaining_risk_violations": {
+              "single:A": "0",
+              "single:B": "0",
+              "single:C": "0",
+              "group:original": "0",
+              "group:new": "0",
+              "group:other": "0",
+              "account_stress": "0"
+            },
+            "estimated_cost": "1.02",
+            "sale_receivable_estimate": "0",
+            "purchase_payable_estimate": "21.02",
+            "available_settled_cash": "175.100",
+            "broker_credit_separate": "0",
+            "funding": "SETTLED",
+            "final_cash_after_all_settlements_estimate": "254.080",
+            "scenario_values": {
+              "A_wins": "1666.080",
+              "B_accelerates": "1798.080",
+              "both_fall": "1018.080"
+            },
+            "scenario_value_qualification": "STATIC_TARGET_ATTAINED_STRESS_EXCLUDES_WAITING_AND_NONFILLS",
+            "dominance_scope": "STATIC_TARGETS_ONLY",
+            "policy_dominance": "NOT_EVALUATED"
+          },
+          "batch_gate_reasons": [],
+          "reasons": [],
+          "classification": "CURRENTLY_FEASIBLE",
+          "feasible_for_research": true,
+          "additional_B": "1",
+          "sold_A": "0",
+          "generation_reasons": [
+            "PARTIAL_TRANSFER"
+          ],
+          "generation_policy_version": "synthetic-after-retry-domain/0.1"
+        }
+      ]
+    }
+  ],
+  "binding_overrides": {},
+  "evidence_kind": "STRUCTURAL_READ_REFUSAL_VARIANT_NOT_REGENERATED",
+  "materialized_input_id": "sha256:603ec041b93c8b1ff438447b23055e8e6b514c5bc1f9286b543a6ab3a80fadd5"
+}

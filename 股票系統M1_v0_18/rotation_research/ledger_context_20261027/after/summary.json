@@ -1,0 +1,252 @@
+{
+  "api": [
+    {
+      "case": "cash-net-withholding",
+      "context": "normal",
+      "path": "after/cash-net-withholding/normal/actual.json",
+      "equal_expected": true,
+      "error": null,
+      "calls": {
+        "replay": 1,
+        "qualify": 1,
+        "ledger_kernel": 1,
+        "save": 0,
+        "simulate": 0,
+        "generate": 0,
+        "replay_sequence": 0
+      },
+      "input_unchanged": true,
+      "caller_context_unchanged": true
+    },
+    {
+      "case": "cash-net-withholding",
+      "context": "round-up",
+      "path": "after/cash-net-withholding/round-up/actual.json",
+      "equal_expected": true,
+      "error": null,
+      "calls": {
+        "replay": 1,
+        "qualify": 1,
+        "ledger_kernel": 1,
+        "save": 0,
+        "simulate": 0,
+        "generate": 0,
+        "replay_sequence": 0
+      },
+      "input_unchanged": true,
+      "caller_context_unchanged": true
+    },
+    {
+      "case": "cash-net-withholding",
+      "context": "round-down",
+      "path": "after/cash-net-withholding/round-down/actual.json",
+      "equal_expected": true,
+      "error": null,
+      "calls": {
+        "replay": 1,
+        "qualify": 1,
+        "ledger_kernel": 1,
+        "save": 0,
+        "simulate": 0,
+        "generate": 0,
+        "replay_sequence": 0
+      },
+      "input_unchanged": true,
+      "caller_context_unchanged": true
+    },
+    {
+      "case": "cash-net-withholding",
+      "context": "inexact-trap",
+      "path": "after/cash-net-withholding/inexact-trap/actual.json",
+      "equal_expected": true,
+      "error": null,
+      "calls": {
+        "replay": 1,
+        "qualify": 1,
+        "ledger_kernel": 1,
+        "save": 0,
+        "simulate": 0,
+        "generate": 0,
+        "replay_sequence": 0
+      },
+      "input_unchanged": true,
+      "caller_context_unchanged": true
+    },
+    {
+      "case": "cash-net-withholding",
+      "context": "narrow-exponents",
+      "path": "after/cash-net-withholding/narrow-exponents/actual.json",
+      "equal_expected": true,
+      "error": null,
+      "calls": {
+        "replay": 1,
+        "qualify": 1,
+        "ledger_kernel": 1,
+        "save": 0,
+        "simulate": 0,
+        "generate": 0,
+        "replay_sequence": 0
+      },
+      "input_unchanged": true,
+      "caller_context_unchanged": true
+    },
+    {
+      "case": "stock-delivery",
+      "context": "normal",
+      "path": "after/stock-delivery/normal/actual.json",
+      "equal_expected": true,
+      "error": null,
+      "calls": {
+        "replay": 1,
+        "qualify": 1,
+        "ledger_kernel": 1,
+        "save": 0,
+        "simulate": 0,
+        "generate": 0,
+        "replay_sequence": 0
+      },
+      "input_unchanged": true,
+      "caller_context_unchanged": true
+    },
+    {
+      "case": "stock-delivery",
+      "context": "preset",
+      "path": "after/stock-delivery/preset/actual.json",
+      "equal_expected": true,
+      "error": null,
+      "calls": {
+        "replay": 1,
+        "qualify": 1,
+        "ledger_kernel": 1,
+        "save": 0,
+        "simulate": 0,
+        "generate": 0,
+        "replay_sequence": 0
+      },
+      "input_unchanged": true,
+      "caller_context_unchanged": true
+    },
+    {
+      "case": "capital-reduction",
+      "context": "normal",
+      "path": "after/capital-reduction/normal/actual.json",
+      "equal_expected": true,
+      "error": null,
+      "calls": {
+        "replay": 1,
+        "qualify": 1,
+        "ledger_kernel": 1,
+        "save": 0,
+        "simulate": 0,
+        "generate": 0,
+        "replay_sequence": 0
+      },
+      "input_unchanged": true,
+      "caller_context_unchanged": true
+    },
+    {
+      "case": "capital-reduction",
+      "context": "preset",
+      "path": "after/capital-reduction/preset/actual.json",
+      "equal_expected": true,
+      "error": null,
+      "calls": {
+        "replay": 1,
+        "qualify": 1,
+        "ledger_kernel": 1,
+        "save": 0,
+        "simulate": 0,
+        "generate": 0,
+        "replay_sequence": 0
+      },
+      "input_unchanged": true,
+      "caller_context_unchanged": true
+    },
+    {
+      "case": "opening-unknown",
+      "context": "normal",
+      "path": "after/opening-unknown/normal/actual.json",
+      "equal_expected": true,
+      "error": null,
+      "calls": {
+        "replay": 1,
+        "qualify": 1,
+        "ledger_kernel": 0,
+        "save": 0,
+        "simulate": 0,
+        "generate": 0,
+        "replay_sequence": 0
+      },
+      "input_unchanged": true,
+      "caller_context_unchanged": true
+    },
+    {
+      "case": "opening-unknown",
+      "context": "preset",
+      "path": "after/opening-unknown/preset/actual.json",
+      "equal_expected": true,
+      "error": null,
+      "calls": {
+        "replay": 1,
+        "qualify": 1,
+        "ledger_kernel": 0,
+        "save": 0,
+        "simulate": 0,
+        "generate": 0,
+        "replay_sequence": 0
+      },
+      "input_unchanged": true,
+      "caller_context_unchanged": true
+    },
+    {
+      "case": "net-unknown",
+      "context": "normal",
+      "path": "after/net-unknown/normal/actual.json",
+      "equal_expected": true,
+      "error": null,
+      "calls": {
+        "replay": 1,
+        "qualify": 1,
+        "ledger_kernel": 0,
+        "save": 0,
+        "simulate": 0,
+        "generate": 0,
+        "replay_sequence": 0
+      },
+      "input_unchanged": true,
+      "caller_context_unchanged": true
+    },
+    {
+      "case": "net-unknown",
+      "context": "preset",
+      "path": "after/net-unknown/preset/actual.json",
+      "equal_expected": true,
+      "error": null,
+      "calls": {
+        "replay": 1,
+        "qualify": 1,
+        "ledger_kernel": 0,
+        "save": 0,
+        "simulate": 0,
+        "generate": 0,
+        "replay_sequence": 0
+      },
+      "input_unchanged": true,
+      "caller_context_unchanged": true
+    }
+  ],
+  "cli": [
+    {
+      "path": "after/cli/normal/actual.json",
+      "equal_original": true,
+      "error": null,
+      "saved": true
+    },
+    {
+      "path": "after/cli/preset/actual.json",
+      "equal_original": true,
+      "error": null,
+      "saved": true
+    }
+  ]
+}

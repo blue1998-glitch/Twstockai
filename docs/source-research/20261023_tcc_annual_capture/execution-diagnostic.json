@@ -1,0 +1,55 @@
+{
+  "scope": "SOURCE_ARCHIVE_ONLY_NOT_PRODUCT_TESTS",
+  "environment_recovery": [
+    {
+      "observation": "spec8 connected/running but initial exec still unavailable before environment context reattached",
+      "root_cause": "NOT_ESTABLISHED"
+    },
+    {
+      "observation": "after actual environment attachment pwd and original checkout commands succeeded"
+    }
+  ],
+  "read_diagnostics": [
+    {
+      "command": "cat full root AGENTS.md",
+      "result": "HISTORICAL_OUTPUT_TRUNCATED",
+      "resolution": "Read latest sections and applicable tail rules with bounded output; no claim entire historical narrative reviewed"
+    },
+    {
+      "command": "rg --files -g AGENTS.md docs/source-research deliveries rotation_research && wc ...",
+      "returncode": 1,
+      "result": "NO_MATCHES_PREVENTED_WC_NOT_PRODUCT_FAILURE",
+      "resolution": "Used direct file inventory; no scoped AGENTS files in those target trees"
+    }
+  ],
+  "bootstrap_returncode": 0,
+  "bootstrap_restored_files": 0,
+  "bootstrap_differing_files_preserved": 7,
+  "new_official_GET_attempts": 1,
+  "new_official_GET_http": 200,
+  "redirects_followed": false,
+  "retries": 0,
+  "pdfinfo_returncode": 0,
+  "pdftotext_returncode": 0,
+  "render_returncodes": [
+    0,
+    0,
+    0,
+    0
+  ],
+  "pdftotext_invalid_font_weight_warning_lines": 222,
+  "render_invalid_font_weight_warning_lines_each": [
+    2,
+    2,
+    2,
+    2
+  ],
+  "complete_new_stderr_preserved": true,
+  "work_original_full_stderr_obtained": false,
+  "old_fontconfig_and_xref_unchanged": true,
+  "first_archive_verification_returncode": 0,
+  "source_archive_integrity_checks_not_product_tests": true,
+  "product_tests_run": 0,
+  "historical_product_regression_run": 0,
+  "producer_or_qualification_or_daily_six_plan_executed": false
+}

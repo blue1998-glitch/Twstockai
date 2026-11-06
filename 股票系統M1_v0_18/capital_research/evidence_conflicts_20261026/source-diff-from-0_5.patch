@@ -1,0 +1,637 @@
+--- a/AGENTS.md
++++ b/AGENTS.md
+@@ -1,3 +1,11 @@
++# 2026-10-26 最新本地｜遭拒宣告限制衝突0.6，未提交
++
++使用者已明確答覆授權定向重現、最小修復及必要測試，先不commit/push。最新入口M1_CAPITAL_RESEARCH_CONFLICTS_20261026_HANDOFF.md、capital_research/evidence_conflicts_20261026/REPORT.md及CONTRACT_0_6。主三輪混合期限放寬／新撤銷與四變體均先存before實跑重現，再按原事實root保留限制衝突UNKNOWN；有效原件正例與獨立新事實保持，不建第二帳。決策／成交／比較0.6、checkpoint0.5、fact-history0.2。原0.5 source封存36份，舊證據／oracle／log不改；舊manifest對封存版本。
++
++最終25唯一方法PASS＝13新＋12必要回歸，修前單例FAIL在集合內不加1，不累加舊35／20／38／51／46或12案例。主第三輪僅驗資格／候選，沒有1/13行情或成交；較早時序另驗未來隔離、已知後撤單、晚公布保留fill、同時到期與無tape時間分離。valid_from較晚分支未有獨立案例；來源更正／自動解除衝突、完整分叉、R2/F及原未支援帳務不擴張。70／2／其中8／0、正式false及主壓力null保持。下一步唯讀；無新保存授權不commit/push，不部署／交易／子代理。以下歷史原文完整保留。
++
++---
++
+ # 2026-10-25 最新本地｜跨輪事實保全0.5，未提交
+ 
+ 新入口 `M1_CAPITAL_RESEARCH_FACT_LINEAGE_20261025_HANDOFF.md`、`股票系統M1_v0_18/capital_research/evidence_lineage_20261025/REPORT.md`／CONTRACT_0_5。遠端／本地HEAD仍4339a146d22dd849a6131a8c13f08f2e56145a2f，本輪明示無commit/push授權，優先於下方上一輪兩階段保存授權。只在本既有Codex／工作區做跨輪失效事實重現與最小接線，舊0.4／0.3／0.2原件不改。第一工作區由客服恢復，不等待／重建或推定890檔存亡。
+--- a/CONTINUE_IN_WORK_MODE.md
++++ b/CONTINUE_IN_WORK_MODE.md
+@@ -1,3 +1,11 @@
++# 2026-10-26 最新本地｜限制衝突0.6待唯讀，沒有commit/push
++
++最新入口M1_CAPITAL_RESEARCH_CONFLICTS_20261026_HANDOFF.md及capital_research/evidence_conflicts_20261026/REPORT.md／CONTRACT_0_6。使用者已明確授權定向工程、必要測試，先不commit/push；遠端／HEAD仍4339a146。主三輪與四變體在0.5實跑資格復活，0.6按root保留遭拒宣告新限制UNKNOWN；純改寫恢復與獨立新事實正例保留。原0.5的36份source／文件已封存，舊manifest對封存原件，不改舊證據。
++
++本輪25唯一方法PASS＝13新＋12必要回歸；修前單例FAIL與歷史35等不累加。主第三輪只驗資格，沒有1/13行情；明示較早時序另存四個時間控制actual，同時到期已有新證據。原帳／權利／reserve／latest／token保持，無第二帳。valid_from較晚獨立案例、完整更正／分叉及原未支援項未完成；正式false、主壓力null及70／2／8／0保持。Work未取得本地原件，不冒獨立驗收；Astra／救援原件未讀。下一輪先唯讀，無新授權不工程或commit/push。以下歷史原文保留。
++
++---
++
+ # 2026-10-25 最新本地｜跨輪事實保全0.5，未提交
+ 
+ 新入口 `M1_CAPITAL_RESEARCH_FACT_LINEAGE_20261025_HANDOFF.md`、`股票系統M1_v0_18/capital_research/evidence_lineage_20261025/REPORT.md`／CONTRACT_0_5。遠端／本地HEAD仍4339a146d22dd849a6131a8c13f08f2e56145a2f，本輪明示無commit/push授權，優先於下方上一輪兩階段保存授權。只在本既有Codex／工作區做跨輪失效事實重現與最小接線，舊0.4／0.3／0.2原件不改。第一工作區由客服恢復，不等待／重建或推定890檔存亡。
+--- a/M1_CAPITAL_RESEARCH_CONFLICTS_20261026_HANDOFF.md
++++ b/M1_CAPITAL_RESEARCH_CONFLICTS_20261026_HANDOFF.md
+@@ -0,0 +1,33 @@
++# Work／原唯一Codex接續：限制衝突0.6，未提交
++
++本輪明確答覆授權「定向重現、最小修復及必要測試；先不commit/push」，取代之前唯讀範圍，但沒有擴張保存或正式策略授權。原/workspace/Twstockai，遠端／本地HEAD仍4339a146d22dd849a6131a8c13f08f2e56145a2f。精確未提交狀態見本輪最後回覆及新preservation／manifest。0.5與0.6都尚未發布至GitHub。
++
++```text
++接續 blue1998-glitch/Twstockai，分支dev/m1-v018-chart-annotations。
++只用原唯一Codex及/workspace/Twstockai，不開新對話、子代理、worktree或分支。
++最低已核遠端／本地HEAD：4339a146d22dd849a6131a8c13f08f2e56145a2f。
++保留34b5dfa22b77cfe5c85a818e156389d5d0f9a444、6be4333d490bcccfe952c7606dffb802b76cdd5c、ea380cf7d9ae7fa8e204c2b02dfea72f51b3fa01、1085b17ccbbc09269908bb95442ec309910d1399、3b6fe93fe582ba943451374491f081f23af42f59及全部後續／未提交成果。
++先唯讀核最新ref、HEAD、祖先、差異及index，不reset、clean、checkout覆蓋、強推或用main／舊ZIP／救援檔替換。
++
++下一輪先唯讀審查，不自動延伸本輪工程授權，不測試、producer、bootstrap/hydrate、封包、commit/push、部署、交易或訊息。
++讀最新有效AGENTS、CONTINUE_IN_WORK_MODE、PROJECT_VISION、GRAPH_CORE_RESUME、PHASE1、REVIEW、REPAIR、AB、FACT_LINEAGE及本CONFLICTS交接。
++研究根股票系統M1_v0_18/capital_research/evidence_conflicts_20261026：REPORT、CONTRACT_0_6、intake、execution、diagnostics、preservation、CHANGE_MANIFEST、baseline_0_5、source-diff-from-0_5.patch、before／after-final、tests-before-one.log／tests-final.log及prefix-control證據。
++各案讀specification、first-input、expected、round2-input、input、actual；早期時序四案另有execution-input。對照fixtures、reproduce、test_conflicts、verify及fact_lineage／core／continuity／execution。
++
++主三輪及四個變體在0.5已實跑錯誤放行資格／E-partial；0.6皆以FACT_RESTRICTION_CONFLICT_UNKNOWN拒絕。
++原raw宣告沒有消失；新增按root保存遭拒宣告中的已知限制衝突，不認證該宣告，不改accepted root。精確舊原件／別名／新review不能清除衝突；純value或純期限放寬遭拒且無新增限制時，仍可恢復有效原件。獨立新事實不被永久封鎖。
++優先反駁：是否錯scope污染其他root、是否把未知來源當真、是否提前讀未來撤銷、是否以別名洗掉衝突、是否誤擋有效原件／獨立新事實；也檢查原帳／權利／reserve／latest及token回連。
++
++決策／成交／比較0.6、checkpoint0.5、fact-history0.2；舊結果READ原樣，不隱式遷移。
++原0.5 source對baseline_0_5/files中的36份封存原件及inventory，不要求現在0.6 source匹配舊manifest；未變舊證據仍查原路徑。所有舊before／after／log／validation保留。
++主第三輪只驗資格和candidate_ids，沒有第三輪成交；原帳行情只到1/12，不能以1/13越界拒絕當資格安全反證。四個時間控制明示採1/6、1/8、1/9的較早時序，仍使用原行情與交割日曆。
++最終25唯一方法PASS＝13新增＋12必要回歸；修前單例FAIL在此集合內，不再加1。不累加歷史35／20／38／51／46及12合成案例；獨立市場樣本0。
++同時到期本輪已補保存測例及actual；原件恢復標準三輪仍僅證資格，未證第三輪B20。部分成交必要回歸有本輪實跑log，但沒有另存完整0.6部分成交actual，不憑終點相等宣稱全生命周期通過。
++valid_from較晚分支僅接線、未有獨立案例；完整更正／分叉矩陣、自動解除衝突、來源認證、複雜身份合併、R2/F及原未支援帳務仍未完成。
++
++正式action_resolution0.4、來源0.10全部parents、P0-3/P0-4、reaction_facts／人工基底保持。70／2／其中8／真實總淨合格0、正式資格false、主壓力null不改；不補未知、不放寬拒算、不宣稱策略有效。
++無真實producer、資格重算、市場六方案、UI／Android、樣本外；不重跑無關舊suite。
++Astra及第一工作區救援原件未取得／未讀；不HTTP試探、要求搬檔、等待或重建第一工作區，不推定890檔存亡。
++Work未取得本地原件不能稱獨立驗收。沒有新明確保存指示仍不commit/push。
++最後列實讀／未讀、已證／待驗／未支援、歷史／本輪實際測試、最新SHA與差異，附完整下一輪可貼指令。
++```
+--- a/股票系統M1_v0_18/capital_research/README.md
++++ b/股票系統M1_v0_18/capital_research/README.md
+@@ -1,3 +1,9 @@
++# 遭拒宣告限制衝突0.6（本地未提交）
++
++入口[evidence_conflicts_20261026/REPORT.md](evidence_conflicts_20261026/REPORT.md)／[CONTRACT_0_6.md](evidence_conflicts_20261026/CONTRACT_0_6.md)，完整交接見根M1_CAPITAL_RESEARCH_CONFLICTS_20261026_HANDOFF.md。0.5主三輪資格復活先實跑重現，0.6保留遭拒宣告的新限制衝突UNKNOWN；有效原件及獨立新事實正例保持。25唯一方法＝13新＋12必要回歸PASS，不累加修前單例或歷史結果。原0.5 source對新baseline_0_5封存，舊證據原樣；無commit/push、正式資格或策略成效結論。
++
++---
++
+ # 跨輪事實保全0.5（本地未提交）
+ 
+ 最新入口[evidence_lineage_20261025/REPORT.md](evidence_lineage_20261025/REPORT.md)／[CONTRACT_0_5.md](evidence_lineage_20261025/CONTRACT_0_5.md)，完整交接見根M1_CAPITAL_RESEARCH_FACT_LINEAGE_20261025_HANDOFF.md。基線4339a146，沒有新commit/push授權；已知失效跨輪不被ID／review洗掉，有效舊事實及真正新事實仍可競爭。最終35唯一方法＝25新＋10必要回歸，不累加舊結果；原帳、正式資格及來源限制保持。以下舊文完整保留。
+--- a/股票系統M1_v0_18/capital_research/continuity.py
++++ b/股票系統M1_v0_18/capital_research/continuity.py
+@@ -9,7 +9,7 @@
+ from .close_clock import close_record
+ from .fact_lineage import history_at
+ 
+-CHECKPOINT = 'capital-account-checkpoint/0.4'
++CHECKPOINT = 'capital-account-checkpoint/0.5'
+ 
+ 
+ def ledger_prefix(origin, fills, day):
+@@ -34,7 +34,7 @@
+ 
+ 
+ def _check_result(execution):
+-    if execution['schema']!='capital-execution/0.5' or execution['status']!='SYNTHETIC_EXECUTION_REPLAY':
++    if execution['schema']!='capital-execution/0.6' or execution['status']!='SYNTHETIC_EXECUTION_REPLAY':
+         raise ValueError('LIFECYCLE_PROOF_REQUIRED: historical results remain readable, not implicitly upgraded')
+     if execution['result_id']!=fingerprint({k:v for k,v in execution.items() if k!='result_id'}):
+         raise ValueError('Execution fingerprint conflict')
+@@ -45,7 +45,7 @@
+     if set(sources)!=set(ids):raise ValueError('Complete fact declaration history required')
+     for index,key in enumerate(ids):
+         d=records[key]
+-        if d['schema']!='capital-decision/0.5' or d['decision_id']!=key or fingerprint({k:v for k,v in d.items() if k!='decision_id'})!=key:
++        if d['schema']!='capital-decision/0.6' or d['decision_id']!=key or fingerprint({k:v for k,v in d.items() if k!='decision_id'})!=key:
+             raise ValueError('Decision history fingerprint conflict')
+         if any(sources[key][k]!=d[k] for k in ('decision_at','data_cutoff')):
+             raise ValueError('Fact declaration decision/cutoff conflict')
+--- a/股票系統M1_v0_18/capital_research/core.py
++++ b/股票系統M1_v0_18/capital_research/core.py
+@@ -11,7 +11,7 @@
+ from .eligibility import entry_review, known_fact, validity_status
+ from .fact_lineage import source_snapshot, history_at, visible, issues as fact_issues, asset_issues
+ 
+-VERSION = 'capital-decision/0.5'
++VERSION = 'capital-decision/0.6'
+ FEATURES = ('price_volume', 'box', 'key_position', 'momentum', 'cross_scale')
+ BINDING = ('source_id', 'basis_id', 'adjustment_version')
+ 
+--- a/股票系統M1_v0_18/capital_research/evidence_conflicts_20261026/CONTRACT_0_6.md
++++ b/股票系統M1_v0_18/capital_research/evidence_conflicts_20261026/CONTRACT_0_6.md
+@@ -0,0 +1,33 @@
++# 遭拒宣告中的限制衝突：研究契約0.6
++
++本輪使用者已明確答覆：授權定向重現、最小修復及必要測試，先不commit/push。基線4339a146d22dd849a6131a8c13f08f2e56145a2f。原0.5保存結果不重算、不修改；新數值結果為capital-decision/0.6、capital-execution/0.6、capital-comparison/0.6，checkpoint為capital-account-checkpoint/0.5。原輸入外殼及來源宣告capital-fact-declarations/0.1不變。
++
++## 失效資訊與遭拒提案分開
++
++原0.5會拒絕改寫accepted root的宣告，但精確原件恢復後可解除該提案的rejected標記。此次修正保護同一宣告內新出現的限制資訊：不能因宣告其他部分遭拒，連帶忘記新限制／衝突。
++
++capital-fact-history/0.2新增restriction_conflicts，以已解析原事實root為key。每筆保存observed_at、原宣告identity、content_id、restriction_fields、可知validity及拒絕原因。只有同股、同kind、同來源、基底及調整版本且已解析至該root者可寫入；未解／錯scope連結不能對另一root施加限制。
++
++新增限制比較包括新可知invalidation、較早valid_until，以及較晚valid_from。比較採visible投影，未來撤銷尚未同時到達發生與可得時間時不納入。限制metadata仍須通過明示same-source validity檢查。這不是認證遭拒宣告為真，也不覆寫accepted root；其狀態是未解衝突。
++
++相關事實出現未解限制衝突時，issues輸出FACT_RESTRICTION_CONFLICT_UNKNOWN。既有新資金資格、提案及standing BUY檢查沿原接線拒絕／取消。恢復舊bytes、更換review／decision_id或有效別名，都不能清除此root衝突。本輪沒有衝突自動解除或來源更正認證介面。
++
++只遭拒value改寫而沒有新增限制，或只是企圖放寬期限、沒有新增限制者，精確且仍有效原件仍可接受當期review，且不增加獨立事件token。真正獨立新事實可由當期review選用；不永久封鎖股票。舊衝突仍留在其原root，不由新事實刪除。
++
++## 合成案例與時間界線
++
++主案例保持原資本2180、一般reserve100、80現金權利、A10股份權利及原始ledger。第一輪A-zero／空委託至1/8 16:00；第二輪1/8 17:00加入遭拒期限放寬與已知撤銷、仍空委託至1/12 16:00；第三輪1/12 17:00恢復舊原件並提議E-partial。第三輪只驗資格及candidate_ids，不造1/13行情、委託或交割。
++
++未來撤銷四個變體明示採較早checkpoint：第一輪1/6 16:00、第二輪1/6 17:00至1/8 16:00、第三輪1/8 17:00，使用原已存在1/9觀察及1/12交割。沒有新增行情、交易日或真實交割規則。保存B取消、較晚公布仍可成交、恰好同時到期及無tape watermark取消的完整execution-input與actual。
++
++每案先以create-only寫入specification、first-input、expected，再逐輪保存完整round2-input、第三輪input，最後才算actual。涉及第三輪成交者另先存execution-input。before綁修前0.5、after-final綁修後0.6；前身按各版本明示產生，經濟輸入與固定oracle相同，不隱式遷移checkpoint。
++
++## 保全與能力界線
++
++baseline_0_5保存36份原source／根文件／manifest／patch及tracked diff。舊0.5 manifest中的source應查封存原件；未變的舊證據仍查原路徑，不要求目前0.6 source等於0.5。原0.5 manifest、before／after／log與所有舊validation不改。
++
++沿原action_ledger入帳；新增歷史不操作現金、股份、權利、fill或reserve。原origin、latest前身、帳戶、全部token及READ不重算規則保持。舊checkpoint不由新引擎默默升版。
++
++本輪13新方法及12必要回歸，最後25唯一方法；修前主單例FAIL在此集合內，不另加1。12個合成案例及額外prefix控制均非獨立市場樣本。有效原件的標準三輪正例只驗決策資格，沒有第三輪成交；B20成交只屬明示早期時序的晚公布反例及所選舊正例回歸。
++
++valid_from較晚分支有保守接線，但本輪沒有該分支的獨立合成案例；完整來源更正、複雜身份合併、任意造假偵測及完整分叉矩陣仍未實作。R2/F及原未支援帳務不擴張。不改正式策略、圖形、P0-3/P0-4、人工模式或來源資格；70／2／其中8／真實總淨合格0、正式資格false、主壓力null保持。無真實producer、樣本外、UI／Android、bootstrap/hydrate、部署、交易或commit/push。
+--- a/股票系統M1_v0_18/capital_research/evidence_conflicts_20261026/REPORT.md
++++ b/股票系統M1_v0_18/capital_research/evidence_conflicts_20261026/REPORT.md
+@@ -0,0 +1,46 @@
++# 跨輪遭拒宣告限制衝突0.6：定向工程結果
++
++基線及最新已核遠端／本地HEAD為4339a146d22dd849a6131a8c13f08f2e56145a2f。本輪經使用者明確答覆授權重現、最小修復與必要測試；不commit/push。全部差異留在原/workspace/Twstockai，不代表GitHub已有0.5／0.6或Work取得原件。
++
++## 已重現與修正
++
++主三輪反例在0.5實際重現：第二輪期限改null且新增已知撤銷，第三輪恢復原件後B_qualified=true、E_partial_candidate=true，沒有新token。tests-before-one.log保留True != False的實際FAIL；第三輪沒有執行成交，未造1/13行情。
++
++before與after-final各12個合成案例，所有specification／first-input／expected bytes保持一致：
++
++|案例|修前0.5|修後0.6|
++|---|---|---|
++|mixed-null-revocation|資格及候選放行|兩者拒絕，限制衝突UNKNOWN|
++|mixed-later-revocation|資格及候選放行|兩者拒絕|
++|rejected-value-revocation|資格及候選放行|兩者拒絕|
++|rejected-value-earlier-expiry|資格及候選放行|兩者拒絕|
++|alias-after-conflict|資格及候選放行|兩者拒絕|
++|independent-new-fact|獨立新事實可競爭|仍可競爭，保留舊root衝突|
++|restore-valid-original|有效原件可恢復資格|保持，無新token|
++|restore-after-extension-only|有效原件可恢復資格|保持，無新token|
++|future-revocation|早期可用、已知後取消B|保持|
++|late-revocation|公布晚於成交，B20已成交|保持，不回刪|
++|equal-expiry-revocation|到期與撤銷同時，EXPIRED|保持|
++|future-no-tape|watermark取消B|保持，at／observed_at分開|
++
++五種錯誤資格放行已重現。後四個時間案例本來就符合預期，是控制及必要回歸，不冒稱新修復。第三輪均有具體decision input／前身／checkpoint，第三輪成交只出現在仍處於原行情視窗的明示早期時序。
++
++原缺陷不是raw宣告遺失：完整fact_sources及observations仍有新撤銷，但遭拒版本不更新root；恢復精確舊原件清除rejected後，issues只查舊root。修復在fact_lineage增加按root保留的restriction_conflicts，並由既有issues／資格／standing單路徑輸出FACT_RESTRICTION_CONFLICT_UNKNOWN。不認證遭拒宣告、不改root、不新增資金帳，也不以新decision_id解除衝突。
++
++數值source改動限fact_lineage及core／continuity／execution版本綁定；eligibility沿原接線使用issues。版本為決策／成交／比較0.6、checkpoint0.5、fact-history0.2。新契約見CONTRACT_0_6.md。
++
++## 實際驗證
++
++tests-final.log：25唯一方法PASS＝13新增＋12必要回歸。修前主單例也在這25個唯一方法內，不計26；不累加歷史35／20／38／51／46或合成案例數。首個完整修後批即25通過，無未解測試失敗。必要回歸精確清單見verify.py及execution.json；未跑整套舊suite。
++
++測試涵蓋固定oracle五個拒絕反例、兩個原件恢復正例、獨立新事實、未來完整數值prefix相同但raw來源不同、可知後撤單、晚公布不刪舊fill、同時到期、無tape時間分離，以及原帳／權利／reserve／latest／token／舊checkpoint拒遷移。所選舊方法另驗有效原件B20、原失效保全、部分成交取消／到期、最新前身、A本股資格、B活單區間拒絕及READ不重算。
++
++主鏈無成交：第一checkpoint現金1000／A100／現金權利80／股份權利A10；第二checkpoint現金1080／A110／既有權利已各入帳一次，一般reserve100、原資本2180保持。不能因這條空委託鏈對帳就宣稱所有中途資金皆未重用。部分成交回歸實跑但沒有另生成一套完整0.6部分成交actual，仍明確保留此證據邊界。
++
++## 保存與未完成
++
++修改前先驗原0.5 manifest186項及after-final24個source，再封存36份source／文件與tracked patch。舊0.5 source指紋對封存原件，不對目前0.6 source；舊證據原件留原路徑。新before／after-final、修前FAIL、最終log、source差異、版本及manifest另存；舊oracle、log及結果不改。
++
++未測：valid_from較晚宣告的獨立案例、完整分叉／更正矩陣、真實producer、資格重算、市場六方案、九路徑／10條趨勢競爭、UI／Android及樣本外。未實作：來源更正認證、自動解除衝突、複雜身份合併、任意造假辨識、R2/F及原未支援帳務。
++
++70拒算／2不足／其中8換股影響未支援／真實總淨合格0、正式資格false、主壓力null保持。Astra與第一工作區救援原件未取得／未讀，不猜890檔存亡。Work尚未獨立讀取新本地原件；本輪不部署、下單、付費、發訊息或commit/push。下一步Work唯讀反駁新root衝突保全與正例邊界，工程仍原唯一Codex，後續須依當輪明確授權。
+--- a/股票系統M1_v0_18/capital_research/evidence_conflicts_20261026/fixtures.py
++++ b/股票系統M1_v0_18/capital_research/evidence_conflicts_20261026/fixtures.py
+@@ -0,0 +1,120 @@
++"""Explicit synthetic three-round inputs; no new market prices or calendar."""
++from copy import deepcopy
++import json
++from pathlib import Path
++from graph_core.core import fingerprint
++from capital_research.core import resume_decision
++from capital_research.execution import simulate
++from capital_research.continuity import make_checkpoint
++from capital_research.repair_20261025.fixtures import advance, continuation_job
++
++ROOT = Path(__file__).resolve().parents[1]
++CASES = (
++    'mixed-null-revocation', 'mixed-later-revocation',
++    'rejected-value-revocation', 'rejected-value-earlier-expiry',
++    'alias-after-conflict', 'independent-new-fact',
++    'restore-valid-original', 'restore-after-extension-only',
++    'future-revocation', 'late-revocation', 'equal-expiry-revocation',
++    'future-no-tape',
++)
++
++
++def specification(name):
++    if name not in CASES:
++        raise ValueError('Unknown directed case')
++    first = json.loads((ROOT/'evidence_lineage_20261025/after-final/valid-old-fact/first-input.json').read_text())
++    first.update(plan_id='A-zero', orders=[])
++    fact = first['decision_input']['assets']['B']['evidence'][0]
++    fact['validity'].update(valid_until='2026-01-20T16:00:00+08:00',
++                            qualification='EXPLICIT_SYNTHETIC_INTERVAL', invalidation=None)
++    early = name in ('future-revocation', 'late-revocation', 'equal-expiry-revocation', 'future-no-tape')
++    if early:
++        first['observed_until'] = '2026-01-06T16:00:00+08:00'
++    second = deepcopy(fact)
++    if name in ('rejected-value-revocation', 'rejected-value-earlier-expiry', 'restore-valid-original'):
++        second['value'] = 'EXPLICIT_REJECTED_REWRITE'
++    else:
++        second['validity'].update(valid_until=None, qualification='EXPLICIT_SYNTHETIC_ONGOING_REQUIRES_REVIEW')
++    if name == 'mixed-later-revocation':
++        second['validity'].update(valid_until='2026-01-21T16:00:00+08:00', qualification='EXPLICIT_SYNTHETIC_INTERVAL')
++    if name == 'rejected-value-earlier-expiry':
++        second['validity']['valid_until'] = '2026-01-07T16:00:00+08:00'
++    elif name not in ('restore-valid-original', 'restore-after-extension-only'):
++        second['validity']['invalidation'] = dict(evidence_id='B-revocation-mixed', source_ids=['fixture'],
++            occurred_at='2026-01-09T09:00:00+08:00' if early else '2026-01-08T16:00:00+08:00',
++            available_at=('2026-01-09T09:02:00+08:00' if name=='late-revocation' else
++                          '2026-01-09T09:01:00+08:00') if early else '2026-01-08T16:00:00+08:00')
++    qualified = early or name in ('independent-new-fact','restore-valid-original','restore-after-extension-only')
++    order_status = ('FILLED' if name=='late-revocation' else
++                    'EXPIRED_UNFILLED' if name=='equal-expiry-revocation' else 'CANCELLED_EVIDENCE') if early else None
++    return dict(schema='capital-conflict-case/0.1', name=name, synthetic=True,
++        first_input=first, second_fact=second,
++        second_at='2026-01-06T17:00:00+08:00' if early else '2026-01-08T17:00:00+08:00',
++        second_through='2026-01-08T16:00:00+08:00' if early else '2026-01-12T16:00:00+08:00',
++        third_at='2026-01-08T17:00:00+08:00' if early else '2026-01-12T17:00:00+08:00',
++        execute_third=early,
++        expected=dict(B_qualified=qualified, E_partial_candidate=qualified,
++            new_tokens_empty=name!='independent-new-fact',
++            B_order_status=order_status, new_B_fill_shares=['20'] if name=='late-revocation' else [],
++            qualification='SYNTHETIC_MECHANISM_NOT_MARKET_PERFORMANCE',
++            third_execution_evaluated=early))
++
++
++def materialize(spec, *, record=lambda name, value: None):
++    first = deepcopy(spec['first_input']); r1 = simulate(first)
++    cp1 = make_checkpoint(first['ledger_input'], r1, through_at=first['observed_until'])
++    previous1 = dict(decision=r1['decision_records'][r1['latest_decision_id']])
++    d2, ids = advance(first['decision_input'], cp1, at=spec['second_at'])
++    d2['assets']['B']['evidence'] = [deepcopy(spec['second_fact'])]
++    d2['assets']['B']['capital_eligibility']['evidence_ids'] = [spec['second_fact']['id']]
++    second = deepcopy(first)
++    second.update(decision_input=d2, observed_until=spec['second_through'], tape=[],
++        continuation=dict(previous_decision=previous1, checkpoint=cp1, cancelled_order_ids=ids))
++    record('round2-input', second)
++    r2 = simulate(second)
++    cp2 = make_checkpoint(first['ledger_input'], r2, through_at=second['observed_until'])
++    previous2 = dict(decision=r2['decision_records'][r2['latest_decision_id']])
++    d3, ids = advance(d2, cp2, at=spec['third_at'])
++    asset = d3['assets']['B']; original = deepcopy(first['decision_input']['assets']['B']['evidence'][0])
++    asset['evidence'] = [original]
++    if spec['name']=='alias-after-conflict':
++        original['id'] = 'B-restored-alias'
++        original['fact_link'] = dict(schema='capital-fact-alias/0.1', code='B',
++            **{k:asset[k] for k in ('source_id','basis_id','adjustment_version')},
++            target_id='B-event', target_content_id=fingerprint(first['decision_input']['assets']['B']['evidence'][0]),
++            available_at=d3['data_cutoff'], source_ids=['fixture'])
++    if spec['name']=='independent-new-fact':
++        new = deepcopy(original)
++        new.update(id='B-independent-conflict', event_id='B-independent-conflict',
++            formation_id='B-independent-conflict', volume_bar_id='B-independent-conflict',
++            occurred_at=d3['data_cutoff'], available_at=d3['data_cutoff'])
++        new['validity'].update(valid_from=d3['data_cutoff'], available_at=d3['data_cutoff'])
++        asset['evidence'].append(new)
++        asset['capital_eligibility']['evidence_ids'] = [new['id']]
++    else:
++        asset['capital_eligibility']['evidence_ids'] = [original['id']]
++    concrete = dict(decision_input=d3, previous_decision=previous2, checkpoint=cp2,
++                    cancelled_order_ids=ids, proposed_plan_id='E-partial')
++    record('input', concrete)
++    resumed = resume_decision(previous2, d3, checkpoint=cp2, cancelled_order_ids=ids)
++    execution = None
++    if spec['execute_third']:
++        third = continuation_job(first, r2, previous2, plan='E-partial', fresh=d3, ids=ids)
++        if spec['name']=='future-no-tape':
++            third['tape'] = []
++        if spec['name']=='equal-expiry-revocation':
++            next(o for o in third['orders'] if o['side']=='BUY')['expires_at'] = '2026-01-09T09:01:00+08:00'
++        record('execution-input', third)
++        execution = simulate(third)
++    return dict(resumed=resumed, execution=execution, input=concrete,
++                first_execution=r1, second_execution=r2, checkpoints=[cp1, cp2])
++
++
++def observed(result):
++    d = result['resumed']['decision']; r = result['execution']
++    return dict(B_qualified=d['layer2']['B']['capital_eligibility']['qualified_for_synthetic_proposal'],
++        E_partial_candidate='E-partial' in d['research_recommendation']['candidate_ids'],
++        reasons=d['layer2']['B']['capital_eligibility']['reasons'], new_tokens=d['new_evidence_tokens'],
++        B_order_status=r['order_states']['next-B-buy']['status'] if r else None,
++        new_B_fill_shares=[f['shares'] for f in r['fills'] if f['side']=='BUY' and f['code']=='B' and f['id'] in r['new_fill_ids']] if r else [],
++        third_execution_evaluated=r is not None)
+--- a/股票系統M1_v0_18/capital_research/evidence_conflicts_20261026/prefix_control/generate.py
++++ b/股票系統M1_v0_18/capital_research/evidence_conflicts_20261026/prefix_control/generate.py
+@@ -0,0 +1,30 @@
++"""Save the no-revocation control for the existing future-prefix assertion."""
++import hashlib
++import json
++from pathlib import Path
++from ..fixtures import specification, materialize
++from ..reproduce import save
++
++
++if __name__=='__main__':
++    out=Path(__file__).parent
++    spec=specification('future-revocation')
++    spec['second_fact']['validity']['invalidation']=None
++    save(out/'specification.json',spec)
++    save(out/'first-input.json',spec['first_input'])
++    save(out/'expected.json',dict(numeric_decision_equal=True,raw_fact_sources_equal=False,synthetic=True))
++    save(out/'source-versions.json',dict(
++        engine_sources=json.loads((out.parent/'after-final/source-versions.json').read_text()),
++        generator_sha256=hashlib.sha256(Path(__file__).read_bytes()).hexdigest()))
++    result=materialize(spec,record=lambda tag,value:save(out/(tag+'.json'),value))
++    save(out/'actual.json',dict(resumed=result['resumed'],execution=result['execution'],
++        checkpoint_states=[c['state'] for c in result['checkpoints']]))
++    reference=json.loads((out.parent/'after-final/future-revocation/actual.json').read_text())
++    comparison=dict(numeric_decision_equal=result['resumed']['decision']==reference['resumed']['decision'],
++        raw_fact_sources_equal=result['execution']['fact_sources']==reference['execution']['fact_sources'],
++        numeric_decision_id=result['resumed']['decision']['decision_id'],
++        full_source_integrity_is_outside_numeric_equality=True,synthetic=True,independent_market_samples=0)
++    save(out/'comparison.json',comparison)
++    print(json.dumps(comparison))
++    if not comparison['numeric_decision_equal'] or comparison['raw_fact_sources_equal']:
++        raise SystemExit('Unexpected future-prefix comparison; retain diagnostics')
+--- a/股票系統M1_v0_18/capital_research/evidence_conflicts_20261026/reproduce.py
++++ b/股票系統M1_v0_18/capital_research/evidence_conflicts_20261026/reproduce.py
+@@ -0,0 +1,46 @@
++"""Create-only evidence writer; fixed expected inputs precede all replay calls."""
++import argparse
++import hashlib
++import json
++from pathlib import Path
++from capital_research.core import VERSION as DECISION
++from capital_research.execution import VERSION as EXECUTION
++from capital_research.continuity import CHECKPOINT
++from capital_research.fact_lineage import SCHEMA as HISTORY
++from .fixtures import ROOT, CASES, specification, materialize, observed
++
++
++def save(path, value):
++    path.parent.mkdir(parents=True, exist_ok=True)
++    with path.open('x') as f:
++        json.dump(value, f, ensure_ascii=False, indent=2, allow_nan=False)
++        f.write('\n')
++
++
++def capture(output):
++    out = Path(output)
++    sources = {str(p.relative_to(ROOT)):hashlib.sha256(p.read_bytes()).hexdigest()
++               for p in sorted(ROOT.glob('*.py'))}
++    sources.update({str(p.relative_to(ROOT)):hashlib.sha256(p.read_bytes()).hexdigest()
++                    for p in sorted(Path(__file__).parent.glob('*.py'))})
++    save(out/'source-versions.json', dict(decision=DECISION, execution=EXECUTION,
++        checkpoint=CHECKPOINT, history=HISTORY, sources=sources, synthetic=True))
++    specs = {name:specification(name) for name in CASES}
++    for name, spec in specs.items():
++        save(out/name/'specification.json', spec)
++        save(out/name/'first-input.json', spec['first_input'])
++        save(out/name/'expected.json', spec['expected'])
++    summary = {}
++    for name, spec in specs.items():
++        result = materialize(spec, record=lambda tag, value:save(out/name/(tag+'.json'), value))
++        actual = dict(resumed=result['resumed'], execution=result['execution'],
++            checkpoint_states=[c['state'] for c in result['checkpoints']])
++        save(out/name/'actual.json', actual)
++        summary[name] = observed(result)
++        print(name, json.dumps(summary[name]))
++    save(out/'summary.json', summary)
++
++
++if __name__=='__main__':
++    parser=argparse.ArgumentParser();parser.add_argument('--output',required=True)
++    capture(parser.parse_args().output)
+--- a/股票系統M1_v0_18/capital_research/evidence_conflicts_20261026/test_conflicts.py
++++ b/股票系統M1_v0_18/capital_research/evidence_conflicts_20261026/test_conflicts.py
+@@ -0,0 +1,97 @@
++"""Directed behaviour checks; all values are synthetic, no strategy ranking."""
++from copy import deepcopy
++import json
++import unittest
++from capital_research.continuity import validate_checkpoint
++from .fixtures import CASES, ROOT, specification, materialize, observed
++
++
++class RestrictionConflictTests(unittest.TestCase):
++    @classmethod
++    def setUpClass(cls):
++        cls.results = {name:materialize(specification(name)) for name in CASES}
++
++    def check(self, name):
++        expected = specification(name)['expected']; actual = observed(self.results[name])
++        self.assertEqual(actual['B_qualified'], expected['B_qualified'])
++        self.assertEqual(actual['E_partial_candidate'], expected['E_partial_candidate'])
++        self.assertEqual(not actual['new_tokens'], expected['new_tokens_empty'])
++        self.assertEqual(actual['B_order_status'], expected['B_order_status'])
++        self.assertEqual(actual['new_B_fill_shares'], expected['new_B_fill_shares'])
++        return self.results[name]
++
++    def test_mixed_null_expiry_and_known_revocation_cannot_revive_capital(self):
++        r = self.check('mixed-null-revocation')
++        self.assertTrue(any('RESTRICTION_CONFLICT' in x for x in observed(r)['reasons']))
++
++    def test_extended_finite_expiry_cannot_discard_new_revocation(self):
++        self.check('mixed-later-revocation')
++
++    def test_rejected_value_rewrite_cannot_discard_new_revocation(self):
++        self.check('rejected-value-revocation')
++
++    def test_rejected_value_rewrite_cannot_discard_earlier_expiry(self):
++        self.check('rejected-value-earlier-expiry')
++
++    def test_alias_cannot_escape_the_original_restriction_conflict(self):
++        self.check('alias-after-conflict')
++
++    def test_genuinely_independent_fact_can_compete_without_erasing_conflict(self):
++        r = self.check('independent-new-fact')
++        self.assertTrue(r['resumed']['decision']['fact_history']['restriction_conflicts'])
++
++    def test_exact_valid_original_recovers_after_value_only_rejection(self):
++        self.check('restore-valid-original')
++
++    def test_exact_original_recovers_after_extension_only_rejection(self):
++        self.check('restore-after-extension-only')
++
++    def test_future_conflict_preserves_numeric_prefix_then_cancels_at_known_time(self):
++        r = self.check('future-revocation')
++        plain = specification('future-revocation')
++        plain['second_fact']['validity']['invalidation'] = None
++        baseline = materialize(plain)
++        self.assertEqual(r['resumed']['decision'], baseline['resumed']['decision'])
++        self.assertNotEqual(r['execution']['fact_sources'], baseline['execution']['fact_sources'])
++        event = next(e for e in r['execution']['execution_events'] if e['order_id']=='next-B-buy' and e['status']=='CANCELLED_EVIDENCE')
++        self.assertEqual(event['at'], '2026-01-09T09:01:00+08:00')
++
++    def test_later_available_revocation_does_not_delete_prior_legal_fill(self):
++        self.check('late-revocation')
++
++    def test_simultaneous_expiry_keeps_expired_order_status(self):
++        self.check('equal-expiry-revocation')
++
++    def test_without_tape_conflict_keeps_effective_and_observed_times(self):
++        r = self.check('future-no-tape')
++        event = next(e for e in r['execution']['execution_events'] if e['order_id']=='next-B-buy' and e['status']=='CANCELLED_EVIDENCE')
++        self.assertEqual(event['at'], '2026-01-09T09:01:00+08:00')
++        self.assertEqual(event['observed_at'], r['execution']['observed_until'])
++
++    def test_original_account_rights_reserve_latest_and_old_READ_boundary(self):
++        r = self.results['mixed-null-revocation']; c1,c2=r['checkpoints']
++        self.assertEqual(c1['origin_ledger_input'], c2['origin_ledger_input'])
++        self.assertEqual(c2['state']['origin_initial_capital'], '2180')
++        self.assertEqual(c1['state']['row']['settled_cash'], '1000')
++        self.assertEqual(c2['state']['row']['settled_cash'], '1080')
++        self.assertEqual(c1['state']['row']['shares']['A'], '100')
++        self.assertEqual(c2['state']['row']['shares']['A'], '110')
++        self.assertEqual(c1['state']['row']['cash_receivable'], '80')
++        self.assertEqual(c2['state']['row']['cash_receivable'], '0')
++        for c in (c1,c2):
++            self.assertEqual(c['state']['general_reserved_cash'], '100')
++            self.assertEqual(c['state']['accepted_fills'], [])
++            self.assertEqual(c['state']['unfilled_orders'], [])
++        d = r['resumed']['decision']
++        self.assertEqual(d['continuity']['latest_predecessor_id'], c2['state']['latest_decision_id'])
++        self.assertTrue(set(c2['state']['reviewed_evidence_tokens']) <= set(d['reviewed_evidence_tokens']))
++        self.assertEqual(d['schema'], 'capital-decision/0.6')
++        for flag in ('data_qualified','execution_model_qualified','historical_signal_eligible','policy_authorized','live_execution_authorized'):
++            self.assertFalse(d[flag])
++        self.assertIsNone(d['primary_pressure_id'])
++        old = json.loads((ROOT/'evidence_lineage_20261025/after-final/valid-old-fact/input.json').read_text())
++        with self.assertRaisesRegex(ValueError, 'Versioned lifecycle checkpoint required'):
++            validate_checkpoint(old['next']['continuation']['checkpoint'])
++
++
++if __name__=='__main__':unittest.main()
+--- a/股票系統M1_v0_18/capital_research/evidence_conflicts_20261026/verify.py
++++ b/股票系統M1_v0_18/capital_research/evidence_conflicts_20261026/verify.py
+@@ -0,0 +1,28 @@
++"""New directed cases plus selected regressions, never an old complete suite."""
++import sys
++import unittest
++
++TESTS = [
++    'capital_research.evidence_conflicts_20261026.test_conflicts',
++    *['capital_research.evidence_lineage_20261025.test_lineage.FactLineageTests.'+name for name in (
++        'test_rejected_rewrite_does_not_permanently_taint_unchanged_valid_fact',
++        'test_valid_old_fact_keeps_identity_and_does_not_become_new_event',
++        'test_independent_new_fact_does_not_erase_or_inherit_old_invalidity',
++        'test_future_revocation_is_absent_from_numeric_prefix_but_kept_in_integrity',
++        'test_finite_expiry_cannot_be_removed_or_extended',
++        'test_explicit_alias_preserves_the_original_revocation',
++    )],
++    *['capital_research.repair_20261025.test_repairs.RepairTests.'+name for name in (
++        'test_reassessment_then_another_execution_keeps_all_fills_and_tokens',
++        'test_partial_fills_cancel_and_continue_without_losing_claims_or_reserves',
++        'test_partial_fills_expire_and_continue_without_inventing_cancellation',
++    )],
++    'capital_research.repair_ab_20261025.test_ab.ABTests.test_foreign_evidence_rejects_buy_and_recommendation_in_both_asset_orders',
++    'capital_research.repair_ab_20261025.test_ab.ABTests.test_delayed_cancellation_refuses_before_new_execution_and_keeps_old_reserve',
++    'capital_research.test_mechanisms.MechanismTests.test_cli_READ_never_imports_or_recalculates_engines',
++]
++
++
++if __name__=='__main__':
++    result=unittest.TextTestRunner(verbosity=2).run(unittest.defaultTestLoader.loadTestsFromNames(TESTS))
++    sys.exit(0 if result.wasSuccessful() else 1)
+--- a/股票系統M1_v0_18/capital_research/execution.py
++++ b/股票系統M1_v0_18/capital_research/execution.py
+@@ -14,7 +14,7 @@
+ from .eligibility import expired_entry_reasons
+ from .fact_lineage import source_snapshot, history_at, asset_issues, first_issue_at
+ 
+-VERSION = 'capital-execution/0.5'
++VERSION = 'capital-execution/0.6'
+ 
+ 
+ def _refusal(reason):
+@@ -368,6 +368,6 @@
+             predecessor_state=j.get('continuation',{}).get('checkpoint',{}).get('state_id'))))
+     if len(set(identities)) != 1:
+         raise ValueError('Alternatives must share exact capital/rights AND exogenous prices/capacity/states/availability/settlement path')
+-    return dict(schema='capital-comparison/0.5', synthetic=True, common_input_id=identities[0],
++    return dict(schema='capital-comparison/0.6', synthetic=True, common_input_id=identities[0],
+                 results={k:simulate(j) for k,j in jobs.items()}, ranking=None,
+                 total_net_return_comparison_qualified=False, policy_authorized=False)
+--- a/股票系統M1_v0_18/capital_research/fact_lineage.py
++++ b/股票系統M1_v0_18/capital_research/fact_lineage.py
+@@ -7,7 +7,7 @@
+ from graph_core.core import fingerprint
+ from .eligibility import _time, known_fact, validity_status
+ 
+-SCHEMA = 'capital-fact-history/0.1'
++SCHEMA = 'capital-fact-history/0.2'
+ BINDING = ('source_id', 'basis_id', 'adjustment_version')
+ 
+ 
+@@ -69,6 +69,25 @@
+         if b['valid_until'] is None or _time(b['valid_until']) > _time(a['valid_until']): return False
+     if a['invalidation'] is not None and a['invalidation'] != b['invalidation']: return False
+     return True
++
++
++def additional_restrictions(old, new):
++    """Known restrictive claims cannot disappear with an otherwise rejected edit.
++
++    These are unresolved claims, not certified corrections to the accepted root.
++    Future revocations have already been removed by visible().
++    """
++    a, b = old.get('validity'), new.get('validity')
++    if b is None: return []
++    fields = []
++    if b['invalidation'] is not None and (a is None or b['invalidation'] != a['invalidation']):
++        fields.append('invalidation')
++    if b['valid_until'] is not None and (a is None or a['valid_until'] is None
++            or _time(b['valid_until']) < _time(a['valid_until'])):
++        fields.append('valid_until')
++    if a is not None and _time(b['valid_from']) > _time(a['valid_from']):
++        fields.append('valid_from')
++    return fields
+ 
+ 
+ def history_at(sources, at):
+@@ -98,6 +117,7 @@
+                     f = visible(fact, source['data_cutoff'], when.isoformat())
+                     events.append((when, key_of(row['identity']), fingerprint(f), row['identity'], f))
+     roots, aliases, unresolved, rejected, observations = {}, {}, {}, {}, []
++    restriction_conflicts = {}
+     seen = set()
+     for when, key, content_id, ident, fact in sorted(events, key=lambda e: e[:3]):
+         if (key, content_id) in seen:
+@@ -143,6 +163,16 @@
+         if reasons:
+             rejected[key] = reasons
+             if root is None: unresolved[key] = reasons
++            elif all(roots[root]['identity'][k] == ident[k] for k in ('code', 'kind', *BINDING)):
++                fields = additional_restrictions(roots[root]['fact'], fact)
++                if fields:
++                    # Validate explicit same-source metadata; do not certify the
++                    # rejected revision, but do not silently discard its limits.
++                    validity_status(fact, when.isoformat(), when.isoformat())
++                    restriction_conflicts.setdefault(root, []).append(dict(
++                        observed_at=when.isoformat(), identity=deepcopy(ident),
++                        content_id=content_id, restriction_fields=fields,
++                        validity=deepcopy(fact['validity']), reasons=list(reasons)))
+         else:
+             if root is None:
+                 root = key; aliases[key] = key
+@@ -154,7 +184,8 @@
+         observations.append(dict(observed_at=when.isoformat(), identity=deepcopy(ident),
+             fact=deepcopy(fact), content_id=content_id, reasons=reasons))
+     result = dict(schema=SCHEMA, observations=observations, roots=roots,
+-                  aliases=aliases, unresolved=unresolved, rejected=rejected)
++                  aliases=aliases, unresolved=unresolved, rejected=rejected,
++                  restriction_conflicts=restriction_conflicts)
+     result['history_id'] = fingerprint(result)
+     return result
+ 
+@@ -166,6 +197,8 @@
+     root = history['aliases'].get(key)
+     if root is None: reasons.append('FACT_IDENTITY_UNKNOWN')
+     else:
++        if history['restriction_conflicts'].get(root):
++            reasons.append('FACT_RESTRICTION_CONFLICT_UNKNOWN')
+         status = validity_status(history['roots'][root]['fact'], at, at)
+         if status not in ('WITHIN_DECLARED_INTERVAL', 'ONGOING_REQUIRES_CURRENT_REVIEW'):
+             reasons.append('FACT_HISTORY_' + status)

@@ -1,0 +1,53 @@
+{
+  "observed_at": "2026-10-23T15:02:01.322346+00:00",
+  "source_sha256": "ac8340b658018958e500f576bdc7605475cea0f48dac010e2c5251a1750aa310",
+  "existing_catalog_path": "股票系統M1_v0_18/rotation_research/action_resolution_20261023/events-v04.json",
+  "existing_catalog_file_sha256": "f7cf85c0f882c0691df62fd2c63ec13c8df0d4c39b6f06a7be4501be232d8d69",
+  "ordinary_company_schedule_cross_checks": [
+    {
+      "security_code": "1101",
+      "ex_trading_calendar_year": "2026",
+      "ctbc_source_line": 84,
+      "existing_event_id": "sha256:b7ba974b62bad201a1757c3b8dc2015ae9a43d35f55c352bf0929c65cd2b0bd5",
+      "existing_catalog_id": "sha256:fff935c6816e415c03304f1436c845f4ac95e6e0d74795745cf61571de7e07fa",
+      "existing_source_path": "股票系統M1_v0_18/rotation_research/action_resolution_20261023/events-v04.json",
+      "checks": {
+        "reported_amount_equal": true,
+        "ex_date_equal": true,
+        "company_pay_date_equal": true
+      },
+      "last_transfer_date_not_record_date": true,
+      "old_record_date": null,
+      "existing_net_per_share": null,
+      "new_ledger_event": false
+    },
+    {
+      "security_code": "1101",
+      "ex_trading_calendar_year": "2025",
+      "ctbc_source_line": 124,
+      "existing_event_id": "sha256:01df5dd4c25df56baa28b725845678043e4809abf08e15cb19bab046ad92902f",
+      "existing_catalog_id": "sha256:fff935c6816e415c03304f1436c845f4ac95e6e0d74795745cf61571de7e07fa",
+      "existing_source_path": "股票系統M1_v0_18/rotation_research/action_resolution_20261023/events-v04.json",
+      "checks": {
+        "reported_amount_equal": true,
+        "ex_date_equal": true,
+        "company_pay_date_equal": true
+      },
+      "last_transfer_date_not_record_date": true,
+      "old_record_date": null,
+      "existing_net_per_share": null,
+      "new_ledger_event": false
+    }
+  ],
+  "preferred_rows_scope": "ARCHIVAL_ONLY_NOT_ORDINARY_GRANTS_OR_PRECISION_OVERRIDE",
+  "new_company_schedule_values_needed_by_current_product": false,
+  "additional_source_information": "LAST_TRANSFER_DATE_REPORTED_DISTINCT_FROM_RECORD_DATE",
+  "decision": "ARCHIVE_COMPANY_SOURCE_CORROBORATION_NO_PRODUCT_CHANGE_NO_011",
+  "reason": "Ordinary amount/ex/payment already match saved events; new agent table does not resolve personal receipt, opening entitlement, final adjustment or full coverage",
+  "numeric_ledger_events_added": 0,
+  "independent_market_samples_added": 0,
+  "new_catalog": false,
+  "parent_nulls_changed": false,
+  "product_tests_run": 0,
+  "producer_or_qualification_rerun": false
+}

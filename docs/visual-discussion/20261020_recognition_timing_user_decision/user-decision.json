@@ -1,0 +1,42 @@
+{
+  "schema": "m1-recognition-timing-user-decision/1",
+  "status": "USER_CONFIRMED_DO_NOT_REASK",
+  "user_time": "2026-10-20T21:46:37+08:00",
+  "user_quote": "足夠辨認了",
+  "responds_to": {
+    "question": "只看截至10/7的資料，是否已足以辨認這個整理區間？還需要10/7以後更多K線才足夠？",
+    "code": "2884",
+    "cutoff": "2026-10-07",
+    "visual_page": 2,
+    "source_commit": "451205fea00d91f5c5a89dc4a2ddb70ef9fef910"
+  },
+  "confirmed": {
+    "recognizable_consolidation_by_shown_cutoff": true,
+    "full_chart_consolidation_previously_confirmed": true,
+    "need_to_wait_for_Oct15_later_rise_for_this_case_label": false
+  },
+  "direct_prefix_labels": {
+    "2026-10-07": {
+      "sufficient": true,
+      "source": "USER_CONFIRMED"
+    },
+    "2026-10-14": {
+      "sufficient": null,
+      "source": "NOT_SEPARATELY_ADJUDICATED"
+    }
+  },
+  "not_confirmed": {
+    "earliest_recognition_date": null,
+    "earlier_than_Oct7_insufficient": null,
+    "formal_interval_start_end": null,
+    "formal_price_bounds": null,
+    "formal_membership": null,
+    "general_detector": null,
+    "classification_accuracy": null
+  },
+  "review_qualification": "RETROSPECTIVE_TRUNCATED_REVIEW_NOT_BLIND",
+  "historical_selection_time": null,
+  "historical_signal_eligible": false,
+  "primary_pressure_id": null
+}
+

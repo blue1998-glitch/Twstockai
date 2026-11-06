@@ -1,0 +1,35 @@
+{
+  "reviewed_on_taipei": "2026-10-21",
+  "status": "PARTIAL_DOCUMENT_REVIEW_NOT_FULL_ACTION_AUTHENTICATION",
+  "issuer_page": {
+    "url": "https://www.esunfhc.com/zh-tw/investor-relations/shareholders/shareholder-Information",
+    "observed_2026_cash_dividend_per_share": "1.4",
+    "observed_record_date": "2026-07-07",
+    "observed_payment_date": "2026-07-27",
+    "record_date_is_not_ex_trading_date": true,
+    "web_source_ref": "turn1view0",
+    "historical_publication_time_authenticated": false
+  },
+  "secondary_date_correspondence": {
+    "reported_ex_date": "2026-07-01",
+    "reported_cash_dividend": "1.4",
+    "sources": [
+      "https://www.wantgoo.com/stock/2884/dividend-policy/ex-dividend",
+      "https://news.cnyes.com/news/id/6510558",
+      "https://goodinfo.tw/tw/StockDividendSchedule.asp?STOCK_ID=2884"
+    ],
+    "status": "CORROBORATED_SECONDARY_REPORTS_NOT_AUTHENTICATED_EXCHANGE_EVENT_ROW"
+  },
+  "unsuccessful_official_reads": [
+    {"url": "https://www.twse.com.tw/exchangeReport/TWT48U?response=json&date=20260701", "result": "not accessible via web tool"},
+    {"url": "https://www.twse.com.tw/exchangeReport/TWT49U?response=json&strDate=20260701&endDate=20260701", "result": "not accessible via web tool; legacy parameter spelling not treated as a valid empty response"},
+    {"url": "https://www.twse.com.tw/rwd/zh/exRight/TWT49U?startDate=20260701&endDate=20260701&response=json", "result": "not accessible via web tool"},
+    {"url": "https://www.esunfhc.com/zh-tw/investor-relations/company-overview/material-information", "result": "redirected to MOPS landing page without event detail"}
+  ],
+  "effect": "Do not call July 1 raw gap an economic breakdown or transfer pre-action raw references unchanged into July reaction labels. Study July-local sources separately; retain broad context.",
+  "full_adjustment_chain_verified": false,
+  "adjusted_price_series_created": false,
+  "original_raw_prices_or_source_gap_metadata_modified": false,
+  "no_new_actions_claimed_absent_in_july_local_interval": true,
+  "july_local_interpretation_scope": "saved raw observations only, no certified uninterrupted action-free regime"
+}

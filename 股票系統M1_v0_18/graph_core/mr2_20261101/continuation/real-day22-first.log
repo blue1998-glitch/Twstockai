@@ -1,0 +1,87 @@
+{
+  "storage_status": "SAVED_AND_READ_BACK",
+  "research_status": "PARTIAL",
+  "summary": {
+    "schema_version": "graph-market-diary-public-summary/0.1",
+    "producer_version": "graph-market-research-diary/0.1",
+    "as_of": "2026-07-22",
+    "real_research_connection": "PARTIAL",
+    "joined_research_dates": 2,
+    "daily_entries": [
+      {
+        "code": "2884",
+        "analysis_date": "2026-07-21",
+        "market_join_status": "RETROSPECTIVE_RESEARCH_SUMMARIES_JOINED_NOT_ORIGINAL_REVERIFICATION",
+        "market_observation_dates": {
+          "TPEX": "2026-07-21",
+          "TWSE": "2026-07-21"
+        },
+        "market_source_roles": {
+          "TPEX": "DIRECTOR_READBACK_RESEARCH_SUMMARY",
+          "TWSE": "DIRECTOR_READBACK_RESEARCH_SUMMARY"
+        },
+        "event_count": 0,
+        "original_event_types": [],
+        "occurred_at": [],
+        "first_observed_at": [],
+        "confirmed_at": [],
+        "initial_followup_statuses": [],
+        "basis_break_dates": [
+          "2026-07-01"
+        ],
+        "original_events_and_graph_preserved": true,
+        "historical_available_at": "UNKNOWN"
+      },
+      {
+        "code": "2884",
+        "analysis_date": "2026-07-22",
+        "market_join_status": "RETROSPECTIVE_RESEARCH_SUMMARIES_JOINED_NOT_ORIGINAL_REVERIFICATION",
+        "market_observation_dates": {
+          "TPEX": "2026-07-22",
+          "TWSE": "2026-07-22"
+        },
+        "market_source_roles": {
+          "TPEX": "DIRECTOR_READBACK_RESEARCH_SUMMARY",
+          "TWSE": "DIRECTOR_READBACK_RESEARCH_SUMMARY"
+        },
+        "event_count": 1,
+        "original_event_types": [
+          "HIGH"
+        ],
+        "occurred_at": [
+          "2026-07-21"
+        ],
+        "first_observed_at": [
+          "2026-07-22"
+        ],
+        "confirmed_at": [
+          "2026-07-22"
+        ],
+        "initial_followup_statuses": [
+          "IMMATURE"
+        ],
+        "basis_break_dates": [
+          "2026-07-01"
+        ],
+        "original_events_and_graph_preserved": true,
+        "historical_available_at": "UNKNOWN"
+      }
+    ],
+    "official_market_reverification": "NOT_PERFORMED",
+    "original_market_reports_read_by_codex": false,
+    "historical_available_at": "UNKNOWN",
+    "strict_common_stock_universe": "UNKNOWN",
+    "redistribution_permission": "UNKNOWN",
+    "all_market_success_rate": null,
+    "all_market_failure_rate": null,
+    "real_net_performance": null,
+    "qualification": {
+      "data_qualified": false,
+      "execution_model_qualified": false,
+      "historical_signal_eligible": false,
+      "policy_authorized": false,
+      "live_execution_authorized": false
+    },
+    "primary_pressure_id": null
+  }
+}

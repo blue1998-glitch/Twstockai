@@ -1,0 +1,16 @@
+{
+  "error": "page.selectOption: Timeout 30000ms exceeded.\nCall log:\n\u001b[2m  - waiting for locator('#radarType')\u001b[22m\n\u001b[2m    - locator resolved to <select id=\"radarType\" aria-label=\"事件類別\">…</select>\u001b[22m\n\u001b[2m  - attempting select option action\u001b[22m\n\u001b[2m    2 × waiting for element to be visible and enabled\u001b[22m\n\u001b[2m      - did not find some options\u001b[22m\n\u001b[2m    - retrying select option action\u001b[22m\n\u001b[2m    - waiting 20ms\u001b[22m\n\u001b[2m    2 × waiting for element to be visible and enabled\u001b[22m\n\u001b[2m      - did not find some options\u001b[22m\n\u001b[2m    - retrying select option action\u001b[22m\n\u001b[2m      - waiting 100ms\u001b[22m\n\u001b[2m    27 × waiting for element to be visible and enabled\u001b[22m\n\u001b[2m       - did not find some options\u001b[22m\n\u001b[2m     - retrying select option action\u001b[22m\n\u001b[2m       - waiting 500ms\u001b[22m\n\u001b[2m    - waiting for element to be visible and enabled\u001b[22m\n\n    at /workspace/Twstockai/股票系統M1_v0_18/graph_core/obs1_20261102/test_ui.cjs:7:609",
+  "checks": [
+    {
+      "width": 320,
+      "check": "default date, distinct-stock count vs original candidate count, overflow",
+      "status": "PASS"
+    },
+    {
+      "width": 320,
+      "check": "market/date/type, all IDs expandable, original box focus/evidence, return",
+      "status": "PASS"
+    }
+  ],
+  "errors": []
+}

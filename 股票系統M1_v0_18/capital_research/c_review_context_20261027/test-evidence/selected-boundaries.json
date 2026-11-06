@@ -1,0 +1,389 @@
+[
+  {
+    "case": "review-unknown",
+    "status": "REPLAYED_REJECTED_REVIEW",
+    "reasons": [
+      "NEW_CAPITAL_NOT_QUALIFIED:B"
+    ],
+    "order_state": {
+      "remaining": "20",
+      "status": "WAITING_REASSESSMENT",
+      "reserved_cash": "0",
+      "requires_reassessment": true,
+      "active_decision_at": "2026-01-05T15:00:00+08:00",
+      "active_decision_id": "sha256:18e39991b321500610b4f2237fca92978370353e8f17c6ec326a304240fc6406"
+    },
+    "events": [
+      {
+        "at": "2026-01-06T09:00:00+08:00",
+        "order_id": "r1-B",
+        "status": "WAITING_REASSESSMENT",
+        "reason": "NEW_ACCOUNT_EVIDENCE_CUTOFF_AND_DECISION_ID_REQUIRED"
+      },
+      {
+        "at": "2026-01-06T09:00:00+08:00",
+        "order_id": "r1-A",
+        "status": "FILLED",
+        "fill_id": "r1-A-fill-0",
+        "decision_id": "sha256:18e39991b321500610b4f2237fca92978370353e8f17c6ec326a304240fc6406",
+        "reserved_cash_total": "0",
+        "remaining": "0"
+      },
+      {
+        "at": "2026-01-06T09:00:30+08:00",
+        "order_id": "r1-B",
+        "status": "WAITING_REASSESSMENT",
+        "reason": "NEW_ACCOUNT_EVIDENCE_CUTOFF_AND_DECISION_ID_REQUIRED"
+      },
+      {
+        "at": "2026-01-06T09:01:00+08:00",
+        "order_id": "r1-B",
+        "status": "WAITING_REASSESSMENT",
+        "reason": "NEW_ACCOUNT_EVIDENCE_CUTOFF_AND_DECISION_ID_REQUIRED"
+      },
+      {
+        "at": "2026-01-09T09:00:00+08:00",
+        "order_id": "r1-B",
+        "status": "WAITING_REASSESSMENT",
+        "reason": "NEW_ACCOUNT_EVIDENCE_CUTOFF_AND_DECISION_ID_REQUIRED"
+      },
+      {
+        "at": "2026-01-09T09:00:30+08:00",
+        "order_id": "r1-B",
+        "status": "WAITING_REASSESSMENT",
+        "reason": "NEW_ACCOUNT_EVIDENCE_CUTOFF_AND_DECISION_ID_REQUIRED"
+      },
+      {
+        "at": "2026-01-09T09:01:00+08:00",
+        "order_id": "r1-B",
+        "status": "WAITING_REASSESSMENT",
+        "reason": "NEW_DECISION_NOT_FEASIBLE_AND_SETTLED",
+        "reassessment_attempt_id": "sha256:0f9a09cf7e0248afab11a6e77c1c61fb9a59211549f86155c4b552b24af0fb62"
+      },
+      {
+        "at": "2026-01-09T09:01:00+08:00",
+        "order_id": "r1-B",
+        "status": "WAITING_REASSESSMENT",
+        "reason": "NEW_ACCOUNT_EVIDENCE_CUTOFF_AND_DECISION_ID_REQUIRED"
+      }
+    ],
+    "actual_reference": {
+      "path": "capital_research/c_order_review_20261026/after-checkpoint-fix/unknown-current-eligibility/actual.json",
+      "bytes": 572860,
+      "sha256": "d42e1d76b5698d7b2cddeb0f0ebdce8a844685a91068cd24fa2b2ead8270aeb3"
+    }
+  },
+  {
+    "case": "review-partial-cancel",
+    "status": "REPLAYED_ACCEPTED_REVIEW",
+    "reasons": [],
+    "order_state": {
+      "remaining": "13",
+      "status": "CANCELLED_EVIDENCE",
+      "reserved_cash": "0",
+      "requires_reassessment": false,
+      "active_decision_at": "2026-01-08T17:00:00+08:00",
+      "active_decision_id": "sha256:b9463f47f1c7d562b732b41dae305130b7491bc289b9dc44d940ded7713d1404"
+    },
+    "events": [
+      {
+        "at": "2026-01-06T09:00:00+08:00",
+        "order_id": "r1-B",
+        "status": "WAITING_REASSESSMENT",
+        "reason": "NEW_ACCOUNT_EVIDENCE_CUTOFF_AND_DECISION_ID_REQUIRED"
+      },
+      {
+        "at": "2026-01-06T09:00:00+08:00",
+        "order_id": "r1-A",
+        "status": "FILLED",
+        "fill_id": "r1-A-fill-0",
+        "decision_id": "sha256:18e39991b321500610b4f2237fca92978370353e8f17c6ec326a304240fc6406",
+        "reserved_cash_total": "0",
+        "remaining": "0"
+      },
+      {
+        "at": "2026-01-06T09:00:30+08:00",
+        "order_id": "r1-B",
+        "status": "WAITING_REASSESSMENT",
+        "reason": "NEW_ACCOUNT_EVIDENCE_CUTOFF_AND_DECISION_ID_REQUIRED"
+      },
+      {
+        "at": "2026-01-06T09:01:00+08:00",
+        "order_id": "r1-B",
+        "status": "WAITING_REASSESSMENT",
+        "reason": "NEW_ACCOUNT_EVIDENCE_CUTOFF_AND_DECISION_ID_REQUIRED"
+      },
+      {
+        "at": "2026-01-09T09:00:00+08:00",
+        "order_id": "r1-B",
+        "status": "WAITING_REASSESSMENT",
+        "reason": "NEW_ACCOUNT_EVIDENCE_CUTOFF_AND_DECISION_ID_REQUIRED"
+      },
+      {
+        "at": "2026-01-09T09:00:30+08:00",
+        "order_id": "r1-B",
+        "status": "WAITING_REASSESSMENT",
+        "reason": "NEW_ACCOUNT_EVIDENCE_CUTOFF_AND_DECISION_ID_REQUIRED"
+      },
+      {
+        "at": "2026-01-09T09:01:00+08:00",
+        "order_id": "r1-B",
+        "status": "PARTIAL",
+        "fill_id": "r1-B-fill-1",
+        "decision_id": "sha256:b9463f47f1c7d562b732b41dae305130b7491bc289b9dc44d940ded7713d1404",
+        "reserved_cash_total": "261.65039",
+        "remaining": "13"
+      },
+      {
+        "at": "2026-01-12T09:01:00+08:00",
+        "observed_at": "2026-01-12T09:01:00+08:00",
+        "order_id": "r1-B",
+        "status": "CANCELLED_EVIDENCE",
+        "reason": "DECLARED_VALIDITY_ENDED",
+        "details": [
+          "B-event:INVALIDATED",
+          "FACT_HISTORY_INVALIDATED"
+        ]
+      }
+    ],
+    "actual_reference": {
+      "path": "capital_research/c_order_review_20261026/after-checkpoint-fix/future-revocation-known-after-partial/actual.json",
+      "bytes": 669376,
+      "sha256": "f8976e827dc63c12c151e4387bdc76fbcbcf0aabb38d730e6e890f2eb72333e8"
+    }
+  },
+  {
+    "case": "review-wrong-order",
+    "status": "STOPPED_INPUT_ERROR",
+    "reasons": [
+      "OWN_LAST_ROUND_CONDITIONAL_ORDER_REQUIRED"
+    ],
+    "order_state": null,
+    "events": null,
+    "actual_reference": {
+      "path": "capital_research/c_order_review_20261026/after-checkpoint-fix/wrong-order-id/actual.json",
+      "bytes": 125274,
+      "sha256": "a11f7cf0f38caaefeac958443781b0d6fbf8ee22a163c506f0d10e1b63b45013"
+    }
+  },
+  {
+    "case": "retry-unknown",
+    "status": "REPLAYED_REJECTED_REVIEW",
+    "reasons": [
+      "NEW_CAPITAL_NOT_QUALIFIED:B"
+    ],
+    "order_state": {
+      "remaining": "20",
+      "status": "EXPIRED_UNFILLED",
+      "reserved_cash": "0",
+      "requires_reassessment": true,
+      "active_decision_at": "2026-01-05T15:00:00+08:00",
+      "active_decision_id": "sha256:18e39991b321500610b4f2237fca92978370353e8f17c6ec326a304240fc6406"
+    },
+    "events": [
+      {
+        "at": "2026-01-06T09:00:00+08:00",
+        "order_id": "r1-B",
+        "status": "WAITING_REASSESSMENT",
+        "reason": "NEW_ACCOUNT_EVIDENCE_CUTOFF_AND_DECISION_ID_REQUIRED"
+      },
+      {
+        "at": "2026-01-06T09:00:00+08:00",
+        "order_id": "r1-A",
+        "status": "FILLED",
+        "fill_id": "r1-A-fill-0",
+        "decision_id": "sha256:18e39991b321500610b4f2237fca92978370353e8f17c6ec326a304240fc6406",
+        "reserved_cash_total": "0",
+        "remaining": "0"
+      },
+      {
+        "at": "2026-01-06T09:00:30+08:00",
+        "order_id": "r1-B",
+        "status": "WAITING_REASSESSMENT",
+        "reason": "NEW_ACCOUNT_EVIDENCE_CUTOFF_AND_DECISION_ID_REQUIRED"
+      },
+      {
+        "at": "2026-01-06T09:01:00+08:00",
+        "order_id": "r1-B",
+        "status": "WAITING_REASSESSMENT",
+        "reason": "NEW_ACCOUNT_EVIDENCE_CUTOFF_AND_DECISION_ID_REQUIRED"
+      },
+      {
+        "at": "2026-01-09T09:00:00+08:00",
+        "order_id": "r1-B",
+        "status": "WAITING_REASSESSMENT",
+        "reason": "NEW_ACCOUNT_EVIDENCE_CUTOFF_AND_DECISION_ID_REQUIRED"
+      },
+      {
+        "at": "2026-01-09T09:00:30+08:00",
+        "order_id": "r1-B",
+        "status": "WAITING_REASSESSMENT",
+        "reason": "NEW_ACCOUNT_EVIDENCE_CUTOFF_AND_DECISION_ID_REQUIRED"
+      },
+      {
+        "at": "2026-01-09T09:01:00+08:00",
+        "order_id": "r1-B",
+        "status": "WAITING_REASSESSMENT",
+        "reason": "NEW_DECISION_NOT_FEASIBLE_AND_SETTLED",
+        "reassessment_attempt_id": "sha256:0f9a09cf7e0248afab11a6e77c1c61fb9a59211549f86155c4b552b24af0fb62"
+      },
+      {
+        "at": "2026-01-09T09:01:00+08:00",
+        "order_id": "r1-B",
+        "status": "WAITING_REASSESSMENT",
+        "reason": "NEW_ACCOUNT_EVIDENCE_CUTOFF_AND_DECISION_ID_REQUIRED"
+      },
+      {
+        "at": "2026-01-12T09:00:00+08:00",
+        "order_id": "r1-B",
+        "status": "WAITING_REASSESSMENT",
+        "reason": "NEW_ACCOUNT_EVIDENCE_CUTOFF_AND_DECISION_ID_REQUIRED"
+      },
+      {
+        "at": "2026-01-12T09:00:30+08:00",
+        "order_id": "r1-B",
+        "status": "WAITING_REASSESSMENT",
+        "reason": "NEW_ACCOUNT_EVIDENCE_CUTOFF_AND_DECISION_ID_REQUIRED"
+      },
+      {
+        "at": "2026-01-12T09:01:00+08:00",
+        "order_id": "r1-B",
+        "status": "WAITING_REASSESSMENT",
+        "reason": "NEW_DECISION_NOT_FEASIBLE_AND_SETTLED",
+        "reassessment_attempt_id": "sha256:3c7b1bee6b47646e76961d14c9dde53c9e653a4daf026eb25ee7f93bb049a3cd"
+      },
+      {
+        "at": "2026-01-12T09:01:00+08:00",
+        "order_id": "r1-B",
+        "status": "WAITING_REASSESSMENT",
+        "reason": "NEW_ACCOUNT_EVIDENCE_CUTOFF_AND_DECISION_ID_REQUIRED"
+      },
+      {
+        "at": "2026-01-12T16:00:00+08:00",
+        "order_id": "r1-B",
+        "status": "EXPIRED_UNFILLED",
+        "reason": "EXPLICIT_ORDER_DEADLINE",
+        "remaining": "20"
+      }
+    ],
+    "actual_reference": {
+      "path": "capital_research/c_order_retry_20261027/initial/still-unknown/actual.json",
+      "bytes": 806370,
+      "sha256": "671a6b4f95d23235e0cb4f815ae4f4c13f8b96dcac4230c74c299b5f776a47c5"
+    }
+  },
+  {
+    "case": "retry-partial",
+    "status": "REPLAYED_ACCEPTED_REVIEW",
+    "reasons": [],
+    "order_state": {
+      "remaining": "13",
+      "status": "EXPIRED_UNFILLED",
+      "reserved_cash": "0",
+      "requires_reassessment": false,
+      "active_decision_at": "2026-01-09T17:00:00+08:00",
+      "active_decision_id": "sha256:f03924f56d36f1ef856520caf25f3d5103335e63e94dddfdcb5ce37e4fa527a5"
+    },
+    "events": [
+      {
+        "at": "2026-01-06T09:00:00+08:00",
+        "order_id": "r1-B",
+        "status": "WAITING_REASSESSMENT",
+        "reason": "NEW_ACCOUNT_EVIDENCE_CUTOFF_AND_DECISION_ID_REQUIRED"
+      },
+      {
+        "at": "2026-01-06T09:00:00+08:00",
+        "order_id": "r1-A",
+        "status": "FILLED",
+        "fill_id": "r1-A-fill-0",
+        "decision_id": "sha256:18e39991b321500610b4f2237fca92978370353e8f17c6ec326a304240fc6406",
+        "reserved_cash_total": "0",
+        "remaining": "0"
+      },
+      {
+        "at": "2026-01-06T09:00:30+08:00",
+        "order_id": "r1-B",
+        "status": "WAITING_REASSESSMENT",
+        "reason": "NEW_ACCOUNT_EVIDENCE_CUTOFF_AND_DECISION_ID_REQUIRED"
+      },
+      {
+        "at": "2026-01-06T09:01:00+08:00",
+        "order_id": "r1-B",
+        "status": "WAITING_REASSESSMENT",
+        "reason": "NEW_ACCOUNT_EVIDENCE_CUTOFF_AND_DECISION_ID_REQUIRED"
+      },
+      {
+        "at": "2026-01-09T09:00:00+08:00",
+        "order_id": "r1-B",
+        "status": "WAITING_REASSESSMENT",
+        "reason": "NEW_ACCOUNT_EVIDENCE_CUTOFF_AND_DECISION_ID_REQUIRED"
+      },
+      {
+        "at": "2026-01-09T09:00:30+08:00",
+        "order_id": "r1-B",
+        "status": "WAITING_REASSESSMENT",
+        "reason": "NEW_ACCOUNT_EVIDENCE_CUTOFF_AND_DECISION_ID_REQUIRED"
+      },
+      {
+        "at": "2026-01-09T09:01:00+08:00",
+        "order_id": "r1-B",
+        "status": "WAITING_REASSESSMENT",
+        "reason": "NEW_DECISION_NOT_FEASIBLE_AND_SETTLED",
+        "reassessment_attempt_id": "sha256:0f9a09cf7e0248afab11a6e77c1c61fb9a59211549f86155c4b552b24af0fb62"
+      },
+      {
+        "at": "2026-01-09T09:01:00+08:00",
+        "order_id": "r1-B",
+        "status": "WAITING_REASSESSMENT",
+        "reason": "NEW_ACCOUNT_EVIDENCE_CUTOFF_AND_DECISION_ID_REQUIRED"
+      },
+      {
+        "at": "2026-01-12T09:00:00+08:00",
+        "order_id": "r1-B",
+        "status": "WAITING_REASSESSMENT",
+        "reason": "NEW_ACCOUNT_EVIDENCE_CUTOFF_AND_DECISION_ID_REQUIRED"
+      },
+      {
+        "at": "2026-01-12T09:00:30+08:00",
+        "order_id": "r1-B",
+        "status": "WAITING_REASSESSMENT",
+        "reason": "NEW_ACCOUNT_EVIDENCE_CUTOFF_AND_DECISION_ID_REQUIRED"
+      },
+      {
+        "at": "2026-01-12T09:01:00+08:00",
+        "order_id": "r1-B",
+        "status": "PARTIAL",
+        "fill_id": "r1-B-fill-1",
+        "decision_id": "sha256:f03924f56d36f1ef856520caf25f3d5103335e63e94dddfdcb5ce37e4fa527a5",
+        "reserved_cash_total": "261.65039",
+        "remaining": "13"
+      },
+      {
+        "at": "2026-01-12T16:00:00+08:00",
+        "order_id": "r1-B",
+        "status": "EXPIRED_UNFILLED",
+        "reason": "EXPLICIT_ORDER_DEADLINE",
+        "remaining": "13"
+      }
+    ],
+    "actual_reference": {
+      "path": "capital_research/c_order_retry_20261027/initial/partial-seven/actual.json",
+      "bytes": 879777,
+      "sha256": "12156b68c572f394d32d0ee97187ef2a23c10c3c04cb8b4f59b299a4a9d26733"
+    }
+  },
+  {
+    "case": "retry-wrong-predecessor",
+    "status": "STOPPED_INPUT_ERROR",
+    "reasons": [
+      "EXACT_RETRY_PREDECESSOR_REQUIRED"
+    ],
+    "order_state": null,
+    "events": null,
+    "actual_reference": {
+      "path": "capital_research/c_order_retry_20261027/initial/wrong-predecessor/actual.json",
+      "bytes": 943,
+      "sha256": "0829a1b0cb44ac02beb17731e802a39591e0ce430b0d869fe9a1acf309305584"
+    }
+  }
+]

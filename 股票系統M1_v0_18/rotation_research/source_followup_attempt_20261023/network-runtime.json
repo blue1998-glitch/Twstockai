@@ -1,0 +1,17 @@
+{
+  "observations_current": true,
+  "spec_revision": "3",
+  "observed_spec_revision": "3",
+  "network_policy": {
+    "mode": "restricted",
+    "state": "unknown",
+    "allowed_hosts": [
+      "mops.twse.com.tw",
+      "www.esunbank.com",
+      "www.tpex.org.tw",
+      "www.twse.com.tw"
+    ]
+  },
+  "source": "environment_status after draft save; original source requests not repeated",
+  "diagnostic": "One earlier status-summary helper encountered missing network_policy and stopped before file copy; read-only environment_status subsequently returned this snapshot"
+}

@@ -1,0 +1,43 @@
+{
+  "schema": "capital-research-choice-case/0.1",
+  "base": "c5b966f52eb38715b6871362ef610469f282297e",
+  "source": {
+    "path": "股票系統M1_v0_18/capital_research/quantity_after_retry_20261027/after-final/old-trigger/actual.json",
+    "bytes": 627841,
+    "sha256": "f42d7466f57b94350a172e6156b41148d432ea64095d5edae90d2e9d91999388"
+  },
+  "selection": {
+    "mode": "GRID",
+    "sell_A": "0",
+    "additional_B": "1",
+    "reason": "EXPLICIT_SYNTHETIC_INTENT_NOT_BEST_RATIO"
+  },
+  "recorded_at": "2026-10-27T12:00:00+08:00",
+  "edits": [
+    {
+      "path": [
+        "adapter",
+        "generation",
+        "research",
+        "candidates",
+        1,
+        "classification"
+      ],
+      "value": "CURRENTLY_FEASIBLE"
+    },
+    {
+      "path": [
+        "adapter",
+        "generation",
+        "research",
+        "candidates",
+        1,
+        "feasible_for_research"
+      ],
+      "value": true
+    }
+  ],
+  "binding_overrides": {},
+  "evidence_kind": "STRUCTURAL_READ_REFUSAL_VARIANT_NOT_REGENERATED",
+  "materialized_input_id": "sha256:c6439c34f5ee977f120ee4e01a399fd658f269fef1ef664890ef29da4cfa09ad"
+}

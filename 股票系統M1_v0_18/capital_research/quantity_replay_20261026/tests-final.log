@@ -1,0 +1,29 @@
+test_embedded_reassessment_cannot_bypass_quantity_gate (capital_research.quantity_replay_20261026.test_bridge.BridgeTests.test_embedded_reassessment_cannot_bypass_quantity_gate) ... ok
+test_exact_decision_latest_fills_reserve_and_tokens_remain_bound (capital_research.quantity_replay_20261026.test_bridge.BridgeTests.test_exact_decision_latest_fills_reserve_and_tokens_remain_bound) ... ok
+test_explicit_cancel_and_new_review_do_not_resurrect_old_order (capital_research.quantity_replay_20261026.test_bridge.BridgeTests.test_explicit_cancel_and_new_review_do_not_resurrect_old_order) ... ok
+test_explicit_hold_immutability_and_no_automatic_order_generation (capital_research.quantity_replay_20261026.test_bridge.BridgeTests.test_explicit_hold_immutability_and_no_automatic_order_generation) ... ok
+test_explicit_order_exceeding_target_is_still_rejected_by_original_executor (capital_research.quantity_replay_20261026.test_bridge.BridgeTests.test_explicit_order_exceeding_target_is_still_rejected_by_original_executor) ... ok
+test_future_prefix_and_full_integrity_are_compared_separately (capital_research.quantity_replay_20261026.test_bridge.BridgeTests.test_future_prefix_and_full_integrity_are_compared_separately) ... ok
+test_late_close_and_account_reset_are_rejected_before_new_generation (capital_research.quantity_replay_20261026.test_bridge.BridgeTests.test_late_close_and_account_reset_are_rejected_before_new_generation) ... ok
+test_new_batch_cannot_reuse_trigger_first_label_or_shared_bar (capital_research.quantity_replay_20261026.test_bridge.BridgeTests.test_new_batch_cannot_reuse_trigger_first_label_or_shared_bar) ... ok
+test_outer_gate_is_applied_before_executor_not_raw_core_only (capital_research.quantity_replay_20261026.test_bridge.BridgeTests.test_outer_gate_is_applied_before_executor_not_raw_core_only) ... FAIL
+test_partial_fills_then_independent_round_preserves_original_capital (capital_research.quantity_replay_20261026.test_bridge.BridgeTests.test_partial_fills_then_independent_round_preserves_original_capital) ... ok
+test_price_limit_and_unsold_A_do_not_become_completed_rotation (capital_research.quantity_replay_20261026.test_bridge.BridgeTests.test_price_limit_and_unsold_A_do_not_become_completed_rotation) ... ok
+test_replay_is_not_strategy_performance_or_authorization (capital_research.quantity_replay_20261026.test_bridge.BridgeTests.test_replay_is_not_strategy_performance_or_authorization) ... ok
+test_resource_budget_and_missing_selection_have_no_fallback (capital_research.quantity_replay_20261026.test_bridge.BridgeTests.test_resource_budget_and_missing_selection_have_no_fallback) ... ok
+test_settled_money_does_not_release_conditional_buy (capital_research.quantity_replay_20261026.test_bridge.BridgeTests.test_settled_money_does_not_release_conditional_buy) ... ok
+test_unsupported_payable_retains_actual_prefix_and_liabilities (capital_research.quantity_replay_20261026.test_bridge.BridgeTests.test_unsupported_payable_retains_actual_prefix_and_liabilities) ... ok
+
+======================================================================
+FAIL: test_outer_gate_is_applied_before_executor_not_raw_core_only (capital_research.quantity_replay_20261026.test_bridge.BridgeTests.test_outer_gate_is_applied_before_executor_not_raw_core_only)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/workspace/Twstockai/股票系統M1_v0_18/capital_research/quantity_replay_20261026/test_bridge.py", line 45, in test_outer_gate_is_applied_before_executor_not_raw_core_only
+    self.assertTrue(c['core_evaluation']['feasible']);self.assertEqual(c['classification'],'REJECTED')
+    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+AssertionError: False is not true
+
+----------------------------------------------------------------------
+Ran 15 tests in 0.538s
+
+FAILED (failures=1)

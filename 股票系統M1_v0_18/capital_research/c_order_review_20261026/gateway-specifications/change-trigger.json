@@ -1,0 +1,14 @@
+{
+  "base_case": "valid-C-same-order",
+  "edit": {
+    "path": [
+      "plans",
+      0,
+      "trigger_ids"
+    ],
+    "value": [
+      "B-alias"
+    ]
+  },
+  "expected_error": "SAME_ORDER_PLAN_OR_TRIGGER_CHANGED"
+}

@@ -1,0 +1,2221 @@
+{
+  "qualification": "SYNTHETIC_ENGINEERING_COUNTEREXAMPLES_NOT_MARKET_SAMPLES",
+  "cases": {
+    "platform_refusal": {
+      "input": {
+        "schema_version": "explicit-volume-peak-research-input/0.1",
+        "as_of": "2000-01-05",
+        "context": {
+          "code": "SYNTHETIC_NOT_MARKET",
+          "source_id": "fixture-source",
+          "price_basis_id": "fixture-raw",
+          "source_frame_id": "fixture-frame",
+          "source_prefix_fingerprint": "sha256:41f543f61e8946e535afa2a3cdb1d53fcc7836bf05896edeb5039e8f86aebfa0",
+          "price_mode": "RAW_CANDIDATE",
+          "adjustment_version": "NOT_APPLICABLE_RAW",
+          "volume_unit": "SHARES_REPORTED"
+        },
+        "selection": {
+          "code": "SYNTHETIC_NOT_MARKET",
+          "source_id": "fixture-source",
+          "price_basis_id": "fixture-raw",
+          "price_mode": "RAW_CANDIDATE",
+          "adjustment_version": "NOT_APPLICABLE_RAW",
+          "volume_unit": "SHARES_REPORTED",
+          "binding": {
+            "code": "SYNTHETIC_NOT_MARKET",
+            "source_id": "fixture-source",
+            "price_basis_id": "fixture-raw",
+            "source_frame_id": "fixture-frame",
+            "source_prefix_fingerprint": "sha256:41f543f61e8946e535afa2a3cdb1d53fcc7836bf05896edeb5039e8f86aebfa0"
+          },
+          "candidate_id": "explicit-fixture",
+          "member_dates": [
+            "2000-01-01",
+            "2000-01-02",
+            "2000-01-03",
+            "2000-01-04"
+          ],
+          "member_fingerprint": "sha256:f1a0aee9a5cf0ac22c5f92ebc168a0943475957f44039eba998ac9b836463fc9",
+          "reference_known_on": "2000-01-04",
+          "actual_selected_at": "2001-01-01T00:00:00+00:00",
+          "qualification": "RESEARCH_CANDIDATE",
+          "formal_price_bounds": null,
+          "formal_region_membership": null
+        },
+        "bars": [
+          {
+            "date": "2000-01-01",
+            "open": "10.00",
+            "high": "11.00",
+            "low": "9.00",
+            "close": "10.00",
+            "volume_shares_scaled": "1"
+          },
+          {
+            "date": "2000-01-02",
+            "open": "10.00",
+            "high": "11.00",
+            "low": "9.00",
+            "close": "10.00",
+            "volume_shares_scaled": "100"
+          },
+          {
+            "date": "2000-01-03",
+            "open": "10.00",
+            "high": "11.00",
+            "low": "9.00",
+            "close": "10.00",
+            "volume_shares_scaled": "100"
+          },
+          {
+            "date": "2000-01-04",
+            "open": "10.00",
+            "high": "11.00",
+            "low": "9.00",
+            "close": "10.00",
+            "volume_shares_scaled": "1"
+          },
+          {
+            "date": "2000-01-05",
+            "open": "10.00",
+            "high": "11.00",
+            "low": "9.00",
+            "close": "10.00",
+            "volume_shares_scaled": "20"
+          }
+        ],
+        "known_gap_dates": [],
+        "basis_break_dates": [],
+        "limitations": {
+          "fixture": "SYNTHETIC_NOT_MARKET"
+        }
+      },
+      "config": {
+        "k": 1,
+        "r": "1.15",
+        "qualification": "RESEARCH_PROBE_NOT_APPROVED_NO_DEFAULT_OR_OPTIMUM"
+      },
+      "result": {
+        "schema_version": "explicit-volume-peak-research/0.1",
+        "analysis_as_of": "2000-01-05",
+        "config": {
+          "k": 1,
+          "r": "1.15",
+          "qualification": "RESEARCH_PROBE_NOT_APPROVED_NO_DEFAULT_OR_OPTIMUM"
+        },
+        "source_binding": {
+          "code": "SYNTHETIC_NOT_MARKET",
+          "source_id": "fixture-source",
+          "price_basis_id": "fixture-raw",
+          "source_frame_id": "fixture-frame",
+          "source_prefix_fingerprint": "sha256:41f543f61e8946e535afa2a3cdb1d53fcc7836bf05896edeb5039e8f86aebfa0",
+          "price_mode": "RAW_CANDIDATE",
+          "adjustment_version": "NOT_APPLICABLE_RAW",
+          "volume_unit": "SHARES_REPORTED"
+        },
+        "evaluated_prefix_fingerprint": "sha256:41f543f61e8946e535afa2a3cdb1d53fcc7836bf05896edeb5039e8f86aebfa0",
+        "actual_selected_at": "2001-01-01T00:00:00+00:00",
+        "historical_selection_time": null,
+        "selection_time_role": "ACTUAL_LATER_RESEARCH_SELECTION_NOT_HISTORICAL_SIGNAL",
+        "current_original_bar": {
+          "date": "2000-01-05",
+          "open": "10.00",
+          "high": "11.00",
+          "low": "9.00",
+          "close": "10.00",
+          "volume_shares_scaled": "20"
+        },
+        "reference": {
+          "candidate_id": "explicit-fixture",
+          "qualification": "RESEARCH_CANDIDATE",
+          "formal_price_bounds": null,
+          "formal_region_membership": null,
+          "member_dates": [
+            "2000-01-01",
+            "2000-01-02",
+            "2000-01-03",
+            "2000-01-04"
+          ],
+          "expected_records": 4,
+          "actual_records": 4,
+          "missing_dates": [],
+          "unexpected_dates": [],
+          "source_start": "2000-01-01",
+          "source_end": "2000-01-04",
+          "evaluation_as_of": "2000-01-05",
+          "member_fingerprint": "sha256:f1a0aee9a5cf0ac22c5f92ebc168a0943475957f44039eba998ac9b836463fc9",
+          "reference_known_on": "2000-01-04",
+          "actual_selected_at": "2001-01-01T00:00:00+00:00",
+          "source_rows": [
+            {
+              "date": "2000-01-01",
+              "open": "10.00",
+              "high": "11.00",
+              "low": "9.00",
+              "close": "10.00",
+              "volume_shares_scaled": "1"
+            },
+            {
+              "date": "2000-01-02",
+              "open": "10.00",
+              "high": "11.00",
+              "low": "9.00",
+              "close": "10.00",
+              "volume_shares_scaled": "100"
+            },
+            {
+              "date": "2000-01-03",
+              "open": "10.00",
+              "high": "11.00",
+              "low": "9.00",
+              "close": "10.00",
+              "volume_shares_scaled": "100"
+            },
+            {
+              "date": "2000-01-04",
+              "open": "10.00",
+              "high": "11.00",
+              "low": "9.00",
+              "close": "10.00",
+              "volume_shares_scaled": "1"
+            }
+          ],
+          "maximum": {
+            "max_single_day_shares": "100",
+            "max_single_day_dates": [
+              "2000-01-02",
+              "2000-01-03"
+            ]
+          },
+          "maximum_original_bars": [
+            {
+              "date": "2000-01-02",
+              "open": "10.00",
+              "high": "11.00",
+              "low": "9.00",
+              "close": "10.00",
+              "volume_shares_scaled": "100"
+            },
+            {
+              "date": "2000-01-03",
+              "open": "10.00",
+              "high": "11.00",
+              "low": "9.00",
+              "close": "10.00",
+              "volume_shares_scaled": "100"
+            }
+          ],
+          "completeness": "COMPLETE_EXPLICIT_SAVED_MEMBERS_ONLY",
+          "calendar_qualification": "EXPLICIT_SAVED_MEMBERS_NOT_COMPLETE_MARKET_CALENDAR",
+          "known_gap_dates": [],
+          "basis_break_dates": []
+        },
+        "peaks": [],
+        "peak_assessments": [
+          {
+            "date": "2000-01-01",
+            "status": "INSUFFICIENT_LEFT_RECORDS",
+            "left_records": 0,
+            "right_records": 1,
+            "required_each_side": 1,
+            "confirmed_on": null,
+            "original_bar": {
+              "date": "2000-01-01",
+              "open": "10.00",
+              "high": "11.00",
+              "low": "9.00",
+              "close": "10.00",
+              "volume_shares_scaled": "1"
+            }
+          },
+          {
+            "date": "2000-01-02",
+            "status": "AMBIGUOUS_EQUAL_VOLUME_NEIGHBORHOOD",
+            "left_records": 1,
+            "right_records": 1,
+            "required_each_side": 1,
+            "confirmed_on": null,
+            "original_bar": {
+              "date": "2000-01-02",
+              "open": "10.00",
+              "high": "11.00",
+              "low": "9.00",
+              "close": "10.00",
+              "volume_shares_scaled": "100"
+            }
+          },
+          {
+            "date": "2000-01-03",
+            "status": "AMBIGUOUS_EQUAL_VOLUME_NEIGHBORHOOD",
+            "left_records": 1,
+            "right_records": 1,
+            "required_each_side": 1,
+            "confirmed_on": null,
+            "original_bar": {
+              "date": "2000-01-03",
+              "open": "10.00",
+              "high": "11.00",
+              "low": "9.00",
+              "close": "10.00",
+              "volume_shares_scaled": "100"
+            }
+          },
+          {
+            "date": "2000-01-04",
+            "status": "NOT_NON_PLATFORM_PEAK",
+            "left_records": 1,
+            "right_records": 0,
+            "required_each_side": 1,
+            "confirmed_on": null,
+            "original_bar": {
+              "date": "2000-01-04",
+              "open": "10.00",
+              "high": "11.00",
+              "low": "9.00",
+              "close": "10.00",
+              "volume_shares_scaled": "1"
+            }
+          }
+        ],
+        "pending_peaks": [],
+        "platform_ambiguities": [
+          {
+            "date": "2000-01-02",
+            "open": "10.00",
+            "high": "11.00",
+            "low": "9.00",
+            "close": "10.00",
+            "volume_shares_scaled": "100"
+          },
+          {
+            "date": "2000-01-03",
+            "open": "10.00",
+            "high": "11.00",
+            "low": "9.00",
+            "close": "10.00",
+            "volume_shares_scaled": "100"
+          }
+        ],
+        "groups": [],
+        "highest_vote_group_ids": [],
+        "overlap_pairs": [],
+        "distinct_confirmed_peak_count": 0,
+        "independent_reaction_count": null,
+        "candidate_anchor_diagnostic": null,
+        "reasons": [
+          "EQUAL_VOLUME_PLATFORM_RULE_UNDEFINED_NO_FIRST_DAY_SELECTION"
+        ],
+        "status": "REFUSED_PLATFORM_AMBIGUITY",
+        "comparison_to_original_maximum": {
+          "relation": "BELOW",
+          "delta": "-80",
+          "reason": "AVAILABLE"
+        },
+        "representative_volume_line": {
+          "status": "NOT_IMPLEMENTED",
+          "value": null
+        },
+        "formal_price_bounds": null,
+        "formal_region_membership": null,
+        "execution_qualified": false,
+        "imputed_close": null,
+        "valuation": null,
+        "historical_signal_eligible": false,
+        "primary_pressure_id": null,
+        "policy_authorized": false,
+        "physical_android": "NOT_TESTED_NEW_BUILD",
+        "limitations": {
+          "fixture": "SYNTHETIC_NOT_MARKET"
+        },
+        "result_id": "sha256:c99eda65deddd8b0776f5472315f74010a20e2449d491834ad35a8cc2b4ee54c"
+      }
+    },
+    "overlapping_tied_groups": {
+      "input": {
+        "schema_version": "explicit-volume-peak-research-input/0.1",
+        "as_of": "2000-01-08",
+        "context": {
+          "code": "SYNTHETIC_NOT_MARKET",
+          "source_id": "fixture-source",
+          "price_basis_id": "fixture-raw",
+          "source_frame_id": "fixture-frame",
+          "source_prefix_fingerprint": "sha256:d0b985f49c9d86e46e01ec36783b37cb0f865ee51e7b975f8973bcfffe739d43",
+          "price_mode": "RAW_CANDIDATE",
+          "adjustment_version": "NOT_APPLICABLE_RAW",
+          "volume_unit": "SHARES_REPORTED"
+        },
+        "selection": {
+          "code": "SYNTHETIC_NOT_MARKET",
+          "source_id": "fixture-source",
+          "price_basis_id": "fixture-raw",
+          "price_mode": "RAW_CANDIDATE",
+          "adjustment_version": "NOT_APPLICABLE_RAW",
+          "volume_unit": "SHARES_REPORTED",
+          "binding": {
+            "code": "SYNTHETIC_NOT_MARKET",
+            "source_id": "fixture-source",
+            "price_basis_id": "fixture-raw",
+            "source_frame_id": "fixture-frame",
+            "source_prefix_fingerprint": "sha256:d0b985f49c9d86e46e01ec36783b37cb0f865ee51e7b975f8973bcfffe739d43"
+          },
+          "candidate_id": "explicit-fixture",
+          "member_dates": [
+            "2000-01-01",
+            "2000-01-02",
+            "2000-01-03",
+            "2000-01-04",
+            "2000-01-05",
+            "2000-01-06",
+            "2000-01-07"
+          ],
+          "member_fingerprint": "sha256:5988c956a23c9e48fabe1215f4271cb621b9f46111c663d203d5d85ce0ba5711",
+          "reference_known_on": "2000-01-07",
+          "actual_selected_at": "2001-01-01T00:00:00+00:00",
+          "qualification": "RESEARCH_CANDIDATE",
+          "formal_price_bounds": null,
+          "formal_region_membership": null
+        },
+        "bars": [
+          {
+            "date": "2000-01-01",
+            "open": "10.00",
+            "high": "11.00",
+            "low": "9.00",
+            "close": "10.00",
+            "volume_shares_scaled": "1"
+          },
+          {
+            "date": "2000-01-02",
+            "open": "10.00",
+            "high": "11.00",
+            "low": "9.00",
+            "close": "10.00",
+            "volume_shares_scaled": "100"
+          },
+          {
+            "date": "2000-01-03",
+            "open": "10.00",
+            "high": "11.00",
+            "low": "9.00",
+            "close": "10.00",
+            "volume_shares_scaled": "1"
+          },
+          {
+            "date": "2000-01-04",
+            "open": "10.00",
+            "high": "11.00",
+            "low": "9.00",
+            "close": "10.00",
+            "volume_shares_scaled": "110"
+          },
+          {
+            "date": "2000-01-05",
+            "open": "10.00",
+            "high": "11.00",
+            "low": "9.00",
+            "close": "10.00",
+            "volume_shares_scaled": "1"
+          },
+          {
+            "date": "2000-01-06",
+            "open": "10.00",
+            "high": "11.00",
+            "low": "9.00",
+            "close": "10.00",
+            "volume_shares_scaled": "120"
+          },
+          {
+            "date": "2000-01-07",
+            "open": "10.00",
+            "high": "11.00",
+            "low": "9.00",
+            "close": "10.00",
+            "volume_shares_scaled": "1"
+          },
+          {
+            "date": "2000-01-08",
+            "open": "10.00",
+            "high": "11.00",
+            "low": "9.00",
+            "close": "10.00",
+            "volume_shares_scaled": "20"
+          }
+        ],
+        "known_gap_dates": [],
+        "basis_break_dates": [],
+        "limitations": {
+          "fixture": "SYNTHETIC_NOT_MARKET"
+        }
+      },
+      "config": {
+        "k": 1,
+        "r": "1.10",
+        "qualification": "RESEARCH_PROBE_NOT_APPROVED_NO_DEFAULT_OR_OPTIMUM"
+      },
+      "result": {
+        "schema_version": "explicit-volume-peak-research/0.1",
+        "analysis_as_of": "2000-01-08",
+        "config": {
+          "k": 1,
+          "r": "1.10",
+          "qualification": "RESEARCH_PROBE_NOT_APPROVED_NO_DEFAULT_OR_OPTIMUM"
+        },
+        "source_binding": {
+          "code": "SYNTHETIC_NOT_MARKET",
+          "source_id": "fixture-source",
+          "price_basis_id": "fixture-raw",
+          "source_frame_id": "fixture-frame",
+          "source_prefix_fingerprint": "sha256:d0b985f49c9d86e46e01ec36783b37cb0f865ee51e7b975f8973bcfffe739d43",
+          "price_mode": "RAW_CANDIDATE",
+          "adjustment_version": "NOT_APPLICABLE_RAW",
+          "volume_unit": "SHARES_REPORTED"
+        },
+        "evaluated_prefix_fingerprint": "sha256:d0b985f49c9d86e46e01ec36783b37cb0f865ee51e7b975f8973bcfffe739d43",
+        "actual_selected_at": "2001-01-01T00:00:00+00:00",
+        "historical_selection_time": null,
+        "selection_time_role": "ACTUAL_LATER_RESEARCH_SELECTION_NOT_HISTORICAL_SIGNAL",
+        "current_original_bar": {
+          "date": "2000-01-08",
+          "open": "10.00",
+          "high": "11.00",
+          "low": "9.00",
+          "close": "10.00",
+          "volume_shares_scaled": "20"
+        },
+        "reference": {
+          "candidate_id": "explicit-fixture",
+          "qualification": "RESEARCH_CANDIDATE",
+          "formal_price_bounds": null,
+          "formal_region_membership": null,
+          "member_dates": [
+            "2000-01-01",
+            "2000-01-02",
+            "2000-01-03",
+            "2000-01-04",
+            "2000-01-05",
+            "2000-01-06",
+            "2000-01-07"
+          ],
+          "expected_records": 7,
+          "actual_records": 7,
+          "missing_dates": [],
+          "unexpected_dates": [],
+          "source_start": "2000-01-01",
+          "source_end": "2000-01-07",
+          "evaluation_as_of": "2000-01-08",
+          "member_fingerprint": "sha256:5988c956a23c9e48fabe1215f4271cb621b9f46111c663d203d5d85ce0ba5711",
+          "reference_known_on": "2000-01-07",
+          "actual_selected_at": "2001-01-01T00:00:00+00:00",
+          "source_rows": [
+            {
+              "date": "2000-01-01",
+              "open": "10.00",
+              "high": "11.00",
+              "low": "9.00",
+              "close": "10.00",
+              "volume_shares_scaled": "1"
+            },
+            {
+              "date": "2000-01-02",
+              "open": "10.00",
+              "high": "11.00",
+              "low": "9.00",
+              "close": "10.00",
+              "volume_shares_scaled": "100"
+            },
+            {
+              "date": "2000-01-03",
+              "open": "10.00",
+              "high": "11.00",
+              "low": "9.00",
+              "close": "10.00",
+              "volume_shares_scaled": "1"
+            },
+            {
+              "date": "2000-01-04",
+              "open": "10.00",
+              "high": "11.00",
+              "low": "9.00",
+              "close": "10.00",
+              "volume_shares_scaled": "110"
+            },
+            {
+              "date": "2000-01-05",
+              "open": "10.00",
+              "high": "11.00",
+              "low": "9.00",
+              "close": "10.00",
+              "volume_shares_scaled": "1"
+            },
+            {
+              "date": "2000-01-06",
+              "open": "10.00",
+              "high": "11.00",
+              "low": "9.00",
+              "close": "10.00",
+              "volume_shares_scaled": "120"
+            },
+            {
+              "date": "2000-01-07",
+              "open": "10.00",
+              "high": "11.00",
+              "low": "9.00",
+              "close": "10.00",
+              "volume_shares_scaled": "1"
+            }
+          ],
+          "maximum": {
+            "max_single_day_shares": "120",
+            "max_single_day_dates": [
+              "2000-01-06"
+            ]
+          },
+          "maximum_original_bars": [
+            {
+              "date": "2000-01-06",
+              "open": "10.00",
+              "high": "11.00",
+              "low": "9.00",
+              "close": "10.00",
+              "volume_shares_scaled": "120"
+            }
+          ],
+          "completeness": "COMPLETE_EXPLICIT_SAVED_MEMBERS_ONLY",
+          "calendar_qualification": "EXPLICIT_SAVED_MEMBERS_NOT_COMPLETE_MARKET_CALENDAR",
+          "known_gap_dates": [],
+          "basis_break_dates": []
+        },
+        "peaks": [
+          {
+            "date": "2000-01-02",
+            "status": "CONFIRMED_NON_PLATFORM_PEAK",
+            "left_records": 1,
+            "right_records": 1,
+            "required_each_side": 1,
+            "confirmed_on": "2000-01-03",
+            "original_bar": {
+              "date": "2000-01-02",
+              "open": "10.00",
+              "high": "11.00",
+              "low": "9.00",
+              "close": "10.00",
+              "volume_shares_scaled": "100"
+            },
+            "known_on": "2000-01-07",
+            "right_window_end_on": "2000-01-03",
+            "comparison_window_dates": [
+              "2000-01-01",
+              "2000-01-02",
+              "2000-01-03"
+            ]
+          },
+          {
+            "date": "2000-01-04",
+            "status": "CONFIRMED_NON_PLATFORM_PEAK",
+            "left_records": 1,
+            "right_records": 1,
+            "required_each_side": 1,
+            "confirmed_on": "2000-01-05",
+            "original_bar": {
+              "date": "2000-01-04",
+              "open": "10.00",
+              "high": "11.00",
+              "low": "9.00",
+              "close": "10.00",
+              "volume_shares_scaled": "110"
+            },
+            "known_on": "2000-01-07",
+            "right_window_end_on": "2000-01-05",
+            "comparison_window_dates": [
+              "2000-01-03",
+              "2000-01-04",
+              "2000-01-05"
+            ]
+          },
+          {
+            "date": "2000-01-06",
+            "status": "CONFIRMED_NON_PLATFORM_PEAK",
+            "left_records": 1,
+            "right_records": 1,
+            "required_each_side": 1,
+            "confirmed_on": "2000-01-07",
+            "original_bar": {
+              "date": "2000-01-06",
+              "open": "10.00",
+              "high": "11.00",
+              "low": "9.00",
+              "close": "10.00",
+              "volume_shares_scaled": "120"
+            },
+            "known_on": "2000-01-07",
+            "right_window_end_on": "2000-01-07",
+            "comparison_window_dates": [
+              "2000-01-05",
+              "2000-01-06",
+              "2000-01-07"
+            ]
+          }
+        ],
+        "peak_assessments": [
+          {
+            "date": "2000-01-01",
+            "status": "INSUFFICIENT_LEFT_RECORDS",
+            "left_records": 0,
+            "right_records": 1,
+            "required_each_side": 1,
+            "confirmed_on": null,
+            "original_bar": {
+              "date": "2000-01-01",
+              "open": "10.00",
+              "high": "11.00",
+              "low": "9.00",
+              "close": "10.00",
+              "volume_shares_scaled": "1"
+            }
+          },
+          {
+            "date": "2000-01-02",
+            "status": "CONFIRMED_NON_PLATFORM_PEAK",
+            "left_records": 1,
+            "right_records": 1,
+            "required_each_side": 1,
+            "confirmed_on": "2000-01-03",
+            "original_bar": {
+              "date": "2000-01-02",
+              "open": "10.00",
+              "high": "11.00",
+              "low": "9.00",
+              "close": "10.00",
+              "volume_shares_scaled": "100"
+            },
+            "known_on": "2000-01-07",
+            "right_window_end_on": "2000-01-03",
+            "comparison_window_dates": [
+              "2000-01-01",
+              "2000-01-02",
+              "2000-01-03"
+            ]
+          },
+          {
+            "date": "2000-01-03",
+            "status": "NOT_NON_PLATFORM_PEAK",
+            "left_records": 1,
+            "right_records": 1,
+            "required_each_side": 1,
+            "confirmed_on": null,
+            "original_bar": {
+              "date": "2000-01-03",
+              "open": "10.00",
+              "high": "11.00",
+              "low": "9.00",
+              "close": "10.00",
+              "volume_shares_scaled": "1"
+            }
+          },
+          {
+            "date": "2000-01-04",
+            "status": "CONFIRMED_NON_PLATFORM_PEAK",
+            "left_records": 1,
+            "right_records": 1,
+            "required_each_side": 1,
+            "confirmed_on": "2000-01-05",
+            "original_bar": {
+              "date": "2000-01-04",
+              "open": "10.00",
+              "high": "11.00",
+              "low": "9.00",
+              "close": "10.00",
+              "volume_shares_scaled": "110"
+            },
+            "known_on": "2000-01-07",
+            "right_window_end_on": "2000-01-05",
+            "comparison_window_dates": [
+              "2000-01-03",
+              "2000-01-04",
+              "2000-01-05"
+            ]
+          },
+          {
+            "date": "2000-01-05",
+            "status": "NOT_NON_PLATFORM_PEAK",
+            "left_records": 1,
+            "right_records": 1,
+            "required_each_side": 1,
+            "confirmed_on": null,
+            "original_bar": {
+              "date": "2000-01-05",
+              "open": "10.00",
+              "high": "11.00",
+              "low": "9.00",
+              "close": "10.00",
+              "volume_shares_scaled": "1"
+            }
+          },
+          {
+            "date": "2000-01-06",
+            "status": "CONFIRMED_NON_PLATFORM_PEAK",
+            "left_records": 1,
+            "right_records": 1,
+            "required_each_side": 1,
+            "confirmed_on": "2000-01-07",
+            "original_bar": {
+              "date": "2000-01-06",
+              "open": "10.00",
+              "high": "11.00",
+              "low": "9.00",
+              "close": "10.00",
+              "volume_shares_scaled": "120"
+            },
+            "known_on": "2000-01-07",
+            "right_window_end_on": "2000-01-07",
+            "comparison_window_dates": [
+              "2000-01-05",
+              "2000-01-06",
+              "2000-01-07"
+            ]
+          },
+          {
+            "date": "2000-01-07",
+            "status": "NOT_NON_PLATFORM_PEAK",
+            "left_records": 1,
+            "right_records": 0,
+            "required_each_side": 1,
+            "confirmed_on": null,
+            "original_bar": {
+              "date": "2000-01-07",
+              "open": "10.00",
+              "high": "11.00",
+              "low": "9.00",
+              "close": "10.00",
+              "volume_shares_scaled": "1"
+            }
+          }
+        ],
+        "pending_peaks": [],
+        "platform_ambiguities": [],
+        "groups": [
+          {
+            "member_dates": [
+              "2000-01-02",
+              "2000-01-04"
+            ],
+            "original_bars": [
+              {
+                "date": "2000-01-02",
+                "open": "10.00",
+                "high": "11.00",
+                "low": "9.00",
+                "close": "10.00",
+                "volume_shares_scaled": "100"
+              },
+              {
+                "date": "2000-01-04",
+                "open": "10.00",
+                "high": "11.00",
+                "low": "9.00",
+                "close": "10.00",
+                "volume_shares_scaled": "110"
+              }
+            ],
+            "vote_count": 2,
+            "independent_reaction_count": null,
+            "min_volume_shares": "100",
+            "max_volume_shares": "110",
+            "min_dates": [
+              "2000-01-02"
+            ],
+            "max_dates": [
+              "2000-01-04"
+            ],
+            "maximality": {
+              "full_span_rule": "max <= min * r; exact decimal product",
+              "next_lower_peak": null,
+              "next_upper_peak": {
+                "date": "2000-01-06",
+                "open": "10.00",
+                "high": "11.00",
+                "low": "9.00",
+                "close": "10.00",
+                "volume_shares_scaled": "120"
+              },
+              "left_extension_fails_or_source_edge": true,
+              "right_extension_fails_or_source_edge": true
+            },
+            "confirmed_on": "2000-01-05",
+            "known_on": "2000-01-07",
+            "evaluation_as_of": "2000-01-08",
+            "source_assessment_end": "2000-01-07",
+            "source_member_fingerprint": "sha256:5988c956a23c9e48fabe1215f4271cb621b9f46111c663d203d5d85ce0ba5711",
+            "config": {
+              "k": 1,
+              "r": "1.10",
+              "qualification": "RESEARCH_PROBE_NOT_APPROVED_NO_DEFAULT_OR_OPTIMUM"
+            },
+            "candidate_anchor": null,
+            "qualification": "UNVALIDATED_ENGINE_HYPOTHESIS",
+            "ambiguities": [
+              "OVERLAPPING_GROUPS_ARE_ALTERNATIVES_NOT_INDEPENDENT_REACTIONS",
+              "NO_UNIQUE_REPRESENTATIVE_LINE_OR_IMPORTANCE_SELECTION"
+            ],
+            "comparisons": {
+              "to_min": {
+                "relation": "BELOW",
+                "delta": "-80",
+                "reason": "AVAILABLE"
+              },
+              "to_max": {
+                "relation": "BELOW",
+                "delta": "-90",
+                "reason": "AVAILABLE"
+              },
+              "to_original_maximum": {
+                "relation": "BELOW",
+                "delta": "-100",
+                "reason": "AVAILABLE"
+              }
+            },
+            "id": "sha256:d146b9d128d78f8ffae3803572850fc7b501befcd60fdc12e96a5c6a40397734"
+          },
+          {
+            "member_dates": [
+              "2000-01-04",
+              "2000-01-06"
+            ],
+            "original_bars": [
+              {
+                "date": "2000-01-04",
+                "open": "10.00",
+                "high": "11.00",
+                "low": "9.00",
+                "close": "10.00",
+                "volume_shares_scaled": "110"
+              },
+              {
+                "date": "2000-01-06",
+                "open": "10.00",
+                "high": "11.00",
+                "low": "9.00",
+                "close": "10.00",
+                "volume_shares_scaled": "120"
+              }
+            ],
+            "vote_count": 2,
+            "independent_reaction_count": null,
+            "min_volume_shares": "110",
+            "max_volume_shares": "120",
+            "min_dates": [
+              "2000-01-04"
+            ],
+            "max_dates": [
+              "2000-01-06"
+            ],
+            "maximality": {
+              "full_span_rule": "max <= min * r; exact decimal product",
+              "next_lower_peak": {
+                "date": "2000-01-02",
+                "open": "10.00",
+                "high": "11.00",
+                "low": "9.00",
+                "close": "10.00",
+                "volume_shares_scaled": "100"
+              },
+              "next_upper_peak": null,
+              "left_extension_fails_or_source_edge": true,
+              "right_extension_fails_or_source_edge": true
+            },
+            "confirmed_on": "2000-01-07",
+            "known_on": "2000-01-07",
+            "evaluation_as_of": "2000-01-08",
+            "source_assessment_end": "2000-01-07",
+            "source_member_fingerprint": "sha256:5988c956a23c9e48fabe1215f4271cb621b9f46111c663d203d5d85ce0ba5711",
+            "config": {
+              "k": 1,
+              "r": "1.10",
+              "qualification": "RESEARCH_PROBE_NOT_APPROVED_NO_DEFAULT_OR_OPTIMUM"
+            },
+            "candidate_anchor": null,
+            "qualification": "UNVALIDATED_ENGINE_HYPOTHESIS",
+            "ambiguities": [
+              "OVERLAPPING_GROUPS_ARE_ALTERNATIVES_NOT_INDEPENDENT_REACTIONS",
+              "NO_UNIQUE_REPRESENTATIVE_LINE_OR_IMPORTANCE_SELECTION"
+            ],
+            "comparisons": {
+              "to_min": {
+                "relation": "BELOW",
+                "delta": "-90",
+                "reason": "AVAILABLE"
+              },
+              "to_max": {
+                "relation": "BELOW",
+                "delta": "-100",
+                "reason": "AVAILABLE"
+              },
+              "to_original_maximum": {
+                "relation": "BELOW",
+                "delta": "-100",
+                "reason": "AVAILABLE"
+              }
+            },
+            "id": "sha256:816116655ef017aaee212ce69cdbde7316bd490d7bc53b5237be29832480643e"
+          }
+        ],
+        "highest_vote_group_ids": [
+          "sha256:d146b9d128d78f8ffae3803572850fc7b501befcd60fdc12e96a5c6a40397734",
+          "sha256:816116655ef017aaee212ce69cdbde7316bd490d7bc53b5237be29832480643e"
+        ],
+        "overlap_pairs": [
+          {
+            "a": "sha256:d146b9d128d78f8ffae3803572850fc7b501befcd60fdc12e96a5c6a40397734",
+            "b": "sha256:816116655ef017aaee212ce69cdbde7316bd490d7bc53b5237be29832480643e",
+            "shared_dates": [
+              "2000-01-04"
+            ],
+            "independent_reactions": null
+          }
+        ],
+        "distinct_confirmed_peak_count": 3,
+        "independent_reaction_count": null,
+        "candidate_anchor_diagnostic": null,
+        "reasons": [],
+        "status": "RESEARCH_CANDIDATES_ONLY",
+        "comparison_to_original_maximum": {
+          "relation": "BELOW",
+          "delta": "-100",
+          "reason": "AVAILABLE"
+        },
+        "representative_volume_line": {
+          "status": "NOT_IMPLEMENTED",
+          "value": null
+        },
+        "formal_price_bounds": null,
+        "formal_region_membership": null,
+        "execution_qualified": false,
+        "imputed_close": null,
+        "valuation": null,
+        "historical_signal_eligible": false,
+        "primary_pressure_id": null,
+        "policy_authorized": false,
+        "physical_android": "NOT_TESTED_NEW_BUILD",
+        "limitations": {
+          "fixture": "SYNTHETIC_NOT_MARKET"
+        },
+        "result_id": "sha256:f92b92a064b6b43c842b79f3e0d7c1b25aae5a6fa202a3b37b7959070442f29a"
+      }
+    },
+    "zero_source_refusal": {
+      "input": {
+        "schema_version": "explicit-volume-peak-research-input/0.1",
+        "as_of": "2000-01-04",
+        "context": {
+          "code": "SYNTHETIC_NOT_MARKET",
+          "source_id": "fixture-source",
+          "price_basis_id": "fixture-raw",
+          "source_frame_id": "fixture-frame",
+          "source_prefix_fingerprint": "sha256:c9075358de3bb437ec8c96e25e6e44e193851ba75e98a5a2172229dd24e90a33",
+          "price_mode": "RAW_CANDIDATE",
+          "adjustment_version": "NOT_APPLICABLE_RAW",
+          "volume_unit": "SHARES_REPORTED"
+        },
+        "selection": {
+          "code": "SYNTHETIC_NOT_MARKET",
+          "source_id": "fixture-source",
+          "price_basis_id": "fixture-raw",
+          "price_mode": "RAW_CANDIDATE",
+          "adjustment_version": "NOT_APPLICABLE_RAW",
+          "volume_unit": "SHARES_REPORTED",
+          "binding": {
+            "code": "SYNTHETIC_NOT_MARKET",
+            "source_id": "fixture-source",
+            "price_basis_id": "fixture-raw",
+            "source_frame_id": "fixture-frame",
+            "source_prefix_fingerprint": "sha256:c9075358de3bb437ec8c96e25e6e44e193851ba75e98a5a2172229dd24e90a33"
+          },
+          "candidate_id": "explicit-fixture",
+          "member_dates": [
+            "2000-01-01",
+            "2000-01-02",
+            "2000-01-03"
+          ],
+          "member_fingerprint": "sha256:fd70224b3e534e257670a5a75a922ef084ed134a0b3542ba151888f3feba458a",
+          "reference_known_on": "2000-01-03",
+          "actual_selected_at": "2001-01-01T00:00:00+00:00",
+          "qualification": "RESEARCH_CANDIDATE",
+          "formal_price_bounds": null,
+          "formal_region_membership": null
+        },
+        "bars": [
+          {
+            "date": "2000-01-01",
+            "open": "10.00",
+            "high": "11.00",
+            "low": "9.00",
+            "close": "10.00",
+            "volume_shares_scaled": "1"
+          },
+          {
+            "date": "2000-01-02",
+            "open": "10.00",
+            "high": "11.00",
+            "low": "9.00",
+            "close": "10.00",
+            "volume_shares_scaled": "0"
+          },
+          {
+            "date": "2000-01-03",
+            "open": "10.00",
+            "high": "11.00",
+            "low": "9.00",
+            "close": "10.00",
+            "volume_shares_scaled": "1"
+          },
+          {
+            "date": "2000-01-04",
+            "open": "10.00",
+            "high": "11.00",
+            "low": "9.00",
+            "close": "10.00",
+            "volume_shares_scaled": "20"
+          }
+        ],
+        "known_gap_dates": [],
+        "basis_break_dates": [],
+        "limitations": {
+          "fixture": "SYNTHETIC_NOT_MARKET"
+        }
+      },
+      "config": {
+        "k": 1,
+        "r": "1.15",
+        "qualification": "RESEARCH_PROBE_NOT_APPROVED_NO_DEFAULT_OR_OPTIMUM"
+      },
+      "result": {
+        "schema_version": "explicit-volume-peak-research/0.1",
+        "analysis_as_of": "2000-01-04",
+        "config": {
+          "k": 1,
+          "r": "1.15",
+          "qualification": "RESEARCH_PROBE_NOT_APPROVED_NO_DEFAULT_OR_OPTIMUM"
+        },
+        "source_binding": {
+          "code": "SYNTHETIC_NOT_MARKET",
+          "source_id": "fixture-source",
+          "price_basis_id": "fixture-raw",
+          "source_frame_id": "fixture-frame",
+          "source_prefix_fingerprint": "sha256:c9075358de3bb437ec8c96e25e6e44e193851ba75e98a5a2172229dd24e90a33",
+          "price_mode": "RAW_CANDIDATE",
+          "adjustment_version": "NOT_APPLICABLE_RAW",
+          "volume_unit": "SHARES_REPORTED"
+        },
+        "evaluated_prefix_fingerprint": "sha256:c9075358de3bb437ec8c96e25e6e44e193851ba75e98a5a2172229dd24e90a33",
+        "actual_selected_at": "2001-01-01T00:00:00+00:00",
+        "historical_selection_time": null,
+        "selection_time_role": "ACTUAL_LATER_RESEARCH_SELECTION_NOT_HISTORICAL_SIGNAL",
+        "current_original_bar": {
+          "date": "2000-01-04",
+          "open": "10.00",
+          "high": "11.00",
+          "low": "9.00",
+          "close": "10.00",
+          "volume_shares_scaled": "20"
+        },
+        "reference": {
+          "candidate_id": "explicit-fixture",
+          "qualification": "RESEARCH_CANDIDATE",
+          "formal_price_bounds": null,
+          "formal_region_membership": null,
+          "member_dates": [
+            "2000-01-01",
+            "2000-01-02",
+            "2000-01-03"
+          ],
+          "expected_records": 3,
+          "actual_records": 3,
+          "missing_dates": [],
+          "unexpected_dates": [],
+          "source_start": "2000-01-01",
+          "source_end": "2000-01-03",
+          "evaluation_as_of": "2000-01-04",
+          "member_fingerprint": "sha256:fd70224b3e534e257670a5a75a922ef084ed134a0b3542ba151888f3feba458a",
+          "reference_known_on": "2000-01-03",
+          "actual_selected_at": "2001-01-01T00:00:00+00:00",
+          "source_rows": [
+            {
+              "date": "2000-01-01",
+              "open": "10.00",
+              "high": "11.00",
+              "low": "9.00",
+              "close": "10.00",
+              "volume_shares_scaled": "1"
+            },
+            {
+              "date": "2000-01-02",
+              "open": "10.00",
+              "high": "11.00",
+              "low": "9.00",
+              "close": "10.00",
+              "volume_shares_scaled": "0"
+            },
+            {
+              "date": "2000-01-03",
+              "open": "10.00",
+              "high": "11.00",
+              "low": "9.00",
+              "close": "10.00",
+              "volume_shares_scaled": "1"
+            }
+          ],
+          "maximum": null,
+          "maximum_original_bars": [],
+          "completeness": "UNAVAILABLE",
+          "calendar_qualification": "EXPLICIT_SAVED_MEMBERS_NOT_COMPLETE_MARKET_CALENDAR",
+          "known_gap_dates": [],
+          "basis_break_dates": []
+        },
+        "peaks": [],
+        "peak_assessments": [],
+        "pending_peaks": [],
+        "platform_ambiguities": [],
+        "groups": [],
+        "highest_vote_group_ids": [],
+        "overlap_pairs": [],
+        "distinct_confirmed_peak_count": 0,
+        "independent_reaction_count": null,
+        "candidate_anchor_diagnostic": null,
+        "reasons": [
+          "ZERO_SOURCE_VOLUME_UNDEFINED_PEAK_RESEARCH"
+        ],
+        "status": "REFUSED_SOURCE_EVIDENCE",
+        "comparison_to_original_maximum": {
+          "relation": null,
+          "delta": null,
+          "reason": "UNAVAILABLE_FULL_SOURCE_MAXIMUM"
+        },
+        "representative_volume_line": {
+          "status": "NOT_IMPLEMENTED",
+          "value": null
+        },
+        "formal_price_bounds": null,
+        "formal_region_membership": null,
+        "execution_qualified": false,
+        "imputed_close": null,
+        "valuation": null,
+        "historical_signal_eligible": false,
+        "primary_pressure_id": null,
+        "policy_authorized": false,
+        "physical_android": "NOT_TESTED_NEW_BUILD",
+        "limitations": {
+          "fixture": "SYNTHETIC_NOT_MARKET"
+        },
+        "result_id": "sha256:b65b389e5ec8e550c39fe4d15ab2abacf6ce0dee8480b7a2f6c1df71749f19f1"
+      }
+    },
+    "missing_source_refusal": {
+      "input": {
+        "schema_version": "explicit-volume-peak-research-input/0.1",
+        "as_of": "2000-01-04",
+        "context": {
+          "code": "SYNTHETIC_NOT_MARKET",
+          "source_id": "fixture-source",
+          "price_basis_id": "fixture-raw",
+          "source_frame_id": "fixture-frame",
+          "source_prefix_fingerprint": "sha256:e3c4859b0a0d69ffd5a2db77106297d5df7da02e8bca657bc0e54124750a87f0",
+          "price_mode": "RAW_CANDIDATE",
+          "adjustment_version": "NOT_APPLICABLE_RAW",
+          "volume_unit": "SHARES_REPORTED"
+        },
+        "selection": {
+          "code": "SYNTHETIC_NOT_MARKET",
+          "source_id": "fixture-source",
+          "price_basis_id": "fixture-raw",
+          "price_mode": "RAW_CANDIDATE",
+          "adjustment_version": "NOT_APPLICABLE_RAW",
+          "volume_unit": "SHARES_REPORTED",
+          "binding": {
+            "code": "SYNTHETIC_NOT_MARKET",
+            "source_id": "fixture-source",
+            "price_basis_id": "fixture-raw",
+            "source_frame_id": "fixture-frame",
+            "source_prefix_fingerprint": "sha256:e3c4859b0a0d69ffd5a2db77106297d5df7da02e8bca657bc0e54124750a87f0"
+          },
+          "candidate_id": "explicit-fixture",
+          "member_dates": [
+            "2000-01-01",
+            "2000-01-02",
+            "2000-01-03"
+          ],
+          "member_fingerprint": "sha256:9b4ce94c0b0d73f47da5bb347f2032f63d533bcc23183f8a12d89aed242065c8",
+          "reference_known_on": "2000-01-03",
+          "actual_selected_at": "2001-01-01T00:00:00+00:00",
+          "qualification": "RESEARCH_CANDIDATE",
+          "formal_price_bounds": null,
+          "formal_region_membership": null
+        },
+        "bars": [
+          {
+            "date": "2000-01-01",
+            "open": "10.00",
+            "high": "11.00",
+            "low": "9.00",
+            "close": "10.00",
+            "volume_shares_scaled": "1"
+          },
+          {
+            "date": "2000-01-02",
+            "open": "10.00",
+            "high": "11.00",
+            "low": "9.00",
+            "close": "10.00",
+            "volume_shares_scaled": null
+          },
+          {
+            "date": "2000-01-03",
+            "open": "10.00",
+            "high": "11.00",
+            "low": "9.00",
+            "close": "10.00",
+            "volume_shares_scaled": "1"
+          },
+          {
+            "date": "2000-01-04",
+            "open": "10.00",
+            "high": "11.00",
+            "low": "9.00",
+            "close": "10.00",
+            "volume_shares_scaled": "20"
+          }
+        ],
+        "known_gap_dates": [],
+        "basis_break_dates": [],
+        "limitations": {
+          "fixture": "SYNTHETIC_NOT_MARKET"
+        }
+      },
+      "config": {
+        "k": 1,
+        "r": "1.15",
+        "qualification": "RESEARCH_PROBE_NOT_APPROVED_NO_DEFAULT_OR_OPTIMUM"
+      },
+      "result": {
+        "schema_version": "explicit-volume-peak-research/0.1",
+        "analysis_as_of": "2000-01-04",
+        "config": {
+          "k": 1,
+          "r": "1.15",
+          "qualification": "RESEARCH_PROBE_NOT_APPROVED_NO_DEFAULT_OR_OPTIMUM"
+        },
+        "source_binding": {
+          "code": "SYNTHETIC_NOT_MARKET",
+          "source_id": "fixture-source",
+          "price_basis_id": "fixture-raw",
+          "source_frame_id": "fixture-frame",
+          "source_prefix_fingerprint": "sha256:e3c4859b0a0d69ffd5a2db77106297d5df7da02e8bca657bc0e54124750a87f0",
+          "price_mode": "RAW_CANDIDATE",
+          "adjustment_version": "NOT_APPLICABLE_RAW",
+          "volume_unit": "SHARES_REPORTED"
+        },
+        "evaluated_prefix_fingerprint": "sha256:e3c4859b0a0d69ffd5a2db77106297d5df7da02e8bca657bc0e54124750a87f0",
+        "actual_selected_at": "2001-01-01T00:00:00+00:00",
+        "historical_selection_time": null,
+        "selection_time_role": "ACTUAL_LATER_RESEARCH_SELECTION_NOT_HISTORICAL_SIGNAL",
+        "current_original_bar": {
+          "date": "2000-01-04",
+          "open": "10.00",
+          "high": "11.00",
+          "low": "9.00",
+          "close": "10.00",
+          "volume_shares_scaled": "20"
+        },
+        "reference": {
+          "candidate_id": "explicit-fixture",
+          "qualification": "RESEARCH_CANDIDATE",
+          "formal_price_bounds": null,
+          "formal_region_membership": null,
+          "member_dates": [
+            "2000-01-01",
+            "2000-01-02",
+            "2000-01-03"
+          ],
+          "expected_records": 3,
+          "actual_records": 3,
+          "missing_dates": [],
+          "unexpected_dates": [],
+          "source_start": "2000-01-01",
+          "source_end": "2000-01-03",
+          "evaluation_as_of": "2000-01-04",
+          "member_fingerprint": "sha256:9b4ce94c0b0d73f47da5bb347f2032f63d533bcc23183f8a12d89aed242065c8",
+          "reference_known_on": "2000-01-03",
+          "actual_selected_at": "2001-01-01T00:00:00+00:00",
+          "source_rows": [
+            {
+              "date": "2000-01-01",
+              "open": "10.00",
+              "high": "11.00",
+              "low": "9.00",
+              "close": "10.00",
+              "volume_shares_scaled": "1"
+            },
+            {
+              "date": "2000-01-02",
+              "open": "10.00",
+              "high": "11.00",
+              "low": "9.00",
+              "close": "10.00",
+              "volume_shares_scaled": null
+            },
+            {
+              "date": "2000-01-03",
+              "open": "10.00",
+              "high": "11.00",
+              "low": "9.00",
+              "close": "10.00",
+              "volume_shares_scaled": "1"
+            }
+          ],
+          "maximum": null,
+          "maximum_original_bars": [],
+          "completeness": "UNAVAILABLE",
+          "calendar_qualification": "EXPLICIT_SAVED_MEMBERS_NOT_COMPLETE_MARKET_CALENDAR",
+          "known_gap_dates": [],
+          "basis_break_dates": []
+        },
+        "peaks": [],
+        "peak_assessments": [],
+        "pending_peaks": [],
+        "platform_ambiguities": [],
+        "groups": [],
+        "highest_vote_group_ids": [],
+        "overlap_pairs": [],
+        "distinct_confirmed_peak_count": 0,
+        "independent_reaction_count": null,
+        "candidate_anchor_diagnostic": null,
+        "reasons": [
+          "MISSING_SOURCE_VOLUME"
+        ],
+        "status": "REFUSED_SOURCE_EVIDENCE",
+        "comparison_to_original_maximum": {
+          "relation": null,
+          "delta": null,
+          "reason": "UNAVAILABLE_FULL_SOURCE_MAXIMUM"
+        },
+        "representative_volume_line": {
+          "status": "NOT_IMPLEMENTED",
+          "value": null
+        },
+        "formal_price_bounds": null,
+        "formal_region_membership": null,
+        "execution_qualified": false,
+        "imputed_close": null,
+        "valuation": null,
+        "historical_signal_eligible": false,
+        "primary_pressure_id": null,
+        "policy_authorized": false,
+        "physical_android": "NOT_TESTED_NEW_BUILD",
+        "limitations": {
+          "fixture": "SYNTHETIC_NOT_MARKET"
+        },
+        "result_id": "sha256:ceda3536e142cf767956917d3390b3ba4a1c66bc866a76f9c0dca1b7881ac752"
+      }
+    },
+    "pending_right_window": {
+      "input": {
+        "schema_version": "explicit-volume-peak-research-input/0.1",
+        "as_of": "2000-01-03",
+        "context": {
+          "code": "SYNTHETIC_NOT_MARKET",
+          "source_id": "fixture-source",
+          "price_basis_id": "fixture-raw",
+          "source_frame_id": "fixture-frame",
+          "source_prefix_fingerprint": "sha256:49b31d31202c42218a82a130ddca65db06d9ce126e6632c4d4000867802ce583",
+          "price_mode": "RAW_CANDIDATE",
+          "adjustment_version": "NOT_APPLICABLE_RAW",
+          "volume_unit": "SHARES_REPORTED"
+        },
+        "selection": {
+          "code": "SYNTHETIC_NOT_MARKET",
+          "source_id": "fixture-source",
+          "price_basis_id": "fixture-raw",
+          "price_mode": "RAW_CANDIDATE",
+          "adjustment_version": "NOT_APPLICABLE_RAW",
+          "volume_unit": "SHARES_REPORTED",
+          "binding": {
+            "code": "SYNTHETIC_NOT_MARKET",
+            "source_id": "fixture-source",
+            "price_basis_id": "fixture-raw",
+            "source_frame_id": "fixture-frame",
+            "source_prefix_fingerprint": "sha256:49b31d31202c42218a82a130ddca65db06d9ce126e6632c4d4000867802ce583"
+          },
+          "candidate_id": "explicit-fixture",
+          "member_dates": [
+            "2000-01-01",
+            "2000-01-02"
+          ],
+          "member_fingerprint": "sha256:ca1ca7c787871d5a5c34e41c3ddd6f1178c71f5c57deb986db97410cea38e829",
+          "reference_known_on": "2000-01-02",
+          "actual_selected_at": "2001-01-01T00:00:00+00:00",
+          "qualification": "RESEARCH_CANDIDATE",
+          "formal_price_bounds": null,
+          "formal_region_membership": null
+        },
+        "bars": [
+          {
+            "date": "2000-01-01",
+            "open": "10.00",
+            "high": "11.00",
+            "low": "9.00",
+            "close": "10.00",
+            "volume_shares_scaled": "1"
+          },
+          {
+            "date": "2000-01-02",
+            "open": "10.00",
+            "high": "11.00",
+            "low": "9.00",
+            "close": "10.00",
+            "volume_shares_scaled": "10"
+          },
+          {
+            "date": "2000-01-03",
+            "open": "10.00",
+            "high": "11.00",
+            "low": "9.00",
+            "close": "10.00",
+            "volume_shares_scaled": "20"
+          }
+        ],
+        "known_gap_dates": [],
+        "basis_break_dates": [],
+        "limitations": {
+          "fixture": "SYNTHETIC_NOT_MARKET"
+        }
+      },
+      "config": {
+        "k": 1,
+        "r": "1.15",
+        "qualification": "RESEARCH_PROBE_NOT_APPROVED_NO_DEFAULT_OR_OPTIMUM"
+      },
+      "result": {
+        "schema_version": "explicit-volume-peak-research/0.1",
+        "analysis_as_of": "2000-01-03",
+        "config": {
+          "k": 1,
+          "r": "1.15",
+          "qualification": "RESEARCH_PROBE_NOT_APPROVED_NO_DEFAULT_OR_OPTIMUM"
+        },
+        "source_binding": {
+          "code": "SYNTHETIC_NOT_MARKET",
+          "source_id": "fixture-source",
+          "price_basis_id": "fixture-raw",
+          "source_frame_id": "fixture-frame",
+          "source_prefix_fingerprint": "sha256:49b31d31202c42218a82a130ddca65db06d9ce126e6632c4d4000867802ce583",
+          "price_mode": "RAW_CANDIDATE",
+          "adjustment_version": "NOT_APPLICABLE_RAW",
+          "volume_unit": "SHARES_REPORTED"
+        },
+        "evaluated_prefix_fingerprint": "sha256:49b31d31202c42218a82a130ddca65db06d9ce126e6632c4d4000867802ce583",
+        "actual_selected_at": "2001-01-01T00:00:00+00:00",
+        "historical_selection_time": null,
+        "selection_time_role": "ACTUAL_LATER_RESEARCH_SELECTION_NOT_HISTORICAL_SIGNAL",
+        "current_original_bar": {
+          "date": "2000-01-03",
+          "open": "10.00",
+          "high": "11.00",
+          "low": "9.00",
+          "close": "10.00",
+          "volume_shares_scaled": "20"
+        },
+        "reference": {
+          "candidate_id": "explicit-fixture",
+          "qualification": "RESEARCH_CANDIDATE",
+          "formal_price_bounds": null,
+          "formal_region_membership": null,
+          "member_dates": [
+            "2000-01-01",
+            "2000-01-02"
+          ],
+          "expected_records": 2,
+          "actual_records": 2,
+          "missing_dates": [],
+          "unexpected_dates": [],
+          "source_start": "2000-01-01",
+          "source_end": "2000-01-02",
+          "evaluation_as_of": "2000-01-03",
+          "member_fingerprint": "sha256:ca1ca7c787871d5a5c34e41c3ddd6f1178c71f5c57deb986db97410cea38e829",
+          "reference_known_on": "2000-01-02",
+          "actual_selected_at": "2001-01-01T00:00:00+00:00",
+          "source_rows": [
+            {
+              "date": "2000-01-01",
+              "open": "10.00",
+              "high": "11.00",
+              "low": "9.00",
+              "close": "10.00",
+              "volume_shares_scaled": "1"
+            },
+            {
+              "date": "2000-01-02",
+              "open": "10.00",
+              "high": "11.00",
+              "low": "9.00",
+              "close": "10.00",
+              "volume_shares_scaled": "10"
+            }
+          ],
+          "maximum": {
+            "max_single_day_shares": "10",
+            "max_single_day_dates": [
+              "2000-01-02"
+            ]
+          },
+          "maximum_original_bars": [
+            {
+              "date": "2000-01-02",
+              "open": "10.00",
+              "high": "11.00",
+              "low": "9.00",
+              "close": "10.00",
+              "volume_shares_scaled": "10"
+            }
+          ],
+          "completeness": "COMPLETE_EXPLICIT_SAVED_MEMBERS_ONLY",
+          "calendar_qualification": "EXPLICIT_SAVED_MEMBERS_NOT_COMPLETE_MARKET_CALENDAR",
+          "known_gap_dates": [],
+          "basis_break_dates": []
+        },
+        "peaks": [],
+        "peak_assessments": [
+          {
+            "date": "2000-01-01",
+            "status": "INSUFFICIENT_LEFT_RECORDS",
+            "left_records": 0,
+            "right_records": 1,
+            "required_each_side": 1,
+            "confirmed_on": null,
+            "original_bar": {
+              "date": "2000-01-01",
+              "open": "10.00",
+              "high": "11.00",
+              "low": "9.00",
+              "close": "10.00",
+              "volume_shares_scaled": "1"
+            }
+          },
+          {
+            "date": "2000-01-02",
+            "status": "PENDING_RIGHT_RECORDS",
+            "left_records": 1,
+            "right_records": 0,
+            "required_each_side": 1,
+            "confirmed_on": null,
+            "original_bar": {
+              "date": "2000-01-02",
+              "open": "10.00",
+              "high": "11.00",
+              "low": "9.00",
+              "close": "10.00",
+              "volume_shares_scaled": "10"
+            }
+          }
+        ],
+        "pending_peaks": [
+          {
+            "date": "2000-01-02",
+            "status": "PENDING_RIGHT_RECORDS",
+            "left_records": 1,
+            "right_records": 0,
+            "required_each_side": 1,
+            "confirmed_on": null,
+            "original_bar": {
+              "date": "2000-01-02",
+              "open": "10.00",
+              "high": "11.00",
+              "low": "9.00",
+              "close": "10.00",
+              "volume_shares_scaled": "10"
+            }
+          }
+        ],
+        "platform_ambiguities": [],
+        "groups": [],
+        "highest_vote_group_ids": [],
+        "overlap_pairs": [],
+        "distinct_confirmed_peak_count": 0,
+        "independent_reaction_count": null,
+        "candidate_anchor_diagnostic": null,
+        "reasons": [
+          "RIGHT_EDGE_PENDING_NOT_FINAL_PEAK_UNIVERSE"
+        ],
+        "status": "RESEARCH_CANDIDATES_ONLY",
+        "comparison_to_original_maximum": {
+          "relation": "ABOVE",
+          "delta": "10",
+          "reason": "AVAILABLE"
+        },
+        "representative_volume_line": {
+          "status": "NOT_IMPLEMENTED",
+          "value": null
+        },
+        "formal_price_bounds": null,
+        "formal_region_membership": null,
+        "execution_qualified": false,
+        "imputed_close": null,
+        "valuation": null,
+        "historical_signal_eligible": false,
+        "primary_pressure_id": null,
+        "policy_authorized": false,
+        "physical_android": "NOT_TESTED_NEW_BUILD",
+        "limitations": {
+          "fixture": "SYNTHETIC_NOT_MARKET"
+        },
+        "result_id": "sha256:0a09f418f60e3a3a1f65581561bbe954a172b37acaa15df67f3364fc25ec1553"
+      }
+    },
+    "extreme_volume_retained": {
+      "input": {
+        "schema_version": "explicit-volume-peak-research-input/0.1",
+        "as_of": "2000-01-06",
+        "context": {
+          "code": "SYNTHETIC_NOT_MARKET",
+          "source_id": "fixture-source",
+          "price_basis_id": "fixture-raw",
+          "source_frame_id": "fixture-frame",
+          "source_prefix_fingerprint": "sha256:57c2d76b0acc27f8c3280d0a9d9701d0f6875bfa6f86c3a0f78c7838449e8128",
+          "price_mode": "RAW_CANDIDATE",
+          "adjustment_version": "NOT_APPLICABLE_RAW",
+          "volume_unit": "SHARES_REPORTED"
+        },
+        "selection": {
+          "code": "SYNTHETIC_NOT_MARKET",
+          "source_id": "fixture-source",
+          "price_basis_id": "fixture-raw",
+          "price_mode": "RAW_CANDIDATE",
+          "adjustment_version": "NOT_APPLICABLE_RAW",
+          "volume_unit": "SHARES_REPORTED",
+          "binding": {
+            "code": "SYNTHETIC_NOT_MARKET",
+            "source_id": "fixture-source",
+            "price_basis_id": "fixture-raw",
+            "source_frame_id": "fixture-frame",
+            "source_prefix_fingerprint": "sha256:57c2d76b0acc27f8c3280d0a9d9701d0f6875bfa6f86c3a0f78c7838449e8128"
+          },
+          "candidate_id": "explicit-fixture",
+          "member_dates": [
+            "2000-01-01",
+            "2000-01-02",
+            "2000-01-03",
+            "2000-01-04",
+            "2000-01-05"
+          ],
+          "member_fingerprint": "sha256:b88655e30af806c9c21b437b71ec5f81b9f4ede195493b1af1bff8d2615d9779",
+          "reference_known_on": "2000-01-05",
+          "actual_selected_at": "2001-01-01T00:00:00+00:00",
+          "qualification": "RESEARCH_CANDIDATE",
+          "formal_price_bounds": null,
+          "formal_region_membership": null
+        },
+        "bars": [
+          {
+            "date": "2000-01-01",
+            "open": "10.00",
+            "high": "11.00",
+            "low": "9.00",
+            "close": "10.00",
+            "volume_shares_scaled": "1"
+          },
+          {
+            "date": "2000-01-02",
+            "open": "10.00",
+            "high": "11.00",
+            "low": "9.00",
+            "close": "10.00",
+            "volume_shares_scaled": "100"
+          },
+          {
+            "date": "2000-01-03",
+            "open": "10.00",
+            "high": "11.00",
+            "low": "9.00",
+            "close": "10.00",
+            "volume_shares_scaled": "1"
+          },
+          {
+            "date": "2000-01-04",
+            "open": "10.00",
+            "high": "11.00",
+            "low": "9.00",
+            "close": "10.00",
+            "volume_shares_scaled": "1000000000"
+          },
+          {
+            "date": "2000-01-05",
+            "open": "10.00",
+            "high": "11.00",
+            "low": "9.00",
+            "close": "10.00",
+            "volume_shares_scaled": "1"
+          },
+          {
+            "date": "2000-01-06",
+            "open": "10.00",
+            "high": "11.00",
+            "low": "9.00",
+            "close": "10.00",
+            "volume_shares_scaled": "20"
+          }
+        ],
+        "known_gap_dates": [],
+        "basis_break_dates": [],
+        "limitations": {
+          "fixture": "SYNTHETIC_NOT_MARKET"
+        }
+      },
+      "config": {
+        "k": 1,
+        "r": "1.15",
+        "qualification": "RESEARCH_PROBE_NOT_APPROVED_NO_DEFAULT_OR_OPTIMUM"
+      },
+      "result": {
+        "schema_version": "explicit-volume-peak-research/0.1",
+        "analysis_as_of": "2000-01-06",
+        "config": {
+          "k": 1,
+          "r": "1.15",
+          "qualification": "RESEARCH_PROBE_NOT_APPROVED_NO_DEFAULT_OR_OPTIMUM"
+        },
+        "source_binding": {
+          "code": "SYNTHETIC_NOT_MARKET",
+          "source_id": "fixture-source",
+          "price_basis_id": "fixture-raw",
+          "source_frame_id": "fixture-frame",
+          "source_prefix_fingerprint": "sha256:57c2d76b0acc27f8c3280d0a9d9701d0f6875bfa6f86c3a0f78c7838449e8128",
+          "price_mode": "RAW_CANDIDATE",
+          "adjustment_version": "NOT_APPLICABLE_RAW",
+          "volume_unit": "SHARES_REPORTED"
+        },
+        "evaluated_prefix_fingerprint": "sha256:57c2d76b0acc27f8c3280d0a9d9701d0f6875bfa6f86c3a0f78c7838449e8128",
+        "actual_selected_at": "2001-01-01T00:00:00+00:00",
+        "historical_selection_time": null,
+        "selection_time_role": "ACTUAL_LATER_RESEARCH_SELECTION_NOT_HISTORICAL_SIGNAL",
+        "current_original_bar": {
+          "date": "2000-01-06",
+          "open": "10.00",
+          "high": "11.00",
+          "low": "9.00",
+          "close": "10.00",
+          "volume_shares_scaled": "20"
+        },
+        "reference": {
+          "candidate_id": "explicit-fixture",
+          "qualification": "RESEARCH_CANDIDATE",
+          "formal_price_bounds": null,
+          "formal_region_membership": null,
+          "member_dates": [
+            "2000-01-01",
+            "2000-01-02",
+            "2000-01-03",
+            "2000-01-04",
+            "2000-01-05"
+          ],
+          "expected_records": 5,
+          "actual_records": 5,
+          "missing_dates": [],
+          "unexpected_dates": [],
+          "source_start": "2000-01-01",
+          "source_end": "2000-01-05",
+          "evaluation_as_of": "2000-01-06",
+          "member_fingerprint": "sha256:b88655e30af806c9c21b437b71ec5f81b9f4ede195493b1af1bff8d2615d9779",
+          "reference_known_on": "2000-01-05",
+          "actual_selected_at": "2001-01-01T00:00:00+00:00",
+          "source_rows": [
+            {
+              "date": "2000-01-01",
+              "open": "10.00",
+              "high": "11.00",
+              "low": "9.00",
+              "close": "10.00",
+              "volume_shares_scaled": "1"
+            },
+            {
+              "date": "2000-01-02",
+              "open": "10.00",
+              "high": "11.00",
+              "low": "9.00",
+              "close": "10.00",
+              "volume_shares_scaled": "100"
+            },
+            {
+              "date": "2000-01-03",
+              "open": "10.00",
+              "high": "11.00",
+              "low": "9.00",
+              "close": "10.00",
+              "volume_shares_scaled": "1"
+            },
+            {
+              "date": "2000-01-04",
+              "open": "10.00",
+              "high": "11.00",
+              "low": "9.00",
+              "close": "10.00",
+              "volume_shares_scaled": "1000000000"
+            },
+            {
+              "date": "2000-01-05",
+              "open": "10.00",
+              "high": "11.00",
+              "low": "9.00",
+              "close": "10.00",
+              "volume_shares_scaled": "1"
+            }
+          ],
+          "maximum": {
+            "max_single_day_shares": "1000000000",
+            "max_single_day_dates": [
+              "2000-01-04"
+            ]
+          },
+          "maximum_original_bars": [
+            {
+              "date": "2000-01-04",
+              "open": "10.00",
+              "high": "11.00",
+              "low": "9.00",
+              "close": "10.00",
+              "volume_shares_scaled": "1000000000"
+            }
+          ],
+          "completeness": "COMPLETE_EXPLICIT_SAVED_MEMBERS_ONLY",
+          "calendar_qualification": "EXPLICIT_SAVED_MEMBERS_NOT_COMPLETE_MARKET_CALENDAR",
+          "known_gap_dates": [],
+          "basis_break_dates": []
+        },
+        "peaks": [
+          {
+            "date": "2000-01-02",
+            "status": "CONFIRMED_NON_PLATFORM_PEAK",
+            "left_records": 1,
+            "right_records": 1,
+            "required_each_side": 1,
+            "confirmed_on": "2000-01-03",
+            "original_bar": {
+              "date": "2000-01-02",
+              "open": "10.00",
+              "high": "11.00",
+              "low": "9.00",
+              "close": "10.00",
+              "volume_shares_scaled": "100"
+            },
+            "known_on": "2000-01-05",
+            "right_window_end_on": "2000-01-03",
+            "comparison_window_dates": [
+              "2000-01-01",
+              "2000-01-02",
+              "2000-01-03"
+            ]
+          },
+          {
+            "date": "2000-01-04",
+            "status": "CONFIRMED_NON_PLATFORM_PEAK",
+            "left_records": 1,
+            "right_records": 1,
+            "required_each_side": 1,
+            "confirmed_on": "2000-01-05",
+            "original_bar": {
+              "date": "2000-01-04",
+              "open": "10.00",
+              "high": "11.00",
+              "low": "9.00",
+              "close": "10.00",
+              "volume_shares_scaled": "1000000000"
+            },
+            "known_on": "2000-01-05",
+            "right_window_end_on": "2000-01-05",
+            "comparison_window_dates": [
+              "2000-01-03",
+              "2000-01-04",
+              "2000-01-05"
+            ]
+          }
+        ],
+        "peak_assessments": [
+          {
+            "date": "2000-01-01",
+            "status": "INSUFFICIENT_LEFT_RECORDS",
+            "left_records": 0,
+            "right_records": 1,
+            "required_each_side": 1,
+            "confirmed_on": null,
+            "original_bar": {
+              "date": "2000-01-01",
+              "open": "10.00",
+              "high": "11.00",
+              "low": "9.00",
+              "close": "10.00",
+              "volume_shares_scaled": "1"
+            }
+          },
+          {
+            "date": "2000-01-02",
+            "status": "CONFIRMED_NON_PLATFORM_PEAK",
+            "left_records": 1,
+            "right_records": 1,
+            "required_each_side": 1,
+            "confirmed_on": "2000-01-03",
+            "original_bar": {
+              "date": "2000-01-02",
+              "open": "10.00",
+              "high": "11.00",
+              "low": "9.00",
+              "close": "10.00",
+              "volume_shares_scaled": "100"
+            },
+            "known_on": "2000-01-05",
+            "right_window_end_on": "2000-01-03",
+            "comparison_window_dates": [
+              "2000-01-01",
+              "2000-01-02",
+              "2000-01-03"
+            ]
+          },
+          {
+            "date": "2000-01-03",
+            "status": "NOT_NON_PLATFORM_PEAK",
+            "left_records": 1,
+            "right_records": 1,
+            "required_each_side": 1,
+            "confirmed_on": null,
+            "original_bar": {
+              "date": "2000-01-03",
+              "open": "10.00",
+              "high": "11.00",
+              "low": "9.00",
+              "close": "10.00",
+              "volume_shares_scaled": "1"
+            }
+          },
+          {
+            "date": "2000-01-04",
+            "status": "CONFIRMED_NON_PLATFORM_PEAK",
+            "left_records": 1,
+            "right_records": 1,
+            "required_each_side": 1,
+            "confirmed_on": "2000-01-05",
+            "original_bar": {
+              "date": "2000-01-04",
+              "open": "10.00",
+              "high": "11.00",
+              "low": "9.00",
+              "close": "10.00",
+              "volume_shares_scaled": "1000000000"
+            },
+            "known_on": "2000-01-05",
+            "right_window_end_on": "2000-01-05",
+            "comparison_window_dates": [
+              "2000-01-03",
+              "2000-01-04",
+              "2000-01-05"
+            ]
+          },
+          {
+            "date": "2000-01-05",
+            "status": "NOT_NON_PLATFORM_PEAK",
+            "left_records": 1,
+            "right_records": 0,
+            "required_each_side": 1,
+            "confirmed_on": null,
+            "original_bar": {
+              "date": "2000-01-05",
+              "open": "10.00",
+              "high": "11.00",
+              "low": "9.00",
+              "close": "10.00",
+              "volume_shares_scaled": "1"
+            }
+          }
+        ],
+        "pending_peaks": [],
+        "platform_ambiguities": [],
+        "groups": [
+          {
+            "member_dates": [
+              "2000-01-02"
+            ],
+            "original_bars": [
+              {
+                "date": "2000-01-02",
+                "open": "10.00",
+                "high": "11.00",
+                "low": "9.00",
+                "close": "10.00",
+                "volume_shares_scaled": "100"
+              }
+            ],
+            "vote_count": 1,
+            "independent_reaction_count": null,
+            "min_volume_shares": "100",
+            "max_volume_shares": "100",
+            "min_dates": [
+              "2000-01-02"
+            ],
+            "max_dates": [
+              "2000-01-02"
+            ],
+            "maximality": {
+              "full_span_rule": "max <= min * r; exact decimal product",
+              "next_lower_peak": null,
+              "next_upper_peak": {
+                "date": "2000-01-04",
+                "open": "10.00",
+                "high": "11.00",
+                "low": "9.00",
+                "close": "10.00",
+                "volume_shares_scaled": "1000000000"
+              },
+              "left_extension_fails_or_source_edge": true,
+              "right_extension_fails_or_source_edge": true
+            },
+            "confirmed_on": "2000-01-03",
+            "known_on": "2000-01-05",
+            "evaluation_as_of": "2000-01-06",
+            "source_assessment_end": "2000-01-05",
+            "source_member_fingerprint": "sha256:b88655e30af806c9c21b437b71ec5f81b9f4ede195493b1af1bff8d2615d9779",
+            "config": {
+              "k": 1,
+              "r": "1.15",
+              "qualification": "RESEARCH_PROBE_NOT_APPROVED_NO_DEFAULT_OR_OPTIMUM"
+            },
+            "candidate_anchor": null,
+            "qualification": "UNVALIDATED_ENGINE_HYPOTHESIS",
+            "ambiguities": [
+              "OVERLAPPING_GROUPS_ARE_ALTERNATIVES_NOT_INDEPENDENT_REACTIONS",
+              "NO_UNIQUE_REPRESENTATIVE_LINE_OR_IMPORTANCE_SELECTION"
+            ],
+            "comparisons": {
+              "to_min": {
+                "relation": "BELOW",
+                "delta": "-80",
+                "reason": "AVAILABLE"
+              },
+              "to_max": {
+                "relation": "BELOW",
+                "delta": "-80",
+                "reason": "AVAILABLE"
+              },
+              "to_original_maximum": {
+                "relation": "BELOW",
+                "delta": "-999999980",
+                "reason": "AVAILABLE"
+              }
+            },
+            "id": "sha256:0270021586f809241c4799cb7b81df4c9198eeff9ddb577cc6307104fc9bb79b"
+          },
+          {
+            "member_dates": [
+              "2000-01-04"
+            ],
+            "original_bars": [
+              {
+                "date": "2000-01-04",
+                "open": "10.00",
+                "high": "11.00",
+                "low": "9.00",
+                "close": "10.00",
+                "volume_shares_scaled": "1000000000"
+              }
+            ],
+            "vote_count": 1,
+            "independent_reaction_count": null,
+            "min_volume_shares": "1000000000",
+            "max_volume_shares": "1000000000",
+            "min_dates": [
+              "2000-01-04"
+            ],
+            "max_dates": [
+              "2000-01-04"
+            ],
+            "maximality": {
+              "full_span_rule": "max <= min * r; exact decimal product",
+              "next_lower_peak": {
+                "date": "2000-01-02",
+                "open": "10.00",
+                "high": "11.00",
+                "low": "9.00",
+                "close": "10.00",
+                "volume_shares_scaled": "100"
+              },
+              "next_upper_peak": null,
+              "left_extension_fails_or_source_edge": true,
+              "right_extension_fails_or_source_edge": true
+            },
+            "confirmed_on": "2000-01-05",
+            "known_on": "2000-01-05",
+            "evaluation_as_of": "2000-01-06",
+            "source_assessment_end": "2000-01-05",
+            "source_member_fingerprint": "sha256:b88655e30af806c9c21b437b71ec5f81b9f4ede195493b1af1bff8d2615d9779",
+            "config": {
+              "k": 1,
+              "r": "1.15",
+              "qualification": "RESEARCH_PROBE_NOT_APPROVED_NO_DEFAULT_OR_OPTIMUM"
+            },
+            "candidate_anchor": null,
+            "qualification": "UNVALIDATED_ENGINE_HYPOTHESIS",
+            "ambiguities": [
+              "OVERLAPPING_GROUPS_ARE_ALTERNATIVES_NOT_INDEPENDENT_REACTIONS",
+              "NO_UNIQUE_REPRESENTATIVE_LINE_OR_IMPORTANCE_SELECTION"
+            ],
+            "comparisons": {
+              "to_min": {
+                "relation": "BELOW",
+                "delta": "-999999980",
+                "reason": "AVAILABLE"
+              },
+              "to_max": {
+                "relation": "BELOW",
+                "delta": "-999999980",
+                "reason": "AVAILABLE"
+              },
+              "to_original_maximum": {
+                "relation": "BELOW",
+                "delta": "-999999980",
+                "reason": "AVAILABLE"
+              }
+            },
+            "id": "sha256:373ee13352cfe6064e45ab2407c36bcaa71288d32fceae1cb63366068608e31e"
+          }
+        ],
+        "highest_vote_group_ids": [
+          "sha256:0270021586f809241c4799cb7b81df4c9198eeff9ddb577cc6307104fc9bb79b",
+          "sha256:373ee13352cfe6064e45ab2407c36bcaa71288d32fceae1cb63366068608e31e"
+        ],
+        "overlap_pairs": [],
+        "distinct_confirmed_peak_count": 2,
+        "independent_reaction_count": null,
+        "candidate_anchor_diagnostic": null,
+        "reasons": [],
+        "status": "RESEARCH_CANDIDATES_ONLY",
+        "comparison_to_original_maximum": {
+          "relation": "BELOW",
+          "delta": "-999999980",
+          "reason": "AVAILABLE"
+        },
+        "representative_volume_line": {
+          "status": "NOT_IMPLEMENTED",
+          "value": null
+        },
+        "formal_price_bounds": null,
+        "formal_region_membership": null,
+        "execution_qualified": false,
+        "imputed_close": null,
+        "valuation": null,
+        "historical_signal_eligible": false,
+        "primary_pressure_id": null,
+        "policy_authorized": false,
+        "physical_android": "NOT_TESTED_NEW_BUILD",
+        "limitations": {
+          "fixture": "SYNTHETIC_NOT_MARKET"
+        },
+        "result_id": "sha256:9b438b84040eef7ade636b9e9eded0ef2e08ad34151739f4a49659bdaa5da3ac"
+      }
+    }
+  }
+}

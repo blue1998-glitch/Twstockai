@@ -1,0 +1,17 @@
+{
+  "actual": null,
+  "error": "RAW_MODEL_MATERIAL_VALUE_MISMATCH",
+  "traceback": "Traceback (most recent call last):\n  File \"/workspace/Twstockai/股票系統M1_v0_18/rotation_research/market_case_v2_20261028/build.py\", line 29, in probe\n    try:actual=prepare_context(request,saved,summary);error=None;trace=None\n               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"/workspace/Twstockai/股票系統M1_v0_18/rotation_research/market_case_v2.py\", line 146, in prepare_context\n    for m in request['entry_materials']:_material(m,opportunity,saved)\n                                        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"/workspace/Twstockai/股票系統M1_v0_18/rotation_research/market_case_v2.py\", line 106, in _material\n    binding=_raw_value(saved,m['code'],m['raw_bar'],m['price'])\n            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"/workspace/Twstockai/股票系統M1_v0_18/rotation_research/market_case_v2.py\", line 63, in _raw_value\n    require(len(rows)==1 and rows[0].get(bar['field']) is not None and rows[0][bar['field']]==value,'RAW_MODEL_MATERIAL_VALUE_MISMATCH')\n  File \"/workspace/Twstockai/股票系統M1_v0_18/rotation_research/market_case.py\", line 27, in require\n    if not ok:raise CaseError(reason)\n              ^^^^^^^^^^^^^^^^^^^^^^^\nrotation_research.market_case.CaseError: RAW_MODEL_MATERIAL_VALUE_MISMATCH\n",
+  "calls": {
+    "context": 1,
+    "source_validate": 1,
+    "qualify": 0,
+    "ledger_replay": 0,
+    "capital_simulate": 0,
+    "quantity_replay": 0,
+    "legacy_prepare": 0
+  },
+  "input_unchanged": true,
+  "sources_unchanged": true,
+  "summary_unchanged": true
+}

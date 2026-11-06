@@ -1,0 +1,450 @@
+{
+  "error": null,
+  "traceback": null,
+  "calls": {
+    "replay": 1,
+    "qualify": 1,
+    "ledger_kernel": 1,
+    "save": 0,
+    "simulate": 0,
+    "generate": 0,
+    "replay_sequence": 0
+  },
+  "caller_before": {
+    "prec": 28,
+    "rounding": "ROUND_HALF_EVEN",
+    "Emin": -999999,
+    "Emax": 999999,
+    "capitals": 1,
+    "clamp": 0,
+    "traps": {
+      "InvalidOperation": true,
+      "FloatOperation": false,
+      "DivisionByZero": true,
+      "Overflow": true,
+      "Underflow": false,
+      "Subnormal": false,
+      "Inexact": false,
+      "Rounded": false,
+      "Clamped": false
+    },
+    "flags": {
+      "InvalidOperation": false,
+      "FloatOperation": false,
+      "DivisionByZero": false,
+      "Overflow": false,
+      "Underflow": false,
+      "Subnormal": false,
+      "Inexact": false,
+      "Rounded": false,
+      "Clamped": false
+    }
+  },
+  "caller_after": {
+    "prec": 28,
+    "rounding": "ROUND_HALF_EVEN",
+    "Emin": -999999,
+    "Emax": 999999,
+    "capitals": 1,
+    "clamp": 0,
+    "traps": {
+      "InvalidOperation": true,
+      "FloatOperation": false,
+      "DivisionByZero": true,
+      "Overflow": true,
+      "Underflow": false,
+      "Subnormal": false,
+      "Inexact": false,
+      "Rounded": false,
+      "Clamped": false
+    },
+    "flags": {
+      "InvalidOperation": false,
+      "FloatOperation": false,
+      "DivisionByZero": false,
+      "Overflow": false,
+      "Underflow": false,
+      "Subnormal": false,
+      "Inexact": false,
+      "Rounded": false,
+      "Clamped": false
+    }
+  },
+  "caller_context_unchanged": true,
+  "default_context_unchanged": true,
+  "input_id": "sha256:0d077fd56b3fbea139f5b17faf747641981af6f4c8705e508b982fd34dd35e56",
+  "input_unchanged": true,
+  "source_version": {
+    "path": "rotation_research/action_ledger.py",
+    "bytes": 19719,
+    "sha256": "f58de00fc41a0f217f4e7cfabfb1ac605900a3e9dc49ec44526f9edbf1bb7978"
+  },
+  "actual": {
+    "schema": "rotation-action-ledger/0.1",
+    "input_id": "sha256:0d077fd56b3fbea139f5b17faf747641981af6f4c8705e508b982fd34dd35e56",
+    "start": "2026-01-05",
+    "end": "2026-01-12",
+    "policy_authorized": false,
+    "historical_signal_eligible": false,
+    "research_only": true,
+    "source_qualification": {
+      "calendar": "VERIFIED_COMPLETE",
+      "opening_claims": "VERIFIED",
+      "net_distributions": "VERIFIED",
+      "execution_costs": "SCENARIO",
+      "investor_cashflows": "SCENARIO"
+    },
+    "refusal_reasons": [],
+    "daily": [
+      {
+        "date": "2026-01-05",
+        "settled_cash": "0",
+        "available_cash_strict": "0",
+        "shares": {
+          "A": "100",
+          "B": "0"
+        },
+        "cash_receivable": "0",
+        "purchase_payable": "0",
+        "cash_claims": [],
+        "share_receivables": [],
+        "net_accrual_equity": "1100",
+        "marks": {
+          "A": {
+            "value": "11",
+            "source_date": "2026-01-05",
+            "carried_nontrading_mark": false,
+            "source_id": "fixture",
+            "basis_id": "RAW:fixture:A",
+            "quote_source_ids": [
+              "fixture"
+            ]
+          },
+          "B": {
+            "value": "20",
+            "source_date": "2026-01-05",
+            "carried_nontrading_mark": false,
+            "source_id": "fixture",
+            "basis_id": "RAW:fixture:B",
+            "quote_source_ids": [
+              "fixture"
+            ]
+          }
+        }
+      },
+      {
+        "date": "2026-01-06",
+        "settled_cash": "0",
+        "available_cash_strict": "0",
+        "shares": {
+          "A": "100",
+          "B": "0"
+        },
+        "cash_receivable": "0",
+        "purchase_payable": "0",
+        "cash_claims": [],
+        "share_receivables": [
+          {
+            "id": "sha256:68645135a94d684979f2fd3a58f2f860ad495d0b2c1af61a8b48382c9e59d3a7",
+            "code": "A",
+            "shares": "10.0",
+            "delivery_date": "2026-01-08",
+            "tradable_date": "2026-01-09"
+          }
+        ],
+        "net_accrual_equity": "1100.0",
+        "marks": {
+          "A": {
+            "value": "10",
+            "source_date": "2026-01-06",
+            "carried_nontrading_mark": false,
+            "source_id": "fixture",
+            "basis_id": "RAW:fixture:A",
+            "quote_source_ids": [
+              "fixture"
+            ]
+          },
+          "B": {
+            "value": "20",
+            "source_date": "2026-01-06",
+            "carried_nontrading_mark": false,
+            "source_id": "fixture",
+            "basis_id": "RAW:fixture:B",
+            "quote_source_ids": [
+              "fixture"
+            ]
+          }
+        }
+      },
+      {
+        "date": "2026-01-07",
+        "settled_cash": "0",
+        "available_cash_strict": "0",
+        "shares": {
+          "A": "100",
+          "B": "0"
+        },
+        "cash_receivable": "0",
+        "purchase_payable": "0",
+        "cash_claims": [],
+        "share_receivables": [
+          {
+            "id": "sha256:68645135a94d684979f2fd3a58f2f860ad495d0b2c1af61a8b48382c9e59d3a7",
+            "code": "A",
+            "shares": "10.0",
+            "delivery_date": "2026-01-08",
+            "tradable_date": "2026-01-09"
+          }
+        ],
+        "net_accrual_equity": "1100.0",
+        "marks": {
+          "A": {
+            "value": "10",
+            "source_date": "2026-01-07",
+            "carried_nontrading_mark": false,
+            "source_id": "fixture",
+            "basis_id": "RAW:fixture:A",
+            "quote_source_ids": [
+              "fixture"
+            ]
+          },
+          "B": {
+            "value": "20",
+            "source_date": "2026-01-07",
+            "carried_nontrading_mark": false,
+            "source_id": "fixture",
+            "basis_id": "RAW:fixture:B",
+            "quote_source_ids": [
+              "fixture"
+            ]
+          }
+        }
+      },
+      {
+        "date": "2026-01-08",
+        "settled_cash": "0",
+        "available_cash_strict": "0",
+        "shares": {
+          "A": "100",
+          "B": "0"
+        },
+        "cash_receivable": "0",
+        "purchase_payable": "0",
+        "cash_claims": [],
+        "share_receivables": [
+          {
+            "id": "sha256:68645135a94d684979f2fd3a58f2f860ad495d0b2c1af61a8b48382c9e59d3a7",
+            "code": "A",
+            "shares": "10.0",
+            "delivery_date": "2026-01-08",
+            "tradable_date": "2026-01-09"
+          }
+        ],
+        "net_accrual_equity": "1100.0",
+        "marks": {
+          "A": {
+            "value": "10",
+            "source_date": "2026-01-08",
+            "carried_nontrading_mark": false,
+            "source_id": "fixture",
+            "basis_id": "RAW:fixture:A",
+            "quote_source_ids": [
+              "fixture"
+            ]
+          },
+          "B": {
+            "value": "20",
+            "source_date": "2026-01-08",
+            "carried_nontrading_mark": false,
+            "source_id": "fixture",
+            "basis_id": "RAW:fixture:B",
+            "quote_source_ids": [
+              "fixture"
+            ]
+          }
+        }
+      },
+      {
+        "date": "2026-01-09",
+        "settled_cash": "0",
+        "available_cash_strict": "0",
+        "shares": {
+          "A": "110",
+          "B": "0"
+        },
+        "cash_receivable": "0",
+        "purchase_payable": "0",
+        "cash_claims": [],
+        "share_receivables": [],
+        "net_accrual_equity": "1100",
+        "marks": {
+          "A": {
+            "value": "10",
+            "source_date": "2026-01-09",
+            "carried_nontrading_mark": false,
+            "source_id": "fixture",
+            "basis_id": "RAW:fixture:A",
+            "quote_source_ids": [
+              "fixture"
+            ]
+          },
+          "B": {
+            "value": "20",
+            "source_date": "2026-01-09",
+            "carried_nontrading_mark": false,
+            "source_id": "fixture",
+            "basis_id": "RAW:fixture:B",
+            "quote_source_ids": [
+              "fixture"
+            ]
+          }
+        }
+      },
+      {
+        "date": "2026-01-10",
+        "settled_cash": "0",
+        "available_cash_strict": "0",
+        "shares": {
+          "A": "110",
+          "B": "0"
+        },
+        "cash_receivable": "0",
+        "purchase_payable": "0",
+        "cash_claims": [],
+        "share_receivables": [],
+        "net_accrual_equity": "1100",
+        "marks": {
+          "A": {
+            "value": "10",
+            "source_date": "2026-01-09",
+            "carried_nontrading_mark": true,
+            "source_id": "fixture",
+            "basis_id": "RAW:fixture:A",
+            "quote_source_ids": [
+              "fixture"
+            ]
+          },
+          "B": {
+            "value": "20",
+            "source_date": "2026-01-09",
+            "carried_nontrading_mark": true,
+            "source_id": "fixture",
+            "basis_id": "RAW:fixture:B",
+            "quote_source_ids": [
+              "fixture"
+            ]
+          }
+        }
+      },
+      {
+        "date": "2026-01-11",
+        "settled_cash": "0",
+        "available_cash_strict": "0",
+        "shares": {
+          "A": "110",
+          "B": "0"
+        },
+        "cash_receivable": "0",
+        "purchase_payable": "0",
+        "cash_claims": [],
+        "share_receivables": [],
+        "net_accrual_equity": "1100",
+        "marks": {
+          "A": {
+            "value": "10",
+            "source_date": "2026-01-09",
+            "carried_nontrading_mark": true,
+            "source_id": "fixture",
+            "basis_id": "RAW:fixture:A",
+            "quote_source_ids": [
+              "fixture"
+            ]
+          },
+          "B": {
+            "value": "20",
+            "source_date": "2026-01-09",
+            "carried_nontrading_mark": true,
+            "source_id": "fixture",
+            "basis_id": "RAW:fixture:B",
+            "quote_source_ids": [
+              "fixture"
+            ]
+          }
+        }
+      },
+      {
+        "date": "2026-01-12",
+        "settled_cash": "0",
+        "available_cash_strict": "0",
+        "shares": {
+          "A": "110",
+          "B": "0"
+        },
+        "cash_receivable": "0",
+        "purchase_payable": "0",
+        "cash_claims": [],
+        "share_receivables": [],
+        "net_accrual_equity": "1100",
+        "marks": {
+          "A": {
+            "value": "10",
+            "source_date": "2026-01-12",
+            "carried_nontrading_mark": false,
+            "source_id": "fixture",
+            "basis_id": "RAW:fixture:A",
+            "quote_source_ids": [
+              "fixture"
+            ]
+          },
+          "B": {
+            "value": "20",
+            "source_date": "2026-01-12",
+            "carried_nontrading_mark": false,
+            "source_id": "fixture",
+            "basis_id": "RAW:fixture:B",
+            "quote_source_ids": [
+              "fixture"
+            ]
+          }
+        }
+      }
+    ],
+    "journal": [
+      {
+        "date": "2026-01-06",
+        "type": "STOCK_RECEIVABLE",
+        "event_id": "sha256:68645135a94d684979f2fd3a58f2f860ad495d0b2c1af61a8b48382c9e59d3a7",
+        "code": "A",
+        "entitled_shares": "100",
+        "new_shares": "10.0"
+      },
+      {
+        "date": "2026-01-08",
+        "type": "SHARES_DELIVERED_NOT_YET_ASSUMED_TRADABLE",
+        "event_id": "sha256:68645135a94d684979f2fd3a58f2f860ad495d0b2c1af61a8b48382c9e59d3a7",
+        "code": "A",
+        "shares": "10.0"
+      },
+      {
+        "date": "2026-01-09",
+        "type": "SHARES_TRADABLE",
+        "event_id": "sha256:68645135a94d684979f2fd3a58f2f860ad495d0b2c1af61a8b48382c9e59d3a7",
+        "code": "A",
+        "shares": "10"
+      }
+    ],
+    "total_net_return": null,
+    "scenario_net_return": "0",
+    "actual_realized_investor_return": null,
+    "primary_pressure_id": null,
+    "flywheel_validation": "NOT_VALIDATED",
+    "quote_gaps": [],
+    "initial_equity": "1100",
+    "status": "QUALIFIED_ACCOUNTING_SCENARIO_NOT_STRATEGY_VALIDATION",
+    "end_net_equity": "1100",
+    "terminal_estimated_exit_cost": "0",
+    "fees_and_tax_on_fills": "0",
+    "return_qualification": "ENGINEERED_OR_UNVERIFIED_SCENARIO_NOT_SOURCE_QUALIFIED_TOTAL_RETURN"
+  },
+  "equal_expected": true
+}

@@ -1,0 +1,223 @@
+{
+  "IO_fix": {
+    "after_sha256": "d12b1b7a07ee4c1c0a0540c1927cc96e3043ec2a34f902dd6b4f341ea14561d3",
+    "before_sha256": "3cc04a340d59b6eab3a785d1269cf14134802cab76bf7740827e37216812d67b",
+    "change": "Add existing market-comp1-v02.html to known parent preview filenames; preserve legacy names and exact chart bytes.",
+    "file": "股票系統M1_v0_18/graph_core/market_preview.py",
+    "full_production_parent_index_memory_closure": "NOT_TESTED",
+    "numerical_core_changed": false
+  },
+  "base_commit": "01e93727b1bf0b89f4a65c7438bd73517d908568",
+  "candidate_date": "2026-11-03",
+  "conservative_plan_gate": {
+    "forecast_history_result_chart_bytes": 310919841,
+    "is_measured_total": false,
+    "remedy": "Provide additional private capacity in the same original environment; approximately +512MiB permits a new preflight, not a guarantee of completion. No resize, migration, deletion or restart performed.",
+    "required_free_including_reserve_bytes": 1116226209,
+    "reused_existing_LITE_max_new_budget_bytes": 234881024,
+    "reused_existing_LITE_temp_budget_bytes": 33554432,
+    "shortfall_against_measured_free_bytes": 427930273
+  },
+  "extrapolation": {
+    "chart_gzip9_bytes": 142109387,
+    "excludes_lite_radars_directories_and_full_batch_uncertainty": true,
+    "guaranteed_full_market_upper_bound": false,
+    "gzip9_applied_to_production": false,
+    "history_gzip9_bytes": 75967957,
+    "is_full_market_actual": false,
+    "method": "Six resource-stratified result profiles; largest existing logical-result chart/history profile per market. Lossless gzip and original byte roundtrips in memory. Manifest space is a budget, not persisted bytes.",
+    "result_gzip9_bytes": 92842497,
+    "subtotal_bytes": 310919841,
+    "subtotal_shortfall_bytes": 159494817
+  },
+  "last_valid_workspace_date": "2026-11-02",
+  "limits": [
+    "Source qualification is not whole-market graph completion.",
+    "All sampled new-day prices/results stay Git-external. No new stock chart is available in the workbench.",
+    "Owner HTTP401 confirms anonymous refusal only, not a new authenticated browser-flow test.",
+    "The 90,377-path unchanged-metadata check reuses the previous SHA audit, not full fresh SHA verification.",
+    "The single capacity blocker remains; compressed sampled extrapolation is not a proven exact minimum or certified whole-market bound."
+  ],
+  "measurements": {
+    "available_above_reserve_bytes": 151425024,
+    "chart_history_profile_seconds": 37.106906499000615,
+    "chart_profile_peak_RSS": "NOT_RECORDED",
+    "chart_profiles_completed": 2,
+    "closing_free_before_public_docs_bytes": 688295936,
+    "exact_chart_roundtrips": 2,
+    "exact_history_roundtrips": 2,
+    "exact_result_roundtrips": 6,
+    "full_batch_actual_disk_write_bytes": "NOT_EXECUTED",
+    "history_profiles_completed": 2,
+    "initial_free_bytes": 709890048,
+    "minimum_free_bytes": 536870912,
+    "new_day_core_call_breakdown": {
+      "failed_parent_lookup_profile": 1,
+      "repaired_chart_profiles": 2,
+      "six_resource_samples": 6
+    },
+    "new_day_core_calls": 9,
+    "new_day_market_results_saved": 0,
+    "private_stage_allocated_bytes": 21389312,
+    "result_profile_peak_RSS_KiB": 342904,
+    "result_profile_seconds": 17.042797008994967,
+    "sample_unique_real_stocks": 6
+  },
+  "new_batch_applied_stocks": 0,
+  "new_batch_id": null,
+  "new_published_charts": 0,
+  "observed_at": "2026-11-04T03:31:31.870014+00:00",
+  "ordinary_reference": {
+    "TPEX": 897,
+    "TWSE": 1089
+  },
+  "ordinary_total": 1986,
+  "preservation": {
+    "existing_untracked_preserved": 880,
+    "fm3_readable": true,
+    "independent_backup": "UNKNOWN",
+    "lite_saved_dates": [
+      "2026-11-02",
+      "2026-10-30"
+    ],
+    "lite_view_head_sha256": "f6947a3d044484b1910c848325377ed5b081a04dcb6307763a0484fb14233f21",
+    "main_unchanged": true,
+    "new_full_SHA_audit": false,
+    "original_heads": {
+      "current-finmind-run.json": {
+        "exists": false,
+        "sha256": null
+      },
+      "current-increment-run.json": {
+        "exists": true,
+        "sha256": "fb20c0605533c7945e661cae5563ced53c36a7c7839e35388a60bbd2048244fe"
+      },
+      "current-run.json": {
+        "exists": false,
+        "sha256": null
+      },
+      "fm3-continuation.json": {
+        "exists": true,
+        "sha256": "3ef69678c6c3a65723ba4429e16c5bbc086eb1d8ff1903d97c7ab3579a10b245"
+      }
+    },
+    "prior_full_SHA_audit_id": "377fe0dd42cd7e10be3b6959ba02bf2b1114a8ba8744dd9670b2575103b6f64a",
+    "restart_persistence": "UNKNOWN",
+    "root_file_set_unchanged": true,
+    "unauthenticated_owner_http_status": 401,
+    "unchanged_metadata_paths": 90377
+  },
+  "reference_added": 0,
+  "reference_removed": 0,
+  "restrictions": {
+    "execution_qualified": false,
+    "historical_signal_eligible": false,
+    "imputed_close": null,
+    "new_external_service": false,
+    "new_schedules": false,
+    "policy_authorized": false,
+    "primary_pressure_id": null,
+    "private_data_published": false,
+    "source_0_10_parents_unchanged": true,
+    "valuation": null
+  },
+  "schema": "m-day2-compact-summary/0.1",
+  "source_accepted_bars_not_applied": 1955,
+  "source_capture_id": "fac677bf0c215a288b5b577df01ea8e051dc3c57ea765fff92c4b21b36904f56",
+  "source_intake_counts": {
+    "TPEX": {
+      "MISSING_QUOTE": 4,
+      "NO_TRADE_REPORTED_ZERO_VOLUME": 11,
+      "NO_VALID_CLOSE_SUSPENSION_NOT_AUTHENTICATED": 9,
+      "VALID_SOURCE_BAR_NOT_YET_ANALYZED": 873
+    },
+    "TWSE": {
+      "DATA_QUALITY_FAILURE": 2,
+      "MISSING_QUOTE": 1,
+      "NO_VALID_CLOSE_SUSPENSION_NOT_AUTHENTICATED": 4,
+      "VALID_SOURCE_BAR_NOT_YET_ANALYZED": 1082
+    }
+  },
+  "source_qualification": "READY_FOR_REAL_INCREMENT",
+  "source_receipts": [
+    {
+      "bytes": 1332402,
+      "fetched_at": "2026-11-04T02:45:51.984326+00:00",
+      "name": "twse-universe.json",
+      "sha256": "60c47c6c760b8ab256233af9ceaacc144f82faf428723952de2c852b0a1f1f39",
+      "status": "RECEIVED",
+      "url": "https://openapi.twse.com.tw/v1/opendata/t187ap03_L"
+    },
+    {
+      "bytes": 1079373,
+      "fetched_at": "2026-11-04T02:46:00.061544+00:00",
+      "name": "tpex-universe.json",
+      "sha256": "537d241971ac5038fb710ac5422e3939354be6c34e86c1a685dc1e0093cf9587",
+      "status": "RECEIVED",
+      "url": "https://www.tpex.org.tw/openapi/v1/mopsfin_t187ap03_O"
+    },
+    {
+      "bytes": 322497,
+      "fetched_at": "2026-11-04T02:46:02.346855+00:00",
+      "name": "twse-daily.json",
+      "sha256": "73a0c6adeaa9ddd2e284a7251508d8fd9d6d7d98dd6feaf811d18e325c60a82c",
+      "status": "RECEIVED",
+      "url": "https://openapi.twse.com.tw/v1/exchangeReport/STOCK_DAY_ALL"
+    },
+    {
+      "bytes": 5295907,
+      "fetched_at": "2026-11-04T02:55:01.629510+00:00",
+      "name": "tpex-daily.json",
+      "sha256": "120f702cec81655cf5820e55c76eac84db7a4424d0a334e9b91c97987859fc79",
+      "status": "RECEIVED",
+      "url": "https://www.tpex.org.tw/openapi/v1/tpex_mainboard_daily_close_quotes"
+    },
+    {
+      "bytes": 9929140,
+      "fetched_at": "2026-11-04T02:56:27.480004+00:00",
+      "name": "TWSE-classification.html",
+      "sha256": "6fe20259ad0d86b87babd73c35f325eaeb8ce0d51b20a96936e35edc08e20f97",
+      "status": "RECEIVED",
+      "url": "https://isin.twse.com.tw/isin/C_public.jsp?strMode=2"
+    },
+    {
+      "bytes": 3294450,
+      "fetched_at": "2026-11-04T02:49:50.202776+00:00",
+      "name": "TPEX-classification.html",
+      "sha256": "d155fb6ee5a839ed811ba9b8f9b53195727d873cfefa18b401f97ddefb60183e",
+      "status": "RECEIVED",
+      "url": "https://isin.twse.com.tw/isin/C_public.jsp?strMode=4"
+    }
+  ],
+  "source_refused_bars": 31,
+  "source_requests": {
+    "complete_bodies_reused": 4,
+    "denied_sources_retried": 0,
+    "first_attempt_GETs": 6,
+    "first_failed_capture_id": "f116bae65a978ccdaa8c856e9a16dd4d38fe59fdb48a9a1649dbbfab89714a25",
+    "private_diagnostics_preserved": true,
+    "reason": "Two HTTP200 bodies exceeded our initial local 4MiB guard; only those were repaired once at the same exact URLs, 16MiB bound. Not provider refusal.",
+    "redirects_followed": false,
+    "repair_GETs": 2,
+    "total_GETs": 8
+  },
+  "status": "BLOCKED_CAPACITY",
+  "verification": {
+    "android": "NOT_TESTED_NEW_BUILD",
+    "browser_new_batch": "NOT_RUN_NO_NEW_BATCH",
+    "cached_preflight_reread_new_calls": 0,
+    "cached_preflight_reread_new_requests": 0,
+    "full_batch_same_day_rerun": "NOT_TESTED_NEW_BATCH_NOT_PUBLISHED",
+    "targeted_tests": {
+      "errors": 0,
+      "failures": 0,
+      "file_writes_to_FM3": 0,
+      "market_core_calls": 0,
+      "old_test_counts_added": 0,
+      "source_GETs": 0,
+      "source_data_kind": "EXISTING_REAL_2026_11_02_NOT_SYNTHETIC",
+      "status": "PASS",
+      "unique_methods": 4
+    }
+  }
+}

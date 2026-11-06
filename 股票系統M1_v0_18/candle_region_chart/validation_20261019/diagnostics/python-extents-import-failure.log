@@ -1,0 +1,21 @@
+test_candle_region_extents (unittest.loader._FailedTest.test_candle_region_extents) ... ERROR
+
+======================================================================
+ERROR: test_candle_region_extents (unittest.loader._FailedTest.test_candle_region_extents)
+----------------------------------------------------------------------
+ImportError: Failed to import test module: test_candle_region_extents
+Traceback (most recent call last):
+  File "/opt/codex/runtimes/codex-primary-runtime/dependencies/python/lib/python3.12/unittest/loader.py", line 396, in _find_test_path
+    module = self._get_module_from_name(name)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/opt/codex/runtimes/codex-primary-runtime/dependencies/python/lib/python3.12/unittest/loader.py", line 339, in _get_module_from_name
+    __import__(name)
+  File "/workspace/Twstockai/股票系統M1_v0_18/tests/test_candle_region_extents.py", line 5, in <module>
+    from contracts import fingerprint
+ModuleNotFoundError: No module named 'contracts'
+
+
+----------------------------------------------------------------------
+Ran 1 test in 0.000s
+
+FAILED (errors=1)

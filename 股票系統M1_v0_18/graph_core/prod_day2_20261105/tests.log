@@ -1,0 +1,24 @@
+{"source": "tpex-daily.json", "status": "RECEIVED", "HTTP": 200, "bytes": 136, "received": null, "reason": null}
+{"source": "TWSE-classification.html", "status": "RECEIVED", "HTTP": 200, "bytes": 170, "received": null, "reason": null}
+{"source": "TPEX-classification.html", "status": "RECEIVED", "HTTP": 200, "bytes": 170, "received": null, "reason": null}
+{"phase": "SOURCE_CAPTURE", "source": "twse-universe.json", "http_status": 200, "complete": true, "bytes": 54, "error": null}
+{"phase": "SOURCE_CAPTURE", "source": "tpex-universe.json", "http_status": 200, "complete": true, "bytes": 70, "error": null}
+{"phase": "SOURCE_CAPTURE", "source": "twse-daily.json", "http_status": 200, "complete": true, "bytes": 148, "error": null}
+{"phase": "SOURCE_CAPTURE", "source": "tpex-daily.json", "http_status": 200, "complete": true, "bytes": 136, "error": null}
+{"phase": "SOURCE_CAPTURE", "source": "TWSE-classification.html", "http_status": 200, "complete": true, "bytes": 170, "error": null}
+{"phase": "SOURCE_CAPTURE", "source": "TPEX-classification.html", "http_status": 200, "complete": true, "bytes": 170, "error": null}
+test_ambiguous_or_unproven_framing_and_encoding_refused (__main__.TransportTests.test_ambiguous_or_unproven_framing_and_encoding_refused) ... ok
+test_body_size_bound_before_acceptance (__main__.TransportTests.test_body_size_bound_before_acceptance) ... ok
+test_custom_opener_read_override_remains_honored (__main__.TransportTests.test_custom_opener_read_override_remains_honored) ... ok
+test_denied_has_no_retry (__main__.TransportTests.test_denied_has_no_retry) ... ok
+test_exact_codec_io_and_repeat_preserve_source_gate (__main__.TransportTests.test_exact_codec_io_and_repeat_preserve_source_gate) ... ok
+test_exact_length_and_single_request (__main__.TransportTests.test_exact_length_and_single_request) ... ok
+test_formal_intake_uses_repaired_transport_and_preserves_original_gate (__main__.TransportTests.test_formal_intake_uses_repaired_transport_and_preserves_original_gate) ... ok
+test_hard_wall_alarm_restored_after_blocked_read (__main__.TransportTests.test_hard_wall_alarm_restored_after_blocked_read) ... ok
+test_real_http_chunk_parser_requires_terminal (__main__.TransportTests.test_real_http_chunk_parser_requires_terminal) ... ok
+test_short_content_length_remains_partial (__main__.TransportTests.test_short_content_length_remains_partial) ... ok
+
+----------------------------------------------------------------------
+Ran 10 tests in 0.098s
+
+OK

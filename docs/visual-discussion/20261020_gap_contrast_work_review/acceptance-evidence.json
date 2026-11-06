@@ -1,0 +1,45 @@
+{
+  "status": "READ_ONLY_ACCEPTANCE_EVIDENCE_NOT_EXECUTED_PRODUCT_TESTS",
+  "production_algorithm": "NOT_IMPLEMENTED_OR_SPECIFIED",
+  "case_sources": [
+    "../20261020_april_interval_user_decision/user-decision.json",
+    "original manual_case_audit.previous_manual_box"
+  ],
+  "cases": [
+    {
+      "case": "ABC",
+      "expected_manual_case_grouping": "SAME_OWN_INTERVAL_DISTINCT_OLD_BAND_AND_RELATIVELY_WEAKER",
+      "gap_date": "2025-04-07",
+      "not_a_production_date_constant": true
+    },
+    {
+      "case": "internal_May14",
+      "expected_existing_parent_membership": "INSIDE_ALREADY_CONFIRMED_39_RECORD_PARENT",
+      "existing_fact": "ENTIRELY_BELOW",
+      "finer_scale_grouping": null,
+      "do_not_reask_old_case": true
+    },
+    {
+      "case": "Jan10",
+      "expected_manual_structure_label": null,
+      "existing_fact": "ENTIRELY_BELOW",
+      "wick_touch_equal_close_strict_close_dates": [
+        "2025-01-14",
+        "2025-01-15",
+        "2025-01-16"
+      ],
+      "withdrawn_old_question_not_reopened": true
+    },
+    {
+      "case": "equal_contact_Apr18",
+      "existing_fact": "TOUCHING_NOT_ENTIRELY_BELOW"
+    },
+    {
+      "case": "missing_Aug14",
+      "existing_fact": "UNKNOWN_KNOWN_UNVERIFIED_CALENDAR_GAP",
+      "exclude_from_certified_adjacent_relations": true
+    }
+  ],
+  "primary_pressure_id": null,
+  "historical_signal_eligible": false
+}

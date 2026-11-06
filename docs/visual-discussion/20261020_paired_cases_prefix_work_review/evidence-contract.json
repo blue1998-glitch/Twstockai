@@ -1,0 +1,23 @@
+{
+  "schema": "m1-finite-reviewed-evidence-contract/1",
+  "status": "FINITE_EVIDENCE_SAVED_NOT_A_PRODUCTION_CLASSIFIER_TEST",
+  "requirements_supported_by_reviewed_cases": [
+    "Keep recognizable consolidation and rising-pullback-then-rise compatible.",
+    "Keep own weaker interval relative to an older band distinct from local positive price moves.",
+    "Do not fill unreviewed subtypes or exact formal bounds.",
+    "Bind each raw comparison to its explicit source and available saved date.",
+    "Do not inject later human labels into historical engine output.",
+    "Do not promote unconfirmed pending high to confirmed pivot."
+  ],
+  "reference_scope_checks": [
+    "R2 source is unavailable on10/14. On10/15 daily high equals R2. On10/16 daily high is above R2 while completed close is below R2.",
+    "R2 has no above completed close in its two available saved records, so no completed-close failed breakout is evidenced."
+  ],
+  "automatic_recognition_conditions": "NOT_ESTABLISHED",
+  "not_implementation_authorization": [
+    "No change to original minimum_high_turns2 or minimum_low_turns2.",
+    "No new thresholds, weights, clearance, lifecycle, grouping or primary selection.",
+    "No new adapter or reaction tool."
+  ],
+  "next_engineering_gate": "A concrete reproducible algorithm or defect is needed before a classifier implementation task; reviewed labels alone are not a complete detector."
+}

@@ -1,0 +1,12 @@
+locator.click: Error: strict mode violation: locator('[data-box-id="sha256:61ab2d45e906ccd894e5a1494d2ba19af99d16b558f263f25aa2fd6a64664735"]') resolved to 2 elements:
+    1) <button title="sha256:61ab2d45e906ccd894e5a1494d2ba19af99d16b558f263f25aa2fd6a64664735" data-box-id="sha256:61ab2d45e906ccd894e5a1494d2ba19af99d16b558f263f25aa2fd6a64664735">977.00～1015.00｜0.03｜64664735</button> aka getByRole('button', { name: '～1015.00｜0.03｜64664735' })
+    2) <div class="candidate" data-box-id="sha256:61ab2d45e906ccd894e5a1494d2ba19af99d16b558f263f25aa2fd6a64664735">…</div> aka getByText('B91｜尺度0.032026-09-03～2026-09-')
+
+Call log:
+[2m  - waiting for locator('[data-box-id="sha256:61ab2d45e906ccd894e5a1494d2ba19af99d16b558f263f25aa2fd6a64664735"]')[22m
+
+    at /workspace/Twstockai/股票系統M1_v0_18/graph_core_chart/mvp_m2_20261101/test_mobile.cjs:39:66 {
+  log: [
+    `  - waiting for locator('[data-box-id="sha256:61ab2d45e906ccd894e5a1494d2ba19af99d16b558f263f25aa2fd6a64664735"]')`
+  ]
+}

@@ -1,0 +1,21 @@
+{
+  "before_source_preserved_private": true,
+  "controlled_real_checkpoint_test": {
+    "actual_forced_crash": false,
+    "first_completed": 23,
+    "first_core_calls": 23,
+    "next_process_new_core_calls": 1932,
+    "total_confirmed": 1955
+  },
+  "final_browser_failures": 0,
+  "final_python_failures": 0,
+  "integration_import_failure": {
+    "error": "ModuleNotFoundError: moving_averages",
+    "fixed": "Reuse original src import location; no new dependency, core or indicator change",
+    "real_scan_recalculated": false,
+    "stage": "reader test import before running any reader tests or publishing UI"
+  },
+  "original_SIGKILL_Fontconfig_xref_and_other_unknowns_preserved": true,
+  "reader_tests_before_fix_executed": 0,
+  "unknown_attempt_policy": "Do not repeat uncertain core; record UNKNOWN engineering failure. Partial audit or corrupt existing checkpoint refuses without repair."
+}

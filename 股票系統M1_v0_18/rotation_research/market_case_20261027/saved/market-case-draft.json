@@ -1,0 +1,508 @@
+{
+  "id": "market-case-draft",
+  "schema": "rotation-record/0.1",
+  "value": {
+    "request": {
+      "case_id": "1101-return-then-2884-opportunity",
+      "common": {
+        "account": {
+          "account_id": null,
+          "cash": null,
+          "cash_claims": [],
+          "kind": "NEW_HYPOTHETICAL_CASH_NOT_USER_ACCOUNT",
+          "rights_basis": "EXPLICIT_NEW_ACCOUNT_ASSUMPTION_NOT_PRIVATE_EVIDENCE",
+          "share_claims": [],
+          "shares": {
+            "1101": "0",
+            "2884": "0"
+          }
+        },
+        "execution_model": null,
+        "market_observations": null,
+        "period": null
+      },
+      "common_entry": null,
+      "data_kind": "SAVED_REAL_RAW_WITH_EXPLICIT_HYPOTHETICAL_ACCOUNT",
+      "decisions": [
+        {
+          "data_cutoff": null,
+          "decision_at": null,
+          "evidence_ids": [
+            "A-reference",
+            "A-breakout"
+          ],
+          "id": "A-breakout",
+          "market_date": "2026-04-08"
+        },
+        {
+          "data_cutoff": null,
+          "decision_at": null,
+          "evidence_ids": [
+            "A-reference",
+            "A-return"
+          ],
+          "id": "A-return",
+          "market_date": "2026-04-09"
+        },
+        {
+          "data_cutoff": null,
+          "decision_at": null,
+          "evidence_ids": [
+            "B-reference",
+            "B-breakout"
+          ],
+          "id": "B-opportunity",
+          "market_date": "2026-06-22"
+        }
+      ],
+      "paths": [
+        {
+          "b_intent": null,
+          "common": null,
+          "fills": null,
+          "id": "hold",
+          "intent": "HOLD_A"
+        },
+        {
+          "b_intent": null,
+          "common": null,
+          "fills": null,
+          "id": "reduce",
+          "intent": "REDUCE_A"
+        },
+        {
+          "b_intent": null,
+          "common": null,
+          "fills": null,
+          "id": "cash",
+          "intent": "EXIT_A_TO_CASH"
+        }
+      ],
+      "schema": "rotation-market-case-input/0.1",
+      "source_binding": {
+        "calendar": "sha256:8b431ca5ec65e460c70b0a5fc4cbc2a7f63381052fa7e5ed85f449728d8fb113",
+        "catalog": "sha256:a137969400c6149c17434e8991467afee71ebfc68597279f1ed6049c1b332fa3",
+        "quote_manifest": "sha256:503b5905a7c133f24d763e03c36e9a61eaea6c9e1e6ad5eb47f235b5bd14b3bf",
+        "quotes": "sha256:a75ab687106a64988b2f5e4c4433a86b569ec974fac6ae3806cb890f5bc4ca7c"
+      }
+    },
+    "result": {
+      "actual_realized_investor_return": null,
+      "b_first_strict_breakout": {
+        "date": "2026-06-22",
+        "status": "MATCHED_SAVED_COMPLETE_PREFIX"
+      },
+      "case_id": "1101-return-then-2884-opportunity",
+      "common_binding_id": null,
+      "comparison_status": "NOT_READY",
+      "compiled_accounts": null,
+      "data_qualified": false,
+      "decision_prefixes": [
+        {
+          "automatic_exit_or_transfer": false,
+          "data_cutoff": null,
+          "decision_at": null,
+          "decision_id": "A-breakout",
+          "historical_availability": "UNKNOWN_NOT_BACKFILLED_FROM_CAPTURE",
+          "market_date": "2026-04-08",
+          "observations": [
+            {
+              "availability": "HISTORICAL_PUBLICATION_NOT_AUTHENTICATED",
+              "available_at": null,
+              "basis_id": "RAW:fd5674f6d424dadbfe0644453e4f54c9ed8943fe3149b6f681f24932176db801",
+              "code": "1101",
+              "date": "2026-03-12",
+              "field": "high",
+              "id": "A-reference",
+              "role": "EXPLICIT_CASE_REFERENCE_NOT_FORMAL_PRIMARY_PRESSURE",
+              "source_id": "archived-months:fd5674f6d424dadbfe0644453e4f54c9ed8943fe3149b6f681f24932176db801",
+              "value": "25.20"
+            },
+            {
+              "availability": "HISTORICAL_PUBLICATION_NOT_AUTHENTICATED",
+              "available_at": null,
+              "basis_id": "RAW:fd5674f6d424dadbfe0644453e4f54c9ed8943fe3149b6f681f24932176db801",
+              "code": "1101",
+              "date": "2026-04-08",
+              "field": "close",
+              "id": "A-breakout",
+              "role": "SAVED_PRICE_OBSERVATION_NOT_ORDER",
+              "source_id": "archived-months:fd5674f6d424dadbfe0644453e4f54c9ed8943fe3149b6f681f24932176db801",
+              "value": "25.40"
+            },
+            {
+              "availability": "HISTORICAL_PUBLICATION_NOT_AUTHENTICATED",
+              "available_at": null,
+              "basis_id": "RAW:c27514e56b61b669362aaf8fdd7223acb7caaabcdaf0fa6ccf4a17909ba9ac60",
+              "code": "2884",
+              "date": "2026-02-26",
+              "field": "high",
+              "id": "B-reference",
+              "role": "EXPLICIT_CASE_REFERENCE_NOT_FORMAL_PRIMARY_PRESSURE",
+              "source_id": "archived-months:c27514e56b61b669362aaf8fdd7223acb7caaabcdaf0fa6ccf4a17909ba9ac60",
+              "value": "35.50"
+            }
+          ],
+          "prefix_id": "sha256:7c4a530ded0772f690af77dcda756e902db170d43f766bf232c762e6717ffca1",
+          "reassessment_required": false,
+          "referenced_evidence_ids": [
+            "A-reference",
+            "A-breakout"
+          ],
+          "usable_historical_signal_ids": []
+        },
+        {
+          "automatic_exit_or_transfer": false,
+          "data_cutoff": null,
+          "decision_at": null,
+          "decision_id": "A-return",
+          "historical_availability": "UNKNOWN_NOT_BACKFILLED_FROM_CAPTURE",
+          "market_date": "2026-04-09",
+          "observations": [
+            {
+              "availability": "HISTORICAL_PUBLICATION_NOT_AUTHENTICATED",
+              "available_at": null,
+              "basis_id": "RAW:fd5674f6d424dadbfe0644453e4f54c9ed8943fe3149b6f681f24932176db801",
+              "code": "1101",
+              "date": "2026-03-12",
+              "field": "high",
+              "id": "A-reference",
+              "role": "EXPLICIT_CASE_REFERENCE_NOT_FORMAL_PRIMARY_PRESSURE",
+              "source_id": "archived-months:fd5674f6d424dadbfe0644453e4f54c9ed8943fe3149b6f681f24932176db801",
+              "value": "25.20"
+            },
+            {
+              "availability": "HISTORICAL_PUBLICATION_NOT_AUTHENTICATED",
+              "available_at": null,
+              "basis_id": "RAW:fd5674f6d424dadbfe0644453e4f54c9ed8943fe3149b6f681f24932176db801",
+              "code": "1101",
+              "date": "2026-04-08",
+              "field": "close",
+              "id": "A-breakout",
+              "role": "SAVED_PRICE_OBSERVATION_NOT_ORDER",
+              "source_id": "archived-months:fd5674f6d424dadbfe0644453e4f54c9ed8943fe3149b6f681f24932176db801",
+              "value": "25.40"
+            },
+            {
+              "availability": "HISTORICAL_PUBLICATION_NOT_AUTHENTICATED",
+              "available_at": null,
+              "basis_id": "RAW:fd5674f6d424dadbfe0644453e4f54c9ed8943fe3149b6f681f24932176db801",
+              "code": "1101",
+              "date": "2026-04-09",
+              "field": "close",
+              "id": "A-return",
+              "role": "SAVED_PRICE_OBSERVATION_NOT_ORDER",
+              "source_id": "archived-months:fd5674f6d424dadbfe0644453e4f54c9ed8943fe3149b6f681f24932176db801",
+              "value": "25.10"
+            },
+            {
+              "availability": "HISTORICAL_PUBLICATION_NOT_AUTHENTICATED",
+              "available_at": null,
+              "basis_id": "RAW:c27514e56b61b669362aaf8fdd7223acb7caaabcdaf0fa6ccf4a17909ba9ac60",
+              "code": "2884",
+              "date": "2026-02-26",
+              "field": "high",
+              "id": "B-reference",
+              "role": "EXPLICIT_CASE_REFERENCE_NOT_FORMAL_PRIMARY_PRESSURE",
+              "source_id": "archived-months:c27514e56b61b669362aaf8fdd7223acb7caaabcdaf0fa6ccf4a17909ba9ac60",
+              "value": "35.50"
+            }
+          ],
+          "prefix_id": "sha256:0733e323090cb62a5aca71a00d4e793b0612fbeb63f0e0430ab1e4c9d2185827",
+          "reassessment_required": true,
+          "referenced_evidence_ids": [
+            "A-reference",
+            "A-return"
+          ],
+          "usable_historical_signal_ids": []
+        },
+        {
+          "automatic_exit_or_transfer": false,
+          "data_cutoff": null,
+          "decision_at": null,
+          "decision_id": "B-opportunity",
+          "historical_availability": "UNKNOWN_NOT_BACKFILLED_FROM_CAPTURE",
+          "market_date": "2026-06-22",
+          "observations": [
+            {
+              "availability": "HISTORICAL_PUBLICATION_NOT_AUTHENTICATED",
+              "available_at": null,
+              "basis_id": "RAW:fd5674f6d424dadbfe0644453e4f54c9ed8943fe3149b6f681f24932176db801",
+              "code": "1101",
+              "date": "2026-03-12",
+              "field": "high",
+              "id": "A-reference",
+              "role": "EXPLICIT_CASE_REFERENCE_NOT_FORMAL_PRIMARY_PRESSURE",
+              "source_id": "archived-months:fd5674f6d424dadbfe0644453e4f54c9ed8943fe3149b6f681f24932176db801",
+              "value": "25.20"
+            },
+            {
+              "availability": "HISTORICAL_PUBLICATION_NOT_AUTHENTICATED",
+              "available_at": null,
+              "basis_id": "RAW:fd5674f6d424dadbfe0644453e4f54c9ed8943fe3149b6f681f24932176db801",
+              "code": "1101",
+              "date": "2026-04-08",
+              "field": "close",
+              "id": "A-breakout",
+              "role": "SAVED_PRICE_OBSERVATION_NOT_ORDER",
+              "source_id": "archived-months:fd5674f6d424dadbfe0644453e4f54c9ed8943fe3149b6f681f24932176db801",
+              "value": "25.40"
+            },
+            {
+              "availability": "HISTORICAL_PUBLICATION_NOT_AUTHENTICATED",
+              "available_at": null,
+              "basis_id": "RAW:fd5674f6d424dadbfe0644453e4f54c9ed8943fe3149b6f681f24932176db801",
+              "code": "1101",
+              "date": "2026-04-09",
+              "field": "close",
+              "id": "A-return",
+              "role": "SAVED_PRICE_OBSERVATION_NOT_ORDER",
+              "source_id": "archived-months:fd5674f6d424dadbfe0644453e4f54c9ed8943fe3149b6f681f24932176db801",
+              "value": "25.10"
+            },
+            {
+              "availability": "HISTORICAL_PUBLICATION_NOT_AUTHENTICATED",
+              "available_at": null,
+              "basis_id": "RAW:c27514e56b61b669362aaf8fdd7223acb7caaabcdaf0fa6ccf4a17909ba9ac60",
+              "code": "2884",
+              "date": "2026-02-26",
+              "field": "high",
+              "id": "B-reference",
+              "role": "EXPLICIT_CASE_REFERENCE_NOT_FORMAL_PRIMARY_PRESSURE",
+              "source_id": "archived-months:c27514e56b61b669362aaf8fdd7223acb7caaabcdaf0fa6ccf4a17909ba9ac60",
+              "value": "35.50"
+            },
+            {
+              "availability": "HISTORICAL_PUBLICATION_NOT_AUTHENTICATED",
+              "available_at": null,
+              "basis_id": "RAW:c27514e56b61b669362aaf8fdd7223acb7caaabcdaf0fa6ccf4a17909ba9ac60",
+              "code": "2884",
+              "date": "2026-06-22",
+              "field": "close",
+              "id": "B-breakout",
+              "role": "SAVED_PRICE_OBSERVATION_NOT_ORDER",
+              "source_id": "archived-months:c27514e56b61b669362aaf8fdd7223acb7caaabcdaf0fa6ccf4a17909ba9ac60",
+              "value": "35.80"
+            }
+          ],
+          "prefix_id": "sha256:675b44939404415a26eac05d0559b63c8d52e16269922ad1c6789744deff4746",
+          "reassessment_required": false,
+          "referenced_evidence_ids": [
+            "B-reference",
+            "B-breakout"
+          ],
+          "usable_historical_signal_ids": []
+        }
+      ],
+      "execution_model_qualified": false,
+      "historical_signal_eligible": false,
+      "input_id": "sha256:3927a0e40092b32c2c8625f9cf729c82bee09e56eb756a5441011bce27bc9241",
+      "live_execution_authorized": false,
+      "missing_inputs": [
+        "common.period",
+        "common.execution_model",
+        "common.market_observations",
+        "common.account.account_id",
+        "common.account.cash",
+        "common_entry",
+        "A-breakout.decision_at",
+        "A-breakout.data_cutoff",
+        "A-return.decision_at",
+        "A-return.data_cutoff",
+        "B-opportunity.decision_at",
+        "B-opportunity.data_cutoff",
+        "paths.hold.common",
+        "paths.hold.fills",
+        "paths.hold.b_intent",
+        "paths.reduce.common",
+        "paths.reduce.fills",
+        "paths.reduce.b_intent",
+        "paths.cash.common",
+        "paths.cash.fills",
+        "paths.cash.b_intent"
+      ],
+      "numeric_replay": "NOT_PERFORMED",
+      "observations": [
+        {
+          "availability": "HISTORICAL_PUBLICATION_NOT_AUTHENTICATED",
+          "available_at": null,
+          "basis_id": "RAW:fd5674f6d424dadbfe0644453e4f54c9ed8943fe3149b6f681f24932176db801",
+          "code": "1101",
+          "date": "2026-03-12",
+          "field": "high",
+          "id": "A-reference",
+          "role": "EXPLICIT_CASE_REFERENCE_NOT_FORMAL_PRIMARY_PRESSURE",
+          "source_id": "archived-months:fd5674f6d424dadbfe0644453e4f54c9ed8943fe3149b6f681f24932176db801",
+          "value": "25.20"
+        },
+        {
+          "availability": "HISTORICAL_PUBLICATION_NOT_AUTHENTICATED",
+          "available_at": null,
+          "basis_id": "RAW:fd5674f6d424dadbfe0644453e4f54c9ed8943fe3149b6f681f24932176db801",
+          "code": "1101",
+          "date": "2026-04-08",
+          "field": "close",
+          "id": "A-breakout",
+          "role": "SAVED_PRICE_OBSERVATION_NOT_ORDER",
+          "source_id": "archived-months:fd5674f6d424dadbfe0644453e4f54c9ed8943fe3149b6f681f24932176db801",
+          "value": "25.40"
+        },
+        {
+          "availability": "HISTORICAL_PUBLICATION_NOT_AUTHENTICATED",
+          "available_at": null,
+          "basis_id": "RAW:fd5674f6d424dadbfe0644453e4f54c9ed8943fe3149b6f681f24932176db801",
+          "code": "1101",
+          "date": "2026-04-09",
+          "field": "close",
+          "id": "A-return",
+          "role": "SAVED_PRICE_OBSERVATION_NOT_ORDER",
+          "source_id": "archived-months:fd5674f6d424dadbfe0644453e4f54c9ed8943fe3149b6f681f24932176db801",
+          "value": "25.10"
+        },
+        {
+          "availability": "HISTORICAL_PUBLICATION_NOT_AUTHENTICATED",
+          "available_at": null,
+          "basis_id": "RAW:c27514e56b61b669362aaf8fdd7223acb7caaabcdaf0fa6ccf4a17909ba9ac60",
+          "code": "2884",
+          "date": "2026-02-26",
+          "field": "high",
+          "id": "B-reference",
+          "role": "EXPLICIT_CASE_REFERENCE_NOT_FORMAL_PRIMARY_PRESSURE",
+          "source_id": "archived-months:c27514e56b61b669362aaf8fdd7223acb7caaabcdaf0fa6ccf4a17909ba9ac60",
+          "value": "35.50"
+        },
+        {
+          "availability": "HISTORICAL_PUBLICATION_NOT_AUTHENTICATED",
+          "available_at": null,
+          "basis_id": "RAW:c27514e56b61b669362aaf8fdd7223acb7caaabcdaf0fa6ccf4a17909ba9ac60",
+          "code": "2884",
+          "date": "2026-06-22",
+          "field": "close",
+          "id": "B-breakout",
+          "role": "SAVED_PRICE_OBSERVATION_NOT_ORDER",
+          "source_id": "archived-months:c27514e56b61b669362aaf8fdd7223acb7caaabcdaf0fa6ccf4a17909ba9ac60",
+          "value": "35.80"
+        }
+      ],
+      "order_generation": "NOT_PERFORMED",
+      "policy_authorized": false,
+      "prepared_fills": "UNEXECUTED_EXTERNAL_MODEL_INPUT_NOT_VALIDATED_ACCOUNT_BALANCES",
+      "primary_pressure_id": null,
+      "ranking": null,
+      "scenario_net_return": null,
+      "schema": "rotation-market-case-preparation/0.1",
+      "source_admissions": null,
+      "source_binding": {
+        "calendar": "sha256:8b431ca5ec65e460c70b0a5fc4cbc2a7f63381052fa7e5ed85f449728d8fb113",
+        "catalog": "sha256:a137969400c6149c17434e8991467afee71ebfc68597279f1ed6049c1b332fa3",
+        "quote_manifest": "sha256:503b5905a7c133f24d763e03c36e9a61eaea6c9e1e6ad5eb47f235b5bd14b3bf",
+        "quotes": "sha256:a75ab687106a64988b2f5e4c4433a86b569ec974fac6ae3806cb890f5bc4ca7c"
+      },
+      "source_coverage": {
+        "1101": {
+          "end": "2026-10-16",
+          "event_ids": [
+            "sha256:01df5dd4c25df56baa28b725845678043e4809abf08e15cb19bab046ad92902f",
+            "sha256:b7ba974b62bad201a1757c3b8dc2015ae9a43d35f55c352bf0929c65cd2b0bd5"
+          ],
+          "gaps": [
+            "NO_EXHAUSTIVE_CAPITAL_REDUCTION_OR_OTHER_ACTION_REGISTER",
+            "EXCHANGE_2026_CAPTURE_ENDS_2026-07-24_MISSING_2026-07-25_TO_2026-10-16",
+            "EXRIGHT_ENDPOINT_EXCLUSIONS_NOT_COMPLETE_CORPORATE_ACTION_UNIVERSE",
+            "SCOPED_INVENTORY_NOT_EXHAUSTIVE_REGISTER_OR_SUPPORTED_ACCOUNT_IMPACT",
+            "RESOLUTION_NOT_FINAL_RATIO_NET_PAYMENT_OR_EXHAUSTIVE_ACTION_REGISTER"
+          ],
+          "known_company_action_ids": [
+            "sha256:1e4ac85c0b29fc31441f5d36208189e5d6ad55eaf3fa6f9e994db8e054a63bed",
+            "sha256:3912f8383c15a479a8b1aeaa4835f4ca53ad6f101fc88e96f15fd531d0bbeee4",
+            "sha256:5f032becaccb3085398a8025359322047c4ef31f9ffbf3ab2adcde5d83ae4b56",
+            "sha256:d23b7d5f03dc9a6f02b0bd4659cce8519ef01a32eed92dc9dc9f68a652f2dfc5"
+          ],
+          "other_actions_checked": false,
+          "source_ids": [
+            "exright-2025",
+            "exright-2026-to-cutoff",
+            "issuer-1101",
+            "issuer-2884",
+            "tcc-capital-surplus-2026"
+          ],
+          "start": "2025-07-01",
+          "status": "INCOMPLETE",
+          "types": [
+            "CASH_DIVIDEND",
+            "STOCK_DIVIDEND"
+          ]
+        },
+        "2884": {
+          "end": "2026-10-16",
+          "event_ids": [
+            "sha256:a96a11bf35947c9fce84baaf52b88a4ffd19447e9c26610c5fc01a82505d1a3a",
+            "sha256:dddf104de8f030d4fedd1894a1a99386d81df1b0befa046f946cfdc5734bb387",
+            "sha256:cf65c6f1ab9ad9fb1a64a8405cd9d05505739e72d6383c5e37903389f52c7349"
+          ],
+          "gaps": [
+            "NO_EXHAUSTIVE_CAPITAL_REDUCTION_OR_OTHER_ACTION_REGISTER",
+            "EXCHANGE_2026_CAPTURE_ENDS_2026-07-24_MISSING_2026-07-25_TO_2026-10-16",
+            "EXRIGHT_ENDPOINT_EXCLUSIONS_NOT_COMPLETE_CORPORATE_ACTION_UNIVERSE",
+            "SCOPED_INVENTORY_NOT_EXHAUSTIVE_REGISTER_OR_SUPPORTED_ACCOUNT_IMPACT",
+            "RESOLUTION_NOT_FINAL_RATIO_NET_PAYMENT_OR_EXHAUSTIVE_ACTION_REGISTER"
+          ],
+          "known_company_action_ids": [
+            "sha256:3090d9519d9526c48742e1f1c6c3be15e81971306d0f41b1d6034e0f6b4dfffb",
+            "sha256:591576c458ebb0e1506f5e562c3b61655f199fe05069e559e29bd05783c39ccc",
+            "sha256:5c768c6a2c7b2b3145015e722670727de85cef74fa12f990f7b2f0565fe67119",
+            "sha256:b9eac95a1a87bcc06b6d3b67547af3148106813cddf5fffd9edab21fc450207f"
+          ],
+          "other_actions_checked": false,
+          "source_ids": [
+            "esun-2025-follow-up",
+            "esun-2025-minutes",
+            "esun-direct-2025-ratio",
+            "esun-mna-20251105",
+            "esun-mna-20260713",
+            "esun-mna-index",
+            "esun-mna-qa",
+            "exright-2025",
+            "exright-2026-to-cutoff",
+            "issuer-1101",
+            "issuer-2884"
+          ],
+          "start": "2025-07-01",
+          "status": "INCOMPLETE",
+          "types": [
+            "CASH_DIVIDEND",
+            "STOCK_DIVIDEND"
+          ]
+        }
+      },
+      "status": "AWAITING_EXPLICIT_INPUT",
+      "strategy_validation": "NOT_VALIDATED",
+      "total_net_return": null
+    },
+    "source_spec": {
+      "files": {
+        "calendar": {
+          "bytes": 132627,
+          "path": "股票系統M1_v0_18/rotation_research/source_qualification_20261022/observed-calendar.json",
+          "sha256": "53c8d134ef12834cdb4875abe9367aad99eef21bdfb1790d2418523d3ee54817"
+        },
+        "catalog": {
+          "bytes": 360535,
+          "path": "股票系統M1_v0_18/rotation_research/subsidiary_proposal_20261023/catalog-v010.json",
+          "sha256": "f396b1976753ae83155c0ed640b83fb0457769c62c32c59f79f341f7e2e16899"
+        },
+        "quote_manifest": {
+          "bytes": 43923,
+          "path": "股票系統M1_v0_18/rotation_research/generated/sources.json",
+          "sha256": "8588dbdd9a0f9a20cfdec70835efc6fc2193a9daac5646a9048210b540d11abe"
+        },
+        "quotes": {
+          "bytes": 123436,
+          "path": "股票系統M1_v0_18/rotation_research/generated/input.json",
+          "sha256": "982cf36383b47e3a7d5b68b55dcbc17cefe9b5715e287573c6ac9c19c11659a9"
+        }
+      },
+      "schema": "rotation-market-source-spec/0.1"
+    }
+  }
+}

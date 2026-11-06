@@ -1,0 +1,145 @@
+{
+  "ABC-fresh-lower": {
+    "code": "1101",
+    "older_zone_id": "sha256:daa51d2fdce4d3887a822fcb0c3ef8bedae66bbd863f0f6051f05f220ba0ef5c",
+    "later_zone_id": "sha256:f817baf02a4f01693e2cab1536852771b88300a0b7cfbdecb74271d91a8f81fe",
+    "known_on_saved_bar": "2025-05-26",
+    "later_source_evidence_start": "2025-05-16",
+    "freshness": "ALL_LATER_SOURCE_AFTER_OLDER_KNOWN",
+    "shared_leg_ids": [],
+    "shared_turn_ids": [],
+    "common_price_relation": "LATER_RANGE_STRICTLY_BELOW",
+    "raw_price_relation": "POSITIVE_PRICE_OVERLAP",
+    "role_candidate": "FRESH_PRICE_MIGRATION_WITH_OVERLAPPING_WICKS",
+    "actual_later_path_close_visits_older_core": [],
+    "listed_gaps_between_confirmations": [],
+    "formal_interval": null,
+    "formal_merge": null,
+    "formal_split": null,
+    "formal_parent": null,
+    "selected_role": null,
+    "primary_pressure_id": null,
+    "comparison_id": "sha256:9f05ced5c781808bf98a0b18cddbaa18da509ef9941cda93ee6030571c0b4778"
+  },
+  "G2-fresh-overlap": {
+    "code": "1101",
+    "older_zone_id": "sha256:d80a28baa1ee62291c90434f6ddfa7f1d30f278d2bc77a1bad3f239604fd8b94",
+    "later_zone_id": "sha256:33540dfc398b7fa98f5812a8fd433859801476a3cf3c0022f43fe27e4d5ef58f",
+    "known_on_saved_bar": "2023-02-10",
+    "later_source_evidence_start": "2023-02-03",
+    "freshness": "ALL_LATER_SOURCE_AFTER_OLDER_KNOWN",
+    "shared_leg_ids": [],
+    "shared_turn_ids": [],
+    "common_price_relation": "POSITIVE_PRICE_OVERLAP",
+    "raw_price_relation": "POSITIVE_PRICE_OVERLAP",
+    "role_candidate": "FRESH_TWO_WAY_PATH_WITH_COMMON_PRICES",
+    "actual_later_path_close_visits_older_core": [
+      {
+        "date": "2023-02-07",
+        "close": "36.65"
+      },
+      {
+        "date": "2023-02-08",
+        "close": "36.75"
+      },
+      {
+        "date": "2023-02-09",
+        "close": "36.60"
+      }
+    ],
+    "listed_gaps_between_confirmations": [],
+    "formal_interval": null,
+    "formal_merge": null,
+    "formal_split": null,
+    "formal_parent": null,
+    "selected_role": null,
+    "primary_pressure_id": null,
+    "comparison_id": "sha256:2d0b9400ac96e2aed6d419bf6a97066fef39c427bc9e324cd97d6517a11fff42"
+  },
+  "B-shared-path": {
+    "code": "2884",
+    "older_zone_id": "sha256:e95f03ca09be37d9493f43ffbefd26dbd9eb54761ea939166afea98a7b1f806f",
+    "later_zone_id": "sha256:0eda24026eda506b05baf2f589d610b920eea5e21a784312a1109d09ce804f73",
+    "known_on_saved_bar": "2026-04-28",
+    "later_source_evidence_start": "2026-04-21",
+    "freshness": "SHARED_COMPLETED_LEG",
+    "shared_leg_ids": [
+      "sha256:1de76dfafe8e23be25adc28cc79f9b58ad7bbb8ef60ac37f02db6178fb4c6e2a"
+    ],
+    "shared_turn_ids": [
+      "sha256:735bc2519a7c8d9f31ab22baa4e086952ea2f7c5e67246713d41b8425fceefd9",
+      "sha256:eee1e999ec63fd68de7182907cc50b1a762f91c68575eb8350889bfd39d79463"
+    ],
+    "common_price_relation": "LATER_RANGE_STRICTLY_BELOW",
+    "raw_price_relation": "POSITIVE_PRICE_OVERLAP",
+    "role_candidate": "LINKED_EXISTING_PATH_NOT_FRESH_CORROBORATION",
+    "actual_later_path_close_visits_older_core": [],
+    "listed_gaps_between_confirmations": [],
+    "formal_interval": null,
+    "formal_merge": null,
+    "formal_split": null,
+    "formal_parent": null,
+    "selected_role": null,
+    "primary_pressure_id": null,
+    "comparison_id": "sha256:eb133ea282c4548856f3553be1765b962d0849bb7b0af2dc147de3fc5f360799"
+  },
+  "A-reused-context": {
+    "code": "2884",
+    "older_zone_id": "sha256:da7a1b989dd21f4dc32a7b37a9755cf0c11b7038575346fb51a832c3022f5fa7",
+    "later_zone_id": "sha256:d73a9b92cb9f002a7f8ff2ffa723ad3e62e36864c6fca400f56e12f0f0fb7642",
+    "known_on_saved_bar": "2026-10-12",
+    "later_source_evidence_start": "2026-10-02",
+    "freshness": "NO_SHARED_LEG_BUT_SOURCE_PERIOD_REUSED",
+    "shared_leg_ids": [],
+    "shared_turn_ids": [
+      "sha256:a23d196106e3412c75e86a5303237b14096a4a4d11f1e2905c10606eae0540be"
+    ],
+    "common_price_relation": "POSITIVE_PRICE_OVERLAP",
+    "raw_price_relation": "POSITIVE_PRICE_OVERLAP",
+    "role_candidate": "ADDITIONAL_LEGS_WITH_REUSED_SOURCE_CONTEXT",
+    "actual_later_path_close_visits_older_core": [
+      {
+        "date": "2026-10-08",
+        "close": "45.00"
+      }
+    ],
+    "listed_gaps_between_confirmations": [],
+    "formal_interval": null,
+    "formal_merge": null,
+    "formal_split": null,
+    "formal_parent": null,
+    "selected_role": null,
+    "primary_pressure_id": null,
+    "comparison_id": "sha256:d4226744acf62fc0b3846ca752598e4ee4ebcb7178dbd691393f6d1d0277d382"
+  },
+  "G2-geometric-overlap-no-path-close-visit": {
+    "code": "1101",
+    "older_zone_id": "sha256:c78a9503c45a65eac28d24033831fc34e665deca9199f09569329e1bb8a8153e",
+    "later_zone_id": "sha256:9f323f69a58151c8ef4726de4eff1422e48cca8f6634014e41a35b3d7e4d5746",
+    "known_on_saved_bar": "2023-03-27",
+    "later_source_evidence_start": "2023-03-14",
+    "freshness": "ALL_LATER_SOURCE_AFTER_OLDER_KNOWN",
+    "shared_leg_ids": [],
+    "shared_turn_ids": [],
+    "common_price_relation": "POSITIVE_PRICE_OVERLAP",
+    "raw_price_relation": "POSITIVE_PRICE_OVERLAP",
+    "role_candidate": "FRESH_TWO_WAY_PATH_WITH_COMMON_PRICES",
+    "actual_later_path_close_visits_older_core": [],
+    "listed_gaps_between_confirmations": [],
+    "formal_interval": null,
+    "formal_merge": null,
+    "formal_split": null,
+    "formal_parent": null,
+    "selected_role": null,
+    "primary_pressure_id": null,
+    "comparison_id": "sha256:e06b1298ecc160d8a9cff858f3f04215a7718fff2d5bc32b72b4d49692d440e1"
+  },
+  "G2-no-path-visit-confirmation-bar": {
+    "close": "36.65",
+    "date": "2023-03-27",
+    "high": "37.10",
+    "low": "36.60",
+    "open": "37.00",
+    "volume_shares_scaled": "25738990"
+  }
+}

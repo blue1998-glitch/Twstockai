@@ -1,0 +1,21 @@
+{
+  "schema": "private-daily-one-shot-plan/0.1",
+  "enabled": false,
+  "entrypoint": "python3 -m graph_core.du1_20261102.run_once",
+  "arguments": ["--root", "/workspace/twstockai-local-data/fm3_20261101/runtime"],
+  "pythonpath": ["股票系統M1_v0_18", "股票系統M1_v0_18/src"],
+  "credentials": "NONE_REQUIRED_FOR_OFFICIAL_SIX_SOURCES",
+  "existing_seed": "fm3-continuation.json",
+  "lock": "daily.lock",
+  "latest_head": "current-increment-run.json",
+  "mobile_reader": "python3 -m graph_core_chart.mobile_private --head PRIVATE_ROOT/current-increment-run.json --credentials OWNER_ONLY_AUTH_FILE",
+  "qualification": "COMMON_PRIOR_TAIPEI_DATE_ONLY_NOT_CURRENT_DAY",
+  "source_retries_per_invocation": 0,
+  "history_backfill": false,
+  "unknown_action_intervals": "RESET_SEGMENT_NOT_CERTIFY_CONTINUITY",
+  "storage_required": ["Existing complete private FM3 root mounted outside all Git trees", "Persistent filesystem supporting exclusive create, flock, fsync and atomic same-directory replace", "Capacity for retained originals, checkpoints, all immutable result/preview versions and independent encrypted backup", "Verified isolated restore before enabling an external scheduler; overlay persistence remains UNKNOWN"],
+  "scheduler": "NOT_INSTALLED_NOT_STARTED",
+  "oracle": "ACCOUNT_DEPLOYMENT_AND_EXTERNAL_TRANSFER_PAUSED_PENDING_EXPLICIT_AUTHORIZATION",
+  "network_entry": "LOOPBACK_ONLY_NOT_ANDROID_URL",
+  "private_material_must_never_be_committed": true
+}

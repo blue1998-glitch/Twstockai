@@ -1,0 +1,56 @@
+{
+  "status": "PASS",
+  "scope": "DISPLAY_ONLY_NOT_NUMERIC_PRODUCER_MARKET_ACCURACY_OR_ANDROID",
+  "filename": "M1_P03_readability_v02_20261024.zip",
+  "bytes": 22642782,
+  "sha256": "c8adfa7da448619cd9e59eb3b0a8a0c4ac10dd83ad2c6eeaccc85818de8f044a",
+  "members": 81,
+  "manifest_entries": 80,
+  "crc_safe_unique_names": true,
+  "all_member_sha_lengths_verified": true,
+  "new_extraction_runs": [
+    {
+      "label": "display-tests",
+      "command": [
+        "python3",
+        "-m",
+        "unittest",
+        "discover",
+        "-s",
+        "tests",
+        "-p",
+        "test_structure_state_readability.py",
+        "-v"
+      ],
+      "returncode": 0
+    },
+    {
+      "label": "display-rebuild",
+      "command": [
+        "python3",
+        "-m",
+        "structure_state_chart.build_readable",
+        "--output-dir",
+        "structure_state_chart/output/REPRODUCED"
+      ],
+      "returncode": 0
+    }
+  ],
+  "rebuilt_full_bytes_equal": [
+    "structure-state.json",
+    "scenario.json",
+    "role-selection.json",
+    "facts-input.json",
+    "display-verification.json",
+    "chart-layer.json",
+    "M1_P03_structure_state_readable_v02.html"
+  ],
+  "archive_members_unchanged": true,
+  "unique_directed_python_tests": 6,
+  "new_extraction_same_6_not_added": true,
+  "real_chromium_display_checks": 94,
+  "old_65_python_94_browser_not_rerun": true,
+  "new_numeric_producer": false,
+  "new_source_011": false,
+  "physical_android": "NOT_TESTED_NEW_BUILD"
+}

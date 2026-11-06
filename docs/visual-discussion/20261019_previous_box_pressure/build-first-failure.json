@@ -1,0 +1,1 @@
+{"status":"FAIL","stage":"initial build final metadata print","error":"TypeError: object of type 'int' has no len()","cause":"local a used for candidate bars then reused as string-slice index","fix":"read candidate row count from preserved assistant_candidate.records when printing","source_or_chart_value_change":false,"rerun_required":true}

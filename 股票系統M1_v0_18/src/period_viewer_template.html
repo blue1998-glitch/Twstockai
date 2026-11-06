@@ -1,0 +1,58 @@
+<!doctype html>
+<html lang="zh-Hant"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<meta http-equiv="Content-Security-Policy" content="default-src 'none'; script-src 'unsafe-inline'; style-src 'unsafe-inline'; img-src data:; connect-src 'none'; object-src 'none'; base-uri 'none'; form-action 'none'">
+<title>已保存的週／月均線</title>
+<style>
+:root{font:16px/1.65 system-ui,sans-serif;color:#152c3a;background:#f2f5f7}*{box-sizing:border-box}body{max-width:1200px;margin:auto;padding:20px}h1{font-size:1.8rem;margin:0}h2{font-size:1.15rem}.note{color:#49616e}.warning{background:#fff4d8;border-left:4px solid #bd861b;padding:12px}.panel{background:white;border:1px solid #d8e2e8;border-radius:12px;padding:18px;margin:16px 0}.controls{display:grid;grid-template-columns:repeat(auto-fit,minmax(210px,1fr));gap:12px}label{display:flex;flex-direction:column;font-weight:600}select,button{font:inherit;padding:10px;border:1px solid #9aafb9;border-radius:7px;min-width:0;max-width:100%;background:white;color:#152c3a}button{cursor:pointer;background:#e9f5f4}button:disabled{opacity:.5}select:focus,button:focus{outline:3px solid #45a5ac}canvas{display:block;width:100%;height:330px}.scroll{overflow:auto}table{border-collapse:collapse;width:100%;font-size:.9rem;white-space:nowrap}th,td{padding:9px;border-bottom:1px solid #dde5e9;text-align:left}th{background:#edf3f5}pre{white-space:pre-wrap;word-break:break-all;font-size:.85rem}#status{font-weight:600}#legend{display:flex;flex-wrap:wrap;gap:14px}details{margin:12px 0}summary{cursor:pointer;font-weight:600}@media(max-width:600px){body{padding:12px}.panel{padding:12px}h1{font-size:1.45rem}canvas{height:260px}.controls{grid-template-columns:1fr}}
+</style></head><body>
+<h1>已保存的週／月均線</h1><p class="note">離線研究檢視・M1 v0.14｜只呈現已保存結果，不即時取價、不重新計算。</p>
+<p class="warning">已走完日曆期間，不代表交易日曆或行情完整性已認證。分類品質 NOT_VALIDATED；交易資格 NOT_EVALUATED。本頁未完成真實瀏覽器與手機驗收。</p>
+<section class="panel controls" aria-label="選擇已保存結果">
+<label>股票／市場<select id="stock"></select></label><label>價格模式<select id="mode"></select></label>
+<label>規則／聚合／接入版本<select id="version"></select></label><label>分析截至日（當日結束）<select id="asof"></select></label>
+<label>保存紀錄（來源／身分）<select id="record"></select></label>
+</section>
+<p id="status" role="status" aria-live="polite">請依序選擇已保存紀錄。</p>
+<section id="result" hidden>
+<div class="panel"><h2>結果與資料範圍</h2><p id="identity"></p><p id="context" class="note"></p><button id="download" disabled>下載這份完整保存 JSON</button><details><summary>來源、日曆、版本與指紋</summary><pre id="provenance"></pre></details></div>
+<div class="panel"><h2>已保存的最新均線值</h2><p class="note">數字為原始保存字串。空值旁顯示原因；已走完期間與包含當期候選各有自己的最後價格日。</p><div class="scroll"><table><thead><tr><th>週期</th><th>已走完期間值</th><th>期間／最後價格日</th><th>包含當期候選值</th><th>期間／最後價格日</th></tr></thead><tbody id="latest"></tbody></table></div></div>
+<div class="panel"><div class="controls"><label>圖表期間<select id="timeframe"><option value="weekly">週</option><option value="monthly">月</option></select></label><label>均線口徑<select id="basis"><option value="elapsed">僅已走完日曆期間</option><option value="candidate">包含當期候選</option></select></label></div>
+<p id="chartNote" class="note"></p><div id="legend"></div><canvas id="chart" width="1100" height="330" role="img" aria-label="已保存週月收盤與均線；精確值見下方表格"></canvas>
+<details open><summary>期間資料與空值原因</summary><div class="scroll"><table><thead id="barHead"></thead><tbody id="bars"></tbody></table></div></details></div>
+</section><script id="period-data" type="application/json">@@PERIOD_DATA@@</script>
+<script>
+'use strict';
+const data=JSON.parse(document.getElementById('period-data').textContent);
+const el=id=>document.getElementById(id), records=data.records;
+const reasonText={VALUE_AVAILABLE:'有值',INSUFFICIENT_CONTIGUOUS_PERIODS:'連續有效期間不足',OPEN_PERIOD_EXCLUDED:'當期尚未走完，排除',SUPPLIED_NO_TRADING_PERIOD:'提供日曆宣告整期無交易（未認證）',NO_PRICE_RECORDS:'缺少價格資料',LEFT_EDGE_UNCERTAIN:'起始期間不完整',CALENDAR_MISMATCH:'與提供日曆不符',NO_ELAPSED_PERIODS:'沒有已走完期間',EMPTY_INPUT:'沒有價格輸入'};
+const explain=x=>(reasonText[x]||x)+' ['+x+']';
+const modeName=x=>x==='RAW_CANDIDATE'?'原始價候選（Raw）':'還原價候選（Adjusted）';
+const stockKey=r=>r.metadata.exchange+' / '+r.metadata.code;
+const versionKey=r=>[r.metadata.rule_version,r.metadata.aggregation_version,r.metadata.adapter_version,r.metadata.parameters_fingerprint].join(' | ');
+let selected=null;
+function options(id,values){const s=el(id);s.replaceChildren();const blank=document.createElement('option');blank.value='';blank.textContent='請選擇';s.append(blank);for(const [value,label] of values){const o=document.createElement('option');o.value=value;o.textContent=label;s.append(o)}s.value='';s.disabled=values.length===0}
+function unique(values){return [...new Set(values)].sort()}
+function clear(){selected=null;el('result').hidden=true;el('download').disabled=true;for(const id of ['identity','context','provenance','latest','bars','barHead','legend','chartNote'])el(id).replaceChildren();el('chart').getContext('2d').clearRect(0,0,1100,330);el('status').textContent='請依序選擇已保存紀錄。'}
+function filtered(stage){return records.filter(r=>stockKey(r)===el('stock').value&&(stage<2||r.metadata.price_mode===el('mode').value)&&(stage<3||versionKey(r)===el('version').value)&&(stage<4||r.metadata.as_of===el('asof').value))}
+function cell(row,text){const td=document.createElement('td');td.textContent=text;row.append(td)}
+function showLatest(s){const body=el('latest');body.replaceChildren();for(const tf of ['weekly','monthly'])for(const p of s[tf].periods){const row=document.createElement('tr');cell(row,p+(tf==='weekly'?' 週':' 月'));for(const view of ['elapsed','candidate']){const x=s[tf][view].latest[String(p)];cell(row,x.value===null?'— '+explain(x.reason):x.value);cell(row,(x.period||'—')+' / '+(x.last_price_date||'—'))}body.append(row)}}
+function draw(){if(!selected)return;const s=selected.result.snapshot,tf=el('timeframe').value,view=el('basis').value,b=s[tf],bars=b.bars,v=b[view];
+el('chartNote').textContent='分析錨定 '+s.as_of+'；'+(view==='elapsed'?'僅已走完日曆期間':'包含尚未走完期間的候選值')+'。曲線使用這份結果保存的數值，缺值斷線；期間收盤線包含保存的當期資料，表格另標示是否走完。';
+const colours=['#155e75','#9f3f38','#6a4c93','#1c7352','#a36b12'];
+const series=[{name:'保存的期間收盤',values:bars.map(x=>x.close)},...b.periods.map(p=>({name:p+(tf==='weekly'?' 週 SMA':' 月 SMA'),values:v.curves[String(p)]}))];
+el('legend').replaceChildren();series.forEach((x,i)=>{const t=document.createElement('span');t.textContent=x.name;t.style.color=colours[i];el('legend').append(t)});
+const ctx=el('chart').getContext('2d'),w=1100,h=330;ctx.clearRect(0,0,w,h);const nums=series.flatMap(x=>x.values.filter(v=>v!==null).map(Number));
+if(nums.some(x=>!Number.isFinite(x))){el('status').textContent='保存數值超出圖表範圍；請查看精確表格。'}else if(nums.length){const lo=Math.min(...nums),hi=Math.max(...nums),spread=hi-lo||Math.max(Math.abs(hi)*.01,1);const x=i=>65+(w-90)*i/Math.max(bars.length-1,1),y=z=>h-35-(Number(z)-lo+spread*.05)/(spread*1.1)*(h-65);ctx.fillStyle='#49616e';ctx.font='15px sans-serif';ctx.fillText(String(hi),5,22);ctx.fillText(String(lo),5,h-20);if(bars.length){ctx.fillText(bars[0].period,65,h-5);ctx.fillText(bars[bars.length-1].period,w-125,h-5)}series.forEach((a,i)=>{ctx.beginPath();ctx.strokeStyle=colours[i];ctx.lineWidth=i?2:1;let pen=false;a.values.forEach((value,j)=>{if(value===null){pen=false;return}if(pen)ctx.lineTo(x(j),y(value));else ctx.moveTo(x(j),y(value));pen=true});ctx.stroke()})}
+const hr=document.createElement('tr');for(const title of ['期間／狀態','期間起訖','最後價格日','開／高／低／收','完整成交量（股）／已知部分','日曆／MA 適用',...b.periods.map(p=>p+' 期 SMA')]){const th=document.createElement('th');th.textContent=title;hr.append(th)}el('barHead').replaceChildren(hr);el('bars').replaceChildren();
+bars.forEach((bar,i)=>{const row=document.createElement('tr');cell(row,bar.period+' / '+(bar.calendar_state==='OPEN_CALENDAR_PERIOD'?'尚未走完':'日曆已走完'));cell(row,bar.period_start+' ~ '+bar.period_end+'（觀察至 '+bar.observed_through+'）');cell(row,bar.last_price_date||'—');cell(row,[bar.open,bar.high,bar.low,bar.close].map(x=>x===null?'—':x).join(' / '));cell(row,(bar.volume_shares===null?'—':bar.volume_shares)+' / '+(bar.known_volume_sum_shares===null?'—':bar.known_volume_sum_shares)+' ['+bar.volume_context+']');cell(row,bar.calendar_status+' / '+(bar.ma_block_reason?explain(bar.ma_block_reason):'適用')+'；缺少 '+bar.missing_dates.join(',')+'；非預期 '+bar.unexpected_dates.join(','));for(const p of b.periods){const value=v.curves[String(p)][i];cell(row,value===null?'— '+explain(v.point_status[String(p)][i]):value)}el('bars').append(row)});
+}
+el('stock').addEventListener('change',()=>{clear();for(const id of ['mode','version','asof','record'])options(id,[]);options('mode',unique(filtered(1).map(r=>r.metadata.price_mode)).map(x=>[x,modeName(x)]))});
+el('mode').addEventListener('change',()=>{clear();for(const id of ['version','asof','record'])options(id,[]);options('version',unique(filtered(2).map(versionKey)).map(x=>[x,x]))});
+el('version').addEventListener('change',()=>{clear();for(const id of ['asof','record'])options(id,[]);options('asof',unique(filtered(3).map(r=>r.metadata.as_of)).map(x=>[x,x]))});
+el('asof').addEventListener('change',()=>{clear();options('record',filtered(4).map(r=>[r.analysis_id,r.metadata.source_id+' / '+r.analysis_id.slice(0,12)]))});
+el('record').addEventListener('change',()=>{clear();try{const r=filtered(4).find(r=>r.analysis_id===el('record').value);if(!r)return;selected=r;const s=r.result.snapshot;el('result').hidden=false;el('download').disabled=false;el('status').textContent='已讀取指定保存紀錄；未重新計算。';el('identity').textContent=s.exchange+' '+s.code+'｜'+modeName(s.price_mode)+'｜截至 '+s.as_of+'｜最後實際價格日 '+(s.last_price_date||'—');el('context').textContent='來源單位 '+s.volume_unit+'；日曆 '+s.calendar_authentication+'；公司行動涵蓋 '+r.result.corporate_action_coverage+'。保存理由：'+r.reason;el('provenance').textContent=JSON.stringify({analysis_id:r.analysis_id,record_fingerprint:r.record_fingerprint,...r.metadata,limitations:s.limitations},null,2);showLatest(s);draw()}catch(error){clear();el('status').textContent='無法呈現指定紀錄：'+error.message}});
+for(const id of ['timeframe','basis'])el(id).addEventListener('change',draw);
+el('download').addEventListener('click',()=>{if(!selected)return;const url=URL.createObjectURL(new Blob([JSON.stringify(selected,null,2)],{type:'application/json'}));const a=document.createElement('a');a.href=url;a.download=selected.metadata.code+'_'+selected.metadata.price_mode+'_'+selected.metadata.as_of+'_'+selected.analysis_id.slice(7,19)+'.json';a.click();URL.revokeObjectURL(url)});
+options('stock',unique(records.map(stockKey)).map(x=>[x,x]));for(const id of ['mode','version','asof','record'])options(id,[]);clear();
+if(!records.length)el('status').textContent='此匯出檔沒有已保存紀錄。';
+</script></body></html>

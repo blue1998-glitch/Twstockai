@@ -1,0 +1,611 @@
+{
+  "schema": "capital-batch-lifecycle/0.1",
+  "status": "READABLE",
+  "reasons": [],
+  "source": {
+    "kind": "conditional",
+    "schema": "capital-conditional-quantity-review/0.1",
+    "status": "REPLAYED_ACCEPTED_REVIEW",
+    "saved_reasons": [],
+    "view": "LATEST_SAVED_SNAPSHOT",
+    "document_id": "sha256:630ca310a621d405396ba2511ac1228db77f33049cae24a7913e4cda2358a8e6"
+  },
+  "account": {
+    "as_of": "2026-01-09T16:00:00+08:00",
+    "available_at": "2026-01-09T16:00:00+08:00",
+    "ledger_close": {
+      "as_of": "2026-01-09T16:00:00+08:00",
+      "available_at": "2026-01-09T16:00:00+08:00",
+      "source_ids": [
+        "fixture"
+      ]
+    },
+    "saved_row": {
+      "date": "2026-01-09",
+      "settled_cash": "596.500",
+      "available_cash_strict": "195.100",
+      "shares": {
+        "A": "50",
+        "B": "20",
+        "C": "2"
+      },
+      "cash_receivable": "80",
+      "purchase_payable": "401.400",
+      "cash_claims": [
+        {
+          "amount": "80",
+          "id": "opening-cash",
+          "pay_date": "2026-01-12",
+          "source_ids": [
+            "fixture"
+          ],
+          "kind": "OPENING_RECEIVABLE"
+        }
+      ],
+      "share_receivables": [
+        {
+          "code": "A",
+          "delivery_date": "2026-01-09",
+          "id": "opening-shares",
+          "shares": "10",
+          "source_ids": [
+            "fixture"
+          ],
+          "tradable_date": "2026-01-12"
+        }
+      ],
+      "net_accrual_equity": "1325.100",
+      "marks": {
+        "A": {
+          "value": "10",
+          "source_date": "2026-01-09",
+          "carried_nontrading_mark": false,
+          "source_id": "fixture",
+          "basis_id": "RAW:fixture:A",
+          "quote_source_ids": [
+            "fixture"
+          ]
+        },
+        "B": {
+          "value": "20",
+          "source_date": "2026-01-09",
+          "carried_nontrading_mark": false,
+          "source_id": "fixture",
+          "basis_id": "RAW:fixture:B",
+          "quote_source_ids": [
+            "fixture"
+          ]
+        },
+        "C": {
+          "value": "25",
+          "source_date": "2026-01-09",
+          "carried_nontrading_mark": false,
+          "source_id": "fixture",
+          "basis_id": "RAW:fixture:C",
+          "quote_source_ids": [
+            "fixture"
+          ]
+        }
+      }
+    },
+    "general_reserved_cash": "100",
+    "origin_initial_capital": "1330",
+    "external_flow": "0",
+    "opening_unavailable_shares": {
+      "A": "0",
+      "B": "0",
+      "C": "0"
+    },
+    "origin_ledger_input_id": "sha256:a9d6323c5df5fcffc07b09c7f3c3ef7e47db648ba5440031a3625e82aab73952",
+    "origin_common_account_id": "sha256:8322bbf14a686deba2c683661b4fc7bbcfe1626b6f853f91e8fbcce0722a3b99",
+    "latest_decision_id": "sha256:23361277e73282d9a7d408601968f6d1cf9df3ca5511ead15f237021ef83bffd",
+    "latest_common_account_id": "sha256:4e3126467d1ae15e45898d1d1355c75ffc272adfd920ee3e5886a44b91b14409",
+    "reviewed_evidence_tokens": [
+      "fixture:event_id:A-event",
+      "fixture:event_id:B-event",
+      "fixture:event_id:C-event",
+      "fixture:formation_id:A-formation",
+      "fixture:formation_id:B-formation",
+      "fixture:formation_id:C-formation",
+      "fixture:volume_bar_id:A-bar",
+      "fixture:volume_bar_id:B-bar",
+      "fixture:volume_bar_id:C-bar"
+    ],
+    "source_pointer": "/review/execution/ledger/daily/4"
+  },
+  "snapshots": [
+    {
+      "as_of": "2026-01-08T16:00:00+08:00",
+      "available_at": "2026-01-08T16:00:00+08:00",
+      "ledger_close": {
+        "as_of": "2026-01-08T16:00:00+08:00",
+        "available_at": "2026-01-08T16:00:00+08:00",
+        "source_ids": [
+          "fixture"
+        ]
+      },
+      "saved_row": {
+        "date": "2026-01-08",
+        "settled_cash": "596.500",
+        "available_cash_strict": "596.500",
+        "shares": {
+          "A": "50",
+          "B": "0",
+          "C": "2"
+        },
+        "cash_receivable": "80",
+        "purchase_payable": "0",
+        "cash_claims": [
+          {
+            "amount": "80",
+            "id": "opening-cash",
+            "pay_date": "2026-01-12",
+            "source_ids": [
+              "fixture"
+            ],
+            "kind": "OPENING_RECEIVABLE"
+          }
+        ],
+        "share_receivables": [
+          {
+            "code": "A",
+            "delivery_date": "2026-01-09",
+            "id": "opening-shares",
+            "shares": "10",
+            "source_ids": [
+              "fixture"
+            ],
+            "tradable_date": "2026-01-12"
+          }
+        ],
+        "net_accrual_equity": "1326.500",
+        "marks": {
+          "A": {
+            "value": "10",
+            "source_date": "2026-01-08",
+            "carried_nontrading_mark": false,
+            "source_id": "fixture",
+            "basis_id": "RAW:fixture:A",
+            "quote_source_ids": [
+              "fixture"
+            ]
+          },
+          "B": {
+            "value": "20",
+            "source_date": "2026-01-08",
+            "carried_nontrading_mark": false,
+            "source_id": "fixture",
+            "basis_id": "RAW:fixture:B",
+            "quote_source_ids": [
+              "fixture"
+            ]
+          },
+          "C": {
+            "value": "25",
+            "source_date": "2026-01-08",
+            "carried_nontrading_mark": false,
+            "source_id": "fixture",
+            "basis_id": "RAW:fixture:C",
+            "quote_source_ids": [
+              "fixture"
+            ]
+          }
+        }
+      },
+      "general_reserved_cash": "100",
+      "origin_initial_capital": "1330",
+      "external_flow": "0",
+      "opening_unavailable_shares": {
+        "A": "0",
+        "B": "0",
+        "C": "0"
+      },
+      "origin_ledger_input_id": "sha256:a9d6323c5df5fcffc07b09c7f3c3ef7e47db648ba5440031a3625e82aab73952",
+      "origin_common_account_id": "sha256:8322bbf14a686deba2c683661b4fc7bbcfe1626b6f853f91e8fbcce0722a3b99",
+      "latest_decision_id": "sha256:5f20be9cc0036864dfbee0347c6dd90ad0366992286dce17d7a81329efa46136",
+      "latest_common_account_id": "sha256:8322bbf14a686deba2c683661b4fc7bbcfe1626b6f853f91e8fbcce0722a3b99",
+      "reviewed_evidence_tokens": [
+        "fixture:event_id:A-event",
+        "fixture:event_id:B-event",
+        "fixture:event_id:C-event",
+        "fixture:formation_id:A-formation",
+        "fixture:formation_id:B-formation",
+        "fixture:formation_id:C-formation",
+        "fixture:volume_bar_id:A-bar",
+        "fixture:volume_bar_id:B-bar",
+        "fixture:volume_bar_id:C-bar"
+      ],
+      "source_pointer": "/review/prefix_execution/ledger/daily/3"
+    },
+    {
+      "as_of": "2026-01-09T16:00:00+08:00",
+      "available_at": "2026-01-09T16:00:00+08:00",
+      "ledger_close": {
+        "as_of": "2026-01-09T16:00:00+08:00",
+        "available_at": "2026-01-09T16:00:00+08:00",
+        "source_ids": [
+          "fixture"
+        ]
+      },
+      "saved_row": {
+        "date": "2026-01-09",
+        "settled_cash": "596.500",
+        "available_cash_strict": "195.100",
+        "shares": {
+          "A": "50",
+          "B": "20",
+          "C": "2"
+        },
+        "cash_receivable": "80",
+        "purchase_payable": "401.400",
+        "cash_claims": [
+          {
+            "amount": "80",
+            "id": "opening-cash",
+            "pay_date": "2026-01-12",
+            "source_ids": [
+              "fixture"
+            ],
+            "kind": "OPENING_RECEIVABLE"
+          }
+        ],
+        "share_receivables": [
+          {
+            "code": "A",
+            "delivery_date": "2026-01-09",
+            "id": "opening-shares",
+            "shares": "10",
+            "source_ids": [
+              "fixture"
+            ],
+            "tradable_date": "2026-01-12"
+          }
+        ],
+        "net_accrual_equity": "1325.100",
+        "marks": {
+          "A": {
+            "value": "10",
+            "source_date": "2026-01-09",
+            "carried_nontrading_mark": false,
+            "source_id": "fixture",
+            "basis_id": "RAW:fixture:A",
+            "quote_source_ids": [
+              "fixture"
+            ]
+          },
+          "B": {
+            "value": "20",
+            "source_date": "2026-01-09",
+            "carried_nontrading_mark": false,
+            "source_id": "fixture",
+            "basis_id": "RAW:fixture:B",
+            "quote_source_ids": [
+              "fixture"
+            ]
+          },
+          "C": {
+            "value": "25",
+            "source_date": "2026-01-09",
+            "carried_nontrading_mark": false,
+            "source_id": "fixture",
+            "basis_id": "RAW:fixture:C",
+            "quote_source_ids": [
+              "fixture"
+            ]
+          }
+        }
+      },
+      "general_reserved_cash": "100",
+      "origin_initial_capital": "1330",
+      "external_flow": "0",
+      "opening_unavailable_shares": {
+        "A": "0",
+        "B": "0",
+        "C": "0"
+      },
+      "origin_ledger_input_id": "sha256:a9d6323c5df5fcffc07b09c7f3c3ef7e47db648ba5440031a3625e82aab73952",
+      "origin_common_account_id": "sha256:8322bbf14a686deba2c683661b4fc7bbcfe1626b6f853f91e8fbcce0722a3b99",
+      "latest_decision_id": "sha256:23361277e73282d9a7d408601968f6d1cf9df3ca5511ead15f237021ef83bffd",
+      "latest_common_account_id": "sha256:4e3126467d1ae15e45898d1d1355c75ffc272adfd920ee3e5886a44b91b14409",
+      "reviewed_evidence_tokens": [
+        "fixture:event_id:A-event",
+        "fixture:event_id:B-event",
+        "fixture:event_id:C-event",
+        "fixture:formation_id:A-formation",
+        "fixture:formation_id:B-formation",
+        "fixture:formation_id:C-formation",
+        "fixture:volume_bar_id:A-bar",
+        "fixture:volume_bar_id:B-bar",
+        "fixture:volume_bar_id:C-bar"
+      ],
+      "source_pointer": "/review/execution/ledger/daily/4"
+    }
+  ],
+  "approvals": [
+    {
+      "origin_decision_id": "sha256:5f20be9cc0036864dfbee0347c6dd90ad0366992286dce17d7a81329efa46136",
+      "candidate_id": "quantity:sha256:56f76c7d40f2c39d22607b6ed2cd15253513daf95d2f53f487bbf7380cd119a0",
+      "classification": "WAIT_SETTLEMENT_REASSESSMENT",
+      "saved_plan": {
+        "id": "quantity:sha256:56f76c7d40f2c39d22607b6ed2cd15253513daf95d2f53f487bbf7380cd119a0",
+        "family": "E",
+        "route": "R1",
+        "targets": {
+          "A": "50",
+          "B": "20",
+          "C": "2"
+        },
+        "trigger_ids": [],
+        "edge_budget": "1000",
+        "conditions": [
+          "CURRENT_RESEARCH_INTENT_ONLY",
+          "REASSESS_AFTER_SETTLEMENT",
+          "NEW_INDEPENDENT_TRIGGER_FOR_NEXT_BUY_BATCH"
+        ]
+      },
+      "source_pointer": "/review/original_approval",
+      "shared_order_ids": [
+        "r1-A",
+        "r1-B"
+      ],
+      "budget_scope": "ONE_SHARED_RESEARCH_PROPOSAL_NOT_REUSABLE_PER_ORDER"
+    }
+  ],
+  "orders": [
+    {
+      "order_id": "r1-A",
+      "code": "A",
+      "side": "SELL",
+      "origin_decision_id": "sha256:5f20be9cc0036864dfbee0347c6dd90ad0366992286dce17d7a81329efa46136",
+      "original_order": {
+        "id": "r1-A",
+        "code": "A",
+        "side": "SELL",
+        "shares": "50",
+        "limit_price": "9.98",
+        "decision_at": "2026-01-05T15:00:00+08:00",
+        "submitted_at": "2026-01-06T08:00:00+08:00",
+        "expires_at": "2026-01-12T16:00:00+08:00"
+      },
+      "approval_status": "SAVED_RESEARCH_APPROVAL",
+      "approved_order_quantity": "50",
+      "approval_quantity_scope": "ORIGINAL_ORDER_ONLY_NOT_ENTIRE_PLAN_OR_FRESH_BUY_PERMISSION",
+      "original_order_quantity": "50",
+      "filled_quantity": "50",
+      "live_remaining_quantity": "0",
+      "cancelled_unfilled_quantity": "0",
+      "expired_unfilled_quantity": "0",
+      "settled_fill_quantity": "50",
+      "pending_settlement_quantity": "0",
+      "unknown_settlement_quantity": "0",
+      "saved_order_state": {
+        "remaining": "0",
+        "status": "FILLED",
+        "reserved_cash": "0",
+        "requires_reassessment": false,
+        "active_decision_at": "2026-01-05T15:00:00+08:00",
+        "active_decision_id": "sha256:5f20be9cc0036864dfbee0347c6dd90ad0366992286dce17d7a81329efa46136"
+      },
+      "fills": [
+        {
+          "record": {
+            "id": "r1-A-fill-0",
+            "code": "A",
+            "side": "SELL",
+            "shares": "50",
+            "price": "9.990",
+            "fee": "1",
+            "tax": "2",
+            "date": "2026-01-06",
+            "decision_date": "2026-01-05",
+            "settlement_date": "2026-01-08",
+            "source_ids": [
+              "fixture"
+            ]
+          },
+          "source_pointer": "/review/execution/fills/0",
+          "settlement": {
+            "status": "SETTLED_SAVED_JOURNAL",
+            "records": [
+              {
+                "record": {
+                  "date": "2026-01-08",
+                  "type": "CASH_RECEIVED",
+                  "claim_id": "r1-A-fill-0",
+                  "kind": "SALE",
+                  "amount": "496.500"
+                },
+                "source_pointer": "/review/execution/ledger/journal/1"
+              }
+            ],
+            "pending_amount": null,
+            "pending_amount_reason": "NOT_RECONSTRUCTED_FROM_PRICE_OR_ACCOUNT_AGGREGATE"
+          }
+        }
+      ],
+      "reviews": [],
+      "events": [
+        {
+          "record": {
+            "at": "2026-01-06T09:00:00+08:00",
+            "order_id": "r1-A",
+            "status": "FILLED",
+            "fill_id": "r1-A-fill-0",
+            "decision_id": "sha256:5f20be9cc0036864dfbee0347c6dd90ad0366992286dce17d7a81329efa46136",
+            "reserved_cash_total": "0",
+            "remaining": "0"
+          },
+          "source_pointer": "/review/prefix_execution/execution_events/1"
+        }
+      ],
+      "source_pointer": "/review/execution/order_history/0"
+    },
+    {
+      "order_id": "r1-B",
+      "code": "B",
+      "side": "BUY",
+      "origin_decision_id": "sha256:5f20be9cc0036864dfbee0347c6dd90ad0366992286dce17d7a81329efa46136",
+      "original_order": {
+        "id": "r1-B",
+        "code": "B",
+        "side": "BUY",
+        "shares": "20",
+        "limit_price": "20.03",
+        "decision_at": "2026-01-05T15:00:00+08:00",
+        "submitted_at": "2026-01-06T08:00:00+08:00",
+        "expires_at": "2026-01-12T16:00:00+08:00"
+      },
+      "approval_status": "SAVED_RESEARCH_APPROVAL",
+      "approved_order_quantity": "20",
+      "approval_quantity_scope": "ORIGINAL_ORDER_ONLY_NOT_ENTIRE_PLAN_OR_FRESH_BUY_PERMISSION",
+      "original_order_quantity": "20",
+      "filled_quantity": "20",
+      "live_remaining_quantity": "0",
+      "cancelled_unfilled_quantity": "0",
+      "expired_unfilled_quantity": "0",
+      "settled_fill_quantity": "0",
+      "pending_settlement_quantity": "20",
+      "unknown_settlement_quantity": "0",
+      "saved_order_state": {
+        "remaining": "0",
+        "status": "FILLED",
+        "reserved_cash": "0",
+        "requires_reassessment": false,
+        "active_decision_at": "2026-01-08T17:00:00+08:00",
+        "active_decision_id": "sha256:23361277e73282d9a7d408601968f6d1cf9df3ca5511ead15f237021ef83bffd"
+      },
+      "fills": [
+        {
+          "record": {
+            "id": "r1-B-fill-1",
+            "code": "B",
+            "side": "BUY",
+            "shares": "20",
+            "price": "20.020",
+            "fee": "1",
+            "tax": "0",
+            "date": "2026-01-09",
+            "decision_date": "2026-01-08",
+            "settlement_date": "2026-01-12",
+            "source_ids": [
+              "fixture"
+            ]
+          },
+          "source_pointer": "/review/execution/fills/1",
+          "settlement": {
+            "status": "PENDING_SAVED_SCHEDULE",
+            "records": [],
+            "pending_amount": null,
+            "pending_amount_reason": "NOT_RECONSTRUCTED_FROM_PRICE_OR_ACCOUNT_AGGREGATE"
+          }
+        }
+      ],
+      "reviews": [
+        {
+          "id": "same-order-current-review",
+          "decision_at": "2026-01-08T17:00:00+08:00",
+          "data_cutoff": "2026-01-08T16:00:00+08:00",
+          "observed_at": "2026-01-09T09:01:00+08:00",
+          "outcome": "ACCEPTED",
+          "decision_id": "sha256:23361277e73282d9a7d408601968f6d1cf9df3ca5511ead15f237021ef83bffd",
+          "checkpoint_id": "sha256:dbf91618757c2cd7def2481a97c3605f934e8b850b2ebd120fb1a9f992a418e8",
+          "request_content_id": "sha256:254a4a10a8bd285a2f77f97433880c17ad8e9e9796bcf13de0c6b8e0c9339533",
+          "attempt_id": "sha256:899adab8dd89de8144f44844b6d574373dd00bf10283fc9ab2ca28269bcf52ab",
+          "reasons": [],
+          "capital_eligibility": {
+            "qualified_for_synthetic_proposal": true,
+            "reasons": [],
+            "review": {
+              "adjustment_version": "RAW:synthetic/1",
+              "assessed_at": "2026-01-08T17:00:00+08:00",
+              "available_at": "2026-01-08T17:00:00+08:00",
+              "basis_id": "RAW:fixture:B",
+              "code": "B",
+              "data_cutoff": "2026-01-08T16:00:00+08:00",
+              "evidence_ids": [
+                "B-event"
+              ],
+              "schema": "capital-entry-review/0.1",
+              "source_id": "fixture",
+              "source_ids": [
+                "fixture"
+              ],
+              "status": "QUALIFIED_SYNTHETIC_RESEARCH"
+            },
+            "authority": "SYNTHETIC_RESEARCH_ONLY_NOT_DATA_OR_EXECUTION_AUTHORIZATION"
+          },
+          "restriction_conflicts": {},
+          "new_evidence_tokens": [],
+          "source_pointer": "/review/execution/reassessment_attempts/0"
+        }
+      ],
+      "events": [
+        {
+          "record": {
+            "at": "2026-01-06T09:00:00+08:00",
+            "order_id": "r1-B",
+            "status": "WAITING_REASSESSMENT",
+            "reason": "NEW_ACCOUNT_EVIDENCE_CUTOFF_AND_DECISION_ID_REQUIRED"
+          },
+          "source_pointer": "/review/prefix_execution/execution_events/0"
+        },
+        {
+          "record": {
+            "at": "2026-01-06T09:00:30+08:00",
+            "order_id": "r1-B",
+            "status": "WAITING_REASSESSMENT",
+            "reason": "NEW_ACCOUNT_EVIDENCE_CUTOFF_AND_DECISION_ID_REQUIRED"
+          },
+          "source_pointer": "/review/prefix_execution/execution_events/2"
+        },
+        {
+          "record": {
+            "at": "2026-01-06T09:01:00+08:00",
+            "order_id": "r1-B",
+            "status": "WAITING_REASSESSMENT",
+            "reason": "NEW_ACCOUNT_EVIDENCE_CUTOFF_AND_DECISION_ID_REQUIRED"
+          },
+          "source_pointer": "/review/prefix_execution/execution_events/3"
+        },
+        {
+          "record": {
+            "at": "2026-01-09T09:00:00+08:00",
+            "order_id": "r1-B",
+            "status": "WAITING_REASSESSMENT",
+            "reason": "NEW_ACCOUNT_EVIDENCE_CUTOFF_AND_DECISION_ID_REQUIRED"
+          },
+          "source_pointer": "/review/execution/execution_events/4"
+        },
+        {
+          "record": {
+            "at": "2026-01-09T09:00:30+08:00",
+            "order_id": "r1-B",
+            "status": "WAITING_REASSESSMENT",
+            "reason": "NEW_ACCOUNT_EVIDENCE_CUTOFF_AND_DECISION_ID_REQUIRED"
+          },
+          "source_pointer": "/review/execution/execution_events/5"
+        },
+        {
+          "record": {
+            "at": "2026-01-09T09:01:00+08:00",
+            "order_id": "r1-B",
+            "status": "FILLED",
+            "fill_id": "r1-B-fill-1",
+            "decision_id": "sha256:23361277e73282d9a7d408601968f6d1cf9df3ca5511ead15f237021ef83bffd",
+            "reserved_cash_total": "0.0000",
+            "remaining": "0"
+          },
+          "source_pointer": "/review/execution/execution_events/6"
+        }
+      ],
+      "source_pointer": "/review/execution/order_history/1"
+    }
+  ],
+  "validation_scope": "SAVED_STRUCTURAL_LINKS_NOT_LEDGER_REPLAY_OR_SOURCE_AUTHENTICATION",
+  "data_qualified": false,
+  "execution_model_qualified": false,
+  "historical_signal_eligible": false,
+  "policy_authorized": false,
+  "live_execution_authorized": false,
+  "primary_pressure_id": null
+}

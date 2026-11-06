@@ -1,0 +1,36 @@
+{
+  "status": "PASS",
+  "scope": "SOURCE_ARCHIVE_PACKAGE_NOT_PRODUCT_TESTS",
+  "filename": "tcc-annual-codex-source-archive-20261023.zip",
+  "bytes": 7075638,
+  "sha256": "0eaac599005a946400d644829de663bd5dfb5a8e482b88ceb21e4deb6943c439",
+  "members": 41,
+  "manifest_entries": 40,
+  "crc_unique_safe_paths": true,
+  "all_manifest_lengths_and_sha_verified": true,
+  "new_directory_extraction_verified": true,
+  "offline_verification_command": [
+    "python3",
+    "verify_archive.py"
+  ],
+  "offline_returncode": 0,
+  "offline_result": {
+    "status": "PASS",
+    "scope": "OFFLINE_SOURCE_ARCHIVE_INTEGRITY_NOT_PRODUCT_TESTS",
+    "source_bytes": 4932379,
+    "source_sha256": "7406e30d1f02f083611f594459b952494816d87237bf2203734ce6afb487155d",
+    "visually_reviewed_physical_pages": [
+      52,
+      57,
+      58,
+      60
+    ],
+    "source_warnings_preserved": true,
+    "product_tests_run": 0
+  },
+  "all_members_unchanged_after_verification": true,
+  "product_tests_run": 0,
+  "product_regressions_run": 0,
+  "producer_or_qualification_rerun": false,
+  "work_archive_obtained": false
+}

@@ -1,0 +1,46 @@
+{
+  "schema": "lifecycle-self-review/0.1",
+  "baseline": "3b025c6a94a65fdb3cd1f0afa023dbaacb5d1374",
+  "unchanged_originals": [
+    "股票系統M1_v0_18/capital_research/quantity_replay.py",
+    "股票系統M1_v0_18/capital_research/quantity_candidates.py",
+    "股票系統M1_v0_18/capital_research/conditional_quantity_review.py",
+    "股票系統M1_v0_18/capital_research/core.py",
+    "股票系統M1_v0_18/capital_research/execution.py",
+    "股票系統M1_v0_18/capital_research/continuity.py",
+    "股票系統M1_v0_18/capital_research/fact_lineage.py",
+    "股票系統M1_v0_18/capital_research/eligibility.py",
+    "股票系統M1_v0_18/capital_research/reassessment_history.py",
+    "股票系統M1_v0_18/capital_research/allocation.py",
+    "股票系統M1_v0_18/rotation_research/action_ledger.py"
+  ],
+  "original_saved_input_fingerprints_match": true,
+  "frozen_input_expected_contract_unchanged": true,
+  "old_docs_body_preserved": true,
+  "final_source_versions_match": true,
+  "saved_read_cases": 19,
+  "original_file_projections": 13,
+  "structural_diagnostic_variants": 6,
+  "unique_methods": 13,
+  "actual_method_executions": 25,
+  "first_log_copy_counted": false,
+  "historical_methods_added": 0,
+  "numerical_producer_or_old_suite_runs": 0,
+  "decision_or_ledger_recomputed": false,
+  "fresh_read_cli_engine_import_and_write_guard": "PASS",
+  "sensitive_findings": [],
+  "financial_review": [
+    "Original plan listed once with shared order IDs; old/new orders remain separate",
+    "Saved general/order reserve and payable are not added back or allocated twice",
+    "Per-fill settlement requires saved journal; missing proof/amount remains UNKNOWN/null",
+    "Input rows, rights, latest and tokens are copied, not posted or revalued"
+  ],
+  "validation_limit": "Canonical hashes and saved structural links, not source authentication or full branch/accounting proof",
+  "untouched_limitations": [
+    "1101 opening cash_claims UNKNOWN/refused",
+    "70/2/including8/qualified_real_net0",
+    "formal false and primary pressure null",
+    "R2/F, credit, opening payables and external order replay unchanged",
+    "Astra and first-workspace rescue originals not obtained/read"
+  ]
+}

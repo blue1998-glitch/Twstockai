@@ -1,0 +1,1143 @@
+{
+  "schema_version": "work-graph-structure-comparison/0.1",
+  "scope": "READ_ONLY_SHIPPED_RESULT_NOT_ENGINE_RERUN",
+  "artifact_commit": "2d480bffcaebfa09768e04a283227effc3fc0a00",
+  "zip_sha256": "934c54ec033de14d402cb4b8110ed53e9a99b311a934144f9139950c05046783",
+  "html_sha256": "fbca1e1d7e82d5dc9dcca8da0d3c8619f59431c1119d2cd8cb4c8ffc8293a724",
+  "core_sha256": "f13275f3ba1e932db4aca5cbc588b61a3d7c5ed48db34797290e63ed6a7f10ec",
+  "as_of": "2026-10-16",
+  "source_id": "sha256:adea7f78a97d18b6b51fbba103e08c0db33dc6fb1eb613b960b0aabe213b534b",
+  "price_basis_id": "sha256:50e560b77640da3b7d000c0db67fc73a3f5b69d0bd744871ccb03483f8ec115e",
+  "numeric_frame_id": "sha256:b7215491c924570f3b40594fbd859f4b5c2532b247b62b6e625a8fcb66964f70",
+  "source_prefix_fingerprint": "sha256:e1651ca453df5b818e091575ded756953f69271f69f69d6008bb544f2fe76832",
+  "core_result_id": "sha256:ec7bca9ed6aa176c328fd8c4e94a31ea66967832e7089ac20a44090461f49da4",
+  "code": "1101",
+  "close": "27.30",
+  "source_records": 1213,
+  "selected_boxes": [
+    {
+      "label": "B22",
+      "id": "sha256:dc8a9a73b9b231ab0ce8ea8b2d55e2bbba3c2cb3eab3689b4a104a842a498440",
+      "scale": "0.03",
+      "source_start": "2023-09-14",
+      "source_end": "2024-01-19",
+      "confirmed_at": "2024-02-19",
+      "records": 88,
+      "turns": 6,
+      "research_bounds": {
+        "low": "31.35",
+        "high": "35.50",
+        "pressure_band": [
+          "34.15",
+          "35.50"
+        ],
+        "support_band": [
+          "31.35",
+          "32.60"
+        ],
+        "high_cluster_spread_to_span": "0.32530120481927710843373493975903614457831325301205",
+        "low_cluster_spread_to_span": "0.30120481927710843373493975903614457831325301204819"
+      },
+      "formal_price_bounds": null,
+      "formal_region_membership": null,
+      "first_departure_range_end": "2024-03-19",
+      "first_breakdown_at": "2024-03-20",
+      "parent_ids": [],
+      "successor_count": 54,
+      "source_turns": [
+        {
+          "date": "2023-09-14",
+          "kind": "HIGH",
+          "price": "35.50",
+          "confirmed_at": "2023-09-20"
+        },
+        {
+          "date": "2023-10-05",
+          "kind": "LOW",
+          "price": "32.60",
+          "confirmed_at": "2023-10-12"
+        },
+        {
+          "date": "2023-10-13",
+          "kind": "HIGH",
+          "price": "34.15",
+          "confirmed_at": "2023-10-18"
+        },
+        {
+          "date": "2023-10-24",
+          "kind": "LOW",
+          "price": "31.35",
+          "confirmed_at": "2023-11-02"
+        },
+        {
+          "date": "2023-11-28",
+          "kind": "HIGH",
+          "price": "35.50",
+          "confirmed_at": "2023-11-29"
+        },
+        {
+          "date": "2024-01-19",
+          "kind": "LOW",
+          "price": "31.80",
+          "confirmed_at": "2024-02-19"
+        }
+      ]
+    },
+    {
+      "label": "B24",
+      "id": "sha256:aa40970c99fa11415cd4c27799f6dc7842858a3ecb836f7590d0a1637af38b7a",
+      "scale": "0.03",
+      "source_start": "2024-02-20",
+      "source_end": "2024-04-26",
+      "confirmed_at": "2024-05-06",
+      "records": 46,
+      "turns": 4,
+      "research_bounds": {
+        "low": "30.80",
+        "high": "33.60",
+        "pressure_band": [
+          "32.90",
+          "33.60"
+        ],
+        "support_band": [
+          "30.80",
+          "31.75"
+        ],
+        "high_cluster_spread_to_span": "0.25",
+        "low_cluster_spread_to_span": "0.33928571428571428571428571428571428571428571428571"
+      },
+      "formal_price_bounds": null,
+      "formal_region_membership": null,
+      "first_departure_range_end": "2024-05-10",
+      "first_breakdown_at": "2025-01-10",
+      "parent_ids": [
+        "sha256:e0a7e3e03fbbe4d0c5527c65402c2c1281b094f861e82a366d84ddbbef936183"
+      ],
+      "successor_count": 32,
+      "source_turns": [
+        {
+          "date": "2024-02-20",
+          "kind": "HIGH",
+          "price": "32.90",
+          "confirmed_at": "2024-02-27"
+        },
+        {
+          "date": "2024-03-20",
+          "kind": "LOW",
+          "price": "30.80",
+          "confirmed_at": "2024-03-29"
+        },
+        {
+          "date": "2024-04-03",
+          "kind": "HIGH",
+          "price": "33.60",
+          "confirmed_at": "2024-04-08"
+        },
+        {
+          "date": "2024-04-26",
+          "kind": "LOW",
+          "price": "31.75",
+          "confirmed_at": "2024-05-06"
+        }
+      ]
+    },
+    {
+      "label": "B44",
+      "id": "sha256:84d06011ea42c8890e2c271c1612ccd92341c82696721b9519bace0af364aa32",
+      "scale": "0.03",
+      "source_start": "2025-04-08",
+      "source_end": "2025-05-13",
+      "confirmed_at": "2025-05-14",
+      "records": 25,
+      "turns": 4,
+      "research_bounds": {
+        "low": "28.45",
+        "high": "31.40",
+        "pressure_band": [
+          "31.20",
+          "31.40"
+        ],
+        "support_band": [
+          "28.45",
+          "28.50"
+        ],
+        "high_cluster_spread_to_span": "0.067796610169491525423728813559322033898305084745763",
+        "low_cluster_spread_to_span": "0.016949152542372881355932203389830508474576271186441"
+      },
+      "formal_price_bounds": null,
+      "formal_region_membership": null,
+      "first_departure_range_end": "2025-05-29",
+      "first_breakdown_at": "2025-06-02",
+      "parent_ids": [],
+      "successor_count": 30,
+      "source_turns": [
+        {
+          "date": "2025-04-08",
+          "kind": "LOW",
+          "price": "28.45",
+          "confirmed_at": "2025-04-10"
+        },
+        {
+          "date": "2025-04-10",
+          "kind": "HIGH",
+          "price": "31.20",
+          "confirmed_at": "2025-04-11"
+        },
+        {
+          "date": "2025-04-22",
+          "kind": "LOW",
+          "price": "28.50",
+          "confirmed_at": "2025-04-29"
+        },
+        {
+          "date": "2025-05-13",
+          "kind": "HIGH",
+          "price": "31.40",
+          "confirmed_at": "2025-05-14"
+        }
+      ]
+    },
+    {
+      "label": "B66",
+      "id": "sha256:8805036f28dac133a63265ceca3471e7c188537f915822f3e80334d415b7ab1c",
+      "scale": "0.03",
+      "source_start": "2026-09-29",
+      "source_end": "2026-10-12",
+      "confirmed_at": "2026-10-13",
+      "records": 9,
+      "turns": 4,
+      "research_bounds": {
+        "low": "24.80",
+        "high": "27.20",
+        "pressure_band": [
+          "26.70",
+          "27.20"
+        ],
+        "support_band": [
+          "24.80",
+          "25.05"
+        ],
+        "high_cluster_spread_to_span": "0.20833333333333333333333333333333333333333333333333",
+        "low_cluster_spread_to_span": "0.10416666666666666666666666666666666666666666666667"
+      },
+      "formal_price_bounds": null,
+      "formal_region_membership": null,
+      "first_departure_range_end": "2026-10-15",
+      "first_breakdown_at": null,
+      "parent_ids": [],
+      "successor_count": 0,
+      "source_turns": [
+        {
+          "date": "2026-09-29",
+          "kind": "LOW",
+          "price": "25.05",
+          "confirmed_at": "2026-09-30"
+        },
+        {
+          "date": "2026-09-30",
+          "kind": "HIGH",
+          "price": "26.70",
+          "confirmed_at": "2026-10-01"
+        },
+        {
+          "date": "2026-10-06",
+          "kind": "LOW",
+          "price": "24.80",
+          "confirmed_at": "2026-10-08"
+        },
+        {
+          "date": "2026-10-12",
+          "kind": "HIGH",
+          "price": "27.20",
+          "confirmed_at": "2026-10-13"
+        }
+      ]
+    },
+    {
+      "label": "B67",
+      "id": "sha256:e0a7e3e03fbbe4d0c5527c65402c2c1281b094f861e82a366d84ddbbef936183",
+      "scale": "0.06",
+      "source_start": "2023-10-24",
+      "source_end": "2024-07-26",
+      "confirmed_at": "2024-08-15",
+      "records": 184,
+      "turns": 4,
+      "research_bounds": {
+        "low": "30.80",
+        "high": "35.50",
+        "pressure_band": [
+          "35.20",
+          "35.50"
+        ],
+        "support_band": [
+          "30.80",
+          "31.35"
+        ],
+        "high_cluster_spread_to_span": "0.063829787234042553191489361702127659574468085106383",
+        "low_cluster_spread_to_span": "0.11702127659574468085106382978723404255319148936170"
+      },
+      "formal_price_bounds": null,
+      "formal_region_membership": null,
+      "first_departure_range_end": "2025-01-09",
+      "first_breakdown_at": "2025-01-10",
+      "parent_ids": [
+        "sha256:6c10b13df90988c899ec7c7fa0703fce776df5d7e012fc0082977f139c4e4e00"
+      ],
+      "successor_count": 32,
+      "source_turns": [
+        {
+          "date": "2023-10-24",
+          "kind": "LOW",
+          "price": "31.35",
+          "confirmed_at": "2023-11-20"
+        },
+        {
+          "date": "2023-11-28",
+          "kind": "HIGH",
+          "price": "35.50",
+          "confirmed_at": "2024-01-16"
+        },
+        {
+          "date": "2024-03-20",
+          "kind": "LOW",
+          "price": "30.80",
+          "confirmed_at": "2024-04-10"
+        },
+        {
+          "date": "2024-07-26",
+          "kind": "HIGH",
+          "price": "35.20",
+          "confirmed_at": "2024-08-15"
+        }
+      ]
+    },
+    {
+      "label": "B68",
+      "id": "sha256:6c10b13df90988c899ec7c7fa0703fce776df5d7e012fc0082977f139c4e4e00",
+      "scale": "0.06",
+      "source_start": "2023-10-24",
+      "source_end": "2024-09-12",
+      "confirmed_at": "2024-09-27",
+      "records": 218,
+      "turns": 5,
+      "research_bounds": {
+        "low": "30.80",
+        "high": "35.50",
+        "pressure_band": [
+          "35.20",
+          "35.50"
+        ],
+        "support_band": [
+          "30.80",
+          "31.35"
+        ],
+        "high_cluster_spread_to_span": "0.063829787234042553191489361702127659574468085106383",
+        "low_cluster_spread_to_span": "0.11702127659574468085106382978723404255319148936170"
+      },
+      "formal_price_bounds": null,
+      "formal_region_membership": null,
+      "first_departure_range_end": "2025-01-09",
+      "first_breakdown_at": "2025-01-10",
+      "parent_ids": [
+        "sha256:2fc0cfec78fc319eb3fca532aaf09ffb6252b1ad07b1183c20ee5085bb2706f2"
+      ],
+      "successor_count": 32,
+      "source_turns": [
+        {
+          "date": "2023-10-24",
+          "kind": "LOW",
+          "price": "31.35",
+          "confirmed_at": "2023-11-20"
+        },
+        {
+          "date": "2023-11-28",
+          "kind": "HIGH",
+          "price": "35.50",
+          "confirmed_at": "2024-01-16"
+        },
+        {
+          "date": "2024-03-20",
+          "kind": "LOW",
+          "price": "30.80",
+          "confirmed_at": "2024-04-10"
+        },
+        {
+          "date": "2024-07-26",
+          "kind": "HIGH",
+          "price": "35.20",
+          "confirmed_at": "2024-08-15"
+        },
+        {
+          "date": "2024-09-12",
+          "kind": "LOW",
+          "price": "31.20",
+          "confirmed_at": "2024-09-27"
+        }
+      ]
+    },
+    {
+      "label": "B70",
+      "id": "sha256:2fc0cfec78fc319eb3fca532aaf09ffb6252b1ad07b1183c20ee5085bb2706f2",
+      "scale": "0.06",
+      "source_start": "2023-10-24",
+      "source_end": "2024-09-30",
+      "confirmed_at": "2024-10-24",
+      "records": 229,
+      "turns": 6,
+      "research_bounds": {
+        "low": "30.80",
+        "high": "35.50",
+        "pressure_band": [
+          "34.20",
+          "35.50"
+        ],
+        "support_band": [
+          "30.80",
+          "31.35"
+        ],
+        "high_cluster_spread_to_span": "0.27659574468085106382978723404255319148936170212766",
+        "low_cluster_spread_to_span": "0.11702127659574468085106382978723404255319148936170"
+      },
+      "formal_price_bounds": null,
+      "formal_region_membership": null,
+      "first_departure_range_end": "2025-01-09",
+      "first_breakdown_at": "2025-01-10",
+      "parent_ids": [
+        "sha256:a6027b93f9c2eb2f9a771d487076693a23981e0f8d2228c5b46b69e846e5337d"
+      ],
+      "successor_count": 32,
+      "source_turns": [
+        {
+          "date": "2023-10-24",
+          "kind": "LOW",
+          "price": "31.35",
+          "confirmed_at": "2023-11-20"
+        },
+        {
+          "date": "2023-11-28",
+          "kind": "HIGH",
+          "price": "35.50",
+          "confirmed_at": "2024-01-16"
+        },
+        {
+          "date": "2024-03-20",
+          "kind": "LOW",
+          "price": "30.80",
+          "confirmed_at": "2024-04-10"
+        },
+        {
+          "date": "2024-07-26",
+          "kind": "HIGH",
+          "price": "35.20",
+          "confirmed_at": "2024-08-15"
+        },
+        {
+          "date": "2024-09-12",
+          "kind": "LOW",
+          "price": "31.20",
+          "confirmed_at": "2024-09-27"
+        },
+        {
+          "date": "2024-09-30",
+          "kind": "HIGH",
+          "price": "34.20",
+          "confirmed_at": "2024-10-24"
+        }
+      ]
+    },
+    {
+      "label": "B72",
+      "id": "sha256:a6027b93f9c2eb2f9a771d487076693a23981e0f8d2228c5b46b69e846e5337d",
+      "scale": "0.06",
+      "source_start": "2023-10-24",
+      "source_end": "2024-11-01",
+      "confirmed_at": "2024-11-25",
+      "records": 249,
+      "turns": 7,
+      "research_bounds": {
+        "low": "30.80",
+        "high": "35.50",
+        "pressure_band": [
+          "34.20",
+          "35.50"
+        ],
+        "support_band": [
+          "30.80",
+          "31.70"
+        ],
+        "high_cluster_spread_to_span": "0.27659574468085106382978723404255319148936170212766",
+        "low_cluster_spread_to_span": "0.19148936170212765957446808510638297872340425531915"
+      },
+      "formal_price_bounds": null,
+      "formal_region_membership": null,
+      "first_departure_range_end": "2025-01-09",
+      "first_breakdown_at": "2025-01-10",
+      "parent_ids": [
+        "sha256:5d02af737bce4f1131ec49e23b706c7aecbc9c516907b3eeb03aa8f7507e06bc"
+      ],
+      "successor_count": 32,
+      "source_turns": [
+        {
+          "date": "2023-10-24",
+          "kind": "LOW",
+          "price": "31.35",
+          "confirmed_at": "2023-11-20"
+        },
+        {
+          "date": "2023-11-28",
+          "kind": "HIGH",
+          "price": "35.50",
+          "confirmed_at": "2024-01-16"
+        },
+        {
+          "date": "2024-03-20",
+          "kind": "LOW",
+          "price": "30.80",
+          "confirmed_at": "2024-04-10"
+        },
+        {
+          "date": "2024-07-26",
+          "kind": "HIGH",
+          "price": "35.20",
+          "confirmed_at": "2024-08-15"
+        },
+        {
+          "date": "2024-09-12",
+          "kind": "LOW",
+          "price": "31.20",
+          "confirmed_at": "2024-09-27"
+        },
+        {
+          "date": "2024-09-30",
+          "kind": "HIGH",
+          "price": "34.20",
+          "confirmed_at": "2024-10-24"
+        },
+        {
+          "date": "2024-11-01",
+          "kind": "LOW",
+          "price": "31.70",
+          "confirmed_at": "2024-11-25"
+        }
+      ]
+    },
+    {
+      "label": "B74",
+      "id": "sha256:5d02af737bce4f1131ec49e23b706c7aecbc9c516907b3eeb03aa8f7507e06bc",
+      "scale": "0.06",
+      "source_start": "2023-10-24",
+      "source_end": "2024-11-25",
+      "confirmed_at": "2024-12-20",
+      "records": 265,
+      "turns": 8,
+      "research_bounds": {
+        "low": "30.80",
+        "high": "35.50",
+        "pressure_band": [
+          "34.20",
+          "35.50"
+        ],
+        "support_band": [
+          "30.80",
+          "31.70"
+        ],
+        "high_cluster_spread_to_span": "0.27659574468085106382978723404255319148936170212766",
+        "low_cluster_spread_to_span": "0.19148936170212765957446808510638297872340425531915"
+      },
+      "formal_price_bounds": null,
+      "formal_region_membership": null,
+      "first_departure_range_end": "2025-01-09",
+      "first_breakdown_at": "2025-01-10",
+      "parent_ids": [
+        "sha256:5ea6e6ca13de4a4b85a237c529036d2ff3e8ab1df57f0b7c7a65283a18d0284b"
+      ],
+      "successor_count": 32,
+      "source_turns": [
+        {
+          "date": "2023-10-24",
+          "kind": "LOW",
+          "price": "31.35",
+          "confirmed_at": "2023-11-20"
+        },
+        {
+          "date": "2023-11-28",
+          "kind": "HIGH",
+          "price": "35.50",
+          "confirmed_at": "2024-01-16"
+        },
+        {
+          "date": "2024-03-20",
+          "kind": "LOW",
+          "price": "30.80",
+          "confirmed_at": "2024-04-10"
+        },
+        {
+          "date": "2024-07-26",
+          "kind": "HIGH",
+          "price": "35.20",
+          "confirmed_at": "2024-08-15"
+        },
+        {
+          "date": "2024-09-12",
+          "kind": "LOW",
+          "price": "31.20",
+          "confirmed_at": "2024-09-27"
+        },
+        {
+          "date": "2024-09-30",
+          "kind": "HIGH",
+          "price": "34.20",
+          "confirmed_at": "2024-10-24"
+        },
+        {
+          "date": "2024-11-01",
+          "kind": "LOW",
+          "price": "31.70",
+          "confirmed_at": "2024-11-25"
+        },
+        {
+          "date": "2024-11-25",
+          "kind": "HIGH",
+          "price": "34.20",
+          "confirmed_at": "2024-12-20"
+        }
+      ]
+    },
+    {
+      "label": "B76",
+      "id": "sha256:5ea6e6ca13de4a4b85a237c529036d2ff3e8ab1df57f0b7c7a65283a18d0284b",
+      "scale": "0.06",
+      "source_start": "2023-10-24",
+      "source_end": "2025-01-13",
+      "confirmed_at": "2025-02-12",
+      "records": 299,
+      "turns": 9,
+      "research_bounds": {
+        "low": "30.05",
+        "high": "35.50",
+        "pressure_band": [
+          "34.20",
+          "35.50"
+        ],
+        "support_band": [
+          "30.05",
+          "31.70"
+        ],
+        "high_cluster_spread_to_span": "0.23853211009174311926605504587155963302752293577982",
+        "low_cluster_spread_to_span": "0.30275229357798165137614678899082568807339449541284"
+      },
+      "formal_price_bounds": null,
+      "formal_region_membership": null,
+      "first_departure_range_end": "2025-04-02",
+      "first_breakdown_at": "2025-04-07",
+      "parent_ids": [
+        "sha256:3753f89be8aef29f8f6c7910cbb979ddde8a68a37e496b5148f72dc74311db20"
+      ],
+      "successor_count": 32,
+      "source_turns": [
+        {
+          "date": "2023-10-24",
+          "kind": "LOW",
+          "price": "31.35",
+          "confirmed_at": "2023-11-20"
+        },
+        {
+          "date": "2023-11-28",
+          "kind": "HIGH",
+          "price": "35.50",
+          "confirmed_at": "2024-01-16"
+        },
+        {
+          "date": "2024-03-20",
+          "kind": "LOW",
+          "price": "30.80",
+          "confirmed_at": "2024-04-10"
+        },
+        {
+          "date": "2024-07-26",
+          "kind": "HIGH",
+          "price": "35.20",
+          "confirmed_at": "2024-08-15"
+        },
+        {
+          "date": "2024-09-12",
+          "kind": "LOW",
+          "price": "31.20",
+          "confirmed_at": "2024-09-27"
+        },
+        {
+          "date": "2024-09-30",
+          "kind": "HIGH",
+          "price": "34.20",
+          "confirmed_at": "2024-10-24"
+        },
+        {
+          "date": "2024-11-01",
+          "kind": "LOW",
+          "price": "31.70",
+          "confirmed_at": "2024-11-25"
+        },
+        {
+          "date": "2024-11-25",
+          "kind": "HIGH",
+          "price": "34.20",
+          "confirmed_at": "2024-12-20"
+        },
+        {
+          "date": "2025-01-13",
+          "kind": "LOW",
+          "price": "30.05",
+          "confirmed_at": "2025-02-12"
+        }
+      ]
+    },
+    {
+      "label": "B77",
+      "id": "sha256:3753f89be8aef29f8f6c7910cbb979ddde8a68a37e496b5148f72dc74311db20",
+      "scale": "0.06",
+      "source_start": "2023-10-24",
+      "source_end": "2025-03-12",
+      "confirmed_at": "2025-03-24",
+      "records": 333,
+      "turns": 10,
+      "research_bounds": {
+        "low": "30.05",
+        "high": "35.50",
+        "pressure_band": [
+          "34.20",
+          "35.50"
+        ],
+        "support_band": [
+          "30.05",
+          "31.70"
+        ],
+        "high_cluster_spread_to_span": "0.23853211009174311926605504587155963302752293577982",
+        "low_cluster_spread_to_span": "0.30275229357798165137614678899082568807339449541284"
+      },
+      "formal_price_bounds": null,
+      "formal_region_membership": null,
+      "first_departure_range_end": "2025-04-02",
+      "first_breakdown_at": "2025-04-07",
+      "parent_ids": [],
+      "successor_count": 32,
+      "source_turns": [
+        {
+          "date": "2023-10-24",
+          "kind": "LOW",
+          "price": "31.35",
+          "confirmed_at": "2023-11-20"
+        },
+        {
+          "date": "2023-11-28",
+          "kind": "HIGH",
+          "price": "35.50",
+          "confirmed_at": "2024-01-16"
+        },
+        {
+          "date": "2024-03-20",
+          "kind": "LOW",
+          "price": "30.80",
+          "confirmed_at": "2024-04-10"
+        },
+        {
+          "date": "2024-07-26",
+          "kind": "HIGH",
+          "price": "35.20",
+          "confirmed_at": "2024-08-15"
+        },
+        {
+          "date": "2024-09-12",
+          "kind": "LOW",
+          "price": "31.20",
+          "confirmed_at": "2024-09-27"
+        },
+        {
+          "date": "2024-09-30",
+          "kind": "HIGH",
+          "price": "34.20",
+          "confirmed_at": "2024-10-24"
+        },
+        {
+          "date": "2024-11-01",
+          "kind": "LOW",
+          "price": "31.70",
+          "confirmed_at": "2024-11-25"
+        },
+        {
+          "date": "2024-11-25",
+          "kind": "HIGH",
+          "price": "34.20",
+          "confirmed_at": "2024-12-20"
+        },
+        {
+          "date": "2025-01-13",
+          "kind": "LOW",
+          "price": "30.05",
+          "confirmed_at": "2025-02-12"
+        },
+        {
+          "date": "2025-03-12",
+          "kind": "HIGH",
+          "price": "35.45",
+          "confirmed_at": "2025-03-24"
+        }
+      ]
+    },
+    {
+      "label": "B80",
+      "id": "sha256:8bc16b7b1f4d83cc1cdf9f4ffc5644941e58dcd2356a6c1fd02b66695d43bdd5",
+      "scale": "0.06",
+      "source_start": "2025-04-08",
+      "source_end": "2025-05-13",
+      "confirmed_at": "2025-05-27",
+      "records": 25,
+      "turns": 4,
+      "research_bounds": {
+        "low": "28.45",
+        "high": "31.40",
+        "pressure_band": [
+          "31.20",
+          "31.40"
+        ],
+        "support_band": [
+          "28.45",
+          "28.50"
+        ],
+        "high_cluster_spread_to_span": "0.067796610169491525423728813559322033898305084745763",
+        "low_cluster_spread_to_span": "0.016949152542372881355932203389830508474576271186441"
+      },
+      "formal_price_bounds": null,
+      "formal_region_membership": null,
+      "first_departure_range_end": "2025-05-29",
+      "first_breakdown_at": "2025-06-02",
+      "parent_ids": [],
+      "successor_count": 30,
+      "source_turns": [
+        {
+          "date": "2025-04-08",
+          "kind": "LOW",
+          "price": "28.45",
+          "confirmed_at": "2025-04-10"
+        },
+        {
+          "date": "2025-04-10",
+          "kind": "HIGH",
+          "price": "31.20",
+          "confirmed_at": "2025-04-18"
+        },
+        {
+          "date": "2025-04-22",
+          "kind": "LOW",
+          "price": "28.50",
+          "confirmed_at": "2025-05-05"
+        },
+        {
+          "date": "2025-05-13",
+          "kind": "HIGH",
+          "price": "31.40",
+          "confirmed_at": "2025-05-27"
+        }
+      ]
+    },
+    {
+      "label": "B83",
+      "id": "sha256:ea607d164f084965f31294a6356e8d9215f83a5505b32a56a5919cb959cccb04",
+      "scale": "0.06",
+      "source_start": "2025-11-19",
+      "source_end": "2026-04-10",
+      "confirmed_at": "2026-04-15",
+      "records": 91,
+      "turns": 4,
+      "research_bounds": {
+        "low": "20.25",
+        "high": "26.95",
+        "pressure_band": [
+          "26.40",
+          "26.95"
+        ],
+        "support_band": [
+          "20.25",
+          "22.40"
+        ],
+        "high_cluster_spread_to_span": "0.082089552238805970149253731343283582089552238805970",
+        "low_cluster_spread_to_span": "0.32089552238805970149253731343283582089552238805970"
+      },
+      "formal_price_bounds": null,
+      "formal_region_membership": null,
+      "first_departure_range_end": "2026-10-08",
+      "first_breakdown_at": null,
+      "parent_ids": [
+        "sha256:9fbf971f46c19caa9b00657d0b805bc2bd4d782ab617b3818b50ddfe211b7d39"
+      ],
+      "successor_count": 0,
+      "source_turns": [
+        {
+          "date": "2025-11-19",
+          "kind": "LOW",
+          "price": "20.25",
+          "confirmed_at": "2025-11-26"
+        },
+        {
+          "date": "2026-01-27",
+          "kind": "HIGH",
+          "price": "26.95",
+          "confirmed_at": "2026-03-04"
+        },
+        {
+          "date": "2026-03-30",
+          "kind": "LOW",
+          "price": "22.40",
+          "confirmed_at": "2026-04-07"
+        },
+        {
+          "date": "2026-04-10",
+          "kind": "HIGH",
+          "price": "26.40",
+          "confirmed_at": "2026-04-15"
+        }
+      ]
+    },
+    {
+      "label": "B88",
+      "id": "sha256:9fbf971f46c19caa9b00657d0b805bc2bd4d782ab617b3818b50ddfe211b7d39",
+      "scale": "0.12",
+      "source_start": "2025-11-19",
+      "source_end": "2026-07-14",
+      "confirmed_at": "2026-09-01",
+      "records": 155,
+      "turns": 5,
+      "research_bounds": {
+        "low": "20.25",
+        "high": "26.95",
+        "pressure_band": [
+          "26.40",
+          "26.95"
+        ],
+        "support_band": [
+          "20.25",
+          "22.40"
+        ],
+        "high_cluster_spread_to_span": "0.082089552238805970149253731343283582089552238805970",
+        "low_cluster_spread_to_span": "0.32089552238805970149253731343283582089552238805970"
+      },
+      "formal_price_bounds": null,
+      "formal_region_membership": null,
+      "first_departure_range_end": "2026-10-08",
+      "first_breakdown_at": null,
+      "parent_ids": [],
+      "successor_count": 0,
+      "source_turns": [
+        {
+          "date": "2025-11-19",
+          "kind": "LOW",
+          "price": "20.25",
+          "confirmed_at": "2025-11-28"
+        },
+        {
+          "date": "2026-01-27",
+          "kind": "HIGH",
+          "price": "26.95",
+          "confirmed_at": "2026-03-20"
+        },
+        {
+          "date": "2026-03-30",
+          "kind": "LOW",
+          "price": "22.40",
+          "confirmed_at": "2026-04-08"
+        },
+        {
+          "date": "2026-04-10",
+          "kind": "HIGH",
+          "price": "26.40",
+          "confirmed_at": "2026-07-01"
+        },
+        {
+          "date": "2026-07-14",
+          "kind": "LOW",
+          "price": "22.40",
+          "confirmed_at": "2026-09-01"
+        }
+      ]
+    },
+    {
+      "label": "B89",
+      "id": "sha256:06ed5a33f1815df185856333cb471ec3061d4bd613a662c327c2f079205715bd",
+      "scale": "0.12",
+      "source_start": "2026-01-27",
+      "source_end": "2026-07-14",
+      "confirmed_at": "2026-09-01",
+      "records": 108,
+      "turns": 4,
+      "research_bounds": {
+        "low": "22.40",
+        "high": "26.95",
+        "pressure_band": [
+          "26.40",
+          "26.95"
+        ],
+        "support_band": [
+          "22.40",
+          "22.40"
+        ],
+        "high_cluster_spread_to_span": "0.12087912087912087912087912087912087912087912087912",
+        "low_cluster_spread_to_span": "0"
+      },
+      "formal_price_bounds": null,
+      "formal_region_membership": null,
+      "first_departure_range_end": "2026-10-08",
+      "first_breakdown_at": null,
+      "parent_ids": [
+        "sha256:9fbf971f46c19caa9b00657d0b805bc2bd4d782ab617b3818b50ddfe211b7d39"
+      ],
+      "successor_count": 0,
+      "source_turns": [
+        {
+          "date": "2026-01-27",
+          "kind": "HIGH",
+          "price": "26.95",
+          "confirmed_at": "2026-03-20"
+        },
+        {
+          "date": "2026-03-30",
+          "kind": "LOW",
+          "price": "22.40",
+          "confirmed_at": "2026-04-08"
+        },
+        {
+          "date": "2026-04-10",
+          "kind": "HIGH",
+          "price": "26.40",
+          "confirmed_at": "2026-07-01"
+        },
+        {
+          "date": "2026-07-14",
+          "kind": "LOW",
+          "price": "22.40",
+          "confirmed_at": "2026-09-01"
+        }
+      ]
+    }
+  ],
+  "month_precision_context": {
+    "start_month": "2023-06",
+    "end_month": "2025-04",
+    "formal_start": null,
+    "formal_end": null,
+    "display_month_rows": 463,
+    "B77_source_rows": 333,
+    "display_rows_before_B77": 97,
+    "display_rows_after_B77": 33,
+    "qualification": "DISPLAY_CONTEXT_COUNTS_NOT_APPROVED_MEMBERSHIP_OR_RECALL"
+  },
+  "previous_manual_interval": {
+    "start": "2025-04-07",
+    "end": "2025-06-02",
+    "records": 39,
+    "exact_auto_source_interval_matches": [],
+    "qualification": "USER_REPORTED_SOURCE_VERIFIED_TIME_RANGE_NOT_CORE_INPUT"
+  },
+  "same_geometry_cross_scale": {
+    "labels": [
+      "B44",
+      "B80"
+    ],
+    "same_source_turn_date_kind_price": true,
+    "confirmations": [
+      "2025-05-14",
+      "2025-05-27"
+    ],
+    "independent_pattern_votes": false
+  },
+  "same_scale_source_turn_prefix_chain": {
+    "labels": [
+      "B67",
+      "B68",
+      "B70",
+      "B72",
+      "B74",
+      "B76",
+      "B77"
+    ],
+    "qualification": "EXACT_PREFIX_LINEAGE_OBSERVED_NOT_USER_APPROVED_MERGE"
+  },
+  "default_presented": [
+    "B77",
+    "B24",
+    "B66",
+    "B88"
+  ],
+  "jan27_pivots": [
+    {
+      "kind": "HIGH",
+      "price": "26.95",
+      "occurred_index": 1040,
+      "occurred_at": "2026-01-27",
+      "source_dates": [
+        "2026-01-27"
+      ],
+      "confirmed_index": 1058,
+      "confirmed_at": "2026-03-04",
+      "first_observed_at": "2026-03-04",
+      "scale": "0.06",
+      "segment": 0,
+      "confirmation": "LATER_COMPLETED_CLOSE_REVERSAL_RESEARCH",
+      "id": "sha256:cf22b9164bf45ef64826d516de7e839e210c35a382693718121d70284fb8c8f2"
+    },
+    {
+      "kind": "HIGH",
+      "price": "26.95",
+      "occurred_index": 1040,
+      "occurred_at": "2026-01-27",
+      "source_dates": [
+        "2026-01-27"
+      ],
+      "confirmed_index": 1070,
+      "confirmed_at": "2026-03-20",
+      "first_observed_at": "2026-03-20",
+      "scale": "0.12",
+      "segment": 0,
+      "confirmation": "LATER_COMPLETED_CLOSE_REVERSAL_RESEARCH",
+      "id": "sha256:1d475c2add5897d4fb8f2c0daf7b30df77b8bfba5c421addccfa556edb9dce5e"
+    }
+  ],
+  "B88_latest_events": [
+    {
+      "date": "2026-10-12",
+      "type": "CLOSE_ABOVE_RESEARCH_RANGE",
+      "close": "27.00"
+    },
+    {
+      "date": "2026-10-13",
+      "type": "FAILED_UP_RETURN_IN_RANGE",
+      "close": "26.35"
+    },
+    {
+      "date": "2026-10-14",
+      "type": "CLOSE_ABOVE_RESEARCH_RANGE",
+      "close": "27.05"
+    },
+    {
+      "date": "2026-10-15",
+      "type": "FAILED_UP_RETURN_IN_RANGE",
+      "close": "26.80"
+    },
+    {
+      "date": "2026-10-16",
+      "type": "CLOSE_ABOVE_RESEARCH_RANGE",
+      "close": "27.30"
+    }
+  ],
+  "validation": {
+    "package_crc_and_fingerprints": "PASS",
+    "embedded_latest_equals_separate_core": true,
+    "manual_date_counts": "PASS",
+    "cross_scale_geometry": "PASS",
+    "same_scale_prefix_chain": "PASS",
+    "core_executed": false,
+    "parameters_changed": false,
+    "android": "NOT_TESTED_NEW_BUILD",
+    "quality": "NOT_VALIDATED",
+    "core_usefulness": "NOT_ESTABLISHED",
+    "action": "NOT_EVALUATED"
+  }
+}

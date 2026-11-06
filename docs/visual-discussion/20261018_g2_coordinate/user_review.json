@@ -1,0 +1,69 @@
+{
+  "schema_version": "user-reviewed-g2-region/0.1",
+  "reviewed_at": "2026-10-18T21:52:27+08:00",
+  "analysis_as_of": "2026-10-16",
+  "user_quote": "大約2023年2月開始到2023年8月，若你能提供可移動的座標查詢我可以給出精確日期與價量資訊。不過我可以讓你參考這個概念與我相近的操盤者是Nicolas Darvas的箱型理論，在我如何在股市賺到200萬美元一書中有描述此概念。",
+  "code": "1101",
+  "price_mode": "RAW_CANDIDATE",
+  "source_id": "sha256:adea7f78a97d18b6b51fbba103e08c0db33dc6fb1eb613b960b0aabe213b534b",
+  "frame_id": "sha256:b7215491c924570f3b40594fbd859f4b5c2532b247b62b6e625a8fcb66964f70",
+  "chart_base": "sha256:50e560b77640da3b7d000c0db67fc73a3f5b69d0bd744871ccb03483f8ec115e",
+  "source_export_sha256": "369947bad71ab3fdff894c21511ebf242e1ddb12b59822d02ed93f0580bd2796",
+  "representative": {
+    "id": "G2",
+    "source_date": "2023-05-02",
+    "raw_high": "40.25",
+    "role": "USER_SELECTED_REGION_REPRESENTATIVE_NOT_AUTOMATIC_SIGNAL"
+  },
+  "region": {
+    "start_month": "2023-02",
+    "end_month": "2023-08",
+    "precision": "APPROXIMATE_MONTHS_USER_REPORTED",
+    "exact_start_date": null,
+    "exact_end_date": null,
+    "price_bounds": null,
+    "total_volume": null,
+    "bar_membership": null
+  },
+  "coordinate_request": "MOVABLE_CURSOR_SHOWING_EXACT_DATE_OHLCV_WITH_PER_BAR_FINE_ADJUSTMENT",
+  "external_reference": {
+    "author": "Nicolas Darvas",
+    "user_book_title": "我如何在股市賺到200萬美元",
+    "english_title": "How I Made $2,000,000 in the Stock Market",
+    "topic": "Box Theory",
+    "relationship": "USER_SAYS_CONCEPT_SIMILAR_NOT_ALL_RULES_ADOPTED",
+    "read_status": "PUBLISHER_METADATA_AND_BOOK_PREVIEW_CONTENTS_AND_INITIAL_PREVIEW_READ_BOX_CHAPTER_BODY_NOT_FULLY_READ",
+    "sources": [
+      {
+        "url": "https://www.simonandschuster.com/books/How-I-Made-%242-000-000-in-the-Stock-Market/Nicolas-Darvas/9798880905577",
+        "scope": "PUBLISHER_AUTHOR_TITLE_METADATA"
+      },
+      {
+        "url": "https://www.everand.com/book/1015089169/How-I-Made-2-000-000-in-the-Stock-Market",
+        "scope": "BOOK_PREVIEW_CONTENTS_CHAPTER_FOUR_AND_INITIAL_PREVIEW"
+      }
+    ],
+    "automatic_strategy_changes_authorized": false
+  },
+  "cursor_draft": {
+    "selection_is": "LOCAL_UNSUBMITTED_DISCUSSION_INPUT",
+    "approved_case_update_requires": "USER_SUBSEQUENT_REPORT",
+    "test_selected_endpoints_are_not_user_judgments": true,
+    "region_volume_computation_performed": false
+  },
+  "unknown_rules": [
+    "EXACT_REGION_DATES",
+    "PRICE_BOUNDS",
+    "AUTOMATIC_REGION_SPLIT",
+    "REPRESENTATIVE_SELECTION_FORMULA",
+    "BOX_CONFIRMATION_PROCEDURE",
+    "VOLUME_EXPANSION_CRITERIA",
+    "FLATNESS_AND_SETTLEMENT_THRESHOLDS",
+    "STRENGTH_DECAY_LIFECYCLE"
+  ],
+  "status": "APPROXIMATE_G2_REGION_CAPTURED_PRECISE_ENDPOINTS_PENDING",
+  "action_qualification": "NOT_EVALUATED",
+  "classification_quality": "NOT_VALIDATED",
+  "corporate_action_comparability": "NOT_FULLY_VERIFIED",
+  "product_integration": "DISCUSSION_TOOL_ONLY_ORIGINAL_M1_UNCHANGED"
+}

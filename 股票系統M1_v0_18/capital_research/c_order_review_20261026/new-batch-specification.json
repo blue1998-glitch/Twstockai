@@ -1,0 +1,17 @@
+{
+  "base_case": "valid-C-same-order",
+  "end_at": "2026-01-12T16:00:00+08:00",
+  "next_decision_at": "2026-01-12T17:00:00+08:00",
+  "next_buy": "1",
+  "old_trigger_expected": "NO_NEW_INDEPENDENT_TRIGGER",
+  "new_trigger": {
+    "id": "B-independent-next",
+    "event_id": "B-independent-next",
+    "formation_id": "B-independent-formation",
+    "volume_bar_id": "B-independent-bar",
+    "occurred_at": "2026-01-12T16:00:00+08:00",
+    "available_at": "2026-01-12T16:00:00+08:00"
+  },
+  "new_trigger_expected": "FEASIBLE_RESEARCH_ONLY_NO_EXECUTION",
+  "no_new_price_or_tape": true
+}

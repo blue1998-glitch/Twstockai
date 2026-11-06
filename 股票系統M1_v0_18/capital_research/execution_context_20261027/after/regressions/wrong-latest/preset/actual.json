@@ -1,0 +1,87 @@
+{
+  "error": {
+    "type": "ValueError",
+    "detail": "LATEST_PREDECESSOR_REQUIRED: checkpoint must descend from the exact latest decision/account"
+  },
+  "traceback": "Traceback (most recent call last):\n  File \"/workspace/Twstockai/股票系統M1_v0_18/capital_research/execution_context_20261027/reproduce.py\", line 72, in probe\n    try:value=simulate(job);error=None;trace=None\n              ^^^^^^^^^^^^^\n  File \"/workspace/Twstockai/股票系統M1_v0_18/capital_research/execution.py\", line 32, in simulate\n    return _simulate(job)\n           ^^^^^^^^^^^^^^\n  File \"/workspace/Twstockai/股票系統M1_v0_18/capital_research/execution.py\", line 41, in _simulate\n    result=resume_decision(continuation['previous_decision'],data,checkpoint=continuation['checkpoint'],\n           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"/workspace/Twstockai/股票系統M1_v0_18/capital_research/core.py\", line 380, in resume_decision\n    return _resume_decision(previous,data,checkpoint=checkpoint,\n           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"/workspace/Twstockai/股票系統M1_v0_18/capital_research/core.py\", line 394, in _resume_decision\n    linkage=bind_resume(previous,data,checkpoint,cancelled_order_ids)\n            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"/workspace/Twstockai/股票系統M1_v0_18/capital_research/continuity.py\", line 211, in bind_resume\n    raise ValueError('LATEST_PREDECESSOR_REQUIRED: checkpoint must descend from the exact latest decision/account')\nValueError: LATEST_PREDECESSOR_REQUIRED: checkpoint must descend from the exact latest decision/account\n",
+  "calls": {
+    "simulate": 1,
+    "decide": 0,
+    "resume": 1,
+    "ledger_replay": 1,
+    "risk": 0,
+    "replay_sequence": 0,
+    "generate": 0,
+    "save": 0
+  },
+  "caller_before": {
+    "prec": 5,
+    "rounding": "ROUND_FLOOR",
+    "Emin": -2,
+    "Emax": 2,
+    "capitals": 0,
+    "clamp": 1,
+    "traps": {
+      "InvalidOperation": true,
+      "FloatOperation": true,
+      "DivisionByZero": true,
+      "Overflow": true,
+      "Underflow": true,
+      "Subnormal": true,
+      "Inexact": true,
+      "Rounded": true,
+      "Clamped": true
+    },
+    "flags": {
+      "InvalidOperation": false,
+      "FloatOperation": false,
+      "DivisionByZero": false,
+      "Overflow": false,
+      "Underflow": false,
+      "Subnormal": false,
+      "Inexact": true,
+      "Rounded": true,
+      "Clamped": false
+    }
+  },
+  "caller_after": {
+    "prec": 5,
+    "rounding": "ROUND_FLOOR",
+    "Emin": -2,
+    "Emax": 2,
+    "capitals": 0,
+    "clamp": 1,
+    "traps": {
+      "InvalidOperation": true,
+      "FloatOperation": true,
+      "DivisionByZero": true,
+      "Overflow": true,
+      "Underflow": true,
+      "Subnormal": true,
+      "Inexact": true,
+      "Rounded": true,
+      "Clamped": true
+    },
+    "flags": {
+      "InvalidOperation": false,
+      "FloatOperation": false,
+      "DivisionByZero": false,
+      "Overflow": false,
+      "Underflow": false,
+      "Subnormal": false,
+      "Inexact": true,
+      "Rounded": true,
+      "Clamped": false
+    }
+  },
+  "input_id": "sha256:0f1ed090c01149f3ba9bbeb805f9944962d0f65cdd276b9bb1d6cd8f96862299",
+  "input_unchanged": true,
+  "caller_context_unchanged": true,
+  "source_version": {
+    "path": "capital_research/execution.py",
+    "bytes": 29660,
+    "sha256": "b9c60026c91dab7a462650253dbc87727868b1877d89e84eb89a205ae29280ff"
+  },
+  "actual": null,
+  "expected_rejection": true
+}

@@ -1,0 +1,37 @@
+{
+  "observed_at": "2026-10-23T08:53:49.243700+00:00",
+  "status": "PASS",
+  "checks": [
+    {
+      "source_id": "taifex-esun-resumption-20251106",
+      "command": "pdftotext -layout ORIGINAL -",
+      "returncode": 0,
+      "stderr": "",
+      "full_native_text_byte_equal": true,
+      "text_sha256": "17ad26146848dce013bc2d48d3ffe922e2d3265526484d13bc95c1a720cc91c0",
+      "pdf_pages": 1,
+      "actual_rendered_and_viewed_pages": [
+        1
+      ],
+      "whole_report_visually_reviewed": true
+    },
+    {
+      "source_id": "tcc-2026-q2-consolidated-report",
+      "command": "pdftotext -layout ORIGINAL -",
+      "returncode": 0,
+      "stderr": "",
+      "full_native_text_byte_equal": true,
+      "text_sha256": "b3bf4f18757b595a8019cf304fd3e72c61deb2c31c8d50a29ea1ea9954bb6ce8",
+      "pdf_pages": 124,
+      "actual_rendered_and_viewed_pages": [
+        7,
+        52,
+        54,
+        55,
+        57
+      ],
+      "whole_report_visually_reviewed": false
+    }
+  ],
+  "scanned_page7_text_empty_not_page_absent": true
+}

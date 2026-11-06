@@ -1,0 +1,3158 @@
+{
+  "review": {
+    "schema": "capital-conditional-quantity-review/0.1",
+    "synthetic": true,
+    "status": "STOPPED_INPUT_ERROR",
+    "reasons": [
+      "OWN_LAST_ROUND_CONDITIONAL_ORDER_REQUIRED"
+    ],
+    "prefix_execution": {
+      "schema": "capital-execution/0.8",
+      "status": "SYNTHETIC_EXECUTION_REPLAY",
+      "decision_id": "sha256:5f20be9cc0036864dfbee0347c6dd90ad0366992286dce17d7a81329efa46136",
+      "common_account_id": "sha256:8322bbf14a686deba2c683661b4fc7bbcfe1626b6f853f91e8fbcce0722a3b99",
+      "ledger_version": "rotation-action-ledger/0.1",
+      "origin_ledger_input_id": "sha256:97d1381c1afaa87d1632acd5da0df6b4fe6c8dabd46930c0a0075d1d2adf72e8",
+      "opening_checkpoint_id": null,
+      "execution_model_version": "synthetic-next-day-orders/0.1",
+      "observed_until": "2026-01-08T16:00:00+08:00",
+      "orders": [
+        {
+          "id": "r1-A",
+          "code": "A",
+          "side": "SELL",
+          "shares": "50",
+          "limit_price": "9.98",
+          "decision_at": "2026-01-05T15:00:00+08:00",
+          "submitted_at": "2026-01-06T08:00:00+08:00",
+          "expires_at": "2026-01-12T16:00:00+08:00"
+        },
+        {
+          "id": "r1-B",
+          "code": "B",
+          "side": "BUY",
+          "shares": "20",
+          "limit_price": "20.03",
+          "decision_at": "2026-01-05T15:00:00+08:00",
+          "submitted_at": "2026-01-06T08:00:00+08:00",
+          "expires_at": "2026-01-12T16:00:00+08:00"
+        }
+      ],
+      "order_history": [
+        {
+          "id": "r1-A",
+          "code": "A",
+          "side": "SELL",
+          "shares": "50",
+          "limit_price": "9.98",
+          "decision_at": "2026-01-05T15:00:00+08:00",
+          "submitted_at": "2026-01-06T08:00:00+08:00",
+          "expires_at": "2026-01-12T16:00:00+08:00"
+        },
+        {
+          "id": "r1-B",
+          "code": "B",
+          "side": "BUY",
+          "shares": "20",
+          "limit_price": "20.03",
+          "decision_at": "2026-01-05T15:00:00+08:00",
+          "submitted_at": "2026-01-06T08:00:00+08:00",
+          "expires_at": "2026-01-12T16:00:00+08:00"
+        }
+      ],
+      "order_states": {
+        "r1-A": {
+          "remaining": "0",
+          "status": "FILLED",
+          "reserved_cash": "0",
+          "requires_reassessment": false,
+          "active_decision_at": "2026-01-05T15:00:00+08:00",
+          "active_decision_id": "sha256:5f20be9cc0036864dfbee0347c6dd90ad0366992286dce17d7a81329efa46136"
+        },
+        "r1-B": {
+          "remaining": "20",
+          "status": "WAITING_REASSESSMENT",
+          "reserved_cash": "0",
+          "requires_reassessment": true,
+          "active_decision_at": "2026-01-05T15:00:00+08:00",
+          "active_decision_id": "sha256:5f20be9cc0036864dfbee0347c6dd90ad0366992286dce17d7a81329efa46136"
+        }
+      },
+      "execution_events": [
+        {
+          "at": "2026-01-06T09:00:00+08:00",
+          "order_id": "r1-B",
+          "status": "WAITING_REASSESSMENT",
+          "reason": "NEW_ACCOUNT_EVIDENCE_CUTOFF_AND_DECISION_ID_REQUIRED"
+        },
+        {
+          "at": "2026-01-06T09:00:00+08:00",
+          "order_id": "r1-A",
+          "status": "FILLED",
+          "fill_id": "r1-A-fill-0",
+          "decision_id": "sha256:5f20be9cc0036864dfbee0347c6dd90ad0366992286dce17d7a81329efa46136",
+          "reserved_cash_total": "0",
+          "remaining": "0"
+        },
+        {
+          "at": "2026-01-06T09:00:30+08:00",
+          "order_id": "r1-B",
+          "status": "WAITING_REASSESSMENT",
+          "reason": "NEW_ACCOUNT_EVIDENCE_CUTOFF_AND_DECISION_ID_REQUIRED"
+        },
+        {
+          "at": "2026-01-06T09:01:00+08:00",
+          "order_id": "r1-B",
+          "status": "WAITING_REASSESSMENT",
+          "reason": "NEW_ACCOUNT_EVIDENCE_CUTOFF_AND_DECISION_ID_REQUIRED"
+        }
+      ],
+      "fills": [
+        {
+          "id": "r1-A-fill-0",
+          "code": "A",
+          "side": "SELL",
+          "shares": "50",
+          "price": "9.990",
+          "fee": "1",
+          "tax": "2",
+          "date": "2026-01-06",
+          "decision_date": "2026-01-05",
+          "settlement_date": "2026-01-08",
+          "source_ids": [
+            "fixture"
+          ]
+        }
+      ],
+      "ledger": {
+        "schema": "rotation-action-ledger/0.1",
+        "input_id": "sha256:3e67798505695e1e66baab1fc72a0b60317266fbaac10709e237d63dfdc0fad5",
+        "start": "2026-01-05",
+        "end": "2026-01-08",
+        "policy_authorized": false,
+        "historical_signal_eligible": false,
+        "research_only": true,
+        "source_qualification": {
+          "calendar": "VERIFIED_COMPLETE",
+          "execution_costs": "SCENARIO",
+          "investor_cashflows": "SCENARIO",
+          "net_distributions": "VERIFIED",
+          "opening_claims": "VERIFIED"
+        },
+        "refusal_reasons": [
+          "TERMINAL_SHARES_NOT_YET_TRADABLE"
+        ],
+        "daily": [
+          {
+            "date": "2026-01-05",
+            "settled_cash": "100",
+            "available_cash_strict": "100",
+            "shares": {
+              "A": "100",
+              "B": "0",
+              "C": "2"
+            },
+            "cash_receivable": "80",
+            "purchase_payable": "0",
+            "cash_claims": [
+              {
+                "amount": "80",
+                "id": "opening-cash",
+                "pay_date": "2026-01-12",
+                "source_ids": [
+                  "fixture"
+                ],
+                "kind": "OPENING_RECEIVABLE"
+              }
+            ],
+            "share_receivables": [
+              {
+                "code": "A",
+                "delivery_date": "2026-01-09",
+                "id": "opening-shares",
+                "shares": "10",
+                "source_ids": [
+                  "fixture"
+                ],
+                "tradable_date": "2026-01-12"
+              }
+            ],
+            "net_accrual_equity": "1330",
+            "marks": {
+              "A": {
+                "value": "10",
+                "source_date": "2026-01-05",
+                "carried_nontrading_mark": false,
+                "source_id": "fixture",
+                "basis_id": "RAW:fixture:A",
+                "quote_source_ids": [
+                  "fixture"
+                ]
+              },
+              "B": {
+                "value": "20",
+                "source_date": "2026-01-05",
+                "carried_nontrading_mark": false,
+                "source_id": "fixture",
+                "basis_id": "RAW:fixture:B",
+                "quote_source_ids": [
+                  "fixture"
+                ]
+              },
+              "C": {
+                "value": "25",
+                "source_date": "2026-01-05",
+                "carried_nontrading_mark": false,
+                "source_id": "fixture",
+                "basis_id": "RAW:fixture:C",
+                "quote_source_ids": [
+                  "fixture"
+                ]
+              }
+            }
+          },
+          {
+            "date": "2026-01-06",
+            "settled_cash": "100",
+            "available_cash_strict": "100",
+            "shares": {
+              "A": "50",
+              "B": "0",
+              "C": "2"
+            },
+            "cash_receivable": "576.500",
+            "purchase_payable": "0",
+            "cash_claims": [
+              {
+                "amount": "80",
+                "id": "opening-cash",
+                "pay_date": "2026-01-12",
+                "source_ids": [
+                  "fixture"
+                ],
+                "kind": "OPENING_RECEIVABLE"
+              },
+              {
+                "id": "r1-A-fill-0",
+                "kind": "SALE",
+                "amount": "496.500",
+                "pay_date": "2026-01-08"
+              }
+            ],
+            "share_receivables": [
+              {
+                "code": "A",
+                "delivery_date": "2026-01-09",
+                "id": "opening-shares",
+                "shares": "10",
+                "source_ids": [
+                  "fixture"
+                ],
+                "tradable_date": "2026-01-12"
+              }
+            ],
+            "net_accrual_equity": "1326.500",
+            "marks": {
+              "A": {
+                "value": "10",
+                "source_date": "2026-01-06",
+                "carried_nontrading_mark": false,
+                "source_id": "fixture",
+                "basis_id": "RAW:fixture:A",
+                "quote_source_ids": [
+                  "fixture"
+                ]
+              },
+              "B": {
+                "value": "20",
+                "source_date": "2026-01-06",
+                "carried_nontrading_mark": false,
+                "source_id": "fixture",
+                "basis_id": "RAW:fixture:B",
+                "quote_source_ids": [
+                  "fixture"
+                ]
+              },
+              "C": {
+                "value": "25",
+                "source_date": "2026-01-06",
+                "carried_nontrading_mark": false,
+                "source_id": "fixture",
+                "basis_id": "RAW:fixture:C",
+                "quote_source_ids": [
+                  "fixture"
+                ]
+              }
+            }
+          },
+          {
+            "date": "2026-01-07",
+            "settled_cash": "100",
+            "available_cash_strict": "100",
+            "shares": {
+              "A": "50",
+              "B": "0",
+              "C": "2"
+            },
+            "cash_receivable": "576.500",
+            "purchase_payable": "0",
+            "cash_claims": [
+              {
+                "amount": "80",
+                "id": "opening-cash",
+                "pay_date": "2026-01-12",
+                "source_ids": [
+                  "fixture"
+                ],
+                "kind": "OPENING_RECEIVABLE"
+              },
+              {
+                "id": "r1-A-fill-0",
+                "kind": "SALE",
+                "amount": "496.500",
+                "pay_date": "2026-01-08"
+              }
+            ],
+            "share_receivables": [
+              {
+                "code": "A",
+                "delivery_date": "2026-01-09",
+                "id": "opening-shares",
+                "shares": "10",
+                "source_ids": [
+                  "fixture"
+                ],
+                "tradable_date": "2026-01-12"
+              }
+            ],
+            "net_accrual_equity": "1326.500",
+            "marks": {
+              "A": {
+                "value": "10",
+                "source_date": "2026-01-07",
+                "carried_nontrading_mark": false,
+                "source_id": "fixture",
+                "basis_id": "RAW:fixture:A",
+                "quote_source_ids": [
+                  "fixture"
+                ]
+              },
+              "B": {
+                "value": "20",
+                "source_date": "2026-01-07",
+                "carried_nontrading_mark": false,
+                "source_id": "fixture",
+                "basis_id": "RAW:fixture:B",
+                "quote_source_ids": [
+                  "fixture"
+                ]
+              },
+              "C": {
+                "value": "25",
+                "source_date": "2026-01-07",
+                "carried_nontrading_mark": false,
+                "source_id": "fixture",
+                "basis_id": "RAW:fixture:C",
+                "quote_source_ids": [
+                  "fixture"
+                ]
+              }
+            }
+          },
+          {
+            "date": "2026-01-08",
+            "settled_cash": "596.500",
+            "available_cash_strict": "596.500",
+            "shares": {
+              "A": "50",
+              "B": "0",
+              "C": "2"
+            },
+            "cash_receivable": "80",
+            "purchase_payable": "0",
+            "cash_claims": [
+              {
+                "amount": "80",
+                "id": "opening-cash",
+                "pay_date": "2026-01-12",
+                "source_ids": [
+                  "fixture"
+                ],
+                "kind": "OPENING_RECEIVABLE"
+              }
+            ],
+            "share_receivables": [
+              {
+                "code": "A",
+                "delivery_date": "2026-01-09",
+                "id": "opening-shares",
+                "shares": "10",
+                "source_ids": [
+                  "fixture"
+                ],
+                "tradable_date": "2026-01-12"
+              }
+            ],
+            "net_accrual_equity": "1326.500",
+            "marks": {
+              "A": {
+                "value": "10",
+                "source_date": "2026-01-08",
+                "carried_nontrading_mark": false,
+                "source_id": "fixture",
+                "basis_id": "RAW:fixture:A",
+                "quote_source_ids": [
+                  "fixture"
+                ]
+              },
+              "B": {
+                "value": "20",
+                "source_date": "2026-01-08",
+                "carried_nontrading_mark": false,
+                "source_id": "fixture",
+                "basis_id": "RAW:fixture:B",
+                "quote_source_ids": [
+                  "fixture"
+                ]
+              },
+              "C": {
+                "value": "25",
+                "source_date": "2026-01-08",
+                "carried_nontrading_mark": false,
+                "source_id": "fixture",
+                "basis_id": "RAW:fixture:C",
+                "quote_source_ids": [
+                  "fixture"
+                ]
+              }
+            }
+          }
+        ],
+        "journal": [
+          {
+            "date": "2026-01-06",
+            "type": "FILL",
+            "fill": {
+              "id": "r1-A-fill-0",
+              "code": "A",
+              "side": "SELL",
+              "shares": "50",
+              "price": "9.990",
+              "fee": "1",
+              "tax": "2",
+              "date": "2026-01-06",
+              "decision_date": "2026-01-05",
+              "settlement_date": "2026-01-08",
+              "source_ids": [
+                "fixture"
+              ]
+            }
+          },
+          {
+            "date": "2026-01-08",
+            "type": "CASH_RECEIVED",
+            "claim_id": "r1-A-fill-0",
+            "kind": "SALE",
+            "amount": "496.500"
+          }
+        ],
+        "total_net_return": null,
+        "scenario_net_return": null,
+        "actual_realized_investor_return": null,
+        "primary_pressure_id": null,
+        "flywheel_validation": "NOT_VALIDATED",
+        "quote_gaps": [],
+        "initial_equity": "1330",
+        "status": "PARTIAL_LEDGER_RETURN_REFUSED"
+      },
+      "new_fill_ids": [
+        "r1-A-fill-0"
+      ],
+      "decision_ids": [
+        "sha256:5f20be9cc0036864dfbee0347c6dd90ad0366992286dce17d7a81329efa46136"
+      ],
+      "decision_records": {
+        "sha256:5f20be9cc0036864dfbee0347c6dd90ad0366992286dce17d7a81329efa46136": {
+          "schema": "capital-decision/0.8",
+          "decision_at": "2026-01-05T15:00:00+08:00",
+          "data_cutoff": "2026-01-05T14:00:00+08:00",
+          "policy_version": "R1-explicit-event-risk-budget/0.1",
+          "parameter_source": "SYNTHETIC_MECHANISM_FIXTURE_NOT_USER_RULE",
+          "synthetic": true,
+          "cost_model": {
+            "available_at": "2026-01-05T14:00:00+08:00",
+            "fee_rate": "0.001",
+            "minimum_fee": "1",
+            "sell_tax": "0.003",
+            "slippage_bps": "10",
+            "version": "synthetic-costs/0.1"
+          },
+          "execution_model": {
+            "available_at": "2026-01-05T14:00:00+08:00",
+            "broker_credit": null,
+            "buying_power": "SETTLED_CASH_ONLY",
+            "version": "synthetic-next-day-orders/0.1"
+          },
+          "risk_limits": {
+            "account_stress_loss": "3000",
+            "available_at": "2026-01-05T14:00:00+08:00",
+            "group_value": {
+              "new": "3000",
+              "original": "3000",
+              "other": "3000"
+            },
+            "max_trade_shares": {
+              "A": "500",
+              "B": "500",
+              "C": "500"
+            },
+            "single_name_value": {
+              "A": "3000",
+              "B": "3000",
+              "C": "3000"
+            },
+            "version": "synthetic-risk/0.1"
+          },
+          "scenario_set": {
+            "assumption": "COMMON_IMAGINARY_STRESSES_KNOWN_AS_ASSUMPTIONS_AT_DECISION_NOT_FORECASTS",
+            "available_at": "2026-01-05T14:00:00+08:00",
+            "scenarios": [
+              {
+                "id": "A_wins",
+                "prices": {
+                  "A": "15",
+                  "B": "18",
+                  "C": "22"
+                }
+              },
+              {
+                "id": "B_accelerates",
+                "prices": {
+                  "A": "11",
+                  "B": "32",
+                  "C": "26"
+                }
+              },
+              {
+                "id": "both_fall",
+                "prices": {
+                  "A": "7",
+                  "B": "12",
+                  "C": "16"
+                }
+              }
+            ],
+            "version": "synthetic-common-scenarios/0.1"
+          },
+          "common_account_id": "sha256:8322bbf14a686deba2c683661b4fc7bbcfe1626b6f853f91e8fbcce0722a3b99",
+          "initial_capital": "1330",
+          "layer1": {
+            "A": {
+              "features": {
+                "price_volume": {
+                  "support": [
+                    {
+                      "adjustment_version": "RAW:synthetic/1",
+                      "available_at": "2026-01-05T14:00:00+08:00",
+                      "basis_id": "RAW:fixture:A",
+                      "event_id": "A-event",
+                      "feature": "price_volume",
+                      "formation_id": "A-formation",
+                      "id": "A-event",
+                      "occurred_at": "2026-01-05T14:00:00+08:00",
+                      "source_id": "fixture",
+                      "stance": "support",
+                      "validity": {
+                        "available_at": "2026-01-05T14:00:00+08:00",
+                        "invalidation": null,
+                        "qualification": "EXPLICIT_SYNTHETIC_ONGOING_REQUIRES_REVIEW",
+                        "schema": "capital-fact-validity/0.1",
+                        "source_ids": [
+                          "fixture"
+                        ],
+                        "valid_from": "2026-01-05T14:00:00+08:00",
+                        "valid_until": null
+                      },
+                      "value": "EXPLICIT_SYNTHETIC_BREAKOUT",
+                      "volume_bar_id": "A-bar"
+                    }
+                  ],
+                  "refutation": [],
+                  "unknown": []
+                },
+                "box": {
+                  "support": [],
+                  "refutation": [],
+                  "unknown": [
+                    {
+                      "reason": "NO_KNOWN_EVIDENCE"
+                    }
+                  ]
+                },
+                "key_position": {
+                  "support": [],
+                  "refutation": [],
+                  "unknown": [
+                    {
+                      "reason": "NO_KNOWN_EVIDENCE"
+                    }
+                  ]
+                },
+                "momentum": {
+                  "support": [],
+                  "refutation": [],
+                  "unknown": [
+                    {
+                      "reason": "NO_KNOWN_EVIDENCE"
+                    }
+                  ]
+                },
+                "cross_scale": {
+                  "support": [],
+                  "refutation": [],
+                  "unknown": [
+                    {
+                      "reason": "NO_KNOWN_EVIDENCE"
+                    }
+                  ]
+                }
+              },
+              "strength_probability": null,
+              "combined_score": null,
+              "conclusion": "EVIDENCE_ONLY_NO_STRENGTH_RANKING"
+            },
+            "B": {
+              "features": {
+                "price_volume": {
+                  "support": [
+                    {
+                      "adjustment_version": "RAW:synthetic/1",
+                      "available_at": "2026-01-05T14:00:00+08:00",
+                      "basis_id": "RAW:fixture:B",
+                      "event_id": "B-event",
+                      "feature": "price_volume",
+                      "formation_id": "B-formation",
+                      "id": "B-event",
+                      "occurred_at": "2026-01-05T14:00:00+08:00",
+                      "source_id": "fixture",
+                      "stance": "support",
+                      "validity": {
+                        "available_at": "2026-01-05T14:00:00+08:00",
+                        "invalidation": null,
+                        "qualification": "EXPLICIT_SYNTHETIC_ONGOING_REQUIRES_REVIEW",
+                        "schema": "capital-fact-validity/0.1",
+                        "source_ids": [
+                          "fixture"
+                        ],
+                        "valid_from": "2026-01-05T14:00:00+08:00",
+                        "valid_until": null
+                      },
+                      "value": "EXPLICIT_SYNTHETIC_BREAKOUT",
+                      "volume_bar_id": "B-bar"
+                    }
+                  ],
+                  "refutation": [],
+                  "unknown": []
+                },
+                "box": {
+                  "support": [],
+                  "refutation": [],
+                  "unknown": [
+                    {
+                      "reason": "NO_KNOWN_EVIDENCE"
+                    }
+                  ]
+                },
+                "key_position": {
+                  "support": [],
+                  "refutation": [],
+                  "unknown": [
+                    {
+                      "reason": "NO_KNOWN_EVIDENCE"
+                    }
+                  ]
+                },
+                "momentum": {
+                  "support": [],
+                  "refutation": [],
+                  "unknown": [
+                    {
+                      "reason": "NO_KNOWN_EVIDENCE"
+                    }
+                  ]
+                },
+                "cross_scale": {
+                  "support": [],
+                  "refutation": [],
+                  "unknown": [
+                    {
+                      "reason": "NO_KNOWN_EVIDENCE"
+                    }
+                  ]
+                }
+              },
+              "strength_probability": null,
+              "combined_score": null,
+              "conclusion": "EVIDENCE_ONLY_NO_STRENGTH_RANKING"
+            },
+            "C": {
+              "features": {
+                "price_volume": {
+                  "support": [
+                    {
+                      "adjustment_version": "RAW:synthetic/1",
+                      "available_at": "2026-01-05T14:00:00+08:00",
+                      "basis_id": "RAW:fixture:C",
+                      "event_id": "C-event",
+                      "feature": "price_volume",
+                      "formation_id": "C-formation",
+                      "id": "C-event",
+                      "occurred_at": "2026-01-05T14:00:00+08:00",
+                      "source_id": "fixture",
+                      "stance": "support",
+                      "validity": {
+                        "available_at": "2026-01-05T14:00:00+08:00",
+                        "invalidation": null,
+                        "qualification": "EXPLICIT_SYNTHETIC_ONGOING_REQUIRES_REVIEW",
+                        "schema": "capital-fact-validity/0.1",
+                        "source_ids": [
+                          "fixture"
+                        ],
+                        "valid_from": "2026-01-05T14:00:00+08:00",
+                        "valid_until": null
+                      },
+                      "value": "EXPLICIT_SYNTHETIC_BREAKOUT",
+                      "volume_bar_id": "C-bar"
+                    }
+                  ],
+                  "refutation": [],
+                  "unknown": []
+                },
+                "box": {
+                  "support": [],
+                  "refutation": [],
+                  "unknown": [
+                    {
+                      "reason": "NO_KNOWN_EVIDENCE"
+                    }
+                  ]
+                },
+                "key_position": {
+                  "support": [],
+                  "refutation": [],
+                  "unknown": [
+                    {
+                      "reason": "NO_KNOWN_EVIDENCE"
+                    }
+                  ]
+                },
+                "momentum": {
+                  "support": [],
+                  "refutation": [],
+                  "unknown": [
+                    {
+                      "reason": "NO_KNOWN_EVIDENCE"
+                    }
+                  ]
+                },
+                "cross_scale": {
+                  "support": [],
+                  "refutation": [],
+                  "unknown": [
+                    {
+                      "reason": "NO_KNOWN_EVIDENCE"
+                    }
+                  ]
+                }
+              },
+              "strength_probability": null,
+              "combined_score": null,
+              "conclusion": "EVIDENCE_ONLY_NO_STRENGTH_RANKING"
+            }
+          },
+          "layer2": {
+            "A": {
+              "status": "CONDITIONAL_RESEARCH_ENTRY",
+              "missing": [],
+              "position": "SYNTHETIC_POSITION",
+              "invalidation_risk": "SCENARIO_LOSS_NOT_STOP_FILL",
+              "liquidity_shares": "500",
+              "reasonable_space": "5",
+              "reference": {
+                "adjustment_version": "RAW:synthetic/1",
+                "available_at": "2026-01-05T14:00:00+08:00",
+                "basis_id": "RAW:fixture:A",
+                "occurred_at": "2026-01-05T14:00:00+08:00",
+                "price": "15",
+                "qualification": "SYNTHETIC_NOT_MARKET_AUTHORITY",
+                "reference_role": "FORMAL_RESISTANCE",
+                "source_id": "fixture",
+                "validity": {
+                  "available_at": "2026-01-05T14:00:00+08:00",
+                  "invalidation": null,
+                  "qualification": "EXPLICIT_SYNTHETIC_ONGOING_REQUIRES_REVIEW",
+                  "schema": "capital-fact-validity/0.1",
+                  "source_ids": [
+                    "fixture"
+                  ],
+                  "valid_from": "2026-01-05T14:00:00+08:00",
+                  "valid_until": null
+                }
+              },
+              "guaranteed_target": null,
+              "data_qualified": false,
+              "capital_eligibility": {
+                "qualified_for_synthetic_proposal": true,
+                "reasons": [],
+                "review": {
+                  "adjustment_version": "RAW:synthetic/1",
+                  "assessed_at": "2026-01-05T15:00:00+08:00",
+                  "available_at": "2026-01-05T15:00:00+08:00",
+                  "basis_id": "RAW:fixture:A",
+                  "code": "A",
+                  "data_cutoff": "2026-01-05T14:00:00+08:00",
+                  "evidence_ids": [
+                    "A-event"
+                  ],
+                  "schema": "capital-entry-review/0.1",
+                  "source_id": "fixture",
+                  "source_ids": [
+                    "fixture"
+                  ],
+                  "status": "QUALIFIED_SYNTHETIC_RESEARCH"
+                },
+                "authority": "SYNTHETIC_RESEARCH_ONLY_NOT_DATA_OR_EXECUTION_AUTHORIZATION"
+              }
+            },
+            "B": {
+              "status": "CONDITIONAL_RESEARCH_ENTRY",
+              "missing": [],
+              "position": "SYNTHETIC_POSITION",
+              "invalidation_risk": "SCENARIO_LOSS_NOT_STOP_FILL",
+              "liquidity_shares": "500",
+              "reasonable_space": "10",
+              "reference": {
+                "adjustment_version": "RAW:synthetic/1",
+                "available_at": "2026-01-05T14:00:00+08:00",
+                "basis_id": "RAW:fixture:B",
+                "occurred_at": "2026-01-05T14:00:00+08:00",
+                "price": "30",
+                "qualification": "SYNTHETIC_NOT_MARKET_AUTHORITY",
+                "reference_role": "FORMAL_RESISTANCE",
+                "source_id": "fixture",
+                "validity": {
+                  "available_at": "2026-01-05T14:00:00+08:00",
+                  "invalidation": null,
+                  "qualification": "EXPLICIT_SYNTHETIC_ONGOING_REQUIRES_REVIEW",
+                  "schema": "capital-fact-validity/0.1",
+                  "source_ids": [
+                    "fixture"
+                  ],
+                  "valid_from": "2026-01-05T14:00:00+08:00",
+                  "valid_until": null
+                }
+              },
+              "guaranteed_target": null,
+              "data_qualified": false,
+              "capital_eligibility": {
+                "qualified_for_synthetic_proposal": true,
+                "reasons": [],
+                "review": {
+                  "adjustment_version": "RAW:synthetic/1",
+                  "assessed_at": "2026-01-05T15:00:00+08:00",
+                  "available_at": "2026-01-05T15:00:00+08:00",
+                  "basis_id": "RAW:fixture:B",
+                  "code": "B",
+                  "data_cutoff": "2026-01-05T14:00:00+08:00",
+                  "evidence_ids": [
+                    "B-event"
+                  ],
+                  "schema": "capital-entry-review/0.1",
+                  "source_id": "fixture",
+                  "source_ids": [
+                    "fixture"
+                  ],
+                  "status": "QUALIFIED_SYNTHETIC_RESEARCH"
+                },
+                "authority": "SYNTHETIC_RESEARCH_ONLY_NOT_DATA_OR_EXECUTION_AUTHORIZATION"
+              }
+            },
+            "C": {
+              "status": "CONDITIONAL_RESEARCH_ENTRY",
+              "missing": [],
+              "position": "SYNTHETIC_POSITION",
+              "invalidation_risk": "SCENARIO_LOSS_NOT_STOP_FILL",
+              "liquidity_shares": "500",
+              "reasonable_space": "10",
+              "reference": {
+                "adjustment_version": "RAW:synthetic/1",
+                "available_at": "2026-01-05T14:00:00+08:00",
+                "basis_id": "RAW:fixture:C",
+                "occurred_at": "2026-01-05T14:00:00+08:00",
+                "price": "35",
+                "qualification": "SYNTHETIC_NOT_MARKET_AUTHORITY",
+                "reference_role": "FORMAL_RESISTANCE",
+                "source_id": "fixture",
+                "validity": {
+                  "available_at": "2026-01-05T14:00:00+08:00",
+                  "invalidation": null,
+                  "qualification": "EXPLICIT_SYNTHETIC_ONGOING_REQUIRES_REVIEW",
+                  "schema": "capital-fact-validity/0.1",
+                  "source_ids": [
+                    "fixture"
+                  ],
+                  "valid_from": "2026-01-05T14:00:00+08:00",
+                  "valid_until": null
+                }
+              },
+              "guaranteed_target": null,
+              "data_qualified": false,
+              "capital_eligibility": {
+                "qualified_for_synthetic_proposal": true,
+                "reasons": [],
+                "review": {
+                  "adjustment_version": "RAW:synthetic/1",
+                  "assessed_at": "2026-01-05T15:00:00+08:00",
+                  "available_at": "2026-01-05T15:00:00+08:00",
+                  "basis_id": "RAW:fixture:C",
+                  "code": "C",
+                  "data_cutoff": "2026-01-05T14:00:00+08:00",
+                  "evidence_ids": [
+                    "C-event"
+                  ],
+                  "schema": "capital-entry-review/0.1",
+                  "source_id": "fixture",
+                  "source_ids": [
+                    "fixture"
+                  ],
+                  "status": "QUALIFIED_SYNTHETIC_RESEARCH"
+                },
+                "authority": "SYNTHETIC_RESEARCH_ONLY_NOT_DATA_OR_EXECUTION_AUTHORIZATION"
+              }
+            }
+          },
+          "layer3": {
+            "alternatives": [
+              {
+                "id": "A-zero",
+                "family": "A",
+                "route": "R1",
+                "common_account_id": "sha256:8322bbf14a686deba2c683661b4fc7bbcfe1626b6f853f91e8fbcce0722a3b99",
+                "initial_capital": "1330",
+                "trigger_ids": [],
+                "conditions": [
+                  "REVIEW_ON_NEW_INDEPENDENT_EVENT"
+                ],
+                "cancel_conditions": [
+                  "EVIDENCE_INVALIDATED",
+                  "BASIS_OR_SOURCE_CHANGED",
+                  "RISK_OR_LIQUIDITY_CHANGED"
+                ],
+                "next_review_conditions": [
+                  "NEW_INDEPENDENT_EVENT",
+                  "FILL_OR_SETTLEMENT_UPDATE"
+                ],
+                "reasons": [],
+                "dominated_by": [],
+                "indistinguishable_from": [],
+                "feasible": true,
+                "status": "FEASIBLE",
+                "targets": {
+                  "A": "100",
+                  "B": "0",
+                  "C": "2"
+                },
+                "risk_reducing": false,
+                "remaining_risk_violations": {
+                  "single:A": "0",
+                  "single:B": "0",
+                  "single:C": "0",
+                  "group:original": "0",
+                  "group:new": "0",
+                  "group:other": "0",
+                  "account_stress": "0"
+                },
+                "estimated_cost": "0",
+                "sale_receivable_estimate": "0",
+                "purchase_payable_estimate": "0",
+                "available_settled_cash": "0",
+                "broker_credit_separate": "0",
+                "funding": "SETTLED",
+                "final_cash_after_all_settlements_estimate": "100",
+                "scenario_values": {
+                  "A_wins": "1874",
+                  "B_accelerates": "1442",
+                  "both_fall": "982"
+                },
+                "scenario_value_qualification": "STATIC_TARGET_ATTAINED_STRESS_EXCLUDES_WAITING_AND_NONFILLS",
+                "dominance_scope": "STATIC_TARGETS_ONLY",
+                "policy_dominance": "NOT_EVALUATED"
+              },
+              {
+                "id": "quantity:sha256:56f76c7d40f2c39d22607b6ed2cd15253513daf95d2f53f487bbf7380cd119a0",
+                "family": "E",
+                "route": "R1",
+                "common_account_id": "sha256:8322bbf14a686deba2c683661b4fc7bbcfe1626b6f853f91e8fbcce0722a3b99",
+                "initial_capital": "1330",
+                "trigger_ids": [],
+                "conditions": [
+                  "CURRENT_RESEARCH_INTENT_ONLY",
+                  "REASSESS_AFTER_SETTLEMENT",
+                  "NEW_INDEPENDENT_TRIGGER_FOR_NEXT_BUY_BATCH"
+                ],
+                "cancel_conditions": [
+                  "EVIDENCE_INVALIDATED",
+                  "BASIS_OR_SOURCE_CHANGED",
+                  "RISK_OR_LIQUIDITY_CHANGED"
+                ],
+                "next_review_conditions": [
+                  "NEW_INDEPENDENT_EVENT",
+                  "FILL_OR_SETTLEMENT_UPDATE"
+                ],
+                "reasons": [],
+                "dominated_by": [],
+                "indistinguishable_from": [],
+                "feasible": true,
+                "status": "CONDITIONAL",
+                "targets": {
+                  "A": "50",
+                  "B": "20",
+                  "C": "2"
+                },
+                "risk_reducing": false,
+                "remaining_risk_violations": {
+                  "single:A": "0",
+                  "single:B": "0",
+                  "single:C": "0",
+                  "group:original": "0",
+                  "group:new": "0",
+                  "group:other": "0",
+                  "account_stress": "0"
+                },
+                "estimated_cost": "4.9",
+                "sale_receivable_estimate": "496.5",
+                "purchase_payable_estimate": "401.4",
+                "available_settled_cash": "0",
+                "broker_credit_separate": "0",
+                "funding": "WAIT_SALE_SETTLEMENT_AND_REEVALUATE",
+                "final_cash_after_all_settlements_estimate": "195.1",
+                "scenario_values": {
+                  "A_wins": "1579.1",
+                  "B_accelerates": "1627.1",
+                  "both_fall": "967.1"
+                },
+                "scenario_value_qualification": "STATIC_TARGET_ATTAINED_STRESS_EXCLUDES_WAITING_AND_NONFILLS",
+                "dominance_scope": "STATIC_TARGETS_ONLY",
+                "policy_dominance": "NOT_EVALUATED"
+              }
+            ],
+            "comparison": "STATIC_TARGET_SCENARIO_PARETO_NOT_POLICY_COMPARISON"
+          },
+          "research_recommendation": {
+            "status": "REVIEW_ALL_FEASIBLE_POLICIES_STATIC_DOMINANCE_IS_DIAGNOSTIC_ONLY",
+            "candidate_ids": [
+              "A-zero",
+              "quantity:sha256:56f76c7d40f2c39d22607b6ed2cd15253513daf95d2f53f487bbf7380cd119a0"
+            ]
+          },
+          "data_qualified": false,
+          "execution_model_qualified": false,
+          "historical_signal_eligible": false,
+          "policy_authorized": false,
+          "live_execution_authorized": false,
+          "primary_pressure_id": null,
+          "new_evidence_tokens": [
+            "fixture:event_id:A-event",
+            "fixture:event_id:B-event",
+            "fixture:event_id:C-event",
+            "fixture:formation_id:A-formation",
+            "fixture:formation_id:B-formation",
+            "fixture:formation_id:C-formation",
+            "fixture:volume_bar_id:A-bar",
+            "fixture:volume_bar_id:B-bar",
+            "fixture:volume_bar_id:C-bar"
+          ],
+          "reviewed_evidence_tokens": [
+            "fixture:event_id:A-event",
+            "fixture:event_id:B-event",
+            "fixture:event_id:C-event",
+            "fixture:formation_id:A-formation",
+            "fixture:formation_id:B-formation",
+            "fixture:formation_id:C-formation",
+            "fixture:volume_bar_id:A-bar",
+            "fixture:volume_bar_id:B-bar",
+            "fixture:volume_bar_id:C-bar"
+          ],
+          "fact_history": {
+            "schema": "capital-fact-history/0.3",
+            "observations": [
+              {
+                "observed_at": "2026-01-05T15:00:00+08:00",
+                "identity": {
+                  "code": "A",
+                  "kind": "REFERENCE",
+                  "id": "REFERENCE@2026-01-05T14:00:00+08:00|2026-01-05T14:00:00+08:00",
+                  "source_id": "fixture",
+                  "basis_id": "RAW:fixture:A",
+                  "adjustment_version": "RAW:synthetic/1"
+                },
+                "fact": {
+                  "adjustment_version": "RAW:synthetic/1",
+                  "available_at": "2026-01-05T14:00:00+08:00",
+                  "basis_id": "RAW:fixture:A",
+                  "occurred_at": "2026-01-05T14:00:00+08:00",
+                  "price": "15",
+                  "qualification": "SYNTHETIC_NOT_MARKET_AUTHORITY",
+                  "reference_role": "FORMAL_RESISTANCE",
+                  "source_id": "fixture",
+                  "validity": {
+                    "available_at": "2026-01-05T14:00:00+08:00",
+                    "invalidation": null,
+                    "qualification": "EXPLICIT_SYNTHETIC_ONGOING_REQUIRES_REVIEW",
+                    "schema": "capital-fact-validity/0.1",
+                    "source_ids": [
+                      "fixture"
+                    ],
+                    "valid_from": "2026-01-05T14:00:00+08:00",
+                    "valid_until": null
+                  }
+                },
+                "content_id": "sha256:277e0798b6a6d77f588a89ccb88ee9af375c643e2c037171d13cbf71f833eeca",
+                "reasons": []
+              },
+              {
+                "observed_at": "2026-01-05T15:00:00+08:00",
+                "identity": {
+                  "code": "A",
+                  "kind": "ENTRY",
+                  "id": "ENTRY@2026-01-05T14:00:00+08:00|",
+                  "source_id": "fixture",
+                  "basis_id": "RAW:fixture:A",
+                  "adjustment_version": "RAW:synthetic/1"
+                },
+                "fact": {
+                  "adjustment_version": "RAW:synthetic/1",
+                  "available_at": "2026-01-05T14:00:00+08:00",
+                  "basis_id": "RAW:fixture:A",
+                  "invalidation_risk": "SCENARIO_LOSS_NOT_STOP_FILL",
+                  "liquidity_shares": "500",
+                  "position": "SYNTHETIC_POSITION",
+                  "source_id": "fixture",
+                  "validity": {
+                    "available_at": "2026-01-05T14:00:00+08:00",
+                    "invalidation": null,
+                    "qualification": "EXPLICIT_SYNTHETIC_ONGOING_REQUIRES_REVIEW",
+                    "schema": "capital-fact-validity/0.1",
+                    "source_ids": [
+                      "fixture"
+                    ],
+                    "valid_from": "2026-01-05T14:00:00+08:00",
+                    "valid_until": null
+                  }
+                },
+                "content_id": "sha256:91e4c8601040672a8d977639394033f618360231e0f3a5e09ef1c213dc2684a8",
+                "reasons": []
+              },
+              {
+                "observed_at": "2026-01-05T15:00:00+08:00",
+                "identity": {
+                  "code": "C",
+                  "kind": "EVIDENCE",
+                  "id": "C-event",
+                  "source_id": "fixture",
+                  "basis_id": "RAW:fixture:C",
+                  "adjustment_version": "RAW:synthetic/1"
+                },
+                "fact": {
+                  "adjustment_version": "RAW:synthetic/1",
+                  "available_at": "2026-01-05T14:00:00+08:00",
+                  "basis_id": "RAW:fixture:C",
+                  "event_id": "C-event",
+                  "feature": "price_volume",
+                  "formation_id": "C-formation",
+                  "id": "C-event",
+                  "occurred_at": "2026-01-05T14:00:00+08:00",
+                  "source_id": "fixture",
+                  "stance": "support",
+                  "validity": {
+                    "available_at": "2026-01-05T14:00:00+08:00",
+                    "invalidation": null,
+                    "qualification": "EXPLICIT_SYNTHETIC_ONGOING_REQUIRES_REVIEW",
+                    "schema": "capital-fact-validity/0.1",
+                    "source_ids": [
+                      "fixture"
+                    ],
+                    "valid_from": "2026-01-05T14:00:00+08:00",
+                    "valid_until": null
+                  },
+                  "value": "EXPLICIT_SYNTHETIC_BREAKOUT",
+                  "volume_bar_id": "C-bar"
+                },
+                "content_id": "sha256:0c474ee902fb50b5fb1a50dcad2bb0f680940e8c3b731d42c2c5bb67720e2132",
+                "reasons": []
+              },
+              {
+                "observed_at": "2026-01-05T15:00:00+08:00",
+                "identity": {
+                  "code": "B",
+                  "kind": "REFERENCE",
+                  "id": "REFERENCE@2026-01-05T14:00:00+08:00|2026-01-05T14:00:00+08:00",
+                  "source_id": "fixture",
+                  "basis_id": "RAW:fixture:B",
+                  "adjustment_version": "RAW:synthetic/1"
+                },
+                "fact": {
+                  "adjustment_version": "RAW:synthetic/1",
+                  "available_at": "2026-01-05T14:00:00+08:00",
+                  "basis_id": "RAW:fixture:B",
+                  "occurred_at": "2026-01-05T14:00:00+08:00",
+                  "price": "30",
+                  "qualification": "SYNTHETIC_NOT_MARKET_AUTHORITY",
+                  "reference_role": "FORMAL_RESISTANCE",
+                  "source_id": "fixture",
+                  "validity": {
+                    "available_at": "2026-01-05T14:00:00+08:00",
+                    "invalidation": null,
+                    "qualification": "EXPLICIT_SYNTHETIC_ONGOING_REQUIRES_REVIEW",
+                    "schema": "capital-fact-validity/0.1",
+                    "source_ids": [
+                      "fixture"
+                    ],
+                    "valid_from": "2026-01-05T14:00:00+08:00",
+                    "valid_until": null
+                  }
+                },
+                "content_id": "sha256:d4b0c256f37238872205fa7b9f694dd103cc2632e182054e812ce78004365113",
+                "reasons": []
+              },
+              {
+                "observed_at": "2026-01-05T15:00:00+08:00",
+                "identity": {
+                  "code": "C",
+                  "kind": "ENTRY",
+                  "id": "ENTRY@2026-01-05T14:00:00+08:00|",
+                  "source_id": "fixture",
+                  "basis_id": "RAW:fixture:C",
+                  "adjustment_version": "RAW:synthetic/1"
+                },
+                "fact": {
+                  "adjustment_version": "RAW:synthetic/1",
+                  "available_at": "2026-01-05T14:00:00+08:00",
+                  "basis_id": "RAW:fixture:C",
+                  "invalidation_risk": "SCENARIO_LOSS_NOT_STOP_FILL",
+                  "liquidity_shares": "500",
+                  "position": "SYNTHETIC_POSITION",
+                  "source_id": "fixture",
+                  "validity": {
+                    "available_at": "2026-01-05T14:00:00+08:00",
+                    "invalidation": null,
+                    "qualification": "EXPLICIT_SYNTHETIC_ONGOING_REQUIRES_REVIEW",
+                    "schema": "capital-fact-validity/0.1",
+                    "source_ids": [
+                      "fixture"
+                    ],
+                    "valid_from": "2026-01-05T14:00:00+08:00",
+                    "valid_until": null
+                  }
+                },
+                "content_id": "sha256:93985a0b01d730692ffa230c658d20d454996558d206c1874afaf48f6c328a5e",
+                "reasons": []
+              },
+              {
+                "observed_at": "2026-01-05T15:00:00+08:00",
+                "identity": {
+                  "code": "A",
+                  "kind": "EVIDENCE",
+                  "id": "A-event",
+                  "source_id": "fixture",
+                  "basis_id": "RAW:fixture:A",
+                  "adjustment_version": "RAW:synthetic/1"
+                },
+                "fact": {
+                  "adjustment_version": "RAW:synthetic/1",
+                  "available_at": "2026-01-05T14:00:00+08:00",
+                  "basis_id": "RAW:fixture:A",
+                  "event_id": "A-event",
+                  "feature": "price_volume",
+                  "formation_id": "A-formation",
+                  "id": "A-event",
+                  "occurred_at": "2026-01-05T14:00:00+08:00",
+                  "source_id": "fixture",
+                  "stance": "support",
+                  "validity": {
+                    "available_at": "2026-01-05T14:00:00+08:00",
+                    "invalidation": null,
+                    "qualification": "EXPLICIT_SYNTHETIC_ONGOING_REQUIRES_REVIEW",
+                    "schema": "capital-fact-validity/0.1",
+                    "source_ids": [
+                      "fixture"
+                    ],
+                    "valid_from": "2026-01-05T14:00:00+08:00",
+                    "valid_until": null
+                  },
+                  "value": "EXPLICIT_SYNTHETIC_BREAKOUT",
+                  "volume_bar_id": "A-bar"
+                },
+                "content_id": "sha256:5b2dc972e222f6cdaa18b978ab18f4fbecc04a1158fd7ae0676ae116338d4809",
+                "reasons": []
+              },
+              {
+                "observed_at": "2026-01-05T15:00:00+08:00",
+                "identity": {
+                  "code": "B",
+                  "kind": "ENTRY",
+                  "id": "ENTRY@2026-01-05T14:00:00+08:00|",
+                  "source_id": "fixture",
+                  "basis_id": "RAW:fixture:B",
+                  "adjustment_version": "RAW:synthetic/1"
+                },
+                "fact": {
+                  "adjustment_version": "RAW:synthetic/1",
+                  "available_at": "2026-01-05T14:00:00+08:00",
+                  "basis_id": "RAW:fixture:B",
+                  "invalidation_risk": "SCENARIO_LOSS_NOT_STOP_FILL",
+                  "liquidity_shares": "500",
+                  "position": "SYNTHETIC_POSITION",
+                  "source_id": "fixture",
+                  "validity": {
+                    "available_at": "2026-01-05T14:00:00+08:00",
+                    "invalidation": null,
+                    "qualification": "EXPLICIT_SYNTHETIC_ONGOING_REQUIRES_REVIEW",
+                    "schema": "capital-fact-validity/0.1",
+                    "source_ids": [
+                      "fixture"
+                    ],
+                    "valid_from": "2026-01-05T14:00:00+08:00",
+                    "valid_until": null
+                  }
+                },
+                "content_id": "sha256:b15a4e028ec12a0753f916419857a69f6c53d4adbbd5e9233b03a352fa84ec3f",
+                "reasons": []
+              },
+              {
+                "observed_at": "2026-01-05T15:00:00+08:00",
+                "identity": {
+                  "code": "C",
+                  "kind": "REFERENCE",
+                  "id": "REFERENCE@2026-01-05T14:00:00+08:00|2026-01-05T14:00:00+08:00",
+                  "source_id": "fixture",
+                  "basis_id": "RAW:fixture:C",
+                  "adjustment_version": "RAW:synthetic/1"
+                },
+                "fact": {
+                  "adjustment_version": "RAW:synthetic/1",
+                  "available_at": "2026-01-05T14:00:00+08:00",
+                  "basis_id": "RAW:fixture:C",
+                  "occurred_at": "2026-01-05T14:00:00+08:00",
+                  "price": "35",
+                  "qualification": "SYNTHETIC_NOT_MARKET_AUTHORITY",
+                  "reference_role": "FORMAL_RESISTANCE",
+                  "source_id": "fixture",
+                  "validity": {
+                    "available_at": "2026-01-05T14:00:00+08:00",
+                    "invalidation": null,
+                    "qualification": "EXPLICIT_SYNTHETIC_ONGOING_REQUIRES_REVIEW",
+                    "schema": "capital-fact-validity/0.1",
+                    "source_ids": [
+                      "fixture"
+                    ],
+                    "valid_from": "2026-01-05T14:00:00+08:00",
+                    "valid_until": null
+                  }
+                },
+                "content_id": "sha256:35376930b62fc64d075dd274f9af6a9b9fb6ab18d700f3b0eeb55a9b64c553d0",
+                "reasons": []
+              },
+              {
+                "observed_at": "2026-01-05T15:00:00+08:00",
+                "identity": {
+                  "code": "B",
+                  "kind": "EVIDENCE",
+                  "id": "B-event",
+                  "source_id": "fixture",
+                  "basis_id": "RAW:fixture:B",
+                  "adjustment_version": "RAW:synthetic/1"
+                },
+                "fact": {
+                  "adjustment_version": "RAW:synthetic/1",
+                  "available_at": "2026-01-05T14:00:00+08:00",
+                  "basis_id": "RAW:fixture:B",
+                  "event_id": "B-event",
+                  "feature": "price_volume",
+                  "formation_id": "B-formation",
+                  "id": "B-event",
+                  "occurred_at": "2026-01-05T14:00:00+08:00",
+                  "source_id": "fixture",
+                  "stance": "support",
+                  "validity": {
+                    "available_at": "2026-01-05T14:00:00+08:00",
+                    "invalidation": null,
+                    "qualification": "EXPLICIT_SYNTHETIC_ONGOING_REQUIRES_REVIEW",
+                    "schema": "capital-fact-validity/0.1",
+                    "source_ids": [
+                      "fixture"
+                    ],
+                    "valid_from": "2026-01-05T14:00:00+08:00",
+                    "valid_until": null
+                  },
+                  "value": "EXPLICIT_SYNTHETIC_BREAKOUT",
+                  "volume_bar_id": "B-bar"
+                },
+                "content_id": "sha256:fef3fe73168b59352d544a01525e143d7dd9ff670534cdf57cea181aa810e88b",
+                "reasons": []
+              }
+            ],
+            "roots": {
+              "sha256:10de129fb484373ddbcb61a17d3c7d5b91ed58299dff3177c867ed23fcd7db91": {
+                "identity": {
+                  "code": "A",
+                  "kind": "REFERENCE",
+                  "id": "REFERENCE@2026-01-05T14:00:00+08:00|2026-01-05T14:00:00+08:00",
+                  "source_id": "fixture",
+                  "basis_id": "RAW:fixture:A",
+                  "adjustment_version": "RAW:synthetic/1"
+                },
+                "fact": {
+                  "adjustment_version": "RAW:synthetic/1",
+                  "available_at": "2026-01-05T14:00:00+08:00",
+                  "basis_id": "RAW:fixture:A",
+                  "occurred_at": "2026-01-05T14:00:00+08:00",
+                  "price": "15",
+                  "qualification": "SYNTHETIC_NOT_MARKET_AUTHORITY",
+                  "reference_role": "FORMAL_RESISTANCE",
+                  "source_id": "fixture",
+                  "validity": {
+                    "available_at": "2026-01-05T14:00:00+08:00",
+                    "invalidation": null,
+                    "qualification": "EXPLICIT_SYNTHETIC_ONGOING_REQUIRES_REVIEW",
+                    "schema": "capital-fact-validity/0.1",
+                    "source_ids": [
+                      "fixture"
+                    ],
+                    "valid_from": "2026-01-05T14:00:00+08:00",
+                    "valid_until": null
+                  }
+                },
+                "content_ids": [
+                  "sha256:277e0798b6a6d77f588a89ccb88ee9af375c643e2c037171d13cbf71f833eeca"
+                ]
+              },
+              "sha256:51ef272adcd802998b1c18701d2c8a92fc5fb5fe129e70bc7affb12ad91a2cda": {
+                "identity": {
+                  "code": "A",
+                  "kind": "ENTRY",
+                  "id": "ENTRY@2026-01-05T14:00:00+08:00|",
+                  "source_id": "fixture",
+                  "basis_id": "RAW:fixture:A",
+                  "adjustment_version": "RAW:synthetic/1"
+                },
+                "fact": {
+                  "adjustment_version": "RAW:synthetic/1",
+                  "available_at": "2026-01-05T14:00:00+08:00",
+                  "basis_id": "RAW:fixture:A",
+                  "invalidation_risk": "SCENARIO_LOSS_NOT_STOP_FILL",
+                  "liquidity_shares": "500",
+                  "position": "SYNTHETIC_POSITION",
+                  "source_id": "fixture",
+                  "validity": {
+                    "available_at": "2026-01-05T14:00:00+08:00",
+                    "invalidation": null,
+                    "qualification": "EXPLICIT_SYNTHETIC_ONGOING_REQUIRES_REVIEW",
+                    "schema": "capital-fact-validity/0.1",
+                    "source_ids": [
+                      "fixture"
+                    ],
+                    "valid_from": "2026-01-05T14:00:00+08:00",
+                    "valid_until": null
+                  }
+                },
+                "content_ids": [
+                  "sha256:91e4c8601040672a8d977639394033f618360231e0f3a5e09ef1c213dc2684a8"
+                ]
+              },
+              "sha256:56106859c2c8327ff7a684bfd8c49b57309afdf02e93319bb5f0b6106b802ce2": {
+                "identity": {
+                  "code": "C",
+                  "kind": "EVIDENCE",
+                  "id": "C-event",
+                  "source_id": "fixture",
+                  "basis_id": "RAW:fixture:C",
+                  "adjustment_version": "RAW:synthetic/1"
+                },
+                "fact": {
+                  "adjustment_version": "RAW:synthetic/1",
+                  "available_at": "2026-01-05T14:00:00+08:00",
+                  "basis_id": "RAW:fixture:C",
+                  "event_id": "C-event",
+                  "feature": "price_volume",
+                  "formation_id": "C-formation",
+                  "id": "C-event",
+                  "occurred_at": "2026-01-05T14:00:00+08:00",
+                  "source_id": "fixture",
+                  "stance": "support",
+                  "validity": {
+                    "available_at": "2026-01-05T14:00:00+08:00",
+                    "invalidation": null,
+                    "qualification": "EXPLICIT_SYNTHETIC_ONGOING_REQUIRES_REVIEW",
+                    "schema": "capital-fact-validity/0.1",
+                    "source_ids": [
+                      "fixture"
+                    ],
+                    "valid_from": "2026-01-05T14:00:00+08:00",
+                    "valid_until": null
+                  },
+                  "value": "EXPLICIT_SYNTHETIC_BREAKOUT",
+                  "volume_bar_id": "C-bar"
+                },
+                "content_ids": [
+                  "sha256:0c474ee902fb50b5fb1a50dcad2bb0f680940e8c3b731d42c2c5bb67720e2132"
+                ]
+              },
+              "sha256:9d00e8d5def673727336c48f0d47a145e58e14a963164a8605aecb1268a799a0": {
+                "identity": {
+                  "code": "B",
+                  "kind": "REFERENCE",
+                  "id": "REFERENCE@2026-01-05T14:00:00+08:00|2026-01-05T14:00:00+08:00",
+                  "source_id": "fixture",
+                  "basis_id": "RAW:fixture:B",
+                  "adjustment_version": "RAW:synthetic/1"
+                },
+                "fact": {
+                  "adjustment_version": "RAW:synthetic/1",
+                  "available_at": "2026-01-05T14:00:00+08:00",
+                  "basis_id": "RAW:fixture:B",
+                  "occurred_at": "2026-01-05T14:00:00+08:00",
+                  "price": "30",
+                  "qualification": "SYNTHETIC_NOT_MARKET_AUTHORITY",
+                  "reference_role": "FORMAL_RESISTANCE",
+                  "source_id": "fixture",
+                  "validity": {
+                    "available_at": "2026-01-05T14:00:00+08:00",
+                    "invalidation": null,
+                    "qualification": "EXPLICIT_SYNTHETIC_ONGOING_REQUIRES_REVIEW",
+                    "schema": "capital-fact-validity/0.1",
+                    "source_ids": [
+                      "fixture"
+                    ],
+                    "valid_from": "2026-01-05T14:00:00+08:00",
+                    "valid_until": null
+                  }
+                },
+                "content_ids": [
+                  "sha256:d4b0c256f37238872205fa7b9f694dd103cc2632e182054e812ce78004365113"
+                ]
+              },
+              "sha256:c9a3558252db2a68d424a317768fd4e38dd1892b30743275c2763911e11e9dd8": {
+                "identity": {
+                  "code": "C",
+                  "kind": "ENTRY",
+                  "id": "ENTRY@2026-01-05T14:00:00+08:00|",
+                  "source_id": "fixture",
+                  "basis_id": "RAW:fixture:C",
+                  "adjustment_version": "RAW:synthetic/1"
+                },
+                "fact": {
+                  "adjustment_version": "RAW:synthetic/1",
+                  "available_at": "2026-01-05T14:00:00+08:00",
+                  "basis_id": "RAW:fixture:C",
+                  "invalidation_risk": "SCENARIO_LOSS_NOT_STOP_FILL",
+                  "liquidity_shares": "500",
+                  "position": "SYNTHETIC_POSITION",
+                  "source_id": "fixture",
+                  "validity": {
+                    "available_at": "2026-01-05T14:00:00+08:00",
+                    "invalidation": null,
+                    "qualification": "EXPLICIT_SYNTHETIC_ONGOING_REQUIRES_REVIEW",
+                    "schema": "capital-fact-validity/0.1",
+                    "source_ids": [
+                      "fixture"
+                    ],
+                    "valid_from": "2026-01-05T14:00:00+08:00",
+                    "valid_until": null
+                  }
+                },
+                "content_ids": [
+                  "sha256:93985a0b01d730692ffa230c658d20d454996558d206c1874afaf48f6c328a5e"
+                ]
+              },
+              "sha256:cd07f8d6278ed165e7eb675f866abdc5fdfbcceb156315ebfcf555011c93ae5d": {
+                "identity": {
+                  "code": "A",
+                  "kind": "EVIDENCE",
+                  "id": "A-event",
+                  "source_id": "fixture",
+                  "basis_id": "RAW:fixture:A",
+                  "adjustment_version": "RAW:synthetic/1"
+                },
+                "fact": {
+                  "adjustment_version": "RAW:synthetic/1",
+                  "available_at": "2026-01-05T14:00:00+08:00",
+                  "basis_id": "RAW:fixture:A",
+                  "event_id": "A-event",
+                  "feature": "price_volume",
+                  "formation_id": "A-formation",
+                  "id": "A-event",
+                  "occurred_at": "2026-01-05T14:00:00+08:00",
+                  "source_id": "fixture",
+                  "stance": "support",
+                  "validity": {
+                    "available_at": "2026-01-05T14:00:00+08:00",
+                    "invalidation": null,
+                    "qualification": "EXPLICIT_SYNTHETIC_ONGOING_REQUIRES_REVIEW",
+                    "schema": "capital-fact-validity/0.1",
+                    "source_ids": [
+                      "fixture"
+                    ],
+                    "valid_from": "2026-01-05T14:00:00+08:00",
+                    "valid_until": null
+                  },
+                  "value": "EXPLICIT_SYNTHETIC_BREAKOUT",
+                  "volume_bar_id": "A-bar"
+                },
+                "content_ids": [
+                  "sha256:5b2dc972e222f6cdaa18b978ab18f4fbecc04a1158fd7ae0676ae116338d4809"
+                ]
+              },
+              "sha256:d2defa741ff8d593ea70c3ea4b27504d450afea1de44821e2e4da842cb1ed49d": {
+                "identity": {
+                  "code": "B",
+                  "kind": "ENTRY",
+                  "id": "ENTRY@2026-01-05T14:00:00+08:00|",
+                  "source_id": "fixture",
+                  "basis_id": "RAW:fixture:B",
+                  "adjustment_version": "RAW:synthetic/1"
+                },
+                "fact": {
+                  "adjustment_version": "RAW:synthetic/1",
+                  "available_at": "2026-01-05T14:00:00+08:00",
+                  "basis_id": "RAW:fixture:B",
+                  "invalidation_risk": "SCENARIO_LOSS_NOT_STOP_FILL",
+                  "liquidity_shares": "500",
+                  "position": "SYNTHETIC_POSITION",
+                  "source_id": "fixture",
+                  "validity": {
+                    "available_at": "2026-01-05T14:00:00+08:00",
+                    "invalidation": null,
+                    "qualification": "EXPLICIT_SYNTHETIC_ONGOING_REQUIRES_REVIEW",
+                    "schema": "capital-fact-validity/0.1",
+                    "source_ids": [
+                      "fixture"
+                    ],
+                    "valid_from": "2026-01-05T14:00:00+08:00",
+                    "valid_until": null
+                  }
+                },
+                "content_ids": [
+                  "sha256:b15a4e028ec12a0753f916419857a69f6c53d4adbbd5e9233b03a352fa84ec3f"
+                ]
+              },
+              "sha256:ddf1f23108d1bc3bc4cd133a131dcfcd052202525698361a8bcb771ef76aa098": {
+                "identity": {
+                  "code": "C",
+                  "kind": "REFERENCE",
+                  "id": "REFERENCE@2026-01-05T14:00:00+08:00|2026-01-05T14:00:00+08:00",
+                  "source_id": "fixture",
+                  "basis_id": "RAW:fixture:C",
+                  "adjustment_version": "RAW:synthetic/1"
+                },
+                "fact": {
+                  "adjustment_version": "RAW:synthetic/1",
+                  "available_at": "2026-01-05T14:00:00+08:00",
+                  "basis_id": "RAW:fixture:C",
+                  "occurred_at": "2026-01-05T14:00:00+08:00",
+                  "price": "35",
+                  "qualification": "SYNTHETIC_NOT_MARKET_AUTHORITY",
+                  "reference_role": "FORMAL_RESISTANCE",
+                  "source_id": "fixture",
+                  "validity": {
+                    "available_at": "2026-01-05T14:00:00+08:00",
+                    "invalidation": null,
+                    "qualification": "EXPLICIT_SYNTHETIC_ONGOING_REQUIRES_REVIEW",
+                    "schema": "capital-fact-validity/0.1",
+                    "source_ids": [
+                      "fixture"
+                    ],
+                    "valid_from": "2026-01-05T14:00:00+08:00",
+                    "valid_until": null
+                  }
+                },
+                "content_ids": [
+                  "sha256:35376930b62fc64d075dd274f9af6a9b9fb6ab18d700f3b0eeb55a9b64c553d0"
+                ]
+              },
+              "sha256:fd1ef73a5b4c63f542cfe9902be987297c477580314d363bdf5c9453f31b3ee7": {
+                "identity": {
+                  "code": "B",
+                  "kind": "EVIDENCE",
+                  "id": "B-event",
+                  "source_id": "fixture",
+                  "basis_id": "RAW:fixture:B",
+                  "adjustment_version": "RAW:synthetic/1"
+                },
+                "fact": {
+                  "adjustment_version": "RAW:synthetic/1",
+                  "available_at": "2026-01-05T14:00:00+08:00",
+                  "basis_id": "RAW:fixture:B",
+                  "event_id": "B-event",
+                  "feature": "price_volume",
+                  "formation_id": "B-formation",
+                  "id": "B-event",
+                  "occurred_at": "2026-01-05T14:00:00+08:00",
+                  "source_id": "fixture",
+                  "stance": "support",
+                  "validity": {
+                    "available_at": "2026-01-05T14:00:00+08:00",
+                    "invalidation": null,
+                    "qualification": "EXPLICIT_SYNTHETIC_ONGOING_REQUIRES_REVIEW",
+                    "schema": "capital-fact-validity/0.1",
+                    "source_ids": [
+                      "fixture"
+                    ],
+                    "valid_from": "2026-01-05T14:00:00+08:00",
+                    "valid_until": null
+                  },
+                  "value": "EXPLICIT_SYNTHETIC_BREAKOUT",
+                  "volume_bar_id": "B-bar"
+                },
+                "content_ids": [
+                  "sha256:fef3fe73168b59352d544a01525e143d7dd9ff670534cdf57cea181aa810e88b"
+                ]
+              }
+            },
+            "aliases": {
+              "sha256:10de129fb484373ddbcb61a17d3c7d5b91ed58299dff3177c867ed23fcd7db91": "sha256:10de129fb484373ddbcb61a17d3c7d5b91ed58299dff3177c867ed23fcd7db91",
+              "sha256:51ef272adcd802998b1c18701d2c8a92fc5fb5fe129e70bc7affb12ad91a2cda": "sha256:51ef272adcd802998b1c18701d2c8a92fc5fb5fe129e70bc7affb12ad91a2cda",
+              "sha256:56106859c2c8327ff7a684bfd8c49b57309afdf02e93319bb5f0b6106b802ce2": "sha256:56106859c2c8327ff7a684bfd8c49b57309afdf02e93319bb5f0b6106b802ce2",
+              "sha256:9d00e8d5def673727336c48f0d47a145e58e14a963164a8605aecb1268a799a0": "sha256:9d00e8d5def673727336c48f0d47a145e58e14a963164a8605aecb1268a799a0",
+              "sha256:c9a3558252db2a68d424a317768fd4e38dd1892b30743275c2763911e11e9dd8": "sha256:c9a3558252db2a68d424a317768fd4e38dd1892b30743275c2763911e11e9dd8",
+              "sha256:cd07f8d6278ed165e7eb675f866abdc5fdfbcceb156315ebfcf555011c93ae5d": "sha256:cd07f8d6278ed165e7eb675f866abdc5fdfbcceb156315ebfcf555011c93ae5d",
+              "sha256:d2defa741ff8d593ea70c3ea4b27504d450afea1de44821e2e4da842cb1ed49d": "sha256:d2defa741ff8d593ea70c3ea4b27504d450afea1de44821e2e4da842cb1ed49d",
+              "sha256:ddf1f23108d1bc3bc4cd133a131dcfcd052202525698361a8bcb771ef76aa098": "sha256:ddf1f23108d1bc3bc4cd133a131dcfcd052202525698361a8bcb771ef76aa098",
+              "sha256:fd1ef73a5b4c63f542cfe9902be987297c477580314d363bdf5c9453f31b3ee7": "sha256:fd1ef73a5b4c63f542cfe9902be987297c477580314d363bdf5c9453f31b3ee7"
+            },
+            "unresolved": {},
+            "rejected": {},
+            "restriction_conflicts": {},
+            "history_id": "sha256:b6eede4f692f609a5cf00d73b340a9aba0a944f883c308a64e1b208ffc24f331"
+          },
+          "reserved_cash": "100",
+          "continuity_qualification": "INDEPENDENT_SNAPSHOT_NOT_A_CONTINUOUS_CAPITAL_CHAIN",
+          "R2_status": "NOT_IMPLEMENTED_REQUIRES_OUT_OF_SAMPLE_COMPARISON_WITH_R1",
+          "decision_id": "sha256:5f20be9cc0036864dfbee0347c6dd90ad0366992286dce17d7a81329efa46136"
+        }
+      },
+      "latest_decision_id": "sha256:5f20be9cc0036864dfbee0347c6dd90ad0366992286dce17d7a81329efa46136",
+      "latest_common_account_id": "sha256:8322bbf14a686deba2c683661b4fc7bbcfe1626b6f853f91e8fbcce0722a3b99",
+      "origin_common_account_id": "sha256:8322bbf14a686deba2c683661b4fc7bbcfe1626b6f853f91e8fbcce0722a3b99",
+      "opening_unavailable_shares": {
+        "A": "0",
+        "B": "0",
+        "C": "0"
+      },
+      "reviewed_evidence_tokens": [
+        "fixture:event_id:A-event",
+        "fixture:event_id:B-event",
+        "fixture:event_id:C-event",
+        "fixture:formation_id:A-formation",
+        "fixture:formation_id:B-formation",
+        "fixture:formation_id:C-formation",
+        "fixture:volume_bar_id:A-bar",
+        "fixture:volume_bar_id:B-bar",
+        "fixture:volume_bar_id:C-bar"
+      ],
+      "fill_order_ids": {
+        "r1-A-fill-0": "r1-A"
+      },
+      "ledger_close_proof": {
+        "closes": {
+          "2026-01-05": {
+            "as_of": "2026-01-05T14:00:00+08:00",
+            "available_at": "2026-01-05T14:00:00+08:00",
+            "source_ids": [
+              "fixture"
+            ]
+          },
+          "2026-01-06": {
+            "as_of": "2026-01-06T16:00:00+08:00",
+            "available_at": "2026-01-06T16:00:00+08:00",
+            "source_ids": [
+              "fixture"
+            ]
+          },
+          "2026-01-07": {
+            "as_of": "2026-01-07T16:00:00+08:00",
+            "available_at": "2026-01-07T16:00:00+08:00",
+            "source_ids": [
+              "fixture"
+            ]
+          },
+          "2026-01-08": {
+            "as_of": "2026-01-08T16:00:00+08:00",
+            "available_at": "2026-01-08T16:00:00+08:00",
+            "source_ids": [
+              "fixture"
+            ]
+          },
+          "2026-01-09": {
+            "as_of": "2026-01-09T16:00:00+08:00",
+            "available_at": "2026-01-09T16:00:00+08:00",
+            "source_ids": [
+              "fixture"
+            ]
+          },
+          "2026-01-10": {
+            "as_of": "2026-01-10T16:00:00+08:00",
+            "available_at": "2026-01-10T16:00:00+08:00",
+            "source_ids": [
+              "fixture"
+            ]
+          },
+          "2026-01-11": {
+            "as_of": "2026-01-11T16:00:00+08:00",
+            "available_at": "2026-01-11T16:00:00+08:00",
+            "source_ids": [
+              "fixture"
+            ]
+          },
+          "2026-01-12": {
+            "as_of": "2026-01-12T16:00:00+08:00",
+            "available_at": "2026-01-12T16:00:00+08:00",
+            "source_ids": [
+              "fixture"
+            ]
+          }
+        },
+        "qualification": "DECLARED_SYNTHETIC_DAY_END_NOT_REAL_MARKET_OR_BROKER_PROOF",
+        "schema": "synthetic-ledger-close-clock/0.1"
+      },
+      "fact_sources": {
+        "sha256:5f20be9cc0036864dfbee0347c6dd90ad0366992286dce17d7a81329efa46136": {
+          "schema": "capital-fact-declarations/0.1",
+          "decision_at": "2026-01-05T15:00:00+08:00",
+          "data_cutoff": "2026-01-05T14:00:00+08:00",
+          "records": [
+            {
+              "identity": {
+                "code": "A",
+                "kind": "REFERENCE",
+                "id": "REFERENCE@2026-01-05T14:00:00+08:00|2026-01-05T14:00:00+08:00",
+                "source_id": "fixture",
+                "basis_id": "RAW:fixture:A",
+                "adjustment_version": "RAW:synthetic/1"
+              },
+              "fact": {
+                "adjustment_version": "RAW:synthetic/1",
+                "available_at": "2026-01-05T14:00:00+08:00",
+                "basis_id": "RAW:fixture:A",
+                "occurred_at": "2026-01-05T14:00:00+08:00",
+                "price": "15",
+                "qualification": "SYNTHETIC_NOT_MARKET_AUTHORITY",
+                "reference_role": "FORMAL_RESISTANCE",
+                "source_id": "fixture",
+                "validity": {
+                  "available_at": "2026-01-05T14:00:00+08:00",
+                  "invalidation": null,
+                  "qualification": "EXPLICIT_SYNTHETIC_ONGOING_REQUIRES_REVIEW",
+                  "schema": "capital-fact-validity/0.1",
+                  "source_ids": [
+                    "fixture"
+                  ],
+                  "valid_from": "2026-01-05T14:00:00+08:00",
+                  "valid_until": null
+                }
+              }
+            },
+            {
+              "identity": {
+                "code": "A",
+                "kind": "ENTRY",
+                "id": "ENTRY@2026-01-05T14:00:00+08:00|",
+                "source_id": "fixture",
+                "basis_id": "RAW:fixture:A",
+                "adjustment_version": "RAW:synthetic/1"
+              },
+              "fact": {
+                "adjustment_version": "RAW:synthetic/1",
+                "available_at": "2026-01-05T14:00:00+08:00",
+                "basis_id": "RAW:fixture:A",
+                "invalidation_risk": "SCENARIO_LOSS_NOT_STOP_FILL",
+                "liquidity_shares": "500",
+                "position": "SYNTHETIC_POSITION",
+                "source_id": "fixture",
+                "validity": {
+                  "available_at": "2026-01-05T14:00:00+08:00",
+                  "invalidation": null,
+                  "qualification": "EXPLICIT_SYNTHETIC_ONGOING_REQUIRES_REVIEW",
+                  "schema": "capital-fact-validity/0.1",
+                  "source_ids": [
+                    "fixture"
+                  ],
+                  "valid_from": "2026-01-05T14:00:00+08:00",
+                  "valid_until": null
+                }
+              }
+            },
+            {
+              "identity": {
+                "code": "C",
+                "kind": "EVIDENCE",
+                "id": "C-event",
+                "source_id": "fixture",
+                "basis_id": "RAW:fixture:C",
+                "adjustment_version": "RAW:synthetic/1"
+              },
+              "fact": {
+                "adjustment_version": "RAW:synthetic/1",
+                "available_at": "2026-01-05T14:00:00+08:00",
+                "basis_id": "RAW:fixture:C",
+                "event_id": "C-event",
+                "feature": "price_volume",
+                "formation_id": "C-formation",
+                "id": "C-event",
+                "occurred_at": "2026-01-05T14:00:00+08:00",
+                "source_id": "fixture",
+                "stance": "support",
+                "validity": {
+                  "available_at": "2026-01-05T14:00:00+08:00",
+                  "invalidation": null,
+                  "qualification": "EXPLICIT_SYNTHETIC_ONGOING_REQUIRES_REVIEW",
+                  "schema": "capital-fact-validity/0.1",
+                  "source_ids": [
+                    "fixture"
+                  ],
+                  "valid_from": "2026-01-05T14:00:00+08:00",
+                  "valid_until": null
+                },
+                "value": "EXPLICIT_SYNTHETIC_BREAKOUT",
+                "volume_bar_id": "C-bar"
+              }
+            },
+            {
+              "identity": {
+                "code": "B",
+                "kind": "REFERENCE",
+                "id": "REFERENCE@2026-01-05T14:00:00+08:00|2026-01-05T14:00:00+08:00",
+                "source_id": "fixture",
+                "basis_id": "RAW:fixture:B",
+                "adjustment_version": "RAW:synthetic/1"
+              },
+              "fact": {
+                "adjustment_version": "RAW:synthetic/1",
+                "available_at": "2026-01-05T14:00:00+08:00",
+                "basis_id": "RAW:fixture:B",
+                "occurred_at": "2026-01-05T14:00:00+08:00",
+                "price": "30",
+                "qualification": "SYNTHETIC_NOT_MARKET_AUTHORITY",
+                "reference_role": "FORMAL_RESISTANCE",
+                "source_id": "fixture",
+                "validity": {
+                  "available_at": "2026-01-05T14:00:00+08:00",
+                  "invalidation": null,
+                  "qualification": "EXPLICIT_SYNTHETIC_ONGOING_REQUIRES_REVIEW",
+                  "schema": "capital-fact-validity/0.1",
+                  "source_ids": [
+                    "fixture"
+                  ],
+                  "valid_from": "2026-01-05T14:00:00+08:00",
+                  "valid_until": null
+                }
+              }
+            },
+            {
+              "identity": {
+                "code": "C",
+                "kind": "ENTRY",
+                "id": "ENTRY@2026-01-05T14:00:00+08:00|",
+                "source_id": "fixture",
+                "basis_id": "RAW:fixture:C",
+                "adjustment_version": "RAW:synthetic/1"
+              },
+              "fact": {
+                "adjustment_version": "RAW:synthetic/1",
+                "available_at": "2026-01-05T14:00:00+08:00",
+                "basis_id": "RAW:fixture:C",
+                "invalidation_risk": "SCENARIO_LOSS_NOT_STOP_FILL",
+                "liquidity_shares": "500",
+                "position": "SYNTHETIC_POSITION",
+                "source_id": "fixture",
+                "validity": {
+                  "available_at": "2026-01-05T14:00:00+08:00",
+                  "invalidation": null,
+                  "qualification": "EXPLICIT_SYNTHETIC_ONGOING_REQUIRES_REVIEW",
+                  "schema": "capital-fact-validity/0.1",
+                  "source_ids": [
+                    "fixture"
+                  ],
+                  "valid_from": "2026-01-05T14:00:00+08:00",
+                  "valid_until": null
+                }
+              }
+            },
+            {
+              "identity": {
+                "code": "A",
+                "kind": "EVIDENCE",
+                "id": "A-event",
+                "source_id": "fixture",
+                "basis_id": "RAW:fixture:A",
+                "adjustment_version": "RAW:synthetic/1"
+              },
+              "fact": {
+                "adjustment_version": "RAW:synthetic/1",
+                "available_at": "2026-01-05T14:00:00+08:00",
+                "basis_id": "RAW:fixture:A",
+                "event_id": "A-event",
+                "feature": "price_volume",
+                "formation_id": "A-formation",
+                "id": "A-event",
+                "occurred_at": "2026-01-05T14:00:00+08:00",
+                "source_id": "fixture",
+                "stance": "support",
+                "validity": {
+                  "available_at": "2026-01-05T14:00:00+08:00",
+                  "invalidation": null,
+                  "qualification": "EXPLICIT_SYNTHETIC_ONGOING_REQUIRES_REVIEW",
+                  "schema": "capital-fact-validity/0.1",
+                  "source_ids": [
+                    "fixture"
+                  ],
+                  "valid_from": "2026-01-05T14:00:00+08:00",
+                  "valid_until": null
+                },
+                "value": "EXPLICIT_SYNTHETIC_BREAKOUT",
+                "volume_bar_id": "A-bar"
+              }
+            },
+            {
+              "identity": {
+                "code": "B",
+                "kind": "ENTRY",
+                "id": "ENTRY@2026-01-05T14:00:00+08:00|",
+                "source_id": "fixture",
+                "basis_id": "RAW:fixture:B",
+                "adjustment_version": "RAW:synthetic/1"
+              },
+              "fact": {
+                "adjustment_version": "RAW:synthetic/1",
+                "available_at": "2026-01-05T14:00:00+08:00",
+                "basis_id": "RAW:fixture:B",
+                "invalidation_risk": "SCENARIO_LOSS_NOT_STOP_FILL",
+                "liquidity_shares": "500",
+                "position": "SYNTHETIC_POSITION",
+                "source_id": "fixture",
+                "validity": {
+                  "available_at": "2026-01-05T14:00:00+08:00",
+                  "invalidation": null,
+                  "qualification": "EXPLICIT_SYNTHETIC_ONGOING_REQUIRES_REVIEW",
+                  "schema": "capital-fact-validity/0.1",
+                  "source_ids": [
+                    "fixture"
+                  ],
+                  "valid_from": "2026-01-05T14:00:00+08:00",
+                  "valid_until": null
+                }
+              }
+            },
+            {
+              "identity": {
+                "code": "C",
+                "kind": "REFERENCE",
+                "id": "REFERENCE@2026-01-05T14:00:00+08:00|2026-01-05T14:00:00+08:00",
+                "source_id": "fixture",
+                "basis_id": "RAW:fixture:C",
+                "adjustment_version": "RAW:synthetic/1"
+              },
+              "fact": {
+                "adjustment_version": "RAW:synthetic/1",
+                "available_at": "2026-01-05T14:00:00+08:00",
+                "basis_id": "RAW:fixture:C",
+                "occurred_at": "2026-01-05T14:00:00+08:00",
+                "price": "35",
+                "qualification": "SYNTHETIC_NOT_MARKET_AUTHORITY",
+                "reference_role": "FORMAL_RESISTANCE",
+                "source_id": "fixture",
+                "validity": {
+                  "available_at": "2026-01-05T14:00:00+08:00",
+                  "invalidation": null,
+                  "qualification": "EXPLICIT_SYNTHETIC_ONGOING_REQUIRES_REVIEW",
+                  "schema": "capital-fact-validity/0.1",
+                  "source_ids": [
+                    "fixture"
+                  ],
+                  "valid_from": "2026-01-05T14:00:00+08:00",
+                  "valid_until": null
+                }
+              }
+            },
+            {
+              "identity": {
+                "code": "B",
+                "kind": "EVIDENCE",
+                "id": "B-event",
+                "source_id": "fixture",
+                "basis_id": "RAW:fixture:B",
+                "adjustment_version": "RAW:synthetic/1"
+              },
+              "fact": {
+                "adjustment_version": "RAW:synthetic/1",
+                "available_at": "2026-01-05T14:00:00+08:00",
+                "basis_id": "RAW:fixture:B",
+                "event_id": "B-event",
+                "feature": "price_volume",
+                "formation_id": "B-formation",
+                "id": "B-event",
+                "occurred_at": "2026-01-05T14:00:00+08:00",
+                "source_id": "fixture",
+                "stance": "support",
+                "validity": {
+                  "available_at": "2026-01-05T14:00:00+08:00",
+                  "invalidation": null,
+                  "qualification": "EXPLICIT_SYNTHETIC_ONGOING_REQUIRES_REVIEW",
+                  "schema": "capital-fact-validity/0.1",
+                  "source_ids": [
+                    "fixture"
+                  ],
+                  "valid_from": "2026-01-05T14:00:00+08:00",
+                  "valid_until": null
+                },
+                "value": "EXPLICIT_SYNTHETIC_BREAKOUT",
+                "volume_bar_id": "B-bar"
+              }
+            }
+          ]
+        }
+      },
+      "reassessment_attempts": [],
+      "observation_only": false,
+      "selected_plan_feasible": true,
+      "risk_observations": [
+        {
+          "at": "2026-01-06T09:00:00+08:00",
+          "kind": "OBSERVED_ACCOUNT_AND_LIVE_ORDERS",
+          "actual_violations": {
+            "single:A": "0",
+            "single:B": "0",
+            "single:C": "0",
+            "group:original": "0",
+            "group:new": "0",
+            "group:other": "0",
+            "account_stress": "0"
+          },
+          "joint_possible_fill_violations": {
+            "single:A": "0",
+            "single:B": "0",
+            "single:C": "0",
+            "group:original": "0",
+            "group:new": "0",
+            "group:other": "0",
+            "account_stress": "0"
+          },
+          "joint_group_values": {
+            "original": "1100",
+            "new": "0",
+            "other": "50"
+          },
+          "stale_exposure_marks": [
+            "C"
+          ],
+          "marks": {
+            "A": {
+              "price": "10",
+              "at": "2026-01-06T09:00:00+08:00",
+              "source_id": "fixture",
+              "basis_id": "RAW:fixture:A"
+            },
+            "B": {
+              "price": "20",
+              "at": "2026-01-05T14:00:00+08:00",
+              "source_id": "fixture",
+              "basis_id": "RAW:fixture:B"
+            },
+            "C": {
+              "price": "25",
+              "at": "2026-01-05T14:00:00+08:00",
+              "source_id": "fixture",
+              "basis_id": "RAW:fixture:C"
+            }
+          },
+          "rights": [
+            {
+              "code": "A",
+              "delivery_date": "2026-01-09",
+              "id": "opening-shares",
+              "shares": "10",
+              "source_ids": [
+                "fixture"
+              ],
+              "tradable_date": "2026-01-12"
+            }
+          ],
+          "qualification": "DECLARED_SCENARIOS_AND_OBSERVED_MARKS_NOT_MAXIMUM_LOSS_GUARANTEE"
+        },
+        {
+          "at": "2026-01-06T09:00:30+08:00",
+          "kind": "OBSERVED_ACCOUNT_AND_LIVE_ORDERS",
+          "actual_violations": {
+            "single:A": "0",
+            "single:B": "0",
+            "single:C": "0",
+            "group:original": "0",
+            "group:new": "0",
+            "group:other": "0",
+            "account_stress": "0"
+          },
+          "joint_possible_fill_violations": {
+            "single:A": "0",
+            "single:B": "0",
+            "single:C": "0",
+            "group:original": "0",
+            "group:new": "0",
+            "group:other": "0",
+            "account_stress": "0"
+          },
+          "joint_group_values": {
+            "original": "600",
+            "new": "0",
+            "other": "50"
+          },
+          "stale_exposure_marks": [],
+          "marks": {
+            "A": {
+              "price": "10",
+              "at": "2026-01-06T09:00:00+08:00",
+              "source_id": "fixture",
+              "basis_id": "RAW:fixture:A"
+            },
+            "B": {
+              "price": "20",
+              "at": "2026-01-05T14:00:00+08:00",
+              "source_id": "fixture",
+              "basis_id": "RAW:fixture:B"
+            },
+            "C": {
+              "price": "25",
+              "at": "2026-01-06T09:00:30+08:00",
+              "source_id": "fixture",
+              "basis_id": "RAW:fixture:C"
+            }
+          },
+          "rights": [
+            {
+              "code": "A",
+              "delivery_date": "2026-01-09",
+              "id": "opening-shares",
+              "shares": "10",
+              "source_ids": [
+                "fixture"
+              ],
+              "tradable_date": "2026-01-12"
+            }
+          ],
+          "qualification": "DECLARED_SCENARIOS_AND_OBSERVED_MARKS_NOT_MAXIMUM_LOSS_GUARANTEE"
+        },
+        {
+          "at": "2026-01-06T09:01:00+08:00",
+          "kind": "OBSERVED_ACCOUNT_AND_LIVE_ORDERS",
+          "actual_violations": {
+            "single:A": "0",
+            "single:B": "0",
+            "single:C": "0",
+            "group:original": "0",
+            "group:new": "0",
+            "group:other": "0",
+            "account_stress": "0"
+          },
+          "joint_possible_fill_violations": {
+            "single:A": "0",
+            "single:B": "0",
+            "single:C": "0",
+            "group:original": "0",
+            "group:new": "0",
+            "group:other": "0",
+            "account_stress": "0"
+          },
+          "joint_group_values": {
+            "original": "600",
+            "new": "0",
+            "other": "50"
+          },
+          "stale_exposure_marks": [],
+          "marks": {
+            "A": {
+              "price": "10",
+              "at": "2026-01-06T09:00:00+08:00",
+              "source_id": "fixture",
+              "basis_id": "RAW:fixture:A"
+            },
+            "B": {
+              "price": "20",
+              "at": "2026-01-06T09:01:00+08:00",
+              "source_id": "fixture",
+              "basis_id": "RAW:fixture:B"
+            },
+            "C": {
+              "price": "25",
+              "at": "2026-01-06T09:00:30+08:00",
+              "source_id": "fixture",
+              "basis_id": "RAW:fixture:C"
+            }
+          },
+          "rights": [
+            {
+              "code": "A",
+              "delivery_date": "2026-01-09",
+              "id": "opening-shares",
+              "shares": "10",
+              "source_ids": [
+                "fixture"
+              ],
+              "tradable_date": "2026-01-12"
+            }
+          ],
+          "qualification": "DECLARED_SCENARIOS_AND_OBSERVED_MARKS_NOT_MAXIMUM_LOSS_GUARANTEE"
+        }
+      ],
+      "reassessments": [],
+      "data_qualified": false,
+      "execution_model_qualified": false,
+      "historical_signal_eligible": false,
+      "policy_authorized": false,
+      "live_execution_authorized": false,
+      "result_id": "sha256:5d73906f9805ec9839f354d7d3383ed95d06d3a309956cb6fb78b86f7149b75f"
+    },
+    "prefix_checkpoint": {
+      "schema": "capital-account-checkpoint/0.7",
+      "checkpoint_id": "sha256:dbf91618757c2cd7def2481a97c3605f934e8b850b2ebd120fb1a9f992a418e8",
+      "state_id": "sha256:fc037e4a1e62a8b4958ef25e6c14bc9d2f9c12e71347143787fdd110d1f2eaa0",
+      "state": {
+        "through_at": "2026-01-08T16:00:00+08:00",
+        "ledger_version": "rotation-action-ledger/0.1",
+        "row": {
+          "date": "2026-01-08",
+          "settled_cash": "596.500",
+          "available_cash_strict": "596.500",
+          "shares": {
+            "A": "50",
+            "B": "0",
+            "C": "2"
+          },
+          "cash_receivable": "80",
+          "purchase_payable": "0",
+          "cash_claims": [
+            {
+              "amount": "80",
+              "id": "opening-cash",
+              "pay_date": "2026-01-12",
+              "source_ids": [
+                "fixture"
+              ],
+              "kind": "OPENING_RECEIVABLE"
+            }
+          ],
+          "share_receivables": [
+            {
+              "code": "A",
+              "delivery_date": "2026-01-09",
+              "id": "opening-shares",
+              "shares": "10",
+              "source_ids": [
+                "fixture"
+              ],
+              "tradable_date": "2026-01-12"
+            }
+          ],
+          "net_accrual_equity": "1326.500",
+          "marks": {
+            "A": {
+              "value": "10",
+              "source_date": "2026-01-08",
+              "carried_nontrading_mark": false,
+              "source_id": "fixture",
+              "basis_id": "RAW:fixture:A",
+              "quote_source_ids": [
+                "fixture"
+              ]
+            },
+            "B": {
+              "value": "20",
+              "source_date": "2026-01-08",
+              "carried_nontrading_mark": false,
+              "source_id": "fixture",
+              "basis_id": "RAW:fixture:B",
+              "quote_source_ids": [
+                "fixture"
+              ]
+            },
+            "C": {
+              "value": "25",
+              "source_date": "2026-01-08",
+              "carried_nontrading_mark": false,
+              "source_id": "fixture",
+              "basis_id": "RAW:fixture:C",
+              "quote_source_ids": [
+                "fixture"
+              ]
+            }
+          }
+        },
+        "accepted_fills": [
+          {
+            "id": "r1-A-fill-0",
+            "code": "A",
+            "side": "SELL",
+            "shares": "50",
+            "price": "9.990",
+            "fee": "1",
+            "tax": "2",
+            "date": "2026-01-06",
+            "decision_date": "2026-01-05",
+            "settlement_date": "2026-01-08",
+            "source_ids": [
+              "fixture"
+            ]
+          }
+        ],
+        "unfilled_orders": [
+          {
+            "order": {
+              "id": "r1-B",
+              "code": "B",
+              "side": "BUY",
+              "shares": "20",
+              "limit_price": "20.03",
+              "decision_at": "2026-01-05T15:00:00+08:00",
+              "submitted_at": "2026-01-06T08:00:00+08:00",
+              "expires_at": "2026-01-12T16:00:00+08:00"
+            },
+            "state": {
+              "remaining": "20",
+              "status": "WAITING_REASSESSMENT",
+              "reserved_cash": "0",
+              "requires_reassessment": true,
+              "active_decision_at": "2026-01-05T15:00:00+08:00",
+              "active_decision_id": "sha256:5f20be9cc0036864dfbee0347c6dd90ad0366992286dce17d7a81329efa46136"
+            }
+          }
+        ],
+        "order_states": {
+          "r1-A": {
+            "remaining": "0",
+            "status": "FILLED",
+            "reserved_cash": "0",
+            "requires_reassessment": false,
+            "active_decision_at": "2026-01-05T15:00:00+08:00",
+            "active_decision_id": "sha256:5f20be9cc0036864dfbee0347c6dd90ad0366992286dce17d7a81329efa46136"
+          },
+          "r1-B": {
+            "remaining": "20",
+            "status": "WAITING_REASSESSMENT",
+            "reserved_cash": "0",
+            "requires_reassessment": true,
+            "active_decision_at": "2026-01-05T15:00:00+08:00",
+            "active_decision_id": "sha256:5f20be9cc0036864dfbee0347c6dd90ad0366992286dce17d7a81329efa46136"
+          }
+        },
+        "origin_initial_capital": "1330",
+        "external_flow": "0",
+        "ledger_close": {
+          "as_of": "2026-01-08T16:00:00+08:00",
+          "available_at": "2026-01-08T16:00:00+08:00",
+          "source_ids": [
+            "fixture"
+          ]
+        },
+        "opening_unavailable_shares": {
+          "A": "0",
+          "B": "0",
+          "C": "0"
+        },
+        "general_reserved_cash": "100",
+        "latest_decision_id": "sha256:5f20be9cc0036864dfbee0347c6dd90ad0366992286dce17d7a81329efa46136",
+        "latest_common_account_id": "sha256:8322bbf14a686deba2c683661b4fc7bbcfe1626b6f853f91e8fbcce0722a3b99",
+        "reviewed_evidence_tokens": [
+          "fixture:event_id:A-event",
+          "fixture:event_id:B-event",
+          "fixture:event_id:C-event",
+          "fixture:formation_id:A-formation",
+          "fixture:formation_id:B-formation",
+          "fixture:formation_id:C-formation",
+          "fixture:volume_bar_id:A-bar",
+          "fixture:volume_bar_id:B-bar",
+          "fixture:volume_bar_id:C-bar"
+        ],
+        "fact_history": {
+          "schema": "capital-fact-history/0.3",
+          "observations": [
+            {
+              "observed_at": "2026-01-05T15:00:00+08:00",
+              "identity": {
+                "code": "A",
+                "kind": "REFERENCE",
+                "id": "REFERENCE@2026-01-05T14:00:00+08:00|2026-01-05T14:00:00+08:00",
+                "source_id": "fixture",
+                "basis_id": "RAW:fixture:A",
+                "adjustment_version": "RAW:synthetic/1"
+              },
+              "fact": {
+                "adjustment_version": "RAW:synthetic/1",
+                "available_at": "2026-01-05T14:00:00+08:00",
+                "basis_id": "RAW:fixture:A",
+                "occurred_at": "2026-01-05T14:00:00+08:00",
+                "price": "15",
+                "qualification": "SYNTHETIC_NOT_MARKET_AUTHORITY",
+                "reference_role": "FORMAL_RESISTANCE",
+                "source_id": "fixture",
+                "validity": {
+                  "available_at": "2026-01-05T14:00:00+08:00",
+                  "invalidation": null,
+                  "qualification": "EXPLICIT_SYNTHETIC_ONGOING_REQUIRES_REVIEW",
+                  "schema": "capital-fact-validity/0.1",
+                  "source_ids": [
+                    "fixture"
+                  ],
+                  "valid_from": "2026-01-05T14:00:00+08:00",
+                  "valid_until": null
+                }
+              },
+              "content_id": "sha256:277e0798b6a6d77f588a89ccb88ee9af375c643e2c037171d13cbf71f833eeca",
+              "reasons": []
+            },
+            {
+              "observed_at": "2026-01-05T15:00:00+08:00",
+              "identity": {
+                "code": "A",
+                "kind": "ENTRY",
+                "id": "ENTRY@2026-01-05T14:00:00+08:00|",
+                "source_id": "fixture",
+                "basis_id": "RAW:fixture:A",
+                "adjustment_version": "RAW:synthetic/1"
+              },
+              "fact": {
+                "adjustment_version": "RAW:synthetic/1",
+                "available_at": "2026-01-05T14:00:00+08:00",
+                "basis_id": "RAW:fixture:A",
+                "invalidation_risk": "SCENARIO_LOSS_NOT_STOP_FILL",
+                "liquidity_shares": "500",
+                "position": "SYNTHETIC_POSITION",
+                "source_id": "fixture",
+                "validity": {
+                  "available_at": "2026-01-05T14:00:00+08:00",
+                  "invalidation": null,
+                  "qualification": "EXPLICIT_SYNTHETIC_ONGOING_REQUIRES_REVIEW",
+                  "schema": "capital-fact-validity/0.1",
+                  "source_ids": [
+                    "fixture"
+                  ],
+                  "valid_from": "2026-01-05T14:00:00+08:00",
+                  "valid_until": null
+                }
+              },
+              "content_id": "sha256:91e4c8601040672a8d977639394033f618360231e0f3a5e09ef1c213dc2684a8",
+              "reasons": []
+            },
+            {
+              "observed_at": "2026-01-05T15:00:00+08:00",
+              "identity": {
+                "code": "C",
+                "kind": "EVIDENCE",
+                "id": "C-event",
+                "source_id": "fixture",
+                "basis_id": "RAW:fixture:C",
+                "adjustment_version": "RAW:synthetic/1"
+              },
+              "fact": {
+                "adjustment_version": "RAW:synthetic/1",
+                "available_at": "2026-01-05T14:00:00+08:00",
+                "basis_id": "RAW:fixture:C",
+                "event_id": "C-event",
+                "feature": "price_volume",
+                "formation_id": "C-formation",
+                "id": "C-event",
+                "occurred_at": "2026-01-05T14:00:00+08:00",
+                "source_id": "fixture",
+                "stance": "support",
+                "validity": {
+                  "available_at": "2026-01-05T14:00:00+08:00",
+                  "invalidation": null,
+                  "qualification": "EXPLICIT_SYNTHETIC_ONGOING_REQUIRES_REVIEW",
+                  "schema": "capital-fact-validity/0.1",
+                  "source_ids": [
+                    "fixture"
+                  ],
+                  "valid_from": "2026-01-05T14:00:00+08:00",
+                  "valid_until": null
+                },
+                "value": "EXPLICIT_SYNTHETIC_BREAKOUT",
+                "volume_bar_id": "C-bar"
+              },
+              "content_id": "sha256:0c474ee902fb50b5fb1a50dcad2bb0f680940e8c3b731d42c2c5bb67720e2132",
+              "reasons": []
+            },
+            {
+              "observed_at": "2026-01-05T15:00:00+08:00",
+              "identity": {
+                "code": "B",
+                "kind": "REFERENCE",
+                "id": "REFERENCE@2026-01-05T14:00:00+08:00|2026-01-05T14:00:00+08:00",
+                "source_id": "fixture",
+                "basis_id": "RAW:fixture:B",
+                "adjustment_version": "RAW:synthetic/1"
+              },
+              "fact": {
+                "adjustment_version": "RAW:synthetic/1",
+                "available_at": "2026-01-05T14:00:00+08:00",
+                "basis_id": "RAW:fixture:B",
+                "occurred_at": "2026-01-05T14:00:00+08:00",
+                "price": "30",
+                "qualification": "SYNTHETIC_NOT_MARKET_AUTHORITY",
+                "reference_role": "FORMAL_RESISTANCE",
+                "source_id": "fixture",
+                "validity": {
+                  "available_at": "2026-01-05T14:00:00+08:00",
+                  "invalidation": null,
+                  "qualification": "EXPLICIT_SYNTHETIC_ONGOING_REQUIRES_REVIEW",
+                  "schema": "capital-fact-validity/0.1",
+                  "source_ids": [
+                    "fixture"
+                  ],
+                  "valid_from": "2026-01-05T14:00:00+08:00",
+                  "valid_until": null
+                }
+              },
+              "content_id": "sha256:d4b0c256f37238872205fa7b9f694dd103cc2632e182054e812ce78004365113",
+              "reasons": []
+            },
+            {
+              "observed_at": "2026-01-05T15:00:00+08:00",
+              "identity": {
+                "code": "C",
+                "kind": "ENTRY",
+                "id": "ENTRY@2026-01-05T14:00:00+08:00|",
+                "source_id": "fixture",
+                "basis_id": "RAW:fixture:C",
+                "adjustment_version": "RAW:synthetic/1"
+              },
+              "fact": {
+                "adjustment_version": "RAW:synthetic/1",
+                "available_at": "2026-01-05T14:00:00+08:00",
+                "basis_id": "RAW:fixture:C",
+                "invalidation_risk": "SCENARIO_LOSS_NOT_STOP_FILL",
+                "liquidity_shares": "500",
+                "position": "SYNTHETIC_POSITION",
+                "source_id": "fixture",
+                "validity": {
+                  "available_at": "2026-01-05T14:00:00+08:00",
+                  "invalidation": null,
+                  "qualification": "EXPLICIT_SYNTHETIC_ONGOING_REQUIRES_REVIEW",
+                  "schema": "capital-fact-validity/0.1",
+                  "source_ids": [
+                    "fixture"
+                  ],
+                  "valid_from": "2026-01-05T14:00:00+08:00",
+                  "valid_until": null
+                }
+              },
+              "content_id": "sha256:93985a0b01d730692ffa230c658d20d454996558d206c1874afaf48f6c328a5e",
+              "reasons": []
+            },
+            {
+              "observed_at": "2026-01-05T15:00:00+08:00",
+              "identity": {
+                "code": "A",
+                "kind": "EVIDENCE",
+                "id": "A-event",
+                "source_id": "fixture",
+                "basis_id": "RAW:fixture:A",
+                "adjustment_version": "RAW:synthetic/1"
+              },
+              "fact": {
+                "adjustment_version": "RAW:synthetic/1",
+                "available_at": "2026-01-05T14:00:00+08:00",
+                "basis_id": "RAW:fixture:A",
+                "event_id": "A-event",
+                "feature": "price_volume",
+                "formation_id": "A-formation",
+                "id": "A-event",
+                "occurred_at": "2026-01-05T14:00:00+08:00",
+                "source_id": "fixture",
+                "stance": "support",
+                "validity": {
+                  "available_at": "2026-01-05T14:00:00+08:00",
+                  "invalidation": null,
+                  "qualification": "EXPLICIT_SYNTHETIC_ONGOING_REQUIRES_REVIEW",
+                  "schema": "capital-fact-validity/0.1",
+                  "source_ids": [
+                    "fixture"
+                  ],
+                  "valid_from": "2026-01-05T14:00:00+08:00",
+                  "valid_until": null
+                },
+                "value": "EXPLICIT_SYNTHETIC_BREAKOUT",
+                "volume_bar_id": "A-bar"
+              },
+              "content_id": "sha256:5b2dc972e222f6cdaa18b978ab18f4fbecc04a1158fd7ae0676ae116338d4809",
+              "reasons": []
+            },
+            {
+              "observed_at": "2026-01-05T15:00:00+08:00",
+              "identity": {
+                "code": "B",
+                "kind": "ENTRY",
+                "id": "ENTRY@2026-01-05T14:00:00+08:00|",
+                "source_id": "fixture",
+                "basis_id": "RAW:fixture:B",
+                "adjustment_version": "RAW:synthetic/1"
+              },
+              "fact": {
+                "adjustment_version": "RAW:synthetic/1",
+                "available_at": "2026-01-05T14:00:00+08:00",
+                "basis_id": "RAW:fixture:B",
+                "invalidation_risk": "SCENARIO_LOSS_NOT_STOP_FILL",
+                "liquidity_shares": "500",
+                "position": "SYNTHETIC_POSITION",
+                "source_id": "fixture",
+                "validity": {
+                  "available_at": "2026-01-05T14:00:00+08:00",
+                  "invalidation": null,
+                  "qualification": "EXPLICIT_SYNTHETIC_ONGOING_REQUIRES_REVIEW",
+                  "schema": "capital-fact-validity/0.1",
+                  "source_ids": [
+                    "fixture"
+                  ],
+                  "valid_from": "2026-01-05T14:00:00+08:00",
+                  "valid_until": null
+                }
+              },
+              "content_id": "sha256:b15a4e028ec12a0753f916419857a69f6c53d4adbbd5e9233b03a352fa84ec3f",
+              "reasons": []
+            },
+            {
+              "observed_at": "2026-01-05T15:00:00+08:00",
+              "identity": {
+                "code": "C",
+                "kind": "REFERENCE",
+                "id": "REFERENCE@2026-01-05T14:00:00+08:00|2026-01-05T14:00:00+08:00",
+                "source_id": "fixture",
+                "basis_id": "RAW:fixture:C",
+                "adjustment_version": "RAW:synthetic/1"
+              },
+              "fact": {
+                "adjustment_version": "RAW:synthetic/1",
+                "available_at": "2026-01-05T14:00:00+08:00",
+                "basis_id": "RAW:fixture:C",
+                "occurred_at": "2026-01-05T14:00:00+08:00",
+                "price": "35",
+                "qualification": "SYNTHETIC_NOT_MARKET_AUTHORITY",
+                "reference_role": "FORMAL_RESISTANCE",
+                "source_id": "fixture",
+                "validity": {
+                  "available_at": "2026-01-05T14:00:00+08:00",
+                  "invalidation": null,
+                  "qualification": "EXPLICIT_SYNTHETIC_ONGOING_REQUIRES_REVIEW",
+                  "schema": "capital-fact-validity/0.1",
+                  "source_ids": [
+                    "fixture"
+                  ],
+                  "valid_from": "2026-01-05T14:00:00+08:00",
+                  "valid_until": null
+                }
+              },
+              "content_id": "sha256:35376930b62fc64d075dd274f9af6a9b9fb6ab18d700f3b0eeb55a9b64c553d0",
+              "reasons": []
+            },
+            {
+              "observed_at": "2026-01-05T15:00:00+08:00",
+              "identity": {
+                "code": "B",
+                "kind": "EVIDENCE",
+                "id": "B-event",
+                "source_id": "fixture",
+                "basis_id": "RAW:fixture:B",
+                "adjustment_version": "RAW:synthetic/1"
+              },
+              "fact": {
+                "adjustment_version": "RAW:synthetic/1",
+                "available_at": "2026-01-05T14:00:00+08:00",
+                "basis_id": "RAW:fixture:B",
+                "event_id": "B-event",
+                "feature": "price_volume",
+                "formation_id": "B-formation",
+                "id": "B-event",
+                "occurred_at": "2026-01-05T14:00:00+08:00",
+                "source_id": "fixture",
+                "stance": "support",
+                "validity": {
+                  "available_at": "2026-01-05T14:00:00+08:00",
+                  "invalidation": null,
+                  "qualification": "EXPLICIT_SYNTHETIC_ONGOING_REQUIRES_REVIEW",
+                  "schema": "capital-fact-validity/0.1",
+                  "source_ids": [
+                    "fixture"
+                  ],
+                  "valid_from": "2026-01-05T14:00:00+08:00",
+                  "valid_until": null
+                },
+                "value": "EXPLICIT_SYNTHETIC_BREAKOUT",
+                "volume_bar_id": "B-bar"
+              },
+              "content_id": "sha256:fef3fe73168b59352d544a01525e143d7dd9ff670534cdf57cea181aa810e88b",
+              "reasons": []
+            }
+          ],
+          "roots": {
+            "sha256:10de129fb484373ddbcb61a17d3c7d5b91ed58299dff3177c867ed23fcd7db91": {
+              "identity": {
+                "code": "A",
+                "kind": "REFERENCE",
+                "id": "REFERENCE@2026-01-05T14:00:00+08:00|2026-01-05T14:00:00+08:00",
+                "source_id": "fixture",
+                "basis_id": "RAW:fixture:A",
+                "adjustment_version": "RAW:synthetic/1"
+              },
+              "fact": {
+                "adjustment_version": "RAW:synthetic/1",
+                "available_at": "2026-01-05T14:00:00+08:00",
+                "basis_id": "RAW:fixture:A",
+                "occurred_at": "2026-01-05T14:00:00+08:00",
+                "price": "15",
+                "qualification": "SYNTHETIC_NOT_MARKET_AUTHORITY",
+                "reference_role": "FORMAL_RESISTANCE",
+                "source_id": "fixture",
+                "validity": {
+                  "available_at": "2026-01-05T14:00:00+08:00",
+                  "invalidation": null,
+                  "qualification": "EXPLICIT_SYNTHETIC_ONGOING_REQUIRES_REVIEW",
+                  "schema": "capital-fact-validity/0.1",
+                  "source_ids": [
+                    "fixture"
+                  ],
+                  "valid_from": "2026-01-05T14:00:00+08:00",
+                  "valid_until": null
+                }
+              },
+              "content_ids": [
+                "sha256:277e0798b6a6d77f588a89ccb88ee9af375c643e2c037171d13cbf71f833eeca"
+              ]
+            },
+            "sha256:51ef272adcd802998b1c18701d2c8a92fc5fb5fe129e70bc7affb12ad91a2cda": {
+              "identity": {
+                "code": "A",
+                "kind": "ENTRY",
+                "id": "ENTRY@2026-01-05T14:00:00+08:00|",
+                "source_id": "fixture",
+                "basis_id": "RAW:fixture:A",
+                "adjustment_version": "RAW:synthetic/1"
+              },
+              "fact": {
+                "adjustment_version": "RAW:synthetic/1",
+                "available_at": "2026-01-05T14:00:00+08:00",
+                "basis_id": "RAW:fixture:A",
+                "invalidation_risk": "SCENARIO_LOSS_NOT_STOP_FILL",
+                "liquidity_shares": "500",
+                "position": "SYNTHETIC_POSITION",
+                "source_id": "fixture",
+                "validity": {
+                  "available_at": "2026-01-05T14:00:00+08:00",
+                  "invalidation": null,
+                  "qualification": "EXPLICIT_SYNTHETIC_ONGOING_REQUIRES_REVIEW",
+                  "schema": "capital-fact-validity/0.1",
+                  "source_ids": [
+                    "fixture"
+                  ],
+                  "valid_from": "2026-01-05T14:00:00+08:00",
+                  "valid_until": null
+                }
+              },
+              "content_ids": [
+                "sha256:91e4c8601040672a8d977639394033f618360231e0f3a5e09ef1c213dc2684a8"
+              ]
+            },
+            "sha256:56106859c2c8327ff7a684bfd8c49b57309afdf02e93319bb5f0b6106b802ce2": {
+              "identity": {
+                "code": "C",
+                "kind": "EVIDENCE",
+                "id": "C-event",
+                "source_id": "fixture",
+                "basis_id": "RAW:fixture:C",
+                "adjustment_version": "RAW:synthetic/1"
+              },
+              "fact": {
+                "adjustment_version": "RAW:synthetic/1",
+                "available_at": "2026-01-05T14:00:00+08:00",
+                "basis_id": "RAW:fixture:C",
+                "event_id": "C-event",
+                "feature": "price_volume",
+                "formation_id": "C-formation",
+                "id": "C-event",
+                "occurred_at": "2026-01-05T14:00:00+08:00",
+                "source_id": "fixture",
+                "stance": "support",
+                "validity": {
+                  "available_at": "2026-01-05T14:00:00+08:00",
+                  "invalidation": null,
+                  "qualification": "EXPLICIT_SYNTHETIC_ONGOING_REQUIRES_REVIEW",
+                  "schema": "capital-fact-validity/0.1",
+                  "source_ids": [
+                    "fixture"
+                  ],
+                  "valid_from": "2026-01-05T14:00:00+08:00",
+                  "valid_until": null
+                },
+                "value": "EXPLICIT_SYNTHETIC_BREAKOUT",
+                "volume_bar_id": "C-bar"
+              },
+              "content_ids": [
+                "sha256:0c474ee902fb50b5fb1a50dcad2bb0f680940e8c3b731d42c2c5bb67720e2132"
+              ]
+            },
+            "sha256:9d00e8d5def673727336c48f0d47a145e58e14a963164a8605aecb1268a799a0": {
+              "identity": {
+                "code": "B",
+                "kind": "REFERENCE",
+                "id": "REFERENCE@2026-01-05T14:00:00+08:00|2026-01-05T14:00:00+08:00",
+                "source_id": "fixture",
+                "basis_id": "RAW:fixture:B",
+                "adjustment_version": "RAW:synthetic/1"
+              },
+              "fact": {
+                "adjustment_version": "RAW:synthetic/1",
+                "available_at": "2026-01-05T14:00:00+08:00",
+                "basis_id": "RAW:fixture:B",
+                "occurred_at": "2026-01-05T14:00:00+08:00",
+                "price": "30",
+                "qualification": "SYNTHETIC_NOT_MARKET_AUTHORITY",
+                "reference_role": "FORMAL_RESISTANCE",
+                "source_id": "fixture",
+                "validity": {
+                  "available_at": "2026-01-05T14:00:00+08:00",
+                  "invalidation": null,
+                  "qualification": "EXPLICIT_SYNTHETIC_ONGOING_REQUIRES_REVIEW",
+                  "schema": "capital-fact-validity/0.1",
+                  "source_ids": [
+                    "fixture"
+                  ],
+                  "valid_from": "2026-01-05T14:00:00+08:00",
+                  "valid_until": null
+                }
+              },
+              "content_ids": [
+                "sha256:d4b0c256f37238872205fa7b9f694dd103cc2632e182054e812ce78004365113"
+              ]
+            },
+            "sha256:c9a3558252db2a68d424a317768fd4e38dd1892b30743275c2763911e11e9dd8": {
+              "identity": {
+                "code": "C",
+                "kind": "ENTRY",
+                "id": "ENTRY@2026-01-05T14:00:00+08:00|",
+                "source_id": "fixture",
+                "basis_id": "RAW:fixture:C",
+                "adjustment_version": "RAW:synthetic/1"
+              },
+              "fact": {
+                "adjustment_version": "RAW:synthetic/1",
+                "available_at": "2026-01-05T14:00:00+08:00",
+                "basis_id": "RAW:fixture:C",
+                "invalidation_risk": "SCENARIO_LOSS_NOT_STOP_FILL",
+                "liquidity_shares": "500",
+                "position": "SYNTHETIC_POSITION",
+                "source_id": "fixture",
+                "validity": {
+                  "available_at": "2026-01-05T14:00:00+08:00",
+                  "invalidation": null,
+                  "qualification": "EXPLICIT_SYNTHETIC_ONGOING_REQUIRES_REVIEW",
+                  "schema": "capital-fact-validity/0.1",
+                  "source_ids": [
+                    "fixture"
+                  ],
+                  "valid_from": "2026-01-05T14:00:00+08:00",
+                  "valid_until": null
+                }
+              },
+              "content_ids": [
+                "sha256:93985a0b01d730692ffa230c658d20d454996558d206c1874afaf48f6c328a5e"
+              ]
+            },
+            "sha256:cd07f8d6278ed165e7eb675f866abdc5fdfbcceb156315ebfcf555011c93ae5d": {
+              "identity": {
+                "code": "A",
+                "kind": "EVIDENCE",
+                "id": "A-event",
+                "source_id": "fixture",
+                "basis_id": "RAW:fixture:A",
+                "adjustment_version": "RAW:synthetic/1"
+              },
+              "fact": {
+                "adjustment_version": "RAW:synthetic/1",
+                "available_at": "2026-01-05T14:00:00+08:00",
+                "basis_id": "RAW:fixture:A",
+                "event_id": "A-event",
+                "feature": "price_volume",
+                "formation_id": "A-formation",
+                "id": "A-event",
+                "occurred_at": "2026-01-05T14:00:00+08:00",
+                "source_id": "fixture",
+                "stance": "support",
+                "validity": {
+                  "available_at": "2026-01-05T14:00:00+08:00",
+                  "invalidation": null,
+                  "qualification": "EXPLICIT_SYNTHETIC_ONGOING_REQUIRES_REVIEW",
+                  "schema": "capital-fact-validity/0.1",
+                  "source_ids": [
+                    "fixture"
+                  ],
+                  "valid_from": "2026-01-05T14:00:00+08:00",
+                  "valid_until": null
+                },
+                "value": "EXPLICIT_SYNTHETIC_BREAKOUT",
+                "volume_bar_id": "A-bar"
+              },
+              "content_ids": [
+                "sha256:5b2dc972e222f6cdaa18b978ab18f4fbecc04a1158fd7ae0676ae116338d4809"
+              ]
+            },
+            "sha256:d2defa741ff8d593ea70c3ea4b27504d450afea1de44821e2e4da842cb1ed49d": {
+              "identity": {
+                "code": "B",
+                "kind": "ENTRY",
+                "id": "ENTRY@2026-01-05T14:00:00+08:00|",
+                "source_id": "fixture",
+                "basis_id": "RAW:fixture:B",
+                "adjustment_version": "RAW:synthetic/1"
+              },
+              "fact": {
+                "adjustment_version": "RAW:synthetic/1",
+                "available_at": "2026-01-05T14:00:00+08:00",
+                "basis_id": "RAW:fixture:B",
+                "invalidation_risk": "SCENARIO_LOSS_NOT_STOP_FILL",
+                "liquidity_shares": "500",
+                "position": "SYNTHETIC_POSITION",
+                "source_id": "fixture",
+                "validity": {
+                  "available_at": "2026-01-05T14:00:00+08:00",
+                  "invalidation": null,
+                  "qualification": "EXPLICIT_SYNTHETIC_ONGOING_REQUIRES_REVIEW",
+                  "schema": "capital-fact-validity/0.1",
+                  "source_ids": [
+                    "fixture"
+                  ],
+                  "valid_from": "2026-01-05T14:00:00+08:00",
+                  "valid_until": null
+                }
+              },
+              "content_ids": [
+                "sha256:b15a4e028ec12a0753f916419857a69f6c53d4adbbd5e9233b03a352fa84ec3f"
+              ]
+            },
+            "sha256:ddf1f23108d1bc3bc4cd133a131dcfcd052202525698361a8bcb771ef76aa098": {
+              "identity": {
+                "code": "C",
+                "kind": "REFERENCE",
+                "id": "REFERENCE@2026-01-05T14:00:00+08:00|2026-01-05T14:00:00+08:00",
+                "source_id": "fixture",
+                "basis_id": "RAW:fixture:C",
+                "adjustment_version": "RAW:synthetic/1"
+              },
+              "fact": {
+                "adjustment_version": "RAW:synthetic/1",
+                "available_at": "2026-01-05T14:00:00+08:00",
+                "basis_id": "RAW:fixture:C",
+                "occurred_at": "2026-01-05T14:00:00+08:00",
+                "price": "35",
+                "qualification": "SYNTHETIC_NOT_MARKET_AUTHORITY",
+                "reference_role": "FORMAL_RESISTANCE",
+                "source_id": "fixture",
+                "validity": {
+                  "available_at": "2026-01-05T14:00:00+08:00",
+                  "invalidation": null,
+                  "qualification": "EXPLICIT_SYNTHETIC_ONGOING_REQUIRES_REVIEW",
+                  "schema": "capital-fact-validity/0.1",
+                  "source_ids": [
+                    "fixture"
+                  ],
+                  "valid_from": "2026-01-05T14:00:00+08:00",
+                  "valid_until": null
+                }
+              },
+              "content_ids": [
+                "sha256:35376930b62fc64d075dd274f9af6a9b9fb6ab18d700f3b0eeb55a9b64c553d0"
+              ]
+            },
+            "sha256:fd1ef73a5b4c63f542cfe9902be987297c477580314d363bdf5c9453f31b3ee7": {
+              "identity": {
+                "code": "B",
+                "kind": "EVIDENCE",
+                "id": "B-event",
+                "source_id": "fixture",
+                "basis_id": "RAW:fixture:B",
+                "adjustment_version": "RAW:synthetic/1"
+              },
+              "fact": {
+                "adjustment_version": "RAW:synthetic/1",
+                "available_at": "2026-01-05T14:00:00+08:00",
+                "basis_id": "RAW:fixture:B",
+                "event_id": "B-event",
+                "feature": "price_volume",
+                "formation_id": "B-formation",
+                "id": "B-event",
+                "occurred_at": "2026-01-05T14:00:00+08:00",
+                "source_id": "fixture",
+                "stance": "support",
+                "validity": {
+                  "available_at": "2026-01-05T14:00:00+08:00",
+                  "invalidation": null,
+                  "qualification": "EXPLICIT_SYNTHETIC_ONGOING_REQUIRES_REVIEW",
+                  "schema": "capital-fact-validity/0.1",
+                  "source_ids": [
+                    "fixture"
+                  ],
+                  "valid_from": "2026-01-05T14:00:00+08:00",
+                  "valid_until": null
+                },
+                "value": "EXPLICIT_SYNTHETIC_BREAKOUT",
+                "volume_bar_id": "B-bar"
+              },
+              "content_ids": [
+                "sha256:fef3fe73168b59352d544a01525e143d7dd9ff670534cdf57cea181aa810e88b"
+              ]
+            }
+          },
+          "aliases": {
+            "sha256:10de129fb484373ddbcb61a17d3c7d5b91ed58299dff3177c867ed23fcd7db91": "sha256:10de129fb484373ddbcb61a17d3c7d5b91ed58299dff3177c867ed23fcd7db91",
+            "sha256:51ef272adcd802998b1c18701d2c8a92fc5fb5fe129e70bc7affb12ad91a2cda": "sha256:51ef272adcd802998b1c18701d2c8a92fc5fb5fe129e70bc7affb12ad91a2cda",
+            "sha256:56106859c2c8327ff7a684bfd8c49b57309afdf02e93319bb5f0b6106b802ce2": "sha256:56106859c2c8327ff7a684bfd8c49b57309afdf02e93319bb5f0b6106b802ce2",
+            "sha256:9d00e8d5def673727336c48f0d47a145e58e14a963164a8605aecb1268a799a0": "sha256:9d00e8d5def673727336c48f0d47a145e58e14a963164a8605aecb1268a799a0",
+            "sha256:c9a3558252db2a68d424a317768fd4e38dd1892b30743275c2763911e11e9dd8": "sha256:c9a3558252db2a68d424a317768fd4e38dd1892b30743275c2763911e11e9dd8",
+            "sha256:cd07f8d6278ed165e7eb675f866abdc5fdfbcceb156315ebfcf555011c93ae5d": "sha256:cd07f8d6278ed165e7eb675f866abdc5fdfbcceb156315ebfcf555011c93ae5d",
+            "sha256:d2defa741ff8d593ea70c3ea4b27504d450afea1de44821e2e4da842cb1ed49d": "sha256:d2defa741ff8d593ea70c3ea4b27504d450afea1de44821e2e4da842cb1ed49d",
+            "sha256:ddf1f23108d1bc3bc4cd133a131dcfcd052202525698361a8bcb771ef76aa098": "sha256:ddf1f23108d1bc3bc4cd133a131dcfcd052202525698361a8bcb771ef76aa098",
+            "sha256:fd1ef73a5b4c63f542cfe9902be987297c477580314d363bdf5c9453f31b3ee7": "sha256:fd1ef73a5b4c63f542cfe9902be987297c477580314d363bdf5c9453f31b3ee7"
+          },
+          "unresolved": {},
+          "rejected": {},
+          "restriction_conflicts": {},
+          "history_id": "sha256:b6eede4f692f609a5cf00d73b340a9aba0a944f883c308a64e1b208ffc24f331"
+        }
+      }
+    },
+    "original_approval": null,
+    "review_request": null,
+    "review_decision": null,
+    "execution_job": null,
+    "execution": null,
+    "checkpoint": null,
+    "original_replay_status": "COMPLETED_PROVIDED_ROUNDS",
+    "numeric_result": null,
+    "ranking": null,
+    "data_qualified": false,
+    "execution_model_qualified": false,
+    "historical_signal_eligible": false,
+    "policy_authorized": false,
+    "live_execution_authorized": false,
+    "primary_pressure_id": null,
+    "failed_stage": "ORDER_SCOPE",
+    "error_type": "ValueError"
+  },
+  "source_integrity_metadata": {
+    "full_input_id": "sha256:f4fc0caa46a8608c9bb5d1c6d31c0061654e8946c6d5caddb76e157c6fb1bfc0"
+  }
+}

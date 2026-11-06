@@ -1,0 +1,52 @@
+{
+  "schema": "capital-candidate-context-probe/0.1",
+  "synthetic": true,
+  "cases": [
+    {
+      "name": "initial",
+      "source": {
+        "path": "capital_research/quantity_context_20261027/objects/9e03e020366eeeb9e946979a8ddd4a7e9edc14b0a1439ede20781da285f2f44f.json",
+        "bytes": 1064541,
+        "sha256": "6f3b8ca940601b2a146c7576a6fca0092ef47646f21c99d55f920636293143b1"
+      },
+      "source_record": {
+        "path": "capital_research/quantity_context_20261027/before/normal/actual.json",
+        "bytes": 1926,
+        "sha256": "4d5b230f29e685217f0a7d546b8275a023fbf08e37163d9739e9665f8b693ef7"
+      },
+      "source_id": "sha256:9e03e020366eeeb9e946979a8ddd4a7e9edc14b0a1439ede20781da285f2f44f",
+      "round_index": 0,
+      "request_id": "sha256:68973916c49564c7f94388c4a86cd26e2e45a7653e5934b1cecb0903df03ad38",
+      "expected_generation_id": "sha256:281f6cfb290ef257902aaf6ea2d3e78ed8683ef71771f76a484f1a6591faf4cd",
+      "selected_candidate_id": "quantity:sha256:56f76c7d40f2c39d22607b6ed2cd15253513daf95d2f53f487bbf7380cd119a0"
+    },
+    {
+      "name": "old-trigger",
+      "source": {
+        "path": "capital_research/quantity_context_20261027/objects/314a9f2416fccd6f4cc8a62aa72bb5c78f3319c5710434131fa1c597c6bb25dc.json",
+        "bytes": 548327,
+        "sha256": "494aecc4a95bf1e2e2e2d95abc1056df76cdf9fae2f19a98b3e7958dbf995b33"
+      },
+      "source_record": {
+        "path": "capital_research/quantity_context_20261027/test-evidence/old-trigger/normal/actual.json",
+        "bytes": 1925,
+        "sha256": "b901e3fb13b110f57f4b5f24589e61713c03d35f15c2fc509937f4feac44318a"
+      },
+      "source_id": "sha256:314a9f2416fccd6f4cc8a62aa72bb5c78f3319c5710434131fa1c597c6bb25dc",
+      "round_index": 1,
+      "request_id": "sha256:3954e62dae21fbbdbf988b6e0fa6aef98b9c5ef6704106e644a6ccbaba287428",
+      "expected_generation_id": "sha256:c5779992b16c55ee49caf0b5493358a7a698cff194e032d4cf880cac6c64439e",
+      "selected_candidate_id": "quantity:sha256:b8b6a21840091a7514b9058f60b3afa140757f492290e1739eedaade9731b519"
+    }
+  ],
+  "controls_reference": {
+    "path": "capital_research/quantity_context_20261027/contexts.json",
+    "bytes": 1591,
+    "sha256": "79610bc3c53ab21c449aba8ceda0d847ca62b0a3c53b93835390b51fb94d0655"
+  },
+  "preset_reference": {
+    "path": "capital_research/quantity_context_20261027/test-controls.json",
+    "bytes": 570,
+    "sha256": "38b5324a33a1d0db20db85cb78d1ee9a0124dacc3be5884ac10fef38ae212e70"
+  }
+}

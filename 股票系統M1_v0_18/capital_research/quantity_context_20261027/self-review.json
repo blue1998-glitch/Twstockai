@@ -1,0 +1,20 @@
+{
+  "only_production_change": "quantity_replay.replay_sequence local Context",
+  "default_raw_output_unchanged": true,
+  "formulas_or_thresholds_changed": false,
+  "new_account": false,
+  "before_rounding_fills_equal": true,
+  "before_rounding_final_saved_row_equal": true,
+  "not_claimed_as_economic_performance_difference": true,
+  "concentrated_financial_review": [
+    "WHOLE_RAW_RESULT",
+    "EACH_ROUND_ACCOUNT_AND_FILLS",
+    "RIGHTS_CREDITED_ONCE",
+    "RESERVATIONS",
+    "LATEST_AND_ALL_TOKENS",
+    "DUPLICATE_TRIGGER_REJECTION"
+  ],
+  "READ_and_future_isolation_code_unchanged": true,
+  "other_direct_entry_contexts_not_validated": true,
+  "requires_user_action": false
+}

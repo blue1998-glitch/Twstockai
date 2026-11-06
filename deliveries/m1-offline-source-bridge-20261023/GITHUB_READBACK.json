@@ -1,0 +1,55 @@
+{
+  "observed_at_utc": "2026-10-23T06:42:48.628Z",
+  "repository": "blue1998-glitch/Twstockai",
+  "branch": "dev/m1-v018-chart-annotations",
+  "parent_preserved": "a52cff207066b1180b6a4e656cf7b49e8ffe4cc6",
+  "fixed_attachment_commit": "8aecb50bfcae0401ea77234a755cebe6b5277d63",
+  "files": [
+    {
+      "path": "deliveries/m1-offline-source-bridge-20261023/TWstockai_Offline_Source_Bridge_20261023.zip",
+      "encoding": "base64",
+      "blob_sha": "1e32a439d21fc95c5c29cf3f03467099d922a4cb",
+      "contentLength": 1254972,
+      "exact_match": true
+    },
+    {
+      "path": "deliveries/m1-offline-source-bridge-20261023/README.md",
+      "encoding": "utf-8",
+      "blob_sha": "a062561fc4c7201eab119d277fe7433b8ed04685",
+      "contentLength": 1262,
+      "exact_match": true
+    },
+    {
+      "path": "deliveries/m1-offline-source-bridge-20261023/TWstockai_Offline_Source_Bridge_20261023.zip.sha256",
+      "encoding": "utf-8",
+      "blob_sha": "df1c61d1c05bd82c1bef6bec8a97b70584d27fa9",
+      "contentLength": 111,
+      "exact_match": true
+    }
+  ],
+  "archive": {
+    "bytes": 941229,
+    "sha256": "ecc413ca28fce87085666b87b3c3a6d1bf784ef553b32d2198b8bb72bebeedce",
+    "github_base64_exactly_equal_to_local": true,
+    "zip_members": 41,
+    "manifest_entries": 40,
+    "local_crc_verified": true,
+    "local_member_sha256_and_lengths_verified": true
+  },
+  "scope": {
+    "user_authorized_attachment_delivery": true,
+    "product_code_changes": 0,
+    "bootstrap_runs": 0,
+    "product_tests_run": 0,
+    "new_source_versions": 0,
+    "codex_ingestion_verified": false,
+    "blocked_endpoint_retries": 0,
+    "subagents": 0
+  },
+  "notes": [
+    "Only attachment, checksum, README and this readback receipt added; no product implementation.",
+    "Current existing Codex must obtain actual committed ZIP bytes and independently validate before engineering.",
+    "Historical 61 product checks were not rerun.",
+    "Archive research-time counters remain historical; original ZIP unchanged."
+  ]
+}

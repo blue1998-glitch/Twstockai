@@ -1,0 +1,92 @@
+{
+  "scope": "READ_ONLY_SAVED_ARTIFACT_RELATION_RESEARCH_NOT_ENGINE_OR_STRATEGY_VALIDATION",
+  "base_commit": "e0dc1328a0050673239b4bbcec655d2dbadfb445",
+  "artifact_commit": "fff47915523fab8c8de8279de8bbb7a26b05647b",
+  "qualification": "ASSISTANT_ANALYSIS_NOT_USER_ADJUDICATED",
+  "sources": [
+    {
+      "file": "M1_v019_cross_scale_real_v01.html",
+      "bytes": 2232879,
+      "sha256": "f5b3b4e5e03da1c8291ff5854e0a6dfbb974286fe5cfbcb9a466ec6e138203ee"
+    },
+    {
+      "file": "comparison-data.json",
+      "bytes": 3117969,
+      "sha256": "184bdef0b687ec0ab7bfcaaac2157ff7916fbc1000ef312d81b5efc0c2e73e15"
+    }
+  ],
+  "post_source_end_observation": {
+    "start": "2025-03-13",
+    "end": "2025-04-02",
+    "rows": 15,
+    "min_close": "32.05",
+    "max_close": "33.85",
+    "inside_original_research_bounds_all_closes": true,
+    "formal_membership": null
+  },
+  "display_envelope_overlap": {
+    "layers": [
+      "b77",
+      "manual39"
+    ],
+    "low": "30.05",
+    "high": "31.40",
+    "qualification": "DISPLAY_GEOMETRY_ONLY_NOT_FORMAL_PRESSURE_OR_MERGE"
+  },
+  "new_proposal_approved": false,
+  "primary_pressure_id": null,
+  "physical_android": "NOT_TESTED_NEW_BUILD",
+  "core_executed": false,
+  "bootstrap_executed": false,
+  "new_zip_download_or_crc": false,
+  "new_interaction_or_download_regression": false,
+  "facts": [
+    {
+      "close": "34.50",
+      "date": "2025-03-12",
+      "high": "35.45",
+      "low": "34.50",
+      "open": "35.00",
+      "volume_shares_scaled": "22178529"
+    },
+    {
+      "close": "29.80",
+      "date": "2025-04-07",
+      "high": "30.80",
+      "low": "29.20",
+      "open": "29.20",
+      "volume_shares_scaled": "118749437"
+    },
+    {
+      "close": "31.10",
+      "date": "2025-05-13",
+      "high": "31.40",
+      "low": "30.90",
+      "open": "31.30",
+      "volume_shares_scaled": "10264322"
+    },
+    {
+      "close": "27.70",
+      "date": "2025-06-02",
+      "high": "29.05",
+      "low": "27.65",
+      "open": "29.05",
+      "volume_shares_scaled": "93266178"
+    },
+    {
+      "close": "27.30",
+      "date": "2026-10-16",
+      "high": "27.70",
+      "low": "26.95",
+      "open": "27.10",
+      "volume_shares_scaled": "57437884"
+    }
+  ],
+  "diagnostics": [
+    {
+      "operation": "prepare local combined root documentation copies",
+      "error": "exec-server Argument list too long; command was not launched",
+      "resolution": "use already prepared in-memory UTF-8 root contents directly through GitHub tree API; no product files affected"
+    }
+  ]
+}

@@ -1,0 +1,285 @@
+{
+  "schema": "quantity-candidates-self-review/0.1",
+  "reviewer": "original_unique_Codex",
+  "reviewed_at": "2026-10-26T11:57:35.149137+00:00",
+  "function_milestone": "bounded A/B/cash quantity candidates; no optimizer or order generation",
+  "all_checks_passed": true,
+  "frozen_inputs_oracles_unchanged": true,
+  "final_source_bound": true,
+  "initial_source_snapshots_verified": [
+    "股票系統M1_v0_18/capital_research/quantity_candidates_20261026/diagnostics/quantity-before-trigger-fix.py",
+    "股票系統M1_v0_18/capital_research/quantity_candidates_20261026/fixtures.py",
+    "股票系統M1_v0_18/capital_research/quantity_candidates_20261026/diagnostics/build-before-final-stage.py",
+    "股票系統M1_v0_18/capital_research/quantity_candidates_20261026/diagnostics/tests-before-final-stage.py",
+    "股票系統M1_v0_18/capital_research/quantity_candidates_20261026/diagnostics/CONTRACT-before-trigger-fix.md"
+  ],
+  "original_engine_and_source_files_unchanged": 17,
+  "existing_instruction_history_preserved": true,
+  "only_existing_instruction_files_updated": [
+    "AGENTS.md",
+    "CONTINUE_IN_WORK_MODE.md",
+    "股票系統M1_v0_18/capital_research/README.md"
+  ],
+  "case_results": {
+    "legal-grid": {
+      "status": "COMPLETE",
+      "candidates": 11,
+      "groups": {
+        "CURRENTLY_FEASIBLE": 10,
+        "WAIT_SETTLEMENT_REASSESSMENT": 1,
+        "REJECTED": 0,
+        "NOT_IMPLEMENTED": 0
+      }
+    },
+    "consumed-trigger": {
+      "status": "COMPLETE",
+      "candidates": 11,
+      "groups": {
+        "CURRENTLY_FEASIBLE": 4,
+        "WAIT_SETTLEMENT_REASSESSMENT": 0,
+        "REJECTED": 7,
+        "NOT_IMPLEMENTED": 0
+      }
+    },
+    "foreign-trigger": {
+      "status": "COMPLETE",
+      "candidates": 11,
+      "groups": {
+        "CURRENTLY_FEASIBLE": 4,
+        "WAIT_SETTLEMENT_REASSESSMENT": 0,
+        "REJECTED": 7,
+        "NOT_IMPLEMENTED": 0
+      }
+    },
+    "unknown-capital": {
+      "status": "COMPLETE",
+      "candidates": 10,
+      "groups": {
+        "CURRENTLY_FEASIBLE": 4,
+        "WAIT_SETTLEMENT_REASSESSMENT": 0,
+        "REJECTED": 6,
+        "NOT_IMPLEMENTED": 0
+      }
+    },
+    "invalidated-fact": {
+      "status": "COMPLETE",
+      "candidates": 10,
+      "groups": {
+        "CURRENTLY_FEASIBLE": 4,
+        "WAIT_SETTLEMENT_REASSESSMENT": 0,
+        "REJECTED": 6,
+        "NOT_IMPLEMENTED": 0
+      }
+    },
+    "reserve-insufficient": {
+      "status": "COMPLETE",
+      "candidates": 5,
+      "groups": {
+        "CURRENTLY_FEASIBLE": 2,
+        "WAIT_SETTLEMENT_REASSESSMENT": 1,
+        "REJECTED": 2,
+        "NOT_IMPLEMENTED": 0
+      }
+    },
+    "wait-settlement": {
+      "status": "COMPLETE",
+      "candidates": 4,
+      "groups": {
+        "CURRENTLY_FEASIBLE": 2,
+        "WAIT_SETTLEMENT_REASSESSMENT": 2,
+        "REJECTED": 0,
+        "NOT_IMPLEMENTED": 0
+      }
+    },
+    "non-monotone": {
+      "status": "COMPLETE",
+      "candidates": 6,
+      "groups": {
+        "CURRENTLY_FEASIBLE": 4,
+        "WAIT_SETTLEMENT_REASSESSMENT": 0,
+        "REJECTED": 2,
+        "NOT_IMPLEMENTED": 0
+      }
+    },
+    "grid-over-limit": {
+      "status": "REFUSED_SEARCH_LIMIT",
+      "candidates": 0,
+      "groups": {
+        "CURRENTLY_FEASIBLE": 0,
+        "WAIT_SETTLEMENT_REASSESSMENT": 0,
+        "REJECTED": 0,
+        "NOT_IMPLEMENTED": 0
+      }
+    },
+    "full-over-limit": {
+      "status": "REFUSED_SEARCH_LIMIT",
+      "candidates": 0,
+      "groups": {
+        "CURRENTLY_FEASIBLE": 0,
+        "WAIT_SETTLEMENT_REASSESSMENT": 0,
+        "REJECTED": 0,
+        "NOT_IMPLEMENTED": 0
+      }
+    },
+    "existing-order-full-unsupported": {
+      "status": "COMPLETE",
+      "candidates": 11,
+      "groups": {
+        "CURRENTLY_FEASIBLE": 10,
+        "WAIT_SETTLEMENT_REASSESSMENT": 0,
+        "REJECTED": 0,
+        "NOT_IMPLEMENTED": 1
+      }
+    },
+    "review-old-valid": {
+      "status": "COMPLETE",
+      "candidates": 6,
+      "groups": {
+        "CURRENTLY_FEASIBLE": 3,
+        "WAIT_SETTLEMENT_REASSESSMENT": 0,
+        "REJECTED": 3,
+        "NOT_IMPLEMENTED": 0
+      }
+    },
+    "review-independent-new": {
+      "status": "COMPLETE",
+      "candidates": 6,
+      "groups": {
+        "CURRENTLY_FEASIBLE": 5,
+        "WAIT_SETTLEMENT_REASSESSMENT": 1,
+        "REJECTED": 0,
+        "NOT_IMPLEMENTED": 0
+      }
+    },
+    "after-fill-no-new-event": {
+      "status": "COMPLETE",
+      "candidates": 6,
+      "groups": {
+        "CURRENTLY_FEASIBLE": 3,
+        "WAIT_SETTLEMENT_REASSESSMENT": 0,
+        "REJECTED": 3,
+        "NOT_IMPLEMENTED": 0
+      }
+    },
+    "after-settlement-no-new-event": {
+      "status": "COMPLETE",
+      "candidates": 6,
+      "groups": {
+        "CURRENTLY_FEASIBLE": 3,
+        "WAIT_SETTLEMENT_REASSESSMENT": 0,
+        "REJECTED": 3,
+        "NOT_IMPLEMENTED": 0
+      }
+    },
+    "history-revocation-not-erased": {
+      "status": "COMPLETE",
+      "candidates": 6,
+      "groups": {
+        "CURRENTLY_FEASIBLE": 3,
+        "WAIT_SETTLEMENT_REASSESSMENT": 0,
+        "REJECTED": 3,
+        "NOT_IMPLEMENTED": 0
+      }
+    },
+    "shared-volume-trigger": {
+      "status": "COMPLETE",
+      "candidates": 11,
+      "groups": {
+        "CURRENTLY_FEASIBLE": 4,
+        "WAIT_SETTLEMENT_REASSESSMENT": 0,
+        "REJECTED": 7,
+        "NOT_IMPLEMENTED": 0
+      }
+    },
+    "future-A-wins": {
+      "status": "COMPLETE",
+      "candidates": 11,
+      "groups": {
+        "CURRENTLY_FEASIBLE": 10,
+        "WAIT_SETTLEMENT_REASSESSMENT": 1,
+        "REJECTED": 0,
+        "NOT_IMPLEMENTED": 0
+      }
+    },
+    "future-B-wins": {
+      "status": "COMPLETE",
+      "candidates": 11,
+      "groups": {
+        "CURRENTLY_FEASIBLE": 10,
+        "WAIT_SETTLEMENT_REASSESSMENT": 1,
+        "REJECTED": 0,
+        "NOT_IMPLEMENTED": 0
+      }
+    },
+    "future-both-fall": {
+      "status": "COMPLETE",
+      "candidates": 11,
+      "groups": {
+        "CURRENTLY_FEASIBLE": 10,
+        "WAIT_SETTLEMENT_REASSESSMENT": 1,
+        "REJECTED": 0,
+        "NOT_IMPLEMENTED": 0
+      }
+    },
+    "future-foreign-ownership": {
+      "status": "COMPLETE",
+      "candidates": 11,
+      "groups": {
+        "CURRENTLY_FEASIBLE": 4,
+        "WAIT_SETTLEMENT_REASSESSMENT": 0,
+        "REJECTED": 7,
+        "NOT_IMPLEMENTED": 0
+      }
+    }
+  },
+  "unique_test_methods": 18,
+  "method_names": [
+    "test_both_limits_refuse_without_partial_candidate_prefix",
+    "test_candidates_have_same_capital_and_preserve_other_holdings",
+    "test_complete_grid_without_fixed_ratio_or_sampling",
+    "test_continuation_keeps_authoritative_account_latest_and_tokens",
+    "test_current_partial_matches_existing_core_cost_risk_and_funding",
+    "test_existing_full_transfer_is_called_and_then_rechecked",
+    "test_existing_order_full_builder_and_credit_remain_unsupported",
+    "test_foreign_trigger_is_an_explicit_extra_batch_refusal",
+    "test_future_prefix_isolation_allows_integrity_metadata_to_differ",
+    "test_future_row_cannot_lend_stock_ownership_to_a_foreign_trigger",
+    "test_invalid_bounds_and_late_policy_never_invent_a_domain",
+    "test_no_family_override_or_injected_alternative_escape",
+    "test_no_winner_orders_or_formal_qualification",
+    "test_non_monotone_domain_keeps_middle_feasible_candidates",
+    "test_reused_and_shared_volume_triggers_reject_new_batch",
+    "test_settled_cash_reserve_and_waiting_are_separate",
+    "test_unknown_invalidated_and_history_restriction_block_capital",
+    "test_valid_old_review_is_allowed_but_not_a_new_trigger"
+  ],
+  "extra_review_items": [
+    {
+      "topic": "cash/rights/reserve/account continuity",
+      "evidence": "prefixes + after-final continuation cases; original opening/fills/latest/tokens validated by unchanged resume_decision"
+    },
+    {
+      "topic": "every new buy independent of plan family",
+      "evidence": "all additional_B>0 plans are family C; injected family/plan checks in tests-final.log"
+    },
+    {
+      "topic": "same-bar novel ordering",
+      "evidence": "shared-volume-trigger initial actual rejected oracle; after-final rejects without modifying oracle"
+    },
+    {
+      "topic": "future owner contamination",
+      "evidence": "future-foreign-ownership before/after actual; after-final equals foreign-trigger research"
+    },
+    {
+      "topic": "conditional funds are not spendable",
+      "evidence": "reserve-insufficient + wait-settlement and unchanged existing core funding values"
+    }
+  ],
+  "limits": [
+    "snapshot candidate feasibility is not path risk or fills",
+    "no real source authentication/qualification",
+    "no optimal ratio/strategy selection",
+    "existing unrelated arbitrary-plan APIs remain unchanged"
+  ],
+  "next_step_not_started": "connect quantity candidates to existing round-by-round synthetic replay, without automatic best-ratio selection"
+}

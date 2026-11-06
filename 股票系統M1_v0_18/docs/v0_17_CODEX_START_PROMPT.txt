@@ -1,0 +1,9 @@
+請接手股票系統 M1 v0.17。先讀 AGENTS.md、README.md、docs/CODEX交接.md、docs/候選規則_v0.1.md、docs/SQLite事件診斷與接續驗收.md，以及 reliability/output/診斷與交接驗收.md。完整來源與結果均在本包。
+
+目前日週月唯讀整合已交付。這輪只完成 SQLite 診斷閉環：三份臨時副本、九次跨程序重存、三次中斷／唯讀拒絕／明確恢復，保留三筆／745 快照完整指紋；260 Python＋66 Node 替身通過。既有 src、庫、HTML 與策略不變。原事故根因仍 NOT_ESTABLISHED，不可說已修復。
+
+下一步請在具現有 Chromium 的環境執行 tests/test_cross_view_browser.cjs；必要時指定 CODEX_BROWSER_EXECUTABLE_PATH。桌面與390手機模擬測18組切換、basis、下載、pageerror及溢位。缺執行檔維持 BLOCKED，不盲試下載、不發布、不用 DOM 替身冒充。物理 Android 另記實測，未測就 NOT_TESTED。可先跑 Python 全回歸、reliability/run_acceptance.py（只操作臨時副本）與 Node cross-view，按證據修正必要問題。
+
+所有數值只來自原引擎，唯讀頁面／匯出不得 RUN、recover、刪 journal 或重建。原事故若復發，停止 writer、保存主檔與全部 sidecar／提交回覆／退出碼，先用唯讀 probe 捕捉 extended SQLite error。獨立有權 worker 才能恢復，恢復後 READ／LOOKUP 精確指紋；不得把 quick_check=ok 當無遺失證明。
+
+一般可逆開發自行處理；只在核心策略、重大架構或必要授權時詢問。不開子代理、不部署／發布／發訊息／交易／付費、不重試被拒來源。保持 NOT_VALIDATED／NOT_EVALUATED 與326筆 UNREVIEWED。結尾清楚列出實測／未測，以及下一步繼續工作模式或轉Codex。

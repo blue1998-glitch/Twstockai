@@ -1,0 +1,11 @@
+{
+  "exit_code": 2,
+  "stdout": "",
+  "stderr": "usage: evaluated_replay [-h] --store STORE --id ID [--input INPUT]\n                        [--format {text,json}]\n                        {RUN,READ}\nevaluated_replay: error: READ does not accept --input",
+  "calls": {
+    "replay": 0,
+    "evaluation": 0,
+    "execution": 0
+  },
+  "guard": "FRESH_READ_NO_NUMERIC_NO_WRITE_NO_NETWORK"
+}

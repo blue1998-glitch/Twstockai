@@ -1,0 +1,66 @@
+{
+  "scope": "LIMITED_ORIGINAL_HTML_READING_WITH_NEW_SAVED_JSON_REFERENCES_NOT_UI_OR_ENGINE_REGRESSION",
+  "html_sha256": "f5b3b4e5e03da1c8291ff5854e0a6dfbb974286fe5cfbcb9a466ec6e138203ee",
+  "reaction_json_sha256": "097971c913b52fbf69dbb286c6e2df380ded3c3d166ca6391de5c5bdb4047c48",
+  "reaction_result_id": "sha256:2dcff9ba28edf89c370c976a82ec5b7bd6c11cce06743ba3e870e15a0d58c966",
+  "as_of": "2026-10-16",
+  "browser": "133.0.6943.0",
+  "viewport": {
+    "width": 1400,
+    "height": 1050
+  },
+  "observation_font": "ReviewCJK DOM/Canvas only; original first-font image preserved in prior real-review",
+  "original_data_core_analysis_unchanged": true,
+  "new_json_bytes_unchanged": true,
+  "errors": [],
+  "observations": [
+    {
+      "name": "whole-pressure-context",
+      "window": "2023-06-01～2026-10-16｜820／1213根；分析固定 2026-10-16；游標 2026-10-16。",
+      "readout": "2026-10-16　開27.10 高27.70 低26.95 收27.30｜量57437884股｜DIF 0.63 DEA 0.45 柱 0.36",
+      "references": [
+        {
+          "id": "sha256:49e1061c6c2ea51fab91aa35b08edd0c86a4238bb70b577a588a86f510f2ea76",
+          "price": "30.05",
+          "source_kind": "RESEARCH_BOUND",
+          "source_field": "low",
+          "known_on": "2025-03-24",
+          "selected_at": "2026-10-20T02:03:12.608303+00:00",
+          "historical_signal_eligible": false
+        }
+      ],
+      "selected_layer": "b77"
+    },
+    {
+      "name": "local-evidence-scope",
+      "window": "2026-09-01～2026-10-16｜31／1213根；分析固定 2026-10-16；游標 2026-10-16。",
+      "readout": "2026-10-16　開27.10 高27.70 低26.95 收27.30｜量57437884股｜DIF 0.63 DEA 0.45 柱 0.36",
+      "references": [
+        {
+          "id": "sha256:d63e7759051cdd7ad12c18d0f5beee624c57f49dabca43c9d665cf61bdc62e9b",
+          "price": "26.95",
+          "source_kind": "RESEARCH_BOUND",
+          "source_field": "high",
+          "known_on": "2026-09-01",
+          "selected_at": "2026-10-20T02:03:12.608303+00:00",
+          "historical_signal_eligible": false
+        },
+        {
+          "id": "sha256:3b06e1fab3e34dd44027722290cf9cdddbbff0d947ed560ec6773b2d7121cd97",
+          "price": "27.40",
+          "source_kind": "BAR_FIELD",
+          "source_field": "high",
+          "known_on": "2026-10-14",
+          "selected_at": "2026-10-20T02:03:12.608303+00:00",
+          "historical_signal_eligible": false
+        }
+      ],
+      "selected_layer": "recent"
+    }
+  ],
+  "bootstrap_executed": false,
+  "core_or_reaction_engine_executed": false,
+  "python_contract_tests_rerun": false,
+  "physical_android": "NOT_TESTED_NEW_BUILD",
+  "file_protocol_used": false
+}

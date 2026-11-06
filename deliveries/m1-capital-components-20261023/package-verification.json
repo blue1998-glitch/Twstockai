@@ -1,0 +1,79 @@
+{
+  "status": "PASS",
+  "filename": "m1-capital-components-v09-20261023.zip",
+  "sha256": "9a97f1aff7ad1b37da2249948ccaf62662b5af4ad9d9e3260907cecb426d8571",
+  "members": 723,
+  "parent_v08_members_byte_exact": 693,
+  "manifests": {
+    "ACTION_PACKAGE_MANIFEST.json": 292,
+    "ACTION_RESOLUTION_MANIFEST.json": 510,
+    "ACTION_SCOPE_MANIFEST.json": 469,
+    "CAPITAL_COMPONENTS_MANIFEST.json": 722,
+    "OFFICIAL_ACTIONS_MANIFEST.json": 409,
+    "OFFLINE_SOURCE_BRIDGE_MANIFEST.json": 605,
+    "RESOLUTION_VALIDATION_MANIFEST.json": 527,
+    "SOURCE_CONTRACTS_MANIFEST.json": 692,
+    "SOURCE_DIAGNOSTICS_MANIFEST.json": 574,
+    "SOURCE_FOLLOWUP_MANIFEST.json": 650,
+    "SOURCE_QUALIFICATION_MANIFEST.json": 374
+  },
+  "commands": [
+    {
+      "command": [
+        "python3",
+        "-m",
+        "unittest",
+        "rotation_research.test_capital_components",
+        "rotation_research.test_source_contracts",
+        "-v"
+      ],
+      "returncode": 0,
+      "log": "extracted-tests.log"
+    },
+    {
+      "command": [
+        "python3",
+        "-m",
+        "rotation_research.capital_components_sources"
+      ],
+      "returncode": 0,
+      "log": "extracted-producer.log"
+    }
+  ],
+  "actual_distinct_tests": 60,
+  "new_tests": 29,
+  "old_tests_actually_rerun": 31,
+  "all_bundle_members_unchanged_after_test_and_producer": true,
+  "exact_original_bridge_zip_included": true,
+  "missing_quotes_new_evidence_and_old_unknown_preserved": true,
+  "offline_producer_verification": {
+    "schema": "rotation-capital-components-research/0.9",
+    "originals_reused": 1,
+    "new_official_originals": 0,
+    "official_network_requests": 0,
+    "source_pdf_github_requests": 0,
+    "physical_pages_reextracted_and_reviewed": [
+      391,
+      456
+    ],
+    "observations": 3,
+    "exact_parent_v08_id": "sha256:77e3dfa0e10ff3b64f67e1613575c26158d814efe025753d5138c8b76641cd80",
+    "company_source_reconciliation": "PASS_NOT_PERSONAL_ALLOCATION",
+    "original_quote_archives_rechecked": 122,
+    "calendar_reports_rechecked": 16,
+    "qualification_calls": 70,
+    "refused_windows": 70,
+    "insufficient_windows": 2,
+    "exchange_unsupported_windows": 8,
+    "qualified_total_net_return_windows": 0,
+    "numeric_replay_calls": 0,
+    "six_strategy_replays": 0,
+    "missing_quotes_exact_parent_preserved": true,
+    "parent_nulls_preserved": true,
+    "work_github_readback_at": null,
+    "android": "NOT_TESTED_NEW_BUILD",
+    "historical_signal_eligible": false,
+    "primary_pressure_id": null,
+    "policy_authorized": false
+  }
+}

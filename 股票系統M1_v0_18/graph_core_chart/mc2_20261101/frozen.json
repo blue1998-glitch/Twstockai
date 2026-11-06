@@ -1,0 +1,53 @@
+{
+  "baseline": "6acfab8ee5d317bd59ca33ccd4eecb4286fc7863",
+  "as_of": "2026-10-16",
+  "files": [
+    {
+      "path": "股票系統M1_v0_18/graph_core_chart/output/mg3_20261101/core-1101-latest.json",
+      "bytes": 2167434,
+      "sha256": "c124ba78a318cd303a0de62e1dc93d74770aa2acecd3b54733fc60fdbfd8262a"
+    },
+    {
+      "path": "股票系統M1_v0_18/graph_core_chart/output/mg3_20261101/core-2884-latest.json",
+      "bytes": 930462,
+      "sha256": "8235f3f9e0aae0a75f568c56afa53a748381c0d1dabf33f7ec608944274a2cf1"
+    },
+    {
+      "path": "股票系統M1_v0_18/graph_core_chart/output/mg3_20261101/core-6488-latest.json",
+      "bytes": 3756725,
+      "sha256": "a14b3e0b8e85140afb939fc0514f1b72c6a35daaf0ee761f8148ed6a482512fe"
+    },
+    {
+      "path": "股票系統M1_v0_18/graph_core_chart/output/mg3_20261101/core-8069-latest.json",
+      "bytes": 12430568,
+      "sha256": "7730f7c1a0cc8efa4450ccd163fd46bab08b39d03923d768ee20727d296795b5"
+    },
+    {
+      "path": "股票系統M1_v0_18/graph_core_chart/output/mg3_20261101/M1_v019_graph_recognition_v02.html",
+      "bytes": 28022842,
+      "sha256": "18a10031e1d928ec4f8035c78ca9fe9890651c74fdb4a17343ffa7d9f88a58b9"
+    },
+    {
+      "path": "股票系統M1_v0_18/graph_core_chart/mg3_20261101/source-input-spec.json",
+      "bytes": 856,
+      "sha256": "11d64b0aeda9d885077b3d89c862dea8898b94292c5e4827879bf6c59953c302"
+    },
+    {
+      "path": "股票系統M1_v0_18/pressure_chart/data/history-20261018/history-candidate.json",
+      "bytes": 1166201,
+      "sha256": "eaeff474314348f66bb3f53704f006410f571f4b8192f3bcb72ee7541d6dd39e"
+    }
+  ],
+  "expected": {
+    "boxes": {
+      "1101": 89,
+      "2884": 32,
+      "6488": 158,
+      "8069": 279
+    },
+    "2884_stopped": 32,
+    "6488_nearest_ties": 8,
+    "6488_upper_low": "977.00",
+    "primary_pressure_id": null
+  }
+}

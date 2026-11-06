@@ -1,0 +1,34 @@
+{
+  "schema": "m1-revisit-frame-hypotheses/1",
+  "diagnostic_close_grid": {
+    "scope": "Retrospective selected13-record A/B windows only; not causal event generation or universal window length",
+    "max_strict_close_cell_crossings": {
+      "2884-Sep17-Oct7": 4,
+      "2884-Apr15-May4": 4
+    },
+    "finding": "Maximum crossing count alone failed to express current direction; no cutoff/count threshold selected."
+  },
+  "implemented_research": {
+    "anchor_birth": "First observed saved low/high/close at that exact price in the current seed and source segment. Equal prices share provenance, not votes.",
+    "witness": "Three alternating strict completed-close side runs after anchor birth; equals neither cross nor reset strict side.",
+    "frame": "Raw high/low envelope from first strict witness to the saved bar before return; immutable at return time.",
+    "bounded_reentry": "Return close inside inclusive pre-return frame; return bar wick may extend outside. Side return beyond frame retained as overshoot evidence, not erased.",
+    "current_relation": "Updated separately with later data; does not erase historical witness or decide formal membership.",
+    "formation_rule": "NOT_ESTABLISHED"
+  },
+  "counterconstraints": [
+    "Single ABA round-trip can occur in noise or a directional trend; it proposes a local observation only.",
+    "ABC remains a confirmed own interval even when current close is below prior local revisit frames.",
+    "G2 can contain local exits while larger manual time scope remains confirmed.",
+    "May13 high31.40 is retained even without completed-close crossing of that level."
+  ],
+  "storage": {
+    "driver_runs": 3,
+    "gzip_bytes_in_order": [
+      2555223,
+      835515,
+      135169
+    ],
+    "reason": "Lossless normalization: repeated current views -> shared snapshot -> integer episode table references. Geometry/discovery unchanged; final reconstruction independently checked."
+  }
+}

@@ -1,0 +1,27 @@
+{
+  "base_commit": "93f64e61cd5701fbd647fd6139d29253f0d7fc43",
+  "inputs": [
+    {
+      "local": "/workspace/scratch/54685b8dac93/independent-level-review/source-data-2884.json",
+      "sha256": "ab87a51b5b8afd076603f290b10f415bd60d31ae47c5ab2f6d9d609ad4014901"
+    },
+    {
+      "local": "/workspace/scratch/54685b8dac93/real-review/input/comparison-data.json",
+      "sha256": "184bdef0b687ec0ab7bfcaaac2157ff7916fbc1000ef312d81b5efc0c2e73e15"
+    },
+    {
+      "local": "/workspace/scratch/89f271ea68f4/source-role-research/source-role-registry.json.gz",
+      "sha256": "173127538c11ff01594ac566e644404bbb8624674f0951e2a3d6931f1c436895"
+    },
+    {
+      "local": "/workspace/scratch/89f271ea68f4/overlap-role-research/overlap-role-registry.json.gz",
+      "sha256": "270a0b20ae2ac5e8e258c79b4170988f4b63d1272ab4c96c90bc6ace6740ef82"
+    },
+    {
+      "local": "/workspace/scratch/e9363d3b9105/return-context-research/context-views.json",
+      "sha256": "062ac539dbc194f9aaaedf07fbff9b4a2623c02317a66fa09d658bacf5473a1f"
+    }
+  ],
+  "selection_sha256": "41674425e87026ec8dda527d0fa31f545ec204c41923275eb87b188e33de80b4",
+  "method": "Copy six specified saved zones, five original3%points and exact source legs/turns; G2 comparison uses previous immutable view without rerunning old driver."
+}

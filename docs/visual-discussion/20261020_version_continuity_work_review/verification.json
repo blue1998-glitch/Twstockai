@@ -1,0 +1,50 @@
+{
+  "source_sha_unchanged": true,
+  "all_saved_window_records": 68,
+  "contiguous_source_indices": true,
+  "original_OHLCV_MACD_MA_exact_string_copy": true,
+  "original_prefix_relation_verified": true,
+  "exact_close_comparisons": [
+    {
+      "date": "2025-01-10",
+      "close": "30.25",
+      "old_reference": "30.80",
+      "relation": "BELOW"
+    },
+    {
+      "date": "2025-01-15",
+      "close": "30.80",
+      "old_reference": "30.80",
+      "relation": "EQUAL"
+    },
+    {
+      "date": "2025-01-16",
+      "close": "30.95",
+      "old_reference": "30.80",
+      "relation": "ABOVE"
+    }
+  ],
+  "new_core_tests": "NOT_RUN",
+  "browser": "NOT_RUN",
+  "Android": "NOT_TESTED_NEW_BUILD",
+  "image_visual_inspection": {
+    "status": "COMPLETED_STATIC_RESEARCH_IMAGE_ONLY",
+    "method": "view_image",
+    "observed": [
+      "68 candles aligned with volume and saved MACD",
+      "Traditional Chinese labels legible",
+      "old 30.80 line begins 2024-12-20",
+      "new 30.05 line begins 2025-02-12 only",
+      "Jan13 low marked as later-confirmed source; no retroactive boundary",
+      "all intervening records and subsequent pullback retained"
+    ],
+    "not_covered": [
+      "browser interaction",
+      "Android",
+      "original product regression",
+      "external data authenticity"
+    ]
+  },
+  "font_source": "https://raw.githubusercontent.com/notofonts/noto-cjk/main/Sans/OTF/TraditionalChinese/NotoSansCJKtc-Regular.otf",
+  "font_sha256": "dce08bd4fd91aa8aa76ed8fea4b694c2dfb8550f67871e326843212ddbeb88b4"
+}

@@ -1,0 +1,245 @@
+{
+  "completed_at": "2026-10-25T03:12:23.091623+00:00",
+  "latest_verified_remote": "6be4333d490bcccfe952c7606dffb802b76cdd5c",
+  "local_baseline": "6be4333d490bcccfe952c7606dffb802b76cdd5c",
+  "head_changed": false,
+  "commits": 0,
+  "pushes": 0,
+  "staged_paths": 0,
+  "final_status": "PASS",
+  "unique_final_test_methods": 51,
+  "new_methods": 46,
+  "necessary_old_regressions": 5,
+  "historical_old_46_suite_rerun": false,
+  "full_old_test_suites_rerun": 0,
+  "intermediate_counts_not_added": true,
+  "directed_scope": [
+    {
+      "method": "test_checkpoint_modification_is_not_repaired_or_silently_accepted",
+      "case": "capital_research.test_review.ReviewTests.test_checkpoint_modification_is_not_repaired_or_silently_accepted"
+    },
+    {
+      "method": "test_checkpoint_rights_flow_through_without_double_counting",
+      "case": "capital_research.test_review.ReviewTests.test_checkpoint_rights_flow_through_without_double_counting"
+    },
+    {
+      "method": "test_continued_fills_keep_original_capital_and_only_one_cash_ledger",
+      "case": "capital_research.test_review.ReviewTests.test_continued_fills_keep_original_capital_and_only_one_cash_ledger"
+    },
+    {
+      "method": "test_failed_exit_cannot_fund_a_joint_risk_breach",
+      "case": "capital_research.test_review.ReviewTests.test_failed_exit_cannot_fund_a_joint_risk_breach"
+    },
+    {
+      "method": "test_future_ledger_prices_change_integrity_but_not_a_prefix_decision",
+      "case": "capital_research.test_review.ReviewTests.test_future_ledger_prices_change_integrity_but_not_a_prefix_decision"
+    },
+    {
+      "method": "test_infeasible_fresh_entry_does_not_reauthorize_even_with_a_valid_id",
+      "case": "capital_research.test_review.ReviewTests.test_infeasible_fresh_entry_does_not_reauthorize_even_with_a_valid_id"
+    },
+    {
+      "method": "test_invalidated_breakout_cancels_even_below_buy_limit",
+      "case": "capital_research.test_review.ReviewTests.test_invalidated_breakout_cancels_even_below_buy_limit"
+    },
+    {
+      "method": "test_joint_market_comparison_rejects_different_state_price_capacity_or_availability",
+      "case": "capital_research.test_review.ReviewTests.test_joint_market_comparison_rejects_different_state_price_capacity_or_availability"
+    },
+    {
+      "method": "test_modified_cash_or_dropped_rights_cannot_resume",
+      "case": "capital_research.test_review.ReviewTests.test_modified_cash_or_dropped_rights_cannot_resume"
+    },
+    {
+      "method": "test_new_decision_binds_account_evidence_cutoff_and_fill_decision",
+      "case": "capital_research.test_review.ReviewTests.test_new_decision_binds_account_evidence_cutoff_and_fill_decision"
+    },
+    {
+      "method": "test_no_checkpoint_means_no_continuity_claim",
+      "case": "capital_research.test_review.ReviewTests.test_no_checkpoint_means_no_continuity_claim"
+    },
+    {
+      "method": "test_observed_market_breach_does_not_invent_an_exit",
+      "case": "capital_research.test_review.ReviewTests.test_observed_market_breach_does_not_invent_an_exit"
+    },
+    {
+      "method": "test_partial_exit_is_not_a_complete_risk_release",
+      "case": "capital_research.test_review.ReviewTests.test_partial_exit_is_not_a_complete_risk_release"
+    },
+    {
+      "method": "test_pre_funded_persistent_order_can_continue_without_funding_reassessment",
+      "case": "capital_research.test_review.ReviewTests.test_pre_funded_persistent_order_can_continue_without_funding_reassessment"
+    },
+    {
+      "method": "test_reassessment_cannot_override_observed_invalidation",
+      "case": "capital_research.test_review.ReviewTests.test_reassessment_cannot_override_observed_invalidation"
+    },
+    {
+      "method": "test_same_market_allows_different_orders",
+      "case": "capital_research.test_review.ReviewTests.test_same_market_allows_different_orders"
+    },
+    {
+      "method": "test_share_rights_count_even_before_they_become_sellable",
+      "case": "capital_research.test_review.ReviewTests.test_share_rights_count_even_before_they_become_sellable"
+    },
+    {
+      "method": "test_stale_held_mark_blocks_risk_increase_without_inventing_price",
+      "case": "capital_research.test_review.ReviewTests.test_stale_held_mark_blocks_risk_increase_without_inventing_price"
+    },
+    {
+      "method": "test_static_pareto_is_not_a_policy_elimination_rule",
+      "case": "capital_research.test_review.ReviewTests.test_static_pareto_is_not_a_policy_elimination_rule"
+    },
+    {
+      "method": "test_successful_exit_releases_risk_after_actual_fill",
+      "case": "capital_research.test_review.ReviewTests.test_successful_exit_releases_risk_after_actual_fill"
+    },
+    {
+      "method": "test_two_candidates_share_the_risk_envelope_after_failed_exit",
+      "case": "capital_research.test_review.ReviewTests.test_two_candidates_share_the_risk_envelope_after_failed_exit"
+    },
+    {
+      "method": "test_unfilled_hedge_is_not_credited_as_account_risk_protection",
+      "case": "capital_research.test_review.ReviewTests.test_unfilled_hedge_is_not_credited_as_account_risk_protection"
+    },
+    {
+      "method": "test_unfilled_order_cannot_disappear_at_a_review",
+      "case": "capital_research.test_review.ReviewTests.test_unfilled_order_cannot_disappear_at_a_review"
+    },
+    {
+      "method": "test_unsettled_payable_continuation_refuses_instead_of_rebasing",
+      "case": "capital_research.test_review.ReviewTests.test_unsettled_payable_continuation_refuses_instead_of_rebasing"
+    },
+    {
+      "method": "test_waiting_for_settlement_never_self_reauthorizes",
+      "case": "capital_research.test_review.ReviewTests.test_waiting_for_settlement_never_self_reauthorizes"
+    },
+    {
+      "method": "test_wrong_checkpoint_or_decision_id_refuses_reassessment",
+      "case": "capital_research.test_review.ReviewTests.test_wrong_checkpoint_or_decision_id_refuses_reassessment"
+    },
+    {
+      "method": "test_all_nine_paths_and_five_policy_intents_really_execute",
+      "case": "capital_research.test_trend.TrendTests.test_all_nine_paths_and_five_policy_intents_really_execute"
+    },
+    {
+      "method": "test_continuation_is_reversible_and_prior_refutation_remains_saved",
+      "case": "capital_research.test_trend.TrendTests.test_continuation_is_reversible_and_prior_refutation_remains_saved"
+    },
+    {
+      "method": "test_evaluation_labels_cannot_rewrite_any_decision",
+      "case": "capital_research.test_trend.TrendTests.test_evaluation_labels_cannot_rewrite_any_decision"
+    },
+    {
+      "method": "test_evidence_source_or_version_conflicts_are_not_accepted_support",
+      "case": "capital_research.test_trend.TrendTests.test_evidence_source_or_version_conflicts_are_not_accepted_support"
+    },
+    {
+      "method": "test_exit_then_repair_reentry_uses_later_decision_and_actual_cash",
+      "case": "capital_research.test_trend.TrendTests.test_exit_then_repair_reentry_uses_later_decision_and_actual_cash"
+    },
+    {
+      "method": "test_geometric_growth_uses_one_original_account_not_trade_profit_per_day",
+      "case": "capital_research.test_trend.TrendTests.test_geometric_growth_uses_one_original_account_not_trade_profit_per_day"
+    },
+    {
+      "method": "test_hold_qualification_is_not_add_qualification",
+      "case": "capital_research.test_trend.TrendTests.test_hold_qualification_is_not_add_qualification"
+    },
+    {
+      "method": "test_invalid_future_evidence_and_prices_do_not_rewrite_prefix",
+      "case": "capital_research.test_trend.TrendTests.test_invalid_future_evidence_and_prices_do_not_rewrite_prefix"
+    },
+    {
+      "method": "test_limit_blocks_are_real_unfilled_orders_not_assumed_exits",
+      "case": "capital_research.test_trend.TrendTests.test_limit_blocks_are_real_unfilled_orders_not_assumed_exits"
+    },
+    {
+      "method": "test_market_paths_are_shared_but_realized_exposure_is_not_falsely_equal",
+      "case": "capital_research.test_trend.TrendTests.test_market_paths_are_shared_but_realized_exposure_is_not_falsely_equal"
+    },
+    {
+      "method": "test_no_identifiable_pressure_requires_a_verified_bounded_scope",
+      "case": "capital_research.test_trend.TrendTests.test_no_identifiable_pressure_requires_a_verified_bounded_scope"
+    },
+    {
+      "method": "test_no_participation_policy_is_preselected_as_best",
+      "case": "capital_research.test_trend.TrendTests.test_no_participation_policy_is_preselected_as_best"
+    },
+    {
+      "method": "test_participation_is_variable_and_not_a_permanent_floor",
+      "case": "capital_research.test_trend.TrendTests.test_participation_is_variable_and_not_a_permanent_floor"
+    },
+    {
+      "method": "test_pressure_data_gap_checked_absence_broken_and_remaining_are_distinct",
+      "case": "capital_research.test_trend.TrendTests.test_pressure_data_gap_checked_absence_broken_and_remaining_are_distinct"
+    },
+    {
+      "method": "test_same_prefix_all_future_paths_have_identical_initial_decision",
+      "case": "capital_research.test_trend.TrendTests.test_same_prefix_all_future_paths_have_identical_initial_decision"
+    },
+    {
+      "method": "test_small_new_step_never_clears_an_old_major_pressure",
+      "case": "capital_research.test_trend.TrendTests.test_small_new_step_never_clears_an_old_major_pressure"
+    },
+    {
+      "method": "test_source_basis_change_is_unknown_not_a_new_buy_signal",
+      "case": "capital_research.test_trend.TrendTests.test_source_basis_change_is_unknown_not_a_new_buy_signal"
+    },
+    {
+      "method": "test_target_reached_or_elapsed_time_does_not_force_exit",
+      "case": "capital_research.test_trend.TrendTests.test_target_reached_or_elapsed_time_does_not_force_exit"
+    },
+    {
+      "method": "test_virtual_purposes_partition_holdings_and_keep_entitlements_once",
+      "case": "capital_research.test_trend.TrendTests.test_virtual_purposes_partition_holdings_and_keep_entitlements_once"
+    },
+    {
+      "method": "test_winner_label_cannot_relax_hard_risk",
+      "case": "capital_research.test_trend.TrendTests.test_winner_label_cannot_relax_hard_risk"
+    },
+    {
+      "method": "test_cli_READ_never_imports_or_recalculates_engines",
+      "case": "capital_research.test_mechanisms.MechanismTests.test_cli_READ_never_imports_or_recalculates_engines"
+    },
+    {
+      "method": "test_immutable_store_conflict_and_partial_file_preserved",
+      "case": "capital_research.test_mechanisms.MechanismTests.test_immutable_store_conflict_and_partial_file_preserved"
+    },
+    {
+      "method": "test_missing_company_action_net_still_refused",
+      "case": "capital_research.test_mechanisms.MechanismTests.test_missing_company_action_net_still_refused"
+    },
+    {
+      "method": "test_real_flag_and_unknown_numeric_inputs_fail_closed",
+      "case": "capital_research.test_mechanisms.MechanismTests.test_real_flag_and_unknown_numeric_inputs_fail_closed"
+    },
+    {
+      "method": "test_missing_mark_never_fills_or_zeros",
+      "case": "capital_research.test_mechanisms.MechanismTests.test_missing_mark_never_fills_or_zeros"
+    }
+  ],
+  "real_window_producer_runs": 0,
+  "real_qualification_recomputations": 0,
+  "real_strategy_replays": 0,
+  "synthetic_paths": 9,
+  "synthetic_policy_sequences": 45,
+  "independent_market_samples": 0,
+  "synthetic_rounds_per_policy": 5,
+  "UI_or_browser_or_android_tests": 0,
+  "subagents": 0,
+  "bootstrap_runs": 0,
+  "old_packages_extracted": 0,
+  "astra_codex_fulltext_read": false,
+  "astra_work_read": "USER_REPORTED_459_LINES_48887_BYTES",
+  "numerical_source_versions": {
+    "capital_decision": "0.2",
+    "capital_execution": "0.2",
+    "trend": "0.1",
+    "action_ledger": "0.1_UNCHANGED"
+  },
+  "final_log": "tests-final-evidence-bound.log",
+  "earlier_final_log_retained": "tests-final.log",
+  "latest_exact_command": "PYTHONDONTWRITEBYTECODE=1 python3 -m capital_research.review_20261025.verify",
+  "late_evidence_binding_checked": true
+}

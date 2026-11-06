@@ -1,0 +1,41 @@
+{
+  "status": "UNFILLED_TEMPLATE_NOT_INVESTOR_DATA_NOT_ZERO_BALANCE_CERTIFICATE",
+  "account_id": null,
+  "scenario_type": null,
+  "tax_residence": null,
+  "tax_year": null,
+  "nhi_status": null,
+  "opening_close_date": null,
+  "cash_balance": null,
+  "positions": null,
+  "cash_receivables": null,
+  "share_receivables": null,
+  "capital_reduction_receivables": null,
+  "unsettled_payables": null,
+  "distribution_records": null,
+  "fractional_share_instructions": null,
+  "evidence_source_ids": null,
+  "verified_by": null,
+  "required_distribution_record_fields": [
+    "event_id",
+    "entitled_old_shares",
+    "gross_cash",
+    "withholding",
+    "nhi_premium",
+    "remittance_fee",
+    "net_cash",
+    "actual_received_at",
+    "allocated_whole_shares",
+    "fractional_disposition",
+    "actual_shares_received_at",
+    "first_tradable_date",
+    "source_id",
+    "locator"
+  ],
+  "notes": [
+    "本表沒有個人帳戶資料，不得送入數值引擎或自動把null改成0。",
+    "若改做情境研究，須明列情境而非冒充使用者實際持倉；期初資金及權利來源需有獨立定義與版本。",
+    "年底所得稅負與發放時扣繳／可用現金分開，不能把整年稅負當已扣現金。",
+    "原始持股／券商／集保文件不應提交公開儲存庫；本交付只有空白欄位。"
+  ]
+}

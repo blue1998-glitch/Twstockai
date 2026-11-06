@@ -1,0 +1,14 @@
+test_missing_volume_stays_unknown_not_partial_maximum_proxy (test_pressure_chart.PressureFactsTests.test_missing_volume_stays_unknown_not_partial_maximum_proxy) ... FAIL
+
+======================================================================
+FAIL: test_missing_volume_stays_unknown_not_partial_maximum_proxy (test_pressure_chart.PressureFactsTests.test_missing_volume_stays_unknown_not_partial_maximum_proxy)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/workspace/Twstockai/股票系統M1_v0_18/tests/test_pressure_chart.py", line 82, in test_missing_volume_stays_unknown_not_partial_maximum_proxy
+    self.assertIsNone(f['max_single_day_shares'])
+AssertionError: '30457336' is not None
+
+----------------------------------------------------------------------
+Ran 1 test in 1.503s
+
+FAILED (failures=1)

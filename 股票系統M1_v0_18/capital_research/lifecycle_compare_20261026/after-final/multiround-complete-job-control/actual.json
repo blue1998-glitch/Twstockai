@@ -1,0 +1,1348 @@
+{
+  "schema": "capital-lifecycle-comparison/0.1",
+  "status": "COMPARABLE",
+  "comparable": true,
+  "refusals": [],
+  "differences": [],
+  "total_mismatches": 0,
+  "diagnostic_limit": 64,
+  "details_truncated": false,
+  "provenance": [
+    {
+      "document_id": "sha256:5528a1e5c0b8359e6ce373e249e70befff126cfa894222136b688018a0c5c154",
+      "source_schema": "capital-quantity-replay/0.1",
+      "source_status": "COMPLETED_PROVIDED_ROUNDS",
+      "origin_ledger_input_id": "sha256:157af3c20da88039510200ba651afa2e23010ddc632ed2281cc0fa5bcdad45de",
+      "execution_result_id": "sha256:1c5bb3648ae177fb8fc8c45952031c6fb84fc077128910016e19d4190317612c",
+      "saved_job_ids": [
+        "sha256:64959f5ee3bea325b632b47bf93b425dca4b7dbd815cd795f1f752bed26829af",
+        "sha256:e743d80225ef4d6586f7357e1b6ec58af15cc5e137d2eaf0925b13da295f9e34"
+      ],
+      "identity_ids": {
+        "opening": "sha256:1f67118e4c12277258b09c915b6c9d4515f81d415e865fc640e50f62db0a37ee",
+        "window": "sha256:52b106d2b4b8eedf082997b3b59a9c4a7f24999141503071cb903f029ff54041",
+        "environment": "sha256:2bc87ac45716f332ff7ead3ce46c12abba2d126da7f0c0816d9edec63386299d",
+        "market": "sha256:c4c006641dccdc84067b06ff198c1f2f3f5dff6c6c982f436335e3d7d5fb6069"
+      },
+      "label": "多輪一"
+    },
+    {
+      "document_id": "sha256:5528a1e5c0b8359e6ce373e249e70befff126cfa894222136b688018a0c5c154",
+      "source_schema": "capital-quantity-replay/0.1",
+      "source_status": "COMPLETED_PROVIDED_ROUNDS",
+      "origin_ledger_input_id": "sha256:157af3c20da88039510200ba651afa2e23010ddc632ed2281cc0fa5bcdad45de",
+      "execution_result_id": "sha256:1c5bb3648ae177fb8fc8c45952031c6fb84fc077128910016e19d4190317612c",
+      "saved_job_ids": [
+        "sha256:64959f5ee3bea325b632b47bf93b425dca4b7dbd815cd795f1f752bed26829af",
+        "sha256:e743d80225ef4d6586f7357e1b6ec58af15cc5e137d2eaf0925b13da295f9e34"
+      ],
+      "identity_ids": {
+        "opening": "sha256:1f67118e4c12277258b09c915b6c9d4515f81d415e865fc640e50f62db0a37ee",
+        "window": "sha256:52b106d2b4b8eedf082997b3b59a9c4a7f24999141503071cb903f029ff54041",
+        "environment": "sha256:2bc87ac45716f332ff7ead3ce46c12abba2d126da7f0c0816d9edec63386299d",
+        "market": "sha256:c4c006641dccdc84067b06ff198c1f2f3f5dff6c6c982f436335e3d7d5fb6069"
+      },
+      "label": "多輪二"
+    }
+  ],
+  "common_identity_ids": {
+    "opening": "sha256:1f67118e4c12277258b09c915b6c9d4515f81d415e865fc640e50f62db0a37ee",
+    "window": "sha256:52b106d2b4b8eedf082997b3b59a9c4a7f24999141503071cb903f029ff54041",
+    "environment": "sha256:2bc87ac45716f332ff7ead3ce46c12abba2d126da7f0c0816d9edec63386299d",
+    "market": "sha256:c4c006641dccdc84067b06ff198c1f2f3f5dff6c6c982f436335e3d7d5fb6069"
+  },
+  "columns": [
+    {
+      "label": "多輪一",
+      "summary": {
+        "schema": "capital-batch-lifecycle/0.1",
+        "status": "READABLE",
+        "reasons": [],
+        "source": {
+          "kind": "quantity",
+          "schema": "capital-quantity-replay/0.1",
+          "status": "COMPLETED_PROVIDED_ROUNDS",
+          "saved_reasons": [],
+          "view": "LATEST_SAVED_SNAPSHOT",
+          "document_id": "sha256:5528a1e5c0b8359e6ce373e249e70befff126cfa894222136b688018a0c5c154"
+        },
+        "account": {
+          "as_of": "2026-01-12T16:00:00+08:00",
+          "available_at": "2026-01-12T16:00:00+08:00",
+          "ledger_close": {
+            "as_of": "2026-01-12T16:00:00+08:00",
+            "available_at": "2026-01-12T16:00:00+08:00",
+            "source_ids": [
+              "fixture"
+            ]
+          },
+          "saved_row": {
+            "date": "2026-01-12",
+            "settled_cash": "1115.640",
+            "available_cash_strict": "1115.640",
+            "shares": {
+              "A": "90",
+              "B": "8",
+              "C": "2"
+            },
+            "cash_receivable": "0",
+            "purchase_payable": "0",
+            "cash_claims": [],
+            "share_receivables": [],
+            "net_accrual_equity": "2225.640",
+            "marks": {
+              "A": {
+                "value": "10",
+                "source_date": "2026-01-12",
+                "carried_nontrading_mark": false,
+                "source_id": "fixture",
+                "basis_id": "RAW:fixture:A",
+                "quote_source_ids": [
+                  "fixture"
+                ]
+              },
+              "B": {
+                "value": "20",
+                "source_date": "2026-01-12",
+                "carried_nontrading_mark": false,
+                "source_id": "fixture",
+                "basis_id": "RAW:fixture:B",
+                "quote_source_ids": [
+                  "fixture"
+                ]
+              },
+              "C": {
+                "value": "25",
+                "source_date": "2026-01-12",
+                "carried_nontrading_mark": false,
+                "source_id": "fixture",
+                "basis_id": "RAW:fixture:C",
+                "quote_source_ids": [
+                  "fixture"
+                ]
+              }
+            }
+          },
+          "general_reserved_cash": "100",
+          "origin_initial_capital": "2230",
+          "external_flow": "0",
+          "opening_unavailable_shares": {
+            "A": "0",
+            "B": "0",
+            "C": "0"
+          },
+          "origin_ledger_input_id": "sha256:157af3c20da88039510200ba651afa2e23010ddc632ed2281cc0fa5bcdad45de",
+          "origin_common_account_id": "sha256:2369150777f3a0396a56e16a8b1d0531e9de4568da044f6a7a2d996e9835e8c2",
+          "latest_decision_id": "sha256:d3ff08317d45f0c4e7bbb78d2a15f41fbb98dc7f41231f8e39e58407b4c08ec1",
+          "latest_common_account_id": "sha256:dbe562ef6d2d77baf5221d7e22c35038404f46a731f941a53d54358f8e2780ea",
+          "reviewed_evidence_tokens": [
+            "fixture:event_id:A-event",
+            "fixture:event_id:B-event",
+            "fixture:event_id:B-next-round",
+            "fixture:event_id:C-event",
+            "fixture:formation_id:A-formation",
+            "fixture:formation_id:B-formation",
+            "fixture:formation_id:B-next-formation",
+            "fixture:formation_id:C-formation",
+            "fixture:volume_bar_id:A-bar",
+            "fixture:volume_bar_id:B-bar",
+            "fixture:volume_bar_id:B-next-bar",
+            "fixture:volume_bar_id:C-bar"
+          ],
+          "source_pointer": "/replay/rounds/1/execution/ledger/daily/7"
+        },
+        "snapshots": [
+          {
+            "as_of": "2026-01-08T16:00:00+08:00",
+            "available_at": "2026-01-08T16:00:00+08:00",
+            "ledger_close": {
+              "as_of": "2026-01-08T16:00:00+08:00",
+              "available_at": "2026-01-08T16:00:00+08:00",
+              "source_ids": [
+                "fixture"
+              ]
+            },
+            "saved_row": {
+              "date": "2026-01-08",
+              "settled_cash": "1056.660",
+              "available_cash_strict": "1056.660",
+              "shares": {
+                "A": "80",
+                "B": "7",
+                "C": "2"
+              },
+              "cash_receivable": "80",
+              "purchase_payable": "0",
+              "cash_claims": [
+                {
+                  "amount": "80",
+                  "id": "opening-cash",
+                  "pay_date": "2026-01-12",
+                  "source_ids": [
+                    "fixture"
+                  ],
+                  "kind": "OPENING_RECEIVABLE"
+                }
+              ],
+              "share_receivables": [
+                {
+                  "code": "A",
+                  "delivery_date": "2026-01-09",
+                  "id": "opening-shares",
+                  "shares": "10",
+                  "source_ids": [
+                    "fixture"
+                  ],
+                  "tradable_date": "2026-01-12"
+                }
+              ],
+              "net_accrual_equity": "2226.660",
+              "marks": {
+                "A": {
+                  "value": "10",
+                  "source_date": "2026-01-08",
+                  "carried_nontrading_mark": false,
+                  "source_id": "fixture",
+                  "basis_id": "RAW:fixture:A",
+                  "quote_source_ids": [
+                    "fixture"
+                  ]
+                },
+                "B": {
+                  "value": "20",
+                  "source_date": "2026-01-08",
+                  "carried_nontrading_mark": false,
+                  "source_id": "fixture",
+                  "basis_id": "RAW:fixture:B",
+                  "quote_source_ids": [
+                    "fixture"
+                  ]
+                },
+                "C": {
+                  "value": "25",
+                  "source_date": "2026-01-08",
+                  "carried_nontrading_mark": false,
+                  "source_id": "fixture",
+                  "basis_id": "RAW:fixture:C",
+                  "quote_source_ids": [
+                    "fixture"
+                  ]
+                }
+              }
+            },
+            "general_reserved_cash": "100",
+            "origin_initial_capital": "2230",
+            "external_flow": "0",
+            "opening_unavailable_shares": {
+              "A": "0",
+              "B": "0",
+              "C": "0"
+            },
+            "origin_ledger_input_id": "sha256:157af3c20da88039510200ba651afa2e23010ddc632ed2281cc0fa5bcdad45de",
+            "origin_common_account_id": "sha256:2369150777f3a0396a56e16a8b1d0531e9de4568da044f6a7a2d996e9835e8c2",
+            "latest_decision_id": "sha256:904fc4f512519e5a5c949625216bab40b9ac56ee3b0b9fdb2627c5dd7a64625b",
+            "latest_common_account_id": "sha256:2369150777f3a0396a56e16a8b1d0531e9de4568da044f6a7a2d996e9835e8c2",
+            "reviewed_evidence_tokens": [
+              "fixture:event_id:A-event",
+              "fixture:event_id:B-event",
+              "fixture:event_id:C-event",
+              "fixture:formation_id:A-formation",
+              "fixture:formation_id:B-formation",
+              "fixture:formation_id:C-formation",
+              "fixture:volume_bar_id:A-bar",
+              "fixture:volume_bar_id:B-bar",
+              "fixture:volume_bar_id:C-bar"
+            ],
+            "source_pointer": "/replay/rounds/0/execution/ledger/daily/3"
+          },
+          {
+            "as_of": "2026-01-12T16:00:00+08:00",
+            "available_at": "2026-01-12T16:00:00+08:00",
+            "ledger_close": {
+              "as_of": "2026-01-12T16:00:00+08:00",
+              "available_at": "2026-01-12T16:00:00+08:00",
+              "source_ids": [
+                "fixture"
+              ]
+            },
+            "saved_row": {
+              "date": "2026-01-12",
+              "settled_cash": "1115.640",
+              "available_cash_strict": "1115.640",
+              "shares": {
+                "A": "90",
+                "B": "8",
+                "C": "2"
+              },
+              "cash_receivable": "0",
+              "purchase_payable": "0",
+              "cash_claims": [],
+              "share_receivables": [],
+              "net_accrual_equity": "2225.640",
+              "marks": {
+                "A": {
+                  "value": "10",
+                  "source_date": "2026-01-12",
+                  "carried_nontrading_mark": false,
+                  "source_id": "fixture",
+                  "basis_id": "RAW:fixture:A",
+                  "quote_source_ids": [
+                    "fixture"
+                  ]
+                },
+                "B": {
+                  "value": "20",
+                  "source_date": "2026-01-12",
+                  "carried_nontrading_mark": false,
+                  "source_id": "fixture",
+                  "basis_id": "RAW:fixture:B",
+                  "quote_source_ids": [
+                    "fixture"
+                  ]
+                },
+                "C": {
+                  "value": "25",
+                  "source_date": "2026-01-12",
+                  "carried_nontrading_mark": false,
+                  "source_id": "fixture",
+                  "basis_id": "RAW:fixture:C",
+                  "quote_source_ids": [
+                    "fixture"
+                  ]
+                }
+              }
+            },
+            "general_reserved_cash": "100",
+            "origin_initial_capital": "2230",
+            "external_flow": "0",
+            "opening_unavailable_shares": {
+              "A": "0",
+              "B": "0",
+              "C": "0"
+            },
+            "origin_ledger_input_id": "sha256:157af3c20da88039510200ba651afa2e23010ddc632ed2281cc0fa5bcdad45de",
+            "origin_common_account_id": "sha256:2369150777f3a0396a56e16a8b1d0531e9de4568da044f6a7a2d996e9835e8c2",
+            "latest_decision_id": "sha256:d3ff08317d45f0c4e7bbb78d2a15f41fbb98dc7f41231f8e39e58407b4c08ec1",
+            "latest_common_account_id": "sha256:dbe562ef6d2d77baf5221d7e22c35038404f46a731f941a53d54358f8e2780ea",
+            "reviewed_evidence_tokens": [
+              "fixture:event_id:A-event",
+              "fixture:event_id:B-event",
+              "fixture:event_id:B-next-round",
+              "fixture:event_id:C-event",
+              "fixture:formation_id:A-formation",
+              "fixture:formation_id:B-formation",
+              "fixture:formation_id:B-next-formation",
+              "fixture:formation_id:C-formation",
+              "fixture:volume_bar_id:A-bar",
+              "fixture:volume_bar_id:B-bar",
+              "fixture:volume_bar_id:B-next-bar",
+              "fixture:volume_bar_id:C-bar"
+            ],
+            "source_pointer": "/replay/rounds/1/execution/ledger/daily/7"
+          }
+        ],
+        "approvals": [
+          {
+            "origin_decision_id": "sha256:904fc4f512519e5a5c949625216bab40b9ac56ee3b0b9fdb2627c5dd7a64625b",
+            "candidate_id": "quantity:sha256:56f76c7d40f2c39d22607b6ed2cd15253513daf95d2f53f487bbf7380cd119a0",
+            "classification": "CURRENTLY_FEASIBLE",
+            "saved_plan": {
+              "id": "quantity:sha256:56f76c7d40f2c39d22607b6ed2cd15253513daf95d2f53f487bbf7380cd119a0",
+              "family": "E",
+              "route": "R1",
+              "targets": {
+                "A": "50",
+                "B": "20",
+                "C": "2"
+              },
+              "trigger_ids": [],
+              "edge_budget": "1000",
+              "conditions": [
+                "CURRENT_RESEARCH_INTENT_ONLY",
+                "REASSESS_AFTER_SETTLEMENT",
+                "NEW_INDEPENDENT_TRIGGER_FOR_NEXT_BUY_BATCH"
+              ]
+            },
+            "source_pointer": "/replay/rounds/0/selected_candidate",
+            "shared_order_ids": [
+              "r1-A",
+              "r1-B"
+            ],
+            "budget_scope": "ONE_SHARED_RESEARCH_PROPOSAL_NOT_REUSABLE_PER_ORDER"
+          },
+          {
+            "origin_decision_id": "sha256:d3ff08317d45f0c4e7bbb78d2a15f41fbb98dc7f41231f8e39e58407b4c08ec1",
+            "candidate_id": "quantity:sha256:b8b6a21840091a7514b9058f60b3afa140757f492290e1739eedaade9731b519",
+            "classification": "CURRENTLY_FEASIBLE",
+            "saved_plan": {
+              "id": "quantity:sha256:b8b6a21840091a7514b9058f60b3afa140757f492290e1739eedaade9731b519",
+              "family": "C",
+              "route": "R1",
+              "targets": {
+                "A": "80",
+                "B": "8",
+                "C": "2"
+              },
+              "trigger_ids": [
+                "B-next-round"
+              ],
+              "edge_budget": "1000",
+              "conditions": [
+                "CURRENT_RESEARCH_INTENT_ONLY",
+                "REASSESS_AFTER_SETTLEMENT",
+                "NEW_INDEPENDENT_TRIGGER_FOR_NEXT_BUY_BATCH"
+              ]
+            },
+            "source_pointer": "/replay/rounds/1/selected_candidate",
+            "shared_order_ids": [
+              "r2-B"
+            ],
+            "budget_scope": "ONE_SHARED_RESEARCH_PROPOSAL_NOT_REUSABLE_PER_ORDER"
+          }
+        ],
+        "orders": [
+          {
+            "order_id": "r1-A",
+            "code": "A",
+            "side": "SELL",
+            "origin_decision_id": "sha256:904fc4f512519e5a5c949625216bab40b9ac56ee3b0b9fdb2627c5dd7a64625b",
+            "original_order": {
+              "id": "r1-A",
+              "code": "A",
+              "side": "SELL",
+              "shares": "50",
+              "limit_price": "9.98",
+              "decision_at": "2026-01-05T15:00:00+08:00",
+              "submitted_at": "2026-01-06T08:00:00+08:00",
+              "expires_at": "2026-01-08T16:00:00+08:00"
+            },
+            "approval_status": "SAVED_RESEARCH_APPROVAL",
+            "approved_order_quantity": "50",
+            "approval_quantity_scope": "ORIGINAL_ORDER_ONLY_NOT_ENTIRE_PLAN_OR_FRESH_BUY_PERMISSION",
+            "original_order_quantity": "50",
+            "filled_quantity": "20",
+            "live_remaining_quantity": "0",
+            "cancelled_unfilled_quantity": "0",
+            "expired_unfilled_quantity": "30",
+            "settled_fill_quantity": "20",
+            "pending_settlement_quantity": "0",
+            "unknown_settlement_quantity": "0",
+            "saved_order_state": {
+              "remaining": "30",
+              "status": "EXPIRED_UNFILLED",
+              "reserved_cash": "0",
+              "requires_reassessment": false,
+              "active_decision_at": "2026-01-05T15:00:00+08:00",
+              "active_decision_id": "sha256:904fc4f512519e5a5c949625216bab40b9ac56ee3b0b9fdb2627c5dd7a64625b"
+            },
+            "fills": [
+              {
+                "record": {
+                  "id": "r1-A-fill-0",
+                  "code": "A",
+                  "side": "SELL",
+                  "shares": "20",
+                  "price": "9.990",
+                  "fee": "1",
+                  "tax": "1",
+                  "date": "2026-01-06",
+                  "decision_date": "2026-01-05",
+                  "settlement_date": "2026-01-08",
+                  "source_ids": [
+                    "fixture"
+                  ]
+                },
+                "source_pointer": "/replay/rounds/1/execution/fills/0",
+                "settlement": {
+                  "status": "SETTLED_SAVED_JOURNAL",
+                  "records": [
+                    {
+                      "record": {
+                        "date": "2026-01-08",
+                        "type": "CASH_RECEIVED",
+                        "claim_id": "r1-A-fill-0",
+                        "kind": "SALE",
+                        "amount": "197.800"
+                      },
+                      "source_pointer": "/replay/rounds/1/execution/ledger/journal/2"
+                    }
+                  ],
+                  "pending_amount": null,
+                  "pending_amount_reason": "NOT_RECONSTRUCTED_FROM_PRICE_OR_ACCOUNT_AGGREGATE"
+                }
+              }
+            ],
+            "reviews": [],
+            "events": [
+              {
+                "record": {
+                  "at": "2026-01-06T09:00:00+08:00",
+                  "order_id": "r1-A",
+                  "status": "PARTIAL",
+                  "fill_id": "r1-A-fill-0",
+                  "decision_id": "sha256:904fc4f512519e5a5c949625216bab40b9ac56ee3b0b9fdb2627c5dd7a64625b",
+                  "reserved_cash_total": "402.0006",
+                  "remaining": "30"
+                },
+                "source_pointer": "/replay/rounds/0/execution/execution_events/0"
+              },
+              {
+                "record": {
+                  "at": "2026-01-08T16:00:00+08:00",
+                  "order_id": "r1-A",
+                  "status": "EXPIRED_UNFILLED",
+                  "reason": "EXPLICIT_ORDER_DEADLINE",
+                  "remaining": "30"
+                },
+                "source_pointer": "/replay/rounds/0/execution/execution_events/2"
+              }
+            ],
+            "source_pointer": "/replay/rounds/1/execution/order_history/0"
+          },
+          {
+            "order_id": "r1-B",
+            "code": "B",
+            "side": "BUY",
+            "origin_decision_id": "sha256:904fc4f512519e5a5c949625216bab40b9ac56ee3b0b9fdb2627c5dd7a64625b",
+            "original_order": {
+              "id": "r1-B",
+              "code": "B",
+              "side": "BUY",
+              "shares": "20",
+              "limit_price": "20.03",
+              "decision_at": "2026-01-05T15:00:00+08:00",
+              "submitted_at": "2026-01-06T08:00:00+08:00",
+              "expires_at": "2026-01-08T16:00:00+08:00"
+            },
+            "approval_status": "SAVED_RESEARCH_APPROVAL",
+            "approved_order_quantity": "20",
+            "approval_quantity_scope": "ORIGINAL_ORDER_ONLY_NOT_ENTIRE_PLAN_OR_FRESH_BUY_PERMISSION",
+            "original_order_quantity": "20",
+            "filled_quantity": "7",
+            "live_remaining_quantity": "0",
+            "cancelled_unfilled_quantity": "0",
+            "expired_unfilled_quantity": "13",
+            "settled_fill_quantity": "7",
+            "pending_settlement_quantity": "0",
+            "unknown_settlement_quantity": "0",
+            "saved_order_state": {
+              "remaining": "13",
+              "status": "EXPIRED_UNFILLED",
+              "reserved_cash": "0",
+              "requires_reassessment": false,
+              "active_decision_at": "2026-01-05T15:00:00+08:00",
+              "active_decision_id": "sha256:904fc4f512519e5a5c949625216bab40b9ac56ee3b0b9fdb2627c5dd7a64625b"
+            },
+            "fills": [
+              {
+                "record": {
+                  "id": "r1-B-fill-1",
+                  "code": "B",
+                  "side": "BUY",
+                  "shares": "7",
+                  "price": "20.020",
+                  "fee": "1",
+                  "tax": "0",
+                  "date": "2026-01-06",
+                  "decision_date": "2026-01-05",
+                  "settlement_date": "2026-01-08",
+                  "source_ids": [
+                    "fixture"
+                  ]
+                },
+                "source_pointer": "/replay/rounds/1/execution/fills/1",
+                "settlement": {
+                  "status": "SETTLED_SAVED_JOURNAL",
+                  "records": [
+                    {
+                      "record": {
+                        "date": "2026-01-08",
+                        "type": "PURCHASE_SETTLED",
+                        "fill_id": "r1-B-fill-1",
+                        "amount": "141.140"
+                      },
+                      "source_pointer": "/replay/rounds/1/execution/ledger/journal/3"
+                    }
+                  ],
+                  "pending_amount": null,
+                  "pending_amount_reason": "NOT_RECONSTRUCTED_FROM_PRICE_OR_ACCOUNT_AGGREGATE"
+                }
+              }
+            ],
+            "reviews": [],
+            "events": [
+              {
+                "record": {
+                  "at": "2026-01-06T09:01:00+08:00",
+                  "order_id": "r1-B",
+                  "status": "PARTIAL",
+                  "fill_id": "r1-B-fill-1",
+                  "decision_id": "sha256:904fc4f512519e5a5c949625216bab40b9ac56ee3b0b9fdb2627c5dd7a64625b",
+                  "reserved_cash_total": "261.65039",
+                  "remaining": "13"
+                },
+                "source_pointer": "/replay/rounds/0/execution/execution_events/1"
+              },
+              {
+                "record": {
+                  "at": "2026-01-08T16:00:00+08:00",
+                  "order_id": "r1-B",
+                  "status": "EXPIRED_UNFILLED",
+                  "reason": "EXPLICIT_ORDER_DEADLINE",
+                  "remaining": "13"
+                },
+                "source_pointer": "/replay/rounds/0/execution/execution_events/3"
+              }
+            ],
+            "source_pointer": "/replay/rounds/1/execution/order_history/1"
+          },
+          {
+            "order_id": "r2-B",
+            "code": "B",
+            "side": "BUY",
+            "origin_decision_id": "sha256:d3ff08317d45f0c4e7bbb78d2a15f41fbb98dc7f41231f8e39e58407b4c08ec1",
+            "original_order": {
+              "id": "r2-B",
+              "code": "B",
+              "side": "BUY",
+              "shares": "1",
+              "limit_price": "20.03",
+              "decision_at": "2026-01-08T17:00:00+08:00",
+              "submitted_at": "2026-01-09T08:00:00+08:00",
+              "expires_at": "2026-01-12T16:00:00+08:00"
+            },
+            "approval_status": "SAVED_RESEARCH_APPROVAL",
+            "approved_order_quantity": "1",
+            "approval_quantity_scope": "ORIGINAL_ORDER_ONLY_NOT_ENTIRE_PLAN_OR_FRESH_BUY_PERMISSION",
+            "original_order_quantity": "1",
+            "filled_quantity": "1",
+            "live_remaining_quantity": "0",
+            "cancelled_unfilled_quantity": "0",
+            "expired_unfilled_quantity": "0",
+            "settled_fill_quantity": "1",
+            "pending_settlement_quantity": "0",
+            "unknown_settlement_quantity": "0",
+            "saved_order_state": {
+              "remaining": "0",
+              "status": "FILLED",
+              "reserved_cash": "0",
+              "requires_reassessment": false,
+              "active_decision_at": "2026-01-08T17:00:00+08:00",
+              "active_decision_id": "sha256:d3ff08317d45f0c4e7bbb78d2a15f41fbb98dc7f41231f8e39e58407b4c08ec1"
+            },
+            "fills": [
+              {
+                "record": {
+                  "id": "r2-B-fill-2",
+                  "code": "B",
+                  "side": "BUY",
+                  "shares": "1",
+                  "price": "20.020",
+                  "fee": "1",
+                  "tax": "0",
+                  "date": "2026-01-09",
+                  "decision_date": "2026-01-08",
+                  "settlement_date": "2026-01-12",
+                  "source_ids": [
+                    "fixture"
+                  ]
+                },
+                "source_pointer": "/replay/rounds/1/execution/fills/2",
+                "settlement": {
+                  "status": "SETTLED_SAVED_JOURNAL",
+                  "records": [
+                    {
+                      "record": {
+                        "date": "2026-01-12",
+                        "type": "PURCHASE_SETTLED",
+                        "fill_id": "r2-B-fill-2",
+                        "amount": "21.020"
+                      },
+                      "source_pointer": "/replay/rounds/1/execution/ledger/journal/8"
+                    }
+                  ],
+                  "pending_amount": null,
+                  "pending_amount_reason": "NOT_RECONSTRUCTED_FROM_PRICE_OR_ACCOUNT_AGGREGATE"
+                }
+              }
+            ],
+            "reviews": [],
+            "events": [
+              {
+                "record": {
+                  "at": "2026-01-09T09:01:00+08:00",
+                  "order_id": "r2-B",
+                  "status": "FILLED",
+                  "fill_id": "r2-B-fill-2",
+                  "decision_id": "sha256:d3ff08317d45f0c4e7bbb78d2a15f41fbb98dc7f41231f8e39e58407b4c08ec1",
+                  "reserved_cash_total": "0.00000",
+                  "remaining": "0"
+                },
+                "source_pointer": "/replay/rounds/1/execution/execution_events/0"
+              }
+            ],
+            "source_pointer": "/replay/rounds/1/execution/order_history/2"
+          }
+        ],
+        "validation_scope": "SAVED_STRUCTURAL_LINKS_NOT_LEDGER_REPLAY_OR_SOURCE_AUTHENTICATION",
+        "data_qualified": false,
+        "execution_model_qualified": false,
+        "historical_signal_eligible": false,
+        "policy_authorized": false,
+        "live_execution_authorized": false,
+        "primary_pressure_id": null
+      }
+    },
+    {
+      "label": "多輪二",
+      "summary": {
+        "schema": "capital-batch-lifecycle/0.1",
+        "status": "READABLE",
+        "reasons": [],
+        "source": {
+          "kind": "quantity",
+          "schema": "capital-quantity-replay/0.1",
+          "status": "COMPLETED_PROVIDED_ROUNDS",
+          "saved_reasons": [],
+          "view": "LATEST_SAVED_SNAPSHOT",
+          "document_id": "sha256:5528a1e5c0b8359e6ce373e249e70befff126cfa894222136b688018a0c5c154"
+        },
+        "account": {
+          "as_of": "2026-01-12T16:00:00+08:00",
+          "available_at": "2026-01-12T16:00:00+08:00",
+          "ledger_close": {
+            "as_of": "2026-01-12T16:00:00+08:00",
+            "available_at": "2026-01-12T16:00:00+08:00",
+            "source_ids": [
+              "fixture"
+            ]
+          },
+          "saved_row": {
+            "date": "2026-01-12",
+            "settled_cash": "1115.640",
+            "available_cash_strict": "1115.640",
+            "shares": {
+              "A": "90",
+              "B": "8",
+              "C": "2"
+            },
+            "cash_receivable": "0",
+            "purchase_payable": "0",
+            "cash_claims": [],
+            "share_receivables": [],
+            "net_accrual_equity": "2225.640",
+            "marks": {
+              "A": {
+                "value": "10",
+                "source_date": "2026-01-12",
+                "carried_nontrading_mark": false,
+                "source_id": "fixture",
+                "basis_id": "RAW:fixture:A",
+                "quote_source_ids": [
+                  "fixture"
+                ]
+              },
+              "B": {
+                "value": "20",
+                "source_date": "2026-01-12",
+                "carried_nontrading_mark": false,
+                "source_id": "fixture",
+                "basis_id": "RAW:fixture:B",
+                "quote_source_ids": [
+                  "fixture"
+                ]
+              },
+              "C": {
+                "value": "25",
+                "source_date": "2026-01-12",
+                "carried_nontrading_mark": false,
+                "source_id": "fixture",
+                "basis_id": "RAW:fixture:C",
+                "quote_source_ids": [
+                  "fixture"
+                ]
+              }
+            }
+          },
+          "general_reserved_cash": "100",
+          "origin_initial_capital": "2230",
+          "external_flow": "0",
+          "opening_unavailable_shares": {
+            "A": "0",
+            "B": "0",
+            "C": "0"
+          },
+          "origin_ledger_input_id": "sha256:157af3c20da88039510200ba651afa2e23010ddc632ed2281cc0fa5bcdad45de",
+          "origin_common_account_id": "sha256:2369150777f3a0396a56e16a8b1d0531e9de4568da044f6a7a2d996e9835e8c2",
+          "latest_decision_id": "sha256:d3ff08317d45f0c4e7bbb78d2a15f41fbb98dc7f41231f8e39e58407b4c08ec1",
+          "latest_common_account_id": "sha256:dbe562ef6d2d77baf5221d7e22c35038404f46a731f941a53d54358f8e2780ea",
+          "reviewed_evidence_tokens": [
+            "fixture:event_id:A-event",
+            "fixture:event_id:B-event",
+            "fixture:event_id:B-next-round",
+            "fixture:event_id:C-event",
+            "fixture:formation_id:A-formation",
+            "fixture:formation_id:B-formation",
+            "fixture:formation_id:B-next-formation",
+            "fixture:formation_id:C-formation",
+            "fixture:volume_bar_id:A-bar",
+            "fixture:volume_bar_id:B-bar",
+            "fixture:volume_bar_id:B-next-bar",
+            "fixture:volume_bar_id:C-bar"
+          ],
+          "source_pointer": "/replay/rounds/1/execution/ledger/daily/7"
+        },
+        "snapshots": [
+          {
+            "as_of": "2026-01-08T16:00:00+08:00",
+            "available_at": "2026-01-08T16:00:00+08:00",
+            "ledger_close": {
+              "as_of": "2026-01-08T16:00:00+08:00",
+              "available_at": "2026-01-08T16:00:00+08:00",
+              "source_ids": [
+                "fixture"
+              ]
+            },
+            "saved_row": {
+              "date": "2026-01-08",
+              "settled_cash": "1056.660",
+              "available_cash_strict": "1056.660",
+              "shares": {
+                "A": "80",
+                "B": "7",
+                "C": "2"
+              },
+              "cash_receivable": "80",
+              "purchase_payable": "0",
+              "cash_claims": [
+                {
+                  "amount": "80",
+                  "id": "opening-cash",
+                  "pay_date": "2026-01-12",
+                  "source_ids": [
+                    "fixture"
+                  ],
+                  "kind": "OPENING_RECEIVABLE"
+                }
+              ],
+              "share_receivables": [
+                {
+                  "code": "A",
+                  "delivery_date": "2026-01-09",
+                  "id": "opening-shares",
+                  "shares": "10",
+                  "source_ids": [
+                    "fixture"
+                  ],
+                  "tradable_date": "2026-01-12"
+                }
+              ],
+              "net_accrual_equity": "2226.660",
+              "marks": {
+                "A": {
+                  "value": "10",
+                  "source_date": "2026-01-08",
+                  "carried_nontrading_mark": false,
+                  "source_id": "fixture",
+                  "basis_id": "RAW:fixture:A",
+                  "quote_source_ids": [
+                    "fixture"
+                  ]
+                },
+                "B": {
+                  "value": "20",
+                  "source_date": "2026-01-08",
+                  "carried_nontrading_mark": false,
+                  "source_id": "fixture",
+                  "basis_id": "RAW:fixture:B",
+                  "quote_source_ids": [
+                    "fixture"
+                  ]
+                },
+                "C": {
+                  "value": "25",
+                  "source_date": "2026-01-08",
+                  "carried_nontrading_mark": false,
+                  "source_id": "fixture",
+                  "basis_id": "RAW:fixture:C",
+                  "quote_source_ids": [
+                    "fixture"
+                  ]
+                }
+              }
+            },
+            "general_reserved_cash": "100",
+            "origin_initial_capital": "2230",
+            "external_flow": "0",
+            "opening_unavailable_shares": {
+              "A": "0",
+              "B": "0",
+              "C": "0"
+            },
+            "origin_ledger_input_id": "sha256:157af3c20da88039510200ba651afa2e23010ddc632ed2281cc0fa5bcdad45de",
+            "origin_common_account_id": "sha256:2369150777f3a0396a56e16a8b1d0531e9de4568da044f6a7a2d996e9835e8c2",
+            "latest_decision_id": "sha256:904fc4f512519e5a5c949625216bab40b9ac56ee3b0b9fdb2627c5dd7a64625b",
+            "latest_common_account_id": "sha256:2369150777f3a0396a56e16a8b1d0531e9de4568da044f6a7a2d996e9835e8c2",
+            "reviewed_evidence_tokens": [
+              "fixture:event_id:A-event",
+              "fixture:event_id:B-event",
+              "fixture:event_id:C-event",
+              "fixture:formation_id:A-formation",
+              "fixture:formation_id:B-formation",
+              "fixture:formation_id:C-formation",
+              "fixture:volume_bar_id:A-bar",
+              "fixture:volume_bar_id:B-bar",
+              "fixture:volume_bar_id:C-bar"
+            ],
+            "source_pointer": "/replay/rounds/0/execution/ledger/daily/3"
+          },
+          {
+            "as_of": "2026-01-12T16:00:00+08:00",
+            "available_at": "2026-01-12T16:00:00+08:00",
+            "ledger_close": {
+              "as_of": "2026-01-12T16:00:00+08:00",
+              "available_at": "2026-01-12T16:00:00+08:00",
+              "source_ids": [
+                "fixture"
+              ]
+            },
+            "saved_row": {
+              "date": "2026-01-12",
+              "settled_cash": "1115.640",
+              "available_cash_strict": "1115.640",
+              "shares": {
+                "A": "90",
+                "B": "8",
+                "C": "2"
+              },
+              "cash_receivable": "0",
+              "purchase_payable": "0",
+              "cash_claims": [],
+              "share_receivables": [],
+              "net_accrual_equity": "2225.640",
+              "marks": {
+                "A": {
+                  "value": "10",
+                  "source_date": "2026-01-12",
+                  "carried_nontrading_mark": false,
+                  "source_id": "fixture",
+                  "basis_id": "RAW:fixture:A",
+                  "quote_source_ids": [
+                    "fixture"
+                  ]
+                },
+                "B": {
+                  "value": "20",
+                  "source_date": "2026-01-12",
+                  "carried_nontrading_mark": false,
+                  "source_id": "fixture",
+                  "basis_id": "RAW:fixture:B",
+                  "quote_source_ids": [
+                    "fixture"
+                  ]
+                },
+                "C": {
+                  "value": "25",
+                  "source_date": "2026-01-12",
+                  "carried_nontrading_mark": false,
+                  "source_id": "fixture",
+                  "basis_id": "RAW:fixture:C",
+                  "quote_source_ids": [
+                    "fixture"
+                  ]
+                }
+              }
+            },
+            "general_reserved_cash": "100",
+            "origin_initial_capital": "2230",
+            "external_flow": "0",
+            "opening_unavailable_shares": {
+              "A": "0",
+              "B": "0",
+              "C": "0"
+            },
+            "origin_ledger_input_id": "sha256:157af3c20da88039510200ba651afa2e23010ddc632ed2281cc0fa5bcdad45de",
+            "origin_common_account_id": "sha256:2369150777f3a0396a56e16a8b1d0531e9de4568da044f6a7a2d996e9835e8c2",
+            "latest_decision_id": "sha256:d3ff08317d45f0c4e7bbb78d2a15f41fbb98dc7f41231f8e39e58407b4c08ec1",
+            "latest_common_account_id": "sha256:dbe562ef6d2d77baf5221d7e22c35038404f46a731f941a53d54358f8e2780ea",
+            "reviewed_evidence_tokens": [
+              "fixture:event_id:A-event",
+              "fixture:event_id:B-event",
+              "fixture:event_id:B-next-round",
+              "fixture:event_id:C-event",
+              "fixture:formation_id:A-formation",
+              "fixture:formation_id:B-formation",
+              "fixture:formation_id:B-next-formation",
+              "fixture:formation_id:C-formation",
+              "fixture:volume_bar_id:A-bar",
+              "fixture:volume_bar_id:B-bar",
+              "fixture:volume_bar_id:B-next-bar",
+              "fixture:volume_bar_id:C-bar"
+            ],
+            "source_pointer": "/replay/rounds/1/execution/ledger/daily/7"
+          }
+        ],
+        "approvals": [
+          {
+            "origin_decision_id": "sha256:904fc4f512519e5a5c949625216bab40b9ac56ee3b0b9fdb2627c5dd7a64625b",
+            "candidate_id": "quantity:sha256:56f76c7d40f2c39d22607b6ed2cd15253513daf95d2f53f487bbf7380cd119a0",
+            "classification": "CURRENTLY_FEASIBLE",
+            "saved_plan": {
+              "id": "quantity:sha256:56f76c7d40f2c39d22607b6ed2cd15253513daf95d2f53f487bbf7380cd119a0",
+              "family": "E",
+              "route": "R1",
+              "targets": {
+                "A": "50",
+                "B": "20",
+                "C": "2"
+              },
+              "trigger_ids": [],
+              "edge_budget": "1000",
+              "conditions": [
+                "CURRENT_RESEARCH_INTENT_ONLY",
+                "REASSESS_AFTER_SETTLEMENT",
+                "NEW_INDEPENDENT_TRIGGER_FOR_NEXT_BUY_BATCH"
+              ]
+            },
+            "source_pointer": "/replay/rounds/0/selected_candidate",
+            "shared_order_ids": [
+              "r1-A",
+              "r1-B"
+            ],
+            "budget_scope": "ONE_SHARED_RESEARCH_PROPOSAL_NOT_REUSABLE_PER_ORDER"
+          },
+          {
+            "origin_decision_id": "sha256:d3ff08317d45f0c4e7bbb78d2a15f41fbb98dc7f41231f8e39e58407b4c08ec1",
+            "candidate_id": "quantity:sha256:b8b6a21840091a7514b9058f60b3afa140757f492290e1739eedaade9731b519",
+            "classification": "CURRENTLY_FEASIBLE",
+            "saved_plan": {
+              "id": "quantity:sha256:b8b6a21840091a7514b9058f60b3afa140757f492290e1739eedaade9731b519",
+              "family": "C",
+              "route": "R1",
+              "targets": {
+                "A": "80",
+                "B": "8",
+                "C": "2"
+              },
+              "trigger_ids": [
+                "B-next-round"
+              ],
+              "edge_budget": "1000",
+              "conditions": [
+                "CURRENT_RESEARCH_INTENT_ONLY",
+                "REASSESS_AFTER_SETTLEMENT",
+                "NEW_INDEPENDENT_TRIGGER_FOR_NEXT_BUY_BATCH"
+              ]
+            },
+            "source_pointer": "/replay/rounds/1/selected_candidate",
+            "shared_order_ids": [
+              "r2-B"
+            ],
+            "budget_scope": "ONE_SHARED_RESEARCH_PROPOSAL_NOT_REUSABLE_PER_ORDER"
+          }
+        ],
+        "orders": [
+          {
+            "order_id": "r1-A",
+            "code": "A",
+            "side": "SELL",
+            "origin_decision_id": "sha256:904fc4f512519e5a5c949625216bab40b9ac56ee3b0b9fdb2627c5dd7a64625b",
+            "original_order": {
+              "id": "r1-A",
+              "code": "A",
+              "side": "SELL",
+              "shares": "50",
+              "limit_price": "9.98",
+              "decision_at": "2026-01-05T15:00:00+08:00",
+              "submitted_at": "2026-01-06T08:00:00+08:00",
+              "expires_at": "2026-01-08T16:00:00+08:00"
+            },
+            "approval_status": "SAVED_RESEARCH_APPROVAL",
+            "approved_order_quantity": "50",
+            "approval_quantity_scope": "ORIGINAL_ORDER_ONLY_NOT_ENTIRE_PLAN_OR_FRESH_BUY_PERMISSION",
+            "original_order_quantity": "50",
+            "filled_quantity": "20",
+            "live_remaining_quantity": "0",
+            "cancelled_unfilled_quantity": "0",
+            "expired_unfilled_quantity": "30",
+            "settled_fill_quantity": "20",
+            "pending_settlement_quantity": "0",
+            "unknown_settlement_quantity": "0",
+            "saved_order_state": {
+              "remaining": "30",
+              "status": "EXPIRED_UNFILLED",
+              "reserved_cash": "0",
+              "requires_reassessment": false,
+              "active_decision_at": "2026-01-05T15:00:00+08:00",
+              "active_decision_id": "sha256:904fc4f512519e5a5c949625216bab40b9ac56ee3b0b9fdb2627c5dd7a64625b"
+            },
+            "fills": [
+              {
+                "record": {
+                  "id": "r1-A-fill-0",
+                  "code": "A",
+                  "side": "SELL",
+                  "shares": "20",
+                  "price": "9.990",
+                  "fee": "1",
+                  "tax": "1",
+                  "date": "2026-01-06",
+                  "decision_date": "2026-01-05",
+                  "settlement_date": "2026-01-08",
+                  "source_ids": [
+                    "fixture"
+                  ]
+                },
+                "source_pointer": "/replay/rounds/1/execution/fills/0",
+                "settlement": {
+                  "status": "SETTLED_SAVED_JOURNAL",
+                  "records": [
+                    {
+                      "record": {
+                        "date": "2026-01-08",
+                        "type": "CASH_RECEIVED",
+                        "claim_id": "r1-A-fill-0",
+                        "kind": "SALE",
+                        "amount": "197.800"
+                      },
+                      "source_pointer": "/replay/rounds/1/execution/ledger/journal/2"
+                    }
+                  ],
+                  "pending_amount": null,
+                  "pending_amount_reason": "NOT_RECONSTRUCTED_FROM_PRICE_OR_ACCOUNT_AGGREGATE"
+                }
+              }
+            ],
+            "reviews": [],
+            "events": [
+              {
+                "record": {
+                  "at": "2026-01-06T09:00:00+08:00",
+                  "order_id": "r1-A",
+                  "status": "PARTIAL",
+                  "fill_id": "r1-A-fill-0",
+                  "decision_id": "sha256:904fc4f512519e5a5c949625216bab40b9ac56ee3b0b9fdb2627c5dd7a64625b",
+                  "reserved_cash_total": "402.0006",
+                  "remaining": "30"
+                },
+                "source_pointer": "/replay/rounds/0/execution/execution_events/0"
+              },
+              {
+                "record": {
+                  "at": "2026-01-08T16:00:00+08:00",
+                  "order_id": "r1-A",
+                  "status": "EXPIRED_UNFILLED",
+                  "reason": "EXPLICIT_ORDER_DEADLINE",
+                  "remaining": "30"
+                },
+                "source_pointer": "/replay/rounds/0/execution/execution_events/2"
+              }
+            ],
+            "source_pointer": "/replay/rounds/1/execution/order_history/0"
+          },
+          {
+            "order_id": "r1-B",
+            "code": "B",
+            "side": "BUY",
+            "origin_decision_id": "sha256:904fc4f512519e5a5c949625216bab40b9ac56ee3b0b9fdb2627c5dd7a64625b",
+            "original_order": {
+              "id": "r1-B",
+              "code": "B",
+              "side": "BUY",
+              "shares": "20",
+              "limit_price": "20.03",
+              "decision_at": "2026-01-05T15:00:00+08:00",
+              "submitted_at": "2026-01-06T08:00:00+08:00",
+              "expires_at": "2026-01-08T16:00:00+08:00"
+            },
+            "approval_status": "SAVED_RESEARCH_APPROVAL",
+            "approved_order_quantity": "20",
+            "approval_quantity_scope": "ORIGINAL_ORDER_ONLY_NOT_ENTIRE_PLAN_OR_FRESH_BUY_PERMISSION",
+            "original_order_quantity": "20",
+            "filled_quantity": "7",
+            "live_remaining_quantity": "0",
+            "cancelled_unfilled_quantity": "0",
+            "expired_unfilled_quantity": "13",
+            "settled_fill_quantity": "7",
+            "pending_settlement_quantity": "0",
+            "unknown_settlement_quantity": "0",
+            "saved_order_state": {
+              "remaining": "13",
+              "status": "EXPIRED_UNFILLED",
+              "reserved_cash": "0",
+              "requires_reassessment": false,
+              "active_decision_at": "2026-01-05T15:00:00+08:00",
+              "active_decision_id": "sha256:904fc4f512519e5a5c949625216bab40b9ac56ee3b0b9fdb2627c5dd7a64625b"
+            },
+            "fills": [
+              {
+                "record": {
+                  "id": "r1-B-fill-1",
+                  "code": "B",
+                  "side": "BUY",
+                  "shares": "7",
+                  "price": "20.020",
+                  "fee": "1",
+                  "tax": "0",
+                  "date": "2026-01-06",
+                  "decision_date": "2026-01-05",
+                  "settlement_date": "2026-01-08",
+                  "source_ids": [
+                    "fixture"
+                  ]
+                },
+                "source_pointer": "/replay/rounds/1/execution/fills/1",
+                "settlement": {
+                  "status": "SETTLED_SAVED_JOURNAL",
+                  "records": [
+                    {
+                      "record": {
+                        "date": "2026-01-08",
+                        "type": "PURCHASE_SETTLED",
+                        "fill_id": "r1-B-fill-1",
+                        "amount": "141.140"
+                      },
+                      "source_pointer": "/replay/rounds/1/execution/ledger/journal/3"
+                    }
+                  ],
+                  "pending_amount": null,
+                  "pending_amount_reason": "NOT_RECONSTRUCTED_FROM_PRICE_OR_ACCOUNT_AGGREGATE"
+                }
+              }
+            ],
+            "reviews": [],
+            "events": [
+              {
+                "record": {
+                  "at": "2026-01-06T09:01:00+08:00",
+                  "order_id": "r1-B",
+                  "status": "PARTIAL",
+                  "fill_id": "r1-B-fill-1",
+                  "decision_id": "sha256:904fc4f512519e5a5c949625216bab40b9ac56ee3b0b9fdb2627c5dd7a64625b",
+                  "reserved_cash_total": "261.65039",
+                  "remaining": "13"
+                },
+                "source_pointer": "/replay/rounds/0/execution/execution_events/1"
+              },
+              {
+                "record": {
+                  "at": "2026-01-08T16:00:00+08:00",
+                  "order_id": "r1-B",
+                  "status": "EXPIRED_UNFILLED",
+                  "reason": "EXPLICIT_ORDER_DEADLINE",
+                  "remaining": "13"
+                },
+                "source_pointer": "/replay/rounds/0/execution/execution_events/3"
+              }
+            ],
+            "source_pointer": "/replay/rounds/1/execution/order_history/1"
+          },
+          {
+            "order_id": "r2-B",
+            "code": "B",
+            "side": "BUY",
+            "origin_decision_id": "sha256:d3ff08317d45f0c4e7bbb78d2a15f41fbb98dc7f41231f8e39e58407b4c08ec1",
+            "original_order": {
+              "id": "r2-B",
+              "code": "B",
+              "side": "BUY",
+              "shares": "1",
+              "limit_price": "20.03",
+              "decision_at": "2026-01-08T17:00:00+08:00",
+              "submitted_at": "2026-01-09T08:00:00+08:00",
+              "expires_at": "2026-01-12T16:00:00+08:00"
+            },
+            "approval_status": "SAVED_RESEARCH_APPROVAL",
+            "approved_order_quantity": "1",
+            "approval_quantity_scope": "ORIGINAL_ORDER_ONLY_NOT_ENTIRE_PLAN_OR_FRESH_BUY_PERMISSION",
+            "original_order_quantity": "1",
+            "filled_quantity": "1",
+            "live_remaining_quantity": "0",
+            "cancelled_unfilled_quantity": "0",
+            "expired_unfilled_quantity": "0",
+            "settled_fill_quantity": "1",
+            "pending_settlement_quantity": "0",
+            "unknown_settlement_quantity": "0",
+            "saved_order_state": {
+              "remaining": "0",
+              "status": "FILLED",
+              "reserved_cash": "0",
+              "requires_reassessment": false,
+              "active_decision_at": "2026-01-08T17:00:00+08:00",
+              "active_decision_id": "sha256:d3ff08317d45f0c4e7bbb78d2a15f41fbb98dc7f41231f8e39e58407b4c08ec1"
+            },
+            "fills": [
+              {
+                "record": {
+                  "id": "r2-B-fill-2",
+                  "code": "B",
+                  "side": "BUY",
+                  "shares": "1",
+                  "price": "20.020",
+                  "fee": "1",
+                  "tax": "0",
+                  "date": "2026-01-09",
+                  "decision_date": "2026-01-08",
+                  "settlement_date": "2026-01-12",
+                  "source_ids": [
+                    "fixture"
+                  ]
+                },
+                "source_pointer": "/replay/rounds/1/execution/fills/2",
+                "settlement": {
+                  "status": "SETTLED_SAVED_JOURNAL",
+                  "records": [
+                    {
+                      "record": {
+                        "date": "2026-01-12",
+                        "type": "PURCHASE_SETTLED",
+                        "fill_id": "r2-B-fill-2",
+                        "amount": "21.020"
+                      },
+                      "source_pointer": "/replay/rounds/1/execution/ledger/journal/8"
+                    }
+                  ],
+                  "pending_amount": null,
+                  "pending_amount_reason": "NOT_RECONSTRUCTED_FROM_PRICE_OR_ACCOUNT_AGGREGATE"
+                }
+              }
+            ],
+            "reviews": [],
+            "events": [
+              {
+                "record": {
+                  "at": "2026-01-09T09:01:00+08:00",
+                  "order_id": "r2-B",
+                  "status": "FILLED",
+                  "fill_id": "r2-B-fill-2",
+                  "decision_id": "sha256:d3ff08317d45f0c4e7bbb78d2a15f41fbb98dc7f41231f8e39e58407b4c08ec1",
+                  "reserved_cash_total": "0.00000",
+                  "remaining": "0"
+                },
+                "source_pointer": "/replay/rounds/1/execution/execution_events/0"
+              }
+            ],
+            "source_pointer": "/replay/rounds/1/execution/order_history/2"
+          }
+        ],
+        "validation_scope": "SAVED_STRUCTURAL_LINKS_NOT_LEDGER_REPLAY_OR_SOURCE_AUTHENTICATION",
+        "data_qualified": false,
+        "execution_model_qualified": false,
+        "historical_signal_eligible": false,
+        "policy_authorized": false,
+        "live_execution_authorized": false,
+        "primary_pressure_id": null
+      }
+    }
+  ],
+  "comparison_scope": "SAVED_SYNTHETIC_EPISODE_AND_DECLARED_MARKET_PATH_NOT_POLICY_PERFORMANCE",
+  "job_to_execution_causality": "NOT_REPLAYED_OR_AUTHENTICATED",
+  "ranking": null,
+  "selected_label": null,
+  "data_qualified": false,
+  "execution_model_qualified": false,
+  "historical_signal_eligible": false,
+  "policy_authorized": false,
+  "live_execution_authorized": false,
+  "primary_pressure_id": null
+}

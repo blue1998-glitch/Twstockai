@@ -1,0 +1,26 @@
+{
+  "schema": "m1-user-reviewed-positive-case/1",
+  "case_id": "2884-rising-pullback-consolidation-20261016",
+  "label_origin": "USER_CONFIRMED_2026-10-20T21:07:05+08:00",
+  "evidence_ref": "6c50b19303074aa1210d11051745ca0b127592e6",
+  "evidence_sha256": "0349820739aa24743f28258f661bc5990255eb1a0894ca78987a60bfb41d8883",
+  "expected_qualitative_descriptions": {
+    "consolidation_interval": true,
+    "within_rising_process": true,
+    "temporary_pullback_consolidation": true,
+    "subsequent_rise": true
+  },
+  "descriptions_are_compatible": true,
+  "must_preserve_original_qualifications": {
+    "latest_high49_95": "UNCONFIRMED_NOT_A_PIVOT",
+    "exact_formal_interval_dates": null,
+    "formal_price_bounds": null,
+    "formal_membership": null,
+    "primary_pressure_id": null,
+    "historical_signal_eligible": false,
+    "formal_lifecycle": null,
+    "action_qualification": "NOT_EVALUATED"
+  },
+  "execution_status": "SAVED_REVIEWED_EVIDENCE_NOT_AN_EXECUTED_PRODUCTION_CLASSIFIER_TEST",
+  "not_production_logic": "Labels are reviewed fixture expectations, not date/price constants in an automatic recognition algorithm."
+}

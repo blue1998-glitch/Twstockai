@@ -1,0 +1,15 @@
+# Work交接：大範圍先行，B內部微波動不再提問
+
+儲存庫blue1998-glitch/Twstockai；分支dev/m1-v018-chart-annotations；本輪起點b4946e18b7ebd40a6b32a5726159cefcaa6eb64c，最新提交／逐檔回讀以本目錄GITHUB_READBACK_RECEIPT.json及實際HEAD核，不預填。保留原引擎、策略、參數、資料及全後續，main基線9c5b168c09ba80010c74f03b9c537e8b7474256a不改。最高目的仍資金增值閉環＋正向資本成長飛輪。
+
+先讀根AGENTS.md、CONTINUE_IN_WORK_MODE.md、M1_V019_GRAPH_CORE_RESUME_HANDOFF.md最新節，再讀docs/visual-discussion/20261021_top_down_band_work_review/README.md、decision.json及本檔。廣角圖沿前輪20261021_b_wide_context_work_review四頁向量PDF及兩年／五年／一年／截至4/28日K，不重畫。最新使用者答案優先取代前輪B角色全未定及待廣角裁決的敘述；歷史來源與既有事實不改。
+
+新人工答案：原B4/16～4/27小段只是較大價格帶內微小波動，沒有觸及價格帶高點或低點，在這次整體判讀不重要。原局部一個或兩個整理的問題CLOSED_NOT_MATERIAL_TO_OVERALL_BAND，不再要求裁決，也不把這個回答硬映射成原方案一或二。B宏觀角色已答INTERNAL_MINOR_FLUCTUATION；正式合併／精確大帶起末價界／代表點／全成員仍null，不能把未指定精確項目說成沒有人工角色答案。
+
+後續必須先由廣角辨認同一較大價格帶及高低參照，再看相對這些參照的觸及／跨過／返回，最後才判內部活動是否足以改變整體描述。不能先自行圈小段，只用小段互比得出需要裁決的整體問題；不能把每個算得出的局部差異視作重要新帶。大到小是辨識順序，不等於最大窗或最寬框自動當主帶。此例不擴張為所有未觸邊波動一律無用的策略門檻，不發明重要性分數、帶寬或機率。往後重要核心歧義先給足可放大前後背景；微小例行問題自行依已定原則處理。
+
+原局部來源數值及可知時點沿前輪evidence-views／study-inputs；4/28後117筆只供事後形狀背景，不回填當日訊號資格，historical_signal_eligible=false。A、ABC、G2既有人工答案不重問；收盤跨原參照即可更新問題而非新大結構成立，重用形成點不算多次反應保持。來源Raw公司行動／完整日曆／歷史公開可得及舊缺日限制保持。
+
+本輪僅保存使用者新人工判斷、更新研究順序與交接，並核同分支逐檔內容；新圖、行情抓取、指標／結構重算、舊driver／verifier／產品測試、bootstrap、瀏覽器與Android皆0。分類NOT_VALIDATED、用途NOT_ESTABLISHED、新Android NOT_TESTED_NEW_BUILD、行動與飛輪成效NOT_EVALUATED，不能把人工B角色答覆當模型已通過。
+
+維持Work，依由大到小的順序承接較大帶與內部活動關係研究；不要重開B小段一或二，不重問A ABC G2。例行可逆多步研究、修正與同分支GitHub交付已獲授權，必要重要新核心才附足夠圖問。不部署付費交易訊息子代理。若切換模式才附完整可複製交接。

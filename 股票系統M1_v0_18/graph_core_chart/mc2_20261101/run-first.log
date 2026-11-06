@@ -1,0 +1,13 @@
+Traceback (most recent call last):
+  File "<frozen runpy>", line 198, in _run_module_as_main
+  File "<frozen runpy>", line 88, in _run_code
+  File "/workspace/Twstockai/股票系統M1_v0_18/graph_core_chart/comparison_export.py", line 200, in <module>
+    value=run();print(json.dumps({s['code']:dict(boxes=s['box_count'],events=s['event_count'],shards=len(s['box_shards'])) for s in value['stocks']}))
+          ^^^^^
+  File "/workspace/Twstockai/股票系統M1_v0_18/graph_core_chart/comparison_export.py", line 157, in run
+    value,boxes=project(r,s,p,spec,l,dict(path=str(file.relative_to(ROOT.parent)),bytes=len(raw),sha256=sha(raw)))
+                ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/workspace/Twstockai/股票系統M1_v0_18/graph_core_chart/comparison_export.py", line 66, in project
+    source = ledger['source']
+             ~~~~~~^^^^^^^^^^
+KeyError: 'source'

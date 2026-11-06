@@ -1,0 +1,33 @@
+{
+  "schema": "manual-breakout-holding-principle/1",
+  "base_commit": "f6f15eb8a68f66fe41cc0f2157795790147cb6ad",
+  "user_quote": "是有帶量很好，沒帶量不一定就沒成功，還是看事後股價有沒有站穩突破高點價位",
+  "adjudication": "ANSWERED_VOLUME_SUPPORT_NOT_MANDATORY_SUCCESS_GATE",
+  "price_crossing_exists_independent_of_volume_expansion": true,
+  "volume_expansion_can_support_breakout_reading": true,
+  "volume_expansion_required_for_success": false,
+  "volume_expansion_sufficient_for_success": false,
+  "no_volume_expansion_means_failure": false,
+  "breakout_outcome_observation_focus": "SUBSEQUENT_PRICE_HOLDING_ABOVE_THE_BROKEN_HIGH",
+  "holding_can_be_backfilled_as_known_on_original_break_date": false,
+  "original_crossing_fact_deleted_after_later_return": false,
+  "separate_dates": ["PRICE_CROSSING_DATE", "FOLLOWUP_OBSERVATION_DATE", "HOLDING_CONFIRMATION_DATE_IF_DEFINED_AND_OBSERVED"],
+  "small_and_large_levels_updated_separately": true,
+  "holding_definition": {
+    "duration": null,
+    "allowed_wick_or_close_returns": null,
+    "allowed_depth": null,
+    "reclaim_treatment": null,
+    "formal_confirmation_condition": null
+  },
+  "volume_comparison_baseline_and_threshold": null,
+  "formal_B_band_bounds": null,
+  "new_trade_eligibility_approved": false,
+  "historical_signal_eligible": false,
+  "new_manual_question": false,
+  "new_figures_market_downloads_engine_product_tests": 0,
+  "classifier": "NOT_VALIDATED",
+  "Android": "NOT_TESTED_NEW_BUILD",
+  "next_mode": "Work",
+  "next_priority": "Followup price holding, return and reclaim evidence at each level; volume as supporting or adverse context, with no mandatory expansion veto."
+}

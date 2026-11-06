@@ -1,0 +1,61 @@
+<div id="cutoff-volume-review">
+  <h3>當日量價，與後來的解釋</h3>
+  <div class="viz-controls">
+    <label class="form-label">保存案例 <select id="pv-case" class="form-select"></select></label>
+    <label class="form-label">截止日 <select id="pv-date" class="form-select"></select></label>
+  </div>
+  <p id="pv-status" aria-live="polite"></p>
+  <div id="pv-plot"></div>
+  <p id="pv-readout" class="tabular-nums" aria-live="polite"></p>
+  <label class="form-check"><input id="pv-review" type="checkbox" class="form-check-input"><span class="form-check-label">另外顯示事後人工研究</span></label>
+  <p id="pv-notes" hidden></p>
+  <p class="text-small">Raw 原始日 K・成交股數・回顧選樣非盲測・完整公司行動／歷史發布可得未核</p>
+</div>
+<style>
+#cutoff-volume-review{color:var(--foreground)}
+#cutoff-volume-review .pv-chart{display:block;width:100%;touch-action:pan-y}
+#cutoff-volume-review .pv-chart text{fill:var(--foreground);font-size:12px}
+#cutoff-volume-review p{overflow-wrap:anywhere}
+</style>
+<script>
+(()=>{
+const root=document.getElementById('cutoff-volume-review');
+const source=__FACTS_JSON__;
+const by=id=>root.querySelector('#'+id),sel=by('pv-case'),date=by('pv-date'),plot=by('pv-plot');
+let current=null;
+function option(target,value,label){const o=document.createElement('option');o.value=value;o.textContent=label;target.append(o);}
+source.cases.forEach(c=>option(sel,c.id,c.name));
+function shownCase(){return source.cases.find(c=>c.id===sel.value);}
+function loadCase(){date.replaceChildren();shownCase().snapshots.forEach(s=>option(date,s.as_of,s.as_of));loadDate();}
+function showBar(b){by('pv-readout').textContent=b.date+'｜開 '+b.open+' 高 '+b.high+' 低 '+b.low+' 收 '+b.close+'｜量 '+Number(b.volume_shares).toLocaleString('zh-TW')+' 股';}
+function showNotes(){const notes=shownCase().retrospective_notes.filter(n=>n.event_date<=current.as_of);by('pv-notes').hidden=!by('pv-review').checked;by('pv-notes').textContent=notes.length?notes.map(n=>n.text+'（人工紀錄日 '+n.recorded_at+'；不當成當年已知訊號）').join(' '):'此截止日沒有可顯示的事後事件解釋；當日換手是否成功仍未知。';}
+function loadDate(){current=shownCase().snapshots.find(s=>s.as_of===date.value);by('pv-status').textContent=current.first_date+'～'+current.as_of+'｜'+current.bar_count+' 根保存 K｜量的經濟角色：未知';showBar(current.latest);showNotes();draw();}
+function draw(){
+ if(!current)return;
+ const bars=current.bars,W=Math.max(280,plot.getBoundingClientRect().width),H=390,L=64,R=16,T=20,B=H-42,PH=232,VG=20,VH=B-T-PH-VG;
+ const low=Number(current.plot_domain.low),high=Number(current.plot_domain.high),pad=(high-low)*.08||1,y=v=>T+PH-(Number(v)-low+pad)/(high-low+2*pad)*PH;
+ const x=i=>L+(i+.5)/bars.length*(W-L-R),v=v=>B-Number(v)/Number(current.plot_domain.volume_max)*VH;
+ const ns='http://www.w3.org/2000/svg',svg=document.createElementNS(ns,'svg');svg.classList.add('pv-chart');svg.setAttribute('viewBox','0 0 '+W+' '+H);svg.setAttribute('role','img');svg.setAttribute('aria-label',shownCase().name+' 截止 '+current.as_of+' 的日 K 與股數量；未顯示未來 K');
+ function add(tag,attrs,text){const e=document.createElementNS(ns,tag);Object.entries(attrs).forEach(([k,v])=>e.setAttribute(k,v));if(text!==undefined)e.textContent=text;svg.append(e);return e;}
+ add('rect',{'data-chart-frame':'',x:L,y:T,width:W-L-R,height:PH,fill:'none',stroke:'var(--border)'});
+ add('rect',{'data-chart-frame':'',x:L,y:T+PH+VG,width:W-L-R,height:VH,fill:'none',stroke:'var(--border)'});
+ [0,.5,1].forEach(f=>{const py=T+PH*f,val=high+pad-f*(high-low+2*pad);add('line',{x1:L,y1:py,x2:W-R,y2:py,stroke:'var(--border)'});add('text',{x:L-8,y:py+4,'text-anchor':'end'},val.toFixed(2));});
+ add('text',{x:2,y:14,class:'axis-title','data-axis':'y'},'價格／元');
+ add('text',{x:2,y:T+PH+VG-4,class:'axis-title','data-axis':'y'},'百萬股');
+ add('text',{x:L-8,y:T+PH+VG+10,'text-anchor':'end'},(Number(current.plot_domain.volume_max)/1e6).toFixed(1));
+ add('text',{x:L-8,y:B,'text-anchor':'end'},'0');
+ const width=Math.max(.65,Math.min(8,(W-L-R)/bars.length*.65));
+ bars.forEach((b,i)=>{const color=Number(b.close)>=Number(b.open)?'var(--red)':'var(--green)';add('line',{x1:x(i),x2:x(i),y1:y(b.low),y2:y(b.high),stroke:color,'stroke-width':.8});add('rect',{x:x(i)-width/2,y:Math.min(y(b.open),y(b.close)),width,height:Math.max(.8,Math.abs(y(b.open)-y(b.close))),fill:color});add('rect',{x:x(i)-width/2,y:v(b.volume_shares),width,height:B-v(b.volume_shares),fill:color});});
+ [0,Math.floor((bars.length-1)/2),bars.length-1].forEach((i,n)=>add('text',{x:n===0?L:n===2?W-R:x(i),y:H-21,'text-anchor':n===0?'start':n===2?'end':'middle'},bars[i].date));
+ add('text',{x:(L+W-R)/2,y:H-3,'text-anchor':'middle',class:'axis-title','data-axis':'x'},'保存交易日');
+ const guide=add('line',{x1:0,x2:0,y1:T,y2:B,stroke:'var(--foreground)',opacity:0});
+ const hit=add('rect',{'data-chart-hit':'',x:L,y:T,width:W-L-R,height:B-T,fill:'transparent'});
+ function selectAt(e){const rect=svg.getBoundingClientRect(),px=(e.clientX-rect.left)/rect.width*W;const i=Math.max(0,Math.min(bars.length-1,Math.floor((px-L)/(W-L-R)*bars.length)));guide.setAttribute('x1',Math.max(L,Math.min(W-R,px)));guide.setAttribute('x2',Math.max(L,Math.min(W-R,px)));guide.setAttribute('opacity','.5');showBar(bars[i]);}
+ hit.addEventListener('pointermove',e=>{if(e.pointerType==='mouse')selectAt(e);});hit.addEventListener('pointerdown',selectAt);
+ plot.replaceChildren(svg);
+}
+sel.addEventListener('change',loadCase);date.addEventListener('change',loadDate);by('pv-review').addEventListener('change',showNotes);
+new ResizeObserver(draw).observe(plot);loadCase();
+window.cutoffStudyInspect=()=>structuredClone(current);
+})();
+</script>

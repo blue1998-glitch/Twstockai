@@ -1,0 +1,51 @@
+{
+  "observed_at": "2026-11-02T10:35:58.561079+00:00",
+  "protected_sources": [
+    {
+      "path": "股票系統M1_v0_18/graph_core/core.py",
+      "sha256": "0d844f8528dbca874c32007edf221f3c54fd6a078415dba354a4b8d51e2fdcfc",
+      "baseline_identical": true
+    },
+    {
+      "path": "股票系統M1_v0_18/graph_core/market_daily.py",
+      "sha256": "4cb74e69cfd093a4a20b784785cc512a6c80429784829fb2345d026f191e4f08",
+      "baseline_identical": true
+    },
+    {
+      "path": "股票系統M1_v0_18/graph_core/market_finmind.py",
+      "sha256": "541f47910595e2f6fff01b444b982b1035a31bff92f3619ae321b8837c2babf7",
+      "baseline_identical": true
+    },
+    {
+      "path": "股票系統M1_v0_18/product_candidate/macd.py",
+      "sha256": "49bccfca359b87c0b4aeb91c18212038aa8a93f3dd9e6701c27aac71724ce54d",
+      "baseline_identical": true
+    },
+    {
+      "path": "股票系統M1_v0_18/src/moving_averages.py",
+      "sha256": "48cc41895afecf073d86e53e290350e8477acbde2f79f56ac28057c03b0af08f",
+      "baseline_identical": true
+    }
+  ],
+  "original_fm3_run": "fm3-6c2d7247893f00075e477cd3b48d890484cbef373eb3a9bea09cb89f8f3d1dba-af859d005ef4ddd3",
+  "original_preview_sha256": "47d520d3b079d2ccea9e1563a538e5c575ef85b3069da9005aed9ffb5197c222",
+  "original_preview_bytes": 4296767,
+  "original_preview_sha_matches": true,
+  "original_reference_count": 1986,
+  "original_chart_descriptors": 1469,
+  "new_increment_head_created": false,
+  "new_real_core_calls": 0,
+  "new_history_fetches": 0,
+  "private_root": "/workspace/twstockai-local-data/fm3_20261101/runtime",
+  "private_root_readable": true,
+  "storage": {
+    "free_bytes": 3000586240,
+    "estimated_pending_full_batch_bytes": 19104029089,
+    "estimate_role": "CONSERVATIVE_METADATA_RESULT_PLUS_PROJECTION_NOT_MEASURED_REAL_NEW_RUN",
+    "capacity_sufficient_for_estimate": false,
+    "persistence": "UNKNOWN_OVERLAY_ONLY",
+    "restart_restore": "NOT_TESTED",
+    "independent_backup": "NOT_VERIFIED"
+  },
+  "legacy_untracked": "PRESERVED_NOT_STAGED"
+}

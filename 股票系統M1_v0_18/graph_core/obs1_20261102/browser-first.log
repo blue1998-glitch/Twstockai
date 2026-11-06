@@ -1,0 +1,40 @@
+page.selectOption: Timeout 30000ms exceeded.
+Call log:
+[2m  - waiting for locator('#radarType')[22m
+[2m    - locator resolved to <select id="radarType" aria-label="事件類別">…</select>[22m
+[2m  - attempting select option action[22m
+[2m    2 × waiting for element to be visible and enabled[22m
+[2m      - did not find some options[22m
+[2m    - retrying select option action[22m
+[2m    - waiting 20ms[22m
+[2m    2 × waiting for element to be visible and enabled[22m
+[2m      - did not find some options[22m
+[2m    - retrying select option action[22m
+[2m      - waiting 100ms[22m
+[2m    27 × waiting for element to be visible and enabled[22m
+[2m       - did not find some options[22m
+[2m     - retrying select option action[22m
+[2m       - waiting 500ms[22m
+[2m    - waiting for element to be visible and enabled[22m
+
+    at /workspace/Twstockai/股票系統M1_v0_18/graph_core/obs1_20261102/test_ui.cjs:7:609 {
+  log: [
+    "  - waiting for locator('#radarType')",
+    '    - locator resolved to <select id="radarType" aria-label="事件類別">…</select>',
+    '  - attempting select option action',
+    '    2 × waiting for element to be visible and enabled',
+    '      - did not find some options',
+    '    - retrying select option action',
+    '    - waiting 20ms',
+    '    2 × waiting for element to be visible and enabled',
+    '      - did not find some options',
+    '    - retrying select option action',
+    '      - waiting 100ms',
+    '    27 × waiting for element to be visible and enabled',
+    '       - did not find some options',
+    '     - retrying select option action',
+    '       - waiting 500ms',
+    '    - waiting for element to be visible and enabled'
+  ],
+  name: 'TimeoutError'
+}

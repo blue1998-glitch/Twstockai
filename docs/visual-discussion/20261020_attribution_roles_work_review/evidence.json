@@ -1,0 +1,923 @@
+{
+  "schema": "m1-explicit-attribution-worksheet/1",
+  "qualification": "ASSISTANT_RESEARCH_NOT_FORMAL_GROUPING_OR_NEW_QUERY",
+  "source_comparison_sha256": "184bdef0b687ec0ab7bfcaaac2157ff7916fbc1000ef312d81b5efc0c2e73e15",
+  "source_query_sha256": "4a43a8c0f03bbffacb86306f064b7c807a7a83bdaf7e737bc76cd654a2c1dbb0",
+  "original_core_result_id": "sha256:ec7bca9ed6aa176c328fd8c4e94a31ea66967832e7089ac20a44090461f49da4",
+  "manual_month_background_unchanged": {
+    "end_month": "2025-04",
+    "exact_end": null,
+    "exact_start": null,
+    "formal_price_bounds": null,
+    "representative": null,
+    "start_month": "2023-06",
+    "time_precision": "MONTH",
+    "user_priority": "more significant than the local box in this case",
+    "volume_rule": null
+  },
+  "roles": [
+    {
+      "part": "earlier_high_source",
+      "evidence": "A原39.25及B16/B17/B18引用",
+      "research_role": "較早高位候選來源",
+      "formal_membership": null
+    },
+    {
+      "part": "downward_link_with_rebounds",
+      "evidence": "原3%同段完整9點路徑，含末段反彈",
+      "research_role": "較早高位至後段區的過程證據",
+      "formal_membership": null
+    },
+    {
+      "part": "later_repeated_region",
+      "evidence": "B77原6%十來源與完整廣角價量",
+      "research_role": "後段反覆區候選描述，非整個人工整體",
+      "formal_membership": null
+    },
+    {
+      "part": "april_transition_context",
+      "evidence": "原6%3/12→4/8→4/10→4/22，後續5/13另列",
+      "research_role": "右端轉弱及低位反彈的待歸屬觀察",
+      "formal_membership": null
+    }
+  ],
+  "A": {
+    "original_pivot": {
+      "confirmation": "LATER_COMPLETED_CLOSE_REVERSAL_RESEARCH",
+      "confirmed_at": "2023-06-28",
+      "confirmed_index": 410,
+      "first_observed_at": "2023-06-28",
+      "id": "sha256:011882379d9561e6159599b0ec46daafcab6525bee76307ad758658734f7d611",
+      "kind": "HIGH",
+      "occurred_at": "2023-06-05",
+      "occurred_index": 395,
+      "price": "39.25",
+      "scale": "0.03",
+      "segment": 0,
+      "source_dates": [
+        "2023-06-05"
+      ]
+    },
+    "original_bar": {
+      "close": "38.85",
+      "date": "2023-06-05",
+      "high": "39.25",
+      "low": "38.65",
+      "open": "38.75",
+      "volume_shares_scaled": "23588849"
+    }
+  },
+  "original_boxes": {
+    "B16": {
+      "id": "sha256:f7b1979396a73dbbef6ad00649d1054bc9d1910de8b263921381fba2698f26f2",
+      "scale": "0.03",
+      "segment": 0,
+      "start": "2023-04-19",
+      "source_end": "2023-06-05",
+      "confirmed_at": "2023-06-28",
+      "source_turn_ids": [
+        "sha256:a27fa73b72f5bb2ed7efb282b14d21f24afd8991111b966f0d32009d5d5e5530",
+        "sha256:95e9f5683087819cc6c7e15e3d66d0fbd0abbc675fd7aaeea3cce6a8f37e107a",
+        "sha256:e8c63bf593c04690d0dfe26bd69bb70432e2f46d389312c82a48b508b1471947",
+        "sha256:98d84393f1ab674fd512365416f50228b5b7af2cf917e59d369de7116ece333e",
+        "sha256:3d270abf132d1abbfe2188f8fa31f0b2a7370f68ca3432792ee7ba0b7aedc172",
+        "sha256:011882379d9561e6159599b0ec46daafcab6525bee76307ad758658734f7d611"
+      ],
+      "formal_region_membership": null,
+      "formal_price_bounds": null
+    },
+    "B17": {
+      "id": "sha256:bf8dc408969d884d167f37c9824af06d5e4bc4ecbd5fc3e717d61279ed67ff56",
+      "scale": "0.03",
+      "segment": 0,
+      "start": "2023-04-26",
+      "source_end": "2023-06-05",
+      "confirmed_at": "2023-06-28",
+      "source_turn_ids": [
+        "sha256:e8c63bf593c04690d0dfe26bd69bb70432e2f46d389312c82a48b508b1471947",
+        "sha256:98d84393f1ab674fd512365416f50228b5b7af2cf917e59d369de7116ece333e",
+        "sha256:3d270abf132d1abbfe2188f8fa31f0b2a7370f68ca3432792ee7ba0b7aedc172",
+        "sha256:011882379d9561e6159599b0ec46daafcab6525bee76307ad758658734f7d611"
+      ],
+      "formal_region_membership": null,
+      "formal_price_bounds": null
+    },
+    "B18": {
+      "id": "sha256:972e2a2b4bf4f997da6618369bd28b8496e040276e3bf5293fa924cbeec8255c",
+      "scale": "0.03",
+      "segment": 0,
+      "start": "2023-05-02",
+      "source_end": "2023-07-24",
+      "confirmed_at": "2023-07-25",
+      "source_turn_ids": [
+        "sha256:98d84393f1ab674fd512365416f50228b5b7af2cf917e59d369de7116ece333e",
+        "sha256:3d270abf132d1abbfe2188f8fa31f0b2a7370f68ca3432792ee7ba0b7aedc172",
+        "sha256:011882379d9561e6159599b0ec46daafcab6525bee76307ad758658734f7d611",
+        "sha256:7210776f81a69f7bd268e41812a45fa66b336e8b93acc1f03399057882eba0fa"
+      ],
+      "formal_region_membership": null,
+      "formal_price_bounds": null
+    },
+    "B44": {
+      "id": "sha256:84d06011ea42c8890e2c271c1612ccd92341c82696721b9519bace0af364aa32",
+      "scale": "0.03",
+      "segment": 0,
+      "start": "2025-04-08",
+      "source_end": "2025-05-13",
+      "confirmed_at": "2025-05-14",
+      "source_turn_ids": [
+        "sha256:45c65aa99ad5bd42bf7575d2388269c540c85883dd1ae9c332b2a408e7c72818",
+        "sha256:18bc66878dd0ec4062a073a0cbb8e7be977a615ae0f5452a6fd693bc4a91f467",
+        "sha256:d4db4c10b16a7a4c2bf7334d363a5a90c82ba4b15ac5d72d43b61a4f71b0a527",
+        "sha256:203d0b11418597215257e8eb0551095b5cb563d72fe1cc7e1c8ae3d2e4644f5e"
+      ],
+      "formal_region_membership": null,
+      "formal_price_bounds": null
+    },
+    "B77": {
+      "id": "sha256:3753f89be8aef29f8f6c7910cbb979ddde8a68a37e496b5148f72dc74311db20",
+      "scale": "0.06",
+      "segment": 0,
+      "start": "2023-10-24",
+      "source_end": "2025-03-12",
+      "confirmed_at": "2025-03-24",
+      "source_turn_ids": [
+        "sha256:bc5b2bbe9655693026e719c545e6b0f1836f8c4f170c14be75b48be5cc883809",
+        "sha256:c60419732c272d53705a6a247502b716cca36266dfc26041db91e6d77fd41310",
+        "sha256:591bf193245ff2f7f687daf5fded2d993d3263fda5eb879410b91b7ed538d478",
+        "sha256:27689f78527ec76a0ee68f5b3524a3c35083e34aa477f3c1eab825e94618cace",
+        "sha256:d8ec3464135b0e6dcb48a7e74821e69a337d4ac8d3e38c712a5ae40677cfd1de",
+        "sha256:bbbcdc363d541befe0e986b67609800d37a753280f1f14c586be84d4b588b74f",
+        "sha256:6220d4d5638483f037a05df336dee86debdf6be29d289013df10a5d6dcfde6da",
+        "sha256:c1faddf3ce557ac3b650ce652de5bc3b23196799de204a5dba28183ed52b4ba8",
+        "sha256:54d90595a011f44f5e56b84eeb09174ba6aaeb3aa2924eab5e244d56cef0bde8",
+        "sha256:6a8f1a87cf2d060b46ee391b3b5f09069f45590ac835a5085803cff65d7b088e"
+      ],
+      "formal_region_membership": null,
+      "formal_price_bounds": null
+    },
+    "B80": {
+      "id": "sha256:8bc16b7b1f4d83cc1cdf9f4ffc5644941e58dcd2356a6c1fd02b66695d43bdd5",
+      "scale": "0.06",
+      "segment": 0,
+      "start": "2025-04-08",
+      "source_end": "2025-05-13",
+      "confirmed_at": "2025-05-27",
+      "source_turn_ids": [
+        "sha256:233839e7823baa79b0e7d07a0bdac3a550b7c988e76a623757a11b7928d518da",
+        "sha256:243bf84af74074747b494e36899d8c86c4637837daed427430f3aac915776d82",
+        "sha256:7658f485ed5a6c071581cbede277481ab54835325af568de44614eee3c12f627",
+        "sha256:430f9d7b4ed73d2fe6fe4f6cbd1e4332f24ada9d7154306107937036d9ce9e07"
+      ],
+      "formal_region_membership": null,
+      "formal_price_bounds": null
+    }
+  },
+  "original_3pct_query_path": {
+    "from_id": "sha256:011882379d9561e6159599b0ec46daafcab6525bee76307ad758658734f7d611",
+    "to_id": "sha256:9dfc96bd6434daa930e32fb2f09cd7d463a8fbb680a0f029cba636eef460130c",
+    "scale": "0.03",
+    "segment": 0,
+    "turn_ids": [
+      "sha256:011882379d9561e6159599b0ec46daafcab6525bee76307ad758658734f7d611",
+      "sha256:7210776f81a69f7bd268e41812a45fa66b336e8b93acc1f03399057882eba0fa",
+      "sha256:bd8579d39b7b9973f33251c80a4f961058f04ecd067a87fc6b43a28834af1253",
+      "sha256:ca4191106fe7f54b9397762dd17e5c6a74a668c02d04e4abee8e654d46328d87",
+      "sha256:4f0bca405c3544f2d998a48dbc8015d2067f9ac1c105e940bb21567ffae98ee3",
+      "sha256:a2638cc479155b09ebe68e0ae8d9360e874b5bec174de2db406ed33120ec2d69",
+      "sha256:92cea8b3abd26e69b711c713e4991251e2a1a3a73db48ceeaad74936a4209553",
+      "sha256:0dd27c9869d1bfc891a79e904c621712928b60b46b4f93579d043ed39b42068f",
+      "sha256:9dfc96bd6434daa930e32fb2f09cd7d463a8fbb680a0f029cba636eef460130c"
+    ],
+    "records": 9,
+    "sequence_records": 119,
+    "records_before": 33,
+    "records_after": 77,
+    "not_before_original_confirmations": "2023-11-29",
+    "qualification": "EXPLICIT_SAVED_SUBSEQUENCE_NOT_FORMAL_WHOLE_START_STOP_OR_SUCCESSION"
+  },
+  "original_3pct_path_records": [
+    {
+      "original_pivot": {
+        "confirmation": "LATER_COMPLETED_CLOSE_REVERSAL_RESEARCH",
+        "confirmed_at": "2023-06-28",
+        "confirmed_index": 410,
+        "first_observed_at": "2023-06-28",
+        "id": "sha256:011882379d9561e6159599b0ec46daafcab6525bee76307ad758658734f7d611",
+        "kind": "HIGH",
+        "occurred_at": "2023-06-05",
+        "occurred_index": 395,
+        "price": "39.25",
+        "scale": "0.03",
+        "segment": 0,
+        "source_dates": [
+          "2023-06-05"
+        ]
+      },
+      "original_bar": {
+        "close": "38.85",
+        "date": "2023-06-05",
+        "high": "39.25",
+        "low": "38.65",
+        "open": "38.75",
+        "volume_shares_scaled": "23588849"
+      }
+    },
+    {
+      "original_pivot": {
+        "confirmation": "LATER_COMPLETED_CLOSE_REVERSAL_RESEARCH",
+        "confirmed_at": "2023-07-25",
+        "confirmed_index": 429,
+        "first_observed_at": "2023-07-25",
+        "id": "sha256:7210776f81a69f7bd268e41812a45fa66b336e8b93acc1f03399057882eba0fa",
+        "kind": "LOW",
+        "occurred_at": "2023-07-24",
+        "occurred_index": 428,
+        "price": "36.00",
+        "scale": "0.03",
+        "segment": 0,
+        "source_dates": [
+          "2023-07-24"
+        ]
+      },
+      "original_bar": {
+        "close": "36.50",
+        "date": "2023-07-24",
+        "high": "36.90",
+        "low": "36.00",
+        "open": "36.20",
+        "volume_shares_scaled": "15855908"
+      }
+    },
+    {
+      "original_pivot": {
+        "confirmation": "LATER_COMPLETED_CLOSE_REVERSAL_RESEARCH",
+        "confirmed_at": "2023-08-16",
+        "confirmed_index": 444,
+        "first_observed_at": "2023-08-16",
+        "id": "sha256:bd8579d39b7b9973f33251c80a4f961058f04ecd067a87fc6b43a28834af1253",
+        "kind": "HIGH",
+        "occurred_at": "2023-08-02",
+        "occurred_index": 435,
+        "price": "37.80",
+        "scale": "0.03",
+        "segment": 0,
+        "source_dates": [
+          "2023-08-02"
+        ]
+      },
+      "original_bar": {
+        "close": "37.20",
+        "date": "2023-08-02",
+        "high": "37.80",
+        "low": "37.15",
+        "open": "37.50",
+        "volume_shares_scaled": "19895559"
+      }
+    },
+    {
+      "original_pivot": {
+        "confirmation": "LATER_COMPLETED_CLOSE_REVERSAL_RESEARCH",
+        "confirmed_at": "2023-09-13",
+        "confirmed_index": 464,
+        "first_observed_at": "2023-09-13",
+        "id": "sha256:ca4191106fe7f54b9397762dd17e5c6a74a668c02d04e4abee8e654d46328d87",
+        "kind": "LOW",
+        "occurred_at": "2023-09-08",
+        "occurred_index": 461,
+        "price": "34.05",
+        "scale": "0.03",
+        "segment": 0,
+        "source_dates": [
+          "2023-09-08",
+          "2023-09-11"
+        ]
+      },
+      "original_bar": {
+        "close": "34.10",
+        "date": "2023-09-08",
+        "high": "34.35",
+        "low": "34.05",
+        "open": "34.30",
+        "volume_shares_scaled": "21838198"
+      }
+    },
+    {
+      "original_pivot": {
+        "confirmation": "LATER_COMPLETED_CLOSE_REVERSAL_RESEARCH",
+        "confirmed_at": "2023-09-20",
+        "confirmed_index": 469,
+        "first_observed_at": "2023-09-20",
+        "id": "sha256:4f0bca405c3544f2d998a48dbc8015d2067f9ac1c105e940bb21567ffae98ee3",
+        "kind": "HIGH",
+        "occurred_at": "2023-09-14",
+        "occurred_index": 465,
+        "price": "35.50",
+        "scale": "0.03",
+        "segment": 0,
+        "source_dates": [
+          "2023-09-14"
+        ]
+      },
+      "original_bar": {
+        "close": "35.50",
+        "date": "2023-09-14",
+        "high": "35.50",
+        "low": "35.30",
+        "open": "35.40",
+        "volume_shares_scaled": "18247932"
+      }
+    },
+    {
+      "original_pivot": {
+        "confirmation": "LATER_COMPLETED_CLOSE_REVERSAL_RESEARCH",
+        "confirmed_at": "2023-10-12",
+        "confirmed_index": 482,
+        "first_observed_at": "2023-10-12",
+        "id": "sha256:a2638cc479155b09ebe68e0ae8d9360e874b5bec174de2db406ed33120ec2d69",
+        "kind": "LOW",
+        "occurred_at": "2023-10-05",
+        "occurred_index": 479,
+        "price": "32.60",
+        "scale": "0.03",
+        "segment": 0,
+        "source_dates": [
+          "2023-10-05"
+        ]
+      },
+      "original_bar": {
+        "close": "32.75",
+        "date": "2023-10-05",
+        "high": "32.95",
+        "low": "32.60",
+        "open": "32.75",
+        "volume_shares_scaled": "17660272"
+      }
+    },
+    {
+      "original_pivot": {
+        "confirmation": "LATER_COMPLETED_CLOSE_REVERSAL_RESEARCH",
+        "confirmed_at": "2023-10-18",
+        "confirmed_index": 486,
+        "first_observed_at": "2023-10-18",
+        "id": "sha256:92cea8b3abd26e69b711c713e4991251e2a1a3a73db48ceeaad74936a4209553",
+        "kind": "HIGH",
+        "occurred_at": "2023-10-13",
+        "occurred_index": 483,
+        "price": "34.15",
+        "scale": "0.03",
+        "segment": 0,
+        "source_dates": [
+          "2023-10-13"
+        ]
+      },
+      "original_bar": {
+        "close": "33.80",
+        "date": "2023-10-13",
+        "high": "34.15",
+        "low": "33.70",
+        "open": "33.90",
+        "volume_shares_scaled": "19059868"
+      }
+    },
+    {
+      "original_pivot": {
+        "confirmation": "LATER_COMPLETED_CLOSE_REVERSAL_RESEARCH",
+        "confirmed_at": "2023-11-02",
+        "confirmed_index": 497,
+        "first_observed_at": "2023-11-02",
+        "id": "sha256:0dd27c9869d1bfc891a79e904c621712928b60b46b4f93579d043ed39b42068f",
+        "kind": "LOW",
+        "occurred_at": "2023-10-24",
+        "occurred_index": 490,
+        "price": "31.35",
+        "scale": "0.03",
+        "segment": 0,
+        "source_dates": [
+          "2023-10-24"
+        ]
+      },
+      "original_bar": {
+        "close": "31.50",
+        "date": "2023-10-24",
+        "high": "31.75",
+        "low": "31.35",
+        "open": "31.75",
+        "volume_shares_scaled": "24067392"
+      }
+    },
+    {
+      "original_pivot": {
+        "confirmation": "LATER_COMPLETED_CLOSE_REVERSAL_RESEARCH",
+        "confirmed_at": "2023-11-29",
+        "confirmed_index": 516,
+        "first_observed_at": "2023-11-29",
+        "id": "sha256:9dfc96bd6434daa930e32fb2f09cd7d463a8fbb680a0f029cba636eef460130c",
+        "kind": "HIGH",
+        "occurred_at": "2023-11-28",
+        "occurred_index": 515,
+        "price": "35.50",
+        "scale": "0.03",
+        "segment": 0,
+        "source_dates": [
+          "2023-11-28"
+        ]
+      },
+      "original_bar": {
+        "close": "34.50",
+        "date": "2023-11-28",
+        "high": "35.50",
+        "low": "34.50",
+        "open": "35.00",
+        "volume_shares_scaled": "65709089"
+      }
+    }
+  ],
+  "B77_original_sources": [
+    {
+      "original_pivot": {
+        "confirmation": "LATER_COMPLETED_CLOSE_REVERSAL_RESEARCH",
+        "confirmed_at": "2023-11-20",
+        "confirmed_index": 509,
+        "first_observed_at": "2023-11-20",
+        "id": "sha256:bc5b2bbe9655693026e719c545e6b0f1836f8c4f170c14be75b48be5cc883809",
+        "kind": "LOW",
+        "occurred_at": "2023-10-24",
+        "occurred_index": 490,
+        "price": "31.35",
+        "scale": "0.06",
+        "segment": 0,
+        "source_dates": [
+          "2023-10-24"
+        ]
+      },
+      "original_bar": {
+        "close": "31.50",
+        "date": "2023-10-24",
+        "high": "31.75",
+        "low": "31.35",
+        "open": "31.75",
+        "volume_shares_scaled": "24067392"
+      }
+    },
+    {
+      "original_pivot": {
+        "confirmation": "LATER_COMPLETED_CLOSE_REVERSAL_RESEARCH",
+        "confirmed_at": "2024-01-16",
+        "confirmed_index": 549,
+        "first_observed_at": "2024-01-16",
+        "id": "sha256:c60419732c272d53705a6a247502b716cca36266dfc26041db91e6d77fd41310",
+        "kind": "HIGH",
+        "occurred_at": "2023-11-28",
+        "occurred_index": 515,
+        "price": "35.50",
+        "scale": "0.06",
+        "segment": 0,
+        "source_dates": [
+          "2023-11-28"
+        ]
+      },
+      "original_bar": {
+        "close": "34.50",
+        "date": "2023-11-28",
+        "high": "35.50",
+        "low": "34.50",
+        "open": "35.00",
+        "volume_shares_scaled": "65709089"
+      }
+    },
+    {
+      "original_pivot": {
+        "confirmation": "LATER_COMPLETED_CLOSE_REVERSAL_RESEARCH",
+        "confirmed_at": "2024-04-10",
+        "confirmed_index": 600,
+        "first_observed_at": "2024-04-10",
+        "id": "sha256:591bf193245ff2f7f687daf5fded2d993d3263fda5eb879410b91b7ed538d478",
+        "kind": "LOW",
+        "occurred_at": "2024-03-20",
+        "occurred_index": 587,
+        "price": "30.80",
+        "scale": "0.06",
+        "segment": 0,
+        "source_dates": [
+          "2024-03-20"
+        ]
+      },
+      "original_bar": {
+        "close": "30.90",
+        "date": "2024-03-20",
+        "high": "31.45",
+        "low": "30.80",
+        "open": "31.40",
+        "volume_shares_scaled": "30649972"
+      }
+    },
+    {
+      "original_pivot": {
+        "confirmation": "LATER_COMPLETED_CLOSE_REVERSAL_RESEARCH",
+        "confirmed_at": "2024-08-15",
+        "confirmed_index": 687,
+        "first_observed_at": "2024-08-15",
+        "id": "sha256:27689f78527ec76a0ee68f5b3524a3c35083e34aa477f3c1eab825e94618cace",
+        "kind": "HIGH",
+        "occurred_at": "2024-07-26",
+        "occurred_index": 673,
+        "price": "35.20",
+        "scale": "0.06",
+        "segment": 0,
+        "source_dates": [
+          "2024-07-26"
+        ]
+      },
+      "original_bar": {
+        "close": "34.90",
+        "date": "2024-07-26",
+        "high": "35.20",
+        "low": "34.55",
+        "open": "34.95",
+        "volume_shares_scaled": "25157660"
+      }
+    },
+    {
+      "original_pivot": {
+        "confirmation": "LATER_COMPLETED_CLOSE_REVERSAL_RESEARCH",
+        "confirmed_at": "2024-09-27",
+        "confirmed_index": 717,
+        "first_observed_at": "2024-09-27",
+        "id": "sha256:d8ec3464135b0e6dcb48a7e74821e69a337d4ac8d3e38c712a5ae40677cfd1de",
+        "kind": "LOW",
+        "occurred_at": "2024-09-12",
+        "occurred_index": 707,
+        "price": "31.20",
+        "scale": "0.06",
+        "segment": 0,
+        "source_dates": [
+          "2024-09-12"
+        ]
+      },
+      "original_bar": {
+        "close": "31.50",
+        "date": "2024-09-12",
+        "high": "31.55",
+        "low": "31.20",
+        "open": "31.55",
+        "volume_shares_scaled": "9277899"
+      }
+    },
+    {
+      "original_pivot": {
+        "confirmation": "LATER_COMPLETED_CLOSE_REVERSAL_RESEARCH",
+        "confirmed_at": "2024-10-24",
+        "confirmed_index": 733,
+        "first_observed_at": "2024-10-24",
+        "id": "sha256:bbbcdc363d541befe0e986b67609800d37a753280f1f14c586be84d4b588b74f",
+        "kind": "HIGH",
+        "occurred_at": "2024-09-30",
+        "occurred_index": 718,
+        "price": "34.20",
+        "scale": "0.06",
+        "segment": 0,
+        "source_dates": [
+          "2024-09-30"
+        ]
+      },
+      "original_bar": {
+        "close": "33.80",
+        "date": "2024-09-30",
+        "high": "34.20",
+        "low": "33.45",
+        "open": "33.50",
+        "volume_shares_scaled": "41315092"
+      }
+    },
+    {
+      "original_pivot": {
+        "confirmation": "LATER_COMPLETED_CLOSE_REVERSAL_RESEARCH",
+        "confirmed_at": "2024-11-25",
+        "confirmed_index": 754,
+        "first_observed_at": "2024-11-25",
+        "id": "sha256:6220d4d5638483f037a05df336dee86debdf6be29d289013df10a5d6dcfde6da",
+        "kind": "LOW",
+        "occurred_at": "2024-11-01",
+        "occurred_index": 738,
+        "price": "31.70",
+        "scale": "0.06",
+        "segment": 0,
+        "source_dates": [
+          "2024-11-01"
+        ]
+      },
+      "original_bar": {
+        "close": "32.10",
+        "date": "2024-11-01",
+        "high": "32.20",
+        "low": "31.70",
+        "open": "31.70",
+        "volume_shares_scaled": "15523104"
+      }
+    },
+    {
+      "original_pivot": {
+        "confirmation": "LATER_COMPLETED_CLOSE_REVERSAL_RESEARCH",
+        "confirmed_at": "2024-12-20",
+        "confirmed_index": 773,
+        "first_observed_at": "2024-12-20",
+        "id": "sha256:c1faddf3ce557ac3b650ce652de5bc3b23196799de204a5dba28183ed52b4ba8",
+        "kind": "HIGH",
+        "occurred_at": "2024-11-25",
+        "occurred_index": 754,
+        "price": "34.20",
+        "scale": "0.06",
+        "segment": 0,
+        "source_dates": [
+          "2024-11-25"
+        ]
+      },
+      "original_bar": {
+        "close": "33.90",
+        "date": "2024-11-25",
+        "high": "34.20",
+        "low": "33.60",
+        "open": "33.90",
+        "volume_shares_scaled": "43141500"
+      }
+    },
+    {
+      "original_pivot": {
+        "confirmation": "LATER_COMPLETED_CLOSE_REVERSAL_RESEARCH",
+        "confirmed_at": "2025-02-12",
+        "confirmed_index": 803,
+        "first_observed_at": "2025-02-12",
+        "id": "sha256:54d90595a011f44f5e56b84eeb09174ba6aaeb3aa2924eab5e244d56cef0bde8",
+        "kind": "LOW",
+        "occurred_at": "2025-01-13",
+        "occurred_index": 788,
+        "price": "30.05",
+        "scale": "0.06",
+        "segment": 0,
+        "source_dates": [
+          "2025-01-13"
+        ]
+      },
+      "original_bar": {
+        "close": "30.50",
+        "date": "2025-01-13",
+        "high": "30.70",
+        "low": "30.05",
+        "open": "30.30",
+        "volume_shares_scaled": "17382646"
+      }
+    },
+    {
+      "original_pivot": {
+        "confirmation": "LATER_COMPLETED_CLOSE_REVERSAL_RESEARCH",
+        "confirmed_at": "2025-03-24",
+        "confirmed_index": 830,
+        "first_observed_at": "2025-03-24",
+        "id": "sha256:6a8f1a87cf2d060b46ee391b3b5f09069f45590ac835a5085803cff65d7b088e",
+        "kind": "HIGH",
+        "occurred_at": "2025-03-12",
+        "occurred_index": 822,
+        "price": "35.45",
+        "scale": "0.06",
+        "segment": 0,
+        "source_dates": [
+          "2025-03-12"
+        ]
+      },
+      "original_bar": {
+        "close": "34.50",
+        "date": "2025-03-12",
+        "high": "35.45",
+        "low": "34.50",
+        "open": "35.00",
+        "volume_shares_scaled": "22178529"
+      }
+    }
+  ],
+  "cross_scale_correspondences_not_joined": [
+    {
+      "route_3pct_pivot": {
+        "confirmation": "LATER_COMPLETED_CLOSE_REVERSAL_RESEARCH",
+        "confirmed_at": "2023-11-02",
+        "confirmed_index": 497,
+        "first_observed_at": "2023-11-02",
+        "id": "sha256:0dd27c9869d1bfc891a79e904c621712928b60b46b4f93579d043ed39b42068f",
+        "kind": "LOW",
+        "occurred_at": "2023-10-24",
+        "occurred_index": 490,
+        "price": "31.35",
+        "scale": "0.03",
+        "segment": 0,
+        "source_dates": [
+          "2023-10-24"
+        ]
+      },
+      "B77_6pct_pivot": {
+        "confirmation": "LATER_COMPLETED_CLOSE_REVERSAL_RESEARCH",
+        "confirmed_at": "2023-11-20",
+        "confirmed_index": 509,
+        "first_observed_at": "2023-11-20",
+        "id": "sha256:bc5b2bbe9655693026e719c545e6b0f1836f8c4f170c14be75b48be5cc883809",
+        "kind": "LOW",
+        "occurred_at": "2023-10-24",
+        "occurred_index": 490,
+        "price": "31.35",
+        "scale": "0.06",
+        "segment": 0,
+        "source_dates": [
+          "2023-10-24"
+        ]
+      },
+      "coordinate_equal": true,
+      "ids_distinct": true,
+      "formal_shared_roles": null,
+      "formal_merge": null
+    },
+    {
+      "route_3pct_pivot": {
+        "confirmation": "LATER_COMPLETED_CLOSE_REVERSAL_RESEARCH",
+        "confirmed_at": "2023-11-29",
+        "confirmed_index": 516,
+        "first_observed_at": "2023-11-29",
+        "id": "sha256:9dfc96bd6434daa930e32fb2f09cd7d463a8fbb680a0f029cba636eef460130c",
+        "kind": "HIGH",
+        "occurred_at": "2023-11-28",
+        "occurred_index": 515,
+        "price": "35.50",
+        "scale": "0.03",
+        "segment": 0,
+        "source_dates": [
+          "2023-11-28"
+        ]
+      },
+      "B77_6pct_pivot": {
+        "confirmation": "LATER_COMPLETED_CLOSE_REVERSAL_RESEARCH",
+        "confirmed_at": "2024-01-16",
+        "confirmed_index": 549,
+        "first_observed_at": "2024-01-16",
+        "id": "sha256:c60419732c272d53705a6a247502b716cca36266dfc26041db91e6d77fd41310",
+        "kind": "HIGH",
+        "occurred_at": "2023-11-28",
+        "occurred_index": 515,
+        "price": "35.50",
+        "scale": "0.06",
+        "segment": 0,
+        "source_dates": [
+          "2023-11-28"
+        ]
+      },
+      "coordinate_equal": true,
+      "ids_distinct": true,
+      "formal_shared_roles": null,
+      "formal_merge": null
+    }
+  ],
+  "right_context_6pct_contiguous": [
+    {
+      "original_pivot": {
+        "confirmation": "LATER_COMPLETED_CLOSE_REVERSAL_RESEARCH",
+        "confirmed_at": "2025-03-24",
+        "confirmed_index": 830,
+        "first_observed_at": "2025-03-24",
+        "id": "sha256:6a8f1a87cf2d060b46ee391b3b5f09069f45590ac835a5085803cff65d7b088e",
+        "kind": "HIGH",
+        "occurred_at": "2025-03-12",
+        "occurred_index": 822,
+        "price": "35.45",
+        "scale": "0.06",
+        "segment": 0,
+        "source_dates": [
+          "2025-03-12"
+        ]
+      },
+      "original_bar": {
+        "close": "34.50",
+        "date": "2025-03-12",
+        "high": "35.45",
+        "low": "34.50",
+        "open": "35.00",
+        "volume_shares_scaled": "22178529"
+      }
+    },
+    {
+      "original_pivot": {
+        "confirmation": "LATER_COMPLETED_CLOSE_REVERSAL_RESEARCH",
+        "confirmed_at": "2025-04-10",
+        "confirmed_index": 841,
+        "first_observed_at": "2025-04-10",
+        "id": "sha256:233839e7823baa79b0e7d07a0bdac3a550b7c988e76a623757a11b7928d518da",
+        "kind": "LOW",
+        "occurred_at": "2025-04-08",
+        "occurred_index": 839,
+        "price": "28.45",
+        "scale": "0.06",
+        "segment": 0,
+        "source_dates": [
+          "2025-04-08"
+        ]
+      },
+      "original_bar": {
+        "close": "29.65",
+        "date": "2025-04-08",
+        "high": "30.70",
+        "low": "28.45",
+        "open": "30.30",
+        "volume_shares_scaled": "73115113"
+      }
+    },
+    {
+      "original_pivot": {
+        "confirmation": "LATER_COMPLETED_CLOSE_REVERSAL_RESEARCH",
+        "confirmed_at": "2025-04-18",
+        "confirmed_index": 847,
+        "first_observed_at": "2025-04-18",
+        "id": "sha256:243bf84af74074747b494e36899d8c86c4637837daed427430f3aac915776d82",
+        "kind": "HIGH",
+        "occurred_at": "2025-04-10",
+        "occurred_index": 841,
+        "price": "31.20",
+        "scale": "0.06",
+        "segment": 0,
+        "source_dates": [
+          "2025-04-10"
+        ]
+      },
+      "original_bar": {
+        "close": "30.75",
+        "date": "2025-04-10",
+        "high": "31.20",
+        "low": "30.00",
+        "open": "30.95",
+        "volume_shares_scaled": "48104987"
+      }
+    },
+    {
+      "original_pivot": {
+        "confirmation": "LATER_COMPLETED_CLOSE_REVERSAL_RESEARCH",
+        "confirmed_at": "2025-05-05",
+        "confirmed_index": 857,
+        "first_observed_at": "2025-05-05",
+        "id": "sha256:7658f485ed5a6c071581cbede277481ab54835325af568de44614eee3c12f627",
+        "kind": "LOW",
+        "occurred_at": "2025-04-22",
+        "occurred_index": 849,
+        "price": "28.50",
+        "scale": "0.06",
+        "segment": 0,
+        "source_dates": [
+          "2025-04-22"
+        ]
+      },
+      "original_bar": {
+        "close": "28.60",
+        "date": "2025-04-22",
+        "high": "28.90",
+        "low": "28.50",
+        "open": "28.55",
+        "volume_shares_scaled": "14504369"
+      }
+    },
+    {
+      "original_pivot": {
+        "confirmation": "LATER_COMPLETED_CLOSE_REVERSAL_RESEARCH",
+        "confirmed_at": "2025-05-27",
+        "confirmed_index": 873,
+        "first_observed_at": "2025-05-27",
+        "id": "sha256:430f9d7b4ed73d2fe6fe4f6cbd1e4332f24ada9d7154306107937036d9ce9e07",
+        "kind": "HIGH",
+        "occurred_at": "2025-05-13",
+        "occurred_index": 863,
+        "price": "31.40",
+        "scale": "0.06",
+        "segment": 0,
+        "source_dates": [
+          "2025-05-13"
+        ]
+      },
+      "original_bar": {
+        "close": "31.10",
+        "date": "2025-05-13",
+        "high": "31.40",
+        "low": "30.90",
+        "open": "31.30",
+        "volume_shares_scaled": "10264322"
+      }
+    }
+  ],
+  "right_context_scope": "first 4 pivots for Mar-to-Apr observation; fifth May13 is explicit later context, not a guessed formal end",
+  "april_22_occurrence_vs_confirmation": {
+    "occurred_at": "2025-04-22",
+    "confirmed_at": "2025-05-05",
+    "occurred_within_display_month": true,
+    "confirmed_within_display_month": false,
+    "formal_membership": null
+  },
+  "primary_pressure_id": null,
+  "historical_selection_time": null,
+  "historical_signal_eligible": false,
+  "formal_structure_membership": null,
+  "formal_merge": null,
+  "formal_representative": null,
+  "direct_successor_id": null
+}

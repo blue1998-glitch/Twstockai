@@ -1,0 +1,31 @@
+{
+  "enabled": false,
+  "entrypoint": "python3 -m graph_core.du1_20261102.run_once",
+  "arguments": [
+    "--root",
+    "EXISTING_PRIVATE_FM3_RUNTIME"
+  ],
+  "storage": "official-market-increment/0.2 default compact; original Journal schema unchanged",
+  "encodings": [
+    "legacy-full-json",
+    "exact-byte-chunks/0.1",
+    "exact-interned-bytes/0.1"
+  ],
+  "root_marker": ".du2-root.json",
+  "minimum_per_write_reserve_bytes": 67108864,
+  "single_stock_logical_limit_bytes": 536870912,
+  "preflight": "largest known member logical result * 2 + 64MiB (conservative on resume); not a guarantee of full-run capacity",
+  "shared_artifact_data": [
+    "du2-blobs",
+    "du2-intern-anchors",
+    "*.du2",
+    "legacy originals referenced by exact spans"
+  ],
+  "backup": "Full private root including hidden marker, sidecars, wire manifests, blobs, anchors and legacy files; independent encrypted backup and isolated restore required before external scheduling",
+  "garbage_collection": "NOT_IMPLEMENTED_NO_AUTOMATIC_DELETION",
+  "rollback": "Explicitly materialize selected complete files to another Git-external location and verify SHA before using old readers; no in-place migration",
+  "scheduler": "NOT_ENABLED",
+  "oracle": "PAUSED_ACCOUNT_PENDING_NO_VERIFIED_QUOTA",
+  "android": "NO_REMOTE_ENTRY_NOT_PHYSICAL_ACCEPTANCE",
+  "real_new_session": "NOT_VERIFIED_THIS_MILESTONE"
+}

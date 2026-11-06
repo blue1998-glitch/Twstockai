@@ -1,0 +1,11 @@
+{
+  "base_case": "valid-C-same-order",
+  "edit": {
+    "target": "checkpoint",
+    "path": [
+      "checkpoint_id"
+    ],
+    "value": "sha256:wrong"
+  },
+  "expected_error": "Checkpoint differs"
+}

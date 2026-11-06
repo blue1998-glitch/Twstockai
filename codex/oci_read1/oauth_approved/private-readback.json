@@ -1,0 +1,78 @@
+{
+  "schema": "read1-approved-oauth-private-readback/0.2",
+  "observed_at": "2026-11-05T07:27:17.613710+00:00",
+  "prior_private_commit": "cc94d1b52b50e846a30fd98864ca650ba848aa55",
+  "private_commit": "a192ed66b7b0c42624403daa089f30b9f50c3acd",
+  "readback": [
+    {
+      "path": ".github/workflows/read1.yml",
+      "bytes": 5461,
+      "sha256": "e35b2b2c36a4879ead7f0100c52a721252f71d97ed67ac489a2f2e0fd6e57b8f",
+      "git_blob": "04212acdc81cb4306a25b18bb10950a880ea0852",
+      "readback": "EXACT_BYTES"
+    },
+    {
+      "path": "read1/oauth/Twstockai_READ1_OAUTH_RUNNER.pyz",
+      "bytes": 62311,
+      "sha256": "82f7c2397104f710950503343abf73a53e6e6b1ade0ae5f8a37ec80e1cfac58c",
+      "git_blob": "cadf5f16f297f2d501b8580f07574169e78c1f5a",
+      "readback": "EXACT_BYTES"
+    },
+    {
+      "path": "read1/oauth/release.json",
+      "bytes": 303,
+      "sha256": "6670206f87935f9e938e83f85e84e13f63a7d95785b51bf16de1cbffd4da2d06",
+      "git_blob": "6b47b285754018b842ee7897d5e60f5b552761cb",
+      "readback": "EXACT_BYTES"
+    },
+    {
+      "path": "read1/oauth/account.json",
+      "bytes": 921,
+      "sha256": "46a5ab52cb5f95ee5125680df3165808bab7840f197edc989ce66b0d4e7c3b60",
+      "git_blob": "d5ddc81766f9faabf2a6442ace34ebe34d0060c8",
+      "readback": "EXACT_BYTES"
+    },
+    {
+      "path": "read1/oauth/MANIFEST.json",
+      "bytes": 2332,
+      "sha256": "da44cfdad336e904b94e245adb5572ea19ac3cfa8a3d9eda3f615681bb9d0eba",
+      "git_blob": "75a16af11d9c693a8dfee6408c6b80bed661bdbc",
+      "readback": "EXACT_BYTES"
+    },
+    {
+      "path": "read1/oauth/README.md",
+      "bytes": 1412,
+      "sha256": "240ffa5e2dbffc5ee2b2acc5213e6cf29dceea1952403a351b506733697637a7",
+      "git_blob": "d2cb3ecc5271053af6625ac94acc21199156f385",
+      "readback": "EXACT_BYTES"
+    },
+    {
+      "path": "read1/oauth/OWNER_ONCE.md",
+      "bytes": 8680,
+      "sha256": "37cfd37d9788fc0521c67c3b74a189fdb218ac462196c2c1124014607817b688",
+      "git_blob": "7a7b00595cc4337faec06b2a81f671fbbea23d04",
+      "readback": "EXACT_BYTES"
+    },
+    {
+      "path": "read1/oauth/AUTHORIZATION.json",
+      "bytes": 4647,
+      "sha256": "a75a44a89d077bdb331afb7ff065f7ca0c04162ae453505e2c816625a4761363",
+      "git_blob": "3e8b745ba2a387f78cb229fef52097b9ffe3caf5",
+      "readback": "EXACT_BYTES"
+    }
+  ],
+  "registered_workflow_id": 407836104,
+  "registered_workflow_state": "active",
+  "query_activation": "DEFAULT_DENY_ACCOUNT_UNKNOWN_NOT_ENABLED_BY_CODEX",
+  "previous_private_blobs_unchanged": 21,
+  "native_runs_before": 3,
+  "native_runs_after": 3,
+  "issue_comments_before": 4,
+  "issue_comments_after": 4,
+  "secrets_set_by_codex": 0,
+  "secret_values_read": 0,
+  "oracle_actual_calls": 0,
+  "iam_changes": 0,
+  "codex_commands_sent": 0,
+  "formal_storage_approval": "ALREADY_GRANTED_6651585478"
+}

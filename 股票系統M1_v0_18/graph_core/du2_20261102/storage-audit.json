@@ -1,0 +1,117 @@
+{
+  "observed_at": "2026-11-02T12:14:22.302188+00:00",
+  "inventory": {
+    "root": "/workspace/twstockai-local-data/fm3_20261101/runtime",
+    "groups": {
+      "fm3-continuation.json": {
+        "paths": 1,
+        "logical_bytes": 1345,
+        "allocated_unique_bytes": 4096,
+        "unique_inodes": 1
+      },
+      "daily.lock": {
+        "paths": 1,
+        "logical_bytes": 0,
+        "allocated_unique_bytes": 0,
+        "unique_inodes": 1
+      },
+      "du1-failures": {
+        "paths": 2,
+        "logical_bytes": 543255,
+        "allocated_unique_bytes": 548864,
+        "unique_inodes": 2
+      },
+      "source-receipts": {
+        "paths": 1987,
+        "logical_bytes": 1295226,
+        "allocated_unique_bytes": 8138752,
+        "unique_inodes": 1987
+      },
+      "results": {
+        "paths": 1469,
+        "logical_bytes": 9338386192,
+        "allocated_unique_bytes": 9341431808,
+        "unique_inodes": 1469
+      },
+      "source-raw": {
+        "paths": 1987,
+        "logical_bytes": 382942346,
+        "allocated_unique_bytes": 386994176,
+        "unique_inodes": 1987
+      },
+      "source-slots": {
+        "paths": 1987,
+        "logical_bytes": 750483,
+        "allocated_unique_bytes": 8138752,
+        "unique_inodes": 1987
+      },
+      "checkpoints": {
+        "paths": 1998,
+        "logical_bytes": 4693917,
+        "allocated_unique_bytes": 8183808,
+        "unique_inodes": 1998
+      },
+      "histories": {
+        "paths": 1469,
+        "logical_bytes": 393374593,
+        "allocated_unique_bytes": 396705792,
+        "unique_inodes": 1469
+      },
+      "raw": {
+        "paths": 10,
+        "logical_bytes": 36666929,
+        "allocated_unique_bytes": 36691968,
+        "unique_inodes": 10
+      },
+      "runs": {
+        "paths": 14,
+        "logical_bytes": 36569623,
+        "allocated_unique_bytes": 36597760,
+        "unique_inodes": 14
+      },
+      "captures": {
+        "paths": 2,
+        "logical_bytes": 3019,
+        "allocated_unique_bytes": 8192,
+        "unique_inodes": 2
+      },
+      "preview": {
+        "paths": 8669,
+        "logical_bytes": 20962473240,
+        "allocated_unique_bytes": 10285154304,
+        "unique_inodes": 4220
+      }
+    },
+    "paths": 19596,
+    "logical_bytes": 31157700168,
+    "allocated_unique_bytes": 20508598272,
+    "scan_seconds": 1.1411408740095794,
+    "preview_content_named_duplicates": {
+      "groups": 1439,
+      "extra_logical_bytes": 17365231951,
+      "distinct_inode_duplicate_bytes": 6679143079,
+      "scope": "FILENAMES_PLUS_INODES; shared inode proves same bytes, separate inodes need hash verification"
+    }
+  },
+  "duplicate_verification": {
+    "scope": "READ_ONLY_DUPLICATE_CONTENT_VERIFICATION_NOT_CORE_OR_PROVIDER_ACCEPTANCE",
+    "distinct_inode_files_hashed": 4178,
+    "bytes_read": 10156485246,
+    "verified_extra_duplicate_bytes": 6679143079,
+    "errors": [],
+    "wall_seconds": 20.553655202966183,
+    "old_paths_replaced": 0,
+    "reclaimed_bytes": 0
+  },
+  "preservation": {
+    "observed_at": "2026-11-02T12:03:07.542410+00:00",
+    "original_paths_checked": 19596,
+    "missing_or_size_mtime_inode_changes": 0,
+    "new_paths_in_original_root": [],
+    "readonly_alias_link_count_changes": 21,
+    "original_html_sha_matches": true,
+    "original_head_unchanged": true,
+    "private_originals_deleted": 0,
+    "scope": "ALL_ORIGINAL_PATH_METADATA_PLUS_SELECTED_FULL_RESULT_AND_SOURCE_BINDINGS; NOT_A_NEW_FULL_MARKET_SOURCE_AUDIT"
+  }
+}

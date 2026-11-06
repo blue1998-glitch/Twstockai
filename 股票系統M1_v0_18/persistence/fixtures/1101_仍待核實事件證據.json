@@ -1,0 +1,48 @@
+{
+  "schema_version": "analysis-evidence/1.0",
+  "code": "1101",
+  "coverage_status": "UNVERIFIED",
+  "records": [
+    {
+      "fact": {
+        "code": "1101",
+        "earnings_year": 2025,
+        "cash_per_share": "0.8",
+        "stock_dividend_per_share": "0",
+        "effective_date": "2026-07-01",
+        "effective_date_kind": "EX_TRADING_DATE",
+        "record_date": null,
+        "payment_date": "2026-07-28",
+        "cash_fact_status": "VERIFIED_PRIMARY_ROW",
+        "other_actions_coverage": "UNVERIFIED",
+        "publication_time": "UNVERIFIED",
+        "source_record": {
+          "file": "event_audit/raw/tcc_dividends.html",
+          "url": "https://www.tccgroupholdings.com/dividend",
+          "fetched_at_utc": "2026-10-16T06:29:13.126231+00:00",
+          "status": 200,
+          "content_type": "text/html; charset=UTF-8",
+          "final_url": "https://www.tccgroupholdings.com/dividend",
+          "bytes": 419568,
+          "sha256": "86705c4f326e5210b8a5a7f7dd0a410206f0078260c5dc701a3e994fa4c66b6d"
+        }
+      },
+      "staging": {
+        "status": "STAGED_NOT_ENGINE_READY",
+        "diagnostic_factor": "0.9667359667359667359667359667",
+        "basis": {
+          "date": "2026-06-30",
+          "close": "24.05",
+          "effective_date": "2026-07-01",
+          "cash_per_share": "0.8"
+        },
+        "blocked_reasons": [
+          "OFFICIAL_REFERENCE_CROSSCHECK_PENDING"
+        ],
+        "approved_engine_events": [],
+        "period_action_coverage": "UNVERIFIED",
+        "classification_quality": "NOT_VALIDATED"
+      }
+    }
+  ]
+}

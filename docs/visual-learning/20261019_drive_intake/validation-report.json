@@ -1,0 +1,45 @@
+{
+  "status": "PASS",
+  "checks": [
+    {
+      "name": "schema_and_source_qualification",
+      "status": "PASS",
+      "errors": []
+    },
+    {
+      "name": "delivery_bytes_sha256",
+      "status": "PASS",
+      "errors": []
+    },
+    {
+      "name": "reject_unverified_training",
+      "status": "PASS"
+    },
+    {
+      "name": "reject_future_input",
+      "status": "PASS"
+    },
+    {
+      "name": "reject_invented_formal_bounds",
+      "status": "PASS"
+    },
+    {
+      "name": "reject_cross_split_duplicates",
+      "status": "PASS"
+    },
+    {
+      "name": "reject_ephemeral_urls",
+      "status": "PASS"
+    },
+    {
+      "name": "reject_duplicate_ids",
+      "status": "PASS"
+    }
+  ],
+  "source_files": 101,
+  "unique_images": 91,
+  "scope": "新案例資料一致性/資格與六個故障注入檢查；不重新讀圖、不重跑M1產品測試",
+  "model_training": "NOT_EXECUTED",
+  "physical_android": "NOT_TESTED",
+  "strategy_validation": "NOT_VALIDATED"
+}

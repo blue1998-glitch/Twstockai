@@ -1,0 +1,106 @@
+{
+  "schema_version": "user-reviewed-price-volume-region/0.1",
+  "code": "1101",
+  "price_mode": "RAW_CANDIDATE",
+  "analysis_as_of": "2026-10-16",
+  "reviewed_at": "2026-10-18T21:04:23+08:00",
+  "user_quote": "G1是因為高點與高量選出來的代表壓力點，實則一整個價格帶和成交量帶的壓力代表，真要去選壓力區就是大約2023年9月一直到C點，原因是因為G1是高點往左劃一條線1023年9月都在此線之下，成交量也是在G1左邊到2023年之間有過幾個較高的量。之所以劃到C點是因為2023年9月一直到C點有一個共同的起伏價格帶，而C點右側則是一個新的平緩價格帶因此是籌碼更為沉澱的區域。",
+  "quote_interpretation": {
+    "year_typo": {
+      "original": "1023年9月",
+      "interpreted": "2023年9月",
+      "basis": "same_message_explicit_2023_09_and_chart_context"
+    },
+    "volume_left_phrase": "PRESERVE_QUOTE_NO_ADDITIONAL_EXACT_WINDOW_ASSIGNED"
+  },
+  "review_kind": "LATER_USER_MANUAL_REVIEW_NOT_ASOF_AUTOMATIC_SIGNAL",
+  "source_binding": {
+    "original_export_sha256": "369947bad71ab3fdff894c21511ebf242e1ddb12b59822d02ed93f0580bd2796",
+    "source_id": "sha256:adea7f78a97d18b6b51fbba103e08c0db33dc6fb1eb613b960b0aabe213b534b",
+    "frame_id": "sha256:b7215491c924570f3b40594fbd859f4b5c2532b247b62b6e625a8fcb66964f70",
+    "chart_base": "sha256:50e560b77640da3b7d000c0db67fc73a3f5b69d0bd744871ccb03483f8ec115e"
+  },
+  "representative": {
+    "id": "G1",
+    "source_date": "2023-11-28",
+    "raw_high": "35.50",
+    "role": "REPRESENTATIVE_OF_WHOLE_PRICE_AND_VOLUME_REGION",
+    "user_rationale": [
+      "HIGH_PRICE",
+      "HIGH_VOLUME",
+      "LEFT_PRICE_RELATION",
+      "MULTIPLE_VOLUME_PEAKS_IN_REGION"
+    ],
+    "is_unique_high": null,
+    "is_highest_volume_day": false,
+    "general_selection_formula": null,
+    "original_manual_case_unchanged": true,
+    "known_same_price_peer": {
+      "date": "2023-09-14",
+      "raw_high": "35.50",
+      "formal_region_membership": "UNSET_APPROXIMATE_START"
+    }
+  },
+  "older_region": {
+    "start_description": "大約2023年9月",
+    "start_precision": "APPROXIMATE_MONTH",
+    "start_month": "2023-09",
+    "exact_start_date": null,
+    "end_description": "到C點",
+    "end_reference": {
+      "chart_label": "C",
+      "date": "2024-01-19",
+      "source_low": "31.80"
+    },
+    "exact_mathematical_boundary": null,
+    "bar_membership": null,
+    "price_bounds": null,
+    "total_volume": null,
+    "largest_day_in_formally_selected_region": null,
+    "reason": "START_DATE_AND_FULL_MEMBERSHIP_NOT_FIXED",
+    "user_characterization": "共同的起伏價格帶，G1為其價量壓力代表"
+  },
+  "newer_region": {
+    "relation": "RIGHT_OF_C",
+    "start_reference": "2024-01-19",
+    "exact_start_date": null,
+    "end_date": null,
+    "bar_membership": null,
+    "user_characterization": "新的平緩價格帶，籌碼更為沉澱",
+    "interpretation_status": "USER_QUALITATIVE_STRUCTURE_JUDGMENT",
+    "actual_remaining_trapped_shares": null,
+    "ownership_stability_verified": false
+  },
+  "supported_semantics": [
+    "REPRESENTATIVE_POINT_AND_REGION_ARE_DISTINCT",
+    "OLD_OSCILLATING_REGION_AND_NEW_FLATTER_REGION_ARE_DISTINCT",
+    "PRICE_PEAK_AND_VOLUME_PEAK_MAY_HAVE_DIFFERENT_DATES",
+    "LATER_FLATTER_REGION_DOES_NOT_DELETE_OLDER_REFERENCE"
+  ],
+  "assistant_design_inferences": [
+    {
+      "idea": "REGION_FIRST_WITH_PRICE_REPRESENTATIVE_AND_SEPARATE_VOLUME_PEAKS",
+      "status": "IMPLEMENTATION_REPRESENTATION_DERIVED_FROM_USER_DESCRIPTION_NOT_APPROVED_AUTOMATIC_ALGORITHM"
+    },
+    {
+      "idea": "C_IS_A_STRUCTURE_TRANSITION_REFERENCE_NOT_A_FIXED_DAY_COUNT_CUTOFF",
+      "status": "DESIGN_INTERPRETATION"
+    }
+  ],
+  "unknown_rules": [
+    "EXACT_REGION_START_AND_END_INCLUSION",
+    "AUTOMATIC_REGION_SPLIT",
+    "PRICE_BOUNDS",
+    "REPRESENTATIVE_PRICE_VOLUME_SELECTION_FORMULA",
+    "FLATNESS_AND_SETTLEMENT_THRESHOLD",
+    "REGION_VOLUME_MEASURE_AND_VOLUME_EXPANSION_COMPARATOR",
+    "PRESSURE_STRENGTH_AND_TIME_DECAY",
+    "GENERALIZATION_AND_LIFECYCLE"
+  ],
+  "status": "MANUAL_REGION_MEANING_CAPTURED_AUTOMATIC_RULE_NOT_DEFINED",
+  "product_integration": "NOT_IMPLEMENTED_THIS_TURN",
+  "action_qualification": "NOT_EVALUATED",
+  "classification_quality": "NOT_VALIDATED",
+  "corporate_action_comparability": "NOT_FULLY_VERIFIED",
+  "full_history_high": "NOT_ESTABLISHED"
+}

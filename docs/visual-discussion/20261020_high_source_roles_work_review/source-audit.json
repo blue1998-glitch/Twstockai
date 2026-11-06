@@ -1,0 +1,276 @@
+{
+  "scope": "READ_ONLY_ORIGINAL_PIVOT_AND_QUERY_COVERAGE_REVIEW_NOT_NEW_RECOGNITION",
+  "as_of": "2026-10-16",
+  "original_core_result_id": "sha256:ec7bca9ed6aa176c328fd8c4e94a31ea66967832e7089ac20a44090461f49da4",
+  "reaction_result_id": "sha256:2dcff9ba28edf89c370c976a82ec5b7bd6c11cce06743ba3e870e15a0d58c966",
+  "sources": [
+    {
+      "file": "reaction-pressure-review/input/comparison-data.json",
+      "sha256": "184bdef0b687ec0ab7bfcaaac2157ff7916fbc1000ef312d81b5efc0c2e73e15"
+    },
+    {
+      "file": "reaction-pressure-review/input/reaction-facts.json",
+      "sha256": "097971c913b52fbf69dbb286c6e2df380ded3c3d166ca6391de5c5bdb4047c48"
+    }
+  ],
+  "whole_band_user_context": {
+    "end_month": "2025-04",
+    "exact_end": null,
+    "exact_start": null,
+    "formal_price_bounds": null,
+    "representative": null,
+    "start_month": "2023-06",
+    "time_precision": "MONTH",
+    "user_priority": "more significant than the local box in this case",
+    "volume_rule": null
+  },
+  "source_a": {
+    "confirmation": "LATER_COMPLETED_CLOSE_REVERSAL_RESEARCH",
+    "confirmed_at": "2023-06-28",
+    "confirmed_index": 410,
+    "first_observed_at": "2023-06-28",
+    "id": "sha256:011882379d9561e6159599b0ec46daafcab6525bee76307ad758658734f7d611",
+    "kind": "HIGH",
+    "occurred_at": "2023-06-05",
+    "occurred_index": 395,
+    "price": "39.25",
+    "scale": "0.03",
+    "segment": 0,
+    "source_dates": [
+      "2023-06-05"
+    ]
+  },
+  "source_b": {
+    "confirmation": "LATER_COMPLETED_CLOSE_REVERSAL_RESEARCH",
+    "confirmed_at": "2024-01-16",
+    "confirmed_index": 549,
+    "first_observed_at": "2024-01-16",
+    "id": "sha256:c60419732c272d53705a6a247502b716cca36266dfc26041db91e6d77fd41310",
+    "kind": "HIGH",
+    "occurred_at": "2023-11-28",
+    "occurred_index": 515,
+    "price": "35.50",
+    "scale": "0.06",
+    "segment": 0,
+    "source_dates": [
+      "2023-11-28"
+    ]
+  },
+  "b77_id": "sha256:3753f89be8aef29f8f6c7910cbb979ddde8a68a37e496b5148f72dc74311db20",
+  "b77_source_start": "2023-10-24",
+  "b77_source_end": "2025-03-12",
+  "b77_research_bounds": {
+    "high": "35.50",
+    "high_cluster_spread_to_span": "0.23853211009174311926605504587155963302752293577982",
+    "low": "30.05",
+    "low_cluster_spread_to_span": "0.30275229357798165137614678899082568807339449541284",
+    "pressure_band": [
+      "34.20",
+      "35.50"
+    ],
+    "support_band": [
+      "30.05",
+      "31.70"
+    ]
+  },
+  "visible_high_sources": [
+    {
+      "date": "2023-05-02",
+      "price": "40.25",
+      "sources": [
+        {
+          "confirmation": "LATER_COMPLETED_CLOSE_REVERSAL_RESEARCH",
+          "confirmed_at": "2023-05-09",
+          "confirmed_index": 376,
+          "first_observed_at": "2023-05-09",
+          "id": "sha256:98d84393f1ab674fd512365416f50228b5b7af2cf917e59d369de7116ece333e",
+          "kind": "HIGH",
+          "occurred_at": "2023-05-02",
+          "occurred_index": 371,
+          "price": "40.25",
+          "scale": "0.03",
+          "segment": 0,
+          "source_dates": [
+            "2023-05-02"
+          ]
+        },
+        {
+          "confirmation": "LATER_COMPLETED_CLOSE_REVERSAL_RESEARCH",
+          "confirmed_at": "2023-05-12",
+          "confirmed_index": 379,
+          "first_observed_at": "2023-05-12",
+          "id": "sha256:3dcd03d04cccd6cadd2df44b9f944c4a7b3dc1b807cb419db5797a05488aa322",
+          "kind": "HIGH",
+          "occurred_at": "2023-05-02",
+          "occurred_index": 371,
+          "price": "40.25",
+          "scale": "0.06",
+          "segment": 0,
+          "source_dates": [
+            "2023-05-02"
+          ]
+        },
+        {
+          "confirmation": "LATER_COMPLETED_CLOSE_REVERSAL_RESEARCH",
+          "confirmed_at": "2023-08-18",
+          "confirmed_index": 446,
+          "first_observed_at": "2023-08-18",
+          "id": "sha256:d51687a6c9e22944747b3efb37cbf257ddd862d5829b4bf0d4c74bef720e06e0",
+          "kind": "HIGH",
+          "occurred_at": "2023-05-02",
+          "occurred_index": 371,
+          "price": "40.25",
+          "scale": "0.12",
+          "segment": 0,
+          "source_dates": [
+            "2023-05-02"
+          ]
+        }
+      ],
+      "qualification": "SAME_VISIBLE_SOURCE_DATE_PRICE_LISTING_NOT_FORMAL_MERGE_OR_INDEPENDENT_VOTES"
+    },
+    {
+      "date": "2023-06-05",
+      "price": "39.25",
+      "sources": [
+        {
+          "confirmation": "LATER_COMPLETED_CLOSE_REVERSAL_RESEARCH",
+          "confirmed_at": "2023-06-28",
+          "confirmed_index": 410,
+          "first_observed_at": "2023-06-28",
+          "id": "sha256:011882379d9561e6159599b0ec46daafcab6525bee76307ad758658734f7d611",
+          "kind": "HIGH",
+          "occurred_at": "2023-06-05",
+          "occurred_index": 395,
+          "price": "39.25",
+          "scale": "0.03",
+          "segment": 0,
+          "source_dates": [
+            "2023-06-05"
+          ]
+        }
+      ],
+      "qualification": "SAME_VISIBLE_SOURCE_DATE_PRICE_LISTING_NOT_FORMAL_MERGE_OR_INDEPENDENT_VOTES"
+    },
+    {
+      "date": "2023-08-02",
+      "price": "37.80",
+      "sources": [
+        {
+          "confirmation": "LATER_COMPLETED_CLOSE_REVERSAL_RESEARCH",
+          "confirmed_at": "2023-08-16",
+          "confirmed_index": 444,
+          "first_observed_at": "2023-08-16",
+          "id": "sha256:bd8579d39b7b9973f33251c80a4f961058f04ecd067a87fc6b43a28834af1253",
+          "kind": "HIGH",
+          "occurred_at": "2023-08-02",
+          "occurred_index": 435,
+          "price": "37.80",
+          "scale": "0.03",
+          "segment": 0,
+          "source_dates": [
+            "2023-08-02"
+          ]
+        }
+      ],
+      "qualification": "SAME_VISIBLE_SOURCE_DATE_PRICE_LISTING_NOT_FORMAL_MERGE_OR_INDEPENDENT_VOTES"
+    },
+    {
+      "date": "2023-11-28",
+      "price": "35.50",
+      "sources": [
+        {
+          "confirmation": "LATER_COMPLETED_CLOSE_REVERSAL_RESEARCH",
+          "confirmed_at": "2023-11-29",
+          "confirmed_index": 516,
+          "first_observed_at": "2023-11-29",
+          "id": "sha256:9dfc96bd6434daa930e32fb2f09cd7d463a8fbb680a0f029cba636eef460130c",
+          "kind": "HIGH",
+          "occurred_at": "2023-11-28",
+          "occurred_index": 515,
+          "price": "35.50",
+          "scale": "0.03",
+          "segment": 0,
+          "source_dates": [
+            "2023-11-28"
+          ]
+        },
+        {
+          "confirmation": "LATER_COMPLETED_CLOSE_REVERSAL_RESEARCH",
+          "confirmed_at": "2024-01-16",
+          "confirmed_index": 549,
+          "first_observed_at": "2024-01-16",
+          "id": "sha256:c60419732c272d53705a6a247502b716cca36266dfc26041db91e6d77fd41310",
+          "kind": "HIGH",
+          "occurred_at": "2023-11-28",
+          "occurred_index": 515,
+          "price": "35.50",
+          "scale": "0.06",
+          "segment": 0,
+          "source_dates": [
+            "2023-11-28"
+          ]
+        }
+      ],
+      "qualification": "SAME_VISIBLE_SOURCE_DATE_PRICE_LISTING_NOT_FORMAL_MERGE_OR_INDEPENDENT_VOTES"
+    }
+  ],
+  "current_query_coverage": {
+    "catalog": [
+      {
+        "id": "sha256:49e1061c6c2ea51fab91aa35b08edd0c86a4238bb70b577a588a86f510f2ea76",
+        "price": "30.05",
+        "source_kind": "RESEARCH_BOUND",
+        "origin_id": "sha256:3753f89be8aef29f8f6c7910cbb979ddde8a68a37e496b5148f72dc74311db20"
+      },
+      {
+        "id": "sha256:861cff152163a63b4da4fcbd06811e3cf8273b95d84b8140bab5ccbfb5c59e8a",
+        "price": "30.50",
+        "source_kind": "BAR_FIELD",
+        "origin_id": "sha256:7bd9049610cdac589fd9d6c97860c413c36b5a5baf0c4d8dd15590cd2be0334d"
+      },
+      {
+        "id": "sha256:d63e7759051cdd7ad12c18d0f5beee624c57f49dabca43c9d665cf61bdc62e9b",
+        "price": "26.95",
+        "source_kind": "RESEARCH_BOUND",
+        "origin_id": "sha256:9fbf971f46c19caa9b00657d0b805bc2bd4d782ab617b3818b50ddfe211b7d39"
+      },
+      {
+        "id": "sha256:3b06e1fab3e34dd44027722290cf9cdddbbff0d947ed560ec6773b2d7121cd97",
+        "price": "27.40",
+        "source_kind": "BAR_FIELD",
+        "origin_id": "sha256:98ff1a3f691d01e80e8ba6a3a829f3ea5cec32c5b0b34d52467e15daaa1a34e5"
+      }
+    ],
+    "already_answered_manual_local_rep_31_40_in_current_query": false,
+    "formal_whole_band_high_reference": null,
+    "qualification": "FINITE_EXAMPLE_SELECTION_COVERAGE_NOT_ENGINE_MISSING_BAR_OR_DEFECT",
+    "manual_local_rep_31_40_already_present_in_original_candidates": [
+      {
+        "id": "sha256:84d06011ea42c8890e2c271c1612ccd92341c82696721b9519bace0af364aa32",
+        "start": "2025-04-08",
+        "source_end": "2025-05-13",
+        "confirmed_at": "2025-05-14",
+        "research_high": "31.40"
+      },
+      {
+        "id": "sha256:8bc16b7b1f4d83cc1cdf9f4ffc5644941e58dcd2356a6c1fd02b66695d43bdd5",
+        "start": "2025-04-08",
+        "source_end": "2025-05-13",
+        "confirmed_at": "2025-05-27",
+        "research_high": "31.40"
+      }
+    ]
+  },
+  "findings": [
+    "較細尺度的早段高價轉折已存在，不能以較細尺度自動排除其整體結構用途",
+    "B77較大研究尺度不等完整人工主帶或正式主壓力",
+    "來源可得、反應算術與整體角色辨識分開；目前缺口包括整體關係與角色，非全部高點未取得"
+  ],
+  "new_parameters_or_core_runs": false,
+  "whole_band_high_selected_or_approved": false,
+  "primary_pressure_id": null,
+  "formal_whole_band_representative": null,
+  "user_correction_preserved": "未挑戰舊帶高點前，不因低位整理先降本例舊帶重要性",
+  "physical_android": "NOT_TESTED_NEW_BUILD"
+}

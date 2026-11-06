@@ -1,0 +1,5 @@
+# PREPARED ONLY. NOT INSTALLED. Requires approved persistent private runtime/storage.
+# Conservative publication rule: prior closed source date only; no same-day finality claim.
+# CRON_TZ support depends on the chosen scheduler. Example runs 08:00 Asia/Taipei.
+CRON_TZ=Asia/Taipei
+0 8 * * * cd /workspace/Twstockai/股票系統M1_v0_18 && PYTHONDONTWRITEBYTECODE=1 python3 -m graph_core.daily_update --root /APPROVED_PERSISTENT_PRIVATE_VOLUME/twstockai-daily

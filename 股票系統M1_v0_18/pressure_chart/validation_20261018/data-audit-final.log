@@ -1,0 +1,231 @@
+CREATED
+{
+  "schema_version": "official-history-audit/0.1",
+  "status": "MONTH_RESPONSES_AND_OHLCV_VERIFIED_GAPS_DISCLOSED",
+  "source_calendar_explicit_no_equity_trading_notes": [
+    {
+      "exchange": "TWSE",
+      "date": "2021-02-08",
+      "source_row_date": "2021-02-08",
+      "name": "農曆春節前最後交易日",
+      "primary_text": "2月8日市場無交易，僅辦理結算交割作業。",
+      "source": "pressure_chart/data/calendars-20261018/TWSE_2021.raw.json",
+      "sha256": "cc048d412679032846398c796975bbbb14339e1ad657efbb4c97c252495cc876"
+    },
+    {
+      "exchange": "TWSE",
+      "date": "2021-02-09",
+      "source_row_date": "2021-02-09",
+      "name": "農曆春節前最後交易日",
+      "primary_text": "2月9日市場無交易，僅辦理結算交割作業。",
+      "source": "pressure_chart/data/calendars-20261018/TWSE_2021.raw.json",
+      "sha256": "cc048d412679032846398c796975bbbb14339e1ad657efbb4c97c252495cc876"
+    },
+    {
+      "exchange": "TWSE",
+      "date": "2022-01-27",
+      "source_row_date": "2022-01-27",
+      "name": "農曆春節前最後交易日",
+      "primary_text": "1月27日市場無交易，僅辦理結算交割作業。",
+      "source": "pressure_chart/data/calendars-20261018/TWSE_2022.raw.json",
+      "sha256": "c49edf8212319a24ce1a964e4997b86409971c79cc300bb3e614749ccf7bce8d"
+    },
+    {
+      "exchange": "TWSE",
+      "date": "2022-01-28",
+      "source_row_date": "2022-01-28",
+      "name": "農曆春節前最後交易日",
+      "primary_text": "1月28日市場無交易，僅辦理結算交割作業。",
+      "source": "pressure_chart/data/calendars-20261018/TWSE_2022.raw.json",
+      "sha256": "c49edf8212319a24ce1a964e4997b86409971c79cc300bb3e614749ccf7bce8d"
+    },
+    {
+      "exchange": "TWSE",
+      "date": "2023-01-18",
+      "source_row_date": "2023-01-17",
+      "name": "農曆春節前最後交易日",
+      "primary_text": "農曆春節前最後交易。\r\n1月18日及1月19日市場無交易，僅辦理結算交割作業。",
+      "source": "pressure_chart/data/calendars-20261018/TWSE_2023.raw.json",
+      "sha256": "57ac0ea5fdb48cc8dccdc2c691cc3e331f62909d2f63424778aa7a391ca26740"
+    },
+    {
+      "exchange": "TWSE",
+      "date": "2023-01-19",
+      "source_row_date": "2023-01-17",
+      "name": "農曆春節前最後交易日",
+      "primary_text": "農曆春節前最後交易。\r\n1月18日及1月19日市場無交易，僅辦理結算交割作業。",
+      "source": "pressure_chart/data/calendars-20261018/TWSE_2023.raw.json",
+      "sha256": "57ac0ea5fdb48cc8dccdc2c691cc3e331f62909d2f63424778aa7a391ca26740"
+    }
+  ],
+  "series": [
+    {
+      "code": "1101",
+      "rows": 1213,
+      "first": "2021-10-18",
+      "last": "2026-10-16",
+      "monthly_responses": 61,
+      "missing_months": [],
+      "missing_price_bars_vs_reviewed_planned_calendar": [
+        "2023-08-03",
+        "2024-07-24",
+        "2024-07-25",
+        "2024-10-02",
+        "2024-10-03",
+        "2024-10-31",
+        "2025-08-13"
+      ],
+      "explicit_zero_turnover_no_price_rows": [
+        {
+          "date": "2025-08-13",
+          "raw_row": [
+            "114/08/13",
+            "0",
+            "0",
+            "--",
+            "--",
+            "--",
+            "--",
+            " 0.00",
+            "0",
+            ""
+          ],
+          "month": "2025-08",
+          "response_sha256": "17445ab092ce42de89d852302470e3f38913f0a28aeef20e52a4cb73e2db9d67"
+        }
+      ],
+      "missing_dates_still_require_primary_closure_or_suspension_evidence": [
+        "2023-08-03",
+        "2024-07-24",
+        "2024-07-25",
+        "2024-10-02",
+        "2024-10-03",
+        "2024-10-31"
+      ],
+      "unexpected_price_dates": [],
+      "volume_units": [
+        "成交股數"
+      ],
+      "actions": "OLD_SAMPLES_ONLY_FULL_FIVE_YEAR_ACTIONS_UNVERIFIED",
+      "full_history_high": "NOT_ESTABLISHED"
+    },
+    {
+      "code": "2884",
+      "rows": 1213,
+      "first": "2021-10-18",
+      "last": "2026-10-16",
+      "monthly_responses": 61,
+      "missing_months": [],
+      "missing_price_bars_vs_reviewed_planned_calendar": [
+        "2023-08-03",
+        "2024-07-24",
+        "2024-07-25",
+        "2024-10-02",
+        "2024-10-03",
+        "2024-10-31",
+        "2025-11-05"
+      ],
+      "explicit_zero_turnover_no_price_rows": [
+        {
+          "date": "2025-11-05",
+          "raw_row": [
+            "114/11/05",
+            "0",
+            "0",
+            "--",
+            "--",
+            "--",
+            "--",
+            " 0.00",
+            "0",
+            ""
+          ],
+          "month": "2025-11",
+          "response_sha256": "27b7ca4a6d4a3f555557e0d22da278c9c5ae417e9c1a6fe246096bb17fe28e9e"
+        }
+      ],
+      "missing_dates_still_require_primary_closure_or_suspension_evidence": [
+        "2023-08-03",
+        "2024-07-24",
+        "2024-07-25",
+        "2024-10-02",
+        "2024-10-03",
+        "2024-10-31"
+      ],
+      "unexpected_price_dates": [],
+      "volume_units": [
+        "成交股數"
+      ],
+      "actions": "OLD_SAMPLES_ONLY_FULL_FIVE_YEAR_ACTIONS_UNVERIFIED",
+      "full_history_high": "NOT_ESTABLISHED"
+    },
+    {
+      "code": "6488",
+      "rows": 1214,
+      "first": "2021-10-18",
+      "last": "2026-10-16",
+      "monthly_responses": 61,
+      "missing_months": [],
+      "missing_price_bars_vs_reviewed_planned_calendar": [
+        "2023-08-03",
+        "2024-07-24",
+        "2024-07-25",
+        "2024-10-02",
+        "2024-10-03",
+        "2024-10-31"
+      ],
+      "explicit_zero_turnover_no_price_rows": [],
+      "missing_dates_still_require_primary_closure_or_suspension_evidence": [
+        "2023-08-03",
+        "2024-07-24",
+        "2024-07-25",
+        "2024-10-02",
+        "2024-10-03",
+        "2024-10-31"
+      ],
+      "unexpected_price_dates": [],
+      "volume_units": [
+        "成交仟股",
+        "成交張數"
+      ],
+      "actions": "OLD_SAMPLES_ONLY_FULL_FIVE_YEAR_ACTIONS_UNVERIFIED",
+      "full_history_high": "NOT_ESTABLISHED"
+    },
+    {
+      "code": "8069",
+      "rows": 1214,
+      "first": "2021-10-18",
+      "last": "2026-10-16",
+      "monthly_responses": 61,
+      "missing_months": [],
+      "missing_price_bars_vs_reviewed_planned_calendar": [
+        "2023-08-03",
+        "2024-07-24",
+        "2024-07-25",
+        "2024-10-02",
+        "2024-10-03",
+        "2024-10-31"
+      ],
+      "explicit_zero_turnover_no_price_rows": [],
+      "missing_dates_still_require_primary_closure_or_suspension_evidence": [
+        "2023-08-03",
+        "2024-07-24",
+        "2024-07-25",
+        "2024-10-02",
+        "2024-10-03",
+        "2024-10-31"
+      ],
+      "unexpected_price_dates": [],
+      "volume_units": [
+        "成交仟股",
+        "成交張數"
+      ],
+      "actions": "OLD_SAMPLES_ONLY_FULL_FIVE_YEAR_ACTIONS_UNVERIFIED",
+      "full_history_high": "NOT_ESTABLISHED"
+    }
+  ],
+  "calendar_completeness": "PLANNED_PLUS_CITED_NOTES_AND_OLD_EXPLICIT_EXCEPTIONS_NOT_EXHAUSTIVE",
+  "corporate_action_obligation": "Need complete ex-dividend/ex-right/split/reduction/other actions and publication-time evidence before common adjusted five-year comparisons",
+  "twse_prior_security_denied_exright_endpoint": "NOT_RETRIED_PER_PROJECT_AGENTS",
+  "known_market_closure_inference_from_cross_stock_absence": "NOT_PERFORMED"
+}

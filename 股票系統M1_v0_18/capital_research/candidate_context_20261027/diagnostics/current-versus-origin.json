@@ -1,0 +1,43 @@
+{
+  "kind": "TEST_ASSERTION_ERROR_NOT_PRODUCTION_REGRESSION",
+  "initial_current_account_value": "2230",
+  "later_current_account_value": "2226.660",
+  "origin_initial_capital": "2230",
+  "reason": "New test conflated current decision NAV with original opening capital. Both before-normal and after match the already-saved original generation exactly.",
+  "correction": "Compare current initial_capital to the unchanged saved generation; verify origin_initial_capital separately in the continuation checkpoint and baseline continuity. Do not change frozen inputs, expected.json, original generations or production.",
+  "versions_before_test_correction": [
+    {
+      "path": "input.json",
+      "bytes": 2482,
+      "sha256": "d766cba952458e9e31769783656ea15a7ff939524eadfd25c1662d0d960c940c"
+    },
+    {
+      "path": "expected.json",
+      "bytes": 793,
+      "sha256": "1d06c8134e522d1a06cd7ec07ea9253598a3a9a06ba9d4f089b2a2fa44a2aefc"
+    },
+    {
+      "path": "search-limit-spec.json",
+      "bytes": 251,
+      "sha256": "77bd573bcc8079146d41ef99c3e274a4ac42da0f1d6b1156bbc91f0330235cba"
+    },
+    {
+      "path": "CONTRACT.md",
+      "bytes": 3632,
+      "sha256": "b1419a43707b3a3f872af78371ff3c4ec9566f4a4ad62a1b6d463288c63de2b8"
+    },
+    {
+      "path": "tests.log",
+      "bytes": 2151,
+      "sha256": "9009d5f36d9b782033a39b793c05c1ff6827fa53464ab9bcc9235afa9e39e6b0"
+    },
+    {
+      "path": "test_context.py",
+      "bytes": 9376,
+      "sha256": "c41ece66eb3d5b3b336c143b9b9f7b09f2203e7e51778ab60798711c2266c37e"
+    }
+  ],
+  "initial_unique_methods": 5,
+  "initial_pass": 4,
+  "initial_fail": 1
+}

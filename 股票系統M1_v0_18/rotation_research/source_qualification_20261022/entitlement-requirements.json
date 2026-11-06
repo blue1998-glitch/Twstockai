@@ -1,0 +1,72 @@
+{
+  "schema": "rotation-entitlement-source-requirements/0.1",
+  "investor_identity_or_tax_profile": null,
+  "opening_acquisition_and_cum_rights_history": null,
+  "opening_cash_claims": null,
+  "opening_share_claims": null,
+  "cash_dividends": [
+    {
+      "event_id": "sha256:01df5dd4c25df56baa28b725845678043e4809abf08e15cb19bab046ad92902f",
+      "code": "1101",
+      "ex_date": "2025-07-02",
+      "scheduled_pay_date": "2025-07-29",
+      "sourced_gross_per_share": "1",
+      "net_per_share": null,
+      "actual_received_amount": null,
+      "actual_received_at": null,
+      "net_requirement": "BROKER_OR_ISSUER_NET_STATEMENT_OR_EXPLICIT_SOURCED_TAX_COST_MODEL_WITH_CONTEXT",
+      "source_status": "NOT_AUTHENTICATED"
+    },
+    {
+      "event_id": "sha256:a96a11bf35947c9fce84baaf52b88a4ffd19447e9c26610c5fc01a82505d1a3a",
+      "code": "2884",
+      "ex_date": "2025-07-22",
+      "scheduled_pay_date": "2025-08-27",
+      "sourced_gross_per_share": "1.2",
+      "net_per_share": null,
+      "actual_received_amount": null,
+      "actual_received_at": null,
+      "net_requirement": "BROKER_OR_ISSUER_NET_STATEMENT_OR_EXPLICIT_SOURCED_TAX_COST_MODEL_WITH_CONTEXT",
+      "source_status": "NOT_AUTHENTICATED"
+    },
+    {
+      "event_id": "sha256:b7ba974b62bad201a1757c3b8dc2015ae9a43d35f55c352bf0929c65cd2b0bd5",
+      "code": "1101",
+      "ex_date": "2026-07-01",
+      "scheduled_pay_date": "2026-07-28",
+      "sourced_gross_per_share": "0.8",
+      "net_per_share": null,
+      "actual_received_amount": null,
+      "actual_received_at": null,
+      "net_requirement": "BROKER_OR_ISSUER_NET_STATEMENT_OR_EXPLICIT_SOURCED_TAX_COST_MODEL_WITH_CONTEXT",
+      "source_status": "NOT_AUTHENTICATED"
+    },
+    {
+      "event_id": "sha256:cf65c6f1ab9ad9fb1a64a8405cd9d05505739e72d6383c5e37903389f52c7349",
+      "code": "2884",
+      "ex_date": "2026-07-01",
+      "scheduled_pay_date": "2026-07-27",
+      "sourced_gross_per_share": "1.4",
+      "net_per_share": null,
+      "actual_received_amount": null,
+      "actual_received_at": null,
+      "net_requirement": "BROKER_OR_ISSUER_NET_STATEMENT_OR_EXPLICIT_SOURCED_TAX_COST_MODEL_WITH_CONTEXT",
+      "source_status": "NOT_AUTHENTICATED"
+    }
+  ],
+  "stock_dividends": [
+    {
+      "event_id": "sha256:5d9936c5f45c53f5724113b51d1bfa019e758e7f777c01ffe2aaa4aa6c01f57c",
+      "code": "2884",
+      "money_per_share": "0.10015129",
+      "shares_per_share": null,
+      "par_value_at_event": null,
+      "tradable_date": null,
+      "fractional_treatment": null,
+      "source_status": "NOT_AUTHENTICATED"
+    }
+  ],
+  "full_action_history_required": true,
+  "zero_is_not_default": true,
+  "total_net_return": null
+}

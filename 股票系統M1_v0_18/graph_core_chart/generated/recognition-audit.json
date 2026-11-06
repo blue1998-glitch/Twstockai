@@ -1,0 +1,744 @@
+{
+  "schema_version": "graph-recognition-evidence-audit/0.1",
+  "source_html_sha256": "fbca1e1d7e82d5dc9dcca8da0d3c8619f59431c1119d2cd8cb4c8ffc8293a724",
+  "series": [
+    {
+      "code": "1101",
+      "as_of": "2026-10-16",
+      "close": "27.30",
+      "source_rows": 1213,
+      "pivots": 171,
+      "boxes": 89,
+      "parent_child_relations": 75,
+      "relevant_upper_pressure": 59,
+      "research_frontier": 25,
+      "primary_pressure_id": null,
+      "anchor_volume": {
+        "baseline_includes_current": false,
+        "current_shares": "57437884",
+        "qualification": "DESCRIPTIVE_1_5_20_RECORD_COMPARISONS_NOT_VOLUME_EXPANSION_OR_SETTLEMENT_RULE",
+        "ratio_to_previous_means": {
+          "1": "1.3605719255395793797065258574447570037747549891350",
+          "20": "1.2225155258433797542033899982562974559661897300549",
+          "5": "0.84499133573927980506555719296965671147720957493661"
+        }
+      },
+      "presented": [
+        {
+          "id": "sha256:aa40970c99fa11415cd4c27799f6dc7842858a3ecb836f7590d0a1637af38b7a",
+          "scale": "0.03",
+          "start": "2024-02-20",
+          "source_end": "2024-04-26",
+          "confirmed_at": "2024-05-06",
+          "research_bounds": {
+            "high": "33.60",
+            "high_cluster_spread_to_span": "0.25",
+            "low": "30.80",
+            "low_cluster_spread_to_span": "0.33928571428571428571428571428571428571428571428571",
+            "pressure_band": [
+              "32.90",
+              "33.60"
+            ],
+            "support_band": [
+              "30.80",
+              "31.75"
+            ]
+          },
+          "duration_records": 46,
+          "turns": 4,
+          "anchor_relation": "BELOW"
+        },
+        {
+          "id": "sha256:8805036f28dac133a63265ceca3471e7c188537f915822f3e80334d415b7ab1c",
+          "scale": "0.03",
+          "start": "2026-09-29",
+          "source_end": "2026-10-12",
+          "confirmed_at": "2026-10-13",
+          "research_bounds": {
+            "high": "27.20",
+            "high_cluster_spread_to_span": "0.20833333333333333333333333333333333333333333333333",
+            "low": "24.80",
+            "low_cluster_spread_to_span": "0.10416666666666666666666666666666666666666666666667",
+            "pressure_band": [
+              "26.70",
+              "27.20"
+            ],
+            "support_band": [
+              "24.80",
+              "25.05"
+            ]
+          },
+          "duration_records": 9,
+          "turns": 4,
+          "anchor_relation": "ABOVE"
+        },
+        {
+          "id": "sha256:3753f89be8aef29f8f6c7910cbb979ddde8a68a37e496b5148f72dc74311db20",
+          "scale": "0.06",
+          "start": "2023-10-24",
+          "source_end": "2025-03-12",
+          "confirmed_at": "2025-03-24",
+          "research_bounds": {
+            "high": "35.50",
+            "high_cluster_spread_to_span": "0.23853211009174311926605504587155963302752293577982",
+            "low": "30.05",
+            "low_cluster_spread_to_span": "0.30275229357798165137614678899082568807339449541284",
+            "pressure_band": [
+              "34.20",
+              "35.50"
+            ],
+            "support_band": [
+              "30.05",
+              "31.70"
+            ]
+          },
+          "duration_records": 333,
+          "turns": 10,
+          "anchor_relation": "BELOW"
+        },
+        {
+          "id": "sha256:9fbf971f46c19caa9b00657d0b805bc2bd4d782ab617b3818b50ddfe211b7d39",
+          "scale": "0.12",
+          "start": "2025-11-19",
+          "source_end": "2026-07-14",
+          "confirmed_at": "2026-09-01",
+          "research_bounds": {
+            "high": "26.95",
+            "high_cluster_spread_to_span": "0.082089552238805970149253731343283582089552238805970",
+            "low": "20.25",
+            "low_cluster_spread_to_span": "0.32089552238805970149253731343283582089552238805970",
+            "pressure_band": [
+              "26.40",
+              "26.95"
+            ],
+            "support_band": [
+              "20.25",
+              "22.40"
+            ]
+          },
+          "duration_records": 155,
+          "turns": 5,
+          "anchor_relation": "ABOVE"
+        }
+      ],
+      "manual_case_audit": {
+        "accuracy": null,
+        "as_of": "2026-10-16",
+        "auto_membership_approved": false,
+        "core_input_manual_case_count": 0,
+        "core_usefulness": "NOT_ESTABLISHED",
+        "excluded_bar_source": {
+          "close": "26.85",
+          "date": "2025-06-03",
+          "high": "28.00",
+          "low": "26.55",
+          "open": "28.00",
+          "volume_shares_scaled": "107474363"
+        },
+        "larger_band_verdict": "MONTH_ONLY_USER_CONTEXT_NOT_AN_AUTOMATIC_GROUND_TRUTH_INTERVAL",
+        "larger_manual_band": {
+          "end_month": "2025-04",
+          "exact_end": null,
+          "exact_start": null,
+          "formal_price_bounds": null,
+          "representative": null,
+          "start_month": "2023-06",
+          "time_precision": "MONTH",
+          "user_priority": "more significant than the local box in this case",
+          "volume_rule": null
+        },
+        "previous_manual_box": {
+          "automatic_exact_interval_ids": [],
+          "end": "2025-06-02",
+          "records": 39,
+          "start": "2025-04-07",
+          "verdict": "NO_EXACT_AUTOMATIC_INTERVAL_MATCH"
+        },
+        "qualification": "LATER_MANUAL_REVIEW_LOOKBACK_OUTSIDE_AUTOMATIC_INPUT_NOT_RECOGNITION_ACCURACY",
+        "reference": {
+          "automatic_matches": [
+            {
+              "confirmation": "LATER_COMPLETED_CLOSE_REVERSAL_RESEARCH",
+              "confirmed_at": "2026-03-04",
+              "confirmed_index": 1058,
+              "first_observed_at": "2026-03-04",
+              "id": "sha256:cf22b9164bf45ef64826d516de7e839e210c35a382693718121d70284fb8c8f2",
+              "kind": "HIGH",
+              "occurred_at": "2026-01-27",
+              "occurred_index": 1040,
+              "price": "26.95",
+              "scale": "0.06",
+              "segment": 0,
+              "source_dates": [
+                "2026-01-27"
+              ]
+            },
+            {
+              "confirmation": "LATER_COMPLETED_CLOSE_REVERSAL_RESEARCH",
+              "confirmed_at": "2026-03-20",
+              "confirmed_index": 1070,
+              "first_observed_at": "2026-03-20",
+              "id": "sha256:1d475c2add5897d4fb8f2c0daf7b30df77b8bfba5c421addccfa556edb9dce5e",
+              "kind": "HIGH",
+              "occurred_at": "2026-01-27",
+              "occurred_index": 1040,
+              "price": "26.95",
+              "scale": "0.12",
+              "segment": 0,
+              "source_dates": [
+                "2026-01-27"
+              ]
+            }
+          ],
+          "date": "2026-01-27",
+          "price": "26.95",
+          "retrospective_close_path": {
+            "events": [
+              {
+                "close": "27.00",
+                "date": "2026-10-12",
+                "first_observed_at": "2026-10-12",
+                "reference_price": "26.95",
+                "type": "CLOSE_CROSS_UP"
+              },
+              {
+                "close": "26.35",
+                "date": "2026-10-13",
+                "first_observed_at": "2026-10-13",
+                "previous_up_at": "2026-10-12",
+                "reference_price": "26.95",
+                "type": "FAILED_UP_RETURN_BELOW"
+              },
+              {
+                "close": "27.05",
+                "date": "2026-10-14",
+                "first_observed_at": "2026-10-14",
+                "previous_down_at": "2026-10-13",
+                "reference_price": "26.95",
+                "type": "RETURN_ABOVE_AFTER_DOWN"
+              },
+              {
+                "close": "26.80",
+                "date": "2026-10-15",
+                "first_observed_at": "2026-10-15",
+                "previous_up_at": "2026-10-14",
+                "reference_price": "26.95",
+                "type": "FAILED_UP_RETURN_BELOW"
+              },
+              {
+                "close": "27.30",
+                "date": "2026-10-16",
+                "first_observed_at": "2026-10-16",
+                "previous_down_at": "2026-10-15",
+                "reference_price": "26.95",
+                "type": "RETURN_ABOVE_AFTER_DOWN"
+              }
+            ],
+            "known_from": "2026-01-27",
+            "last_relation": "ABOVE",
+            "qualification": "COMPLETED_CLOSE_FACTS_NOT_CONFIRMED_BREAKOUT_OR_INTRADAY_ORDER",
+            "reference_price": "26.95"
+          }
+        },
+        "review_date": "2026-10-19T16:17:17+08:00",
+        "schema_version": "graph-manual-case-audit/0.1",
+        "source_reviews": [
+          {
+            "path": "docs/visual-discussion/20261019_latest_close_anchor/boundary_review_1617.json",
+            "sha256": "6add507236ad441c155cdbb91bce15f7538e235772a830243bd1b3d8003f81d9"
+          },
+          {
+            "path": "docs/visual-discussion/20261019_major_pressure_hierarchy/user_review.json",
+            "sha256": "b1c7f729f033c70d08552c0063cdda576b918a3ca20c4c85e171bc2cb767eb67"
+          },
+          {
+            "path": "docs/visual-discussion/20261019_previous_box_pressure/reviewed_1635/user_review.json",
+            "sha256": "706a65c2940c9e83ccf20c8426def1fdbf76ed09b672b57071538b7a4eba4db4"
+          }
+        ]
+      },
+      "parameter_sensitivity": [
+        {
+          "parameters": {
+            "reversals": [
+              "0.025",
+              "0.05",
+              "0.10"
+            ],
+            "cluster_spread_fraction": "0.35",
+            "enumeration": "LONGEST_COMPATIBLE_RUN_AND_LATEST_FOUR_TURN_SEED",
+            "minimum_high_turns": 2,
+            "minimum_low_turns": 2,
+            "status": "RESEARCH_SETTINGS_NOT_USER_APPROVED_STRATEGY"
+          },
+          "boxes": 111,
+          "pivots": 229,
+          "frontier": 17,
+          "result_id": "sha256:11e85e9d3ef268726e5165173bcc8378ebd65fb25c5a4e22416abc564bc58c17",
+          "qualification": "EXPLORATORY_SENSITIVITY_NOT_OPTIMIZED_TO_MANUAL_CASES"
+        },
+        {
+          "parameters": {
+            "reversals": [
+              "0.03",
+              "0.06",
+              "0.12"
+            ],
+            "cluster_spread_fraction": "0.25",
+            "enumeration": "LONGEST_COMPATIBLE_RUN_AND_LATEST_FOUR_TURN_SEED",
+            "minimum_high_turns": 2,
+            "minimum_low_turns": 2,
+            "status": "RESEARCH_SETTINGS_NOT_USER_APPROVED_STRATEGY"
+          },
+          "boxes": 40,
+          "pivots": 171,
+          "frontier": 12,
+          "result_id": "sha256:f43e5d5f5069dc0dbd4ffb2dfd64fba2b89a9e66d3600c119459e958ea7e1962",
+          "qualification": "EXPLORATORY_SENSITIVITY_NOT_OPTIMIZED_TO_MANUAL_CASES"
+        }
+      ]
+    },
+    {
+      "code": "2884",
+      "as_of": "2026-10-16",
+      "close": "49.15",
+      "source_rows": 1213,
+      "pivots": 126,
+      "boxes": 34,
+      "parent_child_relations": 26,
+      "relevant_upper_pressure": 0,
+      "research_frontier": 0,
+      "primary_pressure_id": null,
+      "anchor_volume": {
+        "baseline_includes_current": false,
+        "current_shares": "49892439",
+        "qualification": "DESCRIPTIVE_1_5_20_RECORD_COMPARISONS_NOT_VOLUME_EXPANSION_OR_SETTLEMENT_RULE",
+        "ratio_to_previous_means": {
+          "1": "0.79085769134674055591042989328270485280098145888405",
+          "20": "1.5944338335498970788785989036928957502103421676927",
+          "5": "1.5230820919615272335928118288990030353551340596563"
+        }
+      },
+      "presented": [
+        {
+          "id": "sha256:59aebef2e84b18aabcfefab309469d4625423d3bdcf837cea27ab649917ba321",
+          "scale": "0.06",
+          "start": "2026-05-28",
+          "source_end": "2026-07-31",
+          "confirmed_at": "2026-08-12",
+          "research_bounds": {
+            "high": "39.10",
+            "high_cluster_spread_to_span": "0.29585798816568047337278106508875739644970414201183",
+            "low": "30.65",
+            "low_cluster_spread_to_span": "0.25443786982248520710059171597633136094674556213018",
+            "pressure_band": [
+              "36.60",
+              "39.10"
+            ],
+            "support_band": [
+              "30.65",
+              "32.80"
+            ]
+          },
+          "duration_records": 45,
+          "turns": 4,
+          "anchor_relation": "ABOVE"
+        },
+        {
+          "id": "sha256:7b9b7f0a5e03f3dc9cc490a2a7018d6de4beb7ae184c2b9d093e7758afbc7df6",
+          "scale": "0.12",
+          "start": "2022-07-27",
+          "source_end": "2025-03-25",
+          "confirmed_at": "2025-04-07",
+          "research_bounds": {
+            "high": "30.60",
+            "high_cluster_spread_to_span": "0.14534883720930232558139534883720930232558139534884",
+            "low": "22.00",
+            "low_cluster_spread_to_span": "0.32558139534883720930232558139534883720930232558140",
+            "pressure_band": [
+              "29.35",
+              "30.60"
+            ],
+            "support_band": [
+              "22.00",
+              "24.80"
+            ]
+          },
+          "duration_records": 643,
+          "turns": 5,
+          "anchor_relation": "ABOVE"
+        }
+      ],
+      "manual_case_audit": null,
+      "parameter_sensitivity": [
+        {
+          "parameters": {
+            "reversals": [
+              "0.025",
+              "0.05",
+              "0.10"
+            ],
+            "cluster_spread_fraction": "0.35",
+            "enumeration": "LONGEST_COMPATIBLE_RUN_AND_LATEST_FOUR_TURN_SEED",
+            "minimum_high_turns": 2,
+            "minimum_low_turns": 2,
+            "status": "RESEARCH_SETTINGS_NOT_USER_APPROVED_STRATEGY"
+          },
+          "boxes": 50,
+          "pivots": 162,
+          "frontier": 0,
+          "result_id": "sha256:55edbf244248a372419cebf9ae7e0594d292300cef69a4c608f64d029ba82537",
+          "qualification": "EXPLORATORY_SENSITIVITY_NOT_OPTIMIZED_TO_MANUAL_CASES"
+        },
+        {
+          "parameters": {
+            "reversals": [
+              "0.03",
+              "0.06",
+              "0.12"
+            ],
+            "cluster_spread_fraction": "0.25",
+            "enumeration": "LONGEST_COMPATIBLE_RUN_AND_LATEST_FOUR_TURN_SEED",
+            "minimum_high_turns": 2,
+            "minimum_low_turns": 2,
+            "status": "RESEARCH_SETTINGS_NOT_USER_APPROVED_STRATEGY"
+          },
+          "boxes": 9,
+          "pivots": 126,
+          "frontier": 0,
+          "result_id": "sha256:d314723753121e9358201f344ea092ca6d9b18807dd5de2b7c657bf270eecae9",
+          "qualification": "EXPLORATORY_SENSITIVITY_NOT_OPTIMIZED_TO_MANUAL_CASES"
+        }
+      ]
+    },
+    {
+      "code": "6488",
+      "as_of": "2026-10-16",
+      "close": "902.00",
+      "source_rows": 1214,
+      "pivots": 446,
+      "boxes": 158,
+      "parent_child_relations": 151,
+      "relevant_upper_pressure": 29,
+      "research_frontier": 14,
+      "primary_pressure_id": null,
+      "anchor_volume": {
+        "baseline_includes_current": false,
+        "current_shares": "16379000",
+        "qualification": "DESCRIPTIVE_1_5_20_RECORD_COMPARISONS_NOT_VOLUME_EXPANSION_OR_SETTLEMENT_RULE",
+        "ratio_to_previous_means": {
+          "1": "0.86891246684350132625994694960212201591511936339523",
+          "20": "1.1084192218936312758427004310782369779859104412969",
+          "5": "1.0788433671453036490580951126333816361480700829930"
+        }
+      },
+      "presented": [
+        {
+          "id": "sha256:d2eee3c1ac01492824c5039199d855416123dcdc5f77ee8cc42311981d813540",
+          "scale": "0.03",
+          "start": "2026-09-14",
+          "source_end": "2026-09-22",
+          "confirmed_at": "2026-09-23",
+          "research_bounds": {
+            "high": "1010.00",
+            "high_cluster_spread_to_span": "0.23913043478260869565217391304347826086956521739130",
+            "low": "872.00",
+            "low_cluster_spread_to_span": "0.21014492753623188405797101449275362318840579710145",
+            "pressure_band": [
+              "977.00",
+              "1010.00"
+            ],
+            "support_band": [
+              "872.00",
+              "901.00"
+            ]
+          },
+          "duration_records": 7,
+          "turns": 4,
+          "anchor_relation": "BELOW"
+        },
+        {
+          "id": "sha256:1cbf93cbb88417d66793c0e5900a80fed2540b90da8ec95c35d42bc686e1af74",
+          "scale": "0.03",
+          "start": "2026-08-28",
+          "source_end": "2026-09-23",
+          "confirmed_at": "2026-09-30",
+          "research_bounds": {
+            "high": "1015.00",
+            "high_cluster_spread_to_span": "0.26573426573426573426573426573426573426573426573427",
+            "low": "872.00",
+            "low_cluster_spread_to_span": "0.34965034965034965034965034965034965034965034965035",
+            "pressure_band": [
+              "977.00",
+              "1015.00"
+            ],
+            "support_band": [
+              "872.00",
+              "922.00"
+            ]
+          },
+          "duration_records": 19,
+          "turns": 10,
+          "anchor_relation": "BELOW"
+        },
+        {
+          "id": "sha256:3ba70162ac76129f4aecf81b0601c57ea15a7ee553d62f0c10141c144fc9ec6b",
+          "scale": "0.12",
+          "start": "2026-08-11",
+          "source_end": "2026-10-06",
+          "confirmed_at": "2026-10-13",
+          "research_bounds": {
+            "high": "1260.00",
+            "high_cluster_spread_to_span": "0.32036613272311212814645308924485125858123569794050",
+            "low": "823.00",
+            "low_cluster_spread_to_span": "0.11899313501144164759725400457665903890160183066362",
+            "pressure_band": [
+              "1120.00",
+              "1260.00"
+            ],
+            "support_band": [
+              "823.00",
+              "875.00"
+            ]
+          },
+          "duration_records": 39,
+          "turns": 4,
+          "anchor_relation": "BELOW"
+        }
+      ],
+      "manual_case_audit": null,
+      "parameter_sensitivity": [
+        {
+          "parameters": {
+            "reversals": [
+              "0.025",
+              "0.05",
+              "0.10"
+            ],
+            "cluster_spread_fraction": "0.35",
+            "enumeration": "LONGEST_COMPATIBLE_RUN_AND_LATEST_FOUR_TURN_SEED",
+            "minimum_high_turns": 2,
+            "minimum_low_turns": 2,
+            "status": "RESEARCH_SETTINGS_NOT_USER_APPROVED_STRATEGY"
+          },
+          "boxes": 181,
+          "pivots": 511,
+          "frontier": 14,
+          "result_id": "sha256:69a76d998284c23c68ebc1bbb11d6d17f02208f9ed186d9ab46d54469d99ef99",
+          "qualification": "EXPLORATORY_SENSITIVITY_NOT_OPTIMIZED_TO_MANUAL_CASES"
+        },
+        {
+          "parameters": {
+            "reversals": [
+              "0.03",
+              "0.06",
+              "0.12"
+            ],
+            "cluster_spread_fraction": "0.25",
+            "enumeration": "LONGEST_COMPATIBLE_RUN_AND_LATEST_FOUR_TURN_SEED",
+            "minimum_high_turns": 2,
+            "minimum_low_turns": 2,
+            "status": "RESEARCH_SETTINGS_NOT_USER_APPROVED_STRATEGY"
+          },
+          "boxes": 45,
+          "pivots": 446,
+          "frontier": 2,
+          "result_id": "sha256:e7a623b2ac811ff865e94be1a1dbc88655984ee2322dcc5995caf389108b7a2b",
+          "qualification": "EXPLORATORY_SENSITIVITY_NOT_OPTIMIZED_TO_MANUAL_CASES"
+        }
+      ]
+    },
+    {
+      "code": "8069",
+      "as_of": "2026-10-16",
+      "close": "155.00",
+      "source_rows": 1214,
+      "pivots": 532,
+      "boxes": 279,
+      "parent_child_relations": 244,
+      "relevant_upper_pressure": 10,
+      "research_frontier": 7,
+      "primary_pressure_id": null,
+      "anchor_volume": {
+        "baseline_includes_current": false,
+        "current_shares": "13725000",
+        "qualification": "DESCRIPTIVE_1_5_20_RECORD_COMPARISONS_NOT_VOLUME_EXPANSION_OR_SETTLEMENT_RULE",
+        "ratio_to_previous_means": {
+          "1": "1.7009542694261990333374643698103854257033089602181",
+          "20": "2.1278904814691358981713320051782544321361849908140",
+          "5": "1.9574146438860207079494566302518611483499244131321"
+        }
+      },
+      "presented": [
+        {
+          "id": "sha256:c8030e1c1ecbd4647b8e788bfce2a0c6a2540a8c495aef7c7cc96a9f8506eccd",
+          "scale": "0.03",
+          "start": "2026-07-22",
+          "source_end": "2026-08-12",
+          "confirmed_at": "2026-08-13",
+          "research_bounds": {
+            "high": "204.50",
+            "high_cluster_spread_to_span": "0.14606741573033707865168539325842696629213483146067",
+            "low": "160.00",
+            "low_cluster_spread_to_span": "0.29213483146067415730337078651685393258426966292135",
+            "pressure_band": [
+              "198.00",
+              "204.50"
+            ],
+            "support_band": [
+              "160.00",
+              "173.00"
+            ]
+          },
+          "duration_records": 16,
+          "turns": 4,
+          "anchor_relation": "BELOW"
+        },
+        {
+          "id": "sha256:679020596a2ee34c3f59e8886b32a25242c861ac768a3e7716bbb6c3e21055ce",
+          "scale": "0.03",
+          "start": "2026-08-12",
+          "source_end": "2026-08-25",
+          "confirmed_at": "2026-08-26",
+          "research_bounds": {
+            "high": "173.00",
+            "high_cluster_spread_to_span": "0.35",
+            "low": "153.00",
+            "low_cluster_spread_to_span": "0.35",
+            "pressure_band": [
+              "166.00",
+              "173.00"
+            ],
+            "support_band": [
+              "153.00",
+              "160.00"
+            ]
+          },
+          "duration_records": 10,
+          "turns": 5,
+          "anchor_relation": "BELOW"
+        },
+        {
+          "id": "sha256:0eca59bdcebe1f060552f388b67386f81021acad84caaea909704de4cd30e112",
+          "scale": "0.03",
+          "start": "2026-08-25",
+          "source_end": "2026-09-01",
+          "confirmed_at": "2026-09-02",
+          "research_bounds": {
+            "high": "162.50",
+            "high_cluster_spread_to_span": "0.26315789473684210526315789473684210526315789473684",
+            "low": "153.00",
+            "low_cluster_spread_to_span": "0.21052631578947368421052631578947368421052631578947",
+            "pressure_band": [
+              "160.00",
+              "162.50"
+            ],
+            "support_band": [
+              "153.00",
+              "155.00"
+            ]
+          },
+          "duration_records": 6,
+          "turns": 4,
+          "anchor_relation": "BELOW"
+        },
+        {
+          "id": "sha256:f65eb200528036f2b91f9bbe0d82956801b57549f6c4bfad86fc7581879ccabc",
+          "scale": "0.03",
+          "start": "2026-09-14",
+          "source_end": "2026-10-06",
+          "confirmed_at": "2026-10-07",
+          "research_bounds": {
+            "high": "151.50",
+            "high_cluster_spread_to_span": "0.038461538461538461538461538461538461538461538461538",
+            "low": "138.50",
+            "low_cluster_spread_to_span": "0.34615384615384615384615384615384615384615384615385",
+            "pressure_band": [
+              "151.00",
+              "151.50"
+            ],
+            "support_band": [
+              "138.50",
+              "143.00"
+            ]
+          },
+          "duration_records": 15,
+          "turns": 4,
+          "anchor_relation": "ABOVE"
+        },
+        {
+          "id": "sha256:8b45a4eca8fc5a39b17b7f6ed2b3a39bad497d34755b6560e2ea4bf172b26f20",
+          "scale": "0.03",
+          "start": "2026-10-06",
+          "source_end": "2026-10-15",
+          "confirmed_at": "2026-10-16",
+          "research_bounds": {
+            "high": "152.50",
+            "high_cluster_spread_to_span": "0.11111111111111111111111111111111111111111111111111",
+            "low": "143.50",
+            "low_cluster_spread_to_span": "0.27777777777777777777777777777777777777777777777778",
+            "pressure_band": [
+              "151.50",
+              "152.50"
+            ],
+            "support_band": [
+              "143.50",
+              "146.00"
+            ]
+          },
+          "duration_records": 7,
+          "turns": 4,
+          "anchor_relation": "ABOVE"
+        }
+      ],
+      "manual_case_audit": null,
+      "parameter_sensitivity": [
+        {
+          "parameters": {
+            "reversals": [
+              "0.025",
+              "0.05",
+              "0.10"
+            ],
+            "cluster_spread_fraction": "0.35",
+            "enumeration": "LONGEST_COMPATIBLE_RUN_AND_LATEST_FOUR_TURN_SEED",
+            "minimum_high_turns": 2,
+            "minimum_low_turns": 2,
+            "status": "RESEARCH_SETTINGS_NOT_USER_APPROVED_STRATEGY"
+          },
+          "boxes": 340,
+          "pivots": 663,
+          "frontier": 7,
+          "result_id": "sha256:15ec70c65829280268e30cf555c5a1ab3519e145602f3992af35ab30dc8af3c1",
+          "qualification": "EXPLORATORY_SENSITIVITY_NOT_OPTIMIZED_TO_MANUAL_CASES"
+        },
+        {
+          "parameters": {
+            "reversals": [
+              "0.03",
+              "0.06",
+              "0.12"
+            ],
+            "cluster_spread_fraction": "0.25",
+            "enumeration": "LONGEST_COMPATIBLE_RUN_AND_LATEST_FOUR_TURN_SEED",
+            "minimum_high_turns": 2,
+            "minimum_low_turns": 2,
+            "status": "RESEARCH_SETTINGS_NOT_USER_APPROVED_STRATEGY"
+          },
+          "boxes": 93,
+          "pivots": 532,
+          "frontier": 0,
+          "result_id": "sha256:5cd9173205590c2ac3eb38b00fdf1cca4582386c82b0a173120d7a6575163dbb",
+          "qualification": "EXPLORATORY_SENSITIVITY_NOT_OPTIMIZED_TO_MANUAL_CASES"
+        }
+      ]
+    }
+  ],
+  "execution_scope": "AUTOMATIC_ENGINE_AND_PREFIX_ENGINEERING_VALIDATION",
+  "recognition_accuracy": "NOT_MEASURED_NO_ADJUDICATED_MARKET_TEST_SET",
+  "manual_exact_interval_mismatch": "1101 user39-record box has no exact automatic interval match; do not tune to or overwrite the case",
+  "larger_pressure_limit": "Longest displayed automatic context is not the fully reproduced month-only user major band; formal importance remains unresolved",
+  "image_model_training": "NOT_EXECUTED_OR_CLAIMED",
+  "core_usefulness": "NOT_ESTABLISHED",
+  "physical_android": "NOT_TESTED_NEW_BUILD"
+}
