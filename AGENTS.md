@@ -4,7 +4,7 @@ Issue #8已全文執行；[工程／來源／資源／驗收](股票系統M1_v0_
 
 新批明示MINIFIED_UTF8_V1原Journal schema／精度，原reader相容；大新metadata／HTML沿用DU2 exact bytes，原scan／Journal source／金融核心不改，舊成品不重編。只新增有界I/O適配與原正式產品接線。完整來源／價量／Journal在Git外。唯一新入口`graph_core.prod_day4_20261106.run`須先原Cloud即時核ID與既有engineering.lock／unified_workspace gate；同源新程序重送實測0GET／0核心／0新檔／0修改。原flow status可查目前發布日。7唯一新Python、19新日瀏覽器流程群與6owner權限控制通過；兩市場各2股精確核對、全1986來源及Journal重讀，不重跑舊26／1955。
 
-全掃87.57秒、來源再核＋view90.71秒、peak337672KiB；驗收FS淨增20,869,120 bytes、餘537,772,032 bytes（最終Git文件另小幅增加），至少512MiB始終有效，不刪／搬／覆寫原行情。只原唯一Cloud／repo／dev／lease、FM3 metadata90377／原heads／880舊untracked、main／bridge／全部parents保持。Android外部未連、本人實機未測、日排程未啟，獨立備份及重啟持久性UNKNOWN；不部署、付費、建網路或交易。
+全掃87.57秒、來源再核＋view90.71秒、peak337672KiB；驗收FS淨增20,869,120 bytes、餘537,772,032 bytes（最終Git文件另小幅增加），資料寫入逐筆512MiB guard有效；Git暫存索引瞬間低點未量測、可能低於保留，不能聲稱全程最低已核。第一次提交後free537202688仍高於保留；後續Git索引改暫存在/tmp，非行情持久資料。不刪／搬／覆寫原行情。只原唯一Cloud／repo／dev／lease、FM3 metadata90377／原heads／880舊untracked、main／bridge／全部parents保持。Android外部未連、本人實機未測、日排程未啟，獨立備份及重啟持久性UNKNOWN；不部署、付費、建網路或交易。
 
 [Issue #7](https://github.com/blue1998-glitch/Twstockai/issues/7)五層投資決策大腦是後續產品願景，本輪不擴張。全面持現金／重新進場與機會成本保持待驗，策略不批准。完成固定GitHub原bytes讀回後停止，下一輪由總監決定手機入口／排程／合格多日。以下全部歷史保留，舊「目前11/3／11/5受阻」只作當時紀錄，已由本節取代。
 

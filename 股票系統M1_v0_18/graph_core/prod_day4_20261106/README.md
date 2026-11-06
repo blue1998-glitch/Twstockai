@@ -10,7 +10,7 @@ Issue #8完成。原同一owner **http://127.0.0.1:8765/** 已預設11/5；這�
 
 最初容量預檢證原pretty Journal方式超出安全餘量。新批使用明示MINIFIED_UTF8_V1 wire（完整同物件／精度／null／schema），原Journal.reader直接讀；大型新manifest／index／HTML／action繼續用既有DU2 exact-byte codec，所有descriptor仍綁還原原bytes及SHA。原Journal與scan1 source、原金融核心／parser／MA／MACD不改，舊批永不重編。scan_io只是原scan1流程的I/O適配：同fact／validate／key／worker／checkpoint；沒有第二數值引擎。source_reader重用原保存結果／RAM cache與白名單，cache HIT前仍驗來源DU2依存、原fact及版本。
 
-新操作budget使用本輪immutable baseline，不改舊baseline；512MiB實際安全保留始終生效。新單筆Journal≤4096 bytes、scan600秒、原worker256MiB AS／3秒CPU／8秒wall、CLI512MiB AS。未刪除／搬移／覆寫任何行情原件，未使用tmpfs作持久資料；瀏覽器臨時profile依原工具位於/tmp，驗收紀錄保存原私人磁碟。
+新操作budget使用本輪immutable baseline，不改舊baseline；資料寫入逐筆512MiB guard維持；第一次Git索引暫存低點未量測、可能低於保留，不能宣稱全程最低已核。第一次提交後free537202688仍高於保留；收據保存改以/tmp暫存Git索引（僅可重建版本控制metadata，市場資料仍在持久磁碟）。新單筆Journal≤4096 bytes、scan600秒、原worker256MiB AS／3秒CPU／8秒wall、CLI512MiB AS。未刪除／搬移／覆寫任何行情原件，未使用tmpfs作持久資料；瀏覽器臨時profile依原工具位於/tmp，驗收紀錄保存原私人磁碟。
 
 ## 原環境單次維運入口
 
