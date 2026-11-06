@@ -28,9 +28,13 @@ def build(scanwork,work):
     extra=Path(__file__).with_name('product.js').read_text()
     raw=raw.replace(b'</body>',('<script>'+extra+'</script></body>').encode())
     target=folder/('market-product-'+sha(raw)+'.html')
-    capacity(work,len(raw)+4096)
-    from rotation_research.artifact_codec import immutable
-    immutable(target,raw)
+    if numeric.get('journal_encoding')=='MINIFIED_UTF8_V1':
+        from graph_core.prod_day4_20261106.intake import store,WORK as daywork
+        store.save_exact(daywork,target,raw)
+    else:
+        capacity(work,len(raw)+4096)
+        from rotation_research.artifact_codec import immutable
+        immutable(target,raw)
     entry=dict(run_id='formal-'+index['scan_id'],as_of=index['as_of'],**descriptor(target))
     original=read(BASE/'scan1_20261104/view-build-private.json')
     oldcatalog=read(original['catalogue'])['batches']
@@ -47,8 +51,17 @@ def build(scanwork,work):
     for a in actions:a['route']=prefix+a.pop('local_route');a['fact_route']=prefix+a['fact']['path']
     template=read(original['action_manifest'])
     template.update(actions=actions,capture_id=numeric['capture_id'],metrics_route=prefix+'lazy-status.json',scan_index=descriptor(scanwork/'complete-index.json'),scan_manifest=descriptor(scanwork/'manifest-private.json'),original_daily_sources={m:numeric['original_sources'][lower+'-daily.json'] for m,lower in [('TWSE','twse'),('TPEX','tpex')]})
-    actionbody=encode(template);ap=work/('actions-'+sha(actionbody)+'.json');put(work,ap,actionbody)
-    providers=[descriptor(ap)]
+    if numeric.get('journal_encoding')=='MINIFIED_UTF8_V1':
+        template['protected_code'].update(numeric['protected_code'])
+    actionbody=encode(template)
+    if numeric.get('journal_encoding')=='MINIFIED_UTF8_V1':
+        ap=Path(numeric['source_stage_root'])/('actions-'+sha(actionbody)+'.json')
+        store.save_exact(daywork,ap,actionbody)
+    else:
+        ap=work/('actions-'+sha(actionbody)+'.json');put(work,ap,actionbody)
+    current=descriptor(ap)
+    if numeric.get('journal_encoding')=='MINIFIED_UTF8_V1':current['source_codec']='EXACT_DU2'
+    providers=[current]
     if head.exists():providers+=prev['view']['providers']
     providers+=[dict(path=original['action_manifest'],bytes=Path(original['action_manifest']).stat().st_size,sha256=original['action_sha256'])]
     unique={d['sha256']:d for d in providers}

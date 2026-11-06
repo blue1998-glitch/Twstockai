@@ -4,6 +4,7 @@ Uncertified history is never joined; successful receipt precedes publication.
 """
 import argparse,copy,fcntl,json,os,re,resource,shutil,time
 from contextlib import contextmanager
+from contextvars import ContextVar
 from datetime import datetime,date
 from zoneinfo import ZoneInfo
 from pathlib import Path
@@ -16,18 +17,28 @@ WORK=BASE/'prod_core1_20261105'
 VERSION='twstockai-daily-product/1.0'
 RESERVE=536870912
 BUDGET=32*1024**2
-read=scan.read
+read=lambda p:json.loads(codec.read_bytes(p))
+_operation_baseline=ContextVar("operation_baseline",default=None)
+@contextmanager
+def operation_budget(baseline):
+    token=_operation_baseline.set(read(baseline)["free_bytes"])
+    try:yield
+    finally:_operation_baseline.reset(token)
 sha=scan.sha
 encode=scan.encode
 
 def capacity(work,n=0):
     free=shutil.disk_usage(work).free
-    initial=read(Path(work)/'baseline-private.json')['free_bytes']
+    initial=_operation_baseline.get()
+    if initial is None:initial=read(Path(work)/'baseline-private.json')['free_bytes']
     if free-n<RESERVE+65536 or initial-free+n>BUDGET:raise OSError('PRODUCT_CAPACITY_STOP')
     return free
 
 def put(work,path,body):
-    path=codec.regular(path,work);capacity(work,0 if path.exists() else ((len(body)+4095)//4096)*4096)
+    path=codec.regular(path,work)
+    if path.exists():
+        codec.immutable(path,body);return
+    capacity(work,((len(body)+4095)//4096)*4096)
     codec.immutable(path,body)
 
 def init(work=WORK):
@@ -56,19 +67,24 @@ def point(work,name,value):
     finally:os.close(fd)
 
 def descriptor(path):
-    b=codec.regular(path).read_bytes();return dict(path=str(path),bytes=len(b),sha256=sha(b))
+    b=codec.read_bytes(codec.regular(path));return dict(path=str(path),bytes=len(b),sha256=sha(b))
 
 def bound(desc,limit=4*1024**2):
-    p=codec.regular(Path(desc['path']));b=p.read_bytes()
+    p=codec.regular(Path(desc['path']));b=codec.read_bytes(p,expected_bytes=desc['bytes'],expected_sha=desc['sha256'])
     if len(b)>limit or len(b)!=desc['bytes'] or sha(b)!=desc['sha256']:raise ValueError('PRODUCT_DESCRIPTOR_CHANGED')
     return json.loads(b)
 
 def source_check(scanwork,target):
     spec=read(scanwork/'manifest-private.json')
     if spec['as_of']!=target:raise ValueError('EXACT_DATE_REQUIRED_NO_FALLBACK')
-    roots={str(Path(x['path']).parent.parent) for x in spec['original_sources'].values()}
-    if len(roots)!=1:raise ValueError('SOURCE_CAPTURE_ROOT_CONFLICT')
-    day,maps,markets,sigs=inc.sources(Path(next(iter(roots))),spec['capture_id'])
+    if spec.get('source_files'):
+        from graph_core.prod_day2_20261105.capture import Sources
+        source_root=Sources(spec['source_capture_root'],spec['source_files'])
+    else:
+        roots={str(Path(x['path']).parent.parent) for x in spec['original_sources'].values()}
+        if len(roots)!=1:raise ValueError('SOURCE_CAPTURE_ROOT_CONFLICT')
+        source_root=Path(next(iter(roots)))
+    day,maps,markets,sigs=inc.sources(source_root,spec['capture_id'])
     if day!=target:raise ValueError('SOURCE_DATE_CONFLICT')
     current={m['market']+':'+m['code']:m for g in markets.values() for m in g['members']}
     # Retained previous identities can be absent from the current ordinary list,
@@ -124,7 +140,10 @@ def saved(target,*,scanwork=scan.WORK,work=WORK,limit=None):
     receipt_path=work/'runs'/(ident+'.json')
     # Original runner checks raw facts, original code pins and saved Journals on
     # every replay, including completed runs. Missing records are not repaired.
-    result=scan.run(scanwork,limit=limit)
+    if spec.get('journal_encoding')=='MINIFIED_UTF8_V1':
+        from graph_core.prod_day4_20261106.scan_io import run as scan_run
+    else:scan_run=scan.run
+    result=scan_run(scanwork,limit=limit)
     if result['status']!='COMPLETE':
         return dict(status='PARTIAL',as_of=target,scan=result,publication_changed=False)
     if receipt_path.exists():

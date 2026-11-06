@@ -12,7 +12,12 @@ class Provider:
     def __init__(self,config,work):
         self.work=Path(work);self.providers=[]
         for d in config['providers']:
-            bound(d);self.providers.append(SavedProvider(d['path'],d['sha256']))
+            bound(d)
+            if d.get('source_codec')=='EXACT_DU2':
+                from graph_core.prod_day4_20261106.source_reader import Provider as SelectedProvider
+            elif d.get('source_codec') is None:SelectedProvider=SavedProvider
+            else:raise ValueError('UNKNOWN_SOURCE_CODEC')
+            self.providers.append(SelectedProvider(d['path'],d['sha256']))
         self.route_map={}
         for p in self.providers:
             for route in p.routes():
@@ -29,7 +34,7 @@ def launch(argv,work,label):
         return subprocess.Popen(argv,cwd=PROJECT.parent,env=env,stdout=out,stderr=err,start_new_session=True)
 
 def activate(work=WORK):
-    work=Path(work);capacity(work,2*1024**2);prepared=read(work/'prepared-head-private.json');receipt=bound(prepared);view=receipt['view'];bound(view['catalogue_descriptor'])
+    work=Path(work);capacity(work,262144);prepared=read(work/'prepared-head-private.json');receipt=bound(prepared);view=receipt['view'];bound(view['catalogue_descriptor'])
     current=work/'service-current-private.json';prior=read(current) if current.exists() else read(BASE/'scan1_20261104/service-current-private.json')
     pid=prior['pid'];proc=Path('/proc')/str(pid)/'cmdline';cmd=proc.read_bytes();argv=[v.decode() for v in cmd.split(bytes([0])) if v]
     conn=read(BASE/'scan1_20261104/browser-config-private.json')

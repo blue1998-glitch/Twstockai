@@ -1,3 +1,15 @@
+# 2026-11-06 最新有效｜M-PROD-DAY4：11/5真實全市場批次已在原正式產品發布
+
+Issue #8已全文執行；[工程／來源／資源／驗收](股票系統M1_v0_18/graph_core/prod_day4_20261106/README.md)。原owner `http://127.0.0.1:8765/` 預設11/5，1986檔（TWSE1089／TPEX897）唯一終態：1967原核心／Journal完成且歷史不足，19來源拒用，工程失敗0。保留11/3、11/2、10/30及原比較；不是新預覽。原完整上櫃200 body5,329,099 bytes逐bytes重用，新上櫃行情GET0；其餘五件各一次完整200，原六源閘同日通過，重試0。未拼接FinMind／11/2等未認證歷史，不把單日完成冒多日圖形或交易訊號。
+
+新批明示MINIFIED_UTF8_V1原Journal schema／精度，原reader相容；大新metadata／HTML沿用DU2 exact bytes，原scan／Journal source／金融核心不改，舊成品不重編。只新增有界I/O適配與原正式產品接線。完整來源／價量／Journal在Git外。唯一新入口`graph_core.prod_day4_20261106.run`須先原Cloud即時核ID與既有engineering.lock／unified_workspace gate；同源新程序重送實測0GET／0核心／0新檔／0修改。原flow status可查目前發布日。7唯一新Python、19新日瀏覽器流程群與6owner權限控制通過；兩市場各2股精確核對、全1986來源及Journal重讀，不重跑舊26／1955。
+
+全掃87.57秒、來源再核＋view90.71秒、peak337672KiB；驗收FS淨增20,869,120 bytes、餘537,772,032 bytes（最終Git文件另小幅增加），至少512MiB始終有效，不刪／搬／覆寫原行情。只原唯一Cloud／repo／dev／lease、FM3 metadata90377／原heads／880舊untracked、main／bridge／全部parents保持。Android外部未連、本人實機未測、日排程未啟，獨立備份及重啟持久性UNKNOWN；不部署、付費、建網路或交易。
+
+[Issue #7](https://github.com/blue1998-glitch/Twstockai/issues/7)五層投資決策大腦是後續產品願景，本輪不擴張。全面持現金／重新進場與機會成本保持待驗，策略不批准。完成固定GitHub原bytes讀回後停止，下一輪由總監決定手機入口／排程／合格多日。以下全部歷史保留，舊「目前11/3／11/5受阻」只作當時紀錄，已由本節取代。
+
+---
+
 # 2026-11-05 最新有效｜M-PROD-SOURCE3：完整200為11/5；本輪日別資格受阻，正式頁仍11/3
 
 Issue #6全文派工已執行；[安全Range／真實回應／停止證據](股票系統M1_v0_18/graph_core/prod_source3_20261105/README.md)。原件實核最長prefix4,570,729、缺758,370；唯一Range＋If-Range實回**200完整新正文**5,329,099 bytes、ETag已更替，獨立保存、不拼舊partial。原quote_map證唯一Date11/5，不能與已保存上市11/4混接；舊partial資料日期未升格。不要再把「此次仍EOF」當目前結果，也不能把工程206測試冒真實206成功。
